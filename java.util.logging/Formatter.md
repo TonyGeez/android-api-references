@@ -10,9 +10,9 @@ abstract class Formatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.logging.Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#) |
+| ↳ | [java.util.logging.Formatter](../java/util/logging/Formatter.md) |
 
-| Known Direct Subclasses [SimpleFormatter](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter), [XMLFormatter](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------| | [SimpleFormatter](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter) | Print a brief summary of the`LogRecord`in a human readable format. | | [XMLFormatter](https://developer.android.com/reference/kotlin/java/util/logging/XMLFormatter) | Format a LogRecord into a standard XML format. | |
+| Known Direct Subclasses [SimpleFormatter](../java/util/logging/SimpleFormatter.md), [XMLFormatter](../java/util/logging/XMLFormatter.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------| | [SimpleFormatter](../java/util/logging/SimpleFormatter.md) | Print a brief summary of the`LogRecord`in a human readable format. | | [XMLFormatter](../java/util/logging/XMLFormatter.md) | Format a LogRecord into a standard XML format. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A Formatter provides support for formatting LogRecords.
@@ -25,15 +25,15 @@ Some formatters (such as the XMLFormatter) need to wrap head and tail strings ar
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#Formatter())`()` Construct a new formatter. |
+| [Formatter](../java/util/logging/Formatter.md))`()` Construct a new formatter. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#format(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Format the given log record and return the formatted string. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatMessage](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#formatMessage(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Localize and format the message string from a log record. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHead](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#getHead(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` Return the header string for a set of formatted records. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/util/logging/Formatter.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Format the given log record and return the formatted string. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatMessage](../java/util/logging/Formatter.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Localize and format the message string from a log record. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHead](../java/util/logging/Formatter.md))`(`h:` ` [Handler](../java/util/logging/Handler.md)!`)` Return the header string for a set of formatted records. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTail](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#getTail(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` Return the tail string for a set of formatted records. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTail](../java/util/logging/Formatter.md))`(`h:` ` [Handler](../java/util/logging/Handler.md)!`)` Return the tail string for a set of formatted records. |
 
 ## Protected constructors
 
@@ -59,11 +59,11 @@ abstract fun format(record: LogRecord!): String!
 
 Format the given log record and return the formatted string.
 
-The resulting formatted String will normally include a localized and formatted version of the LogRecord's message field. It is recommended to use the [Formatter.formatMessage](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#formatMessage(java.util.logging.LogRecord))convenience method to localize and format the message field.
+The resulting formatted String will normally include a localized and formatted version of the LogRecord's message field. It is recommended to use the [Formatter.formatMessage](../java/util/logging/Formatter.md))convenience method to localize and format the message field.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!:the log record to be formatted. |
+| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:the log record to be formatted. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
@@ -89,7 +89,7 @@ The message string is first localized to a format string using the record's Reso
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!:the log record containing the raw message |
+| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:the log record containing the raw message |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------|
@@ -109,7 +109,7 @@ This base class returns an empty string, but this may be overridden by subclasse
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!:The target handler (can be null) |
+| `h` | [Handler](../java/util/logging/Handler.md)!:The target handler (can be null) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------|
@@ -129,7 +129,7 @@ This base class returns an empty string, but this may be overridden by subclasse
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!:The target handler (can be null) |
+| `h` | [Handler](../java/util/logging/Handler.md)!:The target handler (can be null) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------|

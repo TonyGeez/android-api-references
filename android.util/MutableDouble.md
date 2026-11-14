@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableDouble
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/MutableDouble "View this page in Java") 
+Kotlin| [Java](../android/util/MutableDouble.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableDouble
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableDouble](https://developer.android.com/reference/kotlin/android/util/MutableDouble#) |
+| ↳ | [android.util.MutableDouble](../android/util/MutableDouble.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableDouble
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableDouble](https://developer.android.com/reference/kotlin/android/util/MutableDouble#MutableDouble(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
+| [MutableDouble](../android/util/MutableDouble.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [value](https://developer.android.com/reference/kotlin/android/util/MutableDouble#value:kotlin.Double) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [value](../android/util/MutableDouble.md) <br /> |
 
 ## Public constructors
 

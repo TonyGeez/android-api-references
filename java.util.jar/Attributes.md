@@ -10,53 +10,53 @@ open class Attributes : Cloneable, MutableMap<Any!, Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.jar.Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#) |
+| ↳ | [java.util.jar.Attributes](../java/util/jar/Attributes.md) |
 
 The Attributes class maps Manifest attribute names to associated string values. Valid attribute names are case-insensitive, are restricted to the ASCII characters in the set \[0-9a-zA-Z_-\], and cannot exceed 70 characters in length. There must be a colon and a SPACE after the name; the combined length will not exceed 72 characters. Attribute values can contain any characters and will be UTF8-encoded when written to the output stream. See the [JAR File Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/jar/jar.html) for more information about valid attribute names and values.
 
-This map and its views have a predictable iteration order, namely the order that keys were inserted into the map, as with [LinkedHashMap](https://developer.android.com/reference/kotlin/java/util/LinkedHashMap.html#).
+This map and its views have a predictable iteration order, namely the order that keys were inserted into the map, as with [LinkedHashMap](../java/util/LinkedHashMap.md).
 
 ## Summary
 
 | Nested classes ||
 |------|------------------------------------------------------------------------------------------------------|
-| open | [Name](https://developer.android.com/reference/kotlin/java/util/jar/Attributes.Name) The Attributes. |
+| open | [Name](../java/util/jar/Attributes.Name.md) The Attributes. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#Attributes())`()` Constructs a new, empty Attributes object with default size. |
-| [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#Attributes(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new, empty Attributes object with the specified initial size. |
-| [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#Attributes(java.util.jar.Attributes))`(`attr:` ` [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#)!`)` Constructs a new Attributes object with the same attribute name-value mappings as in the specified Attributes. |
+| [Attributes](../java/util/jar/Attributes.md))`()` Constructs a new, empty Attributes object with default size. |
+| [Attributes](../java/util/jar/Attributes.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new, empty Attributes object with the specified initial size. |
+| [Attributes](../java/util/jar/Attributes.md))`(`attr:` ` [Attributes](../java/util/jar/Attributes.md)!`)` Constructs a new Attributes object with the same attribute name-value mappings as in the specified Attributes. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#clear())`()` Removes all attributes from this Map. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#clone())`()` Returns a copy of the Attributes, implemented as follows: ```kotlin public Object clone() { return new Attributes(this); } ``` Since the attribute names and values are themselves immutable, the Attributes returned can be safely modified without affecting the original. <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#containsKey(kotlin.Any))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this Map contains the specified attribute name (key). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/jar/Attributes.md))`()` Removes all attributes from this Map. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/jar/Attributes.md))`()` Returns a copy of the Attributes, implemented as follows: ```kotlin public Object clone() { return new Attributes(this); } ``` Since the attribute names and values are themselves immutable, the Attributes returned can be safely modified without affecting the original. <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../java/util/jar/Attributes.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this Map contains the specified attribute name (key). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#containsValue(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this Map maps one or more attribute names (keys) to the specified value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object to the underlying [map](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#map:kotlin.collections.MutableMap) for equality. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [get](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#get(kotlin.Any))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value of the specified attribute name, or null if the attribute name was not found. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](../java/util/jar/Attributes.md))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this Map maps one or more attribute names (keys) to the specified value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/jar/Attributes.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object to the underlying [map](../java/util/jar/Attributes.md) for equality. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [get](../java/util/jar/Attributes.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value of the specified attribute name, or null if the attribute name was not found. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#getValue(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the specified attribute name, specified as a string, or null if the attribute was not found. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#getValue(java.util.jar.Attributes.Name))`(`name:` ` [Attributes.Name](https://developer.android.com/reference/kotlin/java/util/jar/Attributes.Name)!`)` Returns the value of the specified Attributes. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#hashCode())`()` Returns the hash code value for this Map. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../java/util/jar/Attributes.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the specified attribute name, specified as a string, or null if the attribute was not found. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../java/util/jar/Attributes.md))`(`name:` ` [Attributes.Name](../java/util/jar/Attributes.Name.md)!`)` Returns the value of the specified Attributes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/jar/Attributes.md))`()` Returns the hash code value for this Map. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#isEmpty())`()` Returns true if this Map contains no attributes. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [put](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#put(kotlin.Any,%20kotlin.Any))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Associates the specified value with the specified attribute name (key) in this Map. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#putAll(kotlin.collections.Map))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<*,` `*>`)` Copies all of the attribute name-value mappings from the specified Attributes to this Map. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/jar/Attributes.md))`()` Returns true if this Map contains no attributes. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [put](../java/util/jar/Attributes.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Associates the specified value with the specified attribute name (key) in this Map. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](../java/util/jar/Attributes.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<*,` `*>`)` Copies all of the attribute name-value mappings from the specified Attributes to this Map. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [putValue](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#putValue(kotlin.String,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Associates the specified value with the specified attribute name, specified as a String. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [remove](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#remove(kotlin.Any))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Removes the attribute with the specified name (key) from this Map. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [putValue](../java/util/jar/Attributes.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Associates the specified value with the specified attribute name, specified as a String. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [remove](../java/util/jar/Attributes.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Removes the attribute with the specified name (key) from this Map. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#entries:kotlin.collections.MutableSet) Returns a Collection view of the attribute name-value mappings contained in this Map. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [keys](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#keys:kotlin.collections.MutableSet) Returns a Set view of the attribute names (keys) contained in this Map. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [map](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#map:kotlin.collections.MutableMap) The attribute name-value mappings. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>\> | [entries](../java/util/jar/Attributes.md) Returns a Collection view of the attribute name-value mappings contained in this Map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [keys](../java/util/jar/Attributes.md) Returns a Set view of the attribute names (keys) contained in this Map. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [map](../java/util/jar/Attributes.md) The attribute name-value mappings. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#size:kotlin.Int) Returns the number of attributes in this Map. |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [values](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#values:kotlin.collections.MutableCollection) Returns a Collection view of the attribute values contained in this Map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/jar/Attributes.md) Returns the number of attributes in this Map. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [values](../java/util/jar/Attributes.md) Returns a Collection view of the attribute values contained in this Map. |
 
 ## Public constructors
 
@@ -96,7 +96,7 @@ Constructs a new Attributes object with the same attribute name-value mappings a
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------|
-| `attr` | [Attributes](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#)!:the specified Attributes |
+| `attr` | [Attributes](../java/util/jar/Attributes.md)!:the specified Attributes |
 
 ## Public methods
 
@@ -195,7 +195,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun equals(other: Any?): Boolean
 ```
 
-Compares the specified object to the underlying [map](https://developer.android.com/reference/kotlin/java/util/jar/Attributes#map:kotlin.collections.MutableMap) for equality. Returns true if the given object is also a Map and the two maps represent the same mappings.
+Compares the specified object to the underlying [map](../java/util/jar/Attributes.md) for equality. Returns true if the given object is also a Map and the two maps represent the same mappings.
 
 | Parameters ||
 |-------|---------------------------------------------|
@@ -278,7 +278,7 @@ return (String)get(name);
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------|
-| `name` | [Attributes.Name](https://developer.android.com/reference/kotlin/java/util/jar/Attributes.Name)!:the Attributes.Name object |
+| `name` | [Attributes.Name](../java/util/jar/Attributes.Name.md)!:the Attributes.Name object |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------|

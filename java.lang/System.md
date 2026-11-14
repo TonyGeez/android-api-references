@@ -8,7 +8,7 @@ class System
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.System](https://developer.android.com/reference/kotlin/java/lang/System#) |
+| ↳ | [java.lang.System](../java/lang/System.md) |
 
 The `System` class contains several useful class fields and methods. It cannot be instantiated.
 
@@ -20,22 +20,22 @@ Among the facilities provided by the `System` class are standard input, standard
 |---|---|
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#arraycopy(kotlin.Any,%20kotlin.Int,%20kotlin.Any,%20kotlin.Int,%20kotlin.Int)(src: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, srcPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, destPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#clearProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes the system property indicated by the specified key. |
-| static [Console](https://developer.android.com/reference/kotlin/java/io/Console.html#)? | `https://developer.android.com/reference/kotlin/java/lang/System#console()()` Returns the unique `https://developer.android.com/reference/kotlin/java/io/Console.html#` object associated with the current Java virtual machine, if any. |
+| static [Console](../java/io/Console.md)? | `https://developer.android.com/reference/kotlin/java/lang/System#console()()` Returns the unique `https://developer.android.com/reference/kotlin/java/io/Console.html#` object associated with the current Java virtual machine, if any. |
 | --- | --- |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#currentTimeMillis()()` Returns the current time in milliseconds. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#exit(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Terminates the currently running Java Virtual Machine. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#gc()()` Runs the garbage collector. |
 | --- | --- |
-| static [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#) | `https://developer.android.com/reference/kotlin/java/lang/System#getProperties()()` Determines the current system properties. |
+| static [Properties](../java/util/Properties.md) | `https://developer.android.com/reference/kotlin/java/lang/System#getProperties()()` Determines the current system properties. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the system property indicated by the specified key. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Gets the system property indicated by the specified key. |
 | --- | --- |
-| static [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager)? | `https://developer.android.com/reference/kotlin/java/lang/System#getSecurityManager()()` Always returns `null` in Android |
+| static [SecurityManager](../java/lang/SecurityManager.md)? | `https://developer.android.com/reference/kotlin/java/lang/System#getSecurityManager()()` Always returns `null` in Android |
 | static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/System#getenv()()` Returns an unmodifiable string map view of the current system environment. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getenv(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the value of the specified environment variable. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#identityHashCode(kotlin.Any)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns the same hash code for the given object as would be returned by the default method hashCode(), whether or not the given object's class overrides hashCode(). |
-| static [Channel](https://developer.android.com/reference/kotlin/java/nio/channels/Channel.html#)? | `https://developer.android.com/reference/kotlin/java/lang/System#inheritedChannel()()` Returns the channel inherited from the entity that created this Java virtual machine. |
+| static [Channel](../java/nio/channels/Channel.md)? | `https://developer.android.com/reference/kotlin/java/lang/System#inheritedChannel()()` Returns the channel inherited from the entity that created this Java virtual machine. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#lineSeparator()()` Returns the system-dependent line separator string. |
 | --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#load(kotlin.String)(filename: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads the native library specified by the filename argument. |
@@ -57,9 +57,9 @@ Among the facilities provided by the `System` class are standard input, standard
 
 | Properties ||
 |---|---|
-| static [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/System#err:java.io.PrintStream` The "standard" error output stream. |
-| static [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/System#in:java.io.InputStream` The "standard" input stream. |
-| static [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/System#out:java.io.PrintStream` The "standard" output stream. |
+| static [PrintStream](../java/io/PrintStream.md)! | `https://developer.android.com/reference/kotlin/java/lang/System#err:java.io.PrintStream` The "standard" error output stream. |
+| static [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/lang/System#in:java.io.InputStream` The "standard" input stream. |
+| static [PrintStream](../java/io/PrintStream.md)! | `https://developer.android.com/reference/kotlin/java/lang/System#out:java.io.PrintStream` The "standard" output stream. |
 | --- | --- |
 
 ## Public methods
@@ -428,7 +428,7 @@ The returned map is typically case-sensitive on all platforms.
 
 If a security manager exists, its java.lang.SecurityManager#checkPermission method is called with a `` `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`("getenv.*") `` permission. This may result in a `https://developer.android.com/reference/kotlin/java/lang/SecurityException` being thrown.
 
-When passing information to a Java subprocess, [system properties](https://developer.android.com/reference/kotlin/java/lang/System#EnvironmentVSSystemProperties) are generally preferred over environment variables.
+When passing information to a Java subprocess, [system properties](../java/lang/System.md) are generally preferred over environment variables.
 
 | Return ||
 |---|---|
@@ -526,7 +526,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static fun lineSeparator(): String
 ```
 
-Returns the system-dependent line separator string. It always returns the same value - the initial value of the [system property](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)) `line.separator`.
+Returns the system-dependent line separator string. It always returns the same value - the initial value of the [system property](../java/lang/System.md)) `line.separator`.
 
 On UNIX systems, it returns `"\n"`; on Microsoft Windows systems it returns `"\r\n"`.
 
@@ -733,7 +733,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 | Parameters ||
 |---|---|
-| `err` | [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)?: the new standard error output stream. |
+| `err` | [PrintStream](../java/io/PrintStream.md)?: the new standard error output stream. |
 
 | Exceptions ||
 |---|---|
@@ -759,7 +759,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)?: the new standard input stream. |
+| `in` | [InputStream](../java/io/InputStream.md)?: the new standard input stream. |
 
 | Exceptions ||
 |---|---|
@@ -783,7 +783,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 | Parameters ||
 |---|---|
-| `out` | [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)?: the new standard output stream |
+| `out` | [PrintStream](../java/io/PrintStream.md)?: the new standard output stream |
 
 | Exceptions ||
 |---|---|
@@ -856,7 +856,7 @@ Security managers do *not* provide a secure environment for executing untrusted 
 
 | Parameters ||
 |---|---|
-| `s` | [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager)?: a security manager |
+| `s` | [SecurityManager](../java/lang/SecurityManager.md)?: a security manager |
 
 | Exceptions ||
 |---|---|

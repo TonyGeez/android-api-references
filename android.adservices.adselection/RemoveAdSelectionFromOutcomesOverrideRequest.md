@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 
 # RemoveAdSelectionFromOutcomesOverrideRequest
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest "View this page in Java") 
+Kotlin| [Java](../android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest.md) 
 | --- | --- |
 
 ```
@@ -14,21 +14,21 @@ open class RemoveAdSelectionFromOutcomesOverrideRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adselection.RemoveAdSelectionFromOutcomesOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest#) |
+| ↳ | [android.adservices.adselection.RemoveAdSelectionFromOutcomesOverrideRequest](../android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest.md) |
 
-This POJO represents the [RemoveAdSelectionFromOutcomesOverrideRequest, Executor, OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager) request
+This POJO represents the [RemoveAdSelectionFromOutcomesOverrideRequest, Executor, OutcomeReceiver)](../android/adservices/adselection/TestAdSelectionManager.md) request
 
-It contains one field, a [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig) which serves as the identifier of the override to be removed
+It contains one field, a [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md) which serves as the identifier of the override to be removed
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RemoveAdSelectionFromOutcomesOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest#RemoveAdSelectionFromOutcomesOverrideRequest(android.adservices.adselection.AdSelectionFromOutcomesConfig))`(`config:` ` [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig)`)` Builds a [RemoveAdSelectionOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest) instance. |
+| [RemoveAdSelectionFromOutcomesOverrideRequest](../android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest.md))`(`config:` ` [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md)`)` Builds a [RemoveAdSelectionOverrideRequest](../android/adservices/adselection/RemoveAdSelectionOverrideRequest.md) instance. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig) | [getAdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest#getAdSelectionFromOutcomesConfig())`()` <br /> |
+| open [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md) | [getAdSelectionFromOutcomesConfig](../android/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest.md))`()` <br /> |
 
 ## Public constructors
 
@@ -41,11 +41,11 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 RemoveAdSelectionFromOutcomesOverrideRequest(config: AdSelectionFromOutcomesConfig)
 ```
 
-Builds a [RemoveAdSelectionOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest) instance.
+Builds a [RemoveAdSelectionOverrideRequest](../android/adservices/adselection/RemoveAdSelectionOverrideRequest.md) instance.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `config` | [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig):This value cannot be`null`. |
+| `config` | [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md):This value cannot be`null`. |
 
 ## Public methods
 
@@ -60,4 +60,4 @@ open fun getAdSelectionFromOutcomesConfig(): AdSelectionFromOutcomesConfig
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig) | AdSelectionConfig, the configuration of the ad selection process. This value cannot be`null`. |
+| [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md) | AdSelectionConfig, the configuration of the ad selection process. This value cannot be`null`. |

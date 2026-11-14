@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # RouteSelectionDescriptor
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor "View this page in Java") 
+Kotlin| [Java](../android/telephony/data/RouteSelectionDescriptor.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class RouteSelectionDescriptor : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.data.RouteSelectionDescriptor](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#) |
+| ↳ | [android.telephony.data.RouteSelectionDescriptor](../android/telephony/data/RouteSelectionDescriptor.md) |
 
 Represents a single route selection descriptor as defined in 3GPP TS 24.526.
 
@@ -21,38 +21,38 @@ Represents a single route selection descriptor as defined in 3GPP TS 24.526.
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_SSC_MODE_1](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#ROUTE_SSC_MODE_1:kotlin.Int) The route selection descriptor is using SSC mode 1. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_SSC_MODE_2](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#ROUTE_SSC_MODE_2:kotlin.Int) The route selection descriptor is using SSC mode 2. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_SSC_MODE_3](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#ROUTE_SSC_MODE_3:kotlin.Int) The route selection descriptor is using SSC mode 3. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_SSC_MODE_1](../android/telephony/data/RouteSelectionDescriptor.md) The route selection descriptor is using SSC mode 1. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_SSC_MODE_2](../android/telephony/data/RouteSelectionDescriptor.md) The route selection descriptor is using SSC mode 2. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_SSC_MODE_3](../android/telephony/data/RouteSelectionDescriptor.md) The route selection descriptor is using SSC mode 3. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SESSION_TYPE_IPV4](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#SESSION_TYPE_IPV4:kotlin.Int) The route selection descriptor is for the session with IPV4 type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SESSION_TYPE_IPV4V6](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#SESSION_TYPE_IPV4V6:kotlin.Int) The route selection descriptor is for the session with both IP and IPV6 types. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SESSION_TYPE_IPV6](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#SESSION_TYPE_IPV6:kotlin.Int) The route selection descriptor is for the session with IPV6 type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SESSION_TYPE_IPV4](../android/telephony/data/RouteSelectionDescriptor.md) The route selection descriptor is for the session with IPV4 type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SESSION_TYPE_IPV4V6](../android/telephony/data/RouteSelectionDescriptor.md) The route selection descriptor is for the session with both IP and IPV6 types. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SESSION_TYPE_IPV6](../android/telephony/data/RouteSelectionDescriptor.md) The route selection descriptor is for the session with IPV6 type. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDataNetworkName](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#getDataNetworkName())`()` DNN stands for Data Network Name and represents an APN as defined in 3GPP TS 23. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/data/RouteSelectionDescriptor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/data/RouteSelectionDescriptor.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDataNetworkName](../android/telephony/data/RouteSelectionDescriptor.md))`()` DNN stands for Data Network Name and represents an APN as defined in 3GPP TS 23. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecedence](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#getPrecedence())`()` Precedence value in the range of 0 to 255. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionType](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#getSessionType())`()` This is used for checking which session type defined in 3GPP TS 23. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkSliceInfo](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSliceInfo)!\> | [getSliceInfo](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#getSliceInfo())`()` This is the list of all the slices available in the route selection descriptor as indicated by the network. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecedence](../android/telephony/data/RouteSelectionDescriptor.md))`()` Precedence value in the range of 0 to 255. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionType](../android/telephony/data/RouteSelectionDescriptor.md))`()` This is used for checking which session type defined in 3GPP TS 23. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkSliceInfo](../android/telephony/data/NetworkSliceInfo.md)!\> | [getSliceInfo](../android/telephony/data/RouteSelectionDescriptor.md))`()` This is the list of all the slices available in the route selection descriptor as indicated by the network. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSscMode](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#getSscMode())`()` SSC mode stands for Session and Service Continuity mode (which specifies the IP continuity mode) as defined in 3GPP TS 23. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#toString())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSscMode](../android/telephony/data/RouteSelectionDescriptor.md))`()` SSC mode stands for Session and Service Continuity mode (which specifies the IP continuity mode) as defined in 3GPP TS 23. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/data/RouteSelectionDescriptor.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/data/RouteSelectionDescriptor.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/data/RouteSelectionDescriptor.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RouteSelectionDescriptor](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RouteSelectionDescriptor](../android/telephony/data/RouteSelectionDescriptor.md)!\> | [CREATOR](../android/telephony/data/RouteSelectionDescriptor.md) <br /> |
 
 ## Constants
 
@@ -140,7 +140,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -211,7 +211,7 @@ This is used for checking which session type defined in 3GPP TS 23.501 is allowe
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the session type for this route selection descriptor. Value is [android.telephony.data.RouteSelectionDescriptor#SESSION_TYPE_IPV4](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#SESSION_TYPE_IPV4:kotlin.Int), [android.telephony.data.RouteSelectionDescriptor#SESSION_TYPE_IPV6](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#SESSION_TYPE_IPV6:kotlin.Int), or [android.telephony.data.RouteSelectionDescriptor#SESSION_TYPE_IPV4V6](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#SESSION_TYPE_IPV4V6:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the session type for this route selection descriptor. Value is [android.telephony.data.RouteSelectionDescriptor#SESSION_TYPE_IPV4](../android/telephony/data/RouteSelectionDescriptor.md), [android.telephony.data.RouteSelectionDescriptor#SESSION_TYPE_IPV6](../android/telephony/data/RouteSelectionDescriptor.md), or [android.telephony.data.RouteSelectionDescriptor#SESSION_TYPE_IPV4V6](../android/telephony/data/RouteSelectionDescriptor.md) |
 
 ### getSliceInfo
 
@@ -225,7 +225,7 @@ This is the list of all the slices available in the route selection descriptor a
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [NetworkSliceInfo](https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSliceInfo)!> | the list of all the slices available in the route selection descriptor. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [NetworkSliceInfo](../android/telephony/data/NetworkSliceInfo.md)!> | the list of all the slices available in the route selection descriptor. This value cannot be`null`. |
 
 ### getSscMode
 
@@ -239,7 +239,7 @@ SSC mode stands for Session and Service Continuity mode (which specifies the IP 
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the SSC mode for this route selection descriptor. Value is [android.telephony.data.RouteSelectionDescriptor#ROUTE_SSC_MODE_1](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#ROUTE_SSC_MODE_1:kotlin.Int), [android.telephony.data.RouteSelectionDescriptor#ROUTE_SSC_MODE_2](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#ROUTE_SSC_MODE_2:kotlin.Int), or [android.telephony.data.RouteSelectionDescriptor#ROUTE_SSC_MODE_3](https://developer.android.com/reference/kotlin/android/telephony/data/RouteSelectionDescriptor#ROUTE_SSC_MODE_3:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the SSC mode for this route selection descriptor. Value is [android.telephony.data.RouteSelectionDescriptor#ROUTE_SSC_MODE_1](../android/telephony/data/RouteSelectionDescriptor.md), [android.telephony.data.RouteSelectionDescriptor#ROUTE_SSC_MODE_2](../android/telephony/data/RouteSelectionDescriptor.md), or [android.telephony.data.RouteSelectionDescriptor#ROUTE_SSC_MODE_3](../android/telephony/data/RouteSelectionDescriptor.md) |
 
 ### hashCode
 
@@ -280,8 +280,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

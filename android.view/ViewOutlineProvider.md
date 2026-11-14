@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ViewOutlineProvider
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ViewOutlineProvider "View this page in Java") 
+Kotlin| [Java](../android/view/ViewOutlineProvider.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ abstract class ViewOutlineProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewOutlineProvider](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#) |
+| ↳ | [android.view.ViewOutlineProvider](../android/view/ViewOutlineProvider.md) |
 
-| Known Direct Subclasses [RemoteViews.RemoteViewOutlineProvider](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteViewOutlineProvider.html#) |----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RemoteViews.RemoteViewOutlineProvider](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteViewOutlineProvider.html#) | OutlineProvider for a view with a radius set by [setViewOutlinePreferredRadius(int,float,int)](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setViewOutlinePreferredRadius(kotlin.Int,%20kotlin.Float,%20kotlin.Int)). | |
+| Known Direct Subclasses [RemoteViews.RemoteViewOutlineProvider](../android/widget/RemoteViews.RemoteViewOutlineProvider.md) |----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RemoteViews.RemoteViewOutlineProvider](../android/widget/RemoteViews.RemoteViewOutlineProvider.md) | OutlineProvider for a view with a radius set by [setViewOutlinePreferredRadius(int,float,int)](../android/widget/RemoteViews.md)). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Interface by which a View builds its [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#), used for shadow casting and clipping.
+Interface by which a View builds its [Outline](../android/graphics/Outline.md), used for shadow casting and clipping.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ViewOutlineProvider](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#ViewOutlineProvider())`()` <br /> |
+| [ViewOutlineProvider](../android/view/ViewOutlineProvider.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#getOutline(android.view.View,%20android.graphics.Outline))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)!`)` Called to get the provider to populate the Outline. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](../android/view/ViewOutlineProvider.md))`(`view:` ` [View](../android/view/View.md)!`, `outline:` ` [Outline](../android/graphics/Outline.md)!`)` Called to get the provider to populate the Outline. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ViewOutlineProvider](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#)! | [BACKGROUND](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#BACKGROUND:android.view.ViewOutlineProvider) Default outline provider for Views, which queries the Outline from the View's background, or generates a 0 alpha, rectangular Outline the size of the View if a background isn't present. |
-| static [ViewOutlineProvider](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#)! | [BOUNDS](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#BOUNDS:android.view.ViewOutlineProvider) Maintains the outline of the View to match its rectangular bounds, at`1.0f`alpha. |
-| static [ViewOutlineProvider](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#)! | [PADDED_BOUNDS](https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider#PADDED_BOUNDS:android.view.ViewOutlineProvider) Maintains the outline of the View to match its rectangular padded bounds, at`1.0f`alpha. |
+| static [ViewOutlineProvider](../android/view/ViewOutlineProvider.md)! | [BACKGROUND](../android/view/ViewOutlineProvider.md) Default outline provider for Views, which queries the Outline from the View's background, or generates a 0 alpha, rectangular Outline the size of the View if a background isn't present. |
+| static [ViewOutlineProvider](../android/view/ViewOutlineProvider.md)! | [BOUNDS](../android/view/ViewOutlineProvider.md) Maintains the outline of the View to match its rectangular bounds, at`1.0f`alpha. |
+| static [ViewOutlineProvider](../android/view/ViewOutlineProvider.md)! | [PADDED_BOUNDS](../android/view/ViewOutlineProvider.md) Maintains the outline of the View to match its rectangular padded bounds, at`1.0f`alpha. |
 | --- | --- |
 
 ## Public constructors
@@ -58,12 +58,12 @@ abstract fun getOutline(
 ): Unit
 ```
 
-Called to get the provider to populate the Outline. This method will be called by a View when its owned Drawables are invalidated, when the View's size changes, or if [View.invalidateOutline()](https://developer.android.com/reference/kotlin/android/view/View#invalidateOutline())is called explicitly. The input outline is empty and has an alpha of`1.0f`.
+Called to get the provider to populate the Outline. This method will be called by a View when its owned Drawables are invalidated, when the View's size changes, or if [View.invalidateOutline()](../android/view/View.md))is called explicitly. The input outline is empty and has an alpha of`1.0f`.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view building the outline. |
-| `outline` | [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)!:The empty outline to be populated. |
+| `view` | [View](../android/view/View.md)!:The view building the outline. |
+| `outline` | [Outline](../android/graphics/Outline.md)!:The empty outline to be populated. |
 
 ## Properties
 
@@ -78,7 +78,7 @@ static val BACKGROUND: ViewOutlineProvider!
 Default outline provider for Views, which queries the Outline from the View's background, or generates a 0 alpha, rectangular Outline the size of the View if a background isn't present. 
 **See Also**
 
-- [android.graphics.drawable.Drawable#getOutline(Outline)](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#getOutline(android.graphics.Outline)) 
+- [android.graphics.drawable.Drawable#getOutline(Outline)](../android/graphics/drawable/Drawable.md)) 
 
 ### BOUNDS
 

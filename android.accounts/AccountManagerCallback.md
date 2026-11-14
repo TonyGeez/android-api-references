@@ -4,20 +4,20 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # AccountManagerCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/accounts/AccountManagerCallback "View this page in Java") 
+Kotlin| [Java](../android/accounts/AccountManagerCallback.md) 
 | --- | --- |
 
 ```
 interface AccountManagerCallback<V : Any!>
 ```
 
-| [android.accounts.AccountManagerCallback](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback#) |
+| [android.accounts.AccountManagerCallback](../android/accounts/AccountManagerCallback.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback#run(android.accounts.AccountManagerFuture))`(`future:` ` [AccountManagerFuture](https://developer.android.com/reference/kotlin/android/accounts/AccountManagerFuture)<V>!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](../android/accounts/AccountManagerCallback.md))`(`future:` ` [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)<V>!`)` <br /> |
 
 ## Public methods
 

@@ -8,16 +8,16 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface FileAttribute<T : Any!>
 ```
 
-| [java.nio.file.attribute.FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute#) |
+| [java.nio.file.attribute.FileAttribute](../java/nio/file/attribute/FileAttribute.md) |
 
-An object that encapsulates the value of a file attribute that can be set atomically when creating a new file or directory by invoking the [createFile](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#createFile(java.nio.file.Path,%20java.nio.file.attribute.FileAttribute))or [createDirectory](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#createDirectory(java.nio.file.Path,%20java.nio.file.attribute.FileAttribute))methods.
+An object that encapsulates the value of a file attribute that can be set atomically when creating a new file or directory by invoking the [createFile](../java/nio/file/Files.md))or [createDirectory](../java/nio/file/Files.md))methods.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute#name())`()` Returns the attribute name. |
-| abstractT | [value](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute#value())`()` Returns the attribute value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../java/nio/file/attribute/FileAttribute.md))`()` Returns the attribute name. |
+| abstractT | [value](../java/nio/file/attribute/FileAttribute.md))`()` Returns the attribute value. |
 
 ## Public methods
 

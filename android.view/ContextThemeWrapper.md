@@ -8,21 +8,21 @@ open class ContextThemeWrapper : ContextWrapper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||
-| | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#) |
+| ↳ | [android.content.Context](../android/content/Context.md) |||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
+| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |
 | --- | --- | --- | --- |
 
-Known Direct Subclasses [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) An activity is a single, focused thing that the user can do.
-Known Indirect Subclasses [AccountAuthenticatorActivity](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorActivity.html#), [ActivityGroup](https://developer.android.com/reference/kotlin/android/app/ActivityGroup.html#), [AliasActivity](https://developer.android.com/reference/kotlin/android/app/AliasActivity.html#), [ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity.html#), [LauncherActivity](https://developer.android.com/reference/kotlin/android/app/LauncherActivity.html#), [ListActivity](https://developer.android.com/reference/kotlin/android/app/ListActivity.html#), [NativeActivity](https://developer.android.com/reference/kotlin/android/app/NativeActivity.html#), [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity.html#), [TabActivity](https://developer.android.com/reference/kotlin/android/app/TabActivity.html#) [AccountAuthenticatorActivity](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorActivity.html#) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
-[ActivityGroup](https://developer.android.com/reference/kotlin/android/app/ActivityGroup.html#) A screen that contains and runs multiple embedded activities.
-[AliasActivity](https://developer.android.com/reference/kotlin/android/app/AliasActivity.html#) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
-[ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity.html#) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
-[LauncherActivity](https://developer.android.com/reference/kotlin/android/app/LauncherActivity.html#) Displays a list of all activities which can be performed for a given intent.
-[ListActivity](https://developer.android.com/reference/kotlin/android/app/ListActivity.html#) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
-[NativeActivity](https://developer.android.com/reference/kotlin/android/app/NativeActivity.html#) Convenience for implementing an activity that will be implemented purely in native code.
-[PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity.html#) This is the base class for an activity to show a hierarchy of preferences to the user.
-[TabActivity](https://developer.android.com/reference/kotlin/android/app/TabActivity.html#) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
+Known Direct Subclasses [Activity](../android/app/Activity.md) [Activity](../android/app/Activity.md) An activity is a single, focused thing that the user can do.
+Known Indirect Subclasses [AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md), [ActivityGroup](../android/app/ActivityGroup.md), [AliasActivity](../android/app/AliasActivity.md), [ExpandableListActivity](../android/app/ExpandableListActivity.md), [LauncherActivity](../android/app/LauncherActivity.md), [ListActivity](../android/app/ListActivity.md), [NativeActivity](../android/app/NativeActivity.md), [PreferenceActivity](../android/preference/PreferenceActivity.md), [TabActivity](../android/app/TabActivity.md) [AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
+[ActivityGroup](../android/app/ActivityGroup.md) A screen that contains and runs multiple embedded activities.
+[AliasActivity](../android/app/AliasActivity.md) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
+[ExpandableListActivity](../android/app/ExpandableListActivity.md) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
+[LauncherActivity](../android/app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
+[ListActivity](../android/app/ListActivity.md) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
+[NativeActivity](../android/app/NativeActivity.md) Convenience for implementing an activity that will be implemented purely in native code.
+[PreferenceActivity](../android/preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
+[TabActivity](../android/app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
 
 A context wrapper that allows you to modify or replace the theme of the wrapped context.
 
@@ -475,7 +475,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -946,11 +946,11 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#applyOverrideConfiguration(android.content.res.Configuration)(overrideConfiguration: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Call to set an "override configuration" on this context -- this is a configuration that replies one or more values of the standard configuration that is applied to the context. |
-| open [AssetManager](https://developer.android.com/reference/kotlin/android/content/res/AssetManager.html#)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getAssets()()` Returns an AssetManager instance for the application's package. |
-| open [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getResources()()` Returns a Resources instance for the application's package. |
+| open [AssetManager](../android/content/res/AssetManager.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getAssets()()` Returns an AssetManager instance for the application's package. |
+| open [Resources](../android/content/res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getResources()()` Returns a Resources instance for the application's package. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
-| open [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getTheme()()` Return the Theme object associated with this Context. |
+| open [Resources.Theme](../android/content/res/Resources.Theme.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getTheme()()` Return the Theme object associated with this Context. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#setTheme(android.content.res.Resources.Theme)(theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Set the configure the current theme. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#setTheme(kotlin.Int)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the base theme for this context. |
@@ -2100,7 +2100,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2141,9 +2141,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2341,8 +2341,8 @@ Unlike `https://developer.android.com/reference/kotlin/android/view/ContextTheme
 
 | Parameters ||
 |---|---|
-| `base` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the base context |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)!: the theme against which resources should be inflated |
+| `base` | [Context](../android/content/Context.md)!: the base context |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)!: the theme against which resources should be inflated |
 
 ### ContextThemeWrapper
 
@@ -2360,7 +2360,7 @@ The specified theme will be applied on top of the base context's theme. Any attr
 
 | Parameters ||
 |---|---|
-| `base` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the base context |
+| `base` | [Context](../android/content/Context.md)!: the base context |
 | `themeResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource ID of the theme to be applied on top of the base context's theme |
 
 ## Public methods
@@ -2541,7 +2541,7 @@ Set the configure the current theme. If null is provided then the default Theme 
 
 | Parameters ||
 |---|---|
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?: Theme to consume in the wrapper, a value of null resets the theme to the default |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: Theme to consume in the wrapper, a value of null resets the theme to the default |
 
 ### setTheme
 
@@ -2589,7 +2589,7 @@ Called by #setTheme and #getTheme to apply a theme resource to the current Theme
 
 | Parameters ||
 |---|---|
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)!: the theme being modified |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)!: the theme being modified |
 | `resId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the style resource being applied to theme |
 | `first` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if this is the first time a style is being applied to theme |
 | --- | --- |

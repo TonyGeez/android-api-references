@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # BluetoothClass
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothClass "View this page in Java") 
+Kotlin| [Java](../android/bluetooth/BluetoothClass.md) 
 | --- | --- |
 
 ```
@@ -13,52 +13,52 @@ class BluetoothClass : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#) |
+| ↳ | [android.bluetooth.BluetoothClass](../android/bluetooth/BluetoothClass.md) |
 
 Represents a Bluetooth class, which describes general characteristics and capabilities of a device. For example, a Bluetooth class will specify the general device type such as a phone, a computer, or headset, and whether it's capable of services such as audio or telephony.
 
 Every Bluetooth class is composed of zero or more service classes, and exactly one device class. The device class is further broken down into major and minor device class components.
 
-[BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#) is useful as a hint to roughly describe a device (for example to show an icon in the UI), but does not reliably describe which Bluetooth profiles or services are actually supported by a device. Accurate service discovery is done through SDP requests, which are automatically performed when creating an RFCOMM socket with [android.bluetooth.BluetoothDevice#createRfcommSocketToServiceRecord](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createRfcommSocketToServiceRecord(java.util.UUID))and [android.bluetooth.BluetoothAdapter#listenUsingRfcommWithServiceRecord](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingRfcommWithServiceRecord(kotlin.String,%20java.util.UUID))
+[BluetoothClass](../android/bluetooth/BluetoothClass.md) is useful as a hint to roughly describe a device (for example to show an icon in the UI), but does not reliably describe which Bluetooth profiles or services are actually supported by a device. Accurate service discovery is done through SDP requests, which are automatically performed when creating an RFCOMM socket with [android.bluetooth.BluetoothDevice#createRfcommSocketToServiceRecord](../android/bluetooth/BluetoothDevice.md))and [android.bluetooth.BluetoothAdapter#listenUsingRfcommWithServiceRecord](../android/bluetooth/BluetoothAdapter.md))
 
-Use [BluetoothDevice.getBluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBluetoothClass())to retrieve the class for a remote device.
+Use [BluetoothDevice.getBluetoothClass](../android/bluetooth/BluetoothDevice.md))to retrieve the class for a remote device.
 
 ## Summary
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------|
-| | [Device](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass.Device) Defines all device class constants. |
-| | [Service](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass.Service) Defines all service class constants. |
+| | [Device](../android/bluetooth/BluetoothClass.Device.md) Defines all device class constants. |
+| | [Service](../android/bluetooth/BluetoothClass.Service.md) Defines all service class constants. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_A2DP](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#PROFILE_A2DP:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_HEADSET](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#PROFILE_HEADSET:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_HID](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#PROFILE_HID:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_A2DP](../android/bluetooth/BluetoothClass.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_HEADSET](../android/bluetooth/BluetoothClass.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_HID](../android/bluetooth/BluetoothClass.md) <br /> |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doesClassMatch](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#doesClassMatch(kotlin.Int))`(`profile:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Check class bits for possible bluetooth profile support. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/bluetooth/BluetoothClass.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doesClassMatch](../android/bluetooth/BluetoothClass.md))`(`profile:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Check class bits for possible bluetooth profile support. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/bluetooth/BluetoothClass.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#getDeviceClass())`()` Return the (major and minor) device class component of this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMajorDeviceClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#getMajorDeviceClass())`()` Return the major device class component of this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#hasService(kotlin.Int))`(`service:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified service class is supported by this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceClass](../android/bluetooth/BluetoothClass.md))`()` Return the (major and minor) device class component of this [BluetoothClass](../android/bluetooth/BluetoothClass.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMajorDeviceClass](../android/bluetooth/BluetoothClass.md))`()` Return the major device class component of this [BluetoothClass](../android/bluetooth/BluetoothClass.md). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasService](../android/bluetooth/BluetoothClass.md))`(`service:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified service class is supported by this [BluetoothClass](../android/bluetooth/BluetoothClass.md). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/bluetooth/BluetoothClass.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/bluetooth/BluetoothClass.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/bluetooth/BluetoothClass.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothClass](../android/bluetooth/BluetoothClass.md)!\> | [CREATOR](../android/bluetooth/BluetoothClass.md) <br /> |
 
 ## Constants
 
@@ -104,7 +104,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### doesClassMatch
 
@@ -161,9 +161,9 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun getDeviceClass(): Int
 ```
 
-Return the (major and minor) device class component of this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#).
+Return the (major and minor) device class component of this [BluetoothClass](../android/bluetooth/BluetoothClass.md).
 
-Values returned from this function can be compared with the public constants in [BluetoothClass.Device](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass.Device) to determine which device class is encoded in this Bluetooth class.
+Values returned from this function can be compared with the public constants in [BluetoothClass.Device](../android/bluetooth/BluetoothClass.Device.md) to determine which device class is encoded in this Bluetooth class.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------|
@@ -177,9 +177,9 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun getMajorDeviceClass(): Int
 ```
 
-Return the major device class component of this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#).
+Return the major device class component of this [BluetoothClass](../android/bluetooth/BluetoothClass.md).
 
-Values returned from this function can be compared with the public constants in [BluetoothClass.Device.Major](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass.Device.Major) to determine which major class is encoded in this Bluetooth class.
+Values returned from this function can be compared with the public constants in [BluetoothClass.Device.Major](../android/bluetooth/BluetoothClass.Device.Major.md) to determine which major class is encoded in this Bluetooth class.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------|
@@ -193,9 +193,9 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun hasService(service: Int): Boolean
 ```
 
-Return true if the specified service class is supported by this [BluetoothClass](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass#).
+Return true if the specified service class is supported by this [BluetoothClass](../android/bluetooth/BluetoothClass.md).
 
-Valid service classes are the public constants in [BluetoothClass.Service](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass.Service). For example, [BluetoothClass.Service.AUDIO](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass.Service#AUDIO:kotlin.Int).
+Valid service classes are the public constants in [BluetoothClass.Service](../android/bluetooth/BluetoothClass.Service.md). For example, [BluetoothClass.Service.AUDIO](../android/bluetooth/BluetoothClass.Service.md).
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------|
@@ -243,7 +243,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

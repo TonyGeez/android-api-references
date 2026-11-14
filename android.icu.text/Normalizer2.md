@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # Normalizer2
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/Normalizer2 "View this page in Java") 
+Kotlin| [Java](../android/icu/text/Normalizer2.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class Normalizer2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#) |
+| ↳ | [android.icu.text.Normalizer2](../android/icu/text/Normalizer2.md) |
 
 Unicode normalization functionality for standard Unicode normalization or for using custom mapping tables. All instances of this class are unmodifiable/immutable. The Normalizer2 class is not intended for public subclassing.
 
@@ -35,39 +35,39 @@ The set of normalization boundaries returned by these functions may not be compl
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------|
-| | [Mode](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2.Mode) Constants for normalization modes. |
+| | [Mode](../android/icu/text/Normalizer2.Mode.md) Constants for normalization modes. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | [append](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#append(java.lang.StringBuilder,%20kotlin.CharSequence))`(`first:` ` [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!`, `second:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Appends the second string to the first string (merging them at the boundary) and returns the first string. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [composePair](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#composePair(kotlin.Int,%20kotlin.Int))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Performs pairwise composition of a \& b and returns the composite if there is one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCombiningClass](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getCombiningClass(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the combining class of c. |
+| abstract [StringBuilder](../java/lang/StringBuilder.md)! | [append](../android/icu/text/Normalizer2.md))`(`first:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `second:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Appends the second string to the first string (merging them at the boundary) and returns the first string. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [composePair](../android/icu/text/Normalizer2.md))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Performs pairwise composition of a \& b and returns the composite if there is one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCombiningClass](../android/icu/text/Normalizer2.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the combining class of c. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDecomposition](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getDecomposition(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the decomposition mapping of c. |
-| openstatic [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getInstance(java.io.InputStream,%20kotlin.String,%20android.icu.text.Normalizer2.Mode))`(`data:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [Normalizer2.Mode](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2.Mode)!`)` Returns a Normalizer2 instance which uses the specified data file (an ICU data file if data=null, or else custom binary data) and which composes or decomposes text according to the specified mode. |
-| openstatic [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | [getNFCInstance](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getNFCInstance())`()` Returns a Normalizer2 instance for Unicode NFC normalization. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDecomposition](../android/icu/text/Normalizer2.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the decomposition mapping of c. |
+| openstatic [Normalizer2](../android/icu/text/Normalizer2.md)! | [getInstance](../android/icu/text/Normalizer2.md))`(`data:` ` [InputStream](../java/io/InputStream.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [Normalizer2.Mode](../android/icu/text/Normalizer2.Mode.md)!`)` Returns a Normalizer2 instance which uses the specified data file (an ICU data file if data=null, or else custom binary data) and which composes or decomposes text according to the specified mode. |
+| openstatic [Normalizer2](../android/icu/text/Normalizer2.md)! | [getNFCInstance](../android/icu/text/Normalizer2.md))`()` Returns a Normalizer2 instance for Unicode NFC normalization. |
 | --- | --- |
-| openstatic [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | [getNFDInstance](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getNFDInstance())`()` Returns a Normalizer2 instance for Unicode NFD normalization. |
-| openstatic [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | [getNFKCCasefoldInstance](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getNFKCCasefoldInstance())`()` Returns a Normalizer2 instance for Unicode toNFKC_Casefold() normalization which is equivalent to applying the NFKC_Casefold mappings and then NFC. |
-| openstatic [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | [getNFKCInstance](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getNFKCInstance())`()` Returns a Normalizer2 instance for Unicode NFKC normalization. |
+| openstatic [Normalizer2](../android/icu/text/Normalizer2.md)! | [getNFDInstance](../android/icu/text/Normalizer2.md))`()` Returns a Normalizer2 instance for Unicode NFD normalization. |
+| openstatic [Normalizer2](../android/icu/text/Normalizer2.md)! | [getNFKCCasefoldInstance](../android/icu/text/Normalizer2.md))`()` Returns a Normalizer2 instance for Unicode toNFKC_Casefold() normalization which is equivalent to applying the NFKC_Casefold mappings and then NFC. |
+| openstatic [Normalizer2](../android/icu/text/Normalizer2.md)! | [getNFKCInstance](../android/icu/text/Normalizer2.md))`()` Returns a Normalizer2 instance for Unicode NFKC normalization. |
 | --- | --- |
-| openstatic [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | [getNFKCSimpleCasefoldInstance](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getNFKCSimpleCasefoldInstance())`()` Returns a Normalizer2 instance for a variant of Unicode toNFKC_Casefold() normalization which is equivalent to applying the NFKC_Simple_Casefold mappings and then NFC. |
-| openstatic [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | [getNFKDInstance](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getNFKDInstance())`()` Returns a Normalizer2 instance for Unicode NFKD normalization. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawDecomposition](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#getRawDecomposition(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the raw decomposition mapping of c. |
+| openstatic [Normalizer2](../android/icu/text/Normalizer2.md)! | [getNFKCSimpleCasefoldInstance](../android/icu/text/Normalizer2.md))`()` Returns a Normalizer2 instance for a variant of Unicode toNFKC_Casefold() normalization which is equivalent to applying the NFKC_Simple_Casefold mappings and then NFC. |
+| openstatic [Normalizer2](../android/icu/text/Normalizer2.md)! | [getNFKDInstance](../android/icu/text/Normalizer2.md))`()` Returns a Normalizer2 instance for Unicode NFKD normalization. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawDecomposition](../android/icu/text/Normalizer2.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the raw decomposition mapping of c. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBoundaryAfter](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#hasBoundaryAfter(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Tests if the character always has a normalization boundary after it, regardless of context. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBoundaryBefore](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#hasBoundaryBefore(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Tests if the character always has a normalization boundary before it, regardless of context. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInert](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#isInert(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Tests if the character is normalization-inert. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBoundaryAfter](../android/icu/text/Normalizer2.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Tests if the character always has a normalization boundary after it, regardless of context. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBoundaryBefore](../android/icu/text/Normalizer2.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Tests if the character always has a normalization boundary before it, regardless of context. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInert](../android/icu/text/Normalizer2.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Tests if the character is normalization-inert. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNormalized](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#isNormalized(kotlin.CharSequence))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Tests if the string is normalized. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalize](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#normalize(kotlin.CharSequence))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the normalized form of the source string. |
-| abstract [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#)! | [normalize](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#normalize(kotlin.CharSequence,%20java.lang.Appendable))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#)!`)` Writes the normalized form of the source string to the destination Appendable and returns the destination Appendable. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNormalized](../android/icu/text/Normalizer2.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Tests if the string is normalized. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalize](../android/icu/text/Normalizer2.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the normalized form of the source string. |
+| abstract [Appendable](../java/lang/Appendable.md)! | [normalize](../android/icu/text/Normalizer2.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [Appendable](../java/lang/Appendable.md)!`)` Writes the normalized form of the source string to the destination Appendable and returns the destination Appendable. |
 | --- | --- |
-| abstract [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | [normalize](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#normalize(kotlin.CharSequence,%20java.lang.StringBuilder))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!`)` Writes the normalized form of the source string to the destination string (replacing its contents) and returns the destination string. |
-| abstract [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | [normalizeSecondAndAppend](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#normalizeSecondAndAppend(java.lang.StringBuilder,%20kotlin.CharSequence))`(`first:` ` [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!`, `second:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Appends the normalized form of the second string to the first string (merging them at the boundary) and returns the first string. |
-| abstract [Normalizer.QuickCheckResult](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer.QuickCheckResult)! | [quickCheck](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#quickCheck(kotlin.CharSequence))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Tests if the string is normalized. |
+| abstract [StringBuilder](../java/lang/StringBuilder.md)! | [normalize](../android/icu/text/Normalizer2.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java/lang/StringBuilder.md)!`)` Writes the normalized form of the source string to the destination string (replacing its contents) and returns the destination string. |
+| abstract [StringBuilder](../java/lang/StringBuilder.md)! | [normalizeSecondAndAppend](../android/icu/text/Normalizer2.md))`(`first:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `second:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Appends the normalized form of the second string to the first string (merging them at the boundary) and returns the first string. |
+| abstract [Normalizer.QuickCheckResult](../android/icu/text/Normalizer.QuickCheckResult.md)! | [quickCheck](../android/icu/text/Normalizer2.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Tests if the string is normalized. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [spanQuickCheckYes](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#spanQuickCheckYes(kotlin.CharSequence))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the end of the normalized substring of the input string. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [spanQuickCheckYes](../android/icu/text/Normalizer2.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the end of the normalized substring of the input string. |
 
 ## Public methods
 
@@ -86,12 +86,12 @@ Appends the second string to the first string (merging them at the boundary) and
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------|
-| `first` | [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!:string, should be normalized |
+| `first` | [StringBuilder](../java/lang/StringBuilder.md)!:string, should be normalized |
 | `second` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:string, should be normalized |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------|
-| [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | first |
+| [StringBuilder](../java/lang/StringBuilder.md)! | first |
 
 ### composePair
 
@@ -181,18 +181,18 @@ If data!=null, then the binary data is read once and cached using the provided n
 
 <br />
 
-Any [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) is wrapped into a [android.icu.util.ICUUncheckedIOException](https://developer.android.com/reference/kotlin/android/icu/util/ICUUncheckedIOException.html#).
+Any [java.io.IOException](../java/io/IOException.md) is wrapped into a [android.icu.util.ICUUncheckedIOException](../android/icu/util/ICUUncheckedIOException.md).
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `data` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the binary, big-endian normalization (.nrm file) data, or null for ICU data |
+| `data` | [InputStream](../java/io/InputStream.md)!:the binary, big-endian normalization (.nrm file) data, or null for ICU data |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:"nfc" or "nfkc" or "nfkc_cf" or "nfkc_scf" or name of custom data file |
-| `mode` | [Normalizer2.Mode](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2.Mode)!:normalization mode (compose or decompose etc.) |
+| `mode` | [Normalizer2.Mode](../android/icu/text/Normalizer2.Mode.md)!:normalization mode (compose or decompose etc.) |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | the requested Normalizer2, if successful |
+| [Normalizer2](../android/icu/text/Normalizer2.md)! | the requested Normalizer2, if successful |
 
 ### getNFCInstance
 
@@ -206,7 +206,7 @@ Returns a Normalizer2 instance for Unicode NFC normalization. Same as getInstanc
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | the requested Normalizer2, if successful |
+| [Normalizer2](../android/icu/text/Normalizer2.md)! | the requested Normalizer2, if successful |
 
 ### getNFDInstance
 
@@ -220,7 +220,7 @@ Returns a Normalizer2 instance for Unicode NFD normalization. Same as getInstanc
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | the requested Normalizer2, if successful |
+| [Normalizer2](../android/icu/text/Normalizer2.md)! | the requested Normalizer2, if successful |
 
 ### getNFKCCasefoldInstance
 
@@ -236,7 +236,7 @@ Same as getInstance(null, "nfkc_cf", Mode.COMPOSE). Returns an unmodifiable sing
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | the requested Normalizer2, if successful |
+| [Normalizer2](../android/icu/text/Normalizer2.md)! | the requested Normalizer2, if successful |
 
 ### getNFKCInstance
 
@@ -250,7 +250,7 @@ Returns a Normalizer2 instance for Unicode NFKC normalization. Same as getInstan
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | the requested Normalizer2, if successful |
+| [Normalizer2](../android/icu/text/Normalizer2.md)! | the requested Normalizer2, if successful |
 
 ### getNFKCSimpleCasefoldInstance
 
@@ -266,7 +266,7 @@ Same as getInstance(null, "nfkc_scf", Mode.COMPOSE). Returns an unmodifiable sin
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | the requested Normalizer2, if successful |
+| [Normalizer2](../android/icu/text/Normalizer2.md)! | the requested Normalizer2, if successful |
 
 ### getNFKDInstance
 
@@ -280,7 +280,7 @@ Returns a Normalizer2 instance for Unicode NFKD normalization. Same as getInstan
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2#)! | the requested Normalizer2, if successful |
+| [Normalizer2](../android/icu/text/Normalizer2.md)! | the requested Normalizer2, if successful |
 
 ### getRawDecomposition
 
@@ -415,16 +415,16 @@ abstract fun normalize(
 
 Writes the normalized form of the source string to the destination Appendable and returns the destination Appendable. The source and destination strings must be different objects.
 
-Any [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) is wrapped into a [android.icu.util.ICUUncheckedIOException](https://developer.android.com/reference/kotlin/android/icu/util/ICUUncheckedIOException.html#).
+Any [java.io.IOException](../java/io/IOException.md) is wrapped into a [android.icu.util.ICUUncheckedIOException](../android/icu/util/ICUUncheckedIOException.md).
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `src` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:source string |
-| `dest` | [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#)!:destination Appendable; gets normalized src appended |
+| `dest` | [Appendable](../java/lang/Appendable.md)!:destination Appendable; gets normalized src appended |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------|
-| [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#)! | dest |
+| [Appendable](../java/lang/Appendable.md)! | dest |
 
 ### normalize
 
@@ -442,11 +442,11 @@ Writes the normalized form of the source string to the destination string (repla
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `src` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:source string |
-| `dest` | [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!:destination string; its contents is replaced with normalized src |
+| `dest` | [StringBuilder](../java/lang/StringBuilder.md)!:destination string; its contents is replaced with normalized src |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------|
-| [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | dest |
+| [StringBuilder](../java/lang/StringBuilder.md)! | dest |
 
 ### normalizeSecondAndAppend
 
@@ -463,12 +463,12 @@ Appends the normalized form of the second string to the first string (merging th
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------|
-| `first` | [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)!:string, should be normalized |
+| `first` | [StringBuilder](../java/lang/StringBuilder.md)!:string, should be normalized |
 | `second` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:string, will be normalized |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------|
-| [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)! | first |
+| [StringBuilder](../java/lang/StringBuilder.md)! | first |
 
 ### quickCheck
 
@@ -486,7 +486,7 @@ Tests if the string is normalized. For the two COMPOSE modes, the result could b
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|------------------------|
-| [Normalizer.QuickCheckResult](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer.QuickCheckResult)! | the quick check result |
+| [Normalizer.QuickCheckResult](../android/icu/text/Normalizer.QuickCheckResult.md)! | the quick check result |
 
 ### spanQuickCheckYes
 

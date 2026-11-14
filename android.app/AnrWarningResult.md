@@ -8,7 +8,7 @@ class AnrWarningResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.AnrWarningResult](https://developer.android.com/reference/kotlin/android/app/AnrWarningResult#) |
+| ↳ | [android.app.AnrWarningResult](../android/app/AnrWarningResult.md) |
 
 Describes the information about a potential ANR before the timeout is reached.
 
@@ -36,7 +36,7 @@ Describes the information about a potential ANR before the timeout is reached.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AnrWarningResult](https://developer.android.com/reference/kotlin/android/app/AnrWarningResult#)!\> | `https://developer.android.com/reference/kotlin/android/app/AnrWarningResult#CREATOR:android.os.Parcelable.Creator` Implement the parcelable interface. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AnrWarningResult](../android/app/AnrWarningResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/AnrWarningResult#CREATOR:android.os.Parcelable.Creator` Implement the parcelable interface. |
 
 ## Public methods
 
@@ -206,7 +206,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

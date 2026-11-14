@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # BlockedNumberContract
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/BlockedNumberContract "View this page in Java") 
+Kotlin| [Java](../android/provider/BlockedNumberContract.md) 
 | --- | --- |
 
 ```
@@ -13,31 +13,31 @@ open class BlockedNumberContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.BlockedNumberContract](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#) |
+| ↳ | [android.provider.BlockedNumberContract](../android/provider/BlockedNumberContract.md) |
 
 The contract between the blockednumber provider and applications. Contains definitions for the supported URIs and columns.
 
 ### Overview
 
-The content provider exposes a table containing blocked numbers. The columns and URIs for accessing this table are defined by the [BlockedNumbers](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers) class. Messages, and calls from blocked numbers are discarded by the platform. Notifications upon provider changes can be received using a [android.database.ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver.html#).
+The content provider exposes a table containing blocked numbers. The columns and URIs for accessing this table are defined by the [BlockedNumbers](../android/provider/BlockedNumberContract.BlockedNumbers.md) class. Messages, and calls from blocked numbers are discarded by the platform. Notifications upon provider changes can be received using a [android.database.ContentObserver](../android/database/ContentObserver.md).
 
-The platform will not block messages, and calls from emergency numbers as defined by [android.telephony.PhoneNumberUtils#isEmergencyNumber(String)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils.html#isEmergencyNumber(kotlin.String)). If the user contacts emergency services, number blocking is disabled by the platform for a duration defined by [android.telephony.CarrierConfigManager#KEY_DURATION_BLOCKING_DISABLED_AFTER_EMERGENCY_INT](https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.html#KEY_DURATION_BLOCKING_DISABLED_AFTER_EMERGENCY_INT:kotlin.String).
+The platform will not block messages, and calls from emergency numbers as defined by [android.telephony.PhoneNumberUtils#isEmergencyNumber(String)](../android/telephony/PhoneNumberUtils.md)). If the user contacts emergency services, number blocking is disabled by the platform for a duration defined by [android.telephony.CarrierConfigManager#KEY_DURATION_BLOCKING_DISABLED_AFTER_EMERGENCY_INT](../android/telephony/CarrierConfigManager.md).
 
 ### Permissions
 
-Only the system, the default SMS application, and the default phone app (See [android.telecom.TelecomManager#getDefaultDialerPackage()](https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage())), and carrier apps (See [android.service.carrier.CarrierService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#)) can read, and write to the blockednumber provider. However, [canCurrentUserBlockNumbers(android.content.Context)](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#canCurrentUserBlockNumbers(android.content.Context))can be accessed by any application.
+Only the system, the default SMS application, and the default phone app (See [android.telecom.TelecomManager#getDefaultDialerPackage()](../android/telecom/TelecomManager.md))), and carrier apps (See [android.service.carrier.CarrierService](../android/service/carrier/CarrierService.md)) can read, and write to the blockednumber provider. However, [canCurrentUserBlockNumbers(android.content.Context)](../android/provider/BlockedNumberContract.md))can be accessed by any application.
 
 ### Data
 
-Other than regular phone numbers, the blocked number provider can also store addresses (such as email) from which a user can receive messages, and calls. The blocked numbers are stored in the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_ORIGINAL_NUMBER:kotlin.String) column. A normalized version of phone numbers (if normalization is possible) is stored in [BlockedNumbers.COLUMN_E164_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_E164_NUMBER:kotlin.String) column. The platform blocks calls, and messages from an address if it is present in in the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_ORIGINAL_NUMBER:kotlin.String) column or if the E164 version of the address matches the [BlockedNumbers.COLUMN_E164_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_E164_NUMBER:kotlin.String) column.
+Other than regular phone numbers, the blocked number provider can also store addresses (such as email) from which a user can receive messages, and calls. The blocked numbers are stored in the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column. A normalized version of phone numbers (if normalization is possible) is stored in [BlockedNumbers.COLUMN_E164_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column. The platform blocks calls, and messages from an address if it is present in in the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column or if the E164 version of the address matches the [BlockedNumbers.COLUMN_E164_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column.
 
 ### Operations
 
 **Insert**
 
-: [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_ORIGINAL_NUMBER:kotlin.String) is a required column that needs to be populated. Apps can optionally provide the [BlockedNumbers.COLUMN_E164_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_E164_NUMBER:kotlin.String) which is the phone number's E164 representation. The provider automatically populates this column if the app does not provide it. Note that this column is not populated if normalization fails or if the address is not a phone number (eg: email).
+: [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) is a required column that needs to be populated. Apps can optionally provide the [BlockedNumbers.COLUMN_E164_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) which is the phone number's E164 representation. The provider automatically populates this column if the app does not provide it. Note that this column is not populated if normalization fails or if the address is not a phone number (eg: email).
 
- Attempting to insert an existing blocked number (same [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_ORIGINAL_NUMBER:kotlin.String) column) will result in replacing the existing blocked number.
+ Attempting to insert an existing blocked number (same [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column) will result in replacing the existing blocked number.
 
  Examples: 
 
@@ -80,7 +80,7 @@ Other than regular phone numbers, the blocked number provider can also store add
       getContentResolver().delete(uri, null, null);
       
     ```
- To check if a particular number is blocked, use the method [isBlocked(android.content.Context,java.lang.String)](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#isBlocked(android.content.Context,%20kotlin.String)).
+ To check if a particular number is blocked, use the method [isBlocked(android.content.Context,java.lang.String)](../android/provider/BlockedNumberContract.md)).
 
  <br />
 
@@ -99,28 +99,28 @@ Other than regular phone numbers, the blocked number provider can also store add
 
 **Unblock**
 
-: Use the method [unblock(android.content.Context,java.lang.String)](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#unblock(android.content.Context,%20kotlin.String))to unblock numbers.
+: Use the method [unblock(android.content.Context,java.lang.String)](../android/provider/BlockedNumberContract.md))to unblock numbers.
 
 ## Summary
 
 | Nested classes ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [BlockedNumbers](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers) Constants to interact with the blocked numbers list. |
+| open | [BlockedNumbers](../android/provider/BlockedNumberContract.BlockedNumbers.md) Constants to interact with the blocked numbers list. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#AUTHORITY:kotlin.String) The authority for the blocked number provider |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/BlockedNumberContract.md) The authority for the blocked number provider |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canCurrentUserBlockNumbers](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#canCurrentUserBlockNumbers(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Checks if blocking numbers is supported for the current user. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#isBlocked(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns whether a given number is in the blocked list. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [unblock](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#unblock(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Unblocks the`phoneNumber`if it is blocked. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canCurrentUserBlockNumbers](../android/provider/BlockedNumberContract.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Checks if blocking numbers is supported for the current user. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](../android/provider/BlockedNumberContract.md))`(`context:` ` [Context](../android/content/Context.md)!`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns whether a given number is in the blocked list. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [unblock](../android/provider/BlockedNumberContract.md))`(`context:` ` [Context](../android/content/Context.md)!`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Unblocks the`phoneNumber`if it is blocked. |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [AUTHORITY_URI](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#AUTHORITY_URI:android.net.Uri) A content:// style uri to the authority for the blocked number provider |
+| static [Uri](../android/net/Uri.md)! | [AUTHORITY_URI](../android/provider/BlockedNumberContract.md) A content:// style uri to the authority for the blocked number provider |
 
 ## Constants
 
@@ -167,9 +167,9 @@ open static fun isBlocked(
 
 Returns whether a given number is in the blocked list.
 
-This matches the`phoneNumber`against the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_ORIGINAL_NUMBER:kotlin.String) column, and the E164 representation of the`phoneNumber`with the [BlockedNumbers.COLUMN_E164_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_E164_NUMBER:kotlin.String) column.
+This matches the`phoneNumber`against the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column, and the E164 representation of the`phoneNumber`with the [BlockedNumbers.COLUMN_E164_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column.
 
-Note that if the [canCurrentUserBlockNumbers](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#canCurrentUserBlockNumbers(android.content.Context))is`false`for the user context`context`, this method will throw a [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#). 
+Note that if the [canCurrentUserBlockNumbers](../android/provider/BlockedNumberContract.md))is`false`for the user context`context`, this method will throw a [SecurityException](../java/lang/SecurityException.md). 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Return ||
@@ -189,11 +189,11 @@ open static fun unblock(
 
 Unblocks the`phoneNumber`if it is blocked.
 
-This deletes all rows where the`phoneNumber`matches the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_ORIGINAL_NUMBER:kotlin.String) column or the E164 representation of the`phoneNumber`matches the [BlockedNumbers.COLUMN_E164_NUMBER](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_E164_NUMBER:kotlin.String) column.
+This deletes all rows where the`phoneNumber`matches the [BlockedNumbers.COLUMN_ORIGINAL_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column or the E164 representation of the`phoneNumber`matches the [BlockedNumbers.COLUMN_E164_NUMBER](../android/provider/BlockedNumberContract.BlockedNumbers.md) column.
 
-To delete rows based on exact match with specific columns such as [BlockedNumbers.COLUMN_ID](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#COLUMN_ID:kotlin.String) use[android.content.ContentProvider#delete(Uri, String, String[])](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#delete(android.net.Uri,%20kotlin.String,%20kotlin.Array))with [BlockedNumbers.CONTENT_URI](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.BlockedNumbers#CONTENT_URI:android.net.Uri) URI.
+To delete rows based on exact match with specific columns such as [BlockedNumbers.COLUMN_ID](../android/provider/BlockedNumberContract.BlockedNumbers.md) use[android.content.ContentProvider#delete(Uri, String, String[])](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#delete(android.net.Uri,%20kotlin.String,%20kotlin.Array))with [BlockedNumbers.CONTENT_URI](../android/provider/BlockedNumberContract.BlockedNumbers.md) URI.
 
-Note that if the [canCurrentUserBlockNumbers](https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract#canCurrentUserBlockNumbers(android.content.Context))is`false`for the user context`context`, this method will throw a [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#). 
+Note that if the [canCurrentUserBlockNumbers](../android/provider/BlockedNumberContract.md))is`false`for the user context`context`, this method will throw a [SecurityException](../java/lang/SecurityException.md). 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Return ||

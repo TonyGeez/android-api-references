@@ -11,10 +11,10 @@ open class BufferOverflowException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.BufferOverflowException](https://developer.android.com/reference/kotlin/java/nio/BufferOverflowException#) |
+| | | | ↳ | [java.nio.BufferOverflowException](../java/nio/BufferOverflowException.md) |
 
 Unchecked exception thrown when a relative*put*operation reaches the target buffer's limit.
 
@@ -22,7 +22,7 @@ Unchecked exception thrown when a relative*put*operation reaches the target buff
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BufferOverflowException](https://developer.android.com/reference/kotlin/java/nio/BufferOverflowException#BufferOverflowException())`()` Constructs an instance of this class. |
+| [BufferOverflowException](../java/nio/BufferOverflowException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

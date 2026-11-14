@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # RecordingCanvas
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/RecordingCanvas "View this page in Java")
+Kotlin | [Java](../android/graphics/RecordingCanvas.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class RecordingCanvas : Canvas
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas) ||
-| | ↳ | [android.graphics.RecordingCanvas](https://developer.android.com/reference/kotlin/android/graphics/RecordingCanvas#) |
+| ↳ | [android.graphics.Canvas](../android/graphics/Canvas.md) ||
+| | ↳ | [android.graphics.RecordingCanvas](../android/graphics/RecordingCanvas.md) |
 
 A Canvas implementation that records view system drawing operations for deferred rendering. This is used in combination with RenderNode. This class keeps a list of all the Paint and Bitmap objects that it draws, preventing the backing memory of Bitmaps from being released while the RecordingCanvas is still holding a native reference to the memory. This is obtained by calling `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording()` and is valid until the matching `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()` is called. It must not be retained beyond that as it is internally reused.
 
@@ -173,12 +173,12 @@ The arc is drawn clockwise. An angle of 0 degrees correspond to the geometric an
 
 | Parameters ||
 |---|---|
-| `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `oval` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise |
 | --- | --- |
 | `useCenter` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, include the center of the oval in the arc, and close it if it is being stroked. This will draw a wedge |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawArc
 
@@ -211,7 +211,7 @@ The arc is drawn clockwise. An angle of 0 degrees correspond to the geometric an
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise |
 | `useCenter` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, include the center of the oval in the arc, and close it if it is being stroked. This will draw a wedge |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawBitmap
 
@@ -229,9 +229,9 @@ Draw the bitmap using the specified matrix.
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap): This value cannot be `null`. |
-| `matrix` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
+| `matrix` | [Matrix](../android/graphics/Matrix.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 | --- | --- |
 
 ### drawBitmap
@@ -255,11 +255,11 @@ This function *ignores the density associated with the bitmap*. This is because 
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap): This value cannot be `null`. |
-| `src` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)?: This value may be `null`. |
-| `dst` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect): This value cannot be `null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
+| `src` | [Rect](../android/graphics/Rect.md)?: This value may be `null`. |
+| `dst` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 
 ### drawBitmap
 
@@ -282,11 +282,11 @@ This function *ignores the density associated with the bitmap*. This is because 
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap): This value cannot be `null`. |
-| `src` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)?: This value may be `null`. |
-| `dst` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
+| `src` | [Rect](../android/graphics/Rect.md)?: This value may be `null`. |
+| `dst` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 
 ### drawBitmap
 
@@ -309,11 +309,11 @@ If the bitmap and canvas have different densities, this function will take care 
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap): This value cannot be `null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
 | `left` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The position of the left side of the bitmap being drawn |
 | `top` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The position of the top side of the bitmap being drawn |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 
 ### drawBitmap
 
@@ -347,7 +347,7 @@ fun drawBitmap(
 | --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the bitmap |
 | `hasAlpha` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the alpha channel of the colors contains valid values. If false, the alpha byte is ignored (assumed to be 0xFF for every pixel). |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 | --- | --- |
 
 ### drawBitmap
@@ -373,7 +373,7 @@ fun drawBitmap(
 | Parameters ||
 |---|---|
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 
 ### drawBitmapMesh
 
@@ -398,7 +398,7 @@ Note: antialiasing is not supported, therefore `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap): This value cannot be `null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
 | `meshWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of columns in the mesh. Nothing is drawn if this is 0 |
 | `meshHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of rows in the mesh. Nothing is drawn if this is 0 |
 | --- | --- |
@@ -407,7 +407,7 @@ Note: antialiasing is not supported, therefore `https://developer.android.com/re
 | `colors` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?: This value may be `null`. |
 | --- | --- |
 | `colorOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of color elements to skip before drawing |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 
 ### drawCircle
 
@@ -430,7 +430,7 @@ Draw the specified circle using the specified paint. If radius is \<= 0, then no
 | `cy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the center of the circle to be drawn |
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The radius of the circle to be drawn |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawColor
 
@@ -462,7 +462,7 @@ Fill the entire canvas' bitmap (restricted to the current clip) with the specifi
 | Parameters ||
 |---|---|
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the color to draw onto the canvas |
-| `mode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode): This value cannot be `null`. |
+| `mode` | [BlendMode](../android/graphics/BlendMode.md): This value cannot be `null`. |
 
 ### drawColor
 
@@ -480,7 +480,7 @@ Fill the entire canvas' bitmap (restricted to the current clip) with the specifi
 | Parameters ||
 |---|---|
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the color to draw onto the canvas |
-| `mode` | [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode): This value cannot be `null`. |
+| `mode` | [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md): This value cannot be `null`. |
 
 ### drawColor
 
@@ -498,7 +498,7 @@ Fill the entire canvas' bitmap (restricted to the current clip) with the specifi
 | Parameters ||
 |---|---|
 | `color` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the `ColorLong` to draw onto the canvas. See the `https://developer.android.com/reference/kotlin/android/graphics/Color` class for details about `ColorLong`s. |
-| `mode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode): This value cannot be `null`. |
+| `mode` | [BlendMode](../android/graphics/BlendMode.md): This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -524,15 +524,15 @@ Draws a double rounded rectangle using the specified paint. The resultant round 
 
 | Parameters ||
 |---|---|
-| `outer` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `outer` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 | `outerRx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the oval used to round the corners on the outer rectangle |
 | `outerRy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the oval used to round the corners on the outer rectangle |
 | --- | --- |
-| `inner` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `inner` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 | `innerRx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the oval used to round the corners on the inner rectangle |
 | `innerRy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the oval used to round the corners on the outer rectangle |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawDoubleRoundRect
 
@@ -552,12 +552,12 @@ Draws a double rounded rectangle using the specified paint. The resultant round 
 
 | Parameters ||
 |---|---|
-| `outer` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `outer` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 | `outerRadii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): This value cannot be `null`. |
-| `inner` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `inner` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 | --- | --- |
 | `innerRadii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawGlyphs
 
@@ -585,9 +585,9 @@ Draw array of glyphs with specified font.
 | --- | --- |
 | `positionOffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is 0 or greater |
 | `glyphCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is 0 or greater |
-| `font` | [Font](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font): This value cannot be `null`. |
+| `font` | [Font](../android/graphics/fonts/Font.md): This value cannot be `null`. |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawLine
 
@@ -613,7 +613,7 @@ Degenerate lines (length is 0) will not be drawn.
 |---|---|
 | `startX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the start point of the line |
 | `startY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the start point of the line |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawLines
@@ -630,7 +630,7 @@ fun drawLines(
 | Parameters ||
 |---|---|
 | `pts` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawLines
 
@@ -653,7 +653,7 @@ Draw a series of lines. Each line is taken from 4 consecutive values in the pts 
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of values in the array to skip before drawing. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of values in the array to process, after skipping "offset" of them. Since each line uses 4 values, the number of "lines" that are drawn is really (count \>\> 2). |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawMesh
 
@@ -673,9 +673,9 @@ Note: antialiasing is not supported, therefore `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `mesh` | [Mesh](https://developer.android.com/reference/kotlin/android/graphics/Mesh): This value cannot be `null`. |
-| `blendMode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode)?: This value may be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `mesh` | [Mesh](../android/graphics/Mesh.md): This value cannot be `null`. |
+| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawOval
@@ -693,8 +693,8 @@ Draw the specified oval using the specified paint. The oval will be filled or fr
 
 | Parameters ||
 |---|---|
-| `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `oval` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawOval
 
@@ -714,7 +714,7 @@ Draw the specified oval using the specified paint. The oval will be filled or fr
 
 | Parameters ||
 |---|---|
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawPaint
 
@@ -728,7 +728,7 @@ Fill the entire canvas' bitmap (restricted to the current clip) with the specifi
 
 | Parameters ||
 |---|---|
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawPatch
 
@@ -748,9 +748,9 @@ Note: antialiasing is not supported, therefore `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `patch` | [NinePatch](https://developer.android.com/reference/kotlin/android/graphics/NinePatch): This value cannot be `null`. |
-| `dst` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `patch` | [NinePatch](../android/graphics/NinePatch.md): This value cannot be `null`. |
+| `dst` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 | --- | --- |
 
 ### drawPatch
@@ -771,9 +771,9 @@ Note: antialiasing is not supported, therefore `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `patch` | [NinePatch](https://developer.android.com/reference/kotlin/android/graphics/NinePatch): This value cannot be `null`. |
-| `dst` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)?: This value may be `null`. |
+| `patch` | [NinePatch](../android/graphics/NinePatch.md): This value cannot be `null`. |
+| `dst` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 | --- | --- |
 
 ### drawPath
@@ -791,8 +791,8 @@ Draw the specified path using the specified paint. The path will be filled or fr
 
 | Parameters ||
 |---|---|
-| `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `path` | [Path](../android/graphics/Path.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawPicture
 
@@ -808,7 +808,7 @@ Save the canvas state, draw the picture, and restore the canvas state. This diff
 
 | Parameters ||
 |---|---|
-| `picture` | [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture): This value cannot be `null`. |
+| `picture` | [Picture](../android/graphics/Picture.md): This value cannot be `null`. |
 
 ### drawPicture
 
@@ -825,8 +825,8 @@ Draw the picture, stretched to fit into the dst rectangle.
 
 | Parameters ||
 |---|---|
-| `picture` | [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture): This value cannot be `null`. |
-| `dst` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect): This value cannot be `null`. |
+| `picture` | [Picture](../android/graphics/Picture.md): This value cannot be `null`. |
+| `dst` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
 
 ### drawPicture
 
@@ -843,8 +843,8 @@ Draw the picture, stretched to fit into the dst rectangle.
 
 | Parameters ||
 |---|---|
-| `picture` | [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture): This value cannot be `null`. |
-| `dst` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `picture` | [Picture](../android/graphics/Picture.md): This value cannot be `null`. |
+| `dst` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 
 ### drawPoint
 
@@ -862,7 +862,7 @@ Helper for drawPoints() for drawing a single point.
 
 | Parameters ||
 |---|---|
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawPoints
 
@@ -880,7 +880,7 @@ Helper for drawPoints() that assumes you want to draw the entire array
 | Parameters ||
 |---|---|
 | `pts` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawPoints
 
@@ -903,7 +903,7 @@ Draw a series of points. Each point is centered at the coordinate specified by p
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of values to skip before starting to draw. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of values to process, after skipping offset of them. Since one point uses two values, the number of "points" that are drawn is really (count \>\> 1). |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawPosText
 
@@ -928,7 +928,7 @@ fun drawPosText(
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of characters to draw, starting from index. |
 | --- | --- |
 | `pos` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawPosText
 
@@ -948,7 +948,7 @@ fun drawPosText(
 |---|---|
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `pos` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawRGB
@@ -987,8 +987,8 @@ Draw the specified Rect using the specified Paint. The rectangle will be filled 
 
 | Parameters ||
 |---|---|
-| `r` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `r` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawRect
 
@@ -1005,8 +1005,8 @@ Draw the specified Rect using the specified paint. The rectangle will be filled 
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `rect` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawRect
 
@@ -1031,7 +1031,7 @@ Draw the specified Rect using the specified paint. The rectangle will be filled 
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The right side of the rectangle to be drawn |
 | --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The bottom side of the rectangle to be drawn |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawRegion
 
@@ -1048,8 +1048,8 @@ Draws the given region using the given paint.
 
 | Parameters ||
 |---|---|
-| `region` | [Region](https://developer.android.com/reference/kotlin/android/graphics/Region): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `region` | [Region](../android/graphics/Region.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawRenderNode
 
@@ -1063,7 +1063,7 @@ Draws the specified display list onto this canvas.
 
 | Parameters ||
 |---|---|
-| `renderNode` | [RenderNode](https://developer.android.com/reference/kotlin/android/graphics/RenderNode): The RenderNode to draw. This value cannot be `null`. |
+| `renderNode` | [RenderNode](../android/graphics/RenderNode.md): The RenderNode to draw. This value cannot be `null`. |
 
 ### drawRoundRect
 
@@ -1082,11 +1082,11 @@ Draw the specified round-rect using the specified paint. The roundrect will be f
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): This value cannot be `null`. |
+| `rect` | [RectF](../android/graphics/RectF.md): This value cannot be `null`. |
 | `rx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the oval used to round the corners |
 | `ry` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the oval used to round the corners |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawRoundRect
 
@@ -1110,7 +1110,7 @@ Draw the specified round-rect using the specified paint. The roundrect will be f
 |---|---|
 | `rx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the oval used to round the corners |
 | `ry` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the oval used to round the corners |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawText
@@ -1136,7 +1136,7 @@ Draw the text, with origin at (x,y), using the specified paint. The origin is in
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the origin of the text being drawn |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the baseline of the text being drawn |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawText
 
@@ -1163,7 +1163,7 @@ Draw the specified range of text, specified by start/end, with its origin at (x,
 | --- | --- |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of origin for where to draw the text |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of origin for where to draw the text |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawText
@@ -1187,7 +1187,7 @@ Draw the text, with origin at (x,y), using the specified paint. The origin is in
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the origin of the text being drawn |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the baseline of the text being drawn |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawText
 
@@ -1214,7 +1214,7 @@ Draw the text, with origin at (x,y), using the specified paint. The origin is in
 | --- | --- |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-coordinate of the origin of the text being drawn |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the baseline of the text being drawn |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawTextOnPath
@@ -1241,11 +1241,11 @@ Draw the text, with origin at (x,y), using the specified paint, along the specif
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The starting index within the text to be drawn |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Starting from index, the number of characters to draw |
 | --- | --- |
-| `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path): This value cannot be `null`. |
+| `path` | [Path](../android/graphics/Path.md): This value cannot be `null`. |
 | `hOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The distance along the path to add to the text's starting position |
 | `vOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The distance above(-) or below(+) the path to position the text |
 | --- | --- |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawTextOnPath
 
@@ -1266,11 +1266,11 @@ Draw the text, with origin at (x,y), using the specified paint, along the specif
 | Parameters ||
 |---|---|
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path): This value cannot be `null`. |
+| `path` | [Path](../android/graphics/Path.md): This value cannot be `null`. |
 | `hOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The distance along the path to add to the text's starting position |
 | --- | --- |
 | `vOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The distance above(-) or below(+) the path to position the text |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### drawTextRun
 
@@ -1306,9 +1306,9 @@ See `https://developer.android.com/reference/kotlin/android/graphics/Canvas#draw
 | --- | --- |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the y position at which to draw the text |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the run is in RTL direction |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
-| `measuredText` | [MeasuredText](https://developer.android.com/reference/kotlin/android/graphics/text/MeasuredText): This value cannot be `null`. |
+| `measuredText` | [MeasuredText](../android/graphics/text/MeasuredText.md): This value cannot be `null`. |
 
 ### drawTextRun
 
@@ -1344,7 +1344,7 @@ See `https://developer.android.com/reference/kotlin/android/graphics/Canvas#draw
 | --- | --- |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the y position at which to draw the text |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the run is in RTL direction |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawTextRun
@@ -1387,7 +1387,7 @@ Also see android.graphics.Paint#getRunAdvance for a corresponding method to meas
 | --- | --- |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the y position at which to draw the text |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the run is in RTL direction |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | --- | --- |
 
 ### drawVertices
@@ -1417,7 +1417,7 @@ Note: antialiasing is not supported, therefore `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `mode` | [Canvas.VertexMode](https://developer.android.com/reference/kotlin/android/graphics/Canvas.VertexMode): This value cannot be `null`. |
+| `mode` | [Canvas.VertexMode](../android/graphics/Canvas.VertexMode.md): This value cannot be `null`. |
 | `vertexCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of values in the vertices array (and corresponding texs and colors arrays if non-null). Each logical vertex is two values (x, y), vertexCount must be a multiple of 2. |
 | `verts` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): This value cannot be `null`. |
 | --- | --- |
@@ -1430,7 +1430,7 @@ Note: antialiasing is not supported, therefore `https://developer.android.com/re
 | `indices` | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)?: This value may be `null`. |
 | --- | --- |
 | `indexCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of entries in the indices array (if not null). |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### enableZ
 
@@ -1555,7 +1555,7 @@ Specify a bitmap for the canvas to draw into. All canvas state such as layers, f
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap)?: Specifies a mutable bitmap for the canvas to draw into. This value may be `null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)?: Specifies a mutable bitmap for the canvas to draw into. This value may be `null`. |
 
 ### setDensity
 

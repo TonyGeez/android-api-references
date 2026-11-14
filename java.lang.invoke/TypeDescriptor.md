@@ -8,12 +8,12 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 interface TypeDescriptor
 ```
 
-| [java.lang.invoke.TypeDescriptor](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor#) |
+| [java.lang.invoke.TypeDescriptor](../java/lang/invoke/TypeDescriptor.md) |
 
-| Known Direct Subclasses [TypeDescriptor.OfField](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.OfField), [TypeDescriptor.OfMethod](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.OfMethod) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [TypeDescriptor.OfField](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.OfField) | An entity that has a field type descriptor. | | [TypeDescriptor.OfMethod](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.OfMethod) | An entity that has a method type descriptor Method descriptors conforming to JVMS {@jvms 4. | |
+| Known Direct Subclasses [TypeDescriptor.OfField](../java/lang/invoke/TypeDescriptor.OfField.md), [TypeDescriptor.OfMethod](../java/lang/invoke/TypeDescriptor.OfMethod.md) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [TypeDescriptor.OfField](../java/lang/invoke/TypeDescriptor.OfField.md) | An entity that has a field type descriptor. | | [TypeDescriptor.OfMethod](../java/lang/invoke/TypeDescriptor.OfMethod.md) | An entity that has a method type descriptor Method descriptors conforming to JVMS {@jvms 4. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#), [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#) | Instances of the class represent classes and interfaces in a running Java application. | | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType) | A method type represents the arguments and return type accepted and returned by a method handle, or the arguments and return type passed and expected by a method handle caller. | |
+| Known Indirect Subclasses [Class](../java/lang/Class.md), [MethodType](../java/lang/invoke/MethodType.md) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Class](../java/lang/Class.md) | Instances of the class represent classes and interfaces in a running Java application. | | [MethodType](../java/lang/invoke/MethodType.md) | A method type represents the arguments and return type accepted and returned by a method handle, or the arguments and return type passed and expected by a method handle caller. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An entity that has a type descriptor.
@@ -22,12 +22,12 @@ An entity that has a type descriptor.
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [OfField](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.OfField) An entity that has a field type descriptor. |
-| abstract | [OfMethod](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.OfMethod) An entity that has a method type descriptor Method descriptors conforming to JVMS {@jvms 4. |
+| abstract | [OfField](../java/lang/invoke/TypeDescriptor.OfField.md) An entity that has a field type descriptor. |
+| abstract | [OfMethod](../java/lang/invoke/TypeDescriptor.OfMethod.md) An entity that has a method type descriptor Method descriptors conforming to JVMS {@jvms 4. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [descriptorString](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor#descriptorString())`()` Returns the descriptor string for this`TypeDescriptor`object. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [descriptorString](../java/lang/invoke/TypeDescriptor.md))`()` Returns the descriptor string for this`TypeDescriptor`object. |
 
 ## Public methods
 

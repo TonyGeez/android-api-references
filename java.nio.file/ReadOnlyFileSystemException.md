@@ -11,19 +11,19 @@ open class ReadOnlyFileSystemException : UnsupportedOperationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.UnsupportedOperationException](https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#) ||
-| | | | | ↳ | [java.nio.file.ReadOnlyFileSystemException](https://developer.android.com/reference/kotlin/java/nio/file/ReadOnlyFileSystemException#) |
+| | | | ↳ | [java.lang.UnsupportedOperationException](../java/lang/UnsupportedOperationException.md) ||
+| | | | | ↳ | [java.nio.file.ReadOnlyFileSystemException](../java/nio/file/ReadOnlyFileSystemException.md) |
 
-Unchecked exception thrown when an attempt is made to update an object associated with a [read-only](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#isReadOnly())`FileSystem`.
+Unchecked exception thrown when an attempt is made to update an object associated with a [read-only](../java/nio/file/FileSystem.md))`FileSystem`.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ReadOnlyFileSystemException](https://developer.android.com/reference/kotlin/java/nio/file/ReadOnlyFileSystemException#ReadOnlyFileSystemException())`()` Constructs an instance of this class. |
+| [ReadOnlyFileSystemException](../java/nio/file/ReadOnlyFileSystemException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

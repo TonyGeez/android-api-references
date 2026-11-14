@@ -11,10 +11,10 @@ open class UnknownError : VirtualMachineError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
-| | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError) ||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
+| | | ↳ | [java.lang.VirtualMachineError](../java/lang/VirtualMachineError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.UnknownError](https://developer.android.com/reference/kotlin/java/lang/UnknownError#) |
+| | | | ↳ | [java.lang.UnknownError](../java/lang/UnknownError.md) |
 
 Thrown when an unknown but serious exception has occurred in the Java Virtual Machine.
 
@@ -22,8 +22,8 @@ Thrown when an unknown but serious exception has occurred in the Java Virtual Ma
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnknownError](https://developer.android.com/reference/kotlin/java/lang/UnknownError#UnknownError())`()` Constructs an`UnknownError`with no detail message. |
-| [UnknownError](https://developer.android.com/reference/kotlin/java/lang/UnknownError#UnknownError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`UnknownError`with the specified detail message. |
+| [UnknownError](../java/lang/UnknownError.md))`()` Constructs an`UnknownError`with no detail message. |
+| [UnknownError](../java/lang/UnknownError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`UnknownError`with the specified detail message. |
 
 ## Public constructors
 

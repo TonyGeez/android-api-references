@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # RelativeDateTimeFormatter
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter "View this page in Java") 
+Kotlin| [Java](../android/icu/text/RelativeDateTimeFormatter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class RelativeDateTimeFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#) |
+| ↳ | [android.icu.text.RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md) |
 
 Formats simple relative dates. There are two types of relative dates that it handles:
 
@@ -51,40 +51,40 @@ The Style parameter allows selection of different length styles: LONG ("3 second
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [AbsoluteUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit) Represents an absolute unit. |
-| | [Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction) Represents a direction for an absolute unit e. |
-| | [FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime) Represents the result of a formatting operation of a relative datetime. |
+| | [AbsoluteUnit](../android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit.md) Represents an absolute unit. |
+| | [Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md) Represents a direction for an absolute unit e. |
+| | [FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md) Represents the result of a formatting operation of a relative datetime. |
 | --- | --- |
-| | [RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit) Represents the unit for formatting a relative date. |
-| | [RelativeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeUnit) Represents the unit for formatting a relative date. |
-| | [Style](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Style) The formatting style |
+| | [RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md) Represents the unit for formatting a relative date. |
+| | [RelativeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeUnit.md) Represents the unit for formatting a relative date. |
+| | [Style](../android/icu/text/RelativeDateTimeFormatter.Style.md) The formatting style |
 | --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [combineDateAndTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#combineDateAndTime(kotlin.String,%20kotlin.String))`(`relativeDateString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `timeString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Combines a relative date string and a time string in this object's locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#format(android.icu.text.RelativeDateTimeFormatter.Direction,%20android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit))`(`direction:` ` [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!`, `unit:` ` [RelativeDateTimeFormatter.AbsoluteUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit)!`)` Formats a relative date without a quantity. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#format(kotlin.Double,%20android.icu.text.RelativeDateTimeFormatter.Direction,%20android.icu.text.RelativeDateTimeFormatter.RelativeUnit))`(`quantity:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `direction:` ` [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!`, `unit:` ` [RelativeDateTimeFormatter.RelativeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeUnit)!`)` Formats a relative date with a quantity such as "in 5 days" or "3 months ago". |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [combineDateAndTime](../android/icu/text/RelativeDateTimeFormatter.md))`(`relativeDateString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `timeString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Combines a relative date string and a time string in this object's locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/RelativeDateTimeFormatter.md))`(`direction:` ` [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!`, `unit:` ` [RelativeDateTimeFormatter.AbsoluteUnit](../android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit.md)!`)` Formats a relative date without a quantity. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/RelativeDateTimeFormatter.md))`(`quantity:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `direction:` ` [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!`, `unit:` ` [RelativeDateTimeFormatter.RelativeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeUnit.md)!`)` Formats a relative date with a quantity such as "in 5 days" or "3 months ago". |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#format(kotlin.Double,%20android.icu.text.RelativeDateTimeFormatter.RelativeDateTimeUnit))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a text style if possible, e. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumeric](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#formatNumeric(kotlin.Double,%20android.icu.text.RelativeDateTimeFormatter.RelativeDateTimeUnit))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a numeric style, e. |
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | [formatNumericToValue](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#formatNumericToValue(kotlin.Double,%20android.icu.text.RelativeDateTimeFormatter.RelativeDateTimeUnit))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a numeric style, e. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/RelativeDateTimeFormatter.md))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a text style if possible, e. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumeric](../android/icu/text/RelativeDateTimeFormatter.md))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a numeric style, e. |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | [formatNumericToValue](../android/icu/text/RelativeDateTimeFormatter.md))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a numeric style, e. |
 | --- | --- |
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | [formatToValue](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#formatToValue(android.icu.text.RelativeDateTimeFormatter.Direction,%20android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit))`(`direction:` ` [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!`, `unit:` ` [RelativeDateTimeFormatter.AbsoluteUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit)!`)` Formats a relative date without a quantity. |
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | [formatToValue](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#formatToValue(kotlin.Double,%20android.icu.text.RelativeDateTimeFormatter.Direction,%20android.icu.text.RelativeDateTimeFormatter.RelativeUnit))`(`quantity:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `direction:` ` [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!`, `unit:` ` [RelativeDateTimeFormatter.RelativeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeUnit)!`)` Formats a relative date with a quantity such as "in 5 days" or "3 months ago". |
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | [formatToValue](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#formatToValue(kotlin.Double,%20android.icu.text.RelativeDateTimeFormatter.RelativeDateTimeUnit))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a text style if possible, e. |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | [formatToValue](../android/icu/text/RelativeDateTimeFormatter.md))`(`direction:` ` [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!`, `unit:` ` [RelativeDateTimeFormatter.AbsoluteUnit](../android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit.md)!`)` Formats a relative date without a quantity. |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | [formatToValue](../android/icu/text/RelativeDateTimeFormatter.md))`(`quantity:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `direction:` ` [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!`, `unit:` ` [RelativeDateTimeFormatter.RelativeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeUnit.md)!`)` Formats a relative date with a quantity such as "in 5 days" or "3 months ago". |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | [formatToValue](../android/icu/text/RelativeDateTimeFormatter.md))`(`offset:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `unit:` ` [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!`)` Format a combination of RelativeDateTimeUnit and numeric offset using a text style if possible, e. |
 | --- | --- |
-| [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)! | [getCapitalizationContext](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getCapitalizationContext())`()` Return capitalization context. |
-| [RelativeDateTimeFormatter.Style](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Style)! | [getFormatStyle](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getFormatStyle())`()` Return style |
-| static [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getInstance())`()` Returns a RelativeDateTimeFormatter for the default locale. |
+| [DisplayContext](../android/icu/text/DisplayContext.md)! | [getCapitalizationContext](../android/icu/text/RelativeDateTimeFormatter.md))`()` Return capitalization context. |
+| [RelativeDateTimeFormatter.Style](../android/icu/text/RelativeDateTimeFormatter.Style.md)! | [getFormatStyle](../android/icu/text/RelativeDateTimeFormatter.md))`()` Return style |
+| static [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | [getInstance](../android/icu/text/RelativeDateTimeFormatter.md))`()` Returns a RelativeDateTimeFormatter for the default locale. |
 | --- | --- |
-| static [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Returns a RelativeDateTimeFormatter for a particular locale. |
-| static [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getInstance(android.icu.util.ULocale,%20android.icu.text.NumberFormat))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `nf:` ` [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!`)` Returns a RelativeDateTimeFormatter for a particular locale that uses a particular NumberFormat object. |
-| static [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getInstance(android.icu.util.ULocale,%20android.icu.text.NumberFormat,%20android.icu.text.RelativeDateTimeFormatter.Style,%20android.icu.text.DisplayContext))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `nf:` ` [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!`, `style:` ` [RelativeDateTimeFormatter.Style](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Style)!`, `capitalizationContext:` ` [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!`)` Returns a RelativeDateTimeFormatter for a particular locale that uses a particular NumberFormat object, style, and capitalization context |
+| static [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | [getInstance](../android/icu/text/RelativeDateTimeFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns a RelativeDateTimeFormatter for a particular locale. |
+| static [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | [getInstance](../android/icu/text/RelativeDateTimeFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `nf:` ` [NumberFormat](../android/icu/text/NumberFormat.md)!`)` Returns a RelativeDateTimeFormatter for a particular locale that uses a particular NumberFormat object. |
+| static [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | [getInstance](../android/icu/text/RelativeDateTimeFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `nf:` ` [NumberFormat](../android/icu/text/NumberFormat.md)!`, `style:` ` [RelativeDateTimeFormatter.Style](../android/icu/text/RelativeDateTimeFormatter.Style.md)!`, `capitalizationContext:` ` [DisplayContext](../android/icu/text/DisplayContext.md)!`)` Returns a RelativeDateTimeFormatter for a particular locale that uses a particular NumberFormat object, style, and capitalization context |
 | --- | --- |
-| static [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
-| static [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getInstance(java.util.Locale,%20android.icu.text.NumberFormat))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `nf:` ` [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!`)` Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) that uses a particular NumberFormat object. |
-| [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)! | [getNumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#getNumberFormat())`()` Returns a copy of the NumberFormat this object is using. |
+| static [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | [getInstance](../android/icu/text/RelativeDateTimeFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](../java/util/Locale.md). |
+| static [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | [getInstance](../android/icu/text/RelativeDateTimeFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `nf:` ` [NumberFormat](../android/icu/text/NumberFormat.md)!`)` Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](../java/util/Locale.md) that uses a particular NumberFormat object. |
+| [NumberFormat](../android/icu/text/NumberFormat.md)! | [getNumberFormat](../android/icu/text/RelativeDateTimeFormatter.md))`()` Returns a copy of the NumberFormat this object is using. |
 | --- | --- |
 
 ## Public methods
@@ -126,8 +126,8 @@ Formats a relative date without a quantity. This method returns a String. To get
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `direction` | [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!:NEXT, LAST, THIS, etc. |
-| `unit` | [RelativeDateTimeFormatter.AbsoluteUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit)!:e.g SATURDAY, DAY, MONTH |
+| `direction` | [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!:NEXT, LAST, THIS, etc. |
+| `unit` | [RelativeDateTimeFormatter.AbsoluteUnit](../android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit.md)!:e.g SATURDAY, DAY, MONTH |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -153,9 +153,9 @@ Formats a relative date with a quantity such as "in 5 days" or "3 months ago". T
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `quantity` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The numerical amount e.g 5. This value is formatted according to this object's [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat) object. |
-| `direction` | [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!:NEXT means a future relative date; LAST means a past relative date. |
-| `unit` | [RelativeDateTimeFormatter.RelativeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeUnit)!:the unit e.g day? month? year? |
+| `quantity` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The numerical amount e.g 5. This value is formatted according to this object's [NumberFormat](../android/icu/text/NumberFormat.md) object. |
+| `direction` | [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!:NEXT means a future relative date; LAST means a past relative date. |
+| `unit` | [RelativeDateTimeFormatter.RelativeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeUnit.md)!:the unit e.g day? month? year? |
 | --- | --- |
 
 | Return ||
@@ -182,7 +182,7 @@ Format a combination of RelativeDateTimeUnit and numeric offset using a text sty
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `offset` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The signed offset for the specified field. |
-| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
+| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------|
@@ -204,7 +204,7 @@ Format a combination of RelativeDateTimeUnit and numeric offset using a numeric 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `offset` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The signed offset for the specified unit. This will be formatted according to this object's NumberFormat object. |
-| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
+| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------|
@@ -226,11 +226,11 @@ Format a combination of RelativeDateTimeUnit and numeric offset using a numeric 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `offset` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The signed offset for the specified unit. This will be formatted according to this object's NumberFormat object. |
-| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
+| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | The formatted string (may be empty in case of error) |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | The formatted string (may be empty in case of error) |
 
 ### formatToValue
 
@@ -247,12 +247,12 @@ Formats a relative date without a quantity. This method returns a FormattedRelat
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `direction` | [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!:NEXT, LAST, THIS, etc. |
-| `unit` | [RelativeDateTimeFormatter.AbsoluteUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit)!:e.g SATURDAY, DAY, MONTH |
+| `direction` | [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!:NEXT, LAST, THIS, etc. |
+| `unit` | [RelativeDateTimeFormatter.AbsoluteUnit](../android/icu/text/RelativeDateTimeFormatter.AbsoluteUnit.md)!:e.g SATURDAY, DAY, MONTH |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | the formatted string. If direction has a value that is documented as not being fully supported in every locale (for example NEXT_2 or LAST_2) then this function may return null to signal that no formatted string is available. |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | the formatted string. If direction has a value that is documented as not being fully supported in every locale (for example NEXT_2 or LAST_2) then this function may return null to signal that no formatted string is available. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -274,14 +274,14 @@ Formats a relative date with a quantity such as "in 5 days" or "3 months ago". T
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `quantity` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The numerical amount e.g 5. This value is formatted according to this object's [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat) object. |
-| `direction` | [RelativeDateTimeFormatter.Direction](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Direction)!:NEXT means a future relative date; LAST means a past relative date. |
-| `unit` | [RelativeDateTimeFormatter.RelativeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeUnit)!:the unit e.g day? month? year? |
+| `quantity` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The numerical amount e.g 5. This value is formatted according to this object's [NumberFormat](../android/icu/text/NumberFormat.md) object. |
+| `direction` | [RelativeDateTimeFormatter.Direction](../android/icu/text/RelativeDateTimeFormatter.Direction.md)!:NEXT means a future relative date; LAST means a past relative date. |
+| `unit` | [RelativeDateTimeFormatter.RelativeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeUnit.md)!:the unit e.g day? month? year? |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | the formatted relative datetime |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | the formatted relative datetime |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------|
@@ -303,11 +303,11 @@ Format a combination of RelativeDateTimeUnit and numeric offset using a text sty
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `offset` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The signed offset for the specified field. |
-| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
+| `unit` | [RelativeDateTimeFormatter.RelativeDateTimeUnit](../android/icu/text/RelativeDateTimeFormatter.RelativeDateTimeUnit.md)!:The unit to use when formatting the relative date, e.g. RelativeDateTimeUnit.WEEK, RelativeDateTimeUnit.FRIDAY. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [RelativeDateTimeFormatter.FormattedRelativeDateTime](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime)! | The formatted string (may be empty in case of error) |
+| [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md)! | The formatted string (may be empty in case of error) |
 
 ### getCapitalizationContext
 
@@ -321,7 +321,7 @@ Return capitalization context.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-----------------------------|
-| [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)! | The capitalization context. |
+| [DisplayContext](../android/icu/text/DisplayContext.md)! | The capitalization context. |
 
 ### getFormatStyle
 
@@ -335,7 +335,7 @@ Return style
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| [RelativeDateTimeFormatter.Style](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Style)! | The formatting style. |
+| [RelativeDateTimeFormatter.Style](../android/icu/text/RelativeDateTimeFormatter.Style.md)! | The formatting style. |
 
 ### getInstance
 
@@ -359,11 +359,11 @@ Returns a RelativeDateTimeFormatter for a particular locale.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the locale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | An instance of RelativeDateTimeFormatter. |
+| [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | An instance of RelativeDateTimeFormatter. |
 
 ### getInstance
 
@@ -380,12 +380,12 @@ Returns a RelativeDateTimeFormatter for a particular locale that uses a particul
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the locale |
-| `nf` | [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!:the number format object. It is defensively copied to ensure thread-safety and immutability of this class. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale |
+| `nf` | [NumberFormat](../android/icu/text/NumberFormat.md)!:the number format object. It is defensively copied to ensure thread-safety and immutability of this class. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | An instance of RelativeDateTimeFormatter. |
+| [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | An instance of RelativeDateTimeFormatter. |
 
 ### getInstance
 
@@ -404,11 +404,11 @@ Returns a RelativeDateTimeFormatter for a particular locale that uses a particul
 
 | Parameters ||
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the locale |
-| `nf` | [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!:the number format object. It is defensively copied to ensure thread-safety and immutability of this class. May be null. |
-| `style` | [RelativeDateTimeFormatter.Style](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter.Style)!:the style. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale |
+| `nf` | [NumberFormat](../android/icu/text/NumberFormat.md)!:the number format object. It is defensively copied to ensure thread-safety and immutability of this class. May be null. |
+| `style` | [RelativeDateTimeFormatter.Style](../android/icu/text/RelativeDateTimeFormatter.Style.md)!:the style. |
 | --- | --- |
-| `capitalizationContext` | [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!:the capitalization context. |
+| `capitalizationContext` | [DisplayContext](../android/icu/text/DisplayContext.md)!:the capitalization context. |
 
 ### getInstance
 
@@ -418,15 +418,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getInstance(locale: Locale!): RelativeDateTimeFormatter!
 ```
 
-Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#).
+Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](../java/util/Locale.md).
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
+| `locale` | [Locale](../java/util/Locale.md)!:the [java.util.Locale](../java/util/Locale.md). |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | An instance of RelativeDateTimeFormatter. |
+| [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | An instance of RelativeDateTimeFormatter. |
 
 ### getInstance
 
@@ -439,16 +439,16 @@ static fun getInstance(
 ): RelativeDateTimeFormatter!
 ```
 
-Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) that uses a particular NumberFormat object.
+Returns a RelativeDateTimeFormatter for a particular [java.util.Locale](../java/util/Locale.md) that uses a particular NumberFormat object.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) |
-| `nf` | [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!:the number format object. It is defensively copied to ensure thread-safety and immutability of this class. |
+| `locale` | [Locale](../java/util/Locale.md)!:the [java.util.Locale](../java/util/Locale.md) |
+| `nf` | [NumberFormat](../android/icu/text/NumberFormat.md)!:the number format object. It is defensively copied to ensure thread-safety and immutability of this class. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [RelativeDateTimeFormatter](https://developer.android.com/reference/kotlin/android/icu/text/RelativeDateTimeFormatter#)! | An instance of RelativeDateTimeFormatter. |
+| [RelativeDateTimeFormatter](../android/icu/text/RelativeDateTimeFormatter.md)! | An instance of RelativeDateTimeFormatter. |
 
 ### getNumberFormat
 
@@ -462,4 +462,4 @@ Returns a copy of the NumberFormat this object is using.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------|
-| [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)! | A copy of the NumberFormat. |
+| [NumberFormat](../android/icu/text/NumberFormat.md)! | A copy of the NumberFormat. |

@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # AggregateRecordsRequest
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest "View this page in Java") 
+Kotlin| [Java](../android/health/connect/AggregateRecordsRequest.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class AggregateRecordsRequest<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.AggregateRecordsRequest](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest#) |
+| ↳ | [android.health.connect.AggregateRecordsRequest](../android/health/connect/AggregateRecordsRequest.md) |
 
-A class to create requests for [HealthConnectManager.aggregate](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregate(android.health.connect.AggregateRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))
+A class to create requests for [HealthConnectManager.aggregate](../android/health/connect/HealthConnectManager.md))
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest.Builder) <br /> |
+| | [Builder](../android/health/connect/AggregateRecordsRequest.Builder.md) <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\<T\>!\> | [getAggregationTypes](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest#getAggregationTypes())`()` <br /> |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin)!\> | [getDataOriginsFilters](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest#getDataOriginsFilters())`()` <br /> |
-| [TimeRangeFilter](https://developer.android.com/reference/kotlin/android/health/connect/TimeRangeFilter) | [getTimeRangeFilter](https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest#getTimeRangeFilter())`()` <br /> |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AggregationType](../android/health/connect/datatypes/AggregationType.md)\<T\>!\> | [getAggregationTypes](../android/health/connect/AggregateRecordsRequest.md))`()` <br /> |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](../android/health/connect/datatypes/DataOrigin.md)!\> | [getDataOriginsFilters](../android/health/connect/AggregateRecordsRequest.md))`()` <br /> |
+| [TimeRangeFilter](../android/health/connect/TimeRangeFilter.md) | [getTimeRangeFilter](../android/health/connect/AggregateRecordsRequest.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -42,7 +42,7 @@ fun getAggregationTypes(): MutableSet<AggregationType<T>!>
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)<T>!> | Set of integers from [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType) to aggregate This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [AggregationType](../android/health/connect/datatypes/AggregationType.md)<T>!> | Set of integers from [AggregationType](../android/health/connect/datatypes/AggregationType.md) to aggregate This value cannot be`null`. |
 
 ### getDataOriginsFilters
 
@@ -54,7 +54,7 @@ fun getDataOriginsFilters(): MutableSet<DataOrigin!>
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin)!> | Set of [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin) s to read from, or empty set for no filter This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [DataOrigin](../android/health/connect/datatypes/DataOrigin.md)!> | Set of [DataOrigin](../android/health/connect/datatypes/DataOrigin.md) s to read from, or empty set for no filter This value cannot be`null`. |
 
 ### getTimeRangeFilter
 
@@ -66,4 +66,4 @@ fun getTimeRangeFilter(): TimeRangeFilter
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [TimeRangeFilter](https://developer.android.com/reference/kotlin/android/health/connect/TimeRangeFilter) | time range b/w which the aggregate operation is to be performed This value cannot be`null`. |
+| [TimeRangeFilter](../android/health/connect/TimeRangeFilter.md) | time range b/w which the aggregate operation is to be performed This value cannot be`null`. |

@@ -9,8 +9,8 @@ open class DialogFragment : Fragment, DialogInterface.OnCancelListener, Dialog
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.app.Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment) ||
-| | ↳ | [android.app.DialogFragment](https://developer.android.com/reference/kotlin/android/app/DialogFragment#) |
+| ↳ | [android.app.Fragment](../android/app/Fragment.md) ||
+| | ↳ | [android.app.DialogFragment](../android/app/DialogFragment.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 28.**
@@ -23,10 +23,10 @@ Implementations should override this class and implement `https://developer.andr
 
 Topics covered here:
 
-1. [Lifecycle](https://developer.android.com/reference/kotlin/android/app/DialogFragment#Lifecycle)
-2. [Basic Dialog](https://developer.android.com/reference/kotlin/android/app/DialogFragment#BasicDialog)
-3. [Alert Dialog](https://developer.android.com/reference/kotlin/android/app/DialogFragment#AlertDialog)
-4. [Selecting Between Dialog or Embedding](https://developer.android.com/reference/kotlin/android/app/DialogFragment#DialogOrEmbed)
+1. [Lifecycle](../android/app/DialogFragment.md)
+2. [Basic Dialog](../android/app/DialogFragment.md)
+3. [Alert Dialog](../android/app/DialogFragment.md)
+4. [Selecting Between Dialog or Embedding](../android/app/DialogFragment.md)
 
 ### Lifecycle
 
@@ -124,7 +124,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#dismissAllowingStateLoss()()` Version of `https://developer.android.com/reference/kotlin/android/app/DialogFragment#dismiss()` that uses `https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#commitAllowingStateLoss()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#dump(kotlin.String,%20java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!, writer: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!, args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Print the Fragments's state into the given stream. |
 | --- | --- |
-| open [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog)! | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#getDialog()()` <br /> |
+| open [Dialog](../android/app/Dialog.md)! | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#getDialog()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#getShowsDialog()()` Return the current value of `https://developer.android.com/reference/kotlin/android/app/DialogFragment#setShowsDialog(kotlin.Boolean)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#getTheme()()` <br /> |
 | --- | --- |
@@ -134,13 +134,13 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onCancel(android.content.DialogInterface)(dialog: https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#!)` This method will be invoked when the dialog is canceled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onCreate(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called to do initial creation of a fragment. |
-| open [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog)! | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onCreateDialog(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Override to build your own custom Dialog container. |
+| open [Dialog](../android/app/Dialog.md)! | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onCreateDialog(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Override to build your own custom Dialog container. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onDestroyView()()` Remove dialog. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onDetach()()` Called when the fragment is no longer attached to its activity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onDismiss(android.content.DialogInterface)(dialog: https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#!)` This method will be invoked when the dialog is dismissed. |
 | --- | --- |
-| open [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#)! | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onGetLayoutInflater(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Returns the LayoutInflater used to inflate Views of this Fragment. |
+| open [LayoutInflater](../android/view/LayoutInflater.md)! | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onGetLayoutInflater(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Returns the LayoutInflater used to inflate Views of this Fragment. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onSaveInstanceState(android.os.Bundle)(outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Called to ask the fragment to save its current dynamic state, so it can later be reconstructed in a new instance of its process is restarted. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/DialogFragment#onStart()()` Called when the Fragment is visible to the user. |
 | --- | --- |
@@ -952,8 +952,8 @@ Print the Fragments's state into the given stream.
 | Parameters ||
 |---|---|
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Text to print at the front of each line. |
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
-| `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
+| `writer` | [PrintWriter](../java/io/PrintWriter.md)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 
@@ -1016,7 +1016,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: If the fragment is being re-created from a previous saved state, this is the state. This value may be `null`. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the fragment is being re-created from a previous saved state, this is the state. This value may be `null`. |
 
 ### onAttach
 
@@ -1046,7 +1046,7 @@ This method will be invoked when the dialog is canceled.
 
 | Parameters ||
 |---|---|
-| `dialog` | [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!: the dialog that was canceled will be passed into the method |
+| `dialog` | [DialogInterface](../android/content/DialogInterface.md)!: the dialog that was canceled will be passed into the method |
 
 ### onCreate
 
@@ -1068,7 +1068,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: If the fragment is being re-created from a previous saved state, this is the state. This value may be `null`. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the fragment is being re-created from a previous saved state, this is the state. This value may be `null`. |
 
 ### onCreateDialog
 
@@ -1088,7 +1088,7 @@ This method will be called after `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The last saved instance state of the Fragment, or null if this is a freshly created Fragment. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)!: The last saved instance state of the Fragment, or null if this is a freshly created Fragment. |
 
 | Return ||
 |---|---|
@@ -1133,7 +1133,7 @@ This method will be invoked when the dialog is dismissed.
 
 | Parameters ||
 |---|---|
-| `dialog` | [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!: the dialog that was dismissed will be passed into the method |
+| `dialog` | [DialogInterface](../android/content/DialogInterface.md)!: the dialog that was dismissed will be passed into the method |
 
 ### onGetLayoutInflater
 
@@ -1168,7 +1168,7 @@ This corresponds to `https://developer.android.com/reference/kotlin/android/app/
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Bundle in which to place your saved state. |
+| `outState` | [Bundle](../android/os/Bundle.md)!: Bundle in which to place your saved state. |
 
 ### onStart
 
@@ -1267,7 +1267,7 @@ Display the dialog, adding the fragment to the given FragmentManager. This is a 
 
 | Parameters ||
 |---|---|
-| `manager` | [FragmentManager](https://developer.android.com/reference/kotlin/android/app/FragmentManager)!: The FragmentManager this fragment will be added to. |
+| `manager` | [FragmentManager](../android/app/FragmentManager.md)!: The FragmentManager this fragment will be added to. |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The tag for this fragment, as per `https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#add(android.app.Fragment,%20kotlin.String)`. |
 
 ### show
@@ -1287,7 +1287,7 @@ Display the dialog, adding the fragment using an existing transaction and then c
 
 | Parameters ||
 |---|---|
-| `transaction` | [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!: An existing transaction in which to add the fragment. |
+| `transaction` | [FragmentTransaction](../android/app/FragmentTransaction.md)!: An existing transaction in which to add the fragment. |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The tag for this fragment, as per `https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#add(android.app.Fragment,%20kotlin.String)`. |
 
 | Return ||

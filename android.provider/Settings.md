@@ -8,7 +8,7 @@ class Settings
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.Settings](https://developer.android.com/reference/kotlin/android/provider/Settings#) |
+| ↳ | [android.provider.Settings](../android/provider/Settings.md) |
 
 The Settings provider contains global system-level device preferences.
 
@@ -2701,7 +2701,7 @@ Checks if the specified context can draw on top of other apps. As of API level 2
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: App context. |
+| `context` | [Context](../android/content/Context.md)!: App context. |
 
 | Return ||
 |---|---|

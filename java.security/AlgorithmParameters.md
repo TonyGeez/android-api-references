@@ -10,7 +10,7 @@ open class AlgorithmParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#) |
+| ↳ | [java.security.AlgorithmParameters](../java/security/AlgorithmParameters.md) |
 
 This class is used as an opaque representation of cryptographic parameters.
 
@@ -59,25 +59,25 @@ Android provides the following`AlgorithmParameters`algorithms:
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#AlgorithmParameters(java.security.AlgorithmParametersSpi,%20java.security.Provider,%20kotlin.String))`(`paramSpi:` ` [AlgorithmParametersSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an AlgorithmParameters object. |
+| [AlgorithmParameters](../java/security/AlgorithmParameters.md))`(`paramSpi:` ` [AlgorithmParametersSpi](../java/security/AlgorithmParametersSpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an AlgorithmParameters object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getAlgorithm())`()` Returns the name of the algorithm associated with this parameter object. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getEncoded())`()` Returns the parameters in their primary encoding format. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getEncoded(kotlin.String))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the parameters encoded in the specified scheme. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/AlgorithmParameters.md))`()` Returns the name of the algorithm associated with this parameter object. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/AlgorithmParameters.md))`()` Returns the parameters in their primary encoding format. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/AlgorithmParameters.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the parameters encoded in the specified scheme. |
 | --- | --- |
-| openstatic [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a parameter object for the specified algorithm. |
-| openstatic [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a parameter object for the specified algorithm. |
-| openstatic [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!`)` Returns a parameter object for the specified algorithm. |
+| openstatic [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [getInstance](../java/security/AlgorithmParameters.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a parameter object for the specified algorithm. |
+| openstatic [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [getInstance](../java/security/AlgorithmParameters.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a parameter object for the specified algorithm. |
+| openstatic [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [getInstance](../java/security/AlgorithmParameters.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a parameter object for the specified algorithm. |
 | --- | --- |
-| T | [getParameterSpec](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getParameterSpec(java.lang.Class))`(`paramSpec:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Returns a (transparent) specification of this parameter object. |
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#getProvider())`()` Returns the provider of this parameter object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#init(kotlin.ByteArray))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Imports the specified parameters and decodes them according to the primary decoding format for parameters. |
+| T | [getParameterSpec](../java/security/AlgorithmParameters.md))`(`paramSpec:` ` [Class](../java/lang/Class.md)<T>!`)` Returns a (transparent) specification of this parameter object. |
+| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/AlgorithmParameters.md))`()` Returns the provider of this parameter object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/AlgorithmParameters.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Imports the specified parameters and decodes them according to the primary decoding format for parameters. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#init(kotlin.ByteArray,%20kotlin.String))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Imports the parameters from`params`and decodes them according to the specified decoding scheme. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#init(java.security.spec.AlgorithmParameterSpec))`(`paramSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` Initializes this parameter object using the parameters specified in`paramSpec`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#toString())`()` Returns a formatted string describing the parameters. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/AlgorithmParameters.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Imports the parameters from`params`and decodes them according to the specified decoding scheme. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/AlgorithmParameters.md))`(`paramSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes this parameter object using the parameters specified in`paramSpec`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/AlgorithmParameters.md))`()` Returns a formatted string describing the parameters. |
 | --- | --- |
 
 ## Protected constructors
@@ -97,8 +97,8 @@ Creates an AlgorithmParameters object.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `paramSpi` | [AlgorithmParametersSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi)!:the delegate |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!:the provider |
+| `paramSpi` | [AlgorithmParametersSpi](../java/security/AlgorithmParametersSpi.md)!:the delegate |
+| `provider` | [Provider](../java/security/Provider.md)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
 | --- | --- |
 
@@ -170,7 +170,7 @@ Returns a parameter object for the specified algorithm.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new AlgorithmParameters object encapsulating the AlgorithmParametersSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 The returned parameter object must be initialized via a call to`init`, using an appropriate parameter specification or parameter encoding.
 
@@ -180,7 +180,7 @@ The returned parameter object must be initialized via a call to`init`, using an 
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------|
-| [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#)! | the new parameter object |
+| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the new parameter object |
 
 | Exceptions ||
 |------------------------------------------|----------------------------------------------------------------------------------------------|
@@ -189,7 +189,7 @@ The returned parameter object must be initialized via a call to`init`, using an 
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -206,7 +206,7 @@ Returns a parameter object for the specified algorithm.
 
 A new AlgorithmParameters object encapsulating the AlgorithmParametersSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 The returned parameter object must be initialized via a call to`init`, using an appropriate parameter specification or parameter encoding.
 
@@ -217,7 +217,7 @@ The returned parameter object must be initialized via a call to`init`, using an 
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------|
-| [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#)! | the new parameter object |
+| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the new parameter object |
 
 | Exceptions ||
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -229,7 +229,7 @@ The returned parameter object must be initialized via a call to`init`, using an 
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -251,11 +251,11 @@ The returned parameter object must be initialized via a call to`init`, using an 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the algorithm requested. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!:the name of the provider. |
+| `provider` | [Provider](../java/security/Provider.md)!:the name of the provider. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------|
-| [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters#)! | the new parameter object |
+| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the new parameter object |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -266,7 +266,7 @@ The returned parameter object must be initialized via a call to`init`, using an 
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getParameterSpec
 
@@ -281,7 +281,7 @@ Returns a (transparent) specification of this parameter object.`paramSpec`identi
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the parameter specification to be returrned |
-| `paramSpec` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!:the specification class in which the parameters should be returned. |
+| `paramSpec` | [Class](../java/lang/Class.md)\<T\>!:the specification class in which the parameters should be returned. |
 
 | Return ||
 |---|------------------------------|
@@ -303,7 +303,7 @@ Returns the provider of this parameter object.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------|
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)! | the provider of this parameter object |
+| [Provider](../java/security/Provider.md)! | the provider of this parameter object |
 
 ### init
 
@@ -357,7 +357,7 @@ Initializes this parameter object using the parameters specified in`paramSpec`.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `paramSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameter specification. |
+| `paramSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameter specification. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|

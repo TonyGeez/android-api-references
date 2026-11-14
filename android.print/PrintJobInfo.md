@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintJobInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/print/PrintJobInfo "View this page in Java") 
+Kotlin| [Java](../android/print/PrintJobInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PrintJobInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrintJobInfo](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#) |
+| ↳ | [android.print.PrintJobInfo](../android/print/PrintJobInfo.md) |
 
 This class represents the description of a print job. The print job state includes properties such as its id, print attributes used for generating the content, and so on. Note that the print jobs state may change over time and this class represents a snapshot of this state.
 
@@ -21,48 +21,48 @@ This class represents the description of a print job. The print job state includ
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo.Builder) Builder for creating a [PrintJobInfo](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#). |
+| | [Builder](../android/print/PrintJobInfo.Builder.md) Builder for creating a [PrintJobInfo](../android/print/PrintJobInfo.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BLOCKED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_BLOCKED:kotlin.Int) Print job state: The print job is blocked. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int) Print job state: The print job is canceled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_COMPLETED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_COMPLETED:kotlin.Int) Print job state: The print job is successfully printed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BLOCKED](../android/print/PrintJobInfo.md) Print job state: The print job is blocked. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CANCELED](../android/print/PrintJobInfo.md) Print job state: The print job is canceled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_COMPLETED](../android/print/PrintJobInfo.md) Print job state: The print job is successfully printed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CREATED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CREATED:kotlin.Int) Print job state: The print job is being created but not yet ready to be printed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FAILED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_FAILED:kotlin.Int) Print job state: The print job was printing but printing failed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_QUEUED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_QUEUED:kotlin.Int) Print job state: The print jobs is created, it is ready to be printed and should be processed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CREATED](../android/print/PrintJobInfo.md) Print job state: The print job is being created but not yet ready to be printed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FAILED](../android/print/PrintJobInfo.md) Print job state: The print job was printing but printing failed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_QUEUED](../android/print/PrintJobInfo.md) Print job state: The print jobs is created, it is ready to be printed and should be processed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STARTED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_STARTED:kotlin.Int) Print job state: The print job is being printed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STARTED](../android/print/PrintJobInfo.md) Print job state: The print job is being printed. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#describeContents())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvancedIntOption](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getAdvancedIntOption(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAdvancedStringOption](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getAdvancedStringOption(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/print/PrintJobInfo.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvancedIntOption](../android/print/PrintJobInfo.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAdvancedStringOption](../android/print/PrintJobInfo.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
 | --- | --- |
-| [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes) | [getAttributes](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getAttributes())`()` Gets the print job attributes. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCopies](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getCopies())`()` Gets the number of copies. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCreationTime](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getCreationTime())`()` Gets the wall time in millisecond when this print job was created. |
+| [PrintAttributes](../android/print/PrintAttributes.md) | [getAttributes](../android/print/PrintJobInfo.md))`()` Gets the print job attributes. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCopies](../android/print/PrintJobInfo.md))`()` Gets the number of copies. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCreationTime](../android/print/PrintJobInfo.md))`()` Gets the wall time in millisecond when this print job was created. |
 | --- | --- |
-| [PrintJobId](https://developer.android.com/reference/kotlin/android/print/PrintJobId)? | [getId](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getId())`()` Gets the unique print job id. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLabel](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getLabel())`()` Gets the human readable job label. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PageRange](https://developer.android.com/reference/kotlin/android/print/PageRange)!\>? | [getPages](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getPages())`()` Gets the included pages. |
+| [PrintJobId](../android/print/PrintJobId.md)? | [getId](../android/print/PrintJobInfo.md))`()` Gets the unique print job id. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLabel](../android/print/PrintJobInfo.md))`()` Gets the human readable job label. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PageRange](../android/print/PageRange.md)!\>? | [getPages](../android/print/PrintJobInfo.md))`()` Gets the included pages. |
 | --- | --- |
-| [PrinterId](https://developer.android.com/reference/kotlin/android/print/PrinterId)? | [getPrinterId](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getPrinterId())`()` Gets the unique target printer id. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#getState())`()` Gets the current job state. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAdvancedOption](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#hasAdvancedOption(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets whether this job has a given advanced (printer specific) print option. |
+| [PrinterId](../android/print/PrinterId.md)? | [getPrinterId](../android/print/PrintJobInfo.md))`()` Gets the unique target printer id. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](../android/print/PrintJobInfo.md))`()` Gets the current job state. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAdvancedOption](../android/print/PrintJobInfo.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets whether this job has a given advanced (printer specific) print option. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/print/PrintJobInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/print/PrintJobInfo.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PrintJobInfo](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrintJobInfo](../android/print/PrintJobInfo.md)!\> | [CREATOR](../android/print/PrintJobInfo.md) <br /> |
 
 ## Constants
 
@@ -76,7 +76,7 @@ static val STATE_BLOCKED: Int
 
 Print job state: The print job is blocked.
 
-Next valid states: [STATE_FAILED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_FAILED:kotlin.Int), [STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int), [STATE_STARTED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_STARTED:kotlin.Int) 
+Next valid states: [STATE_FAILED](../android/print/PrintJobInfo.md), [STATE_CANCELED](../android/print/PrintJobInfo.md), [STATE_STARTED](../android/print/PrintJobInfo.md) 
 
  Value: 4
 
@@ -118,7 +118,7 @@ static val STATE_CREATED: Int
 
 Print job state: The print job is being created but not yet ready to be printed.
 
-Next valid states: [STATE_QUEUED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_QUEUED:kotlin.Int) 
+Next valid states: [STATE_QUEUED](../android/print/PrintJobInfo.md) 
 
  Value: 1
 
@@ -132,7 +132,7 @@ static val STATE_FAILED: Int
 
 Print job state: The print job was printing but printing failed.
 
-Next valid states: [STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int), [STATE_STARTED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_STARTED:kotlin.Int) 
+Next valid states: [STATE_CANCELED](../android/print/PrintJobInfo.md), [STATE_STARTED](../android/print/PrintJobInfo.md) 
 
  Value: 6
 
@@ -146,7 +146,7 @@ static val STATE_QUEUED: Int
 
 Print job state: The print jobs is created, it is ready to be printed and should be processed.
 
-Next valid states: [STATE_STARTED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_STARTED:kotlin.Int), [STATE_FAILED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_FAILED:kotlin.Int), [STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int) 
+Next valid states: [STATE_STARTED](../android/print/PrintJobInfo.md), [STATE_FAILED](../android/print/PrintJobInfo.md), [STATE_CANCELED](../android/print/PrintJobInfo.md) 
 
  Value: 2
 
@@ -160,7 +160,7 @@ static val STATE_STARTED: Int
 
 Print job state: The print job is being printed.
 
-Next valid states: [STATE_COMPLETED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_COMPLETED:kotlin.Int), [STATE_FAILED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_FAILED:kotlin.Int), [STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int), [STATE_BLOCKED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_BLOCKED:kotlin.Int) 
+Next valid states: [STATE_COMPLETED](../android/print/PrintJobInfo.md), [STATE_FAILED](../android/print/PrintJobInfo.md), [STATE_CANCELED](../android/print/PrintJobInfo.md), [STATE_BLOCKED](../android/print/PrintJobInfo.md) 
 
  Value: 3
 
@@ -176,7 +176,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getAdvancedIntOption
 
@@ -226,7 +226,7 @@ Gets the print job attributes.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes) | The attributes. This value cannot be`null`. |
+| [PrintAttributes](../android/print/PrintAttributes.md) | The attributes. This value cannot be`null`. |
 
 ### getCopies
 
@@ -268,7 +268,7 @@ Gets the unique print job id.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------|
-| [PrintJobId](https://developer.android.com/reference/kotlin/android/print/PrintJobId)? | The id. This value may be`null`. |
+| [PrintJobId](../android/print/PrintJobId.md)? | The id. This value may be`null`. |
 
 ### getLabel
 
@@ -296,7 +296,7 @@ Gets the included pages.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PageRange](https://developer.android.com/reference/kotlin/android/print/PageRange)!>? | The included pages or`null`if not set. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PageRange](../android/print/PageRange.md)!>? | The included pages or`null`if not set. |
 
 ### getPrinterId
 
@@ -310,7 +310,7 @@ Gets the unique target printer id.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------|
-| [PrinterId](https://developer.android.com/reference/kotlin/android/print/PrinterId)? | The target printer id. This value may be`null`. |
+| [PrinterId](../android/print/PrinterId.md)? | The target printer id. This value may be`null`. |
 
 ### getState
 
@@ -324,17 +324,17 @@ Gets the current job state.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The job state. Value is [android.print.PrintJobInfo#STATE_CREATED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CREATED:kotlin.Int), [android.print.PrintJobInfo#STATE_QUEUED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_QUEUED:kotlin.Int), [android.print.PrintJobInfo#STATE_STARTED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_STARTED:kotlin.Int), [android.print.PrintJobInfo#STATE_BLOCKED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_BLOCKED:kotlin.Int), [android.print.PrintJobInfo#STATE_COMPLETED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_COMPLETED:kotlin.Int), [android.print.PrintJobInfo#STATE_FAILED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_FAILED:kotlin.Int), or [android.print.PrintJobInfo#STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The job state. Value is [android.print.PrintJobInfo#STATE_CREATED](../android/print/PrintJobInfo.md), [android.print.PrintJobInfo#STATE_QUEUED](../android/print/PrintJobInfo.md), [android.print.PrintJobInfo#STATE_STARTED](../android/print/PrintJobInfo.md), [android.print.PrintJobInfo#STATE_BLOCKED](../android/print/PrintJobInfo.md), [android.print.PrintJobInfo#STATE_COMPLETED](../android/print/PrintJobInfo.md), [android.print.PrintJobInfo#STATE_FAILED](../android/print/PrintJobInfo.md), or [android.print.PrintJobInfo#STATE_CANCELED](../android/print/PrintJobInfo.md) |
 
 **See Also**
 
-- [#STATE_CREATED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CREATED:kotlin.Int)
-- [#STATE_QUEUED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_QUEUED:kotlin.Int)
-- [#STATE_STARTED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_STARTED:kotlin.Int)
-- [#STATE_COMPLETED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_COMPLETED:kotlin.Int)
-- [#STATE_BLOCKED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_BLOCKED:kotlin.Int)
-- [#STATE_FAILED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_FAILED:kotlin.Int)
-- [#STATE_CANCELED](https://developer.android.com/reference/kotlin/android/print/PrintJobInfo#STATE_CANCELED:kotlin.Int) 
+- [#STATE_CREATED](../android/print/PrintJobInfo.md)
+- [#STATE_QUEUED](../android/print/PrintJobInfo.md)
+- [#STATE_STARTED](../android/print/PrintJobInfo.md)
+- [#STATE_COMPLETED](../android/print/PrintJobInfo.md)
+- [#STATE_BLOCKED](../android/print/PrintJobInfo.md)
+- [#STATE_FAILED](../android/print/PrintJobInfo.md)
+- [#STATE_CANCELED](../android/print/PrintJobInfo.md) 
 
 ### hasAdvancedOption
 
@@ -380,7 +380,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

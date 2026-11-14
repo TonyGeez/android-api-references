@@ -10,7 +10,7 @@ abstract class ContentHandler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.ContentHandler](https://developer.android.com/reference/kotlin/java/net/ContentHandler#) |
+| ↳ | [java.net.ContentHandler](../java/net/ContentHandler.md) |
 
 The abstract class`ContentHandler`is the superclass of all classes that read an`Object`from a`URLConnection`.
 
@@ -30,12 +30,12 @@ If the loading of the content handler class would be performed by a classloader 
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------|---|
-| [ContentHandler](https://developer.android.com/reference/kotlin/java/net/ContentHandler#ContentHandler())`()` <br /> |
+| [ContentHandler](../java/net/ContentHandler.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](https://developer.android.com/reference/kotlin/java/net/ContentHandler#getContent(java.net.URLConnection))`(`urlc:` ` [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)!`)` Given a URL connect stream positioned at the beginning of the representation of an object, this method reads that stream and creates an object from it. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](https://developer.android.com/reference/kotlin/java/net/ContentHandler#getContent(java.net.URLConnection,%20kotlin.Array))`(`urlc:` ` [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)!`, `classes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>!`)` Given a URL connect stream positioned at the beginning of the representation of an object, this method reads that stream and creates an object that matches one of the types specified. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](../java/net/ContentHandler.md))`(`urlc:` ` [URLConnection](../java/net/URLConnection.md)!`)` Given a URL connect stream positioned at the beginning of the representation of an object, this method reads that stream and creates an object from it. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](../java/net/ContentHandler.md))`(`urlc:` ` [URLConnection](../java/net/URLConnection.md)!`, `classes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>!`)` Given a URL connect stream positioned at the beginning of the representation of an object, this method reads that stream and creates an object that matches one of the types specified. |
 
 ## Public constructors
 
@@ -61,7 +61,7 @@ Given a URL connect stream positioned at the beginning of the representation of 
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------|
-| `urlc` | [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)!:a URL connection. |
+| `urlc` | [URLConnection](../java/net/URLConnection.md)!:a URL connection. |
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------|
@@ -86,8 +86,8 @@ Given a URL connect stream positioned at the beginning of the representation of 
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `urlc` | [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)!:a URL connection. |
-| `classes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>!:an array of types requested |
+| `urlc` | [URLConnection](../java/net/URLConnection.md)!:a URL connection. |
+| `classes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>!:an array of types requested |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|

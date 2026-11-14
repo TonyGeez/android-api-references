@@ -10,7 +10,7 @@ open class InterfaceAddress
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.InterfaceAddress](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#) |
+| ↳ | [java.net.InterfaceAddress](../java/net/InterfaceAddress.md) |
 
 This class represents a Network Interface address. In short it's an IP address, a subnet mask and a broadcast address when the address is an IPv4 one. An IP address and a network prefix length in the case of IPv6 address.
 
@@ -18,13 +18,13 @@ This class represents a Network Interface address. In short it's an IP address, 
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
-| open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getAddress](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#getAddress())`()` Returns an`InetAddress`for this address. |
-| open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getBroadcast](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#getBroadcast())`()` Returns an`InetAddress`for the broadcast address for this InterfaceAddress. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/net/InterfaceAddress.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
+| open [InetAddress](../java/net/InetAddress.md)! | [getAddress](../java/net/InterfaceAddress.md))`()` Returns an`InetAddress`for this address. |
+| open [InetAddress](../java/net/InetAddress.md)! | [getBroadcast](../java/net/InterfaceAddress.md))`()` Returns an`InetAddress`for the broadcast address for this InterfaceAddress. |
 | --- | --- |
-| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getNetworkPrefixLength](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#getNetworkPrefixLength())`()` Returns the network prefix length for this address. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#hashCode())`()` Returns a hashcode for this Interface address. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#toString())`()` Converts this Interface address to a`String`. |
+| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getNetworkPrefixLength](../java/net/InterfaceAddress.md))`()` Returns the network prefix length for this address. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/net/InterfaceAddress.md))`()` Returns a hashcode for this Interface address. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/InterfaceAddress.md))`()` Converts this Interface address to a`String`. |
 | --- | --- |
 
 ## Public methods
@@ -51,7 +51,7 @@ Two instances of`InterfaceAddress`represent the same address if the InetAddress,
 
 **See Also**
 
-- [java.net.InterfaceAddress#hashCode()](https://developer.android.com/reference/kotlin/java/net/InterfaceAddress#hashCode()) 
+- [java.net.InterfaceAddress#hashCode()](../java/net/InterfaceAddress.md)) 
 
 ### getAddress
 
@@ -65,7 +65,7 @@ Returns an`InetAddress`for this address.
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | the`InetAddress`for this address. |
+| [InetAddress](../java/net/InetAddress.md)! | the`InetAddress`for this address. |
 
 ### getBroadcast
 
@@ -81,7 +81,7 @@ Only IPv4 networks have broadcast address therefore, in the case of an IPv6 netw
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | the`InetAddress`representing the broadcast address or`null`if there is no broadcast address. |
+| [InetAddress](../java/net/InetAddress.md)! | the`InetAddress`representing the broadcast address or`null`if there is no broadcast address. |
 
 ### getNetworkPrefixLength
 

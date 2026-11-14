@@ -8,7 +8,7 @@ class CollationElementIterator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.CollationElementIterator](https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator#) |
+| ↳ | [android.icu.text.CollationElementIterator](../android/icu/text/CollationElementIterator.md) |
 
 `CollationElementIterator` is an iterator created by a RuleBasedCollator to walk through a string. The return result of each iteration is a 32-bit collation element (CE) that defines the ordering priority of the next character or sequence of characters in the source string.
 
@@ -319,7 +319,7 @@ The source iterator's integrity will be preserved since a new copy will be creat
 
 | Parameters ||
 |---|---|
-| `source` | [UCharacterIterator](https://developer.android.com/reference/kotlin/android/icu/text/UCharacterIterator)!: the new source string iterator for iteration. |
+| `source` | [UCharacterIterator](../android/icu/text/UCharacterIterator.md)!: the new source string iterator for iteration. |
 
 ### setText
 
@@ -347,7 +347,7 @@ Set a new source string iterator for iteration, and reset the offset to the begi
 
 | Parameters ||
 |---|---|
-| `source` | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!: the new source string iterator for iteration. |
+| `source` | [CharacterIterator](../java/text/CharacterIterator.md)!: the new source string iterator for iteration. |
 
 ### tertiaryOrder
 

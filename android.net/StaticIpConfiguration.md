@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # StaticIpConfiguration
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/StaticIpConfiguration "View this page in Java") 
+Kotlin| [Java](../android/net/StaticIpConfiguration.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StaticIpConfiguration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.StaticIpConfiguration](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#) |
+| ↳ | [android.net.StaticIpConfiguration](../android/net/StaticIpConfiguration.md) |
 
 Class that describes static IP configuration.
 
@@ -21,30 +21,30 @@ Class that describes static IP configuration.
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration.Builder) Helper class to build a new instance of [StaticIpConfiguration](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#). |
+| | [Builder](../android/net/StaticIpConfiguration.Builder.md) Helper class to build a new instance of [StaticIpConfiguration](../android/net/StaticIpConfiguration.md). |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#describeContents())`()` Implement the Parcelable interface |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!\> | [getDnsServers](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getDnsServers())`()` Get the DNS servers included in the configuration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/StaticIpConfiguration.md))`()` Implement the Parcelable interface |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/StaticIpConfiguration.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InetAddress](../java/net/InetAddress.md)!\> | [getDnsServers](../android/net/StaticIpConfiguration.md))`()` Get the DNS servers included in the configuration. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDomains](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getDomains())`()` Get a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) containing the comma separated domains to search when resolving host names on this link, in priority order. |
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)? | [getGateway](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getGateway())`()` Get the gateway included in the configuration. |
-| [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress) | [getIpAddress](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#getIpAddress())`()` Get the static IP address included in the configuration. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDomains](../android/net/StaticIpConfiguration.md))`()` Get a [String](../java/lang/String.md) containing the comma separated domains to search when resolving host names on this link, in priority order. |
+| [InetAddress](../java/net/InetAddress.md)? | [getGateway](../android/net/StaticIpConfiguration.md))`()` Get the gateway included in the configuration. |
+| [LinkAddress](../android/net/LinkAddress.md) | [getIpAddress](../android/net/StaticIpConfiguration.md))`()` Get the static IP address included in the configuration. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#toString())`()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/StaticIpConfiguration.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/StaticIpConfiguration.md))`()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/StaticIpConfiguration.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [StaticIpConfiguration](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/StaticIpConfiguration#CREATOR:android.os.Parcelable.Creator) Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [StaticIpConfiguration](../android/net/StaticIpConfiguration.md)!\> | [CREATOR](../android/net/StaticIpConfiguration.md) Implement the Parcelable interface |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ Implement the Parcelable interface
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -102,7 +102,7 @@ Get the DNS servers included in the configuration.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [InetAddress](../java/net/InetAddress.md)!> | This value cannot be`null`. |
 
 ### getDomains
 
@@ -112,7 +112,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getDomains(): String?
 ```
 
-Get a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) containing the comma separated domains to search when resolving host names on this link, in priority order.
+Get a [String](../java/lang/String.md) containing the comma separated domains to search when resolving host names on this link, in priority order.
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
@@ -130,7 +130,7 @@ Get the gateway included in the configuration.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)? | This value may be`null`. |
+| [InetAddress](../java/net/InetAddress.md)? | This value may be`null`. |
 
 ### getIpAddress
 
@@ -144,7 +144,7 @@ Get the static IP address included in the configuration.
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------|
-| [LinkAddress](https://developer.android.com/reference/kotlin/android/net/LinkAddress) | This value cannot be`null`. |
+| [LinkAddress](../android/net/LinkAddress.md) | This value cannot be`null`. |
 
 ### hashCode
 
@@ -187,8 +187,8 @@ Implement the Parcelable interface
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

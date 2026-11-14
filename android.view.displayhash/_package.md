@@ -1,16 +1,16 @@
 # android.view.displayhash
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/displayhash/package-summary "View this page in Java")
+Kotlin | [Java](../android/view/displayhash/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [DisplayHashResultCallback](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback) | Use when calling `https://developer.android.com/reference/kotlin/android/view/View.html#generateDisplayHash(kotlin.String,%20android.graphics.Rect,%20java.util.concurrent.Executor,%20android.view.displayhash.DisplayHashResultCallback)`. |
+| [DisplayHashResultCallback](../android/view/displayhash/DisplayHashResultCallback.md) | Use when calling `https://developer.android.com/reference/kotlin/android/view/View.html#generateDisplayHash(kotlin.String,%20android.graphics.Rect,%20java.util.concurrent.Executor,%20android.view.displayhash.DisplayHashResultCallback)`. |
 | --- | --- |
 
 ## Classes
 
-| [DisplayHash](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHash) | The DisplayHash used to validate information about what was present on screen. |
+| [DisplayHash](../android/view/displayhash/DisplayHash.md) | The DisplayHash used to validate information about what was present on screen. |
 | --- | --- |
-| [DisplayHashManager](https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager) | Manages DisplayHash requests. |
-| [VerifiedDisplayHash](https://developer.android.com/reference/kotlin/android/view/displayhash/VerifiedDisplayHash) | The verified display hash used to validate information about what was present on screen. |
+| [DisplayHashManager](../android/view/displayhash/DisplayHashManager.md) | Manages DisplayHash requests. |
+| [VerifiedDisplayHash](../android/view/displayhash/VerifiedDisplayHash.md) | The verified display hash used to validate information about what was present on screen. |

@@ -10,8 +10,8 @@ abstract class Signature : SignatureSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.SignatureSpi](https://developer.android.com/reference/kotlin/java/security/SignatureSpi) ||
-| | ↳ | [java.security.Signature](https://developer.android.com/reference/kotlin/java/security/Signature#) |
+| ↳ | [java.security.SignatureSpi](../java/security/SignatureSpi.md) ||
+| | ↳ | [java.security.Signature](../java/security/Signature.md) |
 
 The Signature class is used to provide applications the functionality of a digital signature algorithm. Digital signatures are used for authentication and integrity assurance of digital data.
 
@@ -22,11 +22,11 @@ A Signature object can be used to generate and verify digital signatures.
 There are three phases to the use of a Signature object for either signing data or verifying a signature:
 
 1. Initialization, with either
- - a public key, which initializes the signature for verification (see [initVerify](https://developer.android.com/reference/kotlin/java/security/Signature#initVerify(java.security.PublicKey))), or
- - a private key (and optionally a Secure Random Number Generator), which initializes the signature for signing (see [initSign(java.security.PrivateKey)](https://developer.android.com/reference/kotlin/java/security/Signature#initSign(java.security.PrivateKey))and [initSign(java.security.PrivateKey,java.security.SecureRandom)](https://developer.android.com/reference/kotlin/java/security/Signature#initSign(java.security.PrivateKey,%20java.security.SecureRandom))).
-2. UpdatingDepending on the type of initialization, this will update the bytes to be signed or verified. See the [update](https://developer.android.com/reference/kotlin/java/security/Signature#update(kotlin.Byte))methods.
+ - a public key, which initializes the signature for verification (see [initVerify](../java/security/Signature.md))), or
+ - a private key (and optionally a Secure Random Number Generator), which initializes the signature for signing (see [initSign(java.security.PrivateKey)](../java/security/Signature.md))and [initSign(java.security.PrivateKey,java.security.SecureRandom)](../java/security/Signature.md))).
+2. UpdatingDepending on the type of initialization, this will update the bytes to be signed or verified. See the [update](../java/security/Signature.md))methods.
 
-3. Signing or Verifying a signature on all updated bytes. See the [sign](https://developer.android.com/reference/kotlin/java/security/Signature#sign())methods and the [verify](https://developer.android.com/reference/kotlin/java/security/Signature#verify(kotlin.ByteArray))method.
+3. Signing or Verifying a signature on all updated bytes. See the [sign](../java/security/Signature.md))methods and the [verify](../java/security/Signature.md))method.
 
 Note that this class is abstract and extends from`SignatureSpi`for historical reasons. Application developers should only take notice of the methods defined in this`Signature`class; all the methods in the superclass are intended for cryptographic service providers who wish to supply their own implementations of digital signature algorithms.
 
@@ -85,59 +85,59 @@ These algorithms are described in the [Signature section](https://docs.oracle.co
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGN](https://developer.android.com/reference/kotlin/java/security/Signature#SIGN:kotlin.Int) Possible [state](https://developer.android.com/reference/kotlin/java/security/Signature#state:kotlin.Int) value, signifying that this signature object has been initialized for signing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNINITIALIZED](https://developer.android.com/reference/kotlin/java/security/Signature#UNINITIALIZED:kotlin.Int) Possible [state](https://developer.android.com/reference/kotlin/java/security/Signature#state:kotlin.Int) value, signifying that this signature object has not yet been initialized. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERIFY](https://developer.android.com/reference/kotlin/java/security/Signature#VERIFY:kotlin.Int) Possible [state](https://developer.android.com/reference/kotlin/java/security/Signature#state:kotlin.Int) value, signifying that this signature object has been initialized for verification. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGN](../java/security/Signature.md) Possible [state](../java/security/Signature.md) value, signifying that this signature object has been initialized for signing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNINITIALIZED](../java/security/Signature.md) Possible [state](../java/security/Signature.md) value, signifying that this signature object has not yet been initialized. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERIFY](../java/security/Signature.md) Possible [state](../java/security/Signature.md) value, signifying that this signature object has been initialized for verification. |
 | --- | --- |
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Signature](https://developer.android.com/reference/kotlin/java/security/Signature#Signature(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a Signature object for the specified algorithm. |
+| [Signature](../java/security/Signature.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a Signature object for the specified algorithm. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](https://developer.android.com/reference/kotlin/java/security/Signature#clone())`()` Returns a clone if the implementation is cloneable. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/Signature#getAlgorithm())`()` Returns the name of the algorithm for this signature object. |
-| openstatic [Signature](https://developer.android.com/reference/kotlin/java/security/Signature#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/Signature#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a Signature object that implements the specified signature algorithm. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../java/security/Signature.md))`()` Returns a clone if the implementation is cloneable. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/Signature.md))`()` Returns the name of the algorithm for this signature object. |
+| openstatic [Signature](../java/security/Signature.md)! | [getInstance](../java/security/Signature.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a Signature object that implements the specified signature algorithm. |
 | --- | --- |
-| openstatic [Signature](https://developer.android.com/reference/kotlin/java/security/Signature#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/Signature#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a Signature object that implements the specified signature algorithm. |
-| openstatic [Signature](https://developer.android.com/reference/kotlin/java/security/Signature#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/Signature#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!`)` Returns a Signature object that implements the specified signature algorithm. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getParameter](https://developer.android.com/reference/kotlin/java/security/Signature#getParameter(kotlin.String))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of the specified algorithm parameter. |
+| openstatic [Signature](../java/security/Signature.md)! | [getInstance](../java/security/Signature.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a Signature object that implements the specified signature algorithm. |
+| openstatic [Signature](../java/security/Signature.md)! | [getInstance](../java/security/Signature.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a Signature object that implements the specified signature algorithm. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getParameter](../java/security/Signature.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of the specified algorithm parameter. |
 | --- | --- |
-| [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | [getParameters](https://developer.android.com/reference/kotlin/java/security/Signature#getParameters())`()` Returns the parameters used with this signature object. |
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/Signature#getProvider())`()` Returns the provider of this signature object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initSign](https://developer.android.com/reference/kotlin/java/security/Signature#initSign(java.security.PrivateKey))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`)` Initialize this object for signing. |
+| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [getParameters](../java/security/Signature.md))`()` Returns the parameters used with this signature object. |
+| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/Signature.md))`()` Returns the provider of this signature object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initSign](../java/security/Signature.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`)` Initialize this object for signing. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initSign](https://developer.android.com/reference/kotlin/java/security/Signature#initSign(java.security.PrivateKey,%20java.security.SecureRandom))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initialize this object for signing. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initVerify](https://developer.android.com/reference/kotlin/java/security/Signature#initVerify(java.security.cert.Certificate))`(`certificate:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`)` Initializes this object for verification, using the public key from the given certificate. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initVerify](https://developer.android.com/reference/kotlin/java/security/Signature#initVerify(java.security.PublicKey))`(`publicKey:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`)` Initializes this object for verification. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initSign](../java/security/Signature.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initialize this object for signing. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initVerify](../java/security/Signature.md))`(`certificate:` ` [Certificate](../java/security/cert/Certificate.md)!`)` Initializes this object for verification, using the public key from the given certificate. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initVerify](../java/security/Signature.md))`(`publicKey:` ` [PublicKey](../java/security/PublicKey.md)!`)` Initializes this object for verification. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](https://developer.android.com/reference/kotlin/java/security/Signature#setParameter(kotlin.String,%20kotlin.Any))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the specified algorithm parameter to the specified value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](https://developer.android.com/reference/kotlin/java/security/Signature#setParameter(java.security.spec.AlgorithmParameterSpec))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` Initializes this signature engine with the specified parameter set. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [sign](https://developer.android.com/reference/kotlin/java/security/Signature#sign())`()` Returns the signature bytes of all the data updated. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](../java/security/Signature.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the specified algorithm parameter to the specified value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](../java/security/Signature.md))`(`params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes this signature engine with the specified parameter set. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [sign](../java/security/Signature.md))`()` Returns the signature bytes of all the data updated. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sign](https://developer.android.com/reference/kotlin/java/security/Signature#sign(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`outbuf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes the signature operation and stores the resulting signature bytes in the provided buffer`outbuf`, starting at`offset`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/Signature#toString())`()` Returns a string representation of this signature object, providing information that includes the state of the object and the name of the algorithm used. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/Signature#update(kotlin.Byte))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the data to be signed or verified by a byte. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sign](../java/security/Signature.md))`(`outbuf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes the signature operation and stores the resulting signature bytes in the provided buffer`outbuf`, starting at`offset`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/Signature.md))`()` Returns a string representation of this signature object, providing information that includes the state of the object and the name of the algorithm used. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/Signature.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the data to be signed or verified by a byte. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/Signature#update(kotlin.ByteArray))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the data to be signed or verified, using the specified array of bytes. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/Signature#update(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the data to be signed or verified, using the specified array of bytes, starting at the specified offset. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/security/Signature#update(java.nio.ByteBuffer))`(`data:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Updates the data to be signed or verified using the specified ByteBuffer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/Signature.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the data to be signed or verified, using the specified array of bytes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/Signature.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the data to be signed or verified, using the specified array of bytes, starting at the specified offset. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/Signature.md))`(`data:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Updates the data to be signed or verified using the specified ByteBuffer. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](https://developer.android.com/reference/kotlin/java/security/Signature#verify(kotlin.ByteArray))`(`signature:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Verifies the passed-in signature. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](https://developer.android.com/reference/kotlin/java/security/Signature#verify(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`signature:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Verifies the passed-in signature in the specified array of bytes, starting at the specified offset. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](../java/security/Signature.md))`(`signature:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Verifies the passed-in signature. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](../java/security/Signature.md))`(`signature:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Verifies the passed-in signature in the specified array of bytes, starting at the specified offset. |
 
 | Inherited functions ||
 |---|---|
-| From class [SignatureSpi](https://developer.android.com/reference/kotlin/java/security/SignatureSpi) |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [engineGetParameter](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineGetParameter(kotlin.String))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Gets the value of the specified algorithm parameter. This method supplies a general-purpose mechanism through which it is possible to get the various parameters of this object. A parameter may be any settable parameter for the algorithm, such as a parameter size, or a source of random bits for signature generation (if appropriate), or an indication of whether or not to perform a specific but optional computation. A uniform algorithm-specific naming scheme for each parameter is desirable but left unspecified at this time. <br /> | | [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | [engineGetParameters](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineGetParameters())`()` <br /> This method is overridden by providers to return the parameters used with this signature engine, or null if this signature engine does not use any parameters. The returned parameters may be the same that were used to initialize this signature engine, or may contain a combination of default and randomly generated parameter values used by the underlying signature implementation if this signature engine requires algorithm parameters but was not initialized with any. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineInitSign(java.security.PrivateKey))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`)` <br /> Initializes this signature object with the specified private key for signing operations. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineInitSign(java.security.PrivateKey,%20java.security.SecureRandom))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` <br /> Initializes this signature object with the specified private key and source of randomness for signing operations. This concrete method has been added to this previously-defined abstract class. (For backwards compatibility, it cannot be abstract.) <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitVerify](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineInitVerify(java.security.PublicKey))`(`publicKey:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`)` <br /> Initializes this signature object with the specified public key for verification operations. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSetParameter(kotlin.String,%20kotlin.Any))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Sets the specified algorithm parameter to the specified value. This method supplies a general-purpose mechanism through which it is possible to set the various parameters of this object. A parameter may be any settable parameter for the algorithm, such as a parameter size, or a source of random bits for signature generation (if appropriate), or an indication of whether or not to perform a specific but optional computation. A uniform algorithm-specific naming scheme for each parameter is desirable but left unspecified at this time. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSetParameter(java.security.spec.AlgorithmParameterSpec))`(`params:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` <br /> This method is overridden by providers to initialize this signature engine with the specified parameter set. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSign())`()` <br /> Returns the signature bytes of all the data updated so far. The format of the signature depends on the underlying signature scheme. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSign](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineSign(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`outbuf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Finishes this signature operation and stores the resulting signature bytes in the provided buffer`outbuf`, starting at`offset`. The format of the signature depends on the underlying signature scheme. The signature implementation is reset to its initial state (the state it was in after a call to one of the`engineInitSign`methods) and can be reused to generate further signatures with the same private key. This method should be abstract, but we leave it concrete for binary compatibility. Knowledgeable providers should override this method. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineUpdate(kotlin.Byte))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> Updates the data to be signed or verified using the specified byte. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineUpdate(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Updates the data to be signed or verified, using the specified array of bytes, starting at the specified offset. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineUpdate(java.nio.ByteBuffer))`(`input:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` <br /> Updates the data to be signed or verified using the specified ByteBuffer. Processes the`data.remaining()`bytes starting at at`data.position()`. Upon return, the buffer's position will be equal to its limit; its limit will not have changed. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineVerify(kotlin.ByteArray))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Verifies the passed-in signature. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#engineVerify(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Verifies the passed-in signature in the specified array of bytes, starting at the specified offset. Note: Subclasses should overwrite the default implementation. <br /> | ||
+| From class [SignatureSpi](../java/security/SignatureSpi.md) |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [engineGetParameter](../java/security/SignatureSpi.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Gets the value of the specified algorithm parameter. This method supplies a general-purpose mechanism through which it is possible to get the various parameters of this object. A parameter may be any settable parameter for the algorithm, such as a parameter size, or a source of random bits for signature generation (if appropriate), or an indication of whether or not to perform a specific but optional computation. A uniform algorithm-specific naming scheme for each parameter is desirable but left unspecified at this time. <br /> | | [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [engineGetParameters](../java/security/SignatureSpi.md))`()` <br /> This method is overridden by providers to return the parameters used with this signature engine, or null if this signature engine does not use any parameters. The returned parameters may be the same that were used to initialize this signature engine, or may contain a combination of default and randomly generated parameter values used by the underlying signature implementation if this signature engine requires algorithm parameters but was not initialized with any. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](../java/security/SignatureSpi.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`)` <br /> Initializes this signature object with the specified private key for signing operations. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](../java/security/SignatureSpi.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` <br /> Initializes this signature object with the specified private key and source of randomness for signing operations. This concrete method has been added to this previously-defined abstract class. (For backwards compatibility, it cannot be abstract.) <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitVerify](../java/security/SignatureSpi.md))`(`publicKey:` ` [PublicKey](../java/security/PublicKey.md)!`)` <br /> Initializes this signature object with the specified public key for verification operations. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](../java/security/SignatureSpi.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Sets the specified algorithm parameter to the specified value. This method supplies a general-purpose mechanism through which it is possible to set the various parameters of this object. A parameter may be any settable parameter for the algorithm, such as a parameter size, or a source of random bits for signature generation (if appropriate), or an indication of whether or not to perform a specific but optional computation. A uniform algorithm-specific naming scheme for each parameter is desirable but left unspecified at this time. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](../java/security/SignatureSpi.md))`(`params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` <br /> This method is overridden by providers to initialize this signature engine with the specified parameter set. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineSign](../java/security/SignatureSpi.md))`()` <br /> Returns the signature bytes of all the data updated so far. The format of the signature depends on the underlying signature scheme. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSign](../java/security/SignatureSpi.md))`(`outbuf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Finishes this signature operation and stores the resulting signature bytes in the provided buffer`outbuf`, starting at`offset`. The format of the signature depends on the underlying signature scheme. The signature implementation is reset to its initial state (the state it was in after a call to one of the`engineInitSign`methods) and can be reused to generate further signatures with the same private key. This method should be abstract, but we leave it concrete for binary compatibility. Knowledgeable providers should override this method. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/SignatureSpi.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> Updates the data to be signed or verified using the specified byte. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/SignatureSpi.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Updates the data to be signed or verified, using the specified array of bytes, starting at the specified offset. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/SignatureSpi.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` <br /> Updates the data to be signed or verified using the specified ByteBuffer. Processes the`data.remaining()`bytes starting at at`data.position()`. Upon return, the buffer's position will be equal to its limit; its limit will not have changed. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](../java/security/SignatureSpi.md))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Verifies the passed-in signature. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](../java/security/SignatureSpi.md))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Verifies the passed-in signature in the specified array of bytes, starting at the specified offset. Note: Subclasses should overwrite the default implementation. <br /> | ||
 
 | Properties ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [state](https://developer.android.com/reference/kotlin/java/security/Signature#state:kotlin.Int) Current state of this signature object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [state](../java/security/Signature.md) Current state of this signature object. |
 
 | Inherited properties ||
 |---|---|
-| From class [SignatureSpi](https://developer.android.com/reference/kotlin/java/security/SignatureSpi) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)! | [appRandom](https://developer.android.com/reference/kotlin/java/security/SignatureSpi#appRandom:java.security.SecureRandom) <br /> Application-specified source of randomness. <br /> | ||
+| From class [SignatureSpi](../java/security/SignatureSpi.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SecureRandom](../java/security/SecureRandom.md)! | [appRandom](../java/security/SignatureSpi.md) <br /> Application-specified source of randomness. <br /> | ||
 
 ## Constants
 
@@ -149,7 +149,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected static val SIGN: Int
 ```
 
-Possible [state](https://developer.android.com/reference/kotlin/java/security/Signature#state:kotlin.Int) value, signifying that this signature object has been initialized for signing. 
+Possible [state](../java/security/Signature.md) value, signifying that this signature object has been initialized for signing. 
 
  Value: 2
 
@@ -161,7 +161,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected static val UNINITIALIZED: Int
 ```
 
-Possible [state](https://developer.android.com/reference/kotlin/java/security/Signature#state:kotlin.Int) value, signifying that this signature object has not yet been initialized. 
+Possible [state](../java/security/Signature.md) value, signifying that this signature object has not yet been initialized. 
 
  Value: 0
 
@@ -173,7 +173,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected static val VERIFY: Int
 ```
 
-Possible [state](https://developer.android.com/reference/kotlin/java/security/Signature#state:kotlin.Int) value, signifying that this signature object has been initialized for verification. 
+Possible [state](../java/security/Signature.md) value, signifying that this signature object has been initialized for verification. 
 
  Value: 3
 
@@ -240,7 +240,7 @@ Returns a Signature object that implements the specified signature algorithm.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new Signature object encapsulating the SignatureSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -248,7 +248,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------------|
-| [Signature](https://developer.android.com/reference/kotlin/java/security/Signature#)! | the new Signature object. |
+| [Signature](../java/security/Signature.md)! | the new Signature object. |
 
 | Exceptions ||
 |------------------------------------------|---------------------------------------------------------------------------------|
@@ -256,7 +256,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -273,7 +273,7 @@ Returns a Signature object that implements the specified signature algorithm.
 
 A new Signature object encapsulating the SignatureSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -282,7 +282,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------------|
-| [Signature](https://developer.android.com/reference/kotlin/java/security/Signature#)! | the new Signature object. |
+| [Signature](../java/security/Signature.md)! | the new Signature object. |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -293,7 +293,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -313,11 +313,11 @@ A new Signature object encapsulating the SignatureSpi implementation from the sp
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the algorithm requested. See the Signature section in the [Java Cryptography Architecture Standard Algorithm Name Documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#Signature) for information about standard algorithm names. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!:the provider. |
+| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------------|
-| [Signature](https://developer.android.com/reference/kotlin/java/security/Signature#)! | the new Signature object. |
+| [Signature](../java/security/Signature.md)! | the new Signature object. |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -326,7 +326,7 @@ A new Signature object encapsulating the SignatureSpi implementation from the sp
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getParameter
 
@@ -355,7 +355,7 @@ Gets the value of the specified algorithm parameter. This method supplies a gene
 
 **See Also**
 
-- [#setParameter(String, Object)](https://developer.android.com/reference/kotlin/java/security/Signature#setParameter(kotlin.String,%20kotlin.Any)) 
+- [#setParameter(String, Object)](../java/security/Signature.md)) 
 
 ### getParameters
 
@@ -371,11 +371,11 @@ The returned parameters may be the same that were used to initialize this signat
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | the parameters used with this signature, or null if this signature does not use any parameters. |
+| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the parameters used with this signature, or null if this signature does not use any parameters. |
 
 **See Also**
 
-- [#setParameter(AlgorithmParameterSpec)](https://developer.android.com/reference/kotlin/java/security/Signature#setParameter(java.security.spec.AlgorithmParameterSpec)) 
+- [#setParameter(AlgorithmParameterSpec)](../java/security/Signature.md)) 
 
 ### getProvider
 
@@ -389,7 +389,7 @@ Returns the provider of this signature object.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------|
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)! | the provider of this signature object |
+| [Provider](../java/security/Provider.md)! | the provider of this signature object |
 
 ### initSign
 
@@ -403,7 +403,7 @@ Initialize this object for signing. If this method is called again with a differ
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `privateKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!:the private key of the identity whose signature is going to be generated. |
+| `privateKey` | [PrivateKey](../java/security/PrivateKey.md)!:the private key of the identity whose signature is going to be generated. |
 
 | Exceptions ||
 |-------------------------------------|------------------------|
@@ -424,8 +424,8 @@ Initialize this object for signing. If this method is called again with a differ
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `privateKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!:the private key of the identity whose signature is going to be generated. |
-| `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!:the source of randomness for this signature. |
+| `privateKey` | [PrivateKey](../java/security/PrivateKey.md)!:the private key of the identity whose signature is going to be generated. |
+| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness for this signature. |
 
 | Exceptions ||
 |-------------------------------------|------------------------|
@@ -445,7 +445,7 @@ If the certificate is of type X.509 and has a*key usage* extension field marked 
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `certificate` | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!:the certificate of the identity whose signature is going to be verified. |
+| `certificate` | [Certificate](../java/security/cert/Certificate.md)!:the certificate of the identity whose signature is going to be verified. |
 
 | Exceptions ||
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -463,7 +463,7 @@ Initializes this object for verification. If this method is called again with a 
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `publicKey` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!:the public key of the identity whose signature is going to be verified. |
+| `publicKey` | [PublicKey](../java/security/PublicKey.md)!:the public key of the identity whose signature is going to be verified. |
 
 | Exceptions ||
 |-------------------------------------|------------------------|
@@ -481,7 +481,7 @@ fun setParameter(
 ): Unit
 ```
 
-**Deprecated:** *Use [setParameter](https://developer.android.com/reference/kotlin/java/security/Signature#setParameter(java.security.spec.AlgorithmParameterSpec)).*
+**Deprecated:** *Use [setParameter](../java/security/Signature.md)).*
 
 Sets the specified algorithm parameter to the specified value. This method supplies a general-purpose mechanism through which it is possible to set the various parameters of this object. A parameter may be any settable parameter for the algorithm, such as a parameter size, or a source of random bits for signature generation (if appropriate), or an indication of whether or not to perform a specific but optional computation. A uniform algorithm-specific naming scheme for each parameter is desirable but left unspecified at this time.
 
@@ -496,7 +496,7 @@ Sets the specified algorithm parameter to the specified value. This method suppl
 
 **See Also**
 
-- [#getParameter](https://developer.android.com/reference/kotlin/java/security/Signature#getParameter(kotlin.String)) 
+- [#getParameter](../java/security/Signature.md)) 
 
 ### setParameter
 
@@ -510,7 +510,7 @@ Initializes this signature engine with the specified parameter set.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameters |
+| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameters |
 
 | Exceptions ||
 |----------------------------------------------------|---------------------------------------------------------------------|
@@ -518,7 +518,7 @@ Initializes this signature engine with the specified parameter set.
 
 **See Also**
 
-- [#getParameters](https://developer.android.com/reference/kotlin/java/security/Signature#getParameters()) 
+- [#getParameters](../java/security/Signature.md)) 
 
 ### sign
 
@@ -658,7 +658,7 @@ Updates the data to be signed or verified using the specified ByteBuffer. Proces
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------|
-| `data` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:the ByteBuffer |
+| `data` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer |
 
 | Exceptions ||
 |------------------------------------|-------------------------------------------------------|

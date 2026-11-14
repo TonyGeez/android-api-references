@@ -4,14 +4,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # DiscoveryListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/nsd/NsdManager.DiscoveryListener "View this page in Java") 
+Kotlin| [Java](../android/net/nsd/NsdManager.DiscoveryListener.md) 
 | --- | --- |
 
 ```
 interface DiscoveryListener
 ```
 
-| [android.net.nsd.NsdManager.DiscoveryListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#) |
+| [android.net.nsd.NsdManager.DiscoveryListener](../android/net/nsd/NsdManager.DiscoveryListener.md) |
 
 Interface for callback invocation for service discovery
 
@@ -19,13 +19,13 @@ Interface for callback invocation for service discovery
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDiscoveryStarted](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onDiscoveryStarted(kotlin.String))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDiscoveryStopped](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onDiscoveryStopped(kotlin.String))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceFound](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onServiceFound(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDiscoveryStarted](../android/net/nsd/NsdManager.DiscoveryListener.md))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDiscoveryStopped](../android/net/nsd/NsdManager.DiscoveryListener.md))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceFound](../android/net/nsd/NsdManager.DiscoveryListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`)` <br /> |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceLost](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onServiceLost(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartDiscoveryFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onStartDiscoveryFailed(kotlin.String,%20kotlin.Int))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopDiscoveryFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener#onStopDiscoveryFailed(kotlin.String,%20kotlin.Int))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceLost](../android/net/nsd/NsdManager.DiscoveryListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartDiscoveryFailed](../android/net/nsd/NsdManager.DiscoveryListener.md))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopDiscoveryFailed](../android/net/nsd/NsdManager.DiscoveryListener.md))`(`serviceType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 ## Public methods

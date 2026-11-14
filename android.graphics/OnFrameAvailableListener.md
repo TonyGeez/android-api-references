@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # OnFrameAvailableListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/SurfaceTexture.OnFrameAvailableListener "View this page in Java") 
+Kotlin| [Java](../android/graphics/SurfaceTexture.OnFrameAvailableListener.md) 
 | --- | --- |
 
 ```
 interface OnFrameAvailableListener
 ```
 
-| [android.graphics.SurfaceTexture.OnFrameAvailableListener](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.OnFrameAvailableListener#) |
+| [android.graphics.SurfaceTexture.OnFrameAvailableListener](../android/graphics/SurfaceTexture.OnFrameAvailableListener.md) |
 
 Callback interface for being notified that a new stream frame is available.
 
@@ -19,7 +19,7 @@ Callback interface for being notified that a new stream frame is available.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFrameAvailable](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.OnFrameAvailableListener#onFrameAvailable(android.graphics.SurfaceTexture))`(`surfaceTexture:` ` [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFrameAvailable](../android/graphics/SurfaceTexture.OnFrameAvailableListener.md))`(`surfaceTexture:` ` [SurfaceTexture](../android/graphics/SurfaceTexture.md)!`)` <br /> |
 
 ## Public methods
 

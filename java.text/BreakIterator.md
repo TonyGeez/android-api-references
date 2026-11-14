@@ -10,7 +10,7 @@ abstract class BreakIterator : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#) |
+| ↳ | [java.text.BreakIterator](../java/text/BreakIterator.md) |
 
 The`BreakIterator`class implements methods for finding the location of boundaries in text. Instances of`BreakIterator`maintain a current position and scan over text returning the index of characters where boundaries occur. Internally,`BreakIterator`scans text using a`CharacterIterator`, and is thus able to scan text held by any object implementing that protocol. A`StringCharacterIterator`is used to scan`String`objects passed to`setText`. The`CharacterIterator`object must not be modified after having been passed to`setText`. If the text in the`CharacterIterator`object is changed, the caller must reset`BreakIterator`by calling`setText`.
 
@@ -130,43 +130,43 @@ Find the next word:
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](https://developer.android.com/reference/kotlin/java/text/BreakIterator#DONE:kotlin.Int) DONE is returned by previous(), next(), next(int), preceding(int) and following(int) when either the first or last text boundary has been reached. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](../java/text/BreakIterator.md) DONE is returned by previous(), next(), next(int), preceding(int) and following(int) when either the first or last text boundary has been reached. |
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------|---|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#BreakIterator())`()` Constructor. |
+| [BreakIterator](../java/text/BreakIterator.md))`()` Constructor. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/BreakIterator#clone())`()` Create a copy of this iterator |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [current](https://developer.android.com/reference/kotlin/java/text/BreakIterator#current())`()` Returns character index of the text boundary that was most recently returned by next(), next(int), previous(), first(), last(), following(int) or preceding(int). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [first](https://developer.android.com/reference/kotlin/java/text/BreakIterator#first())`()` Returns the first boundary. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/BreakIterator.md))`()` Create a copy of this iterator |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [current](../java/text/BreakIterator.md))`()` Returns character index of the text boundary that was most recently returned by next(), next(int), previous(), first(), last(), following(int) or preceding(int). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [first](../java/text/BreakIterator.md))`()` Returns the first boundary. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [following](https://developer.android.com/reference/kotlin/java/text/BreakIterator#following(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the first boundary following the specified character offset. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getAvailableLocales())`()` Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getCharacterInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getCharacterInstance())`()` Returns a new`BreakIterator`instance for [character breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#character) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [following](../java/text/BreakIterator.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the first boundary following the specified character offset. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../java/text/BreakIterator.md))`()` Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getCharacterInstance](../java/text/BreakIterator.md))`()` Returns a new`BreakIterator`instance for [character breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)). |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getCharacterInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getCharacterInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new`BreakIterator`instance for [character breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#character) for the given locale. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getLineInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getLineInstance())`()` Returns a new`BreakIterator`instance for [line breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#line) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()). |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getLineInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getLineInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new`BreakIterator`instance for [line breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#line) for the given locale. |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getCharacterInstance](../java/text/BreakIterator.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a new`BreakIterator`instance for [character breaks](../java/text/BreakIterator.md) for the given locale. |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getLineInstance](../java/text/BreakIterator.md))`()` Returns a new`BreakIterator`instance for [line breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)). |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getLineInstance](../java/text/BreakIterator.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a new`BreakIterator`instance for [line breaks](../java/text/BreakIterator.md) for the given locale. |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getSentenceInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getSentenceInstance())`()` Returns a new`BreakIterator`instance for [sentence breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#sentence) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()). |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getSentenceInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getSentenceInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new`BreakIterator`instance for [sentence breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#sentence) for the given locale. |
-| abstract [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator)! | [getText](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getText())`()` Get the text being scanned |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getSentenceInstance](../java/text/BreakIterator.md))`()` Returns a new`BreakIterator`instance for [sentence breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)). |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getSentenceInstance](../java/text/BreakIterator.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a new`BreakIterator`instance for [sentence breaks](../java/text/BreakIterator.md) for the given locale. |
+| abstract [CharacterIterator](../java/text/CharacterIterator.md)! | [getText](../java/text/BreakIterator.md))`()` Get the text being scanned |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getWordInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getWordInstance())`()` Returns a new`BreakIterator`instance for [word breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#word) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()). |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | [getWordInstance](https://developer.android.com/reference/kotlin/java/text/BreakIterator#getWordInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new`BreakIterator`instance for [word breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#word) for the given locale. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBoundary](https://developer.android.com/reference/kotlin/java/text/BreakIterator#isBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the specified character offset is a text boundary. |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getWordInstance](../java/text/BreakIterator.md))`()` Returns a new`BreakIterator`instance for [word breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)). |
+| openstatic [BreakIterator](../java/text/BreakIterator.md)! | [getWordInstance](../java/text/BreakIterator.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a new`BreakIterator`instance for [word breaks](../java/text/BreakIterator.md) for the given locale. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBoundary](../java/text/BreakIterator.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the specified character offset is a text boundary. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [last](https://developer.android.com/reference/kotlin/java/text/BreakIterator#last())`()` Returns the last boundary. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](https://developer.android.com/reference/kotlin/java/text/BreakIterator#next())`()` Returns the boundary following the current boundary. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](https://developer.android.com/reference/kotlin/java/text/BreakIterator#next(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the nth boundary from the current boundary. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [last](../java/text/BreakIterator.md))`()` Returns the last boundary. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](../java/text/BreakIterator.md))`()` Returns the boundary following the current boundary. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](../java/text/BreakIterator.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the nth boundary from the current boundary. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [preceding](https://developer.android.com/reference/kotlin/java/text/BreakIterator#preceding(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the last boundary preceding the specified character offset. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previous](https://developer.android.com/reference/kotlin/java/text/BreakIterator#previous())`()` Returns the boundary preceding the current boundary. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/java/text/BreakIterator#setText(kotlin.String))`(`newText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set a new text string to be scanned. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [preceding](../java/text/BreakIterator.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the last boundary preceding the specified character offset. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previous](../java/text/BreakIterator.md))`()` Returns the boundary preceding the current boundary. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../java/text/BreakIterator.md))`(`newText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set a new text string to be scanned. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/java/text/BreakIterator#setText(java.text.CharacterIterator))`(`newText:` ` [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator)!`)` Set a new text for scanning. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../java/text/BreakIterator.md))`(`newText:` ` [CharacterIterator](../java/text/CharacterIterator.md)!`)` Set a new text for scanning. |
 
 ## Constants
 
@@ -231,12 +231,12 @@ Returns character index of the text boundary that was most recently returned by 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/text/BreakIterator#next()>
-- [#next(int)](https://developer.android.com/reference/kotlin/java/text/BreakIterator#next(kotlin.Int))
+- [#next(int)](../java/text/BreakIterator.md))
 - <https://developer.android.com/reference/kotlin/java/text/BreakIterator#previous()>
 - <https://developer.android.com/reference/kotlin/java/text/BreakIterator#first()>
 - <https://developer.android.com/reference/kotlin/java/text/BreakIterator#last()>
-- [#following(int)](https://developer.android.com/reference/kotlin/java/text/BreakIterator#following(kotlin.Int))
-- [#preceding(int)](https://developer.android.com/reference/kotlin/java/text/BreakIterator#preceding(kotlin.Int)) 
+- [#following(int)](../java/text/BreakIterator.md))
+- [#preceding(int)](../java/text/BreakIterator.md)) 
 
 ### first
 
@@ -282,11 +282,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getAvailableLocales(): Array<Locale!>!
 ```
 
-Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. It must contain at least a`Locale`instance equal to [Locale.US](https://developer.android.com/reference/kotlin/java/util/Locale.html#US:java.util.Locale).
+Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. It must contain at least a`Locale`instance equal to [Locale.US](../java/util/Locale.md).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!>! | An array of locales for which localized`BreakIterator`instances are available. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!>! | An array of locales for which localized`BreakIterator`instances are available. |
 
 ### getCharacterInstance
 
@@ -296,11 +296,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getCharacterInstance(): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [character breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#character) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()).
+Returns a new`BreakIterator`instance for [character breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for character breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for character breaks |
 
 ### getCharacterInstance
 
@@ -310,15 +310,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getCharacterInstance(locale: Locale!): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [character breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#character) for the given locale.
+Returns a new`BreakIterator`instance for [character breaks](../java/text/BreakIterator.md) for the given locale.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the desired locale |
+| `locale` | [Locale](../java/util/Locale.md)!:the desired locale |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for character breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for character breaks |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -332,11 +332,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getLineInstance(): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [line breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#line) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()).
+Returns a new`BreakIterator`instance for [line breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for line breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for line breaks |
 
 ### getLineInstance
 
@@ -346,15 +346,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getLineInstance(locale: Locale!): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [line breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#line) for the given locale.
+Returns a new`BreakIterator`instance for [line breaks](../java/text/BreakIterator.md) for the given locale.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the desired locale |
+| `locale` | [Locale](../java/util/Locale.md)!:the desired locale |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for line breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for line breaks |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -368,11 +368,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getSentenceInstance(): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [sentence breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#sentence) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()).
+Returns a new`BreakIterator`instance for [sentence breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for sentence breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for sentence breaks |
 
 ### getSentenceInstance
 
@@ -382,15 +382,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getSentenceInstance(locale: Locale!): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [sentence breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#sentence) for the given locale.
+Returns a new`BreakIterator`instance for [sentence breaks](../java/text/BreakIterator.md) for the given locale.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the desired locale |
+| `locale` | [Locale](../java/util/Locale.md)!:the desired locale |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for sentence breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for sentence breaks |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -408,7 +408,7 @@ Get the text being scanned
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------------|
-| [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator)! | the text being scanned |
+| [CharacterIterator](../java/text/CharacterIterator.md)! | the text being scanned |
 
 ### getWordInstance
 
@@ -418,11 +418,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getWordInstance(): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [word breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#word) for the [default locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()).
+Returns a new`BreakIterator`instance for [word breaks](../java/text/BreakIterator.md) for the [default locale](../java/util/Locale.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for word breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for word breaks |
 
 ### getWordInstance
 
@@ -432,15 +432,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getWordInstance(locale: Locale!): BreakIterator!
 ```
 
-Returns a new`BreakIterator`instance for [word breaks](https://developer.android.com/reference/kotlin/java/text/BreakIterator#word) for the given locale.
+Returns a new`BreakIterator`instance for [word breaks](../java/text/BreakIterator.md) for the given locale.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the desired locale |
+| `locale` | [Locale](../java/util/Locale.md)!:the desired locale |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator#)! | A break iterator for word breaks |
+| [BreakIterator](../java/text/BreakIterator.md)! | A break iterator for word breaks |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -498,7 +498,7 @@ Returns the boundary following the current boundary. If the current boundary is 
 
 **See Also**
 
-- [#next(int)](https://developer.android.com/reference/kotlin/java/text/BreakIterator#next(kotlin.Int)) 
+- [#next(int)](../java/text/BreakIterator.md)) 
 
 ### next
 
@@ -580,4 +580,4 @@ Set a new text for scanning. The current scan position is reset to first().
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------|
-| `newText` | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator)!:new text to scan. |
+| `newText` | [CharacterIterator](../java/text/CharacterIterator.md)!:new text to scan. |

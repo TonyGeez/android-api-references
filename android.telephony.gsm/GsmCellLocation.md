@@ -3,7 +3,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # GsmCellLocation
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation "View this page in Java")
+Kotlin | [Java](../android/telephony/gsm/GsmCellLocation.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ open class GsmCellLocation : CellLocation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.telephony.CellLocation](https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#) ||
-| | ↳ | [android.telephony.gsm.GsmCellLocation](https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#) |
+| ↳ | [android.telephony.CellLocation](../android/telephony/CellLocation.md) ||
+| | ↳ | [android.telephony.gsm.GsmCellLocation](../android/telephony/gsm/GsmCellLocation.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -115,7 +115,7 @@ Set intent notifier Bundle based on service state
 
 | Parameters ||
 |---|---|
-| `m` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: intent notifier Bundle |
+| `m` | [Bundle](../android/os/Bundle.md)!: intent notifier Bundle |
 
 ### getCid
 

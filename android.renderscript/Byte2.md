@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Byte2
 
-Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Byte2 "View this page in Java") 
+Kotlin| [Java](../android/renderscript/Byte2.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Byte2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Byte2](https://developer.android.com/reference/kotlin/android/renderscript/Byte2#) |
+| ↳ | [android.renderscript.Byte2](../android/renderscript/Byte2.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,13 +26,13 @@ Class for exposing the native RenderScript byte2 type back to the Android system
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Byte2](https://developer.android.com/reference/kotlin/android/renderscript/Byte2#Byte2())`()` <br /> |
-| [Byte2](https://developer.android.com/reference/kotlin/android/renderscript/Byte2#Byte2(kotlin.Byte,%20kotlin.Byte))`(`initX:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initY:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
+| [Byte2](../android/renderscript/Byte2.md))`()` <br /> |
+| [Byte2](../android/renderscript/Byte2.md))`(`initX:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initY:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Byte2#x:kotlin.Byte) <br /> |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Byte2#y:kotlin.Byte) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [x](../android/renderscript/Byte2.md) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [y](../android/renderscript/Byte2.md) <br /> |
 
 ## Public constructors
 

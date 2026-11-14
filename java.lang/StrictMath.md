@@ -8,13 +8,13 @@ class StrictMath
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.StrictMath](https://developer.android.com/reference/kotlin/java/lang/StrictMath#) |
+| ↳ | [java.lang.StrictMath](../java/lang/StrictMath.md) |
 
 The class contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions.
 
 To help ensure portability of Java programs, the definitions of some of the numeric functions in this package require that they produce the same results as certain published algorithms. These algorithms are available from the well-known network library `netlib` as the package "Freely Distributable Math Library," [`fdlibm`](https://www.netlib.org/fdlibm/). These algorithms, which are written in the C programming language, are then to be understood to be transliterated into Java and executed with all floating-point and integer operations following the rules of Java arithmetic. The following transformations are used in the transliteration:
 
-- Extraction and setting of the high and low halves of a 64-bit `double` in C is expressed using Java platform methods that perform bit-wise conversions [from](https://developer.android.com/reference/kotlin/java/lang/Double#doubleToRawLongBits(kotlin.Double)) and [{](https://developer.android.com/reference/kotlin/java/lang/Double#longBitsToDouble(kotlin.Long)).
+- Extraction and setting of the high and low halves of a 64-bit `double` in C is expressed using Java platform methods that perform bit-wise conversions [from](../java/lang/Double.md)) and [{](../java/lang/Double.md)).
 - Unsigned `int` values in C are mapped to signed `int` values in Java with updates to operations to replicate unsigned semantics where the results on the same textual operation would differ. For example, `>>` shifts on unsigned C values are replaced with `>>>` shifts on signed Java values. Sized comparisons on unsigned C values (`<`, `<=`, `>`, `>=`) are replaced with semantically equivalent calls to `https://developer.android.com/reference/kotlin/java/lang/Integer#compareUnsigned(kotlin.Int,%20kotlin.Int)`.
 
 The Java math library is defined with respect to `fdlibm` version 5.3. Where `fdlibm` provides more than one definition for a function (such as `acos`), use the "IEEE 754 core function" version (residing in a file whose name begins with the letter `e`). The methods which require `fdlibm` semantics are `sin`, `cos`, `tan`, `asin`, `acos`, `atan`, `exp`, `log`, `log10`, `cbrt`, `atan2`, `pow`, `sinh`, `cosh`, `tanh`, `hypot`, `expm1`, and `log1p`.
@@ -23,7 +23,7 @@ The platform uses signed two's complement integer arithmetic with int and long p
 
 ## IEEE 754 Recommended Operations
 
-The `https://developer.android.com/reference/kotlin/java/lang/Math` class discusses how the shared quality of implementation criteria for selected `Math` and `StrictMath` methods [relate to the IEEE 754 recommended operations](https://developer.android.com/reference/kotlin/java/lang/Math#Ieee754RecommendedOps).
+The `https://developer.android.com/reference/kotlin/java/lang/Math` class discusses how the shared quality of implementation criteria for selected `Math` and `StrictMath` methods [relate to the IEEE 754 recommended operations](../java/lang/Math.md).
 
 ## Summary
 
@@ -626,7 +626,7 @@ static fun ceilDiv(
 ): Int
 ```
 
-Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Integer.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Integer.MIN_VALUE`.
+Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Integer.MIN_VALUE](../java/lang/Integer.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Integer.MIN_VALUE`.
 
 See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
 
@@ -659,7 +659,7 @@ static fun ceilDiv(
 ): Long
 ```
 
-Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
+Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](../java/lang/Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
 See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
 
@@ -692,7 +692,7 @@ static fun ceilDiv(
 ): Long
 ```
 
-Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
+Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](../java/lang/Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
 See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
 
@@ -725,7 +725,7 @@ static fun ceilDivExact(
 ): Int
 ```
 
-Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Int,%20kotlin.Int)` except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
+Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Int,%20kotlin.Int)` except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](../java/lang/Integer.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
 
 The ceil modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilMod(kotlin.Int,%20kotlin.Int)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Int,%20kotlin.Int)` method.
 
@@ -759,7 +759,7 @@ static fun ceilDivExact(
 ): Long
 ```
 
-Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Long)` except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
+Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Long)` except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](../java/lang/Long.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
 
 The ceil modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilMod(kotlin.Long,%20kotlin.Long)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Long)` method.
 
@@ -1097,7 +1097,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun cosh(x: Double): Double
 ```
 
-Returns the hyperbolic cosine of a `double` value. The hyperbolic cosine of *x* is defined to be (*ex + e−x* )/2 where *e* is [Euler's number](https://developer.android.com/reference/kotlin/java/lang/Math#E:kotlin.Double).
+Returns the hyperbolic cosine of a `double` value. The hyperbolic cosine of *x* is defined to be (*ex + e−x* )/2 where *e* is [Euler's number](../java/lang/Math.md).
 
 Special cases:
 
@@ -1121,7 +1121,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun decrementExact(a: Int): Int
 ```
 
-Returns the argument decremented by one, throwing an exception if the result overflows an `int`. The overflow only occurs for [the minimum value](https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int).
+Returns the argument decremented by one, throwing an exception if the result overflows an `int`. The overflow only occurs for [the minimum value](../java/lang/Integer.md).
 
 | Parameters ||
 |---|---|
@@ -1147,7 +1147,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun decrementExact(a: Long): Long
 ```
 
-Returns the argument decremented by one, throwing an exception if the result overflows a `long`. The overflow only occurs for [the minimum value](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long).
+Returns the argument decremented by one, throwing an exception if the result overflows a `long`. The overflow only occurs for [the minimum value](../java/lang/Long.md).
 
 | Parameters ||
 |---|---|
@@ -1317,7 +1317,7 @@ static fun floorDiv(
 ): Int
 ```
 
-Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Integer.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Integer.MIN_VALUE`.
+Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Integer.MIN_VALUE](../java/lang/Integer.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Integer.MIN_VALUE`.
 
 See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
 
@@ -1350,7 +1350,7 @@ static fun floorDiv(
 ): Long
 ```
 
-Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
+Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](../java/lang/Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
 See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
 
@@ -1383,7 +1383,7 @@ static fun floorDiv(
 ): Long
 ```
 
-Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
+Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](../java/lang/Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
 See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
 
@@ -1416,7 +1416,7 @@ static fun floorDivExact(
 ): Int
 ```
 
-Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Int,%20kotlin.Int)` except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
+Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Int,%20kotlin.Int)` except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](../java/lang/Integer.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
 
 The floor modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorMod(kotlin.Int,%20kotlin.Int)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Int,%20kotlin.Int)` method.
 
@@ -1450,7 +1450,7 @@ static fun floorDivExact(
 ): Long
 ```
 
-Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Long)` except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
+Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Long)` except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](../java/lang/Long.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
 
 The floor modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorMod(kotlin.Long,%20kotlin.Long)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Long)` method.
 
@@ -1603,7 +1603,7 @@ static fun fma(
 ): Double
 ```
 
-Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `double`. The rounding is done using the [round to nearest even](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). In contrast, if `a * b + c` is evaluated as a regular floating-point expression, two rounding errors are involved, the first for the multiply operation, the second for the addition operation.
+Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `double`. The rounding is done using the [round to nearest even](../java/math/RoundingMode.md). In contrast, if `a * b + c` is evaluated as a regular floating-point expression, two rounding errors are involved, the first for the multiply operation, the second for the addition operation.
 
 Special cases:
 
@@ -1636,7 +1636,7 @@ static fun fma(
 ): Float
 ```
 
-Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `float`. The rounding is done using the [round to nearest even](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). In contrast, if `a * b + c` is evaluated as a regular floating-point expression, two rounding errors are involved, the first for the multiply operation, the second for the addition operation.
+Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `float`. The rounding is done using the [round to nearest even](../java/math/RoundingMode.md). In contrast, if `a * b + c` is evaluated as a regular floating-point expression, two rounding errors are involved, the first for the multiply operation, the second for the addition operation.
 
 Special cases:
 
@@ -1739,7 +1739,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun incrementExact(a: Int): Int
 ```
 
-Returns the argument incremented by one, throwing an exception if the result overflows an `int`. The overflow only occurs for [the maximum value](https://developer.android.com/reference/kotlin/java/lang/Integer#MAX_VALUE:kotlin.Int).
+Returns the argument incremented by one, throwing an exception if the result overflows an `int`. The overflow only occurs for [the maximum value](../java/lang/Integer.md).
 
 | Parameters ||
 |---|---|
@@ -1765,7 +1765,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun incrementExact(a: Long): Long
 ```
 
-Returns the argument incremented by one, throwing an exception if the result overflows a `long`. The overflow only occurs for [the maximum value](https://developer.android.com/reference/kotlin/java/lang/Long#MAX_VALUE:kotlin.Long).
+Returns the argument incremented by one, throwing an exception if the result overflows a `long`. The overflow only occurs for [the maximum value](../java/lang/Long.md).
 
 | Parameters ||
 |---|---|
@@ -2185,7 +2185,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun negateExact(a: Int): Int
 ```
 
-Returns the negation of the argument, throwing an exception if the result overflows an `int`. The overflow only occurs for [the minimum value](https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int).
+Returns the negation of the argument, throwing an exception if the result overflows an `int`. The overflow only occurs for [the minimum value](../java/lang/Integer.md).
 
 | Parameters ||
 |---|---|
@@ -2211,7 +2211,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun negateExact(a: Long): Long
 ```
 
-Returns the negation of the argument, throwing an exception if the result overflows a `long`. The overflow only occurs for [the minimum value](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long).
+Returns the negation of the argument, throwing an exception if the result overflows a `long`. The overflow only occurs for [the minimum value](../java/lang/Long.md).
 
 | Parameters ||
 |---|---|
@@ -2743,7 +2743,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun sinh(x: Double): Double
 ```
 
-Returns the hyperbolic sine of a `double` value. The hyperbolic sine of *x* is defined to be (*ex − e−x* )/2 where *e* is [Euler's number](https://developer.android.com/reference/kotlin/java/lang/Math#E:kotlin.Double).
+Returns the hyperbolic sine of a `double` value. The hyperbolic sine of *x* is defined to be (*ex − e−x* )/2 where *e* is [Euler's number](../java/lang/Math.md).
 
 Special cases:
 
@@ -2876,7 +2876,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun tanh(x: Double): Double
 ```
 
-Returns the hyperbolic tangent of a `double` value. The hyperbolic tangent of *x* is defined to be (*ex − e−x* )/(*ex + e−x* ), in other words, [sinh(*x*)](https://developer.android.com/reference/kotlin/java/lang/Math#sinh(kotlin.Double))/ [cosh(*x*)](https://developer.android.com/reference/kotlin/java/lang/Math#cosh(kotlin.Double)). Note that the absolute value of the exact tanh is always less than 1.
+Returns the hyperbolic tangent of a `double` value. The hyperbolic tangent of *x* is defined to be (*ex − e−x* )/(*ex + e−x* ), in other words, [sinh(*x*)](../java/lang/Math.md))/ [cosh(*x*)](../java/lang/Math.md)). Note that the absolute value of the exact tanh is always less than 1.
 
 Special cases:
 

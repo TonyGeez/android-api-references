@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Credential
 
-Kotlin | [Java](https://developer.android.com/reference/android/credentials/Credential "View this page in Java")
+Kotlin | [Java](../android/credentials/Credential.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class Credential : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.Credential](https://developer.android.com/reference/kotlin/android/credentials/Credential#) |
+| ↳ | [android.credentials.Credential](../android/credentials/Credential.md) |
 
 Represents a user credential that can be used to authenticate to your app.
 
@@ -32,7 +32,7 @@ Represents a user credential that can be used to authenticate to your app.
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/Credential#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/credentials/Credential#getData()()` Returns the credential data. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/credentials/Credential#getData()()` Returns the credential data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/Credential#getType()()` Returns the credential type. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/Credential#toString()()` Returns a string representation of the object. |
@@ -40,7 +40,7 @@ Represents a user credential that can be used to authenticate to your app.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Credential](https://developer.android.com/reference/kotlin/android/credentials/Credential#)!\> | `https://developer.android.com/reference/kotlin/android/credentials/Credential#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Credential](../android/credentials/Credential.md)!\> | `https://developer.android.com/reference/kotlin/android/credentials/Credential#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -73,7 +73,7 @@ Constructs a `https://developer.android.com/reference/kotlin/android/credentials
 | Parameters ||
 |---|---|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the type of the credential returned. This value cannot be `null`. |
-| `data` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the data associated with the credential returned. This value cannot be `null`. |
+| `data` | [Bundle](../android/os/Bundle.md): the data associated with the credential returned. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -152,7 +152,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

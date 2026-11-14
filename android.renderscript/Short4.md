@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Short4
 
-Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Short4 "View this page in Java") 
+Kotlin| [Java](../android/renderscript/Short4.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Short4
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Short4](https://developer.android.com/reference/kotlin/android/renderscript/Short4#) |
+| ↳ | [android.renderscript.Short4](../android/renderscript/Short4.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,16 +26,16 @@ Vector version of the basic short type. Provides four short fields packed.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Short4](https://developer.android.com/reference/kotlin/android/renderscript/Short4#Short4())`()` <br /> |
-| [Short4](https://developer.android.com/reference/kotlin/android/renderscript/Short4#Short4(kotlin.Short,%20kotlin.Short,%20kotlin.Short,%20kotlin.Short))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `z:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `w:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
+| [Short4](../android/renderscript/Short4.md))`()` <br /> |
+| [Short4](../android/renderscript/Short4.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `z:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `w:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [w](https://developer.android.com/reference/kotlin/android/renderscript/Short4#w:kotlin.Short) <br /> |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Short4#x:kotlin.Short) <br /> |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Short4#y:kotlin.Short) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [w](../android/renderscript/Short4.md) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [x](../android/renderscript/Short4.md) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [y](../android/renderscript/Short4.md) <br /> |
 | --- | --- |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Short4#z:kotlin.Short) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [z](../android/renderscript/Short4.md) <br /> |
 
 ## Public constructors
 

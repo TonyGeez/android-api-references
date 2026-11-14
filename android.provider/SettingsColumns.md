@@ -5,21 +5,21 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 
 # SettingsColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.SettingsColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/Contacts.SettingsColumns.md) 
 | --- | --- |
 
 ```
 interface SettingsColumns
 ```
 
-| [android.provider.Contacts.SettingsColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.SettingsColumns#) |
+| [android.provider.Contacts.SettingsColumns](../android/provider/Contacts.SettingsColumns.md) |
 
-| Known Direct Subclasses [Contacts.Settings](https://developer.android.com/reference/kotlin/android/provider/Contacts.Settings) |--------------------------------------------------------------------------------------------------------|-------------------------------------| | [Contacts.Settings](https://developer.android.com/reference/kotlin/android/provider/Contacts.Settings) | The settings over all of the people | |
+| Known Direct Subclasses [Contacts.Settings](../android/provider/Contacts.Settings.md) |--------------------------------------------------------------------------------------------------------|-------------------------------------| | [Contacts.Settings](../android/provider/Contacts.Settings.md) | The settings over all of the people | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)
+| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
 
 Columns from the Settings table that other columns join into themselves.
 
@@ -27,11 +27,11 @@ Columns from the Settings table that other columns join into themselves.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY](https://developer.android.com/reference/kotlin/android/provider/Contacts.SettingsColumns#KEY:kotlin.String) The key of this setting. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VALUE](https://developer.android.com/reference/kotlin/android/provider/Contacts.SettingsColumns#VALUE:kotlin.String) The value of this setting. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_SYNC_ACCOUNT](https://developer.android.com/reference/kotlin/android/provider/Contacts.SettingsColumns#_SYNC_ACCOUNT:kotlin.String) The _SYNC_ACCOUNT to which this setting corresponds. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY](../android/provider/Contacts.SettingsColumns.md) The key of this setting. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VALUE](../android/provider/Contacts.SettingsColumns.md) The value of this setting. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_SYNC_ACCOUNT](../android/provider/Contacts.SettingsColumns.md) The _SYNC_ACCOUNT to which this setting corresponds. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_SYNC_ACCOUNT_TYPE](https://developer.android.com/reference/kotlin/android/provider/Contacts.SettingsColumns#_SYNC_ACCOUNT_TYPE:kotlin.String) The _SYNC_ACCOUNT_TYPE to which this setting corresponds. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_SYNC_ACCOUNT_TYPE](../android/provider/Contacts.SettingsColumns.md) The _SYNC_ACCOUNT_TYPE to which this setting corresponds. |
 
 ## Constants
 
@@ -43,7 +43,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KEY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The key of this setting.
 
@@ -59,7 +59,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val VALUE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The value of this setting.
 
@@ -75,7 +75,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val _SYNC_ACCOUNT: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The _SYNC_ACCOUNT to which this setting corresponds. This may be null.
 
@@ -92,7 +92,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 static val _SYNC_ACCOUNT_TYPE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The _SYNC_ACCOUNT_TYPE to which this setting corresponds. This may be null.
 

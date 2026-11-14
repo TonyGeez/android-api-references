@@ -8,7 +8,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface StatementEventListener : EventListener
 ```
 
-| [javax.sql.StatementEventListener](https://developer.android.com/reference/kotlin/javax/sql/StatementEventListener#) |
+| [javax.sql.StatementEventListener](../javax/sql/StatementEventListener.md) |
 
 An object that registers to be notified of events that occur on PreparedStatements that are in the Statement pool.
 
@@ -24,8 +24,8 @@ Methods which allow a component to register a StatementEventListener with a`Pool
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [statementClosed](https://developer.android.com/reference/kotlin/javax/sql/StatementEventListener#statementClosed(javax.sql.StatementEvent))`(`event:` ` [StatementEvent](https://developer.android.com/reference/kotlin/javax/sql/StatementEvent)!`)` The driver calls this method on all`StatementEventListener`s registered on the connection when it detects that a`PreparedStatement`is closed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [statementErrorOccurred](https://developer.android.com/reference/kotlin/javax/sql/StatementEventListener#statementErrorOccurred(javax.sql.StatementEvent))`(`event:` ` [StatementEvent](https://developer.android.com/reference/kotlin/javax/sql/StatementEvent)!`)` The driver calls this method on all`StatementEventListener`s registered on the connection when it detects that a`PreparedStatement`is invalid. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [statementClosed](../javax/sql/StatementEventListener.md))`(`event:` ` [StatementEvent](../javax/sql/StatementEvent.md)!`)` The driver calls this method on all`StatementEventListener`s registered on the connection when it detects that a`PreparedStatement`is closed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [statementErrorOccurred](../javax/sql/StatementEventListener.md))`(`event:` ` [StatementEvent](../javax/sql/StatementEvent.md)!`)` The driver calls this method on all`StatementEventListener`s registered on the connection when it detects that a`PreparedStatement`is invalid. |
 
 ## Public methods
 
@@ -41,7 +41,7 @@ The driver calls this method on all`StatementEventListener`s registered on the c
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [StatementEvent](https://developer.android.com/reference/kotlin/javax/sql/StatementEvent)!:an event object describing the source of the event and that the`PreparedStatement`was closed. |
+| `event` | [StatementEvent](../javax/sql/StatementEvent.md)!:an event object describing the source of the event and that the`PreparedStatement`was closed. |
 
 ### statementErrorOccurred
 
@@ -57,4 +57,4 @@ The driver calls this method on all`StatementEventListener`s registered on the c
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [StatementEvent](https://developer.android.com/reference/kotlin/javax/sql/StatementEvent)!:an event object describing the source of the event, the statement that is invalid and the exception the driver is about to throw. The source of the event is the`PooledConnection`which the invalid`PreparedStatement`is associated with. <br /> |
+| `event` | [StatementEvent](../javax/sql/StatementEvent.md)!:an event object describing the source of the event, the statement that is invalid and the exception the driver is about to throw. The source of the event is the`PooledConnection`which the invalid`PreparedStatement`is associated with. <br /> |

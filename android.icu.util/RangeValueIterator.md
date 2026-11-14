@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # RangeValueIterator
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/util/RangeValueIterator "View this page in Java") 
+Kotlin | [Java](../android/icu/util/RangeValueIterator.md) 
 | --- | --- |
 
 ```
 interface RangeValueIterator
 ```
 
-| [android.icu.util.RangeValueIterator](https://developer.android.com/reference/kotlin/android/icu/util/RangeValueIterator#) |
+| [android.icu.util.RangeValueIterator](../android/icu/util/RangeValueIterator.md) |
 
 Interface for enabling iteration over sets of \<int index, int value\>, where index is the sorted integer index in ascending order and value, its associated integer value.
 
@@ -44,12 +44,12 @@ RangeValueIterator iterator = UCharacter.getTypeIterator();
 
 | Nested classes ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Element](https://developer.android.com/reference/kotlin/android/icu/util/RangeValueIterator.Element) Return result wrapper for android. |
+| open | [Element](../android/icu/util/RangeValueIterator.Element.md) Return result wrapper for android. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](https://developer.android.com/reference/kotlin/android/icu/util/RangeValueIterator#next(android.icu.util.RangeValueIterator.Element))`(`element:` ` [RangeValueIterator.Element](https://developer.android.com/reference/kotlin/android/icu/util/RangeValueIterator.Element)!`)` Returns the next maximal result range with a common value and returns true if we are not at the end of the iteration, false otherwise. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/util/RangeValueIterator#reset())`()` Resets the iterator to the beginning of the iteration. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](../android/icu/util/RangeValueIterator.md))`(`element:` ` [RangeValueIterator.Element](../android/icu/util/RangeValueIterator.Element.md)!`)` Returns the next maximal result range with a common value and returns true if we are not at the end of the iteration, false otherwise. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/util/RangeValueIterator.md))`()` Resets the iterator to the beginning of the iteration. |
 
 ## Public methods
 
@@ -67,7 +67,7 @@ If this returns a false, the contents of elements will not be updated.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `element` | [RangeValueIterator.Element](https://developer.android.com/reference/kotlin/android/icu/util/RangeValueIterator.Element)!: for storing the result range and value |
+| `element` | [RangeValueIterator.Element](../android/icu/util/RangeValueIterator.Element.md)!: for storing the result range and value |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -75,7 +75,7 @@ If this returns a false, the contents of elements will not be updated.
 
 **See Also**
 
-- [android.icu.util.RangeValueIterator.Element](https://developer.android.com/reference/kotlin/android/icu/util/RangeValueIterator.Element) 
+- [android.icu.util.RangeValueIterator.Element](../android/icu/util/RangeValueIterator.Element.md) 
 
 ### reset
 

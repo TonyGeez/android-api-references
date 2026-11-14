@@ -4,23 +4,23 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # EntityIterator
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/EntityIterator "View this page in Java") 
+Kotlin| [Java](../android/content/EntityIterator.md) 
 | --- | --- |
 
 ```
 interface EntityIterator : MutableIterator<Entity!>
 ```
 
-| [android.content.EntityIterator](https://developer.android.com/reference/kotlin/android/content/EntityIterator#) |
+| [android.content.EntityIterator](../android/content/EntityIterator.md) |
 
-A specialization of [Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator.html#) that allows iterating over a collection of [Entity](https://developer.android.com/reference/kotlin/android/content/Entity) objects. In addition to the iteration functionality it also allows resetting the iterator back to the beginning and provides for an explicit [close()](https://developer.android.com/reference/kotlin/android/content/EntityIterator#close())method to indicate that the iterator is no longer needed and that its resources can be released.
+A specialization of [Iterator](../java/util/Iterator.md) that allows iterating over a collection of [Entity](../android/content/Entity.md) objects. In addition to the iteration functionality it also allows resetting the iterator back to the beginning and provides for an explicit [close()](../android/content/EntityIterator.md))method to indicate that the iterator is no longer needed and that its resources can be released.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/content/EntityIterator#close())`()` Indicates that this iterator is no longer needed and that any associated resources may be released (such as a SQLite cursor). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/content/EntityIterator#reset())`()` Reset the iterator back to the beginning. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/content/EntityIterator.md))`()` Indicates that this iterator is no longer needed and that any associated resources may be released (such as a SQLite cursor). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/content/EntityIterator.md))`()` Reset the iterator back to the beginning. |
 
 ## Public methods
 

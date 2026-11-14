@@ -8,17 +8,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface URLStreamHandlerFactory
 ```
 
-| [java.net.URLStreamHandlerFactory](https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory#) |
+| [java.net.URLStreamHandlerFactory](../java/net/URLStreamHandlerFactory.md) |
 
 This interface defines a factory for`URL`stream protocol handlers.
 
-A URL stream handler factory is used as specified in the [URL constructor](https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)).
+A URL stream handler factory is used as specified in the [URL constructor](../java/net/URL.md)).
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [URLStreamHandler](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler)! | [createURLStreamHandler](https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory#createURLStreamHandler(kotlin.String))`(`protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`URLStreamHandler`instance with the specified protocol. |
+| abstract [URLStreamHandler](../java/net/URLStreamHandler.md)! | [createURLStreamHandler](../java/net/URLStreamHandlerFactory.md))`(`protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`URLStreamHandler`instance with the specified protocol. |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ Creates a new`URLStreamHandler`instance with the specified protocol.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [URLStreamHandler](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler)! | a`URLStreamHandler`for the specific protocol, or`null`if this factory cannot create a handler for the specific protocol |
+| [URLStreamHandler](../java/net/URLStreamHandler.md)! | a`URLStreamHandler`for the specific protocol, or`null`if this factory cannot create a handler for the specific protocol |
 
 **See Also**
 
-- [java.net.URLStreamHandler](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler)
+- [java.net.URLStreamHandler](../java/net/URLStreamHandler.md)

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Paint
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/Paint "View this page in Java")
+Kotlin | [Java](../android/graphics/Paint.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class Paint
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint#) |
+| ↳ | [android.graphics.Paint](../android/graphics/Paint.md) |
 
-| Known Direct Subclasses [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#) |---|---| | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#) | TextPaint is an extension of Paint that leaves room for some extra data used during text measuring and drawing. | |
+| Known Direct Subclasses [TextPaint](../android/text/TextPaint.md) |---|---| | [TextPaint](../android/text/TextPaint.md) | TextPaint is an extension of Paint that leaves room for some extra data used during text measuring and drawing. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The Paint class holds the style and color information about how to draw geometries, text and bitmaps.
@@ -92,10 +92,10 @@ The Paint class holds the style and color information about how to draw geometri
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#equalsForTextMeasurement(android.graphics.Paint)(other: https://developer.android.com/reference/kotlin/android/graphics/Paint#)` Returns true of the passed `https://developer.android.com/reference/kotlin/android/graphics/Paint#` will have the same effect on text measurement |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getAlpha()()` Helper to getColor() that just returns the color's alpha value. |
-| open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode)? | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getBlendMode()()` Get the paint's blend mode object. |
+| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getBlendMode()()` Get the paint's blend mode object. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getColor()()` Return the paint's color in sRGB. |
-| open [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getColorFilter()()` Get the paint's colorfilter (maybe be null). |
+| open [ColorFilter](../android/graphics/ColorFilter.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getColorFilter()()` Get the paint's colorfilter (maybe be null). |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getColorLong()()` Return the paint's color. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getEndHyphenEdit()()` Get the current value of end hyphen edit. |
@@ -103,11 +103,11 @@ The Paint class holds the style and color information about how to draw geometri
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFlags()()` Return the paint's flags. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontFeatureSettings()()` Returns the font feature settings. |
-| open [Paint.FontMetrics](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetrics()()` Allocates a new FontMetrics object, and then calls getFontMetrics(fm) with it, returning the object. |
+| open [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetrics()()` Allocates a new FontMetrics object, and then calls getFontMetrics(fm) with it, returning the object. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetrics(android.graphics.Paint.FontMetrics)(metrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics!)` Return the font's recommended interline spacing, given the Paint's settings for typeface, textSize, etc. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetricsForLocale(android.graphics.Paint.FontMetrics)(metrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics)` Get the font metrics used for the locale Obtain the metrics of the font that is used for the specified locale by `https://developer.android.com/reference/kotlin/android/graphics/Paint#setTextLocales(android.os.LocaleList)`. |
-| open [Paint.FontMetricsInt](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetricsInt()()` <br /> |
+| open [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetricsInt()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetricsInt(android.graphics.Paint.FontMetricsInt)(fmi: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt!)` Return the font's interline spacing, given the Paint's settings for typeface, textSize, etc. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getFontMetricsInt(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.graphics.Paint.FontMetricsInt)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, outMetrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt)` Returns the font metrics value for the given text. |
@@ -120,18 +120,18 @@ The Paint class holds the style and color information about how to draw geometri
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getHinting()()` Return the paint's hinting mode. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getLetterSpacing()()` Return the paint's letter-spacing for text. |
-| open [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getMaskFilter()()` Get the paint's maskfilter object. |
+| open [MaskFilter](../android/graphics/MaskFilter.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getMaskFilter()()` Get the paint's maskfilter object. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getOffsetForAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, advance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Get the character offset within the string whose position is closest to the specified horizontal position. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getOffsetForAdvance(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, advance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
-| open [PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getPathEffect()()` Get the paint's patheffect object. |
+| open [PathEffect](../android/graphics/PathEffect.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getPathEffect()()` Get the paint's patheffect object. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getRunAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure cursor position within a run of text. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getRunAdvance(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getRunCharacterAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, advances: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, advancesIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the advance of each character within a run of text and also return the cursor position within the run. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getRunCharacterAdvance(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, advances: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, advancesIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| open [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getShader()()` Get the paint's shader object. |
+| open [Shader](../android/graphics/Shader.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getShader()()` Get the paint's shader object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getShadowLayerColor()()` Returns the color of the shadow layer. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getShadowLayerColorLong()()` Returns the color of the shadow layer. |
@@ -143,20 +143,20 @@ The Paint class holds the style and color information about how to draw geometri
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrikeThruPosition()()` Distance from top of the strike-through line to the baseline in pixels. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrikeThruThickness()()` Returns the thickness of the strike-through line in pixels. |
-| open [Paint.Cap](https://developer.android.com/reference/kotlin/android/graphics/Paint.Cap)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrokeCap()()` Return the paint's Cap, controlling how the start and end of stroked lines and paths are treated. |
-| open [Paint.Join](https://developer.android.com/reference/kotlin/android/graphics/Paint.Join)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrokeJoin()()` Return the paint's stroke join type. |
+| open [Paint.Cap](../android/graphics/Paint.Cap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrokeCap()()` Return the paint's Cap, controlling how the start and end of stroked lines and paths are treated. |
+| open [Paint.Join](../android/graphics/Paint.Join.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrokeJoin()()` Return the paint's stroke join type. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrokeMiter()()` Return the paint's stroke miter value. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStrokeWidth()()` Return the width for stroking. |
-| open [Paint.Style](https://developer.android.com/reference/kotlin/android/graphics/Paint.Style)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStyle()()` Return the paint's style, used for controlling how primitives' geometries are interpreted (except for drawBitmap, which always assumes FILL_STYLE). |
+| open [Paint.Style](../android/graphics/Paint.Style.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getStyle()()` Return the paint's style, used for controlling how primitives' geometries are interpreted (except for drawBitmap, which always assumes FILL_STYLE). |
 | --- | --- |
-| open [Paint.Align](https://developer.android.com/reference/kotlin/android/graphics/Paint.Align)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextAlign()()` Return the paint's Align value for drawing text. |
+| open [Paint.Align](../android/graphics/Paint.Align.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextAlign()()` Return the paint's Align value for drawing text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextBounds(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect!)` Return in bounds (allocated by the caller) the smallest rectangle that encloses all of the characters, with an implied origin at (0,0). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextBounds(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect)` Retrieve the text boundary box and store to bounds. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextBounds(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect!)` Retrieve the text boundary box and store to bounds. |
-| open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextLocale()()` Get the text's primary Locale. |
-| open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextLocales()()` Get the text locale list. |
+| open [Locale](../java/util/Locale.md) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextLocale()()` Get the text's primary Locale. |
+| open [LocaleList](../android/os/LocaleList.md) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextLocales()()` Get the text locale list. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextPath(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, path: https://developer.android.com/reference/kotlin/android/graphics/Path!)` Return the path (outline) for the specified text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextPath(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, path: https://developer.android.com/reference/kotlin/android/graphics/Path!)` Return the path (outline) for the specified text. |
@@ -174,12 +174,12 @@ The Paint class holds the style and color information about how to draw geometri
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextWidths(kotlin.String,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, widths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Return the advance widths for the characters in the string. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTextWidths(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Return the advance widths for the characters in the string. |
 | --- | --- |
-| open [Typeface](https://developer.android.com/reference/kotlin/android/graphics/Typeface)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTypeface()()` Get the paint's typeface object. |
+| open [Typeface](../android/graphics/Typeface.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getTypeface()()` Get the paint's typeface object. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getUnderlinePosition()()` Returns the distance from top of the underline to the baseline in pixels. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getUnderlineThickness()()` Returns the thickness of the underline in pixels. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getWordSpacing()()` Return the paint's extra word-spacing for text. |
-| open [Xfermode](https://developer.android.com/reference/kotlin/android/graphics/Xfermode)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getXfermode()()` Get the paint's transfer mode object. |
+| open [Xfermode](../android/graphics/Xfermode.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#getXfermode()()` Get the paint's transfer mode object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#hasGlyph(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Determine whether the typeface set on the paint has a glyph supporting the string. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#isAntiAlias()()` Helper for getFlags(), returning true if ANTI_ALIAS_FLAG bit is set AntiAliasing smooths out the edges of what is being drawn, but is has no impact on the interior of the shape. |
@@ -210,7 +210,7 @@ The Paint class holds the style and color information about how to draw geometri
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the paint's color. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setColor(kotlin.Long)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Set the paint's color with a `ColorLong`. |
 | --- | --- |
-| open [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setColorFilter(android.graphics.ColorFilter)(filter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter!)` Set or clear the paint's colorfilter, returning the parameter. |
+| open [ColorFilter](../android/graphics/ColorFilter.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setColorFilter(android.graphics.ColorFilter)(filter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter!)` Set or clear the paint's colorfilter, returning the parameter. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setDither(kotlin.Boolean)(dither: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Helper for setFlags(), setting or clearing the DITHER_FLAG bit Dithering affects how colors that are higher precision than the device are down-sampled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setElegantTextHeight(kotlin.Boolean)(elegant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the paint's elegant height metrics flag. |
 | --- | --- |
@@ -227,10 +227,10 @@ The Paint class holds the style and color information about how to draw geometri
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setLetterSpacing(kotlin.Float)(letterSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the paint's letter-spacing for text. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setLinearText(kotlin.Boolean)(linearText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Helper for setFlags(), setting or clearing the LINEAR_TEXT_FLAG bit |
-| open [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setMaskFilter(android.graphics.MaskFilter)(maskfilter: https://developer.android.com/reference/kotlin/android/graphics/MaskFilter!)` Set or clear the maskfilter object. |
-| open [PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setPathEffect(android.graphics.PathEffect)(effect: https://developer.android.com/reference/kotlin/android/graphics/PathEffect!)` Set or clear the patheffect object. |
+| open [MaskFilter](../android/graphics/MaskFilter.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setMaskFilter(android.graphics.MaskFilter)(maskfilter: https://developer.android.com/reference/kotlin/android/graphics/MaskFilter!)` Set or clear the maskfilter object. |
+| open [PathEffect](../android/graphics/PathEffect.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setPathEffect(android.graphics.PathEffect)(effect: https://developer.android.com/reference/kotlin/android/graphics/PathEffect!)` Set or clear the patheffect object. |
 | --- | --- |
-| open [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setShader(android.graphics.Shader)(shader: https://developer.android.com/reference/kotlin/android/graphics/Shader!)` Set or clear the shader object. |
+| open [Shader](../android/graphics/Shader.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setShader(android.graphics.Shader)(shader: https://developer.android.com/reference/kotlin/android/graphics/Shader!)` Set or clear the shader object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setShadowLayer(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)(radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, shadowColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This draws a shadow layer below the main layer, with the specified offset and color, and blur radius. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setShadowLayer(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Long)(radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, shadowColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` This draws a shadow layer below the main layer, with the specified offset and color, and blur radius. |
 | --- | --- |
@@ -252,11 +252,11 @@ The Paint class holds the style and color information about how to draw geometri
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setTextSize(kotlin.Float)(textSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the paint's text size. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setTextSkewX(kotlin.Float)(skewX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the paint's horizontal skew factor for text. |
-| open [Typeface](https://developer.android.com/reference/kotlin/android/graphics/Typeface)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setTypeface(android.graphics.Typeface)(typeface: https://developer.android.com/reference/kotlin/android/graphics/Typeface!)` Set or clear the typeface object. |
+| open [Typeface](../android/graphics/Typeface.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setTypeface(android.graphics.Typeface)(typeface: https://developer.android.com/reference/kotlin/android/graphics/Typeface!)` Set or clear the typeface object. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setUnderlineText(kotlin.Boolean)(underlineText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Helper for setFlags(), setting or clearing the UNDERLINE_TEXT_FLAG bit |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setWordSpacing(kotlin.Float)(wordSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the paint's extra word-spacing for text. |
-| open [Xfermode](https://developer.android.com/reference/kotlin/android/graphics/Xfermode)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setXfermode(android.graphics.Xfermode)(xfermode: https://developer.android.com/reference/kotlin/android/graphics/Xfermode!)` Set or clear the transfer mode object. |
+| open [Xfermode](../android/graphics/Xfermode.md)! | `https://developer.android.com/reference/kotlin/android/graphics/Paint#setXfermode(android.graphics.Xfermode)(xfermode: https://developer.android.com/reference/kotlin/android/graphics/Xfermode!)` Set or clear the transfer mode object. |
 | --- | --- |
 
 ## Constants
@@ -749,7 +749,7 @@ Create a new paint, initialized with the attributes in the specified paint param
 
 | Parameters ||
 |---|---|
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint#)!: Existing paint used to initialized the attributes of the new paint. |
+| `paint` | [Paint](../android/graphics/Paint.md)!: Existing paint used to initialized the attributes of the new paint. |
 
 ### Paint
 
@@ -911,7 +911,7 @@ Returns true of the passed `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `other` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint#): A `https://developer.android.com/reference/kotlin/android/graphics/Paint#` object. This value cannot be `null`. |
+| `other` | [Paint](../android/graphics/Paint.md): A `https://developer.android.com/reference/kotlin/android/graphics/Paint#` object. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1020,8 +1020,8 @@ Applies any/all effects (patheffect, stroking) to src, returning the result in d
 
 | Parameters ||
 |---|---|
-| `src` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path)!: input path |
-| `dst` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path)!: output path (may be the same as src) |
+| `src` | [Path](../android/graphics/Path.md)!: input path |
+| `dst` | [Path](../android/graphics/Path.md)!: output path (may be the same as src) |
 
 | Return ||
 |---|---|
@@ -1083,7 +1083,7 @@ Note that these are the values for the main typeface, and actual text rendered m
 
 | Parameters ||
 |---|---|
-| `metrics` | [Paint.FontMetrics](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics)!: If this object is not null, its fields are filled with the appropriate values given the paint's text attributes. |
+| `metrics` | [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)!: If this object is not null, its fields are filled with the appropriate values given the paint's text attributes. |
 
 | Return ||
 |---|---|
@@ -1101,7 +1101,7 @@ Get the font metrics used for the locale Obtain the metrics of the font that is 
 
 | Parameters ||
 |---|---|
-| `metrics` | [Paint.FontMetrics](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics): an output parameter. All members will be set by calling this function. This value cannot be `null`. |
+| `metrics` | [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md): an output parameter. All members will be set by calling this function. This value cannot be `null`. |
 
 ### getFontMetricsInt
 
@@ -1155,7 +1155,7 @@ Returns the font metrics value for the given text. If the text is rendered with 
 | `contextCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a length of the context to be used. Value is 0 or greater |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if measuring on RTL context, otherwise false. |
 | --- | --- |
-| `outMetrics` | [Paint.FontMetricsInt](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt): the output font metrics. This value cannot be `null`. |
+| `outMetrics` | [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md): the output font metrics. This value cannot be `null`. |
 
 ### getFontMetricsInt
 
@@ -1185,7 +1185,7 @@ Returns the font metrics value for the given text. If the text is rendered with 
 | `contextCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a length of the context to be used. Value is 0 or greater |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if measuring on RTL context, otherwise false. |
 | --- | --- |
-| `outMetrics` | [Paint.FontMetricsInt](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt): the output font metrics. This value cannot be `null`. |
+| `outMetrics` | [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md): the output font metrics. This value cannot be `null`. |
 
 ### getFontMetricsIntForLocale
 
@@ -1199,7 +1199,7 @@ Get the font metrics used for the locale Obtain the metrics of the font that is 
 
 | Parameters ||
 |---|---|
-| `metrics` | [Paint.FontMetricsInt](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt): an output parameter. All members will be set by calling this function. This value cannot be `null`. |
+| `metrics` | [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md): an output parameter. All members will be set by calling this function. This value cannot be `null`. |
 
 ### getFontSpacing
 
@@ -1810,7 +1810,7 @@ Return in bounds (allocated by the caller) the smallest rectangle that encloses 
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index of the first char in the array to measure |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of chars, beginning at index, to measure |
 | --- | --- |
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)!: returns the unioned bounds of all the text. Must be allocated by the caller |
+| `bounds` | [Rect](../android/graphics/Rect.md)!: returns the unioned bounds of all the text. Must be allocated by the caller |
 
 ### getTextBounds
 
@@ -1833,7 +1833,7 @@ Retrieve the text boundary box and store to bounds. Return in bounds (allocated 
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index of the first char in the text to measure |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): 1 past the last char in the text to measure |
 | --- | --- |
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect): returns the unioned bounds of all the text. Must be allocated by the caller. This value cannot be `null`. |
+| `bounds` | [Rect](../android/graphics/Rect.md): returns the unioned bounds of all the text. Must be allocated by the caller. This value cannot be `null`. |
 
 ### getTextBounds
 
@@ -1856,7 +1856,7 @@ Retrieve the text boundary box and store to bounds. Return in bounds (allocated 
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): index of the first char in the string to measure |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): 1 past the last char in the string to measure |
 | --- | --- |
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)!: returns the unioned bounds of all the text. Must be allocated by the caller |
+| `bounds` | [Rect](../android/graphics/Rect.md)!: returns the unioned bounds of all the text. Must be allocated by the caller |
 
 ### getTextLocale
 
@@ -1911,7 +1911,7 @@ Return the path (outline) for the specified text. Note: just like Canvas.drawTex
 | --- | --- |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the x coordinate of the text's origin |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the y coordinate of the text's origin |
-| `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path)!: the path to receive the data describing the text. Must be allocated by the caller |
+| `path` | [Path](../android/graphics/Path.md)!: the path to receive the data describing the text. Must be allocated by the caller |
 | --- | --- |
 
 ### getTextPath
@@ -1939,7 +1939,7 @@ Return the path (outline) for the specified text. Note: just like Canvas.drawTex
 | --- | --- |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the x coordinate of the text's origin |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the y coordinate of the text's origin |
-| `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path)!: the path to receive the data describing the text. Must be allocated by the caller |
+| `path` | [Path](../android/graphics/Path.md)!: the path to receive the data describing the text. Must be allocated by the caller |
 | --- | --- |
 
 ### getTextRunAdvances
@@ -2641,7 +2641,7 @@ Pass null to clear any previous blend mode.
 
 | Parameters ||
 |---|---|
-| `blendmode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode)?: May be null. The blend mode to be installed in the paint |
+| `blendmode` | [BlendMode](../android/graphics/BlendMode.md)?: May be null. The blend mode to be installed in the paint |
 
 **See Also**
 
@@ -2691,7 +2691,7 @@ Set or clear the paint's colorfilter, returning the parameter.
 
 | Parameters ||
 |---|---|
-| `filter` | [ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter)!: May be null. The new filter to be installed in the paint |
+| `filter` | [ColorFilter](../android/graphics/ColorFilter.md)!: May be null. The new filter to be installed in the paint |
 
 | Return ||
 |---|---|
@@ -2949,7 +2949,7 @@ Pass null to clear any previous maskfilter. As a convenience, the parameter pass
 
 | Parameters ||
 |---|---|
-| `maskfilter` | [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter)!: May be null. The maskfilter to be installed in the paint |
+| `maskfilter` | [MaskFilter](../android/graphics/MaskFilter.md)!: May be null. The maskfilter to be installed in the paint |
 
 | Return ||
 |---|---|
@@ -2971,7 +2971,7 @@ Pass null to clear any previous patheffect. As a convenience, the parameter pass
 
 | Parameters ||
 |---|---|
-| `effect` | [PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect)!: May be null. The patheffect to be installed in the paint |
+| `effect` | [PathEffect](../android/graphics/PathEffect.md)!: May be null. The patheffect to be installed in the paint |
 
 | Return ||
 |---|---|
@@ -2993,7 +2993,7 @@ Pass null to clear any previous shader. As a convenience, the parameter passed i
 
 | Parameters ||
 |---|---|
-| `shader` | [Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader)!: May be null. the new shader to be installed in the paint |
+| `shader` | [Shader](../android/graphics/Shader.md)!: May be null. the new shader to be installed in the paint |
 
 | Return ||
 |---|---|
@@ -3103,7 +3103,7 @@ Set the paint's Cap.
 
 | Parameters ||
 |---|---|
-| `cap` | [Paint.Cap](https://developer.android.com/reference/kotlin/android/graphics/Paint.Cap)!: set the paint's line cap style, used whenever the paint's style is Stroke or StrokeAndFill. |
+| `cap` | [Paint.Cap](../android/graphics/Paint.Cap.md)!: set the paint's line cap style, used whenever the paint's style is Stroke or StrokeAndFill. |
 
 ### setStrokeJoin
 
@@ -3117,7 +3117,7 @@ Set the paint's Join.
 
 | Parameters ||
 |---|---|
-| `join` | [Paint.Join](https://developer.android.com/reference/kotlin/android/graphics/Paint.Join)!: set the paint's Join, used whenever the paint's style is Stroke or StrokeAndFill. |
+| `join` | [Paint.Join](../android/graphics/Paint.Join.md)!: set the paint's Join, used whenever the paint's style is Stroke or StrokeAndFill. |
 
 ### setStrokeMiter
 
@@ -3159,7 +3159,7 @@ Set the paint's style, used for controlling how primitives' geometries are inter
 
 | Parameters ||
 |---|---|
-| `style` | [Paint.Style](https://developer.android.com/reference/kotlin/android/graphics/Paint.Style)!: The new style to set in the paint |
+| `style` | [Paint.Style](../android/graphics/Paint.Style.md)!: The new style to set in the paint |
 
 ### setSubpixelText
 
@@ -3187,7 +3187,7 @@ Set the paint's text alignment. This controls how the text is positioned relativ
 
 | Parameters ||
 |---|---|
-| `align` | [Paint.Align](https://developer.android.com/reference/kotlin/android/graphics/Paint.Align)!: set the paint's Align value for drawing text. |
+| `align` | [Paint.Align](../android/graphics/Paint.Align.md)!: set the paint's Align value for drawing text. |
 
 ### setTextLocale
 
@@ -3201,7 +3201,7 @@ Set the text locale list to a one-member list consisting of just the locale. See
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#): the paint's locale value for drawing text, must not be null. |
+| `locale` | [Locale](../java/util/Locale.md): the paint's locale value for drawing text, must not be null. |
 
 ### setTextLocales
 
@@ -3215,7 +3215,7 @@ Set the text locale list. The text locale list affects how the text is drawn for
 
 | Parameters ||
 |---|---|
-| `locales` | [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#): the paint's locale list for drawing text, must not be null or empty. |
+| `locales` | [LocaleList](../android/os/LocaleList.md): the paint's locale list for drawing text, must not be null or empty. |
 
 ### setTextScaleX
 
@@ -3275,7 +3275,7 @@ Pass null to clear any previous typeface. As a convenience, the parameter passed
 
 | Parameters ||
 |---|---|
-| `typeface` | [Typeface](https://developer.android.com/reference/kotlin/android/graphics/Typeface)!: May be null. The typeface to be installed in the paint |
+| `typeface` | [Typeface](../android/graphics/Typeface.md)!: May be null. The typeface to be installed in the paint |
 
 | Return ||
 |---|---|
@@ -3339,7 +3339,7 @@ Pass null to clear any previous transfer mode. As a convenience, the parameter p
 
 | Parameters ||
 |---|---|
-| `xfermode` | [Xfermode](https://developer.android.com/reference/kotlin/android/graphics/Xfermode)!: May be null. The xfermode to be installed in the paint |
+| `xfermode` | [Xfermode](../android/graphics/Xfermode.md)!: May be null. The xfermode to be installed in the paint |
 
 | Return ||
 |---|---|

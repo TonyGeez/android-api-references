@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnTimeChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/TimePicker.OnTimeChangedListener "View this page in Java") 
+Kotlin| [Java](../android/widget/TimePicker.OnTimeChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnTimeChangedListener
 ```
 
-| [android.widget.TimePicker.OnTimeChangedListener](https://developer.android.com/reference/kotlin/android/widget/TimePicker.OnTimeChangedListener#) |
+| [android.widget.TimePicker.OnTimeChangedListener](../android/widget/TimePicker.OnTimeChangedListener.md) |
 
-| Known Direct Subclasses [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) | A dialog that prompts the user for the time of day using a [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker). | |
+| Known Direct Subclasses [TimePickerDialog](../android/app/TimePickerDialog.md) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [TimePickerDialog](../android/app/TimePickerDialog.md) | A dialog that prompts the user for the time of day using a [TimePicker](../android/widget/TimePicker.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The callback interface used to indicate the time has been adjusted.
@@ -22,7 +22,7 @@ The callback interface used to indicate the time has been adjusted.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimeChanged](https://developer.android.com/reference/kotlin/android/widget/TimePicker.OnTimeChangedListener#onTimeChanged(android.widget.TimePicker,%20kotlin.Int,%20kotlin.Int))`(`view:` ` [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker)!`, `hourOfDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimeChanged](../android/widget/TimePicker.OnTimeChangedListener.md))`(`view:` ` [TimePicker](../android/widget/TimePicker.md)!`, `hourOfDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ abstract fun onTimeChanged(
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker)!:The view associated with this listener. |
+| `view` | [TimePicker](../android/widget/TimePicker.md)!:The view associated with this listener. |
 | `hourOfDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current hour. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current minute. |
 | --- | --- |

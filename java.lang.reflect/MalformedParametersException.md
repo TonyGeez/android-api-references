@@ -11,12 +11,12 @@ open class MalformedParametersException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.reflect.MalformedParametersException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParametersException#) |
+| | | | ↳ | [java.lang.reflect.MalformedParametersException](../java/lang/reflect/MalformedParametersException.md) |
 
-Thrown when [the](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameters())attempts to read method parameters from a class file and determines that one or more parameters are malformed.
+Thrown when [the](../java/lang/reflect/Executable.md))attempts to read method parameters from a class file and determines that one or more parameters are malformed.
 
 The following is a list of conditions under which this exception can be thrown:
 
@@ -26,14 +26,14 @@ The following is a list of conditions under which this exception can be thrown:
 - A parameter's name is "", or contains an illegal character
 - The flags field contains an illegal flag (something other than FINAL, SYNTHETIC, or MANDATED)
 
-See [java.lang.reflect.Executable#getParameters](https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameters())for more information.
+See [java.lang.reflect.Executable#getParameters](../java/lang/reflect/Executable.md))for more information.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MalformedParametersException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParametersException#MalformedParametersException())`()` Create a`MalformedParametersException`with an empty reason. |
-| [MalformedParametersException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParametersException#MalformedParametersException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a`MalformedParametersException`. |
+| [MalformedParametersException](../java/lang/reflect/MalformedParametersException.md))`()` Create a`MalformedParametersException`with an empty reason. |
+| [MalformedParametersException](../java/lang/reflect/MalformedParametersException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a`MalformedParametersException`. |
 
 ## Public constructors
 

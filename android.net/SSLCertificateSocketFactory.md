@@ -5,7 +5,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # SSLCertificateSocketFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/SSLCertificateSocketFactory "View this page in Java") 
+Kotlin| [Java](../android/net/SSLCertificateSocketFactory.md) 
 | --- | --- |
 
 ```
@@ -14,29 +14,29 @@ open class SSLCertificateSocketFactory : SSLSocketFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [javax.net.SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) |||
-| | ↳ | [javax.net.ssl.SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#) ||
-| | | ↳ | [android.net.SSLCertificateSocketFactory](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#) |
+| ↳ | [javax.net.SocketFactory](../javax/net/SocketFactory.md) |||
+| | ↳ | [javax.net.ssl.SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md) ||
+| | | ↳ | [android.net.SSLCertificateSocketFactory](../android/net/SSLCertificateSocketFactory.md) |
 | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
-| This class has less error-prone replacements using standard APIs. To create an`SSLSocket`, obtain an [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#) from [SSLSocketFactory.getDefault()](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#getDefault())or [javax.net.ssl.SSLContext#getSocketFactory()](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext.html#getSocketFactory()). To verify hostnames, pass`"HTTPS"`to [javax.net.ssl.SSLParameters#setEndpointIdentificationAlgorithm(String)](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters.html#setEndpointIdentificationAlgorithm(kotlin.String)). To enable ALPN, use[javax.net.ssl.SSLParameters#setApplicationProtocols(String[])](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters.html#setApplicationProtocols(kotlin.Array)). To enable SNI, use [javax.net.ssl.SSLParameters#setServerNames(java.util.List)](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters.html#setServerNames(kotlin.collections.MutableList)).
+| This class has less error-prone replacements using standard APIs. To create an`SSLSocket`, obtain an [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md) from [SSLSocketFactory.getDefault()](../javax/net/ssl/SSLSocketFactory.md))or [javax.net.ssl.SSLContext#getSocketFactory()](../javax/net/ssl/SSLContext.md)). To verify hostnames, pass`"HTTPS"`to [javax.net.ssl.SSLParameters#setEndpointIdentificationAlgorithm(String)](../javax/net/ssl/SSLParameters.md)). To enable ALPN, use[javax.net.ssl.SSLParameters#setApplicationProtocols(String[])](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters.html#setApplicationProtocols(kotlin.Array)). To enable SNI, use [javax.net.ssl.SSLParameters#setServerNames(java.util.List)](../javax/net/ssl/SSLParameters.md)).
 
 SSLSocketFactory implementation with several extra features:
 
 - Timeout specification for SSL handshake operations
 - Hostname verification in most cases (see WARNINGs below)
-- Optional SSL session caching with [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache)
+- Optional SSL session caching with [SSLSessionCache](../android/net/SSLSessionCache.md)
 - Optionally bypass all SSL certificate checks
 
-The handshake timeout does not apply to actual TCP socket connection. If you want a connection timeout as well, use [createSocket()](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#createSocket())and [Socket.connect(java.net.SocketAddress, int)](https://developer.android.com/reference/kotlin/java/net/Socket.html#connect(java.net.SocketAddress,%20kotlin.Int)), after which you must verify the identity of the server you are connected to.
+The handshake timeout does not apply to actual TCP socket connection. If you want a connection timeout as well, use [createSocket()](../android/net/SSLCertificateSocketFactory.md))and [Socket.connect(java.net.SocketAddress, int)](../java/net/Socket.md)), after which you must verify the identity of the server you are connected to.
 
 <br />
 
-**Most [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#) implementations do not verify the server's identity, allowing person-in-the-middle attacks.** This implementation does check the server's certificate hostname, but only for createSocket variants that specify a hostname. When using methods that use [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) or which return an unconnected socket, you MUST verify the server's identity yourself to ensure a secure connection. Refer to [Updating Your Security Provider to Protect Against SSL Exploits](https://developer.android.com/training/articles/security-gms-provider.html) for further information.
+**Most [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md) implementations do not verify the server's identity, allowing person-in-the-middle attacks.** This implementation does check the server's certificate hostname, but only for createSocket variants that specify a hostname. When using methods that use [InetAddress](../java/net/InetAddress.md) or which return an unconnected socket, you MUST verify the server's identity yourself to ensure a secure connection. Refer to [Updating Your Security Provider to Protect Against SSL Exploits](https://developer.android.com/training/articles/security-gms-provider.html) for further information.
 
-The recommended way to verify the server's identity is to use [HttpsURLConnection.getDefaultHostnameVerifier()](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier())to get a [HostnameVerifier](https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier.html#) to verify the certificate hostname.
+The recommended way to verify the server's identity is to use [HttpsURLConnection.getDefaultHostnameVerifier()](../javax/net/ssl/HttpsURLConnection.md))to get a [HostnameVerifier](../javax/net/ssl/HostnameVerifier.md) to verify the certificate hostname.
 
 **Warning**: Some methods on this class return connected sockets and some return unconnected sockets. For the methods that return connected sockets, setting connection- or handshake-related properties on those sockets will have no effect.
 
@@ -46,37 +46,37 @@ On development devices, "setprop socket.relaxsslcheck yes" bypasses all SSL cert
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLCertificateSocketFactory](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#SSLCertificateSocketFactory(kotlin.Int))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [SSLCertificateSocketFactory](../android/net/SSLCertificateSocketFactory.md))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#createSocket())`()` Creates a new socket which is*not connected*to any remote host. |
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#createSocket(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host at the specified remote port. |
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#createSocket(kotlin.String,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host on the specified remote port. |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../android/net/SSLCertificateSocketFactory.md))`()` Creates a new socket which is*not connected*to any remote host. |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../android/net/SSLCertificateSocketFactory.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host at the specified remote port. |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../android/net/SSLCertificateSocketFactory.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host on the specified remote port. |
 | --- | --- |
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#createSocket(java.net.InetAddress,%20kotlin.Int))`(`addr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified port number at the specified address. |
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#createSocket(java.net.InetAddress,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int))`(`addr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connect it to the specified remote address on the specified remote port. |
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#createSocket(java.net.Socket,%20kotlin.String,%20kotlin.Int,%20kotlin.Boolean))`(`k:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `close:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a socket layered over an existing socket connected to the named host, at the given port. |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../android/net/SSLCertificateSocketFactory.md))`(`addr:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified port number at the specified address. |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../android/net/SSLCertificateSocketFactory.md))`(`addr:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connect it to the specified remote address on the specified remote port. |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../android/net/SSLCertificateSocketFactory.md))`(`k:` ` [Socket](../java/net/Socket.md)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `close:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a socket layered over an existing socket connected to the named host, at the given port. |
 | --- | --- |
-| openstatic [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#)! | [getDefault](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getDefault(kotlin.Int))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new socket factory instance with an optional handshake timeout. |
-| openstatic [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#)! | [getDefault](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getDefault(kotlin.Int,%20android.net.SSLSessionCache))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cache:` ` [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache)!`)` Returns a new socket factory instance with an optional handshake timeout and SSL session cache. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getDefaultCipherSuites](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getDefaultCipherSuites())`()` <br /> |
+| openstatic [SocketFactory](../javax/net/SocketFactory.md)! | [getDefault](../android/net/SSLCertificateSocketFactory.md))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new socket factory instance with an optional handshake timeout. |
+| openstatic [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md)! | [getDefault](../android/net/SSLCertificateSocketFactory.md))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cache:` ` [SSLSessionCache](../android/net/SSLSessionCache.md)!`)` Returns a new socket factory instance with an optional handshake timeout and SSL session cache. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getDefaultCipherSuites](../android/net/SSLCertificateSocketFactory.md))`()` <br /> |
 | --- | --- |
-| openstatic [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#)! | [getInsecure](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getInsecure(kotlin.Int,%20android.net.SSLSessionCache))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cache:` ` [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache)!`)` Returns a new instance of a socket factory with all SSL security checks disabled, using an optional handshake timeout and SSL session cache. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getNpnSelectedProtocol](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getNpnSelectedProtocol(java.net.Socket))`(`socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Returns the [Next Protocol Negotiation (NPN)](http://technotes.googlecode.com/git/nextprotoneg.html) protocol selected by client and server, or null if no protocol was negotiated. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getSupportedCipherSuites())`()` <br /> |
+| openstatic [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md)! | [getInsecure](../android/net/SSLCertificateSocketFactory.md))`(`handshakeTimeoutMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cache:` ` [SSLSessionCache](../android/net/SSLSessionCache.md)!`)` Returns a new instance of a socket factory with all SSL security checks disabled, using an optional handshake timeout and SSL session cache. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getNpnSelectedProtocol](../android/net/SSLCertificateSocketFactory.md))`(`socket:` ` [Socket](../java/net/Socket.md)!`)` Returns the [Next Protocol Negotiation (NPN)](http://technotes.googlecode.com/git/nextprotoneg.html) protocol selected by client and server, or null if no protocol was negotiated. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](../android/net/SSLCertificateSocketFactory.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHostname](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#setHostname(java.net.Socket,%20kotlin.String))`(`socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`, `hostName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Turns on [Server Name Indication (SNI)](http://tools.ietf.org/html/rfc6066#section-3) on a given socket. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeyManagers](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#setKeyManagers(kotlin.Array))`(`keyManagers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager.html#)!>!`)` Sets the [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager.html#) s to be used for connections made by this factory. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNpnProtocols](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#setNpnProtocols(kotlin.Array))`(`npnProtocols:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!>!`)` Sets the [Next Protocol Negotiation (NPN)](https://tools.ietf.org/id/draft-agl-tls-nextprotoneg-03.html) protocols that this peer is interested in. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHostname](../android/net/SSLCertificateSocketFactory.md))`(`socket:` ` [Socket](../java/net/Socket.md)!`, `hostName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Turns on [Server Name Indication (SNI)](http://tools.ietf.org/html/rfc6066#section-3) on a given socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeyManagers](../android/net/SSLCertificateSocketFactory.md))`(`keyManagers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](../javax/net/ssl/KeyManager.md)!>!`)` Sets the [KeyManager](../javax/net/ssl/KeyManager.md) s to be used for connections made by this factory. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNpnProtocols](../android/net/SSLCertificateSocketFactory.md))`(`npnProtocols:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!>!`)` Sets the [Next Protocol Negotiation (NPN)](https://tools.ietf.org/id/draft-agl-tls-nextprotoneg-03.html) protocols that this peer is interested in. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTrustManagers](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#setTrustManagers(kotlin.Array))`(`trustManager:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager.html#)!>!`)` Sets the [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager.html#) s to be used for connections made by this factory. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseSessionTickets](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#setUseSessionTickets(java.net.Socket,%20kotlin.Boolean))`(`socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`, `useSessionTickets:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables [session ticket](http://tools.ietf.org/html/rfc5077#section-3.2) support on the given socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTrustManagers](../android/net/SSLCertificateSocketFactory.md))`(`trustManager:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TrustManager](../javax/net/ssl/TrustManager.md)!>!`)` Sets the [TrustManager](../javax/net/ssl/TrustManager.md) s to be used for connections made by this factory. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseSessionTickets](../android/net/SSLCertificateSocketFactory.md))`(`socket:` ` [Socket](../java/net/Socket.md)!`, `useSessionTickets:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables [session ticket](http://tools.ietf.org/html/rfc5077#section-3.2) support on the given socket. |
 
 | Inherited functions ||
 |---|---|
-| From class [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#createSocket())`()` <br /> Creates an unconnected socket. <br /> | | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#createSocket(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connects it to the specified remote host at the specified remote port. This socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#createSocket(kotlin.String,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localHost:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connects it to the specified remote host on the specified remote port. The socket will also be bound to the local address and port supplied. This socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,%20kotlin.Int))`(`host:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connects it to the specified port number at the specified address. This socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int))`(`address:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddress:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connect it to the specified remote address on the specified remote port. The socket will also be bound to the local address and port suplied. The socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | ||
-| From class [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#) |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#)! | [getDefault](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#getDefault())`()` <br /> Returns the default SSL socket factory. The first time this method is called, the security property "ssl.SocketFactory.provider" is examined. If it is non-null, a class by that name is loaded and instantiated. If that is successful and the object is an instance of SSLSocketFactory, it is made the default SSL socket factory. Otherwise, this method returns`SSLContext.getDefault().getSocketFactory()`. If that call fails, an inoperative factory is returned. <br /> | ||
+| From class [SocketFactory](../javax/net/SocketFactory.md) |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`()` <br /> Creates an unconnected socket. <br /> | | [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connects it to the specified remote host at the specified remote port. This socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | | [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localHost:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connects it to the specified remote host on the specified remote port. The socket will also be bound to the local address and port supplied. This socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | | [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`host:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connects it to the specified port number at the specified address. This socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | | [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`address:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddress:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Creates a socket and connect it to the specified remote address on the specified remote port. The socket will also be bound to the local address and port suplied. The socket is configured using the socket options established for this factory. If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException. <br /> | ||
+| From class [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md) |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SocketFactory](../javax/net/SocketFactory.md)! | [getDefault](../javax/net/ssl/SSLSocketFactory.md))`()` <br /> Returns the default SSL socket factory. The first time this method is called, the security property "ssl.SocketFactory.provider" is examined. If it is non-null, a class by that name is loaded and instantiated. If that is successful and the object is an instance of SSLSocketFactory, it is made the default SSL socket factory. Otherwise, this method returns`SSLContext.getDefault().getSocketFactory()`. If that call fails, an inoperative factory is returned. <br /> | ||
 
 ## Public constructors
 
@@ -88,7 +88,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 SSLCertificateSocketFactory(handshakeTimeoutMillis: Int)
 ```
 
-**Deprecated:** *Use [getDefault(int)](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getDefault(kotlin.Int))instead.*
+**Deprecated:** *Use [getDefault(int)](../android/net/SSLCertificateSocketFactory.md))instead.*
 
 ## Public methods
 
@@ -108,7 +108,7 @@ Creates a new socket which is*not connected*to any remote host. You must use jav
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the unconnected socket |
+| [Socket](../java/net/Socket.md)! | the unconnected socket |
 
 | Exceptions ||
 |-----------------------|---------------------------------|
@@ -131,7 +131,7 @@ Creates a socket and connects it to the specified remote host at the specified r
 
 If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException.
 
-By default, this method returns a*connected* socket and verifies the peer's certificate hostname after connecting using the [HostnameVerifier](https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier.html#) obtained from`HttpsURLConnection.getDefaultHostnameVerifier()`; if this instance was created with [getInsecure(int,android.net.SSLSessionCache)](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getInsecure(kotlin.Int,%20android.net.SSLSessionCache)), it returns a socket that is*not connected*instead.
+By default, this method returns a*connected* socket and verifies the peer's certificate hostname after connecting using the [HostnameVerifier](../javax/net/ssl/HostnameVerifier.md) obtained from`HttpsURLConnection.getDefaultHostnameVerifier()`; if this instance was created with [getInsecure(int,android.net.SSLSessionCache)](../android/net/SSLCertificateSocketFactory.md)), it returns a socket that is*not connected*instead.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -140,7 +140,7 @@ By default, this method returns a*connected* socket and verifies the peer's cert
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -169,7 +169,7 @@ Creates a socket and connects it to the specified remote host on the specified r
 
 If there is a security manager, its`checkConnect`method is called with the host address and`port`as its arguments. This could result in a SecurityException.
 
-By default, this method returns a*connected* socket and verifies the peer's certificate hostname after connecting using the [HostnameVerifier](https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier.html#) obtained from`HttpsURLConnection.getDefaultHostnameVerifier()`; if this instance was created with [getInsecure(int,android.net.SSLSessionCache)](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getInsecure(kotlin.Int,%20android.net.SSLSessionCache)), it returns a socket that is*not connected*instead.
+By default, this method returns a*connected* socket and verifies the peer's certificate hostname after connecting using the [HostnameVerifier](../javax/net/ssl/HostnameVerifier.md) obtained from`HttpsURLConnection.getDefaultHostnameVerifier()`; if this instance was created with [getInsecure(int,android.net.SSLSessionCache)](../android/net/SSLCertificateSocketFactory.md)), it returns a socket that is*not connected*instead.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -181,7 +181,7 @@ By default, this method returns a*connected* socket and verifies the peer's cert
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -219,7 +219,7 @@ This method returns a socket that is*not connected*.
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -262,7 +262,7 @@ This method returns a socket that is*not connected*.
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -289,7 +289,7 @@ open fun createSocket(
 
 Returns a socket layered over an existing socket connected to the named host, at the given port. This constructor can be used when tunneling SSL through a proxy or when negotiating the use of SSL over an existing socket. The host and port refer to the logical peer destination. This socket is configured using the socket options established for this factory.
 
-By default, this method returns a*connected* socket and verifies the peer's certificate hostname after connecting using the [HostnameVerifier](https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier.html#) obtained from`HttpsURLConnection.getDefaultHostnameVerifier()`; if this instance was created with [getInsecure(int,android.net.SSLSessionCache)](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory#getInsecure(kotlin.Int,%20android.net.SSLSessionCache)), it returns a socket that is*not connected*instead.
+By default, this method returns a*connected* socket and verifies the peer's certificate hostname after connecting using the [HostnameVerifier](../javax/net/ssl/HostnameVerifier.md) obtained from`HttpsURLConnection.getDefaultHostnameVerifier()`; if this instance was created with [getInsecure(int,android.net.SSLSessionCache)](../android/net/SSLCertificateSocketFactory.md)), it returns a socket that is*not connected*instead.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------|
@@ -301,7 +301,7 @@ By default, this method returns a*connected* socket and verifies the peer's cert
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | a socket connected to the specified host and port |
+| [Socket](../java/net/Socket.md)! | a socket connected to the specified host and port |
 
 | Exceptions ||
 |----------------------------------|-------------------------------------------------|
@@ -326,7 +326,7 @@ Returns a new socket factory instance with an optional handshake timeout.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#)! | a new SSLSocketFactory with the specified parameters |
+| [SocketFactory](../javax/net/SocketFactory.md)! | a new SSLSocketFactory with the specified parameters |
 
 ### getDefault
 
@@ -347,11 +347,11 @@ Returns a new socket factory instance with an optional handshake timeout and SSL
 | Parameters ||
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `handshakeTimeoutMillis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):to use for SSL connection handshake, or 0 for none. The socket timeout is reset to 0 after the handshake. |
-| `cache` | [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache)!:The [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache) to use, or null for no cache. |
+| `cache` | [SSLSessionCache](../android/net/SSLSessionCache.md)!:The [SSLSessionCache](../android/net/SSLSessionCache.md) to use, or null for no cache. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#)! | a new SSLSocketFactory with the specified parameters |
+| [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md)! | a new SSLSocketFactory with the specified parameters |
 
 ### getDefaultCipherSuites
 
@@ -388,11 +388,11 @@ Returns a new instance of a socket factory with all SSL security checks disabled
 | Parameters ||
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `handshakeTimeoutMillis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):to use for SSL connection handshake, or 0 for none. The socket timeout is reset to 0 after the handshake. |
-| `cache` | [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache)!:The [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache) to use, or null for no cache. |
+| `cache` | [SSLSessionCache](../android/net/SSLSessionCache.md)!:The [SSLSessionCache](../android/net/SSLSessionCache.md) to use, or null for no cache. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory.html#)! | an insecure SSLSocketFactory with the specified parameters |
+| [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md)! | an insecure SSLSocketFactory with the specified parameters |
 
 ### getNpnSelectedProtocol
 
@@ -409,7 +409,7 @@ Returns the [Next Protocol Negotiation (NPN)](http://technotes.googlecode.com/gi
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------|
-| `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:a socket created by this factory. |
+| `socket` | [Socket](../java/net/Socket.md)!:a socket created by this factory. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------|
@@ -447,7 +447,7 @@ Turns on [Server Name Indication (SNI)](http://tools.ietf.org/html/rfc6066#secti
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------|
-| `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:a socket created by this factory. |
+| `socket` | [Socket](../java/net/Socket.md)!:a socket created by this factory. |
 | `hostName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the desired SNI hostname, null to disable. |
 
 | Exceptions ||
@@ -465,7 +465,7 @@ open fun setKeyManagers(keyManagers: Array<KeyManager!>!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager.html#) s to be used for connections made by this factory. 
+Sets the [KeyManager](../javax/net/ssl/KeyManager.md) s to be used for connections made by this factory. 
 
 ### setNpnProtocols
 
@@ -499,7 +499,7 @@ open fun setTrustManagers(trustManager: Array<TrustManager!>!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager.html#) s to be used for connections made by this factory. 
+Sets the [TrustManager](../javax/net/ssl/TrustManager.md) s to be used for connections made by this factory. 
 
 ### setUseSessionTickets
 
@@ -519,7 +519,7 @@ Enables [session ticket](http://tools.ietf.org/html/rfc5077#section-3.2) support
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:a socket created by this factory |
+| `socket` | [Socket](../java/net/Socket.md)!:a socket created by this factory |
 | `useSessionTickets` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to enable session ticket support on this socket. |
 
 | Exceptions ||

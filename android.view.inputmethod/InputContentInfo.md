@@ -4,7 +4,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 
 # InputContentInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InputContentInfo "View this page in Java") 
+Kotlin| [Java](../android/view/inputmethod/InputContentInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class InputContentInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#) |
+| ↳ | [android.view.inputmethod.InputContentInfo](../android/view/inputmethod/InputContentInfo.md) |
 
 A container object with which input methods can send content files to the target application.
 
@@ -21,28 +21,28 @@ A container object with which input methods can send content files to the target
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#InputContentInfo(android.net.Uri,%20android.content.ClipDescription))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `description:` ` [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#)`)` Constructs [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#) object only with mandatory data. |
-| [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#InputContentInfo(android.net.Uri,%20android.content.ClipDescription,%20android.net.Uri))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `description:` ` [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#)`, `linkUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?`)` Constructs [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#) object with additional link URI. |
+| [InputContentInfo](../android/view/inputmethod/InputContentInfo.md))`(`contentUri:` ` [Uri](../android/net/Uri.md)`, `description:` ` [ClipDescription](../android/content/ClipDescription.md)`)` Constructs [InputContentInfo](../android/view/inputmethod/InputContentInfo.md) object only with mandatory data. |
+| [InputContentInfo](../android/view/inputmethod/InputContentInfo.md))`(`contentUri:` ` [Uri](../android/net/Uri.md)`, `description:` ` [ClipDescription](../android/content/ClipDescription.md)`, `linkUri:` ` [Uri](../android/net/Uri.md)?`)` Constructs [InputContentInfo](../android/view/inputmethod/InputContentInfo.md) object with additional link URI. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#describeContents())`()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getContentUri](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#getContentUri())`()` <br /> |
-| [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#) | [getDescription](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#getDescription())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/inputmethod/InputContentInfo.md))`()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Uri](../android/net/Uri.md) | [getContentUri](../android/view/inputmethod/InputContentInfo.md))`()` <br /> |
+| [ClipDescription](../android/content/ClipDescription.md) | [getDescription](../android/view/inputmethod/InputContentInfo.md))`()` <br /> |
 | --- | --- |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getLinkUri](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#getLinkUri())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releasePermission](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#releasePermission())`()` Releases a temporary read-only access permission for content URI associated with this object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestPermission](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#requestPermission())`()` Requests a temporary [read-only](https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int) access permission for the content URI associated with this object. |
+| [Uri](../android/net/Uri.md)? | [getLinkUri](../android/view/inputmethod/InputContentInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releasePermission](../android/view/inputmethod/InputContentInfo.md))`()` Releases a temporary read-only access permission for content URI associated with this object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestPermission](../android/view/inputmethod/InputContentInfo.md))`()` Requests a temporary [read-only](../android/content/Intent.md) access permission for the content URI associated with this object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/inputmethod/InputContentInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android/os/Parcel.md). |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#CREATOR:android.os.Parcelable.Creator) Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InputContentInfo](../android/view/inputmethod/InputContentInfo.md)!\> | [CREATOR](../android/view/inputmethod/InputContentInfo.md) Used to make this class parcelable. |
 
 ## Public constructors
 
@@ -56,12 +56,12 @@ InputContentInfo(
     description: ClipDescription)
 ```
 
-Constructs [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#) object only with mandatory data.
+Constructs [InputContentInfo](../android/view/inputmethod/InputContentInfo.md) object only with mandatory data.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `contentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):Content URI to be exported from the input method. This cannot be`null`. |
-| `description` | [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#):A [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#) object that contains the metadata of`contentUri`such as MIME type(s). This object cannot be`null`. Also [ClipDescription.getLabel()](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#getLabel())should be describing the content specified by`contentUri`for accessibility reasons. |
+| `contentUri` | [Uri](../android/net/Uri.md):Content URI to be exported from the input method. This cannot be`null`. |
+| `description` | [ClipDescription](../android/content/ClipDescription.md):A [ClipDescription](../android/content/ClipDescription.md) object that contains the metadata of`contentUri`such as MIME type(s). This object cannot be`null`. Also [ClipDescription.getLabel()](../android/content/ClipDescription.md))should be describing the content specified by`contentUri`for accessibility reasons. |
 
 ### InputContentInfo
 
@@ -74,13 +74,13 @@ InputContentInfo(
     linkUri: Uri?)
 ```
 
-Constructs [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#) object with additional link URI.
+Constructs [InputContentInfo](../android/view/inputmethod/InputContentInfo.md) object with additional link URI.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `contentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):Content URI to be exported from the input method. This cannot be`null`. |
-| `description` | [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#):A [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#) object that contains the metadata of`contentUri`such as MIME type(s). This object cannot be`null`. Also [ClipDescription.getLabel()](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#getLabel())should be describing the content specified by`contentUri`for accessibility reasons. |
-| `linkUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?:An optional`http`or`https`URI. The editor author may provide a way to navigate the user to the specified web page if this is not`null`. |
+| `contentUri` | [Uri](../android/net/Uri.md):Content URI to be exported from the input method. This cannot be`null`. |
+| `description` | [ClipDescription](../android/content/ClipDescription.md):A [ClipDescription](../android/content/ClipDescription.md) object that contains the metadata of`contentUri`such as MIME type(s). This object cannot be`null`. Also [ClipDescription.getLabel()](../android/content/ClipDescription.md))should be describing the content specified by`contentUri`for accessibility reasons. |
+| `linkUri` | [Uri](../android/net/Uri.md)?:An optional`http`or`https`URI. The editor author may provide a way to navigate the user to the specified web page if this is not`null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -97,11 +97,11 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of [writeToParcel(android.os.Parcel,int)](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)), the return value of this method must include the [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of [writeToParcel(android.os.Parcel,int)](../android/os/Parcelable.md)), the return value of this method must include the [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) bit.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getContentUri
 
@@ -113,7 +113,7 @@ fun getContentUri(): Uri
 
 | Return ||
 |-----------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | Content URI with which the content can be obtained. This value cannot be`null`. |
+| [Uri](../android/net/Uri.md) | Content URI with which the content can be obtained. This value cannot be`null`. |
 
 ### getDescription
 
@@ -125,7 +125,7 @@ fun getDescription(): ClipDescription
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#) | [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#) object that contains the metadata of`getContentUri()`such as MIME type(s). [ClipDescription.getLabel()](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#getLabel())can be used for accessibility purpose. This value cannot be`null`. |
+| [ClipDescription](../android/content/ClipDescription.md) | [ClipDescription](../android/content/ClipDescription.md) object that contains the metadata of`getContentUri()`such as MIME type(s). [ClipDescription.getLabel()](../android/content/ClipDescription.md))can be used for accessibility purpose. This value cannot be`null`. |
 
 ### getLinkUri
 
@@ -137,7 +137,7 @@ fun getLinkUri(): Uri?
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | An optional`http`or`https`URI that is related to this content. This value may be`null`. |
+| [Uri](../android/net/Uri.md)? | An optional`http`or`https`URI that is related to this content. This value may be`null`. |
 
 ### releasePermission
 
@@ -159,9 +159,9 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 fun requestPermission(): Unit
 ```
 
-Requests a temporary [read-only](https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int) access permission for the content URI associated with this object.
+Requests a temporary [read-only](../android/content/Intent.md) access permission for the content URI associated with this object.
 
-The lifecycle of the permission granted here is tied to this object instance. If the permission is not released explicitly via [releasePermission()](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#releasePermission()), it will be released automatically when there are no more references to this object.
+The lifecycle of the permission granted here is tied to this object instance. If the permission is not released explicitly via [releasePermission()](../android/view/inputmethod/InputContentInfo.md)), it will be released automatically when there are no more references to this object.
 
 Does nothing if the temporary permission is already granted. 
 
@@ -176,11 +176,11 @@ fun writeToParcel(
 ): Unit
 ```
 
-Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#).
+Used to package this object into a [Parcel](../android/os/Parcel.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#) to be written. |
+| `dest` | [Parcel](../android/os/Parcel.md):The [Parcel](../android/os/Parcel.md) to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The flags used for parceling. |
 
 ## Properties

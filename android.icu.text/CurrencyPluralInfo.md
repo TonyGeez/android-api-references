@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # CurrencyPluralInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo "View this page in Java")
+Kotlin | [Java](../android/icu/text/CurrencyPluralInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class CurrencyPluralInfo : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.CurrencyPluralInfo](https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#) |
+| ↳ | [android.icu.text.CurrencyPluralInfo](../android/icu/text/CurrencyPluralInfo.md) |
 
 This class represents the information needed by DecimalFormat to format currency plural, such as "3.00 US dollars" or "1.00 US dollar". DecimalFormat creates for itself an instance of CurrencyPluralInfo from its locale data. If you need to change any of these symbols, you can get the CurrencyPluralInfo object from your DecimalFormat and modify it. Following are the information needed for currency plural format and parse: locale information, plural rule of the locale, currency plural pattern of the locale.
 
@@ -29,12 +29,12 @@ This class represents the information needed by DecimalFormat to format currency
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Override equals |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getCurrencyPluralPattern(kotlin.String)(pluralCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Given a plural count, gets currency plural pattern of this locale, used for currency plural format |
 | --- | --- |
-| open static [CurrencyPluralInfo](https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getInstance()()` Gets a CurrencyPluralInfo instance for the default locale. |
-| open static [CurrencyPluralInfo](https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Gets a CurrencyPluralInfo instance for the given locale. |
-| open static [CurrencyPluralInfo](https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets a CurrencyPluralInfo instance for the given locale. |
+| open static [CurrencyPluralInfo](../android/icu/text/CurrencyPluralInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getInstance()()` Gets a CurrencyPluralInfo instance for the default locale. |
+| open static [CurrencyPluralInfo](../android/icu/text/CurrencyPluralInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Gets a CurrencyPluralInfo instance for the given locale. |
+| open static [CurrencyPluralInfo](../android/icu/text/CurrencyPluralInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets a CurrencyPluralInfo instance for the given locale. |
 | --- | --- |
-| open [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getLocale()()` Get locale |
-| open [PluralRules](https://developer.android.com/reference/kotlin/android/icu/text/PluralRules)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getPluralRules()()` Gets plural rules of this locale, used for currency plural format |
+| open [ULocale](../android/icu/util/ULocale.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getLocale()()` Get locale |
+| open [PluralRules](../android/icu/text/PluralRules.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#getPluralRules()()` Gets plural rules of this locale, used for currency plural format |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#hashCode()()` Override hashCode |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo#setCurrencyPluralPattern(kotlin.String,%20kotlin.String)(pluralCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set currency plural patterns. |
@@ -69,7 +69,7 @@ Create a CurrencyPluralInfo object for the given locale.
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the locale |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the locale |
 
 ### CurrencyPluralInfo
 
@@ -83,7 +83,7 @@ Create a CurrencyPluralInfo object for the given locale.
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the locale |
+| `locale` | [Locale](../java/util/Locale.md)!: the locale |
 
 ## Public methods
 
@@ -167,7 +167,7 @@ Gets a CurrencyPluralInfo instance for the given locale.
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the locale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the locale. |
 
 | Return ||
 |---|---|
@@ -185,7 +185,7 @@ Gets a CurrencyPluralInfo instance for the given locale.
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the locale. |
+| `locale` | [Locale](../java/util/Locale.md)!: the locale. |
 
 | Return ||
 |---|---|
@@ -263,7 +263,7 @@ Set locale. This also sets both the plural rules and the currency plural pattern
 
 | Parameters ||
 |---|---|
-| `loc` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the new locale to set |
+| `loc` | [ULocale](../android/icu/util/ULocale.md)!: the new locale to set |
 
 ### setPluralRules
 

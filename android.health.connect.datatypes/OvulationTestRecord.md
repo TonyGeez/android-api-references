@@ -9,9 +9,9 @@ class OvulationTestRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.OvulationTestRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OvulationTestRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.OvulationTestRecord](../android/health/connect/datatypes/OvulationTestRecord.md) |
 | --- | --- | --- | --- |
 
 Each record represents the result of an ovulation test.

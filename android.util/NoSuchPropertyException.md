@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # NoSuchPropertyException
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/NoSuchPropertyException "View this page in Java") 
+Kotlin| [Java](../android/util/NoSuchPropertyException.md) 
 | --- | --- |
 
 ```
@@ -14,18 +14,18 @@ open class NoSuchPropertyException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.util.NoSuchPropertyException](https://developer.android.com/reference/kotlin/android/util/NoSuchPropertyException#) |
+| | | | ↳ | [android.util.NoSuchPropertyException](../android/util/NoSuchPropertyException.md) |
 
-Thrown when code requests a [Property](https://developer.android.com/reference/kotlin/android/util/Property) on a class that does not expose the appropriate method or field.
+Thrown when code requests a [Property](../android/util/Property.md) on a class that does not expose the appropriate method or field.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoSuchPropertyException](https://developer.android.com/reference/kotlin/android/util/NoSuchPropertyException#NoSuchPropertyException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [NoSuchPropertyException](../android/util/NoSuchPropertyException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

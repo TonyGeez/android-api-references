@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # DeviceId
 
-Kotlin | [Java](https://developer.android.com/reference/android/companion/DeviceId "View this page in Java")
+Kotlin | [Java](../android/companion/DeviceId.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class DeviceId : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.companion.DeviceId](https://developer.android.com/reference/kotlin/android/companion/DeviceId#) |
+| ↳ | [android.companion.DeviceId](../android/companion/DeviceId.md) |
 
 A device id represents a device identifier managed by the companion app.
 
@@ -31,7 +31,7 @@ A device id represents a device identifier managed by the companion app.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#getCustomId()()` <br /> |
 | --- | --- |
-| [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#getMacAddress()()` <br /> |
+| [MacAddress](../android/net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#getMacAddress()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -39,7 +39,7 @@ A device id represents a device identifier managed by the companion app.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [DeviceId](https://developer.android.com/reference/kotlin/android/companion/DeviceId#)!\> | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DeviceId](../android/companion/DeviceId.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/DeviceId#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -159,7 +159,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

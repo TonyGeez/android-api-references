@@ -8,8 +8,8 @@ open class SubscribeDiscoverySession : DiscoverySession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.wifi.aware.DiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession) ||
-| | ↳ | [android.net.wifi.aware.SubscribeDiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeDiscoverySession#) |
+| ↳ | [android.net.wifi.aware.DiscoverySession](../android/net/wifi/aware/DiscoverySession.md) ||
+| | ↳ | [android.net.wifi.aware.SubscribeDiscoverySession](../android/net/wifi/aware/SubscribeDiscoverySession.md) |
 
 A class representing a Aware subscribe session. Created when `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#subscribe(android.net.wifi.aware.SubscribeConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)` is called and a discovery session is created and returned in `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback#onSubscribeStarted(android.net.wifi.aware.SubscribeDiscoverySession)`. See baseline functionality of all discovery sessions in `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession`. This object allows updating an existing/running subscribe discovery session using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeDiscoverySession#updateSubscribe(android.net.wifi.aware.SubscribeConfig)`.
 
@@ -41,8 +41,8 @@ Initiate a Wi-Fi Aware data path request to create a connection with the target 
 
 | Parameters ||
 |---|---|
-| `peerHandle` | [PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle): The peer's handle for the data path request. This value cannot be `null`. |
-| `request` | [AwareDataPathRequest](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareDataPathRequest): The data path request. This value cannot be `null`. |
+| `peerHandle` | [PeerHandle](../android/net/wifi/aware/PeerHandle.md): The peer's handle for the data path request. This value cannot be `null`. |
+| `request` | [AwareDataPathRequest](../android/net/wifi/aware/AwareDataPathRequest.md): The data path request. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -65,4 +65,4 @@ Re-configure the currently active subscribe session. The `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `subscribeConfig` | [SubscribeConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig): The new discovery subscribe session configuration (`https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig`). This value cannot be `null`. |
+| `subscribeConfig` | [SubscribeConfig](../android/net/wifi/aware/SubscribeConfig.md): The new discovery subscribe session configuration (`https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig`). This value cannot be `null`. |

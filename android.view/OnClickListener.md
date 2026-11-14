@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnClickListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnClickListener "View this page in Java") 
+Kotlin| [Java](../android/view/View.OnClickListener.md) 
 | --- | --- |
 
 ```
 interface OnClickListener
 ```
 
-| [android.view.View.OnClickListener](https://developer.android.com/reference/kotlin/android/view/View.OnClickListener#) |
+| [android.view.View.OnClickListener](../android/view/View.OnClickListener.md) |
 
-| Known Direct Subclasses [CharacterPickerDialog](https://developer.android.com/reference/kotlin/android/text/method/CharacterPickerDialog.html#), [KeyboardView](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.html#), [QuickContactBadge](https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge.html#) |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------| | [CharacterPickerDialog](https://developer.android.com/reference/kotlin/android/text/method/CharacterPickerDialog.html#) | Dialog for choosing accented characters related to a base character. | | [KeyboardView](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.html#) | A view that renders a virtual [Keyboard](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.html#). | | [QuickContactBadge](https://developer.android.com/reference/kotlin/android/widget/QuickContactBadge.html#) | Widget used to show an image with the standard QuickContact badge and on-click behavior. | |
+| Known Direct Subclasses [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md), [KeyboardView](../android/inputmethodservice/KeyboardView.md), [QuickContactBadge](../android/widget/QuickContactBadge.md) |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------| | [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md) | Dialog for choosing accented characters related to a base character. | | [KeyboardView](../android/inputmethodservice/KeyboardView.md) | A view that renders a virtual [Keyboard](../android/inputmethodservice/Keyboard.md). | | [QuickContactBadge](../android/widget/QuickContactBadge.md) | Widget used to show an image with the standard QuickContact badge and on-click behavior. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when a view is clicked.
@@ -22,7 +22,7 @@ Interface definition for a callback to be invoked when a view is clicked.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/view/View.OnClickListener#onClick(android.view.View))`(`v:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`)` Called when a view has been clicked. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](../android/view/View.OnClickListener.md))`(`v:` ` [View](../android/view/View.md)!`)` Called when a view has been clicked. |
 
 ## Public methods
 
@@ -38,4 +38,4 @@ Called when a view has been clicked.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------|
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view that was clicked. |
+| `v` | [View](../android/view/View.md)!:The view that was clicked. |

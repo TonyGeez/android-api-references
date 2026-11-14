@@ -2,14 +2,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LocationListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/location/LocationListener "View this page in Java")
+Kotlin | [Java](../android/location/LocationListener.md)
 | --- | --- |
 
 ```
 interface LocationListener
 ```
 
-| [android.location.LocationListener](https://developer.android.com/reference/kotlin/android/location/LocationListener#) |
+| [android.location.LocationListener](../android/location/LocationListener.md) |
 
 Used for receiving notifications when the device location has changed. These methods are called when the listener has been registered with the LocationManager.
 |
@@ -60,7 +60,7 @@ Called when the location has changed. A wakelock may be held on behalf on the li
 
 | Parameters ||
 |---|---|
-| `location` | [Location](https://developer.android.com/reference/kotlin/android/location/Location): the updated location. This value cannot be `null`. |
+| `location` | [Location](../android/location/Location.md): the updated location. This value cannot be `null`. |
 
 ### onLocationChanged
 
@@ -74,7 +74,7 @@ Called when the location has changed and locations are being delivered in batche
 
 | Parameters ||
 |---|---|
-| `locations` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Location](https://developer.android.com/reference/kotlin/android/location/Location)!\>: the location list. This value cannot be `null`. |
+| `locations` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Location](../android/location/Location.md)!\>: the location list. This value cannot be `null`. |
 
 **See Also**
 

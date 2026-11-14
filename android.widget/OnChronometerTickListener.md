@@ -4,14 +4,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnChronometerTickListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/Chronometer.OnChronometerTickListener "View this page in Java") 
+Kotlin| [Java](../android/widget/Chronometer.OnChronometerTickListener.md) 
 | --- | --- |
 
 ```
 interface OnChronometerTickListener
 ```
 
-| [android.widget.Chronometer.OnChronometerTickListener](https://developer.android.com/reference/kotlin/android/widget/Chronometer.OnChronometerTickListener#) |
+| [android.widget.Chronometer.OnChronometerTickListener](../android/widget/Chronometer.OnChronometerTickListener.md) |
 
 A callback that notifies when the chronometer has incremented on its own.
 
@@ -19,7 +19,7 @@ A callback that notifies when the chronometer has incremented on its own.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChronometerTick](https://developer.android.com/reference/kotlin/android/widget/Chronometer.OnChronometerTickListener#onChronometerTick(android.widget.Chronometer))`(`chronometer:` ` [Chronometer](https://developer.android.com/reference/kotlin/android/widget/Chronometer)!`)` Notification that the chronometer has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChronometerTick](../android/widget/Chronometer.OnChronometerTickListener.md))`(`chronometer:` ` [Chronometer](../android/widget/Chronometer.md)!`)` Notification that the chronometer has changed. |
 
 ## Public methods
 

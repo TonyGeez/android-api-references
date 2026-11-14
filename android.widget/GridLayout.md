@@ -8,9 +8,9 @@ open class GridLayout : ViewGroup
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
-| | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||
-| | | ↳ | [android.widget.GridLayout](https://developer.android.com/reference/kotlin/android/widget/GridLayout#) |
+| ↳ | [android.view.View](../android/view/View.md) |||
+| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) ||
+| | | ↳ | [android.widget.GridLayout](../android/widget/GridLayout.md) |
 | --- | --- | --- | --- |
 
 A layout that places its children in a rectangular *grid*.
@@ -60,13 +60,13 @@ See `https://developer.android.com/reference/kotlin/android/widget/GridLayout.La
 
 | XML attributes ||
 |---|---|
-| [`android:columnCount`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | The maximum number of columns to create when automatically positioning children. |
-| [`android:columnOrderPreserved`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | When set to true, forces column boundaries to appear in the same order as column indices. |
-| [`android:orientation`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | The orientation property is not used during layout. |
+| [`android:columnCount`](../android/widget/GridLayout.md) | The maximum number of columns to create when automatically positioning children. |
+| [`android:columnOrderPreserved`](../android/widget/GridLayout.md) | When set to true, forces column boundaries to appear in the same order as column indices. |
+| [`android:orientation`](../android/widget/GridLayout.md) | The orientation property is not used during layout. |
 | --- | --- |
-| [`android:rowCount`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | The maximum number of rows to create when automatically positioning children. |
-| [`android:rowOrderPreserved`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | When set to true, forces row boundaries to appear in the same order as row indices. |
-| [`android:useDefaultMargins`](https://developer.android.com/reference/kotlin/android/widget/GridLayout#attr_GridLayout) | When set to true, tells GridLayout to use default margins when none are specified in a view's layout parameters. |
+| [`android:rowCount`](../android/widget/GridLayout.md) | The maximum number of rows to create when automatically positioning children. |
+| [`android:rowOrderPreserved`](../android/widget/GridLayout.md) | When set to true, forces row boundaries to appear in the same order as row indices. |
+| [`android:useDefaultMargins`](../android/widget/GridLayout.md) | When set to true, tells GridLayout to use default margins when none are specified in a view's layout parameters. |
 | --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
@@ -689,7 +689,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -714,7 +714,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -724,7 +724,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -744,7 +744,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -754,7 +754,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -764,7 +764,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -774,7 +774,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -784,7 +784,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -794,7 +794,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -804,7 +804,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -814,7 +814,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -824,7 +824,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -834,7 +834,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1004,7 +1004,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1024,7 +1024,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1066,7 +1066,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1162,7 +1162,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1256,7 +1256,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1713,7 +1713,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1786,7 +1786,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 
 | Public methods ||
 |---|---|
-| open [GridLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
+| open [GridLayout.LayoutParams](../android/widget/GridLayout.LayoutParams.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#getAlignmentMode()()` Returns the alignment mode. |
 | --- | --- |
@@ -1811,23 +1811,23 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setRowOrderPreserved(kotlin.Boolean)(rowOrderPreserved: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When this property is `true`, GridLayout is forced to place the row boundaries so that their associated grid indices are in ascending order in the view. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#setUseDefaultMargins(kotlin.Boolean)(useDefaultMargins: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When `true`, GridLayout allocates default margins around children based on the child's visual characteristics. |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + 1]` <br /> |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20android.widget.GridLayout.Alignment)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!)` Return a Spec, `spec`, where: - `spec.span = [start, start + 1]` - `spec.alignment = alignment` <br /> |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + 1]` <br /> |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20android.widget.GridLayout.Alignment)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!)` Return a Spec, `spec`, where: - `spec.span = [start, start + 1]` - `spec.alignment = alignment` <br /> |
 | --- | --- |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20android.widget.GridLayout.Alignment,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, alignment, weight)`. |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, weight)`. |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + size]` <br /> |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20android.widget.GridLayout.Alignment,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, alignment, weight)`. |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, weight)`. |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + size]` <br /> |
 | --- | --- |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20android.widget.GridLayout.Alignment)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!)` Equivalent to: `spec(start, size, alignment, 0f)`. |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20android.widget.GridLayout.Alignment,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + size]` - `spec.alignment = alignment` - `spec.weight = weight` <br /> |
-| open static [GridLayout.Spec](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Spec)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, default_alignment, weight)` - where `default_alignment` is specified in `https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams`. |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20android.widget.GridLayout.Alignment)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!)` Equivalent to: `spec(start, size, alignment, 0f)`. |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20android.widget.GridLayout.Alignment,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alignment: https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment!, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Return a Spec, `spec`, where: - `spec.span = [start, start + size]` - `spec.alignment = alignment` - `spec.weight = weight` <br /> |
+| open static [GridLayout.Spec](../android/widget/GridLayout.Spec.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#spec(kotlin.Int,%20kotlin.Int,%20kotlin.Float)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Equivalent to: `spec(start, 1, default_alignment, weight)` - where `default_alignment` is specified in `https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams`. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` <br /> |
-| open [GridLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
-| open [GridLayout.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/GridLayout.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateLayoutParams(android.view.ViewGroup.LayoutParams)(lp: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
+| open [GridLayout.LayoutParams](../android/widget/GridLayout.LayoutParams.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
+| open [GridLayout.LayoutParams](../android/widget/GridLayout.LayoutParams.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#generateLayoutParams(android.view.ViewGroup.LayoutParams)(lp: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#onLayout(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(changed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called from layout when this view should assign a size and position to each of its children. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#onMeasure(kotlin.Int,%20kotlin.Int)(widthSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
@@ -7549,7 +7549,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -7993,17 +7993,17 @@ Returns whether or not this View draws on its own.
 
 | Properties ||
 |---|---|
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#BASELINE:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *baselines* of the other views in its cell group. |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#BOTTOM:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *bottom* edges of the other views in its cell group. |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#CENTER:android.widget.GridLayout.Alignment` Indicates that a view should be *centered* with the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#BASELINE:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *baselines* of the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#BOTTOM:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *bottom* edges of the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#CENTER:android.widget.GridLayout.Alignment` Indicates that a view should be *centered* with the other views in its cell group. |
 | --- | --- |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#END:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *end* edges of the other views in its cell group. |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#FILL:android.widget.GridLayout.Alignment` Indicates that a view should expanded to fit the boundaries of its cell group. |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#LEFT:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *left* edges of the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#END:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *end* edges of the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#FILL:android.widget.GridLayout.Alignment` Indicates that a view should expanded to fit the boundaries of its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#LEFT:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *left* edges of the other views in its cell group. |
 | --- | --- |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#RIGHT:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *right* edges of the other views in its cell group. |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#START:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *start* edges of the other views in its cell group. |
-| static [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#TOP:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *top* edges of the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#RIGHT:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *right* edges of the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#START:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *start* edges of the other views in its cell group. |
+| static [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)! | `https://developer.android.com/reference/kotlin/android/widget/GridLayout#TOP:android.widget.GridLayout.Alignment` Indicates that a view should be aligned with the *top* edges of the other views in its cell group. |
 | --- | --- |
 
 Inherited properties From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/util/Property.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html!>!` `https://developer.android.com/reference/kotlin/android/view/View.html#ALPHA:android.util.Property`
@@ -8462,7 +8462,7 @@ Returns a new set of layout parameters based on the supplied attributes set.
 
 | Parameters ||
 |---|---|
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: the attributes to build the layout parameters from |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: the attributes to build the layout parameters from |
 
 | Return ||
 |---|---|
@@ -8620,7 +8620,7 @@ Called when a new child is added to this ViewGroup. Overrides should always call
 
 | Parameters ||
 |---|---|
-| `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the added child view |
+| `child` | [View](../android/view/View.md)!: the added child view |
 
 ### onViewRemoved
 
@@ -8634,7 +8634,7 @@ Called when a child view is removed from this ViewGroup. Overrides should always
 
 | Parameters ||
 |---|---|
-| `child` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the removed child view |
+| `child` | [View](../android/view/View.md)!: the removed child view |
 
 ### requestLayout
 
@@ -8861,7 +8861,7 @@ To leave the start index undefined, use the value `https://developer.android.com
 | Parameters ||
 |---|---|
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start index |
-| `alignment` | [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)!: the alignment |
+| `alignment` | [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)!: the alignment |
 
 **See Also**
 
@@ -8884,7 +8884,7 @@ Equivalent to: `spec(start, 1, alignment, weight)`.
 | Parameters ||
 |---|---|
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start |
-| `alignment` | [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)!: the alignment |
+| `alignment` | [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)!: the alignment |
 | `weight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the weight |
 | --- | --- |
 
@@ -8952,7 +8952,7 @@ Equivalent to: `spec(start, size, alignment, 0f)`.
 |---|---|
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size |
-| `alignment` | [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)!: the alignment |
+| `alignment` | [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)!: the alignment |
 | --- | --- |
 
 ### spec
@@ -8982,7 +8982,7 @@ To leave the start index undefined, use the value `https://developer.android.com
 |---|---|
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the start |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size |
-| `alignment` | [GridLayout.Alignment](https://developer.android.com/reference/kotlin/android/widget/GridLayout.Alignment)!: the alignment |
+| `alignment` | [GridLayout.Alignment](../android/widget/GridLayout.Alignment.md)!: the alignment |
 | --- | --- |
 | `weight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): the weight |
 

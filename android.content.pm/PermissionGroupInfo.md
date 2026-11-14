@@ -8,8 +8,8 @@ open class PermissionGroupInfo : PackageItemInfo, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo) ||
-| | ↳ | [android.content.pm.PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#) |
+| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) ||
+| | ↳ | [android.content.pm.PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md) |
 
 Information you can retrieve about a particular security permission group known to the system. This corresponds to information collected from the AndroidManifest.xml's \<permission-group\> tags.
 
@@ -98,7 +98,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#descriptionRes:kotlin.Int` A string resource identifier (in the package's resources) of this permission's description. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#flags:kotlin.Int` Additional flags about this group as given by `https://developer.android.com/reference/kotlin/android/R.attr.html#permissionGroupFlags:kotlin.Int`. |
 | --- | --- |
@@ -199,7 +199,7 @@ PermissionGroupInfo(orig: PermissionGroupInfo)
 
 | Parameters ||
 |---|---|
-| `orig` | [PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo#): This value cannot be `null`. |
+| `orig` | [PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md): This value cannot be `null`. |
 
 ## Public methods
 
@@ -229,7 +229,7 @@ Retrieve the textual description of this permission. This will call back on the 
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager): A PackageManager from which the label can be loaded; usually the PackageManager from which you originally retrieved this item. This value cannot be `null`. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md): A PackageManager from which the label can be loaded; usually the PackageManager from which you originally retrieved this item. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -264,7 +264,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

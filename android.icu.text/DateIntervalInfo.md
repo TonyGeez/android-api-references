@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # DateIntervalInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/text/DateIntervalInfo "View this page in Java")
+Kotlin | [Java](../android/icu/text/DateIntervalInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class DateIntervalInfo : Cloneable, Freezable<DateIntervalInfo!>, Seriali
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#) |
+| ↳ | [android.icu.text.DateIntervalInfo](../android/icu/text/DateIntervalInfo.md) |
 
 DateIntervalInfo is a public class for encapsulating localizable date time interval patterns. It is used by DateIntervalFormat.
 
@@ -57,14 +57,14 @@ DateIntervalInfo are not expected to be subclassed. Data for a calendar is loade
 | Public methods ||
 |---|---|
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#clone()()` Clone this object. |
-| open [DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#cloneAsThawed()()` Provides for the clone operation. |
+| open [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#cloneAsThawed()()` Provides for the clone operation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Override equals |
 | --- | --- |
-| open [DateIntervalInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#freeze()()` Freezes the object. |
+| open [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#freeze()()` Freezes the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#getDefaultOrder()()` Get default order -- whether the first date in pattern is later date or not. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#getFallbackIntervalPattern()()` Get the fallback interval pattern. |
 | --- | --- |
-| open [DateIntervalInfo.PatternInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo.PatternInfo)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#getIntervalPattern(kotlin.String,%20kotlin.Int)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the interval pattern given the largest different calendar field. |
+| open [DateIntervalInfo.PatternInfo](../android/icu/text/DateIntervalInfo.PatternInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#getIntervalPattern(kotlin.String,%20kotlin.Int)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the interval pattern given the largest different calendar field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#hashCode()()` Override hashcode |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo#isFrozen()()` Determines whether the object has been frozen or not. |
 | --- | --- |
@@ -85,7 +85,7 @@ Construct DateIntervalInfo for the given locale,
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the interval patterns are loaded from the appropriate calendar data (specified calendar or default calendar) in this locale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the interval patterns are loaded from the appropriate calendar data (specified calendar or default calendar) in this locale. |
 
 ### DateIntervalInfo
 
@@ -99,7 +99,7 @@ Construct DateIntervalInfo for the given `https://developer.android.com/referenc
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the interval patterns are loaded from the appropriate calendar data (specified calendar or default calendar) in this locale. |
+| `locale` | [Locale](../java/util/Locale.md)!: the interval patterns are loaded from the appropriate calendar data (specified calendar or default calendar) in this locale. |
 
 ## Public methods
 

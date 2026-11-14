@@ -5,26 +5,26 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 
 # OnUtteranceCompletedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener "View this page in Java") 
+Kotlin| [Java](../android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.md) 
 | --- | --- |
 
 ```
 interface OnUtteranceCompletedListener
 ```
 
-| [android.speech.tts.TextToSpeech.OnUtteranceCompletedListener](https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener#) |
+| [android.speech.tts.TextToSpeech.OnUtteranceCompletedListener](../android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.md) |
 
 | **This interface was deprecated in API level 18.**
 |
-| Use [UtteranceProgressListener](https://developer.android.com/reference/kotlin/android/speech/tts/UtteranceProgressListener) instead.
+| Use [UtteranceProgressListener](../android/speech/tts/UtteranceProgressListener.md) instead.
 
-Listener that will be called when the TTS service has completed synthesizing an utterance. This is only called if the utterance has an utterance ID (see [TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID](https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech.Engine#KEY_PARAM_UTTERANCE_ID:kotlin.String)).
+Listener that will be called when the TTS service has completed synthesizing an utterance. This is only called if the utterance has an utterance ID (see [TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID](../android/speech/tts/TextToSpeech.Engine.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUtteranceCompleted](https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener#onUtteranceCompleted(kotlin.String))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance has been synthesized. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUtteranceCompleted](../android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance has been synthesized. |
 
 ## Public methods
 

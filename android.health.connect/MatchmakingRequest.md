@@ -9,7 +9,7 @@ class MatchmakingRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.MatchmakingRequest](https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#) |
+| ↳ | [android.health.connect.MatchmakingRequest](../android/health/connect/MatchmakingRequest.md) |
 
 Represents a request to determine if there are matching data sources for a given set of record types. This request is used with `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#isMatchmakingPossible(android.health.connect.MatchmakingRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` and `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMatchmakingIntent(android.health.connect.MatchmakingRequest)`.
 
@@ -27,10 +27,10 @@ Represents a request to determine if there are matching data sources for a given
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#getExcludedDataSources()()` Returns the `https://developer.android.com/reference/kotlin/java/util/Set.html#` of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin`s to exclude from the matchmaking. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](../android/health/connect/datatypes/DataOrigin.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#getExcludedDataSources()()` Returns the `https://developer.android.com/reference/kotlin/java/util/Set.html#` of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin`s to exclude from the matchmaking. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#getIncludedDataSources()()` Returns the `https://developer.android.com/reference/kotlin/java/util/Set.html#` of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin`s to include in the matchmaking. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record)!\>!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#getRecordTypes()()` Returns the set of record types for which matching data sources are being requested. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](../android/health/connect/datatypes/DataOrigin.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#getIncludedDataSources()()` Returns the `https://developer.android.com/reference/kotlin/java/util/Set.html#` of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin`s to include in the matchmaking. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java/lang/Class.md)\<out [Record](../android/health/connect/datatypes/Record.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#getRecordTypes()()` Returns the set of record types for which matching data sources are being requested. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#toString()()` Returns a string representation of the object. |
@@ -38,7 +38,7 @@ Represents a request to determine if there are matching data sources for a given
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [MatchmakingRequest](https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MatchmakingRequest](../android/health/connect/MatchmakingRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -178,7 +178,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

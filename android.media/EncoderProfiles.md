@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # EncoderProfiles
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/EncoderProfiles "View this page in Java")
+Kotlin | [Java](../android/media/EncoderProfiles.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class EncoderProfiles
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.EncoderProfiles](https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#) |
+| ↳ | [android.media.EncoderProfiles](../android/media/EncoderProfiles.md) |
 
 Describes a set of encoding profiles for a given media (audio and/or video) profile. These settings are read-only.
 
@@ -46,11 +46,11 @@ Each media profile specifies a set of audio and a set of video specific settings
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.AudioProfile](https://developer.android.com/reference/kotlin/android/media/EncoderProfiles.AudioProfile)!\> | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getAudioProfiles()()` Returns the defined audio encoder profiles. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.AudioProfile](../android/media/EncoderProfiles.AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getAudioProfiles()()` Returns the defined audio encoder profiles. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getDefaultDurationSeconds()()` Default recording duration in seconds before the session is terminated. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getRecommendedFileFormat()()` Recommended output file format |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.VideoProfile](https://developer.android.com/reference/kotlin/android/media/EncoderProfiles.VideoProfile)!\> | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getVideoProfiles()()` Returns the defined video encoder profiles. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.VideoProfile](../android/media/EncoderProfiles.VideoProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getVideoProfiles()()` Returns the defined video encoder profiles. |
 
 ## Public methods
 

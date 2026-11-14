@@ -8,7 +8,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 @Target([AnnotationTarget.FIELD]) class Native
 ```
 
-| [java.lang.annotation.Native](https://developer.android.com/reference/kotlin/java/lang/annotation/Native#) |
+| [java.lang.annotation.Native](../java/lang/annotation/Native.md) |
 
 Indicates that a field defining a constant value may be referenced from native code. The annotation may be used as a hint by tools that generate native header files to determine whether a header file is required, and if so, what declarations it should contain.
 
@@ -16,7 +16,7 @@ Indicates that a field defining a constant value may be referenced from native c
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Native](https://developer.android.com/reference/kotlin/java/lang/annotation/Native#Native())`()` Indicates that a field defining a constant value may be referenced from native code. |
+| [Native](../java/lang/annotation/Native.md))`()` Indicates that a field defining a constant value may be referenced from native code. |
 
 ## Public constructors
 

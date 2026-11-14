@@ -10,27 +10,27 @@ class Permissions : PermissionCollection, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection) ||
-| | ↳ | [java.security.Permissions](https://developer.android.com/reference/kotlin/java/security/Permissions#) |
+| ↳ | [java.security.PermissionCollection](../java/security/PermissionCollection.md) ||
+| | ↳ | [java.security.Permissions](../java/security/Permissions.md) |
 
-Android doesn't support [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#). Do not use this class.
+Android doesn't support [SecurityManager](../java/lang/SecurityManager.md). Do not use this class.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [Permissions](https://developer.android.com/reference/kotlin/java/security/Permissions#Permissions())`()` <br /> |
+| [Permissions](../java/security/Permissions.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/security/Permissions#add(java.security.Permission))`(`permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` <br /> |
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!\>! | [elements](https://developer.android.com/reference/kotlin/java/security/Permissions#elements())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/Permissions#implies(java.security.Permission))`(`permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](../java/security/Permissions.md))`(`permission:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
+| [Enumeration](../java/util/Enumeration.md)\< [Permission](../java/security/Permission.md)!\>! | [elements](../java/security/Permissions.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/Permissions.md))`(`permission:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/java/security/PermissionCollection#isReadOnly())`()` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](https://developer.android.com/reference/kotlin/java/security/PermissionCollection#setReadOnly())`()` <br /> | ||
+| From class [PermissionCollection](../java/security/PermissionCollection.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/security/PermissionCollection.md))`()` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](../java/security/PermissionCollection.md))`()` <br /> | ||
 
 ## Public constructors
 
@@ -54,7 +54,7 @@ fun add(permission: Permission!): Unit
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------|
-| `permission` | [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!:the Permission object to add. |
+| `permission` | [Permission](../java/security/Permission.md)!:the Permission object to add. |
 
 ### elements
 
@@ -66,7 +66,7 @@ fun elements(): Enumeration<Permission!>!
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!>! | an enumeration of all the Permissions. |
+| [Enumeration](../java/util/Enumeration.md)< [Permission](../java/security/Permission.md)!>! | an enumeration of all the Permissions. |
 
 ### implies
 
@@ -78,7 +78,7 @@ fun implies(permission: Permission!): Boolean
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------|
-| `permission` | [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!:the Permission object to compare. |
+| `permission` | [Permission](../java/security/Permission.md)!:the Permission object to compare. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|

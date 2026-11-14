@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # Face
 
-Kotlin | [Java](https://developer.android.com/reference/android/hardware/camera2/params/Face "View this page in Java")
+Kotlin | [Java](../android/hardware/camera2/params/Face.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class Face
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.Face](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#) |
+| ↳ | [android.hardware.camera2.params.Face](../android/hardware/camera2/params/Face.md) |
 
 Describes a face detected in an image.
 
@@ -30,12 +30,12 @@ Describes a face detected in an image.
 
 | Public methods ||
 |---|---|
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getBounds()()` Bounds of the face. |
+| [Rect](../android/graphics/Rect.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getBounds()()` Bounds of the face. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getId()()` An unique id per face while the face is visible to the tracker. |
-| [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getLeftEyePosition()()` The coordinates of the center of the left eye. |
+| [Point](../android/graphics/Point.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getLeftEyePosition()()` The coordinates of the center of the left eye. |
 | --- | --- |
-| [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getMouthPosition()()` The coordinates of the center of the mouth. |
-| [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getRightEyePosition()()` The coordinates of the center of the right eye. |
+| [Point](../android/graphics/Point.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getMouthPosition()()` The coordinates of the center of the mouth. |
+| [Point](../android/graphics/Point.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getRightEyePosition()()` The coordinates of the center of the right eye. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getScore()()` The confidence level for the detection of the face. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#toString()()` Represent the Face as a string for debugging purposes. |

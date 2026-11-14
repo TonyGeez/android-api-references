@@ -10,9 +10,9 @@ abstract class TimerTask : Runnable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask#) |
+| ↳ | [java.util.TimerTask](../java/util/TimerTask.md) |
 
-A task that can be scheduled for one-time or repeated execution by a [Timer](https://developer.android.com/reference/kotlin/java/util/Timer).
+A task that can be scheduled for one-time or repeated execution by a [Timer](../java/util/Timer.md).
 
 A timer task is*not* reusable. Once a task has been scheduled for execution on a`Timer`or cancelled, subsequent attempts to schedule it for execution will throw`IllegalStateException`.
 
@@ -20,13 +20,13 @@ A timer task is*not* reusable. Once a task has been scheduled for execution on a
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------|---|
-| [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask#TimerTask())`()` Creates a new timer task. |
+| [TimerTask](../java/util/TimerTask.md))`()` Creates a new timer task. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/util/TimerTask#cancel())`()` Cancels this timer task. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](https://developer.android.com/reference/kotlin/java/util/TimerTask#run())`()` The action to be performed by this timer task. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [scheduledExecutionTime](https://developer.android.com/reference/kotlin/java/util/TimerTask#scheduledExecutionTime())`()` Returns the*scheduled* execution time of the most recent*actual*execution of this task. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](../java/util/TimerTask.md))`()` Cancels this timer task. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](../java/util/TimerTask.md))`()` The action to be performed by this timer task. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [scheduledExecutionTime](../java/util/TimerTask.md))`()` Returns the*scheduled* execution time of the most recent*actual*execution of this task. |
 | --- | --- |
 
 ## Protected constructors
@@ -100,4 +100,4 @@ This method is typically*not* used in conjunction with*fixed-delay execution* re
 
 **See Also**
 
-- [java.util.Date#getTime()](https://developer.android.com/reference/kotlin/java/util/Date#getTime())
+- [java.util.Date#getTime()](../java/util/Date.md))

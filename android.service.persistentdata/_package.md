@@ -2,10 +2,10 @@
 
 # android.service.persistentdata
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/persistentdata/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/persistentdata/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [PersistentDataBlockManager](https://developer.android.com/reference/kotlin/android/service/persistentdata/PersistentDataBlockManager) | Interface to the persistent data partition. |
+| [PersistentDataBlockManager](../android/service/persistentdata/PersistentDataBlockManager.md) | Interface to the persistent data partition. |
 | --- | --- |

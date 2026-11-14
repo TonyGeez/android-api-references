@@ -2,7 +2,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiP2pUpnpServiceInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo "View this page in Java")
+Kotlin | [Java](../android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class WifiP2pUpnpServiceInfo : WifiP2pServiceInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo) ||
-| | ↳ | [android.net.wifi.p2p.nsd.WifiP2pUpnpServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo#) |
+| ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) ||
+| | ↳ | [android.net.wifi.p2p.nsd.WifiP2pUpnpServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo.md) |
 
 A class for storing Upnp service information that is advertised over a Wi-Fi peer-to-peer setup.
 
@@ -25,7 +25,7 @@ A class for storing Upnp service information that is advertised over a Wi-Fi pee
 
 | Public methods ||
 |---|---|
-| open static [WifiP2pUpnpServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo#)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo#newInstance(kotlin.String,%20kotlin.String,%20kotlin.collections.MutableList)(uuid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, device: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, services: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create UPnP service information object. |
+| open static [WifiP2pUpnpServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo#newInstance(kotlin.String,%20kotlin.String,%20kotlin.collections.MutableList)(uuid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, device: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, services: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create UPnP service information object. |
 
 | Inherited functions ||
 |---|---|

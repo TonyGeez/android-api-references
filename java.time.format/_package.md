@@ -4,21 +4,21 @@
 
 ## Classes
 
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter) | Formatter for printing and parsing date-time objects. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md) | Formatter for printing and parsing date-time objects. |
 | --- | --- |
-| [DateTimeFormatterBuilder](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder) | Builder to create date-time formatters. |
-| [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle) | Localized decimal style used in date and time formatting. |
+| [DateTimeFormatterBuilder](../java/time/format/DateTimeFormatterBuilder.md) | Builder to create date-time formatters. |
+| [DecimalStyle](../java/time/format/DecimalStyle.md) | Localized decimal style used in date and time formatting. |
 
 ## Exceptions
 
-| [DateTimeParseException](https://developer.android.com/reference/kotlin/java/time/format/DateTimeParseException) | An exception thrown when an error occurs during parsing. |
+| [DateTimeParseException](../java/time/format/DateTimeParseException.md) | An exception thrown when an error occurs during parsing. |
 | --- | --- |
 
 ## Enums
 
-| [FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle) | Enumeration of the style of a localized date, time or date-time formatter. |
+| [FormatStyle](../java/time/format/FormatStyle.md) | Enumeration of the style of a localized date, time or date-time formatter. |
 | --- | --- |
-| [ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle) | Enumeration of different ways to resolve dates and times. |
-| [SignStyle](https://developer.android.com/reference/kotlin/java/time/format/SignStyle) | Enumeration of ways to handle the positive/negative sign. |
-| [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle) | Enumeration of the style of text formatting and parsing. |
+| [ResolverStyle](../java/time/format/ResolverStyle.md) | Enumeration of different ways to resolve dates and times. |
+| [SignStyle](../java/time/format/SignStyle.md) | Enumeration of ways to handle the positive/negative sign. |
+| [TextStyle](../java/time/format/TextStyle.md) | Enumeration of the style of text formatting and parsing. |
 | --- | --- |

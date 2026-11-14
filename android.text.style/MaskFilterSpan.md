@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MaskFilterSpan
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/style/MaskFilterSpan "View this page in Java") 
+Kotlin| [Java](../android/text/style/MaskFilterSpan.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ open class MaskFilterSpan : CharacterStyle, UpdateAppearance
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) ||
-| | ↳ | [android.text.style.MaskFilterSpan](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) ||
+| | ↳ | [android.text.style.MaskFilterSpan](../android/text/style/MaskFilterSpan.md) |
 
-Span that allows setting a [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#) to the text it's attached to.
+Span that allows setting a [MaskFilter](../android/graphics/MaskFilter.md) to the text it's attached to.
 
-For example, to blur a text, a [android.graphics.BlurMaskFilter](https://developer.android.com/reference/kotlin/android/graphics/BlurMaskFilter.html#) can be used: 
+For example, to blur a text, a [android.graphics.BlurMaskFilter](../android/graphics/BlurMaskFilter.md) can be used: 
 
 ```kotlin
 MaskFilter blurMask = new BlurMaskFilter(5f, BlurMaskFilter.Blur.NORMAL);
@@ -32,18 +32,18 @@ Text blurred with the`MaskFilterSpan`.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MaskFilterSpan](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#MaskFilterSpan(android.graphics.MaskFilter))`(`filter:` ` [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#)!`)` Creates a [MaskFilterSpan](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#) from a [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#). |
+| [MaskFilterSpan](../android/text/style/MaskFilterSpan.md))`(`filter:` ` [MaskFilter](../android/graphics/MaskFilter.md)!`)` Creates a [MaskFilterSpan](../android/text/style/MaskFilterSpan.md) from a [MaskFilter](../android/graphics/MaskFilter.md). |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#)! | [getMaskFilter](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#getMaskFilter())`()` Return the mask filter for this span. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#toString())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#updateDrawState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> |
+| open [MaskFilter](../android/graphics/MaskFilter.md)! | [getMaskFilter](../android/text/style/MaskFilterSpan.md))`()` Return the mask filter for this span. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/style/MaskFilterSpan.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/MaskFilterSpan.md))`(`ds:` ` [TextPaint](../android/text/TextPaint.md)!`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)! | [getUnderlying](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#getUnderlying())`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)! | [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle))`(`cs:` ` [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [getUnderlying](../android/text/style/CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 ## Public constructors
 
@@ -55,11 +55,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 MaskFilterSpan(filter: MaskFilter!)
 ```
 
-Creates a [MaskFilterSpan](https://developer.android.com/reference/kotlin/android/text/style/MaskFilterSpan#) from a [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#).
+Creates a [MaskFilterSpan](../android/text/style/MaskFilterSpan.md) from a [MaskFilter](../android/graphics/MaskFilter.md).
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `filter` | [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#)!:the filter to be applied to the`TextPaint` |
+| `filter` | [MaskFilter](../android/graphics/MaskFilter.md)!:the filter to be applied to the`TextPaint` |
 
 ## Public methods
 
@@ -75,7 +75,7 @@ Return the mask filter for this span.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------|
-| [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#)! | the mask filter for this span |
+| [MaskFilter](../android/graphics/MaskFilter.md)! | the mask filter for this span |
 
 ### toString
 

@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # TypeConverter
 
-Kotlin| [Java](https://developer.android.com/reference/android/animation/TypeConverter "View this page in Java") 
+Kotlin| [Java](../android/animation/TypeConverter.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class TypeConverter<T : Any!, V : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter#) |
+| ↳ | [android.animation.TypeConverter](../android/animation/TypeConverter.md) |
 
-| Known Direct Subclasses [BidirectionalTypeConverter](https://developer.android.com/reference/kotlin/android/animation/BidirectionalTypeConverter) |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------| | [BidirectionalTypeConverter](https://developer.android.com/reference/kotlin/android/animation/BidirectionalTypeConverter) | Abstract base class used convert type T to another type V and back again. | |
+| Known Direct Subclasses [BidirectionalTypeConverter](../android/animation/BidirectionalTypeConverter.md) |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------| | [BidirectionalTypeConverter](../android/animation/BidirectionalTypeConverter.md) | Abstract base class used convert type T to another type V and back again. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract base class used convert type T to another type V. This is necessary when the value types of in animation are different from the property type.
@@ -24,11 +24,11 @@ Abstract base class used convert type T to another type V. This is necessary whe
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TypeConverter](https://developer.android.com/reference/kotlin/android/animation/TypeConverter#TypeConverter(java.lang.Class,%20java.lang.Class))`(`fromClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`, `toClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>!`)` <br /> |
+| [TypeConverter](../android/animation/TypeConverter.md))`(`fromClass:` ` [Class](../java/lang/Class.md)<T>!`, `toClass:` ` [Class](../java/lang/Class.md)<V>!`)` <br /> |
 
 | Public methods ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractV | [convert](https://developer.android.com/reference/kotlin/android/animation/TypeConverter#convert(android.animation.TypeConverter.T))`(`value:` `T`)` Converts a value from one type to another. |
+| abstractV | [convert](../android/animation/TypeConverter.md))`(`value:` `T`)` Converts a value from one type to another. |
 
 ## Public constructors
 

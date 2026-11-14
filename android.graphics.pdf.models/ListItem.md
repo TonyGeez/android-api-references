@@ -3,7 +3,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # ListItem
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/models/ListItem "View this page in Java")
+Kotlin | [Java](../android/graphics/pdf/models/ListItem.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class ListItem : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.models.ListItem](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/ListItem#) |
+| ↳ | [android.graphics.pdf.models.ListItem](../android/graphics/pdf/models/ListItem.md) |
 
 Represents a single option in a combo box or list box PDF form widget.
 
@@ -40,7 +40,7 @@ Represents a single option in a combo box or list box PDF form widget.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ListItem](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/ListItem#)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/ListItem#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ListItem](../android/graphics/pdf/models/ListItem.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/ListItem#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -185,7 +185,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

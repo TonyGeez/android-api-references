@@ -8,12 +8,12 @@ open class Spinner : AbsSpinner, DialogInterface.OnClickListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||||
-| | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||||
-| | | ↳ | [android.widget.AdapterView](https://developer.android.com/reference/kotlin/android/widget/AdapterView)\< [android.widget.SpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter)\> |||
+| ↳ | [android.view.View](../android/view/View.md) |||||
+| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) ||||
+| | | ↳ | [android.widget.AdapterView](../android/widget/AdapterView.md)\< [android.widget.SpinnerAdapter](../android/widget/SpinnerAdapter.md)\> |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.AbsSpinner](https://developer.android.com/reference/kotlin/android/widget/AbsSpinner) ||
-| | | | | ↳ | [android.widget.Spinner](https://developer.android.com/reference/kotlin/android/widget/Spinner#) |
+| | | | ↳ | [android.widget.AbsSpinner](../android/widget/AbsSpinner.md) ||
+| | | | | ↳ | [android.widget.Spinner](../android/widget/Spinner.md) |
 
 A view that displays one child at a time and lets the user pick among them. The items in the Spinner come from the `https://developer.android.com/reference/kotlin/android/widget/Adapter` associated with this view.
 
@@ -23,16 +23,16 @@ See the [Spinners](https://developer.android.com/guide/topics/ui/controls/spinne
 
 | XML attributes ||
 |---|---|
-| [`android:dropDownHorizontalOffset`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Amount of pixels by which the drop down should be offset horizontally. |
-| [`android:dropDownSelector`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | List selector to use for spinnerMode="dropdown" display. |
-| [`android:dropDownVerticalOffset`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Amount of pixels by which the drop down should be offset vertically. |
+| [`android:dropDownHorizontalOffset`](../android/widget/Spinner.md) | Amount of pixels by which the drop down should be offset horizontally. |
+| [`android:dropDownSelector`](../android/widget/Spinner.md) | List selector to use for spinnerMode="dropdown" display. |
+| [`android:dropDownVerticalOffset`](../android/widget/Spinner.md) | Amount of pixels by which the drop down should be offset vertically. |
 | --- | --- |
-| [`android:dropDownWidth`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Width of the dropdown in spinnerMode="dropdown". |
-| [`android:gravity`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Gravity setting for positioning the currently selected item. |
-| [`android:popupBackground`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Background drawable to use for the dropdown in spinnerMode="dropdown". |
+| [`android:dropDownWidth`](../android/widget/Spinner.md) | Width of the dropdown in spinnerMode="dropdown". |
+| [`android:gravity`](../android/widget/Spinner.md) | Gravity setting for positioning the currently selected item. |
+| [`android:popupBackground`](../android/widget/Spinner.md) | Background drawable to use for the dropdown in spinnerMode="dropdown". |
 | --- | --- |
-| [`android:prompt`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | The prompt to display when the spinner's dialog is shown. |
-| [`android:spinnerMode`](https://developer.android.com/reference/kotlin/android/widget/Spinner#attr_Spinner) | Display mode for spinner options. |
+| [`android:prompt`](../android/widget/Spinner.md) | The prompt to display when the spinner's dialog is shown. |
+| [`android:spinnerMode`](../android/widget/Spinner.md) | Display mode for spinner options. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner` `https://developer.android.com/reference/kotlin/android/widget/AbsSpinner#attr_AbsSpinner` Reference to an array resource that will populate the Spinner. For static content, this is simpler than populating the Spinner programmatically.
 
@@ -656,7 +656,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -681,7 +681,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -691,7 +691,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -711,7 +711,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -721,7 +721,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -731,7 +731,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -741,7 +741,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -751,7 +751,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -761,7 +761,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -771,7 +771,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -781,7 +781,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -791,7 +791,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -801,7 +801,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -971,7 +971,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -991,7 +991,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1033,7 +1033,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1129,7 +1129,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1223,7 +1223,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1680,7 +1680,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1788,15 +1788,15 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getDropDownWidth()()` Get the configured width of the spinner's popup window of choices in pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getGravity()()` Describes how the selected item view is positioned. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPopupBackground()()` Get the background drawable for the spinner's popup window of choices. |
-| open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPopupContext()()` <br /> |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPopupBackground()()` Get the background drawable for the spinner's popup window of choices. |
+| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPopupContext()()` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#getPrompt()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onClick(android.content.DialogInterface,%20kotlin.Int)(dialog: https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#!, which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method will be invoked when a button in the dialog is clicked. |
-| open [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
+| open [PointerIcon](../android/view/PointerIcon.md)! | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | --- | --- |
-| open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#onTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Spinner#performClick()()` Call this view's OnClickListener, if it is defined. |
 | --- | --- |
@@ -7494,7 +7494,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -8682,7 +8682,7 @@ Constructs a new spinner with the given context's theme.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
 
 ### Spinner
 
@@ -8698,8 +8698,8 @@ Constructs a new spinner with the given context's theme and the supplied attribu
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 
 ### Spinner
 
@@ -8716,8 +8716,8 @@ Constructs a new spinner with the given context's theme, the supplied attribute 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 
@@ -8737,8 +8737,8 @@ Constructs a new spinner with the given context's theme, the supplied attribute 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Constant describing how the user will select choices from the spinner. |
@@ -8765,8 +8765,8 @@ Constructs a new spinner with the given context's theme, the supplied attribute 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
@@ -8795,13 +8795,13 @@ Constructs a new spinner with the given context, the supplied attribute set, def
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context against which the view is inflated, which provides access to the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The context against which the view is inflated, which provides access to the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Constant describing how the user will select choices from the spinner. |
-| `popupTheme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)!: The theme against which the dialog or dropdown popup should be inflated. May be `null` to use the view theme. If set, this will override any value specified by `https://developer.android.com/reference/kotlin/android/R.styleable.html#Spinner_popupTheme:kotlin.Int`. |
+| `popupTheme` | [Resources.Theme](../android/content/res/Resources.Theme.md)!: The theme against which the dialog or dropdown popup should be inflated. May be `null` to use the view theme. If set, this will override any value specified by `https://developer.android.com/reference/kotlin/android/R.styleable.html#Spinner_popupTheme:kotlin.Int`. |
 | --- | --- |
 
 **See Also**
@@ -8823,7 +8823,7 @@ Constructs a new spinner with the given context's theme and the supplied mode of
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Constant describing how the user will select choices from the spinner. |
 
 **See Also**
@@ -8966,7 +8966,7 @@ This method will be invoked when a button in the dialog is clicked.
 
 | Parameters ||
 |---|---|
-| `dialog` | [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!: the dialog that received the click |
+| `dialog` | [DialogInterface](../android/content/DialogInterface.md)!: the dialog that received the click |
 | `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the button that was clicked (ex. `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_POSITIVE:kotlin.Int`) or the position of the item clicked |
 
 ### onResolvePointerIcon
@@ -9006,7 +9006,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` that requires a pointer icon to be resolved for one of pointers. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` that requires a pointer icon to be resolved for one of pointers. |
 | `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the pointer in `event` for which to retrieve the `https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#`. This will be between 0 and `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getPointerCount()`. |
 
 | Return ||
@@ -9026,7 +9026,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 
 ### onSaveInstanceState
 
@@ -9065,7 +9065,7 @@ If this method is used to detect click actions, it is recommended that the actio
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The motion event. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event. |
 
 | Return ||
 |---|---|
@@ -9101,7 +9101,7 @@ Spinner overrides `https://developer.android.com/reference/kotlin/android/widget
 
 | Parameters ||
 |---|---|
-| `adapter` | [SpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter)!: the adapter to set |
+| `adapter` | [SpinnerAdapter](../android/widget/SpinnerAdapter.md)!: the adapter to set |
 
 | Exceptions ||
 |---|---|
@@ -9198,7 +9198,7 @@ Instead use `https://developer.android.com/reference/kotlin/android/widget/Adapt
 | Parameters ||
 |---|---|
 | `listener` | The callback that will be invoked. This value may be `null`. |
-| `l` | [AdapterView.OnItemClickListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener)?: this listener will be ignored |
+| `l` | [AdapterView.OnItemClickListener](../android/widget/AdapterView.OnItemClickListener.md)?: this listener will be ignored |
 
 ### setPopupBackgroundDrawable
 
@@ -9212,7 +9212,7 @@ Set the background drawable for the spinner's popup window of choices. Only vali
 
 | Parameters ||
 |---|---|
-| `background` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: Background drawable |
+| `background` | [Drawable](../android/graphics/drawable/Drawable.md)!: Background drawable |
 
 ### setPopupBackgroundResource
 

@@ -4,14 +4,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # DataActivationStateListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivationStateListener "View this page in Java") 
+Kotlin| [Java](../android/telephony/TelephonyCallback.DataActivationStateListener.md) 
 | --- | --- |
 
 ```
 interface DataActivationStateListener
 ```
 
-| [android.telephony.TelephonyCallback.DataActivationStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivationStateListener#) |
+| [android.telephony.TelephonyCallback.DataActivationStateListener](../android/telephony/TelephonyCallback.DataActivationStateListener.md) |
 
 Interface for SIM data activation state listener.
 
@@ -19,7 +19,7 @@ Interface for SIM data activation state listener.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataActivationStateChanged](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivationStateListener#onDataActivationStateChanged(kotlin.Int))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when the SIM data activation state has changed on the registered subscription. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataActivationStateChanged](../android/telephony/TelephonyCallback.DataActivationStateListener.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when the SIM data activation state has changed on the registered subscription. |
 
 ## Public methods
 
@@ -31,7 +31,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDataActivationStateChanged(state: Int): Unit
 ```
 
-Callback invoked when the SIM data activation state has changed on the registered subscription. Note, the registration subscription ID comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers TelephonyCallback by [TelephonyManager.registerTelephonyCallback(Executor, TelephonyCallback)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#registerTelephonyCallback(java.util.concurrent.Executor,%20android.telephony.TelephonyCallback)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subscription ID. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()).
+Callback invoked when the SIM data activation state has changed on the registered subscription. Note, the registration subscription ID comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers TelephonyCallback by [TelephonyManager.registerTelephonyCallback(Executor, TelephonyCallback)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subscription ID. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)).
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

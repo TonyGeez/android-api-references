@@ -2,10 +2,10 @@
 
 # android.service.wallpaper
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/wallpaper/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/wallpaper/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [WallpaperService](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService) | A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it. |
+| [WallpaperService](../android/service/wallpaper/WallpaperService.md) | A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it. |
 | --- | --- |

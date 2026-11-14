@@ -4,18 +4,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # OnReceiveContentListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/OnReceiveContentListener "View this page in Java") 
+Kotlin| [Java](../android/view/OnReceiveContentListener.md) 
 | --- | --- |
 
 ```
 interface OnReceiveContentListener
 ```
 
-| [android.view.OnReceiveContentListener](https://developer.android.com/reference/kotlin/android/view/OnReceiveContentListener#) |
+| [android.view.OnReceiveContentListener](../android/view/OnReceiveContentListener.md) |
 
 Listener for apps to implement handling for insertion of content. Content may be both text and non-text (plain/styled text, HTML, images, videos, audio files, etc).
 
-This listener can be attached to different types of UI components using [View.setOnReceiveContentListener](https://developer.android.com/reference/kotlin/android/view/View#setOnReceiveContentListener(kotlin.Array,%20android.view.OnReceiveContentListener)).
+This listener can be attached to different types of UI components using [View.setOnReceiveContentListener](../android/view/View.md)).
 
 Here is a sample implementation that handles content URIs and delegates the processing for text and everything else to the platform: 
 
@@ -59,7 +59,7 @@ Here is a sample implementation that handles content URIs and delegates the proc
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo)? | [onReceiveContent](https://developer.android.com/reference/kotlin/android/view/OnReceiveContentListener#onReceiveContent(android.view.View,%20android.view.ContentInfo))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)`, `payload:` ` [ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo)`)` Receive the given content. |
+| abstract [ContentInfo](../android/view/ContentInfo.md)? | [onReceiveContent](../android/view/OnReceiveContentListener.md))`(`view:` ` [View](../android/view/View.md)`, `payload:` ` [ContentInfo](../android/view/ContentInfo.md)`)` Receive the given content. |
 
 ## Public methods
 
@@ -80,22 +80,22 @@ Implementations should handle any content items of interest and return all unhan
 
 ### Handling different content
 
-- Text. If the [source](https://developer.android.com/reference/kotlin/android/view/ContentInfo#getSource())is [autofill](https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_AUTOFILL:kotlin.Int), the view's content should be fully replaced by the passed-in text. For sources other than autofill, the passed-in text should overwrite the current selection or be inserted at the current cursor position if there is no selection.
+- Text. If the [source](../android/view/ContentInfo.md))is [autofill](../android/view/ContentInfo.md), the view's content should be fully replaced by the passed-in text. For sources other than autofill, the passed-in text should overwrite the current selection or be inserted at the current cursor position if there is no selection.
 - Non-text content (e.g. images). The content may be inserted inline if the widget supports this, or it may be added as an attachment (could potentially be shown in a completely separate view).
 
 ### URI permissions
 
-[Read permissions](https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int) are granted automatically by the platform for any [content URIs](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String) in the payload passed to this listener. Permissions are transient and will be released automatically by the platform.
+[Read permissions](../android/content/Intent.md) are granted automatically by the platform for any [content URIs](../android/content/ContentResolver.md) in the payload passed to this listener. Permissions are transient and will be released automatically by the platform.
 
-Processing of content should normally be done in a service or activity. For long-running processing, using`androidx.work.WorkManager`is recommended. When implementing this, permissions should be extended to the target service or activity by passing the content using [Intent.setClipData](https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData))and [setting](https://developer.android.com/reference/kotlin/android/content/Intent.html#addFlags(kotlin.Int))the flag [FLAG_GRANT_READ_URI_PERMISSION](https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int).
+Processing of content should normally be done in a service or activity. For long-running processing, using`androidx.work.WorkManager`is recommended. When implementing this, permissions should be extended to the target service or activity by passing the content using [Intent.setClipData](../android/content/Intent.md))and [setting](../android/content/Intent.md))the flag [FLAG_GRANT_READ_URI_PERMISSION](../android/content/Intent.md).
 
 Alternatively, if using a background thread within the current context to process the content, a reference to the`payload`object should be maintained to ensure that permissions are not revoked prematurely.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View):The view where the content insertion was requested. This value cannot be`null`. |
-| `payload` | [ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo):The content to insert and related metadata. The payload may contain multiple items and their MIME types may be different (e.g. an image item and a text item). The payload may also contain items whose MIME type is not in the list of MIME types specified when [setting](https://developer.android.com/reference/kotlin/android/view/View#setOnReceiveContentListener(kotlin.Array,%20android.view.OnReceiveContentListener))the listener. For those items, the listener may reject the content (defer to the default platform behavior) or execute some other fallback logic (e.g. show an appropriate message to the user). This value cannot be`null`. |
+| `view` | [View](../android/view/View.md):The view where the content insertion was requested. This value cannot be`null`. |
+| `payload` | [ContentInfo](../android/view/ContentInfo.md):The content to insert and related metadata. The payload may contain multiple items and their MIME types may be different (e.g. an image item and a text item). The payload may also contain items whose MIME type is not in the list of MIME types specified when [setting](../android/view/View.md))the listener. For those items, the listener may reject the content (defer to the default platform behavior) or execute some other fallback logic (e.g. show an appropriate message to the user). This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo)? | The portion of the passed-in content whose processing should be delegated to the platform. Return null if all content was handled in some way. Actual insertion of the content may be processed asynchronously in the background and may or may not succeed even if this method returns null. For example, an app may end up not inserting an item if it exceeds the app's size limit for that type of content. |
+| [ContentInfo](../android/view/ContentInfo.md)? | The portion of the passed-in content whose processing should be delegated to the platform. Return null if all content was handled in some way. Actual insertion of the content may be processed asynchronously in the background and may or may not succeed even if this method returns null. For example, an app may end up not inserting an item if it exceeds the app's size limit for that type of content. |

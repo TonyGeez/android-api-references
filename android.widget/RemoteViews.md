@@ -8,7 +8,7 @@ open class RemoteViews : LayoutInflater.Filter, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#) |
+| ↳ | [android.widget.RemoteViews](../android/widget/RemoteViews.md) |
 
 A class that describes a view hierarchy that can be displayed in another process. The hierarchy is inflated from a layout resource file, and this class provides some basic operations for modifying the content of the inflated hierarchy.
 
@@ -96,11 +96,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#addStableView(kotlin.Int,%20android.widget.RemoteViews,%20kotlin.Int)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nestedView: https://developer.android.com/reference/kotlin/android/widget/RemoteViews#, stableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addView(android.view.View)` after inflating the given `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#addView(kotlin.Int,%20android.widget.RemoteViews)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nestedView: https://developer.android.com/reference/kotlin/android/widget/RemoteViews#!)` Equivalent to calling `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addView(android.view.View)` after inflating the given `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#`. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#apply(android.content.Context,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Inflates the view hierarchy represented by this object and applies all of the actions. |
+| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#apply(android.content.Context,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Inflates the view hierarchy represented by this object and applies all of the actions. |
 | --- | --- |
-| open [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#clone()()` Returns a deep copy of the RemoteViews object. |
+| open [RemoteViews](../android/widget/RemoteViews.md)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#clone()()` Returns a deep copy of the RemoteViews object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [RemoteViews.DrawInstructions](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions)? | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getDrawInstructions()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions` associated with this RemoteViews, if any. |
+| open [RemoteViews.DrawInstructions](../android/widget/RemoteViews.DrawInstructions.md)? | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getDrawInstructions()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions` associated with this RemoteViews, if any. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getLayoutId()()` Returns the layout id of the root layout associated with this RemoteViews. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#getPackage()()` <br /> |
@@ -223,7 +223,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#)!\> | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#CREATOR:android.os.Parcelable.Creator` Parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RemoteViews](../android/widget/RemoteViews.md)!\> | `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#CREATOR:android.os.Parcelable.Creator` Parcelable. |
 
 ## Constants
 
@@ -337,7 +337,7 @@ Reads a RemoteViews object from a parcel.
 
 | Parameters ||
 |---|---|
-| `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!: the parcel object |
+| `parcel` | [Parcel](../android/os/Parcel.md)!: the parcel object |
 
 ### RemoteViews
 
@@ -363,8 +363,8 @@ Create a new RemoteViews object that will inflate as the specified landspace or 
 
 | Parameters ||
 |---|---|
-| `landscape` | [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#)!: The RemoteViews to inflate in landscape configuration |
-| `portrait` | [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#)!: The RemoteViews to inflate in portrait configuration |
+| `landscape` | [RemoteViews](../android/widget/RemoteViews.md)!: The RemoteViews to inflate in landscape configuration |
+| `portrait` | [RemoteViews](../android/widget/RemoteViews.md)!: The RemoteViews to inflate in portrait configuration |
 
 | Exceptions ||
 |---|---|
@@ -389,7 +389,7 @@ Instantiates a RemoteViews object using `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `drawInstructions` | [RemoteViews.DrawInstructions](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions): The `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions` object. This value cannot be `null`. |
+| `drawInstructions` | [RemoteViews.DrawInstructions](../android/widget/RemoteViews.DrawInstructions.md): The `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.DrawInstructions` object. This value cannot be `null`. |
 
 ### RemoteViews
 
@@ -438,7 +438,7 @@ Create a new RemoteViews object that will inflate the layout with the closest si
 
 | Parameters ||
 |---|---|
-| `remoteViews` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [SizeF](https://developer.android.com/reference/kotlin/android/util/SizeF.html#)!, [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#)!\>: Mapping of size to layout. This value cannot be `null`. |
+| `remoteViews` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [SizeF](../android/util/SizeF.md)!, [RemoteViews](../android/widget/RemoteViews.md)!\>: Mapping of size to layout. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -463,7 +463,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/vi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the parent `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` to add child into. |
-| `nestedView` | [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#): `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#` that describes the child. This value cannot be `null`. |
+| `nestedView` | [RemoteViews](../android/widget/RemoteViews.md): `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#` that describes the child. This value cannot be `null`. |
 | `stableId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An id that is stable across different versions of RemoteViews. |
 | --- | --- |
 
@@ -483,7 +483,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/vi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the parent `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` to add child into. |
-| `nestedView` | [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews#)!: `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#` that describes the child. |
+| `nestedView` | [RemoteViews](../android/widget/RemoteViews.md)!: `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#` that describes the child. |
 
 ### apply
 
@@ -502,8 +502,8 @@ Inflates the view hierarchy represented by this object and applies all of the ac
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Default context to use |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: Parent that the resulting view hierarchy will be attached to. This method does **not** attach the hierarchy. The caller should do so when appropriate. |
+| `context` | [Context](../android/content/Context.md)!: Default context to use |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!: Parent that the resulting view hierarchy will be attached to. This method does **not** attach the hierarchy. The caller should do so when appropriate. |
 
 | Return ||
 |---|---|
@@ -607,7 +607,7 @@ Used to restrict the views which can be inflated
 
 | Parameters ||
 |---|---|
-| `clazz` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!: The class object for the View that is about to be inflated |
+| `clazz` | [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!: The class object for the View that is about to be inflated |
 
 | Return ||
 |---|---|
@@ -634,7 +634,7 @@ Applies all of the actions to the provided view.
 
 | Parameters ||
 |---|---|
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view to apply the actions to. This should be the result of the `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#apply(android.content.Context,%20android.view.ViewGroup)` call. |
+| `v` | [View](../android/view/View.md)!: The view to apply the actions to. This should be the result of the `https://developer.android.com/reference/kotlin/android/widget/RemoteViews#apply(android.content.Context,%20android.view.ViewGroup)` call. |
 
 ### removeAllViews
 
@@ -728,7 +728,7 @@ Call a method taking one Bitmap on a view in the layout for this RemoteViews.
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
-| `value` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: The value to pass to the method. |
+| `value` | [Bitmap](../android/graphics/Bitmap.md)!: The value to pass to the method. |
 | --- | --- |
 
 ### setBlendMode
@@ -749,7 +749,7 @@ Call a method taking one BlendMode on a view in the layout for this RemoteViews.
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
-| `value` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)?: The value to pass to the method. This value may be `null`. |
+| `value` | [BlendMode](../android/graphics/BlendMode.md)?: The value to pass to the method. This value may be `null`. |
 | --- | --- |
 
 ### setBoolean
@@ -791,7 +791,7 @@ Call a method taking one Bundle on a view in the layout for this RemoteViews.
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
-| `value` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The value to pass to the method. |
+| `value` | [Bundle](../android/os/Bundle.md)!: The value to pass to the method. |
 | --- | --- |
 
 ### setByte
@@ -1027,7 +1027,7 @@ Call a method taking one ColorStateList on a view in the layout for this RemoteV
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
-| `value` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: The value to pass to the method. This value may be `null`. |
+| `value` | [ColorStateList](../android/content/res/ColorStateList.md)?: The value to pass to the method. This value may be `null`. |
 | --- | --- |
 
 ### setColorStateList
@@ -1049,9 +1049,9 @@ Call a method taking one ColorStateList on a view in the layout for this RemoteV
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
-| `notNight` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_NO:kotlin.Int` This value may be `null`. |
+| `notNight` | [ColorStateList](../android/content/res/ColorStateList.md)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_NO:kotlin.Int` This value may be `null`. |
 | --- | --- |
-| `night` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_YES:kotlin.Int` This value may be `null`. |
+| `night` | [ColorStateList](../android/content/res/ColorStateList.md)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_YES:kotlin.Int` This value may be `null`. |
 
 ### setColorStateList
 
@@ -1291,7 +1291,7 @@ Call a method taking one Icon on a view in the layout for this RemoteViews.
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
-| `value` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)!: The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` to pass the method. |
+| `value` | [Icon](../android/graphics/drawable/Icon.md)!: The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` to pass the method. |
 | --- | --- |
 
 ### setIcon
@@ -1313,9 +1313,9 @@ Call a method taking one Icon on a view in the layout for this RemoteViews.
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the method to call. This value cannot be `null`. |
-| `notNight` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_NO:kotlin.Int` This value may be `null`. |
+| `notNight` | [Icon](../android/graphics/drawable/Icon.md)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_NO:kotlin.Int` This value may be `null`. |
 | --- | --- |
-| `night` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_YES:kotlin.Int` This value may be `null`. |
+| `night` | [Icon](../android/graphics/drawable/Icon.md)?: The value to pass to the method when the view's configuration is set to `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_NIGHT_YES:kotlin.Int` This value may be `null`. |
 
 ### setImageViewBitmap
 
@@ -1333,7 +1333,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view whose bitmap should change |
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: The new Bitmap for the drawable |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: The new Bitmap for the drawable |
 
 ### setImageViewIcon
 
@@ -1351,7 +1351,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view whose bitmap should change |
-| `icon` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)!: The new Icon for the ImageView |
+| `icon` | [Icon](../android/graphics/drawable/Icon.md)!: The new Icon for the ImageView |
 
 ### setImageViewResource
 
@@ -1387,7 +1387,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view whose drawable should change |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The Uri for the image |
+| `uri` | [Uri](../android/net/Uri.md)!: The Uri for the image |
 
 ### setInt
 
@@ -1493,7 +1493,7 @@ Call a method taking one Intent on a view in the layout for this RemoteViews.
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
-| `value` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to pass the method. |
+| `value` | [Intent](../android/content/Intent.md)!: The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to pass the method. |
 | --- | --- |
 
 ### setLabelFor
@@ -1561,7 +1561,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view that will trigger the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` when checked state changes. |
-| `response` | [RemoteViews.RemoteResponse](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse): The `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse` to send when the checked state changes. This value cannot be `null`. |
+| `response` | [RemoteViews.RemoteResponse](../android/widget/RemoteViews.RemoteResponse.md): The `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse` to send when the checked state changes. This value cannot be `null`. |
 
 ### setOnClickFillInIntent
 
@@ -1579,7 +1579,7 @@ When using collections (eg. `https://developer.android.com/reference/kotlin/andr
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to set the fillInIntent |
-| `fillInIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent which will be combined with the parent's PendingIntent in order to determine the on-click behavior of the view specified by viewId |
+| `fillInIntent` | [Intent](../android/content/Intent.md)!: The intent which will be combined with the parent's PendingIntent in order to determine the on-click behavior of the view specified by viewId |
 
 ### setOnClickPendingIntent
 
@@ -1597,7 +1597,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/vi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view that will trigger the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` when clicked |
-| `pendingIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)!: The `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to send when user clicks |
+| `pendingIntent` | [PendingIntent](../android/app/PendingIntent.md)!: The `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to send when user clicks |
 
 ### setOnClickResponse
 
@@ -1615,7 +1615,7 @@ Equivalent of calling `https://developer.android.com/reference/kotlin/android/vi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view that will trigger the `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse` when clicked |
-| `response` | [RemoteViews.RemoteResponse](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse): The `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse` to send when user clicks. This value cannot be `null`. |
+| `response` | [RemoteViews.RemoteResponse](../android/widget/RemoteViews.RemoteResponse.md): The `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteResponse` to send when user clicks. This value cannot be `null`. |
 
 ### setOnStylusHandwritingPendingIntent
 
@@ -1635,7 +1635,7 @@ A common use case is a remote view which looks like a text editor but does not a
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): identifier of the view that will trigger the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` when a stylus `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` occurs within the view's bounds |
-| `pendingIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)?: the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to send, or `null` to clear the handwriting delegation |
+| `pendingIntent` | [PendingIntent](../android/app/PendingIntent.md)?: the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to send, or `null` to clear the handwriting delegation |
 
 ### setPendingIntentTemplate
 
@@ -1653,7 +1653,7 @@ When using collections (eg. `https://developer.android.com/reference/kotlin/andr
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the collection who's children will use this PendingIntent template when clicked |
-| `pendingIntentTemplate` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)!: The `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be combined with extras specified by a child of viewId and executed when that child is clicked |
+| `pendingIntentTemplate` | [PendingIntent](../android/app/PendingIntent.md)!: The `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be combined with extras specified by a child of viewId and executed when that child is clicked |
 
 ### setProgressBar
 
@@ -1733,7 +1733,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the `https://developer.android.com/reference/kotlin/android/widget/AdapterView` |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent of the service which will be providing data to the RemoteViewsAdapter |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent of the service which will be providing data to the RemoteViewsAdapter |
 
 ### setRemoteAdapter
 
@@ -1751,7 +1751,7 @@ Creates a simple Adapter for the viewId specified. The viewId must point to an A
 | Parameters ||
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the `https://developer.android.com/reference/kotlin/android/widget/AdapterView`. |
-| `items` | [RemoteViews.RemoteCollectionItems](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteCollectionItems): The items to display in the `https://developer.android.com/reference/kotlin/android/widget/AdapterView`. This value cannot be `null`. |
+| `items` | [RemoteViews.RemoteCollectionItems](../android/widget/RemoteViews.RemoteCollectionItems.md): The items to display in the `https://developer.android.com/reference/kotlin/android/widget/AdapterView`. This value cannot be `null`. |
 
 ### setRemoteAdapter
 
@@ -1774,7 +1774,7 @@ Equivalent to calling `https://developer.android.com/reference/kotlin/android/wi
 |---|---|
 | `appWidgetId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the app widget which contains the specified view. (This parameter is ignored in this deprecated method) |
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the `https://developer.android.com/reference/kotlin/android/widget/AdapterView` |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent of the service which will be providing data to the RemoteViewsAdapter |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent of the service which will be providing data to the RemoteViewsAdapter |
 | --- | --- |
 
 ### setScrollPosition
@@ -1962,7 +1962,7 @@ Call a method taking one Uri on a view in the layout for this RemoteViews.
 |---|---|
 | `viewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the view on which to call the method. |
 | `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the method to call. |
-| `value` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The value to pass to the method. |
+| `value` | [Uri](../android/net/Uri.md)!: The value to pass to the method. |
 | --- | --- |
 
 ### setViewLayoutHeight
@@ -2317,7 +2317,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

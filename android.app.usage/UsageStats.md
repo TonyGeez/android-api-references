@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # UsageStats
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/usage/UsageStats "View this page in Java")
+Kotlin | [Java](../android/app/usage/UsageStats.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class UsageStats : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.usage.UsageStats](https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#) |
+| ↳ | [android.app.usage.UsageStats](../android/app/usage/UsageStats.md) |
 
 Contains usage statistics for an app package for a specific time range.
 
@@ -46,7 +46,7 @@ Contains usage statistics for an app package for a specific time range.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [UsageStats](https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#)!\> | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UsageStats](../android/app/usage/UsageStats.md)!\> | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -72,7 +72,7 @@ Add the statistics from the right `https://developer.android.com/reference/kotli
 
 | Parameters ||
 |---|---|
-| `right` | [UsageStats](https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#)!: The `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` object to merge into this one. |
+| `right` | [UsageStats](../android/app/usage/UsageStats.md)!: The `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` object to merge into this one. |
 
 | Exceptions ||
 |---|---|
@@ -211,7 +211,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -5,16 +5,16 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # OnBackStackChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener "View this page in Java") 
+Kotlin| [Java](../android/app/FragmentManager.OnBackStackChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnBackStackChangedListener
 ```
 
-| [android.app.FragmentManager.OnBackStackChangedListener](https://developer.android.com/reference/kotlin/android/app/FragmentManager.OnBackStackChangedListener#) |
+| [android.app.FragmentManager.OnBackStackChangedListener](../android/app/FragmentManager.OnBackStackChangedListener.md) |
 
-| Known Direct Subclasses [FragmentBreadCrumbs](https://developer.android.com/reference/kotlin/android/app/FragmentBreadCrumbs) |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [FragmentBreadCrumbs](https://developer.android.com/reference/kotlin/android/app/FragmentBreadCrumbs) | Helper class for showing "bread crumbs" representing the fragment stack in an activity. | |
+| Known Direct Subclasses [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md) |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md) | Helper class for showing "bread crumbs" representing the fragment stack in an activity. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 28.**
@@ -27,7 +27,7 @@ Interface to watch for changes to the back stack.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBackStackChanged](https://developer.android.com/reference/kotlin/android/app/FragmentManager.OnBackStackChangedListener#onBackStackChanged())`()` Called whenever the contents of the back stack change. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBackStackChanged](../android/app/FragmentManager.OnBackStackChangedListener.md))`()` Called whenever the contents of the back stack change. |
 
 ## Public methods
 

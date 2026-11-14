@@ -5,14 +5,14 @@ Deprecated in [API level 12](https://developer.android.com/guide/topics/manifest
 
 # PictureListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebView.PictureListener "View this page in Java") 
+Kotlin| [Java](../android/webkit/WebView.PictureListener.md) 
 | --- | --- |
 
 ```
 interface PictureListener
 ```
 
-| [android.webkit.WebView.PictureListener](https://developer.android.com/reference/kotlin/android/webkit/WebView.PictureListener#) |
+| [android.webkit.WebView.PictureListener](../android/webkit/WebView.PictureListener.md) |
 
 | **This interface was deprecated in API level 12.**
 |
@@ -24,7 +24,7 @@ Interface to listen for new pictures as they change.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNewPicture](https://developer.android.com/reference/kotlin/android/webkit/WebView.PictureListener#onNewPicture(android.webkit.WebView,%20android.graphics.Picture))`(`view:` ` [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!`, `picture:` ` [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture.html#)?`)` Used to provide notification that the WebView's picture has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNewPicture](../android/webkit/WebView.PictureListener.md))`(`view:` ` [WebView](../android/webkit/WebView.md)!`, `picture:` ` [Picture](../android/graphics/Picture.md)?`)` Used to provide notification that the WebView's picture has changed. |
 
 ## Public methods
 
@@ -41,9 +41,9 @@ abstract fun onNewPicture(
 
 **Deprecated:** *Deprecated due to internal changes.*
 
-Used to provide notification that the WebView's picture has changed. See [WebView.capturePicture](https://developer.android.com/reference/kotlin/android/webkit/WebView#capturePicture())for details of the picture.
+Used to provide notification that the WebView's picture has changed. See [WebView.capturePicture](../android/webkit/WebView.md))for details of the picture.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!:the WebView that owns the picture |
-| `picture` | [Picture](https://developer.android.com/reference/kotlin/android/graphics/Picture.html#)?:the new picture. Applications targeting [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int) or above will always receive a`null`Picture. |
+| `view` | [WebView](../android/webkit/WebView.md)!:the WebView that owns the picture |
+| `picture` | [Picture](../android/graphics/Picture.md)?:the new picture. Applications targeting [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](../android/os/Build.VERSION_CODES.md) or above will always receive a`null`Picture. |

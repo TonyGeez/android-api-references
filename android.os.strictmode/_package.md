@@ -2,39 +2,39 @@
 
 # android.os.strictmode
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/package-summary "View this page in Java")
+Kotlin| [Java](../android/os/strictmode/_package.md)
 | --- | --- |
 
 ## Exceptions
 
-| [CleartextNetworkViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/CleartextNetworkViolation) | <br /> |
+| [CleartextNetworkViolation](../android/os/strictmode/CleartextNetworkViolation.md) | <br /> |
 | --- | --- |
-| [ContentUriWithoutPermissionViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ContentUriWithoutPermissionViolation) | <br /> |
-| [CredentialProtectedWhileLockedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/CredentialProtectedWhileLockedViolation) | Subclass of`Violation`that is used when a process accesses filesystem paths stored in credential protected storage areas while the user is locked. |
-| [CustomViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/CustomViolation) | <br /> |
+| [ContentUriWithoutPermissionViolation](../android/os/strictmode/ContentUriWithoutPermissionViolation.md) | <br /> |
+| [CredentialProtectedWhileLockedViolation](../android/os/strictmode/CredentialProtectedWhileLockedViolation.md) | Subclass of`Violation`that is used when a process accesses filesystem paths stored in credential protected storage areas while the user is locked. |
+| [CustomViolation](../android/os/strictmode/CustomViolation.md) | <br /> |
 | --- | --- |
-| [DiskReadViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/DiskReadViolation) | <br /> |
-| [DiskWriteViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/DiskWriteViolation) | <br /> |
-| [ExplicitGcViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ExplicitGcViolation) | See # [android.os.StrictMode.ThreadPolicy.Builder#detectExplicitGc()](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy.Builder.html#detectExplicitGc()). |
+| [DiskReadViolation](../android/os/strictmode/DiskReadViolation.md) | <br /> |
+| [DiskWriteViolation](../android/os/strictmode/DiskWriteViolation.md) | <br /> |
+| [ExplicitGcViolation](../android/os/strictmode/ExplicitGcViolation.md) | See # [android.os.StrictMode.ThreadPolicy.Builder#detectExplicitGc()](../android/os/StrictMode.ThreadPolicy.Builder.md)). |
 | --- | --- |
-| [FileUriExposedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/FileUriExposedViolation) | <br /> |
-| [ImplicitDirectBootViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ImplicitDirectBootViolation) | Subclass of`Violation`that is used when a process implicitly relies on automatic Direct Boot filtering. |
-| [IncorrectContextUseViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/IncorrectContextUseViolation) | Incorrect usage of [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#), such as obtaining a UI service from non-UI [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) instance. |
+| [FileUriExposedViolation](../android/os/strictmode/FileUriExposedViolation.md) | <br /> |
+| [ImplicitDirectBootViolation](../android/os/strictmode/ImplicitDirectBootViolation.md) | Subclass of`Violation`that is used when a process implicitly relies on automatic Direct Boot filtering. |
+| [IncorrectContextUseViolation](../android/os/strictmode/IncorrectContextUseViolation.md) | Incorrect usage of [Context](../android/content/Context.md), such as obtaining a UI service from non-UI [Context](../android/content/Context.md) instance. |
 | --- | --- |
-| [InstanceCountViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/InstanceCountViolation) | <br /> |
-| [IntentReceiverLeakedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/IntentReceiverLeakedViolation) | <br /> |
-| [LeakedClosableViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/LeakedClosableViolation) | <br /> |
+| [InstanceCountViolation](../android/os/strictmode/InstanceCountViolation.md) | <br /> |
+| [IntentReceiverLeakedViolation](../android/os/strictmode/IntentReceiverLeakedViolation.md) | <br /> |
+| [LeakedClosableViolation](../android/os/strictmode/LeakedClosableViolation.md) | <br /> |
 | --- | --- |
-| [NetworkViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/NetworkViolation) | <br /> |
-| [NonSdkApiUsedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/NonSdkApiUsedViolation) | Subclass of`Violation`that is used when a process accesses a non SDK API. |
-| [ResourceMismatchViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ResourceMismatchViolation) | <br /> |
+| [NetworkViolation](../android/os/strictmode/NetworkViolation.md) | <br /> |
+| [NonSdkApiUsedViolation](../android/os/strictmode/NonSdkApiUsedViolation.md) | Subclass of`Violation`that is used when a process accesses a non SDK API. |
+| [ResourceMismatchViolation](../android/os/strictmode/ResourceMismatchViolation.md) | <br /> |
 | --- | --- |
-| [ServiceConnectionLeakedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/ServiceConnectionLeakedViolation) | <br /> |
-| [SqliteObjectLeakedViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/SqliteObjectLeakedViolation) | <br /> |
-| [UnbufferedIoViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/UnbufferedIoViolation) | See # [Builder.detectUnbufferedIo()](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy.Builder.html#detectUnbufferedIo()) |
+| [ServiceConnectionLeakedViolation](../android/os/strictmode/ServiceConnectionLeakedViolation.md) | <br /> |
+| [SqliteObjectLeakedViolation](../android/os/strictmode/SqliteObjectLeakedViolation.md) | <br /> |
+| [UnbufferedIoViolation](../android/os/strictmode/UnbufferedIoViolation.md) | See # [Builder.detectUnbufferedIo()](../android/os/StrictMode.ThreadPolicy.Builder.md)) |
 | --- | --- |
-| [UnsafeIntentLaunchViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/UnsafeIntentLaunchViolation) | Violation raised when your app launches an [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) which originated from outside your app. |
-| [UntaggedSocketViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/UntaggedSocketViolation) | <br /> |
-| [Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) | Root class for all StrictMode violations. |
+| [UnsafeIntentLaunchViolation](../android/os/strictmode/UnsafeIntentLaunchViolation.md) | Violation raised when your app launches an [Intent](../android/content/Intent.md) which originated from outside your app. |
+| [UntaggedSocketViolation](../android/os/strictmode/UntaggedSocketViolation.md) | <br /> |
+| [Violation](../android/os/strictmode/Violation.md) | Root class for all StrictMode violations. |
 | --- | --- |
-| [WebViewMethodCalledOnWrongThreadViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/WebViewMethodCalledOnWrongThreadViolation) | <br /> |
+| [WebViewMethodCalledOnWrongThreadViolation](../android/os/strictmode/WebViewMethodCalledOnWrongThreadViolation.md) | <br /> |

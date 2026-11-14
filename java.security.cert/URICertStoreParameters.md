@@ -10,7 +10,7 @@ class URICertStoreParameters : CertStoreParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#) |
+| ↳ | [java.security.cert.URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) |
 
 Parameters used as input for`CertStore`algorithms which use information contained in a URI to retrieve certificates and CRLs.
 
@@ -24,16 +24,16 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#URICertStoreParameters(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`)` Creates an instance of`URICertStoreParameters`with the specified URI. |
+| [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Creates an instance of`URICertStoreParameters`with the specified URI. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#clone())`()` Returns a copy of this object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this parameters object for equality. |
-| [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | [getURI](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#getURI())`()` Returns the URI used to construct this`URICertStoreParameters`object. |
+| [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) | [clone](../java/security/cert/URICertStoreParameters.md))`()` Returns a copy of this object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/cert/URICertStoreParameters.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this parameters object for equality. |
+| [URI](../java/net/URI.md)! | [getURI](../java/security/cert/URICertStoreParameters.md))`()` Returns the URI used to construct this`URICertStoreParameters`object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#hashCode())`()` Returns a hash code value for this parameters object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#toString())`()` Returns a formatted string describing the parameters including the URI used to construct this object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/cert/URICertStoreParameters.md))`()` Returns a hash code value for this parameters object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/URICertStoreParameters.md))`()` Returns a formatted string describing the parameters including the URI used to construct this object. |
 
 ## Public constructors
 
@@ -49,7 +49,7 @@ Creates an instance of`URICertStoreParameters`with the specified URI.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:the URI which contains configuration information. |
+| `uri` | [URI](../java/net/URI.md)!:the URI which contains configuration information. |
 
 | Exceptions ||
 |----------------------------------|----------------|
@@ -69,7 +69,7 @@ Returns a copy of this object. Changes to the copy will not affect the original 
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|----------|
-| [URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters#) | the copy |
+| [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) | the copy |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -106,7 +106,7 @@ Returns the URI used to construct this`URICertStoreParameters`object.
 
 | Return ||
 |---------------------------------------------------------------------------|----------|
-| [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | the URI. |
+| [URI](../java/net/URI.md)! | the URI. |
 
 ### hashCode
 

@@ -8,7 +8,7 @@ class StreamConfigurationMap
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.StreamConfigurationMap](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#) |
+| ↳ | [android.hardware.camera2.params.StreamConfigurationMap](../android/hardware/camera2/params/StreamConfigurationMap.md) |
 
 Immutable class to store the available stream `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#SCALER_STREAM_CONFIGURATION_MAP:android.hardware.camera2.CameraCharacteristics.Key` to set up `https://developer.android.com/reference/kotlin/android/view/Surface.html#` for creating a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.html#` with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)`.
 
@@ -27,22 +27,22 @@ An instance of this object is available from `https://developer.android.com/refe
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Check if this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#` is equal to another `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#`. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighResolutionOutputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of supported high resolution sizes, which cannot operate at full BURST_CAPTURE rate. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRanges()()` Get a list of supported high speed video recording FPS ranges. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](../android/util/Size.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighResolutionOutputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of supported high resolution sizes, which cannot operate at full BURST_CAPTURE rate. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Range](../android/util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRanges()()` Get a list of supported high speed video recording FPS ranges. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRangesFor(android.util.Size)(size: https://developer.android.com/reference/kotlin/android/util/Size.html#!)` Get the frame per second ranges (fpsMin, fpsMax) for input high speed video size. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()()` Get a list of supported high speed video recording sizes. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizesFor(android.util.Range)(fpsRange: https://developer.android.com/reference/kotlin/android/util/Range.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>!)` Get the supported video sizes for an input high speed FPS range. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Range](../android/util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRangesFor(android.util.Size)(size: https://developer.android.com/reference/kotlin/android/util/Size.html#!)` Get the frame per second ranges (fpsMin, fpsMax) for input high speed video size. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](../android/util/Size.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()()` Get a list of supported high speed video recording sizes. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](../android/util/Size.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizesFor(android.util.Range)(fpsRange: https://developer.android.com/reference/kotlin/android/util/Range.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>!)` Get the supported video sizes for an input high speed FPS range. |
 | --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()()` Get the image `format` input formats in this stream configuration. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the supported input sizes for this input format. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](../android/util/Size.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the supported input sizes for this input format. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()()` Get the image `format` output formats in this stream configuration. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputMinFrameDuration(kotlin.Int,%20android.util.Size)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://developer.android.com/reference/kotlin/android/util/Size.html#!)` Get the minimum `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#SENSOR_FRAME_DURATION:android.hardware.camera2.CaptureRequest.Key` for the format/size combination (in nanoseconds). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputMinFrameDuration(java.lang.Class,%20android.util.Size)(klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>!, size: https://developer.android.com/reference/kotlin/android/util/Size.html#!)` Get the minimum `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#SENSOR_FRAME_DURATION:android.hardware.camera2.CaptureRequest.Key` for the class/size combination (in nanoseconds). |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of sizes compatible with the requested image `format`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](../android/util/Size.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of sizes compatible with the requested image `format`. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)(klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>!)` Get a list of sizes compatible with `klass` to use as an output. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Size](../android/util/Size.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)(klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>!)` Get a list of sizes compatible with `klass` to use as an output. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputStallDuration(kotlin.Int,%20android.util.Size)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://developer.android.com/reference/kotlin/android/util/Size.html#!)` Get the stall duration for the format/size combination (in nanoseconds). |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputStallDuration(java.lang.Class,%20android.util.Size)(klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>!, size: https://developer.android.com/reference/kotlin/android/util/Size.html#!)` Get the stall duration for the class/size combination (in nanoseconds). |
 | --- | --- |
@@ -145,7 +145,7 @@ See `https://developer.android.com/reference/kotlin/android/hardware/camera2/par
 
 | Parameters ||
 |---|---|
-| `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!: one of the sizes returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()` |
+| `size` | [Size](../android/util/Size.md)!: one of the sizes returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()` |
 
 | Return ||
 |---|---|
@@ -201,7 +201,7 @@ See `https://developer.android.com/reference/kotlin/android/hardware/camera2/par
 
 | Parameters ||
 |---|---|
-| `fpsRange` | [Range](https://developer.android.com/reference/kotlin/android/util/Range.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!: one of the FPS range returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRanges()` |
+| `fpsRange` | [Range](../android/util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!: one of the FPS range returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRanges()` |
 
 | Return ||
 |---|---|
@@ -309,7 +309,7 @@ The minimum frame duration of a stream (of a particular format, size) is the sam
 | Parameters ||
 |---|---|
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an image format from `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` |
-| `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!: an output-compatible size |
+| `size` | [Size](../android/util/Size.md)!: an output-compatible size |
 
 | Return ||
 |---|---|
@@ -356,8 +356,8 @@ The minimum frame duration of a stream (of a particular format, size) is the sam
 
 | Parameters ||
 |---|---|
-| `klass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!: a class which is supported by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#isOutputSupportedFor(java.lang.Class)` and has a non-empty array returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)` |
-| `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!: an output-compatible size |
+| `klass` | [Class](../java/lang/Class.md)\<T\>!: a class which is supported by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#isOutputSupportedFor(java.lang.Class)` and has a non-empty array returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)` |
+| `size` | [Size](../android/util/Size.md)!: an output-compatible size |
 
 | Return ||
 |---|---|
@@ -419,7 +419,7 @@ The `klass` should be a supported output, that querying `isOutputSupportedFor(Cl
 
 | Parameters ||
 |---|---|
-| `klass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!: a non-`null` `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object reference |
+| `klass` | [Class](../java/lang/Class.md)\<T\>!: a non-`null` `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object reference |
 
 | Return ||
 |---|---|
@@ -493,7 +493,7 @@ See `https://developer.android.com/reference/kotlin/android/hardware/camera2/Cap
 | Parameters ||
 |---|---|
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an image format from `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` |
-| `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!: an output-compatible size |
+| `size` | [Size](../android/util/Size.md)!: an output-compatible size |
 
 | Return ||
 |---|---|
@@ -533,8 +533,8 @@ See `https://developer.android.com/reference/kotlin/android/hardware/camera2/par
 
 | Parameters ||
 |---|---|
-| `klass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!: a class which is supported by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#isOutputSupportedFor(java.lang.Class)` and has a non-empty array returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)` |
-| `size` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!: an output-compatible size |
+| `klass` | [Class](../java/lang/Class.md)\<T\>!: a class which is supported by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#isOutputSupportedFor(java.lang.Class)` and has a non-empty array returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)` |
+| `size` | [Size](../android/util/Size.md)!: an output-compatible size |
 
 | Return ||
 |---|---|
@@ -622,7 +622,7 @@ This is not an exhaustive list; see the particular class's documentation for fur
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!: a non-`null` `https://developer.android.com/reference/kotlin/android/view/Surface.html#` object reference |
+| `surface` | [Surface](../android/view/Surface.md)!: a non-`null` `https://developer.android.com/reference/kotlin/android/view/Surface.html#` object reference |
 
 | Return ||
 |---|---|
@@ -696,7 +696,7 @@ Since not all of the above classes support output of all format and size combina
 
 | Parameters ||
 |---|---|
-| `klass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!: a non-`null` `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object reference |
+| `klass` | [Class](../java/lang/Class.md)\<T\>!: a non-`null` `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object reference |
 
 | Return ||
 |---|---|

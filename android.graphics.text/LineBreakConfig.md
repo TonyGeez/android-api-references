@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # LineBreakConfig
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/text/LineBreakConfig "View this page in Java") 
+Kotlin | [Java](../android/graphics/text/LineBreakConfig.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class LineBreakConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.text.LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) |
+| ↳ | [android.graphics.text.LineBreakConfig](../android/graphics/text/LineBreakConfig.md) |
 
 Specifies the line-break strategies for text wrapping.
 
@@ -23,51 +23,51 @@ See the [line-break property](https://www.w3.org/TR/css-text-3/#line-break-prope
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig.Builder) A builder for creating a `LineBreakConfig` instance. |
+| | [Builder](../android/graphics/text/LineBreakConfig.Builder.md) A builder for creating a `LineBreakConfig` instance. |
 
 | Constants ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_DISABLED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_DISABLED:kotlin.Int) The hyphenation is disabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_ENABLED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_ENABLED:kotlin.Int) The hyphenation is enabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_UNSPECIFIED:kotlin.Int) No hyphenation preference is specified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_DISABLED](../android/graphics/text/LineBreakConfig.md) The hyphenation is disabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_ENABLED](../android/graphics/text/LineBreakConfig.md) The hyphenation is enabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md) No hyphenation preference is specified. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_AUTO](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_AUTO:kotlin.Int) A special value for the line breaking style option. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_LOOSE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_LOOSE:kotlin.Int) The least restrictive line-break rules are used for line breaking. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NONE:kotlin.Int) No line-break rules are used for line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_AUTO](../android/graphics/text/LineBreakConfig.md) A special value for the line breaking style option. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_LOOSE](../android/graphics/text/LineBreakConfig.md) The least restrictive line-break rules are used for line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_NONE](../android/graphics/text/LineBreakConfig.md) No line-break rules are used for line breaking. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_NORMAL](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NORMAL:kotlin.Int) The most common line-break rules are used for line breaking. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_NO_BREAK](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NO_BREAK:kotlin.Int) The line break style that used for preventing automatic line breaking. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_STRICT](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_STRICT:kotlin.Int) The most strict line-break rules are used for line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_NORMAL](../android/graphics/text/LineBreakConfig.md) The most common line-break rules are used for line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_NO_BREAK](../android/graphics/text/LineBreakConfig.md) The line break style that used for preventing automatic line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_STRICT](../android/graphics/text/LineBreakConfig.md) The most strict line-break rules are used for line breaking. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_UNSPECIFIED:kotlin.Int) No line break style is specified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_AUTO](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_AUTO:kotlin.Int) A special value for the line breaking word style option. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_NONE:kotlin.Int) No line-break word style is used for line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_STYLE_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md) No line break style is specified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_AUTO](../android/graphics/text/LineBreakConfig.md) A special value for the line breaking word style option. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_NONE](../android/graphics/text/LineBreakConfig.md) No line-break word style is used for line breaking. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_PHRASE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_PHRASE:kotlin.Int) Line breaking is based on phrases, which results in text wrapping only on meaningful words. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_UNSPECIFIED:kotlin.Int) No line break word style is specified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_PHRASE](../android/graphics/text/LineBreakConfig.md) Line breaking is based on phrases, which results in text wrapping only on meaningful words. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK_WORD_STYLE_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md) No line break word style is specified. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHyphenation](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#getHyphenation())`()` Returns a hyphenation preference. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/graphics/text/LineBreakConfig.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/text/LineBreakConfig.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHyphenation](../android/graphics/text/LineBreakConfig.md))`()` Returns a hyphenation preference. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBreakStyle](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#getLineBreakStyle())`()` Gets the current line-break style. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBreakWordStyle](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#getLineBreakWordStyle())`()` Gets the current line-break word style. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#hashCode())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBreakStyle](../android/graphics/text/LineBreakConfig.md))`()` Gets the current line-break style. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBreakWordStyle](../android/graphics/text/LineBreakConfig.md))`()` Gets the current line-break word style. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/text/LineBreakConfig.md))`()` <br /> |
 | --- | --- |
-| [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) | [merge](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#merge(android.graphics.text.LineBreakConfig))`(`config:` ` [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#)`)` Generates a new [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) instance merged with given `config`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) | [merge](../android/graphics/text/LineBreakConfig.md))`(`config:` ` [LineBreakConfig](../android/graphics/text/LineBreakConfig.md)`)` Generates a new [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) instance merged with given `config`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/graphics/text/LineBreakConfig.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/graphics/text/LineBreakConfig.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LineBreakConfig](../android/graphics/text/LineBreakConfig.md)!\> | [CREATOR](../android/graphics/text/LineBreakConfig.md) <br /> |
 
 ## Constants
 
@@ -91,7 +91,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val HYPHENATION_ENABLED: Int
 ```
 
-The hyphenation is enabled. Note: Even if the hyphenation is enabled with a line break strategy [LineBreaker.BREAK_STRATEGY_SIMPLE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#BREAK_STRATEGY_SIMPLE:kotlin.Int), the hyphenation will not be performed unless a single word cannot meet width constraints. 
+The hyphenation is enabled. Note: Even if the hyphenation is enabled with a line break strategy [LineBreaker.BREAK_STRATEGY_SIMPLE](../android/graphics/text/LineBreaker.md), the hyphenation will not be performed unless a single word cannot meet width constraints. 
 
  Value: 1
 
@@ -105,7 +105,7 @@ static val HYPHENATION_UNSPECIFIED: Int
 
 No hyphenation preference is specified.
 
-This is a special value of hyphenation preference indicating no hyphenation preference is specified. When overriding a [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) with another [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) with [Builder.merge(LineBreakConfig)](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig.Builder#merge(android.graphics.text.LineBreakConfig)) function, the hyphenation preference of overridden config will be kept if the hyphenation preference of overriding config is [HYPHENATION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_UNSPECIFIED:kotlin.Int).
+This is a special value of hyphenation preference indicating no hyphenation preference is specified. When overriding a [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) with another [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) with [Builder.merge(LineBreakConfig)](../android/graphics/text/LineBreakConfig.Builder.md)) function, the hyphenation preference of overridden config will be kept if the hyphenation preference of overriding config is [HYPHENATION_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md).
 
 ```kotlin
 val override = LineBreakConfig.Builder()
@@ -120,7 +120,7 @@ val override = LineBreakConfig.Builder()
   
 ```
 
-This value is resolved to [HYPHENATION_ENABLED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_ENABLED:kotlin.Int) if this value is used for text layout/rendering. 
+This value is resolved to [HYPHENATION_ENABLED](../android/graphics/text/LineBreakConfig.md) if this value is used for text layout/rendering. 
 
  Value: -1
 
@@ -134,9 +134,9 @@ static val LINE_BREAK_STYLE_AUTO: Int
 
 A special value for the line breaking style option.
 
-The auto option for the line break style set the line break style based on the locale of the text rendering context. You can specify the context locale by [android.widget.TextView#setTextLocales(LocaleList)](https://developer.android.com/reference/kotlin/android/widget/TextView.html#setTextLocales(android.os.LocaleList)) or [android.graphics.Paint#setTextLocales(LocaleList)](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextLocales(android.os.LocaleList)).
+The auto option for the line break style set the line break style based on the locale of the text rendering context. You can specify the context locale by [android.widget.TextView#setTextLocales(LocaleList)](../android/widget/TextView.md)) or [android.graphics.Paint#setTextLocales(LocaleList)](../android/graphics/Paint.md)).
 
-In the API [Build.VERSION_CODES.VANILLA_ICE_CREAM](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int), auto option does followings: - If at least one locale in the locale list contains Japanese script, this option is equivalent to [LINE_BREAK_STYLE_STRICT](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_STRICT:kotlin.Int). - Otherwise, this option is equivalent to [LINE_BREAK_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NONE:kotlin.Int).
+In the API [Build.VERSION_CODES.VANILLA_ICE_CREAM](../android/os/Build.VERSION_CODES.md), auto option does followings: - If at least one locale in the locale list contains Japanese script, this option is equivalent to [LINE_BREAK_STYLE_STRICT](../android/graphics/text/LineBreakConfig.md). - Otherwise, this option is equivalent to [LINE_BREAK_STYLE_NONE](../android/graphics/text/LineBreakConfig.md).
 
 Note: future versions may have special line breaking style rules for other locales. 
 
@@ -186,14 +186,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val LINE_BREAK_STYLE_NO_BREAK: Int
 ```
 
-The line break style that used for preventing automatic line breaking. This is useful when you want to preserve some words in the same line by using [android.text.style.LineBreakConfigSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan.html#) or [android.text.style.LineBreakConfigSpan#createNoBreakSpan()](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan.html#createNoBreakSpan()) as a shorthand. Note that even if this style is specified, the grapheme based line break is still performed for preventing clipping text. 
+The line break style that used for preventing automatic line breaking. This is useful when you want to preserve some words in the same line by using [android.text.style.LineBreakConfigSpan](../android/text/style/LineBreakConfigSpan.md) or [android.text.style.LineBreakConfigSpan#createNoBreakSpan()](../android/text/style/LineBreakConfigSpan.md)) as a shorthand. Note that even if this style is specified, the grapheme based line break is still performed for preventing clipping text. 
 
  Value: 4
 
 **See Also**
 
-- [android.text.style.LineBreakConfigSpan](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan.html#)
-- [android.text.style.LineBreakConfigSpan#createNoBreakSpan()](https://developer.android.com/reference/kotlin/android/text/style/LineBreakConfigSpan.html#createNoBreakSpan()) 
+- [android.text.style.LineBreakConfigSpan](../android/text/style/LineBreakConfigSpan.md)
+- [android.text.style.LineBreakConfigSpan#createNoBreakSpan()](../android/text/style/LineBreakConfigSpan.md)) 
 
 ### LINE_BREAK_STYLE_STRICT
 
@@ -217,7 +217,7 @@ static val LINE_BREAK_STYLE_UNSPECIFIED: Int
 
 No line break style is specified.
 
-This is a special value of line break style indicating no style value is specified. When overriding a [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) with another [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) with [Builder.merge(LineBreakConfig)](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig.Builder#merge(android.graphics.text.LineBreakConfig)) function, the line break style of overridden config will be kept if the line break style of overriding config is [LINE_BREAK_STYLE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_UNSPECIFIED:kotlin.Int). 
+This is a special value of line break style indicating no style value is specified. When overriding a [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) with another [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) with [Builder.merge(LineBreakConfig)](../android/graphics/text/LineBreakConfig.Builder.md)) function, the line break style of overridden config will be kept if the line break style of overriding config is [LINE_BREAK_STYLE_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md). 
 
 ```kotlin
 val override = LineBreakConfig.Builder()
@@ -232,7 +232,7 @@ val override = LineBreakConfig.Builder()
   
 ```
 
-This value is resolved to [LINE_BREAK_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NONE:kotlin.Int) if the target SDK version is API [Build.VERSION_CODES.UPSIDE_DOWN_CAKE](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int) or before and this value is used for text layout/rendering. This value is resolved to [LINE_BREAK_STYLE_AUTO](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_AUTO:kotlin.Int) if the target SDK version is API [Build.VERSION_CODES.VANILLA_ICE_CREAM](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int) or after and this value is used for text layout/rendering. 
+This value is resolved to [LINE_BREAK_STYLE_NONE](../android/graphics/text/LineBreakConfig.md) if the target SDK version is API [Build.VERSION_CODES.UPSIDE_DOWN_CAKE](../android/os/Build.VERSION_CODES.md) or before and this value is used for text layout/rendering. This value is resolved to [LINE_BREAK_STYLE_AUTO](../android/graphics/text/LineBreakConfig.md) if the target SDK version is API [Build.VERSION_CODES.VANILLA_ICE_CREAM](../android/os/Build.VERSION_CODES.md) or after and this value is used for text layout/rendering. 
 
  Value: -1
 
@@ -248,7 +248,7 @@ A special value for the line breaking word style option.
 
 The auto option for the line break word style does some heuristics based on locales and line count.
 
-In the API [Build.VERSION_CODES.VANILLA_ICE_CREAM](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int), auto option does followings: - If at least one locale in the locale list contains Korean script, this option is equivalent to [LINE_BREAK_WORD_STYLE_PHRASE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_PHRASE:kotlin.Int). - If not, then if at least one locale in the locale list contains Japanese script, this option is equivalent to [LINE_BREAK_WORD_STYLE_PHRASE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_PHRASE:kotlin.Int) if the result of its line count is less than 5 lines. - Otherwise, this option is equivalent to [LINE_BREAK_WORD_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_NONE:kotlin.Int).
+In the API [Build.VERSION_CODES.VANILLA_ICE_CREAM](../android/os/Build.VERSION_CODES.md), auto option does followings: - If at least one locale in the locale list contains Korean script, this option is equivalent to [LINE_BREAK_WORD_STYLE_PHRASE](../android/graphics/text/LineBreakConfig.md). - If not, then if at least one locale in the locale list contains Japanese script, this option is equivalent to [LINE_BREAK_WORD_STYLE_PHRASE](../android/graphics/text/LineBreakConfig.md) if the result of its line count is less than 5 lines. - Otherwise, this option is equivalent to [LINE_BREAK_WORD_STYLE_NONE](../android/graphics/text/LineBreakConfig.md).
 
 Note: future versions may have special line breaking word style rules for other locales. 
 
@@ -288,7 +288,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val LINE_BREAK_WORD_STYLE_UNSPECIFIED: Int
 ```
 
-No line break word style is specified. This is a special value of line break word style indicating no style value is specified. When overriding a [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) with another [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) with [Builder.merge(LineBreakConfig)](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig.Builder#merge(android.graphics.text.LineBreakConfig)) function, the line break word style of overridden config will be kept if the line break word style of overriding config is [LINE_BREAK_WORD_STYLE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_UNSPECIFIED:kotlin.Int). 
+No line break word style is specified. This is a special value of line break word style indicating no style value is specified. When overriding a [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) with another [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) with [Builder.merge(LineBreakConfig)](../android/graphics/text/LineBreakConfig.Builder.md)) function, the line break word style of overridden config will be kept if the line break word style of overriding config is [LINE_BREAK_WORD_STYLE_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md). 
 
 ```kotlin
 val override = LineBreakConfig.Builder()
@@ -302,7 +302,7 @@ val override = LineBreakConfig.Builder()
       // LINE_BREAK_WORD_STYLE_PHRASE for line break word style.
   
 ```
-This value is resolved to [LINE_BREAK_WORD_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_NONE:kotlin.Int) if the target SDK version is API [Build.VERSION_CODES.UPSIDE_DOWN_CAKE](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int) or before and this value is used for text layout/rendering. This value is resolved to [LINE_BREAK_WORD_STYLE_AUTO](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_AUTO:kotlin.Int) if the target SDK version is API [Build.VERSION_CODES.VANILLA_ICE_CREAM](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int) or after and this value is used for text layout/rendering.
+This value is resolved to [LINE_BREAK_WORD_STYLE_NONE](../android/graphics/text/LineBreakConfig.md) if the target SDK version is API [Build.VERSION_CODES.UPSIDE_DOWN_CAKE](../android/os/Build.VERSION_CODES.md) or before and this value is used for text layout/rendering. This value is resolved to [LINE_BREAK_WORD_STYLE_AUTO](../android/graphics/text/LineBreakConfig.md) if the target SDK version is API [Build.VERSION_CODES.VANILLA_ICE_CREAM](../android/os/Build.VERSION_CODES.md) or after and this value is used for text layout/rendering.
 
 <br />
 
@@ -320,7 +320,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either `0` or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either `0` or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -350,7 +350,7 @@ Returns a hyphenation preference.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A hyphenation preference. Value is [android.graphics.text.LineBreakConfig#HYPHENATION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_UNSPECIFIED:kotlin.Int), [android.graphics.text.LineBreakConfig#HYPHENATION_ENABLED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_ENABLED:kotlin.Int), or [android.graphics.text.LineBreakConfig#HYPHENATION_DISABLED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#HYPHENATION_DISABLED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A hyphenation preference. Value is [android.graphics.text.LineBreakConfig#HYPHENATION_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#HYPHENATION_ENABLED](../android/graphics/text/LineBreakConfig.md), or [android.graphics.text.LineBreakConfig#HYPHENATION_DISABLED](../android/graphics/text/LineBreakConfig.md) |
 
 ### getLineBreakStyle
 
@@ -364,7 +364,7 @@ Gets the current line-break style.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The line-break style to be used for text wrapping. Value is [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NONE:kotlin.Int), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_LOOSE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_LOOSE:kotlin.Int), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_NORMAL](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NORMAL:kotlin.Int), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_STRICT](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_STRICT:kotlin.Int), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_UNSPECIFIED:kotlin.Int), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_NO_BREAK](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_NO_BREAK:kotlin.Int), or [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_AUTO](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_STYLE_AUTO:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The line-break style to be used for text wrapping. Value is [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_NONE](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_LOOSE](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_NORMAL](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_STRICT](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_NO_BREAK](../android/graphics/text/LineBreakConfig.md), or [android.graphics.text.LineBreakConfig#LINE_BREAK_STYLE_AUTO](../android/graphics/text/LineBreakConfig.md) |
 
 ### getLineBreakWordStyle
 
@@ -378,7 +378,7 @@ Gets the current line-break word style.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The line-break word style to be used for text wrapping. Value is [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_NONE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_NONE:kotlin.Int), [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_PHRASE](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_PHRASE:kotlin.Int), [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_UNSPECIFIED:kotlin.Int), or [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_AUTO](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#LINE_BREAK_WORD_STYLE_AUTO:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The line-break word style to be used for text wrapping. Value is [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_NONE](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_PHRASE](../android/graphics/text/LineBreakConfig.md), [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_UNSPECIFIED](../android/graphics/text/LineBreakConfig.md), or [android.graphics.text.LineBreakConfig#LINE_BREAK_WORD_STYLE_AUTO](../android/graphics/text/LineBreakConfig.md) |
 
 ### hashCode
 
@@ -400,7 +400,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun merge(config: LineBreakConfig): LineBreakConfig
 ```
 
-Generates a new [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) instance merged with given `config`. If values of passing `config` are unspecified, the original values are kept. For example, the following code shows how line break config is merged. 
+Generates a new [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) instance merged with given `config`. If values of passing `config` are unspecified, the original values are kept. For example, the following code shows how line break config is merged. 
 
 ```kotlin
 val override = LineBreakConfig.Builder()
@@ -420,11 +420,11 @@ val override = LineBreakConfig.Builder()
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `config` | [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#): an overriding config. This value cannot be `null`. |
+| `config` | [LineBreakConfig](../android/graphics/text/LineBreakConfig.md): an overriding config. This value cannot be `null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [LineBreakConfig](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreakConfig#) | newly created instance that is current style merged with passed config. This value cannot be `null`. |
+| [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) | newly created instance that is current style merged with passed config. This value cannot be `null`. |
 
 ### toString
 
@@ -453,8 +453,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either `0` or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either `0` or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -4,21 +4,21 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnGesturingListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener "View this page in Java") 
+Kotlin| [Java](../android/gesture/GestureOverlayView.OnGesturingListener.md) 
 | --- | --- |
 
 ```
 interface OnGesturingListener
 ```
 
-| [android.gesture.GestureOverlayView.OnGesturingListener](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturingListener#) |
+| [android.gesture.GestureOverlayView.OnGesturingListener](../android/gesture/GestureOverlayView.OnGesturingListener.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesturingEnded](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturingListener#onGesturingEnded(android.gesture.GestureOverlayView))`(`overlay:` ` [GestureOverlayView](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesturingStarted](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView.OnGesturingListener#onGesturingStarted(android.gesture.GestureOverlayView))`(`overlay:` ` [GestureOverlayView](https://developer.android.com/reference/kotlin/android/gesture/GestureOverlayView)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesturingEnded](../android/gesture/GestureOverlayView.OnGesturingListener.md))`(`overlay:` ` [GestureOverlayView](../android/gesture/GestureOverlayView.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesturingStarted](../android/gesture/GestureOverlayView.OnGesturingListener.md))`(`overlay:` ` [GestureOverlayView](../android/gesture/GestureOverlayView.md)!`)` <br /> |
 
 ## Public methods
 

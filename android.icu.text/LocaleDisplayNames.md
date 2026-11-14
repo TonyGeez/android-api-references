@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # LocaleDisplayNames
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/LocaleDisplayNames "View this page in Java") 
+Kotlin| [Java](../android/icu/text/LocaleDisplayNames.md) 
 | --- | --- |
 
 ```
@@ -13,45 +13,45 @@ abstract class LocaleDisplayNames
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#) |
+| ↳ | [android.icu.text.LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md) |
 
-Returns display names of ULocales and components of ULocales. For more information on language, script, region, variant, key, and values, see [android.icu.util.ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#).
+Returns display names of ULocales and components of ULocales. For more information on language, script, region, variant, key, and values, see [android.icu.util.ULocale](../android/icu/util/ULocale.md).
 
 ## Summary
 
 | Nested classes ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [DialectHandling](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.DialectHandling) Enum used in [getInstance(android.icu.util.ULocale,android.icu.text.LocaleDisplayNames.DialectHandling)](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(android.icu.util.ULocale,%20android.icu.text.LocaleDisplayNames.DialectHandling)). |
-| open | [UiListItem](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.UiListItem) Struct-like class used to return information for constructing a UI list, each corresponding to a locale. |
+| | [DialectHandling](../android/icu/text/LocaleDisplayNames.DialectHandling.md) Enum used in [getInstance(android.icu.util.ULocale,android.icu.text.LocaleDisplayNames.DialectHandling)](../android/icu/text/LocaleDisplayNames.md)). |
+| open | [UiListItem](../android/icu/text/LocaleDisplayNames.UiListItem.md) Struct-like class used to return information for constructing a UI list, each corresponding to a locale. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)! | [getContext](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getContext(android.icu.text.DisplayContext.Type))`(`type:` ` [DisplayContext.Type](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext.Type)!`)` Returns the current value for a specified DisplayContext. |
-| abstract [LocaleDisplayNames.DialectHandling](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.DialectHandling)! | [getDialectHandling](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getDialectHandling())`()` Returns the dialect handling used in the display names. |
-| openstatic [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Convenience overload of [getInstance(android.icu.util.ULocale,android.icu.text.LocaleDisplayNames.DialectHandling)](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(android.icu.util.ULocale,%20android.icu.text.LocaleDisplayNames.DialectHandling))that specifies STANDARD dialect handling. |
+| abstract [DisplayContext](../android/icu/text/DisplayContext.md)! | [getContext](../android/icu/text/LocaleDisplayNames.md))`(`type:` ` [DisplayContext.Type](../android/icu/text/DisplayContext.Type.md)!`)` Returns the current value for a specified DisplayContext. |
+| abstract [LocaleDisplayNames.DialectHandling](../android/icu/text/LocaleDisplayNames.DialectHandling.md)! | [getDialectHandling](../android/icu/text/LocaleDisplayNames.md))`()` Returns the dialect handling used in the display names. |
+| openstatic [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | [getInstance](../android/icu/text/LocaleDisplayNames.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Convenience overload of [getInstance(android.icu.util.ULocale,android.icu.text.LocaleDisplayNames.DialectHandling)](../android/icu/text/LocaleDisplayNames.md))that specifies STANDARD dialect handling. |
 | --- | --- |
-| openstatic [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(android.icu.util.ULocale,%20android.icu.text.DisplayContext))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `vararg` `contexts:` ` [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!`)` Returns an instance of LocaleDisplayNames that returns names formatted for the provided locale, using the provided DisplayContext settings |
-| openstatic [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(android.icu.util.ULocale,%20android.icu.text.LocaleDisplayNames.DialectHandling))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `dialectHandling:` ` [LocaleDisplayNames.DialectHandling](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.DialectHandling)!`)` Returns an instance of LocaleDisplayNames that returns names formatted for the provided locale, using the provided dialectHandling. |
-| openstatic [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Convenience overload of [getInstance(java.util.Locale,android.icu.text.DisplayContext...)](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(java.util.Locale,%20android.icu.text.DisplayContext))that specifies [DisplayContext.STANDARD_NAMES](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext). |
+| openstatic [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | [getInstance](../android/icu/text/LocaleDisplayNames.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `vararg` `contexts:` ` [DisplayContext](../android/icu/text/DisplayContext.md)!`)` Returns an instance of LocaleDisplayNames that returns names formatted for the provided locale, using the provided DisplayContext settings |
+| openstatic [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | [getInstance](../android/icu/text/LocaleDisplayNames.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `dialectHandling:` ` [LocaleDisplayNames.DialectHandling](../android/icu/text/LocaleDisplayNames.DialectHandling.md)!`)` Returns an instance of LocaleDisplayNames that returns names formatted for the provided locale, using the provided dialectHandling. |
+| openstatic [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | [getInstance](../android/icu/text/LocaleDisplayNames.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Convenience overload of [getInstance(java.util.Locale,android.icu.text.DisplayContext...)](../android/icu/text/LocaleDisplayNames.md))that specifies [DisplayContext.STANDARD_NAMES](../android/icu/text/DisplayContext.md). |
 | --- | --- |
-| openstatic [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(java.util.Locale,%20android.icu.text.DisplayContext))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `vararg` `contexts:` ` [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!`)` Returns an instance of LocaleDisplayNames that returns names formatted for the provided [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#), using the provided DisplayContext settings |
-| abstract [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)! | [getLocale](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getLocale())`()` Returns the locale used to determine the display names. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LocaleDisplayNames.UiListItem](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.UiListItem)!\>! | [getUiList](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getUiList(kotlin.collections.MutableSet,%20kotlin.Boolean,%20java.util.Comparator))`(`localeSet:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!>!`, `inSelf:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `collator:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Return a list of information used to construct a UI list of locale names. |
+| openstatic [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | [getInstance](../android/icu/text/LocaleDisplayNames.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `vararg` `contexts:` ` [DisplayContext](../android/icu/text/DisplayContext.md)!`)` Returns an instance of LocaleDisplayNames that returns names formatted for the provided [java.util.Locale](../java/util/Locale.md), using the provided DisplayContext settings |
+| abstract [ULocale](../android/icu/util/ULocale.md)! | [getLocale](../android/icu/text/LocaleDisplayNames.md))`()` Returns the locale used to determine the display names. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LocaleDisplayNames.UiListItem](../android/icu/text/LocaleDisplayNames.UiListItem.md)!\>! | [getUiList](../android/icu/text/LocaleDisplayNames.md))`(`localeSet:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ULocale](../android/icu/util/ULocale.md)!>!`, `inSelf:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `collator:` ` [Comparator](../java/util/Comparator.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Return a list of information used to construct a UI list of locale names. |
 | --- | --- |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LocaleDisplayNames.UiListItem](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.UiListItem)!\>! | [getUiListCompareWholeItems](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getUiListCompareWholeItems(kotlin.collections.MutableSet,%20java.util.Comparator))`(`localeSet:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!>!`, `comparator:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)< [LocaleDisplayNames.UiListItem](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.UiListItem)!>!`)` Return a list of information used to construct a UI list of locale names, providing more access to control the sorting. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [keyDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#keyDisplayName(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided locale key. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [keyValueDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#keyValueDisplayName(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided value (used with the provided key). |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LocaleDisplayNames.UiListItem](../android/icu/text/LocaleDisplayNames.UiListItem.md)!\>! | [getUiListCompareWholeItems](../android/icu/text/LocaleDisplayNames.md))`(`localeSet:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ULocale](../android/icu/util/ULocale.md)!>!`, `comparator:` ` [Comparator](../java/util/Comparator.md)< [LocaleDisplayNames.UiListItem](../android/icu/text/LocaleDisplayNames.UiListItem.md)!>!`)` Return a list of information used to construct a UI list of locale names, providing more access to control the sorting. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [keyDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided locale key. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [keyValueDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided value (used with the provided key). |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [languageDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#languageDisplayName(kotlin.String))`(`lang:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided language code. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [localeDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#localeDisplayName(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Returns the display name of the provided ulocale. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [localeDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#localeDisplayName(kotlin.String))`(`localeId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided locale id. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [languageDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`lang:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided language code. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [localeDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns the display name of the provided ulocale. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [localeDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`localeId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided locale id. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [localeDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#localeDisplayName(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns the display name of the provided locale. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [regionDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#regionDisplayName(kotlin.String))`(`region:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided region code. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [scriptDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#scriptDisplayName(kotlin.Int))`(`scriptCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the display name of the provided script code. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [localeDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns the display name of the provided locale. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [regionDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`region:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided region code. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [scriptDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`scriptCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the display name of the provided script code. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [scriptDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#scriptDisplayName(kotlin.String))`(`script:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided script code. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [variantDisplayName](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#variantDisplayName(kotlin.String))`(`variant:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided variant. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [scriptDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`script:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided script code. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [variantDisplayName](../android/icu/text/LocaleDisplayNames.md))`(`variant:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the display name of the provided variant. |
 
 ## Public methods
 
@@ -67,11 +67,11 @@ Returns the current value for a specified DisplayContext.Type.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `type` | [DisplayContext.Type](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext.Type)!:the DisplayContext.Type whose value to return |
+| `type` | [DisplayContext.Type](../android/icu/text/DisplayContext.Type.md)!:the DisplayContext.Type whose value to return |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)! | the current DisplayContext setting for the specified type |
+| [DisplayContext](../android/icu/text/DisplayContext.md)! | the current DisplayContext setting for the specified type |
 
 ### getDialectHandling
 
@@ -85,7 +85,7 @@ Returns the dialect handling used in the display names.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| [LocaleDisplayNames.DialectHandling](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.DialectHandling)! | the dialect handling enum |
+| [LocaleDisplayNames.DialectHandling](../android/icu/text/LocaleDisplayNames.DialectHandling.md)! | the dialect handling enum |
 
 ### getInstance
 
@@ -95,15 +95,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getInstance(locale: ULocale!): LocaleDisplayNames!
 ```
 
-Convenience overload of [getInstance(android.icu.util.ULocale,android.icu.text.LocaleDisplayNames.DialectHandling)](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(android.icu.util.ULocale,%20android.icu.text.LocaleDisplayNames.DialectHandling))that specifies STANDARD dialect handling.
+Convenience overload of [getInstance(android.icu.util.ULocale,android.icu.text.LocaleDisplayNames.DialectHandling)](../android/icu/text/LocaleDisplayNames.md))that specifies STANDARD dialect handling.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the display locale |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the display locale |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | a LocaleDisplayNames instance |
+| [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | a LocaleDisplayNames instance |
 
 ### getInstance
 
@@ -120,12 +120,12 @@ Returns an instance of LocaleDisplayNames that returns names formatted for the p
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the display locale |
-| `contexts` | [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!:one or more context settings (e.g. for dialect handling, capitalization, etc. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the display locale |
+| `contexts` | [DisplayContext](../android/icu/text/DisplayContext.md)!:one or more context settings (e.g. for dialect handling, capitalization, etc. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | a LocaleDisplayNames instance |
+| [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | a LocaleDisplayNames instance |
 
 ### getInstance
 
@@ -142,12 +142,12 @@ Returns an instance of LocaleDisplayNames that returns names formatted for the p
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the display locale |
-| `dialectHandling` | [LocaleDisplayNames.DialectHandling](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.DialectHandling)!:how to select names for locales |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the display locale |
+| `dialectHandling` | [LocaleDisplayNames.DialectHandling](../android/icu/text/LocaleDisplayNames.DialectHandling.md)!:how to select names for locales |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | a LocaleDisplayNames instance |
+| [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | a LocaleDisplayNames instance |
 
 ### getInstance
 
@@ -157,15 +157,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getInstance(locale: Locale!): LocaleDisplayNames!
 ```
 
-Convenience overload of [getInstance(java.util.Locale,android.icu.text.DisplayContext...)](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#getInstance(java.util.Locale,%20android.icu.text.DisplayContext))that specifies [DisplayContext.STANDARD_NAMES](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext).
+Convenience overload of [getInstance(java.util.Locale,android.icu.text.DisplayContext...)](../android/icu/text/LocaleDisplayNames.md))that specifies [DisplayContext.STANDARD_NAMES](../android/icu/text/DisplayContext.md).
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the display [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) |
+| `locale` | [Locale](../java/util/Locale.md)!:the display [java.util.Locale](../java/util/Locale.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | a LocaleDisplayNames instance |
+| [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | a LocaleDisplayNames instance |
 
 ### getInstance
 
@@ -178,16 +178,16 @@ open static fun getInstance(
 ): LocaleDisplayNames!
 ```
 
-Returns an instance of LocaleDisplayNames that returns names formatted for the provided [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#), using the provided DisplayContext settings
+Returns an instance of LocaleDisplayNames that returns names formatted for the provided [java.util.Locale](../java/util/Locale.md), using the provided DisplayContext settings
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the display [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) |
-| `contexts` | [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!:one or more context settings (e.g. for dialect handling, capitalization, etc. |
+| `locale` | [Locale](../java/util/Locale.md)!:the display [java.util.Locale](../java/util/Locale.md) |
+| `contexts` | [DisplayContext](../android/icu/text/DisplayContext.md)!:one or more context settings (e.g. for dialect handling, capitalization, etc. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames#)! | a LocaleDisplayNames instance |
+| [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md)! | a LocaleDisplayNames instance |
 
 ### getLocale
 
@@ -201,7 +201,7 @@ Returns the locale used to determine the display names. This is not necessarily 
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)! | the display locale |
+| [ULocale](../android/icu/util/ULocale.md)! | the display locale |
 
 ### getUiList
 
@@ -219,14 +219,14 @@ Return a list of information used to construct a UI list of locale names.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `collator` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:how to collate---should normally be Collator.getInstance(getDisplayLocale()) |
+| `collator` | [Comparator](../java/util/Comparator.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:how to collate---should normally be Collator.getInstance(getDisplayLocale()) |
 | `inSelf` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, compares the nameInSelf, otherwise the nameInDisplayLocale. Set depending on which field (displayLocale vs self) is to show up in the UI. If both are to show up in the UI, then it should be the one used for the primary sort order. |
-| `localeSet` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!\>!:a list of locales to present in a UI list. The casing uses the settings in the LocaleDisplayNames instance. |
+| `localeSet` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>!:a list of locales to present in a UI list. The casing uses the settings in the LocaleDisplayNames instance. |
 | --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [LocaleDisplayNames.UiListItem](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.UiListItem)!>! | an ordered list of UiListItems. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [LocaleDisplayNames.UiListItem](../android/icu/text/LocaleDisplayNames.UiListItem.md)!>! | an ordered list of UiListItems. |
 
 | Exceptions ||
 |---------------------------------------------|---------------------------------------------------|
@@ -247,12 +247,12 @@ Return a list of information used to construct a UI list of locale names, provid
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `comparator` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)\< [LocaleDisplayNames.UiListItem](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.UiListItem)!\>!:how to sort the UiListItems in the result. |
-| `localeSet` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!\>!:a list of locales to present in a UI list. The casing uses the settings in the LocaleDisplayNames instance. |
+| `comparator` | [Comparator](../java/util/Comparator.md)\< [LocaleDisplayNames.UiListItem](../android/icu/text/LocaleDisplayNames.UiListItem.md)!\>!:how to sort the UiListItems in the result. |
+| `localeSet` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>!:a list of locales to present in a UI list. The casing uses the settings in the LocaleDisplayNames instance. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [LocaleDisplayNames.UiListItem](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.UiListItem)!>! | an ordered list of UiListItems. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [LocaleDisplayNames.UiListItem](../android/icu/text/LocaleDisplayNames.UiListItem.md)!>! | an ordered list of UiListItems. |
 
 | Exceptions ||
 |---------------------------------------------|---------------------------------------------------|
@@ -328,7 +328,7 @@ Returns the display name of the provided ulocale. When no display names are avai
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the locale whose display name to return |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale whose display name to return |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------|
@@ -364,7 +364,7 @@ Returns the display name of the provided locale. When no display names are avail
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the locale whose display name to return |
+| `locale` | [Locale](../java/util/Locale.md)!:the locale whose display name to return |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------|
@@ -396,7 +396,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun scriptDisplayName(scriptCode: Int): String!
 ```
 
-Returns the display name of the provided script code. See [android.icu.lang.UScript](https://developer.android.com/reference/kotlin/android/icu/lang/UScript.html#) for recognized script codes.
+Returns the display name of the provided script code. See [android.icu.lang.UScript](../android/icu/lang/UScript.md) for recognized script codes.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiRttManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/rtt/WifiRttManager.md) 
 | --- | --- |
 
 ```
@@ -13,39 +13,39 @@ open class WifiRttManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.WifiRttManager](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#) |
+| ↳ | [android.net.wifi.rtt.WifiRttManager](../android/net/wifi/rtt/WifiRttManager.md) |
 
 This class provides the primary API for measuring distance (range) to other devices using the IEEE 802.11mc Wi-Fi Round Trip Time (RTT) technology.
 
 The devices which can be ranged include:
 - Access Points (APs)
-- Wi-Fi Aware peersRanging requests are triggered using [startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)). Results (in case of successful operation) are returned in the [RangingResultCallback.onRangingResults(List)](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingResults(kotlin.collections.MutableList))callback.
+- Wi-Fi Aware peersRanging requests are triggered using [startRanging(android.net.wifi.rtt.RangingRequest,java.util.concurrent.Executor,android.net.wifi.rtt.RangingResultCallback)](../android/net/wifi/rtt/WifiRttManager.md)). Results (in case of successful operation) are returned in the [RangingResultCallback.onRangingResults(List)](../android/net/wifi/rtt/RangingResultCallback.md))callback.
 
- Wi-Fi RTT may not be usable at some points, e.g. when Wi-Fi is disabled. To validate that the functionality is available use the [isAvailable()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#isAvailable())function. To track changes in RTT usability register for the [ACTION_WIFI_RTT_STATE_CHANGED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#ACTION_WIFI_RTT_STATE_CHANGED:kotlin.String) broadcast. Note that this broadcast is not sticky - you should register for it and then check the above API to avoid a race condition. 
+ Wi-Fi RTT may not be usable at some points, e.g. when Wi-Fi is disabled. To validate that the functionality is available use the [isAvailable()](../android/net/wifi/rtt/WifiRttManager.md))function. To track changes in RTT usability register for the [ACTION_WIFI_RTT_STATE_CHANGED](../android/net/wifi/rtt/WifiRttManager.md) broadcast. Note that this broadcast is not sticky - you should register for it and then check the above API to avoid a race condition. 
  Restricted for SDK Runtime environment in API level 34.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_WIFI_RTT_STATE_CHANGED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#ACTION_WIFI_RTT_STATE_CHANGED:kotlin.String) Broadcast intent action to indicate that the state of Wi-Fi RTT availability has changed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_LCI](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_BOOLEAN_LCI:kotlin.String) Bundle key to access if getting the Location Configuration Information(LCI) from responder is supported. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_LCR](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_BOOLEAN_LCR:kotlin.String) Bundle key to access if getting the Location Civic Report(LCR) from responder is supported. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_WIFI_RTT_STATE_CHANGED](../android/net/wifi/rtt/WifiRttManager.md) Broadcast intent action to indicate that the state of Wi-Fi RTT availability has changed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_LCI](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access if getting the Location Configuration Information(LCI) from responder is supported. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_LCR](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access if getting the Location Civic Report(LCR) from responder is supported. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATOR](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATOR:kotlin.String) Bundle key to access if device supports to be a IEEE 802. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTT](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTT:kotlin.String) Bundle key to access if one-sided Wi-Fi RTT is supported. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTED:kotlin.String) Bundle key to access if device supports ranging frame protection. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATOR](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access if device supports to be a IEEE 802. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTT](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access if one-sided Wi-Fi RTT is supported. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTED](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access if device supports ranging frame protection. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTED:kotlin.String) Bundle key to access if device supports secure HE-LTF (High Efficiency Long Training Field). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER:kotlin.String) Bundle key to access if device supports to be a responder in station mode |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSION](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSION:kotlin.String) Bundle key to access the maximum supported secure HE-LTF protocol version. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTED](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access if device supports secure HE-LTF (High Efficiency Long Training Field). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access if device supports to be a responder in station mode |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSION](../android/net/wifi/rtt/WifiRttManager.md) Bundle key to access the maximum supported secure HE-LTF protocol version. |
 | --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getRttCharacteristics](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#getRttCharacteristics())`()` Returns a Bundle which represents the characteristics of the Wi-Fi RTT interface: a set of parameters which specify feature support. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAvailable](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#isAvailable())`()` Returns the current status of RTT API: whether or not RTT is available. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRanging](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback))`(`request:` ` [RangingRequest](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [RangingResultCallback](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback)`)` Initiate a request to range to a set of devices specified in the [RangingRequest](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest). |
+| open [Bundle](../android/os/Bundle.md) | [getRttCharacteristics](../android/net/wifi/rtt/WifiRttManager.md))`()` Returns a Bundle which represents the characteristics of the Wi-Fi RTT interface: a set of parameters which specify feature support. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAvailable](../android/net/wifi/rtt/WifiRttManager.md))`()` Returns the current status of RTT API: whether or not RTT is available. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRanging](../android/net/wifi/rtt/WifiRttManager.md))`(`request:` ` [RangingRequest](../android/net/wifi/rtt/RangingRequest.md)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [RangingResultCallback](../android/net/wifi/rtt/RangingResultCallback.md)`)` Initiate a request to range to a set of devices specified in the [RangingRequest](../android/net/wifi/rtt/RangingRequest.md). |
 | --- | --- |
 
 ## Constants
@@ -58,7 +58,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_WIFI_RTT_STATE_CHANGED: String
 ```
 
-Broadcast intent action to indicate that the state of Wi-Fi RTT availability has changed. Use the [isAvailable()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#isAvailable())to query the current status. This broadcast is**not** sticky, use the [isAvailable()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#isAvailable())API after registering the broadcast to check the current state of Wi-Fi RTT.
+Broadcast intent action to indicate that the state of Wi-Fi RTT availability has changed. Use the [isAvailable()](../android/net/wifi/rtt/WifiRttManager.md))to query the current status. This broadcast is**not** sticky, use the [isAvailable()](../android/net/wifi/rtt/WifiRttManager.md))API after registering the broadcast to check the current state of Wi-Fi RTT.
 
 Note: The broadcast is only delivered to registered receivers - no manifest registered components will be launched. 
 
@@ -78,7 +78,7 @@ Bundle key to access if getting the Location Configuration Information(LCI) from
 
 **See Also**
 
-- [android.net.wifi.rtt.ResponderLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation) 
+- [android.net.wifi.rtt.ResponderLocation](../android/net/wifi/rtt/ResponderLocation.md) 
 
 ### CHARACTERISTICS_KEY_BOOLEAN_LCR
 
@@ -94,7 +94,7 @@ Bundle key to access if getting the Location Civic Report(LCR) from responder is
 
 **See Also**
 
-- [android.net.wifi.rtt.ResponderLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation) 
+- [android.net.wifi.rtt.ResponderLocation](../android/net/wifi/rtt/ResponderLocation.md) 
 
 ### CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATOR
 
@@ -116,7 +116,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTT: String
 ```
 
-Bundle key to access if one-sided Wi-Fi RTT is supported. When it is not supported, only two-sided RTT can be performed, which requires responder supports IEEE 802.11mc and this can be determined by the method [ScanResult.is80211mcResponder()](https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#is80211mcResponder()) 
+Bundle key to access if one-sided Wi-Fi RTT is supported. When it is not supported, only two-sided RTT can be performed, which requires responder supports IEEE 802.11mc and this can be determined by the method [ScanResult.is80211mcResponder()](../android/net/wifi/ScanResult.md)) 
 
  Value: "key_one_sided_rtt"
 
@@ -181,11 +181,11 @@ open fun getRttCharacteristics(): Bundle
 Returns a Bundle which represents the characteristics of the Wi-Fi RTT interface: a set of parameters which specify feature support. Each parameter can be accessed by the specified Bundle key, one of the`CHARACTERISTICS_KEY_*`value.
 
 May return an empty Bundle if the Wi-Fi RTT service is not initialized. 
-Requires [android.Manifest.permission#ACCESS_WIFI_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String)
+Requires [android.Manifest.permission#ACCESS_WIFI_STATE](../android/Manifest.permission.md)
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | A Bundle specifying feature support of RTT. This value cannot be`null`. |
+| [Bundle](../android/os/Bundle.md) | A Bundle specifying feature support of RTT. This value cannot be`null`. |
 
 ### isAvailable
 
@@ -195,7 +195,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun isAvailable(): Boolean
 ```
 
-Returns the current status of RTT API: whether or not RTT is available. To track changes in the state of RTT API register for the [ACTION_WIFI_RTT_STATE_CHANGED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#ACTION_WIFI_RTT_STATE_CHANGED:kotlin.String) broadcast.
+Returns the current status of RTT API: whether or not RTT is available. To track changes in the state of RTT API register for the [ACTION_WIFI_RTT_STATE_CHANGED](../android/net/wifi/rtt/WifiRttManager.md) broadcast.
 
 Note: availability of RTT does not mean that the app can use the API. The app's permissions and platform Location Mode are validated at run-time.
 
@@ -215,14 +215,14 @@ open fun startRanging(
 ): Unit
 ```
 
-Initiate a request to range to a set of devices specified in the [RangingRequest](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest). Results will be returned in the [RangingResultCallback](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback) set of callbacks.
+Initiate a request to range to a set of devices specified in the [RangingRequest](../android/net/wifi/rtt/RangingRequest.md). Results will be returned in the [RangingResultCallback](../android/net/wifi/rtt/RangingResultCallback.md) set of callbacks.
 
-Ranging request with only Wifi Aware peers can be performed with either [android.Manifest.permission#NEARBY_WIFI_DEVICES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NEARBY_WIFI_DEVICES:kotlin.String) with android:usesPermissionFlags="neverForLocation", or [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String). All other types of ranging requests require [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String). 
-Requires [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) and [android.Manifest.permission#CHANGE_WIFI_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CHANGE_WIFI_STATE:kotlin.String) and [android.Manifest.permission#ACCESS_WIFI_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String) and [android.Manifest.permission#NEARBY_WIFI_DEVICES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NEARBY_WIFI_DEVICES:kotlin.String)
+Ranging request with only Wifi Aware peers can be performed with either [android.Manifest.permission#NEARBY_WIFI_DEVICES](../android/Manifest.permission.md) with android:usesPermissionFlags="neverForLocation", or [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md). All other types of ranging requests require [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md). 
+Requires [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md) and [android.Manifest.permission#CHANGE_WIFI_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#ACCESS_WIFI_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#NEARBY_WIFI_DEVICES](../android/Manifest.permission.md)
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [RangingRequest](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest):A request specifying a set of devices whose distance measurements are requested. This value cannot be`null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The Executor on which to run the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `callback` | [RangingResultCallback](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback):A callback for the result of the ranging request. This value cannot be`null`. |
+| `request` | [RangingRequest](../android/net/wifi/rtt/RangingRequest.md):A request specifying a set of devices whose distance measurements are requested. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):The Executor on which to run the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [RangingResultCallback](../android/net/wifi/rtt/RangingResultCallback.md):A callback for the result of the ranging request. This value cannot be`null`. |
 | --- | --- |

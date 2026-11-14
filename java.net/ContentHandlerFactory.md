@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ContentHandlerFactory
 ```
 
-| [java.net.ContentHandlerFactory](https://developer.android.com/reference/kotlin/java/net/ContentHandlerFactory#) |
+| [java.net.ContentHandlerFactory](../java/net/ContentHandlerFactory.md) |
 
 This interface defines a factory for content handlers. An implementation of this interface should map a MIME type into an instance of`ContentHandler`.
 
@@ -18,7 +18,7 @@ This interface is used by the`URLStreamHandler`class to create a`ContentHandler`
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ContentHandler](https://developer.android.com/reference/kotlin/java/net/ContentHandler)! | [createContentHandler](https://developer.android.com/reference/kotlin/java/net/ContentHandlerFactory#createContentHandler(kotlin.String))`(`mimetype:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`ContentHandler`to read an object from a`URLStreamHandler`. |
+| abstract [ContentHandler](../java/net/ContentHandler.md)! | [createContentHandler](../java/net/ContentHandlerFactory.md))`(`mimetype:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`ContentHandler`to read an object from a`URLStreamHandler`. |
 
 ## Public methods
 
@@ -38,9 +38,9 @@ Creates a new`ContentHandler`to read an object from a`URLStreamHandler`.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [ContentHandler](https://developer.android.com/reference/kotlin/java/net/ContentHandler)! | a new`ContentHandler`to read an object from a`URLStreamHandler`. |
+| [ContentHandler](../java/net/ContentHandler.md)! | a new`ContentHandler`to read an object from a`URLStreamHandler`. |
 
 **See Also**
 
-- [java.net.ContentHandler](https://developer.android.com/reference/kotlin/java/net/ContentHandler)
-- [java.net.URLStreamHandler](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler)
+- [java.net.ContentHandler](../java/net/ContentHandler.md)
+- [java.net.URLStreamHandler](../java/net/URLStreamHandler.md)

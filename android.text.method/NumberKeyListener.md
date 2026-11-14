@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # NumberKeyListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/method/NumberKeyListener "View this page in Java")
+Kotlin | [Java](../android/text/method/NumberKeyListener.md)
 | --- | --- |
 
 ```
@@ -11,12 +11,12 @@ abstract class NumberKeyListener : BaseKeyListener, InputFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.method.MetaKeyKeyListener](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener) |||
-| | ↳ | [android.text.method.BaseKeyListener](https://developer.android.com/reference/kotlin/android/text/method/BaseKeyListener) ||
-| | | ↳ | [android.text.method.NumberKeyListener](https://developer.android.com/reference/kotlin/android/text/method/NumberKeyListener#) |
+| ↳ | [android.text.method.MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md) |||
+| | ↳ | [android.text.method.BaseKeyListener](../android/text/method/BaseKeyListener.md) ||
+| | | ↳ | [android.text.method.NumberKeyListener](../android/text/method/NumberKeyListener.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [DateKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DateKeyListener), [DateTimeKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DateTimeKeyListener), [DialerKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DialerKeyListener), [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener), [TimeKeyListener](https://developer.android.com/reference/kotlin/android/text/method/TimeKeyListener) |---|---| | [DateKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DateKeyListener) | For entering dates in a text field. | | [DateTimeKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DateTimeKeyListener) | For entering dates and times in the same text field. | | [DialerKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DialerKeyListener) | For dialing-only text entry | | [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener) | For digits-only text entry | | [TimeKeyListener](https://developer.android.com/reference/kotlin/android/text/method/TimeKeyListener) | For entering times in a text field. | |
+| Known Direct Subclasses [DateKeyListener](../android/text/method/DateKeyListener.md), [DateTimeKeyListener](../android/text/method/DateTimeKeyListener.md), [DialerKeyListener](../android/text/method/DialerKeyListener.md), [DigitsKeyListener](../android/text/method/DigitsKeyListener.md), [TimeKeyListener](../android/text/method/TimeKeyListener.md) |---|---| | [DateKeyListener](../android/text/method/DateKeyListener.md) | For entering dates in a text field. | | [DateTimeKeyListener](../android/text/method/DateTimeKeyListener.md) | For entering dates and times in the same text field. | | [DialerKeyListener](../android/text/method/DialerKeyListener.md) | For dialing-only text entry | | [DigitsKeyListener](../android/text/method/DigitsKeyListener.md) | For digits-only text entry | | [TimeKeyListener](../android/text/method/TimeKeyListener.md) | For entering times in a text field. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 For numeric text entry

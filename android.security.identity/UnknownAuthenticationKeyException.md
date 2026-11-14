@@ -10,10 +10,10 @@ open class UnknownAuthenticationKeyException : IdentityCredentialException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [android.security.identity.IdentityCredentialException](https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [android.security.identity.IdentityCredentialException](../android/security/identity/IdentityCredentialException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.security.identity.UnknownAuthenticationKeyException](https://developer.android.com/reference/kotlin/android/security/identity/UnknownAuthenticationKeyException#) |
+| | | | ↳ | [android.security.identity.UnknownAuthenticationKeyException](../android/security/identity/UnknownAuthenticationKeyException.md) |
 
 > [!CAUTION]
 > **This exception was deprecated in API level 37.2.**

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Manifest
 
-Kotlin| [Java](https://developer.android.com/reference/android/Manifest "View this page in Java") 
+Kotlin| [Java](./Manifest.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ class Manifest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.Manifest](https://developer.android.com/reference/kotlin/android/Manifest#) |
+| ↳ | [android.Manifest](./Manifest.md) |
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------|
-| | [permission](https://developer.android.com/reference/kotlin/android/Manifest.permission) <br /> |
-| | [permission_group](https://developer.android.com/reference/kotlin/android/Manifest.permission_group) <br /> |
+| | [permission](./Manifest.permission.md) <br /> |
+| | [permission_group](./Manifest.permission_group.md) <br /> |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------|---|
-| [Manifest](https://developer.android.com/reference/kotlin/android/Manifest#Manifest())`()` <br /> |
+| [Manifest](./Manifest.md))`()` <br /> |
 
 ## Public constructors
 

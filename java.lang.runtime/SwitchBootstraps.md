@@ -10,7 +10,7 @@ open class SwitchBootstraps
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.runtime.SwitchBootstraps](https://developer.android.com/reference/kotlin/java/lang/runtime/SwitchBootstraps#) |
+| ↳ | [java.lang.runtime.SwitchBootstraps](../java/lang/runtime/SwitchBootstraps.md) |
 
 Bootstrap methods for linking`invokedynamic`call sites that implement the selection functionality of the`switch`statement. The bootstraps take additional static arguments corresponding to the`case`labels of the`switch`, implicitly numbered sequentially from`[0..N)`.
 
@@ -18,8 +18,8 @@ Bootstrap methods for linking`invokedynamic`call sites that implement the select
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite.html#)! | [enumSwitch](https://developer.android.com/reference/kotlin/java/lang/runtime/SwitchBootstraps#enumSwitch(java.lang.invoke.MethodHandles.Lookup,%20kotlin.String,%20java.lang.invoke.MethodType,%20kotlin.Any))`(`lookup:` ` [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#)!`, `invocationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `invocationType:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#)!`, `vararg` `labels:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Bootstrap method for linking an`invokedynamic`call site that implements a`switch`on a target of an enum type. |
-| openstatic [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite.html#)! | [typeSwitch](https://developer.android.com/reference/kotlin/java/lang/runtime/SwitchBootstraps#typeSwitch(java.lang.invoke.MethodHandles.Lookup,%20kotlin.String,%20java.lang.invoke.MethodType,%20kotlin.Any))`(`lookup:` ` [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#)!`, `invocationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `invocationType:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#)!`, `vararg` `labels:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Bootstrap method for linking an`invokedynamic`call site that implements a`switch`on a target of a reference type. |
+| openstatic [CallSite](../java/lang/invoke/CallSite.md)! | [enumSwitch](../java/lang/runtime/SwitchBootstraps.md))`(`lookup:` ` [MethodHandles.Lookup](../java/lang/invoke/MethodHandles.Lookup.md)!`, `invocationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `invocationType:` ` [MethodType](../java/lang/invoke/MethodType.md)!`, `vararg` `labels:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Bootstrap method for linking an`invokedynamic`call site that implements a`switch`on a target of an enum type. |
+| openstatic [CallSite](../java/lang/invoke/CallSite.md)! | [typeSwitch](../java/lang/runtime/SwitchBootstraps.md))`(`lookup:` ` [MethodHandles.Lookup](../java/lang/invoke/MethodHandles.Lookup.md)!`, `invocationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `invocationType:` ` [MethodType](../java/lang/invoke/MethodType.md)!`, `vararg` `labels:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Bootstrap method for linking an`invokedynamic`call site that implements a`switch`on a target of a reference type. |
 
 ## Public methods
 
@@ -50,23 +50,23 @@ If the`target`is`null`, then the method of the call site returns -1.
 If the`target`is not`null`, then the method of the call site returns the index of the first element in the`labels`array starting from the`restart`index matching one of the following conditions:
 
 - the element is of type`Class`that is assignable from the target's class; or
-- the element is of type`String`and equals to the target enum constant's [Enum.name()](https://developer.android.com/reference/kotlin/java/lang/Enum.html#name()).
+- the element is of type`String`and equals to the target enum constant's [Enum.name()](../java/lang/Enum.md)).
 
 If no element in the`labels`array matches the target, then the method of the call site return the length of the`labels`array.
 
-The value of the`restart`index must be between`0`(inclusive) and the length of the`labels`array (inclusive), both or an [IndexOutOfBoundsException](https://developer.android.com/reference/kotlin/java/lang/IndexOutOfBoundsException.html#) is thrown.
+The value of the`restart`index must be between`0`(inclusive) and the length of the`labels`array (inclusive), both or an [IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md) is thrown.
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `lookup` | [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#)!:Represents a lookup context with the accessibility privileges of the caller. When used with`invokedynamic`, this is stacked automatically by the VM. |
+| `lookup` | [MethodHandles.Lookup](../java/lang/invoke/MethodHandles.Lookup.md)!:Represents a lookup context with the accessibility privileges of the caller. When used with`invokedynamic`, this is stacked automatically by the VM. |
 | `invocationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:unused |
-| `invocationType` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#)!:The invocation type of the`CallSite`with two parameters, an enum type, an`int`, and`int`as a return type. |
+| `invocationType` | [MethodType](../java/lang/invoke/MethodType.md)!:The invocation type of the`CallSite`with two parameters, an enum type, an`int`, and`int`as a return type. |
 | --- | --- |
 | `labels` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:case labels -`String`constants and`Class`instances, in any combination |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite.html#)! | a`CallSite`returning the first matching element as described above |
+| [CallSite](../java/lang/invoke/CallSite.md)! | a`CallSite`returning the first matching element as described above |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -100,19 +100,19 @@ If the`target`is not`null`, then the method of the call site returns the index o
 
 If no element in the`labels`array matches the target, then the method of the call site return the length of the`labels`array.
 
-The value of the`restart`index must be between`0`(inclusive) and the length of the`labels`array (inclusive), both or an [IndexOutOfBoundsException](https://developer.android.com/reference/kotlin/java/lang/IndexOutOfBoundsException.html#) is thrown.
+The value of the`restart`index must be between`0`(inclusive) and the length of the`labels`array (inclusive), both or an [IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md) is thrown.
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `lookup` | [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#)!:Represents a lookup context with the accessibility privileges of the caller. When used with`invokedynamic`, this is stacked automatically by the VM. |
+| `lookup` | [MethodHandles.Lookup](../java/lang/invoke/MethodHandles.Lookup.md)!:Represents a lookup context with the accessibility privileges of the caller. When used with`invokedynamic`, this is stacked automatically by the VM. |
 | `invocationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:unused |
-| `invocationType` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#)!:The invocation type of the`CallSite`with two parameters, a reference type, an`int`, and`int`as a return type. |
+| `invocationType` | [MethodType](../java/lang/invoke/MethodType.md)!:The invocation type of the`CallSite`with two parameters, a reference type, an`int`, and`int`as a return type. |
 | --- | --- |
 | `labels` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:case labels -`String`and`Integer`constants and`Class`and`EnumDesc`instances, in any combination |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite.html#)! | a`CallSite`returning the first matching element as described above |
+| [CallSite](../java/lang/invoke/CallSite.md)! | a`CallSite`returning the first matching element as described above |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

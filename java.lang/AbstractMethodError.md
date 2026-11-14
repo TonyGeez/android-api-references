@@ -11,11 +11,11 @@ open class AbstractMethodError : IncompatibleClassChangeError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) ||||
-| | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) |||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) ||||
+| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IncompatibleClassChangeError](https://developer.android.com/reference/kotlin/java/lang/IncompatibleClassChangeError) ||
-| | | | | ↳ | [java.lang.AbstractMethodError](https://developer.android.com/reference/kotlin/java/lang/AbstractMethodError#) |
+| | | | ↳ | [java.lang.IncompatibleClassChangeError](../java/lang/IncompatibleClassChangeError.md) ||
+| | | | | ↳ | [java.lang.AbstractMethodError](../java/lang/AbstractMethodError.md) |
 
 Thrown when an application tries to call an abstract method. Normally, this error is caught by the compiler; this error can only occur at run time if the definition of some class has incompatibly changed since the currently executing method was last compiled.
 
@@ -23,8 +23,8 @@ Thrown when an application tries to call an abstract method. Normally, this erro
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AbstractMethodError](https://developer.android.com/reference/kotlin/java/lang/AbstractMethodError#AbstractMethodError())`()` Constructs an`AbstractMethodError`with no detail message. |
-| [AbstractMethodError](https://developer.android.com/reference/kotlin/java/lang/AbstractMethodError#AbstractMethodError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`AbstractMethodError`with the specified detail message. |
+| [AbstractMethodError](../java/lang/AbstractMethodError.md))`()` Constructs an`AbstractMethodError`with no detail message. |
+| [AbstractMethodError](../java/lang/AbstractMethodError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`AbstractMethodError`with the specified detail message. |
 
 ## Public constructors
 

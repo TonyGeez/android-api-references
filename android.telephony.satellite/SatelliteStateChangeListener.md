@@ -4,24 +4,24 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # SatelliteStateChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/satellite/SatelliteStateChangeListener "View this page in Java") 
+Kotlin| [Java](../android/telephony/satellite/SatelliteStateChangeListener.md) 
 | --- | --- |
 
 ```
 interface SatelliteStateChangeListener
 ```
 
-| [android.telephony.satellite.SatelliteStateChangeListener](https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteStateChangeListener#) |
+| [android.telephony.satellite.SatelliteStateChangeListener](../android/telephony/satellite/SatelliteStateChangeListener.md) |
 
 A listener interface to monitor satellite state change events.
 
-Call [SatelliteManager.registerStateChangeListener(Executor, SatelliteStateChangeListener)](https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager#registerStateChangeListener(java.util.concurrent.Executor,%20android.telephony.satellite.SatelliteStateChangeListener))to monitor. Call [SatelliteManager.unregisterStateChangeListener(SatelliteStateChangeListener)](https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager#unregisterStateChangeListener(android.telephony.satellite.SatelliteStateChangeListener))to cancel.
+Call [SatelliteManager.registerStateChangeListener(Executor, SatelliteStateChangeListener)](../android/telephony/satellite/SatelliteManager.md))to monitor. Call [SatelliteManager.unregisterStateChangeListener(SatelliteStateChangeListener)](../android/telephony/satellite/SatelliteManager.md))to cancel.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEnabledStateChanged](https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteStateChangeListener#onEnabledStateChanged(kotlin.Boolean))`(`isEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when satellite modem enabled state may have changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEnabledStateChanged](../android/telephony/satellite/SatelliteStateChangeListener.md))`(`isEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when satellite modem enabled state may have changed. |
 
 ## Public methods
 

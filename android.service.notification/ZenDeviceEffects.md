@@ -2,7 +2,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # ZenDeviceEffects
 
-Kotlin | [Java](https://developer.android.com/reference/android/service/notification/ZenDeviceEffects "View this page in Java")
+Kotlin | [Java](../android/service/notification/ZenDeviceEffects.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ZenDeviceEffects : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.notification.ZenDeviceEffects](https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#) |
+| ↳ | [android.service.notification.ZenDeviceEffects](../android/service/notification/ZenDeviceEffects.md) |
 
 Represents the set of device effects (affecting display and device behavior in general) that are applied whenever an `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#` is active.
 
@@ -42,7 +42,7 @@ Represents the set of device effects (affecting display and device behavior in g
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ZenDeviceEffects](https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#)!\> | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#CREATOR:android.os.Parcelable.Creator` `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#` that instantiates `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#` objects. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ZenDeviceEffects](../android/service/notification/ZenDeviceEffects.md)!\> | `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#CREATOR:android.os.Parcelable.Creator` `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#` that instantiates `https://developer.android.com/reference/kotlin/android/service/notification/ZenDeviceEffects#` objects. |
 
 ## Public methods
 
@@ -177,7 +177,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

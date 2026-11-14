@@ -10,44 +10,44 @@ open class XMLReaderAdapter : ContentHandler, Parser
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.XMLReaderAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#) |
+| ↳ | [org.xml.sax.helpers.XMLReaderAdapter](../org/xml/sax/helpers/XMLReaderAdapter.md) |
 
 Adapt a SAX2 XMLReader as a SAX1 Parser.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-This class wraps a SAX2 [XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#) and makes it act as a SAX1 [Parser](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#). The XMLReader must support a true value for the http://xml.org/sax/features/namespace-prefixes property or parsing will fail with a [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException.html#); if the XMLReader supports a false value for the http://xml.org/sax/features/namespaces property, that will also be used to improve efficiency.
+This class wraps a SAX2 [XMLReader](../org/xml/sax/XMLReader.md) and makes it act as a SAX1 [Parser](../org/xml/sax/Parser.md). The XMLReader must support a true value for the http://xml.org/sax/features/namespace-prefixes property or parsing will fail with a [SAXException](../org/xml/sax/SAXException.md); if the XMLReader supports a false value for the http://xml.org/sax/features/namespaces property, that will also be used to improve efficiency.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [XMLReaderAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#XMLReaderAdapter())`()` Create a new adapter. |
-| [XMLReaderAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#XMLReaderAdapter(org.xml.sax.XMLReader))`(`xmlReader:` ` [XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#)!`)` Create a new adapter. |
+| [XMLReaderAdapter](../org/xml/sax/helpers/XMLReaderAdapter.md))`()` Create a new adapter. |
+| [XMLReaderAdapter](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`xmlReader:` ` [XMLReader](../org/xml/sax/XMLReader.md)!`)` Create a new adapter. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#characters(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapt a SAX2 characters event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#endDocument())`()` End document event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#endElement(kotlin.String,%20kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 end element event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapt a SAX2 characters event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](../org/xml/sax/helpers/XMLReaderAdapter.md))`()` End document event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 end element event. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endPrefixMapping](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#endPrefixMapping(kotlin.String))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 end prefix mapping event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#ignorableWhitespace(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapt a SAX2 ignorable whitespace event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#parse(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endPrefixMapping](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 end prefix mapping event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapt a SAX2 ignorable whitespace event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the document. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#parse(org.xml.sax.InputSource))`(`input:` ` [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!`)` Parse the document. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#processingInstruction(kotlin.String,%20kotlin.String))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 processing instruction event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#setDTDHandler(org.xml.sax.DTDHandler))`(`handler:` ` [DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler.html#)!`)` Register the DTD event handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`input:` ` [InputSource](../org/xml/sax/InputSource.md)!`)` Parse the document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 processing instruction event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`handler:` ` [DTDHandler](../org/xml/sax/DTDHandler.md)!`)` Register the DTD event handler. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#setDocumentHandler(org.xml.sax.DocumentHandler))`(`handler:` ` [DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler.html#)!`)` Register the SAX1 document event handler. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#setDocumentLocator(org.xml.sax.Locator))`(`locator:` ` [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#)!`)` Set a document locator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#setEntityResolver(org.xml.sax.EntityResolver))`(`resolver:` ` [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver.html#)!`)` Register the entity resolver. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentHandler](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`handler:` ` [DocumentHandler](../org/xml/sax/DocumentHandler.md)!`)` Register the SAX1 document event handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`locator:` ` [Locator](../org/xml/sax/Locator.md)!`)` Set a document locator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`resolver:` ` [EntityResolver](../org/xml/sax/EntityResolver.md)!`)` Register the entity resolver. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#setErrorHandler(org.xml.sax.ErrorHandler))`(`handler:` ` [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!`)` Register the error event handler. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocale](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#setLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Set the locale for error reporting. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skippedEntity](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#skippedEntity(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 skipped entity event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`handler:` ` [ErrorHandler](../org/xml/sax/ErrorHandler.md)!`)` Register the error event handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocale](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Set the locale for error reporting. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skippedEntity](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 skipped entity event. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#startDocument())`()` Start document event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#startElement(kotlin.String,%20kotlin.String,%20kotlin.String,%20org.xml.sax.Attributes))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `atts:` ` [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes.html#)!`)` Adapt a SAX2 start element event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startPrefixMapping](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#startPrefixMapping(kotlin.String,%20kotlin.String))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 start prefix mapping event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](../org/xml/sax/helpers/XMLReaderAdapter.md))`()` Start document event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `atts:` ` [Attributes](../org/xml/sax/Attributes.md)!`)` Adapt a SAX2 start element event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startPrefixMapping](../org/xml/sax/helpers/XMLReaderAdapter.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapt a SAX2 start prefix mapping event. |
 | --- | --- |
 
 ## Public constructors
@@ -82,7 +82,7 @@ Create a new adapter, wrapped around a SAX2 XMLReader. The adapter will make the
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `xmlReader` | [XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#)!:The SAX2 XMLReader to wrap. |
+| `xmlReader` | [XMLReader](../org/xml/sax/XMLReader.md)!:The SAX2 XMLReader to wrap. |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -118,7 +118,7 @@ Adapt a SAX2 characters event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#characters](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#characters(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)) 
+- [org.xml.sax.ContentHandler#characters](../org/xml/sax/ContentHandler.md)) 
 
 ### endDocument
 
@@ -137,7 +137,7 @@ End document event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#endDocument](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#endDocument()) 
+- [org.xml.sax.ContentHandler#endDocument](../org/xml/sax/ContentHandler.md)) 
 
 ### endElement
 
@@ -167,7 +167,7 @@ Adapt a SAX2 end element event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#endElement](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#endElement(kotlin.String,%20kotlin.String,%20kotlin.String)) 
+- [org.xml.sax.ContentHandler#endElement](../org/xml/sax/ContentHandler.md)) 
 
 ### endPrefixMapping
 
@@ -189,7 +189,7 @@ Adapt a SAX2 end prefix mapping event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#endPrefixMapping](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#endPrefixMapping(kotlin.String)) 
+- [org.xml.sax.ContentHandler#endPrefixMapping](../org/xml/sax/ContentHandler.md)) 
 
 ### ignorableWhitespace
 
@@ -219,7 +219,7 @@ Adapt a SAX2 ignorable whitespace event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#ignorableWhitespace](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#ignorableWhitespace(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)) 
+- [org.xml.sax.ContentHandler#ignorableWhitespace](../org/xml/sax/ContentHandler.md)) 
 
 ### parse
 
@@ -245,7 +245,7 @@ This method will throw an exception if the embedded XMLReader does not support t
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#parse(org.xml.sax.InputSource)>
-- [org.xml.sax.Parser#parse(java.lang.String)](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#parse(kotlin.String)) 
+- [org.xml.sax.Parser#parse(java.lang.String)](../org/xml/sax/Parser.md)) 
 
 ### parse
 
@@ -262,7 +262,7 @@ This method will throw an exception if the embedded XMLReader does not support t
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------|
 | `source` | The input source for the top-level of the XML document. |
-| `input` | [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!:An input source for the document. |
+| `input` | [InputSource](../org/xml/sax/InputSource.md)!:An input source for the document. |
 
 | Exceptions ||
 |----------------------------|----------------------------------------------------------------|
@@ -271,8 +271,8 @@ This method will throw an exception if the embedded XMLReader does not support t
 
 **See Also**
 
-- [#parse(java.lang.String)](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderAdapter#parse(kotlin.String))
-- [org.xml.sax.Parser#parse(org.xml.sax.InputSource)](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#parse(org.xml.sax.InputSource)) 
+- [#parse(java.lang.String)](../org/xml/sax/helpers/XMLReaderAdapter.md))
+- [org.xml.sax.Parser#parse(org.xml.sax.InputSource)](../org/xml/sax/Parser.md)) 
 
 ### processingInstruction
 
@@ -299,7 +299,7 @@ Adapt a SAX2 processing instruction event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#processingInstruction](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#processingInstruction(kotlin.String,%20kotlin.String)) 
+- [org.xml.sax.ContentHandler#processingInstruction](../org/xml/sax/ContentHandler.md)) 
 
 ### setDTDHandler
 
@@ -313,11 +313,11 @@ Register the DTD event handler.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------|
-| `handler` | [DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler.html#)!:The new DTD event handler. |
+| `handler` | [DTDHandler](../org/xml/sax/DTDHandler.md)!:The new DTD event handler. |
 
 **See Also**
 
-- [org.xml.sax.Parser#setDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#setDTDHandler(org.xml.sax.DTDHandler)) 
+- [org.xml.sax.Parser#setDTDHandler](../org/xml/sax/Parser.md)) 
 
 ### setDocumentHandler
 
@@ -333,11 +333,11 @@ Note that the SAX1 document handler has no Namespace support.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `handler` | [DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler.html#)!:The new SAX1 document event handler. |
+| `handler` | [DocumentHandler](../org/xml/sax/DocumentHandler.md)!:The new SAX1 document event handler. |
 
 **See Also**
 
-- [org.xml.sax.Parser#setDocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#setDocumentHandler(org.xml.sax.DocumentHandler)) 
+- [org.xml.sax.Parser#setDocumentHandler](../org/xml/sax/Parser.md)) 
 
 ### setDocumentLocator
 
@@ -351,11 +351,11 @@ Set a document locator.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------|
-| `locator` | [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#)!:The document locator. |
+| `locator` | [Locator](../org/xml/sax/Locator.md)!:The document locator. |
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#setDocumentLocator](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#setDocumentLocator(org.xml.sax.Locator)) 
+- [org.xml.sax.ContentHandler#setDocumentLocator](../org/xml/sax/ContentHandler.md)) 
 
 ### setEntityResolver
 
@@ -369,11 +369,11 @@ Register the entity resolver.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver.html#)!:The new resolver. |
+| `resolver` | [EntityResolver](../org/xml/sax/EntityResolver.md)!:The new resolver. |
 
 **See Also**
 
-- [org.xml.sax.Parser#setEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#setEntityResolver(org.xml.sax.EntityResolver)) 
+- [org.xml.sax.Parser#setEntityResolver](../org/xml/sax/Parser.md)) 
 
 ### setErrorHandler
 
@@ -387,11 +387,11 @@ Register the error event handler.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------|
-| `handler` | [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!:The new error event handler. |
+| `handler` | [ErrorHandler](../org/xml/sax/ErrorHandler.md)!:The new error event handler. |
 
 **See Also**
 
-- [org.xml.sax.Parser#setErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#setErrorHandler(org.xml.sax.ErrorHandler)) 
+- [org.xml.sax.Parser#setErrorHandler](../org/xml/sax/Parser.md)) 
 
 ### setLocale
 
@@ -407,11 +407,11 @@ This is not supported in SAX2, and will always throw an exception.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the locale for error reporting. |
+| `locale` | [Locale](../java/util/Locale.md)!:the locale for error reporting. |
 
 **See Also**
 
-- [org.xml.sax.Parser#setLocale](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#setLocale(java.util.Locale))
+- [org.xml.sax.Parser#setLocale](../org/xml/sax/Parser.md))
 
 | Exceptions ||
 |----------------------------|---------------------------|
@@ -438,7 +438,7 @@ Adapt a SAX2 skipped entity event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#skippedEntity](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#skippedEntity(kotlin.String)) 
+- [org.xml.sax.ContentHandler#skippedEntity](../org/xml/sax/ContentHandler.md)) 
 
 ### startDocument
 
@@ -457,7 +457,7 @@ Start document event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#startDocument](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#startDocument()) 
+- [org.xml.sax.ContentHandler#startDocument](../org/xml/sax/ContentHandler.md)) 
 
 ### startElement
 
@@ -480,7 +480,7 @@ Adapt a SAX2 start element event.
 | `localName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The Namespace local name. |
 | `qName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The qualified (prefixed) name. |
 | --- | --- |
-| `atts` | [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes.html#)!:The SAX2 attributes. |
+| `atts` | [Attributes](../org/xml/sax/Attributes.md)!:The SAX2 attributes. |
 
 | Exceptions ||
 |----------------------------|--------------------------------------------------------|
@@ -489,7 +489,7 @@ Adapt a SAX2 start element event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#endDocument](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#endDocument()) 
+- [org.xml.sax.ContentHandler#endDocument](../org/xml/sax/ContentHandler.md)) 
 
 ### startPrefixMapping
 
@@ -515,4 +515,4 @@ Adapt a SAX2 start prefix mapping event.
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#startPrefixMapping](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#startPrefixMapping(kotlin.String,%20kotlin.String))
+- [org.xml.sax.ContentHandler#startPrefixMapping](../org/xml/sax/ContentHandler.md))

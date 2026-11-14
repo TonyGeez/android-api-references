@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface ToIntBiFunction<T : Any!, U : Any!>
 ```
 
-| [java.util.function.ToIntBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntBiFunction#) |
+| [java.util.function.ToIntBiFunction](../java/util/function/ToIntBiFunction.md) |
 
-Represents a function that accepts two arguments and produces an int-valued result. This is the`int`-producing primitive specialization for [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction).
+Represents a function that accepts two arguments and produces an int-valued result. This is the`int`-producing primitive specialization for [BiFunction](../java/util/function/BiFunction.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [applyAsInt(java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/function/ToIntBiFunction#applyAsInt(java.util.function.ToIntBiFunction.T,%20java.util.function.ToIntBiFunction.U)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsInt(java.lang.Object,java.lang.Object)](../java/util/function/ToIntBiFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](https://developer.android.com/reference/kotlin/java/util/function/ToIntBiFunction#applyAsInt(java.util.function.ToIntBiFunction.T,%20java.util.function.ToIntBiFunction.U))`(`t:` `T`, `u:` `U`)` Applies this function to the given arguments. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](../java/util/function/ToIntBiFunction.md))`(`t:` `T`, `u:` `U`)` Applies this function to the given arguments. |
 
 ## Public methods
 

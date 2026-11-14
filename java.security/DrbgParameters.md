@@ -10,7 +10,7 @@ open class DrbgParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.DrbgParameters](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#) |
+| ↳ | [java.security.DrbgParameters](../java/security/DrbgParameters.md) |
 
 This class specifies the parameters used by a DRBG (Deterministic Random Bit Generator).
 
@@ -33,15 +33,15 @@ On the other hand, the 800-90Ar1 specification does have some configurable optio
 - if prediction resistance is required,
 - personalization string and additional input.
 
-A DRBG instance can be instantiated with parameters from an [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation) object and other information (for example, the nonce, which is not managed by this API). This maps to the `Instantiate_function` defined in NIST SP 800-90Ar1.
+A DRBG instance can be instantiated with parameters from an [DrbgParameters.Instantiation](../java/security/DrbgParameters.Instantiation.md) object and other information (for example, the nonce, which is not managed by this API). This maps to the `Instantiate_function` defined in NIST SP 800-90Ar1.
 
-A DRBG instance can be reseeded with parameters from a [DrbgParameters.Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) object. This maps to the `Reseed_function` defined in NIST SP 800-90Ar1. Calling [SecureRandom.reseed()](https://developer.android.com/reference/kotlin/java/security/SecureRandom#reseed()) is equivalent to calling [SecureRandom.reseed(SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandom#reseed(java.security.SecureRandomParameters)) with the effective instantiated prediction resistance flag (as returned by [SecureRandom.getParameters()](https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters())) with no additional input.
+A DRBG instance can be reseeded with parameters from a [DrbgParameters.Reseed](../java/security/DrbgParameters.Reseed.md) object. This maps to the `Reseed_function` defined in NIST SP 800-90Ar1. Calling [SecureRandom.reseed()](../java/security/SecureRandom.md)) is equivalent to calling [SecureRandom.reseed(SecureRandomParameters)](../java/security/SecureRandom.md)) with the effective instantiated prediction resistance flag (as returned by [SecureRandom.getParameters()](../java/security/SecureRandom.md))) with no additional input.
 
-A DRBG instance generates data with additional parameters from a [DrbgParameters.NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes) object. This maps to the `Generate_function` defined in NIST SP 800-90Ar1. Calling java.security.SecureRandom#nextBytes(byte\[\]) is equivalent to calling [SecureRandom.nextBytes(byte[], SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandom#nextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)) with the effective instantiated strength and prediction resistance flag (as returned by [SecureRandom.getParameters()](https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters())) with no additional input.
+A DRBG instance generates data with additional parameters from a [DrbgParameters.NextBytes](../java/security/DrbgParameters.NextBytes.md) object. This maps to the `Generate_function` defined in NIST SP 800-90Ar1. Calling java.security.SecureRandom#nextBytes(byte\[\]) is equivalent to calling [SecureRandom.nextBytes(byte[], SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandom#nextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)) with the effective instantiated strength and prediction resistance flag (as returned by [SecureRandom.getParameters()](../java/security/SecureRandom.md))) with no additional input.
 
-A DRBG should be implemented as a subclass of [SecureRandomSpi](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi). It is recommended that the implementation contain the 1-arg [constructor](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#SecureRandomSpi(java.security.SecureRandomParameters)) that takes a `DrbgParameters.Instantiation` argument. If implemented this way, this implementation can be chosen by any `SecureRandom.getInstance()` method. If it is chosen by a `SecureRandom.getInstance()` with a [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters) parameter, the parameter is passed into this constructor. If it is chosen by a `SecureRandom.getInstance()` without a `SecureRandomParameters` parameter, the constructor is called with a `null` argument and the implementation should choose its own parameters. Its [SecureRandom.getParameters()](https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters()) must always return a non-null effective `DrbgParameters.Instantiation` object that reflects how the DRBG is actually instantiated. A caller can use this information to determine whether a `SecureRandom` object is a DRBG and what features it supports. Please note that the returned value does not necessarily equal to the `DrbgParameters.Instantiation` object passed into the `SecureRandom.getInstance()` call. For example, the requested capability can be [DrbgParameters.Capability.NONE](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability) but the effective value can be [DrbgParameters.Capability.RESEED_ONLY](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability) if the implementation supports reseeding. The implementation must implement the [SecureRandomSpi.engineNextBytes(byte[], SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineNextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)) method which takes a `DrbgParameters.NextBytes` parameter. Unless the result of [SecureRandom.getParameters()](https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters()) has its [capability](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation#getCapability()) being [NONE](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability), it must implement [SecureRandomSpi.engineReseed(SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineReseed(java.security.SecureRandomParameters)) which takes a `DrbgParameters.Reseed` parameter.
+A DRBG should be implemented as a subclass of [SecureRandomSpi](../java/security/SecureRandomSpi.md). It is recommended that the implementation contain the 1-arg [constructor](../java/security/SecureRandomSpi.md)) that takes a `DrbgParameters.Instantiation` argument. If implemented this way, this implementation can be chosen by any `SecureRandom.getInstance()` method. If it is chosen by a `SecureRandom.getInstance()` with a [SecureRandomParameters](../java/security/SecureRandomParameters.md) parameter, the parameter is passed into this constructor. If it is chosen by a `SecureRandom.getInstance()` without a `SecureRandomParameters` parameter, the constructor is called with a `null` argument and the implementation should choose its own parameters. Its [SecureRandom.getParameters()](../java/security/SecureRandom.md)) must always return a non-null effective `DrbgParameters.Instantiation` object that reflects how the DRBG is actually instantiated. A caller can use this information to determine whether a `SecureRandom` object is a DRBG and what features it supports. Please note that the returned value does not necessarily equal to the `DrbgParameters.Instantiation` object passed into the `SecureRandom.getInstance()` call. For example, the requested capability can be [DrbgParameters.Capability.NONE](../java/security/DrbgParameters.Capability.md) but the effective value can be [DrbgParameters.Capability.RESEED_ONLY](../java/security/DrbgParameters.Capability.md) if the implementation supports reseeding. The implementation must implement the [SecureRandomSpi.engineNextBytes(byte[], SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineNextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)) method which takes a `DrbgParameters.NextBytes` parameter. Unless the result of [SecureRandom.getParameters()](../java/security/SecureRandom.md)) has its [capability](../java/security/DrbgParameters.Instantiation.md)) being [NONE](../java/security/DrbgParameters.Capability.md), it must implement [SecureRandomSpi.engineReseed(SecureRandomParameters)](../java/security/SecureRandomSpi.md)) which takes a `DrbgParameters.Reseed` parameter.
 
-On the other hand, if a DRBG implementation does not contain a constructor that has an `DrbgParameters.Instantiation` argument (not recommended), it can only be chosen by a `SecureRandom.getInstance()` without a `SecureRandomParameters` parameter, but will not be chosen if a `getInstance` method with a `SecureRandomParameters` parameter is called. If implemented this way, its [SecureRandom.getParameters()](https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters()) must return `null`, and it does not need to implement either [SecureRandomSpi.engineNextBytes(byte[], SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineNextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)) or [SecureRandomSpi.engineReseed(SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineReseed(java.security.SecureRandomParameters)).
+On the other hand, if a DRBG implementation does not contain a constructor that has an `DrbgParameters.Instantiation` argument (not recommended), it can only be chosen by a `SecureRandom.getInstance()` without a `SecureRandomParameters` parameter, but will not be chosen if a `getInstance` method with a `SecureRandomParameters` parameter is called. If implemented this way, its [SecureRandom.getParameters()](../java/security/SecureRandom.md)) must return `null`, and it does not need to implement either [SecureRandomSpi.engineNextBytes(byte[], SecureRandomParameters)](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi#engineNextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)) or [SecureRandomSpi.engineReseed(SecureRandomParameters)](../java/security/SecureRandomSpi.md)).
 
 A DRBG might reseed itself automatically if the seed period is bigger than the maximum seed life defined by the DRBG mechanism.
 
@@ -98,17 +98,17 @@ SecureRandom drbg;
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Capability](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability) The reseedable and prediction resistance capabilities of a DRBG. |
-| | [Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation) DRBG parameters for instantiation. |
-| | [NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes) DRBG parameters for random bits generation. |
+| | [Capability](../java/security/DrbgParameters.Capability.md) The reseedable and prediction resistance capabilities of a DRBG. |
+| | [Instantiation](../java/security/DrbgParameters.Instantiation.md) DRBG parameters for instantiation. |
+| | [NextBytes](../java/security/DrbgParameters.NextBytes.md) DRBG parameters for random bits generation. |
 | --- | --- |
-| | [Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) DRBG parameters for reseed. |
+| | [Reseed](../java/security/DrbgParameters.Reseed.md) DRBG parameters for reseed. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open static [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation)! | [instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#instantiation(kotlin.Int,%20java.security.DrbgParameters.Capability,%20kotlin.ByteArray))`(`strength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `capability:` ` [DrbgParameters.Capability](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability)!`, `personalizationString:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation) object. |
-| open static [DrbgParameters.NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes)! | [nextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#nextBytes(kotlin.Int,%20kotlin.Boolean,%20kotlin.ByteArray))`(`strength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `predictionResistance:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `additionalInput:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes) object. |
-| open static [DrbgParameters.Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed)! | [reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters#reseed(kotlin.Boolean,%20kotlin.ByteArray))`(`predictionResistance:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `additionalInput:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) object. |
+| open static [DrbgParameters.Instantiation](../java/security/DrbgParameters.Instantiation.md)! | [instantiation](../java/security/DrbgParameters.md))`(`strength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `capability:` ` [DrbgParameters.Capability](../java/security/DrbgParameters.Capability.md)!`, `personalizationString:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [DrbgParameters.Instantiation](../java/security/DrbgParameters.Instantiation.md) object. |
+| open static [DrbgParameters.NextBytes](../java/security/DrbgParameters.NextBytes.md)! | [nextBytes](../java/security/DrbgParameters.md))`(`strength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `predictionResistance:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `additionalInput:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [NextBytes](../java/security/DrbgParameters.NextBytes.md) object. |
+| open static [DrbgParameters.Reseed](../java/security/DrbgParameters.Reseed.md)! | [reseed](../java/security/DrbgParameters.md))`(`predictionResistance:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `additionalInput:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a [Reseed](../java/security/DrbgParameters.Reseed.md) object. |
 | --- | --- |
 
 ## Public methods
@@ -125,18 +125,18 @@ open static fun instantiation(
 ): DrbgParameters.Instantiation!
 ```
 
-Generates a [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation) object.
+Generates a [DrbgParameters.Instantiation](../java/security/DrbgParameters.Instantiation.md) object.
 
 | Parameters ||
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `strength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): security strength in bits, -1 for default strength if used in `getInstance`. |
-| `capability` | [DrbgParameters.Capability](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Capability)!: capability |
+| `capability` | [DrbgParameters.Capability](../java/security/DrbgParameters.Capability.md)!: capability |
 | `personalizationString` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: personalization string as a byte array, can be `null`. The content of this byte array will be copied. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation)! | a new `Instantiation` object |
+| [DrbgParameters.Instantiation](../java/security/DrbgParameters.Instantiation.md)! | a new `Instantiation` object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------|
@@ -155,7 +155,7 @@ open static fun nextBytes(
 ): DrbgParameters.NextBytes!
 ```
 
-Generates a [NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes) object.
+Generates a [NextBytes](../java/security/DrbgParameters.NextBytes.md) object.
 
 | Parameters ||
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -166,7 +166,7 @@ Generates a [NextBytes](https://developer.android.com/reference/kotlin/java/secu
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [DrbgParameters.NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes)! | a new `NextBytes` object |
+| [DrbgParameters.NextBytes](../java/security/DrbgParameters.NextBytes.md)! | a new `NextBytes` object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------|
@@ -183,7 +183,7 @@ open static fun reseed(
 ): DrbgParameters.Reseed!
 ```
 
-Generates a [Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) object.
+Generates a [Reseed](../java/security/DrbgParameters.Reseed.md) object.
 
 | Parameters ||
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -192,4 +192,4 @@ Generates a [Reseed](https://developer.android.com/reference/kotlin/java/securit
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------|
-| [DrbgParameters.Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed)! | a new `Reseed` object |
+| [DrbgParameters.Reseed](../java/security/DrbgParameters.Reseed.md)! | a new `Reseed` object |

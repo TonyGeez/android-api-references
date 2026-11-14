@@ -11,32 +11,32 @@ open class FormatFlagsConversionMismatchException : IllegalFormatException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) |||
-| | | | | ↳ | [java.util.IllegalFormatException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException) ||
-| | | | | | ↳ | [java.util.FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) |||
+| | | | | ↳ | [java.util.IllegalFormatException](../java/util/IllegalFormatException.md) ||
+| | | | | | ↳ | [java.util.FormatFlagsConversionMismatchException](../java/util/FormatFlagsConversionMismatchException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when a conversion and flag are incompatible.
 
-Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) to be thrown.
+Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException#FormatFlagsConversionMismatchException(kotlin.String,%20kotlin.Char))`(`f:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Constructs an instance of this class with the specified flag and conversion. |
+| [FormatFlagsConversionMismatchException](../java/util/FormatFlagsConversionMismatchException.md))`(`f:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Constructs an instance of this class with the specified flag and conversion. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getConversion](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException#getConversion())`()` Returns the incompatible conversion. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFlags](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException#getFlags())`()` Returns the incompatible flag. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getConversion](../java/util/FormatFlagsConversionMismatchException.md))`()` Returns the incompatible conversion. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFlags](../java/util/FormatFlagsConversionMismatchException.md))`()` Returns the incompatible flag. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException#message:kotlin.String) <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/util/FormatFlagsConversionMismatchException.md) <br /> |
 
 ## Public constructors
 

@@ -8,9 +8,9 @@ class ProviderInfo : ComponentInfo, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo) |||
-| | ↳ | [android.content.pm.ComponentInfo](https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo) ||
-| | | ↳ | [android.content.pm.ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#) |
+| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) |||
+| | ↳ | [android.content.pm.ComponentInfo](../android/content/pm/ComponentInfo.md) ||
+| | | ↳ | [android.content.pm.ProviderInfo](../android/content/pm/ProviderInfo.md) |
 | --- | --- | --- | --- |
 
 Holds information about a specific `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`. This is returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)`.
@@ -124,7 +124,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ProviderInfo](../android/content/pm/ProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#authority:kotlin.String` The name provider is published under content:// |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#flags:kotlin.Int` Options that have been set in the provider declaration in the manifest. |
 | --- | --- |
@@ -134,10 +134,10 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#isSyncable:kotlin.Boolean` Whether or not this provider is syncable. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#multiprocess:kotlin.Boolean` If true, this content provider allows multiple instances of itself to run in different process. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PathPermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#pathPermissions:kotlin.Array` If non-null, these are path-specific permissions that are allowed for accessing the provider. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PathPermission](../android/content/pm/PathPermission.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#pathPermissions:kotlin.Array` If non-null, these are path-specific permissions that are allowed for accessing the provider. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#readPermission:kotlin.String` Optional permission required for read-only access this content provider. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PatternMatcher](https://developer.android.com/reference/kotlin/android/os/PatternMatcher.html#)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#uriPermissionPatterns:kotlin.Array` If non-null, these are the patterns that are allowed for granting URI permissions. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PatternMatcher](../android/os/PatternMatcher.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#uriPermissionPatterns:kotlin.Array` If non-null, these are the patterns that are allowed for granting URI permissions. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#writePermission:kotlin.String` Optional permission required for read/write access this content provider. |
 | --- | --- |
 

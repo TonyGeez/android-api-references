@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MenuInflater
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/MenuInflater "View this page in Java") 
+Kotlin| [Java](../android/view/MenuInflater.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MenuInflater
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.MenuInflater](https://developer.android.com/reference/kotlin/android/view/MenuInflater#) |
+| ↳ | [android.view.MenuInflater](../android/view/MenuInflater.md) |
 
 This class is used to instantiate menu XML files into Menu objects.
 
@@ -23,11 +23,11 @@ For performance reasons, menu inflation relies heavily on pre-processing of XML 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MenuInflater](https://developer.android.com/reference/kotlin/android/view/MenuInflater#MenuInflater(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Constructs a menu inflater. |
+| [MenuInflater](../android/view/MenuInflater.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Constructs a menu inflater. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](https://developer.android.com/reference/kotlin/android/view/MenuInflater#inflate(kotlin.Int,%20android.view.Menu))`(`menuRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `menu:` ` [Menu](https://developer.android.com/reference/kotlin/android/view/Menu)!`)` Inflate a menu hierarchy from the specified XML resource. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](../android/view/MenuInflater.md))`(`menuRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `menu:` ` [Menu](../android/view/Menu.md)!`)` Inflate a menu hierarchy from the specified XML resource. |
 
 ## Public constructors
 
@@ -42,7 +42,7 @@ MenuInflater(context: Context!)
 Constructs a menu inflater. 
 **See Also**
 
-- [android.app.Activity#getMenuInflater()](https://developer.android.com/reference/kotlin/android/app/Activity.html#getMenuInflater())
+- [android.app.Activity#getMenuInflater()](../android/app/Activity.md))
 
 ## Public methods
 
@@ -57,9 +57,9 @@ open fun inflate(
 ): Unit
 ```
 
-Inflate a menu hierarchy from the specified XML resource. Throws [InflateException](https://developer.android.com/reference/kotlin/android/view/InflateException) if there is an error.
+Inflate a menu hierarchy from the specified XML resource. Throws [InflateException](../android/view/InflateException.md) if there is an error.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `menuRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Resource ID for an XML layout resource to load (e.g.,`R.menu.main_activity`) |
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu)!:The Menu to inflate into. The items and submenus will be added to this Menu. |
+| `menu` | [Menu](../android/view/Menu.md)!:The Menu to inflate into. The items and submenus will be added to this Menu. |

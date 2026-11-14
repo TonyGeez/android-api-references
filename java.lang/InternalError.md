@@ -11,12 +11,12 @@ open class InternalError : VirtualMachineError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
-| | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError) ||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
+| | | ↳ | [java.lang.VirtualMachineError](../java/lang/VirtualMachineError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError#) |
+| | | | ↳ | [java.lang.InternalError](../java/lang/InternalError.md) |
 
-| Known Direct Subclasses [ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError.html#) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError.html#) | Signals that an unrecoverable error has occurred. | |
+| Known Direct Subclasses [ZipError](../java/util/zip/ZipError.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [ZipError](../java/util/zip/ZipError.md) | Signals that an unrecoverable error has occurred. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate some unexpected internal error has occurred in the Java Virtual Machine.
@@ -25,10 +25,10 @@ Thrown to indicate some unexpected internal error has occurred in the Java Virtu
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError#InternalError())`()` Constructs an`InternalError`with no detail message. |
-| [InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError#InternalError(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`InternalError`with the specified detail message. |
-| [InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError#InternalError(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`InternalError`with the specified detail message and cause. |
-| [InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError#InternalError(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`InternalError`with the specified cause and a detail message of`(cause==null ? null : cause.toString())`(which typically contains the class and detail message of`cause`). |
+| [InternalError](../java/lang/InternalError.md))`()` Constructs an`InternalError`with no detail message. |
+| [InternalError](../java/lang/InternalError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`InternalError`with the specified detail message. |
+| [InternalError](../java/lang/InternalError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`InternalError`with the specified detail message and cause. |
+| [InternalError](../java/lang/InternalError.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`InternalError`with the specified cause and a detail message of`(cause==null ? null : cause.toString())`(which typically contains the class and detail message of`cause`). |
 
 ## Public constructors
 
@@ -72,8 +72,8 @@ Note that the detail message associated with`cause`is*not*automatically incorpor
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable#getMessage())method). |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause())method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](../java/lang/Throwable.md))method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### InternalError
 
@@ -87,4 +87,4 @@ Constructs an`InternalError`with the specified cause and a detail message of`(ca
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause())method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |

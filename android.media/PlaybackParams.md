@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # PlaybackParams
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/PlaybackParams "View this page in Java") 
+Kotlin| [Java](../android/media/PlaybackParams.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ class PlaybackParams : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#) |
+| ↳ | [android.media.PlaybackParams](../android/media/PlaybackParams.md) |
 
-Structure for common playback params. Used by [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack) [AudioTrack.getPlaybackParams()](https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackParams())and [AudioTrack.setPlaybackParams(PlaybackParams)](https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPlaybackParams(android.media.PlaybackParams))to control playback behavior.
+Structure for common playback params. Used by [AudioTrack](../android/media/AudioTrack.md) [AudioTrack.getPlaybackParams()](../android/media/AudioTrack.md))and [AudioTrack.setPlaybackParams(PlaybackParams)](../android/media/AudioTrack.md))to control playback behavior.
 
 **audio fallback mode:**select out-of-range parameter handling.
 
-- [PlaybackParams.AUDIO_FALLBACK_MODE_DEFAULT](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT:kotlin.Int): System will determine best handling.
-- [PlaybackParams.AUDIO_FALLBACK_MODE_MUTE](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_MUTE:kotlin.Int): Play silence for params normally out of range.
-- [PlaybackParams.AUDIO_FALLBACK_MODE_FAIL](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_FAIL:kotlin.Int): Return [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) from`AudioTrack.setPlaybackParams(PlaybackParams)`.
+- [PlaybackParams.AUDIO_FALLBACK_MODE_DEFAULT](../android/media/PlaybackParams.md): System will determine best handling.
+- [PlaybackParams.AUDIO_FALLBACK_MODE_MUTE](../android/media/PlaybackParams.md): Play silence for params normally out of range.
+- [PlaybackParams.AUDIO_FALLBACK_MODE_FAIL](../android/media/PlaybackParams.md): Return [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) from`AudioTrack.setPlaybackParams(PlaybackParams)`.
 
 **pitch:**increases or decreases the tonal frequency of the audio content. It is expressed as a multiplicative factor, where normal pitch is 1.0f.
 
@@ -30,43 +30,43 @@ Structure for common playback params. Used by [AudioTrack](https://developer.and
 Different combinations of speed and pitch may be used for audio playback; some common ones:
 
 - *Pitch equals 1.0f.* Speed change will be done with pitch preserved, often called*timestretching*.
-- *Pitch equals speed.* Speed change will be done by*resampling* , similar to [AudioTrack.setPlaybackRate(int)](https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPlaybackRate(kotlin.Int)).
+- *Pitch equals speed.* Speed change will be done by*resampling* , similar to [AudioTrack.setPlaybackRate(int)](../android/media/AudioTrack.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_DEFAULT](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_FAIL](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_FAIL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_MUTE](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_MUTE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_DEFAULT](../android/media/PlaybackParams.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_FAIL](../android/media/PlaybackParams.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_FALLBACK_MODE_MUTE](../android/media/PlaybackParams.md) <br /> |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------|---|
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#PlaybackParams())`()` <br /> |
+| [PlaybackParams](../android/media/PlaybackParams.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [allowDefaults](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#allowDefaults())`()` Allows defaults to be returned for properties not set. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#describeContents())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioFallbackMode](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#getAudioFallbackMode())`()` Retrieves the audio fallback mode. |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | [allowDefaults](../android/media/PlaybackParams.md))`()` Allows defaults to be returned for properties not set. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/PlaybackParams.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioFallbackMode](../android/media/PlaybackParams.md))`()` Retrieves the audio fallback mode. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPitch](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#getPitch())`()` Retrieves the pitch factor. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpeed](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#getSpeed())`()` Retrieves the speed factor. |
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [setAudioFallbackMode](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#setAudioFallbackMode(kotlin.Int))`(`audioFallbackMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio fallback mode. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPitch](../android/media/PlaybackParams.md))`()` Retrieves the pitch factor. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpeed](../android/media/PlaybackParams.md))`()` Retrieves the speed factor. |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | [setAudioFallbackMode](../android/media/PlaybackParams.md))`(`audioFallbackMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio fallback mode. |
 | --- | --- |
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [setPitch](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#setPitch(kotlin.Float))`(`pitch:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the pitch factor. |
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | [setSpeed](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#setSpeed(kotlin.Float))`(`speed:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the speed factor. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | [setPitch](../android/media/PlaybackParams.md))`(`pitch:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the pitch factor. |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | [setSpeed](../android/media/PlaybackParams.md))`(`speed:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the speed factor. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/PlaybackParams.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PlaybackParams](../android/media/PlaybackParams.md)!\> | [CREATOR](../android/media/PlaybackParams.md) <br /> |
 
 ## Constants
 
@@ -120,11 +120,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun allowDefaults(): PlaybackParams!
 ```
 
-Allows defaults to be returned for properties not set. Otherwise a [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) exception is raised when getting those properties which have defaults but have never been set.
+Allows defaults to be returned for properties not set. Otherwise a [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) exception is raised when getting those properties which have defaults but have never been set.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------|
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | this`PlaybackParams`instance. |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | this`PlaybackParams`instance. |
 
 ### describeContents
 
@@ -136,7 +136,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getAudioFallbackMode
 
@@ -150,7 +150,7 @@ Retrieves the audio fallback mode.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | audio fallback mode Value is [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT:kotlin.Int), [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_MUTE](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_MUTE:kotlin.Int), or [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_FAIL](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_FAIL:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | audio fallback mode Value is [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT](../android/media/PlaybackParams.md), [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_MUTE](../android/media/PlaybackParams.md), or [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_FAIL](../android/media/PlaybackParams.md) |
 
 | Exceptions ||
 |-----------------------------------|----------------------------------------|
@@ -204,11 +204,11 @@ Sets the audio fallback mode.
 
 | Parameters ||
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `audioFallbackMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT:kotlin.Int), [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_MUTE](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_MUTE:kotlin.Int), or [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_FAIL](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#AUDIO_FALLBACK_MODE_FAIL:kotlin.Int) |
+| `audioFallbackMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_DEFAULT](../android/media/PlaybackParams.md), [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_MUTE](../android/media/PlaybackParams.md), or [android.media.PlaybackParams#AUDIO_FALLBACK_MODE_FAIL](../android/media/PlaybackParams.md) |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------|
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | this`PlaybackParams`instance. |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | this`PlaybackParams`instance. |
 
 ### setPitch
 
@@ -226,7 +226,7 @@ Sets the pitch factor.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------|
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | this`PlaybackParams`instance. |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | this`PlaybackParams`instance. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------|
@@ -248,7 +248,7 @@ Sets the speed factor.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------|
-| [PlaybackParams](https://developer.android.com/reference/kotlin/android/media/PlaybackParams#)! | this`PlaybackParams`instance. |
+| [PlaybackParams](../android/media/PlaybackParams.md)! | this`PlaybackParams`instance. |
 
 ### writeToParcel
 
@@ -263,8 +263,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

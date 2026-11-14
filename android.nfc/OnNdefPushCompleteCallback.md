@@ -5,26 +5,26 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnNdefPushCompleteCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.OnNdefPushCompleteCallback "View this page in Java") 
+Kotlin| [Java](../android/nfc/NfcAdapter.OnNdefPushCompleteCallback.md) 
 | --- | --- |
 
 ```
 interface OnNdefPushCompleteCallback
 ```
 
-| [android.nfc.NfcAdapter.OnNdefPushCompleteCallback](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnNdefPushCompleteCallback#) |
+| [android.nfc.NfcAdapter.OnNdefPushCompleteCallback](../android/nfc/NfcAdapter.OnNdefPushCompleteCallback.md) |
 
 | **This interface was deprecated in API level 29.**
 |
 | this feature is removed. File sharing can work using other technology like Bluetooth.
 
-A callback to be invoked when the system successfully delivers your [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage) to another device.
+A callback to be invoked when the system successfully delivers your [NdefMessage](../android/nfc/NdefMessage.md) to another device.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNdefPushComplete](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnNdefPushCompleteCallback#onNdefPushComplete(android.nfc.NfcEvent))`(`event:` ` [NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent)!`)` Called on successful NDEF push. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNdefPushComplete](../android/nfc/NfcAdapter.OnNdefPushCompleteCallback.md))`(`event:` ` [NfcEvent](../android/nfc/NfcEvent.md)!`)` Called on successful NDEF push. |
 
 ## Public methods
 
@@ -44,4 +44,4 @@ This callback is usually made on a binder thread (not the UI thread).
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent)!: [NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent) with the [NfcEvent.nfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent#nfcAdapter:android.nfc.NfcAdapter) field set |
+| `event` | [NfcEvent](../android/nfc/NfcEvent.md)!: [NfcEvent](../android/nfc/NfcEvent.md) with the [NfcEvent.nfcAdapter](../android/nfc/NfcEvent.md) field set |

@@ -3,7 +3,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AdId
 
-Kotlin | [Java](https://developer.android.com/reference/android/adservices/adid/AdId "View this page in Java")
+Kotlin | [Java](../android/adservices/adid/AdId.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ open class AdId
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adid.AdId](https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#) |
+| ↳ | [android.adservices.adid.AdId](../android/adservices/adid/AdId.md) |
 
 A unique, user-resettable, device-wide, per-profile ID for advertising.
 

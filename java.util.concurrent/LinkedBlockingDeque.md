@@ -10,18 +10,18 @@ open class LinkedBlockingDeque<E : Any!> : AbstractQueue<E>, BlockingDeque<E
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#)\<E\> |||
-| | ↳ | [java.util.AbstractQueue](https://developer.android.com/reference/kotlin/java/util/AbstractQueue.html#)\<E\> ||
-| | | ↳ | [java.util.concurrent.LinkedBlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#) |
+| ↳ | [java.util.AbstractCollection](../java/util/AbstractCollection.md)\<E\> |||
+| | ↳ | [java.util.AbstractQueue](../java/util/AbstractQueue.md)\<E\> ||
+| | | ↳ | [java.util.concurrent.LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md) |
 | --- | --- | --- | --- |
 
-An optionally-bounded [blocking deque](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingDeque) based on linked nodes.
+An optionally-bounded [blocking deque](../java/util/concurrent/BlockingDeque.md) based on linked nodes.
 
-The optional capacity bound constructor argument serves as a way to prevent excessive expansion. The capacity, if unspecified, is equal to [Integer.MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int). Linked nodes are dynamically created upon each insertion unless this would bring the deque above capacity.
+The optional capacity bound constructor argument serves as a way to prevent excessive expansion. The capacity, if unspecified, is equal to [Integer.MAX_VALUE](../java/lang/Integer.md). Linked nodes are dynamically created upon each insertion unless this would bring the deque above capacity.
 
 Most operations run in constant time (ignoring time spent blocking). Exceptions include #remove(java.lang.Object), #removeFirstOccurrence, #removeLastOccurrence, #contains, #iterator, and the bulk operations, all of which run in linear time.
 
-This class and its iterator implement all of the*optional* methods of the [Collection](https://developer.android.com/reference/kotlin/java/util/Collection.html#) and [Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator.html#) interfaces.
+This class and its iterator implement all of the*optional* methods of the [Collection](../java/util/Collection.md) and [Iterator](../java/util/Iterator.md) interfaces.
 
 This class is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
 
@@ -29,84 +29,84 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LinkedBlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#LinkedBlockingDeque())`()` Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int). |
-| [LinkedBlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#LinkedBlockingDeque(kotlin.Int))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`LinkedBlockingDeque`with the given (fixed) capacity. |
-| [LinkedBlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#LinkedBlockingDeque(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>!`)` Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int), initially containing the elements of the given collection, added in traversal order of the collection's iterator. |
+| [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md))`()` Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](../java/lang/Integer.md). |
+| [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`LinkedBlockingDeque`with the given (fixed) capacity. |
+| [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>!`)` Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](../java/lang/Integer.md), initially containing the elements of the given collection, added in traversal order of the collection's iterator. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#add(java.util.concurrent.LinkedBlockingDeque.E))`(`element:` `E`)` Inserts the specified element at the end of this deque unless it would violate capacity restrictions. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Appends all of the elements in the specified collection to the end of this deque, in the order that they are returned by the specified collection's iterator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#addFirst(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../java/util/concurrent/LinkedBlockingDeque.md))`(`element:` `E`)` Inserts the specified element at the end of this deque unless it would violate capacity restrictions. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/concurrent/LinkedBlockingDeque.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Appends all of the elements in the specified collection to the end of this deque, in the order that they are returned by the specified collection's iterator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#addLast(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#clear())`()` Atomically removes all of the elements from this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#contains(java.util.concurrent.LinkedBlockingDeque.E))`(`element:` `E?`)` Returns`true`if this deque contains the specified element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/concurrent/LinkedBlockingDeque.md))`()` Atomically removes all of the elements from this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/concurrent/LinkedBlockingDeque.md))`(`element:` `E?`)` Returns`true`if this deque contains the specified element. |
 | --- | --- |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [descendingIterator](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#descendingIterator())`()` Returns an iterator over the elements in this deque in reverse sequential order. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#drainTo(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#drainTo(kotlin.collections.MutableCollection,%20kotlin.Int))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`, `maxElements:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [descendingIterator](../java/util/concurrent/LinkedBlockingDeque.md))`()` Returns an iterator over the elements in this deque in reverse sequential order. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](../java/util/concurrent/LinkedBlockingDeque.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTo](../java/util/concurrent/LinkedBlockingDeque.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `E>!`, `maxElements:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openE | [element](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#element())`()` Retrieves, but does not remove, the head of the queue represented by this deque. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `E>`)` <br /> |
-| openE | [getFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#getFirst())`()` <br /> |
+| openE | [element](../java/util/concurrent/LinkedBlockingDeque.md))`()` Retrieves, but does not remove, the head of the queue represented by this deque. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/concurrent/LinkedBlockingDeque.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `E>`)` <br /> |
+| openE | [getFirst](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
-| openE | [getLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#getLast())`()` <br /> |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#iterator())`()` Returns an iterator over the elements in this deque in proper sequence. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#offer(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
+| openE | [getLast](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](../java/util/concurrent/LinkedBlockingDeque.md))`()` Returns an iterator over the elements in this deque in proper sequence. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#offer(java.util.concurrent.LinkedBlockingDeque.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#offerFirst(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#offerFirst(java.util.concurrent.LinkedBlockingDeque.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerFirst](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerFirst](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#offerLast(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#offerLast(java.util.concurrent.LinkedBlockingDeque.E,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
-| openE? | [peek](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#peek())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerLast](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerLast](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
+| openE? | [peek](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
-| openE? | [peekFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#peekFirst())`()` <br /> |
-| openE? | [peekLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#peekLast())`()` <br /> |
-| openE? | [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#poll())`()` <br /> |
+| openE? | [peekFirst](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
+| openE? | [peekLast](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
+| openE? | [poll](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
-| openE | [poll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#poll(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
-| openE? | [pollFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#pollFirst())`()` <br /> |
-| openE | [pollFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#pollFirst(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
+| openE | [poll](../java/util/concurrent/LinkedBlockingDeque.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
+| openE? | [pollFirst](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
+| openE | [pollFirst](../java/util/concurrent/LinkedBlockingDeque.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
 | --- | --- |
-| openE? | [pollLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#pollLast())`()` <br /> |
-| openE | [pollLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#pollLast(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
-| openE | [pop](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#pop())`()` <br /> |
+| openE? | [pollLast](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
+| openE | [pollLast](../java/util/concurrent/LinkedBlockingDeque.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
+| openE | [pop](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#push(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#put(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#putFirst(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putFirst](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#putLast(java.util.concurrent.LinkedBlockingDeque.E))`(`e:` `E`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remainingCapacity](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#remainingCapacity())`()` Returns the number of additional elements that this deque can ideally (in the absence of memory or resource constraints) accept without blocking. |
-| openE | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#remove())`()` Retrieves and removes the head of the queue represented by this deque. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putLast](../java/util/concurrent/LinkedBlockingDeque.md))`(`e:` `E`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remainingCapacity](../java/util/concurrent/LinkedBlockingDeque.md))`()` Returns the number of additional elements that this deque can ideally (in the absence of memory or resource constraints) accept without blocking. |
+| openE | [remove](../java/util/concurrent/LinkedBlockingDeque.md))`()` Retrieves and removes the head of the queue represented by this deque. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#remove(java.util.concurrent.LinkedBlockingDeque.E))`(`element:` `E?`)` Removes the first occurrence of the specified element from this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
-| openE | [removeFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#removeFirst())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/concurrent/LinkedBlockingDeque.md))`(`element:` `E?`)` Removes the first occurrence of the specified element from this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../java/util/concurrent/LinkedBlockingDeque.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
+| openE | [removeFirst](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeFirstOccurrence](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#removeFirstOccurrence(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)<in` `E>`)` <br /> |
-| openE | [removeLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#removeLast())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeFirstOccurrence](../java/util/concurrent/LinkedBlockingDeque.md))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](../java/util/concurrent/LinkedBlockingDeque.md))`(`filter:` ` [Predicate](../java/util/function/Predicate.md)<in` `E>`)` <br /> |
+| openE | [removeLast](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeLastOccurrence](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#removeLastOccurrence(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
-| open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#spliterator())`()` Returns a [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#) over the elements in this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeLastOccurrence](../java/util/concurrent/LinkedBlockingDeque.md))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](../java/util/concurrent/LinkedBlockingDeque.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
+| open [Spliterator](../java/util/Spliterator.md)\<E\> | [spliterator](../java/util/concurrent/LinkedBlockingDeque.md))`()` Returns a [Spliterator](../java/util/Spliterator.md) over the elements in this deque. |
 | --- | --- |
-| openE | [take](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#take())`()` <br /> |
-| openE | [takeFirst](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#takeFirst())`()` <br /> |
-| openE | [takeLast](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#takeLast())`()` <br /> |
+| openE | [take](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
+| openE | [takeFirst](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
+| openE | [takeLast](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#toArray())`()` Returns an array containing all of the elements in this deque, in proper sequence (from first to last element). |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this deque, in proper sequence; the runtime type of the returned array is that of the specified array. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#toString())`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](../java/util/concurrent/LinkedBlockingDeque.md))`()` Returns an array containing all of the elements in this deque, in proper sequence (from first to last element). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](../java/util/concurrent/LinkedBlockingDeque.md))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this deque, in proper sequence; the runtime type of the returned array is that of the specified array. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/concurrent/LinkedBlockingDeque.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#size:kotlin.Int) Returns the number of elements in this deque. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/concurrent/LinkedBlockingDeque.md) Returns the number of elements in this deque. |
 
 ## Public constructors
 
@@ -118,7 +118,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 LinkedBlockingDeque()
 ```
 
-Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int). 
+Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](../java/lang/Integer.md). 
 
 ### LinkedBlockingDeque
 
@@ -146,7 +146,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 LinkedBlockingDeque(c: MutableCollection<out E>!)
 ```
 
-Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int), initially containing the elements of the given collection, added in traversal order of the collection's iterator.
+Creates a`LinkedBlockingDeque`with a capacity of [Integer.MAX_VALUE](../java/lang/Integer.md), initially containing the elements of the given collection, added in traversal order of the collection's iterator.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -176,7 +176,7 @@ This method is equivalent to #addLast.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Collection.add](https://developer.android.com/reference/kotlin/java/util/Collection.html#add(java.util.Collection.E))) |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Collection.add](../java/util/Collection.md))) |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------|
@@ -305,7 +305,7 @@ open fun descendingIterator(): MutableIterator<E>
 
 Returns an iterator over the elements in this deque in reverse sequential order. The elements will be returned in order from last (tail) to first (head).
 
-The returned iterator is [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The returned iterator is [*weakly consistent*](../java/util/concurrent/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
@@ -393,7 +393,7 @@ open fun forEach(action: Consumer<in E>): Unit
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<inE\>:The action to be performed for each element |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inE\>:The action to be performed for each element |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -441,7 +441,7 @@ open fun iterator(): MutableIterator<E>
 
 Returns an iterator over the elements in this deque in proper sequence. The elements will be returned in order from first (head) to last (tail).
 
-The returned iterator is [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The returned iterator is [*weakly consistent*](../java/util/concurrent/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -486,7 +486,7 @@ open fun offer(
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `e` | E:the element to add |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
 | --- | --- |
 
 | Return ||
@@ -540,7 +540,7 @@ open fun offerFirst(
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `e` | E:the element to add |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
 | --- | --- |
 
 | Return ||
@@ -594,7 +594,7 @@ open fun offerLast(
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `e` | E:the element to add |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
 | --- | --- |
 
 | Return ||
@@ -671,7 +671,7 @@ open fun poll(
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
 
 | Return ||
 |---|------------------------------------------------------------------------------------------------------|
@@ -707,7 +707,7 @@ open fun pollFirst(
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
 
 | Return ||
 |---|------------------------------------------------------------------------------------------------------|
@@ -743,7 +743,7 @@ open fun pollLast(
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
 
 | Return ||
 |---|------------------------------------------------------------------------------------------------------|
@@ -983,7 +983,7 @@ open fun removeIf(filter: Predicate<in E>): Boolean
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `filter` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)\<inE\>:a predicate which returns`true`for elements to be removed |
+| `filter` | [Predicate](../java/util/function/Predicate.md)\<inE\>:a predicate which returns`true`for elements to be removed |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|
@@ -1063,15 +1063,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun spliterator(): Spliterator<E>
 ```
 
-Returns a [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#) over the elements in this deque.
+Returns a [Spliterator](../java/util/Spliterator.md) over the elements in this deque.
 
-The returned spliterator is [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The returned spliterator is [*weakly consistent*](../java/util/concurrent/_package.md).
 
-The`Spliterator`reports [Spliterator.CONCURRENT](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#CONCURRENT:kotlin.Int), [Spliterator.ORDERED](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#ORDERED:kotlin.Int), and [Spliterator.NONNULL](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#NONNULL:kotlin.Int).
+The`Spliterator`reports [Spliterator.CONCURRENT](../java/util/Spliterator.md), [Spliterator.ORDERED](../java/util/Spliterator.md), and [Spliterator.NONNULL](../java/util/Spliterator.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)<E> | a`Spliterator`over the elements in this deque |
+| [Spliterator](../java/util/Spliterator.md)<E> | a`Spliterator`over the elements in this deque |
 
 ### take
 
@@ -1151,7 +1151,7 @@ Returns an array containing all of the elements in this deque, in proper sequenc
 
 If this deque fits in the specified array with room to spare (i.e., the array has more elements than this deque), the element in the array immediately following the end of the deque is set to`null`.
 
-Like the [toArray()](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque#toArray())method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
+Like the [toArray()](../java/util/concurrent/LinkedBlockingDeque.md))method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
 
 Suppose`x`is a deque known to contain only strings. The following code can be used to dump the deque into a newly allocated array of`String`: 
 

@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # CursorWindowAllocationException
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/CursorWindowAllocationException "View this page in Java") 
+Kotlin| [Java](../android/database/CursorWindowAllocationException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class CursorWindowAllocationException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.CursorWindowAllocationException](https://developer.android.com/reference/kotlin/android/database/CursorWindowAllocationException#) |
+| | | | ↳ | [android.database.CursorWindowAllocationException](../android/database/CursorWindowAllocationException.md) |
 
 This exception is thrown when a CursorWindow couldn't be allocated, most probably due to memory not being available.
 
@@ -25,7 +25,7 @@ This exception is thrown when a CursorWindow couldn't be allocated, most probabl
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CursorWindowAllocationException](https://developer.android.com/reference/kotlin/android/database/CursorWindowAllocationException#CursorWindowAllocationException(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> |
+| [CursorWindowAllocationException](../android/database/CursorWindowAllocationException.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> |
 
 ## Public constructors
 

@@ -11,11 +11,11 @@ open class SSLKeyException : SSLException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.net.ssl.SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException) ||
-| | | | | ↳ | [javax.net.ssl.SSLKeyException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLKeyException#) |
+| | | | ↳ | [javax.net.ssl.SSLException](../javax/net/ssl/SSLException.md) ||
+| | | | | ↳ | [javax.net.ssl.SSLKeyException](../javax/net/ssl/SSLKeyException.md) |
 
 Reports a bad SSL key. Normally, this indicates misconfiguration of the server or client SSL certificate and private key.
 
@@ -23,7 +23,7 @@ Reports a bad SSL key. Normally, this indicates misconfiguration of the server o
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLKeyException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLKeyException#SSLKeyException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting a key management error found by an SSL subsystem. |
+| [SSLKeyException](../javax/net/ssl/SSLKeyException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting a key management error found by an SSL subsystem. |
 
 ## Public constructors
 

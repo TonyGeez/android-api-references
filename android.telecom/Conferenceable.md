@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # Conferenceable
 
-Kotlin| [Java](https://developer.android.com/reference/android/telecom/Conferenceable "View this page in Java") 
+Kotlin| [Java](../android/telecom/Conferenceable.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ abstract class Conferenceable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.Conferenceable](https://developer.android.com/reference/kotlin/android/telecom/Conferenceable#) |
+| ↳ | [android.telecom.Conferenceable](../android/telecom/Conferenceable.md) |
 
-| Known Direct Subclasses [Conference](https://developer.android.com/reference/kotlin/android/telecom/Conference), [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Conference](https://developer.android.com/reference/kotlin/android/telecom/Conference) | Represents a conference call which can contain any number of [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection) objects. | | [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection) | Represents a phone call or connection to a remote endpoint that carries voice and/or video traffic. | |
+| Known Direct Subclasses [Conference](../android/telecom/Conference.md), [Connection](../android/telecom/Connection.md) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Conference](../android/telecom/Conference.md) | Represents a conference call which can contain any number of [Connection](../android/telecom/Connection.md) objects. | | [Connection](../android/telecom/Connection.md) | Represents a phone call or connection to a remote endpoint that carries voice and/or video traffic. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Interface used to identify entities with which another entity can participate in a conference call with. The [ConnectionService](https://developer.android.com/reference/kotlin/android/telecom/ConnectionService) implementation will only recognize [Conferenceable](https://developer.android.com/reference/kotlin/android/telecom/Conferenceable#) s which are [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection) s or [Conference](https://developer.android.com/reference/kotlin/android/telecom/Conference) s.
+Interface used to identify entities with which another entity can participate in a conference call with. The [ConnectionService](../android/telecom/ConnectionService.md) implementation will only recognize [Conferenceable](../android/telecom/Conferenceable.md) s which are [Connection](../android/telecom/Connection.md) s or [Conference](../android/telecom/Conference.md) s.
 
 ## Summary

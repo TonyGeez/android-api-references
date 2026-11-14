@@ -2,16 +2,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # WrapperListAdapter
 
-Kotlin | [Java](https://developer.android.com/reference/android/widget/WrapperListAdapter "View this page in Java")
+Kotlin | [Java](../android/widget/WrapperListAdapter.md)
 | --- | --- |
 
 ```
 interface WrapperListAdapter : ListAdapter
 ```
 
-| [android.widget.WrapperListAdapter](https://developer.android.com/reference/kotlin/android/widget/WrapperListAdapter#) |
+| [android.widget.WrapperListAdapter](../android/widget/WrapperListAdapter.md) |
 
-| Known Direct Subclasses [HeaderViewListAdapter](https://developer.android.com/reference/kotlin/android/widget/HeaderViewListAdapter) |---|---| | [HeaderViewListAdapter](https://developer.android.com/reference/kotlin/android/widget/HeaderViewListAdapter) | ListAdapter used when a ListView has header views. | |
+| Known Direct Subclasses [HeaderViewListAdapter](../android/widget/HeaderViewListAdapter.md) |---|---| | [HeaderViewListAdapter](../android/widget/HeaderViewListAdapter.md) | ListAdapter used when a ListView has header views. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 List adapter that wraps another list adapter. The wrapped adapter can be retrieved by calling `https://developer.android.com/reference/kotlin/android/widget/WrapperListAdapter#getWrappedAdapter()`.
@@ -24,7 +24,7 @@ List adapter that wraps another list adapter. The wrapped adapter can be retriev
 
 | Public methods ||
 |---|---|
-| abstract [ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter)! | `https://developer.android.com/reference/kotlin/android/widget/WrapperListAdapter#getWrappedAdapter()()` Returns the adapter wrapped by this list adapter. |
+| abstract [ListAdapter](../android/widget/ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/WrapperListAdapter#getWrappedAdapter()()` Returns the adapter wrapped by this list adapter. |
 
 | Inherited functions ||
 |---|---|

@@ -4,12 +4,12 @@
 
 ## Classes
 
-| [ZoneOffsetTransition](https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition) | A transition between two offsets caused by a discontinuity in the local time-line. |
+| [ZoneOffsetTransition](../java/time/zone/ZoneOffsetTransition.md) | A transition between two offsets caused by a discontinuity in the local time-line. |
 | --- | --- |
-| [ZoneOffsetTransitionRule](https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransitionRule) | A rule expressing how to create a transition. |
-| [ZoneRules](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules) | The rules defining how the zone offset varies for a single time-zone. |
+| [ZoneOffsetTransitionRule](../java/time/zone/ZoneOffsetTransitionRule.md) | A rule expressing how to create a transition. |
+| [ZoneRules](../java/time/zone/ZoneRules.md) | The rules defining how the zone offset varies for a single time-zone. |
 
 ## Exceptions
 
-| [ZoneRulesException](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRulesException) | Thrown to indicate a problem with time-zone configuration. |
+| [ZoneRulesException](../java/time/zone/ZoneRulesException.md) | Thrown to indicate a problem with time-zone configuration. |
 | --- | --- |

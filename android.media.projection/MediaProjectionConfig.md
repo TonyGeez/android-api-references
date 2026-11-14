@@ -8,7 +8,7 @@ class MediaProjectionConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.projection.MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#) |
+| ↳ | [android.media.projection.MediaProjectionConfig](../android/media/projection/MediaProjectionConfig.md) |
 
 Configure the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection` session requested from `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#createScreenCaptureIntent(android.media.projection.MediaProjectionConfig)`.
 
@@ -33,8 +33,8 @@ This configuration should be used to provide the user with options for choosing 
 
 | Public methods ||
 |---|---|
-| static [MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForDefaultDisplay()()` Returns an instance which restricts the user to capturing the default display. |
-| static [MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForUserChoice()()` Returns an instance which allows the user to decide which region is captured. |
+| static [MediaProjectionConfig](../android/media/projection/MediaProjectionConfig.md) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForDefaultDisplay()()` Returns an instance which restricts the user to capturing the default display. |
+| static [MediaProjectionConfig](../android/media/projection/MediaProjectionConfig.md) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForUserChoice()()` Returns an instance which allows the user to decide which region is captured. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
@@ -53,7 +53,7 @@ This configuration should be used to provide the user with options for choosing 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [MediaProjectionConfig](https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#)!\> | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MediaProjectionConfig](../android/media/projection/MediaProjectionConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -313,7 +313,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # CreateNdefMessageCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.CreateNdefMessageCallback "View this page in Java") 
+Kotlin| [Java](../android/nfc/NfcAdapter.CreateNdefMessageCallback.md) 
 | --- | --- |
 
 ```
 interface CreateNdefMessageCallback
 ```
 
-| [android.nfc.NfcAdapter.CreateNdefMessageCallback](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.CreateNdefMessageCallback#) |
+| [android.nfc.NfcAdapter.CreateNdefMessageCallback](../android/nfc/NfcAdapter.CreateNdefMessageCallback.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -20,13 +20,13 @@ interface CreateNdefMessageCallback
 
 A callback to be invoked when another NFC device capable of NDEF push (Android Beam) is within range.
 
-Implement this interface and pass it to`NfcAdapter#setNdefPushMessageCallback setNdefPushMessageCallback()`in order to create an [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage) at the moment that another device is within range for NFC. Using this callback allows you to create a message with data that might vary based on the content currently visible to the user. Alternatively, you can call`setNdefPushMessage setNdefPushMessage()`if the [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage) always contains the same data.
+Implement this interface and pass it to`NfcAdapter#setNdefPushMessageCallback setNdefPushMessageCallback()`in order to create an [NdefMessage](../android/nfc/NdefMessage.md) at the moment that another device is within range for NFC. Using this callback allows you to create a message with data that might vary based on the content currently visible to the user. Alternatively, you can call`setNdefPushMessage setNdefPushMessage()`if the [NdefMessage](../android/nfc/NdefMessage.md) always contains the same data.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage)! | [createNdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.CreateNdefMessageCallback#createNdefMessage(android.nfc.NfcEvent))`(`event:` ` [NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent)!`)` Called to provide a [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage) to push. |
+| abstract [NdefMessage](../android/nfc/NdefMessage.md)! | [createNdefMessage](../android/nfc/NfcAdapter.CreateNdefMessageCallback.md))`(`event:` ` [NfcEvent](../android/nfc/NfcEvent.md)!`)` Called to provide a [NdefMessage](../android/nfc/NdefMessage.md) to push. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ abstract fun createNdefMessage(event: NfcEvent!): NdefMessage!
 
 **Deprecated:** *Deprecated in Java.*
 
-Called to provide a [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage) to push.
+Called to provide a [NdefMessage](../android/nfc/NdefMessage.md) to push.
 
 This callback is usually made on a binder thread (not the UI thread).
 
@@ -52,8 +52,8 @@ The Android operating system will usually show a system UI on top of your activi
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent)!: [NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent) with the [NfcEvent.nfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent#nfcAdapter:android.nfc.NfcAdapter) field set |
+| `event` | [NfcEvent](../android/nfc/NfcEvent.md)!: [NfcEvent](../android/nfc/NfcEvent.md) with the [NfcEvent.nfcAdapter](../android/nfc/NfcEvent.md) field set |
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage)! | NDEF message to push, or null to not provide a message |
+| [NdefMessage](../android/nfc/NdefMessage.md)! | NDEF message to push, or null to not provide a message |

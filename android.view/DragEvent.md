@@ -2,7 +2,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # DragEvent
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/DragEvent "View this page in Java")
+Kotlin | [Java](../android/view/DragEvent.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class DragEvent : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.DragEvent](https://developer.android.com/reference/kotlin/android/view/DragEvent#) |
+| ↳ | [android.view.DragEvent](../android/view/DragEvent.md) |
 
 Represents an event that is sent out by the system at various times during a drag and drop operation. It is a data structure that contains several important pieces of data about the operation and the underlying data.
 
@@ -61,9 +61,9 @@ The `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAc
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#describeContents()()` Returns information about the `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` representation of this DragEvent object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()()` Inspect the action value of this event. |
-| open [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getClipData()()` Returns the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
+| open [ClipData](../android/content/ClipData.md)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getClipData()()` Returns the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
 | --- | --- |
-| open [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getClipDescription()()` Returns the `https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#` object contained in the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
+| open [ClipDescription](../android/content/ClipDescription.md)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getClipDescription()()` Returns the `https://developer.android.com/reference/kotlin/android/content/ClipDescription.html#` object contained in the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getLocalState()()` Returns the local state object sent to the system as part of the call to `https://developer.android.com/reference/kotlin/android/view/View#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/DragEvent#getResult()()` Returns an indication of the result of the drag and drop operation. |
 | --- | --- |
@@ -75,7 +75,7 @@ The `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAc
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [DragEvent](https://developer.android.com/reference/kotlin/android/view/DragEvent#)!\> | `https://developer.android.com/reference/kotlin/android/view/DragEvent#CREATOR:android.os.Parcelable.Creator` A container for creating a DragEvent from a Parcel. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DragEvent](../android/view/DragEvent.md)!\> | `https://developer.android.com/reference/kotlin/android/view/DragEvent#CREATOR:android.os.Parcelable.Creator` A container for creating a DragEvent from a Parcel. |
 
 ## Constants
 
@@ -355,7 +355,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/os/Parcel.html
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): A `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` object in which to put the DragEvent object. |
+| `dest` | [Parcel](../android/os/Parcel.md): A `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` object in which to put the DragEvent object. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags to store in the Parcel. |
 
 ## Properties

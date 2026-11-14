@@ -8,9 +8,9 @@ abstract class Preferences
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.prefs.Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#) |
+| ↳ | [java.util.prefs.Preferences](../java/util/prefs/Preferences.md) |
 
-| Known Direct Subclasses [AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences) |---|---| | [AbstractPreferences](https://developer.android.com/reference/kotlin/java/util/prefs/AbstractPreferences) | This class provides a skeletal implementation of the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#` class, greatly easing the task of implementing it. | |
+| Known Direct Subclasses [AbstractPreferences](../java/util/prefs/AbstractPreferences.md) |---|---| | [AbstractPreferences](../java/util/prefs/AbstractPreferences.md) | This class provides a skeletal implementation of the `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#` class, greatly easing the task of implementing it. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A node in a hierarchical collection of preference data. This class allows applications to store and retrieve user and system preference and configuration data. This data is stored persistently in an implementation-dependent backing store. Typical implementations include flat files, OS-specific registries, directory servers and SQL databases. The user of this class needn't be concerned with details of the backing store.
@@ -141,10 +141,10 @@ Implementation note: In Sun's JRE, the PreferencesFactory implementation is loca
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#keys()()` Returns all of the keys that have an associated value in this preference node. |
 | --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#name()()` Returns this preference node's name, relative to its parent. |
-| abstract [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#node(kotlin.String)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the named preference node in the same tree as this node, creating it and any of its ancestors if they do not already exist. |
+| abstract [Preferences](../java/util/prefs/Preferences.md)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#node(kotlin.String)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the named preference node in the same tree as this node, creating it and any of its ancestors if they do not already exist. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#nodeExists(kotlin.String)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the named preference node exists in the same tree as this node. |
 | --- | --- |
-| abstract [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#parent()()` Returns the parent of this preference node, or null if this is the root. |
+| abstract [Preferences](../java/util/prefs/Preferences.md)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#parent()()` Returns the parent of this preference node, or null if this is the root. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#put(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Associates the specified value with the specified key in this preference node. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#putBoolean(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Associates a string representing the specified boolean value with the specified key in this preference node. |
 | --- | --- |
@@ -161,12 +161,12 @@ Implementation note: In Sun's JRE, the PreferencesFactory implementation is loca
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener)(pcl: https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeListener!)` Removes the specified preference change listener, so it no longer receives preference change events. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#sync()()` Ensures that future reads from this preference node and its descendants reflect any changes that were committed to the persistent store (from any VM) prior to the sync invocation. |
-| open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#systemNodeForPackage(java.lang.Class)(c: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!)` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
-| open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#systemRoot()()` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
+| open static [Preferences](../java/util/prefs/Preferences.md)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#systemNodeForPackage(java.lang.Class)(c: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!)` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
+| open static [Preferences](../java/util/prefs/Preferences.md)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#systemRoot()()` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
 | --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#toString()()` Returns a string representation of this preferences node, as if computed by the expression:(this.isUserNode() ? "User" : "System") + " Preference Node: " + this.absolutePath(). |
-| open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#userNodeForPackage(java.lang.Class)(c: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!)` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
-| open static [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#userRoot()()` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
+| open static [Preferences](../java/util/prefs/Preferences.md)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#userNodeForPackage(java.lang.Class)(c: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!)` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
+| open static [Preferences](../java/util/prefs/Preferences.md)! | `https://developer.android.com/reference/kotlin/java/util/prefs/Preferences#userRoot()()` **WARNING:** On Android, the Preference nodes corresponding to the "system" and "user" preferences are stored in sections of the file system that are inaccessible to apps. |
 | --- | --- |
 
 ## Constants
@@ -251,7 +251,7 @@ Few guarantees can be made regarding node creation. Because nodes are created im
 
 | Parameters ||
 |---|---|
-| `ncl` | [NodeChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeListener)!: The NodeChangeListener to add. |
+| `ncl` | [NodeChangeListener](../java/util/prefs/NodeChangeListener.md)!: The NodeChangeListener to add. |
 
 | Exceptions ||
 |---|---|
@@ -277,7 +277,7 @@ Events are only guaranteed for changes made within the same JVM as the registere
 
 | Parameters ||
 |---|---|
-| `pcl` | [PreferenceChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeListener)!: The preference change listener to add. |
+| `pcl` | [PreferenceChangeListener](../java/util/prefs/PreferenceChangeListener.md)!: The preference change listener to add. |
 
 | Exceptions ||
 |---|---|
@@ -351,7 +351,7 @@ This method is an exception to the general rule that the results of concurrently
 
 | Parameters ||
 |---|---|
-| `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!: the output stream on which to emit the XML document. |
+| `os` | [OutputStream](../java/io/OutputStream.md)!: the output stream on which to emit the XML document. |
 
 | Exceptions ||
 |---|---|
@@ -386,7 +386,7 @@ This method is an exception to the general rule that the results of concurrently
 
 | Parameters ||
 |---|---|
-| `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!: the output stream on which to emit the XML document. |
+| `os` | [OutputStream](../java/io/OutputStream.md)!: the output stream on which to emit the XML document. |
 
 | Exceptions ||
 |---|---|
@@ -683,7 +683,7 @@ This method is an exception to the general rule that the results of concurrently
 
 | Parameters ||
 |---|---|
-| `is` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: the input stream from which to read the XML document. |
+| `is` | [InputStream](../java/io/InputStream.md)!: the input stream from which to read the XML document. |
 
 | Exceptions ||
 |---|---|
@@ -1081,7 +1081,7 @@ Removes the specified NodeChangeListener, so it no longer receives change events
 
 | Parameters ||
 |---|---|
-| `ncl` | [NodeChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeListener)!: The NodeChangeListener to remove. |
+| `ncl` | [NodeChangeListener](../java/util/prefs/NodeChangeListener.md)!: The NodeChangeListener to remove. |
 
 | Exceptions ||
 |---|---|
@@ -1104,7 +1104,7 @@ Removes the specified preference change listener, so it no longer receives prefe
 
 | Parameters ||
 |---|---|
-| `pcl` | [PreferenceChangeListener](https://developer.android.com/reference/kotlin/java/util/prefs/PreferenceChangeListener)!: The preference change listener to remove. |
+| `pcl` | [PreferenceChangeListener](../java/util/prefs/PreferenceChangeListener.md)!: The preference change listener to remove. |
 
 | Exceptions ||
 |---|---|
@@ -1158,7 +1158,7 @@ Invoking this method will result in the creation of the returned node and its an
 
 | Parameters ||
 |---|---|
-| `c` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!: the class for whose package a system preference node is desired. |
+| `c` | [Class](../java/lang/Class.md)\<\*\>!: the class for whose package a system preference node is desired. |
 
 | Return ||
 |---|---|
@@ -1233,7 +1233,7 @@ Invoking this method will result in the creation of the returned node and its an
 
 | Parameters ||
 |---|---|
-| `c` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!: the class for whose package a user preference node is desired. |
+| `c` | [Class](../java/lang/Class.md)\<\*\>!: the class for whose package a user preference node is desired. |
 
 | Return ||
 |---|---|

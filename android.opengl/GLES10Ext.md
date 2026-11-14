@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # GLES10Ext
 
-Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLES10Ext "View this page in Java") 
+Kotlin| [Java](../android/opengl/GLES10Ext.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class GLES10Ext
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.GLES10Ext](https://developer.android.com/reference/kotlin/android/opengl/GLES10Ext#) |
+| ↳ | [android.opengl.GLES10Ext](../android/opengl/GLES10Ext.md) |
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------|---|
-| [GLES10Ext](https://developer.android.com/reference/kotlin/android/opengl/GLES10Ext#GLES10Ext())`()` <br /> |
+| [GLES10Ext](../android/opengl/GLES10Ext.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glQueryMatrixxOES](https://developer.android.com/reference/kotlin/android/opengl/GLES10Ext#glQueryMatrixxOES(kotlin.IntArray,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int))`(`mantissa:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `mantissaOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exponent:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `exponentOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glQueryMatrixxOES](https://developer.android.com/reference/kotlin/android/opengl/GLES10Ext#glQueryMatrixxOES(java.nio.IntBuffer,%20java.nio.IntBuffer))`(`mantissa:` ` [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer.html#)!`, `exponent:` ` [IntBuffer](https://developer.android.com/reference/kotlin/java/nio/IntBuffer.html#)!`)` <br /> |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glQueryMatrixxOES](../android/opengl/GLES10Ext.md))`(`mantissa:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `mantissaOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exponent:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `exponentOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glQueryMatrixxOES](../android/opengl/GLES10Ext.md))`(`mantissa:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `exponent:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
 
 ## Public constructors
 

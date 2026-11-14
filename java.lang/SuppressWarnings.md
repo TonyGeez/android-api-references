@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @Target([AnnotationTarget.CLASS, AnnotationTarget.FILE, AnnotationTarget.FIELD, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.LOCAL_VARIABLE]) class SuppressWarnings
 ```
 
-| [java.lang.SuppressWarnings](https://developer.android.com/reference/kotlin/java/lang/SuppressWarnings#) |
+| [java.lang.SuppressWarnings](../java/lang/SuppressWarnings.md) |
 
 Indicates that the named compiler warnings should be suppressed in the annotated element (and in all program elements contained in the annotated element). Note that the set of warnings suppressed in a given element is a superset of the warnings suppressed in all containing elements. For example, if you annotate a class to suppress one warning and annotate a method to suppress another, both warnings will be suppressed in the method.
 
@@ -18,11 +18,11 @@ As a matter of style, programmers should always use this annotation on the most 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SuppressWarnings](https://developer.android.com/reference/kotlin/java/lang/SuppressWarnings#SuppressWarnings(kotlin.String))`(`vararg` `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Indicates that the named compiler warnings should be suppressed in the annotated element (and in all program elements contained in the annotated element). |
+| [SuppressWarnings](../java/lang/SuppressWarnings.md))`(`vararg` `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Indicates that the named compiler warnings should be suppressed in the annotated element (and in all program elements contained in the annotated element). |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)\> | [value](https://developer.android.com/reference/kotlin/java/lang/SuppressWarnings#value:kotlin.Array) The set of warnings that are to be suppressed by the compiler in the annotated element. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)\> | [value](../java/lang/SuppressWarnings.md) The set of warnings that are to be suppressed by the compiler in the annotated element. |
 
 ## Public constructors
 

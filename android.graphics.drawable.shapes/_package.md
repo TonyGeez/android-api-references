@@ -2,16 +2,16 @@
 
 # android.graphics.drawable.shapes
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/package-summary "View this page in Java")
+Kotlin| [Java](../android/graphics/drawable/shapes/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [ArcShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape) | Creates an arc shape. |
+| [ArcShape](../android/graphics/drawable/shapes/ArcShape.md) | Creates an arc shape. |
 | --- | --- |
-| [OvalShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/OvalShape) | Defines an oval shape. |
-| [PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape) | Creates geometric paths, utilizing the [android.graphics.Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#) class. |
-| [RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape) | Defines a rectangle shape. |
+| [OvalShape](../android/graphics/drawable/shapes/OvalShape.md) | Defines an oval shape. |
+| [PathShape](../android/graphics/drawable/shapes/PathShape.md) | Creates geometric paths, utilizing the [android.graphics.Path](../android/graphics/Path.md) class. |
+| [RectShape](../android/graphics/drawable/shapes/RectShape.md) | Defines a rectangle shape. |
 | --- | --- |
-| [RoundRectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape) | Creates a rounded-corner rectangle. |
-| [Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) | Defines a generic graphical "shape. |
+| [RoundRectShape](../android/graphics/drawable/shapes/RoundRectShape.md) | Creates a rounded-corner rectangle. |
+| [Shape](../android/graphics/drawable/shapes/Shape.md) | Defines a generic graphical "shape. |

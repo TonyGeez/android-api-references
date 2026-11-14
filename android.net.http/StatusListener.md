@@ -3,14 +3,14 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # StatusListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/http/UrlRequest.StatusListener "View this page in Java")
+Kotlin | [Java](../android/net/http/UrlRequest.StatusListener.md)
 | --- | --- |
 
 ```
 interface StatusListener
 ```
 
-| [android.net.http.UrlRequest.StatusListener](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener#) |
+| [android.net.http.UrlRequest.StatusListener](../android/net/http/UrlRequest.StatusListener.md) |
 
 Listener interface used with `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getStatus(android.net.http.UrlRequest.StatusListener)` to receive the status of a `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest`.
 

@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # VcnManager
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/vcn/VcnManager "View this page in Java")
+Kotlin | [Java](../android/net/vcn/VcnManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class VcnManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.vcn.VcnManager](https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#) |
+| ↳ | [android.net.vcn.VcnManager](../android/net/vcn/VcnManager.md) |
 
 VcnManager publishes APIs for applications to configure and manage Virtual Carrier Networks.
 
@@ -49,7 +49,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#clearVcnConfig(android.os.ParcelUuid)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)` Clears the VCN configuration for a given subscription group. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#getConfiguredSubscriptionGroups()()` Retrieves the list of Subscription Groups for which a VCN Configuration has been set. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](../android/os/ParcelUuid.md)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#getConfiguredSubscriptionGroups()()` Retrieves the list of Subscription Groups for which a VCN Configuration has been set. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#registerVcnStatusCallback(android.os.ParcelUuid,%20java.util.concurrent.Executor,%20android.net.vcn.VcnManager.VcnStatusCallback)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback)` Registers the given callback to receive status updates for the specified subscription. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#setVcnConfig(android.os.ParcelUuid,%20android.net.vcn.VcnConfig)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#, config: https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig)` Sets the VCN configuration for a given subscription group. |
@@ -168,7 +168,7 @@ Requires `https://developer.android.com/reference/kotlin/android/telephony/Telep
 
 | Parameters ||
 |---|---|
-| `subscriptionGroup` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): the subscription group that the configuration should be applied to. This value cannot be `null`. |
+| `subscriptionGroup` | [ParcelUuid](../android/os/ParcelUuid.md): the subscription group that the configuration should be applied to. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -224,9 +224,9 @@ A `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.Vcn
 
 | Parameters ||
 |---|---|
-| `subscriptionGroup` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): The subscription group to match for callbacks. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to be used for invoking callbacks. This value cannot be `null`. |
-| `callback` | [VcnManager.VcnStatusCallback](https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback): The VcnStatusCallback to be registered. This value cannot be `null`. |
+| `subscriptionGroup` | [ParcelUuid](../android/os/ParcelUuid.md): The subscription group to match for callbacks. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to be used for invoking callbacks. This value cannot be `null`. |
+| `callback` | [VcnManager.VcnStatusCallback](../android/net/vcn/VcnManager.VcnStatusCallback.md): The VcnStatusCallback to be registered. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -253,8 +253,8 @@ Requires `https://developer.android.com/reference/kotlin/android/telephony/Telep
 
 | Parameters ||
 |---|---|
-| `subscriptionGroup` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): the subscription group that the configuration should be applied to. This value cannot be `null`. |
-| `config` | [VcnConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig): the configuration parameters for the VCN. This value cannot be `null`. |
+| `subscriptionGroup` | [ParcelUuid](../android/os/ParcelUuid.md): the subscription group that the configuration should be applied to. This value cannot be `null`. |
+| `config` | [VcnConfig](../android/net/vcn/VcnConfig.md): the configuration parameters for the VCN. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -275,4 +275,4 @@ Once unregistered, the callback will stop receiving status updates for the subsc
 
 | Parameters ||
 |---|---|
-| `callback` | [VcnManager.VcnStatusCallback](https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback): The callback to be unregistered. This value cannot be `null`. |
+| `callback` | [VcnManager.VcnStatusCallback](../android/net/vcn/VcnManager.VcnStatusCallback.md): The callback to be unregistered. This value cannot be `null`. |

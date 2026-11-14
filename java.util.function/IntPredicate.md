@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface IntPredicate
 ```
 
-| [java.util.function.IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#) |
+| [java.util.function.IntPredicate](../java/util/function/IntPredicate.md) |
 
-Represents a predicate (boolean-valued function) of one`int`-valued argument. This is the`int`-consuming primitive type specialization of [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate).
+Represents a predicate (boolean-valued function) of one`int`-valued argument. This is the`int`-consuming primitive type specialization of [Predicate](../java/util/function/Predicate.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [test(int)](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#test(kotlin.Int)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [test(int)](../java/util/function/IntPredicate.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)! | [and](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#and(java.util.function.IntPredicate))`(`other:` ` [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
-| open [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)! | [negate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#negate())`()` Returns a predicate that represents the logical negation of this predicate. |
-| open [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)! | [or](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#or(java.util.function.IntPredicate))`(`other:` ` [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
+| open [IntPredicate](../java/util/function/IntPredicate.md)! | [and](../java/util/function/IntPredicate.md))`(`other:` ` [IntPredicate](../java/util/function/IntPredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
+| open [IntPredicate](../java/util/function/IntPredicate.md)! | [negate](../java/util/function/IntPredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
+| open [IntPredicate](../java/util/function/IntPredicate.md)! | [or](../java/util/function/IntPredicate.md))`(`other:` ` [IntPredicate](../java/util/function/IntPredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#test(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Evaluates this predicate on the given argument. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](../java/util/function/IntPredicate.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Evaluates this predicate on the given argument. |
 
 ## Public methods
 
@@ -40,11 +40,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)!:a predicate that will be logically-ANDed with this predicate |
+| `other` | [IntPredicate](../java/util/function/IntPredicate.md)!:a predicate that will be logically-ANDed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
+| [IntPredicate](../java/util/function/IntPredicate.md)! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -62,7 +62,7 @@ Returns a predicate that represents the logical negation of this predicate.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)! | a predicate that represents the logical negation of this predicate |
+| [IntPredicate](../java/util/function/IntPredicate.md)! | a predicate that represents the logical negation of this predicate |
 
 ### or
 
@@ -78,11 +78,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)!:a predicate that will be logically-ORed with this predicate |
+| `other` | [IntPredicate](../java/util/function/IntPredicate.md)!:a predicate that will be logically-ORed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [IntPredicate](https://developer.android.com/reference/kotlin/java/util/function/IntPredicate#)! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
+| [IntPredicate](../java/util/function/IntPredicate.md)! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|

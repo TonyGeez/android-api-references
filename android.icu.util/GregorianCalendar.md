@@ -8,10 +8,10 @@ open class GregorianCalendar : Calendar
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) ||
-| | ↳ | [android.icu.util.GregorianCalendar](https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#) |
+| ↳ | [android.icu.util.Calendar](../android/icu/util/Calendar.md) ||
+| | ↳ | [android.icu.util.GregorianCalendar](../android/icu/util/GregorianCalendar.md) |
 
-| Known Direct Subclasses [BuddhistCalendar](https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar), [JapaneseCalendar](https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar), [TaiwanCalendar](https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar) |---|---| | [BuddhistCalendar](https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar) | `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [JapaneseCalendar](https://developer.android.com/reference/kotlin/android/icu/util/JapaneseCalendar) | `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. | | [TaiwanCalendar](https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar) | `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912. | |
+| Known Direct Subclasses [BuddhistCalendar](../android/icu/util/BuddhistCalendar.md), [JapaneseCalendar](../android/icu/util/JapaneseCalendar.md), [TaiwanCalendar](../android/icu/util/TaiwanCalendar.md) |---|---| | [BuddhistCalendar](../android/icu/util/BuddhistCalendar.md) | `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [JapaneseCalendar](../android/icu/util/JapaneseCalendar.md) | `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. | | [TaiwanCalendar](../android/icu/util/TaiwanCalendar.md) | `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
@@ -141,7 +141,7 @@ GregorianCalendar usually should be instantiated using `https://developer.androi
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getActualMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the maximum value that this field could have, given the current date. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getActualMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the minimum value that this field could have, given the current date. |
 | --- | --- |
-| [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getGregorianChange()()` Gets the Gregorian Calendar change date. |
+| [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getGregorianChange()()` Gets the Gregorian Calendar change date. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#getType()()` **\[icu\]** Returns the calendar type name string for this Calendar object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar#hashCode()()` Override hashCode. |
 | --- | --- |
@@ -237,7 +237,7 @@ Constructs a GregorianCalendar based on the current time in the given time zone 
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
 
 **See Also**
 
@@ -257,8 +257,8 @@ Constructs a GregorianCalendar based on the current time in the given time zone 
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: the given ulocale. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 ### GregorianCalendar
 
@@ -274,8 +274,8 @@ GregorianCalendar(
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 
 ### GregorianCalendar
 
@@ -289,7 +289,7 @@ GregorianCalendar(locale: ULocale!)
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: the given ulocale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 ### GregorianCalendar
 
@@ -386,7 +386,7 @@ Constructs a GregorianCalendar based on the current time in the default time zon
 
 | Parameters ||
 |---|---|
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 
 ## Public methods
 
@@ -500,7 +500,7 @@ Returns true if the given Calendar object is equivalent to this one. Calendar ov
 
 | Parameters ||
 |---|---|
-| `other` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar)!: the Calendar to be compared with this Calendar |
+| `other` | [Calendar](../android/icu/util/Calendar.md)!: the Calendar to be compared with this Calendar |
 
 ### isLeapYear
 
@@ -556,7 +556,7 @@ To obtain a pure Julian calendar, set the change date to `Date(Long.MAX_VALUE)`.
 
 | Parameters ||
 |---|---|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!: the given Gregorian cutover date. |
+| `date` | [Date](../java/util/Date.md)!: the given Gregorian cutover date. |
 
 ## Protected methods
 

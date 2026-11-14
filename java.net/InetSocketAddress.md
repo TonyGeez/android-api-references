@@ -10,8 +10,8 @@ open class InetSocketAddress : SocketAddress
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.net.SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress) ||
-| | ↳ | [java.net.InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#) |
+| ↳ | [java.net.SocketAddress](../java/net/SocketAddress.md) ||
+| | ↳ | [java.net.InetSocketAddress](../java/net/InetSocketAddress.md) |
 
 This class implements an IP Socket Address (IP address + port number) It can also be a pair (hostname + port number), in which case an attempt will be made to resolve the hostname. If resolution fails then the address is said to be*unresolved*but can still be used on some circumstances like connecting through a proxy.
 
@@ -23,23 +23,23 @@ The*wildcard* is a special local IP address. It usually means "any" and can only
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#InetSocketAddress(kotlin.Int))`(`port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket address where the IP address is the wildcard address and the port number a specified value. |
-| [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#InetSocketAddress(kotlin.String,%20kotlin.Int))`(`hostname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket address from a hostname and a port number. |
-| [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#InetSocketAddress(java.net.InetAddress,%20kotlin.Int))`(`addr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket address from an IP address and a port number. |
+| [InetSocketAddress](../java/net/InetSocketAddress.md))`(`port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket address where the IP address is the wildcard address and the port number a specified value. |
+| [InetSocketAddress](../java/net/InetSocketAddress.md))`(`hostname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket address from a hostname and a port number. |
+| [InetSocketAddress](../java/net/InetSocketAddress.md))`(`addr:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket address from an IP address and a port number. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#)! | [createUnresolved](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#createUnresolved(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an unresolved socket address from a hostname and a port number. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getAddress())`()` Gets the`InetAddress`. |
+| openstatic [InetSocketAddress](../java/net/InetSocketAddress.md)! | [createUnresolved](../java/net/InetSocketAddress.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an unresolved socket address from a hostname and a port number. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/net/InetSocketAddress.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
+| [InetAddress](../java/net/InetAddress.md)! | [getAddress](../java/net/InetSocketAddress.md))`()` Gets the`InetAddress`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHostName](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getHostName())`()` Gets the`hostname`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHostString](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getHostString())`()` Returns the hostname, or the String form of the address if it doesn't have a hostname (it was created using a literal). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getPort())`()` Gets the port number. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHostName](../java/net/InetSocketAddress.md))`()` Gets the`hostname`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHostString](../java/net/InetSocketAddress.md))`()` Returns the hostname, or the String form of the address if it doesn't have a hostname (it was created using a literal). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../java/net/InetSocketAddress.md))`()` Gets the port number. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#hashCode())`()` Returns a hashcode for this socket address. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnresolved](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#isUnresolved())`()` Checks whether the address has been resolved or not. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#toString())`()` Constructs a string representation of this InetSocketAddress. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/net/InetSocketAddress.md))`()` Returns a hashcode for this socket address. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnresolved](../java/net/InetSocketAddress.md))`()` Checks whether the address has been resolved or not. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/InetSocketAddress.md))`()` Constructs a string representation of this InetSocketAddress. |
 | --- | --- |
 
 ## Public constructors
@@ -114,7 +114,7 @@ A`null`address will assign the*wildcard*address.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------|
-| `addr` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!:The IP address |
+| `addr` | [InetAddress](../java/net/InetAddress.md)!:The IP address |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The port number |
 
 | Exceptions ||
@@ -147,7 +147,7 @@ A valid port value is between 0 and 65535. A port number of`zero`will let the sy
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#)! | an`InetSocketAddress`representing the unresolved socket address |
+| [InetSocketAddress](../java/net/InetSocketAddress.md)! | an`InetSocketAddress`representing the unresolved socket address |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -179,7 +179,7 @@ Two instances of`InetSocketAddress`represent the same address if both the InetAd
 
 **See Also**
 
-- [java.net.InetAddress#equals(java.lang.Object)](https://developer.android.com/reference/kotlin/java/net/InetAddress#equals(kotlin.Any)) 
+- [java.net.InetAddress#equals(java.lang.Object)](../java/net/InetAddress.md)) 
 
 ### getAddress
 
@@ -193,7 +193,7 @@ Gets the`InetAddress`.
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | the InetAddress or`null`if it is unresolved. |
+| [InetAddress](../java/net/InetAddress.md)! | the InetAddress or`null`if it is unresolved. |
 
 ### getHostName
 
@@ -273,11 +273,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toString(): String
 ```
 
-Constructs a string representation of this InetSocketAddress. This string is constructed by calling [InetAddress.toString()](https://developer.android.com/reference/kotlin/java/net/InetAddress#toString())on the InetAddress and concatenating the port number (with a colon).
+Constructs a string representation of this InetSocketAddress. This string is constructed by calling [InetAddress.toString()](../java/net/InetAddress.md))on the InetAddress and concatenating the port number (with a colon).
 
-If the address is an IPv6 address, the IPv6 literal is enclosed in square brackets, for example:`"localhost/[0:0:0:0:0:0:0:1]:80"`. If the address is [unresolved](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#isUnresolved()),`<unresolved>`is displayed in place of the address literal, for example`"foo/<unresolved>:80"`.
+If the address is an IPv6 address, the IPv6 literal is enclosed in square brackets, for example:`"localhost/[0:0:0:0:0:0:0:1]:80"`. If the address is [unresolved](../java/net/InetSocketAddress.md)),`<unresolved>`is displayed in place of the address literal, for example`"foo/<unresolved>:80"`.
 
-To retrieve a string representation of the hostname or the address, use [getHostString()](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#getHostString()), rather than parsing the string returned by this [toString()](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress#toString())method.
+To retrieve a string representation of the hostname or the address, use [getHostString()](../java/net/InetSocketAddress.md)), rather than parsing the string returned by this [toString()](../java/net/InetSocketAddress.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------|

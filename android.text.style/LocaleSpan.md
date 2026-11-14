@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # LocaleSpan
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/style/LocaleSpan "View this page in Java") 
+Kotlin| [Java](../android/text/style/LocaleSpan.md) 
 | --- | --- |
 
 ```
@@ -13,38 +13,38 @@ open class LocaleSpan : MetricAffectingSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
-| | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
-| | | ↳ | [android.text.style.LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||
+| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||
+| | | ↳ | [android.text.style.LocaleSpan](../android/text/style/LocaleSpan.md) |
 | --- | --- | --- | --- |
 
-Changes the [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) of the text to which the span is attached.
+Changes the [Locale](../java/util/Locale.md) of the text to which the span is attached.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#LocaleSpan(android.os.LocaleList))`(`locales:` ` [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)`)` Creates a [LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#) from [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#). |
-| [LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#LocaleSpan(android.os.Parcel))`(`source:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` <br /> |
-| [LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#LocaleSpan(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?`)` Creates a [LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#) from a well-formed [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
+| [LocaleSpan](../android/text/style/LocaleSpan.md))`(`locales:` ` [LocaleList](../android/os/LocaleList.md)`)` Creates a [LocaleSpan](../android/text/style/LocaleSpan.md) from [LocaleList](../android/os/LocaleList.md). |
+| [LocaleSpan](../android/text/style/LocaleSpan.md))`(`source:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
+| [LocaleSpan](../android/text/style/LocaleSpan.md))`(`locale:` ` [Locale](../java/util/Locale.md)?`)` Creates a [LocaleSpan](../android/text/style/LocaleSpan.md) from a well-formed [Locale](../java/util/Locale.md). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#describeContents())`()` <br /> |
-| open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)? | [getLocale](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#getLocale())`()` <br /> |
-| open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | [getLocales](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#getLocales())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/text/style/LocaleSpan.md))`()` <br /> |
+| open [Locale](../java/util/Locale.md)? | [getLocale](../android/text/style/LocaleSpan.md))`()` <br /> |
+| open [LocaleList](../android/os/LocaleList.md) | [getLocales](../android/text/style/LocaleSpan.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#getSpanTypeId())`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#toString())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#updateDrawState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](../android/text/style/LocaleSpan.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/style/LocaleSpan.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/LocaleSpan.md))`(`ds:` ` [TextPaint](../android/text/TextPaint.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#updateMeasureState(android.text.TextPaint))`(`paint:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](../android/text/style/LocaleSpan.md))`(`paint:` ` [TextPaint](../android/text/TextPaint.md)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/text/style/LocaleSpan.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan)! | [getUnderlying](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan#getUnderlying())`()` <br /> Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)), returns the underlying MetricAffectingSpan. <br /> | ||
-| From class [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#updateDrawState(android.text.TextPaint))`(`tp:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> | | [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)! | [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle))`(`cs:` ` [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md)! | [getUnderlying](../android/text/style/MetricAffectingSpan.md))`()` <br /> Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying MetricAffectingSpan. <br /> | ||
+| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/CharacterStyle.md))`(`tp:` ` [TextPaint](../android/text/TextPaint.md)!`)` <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 ## Public constructors
 
@@ -56,11 +56,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 LocaleSpan(locales: LocaleList)
 ```
 
-Creates a [LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#) from [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#).
+Creates a [LocaleSpan](../android/text/style/LocaleSpan.md) from [LocaleList](../android/os/LocaleList.md).
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locales` | [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#):The [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) of the text to which the span is attached. This value cannot be`null`. |
+| `locales` | [LocaleList](../android/os/LocaleList.md):The [LocaleList](../android/os/LocaleList.md) of the text to which the span is attached. This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------|--------------------|
@@ -82,17 +82,17 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 LocaleSpan(locale: Locale?)
 ```
 
-Creates a [LocaleSpan](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#) from a well-formed [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). Note that only [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) objects that can be created by [Locale.forLanguageTag(String)](https://developer.android.com/reference/kotlin/java/util/Locale.html#forLanguageTag(kotlin.String))are supported.
+Creates a [LocaleSpan](../android/text/style/LocaleSpan.md) from a well-formed [Locale](../java/util/Locale.md). Note that only [Locale](../java/util/Locale.md) objects that can be created by [Locale.forLanguageTag(String)](../java/util/Locale.md))are supported.
 
-**Caveat:** Do not specify any [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) object that cannot be created by [Locale.forLanguageTag(String)](https://developer.android.com/reference/kotlin/java/util/Locale.html#forLanguageTag(kotlin.String)).`new Locale(" a ", " b c", " d")`is an example of such a malformed [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) object.
+**Caveat:** Do not specify any [Locale](../java/util/Locale.md) object that cannot be created by [Locale.forLanguageTag(String)](../java/util/Locale.md)).`new Locale(" a ", " b c", " d")`is an example of such a malformed [Locale](../java/util/Locale.md) object.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?:The [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) of the text to which the span is attached. This value may be`null`. |
+| `locale` | [Locale](../java/util/Locale.md)?:The [Locale](../java/util/Locale.md) of the text to which the span is attached. This value may be`null`. |
 
 **See Also**
 
-- [#LocaleSpan(LocaleList)](https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#LocaleSpan(android.os.LocaleList))
+- [#LocaleSpan(LocaleList)](../android/text/style/LocaleSpan.md))
 
 ## Public methods
 
@@ -106,7 +106,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getLocale
 
@@ -118,11 +118,11 @@ open fun getLocale(): Locale?
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)? | The [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) for this span. If multiple locales are associated with this span, only the first locale is returned.`null`if no [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) is specified. |
+| [Locale](../java/util/Locale.md)? | The [Locale](../java/util/Locale.md) for this span. If multiple locales are associated with this span, only the first locale is returned.`null`if no [Locale](../java/util/Locale.md) is specified. |
 
 **See Also**
 
-- [android.os.LocaleList#get(int)](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#get(kotlin.Int))
+- [android.os.LocaleList#get(int)](../android/os/LocaleList.md))
 - <https://developer.android.com/reference/kotlin/android/text/style/LocaleSpan#getLocales()> 
 
 ### getLocales
@@ -135,7 +135,7 @@ open fun getLocales(): LocaleList
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | The entire list of locales that are associated with this span. This value cannot be`null`. |
+| [LocaleList](../android/os/LocaleList.md) | The entire list of locales that are associated with this span. This value cannot be`null`. |
 
 ### getSpanTypeId
 
@@ -190,5 +190,5 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |

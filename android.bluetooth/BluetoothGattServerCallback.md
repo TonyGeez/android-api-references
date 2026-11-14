@@ -8,7 +8,7 @@ abstract class BluetoothGattServerCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothGattServerCallback](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#) |
+| ↳ | [android.bluetooth.BluetoothGattServerCallback](../android/bluetooth/BluetoothGattServerCallback.md) |
 
 This abstract class is used to implement `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer` callbacks.
 
@@ -69,11 +69,11 @@ An application must call `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device that has requested the read operation |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device that has requested the read operation |
 | `requestId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The Id of the request |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset into the value of the characteristic |
 | --- | --- |
-| `characteristic` | [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!: Characteristic to be read |
+| `characteristic` | [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md)!: Characteristic to be read |
 
 ### onCharacteristicWriteRequest
 
@@ -97,9 +97,9 @@ An application must call `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device that has requested the write operation |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device that has requested the write operation |
 | `requestId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The Id of the request |
-| `characteristic` | [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!: Characteristic to be written to. |
+| `characteristic` | [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md)!: Characteristic to be written to. |
 | --- | --- |
 | `preparedWrite` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true, if this write operation should be queued for later execution. |
 | `responseNeeded` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true, if the remote device requires a response |
@@ -123,7 +123,7 @@ Callback indicating when a remote device has been connected or disconnected.
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: Remote device that has been connected or disconnected. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Remote device that has been connected or disconnected. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Status of the connect or disconnect operation. |
 | `newState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Returns the new connection state. Can be one of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTED:kotlin.Int` |
 | --- | --- |
@@ -146,7 +146,7 @@ Callback indicating the connection parameters were updated.
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice): The remote device involved. This value cannot be `null`. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md): The remote device involved. This value cannot be `null`. |
 | `interval` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Connection interval used on this connection, 1.25ms unit. Valid range is from 6 (7.5ms) to 3200 (4000ms). Value is between 6 and 3200 inclusive |
 | `latency` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Worker latency for the connection in number of connection events. Valid range is from 0 to 499. Value is between 0 and 499 inclusive |
 | --- | --- |
@@ -172,11 +172,11 @@ An application must call `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device that has requested the read operation |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device that has requested the read operation |
 | `requestId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The Id of the request |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Offset into the value of the characteristic |
 | --- | --- |
-| `descriptor` | [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!: Descriptor to be read |
+| `descriptor` | [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!: Descriptor to be read |
 
 ### onDescriptorWriteRequest
 
@@ -200,9 +200,9 @@ An application must call `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device that has requested the write operation |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device that has requested the write operation |
 | `requestId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The Id of the request |
-| `descriptor` | [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!: Descriptor to be written to. |
+| `descriptor` | [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!: Descriptor to be written to. |
 | --- | --- |
 | `preparedWrite` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true, if this write operation should be queued for later execution. |
 | `responseNeeded` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true, if the remote device requires a response |
@@ -228,7 +228,7 @@ An application must call `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device that has requested the write operations |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device that has requested the write operations |
 | `requestId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The Id of the request |
 | `execute` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the pending writes should be executed (true) or cancelled (false) |
 | --- | --- |
@@ -250,7 +250,7 @@ This callback will be invoked if a remote client has requested to change the MTU
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device that requested the MTU change |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device that requested the MTU change |
 | `mtu` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new MTU size |
 
 ### onNotificationSent
@@ -270,7 +270,7 @@ When multiple notifications are to be sent, an application must wait for this ca
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device the notification has been sent to |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device the notification has been sent to |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#GATT_SUCCESS:kotlin.Int` if the operation was successful |
 
 ### onPhyRead
@@ -290,7 +290,7 @@ Callback triggered as result of `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device that requested the PHY read. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device that requested the PHY read. |
 | `txPhy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the transmitter PHY in use. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_1M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_2M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_CODED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_HDT:kotlin.Int` |
 | `rxPhy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the receiver PHY in use. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_1M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_2M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_CODED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_HDT:kotlin.Int` |
 | --- | --- |
@@ -313,7 +313,7 @@ Callback triggered as result of `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: The remote device. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: The remote device. |
 | `txPhy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the transmitter PHY in use. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_1M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_2M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_CODED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_HDT:kotlin.Int` |
 | `rxPhy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the receiver PHY in use. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_1M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_2M:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_CODED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_HDT:kotlin.Int` |
 | --- | --- |
@@ -335,7 +335,7 @@ Indicates whether a local service has been added successfully.
 | Parameters ||
 |---|---|
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Returns `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#GATT_SUCCESS:kotlin.Int` if the service was added successfully. |
-| `service` | [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService)!: The service that has been added |
+| `service` | [BluetoothGattService](../android/bluetooth/BluetoothGattService.md)!: The service that has been added |
 
 ### onSubrateChange
 
@@ -353,7 +353,7 @@ Callback indicating LE connection's subrate parameters have changed.
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice): The remote device involved. This value cannot be `null`. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md): The remote device involved. This value cannot be `null`. |
 | `subrateMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): for this LE connection. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#SUBRATE_MODE_OFF:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#SUBRATE_MODE_LOW:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#SUBRATE_MODE_BALANCED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#SUBRATE_MODE_HIGH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#SUBRATE_MODE_SYSTEM_UPDATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#SUBRATE_MODE_NOT_UPDATED:kotlin.Int` |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#GATT_SUCCESS:kotlin.Int` if the connection subrating has been updated successfully. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#SUCCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothStatusCodes#ERROR_UNKNOWN:kotlin.Int` |
 | --- | --- |

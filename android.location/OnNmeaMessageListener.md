@@ -2,14 +2,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # OnNmeaMessageListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/location/OnNmeaMessageListener "View this page in Java")
+Kotlin | [Java](../android/location/OnNmeaMessageListener.md)
 | --- | --- |
 
 ```
 interface OnNmeaMessageListener
 ```
 
-| [android.location.OnNmeaMessageListener](https://developer.android.com/reference/kotlin/android/location/OnNmeaMessageListener#) |
+| [android.location.OnNmeaMessageListener](../android/location/OnNmeaMessageListener.md) |
 
 Used for receiving NMEA sentences from the GNSS. NMEA 0183 is a standard for communicating with marine electronic devices and is a common method for receiving data from a GNSS, typically over a serial port. See [NMEA 0183](http://en.wikipedia.org/wiki/NMEA_0183) for more details. You can implement this interface and call `https://developer.android.com/reference/kotlin/android/location/LocationManager#addNmeaListener(java.util.concurrent.Executor,%20android.location.OnNmeaMessageListener)` to receive NMEA data from the GNSS engine.
 

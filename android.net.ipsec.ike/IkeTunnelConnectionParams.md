@@ -8,7 +8,7 @@ class IkeTunnelConnectionParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeTunnelConnectionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams#) |
+| ↳ | [android.net.ipsec.ike.IkeTunnelConnectionParams](../android/net/ipsec/ike/IkeTunnelConnectionParams.md) |
 
 IkeTunnelConnectionParams contains IKEv2 configurations to establish an IKE/IPsec tunnel.
 
@@ -23,8 +23,8 @@ This class containing IKEv2-specific configuration, authentication and authoriza
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [IkeSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams#getIkeSessionParams()()` Returns the IKE Session configuration. |
-| [TunnelModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams#getTunnelModeChildSessionParams()()` Returns the Tunnel mode Child Session configuration. |
+| [IkeSessionParams](../android/net/ipsec/ike/IkeSessionParams.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams#getIkeSessionParams()()` Returns the IKE Session configuration. |
+| [TunnelModeChildSessionParams](../android/net/ipsec/ike/TunnelModeChildSessionParams.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams#getTunnelModeChildSessionParams()()` Returns the Tunnel mode Child Session configuration. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTunnelConnectionParams#hashCode()()` Returns a hash code value for the object. |
 
@@ -44,8 +44,8 @@ Construct an IkeTunnelConnectionParams instance.
 
 | Parameters ||
 |---|---|
-| `ikeParams` | [IkeSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams): the IKE Session configuration. This value cannot be `null`. |
-| `childParams` | [TunnelModeChildSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams): the Tunnel mode Child Session configuration. This value cannot be `null`. |
+| `ikeParams` | [IkeSessionParams](../android/net/ipsec/ike/IkeSessionParams.md): the IKE Session configuration. This value cannot be `null`. |
+| `childParams` | [TunnelModeChildSessionParams](../android/net/ipsec/ike/TunnelModeChildSessionParams.md): the Tunnel mode Child Session configuration. This value cannot be `null`. |
 
 ## Public methods
 

@@ -4,16 +4,16 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # EventsColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.EventsColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/CalendarContract.EventsColumns.md) 
 | --- | --- |
 
 ```
 protected interface EventsColumns
 ```
 
-| [android.provider.CalendarContract.EventsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#) |
+| [android.provider.CalendarContract.EventsColumns](../android/provider/CalendarContract.EventsColumns.md) |
 
-| Known Direct Subclasses [CalendarContract.Attendees](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Attendees), [CalendarContract.CalendarAlerts](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlerts), [CalendarContract.Events](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Events), [CalendarContract.EventsEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsEntity), [CalendarContract.ExtendedProperties](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedProperties), [CalendarContract.Instances](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Instances), [CalendarContract.Reminders](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Reminders) |--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------| | [CalendarContract.Attendees](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Attendees) | Fields and helpers for interacting with Attendees. | | [CalendarContract.CalendarAlerts](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlerts) | Fields and helpers for accessing calendar alerts information. | | [CalendarContract.Events](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Events) | Constants and helpers for the Events table, which contains details for individual events. | | [CalendarContract.EventsEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsEntity) | Class that represents an Event Entity. | | [CalendarContract.ExtendedProperties](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedProperties) | Fields for accessing the Extended Properties. | | [CalendarContract.Instances](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Instances) | Fields and helpers for interacting with Instances. | | [CalendarContract.Reminders](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Reminders) | Fields and helpers for accessing reminders for an event. | |
+| Known Direct Subclasses [CalendarContract.Attendees](../android/provider/CalendarContract.Attendees.md), [CalendarContract.CalendarAlerts](../android/provider/CalendarContract.CalendarAlerts.md), [CalendarContract.Events](../android/provider/CalendarContract.Events.md), [CalendarContract.EventsEntity](../android/provider/CalendarContract.EventsEntity.md), [CalendarContract.ExtendedProperties](../android/provider/CalendarContract.ExtendedProperties.md), [CalendarContract.Instances](../android/provider/CalendarContract.Instances.md), [CalendarContract.Reminders](../android/provider/CalendarContract.Reminders.md) |--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------| | [CalendarContract.Attendees](../android/provider/CalendarContract.Attendees.md) | Fields and helpers for interacting with Attendees. | | [CalendarContract.CalendarAlerts](../android/provider/CalendarContract.CalendarAlerts.md) | Fields and helpers for accessing calendar alerts information. | | [CalendarContract.Events](../android/provider/CalendarContract.Events.md) | Constants and helpers for the Events table, which contains details for individual events. | | [CalendarContract.EventsEntity](../android/provider/CalendarContract.EventsEntity.md) | Class that represents an Event Entity. | | [CalendarContract.ExtendedProperties](../android/provider/CalendarContract.ExtendedProperties.md) | Fields for accessing the Extended Properties. | | [CalendarContract.Instances](../android/provider/CalendarContract.Instances.md) | Fields and helpers for interacting with Instances. | | [CalendarContract.Reminders](../android/provider/CalendarContract.Reminders.md) | Fields and helpers for accessing reminders for an event. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Columns from the Events table that other tables join into themselves.
@@ -22,84 +22,84 @@ Columns from the Events table that other tables join into themselves.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_CONFIDENTIAL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ACCESS_CONFIDENTIAL:kotlin.Int) Confidential is not used by the app. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_DEFAULT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ACCESS_DEFAULT:kotlin.Int) Default access is controlled by the server and will be treated as public on the device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_LEVEL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ACCESS_LEVEL:kotlin.String) Defines how the event shows up for others when the calendar is shared. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_CONFIDENTIAL](../android/provider/CalendarContract.EventsColumns.md) Confidential is not used by the app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_DEFAULT](../android/provider/CalendarContract.EventsColumns.md) Default access is controlled by the server and will be treated as public on the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_LEVEL](../android/provider/CalendarContract.EventsColumns.md) Defines how the event shows up for others when the calendar is shared. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_PRIVATE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ACCESS_PRIVATE:kotlin.Int) Private shares the event as a free/busy slot with no details. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_PUBLIC](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ACCESS_PUBLIC:kotlin.Int) Public makes the contents visible to anyone with access to the calendar. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALL_DAY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ALL_DAY:kotlin.String) Is the event all day (time zone independent). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_PRIVATE](../android/provider/CalendarContract.EventsColumns.md) Private shares the event as a free/busy slot with no details. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_PUBLIC](../android/provider/CalendarContract.EventsColumns.md) Public makes the contents visible to anyone with access to the calendar. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALL_DAY](../android/provider/CalendarContract.EventsColumns.md) Is the event all day (time zone independent). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AVAILABILITY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY:kotlin.String) If this event counts as busy time or is still free time that can be scheduled over. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_BUSY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_BUSY:kotlin.Int) Indicates that this event takes up time and will conflict with other events. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_FREE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_FREE:kotlin.Int) Indicates that this event is free time and will not conflict with other events. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AVAILABILITY](../android/provider/CalendarContract.EventsColumns.md) If this event counts as busy time or is still free time that can be scheduled over. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_BUSY](../android/provider/CalendarContract.EventsColumns.md) Indicates that this event takes up time and will conflict with other events. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_FREE](../android/provider/CalendarContract.EventsColumns.md) Indicates that this event is free time and will not conflict with other events. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_TENTATIVE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_TENTATIVE:kotlin.Int) Indicates that the owner's availability may change, but should be considered busy time that will conflict. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#CALENDAR_ID:kotlin.String) The [Calendars._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) of the calendar the event belongs to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_INVITE_OTHERS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#CAN_INVITE_OTHERS:kotlin.String) Whether the user can invite others to the event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_TENTATIVE](../android/provider/CalendarContract.EventsColumns.md) Indicates that the owner's availability may change, but should be considered busy time that will conflict. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_ID](../android/provider/CalendarContract.EventsColumns.md) The [Calendars._ID](../android/provider/BaseColumns.md) of the calendar the event belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_INVITE_OTHERS](../android/provider/CalendarContract.EventsColumns.md) Whether the user can invite others to the event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CUSTOM_APP_PACKAGE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#CUSTOM_APP_PACKAGE:kotlin.String) The package name of the custom app that can provide a richer experience for the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CUSTOM_APP_URI](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#CUSTOM_APP_URI:kotlin.String) The URI used by the custom app for the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DESCRIPTION](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#DESCRIPTION:kotlin.String) The description of the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CUSTOM_APP_PACKAGE](../android/provider/CalendarContract.EventsColumns.md) The package name of the custom app that can provide a richer experience for the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CUSTOM_APP_URI](../android/provider/CalendarContract.EventsColumns.md) The URI used by the custom app for the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DESCRIPTION](../android/provider/CalendarContract.EventsColumns.md) The description of the event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DISPLAY_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#DISPLAY_COLOR:kotlin.String) This will be [EVENT_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_COLOR:kotlin.String) if it is not null; otherwise, this will be [Calendars.CALENDAR_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_COLOR:kotlin.String). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DTEND](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#DTEND:kotlin.String) The time the event ends in UTC millis since epoch. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DTSTART](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#DTSTART:kotlin.String) The time the event starts in UTC millis since epoch. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DISPLAY_COLOR](../android/provider/CalendarContract.EventsColumns.md) This will be [EVENT_COLOR](../android/provider/CalendarContract.EventsColumns.md) if it is not null; otherwise, this will be [Calendars.CALENDAR_COLOR](../android/provider/CalendarContract.CalendarColumns.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DTEND](../android/provider/CalendarContract.EventsColumns.md) The time the event ends in UTC millis since epoch. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DTSTART](../android/provider/CalendarContract.EventsColumns.md) The time the event starts in UTC millis since epoch. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DURATION](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#DURATION:kotlin.String) The duration of the event in RFC2445 format. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_COLOR:kotlin.String) A secondary color for the individual event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_COLOR_KEY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_COLOR_KEY:kotlin.String) A secondary color key for the individual event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DURATION](../android/provider/CalendarContract.EventsColumns.md) The duration of the event in RFC2445 format. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_COLOR](../android/provider/CalendarContract.EventsColumns.md) A secondary color for the individual event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_COLOR_KEY](../android/provider/CalendarContract.EventsColumns.md) A secondary color key for the individual event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_END_TIMEZONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_END_TIMEZONE:kotlin.String) The timezone for the end time of the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_LOCATION](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_LOCATION:kotlin.String) Where the event takes place. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_TIMEZONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_TIMEZONE:kotlin.String) The timezone for the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_END_TIMEZONE](../android/provider/CalendarContract.EventsColumns.md) The timezone for the end time of the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_LOCATION](../android/provider/CalendarContract.EventsColumns.md) Where the event takes place. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_TIMEZONE](../android/provider/CalendarContract.EventsColumns.md) The timezone for the event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXDATE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EXDATE:kotlin.String) The recurrence exception dates for the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXRULE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EXRULE:kotlin.String) The recurrence exception rule for the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GUESTS_CAN_INVITE_OTHERS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#GUESTS_CAN_INVITE_OTHERS:kotlin.String) Whether guests can invite other guests. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXDATE](../android/provider/CalendarContract.EventsColumns.md) The recurrence exception dates for the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXRULE](../android/provider/CalendarContract.EventsColumns.md) The recurrence exception rule for the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GUESTS_CAN_INVITE_OTHERS](../android/provider/CalendarContract.EventsColumns.md) Whether guests can invite other guests. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GUESTS_CAN_MODIFY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#GUESTS_CAN_MODIFY:kotlin.String) Whether guests can modify the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GUESTS_CAN_SEE_GUESTS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#GUESTS_CAN_SEE_GUESTS:kotlin.String) Whether guests can see the list of attendees. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HAS_ALARM](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#HAS_ALARM:kotlin.String) Whether the event has an alarm or not. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GUESTS_CAN_MODIFY](../android/provider/CalendarContract.EventsColumns.md) Whether guests can modify the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GUESTS_CAN_SEE_GUESTS](../android/provider/CalendarContract.EventsColumns.md) Whether guests can see the list of attendees. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HAS_ALARM](../android/provider/CalendarContract.EventsColumns.md) Whether the event has an alarm or not. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HAS_ATTENDEE_DATA](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#HAS_ATTENDEE_DATA:kotlin.String) Whether the event has attendee information. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HAS_EXTENDED_PROPERTIES](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#HAS_EXTENDED_PROPERTIES:kotlin.String) Whether the event has extended properties or not. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IS_ORGANIZER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#IS_ORGANIZER:kotlin.String) Are we the organizer of this event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HAS_ATTENDEE_DATA](../android/provider/CalendarContract.EventsColumns.md) Whether the event has attendee information. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HAS_EXTENDED_PROPERTIES](../android/provider/CalendarContract.EventsColumns.md) Whether the event has extended properties or not. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IS_ORGANIZER](../android/provider/CalendarContract.EventsColumns.md) Are we the organizer of this event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LAST_DATE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#LAST_DATE:kotlin.String) The last date this event repeats on, or NULL if it never ends. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LAST_SYNCED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#LAST_SYNCED:kotlin.String) Used to indicate that a row is not a real event but an original copy of a locally modified event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORGANIZER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ORGANIZER:kotlin.String) Email of the organizer (owner) of the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LAST_DATE](../android/provider/CalendarContract.EventsColumns.md) The last date this event repeats on, or NULL if it never ends. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LAST_SYNCED](../android/provider/CalendarContract.EventsColumns.md) Used to indicate that a row is not a real event but an original copy of a locally modified event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORGANIZER](../android/provider/CalendarContract.EventsColumns.md) Email of the organizer (owner) of the event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_ALL_DAY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ORIGINAL_ALL_DAY:kotlin.String) The allDay status (true or false) of the original recurring event for which this event is an exception. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ORIGINAL_ID:kotlin.String) The [Events._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) of the original recurring event for which this event is an exception. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_INSTANCE_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ORIGINAL_INSTANCE_TIME:kotlin.String) The original instance time of the recurring event for which this event is an exception. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_ALL_DAY](../android/provider/CalendarContract.EventsColumns.md) The allDay status (true or false) of the original recurring event for which this event is an exception. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_ID](../android/provider/CalendarContract.EventsColumns.md) The [Events._ID](../android/provider/BaseColumns.md) of the original recurring event for which this event is an exception. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_INSTANCE_TIME](../android/provider/CalendarContract.EventsColumns.md) The original instance time of the recurring event for which this event is an exception. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_SYNC_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ORIGINAL_SYNC_ID:kotlin.String) The _sync_id of the original recurring event for which this event is an exception. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RDATE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#RDATE:kotlin.String) The recurrence dates for the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RRULE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#RRULE:kotlin.String) The recurrence rule for the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_SYNC_ID](../android/provider/CalendarContract.EventsColumns.md) The _sync_id of the original recurring event for which this event is an exception. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RDATE](../android/provider/CalendarContract.EventsColumns.md) The recurrence dates for the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RRULE](../android/provider/CalendarContract.EventsColumns.md) The recurrence rule for the event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SELF_ATTENDEE_STATUS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SELF_ATTENDEE_STATUS:kotlin.String) This is a copy of the attendee status for the owner of this event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STATUS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#STATUS:kotlin.String) The event status. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_CANCELED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#STATUS_CANCELED:kotlin.Int) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SELF_ATTENDEE_STATUS](../android/provider/CalendarContract.EventsColumns.md) This is a copy of the attendee status for the owner of this event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STATUS](../android/provider/CalendarContract.EventsColumns.md) The event status. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_CANCELED](../android/provider/CalendarContract.EventsColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_CONFIRMED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#STATUS_CONFIRMED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_TENTATIVE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#STATUS_TENTATIVE:kotlin.Int) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA1](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA1:kotlin.String) This column is available for use by sync adapters. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_CONFIRMED](../android/provider/CalendarContract.EventsColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_TENTATIVE](../android/provider/CalendarContract.EventsColumns.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA1](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA10](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA10:kotlin.String) This column is available for use by sync adapters. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA2](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA2:kotlin.String) This column is available for use by sync adapters. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA3](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA3:kotlin.String) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA10](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA2](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA3](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA4](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA4:kotlin.String) This column is available for use by sync adapters. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA5](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA5:kotlin.String) This column is available for use by sync adapters. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA6](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA6:kotlin.String) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA4](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA5](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA6](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA7](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA7:kotlin.String) This column is available for use by sync adapters. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA8](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA8:kotlin.String) This column is available for use by sync adapters. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA9](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#SYNC_DATA9:kotlin.String) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA7](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA8](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_DATA9](../android/provider/CalendarContract.EventsColumns.md) This column is available for use by sync adapters. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TITLE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#TITLE:kotlin.String) The title of the event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [UID_2445](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#UID_2445:kotlin.String) The UID for events added from the RFC 2445 iCalendar format. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TITLE](../android/provider/CalendarContract.EventsColumns.md) The title of the event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [UID_2445](../android/provider/CalendarContract.EventsColumns.md) The UID for events added from the RFC 2445 iCalendar format. |
 
 ## Constants
 
@@ -137,7 +137,7 @@ static val ACCESS_LEVEL: String
 
 Defines how the event shows up for others when the calendar is shared. Column name.
 
-Type: INTEGER (One of [ACCESS_DEFAULT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ACCESS_DEFAULT:kotlin.Int), ...) 
+Type: INTEGER (One of [ACCESS_DEFAULT](../android/provider/CalendarContract.EventsColumns.md), ...) 
 
  Value: "accessLevel"
 
@@ -189,7 +189,7 @@ static val AVAILABILITY: String
 
 If this event counts as busy time or is still free time that can be scheduled over. Column name.
 
-Type: INTEGER (One of [AVAILABILITY_BUSY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_BUSY:kotlin.Int), [AVAILABILITY_FREE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_FREE:kotlin.Int), [AVAILABILITY_TENTATIVE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_TENTATIVE:kotlin.Int)) 
+Type: INTEGER (One of [AVAILABILITY_BUSY](../android/provider/CalendarContract.EventsColumns.md), [AVAILABILITY_FREE](../android/provider/CalendarContract.EventsColumns.md), [AVAILABILITY_TENTATIVE](../android/provider/CalendarContract.EventsColumns.md)) 
 
  Value: "availability"
 
@@ -237,7 +237,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val CALENDAR_ID: String
 ```
 
-The [Calendars._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) of the calendar the event belongs to. Column name.
+The [Calendars._ID](../android/provider/BaseColumns.md) of the calendar the event belongs to. Column name.
 
 Type: INTEGER 
 
@@ -265,7 +265,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val CUSTOM_APP_PACKAGE: String
 ```
 
-The package name of the custom app that can provide a richer experience for the event. See the ACTION TYPE [CalendarContract.ACTION_HANDLE_CUSTOM_EVENT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract#ACTION_HANDLE_CUSTOM_EVENT:kotlin.String) for details. Column name.
+The package name of the custom app that can provide a richer experience for the event. See the ACTION TYPE [CalendarContract.ACTION_HANDLE_CUSTOM_EVENT](../android/provider/CalendarContract.md) for details. Column name.
 
 Type: TEXT 
 
@@ -307,7 +307,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val DISPLAY_COLOR: String
 ```
 
-This will be [EVENT_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_COLOR:kotlin.String) if it is not null; otherwise, this will be [Calendars.CALENDAR_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_COLOR:kotlin.String). Read-only value. To modify, write to [EVENT_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_COLOR:kotlin.String) or [Calendars.CALENDAR_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_COLOR:kotlin.String) directly.
+This will be [EVENT_COLOR](../android/provider/CalendarContract.EventsColumns.md) if it is not null; otherwise, this will be [Calendars.CALENDAR_COLOR](../android/provider/CalendarContract.CalendarColumns.md). Read-only value. To modify, write to [EVENT_COLOR](../android/provider/CalendarContract.EventsColumns.md) or [Calendars.CALENDAR_COLOR](../android/provider/CalendarContract.CalendarColumns.md) directly.
 
 Type: INTEGER 
 
@@ -377,7 +377,7 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 static val EVENT_COLOR_KEY: String
 ```
 
-A secondary color key for the individual event. NULL or an empty string are reserved for indicating that the event does not use a key for looking up the color. The provider will update [EVENT_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#EVENT_COLOR:kotlin.String) automatically when a valid key is written to this column. The key must reference an existing row of the [Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) table. @see Colors
+A secondary color key for the individual event. NULL or an empty string are reserved for indicating that the event does not use a key for looking up the color. The provider will update [EVENT_COLOR](../android/provider/CalendarContract.EventsColumns.md) automatically when a valid key is written to this column. The key must reference an existing row of the [Colors](../android/provider/CalendarContract.Colors.md) table. @see Colors
 
 Type: TEXT 
 
@@ -545,7 +545,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val IS_ORGANIZER: String
 ```
 
-Are we the organizer of this event. If this column is not explicitly set, the provider will return 1 if [ORGANIZER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#ORGANIZER:kotlin.String) is equal to [Calendars.OWNER_ACCOUNT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#OWNER_ACCOUNT:kotlin.String). Column name.
+Are we the organizer of this event. If this column is not explicitly set, the provider will return 1 if [ORGANIZER](../android/provider/CalendarContract.EventsColumns.md) is equal to [Calendars.OWNER_ACCOUNT](../android/provider/CalendarContract.CalendarColumns.md). Column name.
 
 Type: STRING 
 
@@ -573,7 +573,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val LAST_SYNCED: String
 ```
 
-Used to indicate that a row is not a real event but an original copy of a locally modified event. A copy is made when an event changes from non-dirty to dirty and the event is on a calendar with [Calendars.CAN_PARTIALLY_UPDATE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#CAN_PARTIALLY_UPDATE:kotlin.String) set to 1. This copy does not get expanded in the instances table and is only visible in queries made by a sync adapter. The copy gets removed when the event is changed back to non-dirty by a sync adapter.
+Used to indicate that a row is not a real event but an original copy of a locally modified event. A copy is made when an event changes from non-dirty to dirty and the event is on a calendar with [Calendars.CAN_PARTIALLY_UPDATE](../android/provider/CalendarContract.SyncColumns.md) set to 1. This copy does not get expanded in the instances table and is only visible in queries made by a sync adapter. The copy gets removed when the event is changed back to non-dirty by a sync adapter.
 
 Type: INTEGER (boolean) 
 
@@ -615,7 +615,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val ORIGINAL_ID: String
 ```
 
-The [Events._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) of the original recurring event for which this event is an exception. Column name.
+The [Events._ID](../android/provider/BaseColumns.md) of the original recurring event for which this event is an exception. Column name.
 
 Type: TEXT 
 
@@ -701,7 +701,7 @@ static val STATUS: String
 
 The event status. Column name.
 
-Type: INTEGER (one of [STATUS_TENTATIVE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#STATUS_TENTATIVE:kotlin.Int)...) 
+Type: INTEGER (one of [STATUS_TENTATIVE](../android/provider/CalendarContract.EventsColumns.md)...) 
 
  Value: "eventStatus"
 

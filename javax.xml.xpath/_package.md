@@ -4,25 +4,25 @@
 
 ## Interfaces
 
-| [XPath](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath) | `XPath`provides access to the XPath evaluation environment and expressions. |
+| [XPath](../javax/xml/xpath/XPath.md) | `XPath`provides access to the XPath evaluation environment and expressions. |
 | --- | --- |
-| [XPathExpression](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathExpression) | `XPathExpression`provides access to compiled XPath expressions. |
-| [XPathFunction](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunction) | `XPathFunction`provides access to XPath functions. |
-| [XPathFunctionResolver](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionResolver) | `XPathFunctionResolver`provides access to the set of user defined`XPathFunction`s. |
+| [XPathExpression](../javax/xml/xpath/XPathExpression.md) | `XPathExpression`provides access to compiled XPath expressions. |
+| [XPathFunction](../javax/xml/xpath/XPathFunction.md) | `XPathFunction`provides access to XPath functions. |
+| [XPathFunctionResolver](../javax/xml/xpath/XPathFunctionResolver.md) | `XPathFunctionResolver`provides access to the set of user defined`XPathFunction`s. |
 | --- | --- |
-| [XPathVariableResolver](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathVariableResolver) | `XPathVariableResolver`provides access to the set of user defined XPath variables. |
+| [XPathVariableResolver](../javax/xml/xpath/XPathVariableResolver.md) | `XPathVariableResolver`provides access to the set of user defined XPath variables. |
 
 ## Classes
 
-| [XPathConstants](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants) | XPath constants. |
+| [XPathConstants](../javax/xml/xpath/XPathConstants.md) | XPath constants. |
 | --- | --- |
-| [XPathFactory](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFactory) | An`XPathFactory`instance can be used to create [javax.xml.xpath.XPath](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath) objects. |
+| [XPathFactory](../javax/xml/xpath/XPathFactory.md) | An`XPathFactory`instance can be used to create [javax.xml.xpath.XPath](../javax/xml/xpath/XPath.md) objects. |
 
 ## Exceptions
 
-| [XPathException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException) | `XPathException`represents a generic XPath exception. |
+| [XPathException](../javax/xml/xpath/XPathException.md) | `XPathException`represents a generic XPath exception. |
 | --- | --- |
-| [XPathExpressionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathExpressionException) | `XPathExpressionException`represents an error in an XPath expression. |
-| [XPathFactoryConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFactoryConfigurationException) | `XPathFactoryConfigurationException`represents a configuration error in a`XPathFactory`environment. |
-| [XPathFunctionException](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionException) | `XPathFunctionException`represents an error with an XPath function. |
+| [XPathExpressionException](../javax/xml/xpath/XPathExpressionException.md) | `XPathExpressionException`represents an error in an XPath expression. |
+| [XPathFactoryConfigurationException](../javax/xml/xpath/XPathFactoryConfigurationException.md) | `XPathFactoryConfigurationException`represents a configuration error in a`XPathFactory`environment. |
+| [XPathFunctionException](../javax/xml/xpath/XPathFunctionException.md) | `XPathFunctionException`represents an error with an XPath function. |
 | --- | --- |

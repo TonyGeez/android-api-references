@@ -10,7 +10,7 @@ open class XmlPullParserFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xmlpull.v1.XmlPullParserFactory](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#) |
+| ↳ | [org.xmlpull.v1.XmlPullParserFactory](../org/xmlpull/v1/XmlPullParserFactory.md) |
 
 This class is used to create implementations of XML Pull Parser defined in XMPULL V1 API.
 
@@ -18,35 +18,35 @@ This class is used to create implementations of XML Pull Parser defined in XMPUL
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_NAME](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#PROPERTY_NAME:kotlin.String) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROPERTY_NAME](../org/xmlpull/v1/XmlPullParserFactory.md) <br /> |
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [XmlPullParserFactory](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#XmlPullParserFactory())`()` Protected constructor to be called by factory implementations. |
+| [XmlPullParserFactory](../org/xmlpull/v1/XmlPullParserFactory.md))`()` Protected constructor to be called by factory implementations. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#getFeature(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the current value of the feature with given name. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamespaceAware](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#isNamespaceAware())`()` Indicates whether or not the factory is configured to produce parsers which are namespace aware (it simply set feature XmlPullParser.FEATURE_PROCESS_NAMESPACES to true or false). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidating](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#isValidating())`()` Indicates whether or not the factory is configured to produce parsers which validate the XML content during parse. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../org/xmlpull/v1/XmlPullParserFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the current value of the feature with given name. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamespaceAware](../org/xmlpull/v1/XmlPullParserFactory.md))`()` Indicates whether or not the factory is configured to produce parsers which are namespace aware (it simply set feature XmlPullParser.FEATURE_PROCESS_NAMESPACES to true or false). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidating](../org/xmlpull/v1/XmlPullParserFactory.md))`()` Indicates whether or not the factory is configured to produce parsers which validate the XML content during parse. |
 | --- | --- |
-| openstatic [XmlPullParserFactory](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newInstance())`()` Creates a new instance of a PullParserFactory that can be used to create XML pull parsers. |
-| openstatic [XmlPullParserFactory](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#)! | [newInstance](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newInstance(kotlin.String,%20java.lang.Class))`(`unused:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unused2:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Creates a factory that always returns instances of Android's built-in [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser) and [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer) implementation. |
-| open [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser)! | [newPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newPullParser())`()` Creates a new instance of a XML Pull Parser using the currently configured factory features. |
+| openstatic [XmlPullParserFactory](../org/xmlpull/v1/XmlPullParserFactory.md)! | [newInstance](../org/xmlpull/v1/XmlPullParserFactory.md))`()` Creates a new instance of a PullParserFactory that can be used to create XML pull parsers. |
+| openstatic [XmlPullParserFactory](../org/xmlpull/v1/XmlPullParserFactory.md)! | [newInstance](../org/xmlpull/v1/XmlPullParserFactory.md))`(`unused:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unused2:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Creates a factory that always returns instances of Android's built-in [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md) and [XmlSerializer](../org/xmlpull/v1/XmlSerializer.md) implementation. |
+| open [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)! | [newPullParser](../org/xmlpull/v1/XmlPullParserFactory.md))`()` Creates a new instance of a XML Pull Parser using the currently configured factory features. |
 | --- | --- |
-| open [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer)! | [newSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#newSerializer())`()` Creates a new instance of a XML Serializer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#setFeature(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the features to be set when XML Pull Parser is created by this factory. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNamespaceAware](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#setNamespaceAware(kotlin.Boolean))`(`awareness:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specifies that the parser produced by this factory will provide support for XML namespaces. |
+| open [XmlSerializer](../org/xmlpull/v1/XmlSerializer.md)! | [newSerializer](../org/xmlpull/v1/XmlPullParserFactory.md))`()` Creates a new instance of a XML Serializer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../org/xmlpull/v1/XmlPullParserFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the features to be set when XML Pull Parser is created by this factory. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNamespaceAware](../org/xmlpull/v1/XmlPullParserFactory.md))`(`awareness:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specifies that the parser produced by this factory will provide support for XML namespaces. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValidating](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#setValidating(kotlin.Boolean))`(`validating:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specifies that the parser produced by this factory will be validating (it simply set feature XmlPullParser.FEATURE_VALIDATION to true or false). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValidating](../org/xmlpull/v1/XmlPullParserFactory.md))`(`validating:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specifies that the parser produced by this factory will be validating (it simply set feature XmlPullParser.FEATURE_VALIDATION to true or false). |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [classNamesLocation](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#classNamesLocation:kotlin.String) Unused, but we have to keep it because it's public API. |
-| [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [features](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#features:java.util.HashMap) <br /> |
-| [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parserClasses](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#parserClasses:java.util.ArrayList) <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [classNamesLocation](../org/xmlpull/v1/XmlPullParserFactory.md) Unused, but we have to keep it because it's public API. |
+| [HashMap](../java/util/HashMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [features](../org/xmlpull/v1/XmlPullParserFactory.md) <br /> |
+| [ArrayList](../java/util/ArrayList.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parserClasses](../org/xmlpull/v1/XmlPullParserFactory.md) <br /> |
 | --- | --- |
-| [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [serializerClasses](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserFactory#serializerClasses:java.util.ArrayList) <br /> |
+| [ArrayList](../java/util/ArrayList.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [serializerClasses](../org/xmlpull/v1/XmlPullParserFactory.md) <br /> |
 
 ## Constants
 
@@ -130,7 +130,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun newInstance(): XmlPullParserFactory!
 ```
 
-Creates a new instance of a PullParserFactory that can be used to create XML pull parsers. The factory will always return instances of Android's built-in [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser) and [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer). 
+Creates a new instance of a PullParserFactory that can be used to create XML pull parsers. The factory will always return instances of Android's built-in [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md) and [XmlSerializer](../org/xmlpull/v1/XmlSerializer.md). 
 
 ### newInstance
 
@@ -143,7 +143,7 @@ open static fun newInstance(
 ): XmlPullParserFactory!
 ```
 
-Creates a factory that always returns instances of Android's built-in [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser) and [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer) implementation. This**does not**support factories capable of creating arbitrary parser and serializer implementations. Both arguments to this method are unused. 
+Creates a factory that always returns instances of Android's built-in [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md) and [XmlSerializer](../org/xmlpull/v1/XmlSerializer.md) implementation. This**does not**support factories capable of creating arbitrary parser and serializer implementations. Both arguments to this method are unused. 
 
 ### newPullParser
 
@@ -157,7 +157,7 @@ Creates a new instance of a XML Pull Parser using the currently configured facto
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser)! | A new instance of a XML Pull Parser. |
+| [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)! | A new instance of a XML Pull Parser. |
 
 ### newSerializer
 
@@ -173,7 +173,7 @@ Creates a new instance of a XML Serializer.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------|
-| [XmlSerializer](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer)! | A new instance of a XML Serializer. |
+| [XmlSerializer](../org/xmlpull/v1/XmlSerializer.md)! | A new instance of a XML Serializer. |
 
 | Exceptions ||
 |-----------------------------------------|----------------------------------------------------------------------------|

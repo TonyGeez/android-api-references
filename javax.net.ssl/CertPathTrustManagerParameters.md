@@ -10,9 +10,9 @@ open class CertPathTrustManagerParameters : ManagerFactoryParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.CertPathTrustManagerParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/CertPathTrustManagerParameters#) |
+| ↳ | [javax.net.ssl.CertPathTrustManagerParameters](../javax/net/ssl/CertPathTrustManagerParameters.md) |
 
-A wrapper for CertPathParameters. This class is used to pass validation settings to CertPath based [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager) s using the [TrustManagerFactory.init()](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManagerFactory#init(javax.net.ssl.ManagerFactoryParameters))method.
+A wrapper for CertPathParameters. This class is used to pass validation settings to CertPath based [TrustManager](../javax/net/ssl/TrustManager.md) s using the [TrustManagerFactory.init()](../javax/net/ssl/TrustManagerFactory.md))method.
 
 Instances of this class are immutable.
 
@@ -20,11 +20,11 @@ Instances of this class are immutable.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertPathTrustManagerParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/CertPathTrustManagerParameters#CertPathTrustManagerParameters(java.security.cert.CertPathParameters))`(`parameters:` ` [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters.html#)!`)` Construct new CertPathTrustManagerParameters from the specified parameters. |
+| [CertPathTrustManagerParameters](../javax/net/ssl/CertPathTrustManagerParameters.md))`(`parameters:` ` [CertPathParameters](../java/security/cert/CertPathParameters.md)!`)` Construct new CertPathTrustManagerParameters from the specified parameters. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters.html#)! | [getParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/CertPathTrustManagerParameters#getParameters())`()` Return a clone of the CertPathParameters encapsulated by this class. |
+| open [CertPathParameters](../java/security/cert/CertPathParameters.md)! | [getParameters](../javax/net/ssl/CertPathTrustManagerParameters.md))`()` Return a clone of the CertPathParameters encapsulated by this class. |
 
 ## Public constructors
 
@@ -40,7 +40,7 @@ Construct new CertPathTrustManagerParameters from the specified parameters. The 
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parameters` | [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters.html#)!:the CertPathParameters to be used |
+| `parameters` | [CertPathParameters](../java/security/cert/CertPathParameters.md)!:the CertPathParameters to be used |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -60,4 +60,4 @@ Return a clone of the CertPathParameters encapsulated by this class.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters.html#)! | a clone of the CertPathParameters encapsulated by this class. |
+| [CertPathParameters](../java/security/cert/CertPathParameters.md)! | a clone of the CertPathParameters encapsulated by this class. |

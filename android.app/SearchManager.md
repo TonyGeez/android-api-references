@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SearchManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/SearchManager "View this page in Java") 
+Kotlin| [Java](../android/app/SearchManager.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ open class SearchManager : DialogInterface.OnCancelListener, DialogInterface.O
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.SearchManager](https://developer.android.com/reference/kotlin/android/app/SearchManager#) |
+| ↳ | [android.app.SearchManager](../android/app/SearchManager.md) |
 
 This class provides access to the system search services.
 
-In practice, you won't interact with this class directly, as search services are provided through methods in [Activity](https://developer.android.com/reference/kotlin/android/app/Activity) and the [ACTION_SEARCH](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEARCH:kotlin.String) [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#).
+In practice, you won't interact with this class directly, as search services are provided through methods in [Activity](../android/app/Activity.md) and the [ACTION_SEARCH](../android/content/Intent.md) [Intent](../android/content/Intent.md).
 
-[Configuration.UI_MODE_TYPE_WATCH](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_WATCH:kotlin.Int) does not support this system service.
+[Configuration.UI_MODE_TYPE_WATCH](../android/content/res/Configuration.md) does not support this system service.
 |
 | ### Developer Guides
 |
@@ -29,96 +29,96 @@ In practice, you won't interact with this class directly, as search services are
 
 | Nested classes ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [OnCancelListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnCancelListener) See [SearchManager.setOnCancelListener](https://developer.android.com/reference/kotlin/android/app/SearchManager#setOnCancelListener(android.app.SearchManager.OnCancelListener))for configuring your activity to monitor search UI state. |
-| abstract | [OnDismissListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnDismissListener) See [SearchManager.setOnDismissListener](https://developer.android.com/reference/kotlin/android/app/SearchManager#setOnDismissListener(android.app.SearchManager.OnDismissListener))for configuring your activity to monitor search UI state. |
+| abstract | [OnCancelListener](../android/app/SearchManager.OnCancelListener.md) See [SearchManager.setOnCancelListener](../android/app/SearchManager.md))for configuring your activity to monitor search UI state. |
+| abstract | [OnDismissListener](../android/app/SearchManager.OnDismissListener.md) See [SearchManager.setOnDismissListener](../android/app/SearchManager.md))for configuring your activity to monitor search UI state. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_KEY](https://developer.android.com/reference/kotlin/android/app/SearchManager#ACTION_KEY:kotlin.String) Intent extra data key: Use this key with Intent. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_MSG](https://developer.android.com/reference/kotlin/android/app/SearchManager#ACTION_MSG:kotlin.String) Intent extra data key: Use this key with Intent. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_DATA](https://developer.android.com/reference/kotlin/android/app/SearchManager#APP_DATA:kotlin.String) Intent extra data key: Use this key with Intent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_KEY](../android/app/SearchManager.md) Intent extra data key: Use this key with Intent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_MSG](../android/app/SearchManager.md) Intent extra data key: Use this key with Intent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_DATA](../android/app/SearchManager.md) Intent extra data key: Use this key with Intent. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CURSOR_EXTRA_KEY_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/app/SearchManager#CURSOR_EXTRA_KEY_IN_PROGRESS:kotlin.String) Boolean extra data key for a suggestion provider to return in [Cursor.getExtras](https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras())to indicate that the search is not complete yet. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DATA_KEY](https://developer.android.com/reference/kotlin/android/app/SearchManager#EXTRA_DATA_KEY:kotlin.String) Intent extra data key: This key will be used for the extra populated by the [SUGGEST_COLUMN_INTENT_EXTRA_DATA](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_INTENT_EXTRA_DATA:kotlin.String) column. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_NEW_SEARCH](https://developer.android.com/reference/kotlin/android/app/SearchManager#EXTRA_NEW_SEARCH:kotlin.String) Boolean extra data key for [Intent.ACTION_WEB_SEARCH](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_WEB_SEARCH:kotlin.String) intents. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CURSOR_EXTRA_KEY_IN_PROGRESS](../android/app/SearchManager.md) Boolean extra data key for a suggestion provider to return in [Cursor.getExtras](../android/database/Cursor.md))to indicate that the search is not complete yet. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DATA_KEY](../android/app/SearchManager.md) Intent extra data key: This key will be used for the extra populated by the [SUGGEST_COLUMN_INTENT_EXTRA_DATA](../android/app/SearchManager.md) column. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_NEW_SEARCH](../android/app/SearchManager.md) Boolean extra data key for [Intent.ACTION_WEB_SEARCH](../android/content/Intent.md) intents. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SELECT_QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#EXTRA_SELECT_QUERY:kotlin.String) Boolean extra data key for [INTENT_ACTION_GLOBAL_SEARCH](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_ACTION_GLOBAL_SEARCH:kotlin.String) intents. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WEB_SEARCH_PENDINGINTENT](https://developer.android.com/reference/kotlin/android/app/SearchManager#EXTRA_WEB_SEARCH_PENDINGINTENT:kotlin.String) Extra data key for [Intent.ACTION_WEB_SEARCH](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_WEB_SEARCH:kotlin.String). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_QUERY_REFINEMENT](https://developer.android.com/reference/kotlin/android/app/SearchManager#FLAG_QUERY_REFINEMENT:kotlin.Int) Flag to specify that the entry can be used for query refinement, i. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SELECT_QUERY](../android/app/SearchManager.md) Boolean extra data key for [INTENT_ACTION_GLOBAL_SEARCH](../android/app/SearchManager.md) intents. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WEB_SEARCH_PENDINGINTENT](../android/app/SearchManager.md) Extra data key for [Intent.ACTION_WEB_SEARCH](../android/content/Intent.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_QUERY_REFINEMENT](../android/app/SearchManager.md) Flag to specify that the entry can be used for query refinement, i. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_GLOBAL_SEARCH](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_ACTION_GLOBAL_SEARCH:kotlin.String) Intent action for starting the global search activity. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_SEARCHABLES_CHANGED](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_ACTION_SEARCHABLES_CHANGED:kotlin.String) Intent action broadcasted to inform that the searchables list or default have changed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_SEARCH_SETTINGS](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_ACTION_SEARCH_SETTINGS:kotlin.String) Intent action for starting the global search settings activity. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_GLOBAL_SEARCH](../android/app/SearchManager.md) Intent action for starting the global search activity. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_SEARCHABLES_CHANGED](../android/app/SearchManager.md) Intent action broadcasted to inform that the searchables list or default have changed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_SEARCH_SETTINGS](../android/app/SearchManager.md) Intent action for starting the global search settings activity. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_SEARCH_SETTINGS_CHANGED](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_ACTION_SEARCH_SETTINGS_CHANGED:kotlin.String) Intent action broadcasted to inform that the search settings have changed in some way. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_WEB_SEARCH_SETTINGS](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_ACTION_WEB_SEARCH_SETTINGS:kotlin.String) Intent action for starting a web search provider's settings activity. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED:kotlin.String) Intent action to be broadcast to inform that the global search provider has changed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_SEARCH_SETTINGS_CHANGED](../android/app/SearchManager.md) Intent action broadcasted to inform that the search settings have changed in some way. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_ACTION_WEB_SEARCH_SETTINGS](../android/app/SearchManager.md) Intent action for starting a web search provider's settings activity. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED](../android/app/SearchManager.md) Intent action to be broadcast to inform that the global search provider has changed. |
 | --- | --- |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MENU_KEY](https://developer.android.com/reference/kotlin/android/app/SearchManager#MENU_KEY:kotlin.Char) This is a shortcut definition for the default menu key to use for invoking search. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MENU_KEYCODE](https://developer.android.com/reference/kotlin/android/app/SearchManager#MENU_KEYCODE:kotlin.Int) This is a shortcut definition for the default menu key to use for invoking search. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#QUERY:kotlin.String) Intent extra data key: Use this key with [content.Intent.getStringExtra()](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String))to obtain the query string from Intent. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MENU_KEY](../android/app/SearchManager.md) This is a shortcut definition for the default menu key to use for invoking search. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MENU_KEYCODE](../android/app/SearchManager.md) This is a shortcut definition for the default menu key to use for invoking search. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY](../android/app/SearchManager.md) Intent extra data key: Use this key with [content.Intent.getStringExtra()](../android/content/Intent.md))to obtain the query string from Intent. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SHORTCUT_MIME_TYPE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SHORTCUT_MIME_TYPE:kotlin.String) MIME type for shortcut validation. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_CONTENT_TYPE:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SHORTCUT_MIME_TYPE](../android/app/SearchManager.md) MIME type for shortcut validation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_CONTENT_TYPE](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_DURATION](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_DURATION:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_FLAGS](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_FLAGS:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_FORMAT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_FORMAT:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_DURATION](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_FLAGS](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_FORMAT](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_ICON_1](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_ICON_1:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_ICON_2](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_ICON_2:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_ACTION](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_INTENT_ACTION:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_ICON_1](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_ICON_2](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_ACTION](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_DATA](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_INTENT_DATA:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_DATA_ID](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_INTENT_DATA_ID:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_EXTRA_DATA](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_INTENT_EXTRA_DATA:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_DATA](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_DATA_ID](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_INTENT_EXTRA_DATA](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_IS_LIVE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_IS_LIVE:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_LAST_ACCESS_HINT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_LAST_ACCESS_HINT:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_PRODUCTION_YEAR](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_PRODUCTION_YEAR:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_IS_LIVE](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_LAST_ACCESS_HINT](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_PRODUCTION_YEAR](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_PURCHASE_PRICE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_PURCHASE_PRICE:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_QUERY:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RATING_SCORE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_RATING_SCORE:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_PURCHASE_PRICE](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_QUERY](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RATING_SCORE](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RATING_STYLE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_RATING_STYLE:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RENTAL_PRICE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_RENTAL_PRICE:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RESULT_CARD_IMAGE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_RESULT_CARD_IMAGE:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RATING_STYLE](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RENTAL_PRICE](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_RESULT_CARD_IMAGE](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_SHORTCUT_ID](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_SHORTCUT_ID:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_TEXT_1](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_TEXT_1:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_SHORTCUT_ID](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_TEXT_1](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_TEXT_2](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_TEXT_2:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_TEXT_2_URL](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_TEXT_2_URL:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_VIDEO_HEIGHT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_VIDEO_HEIGHT:kotlin.String) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_TEXT_2](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_TEXT_2_URL](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_VIDEO_HEIGHT](../android/app/SearchManager.md) Column name for suggestions cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_VIDEO_WIDTH](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_VIDEO_WIDTH:kotlin.String) Column name for suggestions cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_MIME_TYPE](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_MIME_TYPE:kotlin.String) MIME type for suggestions data. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_NEVER_MAKE_SHORTCUT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_NEVER_MAKE_SHORTCUT:kotlin.String) Column value for suggestion column [SUGGEST_COLUMN_SHORTCUT_ID](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_SHORTCUT_ID:kotlin.String) when a suggestion should not be stored as a shortcut in global search. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_COLUMN_VIDEO_WIDTH](../android/app/SearchManager.md) Column name for suggestions cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_MIME_TYPE](../android/app/SearchManager.md) MIME type for suggestions data. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_NEVER_MAKE_SHORTCUT](../android/app/SearchManager.md) Column value for suggestion column [SUGGEST_COLUMN_SHORTCUT_ID](../android/app/SearchManager.md) when a suggestion should not be stored as a shortcut in global search. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_PARAMETER_LIMIT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_PARAMETER_LIMIT:kotlin.String) Query parameter added to suggestion queries to limit the number of suggestions returned. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_URI_PATH_QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_URI_PATH_QUERY:kotlin.String) Uri path for queried suggestions data. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_URI_PATH_SHORTCUT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_URI_PATH_SHORTCUT:kotlin.String) Uri path for shortcut validation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_PARAMETER_LIMIT](../android/app/SearchManager.md) Query parameter added to suggestion queries to limit the number of suggestions returned. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_URI_PATH_QUERY](../android/app/SearchManager.md) Uri path for queried suggestions data. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGEST_URI_PATH_SHORTCUT](../android/app/SearchManager.md) Uri path for shortcut validation. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [USER_QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#USER_QUERY:kotlin.String) Intent extra data key: Use this key with [content.Intent.getStringExtra()](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String))to obtain the query string typed in by the user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [USER_QUERY](../android/app/SearchManager.md) Intent extra data key: Use this key with [content.Intent.getStringExtra()](../android/content/Intent.md))to obtain the query string typed in by the user. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | [getGlobalSearchActivity](https://developer.android.com/reference/kotlin/android/app/SearchManager#getGlobalSearchActivity())`()` Gets the name of the global search activity. |
-| open [SearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchableInfo)! | [getSearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchManager#getSearchableInfo(android.content.ComponentName))`(`componentName:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`)` Gets information about a searchable activity. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchableInfo)!\>! | [getSearchablesInGlobalSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#getSearchablesInGlobalSearch())`()` Returns a list of the searchable activities that can be included in global search. |
+| open [ComponentName](../android/content/ComponentName.md)! | [getGlobalSearchActivity](../android/app/SearchManager.md))`()` Gets the name of the global search activity. |
+| open [SearchableInfo](../android/app/SearchableInfo.md)! | [getSearchableInfo](../android/app/SearchManager.md))`(`componentName:` ` [ComponentName](../android/content/ComponentName.md)!`)` Gets information about a searchable activity. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchableInfo](../android/app/SearchableInfo.md)!\>! | [getSearchablesInGlobalSearch](../android/app/SearchManager.md))`()` Returns a list of the searchable activities that can be included in global search. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCancel](https://developer.android.com/reference/kotlin/android/app/SearchManager#onCancel(android.content.DialogInterface))`(`dialog:` ` [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDismiss](https://developer.android.com/reference/kotlin/android/app/SearchManager#onDismiss(android.content.DialogInterface))`(`dialog:` ` [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnCancelListener](https://developer.android.com/reference/kotlin/android/app/SearchManager#setOnCancelListener(android.app.SearchManager.OnCancelListener))`(`listener:` ` [SearchManager.OnCancelListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnCancelListener)!`)` Set or clear the callback that will be invoked whenever the search UI is canceled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCancel](../android/app/SearchManager.md))`(`dialog:` ` [DialogInterface](../android/content/DialogInterface.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDismiss](../android/app/SearchManager.md))`(`dialog:` ` [DialogInterface](../android/content/DialogInterface.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnCancelListener](../android/app/SearchManager.md))`(`listener:` ` [SearchManager.OnCancelListener](../android/app/SearchManager.OnCancelListener.md)!`)` Set or clear the callback that will be invoked whenever the search UI is canceled. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDismissListener](https://developer.android.com/reference/kotlin/android/app/SearchManager#setOnDismissListener(android.app.SearchManager.OnDismissListener))`(`listener:` ` [SearchManager.OnDismissListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnDismissListener)!`)` Set or clear the callback that will be invoked whenever the search UI is dismissed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#startSearch(kotlin.String,%20kotlin.Boolean,%20android.content.ComponentName,%20android.os.Bundle,%20kotlin.Boolean))`(`initialQuery:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectInitialQuery:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `launchActivity:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`, `appSearchData:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`, `globalSearch:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Launch search UI. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#stopSearch())`()` Terminate search UI. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDismissListener](../android/app/SearchManager.md))`(`listener:` ` [SearchManager.OnDismissListener](../android/app/SearchManager.OnDismissListener.md)!`)` Set or clear the callback that will be invoked whenever the search UI is dismissed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startSearch](../android/app/SearchManager.md))`(`initialQuery:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectInitialQuery:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `launchActivity:` ` [ComponentName](../android/content/ComponentName.md)!`, `appSearchData:` ` [Bundle](../android/os/Bundle.md)!`, `globalSearch:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Launch search UI. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopSearch](../android/app/SearchManager.md))`()` Terminate search UI. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [triggerSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#triggerSearch(kotlin.String,%20android.content.ComponentName,%20android.os.Bundle))`(`query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `launchActivity:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`, `appSearchData:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Similar to [startSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#startSearch(kotlin.String,%20kotlin.Boolean,%20android.content.ComponentName,%20android.os.Bundle,%20kotlin.Boolean))but actually fires off the search query after invoking the search dialog. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [triggerSearch](../android/app/SearchManager.md))`(`query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `launchActivity:` ` [ComponentName](../android/content/ComponentName.md)!`, `appSearchData:` ` [Bundle](../android/os/Bundle.md)!`)` Similar to [startSearch](../android/app/SearchManager.md))but actually fires off the search query after invoking the search dialog. |
 
 ## Constants
 
@@ -130,7 +130,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_KEY: String
 ```
 
-Intent extra data key: Use this key with Intent.ACTION_SEARCH and [content.Intent.getIntExtra()](https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int))to obtain the keycode that the user used to trigger this query. It will be zero if the user simply pressed the "GO" button on the search UI. This is primarily used in conjunction with the keycode attribute in the actionkey element of your searchable.xml configuration file. 
+Intent extra data key: Use this key with Intent.ACTION_SEARCH and [content.Intent.getIntExtra()](../android/content/Intent.md))to obtain the keycode that the user used to trigger this query. It will be zero if the user simply pressed the "GO" button on the search UI. This is primarily used in conjunction with the keycode attribute in the actionkey element of your searchable.xml configuration file. 
 
  Value: "action_key"
 
@@ -142,7 +142,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_MSG: String
 ```
 
-Intent extra data key: Use this key with Intent.ACTION_SEARCH and [content.Intent.getStringExtra()](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String))to obtain the action message that was defined for a particular search action key and/or suggestion. It will be null if the search was launched by typing "enter", touching the "GO" button, or other means not involving any action key. 
+Intent extra data key: Use this key with Intent.ACTION_SEARCH and [content.Intent.getStringExtra()](../android/content/Intent.md))to obtain the action message that was defined for a particular search action key and/or suggestion. It will be null if the search was launched by typing "enter", touching the "GO" button, or other means not involving any action key. 
 
  Value: "action_msg"
 
@@ -154,7 +154,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val APP_DATA: String
 ```
 
-Intent extra data key: Use this key with Intent.ACTION_SEARCH and [content.Intent.getBundleExtra()](https://developer.android.com/reference/kotlin/android/content/Intent.html#getBundleExtra(kotlin.String))to obtain any additional app-specific data that was inserted by the activity that launched the search. 
+Intent extra data key: Use this key with Intent.ACTION_SEARCH and [content.Intent.getBundleExtra()](../android/content/Intent.md))to obtain any additional app-specific data that was inserted by the activity that launched the search. 
 
  Value: "app_data"
 
@@ -166,7 +166,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val CURSOR_EXTRA_KEY_IN_PROGRESS: String
 ```
 
-Boolean extra data key for a suggestion provider to return in [Cursor.getExtras](https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras())to indicate that the search is not complete yet. This can be used by the search UI to indicate that a search is in progress. The suggestion provider can return partial results this way and send a change notification on the cursor when more results are available. 
+Boolean extra data key for a suggestion provider to return in [Cursor.getExtras](../android/database/Cursor.md))to indicate that the search is not complete yet. This can be used by the search UI to indicate that a search is in progress. The suggestion provider can return partial results this way and send a change notification on the cursor when more results are available. 
 
  Value: "in_progress"
 
@@ -178,7 +178,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_DATA_KEY: String
 ```
 
-Intent extra data key: This key will be used for the extra populated by the [SUGGEST_COLUMN_INTENT_EXTRA_DATA](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_INTENT_EXTRA_DATA:kotlin.String) column. 
+Intent extra data key: This key will be used for the extra populated by the [SUGGEST_COLUMN_INTENT_EXTRA_DATA](../android/app/SearchManager.md) column. 
 
  Value: "intent_extra_data_key"
 
@@ -190,7 +190,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_NEW_SEARCH: String
 ```
 
-Boolean extra data key for [Intent.ACTION_WEB_SEARCH](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_WEB_SEARCH:kotlin.String) intents. If`true`, this search should open a new browser window, rather than using an existing one. 
+Boolean extra data key for [Intent.ACTION_WEB_SEARCH](../android/content/Intent.md) intents. If`true`, this search should open a new browser window, rather than using an existing one. 
 
  Value: "new_search"
 
@@ -202,7 +202,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_SELECT_QUERY: String
 ```
 
-Boolean extra data key for [INTENT_ACTION_GLOBAL_SEARCH](https://developer.android.com/reference/kotlin/android/app/SearchManager#INTENT_ACTION_GLOBAL_SEARCH:kotlin.String) intents. If`true`, the initial query should be selected when the global search activity is started, so that the user can easily replace it with another query. 
+Boolean extra data key for [INTENT_ACTION_GLOBAL_SEARCH](../android/app/SearchManager.md) intents. If`true`, the initial query should be selected when the global search activity is started, so that the user can easily replace it with another query. 
 
  Value: "select_query"
 
@@ -214,7 +214,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_WEB_SEARCH_PENDINGINTENT: String
 ```
 
-Extra data key for [Intent.ACTION_WEB_SEARCH](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_WEB_SEARCH:kotlin.String). If set, the value must be a [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent). The search activity handling the [Intent.ACTION_WEB_SEARCH](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_WEB_SEARCH:kotlin.String) intent will fill in and launch the pending intent. The data URI will be filled in with an http or https URI, and [android.provider.Browser#EXTRA_HEADERS](https://developer.android.com/reference/kotlin/android/provider/Browser.html#EXTRA_HEADERS:kotlin.String) may be filled in. 
+Extra data key for [Intent.ACTION_WEB_SEARCH](../android/content/Intent.md). If set, the value must be a [PendingIntent](../android/app/PendingIntent.md). The search activity handling the [Intent.ACTION_WEB_SEARCH](../android/content/Intent.md) intent will fill in and launch the pending intent. The data URI will be filled in with an http or https URI, and [android.provider.Browser#EXTRA_HEADERS](../android/provider/Browser.md) may be filled in. 
 
  Value: "web_search_pendingintent"
 
@@ -228,7 +228,7 @@ static val FLAG_QUERY_REFINEMENT: Int
 
 Flag to specify that the entry can be used for query refinement, i.e., the query text in the search field can be replaced with the text in this entry, when a query refinement icon is clicked. The suggestion list should show such a clickable icon beside the entry.
 
-Use this flag as a bit-field for [SUGGEST_COLUMN_FLAGS](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_FLAGS:kotlin.String). 
+Use this flag as a bit-field for [SUGGEST_COLUMN_FLAGS](../android/app/SearchManager.md). 
 
  Value: 1
 
@@ -240,7 +240,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val INTENT_ACTION_GLOBAL_SEARCH: String
 ```
 
-Intent action for starting the global search activity. The global search provider should handle this intent. Supported extra data keys: [QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#QUERY:kotlin.String), [EXTRA_SELECT_QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#EXTRA_SELECT_QUERY:kotlin.String), [APP_DATA](https://developer.android.com/reference/kotlin/android/app/SearchManager#APP_DATA:kotlin.String). 
+Intent action for starting the global search activity. The global search provider should handle this intent. Supported extra data keys: [QUERY](../android/app/SearchManager.md), [EXTRA_SELECT_QUERY](../android/app/SearchManager.md), [APP_DATA](../android/app/SearchManager.md). 
 
  Value: "android.search.action.GLOBAL_SEARCH"
 
@@ -336,7 +336,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val QUERY: String
 ```
 
-Intent extra data key: Use this key with [content.Intent.getStringExtra()](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String))to obtain the query string from Intent.ACTION_SEARCH. 
+Intent extra data key: Use this key with [content.Intent.getStringExtra()](../android/content/Intent.md))to obtain the query string from Intent.ACTION_SEARCH. 
 
  Value: "query"
 
@@ -398,7 +398,7 @@ static val SUGGEST_COLUMN_FLAGS: String
 
 Column name for suggestions cursor.*Optional.*This column is used to specify additional flags per item. Multiple flags can be specified.
 
-Must be one of [FLAG_QUERY_REFINEMENT](https://developer.android.com/reference/kotlin/android/app/SearchManager#FLAG_QUERY_REFINEMENT:kotlin.Int) or 0 to indicate no flags. 
+Must be one of [FLAG_QUERY_REFINEMENT](../android/app/SearchManager.md) or 0 to indicate no flags. 
 
  Value: "suggest_flags"
 
@@ -424,11 +424,11 @@ static val SUGGEST_COLUMN_ICON_1: String
 
 Column name for suggestions cursor.*Optional.*If your cursor includes this column, then all suggestions will be provided in a format that includes space for two small icons, one at the left and one at the right of each suggestion. The data in the column must be a resource ID of a drawable, or a URI in one of the following formats:
 
-- content ([android.content.ContentResolver#SCHEME_CONTENT](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String))
-- android.resource ([android.content.ContentResolver#SCHEME_ANDROID_RESOURCE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_ANDROID_RESOURCE:kotlin.String))
-- file ([android.content.ContentResolver#SCHEME_FILE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_FILE:kotlin.String))
+- content ([android.content.ContentResolver#SCHEME_CONTENT](../android/content/ContentResolver.md))
+- android.resource ([android.content.ContentResolver#SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md))
+- file ([android.content.ContentResolver#SCHEME_FILE](../android/content/ContentResolver.md))
 
-See [android.content.ContentResolver#openAssetFileDescriptor(Uri, String)](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String))for more information on these schemes.
+See [android.content.ContentResolver#openAssetFileDescriptor(Uri, String)](../android/content/ContentResolver.md))for more information on these schemes.
 
 <br />
 
@@ -444,11 +444,11 @@ static val SUGGEST_COLUMN_ICON_2: String
 
 Column name for suggestions cursor.*Optional.*If your cursor includes this column, then all suggestions will be provided in a format that includes space for two small icons, one at the left and one at the right of each suggestion. The data in the column must be a resource ID of a drawable, or a URI in one of the following formats:
 
-- content ([android.content.ContentResolver#SCHEME_CONTENT](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String))
-- android.resource ([android.content.ContentResolver#SCHEME_ANDROID_RESOURCE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_ANDROID_RESOURCE:kotlin.String))
-- file ([android.content.ContentResolver#SCHEME_FILE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_FILE:kotlin.String))
+- content ([android.content.ContentResolver#SCHEME_CONTENT](../android/content/ContentResolver.md))
+- android.resource ([android.content.ContentResolver#SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md))
+- file ([android.content.ContentResolver#SCHEME_FILE](../android/content/ContentResolver.md))
 
-See [android.content.ContentResolver#openAssetFileDescriptor(Uri, String)](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String))for more information on these schemes.
+See [android.content.ContentResolver#openAssetFileDescriptor(Uri, String)](../android/content/ContentResolver.md))for more information on these schemes.
 
 <br />
 
@@ -498,7 +498,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val SUGGEST_COLUMN_INTENT_EXTRA_DATA: String
 ```
 
-Column name for suggestions cursor.*Optional.* If this column exists*and* this element exists at the given row, this is the data that will be used when forming the suggestion's intent. If not provided, the Intent's extra data field will be null. This column allows suggestions to provide additional arbitrary data which will be included as an extra under the key [EXTRA_DATA_KEY](https://developer.android.com/reference/kotlin/android/app/SearchManager#EXTRA_DATA_KEY:kotlin.String). 
+Column name for suggestions cursor.*Optional.* If this column exists*and* this element exists at the given row, this is the data that will be used when forming the suggestion's intent. If not provided, the Intent's extra data field will be null. This column allows suggestions to provide additional arbitrary data which will be included as an extra under the key [EXTRA_DATA_KEY](../android/app/SearchManager.md). 
 
  Value: "suggest_intent_extra_data"
 
@@ -522,7 +522,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val SUGGEST_COLUMN_LAST_ACCESS_HINT: String
 ```
 
-Column name for suggestions cursor.*Optional.* This column may be used to specify the time in [System.currentTImeMillis()](https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis())(wall time in UTC) when an item was last accessed within the results-providing application. If set, this may be used to show more-recently-used items first. 
+Column name for suggestions cursor.*Optional.* This column may be used to specify the time in [System.currentTImeMillis()](../java/lang/System.md))(wall time in UTC) when an item was last accessed within the results-providing application. If set, this may be used to show more-recently-used items first. 
 
  Value: "suggest_last_access_hint"
 
@@ -558,7 +558,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SUGGEST_COLUMN_QUERY: String
 ```
 
-Column name for suggestions cursor.*Required if action is [ACTION_SEARCH](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEARCH:kotlin.String), optional otherwise.* If this column exists*and*this element exists at the given row, this is the data that will be used when forming the suggestion's query. 
+Column name for suggestions cursor.*Required if action is [ACTION_SEARCH](../android/content/Intent.md), optional otherwise.* If this column exists*and*this element exists at the given row, this is the data that will be used when forming the suggestion's query. 
 
  Value: "suggest_intent_query"
 
@@ -570,7 +570,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val SUGGEST_COLUMN_RATING_SCORE: String
 ```
 
-Column name for suggestions cursor.*Optional.* If your content has a rating, you should provide this column to specify the rating score of your content. The data in the column is of float type. See [android.media.Rating](https://developer.android.com/reference/kotlin/android/media/Rating.html#) about valid rating scores for each rating style. 
+Column name for suggestions cursor.*Optional.* If your content has a rating, you should provide this column to specify the rating score of your content. The data in the column is of float type. See [android.media.Rating](../android/media/Rating.md) about valid rating scores for each rating style. 
 
  Value: "suggest_rating_score"
 
@@ -582,7 +582,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val SUGGEST_COLUMN_RATING_STYLE: String
 ```
 
-Column name for suggestions cursor.*Optional.* If your content has a rating, you should provide this column to specify the rating style of your content. The data in the column must be one of the constant values specified in [android.media.Rating](https://developer.android.com/reference/kotlin/android/media/Rating.html#) 
+Column name for suggestions cursor.*Optional.* If your content has a rating, you should provide this column to specify the rating style of your content. The data in the column must be one of the constant values specified in [android.media.Rating](../android/media/Rating.md) 
 
  Value: "suggest_rating_style"
 
@@ -608,11 +608,11 @@ static val SUGGEST_COLUMN_RESULT_CARD_IMAGE: String
 
 Column name for suggestions cursor.*Optional.*If your cursor includes this column, then the image will be displayed when forming the suggestion. The suggested dimension for the image is 270x400 px for portrait mode and 400x225 px for landscape mode. The data in the column must be a resource ID of a drawable, or a URI in one of the following formats:
 
-- content ([android.content.ContentResolver#SCHEME_CONTENT](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String))
-- android.resource ([android.content.ContentResolver#SCHEME_ANDROID_RESOURCE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_ANDROID_RESOURCE:kotlin.String))
-- file ([android.content.ContentResolver#SCHEME_FILE](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_FILE:kotlin.String))
+- content ([android.content.ContentResolver#SCHEME_CONTENT](../android/content/ContentResolver.md))
+- android.resource ([android.content.ContentResolver#SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md))
+- file ([android.content.ContentResolver#SCHEME_FILE](../android/content/ContentResolver.md))
 
-See [android.content.ContentResolver#openAssetFileDescriptor(Uri, String)](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String))for more information on these schemes.
+See [android.content.ContentResolver#openAssetFileDescriptor(Uri, String)](../android/content/ContentResolver.md))for more information on these schemes.
 
 <br />
 
@@ -626,7 +626,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val SUGGEST_COLUMN_SHORTCUT_ID: String
 ```
 
-Column name for suggestions cursor.*Optional.* This column is used to indicate whether a search suggestion should be stored as a shortcut, and whether it should be refreshed. If missing, the result will be stored as a shortcut and never validated. If set to [SUGGEST_NEVER_MAKE_SHORTCUT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_NEVER_MAKE_SHORTCUT:kotlin.String), the result will not be stored as a shortcut. Otherwise, the shortcut id will be used to check back for an up to date suggestion using [SUGGEST_URI_PATH_SHORTCUT](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_URI_PATH_SHORTCUT:kotlin.String). 
+Column name for suggestions cursor.*Optional.* This column is used to indicate whether a search suggestion should be stored as a shortcut, and whether it should be refreshed. If missing, the result will be stored as a shortcut and never validated. If set to [SUGGEST_NEVER_MAKE_SHORTCUT](../android/app/SearchManager.md), the result will not be stored as a shortcut. Otherwise, the shortcut id will be used to check back for an up to date suggestion using [SUGGEST_URI_PATH_SHORTCUT](../android/app/SearchManager.md). 
 
  Value: "suggest_shortcut_id"
 
@@ -674,7 +674,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val SUGGEST_COLUMN_TEXT_2_URL: String
 ```
 
-Column name for suggestions cursor.*Optional.* This is a URL that will be shown as the second line of text instead of [SUGGEST_COLUMN_TEXT_2](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_TEXT_2:kotlin.String). This is a separate column so that the search UI knows to display the text as a URL, e.g. by using a different color. If this column is absent, or has the value`null`, [SUGGEST_COLUMN_TEXT_2](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_TEXT_2:kotlin.String) will be used instead. 
+Column name for suggestions cursor.*Optional.* This is a URL that will be shown as the second line of text instead of [SUGGEST_COLUMN_TEXT_2](../android/app/SearchManager.md). This is a separate column so that the search UI knows to display the text as a URL, e.g. by using a different color. If this column is absent, or has the value`null`, [SUGGEST_COLUMN_TEXT_2](../android/app/SearchManager.md) will be used instead. 
 
  Value: "suggest_text_2_url"
 
@@ -722,7 +722,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val SUGGEST_NEVER_MAKE_SHORTCUT: String
 ```
 
-Column value for suggestion column [SUGGEST_COLUMN_SHORTCUT_ID](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_SHORTCUT_ID:kotlin.String) when a suggestion should not be stored as a shortcut in global search. 
+Column value for suggestion column [SUGGEST_COLUMN_SHORTCUT_ID](../android/app/SearchManager.md) when a suggestion should not be stored as a shortcut in global search. 
 
  Value: "_-1"
 
@@ -764,7 +764,7 @@ Uri path for shortcut validation. This is the path that the search manager will 
 
 **See Also**
 
-- [#SUGGEST_COLUMN_SHORTCUT_ID](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_SHORTCUT_ID:kotlin.String) 
+- [#SUGGEST_COLUMN_SHORTCUT_ID](../android/app/SearchManager.md) 
 
 ### USER_QUERY
 
@@ -774,7 +774,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val USER_QUERY: String
 ```
 
-Intent extra data key: Use this key with [content.Intent.getStringExtra()](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String))to obtain the query string typed in by the user. This may be different from the value of [QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#QUERY:kotlin.String) if the intent is the result of selecting a suggestion. In that case, [QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#QUERY:kotlin.String) will contain the value of [SUGGEST_COLUMN_QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#SUGGEST_COLUMN_QUERY:kotlin.String) for the suggestion, and [USER_QUERY](https://developer.android.com/reference/kotlin/android/app/SearchManager#USER_QUERY:kotlin.String) will contain the string typed by the user. 
+Intent extra data key: Use this key with [content.Intent.getStringExtra()](../android/content/Intent.md))to obtain the query string typed in by the user. This may be different from the value of [QUERY](../android/app/SearchManager.md) if the intent is the result of selecting a suggestion. In that case, [QUERY](../android/app/SearchManager.md) will contain the value of [SUGGEST_COLUMN_QUERY](../android/app/SearchManager.md) for the suggestion, and [USER_QUERY](../android/app/SearchManager.md) will contain the string typed by the user. 
 
  Value: "user_query"
 
@@ -802,11 +802,11 @@ Gets information about a searchable activity.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!:The activity to get searchable information for. |
+| `componentName` | [ComponentName](../android/content/ComponentName.md)!:The activity to get searchable information for. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [SearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchableInfo)! | Searchable information, or`null`if the activity does not exist, or is not searchable. |
+| [SearchableInfo](../android/app/SearchableInfo.md)! | Searchable information, or`null`if the activity does not exist, or is not searchable. |
 
 ### getSearchablesInGlobalSearch
 
@@ -820,7 +820,7 @@ Returns a list of the searchable activities that can be included in global searc
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchableInfo)!>! | a list containing searchable information for all searchable activities that have the`android:includeInGlobalSearch`attribute set in their searchable meta-data. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SearchableInfo](../android/app/SearchableInfo.md)!>! | a list containing searchable information for all searchable activities that have the`android:includeInGlobalSearch`attribute set in their searchable meta-data. |
 
 ### onCancel
 
@@ -834,7 +834,7 @@ open fun onCancel(dialog: DialogInterface!): Unit
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dialog` | [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!:the dialog that was canceled will be passed into the method |
+| `dialog` | [DialogInterface](../android/content/DialogInterface.md)!:the dialog that was canceled will be passed into the method |
 
 ### onDismiss
 
@@ -848,7 +848,7 @@ open fun onDismiss(dialog: DialogInterface!): Unit
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dialog` | [DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#)!:the dialog that was dismissed will be passed into the method |
+| `dialog` | [DialogInterface](../android/content/DialogInterface.md)!:the dialog that was dismissed will be passed into the method |
 
 ### setOnCancelListener
 
@@ -860,11 +860,11 @@ open fun setOnCancelListener(listener: SearchManager.OnCancelListener!): Unit
 
 Set or clear the callback that will be invoked whenever the search UI is canceled.
 
-[Configuration.UI_MODE_TYPE_TELEVISION](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_TELEVISION:kotlin.Int) does not support this method.
+[Configuration.UI_MODE_TYPE_TELEVISION](../android/content/res/Configuration.md) does not support this method.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SearchManager.OnCancelListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnCancelListener)!:The [OnCancelListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnCancelListener) to use, or null. |
+| `listener` | [SearchManager.OnCancelListener](../android/app/SearchManager.OnCancelListener.md)!:The [OnCancelListener](../android/app/SearchManager.OnCancelListener.md) to use, or null. |
 
 ### setOnDismissListener
 
@@ -876,11 +876,11 @@ open fun setOnDismissListener(listener: SearchManager.OnDismissListener!): Unit
 
 Set or clear the callback that will be invoked whenever the search UI is dismissed.
 
-[Configuration.UI_MODE_TYPE_TELEVISION](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_TELEVISION:kotlin.Int) does not support this method.
+[Configuration.UI_MODE_TYPE_TELEVISION](../android/content/res/Configuration.md) does not support this method.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SearchManager.OnDismissListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnDismissListener)!:The [OnDismissListener](https://developer.android.com/reference/kotlin/android/app/SearchManager.OnDismissListener) to use, or null. |
+| `listener` | [SearchManager.OnDismissListener](../android/app/SearchManager.OnDismissListener.md)!:The [OnDismissListener](../android/app/SearchManager.OnDismissListener.md) to use, or null. |
 
 ### startSearch
 
@@ -902,21 +902,21 @@ The search manager will open a search widget in an overlapping window, and the u
 
 - The user completes the search. In most cases this will launch a search intent.
 - The user uses the back, home, or other keys to exit the search.
-- The application calls the [stopSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#stopSearch())method, which will hide the search window and return focus to the activity from which it was launched.
-- Most applications will*not* use this interface to invoke search. The primary method for invoking search is to call android.app.Activity#onSearchRequested or [Activity.startSearch()](https://developer.android.com/reference/kotlin/android/app/Activity#startSearch(kotlin.String,%20kotlin.Boolean,%20android.os.Bundle,%20kotlin.Boolean)).
+- The application calls the [stopSearch](../android/app/SearchManager.md))method, which will hide the search window and return focus to the activity from which it was launched.
+- Most applications will*not* use this interface to invoke search. The primary method for invoking search is to call android.app.Activity#onSearchRequested or [Activity.startSearch()](../android/app/Activity.md)).
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `initialQuery` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A search string can be pre-entered here, but this is typically null or empty. |
 | `selectInitialQuery` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, the initial query will be preselected, which means that any further typing will replace it. This is useful for cases where an entire pre-formed query is being inserted. If false, the selection point will be placed at the end of the inserted query. This is useful when the inserted query is text that the user entered, and the user would expect to be able to keep typing.*This parameter is only meaningful if initialQuery is a non-empty string.* |
-| `launchActivity` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!:The ComponentName of the activity that has launched this search. |
+| `launchActivity` | [ComponentName](../android/content/ComponentName.md)!:The ComponentName of the activity that has launched this search. |
 | --- | --- |
-| `appSearchData` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. |
+| `appSearchData` | [Bundle](../android/os/Bundle.md)!:An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. |
 | `globalSearch` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If false, this will only launch the search that has been specifically defined by the application (which is usually defined as a local search). If no default search is defined in the current application or activity, global search will be launched. If true, this will always launch a platform-global (e.g. web-based) search instead. |
 
 **See Also**
 
-- [#stopSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#stopSearch()) 
+- [#stopSearch](../android/app/SearchManager.md)) 
 
 ### stopSearch
 
@@ -932,10 +932,10 @@ Typically the user will terminate the search UI by launching a search or by canc
 
 This function can be safely called at any time (even if no search is active.)
 
-[Configuration.UI_MODE_TYPE_TELEVISION](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_TELEVISION:kotlin.Int) does not support this method. 
+[Configuration.UI_MODE_TYPE_TELEVISION](../android/content/res/Configuration.md) does not support this method. 
 **See Also**
 
-- [#startSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#startSearch(kotlin.String,%20kotlin.Boolean,%20android.content.ComponentName,%20android.os.Bundle,%20kotlin.Boolean)) 
+- [#startSearch](../android/app/SearchManager.md)) 
 
 ### triggerSearch
 
@@ -949,15 +949,15 @@ open fun triggerSearch(
 ): Unit
 ```
 
-Similar to [startSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#startSearch(kotlin.String,%20kotlin.Boolean,%20android.content.ComponentName,%20android.os.Bundle,%20kotlin.Boolean))but actually fires off the search query after invoking the search dialog. Made available for testing purposes.
+Similar to [startSearch](../android/app/SearchManager.md))but actually fires off the search query after invoking the search dialog. Made available for testing purposes.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `query` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The query to trigger. If empty, request will be ignored. |
-| `launchActivity` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!:The ComponentName of the activity that has launched this search. |
-| `appSearchData` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. |
+| `launchActivity` | [ComponentName](../android/content/ComponentName.md)!:The ComponentName of the activity that has launched this search. |
+| `appSearchData` | [Bundle](../android/os/Bundle.md)!:An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. |
 | --- | --- |
 
 **See Also**
 
-- [#startSearch](https://developer.android.com/reference/kotlin/android/app/SearchManager#startSearch(kotlin.String,%20kotlin.Boolean,%20android.content.ComponentName,%20android.os.Bundle,%20kotlin.Boolean))
+- [#startSearch](../android/app/SearchManager.md))

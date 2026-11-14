@@ -9,7 +9,7 @@ class HealthPermissions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.HealthPermissions](https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#) |
+| ↳ | [android.health.connect.HealthPermissions](../android/health/connect/HealthPermissions.md) |
 
 Permissions for accessing the HealthConnect APIs.
 

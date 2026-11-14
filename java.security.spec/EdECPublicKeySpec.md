@@ -10,7 +10,7 @@ class EdECPublicKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.EdECPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EdECPublicKeySpec#) |
+| ↳ | [java.security.spec.EdECPublicKeySpec](../java/security/spec/EdECPublicKeySpec.md) |
 
 A class representing elliptic curve public keys as defined in [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://tools.ietf.org/html/rfc8032), including the curve and other algorithm parameters. The public key is a point on the curve, which is represented using an`EdECPoint`.
 
@@ -18,12 +18,12 @@ A class representing elliptic curve public keys as defined in [RFC 8032: Edwards
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EdECPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EdECPublicKeySpec#EdECPublicKeySpec(java.security.spec.NamedParameterSpec,%20java.security.spec.EdECPoint))`(`params:` ` [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec)`, `point:` ` [EdECPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint)`)` Construct a public key spec using the supplied parameters and point. |
+| [EdECPublicKeySpec](../java/security/spec/EdECPublicKeySpec.md))`(`params:` ` [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md)`, `point:` ` [EdECPoint](../java/security/spec/EdECPoint.md)`)` Construct a public key spec using the supplied parameters and point. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec) | [getParams](https://developer.android.com/reference/kotlin/java/security/spec/EdECPublicKeySpec#getParams())`()` Get the algorithm parameters that define the curve and other settings. |
-| [EdECPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint) | [getPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPublicKeySpec#getPoint())`()` Get the point representing the public key. |
+| [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md) | [getParams](../java/security/spec/EdECPublicKeySpec.md))`()` Get the algorithm parameters that define the curve and other settings. |
+| [EdECPoint](../java/security/spec/EdECPoint.md) | [getPoint](../java/security/spec/EdECPublicKeySpec.md))`()` Get the point representing the public key. |
 
 ## Public constructors
 
@@ -41,8 +41,8 @@ Construct a public key spec using the supplied parameters and point.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec):the algorithm parameters. |
-| `point` | [EdECPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint):the point representing the public key. |
+| `params` | [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md):the algorithm parameters. |
+| `point` | [EdECPoint](../java/security/spec/EdECPoint.md):the point representing the public key. |
 
 | Exceptions ||
 |----------------------------------|-----------------------------|
@@ -62,7 +62,7 @@ Get the algorithm parameters that define the curve and other settings.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|-----------------|
-| [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec) | the parameters. |
+| [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md) | the parameters. |
 
 ### getPoint
 
@@ -76,4 +76,4 @@ Get the point representing the public key.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------|
-| [EdECPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint) | the`EdECPoint`representing the public key. |
+| [EdECPoint](../java/security/spec/EdECPoint.md) | the`EdECPoint`representing the public key. |

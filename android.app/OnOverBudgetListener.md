@@ -6,7 +6,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 interface OnOverBudgetListener
 ```
 
-| [android.app.MemoryBudgetManager.OnOverBudgetListener](https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener#) |
+| [android.app.MemoryBudgetManager.OnOverBudgetListener](../android/app/MemoryBudgetManager.OnOverBudgetListener.md) |
 
 The callback that is notified when a budget is exceeded.
 

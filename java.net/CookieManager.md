@@ -10,10 +10,10 @@ open class CookieManager : CookieHandler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.net.CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler) ||
-| | ↳ | [java.net.CookieManager](https://developer.android.com/reference/kotlin/java/net/CookieManager#) |
+| ↳ | [java.net.CookieHandler](../java/net/CookieHandler.md) ||
+| | ↳ | [java.net.CookieManager](../java/net/CookieManager.md) |
 
-CookieManager provides a concrete implementation of [CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler), which separates the storage of cookies from the policy surrounding accepting and rejecting cookies. A CookieManager is initialized with a [CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore) which manages storage, and a [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy) object, which makes policy decisions on cookie acceptance/rejection.
+CookieManager provides a concrete implementation of [CookieHandler](../java/net/CookieHandler.md), which separates the storage of cookies from the policy surrounding accepting and rejecting cookies. A CookieManager is initialized with a [CookieStore](../java/net/CookieStore.md) which manages storage, and a [CookiePolicy](../java/net/CookiePolicy.md) object, which makes policy decisions on cookie acceptance/rejection.
 
 The HTTP cookie management in java.net package looks like: 
 
@@ -44,15 +44,15 @@ The HTTP cookie management in java.net package looks like:
 
 There're various ways user can hook up his own HTTP cookie management behavior, e.g.
 
-- Use CookieHandler.setDefault to set a brand new [CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler) implementation
-- Let CookieManager be the default [CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler) implementation, but implement user's own [CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore) and [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy) and tell default CookieManager to use them: 
+- Use CookieHandler.setDefault to set a brand new [CookieHandler](../java/net/CookieHandler.md) implementation
+- Let CookieManager be the default [CookieHandler](../java/net/CookieHandler.md) implementation, but implement user's own [CookieStore](../java/net/CookieStore.md) and [CookiePolicy](../java/net/CookiePolicy.md) and tell default CookieManager to use them: 
 
   ```kotlin
   // this should be done at the beginning of an HTTP session
           CookieHandler.setDefault(new CookieManager(new MyCookieStore(), new MyCookiePolicy()));
         
   ```
-- Let CookieManager be the default [CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler) implementation, but use customized [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy): 
+- Let CookieManager be the default [CookieHandler](../java/net/CookieHandler.md) implementation, but use customized [CookiePolicy](../java/net/CookiePolicy.md): 
 
   ```kotlin
   // this should be done at the beginning of an HTTP session
@@ -68,20 +68,20 @@ The implementation conforms to [RFC 2965](http://www.ietf.org/rfc/rfc2965.txt), 
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CookieManager](https://developer.android.com/reference/kotlin/java/net/CookieManager#CookieManager())`()` Create a new cookie manager. |
-| [CookieManager](https://developer.android.com/reference/kotlin/java/net/CookieManager#CookieManager(java.net.CookieStore,%20java.net.CookiePolicy))`(`store:` ` [CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore)!`, `cookiePolicy:` ` [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy)!`)` Create a new cookie manager with specified cookie store and cookie policy. |
+| [CookieManager](../java/net/CookieManager.md))`()` Create a new cookie manager. |
+| [CookieManager](../java/net/CookieManager.md))`(`store:` ` [CookieStore](../java/net/CookieStore.md)!`, `cookiePolicy:` ` [CookiePolicy](../java/net/CookiePolicy.md)!`)` Create a new cookie manager with specified cookie store and cookie policy. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [get](https://developer.android.com/reference/kotlin/java/net/CookieManager#get(java.net.URI,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
-| open [CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore)! | [getCookieStore](https://developer.android.com/reference/kotlin/java/net/CookieManager#getCookieStore())`()` To retrieve current cookie store. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](https://developer.android.com/reference/kotlin/java/net/CookieManager#put(java.net.URI,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `responseHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [get](../java/net/CookieManager.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
+| open [CookieStore](../java/net/CookieStore.md)! | [getCookieStore](../java/net/CookieManager.md))`()` To retrieve current cookie store. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](../java/net/CookieManager.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `responseHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookieManager#setCookiePolicy(java.net.CookiePolicy))`(`cookiePolicy:` ` [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy)!`)` To set the cookie policy of this cookie manager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCookiePolicy](../java/net/CookieManager.md))`(`cookiePolicy:` ` [CookiePolicy](../java/net/CookiePolicy.md)!`)` To set the cookie policy of this cookie manager. |
 
 | Inherited functions ||
 |---|---|
-| From class [CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler)! | [getDefault](https://developer.android.com/reference/kotlin/java/net/CookieHandler#getDefault())`()` <br /> Gets the system-wide cookie handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/java/net/CookieHandler#setDefault(java.net.CookieHandler))`(`cHandler:` ` [CookieHandler](https://developer.android.com/reference/kotlin/java/net/CookieHandler)!`)` <br /> Sets (or unsets) the system-wide cookie handler. Note: non-standard http protocol handlers may ignore this setting. <br /> | ||
+| From class [CookieHandler](../java/net/CookieHandler.md) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CookieHandler](../java/net/CookieHandler.md)! | [getDefault](../java/net/CookieHandler.md))`()` <br /> Gets the system-wide cookie handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../java/net/CookieHandler.md))`(`cHandler:` ` [CookieHandler](../java/net/CookieHandler.md)!`)` <br /> Sets (or unsets) the system-wide cookie handler. Note: non-standard http protocol handlers may ignore this setting. <br /> | ||
 
 ## Public constructors
 
@@ -111,8 +111,8 @@ Create a new cookie manager with specified cookie store and cookie policy.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `store` | [CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore)!:a`CookieStore`to be used by cookie manager. if`null`, cookie manager will use a default one, which is an in-memory CookieStore implementation. |
-| `cookiePolicy` | [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy)!:a`CookiePolicy`instance to be used by cookie manager as policy callback. if`null`, ACCEPT_ORIGINAL_SERVER will be used. |
+| `store` | [CookieStore](../java/net/CookieStore.md)!:a`CookieStore`to be used by cookie manager. if`null`, cookie manager will use a default one, which is an in-memory CookieStore implementation. |
+| `cookiePolicy` | [CookiePolicy](../java/net/CookiePolicy.md)!:a`CookiePolicy`instance to be used by cookie manager as policy callback. if`null`, ACCEPT_ORIGINAL_SERVER will be used. |
 
 ## Public methods
 
@@ -129,7 +129,7 @@ open fun get(
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:a`URI`representing the intended use for the cookies |
+| `uri` | [URI](../java/net/URI.md)!:a`URI`representing the intended use for the cookies |
 | `requestHeaders` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>!:- a Map from request header field names to lists of field values representing the current request headers |
 
 | Return ||
@@ -153,7 +153,7 @@ To retrieve current cookie store.
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
-| [CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore)! | the cookie store currently used by cookie manager. |
+| [CookieStore](../java/net/CookieStore.md)! | the cookie store currently used by cookie manager. |
 
 ### put
 
@@ -168,7 +168,7 @@ open fun put(
 
 | Parameters ||
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:a`URI`where the cookies come from |
+| `uri` | [URI](../java/net/URI.md)!:a`URI`where the cookies come from |
 | `responseHeaders` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>!:an immutable map from field names to lists of field values representing the response header fields returned |
 
 | Exceptions ||
@@ -190,4 +190,4 @@ A instance of`CookieManager`will have cookie policy ACCEPT_ORIGINAL_SERVER by de
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cookiePolicy` | [CookiePolicy](https://developer.android.com/reference/kotlin/java/net/CookiePolicy)!:the cookie policy. Can be`null`, which has no effects on current cookie policy. |
+| `cookiePolicy` | [CookiePolicy](../java/net/CookiePolicy.md)!:the cookie policy. Can be`null`, which has no effects on current cookie policy. |

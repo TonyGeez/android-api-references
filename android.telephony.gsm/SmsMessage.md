@@ -5,7 +5,7 @@ Deprecated in [API level 4](https://developer.android.com/guide/topics/manifest/
 
 # SmsMessage
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/gsm/SmsMessage "View this page in Java") 
+Kotlin| [Java](../android/telephony/gsm/SmsMessage.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class SmsMessage
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.gsm.SmsMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#) |
+| ↳ | [android.telephony.gsm.SmsMessage](../android/telephony/gsm/SmsMessage.md) |
 
 | **This class was deprecated in API level 4.**
 |
@@ -26,66 +26,66 @@ A Short Message Service message.
 
 | Nested classes ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------|
-| | [MessageClass](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage.MessageClass) SMS Class enumeration. |
-| open | [SubmitPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage.SubmitPdu) <br /> |
+| | [MessageClass](../android/telephony/gsm/SmsMessage.MessageClass.md) SMS Class enumeration. |
+| open | [SubmitPdu](../android/telephony/gsm/SmsMessage.SubmitPdu.md) <br /> |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_16BIT](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#ENCODING_16BIT:kotlin.Int) 16-bit encoding scheme (see TS 23.038) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_7BIT](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#ENCODING_7BIT:kotlin.Int) 7-bit encoding scheme (see TS 23.038) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_8BIT](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#ENCODING_8BIT:kotlin.Int) 8-bit encoding scheme (see TS 23.038) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_16BIT](../android/telephony/gsm/SmsMessage.md) 16-bit encoding scheme (see TS 23.038) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_7BIT](../android/telephony/gsm/SmsMessage.md) 7-bit encoding scheme (see TS 23.038) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_8BIT](../android/telephony/gsm/SmsMessage.md) 8-bit encoding scheme (see TS 23.038) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#ENCODING_UNKNOWN:kotlin.Int) Unknown encoding scheme (see TS 23.038) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_USER_DATA_BYTES](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#MAX_USER_DATA_BYTES:kotlin.Int) The maximum number of payload bytes per message |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_USER_DATA_SEPTETS](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#MAX_USER_DATA_SEPTETS:kotlin.Int) The maximum number of payload septets per message |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCODING_UNKNOWN](../android/telephony/gsm/SmsMessage.md) Unknown encoding scheme (see TS 23.038) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_USER_DATA_BYTES](../android/telephony/gsm/SmsMessage.md) The maximum number of payload bytes per message |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_USER_DATA_SEPTETS](../android/telephony/gsm/SmsMessage.md) The maximum number of payload septets per message |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_USER_DATA_SEPTETS_WITH_HEADER](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#MAX_USER_DATA_SEPTETS_WITH_HEADER:kotlin.Int) The maximum number of payload septets per message if a user data header is present. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_USER_DATA_SEPTETS_WITH_HEADER](../android/telephony/gsm/SmsMessage.md) The maximum number of payload septets per message if a user data header is present. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------|---|
-| [SmsMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#SmsMessage())`()` <br /> |
+| [SmsMessage](../android/telephony/gsm/SmsMessage.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [calculateLength](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#calculateLength(kotlin.CharSequence,%20kotlin.Boolean))`(`messageBody:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `use7bitOnly:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Calculates the number of SMS's required to encode the message body and the number of characters remaining until the next message, given the current encoding. |
-| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [calculateLength](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#calculateLength(kotlin.String,%20kotlin.Boolean))`(`messageBody:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `use7bitOnly:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Calculates the number of SMS's required to encode the message body and the number of characters remaining until the next message, given the current encoding. |
-| openstatic [SmsMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#)! | [createFromPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#createFromPdu(kotlin.ByteArray))`(`pdu:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create an SmsMessage from a raw PDU. |
+| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [calculateLength](../android/telephony/gsm/SmsMessage.md))`(`messageBody:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `use7bitOnly:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Calculates the number of SMS's required to encode the message body and the number of characters remaining until the next message, given the current encoding. |
+| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [calculateLength](../android/telephony/gsm/SmsMessage.md))`(`messageBody:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `use7bitOnly:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Calculates the number of SMS's required to encode the message body and the number of characters remaining until the next message, given the current encoding. |
+| openstatic [SmsMessage](../android/telephony/gsm/SmsMessage.md)! | [createFromPdu](../android/telephony/gsm/SmsMessage.md))`(`pdu:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create an SmsMessage from a raw PDU. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayMessageBody](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getDisplayMessageBody())`()` Returns the message body, or email message body if this message was from an email gateway. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayOriginatingAddress](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getDisplayOriginatingAddress())`()` Returns the originating address, or email from address if this message was from an email gateway. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEmailBody](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getEmailBody())`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayMessageBody](../android/telephony/gsm/SmsMessage.md))`()` Returns the message body, or email message body if this message was from an email gateway. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayOriginatingAddress](../android/telephony/gsm/SmsMessage.md))`()` Returns the originating address, or email from address if this message was from an email gateway. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEmailBody](../android/telephony/gsm/SmsMessage.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEmailFrom](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getEmailFrom())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndexOnSim](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getIndexOnSim())`()` Returns the record index of the message on the SIM (1-based index). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessageBody](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getMessageBody())`()` Returns the message body as a String, if it exists and is text based. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEmailFrom](../android/telephony/gsm/SmsMessage.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndexOnSim](../android/telephony/gsm/SmsMessage.md))`()` Returns the record index of the message on the SIM (1-based index). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessageBody](../android/telephony/gsm/SmsMessage.md))`()` Returns the message body as a String, if it exists and is text based. |
 | --- | --- |
-| open [SmsMessage.MessageClass](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage.MessageClass)! | [getMessageClass](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getMessageClass())`()` Returns the class of this message. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginatingAddress](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getOriginatingAddress())`()` Returns the originating address (sender) of this SMS message in String form or null if unavailable |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getPdu())`()` Returns the raw PDU for the message. |
+| open [SmsMessage.MessageClass](../android/telephony/gsm/SmsMessage.MessageClass.md)! | [getMessageClass](../android/telephony/gsm/SmsMessage.md))`()` Returns the class of this message. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginatingAddress](../android/telephony/gsm/SmsMessage.md))`()` Returns the originating address (sender) of this SMS message in String form or null if unavailable |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPdu](../android/telephony/gsm/SmsMessage.md))`()` Returns the raw PDU for the message. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProtocolIdentifier](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getProtocolIdentifier())`()` Get protocol identifier. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPseudoSubject](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getPseudoSubject())`()` Unofficial convention of a subject line enclosed in parens empty string if not present |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceCenterAddress](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getServiceCenterAddress())`()` Returns the address of the SMS service center that relayed this message or null if there is none. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProtocolIdentifier](../android/telephony/gsm/SmsMessage.md))`()` Get protocol identifier. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPseudoSubject](../android/telephony/gsm/SmsMessage.md))`()` Unofficial convention of a subject line enclosed in parens empty string if not present |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceCenterAddress](../android/telephony/gsm/SmsMessage.md))`()` Returns the address of the SMS service center that relayed this message or null if there is none. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getStatus())`()` GSM: For an SMS-STATUS-REPORT message, this returns the status field from the status report. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatusOnSim](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getStatusOnSim())`()` Returns the status of the message on the SIM (read, unread, sent, unsent). |
-| openstatic [SmsMessage.SubmitPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage.SubmitPdu)! | [getSubmitPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getSubmitPdu(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Boolean))`(`scAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `destinationAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `statusReportRequested:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Get an SMS-SUBMIT PDU for a destination address and a message |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](../android/telephony/gsm/SmsMessage.md))`()` GSM: For an SMS-STATUS-REPORT message, this returns the status field from the status report. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatusOnSim](../android/telephony/gsm/SmsMessage.md))`()` Returns the status of the message on the SIM (read, unread, sent, unsent). |
+| openstatic [SmsMessage.SubmitPdu](../android/telephony/gsm/SmsMessage.SubmitPdu.md)! | [getSubmitPdu](../android/telephony/gsm/SmsMessage.md))`(`scAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `destinationAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `statusReportRequested:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Get an SMS-SUBMIT PDU for a destination address and a message |
 | --- | --- |
-| openstatic [SmsMessage.SubmitPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage.SubmitPdu)! | [getSubmitPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getSubmitPdu(kotlin.String,%20kotlin.String,%20kotlin.Short,%20kotlin.ByteArray,%20kotlin.Boolean))`(`scAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `destinationAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `destinationPort:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `statusReportRequested:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Get an SMS-SUBMIT PDU for a data message to a destination address \& port |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTPLayerLengthForPDU](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getTPLayerLengthForPDU(kotlin.String))`(`pdu:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the TP-Layer-Length for the given SMS-SUBMIT PDU Basically, the length in bytes (not hex chars) less the SMSC header |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getTimestampMillis())`()` Returns the service centre timestamp in currentTimeMillis() format |
+| openstatic [SmsMessage.SubmitPdu](../android/telephony/gsm/SmsMessage.SubmitPdu.md)! | [getSubmitPdu](../android/telephony/gsm/SmsMessage.md))`(`scAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `destinationAddress:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `destinationPort:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `statusReportRequested:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Get an SMS-SUBMIT PDU for a data message to a destination address \& port |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTPLayerLengthForPDU](../android/telephony/gsm/SmsMessage.md))`(`pdu:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the TP-Layer-Length for the given SMS-SUBMIT PDU Basically, the length in bytes (not hex chars) less the SMSC header |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](../android/telephony/gsm/SmsMessage.md))`()` Returns the service centre timestamp in currentTimeMillis() format |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getUserData](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#getUserData())`()` returns the user data section minus the user data header if one was present. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCphsMwiMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isCphsMwiMessage())`()` Returns true for CPHS MWI toggle message. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmail](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isEmail())`()` Returns true if message is an email. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getUserData](../android/telephony/gsm/SmsMessage.md))`()` returns the user data section minus the user data header if one was present. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCphsMwiMessage](../android/telephony/gsm/SmsMessage.md))`()` Returns true for CPHS MWI toggle message. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmail](../android/telephony/gsm/SmsMessage.md))`()` Returns true if message is an email. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMWIClearMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isMWIClearMessage())`()` returns true if this message is a CPHS voicemail / message waiting indicator (MWI) clear message |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMWISetMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isMWISetMessage())`()` returns true if this message is a CPHS voicemail / message waiting indicator (MWI) set message |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMwiDontStore](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isMwiDontStore())`()` returns true if this message is a "Message Waiting Indication Group: Discard Message" notification and should not be stored. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMWIClearMessage](../android/telephony/gsm/SmsMessage.md))`()` returns true if this message is a CPHS voicemail / message waiting indicator (MWI) clear message |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMWISetMessage](../android/telephony/gsm/SmsMessage.md))`()` returns true if this message is a CPHS voicemail / message waiting indicator (MWI) set message |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMwiDontStore](../android/telephony/gsm/SmsMessage.md))`()` returns true if this message is a "Message Waiting Indication Group: Discard Message" notification and should not be stored. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReplace](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isReplace())`()` See TS 23. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReplyPathPresent](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isReplyPathPresent())`()` Returns true iff the`TP-Reply-Path`bit is set in this message. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStatusReportMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage#isStatusReportMessage())`()` Return true iff the message is a SMS-STATUS-REPORT message. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReplace](../android/telephony/gsm/SmsMessage.md))`()` See TS 23. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReplyPathPresent](../android/telephony/gsm/SmsMessage.md))`()` Returns true iff the`TP-Reply-Path`bit is set in this message. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStatusReportMessage](../android/telephony/gsm/SmsMessage.md))`()` Return true iff the message is a SMS-STATUS-REPORT message. |
 | --- | --- |
 
 ## Constants
@@ -478,7 +478,7 @@ Get an SMS-SUBMIT PDU for a destination address and a message
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [SmsMessage.SubmitPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage.SubmitPdu)! | a`SubmitPdu`containing the encoded SC address, if applicable, and the encoded message. Returns null on encode error. |
+| [SmsMessage.SubmitPdu](../android/telephony/gsm/SmsMessage.SubmitPdu.md)! | a`SubmitPdu`containing the encoded SC address, if applicable, and the encoded message. Returns null on encode error. |
 
 ### getSubmitPdu
 
@@ -508,7 +508,7 @@ Get an SMS-SUBMIT PDU for a data message to a destination address \& port
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [SmsMessage.SubmitPdu](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage.SubmitPdu)! | a`SubmitPdu`containing the encoded SC address, if applicable, and the encoded message. Returns null on encode error. |
+| [SmsMessage.SubmitPdu](../android/telephony/gsm/SmsMessage.SubmitPdu.md)! | a`SubmitPdu`containing the encoded SC address, if applicable, and the encoded message. Returns null on encode error. |
 
 ### getTPLayerLengthForPDU
 

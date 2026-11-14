@@ -10,15 +10,15 @@ abstract class DateFormat : Format
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format) ||
-| | ↳ | [java.text.DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) |
+| ↳ | [java.text.Format](../java/text/Format.md) ||
+| | ↳ | [java.text.DateFormat](../java/text/DateFormat.md) |
 
-| Known Direct Subclasses [SimpleDateFormat](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat) |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [SimpleDateFormat](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat) | is a concrete class for formatting and parsing dates in a locale-sensitive manner. | |
+| Known Direct Subclasses [SimpleDateFormat](../java/text/SimpleDateFormat.md) |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [SimpleDateFormat](../java/text/SimpleDateFormat.md) | is a concrete class for formatting and parsing dates in a locale-sensitive manner. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-`DateFormat`is an abstract class for date/time formatting subclasses which formats and parses dates or time in a language-independent manner. The date/time formatting subclass, such as [SimpleDateFormat](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat), allows for formatting (i.e., date → text), parsing (text → date), and normalization. The date is represented as a`Date`object or as the milliseconds since January 1, 1970, 00:00:00 GMT.
+`DateFormat`is an abstract class for date/time formatting subclasses which formats and parses dates or time in a language-independent manner. The date/time formatting subclass, such as [SimpleDateFormat](../java/text/SimpleDateFormat.md), allows for formatting (i.e., date → text), parsing (text → date), and normalization. The date is represented as a`Date`object or as the milliseconds since January 1, 1970, 00:00:00 GMT.
 
-`DateFormat`provides many class methods for obtaining default date/time formatters based on the default or a given locale and a number of formatting styles. The formatting styles include [FULL](https://developer.android.com/reference/kotlin/java/text/DateFormat#FULL:kotlin.Int), [LONG](https://developer.android.com/reference/kotlin/java/text/DateFormat#LONG:kotlin.Int), [MEDIUM](https://developer.android.com/reference/kotlin/java/text/DateFormat#MEDIUM:kotlin.Int), and [SHORT](https://developer.android.com/reference/kotlin/java/text/DateFormat#SHORT:kotlin.Int). More detail and examples of using these styles are provided in the method descriptions.
+`DateFormat`provides many class methods for obtaining default date/time formatters based on the default or a given locale and a number of formatting styles. The formatting styles include [FULL](../java/text/DateFormat.md), [LONG](../java/text/DateFormat.md), [MEDIUM](../java/text/DateFormat.md), and [SHORT](../java/text/DateFormat.md). More detail and examples of using these styles are provided in the method descriptions.
 
 `DateFormat`helps you to format and parse dates for any locale. Your code can be completely independent of the locale conventions for months, days of the week, or even the calendar format: lunar vs. solar.
 
@@ -39,7 +39,7 @@ If you are formatting multiple dates, it is more efficient to get the format and
   </code>
 ```
 
-To format a date for a different Locale, specify it in the call to [getDateInstance()](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateInstance(kotlin.Int,%20java.util.Locale)). 
+To format a date for a different Locale, specify it in the call to [getDateInstance()](../java/text/DateFormat.md)). 
 
 ```kotlin
 <code>DateFormat df = DateFormat.getDateInstance(DateFormat.LONG, Locale.FRANCE);
@@ -53,16 +53,16 @@ You can use a DateFormat to parse also.
   </code>
 ```
 
-Use`getDateInstance`to get the normal date format for that country. There are other static factory methods available. Use`getTimeInstance`to get the time format for that country. Use`getDateTimeInstance`to get a date and time format. You can pass in different options to these factory methods to control the length of the result; from [SHORT](https://developer.android.com/reference/kotlin/java/text/DateFormat#SHORT:kotlin.Int) to [MEDIUM](https://developer.android.com/reference/kotlin/java/text/DateFormat#MEDIUM:kotlin.Int) to [LONG](https://developer.android.com/reference/kotlin/java/text/DateFormat#LONG:kotlin.Int) to [FULL](https://developer.android.com/reference/kotlin/java/text/DateFormat#FULL:kotlin.Int). The exact result depends on the locale, but generally:
+Use`getDateInstance`to get the normal date format for that country. There are other static factory methods available. Use`getTimeInstance`to get the time format for that country. Use`getDateTimeInstance`to get a date and time format. You can pass in different options to these factory methods to control the length of the result; from [SHORT](../java/text/DateFormat.md) to [MEDIUM](../java/text/DateFormat.md) to [LONG](../java/text/DateFormat.md) to [FULL](../java/text/DateFormat.md). The exact result depends on the locale, but generally:
 
-- [SHORT](https://developer.android.com/reference/kotlin/java/text/DateFormat#SHORT:kotlin.Int) is completely numeric, such as`12.13.52`or`3:30pm`
-- [MEDIUM](https://developer.android.com/reference/kotlin/java/text/DateFormat#MEDIUM:kotlin.Int) is longer, such as`Jan 12, 1952`
-- [LONG](https://developer.android.com/reference/kotlin/java/text/DateFormat#LONG:kotlin.Int) is longer, such as`January 12, 1952`or`3:30:32pm`
-- [FULL](https://developer.android.com/reference/kotlin/java/text/DateFormat#FULL:kotlin.Int) is pretty completely specified, such as`Tuesday, April 12, 1952 AD or 3:30:42pm PST`.
+- [SHORT](../java/text/DateFormat.md) is completely numeric, such as`12.13.52`or`3:30pm`
+- [MEDIUM](../java/text/DateFormat.md) is longer, such as`Jan 12, 1952`
+- [LONG](../java/text/DateFormat.md) is longer, such as`January 12, 1952`or`3:30:32pm`
+- [FULL](../java/text/DateFormat.md) is pretty completely specified, such as`Tuesday, April 12, 1952 AD or 3:30:42pm PST`.
 
-You can also set the time zone on the format if you wish. If you want even more control over the format or parsing, (or want to give your users more control), you can try casting the`DateFormat`you get from the factory methods to a [SimpleDateFormat](https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat). This will work for the majority of countries; just remember to put it in a`try`block in case you encounter an unusual one.
+You can also set the time zone on the format if you wish. If you want even more control over the format or parsing, (or want to give your users more control), you can try casting the`DateFormat`you get from the factory methods to a [SimpleDateFormat](../java/text/SimpleDateFormat.md). This will work for the majority of countries; just remember to put it in a`try`block in case you encounter an unusual one.
 
-You can also use forms of the parse and format methods with [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition) and [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition) to allow you to
+You can also use forms of the parse and format methods with [ParsePosition](../java/text/ParsePosition.md) and [FieldPosition](../java/text/FieldPosition.md) to allow you to
 
 - progressively parse through pieces of a string.
 - align any particular field, or find out where it is for selection on the screen.
@@ -75,93 +75,93 @@ Date formats are not synchronized. It is recommended to create separate format i
 
 | Nested classes ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Field](https://developer.android.com/reference/kotlin/java/text/DateFormat.Field) Defines constants that are used as attribute keys in the`AttributedCharacterIterator`returned from`DateFormat.formatToCharacterIterator`and as field identifiers in`FieldPosition`. |
+| open | [Field](../java/text/DateFormat.Field.md) Defines constants that are used as attribute keys in the`AttributedCharacterIterator`returned from`DateFormat.formatToCharacterIterator`and as field identifiers in`FieldPosition`. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AM_PM_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#AM_PM_FIELD:kotlin.Int) Useful constant for AM_PM field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATE_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#DATE_FIELD:kotlin.Int) Useful constant for DATE field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_OF_WEEK_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#DAY_OF_WEEK_FIELD:kotlin.Int) Useful constant for DAY_OF_WEEK field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AM_PM_FIELD](../java/text/DateFormat.md) Useful constant for AM_PM field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATE_FIELD](../java/text/DateFormat.md) Useful constant for DATE field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_OF_WEEK_FIELD](../java/text/DateFormat.md) Useful constant for DAY_OF_WEEK field alignment. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_OF_WEEK_IN_MONTH_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#DAY_OF_WEEK_IN_MONTH_FIELD:kotlin.Int) Useful constant for DAY_OF_WEEK_IN_MONTH field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_OF_YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#DAY_OF_YEAR_FIELD:kotlin.Int) Useful constant for DAY_OF_YEAR field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT](https://developer.android.com/reference/kotlin/java/text/DateFormat#DEFAULT:kotlin.Int) Constant for default style pattern. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_OF_WEEK_IN_MONTH_FIELD](../java/text/DateFormat.md) Useful constant for DAY_OF_WEEK_IN_MONTH field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_OF_YEAR_FIELD](../java/text/DateFormat.md) Useful constant for DAY_OF_YEAR field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT](../java/text/DateFormat.md) Constant for default style pattern. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERA_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#ERA_FIELD:kotlin.Int) Useful constant for ERA field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL](https://developer.android.com/reference/kotlin/java/text/DateFormat#FULL:kotlin.Int) Constant for full style pattern. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR0_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#HOUR0_FIELD:kotlin.Int) Useful constant for zero-based HOUR field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERA_FIELD](../java/text/DateFormat.md) Useful constant for ERA field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL](../java/text/DateFormat.md) Constant for full style pattern. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR0_FIELD](../java/text/DateFormat.md) Useful constant for zero-based HOUR field alignment. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR1_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#HOUR1_FIELD:kotlin.Int) Useful constant for one-based HOUR field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR_OF_DAY0_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#HOUR_OF_DAY0_FIELD:kotlin.Int) Useful constant for zero-based HOUR_OF_DAY field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR_OF_DAY1_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#HOUR_OF_DAY1_FIELD:kotlin.Int) Useful constant for one-based HOUR_OF_DAY field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR1_FIELD](../java/text/DateFormat.md) Useful constant for one-based HOUR field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR_OF_DAY0_FIELD](../java/text/DateFormat.md) Useful constant for zero-based HOUR_OF_DAY field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOUR_OF_DAY1_FIELD](../java/text/DateFormat.md) Useful constant for one-based HOUR_OF_DAY field alignment. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONG](https://developer.android.com/reference/kotlin/java/text/DateFormat#LONG:kotlin.Int) Constant for long style pattern. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIUM](https://developer.android.com/reference/kotlin/java/text/DateFormat#MEDIUM:kotlin.Int) Constant for medium style pattern. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MILLISECOND_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#MILLISECOND_FIELD:kotlin.Int) Useful constant for MILLISECOND field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONG](../java/text/DateFormat.md) Constant for long style pattern. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIUM](../java/text/DateFormat.md) Constant for medium style pattern. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MILLISECOND_FIELD](../java/text/DateFormat.md) Useful constant for MILLISECOND field alignment. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MINUTE_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#MINUTE_FIELD:kotlin.Int) Useful constant for MINUTE field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONTH_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#MONTH_FIELD:kotlin.Int) Useful constant for MONTH field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECOND_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#SECOND_FIELD:kotlin.Int) Useful constant for SECOND field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MINUTE_FIELD](../java/text/DateFormat.md) Useful constant for MINUTE field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONTH_FIELD](../java/text/DateFormat.md) Useful constant for MONTH field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECOND_FIELD](../java/text/DateFormat.md) Useful constant for SECOND field alignment. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT](https://developer.android.com/reference/kotlin/java/text/DateFormat#SHORT:kotlin.Int) Constant for short style pattern. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMEZONE_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#TIMEZONE_FIELD:kotlin.Int) Useful constant for TIMEZONE field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEEK_OF_MONTH_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#WEEK_OF_MONTH_FIELD:kotlin.Int) Useful constant for WEEK_OF_MONTH field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT](../java/text/DateFormat.md) Constant for short style pattern. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMEZONE_FIELD](../java/text/DateFormat.md) Useful constant for TIMEZONE field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEEK_OF_MONTH_FIELD](../java/text/DateFormat.md) Useful constant for WEEK_OF_MONTH field alignment. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEEK_OF_YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#WEEK_OF_YEAR_FIELD:kotlin.Int) Useful constant for WEEK_OF_YEAR field alignment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#YEAR_FIELD:kotlin.Int) Useful constant for YEAR field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEEK_OF_YEAR_FIELD](../java/text/DateFormat.md) Useful constant for WEEK_OF_YEAR field alignment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YEAR_FIELD](../java/text/DateFormat.md) Useful constant for YEAR field alignment. |
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------|---|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#DateFormat())`()` Create a new date format. |
+| [DateFormat](../java/text/DateFormat.md))`()` Create a new date format. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/DateFormat#clone())`()` Overrides Cloneable |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/DateFormat#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
-| [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/DateFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `fieldPosition:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Formats the given`Object`into a date-time string. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/DateFormat.md))`()` Overrides Cloneable |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/DateFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
+| [StringBuffer](../java/lang/StringBuffer.md) | [format](../java/text/DateFormat.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)`, `fieldPosition:` ` [FieldPosition](../java/text/FieldPosition.md)`)` Formats the given`Object`into a date-time string. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](https://developer.android.com/reference/kotlin/java/text/DateFormat#format(java.util.Date))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)`)` Formats a [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) into a date-time string. |
-| abstract [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [format](https://developer.android.com/reference/kotlin/java/text/DateFormat#format(java.util.Date,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(`date:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)`, `toAppendTo:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `fieldPosition:` ` [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition)`)` Formats a [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) into a date-time string. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\> | [getAvailableLocales](https://developer.android.com/reference/kotlin/java/text/DateFormat#getAvailableLocales())`()` Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](../java/text/DateFormat.md))`(`date:` ` [Date](../java/util/Date.md)`)` Formats a [Date](../java/util/Date.md) into a date-time string. |
+| abstract [StringBuffer](../java/lang/StringBuffer.md) | [format](../java/text/DateFormat.md))`(`date:` ` [Date](../java/util/Date.md)`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)`, `fieldPosition:` ` [FieldPosition](../java/text/FieldPosition.md)`)` Formats a [Date](../java/util/Date.md) into a date-time string. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\> | [getAvailableLocales](../java/text/DateFormat.md))`()` Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. |
 | --- | --- |
-| open [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#) | [getCalendar](https://developer.android.com/reference/kotlin/java/text/DateFormat#getCalendar())`()` Gets the calendar associated with this date/time formatter. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getDateInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateInstance())`()` Gets the date formatter with the default formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getDateInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateInstance(kotlin.Int))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the date formatter with the given formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
+| open [Calendar](../java/util/Calendar.md) | [getCalendar](../java/text/DateFormat.md))`()` Gets the calendar associated with this date/time formatter. |
+| static [DateFormat](../java/text/DateFormat.md) | [getDateInstance](../java/text/DateFormat.md))`()` Gets the date formatter with the default formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getDateInstance](../java/text/DateFormat.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the date formatter with the given formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getDateInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateInstance(kotlin.Int,%20java.util.Locale))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `aLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Gets the date formatter with the given formatting style for the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getDateTimeInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateTimeInstance())`()` Gets the date/time formatter with the default formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getDateTimeInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int))`(`dateStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the date/time formatter with the given date and time formatting styles for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getDateInstance](../java/text/DateFormat.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `aLocale:` ` [Locale](../java/util/Locale.md)`)` Gets the date formatter with the given formatting style for the given locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getDateTimeInstance](../java/text/DateFormat.md))`()` Gets the date/time formatter with the default formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getDateTimeInstance](../java/text/DateFormat.md))`(`dateStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the date/time formatter with the given date and time formatting styles for the default [FORMAT](../java/util/Locale.Category.md) locale. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getDateTimeInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int,%20java.util.Locale))`(`dateStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `aLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Gets the date/time formatter with the given formatting styles for the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getInstance())`()` Get a default date/time formatter that uses the SHORT style for both the date and the time. |
-| open [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat) | [getNumberFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#getNumberFormat())`()` Gets the number formatter which this date/time formatter uses to format and parse a time. |
+| static [DateFormat](../java/text/DateFormat.md) | [getDateTimeInstance](../java/text/DateFormat.md))`(`dateStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `aLocale:` ` [Locale](../java/util/Locale.md)`)` Gets the date/time formatter with the given formatting styles for the given locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getInstance](../java/text/DateFormat.md))`()` Get a default date/time formatter that uses the SHORT style for both the date and the time. |
+| open [NumberFormat](../java/text/NumberFormat.md) | [getNumberFormat](../java/text/DateFormat.md))`()` Gets the number formatter which this date/time formatter uses to format and parse a time. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getTimeInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getTimeInstance())`()` Gets the time formatter with the default formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getTimeInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getTimeInstance(kotlin.Int))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the time formatter with the given formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | [getTimeInstance](https://developer.android.com/reference/kotlin/java/text/DateFormat#getTimeInstance(kotlin.Int,%20java.util.Locale))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `aLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Gets the time formatter with the given formatting style for the given locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getTimeInstance](../java/text/DateFormat.md))`()` Gets the time formatter with the default formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getTimeInstance](../java/text/DateFormat.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the time formatter with the given formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| static [DateFormat](../java/text/DateFormat.md) | [getTimeInstance](../java/text/DateFormat.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `aLocale:` ` [Locale](../java/util/Locale.md)`)` Gets the time formatter with the given formatting style for the given locale. |
 | --- | --- |
-| open [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#) | [getTimeZone](https://developer.android.com/reference/kotlin/java/text/DateFormat#getTimeZone())`()` Gets the time zone. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/DateFormat#hashCode())`()` Overrides hashCode |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLenient](https://developer.android.com/reference/kotlin/java/text/DateFormat#isLenient())`()` Tell whether date/time parsing is to be lenient. |
+| open [TimeZone](../java/util/TimeZone.md) | [getTimeZone](../java/text/DateFormat.md))`()` Gets the time zone. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/text/DateFormat.md))`()` Overrides hashCode |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLenient](../java/text/DateFormat.md))`()` Tell whether date/time parsing is to be lenient. |
 | --- | --- |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [parse](https://developer.android.com/reference/kotlin/java/text/DateFormat#parse(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses text from the beginning of the given string to produce a date. |
-| abstract [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | [parse](https://developer.android.com/reference/kotlin/java/text/DateFormat#parse(kotlin.String,%20java.text.ParsePosition))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition)`)` Parse a date/time string according to the given parse position. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [parseObject](https://developer.android.com/reference/kotlin/java/text/DateFormat#parseObject(kotlin.String,%20java.text.ParsePosition))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition)`)` Parses text from a string to produce a`Date`. |
+| open [Date](../java/util/Date.md)? | [parse](../java/text/DateFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses text from the beginning of the given string to produce a date. |
+| abstract [Date](../java/util/Date.md)? | [parse](../java/text/DateFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)`)` Parse a date/time string according to the given parse position. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [parseObject](../java/text/DateFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)`)` Parses text from a string to produce a`Date`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCalendar](https://developer.android.com/reference/kotlin/java/text/DateFormat#setCalendar(java.util.Calendar))`(`newCalendar:` ` [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#)`)` Set the calendar to be used by this date format. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLenient](https://developer.android.com/reference/kotlin/java/text/DateFormat#setLenient(kotlin.Boolean))`(`lenient:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specify whether or not date/time parsing is to be lenient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNumberFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#setNumberFormat(java.text.NumberFormat))`(`newNumberFormat:` ` [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat)`)` Allows you to set the number formatter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCalendar](../java/text/DateFormat.md))`(`newCalendar:` ` [Calendar](../java/util/Calendar.md)`)` Set the calendar to be used by this date format. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLenient](../java/text/DateFormat.md))`(`lenient:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specify whether or not date/time parsing is to be lenient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNumberFormat](../java/text/DateFormat.md))`(`newNumberFormat:` ` [NumberFormat](../java/text/NumberFormat.md)`)` Allows you to set the number formatter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeZone](https://developer.android.com/reference/kotlin/java/text/DateFormat#setTimeZone(java.util.TimeZone))`(`zone:` ` [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#)`)` Sets the time zone for the calendar of this`DateFormat`object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeZone](../java/text/DateFormat.md))`(`zone:` ` [TimeZone](../java/util/TimeZone.md)`)` Sets the time zone for the calendar of this`DateFormat`object. |
 
 | Inherited functions ||
 |---|---|
-| From class [Format](https://developer.android.com/reference/kotlin/java/text/Format) |----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/text/Format#format(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an object to produce a string. This is equivalent to [format](https://developer.android.com/reference/kotlin/java/text/Format#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition))`(obj, new StringBuffer(), new FieldPosition(0)).toString();` <br /> | | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | [formatToCharacterIterator](https://developer.android.com/reference/kotlin/java/text/Format#formatToCharacterIterator(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an Object producing an`AttributedCharacterIterator`. You can use the returned`AttributedCharacterIterator`to build the resulting String, as well as to determine information about the resulting String. Each attribute key of the AttributedCharacterIterator will be of type`Field`. It is up to each`Format`implementation to define what the legal values are for each attribute in the`AttributedCharacterIterator`, but typically the attribute key is also used as the attribute value. The default implementation creates an`AttributedCharacterIterator`with no attributes. Subclasses that support fields should override this and create an`AttributedCharacterIterator`with meaningful attributes. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](https://developer.android.com/reference/kotlin/java/text/Format#parseObject(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Parses text from the beginning of the given string to produce an object. The method may not use the entire text of the given string. <br /> | ||
+| From class [Format](../java/text/Format.md) |----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an object to produce a string. This is equivalent to [format](../java/text/Format.md))`(obj, new StringBuffer(), new FieldPosition(0)).toString();` <br /> | | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an Object producing an`AttributedCharacterIterator`. You can use the returned`AttributedCharacterIterator`to build the resulting String, as well as to determine information about the resulting String. Each attribute key of the AttributedCharacterIterator will be of type`Field`. It is up to each`Format`implementation to define what the legal values are for each attribute in the`AttributedCharacterIterator`, but typically the attribute key is also used as the attribute value. The default implementation creates an`AttributedCharacterIterator`with no attributes. Subclasses that support fields should override this and create an`AttributedCharacterIterator`with meaningful attributes. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../java/text/Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Parses text from the beginning of the given string to produce an object. The method may not use the entire text of the given string. <br /> | ||
 
 | Properties ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#) | [calendar](https://developer.android.com/reference/kotlin/java/text/DateFormat#calendar:java.util.Calendar) The [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#) instance used for calculating the date-time fields and the instant of time. |
-| [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat) | [numberFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#numberFormat:java.text.NumberFormat) The number formatter that`DateFormat`uses to format numbers in dates and times. |
+| [Calendar](../java/util/Calendar.md) | [calendar](../java/text/DateFormat.md) The [Calendar](../java/util/Calendar.md) instance used for calculating the date-time fields and the instant of time. |
+| [NumberFormat](../java/text/NumberFormat.md) | [numberFormat](../java/text/DateFormat.md) The number formatter that`DateFormat`uses to format numbers in dates and times. |
 
 ## Constants
 
@@ -507,15 +507,15 @@ Formats the given`Object`into a date-time string. The formatted string is append
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html):Must be a`Date`or a`Number`representing a millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar.html#Epoch). |
-| `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):The string buffer for the returning date-time string. |
+| `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html):Must be a`Date`or a`Number`representing a millisecond offset from the [Epoch](../java/util/Calendar.md). |
+| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md):The string buffer for the returning date-time string. |
 | `pos` | A`FieldPosition`identifying a field in the formatted text |
 | --- | --- |
-| `fieldPosition` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition):keeps track on the position of the field within the returned string. For example, given a date-time text`"1996.07.10 AD at 15:08:56 PDT"`, if the given`fieldPosition`is [DateFormat.YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#YEAR_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 4, respectively. Notice that if the same date-time field appears more than once in a pattern, the`fieldPosition`will be set for the first occurrence of that date-time field. For instance, formatting a`Date`to the date-time string`"1 PM PDT (Pacific Daylight Time)"`using the pattern`"h a z (zzzz)"`and the alignment field [DateFormat.TIMEZONE_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#TIMEZONE_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character`'z'`. |
+| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md):keeps track on the position of the field within the returned string. For example, given a date-time text`"1996.07.10 AD at 15:08:56 PDT"`, if the given`fieldPosition`is [DateFormat.YEAR_FIELD](../java/text/DateFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 4, respectively. Notice that if the same date-time field appears more than once in a pattern, the`fieldPosition`will be set for the first occurrence of that date-time field. For instance, formatting a`Date`to the date-time string`"1 PM PDT (Pacific Daylight Time)"`using the pattern`"h a z (zzzz)"`and the alignment field [DateFormat.TIMEZONE_FIELD](../java/text/DateFormat.md), the begin index and end index of`fieldPosition`will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character`'z'`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | the string buffer passed in as`toAppendTo`, with formatted text appended. |
+| [StringBuffer](../java/lang/StringBuffer.md) | the string buffer passed in as`toAppendTo`, with formatted text appended. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------|
@@ -524,7 +524,7 @@ Formats the given`Object`into a date-time string. The formatted string is append
 
 **See Also**
 
-- [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format) 
+- [java.text.Format](../java/text/Format.md) 
 
 ### format
 
@@ -534,11 +534,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun format(date: Date): String
 ```
 
-Formats a [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) into a date-time string.
+Formats a [Date](../java/util/Date.md) into a date-time string.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#):the time value to be formatted into a date-time string. |
+| `date` | [Date](../java/util/Date.md):the time value to be formatted into a date-time string. |
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------|
@@ -556,18 +556,18 @@ abstract fun format(
 ): StringBuffer
 ```
 
-Formats a [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) into a date-time string. The formatted string is appended to the given`StringBuffer`.
+Formats a [Date](../java/util/Date.md) into a date-time string. The formatted string is appended to the given`StringBuffer`.
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#):a Date to be formatted into a date-time string. |
-| `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):the string buffer for the returning date-time string. |
-| `fieldPosition` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition):keeps track on the position of the field within the returned string. For example, given a date-time text`"1996.07.10 AD at 15:08:56 PDT"`, if the given`fieldPosition`is [DateFormat.YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#YEAR_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 0 and 4, respectively. Notice that if the same date-time field appears more than once in a pattern, the`fieldPosition`will be set for the first occurrence of that date-time field. For instance, formatting a`Date`to the date-time string`"1 PM PDT (Pacific Daylight Time)"`using the pattern`"h a z (zzzz)"`and the alignment field [DateFormat.TIMEZONE_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#TIMEZONE_FIELD:kotlin.Int), the begin index and end index of`fieldPosition`will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character`'z'`. |
+| `date` | [Date](../java/util/Date.md):a Date to be formatted into a date-time string. |
+| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md):the string buffer for the returning date-time string. |
+| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md):keeps track on the position of the field within the returned string. For example, given a date-time text`"1996.07.10 AD at 15:08:56 PDT"`, if the given`fieldPosition`is [DateFormat.YEAR_FIELD](../java/text/DateFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 4, respectively. Notice that if the same date-time field appears more than once in a pattern, the`fieldPosition`will be set for the first occurrence of that date-time field. For instance, formatting a`Date`to the date-time string`"1 PM PDT (Pacific Daylight Time)"`using the pattern`"h a z (zzzz)"`and the alignment field [DateFormat.TIMEZONE_FIELD](../java/text/DateFormat.md), the begin index and end index of`fieldPosition`will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character`'z'`. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | the string buffer passed in as`toAppendTo`, with formatted text appended. |
+| [StringBuffer](../java/lang/StringBuffer.md) | the string buffer passed in as`toAppendTo`, with formatted text appended. |
 
 ### getAvailableLocales
 
@@ -577,11 +577,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getAvailableLocales(): Array<Locale!>
 ```
 
-Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. It must contain at least a`Locale`instance equal to [Locale.US](https://developer.android.com/reference/kotlin/java/util/Locale.html#US:java.util.Locale).
+Returns an array of all locales for which the`get*Instance`methods of this class can return localized instances. It must contain at least a`Locale`instance equal to [Locale.US](../java/util/Locale.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!> | An array of locales for which localized`DateFormat`instances are available. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!> | An array of locales for which localized`DateFormat`instances are available. |
 
 ### getCalendar
 
@@ -595,7 +595,7 @@ Gets the calendar associated with this date/time formatter.
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#) | the calendar associated with this date/time formatter. |
+| [Calendar](../java/util/Calendar.md) | the calendar associated with this date/time formatter. |
 
 ### getDateInstance
 
@@ -605,18 +605,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getDateInstance(): DateFormat
 ```
 
-Gets the date formatter with the default formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale.
+Gets the date formatter with the default formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale.
 
-This is equivalent to calling [getDateInstance(DEFAULT,](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateInstance(kotlin.Int,%20java.util.Locale)).
+This is equivalent to calling [getDateInstance(DEFAULT,](../java/text/DateFormat.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a date formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a date formatter. |
 
 **See Also**
 
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### getDateInstance
 
@@ -626,9 +626,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getDateInstance(style: Int): DateFormat
 ```
 
-Gets the date formatter with the given formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale.
+Gets the date formatter with the given formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale.
 
-This is equivalent to calling [getDateInstance(style,](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateInstance(kotlin.Int,%20java.util.Locale)).
+This is equivalent to calling [getDateInstance(style,](../java/text/DateFormat.md)).
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -636,12 +636,12 @@ This is equivalent to calling [getDateInstance(style,](https://developer.android
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a date formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a date formatter. |
 
 **See Also**
 
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### getDateInstance
 
@@ -659,11 +659,11 @@ Gets the date formatter with the given formatting style for the given locale.
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the given formatting style. For example, SHORT for "M/d/yy" in the US locale. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#):the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md):the given locale. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a date formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a date formatter. |
 
 ### getDateTimeInstance
 
@@ -673,18 +673,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getDateTimeInstance(): DateFormat
 ```
 
-Gets the date/time formatter with the default formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale.
+Gets the date/time formatter with the default formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale.
 
-This is equivalent to calling [getDateTimeInstance(DEFAULT,](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int,%20java.util.Locale)).
+This is equivalent to calling [getDateTimeInstance(DEFAULT,](../java/text/DateFormat.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a date/time formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a date/time formatter. |
 
 **See Also**
 
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### getDateTimeInstance
 
@@ -697,9 +697,9 @@ static fun getDateTimeInstance(
 ): DateFormat
 ```
 
-Gets the date/time formatter with the given date and time formatting styles for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale.
+Gets the date/time formatter with the given date and time formatting styles for the default [FORMAT](../java/util/Locale.Category.md) locale.
 
-This is equivalent to calling [getDateTimeInstance(dateStyle,](https://developer.android.com/reference/kotlin/java/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int,%20java.util.Locale)).
+This is equivalent to calling [getDateTimeInstance(dateStyle,](../java/text/DateFormat.md)).
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -708,12 +708,12 @@ This is equivalent to calling [getDateTimeInstance(dateStyle,](https://developer
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a date/time formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a date/time formatter. |
 
 **See Also**
 
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### getDateTimeInstance
 
@@ -733,12 +733,12 @@ Gets the date/time formatter with the given formatting styles for the given loca
 |-------------|-------------------------------------------------------------------------------------------------------------|
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the given date formatting style. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the given time formatting style. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#):the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md):the given locale. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a date/time formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a date/time formatter. |
 
 ### getInstance
 
@@ -752,7 +752,7 @@ Get a default date/time formatter that uses the SHORT style for both the date an
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a date/time formatter |
+| [DateFormat](../java/text/DateFormat.md) | a date/time formatter |
 
 ### getNumberFormat
 
@@ -766,7 +766,7 @@ Gets the number formatter which this date/time formatter uses to format and pars
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat) | the number formatter which this date/time formatter uses. |
+| [NumberFormat](../java/text/NumberFormat.md) | the number formatter which this date/time formatter uses. |
 
 ### getTimeInstance
 
@@ -776,18 +776,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getTimeInstance(): DateFormat
 ```
 
-Gets the time formatter with the default formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale.
+Gets the time formatter with the default formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale.
 
-This is equivalent to calling [getTimeInstance(DEFAULT,](https://developer.android.com/reference/kotlin/java/text/DateFormat#getTimeInstance(kotlin.Int,%20java.util.Locale)).
+This is equivalent to calling [getTimeInstance(DEFAULT,](../java/text/DateFormat.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a time formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a time formatter. |
 
 **See Also**
 
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### getTimeInstance
 
@@ -797,9 +797,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getTimeInstance(style: Int): DateFormat
 ```
 
-Gets the time formatter with the given formatting style for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale.
+Gets the time formatter with the given formatting style for the default [FORMAT](../java/util/Locale.Category.md) locale.
 
-This is equivalent to calling [getTimeInstance(style,](https://developer.android.com/reference/kotlin/java/text/DateFormat#getTimeInstance(kotlin.Int,%20java.util.Locale)).
+This is equivalent to calling [getTimeInstance(style,](../java/text/DateFormat.md)).
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -807,12 +807,12 @@ This is equivalent to calling [getTimeInstance(style,](https://developer.android
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a time formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a time formatter. |
 
 **See Also**
 
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### getTimeInstance
 
@@ -830,11 +830,11 @@ Gets the time formatter with the given formatting style for the given locale.
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the given formatting style. For example, SHORT for "h:mm a" in the US locale. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#):the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md):the given locale. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------|
-| [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat#) | a time formatter. |
+| [DateFormat](../java/text/DateFormat.md) | a time formatter. |
 
 ### getTimeZone
 
@@ -855,7 +855,7 @@ Gets the time zone. This method is equivalent to the following call.
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#) | the time zone associated with the calendar of DateFormat. |
+| [TimeZone](../java/util/TimeZone.md) | the time zone associated with the calendar of DateFormat. |
 
 ### hashCode
 
@@ -890,11 +890,11 @@ Tell whether date/time parsing is to be lenient. This method is equivalent to th
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the [calendar](https://developer.android.com/reference/kotlin/java/text/DateFormat#calendar:java.util.Calendar) is lenient;`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the [calendar](../java/text/DateFormat.md) is lenient;`false`otherwise. |
 
 **See Also**
 
-- [java.util.Calendar#isLenient()](https://developer.android.com/reference/kotlin/java/util/Calendar.html#isLenient()) 
+- [java.util.Calendar#isLenient()](../java/util/Calendar.md)) 
 
 ### parse
 
@@ -906,9 +906,9 @@ open fun parse(source: String): Date?
 
 Parses text from the beginning of the given string to produce a date. The method may not use the entire text of the given string.
 
-See the [parse(java.lang.String,java.text.ParsePosition)](https://developer.android.com/reference/kotlin/java/text/DateFormat#parse(kotlin.String,%20java.text.ParsePosition))method for more information on date parsing.
+See the [parse(java.lang.String,java.text.ParsePosition)](../java/text/DateFormat.md))method for more information on date parsing.
 
-**WARNING:** Don't use this method to deserialize a date. The underlying localized date/time format and parsing behaviors can change across Android versions as common usage in the locale changes. Consider using`long`type for storing a timestamp or [java.time.format.DateTimeFormatter#ISO_INSTANT](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter.html#ISO_INSTANT:java.time.format.DateTimeFormatter) for deserializing the ISO-8601 instant format.
+**WARNING:** Don't use this method to deserialize a date. The underlying localized date/time format and parsing behaviors can change across Android versions as common usage in the locale changes. Consider using`long`type for storing a timestamp or [java.time.format.DateTimeFormatter#ISO_INSTANT](../java/time/format/DateTimeFormatter.md) for deserializing the ISO-8601 instant format.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -916,7 +916,7 @@ See the [parse(java.lang.String,java.text.ParsePosition)](https://developer.andr
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------|
-| [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | A`Date`parsed from the string. |
+| [Date](../java/util/Date.md)? | A`Date`parsed from the string. |
 
 | Exceptions ||
 |----------------------------|------------------------------------------------------------|
@@ -935,20 +935,20 @@ abstract fun parse(
 
 Parse a date/time string according to the given parse position. For example, a time text`"07/10/96 4:5 PM, PDT"`will be parsed into a`Date`that is equivalent to`Date(837039900000L)`.
 
-By default, parsing is lenient: If the input is not in the form used by this object's format method but can still be parsed as a date, then the parse succeeds. Clients may insist on strict adherence to the format by calling [setLenient(false)](https://developer.android.com/reference/kotlin/java/text/DateFormat#setLenient(kotlin.Boolean)).
+By default, parsing is lenient: If the input is not in the form used by this object's format method but can still be parsed as a date, then the parse succeeds. Clients may insist on strict adherence to the format by calling [setLenient(false)](../java/text/DateFormat.md)).
 
-**WARNING:** Don't use this method to deserialize a date. The underlying localized date/time format and parsing behaviors can change across Android versions as common usage in the locale changes. Consider using`long`type for storing a timestamp or [java.time.format.DateTimeFormatter#ISO_INSTANT](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter.html#ISO_INSTANT:java.time.format.DateTimeFormatter) for deserializing the ISO-8601 instant format.
+**WARNING:** Don't use this method to deserialize a date. The underlying localized date/time format and parsing behaviors can change across Android versions as common usage in the locale changes. Consider using`long`type for storing a timestamp or [java.time.format.DateTimeFormatter#ISO_INSTANT](../java/time/format/DateTimeFormatter.md) for deserializing the ISO-8601 instant format.
 
-This parsing operation uses the [calendar](https://developer.android.com/reference/kotlin/java/text/DateFormat#calendar:java.util.Calendar) to produce a`Date`. As a result, the`calendar`'s date-time fields and the`TimeZone`value may have been overwritten, depending on subclass implementations. Any`TimeZone`value that has previously been set by a call to [setTimeZone](https://developer.android.com/reference/kotlin/java/text/DateFormat#setTimeZone(java.util.TimeZone))may need to be restored for further operations.
+This parsing operation uses the [calendar](../java/text/DateFormat.md) to produce a`Date`. As a result, the`calendar`'s date-time fields and the`TimeZone`value may have been overwritten, depending on subclass implementations. Any`TimeZone`value that has previously been set by a call to [setTimeZone](../java/text/DateFormat.md))may need to be restored for further operations.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The date/time string to be parsed |
-| `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition):On input, the position at which to start parsing; on output, the position at which parsing terminated, or the start position if the parse failed. |
+| `pos` | [ParsePosition](../java/text/ParsePosition.md):On input, the position at which to start parsing; on output, the position at which parsing terminated, or the start position if the parse failed. |
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------------|
-| [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)? | A`Date`, or`null`if the input could not be parsed |
+| [Date](../java/util/Date.md)? | A`Date`, or`null`if the input could not be parsed |
 
 ### parseObject
 
@@ -965,12 +965,12 @@ Parses text from a string to produce a`Date`.
 
 The method attempts to parse text starting at the index given by`pos`. If parsing succeeds, then the index of`pos`is updated to the index after the last character used (parsing does not necessarily use all characters up to the end of the string), and the parsed date is returned. The updated`pos`can be used to indicate the starting point for the next call to this method. If an error occurs, then the index of`pos`is not changed, the error index of`pos`is set to the index of the character where the error occurred, and null is returned.
 
-See the [parse(java.lang.String,java.text.ParsePosition)](https://developer.android.com/reference/kotlin/java/text/DateFormat#parse(kotlin.String,%20java.text.ParsePosition))method for more information on date parsing.
+See the [parse(java.lang.String,java.text.ParsePosition)](../java/text/DateFormat.md))method for more information on date parsing.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):A`String`, part of which should be parsed. |
-| `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition):A`ParsePosition`object with index and error index information as described above. |
+| `pos` | [ParsePosition](../java/text/ParsePosition.md):A`ParsePosition`object with index and error index information as described above. |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -990,11 +990,11 @@ open fun setCalendar(newCalendar: Calendar): Unit
 
 Set the calendar to be used by this date format. Initially, the default calendar for the specified or default locale is used.
 
-Any [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#) and [leniency](https://developer.android.com/reference/kotlin/java/text/DateFormat#isLenient())values that have previously been set are overwritten by`newCalendar`'s values.
+Any [TimeZone](../java/util/TimeZone.md) and [leniency](../java/text/DateFormat.md))values that have previously been set are overwritten by`newCalendar`'s values.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `newCalendar` | [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#):the new`Calendar`to be used by the date format |
+| `newCalendar` | [Calendar](../java/util/Calendar.md):the new`Calendar`to be used by the date format |
 
 ### setLenient
 
@@ -1013,7 +1013,7 @@ This method is equivalent to the following call.
   </code>
 ```
 
-This leniency value is overwritten by a call to [setCalendar()](https://developer.android.com/reference/kotlin/java/text/DateFormat#setCalendar(java.util.Calendar)).
+This leniency value is overwritten by a call to [setCalendar()](../java/text/DateFormat.md)).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------|
@@ -1021,7 +1021,7 @@ This leniency value is overwritten by a call to [setCalendar()](https://develope
 
 **See Also**
 
-- [java.util.Calendar#setLenient(boolean)](https://developer.android.com/reference/kotlin/java/util/Calendar.html#setLenient(kotlin.Boolean)) 
+- [java.util.Calendar#setLenient(boolean)](../java/util/Calendar.md)) 
 
 ### setNumberFormat
 
@@ -1035,7 +1035,7 @@ Allows you to set the number formatter.
 
 | Parameters ||
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
-| `newNumberFormat` | [NumberFormat](https://developer.android.com/reference/kotlin/java/text/NumberFormat):the given new NumberFormat. |
+| `newNumberFormat` | [NumberFormat](../java/text/NumberFormat.md):the given new NumberFormat. |
 
 ### setTimeZone
 
@@ -1054,13 +1054,13 @@ Sets the time zone for the calendar of this`DateFormat`object. This method is eq
 
 <br />
 
-The`TimeZone`set by this method is overwritten by a [setCalendar](https://developer.android.com/reference/kotlin/java/text/DateFormat#setCalendar(java.util.Calendar))call.
+The`TimeZone`set by this method is overwritten by a [setCalendar](../java/text/DateFormat.md))call.
 
 The`TimeZone`set by this method may be overwritten as a result of a call to the parse method.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#):the given new time zone. |
+| `zone` | [TimeZone](../java/util/TimeZone.md):the given new time zone. |
 
 ## Properties
 
@@ -1072,9 +1072,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected var calendar: Calendar
 ```
 
-The [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#) instance used for calculating the date-time fields and the instant of time. This field is used for both formatting and parsing.
+The [Calendar](../java/util/Calendar.md) instance used for calculating the date-time fields and the instant of time. This field is used for both formatting and parsing.
 
-Subclasses should initialize this field to a [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar.html#) appropriate for the [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) associated with this`DateFormat`. 
+Subclasses should initialize this field to a [Calendar](../java/util/Calendar.md) appropriate for the [Locale](../java/util/Locale.md) associated with this`DateFormat`. 
 
 ### numberFormat
 

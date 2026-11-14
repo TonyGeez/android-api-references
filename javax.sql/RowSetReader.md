@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface RowSetReader
 ```
 
-| [javax.sql.RowSetReader](https://developer.android.com/reference/kotlin/javax/sql/RowSetReader#) |
+| [javax.sql.RowSetReader](../javax/sql/RowSetReader.md) |
 
 The facility that a disconnected`RowSet`object calls on to populate itself with rows of data. A reader (an object implementing the`RowSetReader`interface) may be registered with a`RowSet`object that supports the reader/writer paradigm. When the`RowSet`object's`execute`method is called, it in turn calls the reader's`readData`method.
 
@@ -16,7 +16,7 @@ The facility that a disconnected`RowSet`object calls on to populate itself with 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readData](https://developer.android.com/reference/kotlin/javax/sql/RowSetReader#readData(javax.sql.RowSetInternal))`(`caller:` ` [RowSetInternal](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal)!`)` Reads the new contents of the calling`RowSet`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readData](../javax/sql/RowSetReader.md))`(`caller:` ` [RowSetInternal](../javax/sql/RowSetInternal.md)!`)` Reads the new contents of the calling`RowSet`object. |
 
 ## Public methods
 
@@ -34,7 +34,7 @@ The`readData`method adds rows to the caller. It can be implemented in a wide var
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caller` | [RowSetInternal](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal)!:the`RowSet`object (1) that has implemented the`RowSetInternal`interface, (2) with which this reader is registered, and (3) whose`execute`method called this reader |
+| `caller` | [RowSetInternal](../javax/sql/RowSetInternal.md)!:the`RowSet`object (1) that has implemented the`RowSetInternal`interface, (2) with which this reader is registered, and (3) whose`execute`method called this reader |
 
 | Exceptions ||
 |-------------------------|------------------------------------------------------------------------------------|

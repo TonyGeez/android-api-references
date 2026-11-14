@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # WebHistoryItem
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebHistoryItem "View this page in Java") 
+Kotlin| [Java](../android/webkit/WebHistoryItem.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class WebHistoryItem : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#) |
+| ↳ | [android.webkit.WebHistoryItem](../android/webkit/WebHistoryItem.md) |
 
 A convenience class for accessing fields in an entry in the back/forward list of a WebView. Each WebHistoryItem is a snapshot of the requested history item.
 
@@ -21,19 +21,19 @@ A convenience class for accessing fields in an entry in the back/forward list of
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------|---|
-| [WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#WebHistoryItem())`()` <br /> |
+| [WebHistoryItem](../android/webkit/WebHistoryItem.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | [getFavicon](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getFavicon())`()` Return the favicon of this history item or`null`if no favicon was found. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginalUrl](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getOriginalUrl())`()` Return the original url of this history item. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getTitle())`()` Return the document title of this history item. |
+| abstract [Bitmap](../android/graphics/Bitmap.md)? | [getFavicon](../android/webkit/WebHistoryItem.md))`()` Return the favicon of this history item or`null`if no favicon was found. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginalUrl](../android/webkit/WebHistoryItem.md))`()` Return the original url of this history item. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](../android/webkit/WebHistoryItem.md))`()` Return the document title of this history item. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUrl](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#getUrl())`()` Return the url of this history item. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUrl](../android/webkit/WebHistoryItem.md))`()` Return the url of this history item. |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#) | [clone](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#clone())`()` Clone the history item for use by clients of WebView. |
+| abstract [WebHistoryItem](../android/webkit/WebHistoryItem.md) | [clone](../android/webkit/WebHistoryItem.md))`()` Clone the history item for use by clients of WebView. |
 
 ## Public constructors
 
@@ -57,7 +57,7 @@ Return the favicon of this history item or`null`if no favicon was found.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | A Bitmap containing the favicon for this history item or`null`. |
+| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap containing the favicon for this history item or`null`. |
 
 ### getOriginalUrl
 
@@ -115,7 +115,7 @@ Clone the history item for use by clients of WebView. On Android 4.4 and later t
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|---------------------------|
-| [WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem#) | a clone of this instance. |
+| [WebHistoryItem](../android/webkit/WebHistoryItem.md) | a clone of this instance. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

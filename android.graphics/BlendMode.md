@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # BlendMode
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/BlendMode "View this page in Java") 
+Kotlin| [Java](../android/graphics/BlendMode.md) 
 | --- | --- |
 
 ```
@@ -13,45 +13,45 @@ class BlendMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [android.graphics.BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#)\> ||
-| | ↳ | [android.graphics.BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [android.graphics.BlendMode](../android/graphics/BlendMode.md)\> ||
+| | ↳ | [android.graphics.BlendMode](../android/graphics/BlendMode.md) |
 
-| Known Direct Subclasses [BlendMode.CLEAR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:CLEAR), [BlendMode.COLOR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR), [BlendMode.COLOR_BURN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR_BURN), [BlendMode.COLOR_DODGE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR_DODGE), [BlendMode.DARKEN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DARKEN), [BlendMode.DIFFERENCE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DIFFERENCE), [BlendMode.DST](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST), [BlendMode.DST_ATOP](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_ATOP), [BlendMode.DST_IN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_IN), [BlendMode.DST_OUT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_OUT), [BlendMode.DST_OVER](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_OVER), [BlendMode.EXCLUSION](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:EXCLUSION), and 17 others. |---------------------------------------------------------------------------------------------------------------------------|--------| | [BlendMode.CLEAR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:CLEAR) | <br /> | | [BlendMode.COLOR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR) | <br /> | | [BlendMode.COLOR_BURN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR_BURN) | <br /> | | [BlendMode.COLOR_DODGE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR_DODGE) | <br /> | | [BlendMode.DARKEN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DARKEN) | <br /> | | [BlendMode.DIFFERENCE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DIFFERENCE) | <br /> | | [BlendMode.DST](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST) | <br /> | | [BlendMode.DST_ATOP](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_ATOP) | <br /> | | [BlendMode.DST_IN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_IN) | <br /> | | [BlendMode.DST_OUT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_OUT) | <br /> | | [BlendMode.DST_OVER](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_OVER) | <br /> | | [BlendMode.EXCLUSION](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:EXCLUSION) | <br /> | | [BlendMode.HARD_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:HARD_LIGHT) | <br /> | | [BlendMode.HUE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:HUE) | <br /> | | [BlendMode.LIGHTEN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:LIGHTEN) | <br /> | | [BlendMode.LUMINOSITY](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:LUMINOSITY) | <br /> | | [BlendMode.MODULATE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:MODULATE) | <br /> | | [BlendMode.MULTIPLY](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:MULTIPLY) | <br /> | | [BlendMode.OVERLAY](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:OVERLAY) | <br /> | | [BlendMode.PLUS](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:PLUS) | <br /> | | [BlendMode.SATURATION](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SATURATION) | <br /> | | [BlendMode.SCREEN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SCREEN) | <br /> | | [BlendMode.SOFT_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SOFT_LIGHT) | <br /> | | [BlendMode.SRC](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC) | <br /> | | [BlendMode.SRC_ATOP](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_ATOP) | <br /> | | [BlendMode.SRC_IN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_IN) | <br /> | | [BlendMode.SRC_OUT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_OUT) | <br /> | | [BlendMode.SRC_OVER](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_OVER) | <br /> | | [BlendMode.XOR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:XOR) | <br /> | |
+| Known Direct Subclasses [BlendMode.CLEAR](../android/graphics/BlendMode.md), [BlendMode.COLOR](../android/graphics/BlendMode.md), [BlendMode.COLOR_BURN](../android/graphics/BlendMode.md), [BlendMode.COLOR_DODGE](../android/graphics/BlendMode.md), [BlendMode.DARKEN](../android/graphics/BlendMode.md), [BlendMode.DIFFERENCE](../android/graphics/BlendMode.md), [BlendMode.DST](../android/graphics/BlendMode.md), [BlendMode.DST_ATOP](../android/graphics/BlendMode.md), [BlendMode.DST_IN](../android/graphics/BlendMode.md), [BlendMode.DST_OUT](../android/graphics/BlendMode.md), [BlendMode.DST_OVER](../android/graphics/BlendMode.md), [BlendMode.EXCLUSION](../android/graphics/BlendMode.md), and 17 others. |---------------------------------------------------------------------------------------------------------------------------|--------| | [BlendMode.CLEAR](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.COLOR](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.COLOR_BURN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.COLOR_DODGE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DARKEN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DIFFERENCE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_ATOP](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_IN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_OUT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_OVER](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.EXCLUSION](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.HARD_LIGHT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.HUE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.LIGHTEN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.LUMINOSITY](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.MODULATE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.MULTIPLY](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.OVERLAY](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.PLUS](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SATURATION](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SCREEN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SOFT_LIGHT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_ATOP](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_IN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_OUT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_OVER](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.XOR](../android/graphics/BlendMode.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Enum values ||
 |------------------------------------------------------------------------------------------------------------------------|---|
-| [CLEAR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:CLEAR) <br /> |
-| [COLOR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR) <br /> |
-| [COLOR_BURN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR_BURN) <br /> |
-| [COLOR_DODGE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:COLOR_DODGE) <br /> |
-| [DARKEN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DARKEN) <br /> |
-| [DIFFERENCE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DIFFERENCE) <br /> |
-| [DST](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST) <br /> |
-| [DST_ATOP](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_ATOP) <br /> |
-| [DST_IN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_IN) <br /> |
-| [DST_OUT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_OUT) <br /> |
-| [DST_OVER](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:DST_OVER) <br /> |
-| [EXCLUSION](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:EXCLUSION) <br /> |
-| [HARD_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:HARD_LIGHT) <br /> |
-| [HUE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:HUE) <br /> |
-| [LIGHTEN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:LIGHTEN) <br /> |
-| [LUMINOSITY](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:LUMINOSITY) <br /> |
-| [MODULATE](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:MODULATE) <br /> |
-| [MULTIPLY](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:MULTIPLY) <br /> |
-| [OVERLAY](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:OVERLAY) <br /> |
-| [PLUS](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:PLUS) <br /> |
-| [SATURATION](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SATURATION) <br /> |
-| [SCREEN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SCREEN) <br /> |
-| [SOFT_LIGHT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SOFT_LIGHT) <br /> |
-| [SRC](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC) <br /> |
-| [SRC_ATOP](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_ATOP) <br /> |
-| [SRC_IN](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_IN) <br /> |
-| [SRC_OUT](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_OUT) <br /> |
-| [SRC_OVER](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:SRC_OVER) <br /> |
-| [XOR](https://developer.android.com/reference/kotlin/android/graphics/BlendMode#ENUM_VALUE:XOR) <br /> |
+| [CLEAR](../android/graphics/BlendMode.md) <br /> |
+| [COLOR](../android/graphics/BlendMode.md) <br /> |
+| [COLOR_BURN](../android/graphics/BlendMode.md) <br /> |
+| [COLOR_DODGE](../android/graphics/BlendMode.md) <br /> |
+| [DARKEN](../android/graphics/BlendMode.md) <br /> |
+| [DIFFERENCE](../android/graphics/BlendMode.md) <br /> |
+| [DST](../android/graphics/BlendMode.md) <br /> |
+| [DST_ATOP](../android/graphics/BlendMode.md) <br /> |
+| [DST_IN](../android/graphics/BlendMode.md) <br /> |
+| [DST_OUT](../android/graphics/BlendMode.md) <br /> |
+| [DST_OVER](../android/graphics/BlendMode.md) <br /> |
+| [EXCLUSION](../android/graphics/BlendMode.md) <br /> |
+| [HARD_LIGHT](../android/graphics/BlendMode.md) <br /> |
+| [HUE](../android/graphics/BlendMode.md) <br /> |
+| [LIGHTEN](../android/graphics/BlendMode.md) <br /> |
+| [LUMINOSITY](../android/graphics/BlendMode.md) <br /> |
+| [MODULATE](../android/graphics/BlendMode.md) <br /> |
+| [MULTIPLY](../android/graphics/BlendMode.md) <br /> |
+| [OVERLAY](../android/graphics/BlendMode.md) <br /> |
+| [PLUS](../android/graphics/BlendMode.md) <br /> |
+| [SATURATION](../android/graphics/BlendMode.md) <br /> |
+| [SCREEN](../android/graphics/BlendMode.md) <br /> |
+| [SOFT_LIGHT](../android/graphics/BlendMode.md) <br /> |
+| [SRC](../android/graphics/BlendMode.md) <br /> |
+| [SRC_ATOP](../android/graphics/BlendMode.md) <br /> |
+| [SRC_IN](../android/graphics/BlendMode.md) <br /> |
+| [SRC_OUT](../android/graphics/BlendMode.md) <br /> |
+| [SRC_OVER](../android/graphics/BlendMode.md) <br /> |
+| [XOR](../android/graphics/BlendMode.md) <br /> |
 
 ## Enum values
 

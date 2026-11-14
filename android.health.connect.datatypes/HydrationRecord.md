@@ -9,9 +9,9 @@ class HydrationRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
-| | | ↳ | [android.health.connect.datatypes.HydrationRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.HydrationRecord](../android/health/connect/datatypes/HydrationRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the amount of liquids user had in a single drink.
@@ -29,7 +29,7 @@ Captures the amount of liquids user had in a single drink.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Volume](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord#getVolume()()` <br /> |
+| [Volume](../android/health/connect/datatypes/units/Volume.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord#getVolume()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord#hashCode()()` <br /> |
 | --- | --- |
 
@@ -40,7 +40,7 @@ Captures the amount of liquids user had in a single drink.
 
 | Properties ||
 |---|---|
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Volume](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Volume)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord#VOLUME_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get hydration total volume using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Volume](../android/health/connect/datatypes/units/Volume.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord#VOLUME_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get hydration total volume using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # Session
 
-Kotlin| [Java](https://developer.android.com/reference/android/se/omapi/Session "View this page in Java") 
+Kotlin| [Java](../android/se/omapi/Session.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Session
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.se.omapi.Session](https://developer.android.com/reference/kotlin/android/se/omapi/Session#) |
+| ↳ | [android.se.omapi.Session](../android/se/omapi/Session.md) |
 
 Instances of this class represent a connection session to one of the Secure Elements available on the device. These objects can be used to get a communication channel with an Applet in the Secure Element. This channel can be the basic channel or a logical channel.
 
@@ -21,17 +21,17 @@ Instances of this class represent a connection session to one of the Secure Elem
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/se/omapi/Session#close())`()` Close the connection with the Secure Element. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeChannels](https://developer.android.com/reference/kotlin/android/se/omapi/Session#closeChannels())`()` Close any channel opened on this session. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getATR](https://developer.android.com/reference/kotlin/android/se/omapi/Session#getATR())`()` Get the Answer to Reset of this Secure Element. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/se/omapi/Session.md))`()` Close the connection with the Secure Element. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeChannels](../android/se/omapi/Session.md))`()` Close any channel opened on this session. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getATR](../android/se/omapi/Session.md))`()` Get the Answer to Reset of this Secure Element. |
 | --- | --- |
-| [Reader](https://developer.android.com/reference/kotlin/android/se/omapi/Reader) | [getReader](https://developer.android.com/reference/kotlin/android/se/omapi/Session#getReader())`()` Get the reader that provides this session. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](https://developer.android.com/reference/kotlin/android/se/omapi/Session#isClosed())`()` Tells if this session is closed. |
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openBasicChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openBasicChannel(kotlin.ByteArray))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` This method is provided to ease the development of mobile application and for compliancy with existing applications. |
+| [Reader](../android/se/omapi/Reader.md) | [getReader](../android/se/omapi/Session.md))`()` Get the reader that provides this session. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](../android/se/omapi/Session.md))`()` Tells if this session is closed. |
+| [Channel](../android/se/omapi/Channel.md)? | [openBasicChannel](../android/se/omapi/Session.md))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` This method is provided to ease the development of mobile application and for compliancy with existing applications. |
 | --- | --- |
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openBasicChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openBasicChannel(kotlin.ByteArray,%20kotlin.Byte))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `p2:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Get an access to the basic channel, as defined in the ISO/IEC 7816-4 specification (the one that has number 0). |
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openLogicalChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openLogicalChannel(kotlin.ByteArray))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` This method is provided to ease the development of mobile application and for compliancy with existing applications. |
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | [openLogicalChannel](https://developer.android.com/reference/kotlin/android/se/omapi/Session#openLogicalChannel(kotlin.ByteArray,%20kotlin.Byte))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `p2:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Open a logical channel with the Secure Element, selecting the Applet represented by the given AID. |
+| [Channel](../android/se/omapi/Channel.md)? | [openBasicChannel](../android/se/omapi/Session.md))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `p2:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Get an access to the basic channel, as defined in the ISO/IEC 7816-4 specification (the one that has number 0). |
+| [Channel](../android/se/omapi/Channel.md)? | [openLogicalChannel](../android/se/omapi/Session.md))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` This method is provided to ease the development of mobile application and for compliancy with existing applications. |
+| [Channel](../android/se/omapi/Channel.md)? | [openLogicalChannel](../android/se/omapi/Session.md))`(`aid:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `p2:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Open a logical channel with the Secure Element, selecting the Applet represented by the given AID. |
 | --- | --- |
 
 ## Public methods
@@ -87,7 +87,7 @@ Get the reader that provides this session.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------|
-| [Reader](https://developer.android.com/reference/kotlin/android/se/omapi/Reader) | The Reader object. This value cannot be`null`. |
+| [Reader](../android/se/omapi/Reader.md) | The Reader object. This value cannot be`null`. |
 
 ### isClosed
 
@@ -119,7 +119,7 @@ This method is provided to ease the development of mobile application and for co
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------|
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | an instance of Channel if available or null. |
+| [Channel](../android/se/omapi/Channel.md)? | an instance of Channel if available or null. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ The select response data can be retrieved with byte\[\] getSelectResponse(). The
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------|
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | an instance of Channel if available or null. |
+| [Channel](../android/se/omapi/Channel.md)? | an instance of Channel if available or null. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -189,7 +189,7 @@ This method is provided to ease the development of mobile application and for co
 
 | Return ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | an instance of Channel. Null if the Secure Element is unable to provide a new logical channel. This value may be`null`. |
+| [Channel](../android/se/omapi/Channel.md)? | an instance of Channel. Null if the Secure Element is unable to provide a new logical channel. This value may be`null`. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -230,7 +230,7 @@ The select response data can be retrieved with byte\[\] getSelectResponse(). The
 
 | Return ||
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Channel](https://developer.android.com/reference/kotlin/android/se/omapi/Channel)? | an instance of Channel. Null if the Secure Element is unable to provide a new logical channel. |
+| [Channel](../android/se/omapi/Channel.md)? | an instance of Channel. Null if the Secure Element is unable to provide a new logical channel. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|

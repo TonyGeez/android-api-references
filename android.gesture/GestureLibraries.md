@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # GestureLibraries
 
-Kotlin| [Java](https://developer.android.com/reference/android/gesture/GestureLibraries "View this page in Java") 
+Kotlin| [Java](../android/gesture/GestureLibraries.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ class GestureLibraries
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.GestureLibraries](https://developer.android.com/reference/kotlin/android/gesture/GestureLibraries#) |
+| ↳ | [android.gesture.GestureLibraries](../android/gesture/GestureLibraries.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary)! | [fromFile](https://developer.android.com/reference/kotlin/android/gesture/GestureLibraries#fromFile(java.io.File))`(`path:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` <br /> |
-| static [GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary)! | [fromFile](https://developer.android.com/reference/kotlin/android/gesture/GestureLibraries#fromFile(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| static [GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary) | [fromFileDescriptor](https://developer.android.com/reference/kotlin/android/gesture/GestureLibraries#fromFileDescriptor(android.os.ParcelFileDescriptor))`(`pfd:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`)` <br /> |
+| static [GestureLibrary](../android/gesture/GestureLibrary.md)! | [fromFile](../android/gesture/GestureLibraries.md))`(`path:` ` [File](../java/io/File.md)!`)` <br /> |
+| static [GestureLibrary](../android/gesture/GestureLibrary.md)! | [fromFile](../android/gesture/GestureLibraries.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| static [GestureLibrary](../android/gesture/GestureLibrary.md) | [fromFileDescriptor](../android/gesture/GestureLibraries.md))`(`pfd:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)`)` <br /> |
 | --- | --- |
-| static [GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary)! | [fromPrivateFile](https://developer.android.com/reference/kotlin/android/gesture/GestureLibraries#fromPrivateFile(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| static [GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary)! | [fromRawResource](https://developer.android.com/reference/kotlin/android/gesture/GestureLibraries#fromRawResource(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `resourceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| static [GestureLibrary](../android/gesture/GestureLibrary.md)! | [fromPrivateFile](../android/gesture/GestureLibraries.md))`(`context:` ` [Context](../android/content/Context.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| static [GestureLibrary](../android/gesture/GestureLibrary.md)! | [fromRawResource](../android/gesture/GestureLibraries.md))`(`context:` ` [Context](../android/content/Context.md)!`, `resourceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public methods
 
@@ -54,11 +54,11 @@ static fun fromFileDescriptor(pfd: ParcelFileDescriptor): GestureLibrary
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `pfd` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#):This value cannot be`null`. |
+| `pfd` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md):This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-----------------------------|
-| [GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary) | This value cannot be`null`. |
+| [GestureLibrary](../android/gesture/GestureLibrary.md) | This value cannot be`null`. |
 
 ### fromPrivateFile
 

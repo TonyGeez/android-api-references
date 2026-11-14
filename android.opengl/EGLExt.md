@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # EGLExt
 
-Kotlin| [Java](https://developer.android.com/reference/android/opengl/EGLExt "View this page in Java") 
+Kotlin| [Java](../android/opengl/EGLExt.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class EGLExt
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.EGLExt](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#) |
+| ↳ | [android.opengl.EGLExt](../android/opengl/EGLExt.md) |
 
 EGL Extensions
 
@@ -21,27 +21,27 @@ EGL Extensions
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_FLAGS_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_CONTEXT_FLAGS_KHR:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_MAJOR_VERSION_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_CONTEXT_MAJOR_VERSION_KHR:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_MINOR_VERSION_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_CONTEXT_MINOR_VERSION_KHR:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_FLAGS_KHR](../android/opengl/EGLExt.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_MAJOR_VERSION_KHR](../android/opengl/EGLExt.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_MINOR_VERSION_KHR](../android/opengl/EGLExt.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NO_NATIVE_FENCE_FD_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_NO_NATIVE_FENCE_FD_ANDROID:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES3_BIT_KHR](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_OPENGL_ES3_BIT_KHR:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RECORDABLE_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_RECORDABLE_ANDROID:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NO_NATIVE_FENCE_FD_ANDROID](../android/opengl/EGLExt.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES3_BIT_KHR](../android/opengl/EGLExt.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RECORDABLE_ANDROID](../android/opengl/EGLExt.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_SYNC_NATIVE_FENCE_ANDROID:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_FD_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_SYNC_NATIVE_FENCE_FD_ANDROID:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_ANDROID](../android/opengl/EGLExt.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_FD_ANDROID](../android/opengl/EGLExt.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID](../android/opengl/EGLExt.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------|---|
-| [EGLExt](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#EGLExt())`()` <br /> |
+| [EGLExt](../android/opengl/EGLExt.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [SyncFence](https://developer.android.com/reference/kotlin/android/hardware/SyncFence.html#) | [eglDupNativeFenceFDANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#eglDupNativeFenceFDANDROID(android.opengl.EGLDisplay,%20android.opengl.EGLSync))`(`display:` ` [EGLDisplay](https://developer.android.com/reference/kotlin/android/opengl/EGLDisplay)`, `sync:` ` [EGLSync](https://developer.android.com/reference/kotlin/android/opengl/EGLSync)`)` Retrieves the SyncFence for an EGLSync created with EGL_SYNC_NATIVE_FENCE_ANDROID See [EGL_ANDROID_native_fence_sync](https://www.khronos.org/registry/EGL/extensions/ANDROID/EGL_ANDROID_native_fence_sync.txt) extension for more details |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglPresentationTimeANDROID](https://developer.android.com/reference/kotlin/android/opengl/EGLExt#eglPresentationTimeANDROID(android.opengl.EGLDisplay,%20android.opengl.EGLSurface,%20kotlin.Long))`(`dpy:` ` [EGLDisplay](https://developer.android.com/reference/kotlin/android/opengl/EGLDisplay)!`, `sur:` ` [EGLSurface](https://developer.android.com/reference/kotlin/android/opengl/EGLSurface)!`, `time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| openstatic [SyncFence](../android/hardware/SyncFence.md) | [eglDupNativeFenceFDANDROID](../android/opengl/EGLExt.md))`(`display:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)`, `sync:` ` [EGLSync](../android/opengl/EGLSync.md)`)` Retrieves the SyncFence for an EGLSync created with EGL_SYNC_NATIVE_FENCE_ANDROID See [EGL_ANDROID_native_fence_sync](https://www.khronos.org/registry/EGL/extensions/ANDROID/EGL_ANDROID_native_fence_sync.txt) extension for more details |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglPresentationTimeANDROID](../android/opengl/EGLExt.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `sur:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 ## Constants
 
@@ -160,12 +160,12 @@ Retrieves the SyncFence for an EGLSync created with EGL_SYNC_NATIVE_FENCE_ANDROI
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `display` | [EGLDisplay](https://developer.android.com/reference/kotlin/android/opengl/EGLDisplay):The EGLDisplay connection This value cannot be`null`. |
-| `sync` | [EGLSync](https://developer.android.com/reference/kotlin/android/opengl/EGLSync):The EGLSync to fetch the SyncFence from This value cannot be`null`. |
+| `display` | [EGLDisplay](../android/opengl/EGLDisplay.md):The EGLDisplay connection This value cannot be`null`. |
+| `sync` | [EGLSync](../android/opengl/EGLSync.md):The EGLSync to fetch the SyncFence from This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SyncFence](https://developer.android.com/reference/kotlin/android/hardware/SyncFence.html#) | A SyncFence representing the native fence. \* If is not a valid sync object for , an [invalid](https://developer.android.com/reference/kotlin/android/hardware/SyncFence.html#isValid())SyncFence is returned and an EGL_BAD_PARAMETER error is generated. \* If the EGL_SYNC_NATIVE_FENCE_FD_ANDROID attribute of is EGL_NO_NATIVE_FENCE_FD_ANDROID, an [invalid](https://developer.android.com/reference/kotlin/android/hardware/SyncFence.html#isValid())SyncFence is returned and an EGL_BAD_PARAMETER error is generated. \* If does not match the display passed to eglCreateSync when was created, the behaviour is undefined. This value cannot be`null`. |
+| [SyncFence](../android/hardware/SyncFence.md) | A SyncFence representing the native fence. \* If is not a valid sync object for , an [invalid](../android/hardware/SyncFence.md))SyncFence is returned and an EGL_BAD_PARAMETER error is generated. \* If the EGL_SYNC_NATIVE_FENCE_FD_ANDROID attribute of is EGL_NO_NATIVE_FENCE_FD_ANDROID, an [invalid](../android/hardware/SyncFence.md))SyncFence is returned and an EGL_BAD_PARAMETER error is generated. \* If does not match the display passed to eglCreateSync when was created, the behaviour is undefined. This value cannot be`null`. |
 
 ### eglPresentationTimeANDROID
 

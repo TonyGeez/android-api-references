@@ -8,7 +8,7 @@ class SettingsPreferenceValue : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.settings.preferences.SettingsPreferenceValue](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#) |
+| ↳ | [android.service.settings.preferences.SettingsPreferenceValue](../android/service/settings/preferences/SettingsPreferenceValue.md) |
 
 This objects represents a value that can be used for a particular settings preference.
 
@@ -50,7 +50,7 @@ See documentation on the constants for which getter method should be used.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SettingsPreferenceValue](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SettingsPreferenceValue](../android/service/settings/preferences/SettingsPreferenceValue.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#`. |
 
 ## Constants
 
@@ -209,7 +209,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

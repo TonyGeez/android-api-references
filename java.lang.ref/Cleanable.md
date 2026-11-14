@@ -8,7 +8,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 interface Cleanable
 ```
 
-| [java.lang.ref.Cleaner.Cleanable](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner.Cleanable#) |
+| [java.lang.ref.Cleaner.Cleanable](../java/lang/ref/Cleaner.Cleanable.md) |
 
 `Cleanable`represents an object and a cleaning action registered in a`Cleaner`.
 
@@ -16,7 +16,7 @@ interface Cleanable
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clean](https://developer.android.com/reference/kotlin/java/lang/ref/Cleaner.Cleanable#clean())`()` Unregisters the cleanable and invokes the cleaning action. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clean](../java/lang/ref/Cleaner.Cleanable.md))`()` Unregisters the cleanable and invokes the cleaning action. |
 
 ## Public methods
 

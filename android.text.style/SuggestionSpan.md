@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # SuggestionSpan
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/style/SuggestionSpan "View this page in Java") 
+Kotlin| [Java](../android/text/style/SuggestionSpan.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class SuggestionSpan : CharacterStyle, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) ||
-| | ↳ | [android.text.style.SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) ||
+| | ↳ | [android.text.style.SuggestionSpan](../android/text/style/SuggestionSpan.md) |
 
 Holds suggestion candidates for the text enclosed in this span. When such a span is edited in an EditText, double tapping on the text enclosed in this span will display a popup dialog listing suggestion replacement for that text. The user can then replace the original text by one of the suggestions. These spans should typically be created by the input method to provide correction and alternates for the text.
 
@@ -22,52 +22,52 @@ Holds suggestion candidates for the text enclosed in this span. When such a span
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SUGGESTION_PICKED](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#ACTION_SUGGESTION_PICKED:kotlin.String) This action is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_AUTO_CORRECTION](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_AUTO_CORRECTION:kotlin.Int) Sets this flag if the auto correction is about to be applied to a word/text that the user is typing/composing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_EASY_CORRECT](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_EASY_CORRECT:kotlin.Int) Sets this flag if the suggestions should be easily accessible with few interactions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SUGGESTION_PICKED](../android/text/style/SuggestionSpan.md) This action is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_AUTO_CORRECTION](../android/text/style/SuggestionSpan.md) Sets this flag if the auto correction is about to be applied to a word/text that the user is typing/composing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_EASY_CORRECT](../android/text/style/SuggestionSpan.md) Sets this flag if the suggestions should be easily accessible with few interactions. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_GRAMMAR_ERROR](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_GRAMMAR_ERROR:kotlin.Int) Sets this flag if the suggestions apply to a grammar error. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_MISSPELLED](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#FLAG_MISSPELLED:kotlin.Int) Sets this flag if the suggestions apply to a misspelled word/text. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUGGESTIONS_MAX_SIZE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTIONS_MAX_SIZE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_GRAMMAR_ERROR](../android/text/style/SuggestionSpan.md) Sets this flag if the suggestions apply to a grammar error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_MISSPELLED](../android/text/style/SuggestionSpan.md) Sets this flag if the suggestions apply to a misspelled word/text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUGGESTIONS_MAX_SIZE](../android/text/style/SuggestionSpan.md) <br /> |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_AFTER](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTION_SPAN_PICKED_AFTER:kotlin.String) This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_BEFORE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTION_SPAN_PICKED_BEFORE:kotlin.String) This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_HASHCODE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTION_SPAN_PICKED_HASHCODE:kotlin.String) This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_AFTER](../android/text/style/SuggestionSpan.md) This is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_BEFORE](../android/text/style/SuggestionSpan.md) This is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUGGESTION_SPAN_PICKED_HASHCODE](../android/text/style/SuggestionSpan.md) This is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). |
 | --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SuggestionSpan(android.content.Context,%20kotlin.Array,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `suggestions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SuggestionSpan(android.content.Context,%20java.util.Locale,%20kotlin.Array,%20kotlin.Int,%20java.lang.Class))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `suggestions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `notificationTargetClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` <br /> |
-| [SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SuggestionSpan(android.os.Parcel))`(`src:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` <br /> |
-| [SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SuggestionSpan(java.util.Locale,%20kotlin.Array,%20kotlin.Int))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `suggestions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [SuggestionSpan](../android/text/style/SuggestionSpan.md))`(`context:` ` [Context](../android/content/Context.md)!`, `suggestions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [SuggestionSpan](../android/text/style/SuggestionSpan.md))`(`context:` ` [Context](../android/content/Context.md)!`, `locale:` ` [Locale](../java/util/Locale.md)!`, `suggestions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `notificationTargetClass:` ` [Class](../java/lang/Class.md)<*>!`)` <br /> |
+| [SuggestionSpan](../android/text/style/SuggestionSpan.md))`(`src:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
+| [SuggestionSpan](../android/text/style/SuggestionSpan.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `suggestions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#describeContents())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getFlags())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/text/style/SuggestionSpan.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/text/style/SuggestionSpan.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](../android/text/style/SuggestionSpan.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getLocale())`()` <br /> |
-| open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)? | [getLocaleObject](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getLocaleObject())`()` Returns a well-formed BCP 47 language tag representation of the suggestions, as a [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getSpanTypeId())`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](../android/text/style/SuggestionSpan.md))`()` <br /> |
+| open [Locale](../java/util/Locale.md)? | [getLocaleObject](../android/text/style/SuggestionSpan.md))`()` Returns a well-formed BCP 47 language tag representation of the suggestions, as a [Locale](../java/util/Locale.md) object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](../android/text/style/SuggestionSpan.md))`()` <br /> |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSuggestions](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getSuggestions())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUnderlineColor](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getUnderlineColor())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#hashCode())`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSuggestions](../android/text/style/SuggestionSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUnderlineColor](../android/text/style/SuggestionSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/text/style/SuggestionSpan.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFlags](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#setFlags(kotlin.Int))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#updateDrawState(android.text.TextPaint))`(`tp:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFlags](../android/text/style/SuggestionSpan.md))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/SuggestionSpan.md))`(`tp:` ` [TextPaint](../android/text/TextPaint.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/text/style/SuggestionSpan.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)! | [getUnderlying](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#getUnderlying())`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)! | [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle))`(`cs:` ` [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [getUnderlying](../android/text/style/CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SuggestionSpan](../android/text/style/SuggestionSpan.md)!\> | [CREATOR](../android/text/style/SuggestionSpan.md) <br /> |
 
 ## Constants
 
@@ -80,9 +80,9 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 static val ACTION_SUGGESTION_PICKED: String
 ```
 
-**Deprecated:** *For IMEs to receive this kind of user interaction signals, implement IMEs' own suggestion picker UI instead of relying on [SuggestionSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#). To retrieve bounding boxes for each character of the composing text, use [android.view.inputmethod.CursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo.html#).*
+**Deprecated:** *For IMEs to receive this kind of user interaction signals, implement IMEs' own suggestion picker UI instead of relying on [SuggestionSpan](../android/text/style/SuggestionSpan.md). To retrieve bounding boxes for each character of the composing text, use [android.view.inputmethod.CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md).*
 
-This action is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). 
+This action is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). 
 
  Value: "android.text.style.SUGGESTION_PICKED"
 
@@ -153,9 +153,9 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 static val SUGGESTION_SPAN_PICKED_AFTER: String
 ```
 
-**Deprecated:** *See [ACTION_SUGGESTION_PICKED](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#ACTION_SUGGESTION_PICKED:kotlin.String).*
+**Deprecated:** *See [ACTION_SUGGESTION_PICKED](../android/text/style/SuggestionSpan.md).*
 
-This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). 
+This is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). 
 
  Value: "after"
 
@@ -168,9 +168,9 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 static val SUGGESTION_SPAN_PICKED_BEFORE: String
 ```
 
-**Deprecated:** *See [ACTION_SUGGESTION_PICKED](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#ACTION_SUGGESTION_PICKED:kotlin.String).*
+**Deprecated:** *See [ACTION_SUGGESTION_PICKED](../android/text/style/SuggestionSpan.md).*
 
-This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). 
+This is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). 
 
  Value: "before"
 
@@ -183,9 +183,9 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 static val SUGGESTION_SPAN_PICKED_HASHCODE: String
 ```
 
-**Deprecated:** *See [ACTION_SUGGESTION_PICKED](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#ACTION_SUGGESTION_PICKED:kotlin.String).*
+**Deprecated:** *See [ACTION_SUGGESTION_PICKED](../android/text/style/SuggestionSpan.md).*
 
-This is deprecated in [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int). 
+This is deprecated in [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md). 
 
  Value: "hashcode"
 
@@ -204,7 +204,7 @@ SuggestionSpan(
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Context for the application |
+| `context` | [Context](../android/content/Context.md)!:Context for the application |
 | `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Suggestions for the string under the span |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags indicating how this span is handled in TextView |
 | --- | --- |
@@ -224,12 +224,12 @@ SuggestionSpan(
 
 | Parameters ||
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Context for the application |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:locale Locale of the suggestions |
-| `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Suggestions for the string under the span. Only the first up to [SuggestionSpan.SUGGESTIONS_MAX_SIZE](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#SUGGESTIONS_MAX_SIZE:kotlin.Int) will be considered. Null values not permitted. |
+| `context` | [Context](../android/content/Context.md)!:Context for the application |
+| `locale` | [Locale](../java/util/Locale.md)!:locale Locale of the suggestions |
+| `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Suggestions for the string under the span. Only the first up to [SuggestionSpan.SUGGESTIONS_MAX_SIZE](../android/text/style/SuggestionSpan.md) will be considered. Null values not permitted. |
 | --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags indicating how this span is handled in TextView |
-| `notificationTargetClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!:if not null, this class will get notified when the user selects one of the suggestions. On Android [android.os.Build.VERSION_CODES#Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int) and later this parameter is always ignored. |
+| `notificationTargetClass` | [Class](../java/lang/Class.md)\<\*\>!:if not null, this class will get notified when the user selects one of the suggestions. On Android [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) and later this parameter is always ignored. |
 
 ### SuggestionSpan
 
@@ -252,7 +252,7 @@ SuggestionSpan(
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:Locale of the suggestions |
+| `locale` | [Locale](../java/util/Locale.md)!:Locale of the suggestions |
 | `suggestions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:Suggestions for the string under the span |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags indicating how this span is handled in TextView |
 | --- | --- |
@@ -269,7 +269,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -317,7 +317,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 open fun getLocale(): String
 ```
 
-**Deprecated:** *use [getLocaleObject()](https://developer.android.com/reference/kotlin/android/text/style/SuggestionSpan#getLocaleObject())instead.*
+**Deprecated:** *use [getLocaleObject()](../android/text/style/SuggestionSpan.md))instead.*
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -331,13 +331,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getLocaleObject(): Locale?
 ```
 
-Returns a well-formed BCP 47 language tag representation of the suggestions, as a [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) object.
+Returns a well-formed BCP 47 language tag representation of the suggestions, as a [Locale](../java/util/Locale.md) object.
 
-**Caveat** : The returned object is guaranteed to be a a well-formed BCP 47 language tag representation. For example, this method can return an empty locale rather than returning a malformed data when this object is initialized with an malformed [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) object, e.g.`new Locale(" a ", " b c d ", " "`.
+**Caveat** : The returned object is guaranteed to be a a well-formed BCP 47 language tag representation. For example, this method can return an empty locale rather than returning a malformed data when this object is initialized with an malformed [Locale](../java/util/Locale.md) object, e.g.`new Locale(" a ", " b c d ", " "`.
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)? | the locale of the suggestions.`null`is returned if no locale is specified. |
+| [Locale](../java/util/Locale.md)? | the locale of the suggestions.`null`is returned if no locale is specified. |
 
 ### getSpanTypeId
 
@@ -412,8 +412,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

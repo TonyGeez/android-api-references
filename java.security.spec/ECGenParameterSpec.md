@@ -8,8 +8,8 @@ open class ECGenParameterSpec : NamedParameterSpec, AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.spec.NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec) ||
-| | ↳ | [java.security.spec.ECGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECGenParameterSpec#) |
+| ↳ | [java.security.spec.NamedParameterSpec](../java/security/spec/NamedParameterSpec.md) ||
+| | ↳ | [java.security.spec.ECGenParameterSpec](../java/security/spec/ECGenParameterSpec.md) |
 
 This immutable class specifies the set of parameters used for generating elliptic curve (EC) domain parameters.
 

@@ -11,10 +11,10 @@ open class IllegalAccessException : ReflectiveOperationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
-| | | ↳ | [java.lang.ReflectiveOperationException](https://developer.android.com/reference/kotlin/java/lang/ReflectiveOperationException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.ReflectiveOperationException](../java/lang/ReflectiveOperationException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalAccessException](https://developer.android.com/reference/kotlin/java/lang/IllegalAccessException#) |
+| | | | ↳ | [java.lang.IllegalAccessException](../java/lang/IllegalAccessException.md) |
 
 An IllegalAccessException is thrown when an application tries to reflectively create an instance (other than an array), set or get a field, or invoke a method, but the currently executing method does not have access to the definition of the specified class, field, method or constructor.
 
@@ -22,8 +22,8 @@ An IllegalAccessException is thrown when an application tries to reflectively cr
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalAccessException](https://developer.android.com/reference/kotlin/java/lang/IllegalAccessException#IllegalAccessException())`()` Constructs an`IllegalAccessException`without a detail message. |
-| [IllegalAccessException](https://developer.android.com/reference/kotlin/java/lang/IllegalAccessException#IllegalAccessException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalAccessException`with a detail message. |
+| [IllegalAccessException](../java/lang/IllegalAccessException.md))`()` Constructs an`IllegalAccessException`without a detail message. |
+| [IllegalAccessException](../java/lang/IllegalAccessException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalAccessException`with a detail message. |
 
 ## Public constructors
 

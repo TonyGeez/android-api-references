@@ -8,7 +8,7 @@ class ExecuteAppFunctionRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appfunctions.ExecuteAppFunctionRequest](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#) |
+| ↳ | [android.app.appfunctions.ExecuteAppFunctionRequest](../android/app/appfunctions/ExecuteAppFunctionRequest.md) |
 
 A request to execute an app function, provided to android.app.appfunctions.AppFunctionManager#executeAppFunction.
 
@@ -35,19 +35,19 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [AppFunctionActivityId](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityId)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getActivityId()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityId` for this request. |
-| [AppInteractionAttribution](https://developer.android.com/reference/kotlin/android/app/AppInteractionAttribution.html#)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getAttribution()()` Returns the `https://developer.android.com/reference/kotlin/android/app/AppInteractionAttribution.html#` for the `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#`. |
+| [AppFunctionActivityId](../android/app/appfunctions/AppFunctionActivityId.md)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getActivityId()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityId` for this request. |
+| [AppInteractionAttribution](../android/app/AppInteractionAttribution.md)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getAttribution()()` Returns the `https://developer.android.com/reference/kotlin/android/app/AppInteractionAttribution.html#` for the `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#`. |
 | --- | --- |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getExtras()()` Returns the additional values for this function execution request. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getExtras()()` Returns the additional values for this function execution request. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getFunctionIdentifier()()` Returns the unique identifier of the app function to be executed. |
-| [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getParameters()()` Returns the function parameters as a key-value `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#`. |
+| [GenericDocument](../android/app/appsearch/GenericDocument.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getParameters()()` Returns the function parameters as a key-value `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#`. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#getTargetPackageName()()` Returns the package name of the app that hosts the app function. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ExecuteAppFunctionRequest](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ExecuteAppFunctionRequest](../android/app/appfunctions/ExecuteAppFunctionRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -172,7 +172,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -11,11 +11,11 @@ open class NotActiveException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](https://developer.android.com/reference/kotlin/java/io/ObjectStreamException) ||
-| | | | | ↳ | [java.io.NotActiveException](https://developer.android.com/reference/kotlin/java/io/NotActiveException#) |
+| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.NotActiveException](../java/io/NotActiveException.md) |
 
 Thrown when serialization or deserialization is not active.
 
@@ -23,8 +23,8 @@ Thrown when serialization or deserialization is not active.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NotActiveException](https://developer.android.com/reference/kotlin/java/io/NotActiveException#NotActiveException())`()` Constructor to create a new NotActiveException without a reason. |
-| [NotActiveException](https://developer.android.com/reference/kotlin/java/io/NotActiveException#NotActiveException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor to create a new NotActiveException with the reason given. |
+| [NotActiveException](../java/io/NotActiveException.md))`()` Constructor to create a new NotActiveException without a reason. |
+| [NotActiveException](../java/io/NotActiveException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor to create a new NotActiveException with the reason given. |
 
 ## Public constructors
 

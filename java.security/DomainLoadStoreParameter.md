@@ -10,9 +10,9 @@ class DomainLoadStoreParameter : KeyStore.LoadStoreParameter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.DomainLoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#) |
+| ↳ | [java.security.DomainLoadStoreParameter](../java/security/DomainLoadStoreParameter.md) |
 
-Configuration data that specifies the keystores in a keystore domain. A keystore domain is a collection of keystores that are presented as a single logical keystore. The configuration data is used during`KeyStore` [load](https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.security.KeyStore.LoadStoreParameter)) [store](https://developer.android.com/reference/kotlin/java/security/KeyStore#store(java.security.KeyStore.LoadStoreParameter))operations.
+Configuration data that specifies the keystores in a keystore domain. A keystore domain is a collection of keystores that are presented as a single logical keystore. The configuration data is used during`KeyStore` [load](../java/security/KeyStore.md)) [store](../java/security/KeyStore.md))operations.
 
 The following syntax is supported for configuration data: 
 
@@ -67,13 +67,13 @@ domain app1 {
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DomainLoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#DomainLoadStoreParameter(java.net.URI,%20kotlin.collections.MutableMap))`(`configuration:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`, `protectionParams:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!>!`)` Constructs a DomainLoadStoreParameter for a keystore domain with the parameters used to protect keystore data. |
+| [DomainLoadStoreParameter](../java/security/DomainLoadStoreParameter.md))`(`configuration:` ` [URI](../java/net/URI.md)!`, `protectionParams:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!>!`)` Constructs a DomainLoadStoreParameter for a keystore domain with the parameters used to protect keystore data. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | [getConfiguration](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#getConfiguration())`()` Gets the identifier for the domain configuration data. |
-| [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)! | [getProtectionParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#getProtectionParameter())`()` Gets the keystore protection parameters for this domain. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!\>! | [getProtectionParams](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter#getProtectionParams())`()` Gets the keystore protection parameters for keystores in this domain. |
+| [URI](../java/net/URI.md)! | [getConfiguration](../java/security/DomainLoadStoreParameter.md))`()` Gets the identifier for the domain configuration data. |
+| [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)! | [getProtectionParameter](../java/security/DomainLoadStoreParameter.md))`()` Gets the keystore protection parameters for this domain. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!\>! | [getProtectionParams](../java/security/DomainLoadStoreParameter.md))`()` Gets the keystore protection parameters for keystores in this domain. |
 | --- | --- |
 
 ## Public constructors
@@ -92,8 +92,8 @@ Constructs a DomainLoadStoreParameter for a keystore domain with the parameters 
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `configuration` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:identifier for the domain configuration data. The name of the target domain should be specified in the`java.net.URI`fragment component when it is necessary to distinguish between several domain configurations at the same location. |
-| `protectionParams` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!\>!:the map from keystore name to the parameter used to protect keystore data. A`java.util.Collections.EMPTY_MAP`should be used when protection parameters are not required or when they have been specified by properties in the domain configuration data. It is cloned to prevent subsequent modification. |
+| `configuration` | [URI](../java/net/URI.md)!:identifier for the domain configuration data. The name of the target domain should be specified in the`java.net.URI`fragment component when it is necessary to distinguish between several domain configurations at the same location. |
+| `protectionParams` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!\>!:the map from keystore name to the parameter used to protect keystore data. A`java.util.Collections.EMPTY_MAP`should be used when protection parameters are not required or when they have been specified by properties in the domain configuration data. It is cloned to prevent subsequent modification. |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------------------|
@@ -113,7 +113,7 @@ Gets the identifier for the domain configuration data.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------------------------------------|
-| [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)! | the identifier for the configuration data |
+| [URI](../java/net/URI.md)! | the identifier for the configuration data |
 
 ### getProtectionParameter
 
@@ -127,7 +127,7 @@ Gets the keystore protection parameters for this domain. Keystore domains do not
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)! | always returns`null` |
+| [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)! | always returns`null` |
 
 ### getProtectionParams
 
@@ -141,4 +141,4 @@ Gets the keystore protection parameters for keystores in this domain.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)!>! | an unmodifiable map of keystore names to protection parameters |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!>! | an unmodifiable map of keystore names to protection parameters |

@@ -10,7 +10,7 @@ open class KeyRep : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyRep](https://developer.android.com/reference/kotlin/java/security/KeyRep#) |
+| ↳ | [java.security.KeyRep](../java/security/KeyRep.md) |
 
 Standardized representation for serialized Key objects.
 
@@ -20,15 +20,15 @@ Note that a serialized Key may contain sensitive information which should not be
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------|
-| | [Type](https://developer.android.com/reference/kotlin/java/security/KeyRep.Type) Key type. |
+| | [Type](../java/security/KeyRep.Type.md) Key type. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyRep](https://developer.android.com/reference/kotlin/java/security/KeyRep#KeyRep(java.security.KeyRep.Type,%20kotlin.String,%20kotlin.String,%20kotlin.ByteArray))`(`type:` ` [KeyRep.Type](https://developer.android.com/reference/kotlin/java/security/KeyRep.Type)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct the alternate Key class. |
+| [KeyRep](../java/security/KeyRep.md))`(`type:` ` [KeyRep.Type](../java/security/KeyRep.Type.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct the alternate Key class. |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readResolve](https://developer.android.com/reference/kotlin/java/security/KeyRep#readResolve())`()` Resolve the Key object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readResolve](../java/security/KeyRep.md))`()` Resolve the Key object. |
 
 ## Public constructors
 
@@ -48,7 +48,7 @@ Construct the alternate Key class.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `type` | [KeyRep.Type](https://developer.android.com/reference/kotlin/java/security/KeyRep.Type)!:either one of Type.SECRET, Type.PUBLIC, or Type.PRIVATE |
+| `type` | [KeyRep.Type](../java/security/KeyRep.Type.md)!:either one of Type.SECRET, Type.PUBLIC, or Type.PRIVATE |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm returned from`Key.getAlgorithm()` |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the encoding format returned from`Key.getFormat()` |
 | --- | --- |

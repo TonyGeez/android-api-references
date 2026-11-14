@@ -4,16 +4,16 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # DatabaseErrorHandler
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/DatabaseErrorHandler "View this page in Java") 
+Kotlin| [Java](../android/database/DatabaseErrorHandler.md) 
 | --- | --- |
 
 ```
 interface DatabaseErrorHandler
 ```
 
-| [android.database.DatabaseErrorHandler](https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler#) |
+| [android.database.DatabaseErrorHandler](../android/database/DatabaseErrorHandler.md) |
 
-| Known Direct Subclasses [DefaultDatabaseErrorHandler](https://developer.android.com/reference/kotlin/android/database/DefaultDatabaseErrorHandler) |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [DefaultDatabaseErrorHandler](https://developer.android.com/reference/kotlin/android/database/DefaultDatabaseErrorHandler) | Default class used to define the action to take when database corruption is reported by sqlite. | |
+| Known Direct Subclasses [DefaultDatabaseErrorHandler](../android/database/DefaultDatabaseErrorHandler.md) |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [DefaultDatabaseErrorHandler](../android/database/DefaultDatabaseErrorHandler.md) | Default class used to define the action to take when database corruption is reported by sqlite. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An interface to let apps define an action to take when database corruption is detected.
@@ -22,7 +22,7 @@ An interface to let apps define an action to take when database corruption is de
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCorruption](https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler#onCorruption(android.database.sqlite.SQLiteDatabase))`(`dbObj:` ` [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase)!`)` The method invoked when database corruption is detected. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCorruption](../android/database/DatabaseErrorHandler.md))`(`dbObj:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!`)` The method invoked when database corruption is detected. |
 
 ## Public methods
 
@@ -38,4 +38,4 @@ The method invoked when database corruption is detected.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dbObj` | [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase)!:the [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase) object representing the database on which corruption is detected. |
+| `dbObj` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!:the [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md) object representing the database on which corruption is detected. |

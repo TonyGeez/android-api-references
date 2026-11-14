@@ -8,7 +8,7 @@ open class TransitionManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.transition.TransitionManager](https://developer.android.com/reference/kotlin/android/transition/TransitionManager#) |
+| ↳ | [android.transition.TransitionManager](../android/transition/TransitionManager.md) |
 
 This class manages the set of transitions that fire when there is a change of `https://developer.android.com/reference/kotlin/android/transition/Scene`. To use the manager, add scenes along with transition objects with calls to `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#setTransition(android.transition.Scene,%20android.transition.Transition)` or `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#setTransition(android.transition.Scene,%20android.transition.Scene,%20android.transition.Transition)`. Setting specific transitions for scene changes is not required; by default, a Scene change will use `https://developer.android.com/reference/kotlin/android/transition/AutoTransition` to do something reasonable for most situations. Specifying other transitions for particular scene changes is only necessary if the application wants different transition behavior in these situations.
 
@@ -60,7 +60,7 @@ Convenience method to animate, using the default transition, to a new scene defi
 
 | Parameters ||
 |---|---|
-| `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The root of the View hierarchy to run the transition on. |
+| `sceneRoot` | [ViewGroup](../android/view/ViewGroup.md)!: The root of the View hierarchy to run the transition on. |
 
 ### beginDelayedTransition
 
@@ -81,8 +81,8 @@ Passing in `null` for the transition parameter will cause the TransitionManager 
 
 | Parameters ||
 |---|---|
-| `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The root of the View hierarchy to run the transition on. |
-| `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!: The transition to use for this change. A value of null causes the TransitionManager to use the default transition. |
+| `sceneRoot` | [ViewGroup](../android/view/ViewGroup.md)!: The root of the View hierarchy to run the transition on. |
+| `transition` | [Transition](../android/transition/Transition.md)!: The transition to use for this change. A value of null causes the TransitionManager to use the default transition. |
 
 ### endTransitions
 
@@ -96,7 +96,7 @@ Ends all pending and ongoing transitions on the specified scene root.
 
 | Parameters ||
 |---|---|
-| `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The root of the View hierarchy to end transitions on. |
+| `sceneRoot` | [ViewGroup](../android/view/ViewGroup.md)!: The root of the View hierarchy to end transitions on. |
 
 ### go
 
@@ -110,7 +110,7 @@ Convenience method to simply change to the given scene using the default transit
 
 | Parameters ||
 |---|---|
-| `scene` | [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene)!: The Scene to change to |
+| `scene` | [Scene](../android/transition/Scene.md)!: The Scene to change to |
 
 ### go
 
@@ -129,8 +129,8 @@ Passing in `null` for the transition parameter will result in the scene changing
 
 | Parameters ||
 |---|---|
-| `scene` | [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene)!: The Scene to change to |
-| `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!: The transition to use for this scene change. A value of null causes the scene change to happen with no transition. |
+| `scene` | [Scene](../android/transition/Scene.md)!: The Scene to change to |
+| `transition` | [Transition](../android/transition/Transition.md)!: The transition to use for this scene change. A value of null causes the scene change to happen with no transition. |
 
 ### setTransition
 
@@ -148,9 +148,9 @@ Sets a specific transition to occur when the given pair of scenes is exited/ente
 
 | Parameters ||
 |---|---|
-| `fromScene` | [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene)!: The scene being exited when the given transition will be run |
-| `toScene` | [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene)!: The scene being entered when the given transition will be run |
-| `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!: The transition that will play when the given scene is entered. A value of null will result in the default behavior of using the default transition instead. |
+| `fromScene` | [Scene](../android/transition/Scene.md)!: The scene being exited when the given transition will be run |
+| `toScene` | [Scene](../android/transition/Scene.md)!: The scene being entered when the given transition will be run |
+| `transition` | [Transition](../android/transition/Transition.md)!: The transition that will play when the given scene is entered. A value of null will result in the default behavior of using the default transition instead. |
 | --- | --- |
 
 ### setTransition
@@ -168,8 +168,8 @@ Sets a specific transition to occur when the given scene is entered.
 
 | Parameters ||
 |---|---|
-| `scene` | [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene)!: The scene which, when applied, will cause the given transition to run. |
-| `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!: The transition that will play when the given scene is entered. A value of null will result in the default behavior of using the default transition instead. |
+| `scene` | [Scene](../android/transition/Scene.md)!: The scene which, when applied, will cause the given transition to run. |
+| `transition` | [Transition](../android/transition/Transition.md)!: The transition that will play when the given scene is entered. A value of null will result in the default behavior of using the default transition instead. |
 
 ### transitionTo
 
@@ -183,4 +183,4 @@ Change to the given scene, using the appropriate transition for this particular 
 
 | Parameters ||
 |---|---|
-| `scene` | [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene)!: The Scene to change to |
+| `scene` | [Scene](../android/transition/Scene.md)!: The Scene to change to |

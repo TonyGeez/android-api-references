@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # NfcBarcode
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/NfcBarcode "View this page in Java") 
+Kotlin| [Java](../android/nfc/tech/NfcBarcode.md) 
 | --- | --- |
 
 ```
@@ -13,30 +13,30 @@ class NfcBarcode : TagTechnology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.tech.NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#) |
+| ↳ | [android.nfc.tech.NfcBarcode](../android/nfc/tech/NfcBarcode.md) |
 
 Provides access to tags containing just a barcode.
 
-Acquire an [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#) object using [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#get(android.nfc.Tag)).
+Acquire an [NfcBarcode](../android/nfc/tech/NfcBarcode.md) object using [get](../android/nfc/tech/NfcBarcode.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_KOVIO](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#TYPE_KOVIO:kotlin.Int) Kovio Tags |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#TYPE_UNKNOWN:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_KOVIO](../android/nfc/tech/NfcBarcode.md) Kovio Tags |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](../android/nfc/tech/NfcBarcode.md) <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#close())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#connect())`()` <br /> |
-| static [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#) for the given tag. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/nfc/tech/NfcBarcode.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/nfc/tech/NfcBarcode.md))`()` <br /> |
+| static [NfcBarcode](../android/nfc/tech/NfcBarcode.md)! | [get](../android/nfc/tech/NfcBarcode.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` Get an instance of [NfcBarcode](../android/nfc/tech/NfcBarcode.md) for the given tag. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#getBarcode())`()` Returns the barcode of an NfcBarcode tag. |
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#getTag())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#getType())`()` Returns the NFC Barcode tag type. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBarcode](../android/nfc/tech/NfcBarcode.md))`()` Returns the barcode of an NfcBarcode tag. |
+| [Tag](../android/nfc/Tag.md)! | [getTag](../android/nfc/tech/NfcBarcode.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/nfc/tech/NfcBarcode.md))`()` Returns the NFC Barcode tag type. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#isConnected())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/nfc/tech/NfcBarcode.md))`()` <br /> |
 
 ## Constants
 
@@ -102,19 +102,19 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static fun get(tag: Tag!): NfcBarcode!
 ```
 
-Get an instance of [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#) for the given tag.
+Get an instance of [NfcBarcode](../android/nfc/tech/NfcBarcode.md) for the given tag.
 
-Returns null if [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#) was not enumerated in [Tag.getTechList](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#getTechList()).
+Returns null if [NfcBarcode](../android/nfc/tech/NfcBarcode.md) was not enumerated in [Tag.getTechList](../android/nfc/Tag.md)).
 
 Does not cause any RF activity and does not block.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------|
-| `tag` | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!:an NfcBarcode compatible tag |
+| `tag` | [Tag](../android/nfc/Tag.md)!:an NfcBarcode compatible tag |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------|
-| [NfcBarcode](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#)! | NfcBarcode object |
+| [NfcBarcode](../android/nfc/tech/NfcBarcode.md)! | NfcBarcode object |
 
 ### getBarcode
 
@@ -126,7 +126,7 @@ fun getBarcode(): ByteArray!
 
 Returns the barcode of an NfcBarcode tag.
 
-Tags of [TYPE_KOVIO](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#TYPE_KOVIO:kotlin.Int) return 16 bytes:
+Tags of [TYPE_KOVIO](../android/nfc/tech/NfcBarcode.md) return 16 bytes:
 
 - The first byte is 0x80 ORd with a manufacturer ID, corresponding to ISO/IEC 7816-6.
 - The second byte describes the payload data format. Defined data format types include the following:
@@ -160,7 +160,7 @@ fun getTag(): Tag!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | the [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#) backing this [TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology) object. |
+| [Tag](../android/nfc/Tag.md)! | the [Tag](../android/nfc/Tag.md) backing this [TagTechnology](../android/nfc/tech/TagTechnology.md) object. |
 
 ### getType
 
@@ -172,7 +172,7 @@ fun getType(): Int
 
 Returns the NFC Barcode tag type.
 
-Currently only one of [TYPE_KOVIO](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#TYPE_KOVIO:kotlin.Int) or [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcBarcode#TYPE_UNKNOWN:kotlin.Int).
+Currently only one of [TYPE_KOVIO](../android/nfc/tech/NfcBarcode.md) or [TYPE_UNKNOWN](../android/nfc/tech/NfcBarcode.md).
 
 Does not cause any RF activity and does not block.
 

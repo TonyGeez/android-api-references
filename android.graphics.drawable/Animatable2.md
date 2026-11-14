@@ -4,16 +4,16 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # Animatable2
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/Animatable2 "View this page in Java") 
+Kotlin| [Java](../android/graphics/drawable/Animatable2.md) 
 | --- | --- |
 
 ```
 interface Animatable2 : Animatable
 ```
 
-| [android.graphics.drawable.Animatable2](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#) |
+| [android.graphics.drawable.Animatable2](../android/graphics/drawable/Animatable2.md) |
 
-| Known Direct Subclasses [AnimatedImageDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable), [AnimatedVectorDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatedImageDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedImageDrawable) | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) for drawing animated images (like GIF). | | [AnimatedVectorDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable) | This class animates properties of a [android.graphics.drawable.VectorDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable) with animations defined using [android.animation.ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator.html#) or [android.animation.AnimatorSet](https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.html#). | |
+| Known Direct Subclasses [AnimatedImageDrawable](../android/graphics/drawable/AnimatedImageDrawable.md), [AnimatedVectorDrawable](../android/graphics/drawable/AnimatedVectorDrawable.md) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatedImageDrawable](../android/graphics/drawable/AnimatedImageDrawable.md) | [Drawable](../android/graphics/drawable/Drawable.md) for drawing animated images (like GIF). | | [AnimatedVectorDrawable](../android/graphics/drawable/AnimatedVectorDrawable.md) | This class animates properties of a [android.graphics.drawable.VectorDrawable](../android/graphics/drawable/VectorDrawable.md) with animations defined using [android.animation.ObjectAnimator](../android/animation/ObjectAnimator.md) or [android.animation.AnimatorSet](../android/animation/AnimatorSet.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class that drawables supporting animations and callbacks should extend.
@@ -22,18 +22,18 @@ Abstract class that drawables supporting animations and callbacks should extend.
 
 | Nested classes ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback) <br /> |
+| abstract | [AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md) <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAnimationCallbacks](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#clearAnimationCallbacks())`()` Removes all existing animation callbacks. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#registerAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback))`(`callback:` ` [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback)`)` Adds a callback to listen to the animation events. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterAnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2#unregisterAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback))`(`callback:` ` [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback)`)` Removes the specified animation callback. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAnimationCallbacks](../android/graphics/drawable/Animatable2.md))`()` Removes all existing animation callbacks. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAnimationCallback](../android/graphics/drawable/Animatable2.md))`(`callback:` ` [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md)`)` Adds a callback to listen to the animation events. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterAnimationCallback](../android/graphics/drawable/Animatable2.md))`(`callback:` ` [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md)`)` Removes the specified animation callback. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Animatable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable#isRunning())`()` <br /> Indicates whether the animation is running. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable#start())`()` <br /> Starts the drawable's animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable#stop())`()` <br /> Stops the drawable's animation. <br /> | ||
+| From class [Animatable](../android/graphics/drawable/Animatable.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](../android/graphics/drawable/Animatable.md))`()` <br /> Indicates whether the animation is running. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/graphics/drawable/Animatable.md))`()` <br /> Starts the drawable's animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../android/graphics/drawable/Animatable.md))`()` <br /> Stops the drawable's animation. <br /> | ||
 
 ## Public methods
 
@@ -59,7 +59,7 @@ Adds a callback to listen to the animation events.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback):Callback to add. This value cannot be`null`. |
+| `callback` | [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md):Callback to add. This value cannot be`null`. |
 
 ### unregisterAnimationCallback
 
@@ -73,7 +73,7 @@ Removes the specified animation callback.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Animatable2.AnimationCallback](https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback):Callback to remove. This value cannot be`null`. |
+| `callback` | [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md):Callback to remove. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|

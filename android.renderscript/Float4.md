@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Float4
 
-Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Float4 "View this page in Java") 
+Kotlin| [Java](../android/renderscript/Float4.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Float4
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Float4](https://developer.android.com/reference/kotlin/android/renderscript/Float4#) |
+| ↳ | [android.renderscript.Float4](../android/renderscript/Float4.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,16 +26,16 @@ Vector version of the basic float type. Provides four float fields packed.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Float4](https://developer.android.com/reference/kotlin/android/renderscript/Float4#Float4())`()` <br /> |
-| [Float4](https://developer.android.com/reference/kotlin/android/renderscript/Float4#Float4(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| [Float4](../android/renderscript/Float4.md))`()` <br /> |
+| [Float4](../android/renderscript/Float4.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [w](https://developer.android.com/reference/kotlin/android/renderscript/Float4#w:kotlin.Float) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Float4#x:kotlin.Float) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Float4#y:kotlin.Float) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [w](../android/renderscript/Float4.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](../android/renderscript/Float4.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](../android/renderscript/Float4.md) <br /> |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [z](https://developer.android.com/reference/kotlin/android/renderscript/Float4#z:kotlin.Float) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [z](../android/renderscript/Float4.md) <br /> |
 
 ## Public constructors
 

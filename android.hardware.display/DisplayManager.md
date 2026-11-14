@@ -8,7 +8,7 @@ class DisplayManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.display.DisplayManager](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#) |
+| ↳ | [android.hardware.display.DisplayManager](../android/hardware/display/DisplayManager.md) |
 
 Manages the properties of attached displays.
 
@@ -48,19 +48,19 @@ Manages the properties of attached displays.
 
 | Public methods ||
 |---|---|
-| [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig)(config: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig)` Creates a virtual display. |
-| [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig,%20android.os.Handler,%20android.hardware.display.VirtualDisplay.Callback)(config: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, callback: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback?)` Creates a virtual display. |
-| [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, densityDpi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a virtual display. |
+| [VirtualDisplay](../android/hardware/display/VirtualDisplay.md)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig)(config: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig)` Creates a virtual display. |
+| [VirtualDisplay](../android/hardware/display/VirtualDisplay.md)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig,%20android.os.Handler,%20android.hardware.display.VirtualDisplay.Callback)(config: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, callback: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback?)` Creates a virtual display. |
+| [VirtualDisplay](../android/hardware/display/VirtualDisplay.md)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, densityDpi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a virtual display. |
 | --- | --- |
-| [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20kotlin.Int,%20android.hardware.display.VirtualDisplay.Callback,%20android.os.Handler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, densityDpi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Creates a virtual display. |
+| [VirtualDisplay](../android/hardware/display/VirtualDisplay.md)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20kotlin.Int,%20android.hardware.display.VirtualDisplay.Callback,%20android.os.Handler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, densityDpi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Creates a virtual display. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getBrightness(kotlin.Int,%20kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the brightness of the specified display in the specified brightness unit. |
-| [Display](https://developer.android.com/reference/kotlin/android/view/Display.html#)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplay(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets information about a logical display. |
+| [Display](../android/view/Display.md)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplay(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets information about a logical display. |
 | --- | --- |
-| [DisplayTopology](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplayTopology()()` <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](https://developer.android.com/reference/kotlin/android/view/Display.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays()()` Gets all currently valid logical displays. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](https://developer.android.com/reference/kotlin/android/view/Display.html#)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets all currently valid logical displays of the specified category. |
+| [DisplayTopology](../android/hardware/display/DisplayTopology.md)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplayTopology()()` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](../android/view/Display.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays()()` Gets all currently valid logical displays. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](../android/view/Display.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets all currently valid logical displays of the specified category. |
 | --- | --- |
-| [HdrConversionMode](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getHdrConversionMode()()` Returns the `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode` of the device, which is set by the user. |
+| [HdrConversionMode](../android/hardware/display/HdrConversionMode.md) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getHdrConversionMode()()` Returns the `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode` of the device, which is set by the user. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getMatchContentFrameRateUserPreference()()` Returns the user preference for "Match content frame rate". |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerDisplayListener(android.hardware.display.DisplayManager.DisplayListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Registers a display listener to receive notifications about when displays are added, removed or changed. |
 | --- | --- |
@@ -414,7 +414,7 @@ Creates a virtual display.
 
 | Parameters ||
 |---|---|
-| `config` | [VirtualDisplayConfig](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig): This value cannot be `null`. |
+| `config` | [VirtualDisplayConfig](../android/hardware/display/VirtualDisplayConfig.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -450,9 +450,9 @@ Detaching the surface that backs a virtual display has a similar effect to turni
 
 | Parameters ||
 |---|---|
-| `config` | [VirtualDisplayConfig](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig): The configuration of the virtual display, must be non-null. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
-| `callback` | [VirtualDisplay.Callback](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback)?: Callback to call when the state of the `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay` changes. This value may be `null`. |
+| `config` | [VirtualDisplayConfig](../android/hardware/display/VirtualDisplayConfig.md): The configuration of the virtual display, must be non-null. |
+| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
+| `callback` | [VirtualDisplay.Callback](../android/hardware/display/VirtualDisplay.Callback.md)?: Callback to call when the state of the `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay` changes. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -487,7 +487,7 @@ Creates a virtual display.
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is 1 or greater |
 | --- | --- |
 | `densityDpi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is 1 or greater |
-| `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)?: This value may be `null`. |
+| `surface` | [Surface](../android/view/Surface.md)?: This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PUBLIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_SECURE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR:kotlin.Int` |
 | --- | --- |
 
@@ -531,11 +531,11 @@ Detaching the surface that backs a virtual display has a similar effect to turni
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the virtual display in pixels, must be greater than 0. Value is 1 or greater |
 | --- | --- |
 | `densityDpi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The density of the virtual display in dpi, must be greater than 0. Value is 1 or greater |
-| `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)?: The surface to which the content of the virtual display should be rendered, or null if there is none initially. |
+| `surface` | [Surface](../android/view/Surface.md)?: The surface to which the content of the virtual display should be rendered, or null if there is none initially. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A combination of virtual display flags: `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PUBLIC:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PRESENTATION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_SECURE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PUBLIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_SECURE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR:kotlin.Int` |
 | --- | --- |
-| `callback` | [VirtualDisplay.Callback](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback)?: Callback to call when the state of the `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay` changes. This value may be `null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
+| `callback` | [VirtualDisplay.Callback](../android/hardware/display/VirtualDisplay.Callback.md)?: Callback to call when the state of the `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay` changes. This value may be `null`. |
+| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
 
 | Return ||
 |---|---|
@@ -680,8 +680,8 @@ Registers a display listener to receive notifications about when displays are ad
 
 | Parameters ||
 |---|---|
-| `listener` | [DisplayManager.DisplayListener](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener)!: The listener to register. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
+| `listener` | [DisplayManager.DisplayListener](../android/hardware/display/DisplayManager.DisplayListener.md)!: The listener to register. |
+| `handler` | [Handler](../android/os/Handler.md)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
 
 **See Also**
 
@@ -703,9 +703,9 @@ Registers a display listener to receive notifications about given display event 
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Executor for the thread that will be receiving the callbacks. Cannot be null. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): Executor for the thread that will be receiving the callbacks. Cannot be null. |
 | `eventFilter` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): A bitmask of the event types for which this listener is subscribed. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_ADDED:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_CHANGED:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_REMOVED:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_REFRESH_RATE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_STATE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_BRIGHTNESS:kotlin.Long` |
-| `listener` | [DisplayManager.DisplayListener](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener): The listener to register. This value cannot be `null`. |
+| `listener` | [DisplayManager.DisplayListener](../android/hardware/display/DisplayManager.DisplayListener.md): The listener to register. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
@@ -728,8 +728,8 @@ Register a listener to receive display topology updates.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor specifying the thread on which the callbacks will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [DisplayTopology](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology)!\>: The listener. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor specifying the thread on which the callbacks will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [DisplayTopology](../android/hardware/display/DisplayTopology.md)!\>: The listener. This value cannot be `null`. |
 
 ### setBrightness
 
@@ -768,7 +768,7 @@ Unregisters a display listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [DisplayManager.DisplayListener](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener)!: The listener to unregister. |
+| `listener` | [DisplayManager.DisplayListener](../android/hardware/display/DisplayManager.DisplayListener.md)!: The listener to unregister. |
 
 **See Also**
 
@@ -784,4 +784,4 @@ Unregister a display topology listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [DisplayTopology](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology)!\>: The listener to unregister. This value cannot be `null`. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [DisplayTopology](../android/hardware/display/DisplayTopology.md)!\>: The listener to unregister. This value cannot be `null`. |

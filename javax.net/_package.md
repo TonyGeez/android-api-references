@@ -4,6 +4,6 @@
 
 ## Classes
 
-| [ServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory) | This class creates server sockets. |
+| [ServerSocketFactory](../javax/net/ServerSocketFactory.md) | This class creates server sockets. |
 | --- | --- |
-| [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory) | This class creates sockets. |
+| [SocketFactory](../javax/net/SocketFactory.md) | This class creates sockets. |

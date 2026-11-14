@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # VcnConfig
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/vcn/VcnConfig "View this page in Java")
+Kotlin | [Java](../android/net/vcn/VcnConfig.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class VcnConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.vcn.VcnConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#) |
+| ↳ | [android.net.vcn.VcnConfig](../android/net/vcn/VcnConfig.md) |
 
 This class represents a configuration for a Virtual Carrier Network.
 
@@ -31,7 +31,7 @@ Each `https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayC
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [VcnGatewayConnectionConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#getGatewayConnectionConfigs()()` Retrieves the set of configured GatewayConnection(s). |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [VcnGatewayConnectionConfig](../android/net/vcn/VcnGatewayConnectionConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#getGatewayConnectionConfigs()()` Retrieves the set of configured GatewayConnection(s). |
 | --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#getRestrictedUnderlyingNetworkTransports()()` Retrieve the transports that will be restricted by the VCN. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#hashCode()()` Returns a hash code value for the object. |
@@ -40,7 +40,7 @@ Each `https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayC
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [VcnConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VcnConfig](../android/net/vcn/VcnConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -156,7 +156,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `out` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

@@ -10,7 +10,7 @@ open class DriverPropertyInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.sql.DriverPropertyInfo](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo#) |
+| ↳ | [java.sql.DriverPropertyInfo](../java/sql/DriverPropertyInfo.md) |
 
 Driver properties for making a connection. The`DriverPropertyInfo`class is of interest only to advanced programmers who need to interact with a Driver via the method`getDriverProperties`to discover and supply properties for connections.
 
@@ -18,16 +18,16 @@ Driver properties for making a connection. The`DriverPropertyInfo`class is of in
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DriverPropertyInfo](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo#DriverPropertyInfo(kotlin.String,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`DriverPropertyInfo`object with a given name and value. |
+| [DriverPropertyInfo](../java/sql/DriverPropertyInfo.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`DriverPropertyInfo`object with a given name and value. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [choices](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo#choices:kotlin.Array) An array of possible values if the value for the field`DriverPropertyInfo.value`may be selected from a particular set of values; otherwise null. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [description](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo#description:kotlin.String) A brief description of the property, which may be null. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo#name:kotlin.String) The name of the property. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [choices](../java/sql/DriverPropertyInfo.md) An array of possible values if the value for the field`DriverPropertyInfo.value`may be selected from a particular set of values; otherwise null. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [description](../java/sql/DriverPropertyInfo.md) A brief description of the property, which may be null. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../java/sql/DriverPropertyInfo.md) The name of the property. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [required](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo#required:kotlin.Boolean) The`required`field is`true`if a value must be supplied for this property during`Driver.connect`and`false`otherwise. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [value](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo#value:kotlin.String) The`value`field specifies the current value of the property, based on a combination of the information supplied to the method`getPropertyInfo`, the Java environment, and the driver-supplied default values. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [required](../java/sql/DriverPropertyInfo.md) The`required`field is`true`if a value must be supplied for this property during`Driver.connect`and`false`otherwise. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [value](../java/sql/DriverPropertyInfo.md) The`value`field specifies the current value of the property, based on a combination of the information supplied to the method`getPropertyInfo`, the Java environment, and the driver-supplied default values. |
 
 ## Public constructors
 

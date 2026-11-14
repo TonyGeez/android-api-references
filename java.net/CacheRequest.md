@@ -10,7 +10,7 @@ abstract class CacheRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest#) |
+| ↳ | [java.net.CacheRequest](../java/net/CacheRequest.md) |
 
 Represents channels for storing resources in the ResponseCache. Instances of such a class provide an OutputStream object which is called by protocol handlers to store the resource data into the cache, and also an abort() method which allows a cache store operation to be interrupted and abandoned. If an IOException is encountered while reading the response or writing to the cache, the current cache store operation will be aborted.
 
@@ -18,12 +18,12 @@ Represents channels for storing resources in the ResponseCache. Instances of suc
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------|---|
-| [CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest#CacheRequest())`()` <br /> |
+| [CacheRequest](../java/net/CacheRequest.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abort](https://developer.android.com/reference/kotlin/java/net/CacheRequest#abort())`()` Aborts the attempt to cache the response. |
-| abstract [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [getBody](https://developer.android.com/reference/kotlin/java/net/CacheRequest#getBody())`()` Returns an OutputStream to which the response body can be written. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abort](../java/net/CacheRequest.md))`()` Aborts the attempt to cache the response. |
+| abstract [OutputStream](../java/io/OutputStream.md)! | [getBody](../java/net/CacheRequest.md))`()` Returns an OutputStream to which the response body can be written. |
 
 ## Public constructors
 
@@ -59,7 +59,7 @@ Returns an OutputStream to which the response body can be written.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | an OutputStream to which the response body can be written |
+| [OutputStream](../java/io/OutputStream.md)! | an OutputStream to which the response body can be written |
 
 | Exceptions ||
 |-----------------------|--------------------------------------------------------|

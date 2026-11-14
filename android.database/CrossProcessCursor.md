@@ -2,19 +2,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CrossProcessCursor
 
-Kotlin | [Java](https://developer.android.com/reference/android/database/CrossProcessCursor "View this page in Java")
+Kotlin | [Java](../android/database/CrossProcessCursor.md)
 | --- | --- |
 
 ```
 interface CrossProcessCursor : Cursor
 ```
 
-| [android.database.CrossProcessCursor](https://developer.android.com/reference/kotlin/android/database/CrossProcessCursor#) |
+| [android.database.CrossProcessCursor](../android/database/CrossProcessCursor.md) |
 
-| Known Direct Subclasses [AbstractCursor](https://developer.android.com/reference/kotlin/android/database/AbstractCursor), [CrossProcessCursorWrapper](https://developer.android.com/reference/kotlin/android/database/CrossProcessCursorWrapper) |---|---| | [AbstractCursor](https://developer.android.com/reference/kotlin/android/database/AbstractCursor) | This is an abstract cursor class that handles a lot of the common code that all cursors need to deal with and is provided for convenience reasons. | | [CrossProcessCursorWrapper](https://developer.android.com/reference/kotlin/android/database/CrossProcessCursorWrapper) | Cursor wrapper that implements `https://developer.android.com/reference/kotlin/android/database/CrossProcessCursor#`. | |
+| Known Direct Subclasses [AbstractCursor](../android/database/AbstractCursor.md), [CrossProcessCursorWrapper](../android/database/CrossProcessCursorWrapper.md) |---|---| | [AbstractCursor](../android/database/AbstractCursor.md) | This is an abstract cursor class that handles a lot of the common code that all cursors need to deal with and is provided for convenience reasons. | | [CrossProcessCursorWrapper](../android/database/CrossProcessCursorWrapper.md) | Cursor wrapper that implements `https://developer.android.com/reference/kotlin/android/database/CrossProcessCursor#`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AbstractWindowedCursor](https://developer.android.com/reference/kotlin/android/database/AbstractWindowedCursor), [MatrixCursor](https://developer.android.com/reference/kotlin/android/database/MatrixCursor), [MergeCursor](https://developer.android.com/reference/kotlin/android/database/MergeCursor), [SQLiteCursor](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor) |---|---| | [AbstractWindowedCursor](https://developer.android.com/reference/kotlin/android/database/AbstractWindowedCursor) | A base class for Cursors that store their data in `https://developer.android.com/reference/kotlin/android/database/CursorWindow`s. | | [MatrixCursor](https://developer.android.com/reference/kotlin/android/database/MatrixCursor) | A mutable cursor implementation backed by an array of `Object`s. | | [MergeCursor](https://developer.android.com/reference/kotlin/android/database/MergeCursor) | A convenience class that lets you present an array of Cursors as a single linear Cursor. | | [SQLiteCursor](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor) | A Cursor implementation that exposes results from a query on a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase`. | |
+| Known Indirect Subclasses [AbstractWindowedCursor](../android/database/AbstractWindowedCursor.md), [MatrixCursor](../android/database/MatrixCursor.md), [MergeCursor](../android/database/MergeCursor.md), [SQLiteCursor](../android/database/sqlite/SQLiteCursor.md) |---|---| | [AbstractWindowedCursor](../android/database/AbstractWindowedCursor.md) | A base class for Cursors that store their data in `https://developer.android.com/reference/kotlin/android/database/CursorWindow`s. | | [MatrixCursor](../android/database/MatrixCursor.md) | A mutable cursor implementation backed by an array of `Object`s. | | [MergeCursor](../android/database/MergeCursor.md) | A convenience class that lets you present an array of Cursors as a single linear Cursor. | | [SQLiteCursor](../android/database/sqlite/SQLiteCursor.md) | A Cursor implementation that exposes results from a query on a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A cross process cursor is an extension of a `https://developer.android.com/reference/kotlin/android/database/Cursor` that also supports usage from remote processes.
@@ -30,7 +30,7 @@ The contents of a cross process cursor are marshalled to the remote process by f
 | Public methods ||
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/CrossProcessCursor#fillWindow(kotlin.Int,%20android.database.CursorWindow)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, window: https://developer.android.com/reference/kotlin/android/database/CursorWindow!)` Copies cursor data into the window. |
-| abstract [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow)! | `https://developer.android.com/reference/kotlin/android/database/CrossProcessCursor#getWindow()()` Returns a pre-filled window that contains the data within this cursor. |
+| abstract [CursorWindow](../android/database/CursorWindow.md)! | `https://developer.android.com/reference/kotlin/android/database/CrossProcessCursor#getWindow()()` Returns a pre-filled window that contains the data within this cursor. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/CrossProcessCursor#onMove(kotlin.Int,%20kotlin.Int)(oldPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This function is called every time the cursor is successfully scrolled to a new position, giving the subclass a chance to update any state it may have. |
 | --- | --- |
 
@@ -62,7 +62,7 @@ The current position of the cursor, as returned by `https://developer.android.co
 | Parameters ||
 |---|---|
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The zero-based index of the first row to copy into the window. |
-| `window` | [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow)!: The window to fill. |
+| `window` | [CursorWindow](../android/database/CursorWindow.md)!: The window to fill. |
 
 ### getWindow
 

@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnKeyListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnKeyListener "View this page in Java") 
+Kotlin| [Java](../android/view/View.OnKeyListener.md) 
 | --- | --- |
 
 ```
 interface OnKeyListener
 ```
 
-| [android.view.View.OnKeyListener](https://developer.android.com/reference/kotlin/android/view/View.OnKeyListener#) |
+| [android.view.View.OnKeyListener](../android/view/View.OnKeyListener.md) |
 
 Interface definition for a callback to be invoked when a hardware key event is dispatched to this view. The callback will be invoked before the key event is given to the view. This is only useful for hardware keyboards; a software input method has no obligation to trigger this listener.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when a hardware key event is d
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKey](https://developer.android.com/reference/kotlin/android/view/View.OnKeyListener#onKey(android.view.View,%20kotlin.Int,%20android.view.KeyEvent))`(`v:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent)!`)` Called when a hardware key is dispatched to a view. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKey](../android/view/View.OnKeyListener.md))`(`v:` ` [View](../android/view/View.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Called when a hardware key is dispatched to a view. |
 
 ## Public methods
 
@@ -41,9 +41,9 @@ Key presses in software keyboards will generally NOT trigger this method, althou
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view the key has been dispatched to. |
+| `v` | [View](../android/view/View.md)!:The view the key has been dispatched to. |
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The code for the physical key that was pressed |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent)!:The KeyEvent object containing full information about the event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!:The KeyEvent object containing full information about the event. |
 | --- | --- |
 
 | Return ||

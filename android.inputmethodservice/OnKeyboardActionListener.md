@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnKeyboardActionListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener "View this page in Java") 
+Kotlin| [Java](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md) 
 | --- | --- |
 
 ```
 interface OnKeyboardActionListener
 ```
 
-| [android.inputmethodservice.KeyboardView.OnKeyboardActionListener](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#) |
+| [android.inputmethodservice.KeyboardView.OnKeyboardActionListener](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -24,16 +24,16 @@ Listener for virtual keyboard events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onKey](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#onKey(kotlin.Int,%20kotlin.IntArray))`(`primaryCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `keyCodes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Send a key press to the listener. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPress](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#onPress(kotlin.Int))`(`primaryCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the user presses a key. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRelease](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#onRelease(kotlin.Int))`(`primaryCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the user releases a key. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onKey](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`(`primaryCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `keyCodes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Send a key press to the listener. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPress](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`(`primaryCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the user presses a key. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRelease](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`(`primaryCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the user releases a key. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onText](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#onText(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sends a sequence of characters to the listener. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeDown](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#swipeDown())`()` Called when the user quickly moves the finger from up to down. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeLeft](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#swipeLeft())`()` Called when the user quickly moves the finger from right to left. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onText](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sends a sequence of characters to the listener. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeDown](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`()` Called when the user quickly moves the finger from up to down. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeLeft](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`()` Called when the user quickly moves the finger from right to left. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeRight](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#swipeRight())`()` Called when the user quickly moves the finger from left to right. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeUp](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#swipeUp())`()` Called when the user quickly moves the finger from down to up. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeRight](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`()` Called when the user quickly moves the finger from left to right. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swipeUp](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))`()` Called when the user quickly moves the finger from down to up. |
 
 ## Public methods
 
@@ -67,7 +67,7 @@ abstract fun onPress(primaryCode: Int): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called when the user presses a key. This is sent before the [onKey](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#onKey(kotlin.Int,%20kotlin.IntArray))is called. For keys that repeat, this is only called once.
+Called when the user presses a key. This is sent before the [onKey](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))is called. For keys that repeat, this is only called once.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -83,7 +83,7 @@ abstract fun onRelease(primaryCode: Int): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called when the user releases a key. This is sent after the [onKey](https://developer.android.com/reference/kotlin/android/inputmethodservice/KeyboardView.OnKeyboardActionListener#onKey(kotlin.Int,%20kotlin.IntArray))is called. For keys that repeat, this is only called once.
+Called when the user releases a key. This is sent after the [onKey](../android/inputmethodservice/KeyboardView.OnKeyboardActionListener.md))is called. For keys that repeat, this is only called once.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------|

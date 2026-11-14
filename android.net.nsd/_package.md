@@ -2,18 +2,18 @@
 
 ## Interfaces
 
-| [DiscoveryListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.DiscoveryListener) | Interface for callback invocation for service discovery |
+| [DiscoveryListener](../android/net/nsd/NsdManager.DiscoveryListener.md) | Interface for callback invocation for service discovery |
 | --- | --- |
-| [RegistrationListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.RegistrationListener) | Interface for callback invocation for service registration |
-| [ResolveListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener) | Callback for use with android. |
-| [ServiceInfoCallback](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ServiceInfoCallback) | Callback to listen to service info updates. |
+| [RegistrationListener](../android/net/nsd/NsdManager.RegistrationListener.md) | Interface for callback invocation for service registration |
+| [ResolveListener](../android/net/nsd/NsdManager.ResolveListener.md) | Callback for use with android. |
+| [ServiceInfoCallback](../android/net/nsd/NsdManager.ServiceInfoCallback.md) | Callback to listen to service info updates. |
 | --- | --- |
 
 ## Classes
 
-| [AdvertisingRequest](https://developer.android.com/reference/kotlin/android/net/nsd/AdvertisingRequest) | Encapsulates parameters for android. |
+| [AdvertisingRequest](../android/net/nsd/AdvertisingRequest.md) | Encapsulates parameters for android. |
 | --- | --- |
-| [DiscoveryRequest](https://developer.android.com/reference/kotlin/android/net/nsd/DiscoveryRequest) | Encapsulates parameters for android. |
-| [NsdManager](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager) | Provides APIs for discovering and advertising network services on the local network. |
-| [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo) | A class representing service information for network service discovery |
+| [DiscoveryRequest](../android/net/nsd/DiscoveryRequest.md) | Encapsulates parameters for android. |
+| [NsdManager](../android/net/nsd/NsdManager.md) | Provides APIs for discovering and advertising network services on the local network. |
+| [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md) | A class representing service information for network service discovery |
 | --- | --- |

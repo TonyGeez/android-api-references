@@ -4,14 +4,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # OnHoverListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnHoverListener "View this page in Java") 
+Kotlin| [Java](../android/view/View.OnHoverListener.md) 
 | --- | --- |
 
 ```
 interface OnHoverListener
 ```
 
-| [android.view.View.OnHoverListener](https://developer.android.com/reference/kotlin/android/view/View.OnHoverListener#) |
+| [android.view.View.OnHoverListener](../android/view/View.OnHoverListener.md) |
 
 Interface definition for a callback to be invoked when a hover event is dispatched to this view. The callback will be invoked before the hover event is given to the view.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when a hover event is dispatch
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onHover](https://developer.android.com/reference/kotlin/android/view/View.OnHoverListener#onHover(android.view.View,%20android.view.MotionEvent))`(`v:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `event:` ` [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent)!`)` Called when a hover event is dispatched to a view. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onHover](../android/view/View.OnHoverListener.md))`(`v:` ` [View](../android/view/View.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` Called when a hover event is dispatched to a view. |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ Called when a hover event is dispatched to a view. This allows listeners to get 
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view the hover event has been dispatched to. |
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent)!:The MotionEvent object containing full information about the event. |
+| `v` | [View](../android/view/View.md)!:The view the hover event has been dispatched to. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!:The MotionEvent object containing full information about the event. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

@@ -8,9 +8,9 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface SourceLocator
 ```
 
-| [javax.xml.transform.SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#) |
+| [javax.xml.transform.SourceLocator](../javax/xml/transform/SourceLocator.md) |
 
-| Known Direct Subclasses [DOMLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMLocator) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------| | [DOMLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMLocator) | Indicates the position of a node in a source DOM, intended primarily for error reporting. | |
+| Known Direct Subclasses [DOMLocator](../javax/xml/transform/dom/DOMLocator.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------| | [DOMLocator](../javax/xml/transform/dom/DOMLocator.md) | Indicates the position of a node in a source DOM, intended primarily for error reporting. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This interface is primarily for the purposes of reporting where an error occurred in the XML source or transformation instructions.
@@ -19,11 +19,11 @@ This interface is primarily for the purposes of reporting where an error occurre
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getColumnNumber())`()` Return the character position where the current document event ends. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getLineNumber())`()` Return the line number where the current document event ends. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getPublicId())`()` Return the public identifier for the current document event. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](../javax/xml/transform/SourceLocator.md))`()` Return the character position where the current document event ends. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](../javax/xml/transform/SourceLocator.md))`()` Return the line number where the current document event ends. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../javax/xml/transform/SourceLocator.md))`()` Return the public identifier for the current document event. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getSystemId())`()` Return the system identifier for the current document event. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../javax/xml/transform/SourceLocator.md))`()` Return the system identifier for the current document event. |
 
 ## Public methods
 
@@ -47,7 +47,7 @@ The return value is an approximation of the column number in the document entity
 
 **See Also**
 
-- [#getLineNumber](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getLineNumber()) 
+- [#getLineNumber](../javax/xml/transform/SourceLocator.md)) 
 
 ### getLineNumber
 
@@ -69,7 +69,7 @@ The return value is an approximation of the line number in the document entity o
 
 **See Also**
 
-- [#getColumnNumber](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getColumnNumber()) 
+- [#getColumnNumber](../javax/xml/transform/SourceLocator.md)) 
 
 ### getPublicId
 
@@ -89,7 +89,7 @@ The return value is the public identifier of the document entity or of the exter
 
 **See Also**
 
-- [#getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getSystemId()) 
+- [#getSystemId](../javax/xml/transform/SourceLocator.md)) 
 
 ### getSystemId
 
@@ -111,4 +111,4 @@ If the system identifier is a URL, the parser must resolve it fully before passi
 
 **See Also**
 
-- [#getPublicId](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator#getPublicId())
+- [#getPublicId](../javax/xml/transform/SourceLocator.md))

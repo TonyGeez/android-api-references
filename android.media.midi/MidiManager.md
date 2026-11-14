@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # MidiManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/midi/MidiManager "View this page in Java") 
+Kotlin| [Java](../android/media/midi/MidiManager.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ class MidiManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.midi.MidiManager](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#) |
+| ↳ | [android.media.midi.MidiManager](../android/media/midi/MidiManager.md) |
 
 This class is the public application interface to the MIDI service. 
-Requires the [PackageManager#FEATURE_MIDI](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_MIDI:kotlin.String) feature which can be detected using [PackageManager.hasSystemFeature(String)](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)).
+Requires the [PackageManager#FEATURE_MIDI](../android/content/pm/PackageManager.md) feature which can be detected using [PackageManager.hasSystemFeature(String)](../android/content/pm/PackageManager.md)).
 
 ## Summary
 
 | Nested classes ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback) Callback class used for clients to receive MIDI device added and removed notifications |
-| abstract | [OnDeviceOpenedListener](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.OnDeviceOpenedListener) Listener class used for receiving the results of [openDevice](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#openDevice(android.media.midi.MidiDeviceInfo,%20android.media.midi.MidiManager.OnDeviceOpenedListener,%20android.os.Handler))and [openBluetoothDevice](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#openBluetoothDevice(android.bluetooth.BluetoothDevice,%20android.media.midi.MidiManager.OnDeviceOpenedListener,%20android.os.Handler)) |
+| | [DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md) Callback class used for clients to receive MIDI device added and removed notifications |
+| abstract | [OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md) Listener class used for receiving the results of [openDevice](../android/media/midi/MidiManager.md))and [openBluetoothDevice](../android/media/midi/MidiManager.md)) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_MIDI_BYTE_STREAM](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#TRANSPORT_MIDI_BYTE_STREAM:kotlin.Int) Constant representing MIDI devices. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_UNIVERSAL_MIDI_PACKETS](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#TRANSPORT_UNIVERSAL_MIDI_PACKETS:kotlin.Int) Constant representing Universal MIDI devices. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_MIDI_BYTE_STREAM](../android/media/midi/MidiManager.md) Constant representing MIDI devices. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_UNIVERSAL_MIDI_PACKETS](../android/media/midi/MidiManager.md) Constant representing Universal MIDI devices. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)!\>! | [getDevices](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevices())`()` Gets a list of connected MIDI devices. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)!\> | [getDevicesForTransport](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevicesForTransport(kotlin.Int))`(`transport:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets a list of connected MIDI devices by transport. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openBluetoothDevice](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#openBluetoothDevice(android.bluetooth.BluetoothDevice,%20android.media.midi.MidiManager.OnDeviceOpenedListener,%20android.os.Handler))`(`bluetoothDevice:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!`, `listener:` ` [MidiManager.OnDeviceOpenedListener](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.OnDeviceOpenedListener)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Opens a Bluetooth MIDI device for reading and writing. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)!\>! | [getDevices](../android/media/midi/MidiManager.md))`()` Gets a list of connected MIDI devices. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)!\> | [getDevicesForTransport](../android/media/midi/MidiManager.md))`(`transport:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets a list of connected MIDI devices by transport. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openBluetoothDevice](../android/media/midi/MidiManager.md))`(`bluetoothDevice:` ` [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!`, `listener:` ` [MidiManager.OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Opens a Bluetooth MIDI device for reading and writing. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openDevice](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#openDevice(android.media.midi.MidiDeviceInfo,%20android.media.midi.MidiManager.OnDeviceOpenedListener,%20android.os.Handler))`(`deviceInfo:` ` [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)!`, `listener:` ` [MidiManager.OnDeviceOpenedListener](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.OnDeviceOpenedListener)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Opens a MIDI device for reading and writing. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#registerDeviceCallback(android.media.midi.MidiManager.DeviceCallback,%20android.os.Handler))`(`callback:` ` [MidiManager.DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Registers a callback to receive notifications when MIDI 1. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#registerDeviceCallback(kotlin.Int,%20java.util.concurrent.Executor,%20android.media.midi.MidiManager.DeviceCallback))`(`transport:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [MidiManager.DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback)`)` Registers a callback to receive notifications when MIDI devices are added and removed for a specific transport type. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openDevice](../android/media/midi/MidiManager.md))`(`deviceInfo:` ` [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)!`, `listener:` ` [MidiManager.OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Opens a MIDI device for reading and writing. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDeviceCallback](../android/media/midi/MidiManager.md))`(`callback:` ` [MidiManager.DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Registers a callback to receive notifications when MIDI 1. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDeviceCallback](../android/media/midi/MidiManager.md))`(`transport:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [MidiManager.DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md)`)` Registers a callback to receive notifications when MIDI devices are added and removed for a specific transport type. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#unregisterDeviceCallback(android.media.midi.MidiManager.DeviceCallback))`(`callback:` ` [MidiManager.DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback)!`)` Unregisters a [DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDeviceCallback](../android/media/midi/MidiManager.md))`(`callback:` ` [MidiManager.DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md)!`)` Unregisters a [DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md). |
 
 ## Constants
 
@@ -58,7 +58,7 @@ Constant representing MIDI devices. These devices do NOT support Universal MIDI 
 
 **See Also**
 
-- [android.media.midi.MidiManager#getDevicesForTransport](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevicesForTransport(kotlin.Int)) 
+- [android.media.midi.MidiManager#getDevicesForTransport](../android/media/midi/MidiManager.md)) 
 
 ### TRANSPORT_UNIVERSAL_MIDI_PACKETS
 
@@ -74,7 +74,7 @@ Constant representing Universal MIDI devices. These devices do support Universal
 
 **See Also**
 
-- [android.media.midi.MidiManager#getDevicesForTransport](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevicesForTransport(kotlin.Int))
+- [android.media.midi.MidiManager#getDevicesForTransport](../android/media/midi/MidiManager.md))
 
 ## Public methods
 
@@ -87,13 +87,13 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun getDevices(): Array<MidiDeviceInfo!>!
 ```
 
-**Deprecated:** *Use [getDevicesForTransport](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevicesForTransport(kotlin.Int))instead.*
+**Deprecated:** *Use [getDevicesForTransport](../android/media/midi/MidiManager.md))instead.*
 
-Gets a list of connected MIDI devices. This returns all devices that do not default to Universal MIDI Packets. To get those instead, please call [getDevicesForTransport](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevicesForTransport(kotlin.Int))instead.
+Gets a list of connected MIDI devices. This returns all devices that do not default to Universal MIDI Packets. To get those instead, please call [getDevicesForTransport](../android/media/midi/MidiManager.md))instead.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)!>! | an array of MIDI devices |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)!>! | an array of MIDI devices |
 
 ### getDevicesForTransport
 
@@ -107,11 +107,11 @@ Gets a list of connected MIDI devices by transport. TRANSPORT_MIDI_BYTE_STREAM i
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `transport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The transport to be used. This is either TRANSPORT_MIDI_BYTE_STREAM or TRANSPORT_UNIVERSAL_MIDI_PACKETS. Value is [android.media.midi.MidiManager#TRANSPORT_MIDI_BYTE_STREAM](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#TRANSPORT_MIDI_BYTE_STREAM:kotlin.Int), or [android.media.midi.MidiManager#TRANSPORT_UNIVERSAL_MIDI_PACKETS](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#TRANSPORT_UNIVERSAL_MIDI_PACKETS:kotlin.Int) |
+| `transport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The transport to be used. This is either TRANSPORT_MIDI_BYTE_STREAM or TRANSPORT_UNIVERSAL_MIDI_PACKETS. Value is [android.media.midi.MidiManager#TRANSPORT_MIDI_BYTE_STREAM](../android/media/midi/MidiManager.md), or [android.media.midi.MidiManager#TRANSPORT_UNIVERSAL_MIDI_PACKETS](../android/media/midi/MidiManager.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)!> | a collection of MIDI devices This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)!> | a collection of MIDI devices This value cannot be`null`. |
 
 ### openBluetoothDevice
 
@@ -129,9 +129,9 @@ Opens a Bluetooth MIDI device for reading and writing. Bluetooth MIDI devices ar
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bluetoothDevice` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!:a [android.bluetooth.BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#) to open as a MIDI device |
-| `listener` | [MidiManager.OnDeviceOpenedListener](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.OnDeviceOpenedListener)!:a [MidiManager.OnDeviceOpenedListener](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.OnDeviceOpenedListener) to be called to receive the result |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:the [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) that will be used for delivering the result. If handler is null, then the thread used for the listener is unspecified. |
+| `bluetoothDevice` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!:a [android.bluetooth.BluetoothDevice](../android/bluetooth/BluetoothDevice.md) to open as a MIDI device |
+| `listener` | [MidiManager.OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md)!:a [MidiManager.OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md) to be called to receive the result |
+| `handler` | [Handler](../android/os/Handler.md)!:the [Handler](../android/os/Handler.md) that will be used for delivering the result. If handler is null, then the thread used for the listener is unspecified. |
 | --- | --- |
 
 ### openDevice
@@ -150,9 +150,9 @@ Opens a MIDI device for reading and writing.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `deviceInfo` | [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)!:a [android.media.midi.MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo) to open |
-| `listener` | [MidiManager.OnDeviceOpenedListener](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.OnDeviceOpenedListener)!:a [MidiManager.OnDeviceOpenedListener](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.OnDeviceOpenedListener) to be called to receive the result |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:the [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) that will be used for delivering the result. If handler is null, then the thread used for the listener is unspecified. |
+| `deviceInfo` | [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)!:a [android.media.midi.MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md) to open |
+| `listener` | [MidiManager.OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md)!:a [MidiManager.OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md) to be called to receive the result |
+| `handler` | [Handler](../android/os/Handler.md)!:the [Handler](../android/os/Handler.md) that will be used for delivering the result. If handler is null, then the thread used for the listener is unspecified. |
 | --- | --- |
 
 ### registerDeviceCallback
@@ -167,14 +167,14 @@ fun registerDeviceCallback(
 ): Unit
 ```
 
-**Deprecated:** *Use [registerDeviceCallback(int,java.util.concurrent.Executor,android.media.midi.MidiManager.DeviceCallback)](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#registerDeviceCallback(kotlin.Int,%20java.util.concurrent.Executor,%20android.media.midi.MidiManager.DeviceCallback))instead.*
+**Deprecated:** *Use [registerDeviceCallback(int,java.util.concurrent.Executor,android.media.midi.MidiManager.DeviceCallback)](../android/media/midi/MidiManager.md))instead.*
 
-Registers a callback to receive notifications when MIDI 1.0 devices are added and removed. These are devices that do not default to Universal MIDI Packets. To register for a callback for those, call #registerDeviceCallback instead. The [DeviceCallback.onDeviceStatusChanged](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback#onDeviceStatusChanged(android.media.midi.MidiDeviceStatus))method will be called immediately for any devices that have open ports. This allows applications to know which input ports are already in use and, therefore, unavailable. Applications should call [getDevices](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevices())before registering the callback to get a list of devices already added.
+Registers a callback to receive notifications when MIDI 1.0 devices are added and removed. These are devices that do not default to Universal MIDI Packets. To register for a callback for those, call #registerDeviceCallback instead. The [DeviceCallback.onDeviceStatusChanged](../android/media/midi/MidiManager.DeviceCallback.md))method will be called immediately for any devices that have open ports. This allows applications to know which input ports are already in use and, therefore, unavailable. Applications should call [getDevices](../android/media/midi/MidiManager.md))before registering the callback to get a list of devices already added.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [MidiManager.DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback)!:a [DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback) for MIDI device notifications |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:The [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) that will be used for delivering the device notifications. If handler is null, then the thread used for the callback is unspecified. |
+| `callback` | [MidiManager.DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md)!:a [DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md) for MIDI device notifications |
+| `handler` | [Handler](../android/os/Handler.md)!:The [Handler](../android/os/Handler.md) that will be used for delivering the device notifications. If handler is null, then the thread used for the callback is unspecified. |
 
 ### registerDeviceCallback
 
@@ -188,13 +188,13 @@ fun registerDeviceCallback(
 ): Unit
 ```
 
-Registers a callback to receive notifications when MIDI devices are added and removed for a specific transport type. The [DeviceCallback.onDeviceStatusChanged](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback#onDeviceStatusChanged(android.media.midi.MidiDeviceStatus))method will be called immediately for any devices that have open ports. This allows applications to know which input ports are already in use and, therefore, unavailable. Applications should call [getDevicesForTransport](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#getDevicesForTransport(kotlin.Int))before registering the callback to get a list of devices already added.
+Registers a callback to receive notifications when MIDI devices are added and removed for a specific transport type. The [DeviceCallback.onDeviceStatusChanged](../android/media/midi/MidiManager.DeviceCallback.md))method will be called immediately for any devices that have open ports. This allows applications to know which input ports are already in use and, therefore, unavailable. Applications should call [getDevicesForTransport](../android/media/midi/MidiManager.md))before registering the callback to get a list of devices already added.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `transport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The transport to be used. This is either TRANSPORT_MIDI_BYTE_STREAM or TRANSPORT_UNIVERSAL_MIDI_PACKETS. Value is [android.media.midi.MidiManager#TRANSPORT_MIDI_BYTE_STREAM](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#TRANSPORT_MIDI_BYTE_STREAM:kotlin.Int), or [android.media.midi.MidiManager#TRANSPORT_UNIVERSAL_MIDI_PACKETS](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#TRANSPORT_UNIVERSAL_MIDI_PACKETS:kotlin.Int) |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that will be used for delivering the device notifications. This value cannot be`null`. |
-| `callback` | [MidiManager.DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback):a [DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback) for MIDI device notifications This value cannot be`null`. |
+| `transport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The transport to be used. This is either TRANSPORT_MIDI_BYTE_STREAM or TRANSPORT_UNIVERSAL_MIDI_PACKETS. Value is [android.media.midi.MidiManager#TRANSPORT_MIDI_BYTE_STREAM](../android/media/midi/MidiManager.md), or [android.media.midi.MidiManager#TRANSPORT_UNIVERSAL_MIDI_PACKETS](../android/media/midi/MidiManager.md) |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):The [Executor](../java/util/concurrent/Executor.md) that will be used for delivering the device notifications. This value cannot be`null`. |
+| `callback` | [MidiManager.DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md):a [DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md) for MIDI device notifications This value cannot be`null`. |
 | --- | --- |
 
 ### unregisterDeviceCallback
@@ -205,8 +205,8 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun unregisterDeviceCallback(callback: MidiManager.DeviceCallback!): Unit
 ```
 
-Unregisters a [DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback).
+Unregisters a [DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md).
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [MidiManager.DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback)!:a [DeviceCallback](https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.DeviceCallback) to unregister |
+| `callback` | [MidiManager.DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md)!:a [DeviceCallback](../android/media/midi/MidiManager.DeviceCallback.md) to unregister |

@@ -8,8 +8,8 @@ abstract class CameraOfflineSession : CameraCaptureSession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.hardware.camera2.CameraCaptureSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession) ||
-| | ↳ | [android.hardware.camera2.CameraOfflineSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraOfflineSession#) |
+| ↳ | [android.hardware.camera2.CameraCaptureSession](../android/hardware/camera2/CameraCaptureSession.md) ||
+| | ↳ | [android.hardware.camera2.CameraOfflineSession](../android/hardware/camera2/CameraOfflineSession.md) |
 
 A camera capture session that was switched to offline mode via successful call to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#switchToOffline(kotlin.collections.MutableCollection,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraOfflineSession.CameraOfflineSessionCallback)`.
 

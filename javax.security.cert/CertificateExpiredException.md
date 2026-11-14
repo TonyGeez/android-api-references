@@ -11,10 +11,10 @@ open class CertificateExpiredException : CertificateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [javax.security.cert.CertificateException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [javax.security.cert.CertificateException](../javax/security/cert/CertificateException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.security.cert.CertificateExpiredException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateExpiredException#) |
+| | | | ↳ | [javax.security.cert.CertificateExpiredException](../javax/security/cert/CertificateExpiredException.md) |
 
 Certificate Expired Exception. This is thrown whenever the current`Date`or the specified`Date`is after the`notAfter`date/time specified in the validity period of the certificate.
 
@@ -24,8 +24,8 @@ Certificate Expired Exception. This is thrown whenever the current`Date`or the s
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertificateExpiredException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateExpiredException#CertificateExpiredException())`()` Constructs a CertificateExpiredException with no detail message. |
-| [CertificateExpiredException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateExpiredException#CertificateExpiredException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateExpiredException with the specified detail message. |
+| [CertificateExpiredException](../javax/security/cert/CertificateExpiredException.md))`()` Constructs a CertificateExpiredException with no detail message. |
+| [CertificateExpiredException](../javax/security/cert/CertificateExpiredException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateExpiredException with the specified detail message. |
 
 ## Public constructors
 

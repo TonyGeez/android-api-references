@@ -8,11 +8,11 @@ open class BackupAgentHelper : BackupAgent
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.backup.BackupAgent](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.backup.BackupAgent](../android/app/backup/BackupAgent.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.backup.BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper#) |
+| | | | ↳ | [android.app.backup.BackupAgentHelper](../android/app/backup/BackupAgentHelper.md) |
 
 A convenient `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` wrapper class that automatically manages heterogeneous data sets within the backup data, each identified by a unique key prefix. When processing a backup or restore operation, the BackupAgentHelper dispatches to one or more installed `https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper` objects, each of which is responsible for a defined subset of the data being processed.
 
@@ -480,7 +480,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -2255,7 +2255,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2296,9 +2296,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2582,7 +2582,7 @@ If the key prefix already exists, the new helper will replace the old one.
 | Parameters ||
 |---|---|
 | `keyPrefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A string used to disambiguate the various helpers within this agent |
-| `helper` | [BackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper)!: A backup/restore helper object to be invoked during backup and restore operations. |
+| `helper` | [BackupHelper](../android/app/backup/BackupHelper.md)!: A backup/restore helper object to be invoked during backup and restore operations. |
 
 ### onBackup
 
@@ -2600,9 +2600,9 @@ Run the backup process on each of the configured handlers.
 
 | Parameters ||
 |---|---|
-| `oldState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read-only ParcelFileDescriptor pointing to the last backup state provided by the application. May be `null`, in which case no prior state is being provided and the application should perform a full backup. |
-| `data` | [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!: A structured wrapper around an open, read/write file descriptor pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
-| `newState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after writing the requested data to the `data` output stream. |
+| `oldState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!: An open, read-only ParcelFileDescriptor pointing to the last backup state provided by the application. May be `null`, in which case no prior state is being provided and the application should perform a full backup. |
+| `data` | [BackupDataOutput](../android/app/backup/BackupDataOutput.md)!: A structured wrapper around an open, read/write file descriptor pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
+| `newState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after writing the requested data to the `data` output stream. |
 | --- | --- |
 
 ### onRestore
@@ -2621,7 +2621,7 @@ Run the restore process on each of the configured handlers.
 
 | Parameters ||
 |---|---|
-| `data` | [BackupDataInput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput)!: A structured wrapper around an open, read-only file descriptor pointing to a full snapshot of the application's data. The application should consume every entity represented in this data stream. |
+| `data` | [BackupDataInput](../android/app/backup/BackupDataInput.md)!: A structured wrapper around an open, read-only file descriptor pointing to a full snapshot of the application's data. The application should consume every entity represented in this data stream. |
 | `appVersionCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value of the [`android:versionCode`](https://developer.android.com/guide/topics/manifest/manifest-element.html#vcode) manifest attribute, from the application that backed up this particular data set. This makes it possible for an application's agent to distinguish among any possible older data versions when asked to perform the restore operation. |
-| `newState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after restoring its data from the `data` stream. When a full-backup dataset is being restored, this will be `null`. |
+| `newState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after restoring its data from the `data` stream. When a full-backup dataset is being restored, this will be `null`. |
 | --- | --- |

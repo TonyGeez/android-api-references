@@ -2,95 +2,95 @@
 
 # android.health.connect.datatypes
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/package-summary "View this page in Java")
+Kotlin| [Java](../android/health/connect/datatypes/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [ActiveCaloriesBurnedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord) | Captures the estimated active energy burned by the user (in kilocalories), excluding basal metabolic rate (BMR). |
+| [ActiveCaloriesBurnedRecord](../android/health/connect/datatypes/ActiveCaloriesBurnedRecord.md) | Captures the estimated active energy burned by the user (in kilocalories), excluding basal metabolic rate (BMR). |
 | --- | --- |
-| [ActivityIntensityRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord) | Represents intensity of an activity. |
-| [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType) | Class to represent aggregation types in [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) classes. |
-| [AppInfo](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AppInfo) | Application Info class containing details about a given application |
+| [ActivityIntensityRecord](../android/health/connect/datatypes/ActivityIntensityRecord.md) | Represents intensity of an activity. |
+| [AggregationType](../android/health/connect/datatypes/AggregationType.md) | Class to represent aggregation types in [Record](../android/health/connect/datatypes/Record.md) classes. |
+| [AppInfo](../android/health/connect/datatypes/AppInfo.md) | Application Info class containing details about a given application |
 | --- | --- |
-| [BasalBodyTemperatureRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalBodyTemperatureRecord) | Captures the body temperature of a user when at rest (for example, immediately after waking up). |
-| [BasalMetabolicRateRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord) | Captures the BMR of a user. |
-| [BloodGlucoseRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord) | Captures the concentration of glucose in the blood. |
+| [BasalBodyTemperatureRecord](../android/health/connect/datatypes/BasalBodyTemperatureRecord.md) | Captures the body temperature of a user when at rest (for example, immediately after waking up). |
+| [BasalMetabolicRateRecord](../android/health/connect/datatypes/BasalMetabolicRateRecord.md) | Captures the BMR of a user. |
+| [BloodGlucoseRecord](../android/health/connect/datatypes/BloodGlucoseRecord.md) | Captures the concentration of glucose in the blood. |
 | --- | --- |
-| [BloodPressureRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord) | Captures the blood pressure of a user. |
-| [BodyFatRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord) | Captures the body fat percentage of a user. |
-| [BodyTemperatureMeasurementLocation](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation) | Where on the user's body a temperature measurement was taken from. |
+| [BloodPressureRecord](../android/health/connect/datatypes/BloodPressureRecord.md) | Captures the blood pressure of a user. |
+| [BodyFatRecord](../android/health/connect/datatypes/BodyFatRecord.md) | Captures the body fat percentage of a user. |
+| [BodyTemperatureMeasurementLocation](../android/health/connect/datatypes/BodyTemperatureMeasurementLocation.md) | Where on the user's body a temperature measurement was taken from. |
 | --- | --- |
-| [BodyTemperatureRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureRecord) | Captures the body temperature of a user. |
-| [BodyWaterMassRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyWaterMassRecord) | Captures the user's body water mass. |
-| [BoneMassRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BoneMassRecord) | Captures the user's bone mass. |
+| [BodyTemperatureRecord](../android/health/connect/datatypes/BodyTemperatureRecord.md) | Captures the body temperature of a user. |
+| [BodyWaterMassRecord](../android/health/connect/datatypes/BodyWaterMassRecord.md) | Captures the user's body water mass. |
+| [BoneMassRecord](../android/health/connect/datatypes/BoneMassRecord.md) | Captures the user's bone mass. |
 | --- | --- |
-| [CervicalMucusRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CervicalMucusRecord) | Captures the description of cervical mucus. |
-| [CyclingPedalingCadenceRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord) | Captures the user's cycling pedaling cadence. |
-| [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin) | Specifies the contributing source/application of any [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |
+| [CervicalMucusRecord](../android/health/connect/datatypes/CervicalMucusRecord.md) | Captures the description of cervical mucus. |
+| [CyclingPedalingCadenceRecord](../android/health/connect/datatypes/CyclingPedalingCadenceRecord.md) | Captures the user's cycling pedaling cadence. |
+| [DataOrigin](../android/health/connect/datatypes/DataOrigin.md) | Specifies the contributing source/application of any [Record](../android/health/connect/datatypes/Record.md) |
 | --- | --- |
-| [Device](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device) | A physical device (such as phone, watch, scale, or chest strap) which captured associated health data point. |
-| [DistanceRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord) | Captures distance travelled by the user since the last reading. |
-| [ElevationGainedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ElevationGainedRecord) | Captures the elevation gained by the user since the last reading. |
+| [Device](../android/health/connect/datatypes/Device.md) | A physical device (such as phone, watch, scale, or chest strap) which captured associated health data point. |
+| [DistanceRecord](../android/health/connect/datatypes/DistanceRecord.md) | Captures distance travelled by the user since the last reading. |
+| [ElevationGainedRecord](../android/health/connect/datatypes/ElevationGainedRecord.md) | Captures the elevation gained by the user since the last reading. |
 | --- | --- |
-| [ExerciseCompletionGoal](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseCompletionGoal) | A goal which should be met to complete a [PlannedExerciseStep](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep). |
-| [ExerciseLap](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap) | Captures the time of a lap within exercise session. |
-| [ExercisePerformanceGoal](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExercisePerformanceGoal) | A goal which should be aimed for during a [PlannedExerciseStep](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep). |
+| [ExerciseCompletionGoal](../android/health/connect/datatypes/ExerciseCompletionGoal.md) | A goal which should be met to complete a [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md). |
+| [ExerciseLap](../android/health/connect/datatypes/ExerciseLap.md) | Captures the time of a lap within exercise session. |
+| [ExercisePerformanceGoal](../android/health/connect/datatypes/ExercisePerformanceGoal.md) | A goal which should be aimed for during a [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md). |
 | --- | --- |
-| [ExerciseRoute](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute) | Route of the exercise session. |
-| [ExerciseSegment](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment) | Represents particular exercise within exercise session (see [ExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord)). |
-| [ExerciseSegmentType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegmentType) | Identifier for exercise types, as returned by [ExerciseSegment.getSegmentType()](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment#getSegmentType()). |
+| [ExerciseRoute](../android/health/connect/datatypes/ExerciseRoute.md) | Route of the exercise session. |
+| [ExerciseSegment](../android/health/connect/datatypes/ExerciseSegment.md) | Represents particular exercise within exercise session (see [ExerciseSessionRecord](../android/health/connect/datatypes/ExerciseSessionRecord.md)). |
+| [ExerciseSegmentType](../android/health/connect/datatypes/ExerciseSegmentType.md) | Identifier for exercise types, as returned by [ExerciseSegment.getSegmentType()](../android/health/connect/datatypes/ExerciseSegment.md)). |
 | --- | --- |
-| [ExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord) | Captures exercise or a sequence of exercises. |
-| [ExerciseSessionType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionType) | Identifier for exercise types, as returned by [ExerciseSessionRecord.getExerciseType()](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getExerciseType()). |
-| [FhirResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource) | A class to capture the FHIR resource data. |
+| [ExerciseSessionRecord](../android/health/connect/datatypes/ExerciseSessionRecord.md) | Captures exercise or a sequence of exercises. |
+| [ExerciseSessionType](../android/health/connect/datatypes/ExerciseSessionType.md) | Identifier for exercise types, as returned by [ExerciseSessionRecord.getExerciseType()](../android/health/connect/datatypes/ExerciseSessionRecord.md)). |
+| [FhirResource](../android/health/connect/datatypes/FhirResource.md) | A class to capture the FHIR resource data. |
 | --- | --- |
-| [FhirVersion](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion) | Represents the FHIR version. |
-| [FloorsClimbedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FloorsClimbedRecord) | Captures the number of floors climbed by the user between the start and end time. |
-| [HeartRateRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord) | Captures the user's heart rate. |
+| [FhirVersion](../android/health/connect/datatypes/FhirVersion.md) | Represents the FHIR version. |
+| [FloorsClimbedRecord](../android/health/connect/datatypes/FloorsClimbedRecord.md) | Captures the number of floors climbed by the user between the start and end time. |
+| [HeartRateRecord](../android/health/connect/datatypes/HeartRateRecord.md) | Captures the user's heart rate. |
 | --- | --- |
-| [HeartRateVariabilityRmssdRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateVariabilityRmssdRecord) | Captures the user's heart rate variability RMSSD. |
-| [HeightRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord) | Captures the user's height. |
-| [HydrationRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HydrationRecord) | Captures the amount of liquids user had in a single drink. |
+| [HeartRateVariabilityRmssdRecord](../android/health/connect/datatypes/HeartRateVariabilityRmssdRecord.md) | Captures the user's heart rate variability RMSSD. |
+| [HeightRecord](../android/health/connect/datatypes/HeightRecord.md) | Captures the user's height. |
+| [HydrationRecord](../android/health/connect/datatypes/HydrationRecord.md) | Captures the amount of liquids user had in a single drink. |
 | --- | --- |
-| [InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) | A record that contains a measurement recorded as an instance . |
-| [IntermenstrualBleedingRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntermenstrualBleedingRecord) | Captures the user's inter-menstrual bleeding. |
-| [IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) | A record that contains a measurement with a time interval. |
+| [InstantRecord](../android/health/connect/datatypes/InstantRecord.md) | A record that contains a measurement recorded as an instance . |
+| [IntermenstrualBleedingRecord](../android/health/connect/datatypes/IntermenstrualBleedingRecord.md) | Captures the user's inter-menstrual bleeding. |
+| [IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) | A record that contains a measurement with a time interval. |
 | --- | --- |
-| [LeanBodyMassRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/LeanBodyMassRecord) | Captures the user's lean body mass. |
-| [MealType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType) | Identifier for the meal type. |
-| [MedicalDataSource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource) | Captures the data source information of medical data. |
+| [LeanBodyMassRecord](../android/health/connect/datatypes/LeanBodyMassRecord.md) | Captures the user's lean body mass. |
+| [MealType](../android/health/connect/datatypes/MealType.md) | Identifier for the meal type. |
+| [MedicalDataSource](../android/health/connect/datatypes/MedicalDataSource.md) | Captures the data source information of medical data. |
 | --- | --- |
-| [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource) | A class to capture the user's medical data. |
-| [MenstruationFlowRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MenstruationFlowRecord) | Captures a description of how heavy a user's menstrual flow was (spotting, light, medium, or heavy). |
-| [MenstruationPeriodRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MenstruationPeriodRecord) | Captures the menstruation period record. |
+| [MedicalResource](../android/health/connect/datatypes/MedicalResource.md) | A class to capture the user's medical data. |
+| [MenstruationFlowRecord](../android/health/connect/datatypes/MenstruationFlowRecord.md) | Captures a description of how heavy a user's menstrual flow was (spotting, light, medium, or heavy). |
+| [MenstruationPeriodRecord](../android/health/connect/datatypes/MenstruationPeriodRecord.md) | Captures the menstruation period record. |
 | --- | --- |
-| [Metadata](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata) | Set of shared metadata fields for [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |
-| [MindfulnessSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord) | Captures a mindfulness session. |
-| [NutritionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord) | Captures what nutrients were consumed as part of a meal or a food item. |
+| [Metadata](../android/health/connect/datatypes/Metadata.md) | Set of shared metadata fields for [Record](../android/health/connect/datatypes/Record.md) |
+| [MindfulnessSessionRecord](../android/health/connect/datatypes/MindfulnessSessionRecord.md) | Captures a mindfulness session. |
+| [NutritionRecord](../android/health/connect/datatypes/NutritionRecord.md) | Captures what nutrients were consumed as part of a meal or a food item. |
 | --- | --- |
-| [OvulationTestRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OvulationTestRecord) | Each record represents the result of an ovulation test. |
-| [OxygenSaturationRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OxygenSaturationRecord) | Captures the amount of oxygen circulating in the blood, measured as a percentage of oxygen-saturated hemoglobin. |
-| [PlannedExerciseBlock](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock) | Represents a series of [PlannedExerciseStep](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep). |
+| [OvulationTestRecord](../android/health/connect/datatypes/OvulationTestRecord.md) | Each record represents the result of an ovulation test. |
+| [OxygenSaturationRecord](../android/health/connect/datatypes/OxygenSaturationRecord.md) | Captures the amount of oxygen circulating in the blood, measured as a percentage of oxygen-saturated hemoglobin. |
+| [PlannedExerciseBlock](../android/health/connect/datatypes/PlannedExerciseBlock.md) | Represents a series of [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md). |
 | --- | --- |
-| [PlannedExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord) | Captures a planned exercise session, also commonly referred to as a training plan. |
-| [PlannedExerciseStep](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseStep) | A single step within an [PlannedExerciseBlock](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock) e. |
-| [PowerRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PowerRecord) | Captures the power generated by the user, e. |
+| [PlannedExerciseSessionRecord](../android/health/connect/datatypes/PlannedExerciseSessionRecord.md) | Captures a planned exercise session, also commonly referred to as a training plan. |
+| [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md) | A single step within an [PlannedExerciseBlock](../android/health/connect/datatypes/PlannedExerciseBlock.md) e. |
+| [PowerRecord](../android/health/connect/datatypes/PowerRecord.md) | Captures the power generated by the user, e. |
 | --- | --- |
-| [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) | A base class for all record classes |
-| [RespiratoryRateRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/RespiratoryRateRecord) | Captures the user's respiratory rate. |
-| [RestingHeartRateRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/RestingHeartRateRecord) | Captures the user's resting heart rate. |
+| [Record](../android/health/connect/datatypes/Record.md) | A base class for all record classes |
+| [RespiratoryRateRecord](../android/health/connect/datatypes/RespiratoryRateRecord.md) | Captures the user's respiratory rate. |
+| [RestingHeartRateRecord](../android/health/connect/datatypes/RestingHeartRateRecord.md) | Captures the user's resting heart rate. |
 | --- | --- |
-| [SexualActivityRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SexualActivityRecord) | Captures an occurrence of sexual activity. |
-| [SkinTemperatureRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord) | Captures the skin temperature of a user. |
-| [SleepSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord) | Captures the user's sleep length and its stages. |
+| [SexualActivityRecord](../android/health/connect/datatypes/SexualActivityRecord.md) | Captures an occurrence of sexual activity. |
+| [SkinTemperatureRecord](../android/health/connect/datatypes/SkinTemperatureRecord.md) | Captures the skin temperature of a user. |
+| [SleepSessionRecord](../android/health/connect/datatypes/SleepSessionRecord.md) | Captures the user's sleep length and its stages. |
 | --- | --- |
-| [SpeedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord) | Captures the user's speed, e. |
-| [StepsCadenceRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsCadenceRecord) | Captures the user's steps cadence. |
-| [StepsRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsRecord) | Captures the number of steps taken since the last reading. |
+| [SpeedRecord](../android/health/connect/datatypes/SpeedRecord.md) | Captures the user's speed, e. |
+| [StepsCadenceRecord](../android/health/connect/datatypes/StepsCadenceRecord.md) | Captures the user's steps cadence. |
+| [StepsRecord](../android/health/connect/datatypes/StepsRecord.md) | Captures the number of steps taken since the last reading. |
 | --- | --- |
-| [TotalCaloriesBurnedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/TotalCaloriesBurnedRecord) | Total energy burned by the user in [Energy](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy), including active \& basal energy burned (BMR). |
-| [Vo2MaxRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Vo2MaxRecord) | Capture user's VO2 max score and optionally the measurement method. |
-| [WeightRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord) | Captures the user's weight. |
+| [TotalCaloriesBurnedRecord](../android/health/connect/datatypes/TotalCaloriesBurnedRecord.md) | Total energy burned by the user in [Energy](../android/health/connect/datatypes/units/Energy.md), including active \& basal energy burned (BMR). |
+| [Vo2MaxRecord](../android/health/connect/datatypes/Vo2MaxRecord.md) | Capture user's VO2 max score and optionally the measurement method. |
+| [WeightRecord](../android/health/connect/datatypes/WeightRecord.md) | Captures the user's weight. |
 | --- | --- |
-| [WheelchairPushesRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WheelchairPushesRecord) | Captures the number of wheelchair pushes done over a time interval. |
+| [WheelchairPushesRecord](../android/health/connect/datatypes/WheelchairPushesRecord.md) | Captures the number of wheelchair pushes done over a time interval. |

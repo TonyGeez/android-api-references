@@ -11,10 +11,10 @@ open class CertificateParsingException : CertificateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [javax.security.cert.CertificateException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [javax.security.cert.CertificateException](../javax/security/cert/CertificateException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.security.cert.CertificateParsingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateParsingException#) |
+| | | | ↳ | [javax.security.cert.CertificateParsingException](../javax/security/cert/CertificateParsingException.md) |
 
 Certificate Parsing Exception. This is thrown whenever invalid DER encoded certificate is parsed or unsupported DER features are found in the Certificate.
 
@@ -24,8 +24,8 @@ Certificate Parsing Exception. This is thrown whenever invalid DER encoded certi
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertificateParsingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateParsingException#CertificateParsingException())`()` Constructs a CertificateParsingException with no detail message. |
-| [CertificateParsingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateParsingException#CertificateParsingException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateParsingException with the specified detail message. |
+| [CertificateParsingException](../javax/security/cert/CertificateParsingException.md))`()` Constructs a CertificateParsingException with no detail message. |
+| [CertificateParsingException](../javax/security/cert/CertificateParsingException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateParsingException with the specified detail message. |
 
 ## Public constructors
 

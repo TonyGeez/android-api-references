@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # MidiOutputPort
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/midi/MidiOutputPort "View this page in Java") 
+Kotlin| [Java](../android/media/midi/MidiOutputPort.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class MidiOutputPort : MidiSender, Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.midi.MidiSender](https://developer.android.com/reference/kotlin/android/media/midi/MidiSender) ||
-| | ↳ | [android.media.midi.MidiOutputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#) |
+| ↳ | [android.media.midi.MidiSender](../android/media/midi/MidiSender.md) ||
+| | ↳ | [android.media.midi.MidiOutputPort](../android/media/midi/MidiOutputPort.md) |
 
 This class is used for receiving data from a port on a MIDI device
 
@@ -22,19 +22,19 @@ This class is used for receiving data from a port on a MIDI device
 
 | Public methods ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#close())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPortNumber](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#getPortNumber())`()` Returns the port number of this port |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnect](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#onConnect(android.media.midi.MidiReceiver))`(`receiver:` ` [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/media/midi/MidiOutputPort.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPortNumber](../android/media/midi/MidiOutputPort.md))`()` Returns the port number of this port |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnect](../android/media/midi/MidiOutputPort.md))`(`receiver:` ` [MidiReceiver](../android/media/midi/MidiReceiver.md)!`)` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisconnect](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#onDisconnect(android.media.midi.MidiReceiver))`(`receiver:` ` [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisconnect](../android/media/midi/MidiOutputPort.md))`(`receiver:` ` [MidiReceiver](../android/media/midi/MidiReceiver.md)!`)` <br /> |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort#finalize())`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/midi/MidiOutputPort.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [MidiSender](https://developer.android.com/reference/kotlin/android/media/midi/MidiSender) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/media/midi/MidiSender#connect(android.media.midi.MidiReceiver))`(`receiver:` ` [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!`)` <br /> Connects a [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver) to the sender <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](https://developer.android.com/reference/kotlin/android/media/midi/MidiSender#disconnect(android.media.midi.MidiReceiver))`(`receiver:` ` [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!`)` <br /> Disconnects a [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver) from the sender <br /> | ||
+| From class [MidiSender](../android/media/midi/MidiSender.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/media/midi/MidiSender.md))`(`receiver:` ` [MidiReceiver](../android/media/midi/MidiReceiver.md)!`)` <br /> Connects a [MidiReceiver](../android/media/midi/MidiReceiver.md) to the sender <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](../android/media/midi/MidiSender.md))`(`receiver:` ` [MidiReceiver](../android/media/midi/MidiReceiver.md)!`)` <br /> Disconnects a [MidiReceiver](../android/media/midi/MidiReceiver.md) from the sender <br /> | ||
 
 ## Public methods
 
@@ -75,7 +75,7 @@ fun onConnect(receiver: MidiReceiver!): Unit
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------|
-| `receiver` | [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!:the receiver to connect |
+| `receiver` | [MidiReceiver](../android/media/midi/MidiReceiver.md)!:the receiver to connect |
 
 ### onDisconnect
 
@@ -87,7 +87,7 @@ fun onDisconnect(receiver: MidiReceiver!): Unit
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------|
-| `receiver` | [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!:the receiver to disconnect |
+| `receiver` | [MidiReceiver](../android/media/midi/MidiReceiver.md)!:the receiver to disconnect |
 
 ## Protected methods
 

@@ -4,14 +4,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # OnOpChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener "View this page in Java") 
+Kotlin| [Java](../android/app/AppOpsManager.OnOpChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnOpChangedListener
 ```
 
-| [android.app.AppOpsManager.OnOpChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener#) |
+| [android.app.AppOpsManager.OnOpChangedListener](../android/app/AppOpsManager.OnOpChangedListener.md) |
 
 Callback for notification of changes to operation state.
 
@@ -19,8 +19,8 @@ Callback for notification of changes to operation state.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpChanged](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener#onOpChanged(kotlin.String,%20kotlin.String))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpChanged](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener#onOpChanged(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `userId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `persistentDeviceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Similar to [onOpChanged(java.lang.String,java.lang.String)](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener#onOpChanged(kotlin.String,%20kotlin.String))but includes user and the device for which the op mode has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpChanged](../android/app/AppOpsManager.OnOpChangedListener.md))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpChanged](../android/app/AppOpsManager.OnOpChangedListener.md))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `userId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `persistentDeviceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Similar to [onOpChanged(java.lang.String,java.lang.String)](../android/app/AppOpsManager.OnOpChangedListener.md))but includes user and the device for which the op mode has changed. |
 
 ## Public methods
 
@@ -48,11 +48,11 @@ open fun onOpChanged(
 ): Unit
 ```
 
-Similar to [onOpChanged(java.lang.String,java.lang.String)](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener#onOpChanged(kotlin.String,%20kotlin.String))but includes user and the device for which the op mode has changed.
+Similar to [onOpChanged(java.lang.String,java.lang.String)](../android/app/AppOpsManager.OnOpChangedListener.md))but includes user and the device for which the op mode has changed.
 
 Implement this method if callbacks are required on all devices. If not implemented explicitly, the default implementation will notify for op changes on the default device only.
 
-If implemented, [onOpChanged(java.lang.String,java.lang.String)](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener#onOpChanged(kotlin.String,%20kotlin.String))will not be called automatically.
+If implemented, [onOpChanged(java.lang.String,java.lang.String)](../android/app/AppOpsManager.OnOpChangedListener.md))will not be called automatically.
 
 | Parameters ||
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

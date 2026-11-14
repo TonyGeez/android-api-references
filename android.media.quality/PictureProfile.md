@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # PictureProfile
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/quality/PictureProfile "View this page in Java")
+Kotlin | [Java](../android/media/quality/PictureProfile.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PictureProfile : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.quality.PictureProfile](https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#) |
+| ↳ | [android.media.quality.PictureProfile](../android/media/quality/PictureProfile.md) |
 
 Profile for picture quality.
 
@@ -44,7 +44,7 @@ Profile for picture quality.
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#getName()()` Gets the profile name. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#getPackageName()()` Gets the package name of this profile. |
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#getParameters()()` Gets the parameters of this profile. |
+| [PersistableBundle](../android/os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#getParameters()()` Gets the parameters of this profile. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#getProfileId()()` Gets profile ID. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#getProfileType()()` Gets profile type. |
@@ -52,7 +52,7 @@ Profile for picture quality.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PictureProfile](https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PictureProfile](../android/media/quality/PictureProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -272,7 +272,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -8,8 +8,8 @@ open class ApplicationInfo : PackageItemInfo, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo) ||
-| | ↳ | [android.content.pm.ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#) |
+| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) ||
+| | ↳ | [android.content.pm.ApplicationInfo](../android/content/pm/ApplicationInfo.md) |
 
 Information you can retrieve about a particular application. This corresponds to information collected from the AndroidManifest.xml's \<application\> tag.
 
@@ -190,7 +190,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#appComponentFactory:kotlin.String` The factory of this package, as specified by the \<manifest\> tag's `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestApplication_appComponentFactory:kotlin.Int` attribute. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#backupAgentName:kotlin.String` Class implementing the Application's backup functionality. |
 | --- | --- |
@@ -227,7 +227,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#splitPublicSourceDirs:kotlin.Array` Full path to the publicly available parts of `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#splitSourceDirs:kotlin.Array`, including resources and manifest. |
 | --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#splitSourceDirs:kotlin.Array` Full paths to split APKs, indexed by the same order as `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#splitNames:kotlin.Array`. |
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#storageUuid:java.util.UUID` UUID of the storage volume on which this application is being hosted. |
+| [UUID](../java/util/UUID.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#storageUuid:java.util.UUID` UUID of the storage volume on which this application is being hosted. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#targetSdkVersion:kotlin.Int` The minimum SDK version this application targets. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#taskAffinity:kotlin.String` Default task affinity of all activities in this application. |
@@ -810,7 +810,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val FLAG_SYSTEM: Int
 ```
 
-Value for `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#flags:kotlin.Int`: if set, this application is installed in the device's system image. This should not be used to make security decisions. Instead, rely on [signature checks](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#checkSignatures(kotlin.String,%20kotlin.String)) or [permissions](https://developer.android.com/training/articles/security-tips#Permissions).
+Value for `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#flags:kotlin.Int`: if set, this application is installed in the device's system image. This should not be used to make security decisions. Instead, rely on [signature checks](../android/content/pm/PackageManager.md)) or [permissions](https://developer.android.com/training/articles/security-tips#Permissions).
 
 **Warning:** Note that this flag does not behave the same as `https://developer.android.com/reference/kotlin/android/R.attr.html#protectionLevel:kotlin.Int` `system` or `signatureOrSystem`.
 
@@ -1224,7 +1224,7 @@ Retrieve the textual description of the application. This will call back on the 
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)!: A PackageManager from which the label can be loaded; usually the PackageManager from which you originally retrieved this item. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!: A PackageManager from which the label can be loaded; usually the PackageManager from which you originally retrieved this item. |
 
 | Return ||
 |---|---|
@@ -1259,7 +1259,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

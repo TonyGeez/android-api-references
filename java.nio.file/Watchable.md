@@ -6,9 +6,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface Watchable
 ```
 
-| [java.nio.file.Watchable](https://developer.android.com/reference/kotlin/java/nio/file/Watchable#) |
+| [java.nio.file.Watchable](../java/nio/file/Watchable.md) |
 
-| Known Direct Subclasses [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) |---|---| | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) | An object that may be used to locate a file in a file system. | |
+| Known Direct Subclasses [Path](../java/nio/file/Path.md) |---|---| | [Path](../java/nio/file/Path.md) | An object that may be used to locate a file in a file system. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An object that may be registered with a watch service so that it can be *watched* for changes and events.
@@ -19,8 +19,8 @@ This interface defines the #register method to register the object with a `https
 
 | Public methods ||
 |---|---|
-| abstract [WatchKey](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey)! | `https://developer.android.com/reference/kotlin/java/nio/file/Watchable#register(java.nio.file.WatchService,%20java.nio.file.WatchEvent.Kind)(watcher: https://developer.android.com/reference/kotlin/java/nio/file/WatchService!, vararg events: https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind<*>!)` Registers an object with a watch service. |
-| abstract [WatchKey](https://developer.android.com/reference/kotlin/java/nio/file/WatchKey)! | `https://developer.android.com/reference/kotlin/java/nio/file/Watchable#register(java.nio.file.WatchService,%20kotlin.Array,%20java.nio.file.WatchEvent.Modifier)(watcher: https://developer.android.com/reference/kotlin/java/nio/file/WatchService!, events: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind<*>!>!, vararg modifiers: https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Modifier!)` Registers an object with a watch service. |
+| abstract [WatchKey](../java/nio/file/WatchKey.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/Watchable#register(java.nio.file.WatchService,%20java.nio.file.WatchEvent.Kind)(watcher: https://developer.android.com/reference/kotlin/java/nio/file/WatchService!, vararg events: https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind<*>!)` Registers an object with a watch service. |
+| abstract [WatchKey](../java/nio/file/WatchKey.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/Watchable#register(java.nio.file.WatchService,%20kotlin.Array,%20java.nio.file.WatchEvent.Modifier)(watcher: https://developer.android.com/reference/kotlin/java/nio/file/WatchService!, events: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind<*>!>!, vararg modifiers: https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Modifier!)` Registers an object with a watch service. |
 
 ## Public methods
 
@@ -46,8 +46,8 @@ watchable.<code><a docref="java.nio.file.Watchable$register(java.nio.file.WatchS
 
 | Parameters ||
 |---|---|
-| `watcher` | [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)!: the watch service to which this object is to be registered |
-| `events` | [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\<\*\>!: the events for which this object should be registered |
+| `watcher` | [WatchService](../java/nio/file/WatchService.md)!: the watch service to which this object is to be registered |
+| `events` | [WatchEvent.Kind](../java/nio/file/WatchEvent.Kind.md)\<\*\>!: the events for which this object should be registered |
 
 | Return ||
 |---|---|
@@ -84,9 +84,9 @@ Implementations of this interface should specify the events they support.
 
 | Parameters ||
 |---|---|
-| `watcher` | [WatchService](https://developer.android.com/reference/kotlin/java/nio/file/WatchService)!: the watch service to which this object is to be registered |
-| `events` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WatchEvent.Kind](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind)\<\*\>!\>!: the events for which this object should be registered |
-| `modifiers` | [WatchEvent.Modifier](https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Modifier)!: the modifiers, if any, that modify how the object is registered |
+| `watcher` | [WatchService](../java/nio/file/WatchService.md)!: the watch service to which this object is to be registered |
+| `events` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WatchEvent.Kind](../java/nio/file/WatchEvent.Kind.md)\<\*\>!\>!: the events for which this object should be registered |
+| `modifiers` | [WatchEvent.Modifier](../java/nio/file/WatchEvent.Modifier.md)!: the modifiers, if any, that modify how the object is registered |
 | --- | --- |
 
 | Return ||

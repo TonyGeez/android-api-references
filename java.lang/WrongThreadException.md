@@ -9,10 +9,10 @@ class WrongThreadException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.WrongThreadException](https://developer.android.com/reference/kotlin/java/lang/WrongThreadException#) |
+| | | | ↳ | [java.lang.WrongThreadException](../java/lang/WrongThreadException.md) |
 
 Thrown to indicate that a method has been called on the wrong thread.
 

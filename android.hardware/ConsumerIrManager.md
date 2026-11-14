@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # ConsumerIrManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/ConsumerIrManager "View this page in Java") 
+Kotlin| [Java](../android/hardware/ConsumerIrManager.md) 
 | --- | --- |
 
 ```
@@ -13,22 +13,22 @@ class ConsumerIrManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.ConsumerIrManager](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#) |
+| ↳ | [android.hardware.ConsumerIrManager](../android/hardware/ConsumerIrManager.md) |
 
 Class that operates consumer infrared on the device. 
-Requires the [PackageManager#FEATURE_CONSUMER_IR](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CONSUMER_IR:kotlin.String) feature which can be detected using [PackageManager.hasSystemFeature(String)](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)).
+Requires the [PackageManager#FEATURE_CONSUMER_IR](../android/content/pm/PackageManager.md) feature which can be detected using [PackageManager.hasSystemFeature(String)](../android/content/pm/PackageManager.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [CarrierFrequencyRange](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.CarrierFrequencyRange) Represents a range of carrier frequencies (inclusive) on which the infrared transmitter can transmit |
+| | [CarrierFrequencyRange](../android/hardware/ConsumerIrManager.CarrierFrequencyRange.md) Represents a range of carrier frequencies (inclusive) on which the infrared transmitter can transmit |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ConsumerIrManager.CarrierFrequencyRange](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.CarrierFrequencyRange)!\>! | [getCarrierFrequencies](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#getCarrierFrequencies())`()` Query the infrared transmitter's supported carrier frequencies |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasIrEmitter](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#hasIrEmitter())`()` Check whether the device has an infrared emitter. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transmit](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager#transmit(kotlin.Int,%20kotlin.IntArray))`(`carrierFrequency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pattern:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Transmit an infrared pattern |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ConsumerIrManager.CarrierFrequencyRange](../android/hardware/ConsumerIrManager.CarrierFrequencyRange.md)!\>! | [getCarrierFrequencies](../android/hardware/ConsumerIrManager.md))`()` Query the infrared transmitter's supported carrier frequencies |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasIrEmitter](../android/hardware/ConsumerIrManager.md))`()` Check whether the device has an infrared emitter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transmit](../android/hardware/ConsumerIrManager.md))`(`carrierFrequency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pattern:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Transmit an infrared pattern |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Query the infrared transmitter's supported carrier frequencies
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ConsumerIrManager.CarrierFrequencyRange](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.CarrierFrequencyRange)!>! | an array of [android.hardware.ConsumerIrManager.CarrierFrequencyRange](https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.CarrierFrequencyRange) objects representing the ranges that the transmitter can support, or null if there was an error communicating with the Consumer IR Service. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ConsumerIrManager.CarrierFrequencyRange](../android/hardware/ConsumerIrManager.CarrierFrequencyRange.md)!>! | an array of [android.hardware.ConsumerIrManager.CarrierFrequencyRange](../android/hardware/ConsumerIrManager.CarrierFrequencyRange.md) objects representing the ranges that the transmitter can support, or null if there was an error communicating with the Consumer IR Service. |
 
 ### hasIrEmitter
 

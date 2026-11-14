@@ -10,8 +10,8 @@ class Field : AccessibleObject, Member
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.lang.reflect.AccessibleObject](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject) ||
-| | ↳ | [java.lang.reflect.Field](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#) |
+| ↳ | [java.lang.reflect.AccessibleObject](../java/lang/reflect/AccessibleObject.md) ||
+| | ↳ | [java.lang.reflect.Field](../java/lang/reflect/Field.md) |
 
 A`Field`provides information about, and dynamic access to, a single field of a class or an interface. The reflected field may be a class (static) field or an instance field.
 
@@ -21,58 +21,58 @@ A`Field`permits widening conversions to occur during a get or set access operati
 
 | Inherited constants ||
 |---|---|
-| From class [Member](https://developer.android.com/reference/kotlin/java/lang/reflect/Member) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECLARED](https://developer.android.com/reference/kotlin/java/lang/reflect/Member#DECLARED:kotlin.Int) <br /> Identifies the set of declared members of a class or interface. Inherited members are not included. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC](https://developer.android.com/reference/kotlin/java/lang/reflect/Member#PUBLIC:kotlin.Int) <br /> Identifies the set of all public members of a class or interface, including inherited members. <br /> | ||
+| From class [Member](../java/lang/reflect/Member.md) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECLARED](../java/lang/reflect/Member.md) <br /> Identifies the set of declared members of a class or interface. Inherited members are not included. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC](../java/lang/reflect/Member.md) <br /> Identifies the set of all public members of a class or interface, including inherited members. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`Field`against the specified object. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns the value of the field represented by this`Field`, on the specified object. |
-| T? | [getAnnotation](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/reflect/Field.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`Field`against the specified object. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [get](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns the value of the field represented by this`Field`, on the specified object. |
+| T? | [getAnnotation](../java/lang/reflect/Field.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` <br /> |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getAnnotationsByType](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getAnnotationsByType(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Returns annotations that are*associated*with this element. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getBoolean(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance`boolean`field. |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getByte](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getByte(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance`byte`field. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getAnnotationsByType](../java/lang/reflect/Field.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` Returns annotations that are*associated*with this element. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance`boolean`field. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getByte](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance`byte`field. |
 | --- | --- |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getChar](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getChar(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`char`or of another primitive type convertible to type`char`via a widening conversion. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getDeclaredAnnotations())`()` Returns annotations that are*directly present*on this element. |
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getDeclaringClass](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getDeclaringClass())`()` Returns the`Class`object representing the class or interface that declares the field represented by this`Field`object. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getChar](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`char`or of another primitive type convertible to type`char`via a widening conversion. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](../java/lang/reflect/Field.md))`()` Returns annotations that are*directly present*on this element. |
+| [Class](../java/lang/Class.md)\<\*\> | [getDeclaringClass](../java/lang/reflect/Field.md))`()` Returns the`Class`object representing the class or interface that declares the field represented by this`Field`object. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getDouble(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`double`or of another primitive type convertible to type`double`via a widening conversion. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getFloat(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`float`or of another primitive type convertible to type`float`via a widening conversion. |
-| [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type) | [getGenericType](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getGenericType())`()` Returns a`Type`object that represents the declared type for the field represented by this`Field`object. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`double`or of another primitive type convertible to type`double`via a widening conversion. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`float`or of another primitive type convertible to type`float`via a widening conversion. |
+| [Type](../java/lang/reflect/Type.md) | [getGenericType](../java/lang/reflect/Field.md))`()` Returns a`Type`object that represents the declared type for the field represented by this`Field`object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getInt(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`int`or of another primitive type convertible to type`int`via a widening conversion. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getLong(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`long`or of another primitive type convertible to type`long`via a widening conversion. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getModifiers())`()` Returns the Java language modifiers for the field represented by this`Field`object, as an integer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`int`or of another primitive type convertible to type`int`via a widening conversion. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`long`or of another primitive type convertible to type`long`via a widening conversion. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](../java/lang/reflect/Field.md))`()` Returns the Java language modifiers for the field represented by this`Field`object, as an integer. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getName())`()` Returns the name of the field represented by this`Field`object. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getShort(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`short`or of another primitive type convertible to type`short`via a widening conversion. |
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\> | [getType](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#getType())`()` Returns a`Class`object that identifies the declared type for the field represented by this`Field`object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../java/lang/reflect/Field.md))`()` Returns the name of the field represented by this`Field`object. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Gets the value of a static or instance field of type`short`or of another primitive type convertible to type`short`via a widening conversion. |
+| [Class](../java/lang/Class.md)\<\*\> | [getType](../java/lang/reflect/Field.md))`()` Returns a`Class`object that identifies the declared type for the field represented by this`Field`object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#hashCode())`()` Returns a hashcode for this`Field`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnnotationPresent](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#isAnnotationPresent(java.lang.Class))`(`annotationType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` ` [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!>`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnumConstant](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#isEnumConstant())`()` Returns`true`if this field represents an element of an enumerated type; returns`false`otherwise. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/reflect/Field.md))`()` Returns a hashcode for this`Field`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnnotationPresent](../java/lang/reflect/Field.md))`(`annotationType:` ` [Class](../java/lang/Class.md)<out` ` [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!>`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnumConstant](../java/lang/reflect/Field.md))`()` Returns`true`if this field represents an element of an enumerated type; returns`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#isSynthetic())`()` Returns`true`if this field is a synthetic field; returns`false`otherwise. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Sets the field represented by this`Field`object on the specified object argument to the specified new value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBoolean](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setBoolean(kotlin.Any,%20kotlin.Boolean))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `z:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of a field as a`boolean`on the specified object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](../java/lang/reflect/Field.md))`()` Returns`true`if this field is a synthetic field; returns`false`otherwise. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Sets the field represented by this`Field`object on the specified object argument to the specified new value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBoolean](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `z:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of a field as a`boolean`on the specified object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByte](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setByte(kotlin.Any,%20kotlin.Byte))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Sets the value of a field as a`byte`on the specified object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChar](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setChar(kotlin.Any,%20kotlin.Char))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the value of a field as a`char`on the specified object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDouble](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setDouble(kotlin.Any,%20kotlin.Double))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the value of a field as a`double`on the specified object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByte](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Sets the value of a field as a`byte`on the specified object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChar](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the value of a field as a`char`on the specified object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDouble](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the value of a field as a`double`on the specified object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloat](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setFloat(kotlin.Any,%20kotlin.Float))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `f:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value of a field as a`float`on the specified object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInt](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setInt(kotlin.Any,%20kotlin.Int))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the value of a field as an`int`on the specified object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLong](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setLong(kotlin.Any,%20kotlin.Long))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value of a field as a`long`on the specified object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloat](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `f:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value of a field as a`float`on the specified object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInt](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the value of a field as an`int`on the specified object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLong](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value of a field as a`long`on the specified object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShort](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#setShort(kotlin.Any,%20kotlin.Short))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the value of a field as a`short`on the specified object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toGenericString](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#toGenericString())`()` Returns a string describing this`Field`, including its generic type. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#toString())`()` Returns a string describing this`Field`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShort](../java/lang/reflect/Field.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the value of a field as a`short`on the specified object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toGenericString](../java/lang/reflect/Field.md))`()` Returns a string describing this`Field`, including its generic type. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/reflect/Field.md))`()` Returns a string describing this`Field`. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [AccessibleObject](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject) |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!> | [getAnnotations](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getAnnotations())`()` <br /> | | T? | [getDeclaredAnnotation](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotation(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>! | [getDeclaredAnnotationsByType](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotationsByType(java.lang.Class))`(`annotationClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAccessible](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#isAccessible())`()` <br /> Get the value of the`accessible`flag for this object. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAccessible](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#setAccessible(kotlin.Boolean))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Set the`accessible`flag for this object to the indicated boolean value. A value of`true`indicates that the reflected object should suppress Java language access checking when it is used. A value of`false`indicates that the reflected object should enforce Java language access checks. First, if there is a security manager, its`checkPermission`method is called with a`ReflectPermission("suppressAccessChecks")`permission. A`SecurityException`is raised if`flag`is`true`but accessibility of this object may not be changed (for example, if this element object is a [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor) object for the class [java.lang.Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)). A`SecurityException`is raised if this object is a object for the class`java.lang.Class`, and`flag`is true. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAccessible](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#setAccessible(kotlin.Array,%20kotlin.Boolean))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AccessibleObject](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject)!>!`, `flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Convenience method to set the`accessible`flag for an array of objects with a single security check (for efficiency). First, if there is a security manager, its`checkPermission`method is called with a`ReflectPermission("suppressAccessChecks")`permission. A`SecurityException`is raised if`flag`is`true`but accessibility of any of the elements of the input`array`may not be changed (for example, if the element object is a [Constructor](https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor) object for the class ). In the event of such a SecurityException, the accessibility of objects is set to`flag`for array elements upto (and excluding) the element for which the exception occurred; the accessibility of elements beyond (and including) the element for which the exception occurred is unchanged. <br /> | ||
+| From class [AccessibleObject](../java/lang/reflect/AccessibleObject.md) |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!> | [getAnnotations](../java/lang/reflect/AccessibleObject.md))`()` <br /> | | T? | [getDeclaredAnnotation](../java/lang/reflect/AccessibleObject.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>! | [getDeclaredAnnotationsByType](../java/lang/reflect/AccessibleObject.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAccessible](../java/lang/reflect/AccessibleObject.md))`()` <br /> Get the value of the`accessible`flag for this object. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAccessible](../java/lang/reflect/AccessibleObject.md))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Set the`accessible`flag for this object to the indicated boolean value. A value of`true`indicates that the reflected object should suppress Java language access checking when it is used. A value of`false`indicates that the reflected object should enforce Java language access checks. First, if there is a security manager, its`checkPermission`method is called with a`ReflectPermission("suppressAccessChecks")`permission. A`SecurityException`is raised if`flag`is`true`but accessibility of this object may not be changed (for example, if this element object is a [Constructor](../java/lang/reflect/Constructor.md) object for the class [java.lang.Class](../java/lang/Class.md)). A`SecurityException`is raised if this object is a object for the class`java.lang.Class`, and`flag`is true. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAccessible](../java/lang/reflect/AccessibleObject.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AccessibleObject](../java/lang/reflect/AccessibleObject.md)!>!`, `flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Convenience method to set the`accessible`flag for an array of objects with a single security check (for efficiency). First, if there is a security manager, its`checkPermission`method is called with a`ReflectPermission("suppressAccessChecks")`permission. A`SecurityException`is raised if`flag`is`true`but accessibility of any of the elements of the input`array`may not be changed (for example, if the element object is a [Constructor](../java/lang/reflect/Constructor.md) object for the class ). In the event of such a SecurityException, the accessibility of objects is set to`flag`for array elements upto (and excluding) the element for which the exception occurred; the accessibility of elements beyond (and including) the element for which the exception occurred is unchanged. <br /> | ||
 
 ## Public methods
 
@@ -143,7 +143,7 @@ fun <T : Annotation!> getAnnotation(annotationClass: Class<T>): T?
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>:the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java/lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
 
 | Return ||
 |----|---------------------------------------------------------------------------------------------------|
@@ -161,12 +161,12 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun <T : Annotation!> getAnnotationsByType(annotationClass: Class<T>): Array<T>!
 ```
 
-Returns annotations that are*associated* with this element. If there are no annotations*associated* with this element, the return value is an array of length 0. The difference between this method and [getAnnotation(java.lang.Class)](https://developer.android.com/reference/kotlin/java/lang/reflect/AnnotatedElement#getAnnotation(java.lang.Class))is that this method detects if its argument is a*repeatable annotation type*(JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
+Returns annotations that are*associated* with this element. If there are no annotations*associated* with this element, the return value is an array of length 0. The difference between this method and [getAnnotation(java.lang.Class)](../java/lang/reflect/AnnotatedElement.md))is that this method detects if its argument is a*repeatable annotation type*(JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>:the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java/lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -204,7 +204,7 @@ Gets the value of a static or instance`boolean`field.
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getByte
 
@@ -234,7 +234,7 @@ Gets the value of a static or instance`byte`field.
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getChar
 
@@ -264,7 +264,7 @@ Gets the value of a static or instance field of type`char`or of another primitiv
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getDeclaredAnnotations
 
@@ -292,7 +292,7 @@ Returns the`Class`object representing the class or interface that declares the f
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*> | an object representing the declaring class of the underlying member |
+| [Class](../java/lang/Class.md)<*> | an object representing the declaring class of the underlying member |
 
 ### getDouble
 
@@ -322,7 +322,7 @@ Gets the value of a static or instance field of type`double`or of another primit
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getFloat
 
@@ -352,7 +352,7 @@ Gets the value of a static or instance field of type`float`or of another primiti
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getGenericType
 
@@ -370,7 +370,7 @@ If the type of the underlying field is a type variable or a parameterized type, 
 
 | Return ||
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type) | a`Type`object that represents the declared type for the field represented by this`Field`object |
+| [Type](../java/lang/reflect/Type.md) | a`Type`object that represents the declared type for the field represented by this`Field`object |
 
 | Exceptions ||
 |---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -407,7 +407,7 @@ Gets the value of a static or instance field of type`int`or of another primitive
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getLong
 
@@ -437,7 +437,7 @@ Gets the value of a static or instance field of type`long`or of another primitiv
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getModifiers
 
@@ -455,7 +455,7 @@ Returns the Java language modifiers for the field represented by this`Field`obje
 
 **See Also**
 
-- [java.lang.reflect.Modifier](https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier) 
+- [java.lang.reflect.Modifier](../java/lang/reflect/Modifier.md) 
 
 ### getName
 
@@ -499,7 +499,7 @@ Gets the value of a static or instance field of type`short`or of another primiti
 
 **See Also**
 
-- [java.lang.reflect.Field#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#get(kotlin.Any)) 
+- [java.lang.reflect.Field#get](../java/lang/reflect/Field.md)) 
 
 ### getType
 
@@ -513,7 +513,7 @@ Returns a`Class`object that identifies the declared type for the field represent
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*> | a`Class`object identifying the declared type of the field represented by this object |
+| [Class](../java/lang/Class.md)<*> | a`Class`object identifying the declared type of the field represented by this object |
 
 ### hashCode
 
@@ -600,9 +600,9 @@ If this`Field`object is enforcing Java language access control, and the underlyi
 
 If the underlying field is final, this`Field`object has*write*access if and only if the following conditions are met:
 
-- [setAccessible(true)](https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#setAccessible(kotlin.Boolean))has succeeded for this`Field`object;
+- [setAccessible(true)](../java/lang/reflect/AccessibleObject.md))has succeeded for this`Field`object;
 - the field is non-static; and
-- the field's declaring class is not a [record class](https://developer.android.com/reference/kotlin/java/lang/Class.html#isRecord()).
+- the field's declaring class is not a [record class](../java/lang/Class.md)).
 
 If any of the above checks is not met, this method throws an`IllegalAccessException`.
 
@@ -659,7 +659,7 @@ Sets the value of a field as a`boolean`on the specified object. This method is e
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### setByte
 
@@ -689,7 +689,7 @@ Sets the value of a field as a`byte`on the specified object. This method is equi
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### setChar
 
@@ -719,7 +719,7 @@ Sets the value of a field as a`char`on the specified object. This method is equi
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### setDouble
 
@@ -749,7 +749,7 @@ Sets the value of a field as a`double`on the specified object. This method is eq
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### setFloat
 
@@ -779,7 +779,7 @@ Sets the value of a field as a`float`on the specified object. This method is equ
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### setInt
 
@@ -809,7 +809,7 @@ Sets the value of a field as an`int`on the specified object. This method is equi
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### setLong
 
@@ -839,7 +839,7 @@ Sets the value of a field as a`long`on the specified object. This method is equi
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### setShort
 
@@ -869,7 +869,7 @@ Sets the value of a field as a`short`on the specified object. This method is equ
 
 **See Also**
 
-- [java.lang.reflect.Field#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Field#set(kotlin.Any,%20kotlin.Any)) 
+- [java.lang.reflect.Field#set](../java/lang/reflect/Field.md)) 
 
 ### toGenericString
 

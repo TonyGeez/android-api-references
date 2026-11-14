@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # TvRecordingInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvRecordingInfo "View this page in Java") 
+Kotlin| [Java](../android/media/tv/TvRecordingInfo.md) 
 | --- | --- |
 
 ```
@@ -13,66 +13,66 @@ class TvRecordingInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.tv.TvRecordingInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#) |
+| ↳ | [android.media.tv.TvRecordingInfo](../android/media/tv/TvRecordingInfo.md) |
 
-This class is used to describe the meta information for a TV recording. It can be retrieved by the [android.media.tv.interactive.TvInteractiveAppService](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService) by using getTvRecordingInfo or getTvRecordingInfoList. It can then be updated to the TV app using setTvRecordingInfo.
+This class is used to describe the meta information for a TV recording. It can be retrieved by the [android.media.tv.interactive.TvInteractiveAppService](../android/media/tv/interactive/TvInteractiveAppService.md) by using getTvRecordingInfo or getTvRecordingInfoList. It can then be updated to the TV app using setTvRecordingInfo.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRIDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#FRIDAY:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#MONDAY:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ALL](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#RECORDING_ALL:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRIDAY](../android/media/tv/TvRecordingInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONDAY](../android/media/tv/TvRecordingInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ALL](../android/media/tv/TvRecordingInfo.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#RECORDING_IN_PROGRESS:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_SCHEDULED](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#RECORDING_SCHEDULED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SATURDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#SATURDAY:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_IN_PROGRESS](../android/media/tv/TvRecordingInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_SCHEDULED](../android/media/tv/TvRecordingInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SATURDAY](../android/media/tv/TvRecordingInfo.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUNDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#SUNDAY:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THURSDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#THURSDAY:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TUESDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#TUESDAY:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUNDAY](../android/media/tv/TvRecordingInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THURSDAY](../android/media/tv/TvRecordingInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TUESDAY](../android/media/tv/TvRecordingInfo.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEDNESDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#WEDNESDAY:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEDNESDAY](../android/media/tv/TvRecordingInfo.md) <br /> |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TvRecordingInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#TvRecordingInfo(kotlin.String,%20kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.Long,%20kotlin.Long,%20android.net.Uri,%20android.net.Uri,%20kotlin.collections.MutableList,%20android.net.Uri,%20kotlin.Long,%20kotlin.Long))`(`recordingId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `startPadding:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endPadding:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `repeatDays:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `scheduledStartTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `scheduledDuration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `channelUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `programUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?`, `contentRatings:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating)!>`, `recordingUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?`, `recordingStartTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `recordingDuration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [TvRecordingInfo](../android/media/tv/TvRecordingInfo.md))`(`recordingId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `startPadding:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endPadding:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `repeatDays:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `scheduledStartTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `scheduledDuration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `channelUri:` ` [Uri](../android/net/Uri.md)`, `programUri:` ` [Uri](../android/net/Uri.md)?`, `contentRatings:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvContentRating](../android/media/tv/TvContentRating.md)!>`, `recordingUri:` ` [Uri](../android/net/Uri.md)?`, `recordingStartTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `recordingDuration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#describeContents())`()` <br /> |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getChannelUri](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getChannelUri())`()` Returns the uri of the broadcast channel where the recording will take place. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating)!\> | [getContentRatings](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getContentRatings())`()` Returns a list of content ratings for the program(s) in this recording. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/tv/TvRecordingInfo.md))`()` <br /> |
+| [Uri](../android/net/Uri.md) | [getChannelUri](../android/media/tv/TvRecordingInfo.md))`()` Returns the uri of the broadcast channel where the recording will take place. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvContentRating](../android/media/tv/TvContentRating.md)!\> | [getContentRatings](../android/media/tv/TvRecordingInfo.md))`()` Returns a list of content ratings for the program(s) in this recording. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDescription](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getDescription())`()` Returns the description of the scheduled recording. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEndPaddingMillis](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getEndPaddingMillis())`()` Returns the ending padding duration of this recording in milliseconds since the epoch. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getName())`()` Returns the name of the scheduled recording. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDescription](../android/media/tv/TvRecordingInfo.md))`()` Returns the description of the scheduled recording. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEndPaddingMillis](../android/media/tv/TvRecordingInfo.md))`()` Returns the ending padding duration of this recording in milliseconds since the epoch. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../android/media/tv/TvRecordingInfo.md))`()` Returns the name of the scheduled recording. |
 | --- | --- |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getProgramUri](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getProgramUri())`()` Returns the uri of the scheduled program or series. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRecordingDurationMillis](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getRecordingDurationMillis())`()` The real duration of the recording, including any padding, in milliseconds since the epoch. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRecordingId](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getRecordingId())`()` Returns the ID of this recording. |
+| [Uri](../android/net/Uri.md)? | [getProgramUri](../android/media/tv/TvRecordingInfo.md))`()` Returns the uri of the scheduled program or series. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRecordingDurationMillis](../android/media/tv/TvRecordingInfo.md))`()` The real duration of the recording, including any padding, in milliseconds since the epoch. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRecordingId](../android/media/tv/TvRecordingInfo.md))`()` Returns the ID of this recording. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRecordingStartTimeMillis](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getRecordingStartTimeMillis())`()` The real start time of the recording, including any padding, in milliseconds since the epoch. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getRecordingUri](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getRecordingUri())`()` The uri of the recording in local storage. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepeatDays](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getRepeatDays())`()` Returns the days of the week for which this recording should be repeated for. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRecordingStartTimeMillis](../android/media/tv/TvRecordingInfo.md))`()` The real start time of the recording, including any padding, in milliseconds since the epoch. |
+| [Uri](../android/net/Uri.md)? | [getRecordingUri](../android/media/tv/TvRecordingInfo.md))`()` The uri of the recording in local storage. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepeatDays](../android/media/tv/TvRecordingInfo.md))`()` Returns the days of the week for which this recording should be repeated for. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getScheduledDurationMillis](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getScheduledDurationMillis())`()` Returns the scheduled duration of the recording in milliseconds since the epoch. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getScheduledStartTimeMillis](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getScheduledStartTimeMillis())`()` Returns the scheduled start time of the recording in milliseconds since the epoch. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartPaddingMillis](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getStartPaddingMillis())`()` Returns the start padding duration of this recording in milliseconds since the epoch. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getScheduledDurationMillis](../android/media/tv/TvRecordingInfo.md))`()` Returns the scheduled duration of the recording in milliseconds since the epoch. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getScheduledStartTimeMillis](../android/media/tv/TvRecordingInfo.md))`()` Returns the scheduled start time of the recording in milliseconds since the epoch. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartPaddingMillis](../android/media/tv/TvRecordingInfo.md))`()` Returns the start padding duration of this recording in milliseconds since the epoch. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDescription](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#setDescription(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the description of the scheduled recording. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#setName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the name of the scheduled recording. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDescription](../android/media/tv/TvRecordingInfo.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the description of the scheduled recording. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../android/media/tv/TvRecordingInfo.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the name of the scheduled recording. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/tv/TvRecordingInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android/os/Parcel.md). |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [TvRecordingInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TvRecordingInfo](../android/media/tv/TvRecordingInfo.md)!\> | [CREATOR](../android/media/tv/TvRecordingInfo.md) <br /> |
 
 ## Constants
 
@@ -206,11 +206,11 @@ TvRecordingInfo(
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `description` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | --- | --- |
-| `channelUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):This value cannot be`null`. |
-| `programUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?:This value may be`null`. |
-| `contentRatings` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating)!\>:This value cannot be`null`. |
+| `channelUri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `programUri` | [Uri](../android/net/Uri.md)?:This value may be`null`. |
+| `contentRatings` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvContentRating](../android/media/tv/TvContentRating.md)!\>:This value cannot be`null`. |
 | --- | --- |
-| `recordingUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?:This value may be`null`. |
+| `recordingUri` | [Uri](../android/net/Uri.md)?:This value may be`null`. |
 
 ## Public methods
 
@@ -224,7 +224,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getChannelUri
 
@@ -238,7 +238,7 @@ Returns the uri of the broadcast channel where the recording will take place.
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | This value cannot be`null`. |
+| [Uri](../android/net/Uri.md) | This value cannot be`null`. |
 
 ### getContentRatings
 
@@ -254,7 +254,7 @@ Returns an empty list if no content rating information is available.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvContentRating](../android/media/tv/TvContentRating.md)!> | This value cannot be`null`. |
 
 ### getDescription
 
@@ -266,7 +266,7 @@ fun getDescription(): String
 
 Returns the description of the scheduled recording.
 
-This is set with [TvRecordingInfo.setDescription(String)](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#setDescription(kotlin.String))and sent to tv app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService.Session#setTvRecordingInfo(kotlin.String,%20android.media.tv.TvRecordingInfo))
+This is set with [TvRecordingInfo.setDescription(String)](../android/media/tv/TvRecordingInfo.md))and sent to tv app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](../android/media/tv/interactive/TvInteractiveAppService.Session.md))
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -294,7 +294,7 @@ fun getName(): String
 
 Returns the name of the scheduled recording.
 
-This is set with [TvRecordingInfo.setName(String)](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#setName(kotlin.String))and sent to tv app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService.Session#setTvRecordingInfo(kotlin.String,%20android.media.tv.TvRecordingInfo))
+This is set with [TvRecordingInfo.setName(String)](../android/media/tv/TvRecordingInfo.md))and sent to tv app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](../android/media/tv/interactive/TvInteractiveAppService.Session.md))
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -322,7 +322,7 @@ fun getRecordingDurationMillis(): Long
 
 The real duration of the recording, including any padding, in milliseconds since the epoch.
 
-This may not be the same as the value of [getScheduledDurationMillis()](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getScheduledDurationMillis())due to a recording starting late, or due to start/end padding.
+This may not be the same as the value of [getScheduledDurationMillis()](../android/media/tv/TvRecordingInfo.md))due to a recording starting late, or due to start/end padding.
 
 Returns -1 for recordings that have not yet started.
 
@@ -354,7 +354,7 @@ fun getRecordingStartTimeMillis(): Long
 
 The real start time of the recording, including any padding, in milliseconds since the epoch.
 
-This may not be the same as the value of [getScheduledStartTimeMillis()](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#getScheduledStartTimeMillis())due to a recording starting late, or due to start/end padding.
+This may not be the same as the value of [getScheduledStartTimeMillis()](../android/media/tv/TvRecordingInfo.md))due to a recording starting late, or due to start/end padding.
 
 Returns -1 for recordings that have not yet started.
 
@@ -388,13 +388,13 @@ This information is represented in the form of a bitfield, with each bit represe
 
 The bitfield corresponds to each day of the week with the following format:
 
-- [SUNDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#SUNDAY:kotlin.Int)- 0x01 (00000001)
-- [MONDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#MONDAY:kotlin.Int)- 0x02 (00000010)
-- [TUESDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#TUESDAY:kotlin.Int)- 0x04 (00000100)
-- [WEDNESDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#WEDNESDAY:kotlin.Int)- 0x08 (00001000)
-- [THURSDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#THURSDAY:kotlin.Int)- 0x10 (00010000)
-- [FRIDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#FRIDAY:kotlin.Int)- 0x20 (00100000)
-- [SATURDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#SATURDAY:kotlin.Int)- 0x40 (01000000)
+- [SUNDAY](../android/media/tv/TvRecordingInfo.md)- 0x01 (00000001)
+- [MONDAY](../android/media/tv/TvRecordingInfo.md)- 0x02 (00000010)
+- [TUESDAY](../android/media/tv/TvRecordingInfo.md)- 0x04 (00000100)
+- [WEDNESDAY](../android/media/tv/TvRecordingInfo.md)- 0x08 (00001000)
+- [THURSDAY](../android/media/tv/TvRecordingInfo.md)- 0x10 (00010000)
+- [FRIDAY](../android/media/tv/TvRecordingInfo.md)- 0x20 (00100000)
+- [SATURDAY](../android/media/tv/TvRecordingInfo.md)- 0x40 (01000000)
 
 You can specify multiple days to repeat the recording by performing a bitwise 'OR' on the bitfield. For example, for a recording to repeat on Sunday and Mondays, this function should return 0x03 (00000011).
 
@@ -404,7 +404,7 @@ This format comes from the [Open IPTV Forum Release 2 Specification](https://www
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.media.tv.TvRecordingInfo#SUNDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#SUNDAY:kotlin.Int), [android.media.tv.TvRecordingInfo#MONDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#MONDAY:kotlin.Int), [android.media.tv.TvRecordingInfo#TUESDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#TUESDAY:kotlin.Int), [android.media.tv.TvRecordingInfo#WEDNESDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#WEDNESDAY:kotlin.Int), [android.media.tv.TvRecordingInfo#THURSDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#THURSDAY:kotlin.Int), [android.media.tv.TvRecordingInfo#FRIDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#FRIDAY:kotlin.Int), and [android.media.tv.TvRecordingInfo#SATURDAY](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#SATURDAY:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.media.tv.TvRecordingInfo#SUNDAY](../android/media/tv/TvRecordingInfo.md), [android.media.tv.TvRecordingInfo#MONDAY](../android/media/tv/TvRecordingInfo.md), [android.media.tv.TvRecordingInfo#TUESDAY](../android/media/tv/TvRecordingInfo.md), [android.media.tv.TvRecordingInfo#WEDNESDAY](../android/media/tv/TvRecordingInfo.md), [android.media.tv.TvRecordingInfo#THURSDAY](../android/media/tv/TvRecordingInfo.md), [android.media.tv.TvRecordingInfo#FRIDAY](../android/media/tv/TvRecordingInfo.md), and [android.media.tv.TvRecordingInfo#SATURDAY](../android/media/tv/TvRecordingInfo.md) |
 
 ### getScheduledDurationMillis
 
@@ -456,7 +456,7 @@ fun setDescription(description: String): Unit
 
 Sets the description of the scheduled recording.
 
-Updates to the [TvRecordingInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#) can be sent to the TV app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService.Session#setTvRecordingInfo(kotlin.String,%20android.media.tv.TvRecordingInfo))
+Updates to the [TvRecordingInfo](../android/media/tv/TvRecordingInfo.md) can be sent to the TV app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](../android/media/tv/interactive/TvInteractiveAppService.Session.md))
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------|
@@ -472,7 +472,7 @@ fun setName(name: String): Unit
 
 Sets the name of the scheduled recording.
 
-Updates to the [TvRecordingInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvRecordingInfo#) can be sent to the TV app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService.Session#setTvRecordingInfo(kotlin.String,%20android.media.tv.TvRecordingInfo))
+Updates to the [TvRecordingInfo](../android/media/tv/TvRecordingInfo.md) can be sent to the TV app with [android.media.tv.interactive.TvInteractiveAppService.Session#setTvRecordingInfo(String, TvRecordingInfo)](../android/media/tv/interactive/TvInteractiveAppService.Session.md))
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
@@ -489,11 +489,11 @@ fun writeToParcel(
 ): Unit
 ```
 
-Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#).
+Used to package this object into a [Parcel](../android/os/Parcel.md).
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#) to be written. This value cannot be`null`. |
+| `dest` | [Parcel](../android/os/Parcel.md):The [Parcel](../android/os/Parcel.md) to be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The flags used for parceling. |
 
 ## Properties

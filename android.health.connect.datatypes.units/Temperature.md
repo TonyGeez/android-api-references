@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Temperature
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/units/Temperature "View this page in Java") 
+Kotlin| [Java](../android/health/connect/datatypes/units/Temperature.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Temperature : Comparable<Temperature!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Temperature](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#) |
+| ↳ | [android.health.connect.datatypes.units.Temperature](../android/health/connect/datatypes/units/Temperature.md) |
 
 Represents a unit of temperature. Supported units: Celsius
 
@@ -21,13 +21,13 @@ Represents a unit of temperature. Supported units: Celsius
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#compareTo(android.health.connect.datatypes.units.Temperature))`(`other:` ` [Temperature](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Temperature](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#) | [fromCelsius](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#fromCelsius(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Temperature object with the specified value in Celsius degrees. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Temperature.md))`(`other:` ` [Temperature](../android/health/connect/datatypes/units/Temperature.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Temperature.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Temperature](../android/health/connect/datatypes/units/Temperature.md) | [fromCelsius](../android/health/connect/datatypes/units/Temperature.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Temperature object with the specified value in Celsius degrees. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCelsius](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#getInCelsius())`()` Returns temperature in celsius |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#hashCode())`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#toString())`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCelsius](../android/health/connect/datatypes/units/Temperature.md))`()` Returns temperature in celsius |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Temperature.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Temperature.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Temperature](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#):the object to be compared. This value cannot be`null`. |
+| `other` | [Temperature](../android/health/connect/datatypes/units/Temperature.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Temperature object with the specified value in Celsius degrees.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Temperature](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature#) | This value cannot be`null`. |
+| [Temperature](../android/health/connect/datatypes/units/Temperature.md) | This value cannot be`null`. |
 
 ### getInCelsius
 

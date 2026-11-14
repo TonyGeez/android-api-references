@@ -10,7 +10,7 @@ open class URLDecoder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.URLDecoder](https://developer.android.com/reference/kotlin/java/net/URLDecoder#) |
+| ↳ | [java.net.URLDecoder](../java/net/URLDecoder.md) |
 
 Utility class for HTML form decoding. This class contains static methods for decoding a String from the`application/x-www-form-urlencoded`MIME format.
 
@@ -23,19 +23,19 @@ The following rules are applied in the conversion:
 - The plus sign "`+`" is converted into a space character " " .
 - A sequence of the form "*`%xy`* " will be treated as representing a byte where*xy*is the two-digit hexadecimal representation of the 8 bits. Then, all substrings that contain one or more of these byte sequences consecutively will be replaced by the character(s) whose encoding would result in those consecutive bytes. The encoding scheme used to decode these characters may be specified, or if unspecified, the default encoding of the platform will be used.
 
-There are two possible ways in which this decoder could deal with illegal strings. It could either leave illegal characters alone or it could throw an [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#). Which approach the decoder takes is left to the implementation.
+There are two possible ways in which this decoder could deal with illegal strings. It could either leave illegal characters alone or it could throw an [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md). Which approach the decoder takes is left to the implementation.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------|---|
-| [URLDecoder](https://developer.android.com/reference/kotlin/java/net/URLDecoder#URLDecoder())`()` <br /> |
+| [URLDecoder](../java/net/URLDecoder.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes a`x-www-form-urlencoded`string. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String,%20kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes an`application/x-www-form-urlencoded`string using a specific encoding scheme. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String,%20java.nio.charset.Charset))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `charset:` ` [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!`)` Decodes an`application/x-www-form-urlencoded`string using a specific [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#). |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](../java/net/URLDecoder.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes a`x-www-form-urlencoded`string. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](../java/net/URLDecoder.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes an`application/x-www-form-urlencoded`string using a specific encoding scheme. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](../java/net/URLDecoder.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `charset:` ` [Charset](../java/nio/charset/Charset.md)!`)` Decodes an`application/x-www-form-urlencoded`string using a specific [Charset](../java/nio/charset/Charset.md). |
 | --- | --- |
 
 ## Public constructors
@@ -84,12 +84,12 @@ open static fun decode(
 
 Decodes an`application/x-www-form-urlencoded`string using a specific encoding scheme.
 
-This method behaves the same as [decode(String s, Charset charset)](https://developer.android.com/reference/kotlin/java/lang/String.html#) except that it will [look up the charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#forName(kotlin.String))using the given encoding name.
+This method behaves the same as [decode(String s, Charset charset)](../java/lang/String.md) except that it will [look up the charset](../java/nio/charset/Charset.md))using the given encoding name.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `s` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the`String`to decode |
-| `enc` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of a supported [character encoding](https://developer.android.com/reference/kotlin/java/lang/package-summary.html#charenc). |
+| `enc` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of a supported [character encoding](../java/lang/_package.md). |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------|
@@ -101,7 +101,7 @@ This method behaves the same as [decode(String s, Charset charset)](https://deve
 
 **See Also**
 
-- [java.net.URLEncoder#encode(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String,%20kotlin.String)) 
+- [java.net.URLEncoder#encode(java.lang.String, java.lang.String)](../java/net/URLEncoder.md)) 
 
 ### decode
 
@@ -114,14 +114,14 @@ open static fun decode(
 ): String!
 ```
 
-Decodes an`application/x-www-form-urlencoded`string using a specific [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#). The supplied charset is used to determine what characters are represented by any consecutive sequences of the form "*`%xy`*".
+Decodes an`application/x-www-form-urlencoded`string using a specific [Charset](../java/nio/charset/Charset.md). The supplied charset is used to determine what characters are represented by any consecutive sequences of the form "*`%xy`*".
 
 ***Note:** The [World Wide Web Consortium Recommendation](http://www.w3.org/TR/html40/appendix/notes.html#non-ascii-chars) states that UTF-8 should be used. Not doing so may introduce incompatibilities.*
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------|
 | `s` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the`String`to decode |
-| `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!:the given charset |
+| `charset` | [Charset](../java/nio/charset/Charset.md)!:the given charset |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------|
@@ -134,4 +134,4 @@ Decodes an`application/x-www-form-urlencoded`string using a specific [Charset](h
 
 **See Also**
 
-- [java.net.URLEncoder#encode(java.lang.String, java.nio.charset.Charset)](https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String,%20java.nio.charset.Charset))
+- [java.net.URLEncoder#encode(java.lang.String, java.nio.charset.Charset)](../java/net/URLEncoder.md))

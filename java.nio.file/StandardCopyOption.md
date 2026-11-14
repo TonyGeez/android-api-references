@@ -10,10 +10,10 @@ class StandardCopyOption : CopyOption
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.StandardCopyOption](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#)\> ||
-| | ↳ | [java.nio.file.StandardCopyOption](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.StandardCopyOption](../java/nio/file/StandardCopyOption.md)\> ||
+| | ↳ | [java.nio.file.StandardCopyOption](../java/nio/file/StandardCopyOption.md) |
 
-| Known Direct Subclasses [StandardCopyOption.ATOMIC_MOVE](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:ATOMIC_MOVE), [StandardCopyOption.COPY_ATTRIBUTES](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:COPY_ATTRIBUTES), [StandardCopyOption.REPLACE_EXISTING](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:REPLACE_EXISTING) |----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------| | [StandardCopyOption.ATOMIC_MOVE](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:ATOMIC_MOVE) | Move the file as an atomic file system operation. | | [StandardCopyOption.COPY_ATTRIBUTES](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:COPY_ATTRIBUTES) | Copy attributes to the new file. | | [StandardCopyOption.REPLACE_EXISTING](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:REPLACE_EXISTING) | Replace an existing file if it exists. | |
+| Known Direct Subclasses [StandardCopyOption.ATOMIC_MOVE](../java/nio/file/StandardCopyOption.md), [StandardCopyOption.COPY_ATTRIBUTES](../java/nio/file/StandardCopyOption.md), [StandardCopyOption.REPLACE_EXISTING](../java/nio/file/StandardCopyOption.md) |----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------| | [StandardCopyOption.ATOMIC_MOVE](../java/nio/file/StandardCopyOption.md) | Move the file as an atomic file system operation. | | [StandardCopyOption.COPY_ATTRIBUTES](../java/nio/file/StandardCopyOption.md) | Copy attributes to the new file. | | [StandardCopyOption.REPLACE_EXISTING](../java/nio/file/StandardCopyOption.md) | Replace an existing file if it exists. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines the standard copy options.
@@ -22,9 +22,9 @@ Defines the standard copy options.
 
 | Enum values ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ATOMIC_MOVE](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:ATOMIC_MOVE) Move the file as an atomic file system operation. |
-| [COPY_ATTRIBUTES](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:COPY_ATTRIBUTES) Copy attributes to the new file. |
-| [REPLACE_EXISTING](https://developer.android.com/reference/kotlin/java/nio/file/StandardCopyOption#ENUM_VALUE:REPLACE_EXISTING) Replace an existing file if it exists. |
+| [ATOMIC_MOVE](../java/nio/file/StandardCopyOption.md) Move the file as an atomic file system operation. |
+| [COPY_ATTRIBUTES](../java/nio/file/StandardCopyOption.md) Copy attributes to the new file. |
+| [REPLACE_EXISTING](../java/nio/file/StandardCopyOption.md) Replace an existing file if it exists. |
 
 ## Enum values
 

@@ -3,7 +3,7 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 
 # PdfPageObject
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/component/PdfPageObject "View this page in Java")
+Kotlin | [Java](../android/graphics/pdf/component/PdfPageObject.md)
 | --- | --- |
 
 ```
@@ -12,9 +12,9 @@ abstract class PdfPageObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.component.PdfPageObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageObject#) |
+| ↳ | [android.graphics.pdf.component.PdfPageObject](../android/graphics/pdf/component/PdfPageObject.md) |
 
-| Known Direct Subclasses [PdfPageImageObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageImageObject), [PdfPagePathObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPagePathObject), [PdfPageTextObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject) |---|---| | [PdfPageImageObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageImageObject) | Represents an image object on a PDF page. | | [PdfPagePathObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPagePathObject) | Represents a path object on a PDF page. | | [PdfPageTextObject](https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject) | Represents a text object on a PDF page. | |
+| Known Direct Subclasses [PdfPageImageObject](../android/graphics/pdf/component/PdfPageImageObject.md), [PdfPagePathObject](../android/graphics/pdf/component/PdfPagePathObject.md), [PdfPageTextObject](../android/graphics/pdf/component/PdfPageTextObject.md) |---|---| | [PdfPageImageObject](../android/graphics/pdf/component/PdfPageImageObject.md) | Represents an image object on a PDF page. | | [PdfPagePathObject](../android/graphics/pdf/component/PdfPagePathObject.md) | Represents a path object on a PDF page. | | [PdfPageTextObject](../android/graphics/pdf/component/PdfPageTextObject.md) | Represents a text object on a PDF page. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Represents a page object on a page of a pdf document. This abstract class provides a base implementation for different types of PDF page objects.
@@ -74,7 +74,7 @@ Sets the transformation matrix of the object.
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#): The transformation matrix of the object. This value cannot be `null`. |
+| `matrix` | [Matrix](../android/graphics/Matrix.md): The transformation matrix of the object. This value cannot be `null`. |
 
 ### transform
 

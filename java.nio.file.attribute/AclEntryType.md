@@ -10,10 +10,10 @@ class AclEntryType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.attribute.AclEntryType](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#)\> ||
-| | ↳ | [java.nio.file.attribute.AclEntryType](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.attribute.AclEntryType](../java/nio/file/attribute/AclEntryType.md)\> ||
+| | ↳ | [java.nio.file.attribute.AclEntryType](../java/nio/file/attribute/AclEntryType.md) |
 
-| Known Direct Subclasses [AclEntryType.ALARM](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:ALARM), [AclEntryType.ALLOW](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:ALLOW), [AclEntryType.AUDIT](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:AUDIT), [AclEntryType.DENY](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:DENY) |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [AclEntryType.ALARM](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:ALARM) | Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.ALLOW](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:ALLOW) | Explicitly grants access to a file or directory. | | [AclEntryType.AUDIT](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:AUDIT) | Log, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.DENY](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:DENY) | Explicitly denies access to a file or directory. | |
+| Known Direct Subclasses [AclEntryType.ALARM](../java/nio/file/attribute/AclEntryType.md), [AclEntryType.ALLOW](../java/nio/file/attribute/AclEntryType.md), [AclEntryType.AUDIT](../java/nio/file/attribute/AclEntryType.md), [AclEntryType.DENY](../java/nio/file/attribute/AclEntryType.md) |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [AclEntryType.ALARM](../java/nio/file/attribute/AclEntryType.md) | Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.ALLOW](../java/nio/file/attribute/AclEntryType.md) | Explicitly grants access to a file or directory. | | [AclEntryType.AUDIT](../java/nio/file/attribute/AclEntryType.md) | Log, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.DENY](../java/nio/file/attribute/AclEntryType.md) | Explicitly denies access to a file or directory. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A typesafe enumeration of the access control entry types.
@@ -22,10 +22,10 @@ A typesafe enumeration of the access control entry types.
 
 | Enum values ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ALARM](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:ALARM) Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. |
-| [ALLOW](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:ALLOW) Explicitly grants access to a file or directory. |
-| [AUDIT](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:AUDIT) Log, in a system dependent way, the access specified in the permissions component of the ACL entry. |
-| [DENY](https://developer.android.com/reference/kotlin/java/nio/file/attribute/AclEntryType#ENUM_VALUE:DENY) Explicitly denies access to a file or directory. |
+| [ALARM](../java/nio/file/attribute/AclEntryType.md) Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. |
+| [ALLOW](../java/nio/file/attribute/AclEntryType.md) Explicitly grants access to a file or directory. |
+| [AUDIT](../java/nio/file/attribute/AclEntryType.md) Log, in a system dependent way, the access specified in the permissions component of the ACL entry. |
+| [DENY](../java/nio/file/attribute/AclEntryType.md) Explicitly denies access to a file or directory. |
 
 ## Enum values
 

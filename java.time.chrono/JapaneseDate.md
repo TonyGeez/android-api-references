@@ -10,11 +10,11 @@ class JapaneseDate : ChronoLocalDate, Serializable, Temporal, TemporalAdjuster
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.chrono.JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#) |
+| ↳ | [java.time.chrono.JapaneseDate](../java/time/chrono/JapaneseDate.md) |
 
 A date in the Japanese Imperial calendar system.
 
-This date operates using the [Japanese Imperial calendar](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology). This calendar system is primarily used in Japan.
+This date operates using the [Japanese Imperial calendar](../java/time/chrono/JapaneseChronology.md). This calendar system is primarily used in Japan.
 
 The Japanese Imperial calendar system is the same as the ISO calendar system apart from the era-based year numbering. The proleptic-year is defined to be equal to the ISO proleptic-year.
 
@@ -29,44 +29,44 @@ Calling`japaneseDate.get(ERA)`will return 2, corresponding to`JapaneseChronology
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\< [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)!\>! | [atTime](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#atTime(java.time.LocalTime))`(`localTime:` ` [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)!`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this date to another date, including the chronology. |
-| static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [from](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#from(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!`)` Obtains a`JapaneseDate`from a temporal object. |
+| [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\< [JapaneseDate](../java/time/chrono/JapaneseDate.md)!\>! | [atTime](../java/time/chrono/JapaneseDate.md))`(`localTime:` ` [LocalTime](../java/time/LocalTime.md)!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/chrono/JapaneseDate.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this date to another date, including the chronology. |
+| static [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [from](../java/time/chrono/JapaneseDate.md))`(`temporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`)` Obtains a`JapaneseDate`from a temporal object. |
 | --- | --- |
-| [JapaneseChronology](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology)! | [getChronology](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#getChronology())`()` Gets the chronology of this date, which is the Japanese calendar system. |
-| [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)! | [getEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#getEra())`()` Gets the era applicable at this date. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#getLong(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` <br /> |
+| [JapaneseChronology](../java/time/chrono/JapaneseChronology.md)! | [getChronology](../java/time/chrono/JapaneseDate.md))`()` Gets the chronology of this date, which is the Japanese calendar system. |
+| [JapaneseEra](../java/time/chrono/JapaneseEra.md)! | [getEra](../java/time/chrono/JapaneseDate.md))`()` Gets the era applicable at this date. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../java/time/chrono/JapaneseDate.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#hashCode())`()` A hash code for this date. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#isSupported(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` Checks if the specified field is supported. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfMonth](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#lengthOfMonth())`()` Returns the length of the month represented by this date. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/chrono/JapaneseDate.md))`()` A hash code for this date. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../java/time/chrono/JapaneseDate.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Checks if the specified field is supported. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfMonth](../java/time/chrono/JapaneseDate.md))`()` Returns the length of the month represented by this date. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfYear](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#lengthOfYear())`()` <br /> |
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [minus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#minus(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!`)` Returns an object of the same type as this object with an amount subtracted. |
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [minus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#minus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfYear](../java/time/chrono/JapaneseDate.md))`()` <br /> |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [minus](../java/time/chrono/JapaneseDate.md))`(`amount:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns an object of the same type as this object with an amount subtracted. |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [minus](../java/time/chrono/JapaneseDate.md))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` <br /> |
 | --- | --- |
-| static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [now](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#now())`()` Obtains the current`JapaneseDate`from the system clock in the default time-zone. |
-| static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [now](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#now(java.time.Clock))`(`clock:` ` [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#)!`)` Obtains the current`JapaneseDate`from the specified clock. |
-| static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [now](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#now(java.time.ZoneId))`(`zone:` ` [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!`)` Obtains the current`JapaneseDate`from the system clock in the specified time-zone. |
+| static [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [now](../java/time/chrono/JapaneseDate.md))`()` Obtains the current`JapaneseDate`from the system clock in the default time-zone. |
+| static [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [now](../java/time/chrono/JapaneseDate.md))`(`clock:` ` [Clock](../java/time/Clock.md)!`)` Obtains the current`JapaneseDate`from the specified clock. |
+| static [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [now](../java/time/chrono/JapaneseDate.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Obtains the current`JapaneseDate`from the system clock in the specified time-zone. |
 | --- | --- |
-| static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`prolepticYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`JapaneseDate`representing a date in the Japanese calendar system from the proleptic-year, month-of-year and day-of-month fields. |
-| static [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [of](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#of(java.time.chrono.JapaneseEra,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`era:` ` [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)!`, `yearOfEra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`JapaneseDate`representing a date in the Japanese calendar system from the era, year-of-era, month-of-year and day-of-month fields. |
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [plus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#plus(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!`)` Returns an object of the same type as this object with an amount added. |
+| static [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [of](../java/time/chrono/JapaneseDate.md))`(`prolepticYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`JapaneseDate`representing a date in the Japanese calendar system from the proleptic-year, month-of-year and day-of-month fields. |
+| static [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [of](../java/time/chrono/JapaneseDate.md))`(`era:` ` [JapaneseEra](../java/time/chrono/JapaneseEra.md)!`, `yearOfEra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`JapaneseDate`representing a date in the Japanese calendar system from the era, year-of-era, month-of-year and day-of-month fields. |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [plus](../java/time/chrono/JapaneseDate.md))`(`amount:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns an object of the same type as this object with an amount added. |
 | --- | --- |
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [plus](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#plus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` <br /> |
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | [range](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#range(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toEpochDay](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#toEpochDay())`()` <br /> |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [plus](../java/time/chrono/JapaneseDate.md))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` <br /> |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | [range](../java/time/chrono/JapaneseDate.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toEpochDay](../java/time/chrono/JapaneseDate.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#toString())`()` <br /> |
-| [ChronoPeriod](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoPeriod)! | [until](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#until(java.time.chrono.ChronoLocalDate))`(`endDate:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate)!`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit))`(`endExclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/chrono/JapaneseDate.md))`()` <br /> |
+| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [until](../java/time/chrono/JapaneseDate.md))`(`endDate:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](../java/time/chrono/JapaneseDate.md))`(`endExclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` <br /> |
 | --- | --- |
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [with](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#with(java.time.temporal.TemporalAdjuster))`(`adjuster:` ` [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#)!`)` Returns an adjusted object of the same type as this object with the adjustment made. |
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | [with](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#with(java.time.temporal.TemporalField,%20kotlin.Long))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [with](../java/time/chrono/JapaneseDate.md))`(`adjuster:` ` [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!`)` Returns an adjusted object of the same type as this object with the adjustment made. |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | [with](../java/time/chrono/JapaneseDate.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate) |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)! | [adjustInto](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#adjustInto(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!`)` <br /> Adjusts the specified temporal object to have the same date as this object. This returns a temporal object of the same observable type as the input with the date changed to be the same as this. The adjustment is equivalent to using [Temporal.with(TemporalField, long)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalField,%20kotlin.Long))passing [ChronoField.EPOCH_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#) as the field. In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalAdjuster)): ```kotlin // these two lines are equivalent, but the second approach is recommended temporal = thisLocalDate.adjustInto(temporal); temporal = temporal.with(thisLocalDate); ``` This instance is immutable and unaffected by this method call. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#compareTo(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate)!`)` <br /> Compares this date to another date, including the chronology. The comparison is based first on the underlying time-line date, then on the chronology. It is "consistent with equals", as defined by [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#). For example, the following is the comparator order: 1. `2012-12-03 (ISO)` 2. `2012-12-04 (ISO)` 3. `2555-12-04 (ThaiBuddhist)` 4. `2012-12-05 (ISO)` Values #2 and #3 represent the same date on the time-line. When two values represent the same date, the chronology ID is compared to distinguish them. This step is needed to make the ordering "consistent with equals". If all the date objects being compared are in the same chronology, then the additional chronology stage is not required and only the local date is used. To compare the dates of two`TemporalAccessor`instances, including dates in two different chronologies, use [ChronoField.EPOCH_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#) as a comparator. This default implementation performs the comparison defined above. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#format(java.time.format.DateTimeFormatter))`(`formatter:` ` [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter.html#)!`)` <br /> Formats this date using the specified formatter. This date will be passed to the formatter to produce a string. The default implementation must behave as follows: ```kotlin return formatter.format(this); ``` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isAfter(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate)!`)` <br /> Checks if this date is after the specified date ignoring the chronology. This method differs from the comparison in [compareTo](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#compareTo(java.time.chrono.ChronoLocalDate))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() > date2.toEpochDay()`. This default implementation performs the comparison based on the epoch-day. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isBefore(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate)!`)` <br /> Checks if this date is before the specified date ignoring the chronology. This method differs from the comparison in [compareTo](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#compareTo(java.time.chrono.ChronoLocalDate))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() < date2.toEpochDay()`. This default implementation performs the comparison based on the epoch-day. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isEqual(java.time.chrono.ChronoLocalDate))`(`other:` ` [ChronoLocalDate](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate)!`)` <br /> Checks if this date is equal to the specified date ignoring the chronology. This method differs from the comparison in [compareTo](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#compareTo(java.time.chrono.ChronoLocalDate))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() == date2.toEpochDay()`. This default implementation performs the comparison based on the epoch-day. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapYear](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isLeapYear())`()` <br /> Checks if the year is a leap year, as defined by the calendar system. A leap-year is a year of a longer length than normal. The exact meaning is determined by the chronology with the constraint that a leap-year must imply a year-length longer than a non leap-year. This default implementation uses [Chronology.isLeapYear(long)](https://developer.android.com/reference/kotlin/java/time/chrono/Chronology#isLeapYear(kotlin.Long)). <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#isSupported(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!`)` <br /> Checks if the specified unit is supported. This checks if the specified unit can be added to or subtracted from this date. If false, then calling the [plus(long,java.time.temporal.TemporalUnit)](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#plus(kotlin.Long,%20java.time.temporal.TemporalUnit))and [minus](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#minus(kotlin.Long,%20java.time.temporal.TemporalUnit))methods will throw an exception. The set of supported units is defined by the chronology and normally includes all`ChronoUnit`date units except`FOREVER`. If the unit is not a`ChronoUnit`, then the result of this method is obtained by invoking`TemporalUnit.isSupportedBy(Temporal)`passing`this`as the argument. Whether the unit is supported is determined by the unit. <br /> | | R | [query](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#query(java.time.temporal.TemporalQuery))`(`query:` ` [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)<R>!`)` <br /> Queries this date using the specified query. This queries this date using the specified query strategy object. The`TemporalQuery`object defines the logic to be used to obtain the result. Read the documentation of the query to understand what the result of this method will be. The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor))method on the specified query passing`this`as the argument. <br /> | ||
+| From class [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md) |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Temporal](../java/time/temporal/Temporal.md)! | [adjustInto](../java/time/chrono/ChronoLocalDate.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` <br /> Adjusts the specified temporal object to have the same date as this object. This returns a temporal object of the same observable type as the input with the date changed to be the same as this. The adjustment is equivalent to using [Temporal.with(TemporalField, long)](../java/time/temporal/Temporal.md))passing [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md) as the field. In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](../java/time/temporal/Temporal.md)): ```kotlin // these two lines are equivalent, but the second approach is recommended temporal = thisLocalDate.adjustInto(temporal); temporal = temporal.with(thisLocalDate); ``` This instance is immutable and unaffected by this method call. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` <br /> Compares this date to another date, including the chronology. The comparison is based first on the underlying time-line date, then on the chronology. It is "consistent with equals", as defined by [Comparable](../java/lang/Comparable.md). For example, the following is the comparator order: 1. `2012-12-03 (ISO)` 2. `2012-12-04 (ISO)` 3. `2555-12-04 (ThaiBuddhist)` 4. `2012-12-05 (ISO)` Values #2 and #3 represent the same date on the time-line. When two values represent the same date, the chronology ID is compared to distinguish them. This step is needed to make the ordering "consistent with equals". If all the date objects being compared are in the same chronology, then the additional chronology stage is not required and only the local date is used. To compare the dates of two`TemporalAccessor`instances, including dates in two different chronologies, use [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md) as a comparator. This default implementation performs the comparison defined above. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/time/chrono/ChronoLocalDate.md))`(`formatter:` ` [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!`)` <br /> Formats this date using the specified formatter. This date will be passed to the formatter to produce a string. The default implementation must behave as follows: ```kotlin return formatter.format(this); ``` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` <br /> Checks if this date is after the specified date ignoring the chronology. This method differs from the comparison in [compareTo](../java/time/chrono/ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() > date2.toEpochDay()`. This default implementation performs the comparison based on the epoch-day. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` <br /> Checks if this date is before the specified date ignoring the chronology. This method differs from the comparison in [compareTo](../java/time/chrono/ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() < date2.toEpochDay()`. This default implementation performs the comparison based on the epoch-day. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` <br /> Checks if this date is equal to the specified date ignoring the chronology. This method differs from the comparison in [compareTo](../java/time/chrono/ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() == date2.toEpochDay()`. This default implementation performs the comparison based on the epoch-day. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapYear](../java/time/chrono/ChronoLocalDate.md))`()` <br /> Checks if the year is a leap year, as defined by the calendar system. A leap-year is a year of a longer length than normal. The exact meaning is determined by the chronology with the constraint that a leap-year must imply a year-length longer than a non leap-year. This default implementation uses [Chronology.isLeapYear(long)](../java/time/chrono/Chronology.md)). <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../java/time/chrono/ChronoLocalDate.md))`(`unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` <br /> Checks if the specified unit is supported. This checks if the specified unit can be added to or subtracted from this date. If false, then calling the [plus(long,java.time.temporal.TemporalUnit)](../java/time/chrono/ChronoLocalDate.md))and [minus](../java/time/chrono/ChronoLocalDate.md))methods will throw an exception. The set of supported units is defined by the chronology and normally includes all`ChronoUnit`date units except`FOREVER`. If the unit is not a`ChronoUnit`, then the result of this method is obtained by invoking`TemporalUnit.isSupportedBy(Temporal)`passing`this`as the argument. Whether the unit is supported is determined by the unit. <br /> | | R | [query](../java/time/chrono/ChronoLocalDate.md))`(`query:` ` [TemporalQuery](../java/time/temporal/TemporalQuery.md)<R>!`)` <br /> Queries this date using the specified query. This queries this date using the specified query strategy object. The`TemporalQuery`object defines the logic to be used to obtain the result. Read the documentation of the query to understand what the result of this method will be. The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](../java/time/temporal/TemporalQuery.md))method on the specified query passing`this`as the argument. <br /> | ||
 
 ## Public methods
 
@@ -80,11 +80,11 @@ fun atTime(localTime: LocalTime!): ChronoLocalDateTime<JapaneseDate!>!
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------|
-| `localTime` | [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)!:the local time to use, not null |
+| `localTime` | [LocalTime](../java/time/LocalTime.md)!:the local time to use, not null |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)< [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)!>! | the local date-time formed from this date and the specified time, not null |
+| [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)< [JapaneseDate](../java/time/chrono/JapaneseDate.md)!>! | the local date-time formed from this date and the specified time, not null |
 
 ### equals
 
@@ -98,7 +98,7 @@ Compares this date to another date, including the chronology.
 
 Compares this`JapaneseDate`with another ensuring that the date is the same.
 
-Only objects of type`JapaneseDate`are compared, other types return false. To compare the dates of two`TemporalAccessor`instances, including dates in two different chronologies, use [ChronoField.EPOCH_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#) as a comparator.
+Only objects of type`JapaneseDate`are compared, other types return false. To compare the dates of two`TemporalAccessor`instances, including dates in two different chronologies, use [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md) as a comparator.
 
 | Parameters ||
 |-------|-----------------------------------------|
@@ -120,17 +120,17 @@ Obtains a`JapaneseDate`from a temporal object.
 
 This obtains a date in the Japanese calendar system based on the specified temporal. A`TemporalAccessor`represents an arbitrary set of date and time information, which this factory converts to an instance of`JapaneseDate`.
 
-The conversion typically uses the [EPOCH_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#) field, which is standardized across calendar systems.
+The conversion typically uses the [EPOCH_DAY](../java/time/temporal/ChronoField.md) field, which is standardized across calendar systems.
 
-This method matches the signature of the functional interface [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#) allowing it to be used as a query via method reference,`JapaneseDate::from`.
+This method matches the signature of the functional interface [TemporalQuery](../java/time/temporal/TemporalQuery.md) allowing it to be used as a query via method reference,`JapaneseDate::from`.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!:the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!:the temporal object to convert, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | the date in Japanese calendar system, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | the date in Japanese calendar system, not null |
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------|
@@ -146,11 +146,11 @@ fun getChronology(): JapaneseChronology!
 
 Gets the chronology of this date, which is the Japanese calendar system.
 
-The`Chronology`represents the calendar system in use. The era and other fields in [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#) are defined by the chronology.
+The`Chronology`represents the calendar system in use. The era and other fields in [ChronoField](../java/time/temporal/ChronoField.md) are defined by the chronology.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [JapaneseChronology](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseChronology)! | the Japanese chronology, not null |
+| [JapaneseChronology](../java/time/chrono/JapaneseChronology.md)! | the Japanese chronology, not null |
 
 ### getEra
 
@@ -162,11 +162,11 @@ fun getEra(): JapaneseEra!
 
 Gets the era applicable at this date.
 
-The Japanese calendar system has multiple eras defined by [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra).
+The Japanese calendar system has multiple eras defined by [JapaneseEra](../java/time/chrono/JapaneseEra.md).
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------|
-| [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)! | the era applicable at this date, not null |
+| [JapaneseEra](../java/time/chrono/JapaneseEra.md)! | the era applicable at this date, not null |
 
 ### getLong
 
@@ -178,7 +178,7 @@ fun getLong(field: TemporalField!): Long
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!:the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to get, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------|
@@ -215,9 +215,9 @@ fun isSupported(field: TemporalField!): Boolean
 
 Checks if the specified field is supported.
 
-This checks if this date can be queried for the specified field. If false, then calling the [range](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#range(java.time.temporal.TemporalField))and [get](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#get(java.time.temporal.TemporalField))methods will throw an exception.
+This checks if this date can be queried for the specified field. If false, then calling the [range](../java/time/chrono/JapaneseDate.md))and [get](../java/time/temporal/TemporalAccessor.md))methods will throw an exception.
 
-If the field is a [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#) then the query is implemented here. The supported fields are:
+If the field is a [ChronoField](../java/time/temporal/ChronoField.md) then the query is implemented here. The supported fields are:
 
 - `DAY_OF_WEEK`
 - `DAY_OF_MONTH`
@@ -235,7 +235,7 @@ If the field is not a`ChronoField`, then the result of this method is obtained b
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!:the field to check, null returns false |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to check, null returns false |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -279,7 +279,7 @@ fun minus(amount: TemporalAmount!): JapaneseDate!
 
 Returns an object of the same type as this object with an amount subtracted.
 
-This adjusts this temporal, subtracting according to the rules of the specified amount. The amount is typically a [java.time.Period](https://developer.android.com/reference/kotlin/java/time/Period.html#) but may be any other type implementing the [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#) interface, such as [java.time.Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#).
+This adjusts this temporal, subtracting according to the rules of the specified amount. The amount is typically a [java.time.Period](../java/time/Period.md) but may be any other type implementing the [TemporalAmount](../java/time/temporal/TemporalAmount.md) interface, such as [java.time.Duration](../java/time/Duration.md).
 
 Some example code indicating how and why this method is used: 
 
@@ -294,11 +294,11 @@ Note that calling`plus`followed by`minus`is not guaranteed to return the same da
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `amount` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!:the amount to subtract, not null |
+| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the amount to subtract, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | an object of the same type with the specified adjustment made, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | an object of the same type with the specified adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------|
@@ -319,11 +319,11 @@ fun minus(
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToSubtract` | the amount of the specified unit to subtract, may be negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!:the unit of the amount to subtract, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit of the amount to subtract, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | an object of the same type with the specified period subtracted, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | an object of the same type with the specified period subtracted, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|----------------------------------|
@@ -342,13 +342,13 @@ static fun now(): JapaneseDate!
 
 Obtains the current`JapaneseDate`from the system clock in the default time-zone.
 
-This will query the [system clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#systemDefaultZone())in the default time-zone to obtain the current date.
+This will query the [system clock](../java/time/Clock.md))in the default time-zone to obtain the current date.
 
 Using this method will prevent the ability to use an alternate clock for testing because the clock is hard-coded.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | the current date using the system clock and default time-zone, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | the current date using the system clock and default time-zone, not null |
 
 ### now
 
@@ -360,15 +360,15 @@ static fun now(clock: Clock!): JapaneseDate!
 
 Obtains the current`JapaneseDate`from the specified clock.
 
-This will query the specified clock to obtain the current date - today. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using [dependency injection](https://developer.android.com/reference/kotlin/java/time/Clock.html#).
+This will query the specified clock to obtain the current date - today. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using [dependency injection](../java/time/Clock.md).
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------|
-| `clock` | [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#)!:the clock to use, not null |
+| `clock` | [Clock](../java/time/Clock.md)!:the clock to use, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | the current date, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | the current date, not null |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------|
@@ -384,17 +384,17 @@ static fun now(zone: ZoneId!): JapaneseDate!
 
 Obtains the current`JapaneseDate`from the system clock in the specified time-zone.
 
-This will query the [system clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#system(java.time.ZoneId))to obtain the current date. Specifying the time-zone avoids dependence on the default time-zone.
+This will query the [system clock](../java/time/Clock.md))to obtain the current date. Specifying the time-zone avoids dependence on the default time-zone.
 
 Using this method will prevent the ability to use an alternate clock for testing because the clock is hard-coded.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!:the zone ID to use, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!:the zone ID to use, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | the current date using the system clock, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | the current date using the system clock, not null |
 
 ### of
 
@@ -423,7 +423,7 @@ The Japanese proleptic year, month and day-of-month are the same as those in the
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | the date in Japanese calendar system, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | the date in Japanese calendar system, not null |
 
 | Exceptions ||
 |-------------------------------|-------------------------------------------------------------------------------------------------|
@@ -458,7 +458,7 @@ The Japanese month and day-of-month are the same as those in the ISO calendar sy
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------|
-| `era` | [JapaneseEra](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseEra)!:the Japanese era, not null |
+| `era` | [JapaneseEra](../java/time/chrono/JapaneseEra.md)!:the Japanese era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese year-of-era |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the Japanese month-of-year, from 1 to 12 |
 | --- | --- |
@@ -466,7 +466,7 @@ The Japanese month and day-of-month are the same as those in the ISO calendar sy
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | the date in Japanese calendar system, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | the date in Japanese calendar system, not null |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -482,7 +482,7 @@ fun plus(amount: TemporalAmount!): JapaneseDate!
 
 Returns an object of the same type as this object with an amount added.
 
-This adjusts this temporal, adding according to the rules of the specified amount. The amount is typically a [java.time.Period](https://developer.android.com/reference/kotlin/java/time/Period.html#) but may be any other type implementing the [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#) interface, such as [java.time.Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#).
+This adjusts this temporal, adding according to the rules of the specified amount. The amount is typically a [java.time.Period](../java/time/Period.md) but may be any other type implementing the [TemporalAmount](../java/time/temporal/TemporalAmount.md) interface, such as [java.time.Duration](../java/time/Duration.md).
 
 Some example code indicating how and why this method is used: 
 
@@ -497,11 +497,11 @@ Note that calling`plus`followed by`minus`is not guaranteed to return the same da
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `amount` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!:the amount to add, not null |
+| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the amount to add, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | an object of the same type with the specified adjustment made, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | an object of the same type with the specified adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|--------------------------------|
@@ -522,11 +522,11 @@ fun plus(
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the amount of the specified unit to add, may be negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!:the unit of the amount to add, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit of the amount to add, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | an object of the same type with the specified period added, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | an object of the same type with the specified period added, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|------------------------------|
@@ -545,11 +545,11 @@ fun range(field: TemporalField!): ValueRange!
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!:the field to query the range for, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to query the range for, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | the range of valid values for the field, not null |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | the range of valid values for the field, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-----------------------------------------------|
@@ -594,7 +594,7 @@ fun until(endDate: ChronoLocalDate!): ChronoPeriod!
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [ChronoPeriod](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoPeriod)! | the period between this date and the end date, not null |
+| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | the period between this date and the end date, not null |
 
 | Exceptions ||
 |---------------------------------|------------------------------------|
@@ -614,8 +614,8 @@ fun until(
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `endExclusive` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!:the end temporal, exclusive, converted to be of the same type as this object, not null |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!:the unit to measure the amount in, not null |
+| `endExclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the end temporal, exclusive, converted to be of the same type as this object, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit to measure the amount in, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -638,7 +638,7 @@ fun with(adjuster: TemporalAdjuster!): JapaneseDate!
 
 Returns an adjusted object of the same type as this object with the adjustment made.
 
-This adjusts this date-time according to the rules of the specified adjuster. A simple adjuster might simply set the one of the fields, such as the year field. A more complex adjuster might set the date to the last day of the month. A selection of common adjustments is provided in [TemporalAdjusters](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjusters.html#). These include finding the "last day of the month" and "next Wednesday". The adjuster is responsible for handling special cases, such as the varying lengths of month and leap years.
+This adjusts this date-time according to the rules of the specified adjuster. A simple adjuster might simply set the one of the fields, such as the year field. A more complex adjuster might set the date to the last day of the month. A selection of common adjustments is provided in [TemporalAdjusters](../java/time/temporal/TemporalAdjusters.md). These include finding the "last day of the month" and "next Wednesday". The adjuster is responsible for handling special cases, such as the varying lengths of month and leap years.
 
 Some example code indicating how and why this method is used: 
 
@@ -651,11 +651,11 @@ date = date.with(Month.JULY);        // most key classes implement TemporalAdjus
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `adjuster` | [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#)!:the adjuster to use, not null |
+| `adjuster` | [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!:the adjuster to use, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | an object of the same type with the specified adjustment made, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | an object of the same type with the specified adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------------|
@@ -675,12 +675,12 @@ fun with(
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!:the field to set in the result, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to set in the result, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the new value of the field in the result |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [JapaneseDate](https://developer.android.com/reference/kotlin/java/time/chrono/JapaneseDate#)! | an object of the same type with the specified field set, not null |
+| [JapaneseDate](../java/time/chrono/JapaneseDate.md)! | an object of the same type with the specified field set, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ReceiverCallNotAllowedException
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/ReceiverCallNotAllowedException "View this page in Java") 
+Kotlin| [Java](../android/content/ReceiverCallNotAllowedException.md) 
 | --- | --- |
 
 ```
@@ -14,19 +14,19 @@ open class ReceiverCallNotAllowedException : AndroidRuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.util.AndroidRuntimeException](https://developer.android.com/reference/kotlin/android/util/AndroidRuntimeException.html#) ||
-| | | | | ↳ | [android.content.ReceiverCallNotAllowedException](https://developer.android.com/reference/kotlin/android/content/ReceiverCallNotAllowedException#) |
+| | | | ↳ | [android.util.AndroidRuntimeException](../android/util/AndroidRuntimeException.md) ||
+| | | | | ↳ | [android.content.ReceiverCallNotAllowedException](../android/content/ReceiverCallNotAllowedException.md) |
 
-This exception is thrown from android.content.Context#registerReceiver and android.content.Context#bindService when these methods are being used from an [BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver) component. In this case, the component will no longer be active upon returning from receiving the Intent, so it is not valid to use asynchronous APIs.
+This exception is thrown from android.content.Context#registerReceiver and android.content.Context#bindService when these methods are being used from an [BroadcastReceiver](../android/content/BroadcastReceiver.md) component. In this case, the component will no longer be active upon returning from receiving the Intent, so it is not valid to use asynchronous APIs.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ReceiverCallNotAllowedException](https://developer.android.com/reference/kotlin/android/content/ReceiverCallNotAllowedException#ReceiverCallNotAllowedException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [ReceiverCallNotAllowedException](../android/content/ReceiverCallNotAllowedException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

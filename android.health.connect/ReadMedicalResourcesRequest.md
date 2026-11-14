@@ -5,7 +5,7 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 
 # ReadMedicalResourcesRequest
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/ReadMedicalResourcesRequest "View this page in Java") 
+Kotlin| [Java](../android/health/connect/ReadMedicalResourcesRequest.md) 
 | --- | --- |
 
 ```
@@ -14,9 +14,9 @@ abstract class ReadMedicalResourcesRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.ReadMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest#) |
+| ↳ | [android.health.connect.ReadMedicalResourcesRequest](../android/health/connect/ReadMedicalResourcesRequest.md) |
 
-| Known Direct Subclasses [ReadMedicalResourcesInitialRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest), [ReadMedicalResourcesPageRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest) |------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------| | [ReadMedicalResourcesInitialRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest) | An initial read request with specified filters for android. | | [ReadMedicalResourcesPageRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest) | A page read request with specified`pageToken`for android. | |
+| Known Direct Subclasses [ReadMedicalResourcesInitialRequest](../android/health/connect/ReadMedicalResourcesInitialRequest.md), [ReadMedicalResourcesPageRequest](../android/health/connect/ReadMedicalResourcesPageRequest.md) |------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------| | [ReadMedicalResourcesInitialRequest](../android/health/connect/ReadMedicalResourcesInitialRequest.md) | An initial read request with specified filters for android. | | [ReadMedicalResourcesPageRequest](../android/health/connect/ReadMedicalResourcesPageRequest.md) | A page read request with specified`pageToken`for android. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A base class to represent a read request for android.health.connect.HealthConnectManager#readMedicalResources.
@@ -25,7 +25,7 @@ A base class to represent a read request for android.health.connect.HealthConnec
 
 | Public methods ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageSize](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest#getPageSize())`()` Returns maximum number of`MedicalResource`s to be returned by the read operation if set, 1000 otherwise. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageSize](../android/health/connect/ReadMedicalResourcesRequest.md))`()` Returns maximum number of`MedicalResource`s to be returned by the read operation if set, 1000 otherwise. |
 
 ## Public methods
 

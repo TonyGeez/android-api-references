@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MergeCursor
 
-Kotlin | [Java](https://developer.android.com/reference/android/database/MergeCursor "View this page in Java")
+Kotlin | [Java](../android/database/MergeCursor.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class MergeCursor : AbstractCursor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.database.AbstractCursor](https://developer.android.com/reference/kotlin/android/database/AbstractCursor) ||
-| | ↳ | [android.database.MergeCursor](https://developer.android.com/reference/kotlin/android/database/MergeCursor#) |
+| ↳ | [android.database.AbstractCursor](../android/database/AbstractCursor.md) ||
+| | ↳ | [android.database.MergeCursor](../android/database/MergeCursor.md) |
 
 A convenience class that lets you present an array of Cursors as a single linear Cursor. The schema of the cursors presented is entirely up to the creator of the MergeCursor, and may be different if that is desired. Calls to getColumns, getColumnIndex, etc will return the value for the row that the MergeCursor is currently pointing at.
 
@@ -333,7 +333,7 @@ Register an observer that is called when changes happen to the content backing t
 
 | Parameters ||
 |---|---|
-| `observer` | [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver)!: the object that gets notified when the content backing the cursor changes. |
+| `observer` | [ContentObserver](../android/database/ContentObserver.md)!: the object that gets notified when the content backing the cursor changes. |
 
 ### registerDataSetObserver
 
@@ -347,7 +347,7 @@ Register an observer that is called when changes happen to the contents of the t
 
 | Parameters ||
 |---|---|
-| `observer` | [DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver)!: the object that gets notified when the cursors data set changes. |
+| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!: the object that gets notified when the cursors data set changes. |
 
 ### requery
 
@@ -375,7 +375,7 @@ Unregister an observer that has previously been registered with this cursor via 
 
 | Parameters ||
 |---|---|
-| `observer` | [ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver)!: the object to unregister. |
+| `observer` | [ContentObserver](../android/database/ContentObserver.md)!: the object to unregister. |
 
 ### unregisterDataSetObserver
 
@@ -389,4 +389,4 @@ Unregister an observer that has previously been registered with this cursor via 
 
 | Parameters ||
 |---|---|
-| `observer` | [DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver)!: the object to unregister. |
+| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!: the object to unregister. |

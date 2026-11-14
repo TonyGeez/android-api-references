@@ -11,11 +11,11 @@ open class SAXException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [org.xml.sax.SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [org.xml.sax.SAXException](../org/xml/sax/SAXException.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [SAXNotRecognizedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotRecognizedException), [SAXNotSupportedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotSupportedException), [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException) |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------| | [SAXNotRecognizedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotRecognizedException) | Exception class for an unrecognized identifier. | | [SAXNotSupportedException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXNotSupportedException) | Exception class for an unsupported operation. | | [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException) | Encapsulate an XML parse error or warning. | |
+| Known Direct Subclasses [SAXNotRecognizedException](../org/xml/sax/SAXNotRecognizedException.md), [SAXNotSupportedException](../org/xml/sax/SAXNotSupportedException.md), [SAXParseException](../org/xml/sax/SAXParseException.md) |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------| | [SAXNotRecognizedException](../org/xml/sax/SAXNotRecognizedException.md) | Exception class for an unrecognized identifier. | | [SAXNotSupportedException](../org/xml/sax/SAXNotSupportedException.md) | Exception class for an unsupported operation. | | [SAXParseException](../org/xml/sax/SAXParseException.md) | Encapsulate an XML parse error or warning. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Encapsulate a general SAX error or warning.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
@@ -24,25 +24,25 @@ This class can contain basic error or warning information from either the XML pa
 
 If the application needs to pass through other types of exceptions, it must wrap those exceptions in a SAXException or an exception derived from a SAXException.
 
-If the parser or application needs to include information about a specific location in an XML document, it should use the [SAXParseException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException) subclass.
+If the parser or application needs to include information about a specific location in an XML document, it should use the [SAXParseException](../org/xml/sax/SAXParseException.md) subclass.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#SAXException())`()` Create a new SAXException. |
-| [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#SAXException(java.lang.Exception))`(`e:` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!`)` Create a new SAXException wrapping an existing exception. |
-| [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#SAXException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new SAXException. |
-| [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#SAXException(kotlin.String,%20java.lang.Exception))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `e:` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!`)` Create a new SAXException from an existing exception. |
+| [SAXException](../org/xml/sax/SAXException.md))`()` Create a new SAXException. |
+| [SAXException](../org/xml/sax/SAXException.md))`(`e:` ` [Exception](../java/lang/Exception.md)!`)` Create a new SAXException wrapping an existing exception. |
+| [SAXException](../org/xml/sax/SAXException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new SAXException. |
+| [SAXException](../org/xml/sax/SAXException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `e:` ` [Exception](../java/lang/Exception.md)!`)` Create a new SAXException from an existing exception. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)! | [getException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#getException())`()` Return the embedded exception, if any. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#toString())`()` Override toString to pick up any embedded exception. |
+| open [Exception](../java/lang/Exception.md)! | [getException](../org/xml/sax/SAXException.md))`()` Return the embedded exception, if any. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../org/xml/sax/SAXException.md))`()` Override toString to pick up any embedded exception. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException#message:kotlin.String) Return a detail message for this exception. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../org/xml/sax/SAXException.md) Return a detail message for this exception. |
 
 ## Public constructors
 
@@ -70,7 +70,7 @@ The existing exception will be embedded in the new one, and its message will bec
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:The exception to be wrapped in a SAXException. |
+| `e` | [Exception](../java/lang/Exception.md)!:The exception to be wrapped in a SAXException. |
 
 ### SAXException
 
@@ -103,7 +103,7 @@ The existing exception will be embedded in the new one, but the new exception wi
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The detail message. |
-| `e` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:The exception to be wrapped in a SAXException. |
+| `e` | [Exception](../java/lang/Exception.md)!:The exception to be wrapped in a SAXException. |
 
 ## Public methods
 
@@ -119,7 +119,7 @@ Return the embedded exception, if any.
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)! | The embedded exception, or null if there is none. |
+| [Exception](../java/lang/Exception.md)! | The embedded exception, or null if there is none. |
 
 ### toString
 

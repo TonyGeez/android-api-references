@@ -10,9 +10,9 @@ abstract class Reference<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.ref.Reference](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#) |
+| ↳ | [java.lang.ref.Reference](../java/lang/ref/Reference.md) |
 
-| Known Direct Subclasses [PhantomReference](https://developer.android.com/reference/kotlin/java/lang/ref/PhantomReference), [SoftReference](https://developer.android.com/reference/kotlin/java/lang/ref/SoftReference), [WeakReference](https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference) |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [PhantomReference](https://developer.android.com/reference/kotlin/java/lang/ref/PhantomReference) | Phantom reference objects, which are enqueued after the collector determines that their referents may otherwise be reclaimed. | | [SoftReference](https://developer.android.com/reference/kotlin/java/lang/ref/SoftReference) | Soft reference objects, which are cleared at the discretion of the garbage collector in response to memory demand. | | [WeakReference](https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference) | Weak reference objects, which do not prevent their referents from being made finalizable, finalized, and then reclaimed. | |
+| Known Direct Subclasses [PhantomReference](../java/lang/ref/PhantomReference.md), [SoftReference](../java/lang/ref/SoftReference.md), [WeakReference](../java/lang/ref/WeakReference.md) |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [PhantomReference](../java/lang/ref/PhantomReference.md) | Phantom reference objects, which are enqueued after the collector determines that their referents may otherwise be reclaimed. | | [SoftReference](../java/lang/ref/SoftReference.md) | Soft reference objects, which are cleared at the discretion of the garbage collector in response to memory demand. | | [WeakReference](../java/lang/ref/WeakReference.md) | Weak reference objects, which do not prevent their referents from being made finalizable, finalized, and then reclaimed. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract base class for reference objects. This class defines the operations common to all reference objects. Because reference objects are implemented in close cooperation with the garbage collector, this class may not be subclassed directly.
@@ -21,18 +21,18 @@ Abstract base class for reference objects. This class defines the operations com
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#clear())`()` Clears this reference object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enqueue](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#enqueue())`()` Adds this reference object to the queue with which it is registered, if any. |
-| openT? | [get](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#get())`()` Returns this reference object's referent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/lang/ref/Reference.md))`()` Clears this reference object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enqueue](../java/lang/ref/Reference.md))`()` Adds this reference object to the queue with which it is registered, if any. |
+| openT? | [get](../java/lang/ref/Reference.md))`()` Returns this reference object's referent. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnqueued](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#isEnqueued())`()` Tests if this reference object is in its associated queue, if any. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reachabilityFence](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#reachabilityFence(kotlin.Any))`(`ref:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Ensures that the object referenced by the given reference remains [*strongly reachable*](https://developer.android.com/reference/kotlin/java/lang/ref/package-summary#reachability), regardless of any prior actions of the program that might otherwise cause the object to become unreachable; thus, the referenced object is not reclaimable by garbage collection at least until after the invocation of this method. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refersTo](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#refersTo(java.lang.ref.Reference.T))`(`obj:` `T`)` Tests if the referent of this reference object is`obj`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnqueued](../java/lang/ref/Reference.md))`()` Tests if this reference object is in its associated queue, if any. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reachabilityFence](../java/lang/ref/Reference.md))`(`ref:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Ensures that the object referenced by the given reference remains [*strongly reachable*](../java/lang/ref/_package.md), regardless of any prior actions of the program that might otherwise cause the object to become unreachable; thus, the referenced object is not reclaimable by garbage collection at least until after the invocation of this method. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refersTo](../java/lang/ref/Reference.md))`(`obj:` `T`)` Tests if the referent of this reference object is`obj`. |
 | --- | --- |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#clone())`()` Throws [CloneNotSupportedException](https://developer.android.com/reference/kotlin/java/lang/CloneNotSupportedException.html#). |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../java/lang/ref/Reference.md))`()` Throws [CloneNotSupportedException](../java/lang/CloneNotSupportedException.md). |
 
 ## Public methods
 
@@ -87,12 +87,12 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun isEnqueued(): Boolean
 ```
 
-**Deprecated:** *This method was never implemented to test if a reference object has been cleared and enqueued as it was previously specified since 1.2. This method could be misused due to the inherent race condition or without an associated`ReferenceQueue`. An application relying on this method to release critical resources could cause serious performance issue. An application should use [ReferenceQueue](https://developer.android.com/reference/kotlin/java/lang/ref/ReferenceQueue) to reliably determine what reference objects that have been enqueued or`refersTo(null)`to determine if this reference object has been cleared.*
+**Deprecated:** *This method was never implemented to test if a reference object has been cleared and enqueued as it was previously specified since 1.2. This method could be misused due to the inherent race condition or without an associated`ReferenceQueue`. An application relying on this method to release critical resources could cause serious performance issue. An application should use [ReferenceQueue](../java/lang/ref/ReferenceQueue.md) to reliably determine what reference objects that have been enqueued or`refersTo(null)`to determine if this reference object has been cleared.*
 
 Tests if this reference object is in its associated queue, if any. This method returns`true`only if all of the following conditions are met:
 
 - this reference object was registered with a queue when it was created; and
-- the garbage collector has added this reference object to the queue or [enqueue()](https://developer.android.com/reference/kotlin/java/lang/ref/Reference#enqueue())is called; and
+- the garbage collector has added this reference object to the queue or [enqueue()](../java/lang/ref/Reference.md))is called; and
 - this reference object is not yet removed from the queue.
 
 Otherwise, this method returns`false`. This method may return`false`if this reference object has been cleared but not enqueued due to the race condition.
@@ -111,9 +111,9 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open static fun reachabilityFence(ref: Any!): Unit
 ```
 
-Ensures that the object referenced by the given reference remains [*strongly reachable*](https://developer.android.com/reference/kotlin/java/lang/ref/package-summary#reachability), regardless of any prior actions of the program that might otherwise cause the object to become unreachable; thus, the referenced object is not reclaimable by garbage collection at least until after the invocation of this method. Invocation of this method does not itself initiate garbage collection or finalization.
+Ensures that the object referenced by the given reference remains [*strongly reachable*](../java/lang/ref/_package.md), regardless of any prior actions of the program that might otherwise cause the object to become unreachable; thus, the referenced object is not reclaimable by garbage collection at least until after the invocation of this method. Invocation of this method does not itself initiate garbage collection or finalization.
 
-This method establishes an ordering for [*strong reachability*](https://developer.android.com/reference/kotlin/java/lang/ref/package-summary#reachability) with respect to garbage collection. It controls relations that are otherwise only implicit in a program -- the reachability conditions triggering garbage collection. This method is designed for use in uncommon situations of premature finalization where using`synchronized`blocks or methods, or using other synchronization facilities are not possible or do not provide the desired control. This method is applicable only when reclamation may have visible effects, which is possible for objects with finalizers (See [Section 12.6 17 of The Java™ Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/jls-12.html#jls-12.6)) that are implemented in ways that rely on ordering control for correctness.
+This method establishes an ordering for [*strong reachability*](../java/lang/ref/_package.md) with respect to garbage collection. It controls relations that are otherwise only implicit in a program -- the reachability conditions triggering garbage collection. This method is designed for use in uncommon situations of premature finalization where using`synchronized`blocks or methods, or using other synchronization facilities are not possible or do not provide the desired control. This method is applicable only when reclamation may have visible effects, which is possible for objects with finalizers (See [Section 12.6 17 of The Java™ Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/jls-12.html#jls-12.6)) that are implemented in ways that rely on ordering control for correctness.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun clone(): Any!
 ```
 
-Throws [CloneNotSupportedException](https://developer.android.com/reference/kotlin/java/lang/CloneNotSupportedException.html#). A`Reference`cannot be meaningfully cloned. Construct a new`Reference`instead.
+Throws [CloneNotSupportedException](../java/lang/CloneNotSupportedException.md). A`Reference`cannot be meaningfully cloned. Construct a new`Reference`instead.
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------|

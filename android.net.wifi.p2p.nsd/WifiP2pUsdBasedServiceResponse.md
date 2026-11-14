@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiP2pUsdBasedServiceResponse
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse "View this page in Java")
+Kotlin | [Java](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class WifiP2pUsdBasedServiceResponse : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#) |
+| ↳ | [android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse.md) |
 
 A class for a response for USD based service discovery. For the details of the configuration, refer Wi-Fi Alliance Wi-Fi Direct R2 specification - Appendix H - Unsynchronized Service Discovery (as defined in Wi-Fi Aware) and section 4.2.13 USD frame format.
 
@@ -32,7 +32,7 @@ A class for a response for USD based service discovery. For the details of the c
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiP2pUsdBasedServiceResponse](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiP2pUsdBasedServiceResponse](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
 
 ## Public methods
 
@@ -107,7 +107,7 @@ Implement the Parcelable interface
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

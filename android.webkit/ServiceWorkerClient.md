@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # ServiceWorkerClient
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/ServiceWorkerClient "View this page in Java") 
+Kotlin| [Java](../android/webkit/ServiceWorkerClient.md) 
 | --- | --- |
 
 ```
@@ -13,19 +13,19 @@ open class ServiceWorkerClient
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.ServiceWorkerClient](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerClient#) |
+| ↳ | [android.webkit.ServiceWorkerClient](../android/webkit/ServiceWorkerClient.md) |
 
-Base class for clients to capture Service Worker related callbacks, see [ServiceWorkerController](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerController) for usage example.
+Base class for clients to capture Service Worker related callbacks, see [ServiceWorkerController](../android/webkit/ServiceWorkerController.md) for usage example.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ServiceWorkerClient](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerClient#ServiceWorkerClient())`()` <br /> |
+| [ServiceWorkerClient](../android/webkit/ServiceWorkerClient.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse)? | [shouldInterceptRequest](https://developer.android.com/reference/kotlin/android/webkit/ServiceWorkerClient#shouldInterceptRequest(android.webkit.WebResourceRequest))`(`request:` ` [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!`)` Notify the host application of a resource request and allow the application to return the data. |
+| open [WebResourceResponse](../android/webkit/WebResourceResponse.md)? | [shouldInterceptRequest](../android/webkit/ServiceWorkerClient.md))`(`request:` ` [WebResourceRequest](../android/webkit/WebResourceRequest.md)!`)` Notify the host application of a resource request and allow the application to return the data. |
 
 ## Public constructors
 
@@ -51,12 +51,12 @@ Notify the host application of a resource request and allow the application to r
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [WebResourceRequest](https://developer.android.com/reference/kotlin/android/webkit/WebResourceRequest)!:Object containing the details of the request. |
+| `request` | [WebResourceRequest](../android/webkit/WebResourceRequest.md)!:Object containing the details of the request. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse)? | A [android.webkit.WebResourceResponse](https://developer.android.com/reference/kotlin/android/webkit/WebResourceResponse) containing the response information or`null`if the WebView should load the resource itself. |
+| [WebResourceResponse](../android/webkit/WebResourceResponse.md)? | A [android.webkit.WebResourceResponse](../android/webkit/WebResourceResponse.md) containing the response information or`null`if the WebView should load the resource itself. |
 
 **See Also**
 
-- [android.webkit.WebViewClient#shouldInterceptRequest(WebView, WebResourceRequest)](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#shouldInterceptRequest(android.webkit.WebView,%20android.webkit.WebResourceRequest))
+- [android.webkit.WebViewClient#shouldInterceptRequest(WebView, WebResourceRequest)](../android/webkit/WebViewClient.md))

@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface EGL
 ```
 
-| [javax.microedition.khronos.egl.EGL](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL#) |
+| [javax.microedition.khronos.egl.EGL](../javax/microedition/khronos/egl/EGL.md) |
 
-| Known Direct Subclasses [EGL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL10) |----------------------------------------------------------------------------------------------|--------| | [EGL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL10) | <br /> | |
+| Known Direct Subclasses [EGL10](../javax/microedition/khronos/egl/EGL10.md) |----------------------------------------------------------------------------------------------|--------| | [EGL10](../javax/microedition/khronos/egl/EGL10.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [EGL11](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL11) |----------------------------------------------------------------------------------------------|--------| | [EGL11](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL11) | <br /> | |
+| Known Indirect Subclasses [EGL11](../javax/microedition/khronos/egl/EGL11.md) |----------------------------------------------------------------------------------------------|--------| | [EGL11](../javax/microedition/khronos/egl/EGL11.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary

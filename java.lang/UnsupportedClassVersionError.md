@@ -11,11 +11,11 @@ open class UnsupportedClassVersionError : ClassFormatError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) ||||
-| | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) |||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) ||||
+| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.ClassFormatError](https://developer.android.com/reference/kotlin/java/lang/ClassFormatError) ||
-| | | | | ↳ | [java.lang.UnsupportedClassVersionError](https://developer.android.com/reference/kotlin/java/lang/UnsupportedClassVersionError#) |
+| | | | ↳ | [java.lang.ClassFormatError](../java/lang/ClassFormatError.md) ||
+| | | | | ↳ | [java.lang.UnsupportedClassVersionError](../java/lang/UnsupportedClassVersionError.md) |
 
 Thrown when the Java Virtual Machine attempts to read a class file and determines that the major and minor version numbers in the file are not supported.
 
@@ -23,8 +23,8 @@ Thrown when the Java Virtual Machine attempts to read a class file and determine
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedClassVersionError](https://developer.android.com/reference/kotlin/java/lang/UnsupportedClassVersionError#UnsupportedClassVersionError())`()` Constructs a`UnsupportedClassVersionError`with no detail message. |
-| [UnsupportedClassVersionError](https://developer.android.com/reference/kotlin/java/lang/UnsupportedClassVersionError#UnsupportedClassVersionError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`UnsupportedClassVersionError`with the specified detail message. |
+| [UnsupportedClassVersionError](../java/lang/UnsupportedClassVersionError.md))`()` Constructs a`UnsupportedClassVersionError`with no detail message. |
+| [UnsupportedClassVersionError](../java/lang/UnsupportedClassVersionError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`UnsupportedClassVersionError`with the specified detail message. |
 
 ## Public constructors
 

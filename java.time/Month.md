@@ -10,10 +10,10 @@ class Month : TemporalAccessor, TemporalAdjuster
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.Month](https://developer.android.com/reference/kotlin/java/time/Month#)\> ||
-| | ↳ | [java.time.Month](https://developer.android.com/reference/kotlin/java/time/Month#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.Month](../java/time/Month.md)\> ||
+| | ↳ | [java.time.Month](../java/time/Month.md) |
 
-| Known Direct Subclasses [Month.APRIL](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:APRIL), [Month.AUGUST](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:AUGUST), [Month.DECEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:DECEMBER), [Month.FEBRUARY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:FEBRUARY), [Month.JANUARY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JANUARY), [Month.JULY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JULY), [Month.JUNE](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JUNE), [Month.MARCH](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:MARCH), [Month.MAY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:MAY), [Month.NOVEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:NOVEMBER), [Month.OCTOBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:OCTOBER), [Month.SEPTEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:SEPTEMBER) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------| | [Month.APRIL](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:APRIL) | The singleton instance for the month of April with 30 days. | | [Month.AUGUST](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:AUGUST) | The singleton instance for the month of August with 31 days. | | [Month.DECEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:DECEMBER) | The singleton instance for the month of December with 31 days. | | [Month.FEBRUARY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:FEBRUARY) | The singleton instance for the month of February with 28 days, or 29 in a leap year. | | [Month.JANUARY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JANUARY) | The singleton instance for the month of January with 31 days. | | [Month.JULY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JULY) | The singleton instance for the month of July with 31 days. | | [Month.JUNE](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JUNE) | The singleton instance for the month of June with 30 days. | | [Month.MARCH](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:MARCH) | The singleton instance for the month of March with 31 days. | | [Month.MAY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:MAY) | The singleton instance for the month of May with 31 days. | | [Month.NOVEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:NOVEMBER) | The singleton instance for the month of November with 30 days. | | [Month.OCTOBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:OCTOBER) | The singleton instance for the month of October with 31 days. | | [Month.SEPTEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:SEPTEMBER) | The singleton instance for the month of September with 30 days. | |
+| Known Direct Subclasses [Month.APRIL](../java/time/Month.md), [Month.AUGUST](../java/time/Month.md), [Month.DECEMBER](../java/time/Month.md), [Month.FEBRUARY](../java/time/Month.md), [Month.JANUARY](../java/time/Month.md), [Month.JULY](../java/time/Month.md), [Month.JUNE](../java/time/Month.md), [Month.MARCH](../java/time/Month.md), [Month.MAY](../java/time/Month.md), [Month.NOVEMBER](../java/time/Month.md), [Month.OCTOBER](../java/time/Month.md), [Month.SEPTEMBER](../java/time/Month.md) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------| | [Month.APRIL](../java/time/Month.md) | The singleton instance for the month of April with 30 days. | | [Month.AUGUST](../java/time/Month.md) | The singleton instance for the month of August with 31 days. | | [Month.DECEMBER](../java/time/Month.md) | The singleton instance for the month of December with 31 days. | | [Month.FEBRUARY](../java/time/Month.md) | The singleton instance for the month of February with 28 days, or 29 in a leap year. | | [Month.JANUARY](../java/time/Month.md) | The singleton instance for the month of January with 31 days. | | [Month.JULY](../java/time/Month.md) | The singleton instance for the month of July with 31 days. | | [Month.JUNE](../java/time/Month.md) | The singleton instance for the month of June with 30 days. | | [Month.MARCH](../java/time/Month.md) | The singleton instance for the month of March with 31 days. | | [Month.MAY](../java/time/Month.md) | The singleton instance for the month of May with 31 days. | | [Month.NOVEMBER](../java/time/Month.md) | The singleton instance for the month of November with 30 days. | | [Month.OCTOBER](../java/time/Month.md) | The singleton instance for the month of October with 31 days. | | [Month.SEPTEMBER](../java/time/Month.md) | The singleton instance for the month of September with 30 days. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A month-of-year, such as 'July'.
@@ -30,43 +30,43 @@ This enum represents a common concept that is found in many calendar systems. As
 
 | Enum values ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [APRIL](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:APRIL) The singleton instance for the month of April with 30 days. |
-| [AUGUST](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:AUGUST) The singleton instance for the month of August with 31 days. |
-| [DECEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:DECEMBER) The singleton instance for the month of December with 31 days. |
-| [FEBRUARY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:FEBRUARY) The singleton instance for the month of February with 28 days, or 29 in a leap year. |
-| [JANUARY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JANUARY) The singleton instance for the month of January with 31 days. |
-| [JULY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JULY) The singleton instance for the month of July with 31 days. |
-| [JUNE](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:JUNE) The singleton instance for the month of June with 30 days. |
-| [MARCH](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:MARCH) The singleton instance for the month of March with 31 days. |
-| [MAY](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:MAY) The singleton instance for the month of May with 31 days. |
-| [NOVEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:NOVEMBER) The singleton instance for the month of November with 30 days. |
-| [OCTOBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:OCTOBER) The singleton instance for the month of October with 31 days. |
-| [SEPTEMBER](https://developer.android.com/reference/kotlin/java/time/Month#ENUM_VALUE:SEPTEMBER) The singleton instance for the month of September with 30 days. |
+| [APRIL](../java/time/Month.md) The singleton instance for the month of April with 30 days. |
+| [AUGUST](../java/time/Month.md) The singleton instance for the month of August with 31 days. |
+| [DECEMBER](../java/time/Month.md) The singleton instance for the month of December with 31 days. |
+| [FEBRUARY](../java/time/Month.md) The singleton instance for the month of February with 28 days, or 29 in a leap year. |
+| [JANUARY](../java/time/Month.md) The singleton instance for the month of January with 31 days. |
+| [JULY](../java/time/Month.md) The singleton instance for the month of July with 31 days. |
+| [JUNE](../java/time/Month.md) The singleton instance for the month of June with 30 days. |
+| [MARCH](../java/time/Month.md) The singleton instance for the month of March with 31 days. |
+| [MAY](../java/time/Month.md) The singleton instance for the month of May with 31 days. |
+| [NOVEMBER](../java/time/Month.md) The singleton instance for the month of November with 30 days. |
+| [OCTOBER](../java/time/Month.md) The singleton instance for the month of October with 31 days. |
+| [SEPTEMBER](../java/time/Month.md) The singleton instance for the month of September with 30 days. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [adjustInto](https://developer.android.com/reference/kotlin/java/time/Month#adjustInto(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Adjusts the specified temporal object to have this month-of-year. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [firstDayOfYear](https://developer.android.com/reference/kotlin/java/time/Month#firstDayOfYear(kotlin.Boolean))`(`leapYear:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Gets the day-of-year corresponding to the first day of this month. |
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | [firstMonthOfQuarter](https://developer.android.com/reference/kotlin/java/time/Month#firstMonthOfQuarter())`()` Gets the month corresponding to the first month of this quarter. |
+| [Temporal](../java/time/temporal/Temporal.md)! | [adjustInto](../java/time/Month.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Adjusts the specified temporal object to have this month-of-year. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [firstDayOfYear](../java/time/Month.md))`(`leapYear:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Gets the day-of-year corresponding to the first day of this month. |
+| [Month](../java/time/Month.md)! | [firstMonthOfQuarter](../java/time/Month.md))`()` Gets the month corresponding to the first month of this quarter. |
 | --- | --- |
-| static [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | [from](https://developer.android.com/reference/kotlin/java/time/Month#from(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!`)` Obtains an instance of`Month`from a temporal object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](https://developer.android.com/reference/kotlin/java/time/Month#get(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the value of the specified field from this month-of-year as an`int`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/time/Month#getDisplayName(java.time.format.TextStyle,%20java.util.Locale))`(`style:` ` [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle)!`, `locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the textual representation, such as 'Jan' or 'December'. |
+| static [Month](../java/time/Month.md)! | [from](../java/time/Month.md))`(`temporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`)` Obtains an instance of`Month`from a temporal object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](../java/time/Month.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Gets the value of the specified field from this month-of-year as an`int`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/time/Month.md))`(`style:` ` [TextStyle](../java/time/format/TextStyle.md)!`, `locale:` ` [Locale](../java/util/Locale.md)!`)` Gets the textual representation, such as 'Jan' or 'December'. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/time/Month#getLong(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the value of the specified field from this month-of-year as a`long`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](https://developer.android.com/reference/kotlin/java/time/Month#getValue())`()` Gets the month-of-year`int`value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](https://developer.android.com/reference/kotlin/java/time/Month#isSupported(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Checks if the specified field is supported. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../java/time/Month.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Gets the value of the specified field from this month-of-year as a`long`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](../java/time/Month.md))`()` Gets the month-of-year`int`value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../java/time/Month.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Checks if the specified field is supported. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/java/time/Month#length(kotlin.Boolean))`(`leapYear:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Gets the length of this month in days. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [maxLength](https://developer.android.com/reference/kotlin/java/time/Month#maxLength())`()` Gets the maximum length of this month in days. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [minLength](https://developer.android.com/reference/kotlin/java/time/Month#minLength())`()` Gets the minimum length of this month in days. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../java/time/Month.md))`(`leapYear:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Gets the length of this month in days. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [maxLength](../java/time/Month.md))`()` Gets the maximum length of this month in days. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [minLength](../java/time/Month.md))`()` Gets the minimum length of this month in days. |
 | --- | --- |
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | [minus](https://developer.android.com/reference/kotlin/java/time/Month#minus(kotlin.Long))`(`months:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the month-of-year that is the specified number of months before this one. |
-| static [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | [of](https://developer.android.com/reference/kotlin/java/time/Month#of(kotlin.Int))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of`Month`from an`int`value. |
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | [plus](https://developer.android.com/reference/kotlin/java/time/Month#plus(kotlin.Long))`(`months:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the month-of-year that is the specified number of months after this one. |
+| [Month](../java/time/Month.md)! | [minus](../java/time/Month.md))`(`months:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the month-of-year that is the specified number of months before this one. |
+| static [Month](../java/time/Month.md)! | [of](../java/time/Month.md))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of`Month`from an`int`value. |
+| [Month](../java/time/Month.md)! | [plus](../java/time/Month.md))`(`months:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the month-of-year that is the specified number of months after this one. |
 | --- | --- |
-| R | [query](https://developer.android.com/reference/kotlin/java/time/Month#query(java.time.temporal.TemporalQuery))`(`query:` ` [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery)<R>!`)` Queries this month-of-year using the specified query. |
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | [range](https://developer.android.com/reference/kotlin/java/time/Month#range(java.time.temporal.TemporalField))`(`field:` ` [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!`)` Gets the range of valid values for the specified field. |
+| R | [query](../java/time/Month.md))`(`query:` ` [TemporalQuery](../java/time/temporal/TemporalQuery.md)<R>!`)` Queries this month-of-year using the specified query. |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | [range](../java/time/Month.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Gets the range of valid values for the specified field. |
 
 ## Enum values
 
@@ -204,9 +204,9 @@ Adjusts the specified temporal object to have this month-of-year.
 
 This returns a temporal object of the same observable type as the input with the month-of-year changed to be the same as this.
 
-The adjustment is equivalent to using [Temporal.with(TemporalField, long)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#with(java.time.temporal.TemporalField,%20kotlin.Long))passing [ChronoField.MONTH_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) as the field. If the specified temporal object does not use the ISO calendar system then a`DateTimeException`is thrown.
+The adjustment is equivalent to using [Temporal.with(TemporalField, long)](../java/time/temporal/Temporal.md))passing [ChronoField.MONTH_OF_YEAR](../java/time/temporal/ChronoField.md) as the field. If the specified temporal object does not use the ISO calendar system then a`DateTimeException`is thrown.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#with(java.time.temporal.TemporalAdjuster)): 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](../java/time/temporal/Temporal.md)): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -230,11 +230,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the target object to be adjusted, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the target object to be adjusted, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | the adjusted object, not null |
+| [Temporal](../java/time/temporal/Temporal.md)! | the adjusted object, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------------|
@@ -275,7 +275,7 @@ The year can be divided into four quarters. This method returns the first month 
 
 | Return ||
 |---------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | the first month of the quarter corresponding to this month, not null |
+| [Month](../java/time/Month.md)! | the first month of the quarter corresponding to this month, not null |
 
 ### from
 
@@ -289,17 +289,17 @@ Obtains an instance of`Month`from a temporal object.
 
 This obtains a month based on the specified temporal. A`TemporalAccessor`represents an arbitrary set of date and time information, which this factory converts to an instance of`Month`.
 
-The conversion extracts the [MONTH_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) field. The extraction is only permitted if the temporal object has an ISO chronology, or can be converted to a`LocalDate`.
+The conversion extracts the [MONTH_OF_YEAR](../java/time/temporal/ChronoField.md) field. The extraction is only permitted if the temporal object has an ISO chronology, or can be converted to a`LocalDate`.
 
-This method matches the signature of the functional interface [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery) allowing it to be used as a query via method reference,`Month::from`.
+This method matches the signature of the functional interface [TemporalQuery](../java/time/temporal/TemporalQuery.md) allowing it to be used as a query via method reference,`Month::from`.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!:the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!:the temporal object to convert, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|-----------------------------|
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | the month-of-year, not null |
+| [Month](../java/time/Month.md)! | the month-of-year, not null |
 
 | Exceptions ||
 |-------------------------------|----------------------------------|
@@ -317,13 +317,13 @@ Gets the value of the specified field from this month-of-year as an`int`.
 
 This queries this month for the value of the specified field. The returned value will always be within the valid range of values for the field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is [MONTH_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) then the value of the month-of-year, from 1 to 12, will be returned. All other`ChronoField`instances will throw an`UnsupportedTemporalTypeException`.
+If the field is [MONTH_OF_YEAR](../java/time/temporal/ChronoField.md) then the value of the month-of-year, from 1 to 12, will be returned. All other`ChronoField`instances will throw an`UnsupportedTemporalTypeException`.
 
 If the field is not a`ChronoField`, then the result of this method is obtained by invoking`TemporalField.getFrom(TemporalAccessor)`passing`this`as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!:the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to get, not null |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -351,12 +351,12 @@ Gets the textual representation, such as 'Jan' or 'December'.
 
 This returns the textual name used to identify the month-of-year, suitable for presentation to the user. The parameters control the style of the returned text and the locale.
 
-If no textual mapping is found then the [numeric value](https://developer.android.com/reference/kotlin/java/time/Month#getValue())is returned.
+If no textual mapping is found then the [numeric value](../java/time/Month.md))is returned.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `style` | [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle)!:the length of the text required, not null |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the locale to use, not null |
+| `style` | [TextStyle](../java/time/format/TextStyle.md)!:the length of the text required, not null |
+| `locale` | [Locale](../java/util/Locale.md)!:the locale to use, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------|
@@ -374,13 +374,13 @@ Gets the value of the specified field from this month-of-year as a`long`.
 
 This queries this month for the value of the specified field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is [MONTH_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) then the value of the month-of-year, from 1 to 12, will be returned. All other`ChronoField`instances will throw an`UnsupportedTemporalTypeException`.
+If the field is [MONTH_OF_YEAR](../java/time/temporal/ChronoField.md) then the value of the month-of-year, from 1 to 12, will be returned. All other`ChronoField`instances will throw an`UnsupportedTemporalTypeException`.
 
 If the field is not a`ChronoField`, then the result of this method is obtained by invoking`TemporalField.getFrom(TemporalAccessor)`passing`this`as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!:the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to get, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------|
@@ -419,15 +419,15 @@ fun isSupported(field: TemporalField!): Boolean
 
 Checks if the specified field is supported.
 
-This checks if this month-of-year can be queried for the specified field. If false, then calling the [range](https://developer.android.com/reference/kotlin/java/time/Month#range(java.time.temporal.TemporalField))and [get](https://developer.android.com/reference/kotlin/java/time/Month#get(java.time.temporal.TemporalField))methods will throw an exception.
+This checks if this month-of-year can be queried for the specified field. If false, then calling the [range](../java/time/Month.md))and [get](../java/time/Month.md))methods will throw an exception.
 
-If the field is [MONTH_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) then this method returns true. All other`ChronoField`instances will return false.
+If the field is [MONTH_OF_YEAR](../java/time/temporal/ChronoField.md) then this method returns true. All other`ChronoField`instances will return false.
 
 If the field is not a`ChronoField`, then the result of this method is obtained by invoking`TemporalField.isSupportedBy(TemporalAccessor)`passing`this`as the argument. Whether the field is supported is determined by the field.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!:the field to check, null returns false |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to check, null returns false |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -507,7 +507,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------------------------|
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | the resulting month, not null |
+| [Month](../java/time/Month.md)! | the resulting month, not null |
 
 ### of
 
@@ -527,7 +527,7 @@ Obtains an instance of`Month`from an`int`value.
 
 | Return ||
 |---------------------------------------------------------------------------|-----------------------------|
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | the month-of-year, not null |
+| [Month](../java/time/Month.md)! | the month-of-year, not null |
 
 | Exceptions ||
 |-------------------------------|---------------------------------|
@@ -553,7 +553,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------------------------|
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month#)! | the resulting month, not null |
+| [Month](../java/time/Month.md)! | the resulting month, not null |
 
 ### query
 
@@ -567,12 +567,12 @@ Queries this month-of-year using the specified query.
 
 This queries this month-of-year using the specified query strategy object. The`TemporalQuery`object defines the logic to be used to obtain the result. Read the documentation of the query to understand what the result of this method will be.
 
-The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery#queryFrom(java.time.temporal.TemporalAccessor))method on the specified query passing`this`as the argument.
+The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](../java/time/temporal/TemporalQuery.md))method on the specified query passing`this`as the argument.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `<R>` | the type of the result |
-| `query` | [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery)\<R\>!:the query to invoke, not null |
+| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<R\>!:the query to invoke, not null |
 
 | Return ||
 |---|---------------------------------------------------------------|
@@ -595,17 +595,17 @@ Gets the range of valid values for the specified field.
 
 The range object expresses the minimum and maximum valid values for a field. This month is used to enhance the accuracy of the returned range. If it is not possible to return the range, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is [MONTH_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) then the range of the month-of-year, from 1 to 12, will be returned. All other`ChronoField`instances will throw an`UnsupportedTemporalTypeException`.
+If the field is [MONTH_OF_YEAR](../java/time/temporal/ChronoField.md) then the range of the month-of-year, from 1 to 12, will be returned. All other`ChronoField`instances will throw an`UnsupportedTemporalTypeException`.
 
 If the field is not a`ChronoField`, then the result of this method is obtained by invoking`TemporalField.rangeRefinedBy(TemporalAccessor)`passing`this`as the argument. Whether the range can be obtained is determined by the field.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!:the field to query the range for, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to query the range for, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | the range of valid values for the field, not null |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | the range of valid values for the field, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-----------------------------------------------|

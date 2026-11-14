@@ -2,11 +2,11 @@
 
 # android.ranging.ble.cs
 
-Kotlin| [Java](https://developer.android.com/reference/android/ranging/ble/cs/package-summary "View this page in Java")
+Kotlin| [Java](../android/ranging/ble/cs/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [BleCsRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingCapabilities) | Represents the capabilities of the Bluetooth-based Channel Sounding (CS) ranging. |
+| [BleCsRangingCapabilities](../android/ranging/ble/cs/BleCsRangingCapabilities.md) | Represents the capabilities of the Bluetooth-based Channel Sounding (CS) ranging. |
 | --- | --- |
-| [BleCsRangingParams](https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingParams) | BleCsRangingParams encapsulates the parameters required for a bluetooth channel sounding ranging session. |
+| [BleCsRangingParams](../android/ranging/ble/cs/BleCsRangingParams.md) | BleCsRangingParams encapsulates the parameters required for a bluetooth channel sounding ranging session. |

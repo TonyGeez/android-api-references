@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # SystemFonts
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/fonts/SystemFonts "View this page in Java") 
+Kotlin| [Java](../android/graphics/fonts/SystemFonts.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SystemFonts
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.fonts.SystemFonts](https://developer.android.com/reference/kotlin/android/graphics/fonts/SystemFonts#) |
+| ↳ | [android.graphics.fonts.SystemFonts](../android/graphics/fonts/SystemFonts.md) |
 
 Provides the system font configurations.
 
@@ -21,7 +21,7 @@ Provides the system font configurations.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Font](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font)!\> | [getAvailableFonts](https://developer.android.com/reference/kotlin/android/graphics/fonts/SystemFonts#getAvailableFonts())`()` Returns all available font files in the system. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Font](../android/graphics/fonts/Font.md)!\> | [getAvailableFonts](../android/graphics/fonts/SystemFonts.md))`()` Returns all available font files in the system. |
 
 ## Public methods
 
@@ -37,4 +37,4 @@ Returns all available font files in the system.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Font](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font)!> | a set of system fonts This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Font](../android/graphics/fonts/Font.md)!> | a set of system fonts This value cannot be`null`. |

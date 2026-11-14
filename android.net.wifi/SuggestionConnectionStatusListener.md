@@ -4,22 +4,22 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # SuggestionConnectionStatusListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiManager.SuggestionConnectionStatusListener "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/WifiManager.SuggestionConnectionStatusListener.md) 
 | --- | --- |
 
 ```
 interface SuggestionConnectionStatusListener
 ```
 
-| [android.net.wifi.WifiManager.SuggestionConnectionStatusListener](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionConnectionStatusListener#) |
+| [android.net.wifi.WifiManager.SuggestionConnectionStatusListener](../android/net/wifi/WifiManager.SuggestionConnectionStatusListener.md) |
 
-Interface for suggestion connection status listener. Should be implemented by applications and set when calling [WifiManager.addSuggestionConnectionStatusListener(](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addSuggestionConnectionStatusListener(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SuggestionConnectionStatusListener)).
+Interface for suggestion connection status listener. Should be implemented by applications and set when calling [WifiManager.addSuggestionConnectionStatusListener(](../android/net/wifi/WifiManager.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnectionStatus](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionConnectionStatusListener#onConnectionStatus(android.net.wifi.WifiNetworkSuggestion,%20kotlin.Int))`(`wifiNetworkSuggestion:` ` [WifiNetworkSuggestion](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion)`, `failureReason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the framework attempted to connect to a suggestion provided by the registering app, but the connection to the suggestion failed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnectionStatus](../android/net/wifi/WifiManager.SuggestionConnectionStatusListener.md))`(`wifiNetworkSuggestion:` ` [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md)`, `failureReason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the framework attempted to connect to a suggestion provided by the registering app, but the connection to the suggestion failed. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called when the framework attempted to connect to a suggestion provided by the r
 
 | Parameters ||
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `wifiNetworkSuggestion` | [WifiNetworkSuggestion](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion):The suggestion which failed to connect. This value cannot be`null`. |
-| `failureReason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the connection failure reason code. Value is [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_UNKNOWN](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_UNKNOWN:kotlin.Int), [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_ASSOCIATION](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_ASSOCIATION:kotlin.Int), [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_AUTHENTICATION](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_AUTHENTICATION:kotlin.Int), or [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_IP_PROVISIONING](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_IP_PROVISIONING:kotlin.Int) |
+| `wifiNetworkSuggestion` | [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md):The suggestion which failed to connect. This value cannot be`null`. |
+| `failureReason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the connection failure reason code. Value is [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_UNKNOWN](../android/net/wifi/WifiManager.md), [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_ASSOCIATION](../android/net/wifi/WifiManager.md), [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_AUTHENTICATION](../android/net/wifi/WifiManager.md), or [android.net.wifi.WifiManager#STATUS_SUGGESTION_CONNECTION_FAILURE_IP_PROVISIONING](../android/net/wifi/WifiManager.md) |

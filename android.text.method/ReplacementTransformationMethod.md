@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ReplacementTransformationMethod
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/method/ReplacementTransformationMethod "View this page in Java")
+Kotlin | [Java](../android/text/method/ReplacementTransformationMethod.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ abstract class ReplacementTransformationMethod : TransformationMethod
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.method.ReplacementTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod#) |
+| ↳ | [android.text.method.ReplacementTransformationMethod](../android/text/method/ReplacementTransformationMethod.md) |
 
-| Known Direct Subclasses [HideReturnsTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/HideReturnsTransformationMethod), [SingleLineTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/SingleLineTransformationMethod) |---|---| | [HideReturnsTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/HideReturnsTransformationMethod) | This transformation method causes any carriage return characters (\\r) to be hidden by displaying them as zero-width non-breaking space characters (\\uFEFF). | | [SingleLineTransformationMethod](https://developer.android.com/reference/kotlin/android/text/method/SingleLineTransformationMethod) | This transformation method causes any newline characters (\\n) to be displayed as spaces instead of causing line breaks, and causes carriage return characters (\\r) to have no appearance. | |
+| Known Direct Subclasses [HideReturnsTransformationMethod](../android/text/method/HideReturnsTransformationMethod.md), [SingleLineTransformationMethod](../android/text/method/SingleLineTransformationMethod.md) |---|---| | [HideReturnsTransformationMethod](../android/text/method/HideReturnsTransformationMethod.md) | This transformation method causes any carriage return characters (\\r) to be hidden by displaying them as zero-width non-breaking space characters (\\uFEFF). | | [SingleLineTransformationMethod](../android/text/method/SingleLineTransformationMethod.md) | This transformation method causes any newline characters (\\n) to be displayed as spaces instead of causing line breaks, and causes carriage return characters (\\r) to have no appearance. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This transformation method causes the characters in the `https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod#getOriginal()` array to be replaced by the corresponding characters in the `https://developer.android.com/reference/kotlin/android/text/method/ReplacementTransformationMethod#getReplacement()` array.

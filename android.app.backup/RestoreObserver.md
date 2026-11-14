@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # RestoreObserver
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/backup/RestoreObserver "View this page in Java") 
+Kotlin| [Java](../android/app/backup/RestoreObserver.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class RestoreObserver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.backup.RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#) |
+| ↳ | [android.app.backup.RestoreObserver](../android/app/backup/RestoreObserver.md) |
 
 Callback class for receiving progress reports during a restore operation. These methods will all be called on your application's main thread.
 
@@ -21,13 +21,13 @@ Callback class for receiving progress reports during a restore operation. These 
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------|---|
-| [RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#RestoreObserver())`()` <br /> |
+| [RestoreObserver](../android/app/backup/RestoreObserver.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUpdate](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#onUpdate(kotlin.Int,%20kotlin.String))`(`nowBeingRestored:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentPackage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` An indication of which package is being restored currently, out of the total number provided in the [restoreStarting(int)](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreStarting(kotlin.Int))callback. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreFinished](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreFinished(kotlin.Int))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The restore process has completed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreStarting](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreStarting(kotlin.Int))`(`numPackages:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The restore operation has begun. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUpdate](../android/app/backup/RestoreObserver.md))`(`nowBeingRestored:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentPackage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` An indication of which package is being restored currently, out of the total number provided in the [restoreStarting(int)](../android/app/backup/RestoreObserver.md))callback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreFinished](../android/app/backup/RestoreObserver.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The restore process has completed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreStarting](../android/app/backup/RestoreObserver.md))`(`numPackages:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The restore operation has begun. |
 | --- | --- |
 
 ## Public constructors
@@ -51,11 +51,11 @@ open fun onUpdate(
 ): Unit
 ```
 
-An indication of which package is being restored currently, out of the total number provided in the [restoreStarting(int)](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreStarting(kotlin.Int))callback. This method is not guaranteed to be called: if the transport is unable to obtain data for one or more of the requested packages, no onUpdate() call will occur for those packages.
+An indication of which package is being restored currently, out of the total number provided in the [restoreStarting(int)](../android/app/backup/RestoreObserver.md))callback. This method is not guaranteed to be called: if the transport is unable to obtain data for one or more of the requested packages, no onUpdate() call will occur for those packages.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `nowBeingRestored` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index, between 1 and the numPackages parameter to the [restoreStarting(int)](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver#restoreStarting(kotlin.Int))callback, of the package now being restored. This may be non-monotonic; it is intended purely as a rough indication of the backup manager's progress through the overall restore process. |
+| `nowBeingRestored` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index, between 1 and the numPackages parameter to the [restoreStarting(int)](../android/app/backup/RestoreObserver.md))callback, of the package now being restored. This may be non-monotonic; it is intended purely as a rough indication of the backup manager's progress through the overall restore process. |
 | `currentPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the package now being restored. |
 
 ### restoreFinished

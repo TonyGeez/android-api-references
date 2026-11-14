@@ -8,10 +8,10 @@ class DayOfWeek : TemporalAccessor, TemporalAdjuster
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)\> ||
-| | ↳ | [java.time.DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.DayOfWeek](../java/time/DayOfWeek.md)\> ||
+| | ↳ | [java.time.DayOfWeek](../java/time/DayOfWeek.md) |
 
-| Known Direct Subclasses [DayOfWeek.FRIDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:FRIDAY), [DayOfWeek.MONDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:MONDAY), [DayOfWeek.SATURDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SATURDAY), [DayOfWeek.SUNDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SUNDAY), [DayOfWeek.THURSDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:THURSDAY), [DayOfWeek.TUESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:TUESDAY), [DayOfWeek.WEDNESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:WEDNESDAY) |---|---| | [DayOfWeek.FRIDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:FRIDAY) | The singleton instance for the day-of-week of Friday. | | [DayOfWeek.MONDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:MONDAY) | The singleton instance for the day-of-week of Monday. | | [DayOfWeek.SATURDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SATURDAY) | The singleton instance for the day-of-week of Saturday. | | [DayOfWeek.SUNDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:SUNDAY) | The singleton instance for the day-of-week of Sunday. | | [DayOfWeek.THURSDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:THURSDAY) | The singleton instance for the day-of-week of Thursday. | | [DayOfWeek.TUESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:TUESDAY) | The singleton instance for the day-of-week of Tuesday. | | [DayOfWeek.WEDNESDAY](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#ENUM_VALUE:WEDNESDAY) | The singleton instance for the day-of-week of Wednesday. | |
+| Known Direct Subclasses [DayOfWeek.FRIDAY](../java/time/DayOfWeek.md), [DayOfWeek.MONDAY](../java/time/DayOfWeek.md), [DayOfWeek.SATURDAY](../java/time/DayOfWeek.md), [DayOfWeek.SUNDAY](../java/time/DayOfWeek.md), [DayOfWeek.THURSDAY](../java/time/DayOfWeek.md), [DayOfWeek.TUESDAY](../java/time/DayOfWeek.md), [DayOfWeek.WEDNESDAY](../java/time/DayOfWeek.md) |---|---| | [DayOfWeek.FRIDAY](../java/time/DayOfWeek.md) | The singleton instance for the day-of-week of Friday. | | [DayOfWeek.MONDAY](../java/time/DayOfWeek.md) | The singleton instance for the day-of-week of Monday. | | [DayOfWeek.SATURDAY](../java/time/DayOfWeek.md) | The singleton instance for the day-of-week of Saturday. | | [DayOfWeek.SUNDAY](../java/time/DayOfWeek.md) | The singleton instance for the day-of-week of Sunday. | | [DayOfWeek.THURSDAY](../java/time/DayOfWeek.md) | The singleton instance for the day-of-week of Thursday. | | [DayOfWeek.TUESDAY](../java/time/DayOfWeek.md) | The singleton instance for the day-of-week of Tuesday. | | [DayOfWeek.WEDNESDAY](../java/time/DayOfWeek.md) | The singleton instance for the day-of-week of Wednesday. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A day-of-week, such as 'Tuesday'.
@@ -40,8 +40,8 @@ This enum represents a common concept that is found in many calendar systems. As
 
 | Public methods ||
 |---|---|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have this day-of-week. |
-| static [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `DayOfWeek` from a temporal object. |
+| [Temporal](../java/time/temporal/Temporal.md)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have this day-of-week. |
+| static [DayOfWeek](../java/time/DayOfWeek.md)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `DayOfWeek` from a temporal object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this day-of-week as an `int`. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#getDisplayName(java.time.format.TextStyle,%20java.util.Locale)(style: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the textual representation, such as 'Mon' or 'Friday'. |
@@ -49,12 +49,12 @@ This enum represents a common concept that is found in many calendar systems. As
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#getValue()()` Gets the day-of-week `int` value. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
-| [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#minus(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the day-of-week that is the specified number of days before this one. |
-| static [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#of(kotlin.Int)(dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `DayOfWeek` from an `int` value. |
+| [DayOfWeek](../java/time/DayOfWeek.md)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#minus(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the day-of-week that is the specified number of days before this one. |
+| static [DayOfWeek](../java/time/DayOfWeek.md)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#of(kotlin.Int)(dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `DayOfWeek` from an `int` value. |
 | --- | --- |
-| [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek#)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#plus(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the day-of-week that is the specified number of days after this one. |
+| [DayOfWeek](../java/time/DayOfWeek.md)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#plus(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the day-of-week that is the specified number of days after this one. |
 | R | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this day-of-week using the specified query. |
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/DayOfWeek#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
 | --- | --- |
 
 ## Enum values
@@ -171,7 +171,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!: the target object to be adjusted, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!: the target object to be adjusted, not null |
 
 | Return ||
 |---|---|
@@ -200,7 +200,7 @@ This method matches the signature of the functional interface `https://developer
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!: the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
 
 | Return ||
 |---|---|
@@ -228,7 +228,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -260,8 +260,8 @@ If no textual mapping is found then the `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `style` | [TextStyle](https://developer.android.com/reference/kotlin/java/time/format/TextStyle)!: the length of the text required, not null |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the locale to use, not null |
+| `style` | [TextStyle](../java/time/format/TextStyle.md)!: the length of the text required, not null |
+| `locale` | [Locale](../java/util/Locale.md)!: the locale to use, not null |
 
 | Return ||
 |---|---|
@@ -285,7 +285,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -332,7 +332,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to check, null returns false |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to check, null returns false |
 
 | Return ||
 |---|---|
@@ -423,7 +423,7 @@ The result of this method is obtained by invoking the `https://developer.android
 | Parameters ||
 |---|---|
 | `<R>` | the type of the result |
-| `query` | [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery)\<R\>!: the query to invoke, not null |
+| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<R\>!: the query to invoke, not null |
 
 | Return ||
 |---|---|
@@ -452,7 +452,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to query the range for, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to query the range for, not null |
 
 | Return ||
 |---|---|

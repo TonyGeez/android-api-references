@@ -5,7 +5,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # MediaMetadataEditor
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/MediaMetadataEditor "View this page in Java") 
+Kotlin | [Java](../android/media/MediaMetadataEditor.md) 
 | --- | --- |
 
 ```
@@ -14,45 +14,45 @@ abstract class MediaMetadataEditor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#) |
+| ↳ | [android.media.MediaMetadataEditor](../android/media/MediaMetadataEditor.md) |
 
-| Known Direct Subclasses [RemoteControlClient.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.MetadataEditor), [RemoteController.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor) |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RemoteControlClient.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.MetadataEditor) | Class used to modify metadata in a [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient) object. | | [RemoteController.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor) | A class to read the metadata published by a [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient), or send a [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient) new values for keys that can be edited. | |
+| Known Direct Subclasses [RemoteControlClient.MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md), [RemoteController.MetadataEditor](../android/media/RemoteController.MetadataEditor.md) |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RemoteControlClient.MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md) | Class used to modify metadata in a [RemoteControlClient](../android/media/RemoteControlClient.md) object. | | [RemoteController.MetadataEditor](../android/media/RemoteController.MetadataEditor.md) | A class to read the metadata published by a [RemoteControlClient](../android/media/RemoteControlClient.md), or send a [RemoteControlClient](../android/media/RemoteControlClient.md) new values for keys that can be edited. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 21.**
 |
-| Use [MediaMetadata](https://developer.android.com/reference/kotlin/android/media/MediaMetadata) instead together with [MediaSession](https://developer.android.com/reference/kotlin/android/media/session/MediaSession).
+| Use [MediaMetadata](../android/media/MediaMetadata.md) instead together with [MediaSession](../android/media/session/MediaSession.md).
 
-An abstract class for editing and storing metadata that can be published by [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient). See the [RemoteControlClient.editMetadata(boolean)](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient#editMetadata(kotlin.Boolean)) method to instantiate a [RemoteControlClient.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.MetadataEditor) object.
+An abstract class for editing and storing metadata that can be published by [RemoteControlClient](../android/media/RemoteControlClient.md). See the [RemoteControlClient.editMetadata(boolean)](../android/media/RemoteControlClient.md)) method to instantiate a [RemoteControlClient.MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md) object.
 
 ## Summary
 
 | Constants ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BITMAP_KEY_ARTWORK](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#BITMAP_KEY_ARTWORK:kotlin.Int) The metadata key for the content artwork / album art. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_KEY_BY_OTHERS](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_OTHERS:kotlin.Int) The metadata key for the content's average rating, not the user's rating. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_KEY_BY_USER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_USER:kotlin.Int) The metadata key for the content's user rating. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BITMAP_KEY_ARTWORK](../android/media/MediaMetadataEditor.md) The metadata key for the content artwork / album art. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_KEY_BY_OTHERS](../android/media/MediaMetadataEditor.md) The metadata key for the content's average rating, not the user's rating. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATING_KEY_BY_USER](../android/media/MediaMetadataEditor.md) The metadata key for the content's user rating. |
 | --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addEditableKey](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#addEditableKey(kotlin.Int))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flags the given key as being editable. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#apply())`()` Applies all of the metadata changes that have been set since the MediaMetadataEditor instance was created or since [clear()](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#clear()) was called. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#clear())`()` Clears all the pending metadata changes set since the MediaMetadataEditor instance was created or since this method was last called. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addEditableKey](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flags the given key as being editable. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](../android/media/MediaMetadataEditor.md))`()` Applies all of the metadata changes that have been set since the MediaMetadataEditor instance was created or since [clear()](../android/media/MediaMetadataEditor.md)) was called. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/media/MediaMetadataEditor.md))`()` Clears all the pending metadata changes set since the MediaMetadataEditor instance was created or since this method was last called. |
 | --- | --- |
-| open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | [getBitmap](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getBitmap(kotlin.Int,%20android.graphics.Bitmap))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!`)` Returns the [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) value for the key. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getEditableKeys](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getEditableKeys())`()` Retrieves the keys flagged as editable. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getLong(kotlin.Int,%20kotlin.Long))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the long value for the key. |
+| open [Bitmap](../android/graphics/Bitmap.md)! | [getBitmap](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Bitmap](../android/graphics/Bitmap.md)!`)` Returns the [Bitmap](../android/graphics/Bitmap.md) value for the key. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getEditableKeys](../android/media/MediaMetadataEditor.md))`()` Retrieves the keys flagged as editable. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the long value for the key. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getObject(kotlin.Int,%20kotlin.Any))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns an object representation of the value for the key |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#getString(kotlin.Int,%20kotlin.String))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) value for the key. |
-| open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putBitmap](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putBitmap(kotlin.Int,%20android.graphics.Bitmap))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!`)` Adds image. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns an object representation of the value for the key |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the [String](../java/lang/String.md) value for the key. |
+| open [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | [putBitmap](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`)` Adds image. |
 | --- | --- |
-| open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putLong](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putLong(kotlin.Int,%20kotlin.Long))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds numerical information. |
-| open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putObject](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putObject(kotlin.Int,%20kotlin.Any))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds information stored as an instance. |
-| open [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | [putString](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putString(kotlin.Int,%20kotlin.String))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds textual information. |
+| open [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | [putLong](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds numerical information. |
+| open [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | [putObject](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds information stored as an instance. |
+| open [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | [putString](../android/media/MediaMetadataEditor.md))`(`key:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds textual information. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeEditableKeys](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#removeEditableKeys())`()` Causes all metadata fields to be read-only. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeEditableKeys](../android/media/MediaMetadataEditor.md))`()` Causes all metadata fields to be read-only. |
 
 ## Constants
 
@@ -80,13 +80,13 @@ static val RATING_KEY_BY_OTHERS: Int
 
 **Deprecated:** *Deprecated in Java.*
 
-The metadata key for the content's average rating, not the user's rating. The value associated with this key is a [Rating](https://developer.android.com/reference/kotlin/android/media/Rating) instance. 
+The metadata key for the content's average rating, not the user's rating. The value associated with this key is a [Rating](../android/media/Rating.md) instance. 
 
  Value: 101
 
 **See Also**
 
-- [#RATING_KEY_BY_USER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_USER:kotlin.Int) 
+- [#RATING_KEY_BY_USER](../android/media/MediaMetadataEditor.md) 
 
 ### RATING_KEY_BY_USER
 
@@ -98,7 +98,7 @@ static val RATING_KEY_BY_USER: Int
 
 **Deprecated:** *Deprecated in Java.*
 
-The metadata key for the content's user rating. The value associated with this key is a [Rating](https://developer.android.com/reference/kotlin/android/media/Rating) instance. This key can be flagged as "editable" (with [addEditableKey(int)](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#addEditableKey(kotlin.Int))) to enable receiving user rating values through the [android.media.RemoteControlClient.OnMetadataUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.OnMetadataUpdateListener) interface. 
+The metadata key for the content's user rating. The value associated with this key is a [Rating](../android/media/Rating.md) instance. This key can be flagged as "editable" (with [addEditableKey(int)](../android/media/MediaMetadataEditor.md))) to enable receiving user rating values through the [android.media.RemoteControlClient.OnMetadataUpdateListener](../android/media/RemoteControlClient.OnMetadataUpdateListener.md) interface. 
 
  Value: 268435457
 
@@ -114,11 +114,11 @@ open fun addEditableKey(key: Int): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Flags the given key as being editable. This should only be used by metadata publishers, such as [RemoteControlClient](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient), which will declare the metadata field as eligible to be updated, with new values received through the [RemoteControlClient.OnMetadataUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.OnMetadataUpdateListener) interface.
+Flags the given key as being editable. This should only be used by metadata publishers, such as [RemoteControlClient](../android/media/RemoteControlClient.md), which will declare the metadata field as eligible to be updated, with new values received through the [RemoteControlClient.OnMetadataUpdateListener](../android/media/RemoteControlClient.OnMetadataUpdateListener.md) interface.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the type of metadata that can be edited. The supported key is [RATING_KEY_BY_USER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_USER:kotlin.Int). |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the type of metadata that can be edited. The supported key is [RATING_KEY_BY_USER](../android/media/MediaMetadataEditor.md). |
 
 ### apply
 
@@ -130,7 +130,7 @@ abstract fun apply(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Applies all of the metadata changes that have been set since the MediaMetadataEditor instance was created or since [clear()](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#clear()) was called. Subclasses should synchronize on `this` for thread safety. 
+Applies all of the metadata changes that have been set since the MediaMetadataEditor instance was created or since [clear()](../android/media/MediaMetadataEditor.md)) was called. Subclasses should synchronize on `this` for thread safety. 
 
 ### clear
 
@@ -142,7 +142,7 @@ open fun clear(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Clears all the pending metadata changes set since the MediaMetadataEditor instance was created or since this method was last called. Note that clearing the metadata doesn't reset the editable keys (use [removeEditableKeys()](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#removeEditableKeys()) instead). 
+Clears all the pending metadata changes set since the MediaMetadataEditor instance was created or since this method was last called. Note that clearing the metadata doesn't reset the editable keys (use [removeEditableKeys()](../android/media/MediaMetadataEditor.md)) instead). 
 
 ### getBitmap
 
@@ -157,16 +157,16 @@ open fun getBitmap(
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) value for the key.
+Returns the [Bitmap](../android/graphics/Bitmap.md) value for the key.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the [BITMAP_KEY_ARTWORK](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#BITMAP_KEY_ARTWORK:kotlin.Int) key |
-| `defaultValue` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: the value returned if the key is not present |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the [BITMAP_KEY_ARTWORK](../android/media/MediaMetadataEditor.md) key |
+| `defaultValue` | [Bitmap](../android/graphics/Bitmap.md)!: the value returned if the key is not present |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)! | the [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) value for the key, or the supplied default value if the key is not present |
+| [Bitmap](../android/graphics/Bitmap.md)! | the [Bitmap](../android/graphics/Bitmap.md) value for the key, or the supplied default value if the key is not present |
 
 | Exceptions ||
 |--------------------------------------|---|
@@ -205,7 +205,7 @@ Returns the long value for the key.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of the keys supported in [putLong(int,long)](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putLong(kotlin.Int,%20kotlin.Long)) |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of the keys supported in [putLong(int,long)](../android/media/MediaMetadataEditor.md)) |
 | `defaultValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the value returned if the key is not present |
 
 | Return ||
@@ -233,12 +233,12 @@ Returns an object representation of the value for the key
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of the keys supported in [putObject(int,java.lang.Object)](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putObject(kotlin.Int,%20kotlin.Any)) |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of the keys supported in [putObject(int,java.lang.Object)](../android/media/MediaMetadataEditor.md)) |
 | `defaultValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the value returned if the key is not present |
 
 | Return ||
 |-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | the object for the key, as a [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#), [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#), [String](https://developer.android.com/reference/kotlin/java/lang/String.html#), or [Rating](https://developer.android.com/reference/kotlin/android/media/Rating) depending on the key value, or the supplied default value if the key is not present |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | the object for the key, as a [Long](../java/lang/Long.md), [Bitmap](../android/graphics/Bitmap.md), [String](../java/lang/String.md), or [Rating](../android/media/Rating.md) depending on the key value, or the supplied default value if the key is not present |
 
 | Exceptions ||
 |--------------------------------------|---|
@@ -257,16 +257,16 @@ open fun getString(
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) value for the key.
+Returns the [String](../java/lang/String.md) value for the key.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of the keys supported in [putString(int,java.lang.String)](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putString(kotlin.Int,%20kotlin.String)) |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of the keys supported in [putString(int,java.lang.String)](../android/media/MediaMetadataEditor.md)) |
 | `defaultValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the value returned if the key is not present |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | the [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) value for the key, or the supplied default value if the key is not present |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | the [String](../java/lang/String.md) value for the key, or the supplied default value if the key is not present |
 
 | Exceptions ||
 |--------------------------------------|---|
@@ -289,12 +289,12 @@ Adds image.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the identifier of the bitmap to set. The only valid value is [BITMAP_KEY_ARTWORK](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#BITMAP_KEY_ARTWORK:kotlin.Int) |
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: The bitmap for the artwork, or null if there isn't any. |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the identifier of the bitmap to set. The only valid value is [BITMAP_KEY_ARTWORK](../android/media/MediaMetadataEditor.md) |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: The bitmap for the artwork, or null if there isn't any. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
+| [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
 
 | Exceptions ||
 |--------------------------------------|---|
@@ -302,7 +302,7 @@ Adds image.
 
 **See Also**
 
-- [android.graphics.Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) 
+- [android.graphics.Bitmap](../android/graphics/Bitmap.md) 
 
 ### putLong
 
@@ -317,16 +317,16 @@ open fun putLong(
 
 **Deprecated:** *Deprecated in Java.*
 
-Adds numerical information. Note that none of the information added after [apply()](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#apply()) has been called will be available to consumers of metadata stored by the MediaMetadataEditor.
+Adds numerical information. Note that none of the information added after [apply()](../android/media/MediaMetadataEditor.md)) has been called will be available to consumers of metadata stored by the MediaMetadataEditor.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the identifier of a the metadata field to set. Valid values are [android.media.MediaMetadataRetriever#METADATA_KEY_CD_TRACK_NUMBER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_CD_TRACK_NUMBER:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_DISC_NUMBER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_DISC_NUMBER:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_DURATION](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_DURATION:kotlin.Int) (with a value expressed in milliseconds), [android.media.MediaMetadataRetriever#METADATA_KEY_YEAR](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_YEAR:kotlin.Int). |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the identifier of a the metadata field to set. Valid values are [android.media.MediaMetadataRetriever#METADATA_KEY_CD_TRACK_NUMBER](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_DISC_NUMBER](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_DURATION](../android/media/MediaMetadataRetriever.md) (with a value expressed in milliseconds), [android.media.MediaMetadataRetriever#METADATA_KEY_YEAR](../android/media/MediaMetadataRetriever.md). |
 | `value` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The long value for the given key |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
+| [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
 
 | Exceptions ||
 |--------------------------------------|---|
@@ -345,16 +345,16 @@ open fun putObject(
 
 **Deprecated:** *Deprecated in Java.*
 
-Adds information stored as an instance. Note that none of the information added after [apply()](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#apply()) has been called will be available to consumers of metadata stored by the MediaMetadataEditor.
+Adds information stored as an instance. Note that none of the information added after [apply()](../android/media/MediaMetadataEditor.md)) has been called will be available to consumers of metadata stored by the MediaMetadataEditor.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the identifier of a the metadata field to set. Valid keys for a: - [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) object are [BITMAP_KEY_ARTWORK](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#BITMAP_KEY_ARTWORK:kotlin.Int), - [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) object are the same as for [putString(int,java.lang.String)](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putString(kotlin.Int,%20kotlin.String)) - [Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#) object are the same as for [putLong(int,long)](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#putLong(kotlin.Int,%20kotlin.Long)) - [Rating](https://developer.android.com/reference/kotlin/android/media/Rating) object are [RATING_KEY_BY_OTHERS](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_OTHERS:kotlin.Int) and [RATING_KEY_BY_USER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#RATING_KEY_BY_USER:kotlin.Int). |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the identifier of a the metadata field to set. Valid keys for a: - [Bitmap](../android/graphics/Bitmap.md) object are [BITMAP_KEY_ARTWORK](../android/media/MediaMetadataEditor.md), - [String](../java/lang/String.md) object are the same as for [putString(int,java.lang.String)](../android/media/MediaMetadataEditor.md)) - [Long](../java/lang/Long.md) object are the same as for [putLong(int,long)](../android/media/MediaMetadataEditor.md)) - [Rating](../android/media/Rating.md) object are [RATING_KEY_BY_OTHERS](../android/media/MediaMetadataEditor.md) and [RATING_KEY_BY_USER](../android/media/MediaMetadataEditor.md). |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the metadata to add. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
+| [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
 
 | Exceptions ||
 |--------------------------------------|---|
@@ -373,16 +373,16 @@ open fun putString(
 
 **Deprecated:** *Deprecated in Java.*
 
-Adds textual information. Note that none of the information added after [apply()](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#apply()) has been called, will be available to consumers of metadata stored by the MediaMetadataEditor.
+Adds textual information. Note that none of the information added after [apply()](../android/media/MediaMetadataEditor.md)) has been called, will be available to consumers of metadata stored by the MediaMetadataEditor.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The identifier of a the metadata field to set. Valid values are [android.media.MediaMetadataRetriever#METADATA_KEY_ALBUM](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_ALBUM:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_ALBUMARTIST](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_ALBUMARTIST:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_TITLE](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_TITLE:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_ARTIST](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_ARTIST:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_AUTHOR](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_AUTHOR:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_COMPILATION](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_COMPILATION:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_COMPOSER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_COMPOSER:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_DATE](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_DATE:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_GENRE](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_GENRE:kotlin.Int), [android.media.MediaMetadataRetriever#METADATA_KEY_WRITER](https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#METADATA_KEY_WRITER:kotlin.Int). |
+| `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The identifier of a the metadata field to set. Valid values are [android.media.MediaMetadataRetriever#METADATA_KEY_ALBUM](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_ALBUMARTIST](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_TITLE](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_ARTIST](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_AUTHOR](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_COMPILATION](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_COMPOSER](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_DATE](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_GENRE](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#METADATA_KEY_WRITER](../android/media/MediaMetadataRetriever.md). |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The text for the given key, or `null` to signify there is no valid information for the field. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [MediaMetadataEditor](https://developer.android.com/reference/kotlin/android/media/MediaMetadataEditor#)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
+| [MediaMetadataEditor](../android/media/MediaMetadataEditor.md)! | Returns a reference to the same MediaMetadataEditor object, so you can chain put calls together. |
 
 ### removeEditableKeys
 

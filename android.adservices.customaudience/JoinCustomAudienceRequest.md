@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # JoinCustomAudienceRequest
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/customaudience/JoinCustomAudienceRequest "View this page in Java") 
+Kotlin| [Java](../android/adservices/customaudience/JoinCustomAudienceRequest.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class JoinCustomAudienceRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.customaudience.JoinCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#) |
+| ↳ | [android.adservices.customaudience.JoinCustomAudienceRequest](../android/adservices/customaudience/JoinCustomAudienceRequest.md) |
 
 The request object to join a custom audience.
 
@@ -22,13 +22,13 @@ The request object to join a custom audience.
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest.Builder) Builder for [JoinCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#) objects. |
+| | [Builder](../android/adservices/customaudience/JoinCustomAudienceRequest.Builder.md) Builder for [JoinCustomAudienceRequest](../android/adservices/customaudience/JoinCustomAudienceRequest.md) objects. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks whether two [JoinCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#) objects contain the same information. |
-| open [CustomAudience](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience) | [getCustomAudience](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#getCustomAudience())`()` Returns the custom audience to join. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#hashCode())`()` Returns the hash of the [JoinCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#) object's data. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/customaudience/JoinCustomAudienceRequest.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks whether two [JoinCustomAudienceRequest](../android/adservices/customaudience/JoinCustomAudienceRequest.md) objects contain the same information. |
+| open [CustomAudience](../android/adservices/customaudience/CustomAudience.md) | [getCustomAudience](../android/adservices/customaudience/JoinCustomAudienceRequest.md))`()` Returns the custom audience to join. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/customaudience/JoinCustomAudienceRequest.md))`()` Returns the hash of the [JoinCustomAudienceRequest](../android/adservices/customaudience/JoinCustomAudienceRequest.md) object's data. |
 | --- | --- |
 
 ## Public methods
@@ -41,7 +41,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun equals(other: Any?): Boolean
 ```
 
-Checks whether two [JoinCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#) objects contain the same information.
+Checks whether two [JoinCustomAudienceRequest](../android/adservices/customaudience/JoinCustomAudienceRequest.md) objects contain the same information.
 
 | Parameters ||
 |-------|---------------------------------------------|
@@ -64,7 +64,7 @@ Returns the custom audience to join.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [CustomAudience](https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience) | This value cannot be`null`. |
+| [CustomAudience](../android/adservices/customaudience/CustomAudience.md) | This value cannot be`null`. |
 
 ### hashCode
 
@@ -74,7 +74,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns the hash of the [JoinCustomAudienceRequest](https://developer.android.com/reference/kotlin/android/adservices/customaudience/JoinCustomAudienceRequest#) object's data.
+Returns the hash of the [JoinCustomAudienceRequest](../android/adservices/customaudience/JoinCustomAudienceRequest.md) object's data.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothLeAudioCodecStatus
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus "View this page in Java") 
+Kotlin| [Java](../android/bluetooth/BluetoothLeAudioCodecStatus.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class BluetoothLeAudioCodecStatus : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothLeAudioCodecStatus](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#) |
+| ↳ | [android.bluetooth.BluetoothLeAudioCodecStatus](../android/bluetooth/BluetoothLeAudioCodecStatus.md) |
 
 Represents the codec status (configuration and capability) for a Bluetooth Le Audio source device.
 
@@ -21,39 +21,39 @@ Represents the codec status (configuration and capability) for a Bluetooth Le Au
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LE_AUDIO_CODEC_STATUS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#EXTRA_LE_AUDIO_CODEC_STATUS:kotlin.String) Extra for the codec configuration intents of the individual profiles. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LE_AUDIO_CODEC_STATUS](../android/bluetooth/BluetoothLeAudioCodecStatus.md) Extra for the codec configuration intents of the individual profiles. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BluetoothLeAudioCodecStatus](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#BluetoothLeAudioCodecStatus(android.bluetooth.BluetoothLeAudioCodecConfig,%20android.bluetooth.BluetoothLeAudioCodecConfig,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList))`(`inputCodecConfig:` ` [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?`, `outputCodecConfig:` ` [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?`, `inputCodecsLocalCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!>`, `outputCodecsLocalCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!>`, `inputCodecsSelectableCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!>`, `outputCodecsSelectableCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!>`)` Represents the codec status for a Bluetooth LE Audio source device. |
+| [BluetoothLeAudioCodecStatus](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`(`inputCodecConfig:` ` [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?`, `outputCodecConfig:` ` [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?`, `inputCodecsLocalCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!>`, `outputCodecsLocalCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!>`, `inputCodecsSelectableCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!>`, `outputCodecsSelectableCapabilities:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!>`)` Represents the codec status for a Bluetooth LE Audio source device. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)? | [getInputCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#getInputCodecConfig())`()` Returns the current Input codec configuration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)? | [getInputCodecConfig](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns the current Input codec configuration. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\> | [getInputCodecLocalCapabilities](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#getInputCodecLocalCapabilities())`()` Returns the input codecs local capabilities. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\> | [getInputCodecSelectableCapabilities](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#getInputCodecSelectableCapabilities())`()` Returns the Input codecs selectable capabilities. |
-| [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)? | [getOutputCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#getOutputCodecConfig())`()` Returns the current Output codec configuration. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\> | [getInputCodecLocalCapabilities](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns the input codecs local capabilities. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\> | [getInputCodecSelectableCapabilities](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns the Input codecs selectable capabilities. |
+| [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)? | [getOutputCodecConfig](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns the current Output codec configuration. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\> | [getOutputCodecLocalCapabilities](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#getOutputCodecLocalCapabilities())`()` Returns the output codecs local capabilities. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\> | [getOutputCodecSelectableCapabilities](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#getOutputCodecSelectableCapabilities())`()` Returns the Output codecs selectable capabilities. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#hashCode())`()` Returns a hash based on the codec config and local capabilities. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\> | [getOutputCodecLocalCapabilities](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns the output codecs local capabilities. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\> | [getOutputCodecSelectableCapabilities](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns the Output codecs selectable capabilities. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns a hash based on the codec config and local capabilities. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputCodecConfigSelectable](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#isInputCodecConfigSelectable(android.bluetooth.BluetoothLeAudioCodecConfig))`(`codecConfig:` ` [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?`)` Checks whether the Input codec config matches the selectable capabilities. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutputCodecConfigSelectable](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#isOutputCodecConfigSelectable(android.bluetooth.BluetoothLeAudioCodecConfig))`(`codecConfig:` ` [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?`)` Checks whether the Output codec config matches the selectable capabilities. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#toString())`()` Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothLeAudioCodecStatus parameter current value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputCodecConfigSelectable](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`(`codecConfig:` ` [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?`)` Checks whether the Input codec config matches the selectable capabilities. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutputCodecConfigSelectable](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`(`codecConfig:` ` [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?`)` Checks whether the Output codec config matches the selectable capabilities. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`()` Returns a [String](../java/lang/String.md) that describes each BluetoothLeAudioCodecStatus parameter current value. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flattens the object to a parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/bluetooth/BluetoothLeAudioCodecStatus.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flattens the object to a parcel. |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BluetoothLeAudioCodecStatus](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecStatus#CREATOR:android.os.Parcelable.Creator) [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#) interface implementation. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothLeAudioCodecStatus](../android/bluetooth/BluetoothLeAudioCodecStatus.md)!\> | [CREATOR](../android/bluetooth/BluetoothLeAudioCodecStatus.md) [Parcelable.Creator](../android/os/Parcelable.Creator.md) interface implementation. |
 
 ## Constants
 
@@ -91,13 +91,13 @@ Represents the codec status for a Bluetooth LE Audio source device.
 
 | Parameters ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inputCodecConfig` | [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?:the current input codec configuration. This value may be`null`. |
-| `outputCodecConfig` | [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?:the current output codec configuration. This value may be`null`. |
-| `inputCodecsLocalCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\>:the local input codecs capabilities. This value cannot be`null`. |
+| `inputCodecConfig` | [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?:the current input codec configuration. This value may be`null`. |
+| `outputCodecConfig` | [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?:the current output codec configuration. This value may be`null`. |
+| `inputCodecsLocalCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\>:the local input codecs capabilities. This value cannot be`null`. |
 | --- | --- |
-| `outputCodecsLocalCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\>:the local output codecs capabilities. This value cannot be`null`. |
-| `inputCodecsSelectableCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\>:the selectable input codecs capabilities. This value cannot be`null`. |
-| `outputCodecsSelectableCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!\>:the selectable output codecs capabilities. This value cannot be`null`. |
+| `outputCodecsLocalCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\>:the local output codecs capabilities. This value cannot be`null`. |
+| `inputCodecsSelectableCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\>:the selectable input codecs capabilities. This value cannot be`null`. |
+| `outputCodecsSelectableCapabilities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\>:the selectable output codecs capabilities. This value cannot be`null`. |
 | --- | --- |
 
 ## Public methods
@@ -155,7 +155,7 @@ Returns the current Input codec configuration.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)? | The current input codec config. This value may be`null`. |
+| [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)? | The current input codec config. This value may be`null`. |
 
 ### getInputCodecLocalCapabilities
 
@@ -169,7 +169,7 @@ Returns the input codecs local capabilities.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!> | The list of codec config that supported by the local system. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!> | The list of codec config that supported by the local system. This value cannot be`null`. |
 
 ### getInputCodecSelectableCapabilities
 
@@ -183,7 +183,7 @@ Returns the Input codecs selectable capabilities.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!> | The list of codec config that supported by both of the local system and remote devices. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!> | The list of codec config that supported by both of the local system and remote devices. This value cannot be`null`. |
 
 ### getOutputCodecConfig
 
@@ -197,7 +197,7 @@ Returns the current Output codec configuration.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)? | The current output codec config. This value may be`null`. |
+| [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)? | The current output codec config. This value may be`null`. |
 
 ### getOutputCodecLocalCapabilities
 
@@ -211,7 +211,7 @@ Returns the output codecs local capabilities.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!> | The list of codec config that supported by the local system. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!> | The list of codec config that supported by the local system. This value cannot be`null`. |
 
 ### getOutputCodecSelectableCapabilities
 
@@ -225,7 +225,7 @@ Returns the Output codecs selectable capabilities.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)!> | The list of codec config that supported by both of the local system and remote devices. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!> | The list of codec config that supported by both of the local system and remote devices. This value cannot be`null`. |
 
 ### hashCode
 
@@ -253,7 +253,7 @@ Checks whether the Input codec config matches the selectable capabilities. Any p
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `codecConfig` | [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?:the codec config to compare against This value may be`null`. |
+| `codecConfig` | [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?:the codec config to compare against This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -271,7 +271,7 @@ Checks whether the Output codec config matches the selectable capabilities. Any 
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `codecConfig` | [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig)?:the codec config to compare against This value may be`null`. |
+| `codecConfig` | [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)?:the codec config to compare against This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -285,7 +285,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun toString(): String
 ```
 
-Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothLeAudioCodecStatus parameter current value.
+Returns a [String](../java/lang/String.md) that describes each BluetoothLeAudioCodecStatus parameter current value.
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------|
@@ -308,7 +308,7 @@ Flattens the object to a parcel.
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written |
-| `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written This value cannot be`null`. |
+| `out` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written This value cannot be`null`. |
 | --- | --- |
 
 ## Properties
@@ -321,4 +321,4 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val CREATOR: Parcelable.Creator<BluetoothLeAudioCodecStatus!>
 ```
 
-[Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#) interface implementation.
+[Parcelable.Creator](../android/os/Parcelable.Creator.md) interface implementation.

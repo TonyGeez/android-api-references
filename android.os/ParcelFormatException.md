@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ParcelFormatException
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/ParcelFormatException "View this page in Java") 
+Kotlin| [Java](../android/os/ParcelFormatException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class ParcelFormatException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.os.ParcelFormatException](https://developer.android.com/reference/kotlin/android/os/ParcelFormatException#) |
+| | | | ↳ | [android.os.ParcelFormatException](../android/os/ParcelFormatException.md) |
 
 The contents of a Parcel (usually during unmarshalling) does not contain the expected data.
 
@@ -25,8 +25,8 @@ The contents of a Parcel (usually during unmarshalling) does not contain the exp
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ParcelFormatException](https://developer.android.com/reference/kotlin/android/os/ParcelFormatException#ParcelFormatException())`()` <br /> |
-| [ParcelFormatException](https://developer.android.com/reference/kotlin/android/os/ParcelFormatException#ParcelFormatException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [ParcelFormatException](../android/os/ParcelFormatException.md))`()` <br /> |
+| [ParcelFormatException](../android/os/ParcelFormatException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

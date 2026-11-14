@@ -8,9 +8,9 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface Result
 ```
 
-| [javax.xml.transform.Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result#) |
+| [javax.xml.transform.Result](../javax/xml/transform/Result.md) |
 
-| Known Direct Subclasses [DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult), [SAXResult](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult), [StreamResult](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult) |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------| | [DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult) | Acts as a holder for a transformation result tree in the form of a Document Object Model (DOM) tree. | | [SAXResult](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult) | Acts as an holder for a transformation Result. | | [StreamResult](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult) | Acts as an holder for a transformation result, which may be XML, plain Text, HTML, or some other form of markup. | |
+| Known Direct Subclasses [DOMResult](../javax/xml/transform/dom/DOMResult.md), [SAXResult](../javax/xml/transform/sax/SAXResult.md), [StreamResult](../javax/xml/transform/stream/StreamResult.md) |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------| | [DOMResult](../javax/xml/transform/dom/DOMResult.md) | Acts as a holder for a transformation result tree in the form of a Document Object Model (DOM) tree. | | [SAXResult](../javax/xml/transform/sax/SAXResult.md) | Acts as an holder for a transformation Result. | | [StreamResult](../javax/xml/transform/stream/StreamResult.md) | Acts as an holder for a transformation result, which may be XML, plain Text, HTML, or some other form of markup. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An object that implements this interface contains the information needed to build a transformation result tree.
@@ -19,13 +19,13 @@ An object that implements this interface contains the information needed to buil
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PI_DISABLE_OUTPUT_ESCAPING](https://developer.android.com/reference/kotlin/javax/xml/transform/Result#PI_DISABLE_OUTPUT_ESCAPING:kotlin.String) The name of the processing instruction that is sent if the result tree disables output escaping. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PI_ENABLE_OUTPUT_ESCAPING](https://developer.android.com/reference/kotlin/javax/xml/transform/Result#PI_ENABLE_OUTPUT_ESCAPING:kotlin.String) The name of the processing instruction that is sent if the result tree enables output escaping at some point after having received a PI_DISABLE_OUTPUT_ESCAPING processing instruction. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PI_DISABLE_OUTPUT_ESCAPING](../javax/xml/transform/Result.md) The name of the processing instruction that is sent if the result tree disables output escaping. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PI_ENABLE_OUTPUT_ESCAPING](../javax/xml/transform/Result.md) The name of the processing instruction that is sent if the result tree enables output escaping at some point after having received a PI_DISABLE_OUTPUT_ESCAPING processing instruction. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/Result#getSystemId())`()` Get the system identifier that was set with setSystemId. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/javax/xml/transform/Result#setSystemId(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this Result. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../javax/xml/transform/Result.md))`()` Get the system identifier that was set with setSystemId. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../javax/xml/transform/Result.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this Result. |
 
 ## Constants
 

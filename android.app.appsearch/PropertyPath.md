@@ -5,7 +5,7 @@ Also in [T Extensions 7](https://developer.android.com/sdkExtensions)
 
 # PropertyPath
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/PropertyPath "View this page in Java") 
+Kotlin| [Java](../android/app/appsearch/PropertyPath.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class PropertyPath : MutableIterable<PropertyPath.PathSegment!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#) |
+| ↳ | [android.app.appsearch.PropertyPath](../android/app/appsearch/PropertyPath.md) |
 
 Represents a property path returned from searching the AppSearch Database.
 
-One of the use cases for this class is when searching the AppSearch Database for the snippet matching use case. In this case you will get back [SearchResult.MatchInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.MatchInfo) objects that contain a property path signifying the location of a match within the database. This is a string that may look something like "foo.bar\[0\]". [PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#) parses this string and breaks it up into a List of [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) s. These may represent either a property or a property and a 0-based index into the property. For instance, "foo.bar\[1\]" would be parsed into a [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) with a property name of foo and a [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) with a property name of bar and an index of 1. This allows for easier manipulation of the property path.
+One of the use cases for this class is when searching the AppSearch Database for the snippet matching use case. In this case you will get back [SearchResult.MatchInfo](../android/app/appsearch/SearchResult.MatchInfo.md) objects that contain a property path signifying the location of a match within the database. This is a string that may look something like "foo.bar\[0\]". [PropertyPath](../android/app/appsearch/PropertyPath.md) parses this string and breaks it up into a List of [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) s. These may represent either a property or a property and a 0-based index into the property. For instance, "foo.bar\[1\]" would be parsed into a [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) with a property name of foo and a [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) with a property name of bar and an index of 1. This allows for easier manipulation of the property path.
 
 This class won't perform any retrievals, it will only parse the path string. As such, it may not necessarily refer to a valid path in the database.
 
@@ -26,22 +26,22 @@ This class won't perform any retrievals, it will only parse the path string. As 
 
 | Nested classes ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) A segment of a PropertyPath, which includes the name of the property and a 0-based index into this property. |
+| open | [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) A segment of a PropertyPath, which includes the name of the property and a 0-based index into this property. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#PropertyPath(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructor that parses a string representing the path to populate a List of PathSegments |
-| [PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#PropertyPath(kotlin.collections.MutableList))`(`pathList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment)!>`)` Constructor directly accepting a path list |
+| [PropertyPath](../android/app/appsearch/PropertyPath.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructor that parses a string representing the path to populate a List of PathSegments |
+| [PropertyPath](../android/app/appsearch/PropertyPath.md))`(`pathList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PropertyPath.PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md)!>`)` Constructor directly accepting a path list |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) | [get](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) at a specified index of the PropertyPath. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#hashCode())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/appsearch/PropertyPath.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [PropertyPath.PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) | [get](../android/app/appsearch/PropertyPath.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) at a specified index of the PropertyPath. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/appsearch/PropertyPath.md))`()` <br /> |
 | --- | --- |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment)!\> | [iterator](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#iterator())`()` Returns an iterator over the PathSegments within the PropertyPath |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#size())`()` Returns the number of [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) s in the PropertyPath. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#toString())`()` Returns a valid path string representing this PropertyPath |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PropertyPath.PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md)!\> | [iterator](../android/app/appsearch/PropertyPath.md))`()` Returns an iterator over the PathSegments within the PropertyPath |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../android/app/appsearch/PropertyPath.md))`()` Returns the number of [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) s in the PropertyPath. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/appsearch/PropertyPath.md))`()` Returns a valid path string representing this PropertyPath |
 | --- | --- |
 
 ## Public constructors
@@ -78,7 +78,7 @@ Constructor directly accepting a path list
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pathList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment)!\>:a list of PathSegments This value cannot be`null`. |
+| `pathList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PropertyPath.PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md)!\>:a list of PathSegments This value cannot be`null`. |
 
 ## Public methods
 
@@ -120,9 +120,9 @@ Also in [T Extensions 7](https://developer.android.com/sdkExtensions)
 open fun get(index: Int): PropertyPath.PathSegment
 ```
 
-Returns the [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) at a specified index of the PropertyPath.
+Returns the [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) at a specified index of the PropertyPath.
 
-Calling`get(1)`on a [PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath#) representing "foo.bar\[1\]" will return a [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) representing "bar\[1\]". [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) s both with and without a property index of [PathSegment.NON_REPEATED_CARDINALITY](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment#NON_REPEATED_CARDINALITY:kotlin.Int) are retrieved the same.
+Calling`get(1)`on a [PropertyPath](../android/app/appsearch/PropertyPath.md) representing "foo.bar\[1\]" will return a [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) representing "bar\[1\]". [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) s both with and without a property index of [PathSegment.NON_REPEATED_CARDINALITY](../android/app/appsearch/PropertyPath.PathSegment.md) are retrieved the same.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------|
@@ -130,7 +130,7 @@ Calling`get(1)`on a [PropertyPath](https://developer.android.com/reference/kotli
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) | This value cannot be`null`. |
+| [PropertyPath.PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------------------------|
@@ -160,7 +160,7 @@ Returns an iterator over the PathSegments within the PropertyPath
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [PropertyPath.PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment)!> | This value cannot be`null`. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [PropertyPath.PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md)!> | This value cannot be`null`. |
 
 ### size
 
@@ -171,9 +171,9 @@ Also in [T Extensions 7](https://developer.android.com/sdkExtensions)
 open fun size(): Int
 ```
 
-Returns the number of [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment) s in the PropertyPath.
+Returns the number of [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md) s in the PropertyPath.
 
-Paths representing "foo.bar" and "foo\[1\].bar\[1\]" will have the same size, as a property and an index into that property are stored in one [PathSegment](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath.PathSegment). 
+Paths representing "foo.bar" and "foo\[1\].bar\[1\]" will have the same size, as a property and an index into that property are stored in one [PathSegment](../android/app/appsearch/PropertyPath.PathSegment.md). 
 
 ### toString
 

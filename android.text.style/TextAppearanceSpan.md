@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # TextAppearanceSpan
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/style/TextAppearanceSpan "View this page in Java") 
+Kotlin| [Java](../android/text/style/TextAppearanceSpan.md) 
 | --- | --- |
 
 ```
@@ -13,81 +13,81 @@ open class TextAppearanceSpan : MetricAffectingSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
-| | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
-| | | ↳ | [android.text.style.TextAppearanceSpan](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||
+| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||
+| | | ↳ | [android.text.style.TextAppearanceSpan](../android/text/style/TextAppearanceSpan.md) |
 | --- | --- | --- | --- |
 
-Sets the text appearance using the given [TextAppearance](https://developer.android.com/reference/kotlin/android/R.styleable.html#TextAppearance:kotlin.IntArray) attributes. By default [TextAppearanceSpan](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#) only changes the specified attributes in XML. [textColorHighlight](https://developer.android.com/reference/kotlin/android/R.styleable.html#TextAppearance_textColorHighlight:kotlin.Int), [textColorHint](https://developer.android.com/reference/kotlin/android/R.styleable.html#TextAppearance_textColorHint:kotlin.Int), [textAllCaps](https://developer.android.com/reference/kotlin/android/R.styleable.html#TextAppearance_textAllCaps:kotlin.Int) and [fallbackLineSpacing](https://developer.android.com/reference/kotlin/android/R.styleable.html#TextAppearance_fallbackLineSpacing:kotlin.Int) are not supported by [TextAppearanceSpan](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#). {@see android.widget.TextView#setTextAppearance(int)}
+Sets the text appearance using the given [TextAppearance](../android/R.styleable.md) attributes. By default [TextAppearanceSpan](../android/text/style/TextAppearanceSpan.md) only changes the specified attributes in XML. [textColorHighlight](../android/R.styleable.md), [textColorHint](../android/R.styleable.md), [textAllCaps](../android/R.styleable.md) and [fallbackLineSpacing](../android/R.styleable.md) are not supported by [TextAppearanceSpan](../android/text/style/TextAppearanceSpan.md). {@see android.widget.TextView#setTextAppearance(int)}
 
 ## Summary
 
 | XML attributes ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [`android:elegantTextHeight`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Elegant text height, especially for less compacted complex script text. |
-| [`android:fontFamily`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Font family (named by string or as a font resource reference) for the text. |
-| [`android:fontFeatureSettings`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Font feature settings. |
+| [`android:elegantTextHeight`](../android/text/style/TextAppearanceSpan.md) | Elegant text height, especially for less compacted complex script text. |
+| [`android:fontFamily`](../android/text/style/TextAppearanceSpan.md) | Font family (named by string or as a font resource reference) for the text. |
+| [`android:fontFeatureSettings`](../android/text/style/TextAppearanceSpan.md) | Font feature settings. |
 | --- | --- |
-| [`android:fontVariationSettings`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Font variation settings. |
-| [`android:letterSpacing`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Text letter-spacing. |
-| [`android:shadowColor`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Place a blurred shadow of text underneath the text, drawn with the specified color. |
+| [`android:fontVariationSettings`](../android/text/style/TextAppearanceSpan.md) | Font variation settings. |
+| [`android:letterSpacing`](../android/text/style/TextAppearanceSpan.md) | Text letter-spacing. |
+| [`android:shadowColor`](../android/text/style/TextAppearanceSpan.md) | Place a blurred shadow of text underneath the text, drawn with the specified color. |
 | --- | --- |
-| [`android:shadowDx`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Horizontal offset of the text shadow. |
-| [`android:shadowDy`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Vertical offset of the text shadow. |
-| [`android:shadowRadius`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Blur radius of the text shadow. |
+| [`android:shadowDx`](../android/text/style/TextAppearanceSpan.md) | Horizontal offset of the text shadow. |
+| [`android:shadowDy`](../android/text/style/TextAppearanceSpan.md) | Vertical offset of the text shadow. |
+| [`android:shadowRadius`](../android/text/style/TextAppearanceSpan.md) | Blur radius of the text shadow. |
 | --- | --- |
-| [`android:textColor`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Text color. |
-| [`android:textColorLink`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Color of the links. |
-| [`android:textFontWeight`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Weight for the font used in the TextView. |
+| [`android:textColor`](../android/text/style/TextAppearanceSpan.md) | Text color. |
+| [`android:textColorLink`](../android/text/style/TextAppearanceSpan.md) | Color of the links. |
+| [`android:textFontWeight`](../android/text/style/TextAppearanceSpan.md) | Weight for the font used in the TextView. |
 | --- | --- |
-| [`android:textSize`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Size of the text. |
-| [`android:textStyle`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Style (normal, bold, italic, bold|italic) for the text. |
-| [`android:typeface`](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#attr_TextAppearanceSpan) | Typeface (normal, sans, serif, monospace) for the text. |
+| [`android:textSize`](../android/text/style/TextAppearanceSpan.md) | Size of the text. |
+| [`android:textStyle`](../android/text/style/TextAppearanceSpan.md) | Style (normal, bold, italic, bold|italic) for the text. |
+| [`android:typeface`](../android/text/style/TextAppearanceSpan.md) | Typeface (normal, sans, serif, monospace) for the text. |
 | --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TextAppearanceSpan](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#TextAppearanceSpan(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `appearance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Uses the specified TextAppearance resource to determine the text appearance. |
-| [TextAppearanceSpan](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#TextAppearanceSpan(android.content.Context,%20kotlin.Int,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `appearance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorList:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Uses the specified TextAppearance resource to determine the text appearance, and the specified text color resource to determine the color. |
-| [TextAppearanceSpan](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#TextAppearanceSpan(android.os.Parcel))`(`src:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` <br /> |
-| [TextAppearanceSpan](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#TextAppearanceSpan(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20android.content.res.ColorStateList,%20android.content.res.ColorStateList))`(`family:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)!`, `linkColor:` ` [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)!`)` Makes text be drawn with the specified typeface, size, style, and colors. |
+| [TextAppearanceSpan](../android/text/style/TextAppearanceSpan.md))`(`context:` ` [Context](../android/content/Context.md)!`, `appearance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Uses the specified TextAppearance resource to determine the text appearance. |
+| [TextAppearanceSpan](../android/text/style/TextAppearanceSpan.md))`(`context:` ` [Context](../android/content/Context.md)!`, `appearance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorList:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Uses the specified TextAppearance resource to determine the text appearance, and the specified text color resource to determine the color. |
+| [TextAppearanceSpan](../android/text/style/TextAppearanceSpan.md))`(`src:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
+| [TextAppearanceSpan](../android/text/style/TextAppearanceSpan.md))`(`family:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [ColorStateList](../android/content/res/ColorStateList.md)!`, `linkColor:` ` [ColorStateList](../android/content/res/ColorStateList.md)!`)` Makes text be drawn with the specified typeface, size, style, and colors. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#describeContents())`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFamily](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getFamily())`()` Returns the typeface family specified by this span, or`null`if it does not specify one. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFontFeatureSettings](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getFontFeatureSettings())`()` Returns the font feature settings specified by this span, or`null`if it does not specify one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/text/style/TextAppearanceSpan.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFamily](../android/text/style/TextAppearanceSpan.md))`()` Returns the typeface family specified by this span, or`null`if it does not specify one. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFontFeatureSettings](../android/text/style/TextAppearanceSpan.md))`()` Returns the font feature settings specified by this span, or`null`if it does not specify one. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFontVariationSettings](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getFontVariationSettings())`()` Returns the font variation settings specified by this span, or`null`if it does not specify one. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLetterSpacing](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getLetterSpacing())`()` Returns the value of letter spacing to be added in em unit. |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)! | [getLinkTextColor](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getLinkTextColor())`()` Returns the link color specified by this span, or`null`if it does not specify one. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFontVariationSettings](../android/text/style/TextAppearanceSpan.md))`()` Returns the font variation settings specified by this span, or`null`if it does not specify one. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLetterSpacing](../android/text/style/TextAppearanceSpan.md))`()` Returns the value of letter spacing to be added in em unit. |
+| open [ColorStateList](../android/content/res/ColorStateList.md)! | [getLinkTextColor](../android/text/style/TextAppearanceSpan.md))`()` Returns the link color specified by this span, or`null`if it does not specify one. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getShadowColor](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getShadowColor())`()` Returns the color of the text shadow specified by this span, or`0`if it does not specify one. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getShadowDx](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getShadowDx())`()` Returns the horizontal offset of the text shadow specified by this span, or`0.0f`if it does not specify one. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getShadowDy](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getShadowDy())`()` Returns the vertical offset of the text shadow specified by this span, or`0.0f`if it does not specify one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getShadowColor](../android/text/style/TextAppearanceSpan.md))`()` Returns the color of the text shadow specified by this span, or`0`if it does not specify one. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getShadowDx](../android/text/style/TextAppearanceSpan.md))`()` Returns the horizontal offset of the text shadow specified by this span, or`0.0f`if it does not specify one. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getShadowDy](../android/text/style/TextAppearanceSpan.md))`()` Returns the vertical offset of the text shadow specified by this span, or`0.0f`if it does not specify one. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getShadowRadius](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getShadowRadius())`()` Returns the blur radius of the text shadow specified by this span, or`0.0f`if it does not specify one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getSpanTypeId())`()` <br /> |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)! | [getTextColor](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getTextColor())`()` Returns the text color specified by this span, or`null`if it does not specify one. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getShadowRadius](../android/text/style/TextAppearanceSpan.md))`()` Returns the blur radius of the text shadow specified by this span, or`0.0f`if it does not specify one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](../android/text/style/TextAppearanceSpan.md))`()` <br /> |
+| open [ColorStateList](../android/content/res/ColorStateList.md)! | [getTextColor](../android/text/style/TextAppearanceSpan.md))`()` Returns the text color specified by this span, or`null`if it does not specify one. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextFontWeight](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getTextFontWeight())`()` Returns the text font weight specified by this span, or`FontStyle.FONT_WEIGHT_UNSPECIFIED`if it does not specify one. |
-| open [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)? | [getTextLocales](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getTextLocales())`()` Returns the [android.os.LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) specified by this span, or`null`if it does not specify one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextSize](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getTextSize())`()` Returns the text size specified by this span, or`-1`if it does not specify one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextFontWeight](../android/text/style/TextAppearanceSpan.md))`()` Returns the text font weight specified by this span, or`FontStyle.FONT_WEIGHT_UNSPECIFIED`if it does not specify one. |
+| open [LocaleList](../android/os/LocaleList.md)? | [getTextLocales](../android/text/style/TextAppearanceSpan.md))`()` Returns the [android.os.LocaleList](../android/os/LocaleList.md) specified by this span, or`null`if it does not specify one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextSize](../android/text/style/TextAppearanceSpan.md))`()` Returns the text size specified by this span, or`-1`if it does not specify one. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextStyle](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getTextStyle())`()` Returns the text style specified by this span, or`0`if it does not specify one. |
-| open [Typeface](https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#)? | [getTypeface](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#getTypeface())`()` Returns the typeface specified by this span, or`null`if it does not specify one. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isElegantTextHeight](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#isElegantTextHeight())`()` Returns the value of elegant height metrics flag specified by this span, or`false`if it does not specify one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextStyle](../android/text/style/TextAppearanceSpan.md))`()` Returns the text style specified by this span, or`0`if it does not specify one. |
+| open [Typeface](../android/graphics/Typeface.md)? | [getTypeface](../android/text/style/TextAppearanceSpan.md))`()` Returns the typeface specified by this span, or`null`if it does not specify one. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isElegantTextHeight](../android/text/style/TextAppearanceSpan.md))`()` Returns the value of elegant height metrics flag specified by this span, or`false`if it does not specify one. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#toString())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#updateDrawState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#updateMeasureState(android.text.TextPaint))`(`ds:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/style/TextAppearanceSpan.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/TextAppearanceSpan.md))`(`ds:` ` [TextPaint](../android/text/TextPaint.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](../android/text/style/TextAppearanceSpan.md))`(`ds:` ` [TextPaint](../android/text/TextPaint.md)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/text/style/TextAppearanceSpan#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/text/style/TextAppearanceSpan.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan)! | [getUnderlying](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan#getUnderlying())`()` <br /> Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)), returns the underlying MetricAffectingSpan. <br /> | ||
-| From class [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#updateDrawState(android.text.TextPaint))`(`tp:` ` [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)!`)` <br /> | | [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)! | [wrap](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle))`(`cs:` ` [CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md)! | [getUnderlying](../android/text/style/MetricAffectingSpan.md))`()` <br /> Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying MetricAffectingSpan. <br /> | ||
+| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/CharacterStyle.md))`(`tp:` ` [TextPaint](../android/text/TextPaint.md)!`)` <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 ## XML attributes
 
@@ -141,7 +141,7 @@ May be a floating point value, such as "`1.2`".
 ```
 android:shadowColor
 ```
-Place a blurred shadow of text underneath the text, drawn with the specified color. The text shadow produced does not interact with properties on View that are responsible for real time shadows, [elevation](https://developer.android.com/reference/kotlin/android/R.styleable.html#View_elevation:kotlin.Int) and [translationZ](https://developer.android.com/reference/kotlin/android/R.styleable.html#View_translationZ:kotlin.Int).
+Place a blurred shadow of text underneath the text, drawn with the specified color. The text shadow produced does not interact with properties on View that are responsible for real time shadows, [elevation](../android/R.styleable.md) and [translationZ](../android/R.styleable.md).
 
 May be a color value, in the form of "*rgb*", "*argb*", "*rrggbb*", or "*aarrggbb*". 
 
@@ -309,7 +309,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getFamily
 
@@ -441,7 +441,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getTextLocales(): LocaleList?
 ```
 
-Returns the [android.os.LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) specified by this span, or`null`if it does not specify one. 
+Returns the [android.os.LocaleList](../android/os/LocaleList.md) specified by this span, or`null`if it does not specify one. 
 
 ### getTextSize
 
@@ -528,5 +528,5 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |

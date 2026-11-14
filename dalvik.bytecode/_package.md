@@ -4,10 +4,10 @@
 
 ## Interfaces
 
-| [Opcodes](https://developer.android.com/reference/kotlin/dalvik/bytecode/Opcodes) | A list of all normal (not implementation-specific) Dalvik opcodes. |
+| [Opcodes](../dalvik/bytecode/Opcodes.md) | A list of all normal (not implementation-specific) Dalvik opcodes. |
 | --- | --- |
 
 ## Classes
 
-| [OpcodeInfo](https://developer.android.com/reference/kotlin/dalvik/bytecode/OpcodeInfo) | Information about Dalvik opcodes. |
+| [OpcodeInfo](../dalvik/bytecode/OpcodeInfo.md) | Information about Dalvik opcodes. |
 | --- | --- |

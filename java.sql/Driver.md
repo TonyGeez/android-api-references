@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Driver
 ```
 
-| [java.sql.Driver](https://developer.android.com/reference/kotlin/java/sql/Driver#) |
+| [java.sql.Driver](../java/sql/Driver.md) |
 
 The interface that every driver class must implement.
 
@@ -30,13 +30,13 @@ When a Driver class is loaded, it should create an instance of itself and regist
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [acceptsURL](https://developer.android.com/reference/kotlin/java/sql/Driver#acceptsURL(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves whether the driver thinks that it can open a connection to the given URL. |
-| abstract [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection)! | [connect](https://developer.android.com/reference/kotlin/java/sql/Driver#connect(kotlin.String,%20java.util.Properties))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `info:` ` [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!`)` Attempts to make a database connection to the given URL. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMajorVersion](https://developer.android.com/reference/kotlin/java/sql/Driver#getMajorVersion())`()` Retrieves the driver's major version number. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [acceptsURL](../java/sql/Driver.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves whether the driver thinks that it can open a connection to the given URL. |
+| abstract [Connection](../java/sql/Connection.md)! | [connect](../java/sql/Driver.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `info:` ` [Properties](../java/util/Properties.md)!`)` Attempts to make a database connection to the given URL. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMajorVersion](../java/sql/Driver.md))`()` Retrieves the driver's major version number. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinorVersion](https://developer.android.com/reference/kotlin/java/sql/Driver#getMinorVersion())`()` Gets the driver's minor version number. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [DriverPropertyInfo](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo)!\>! | [getPropertyInfo](https://developer.android.com/reference/kotlin/java/sql/Driver#getPropertyInfo(kotlin.String,%20java.util.Properties))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `info:` ` [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!`)` Gets information about the possible properties for this driver. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [jdbcCompliant](https://developer.android.com/reference/kotlin/java/sql/Driver#jdbcCompliant())`()` Reports whether this driver is a genuine JDBC CompliantTM driver. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinorVersion](../java/sql/Driver.md))`()` Gets the driver's minor version number. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [DriverPropertyInfo](../java/sql/DriverPropertyInfo.md)!\>! | [getPropertyInfo](../java/sql/Driver.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `info:` ` [Properties](../java/util/Properties.md)!`)` Gets information about the possible properties for this driver. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [jdbcCompliant](../java/sql/Driver.md))`()` Reports whether this driver is a genuine JDBC CompliantTM driver. |
 | --- | --- |
 
 ## Public methods
@@ -83,11 +83,11 @@ The`java.util.Properties`argument can be used to pass arbitrary string tag/value
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the URL of the database to which to connect |
-| `info` | [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!:a list of arbitrary string tag/value pairs as connection arguments. Normally at least a "user" and "password" property should be included. |
+| `info` | [Properties](../java/util/Properties.md)!:a list of arbitrary string tag/value pairs as connection arguments. Normally at least a "user" and "password" property should be included. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection)! | a`Connection`object that represents a connection to the URL |
+| [Connection](../java/sql/Connection.md)! | a`Connection`object that represents a connection to the URL |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -139,11 +139,11 @@ The`getPropertyInfo`method is intended to allow a generic GUI tool to discover w
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the URL of the database to which to connect |
-| `info` | [Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#)!:a proposed list of tag/value pairs that will be sent on connect open |
+| `info` | [Properties](../java/util/Properties.md)!:a proposed list of tag/value pairs that will be sent on connect open |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [DriverPropertyInfo](https://developer.android.com/reference/kotlin/java/sql/DriverPropertyInfo)!>! | an array of`DriverPropertyInfo`objects describing possible properties. This array may be an empty array if no properties are required. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [DriverPropertyInfo](../java/sql/DriverPropertyInfo.md)!>! | an array of`DriverPropertyInfo`objects describing possible properties. This array may be an empty array if no properties are required. |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|

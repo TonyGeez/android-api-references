@@ -4,14 +4,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # OnActiveSessionsChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener "View this page in Java") 
+Kotlin| [Java](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnActiveSessionsChangedListener
 ```
 
-| [android.media.session.MediaSessionManager.OnActiveSessionsChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener#) |
+| [android.media.session.MediaSessionManager.OnActiveSessionsChangedListener](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md) |
 
 Listens for changes to the list of active sessions. This can be added using #addOnActiveSessionsChangedListener.
 
@@ -19,7 +19,7 @@ Listens for changes to the list of active sessions. This can be added using #add
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActiveSessionsChanged](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener#onActiveSessionsChanged(kotlin.collections.MutableList))`(`controllers:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MediaController](https://developer.android.com/reference/kotlin/android/media/session/MediaController)!>?`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActiveSessionsChanged](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md))`(`controllers:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MediaController](../android/media/session/MediaController.md)!>?`)` <br /> |
 
 ## Public methods
 
@@ -33,4 +33,4 @@ abstract fun onActiveSessionsChanged(controllers: MutableList<MediaController!>
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `controllers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaController](https://developer.android.com/reference/kotlin/android/media/session/MediaController)!\>?:This value may be`null`. |
+| `controllers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaController](../android/media/session/MediaController.md)!\>?:This value may be`null`. |

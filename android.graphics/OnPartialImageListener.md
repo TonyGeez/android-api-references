@@ -4,24 +4,24 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # OnPartialImageListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/ImageDecoder.OnPartialImageListener "View this page in Java") 
+Kotlin| [Java](../android/graphics/ImageDecoder.OnPartialImageListener.md) 
 | --- | --- |
 
 ```
 interface OnPartialImageListener
 ```
 
-| [android.graphics.ImageDecoder.OnPartialImageListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener#) |
+| [android.graphics.ImageDecoder.OnPartialImageListener](../android/graphics/ImageDecoder.OnPartialImageListener.md) |
 
-Interface for inspecting a [DecodeException](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.DecodeException) and potentially preventing it from being thrown.
+Interface for inspecting a [DecodeException](../android/graphics/ImageDecoder.DecodeException.md) and potentially preventing it from being thrown.
 
-If an instance is passed to [setOnPartialImageListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#setOnPartialImageListener(android.graphics.ImageDecoder.OnPartialImageListener)), a [DecodeException](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.DecodeException) that would otherwise have been thrown can be inspected inside [onPartialImage](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener#onPartialImage(android.graphics.ImageDecoder.DecodeException)). If [onPartialImage](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener#onPartialImage(android.graphics.ImageDecoder.DecodeException))returns`true`, a partial image will be created.
+If an instance is passed to [setOnPartialImageListener](../android/graphics/ImageDecoder.md)), a [DecodeException](../android/graphics/ImageDecoder.DecodeException.md) that would otherwise have been thrown can be inspected inside [onPartialImage](../android/graphics/ImageDecoder.OnPartialImageListener.md)). If [onPartialImage](../android/graphics/ImageDecoder.OnPartialImageListener.md))returns`true`, a partial image will be created.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPartialImage](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener#onPartialImage(android.graphics.ImageDecoder.DecodeException))`(`exception:` ` [ImageDecoder.DecodeException](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.DecodeException)`)` Called by [ImageDecoder](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder) when there is only a partial image to display. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPartialImage](../android/graphics/ImageDecoder.OnPartialImageListener.md))`(`exception:` ` [ImageDecoder.DecodeException](../android/graphics/ImageDecoder.DecodeException.md)`)` Called by [ImageDecoder](../android/graphics/ImageDecoder.md) when there is only a partial image to display. |
 
 ## Public methods
 
@@ -33,14 +33,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onPartialImage(exception: ImageDecoder.DecodeException): Boolean
 ```
 
-Called by [ImageDecoder](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder) when there is only a partial image to display.
+Called by [ImageDecoder](../android/graphics/ImageDecoder.md) when there is only a partial image to display.
 
-If decoding is interrupted after having decoded a partial image, this method will be called. The implementation can inspect the [DecodeException](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.DecodeException) and optionally finish the rest of the decode creation process to create a partial [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) or [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap).
+If decoding is interrupted after having decoded a partial image, this method will be called. The implementation can inspect the [DecodeException](../android/graphics/ImageDecoder.DecodeException.md) and optionally finish the rest of the decode creation process to create a partial [Drawable](../android/graphics/drawable/Drawable.md) or [Bitmap](../android/graphics/Bitmap.md).
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `exception` | [ImageDecoder.DecodeException](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.DecodeException):exception containing information about the decode interruption. This value cannot be`null`. |
+| `exception` | [ImageDecoder.DecodeException](../android/graphics/ImageDecoder.DecodeException.md):exception containing information about the decode interruption. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`to create and return a [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) or [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap) with partial data.`false`(which is the default) to abort the decode and throw`e`. Any undecoded lines in the image will be blank. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`to create and return a [Drawable](../android/graphics/drawable/Drawable.md) or [Bitmap](../android/graphics/Bitmap.md) with partial data.`false`(which is the default) to abort the decode and throw`e`. Any undecoded lines in the image will be blank. |

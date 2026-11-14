@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AnimationListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/animation/Animation.AnimationListener "View this page in Java") 
+Kotlin| [Java](../android/view/animation/Animation.AnimationListener.md) 
 | --- | --- |
 
 ```
 interface AnimationListener
 ```
 
-| [android.view.animation.Animation.AnimationListener](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener#) |
+| [android.view.animation.Animation.AnimationListener](../android/view/animation/Animation.AnimationListener.md) |
 
 An animation listener receives notifications from an animation. Notifications indicate animation related events, such as the end or the repetition of the animation.
 
@@ -19,9 +19,9 @@ An animation listener receives notifications from an animation. Notifications in
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener#onAnimationEnd(android.view.animation.Animation))`(`animation:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Notifies the end of the animation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationRepeat](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener#onAnimationRepeat(android.view.animation.Animation))`(`animation:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Notifies the repetition of the animation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener#onAnimationStart(android.view.animation.Animation))`(`animation:` ` [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!`)` Notifies the start of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](../android/view/animation/Animation.md)!`)` Notifies the end of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationRepeat](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](../android/view/animation/Animation.md)!`)` Notifies the repetition of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](../android/view/animation/Animation.md)!`)` Notifies the start of the animation. |
 | --- | --- |
 
 ## Public methods
@@ -38,7 +38,7 @@ Notifies the end of the animation. This callback is not invoked for animations w
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `animation` | [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!:The animation which reached its end. |
+| `animation` | [Animation](../android/view/animation/Animation.md)!:The animation which reached its end. |
 
 ### onAnimationRepeat
 
@@ -52,7 +52,7 @@ Notifies the repetition of the animation.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `animation` | [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!:The animation which was repeated. |
+| `animation` | [Animation](../android/view/animation/Animation.md)!:The animation which was repeated. |
 
 ### onAnimationStart
 
@@ -66,4 +66,4 @@ Notifies the start of the animation.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `animation` | [Animation](https://developer.android.com/reference/kotlin/android/view/animation/Animation)!:The started animation. |
+| `animation` | [Animation](../android/view/animation/Animation.md)!:The started animation. |

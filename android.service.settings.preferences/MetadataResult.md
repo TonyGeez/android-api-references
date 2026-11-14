@@ -8,7 +8,7 @@ class MetadataResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.settings.preferences.MetadataResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#) |
+| ↳ | [android.service.settings.preferences.MetadataResult](../android/service/settings/preferences/MetadataResult.md) |
 
 Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataRequest`.
 
@@ -37,14 +37,14 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#getMetadataList()()` Returns the list of available Preference Metadata. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SettingsPreferenceMetadata](../android/service/settings/preferences/SettingsPreferenceMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#getMetadataList()()` Returns the list of available Preference Metadata. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#getResultCode()()` Returns the result code indicating status of the request. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [MetadataResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MetadataResult](../android/service/settings/preferences/MetadataResult.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult#`. |
 
 ## Constants
 
@@ -145,7 +145,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

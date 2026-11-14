@@ -11,8 +11,8 @@ abstract class IdentityScope : Identity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.Identity](https://developer.android.com/reference/kotlin/java/security/Identity) ||
-| | ↳ | [java.security.IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#) |
+| ↳ | [java.security.Identity](../java/security/Identity.md) ||
+| | ↳ | [java.security.IdentityScope](../java/security/IdentityScope.md) |
 
 | **This class was deprecated in API level 3.**
 |
@@ -28,36 +28,36 @@ There is a one-to-one mapping between keys and identities, and there can only be
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#IdentityScope(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new identity scope with the specified name. |
-| [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#IdentityScope(kotlin.String,%20java.security.IdentityScope))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scope:` ` [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)!`)` Constructs a new identity scope with the specified name and scope. |
+| [IdentityScope](../java/security/IdentityScope.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new identity scope with the specified name. |
+| [IdentityScope](../java/security/IdentityScope.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scope:` ` [IdentityScope](../java/security/IdentityScope.md)!`)` Constructs a new identity scope with the specified name and scope. |
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#IdentityScope())`()` This constructor is used for serialization only and should not be used by subclasses. |
+| [IdentityScope](../java/security/IdentityScope.md))`()` This constructor is used for serialization only and should not be used by subclasses. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#addIdentity(java.security.Identity))`(`identity:` ` [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!`)` Adds an identity to this identity scope. |
-| abstract [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | [getIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getIdentity(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the identity in this scope with the specified name (if any). |
-| open [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | [getIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getIdentity(java.security.Principal))`(`principal:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal)!`)` Retrieves the identity whose name is the same as that of the specified principal. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIdentity](../java/security/IdentityScope.md))`(`identity:` ` [Identity](../java/security/Identity.md)!`)` Adds an identity to this identity scope. |
+| abstract [Identity](../java/security/Identity.md)! | [getIdentity](../java/security/IdentityScope.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the identity in this scope with the specified name (if any). |
+| open [Identity](../java/security/Identity.md)! | [getIdentity](../java/security/IdentityScope.md))`(`principal:` ` [Principal](../java/security/Principal.md)!`)` Retrieves the identity whose name is the same as that of the specified principal. |
 | --- | --- |
-| abstract [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | [getIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getIdentity(java.security.PublicKey))`(`key:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`)` Retrieves the identity with the specified public key. |
-| openstatic [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)! | [getSystemScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getSystemScope())`()` Returns the system's identity scope. |
-| abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!\>! | [identities](https://developer.android.com/reference/kotlin/java/security/IdentityScope#identities())`()` Returns an enumeration of all identities in this identity scope. |
+| abstract [Identity](../java/security/Identity.md)! | [getIdentity](../java/security/IdentityScope.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`)` Retrieves the identity with the specified public key. |
+| openstatic [IdentityScope](../java/security/IdentityScope.md)! | [getSystemScope](../java/security/IdentityScope.md))`()` Returns the system's identity scope. |
+| abstract [Enumeration](../java/util/Enumeration.md)\< [Identity](../java/security/Identity.md)!\>! | [identities](../java/security/IdentityScope.md))`()` Returns an enumeration of all identities in this identity scope. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeIdentity](https://developer.android.com/reference/kotlin/java/security/IdentityScope#removeIdentity(java.security.Identity))`(`identity:` ` [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!`)` Removes an identity from this identity scope. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/security/IdentityScope#size())`()` Returns the number of identities within this identity scope. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/IdentityScope#toString())`()` Returns a string representation of this identity scope, including its name, its scope name, and the number of identities in this identity scope. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeIdentity](../java/security/IdentityScope.md))`(`identity:` ` [Identity](../java/security/Identity.md)!`)` Removes an identity from this identity scope. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/security/IdentityScope.md))`()` Returns the number of identities within this identity scope. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/IdentityScope.md))`()` Returns a string representation of this identity scope, including its name, its scope name, and the number of identities in this identity scope. |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#setSystemScope(java.security.IdentityScope))`(`scope:` ` [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)!`)` Sets the system's identity scope. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemScope](../java/security/IdentityScope.md))`(`scope:` ` [IdentityScope](../java/security/IdentityScope.md)!`)` Sets the system's identity scope. |
 
 | Inherited functions ||
 |---|---|
-| From class [Identity](https://developer.android.com/reference/kotlin/java/security/Identity) |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCertificate](https://developer.android.com/reference/kotlin/java/security/Identity#addCertificate(java.security.Certificate))`(`certificate:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/Certificate)!`)` <br /> Adds a certificate for this identity. If the identity has a public key, the public key in the certificate must be the same, and if the identity does not have a public key, the identity's public key is set to be that specified in the certificate. First, if there is a security manager, its`checkSecurityAccess`method is called with`"addIdentityCertificate"`as its argument to see if it's ok to add a certificate. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](https://developer.android.com/reference/kotlin/java/security/Certificate)!>! | [certificates](https://developer.android.com/reference/kotlin/java/security/Identity#certificates())`()` <br /> Returns a copy of all the certificates for this identity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/Identity#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Tests for equality between the specified object and this identity. This first tests to see if the entities actually refer to the same object, in which case it returns true. Next, it checks to see if the entities have the same name and the same scope. If they do, the method returns true. Otherwise, it calls [identityEquals](https://developer.android.com/reference/kotlin/java/security/Identity#identityEquals(java.security.Identity)), which subclasses should override. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInfo](https://developer.android.com/reference/kotlin/java/security/Identity#getInfo())`()` <br /> Returns general information previously specified for this identity. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/security/Identity#getName())`()` <br /> Returns this identity's name. <br /> | | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)! | [getPublicKey](https://developer.android.com/reference/kotlin/java/security/Identity#getPublicKey())`()` <br /> Returns this identity's public key. <br /> | | [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)! | [getScope](https://developer.android.com/reference/kotlin/java/security/Identity#getScope())`()` <br /> Returns this identity's scope. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/Identity#hashCode())`()` <br /> Returns a hashcode for this identity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [identityEquals](https://developer.android.com/reference/kotlin/java/security/Identity#identityEquals(java.security.Identity))`(`identity:` ` [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!`)` <br /> Tests for equality between the specified identity and this identity. This method should be overriden by subclasses to test for equality. The default behavior is to return true if the names and public keys are equal. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCertificate](https://developer.android.com/reference/kotlin/java/security/Identity#removeCertificate(java.security.Certificate))`(`certificate:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/Certificate)!`)` <br /> Removes a certificate from this identity. First, if there is a security manager, its`checkSecurityAccess`method is called with`"removeIdentityCertificate"`as its argument to see if it's ok to remove a certificate. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInfo](https://developer.android.com/reference/kotlin/java/security/Identity#setInfo(kotlin.String))`(`info:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Specifies a general information string for this identity. First, if there is a security manager, its`checkSecurityAccess`method is called with`"setIdentityInfo"`as its argument to see if it's ok to specify the information string. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicKey](https://developer.android.com/reference/kotlin/java/security/Identity#setPublicKey(java.security.PublicKey))`(`key:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`)` <br /> Sets this identity's public key. The old key and all of this identity's certificates are removed by this operation. First, if there is a security manager, its`checkSecurityAccess`method is called with`"setIdentityPublicKey"`as its argument to see if it's ok to set the public key. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](https://developer.android.com/reference/kotlin/java/security/Identity#toString(kotlin.Boolean))`(`detailed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Returns a string representation of this identity, with optionally more details than that provided by the`toString`method without any arguments. First, if there is a security manager, its`checkSecurityAccess`method is called with`"printIdentity"`as its argument to see if it's ok to return the string. <br /> | ||
-| From class [Principal](https://developer.android.com/reference/kotlin/java/security/Principal) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/Principal#implies(javax.security.auth.Subject))`(`subject:` ` [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject.html#)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
+| From class [Identity](../java/security/Identity.md) |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCertificate](../java/security/Identity.md))`(`certificate:` ` [Certificate](../java/security/Certificate.md)!`)` <br /> Adds a certificate for this identity. If the identity has a public key, the public key in the certificate must be the same, and if the identity does not have a public key, the identity's public key is set to be that specified in the certificate. First, if there is a security manager, its`checkSecurityAccess`method is called with`"addIdentityCertificate"`as its argument to see if it's ok to add a certificate. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/Certificate.md)!>! | [certificates](../java/security/Identity.md))`()` <br /> Returns a copy of all the certificates for this identity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/Identity.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Tests for equality between the specified object and this identity. This first tests to see if the entities actually refer to the same object, in which case it returns true. Next, it checks to see if the entities have the same name and the same scope. If they do, the method returns true. Otherwise, it calls [identityEquals](../java/security/Identity.md)), which subclasses should override. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInfo](../java/security/Identity.md))`()` <br /> Returns general information previously specified for this identity. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/security/Identity.md))`()` <br /> Returns this identity's name. <br /> | | [PublicKey](../java/security/PublicKey.md)! | [getPublicKey](../java/security/Identity.md))`()` <br /> Returns this identity's public key. <br /> | | [IdentityScope](../java/security/IdentityScope.md)! | [getScope](../java/security/Identity.md))`()` <br /> Returns this identity's scope. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/Identity.md))`()` <br /> Returns a hashcode for this identity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [identityEquals](../java/security/Identity.md))`(`identity:` ` [Identity](../java/security/Identity.md)!`)` <br /> Tests for equality between the specified identity and this identity. This method should be overriden by subclasses to test for equality. The default behavior is to return true if the names and public keys are equal. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCertificate](../java/security/Identity.md))`(`certificate:` ` [Certificate](../java/security/Certificate.md)!`)` <br /> Removes a certificate from this identity. First, if there is a security manager, its`checkSecurityAccess`method is called with`"removeIdentityCertificate"`as its argument to see if it's ok to remove a certificate. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInfo](../java/security/Identity.md))`(`info:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Specifies a general information string for this identity. First, if there is a security manager, its`checkSecurityAccess`method is called with`"setIdentityInfo"`as its argument to see if it's ok to specify the information string. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicKey](../java/security/Identity.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`)` <br /> Sets this identity's public key. The old key and all of this identity's certificates are removed by this operation. First, if there is a security manager, its`checkSecurityAccess`method is called with`"setIdentityPublicKey"`as its argument to see if it's ok to set the public key. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../java/security/Identity.md))`(`detailed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Returns a string representation of this identity, with optionally more details than that provided by the`toString`method without any arguments. First, if there is a security manager, its`checkSecurityAccess`method is called with`"printIdentity"`as its argument to see if it's ok to return the string. <br /> | ||
+| From class [Principal](../java/security/Principal.md) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/Principal.md))`(`subject:` ` [Subject](../javax/security/auth/Subject.md)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
 
 ## Public constructors
 
@@ -90,7 +90,7 @@ Constructs a new identity scope with the specified name and scope.
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the scope name. |
-| `scope` | [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)!:the scope for the new identity scope. |
+| `scope` | [IdentityScope](../java/security/IdentityScope.md)!:the scope for the new identity scope. |
 
 | Exceptions ||
 |----------------------------------------|------------------------------------------------------------------|
@@ -124,7 +124,7 @@ Adds an identity to this identity scope.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `identity` | [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!:the identity to be added. |
+| `identity` | [Identity](../java/security/Identity.md)!:the identity to be added. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -148,7 +148,7 @@ Returns the identity in this scope with the specified name (if any).
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | the identity named`name`, or null if there are no identities named`name`in this scope. |
+| [Identity](../java/security/Identity.md)! | the identity named`name`, or null if there are no identities named`name`in this scope. |
 
 ### getIdentity
 
@@ -164,11 +164,11 @@ Retrieves the identity whose name is the same as that of the specified principal
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `principal` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal)!:the principal corresponding to the identity to be retrieved. |
+| `principal` | [Principal](../java/security/Principal.md)!:the principal corresponding to the identity to be retrieved. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | the identity whose name is the same as that of the principal, or null if there are no identities of the same name in this scope. |
+| [Identity](../java/security/Identity.md)! | the identity whose name is the same as that of the principal, or null if there are no identities of the same name in this scope. |
 
 ### getIdentity
 
@@ -184,11 +184,11 @@ Retrieves the identity with the specified public key.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!:the public key for the identity to be returned. |
+| `key` | [PublicKey](../java/security/PublicKey.md)!:the public key for the identity to be returned. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)! | the identity with the given key, or null if there are no identities in this scope with that key. |
+| [Identity](../java/security/Identity.md)! | the identity with the given key, or null if there are no identities in this scope with that key. |
 
 ### getSystemScope
 
@@ -204,11 +204,11 @@ Returns the system's identity scope.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)! | the system's identity scope, or`null`if none has been set. |
+| [IdentityScope](../java/security/IdentityScope.md)! | the system's identity scope, or`null`if none has been set. |
 
 **See Also**
 
-- [#setSystemScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#setSystemScope(java.security.IdentityScope)) 
+- [#setSystemScope](../java/security/IdentityScope.md)) 
 
 ### identities
 
@@ -224,7 +224,7 @@ Returns an enumeration of all identities in this identity scope.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!>! | an enumeration of all identities in this identity scope. |
+| [Enumeration](../java/util/Enumeration.md)< [Identity](../java/security/Identity.md)!>! | an enumeration of all identities in this identity scope. |
 
 ### removeIdentity
 
@@ -240,7 +240,7 @@ Removes an identity from this identity scope.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------|
-| `identity` | [Identity](https://developer.android.com/reference/kotlin/java/security/Identity)!:the identity to be removed. |
+| `identity` | [Identity](../java/security/Identity.md)!:the identity to be removed. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------|
@@ -296,7 +296,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------|
-| `scope` | [IdentityScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#)!:the scope to set. |
+| `scope` | [IdentityScope](../java/security/IdentityScope.md)!:the scope to set. |
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -304,5 +304,5 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 **See Also**
 
-- [#getSystemScope](https://developer.android.com/reference/kotlin/java/security/IdentityScope#getSystemScope())
-- [java.lang.SecurityManager#checkSecurityAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String))
+- [#getSystemScope](../java/security/IdentityScope.md))
+- [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md))

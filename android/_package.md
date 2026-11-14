@@ -2,11 +2,11 @@
 
 # android
 
-Kotlin| [Java](https://developer.android.com/reference/android/package-summary "View this page in Java")
+Kotlin| [Java](./_package.md)
 | --- | --- |
 
 ## Classes
 
-| [Manifest](https://developer.android.com/reference/kotlin/android/Manifest) | <br /> |
+| [Manifest](./Manifest.md) | <br /> |
 | --- | --- |
-| [R](https://developer.android.com/reference/kotlin/android/R) | <br /> |
+| [R](./R.md) | <br /> |

@@ -2,7 +2,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # UriRelativeFilterGroup
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/UriRelativeFilterGroup "View this page in Java")
+Kotlin | [Java](../android/content/UriRelativeFilterGroup.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class UriRelativeFilterGroup
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.UriRelativeFilterGroup](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#) |
+| ↳ | [android.content.UriRelativeFilterGroup](../android/content/UriRelativeFilterGroup.md) |
 
 An intent data matching group based on a URI's relative reference which includes the path, query and fragment. The group is only considered as matching if *all* UriRelativeFilters in the group match. Each UriRelativeFilter defines a matching rule for a URI path, query or fragment. A group must contain one or more UriRelativeFilters to match but does not need to contain UriRelativeFilters for all existing parts of a URI to match.
 
@@ -34,7 +34,7 @@ For example, given a URI that contains path, query and fragment parts, a group c
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#getAction()()` Return `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#ACTION_ALLOW:kotlin.Int` if a URI is allowed when matched and `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#ACTION_BLOCK:kotlin.Int` if a URI is blacked when matched. |
 | --- | --- |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [UriRelativeFilter](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter)!\> | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#getUriRelativeFilters()()` Returns a unmodifiable view of the UriRelativeFilters list in this group. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [UriRelativeFilter](../android/content/UriRelativeFilter.md)!\> | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#getUriRelativeFilters()()` Returns a unmodifiable view of the UriRelativeFilters list in this group. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#matchData(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Match all URI filter in this group against `https://developer.android.com/reference/kotlin/android/content/Intent#getData()`. |
 | --- | --- |
@@ -96,7 +96,7 @@ Add a filter to the group.
 
 | Parameters ||
 |---|---|
-| `uriRelativeFilter` | [UriRelativeFilter](https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter): This value cannot be `null`. |
+| `uriRelativeFilter` | [UriRelativeFilter](../android/content/UriRelativeFilter.md): This value cannot be `null`. |
 
 ### equals
 
@@ -187,7 +187,7 @@ Match all URI filter in this group against `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `data` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The full data string to match against, as supplied in Intent.data. This value cannot be `null`. |
+| `data` | [Uri](../android/net/Uri.md): The full data string to match against, as supplied in Intent.data. This value cannot be `null`. |
 
 | Return ||
 |---|---|

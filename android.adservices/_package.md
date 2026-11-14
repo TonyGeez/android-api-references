@@ -2,10 +2,10 @@
 
 # android.adservices
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/package-summary "View this page in Java")
+Kotlin| [Java](../android/adservices/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [AdServicesState](https://developer.android.com/reference/kotlin/android/adservices/AdServicesState) | This class specifies the state of the APIs exposed by AdServicesApi apk. |
+| [AdServicesState](../android/adservices/AdServicesState.md) | This class specifies the state of the APIs exposed by AdServicesApi apk. |
 | --- | --- |

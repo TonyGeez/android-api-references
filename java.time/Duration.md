@@ -10,106 +10,106 @@ class Duration : Comparable<Duration!>, Serializable, TemporalAmount
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.Duration](https://developer.android.com/reference/kotlin/java/time/Duration#) |
+| ↳ | [java.time.Duration](../java/time/Duration.md) |
 
 A time-based amount of time, such as '34.5 seconds'.
 
-This class models a quantity or amount of time in terms of seconds and nanoseconds. It can be accessed using other duration-based units, such as minutes and hours. In addition, the [DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) unit can be used and is treated as exactly equal to 24 hours, thus ignoring daylight savings effects. See [Period](https://developer.android.com/reference/kotlin/java/time/Period) for the date-based equivalent to this class.
+This class models a quantity or amount of time in terms of seconds and nanoseconds. It can be accessed using other duration-based units, such as minutes and hours. In addition, the [DAYS](../java/time/temporal/ChronoUnit.md) unit can be used and is treated as exactly equal to 24 hours, thus ignoring daylight savings effects. See [Period](../java/time/Period.md) for the date-based equivalent to this class.
 
-A physical duration could be of infinite length. For practicality, the duration is stored with constraints similar to [Instant](https://developer.android.com/reference/kotlin/java/time/Instant). The duration uses nanosecond resolution with a maximum value of the seconds that can be held in a`long`. This is greater than the current estimated age of the universe.
+A physical duration could be of infinite length. For practicality, the duration is stored with constraints similar to [Instant](../java/time/Instant.md). The duration uses nanosecond resolution with a maximum value of the seconds that can be held in a`long`. This is greater than the current estimated age of the universe.
 
 The range of a duration requires the storage of a number larger than a`long`. To achieve this, the class stores a`long`representing seconds and an`int`representing nanosecond-of-second, which will always be between 0 and 999,999,999. The model is of a directed duration, meaning that the duration may be negative.
 
-The duration is measured in "seconds", but these are not necessarily identical to the scientific "SI second" definition based on atomic clocks. This difference only impacts durations measured near a leap-second and should not affect most applications. See [Instant](https://developer.android.com/reference/kotlin/java/time/Instant) for a discussion as to the meaning of the second and time-scales.
+The duration is measured in "seconds", but these are not necessarily identical to the scientific "SI second" definition based on atomic clocks. This difference only impacts durations measured near a leap-second and should not affect most applications. See [Instant](../java/time/Instant.md) for a discussion as to the meaning of the second and time-scales.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [abs](https://developer.android.com/reference/kotlin/java/time/Duration#abs())`()` Returns a copy of this duration with a positive length. |
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [addTo](https://developer.android.com/reference/kotlin/java/time/Duration#addTo(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Adds this duration to the specified temporal object. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [between](https://developer.android.com/reference/kotlin/java/time/Duration#between(java.time.temporal.Temporal,%20java.time.temporal.Temporal))`(`startInclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`, `endExclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Obtains a`Duration`representing the duration between two temporal objects. |
+| [Duration](../java/time/Duration.md)! | [abs](../java/time/Duration.md))`()` Returns a copy of this duration with a positive length. |
+| [Temporal](../java/time/temporal/Temporal.md)! | [addTo](../java/time/Duration.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Adds this duration to the specified temporal object. |
+| static [Duration](../java/time/Duration.md)! | [between](../java/time/Duration.md))`(`startInclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`, `endExclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Obtains a`Duration`representing the duration between two temporal objects. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/time/Duration#compareTo(java.time.Duration))`(`other:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)!`)` Compares this duration to the specified`Duration`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dividedBy](https://developer.android.com/reference/kotlin/java/time/Duration#dividedBy(java.time.Duration))`(`divisor:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)!`)` Returns number of whole times a specified Duration occurs within this Duration. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [dividedBy](https://developer.android.com/reference/kotlin/java/time/Duration#dividedBy(kotlin.Long))`(`divisor:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration divided by the specified value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/time/Duration.md))`(`other:` ` [Duration](../java/time/Duration.md)!`)` Compares this duration to the specified`Duration`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dividedBy](../java/time/Duration.md))`(`divisor:` ` [Duration](../java/time/Duration.md)!`)` Returns number of whole times a specified Duration occurs within this Duration. |
+| [Duration](../java/time/Duration.md)! | [dividedBy](../java/time/Duration.md))`(`divisor:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration divided by the specified value. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/Duration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this duration is equal to the specified`Duration`. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [from](https://developer.android.com/reference/kotlin/java/time/Duration#from(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Obtains an instance of`Duration`from a temporal amount. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](https://developer.android.com/reference/kotlin/java/time/Duration#get(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Gets the value of the requested unit. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/Duration.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this duration is equal to the specified`Duration`. |
+| static [Duration](../java/time/Duration.md)! | [from](../java/time/Duration.md))`(`amount:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Obtains an instance of`Duration`from a temporal amount. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](../java/time/Duration.md))`(`unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Gets the value of the requested unit. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNano](https://developer.android.com/reference/kotlin/java/time/Duration#getNano())`()` Gets the number of nanoseconds within the second in this duration. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#getSeconds())`()` Gets the number of seconds in this duration. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!\>! | [getUnits](https://developer.android.com/reference/kotlin/java/time/Duration#getUnits())`()` Gets the set of units supported by this duration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNano](../java/time/Duration.md))`()` Gets the number of nanoseconds within the second in this duration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSeconds](../java/time/Duration.md))`()` Gets the number of seconds in this duration. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TemporalUnit](../java/time/temporal/TemporalUnit.md)!\>! | [getUnits](../java/time/Duration.md))`()` Gets the set of units supported by this duration. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/Duration#hashCode())`()` A hash code for this duration. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](https://developer.android.com/reference/kotlin/java/time/Duration#isNegative())`()` Checks if this duration is negative, excluding zero. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPositive](https://developer.android.com/reference/kotlin/java/time/Duration#isPositive())`()` Checks if this duration is positive, excluding zero. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/Duration.md))`()` A hash code for this duration. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](../java/time/Duration.md))`()` Checks if this duration is negative, excluding zero. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPositive](../java/time/Duration.md))`()` Checks if this duration is positive, excluding zero. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZero](https://developer.android.com/reference/kotlin/java/time/Duration#isZero())`()` Checks if this duration is zero length. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minus](https://developer.android.com/reference/kotlin/java/time/Duration#minus(java.time.Duration))`(`duration:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)!`)` Returns a copy of this duration with the specified duration subtracted. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minus](https://developer.android.com/reference/kotlin/java/time/Duration#minus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this duration with the specified duration subtracted. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZero](../java/time/Duration.md))`()` Checks if this duration is zero length. |
+| [Duration](../java/time/Duration.md)! | [minus](../java/time/Duration.md))`(`duration:` ` [Duration](../java/time/Duration.md)!`)` Returns a copy of this duration with the specified duration subtracted. |
+| [Duration](../java/time/Duration.md)! | [minus](../java/time/Duration.md))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Returns a copy of this duration with the specified duration subtracted. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minusDays](https://developer.android.com/reference/kotlin/java/time/Duration#minusDays(kotlin.Long))`(`daysToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in standard 24 hour days subtracted. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minusHours](https://developer.android.com/reference/kotlin/java/time/Duration#minusHours(kotlin.Long))`(`hoursToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in hours subtracted. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minusMillis](https://developer.android.com/reference/kotlin/java/time/Duration#minusMillis(kotlin.Long))`(`millisToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in milliseconds subtracted. |
+| [Duration](../java/time/Duration.md)! | [minusDays](../java/time/Duration.md))`(`daysToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in standard 24 hour days subtracted. |
+| [Duration](../java/time/Duration.md)! | [minusHours](../java/time/Duration.md))`(`hoursToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in hours subtracted. |
+| [Duration](../java/time/Duration.md)! | [minusMillis](../java/time/Duration.md))`(`millisToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in milliseconds subtracted. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minusMinutes](https://developer.android.com/reference/kotlin/java/time/Duration#minusMinutes(kotlin.Long))`(`minutesToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in minutes subtracted. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minusNanos](https://developer.android.com/reference/kotlin/java/time/Duration#minusNanos(kotlin.Long))`(`nanosToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in nanoseconds subtracted. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [minusSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#minusSeconds(kotlin.Long))`(`secondsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in seconds subtracted. |
+| [Duration](../java/time/Duration.md)! | [minusMinutes](../java/time/Duration.md))`(`minutesToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in minutes subtracted. |
+| [Duration](../java/time/Duration.md)! | [minusNanos](../java/time/Duration.md))`(`nanosToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in nanoseconds subtracted. |
+| [Duration](../java/time/Duration.md)! | [minusSeconds](../java/time/Duration.md))`(`secondsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in seconds subtracted. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [multipliedBy](https://developer.android.com/reference/kotlin/java/time/Duration#multipliedBy(kotlin.Long))`(`multiplicand:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration multiplied by the scalar. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [negated](https://developer.android.com/reference/kotlin/java/time/Duration#negated())`()` Returns a copy of this duration with the length negated. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [of](https://developer.android.com/reference/kotlin/java/time/Duration#of(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Obtains a`Duration`representing an amount in the specified unit. |
+| [Duration](../java/time/Duration.md)! | [multipliedBy](../java/time/Duration.md))`(`multiplicand:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration multiplied by the scalar. |
+| [Duration](../java/time/Duration.md)! | [negated](../java/time/Duration.md))`()` Returns a copy of this duration with the length negated. |
+| static [Duration](../java/time/Duration.md)! | [of](../java/time/Duration.md))`(`amount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Obtains a`Duration`representing an amount in the specified unit. |
 | --- | --- |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ofDays](https://developer.android.com/reference/kotlin/java/time/Duration#ofDays(kotlin.Long))`(`days:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of standard 24 hour days. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ofHours](https://developer.android.com/reference/kotlin/java/time/Duration#ofHours(kotlin.Long))`(`hours:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of standard hours. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ofMillis](https://developer.android.com/reference/kotlin/java/time/Duration#ofMillis(kotlin.Long))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of milliseconds. |
+| static [Duration](../java/time/Duration.md)! | [ofDays](../java/time/Duration.md))`(`days:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of standard 24 hour days. |
+| static [Duration](../java/time/Duration.md)! | [ofHours](../java/time/Duration.md))`(`hours:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of standard hours. |
+| static [Duration](../java/time/Duration.md)! | [ofMillis](../java/time/Duration.md))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of milliseconds. |
 | --- | --- |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ofMinutes](https://developer.android.com/reference/kotlin/java/time/Duration#ofMinutes(kotlin.Long))`(`minutes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of standard minutes. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ofNanos](https://developer.android.com/reference/kotlin/java/time/Duration#ofNanos(kotlin.Long))`(`nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of nanoseconds. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ofSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#ofSeconds(kotlin.Long))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of seconds. |
+| static [Duration](../java/time/Duration.md)! | [ofMinutes](../java/time/Duration.md))`(`minutes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of standard minutes. |
+| static [Duration](../java/time/Duration.md)! | [ofNanos](../java/time/Duration.md))`(`nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of nanoseconds. |
+| static [Duration](../java/time/Duration.md)! | [ofSeconds](../java/time/Duration.md))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of seconds. |
 | --- | --- |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ofSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#ofSeconds(kotlin.Long,%20kotlin.Long))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanoAdjustment:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of seconds and an adjustment in nanoseconds. |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [parse](https://developer.android.com/reference/kotlin/java/time/Duration#parse(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains a`Duration`from a text string such as`PnDTnHnMn.nS`. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plus](https://developer.android.com/reference/kotlin/java/time/Duration#plus(java.time.Duration))`(`duration:` ` [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)!`)` Returns a copy of this duration with the specified duration added. |
+| static [Duration](../java/time/Duration.md)! | [ofSeconds](../java/time/Duration.md))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanoAdjustment:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a`Duration`representing a number of seconds and an adjustment in nanoseconds. |
+| static [Duration](../java/time/Duration.md)! | [parse](../java/time/Duration.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains a`Duration`from a text string such as`PnDTnHnMn.nS`. |
+| [Duration](../java/time/Duration.md)! | [plus](../java/time/Duration.md))`(`duration:` ` [Duration](../java/time/Duration.md)!`)` Returns a copy of this duration with the specified duration added. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plus](https://developer.android.com/reference/kotlin/java/time/Duration#plus(kotlin.Long,%20java.time.temporal.TemporalUnit))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this duration with the specified duration added. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plusDays](https://developer.android.com/reference/kotlin/java/time/Duration#plusDays(kotlin.Long))`(`daysToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in standard 24 hour days added. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plusHours](https://developer.android.com/reference/kotlin/java/time/Duration#plusHours(kotlin.Long))`(`hoursToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in hours added. |
+| [Duration](../java/time/Duration.md)! | [plus](../java/time/Duration.md))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Returns a copy of this duration with the specified duration added. |
+| [Duration](../java/time/Duration.md)! | [plusDays](../java/time/Duration.md))`(`daysToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in standard 24 hour days added. |
+| [Duration](../java/time/Duration.md)! | [plusHours](../java/time/Duration.md))`(`hoursToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in hours added. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plusMillis](https://developer.android.com/reference/kotlin/java/time/Duration#plusMillis(kotlin.Long))`(`millisToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in milliseconds added. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plusMinutes](https://developer.android.com/reference/kotlin/java/time/Duration#plusMinutes(kotlin.Long))`(`minutesToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in minutes added. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plusNanos](https://developer.android.com/reference/kotlin/java/time/Duration#plusNanos(kotlin.Long))`(`nanosToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in nanoseconds added. |
+| [Duration](../java/time/Duration.md)! | [plusMillis](../java/time/Duration.md))`(`millisToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in milliseconds added. |
+| [Duration](../java/time/Duration.md)! | [plusMinutes](../java/time/Duration.md))`(`minutesToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in minutes added. |
+| [Duration](../java/time/Duration.md)! | [plusNanos](../java/time/Duration.md))`(`nanosToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in nanoseconds added. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [plusSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#plusSeconds(kotlin.Long))`(`secondsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in seconds added. |
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [subtractFrom](https://developer.android.com/reference/kotlin/java/time/Duration#subtractFrom(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Subtracts this duration from the specified temporal object. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toDays](https://developer.android.com/reference/kotlin/java/time/Duration#toDays())`()` Gets the number of days in this duration. |
+| [Duration](../java/time/Duration.md)! | [plusSeconds](../java/time/Duration.md))`(`secondsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified duration in seconds added. |
+| [Temporal](../java/time/temporal/Temporal.md)! | [subtractFrom](../java/time/Duration.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Subtracts this duration from the specified temporal object. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toDays](../java/time/Duration.md))`()` Gets the number of days in this duration. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toDaysPart](https://developer.android.com/reference/kotlin/java/time/Duration#toDaysPart())`()` Extracts the number of days in the duration. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toHours](https://developer.android.com/reference/kotlin/java/time/Duration#toHours())`()` Gets the number of hours in this duration. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toHoursPart](https://developer.android.com/reference/kotlin/java/time/Duration#toHoursPart())`()` Extracts the number of hours part in the duration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toDaysPart](../java/time/Duration.md))`()` Extracts the number of days in the duration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toHours](../java/time/Duration.md))`()` Gets the number of hours in this duration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toHoursPart](../java/time/Duration.md))`()` Extracts the number of hours part in the duration. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMillis](https://developer.android.com/reference/kotlin/java/time/Duration#toMillis())`()` Converts this duration to the total length in milliseconds. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toMillisPart](https://developer.android.com/reference/kotlin/java/time/Duration#toMillisPart())`()` Extracts the number of milliseconds part of the duration. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMinutes](https://developer.android.com/reference/kotlin/java/time/Duration#toMinutes())`()` Gets the number of minutes in this duration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMillis](../java/time/Duration.md))`()` Converts this duration to the total length in milliseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toMillisPart](../java/time/Duration.md))`()` Extracts the number of milliseconds part of the duration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMinutes](../java/time/Duration.md))`()` Gets the number of minutes in this duration. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toMinutesPart](https://developer.android.com/reference/kotlin/java/time/Duration#toMinutesPart())`()` Extracts the number of minutes part in the duration. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toNanos](https://developer.android.com/reference/kotlin/java/time/Duration#toNanos())`()` Converts this duration to the total length in nanoseconds expressed as a`long`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toNanosPart](https://developer.android.com/reference/kotlin/java/time/Duration#toNanosPart())`()` Get the nanoseconds part within seconds of the duration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toMinutesPart](../java/time/Duration.md))`()` Extracts the number of minutes part in the duration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toNanos](../java/time/Duration.md))`()` Converts this duration to the total length in nanoseconds expressed as a`long`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toNanosPart](../java/time/Duration.md))`()` Get the nanoseconds part within seconds of the duration. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#toSeconds())`()` Gets the number of seconds in this duration. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toSecondsPart](https://developer.android.com/reference/kotlin/java/time/Duration#toSecondsPart())`()` Extracts the number of seconds part in the duration. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/Duration#toString())`()` A string representation of this duration using ISO-8601 seconds based representation, such as`PT8H6M12.345S`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toSeconds](../java/time/Duration.md))`()` Gets the number of seconds in this duration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toSecondsPart](../java/time/Duration.md))`()` Extracts the number of seconds part in the duration. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/Duration.md))`()` A string representation of this duration using ISO-8601 seconds based representation, such as`PT8H6M12.345S`. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [truncatedTo](https://developer.android.com/reference/kotlin/java/time/Duration#truncatedTo(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Returns a copy of this`Duration`truncated to the specified unit. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [withNanos](https://developer.android.com/reference/kotlin/java/time/Duration#withNanos(kotlin.Int))`(`nanoOfSecond:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this duration with the specified nano-of-second. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [withSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#withSeconds(kotlin.Long))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified amount of seconds. |
+| [Duration](../java/time/Duration.md)! | [truncatedTo](../java/time/Duration.md))`(`unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Returns a copy of this`Duration`truncated to the specified unit. |
+| [Duration](../java/time/Duration.md)! | [withNanos](../java/time/Duration.md))`(`nanoOfSecond:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this duration with the specified nano-of-second. |
+| [Duration](../java/time/Duration.md)! | [withSeconds](../java/time/Duration.md))`(`seconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this duration with the specified amount of seconds. |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | [ZERO](https://developer.android.com/reference/kotlin/java/time/Duration#ZERO:java.time.Duration) Constant for a duration of zero. |
+| static [Duration](../java/time/Duration.md)! | [ZERO](../java/time/Duration.md) Constant for a duration of zero. |
 
 ## Public methods
 
@@ -129,7 +129,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with an absolute length, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with an absolute length, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -147,7 +147,7 @@ Adds this duration to the specified temporal object.
 
 This returns a temporal object of the same observable type as the input with this duration added.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.plus(TemporalAmount)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#plus(java.time.temporal.TemporalAmount)). 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.plus(TemporalAmount)](../java/time/temporal/Temporal.md)). 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -162,11 +162,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the temporal object to adjust, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to adjust, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | an object of the same type with the adjustment made, not null |
+| [Temporal](../java/time/temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -188,18 +188,18 @@ Obtains a`Duration`representing the duration between two temporal objects.
 
 This calculates the duration between two temporal objects. If the objects are of different types, then the duration is calculated based on the type of the first object. For example, if the first argument is a`LocalTime`then the second argument is converted to a`LocalTime`.
 
-The specified temporal objects must support the [SECONDS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) unit. For full accuracy, either the [NANOS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) unit or the [NANO_OF_SECOND](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) field should be supported.
+The specified temporal objects must support the [SECONDS](../java/time/temporal/ChronoUnit.md) unit. For full accuracy, either the [NANOS](../java/time/temporal/ChronoUnit.md) unit or the [NANO_OF_SECOND](../java/time/temporal/ChronoField.md) field should be supported.
 
-The result of this method can be a negative period if the end is before the start. To guarantee to obtain a positive duration call [abs()](https://developer.android.com/reference/kotlin/java/time/Duration#abs())on the result.
+The result of this method can be a negative period if the end is before the start. To guarantee to obtain a positive duration call [abs()](../java/time/Duration.md))on the result.
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `startInclusive` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the start instant, inclusive, not null |
-| `endExclusive` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the end instant, exclusive, not null |
+| `startInclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the start instant, inclusive, not null |
+| `endExclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the end instant, exclusive, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 | Exceptions ||
 |---------------------------------|---------------------------------------------------------|
@@ -216,7 +216,7 @@ fun compareTo(other: Duration!): Int
 
 Compares this duration to the specified`Duration`.
 
-The comparison is based on the total length of the durations. It is "consistent with equals", as defined by [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#).
+The comparison is based on the total length of the durations. It is "consistent with equals", as defined by [Comparable](../java/lang/Comparable.md).
 
 | Parameters ||
 |-----------------|--------------------------------------------|
@@ -246,7 +246,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `divisor` | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)!:the value to divide the duration by, positive or negative, not null |
+| `divisor` | [Duration](../java/time/Duration.md)!:the value to divide the duration by, positive or negative, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -274,7 +274,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration divided by the specified divisor, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration divided by the specified divisor, not null |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------------------|
@@ -313,15 +313,15 @@ Obtains an instance of`Duration`from a temporal amount.
 
 This obtains a duration based on the specified amount. A`TemporalAmount`represents an amount of time, which may be date-based or time-based, which this factory extracts to a duration.
 
-The conversion loops around the set of units from the amount and uses the [duration](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#getDuration())of the unit to calculate the total`Duration`. Only a subset of units are accepted by this method. The unit must either have an [exact duration](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#isDurationEstimated())or be [ChronoUnit.DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) which is treated as 24 hours. If any other units are found then an exception is thrown.
+The conversion loops around the set of units from the amount and uses the [duration](../java/time/temporal/TemporalUnit.md))of the unit to calculate the total`Duration`. Only a subset of units are accepted by this method. The unit must either have an [exact duration](../java/time/temporal/TemporalUnit.md))or be [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md) which is treated as 24 hours. If any other units are found then an exception is thrown.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `amount` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!:the temporal amount to convert, not null |
+| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the temporal amount to convert, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | the equivalent duration, not null |
+| [Duration](../java/time/Duration.md)! | the equivalent duration, not null |
 
 | Exceptions ||
 |---------------------------------|-------------------------------------|
@@ -338,11 +338,11 @@ fun get(unit: TemporalUnit!): Long
 
 Gets the value of the requested unit.
 
-This returns a value for each of the two supported units, [SECONDS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) and [NANOS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit). All other units throw an exception.
+This returns a value for each of the two supported units, [SECONDS](../java/time/temporal/ChronoUnit.md) and [NANOS](../java/time/temporal/ChronoUnit.md). All other units throw an exception.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!:the`TemporalUnit`for which to return the value |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the`TemporalUnit`for which to return the value |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------|
@@ -363,7 +363,7 @@ fun getNano(): Int
 
 Gets the number of nanoseconds within the second in this duration.
 
-The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling this method and [getSeconds()](https://developer.android.com/reference/kotlin/java/time/Duration#getSeconds()).
+The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling this method and [getSeconds()](../java/time/Duration.md)).
 
 A`Duration`represents a directed distance between two points on the time-line. A negative duration is expressed by the negative sign of the seconds part. A duration of -1 nanosecond is stored as -1 seconds plus 999,999,999 nanoseconds.
 
@@ -381,7 +381,7 @@ fun getSeconds(): Long
 
 Gets the number of seconds in this duration.
 
-The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling this method and [getNano()](https://developer.android.com/reference/kotlin/java/time/Duration#getNano()).
+The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling this method and [getNano()](../java/time/Duration.md)).
 
 A`Duration`represents a directed distance between two points on the time-line. A negative duration is expressed by the negative sign of the seconds part. A duration of -1 nanosecond is stored as -1 seconds plus 999,999,999 nanoseconds.
 
@@ -399,13 +399,13 @@ fun getUnits(): MutableList<TemporalUnit!>!
 
 Gets the set of units supported by this duration.
 
-The supported units are [SECONDS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit), and [NANOS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit). They are returned in the order seconds, nanos.
+The supported units are [SECONDS](../java/time/temporal/ChronoUnit.md), and [NANOS](../java/time/temporal/ChronoUnit.md). They are returned in the order seconds, nanos.
 
-This set can be used in conjunction with [get(java.time.temporal.TemporalUnit)](https://developer.android.com/reference/kotlin/java/time/Duration#get(java.time.temporal.TemporalUnit))to access the entire state of the duration.
+This set can be used in conjunction with [get(java.time.temporal.TemporalUnit)](../java/time/Duration.md))to access the entire state of the duration.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!>! | a list containing the seconds and nanos units, not null |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TemporalUnit](../java/time/temporal/TemporalUnit.md)!>! | a list containing the seconds and nanos units, not null |
 
 ### hashCode
 
@@ -483,11 +483,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `duration` | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)!:the duration to subtract, positive or negative, not null |
+| `duration` | [Duration](../java/time/Duration.md)!:the duration to subtract, positive or negative, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified duration subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified duration subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -506,18 +506,18 @@ fun minus(
 
 Returns a copy of this duration with the specified duration subtracted.
 
-The duration amount is measured in terms of the specified unit. Only a subset of units are accepted by this method. The unit must either have an [exact duration](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#isDurationEstimated())or be [ChronoUnit.DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) which is treated as 24 hours. Other units throw an exception.
+The duration amount is measured in terms of the specified unit. Only a subset of units are accepted by this method. The unit must either have an [exact duration](../java/time/temporal/TemporalUnit.md))or be [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md) which is treated as 24 hours. Other units throw an exception.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToSubtract` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the amount to subtract, measured in terms of the unit, positive or negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!:the unit that the amount is measured in, must have an exact duration, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit that the amount is measured in, must have an exact duration, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified duration subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified duration subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -543,7 +543,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified days subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified days subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -569,7 +569,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified hours subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified hours subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -593,7 +593,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified milliseconds subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified milliseconds subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -619,7 +619,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified minutes subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified minutes subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -643,7 +643,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified nanoseconds subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified nanoseconds subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -667,7 +667,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified seconds subtracted, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified seconds subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -691,7 +691,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration multiplied by the specified scalar, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration multiplied by the specified scalar, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -713,7 +713,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the amount negated, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the amount negated, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -739,16 +739,16 @@ Duration.of(3, SECONDS);
    Duration.of(465, HOURS);
   
 ```
-Only a subset of units are accepted by this method. The unit must either have an [exact duration](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#isDurationEstimated())or be [ChronoUnit.DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) which is treated as 24 hours. Other units throw an exception.
+Only a subset of units are accepted by this method. The unit must either have an [exact duration](../java/time/temporal/TemporalUnit.md))or be [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md) which is treated as 24 hours. Other units throw an exception.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `amount` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the amount of the duration, measured in terms of the unit, positive or negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!:the unit that the duration is measured in, must have an exact duration, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit that the duration is measured in, must have an exact duration, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------------------------|
@@ -773,7 +773,7 @@ The seconds are calculated based on the standard definition of a day, where each
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------------------------|
@@ -797,7 +797,7 @@ The seconds are calculated based on the standard definition of an hour, where ea
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------------------|
@@ -821,7 +821,7 @@ The seconds and nanoseconds are extracted from the specified milliseconds.
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 ### ofMinutes
 
@@ -841,7 +841,7 @@ The seconds are calculated based on the standard definition of a minute, where e
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 | Exceptions ||
 |---------------------------------|--------------------------------------------------------|
@@ -865,7 +865,7 @@ The seconds and nanoseconds are extracted from the specified nanoseconds.
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 ### ofSeconds
 
@@ -885,7 +885,7 @@ The nanosecond in second field is set to zero.
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 ### ofSeconds
 
@@ -916,7 +916,7 @@ Duration.ofSeconds(3, 1);
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`, not null |
 
 | Exceptions ||
 |---------------------------------|--------------------------------------------------------------------------|
@@ -958,7 +958,7 @@ Examples:
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | the parsed duration, not null |
+| [Duration](../java/time/Duration.md)! | the parsed duration, not null |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------|
@@ -978,11 +978,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `duration` | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)!:the duration to add, positive or negative, not null |
+| `duration` | [Duration](../java/time/Duration.md)!:the duration to add, positive or negative, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified duration added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified duration added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1001,18 +1001,18 @@ fun plus(
 
 Returns a copy of this duration with the specified duration added.
 
-The duration amount is measured in terms of the specified unit. Only a subset of units are accepted by this method. The unit must either have an [exact duration](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#isDurationEstimated())or be [ChronoUnit.DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) which is treated as 24 hours. Other units throw an exception.
+The duration amount is measured in terms of the specified unit. Only a subset of units are accepted by this method. The unit must either have an [exact duration](../java/time/temporal/TemporalUnit.md))or be [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md) which is treated as 24 hours. Other units throw an exception.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the amount to add, measured in terms of the unit, positive or negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!:the unit that the amount is measured in, must have an exact duration, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit that the amount is measured in, must have an exact duration, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified duration added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified duration added, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|------------------------------|
@@ -1039,7 +1039,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified days added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified days added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1063,7 +1063,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified hours added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified hours added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1087,7 +1087,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified milliseconds added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified milliseconds added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1111,7 +1111,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified minutes added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified minutes added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1135,7 +1135,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified nanoseconds added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified nanoseconds added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1159,7 +1159,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the specified seconds added, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the specified seconds added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1177,7 +1177,7 @@ Subtracts this duration from the specified temporal object.
 
 This returns a temporal object of the same observable type as the input with this duration subtracted.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.minus(TemporalAmount)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#minus(java.time.temporal.TemporalAmount)). 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.minus(TemporalAmount)](../java/time/temporal/Temporal.md)). 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -1192,11 +1192,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the temporal object to adjust, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to adjust, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | an object of the same type with the adjustment made, not null |
+| [Temporal](../java/time/temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -1267,7 +1267,7 @@ fun toHoursPart(): Int
 
 Extracts the number of hours part in the duration.
 
-This returns the number of remaining hours when dividing [toHours](https://developer.android.com/reference/kotlin/java/time/Duration#toHours())by hours in a day. This is based on the standard definition of a day as 24 hours.
+This returns the number of remaining hours when dividing [toHours](../java/time/Duration.md))by hours in a day. This is based on the standard definition of a day as 24 hours.
 
 This instance is immutable and unaffected by this method call.
 
@@ -1307,7 +1307,7 @@ fun toMillisPart(): Int
 
 Extracts the number of milliseconds part of the duration.
 
-This returns the milliseconds part by dividing the number of nanoseconds by 1,000,000. The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling [getNano()](https://developer.android.com/reference/kotlin/java/time/Duration#getNano())and [getSeconds()](https://developer.android.com/reference/kotlin/java/time/Duration#getSeconds()).
+This returns the milliseconds part by dividing the number of nanoseconds by 1,000,000. The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling [getNano()](../java/time/Duration.md))and [getSeconds()](../java/time/Duration.md)).
 
 This instance is immutable and unaffected by this method call.
 
@@ -1343,7 +1343,7 @@ fun toMinutesPart(): Int
 
 Extracts the number of minutes part in the duration.
 
-This returns the number of remaining minutes when dividing [toMinutes](https://developer.android.com/reference/kotlin/java/time/Duration#toMinutes())by minutes in an hour. This is based on the standard definition of an hour as 60 minutes.
+This returns the number of remaining minutes when dividing [toMinutes](../java/time/Duration.md))by minutes in an hour. This is based on the standard definition of an hour as 60 minutes.
 
 This instance is immutable and unaffected by this method call.
 
@@ -1381,7 +1381,7 @@ fun toNanosPart(): Int
 
 Get the nanoseconds part within seconds of the duration.
 
-The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling [getNano()](https://developer.android.com/reference/kotlin/java/time/Duration#getNano())and [getSeconds()](https://developer.android.com/reference/kotlin/java/time/Duration#getSeconds()).
+The length of the duration is stored using two fields - seconds and nanoseconds. The nanoseconds part is a value from 0 to 999,999,999 that is an adjustment to the length in seconds. The total duration is defined by calling [getNano()](../java/time/Duration.md))and [getSeconds()](../java/time/Duration.md)).
 
 This instance is immutable and unaffected by this method call.
 
@@ -1417,7 +1417,7 @@ fun toSecondsPart(): Int
 
 Extracts the number of seconds part in the duration.
 
-This returns the remaining seconds when dividing [toSeconds](https://developer.android.com/reference/kotlin/java/time/Duration#toSeconds())by seconds in a minute. This is based on the standard definition of a minute as 60 seconds.
+This returns the remaining seconds when dividing [toSeconds](../java/time/Duration.md))by seconds in a minute. This is based on the standard definition of a minute as 60 seconds.
 
 This instance is immutable and unaffected by this method call.
 
@@ -1462,19 +1462,19 @@ fun truncatedTo(unit: TemporalUnit!): Duration!
 
 Returns a copy of this`Duration`truncated to the specified unit.
 
-Truncating the duration returns a copy of the original with conceptual fields smaller than the specified unit set to zero. For example, truncating with the [MINUTES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) unit will round down towards zero to the nearest minute, setting the seconds and nanoseconds to zero.
+Truncating the duration returns a copy of the original with conceptual fields smaller than the specified unit set to zero. For example, truncating with the [MINUTES](../java/time/temporal/ChronoUnit.md) unit will round down towards zero to the nearest minute, setting the seconds and nanoseconds to zero.
 
-The unit must have a [duration](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#getDuration())that divides into the length of a standard day without remainder. This includes all [java.time.temporal.ChronoUnit#isTimeBased()](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#isTimeBased())} and [DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit). Other ChronoUnits throw an exception.
+The unit must have a [duration](../java/time/temporal/TemporalUnit.md))that divides into the length of a standard day without remainder. This includes all [java.time.temporal.ChronoUnit#isTimeBased()](../java/time/temporal/ChronoUnit.md))} and [DAYS](../java/time/temporal/ChronoUnit.md). Other ChronoUnits throw an exception.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!:the unit to truncate to, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit to truncate to, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this duration with the time truncated, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this duration with the time truncated, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|---------------------------------------|
@@ -1501,7 +1501,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this period with the requested nano-of-second, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this period with the requested nano-of-second, not null |
 
 | Exceptions ||
 |-------------------------------|----------------------------------|
@@ -1527,7 +1527,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration#)! | a`Duration`based on this period with the requested seconds, not null |
+| [Duration](../java/time/Duration.md)! | a`Duration`based on this period with the requested seconds, not null |
 
 ## Properties
 

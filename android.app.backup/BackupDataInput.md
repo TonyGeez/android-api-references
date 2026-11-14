@@ -8,7 +8,7 @@ open class BackupDataInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.backup.BackupDataInput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#) |
+| ↳ | [android.app.backup.BackupDataInput](../android/app/backup/BackupDataInput.md) |
 
 Provides the structured interface through which a `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` reads information from the backup data set, via its `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestore(android.app.backup.BackupDataInput,%20kotlin.Int,%20android.os.ParcelFileDescriptor)` method. The data is presented as a set of "entities," each representing one named record as previously stored by the agent's android.app.backup.BackupAgent#onBackup(ParcelFileDescriptor,android.app.backup.BackupDataOutput,ParcelFileDescriptor) implementation. An entity is composed of a descriptive header plus a byte array that holds the raw data saved in the remote backup.
 

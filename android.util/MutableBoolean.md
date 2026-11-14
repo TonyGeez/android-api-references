@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableBoolean
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/MutableBoolean "View this page in Java") 
+Kotlin| [Java](../android/util/MutableBoolean.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableBoolean
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableBoolean](https://developer.android.com/reference/kotlin/android/util/MutableBoolean#) |
+| ↳ | [android.util.MutableBoolean](../android/util/MutableBoolean.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableBoolean
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableBoolean](https://developer.android.com/reference/kotlin/android/util/MutableBoolean#MutableBoolean(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| [MutableBoolean](../android/util/MutableBoolean.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [value](https://developer.android.com/reference/kotlin/android/util/MutableBoolean#value:kotlin.Boolean) <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [value](../android/util/MutableBoolean.md) <br /> |
 
 ## Public constructors
 

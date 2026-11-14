@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # NetworkCapabilities
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/NetworkCapabilities "View this page in Java")
+Kotlin | [Java](../android/net/NetworkCapabilities.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class NetworkCapabilities : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.NetworkCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#) |
+| ↳ | [android.net.NetworkCapabilities](../android/net/NetworkCapabilities.md) |
 
 Representation of the capabilities of an active network.
 
@@ -127,12 +127,12 @@ Also see `https://developer.android.com/reference/kotlin/android/net/NetworkRequ
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkDownstreamBandwidthKbps()()` Retrieves the downstream bandwidth for this network in Kbps. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkUpstreamBandwidthKbps()()` Retrieves the upstream bandwidth for this network in Kbps. |
 | --- | --- |
-| [NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getNetworkSpecifier()()` Gets the optional bearer specific network specifier. |
+| [NetworkSpecifier](../android/net/NetworkSpecifier.md)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getNetworkSpecifier()()` Gets the optional bearer specific network specifier. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getOwnerUid()()` Retrieves the UID of the app that owns this network. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getSignalStrength()()` Retrieves the signal strength. |
 | --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getSubscriptionIds()()` Gets the subscription ID set that associated to this network or request. |
-| [TransportInfo](https://developer.android.com/reference/kotlin/android/net/TransportInfo)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getTransportInfo()()` Returns a transport-specific information container. |
+| [TransportInfo](../android/net/TransportInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getTransportInfo()()` Returns a transport-specific information container. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasCapability(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of a capability on this instance. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasEnterpriseId(kotlin.Int)(enterpriseId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of an enterprise capability identifier on this instance. |
@@ -144,7 +144,7 @@ Also see `https://developer.android.com/reference/kotlin/android/net/NetworkRequ
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [NetworkCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#)!\> | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkCapabilities](../android/net/NetworkCapabilities.md)!\> | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -1059,7 +1059,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

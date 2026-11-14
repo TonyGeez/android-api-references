@@ -4,16 +4,16 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # TextBasedSmsColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Telephony.TextBasedSmsColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/Telephony.TextBasedSmsColumns.md) 
 | --- | --- |
 
 ```
 interface TextBasedSmsColumns
 ```
 
-| [android.provider.Telephony.TextBasedSmsColumns](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#) |
+| [android.provider.Telephony.TextBasedSmsColumns](../android/provider/Telephony.TextBasedSmsColumns.md) |
 
-| Known Direct Subclasses [Telephony.Sms](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms), [Telephony.Sms.Conversations](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Conversations), [Telephony.Sms.Draft](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Draft), [Telephony.Sms.Inbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Inbox), [Telephony.Sms.Outbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Outbox), [Telephony.Sms.Sent](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Sent) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [Telephony.Sms](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms) | Contains all text-based SMS messages. | | [Telephony.Sms.Conversations](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Conversations) | Contains a view of SMS conversations (also referred to as threads). | | [Telephony.Sms.Draft](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Draft) | Contains all draft text-based SMS messages in the SMS app. | | [Telephony.Sms.Inbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Inbox) | Contains all text-based SMS messages in the SMS app inbox. | | [Telephony.Sms.Outbox](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Outbox) | Contains all pending outgoing text-based SMS messages. | | [Telephony.Sms.Sent](https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Sent) | Contains all sent text-based SMS messages in the SMS app. | |
+| Known Direct Subclasses [Telephony.Sms](../android/provider/Telephony.Sms.md), [Telephony.Sms.Conversations](../android/provider/Telephony.Sms.Conversations.md), [Telephony.Sms.Draft](../android/provider/Telephony.Sms.Draft.md), [Telephony.Sms.Inbox](../android/provider/Telephony.Sms.Inbox.md), [Telephony.Sms.Outbox](../android/provider/Telephony.Sms.Outbox.md), [Telephony.Sms.Sent](../android/provider/Telephony.Sms.Sent.md) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [Telephony.Sms](../android/provider/Telephony.Sms.md) | Contains all text-based SMS messages. | | [Telephony.Sms.Conversations](../android/provider/Telephony.Sms.Conversations.md) | Contains a view of SMS conversations (also referred to as threads). | | [Telephony.Sms.Draft](../android/provider/Telephony.Sms.Draft.md) | Contains all draft text-based SMS messages in the SMS app. | | [Telephony.Sms.Inbox](../android/provider/Telephony.Sms.Inbox.md) | Contains all text-based SMS messages in the SMS app inbox. | | [Telephony.Sms.Outbox](../android/provider/Telephony.Sms.Outbox.md) | Contains all pending outgoing text-based SMS messages. | | [Telephony.Sms.Sent](../android/provider/Telephony.Sms.Sent.md) | Contains all sent text-based SMS messages in the SMS app. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base columns for tables that contain text-based SMSs.
@@ -22,44 +22,44 @@ Base columns for tables that contain text-based SMSs.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ADDRESS](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#ADDRESS:kotlin.String) The address of the other party. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BODY](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#BODY:kotlin.String) The body of the message. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CREATOR](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#CREATOR:kotlin.String) The identity of the sender of a sent message. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ADDRESS](../android/provider/Telephony.TextBasedSmsColumns.md) The address of the other party. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BODY](../android/provider/Telephony.TextBasedSmsColumns.md) The body of the message. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CREATOR](../android/provider/Telephony.TextBasedSmsColumns.md) The identity of the sender of a sent message. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATE](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#DATE:kotlin.String) The date the message was received. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATE_SENT](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#DATE_SENT:kotlin.String) The date the message was sent. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ERROR_CODE](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#ERROR_CODE:kotlin.String) Error code associated with sending or receiving this message |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATE](../android/provider/Telephony.TextBasedSmsColumns.md) The date the message was received. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATE_SENT](../android/provider/Telephony.TextBasedSmsColumns.md) The date the message was sent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ERROR_CODE](../android/provider/Telephony.TextBasedSmsColumns.md) Error code associated with sending or receiving this message |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LOCKED](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#LOCKED:kotlin.String) Is the message locked? |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_ALL](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#MESSAGE_TYPE_ALL:kotlin.Int) Message type: all messages. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_DRAFT](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#MESSAGE_TYPE_DRAFT:kotlin.Int) Message type: drafts. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LOCKED](../android/provider/Telephony.TextBasedSmsColumns.md) Is the message locked? |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_ALL](../android/provider/Telephony.TextBasedSmsColumns.md) Message type: all messages. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_DRAFT](../android/provider/Telephony.TextBasedSmsColumns.md) Message type: drafts. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_FAILED](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#MESSAGE_TYPE_FAILED:kotlin.Int) Message type: failed outgoing message. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_INBOX](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#MESSAGE_TYPE_INBOX:kotlin.Int) Message type: inbox. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_OUTBOX](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#MESSAGE_TYPE_OUTBOX:kotlin.Int) Message type: outbox. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_FAILED](../android/provider/Telephony.TextBasedSmsColumns.md) Message type: failed outgoing message. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_INBOX](../android/provider/Telephony.TextBasedSmsColumns.md) Message type: inbox. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_OUTBOX](../android/provider/Telephony.TextBasedSmsColumns.md) Message type: outbox. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_QUEUED](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#MESSAGE_TYPE_QUEUED:kotlin.Int) Message type: queued to send later. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_SENT](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#MESSAGE_TYPE_SENT:kotlin.Int) Message type: sent messages. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PERSON](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#PERSON:kotlin.String) The ID of the sender of the conversation, if present. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_QUEUED](../android/provider/Telephony.TextBasedSmsColumns.md) Message type: queued to send later. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_SENT](../android/provider/Telephony.TextBasedSmsColumns.md) Message type: sent messages. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PERSON](../android/provider/Telephony.TextBasedSmsColumns.md) The ID of the sender of the conversation, if present. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROTOCOL](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#PROTOCOL:kotlin.String) The protocol identifier code. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [READ](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#READ:kotlin.String) Has the message been read? |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPLY_PATH_PRESENT](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#REPLY_PATH_PRESENT:kotlin.String) Is the`TP-Reply-Path`flag set? |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROTOCOL](../android/provider/Telephony.TextBasedSmsColumns.md) The protocol identifier code. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [READ](../android/provider/Telephony.TextBasedSmsColumns.md) Has the message been read? |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [REPLY_PATH_PRESENT](../android/provider/Telephony.TextBasedSmsColumns.md) Is the`TP-Reply-Path`flag set? |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SEEN](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#SEEN:kotlin.String) Has the message been seen by the user? The "seen" flag determines whether we need to show a notification. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SERVICE_CENTER](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#SERVICE_CENTER:kotlin.String) The service center (SC) through which to send the message, if present. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STATUS](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#STATUS:kotlin.String) `TP-Status`value for the message, or -1 if no status has been received. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SEEN](../android/provider/Telephony.TextBasedSmsColumns.md) Has the message been seen by the user? The "seen" flag determines whether we need to show a notification. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SERVICE_CENTER](../android/provider/Telephony.TextBasedSmsColumns.md) The service center (SC) through which to send the message, if present. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STATUS](../android/provider/Telephony.TextBasedSmsColumns.md) `TP-Status`value for the message, or -1 if no status has been received. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_COMPLETE](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#STATUS_COMPLETE:kotlin.Int) TP-Status: complete. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILED](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#STATUS_FAILED:kotlin.Int) TP-Status: failed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_NONE](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#STATUS_NONE:kotlin.Int) TP-Status: no status received. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_COMPLETE](../android/provider/Telephony.TextBasedSmsColumns.md) TP-Status: complete. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILED](../android/provider/Telephony.TextBasedSmsColumns.md) TP-Status: failed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_NONE](../android/provider/Telephony.TextBasedSmsColumns.md) TP-Status: no status received. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PENDING](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#STATUS_PENDING:kotlin.Int) TP-Status: pending. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBJECT](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#SUBJECT:kotlin.String) The subject of the message, if present. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBSCRIPTION_ID](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#SUBSCRIPTION_ID:kotlin.String) The subscription to which the message belongs to. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PENDING](../android/provider/Telephony.TextBasedSmsColumns.md) TP-Status: pending. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBJECT](../android/provider/Telephony.TextBasedSmsColumns.md) The subject of the message, if present. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBSCRIPTION_ID](../android/provider/Telephony.TextBasedSmsColumns.md) The subscription to which the message belongs to. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [THREAD_ID](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#THREAD_ID:kotlin.String) The thread ID of the message. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](https://developer.android.com/reference/kotlin/android/provider/Telephony.TextBasedSmsColumns#TYPE:kotlin.String) The type of message. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [THREAD_ID](../android/provider/Telephony.TextBasedSmsColumns.md) The thread ID of the message. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](../android/provider/Telephony.TextBasedSmsColumns.md) The type of message. |
 
 ## Constants
 

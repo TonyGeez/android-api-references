@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # BreakIterator
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/BreakIterator "View this page in Java") 
+Kotlin| [Java](../android/icu/text/BreakIterator.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class BreakIterator : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#) |
+| ↳ | [android.icu.text.BreakIterator](../android/icu/text/BreakIterator.md) |
 
-**\[icu enhancement\]** ICU's replacement for [java.text.BreakIterator](https://developer.android.com/reference/kotlin/java/text/BreakIterator.html#). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
+**\[icu enhancement\]** ICU's replacement for [java.text.BreakIterator](../java/text/BreakIterator.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
 
 A class that locates boundaries in text. This class defines a protocol for objects that break up a piece of natural-language text according to a set of criteria. Instances or subclasses of BreakIterator can be provided, for example, to break a piece of text into words, sentences, or logical characters according to the conventions of some language or group of languages. We provide five built-in types of BreakIterator:
 
@@ -136,82 +136,82 @@ public static int nextWordStartAfter(int pos, String text) {
   }
   
 ```
-The iterator returned by #getWordInstance is unique in that the break positions it returns don't represent both the start and end of the thing being iterated over. That is, a sentence-break iterator returns breaks that each represent the end of one sentence and the beginning of the next. With the word-break iterator, the characters between two boundaries might be a word, or they might be the punctuation or whitespace between two words. The above code uses [getRuleStatus](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getRuleStatus())to identify and ignore boundaries associated with punctuation or other non-word characters.
+The iterator returned by #getWordInstance is unique in that the break positions it returns don't represent both the start and end of the thing being iterated over. That is, a sentence-break iterator returns breaks that each represent the end of one sentence and the beginning of the next. With the word-break iterator, the characters between two boundaries might be a word, or they might be the punctuation or whitespace between two words. The above code uses [getRuleStatus](../android/icu/text/BreakIterator.md))to identify and ignore boundaries associated with punctuation or other non-word characters.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#DONE:kotlin.Int) DONE is returned by previous() and next() after all valid boundaries have been returned. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_CHARACTER](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#KIND_CHARACTER:kotlin.Int) **\[icu\]** |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_LINE](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#KIND_LINE:kotlin.Int) **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](../android/icu/text/BreakIterator.md) DONE is returned by previous() and next() after all valid boundaries have been returned. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_CHARACTER](../android/icu/text/BreakIterator.md) **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_LINE](../android/icu/text/BreakIterator.md) **\[icu\]** |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_SENTENCE](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#KIND_SENTENCE:kotlin.Int) **\[icu\]** |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_TITLE](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#KIND_TITLE:kotlin.Int) **\[icu\]** |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_WORD](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#KIND_WORD:kotlin.Int) **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_SENTENCE](../android/icu/text/BreakIterator.md) **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_TITLE](../android/icu/text/BreakIterator.md) **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_WORD](../android/icu/text/BreakIterator.md) **\[icu\]** |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_IDEO](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_IDEO:kotlin.Int) Tag value for words containing ideographic characters, lower limit |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_IDEO_LIMIT](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_IDEO_LIMIT:kotlin.Int) Tag value for words containing ideographic characters, upper limit |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_KANA](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_KANA:kotlin.Int) Tag value for words containing kana characters, lower limit |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_IDEO](../android/icu/text/BreakIterator.md) Tag value for words containing ideographic characters, lower limit |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_IDEO_LIMIT](../android/icu/text/BreakIterator.md) Tag value for words containing ideographic characters, upper limit |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_KANA](../android/icu/text/BreakIterator.md) Tag value for words containing kana characters, lower limit |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_KANA_LIMIT](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_KANA_LIMIT:kotlin.Int) Tag value for words containing kana characters, upper limit |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_LETTER](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_LETTER:kotlin.Int) Tag value for words that contain letters, excluding hiragana, katakana or ideographic characters, lower limit. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_LETTER_LIMIT](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_LETTER_LIMIT:kotlin.Int) Tag value for words containing letters, upper limit |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_KANA_LIMIT](../android/icu/text/BreakIterator.md) Tag value for words containing kana characters, upper limit |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_LETTER](../android/icu/text/BreakIterator.md) Tag value for words that contain letters, excluding hiragana, katakana or ideographic characters, lower limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_LETTER_LIMIT](../android/icu/text/BreakIterator.md) Tag value for words containing letters, upper limit |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NONE](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_NONE:kotlin.Int) Tag value for "words" that do not fit into any of other categories. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NONE_LIMIT](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_NONE_LIMIT:kotlin.Int) Upper bound for tags for uncategorized words. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NUMBER](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_NUMBER:kotlin.Int) Tag value for words that appear to be numbers, lower limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NONE](../android/icu/text/BreakIterator.md) Tag value for "words" that do not fit into any of other categories. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NONE_LIMIT](../android/icu/text/BreakIterator.md) Upper bound for tags for uncategorized words. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NUMBER](../android/icu/text/BreakIterator.md) Tag value for words that appear to be numbers, lower limit. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NUMBER_LIMIT](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#WORD_NUMBER_LIMIT:kotlin.Int) Tag value for words that appear to be numbers, upper limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_NUMBER_LIMIT](../android/icu/text/BreakIterator.md) Tag value for words that appear to be numbers, upper limit. |
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#BreakIterator())`()` Default constructor. |
+| [BreakIterator](../android/icu/text/BreakIterator.md))`()` Default constructor. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#clone())`()` Clone method. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [current](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#current())`()` Return the iterator's current position. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [first](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#first())`()` Set the iterator to the first boundary position. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../android/icu/text/BreakIterator.md))`()` Clone method. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [current](../android/icu/text/BreakIterator.md))`()` Return the iterator's current position. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [first](../android/icu/text/BreakIterator.md))`()` Set the iterator to the first boundary position. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [following](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#following(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the iterator's current iteration position to be the first boundary position following the specified position. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getAvailableLocales())`()` Returns a list of locales for which BreakIterators can be used. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getCharacterInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getCharacterInstance())`()` Returns a new instance of BreakIterator that locates logical-character boundaries. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [following](../android/icu/text/BreakIterator.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the iterator's current iteration position to be the first boundary position following the specified position. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../android/icu/text/BreakIterator.md))`()` Returns a list of locales for which BreakIterators can be used. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getCharacterInstance](../android/icu/text/BreakIterator.md))`()` Returns a new instance of BreakIterator that locates logical-character boundaries. |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getCharacterInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getCharacterInstance(android.icu.util.ULocale))`(`where:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates logical-character boundaries. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getCharacterInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getCharacterInstance(java.util.Locale))`(`where:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new instance of BreakIterator that locates logical-character boundaries. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getLineInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getLineInstance())`()` Returns a new instance of BreakIterator that locates legal line- wrapping positions. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getCharacterInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates logical-character boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getCharacterInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [Locale](../java/util/Locale.md)!`)` Returns a new instance of BreakIterator that locates logical-character boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getLineInstance](../android/icu/text/BreakIterator.md))`()` Returns a new instance of BreakIterator that locates legal line- wrapping positions. |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getLineInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getLineInstance(android.icu.util.ULocale))`(`where:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates legal line- wrapping positions. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getLineInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getLineInstance(java.util.Locale))`(`where:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new instance of BreakIterator that locates legal line- wrapping positions. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRuleStatus](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getRuleStatus())`()` For RuleBasedBreakIterators, return the status tag from the break rule that determined the boundary at the current iteration position. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getLineInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates legal line- wrapping positions. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getLineInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [Locale](../java/util/Locale.md)!`)` Returns a new instance of BreakIterator that locates legal line- wrapping positions. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRuleStatus](../android/icu/text/BreakIterator.md))`()` For RuleBasedBreakIterators, return the status tag from the break rule that determined the boundary at the current iteration position. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRuleStatusVec](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getRuleStatusVec(kotlin.IntArray))`(`fillInArray:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` For RuleBasedBreakIterators, get the status (tag) values from the break rule(s) that determined the the boundary at the current iteration position. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getSentenceInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getSentenceInstance())`()` Returns a new instance of BreakIterator that locates sentence boundaries. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getSentenceInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getSentenceInstance(android.icu.util.ULocale))`(`where:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates sentence boundaries. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRuleStatusVec](../android/icu/text/BreakIterator.md))`(`fillInArray:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` For RuleBasedBreakIterators, get the status (tag) values from the break rule(s) that determined the the boundary at the current iteration position. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getSentenceInstance](../android/icu/text/BreakIterator.md))`()` Returns a new instance of BreakIterator that locates sentence boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getSentenceInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates sentence boundaries. |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getSentenceInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getSentenceInstance(java.util.Locale))`(`where:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new instance of BreakIterator that locates sentence boundaries. |
-| abstract [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)! | [getText](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getText())`()` Returns a CharacterIterator over the text being analyzed. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getTitleInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getTitleInstance())`()` **\[icu\]**Returns a new instance of BreakIterator that locates title boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getSentenceInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [Locale](../java/util/Locale.md)!`)` Returns a new instance of BreakIterator that locates sentence boundaries. |
+| abstract [CharacterIterator](../java/text/CharacterIterator.md)! | [getText](../android/icu/text/BreakIterator.md))`()` Returns a CharacterIterator over the text being analyzed. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getTitleInstance](../android/icu/text/BreakIterator.md))`()` **\[icu\]**Returns a new instance of BreakIterator that locates title boundaries. |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getTitleInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getTitleInstance(android.icu.util.ULocale))`(`where:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates title boundaries. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getTitleInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getTitleInstance(java.util.Locale))`(`where:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates title boundaries. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getWordInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getWordInstance())`()` Returns a new instance of BreakIterator that locates word boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getTitleInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates title boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getTitleInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [Locale](../java/util/Locale.md)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates title boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getWordInstance](../android/icu/text/BreakIterator.md))`()` Returns a new instance of BreakIterator that locates word boundaries. |
 | --- | --- |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getWordInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getWordInstance(android.icu.util.ULocale))`(`where:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates word boundaries. |
-| openstatic [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | [getWordInstance](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#getWordInstance(java.util.Locale))`(`where:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns a new instance of BreakIterator that locates word boundaries. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBoundary](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#isBoundary(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified position is a boundary position. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getWordInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a new instance of BreakIterator that locates word boundaries. |
+| openstatic [BreakIterator](../android/icu/text/BreakIterator.md)! | [getWordInstance](../android/icu/text/BreakIterator.md))`(`where:` ` [Locale](../java/util/Locale.md)!`)` Returns a new instance of BreakIterator that locates word boundaries. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBoundary](../android/icu/text/BreakIterator.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified position is a boundary position. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [last](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#last())`()` Set the iterator to the last boundary position. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#next())`()` Advances the iterator forward one boundary. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#next(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Move the iterator by the specified number of steps in the text. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [last](../android/icu/text/BreakIterator.md))`()` Set the iterator to the last boundary position. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](../android/icu/text/BreakIterator.md))`()` Advances the iterator forward one boundary. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](../android/icu/text/BreakIterator.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Move the iterator by the specified number of steps in the text. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [preceding](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#preceding(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the iterator's current iteration position to be the last boundary position preceding the specified position. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previous](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#previous())`()` Move the iterator backward one boundary. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#setText(kotlin.CharSequence))`(`newText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the iterator to analyze a new piece of text. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [preceding](../android/icu/text/BreakIterator.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the iterator's current iteration position to be the last boundary position preceding the specified position. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previous](../android/icu/text/BreakIterator.md))`()` Move the iterator backward one boundary. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../android/icu/text/BreakIterator.md))`(`newText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the iterator to analyze a new piece of text. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#setText(kotlin.String))`(`newText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the iterator to analyze a new piece of text. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#setText(java.text.CharacterIterator))`(`newText:` ` [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!`)` Sets the iterator to analyze a new piece of text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../android/icu/text/BreakIterator.md))`(`newText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the iterator to analyze a new piece of text. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../android/icu/text/BreakIterator.md))`(`newText:` ` [CharacterIterator](../java/text/CharacterIterator.md)!`)` Sets the iterator to analyze a new piece of text. |
 
 ## Constants
 
@@ -502,7 +502,7 @@ Returns a list of locales for which BreakIterators can be used.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!>! | An array of Locales. All of the locales in the array can be used when creating a BreakIterator. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!>! | An array of Locales. All of the locales in the array can be used when creating a BreakIterator. |
 
 ### getCharacterInstance
 
@@ -516,7 +516,7 @@ Returns a new instance of BreakIterator that locates logical-character boundarie
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates logical-character boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates logical-character boundaries. |
 
 ### getCharacterInstance
 
@@ -530,11 +530,11 @@ open static fun getCharacterInstance(where: ULocale!): BreakIterator!
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:A Locale specifying the language of the text being analyzed. |
+| `where` | [ULocale](../android/icu/util/ULocale.md)!:A Locale specifying the language of the text being analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates logical-character boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates logical-character boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -552,11 +552,11 @@ Returns a new instance of BreakIterator that locates logical-character boundarie
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:A Locale specifying the language of the text being analyzed. |
+| `where` | [Locale](../java/util/Locale.md)!:A Locale specifying the language of the text being analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates logical-character boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates logical-character boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -574,7 +574,7 @@ Returns a new instance of BreakIterator that locates legal line- wrapping positi
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates legal line-wrapping positions. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates legal line-wrapping positions. |
 
 ### getLineInstance
 
@@ -588,11 +588,11 @@ open static fun getLineInstance(where: ULocale!): BreakIterator!
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:A Locale specifying the language of the text being broken. |
+| `where` | [ULocale](../android/icu/util/ULocale.md)!:A Locale specifying the language of the text being broken. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates legal line-wrapping positions. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates legal line-wrapping positions. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -610,11 +610,11 @@ Returns a new instance of BreakIterator that locates legal line- wrapping positi
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:A Locale specifying the language of the text being broken. |
+| `where` | [Locale](../java/util/Locale.md)!:A Locale specifying the language of the text being broken. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates legal line-wrapping positions. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates legal line-wrapping positions. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -672,7 +672,7 @@ Returns a new instance of BreakIterator that locates sentence boundaries. This f
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates sentence boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates sentence boundaries. |
 
 ### getSentenceInstance
 
@@ -686,11 +686,11 @@ open static fun getSentenceInstance(where: ULocale!): BreakIterator!
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:A Locale specifying the language of the text being analyzed. |
+| `where` | [ULocale](../android/icu/util/ULocale.md)!:A Locale specifying the language of the text being analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates sentence boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates sentence boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -708,11 +708,11 @@ Returns a new instance of BreakIterator that locates sentence boundaries.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:A Locale specifying the language of the text being analyzed. |
+| `where` | [Locale](../java/util/Locale.md)!:A Locale specifying the language of the text being analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates sentence boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates sentence boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -734,7 +734,7 @@ The returned CharacterIterator is a reference to the**actual iterator being used
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)! | A CharacterIterator over the text being analyzed. |
+| [CharacterIterator](../java/text/CharacterIterator.md)! | A CharacterIterator over the text being analyzed. |
 
 ### getTitleInstance
 
@@ -751,7 +751,7 @@ open static fun getTitleInstance(): BreakIterator!
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates title boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates title boundaries. |
 
 ### getTitleInstance
 
@@ -768,11 +768,11 @@ open static fun getTitleInstance(where: ULocale!): BreakIterator!
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:A Locale specifying the language of the text being analyzed. |
+| `where` | [ULocale](../android/icu/util/ULocale.md)!:A Locale specifying the language of the text being analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates title boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates title boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -793,11 +793,11 @@ open static fun getTitleInstance(where: Locale!): BreakIterator!
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:A Locale specifying the language of the text being analyzed. |
+| `where` | [Locale](../java/util/Locale.md)!:A Locale specifying the language of the text being analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | A new instance of BreakIterator that locates title boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | A new instance of BreakIterator that locates title boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -815,7 +815,7 @@ Returns a new instance of BreakIterator that locates word boundaries. This funct
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | An instance of BreakIterator that locates word boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | An instance of BreakIterator that locates word boundaries. |
 
 ### getWordInstance
 
@@ -829,11 +829,11 @@ open static fun getWordInstance(where: ULocale!): BreakIterator!
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:A locale specifying the language of the text to be analyzed. |
+| `where` | [ULocale](../android/icu/util/ULocale.md)!:A locale specifying the language of the text to be analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | An instance of BreakIterator that locates word boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | An instance of BreakIterator that locates word boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -851,11 +851,11 @@ Returns a new instance of BreakIterator that locates word boundaries.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `where` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:A locale specifying the language of the text to be analyzed. |
+| `where` | [Locale](../java/util/Locale.md)!:A locale specifying the language of the text to be analyzed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [BreakIterator](https://developer.android.com/reference/kotlin/android/icu/text/BreakIterator#)! | An instance of BreakIterator that locates word boundaries. |
+| [BreakIterator](../android/icu/text/BreakIterator.md)! | An instance of BreakIterator that locates word boundaries. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -1001,4 +1001,4 @@ Sets the iterator to analyze a new piece of text. This function resets the curre
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newText` | [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#)!:A CharacterIterator referring to the text to analyze with this BreakIterator (the iterator's current position is ignored, but its other state is significant). |
+| `newText` | [CharacterIterator](../java/text/CharacterIterator.md)!:A CharacterIterator referring to the text to analyze with this BreakIterator (the iterator's current position is ignored, but its other state is significant). |

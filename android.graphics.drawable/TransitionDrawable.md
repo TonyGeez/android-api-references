@@ -8,9 +8,9 @@ open class TransitionDrawable : LayerDrawable, Drawable.Callback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
-| | ↳ | [android.graphics.drawable.LayerDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable) ||
-| | | ↳ | [android.graphics.drawable.TransitionDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#) |
+| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) |||
+| | ↳ | [android.graphics.drawable.LayerDrawable](../android/graphics/drawable/LayerDrawable.md) ||
+| | | ↳ | [android.graphics.drawable.TransitionDrawable](../android/graphics/drawable/TransitionDrawable.md) |
 | --- | --- | --- | --- |
 
 An extension of LayerDrawables that is intended to cross-fade between the first and second layer. To start the transition, call `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#startTransition(kotlin.Int)`. To display just the first layer, call `https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#resetTransition()`.
@@ -21,13 +21,13 @@ It can be defined in an XML file with the `<transition>` element. Each Drawable 
 
 | XML attributes ||
 |---|---|
-| [`android:bottom`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Bottom inset to apply to the layer. |
-| [`android:drawable`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Drawable used to render the layer. |
-| [`android:id`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Identifier of the layer. |
+| [`android:bottom`](../android/graphics/drawable/TransitionDrawable.md) | Bottom inset to apply to the layer. |
+| [`android:drawable`](../android/graphics/drawable/TransitionDrawable.md) | Drawable used to render the layer. |
+| [`android:id`](../android/graphics/drawable/TransitionDrawable.md) | Identifier of the layer. |
 | --- | --- |
-| [`android:left`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Left inset to apply to the layer. |
-| [`android:right`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Right inset to apply to the layer. |
-| [`android:top`](https://developer.android.com/reference/kotlin/android/graphics/drawable/TransitionDrawable#attr_TransitionDrawable) | Top inset to apply to the layer. |
+| [`android:left`](../android/graphics/drawable/TransitionDrawable.md) | Left inset to apply to the layer. |
+| [`android:right`](../android/graphics/drawable/TransitionDrawable.md) | Right inset to apply to the layer. |
+| [`android:top`](../android/graphics/drawable/TransitionDrawable.md) | Top inset to apply to the layer. |
 | --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable` `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#attr_LayerDrawable` Bottom inset to apply to the layer.
@@ -952,7 +952,7 @@ Draw in its bounds (set via setBounds) respecting optional effects such as alpha
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): The canvas to draw into. This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): The canvas to draw into. This value cannot be `null`. |
 
 ### isCrossFadeEnabled
 

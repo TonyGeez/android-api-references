@@ -9,9 +9,9 @@ class OxygenSaturationRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.OxygenSaturationRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OxygenSaturationRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.OxygenSaturationRecord](../android/health/connect/datatypes/OxygenSaturationRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the amount of oxygen circulating in the blood, measured as a percentage of oxygen-saturated hemoglobin. Each record represents a single blood oxygen saturation reading at the time of measurement.
@@ -29,7 +29,7 @@ Captures the amount of oxygen circulating in the blood, measured as a percentage
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OxygenSaturationRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Percentage](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OxygenSaturationRecord#getPercentage()()` <br /> |
+| [Percentage](../android/health/connect/datatypes/units/Percentage.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OxygenSaturationRecord#getPercentage()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/OxygenSaturationRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 

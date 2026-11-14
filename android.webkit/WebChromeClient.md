@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # WebChromeClient
 
-Kotlin | [Java](https://developer.android.com/reference/android/webkit/WebChromeClient "View this page in Java")
+Kotlin | [Java](../android/webkit/WebChromeClient.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class WebChromeClient
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.WebChromeClient](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#) |
+| ↳ | [android.webkit.WebChromeClient](../android/webkit/WebChromeClient.md) |
 
 ## Summary
 
@@ -26,8 +26,8 @@ open class WebChromeClient
 
 | Public methods ||
 |---|---|
-| open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getDefaultVideoPoster()()` When not playing, video elements are represented by a 'poster' image. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)? | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getVideoLoadingProgressView()()` Obtains a View to be displayed while buffering of full screen video is taking place. |
+| open [Bitmap](../android/graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getDefaultVideoPoster()()` When not playing, video elements are represented by a 'poster' image. |
+| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getVideoLoadingProgressView()()` Obtains a View to be displayed while buffering of full screen video is taking place. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getVisitedHistory(android.webkit.ValueCallback)(callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>!)` Obtains a list of all visited history items, used for link coloring |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onCloseWindow(android.webkit.WebView)(window: https://developer.android.com/reference/kotlin/android/webkit/WebView!)` Notify the host application to close the given WebView and remove it from the view system if necessary. |
@@ -123,7 +123,7 @@ As with `https://developer.android.com/reference/kotlin/android/webkit/WebChrome
 
 | Parameters ||
 |---|---|
-| `window` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that needs to be closed. |
+| `window` | [WebView](../android/webkit/WebView.md)!: The WebView that needs to be closed. |
 
 ### onConsoleMessage
 
@@ -137,7 +137,7 @@ Report a JavaScript console message to the host application. The ChromeClient sh
 
 | Parameters ||
 |---|---|
-| `consoleMessage` | [ConsoleMessage](https://developer.android.com/reference/kotlin/android/webkit/ConsoleMessage)!: Object containing details of the console message. |
+| `consoleMessage` | [ConsoleMessage](../android/webkit/ConsoleMessage.md)!: Object containing details of the console message. |
 
 | Return ||
 |---|---|
@@ -190,11 +190,11 @@ Applications should be careful how they display the new window: don't simply ove
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView from which the request for a new window originated. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView from which the request for a new window originated. |
 | `isDialog` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the new window should be a dialog, rather than a full-size window. |
 | `isUserGesture` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the request was initiated by a user gesture, such as the user clicking a link. |
 | --- | --- |
-| `resultMsg` | [Message](https://developer.android.com/reference/kotlin/android/os/Message.html#)!: The message to send when once a new WebView has been created. resultMsg.obj is a `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport` object. This should be used to transport the new WebView, by calling `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport#setWebView(android.webkit.WebView)`. |
+| `resultMsg` | [Message](../android/os/Message.md)!: The message to send when once a new WebView has been created. resultMsg.obj is a `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport` object. This should be used to transport the new WebView, by calling `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport#setWebView(android.webkit.WebView)`. |
 
 | Return ||
 |---|---|
@@ -228,7 +228,7 @@ Tell the client that the quota has been exceeded for the Web SQL Database API fo
 | --- | --- |
 | `estimatedDatabaseSize` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The estimated size of the offending database, in bytes |
 | `totalQuota` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The total quota for all origins, in bytes |
-| `quotaUpdater` | [WebStorage.QuotaUpdater](https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater)!: An instance of `https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater` which must be used to inform the WebView of the new quota. |
+| `quotaUpdater` | [WebStorage.QuotaUpdater](../android/webkit/WebStorage.QuotaUpdater.md)!: An instance of `https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater` which must be used to inform the WebView of the new quota. |
 | --- | --- |
 
 ### onGeolocationPermissionsHidePrompt
@@ -259,7 +259,7 @@ Note that for applications targeting Android N and later SDKs (API level \> `htt
 | Parameters ||
 |---|---|
 | `origin` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The origin of the web content attempting to use the Geolocation API. |
-| `callback` | [GeolocationPermissions.Callback](https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions.Callback)!: The callback to use to set the permission state for the origin. |
+| `callback` | [GeolocationPermissions.Callback](../android/webkit/GeolocationPermissions.Callback.md)!: The callback to use to set the permission state for the origin. |
 
 ### onHideCustomView
 
@@ -300,11 +300,11 @@ Note that the default dialog does not inherit the `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The url of the page requesting the dialog. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Message to be displayed in the window. |
 | --- | --- |
-| `result` | [JsResult](https://developer.android.com/reference/kotlin/android/webkit/JsResult)!: A JsResult to confirm that the user closed the window. |
+| `result` | [JsResult](../android/webkit/JsResult.md)!: A JsResult to confirm that the user closed the window. |
 
 | Return ||
 |---|---|
@@ -337,11 +337,11 @@ Note that the default dialog does not inherit the `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The url of the page requesting the dialog. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Message to be displayed in the window. |
 | --- | --- |
-| `result` | [JsResult](https://developer.android.com/reference/kotlin/android/webkit/JsResult)!: A JsResult used to send the user's response to javascript. |
+| `result` | [JsResult](../android/webkit/JsResult.md)!: A JsResult used to send the user's response to javascript. |
 
 | Return ||
 |---|---|
@@ -374,11 +374,11 @@ Note that the default dialog does not inherit the `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The url of the page requesting the dialog. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Message to be displayed in the window. |
 | --- | --- |
-| `result` | [JsResult](https://developer.android.com/reference/kotlin/android/webkit/JsResult)!: A JsResult used to send the user's response to javascript. |
+| `result` | [JsResult](../android/webkit/JsResult.md)!: A JsResult used to send the user's response to javascript. |
 
 | Return ||
 |---|---|
@@ -412,12 +412,12 @@ Note that the default dialog does not inherit the `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The url of the page requesting the dialog. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Message to be displayed in the window. |
 | --- | --- |
 | `defaultValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The default value displayed in the prompt dialog. |
-| `result` | [JsPromptResult](https://developer.android.com/reference/kotlin/android/webkit/JsPromptResult)!: A JsPromptResult used to send the user's reponse to javascript. |
+| `result` | [JsPromptResult](../android/webkit/JsPromptResult.md)!: A JsPromptResult used to send the user's reponse to javascript. |
 
 | Return ||
 |---|---|
@@ -452,7 +452,7 @@ Notify the host application that web content is requesting permission to access 
 
 | Parameters ||
 |---|---|
-| `request` | [PermissionRequest](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest)!: the PermissionRequest from current web content. |
+| `request` | [PermissionRequest](../android/webkit/PermissionRequest.md)!: the PermissionRequest from current web content. |
 
 ### onPermissionRequestCanceled
 
@@ -466,7 +466,7 @@ Notify the host application that the given permission request has been canceled.
 
 | Parameters ||
 |---|---|
-| `request` | [PermissionRequest](https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest)!: the PermissionRequest that needs be canceled. |
+| `request` | [PermissionRequest](../android/webkit/PermissionRequest.md)!: the PermissionRequest that needs be canceled. |
 
 ### onProgressChanged
 
@@ -483,7 +483,7 @@ Tell the host application the current progress of loading a page.
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
 | `newProgress` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Current page loading progress, represented by an integer between 0 and 100. |
 
 ### onReceivedIcon
@@ -501,8 +501,8 @@ Notify the host application of a new favicon for the current page.
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
-| `icon` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: A Bitmap containing the favicon for the current page. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
+| `icon` | [Bitmap](../android/graphics/Bitmap.md)!: A Bitmap containing the favicon for the current page. |
 
 ### onReceivedTitle
 
@@ -519,7 +519,7 @@ Notify the host application of a change in the document title.
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
 | `title` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A String containing the new title of the document. |
 
 ### onReceivedTouchIconUrl
@@ -538,7 +538,7 @@ Notify the host application of the url for an apple-touch-icon.
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that initiated the callback. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that initiated the callback. |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The icon url. |
 | `precomposed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the url is for a precomposed touch icon. |
 | --- | --- |
@@ -555,7 +555,7 @@ Request display and focus for this WebView. This may happen due to another WebVi
 
 | Parameters ||
 |---|---|
-| `view` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView that needs to be focused. |
+| `view` | [WebView](../android/webkit/WebView.md)!: The WebView that needs to be focused. |
 
 ### onShowCustomView
 
@@ -578,8 +578,8 @@ If this method is not overridden, WebView will report to the web page it does no
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: is the View object to be shown. |
-| `callback` | [WebChromeClient.CustomViewCallback](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.CustomViewCallback)!: invoke this callback to request the page to exit full screen mode. |
+| `view` | [View](../android/view/View.md)!: is the View object to be shown. |
+| `callback` | [WebChromeClient.CustomViewCallback](../android/webkit/WebChromeClient.CustomViewCallback.md)!: invoke this callback to request the page to exit full screen mode. |
 
 ### onShowCustomView
 
@@ -600,9 +600,9 @@ Notify the host application that the current page would like to show a custom Vi
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: is the View object to be shown. |
+| `view` | [View](../android/view/View.md)!: is the View object to be shown. |
 | `requestedOrientation` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An orientation constant as used in `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#screenOrientation:kotlin.Int`. |
-| `callback` | [WebChromeClient.CustomViewCallback](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.CustomViewCallback)!: is the callback to be invoked if and when the view is dismissed. |
+| `callback` | [WebChromeClient.CustomViewCallback](../android/webkit/WebChromeClient.CustomViewCallback.md)!: is the callback to be invoked if and when the view is dismissed. |
 | --- | --- |
 
 ### onShowFileChooser
@@ -629,9 +629,9 @@ The default behavior is that WebView will cancel all file requests.
 
 | Parameters ||
 |---|---|
-| `webView` | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView)!: The WebView instance that is initiating the request. |
-| `filePathCallback` | [ValueCallback](https://developer.android.com/reference/kotlin/android/webkit/ValueCallback)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>!\>!: Invoke this callback to supply the list of paths to files to upload, or `null` to cancel. Must only be called if the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowFileChooser(android.webkit.WebView,%20android.webkit.ValueCallback,%20android.webkit.WebChromeClient.FileChooserParams)` implementation returns `true`. |
-| `fileChooserParams` | [WebChromeClient.FileChooserParams](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.FileChooserParams)!: Describes the mode of file chooser to be opened, and options to be used with it. |
+| `webView` | [WebView](../android/webkit/WebView.md)!: The WebView instance that is initiating the request. |
+| `filePathCallback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](../android/net/Uri.md)!\>!\>!: Invoke this callback to supply the list of paths to files to upload, or `null` to cancel. Must only be called if the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowFileChooser(android.webkit.WebView,%20android.webkit.ValueCallback,%20android.webkit.WebChromeClient.FileChooserParams)` implementation returns `true`. |
+| `fileChooserParams` | [WebChromeClient.FileChooserParams](../android/webkit/WebChromeClient.FileChooserParams.md)!: Describes the mode of file chooser to be opened, and options to be used with it. |
 | --- | --- |
 
 | Return ||

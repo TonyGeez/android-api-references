@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # UriMatcher
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/UriMatcher "View this page in Java") 
+Kotlin| [Java](../android/content/UriMatcher.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UriMatcher
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.UriMatcher](https://developer.android.com/reference/kotlin/android/content/UriMatcher#) |
+| ↳ | [android.content.UriMatcher](../android/content/UriMatcher.md) |
 
 Utility class to aid in matching URIs in content providers.
 
@@ -63,14 +63,14 @@ private static final int PEOPLE = 1;
  
 ```
 
-Starting from API level [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int), paths can start with a leading slash. For example: 
+Starting from API level [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](../android/os/Build.VERSION_CODES.md), paths can start with a leading slash. For example: 
 
 ```kotlin
 sURIMatcher.addURI("contacts", "/people", PEOPLE);
  
 ```
 
-Then when you need to match against a URI, call [match](https://developer.android.com/reference/kotlin/android/content/UriMatcher#match(android.net.Uri)), providing the URL that you have been given. You can use the result to build a query, return a type, insert or delete a row, or whatever you need, without duplicating all of the if-else logic that you would otherwise need. For example: 
+Then when you need to match against a URI, call [match](../android/content/UriMatcher.md)), providing the URL that you have been given. You can use the result to build a query, return a type, insert or delete a row, or whatever you need, without duplicating all of the if-else logic that you would otherwise need. For example: 
 
 ```kotlin
 public String getType(Uri url)
@@ -122,16 +122,16 @@ public String getType(Uri url)
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_MATCH](https://developer.android.com/reference/kotlin/android/content/UriMatcher#NO_MATCH:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_MATCH](../android/content/UriMatcher.md) <br /> |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UriMatcher](https://developer.android.com/reference/kotlin/android/content/UriMatcher#UriMatcher(kotlin.Int))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates the root node of the URI tree. |
+| [UriMatcher](../android/content/UriMatcher.md))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates the root node of the URI tree. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addURI](https://developer.android.com/reference/kotlin/android/content/UriMatcher#addURI(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a URI to match, and the code to return when this URI is matched. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [match](https://developer.android.com/reference/kotlin/android/content/UriMatcher#match(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Try to match against the path in a url. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addURI](../android/content/UriMatcher.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a URI to match, and the code to return when this URI is matched. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [match](../android/content/UriMatcher.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Try to match against the path in a url. |
 
 ## Constants
 
@@ -177,7 +177,7 @@ open fun addURI(
 
 Add a URI to match, and the code to return when this URI is matched. URI nodes may be exact match string, the token "\*" that matches any text, or the token "#" that matches only numbers.
 
-Starting from API level [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int), this method will accept a leading slash in the path.
+Starting from API level [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](../android/os/Build.VERSION_CODES.md), this method will accept a leading slash in the path.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -198,7 +198,7 @@ Try to match against the path in a url.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:The url whose path we will match against. |
+| `uri` | [Uri](../android/net/Uri.md)!:The url whose path we will match against. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

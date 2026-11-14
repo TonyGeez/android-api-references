@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # SidePropagation
 
-Kotlin | [Java](https://developer.android.com/reference/android/transition/SidePropagation "View this page in Java")
+Kotlin | [Java](../android/transition/SidePropagation.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class SidePropagation : VisibilityPropagation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.transition.TransitionPropagation](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation) |||
-| | ↳ | [android.transition.VisibilityPropagation](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation) ||
-| | | ↳ | [android.transition.SidePropagation](https://developer.android.com/reference/kotlin/android/transition/SidePropagation#) |
+| ↳ | [android.transition.TransitionPropagation](../android/transition/TransitionPropagation.md) |||
+| | ↳ | [android.transition.VisibilityPropagation](../android/transition/VisibilityPropagation.md) ||
+| | | ↳ | [android.transition.SidePropagation](../android/transition/SidePropagation.md) |
 | --- | --- | --- | --- |
 
 A `TransitionPropagation` that propagates based on the distance to the side and, orthogonally, the distance to epicenter. If the transitioning View is visible in the start of the transition, then it will transition sooner when closer to the side and later when farther. If the view is not visible in the start of the transition, then it will transition later when closer to the side and sooner when farther from the edge. This is the default TransitionPropagation used with `https://developer.android.com/reference/kotlin/android/transition/Slide`.
@@ -63,11 +63,11 @@ Called by Transition to alter the Animator start delay. All start delays will be
 
 | Parameters ||
 |---|---|
-| `sceneRoot` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The root of the View hierarchy running the transition. |
-| `transition` | [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!: The transition that created the Animator |
-| `startValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The values for a specific target in the start scene. |
+| `sceneRoot` | [ViewGroup](../android/view/ViewGroup.md)!: The root of the View hierarchy running the transition. |
+| `transition` | [Transition](../android/transition/Transition.md)!: The transition that created the Animator |
+| `startValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The values for a specific target in the start scene. |
 | --- | --- |
-| `endValues` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!: The values for the target in the end scene. |
+| `endValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The values for the target in the end scene. |
 
 | Return ||
 |---|---|

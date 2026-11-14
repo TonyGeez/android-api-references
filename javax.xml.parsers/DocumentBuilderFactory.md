@@ -8,7 +8,7 @@ abstract class DocumentBuilderFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.parsers.DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#) |
+| ↳ | [javax.xml.parsers.DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md) |
 
 Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents.
 
@@ -22,7 +22,7 @@ Defines a factory API that enables applications to obtain a parser that produces
 |---|---|
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#getAttribute(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Allows the user to retrieve specific attributes on the underlying implementation. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#getFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get the state of the named feature. |
-| open [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#getSchema()()` Gets the `https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#` object specified through the `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#setSchema(javax.xml.validation.Schema)` method. |
+| open [Schema](../javax/xml/validation/Schema.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#getSchema()()` Gets the `https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#` object specified through the `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#setSchema(javax.xml.validation.Schema)` method. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#isCoalescing()()` Indicates whether or not the factory is configured to produce parsers which converts CDATA nodes to Text nodes and appends it to the adjacent (if any) Text node. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#isExpandEntityReferences()()` Indicates whether or not the factory is configured to produce parsers which expand entity reference nodes. |
@@ -33,15 +33,15 @@ Defines a factory API that enables applications to obtain a parser that produces
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#isValidating()()` Indicates whether or not the factory is configured to produce parsers which validate the XML content during parse. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#isXIncludeAware()()` Get state of XInclude processing. |
-| open static [DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newDefaultInstance()()` Creates a new instance of the `DocumentBuilderFactory` builtin system-default implementation. |
-| open static [DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newDefaultNSInstance()()` Creates a new NamespaceAware instance of the `DocumentBuilderFactory` builtin system-default implementation. |
+| open static [DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newDefaultInstance()()` Creates a new instance of the `DocumentBuilderFactory` builtin system-default implementation. |
+| open static [DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newDefaultNSInstance()()` Creates a new NamespaceAware instance of the `DocumentBuilderFactory` builtin system-default implementation. |
 | --- | --- |
-| abstract [DocumentBuilder](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newDocumentBuilder()()` Creates a new instance of a `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder` using the currently configured parameters. |
-| open static [DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newInstance()()` Returns Android's implementation of `DocumentBuilderFactory`. |
-| open static [DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newInstance(kotlin.String,%20java.lang.ClassLoader)(factoryClassName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, classLoader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Returns an instance of the named implementation of `DocumentBuilderFactory`. |
+| abstract [DocumentBuilder](../javax/xml/parsers/DocumentBuilder.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newDocumentBuilder()()` Creates a new instance of a `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder` using the currently configured parameters. |
+| open static [DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newInstance()()` Returns Android's implementation of `DocumentBuilderFactory`. |
+| open static [DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newInstance(kotlin.String,%20java.lang.ClassLoader)(factoryClassName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, classLoader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Returns an instance of the named implementation of `DocumentBuilderFactory`. |
 | --- | --- |
-| open static [DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newNSInstance()()` Creates a new NamespaceAware, Android-specific instance of a `DocumentBuilderFactory`. |
-| open static [DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newNSInstance(kotlin.String,%20java.lang.ClassLoader)(factoryClassName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, classLoader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Creates a new NamespaceAware instance of a `DocumentBuilderFactory` from the class name. |
+| open static [DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newNSInstance()()` Creates a new NamespaceAware, Android-specific instance of a `DocumentBuilderFactory`. |
+| open static [DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newNSInstance(kotlin.String,%20java.lang.ClassLoader)(factoryClassName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, classLoader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Creates a new NamespaceAware instance of a `DocumentBuilderFactory` from the class name. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#setAttribute(kotlin.String,%20kotlin.Any)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Allows the user to set specific attributes on the underlying implementation. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#setCoalescing(kotlin.Boolean)(coalescing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies that the parser produced by this code will convert CDATA nodes to Text nodes and append it to the adjacent (if any) text node. |
@@ -342,7 +342,7 @@ Creates a new NamespaceAware instance of a `DocumentBuilderFactory` from the cla
 | Parameters ||
 |---|---|
 | `factoryClassName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a fully qualified factory class name that provides implementation of `javax.xml.parsers.DocumentBuilderFactory`. |
-| `classLoader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!: the `ClassLoader` used to load the factory class. If it is `null`, the current `Thread`'s context classLoader is used to load the factory class. |
+| `classLoader` | [ClassLoader](../java/lang/ClassLoader.md)!: the `ClassLoader` used to load the factory class. If it is `null`, the current `Thread`'s context classLoader is used to load the factory class. |
 
 | Return ||
 |---|---|
@@ -499,7 +499,7 @@ A parser must be able to work with any `https://developer.android.com/reference/
 
 | Parameters ||
 |---|---|
-| `schema` | [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#)!: `Schema` to use or `null` to remove a schema. |
+| `schema` | [Schema](../javax/xml/validation/Schema.md)!: `Schema` to use or `null` to remove a schema. |
 
 | Exceptions ||
 |---|---|
@@ -515,7 +515,7 @@ open fun setValidating(validating: Boolean): Unit
 
 Specifies that the parser produced by this code will validate documents as they are parsed. By default the value of this is set to `false`.
 
-Note that "the validation" here means [a validating parser](http://www.w3.org/TR/REC-xml#proc-types) as defined in the XML recommendation. In other words, it essentially just controls the DTD validation. (except the legacy two properties defined in JAXP 1.2. See [here](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#validationCompatibility) for more details.)
+Note that "the validation" here means [a validating parser](http://www.w3.org/TR/REC-xml#proc-types) as defined in the XML recommendation. In other words, it essentially just controls the DTD validation. (except the legacy two properties defined in JAXP 1.2. See [here](../javax/xml/parsers/DocumentBuilderFactory.md) for more details.)
 
 To use modern schema languages such as W3C XML Schema or RELAX NG instead of DTD, you can configure your parser to be a non-validating parser by leaving the `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#setValidating(kotlin.Boolean)` method false, then use the `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#setSchema(javax.xml.validation.Schema)` method to associate a schema to a parser.
 

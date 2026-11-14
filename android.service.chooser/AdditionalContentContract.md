@@ -4,22 +4,22 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # AdditionalContentContract
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/chooser/AdditionalContentContract "View this page in Java") 
+Kotlin| [Java](../android/service/chooser/AdditionalContentContract.md) 
 | --- | --- |
 
 ```
 interface AdditionalContentContract
 ```
 
-| [android.service.chooser.AdditionalContentContract](https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract#) |
+| [android.service.chooser.AdditionalContentContract](../android/service/chooser/AdditionalContentContract.md) |
 
-Specifies constants used by Chooser when interacting with the additional content provider, see [android.content.Intent#EXTRA_CHOOSER_ADDITIONAL_CONTENT_URI](https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_ADDITIONAL_CONTENT_URI:kotlin.String).
+Specifies constants used by Chooser when interacting with the additional content provider, see [android.content.Intent#EXTRA_CHOOSER_ADDITIONAL_CONTENT_URI](../android/content/Intent.md).
 
 ## Summary
 
 | Nested classes ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Columns](https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.Columns) <br /> |
-| abstract | [CursorExtraKeys](https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.CursorExtraKeys) Constants for [android.database.Cursor#getExtras](https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras())keys. |
-| abstract | [MethodNames](https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.MethodNames) Constants for method names used with android. |
+| abstract | [Columns](../android/service/chooser/AdditionalContentContract.Columns.md) <br /> |
+| abstract | [CursorExtraKeys](../android/service/chooser/AdditionalContentContract.CursorExtraKeys.md) Constants for [android.database.Cursor#getExtras](../android/database/Cursor.md))keys. |
+| abstract | [MethodNames](../android/service/chooser/AdditionalContentContract.MethodNames.md) Constants for method names used with android. |
 | --- | --- |

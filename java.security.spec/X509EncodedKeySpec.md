@@ -10,8 +10,8 @@ open class X509EncodedKeySpec : EncodedKeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.spec.EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec) ||
-| | ↳ | [java.security.spec.X509EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/X509EncodedKeySpec#) |
+| ↳ | [java.security.spec.EncodedKeySpec](../java/security/spec/EncodedKeySpec.md) ||
+| | ↳ | [java.security.spec.X509EncodedKeySpec](../java/security/spec/X509EncodedKeySpec.md) |
 
 This class represents the ASN.1 encoding of a public key, encoded according to the ASN.1 type`SubjectPublicKeyInfo`. The`SubjectPublicKeyInfo`syntax is defined in the X.509 standard as follows: 
 
@@ -28,17 +28,17 @@ SubjectPublicKeyInfo ::= SEQUENCE {
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [X509EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/X509EncodedKeySpec#X509EncodedKeySpec(kotlin.ByteArray))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a new`X509EncodedKeySpec`with the given encoded key. |
-| [X509EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/X509EncodedKeySpec#X509EncodedKeySpec(kotlin.ByteArray,%20kotlin.String))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`X509EncodedKeySpec`with the given encoded key. |
+| [X509EncodedKeySpec](../java/security/spec/X509EncodedKeySpec.md))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a new`X509EncodedKeySpec`with the given encoded key. |
+| [X509EncodedKeySpec](../java/security/spec/X509EncodedKeySpec.md))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`X509EncodedKeySpec`with the given encoded key. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/spec/X509EncodedKeySpec#getEncoded())`()` Returns the key bytes, encoded according to the X. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormat](https://developer.android.com/reference/kotlin/java/security/spec/X509EncodedKeySpec#getFormat())`()` Returns the name of the encoding format associated with this key specification. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/spec/X509EncodedKeySpec.md))`()` Returns the key bytes, encoded according to the X. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormat](../java/security/spec/X509EncodedKeySpec.md))`()` Returns the name of the encoding format associated with this key specification. |
 
 | Inherited functions ||
 |---|---|
-| From class [EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec) |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec#getAlgorithm())`()` <br /> Returns the name of the algorithm of the encoded key. <br /> | ||
+| From class [EncodedKeySpec](../java/security/spec/EncodedKeySpec.md) |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/spec/EncodedKeySpec.md))`()` <br /> Returns the name of the algorithm of the encoded key. <br /> | ||
 
 ## Public constructors
 

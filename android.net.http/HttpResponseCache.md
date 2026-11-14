@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # HttpResponseCache
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/http/HttpResponseCache "View this page in Java") 
+Kotlin| [Java](../android/net/http/HttpResponseCache.md) 
 | --- | --- |
 
 ```
@@ -13,14 +13,14 @@ class HttpResponseCache : ResponseCache, Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.net.ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache.html#) ||
-| | ↳ | [android.net.http.HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#) |
+| ↳ | [java.net.ResponseCache](../java/net/ResponseCache.md) ||
+| | ↳ | [android.net.http.HttpResponseCache](../android/net/http/HttpResponseCache.md) |
 
-Caches HTTP and HTTPS responses to the filesystem so they may be reused, saving time and bandwidth. This class supports and [javax.net.ssl.HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#); there is no platform-provided cache for`DefaultHttpClient`or`AndroidHttpClient`. Installation and instances are thread safe.
+Caches HTTP and HTTPS responses to the filesystem so they may be reused, saving time and bandwidth. This class supports and [javax.net.ssl.HttpsURLConnection](../javax/net/ssl/HttpsURLConnection.md); there is no platform-provided cache for`DefaultHttpClient`or`AndroidHttpClient`. Installation and instances are thread safe.
 
 ### Installing an HTTP response cache
 
-Enable caching of all of your application's HTTP requests by installing the cache at application startup. For example, this code installs a 10 MiB cache in the [application-specific](https://developer.android.com/reference/kotlin/android/content/Context.html#getCacheDir())of the filesystem}: 
+Enable caching of all of your application's HTTP requests by installing the cache at application startup. For example, this code installs a 10 MiB cache in the [application-specific](../android/content/Context.md))of the filesystem}: 
 
 ```kotlin
 <code>protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,7 @@ This cache will evict entries as necessary to keep its size from exceeding 10 Mi
 
 <br />
 
-For some applications it may be preferable to create the cache in the external storage directory.**There are no access controls on the external storage directory so it should not be used for caches that could contain private data.** Although it often has more free space, external storage is optional and---even if available---can disappear during use. Retrieve the external cache directory using [android.content.Context#getExternalCacheDir()](https://developer.android.com/reference/kotlin/android/content/Context.html#getExternalCacheDir()). If this method returns null, your application should fall back to either not caching or caching on non-external storage. If the external storage is removed during use, the cache hit rate will drop to zero and ongoing cache reads will fail.
+For some applications it may be preferable to create the cache in the external storage directory.**There are no access controls on the external storage directory so it should not be used for caches that could contain private data.** Although it often has more free space, external storage is optional and---even if available---can disappear during use. Retrieve the external cache directory using [android.content.Context#getExternalCacheDir()](../android/content/Context.md)). If this method returns null, your application should fall back to either not caching or caching on non-external storage. If the external storage is removed during use, the cache hit rate will drop to zero and ongoing cache reads will fail.
 
 Flushing the cache forces its data to the filesystem. This ensures that all responses written to the cache will be readable the next time the activity starts.
 
@@ -56,9 +56,9 @@ Flushing the cache forces its data to the filesystem. This ensures that all resp
 
 To measure cache effectiveness, this class tracks three statistics:
 
-- ** [Request Count:](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getRequestCount())**the number of HTTP requests issued since this cache was created.
-- ** [Network Count:](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getNetworkCount())**the number of those requests that required network use.
-- ** [Hit Count:](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getHitCount())**the number of those requests whose responses were served by the cache.
+- ** [Request Count:](../android/net/http/HttpResponseCache.md))**the number of HTTP requests issued since this cache was created.
+- ** [Network Count:](../android/net/http/HttpResponseCache.md))**the number of those requests that required network use.
+- ** [Hit Count:](../android/net/http/HttpResponseCache.md))**the number of those requests whose responses were served by the cache.
 
 Sometimes a request will result in a conditional cache hit. If the cache contains a stale copy of the response, the client will issue a conditional`GET`. The server will then send either the updated response if it has changed, or a short 'not modified' response if the client's copy is still valid. Such responses increment both the network count and hit count.
 
@@ -120,26 +120,26 @@ This class was added in Android 4.0 (Ice Cream Sandwich). Use reflection to enab
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#close())`()` Uninstalls the cache and releases any active resources. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [delete](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#delete())`()` Uninstalls the cache and deletes all of its stored contents. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#flush())`()` Force buffered operations to the filesystem. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/net/http/HttpResponseCache.md))`()` Uninstalls the cache and releases any active resources. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [delete](../android/net/http/HttpResponseCache.md))`()` Uninstalls the cache and deletes all of its stored contents. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../android/net/http/HttpResponseCache.md))`()` Force buffered operations to the filesystem. |
 | --- | --- |
-| [CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse.html#)! | [get](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#get(java.net.URI,%20kotlin.String,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`, `requestMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHitCount](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getHitCount())`()` Returns the number of HTTP requests whose response was provided by the cache. |
-| static [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#)! | [getInstalled](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getInstalled())`()` Returns the currently-installed`HttpResponseCache`, or null if there is no cache installed or it is not a`HttpResponseCache`. |
+| [CacheResponse](../java/net/CacheResponse.md)! | [get](../android/net/http/HttpResponseCache.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `requestMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHitCount](../android/net/http/HttpResponseCache.md))`()` Returns the number of HTTP requests whose response was provided by the cache. |
+| static [HttpResponseCache](../android/net/http/HttpResponseCache.md)! | [getInstalled](../android/net/http/HttpResponseCache.md))`()` Returns the currently-installed`HttpResponseCache`, or null if there is no cache installed or it is not a`HttpResponseCache`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkCount](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getNetworkCount())`()` Returns the number of HTTP requests that required the network to either supply a response or validate a locally cached response. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestCount](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#getRequestCount())`()` Returns the total number of HTTP requests that were made. |
-| static [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#)! | [install](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#install(java.io.File,%20kotlin.Long))`(`directory:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `maxSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new HTTP response cache and sets it as the system default cache. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkCount](../android/net/http/HttpResponseCache.md))`()` Returns the number of HTTP requests that required the network to either supply a response or validate a locally cached response. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestCount](../android/net/http/HttpResponseCache.md))`()` Returns the total number of HTTP requests that were made. |
+| static [HttpResponseCache](../android/net/http/HttpResponseCache.md)! | [install](../android/net/http/HttpResponseCache.md))`(`directory:` ` [File](../java/io/File.md)!`, `maxSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new HTTP response cache and sets it as the system default cache. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [maxSize](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#maxSize())`()` Returns the maximum number of bytes that this cache should use to store its data. |
-| [CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest.html#)! | [put](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#put(java.net.URI,%20java.net.URLConnection))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`, `urlConnection:` ` [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)!`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#size())`()` Returns the number of bytes currently being used to store the values in this cache. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [maxSize](../android/net/http/HttpResponseCache.md))`()` Returns the maximum number of bytes that this cache should use to store its data. |
+| [CacheRequest](../java/net/CacheRequest.md)! | [put](../android/net/http/HttpResponseCache.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `urlConnection:` ` [URLConnection](../java/net/URLConnection.md)!`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](../android/net/http/HttpResponseCache.md))`()` Returns the number of bytes currently being used to store the values in this cache. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache.html#) |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache.html#)! | [getDefault](https://developer.android.com/reference/kotlin/java/net/ResponseCache.html#getDefault())`()` <br /> Gets the system-wide response cache. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/java/net/ResponseCache.html#setDefault(java.net.ResponseCache))`(`responseCache:` ` [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache.html#)!`)` <br /> Sets (or unsets) the system-wide cache. Note: non-standard procotol handlers may ignore this setting. <br /> | ||
+| From class [ResponseCache](../java/net/ResponseCache.md) |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ResponseCache](../java/net/ResponseCache.md)! | [getDefault](../java/net/ResponseCache.md))`()` <br /> Gets the system-wide response cache. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../java/net/ResponseCache.md))`(`responseCache:` ` [ResponseCache](../java/net/ResponseCache.md)!`)` <br /> Sets (or unsets) the system-wide cache. Note: non-standard procotol handlers may ignore this setting. <br /> | ||
 
 ## Public methods
 
@@ -192,14 +192,14 @@ fun get(
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:a`URI`used to reference the requested network resource |
+| `uri` | [URI](../java/net/URI.md)!:a`URI`used to reference the requested network resource |
 | `rqstMethod` | a`String`representing the request method |
 | `rqstHeaders` | - a Map from request header field names to lists of field values representing the current request headers |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse.html#)! | a`CacheResponse`instance if available from cache, or null otherwise |
+| [CacheResponse](../java/net/CacheResponse.md)! | a`CacheResponse`instance if available from cache, or null otherwise |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -261,12 +261,12 @@ Creates a new HTTP response cache and sets it as the system default cache.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `directory` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:the directory to hold cache data. |
+| `directory` | [File](../java/io/File.md)!:the directory to hold cache data. |
 | `maxSize` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum size of the cache in bytes. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|---------------------------|
-| [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#)! | the newly-installed cache |
+| [HttpResponseCache](../android/net/http/HttpResponseCache.md)! | the newly-installed cache |
 
 | Exceptions ||
 |-----------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -295,12 +295,12 @@ fun put(
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:a`URI`used to reference the requested network resource |
+| `uri` | [URI](../java/net/URI.md)!:a`URI`used to reference the requested network resource |
 | `conn` | - a URLConnection instance that is used to fetch the response to be cached |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest.html#)! | a`CacheRequest`for recording the response to be cached. Null return indicates that the caller does not intend to cache the response. |
+| [CacheRequest](../java/net/CacheRequest.md)! | a`CacheRequest`for recording the response to be cached. Null return indicates that the caller does not intend to cache the response. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -315,4 +315,4 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun size(): Long
 ```
 
-Returns the number of bytes currently being used to store the values in this cache. This may be greater than the [maxSize](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache#maxSize())if a background deletion is pending.`-1`is returned if the size cannot be determined.
+Returns the number of bytes currently being used to store the values in this cache. This may be greater than the [maxSize](../android/net/http/HttpResponseCache.md))if a background deletion is pending.`-1`is returned if the size cannot be determined.

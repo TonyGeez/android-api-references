@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # HapticGenerator
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/audiofx/HapticGenerator "View this page in Java")
+Kotlin | [Java](../android/media/audiofx/HapticGenerator.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class HapticGenerator : AudioEffect, AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
-| | ↳ | [android.media.audiofx.HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#) |
+| ↳ | [android.media.audiofx.AudioEffect](../android/media/audiofx/AudioEffect.md) ||
+| | ↳ | [android.media.audiofx.HapticGenerator](../android/media/audiofx/HapticGenerator.md) |
 
 Haptic Generator(HG).
 
@@ -50,7 +50,7 @@ See `https://developer.android.com/reference/kotlin/android/media/audiofx/AudioE
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#close()()` Release the resources that are held by the effect. |
-| open static [HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#create(kotlin.Int)(audioSession: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a HapticGenerator and attaches it to the given audio session. |
+| open static [HapticGenerator](../android/media/audiofx/HapticGenerator.md) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#create(kotlin.Int)(audioSession: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a HapticGenerator and attaches it to the given audio session. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#isAvailable()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator#release()()` Releases the native AudioEffect resources. |

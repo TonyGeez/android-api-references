@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # VisibilityPropagation
 
-Kotlin| [Java](https://developer.android.com/reference/android/transition/VisibilityPropagation "View this page in Java") 
+Kotlin| [Java](../android/transition/VisibilityPropagation.md) 
 | --- | --- |
 
 ```
@@ -13,10 +13,10 @@ abstract class VisibilityPropagation : TransitionPropagation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.transition.TransitionPropagation](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation) ||
-| | ↳ | [android.transition.VisibilityPropagation](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation#) |
+| ↳ | [android.transition.TransitionPropagation](../android/transition/TransitionPropagation.md) ||
+| | ↳ | [android.transition.VisibilityPropagation](../android/transition/VisibilityPropagation.md) |
 
-| Known Direct Subclasses [CircularPropagation](https://developer.android.com/reference/kotlin/android/transition/CircularPropagation), [SidePropagation](https://developer.android.com/reference/kotlin/android/transition/SidePropagation) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [CircularPropagation](https://developer.android.com/reference/kotlin/android/transition/CircularPropagation) | A propagation that varies with the distance to the epicenter of the Transition or center of the scene if no epicenter exists. | | [SidePropagation](https://developer.android.com/reference/kotlin/android/transition/SidePropagation) | A`TransitionPropagation`that propagates based on the distance to the side and, orthogonally, the distance to epicenter. | |
+| Known Direct Subclasses [CircularPropagation](../android/transition/CircularPropagation.md), [SidePropagation](../android/transition/SidePropagation.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [CircularPropagation](../android/transition/CircularPropagation.md) | A propagation that varies with the distance to the epicenter of the Transition or center of the scene if no epicenter exists. | | [SidePropagation](../android/transition/SidePropagation.md) | A`TransitionPropagation`that propagates based on the distance to the side and, orthogonally, the distance to epicenter. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base class for`TransitionPropagation`s that care about View Visibility and the center position of the View.
@@ -25,20 +25,20 @@ Base class for`TransitionPropagation`s that care about View Visibility and the c
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [VisibilityPropagation](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation#VisibilityPropagation())`()` <br /> |
+| [VisibilityPropagation](../android/transition/VisibilityPropagation.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [captureValues](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation#captureValues(android.transition.TransitionValues))`(`values:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPropagationProperties](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation#getPropagationProperties())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewVisibility](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation#getViewVisibility(android.transition.TransitionValues))`(`values:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` Returns [android.view.View#getVisibility()](https://developer.android.com/reference/kotlin/android/view/View.html#getVisibility())for the View at the time the values were captured. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [captureValues](../android/transition/VisibilityPropagation.md))`(`values:` ` [TransitionValues](../android/transition/TransitionValues.md)!`)` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPropagationProperties](../android/transition/VisibilityPropagation.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewVisibility](../android/transition/VisibilityPropagation.md))`(`values:` ` [TransitionValues](../android/transition/TransitionValues.md)!`)` Returns [android.view.View#getVisibility()](../android/view/View.md))for the View at the time the values were captured. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewX](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation#getViewX(android.transition.TransitionValues))`(`values:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` Returns the View's center x coordinate, relative to the screen, at the time the values were captured. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewY](https://developer.android.com/reference/kotlin/android/transition/VisibilityPropagation#getViewY(android.transition.TransitionValues))`(`values:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` Returns the View's center y coordinate, relative to the screen, at the time the values were captured. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewX](../android/transition/VisibilityPropagation.md))`(`values:` ` [TransitionValues](../android/transition/TransitionValues.md)!`)` Returns the View's center x coordinate, relative to the screen, at the time the values were captured. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewY](../android/transition/VisibilityPropagation.md))`(`values:` ` [TransitionValues](../android/transition/TransitionValues.md)!`)` Returns the View's center y coordinate, relative to the screen, at the time the values were captured. |
 
 | Inherited functions ||
 |---|---|
-| From class [TransitionPropagation](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation#getStartDelay(android.view.ViewGroup,%20android.transition.Transition,%20android.transition.TransitionValues,%20android.transition.TransitionValues))`(`sceneRoot:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`, `transition:` ` [Transition](https://developer.android.com/reference/kotlin/android/transition/Transition)!`, `startValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`, `endValues:` ` [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!`)` <br /> Called by Transition to alter the Animator start delay. All start delays will be adjusted such that the minimum becomes zero. <br /> | ||
+| From class [TransitionPropagation](../android/transition/TransitionPropagation.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](../android/transition/TransitionPropagation.md))`(`sceneRoot:` ` [ViewGroup](../android/view/ViewGroup.md)!`, `transition:` ` [Transition](../android/transition/Transition.md)!`, `startValues:` ` [TransitionValues](../android/transition/TransitionValues.md)!`, `endValues:` ` [TransitionValues](../android/transition/TransitionValues.md)!`)` <br /> Called by Transition to alter the Animator start delay. All start delays will be adjusted such that the minimum becomes zero. <br /> | ||
 
 ## Public constructors
 
@@ -72,7 +72,7 @@ open fun getPropagationProperties(): Array<String!>!
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | An array of property names as described in the class documentation for [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues). |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | An array of property names as described in the class documentation for [TransitionValues](../android/transition/TransitionValues.md). |
 
 ### getViewVisibility
 
@@ -82,15 +82,15 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getViewVisibility(values: TransitionValues!): Int
 ```
 
-Returns [android.view.View#getVisibility()](https://developer.android.com/reference/kotlin/android/view/View.html#getVisibility())for the View at the time the values were captured.
+Returns [android.view.View#getVisibility()](../android/view/View.md))for the View at the time the values were captured.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `values` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The TransitionValues captured at the start or end of the Transition. |
+| `values` | [TransitionValues](../android/transition/TransitionValues.md)!:The TransitionValues captured at the start or end of the Transition. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [android.view.View#getVisibility()](https://developer.android.com/reference/kotlin/android/view/View.html#getVisibility())for the View at the time the values were captured. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [android.view.View#getVisibility()](../android/view/View.md))for the View at the time the values were captured. |
 
 ### getViewX
 
@@ -104,7 +104,7 @@ Returns the View's center x coordinate, relative to the screen, at the time the 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `values` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The TransitionValues captured at the start or end of the Transition. |
+| `values` | [TransitionValues](../android/transition/TransitionValues.md)!:The TransitionValues captured at the start or end of the Transition. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -122,7 +122,7 @@ Returns the View's center y coordinate, relative to the screen, at the time the 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `values` | [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues)!:The TransitionValues captured at the start or end of the Transition. |
+| `values` | [TransitionValues](../android/transition/TransitionValues.md)!:The TransitionValues captured at the start or end of the Transition. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|

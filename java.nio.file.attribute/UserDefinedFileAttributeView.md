@@ -6,7 +6,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface UserDefinedFileAttributeView : FileAttributeView
 ```
 
-| [java.nio.file.attribute.UserDefinedFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#) |
+| [java.nio.file.attribute.UserDefinedFileAttributeView](../java/nio/file/attribute/UserDefinedFileAttributeView.md) |
 
 A file attribute view that provides a view of a file's user-defined attributes, sometimes known as *extended attributes*. User-defined file attributes are used to store metadata with a file that is not meaningful to the file system. It is primarily intended for file system implementations that support such a capability directly but may be emulated. The details of such emulation are highly implementation specific and therefore not specified.
 
@@ -116,7 +116,7 @@ UserDefinedFileAttributeView view =
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The attribute name |
-| `dst` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!: The destination buffer |
+| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The destination buffer |
 
 | Return ||
 |---|---|
@@ -189,7 +189,7 @@ UserDefinedFileAttributeView view =
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The attribute name |
-| `src` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!: The buffer containing the attribute value |
+| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The buffer containing the attribute value |
 
 | Return ||
 |---|---|

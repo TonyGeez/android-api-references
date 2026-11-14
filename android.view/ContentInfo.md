@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ContentInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/ContentInfo "View this page in Java")
+Kotlin | [Java](../android/view/ContentInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ContentInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo#) |
+| ↳ | [android.view.ContentInfo](../android/view/ContentInfo.md) |
 
 Holds all the relevant data for a request to `https://developer.android.com/reference/kotlin/android/view/View#performReceiveContent(android.view.ContentInfo)`.
 
@@ -40,11 +40,11 @@ Holds all the relevant data for a request to `https://developer.android.com/refe
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getClip()()` The data to be inserted. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getExtras()()` Optional additional metadata. |
+| [ClipData](../android/content/ClipData.md) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getClip()()` The data to be inserted. |
+| [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getExtras()()` Optional additional metadata. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getFlags()()` Optional flags that control the insertion behavior. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getLinkUri()()` Optional http/https URI for the content that may be provided by the IME. |
+| [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getLinkUri()()` Optional http/https URI for the content that may be provided by the IME. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getSource()()` The source of the operation. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#toString()()` Returns a string representation of the object. |
@@ -52,7 +52,7 @@ Holds all the relevant data for a request to `https://developer.android.com/refe
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ContentInfo](https://developer.android.com/reference/kotlin/android/view/ContentInfo#)!\> | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#CREATOR:android.os.Parcelable.Creator` Creates `https://developer.android.com/reference/kotlin/android/view/ContentInfo#` instances from parcels. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentInfo](../android/view/ContentInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#CREATOR:android.os.Parcelable.Creator` Creates `https://developer.android.com/reference/kotlin/android/view/ContentInfo#` instances from parcels. |
 
 ## Constants
 
@@ -255,7 +255,7 @@ Writes this object into the given parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The parcel to write into. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The parcel to write into. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags to use for parceling. |
 
 ## Properties

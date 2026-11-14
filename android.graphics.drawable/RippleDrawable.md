@@ -8,9 +8,9 @@ open class RippleDrawable : LayerDrawable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
-| | ↳ | [android.graphics.drawable.LayerDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable) ||
-| | | ↳ | [android.graphics.drawable.RippleDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#) |
+| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) |||
+| | ↳ | [android.graphics.drawable.LayerDrawable](../android/graphics/drawable/LayerDrawable.md) ||
+| | | ↳ | [android.graphics.drawable.RippleDrawable](../android/graphics/drawable/RippleDrawable.md) |
 | --- | --- | --- | --- |
 
 Drawable that shows a ripple effect in response to state changes. The anchoring position of the ripple for a given state may be specified by calling #setHotspot(float,float) with the corresponding state attribute identifier.
@@ -52,7 +52,7 @@ If no child layers or mask is specified and the ripple is set as a View backgrou
 
 | XML attributes ||
 |---|---|
-| [`android:color`](https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#attr_RippleDrawable) | The color to use for ripple effects. |
+| [`android:color`](../android/graphics/drawable/RippleDrawable.md) | The color to use for ripple effects. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable` `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#attr_LayerDrawable` Bottom inset to apply to the layer.
 
@@ -161,9 +161,9 @@ Padding mode used to stack each layer directly atop the previous layer.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#canApplyTheme()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Optimized for drawing ripples with a mask layer and optional content. |
 | --- | --- |
-| open [Drawable.ConstantState](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
-| open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getDirtyBounds()()` Return the drawable's dirty bounds Rect. |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getEffectColor()()` <br /> |
+| open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
+| open [Rect](../android/graphics/Rect.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getDirtyBounds()()` Return the drawable's dirty bounds Rect. |
+| open [ColorStateList](../android/content/res/ColorStateList.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getEffectColor()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getHotspotBounds(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Populates `outRect` with the hotspot bounds. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#getOpacity()()` Return the opacity/transparency of this Drawable. |
@@ -178,7 +178,7 @@ Padding mode used to stack each layer directly atop the previous layer.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#jumpToCurrentState()()` If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#mutate()()` Make this drawable mutable. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#mutate()()` Make this drawable mutable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setColor(android.content.res.ColorStateList)(color: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)` Sets the ripple color. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable#setDrawableByLayerId(kotlin.Int,%20android.graphics.drawable.Drawable)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable!)` Replaces the `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable` for the layer with the given id. |
@@ -850,9 +850,9 @@ Creates a new ripple drawable with the specified ripple color and optional conte
 
 | Parameters ||
 |---|---|
-| `color` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#): The ripple color. This value cannot be `null`. |
-| `content` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)?: The content drawable, may be `null` |
-| `mask` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)?: The mask drawable, may be `null` |
+| `color` | [ColorStateList](../android/content/res/ColorStateList.md): The ripple color. This value cannot be `null`. |
+| `content` | [Drawable](../android/graphics/drawable/Drawable.md)?: The content drawable, may be `null` |
+| `mask` | [Drawable](../android/graphics/drawable/Drawable.md)?: The mask drawable, may be `null` |
 | --- | --- |
 
 ## Public methods
@@ -869,7 +869,7 @@ Applies the specified theme to this Drawable and its children.
 
 | Parameters ||
 |---|---|
-| `t` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#): This value cannot be `null`. |
+| `t` | [Resources.Theme](../android/content/res/Resources.Theme.md): This value cannot be `null`. |
 
 ### canApplyTheme
 
@@ -891,7 +891,7 @@ Optimized for drawing ripples with a mask layer and optional content.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): This value cannot be `null`. |
 
 ### getConstantState
 
@@ -947,7 +947,7 @@ Populates `outRect` with the hotspot bounds.
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#): the rect to populate with the hotspot bounds. This value cannot be `null`. |
+| `outRect` | [Rect](../android/graphics/Rect.md): the rect to populate with the hotspot bounds. This value cannot be `null`. |
 
 ### getOpacity
 
@@ -981,7 +981,7 @@ Populates `outline` with the first available layer outline, excluding the mask l
 
 | Parameters ||
 |---|---|
-| `outline` | [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#): Outline in which to place the first available layer outline. This value cannot be `null`. |
+| `outline` | [Outline](../android/graphics/Outline.md): Outline in which to place the first available layer outline. This value cannot be `null`. |
 
 ### getRadius
 
@@ -1028,11 +1028,11 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |---|---|
-| `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#): This value cannot be `null`. |
-| `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#): This value cannot be `null`. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): This value cannot be `null`. |
+| `r` | [Resources](../android/content/res/Resources.md): This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?: This value may be `null`. |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1109,7 +1109,7 @@ Sets the ripple color.
 
 | Parameters ||
 |---|---|
-| `color` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#): Ripple color as a color state list. This value cannot be `null`. |
+| `color` | [ColorStateList](../android/content/res/ColorStateList.md): Ripple color as a color state list. This value cannot be `null`. |
 
 ### setDrawableByLayerId
 
@@ -1127,7 +1127,7 @@ Replaces the `https://developer.android.com/reference/kotlin/android/graphics/dr
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The layer ID to search for. |
-| `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)!: The replacement `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable`. |
+| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: The replacement `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable`. |
 
 | Return ||
 |---|---|
@@ -1145,7 +1145,7 @@ Sets the ripple effect color.
 
 | Parameters ||
 |---|---|
-| `color` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#): Ripple color as a color state list. This value cannot be `null`. |
+| `color` | [ColorStateList](../android/content/res/ColorStateList.md): Ripple color as a color state list. This value cannot be `null`. |
 
 ### setHotspot
 
@@ -1256,7 +1256,7 @@ Override this in your subclass to change appearance if you vary based on the bou
 
 | Parameters ||
 |---|---|
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#): This value cannot be `null`. |
+| `bounds` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
 
 ### onStateChange
 

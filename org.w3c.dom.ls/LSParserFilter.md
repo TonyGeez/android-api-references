@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface LSParserFilter
 ```
 
-| [org.w3c.dom.ls.LSParserFilter](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#) |
+| [org.w3c.dom.ls.LSParserFilter](../org/w3c/dom/ls/LSParserFilter.md) |
 
 `LSParserFilter`s provide applications the ability to examine nodes as they are being constructed while parsing. As each node is examined, it may be modified or removed, or the entire parse may be terminated early.
 
@@ -26,17 +26,17 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Constants ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_ACCEPT](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#FILTER_ACCEPT:kotlin.Short) Accept the node. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_INTERRUPT](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#FILTER_INTERRUPT:kotlin.Short) Interrupt the normal processing of the document. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_REJECT](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#FILTER_REJECT:kotlin.Short) Reject the node and its children. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_ACCEPT](../org/w3c/dom/ls/LSParserFilter.md) Accept the node. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_INTERRUPT](../org/w3c/dom/ls/LSParserFilter.md) Interrupt the normal processing of the document. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_REJECT](../org/w3c/dom/ls/LSParserFilter.md) Reject the node and its children. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_SKIP](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#FILTER_SKIP:kotlin.Short) Skip this single node. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [FILTER_SKIP](../org/w3c/dom/ls/LSParserFilter.md) Skip this single node. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [acceptNode](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#acceptNode(org.w3c.dom.Node))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` This method will be called by the parser at the completion of the parsing of each node. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWhatToShow](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#getWhatToShow())`()` Tells the`LSParser`what types of nodes to show to the method`LSParserFilter.acceptNode`. |
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [startElement](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter#startElement(org.w3c.dom.Element))`(`elementArg:` ` [Element](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-element/index.html)!`)` The parser will call this method after each`Element`start tag has been scanned, but before the remainder of the`Element`is processed. |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [acceptNode](../org/w3c/dom/ls/LSParserFilter.md))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` This method will be called by the parser at the completion of the parsing of each node. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWhatToShow](../org/w3c/dom/ls/LSParserFilter.md))`()` Tells the`LSParser`what types of nodes to show to the method`LSParserFilter.acceptNode`. |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [startElement](../org/w3c/dom/ls/LSParserFilter.md))`(`elementArg:` ` [Element](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-element/index.html)!`)` The parser will call this method after each`Element`start tag has been scanned, but before the remainder of the`Element`is processed. |
 | --- | --- |
 
 ## Constants

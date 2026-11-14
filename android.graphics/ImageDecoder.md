@@ -8,7 +8,7 @@ class ImageDecoder : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.ImageDecoder](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#) |
+| ↳ | [android.graphics.ImageDecoder](../android/graphics/ImageDecoder.md) |
 
 A class for converting encoded images (like `PNG`, `JPEG`, `WEBP`, `GIF`, or `HEIF`) into `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable` or `https://developer.android.com/reference/kotlin/android/graphics/Bitmap` objects.
 
@@ -115,32 +115,32 @@ Drawable drawable = ImageDecoder.decodeDrawable(source, (decoder, info, src) -> 
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#close()()` Closes this resource, relinquishing any underlying resources. |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(android.content.ContentResolver,%20android.net.Uri)(cr: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(android.content.res.AssetManager,%20kotlin.String)(assets: https://developer.android.com/reference/kotlin/android/content/res/AssetManager.html#, fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a file in the "assets" directory. |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(android.content.ContentResolver,%20android.net.Uri)(cr: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(android.content.res.AssetManager,%20kotlin.String)(assets: https://developer.android.com/reference/kotlin/android/content/res/AssetManager.html#, fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a file in the "assets" directory. |
 | --- | --- |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(android.content.res.Resources,%20kotlin.Int)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a resource. |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(kotlin.ByteArray)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a byte array. |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a byte array. |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(android.content.res.Resources,%20kotlin.Int)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a resource. |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(kotlin.ByteArray)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a byte array. |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a byte array. |
 | --- | --- |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(java.io.File)(file: https://developer.android.com/reference/kotlin/java/io/File.html#)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/java/io/File.html#`. |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(java.nio.ByteBuffer)(buffer: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` |
-| static [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(java.util.concurrent.Callable)(callable: https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html#<https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#!>)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html#` that returns a new `https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#` for each request. |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(java.io.File)(file: https://developer.android.com/reference/kotlin/java/io/File.html#)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/java/io/File.html#`. |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(java.nio.ByteBuffer)(buffer: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` |
+| static [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#createSource(java.util.concurrent.Callable)(callable: https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html#<https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#!>)` Create a new `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source` from a `https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html#` that returns a new `https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#` for each request. |
 | --- | --- |
-| static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeBitmap(android.graphics.ImageDecoder.Source)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source)` Create a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap` from a `Source` |
-| static [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeBitmap(android.graphics.ImageDecoder.Source,%20android.graphics.ImageDecoder.OnHeaderDecodedListener)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source, listener: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)` Create a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap` from a `Source`. |
-| static [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeDrawable(android.graphics.ImageDecoder.Source)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source)` Create a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable` from a `Source` |
+| static [Bitmap](../android/graphics/Bitmap.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeBitmap(android.graphics.ImageDecoder.Source)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source)` Create a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap` from a `Source` |
+| static [Bitmap](../android/graphics/Bitmap.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeBitmap(android.graphics.ImageDecoder.Source,%20android.graphics.ImageDecoder.OnHeaderDecodedListener)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source, listener: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)` Create a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap` from a `Source`. |
+| static [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeDrawable(android.graphics.ImageDecoder.Source)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source)` Create a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable` from a `Source` |
 | --- | --- |
-| static [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeDrawable(android.graphics.ImageDecoder.Source,%20android.graphics.ImageDecoder.OnHeaderDecodedListener)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source, listener: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)` Create a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable` from a `Source`. |
+| static [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#decodeDrawable(android.graphics.ImageDecoder.Source,%20android.graphics.ImageDecoder.OnHeaderDecodedListener)(src: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source, listener: https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)` Create a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable` from a `Source`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getAllocationLimit()()` Get the maximum memory limit in bytes for image decoding. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getAllocator()()` Return the allocator for the pixel memory. |
 | --- | --- |
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getCrop()()` Return the cropping rectangle, if set. |
-| static [ImageDecoder.OnHeaderDecodedListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getDefaultProcessListener()()` Return the process-level default `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener`. |
-| static [ImageDecoder.OnHeaderDecodedListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getDefaultThreadListener()()` Return the thread-level default `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener`. |
+| [Rect](../android/graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getCrop()()` Return the cropping rectangle, if set. |
+| static [ImageDecoder.OnHeaderDecodedListener](../android/graphics/ImageDecoder.OnHeaderDecodedListener.md)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getDefaultProcessListener()()` Return the process-level default `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener`. |
+| static [ImageDecoder.OnHeaderDecodedListener](../android/graphics/ImageDecoder.OnHeaderDecodedListener.md)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getDefaultThreadListener()()` Return the thread-level default `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener`. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getMemorySizePolicy()()` Retrieve the memory policy for the decoded `https://developer.android.com/reference/kotlin/android/graphics/Bitmap`. |
-| [ImageDecoder.OnPartialImageListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getOnPartialImageListener()()` Return the `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener` currently set. |
-| [PostProcessor](https://developer.android.com/reference/kotlin/android/graphics/PostProcessor)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getPostProcessor()()` Return the `https://developer.android.com/reference/kotlin/android/graphics/PostProcessor` currently set. |
+| [ImageDecoder.OnPartialImageListener](../android/graphics/ImageDecoder.OnPartialImageListener.md)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getOnPartialImageListener()()` Return the `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener` currently set. |
+| [PostProcessor](../android/graphics/PostProcessor.md)? | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#getPostProcessor()()` Return the `https://developer.android.com/reference/kotlin/android/graphics/PostProcessor` currently set. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#isDecodeAsAlphaMaskEnabled()()` Return whether to treat single channel input as alpha. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder#isMimeTypeSupported(kotlin.String)(mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return if the given MIME type is a supported file format that can be decoded by this class. |
@@ -299,8 +299,8 @@ This method is safe to call from any thread.
 
 | Parameters ||
 |---|---|
-| `cr` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): to retrieve from. This value cannot be `null`. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): of the image file. This value cannot be `null`. |
+| `cr` | [ContentResolver](../android/content/ContentResolver.md): to retrieve from. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): of the image file. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -322,7 +322,7 @@ This method is safe to call from any thread.
 
 | Parameters ||
 |---|---|
-| `assets` | [AssetManager](https://developer.android.com/reference/kotlin/android/content/res/AssetManager.html#): This value cannot be `null`. |
+| `assets` | [AssetManager](../android/content/res/AssetManager.md): This value cannot be `null`. |
 | `fileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 
 | Return ||
@@ -345,7 +345,7 @@ This method is safe to call from any thread.
 
 | Parameters ||
 |---|---|
-| `res` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#): the `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#` object containing the image data. This value cannot be `null`. |
+| `res` | [Resources](../android/content/res/Resources.md): the `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#` object containing the image data. This value cannot be `null`. |
 | `resId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): resource ID of the image data. |
 
 | Return ||
@@ -427,7 +427,7 @@ This method is safe to call from any thread.
 
 | Parameters ||
 |---|---|
-| `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#): This value cannot be `null`. |
+| `file` | [File](../java/io/File.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -451,7 +451,7 @@ This method is safe to call from any thread.
 
 | Parameters ||
 |---|---|
-| `buffer` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): This value cannot be `null`. |
+| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -472,7 +472,7 @@ This method is safe to call from any thread.
 
 | Parameters ||
 |---|---|
-| `callable` | [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html#)\< [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)!\>: This value cannot be `null`. |
+| `callable` | [Callable](../java/util/concurrent/Callable.md)\< [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)!\>: This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -494,7 +494,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `src` | [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source): representing the encoded image. This value cannot be `null`. |
+| `src` | [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md): representing the encoded image. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -520,8 +520,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `src` | [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source): representing the encoded image. This value cannot be `null`. |
-| `listener` | [ImageDecoder.OnHeaderDecodedListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener): for learning the `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.ImageInfo` and changing any default settings on the `ImageDecoder`. This will be called on the same thread as `decodeBitmap` before that method returns. This is required in order to change any of the default settings. This value cannot be `null`. |
+| `src` | [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md): representing the encoded image. This value cannot be `null`. |
+| `listener` | [ImageDecoder.OnHeaderDecodedListener](../android/graphics/ImageDecoder.OnHeaderDecodedListener.md): for learning the `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.ImageInfo` and changing any default settings on the `ImageDecoder`. This will be called on the same thread as `decodeBitmap` before that method returns. This is required in order to change any of the default settings. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -547,7 +547,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `src` | [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source): representing the encoded image. This value cannot be `null`. |
+| `src` | [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md): representing the encoded image. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -573,8 +573,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `src` | [ImageDecoder.Source](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.Source): representing the encoded image. This value cannot be `null`. |
-| `listener` | [ImageDecoder.OnHeaderDecodedListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener): for learning the `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.ImageInfo` and changing any default settings on the `ImageDecoder`. This will be called on the same thread as `decodeDrawable` before that method returns. This is required in order to change any of the default settings. This value cannot be `null`. |
+| `src` | [ImageDecoder.Source](../android/graphics/ImageDecoder.Source.md): representing the encoded image. This value cannot be `null`. |
+| `listener` | [ImageDecoder.OnHeaderDecodedListener](../android/graphics/ImageDecoder.OnHeaderDecodedListener.md): for learning the `https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.ImageInfo` and changing any default settings on the `ImageDecoder`. This will be called on the same thread as `decodeDrawable` before that method returns. This is required in order to change any of the default settings. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -788,7 +788,7 @@ Like all setters on ImageDecoder, this must be called inside `https://developer.
 
 | Parameters ||
 |---|---|
-| `subset` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)?: This value may be `null`. |
+| `subset` | [Rect](../android/graphics/Rect.md)?: This value may be `null`. |
 
 ### setDecodeAsAlphaMaskEnabled
 
@@ -822,7 +822,7 @@ Note: setting a thread-level default via `https://developer.android.com/referenc
 
 | Parameters ||
 |---|---|
-| `listener` | [ImageDecoder.OnHeaderDecodedListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)?: This value may be `null`. |
+| `listener` | [ImageDecoder.OnHeaderDecodedListener](../android/graphics/ImageDecoder.OnHeaderDecodedListener.md)?: This value may be `null`. |
 
 ### setDefaultThreadListener
 
@@ -840,7 +840,7 @@ Note: setting a thread-level default will cause the process-level default set by
 
 | Parameters ||
 |---|---|
-| `listener` | [ImageDecoder.OnHeaderDecodedListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnHeaderDecodedListener)?: This value may be `null`. |
+| `listener` | [ImageDecoder.OnHeaderDecodedListener](../android/graphics/ImageDecoder.OnHeaderDecodedListener.md)?: This value may be `null`. |
 
 ### setMemorySizePolicy
 
@@ -892,7 +892,7 @@ Like all setters on ImageDecoder, this must be called inside `https://developer.
 
 | Parameters ||
 |---|---|
-| `listener` | [ImageDecoder.OnPartialImageListener](https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.OnPartialImageListener)?: This value may be `null`. |
+| `listener` | [ImageDecoder.OnPartialImageListener](../android/graphics/ImageDecoder.OnPartialImageListener.md)?: This value may be `null`. |
 
 ### setPostProcessor
 
@@ -916,7 +916,7 @@ Like all setters on ImageDecoder, this must be called inside `https://developer.
 
 | Parameters ||
 |---|---|
-| `postProcessor` | [PostProcessor](https://developer.android.com/reference/kotlin/android/graphics/PostProcessor)?: This value may be `null`. |
+| `postProcessor` | [PostProcessor](../android/graphics/PostProcessor.md)?: This value may be `null`. |
 
 ### setTargetColorSpace
 

@@ -10,7 +10,7 @@ abstract class SSLContextSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.SSLContextSpi](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#) |
+| ↳ | [javax.net.ssl.SSLContextSpi](../javax/net/ssl/SSLContextSpi.md) |
 
 This class defines the *Service Provider Interface* (**SPI** ) for the `SSLContext` class.
 
@@ -20,21 +20,21 @@ All the abstract methods in this class must be implemented by each cryptographic
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLContextSpi](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#SSLContextSpi())`()` <br /> |
+| [SSLContextSpi](../javax/net/ssl/SSLContextSpi.md))`()` <br /> |
 
 | Protected methods ||
 |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)! | [engineCreateSSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineCreateSSLEngine())`()` Creates a new `SSLEngine` using this context. |
-| abstract [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)! | [engineCreateSSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineCreateSSLEngine(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `SSLEngine` using this context. |
-| abstract [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | [engineGetClientSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineGetClientSessionContext())`()` Returns a client `SSLSessionContext` object for this context. |
+| abstract [SSLEngine](../javax/net/ssl/SSLEngine.md)! | [engineCreateSSLEngine](../javax/net/ssl/SSLContextSpi.md))`()` Creates a new `SSLEngine` using this context. |
+| abstract [SSLEngine](../javax/net/ssl/SSLEngine.md)! | [engineCreateSSLEngine](../javax/net/ssl/SSLContextSpi.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `SSLEngine` using this context. |
+| abstract [SSLSessionContext](../javax/net/ssl/SSLSessionContext.md)! | [engineGetClientSessionContext](../javax/net/ssl/SSLContextSpi.md))`()` Returns a client `SSLSessionContext` object for this context. |
 | --- | --- |
-| open [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | [engineGetDefaultSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineGetDefaultSSLParameters())`()` Returns a copy of the SSLParameters indicating the default settings for this SSL context. |
-| abstract [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | [engineGetServerSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineGetServerSessionContext())`()` Returns a server `SSLSessionContext` object for this context. |
-| abstract [SSLServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory)! | [engineGetServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineGetServerSocketFactory())`()` Returns a `ServerSocketFactory` object for this context. |
+| open [SSLParameters](../javax/net/ssl/SSLParameters.md)! | [engineGetDefaultSSLParameters](../javax/net/ssl/SSLContextSpi.md))`()` Returns a copy of the SSLParameters indicating the default settings for this SSL context. |
+| abstract [SSLSessionContext](../javax/net/ssl/SSLSessionContext.md)! | [engineGetServerSessionContext](../javax/net/ssl/SSLContextSpi.md))`()` Returns a server `SSLSessionContext` object for this context. |
+| abstract [SSLServerSocketFactory](../javax/net/ssl/SSLServerSocketFactory.md)! | [engineGetServerSocketFactory](../javax/net/ssl/SSLContextSpi.md))`()` Returns a `ServerSocketFactory` object for this context. |
 | --- | --- |
-| abstract [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory)! | [engineGetSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineGetSocketFactory())`()` Returns a `SocketFactory` object for this context. |
-| open [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | [engineGetSupportedSSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineGetSupportedSSLParameters())`()` Returns a copy of the SSLParameters indicating the maximum supported settings for this SSL context. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineInit(kotlin.Array,%20kotlin.Array,%20java.security.SecureRandom))`(`km:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager)!>!`, `tm:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager)!>!`, `sr:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`)` Initializes this context. |
+| abstract [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md)! | [engineGetSocketFactory](../javax/net/ssl/SSLContextSpi.md))`()` Returns a `SocketFactory` object for this context. |
+| open [SSLParameters](../javax/net/ssl/SSLParameters.md)! | [engineGetSupportedSSLParameters](../javax/net/ssl/SSLContextSpi.md))`()` Returns a copy of the SSLParameters indicating the maximum supported settings for this SSL context. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/net/ssl/SSLContextSpi.md))`(`km:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](../javax/net/ssl/KeyManager.md)!>!`, `tm:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TrustManager](../javax/net/ssl/TrustManager.md)!>!`, `sr:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this context. |
 | --- | --- |
 
 ## Public constructors
@@ -59,13 +59,13 @@ protected abstract fun engineCreateSSLEngine(): SSLEngine!
 
 Creates a new `SSLEngine` using this context.
 
-Applications using this factory method are providing no hints for an internal session reuse strategy. If hints are desired, [engineCreateSSLEngine(java.lang.String,int)](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContextSpi#engineCreateSSLEngine(kotlin.String,%20kotlin.Int)) should be used instead.
+Applications using this factory method are providing no hints for an internal session reuse strategy. If hints are desired, [engineCreateSSLEngine(java.lang.String,int)](../javax/net/ssl/SSLContextSpi.md)) should be used instead.
 
 Some cipher suites (such as Kerberos) require remote hostname information, in which case this factory method should not be used.
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------|
-| [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)! | the `SSLEngine` Object |
+| [SSLEngine](../javax/net/ssl/SSLEngine.md)! | the `SSLEngine` Object |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ Some cipher suites (such as Kerberos) require remote hostname information, in wh
 
 **See Also**
 
-- [javax.net.ssl.SSLContext#createSSLEngine()](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#createSSLEngine()) 
+- [javax.net.ssl.SSLContext#createSSLEngine()](../javax/net/ssl/SSLContext.md)) 
 
 ### engineCreateSSLEngine
 
@@ -99,7 +99,7 @@ Some cipher suites (such as Kerberos) require remote hostname information, in wh
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------|
-| [SSLEngine](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine)! | the `SSLEngine` Object |
+| [SSLEngine](../javax/net/ssl/SSLEngine.md)! | the `SSLEngine` Object |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------------------------------------------------|
@@ -107,7 +107,7 @@ Some cipher suites (such as Kerberos) require remote hostname information, in wh
 
 **See Also**
 
-- [javax.net.ssl.SSLContext#createSSLEngine(String, int)](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#createSSLEngine(kotlin.String,%20kotlin.Int)) 
+- [javax.net.ssl.SSLContext#createSSLEngine(String, int)](../javax/net/ssl/SSLContext.md)) 
 
 ### engineGetClientSessionContext
 
@@ -121,11 +121,11 @@ Returns a client `SSLSessionContext` object for this context.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|--------------------------------|
-| [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | the `SSLSessionContext` object |
+| [SSLSessionContext](../javax/net/ssl/SSLSessionContext.md)! | the `SSLSessionContext` object |
 
 **See Also**
 
-- [javax.net.ssl.SSLContext#getClientSessionContext()](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getClientSessionContext()) 
+- [javax.net.ssl.SSLContext#getClientSessionContext()](../javax/net/ssl/SSLContext.md)) 
 
 ### engineGetDefaultSSLParameters
 
@@ -143,7 +143,7 @@ The default implementation obtains the parameters from an SSLSocket created by c
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | a copy of the SSLParameters object with the default settings |
+| [SSLParameters](../javax/net/ssl/SSLParameters.md)! | a copy of the SSLParameters object with the default settings |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------|
@@ -161,11 +161,11 @@ Returns a server `SSLSessionContext` object for this context.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|--------------------------------|
-| [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | the `SSLSessionContext` object |
+| [SSLSessionContext](../javax/net/ssl/SSLSessionContext.md)! | the `SSLSessionContext` object |
 
 **See Also**
 
-- [javax.net.ssl.SSLContext#getServerSessionContext()](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getServerSessionContext()) 
+- [javax.net.ssl.SSLContext#getServerSessionContext()](../javax/net/ssl/SSLContext.md)) 
 
 ### engineGetServerSocketFactory
 
@@ -179,7 +179,7 @@ Returns a `ServerSocketFactory` object for this context.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [SSLServerSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory)! | the `ServerSocketFactory` object |
+| [SSLServerSocketFactory](../javax/net/ssl/SSLServerSocketFactory.md)! | the `ServerSocketFactory` object |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------------------------------------------------|
@@ -187,7 +187,7 @@ Returns a `ServerSocketFactory` object for this context.
 
 **See Also**
 
-- [javax.net.ssl.SSLContext#getServerSocketFactory()](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getServerSocketFactory()) 
+- [javax.net.ssl.SSLContext#getServerSocketFactory()](../javax/net/ssl/SSLContext.md)) 
 
 ### engineGetSocketFactory
 
@@ -201,7 +201,7 @@ Returns a `SocketFactory` object for this context.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------|
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory)! | the `SocketFactory` object |
+| [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md)! | the `SocketFactory` object |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------------------------------------------------|
@@ -209,7 +209,7 @@ Returns a `SocketFactory` object for this context.
 
 **See Also**
 
-- [javax.net.ssl.SSLContext#getSocketFactory()](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext#getSocketFactory()) 
+- [javax.net.ssl.SSLContext#getSocketFactory()](../javax/net/ssl/SSLContext.md)) 
 
 ### engineGetSupportedSSLParameters
 
@@ -227,7 +227,7 @@ The default implementation obtains the parameters from an SSLSocket created by c
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [SSLParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters)! | a copy of the SSLParameters object with the maximum supported settings |
+| [SSLParameters](../javax/net/ssl/SSLParameters.md)! | a copy of the SSLParameters object with the maximum supported settings |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------|
@@ -249,9 +249,9 @@ Initializes this context.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `km` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager)!\>!: the sources of authentication keys |
-| `tm` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TrustManager](https://developer.android.com/reference/kotlin/javax/net/ssl/TrustManager)!\>!: the sources of peer authentication trust decisions |
-| `sr` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!: the source of randomness |
+| `km` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](../javax/net/ssl/KeyManager.md)!\>!: the sources of authentication keys |
+| `tm` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TrustManager](../javax/net/ssl/TrustManager.md)!\>!: the sources of peer authentication trust decisions |
+| `sr` | [SecureRandom](../java/security/SecureRandom.md)!: the source of randomness |
 | --- | --- |
 
 | Exceptions ||

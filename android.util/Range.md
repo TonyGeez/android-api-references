@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # Range
 
-Kotlin | [Java](https://developer.android.com/reference/android/util/Range "View this page in Java")
+Kotlin | [Java](../android/util/Range.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class Range<T : Comparable<T>!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.Range](https://developer.android.com/reference/kotlin/android/util/Range#) |
+| ↳ | [android.util.Range](../android/util/Range.md) |
 
 Immutable class for describing the range of two numeric values.
 
@@ -33,19 +33,19 @@ Although the implementation itself is immutable, there is no restriction that ob
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#contains(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Checks if another `range` is within the bounds of this range. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#contains(android.util.Range.T)(value: T)` Checks if the `value` is within the bounds of this range. |
 | --- | --- |
-| static [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#create(android.util.Range.create.T,%20android.util.Range.create.T)(lower: T, upper: T)` Create a new immutable range, with the argument types inferred. |
+| static [Range](../android/util/Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#create(android.util.Range.create.T,%20android.util.Range.create.T)(lower: T, upper: T)` Create a new immutable range, with the argument types inferred. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare two ranges for equality. |
-| [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Returns the smallest range that includes this range and another `range`. |
+| [Range](../android/util/Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Returns the smallest range that includes this range and another `range`. |
 | --- | --- |
-| [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range.T)(value: T)` Returns the smallest range that includes this range and the `value`. |
-| [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range.T,%20android.util.Range.T)(lower: T, upper: T)` Returns the smallest range that includes this range and the inclusive range specified by `[lower, upper]`. |
+| [Range](../android/util/Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range.T)(value: T)` Returns the smallest range that includes this range and the `value`. |
+| [Range](../android/util/Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range.T,%20android.util.Range.T)(lower: T, upper: T)` Returns the smallest range that includes this range and the inclusive range specified by `[lower, upper]`. |
 | T | `https://developer.android.com/reference/kotlin/android/util/Range#getLower()()` Get the lower endpoint. |
 | --- | --- |
 | T | `https://developer.android.com/reference/kotlin/android/util/Range#getUpper()()` Get the upper endpoint. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#hashCode()()` Returns a hash code value for the object. |
-| [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#intersect(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Returns the intersection of this range and another `range`. |
+| [Range](../android/util/Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#intersect(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Returns the intersection of this range and another `range`. |
 | --- | --- |
-| [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#intersect(android.util.Range.T,%20android.util.Range.T)(lower: T, upper: T)` Returns the intersection of this range and the inclusive range specified by `[lower, upper]`. |
+| [Range](../android/util/Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#intersect(android.util.Range.T,%20android.util.Range.T)(lower: T, upper: T)` Returns the intersection of this range and the inclusive range specified by `[lower, upper]`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#toString()()` Return the range as a string representation `"[lower, upper]"`. |
 
 ## Public constructors
@@ -109,7 +109,7 @@ A range is considered to be within this range if both of its endpoints are withi
 
 | Parameters ||
 |---|---|
-| `range` | [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>!: a non-`null` `T` reference |
+| `range` | [Range](../android/util/Range.md)\<T\>!: a non-`null` `T` reference |
 
 | Return ||
 |---|---|
@@ -203,7 +203,7 @@ E.g. if a `==` a' `<` b `<` c, the extension of \[a, b\] and \[a', c\] ranges co
 
 | Parameters ||
 |---|---|
-| `range` | [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>!: a non-`null` `Range<T>` reference |
+| `range` | [Range](../android/util/Range.md)\<T\>!: a non-`null` `Range<T>` reference |
 
 | Return ||
 |---|---|
@@ -329,7 +329,7 @@ E.g. if a `==` a' `<` b `<` c, the intersection of \[a, b\] and \[a', c\] ranges
 
 | Parameters ||
 |---|---|
-| `range` | [Range](https://developer.android.com/reference/kotlin/android/util/Range#)\<T\>!: a non-`null` `Range<T>` reference |
+| `range` | [Range](../android/util/Range.md)\<T\>!: a non-`null` `Range<T>` reference |
 
 | Return ||
 |---|---|

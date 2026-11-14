@@ -8,14 +8,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Clob
 ```
 
-| [java.sql.Clob](https://developer.android.com/reference/kotlin/java/sql/Clob#) |
+| [java.sql.Clob](../java/sql/Clob.md) |
 
-| Known Direct Subclasses [NClob](https://developer.android.com/reference/kotlin/java/sql/NClob) |------------------------------------------------------------------------|------------------------------------------------------------------------| | [NClob](https://developer.android.com/reference/kotlin/java/sql/NClob) | The mapping in the JavaTM programming language for the SQL`NCLOB`type. | |
+| Known Direct Subclasses [NClob](../java/sql/NClob.md) |------------------------------------------------------------------------|------------------------------------------------------------------------| | [NClob](../java/sql/NClob.md) | The mapping in the JavaTM programming language for the SQL`NCLOB`type. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The mapping in the JavaTM programming language for the SQL`CLOB`type. An SQL`CLOB`is a built-in type that stores a Character Large Object as a column value in a row of a database table. By default drivers implement a`Clob`object using an SQL`locator(CLOB)`, which means that a`Clob`object contains a logical pointer to the SQL`CLOB`data rather than the data itself. A`Clob`object is valid for the duration of the transaction in which it was created.
 
-The`Clob`interface provides methods for getting the length of an SQL`CLOB`(Character Large Object) value, for materializing a`CLOB`value on the client, and for searching for a substring or`CLOB`object within a`CLOB`value. Methods in the interfaces [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet), [CallableStatement](https://developer.android.com/reference/kotlin/java/sql/CallableStatement), and [PreparedStatement](https://developer.android.com/reference/kotlin/java/sql/PreparedStatement), such as`getClob`and`setClob`allow a programmer to access an SQL`CLOB`value. In addition, this interface has methods for updating a`CLOB`value.
+The`Clob`interface provides methods for getting the length of an SQL`CLOB`(Character Large Object) value, for materializing a`CLOB`value on the client, and for searching for a substring or`CLOB`object within a`CLOB`value. Methods in the interfaces [ResultSet](../java/sql/ResultSet.md), [CallableStatement](../java/sql/CallableStatement.md), and [PreparedStatement](../java/sql/PreparedStatement.md), such as`getClob`and`setClob`allow a programmer to access an SQL`CLOB`value. In addition, this interface has methods for updating a`CLOB`value.
 
 All methods on the`Clob`interface must be fully implemented if the JDBC driver supports the data type.
 
@@ -23,23 +23,23 @@ All methods on the`Clob`interface must be fully implemented if the JDBC driver s
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](https://developer.android.com/reference/kotlin/java/sql/Clob#free())`()` This method frees the`Clob`object and releases the resources the resources that it holds. |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getAsciiStream](https://developer.android.com/reference/kotlin/java/sql/Clob#getAsciiStream())`()` Retrieves the`CLOB`value designated by this`Clob`object as an ascii stream. |
-| abstract [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [getCharacterStream](https://developer.android.com/reference/kotlin/java/sql/Clob#getCharacterStream())`()` Retrieves the`CLOB`value designated by this`Clob`object as a`java.io.Reader`object (or as a stream of characters). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](../java/sql/Clob.md))`()` This method frees the`Clob`object and releases the resources the resources that it holds. |
+| abstract [InputStream](../java/io/InputStream.md)! | [getAsciiStream](../java/sql/Clob.md))`()` Retrieves the`CLOB`value designated by this`Clob`object as an ascii stream. |
+| abstract [Reader](../java/io/Reader.md)! | [getCharacterStream](../java/sql/Clob.md))`()` Retrieves the`CLOB`value designated by this`Clob`object as a`java.io.Reader`object (or as a stream of characters). |
 | --- | --- |
-| abstract [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [getCharacterStream](https://developer.android.com/reference/kotlin/java/sql/Clob#getCharacterStream(kotlin.Long,%20kotlin.Long))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`Reader`object that contains a partial`Clob`value, starting with the character specified by pos, which is length characters in length. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubString](https://developer.android.com/reference/kotlin/java/sql/Clob#getSubString(kotlin.Long,%20kotlin.Int))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a copy of the specified substring in the`CLOB`value designated by this`Clob`object. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [length](https://developer.android.com/reference/kotlin/java/sql/Clob#length())`()` Retrieves the number of characters in the`CLOB`value designated by this`Clob`object. |
+| abstract [Reader](../java/io/Reader.md)! | [getCharacterStream](../java/sql/Clob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`Reader`object that contains a partial`Clob`value, starting with the character specified by pos, which is length characters in length. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubString](../java/sql/Clob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a copy of the specified substring in the`CLOB`value designated by this`Clob`object. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [length](../java/sql/Clob.md))`()` Retrieves the number of characters in the`CLOB`value designated by this`Clob`object. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](https://developer.android.com/reference/kotlin/java/sql/Clob#position(kotlin.String,%20kotlin.Long))`(`searchstr:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the character position at which the specified substring`searchstr`appears in the SQL`CLOB`value represented by this`Clob`object. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](https://developer.android.com/reference/kotlin/java/sql/Clob#position(java.sql.Clob,%20kotlin.Long))`(`searchstr:` ` [Clob](https://developer.android.com/reference/kotlin/java/sql/Clob#)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the character position at which the specified`Clob`object`searchstr`appears in this`Clob`object. |
-| abstract [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [setAsciiStream](https://developer.android.com/reference/kotlin/java/sql/Clob#setAsciiStream(kotlin.Long))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves a stream to be used to write Ascii characters to the`CLOB`value that this`Clob`object represents, starting at position`pos`. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](../java/sql/Clob.md))`(`searchstr:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the character position at which the specified substring`searchstr`appears in the SQL`CLOB`value represented by this`Clob`object. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](../java/sql/Clob.md))`(`searchstr:` ` [Clob](../java/sql/Clob.md)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the character position at which the specified`Clob`object`searchstr`appears in this`Clob`object. |
+| abstract [OutputStream](../java/io/OutputStream.md)! | [setAsciiStream](../java/sql/Clob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves a stream to be used to write Ascii characters to the`CLOB`value that this`Clob`object represents, starting at position`pos`. |
 | --- | --- |
-| abstract [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)! | [setCharacterStream](https://developer.android.com/reference/kotlin/java/sql/Clob#setCharacterStream(kotlin.Long))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves a stream to be used to write a stream of Unicode characters to the`CLOB`value that this`Clob`object represents, at position`pos`. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setString](https://developer.android.com/reference/kotlin/java/sql/Clob#setString(kotlin.Long,%20kotlin.String))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes the given Java`String`to the`CLOB`value that this`Clob`object designates at the position`pos`. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setString](https://developer.android.com/reference/kotlin/java/sql/Clob#setString(kotlin.Long,%20kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`characters of`str`, starting at character`offset`, to the`CLOB`value that this`Clob`represents. |
+| abstract [Writer](../java/io/Writer.md)! | [setCharacterStream](../java/sql/Clob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves a stream to be used to write a stream of Unicode characters to the`CLOB`value that this`Clob`object represents, at position`pos`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setString](../java/sql/Clob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes the given Java`String`to the`CLOB`value that this`Clob`object designates at the position`pos`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setString](../java/sql/Clob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`characters of`str`, starting at character`offset`, to the`CLOB`value that this`Clob`represents. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [truncate](https://developer.android.com/reference/kotlin/java/sql/Clob#truncate(kotlin.Long))`(`len:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates the`CLOB`value that this`Clob`designates to have a length of`len`characters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [truncate](../java/sql/Clob.md))`(`len:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates the`CLOB`value that this`Clob`designates to have a length of`len`characters. |
 
 ## Public methods
 
@@ -74,7 +74,7 @@ Retrieves the`CLOB`value designated by this`Clob`object as an ascii stream.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | a`java.io.InputStream`object containing the`CLOB`data |
+| [InputStream](../java/io/InputStream.md)! | a`java.io.InputStream`object containing the`CLOB`data |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -83,7 +83,7 @@ Retrieves the`CLOB`value designated by this`Clob`object as an ascii stream.
 
 **See Also**
 
-- [#setAsciiStream](https://developer.android.com/reference/kotlin/java/sql/Clob#setAsciiStream(kotlin.Long)) 
+- [#setAsciiStream](../java/sql/Clob.md)) 
 
 ### getCharacterStream
 
@@ -97,7 +97,7 @@ Retrieves the`CLOB`value designated by this`Clob`object as a`java.io.Reader`obje
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------------|
-| [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | a`java.io.Reader`object containing the`CLOB`data |
+| [Reader](../java/io/Reader.md)! | a`java.io.Reader`object containing the`CLOB`data |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -106,7 +106,7 @@ Retrieves the`CLOB`value designated by this`Clob`object as a`java.io.Reader`obje
 
 **See Also**
 
-- [#setCharacterStream](https://developer.android.com/reference/kotlin/java/sql/Clob#setCharacterStream(kotlin.Long)) 
+- [#setCharacterStream](../java/sql/Clob.md)) 
 
 ### getCharacterStream
 
@@ -128,7 +128,7 @@ Returns a`Reader`object that contains a partial`Clob`value, starting with the ch
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | `Reader`through which the partial`Clob`value can be read. |
+| [Reader](../java/io/Reader.md)! | `Reader`through which the partial`Clob`value can be read. |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -223,7 +223,7 @@ Retrieves the character position at which the specified`Clob`object`searchstr`ap
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `searchstr` | [Clob](https://developer.android.com/reference/kotlin/java/sql/Clob#)!:the`Clob`object for which to search |
+| `searchstr` | [Clob](../java/sql/Clob.md)!:the`Clob`object for which to search |
 | `start` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the position at which to begin searching; the first position is 1 |
 
 | Return ||
@@ -253,7 +253,7 @@ Retrieves a stream to be used to write Ascii characters to the`CLOB`value that t
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | the stream to which ASCII encoded characters can be written |
+| [OutputStream](../java/io/OutputStream.md)! | the stream to which ASCII encoded characters can be written |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------------------------------------------------|
@@ -262,7 +262,7 @@ Retrieves a stream to be used to write Ascii characters to the`CLOB`value that t
 
 **See Also**
 
-- [#getAsciiStream](https://developer.android.com/reference/kotlin/java/sql/Clob#getAsciiStream()) 
+- [#getAsciiStream](../java/sql/Clob.md)) 
 
 ### setCharacterStream
 
@@ -282,7 +282,7 @@ Retrieves a stream to be used to write a stream of Unicode characters to the`CLO
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)! | a stream to which Unicode encoded characters can be written |
+| [Writer](../java/io/Writer.md)! | a stream to which Unicode encoded characters can be written |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------------------------------------------------|

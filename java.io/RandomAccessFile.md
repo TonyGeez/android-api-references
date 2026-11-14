@@ -8,7 +8,7 @@ open class RandomAccessFile : Closeable, DataInput, DataOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.RandomAccessFile](https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#) |
+| ↳ | [java.io.RandomAccessFile](../java/io/RandomAccessFile.md) |
 
 Instances of this class support both reading and writing to a random access file. A random access file behaves like a large array of bytes stored in the file system. There is a kind of cursor, or index into the implied array, called the *file pointer* ; input operations read bytes starting at the file pointer and advance the file pointer past the bytes read. If the random access file is created in read/write mode, then output operations are also available; output operations write bytes starting at the file pointer and advance the file pointer past the bytes written. Output operations that write past the current end of the implied array cause the array to be extended. The file pointer can be read by the `getFilePointer` method and set by the `seek` method.
 
@@ -24,8 +24,8 @@ It is generally true of all the reading routines in this class that if end-of-fi
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#close()()` Closes this random access file stream and releases any system resources associated with the stream. |
-| [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getChannel()()` Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#` object associated with this file. |
-| [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getFD()()` Returns the opaque file descriptor object associated with this stream. |
+| [FileChannel](../java/nio/channels/FileChannel.md)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getChannel()()` Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#` object associated with this file. |
+| [FileDescriptor](../java/io/FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getFD()()` Returns the opaque file descriptor object associated with this stream. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getFilePointer()()` Returns the current offset in this file. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#length()()` Returns the length of this file. |
@@ -73,7 +73,7 @@ It is generally true of all the reading routines in this class that if end-of-fi
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeLong(kotlin.Long)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Writes a `long` to the file as eight bytes, high byte first. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeShort(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a `short` to the file as two bytes, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeUTF(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the file using [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) encoding in a machine-independent manner. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeUTF(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the file using [modified UTF-8](../java/io/DataInput.md) encoding in a machine-independent manner. |
 | --- | --- |
 
 | Protected methods ||
@@ -112,8 +112,8 @@ If there is a security manager, its `checkRead` method is called with the pathna
 
 | Parameters ||
 |---|---|
-| `file` | [File](https://developer.android.com/reference/kotlin/java/io/File)!: the file object |
-| `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the access mode, as described [above](https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#mode) |
+| `file` | [File](../java/io/File.md)!: the file object |
+| `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the access mode, as described [above](../java/io/RandomAccessFile.md) |
 
 | Exceptions ||
 |---|---|
@@ -140,14 +140,14 @@ RandomAccessFile(
 
 Creates a random access file stream to read from, and optionally to write to, a file with the specified name. A new `https://developer.android.com/reference/kotlin/java/io/FileDescriptor` object is created to represent the connection to the file.
 
-The mode argument specifies the access mode with which the file is to be opened. The permitted values and their meanings are as specified for the [RandomAccessFile(File,String)](https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#mode) constructor.
+The mode argument specifies the access mode with which the file is to be opened. The permitted values and their meanings are as specified for the [RandomAccessFile(File,String)](../java/io/RandomAccessFile.md) constructor.
 
 If there is a security manager, its `checkRead` method is called with the `name` argument as its argument to see if read access to the file is allowed. If the mode allows writing, the security manager's `checkWrite` method is also called with the `name` argument as its argument to see if write access to the file is allowed.
 
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the system-dependent filename |
-| `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the access [mode](https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#mode) |
+| `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the access [mode](../java/io/RandomAccessFile.md) |
 
 | Exceptions ||
 |---|---|
@@ -635,7 +635,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun readUTF(): String!
 ```
 
-Reads in a string from this file. The string has been encoded using a [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format.
+Reads in a string from this file. The string has been encoded using a [modified UTF-8](../java/io/DataInput.md) format.
 
 The first two bytes are read, starting from the current file pointer, as if by `readUnsignedShort`. This value gives the number of following bytes that are in the encoded string, not the length of the resulting string. The following bytes are then interpreted as bytes encoding characters in the modified UTF-8 format and are converted into characters.
 
@@ -1030,7 +1030,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeUTF(str: String!): Unit
 ```
 
-Writes a string to the file using [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) encoding in a machine-independent manner.
+Writes a string to the file using [modified UTF-8](../java/io/DataInput.md) encoding in a machine-independent manner.
 
 First, two bytes are written to the file, starting at the current file pointer, as if by the `writeShort` method giving the number of bytes to follow. This value is the number of bytes actually written out, not the length of the string. Following the length, each character of the string is output, in sequence, using the modified UTF-8 encoding for each character.
 

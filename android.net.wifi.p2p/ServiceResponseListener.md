@@ -4,14 +4,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # ServiceResponseListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.md) 
 | --- | --- |
 
 ```
 interface ServiceResponseListener
 ```
 
-| [android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener#) |
+| [android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener](../android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.md) |
 
 Interface for callback invocation when service discovery response other than Upnp or Bonjour is received
 
@@ -19,8 +19,8 @@ Interface for callback invocation when service discovery response other than Upn
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceAvailable](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener#onServiceAvailable(kotlin.Int,%20kotlin.ByteArray,%20android.net.wifi.p2p.WifiP2pDevice))`(`protocolType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `responseData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `srcDevice:` ` [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)!`)` The requested service response is available. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUsdBasedServiceAvailable](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener#onUsdBasedServiceAvailable(android.net.wifi.p2p.WifiP2pDevice,%20android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse))`(`srcDevice:` ` [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)`, `usdResponseData:` ` [WifiP2pUsdBasedServiceResponse](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse)`)` The requested USD based service response is available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceAvailable](../android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.md))`(`protocolType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `responseData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `srcDevice:` ` [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)!`)` The requested service response is available. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUsdBasedServiceAvailable](../android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.md))`(`srcDevice:` ` [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)`, `usdResponseData:` ` [WifiP2pUsdBasedServiceResponse](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse.md)`)` The requested USD based service response is available. |
 
 ## Public methods
 
@@ -40,9 +40,9 @@ The requested service response is available.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):protocol type. currently only [WifiP2pServiceInfo.SERVICE_TYPE_VENDOR_SPECIFIC](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int). |
+| `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):protocol type. currently only [WifiP2pServiceInfo.SERVICE_TYPE_VENDOR_SPECIFIC](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md). |
 | `responseData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:service discovery response data based on the requested service protocol type. The format depends on the service type. |
-| `srcDevice` | [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice)!:source device. |
+| `srcDevice` | [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)!:source device. |
 | --- | --- |
 
 ### onUsdBasedServiceAvailable
@@ -60,5 +60,5 @@ The requested USD based service response is available.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `srcDevice` | [WifiP2pDevice](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice):source device. This value cannot be`null`. |
-| `usdResponseData` | [WifiP2pUsdBasedServiceResponse](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse): [WifiP2pUsdBasedServiceResponse](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse). This value cannot be`null`. |
+| `srcDevice` | [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md):source device. This value cannot be`null`. |
+| `usdResponseData` | [WifiP2pUsdBasedServiceResponse](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse.md): [WifiP2pUsdBasedServiceResponse](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse.md). This value cannot be`null`. |

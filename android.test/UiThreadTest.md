@@ -5,26 +5,26 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # UiThreadTest
 
-Kotlin| [Java](https://developer.android.com/reference/android/test/UiThreadTest "View this page in Java") 
+Kotlin| [Java](../android/test/UiThreadTest.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class UiThreadTest
 ```
 
-| [android.test.UiThreadTest](https://developer.android.com/reference/kotlin/android/test/UiThreadTest#) |
+| [android.test.UiThreadTest](../android/test/UiThreadTest.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
-| Use [UiThreadTest](https://developer.android.com/reference/android/support/test/annotation/UiThreadTest.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
+| Use [UiThreadTest](../android/support/test/annotation/UiThreadTest.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
 
-This annotation can be used on an [InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase)'s test methods. When the annotation is present, the test method is executed on the application's main thread (or UI thread.) Note that instrumentation methods may not be used when this annotation is present.
+This annotation can be used on an [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)'s test methods. When the annotation is present, the test method is executed on the application's main thread (or UI thread.) Note that instrumentation methods may not be used when this annotation is present.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UiThreadTest](https://developer.android.com/reference/kotlin/android/test/UiThreadTest#UiThreadTest())`()` This annotation can be used on an [InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase)'s test methods. |
+| [UiThreadTest](../android/test/UiThreadTest.md))`()` This annotation can be used on an [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)'s test methods. |
 
 ## Public constructors
 
@@ -37,6 +37,6 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 UiThreadTest()
 ```
 
-**Deprecated:** *Use [UiThreadTest](https://developer.android.com/reference/android/support/test/annotation/UiThreadTest.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).*
+**Deprecated:** *Use [UiThreadTest](../android/support/test/annotation/UiThreadTest.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).*
 
-This annotation can be used on an [InstrumentationTestCase](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestCase)'s test methods. When the annotation is present, the test method is executed on the application's main thread (or UI thread.) Note that instrumentation methods may not be used when this annotation is present.
+This annotation can be used on an [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)'s test methods. When the annotation is present, the test method is executed on the application's main thread (or UI thread.) Note that instrumentation methods may not be used when this annotation is present.

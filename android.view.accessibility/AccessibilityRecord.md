@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # AccessibilityRecord
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord "View this page in Java") 
+Kotlin| [Java](../android/view/accessibility/AccessibilityRecord.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class AccessibilityRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.accessibility.AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#) |
+| ↳ | [android.view.accessibility.AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md) |
 
-| Known Direct Subclasses [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent) |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------| | [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent) | This class represents accessibility events that are sent by the system when something notable happens in the user interface. | |
+| Known Direct Subclasses [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md) |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------| | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md) | This class represents accessibility events that are sent by the system when something notable happens in the user interface. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Represents a record in an [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent) and contains information about state change of its source [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#). When a view fires an accessibility event it requests from its parent to dispatch the constructed event. The parent may optionally append a record for itself for providing more context to [android.accessibilityservice.AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#) s. Hence, accessibility services can facilitate additional accessibility records to enhance feedback.
+Represents a record in an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md) and contains information about state change of its source [android.view.View](../android/view/View.md). When a view fires an accessibility event it requests from its parent to dispatch the constructed event. The parent may optionally append a record for itself for providing more context to [android.accessibilityservice.AccessibilityService](../android/accessibilityservice/AccessibilityService.md) s. Hence, accessibility services can facilitate additional accessibility records to enhance feedback.
 
 <br />
 
 Once the accessibility event containing a record is dispatched the record is made immutable and calling a state mutation method generates an error.
 
-**Note:** Not all properties are applicable to all accessibility event types. For detailed information please refer to [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent).
+**Note:** Not all properties are applicable to all accessibility event types. For detailed information please refer to [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md).
 |
 | ### Developer Guides
 |
@@ -34,81 +34,81 @@ Once the accessibility event containing a record is dispatched the record is mad
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#AccessibilityRecord())`()` Creates a new [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#). |
-| [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#AccessibilityRecord(android.view.accessibility.AccessibilityRecord))`(`record:` ` [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#)`)` Copy constructor. |
+| [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md))`()` Creates a new [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md). |
+| [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md))`(`record:` ` [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md)`)` Copy constructor. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAddedCount](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getAddedCount())`()` Gets the number of added characters. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getBeforeText](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getBeforeText())`()` Gets the text before a change. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getClassName](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getClassName())`()` Gets the class name of the source. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAddedCount](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the number of added characters. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getBeforeText](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the text before a change. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getClassName](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the class name of the source. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getContentDescription](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getContentDescription())`()` Gets the description of the source. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentItemIndex](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getCurrentItemIndex())`()` Gets the index of the source in the list of items the can be visited. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisplayId](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getDisplayId())`()` Gets the id of the display from which the event comes from. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getContentDescription](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the description of the source. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentItemIndex](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the index of the source in the list of items the can be visited. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisplayId](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the id of the display from which the event comes from. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFromIndex](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getFromIndex())`()` Gets the index of the first character of the changed sequence, or the beginning of a text selection or the index of the first visible item when scrolling. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getItemCount](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getItemCount())`()` Gets the number of items that can be visited. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxScrollX](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getMaxScrollX())`()` Gets the max scroll offset of the source left edge in pixels. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFromIndex](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the index of the first character of the changed sequence, or the beginning of a text selection or the index of the first visible item when scrolling. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getItemCount](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the number of items that can be visited. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxScrollX](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the max scroll offset of the source left edge in pixels. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxScrollY](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getMaxScrollY())`()` Gets the max scroll offset of the source top edge in pixels. |
-| open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | [getParcelableData](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getParcelableData())`()` Gets the [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) data. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRemovedCount](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getRemovedCount())`()` Gets the number of removed characters. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxScrollY](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the max scroll offset of the source top edge in pixels. |
+| open [Parcelable](../android/os/Parcelable.md)? | [getParcelableData](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the [Parcelable](../android/os/Parcelable.md) data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRemovedCount](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the number of removed characters. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollDeltaX](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getScrollDeltaX())`()` Gets the difference in pixels between the horizontal position before the scroll and the current horizontal position |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollDeltaY](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getScrollDeltaY())`()` Gets the difference in pixels between the vertical position before the scroll and the current vertical position |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollX](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getScrollX())`()` Gets the scroll offset of the source left edge in pixels. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollDeltaX](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the difference in pixels between the horizontal position before the scroll and the current horizontal position |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollDeltaY](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the difference in pixels between the vertical position before the scroll and the current vertical position |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollX](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the scroll offset of the source left edge in pixels. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollY](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getScrollY())`()` Gets the scroll offset of the source top edge in pixels. |
-| open [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)? | [getSource](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getSource())`()` Gets the [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) of the event source. |
-| open [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)? | [getSource](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getSource(kotlin.Int))`(`prefetchingStrategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) of the event source. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getScrollY](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the scroll offset of the source top edge in pixels. |
+| open [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)? | [getSource](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md) of the event source. |
+| open [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)? | [getSource](../android/view/accessibility/AccessibilityRecord.md))`(`prefetchingStrategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md) of the event source. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\> | [getText](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getText())`()` Gets the text of the event. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getToIndex](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getToIndex())`()` Gets the index of text selection end or the index of the last visible item when scrolling. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWindowId](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getWindowId())`()` Gets the id of the window from which the event comes from. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\> | [getText](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the text of the event. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getToIndex](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the index of text selection end or the index of the last visible item when scrolling. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWindowId](../android/view/accessibility/AccessibilityRecord.md))`()` Gets the id of the window from which the event comes from. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChecked](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#isChecked())`()` Gets if the source is checked. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#isEnabled())`()` Gets if the source is enabled. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFullScreen](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#isFullScreen())`()` Gets if the source is taking the entire screen. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChecked](../android/view/accessibility/AccessibilityRecord.md))`()` Gets if the source is checked. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/view/accessibility/AccessibilityRecord.md))`()` Gets if the source is enabled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFullScreen](../android/view/accessibility/AccessibilityRecord.md))`()` Gets if the source is taking the entire screen. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPassword](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#isPassword())`()` Gets if the source is a password field. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isScrollable](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#isScrollable())`()` Gets if the source is scrollable. |
-| openstatic [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#) | [obtain](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#obtain())`()` Instantiates a new record. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPassword](../android/view/accessibility/AccessibilityRecord.md))`()` Gets if the source is a password field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isScrollable](../android/view/accessibility/AccessibilityRecord.md))`()` Gets if the source is scrollable. |
+| openstatic [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md) | [obtain](../android/view/accessibility/AccessibilityRecord.md))`()` Instantiates a new record. |
 | --- | --- |
-| openstatic [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#) | [obtain](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#obtain(android.view.accessibility.AccessibilityRecord))`(`record:` ` [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#)`)` Instantiates a new record initialized with data from the given record. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#recycle())`()` Would previously return an instance back to be reused. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAddedCount](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setAddedCount(kotlin.Int))`(`addedCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of added characters. |
+| openstatic [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md) | [obtain](../android/view/accessibility/AccessibilityRecord.md))`(`record:` ` [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md)`)` Instantiates a new record initialized with data from the given record. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](../android/view/accessibility/AccessibilityRecord.md))`()` Would previously return an instance back to be reused. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAddedCount](../android/view/accessibility/AccessibilityRecord.md))`(`addedCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of added characters. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBeforeText](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setBeforeText(kotlin.CharSequence))`(`beforeText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the text before a change. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChecked](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setChecked(kotlin.Boolean))`(`isChecked:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is checked. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClassName](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setClassName(kotlin.CharSequence))`(`className:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the class name of the source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBeforeText](../android/view/accessibility/AccessibilityRecord.md))`(`beforeText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the text before a change. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChecked](../android/view/accessibility/AccessibilityRecord.md))`(`isChecked:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is checked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClassName](../android/view/accessibility/AccessibilityRecord.md))`(`className:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the class name of the source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentDescription](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setContentDescription(kotlin.CharSequence))`(`contentDescription:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the description of the source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentItemIndex](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setCurrentItemIndex(kotlin.Int))`(`currentItemIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index of the source in the list of items that can be visited. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabled](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setEnabled(kotlin.Boolean))`(`isEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is enabled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentDescription](../android/view/accessibility/AccessibilityRecord.md))`(`contentDescription:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the description of the source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentItemIndex](../android/view/accessibility/AccessibilityRecord.md))`(`currentItemIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index of the source in the list of items that can be visited. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabled](../android/view/accessibility/AccessibilityRecord.md))`(`isEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is enabled. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFromIndex](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setFromIndex(kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index of the first character of the changed sequence or the beginning of a text selection or the index of the first visible item when scrolling. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFullScreen](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setFullScreen(kotlin.Boolean))`(`isFullScreen:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is taking the entire screen. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setItemCount](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setItemCount(kotlin.Int))`(`itemCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of items that can be visited. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFromIndex](../android/view/accessibility/AccessibilityRecord.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index of the first character of the changed sequence or the beginning of a text selection or the index of the first visible item when scrolling. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFullScreen](../android/view/accessibility/AccessibilityRecord.md))`(`isFullScreen:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is taking the entire screen. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setItemCount](../android/view/accessibility/AccessibilityRecord.md))`(`itemCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of items that can be visited. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxScrollX](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setMaxScrollX(kotlin.Int))`(`maxScrollX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the max scroll offset of the source left edge in pixels. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxScrollY](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setMaxScrollY(kotlin.Int))`(`maxScrollY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the max scroll offset of the source top edge in pixels. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParcelableData](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setParcelableData(android.os.Parcelable))`(`parcelableData:` ` [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)?`)` Sets the [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) data of the event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxScrollX](../android/view/accessibility/AccessibilityRecord.md))`(`maxScrollX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the max scroll offset of the source left edge in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxScrollY](../android/view/accessibility/AccessibilityRecord.md))`(`maxScrollY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the max scroll offset of the source top edge in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParcelableData](../android/view/accessibility/AccessibilityRecord.md))`(`parcelableData:` ` [Parcelable](../android/os/Parcelable.md)?`)` Sets the [Parcelable](../android/os/Parcelable.md) data of the event. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPassword](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setPassword(kotlin.Boolean))`(`isPassword:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is a password field. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRemovedCount](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setRemovedCount(kotlin.Int))`(`removedCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of removed characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollDeltaX](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setScrollDeltaX(kotlin.Int))`(`scrollDeltaX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the difference in pixels between the horizontal position before the scroll and the current horizontal position |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPassword](../android/view/accessibility/AccessibilityRecord.md))`(`isPassword:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is a password field. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRemovedCount](../android/view/accessibility/AccessibilityRecord.md))`(`removedCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of removed characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollDeltaX](../android/view/accessibility/AccessibilityRecord.md))`(`scrollDeltaX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the difference in pixels between the horizontal position before the scroll and the current horizontal position |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollDeltaY](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setScrollDeltaY(kotlin.Int))`(`scrollDeltaY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the difference in pixels between the vertical position before the scroll and the current vertical position |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollX](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setScrollX(kotlin.Int))`(`scrollX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the scroll offset of the source left edge in pixels. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollY](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setScrollY(kotlin.Int))`(`scrollY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the scroll offset of the source top edge in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollDeltaY](../android/view/accessibility/AccessibilityRecord.md))`(`scrollDeltaY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the difference in pixels between the vertical position before the scroll and the current vertical position |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollX](../android/view/accessibility/AccessibilityRecord.md))`(`scrollX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the scroll offset of the source left edge in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollY](../android/view/accessibility/AccessibilityRecord.md))`(`scrollY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the scroll offset of the source top edge in pixels. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollable](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setScrollable(kotlin.Boolean))`(`scrollable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is scrollable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSource](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setSource(android.view.View))`(`source:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?`)` Sets the event source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSource](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setSource(android.view.View,%20kotlin.Int))`(`root:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?`, `virtualDescendantId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the source to be a virtual descendant of the given`root`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScrollable](../android/view/accessibility/AccessibilityRecord.md))`(`scrollable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets if the source is scrollable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSource](../android/view/accessibility/AccessibilityRecord.md))`(`source:` ` [View](../android/view/View.md)?`)` Sets the event source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSource](../android/view/accessibility/AccessibilityRecord.md))`(`root:` ` [View](../android/view/View.md)?`, `virtualDescendantId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the source to be a virtual descendant of the given`root`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToIndex](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#setToIndex(kotlin.Int))`(`toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index of text selection end or the index of the last visible item when scrolling. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#toString())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToIndex](../android/view/accessibility/AccessibilityRecord.md))`(`toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index of text selection end or the index of the last visible item when scrolling. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/accessibility/AccessibilityRecord.md))`()` <br /> |
 
 ## Public constructors
 
@@ -120,7 +120,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 AccessibilityRecord()
 ```
 
-Creates a new [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#). 
+Creates a new [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md). 
 
 ### AccessibilityRecord
 
@@ -130,11 +130,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 AccessibilityRecord(record: AccessibilityRecord)
 ```
 
-Copy constructor. Creates a new [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#), and this instance is initialized with data from the given`record`.
+Copy constructor. Creates a new [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md), and this instance is initialized with data from the given`record`.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `record` | [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#):The other record. This value cannot be`null`. |
+| `record` | [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md):The other record. This value cannot be`null`. |
 
 ## Public methods
 
@@ -286,11 +286,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun getParcelableData(): Parcelable?
 ```
 
-Gets the [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) data.
+Gets the [Parcelable](../android/os/Parcelable.md) data.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | The parcelable data. This value may be`null`. |
+| [Parcelable](../android/os/Parcelable.md)? | The parcelable data. This value may be`null`. |
 
 ### getRemovedCount
 
@@ -370,13 +370,13 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun getSource(): AccessibilityNodeInfo?
 ```
 
-Gets the [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) of the event source.
+Gets the [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md) of the event source.
 
-**Note:** It is a client responsibility to recycle the received info by calling [AccessibilityNodeInfo#recycle()](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#recycle())to avoid creating of multiple instances.
+**Note:** It is a client responsibility to recycle the received info by calling [AccessibilityNodeInfo#recycle()](../android/view/accessibility/AccessibilityNodeInfo.md))to avoid creating of multiple instances.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)? | The info of the source. This value may be`null`. |
+| [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)? | The info of the source. This value may be`null`. |
 
 ### getSource
 
@@ -386,19 +386,19 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getSource(prefetchingStrategy: Int): AccessibilityNodeInfo?
 ```
 
-Gets the [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) of the event source.
+Gets the [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md) of the event source.
 
 | Parameters ||
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `prefetchingStrategy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the prefetching strategy. Value is either`0`or a combination of [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_ANCESTORS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_ANCESTORS:kotlin.Int), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_SIBLINGS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_SIBLINGS:kotlin.Int), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_HYBRID](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_HYBRID:kotlin.Int), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_DEPTH_FIRST](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_DEPTH_FIRST:kotlin.Int), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_BREADTH_FIRST](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_BREADTH_FIRST:kotlin.Int), and [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_UNINTERRUPTIBLE](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_UNINTERRUPTIBLE:kotlin.Int) |
+| `prefetchingStrategy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the prefetching strategy. Value is either`0`or a combination of [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_ANCESTORS](../android/view/accessibility/AccessibilityNodeInfo.md), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_SIBLINGS](../android/view/accessibility/AccessibilityNodeInfo.md), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_HYBRID](../android/view/accessibility/AccessibilityNodeInfo.md), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_DEPTH_FIRST](../android/view/accessibility/AccessibilityNodeInfo.md), [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_DESCENDANTS_BREADTH_FIRST](../android/view/accessibility/AccessibilityNodeInfo.md), and [android.view.accessibility.AccessibilityNodeInfo#FLAG_PREFETCH_UNINTERRUPTIBLE](../android/view/accessibility/AccessibilityNodeInfo.md) |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo)? | The info of the source. This value may be`null`. |
+| [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)? | The info of the source. This value may be`null`. |
 
 **See Also**
 
-- [android.view.accessibility.AccessibilityNodeInfo#getParent(int)](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent(kotlin.Int)) 
+- [android.view.accessibility.AccessibilityNodeInfo#getParent(int)](../android/view/accessibility/AccessibilityNodeInfo.md)) 
 
 ### getText
 
@@ -521,13 +521,13 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open static fun obtain(): AccessibilityRecord
 ```
 
-**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor [AccessibilityRecord()](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#AccessibilityRecord())instead.*
+**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor [AccessibilityRecord()](../android/view/accessibility/AccessibilityRecord.md))instead.*
 
 Instantiates a new record.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#) | An instance. This value cannot be`null`. |
+| [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md) | An instance. This value cannot be`null`. |
 
 ### obtain
 
@@ -538,17 +538,17 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open static fun obtain(record: AccessibilityRecord): AccessibilityRecord
 ```
 
-**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor [AccessibilityRecord()](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#AccessibilityRecord())instead.*
+**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor [AccessibilityRecord()](../android/view/accessibility/AccessibilityRecord.md))instead.*
 
 Instantiates a new record initialized with data from the given record.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `record` | [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#):This value cannot be`null`. |
+| `record` | [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md):This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| [AccessibilityRecord](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#) | An instance. This value cannot be`null`. |
+| [AccessibilityRecord](../android/view/accessibility/AccessibilityRecord.md) | An instance. This value cannot be`null`. |
 
 ### recycle
 
@@ -779,11 +779,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun setParcelableData(parcelableData: Parcelable?): Unit
 ```
 
-Sets the [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) data of the event.
+Sets the [Parcelable](../android/os/Parcelable.md) data of the event.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `parcelableData` | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)?:The parcelable data. This value may be`null`. |
+| `parcelableData` | [Parcelable](../android/os/Parcelable.md)?:The parcelable data. This value may be`null`. |
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------|
@@ -911,7 +911,7 @@ Sets the event source.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------|
-| `source` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?:The source. This value may be`null`. |
+| `source` | [View](../android/view/View.md)?:The source. This value may be`null`. |
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------|
@@ -928,13 +928,13 @@ open fun setSource(
 ): Unit
 ```
 
-Sets the source to be a virtual descendant of the given`root`. If`virtualDescendantId`equals to [View.NO_ID](https://developer.android.com/reference/kotlin/android/view/View.html#NO_ID:kotlin.Int) the root is set as the source.
+Sets the source to be a virtual descendant of the given`root`. If`virtualDescendantId`equals to [View.NO_ID](../android/view/View.md) the root is set as the source.
 
 A virtual descendant is an imaginary View that is reported as a part of the view hierarchy for accessibility purposes. This enables custom views that draw complex content to report them selves as a tree of virtual views, thus conveying their logical structure.
 
 | Parameters ||
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `root` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?:The root of the virtual subtree. This value may be`null`. |
+| `root` | [View](../android/view/View.md)?:The root of the virtual subtree. This value may be`null`. |
 | `virtualDescendantId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The id of the virtual descendant. |
 
 ### setToIndex

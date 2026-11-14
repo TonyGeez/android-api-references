@@ -4,32 +4,32 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # RemoteViewsFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory "View this page in Java") 
+Kotlin| [Java](../android/widget/RemoteViewsService.RemoteViewsFactory.md) 
 | --- | --- |
 
 ```
 interface RemoteViewsFactory
 ```
 
-| [android.widget.RemoteViewsService.RemoteViewsFactory](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#) |
+| [android.widget.RemoteViewsService.RemoteViewsFactory](../android/widget/RemoteViewsService.RemoteViewsFactory.md) |
 
-An interface for an adapter between a remote collection view (ListView, GridView, etc) and the underlying data for that view. The implementor is responsible for making a RemoteView for each item in the data set. This interface is a thin wrapper around [Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter).
+An interface for an adapter between a remote collection view (ListView, GridView, etc) and the underlying data for that view. The implementor is responsible for making a RemoteView for each item in the data set. This interface is a thin wrapper around [Adapter](../android/widget/Adapter.md).
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getCount())`()` See [Adapter.getCount()](https://developer.android.com/reference/kotlin/android/widget/Adapter#getCount()) |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getItemId](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getItemId(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See [Adapter.getItemId(int)](https://developer.android.com/reference/kotlin/android/widget/Adapter#getItemId(kotlin.Int)). |
-| abstract [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews)! | [getLoadingView](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getLoadingView())`()` This allows for the use of a custom loading view which appears between the time that [getViewAt(int)](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getViewAt(kotlin.Int))is called and returns. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`()` See [Adapter.getCount()](../android/widget/Adapter.md)) |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getItemId](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See [Adapter.getItemId(int)](../android/widget/Adapter.md)). |
+| abstract [RemoteViews](../android/widget/RemoteViews.md)! | [getLoadingView](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`()` This allows for the use of a custom loading view which appears between the time that [getViewAt(int)](../android/widget/RemoteViewsService.RemoteViewsFactory.md))is called and returns. |
 | --- | --- |
-| abstract [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews)! | [getViewAt](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getViewAt(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See [Adapter.getView(int, android.view.View, android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/widget/Adapter#getView(kotlin.Int,%20android.view.View,%20android.view.ViewGroup)). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewTypeCount](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getViewTypeCount())`()` See [Adapter.getViewTypeCount()](https://developer.android.com/reference/kotlin/android/widget/Adapter#getViewTypeCount()). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#hasStableIds())`()` See [Adapter.hasStableIds()](https://developer.android.com/reference/kotlin/android/widget/Adapter#hasStableIds()). |
+| abstract [RemoteViews](../android/widget/RemoteViews.md)! | [getViewAt](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See [Adapter.getView(int, android.view.View, android.view.ViewGroup)](../android/widget/Adapter.md)). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewTypeCount](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`()` See [Adapter.getViewTypeCount()](../android/widget/Adapter.md)). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`()` See [Adapter.hasStableIds()](../android/widget/Adapter.md)). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCreate](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#onCreate())`()` Called when your factory is first constructed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataSetChanged](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#onDataSetChanged())`()` Called when notifyDataSetChanged() is triggered on the remote adapter. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroy](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#onDestroy())`()` Called when the last RemoteViewsAdapter that is associated with this factory is unbound. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCreate](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`()` Called when your factory is first constructed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataSetChanged](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`()` Called when notifyDataSetChanged() is triggered on the remote adapter. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroy](../android/widget/RemoteViewsService.RemoteViewsFactory.md))`()` Called when the last RemoteViewsAdapter that is associated with this factory is unbound. |
 | --- | --- |
 
 ## Public methods
@@ -42,7 +42,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getCount(): Int
 ```
 
-See [Adapter.getCount()](https://developer.android.com/reference/kotlin/android/widget/Adapter#getCount())
+See [Adapter.getCount()](../android/widget/Adapter.md))
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------|
@@ -56,7 +56,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getItemId(position: Int): Long
 ```
 
-See [Adapter.getItemId(int)](https://developer.android.com/reference/kotlin/android/widget/Adapter#getItemId(kotlin.Int)).
+See [Adapter.getItemId(int)](../android/widget/Adapter.md)).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -74,11 +74,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getLoadingView(): RemoteViews!
 ```
 
-This allows for the use of a custom loading view which appears between the time that [getViewAt(int)](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getViewAt(kotlin.Int))is called and returns. If null is returned, a default loading view will be used.
+This allows for the use of a custom loading view which appears between the time that [getViewAt(int)](../android/widget/RemoteViewsService.RemoteViewsFactory.md))is called and returns. If null is returned, a default loading view will be used.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews)! | The RemoteViews representing the desired loading view. |
+| [RemoteViews](../android/widget/RemoteViews.md)! | The RemoteViews representing the desired loading view. |
 
 ### getViewAt
 
@@ -88,7 +88,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getViewAt(position: Int): RemoteViews!
 ```
 
-See [Adapter.getView(int, android.view.View, android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/widget/Adapter#getView(kotlin.Int,%20android.view.View,%20android.view.ViewGroup)). Note: expensive tasks can be safely performed synchronously within this method, and a loading view will be displayed in the interim. See [getLoadingView()](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.RemoteViewsFactory#getLoadingView()).
+See [Adapter.getView(int, android.view.View, android.view.ViewGroup)](../android/widget/Adapter.md)). Note: expensive tasks can be safely performed synchronously within this method, and a loading view will be displayed in the interim. See [getLoadingView()](../android/widget/RemoteViewsService.RemoteViewsFactory.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -96,7 +96,7 @@ See [Adapter.getView(int, android.view.View, android.view.ViewGroup)](https://de
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews)! | A RemoteViews object corresponding to the data at the specified position. |
+| [RemoteViews](../android/widget/RemoteViews.md)! | A RemoteViews object corresponding to the data at the specified position. |
 
 ### getViewTypeCount
 
@@ -106,7 +106,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getViewTypeCount(): Int
 ```
 
-See [Adapter.getViewTypeCount()](https://developer.android.com/reference/kotlin/android/widget/Adapter#getViewTypeCount()).
+See [Adapter.getViewTypeCount()](../android/widget/Adapter.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -120,7 +120,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun hasStableIds(): Boolean
 ```
 
-See [Adapter.hasStableIds()](https://developer.android.com/reference/kotlin/android/widget/Adapter#hasStableIds()).
+See [Adapter.hasStableIds()](../android/widget/Adapter.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------|

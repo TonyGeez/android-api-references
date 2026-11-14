@@ -4,5 +4,5 @@
 
 ## Classes
 
-| [CharsetProvider](https://developer.android.com/reference/kotlin/java/nio/charset/spi/CharsetProvider) | Charset service-provider class. |
+| [CharsetProvider](../java/nio/charset/spi/CharsetProvider.md) | Charset service-provider class. |
 | --- | --- |

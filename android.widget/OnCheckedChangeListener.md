@@ -2,14 +2,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnCheckedChangeListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/widget/CompoundButton.OnCheckedChangeListener "View this page in Java")
+Kotlin | [Java](../android/widget/CompoundButton.OnCheckedChangeListener.md)
 | --- | --- |
 
 ```
 interface OnCheckedChangeListener
 ```
 
-| [android.widget.CompoundButton.OnCheckedChangeListener](https://developer.android.com/reference/kotlin/android/widget/CompoundButton.OnCheckedChangeListener#) |
+| [android.widget.CompoundButton.OnCheckedChangeListener](../android/widget/CompoundButton.OnCheckedChangeListener.md) |
 
 Interface definition for a callback to be invoked when the checked state of a compound button changed.
 
@@ -36,5 +36,5 @@ Called when the checked state of a compound button has changed.
 
 | Parameters ||
 |---|---|
-| `buttonView` | [CompoundButton](https://developer.android.com/reference/kotlin/android/widget/CompoundButton): The compound button view whose state has changed. This value cannot be `null`. |
+| `buttonView` | [CompoundButton](../android/widget/CompoundButton.md): The compound button view whose state has changed. This value cannot be `null`. |
 | `isChecked` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The new checked state of buttonView. |

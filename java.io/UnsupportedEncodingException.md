@@ -11,10 +11,10 @@ open class UnsupportedEncodingException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.UnsupportedEncodingException](https://developer.android.com/reference/kotlin/java/io/UnsupportedEncodingException#) |
+| | | | ↳ | [java.io.UnsupportedEncodingException](../java/io/UnsupportedEncodingException.md) |
 
 The Character Encoding is not supported.
 
@@ -22,8 +22,8 @@ The Character Encoding is not supported.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedEncodingException](https://developer.android.com/reference/kotlin/java/io/UnsupportedEncodingException#UnsupportedEncodingException())`()` Constructs an UnsupportedEncodingException without a detail message. |
-| [UnsupportedEncodingException](https://developer.android.com/reference/kotlin/java/io/UnsupportedEncodingException#UnsupportedEncodingException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an UnsupportedEncodingException with a detail message. |
+| [UnsupportedEncodingException](../java/io/UnsupportedEncodingException.md))`()` Constructs an UnsupportedEncodingException without a detail message. |
+| [UnsupportedEncodingException](../java/io/UnsupportedEncodingException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an UnsupportedEncodingException with a detail message. |
 
 ## Public constructors
 

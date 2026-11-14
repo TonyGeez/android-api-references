@@ -8,7 +8,7 @@ open class StreamSource : Source
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.transform.stream.StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#) |
+| ↳ | [javax.xml.transform.stream.StreamSource](../javax/xml/transform/stream/StreamSource.md) |
 
 Acts as an holder for a transformation Source in the form of a stream of XML markup.
 
@@ -32,9 +32,9 @@ Acts as an holder for a transformation Source in the form of a stream of XML mar
 
 | Public methods ||
 |---|---|
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getInputStream()()` Get the byte stream that was set with setByteStream. |
+| open [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getInputStream()()` Get the byte stream that was set with setByteStream. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getPublicId()()` Get the public identifier that was set with setPublicId. |
-| open [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getReader()()` Get the character stream that was set with setReader. |
+| open [Reader](../java/io/Reader.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getReader()()` Get the character stream that was set with setReader. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getSystemId()()` Get the system identifier that was set with setSystemId. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setInputStream(java.io.InputStream)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Set the byte stream to be used as input. |
@@ -86,7 +86,7 @@ Construct a StreamSource from a File.
 
 | Parameters ||
 |---|---|
-| `f` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: Must a non-null File reference. |
+| `f` | [File](../java/io/File.md)!: Must a non-null File reference. |
 
 ### StreamSource
 
@@ -102,7 +102,7 @@ If this constructor is used to process a stylesheet, normally setSystemId should
 
 | Parameters ||
 |---|---|
-| `inputStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: A valid InputStream reference to an XML stream. |
+| `inputStream` | [InputStream](../java/io/InputStream.md)!: A valid InputStream reference to an XML stream. |
 
 ### StreamSource
 
@@ -120,7 +120,7 @@ This constructor allows the systemID to be set in addition to the input stream, 
 
 | Parameters ||
 |---|---|
-| `inputStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: A valid InputStream reference to an XML stream. |
+| `inputStream` | [InputStream](../java/io/InputStream.md)!: A valid InputStream reference to an XML stream. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Must be a String that conforms to the URI syntax. |
 
 ### StreamSource
@@ -135,7 +135,7 @@ Construct a StreamSource from a character reader. Normally, a stream should be u
 
 | Parameters ||
 |---|---|
-| `reader` | [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!: A valid Reader reference to an XML character stream. |
+| `reader` | [Reader](../java/io/Reader.md)!: A valid Reader reference to an XML character stream. |
 
 ### StreamSource
 
@@ -151,7 +151,7 @@ Construct a StreamSource from a character reader. Normally, a stream should be u
 
 | Parameters ||
 |---|---|
-| `reader` | [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!: A valid Reader reference to an XML character stream. |
+| `reader` | [Reader](../java/io/Reader.md)!: A valid Reader reference to an XML character stream. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Must be a String that conforms to the URI syntax. |
 
 ### StreamSource
@@ -240,7 +240,7 @@ If this Source object is used to process a stylesheet, normally setSystemId shou
 
 | Parameters ||
 |---|---|
-| `inputStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: A valid InputStream reference to an XML stream. |
+| `inputStream` | [InputStream](../java/io/InputStream.md)!: A valid InputStream reference to an XML stream. |
 
 ### setPublicId
 
@@ -270,7 +270,7 @@ Set the input to be a character reader. Normally, a stream should be used rather
 
 | Parameters ||
 |---|---|
-| `reader` | [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!: A valid Reader reference to an XML CharacterStream. |
+| `reader` | [Reader](../java/io/Reader.md)!: A valid Reader reference to an XML CharacterStream. |
 
 ### setSystemId
 
@@ -284,7 +284,7 @@ Set the system ID from a File reference.
 
 | Parameters ||
 |---|---|
-| `f` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: Must a non-null File reference. |
+| `f` | [File](../java/io/File.md)!: Must a non-null File reference. |
 
 ### setSystemId
 

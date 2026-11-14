@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # BounceInterpolator
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/animation/BounceInterpolator "View this page in Java") 
+Kotlin| [Java](../android/view/animation/BounceInterpolator.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class BounceInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BaseInterpolator) ||
-| | ↳ | [android.view.animation.BounceInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BounceInterpolator#) |
+| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.BounceInterpolator](../android/view/animation/BounceInterpolator.md) |
 
 An interpolator where the change bounces at the end.
 
@@ -22,12 +22,12 @@ An interpolator where the change bounces at the end.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BounceInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BounceInterpolator#BounceInterpolator())`()` <br /> |
-| [BounceInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/BounceInterpolator#BounceInterpolator(android.content.Context,%20android.util.AttributeSet))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!`)` <br /> |
+| [BounceInterpolator](../android/view/animation/BounceInterpolator.md))`()` <br /> |
+| [BounceInterpolator](../android/view/animation/BounceInterpolator.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](https://developer.android.com/reference/kotlin/android/view/animation/BounceInterpolator#getInterpolation(kotlin.Float))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](../android/view/animation/BounceInterpolator.md))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 ## Public constructors
 

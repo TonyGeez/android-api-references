@@ -8,7 +8,7 @@ class EditingSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.EditingSession](https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#) |
+| ↳ | [android.media.metrics.EditingSession](../android/media/metrics/EditingSession.md) |
 
 Represents a session of media editing, for example, transcoding between formats, transmuxing or applying trimming or audio/video effects to a stream.
 
@@ -18,7 +18,7 @@ Represents a session of media editing, for example, transcoding between formats,
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#getSessionId()()` <br /> |
+| [LogSessionId](../android/media/metrics/LogSessionId.md) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#getSessionId()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/EditingSession#reportBundleMetrics(android.os.PersistableBundle)(metrics: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` <br /> |
@@ -112,7 +112,7 @@ fun reportBundleMetrics(metrics: PersistableBundle): Unit
 
 | Parameters ||
 |---|---|
-| `metrics` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#): This value cannot be `null`. |
+| `metrics` | [PersistableBundle](../android/os/PersistableBundle.md): This value cannot be `null`. |
 
 ### reportEditingEndedEvent
 
@@ -126,4 +126,4 @@ Reports that an editing operation ended.
 
 | Parameters ||
 |---|---|
-| `editingEndedEvent` | [EditingEndedEvent](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent): This value cannot be `null`. |
+| `editingEndedEvent` | [EditingEndedEvent](../android/media/metrics/EditingEndedEvent.md): This value cannot be `null`. |

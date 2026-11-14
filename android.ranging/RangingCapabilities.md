@@ -8,7 +8,7 @@ class RangingCapabilities : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.RangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#) |
+| ↳ | [android.ranging.RangingCapabilities](../android/ranging/RangingCapabilities.md) |
 
 Represents the capabilities and availability of various ranging technologies.
 
@@ -41,13 +41,13 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [BleCsRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getCsCapabilities()()` Gets the BLE channel sounding ranging capabilities. |
+| [BleCsRangingCapabilities](../android/ranging/ble/cs/BleCsRangingCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getCsCapabilities()()` Gets the BLE channel sounding ranging capabilities. |
 | --- | --- |
-| [RttRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/wifi/rtt/RttRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getRttRangingCapabilities()()` Gets the WiFi NAN-RTT ranging capabilities. |
+| [RttRangingCapabilities](../android/ranging/wifi/rtt/RttRangingCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getRttRangingCapabilities()()` Gets the WiFi NAN-RTT ranging capabilities. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getTechnologyAvailability()()` Gets a map containing the availability of various ranging technologies. |
-| [UwbRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getUwbCapabilities()()` Gets the UWB ranging capabilities. |
+| [UwbRangingCapabilities](../android/ranging/uwb/UwbRangingCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getUwbCapabilities()()` Gets the UWB ranging capabilities. |
 | --- | --- |
-| [WifiPdRangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/wifi/pd/WifiPdRangingCapabilities)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getWifiPdRangingCapabilities()()` Gets the WiFi PD ranging capabilities. |
+| [WifiPdRangingCapabilities](../android/ranging/wifi/pd/WifiPdRangingCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#getWifiPdRangingCapabilities()()` Gets the WiFi PD ranging capabilities. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -55,7 +55,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RangingCapabilities](../android/ranging/RangingCapabilities.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -284,7 +284,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

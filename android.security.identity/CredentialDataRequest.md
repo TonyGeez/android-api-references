@@ -9,7 +9,7 @@ open class CredentialDataRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.CredentialDataRequest](https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#) |
+| ↳ | [android.security.identity.CredentialDataRequest](../android/security/identity/CredentialDataRequest.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**

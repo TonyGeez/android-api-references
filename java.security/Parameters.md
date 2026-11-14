@@ -8,6 +8,6 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface Parameters
 ```
 
-| [java.security.Policy.Parameters](https://developer.android.com/reference/kotlin/java/security/Policy.Parameters#) |
+| [java.security.Policy.Parameters](../java/security/Policy.Parameters.md) |
 
 ## Summary

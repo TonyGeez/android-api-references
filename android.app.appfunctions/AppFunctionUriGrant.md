@@ -8,7 +8,7 @@ class AppFunctionUriGrant : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appfunctions.AppFunctionUriGrant](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#) |
+| ↳ | [android.app.appfunctions.AppFunctionUriGrant](../android/app/appfunctions/AppFunctionUriGrant.md) |
 
 `https://developer.android.com/reference/kotlin/android/net/Uri.html#` for which access permission is to be granted to the caller of android.app.appfunctions.AppFunctionManager#executeAppFunction, provided to `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse`.
 
@@ -44,7 +44,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#getModeFlags()()` Returns the access mode flags. |
 | --- | --- |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#getUri()()` Returns the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to be granted. |
+| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#getUri()()` Returns the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to be granted. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -52,7 +52,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AppFunctionUriGrant](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppFunctionUriGrant](../android/app/appfunctions/AppFunctionUriGrant.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionUriGrant#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -70,7 +70,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/app/appfun
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to be granted. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to be granted. This value cannot be `null`. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access mode flags. This value must include at least one of `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`. It may optionally also include `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PREFIX_URI_PERMISSION:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PREFIX_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int` |
 
 ## Public methods
@@ -194,7 +194,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -9,18 +9,18 @@ Deprecated in [API level 9](https://developer.android.com/guide/topics/manifest/
 interface DocumentHandler
 ```
 
-| [org.xml.sax.DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#) |
+| [org.xml.sax.DocumentHandler](../org/xml/sax/DocumentHandler.md) |
 
-| Known Direct Subclasses [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase), [ParserAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserAdapter) |---------------------------------------------------------------------------------------------------|------------------------------------------| | [HandlerBase](https://developer.android.com/reference/kotlin/org/xml/sax/HandlerBase) | Default base class for handlers. | | [ParserAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserAdapter) | Adapt a SAX1 Parser as a SAX2 XMLReader. | |
+| Known Direct Subclasses [HandlerBase](../org/xml/sax/HandlerBase.md), [ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md) |---------------------------------------------------------------------------------------------------|------------------------------------------| | [HandlerBase](../org/xml/sax/HandlerBase.md) | Default base class for handlers. | | [ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md) | Adapt a SAX1 Parser as a SAX2 XMLReader. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 9.**
 |
-| This interface has been replaced by the SAX2 [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler) interface, which includes Namespace support.
+| This interface has been replaced by the SAX2 [ContentHandler](../org/xml/sax/ContentHandler.md) interface, which includes Namespace support.
 
 Receive notification of general document events.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-This was the main event-handling interface for SAX1; in SAX2, it has been replaced by [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler), which provides Namespace support and reporting of skipped entities. This interface is included in SAX2 only to support legacy SAX1 applications.
+This was the main event-handling interface for SAX1; in SAX2, it has been replaced by [ContentHandler](../org/xml/sax/ContentHandler.md), which provides Namespace support and reporting of skipped entities. This interface is included in SAX2 only to support legacy SAX1 applications.
 
 The order of events in this interface is very important, and mirrors the order of information in the document itself. For example, all of an element's content (character data, processing instructions, and/or subelements) will appear, in order, between the startElement event and the corresponding endElement event.
 
@@ -30,16 +30,16 @@ Application writers who do not want to implement the entire interface can derive
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#characters(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of character data. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#endDocument())`()` Receive notification of the end of a document. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#endElement(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the end of an element. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](../org/xml/sax/DocumentHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of character data. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](../org/xml/sax/DocumentHandler.md))`()` Receive notification of the end of a document. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](../org/xml/sax/DocumentHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the end of an element. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#ignorableWhitespace(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of ignorable whitespace in element content. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#processingInstruction(kotlin.String,%20kotlin.String))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a processing instruction. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#setDocumentLocator(org.xml.sax.Locator))`(`locator:` ` [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator)!`)` Receive an object for locating the origin of SAX document events. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](../org/xml/sax/DocumentHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of ignorable whitespace in element content. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](../org/xml/sax/DocumentHandler.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a processing instruction. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](../org/xml/sax/DocumentHandler.md))`(`locator:` ` [Locator](../org/xml/sax/Locator.md)!`)` Receive an object for locating the origin of SAX document events. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#startDocument())`()` Receive notification of the beginning of a document. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#startElement(kotlin.String,%20org.xml.sax.AttributeList))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `atts:` ` [AttributeList](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList)!`)` Receive notification of the beginning of an element. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](../org/xml/sax/DocumentHandler.md))`()` Receive notification of the beginning of a document. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](../org/xml/sax/DocumentHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `atts:` ` [AttributeList](../org/xml/sax/AttributeList.md)!`)` Receive notification of the beginning of an element. |
 
 ## Public methods
 
@@ -78,8 +78,8 @@ Note that some parsers will report whitespace using the ignorableWhitespace() me
 
 **See Also**
 
-- [#ignorableWhitespace](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#ignorableWhitespace(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))
-- [org.xml.sax.Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator) 
+- [#ignorableWhitespace](../org/xml/sax/DocumentHandler.md))
+- [org.xml.sax.Locator](../org/xml/sax/Locator.md) 
 
 ### endDocument
 
@@ -158,7 +158,7 @@ The application must not attempt to read from the array outside of the specified
 
 **See Also**
 
-- [#characters](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#characters(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)) 
+- [#characters](../org/xml/sax/DocumentHandler.md)) 
 
 ### processingInstruction
 
@@ -208,11 +208,11 @@ Note that the locator will return correct information only during the invocation
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locator` | [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator)!:An object that can return the location of any SAX document event. |
+| `locator` | [Locator](../org/xml/sax/Locator.md)!:An object that can return the location of any SAX document event. |
 
 **See Also**
 
-- [org.xml.sax.Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator) 
+- [org.xml.sax.Locator](../org/xml/sax/Locator.md) 
 
 ### startDocument
 
@@ -254,7 +254,7 @@ If the element name has a namespace prefix, the prefix will still be attached. N
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The element type name. |
-| `atts` | [AttributeList](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList)!:The attributes attached to the element, if any. |
+| `atts` | [AttributeList](../org/xml/sax/AttributeList.md)!:The attributes attached to the element, if any. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -262,5 +262,5 @@ If the element name has a namespace prefix, the prefix will still be attached. N
 
 **See Also**
 
-- [#endElement](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#endElement(kotlin.String))
-- [org.xml.sax.AttributeList](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList)
+- [#endElement](../org/xml/sax/DocumentHandler.md))
+- [org.xml.sax.AttributeList](../org/xml/sax/AttributeList.md)

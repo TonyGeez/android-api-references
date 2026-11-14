@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # VersionedPackage
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/pm/VersionedPackage "View this page in Java")
+Kotlin | [Java](../android/content/pm/VersionedPackage.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class VersionedPackage : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage#) |
+| ↳ | [android.content.pm.VersionedPackage](../android/content/pm/VersionedPackage.md) |
 
 Encapsulates a package and its version code.
 
@@ -41,7 +41,7 @@ Encapsulates a package and its version code.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VersionedPackage](../android/content/pm/VersionedPackage.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 

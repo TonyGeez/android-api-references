@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioDeviceCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AudioDeviceCallback "View this page in Java") 
+Kotlin| [Java](../android/media/AudioDeviceCallback.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class AudioDeviceCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioDeviceCallback](https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback#) |
+| ↳ | [android.media.AudioDeviceCallback](../android/media/AudioDeviceCallback.md) |
 
 AudioDeviceCallback defines the mechanism by which applications can receive notifications of audio device connection and disconnection events.
 
@@ -21,12 +21,12 @@ AudioDeviceCallback defines the mechanism by which applications can receive noti
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AudioDeviceCallback](https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback#AudioDeviceCallback())`()` <br /> |
+| [AudioDeviceCallback](../android/media/AudioDeviceCallback.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioDevicesAdded](https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback#onAudioDevicesAdded(kotlin.Array))`(`addedDevices:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)!>!`)` Called by the [AudioManager](https://developer.android.com/reference/kotlin/android/media/AudioManager) to indicate that one or more audio devices have been connected. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioDevicesRemoved](https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback#onAudioDevicesRemoved(kotlin.Array))`(`removedDevices:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)!>!`)` Called by the [AudioManager](https://developer.android.com/reference/kotlin/android/media/AudioManager) to indicate that one or more audio devices have been disconnected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioDevicesAdded](../android/media/AudioDeviceCallback.md))`(`addedDevices:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!>!`)` Called by the [AudioManager](../android/media/AudioManager.md) to indicate that one or more audio devices have been connected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioDevicesRemoved](../android/media/AudioDeviceCallback.md))`(`removedDevices:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!>!`)` Called by the [AudioManager](../android/media/AudioManager.md) to indicate that one or more audio devices have been disconnected. |
 
 ## Public constructors
 
@@ -46,11 +46,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun onAudioDevicesAdded(addedDevices: Array<AudioDeviceInfo!>!): Unit
 ```
 
-Called by the [AudioManager](https://developer.android.com/reference/kotlin/android/media/AudioManager) to indicate that one or more audio devices have been connected.
+Called by the [AudioManager](../android/media/AudioManager.md) to indicate that one or more audio devices have been connected.
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `addedDevices` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)!\>!:An array of [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo) objects corresponding to any newly added audio devices. |
+| `addedDevices` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!\>!:An array of [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) objects corresponding to any newly added audio devices. |
 
 ### onAudioDevicesRemoved
 
@@ -60,8 +60,8 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun onAudioDevicesRemoved(removedDevices: Array<AudioDeviceInfo!>!): Unit
 ```
 
-Called by the [AudioManager](https://developer.android.com/reference/kotlin/android/media/AudioManager) to indicate that one or more audio devices have been disconnected.
+Called by the [AudioManager](../android/media/AudioManager.md) to indicate that one or more audio devices have been disconnected.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `removedDevices` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)!\>!:An array of [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo) objects corresponding to any newly removed audio devices. |
+| `removedDevices` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!\>!:An array of [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) objects corresponding to any newly removed audio devices. |

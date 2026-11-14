@@ -11,11 +11,11 @@ open class NotSerializableException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](https://developer.android.com/reference/kotlin/java/io/ObjectStreamException) ||
-| | | | | ↳ | [java.io.NotSerializableException](https://developer.android.com/reference/kotlin/java/io/NotSerializableException#) |
+| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.NotSerializableException](../java/io/NotSerializableException.md) |
 
 Thrown when an instance is required to have a Serializable interface. The serialization runtime or the class of the instance can throw this exception. The argument should be the name of the class.
 
@@ -23,8 +23,8 @@ Thrown when an instance is required to have a Serializable interface. The serial
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NotSerializableException](https://developer.android.com/reference/kotlin/java/io/NotSerializableException#NotSerializableException())`()` Constructs a NotSerializableException object. |
-| [NotSerializableException](https://developer.android.com/reference/kotlin/java/io/NotSerializableException#NotSerializableException(kotlin.String))`(`classname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NotSerializableException object with message string. |
+| [NotSerializableException](../java/io/NotSerializableException.md))`()` Constructs a NotSerializableException object. |
+| [NotSerializableException](../java/io/NotSerializableException.md))`(`classname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NotSerializableException object with message string. |
 
 ## Public constructors
 

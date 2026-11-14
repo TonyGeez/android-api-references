@@ -10,9 +10,9 @@ open class LocatorImpl : Locator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.LocatorImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#) |
+| ↳ | [org.xml.sax.helpers.LocatorImpl](../org/xml/sax/helpers/LocatorImpl.md) |
 
-| Known Direct Subclasses [Locator2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl.html#) |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Locator2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2Impl.html#) | SAX2 extension helper for holding additional Entity information, implementing the [Locator2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Locator2.html#) interface. | |
+| Known Direct Subclasses [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md) |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md) | SAX2 extension helper for holding additional Entity information, implementing the [Locator2](../org/xml/sax/ext/Locator2.md) interface. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Provide an optional convenience implementation of Locator.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
@@ -44,21 +44,21 @@ Normally, parser writers will not use this class, since it is more efficient to 
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocatorImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#LocatorImpl())`()` Zero-argument constructor. |
-| [LocatorImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#LocatorImpl(org.xml.sax.Locator))`(`locator:` ` [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#)!`)` Copy constructor. |
+| [LocatorImpl](../org/xml/sax/helpers/LocatorImpl.md))`()` Zero-argument constructor. |
+| [LocatorImpl](../org/xml/sax/helpers/LocatorImpl.md))`(`locator:` ` [Locator](../org/xml/sax/Locator.md)!`)` Copy constructor. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getColumnNumber())`()` Return the saved column number (1-based). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getLineNumber())`()` Return the saved line number (1-based). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getPublicId())`()` Return the saved public identifier. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](../org/xml/sax/helpers/LocatorImpl.md))`()` Return the saved column number (1-based). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](../org/xml/sax/helpers/LocatorImpl.md))`()` Return the saved line number (1-based). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../org/xml/sax/helpers/LocatorImpl.md))`()` Return the saved public identifier. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getSystemId())`()` Return the saved system identifier. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColumnNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setColumnNumber(kotlin.Int))`(`columnNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the column number for this locator (1-based). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLineNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setLineNumber(kotlin.Int))`(`lineNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the line number for this locator (1-based). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org/xml/sax/helpers/LocatorImpl.md))`()` Return the saved system identifier. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColumnNumber](../org/xml/sax/helpers/LocatorImpl.md))`(`columnNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the column number for this locator (1-based). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLineNumber](../org/xml/sax/helpers/LocatorImpl.md))`(`lineNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the line number for this locator (1-based). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setPublicId(kotlin.String))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the public identifier for this locator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setSystemId(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this locator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](../org/xml/sax/helpers/LocatorImpl.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the public identifier for this locator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../org/xml/sax/helpers/LocatorImpl.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this locator. |
 
 ## Public constructors
 
@@ -88,7 +88,7 @@ Create a persistent copy of the current state of a locator. When the original lo
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------|
-| `locator` | [Locator](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#)!:The locator to copy. |
+| `locator` | [Locator](../org/xml/sax/Locator.md)!:The locator to copy. |
 
 ## Public methods
 
@@ -108,8 +108,8 @@ Return the saved column number (1-based).
 
 **See Also**
 
-- [org.xml.sax.Locator#getColumnNumber](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#getColumnNumber())
-- [#setColumnNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setColumnNumber(kotlin.Int)) 
+- [org.xml.sax.Locator#getColumnNumber](../org/xml/sax/Locator.md))
+- [#setColumnNumber](../org/xml/sax/helpers/LocatorImpl.md)) 
 
 ### getLineNumber
 
@@ -127,8 +127,8 @@ Return the saved line number (1-based).
 
 **See Also**
 
-- [org.xml.sax.Locator#getLineNumber](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#getLineNumber())
-- [#setLineNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setLineNumber(kotlin.Int)) 
+- [org.xml.sax.Locator#getLineNumber](../org/xml/sax/Locator.md))
+- [#setLineNumber](../org/xml/sax/helpers/LocatorImpl.md)) 
 
 ### getPublicId
 
@@ -146,8 +146,8 @@ Return the saved public identifier.
 
 **See Also**
 
-- [org.xml.sax.Locator#getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#getPublicId())
-- [#setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setPublicId(kotlin.String)) 
+- [org.xml.sax.Locator#getPublicId](../org/xml/sax/Locator.md))
+- [#setPublicId](../org/xml/sax/helpers/LocatorImpl.md)) 
 
 ### getSystemId
 
@@ -165,8 +165,8 @@ Return the saved system identifier.
 
 **See Also**
 
-- [org.xml.sax.Locator#getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/Locator.html#getSystemId())
-- [#setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#setSystemId(kotlin.String)) 
+- [org.xml.sax.Locator#getSystemId](../org/xml/sax/Locator.md))
+- [#setSystemId](../org/xml/sax/helpers/LocatorImpl.md)) 
 
 ### setColumnNumber
 
@@ -184,7 +184,7 @@ Set the column number for this locator (1-based).
 
 **See Also**
 
-- [#getColumnNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getColumnNumber()) 
+- [#getColumnNumber](../org/xml/sax/helpers/LocatorImpl.md)) 
 
 ### setLineNumber
 
@@ -202,7 +202,7 @@ Set the line number for this locator (1-based).
 
 **See Also**
 
-- [#getLineNumber](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getLineNumber()) 
+- [#getLineNumber](../org/xml/sax/helpers/LocatorImpl.md)) 
 
 ### setPublicId
 
@@ -220,7 +220,7 @@ Set the public identifier for this locator.
 
 **See Also**
 
-- [#getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getPublicId()) 
+- [#getPublicId](../org/xml/sax/helpers/LocatorImpl.md)) 
 
 ### setSystemId
 
@@ -238,4 +238,4 @@ Set the system identifier for this locator.
 
 **See Also**
 
-- [#getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/LocatorImpl#getSystemId())
+- [#getSystemId](../org/xml/sax/helpers/LocatorImpl.md))

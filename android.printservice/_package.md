@@ -2,15 +2,15 @@
 
 # android.printservice
 
-Kotlin| [Java](https://developer.android.com/reference/android/printservice/package-summary "View this page in Java")
+Kotlin| [Java](../android/printservice/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [CustomPrinterIconCallback](https://developer.android.com/reference/kotlin/android/printservice/CustomPrinterIconCallback) | Callback for [PrinterDiscoverySession.onRequestCustomPrinterIcon](https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#onRequestCustomPrinterIcon(android.print.PrinterId,%20android.os.CancellationSignal,%20android.printservice.CustomPrinterIconCallback)). |
+| [CustomPrinterIconCallback](../android/printservice/CustomPrinterIconCallback.md) | Callback for [PrinterDiscoverySession.onRequestCustomPrinterIcon](../android/printservice/PrinterDiscoverySession.md)). |
 | --- | --- |
-| [PrintDocument](https://developer.android.com/reference/kotlin/android/printservice/PrintDocument) | This class represents a printed document from the perspective of a print service. |
-| [PrinterDiscoverySession](https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession) | This class encapsulates the interaction between a print service and the system during printer discovery. |
-| [PrintJob](https://developer.android.com/reference/kotlin/android/printservice/PrintJob) | This class represents a print job from the perspective of a print service. |
+| [PrintDocument](../android/printservice/PrintDocument.md) | This class represents a printed document from the perspective of a print service. |
+| [PrinterDiscoverySession](../android/printservice/PrinterDiscoverySession.md) | This class encapsulates the interaction between a print service and the system during printer discovery. |
+| [PrintJob](../android/printservice/PrintJob.md) | This class represents a print job from the perspective of a print service. |
 | --- | --- |
-| [PrintService](https://developer.android.com/reference/kotlin/android/printservice/PrintService) | This is the base class for implementing print services. |
+| [PrintService](../android/printservice/PrintService.md) | This is the base class for implementing print services. |

@@ -5,14 +5,14 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # OnNavigationListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/ActionBar.OnNavigationListener "View this page in Java") 
+Kotlin| [Java](../android/app/ActionBar.OnNavigationListener.md) 
 | --- | --- |
 
 ```
 interface OnNavigationListener
 ```
 
-| [android.app.ActionBar.OnNavigationListener](https://developer.android.com/reference/kotlin/android/app/ActionBar.OnNavigationListener#) |
+| [android.app.ActionBar.OnNavigationListener](../android/app/ActionBar.OnNavigationListener.md) |
 
 | **This interface was deprecated in API level 21.**
 |
@@ -24,7 +24,7 @@ Listener interface for ActionBar navigation events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNavigationItemSelected](https://developer.android.com/reference/kotlin/android/app/ActionBar.OnNavigationListener#onNavigationItemSelected(kotlin.Int,%20kotlin.Long))`(`itemPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `itemId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` This method is called whenever a navigation item in your action bar is selected. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNavigationItemSelected](../android/app/ActionBar.OnNavigationListener.md))`(`itemPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `itemId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` This method is called whenever a navigation item in your action bar is selected. |
 
 ## Public methods
 

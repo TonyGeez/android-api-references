@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # BidiRun
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/BidiRun "View this page in Java") 
+Kotlin| [Java](../android/icu/text/BidiRun.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class BidiRun
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#) |
+| ↳ | [android.icu.text.BidiRun](../android/icu/text/BidiRun.md) |
 
 A BidiRun represents a sequence of characters at the same embedding level. The Bidi algorithm decomposes a piece of text into sequences of characters at the same embedding level, each such sequence is called a "run".
 
@@ -27,16 +27,16 @@ This class has no public constructor, and its members cannot be modified by user
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDirection](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getDirection())`()` Get direction of run |
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getEmbeddingLevel](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getEmbeddingLevel())`()` Get level of run |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getLength())`()` Get length of run |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDirection](../android/icu/text/BidiRun.md))`()` Get direction of run |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getEmbeddingLevel](../android/icu/text/BidiRun.md))`()` Get level of run |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../android/icu/text/BidiRun.md))`()` Get length of run |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimit](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getLimit())`()` Get position of one character after the end of the run in the source text |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStart](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getStart())`()` Get the first logical position of the run in the source text |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEvenRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#isEvenRun())`()` Check if run level is even |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimit](../android/icu/text/BidiRun.md))`()` Get position of one character after the end of the run in the source text |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStart](../android/icu/text/BidiRun.md))`()` Get the first logical position of the run in the source text |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEvenRun](../android/icu/text/BidiRun.md))`()` Check if run level is even |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOddRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#isOddRun())`()` Check if run level is odd |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#toString())`()` String to display run |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOddRun](../android/icu/text/BidiRun.md))`()` Check if run level is odd |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/text/BidiRun.md))`()` String to display run |
 
 ## Public methods
 

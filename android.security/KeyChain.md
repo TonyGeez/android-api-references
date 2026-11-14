@@ -8,7 +8,7 @@ class KeyChain
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.KeyChain](https://developer.android.com/reference/kotlin/android/security/KeyChain#) |
+| ↳ | [android.security.KeyChain](../android/security/KeyChain.md) |
 
 The `KeyChain` class provides access to private keys and their corresponding certificate chains in credential storage.
 
@@ -48,13 +48,13 @@ An application can request the installation of private keys and certificates via
 |---|---|
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#choosePrivateKeyAlias(android.app.Activity,%20android.security.KeyChainAliasCallback,%20kotlin.Array,%20kotlin.Array,%20android.net.Uri,%20kotlin.String)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#, response: https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback, keyTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, issuers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/Principal.html#!>?, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#choosePrivateKeyAlias(android.app.Activity,%20android.security.KeyChainAliasCallback,%20kotlin.Array,%20kotlin.Array,%20kotlin.String,%20kotlin.Int,%20kotlin.String)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#, response: https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback, keyTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, issuers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/Principal.html#!>?, host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. |
-| static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()()` Returns an `Intent` that can be used for credential installation. |
+| static [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()()` Returns an `Intent` that can be used for credential installation. |
 | --- | --- |
-| static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#createManageCredentialsIntent(android.security.AppUriAuthenticationPolicy)(policy: https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy)` Returns an `Intent` that should be used by an app to request to manage the user's credentials. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>? | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getCertificateChain(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `X509Certificate` chain for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions in `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)`). |
-| static [AppUriAuthenticationPolicy](https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getCredentialManagementAppPolicy(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Called by the credential management app to get the authentication policy `https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy`. |
+| static [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#createManageCredentialsIntent(android.security.AppUriAuthenticationPolicy)(policy: https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy)` Returns an `Intent` that should be used by an app to request to manage the user's credentials. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>? | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getCertificateChain(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `X509Certificate` chain for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions in `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)`). |
+| static [AppUriAuthenticationPolicy](../android/security/AppUriAuthenticationPolicy.md) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getCredentialManagementAppPolicy(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Called by the credential management app to get the authentication policy `https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy`. |
 | --- | --- |
-| static [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)? | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `PrivateKey` for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions below). |
+| static [PrivateKey](../java/security/PrivateKey.md)? | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `PrivateKey` for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions below). |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#isBoundKeyAlgorithm(kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if the current device's `KeyChain` binds any `PrivateKey` of the given `algorithm` to the device once imported or generated. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#isCredentialManagementApp(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Check whether the caller is the credential management app `CredentialManagementApp`. |
 | --- | --- |
@@ -244,12 +244,12 @@ A device policy controller (as a device or profile owner) can intercept the requ
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#): The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching the new sub-Activity to prompt the user to select a private key; used only to call startActivity(); must not be null. |
-| `response` | [KeyChainAliasCallback](https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback): Callback to invoke when the request completes; must not be null. |
+| `activity` | [Activity](../android/app/Activity.md): The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching the new sub-Activity to prompt the user to select a private key; used only to call startActivity(); must not be null. |
+| `response` | [KeyChainAliasCallback](../android/security/KeyChainAliasCallback.md): Callback to invoke when the request completes; must not be null. |
 | `keyTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The acceptable types of asymmetric keys such as "RSA", "EC" or null. |
 | --- | --- |
-| `issuers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!\>?: The acceptable certificate issuers for the certificate matching the private key, or null. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The full URI the server is requesting the certificate for, or null if unavailable. |
+| `issuers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](../java/security/Principal.md)!\>?: The acceptable certificate issuers for the certificate matching the private key, or null. |
+| `uri` | [Uri](../android/net/Uri.md)?: The full URI the server is requesting the certificate for, or null if unavailable. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The alias to preselect if available, or null if unavailable. |
 | --- | --- |
 
@@ -285,11 +285,11 @@ A device policy controller (as a device or profile owner) can intercept the requ
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#): The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching the new sub-Activity to prompt the user to select a private key; used only to call startActivity(); must not be null. |
-| `response` | [KeyChainAliasCallback](https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback): Callback to invoke when the request completes; must not be null. |
+| `activity` | [Activity](../android/app/Activity.md): The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching the new sub-Activity to prompt the user to select a private key; used only to call startActivity(); must not be null. |
+| `response` | [KeyChainAliasCallback](../android/security/KeyChainAliasCallback.md): Callback to invoke when the request completes; must not be null. |
 | `keyTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The acceptable types of asymmetric keys such as "RSA", "EC" or null. |
 | --- | --- |
-| `issuers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!\>?: The acceptable certificate issuers for the certificate matching the private key, or null. |
+| `issuers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](../java/security/Principal.md)!\>?: The acceptable certificate issuers for the certificate matching the private key, or null. |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The host name of the server requesting the certificate, or null if unavailable. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The port number of the server requesting the certificate, or -1 if unavailable. |
 | --- | --- |
@@ -331,7 +331,7 @@ This intent should be started using `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `policy` | [AppUriAuthenticationPolicy](https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy): The authentication policy determines which alias for a private key and certificate pair should be used for authentication. This value cannot be `null`. |
+| `policy` | [AppUriAuthenticationPolicy](../android/security/AppUriAuthenticationPolicy.md): The authentication policy determines which alias for a private key and certificate pair should be used for authentication. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -361,7 +361,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the desired certificate chain, typically returned via `https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback#alias(kotlin.String)`. This value cannot be `null`. |
 
 | Exceptions ||
@@ -382,7 +382,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -416,7 +416,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the desired private key, typically returned via `https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback#alias(kotlin.String)`. This value cannot be `null`. |
 
 | Exceptions ||
@@ -469,7 +469,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -506,7 +506,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

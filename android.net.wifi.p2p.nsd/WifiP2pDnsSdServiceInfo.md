@@ -2,7 +2,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiP2pDnsSdServiceInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo "View this page in Java")
+Kotlin | [Java](../android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class WifiP2pDnsSdServiceInfo : WifiP2pServiceInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo) ||
-| | ↳ | [android.net.wifi.p2p.nsd.WifiP2pDnsSdServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo#) |
+| ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) ||
+| | ↳ | [android.net.wifi.p2p.nsd.WifiP2pDnsSdServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo.md) |
 
 A class for storing Bonjour service information that is advertised over a Wi-Fi peer-to-peer setup.
 
@@ -25,7 +25,7 @@ A class for storing Bonjour service information that is advertised over a Wi-Fi 
 
 | Public methods ||
 |---|---|
-| open static [WifiP2pDnsSdServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo#)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo#newInstance(kotlin.String,%20kotlin.String,%20kotlin.collections.MutableMap)(instanceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, serviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, txtMap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create a Bonjour service information object. |
+| open static [WifiP2pDnsSdServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo#newInstance(kotlin.String,%20kotlin.String,%20kotlin.collections.MutableMap)(instanceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, serviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, txtMap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create a Bonjour service information object. |
 
 | Inherited functions ||
 |---|---|

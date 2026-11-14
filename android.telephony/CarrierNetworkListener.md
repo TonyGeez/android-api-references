@@ -4,14 +4,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # CarrierNetworkListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.CarrierNetworkListener "View this page in Java") 
+Kotlin| [Java](../android/telephony/TelephonyCallback.CarrierNetworkListener.md) 
 | --- | --- |
 
 ```
 interface CarrierNetworkListener
 ```
 
-| [android.telephony.TelephonyCallback.CarrierNetworkListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CarrierNetworkListener#) |
+| [android.telephony.TelephonyCallback.CarrierNetworkListener](../android/telephony/TelephonyCallback.CarrierNetworkListener.md) |
 
 Interface for carrier network listener.
 
@@ -19,7 +19,7 @@ Interface for carrier network listener.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCarrierNetworkChange](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CarrierNetworkListener#onCarrierNetworkChange(kotlin.Boolean))`(`active:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when telephony has received notice from a carrier app that a network action that could result in connectivity loss has been requested by an app using [android.service.carrier.CarrierService#notifyCarrierNetworkChange(boolean)](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#notifyCarrierNetworkChange(kotlin.Boolean)) |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCarrierNetworkChange](../android/telephony/TelephonyCallback.CarrierNetworkListener.md))`(`active:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when telephony has received notice from a carrier app that a network action that could result in connectivity loss has been requested by an app using [android.service.carrier.CarrierService#notifyCarrierNetworkChange(boolean)](../android/service/carrier/CarrierService.md)) |
 
 ## Public methods
 
@@ -31,11 +31,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onCarrierNetworkChange(active: Boolean): Unit
 ```
 
-Callback invoked when telephony has received notice from a carrier app that a network action that could result in connectivity loss has been requested by an app using [android.service.carrier.CarrierService#notifyCarrierNetworkChange(boolean)](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#notifyCarrierNetworkChange(kotlin.Boolean))
+Callback invoked when telephony has received notice from a carrier app that a network action that could result in connectivity loss has been requested by an app using [android.service.carrier.CarrierService#notifyCarrierNetworkChange(boolean)](../android/service/carrier/CarrierService.md))
 
 This is optional and is only used to allow the system to provide alternative UI while telephony is performing an action that may result in intentional, temporary network lack of connectivity.
 
-Note, this callback is pinned to the registered subscription and will be invoked when the notifying carrier app has carrier privilege rule on the registered subscription. [android.telephony.TelephonyManager#hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())
+Note, this callback is pinned to the registered subscription and will be invoked when the notifying carrier app has carrier privilege rule on the registered subscription. [android.telephony.TelephonyManager#hasCarrierPrivileges](../android/telephony/TelephonyManager.md))
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

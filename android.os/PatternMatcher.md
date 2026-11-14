@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PatternMatcher
 
-Kotlin | [Java](https://developer.android.com/reference/android/os/PatternMatcher "View this page in Java")
+Kotlin | [Java](../android/os/PatternMatcher.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class PatternMatcher : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.PatternMatcher](https://developer.android.com/reference/kotlin/android/os/PatternMatcher#) |
+| ↳ | [android.os.PatternMatcher](../android/os/PatternMatcher.md) |
 
-| Known Direct Subclasses [PathPermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission.html#) |---|---| | [PathPermission](https://developer.android.com/reference/kotlin/android/content/pm/PathPermission.html#) | Description of permissions needed to access a particular path in a `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#`. | |
+| Known Direct Subclasses [PathPermission](../android/content/pm/PathPermission.md) |---|---| | [PathPermission](../android/content/pm/PathPermission.md) | Description of permissions needed to access a particular path in a `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A simple pattern matcher, which is safe to use on untrusted data: it does not provide full reg-exp support, only simple globbing that can not be used maliciously.
@@ -51,7 +51,7 @@ A simple pattern matcher, which is safe to use on untrusted data: it does not pr
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator)\< [PatternMatcher](https://developer.android.com/reference/kotlin/android/os/PatternMatcher#)!\> | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PatternMatcher](../android/os/PatternMatcher.md)!\> | `https://developer.android.com/reference/kotlin/android/os/PatternMatcher#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -204,7 +204,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

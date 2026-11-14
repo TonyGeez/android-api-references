@@ -2,7 +2,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # SuggestionsInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/textservice/SuggestionsInfo "View this page in Java")
+Kotlin | [Java](../android/view/textservice/SuggestionsInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class SuggestionsInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.textservice.SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#) |
+| ↳ | [android.view.textservice.SuggestionsInfo](../android/view/textservice/SuggestionsInfo.md) |
 
 This class contains a metadata of suggestions from the text service
 
@@ -51,7 +51,7 @@ This class contains a metadata of suggestions from the text service
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SuggestionsInfo](https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#)!\> | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SuggestionsInfo](../android/view/textservice/SuggestionsInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/textservice/SuggestionsInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
 
 ## Constants
 
@@ -277,7 +277,7 @@ Used to package this object into a `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
+| `dest` | [Parcel](../android/os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags used for parceling. |
 
 ## Properties

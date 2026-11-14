@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaFeature
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaFeature "View this page in Java") 
+Kotlin| [Java](../android/media/MediaFeature.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MediaFeature
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaFeature](https://developer.android.com/reference/kotlin/android/media/MediaFeature#) |
+| ↳ | [android.media.MediaFeature](../android/media/MediaFeature.md) |
 
 MediaFeature defines various media features, e.g. hdr type.
 
@@ -21,11 +21,11 @@ MediaFeature defines various media features, e.g. hdr type.
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [HdrType](https://developer.android.com/reference/kotlin/android/media/MediaFeature.HdrType) Defines the type of HDR (high dynamic range) video. |
+| | [HdrType](../android/media/MediaFeature.HdrType.md) Defines the type of HDR (high dynamic range) video. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------|---|
-| [MediaFeature](https://developer.android.com/reference/kotlin/android/media/MediaFeature#MediaFeature())`()` <br /> |
+| [MediaFeature](../android/media/MediaFeature.md))`()` <br /> |
 
 ## Public constructors
 

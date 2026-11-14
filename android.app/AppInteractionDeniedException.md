@@ -9,10 +9,10 @@ open class AppInteractionDeniedException : AppInteractionException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [android.app.AppInteractionException](https://developer.android.com/reference/kotlin/android/app/AppInteractionException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [android.app.AppInteractionException](../android/app/AppInteractionException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.AppInteractionDeniedException](https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#) |
+| | | | ↳ | [android.app.AppInteractionDeniedException](../android/app/AppInteractionDeniedException.md) |
 
 Exception thrown when an app interaction is denied.
 
@@ -118,7 +118,7 @@ Constructor for `https://developer.android.com/reference/kotlin/android/app/AppI
 |---|---|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The error message. This value may be `null`. |
 | `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The reason for interaction denied. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#REASON_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#REASON_USER_DENIED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#REASON_AUTO_DENIED:kotlin.Int` |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): Additional metadata. This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): Additional metadata. This value cannot be `null`. |
 | --- | --- |
 
 ## Public methods

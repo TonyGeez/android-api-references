@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AdSelectionOutcome
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome "View this page in Java") 
+Kotlin| [Java](../android/adservices/adselection/AdSelectionOutcome.md) 
 | --- | --- |
 
 ```
@@ -14,33 +14,33 @@ open class AdSelectionOutcome
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adselection.AdSelectionOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#) |
+| ↳ | [android.adservices.adselection.AdSelectionOutcome](../android/adservices/adselection/AdSelectionOutcome.md) |
 
-This class represents a field in the`OutcomeReceiver`, which is an input to the android.adservices.adselection.AdSelectionManager#selectAds in the [AdSelectionManager](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager). This field is populated in the case of a successful android.adservices.adselection.AdSelectionManager#selectAds call.
+This class represents a field in the`OutcomeReceiver`, which is an input to the android.adservices.adselection.AdSelectionManager#selectAds in the [AdSelectionManager](../android/adservices/adselection/AdSelectionManager.md). This field is populated in the case of a successful android.adservices.adselection.AdSelectionManager#selectAds call.
 
-Empty outcome may be returned from [android.adservices.adselection.AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionFromOutcomesConfig,java.util.concurrent.Executor,android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionFromOutcomesConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)). Use [AdSelectionOutcome.hasOutcome()](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#hasOutcome())to check if an instance has a valid outcome. When [android.adservices.adselection.AdSelectionOutcome#hasOutcome()](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#hasOutcome())returns`false`, results from [getAdSelectionId()](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#) and [AdSelectionOutcome.getRenderUri()](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#getRenderUri())are invalid and shouldn't be used.
+Empty outcome may be returned from [android.adservices.adselection.AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionFromOutcomesConfig,java.util.concurrent.Executor,android.os.OutcomeReceiver)](../android/adservices/adselection/AdSelectionManager.md)). Use [AdSelectionOutcome.hasOutcome()](../android/adservices/adselection/AdSelectionOutcome.md))to check if an instance has a valid outcome. When [android.adservices.adselection.AdSelectionOutcome#hasOutcome()](../android/adservices/adselection/AdSelectionOutcome.md))returns`false`, results from [getAdSelectionId()](../android/adservices/adselection/AdSelectionOutcome.md) and [AdSelectionOutcome.getRenderUri()](../android/adservices/adselection/AdSelectionOutcome.md))are invalid and shouldn't be used.
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome.Builder) Builder for [AdSelectionOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#) objects. |
+| | [Builder](../android/adservices/adselection/AdSelectionOutcome.Builder.md) Builder for [AdSelectionOutcome](../android/adservices/adselection/AdSelectionOutcome.md) objects. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionId](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#getAdSelectionId())`()` Returns the adSelectionId that identifies the AdSelection. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | [getComponentAdUris](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#getComponentAdUris())`()` Returns the ad component renderUris that are returned by this auction. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/adselection/AdSelectionOutcome.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionId](../android/adservices/adselection/AdSelectionOutcome.md))`()` Returns the adSelectionId that identifies the AdSelection. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\> | [getComponentAdUris](../android/adservices/adselection/AdSelectionOutcome.md))`()` Returns the ad component renderUris that are returned by this auction. |
 | --- | --- |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getRenderUri](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#getRenderUri())`()` Returns the renderUri that the AdSelection returns. |
-| open [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#) | [getWinningSeller](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#getWinningSeller())`()` Returns the willing seller that won the auction. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#hasOutcome())`()` Returns whether the outcome contains results or empty. |
+| open [Uri](../android/net/Uri.md) | [getRenderUri](../android/adservices/adselection/AdSelectionOutcome.md))`()` Returns the renderUri that the AdSelection returns. |
+| open [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md) | [getWinningSeller](../android/adservices/adselection/AdSelectionOutcome.md))`()` Returns the willing seller that won the auction. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasOutcome](../android/adservices/adselection/AdSelectionOutcome.md))`()` Returns whether the outcome contains results or empty. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#hashCode())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/adselection/AdSelectionOutcome.md))`()` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [AdSelectionOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#) | [NO_OUTCOME](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#NO_OUTCOME:android.adservices.adselection.AdSelectionOutcome) Represents an AdSelectionOutcome with empty results. |
+| static [AdSelectionOutcome](../android/adservices/adselection/AdSelectionOutcome.md) | [NO_OUTCOME](../android/adservices/adselection/AdSelectionOutcome.md) Represents an AdSelectionOutcome with empty results. |
 
 ## Public methods
 
@@ -92,7 +92,7 @@ This approach allows for flexible and dynamic ad creatives where different parts
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android/net/Uri.md)!> | This value cannot be`null`. |
 
 ### getRenderUri
 
@@ -107,7 +107,7 @@ Returns the renderUri that the AdSelection returns.
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | This value cannot be`null`. |
+| [Uri](../android/net/Uri.md) | This value cannot be`null`. |
 
 ### getWinningSeller
 
@@ -122,7 +122,7 @@ Returns the willing seller that won the auction.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#) | This value cannot be`null`. |
+| [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md) | This value cannot be`null`. |
 
 ### hasOutcome
 

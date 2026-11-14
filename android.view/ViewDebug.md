@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ViewDebug
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ViewDebug "View this page in Java") 
+Kotlin| [Java](../android/view/ViewDebug.md) 
 | --- | --- |
 
 ```
@@ -13,43 +13,43 @@ open class ViewDebug
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewDebug](https://developer.android.com/reference/kotlin/android/view/ViewDebug#) |
+| ↳ | [android.view.ViewDebug](../android/view/ViewDebug.md) |
 
-Various debugging/tracing tools related to [View](https://developer.android.com/reference/kotlin/android/view/View) and the view hierarchy.
+Various debugging/tracing tools related to [View](../android/view/View.md) and the view hierarchy.
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [CapturedViewProperty](https://developer.android.com/reference/kotlin/android/view/ViewDebug.CapturedViewProperty) This annotation can be used to mark fields and methods to be dumped when the view is captured. |
-| | [ExportedProperty](https://developer.android.com/reference/kotlin/android/view/ViewDebug.ExportedProperty) This annotation can be used to mark fields and methods to be dumped by the view server. |
-| | [FlagToString](https://developer.android.com/reference/kotlin/android/view/ViewDebug.FlagToString) Defines a mapping from a flag to a String. |
+| | [CapturedViewProperty](../android/view/ViewDebug.CapturedViewProperty.md) This annotation can be used to mark fields and methods to be dumped when the view is captured. |
+| | [ExportedProperty](../android/view/ViewDebug.ExportedProperty.md) This annotation can be used to mark fields and methods to be dumped by the view server. |
+| | [FlagToString](../android/view/ViewDebug.FlagToString.md) Defines a mapping from a flag to a String. |
 | --- | --- |
-| | [HierarchyTraceType](https://developer.android.com/reference/kotlin/android/view/ViewDebug.HierarchyTraceType) <br /> |
-| | [IntToString](https://developer.android.com/reference/kotlin/android/view/ViewDebug.IntToString) Defines a mapping from an int value to a String. |
-| | [RecyclerTraceType](https://developer.android.com/reference/kotlin/android/view/ViewDebug.RecyclerTraceType) <br /> |
+| | [HierarchyTraceType](../android/view/ViewDebug.HierarchyTraceType.md) <br /> |
+| | [IntToString](../android/view/ViewDebug.IntToString.md) Defines a mapping from an int value to a String. |
+| | [RecyclerTraceType](../android/view/ViewDebug.RecyclerTraceType.md) <br /> |
 | --- | --- |
 
 | Constants ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_HIERARCHY](https://developer.android.com/reference/kotlin/android/view/ViewDebug#TRACE_HIERARCHY:kotlin.Boolean) <br /> |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_RECYCLER](https://developer.android.com/reference/kotlin/android/view/ViewDebug#TRACE_RECYCLER:kotlin.Boolean) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_HIERARCHY](../android/view/ViewDebug.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_RECYCLER](../android/view/ViewDebug.md) <br /> |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------|---|
-| [ViewDebug](https://developer.android.com/reference/kotlin/android/view/ViewDebug#ViewDebug())`()` <br /> |
+| [ViewDebug](../android/view/ViewDebug.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpCapturedView](https://developer.android.com/reference/kotlin/android/view/ViewDebug#dumpCapturedView(kotlin.String,%20kotlin.Any))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Dump view info for id based instrument test generation (and possibly further data analysis). |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startHierarchyTracing](https://developer.android.com/reference/kotlin/android/view/ViewDebug#startHierarchyTracing(kotlin.String,%20android.view.View))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRecyclerTracing](https://developer.android.com/reference/kotlin/android/view/ViewDebug#startRecyclerTracing(kotlin.String,%20android.view.View))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpCapturedView](../android/view/ViewDebug.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Dump view info for id based instrument test generation (and possibly further data analysis). |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startHierarchyTracing](../android/view/ViewDebug.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](../android/view/View.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRecyclerTracing](../android/view/ViewDebug.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](../android/view/View.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopHierarchyTracing](https://developer.android.com/reference/kotlin/android/view/ViewDebug#stopHierarchyTracing())`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopRecyclerTracing](https://developer.android.com/reference/kotlin/android/view/ViewDebug#stopRecyclerTracing())`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](https://developer.android.com/reference/kotlin/android/view/ViewDebug#trace(android.view.View,%20android.view.ViewDebug.HierarchyTraceType))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `type:` ` [ViewDebug.HierarchyTraceType](https://developer.android.com/reference/kotlin/android/view/ViewDebug.HierarchyTraceType)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopHierarchyTracing](../android/view/ViewDebug.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopRecyclerTracing](../android/view/ViewDebug.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](../android/view/ViewDebug.md))`(`view:` ` [View](../android/view/View.md)!`, `type:` ` [ViewDebug.HierarchyTraceType](../android/view/ViewDebug.HierarchyTraceType.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](https://developer.android.com/reference/kotlin/android/view/ViewDebug#trace(android.view.View,%20android.view.ViewDebug.RecyclerTraceType,%20kotlin.Int))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `type:` ` [ViewDebug.RecyclerTraceType](https://developer.android.com/reference/kotlin/android/view/ViewDebug.RecyclerTraceType)!`, `vararg` `parameters:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](../android/view/ViewDebug.md))`(`view:` ` [View](../android/view/View.md)!`, `type:` ` [ViewDebug.RecyclerTraceType](../android/view/ViewDebug.RecyclerTraceType.md)!`, `vararg` `parameters:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Constants
 

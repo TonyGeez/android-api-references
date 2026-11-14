@@ -4,19 +4,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DialogInterface
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/DialogInterface "View this page in Java") 
+Kotlin| [Java](../android/content/DialogInterface.md) 
 | --- | --- |
 
 ```
 interface DialogInterface
 ```
 
-| [android.content.DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface#) |
+| [android.content.DialogInterface](../android/content/DialogInterface.md) |
 
-| Known Direct Subclasses [AlertDialog](https://developer.android.com/reference/kotlin/android/app/AlertDialog.html#), [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog.html#), [MockDialogInterface](https://developer.android.com/reference/kotlin/android/test/mock/MockDialogInterface.html#) |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [AlertDialog](https://developer.android.com/reference/kotlin/android/app/AlertDialog.html#) | A subclass of Dialog that can display one, two or three buttons. | | [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog.html#) | Base class for Dialogs. | | [MockDialogInterface](https://developer.android.com/reference/kotlin/android/test/mock/MockDialogInterface.html#) | A mock [android.content.DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface#) class. | |
+| Known Direct Subclasses [AlertDialog](../android/app/AlertDialog.md), [Dialog](../android/app/Dialog.md), [MockDialogInterface](../android/test/mock/MockDialogInterface.md) |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [AlertDialog](../android/app/AlertDialog.md) | A subclass of Dialog that can display one, two or three buttons. | | [Dialog](../android/app/Dialog.md) | Base class for Dialogs. | | [MockDialogInterface](../android/test/mock/MockDialogInterface.md) | A mock [android.content.DialogInterface](../android/content/DialogInterface.md) class. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AlertDialog](https://developer.android.com/reference/kotlin/android/app/AlertDialog.html#), [CharacterPickerDialog](https://developer.android.com/reference/kotlin/android/text/method/CharacterPickerDialog.html#), [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog.html#), [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog.html#), [Presentation](https://developer.android.com/reference/kotlin/android/app/Presentation.html#), [ProgressDialog](https://developer.android.com/reference/kotlin/android/app/ProgressDialog.html#), [ProgressDialog](https://developer.android.com/reference/kotlin/android/app/ProgressDialog.html#), [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------| | [AlertDialog](https://developer.android.com/reference/kotlin/android/app/AlertDialog.html#) | A subclass of Dialog that can display one, two or three buttons. | | [CharacterPickerDialog](https://developer.android.com/reference/kotlin/android/text/method/CharacterPickerDialog.html#) | Dialog for choosing accented characters related to a base character. | | [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog.html#) | A simple dialog containing an [android.widget.DatePicker](https://developer.android.com/reference/kotlin/android/widget/DatePicker.html#). | | [DatePickerDialog](https://developer.android.com/reference/kotlin/android/app/DatePickerDialog.html#) | A simple dialog containing an [android.widget.DatePicker](https://developer.android.com/reference/kotlin/android/widget/DatePicker.html#). | | [Presentation](https://developer.android.com/reference/kotlin/android/app/Presentation.html#) | Base class for presentations. | | [ProgressDialog](https://developer.android.com/reference/kotlin/android/app/ProgressDialog.html#) | A dialog showing a progress indicator and an optional text message or view. | | [ProgressDialog](https://developer.android.com/reference/kotlin/android/app/ProgressDialog.html#) | A dialog showing a progress indicator and an optional text message or view. | | [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) | A dialog that prompts the user for the time of day using a [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker.html#). | | [TimePickerDialog](https://developer.android.com/reference/kotlin/android/app/TimePickerDialog.html#) | A dialog that prompts the user for the time of day using a [TimePicker](https://developer.android.com/reference/kotlin/android/widget/TimePicker.html#). | |
+| Known Indirect Subclasses [AlertDialog](../android/app/AlertDialog.md), [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md), [DatePickerDialog](../android/app/DatePickerDialog.md), [DatePickerDialog](../android/app/DatePickerDialog.md), [Presentation](../android/app/Presentation.md), [ProgressDialog](../android/app/ProgressDialog.md), [ProgressDialog](../android/app/ProgressDialog.md), [TimePickerDialog](../android/app/TimePickerDialog.md) [TimePickerDialog](../android/app/TimePickerDialog.md) |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------| | [AlertDialog](../android/app/AlertDialog.md) | A subclass of Dialog that can display one, two or three buttons. | | [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md) | Dialog for choosing accented characters related to a base character. | | [DatePickerDialog](../android/app/DatePickerDialog.md) | A simple dialog containing an [android.widget.DatePicker](../android/widget/DatePicker.md). | | [DatePickerDialog](../android/app/DatePickerDialog.md) | A simple dialog containing an [android.widget.DatePicker](../android/widget/DatePicker.md). | | [Presentation](../android/app/Presentation.md) | Base class for presentations. | | [ProgressDialog](../android/app/ProgressDialog.md) | A dialog showing a progress indicator and an optional text message or view. | | [ProgressDialog](../android/app/ProgressDialog.md) | A dialog showing a progress indicator and an optional text message or view. | | [TimePickerDialog](../android/app/TimePickerDialog.md) | A dialog that prompts the user for the time of day using a [TimePicker](../android/widget/TimePicker.md). | | [TimePickerDialog](../android/app/TimePickerDialog.md) | A dialog that prompts the user for the time of day using a [TimePicker](../android/widget/TimePicker.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface that defines a dialog-type class that can be shown, dismissed, or canceled, and may have buttons that can be clicked.
@@ -25,30 +25,30 @@ Interface that defines a dialog-type class that can be shown, dismissed, or canc
 
 | Nested classes ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [OnCancelListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnCancelListener) Interface used to allow the creator of a dialog to run some code when the dialog is canceled. |
-| abstract | [OnClickListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnClickListener) Interface used to allow the creator of a dialog to run some code when an item on the dialog is clicked. |
-| abstract | [OnDismissListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnDismissListener) Interface used to allow the creator of a dialog to run some code when the dialog is dismissed. |
+| abstract | [OnCancelListener](../android/content/DialogInterface.OnCancelListener.md) Interface used to allow the creator of a dialog to run some code when the dialog is canceled. |
+| abstract | [OnClickListener](../android/content/DialogInterface.OnClickListener.md) Interface used to allow the creator of a dialog to run some code when an item on the dialog is clicked. |
+| abstract | [OnDismissListener](../android/content/DialogInterface.OnDismissListener.md) Interface used to allow the creator of a dialog to run some code when the dialog is dismissed. |
 | --- | --- |
-| abstract | [OnKeyListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnKeyListener) Interface definition for a callback to be invoked when a key event is dispatched to this dialog. |
-| abstract | [OnMultiChoiceClickListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnMultiChoiceClickListener) Interface used to allow the creator of a dialog to run some code when an item in a multi-choice dialog is clicked. |
-| abstract | [OnShowListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnShowListener) Interface used to allow the creator of a dialog to run some code when the dialog is shown. |
+| abstract | [OnKeyListener](../android/content/DialogInterface.OnKeyListener.md) Interface definition for a callback to be invoked when a key event is dispatched to this dialog. |
+| abstract | [OnMultiChoiceClickListener](../android/content/DialogInterface.OnMultiChoiceClickListener.md) Interface used to allow the creator of a dialog to run some code when an item in a multi-choice dialog is clicked. |
+| abstract | [OnShowListener](../android/content/DialogInterface.OnShowListener.md) Interface used to allow the creator of a dialog to run some code when the dialog is shown. |
 | --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON1](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON1:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON2](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON2:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON3](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON3:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON1](../android/content/DialogInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON2](../android/content/DialogInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON3](../android/content/DialogInterface.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_NEGATIVE](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON_NEGATIVE:kotlin.Int) The identifier for the negative button. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_NEUTRAL](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON_NEUTRAL:kotlin.Int) The identifier for the neutral button. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_POSITIVE](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON_POSITIVE:kotlin.Int) The identifier for the positive button. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_NEGATIVE](../android/content/DialogInterface.md) The identifier for the negative button. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_NEUTRAL](../android/content/DialogInterface.md) The identifier for the neutral button. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_POSITIVE](../android/content/DialogInterface.md) The identifier for the positive button. |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/content/DialogInterface#cancel())`()` Cancels the dialog, invoking the [OnCancelListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnCancelListener). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](https://developer.android.com/reference/kotlin/android/content/DialogInterface#dismiss())`()` Dismisses the dialog, invoking the [OnDismissListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnDismissListener). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/content/DialogInterface.md))`()` Cancels the dialog, invoking the [OnCancelListener](../android/content/DialogInterface.OnCancelListener.md). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](../android/content/DialogInterface.md))`()` Dismisses the dialog, invoking the [OnDismissListener](../android/content/DialogInterface.OnDismissListener.md). |
 
 ## Constants
 
@@ -61,7 +61,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val BUTTON1: Int
 ```
 
-**Deprecated:** *Use [BUTTON_POSITIVE](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON_POSITIVE:kotlin.Int)* 
+**Deprecated:** *Use [BUTTON_POSITIVE](../android/content/DialogInterface.md)* 
 
  Value: -1
 
@@ -74,7 +74,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val BUTTON2: Int
 ```
 
-**Deprecated:** *Use [BUTTON_NEGATIVE](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON_NEGATIVE:kotlin.Int)* 
+**Deprecated:** *Use [BUTTON_NEGATIVE](../android/content/DialogInterface.md)* 
 
  Value: -2
 
@@ -87,7 +87,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val BUTTON3: Int
 ```
 
-**Deprecated:** *Use [BUTTON_NEUTRAL](https://developer.android.com/reference/kotlin/android/content/DialogInterface#BUTTON_NEUTRAL:kotlin.Int)* 
+**Deprecated:** *Use [BUTTON_NEUTRAL](../android/content/DialogInterface.md)* 
 
  Value: -3
 
@@ -137,9 +137,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun cancel(): Unit
 ```
 
-Cancels the dialog, invoking the [OnCancelListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnCancelListener).
+Cancels the dialog, invoking the [OnCancelListener](../android/content/DialogInterface.OnCancelListener.md).
 
-The [OnDismissListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnDismissListener) may also be called if cancellation dismisses the dialog. 
+The [OnDismissListener](../android/content/DialogInterface.OnDismissListener.md) may also be called if cancellation dismisses the dialog. 
 
 ### dismiss
 
@@ -149,4 +149,4 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun dismiss(): Unit
 ```
 
-Dismisses the dialog, invoking the [OnDismissListener](https://developer.android.com/reference/kotlin/android/content/DialogInterface.OnDismissListener).
+Dismisses the dialog, invoking the [OnDismissListener](../android/content/DialogInterface.OnDismissListener.md).

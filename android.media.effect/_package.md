@@ -2,17 +2,17 @@
 
 # android.media.effect
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/effect/package-summary "View this page in Java")
+Kotlin| [Java](../android/media/effect/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [EffectUpdateListener](https://developer.android.com/reference/kotlin/android/media/effect/EffectUpdateListener) | Some effects may issue callbacks to inform the host of changes to the effect state. |
+| [EffectUpdateListener](../android/media/effect/EffectUpdateListener.md) | Some effects may issue callbacks to inform the host of changes to the effect state. |
 | --- | --- |
 
 ## Classes
 
-| [Effect](https://developer.android.com/reference/kotlin/android/media/effect/Effect) | Effects are high-performance transformations that can be applied to image frames. |
+| [Effect](../android/media/effect/Effect.md) | Effects are high-performance transformations that can be applied to image frames. |
 | --- | --- |
-| [EffectContext](https://developer.android.com/reference/kotlin/android/media/effect/EffectContext) | An EffectContext keeps all necessary state information to run Effects within a Open GL ES 2. |
-| [EffectFactory](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory) | The EffectFactory class defines the list of available Effects, and provides functionality to inspect and instantiate them. |
+| [EffectContext](../android/media/effect/EffectContext.md) | An EffectContext keeps all necessary state information to run Effects within a Open GL ES 2. |
+| [EffectFactory](../android/media/effect/EffectFactory.md) | The EffectFactory class defines the list of available Effects, and provides functionality to inspect and instantiate them. |

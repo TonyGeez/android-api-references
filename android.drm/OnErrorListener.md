@@ -5,14 +5,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # OnErrorListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmManagerClient.OnErrorListener "View this page in Java") 
+Kotlin| [Java](../android/drm/DrmManagerClient.OnErrorListener.md) 
 | --- | --- |
 
 ```
 interface OnErrorListener
 ```
 
-| [android.drm.DrmManagerClient.OnErrorListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener#) |
+| [android.drm.DrmManagerClient.OnErrorListener](../android/drm/DrmManagerClient.OnErrorListener.md) |
 
 | **This interface was deprecated in API level 30.**
 |
@@ -24,7 +24,7 @@ Interface definition for a callback that receives information about DRM framewor
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener#onError(android.drm.DrmManagerClient,%20android.drm.DrmErrorEvent))`(`client:` ` [DrmManagerClient](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient)!`, `event:` ` [DrmErrorEvent](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent)!`)` Called when the DRM framework sends error information. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/drm/DrmManagerClient.OnErrorListener.md))`(`client:` ` [DrmManagerClient](../android/drm/DrmManagerClient.md)!`, `event:` ` [DrmErrorEvent](../android/drm/DrmErrorEvent.md)!`)` Called when the DRM framework sends error information. |
 
 ## Public methods
 
@@ -45,5 +45,5 @@ Called when the DRM framework sends error information.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `client` | [DrmManagerClient](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient)!:The`DrmManagerClient`instance. |
-| `event` | [DrmErrorEvent](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent)!:The [DrmErrorEvent](https://developer.android.com/reference/kotlin/android/drm/DrmErrorEvent) instance that wraps the error type and message. |
+| `client` | [DrmManagerClient](../android/drm/DrmManagerClient.md)!:The`DrmManagerClient`instance. |
+| `event` | [DrmErrorEvent](../android/drm/DrmErrorEvent.md)!:The [DrmErrorEvent](../android/drm/DrmErrorEvent.md) instance that wraps the error type and message. |

@@ -5,18 +5,18 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # OnZoomChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.OnZoomChangeListener "View this page in Java") 
+Kotlin| [Java](../android/hardware/Camera.OnZoomChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnZoomChangeListener
 ```
 
-| [android.hardware.Camera.OnZoomChangeListener](https://developer.android.com/reference/kotlin/android/hardware/Camera.OnZoomChangeListener#) |
+| [android.hardware.Camera.OnZoomChangeListener](../android/hardware/Camera.OnZoomChangeListener.md) |
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
 
 Callback interface for zoom changes during a smooth zoom operation.
 
@@ -24,7 +24,7 @@ Callback interface for zoom changes during a smooth zoom operation.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onZoomChange](https://developer.android.com/reference/kotlin/android/hardware/Camera.OnZoomChangeListener#onZoomChange(kotlin.Int,%20kotlin.Boolean,%20android.hardware.Camera))`(`zoomValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stopped:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `camera:` ` [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!`)` Called when the zoom value has changed during a smooth zoom. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onZoomChange](../android/hardware/Camera.OnZoomChangeListener.md))`(`zoomValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stopped:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Called when the zoom value has changed during a smooth zoom. |
 
 ## Public methods
 
@@ -48,5 +48,5 @@ Called when the zoom value has changed during a smooth zoom.
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `zoomValue` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the current zoom value. In smooth zoom mode, camera calls this for every new zoom value. |
 | `stopped` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether smooth zoom is stopped. If the value is true, this is the last zoom update for the application. |
-| `camera` | [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!:the Camera service object |
+| `camera` | [Camera](../android/hardware/Camera.md)!:the Camera service object |
 | --- | --- |

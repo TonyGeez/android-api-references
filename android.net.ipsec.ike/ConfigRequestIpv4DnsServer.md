@@ -4,14 +4,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ConfigRequestIpv4DnsServer
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer "View this page in Java") 
+Kotlin| [Java](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer.md) 
 | --- | --- |
 
 ```
 interface ConfigRequestIpv4DnsServer : TunnelModeChildSessionParams.TunnelModeChildConfigRequest
 ```
 
-| [android.net.ipsec.ike.TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer#) |
+| [android.net.ipsec.ike.TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer.md) |
 
 Represents an IPv4 DNS Server request
 

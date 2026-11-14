@@ -10,7 +10,7 @@ open class DESedeKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.DESedeKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESedeKeySpec#) |
+| ↳ | [javax.crypto.spec.DESedeKeySpec](../javax/crypto/spec/DESedeKeySpec.md) |
 
 This class specifies a DES-EDE ("triple-DES") key.
 
@@ -18,17 +18,17 @@ This class specifies a DES-EDE ("triple-DES") key.
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DES_EDE_KEY_LEN](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESedeKeySpec#DES_EDE_KEY_LEN:kotlin.Int) The constant which defines the length of a DESede key in bytes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DES_EDE_KEY_LEN](../javax/crypto/spec/DESedeKeySpec.md) The constant which defines the length of a DESede key in bytes. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DESedeKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESedeKeySpec#DESedeKeySpec(kotlin.ByteArray))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a DESedeKeySpec object using the first 24 bytes in`key`as the key material for the DES-EDE key. |
-| [DESedeKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESedeKeySpec#DESedeKeySpec(kotlin.ByteArray,%20kotlin.Int))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a DESedeKeySpec object using the first 24 bytes in`key`, beginning at`offset`inclusive, as the key material for the DES-EDE key. |
+| [DESedeKeySpec](../javax/crypto/spec/DESedeKeySpec.md))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a DESedeKeySpec object using the first 24 bytes in`key`as the key material for the DES-EDE key. |
+| [DESedeKeySpec](../javax/crypto/spec/DESedeKeySpec.md))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a DESedeKeySpec object using the first 24 bytes in`key`, beginning at`offset`inclusive, as the key material for the DES-EDE key. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getKey](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESedeKeySpec#getKey())`()` Returns the DES-EDE key. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParityAdjusted](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESedeKeySpec#isParityAdjusted(kotlin.ByteArray,%20kotlin.Int))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES-EDE key, starting at`offset`inclusive, is parity-adjusted. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getKey](../javax/crypto/spec/DESedeKeySpec.md))`()` Returns the DES-EDE key. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParityAdjusted](../javax/crypto/spec/DESedeKeySpec.md))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES-EDE key, starting at`offset`inclusive, is parity-adjusted. |
 
 ## Constants
 

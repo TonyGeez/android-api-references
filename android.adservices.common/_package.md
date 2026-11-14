@@ -2,25 +2,25 @@
 
 # android.adservices.common
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/common/package-summary "View this page in Java")
+Kotlin| [Java](../android/adservices/common/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver) | Callback interface intended for use when an asynchronous operation may result in a failure. |
+| [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md) | Callback interface intended for use when an asynchronous operation may result in a failure. |
 | --- | --- |
 
 ## Classes
 
-| [AdData](https://developer.android.com/reference/kotlin/android/adservices/common/AdData) | Represents data specific to an ad that is necessary for ad selection and rendering. |
+| [AdData](../android/adservices/common/AdData.md) | Represents data specific to an ad that is necessary for ad selection and rendering. |
 | --- | --- |
-| [AdFilters](https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters) | A container class for filters which are associated with an ad. |
-| [AdSelectionSignals](https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals) | This class holds JSON that will be passed into a JavaScript function during ad selection. |
-| [AdServicesPermissions](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesPermissions) | Permissions used by the AdServices APIs. |
+| [AdFilters](../android/adservices/common/AdFilters.md) | A container class for filters which are associated with an ad. |
+| [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md) | This class holds JSON that will be passed into a JavaScript function during ad selection. |
+| [AdServicesPermissions](../android/adservices/common/AdServicesPermissions.md) | Permissions used by the AdServices APIs. |
 | --- | --- |
-| [AdTechIdentifier](https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier) | An Identifier representing an ad buyer or seller. |
-| [AppInstallFilters](https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters) | A container for the ad filters that are based on app install state. |
-| [ComponentAdData](https://developer.android.com/reference/kotlin/android/adservices/common/ComponentAdData) | Represents data specific to a component ad that is necessary for ad selection and rendering. |
+| [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md) | An Identifier representing an ad buyer or seller. |
+| [AppInstallFilters](../android/adservices/common/AppInstallFilters.md) | A container for the ad filters that are based on app install state. |
+| [ComponentAdData](../android/adservices/common/ComponentAdData.md) | Represents data specific to a component ad that is necessary for ad selection and rendering. |
 | --- | --- |
-| [FrequencyCapFilters](https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters) | A container for the ad filters that are based on frequency caps. |
-| [KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap) | A frequency cap for a specific ad counter key. |
+| [FrequencyCapFilters](../android/adservices/common/FrequencyCapFilters.md) | A container for the ad filters that are based on frequency caps. |
+| [KeyedFrequencyCap](../android/adservices/common/KeyedFrequencyCap.md) | A frequency cap for a specific ad counter key. |

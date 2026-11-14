@@ -4,22 +4,22 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # TransactionCommittedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/SurfaceControl.TransactionCommittedListener "View this page in Java") 
+Kotlin| [Java](../android/view/SurfaceControl.TransactionCommittedListener.md) 
 | --- | --- |
 
 ```
 interface TransactionCommittedListener
 ```
 
-| [android.view.SurfaceControl.TransactionCommittedListener](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionCommittedListener#) |
+| [android.view.SurfaceControl.TransactionCommittedListener](../android/view/SurfaceControl.TransactionCommittedListener.md) |
 
-Interface to handle request to [SurfaceControl.Transaction.addTransactionCommittedListener(Executor, TransactionCommittedListener)](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#addTransactionCommittedListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.TransactionCommittedListener))
+Interface to handle request to [SurfaceControl.Transaction.addTransactionCommittedListener(Executor, TransactionCommittedListener)](../android/view/SurfaceControl.Transaction.md))
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransactionCommitted](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionCommittedListener#onTransactionCommitted())`()` Invoked when the transaction has been committed in SurfaceFlinger. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransactionCommitted](../android/view/SurfaceControl.TransactionCommittedListener.md))`()` Invoked when the transaction has been committed in SurfaceFlinger. |
 
 ## Public methods
 

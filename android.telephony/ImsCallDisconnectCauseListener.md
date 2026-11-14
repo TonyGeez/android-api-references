@@ -2,14 +2,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ImsCallDisconnectCauseListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener "View this page in Java")
+Kotlin | [Java](../android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.md)
 | --- | --- |
 
 ```
 interface ImsCallDisconnectCauseListener
 ```
 
-| [android.telephony.TelephonyCallback.ImsCallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener#) |
+| [android.telephony.TelephonyCallback.ImsCallDisconnectCauseListener](../android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.md) |
 
 Interface for IMS call disconnect cause listener.
 
@@ -34,4 +34,4 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `imsReasonInfo` | [ImsReasonInfo](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo): `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo` contains details on why IMS call failed. This value cannot be `null`. |
+| `imsReasonInfo` | [ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md): `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo` contains details on why IMS call failed. This value cannot be `null`. |

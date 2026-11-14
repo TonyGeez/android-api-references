@@ -6,9 +6,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface ChronoZonedDateTime<D : ChronoLocalDate!> : Comparable<ChronoZonedDateTime<*>!>, Temporal
 ```
 
-| [java.time.chrono.ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#) |
+| [java.time.chrono.ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md) |
 
-| Known Direct Subclasses [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#) |---|---| | [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#) | A date-time with a time-zone in the ISO-8601 calendar system, such as `2007-12-03T10:15:30+01:00 Europe/Paris`. | |
+| Known Direct Subclasses [ZonedDateTime](../java/time/ZonedDateTime.md) |---|---| | [ZonedDateTime](../java/time/ZonedDateTime.md) | A date-time with a time-zone in the ISO-8601 calendar system, such as `2007-12-03T10:15:30+01:00 Europe/Paris`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A date-time with a time-zone in an arbitrary chronology, intended for advanced globalization use cases.
@@ -29,14 +29,14 @@ Ensure that the discussion in `ChronoLocalDate` has been read and understood bef
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#compareTo(java.time.chrono.ChronoZonedDateTime)(other: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#<*>!)` Compares this date-time to another date-time, including the chronology. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#format(java.time.format.DateTimeFormatter)(formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter.html#!)` Formats this date-time using the specified formatter. |
-| open static [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an instance of `ChronoZonedDateTime` from a temporal object. |
+| open static [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an instance of `ChronoZonedDateTime` from a temporal object. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the value of the specified field as an `int`. |
-| open [Chronology](https://developer.android.com/reference/kotlin/java/time/chrono/Chronology)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getChronology()()` Gets the chronology of this date-time. |
+| open [Chronology](../java/time/chrono/Chronology.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getChronology()()` Gets the chronology of this date-time. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the value of the specified field as a `long`. |
 | --- | --- |
-| abstract [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getOffset()()` Gets the zone offset, such as '+01:00'. |
-| abstract [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getZone()()` Gets the zone ID, such as 'Europe/Paris'. |
+| abstract [ZoneOffset](../java/time/ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getOffset()()` Gets the zone offset, such as '+01:00'. |
+| abstract [ZoneId](../java/time/ZoneId.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getZone()()` Gets the zone ID, such as 'Europe/Paris'. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#isAfter(java.time.chrono.ChronoZonedDateTime)(other: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#<*>!)` Checks if the instant of this date-time is after that of the specified date-time. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#isBefore(java.time.chrono.ChronoZonedDateTime)(other: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#<*>!)` Checks if the instant of this date-time is before that of the specified date-time. |
@@ -44,30 +44,30 @@ Ensure that the discussion in `ChronoLocalDate` has been read and understood bef
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Checks if the specified field is supported. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#isSupported(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Checks if the specified unit is supported. |
-| open [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#minus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount subtracted. |
-| open [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period subtracted. |
+| open [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#minus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount subtracted. |
+| open [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period subtracted. |
 | --- | --- |
-| open [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#plus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount added. |
-| abstract [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period added. |
+| open [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#plus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount added. |
+| abstract [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period added. |
 | open R | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#<R>!)` Queries this date-time using the specified query. |
 | --- | --- |
-| open [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the range of valid values for the specified field. |
-| open static [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)\< [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#timeLineOrder()()` Gets a comparator that compares `ChronoZonedDateTime` in time-line order ignoring the chronology. |
+| open [ValueRange](../java/time/temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the range of valid values for the specified field. |
+| open static [Comparator](../java/util/Comparator.md)\< [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#timeLineOrder()()` Gets a comparator that compares `ChronoZonedDateTime` in time-line order ignoring the chronology. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toEpochSecond()()` Converts this date-time to the number of seconds from the epoch of 1970-01-01T00:00:00Z. |
 | --- | --- |
-| open [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toInstant()()` Converts this date-time to an `Instant`. |
+| open [Instant](../java/time/Instant.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toInstant()()` Converts this date-time to an `Instant`. |
 | open D | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toLocalDate()()` Gets the local date part of this date-time. |
-| abstract [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toLocalDateTime()()` Gets the local date-time part of this date-time. |
+| abstract [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toLocalDateTime()()` Gets the local date-time part of this date-time. |
 | --- | --- |
-| open [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toLocalTime()()` Gets the local time part of this date-time. |
-| open [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#!)` Returns an adjusted object of the same type as this object with the adjustment made. |
-| abstract [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns an object of the same type as this object with the specified field altered. |
+| open [LocalTime](../java/time/LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toLocalTime()()` Gets the local time part of this date-time. |
+| open [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#!)` Returns an adjusted object of the same type as this object with the adjustment made. |
+| abstract [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns an object of the same type as this object with the specified field altered. |
 | --- | --- |
-| abstract [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withEarlierOffsetAtOverlap()()` Returns a copy of this date-time changing the zone offset to the earlier of the two valid offsets at a local time-line overlap. |
-| abstract [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withLaterOffsetAtOverlap()()` Returns a copy of this date-time changing the zone offset to the later of the two valid offsets at a local time-line overlap. |
-| abstract [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withZoneSameInstant(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Returns a copy of this date-time with a different time-zone, retaining the instant. |
+| abstract [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withEarlierOffsetAtOverlap()()` Returns a copy of this date-time changing the zone offset to the earlier of the two valid offsets at a local time-line overlap. |
+| abstract [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withLaterOffsetAtOverlap()()` Returns a copy of this date-time changing the zone offset to the later of the two valid offsets at a local time-line overlap. |
+| abstract [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withZoneSameInstant(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Returns a copy of this date-time with a different time-zone, retaining the instant. |
 | --- | --- |
-| abstract [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withZoneSameLocal(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Returns a copy of this date-time with a different time-zone, retaining the local date-time if possible. |
+| abstract [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<D\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#withZoneSameLocal(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Returns a copy of this date-time with a different time-zone, retaining the local date-time if possible. |
 
 | Inherited functions ||
 |---|---|
@@ -95,7 +95,7 @@ This default implementation performs the comparison defined above.
 | Parameters ||
 |---|---|
 | `o` | the object to be compared. |
-| `other` | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -127,7 +127,7 @@ return formatter.format(this);
 
 | Parameters ||
 |---|---|
-| `formatter` | [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter.html#)!: the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!: the formatter to use, not null |
 
 | Return ||
 |---|---|
@@ -155,7 +155,7 @@ This method matches the signature of the functional interface `https://developer
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!: the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
 
 | Return ||
 |---|---|
@@ -183,7 +183,7 @@ This queries the date-time for the value of the specified field. The returned va
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!: the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -226,7 +226,7 @@ This queries the date-time for the value of the specified field. The returned va
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!: the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -287,7 +287,7 @@ This default implementation performs the comparison based on the epoch-second an
 
 | Parameters ||
 |---|---|
-| `other` | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -309,7 +309,7 @@ This default implementation performs the comparison based on the epoch-second an
 
 | Parameters ||
 |---|---|
-| `other` | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -331,7 +331,7 @@ This default implementation performs the comparison based on the epoch-second an
 
 | Parameters ||
 |---|---|
-| `other` | [ChronoZonedDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoZonedDateTime](../java/time/chrono/ChronoZonedDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -355,7 +355,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!: the field to check, null returns false |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to check, null returns false |
 
 | Return ||
 |---|---|
@@ -379,7 +379,7 @@ If the unit is not a `ChronoUnit`, then the result of this method is obtained by
 
 | Parameters ||
 |---|---|
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!: the unit to check, null returns false |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to check, null returns false |
 
 | Return ||
 |---|---|
@@ -410,7 +410,7 @@ Note that calling `plus` followed by `minus` is not guaranteed to return the sam
 
 | Parameters ||
 |---|---|
-| `amount` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!: the amount to subtract, not null |
+| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -441,7 +441,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | Parameters ||
 |---|---|
 | `amountToSubtract` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the specified unit to subtract, may be negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!: the unit of the amount to subtract, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -479,7 +479,7 @@ Note that calling `plus` followed by `minus` is not guaranteed to return the sam
 
 | Parameters ||
 |---|---|
-| `amount` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#)!: the amount to add, not null |
+| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -510,7 +510,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | Parameters ||
 |---|---|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the specified unit to add, may be negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#)!: the unit of the amount to add, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -540,7 +540,7 @@ The result of this method is obtained by invoking the `https://developer.android
 | Parameters ||
 |---|---|
 | `<R>` | the type of the result |
-| `query` | [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)\<R\>!: the query to invoke, not null |
+| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<R\>!: the query to invoke, not null |
 
 | Return ||
 |---|---|
@@ -567,7 +567,7 @@ Note that the result only describes the minimum and maximum valid values and it 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!: the field to query the range for, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to query the range for, not null |
 
 | Return ||
 |---|---|
@@ -610,7 +610,7 @@ open fun toEpochSecond(): Long
 
 Converts this date-time to the number of seconds from the epoch of 1970-01-01T00:00:00Z.
 
-This uses the [local date-time](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toLocalDateTime()) and [offset](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getOffset()) to calculate the epoch-second value, which is the number of elapsed seconds from 1970-01-01T00:00:00Z. Instants on the time-line after the epoch are positive, earlier are negative.
+This uses the [local date-time](../java/time/chrono/ChronoZonedDateTime.md)) and [offset](../java/time/chrono/ChronoZonedDateTime.md)) to calculate the epoch-second value, which is the number of elapsed seconds from 1970-01-01T00:00:00Z. Instants on the time-line after the epoch are positive, earlier are negative.
 
 | Return ||
 |---|---|
@@ -626,7 +626,7 @@ open fun toInstant(): Instant!
 
 Converts this date-time to an `Instant`.
 
-This returns an `Instant` representing the same point on the time-line as this date-time. The calculation combines the [local date-time](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#toLocalDateTime()) and [offset](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoZonedDateTime#getOffset()).
+This returns an `Instant` representing the same point on the time-line as this date-time. The calculation combines the [local date-time](../java/time/chrono/ChronoZonedDateTime.md)) and [offset](../java/time/chrono/ChronoZonedDateTime.md)).
 
 | Return ||
 |---|---|
@@ -703,7 +703,7 @@ date = date.with(Month.JULY);        // most key classes implement TemporalAdjus
 
 | Parameters ||
 |---|---|
-| `adjuster` | [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#)!: the adjuster to use, not null |
+| `adjuster` | [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
 
 | Return ||
 |---|---|
@@ -733,7 +733,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!: the field to set in the result, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to set in the result, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new value of the field in the result |
 
 | Return ||
@@ -813,7 +813,7 @@ To change the offset while keeping the local time, use `https://developer.androi
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!: the time-zone to change to, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the time-zone to change to, not null |
 
 | Return ||
 |---|---|
@@ -841,7 +841,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!: the time-zone to change to, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the time-zone to change to, not null |
 
 | Return ||
 |---|---|

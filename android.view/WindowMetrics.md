@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # WindowMetrics
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/WindowMetrics "View this page in Java") 
+Kotlin| [Java](../android/view/WindowMetrics.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ class WindowMetrics
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.WindowMetrics](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#) |
+| ↳ | [android.view.WindowMetrics](../android/view/WindowMetrics.md) |
 
-Metrics about a Window, consisting of the bounds and [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets).
+Metrics about a Window, consisting of the bounds and [WindowInsets](../android/view/WindowInsets.md).
 
-This is usually obtained from [WindowManager.getCurrentWindowMetrics()](https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics())and [WindowManager.getMaximumWindowMetrics()](https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()).
-After [android.os.Build.VERSION_CODES#UPSIDE_DOWN_CAKE](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int), it also provides density.
+This is usually obtained from [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))and [WindowManager.getMaximumWindowMetrics()](../android/view/WindowManager.md)).
+After [android.os.Build.VERSION_CODES#UPSIDE_DOWN_CAKE](../android/os/Build.VERSION_CODES.md), it also provides density.
 
 ### Obtains Window Dimensions in Density-independent Pixel(DP)
 
-While [getDensity()](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#getDensity())is provided, the dimension in density-independent pixel could also be calculated with`WindowMetrics`properties, which is similar to [android.content.res.Configuration#screenWidthDp](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#screenWidthDp:kotlin.Int) 
+While [getDensity()](../android/view/WindowMetrics.md))is provided, the dimension in density-independent pixel could also be calculated with`WindowMetrics`properties, which is similar to [android.content.res.Configuration#screenWidthDp](../android/content/res/Configuration.md) 
 
 ```kotlin
 float widthInDp = windowMetrics.getBounds().width() / windowMetrics.getDensity();
@@ -42,16 +42,16 @@ float densityDp = DisplayMetrics.DENSITY_DEFAULT * windowMetrics.getDensity();
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WindowMetrics](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#WindowMetrics(android.graphics.Rect,%20android.view.WindowInsets))`(`bounds:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `windowInsets:` ` [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets)`)` <br /> |
-| [WindowMetrics](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#WindowMetrics(android.graphics.Rect,%20android.view.WindowInsets,%20kotlin.Float))`(`bounds:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `windowInsets:` ` [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets)`, `density:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The constructor to create a [WindowMetrics](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#) instance. |
+| [WindowMetrics](../android/view/WindowMetrics.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)`, `windowInsets:` ` [WindowInsets](../android/view/WindowInsets.md)`)` <br /> |
+| [WindowMetrics](../android/view/WindowMetrics.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)`, `windowInsets:` ` [WindowInsets](../android/view/WindowInsets.md)`, `density:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The constructor to create a [WindowMetrics](../android/view/WindowMetrics.md) instance. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getBounds](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#getBounds())`()` Returns the bounds of the area associated with this window or`UiContext`. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDensity](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#getDensity())`()` Returns the density of the area associated with this window or`UiContext`, which uses the same units as [android.util.DisplayMetrics#density](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#density:kotlin.Float). |
-| [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) | [getWindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#getWindowInsets())`()` Returns the [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) of the area associated with this window or`UiContext`. |
+| [Rect](../android/graphics/Rect.md) | [getBounds](../android/view/WindowMetrics.md))`()` Returns the bounds of the area associated with this window or`UiContext`. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDensity](../android/view/WindowMetrics.md))`()` Returns the density of the area associated with this window or`UiContext`, which uses the same units as [android.util.DisplayMetrics#density](../android/util/DisplayMetrics.md). |
+| [WindowInsets](../android/view/WindowInsets.md) | [getWindowInsets](../android/view/WindowMetrics.md))`()` Returns the [WindowInsets](../android/view/WindowInsets.md) of the area associated with this window or`UiContext`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/WindowMetrics.md))`()` <br /> |
 
 ## Public constructors
 
@@ -65,12 +65,12 @@ WindowMetrics(
     windowInsets: WindowInsets)
 ```
 
-**Deprecated:** *use [WindowMetrics(android.graphics.Rect,android.view.WindowInsets,float)](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#WindowMetrics(android.graphics.Rect,%20android.view.WindowInsets,%20kotlin.Float))instead.*
+**Deprecated:** *use [WindowMetrics(android.graphics.Rect,android.view.WindowInsets,float)](../android/view/WindowMetrics.md))instead.*
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):This value cannot be`null`. |
-| `windowInsets` | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets):This value cannot be`null`. |
+| `bounds` | [Rect](../android/graphics/Rect.md):This value cannot be`null`. |
+| `windowInsets` | [WindowInsets](../android/view/WindowInsets.md):This value cannot be`null`. |
 
 ### WindowMetrics
 
@@ -83,14 +83,14 @@ WindowMetrics(
     density: Float)
 ```
 
-The constructor to create a [WindowMetrics](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#) instance.
+The constructor to create a [WindowMetrics](../android/view/WindowMetrics.md) instance.
 
-Note that in most cases [WindowMetrics](https://developer.android.com/reference/kotlin/android/view/WindowMetrics#) is obtained from [WindowManager.getCurrentWindowMetrics()](https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics())or [WindowManager.getMaximumWindowMetrics()](https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()).
+Note that in most cases [WindowMetrics](../android/view/WindowMetrics.md) is obtained from [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))or [WindowManager.getMaximumWindowMetrics()](../android/view/WindowManager.md)).
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The window bounds This value cannot be`null`. |
-| `windowInsets` | [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets):The [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) of the window This value cannot be`null`. |
+| `bounds` | [Rect](../android/graphics/Rect.md):The window bounds This value cannot be`null`. |
+| `windowInsets` | [WindowInsets](../android/view/WindowInsets.md):The [WindowInsets](../android/view/WindowInsets.md) of the window This value cannot be`null`. |
 | `density` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The window density |
 | --- | --- |
 
@@ -106,7 +106,7 @@ fun getBounds(): Rect
 
 Returns the bounds of the area associated with this window or`UiContext`.
 
-**Note that the size of the reported bounds can have different size than [Display.getSize(Point)](https://developer.android.com/reference/kotlin/android/view/Display#getSize(android.graphics.Point))based on your target API level and calling context.** This method reports the window size including all system bar areas, while [Display.getSize(Point)](https://developer.android.com/reference/kotlin/android/view/Display#getSize(android.graphics.Point))can report the area excluding navigation bars and display cutout areas depending on the calling context and target SDK level. Please refer to [Display.getSize(Point)](https://developer.android.com/reference/kotlin/android/view/Display#getSize(android.graphics.Point))for details.
+**Note that the size of the reported bounds can have different size than [Display.getSize(Point)](../android/view/Display.md))based on your target API level and calling context.** This method reports the window size including all system bar areas, while [Display.getSize(Point)](../android/view/Display.md))can report the area excluding navigation bars and display cutout areas depending on the calling context and target SDK level. Please refer to [Display.getSize(Point)](../android/view/Display.md))for details.
 
 The following code snippet shows how to get the bounds excluding navigation bars and display cutout: 
 
@@ -131,7 +131,7 @@ final WindowMetrics metrics = windowManager.getCurrentWindowMetrics();
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | window bounds in pixels. This value cannot be`null`. |
+| [Rect](../android/graphics/Rect.md) | window bounds in pixels. This value cannot be`null`. |
 
 ### getDensity
 
@@ -141,11 +141,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getDensity(): Float
 ```
 
-Returns the density of the area associated with this window or`UiContext`, which uses the same units as [android.util.DisplayMetrics#density](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#density:kotlin.Float). 
+Returns the density of the area associated with this window or`UiContext`, which uses the same units as [android.util.DisplayMetrics#density](../android/util/DisplayMetrics.md). 
 **See Also**
 
-- [android.util.DisplayMetrics#DENSITY_DEFAULT](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#DENSITY_DEFAULT:kotlin.Int)
-- [android.util.DisplayMetrics#density](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#density:kotlin.Float) 
+- [android.util.DisplayMetrics#DENSITY_DEFAULT](../android/util/DisplayMetrics.md)
+- [android.util.DisplayMetrics#density](../android/util/DisplayMetrics.md) 
 
 ### getWindowInsets
 
@@ -155,11 +155,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getWindowInsets(): WindowInsets
 ```
 
-Returns the [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) of the area associated with this window or`UiContext`.
+Returns the [WindowInsets](../android/view/WindowInsets.md) of the area associated with this window or`UiContext`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) | the [WindowInsets](https://developer.android.com/reference/kotlin/android/view/WindowInsets) of the visual area. This value cannot be`null`. |
+| [WindowInsets](../android/view/WindowInsets.md) | the [WindowInsets](../android/view/WindowInsets.md) of the visual area. This value cannot be`null`. |
 
 ### toString
 

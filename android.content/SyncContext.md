@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # SyncContext
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/SyncContext "View this page in Java") 
+Kotlin| [Java](../android/content/SyncContext.md) 
 | --- | --- |
 
 ```
@@ -13,14 +13,14 @@ open class SyncContext
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.SyncContext](https://developer.android.com/reference/kotlin/android/content/SyncContext#) |
+| ↳ | [android.content.SyncContext](../android/content/SyncContext.md) |
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)! | [getSyncContextBinder](https://developer.android.com/reference/kotlin/android/content/SyncContext#getSyncContextBinder())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFinished](https://developer.android.com/reference/kotlin/android/content/SyncContext#onFinished(android.content.SyncResult))`(`result:` ` [SyncResult](https://developer.android.com/reference/kotlin/android/content/SyncResult)!`)` <br /> |
+| open [IBinder](../android/os/IBinder.md)! | [getSyncContextBinder](../android/content/SyncContext.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFinished](../android/content/SyncContext.md))`(`result:` ` [SyncResult](../android/content/SyncResult.md)!`)` <br /> |
 
 ## Public methods
 

@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # NoWritingToolsSpan
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/style/NoWritingToolsSpan "View this page in Java")
+Kotlin | [Java](../android/text/style/NoWritingToolsSpan.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class NoWritingToolsSpan : ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.style.NoWritingToolsSpan](https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#) |
+| ↳ | [android.text.style.NoWritingToolsSpan](../android/text/style/NoWritingToolsSpan.md) |
 
 A span that signals to IMEs that writing tools should not modify the text.
 
@@ -33,7 +33,7 @@ For example, a text field may contain a mix of user input text and quoted text. 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [NoWritingToolsSpan](https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#)!\> | `https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NoWritingToolsSpan](../android/text/style/NoWritingToolsSpan.md)!\> | `https://developer.android.com/reference/kotlin/android/text/style/NoWritingToolsSpan#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -102,7 +102,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

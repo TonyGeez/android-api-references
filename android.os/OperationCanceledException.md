@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # OperationCanceledException
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/OperationCanceledException "View this page in Java") 
+Kotlin| [Java](../android/os/OperationCanceledException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class OperationCanceledException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.os.OperationCanceledException](https://developer.android.com/reference/kotlin/android/os/OperationCanceledException#) |
+| | | | ↳ | [android.os.OperationCanceledException](../android/os/OperationCanceledException.md) |
 
 An exception type that is thrown when an operation in progress is canceled.
 
@@ -25,8 +25,8 @@ An exception type that is thrown when an operation in progress is canceled.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [OperationCanceledException](https://developer.android.com/reference/kotlin/android/os/OperationCanceledException#OperationCanceledException())`()` <br /> |
-| [OperationCanceledException](https://developer.android.com/reference/kotlin/android/os/OperationCanceledException#OperationCanceledException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [OperationCanceledException](../android/os/OperationCanceledException.md))`()` <br /> |
+| [OperationCanceledException](../android/os/OperationCanceledException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

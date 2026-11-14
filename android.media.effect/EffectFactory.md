@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # EffectFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/effect/EffectFactory "View this page in Java") 
+Kotlin| [Java](../android/media/effect/EffectFactory.md) 
 | --- | --- |
 
 ```
@@ -13,55 +13,55 @@ open class EffectFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.effect.EffectFactory](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#) |
+| ↳ | [android.media.effect.EffectFactory](../android/media/effect/EffectFactory.md) |
 
-The EffectFactory class defines the list of available Effects, and provides functionality to inspect and instantiate them. Some effects may not be available on all platforms, so before creating a certain effect, the application should confirm that the effect is supported on this platform by calling [isEffectSupported(java.lang.String)](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#isEffectSupported(kotlin.String)).
+The EffectFactory class defines the list of available Effects, and provides functionality to inspect and instantiate them. Some effects may not be available on all platforms, so before creating a certain effect, the application should confirm that the effect is supported on this platform by calling [isEffectSupported(java.lang.String)](../android/media/effect/EffectFactory.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_AUTOFIX](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_AUTOFIX:kotlin.String) Attempts to auto-fix the image based on histogram equalization. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BACKDROPPER](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_BACKDROPPER:kotlin.String) Replaces the background of the input frames with frames from a selected video. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BITMAPOVERLAY](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_BITMAPOVERLAY:kotlin.String) Overlays a bitmap (with premultiplied alpha channel) onto the input image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_AUTOFIX](../android/media/effect/EffectFactory.md) Attempts to auto-fix the image based on histogram equalization. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BACKDROPPER](../android/media/effect/EffectFactory.md) Replaces the background of the input frames with frames from a selected video. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BITMAPOVERLAY](../android/media/effect/EffectFactory.md) Overlays a bitmap (with premultiplied alpha channel) onto the input image. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BLACKWHITE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_BLACKWHITE:kotlin.String) Adjusts the range of minimal and maximal color pixel intensities. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BRIGHTNESS](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_BRIGHTNESS:kotlin.String) Adjusts the brightness of the image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_CONTRAST](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_CONTRAST:kotlin.String) Adjusts the contrast of the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BLACKWHITE](../android/media/effect/EffectFactory.md) Adjusts the range of minimal and maximal color pixel intensities. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_BRIGHTNESS](../android/media/effect/EffectFactory.md) Adjusts the brightness of the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_CONTRAST](../android/media/effect/EffectFactory.md) Adjusts the contrast of the image. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_CROP](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_CROP:kotlin.String) Crops an upright rectangular area from the image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_CROSSPROCESS](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_CROSSPROCESS:kotlin.String) Applies a cross process effect on image, in which the red and green channels are enhanced while the blue channel is restricted. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_DOCUMENTARY](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_DOCUMENTARY:kotlin.String) Applies black and white documentary style effect on image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_CROP](../android/media/effect/EffectFactory.md) Crops an upright rectangular area from the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_CROSSPROCESS](../android/media/effect/EffectFactory.md) Applies a cross process effect on image, in which the red and green channels are enhanced while the blue channel is restricted. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_DOCUMENTARY](../android/media/effect/EffectFactory.md) Applies black and white documentary style effect on image. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_DUOTONE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_DUOTONE:kotlin.String) Representation of photo using only two color tones. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_FILLLIGHT](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_FILLLIGHT:kotlin.String) Applies back-light filling to the image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_FISHEYE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_FISHEYE:kotlin.String) Applies a fisheye lens distortion to the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_DUOTONE](../android/media/effect/EffectFactory.md) Representation of photo using only two color tones. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_FILLLIGHT](../android/media/effect/EffectFactory.md) Applies back-light filling to the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_FISHEYE](../android/media/effect/EffectFactory.md) Applies a fisheye lens distortion to the image. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_FLIP](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_FLIP:kotlin.String) Flips image vertically and/or horizontally. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_GRAIN](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_GRAIN:kotlin.String) Applies film grain effect to image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_GRAYSCALE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_GRAYSCALE:kotlin.String) Converts image to grayscale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_FLIP](../android/media/effect/EffectFactory.md) Flips image vertically and/or horizontally. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_GRAIN](../android/media/effect/EffectFactory.md) Applies film grain effect to image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_GRAYSCALE](../android/media/effect/EffectFactory.md) Converts image to grayscale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_LOMOISH](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_LOMOISH:kotlin.String) Applies lomo-camera style effect to image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_NEGATIVE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_NEGATIVE:kotlin.String) Inverts the image colors. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_POSTERIZE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_POSTERIZE:kotlin.String) Applies posterization effect to image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_LOMOISH](../android/media/effect/EffectFactory.md) Applies lomo-camera style effect to image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_NEGATIVE](../android/media/effect/EffectFactory.md) Inverts the image colors. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_POSTERIZE](../android/media/effect/EffectFactory.md) Applies posterization effect to image. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_REDEYE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_REDEYE:kotlin.String) Removes red eyes on specified region. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_ROTATE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_ROTATE:kotlin.String) Rotates the image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_SATURATE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_SATURATE:kotlin.String) Adjusts color saturation of image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_REDEYE](../android/media/effect/EffectFactory.md) Removes red eyes on specified region. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_ROTATE](../android/media/effect/EffectFactory.md) Rotates the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_SATURATE](../android/media/effect/EffectFactory.md) Adjusts color saturation of image. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_SEPIA](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_SEPIA:kotlin.String) Converts image to sepia tone. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_SHARPEN](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_SHARPEN:kotlin.String) Sharpens the image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_STRAIGHTEN](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_STRAIGHTEN:kotlin.String) Rotates the image according to the specified angle, and crops the image so that no non-image portions are visible. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_SEPIA](../android/media/effect/EffectFactory.md) Converts image to sepia tone. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_SHARPEN](../android/media/effect/EffectFactory.md) Sharpens the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_STRAIGHTEN](../android/media/effect/EffectFactory.md) Rotates the image according to the specified angle, and crops the image so that no non-image portions are visible. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_TEMPERATURE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_TEMPERATURE:kotlin.String) Adjusts color temperature of the image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_TINT](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_TINT:kotlin.String) Tints the photo with specified color. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_VIGNETTE](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#EFFECT_VIGNETTE:kotlin.String) Adds a vignette effect to image, i. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_TEMPERATURE](../android/media/effect/EffectFactory.md) Adjusts color temperature of the image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_TINT](../android/media/effect/EffectFactory.md) Tints the photo with specified color. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_VIGNETTE](../android/media/effect/EffectFactory.md) Adds a vignette effect to image, i. |
 | --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Effect](https://developer.android.com/reference/kotlin/android/media/effect/Effect)! | [createEffect](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#createEffect(kotlin.String))`(`effectName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Instantiate a new effect with the given effect name. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEffectSupported](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory#isEffectSupported(kotlin.String))`(`effectName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if an effect is supported on this platform. |
+| open [Effect](../android/media/effect/Effect.md)! | [createEffect](../android/media/effect/EffectFactory.md))`(`effectName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Instantiate a new effect with the given effect name. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEffectSupported](../android/media/effect/EffectFactory.md))`(`effectName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if an effect is supported on this platform. |
 
 ## Constants
 
@@ -97,9 +97,9 @@ Available parameters:
 
 | Parameter name | Meaning | Valid values |
 | --- | --- | --- |
-| `source` | A URI for the background video to use. This parameter must be supplied before calling apply() for the first time. | String, such as from [Uri.toString()](https://developer.android.com/reference/kotlin/android/net/Uri.html#toString()) |
+| `source` | A URI for the background video to use. This parameter must be supplied before calling apply() for the first time. | String, such as from [Uri.toString()](../android/net/Uri.md)) |
 
-If the update listener is set for this effect using [Effect.setUpdateListener](https://developer.android.com/reference/kotlin/android/media/effect/Effect#setUpdateListener(android.media.effect.EffectUpdateListener)), it will be called when the effect has finished learning the background, with a null value for the info parameter. 
+If the update listener is set for this effect using [Effect.setUpdateListener](../android/media/effect/Effect.md)), it will be called when the effect has finished learning the background, with a null value for the info parameter. 
 
  Value: "android.media.effect.effects.BackDropperEffect"
 
@@ -240,8 +240,8 @@ Available parameters:
 
 | Parameter name | Meaning | Valid values |
 | --- | --- | --- |
-| `first_color` | The first color tone. | Integer, representing an ARGB color with 8 bits per channel. May be created using [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#) class. |
-| `second_color` | The second color tone. | Integer, representing an ARGB color with 8 bits per channel. May be created using [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#) class. |
+| `first_color` | The first color tone. | Integer, representing an ARGB color with 8 bits per channel. May be created using [Color](../android/graphics/Color.md) class. |
+| `second_color` | The second color tone. | Integer, representing an ARGB color with 8 bits per channel. May be created using [Color](../android/graphics/Color.md) class. |
 
  Value: "android.media.effect.effects.DuotoneEffect"
 
@@ -510,7 +510,7 @@ Available parameters:
 
 | Parameter name | Meaning | Valid values |
 | --- | --- | --- |
-| `tint` | The color of the tint. | Integer, representing an ARGB color with 8 bits per channel. May be created using [Color](https://developer.android.com/reference/kotlin/android/graphics/Color.html#) class. |
+| `tint` | The color of the tint. | Integer, representing an ARGB color with 8 bits per channel. May be created using [Color](../android/graphics/Color.md) class. |
 
  Value: "android.media.effect.effects.TintEffect"
 
@@ -554,7 +554,7 @@ Note that the EGL context associated with the current EffectContext need not be 
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------|
-| [Effect](https://developer.android.com/reference/kotlin/android/media/effect/Effect)! | A new Effect instance. |
+| [Effect](../android/media/effect/Effect.md)! | A new Effect instance. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------|

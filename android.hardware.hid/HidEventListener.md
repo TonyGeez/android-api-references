@@ -6,7 +6,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 interface HidEventListener
 ```
 
-| [android.hardware.hid.HidEventListener](https://developer.android.com/reference/kotlin/android/hardware/hid/HidEventListener#) |
+| [android.hardware.hid.HidEventListener](../android/hardware/hid/HidEventListener.md) |
 
 Listener for receiving events from a `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice`.
 
@@ -47,7 +47,7 @@ This callback is purely informative and **never** unregisters listeners. On non-
 
 | Parameters ||
 |---|---|
-| `cause` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#): The exception describing the error. This value cannot be `null`. |
+| `cause` | [Exception](../java/lang/Exception.md): The exception describing the error. This value cannot be `null`. |
 
 ### onInputReport
 
@@ -61,4 +61,4 @@ Called when an input report is received from the HID device.
 
 | Parameters ||
 |---|---|
-| `report` | [Report](https://developer.android.com/reference/kotlin/android/hardware/hid/Report): This value cannot be `null`. |
+| `report` | [Report](../android/hardware/hid/Report.md): This value cannot be `null`. |

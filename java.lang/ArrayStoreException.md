@@ -11,10 +11,10 @@ open class ArrayStoreException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.ArrayStoreException](https://developer.android.com/reference/kotlin/java/lang/ArrayStoreException#) |
+| | | | ↳ | [java.lang.ArrayStoreException](../java/lang/ArrayStoreException.md) |
 
 Thrown to indicate that an attempt has been made to store the wrong type of object into an array of objects. For example, the following code generates an`ArrayStoreException`: 
 
@@ -30,8 +30,8 @@ Object x[] = new String[3];
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ArrayStoreException](https://developer.android.com/reference/kotlin/java/lang/ArrayStoreException#ArrayStoreException())`()` Constructs an`ArrayStoreException`with no detail message. |
-| [ArrayStoreException](https://developer.android.com/reference/kotlin/java/lang/ArrayStoreException#ArrayStoreException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`ArrayStoreException`with the specified detail message. |
+| [ArrayStoreException](../java/lang/ArrayStoreException.md))`()` Constructs an`ArrayStoreException`with no detail message. |
+| [ArrayStoreException](../java/lang/ArrayStoreException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`ArrayStoreException`with the specified detail message. |
 
 ## Public constructors
 

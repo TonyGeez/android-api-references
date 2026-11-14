@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # FileUtils
 
-Kotlin | [Java](https://developer.android.com/reference/android/os/FileUtils "View this page in Java")
+Kotlin | [Java](../android/os/FileUtils.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class FileUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.FileUtils](https://developer.android.com/reference/kotlin/android/os/FileUtils#) |
+| ↳ | [android.os.FileUtils](../android/os/FileUtils.md) |
 
 Utility methods useful for working with files.
 
@@ -49,7 +49,7 @@ Closes the given object quietly, ignoring any checked exceptions. Does nothing i
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)?: This value may be `null`. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)?: This value may be `null`. |
 
 ### closeQuietly
 
@@ -66,7 +66,7 @@ Closes the given object quietly, ignoring any checked exceptions. Does nothing i
 
 | Parameters ||
 |---|---|
-| `closeable` | [AutoCloseable](https://developer.android.com/reference/kotlin/java/lang/AutoCloseable.html#)?: This value may be `null`. |
+| `closeable` | [AutoCloseable](../java/lang/AutoCloseable.md)?: This value may be `null`. |
 
 ### copy
 
@@ -85,8 +85,8 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#): This value cannot be `null`. |
-| `out` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#): This value cannot be `null`. |
+| `in` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
+| `out` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -112,12 +112,12 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#): This value cannot be `null`. |
-| `out` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#): This value cannot be `null`. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal)?: to signal if the copy should be cancelled early. This value may be `null`. |
+| `in` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
+| `out` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: to signal if the copy should be cancelled early. This value may be `null`. |
 | --- | --- |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: that listener events should be delivered via. This value may be `null`. |
-| `listener` | [FileUtils.ProgressListener](https://developer.android.com/reference/kotlin/android/os/FileUtils.ProgressListener)?: to be periodically notified as the copy progresses. This value may be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: that listener events should be delivered via. This value may be `null`. |
+| `listener` | [FileUtils.ProgressListener](../android/os/FileUtils.ProgressListener.md)?: to be periodically notified as the copy progresses. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -140,8 +140,8 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#): This value cannot be `null`. |
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#): This value cannot be `null`. |
+| `in` | [InputStream](../java/io/InputStream.md): This value cannot be `null`. |
+| `out` | [OutputStream](../java/io/OutputStream.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -167,12 +167,12 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#): This value cannot be `null`. |
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#): This value cannot be `null`. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal)?: to signal if the copy should be cancelled early. This value may be `null`. |
+| `in` | [InputStream](../java/io/InputStream.md): This value cannot be `null`. |
+| `out` | [OutputStream](../java/io/OutputStream.md): This value cannot be `null`. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: to signal if the copy should be cancelled early. This value may be `null`. |
 | --- | --- |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: that listener events should be delivered via. This value may be `null`. |
-| `listener` | [FileUtils.ProgressListener](https://developer.android.com/reference/kotlin/android/os/FileUtils.ProgressListener)?: to be periodically notified as the copy progresses. This value may be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: that listener events should be delivered via. This value may be `null`. |
+| `listener` | [FileUtils.ProgressListener](../android/os/FileUtils.ProgressListener.md)?: to be periodically notified as the copy progresses. This value may be `null`. |
 
 | Return ||
 |---|---|

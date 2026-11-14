@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # GetCredentialException
 
-Kotlin | [Java](https://developer.android.com/reference/android/credentials/GetCredentialException "View this page in Java") 
+Kotlin | [Java](../android/credentials/GetCredentialException.md) 
 | --- | --- |
 
 ```
@@ -14,32 +14,32 @@ open class GetCredentialException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [android.credentials.GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [android.credentials.GetCredentialException](../android/credentials/GetCredentialException.md) |
 | --- | --- | --- | --- |
 
-Represents an error encountered during the [CredentialManager.getCredential(Context, GetCredentialRequest,](https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#getCredential(android.content.Context,%20android.credentials.GetCredentialRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)) operation.
+Represents an error encountered during the [CredentialManager.getCredential(Context, GetCredentialRequest,](../android/credentials/CredentialManager.md)) operation.
 
 ## Summary
 
 | Constants ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_INTERRUPTED](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#TYPE_INTERRUPTED:kotlin.String) The error type value for when the given operation failed due to internal interruption. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_NO_CREDENTIAL](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#TYPE_NO_CREDENTIAL:kotlin.String) The error type value for when no credential is found available for the given [android.credentials.CredentialManager#getCredential(android.content.Context,android.credentials.GetCredentialRequest,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#getCredential(android.content.Context,%20android.credentials.GetCredentialRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)) request. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#TYPE_UNKNOWN:kotlin.String) The error type value for when the given operation failed due to an unknown reason. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_INTERRUPTED](../android/credentials/GetCredentialException.md) The error type value for when the given operation failed due to internal interruption. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_NO_CREDENTIAL](../android/credentials/GetCredentialException.md) The error type value for when no credential is found available for the given [android.credentials.CredentialManager#getCredential(android.content.Context,android.credentials.GetCredentialRequest,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)](../android/credentials/CredentialManager.md)) request. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_UNKNOWN](../android/credentials/GetCredentialException.md) The error type value for when the given operation failed due to an unknown reason. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_USER_CANCELED](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#TYPE_USER_CANCELED:kotlin.String) The error type value for when the user intentionally cancelled the request. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_USER_CANCELED](../android/credentials/GetCredentialException.md) The error type value for when the user intentionally cancelled the request. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#GetCredentialException(kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#). |
-| [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#GetCredentialException(kotlin.String,%20kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#). |
-| [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#GetCredentialException(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#). |
-| [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#GetCredentialException(kotlin.String,%20kotlin.Throwable))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#). |
+| [GetCredentialException](../android/credentials/GetCredentialException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md). |
+| [GetCredentialException](../android/credentials/GetCredentialException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md). |
+| [GetCredentialException](../android/credentials/GetCredentialException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md). |
+| [GetCredentialException](../android/credentials/GetCredentialException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md). |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#getType())`()` Returns the specific exception type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](../android/credentials/GetCredentialException.md))`()` Returns the specific exception type. |
 
 ## Constants
 
@@ -63,7 +63,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_NO_CREDENTIAL: String
 ```
 
-The error type value for when no credential is found available for the given [android.credentials.CredentialManager#getCredential(android.content.Context,android.credentials.GetCredentialRequest,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#getCredential(android.content.Context,%20android.credentials.GetCredentialRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)) request. 
+The error type value for when no credential is found available for the given [android.credentials.CredentialManager#getCredential(android.content.Context,android.credentials.GetCredentialRequest,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)](../android/credentials/CredentialManager.md)) request. 
 
  Value: "android.credentials.GetCredentialException.TYPE_NO_CREDENTIAL"
 
@@ -103,7 +103,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 GetCredentialException(type: String)
 ```
 
-Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#).
+Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md).
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------|
@@ -123,7 +123,7 @@ GetCredentialException(
     message: String?)
 ```
 
-Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#).
+Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md).
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------|
@@ -145,7 +145,7 @@ GetCredentialException(
     cause: Throwable?)
 ```
 
-Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#).
+Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md).
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------|
@@ -168,7 +168,7 @@ GetCredentialException(
     cause: Throwable?)
 ```
 
-Constructs a [GetCredentialException](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException#).
+Constructs a [GetCredentialException](../android/credentials/GetCredentialException.md).
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------|

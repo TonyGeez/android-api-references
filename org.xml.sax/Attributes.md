@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Attributes
 ```
 
-| [org.xml.sax.Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#) |
+| [org.xml.sax.Attributes](../org/xml/sax/Attributes.md) |
 
-| Known Direct Subclasses [Attributes2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2), [AttributesImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributesImpl), [Driver](https://developer.android.com/reference/kotlin/org/xmlpull/v1/sax2/Driver.html#) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Attributes2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2) | SAX2 extension to augment the per-attribute information provided though [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#). | | [AttributesImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributesImpl) | Default implementation of the Attributes interface. | | [Driver](https://developer.android.com/reference/kotlin/org/xmlpull/v1/sax2/Driver.html#) | SAX2 Driver that pulls events from XmlPullParser and converts them into SAX2 callbacks. | |
+| Known Direct Subclasses [Attributes2](../org/xml/sax/ext/Attributes2.md), [AttributesImpl](../org/xml/sax/helpers/AttributesImpl.md), [Driver](../org/xmlpull/v1/sax2/Driver.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Attributes2](../org/xml/sax/ext/Attributes2.md) | SAX2 extension to augment the per-attribute information provided though [Attributes](../org/xml/sax/Attributes.md). | | [AttributesImpl](../org/xml/sax/helpers/AttributesImpl.md) | Default implementation of the Attributes interface. | | [Driver](../org/xmlpull/v1/sax2/Driver.md) | SAX2 Driver that pulls events from XmlPullParser and converts them into SAX2 callbacks. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [Attributes2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl) [Attributes2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl) |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Attributes2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl) | SAX2 extension helper for additional Attributes information, implementing the [Attributes2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2) interface. | | [Attributes2Impl](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2Impl) | SAX2 extension helper for additional Attributes information, implementing the [Attributes2](https://developer.android.com/reference/kotlin/org/xml/sax/ext/Attributes2) interface. | |
+| Known Indirect Subclasses [Attributes2Impl](../org/xml/sax/ext/Attributes2Impl.md) [Attributes2Impl](../org/xml/sax/ext/Attributes2Impl.md) |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Attributes2Impl](../org/xml/sax/ext/Attributes2Impl.md) | SAX2 extension helper for additional Attributes information, implementing the [Attributes2](../org/xml/sax/ext/Attributes2.md) interface. | | [Attributes2Impl](../org/xml/sax/ext/Attributes2Impl.md) | SAX2 extension helper for additional Attributes information, implementing the [Attributes2](../org/xml/sax/ext/Attributes2.md) interface. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface for a list of XML attributes.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
@@ -38,21 +38,21 @@ The order of attributes in the list is unspecified, and will vary from implement
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getIndex(kotlin.String))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the index of an attribute by XML qualified (prefixed) name. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getIndex(kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the index of an attribute by Namespace name. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLength())`()` Return the number of attributes in the list. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../org/xml/sax/Attributes.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the index of an attribute by XML qualified (prefixed) name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../org/xml/sax/Attributes.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the index of an attribute by Namespace name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../org/xml/sax/Attributes.md))`()` Return the number of attributes in the list. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalName](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLocalName(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's local name by index. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getQName](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getQName(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's XML qualified (prefixed) name by index. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getType(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's type by index. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalName](../org/xml/sax/Attributes.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's local name by index. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getQName](../org/xml/sax/Attributes.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's XML qualified (prefixed) name by index. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/Attributes.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's type by index. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getType(kotlin.String))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by XML qualified (prefixed) name. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getType(kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by Namespace name. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getURI](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getURI(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's Namespace URI by index. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/Attributes.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by XML qualified (prefixed) name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/Attributes.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by Namespace name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getURI](../org/xml/sax/Attributes.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's Namespace URI by index. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getValue(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's value by index. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getValue(kotlin.String))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by XML qualified (prefixed) name. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getValue(kotlin.String,%20kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by Namespace name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/Attributes.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Look up an attribute's value by index. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/Attributes.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by XML qualified (prefixed) name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/Attributes.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by Namespace name. |
 | --- | --- |
 
 ## Public methods
@@ -115,11 +115,11 @@ Once you know the number of attributes, you can iterate through the list.
 
 **See Also**
 
-- [#getURI(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getURI(kotlin.Int))
-- [#getLocalName(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLocalName(kotlin.Int))
-- [#getQName(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getQName(kotlin.Int))
-- [#getType(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getType(kotlin.Int))
-- [#getValue(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getValue(kotlin.Int)) 
+- [#getURI(int)](../org/xml/sax/Attributes.md))
+- [#getLocalName(int)](../org/xml/sax/Attributes.md))
+- [#getQName(int)](../org/xml/sax/Attributes.md))
+- [#getType(int)](../org/xml/sax/Attributes.md))
+- [#getValue(int)](../org/xml/sax/Attributes.md)) 
 
 ### getLocalName
 
@@ -141,7 +141,7 @@ Look up an attribute's local name by index.
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLength()) 
+- [#getLength](../org/xml/sax/Attributes.md)) 
 
 ### getQName
 
@@ -163,7 +163,7 @@ Look up an attribute's XML qualified (prefixed) name by index.
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLength()) 
+- [#getLength](../org/xml/sax/Attributes.md)) 
 
 ### getType
 
@@ -191,7 +191,7 @@ For an enumerated attribute that is not a notation, the parser will report the t
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLength()) 
+- [#getLength](../org/xml/sax/Attributes.md)) 
 
 ### getType
 
@@ -203,7 +203,7 @@ abstract fun getType(qName: String!): String!
 
 Look up an attribute's type by XML qualified (prefixed) name.
 
-See [getType(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getType(kotlin.Int))for a description of the possible types.
+See [getType(int)](../org/xml/sax/Attributes.md))for a description of the possible types.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------|
@@ -226,7 +226,7 @@ abstract fun getType(
 
 Look up an attribute's type by Namespace name.
 
-See [getType(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getType(kotlin.Int))for a description of the possible types.
+See [getType(int)](../org/xml/sax/Attributes.md))for a description of the possible types.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -257,7 +257,7 @@ Look up an attribute's Namespace URI by index.
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLength()) 
+- [#getLength](../org/xml/sax/Attributes.md)) 
 
 ### getValue
 
@@ -281,7 +281,7 @@ If the attribute value is a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the 
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getLength()) 
+- [#getLength](../org/xml/sax/Attributes.md)) 
 
 ### getValue
 
@@ -293,7 +293,7 @@ abstract fun getValue(qName: String!): String!
 
 Look up an attribute's value by XML qualified (prefixed) name.
 
-See [getValue(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getValue(kotlin.Int))for a description of the possible values.
+See [getValue(int)](../org/xml/sax/Attributes.md))for a description of the possible values.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------|
@@ -316,7 +316,7 @@ abstract fun getValue(
 
 Look up an attribute's value by Namespace name.
 
-See [getValue(int)](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes#getValue(kotlin.Int))for a description of the possible values.
+See [getValue(int)](../org/xml/sax/Attributes.md))for a description of the possible values.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|

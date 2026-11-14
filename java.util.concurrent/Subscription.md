@@ -8,16 +8,16 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 interface Subscription
 ```
 
-| [java.util.concurrent.Flow.Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription#) |
+| [java.util.concurrent.Flow.Subscription](../java/util/concurrent/Flow.Subscription.md) |
 
-Message control linking a [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) and [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber). Subscribers receive items only when requested, and may cancel at any time. The methods in this interface are intended to be invoked only by their Subscribers; usages in other contexts have undefined effects.
+Message control linking a [Publisher](../java/util/concurrent/Flow.Publisher.md) and [Subscriber](../java/util/concurrent/Flow.Subscriber.md). Subscribers receive items only when requested, and may cancel at any time. The methods in this interface are intended to be invoked only by their Subscribers; usages in other contexts have undefined effects.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription#cancel())`()` Causes the Subscriber to (eventually) stop receiving messages. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription#request(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds the given number`n`of items to the current unfulfilled demand for this subscription. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../java/util/concurrent/Flow.Subscription.md))`()` Causes the Subscriber to (eventually) stop receiving messages. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [request](../java/util/concurrent/Flow.Subscription.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds the given number`n`of items to the current unfulfilled demand for this subscription. |
 
 ## Public methods
 
@@ -39,7 +39,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 abstract fun request(n: Long): Unit
 ```
 
-Adds the given number`n`of items to the current unfulfilled demand for this subscription. If`n`is less than or equal to zero, the Subscriber will receive an`onError`signal with an [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) argument. Otherwise, the Subscriber will receive up to`n`additional`onNext`invocations (or fewer if terminated).
+Adds the given number`n`of items to the current unfulfilled demand for this subscription. If`n`is less than or equal to zero, the Subscriber will receive an`onError`signal with an [IllegalArgumentException](../java/lang/IllegalArgumentException.md) argument. Otherwise, the Subscriber will receive up to`n`additional`onNext`invocations (or fewer if terminated).
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

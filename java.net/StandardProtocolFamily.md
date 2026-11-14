@@ -10,10 +10,10 @@ class StandardProtocolFamily : ProtocolFamily
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.net.StandardProtocolFamily](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#)\> ||
-| | ↳ | [java.net.StandardProtocolFamily](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.net.StandardProtocolFamily](../java/net/StandardProtocolFamily.md)\> ||
+| | ↳ | [java.net.StandardProtocolFamily](../java/net/StandardProtocolFamily.md) |
 
-| Known Direct Subclasses [StandardProtocolFamily.INET](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:INET), [StandardProtocolFamily.INET6](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:INET6), [StandardProtocolFamily.UNIX](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:UNIX) |---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------| | [StandardProtocolFamily.INET](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:INET) | Internet Protocol Version 4 (IPv4) | | [StandardProtocolFamily.INET6](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:INET6) | Internet Protocol Version 6 (IPv6) | | [StandardProtocolFamily.UNIX](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:UNIX) | Unix domain (Local) interprocess communication. | |
+| Known Direct Subclasses [StandardProtocolFamily.INET](../java/net/StandardProtocolFamily.md), [StandardProtocolFamily.INET6](../java/net/StandardProtocolFamily.md), [StandardProtocolFamily.UNIX](../java/net/StandardProtocolFamily.md) |---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------| | [StandardProtocolFamily.INET](../java/net/StandardProtocolFamily.md) | Internet Protocol Version 4 (IPv4) | | [StandardProtocolFamily.INET6](../java/net/StandardProtocolFamily.md) | Internet Protocol Version 6 (IPv6) | | [StandardProtocolFamily.UNIX](../java/net/StandardProtocolFamily.md) | Unix domain (Local) interprocess communication. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines the standard families of communication protocols.
@@ -22,9 +22,9 @@ Defines the standard families of communication protocols.
 
 | Enum values ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [INET](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:INET) Internet Protocol Version 4 (IPv4) |
-| [INET6](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:INET6) Internet Protocol Version 6 (IPv6) |
-| [UNIX](https://developer.android.com/reference/kotlin/java/net/StandardProtocolFamily#ENUM_VALUE:UNIX) Unix domain (Local) interprocess communication. |
+| [INET](../java/net/StandardProtocolFamily.md) Internet Protocol Version 4 (IPv4) |
+| [INET6](../java/net/StandardProtocolFamily.md) Internet Protocol Version 6 (IPv6) |
+| [UNIX](../java/net/StandardProtocolFamily.md) Unix domain (Local) interprocess communication. |
 
 ## Enum values
 

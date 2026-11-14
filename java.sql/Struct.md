@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Struct
 ```
 
-| [java.sql.Struct](https://developer.android.com/reference/kotlin/java/sql/Struct#) |
+| [java.sql.Struct](../java/sql/Struct.md) |
 
 The standard mapping in the Java programming language for an SQL structured type. A `Struct` object contains a value for each attribute of the SQL structured type that it represents. By default, an instance of`Struct` is valid as long as the application has a reference to it.
 
@@ -18,9 +18,9 @@ All methods on the `Struct` interface must be fully implemented if the JDBC driv
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getAttributes](https://developer.android.com/reference/kotlin/java/sql/Struct#getAttributes())`()` Produces the ordered values of the attributes of the SQL structured type that this `Struct` object represents. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getAttributes](https://developer.android.com/reference/kotlin/java/sql/Struct#getAttributes(kotlin.collections.MutableMap))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Produces the ordered values of the attributes of the SQL structured type that this `Struct` object represents. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLTypeName](https://developer.android.com/reference/kotlin/java/sql/Struct#getSQLTypeName())`()` Retrieves the SQL type name of the SQL structured type that this `Struct` object represents. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getAttributes](../java/sql/Struct.md))`()` Produces the ordered values of the attributes of the SQL structured type that this `Struct` object represents. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getAttributes](../java/sql/Struct.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>!`)` Produces the ordered values of the attributes of the SQL structured type that this `Struct` object represents. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLTypeName](../java/sql/Struct.md))`()` Retrieves the SQL type name of the SQL structured type that this `Struct` object represents. |
 | --- | --- |
 
 ## Public methods
@@ -60,7 +60,7 @@ Conceptually, this method calls the method `getObject` on each attribute of the 
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!: a mapping of SQL type names to Java classes |
+| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>!: a mapping of SQL type names to Java classes |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|

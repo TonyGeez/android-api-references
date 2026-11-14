@@ -2,14 +2,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # OnThermalHeadroomChangedListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/os/PowerManager.OnThermalHeadroomChangedListener "View this page in Java")
+Kotlin | [Java](../android/os/PowerManager.OnThermalHeadroomChangedListener.md)
 | --- | --- |
 
 ```
 interface OnThermalHeadroomChangedListener
 ```
 
-| [android.os.PowerManager.OnThermalHeadroomChangedListener](https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalHeadroomChangedListener#) |
+| [android.os.PowerManager.OnThermalHeadroomChangedListener](../android/os/PowerManager.OnThermalHeadroomChangedListener.md) |
 
 Listener passed to android.os.PowerManager#addThermalHeadroomListener and `https://developer.android.com/reference/kotlin/android/os/PowerManager#removeThermalHeadroomListener(android.os.PowerManager.OnThermalHeadroomChangedListener)` to notify caller of Thermal headroom or thresholds changes.
 

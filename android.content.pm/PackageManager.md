@@ -8,13 +8,13 @@ abstract class PackageManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#) |
+| ↳ | [android.content.pm.PackageManager](../android/content/pm/PackageManager.md) |
 
-Known Direct Subclasses [MockPackageManager](https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager.html#) [MockPackageManager](https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager.html#) A mock `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#` class.
+Known Direct Subclasses [MockPackageManager](../android/test/mock/MockPackageManager.md) [MockPackageManager](../android/test/mock/MockPackageManager.md) A mock `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#` class.
 
 Class for retrieving various kinds of information related to the application packages that are currently installed on the device. You can find this class through `https://developer.android.com/reference/kotlin/android/content/Context.html#getPackageManager()`.
 
-**Note:** If your app targets Android 11 (API level 30) or higher, the methods in this class each return a filtered list of apps. Learn more about how to [manage package visibility](https://developer.android.com/reference/kotlin/training/basics/intents/package-visibility).
+**Note:** If your app targets Android 11 (API level 30) or higher, the methods in this class each return a filtered list of apps. Learn more about how to [manage package visibility](../training/basics/intents/package-visibility.md).
 
 ## Summary
 
@@ -358,127 +358,127 @@ Class for retrieving various kinds of information related to the application pac
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#currentToCanonicalPackageNames(kotlin.Array)(packageNames: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Map from the current package names in use on the device to whatever the current canonical name of that package is. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#extendVerificationTimeout(kotlin.Int,%20kotlin.Int,%20kotlin.Long)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, verificationCodeAtTimeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, millisecondsToDelay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to extend the default timeout for a response and declare what action to perform after the timeout occurs. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityBanner(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the banner associated with an activity. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityBanner(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the banner associated with an Intent. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityBanner(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the banner associated with an activity. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityBanner(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the banner associated with an Intent. |
 | --- | --- |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityIcon(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the icon associated with an activity. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityIcon(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the icon associated with an Intent. |
-| open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)`. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityIcon(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the icon associated with an activity. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityIcon(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the icon associated with an Intent. |
+| open [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)`. |
 | --- | --- |
-| abstract [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular activity class. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityLogo(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the logo associated with an activity. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityLogo(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the logo associated with an Intent. |
+| abstract [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular activity class. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityLogo(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the logo associated with an activity. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityLogo(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the logo associated with an Intent. |
 | --- | --- |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getAllPermissionGroups(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the known permission groups in the system. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getAllPermissionGroups(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the known permission groups in the system. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getAppUidForPrivateComputeCoreUid(kotlin.Int)(pccUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Maps a Private Compute Core (PCC) UID to its corresponding application UID. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationBanner(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the banner associated with an application. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationBanner(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the banner associated with an application. |
 | --- | --- |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationBanner(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the banner associated with an application. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationBanner(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the banner associated with an application. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationEnabledSetting(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the enabled setting for an application. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the icon associated with an application. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the icon associated with an application. |
 | --- | --- |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the icon associated with an application. |
-| open [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationInfo(kotlin.String,%20android.content.pm.PackageManager.ApplicationInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationInfo(kotlin.String,%20kotlin.Int)`. |
-| abstract [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular package/application. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the icon associated with an application. |
+| open [ApplicationInfo](../android/content/pm/ApplicationInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationInfo(kotlin.String,%20android.content.pm.PackageManager.ApplicationInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationInfo(kotlin.String,%20kotlin.Int)`. |
+| abstract [ApplicationInfo](../android/content/pm/ApplicationInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular package/application. |
 | --- | --- |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Return the label to use for this application. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLogo(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the logo associated with an application. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLogo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the logo associated with an application. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLogo(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the logo associated with an application. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLogo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the logo associated with an application. |
 | --- | --- |
-| open [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getArchivedPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return archived package info for the package or null if the package is not installed. |
+| open [ArchivedPackageInfo](../android/content/pm/ArchivedPackageInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getArchivedPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return archived package info for the package or null if the package is not installed. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getBackgroundPermissionOptionLabel()()` Gets the localized label that corresponds to the option in settings for granting background access. |
-| abstract [ChangedPackages](https://developer.android.com/reference/kotlin/android/content/pm/ChangedPackages)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getChangedPackages(kotlin.Int)(sequenceNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the names of the packages that have been changed \[eg. |
+| abstract [ChangedPackages](../android/content/pm/ChangedPackages.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getChangedPackages(kotlin.Int)(sequenceNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the names of the packages that have been changed \[eg. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getComponentEnabledSetting(android.content.ComponentName)(componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Return the enabled setting for a package component (activity, receiver, service, provider). |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getDefaultActivityIcon()()` Return the generic icon for an activity that is used when no specific icon is defined. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getDrawable(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo?)` Retrieve an image from a package. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getDefaultActivityIcon()()` Return the generic icon for an activity that is used when no specific icon is defined. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getDrawable(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo?)` Retrieve an image from a package. |
 | --- | --- |
-| open [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to launch an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` that allows the caller to set App Lock for the specified package. |
+| open [PendingIntent](../android/app/PendingIntent.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to launch an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` that allows the caller to set App Lock for the specified package. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getGroupOfPlatformPermission(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(permissionName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Get the platform-defined permission group of a particular permission, if the permission is a platform-defined permission. |
-| open [InstallSourceInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstallSourceInfo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves information about how a package was installed or updated. |
+| open [InstallSourceInfo](../android/content/pm/InstallSourceInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstallSourceInfo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves information about how a package was installed or updated. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledApplications(android.content.pm.PackageManager.ApplicationInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledApplications(kotlin.Int)` |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledApplications(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all application packages that are installed for the current user. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ModuleInfo](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledModules(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all modules that are installed. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledApplications(android.content.pm.PackageManager.ApplicationInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledApplications(kotlin.Int)` |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledApplications(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all application packages that are installed for the current user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ModuleInfo](../android/content/pm/ModuleInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledModules(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all modules that are installed. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledPackages(android.content.pm.PackageManager.PackageInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledPackages(kotlin.Int)`. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all packages that are installed for the current user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledPackages(android.content.pm.PackageManager.PackageInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledPackages(kotlin.Int)`. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstalledPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all packages that are installed for the current user. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstallerPackageName(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the package name of the application that installed a package. |
 | --- | --- |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstantAppCookie()()` Gets the instant application cookie for this app. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstantAppCookieMaxBytes()()` Gets the maximum size in bytes of the cookie data an instant app can store on the device. |
-| abstract [InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstrumentationInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular instrumentation class. |
+| abstract [InstrumentationInfo](../android/content/pm/InstrumentationInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getInstrumentationInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular instrumentation class. |
 | --- | --- |
-| abstract [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a "good" intent to launch a front-door activity in a package. |
-| open [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getLaunchIntentSenderForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` that can be used to launch a front-door activity in a package. |
-| abstract [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getLeanbackLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return a "good" intent to launch a front-door Leanback activity in a package, for use for example to implement an "open" button when browsing through packages. |
+| abstract [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a "good" intent to launch a front-door activity in a package. |
+| open [IntentSender](../android/content/IntentSender.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getLaunchIntentSenderForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` that can be used to launch a front-door activity in a package. |
+| abstract [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getLeanbackLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return a "good" intent to launch a front-door Leanback activity in a package, for use for example to implement an "open" button when browsing through packages. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MemoryBudgetInfo](https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getMemoryBudgets(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Return the memory budgets for the application described by the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MemoryBudgetInfo](../android/content/pm/MemoryBudgetInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getMemoryBudgets(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Return the memory budgets for the application described by the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo`. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getMimeGroup(kotlin.String)(mimeGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets all MIME types contained by MIME group. |
-| open [ModuleInfo](https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getModuleInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve information for a particular module. |
+| open [ModuleInfo](../android/content/pm/ModuleInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getModuleInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve information for a particular module. |
 | --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getNameForUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the official name associated with a uid. |
-| open [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)`. |
-| open [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package defined in a package archive file Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed. |
+| open [PackageInfo](../android/content/pm/PackageInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)`. |
+| open [PackageInfo](../android/content/pm/PackageInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package defined in a package archive file Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed. |
 | --- | --- |
 | abstract [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageGids(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageGids(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageGids(kotlin.String,%20kotlin.Int)`. |
 | abstract [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageGids(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
 | --- | --- |
-| open [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20android.content.pm.PackageManager.PackageInfoFlags)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)` |
-| abstract [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
-| open [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(kotlin.String,%20kotlin.Int)` |
+| open [PackageInfo](../android/content/pm/PackageInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20android.content.pm.PackageManager.PackageInfoFlags)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)` |
+| abstract [PackageInfo](../android/content/pm/PackageInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
+| open [PackageInfo](../android/content/pm/PackageInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(kotlin.String,%20kotlin.Int)` |
 | --- | --- |
-| abstract [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
-| abstract [PackageInstaller](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInstaller()()` Return interface that offers the ability to install, upgrade, and remove applications on the device. |
+| abstract [PackageInfo](../android/content/pm/PackageInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
+| abstract [PackageInstaller](../android/content/pm/PackageInstaller.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageInstaller()()` Return interface that offers the ability to install, upgrade, and remove applications on the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageUid(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageUid(kotlin.String,%20kotlin.Int)`. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackageUid(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the UID associated with the given package name. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackagesForUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the names of all packages that are associated with a particular user id. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackagesHoldingPermissions(kotlin.Array,%20android.content.pm.PackageManager.PackageInfoFlags)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackagesHoldingPermissions(kotlin.Array,%20android.content.pm.PackageManager.PackageInfoFlags)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)`. |
 | --- | --- |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all installed packages that are currently holding any of the given permissions. |
-| abstract [PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPermissionGroupInfo(kotlin.String,%20kotlin.Int)(groupName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular group of permissions. |
-| abstract [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPermissionInfo(kotlin.String,%20kotlin.Int)(permName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular permission. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all installed packages that are currently holding any of the given permissions. |
+| abstract [PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPermissionGroupInfo(kotlin.String,%20kotlin.Int)(groupName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular group of permissions. |
+| abstract [PermissionInfo](../android/content/pm/PermissionInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPermissionInfo(kotlin.String,%20kotlin.Int)(permName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular permission. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPlatformPermissionsForGroup(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(permissionGroupName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>)` Get the platform-defined permissions which belong to a particular permission group. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPreferredActivities(kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.String)(outFilters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!>, outActivities: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!>, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Retrieve all preferred activities, previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#addPreferredActivity(android.content.IntentFilter,%20kotlin.Int,%20kotlin.Array,%20android.content.ComponentName)`, that are currently registered with the system. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPreferredPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the list of all currently configured preferred packages. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPreferredPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the list of all currently configured preferred packages. |
 | --- | --- |
-| open [PackageManager.Property](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProperty(kotlin.String,%20android.content.ComponentName)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the property defined in the given component declaration. |
-| open [PackageManager.Property](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProperty(kotlin.String,%20kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property defined in the given package's \<application\> tag. |
-| open [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProviderInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProviderInfo(android.content.ComponentName,%20kotlin.Int)`. |
+| open [PackageManager.Property](../android/content/pm/PackageManager.Property.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProperty(kotlin.String,%20android.content.ComponentName)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the property defined in the given component declaration. |
+| open [PackageManager.Property](../android/content/pm/PackageManager.Property.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProperty(kotlin.String,%20kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property defined in the given package's \<application\> tag. |
+| open [ProviderInfo](../android/content/pm/ProviderInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProviderInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProviderInfo(android.content.ComponentName,%20kotlin.Int)`. |
 | --- | --- |
-| abstract [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProviderInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular content provider class. |
-| open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getReceiverInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)`. |
-| abstract [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular receiver class. |
+| abstract [ProviderInfo](../android/content/pm/ProviderInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getProviderInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular content provider class. |
+| open [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getReceiverInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)`. |
+| abstract [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular receiver class. |
 | --- | --- |
-| abstract [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForActivity(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the resources associated with an activity. |
-| abstract [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForApplication(android.content.pm.ApplicationInfo)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the resources for an application. |
-| open [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForApplication(android.content.pm.ApplicationInfo,%20android.content.res.Configuration)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo, configuration: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#?)` Retrieve the resources for an application for the provided configuration. |
+| abstract [Resources](../android/content/res/Resources.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForActivity(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the resources associated with an activity. |
+| abstract [Resources](../android/content/res/Resources.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForApplication(android.content.pm.ApplicationInfo)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)` Retrieve the resources for an application. |
+| open [Resources](../android/content/res/Resources.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForApplication(android.content.pm.ApplicationInfo,%20android.content.res.Configuration)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo, configuration: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#?)` Retrieve the resources for an application for the provided configuration. |
 | --- | --- |
-| abstract [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForApplication(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the resources associated with an application. |
-| open [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getServiceInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getServiceInfo(android.content.ComponentName,%20kotlin.Int)`. |
-| abstract [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getServiceInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular service class. |
+| abstract [Resources](../android/content/res/Resources.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getResourcesForApplication(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the resources associated with an application. |
+| open [ServiceInfo](../android/content/pm/ServiceInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getServiceInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getServiceInfo(android.content.ComponentName,%20kotlin.Int)`. |
+| abstract [ServiceInfo](../android/content/pm/ServiceInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getServiceInfo(android.content.ComponentName,%20kotlin.Int)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular service class. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSharedLibraries(android.content.pm.PackageManager.PackageInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSharedLibraries(kotlin.Int)`. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSharedLibraries(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of shared libraries on the device. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSuspendedPackageAppExtras()()` Returns a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` of extras that was meant to be sent to the calling app when it was suspended. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](../android/content/pm/SharedLibraryInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSharedLibraries(android.content.pm.PackageManager.PackageInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSharedLibraries(kotlin.Int)`. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](../android/content/pm/SharedLibraryInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSharedLibraries(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of shared libraries on the device. |
+| open [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSuspendedPackageAppExtras()()` Returns a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` of extras that was meant to be sent to the calling app when it was suspended. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSyntheticAppDetailsActivityEnabled(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return whether a synthetic app details activity will be generated if the app has no enabled launcher activity. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSystemAvailableFeatures()()` Get a list of features that are available on the system. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FeatureInfo](../android/content/pm/FeatureInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSystemAvailableFeatures()()` Get a list of features that are available on the system. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getSystemSharedLibraryNames()()` Get a list of shared libraries that are available on the system. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getTargetSdkVersion(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getText(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo?)` Retrieve text from a package. |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getUserBadgedDrawableForDensity(android.graphics.drawable.Drawable,%20android.os.UserHandle,%20android.graphics.Rect,%20kotlin.Int)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, badgeLocation: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, badgeDensity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a badged copy of the given drawable allowing the user to distinguish it from the original drawable. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getUserBadgedDrawableForDensity(android.graphics.drawable.Drawable,%20android.os.UserHandle,%20android.graphics.Rect,%20kotlin.Int)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, badgeLocation: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, badgeDensity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a badged copy of the given drawable allowing the user to distinguish it from the original drawable. |
 | --- | --- |
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getUserBadgedIcon(android.graphics.drawable.Drawable,%20android.os.UserHandle)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getUserBadgedIcon(android.graphics.drawable.Drawable,%20android.os.UserHandle)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getUserBadgedLabel(kotlin.CharSequence,%20android.os.UserHandle)(label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a copy of the label with badging for accessibility services like talkback. |
-| open static [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getVerifiedSigningInfo(kotlin.String,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, minAppSigningSchemeVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Verifies and returns the [app signing](https://source.android.com/docs/security/features/apksigning) information of the file at the given path. |
+| open static [SigningInfo](../android/content/pm/SigningInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getVerifiedSigningInfo(kotlin.String,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, minAppSigningSchemeVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Verifies and returns the [app signing](https://source.android.com/docs/security/features/apksigning) information of the file at the given path. |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getWhitelistedRestrictedPermissions(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelistFlag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the restricted permissions that have been whitelisted and the app is allowed to have them granted in their full form. |
-| abstract [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getXml(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo?)` Retrieve an XML file from a package. |
+| abstract [XmlResourceParser](../android/content/res/XmlResourceParser.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getXml(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo?)` Retrieve an XML file from a package. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#hasSigningCertificate(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, certificate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches the set of signing certificates by which the package(s) for the given uid has proven to have been signed. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#hasSigningCertificate(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, certificate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches the set of signing certificates by which the given package has proven to have been signed. |
@@ -503,31 +503,31 @@ Class for retrieving various kinds of information related to the application pac
 | --- | --- |
 | open T | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#parseAndroidManifest(android.os.ParcelFileDescriptor,%20java.util.function.Function)(apkFileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#, parserFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!, T>)` Similar to `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#parseAndroidManifest(java.io.File,%20java.util.function.Function)`, but accepting a file descriptor instead of a File object. |
 | open T | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#parseAndroidManifest(java.io.File,%20java.util.function.Function)(apkFile: https://developer.android.com/reference/kotlin/java/io/File.html#, parserFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!, T>)` Retrieve AndroidManifest. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryActivityProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<activity\> and \<activity-alias\> tags. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](../android/content/pm/PackageManager.Property.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryActivityProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<activity\> and \<activity-alias\> tags. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryApplicationProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<application\> tags. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryBroadcastReceivers(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)`. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all receivers that can handle a broadcast of the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](../android/content/pm/PackageManager.Property.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryApplicationProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<application\> tags. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryBroadcastReceivers(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)`. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all receivers that can handle a broadcast of the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20android.content.pm.PackageManager.ComponentInfoFlags)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)`. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve content provider information. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryInstrumentation(kotlin.String,%20kotlin.Int)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve information about available instrumentation code. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](../android/content/pm/ProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20android.content.pm.PackageManager.ComponentInfoFlags)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)`. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](../android/content/pm/ProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve content provider information. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InstrumentationInfo](../android/content/pm/InstrumentationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryInstrumentation(kotlin.String,%20kotlin.Int)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve information about available instrumentation code. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivities(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivities(android.content.Intent,%20kotlin.Int)`. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivities(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all activities that can be performed for the given intent. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a set of activities that should be presented to the user as similar options. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivities(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivities(android.content.Intent,%20kotlin.Int)`. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivities(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all activities that can be performed for the given intent. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a set of activities that should be presented to the user as similar options. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.collections.MutableList,%20android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentContentProviders(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)`. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all providers that can match the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.collections.MutableList,%20android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentContentProviders(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)`. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all providers that can match the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentServices(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentServices(android.content.Intent,%20kotlin.Int)`. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentServices(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all services that can match the given intent. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryPermissionsByGroup(kotlin.String,%20kotlin.Int)(permissionGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query for all of the permissions associated with a particular group. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentServices(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentServices(android.content.Intent,%20kotlin.Int)`. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryIntentServices(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all services that can match the given intent. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionInfo](../android/content/pm/PermissionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryPermissionsByGroup(kotlin.String,%20kotlin.Int)(permissionGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query for all of the permissions associated with a particular group. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryProviderProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<provider\> tags. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryReceiverProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<receiver\> tags. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryServiceProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<service\> tags. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](../android/content/pm/PackageManager.Property.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryProviderProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<provider\> tags. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](../android/content/pm/PackageManager.Property.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryReceiverProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<receiver\> tags. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.Property](../android/content/pm/PackageManager.Property.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#queryServiceProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the property definition for all \<service\> tags. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#relinquishUpdateOwnership(kotlin.String)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Attempt to relinquish the update ownership of the given package. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#removePackageFromPreferred(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
@@ -535,14 +535,14 @@ Class for retrieving various kinds of information related to the application pac
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#removeWhitelistedRestrictedPermission(kotlin.String,%20kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, permName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelistFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes a whitelisted restricted permission for an app. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#requestChecksums(kotlin.String,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.collections.MutableList,%20android.content.pm.PackageManager.OnChecksumsReadyListener)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, includeSplits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, required: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, trustedInstallers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#!>, onChecksumsReadyListener: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.OnChecksumsReadyListener)` Requests the checksums for APKs within a package. |
-| open [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveActivity(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveActivity(android.content.Intent,%20kotlin.Int)`. |
+| open [ResolveInfo](../android/content/pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveActivity(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveActivity(android.content.Intent,%20kotlin.Int)`. |
 | --- | --- |
-| abstract [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveActivity(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best action to perform for a given Intent. |
-| open [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20android.content.pm.PackageManager.ComponentInfoFlags)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)`. |
-| abstract [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find a single content provider by its authority. |
+| abstract [ResolveInfo](../android/content/pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveActivity(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best action to perform for a given Intent. |
+| open [ProviderInfo](../android/content/pm/ProviderInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20android.content.pm.PackageManager.ComponentInfoFlags)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)`. |
+| abstract [ProviderInfo](../android/content/pm/ProviderInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find a single content provider by its authority. |
 | --- | --- |
-| open [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveService(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveService(android.content.Intent,%20kotlin.Int)`. |
-| abstract [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveService(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best service to handle for a given Intent. |
+| open [ResolveInfo](../android/content/pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveService(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags)` See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveService(android.content.Intent,%20kotlin.Int)`. |
+| abstract [ResolveInfo](../android/content/pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveService(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best service to handle for a given Intent. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#setApplicationCategoryHint(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, categoryHint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Provide a hint of what the `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#category:kotlin.Int` value should be for the given package. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, newState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the enabled setting for an application This setting will override any enabled state which may have been set by the application in its manifest. |
@@ -558,8 +558,8 @@ Class for retrieving various kinds of information related to the application pac
 
 | Properties ||
 |---|---|
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_ALL:kotlin.collections.MutableList` Trust any Installer to provide checksums for the package. |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_NONE:kotlin.collections.MutableList` Don't trust any Installer to provide checksums for the package. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_ALL:kotlin.collections.MutableList` Trust any Installer to provide checksums for the package. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_NONE:kotlin.collections.MutableList` Don't trust any Installer to provide checksums for the package. |
 
 ## Constants
 
@@ -3537,7 +3537,7 @@ New permissions must be added before any .apks are installed that use those perm
 
 | Parameters ||
 |---|---|
-| `info` | [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo): Description of the permission to be added. This value cannot be `null`. |
+| `info` | [PermissionInfo](../android/content/pm/PermissionInfo.md): Description of the permission to be added. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3563,7 +3563,7 @@ Like `https://developer.android.com/reference/kotlin/android/content/pm/PackageM
 
 | Parameters ||
 |---|---|
-| `info` | [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo): This value cannot be `null`. |
+| `info` | [PermissionInfo](../android/content/pm/PermissionInfo.md): This value cannot be `null`. |
 
 ### addPreferredActivity
 
@@ -3585,11 +3585,11 @@ Add a new preferred activity mapping to the system. This will be used to automat
 
 | Parameters ||
 |---|---|
-| `filter` | [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#): The set of intents under which this activity will be made preferred. This value cannot be `null`. |
+| `filter` | [IntentFilter](../android/content/IntentFilter.md): The set of intents under which this activity will be made preferred. This value cannot be `null`. |
 | `match` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The IntentFilter match category that this preference applies to. |
-| `set` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!\>?: The set of activities that the user was picking from when this preference was made. This value may be `null`. |
+| `set` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ComponentName](../android/content/ComponentName.md)!\>?: The set of activities that the user was picking from when this preference was made. This value may be `null`. |
 | --- | --- |
-| `activity` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The component name of the activity that is to be preferred. This value cannot be `null`. |
+| `activity` | [ComponentName](../android/content/ComponentName.md): The component name of the activity that is to be preferred. This value cannot be `null`. |
 
 ### addWhitelistedRestrictedPermission
 
@@ -3904,7 +3904,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose banner is to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose banner is to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3930,7 +3930,7 @@ Retrieve the banner associated with an Intent. If intent.getClassName() is set, 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent for which you would like to retrieve a banner. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent for which you would like to retrieve a banner. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3958,7 +3958,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose icon is to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose icon is to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3984,7 +3984,7 @@ Retrieve the icon associated with an Intent. If intent.getClassName() is set, th
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent for which you would like to retrieve an icon. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent for which you would like to retrieve an icon. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4013,8 +4013,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ComponentInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags): This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ComponentInfoFlags](../android/content/pm/PackageManager.ComponentInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4035,7 +4035,7 @@ Retrieve all of the information we know about a particular activity class. Use `
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The full component name (i.e. com.google.apps.contacts/com.google.apps.contacts. ContactsList) of an Activity class. This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): The full component name (i.e. com.google.apps.contacts/com.google.apps.contacts. ContactsList) of an Activity class. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -4060,7 +4060,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose logo is to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose logo is to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4086,7 +4086,7 @@ Retrieve the logo associated with an Intent. If intent.getClassName() is set, th
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent for which you would like to retrieve a logo. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent for which you would like to retrieve a logo. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4148,7 +4148,7 @@ Retrieve the banner associated with an application.
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo): Information about application being queried. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about application being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4222,7 +4222,7 @@ Note: The returned drawable's dimensions are capped to a maximum size of `2048 x
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo): Information about application being queried. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about application being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4276,7 +4276,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `flags` | [PackageManager.ApplicationInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.ApplicationInfoFlags](../android/content/pm/PackageManager.ApplicationInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4320,7 +4320,7 @@ Return the label to use for this application.
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo): The `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` of the application to get the label of. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): The `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` of the application to get the label of. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4338,7 +4338,7 @@ Retrieve the logo associated with an application. If it has not specified a logo
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo): Information about application being queried. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about application being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4444,7 +4444,7 @@ Return the enabled setting for a package component (activity, receiver, service,
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The component to retrieve. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android/content/ComponentName.md): The component to retrieve. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4482,7 +4482,7 @@ Retrieve an image from a package. This is a low-level API used by the various pa
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package that this icon is coming from. Cannot be null. |
 | `resid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the desired image. Cannot be 0. |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
 | --- | --- |
 
 | Return ||
@@ -4541,8 +4541,8 @@ Get the platform-defined permission group of a particular permission, if the per
 | Parameters ||
 |---|---|
 | `permissionName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the permission whose group is desired. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: the callback which will receive the name of the permission group this permission belongs to, or `null` if it has no group, is not a platform-defined permission, or there was an exception |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java/util/function/Consumer.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: the callback which will receive the name of the permission group this permission belongs to, or `null` if it has no group, is not a platform-defined permission, or there was an exception |
 | --- | --- |
 
 ### getInstallSourceInfo
@@ -4579,7 +4579,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `flags` | [PackageManager.ApplicationInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.ApplicationInfoFlags](../android/content/pm/PackageManager.ApplicationInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4633,7 +4633,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4741,7 +4741,7 @@ Retrieve all of the information we know about a particular instrumentation class
 
 | Parameters ||
 |---|---|
-| `className` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The full name (i.e. com.google.apps.contacts.InstrumentList) of an Instrumentation class. This value cannot be `null`. |
+| `className` | [ComponentName](../android/content/ComponentName.md): The full name (i.e. com.google.apps.contacts.InstrumentList) of an Instrumentation class. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. Value is either `0` or - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_META_DATA:kotlin.Int` |
 
 | Return ||
@@ -4830,7 +4830,7 @@ Return the memory budgets for the application described by the given `https://de
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo): The `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` of the application to query. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): The `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` of the application to query. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4918,7 +4918,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `archiveFilePath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4986,7 +4986,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5034,8 +5034,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `versionedPackage` | [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage): This value cannot be `null`. |
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `versionedPackage` | [VersionedPackage](../android/content/pm/VersionedPackage.md): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5056,7 +5056,7 @@ Retrieve overall information about an application package that is installed on t
 
 | Parameters ||
 |---|---|
-| `versionedPackage` | [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage): The versioned package for which to query. This value cannot be `null`. |
+| `versionedPackage` | [VersionedPackage](../android/content/pm/VersionedPackage.md): The versioned package for which to query. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -5083,7 +5083,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5145,7 +5145,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 ### getPackageUid
 
@@ -5208,7 +5208,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `permissions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: This value cannot be `null`. |
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5305,8 +5305,8 @@ Get the platform-defined permissions which belong to a particular permission gro
 | Parameters ||
 |---|---|
 | `permissionGroupName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the permission group whose permissions are desired. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>: the callback which will receive a list of the platform-defined permissions in the group, or empty if the group is not a valid platform-defined permission group, or there was an exception. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>: the callback which will receive a list of the platform-defined permissions in the group, or empty if the group is not a valid platform-defined permission group, or there was an exception. This value cannot be `null`. |
 | --- | --- |
 
 ### getPreferredActivities
@@ -5328,8 +5328,8 @@ Retrieve all preferred activities, previously added with `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `outFilters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#)!\>: A required list in which to place the filters of all of the preferred activities. This value cannot be `null`. |
-| `outActivities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!\>: A required list in which to place the component names of all of the preferred activities. This value cannot be `null`. |
+| `outFilters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](../android/content/IntentFilter.md)!\>: A required list in which to place the filters of all of the preferred activities. This value cannot be `null`. |
+| `outActivities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ComponentName](../android/content/ComponentName.md)!\>: A required list in which to place the component names of all of the preferred activities. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: An optional package in which you would like to limit the list. If null, all activities will be returned; if non-null, only those activities in the given package are returned. |
 | --- | --- |
 
@@ -5374,7 +5374,7 @@ Returns the property defined in the given component declaration.
 | Parameters ||
 |---|---|
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5425,8 +5425,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ComponentInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags): This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ComponentInfoFlags](../android/content/pm/PackageManager.ComponentInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5447,7 +5447,7 @@ Retrieve all of the information we know about a particular content provider clas
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The full component name (i.e. com.google.providers.media/com.google.providers.media. MediaProvider) of a ContentProvider class. This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): The full component name (i.e. com.google.providers.media/com.google.providers.media. MediaProvider) of a ContentProvider class. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -5473,8 +5473,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ComponentInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags): This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ComponentInfoFlags](../android/content/pm/PackageManager.ComponentInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5495,7 +5495,7 @@ Retrieve all of the information we know about a particular receiver class. Use `
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The full component name (i.e. com.google.apps.calendar/com.google.apps.calendar. CalendarAlarm) of a Receiver class. This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): The full component name (i.e. com.google.apps.calendar/com.google.apps.calendar. CalendarAlarm) of a Receiver class. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -5518,7 +5518,7 @@ Retrieve the resources associated with an activity. Given the full name of an ac
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose resources are to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose resources are to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5544,7 +5544,7 @@ Retrieve the resources for an application. Throws NameNotFoundException if the p
 
 | Parameters ||
 |---|---|
-| `app` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo): Information about the desired application. This value cannot be `null`. |
+| `app` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about the desired application. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5569,8 +5569,8 @@ Retrieve the resources for an application for the provided configuration.
 
 | Parameters ||
 |---|---|
-| `app` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo): Information about the desired application. This value cannot be `null`. |
-| `configuration` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)?: Overridden configuration when loading the Resources. This value may be `null`. |
+| `app` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about the desired application. This value cannot be `null`. |
+| `configuration` | [Configuration](../android/content/res/Configuration.md)?: Overridden configuration when loading the Resources. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -5621,8 +5621,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ComponentInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags): This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ComponentInfoFlags](../android/content/pm/PackageManager.ComponentInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5643,7 +5643,7 @@ Retrieve all of the information we know about a particular service class. Use `h
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The full component name (i.e. com.google.apps.media/com.google.apps.media. BackgroundPlayback) of a Service class. This value cannot be `null`. |
+| `component` | [ComponentName](../android/content/ComponentName.md): The full component name (i.e. com.google.apps.media/com.google.apps.media. BackgroundPlayback) of a Service class. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -5666,7 +5666,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `flags` | [PackageManager.PackageInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.PackageInfoFlags](../android/content/pm/PackageManager.PackageInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5803,7 +5803,7 @@ Retrieve text from a package. This is a low-level API used by the various packag
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package that this text is coming from. Cannot be null. |
 | `resid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the desired text. Cannot be 0. |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
 | --- | --- |
 
 | Return ||
@@ -5829,9 +5829,9 @@ If the original drawable is a BitmapDrawable and the backing bitmap is mutable a
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): The drawable to badge. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The target user. This value cannot be `null`. |
-| `badgeLocation` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: Where in the bounds of the badged drawable to place the badge. If it's `null`, the badge is applied on top of the entire drawable being badged. |
+| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): The drawable to badge. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The target user. This value cannot be `null`. |
+| `badgeLocation` | [Rect](../android/graphics/Rect.md)?: Where in the bounds of the badged drawable to place the badge. If it's `null`, the badge is applied on top of the entire drawable being badged. |
 | --- | --- |
 | `badgeDensity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The optional desired density for the badge as per `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#densityDpi:kotlin.Int`. If it's not positive, the density of the display is used. |
 
@@ -5856,8 +5856,8 @@ If the original drawable is a BitmapDrawable and the backing bitmap is mutable a
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): The drawable to badge. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The target user. This value cannot be `null`. |
+| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): The drawable to badge. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The target user. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5879,7 +5879,7 @@ If the target user is a managed profile of the calling user or the caller is its
 | Parameters ||
 |---|---|
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): The label to change. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The target user. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The target user. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5974,7 +5974,7 @@ Retrieve an XML file from a package. This is a low-level API used to retrieve XM
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package that this xml is coming from. Cannot be null. |
 | `resid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the desired xml. Cannot be 0. |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
 | --- | --- |
 
 | Return ||
@@ -6146,7 +6146,7 @@ Returns if the provided drawable represents the default activity icon provided b
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): This value cannot be `null`. |
+| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6338,8 +6338,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `apkFileDescriptor` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#): The file descriptor of an application apk. The parserFunction will be invoked with the XmlResourceParser object after getting the AndroidManifest.xml of an application package. This value cannot be `null`. |
-| `parserFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#)!, T\>: This value cannot be `null`. |
+| `apkFileDescriptor` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md): The file descriptor of an application apk. The parserFunction will be invoked with the XmlResourceParser object after getting the AndroidManifest.xml of an application package. This value cannot be `null`. |
+| `parserFunction` | [Function](../java/util/function/Function.md)\< [XmlResourceParser](../android/content/res/XmlResourceParser.md)!, T\>: This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6400,8 +6400,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `apkFile` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#): The file of an application apk. This value cannot be `null`. |
-| `parserFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#)!, T\>: The parserFunction will be invoked with the XmlResourceParser object after getting the AndroidManifest.xml of an application package. This value cannot be `null`. |
+| `apkFile` | [File](../java/io/File.md): The file of an application apk. This value cannot be `null`. |
+| `parserFunction` | [Function](../java/util/function/Function.md)\< [XmlResourceParser](../android/content/res/XmlResourceParser.md)!, T\>: The parserFunction will be invoked with the XmlResourceParser object after getting the AndroidManifest.xml of an application package. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6466,8 +6466,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ResolveInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ResolveInfoFlags](../android/content/pm/PackageManager.ResolveInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6488,7 +6488,7 @@ Retrieve all receivers that can handle a broadcast of the given intent. Use `htt
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveActivity(). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveActivity(). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -6512,7 +6512,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `processName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `flags` | [PackageManager.ComponentInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.ComponentInfoFlags](../android/content/pm/PackageManager.ComponentInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6582,8 +6582,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ResolveInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ResolveInfoFlags](../android/content/pm/PackageManager.ResolveInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6604,7 +6604,7 @@ Retrieve all activities that can be performed for the given intent. Use `https:/
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveActivity(). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveActivity(). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. The most important is `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DEFAULT_ONLY:kotlin.Int`, to limit the resolution to only those activities that support the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String`. Or, set `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_ALL:kotlin.Int` to prevent any filtering of the results. |
 
 | Return ||
@@ -6628,9 +6628,9 @@ Retrieve a set of activities that should be presented to the user as similar opt
 
 | Parameters ||
 |---|---|
-| `caller` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: The class name of the activity that is making the request. This activity will never appear in the output list. Can be null. |
-| `specifics` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!\>?: An array of Intents that should be resolved to the first specific results. Can be null. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveActivity(). This value cannot be `null`. |
+| `caller` | [ComponentName](../android/content/ComponentName.md)?: The class name of the activity that is making the request. This activity will never appear in the output list. Can be null. |
+| `specifics` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\>?: An array of Intents that should be resolved to the first specific results. Can be null. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveActivity(). This value cannot be `null`. |
 | --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. The most important is `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DEFAULT_ONLY:kotlin.Int`, to limit the resolution to only those activities that support the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String`. |
 
@@ -6655,11 +6655,11 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `caller` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: This value may be `null`. |
-| `specifics` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!\>?: This value may be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
+| `caller` | [ComponentName](../android/content/ComponentName.md)?: This value may be `null`. |
+| `specifics` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Intent](../android/content/Intent.md)!\>?: This value may be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
 | --- | --- |
-| `flags` | [PackageManager.ResolveInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.ResolveInfoFlags](../android/content/pm/PackageManager.ResolveInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6680,8 +6680,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ResolveInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ResolveInfoFlags](../android/content/pm/PackageManager.ResolveInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6702,7 +6702,7 @@ Retrieve all providers that can match the given intent. Use `https://developer.a
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -6724,8 +6724,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ResolveInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ResolveInfoFlags](../android/content/pm/PackageManager.ResolveInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6746,7 +6746,7 @@ Retrieve all services that can match the given intent. Use `https://developer.an
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveService(). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveService(). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -6972,8 +6972,8 @@ Requests the checksums for APKs within a package. The checksums will be returned
 | `includeSplits` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether to include checksums for non-base splits. |
 | `required` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): explicitly request the checksum types. May incur significant CPU/memory/disk usage. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_MERKLE_ROOT_4K_SHA256:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_MD5:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_SHA1:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_SHA256:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_WHOLE_SHA512:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_PARTIAL_MERKLE_ROOT_1M_SHA256:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/Checksum#TYPE_PARTIAL_MERKLE_ROOT_1M_SHA512:kotlin.Int` |
 | --- | --- |
-| `trustedInstallers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>: for checksums enforced by installer, which installers are to be trusted. `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_ALL:kotlin.collections.MutableList` will return checksums from any installer, `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_NONE:kotlin.collections.MutableList` disables optimized installer-enforced checksums, otherwise the list has to be non-empty list of certificates. This value cannot be `null`. |
-| `onChecksumsReadyListener` | [PackageManager.OnChecksumsReadyListener](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.OnChecksumsReadyListener): called once when the results are available. This value cannot be `null`. |
+| `trustedInstallers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>: for checksums enforced by installer, which installers are to be trusted. `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_ALL:kotlin.collections.MutableList` will return checksums from any installer, `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#TRUST_NONE:kotlin.collections.MutableList` disables optimized installer-enforced checksums, otherwise the list has to be non-empty list of certificates. This value cannot be `null`. |
+| `onChecksumsReadyListener` | [PackageManager.OnChecksumsReadyListener](../android/content/pm/PackageManager.OnChecksumsReadyListener.md): called once when the results are available. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -6997,8 +6997,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ResolveInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ResolveInfoFlags](../android/content/pm/PackageManager.ResolveInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7022,7 +7022,7 @@ Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. The most important is `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DEFAULT_ONLY:kotlin.Int`, to limit the resolution to only those activities that support the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String`. |
 
 | Return ||
@@ -7045,7 +7045,7 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 | Parameters ||
 |---|---|
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `flags` | [PackageManager.ComponentInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags): This value cannot be `null`. |
+| `flags` | [PackageManager.ComponentInfoFlags](../android/content/pm/PackageManager.ComponentInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7097,8 +7097,8 @@ See `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
-| `flags` | [PackageManager.ResolveInfoFlags](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `flags` | [PackageManager.ResolveInfoFlags](../android/content/pm/PackageManager.ResolveInfoFlags.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7119,7 +7119,7 @@ Determine the best service to handle for a given Intent. Use `https://developer.
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -7215,7 +7215,7 @@ Consider using `https://developer.android.com/reference/kotlin/android/content/p
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The component to enable. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android/content/ComponentName.md): The component to enable. This value cannot be `null`. |
 | `newState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new enabled state for the component. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#COMPONENT_ENABLED_STATE_DEFAULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#COMPONENT_ENABLED_STATE_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#COMPONENT_ENABLED_STATE_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#COMPONENT_ENABLED_STATE_DISABLED_USER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#COMPONENT_ENABLED_STATE_DISABLED_UNTIL_USED:kotlin.Int` |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Optional behavior flags. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#DONT_KILL_APP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#SYNCHRONOUS:kotlin.Int` |
 | --- | --- |
@@ -7236,7 +7236,7 @@ The permission is not required if target components are running under the same u
 
 | Parameters ||
 |---|---|
-| `settings` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.ComponentEnabledSetting](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentEnabledSetting)!\>: The list of component enabled settings to update. Note that an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` is thrown if the duplicated component name is in the list or there's a conflict `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#DONT_KILL_APP:kotlin.Int` flag between different components in the same package. This value cannot be `null`. |
+| `settings` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageManager.ComponentEnabledSetting](../android/content/pm/PackageManager.ComponentEnabledSetting.md)!\>: The list of component enabled settings to update. Note that an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` is thrown if the duplicated component name is in the list or there's a conflict `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#DONT_KILL_APP:kotlin.Int` flag between different components in the same package. This value cannot be `null`. |
 
 **See Also**
 

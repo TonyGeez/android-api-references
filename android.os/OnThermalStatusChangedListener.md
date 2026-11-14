@@ -6,7 +6,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 interface OnThermalStatusChangedListener
 ```
 
-| [android.os.PowerManager.OnThermalStatusChangedListener](https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalStatusChangedListener#) |
+| [android.os.PowerManager.OnThermalStatusChangedListener](../android/os/PowerManager.OnThermalStatusChangedListener.md) |
 
 Listener passed to android.os.PowerManager#addThermalStatusListener and `https://developer.android.com/reference/kotlin/android/os/PowerManager#removeThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)` to notify caller of thermal status has changed.
 

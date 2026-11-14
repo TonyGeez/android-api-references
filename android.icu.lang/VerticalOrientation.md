@@ -4,14 +4,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # VerticalOrientation
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.VerticalOrientation "View this page in Java") 
+Kotlin| [Java](../android/icu/lang/UCharacter.VerticalOrientation.md) 
 | --- | --- |
 
 ```
 interface VerticalOrientation
 ```
 
-| [android.icu.lang.UCharacter.VerticalOrientation](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#) |
+| [android.icu.lang.UCharacter.VerticalOrientation](../android/icu/lang/UCharacter.VerticalOrientation.md) |
 
 Vertical Orientation constants.
 
@@ -19,11 +19,11 @@ Vertical Orientation constants.
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#ROTATED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFORMED_ROTATED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#TRANSFORMED_ROTATED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFORMED_UPRIGHT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#TRANSFORMED_UPRIGHT:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATED](../android/icu/lang/UCharacter.VerticalOrientation.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFORMED_ROTATED](../android/icu/lang/UCharacter.VerticalOrientation.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSFORMED_UPRIGHT](../android/icu/lang/UCharacter.VerticalOrientation.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPRIGHT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation#UPRIGHT:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPRIGHT](../android/icu/lang/UCharacter.VerticalOrientation.md) <br /> |
 
 ## Constants
 

@@ -6,11 +6,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface ToLongBiFunction<T : Any!, U : Any!>
 ```
 
-| [java.util.function.ToLongBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongBiFunction#) |
+| [java.util.function.ToLongBiFunction](../java/util/function/ToLongBiFunction.md) |
 
 Represents a function that accepts two arguments and produces a long-valued result. This is the `long`-producing primitive specialization for `https://developer.android.com/reference/kotlin/java/util/function/BiFunction`.
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/ToLongBiFunction#applyAsLong(java.util.function.ToLongBiFunction.T,%20java.util.function.ToLongBiFunction.U)`.
+This is a [functional interface](../java/util/function/_package.md) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/ToLongBiFunction#applyAsLong(java.util.function.ToLongBiFunction.T,%20java.util.function.ToLongBiFunction.U)`.
 
 ## Summary
 

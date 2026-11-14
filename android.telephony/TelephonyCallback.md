@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # TelephonyCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback "View this page in Java") 
+Kotlin| [Java](../android/telephony/TelephonyCallback.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class TelephonyCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.TelephonyCallback](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback#) |
+| ↳ | [android.telephony.TelephonyCallback](../android/telephony/TelephonyCallback.md) |
 
 A callback class for monitoring changes in specific telephony states on the device, including service state, signal strength, message waiting indicator (voicemail), and others.
 
-To register a callback, use a [TelephonyCallback](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback#) which implements interfaces regarding EVENT_\*. For example, FakeServiceStateCallback extends [TelephonyCallback](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback#) implements [TelephonyCallback.ServiceStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener).
+To register a callback, use a [TelephonyCallback](../android/telephony/TelephonyCallback.md) which implements interfaces regarding EVENT_\*. For example, FakeServiceStateCallback extends [TelephonyCallback](../android/telephony/TelephonyCallback.md) implements [TelephonyCallback.ServiceStateListener](../android/telephony/TelephonyCallback.ServiceStateListener.md).
 
 Then override the methods for the state that you wish to receive updates for, and pass the executor and your TelephonyCallback object to android.telephony.TelephonyManager#registerTelephonyCallback. Methods are called when the state changes, as well as once on initial registration.
 
@@ -27,38 +27,38 @@ Note that access to some telephony information is permission-protected. Your app
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [ActiveDataSubscriptionIdListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener) Interface for active data subscription ID listener. |
-| abstract | [BarringInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.BarringInfoListener) Interface for barring information listener. |
-| abstract | [CallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallDisconnectCauseListener) Interface for call disconnect cause listener. |
+| abstract | [ActiveDataSubscriptionIdListener](../android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.md) Interface for active data subscription ID listener. |
+| abstract | [BarringInfoListener](../android/telephony/TelephonyCallback.BarringInfoListener.md) Interface for barring information listener. |
+| abstract | [CallDisconnectCauseListener](../android/telephony/TelephonyCallback.CallDisconnectCauseListener.md) Interface for call disconnect cause listener. |
 | --- | --- |
-| abstract | [CallForwardingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallForwardingIndicatorListener) Interface for call-forwarding indicator listener. |
-| abstract | [CallStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallStateListener) Interface for call state listener. |
-| abstract | [CarrierNetworkListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CarrierNetworkListener) Interface for carrier network listener. |
+| abstract | [CallForwardingIndicatorListener](../android/telephony/TelephonyCallback.CallForwardingIndicatorListener.md) Interface for call-forwarding indicator listener. |
+| abstract | [CallStateListener](../android/telephony/TelephonyCallback.CallStateListener.md) Interface for call state listener. |
+| abstract | [CarrierNetworkListener](../android/telephony/TelephonyCallback.CarrierNetworkListener.md) Interface for carrier network listener. |
 | --- | --- |
-| abstract | [CellInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellInfoListener) Interface for cell info listener. |
-| abstract | [CellLocationListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellLocationListener) Interface for device cell location listener. |
-| abstract | [DataActivationStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivationStateListener) Interface for SIM data activation state listener. |
+| abstract | [CellInfoListener](../android/telephony/TelephonyCallback.CellInfoListener.md) Interface for cell info listener. |
+| abstract | [CellLocationListener](../android/telephony/TelephonyCallback.CellLocationListener.md) Interface for device cell location listener. |
+| abstract | [DataActivationStateListener](../android/telephony/TelephonyCallback.DataActivationStateListener.md) Interface for SIM data activation state listener. |
 | --- | --- |
-| abstract | [DataActivityListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivityListener) Interface for data activity state listener. |
-| abstract | [DataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataConnectionStateListener) Interface for data connection state listener. |
-| abstract | [DisplayInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DisplayInfoListener) Interface for display info listener. |
+| abstract | [DataActivityListener](../android/telephony/TelephonyCallback.DataActivityListener.md) Interface for data activity state listener. |
+| abstract | [DataConnectionStateListener](../android/telephony/TelephonyCallback.DataConnectionStateListener.md) Interface for data connection state listener. |
+| abstract | [DisplayInfoListener](../android/telephony/TelephonyCallback.DisplayInfoListener.md) Interface for display info listener. |
 | --- | --- |
-| abstract | [EmergencyNumberListListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.EmergencyNumberListListener) Interface for the current emergency number list listener. |
-| abstract | [ImsCallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener) Interface for IMS call disconnect cause listener. |
-| abstract | [MessageWaitingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener) Interface for message waiting indicator listener. |
+| abstract | [EmergencyNumberListListener](../android/telephony/TelephonyCallback.EmergencyNumberListListener.md) Interface for the current emergency number list listener. |
+| abstract | [ImsCallDisconnectCauseListener](../android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.md) Interface for IMS call disconnect cause listener. |
+| abstract | [MessageWaitingIndicatorListener](../android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.md) Interface for message waiting indicator listener. |
 | --- | --- |
-| abstract | [PhysicalChannelConfigListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.PhysicalChannelConfigListener) Interface for current physical channel configuration listener. |
-| abstract | [PreciseDataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener) Interface for precise data connection state listener. |
-| abstract | [RegistrationFailedListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.RegistrationFailedListener) Interface for registration failures listener. |
+| abstract | [PhysicalChannelConfigListener](../android/telephony/TelephonyCallback.PhysicalChannelConfigListener.md) Interface for current physical channel configuration listener. |
+| abstract | [PreciseDataConnectionStateListener](../android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.md) Interface for precise data connection state listener. |
+| abstract | [RegistrationFailedListener](../android/telephony/TelephonyCallback.RegistrationFailedListener.md) Interface for registration failures listener. |
 | --- | --- |
-| abstract | [ServiceStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener) Interface for service state listener. |
-| abstract | [SignalStrengthsListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener) Interface for network signal strengths listener. |
-| abstract | [UserMobileDataStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.UserMobileDataStateListener) Interface for user mobile data state listener. |
+| abstract | [ServiceStateListener](../android/telephony/TelephonyCallback.ServiceStateListener.md) Interface for service state listener. |
+| abstract | [SignalStrengthsListener](../android/telephony/TelephonyCallback.SignalStrengthsListener.md) Interface for network signal strengths listener. |
+| abstract | [UserMobileDataStateListener](../android/telephony/TelephonyCallback.UserMobileDataStateListener.md) Interface for user mobile data state listener. |
 | --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TelephonyCallback](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback#TelephonyCallback())`()` <br /> |
+| [TelephonyCallback](../android/telephony/TelephonyCallback.md))`()` <br /> |
 
 ## Public constructors
 

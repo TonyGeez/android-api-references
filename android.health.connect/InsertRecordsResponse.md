@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # InsertRecordsResponse
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/InsertRecordsResponse "View this page in Java") 
+Kotlin| [Java](../android/health/connect/InsertRecordsResponse.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ open class InsertRecordsResponse
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.InsertRecordsResponse](https://developer.android.com/reference/kotlin/android/health/connect/InsertRecordsResponse#) |
+| ↳ | [android.health.connect.InsertRecordsResponse](../android/health/connect/InsertRecordsResponse.md) |
 
-Response for [HealthConnectManager.insertRecords](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#insertRecords(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)). The response contains records in same order as records in [HealthConnectManager.insertRecords](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#insertRecords(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))
+Response for [HealthConnectManager.insertRecords](../android/health/connect/HealthConnectManager.md)). The response contains records in same order as records in [HealthConnectManager.insertRecords](../android/health/connect/HealthConnectManager.md))
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record)!\> | [getRecords](https://developer.android.com/reference/kotlin/android/health/connect/InsertRecordsResponse#getRecords())`()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](../android/health/connect/datatypes/Record.md)!\> | [getRecords](../android/health/connect/InsertRecordsResponse.md))`()` <br /> |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ open fun getRecords(): MutableList<Record!>
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Record](../android/health/connect/datatypes/Record.md)!> | This value cannot be`null`. |

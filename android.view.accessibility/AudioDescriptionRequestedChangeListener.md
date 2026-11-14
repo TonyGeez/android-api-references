@@ -4,22 +4,22 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioDescriptionRequestedChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener "View this page in Java") 
+Kotlin| [Java](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md) 
 | --- | --- |
 
 ```
 interface AudioDescriptionRequestedChangeListener
 ```
 
-| [android.view.accessibility.AccessibilityManager.AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener#) |
+| [android.view.accessibility.AccessibilityManager.AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md) |
 
-Listener for the audio description by default state. To listen for changes to the audio description by default state on the device, implement this interface and register it with the system by calling [addAudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAudioDescriptionRequestedChangeListener(java.util.concurrent.Executor,%20android.view.accessibility.AccessibilityManager.AudioDescriptionRequestedChangeListener)).
+Listener for the audio description by default state. To listen for changes to the audio description by default state on the device, implement this interface and register it with the system by calling [addAudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioDescriptionRequestedChanged](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener#onAudioDescriptionRequestedChanged(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the audio description enabled state changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioDescriptionRequestedChanged](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the audio description enabled state changes. |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # IpSecTransform
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/IpSecTransform "View this page in Java") 
+Kotlin| [Java](../android/net/IpSecTransform.md) 
 | --- | --- |
 
 ```
@@ -13,29 +13,29 @@ class IpSecTransform : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#) |
+| ↳ | [android.net.IpSecTransform](../android/net/IpSecTransform.md) |
 
 This class represents a transform, which roughly corresponds to an IPsec Security Association.
 
-Transforms are created using [IpSecTransform.Builder](https://developer.android.com/reference/kotlin/android/net/IpSecTransform.Builder). Each`IpSecTransform`object encapsulates the properties and state of an IPsec security association. That includes, but is not limited to, algorithm choice, key material, and allocated system resources.
+Transforms are created using [IpSecTransform.Builder](../android/net/IpSecTransform.Builder.md). Each`IpSecTransform`object encapsulates the properties and state of an IPsec security association. That includes, but is not limited to, algorithm choice, key material, and allocated system resources.
 
 ## Summary
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/IpSecTransform.Builder) This class is used to build [IpSecTransform](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#) objects. |
+| | [Builder](../android/net/IpSecTransform.Builder.md) This class is used to build [IpSecTransform](../android/net/IpSecTransform.md) objects. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#close())`()` Deactivate this`IpSecTransform`and free allocated resources. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Standard equals. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestIpSecTransformState](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#requestIpSecTransformState(java.util.concurrent.Executor,%20android.os.OutcomeReceiver))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)< [IpSecTransformState](https://developer.android.com/reference/kotlin/android/net/IpSecTransformState)!,` ` [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#)!>`)` Retrieve the current state of this IpSecTransform. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/net/IpSecTransform.md))`()` Deactivate this`IpSecTransform`and free allocated resources. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/IpSecTransform.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Standard equals. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestIpSecTransformState](../android/net/IpSecTransform.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [OutcomeReceiver](../android/os/OutcomeReceiver.md)< [IpSecTransformState](../android/net/IpSecTransformState.md)!,` ` [RuntimeException](../java/lang/RuntimeException.md)!>`)` Retrieve the current state of this IpSecTransform. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/IpSecTransform.md))`()` <br /> |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/net/IpSecTransform#finalize())`()` Check that the transform was closed properly. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/net/IpSecTransform.md))`()` Check that the transform was closed properly. |
 
 ## Public methods
 
@@ -91,12 +91,12 @@ Retrieve the current state of this IpSecTransform.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) on which to call the supplied callback. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. This value cannot be`null`. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [IpSecTransformState](https://developer.android.com/reference/kotlin/android/net/IpSecTransformState)!, [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#)!\>:Callback that's called after the transform state is ready or when an error occurs. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):The [Executor](../java/util/concurrent/Executor.md) on which to call the supplied callback. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. This value cannot be`null`. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [IpSecTransformState](../android/net/IpSecTransformState.md)!, [RuntimeException](../java/lang/RuntimeException.md)!\>:Callback that's called after the transform state is ready or when an error occurs. This value cannot be`null`. |
 
 **See Also**
 
-- [android.net.IpSecTransformState](https://developer.android.com/reference/kotlin/android/net/IpSecTransformState) 
+- [android.net.IpSecTransformState](../android/net/IpSecTransformState.md) 
 
 ### toString
 

@@ -5,7 +5,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # LoadParams
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/LoadParams "View this page in Java") 
+Kotlin| [Java](../android/graphics/pdf/LoadParams.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class LoadParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.LoadParams](https://developer.android.com/reference/kotlin/android/graphics/pdf/LoadParams#) |
+| ↳ | [android.graphics.pdf.LoadParams](../android/graphics/pdf/LoadParams.md) |
 
 Represents a set of parameters to load the PDF document.
 
@@ -22,11 +22,11 @@ Represents a set of parameters to load the PDF document.
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/graphics/pdf/LoadParams.Builder) Builder for constructing [LoadParams](https://developer.android.com/reference/kotlin/android/graphics/pdf/LoadParams#). |
+| | [Builder](../android/graphics/pdf/LoadParams.Builder.md) Builder for constructing [LoadParams](../android/graphics/pdf/LoadParams.md). |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassword](https://developer.android.com/reference/kotlin/android/graphics/pdf/LoadParams#getPassword())`()` Gets the password for the loaded document. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassword](../android/graphics/pdf/LoadParams.md))`()` Gets the password for the loaded document. |
 
 ## Public methods
 

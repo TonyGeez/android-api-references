@@ -4,16 +4,16 @@
 
 ## Classes
 
-| [Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/Certificate) | Abstract class for managing a variety of identity certificates. |
+| [Certificate](../javax/security/cert/Certificate.md) | Abstract class for managing a variety of identity certificates. |
 | --- | --- |
-| [X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate) | Abstract class for X. |
+| [X509Certificate](../javax/security/cert/X509Certificate.md) | Abstract class for X. |
 
 ## Exceptions
 
-| [CertificateEncodingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateEncodingException) | Certificate Encoding Exception. |
+| [CertificateEncodingException](../javax/security/cert/CertificateEncodingException.md) | Certificate Encoding Exception. |
 | --- | --- |
-| [CertificateException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateException) | This exception indicates one of a variety of certificate problems. |
-| [CertificateExpiredException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateExpiredException) | Certificate Expired Exception. |
-| [CertificateNotYetValidException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateNotYetValidException) | Certificate is not yet valid exception. |
+| [CertificateException](../javax/security/cert/CertificateException.md) | This exception indicates one of a variety of certificate problems. |
+| [CertificateExpiredException](../javax/security/cert/CertificateExpiredException.md) | Certificate Expired Exception. |
+| [CertificateNotYetValidException](../javax/security/cert/CertificateNotYetValidException.md) | Certificate is not yet valid exception. |
 | --- | --- |
-| [CertificateParsingException](https://developer.android.com/reference/kotlin/javax/security/cert/CertificateParsingException) | Certificate Parsing Exception. |
+| [CertificateParsingException](../javax/security/cert/CertificateParsingException.md) | Certificate Parsing Exception. |

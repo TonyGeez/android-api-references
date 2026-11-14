@@ -10,7 +10,7 @@ open class CertificateFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#) |
+| ↳ | [java.security.cert.CertificateFactory](../java/security/cert/CertificateFactory.md) |
 
 This class defines the functionality of a certificate factory, which is used to generate certificate, certification path () and certificate revocation list (CRL) objects from their encodings.
 
@@ -66,27 +66,27 @@ The type and encodings are described in the [CertificateFactory section](https:/
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#CertificateFactory(java.security.cert.CertificateFactorySpi,%20java.security.Provider,%20kotlin.String))`(`certFacSpi:` ` [CertificateFactorySpi](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactorySpi)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a CertificateFactory object of the given type, and encapsulates the given provider implementation (SPI object) in it. |
+| [CertificateFactory](../java/security/cert/CertificateFactory.md))`(`certFacSpi:` ` [CertificateFactorySpi](../java/security/cert/CertificateFactorySpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a CertificateFactory object of the given type, and encapsulates the given provider implementation (SPI object) in it. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)! | [generateCRL](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCRL(java.io.InputStream))`(`inStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Generates a certificate revocation list (CRL) object and initializes it with the data read from the input stream`inStream`. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!\>! | [generateCRLs](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCRLs(java.io.InputStream))`(`inStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Returns a (possibly empty) collection view of the CRLs read from the given input stream`inStream`. |
-| [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | [generateCertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCertPath(java.io.InputStream))`(`inStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Generates a`CertPath`object and initializes it with the data read from the`InputStream`inStream. |
+| [CRL](../java/security/cert/CRL.md)! | [generateCRL](../java/security/cert/CertificateFactory.md))`(`inStream:` ` [InputStream](../java/io/InputStream.md)!`)` Generates a certificate revocation list (CRL) object and initializes it with the data read from the input stream`inStream`. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [CRL](../java/security/cert/CRL.md)!\>! | [generateCRLs](../java/security/cert/CertificateFactory.md))`(`inStream:` ` [InputStream](../java/io/InputStream.md)!`)` Returns a (possibly empty) collection view of the CRLs read from the given input stream`inStream`. |
+| [CertPath](../java/security/cert/CertPath.md)! | [generateCertPath](../java/security/cert/CertificateFactory.md))`(`inStream:` ` [InputStream](../java/io/InputStream.md)!`)` Generates a`CertPath`object and initializes it with the data read from the`InputStream`inStream. |
 | --- | --- |
-| [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | [generateCertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCertPath(java.io.InputStream,%20kotlin.String))`(`inStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Generates a`CertPath`object and initializes it with the data read from the`InputStream`inStream. |
-| [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | [generateCertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCertPath(kotlin.collections.MutableList))`(`certificates:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!>!`)` Generates a`CertPath`object and initializes it with a`List`of`Certificate`s. |
-| [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)! | [generateCertificate](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCertificate(java.io.InputStream))`(`inStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Generates a certificate object and initializes it with the data read from the input stream`inStream`. |
+| [CertPath](../java/security/cert/CertPath.md)! | [generateCertPath](../java/security/cert/CertificateFactory.md))`(`inStream:` ` [InputStream](../java/io/InputStream.md)!`, `encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Generates a`CertPath`object and initializes it with the data read from the`InputStream`inStream. |
+| [CertPath](../java/security/cert/CertPath.md)! | [generateCertPath](../java/security/cert/CertificateFactory.md))`(`certificates:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` ` [Certificate](../java/security/cert/Certificate.md)!>!`)` Generates a`CertPath`object and initializes it with a`List`of`Certificate`s. |
+| [Certificate](../java/security/cert/Certificate.md)! | [generateCertificate](../java/security/cert/CertificateFactory.md))`(`inStream:` ` [InputStream](../java/io/InputStream.md)!`)` Generates a certificate object and initializes it with the data read from the input stream`inStream`. |
 | --- | --- |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [generateCertificates](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCertificates(java.io.InputStream))`(`inStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Returns a (possibly empty) collection view of the certificates read from the given input stream`inStream`. |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getCertPathEncodings](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#getCertPathEncodings())`()` Returns an iteration of the`CertPath`encodings supported by this certificate factory, with the default encoding first. |
-| static [CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#getInstance(kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a certificate factory object that implements the specified certificate type. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Certificate](../java/security/cert/Certificate.md)!\>! | [generateCertificates](../java/security/cert/CertificateFactory.md))`(`inStream:` ` [InputStream](../java/io/InputStream.md)!`)` Returns a (possibly empty) collection view of the certificates read from the given input stream`inStream`. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getCertPathEncodings](../java/security/cert/CertificateFactory.md))`()` Returns an iteration of the`CertPath`encodings supported by this certificate factory, with the default encoding first. |
+| static [CertificateFactory](../java/security/cert/CertificateFactory.md)! | [getInstance](../java/security/cert/CertificateFactory.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a certificate factory object that implements the specified certificate type. |
 | --- | --- |
-| static [CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#getInstance(kotlin.String,%20kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a certificate factory object for the specified certificate type. |
-| static [CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#getInstance(kotlin.String,%20java.security.Provider))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a certificate factory object for the specified certificate type. |
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#getProvider())`()` Returns the provider of this certificate factory. |
+| static [CertificateFactory](../java/security/cert/CertificateFactory.md)! | [getInstance](../java/security/cert/CertificateFactory.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a certificate factory object for the specified certificate type. |
+| static [CertificateFactory](../java/security/cert/CertificateFactory.md)! | [getInstance](../java/security/cert/CertificateFactory.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a certificate factory object for the specified certificate type. |
+| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/cert/CertificateFactory.md))`()` Returns the provider of this certificate factory. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#getType())`()` Returns the name of the certificate type associated with this certificate factory. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../java/security/cert/CertificateFactory.md))`()` Returns the name of the certificate type associated with this certificate factory. |
 
 ## Protected constructors
 
@@ -105,8 +105,8 @@ Creates a CertificateFactory object of the given type, and encapsulates the give
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `certFacSpi` | [CertificateFactorySpi](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactorySpi)!:the provider implementation. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider. |
+| `certFacSpi` | [CertificateFactorySpi](../java/security/cert/CertificateFactorySpi.md)!:the provider implementation. |
+| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the certificate type. |
 | --- | --- |
 
@@ -124,15 +124,15 @@ Generates a certificate revocation list (CRL) object and initializes it with the
 
 In order to take advantage of the specialized CRL format supported by this certificate factory, the returned CRL object can be typecast to the corresponding CRL class. For example, if this certificate factory implements X.509 CRLs, the returned CRL object can be typecast to the`X509CRL`class.
 
-Note that if the given input stream does not support [mark](https://developer.android.com/reference/kotlin/java/io/InputStream.html#mark(kotlin.Int))and [reset](https://developer.android.com/reference/kotlin/java/io/InputStream.html#reset()), this method will consume the entire input stream. Otherwise, each call to this method consumes one CRL and the read position of the input stream is positioned to the next available byte after the inherent end-of-CRL marker. If the data in the input stream does not contain an inherent end-of-CRL marker (other than EOF) and there is trailing data after the CRL is parsed, a`CRLException`is thrown.
+Note that if the given input stream does not support [mark](../java/io/InputStream.md))and [reset](../java/io/InputStream.md)), this method will consume the entire input stream. Otherwise, each call to this method consumes one CRL and the read position of the input stream is positioned to the next available byte after the inherent end-of-CRL marker. If the data in the input stream does not contain an inherent end-of-CRL marker (other than EOF) and there is trailing data after the CRL is parsed, a`CRLException`is thrown.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `inStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:an input stream with the CRL data. |
+| `inStream` | [InputStream](../java/io/InputStream.md)!:an input stream with the CRL data. |
 
 | Return ||
 |-------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)! | a CRL object initialized with the data from the input stream. |
+| [CRL](../java/security/cert/CRL.md)! | a CRL object initialized with the data from the input stream. |
 
 | Exceptions ||
 |-----------------------------------|--------------------|
@@ -152,15 +152,15 @@ In order to take advantage of the specialized CRL format supported by this certi
 
 In the case of a certificate factory for X.509 CRLs,`inStream`may contain a sequence of DER-encoded CRLs. In addition,`inStream`may contain a PKCS#7 CRL set. This is a PKCS#7*SignedData* object, with the only significant field being*crls*. In particular, the signature and the contents are ignored. This format allows multiple CRLs to be downloaded at once. If no CRLs are present, an empty collection is returned.
 
-Note that if the given input stream does not support [mark](https://developer.android.com/reference/kotlin/java/io/InputStream.html#mark(kotlin.Int))and [reset](https://developer.android.com/reference/kotlin/java/io/InputStream.html#reset()), this method will consume the entire input stream.
+Note that if the given input stream does not support [mark](../java/io/InputStream.md))and [reset](../java/io/InputStream.md)), this method will consume the entire input stream.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------|
-| `inStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the input stream with the CRLs. |
+| `inStream` | [InputStream](../java/io/InputStream.md)!:the input stream with the CRLs. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!>! | a (possibly empty) collection view of java.security.cert.CRL objects initialized with the data from the input stream. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [CRL](../java/security/cert/CRL.md)!>! | a (possibly empty) collection view of java.security.cert.CRL objects initialized with the data from the input stream. |
 
 | Exceptions ||
 |-----------------------------------|--------------------|
@@ -174,15 +174,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun generateCertPath(inStream: InputStream!): CertPath!
 ```
 
-Generates a`CertPath`object and initializes it with the data read from the`InputStream`inStream. The data is assumed to be in the default encoding. The name of the default encoding is the first element of the`Iterator`returned by the [getCertPathEncodings](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#getCertPathEncodings())method.
+Generates a`CertPath`object and initializes it with the data read from the`InputStream`inStream. The data is assumed to be in the default encoding. The name of the default encoding is the first element of the`Iterator`returned by the [getCertPathEncodings](../java/security/cert/CertificateFactory.md))method.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `inStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:an`InputStream`containing the data |
+| `inStream` | [InputStream](../java/io/InputStream.md)!:an`InputStream`containing the data |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | a`CertPath`initialized with the data from the`InputStream` |
+| [CertPath](../java/security/cert/CertPath.md)! | a`CertPath`initialized with the data from the`InputStream` |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------|
@@ -203,12 +203,12 @@ Generates a`CertPath`object and initializes it with the data read from the`Input
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `inStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:an`InputStream`containing the data |
+| `inStream` | [InputStream](../java/io/InputStream.md)!:an`InputStream`containing the data |
 | `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the encoding used for the data |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | a`CertPath`initialized with the data from the`InputStream` |
+| [CertPath](../java/security/cert/CertPath.md)! | a`CertPath`initialized with the data from the`InputStream` |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------------------------|
@@ -228,11 +228,11 @@ The certificates supplied must be of a type supported by the`CertificateFactory`
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `certificates` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<out [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>!:a`List`of`Certificate`s |
+| `certificates` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<out [Certificate](../java/security/cert/Certificate.md)!\>!:a`List`of`Certificate`s |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)! | a`CertPath`initialized with the supplied list of certificates |
+| [CertPath](../java/security/cert/CertPath.md)! | a`CertPath`initialized with the supplied list of certificates |
 
 | Exceptions ||
 |-------------------------------------------|------------------------|
@@ -252,15 +252,15 @@ In order to take advantage of the specialized certificate format supported by th
 
 In the case of a certificate factory for X.509 certificates, the certificate provided in`inStream`must be DER-encoded and may be supplied in binary or printable (Base64) encoding. If the certificate is provided in Base64 encoding, it must be bounded at the beginning by -----BEGIN CERTIFICATE-----, and must be bounded at the end by -----END CERTIFICATE-----.
 
-Note that if the given input stream does not support [mark](https://developer.android.com/reference/kotlin/java/io/InputStream.html#mark(kotlin.Int))and [reset](https://developer.android.com/reference/kotlin/java/io/InputStream.html#reset()), this method will consume the entire input stream. Otherwise, each call to this method consumes one certificate and the read position of the input stream is positioned to the next available byte after the inherent end-of-certificate marker. If the data in the input stream does not contain an inherent end-of-certificate marker (other than EOF) and there is trailing data after the certificate is parsed, a`CertificateException`is thrown.
+Note that if the given input stream does not support [mark](../java/io/InputStream.md))and [reset](../java/io/InputStream.md)), this method will consume the entire input stream. Otherwise, each call to this method consumes one certificate and the read position of the input stream is positioned to the next available byte after the inherent end-of-certificate marker. If the data in the input stream does not contain an inherent end-of-certificate marker (other than EOF) and there is trailing data after the certificate is parsed, a`CertificateException`is thrown.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `inStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:an input stream with the certificate data. |
+| `inStream` | [InputStream](../java/io/InputStream.md)!:an input stream with the certificate data. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)! | a certificate object initialized with the data from the input stream. |
+| [Certificate](../java/security/cert/Certificate.md)! | a certificate object initialized with the data from the input stream. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------|
@@ -278,17 +278,17 @@ Returns a (possibly empty) collection view of the certificates read from the giv
 
 In order to take advantage of the specialized certificate format supported by this certificate factory, each element in the returned collection view can be typecast to the corresponding certificate class. For example, if this certificate factory implements X.509 certificates, the elements in the returned collection can be typecast to the`X509Certificate`class.
 
-In the case of a certificate factory for X.509 certificates,`inStream`may contain a sequence of DER-encoded certificates in the formats described for [generateCertificate](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#generateCertificate(java.io.InputStream)). In addition,`inStream`may contain a PKCS#7 certificate chain. This is a PKCS#7*SignedData* object, with the only significant field being*certificates*. In particular, the signature and the contents are ignored. This format allows multiple certificates to be downloaded at once. If no certificates are present, an empty collection is returned.
+In the case of a certificate factory for X.509 certificates,`inStream`may contain a sequence of DER-encoded certificates in the formats described for [generateCertificate](../java/security/cert/CertificateFactory.md)). In addition,`inStream`may contain a PKCS#7 certificate chain. This is a PKCS#7*SignedData* object, with the only significant field being*certificates*. In particular, the signature and the contents are ignored. This format allows multiple certificates to be downloaded at once. If no certificates are present, an empty collection is returned.
 
-Note that if the given input stream does not support [mark](https://developer.android.com/reference/kotlin/java/io/InputStream.html#mark(kotlin.Int))and [reset](https://developer.android.com/reference/kotlin/java/io/InputStream.html#reset()), this method will consume the entire input stream.
+Note that if the given input stream does not support [mark](../java/io/InputStream.md))and [reset](../java/io/InputStream.md)), this method will consume the entire input stream.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------|
-| `inStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the input stream with the certificates. |
+| `inStream` | [InputStream](../java/io/InputStream.md)!:the input stream with the certificates. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!>! | a (possibly empty) collection view of java.security.cert.Certificate objects initialized with the data from the input stream. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Certificate](../java/security/cert/Certificate.md)!>! | a (possibly empty) collection view of java.security.cert.Certificate objects initialized with the data from the input stream. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------|
@@ -322,7 +322,7 @@ Returns a certificate factory object that implements the specified certificate t
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new CertificateFactory object encapsulating the CertificateFactorySpi implementation from the first Provider that supports the specified type is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security.html#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -330,7 +330,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#)! | a certificate factory object for the specified type. |
+| [CertificateFactory](../java/security/cert/CertificateFactory.md)! | a certificate factory object for the specified type. |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------------------------------|
@@ -338,7 +338,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -355,7 +355,7 @@ Returns a certificate factory object for the specified certificate type.
 
 A new CertificateFactory object encapsulating the CertificateFactorySpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security.html#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -364,7 +364,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#)! | a certificate factory object for the specified type. |
+| [CertificateFactory](../java/security/cert/CertificateFactory.md)! | a certificate factory object for the specified type. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -375,7 +375,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -395,11 +395,11 @@ A new CertificateFactory object encapsulating the CertificateFactorySpi implemen
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the certificate type. See the CertificateFactory section in the [Java Cryptography Architecture Standard Algorithm Name Documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#CertificateFactory) for information about standard certificate types. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider. |
+| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [CertificateFactory](https://developer.android.com/reference/kotlin/java/security/cert/CertificateFactory#)! | a certificate factory object for the specified type. |
+| [CertificateFactory](../java/security/cert/CertificateFactory.md)! | a certificate factory object for the specified type. |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -408,7 +408,7 @@ A new CertificateFactory object encapsulating the CertificateFactorySpi implemen
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getProvider
 
@@ -422,7 +422,7 @@ Returns the provider of this certificate factory.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------|
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | the provider of this certificate factory. |
+| [Provider](../java/security/Provider.md)! | the provider of this certificate factory. |
 
 ### getType
 

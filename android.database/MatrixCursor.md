@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MatrixCursor
 
-Kotlin | [Java](https://developer.android.com/reference/android/database/MatrixCursor "View this page in Java")
+Kotlin | [Java](../android/database/MatrixCursor.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class MatrixCursor : AbstractCursor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.database.AbstractCursor](https://developer.android.com/reference/kotlin/android/database/AbstractCursor) ||
-| | ↳ | [android.database.MatrixCursor](https://developer.android.com/reference/kotlin/android/database/MatrixCursor#) |
+| ↳ | [android.database.AbstractCursor](../android/database/AbstractCursor.md) ||
+| | ↳ | [android.database.MatrixCursor](../android/database/MatrixCursor.md) |
 
 A mutable cursor implementation backed by an array of `Object`s. Use `https://developer.android.com/reference/kotlin/android/database/MatrixCursor#newRow()` to add rows. Automatically expands internal capacity as needed.
 
@@ -46,7 +46,7 @@ A mutable cursor implementation backed by an array of `Object`s. Use `https://de
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/MatrixCursor#getType(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns data type of the given column's value. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/MatrixCursor#isNull(kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `true` if the value in the indicated column is null. |
-| open [MatrixCursor.RowBuilder](https://developer.android.com/reference/kotlin/android/database/MatrixCursor.RowBuilder)! | `https://developer.android.com/reference/kotlin/android/database/MatrixCursor#newRow()()` Adds a new row to the end and returns a builder for that row. |
+| open [MatrixCursor.RowBuilder](../android/database/MatrixCursor.RowBuilder.md)! | `https://developer.android.com/reference/kotlin/android/database/MatrixCursor#newRow()()` Adds a new row to the end and returns a builder for that row. |
 
 | Inherited functions ||
 |---|---|

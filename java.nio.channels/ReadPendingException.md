@@ -11,11 +11,11 @@ open class ReadPendingException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.channels.ReadPendingException](https://developer.android.com/reference/kotlin/java/nio/channels/ReadPendingException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.ReadPendingException](../java/nio/channels/ReadPendingException.md) |
 
 Unchecked exception thrown when an attempt is made to read from an asynchronous socket channel and a previous read has not completed.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to read from an asynchronous 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ReadPendingException](https://developer.android.com/reference/kotlin/java/nio/channels/ReadPendingException#ReadPendingException())`()` Constructs an instance of this class. |
+| [ReadPendingException](../java/nio/channels/ReadPendingException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

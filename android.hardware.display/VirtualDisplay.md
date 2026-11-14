@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # VirtualDisplay
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/VirtualDisplay "View this page in Java") 
+Kotlin| [Java](../android/hardware/display/VirtualDisplay.md) 
 | --- | --- |
 
 ```
@@ -13,29 +13,29 @@ class VirtualDisplay
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.display.VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#) |
+| ↳ | [android.hardware.display.VirtualDisplay](../android/hardware/display/VirtualDisplay.md) |
 
-Represents a virtual display. The content of a virtual display is rendered to a [android.view.Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#) that you must provide to android.hardware.display.DisplayManager#createVirtualDisplay.
+Represents a virtual display. The content of a virtual display is rendered to a [android.view.Surface](../android/view/Surface.md) that you must provide to android.hardware.display.DisplayManager#createVirtualDisplay.
 
-Because a virtual display renders to a surface provided by the application, it will be released automatically when the process terminates and all remaining windows on it will be forcibly removed. However, you should also explicitly call [release](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#release())when you're done with it.
+Because a virtual display renders to a surface provided by the application, it will be released automatically when the process terminates and all remaining windows on it will be forcibly removed. However, you should also explicitly call [release](../android/hardware/display/VirtualDisplay.md))when you're done with it.
 
 ## Summary
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Callback](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback) Interface for receiving information about a [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#)'s state changes. |
+| abstract | [Callback](../android/hardware/display/VirtualDisplay.Callback.md) Interface for receiving information about a [VirtualDisplay](../android/hardware/display/VirtualDisplay.md)'s state changes. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Display](https://developer.android.com/reference/kotlin/android/view/Display.html#)! | [getDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#getDisplay())`()` Gets the virtual display. |
-| [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)! | [getSurface](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#getSurface())`()` Gets the surface that backs the virtual display. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#release())`()` Releases the virtual display and destroys its underlying surface. |
+| [Display](../android/view/Display.md)! | [getDisplay](../android/hardware/display/VirtualDisplay.md))`()` Gets the virtual display. |
+| [Surface](../android/view/Surface.md)! | [getSurface](../android/hardware/display/VirtualDisplay.md))`()` Gets the surface that backs the virtual display. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/hardware/display/VirtualDisplay.md))`()` Releases the virtual display and destroys its underlying surface. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resize](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#resize(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `densityDpi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Asks the virtual display to resize. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRotation](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#setRotation(kotlin.Int))`(`rotation:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the rotation of the virtual display. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSurface](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#setSurface(android.view.Surface))`(`surface:` ` [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!`)` Sets the surface that backs the virtual display. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resize](../android/hardware/display/VirtualDisplay.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `densityDpi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Asks the virtual display to resize. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRotation](../android/hardware/display/VirtualDisplay.md))`(`rotation:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the rotation of the virtual display. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSurface](../android/hardware/display/VirtualDisplay.md))`(`surface:` ` [Surface](../android/view/Surface.md)!`)` Sets the surface that backs the virtual display. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/hardware/display/VirtualDisplay.md))`()` <br /> |
 
 ## Public methods
 
@@ -99,7 +99,7 @@ Sets the rotation of the virtual display.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rotation` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new rotation of the display. May be one of [Surface.ROTATION_0](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_0:kotlin.Int), [Surface.ROTATION_90](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_90:kotlin.Int), [Surface.ROTATION_180](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_180:kotlin.Int), [Surface.ROTATION_270](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_270:kotlin.Int). Upon creation, the rotation of the virtual display is always [Surface.ROTATION_0](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_0:kotlin.Int). Value is [android.view.Surface#ROTATION_0](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_0:kotlin.Int), [android.view.Surface#ROTATION_90](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_90:kotlin.Int), [android.view.Surface#ROTATION_180](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_180:kotlin.Int), or [android.view.Surface#ROTATION_270](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_270:kotlin.Int) |
+| `rotation` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new rotation of the display. May be one of [Surface.ROTATION_0](../android/view/Surface.md), [Surface.ROTATION_90](../android/view/Surface.md), [Surface.ROTATION_180](../android/view/Surface.md), [Surface.ROTATION_270](../android/view/Surface.md). Upon creation, the rotation of the virtual display is always [Surface.ROTATION_0](../android/view/Surface.md). Value is [android.view.Surface#ROTATION_0](../android/view/Surface.md), [android.view.Surface#ROTATION_90](../android/view/Surface.md), [android.view.Surface#ROTATION_180](../android/view/Surface.md), or [android.view.Surface#ROTATION_270](../android/view/Surface.md) |
 
 ### setSurface
 
@@ -117,7 +117,7 @@ It is still the caller's responsibility to destroy the surface after it has been
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!:The surface to set, or null to detach the surface from the virtual display. |
+| `surface` | [Surface](../android/view/Surface.md)!:The surface to set, or null to detach the surface from the virtual display. |
 
 ### toString
 

@@ -9,8 +9,8 @@ open class MockPackageManager : PackageManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.pm.PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#) ||
-| | ↳ | [android.test.mock.MockPackageManager](https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#) |
+| ↳ | [android.content.pm.PackageManager](../android/content/pm/PackageManager.md) ||
+| | ↳ | [android.test.mock.MockPackageManager](../android/test/mock/MockPackageManager.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 24.**
@@ -1585,86 +1585,86 @@ Constant for specifying the highest installed package version code.
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#currentToCanonicalPackageNames(kotlin.Array)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Map from the current package names in use on the device to whatever the current canonical name of that package is. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#extendVerificationTimeout(kotlin.Int,%20kotlin.Int,%20kotlin.Long)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, verificationCodeAtTimeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, millisecondsToDelay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to extend the default timeout for a response and declare what action to perform after the timeout occurs. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityBanner(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the banner associated with an activity. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityBanner(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the banner associated with an activity. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityBanner(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the banner associated with an Intent. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityIcon(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the icon associated with an activity. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityIcon(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the icon associated with an Intent. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityBanner(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the banner associated with an Intent. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityIcon(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the icon associated with an activity. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityIcon(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the icon associated with an Intent. |
 | --- | --- |
-| open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular activity class. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityLogo(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the logo associated with an activity. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityLogo(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the logo associated with an Intent. |
+| open [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular activity class. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityLogo(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the logo associated with an activity. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityLogo(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the logo associated with an Intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#)!\>! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getAllIntentFilters(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getAllPermissionGroups(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the known permission groups in the system. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationBanner(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the banner associated with an application. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](../android/content/IntentFilter.md)!\>! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getAllIntentFilters(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getAllPermissionGroups(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the known permission groups in the system. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationBanner(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the banner associated with an application. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationBanner(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the banner associated with an application. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationBanner(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the banner associated with an application. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationEnabledSetting(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the enabled setting for an application. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the icon associated with an application. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the icon associated with an application. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationIcon(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the icon associated with an application. |
-| open [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular package/application. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationIcon(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the icon associated with an application. |
+| open [ApplicationInfo](../android/content/pm/ApplicationInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular package/application. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Return the label to use for this application. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLogo(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the logo associated with an application. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLogo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the logo associated with an application. |
-| open [ChangedPackages](https://developer.android.com/reference/kotlin/android/content/pm/ChangedPackages.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getChangedPackages(kotlin.Int)(sequenceNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the names of the packages that have been changed \[eg. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLogo(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the logo associated with an application. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLogo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the logo associated with an application. |
+| open [ChangedPackages](../android/content/pm/ChangedPackages.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getChangedPackages(kotlin.Int)(sequenceNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the names of the packages that have been changed \[eg. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getComponentEnabledSetting(android.content.ComponentName)(componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Return the enabled setting for a package component (activity, receiver, service, provider). |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getDefaultActivityIcon()()` Return the generic icon for an activity that is used when no specific icon is defined. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getDrawable(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve an image from a package. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getDefaultActivityIcon()()` Return the generic icon for an activity that is used when no specific icon is defined. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getDrawable(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve an image from a package. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstalledApplications(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all application packages that are installed for the current user. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstalledPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all packages that are installed for the current user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstalledApplications(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all application packages that are installed for the current user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstalledPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all packages that are installed for the current user. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstallerPackageName(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the package name of the application that installed a package. |
 | --- | --- |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstantAppCookie()()` Gets the instant application cookie for this app. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstantAppCookieMaxBytes()()` Gets the maximum size in bytes of the cookie data an instant app can store on the device. |
-| open [InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstrumentationInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular instrumentation class. |
+| open [InstrumentationInfo](../android/content/pm/InstrumentationInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstrumentationInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular instrumentation class. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a "good" intent to launch a front-door activity in a package. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getLeanbackLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return a "good" intent to launch a front-door Leanback activity in a package, for use for example to implement an "open" button when browsing through packages. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MemoryBudgetInfo](https://developer.android.com/reference/kotlin/android/content/pm/MemoryBudgetInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getMemoryBudgets(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Return the memory budgets for the application described by the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#`. |
+| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a "good" intent to launch a front-door activity in a package. |
+| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getLeanbackLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return a "good" intent to launch a front-door Leanback activity in a package, for use for example to implement an "open" button when browsing through packages. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MemoryBudgetInfo](../android/content/pm/MemoryBudgetInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getMemoryBudgets(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Return the memory budgets for the application described by the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#`. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getNameForUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the official name associated with a uid. |
-| open [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package defined in a package archive file Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed. |
+| open [PackageInfo](../android/content/pm/PackageInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package defined in a package archive file Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageGids(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
 | --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageGids(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
-| open [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
-| open [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
+| open [PackageInfo](../android/content/pm/PackageInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
+| open [PackageInfo](../android/content/pm/PackageInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
 | --- | --- |
-| open [PackageInstaller](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInstaller()()` Return interface that offers the ability to install, upgrade, and remove applications on the device. |
+| open [PackageInstaller](../android/content/pm/PackageInstaller.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInstaller()()` Return interface that offers the ability to install, upgrade, and remove applications on the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageUid(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the UID associated with the given package name. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackagesForUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the names of all packages that are associated with a particular user id. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all installed packages that are currently holding any of the given permissions. |
-| open [PermissionGroupInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionGroupInfo.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPermissionGroupInfo(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular group of permissions. |
-| open [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo.html#)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPermissionInfo(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular permission. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all installed packages that are currently holding any of the given permissions. |
+| open [PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPermissionGroupInfo(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular group of permissions. |
+| open [PermissionInfo](../android/content/pm/PermissionInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPermissionInfo(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular permission. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPreferredActivities(kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.String)(outFilters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!>, outActivities: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!>, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Retrieve all preferred activities, previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPreferredActivity(android.content.IntentFilter,%20kotlin.Int,%20kotlin.Array,%20android.content.ComponentName)`, that are currently registered with the system. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPreferredPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the list of all currently configured preferred packages. |
-| open [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getProviderInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular content provider class. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android/content/pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPreferredPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the list of all currently configured preferred packages. |
+| open [ProviderInfo](../android/content/pm/ProviderInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getProviderInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular content provider class. |
 | --- | --- |
-| open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular receiver class. |
-| open [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForActivity(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the resources associated with an activity. |
-| open [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForApplication(android.content.pm.ApplicationInfo)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the resources for an application. |
+| open [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular receiver class. |
+| open [Resources](../android/content/res/Resources.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForActivity(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the resources associated with an activity. |
+| open [Resources](../android/content/res/Resources.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForApplication(android.content.pm.ApplicationInfo)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the resources for an application. |
 | --- | --- |
-| open [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForApplication(kotlin.String)(appPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the resources associated with an application. |
-| open [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getServiceInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular service class. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSharedLibraries(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of shared libraries on the device. |
+| open [Resources](../android/content/res/Resources.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForApplication(kotlin.String)(appPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the resources associated with an application. |
+| open [ServiceInfo](../android/content/pm/ServiceInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getServiceInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular service class. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](../android/content/pm/SharedLibraryInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSharedLibraries(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of shared libraries on the device. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSystemAvailableFeatures()()` Get a list of features that are available on the system. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FeatureInfo](../android/content/pm/FeatureInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSystemAvailableFeatures()()` Get a list of features that are available on the system. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSystemSharedLibraryNames()()` Get a list of shared libraries that are available on the system. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getText(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve text from a package. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedDrawableForDensity(android.graphics.drawable.Drawable,%20android.os.UserHandle,%20android.graphics.Rect,%20kotlin.Int)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, badgeLocation: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, badgeDensity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a badged copy of the given drawable allowing the user to distinguish it from the original drawable. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedIcon(android.graphics.drawable.Drawable,%20android.os.UserHandle)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedDrawableForDensity(android.graphics.drawable.Drawable,%20android.os.UserHandle,%20android.graphics.Rect,%20kotlin.Int)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, badgeLocation: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, badgeDensity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a badged copy of the given drawable allowing the user to distinguish it from the original drawable. |
+| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedIcon(android.graphics.drawable.Drawable,%20android.os.UserHandle)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedLabel(kotlin.CharSequence,%20android.os.UserHandle)(label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a copy of the label with badging for accessibility services like talkback. |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getWhitelistedRestrictedPermissions(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelistFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the restricted permissions that have been whitelisted and the app is allowed to have them granted in their full form. |
-| open [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getXml(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve an XML file from a package. |
+| open [XmlResourceParser](../android/content/res/XmlResourceParser.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getXml(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve an XML file from a package. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#hasSigningCertificate(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, certificate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches the set of signing certificates by which the package(s) for the given uid has proven to have been signed. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#hasSigningCertificate(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, certificate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches the set of signing certificates by which the given package has proven to have been signed. |
@@ -1677,26 +1677,26 @@ Constant for specifying the highest installed package version code.
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#isPermissionRevokedByPolicy(kotlin.String,%20kotlin.String)(permName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, pkgName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks whether a particular permissions has been revoked for a package by policy. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#isSafeMode()()` Return whether the device has been booted into safe mode. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all receivers that can handle a broadcast of the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all receivers that can handle a broadcast of the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve content provider information. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryInstrumentation(kotlin.String,%20kotlin.Int)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve information about available instrumentation code. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentActivities(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all activities that can be performed for the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](../android/content/pm/ProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve content provider information. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InstrumentationInfo](../android/content/pm/InstrumentationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryInstrumentation(kotlin.String,%20kotlin.Int)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve information about available instrumentation code. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentActivities(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all activities that can be performed for the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a set of activities that should be presented to the user as similar options. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all providers that can match the given intent. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentServices(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all services that can match the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a set of activities that should be presented to the user as similar options. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all providers that can match the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android/content/pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentServices(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all services that can match the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo.html#)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryPermissionsByGroup(kotlin.String,%20kotlin.Int)(group: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query for all of the permissions associated with a particular group. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionInfo](../android/content/pm/PermissionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryPermissionsByGroup(kotlin.String,%20kotlin.Int)(group: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query for all of the permissions associated with a particular group. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#removePackageFromPreferred(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#removePermission(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes a permission that was previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPermission(android.content.pm.PermissionInfo)`. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#removeWhitelistedRestrictedPermission(kotlin.String,%20kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelistFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes a whitelisted restricted permission for an app. |
-| open [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveActivity(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best action to perform for a given Intent. |
-| open [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find a single content provider by its authority. |
+| open [ResolveInfo](../android/content/pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveActivity(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best action to perform for a given Intent. |
+| open [ProviderInfo](../android/content/pm/ProviderInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find a single content provider by its authority. |
 | --- | --- |
-| open [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveService(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best service to handle for a given Intent. |
-| open [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveServiceAsUser(android.content.Intent,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, userId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [ResolveInfo](../android/content/pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveService(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best service to handle for a given Intent. |
+| open [ResolveInfo](../android/content/pm/ResolveInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveServiceAsUser(android.content.Intent,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, userId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#setApplicationCategoryHint(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, categoryHint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Provide a hint of what the `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#category:kotlin.Int` value should be for the given package. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, newState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the enabled setting for an application This setting will override any enabled state which may have been set by the application in its manifest. |
@@ -2218,7 +2218,7 @@ New permissions must be added before any .apks are installed that use those perm
 
 | Parameters ||
 |---|---|
-| `info` | [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo.html#): Description of the permission to be added. This value cannot be `null`. |
+| `info` | [PermissionInfo](../android/content/pm/PermissionInfo.md): Description of the permission to be added. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2243,7 +2243,7 @@ Like `https://developer.android.com/reference/kotlin/android/content/pm/PackageM
 
 | Parameters ||
 |---|---|
-| `info` | [PermissionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo.html#): This value cannot be `null`. |
+| `info` | [PermissionInfo](../android/content/pm/PermissionInfo.md): This value cannot be `null`. |
 
 ### addPreferredActivity
 
@@ -2264,11 +2264,11 @@ Add a new preferred activity mapping to the system. This will be used to automat
 
 | Parameters ||
 |---|---|
-| `filter` | [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#): The set of intents under which this activity will be made preferred. This value cannot be `null`. |
+| `filter` | [IntentFilter](../android/content/IntentFilter.md): The set of intents under which this activity will be made preferred. This value cannot be `null`. |
 | `match` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The IntentFilter match category that this preference applies to. |
-| `set` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!\>?: The set of activities that the user was picking from when this preference was made. This value may be `null`. |
+| `set` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ComponentName](../android/content/ComponentName.md)!\>?: The set of activities that the user was picking from when this preference was made. This value may be `null`. |
 | --- | --- |
-| `activity` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The component name of the activity that is to be preferred. This value cannot be `null`. |
+| `activity` | [ComponentName](../android/content/ComponentName.md): The component name of the activity that is to be preferred. This value cannot be `null`. |
 
 ### addWhitelistedRestrictedPermission
 
@@ -2524,7 +2524,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose banner is to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose banner is to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2549,7 +2549,7 @@ Retrieve the banner associated with an Intent. If intent.getClassName() is set, 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent for which you would like to retrieve a banner. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent for which you would like to retrieve a banner. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2575,7 +2575,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose icon is to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose icon is to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2599,7 +2599,7 @@ Retrieve the icon associated with an Intent. If intent.getClassName() is set, th
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent for which you would like to retrieve an icon. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent for which you would like to retrieve an icon. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2654,7 +2654,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose logo is to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose logo is to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2679,7 +2679,7 @@ Retrieve the logo associated with an Intent. If intent.getClassName() is set, th
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent for which you would like to retrieve a logo. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent for which you would like to retrieve a logo. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2735,7 +2735,7 @@ Retrieve the banner associated with an application.
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#): Information about application being queried. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about application being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2808,7 +2808,7 @@ Note: The returned drawable's dimensions are capped to a maximum size of `2048 x
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#): Information about application being queried. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about application being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2882,7 +2882,7 @@ Return the label to use for this application.
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#): The `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#` of the application to get the label of. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): The `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#` of the application to get the label of. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2903,7 +2903,7 @@ Retrieve the logo associated with an application. If it has not specified a logo
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#): Information about application being queried. This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about application being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2971,7 +2971,7 @@ Return the enabled setting for a package component (activity, receiver, service,
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The component to retrieve. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android/content/ComponentName.md): The component to retrieve. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3013,7 +3013,7 @@ Retrieve an image from a package. This is a low-level API used by the various pa
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package that this icon is coming from. Cannot be null. |
 | `resid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the desired image. Cannot be 0. |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
 | --- | --- |
 
 | Return ||
@@ -3136,7 +3136,7 @@ Retrieve all of the information we know about a particular instrumentation class
 
 | Parameters ||
 |---|---|
-| `className` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The full name (i.e. com.google.apps.contacts.InstrumentList) of an Instrumentation class. This value cannot be `null`. |
+| `className` | [ComponentName](../android/content/ComponentName.md): The full name (i.e. com.google.apps.contacts.InstrumentList) of an Instrumentation class. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. Value is either `0` or - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#GET_META_DATA:kotlin.Int` |
 
 | Return ||
@@ -3206,7 +3206,7 @@ Return the memory budgets for the application described by the given `https://de
 
 | Parameters ||
 |---|---|
-| `info` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#): This value cannot be `null`. |
+| `info` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3330,7 +3330,7 @@ Retrieve overall information about an application package that is installed on t
 
 | Parameters ||
 |---|---|
-| `versionedPackage` | [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage.html#): The versioned package for which to query. This value cannot be `null`. |
+| `versionedPackage` | [VersionedPackage](../android/content/pm/VersionedPackage.md): The versioned package for which to query. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -3535,8 +3535,8 @@ Retrieve all preferred activities, previously added with `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `outFilters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#)!\>: A required list in which to place the filters of all of the preferred activities. This value cannot be `null`. |
-| `outActivities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!\>: A required list in which to place the component names of all of the preferred activities. This value cannot be `null`. |
+| `outFilters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](../android/content/IntentFilter.md)!\>: A required list in which to place the filters of all of the preferred activities. This value cannot be `null`. |
+| `outActivities` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ComponentName](../android/content/ComponentName.md)!\>: A required list in which to place the component names of all of the preferred activities. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: An optional package in which you would like to limit the list. If null, all activities will be returned; if non-null, only those activities in the given package are returned. |
 | --- | --- |
 
@@ -3635,7 +3635,7 @@ Retrieve the resources associated with an activity. Given the full name of an ac
 
 | Parameters ||
 |---|---|
-| `activityName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): Name of the activity whose resources are to be retrieved. This value cannot be `null`. |
+| `activityName` | [ComponentName](../android/content/ComponentName.md): Name of the activity whose resources are to be retrieved. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3659,7 +3659,7 @@ Retrieve the resources for an application. Throws NameNotFoundException if the p
 
 | Parameters ||
 |---|---|
-| `app` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#): Information about the desired application. This value cannot be `null`. |
+| `app` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about the desired application. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3796,7 +3796,7 @@ Retrieve text from a package. This is a low-level API used by the various packag
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package that this text is coming from. Cannot be null. |
 | `resid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the desired text. Cannot be 0. |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
 | --- | --- |
 
 | Return ||
@@ -3825,9 +3825,9 @@ If the original drawable is a BitmapDrawable and the backing bitmap is mutable a
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): The drawable to badge. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The target user. This value cannot be `null`. |
-| `badgeLocation` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: Where in the bounds of the badged drawable to place the badge. If it's `null`, the badge is applied on top of the entire drawable being badged. |
+| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): The drawable to badge. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The target user. This value cannot be `null`. |
+| `badgeLocation` | [Rect](../android/graphics/Rect.md)?: Where in the bounds of the badged drawable to place the badge. If it's `null`, the badge is applied on top of the entire drawable being badged. |
 | --- | --- |
 | `badgeDensity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The optional desired density for the badge as per `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#densityDpi:kotlin.Int`. If it's not positive, the density of the display is used. |
 
@@ -3856,7 +3856,7 @@ If the original drawable is a BitmapDrawable and the backing bitmap is mutable a
 | Parameters ||
 |---|---|
 | `drawable` | The drawable to badge. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The target user. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The target user. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3881,7 +3881,7 @@ If the target user is a managed profile of the calling user or the caller is its
 | Parameters ||
 |---|---|
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): The label to change. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The target user. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The target user. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3949,7 +3949,7 @@ Retrieve an XML file from a package. This is a low-level API used to retrieve XM
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package that this xml is coming from. Cannot be null. |
 | `resid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the desired xml. Cannot be 0. |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)?: Overall information about packageName. This may be null, in which case the application information will be retrieved for you if needed; if you already have this information around, it can be much more efficient to supply it here. |
 | --- | --- |
 
 | Return ||
@@ -4163,7 +4163,7 @@ Retrieve all receivers that can handle a broadcast of the given intent. Use `htt
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveActivity(). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveActivity(). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -4240,7 +4240,7 @@ Retrieve all activities that can be performed for the given intent. Use `https:/
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveActivity(). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveActivity(). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. The most important is `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int`, to limit the resolution to only those activities that support the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String`. Or, set `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_ALL:kotlin.Int` to prevent any filtering of the results. |
 
 | Return ||
@@ -4266,9 +4266,9 @@ Retrieve a set of activities that should be presented to the user as similar opt
 
 | Parameters ||
 |---|---|
-| `caller` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: The class name of the activity that is making the request. This activity will never appear in the output list. Can be null. |
-| `specifics` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!\>?: An array of Intents that should be resolved to the first specific results. Can be null. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveActivity(). This value cannot be `null`. |
+| `caller` | [ComponentName](../android/content/ComponentName.md)?: The class name of the activity that is making the request. This activity will never appear in the output list. Can be null. |
+| `specifics` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\>?: An array of Intents that should be resolved to the first specific results. Can be null. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveActivity(). This value cannot be `null`. |
 | --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. The most important is `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int`, to limit the resolution to only those activities that support the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String`. |
 
@@ -4294,7 +4294,7 @@ Retrieve all providers that can match the given intent. Use `https://developer.a
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -4318,7 +4318,7 @@ Retrieve all services that can match the given intent. Use `https://developer.an
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The desired intent as per resolveService(). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The desired intent as per resolveService(). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -4454,7 +4454,7 @@ Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageMa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. The most important is `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int`, to limit the resolution to only those activities that support the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String`. |
 
 | Return ||
@@ -4511,7 +4511,7 @@ Determine the best service to handle for a given Intent. Use `https://developer.
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): An intent containing all of the desired specification (action, data, type, category, and/or component). This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional option flags to modify the data returned. |
 
 | Return ||
@@ -4599,7 +4599,7 @@ Consider using `https://developer.android.com/reference/kotlin/android/content/p
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The component to enable. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android/content/ComponentName.md): The component to enable. This value cannot be `null`. |
 | `newState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new enabled state for the component. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DEFAULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DISABLED_USER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DISABLED_UNTIL_USED:kotlin.Int` |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Optional behavior flags. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#DONT_KILL_APP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#SYNCHRONOUS:kotlin.Int` |
 | --- | --- |

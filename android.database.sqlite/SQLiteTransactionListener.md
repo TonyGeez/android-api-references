@@ -4,14 +4,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteTransactionListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener "View this page in Java") 
+Kotlin | [Java](../android/database/sqlite/SQLiteTransactionListener.md) 
 | --- | --- |
 
 ```
 interface SQLiteTransactionListener
 ```
 
-| [android.database.sqlite.SQLiteTransactionListener](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener#) |
+| [android.database.sqlite.SQLiteTransactionListener](../android/database/sqlite/SQLiteTransactionListener.md) |
 
 A listener for transaction events.
 
@@ -19,9 +19,9 @@ A listener for transaction events.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBegin](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener#onBegin())`()` Called immediately after the transaction begins. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommit](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener#onCommit())`()` Called immediately before commiting the transaction. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRollback](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener#onRollback())`()` Called if the transaction is about to be rolled back. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBegin](../android/database/sqlite/SQLiteTransactionListener.md))`()` Called immediately after the transaction begins. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommit](../android/database/sqlite/SQLiteTransactionListener.md))`()` Called immediately before commiting the transaction. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRollback](../android/database/sqlite/SQLiteTransactionListener.md))`()` Called if the transaction is about to be rolled back. |
 | --- | --- |
 
 ## Public methods

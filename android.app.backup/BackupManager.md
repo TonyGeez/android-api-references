@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # BackupManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/backup/BackupManager "View this page in Java") 
+Kotlin| [Java](../android/app/backup/BackupManager.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ open class BackupManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.backup.BackupManager](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#) |
+| ↳ | [android.app.backup.BackupManager](../android/app/backup/BackupManager.md) |
 
 The interface through which an application interacts with the Android backup service to request backup and restore operations. Applications instantiate it using the constructor and issue calls through that instance.
 
-When an application has made changes to data which should be backed up, a call to [dataChanged()](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#dataChanged())will notify the backup service. The system will then schedule a backup operation to occur in the near future. Repeated calls to [dataChanged()](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#dataChanged())have no further effect until the backup operation actually occurs.
+When an application has made changes to data which should be backed up, a call to [dataChanged()](../android/app/backup/BackupManager.md))will notify the backup service. The system will then schedule a backup operation to occur in the near future. Repeated calls to [dataChanged()](../android/app/backup/BackupManager.md))have no further effect until the backup operation actually occurs.
 
-A backup or restore operation for your application begins when the system launches the [android.app.backup.BackupAgent](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent) subclass you've declared in your manifest. See the documentation for [android.app.backup.BackupAgent](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent) for a detailed description of how the operation then proceeds.
+A backup or restore operation for your application begins when the system launches the [android.app.backup.BackupAgent](../android/app/backup/BackupAgent.md) subclass you've declared in your manifest. See the documentation for [android.app.backup.BackupAgent](../android/app/backup/BackupAgent.md) for a detailed description of how the operation then proceeds.
 
 Several attributes affecting the operation of the backup and restore mechanism can be set on the` ` [<application>](https://developer.android.com/guide/topics/manifest/application-element.html) tag in your application's AndroidManifest.xml file.
 |
@@ -31,23 +31,23 @@ Several attributes affecting the operation of the backup and restore mechanism c
 
 | XML attributes ||
 |-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [`android:allowBackup`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | Whether to allow the application to participate in the backup and restore infrastructure. |
-| [`android:backupAgent`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | The name of the class subclassing BackupAgent to manage backup and restore of the application's data on external storage. |
-| [`android:killAfterRestore`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | Whether the application in question should be terminated after its settings have been restored during a full-system restore operation. |
+| [`android:allowBackup`](../android/app/backup/BackupManager.md) | Whether to allow the application to participate in the backup and restore infrastructure. |
+| [`android:backupAgent`](../android/app/backup/BackupManager.md) | The name of the class subclassing BackupAgent to manage backup and restore of the application's data on external storage. |
+| [`android:killAfterRestore`](../android/app/backup/BackupManager.md) | Whether the application in question should be terminated after its settings have been restored during a full-system restore operation. |
 | --- | --- |
-| [`android:restoreAnyVersion`](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#attr_BackupManager) | Indicate that the application is prepared to attempt a restore of any backed-up dataset, even if the backup is apparently from a newer version of the application than is currently installed on the device. |
+| [`android:restoreAnyVersion`](../android/app/backup/BackupManager.md) | Indicate that the application is prepared to attempt a restore of any backed-up dataset, even if the backup is apparently from a newer version of the application than is currently installed on the device. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BackupManager](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#BackupManager(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Constructs a BackupManager object through which the application can communicate with the Android backup system. |
+| [BackupManager](../android/app/backup/BackupManager.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Constructs a BackupManager object through which the application can communicate with the Android backup system. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dataChanged](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#dataChanged())`()` Notifies the Android backup system that your application wishes to back up new changes to its data. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dataChanged](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#dataChanged(kotlin.String))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method for callers who need to indicate that some other package needs a backup pass. |
-| open [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)? | [getUserForAncestralSerialNumber](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#getUserForAncestralSerialNumber(kotlin.Long))`(`ancestralSerialNumber:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) for the user that has`ancestralSerialNumber`as the serial number of the its ancestral work profile or`null`if there is none. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dataChanged](../android/app/backup/BackupManager.md))`()` Notifies the Android backup system that your application wishes to back up new changes to its data. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dataChanged](../android/app/backup/BackupManager.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method for callers who need to indicate that some other package needs a backup pass. |
+| open [UserHandle](../android/os/UserHandle.md)? | [getUserForAncestralSerialNumber](../android/app/backup/BackupManager.md))`(`ancestralSerialNumber:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [UserHandle](../android/os/UserHandle.md) for the user that has`ancestralSerialNumber`as the serial number of the its ancestral work profile or`null`if there is none. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [requestRestore](https://developer.android.com/reference/kotlin/android/app/backup/BackupManager#requestRestore(android.app.backup.RestoreObserver))`(`observer:` ` [RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver)!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [requestRestore](../android/app/backup/BackupManager.md))`(`observer:` ` [RestoreObserver](../android/app/backup/RestoreObserver.md)!`)` <br /> |
 
 ## XML attributes
 
@@ -105,7 +105,7 @@ Constructs a BackupManager object through which the application can communicate 
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) that was provided when one of your application's [Activities](https://developer.android.com/reference/kotlin/android/app/Activity.html#) was created. |
+| `context` | [Context](../android/content/Context.md)!:The [android.content.Context](../android/content/Context.md) that was provided when one of your application's [Activities](../android/app/Activity.md) was created. |
 
 ## Public methods
 
@@ -117,7 +117,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun dataChanged(): Unit
 ```
 
-Notifies the Android backup system that your application wishes to back up new changes to its data. A backup operation using your application's [android.app.backup.BackupAgent](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent) subclass will be scheduled when you call this method.
+Notifies the Android backup system that your application wishes to back up new changes to its data. A backup operation using your application's [android.app.backup.BackupAgent](../android/app/backup/BackupAgent.md) subclass will be scheduled when you call this method.
 
 Note: This only works if your application is performing Key/Value backups. 
 
@@ -145,12 +145,12 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getUserForAncestralSerialNumber(ancestralSerialNumber: Long): UserHandle?
 ```
 
-Returns a [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) for the user that has`ancestralSerialNumber`as the serial number of the its ancestral work profile or`null`if there is none.
+Returns a [UserHandle](../android/os/UserHandle.md) for the user that has`ancestralSerialNumber`as the serial number of the its ancestral work profile or`null`if there is none.
 
-The ancestral serial number will have a corresponding [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) if the device has a work profile that was restored from another work profile with serial number`ancestralSerialNumber`. 
+The ancestral serial number will have a corresponding [UserHandle](../android/os/UserHandle.md) if the device has a work profile that was restored from another work profile with serial number`ancestralSerialNumber`. 
 **See Also**
 
-- [android.os.UserManager#getSerialNumberForUser(UserHandle)](https://developer.android.com/reference/kotlin/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)) 
+- [android.os.UserManager#getSerialNumberForUser(UserHandle)](../android/os/UserManager.md)) 
 
 ### requestRestore
 
@@ -164,14 +164,14 @@ open fun requestRestore(observer: RestoreObserver!): Int
 **Deprecated:** *Applications shouldn't request a restore operation using this method. In Android P and later, this method is a no-op.*
 
 *Restore the calling application from backup. The data will be restored from the current backup dataset if the application has stored data there, or from the dataset used during the last full device setup operation if the current backup dataset has no matching data. If no backup data exists for this application in either source, a non-zero value is returned.*
-*If this method returns zero (meaning success), the OS attempts to retrieve a backed-up dataset from the remote transport, instantiate the application's backup agent, and pass the dataset to the agent's [onRestore()](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestore(android.app.backup.BackupDataInput,%20kotlin.Int,%20android.os.ParcelFileDescriptor))method.
-Unlike other restore operations, this method doesn't terminate the application after the restore. The application continues running to receive the [RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver) callbacks on the`observer`argument. Full backups use an [Application](https://developer.android.com/reference/kotlin/android/app/Application.html#) base class while key-value backups use the application subclass declared in the AndroidManifest.xml`<application>`tag.*
+*If this method returns zero (meaning success), the OS attempts to retrieve a backed-up dataset from the remote transport, instantiate the application's backup agent, and pass the dataset to the agent's [onRestore()](../android/app/backup/BackupAgent.md))method.
+Unlike other restore operations, this method doesn't terminate the application after the restore. The application continues running to receive the [RestoreObserver](../android/app/backup/RestoreObserver.md) callbacks on the`observer`argument. Full backups use an [Application](../android/app/Application.md) base class while key-value backups use the application subclass declared in the AndroidManifest.xml`<application>`tag.*
 
 <br />
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver)!:The [RestoreObserver](https://developer.android.com/reference/kotlin/android/app/backup/RestoreObserver) to receive callbacks during the restore operation. This must not be null. |
+| `observer` | [RestoreObserver](../android/app/backup/RestoreObserver.md)!:The [RestoreObserver](../android/app/backup/RestoreObserver.md) to receive callbacks during the restore operation. This must not be null. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|

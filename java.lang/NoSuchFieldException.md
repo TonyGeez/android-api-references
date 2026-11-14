@@ -11,10 +11,10 @@ open class NoSuchFieldException : ReflectiveOperationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
-| | | ↳ | [java.lang.ReflectiveOperationException](https://developer.android.com/reference/kotlin/java/lang/ReflectiveOperationException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.ReflectiveOperationException](../java/lang/ReflectiveOperationException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.NoSuchFieldException](https://developer.android.com/reference/kotlin/java/lang/NoSuchFieldException#) |
+| | | | ↳ | [java.lang.NoSuchFieldException](../java/lang/NoSuchFieldException.md) |
 
 Signals that the class doesn't have a field of a specified name.
 
@@ -22,8 +22,8 @@ Signals that the class doesn't have a field of a specified name.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoSuchFieldException](https://developer.android.com/reference/kotlin/java/lang/NoSuchFieldException#NoSuchFieldException())`()` Constructor. |
-| [NoSuchFieldException](https://developer.android.com/reference/kotlin/java/lang/NoSuchFieldException#NoSuchFieldException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor with a detail message. |
+| [NoSuchFieldException](../java/lang/NoSuchFieldException.md))`()` Constructor. |
+| [NoSuchFieldException](../java/lang/NoSuchFieldException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor with a detail message. |
 
 ## Public constructors
 

@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # CredentialOption
 
-Kotlin| [Java](https://developer.android.com/reference/android/credentials/CredentialOption "View this page in Java") 
+Kotlin| [Java](../android/credentials/CredentialOption.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class CredentialOption : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.CredentialOption](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#) |
+| ↳ | [android.credentials.CredentialOption](../android/credentials/CredentialOption.md) |
 
 Information about a specific type of credential to be requested during a android.credentials.CredentialManager#getCredential operation.
 
@@ -21,32 +21,32 @@ Information about a specific type of credential to be requested during a android
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption.Builder) A builder for [CredentialOption](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#). |
+| | [Builder](../android/credentials/CredentialOption.Builder.md) A builder for [CredentialOption](../android/credentials/CredentialOption.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUPPORTED_ELEMENT_KEYS](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#SUPPORTED_ELEMENT_KEYS:kotlin.String) Bundle key to the list of elements keys supported/requested. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUPPORTED_ELEMENT_KEYS](../android/credentials/CredentialOption.md) Bundle key to the list of elements keys supported/requested. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#describeContents())`()` <br /> |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!\> | [getAllowedProviders](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getAllowedProviders())`()` Returns the set of [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) corresponding to providers that must receive this option. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCandidateQueryData](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getCandidateQueryData())`()` Returns the partial request data that will be sent to the provider during the initial credential candidate query stage. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/credentials/CredentialOption.md))`()` <br /> |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ComponentName](../android/content/ComponentName.md)!\> | [getAllowedProviders](../android/credentials/CredentialOption.md))`()` Returns the set of [ComponentName](../android/content/ComponentName.md) corresponding to providers that must receive this option. |
+| [Bundle](../android/os/Bundle.md) | [getCandidateQueryData](../android/credentials/CredentialOption.md))`()` Returns the partial request data that will be sent to the provider during the initial credential candidate query stage. |
 | --- | --- |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getCredentialRetrievalData](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getCredentialRetrievalData())`()` Returns the full request data. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getType())`()` Returns the requested credential type. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemProviderRequired](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#isSystemProviderRequired())`()` Returns true if the request must only be fulfilled by a system provider, and false otherwise. |
+| [Bundle](../android/os/Bundle.md) | [getCredentialRetrievalData](../android/credentials/CredentialOption.md))`()` Returns the full request data. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](../android/credentials/CredentialOption.md))`()` Returns the requested credential type. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemProviderRequired](../android/credentials/CredentialOption.md))`()` Returns true if the request must only be fulfilled by a system provider, and false otherwise. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/credentials/CredentialOption.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/credentials/CredentialOption.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CredentialOption](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CredentialOption](../android/credentials/CredentialOption.md)!\> | [CREATOR](../android/credentials/CredentialOption.md) <br /> |
 
 ## Constants
 
@@ -74,7 +74,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getAllowedProviders
 
@@ -84,11 +84,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getAllowedProviders(): MutableSet<ComponentName!>
 ```
 
-Returns the set of [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) corresponding to providers that must receive this option.
+Returns the set of [ComponentName](../android/content/ComponentName.md) corresponding to providers that must receive this option.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!> | This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ComponentName](../android/content/ComponentName.md)!> | This value cannot be`null`. |
 
 ### getCandidateQueryData
 
@@ -98,11 +98,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getCandidateQueryData(): Bundle
 ```
 
-Returns the partial request data that will be sent to the provider during the initial credential candidate query stage. For security reason, a provider will receive the request data in two stages. First it gets this partial request that do not contain sensitive user information; it uses this information to provide credential candidates that the \[@code CredentialManager\] will show to the user. Next, the full request data, [getCredentialRetrievalData()](https://developer.android.com/reference/kotlin/android/credentials/CredentialOption#getCredentialRetrievalData()), will be sent to a provider only if the user further grants the consent by choosing a candidate from the provider.
+Returns the partial request data that will be sent to the provider during the initial credential candidate query stage. For security reason, a provider will receive the request data in two stages. First it gets this partial request that do not contain sensitive user information; it uses this information to provide credential candidates that the \[@code CredentialManager\] will show to the user. Next, the full request data, [getCredentialRetrievalData()](../android/credentials/CredentialOption.md)), will be sent to a provider only if the user further grants the consent by choosing a candidate from the provider.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | This value cannot be`null`. |
+| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
 
 ### getCredentialRetrievalData
 
@@ -116,7 +116,7 @@ Returns the full request data.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | This value cannot be`null`. |
+| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
 
 ### getType
 
@@ -169,8 +169,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

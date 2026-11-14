@@ -6,7 +6,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 interface AppFunctionObserver
 ```
 
-| [android.app.appfunctions.AppFunctionObserver](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionObserver#) |
+| [android.app.appfunctions.AppFunctionObserver](../android/app/appfunctions/AppFunctionObserver.md) |
 
 Interface for observing changes to app functions provided to `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#observeAppFunctions(java.util.concurrent.Executor,%20android.app.appfunctions.AppFunctionObserver)`.
 
@@ -59,4 +59,4 @@ Upon receiving this notification, clients can call `https://developer.android.co
 
 | Parameters ||
 |---|---|
-| `changedFunctionNames` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppFunctionName](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName)!\>: The set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName`s for the functions whose state has changed. This value cannot be `null`. |
+| `changedFunctionNames` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppFunctionName](../android/app/appfunctions/AppFunctionName.md)!\>: The set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName`s for the functions whose state has changed. This value cannot be `null`. |

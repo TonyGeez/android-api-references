@@ -8,13 +8,13 @@ open class AutoCompleteTextView : EditText, Filter.FilterListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
-| | ↳ | [android.widget.TextView](https://developer.android.com/reference/kotlin/android/widget/TextView) |||
-| | | ↳ | [android.widget.EditText](https://developer.android.com/reference/kotlin/android/widget/EditText) ||
+| ↳ | [android.view.View](../android/view/View.md) ||||
+| | ↳ | [android.widget.TextView](../android/widget/TextView.md) |||
+| | | ↳ | [android.widget.EditText](../android/widget/EditText.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.AutoCompleteTextView](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#) |
+| | | | ↳ | [android.widget.AutoCompleteTextView](../android/widget/AutoCompleteTextView.md) |
 
-Known Direct Subclasses [MultiAutoCompleteTextView](https://developer.android.com/reference/kotlin/android/widget/MultiAutoCompleteTextView) [MultiAutoCompleteTextView](https://developer.android.com/reference/kotlin/android/widget/MultiAutoCompleteTextView) An editable text view, extending `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#`, that can show completion suggestions for the substring of the text where the user is typing instead of necessarily for the entire thing.
+Known Direct Subclasses [MultiAutoCompleteTextView](../android/widget/MultiAutoCompleteTextView.md) [MultiAutoCompleteTextView](../android/widget/MultiAutoCompleteTextView.md) An editable text view, extending `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#`, that can show completion suggestions for the substring of the text where the user is typing instead of necessarily for the entire thing.
 
 An editable text view that shows completion suggestions automatically while the user is typing. The list of suggestions is displayed in a drop down menu from which the user can choose an item to replace the content of the edit box with.
 
@@ -55,17 +55,17 @@ See the [Text Fields](https://developer.android.com/guide/topics/ui/controls/tex
 
 | XML attributes ||
 |---|---|
-| [`android:completionHint`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Defines the hint displayed in the drop down menu. |
-| [`android:completionHintView`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Defines the hint view displayed in the drop down menu. |
-| [`android:completionThreshold`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Defines the number of characters that the user must type before completion suggestions are displayed in a drop down menu. |
+| [`android:completionHint`](../android/widget/AutoCompleteTextView.md) | Defines the hint displayed in the drop down menu. |
+| [`android:completionHintView`](../android/widget/AutoCompleteTextView.md) | Defines the hint view displayed in the drop down menu. |
+| [`android:completionThreshold`](../android/widget/AutoCompleteTextView.md) | Defines the number of characters that the user must type before completion suggestions are displayed in a drop down menu. |
 | --- | --- |
-| [`android:dropDownAnchor`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | View to anchor the auto-complete dropdown to. |
-| [`android:dropDownHeight`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Specifies the basic height of the dropdown. |
-| [`android:dropDownHorizontalOffset`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Amount of pixels by which the drop down should be offset horizontally. |
+| [`android:dropDownAnchor`](../android/widget/AutoCompleteTextView.md) | View to anchor the auto-complete dropdown to. |
+| [`android:dropDownHeight`](../android/widget/AutoCompleteTextView.md) | Specifies the basic height of the dropdown. |
+| [`android:dropDownHorizontalOffset`](../android/widget/AutoCompleteTextView.md) | Amount of pixels by which the drop down should be offset horizontally. |
 | --- | --- |
-| [`android:dropDownSelector`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Selector in a drop down list. |
-| [`android:dropDownVerticalOffset`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Amount of pixels by which the drop down should be offset vertically. |
-| [`android:dropDownWidth`](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#attr_AutoCompleteTextView) | Specifies the basic width of the dropdown. |
+| [`android:dropDownSelector`](../android/widget/AutoCompleteTextView.md) | Selector in a drop down list. |
+| [`android:dropDownVerticalOffset`](../android/widget/AutoCompleteTextView.md) | Amount of pixels by which the drop down should be offset vertically. |
+| [`android:dropDownWidth`](../android/widget/AutoCompleteTextView.md) | Specifies the basic width of the dropdown. |
 | --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/EditText` `https://developer.android.com/reference/kotlin/android/widget/EditText#attr_EditText` Enables styling shortcuts, e.g. Ctrl+B for bold. This is off by default.
@@ -1176,7 +1176,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -1201,7 +1201,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1211,7 +1211,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -1231,7 +1231,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1241,7 +1241,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1251,7 +1251,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1261,7 +1261,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1271,7 +1271,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1281,7 +1281,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1291,7 +1291,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1301,7 +1301,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1311,7 +1311,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1321,7 +1321,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1491,7 +1491,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1511,7 +1511,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1553,7 +1553,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1649,7 +1649,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1743,7 +1743,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -2200,7 +2200,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -2237,11 +2237,11 @@ A special index used for `https://developer.android.com/reference/kotlin/android
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#enoughToFilter()()` Returns `true` if the amount of text in the field meets or exceeds the `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getThreshold()` requirement. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
-| open [ListAdapter](https://developer.android.com/reference/kotlin/android/widget/ListAdapter)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getAdapter()()` Returns a filterable list adapter used for auto completion. |
+| open [ListAdapter](../android/widget/ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getAdapter()()` Returns a filterable list adapter used for auto completion. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getCompletionHint()()` Gets the optional hint text displayed at the bottom of the the matching list. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getDropDownAnchor()()` Returns the id for the view that the auto-complete drop down list is anchored to. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getDropDownBackground()()` Gets the background of the auto-complete drop-down list. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getDropDownBackground()()` Gets the background of the auto-complete drop-down list. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getDropDownHeight()()` Returns the current height for the auto-complete drop down list. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getDropDownHorizontalOffset()()` Gets the horizontal offset used for the auto-complete drop-down list. |
@@ -2249,15 +2249,15 @@ A special index used for `https://developer.android.com/reference/kotlin/android
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getDropDownWidth()()` Returns the current width for the auto-complete drop down list. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getInputMethodMode()()` Returns the input method mode used by the auto complete dropdown. |
-| open [AdapterView.OnItemClickListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getItemClickListener()()` Returns the listener that is notified whenever the user clicks an item in the drop down list. |
-| open [AdapterView.OnItemSelectedListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemSelectedListener)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getItemSelectedListener()()` Returns the listener that is notified whenever the user selects an item in the drop down list. |
+| open [AdapterView.OnItemClickListener](../android/widget/AdapterView.OnItemClickListener.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getItemClickListener()()` Returns the listener that is notified whenever the user clicks an item in the drop down list. |
+| open [AdapterView.OnItemSelectedListener](../android/widget/AdapterView.OnItemSelectedListener.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getItemSelectedListener()()` Returns the listener that is notified whenever the user selects an item in the drop down list. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getListSelection()()` Get the position of the dropdown view selection, if there is one. |
-| open [AdapterView.OnItemClickListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getOnItemClickListener()()` Returns the listener that is notified whenever the user clicks an item in the drop down list. |
-| open [AdapterView.OnItemSelectedListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemSelectedListener)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getOnItemSelectedListener()()` Returns the listener that is notified whenever the user selects an item in the drop down list. |
+| open [AdapterView.OnItemClickListener](../android/widget/AdapterView.OnItemClickListener.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getOnItemClickListener()()` Returns the listener that is notified whenever the user clicks an item in the drop down list. |
+| open [AdapterView.OnItemSelectedListener](../android/widget/AdapterView.OnItemSelectedListener.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getOnItemSelectedListener()()` Returns the listener that is notified whenever the user selects an item in the drop down list. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getThreshold()()` Returns the number of characters the user must type before the drop down list is shown. |
-| open [AutoCompleteTextView.Validator](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.Validator)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getValidator()()` Returns the Validator set with `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#setValidator(android.widget.AutoCompleteTextView.Validator)`, or `null` if it was not set. |
+| open [AutoCompleteTextView.Validator](../android/widget/AutoCompleteTextView.Validator.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getValidator()()` Returns the Validator set with `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#setValidator(android.widget.AutoCompleteTextView.Validator)`, or `null` if it was not set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#isPerformingCompletion()()` Identifies whether the view is currently performing a text completion, so subclasses can decide whether to respond to text changed events. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#isPopupShowing()()` Indicates whether the popup menu is showing. |
@@ -2302,7 +2302,7 @@ A special index used for `https://developer.android.com/reference/kotlin/android
 | Protected methods ||
 |---|---|
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#convertSelectionToString(kotlin.Any)(selectedItem: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Converts the selected item from the drop down list into a sequence of character that can be used in the edit box. |
-| open [Filter](https://developer.android.com/reference/kotlin/android/widget/Filter)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getFilter()()` Returns the Filter obtained from `https://developer.android.com/reference/kotlin/android/widget/Filterable#getFilter()`, or `null` if `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#setAdapter(android.widget.AutoCompleteTextView.setAdapter.T)` was not called with a Filterable. |
+| open [Filter](../android/widget/Filter.md)! | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#getFilter()()` Returns the Filter obtained from `https://developer.android.com/reference/kotlin/android/widget/Filterable#getFilter()`, or `null` if `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#setAdapter(android.widget.AutoCompleteTextView.setAdapter.T)` was not called with a Filterable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView#onDetachedFromWindow()()` This is called when the view is detached from a window. |
@@ -6613,7 +6613,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -9788,7 +9788,7 @@ Constructs a new auto-complete text view with the given context's theme.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
 
 ### AutoCompleteTextView
 
@@ -9804,8 +9804,8 @@ Constructs a new auto-complete text view with the given context's theme and the 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 
 ### AutoCompleteTextView
 
@@ -9822,8 +9822,8 @@ Constructs a new auto-complete text view with the given context's theme, the sup
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 
@@ -9843,8 +9843,8 @@ Constructs a new auto-complete text view with the given context's theme, the sup
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
@@ -9866,12 +9866,12 @@ Constructs a new auto-complete text view with the given context, the supplied at
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context against which the view is inflated, which provides access to the current theme, resources, etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes of the XML tag that is inflating the view. |
+| `context` | [Context](../android/content/Context.md)!: The context against which the view is inflated, which provides access to the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes of the XML tag that is inflating the view. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
-| `popupTheme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)!: The theme against which the completion popup window should be inflated. May be `null` to use the view theme. If set, this will override any value specified by `https://developer.android.com/reference/kotlin/android/R.styleable.html#AutoCompleteTextView_popupTheme:kotlin.Int`. |
+| `popupTheme` | [Resources.Theme](../android/content/res/Resources.Theme.md)!: The theme against which the completion popup window should be inflated. May be `null` to use the view theme. If set, this will override any value specified by `https://developer.android.com/reference/kotlin/android/R.styleable.html#AutoCompleteTextView_popupTheme:kotlin.Int`. |
 
 ## Public methods
 
@@ -10227,7 +10227,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#` |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: the KeyEvent object that defines the button action |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: the KeyEvent object that defines the button action |
 
 | Return ||
 |---|---|
@@ -10249,7 +10249,7 @@ Handle a key event before it is processed by any input method associated with th
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -10273,7 +10273,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`. |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: The KeyEvent object that defines the button action. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The KeyEvent object that defines the button action. |
 
 | Return ||
 |---|---|
@@ -10393,7 +10393,7 @@ Sets the background of the auto-complete drop-down list.
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: the drawable to set as the background |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)!: the drawable to set as the background |
 
 ### setDropDownBackgroundResource
 
@@ -10519,7 +10519,7 @@ Set a listener that will be invoked whenever the AutoCompleteTextView's list of 
 
 | Parameters ||
 |---|---|
-| `dismissListener` | [AutoCompleteTextView.OnDismissListener](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.OnDismissListener)!: Listener to invoke when completions are dismissed |
+| `dismissListener` | [AutoCompleteTextView.OnDismissListener](../android/widget/AutoCompleteTextView.OnDismissListener.md)!: Listener to invoke when completions are dismissed |
 
 ### setOnItemClickListener
 
@@ -10533,7 +10533,7 @@ Sets the listener that will be notified when the user clicks an item in the drop
 
 | Parameters ||
 |---|---|
-| `l` | [AdapterView.OnItemClickListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemClickListener)!: the item click listener |
+| `l` | [AdapterView.OnItemClickListener](../android/widget/AdapterView.OnItemClickListener.md)!: the item click listener |
 
 ### setOnItemSelectedListener
 
@@ -10547,7 +10547,7 @@ Sets the listener that will be notified when the user selects an item in the dro
 
 | Parameters ||
 |---|---|
-| `l` | [AdapterView.OnItemSelectedListener](https://developer.android.com/reference/kotlin/android/widget/AdapterView.OnItemSelectedListener)!: the item selected listener |
+| `l` | [AdapterView.OnItemSelectedListener](../android/widget/AdapterView.OnItemSelectedListener.md)!: the item selected listener |
 
 ### setText
 
@@ -10598,7 +10598,7 @@ Sets the validator used to perform text validation.
 
 | Parameters ||
 |---|---|
-| `validator` | [AutoCompleteTextView.Validator](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.Validator)!: The validator used to validate the text entered in this widget. |
+| `validator` | [AutoCompleteTextView.Validator](../android/widget/AutoCompleteTextView.Validator.md)!: The validator used to validate the text entered in this widget. |
 
 **See Also**
 
@@ -10700,7 +10700,7 @@ If you override this method you *must* call through to the superclass implementa
 |---|---|
 | `gainFocus` | True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus has moved when requestFocus() is called to give this view focus. Values are `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int`. It may not always apply, in which case use the default. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int` |
-| `previouslyFocusedRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
+| `previouslyFocusedRect` | [Rect](../android/graphics/Rect.md)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
 | --- | --- |
 
 ### performFiltering

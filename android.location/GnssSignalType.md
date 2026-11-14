@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # GnssSignalType
 
-Kotlin | [Java](https://developer.android.com/reference/android/location/GnssSignalType "View this page in Java")
+Kotlin | [Java](../android/location/GnssSignalType.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class GnssSignalType : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType#) |
+| ↳ | [android.location.GnssSignalType](../android/location/GnssSignalType.md) |
 
 This class represents a GNSS signal type.
 
@@ -23,7 +23,7 @@ This class represents a GNSS signal type.
 
 | Public methods ||
 |---|---|
-| static [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType#) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#create(kotlin.Int,%20kotlin.Double,%20kotlin.String)(constellationType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, carrierFrequencyHz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, codeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#` with a full list of parameters. |
+| static [GnssSignalType](../android/location/GnssSignalType.md) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#create(kotlin.Int,%20kotlin.Double,%20kotlin.String)(constellationType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, carrierFrequencyHz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, codeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#` with a full list of parameters. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
@@ -38,7 +38,7 @@ This class represents a GNSS signal type.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType#)!\> | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssSignalType](../android/location/GnssSignalType.md)!\> | `https://developer.android.com/reference/kotlin/android/location/GnssSignalType#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -206,7 +206,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `parcel` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

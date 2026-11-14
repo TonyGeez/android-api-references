@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # Prediction
 
-Kotlin| [Java](https://developer.android.com/reference/android/gesture/Prediction "View this page in Java") 
+Kotlin| [Java](../android/gesture/Prediction.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class Prediction
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.Prediction](https://developer.android.com/reference/kotlin/android/gesture/Prediction#) |
+| ↳ | [android.gesture.Prediction](../android/gesture/Prediction.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/gesture/Prediction#toString())`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/gesture/Prediction.md))`()` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/android/gesture/Prediction#name:kotlin.String) <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [score](https://developer.android.com/reference/kotlin/android/gesture/Prediction#score:kotlin.Double) <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../android/gesture/Prediction.md) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [score](../android/gesture/Prediction.md) <br /> |
 
 ## Public methods
 

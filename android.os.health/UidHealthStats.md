@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UidHealthStats
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/health/UidHealthStats "View this page in Java") 
+Kotlin| [Java](../android/os/health/UidHealthStats.md) 
 | --- | --- |
 
 ```
@@ -13,97 +13,97 @@ class UidHealthStats
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.health.UidHealthStats](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#) |
+| ↳ | [android.os.health.UidHealthStats](../android/os/health/UidHealthStats.md) |
 
-Keys for [HealthStats](https://developer.android.com/reference/kotlin/android/os/health/HealthStats) returned from [SystemHealthManager.takeUidSnapshot(int)](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshot(kotlin.Int)), [SystemHealthManager.takeMyUidSnapshot()](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeMyUidSnapshot()), and[SystemHealthManager.takeUidSnapshots(int[])](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshots(kotlin.IntArray)).
+Keys for [HealthStats](../android/os/health/HealthStats.md) returned from [SystemHealthManager.takeUidSnapshot(int)](../android/os/health/SystemHealthManager.md)), [SystemHealthManager.takeMyUidSnapshot()](../android/os/health/SystemHealthManager.md)), and[SystemHealthManager.takeUidSnapshots(int[])](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshots(kotlin.IntArray)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_IDLE_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_IDLE_MS:kotlin.Int) Key for a measurement of number of millseconds the bluetooth controller was idle but turned on on behalf of this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_POWER_MAMS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_POWER_MAMS:kotlin.Int) Key for a measurement of the estimated number of mA\*ms used by this uid for bluetooth, that is to say the number of milliseconds of activity times the mA current during that period. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_RX_BYTES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_RX_BYTES:kotlin.Int) Key for a measurement of number of bytes received for this uid by the bluetooth radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_IDLE_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the bluetooth controller was idle but turned on on behalf of this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_POWER_MAMS](../android/os/health/UidHealthStats.md) Key for a measurement of the estimated number of mA\*ms used by this uid for bluetooth, that is to say the number of milliseconds of activity times the mA current during that period. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_RX_BYTES](../android/os/health/UidHealthStats.md) Key for a measurement of number of bytes received for this uid by the bluetooth radio. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_RX_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_RX_MS:kotlin.Int) Key for a measurement of number of millseconds the bluetooth transmitter was receiving data for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_RX_PACKETS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_RX_PACKETS:kotlin.Int) Key for a measurement of number of packets received for this uid by the bluetooth radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_TX_BYTES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_TX_BYTES:kotlin.Int) Key for a measurement of number of bytes transmitted for this uid by the bluetooth radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_RX_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the bluetooth transmitter was receiving data for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_RX_PACKETS](../android/os/health/UidHealthStats.md) Key for a measurement of number of packets received for this uid by the bluetooth radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_TX_BYTES](../android/os/health/UidHealthStats.md) Key for a measurement of number of bytes transmitted for this uid by the bluetooth radio. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_TX_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_TX_MS:kotlin.Int) Key for a measurement of number of millseconds the bluetooth transmitter was transmitting data for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_TX_PACKETS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BLUETOOTH_TX_PACKETS:kotlin.Int) Key for a measurement of number of packets transmitted for this uid by the bluetooth radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BUTTON_USER_ACTIVITY_COUNT](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_BUTTON_USER_ACTIVITY_COUNT:kotlin.Int) Key for a measurement of number of user activity events due to physical button presses caused by the UID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_TX_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the bluetooth transmitter was transmitting data for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BLUETOOTH_TX_PACKETS](../android/os/health/UidHealthStats.md) Key for a measurement of number of packets transmitted for this uid by the bluetooth radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_BUTTON_USER_ACTIVITY_COUNT](../android/os/health/UidHealthStats.md) Key for a measurement of number of user activity events due to physical button presses caused by the UID. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_CPU_POWER_MAMS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_CPU_POWER_MAMS:kotlin.Int) An estimate of the number of milliamp-microsends used by this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_IDLE_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_IDLE_MS:kotlin.Int) Key for a measurement of number of millseconds the mobile radio controller was idle but turned on on behalf of this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_POWER_MAMS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_POWER_MAMS:kotlin.Int) Key for a measurement of the estimated number of mA\*ms used by this uid for mobile data, that is to say the number of milliseconds of activity times the mA current during that period. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_CPU_POWER_MAMS](../android/os/health/UidHealthStats.md) An estimate of the number of milliamp-microsends used by this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_IDLE_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the mobile radio controller was idle but turned on on behalf of this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_POWER_MAMS](../android/os/health/UidHealthStats.md) Key for a measurement of the estimated number of mA\*ms used by this uid for mobile data, that is to say the number of milliseconds of activity times the mA current during that period. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_RX_BYTES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_RX_BYTES:kotlin.Int) Key for a measurement of number of bytes received for this uid by the mobile radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_RX_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_RX_MS:kotlin.Int) Key for a measurement of number of millseconds the mobile radio transmitter was receiving data for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_RX_PACKETS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_RX_PACKETS:kotlin.Int) Key for a measurement of number of packets received for this uid by the mobile radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_RX_BYTES](../android/os/health/UidHealthStats.md) Key for a measurement of number of bytes received for this uid by the mobile radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_RX_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the mobile radio transmitter was receiving data for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_RX_PACKETS](../android/os/health/UidHealthStats.md) Key for a measurement of number of packets received for this uid by the mobile radio. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_TX_BYTES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_TX_BYTES:kotlin.Int) Key for a measurement of number of bytes transmitted for this uid by the mobile radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_TX_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_TX_MS:kotlin.Int) Key for a measurement of number of millseconds the mobile radio transmitter was transmitting data for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_TX_PACKETS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_MOBILE_TX_PACKETS:kotlin.Int) Key for a measurement of number of packets transmitted for this uid by the mobile radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_TX_BYTES](../android/os/health/UidHealthStats.md) Key for a measurement of number of bytes transmitted for this uid by the mobile radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_TX_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the mobile radio transmitter was transmitting data for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_MOBILE_TX_PACKETS](../android/os/health/UidHealthStats.md) Key for a measurement of number of packets transmitted for this uid by the mobile radio. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_OTHER_USER_ACTIVITY_COUNT](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_OTHER_USER_ACTIVITY_COUNT:kotlin.Int) Key for a measurement of number of software-generated user activity events caused by the UID. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_REALTIME_BATTERY_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_REALTIME_BATTERY_MS:kotlin.Int) How many milliseconds this statistics report covers in wall-clock time while the device was on battery including both screen-on and screen-off time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_REALTIME_SCREEN_OFF_BATTERY_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_REALTIME_SCREEN_OFF_BATTERY_MS:kotlin.Int) How many milliseconds this statistics report covers in wall-clock time while the device was on battery including only screen-off time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_OTHER_USER_ACTIVITY_COUNT](../android/os/health/UidHealthStats.md) Key for a measurement of number of software-generated user activity events caused by the UID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_REALTIME_BATTERY_MS](../android/os/health/UidHealthStats.md) How many milliseconds this statistics report covers in wall-clock time while the device was on battery including both screen-on and screen-off time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_REALTIME_SCREEN_OFF_BATTERY_MS](../android/os/health/UidHealthStats.md) How many milliseconds this statistics report covers in wall-clock time while the device was on battery including only screen-off time. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_SYSTEM_CPU_TIME_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_SYSTEM_CPU_TIME_MS:kotlin.Int) Key for a measurement of the number of milliseconds spent by the CPU running kernel code for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_TOUCH_USER_ACTIVITY_COUNT](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_TOUCH_USER_ACTIVITY_COUNT:kotlin.Int) Key for a measurement of number of user activity events due to touch events caused by the UID. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_UPTIME_BATTERY_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_UPTIME_BATTERY_MS:kotlin.Int) How many milliseconds this statistics report covers that the CPU was running while the device was on battery including both screen-on and screen-off time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_SYSTEM_CPU_TIME_MS](../android/os/health/UidHealthStats.md) Key for a measurement of the number of milliseconds spent by the CPU running kernel code for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_TOUCH_USER_ACTIVITY_COUNT](../android/os/health/UidHealthStats.md) Key for a measurement of number of user activity events due to touch events caused by the UID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_UPTIME_BATTERY_MS](../android/os/health/UidHealthStats.md) How many milliseconds this statistics report covers that the CPU was running while the device was on battery including both screen-on and screen-off time. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_UPTIME_SCREEN_OFF_BATTERY_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_UPTIME_SCREEN_OFF_BATTERY_MS:kotlin.Int) How many milliseconds this statistics report covers that the CPU was running while the device was on battery including only screen-off time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_USER_CPU_TIME_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_USER_CPU_TIME_MS:kotlin.Int) Key for a measurement of the number of milliseconds spent by the CPU running user space code for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_FULL_LOCK_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_FULL_LOCK_MS:kotlin.Int) Key for a measurement of number of millseconds that this uid held a full wifi lock. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_UPTIME_SCREEN_OFF_BATTERY_MS](../android/os/health/UidHealthStats.md) How many milliseconds this statistics report covers that the CPU was running while the device was on battery including only screen-off time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_USER_CPU_TIME_MS](../android/os/health/UidHealthStats.md) Key for a measurement of the number of milliseconds spent by the CPU running user space code for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_FULL_LOCK_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds that this uid held a full wifi lock. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_IDLE_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_IDLE_MS:kotlin.Int) Key for a measurement of number of millseconds the wifi controller was idle but turned on on behalf of this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_MULTICAST_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_MULTICAST_MS:kotlin.Int) Key for a measurement of number of millseconds that this uid was performing multicast wifi traffic. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_POWER_MAMS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_POWER_MAMS:kotlin.Int) Key for a measurement of the estimated number of mA\*ms used by this uid for wifi, that is to say the number of milliseconds of wifi activity times the mA current during that period. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_IDLE_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the wifi controller was idle but turned on on behalf of this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_MULTICAST_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds that this uid was performing multicast wifi traffic. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_POWER_MAMS](../android/os/health/UidHealthStats.md) Key for a measurement of the estimated number of mA\*ms used by this uid for wifi, that is to say the number of milliseconds of wifi activity times the mA current during that period. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RUNNING_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_RUNNING_MS:kotlin.Int) Key for a measurement of number of millseconds the wifi controller was active on behalf of this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RX_BYTES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_RX_BYTES:kotlin.Int) Key for a measurement of number of bytes received for this uid by the wifi radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RX_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_RX_MS:kotlin.Int) Key for a measurement of number of millseconds the wifi transmitter was receiving data for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RUNNING_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the wifi controller was active on behalf of this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RX_BYTES](../android/os/health/UidHealthStats.md) Key for a measurement of number of bytes received for this uid by the wifi radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RX_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the wifi transmitter was receiving data for this uid. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RX_PACKETS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_RX_PACKETS:kotlin.Int) Key for a measurement of number of packets received for this uid by the wifi radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_TX_BYTES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_TX_BYTES:kotlin.Int) Key for a measurement of number of bytes transmitted for this uid by the wifi radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_TX_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_TX_MS:kotlin.Int) Key for a measurement of number of millseconds the wifi transmitter was transmitting data for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_RX_PACKETS](../android/os/health/UidHealthStats.md) Key for a measurement of number of packets received for this uid by the wifi radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_TX_BYTES](../android/os/health/UidHealthStats.md) Key for a measurement of number of bytes transmitted for this uid by the wifi radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_TX_MS](../android/os/health/UidHealthStats.md) Key for a measurement of number of millseconds the wifi transmitter was transmitting data for this uid. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_TX_PACKETS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#MEASUREMENT_WIFI_TX_PACKETS:kotlin.Int) Key for a measurement of number of packets transmitted for this uid by the wifi radio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATS_PACKAGES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#STATS_PACKAGES:kotlin.Int) Key for a HealthStats with [PackageHealthStats](https://developer.android.com/reference/kotlin/android/os/health/PackageHealthStats) keys for each of the APKs that share this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATS_PIDS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#STATS_PIDS:kotlin.Int) Key for a HealthStats with [PidHealthStats](https://developer.android.com/reference/kotlin/android/os/health/PidHealthStats) keys for each of the currently running processes for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_WIFI_TX_PACKETS](../android/os/health/UidHealthStats.md) Key for a measurement of number of packets transmitted for this uid by the wifi radio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATS_PACKAGES](../android/os/health/UidHealthStats.md) Key for a HealthStats with [PackageHealthStats](../android/os/health/PackageHealthStats.md) keys for each of the APKs that share this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATS_PIDS](../android/os/health/UidHealthStats.md) Key for a HealthStats with [PidHealthStats](../android/os/health/PidHealthStats.md) keys for each of the currently running processes for this uid. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATS_PROCESSES](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#STATS_PROCESSES:kotlin.Int) Key for a HealthStats with [ProcessHealthStats](https://developer.android.com/reference/kotlin/android/os/health/ProcessHealthStats) keys for each of the named processes for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_JOBS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMERS_JOBS:kotlin.Int) Key for a map of Timers for the [android.app.job.JobScheduler](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#) jobs for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_SENSORS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMERS_SENSORS:kotlin.Int) Key for a map of the sensor usage for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATS_PROCESSES](../android/os/health/UidHealthStats.md) Key for a HealthStats with [ProcessHealthStats](../android/os/health/ProcessHealthStats.md) keys for each of the named processes for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_JOBS](../android/os/health/UidHealthStats.md) Key for a map of Timers for the [android.app.job.JobScheduler](../android/app/job/JobScheduler.md) jobs for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_SENSORS](../android/os/health/UidHealthStats.md) Key for a map of the sensor usage for this uid. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_SYNCS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMERS_SYNCS:kotlin.Int) Key for a map of Timers for the sync adapter syncs that were done for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_DRAW](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMERS_WAKELOCKS_DRAW:kotlin.Int) Key for a TimerStat for the times a system-defined wakelock was acquired to allow the application to draw when it otherwise would not be able to (e.g. on the lock screen or doze screen). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_FULL](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMERS_WAKELOCKS_FULL:kotlin.Int) Key for a TimerStat for the times a [full wake lock](https://developer.android.com/reference/kotlin/android/os/PowerManager.html#FULL_WAKE_LOCK:kotlin.Int) was acquired for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_SYNCS](../android/os/health/UidHealthStats.md) Key for a map of Timers for the sync adapter syncs that were done for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_DRAW](../android/os/health/UidHealthStats.md) Key for a TimerStat for the times a system-defined wakelock was acquired to allow the application to draw when it otherwise would not be able to (e.g. on the lock screen or doze screen). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_FULL](../android/os/health/UidHealthStats.md) Key for a TimerStat for the times a [full wake lock](../android/os/PowerManager.md) was acquired for this uid. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_PARTIAL](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMERS_WAKELOCKS_PARTIAL:kotlin.Int) Key for a TimerStat for the times a [partial wake lock](https://developer.android.com/reference/kotlin/android/os/PowerManager.html#PARTIAL_WAKE_LOCK:kotlin.Int) was acquired for this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_WINDOW](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMERS_WAKELOCKS_WINDOW:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_AUDIO](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_AUDIO:kotlin.Int) Key for a timer for the count and duration of audio playback done by this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_PARTIAL](../android/os/health/UidHealthStats.md) Key for a TimerStat for the times a [partial wake lock](../android/os/PowerManager.md) was acquired for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMERS_WAKELOCKS_WINDOW](../android/os/health/UidHealthStats.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_AUDIO](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of audio playback done by this uid. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_BLUETOOTH_SCAN](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_BLUETOOTH_SCAN:kotlin.Int) Key for a timer for the count and duration of when this uid was doing bluetooth scans. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_CAMERA](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_CAMERA:kotlin.Int) Key for a timer for the count and duration this uid had the camera turned on. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_FLASHLIGHT](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_FLASHLIGHT:kotlin.Int) Key for a timer for the count and duration this uid had the flashlight turned on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_BLUETOOTH_SCAN](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when this uid was doing bluetooth scans. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_CAMERA](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration this uid had the camera turned on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_FLASHLIGHT](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration this uid had the flashlight turned on. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_FOREGROUND_ACTIVITY](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_FOREGROUND_ACTIVITY:kotlin.Int) Key for a timer for the count and duration of when an activity from this uid was the foreground activitiy. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_GPS_SENSOR](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_GPS_SENSOR:kotlin.Int) Key for a timer for the applications use of the GPS sensor. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_MOBILE_RADIO_ACTIVE](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_MOBILE_RADIO_ACTIVE:kotlin.Int) Key for a timer for the count and duration the mobile radio was turned on for this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_FOREGROUND_ACTIVITY](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when an activity from this uid was the foreground activitiy. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_GPS_SENSOR](../android/os/health/UidHealthStats.md) Key for a timer for the applications use of the GPS sensor. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_MOBILE_RADIO_ACTIVE](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration the mobile radio was turned on for this uid. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_BACKGROUND_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_PROCESS_STATE_BACKGROUND_MS:kotlin.Int) Key for a timer for the count and duration of when this uid was in the "background" process state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_CACHED_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_PROCESS_STATE_CACHED_MS:kotlin.Int) Key for a timer for the count and duration of when this uid was in the "cached" process state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_FOREGROUND_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_PROCESS_STATE_FOREGROUND_MS:kotlin.Int) Key for a timer for the count and duration of when this uid was in the "foreground" process state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_BACKGROUND_MS](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when this uid was in the "background" process state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_CACHED_MS](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when this uid was in the "cached" process state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_FOREGROUND_MS](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when this uid was in the "foreground" process state. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_FOREGROUND_SERVICE_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_PROCESS_STATE_FOREGROUND_SERVICE_MS:kotlin.Int) Key for a timer for the count and duration of when this uid was in the "foreground service" process state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_TOP_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_PROCESS_STATE_TOP_MS:kotlin.Int) Key for a timer for the count and duration of when this uid was in the "top" process state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_TOP_SLEEPING_MS](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_PROCESS_STATE_TOP_SLEEPING_MS:kotlin.Int) Key for a timer for the count and duration of when this uid was in the "top sleeping" process state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_FOREGROUND_SERVICE_MS](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when this uid was in the "foreground service" process state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_TOP_MS](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when this uid was in the "top" process state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_PROCESS_STATE_TOP_SLEEPING_MS](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of when this uid was in the "top sleeping" process state. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_VIBRATOR](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_VIBRATOR:kotlin.Int) Key for a timer for the count and duration this uid had the vibrator turned on. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_VIDEO](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_VIDEO:kotlin.Int) Key for a timer for the count and duration of video playback done by this uid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_WIFI_SCAN](https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats#TIMER_WIFI_SCAN:kotlin.Int) Key for a timer for the count and duration of wifi scans done by this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_VIBRATOR](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration this uid had the vibrator turned on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_VIDEO](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of video playback done by this uid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMER_WIFI_SCAN](../android/os/health/UidHealthStats.md) Key for a timer for the count and duration of wifi scans done by this uid. |
 | --- | --- |
 
 ## Constants
@@ -563,7 +563,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val STATS_PACKAGES: Int
 ```
 
-Key for a HealthStats with [PackageHealthStats](https://developer.android.com/reference/kotlin/android/os/health/PackageHealthStats) keys for each of the APKs that share this uid. 
+Key for a HealthStats with [PackageHealthStats](../android/os/health/PackageHealthStats.md) keys for each of the APKs that share this uid. 
 
  Value: 10015
 
@@ -575,7 +575,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val STATS_PIDS: Int
 ```
 
-Key for a HealthStats with [PidHealthStats](https://developer.android.com/reference/kotlin/android/os/health/PidHealthStats) keys for each of the currently running processes for this uid. 
+Key for a HealthStats with [PidHealthStats](../android/os/health/PidHealthStats.md) keys for each of the currently running processes for this uid. 
 
  Value: 10013
 
@@ -587,7 +587,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val STATS_PROCESSES: Int
 ```
 
-Key for a HealthStats with [ProcessHealthStats](https://developer.android.com/reference/kotlin/android/os/health/ProcessHealthStats) keys for each of the named processes for this uid. 
+Key for a HealthStats with [ProcessHealthStats](../android/os/health/ProcessHealthStats.md) keys for each of the named processes for this uid. 
 
  Value: 10014
 
@@ -599,7 +599,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val TIMERS_JOBS: Int
 ```
 
-Key for a map of Timers for the [android.app.job.JobScheduler](https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#) jobs for this uid. 
+Key for a map of Timers for the [android.app.job.JobScheduler](../android/app/job/JobScheduler.md) jobs for this uid. 
 
  Value: 10010
 
@@ -647,7 +647,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val TIMERS_WAKELOCKS_FULL: Int
 ```
 
-Key for a TimerStat for the times a [full wake lock](https://developer.android.com/reference/kotlin/android/os/PowerManager.html#FULL_WAKE_LOCK:kotlin.Int) was acquired for this uid. 
+Key for a TimerStat for the times a [full wake lock](../android/os/PowerManager.md) was acquired for this uid. 
 
  Value: 10005
 
@@ -659,7 +659,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val TIMERS_WAKELOCKS_PARTIAL: Int
 ```
 
-Key for a TimerStat for the times a [partial wake lock](https://developer.android.com/reference/kotlin/android/os/PowerManager.html#PARTIAL_WAKE_LOCK:kotlin.Int) was acquired for this uid. 
+Key for a TimerStat for the times a [partial wake lock](../android/os/PowerManager.md) was acquired for this uid. 
 
  Value: 10006
 

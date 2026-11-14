@@ -8,7 +8,7 @@ open class ActivityOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) |
+| ↳ | [android.app.ActivityOptions](../android/app/ActivityOptions.md) |
 
 Helper class for building an options Bundle that can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` and related methods.
 
@@ -32,8 +32,8 @@ Helper class for building an options Bundle that can be used with `https://devel
 
 | Public methods ||
 |---|---|
-| open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)? | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchBounds()()` Returns the bounds that should be used to launch the activity. |
-| open [ActivityOptions.LaunchCookie](https://developer.android.com/reference/kotlin/android/app/ActivityOptions.LaunchCookie)? | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchCookie()()` Gets the launch cookie associated with these options, if set. |
+| open [Rect](../android/graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchBounds()()` Returns the bounds that should be used to launch the activity. |
+| open [ActivityOptions.LaunchCookie](../android/app/ActivityOptions.LaunchCookie.md)? | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchCookie()()` Gets the launch cookie associated with these options, if set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchDisplayId()()` Gets the id of the display where activity should be launched. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLockTaskMode()()` Gets whether the activity is to be launched into LockTask mode. |
@@ -46,38 +46,38 @@ Helper class for building an options Bundle that can be used with `https://devel
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#isPendingIntentBackgroundActivityLaunchAllowed()()` Get PendingIntent activity is allowed to be started in the background if the caller can start background activities. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#isShareIdentityEnabled()()` Returns whether the launching app has opted-in to sharing its identity with the launched activity. |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeBasic()()` Create a basic ActivityOptions that has no special animation associated with it. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeBasic()()` Create a basic ActivityOptions that has no special animation associated with it. |
 | --- | --- |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeClipRevealAnimation(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where the new activity is revealed from a small originating area of the screen to its final full representation. |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeCustomAnimation(android.content.Context,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, enterResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exitResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeCustomAnimation(android.content.Context,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, enterResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exitResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backgroundColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeClipRevealAnimation(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where the new activity is revealed from a small originating area of the screen to its final full representation. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeCustomAnimation(android.content.Context,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, enterResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exitResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeCustomAnimation(android.content.Context,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, enterResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exitResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backgroundColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
 | --- | --- |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeLaunchIntoPip(android.app.PictureInPictureParams)(pictureInPictureParams: https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams)` Creates an `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance that launch into picture-in-picture. |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeScaleUpAnimation(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where the new activity is scaled from a small originating area of the screen to its final full representation. |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeSceneTransitionAnimation(android.app.Activity,%20android.util.Pair)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, vararg sharedElements: https://developer.android.com/reference/kotlin/android/util/Pair.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeLaunchIntoPip(android.app.PictureInPictureParams)(pictureInPictureParams: https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams)` Creates an `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance that launch into picture-in-picture. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeScaleUpAnimation(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where the new activity is scaled from a small originating area of the screen to its final full representation. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeSceneTransitionAnimation(android.app.Activity,%20android.util.Pair)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, vararg sharedElements: https://developer.android.com/reference/kotlin/android/util/Pair.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
 | --- | --- |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeSceneTransitionAnimation(android.app.Activity,%20android.view.View,%20kotlin.String)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, sharedElement: https://developer.android.com/reference/kotlin/android/view/View.html#!, sharedElementName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeTaskLaunchBehind()()` If set along with Intent. |
-| open static [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeThumbnailScaleUpAnimation(android.view.View,%20android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, thumbnail: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where a thumbnail is scaled from a given position to the new activity window that is being started. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeSceneTransitionAnimation(android.app.Activity,%20android.view.View,%20kotlin.String)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, sharedElement: https://developer.android.com/reference/kotlin/android/view/View.html#!, sharedElementName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeTaskLaunchBehind()()` If set along with Intent. |
+| open static [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeThumbnailScaleUpAnimation(android.view.View,%20android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, thumbnail: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where a thumbnail is scaled from a given position to the new activity window that is being started. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#requestUsageTimeReport(android.app.PendingIntent)(receiver: https://developer.android.com/reference/kotlin/android/app/PendingIntent!)` Ask the system track that time the user spends in the app being launched, and report it back once done. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setAllowPassThroughOnTouchOutside(kotlin.Boolean)(allowed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the source activity allows the overlaying activities from the to-be-launched app to pass through touch events to it when touches fall outside the content window. |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setAppVerificationBundle(android.os.Bundle)(bundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Set the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` that is provided to the app installer for additional verification if the call to android. |
+| open [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setAppVerificationBundle(android.os.Bundle)(bundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Set the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` that is provided to the app installer for additional verification if the call to android. |
 | --- | --- |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchBounds(android.graphics.Rect)(screenSpacePixelRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Sets the bounds (window size and position) that the activity should be launched in. |
+| open [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchBounds(android.graphics.Rect)(screenSpacePixelRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Sets the bounds (window size and position) that the activity should be launched in. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchCookie(android.app.ActivityOptions.LaunchCookie)(launchCookie: https://developer.android.com/reference/kotlin/android/app/ActivityOptions.LaunchCookie?)` Sets a launch cookie to track the `https://developer.android.com/reference/kotlin/android/app/Activity` and task launched as a result of these options. |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchDisplayId(kotlin.Int)(launchDisplayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the id of the display where the activity should be launched. |
+| open [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchDisplayId(kotlin.Int)(launchDisplayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the id of the display where the activity should be launched. |
 | --- | --- |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLockTaskEnabled(kotlin.Boolean)(lockTaskMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the activity is to be launched into LockTask mode. |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setMovableTaskRequired(kotlin.Boolean)(movableTaskRequired: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether a task in which the activity will be launched is required to be movable right after launch using the `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveTaskTo(android.app.TaskLocation,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method. |
+| open [ActivityOptions](../android/app/ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLockTaskEnabled(kotlin.Boolean)(lockTaskMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the activity is to be launched into LockTask mode. |
+| open [ActivityOptions](../android/app/ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setMovableTaskRequired(kotlin.Boolean)(movableTaskRequired: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether a task in which the activity will be launched is required to be movable right after launch using the `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveTaskTo(android.app.TaskLocation,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentBackgroundActivityLaunchAllowed(kotlin.Boolean)(allowed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set PendingIntent activity is allowed to be started in the background if the caller can start background activities. |
 | --- | --- |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentBackgroundActivityStartMode(kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentCreatorBackgroundActivityStartMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allow a `https://developer.android.com/reference/kotlin/android/app/PendingIntent` to use the privilege of its creator to start background activities. |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setShareIdentityEnabled(kotlin.Boolean)(shareIdentity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the identity of the launching app should be shared with the activity. |
+| open [ActivityOptions](../android/app/ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentBackgroundActivityStartMode(kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. |
+| open [ActivityOptions](../android/app/ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentCreatorBackgroundActivityStartMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allow a `https://developer.android.com/reference/kotlin/android/app/PendingIntent` to use the privilege of its creator to start background activities. |
+| open [ActivityOptions](../android/app/ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setShareIdentityEnabled(kotlin.Boolean)(shareIdentity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the identity of the launching app should be shared with the activity. |
 | --- | --- |
-| open [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions#) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setSplashScreenStyle(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the preferred splash screen style of the opening activities. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#toBundle()()` Returns the created options as a Bundle, which can be passed to `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` and related methods. |
+| open [ActivityOptions](../android/app/ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setSplashScreenStyle(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the preferred splash screen style of the opening activities. |
+| open [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#toBundle()()` Returns the created options as a Bundle, which can be passed to `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` and related methods. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#toString()()` Returns a string representation of the object. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#update(android.app.ActivityOptions)(otherOptions: https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!)` Update the current values in this ActivityOptions from those supplied in otherOptions. |
@@ -385,7 +385,7 @@ Create an ActivityOptions specifying an animation where the new activity is reve
 
 | Parameters ||
 |---|---|
-| `source` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The View that the new activity is animating from. This defines the coordinate space for startX and startY. |
+| `source` | [View](../android/view/View.md)!: The View that the new activity is animating from. This defines the coordinate space for startX and startY. |
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x starting location of the new activity, relative to source. |
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y starting location of the activity, relative to source. |
 | --- | --- |
@@ -412,7 +412,7 @@ Create an ActivityOptions specifying a custom animation to run when the activity
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Who is defining this. This is the application that the animation resources will be loaded from. |
+| `context` | [Context](../android/content/Context.md)!: Who is defining this. This is the application that the animation resources will be loaded from. |
 | `enterResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource ID of the animation resource to use for the incoming activity. Use 0 for no animation. |
 | `exitResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource ID of the animation resource to use for the outgoing activity. Use 0 for no animation. |
 | --- | --- |
@@ -438,7 +438,7 @@ Create an ActivityOptions specifying a custom animation to run when the activity
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): Who is defining this. This is the application that the animation resources will be loaded from. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): Who is defining this. This is the application that the animation resources will be loaded from. This value cannot be `null`. |
 | `enterResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource ID of the animation resource to use for the incoming activity. Use 0 for no animation. |
 | `exitResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource ID of the animation resource to use for the outgoing activity. Use 0 for no animation. |
 | --- | --- |
@@ -460,7 +460,7 @@ Creates an `https://developer.android.com/reference/kotlin/android/app/ActivityO
 
 | Parameters ||
 |---|---|
-| `pictureInPictureParams` | [PictureInPictureParams](https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams): `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams` for launching the Activity to picture-in-picture mode. This value cannot be `null`. |
+| `pictureInPictureParams` | [PictureInPictureParams](../android/app/PictureInPictureParams.md): `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams` for launching the Activity to picture-in-picture mode. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -486,7 +486,7 @@ If the Intent this is being used with has not set its `https://developer.android
 
 | Parameters ||
 |---|---|
-| `source` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The View that the new activity is animating from. This defines the coordinate space for startX and startY. |
+| `source` | [View](../android/view/View.md)!: The View that the new activity is animating from. This defines the coordinate space for startX and startY. |
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x starting location of the new activity, relative to source. |
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y starting location of the activity, relative to source. |
 | --- | --- |
@@ -514,8 +514,8 @@ This requires `https://developer.android.com/reference/kotlin/android/view/Windo
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)!: The Activity whose window contains the shared elements. |
-| `sharedElements` | [Pair](https://developer.android.com/reference/kotlin/android/util/Pair.html#)\< [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: The names of the shared elements to transfer to the called Activity and their associated Views. The Views must each have a unique shared element name. |
+| `activity` | [Activity](../android/app/Activity.md)!: The Activity whose window contains the shared elements. |
+| `sharedElements` | [Pair](../android/util/Pair.md)\< [View](../android/view/View.md)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: The names of the shared elements to transfer to the called Activity and their associated Views. The Views must each have a unique shared element name. |
 
 | Return ||
 |---|---|
@@ -543,8 +543,8 @@ This requires `https://developer.android.com/reference/kotlin/android/view/Windo
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)!: The Activity whose window contains the shared elements. |
-| `sharedElement` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The View to transition to the started Activity. |
+| `activity` | [Activity](../android/app/Activity.md)!: The Activity whose window contains the shared elements. |
+| `sharedElement` | [View](../android/view/View.md)!: The View to transition to the started Activity. |
 | `sharedElementName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The shared element name as used in the target Activity. This must not be null. |
 | --- | --- |
 
@@ -590,8 +590,8 @@ If the Intent this is being used with has not set its `https://developer.android
 
 | Parameters ||
 |---|---|
-| `source` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The View that this thumbnail is animating from. This defines the coordinate space for startX and startY. |
-| `thumbnail` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: The bitmap that will be shown as the initial thumbnail of the animation. |
+| `source` | [View](../android/view/View.md)!: The View that this thumbnail is animating from. This defines the coordinate space for startX and startY. |
+| `thumbnail` | [Bitmap](../android/graphics/Bitmap.md)!: The bitmap that will be shown as the initial thumbnail of the animation. |
 | `startX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The x starting location of the bitmap, relative to source. |
 | --- | --- |
 | `startY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The y starting location of the bitmap, relative to source. |
@@ -616,7 +616,7 @@ The user is considered to complete a flow once they switch to another activity t
 
 | Parameters ||
 |---|---|
-| `receiver` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent)!: A broadcast receiver that willl receive the report. |
+| `receiver` | [PendingIntent](../android/app/PendingIntent.md)!: A broadcast receiver that willl receive the report. |
 
 ### setAllowPassThroughOnTouchOutside
 
@@ -658,7 +658,7 @@ Sets the bounds (window size and position) that the activity should be launched 
 
 | Parameters ||
 |---|---|
-| `screenSpacePixelRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: launch bounds. This value may be `null`. |
+| `screenSpacePixelRect` | [Rect](../android/graphics/Rect.md)?: launch bounds. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -678,7 +678,7 @@ If the launched activity is a trampoline that starts another activity immediatel
 
 | Parameters ||
 |---|---|
-| `launchCookie` | [ActivityOptions.LaunchCookie](https://developer.android.com/reference/kotlin/android/app/ActivityOptions.LaunchCookie)?: the unique cookie to associate with this launch, or `null` to clear |
+| `launchCookie` | [ActivityOptions.LaunchCookie](../android/app/ActivityOptions.LaunchCookie.md)?: the unique cookie to associate with this launch, or `null` to clear |
 
 ### setLaunchDisplayId
 

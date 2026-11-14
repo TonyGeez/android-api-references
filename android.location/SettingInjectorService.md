@@ -8,11 +8,11 @@ abstract class SettingInjectorService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.location.SettingInjectorService](https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#) |
+| | | | ↳ | [android.location.SettingInjectorService](../android/location/SettingInjectorService.md) |
 
 Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app
 
@@ -515,7 +515,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1091,7 +1091,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#onStart(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, startId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/SettingInjectorService#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by the system every time a client explicitly starts the service by calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, providing the arguments it supplied and a unique integer token representing the start request. |
 | --- | --- |
@@ -2552,7 +2552,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2593,9 +2593,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2861,7 +2861,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2898,7 +2898,7 @@ Note that the system calls this on your service's main thread. A service's main 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent supplied to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, as given. This may be null if the service is being restarted after its process has gone away, and it had previously returned anything except `https://developer.android.com/reference/kotlin/android/app/Service.html#START_STICKY_COMPATIBILITY:kotlin.Int`. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent supplied to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, as given. This may be null if the service is being restarted after its process has gone away, and it had previously returned anything except `https://developer.android.com/reference/kotlin/android/app/Service.html#START_STICKY_COMPATIBILITY:kotlin.Int`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional data about this start request. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/Service.html#START_FLAG_REDELIVERY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/Service.html#START_FLAG_RETRY:kotlin.Int` |
 | `startId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A unique integer representing this specific request to start. Use with `https://developer.android.com/reference/kotlin/android/app/Service.html#stopSelfResult(kotlin.Int)`. |
 | --- | --- |
@@ -2919,7 +2919,7 @@ Sends a broadcast to refresh the injected settings on location settings page.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 ## Protected methods
 

@@ -11,10 +11,10 @@ open class MalformedURLException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.MalformedURLException](https://developer.android.com/reference/kotlin/java/net/MalformedURLException#) |
+| | | | ↳ | [java.net.MalformedURLException](../java/net/MalformedURLException.md) |
 
 Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed.
 
@@ -22,8 +22,8 @@ Thrown to indicate that a malformed URL has occurred. Either no legal protocol c
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MalformedURLException](https://developer.android.com/reference/kotlin/java/net/MalformedURLException#MalformedURLException())`()` Constructs a`MalformedURLException`with no detail message. |
-| [MalformedURLException](https://developer.android.com/reference/kotlin/java/net/MalformedURLException#MalformedURLException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`MalformedURLException`with the specified detail message. |
+| [MalformedURLException](../java/net/MalformedURLException.md))`()` Constructs a`MalformedURLException`with no detail message. |
+| [MalformedURLException](../java/net/MalformedURLException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`MalformedURLException`with the specified detail message. |
 
 ## Public constructors
 

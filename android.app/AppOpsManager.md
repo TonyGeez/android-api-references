@@ -8,7 +8,7 @@ open class AppOpsManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.AppOpsManager](https://developer.android.com/reference/kotlin/android/app/AppOpsManager#) |
+| ↳ | [android.app.AppOpsManager](../android/app/AppOpsManager.md) |
 
 App-ops are used for two purposes: Access control and tracking.
 
@@ -1197,8 +1197,8 @@ Note that if an app has multiple processes registering for this callback, the sy
 
 | Parameters ||
 |---|---|
-| `asyncExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: executor to execute `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [AppOpsManager.OnOpNotedCallback](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback)?: listener to set, `null` to unset |
+| `asyncExecutor` | [Executor](../java/util/concurrent/Executor.md)?: executor to execute `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [AppOpsManager.OnOpNotedCallback](../android/app/AppOpsManager.OnOpNotedCallback.md)?: listener to set, `null` to unset |
 
 | Exceptions ||
 |---|---|
@@ -1229,8 +1229,8 @@ This API allows the caller to listen only to sync and self op noted events, and 
 
 | Parameters ||
 |---|---|
-| `asyncExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: executor to execute `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [AppOpsManager.OnOpNotedCallback](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback)?: listener to set, `null` to unset |
+| `asyncExecutor` | [Executor](../java/util/concurrent/Executor.md)?: executor to execute `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [AppOpsManager.OnOpNotedCallback](../android/app/AppOpsManager.OnOpNotedCallback.md)?: listener to set, `null` to unset |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): additional flags to modify the callback behavior, such as `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` Value is either `0` or - `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` |
 | --- | --- |
 
@@ -1421,8 +1421,8 @@ If you don't hold the `android.Manifest.permission#WATCH_APPOPS` permission you 
 | Parameters ||
 |---|---|
 | `ops` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: The operations to watch. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
-| `callback` | [AppOpsManager.OnOpActiveChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener): Where to report changes. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `callback` | [AppOpsManager.OnOpActiveChangedListener](../android/app/AppOpsManager.OnOpActiveChangedListener.md): Where to report changes. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
@@ -1447,7 +1447,7 @@ Monitor for changes to the operating mode for the given op in the given app pack
 |---|---|
 | `op` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The operation to monitor, one of OPSTR_\*. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application to monitor. This value may be `null`. |
-| `callback` | [AppOpsManager.OnOpChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener): Where to report changes. This value cannot be `null`. |
+| `callback` | [AppOpsManager.OnOpChangedListener](../android/app/AppOpsManager.OnOpChangedListener.md): Where to report changes. This value cannot be `null`. |
 | --- | --- |
 
 ### startWatchingMode
@@ -1471,7 +1471,7 @@ Monitor for changes to the operating mode for the given op in the given app pack
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application to monitor. This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Option flags: any combination of `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#WATCH_FOREGROUND_CHANGES:kotlin.Int` or 0. |
 | --- | --- |
-| `callback` | [AppOpsManager.OnOpChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener): Where to report changes. This value cannot be `null`. |
+| `callback` | [AppOpsManager.OnOpChangedListener](../android/app/AppOpsManager.OnOpChangedListener.md): Where to report changes. This value cannot be `null`. |
 
 ### stopWatchingActive
 
@@ -1485,7 +1485,7 @@ Stop watching for changes to the active state of an app-op. An app-op may be lon
 
 | Parameters ||
 |---|---|
-| `callback` | [AppOpsManager.OnOpActiveChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener): This value cannot be `null`. |
+| `callback` | [AppOpsManager.OnOpActiveChangedListener](../android/app/AppOpsManager.OnOpActiveChangedListener.md): This value cannot be `null`. |
 
 **See Also**
 
@@ -1503,7 +1503,7 @@ Stop monitoring that was previously started with #startWatchingMode. All monitor
 
 | Parameters ||
 |---|---|
-| `callback` | [AppOpsManager.OnOpChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener): This value cannot be `null`. |
+| `callback` | [AppOpsManager.OnOpChangedListener](../android/app/AppOpsManager.OnOpChangedListener.md): This value cannot be `null`. |
 
 ### unsafeCheckOp
 

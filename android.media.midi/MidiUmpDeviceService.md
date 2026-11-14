@@ -8,11 +8,11 @@ abstract class MidiUmpDeviceService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.midi.MidiUmpDeviceService](https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#) |
+| | | | ↳ | [android.media.midi.MidiUmpDeviceService](../android/media/midi/MidiUmpDeviceService.md) |
 
 A service that implements a virtual MIDI device for Universal MIDI Packets (UMP). Subclasses must implement the `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onGetInputPortReceivers()` method to provide a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver`s to receive data sent to the device's input ports. Similarly, subclasses can call `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getOutputPortReceivers()` to fetch a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver`s for sending data out the output ports. Unlike traditional MIDI byte streams, only complete UMPs should be sent. Unlike with `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceService`, the number of input and output ports must be equal.
 
@@ -482,7 +482,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1058,15 +1058,15 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)? | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getDeviceInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` instance for this service |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!\> | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getOutputPortReceivers()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver` for the device's output ports. |
-| open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)? | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getDeviceInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` instance for this service |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MidiReceiver](../android/media/midi/MidiReceiver.md)!\> | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#getOutputPortReceivers()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver` for the device's output ports. |
+| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onClose()()` Called to notify when the virtual MIDI device running in this service has been closed by all its clients |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onDeviceStatusChanged(android.media.midi.MidiDeviceStatus)(status: https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceStatus)` Called to notify when the `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceStatus` has changed |
 | --- | --- |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MidiReceiver](https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver)!\> | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onGetInputPortReceivers()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver` for the device's input ports. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MidiReceiver](../android/media/midi/MidiReceiver.md)!\> | `https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService#onGetInputPortReceivers()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver` for the device's input ports. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2526,7 +2526,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2567,9 +2567,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2817,7 +2817,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2855,7 +2855,7 @@ Called to notify when the `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `status` | [MidiDeviceStatus](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceStatus): the current status of the MIDI device. This value cannot be `null`. |
+| `status` | [MidiDeviceStatus](../android/media/midi/MidiDeviceStatus.md): the current status of the MIDI device. This value cannot be `null`. |
 
 ### onGetInputPortReceivers
 

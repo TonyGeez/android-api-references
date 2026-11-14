@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface DoubleBinaryOperator
 ```
 
-| [java.util.function.DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator#) |
+| [java.util.function.DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md) |
 
-Represents an operation upon two`double`-valued operands and producing a`double`-valued result. This is the primitive type specialization of [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator) for`double`.
+Represents an operation upon two`double`-valued operands and producing a`double`-valued result. This is the primitive type specialization of [BinaryOperator](../java/util/function/BinaryOperator.md) for`double`.
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [applyAsDouble(double,double)](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator#applyAsDouble(kotlin.Double,%20kotlin.Double)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsDouble(double,double)](../java/util/function/DoubleBinaryOperator.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator#applyAsDouble(kotlin.Double,%20kotlin.Double))`(`left:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `right:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Applies this operator to the given operands. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](../java/util/function/DoubleBinaryOperator.md))`(`left:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `right:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Applies this operator to the given operands. |
 
 ## Public methods
 

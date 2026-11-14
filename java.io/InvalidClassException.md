@@ -11,11 +11,11 @@ open class InvalidClassException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](https://developer.android.com/reference/kotlin/java/io/ObjectStreamException) ||
-| | | | | ↳ | [java.io.InvalidClassException](https://developer.android.com/reference/kotlin/java/io/InvalidClassException#) |
+| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.InvalidClassException](../java/io/InvalidClassException.md) |
 
 Thrown when the Serialization runtime detects one of the following problems with a Class.
 
@@ -31,13 +31,13 @@ Thrown when the Serialization runtime detects one of the following problems with
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidClassException](https://developer.android.com/reference/kotlin/java/io/InvalidClassException#InvalidClassException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an InvalidClassException for the reason specified. |
-| [InvalidClassException](https://developer.android.com/reference/kotlin/java/io/InvalidClassException#InvalidClassException(kotlin.String,%20kotlin.String))`(`cname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidClassException object. |
+| [InvalidClassException](../java/io/InvalidClassException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an InvalidClassException for the reason specified. |
+| [InvalidClassException](../java/io/InvalidClassException.md))`(`cname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidClassException object. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [classname](https://developer.android.com/reference/kotlin/java/io/InvalidClassException#classname:kotlin.String) Name of the invalid class. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/io/InvalidClassException#message:kotlin.String) Produce the message and include the classname, if present. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [classname](../java/io/InvalidClassException.md) Name of the invalid class. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/io/InvalidClassException.md) Produce the message and include the classname, if present. |
 
 ## Public constructors
 

@@ -10,15 +10,15 @@ open class LockSupport
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.locks.LockSupport](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#) |
+| ↳ | [java.util.concurrent.locks.LockSupport](../java/util/concurrent/locks/LockSupport.md) |
 
 Basic thread blocking primitives for creating locks and other synchronization classes.
 
-This class associates, with each thread that uses it, a permit (in the sense of the [Semaphore](https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore.html#) class). A call to`park`will return immediately if the permit is available, consuming it in the process; otherwise it*may* block. A call to`unpark`makes the permit available, if it was not already available. (Unlike with Semaphores though, permits do not accumulate. There is at most one.) Reliable usage requires the use of volatile (or atomic) variables to control when to park or unpark. Orderings of calls to these methods are maintained with respect to volatile variable accesses, but not necessarily non-volatile variable accesses.
+This class associates, with each thread that uses it, a permit (in the sense of the [Semaphore](../java/util/concurrent/Semaphore.md) class). A call to`park`will return immediately if the permit is available, consuming it in the process; otherwise it*may* block. A call to`unpark`makes the permit available, if it was not already available. (Unlike with Semaphores though, permits do not accumulate. There is at most one.) Reliable usage requires the use of volatile (or atomic) variables to control when to park or unpark. Orderings of calls to these methods are maintained with respect to volatile variable accesses, but not necessarily non-volatile variable accesses.
 
 Methods`park`and`unpark`provide efficient means of blocking and unblocking threads that do not encounter the problems that cause the deprecated methods`Thread.suspend`and`Thread.resume`to be unusable for such purposes: Races between one thread invoking`park`and another thread trying to`unpark`it will preserve liveness, due to the permit. Additionally,`park`will return if the caller's thread was interrupted, and timeout versions are supported. The`park`method may also return at any other time, for "no reason", so in general must be invoked within a loop that rechecks conditions upon return. In this sense`park`serves as an optimization of a "busy wait" that does not waste as much time spinning, but must be paired with an`unpark`to be effective.
 
-The three forms of`park`each also support a`blocker`object parameter. This object is recorded while the thread is blocked to permit monitoring and diagnostic tools to identify the reasons that threads are blocked. (Such tools may access blockers using method [getBlocker(java.lang.Thread)](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#getBlocker(java.lang.Thread)).) The use of these forms rather than the original forms without this parameter is strongly encouraged. The normal argument to supply as a`blocker`within a lock implementation is`this`.
+The three forms of`park`each also support a`blocker`object parameter. This object is recorded while the thread is blocked to permit monitoring and diagnostic tools to identify the reasons that threads are blocked. (Such tools may access blockers using method [getBlocker(java.lang.Thread)](../java/util/concurrent/locks/LockSupport.md)).) The use of these forms rather than the original forms without this parameter is strongly encouraged. The normal argument to supply as a`blocker`within a lock implementation is`this`.
 
 These methods are designed to be used as tools for creating higher-level synchronization utilities, and are not in themselves useful for most concurrency control applications. The`park`method is designed for use only in constructions of the form: 
 
@@ -75,17 +75,17 @@ where no actions by the thread publishing a request to unpark, prior to the call
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#getBlocker(java.lang.Thread))`(`t:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!`)` Returns the blocker object supplied to the most recent invocation of a park method that has not yet unblocked, or null if not blocked. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [park](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#park())`()` Disables the current thread for thread scheduling purposes unless the permit is available. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [park](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#park(kotlin.Any))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Disables the current thread for thread scheduling purposes unless the permit is available. |
+| openstatic [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getBlocker](../java/util/concurrent/locks/LockSupport.md))`(`t:` ` [Thread](../java/lang/Thread.md)!`)` Returns the blocker object supplied to the most recent invocation of a park method that has not yet unblocked, or null if not blocked. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [park](../java/util/concurrent/locks/LockSupport.md))`()` Disables the current thread for thread scheduling purposes unless the permit is available. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [park](../java/util/concurrent/locks/LockSupport.md))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Disables the current thread for thread scheduling purposes unless the permit is available. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkNanos](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkNanos(kotlin.Any,%20kotlin.Long))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, for up to the specified waiting time, unless the permit is available. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkNanos](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkNanos(kotlin.Long))`(`nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, for up to the specified waiting time, unless the permit is available. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkUntil](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkUntil(kotlin.Any,%20kotlin.Long))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `deadline:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, until the specified deadline, unless the permit is available. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkNanos](../java/util/concurrent/locks/LockSupport.md))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, for up to the specified waiting time, unless the permit is available. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkNanos](../java/util/concurrent/locks/LockSupport.md))`(`nanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, for up to the specified waiting time, unless the permit is available. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkUntil](../java/util/concurrent/locks/LockSupport.md))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `deadline:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, until the specified deadline, unless the permit is available. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkUntil](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#parkUntil(kotlin.Long))`(`deadline:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, until the specified deadline, unless the permit is available. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#setCurrentBlocker(kotlin.Any))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the object to be returned by invocations of [getBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#getBlocker(java.lang.Thread))for the current thread. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))`(`thread:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!`)` Makes available the permit for the given thread, if it was not already available. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parkUntil](../java/util/concurrent/locks/LockSupport.md))`(`deadline:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Disables the current thread for thread scheduling purposes, until the specified deadline, unless the permit is available. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentBlocker](../java/util/concurrent/locks/LockSupport.md))`(`blocker:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the object to be returned by invocations of [getBlocker](../java/util/concurrent/locks/LockSupport.md))for the current thread. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unpark](../java/util/concurrent/locks/LockSupport.md))`(`thread:` ` [Thread](../java/lang/Thread.md)!`)` Makes available the permit for the given thread, if it was not already available. |
 | --- | --- |
 
 ## Public methods
@@ -102,7 +102,7 @@ Returns the blocker object supplied to the most recent invocation of a park meth
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------|
-| `t` | [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!:the thread |
+| `t` | [Thread](../java/lang/Thread.md)!:the thread |
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------|
@@ -124,8 +124,8 @@ Disables the current thread for thread scheduling purposes unless the permit is 
 
 If the permit is available then it is consumed and the call returns immediately; otherwise the current thread becomes disabled for thread scheduling purposes and lies dormant until one of three things happens:
 
-- Some other thread invokes [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))with the current thread as the target; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread; or
+- Some other thread invokes [unpark](../java/util/concurrent/locks/LockSupport.md))with the current thread as the target; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread; or
 - The call spuriously (that is, for no reason) returns.
 
 This method does*not*report which of these caused the method to return. Callers should re-check the conditions which caused the thread to park in the first place. Callers may also determine, for example, the interrupt status of the thread upon return. 
@@ -142,8 +142,8 @@ Disables the current thread for thread scheduling purposes unless the permit is 
 
 If the permit is available then it is consumed and the call returns immediately; otherwise the current thread becomes disabled for thread scheduling purposes and lies dormant until one of three things happens:
 
-- Some other thread invokes [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))with the current thread as the target; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread; or
+- Some other thread invokes [unpark](../java/util/concurrent/locks/LockSupport.md))with the current thread as the target; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread; or
 - The call spuriously (that is, for no reason) returns.
 
 This method does*not*report which of these caused the method to return. Callers should re-check the conditions which caused the thread to park in the first place. Callers may also determine, for example, the interrupt status of the thread upon return.
@@ -167,8 +167,8 @@ Disables the current thread for thread scheduling purposes, for up to the specif
 
 If the specified waiting time is zero or negative, the method does nothing. Otherwise, if the permit is available then it is consumed and the call returns immediately; otherwise the current thread becomes disabled for thread scheduling purposes and lies dormant until one of four things happens:
 
-- Some other thread invokes [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))with the current thread as the target; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread; or
+- Some other thread invokes [unpark](../java/util/concurrent/locks/LockSupport.md))with the current thread as the target; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread; or
 - The specified waiting time elapses; or
 - The call spuriously (that is, for no reason) returns.
 
@@ -191,8 +191,8 @@ Disables the current thread for thread scheduling purposes, for up to the specif
 
 If the specified waiting time is zero or negative, the method does nothing. Otherwise, if the permit is available then it is consumed and the call returns immediately; otherwise the current thread becomes disabled for thread scheduling purposes and lies dormant until one of four things happens:
 
-- Some other thread invokes [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))with the current thread as the target; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread; or
+- Some other thread invokes [unpark](../java/util/concurrent/locks/LockSupport.md))with the current thread as the target; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread; or
 - The specified waiting time elapses; or
 - The call spuriously (that is, for no reason) returns.
 
@@ -217,8 +217,8 @@ Disables the current thread for thread scheduling purposes, until the specified 
 
 If the permit is available then it is consumed and the call returns immediately; otherwise the current thread becomes disabled for thread scheduling purposes and lies dormant until one of four things happens:
 
-- Some other thread invokes [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))with the current thread as the target; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread; or
+- Some other thread invokes [unpark](../java/util/concurrent/locks/LockSupport.md))with the current thread as the target; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread; or
 - The specified deadline passes; or
 - The call spuriously (that is, for no reason) returns.
 
@@ -241,8 +241,8 @@ Disables the current thread for thread scheduling purposes, until the specified 
 
 If the permit is available then it is consumed and the call returns immediately; otherwise the current thread becomes disabled for thread scheduling purposes and lies dormant until one of four things happens:
 
-- Some other thread invokes [unpark](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#unpark(java.lang.Thread))with the current thread as the target; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread; or
+- Some other thread invokes [unpark](../java/util/concurrent/locks/LockSupport.md))with the current thread as the target; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread; or
 - The specified deadline passes; or
 - The call spuriously (that is, for no reason) returns.
 
@@ -260,7 +260,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open static fun setCurrentBlocker(blocker: Any!): Unit
 ```
 
-Sets the object to be returned by invocations of [getBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#getBlocker(java.lang.Thread))for the current thread. This method may be used before invoking the no-argument version of [park()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/LockSupport#park())from non-public objects, allowing more helpful diagnostics, or retaining compatibility with previous implementations of blocking methods. Previous values of the blocker are not automatically restored after blocking. To obtain the effects of`park(b`}, use`setCurrentBlocker(b); park(); setCurrentBlocker(null);`
+Sets the object to be returned by invocations of [getBlocker](../java/util/concurrent/locks/LockSupport.md))for the current thread. This method may be used before invoking the no-argument version of [park()](../java/util/concurrent/locks/LockSupport.md))from non-public objects, allowing more helpful diagnostics, or retaining compatibility with previous implementations of blocking methods. Previous values of the blocker are not automatically restored after blocking. To obtain the effects of`park(b`}, use`setCurrentBlocker(b); park(); setCurrentBlocker(null);`
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------|
@@ -278,4 +278,4 @@ Makes available the permit for the given thread, if it was not already available
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `thread` | [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!:the thread to unpark, or`null`, in which case this operation has no effect |
+| `thread` | [Thread](../java/lang/Thread.md)!:the thread to unpark, or`null`, in which case this operation has no effect |

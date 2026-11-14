@@ -11,11 +11,11 @@ open class ClosedFileSystemException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.file.ClosedFileSystemException](https://developer.android.com/reference/kotlin/java/nio/file/ClosedFileSystemException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.file.ClosedFileSystemException](../java/nio/file/ClosedFileSystemException.md) |
 
 Unchecked exception thrown when an attempt is made to invoke an operation on a file and the file system is closed.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to invoke an operation on a f
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClosedFileSystemException](https://developer.android.com/reference/kotlin/java/nio/file/ClosedFileSystemException#ClosedFileSystemException())`()` Constructs an instance of this class. |
+| [ClosedFileSystemException](../java/nio/file/ClosedFileSystemException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

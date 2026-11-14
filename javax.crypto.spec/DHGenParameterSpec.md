@@ -10,7 +10,7 @@ open class DHGenParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.DHGenParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHGenParameterSpec#) |
+| ↳ | [javax.crypto.spec.DHGenParameterSpec](../javax/crypto/spec/DHGenParameterSpec.md) |
 
 This class specifies the set of parameters used for generating Diffie-Hellman (system) parameters for use in Diffie-Hellman key agreement. This is typically done by a central authority.
 
@@ -20,12 +20,12 @@ The central authority, after computing the parameters, must send this informatio
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DHGenParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHGenParameterSpec#DHGenParameterSpec(kotlin.Int,%20kotlin.Int))`(`primeSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exponentSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for the generation of Diffie-Hellman (system) parameters. |
+| [DHGenParameterSpec](../javax/crypto/spec/DHGenParameterSpec.md))`(`primeSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exponentSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for the generation of Diffie-Hellman (system) parameters. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExponentSize](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHGenParameterSpec#getExponentSize())`()` Returns the size in bits of the random exponent (private value). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimeSize](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHGenParameterSpec#getPrimeSize())`()` Returns the size in bits of the prime modulus. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExponentSize](../javax/crypto/spec/DHGenParameterSpec.md))`()` Returns the size in bits of the random exponent (private value). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimeSize](../javax/crypto/spec/DHGenParameterSpec.md))`()` Returns the size in bits of the prime modulus. |
 
 ## Public constructors
 
@@ -39,7 +39,7 @@ DHGenParameterSpec(
     exponentSize: Int)
 ```
 
-Constructs a parameter set for the generation of Diffie-Hellman (system) parameters. The constructed parameter set can be used to initialize an [AlgorithmParameterGenerator](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGenerator.html#) object for the generation of Diffie-Hellman parameters.
+Constructs a parameter set for the generation of Diffie-Hellman (system) parameters. The constructed parameter set can be used to initialize an [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md) object for the generation of Diffie-Hellman parameters.
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ConversationStatus
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/people/ConversationStatus "View this page in Java") 
+Kotlin| [Java](../android/app/people/ConversationStatus.md) 
 | --- | --- |
 
 ```
@@ -13,60 +13,60 @@ class ConversationStatus : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.people.ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#) |
+| ↳ | [android.app.people.ConversationStatus](../android/app/people/ConversationStatus.md) |
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus.Builder) <br /> |
+| | [Builder](../android/app/people/ConversationStatus.Builder.md) <br /> |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_ANNIVERSARY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_ANNIVERSARY:kotlin.Int) Constant representing that the conversation user and the device user are celebrating and anniversary today. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_AUDIO](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_AUDIO:kotlin.Int) Constant representing that the conversation user is listening to music or other audio like a podcast. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_BIRTHDAY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_BIRTHDAY:kotlin.Int) Constant representing that today is the conversation user's birthday. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_ANNIVERSARY](../android/app/people/ConversationStatus.md) Constant representing that the conversation user and the device user are celebrating and anniversary today. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_AUDIO](../android/app/people/ConversationStatus.md) Constant representing that the conversation user is listening to music or other audio like a podcast. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_BIRTHDAY](../android/app/people/ConversationStatus.md) Constant representing that today is the conversation user's birthday. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_GAME](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_GAME:kotlin.Int) Constant representing that the conversation user is playing a game. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_LOCATION](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_LOCATION:kotlin.Int) Constant representing that the conversation user is sharing status with the device user. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_NEW_STORY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_NEW_STORY:kotlin.Int) Constant representing that the conversation user has posted a new story. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_GAME](../android/app/people/ConversationStatus.md) Constant representing that the conversation user is playing a game. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_LOCATION](../android/app/people/ConversationStatus.md) Constant representing that the conversation user is sharing status with the device user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_NEW_STORY](../android/app/people/ConversationStatus.md) Constant representing that the conversation user has posted a new story. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_OTHER](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_OTHER:kotlin.Int) Constant representing that the conversation user is engaged in an activity that cannot be more specifically represented by another type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_UPCOMING_BIRTHDAY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_UPCOMING_BIRTHDAY:kotlin.Int) Constant representing that the conversation user's birthday is approaching soon. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_VIDEO](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_VIDEO:kotlin.Int) Constant representing that the conversation user is watching video content. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_OTHER](../android/app/people/ConversationStatus.md) Constant representing that the conversation user is engaged in an activity that cannot be more specifically represented by another type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_UPCOMING_BIRTHDAY](../android/app/people/ConversationStatus.md) Constant representing that the conversation user's birthday is approaching soon. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVITY_VIDEO](../android/app/people/ConversationStatus.md) Constant representing that the conversation user is watching video content. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_AVAILABLE](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_AVAILABLE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_BUSY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_BUSY:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_OFFLINE](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_OFFLINE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_AVAILABLE](../android/app/people/ConversationStatus.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_BUSY](../android/app/people/ConversationStatus.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_OFFLINE](../android/app/people/ConversationStatus.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_UNKNOWN:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_UNKNOWN](../android/app/people/ConversationStatus.md) <br /> |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActivity](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getActivity())`()` Returns the type of activity represented by this status |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/people/ConversationStatus.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/people/ConversationStatus.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActivity](../android/app/people/ConversationStatus.md))`()` Returns the type of activity represented by this status |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailability](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getAvailability())`()` Returns the availability of the people behind this conversation while this activity is happening. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getDescription())`()` Returns the description for this activity. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEndTimeMillis](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getEndTimeMillis())`()` Returns the time at which this status should be expired. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailability](../android/app/people/ConversationStatus.md))`()` Returns the availability of the people behind this conversation while this activity is happening. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](../android/app/people/ConversationStatus.md))`()` Returns the description for this activity. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEndTimeMillis](../android/app/people/ConversationStatus.md))`()` Returns the time at which this status should be expired. |
 | --- | --- |
-| [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | [getIcon](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getIcon())`()` Returns the image for this activity. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getId())`()` Returns the unique identifier for the status. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeMillis](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getStartTimeMillis())`()` Returns the time at which this status started |
+| [Icon](../android/graphics/drawable/Icon.md)? | [getIcon](../android/app/people/ConversationStatus.md))`()` Returns the image for this activity. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](../android/app/people/ConversationStatus.md))`()` Returns the unique identifier for the status. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeMillis](../android/app/people/ConversationStatus.md))`()` Returns the time at which this status started |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/people/ConversationStatus.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/people/ConversationStatus.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/people/ConversationStatus.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ConversationStatus](../android/app/people/ConversationStatus.md)!\> | [CREATOR](../android/app/people/ConversationStatus.md) <br /> |
 
 ## Constants
 
@@ -230,7 +230,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -260,7 +260,7 @@ Returns the type of activity represented by this status
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.people.ConversationStatus#ACTIVITY_OTHER](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_OTHER:kotlin.Int), [android.app.people.ConversationStatus#ACTIVITY_BIRTHDAY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_BIRTHDAY:kotlin.Int), [android.app.people.ConversationStatus#ACTIVITY_ANNIVERSARY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_ANNIVERSARY:kotlin.Int), [android.app.people.ConversationStatus#ACTIVITY_NEW_STORY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_NEW_STORY:kotlin.Int), [android.app.people.ConversationStatus#ACTIVITY_AUDIO](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_AUDIO:kotlin.Int), [android.app.people.ConversationStatus#ACTIVITY_VIDEO](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_VIDEO:kotlin.Int), [android.app.people.ConversationStatus#ACTIVITY_GAME](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_GAME:kotlin.Int), [android.app.people.ConversationStatus#ACTIVITY_LOCATION](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_LOCATION:kotlin.Int), or [android.app.people.ConversationStatus#ACTIVITY_UPCOMING_BIRTHDAY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#ACTIVITY_UPCOMING_BIRTHDAY:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.people.ConversationStatus#ACTIVITY_OTHER](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#ACTIVITY_BIRTHDAY](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#ACTIVITY_ANNIVERSARY](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#ACTIVITY_NEW_STORY](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#ACTIVITY_AUDIO](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#ACTIVITY_VIDEO](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#ACTIVITY_GAME](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#ACTIVITY_LOCATION](../android/app/people/ConversationStatus.md), or [android.app.people.ConversationStatus#ACTIVITY_UPCOMING_BIRTHDAY](../android/app/people/ConversationStatus.md) |
 
 ### getAvailability
 
@@ -274,7 +274,7 @@ Returns the availability of the people behind this conversation while this activ
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.people.ConversationStatus#AVAILABILITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_UNKNOWN:kotlin.Int), [android.app.people.ConversationStatus#AVAILABILITY_AVAILABLE](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_AVAILABLE:kotlin.Int), [android.app.people.ConversationStatus#AVAILABILITY_BUSY](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_BUSY:kotlin.Int), or [android.app.people.ConversationStatus#AVAILABILITY_OFFLINE](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#AVAILABILITY_OFFLINE:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.people.ConversationStatus#AVAILABILITY_UNKNOWN](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#AVAILABILITY_AVAILABLE](../android/app/people/ConversationStatus.md), [android.app.people.ConversationStatus#AVAILABILITY_BUSY](../android/app/people/ConversationStatus.md), or [android.app.people.ConversationStatus#AVAILABILITY_OFFLINE](../android/app/people/ConversationStatus.md) |
 
 ### getDescription
 
@@ -312,7 +312,7 @@ Returns the image for this activity.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------|
-| [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | This value may be`null`. |
+| [Icon](../android/graphics/drawable/Icon.md)? | This value may be`null`. |
 
 ### getId
 
@@ -377,8 +377,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

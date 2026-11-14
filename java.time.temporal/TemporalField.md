@@ -8,19 +8,19 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface TemporalField
 ```
 
-| [java.time.temporal.TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#) |
+| [java.time.temporal.TemporalField](../java/time/temporal/TemporalField.md) |
 
-| Known Direct Subclasses [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) |----------------------------------------------------------------------------------------------|---------------------------| | [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField) | A standard set of fields. | |
+| Known Direct Subclasses [ChronoField](../java/time/temporal/ChronoField.md) |----------------------------------------------------------------------------------------------|---------------------------| | [ChronoField](../java/time/temporal/ChronoField.md) | A standard set of fields. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_DAY_OF_WEEK_IN_MONTH), [ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_DAY_OF_WEEK_IN_YEAR), [ChronoField.ALIGNED_WEEK_OF_MONTH](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_WEEK_OF_MONTH), [ChronoField.ALIGNED_WEEK_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_WEEK_OF_YEAR), [ChronoField.AMPM_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:AMPM_OF_DAY), [ChronoField.CLOCK_HOUR_OF_AMPM](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:CLOCK_HOUR_OF_AMPM), [ChronoField.CLOCK_HOUR_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:CLOCK_HOUR_OF_DAY), [ChronoField.DAY_OF_MONTH](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:DAY_OF_MONTH), [ChronoField.DAY_OF_WEEK](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:DAY_OF_WEEK), [ChronoField.DAY_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:DAY_OF_YEAR), [ChronoField.EPOCH_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:EPOCH_DAY), [ChronoField.ERA](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ERA), and 18 others. |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_DAY_OF_WEEK_IN_MONTH) | The aligned day-of-week within a month. | | [ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_DAY_OF_WEEK_IN_YEAR) | The aligned day-of-week within a year. | | [ChronoField.ALIGNED_WEEK_OF_MONTH](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_WEEK_OF_MONTH) | The aligned week within a month. | | [ChronoField.ALIGNED_WEEK_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ALIGNED_WEEK_OF_YEAR) | The aligned week within a year. | | [ChronoField.AMPM_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:AMPM_OF_DAY) | The am-pm-of-day. | | [ChronoField.CLOCK_HOUR_OF_AMPM](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:CLOCK_HOUR_OF_AMPM) | The clock-hour-of-am-pm. | | [ChronoField.CLOCK_HOUR_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:CLOCK_HOUR_OF_DAY) | The clock-hour-of-day. | | [ChronoField.DAY_OF_MONTH](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:DAY_OF_MONTH) | The day-of-month. | | [ChronoField.DAY_OF_WEEK](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:DAY_OF_WEEK) | The day-of-week, such as Tuesday. | | [ChronoField.DAY_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:DAY_OF_YEAR) | The day-of-year. | | [ChronoField.EPOCH_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:EPOCH_DAY) | The epoch-day, based on the Java epoch of 1970-01-01 (ISO). | | [ChronoField.ERA](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:ERA) | The era. | | [ChronoField.HOUR_OF_AMPM](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:HOUR_OF_AMPM) | The hour-of-am-pm. | | [ChronoField.HOUR_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:HOUR_OF_DAY) | The hour-of-day. | | [ChronoField.INSTANT_SECONDS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:INSTANT_SECONDS) | The instant epoch-seconds. | | [ChronoField.MICRO_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:MICRO_OF_DAY) | The micro-of-day. | | [ChronoField.MICRO_OF_SECOND](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:MICRO_OF_SECOND) | The micro-of-second. | | [ChronoField.MILLI_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:MILLI_OF_DAY) | The milli-of-day. | | [ChronoField.MILLI_OF_SECOND](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:MILLI_OF_SECOND) | The milli-of-second. | | [ChronoField.MINUTE_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:MINUTE_OF_DAY) | The minute-of-day. | | [ChronoField.MINUTE_OF_HOUR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:MINUTE_OF_HOUR) | The minute-of-hour. | | [ChronoField.MONTH_OF_YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:MONTH_OF_YEAR) | The month-of-year, such as March. | | [ChronoField.NANO_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:NANO_OF_DAY) | The nano-of-day. | | [ChronoField.NANO_OF_SECOND](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:NANO_OF_SECOND) | The nano-of-second. | | [ChronoField.OFFSET_SECONDS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:OFFSET_SECONDS) | The offset from UTC/Greenwich. | | [ChronoField.PROLEPTIC_MONTH](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:PROLEPTIC_MONTH) | The proleptic-month based, counting months sequentially from year 0. | | [ChronoField.SECOND_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:SECOND_OF_DAY) | The second-of-day. | | [ChronoField.SECOND_OF_MINUTE](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:SECOND_OF_MINUTE) | The second-of-minute. | | [ChronoField.YEAR](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:YEAR) | The proleptic year, such as 2012. | | [ChronoField.YEAR_OF_ERA](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField#ENUM_VALUE:YEAR_OF_ERA) | The year within the era. | |
+| Known Indirect Subclasses [ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH](../java/time/temporal/ChronoField.md), [ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR](../java/time/temporal/ChronoField.md), [ChronoField.ALIGNED_WEEK_OF_MONTH](../java/time/temporal/ChronoField.md), [ChronoField.ALIGNED_WEEK_OF_YEAR](../java/time/temporal/ChronoField.md), [ChronoField.AMPM_OF_DAY](../java/time/temporal/ChronoField.md), [ChronoField.CLOCK_HOUR_OF_AMPM](../java/time/temporal/ChronoField.md), [ChronoField.CLOCK_HOUR_OF_DAY](../java/time/temporal/ChronoField.md), [ChronoField.DAY_OF_MONTH](../java/time/temporal/ChronoField.md), [ChronoField.DAY_OF_WEEK](../java/time/temporal/ChronoField.md), [ChronoField.DAY_OF_YEAR](../java/time/temporal/ChronoField.md), [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md), [ChronoField.ERA](../java/time/temporal/ChronoField.md), and 18 others. |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH](../java/time/temporal/ChronoField.md) | The aligned day-of-week within a month. | | [ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR](../java/time/temporal/ChronoField.md) | The aligned day-of-week within a year. | | [ChronoField.ALIGNED_WEEK_OF_MONTH](../java/time/temporal/ChronoField.md) | The aligned week within a month. | | [ChronoField.ALIGNED_WEEK_OF_YEAR](../java/time/temporal/ChronoField.md) | The aligned week within a year. | | [ChronoField.AMPM_OF_DAY](../java/time/temporal/ChronoField.md) | The am-pm-of-day. | | [ChronoField.CLOCK_HOUR_OF_AMPM](../java/time/temporal/ChronoField.md) | The clock-hour-of-am-pm. | | [ChronoField.CLOCK_HOUR_OF_DAY](../java/time/temporal/ChronoField.md) | The clock-hour-of-day. | | [ChronoField.DAY_OF_MONTH](../java/time/temporal/ChronoField.md) | The day-of-month. | | [ChronoField.DAY_OF_WEEK](../java/time/temporal/ChronoField.md) | The day-of-week, such as Tuesday. | | [ChronoField.DAY_OF_YEAR](../java/time/temporal/ChronoField.md) | The day-of-year. | | [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md) | The epoch-day, based on the Java epoch of 1970-01-01 (ISO). | | [ChronoField.ERA](../java/time/temporal/ChronoField.md) | The era. | | [ChronoField.HOUR_OF_AMPM](../java/time/temporal/ChronoField.md) | The hour-of-am-pm. | | [ChronoField.HOUR_OF_DAY](../java/time/temporal/ChronoField.md) | The hour-of-day. | | [ChronoField.INSTANT_SECONDS](../java/time/temporal/ChronoField.md) | The instant epoch-seconds. | | [ChronoField.MICRO_OF_DAY](../java/time/temporal/ChronoField.md) | The micro-of-day. | | [ChronoField.MICRO_OF_SECOND](../java/time/temporal/ChronoField.md) | The micro-of-second. | | [ChronoField.MILLI_OF_DAY](../java/time/temporal/ChronoField.md) | The milli-of-day. | | [ChronoField.MILLI_OF_SECOND](../java/time/temporal/ChronoField.md) | The milli-of-second. | | [ChronoField.MINUTE_OF_DAY](../java/time/temporal/ChronoField.md) | The minute-of-day. | | [ChronoField.MINUTE_OF_HOUR](../java/time/temporal/ChronoField.md) | The minute-of-hour. | | [ChronoField.MONTH_OF_YEAR](../java/time/temporal/ChronoField.md) | The month-of-year, such as March. | | [ChronoField.NANO_OF_DAY](../java/time/temporal/ChronoField.md) | The nano-of-day. | | [ChronoField.NANO_OF_SECOND](../java/time/temporal/ChronoField.md) | The nano-of-second. | | [ChronoField.OFFSET_SECONDS](../java/time/temporal/ChronoField.md) | The offset from UTC/Greenwich. | | [ChronoField.PROLEPTIC_MONTH](../java/time/temporal/ChronoField.md) | The proleptic-month based, counting months sequentially from year 0. | | [ChronoField.SECOND_OF_DAY](../java/time/temporal/ChronoField.md) | The second-of-day. | | [ChronoField.SECOND_OF_MINUTE](../java/time/temporal/ChronoField.md) | The second-of-minute. | | [ChronoField.YEAR](../java/time/temporal/ChronoField.md) | The proleptic year, such as 2012. | | [ChronoField.YEAR_OF_ERA](../java/time/temporal/ChronoField.md) | The year within the era. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A field of date-time, such as month-of-year or minute-of-hour.
 
 Date and time is expressed using fields which partition the time-line into something meaningful for humans. Implementations of this interface represent those fields.
 
-The most commonly used units are defined in [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField). Further fields are supplied in [IsoFields](https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields), [WeekFields](https://developer.android.com/reference/kotlin/java/time/temporal/WeekFields) and [JulianFields](https://developer.android.com/reference/kotlin/java/time/temporal/JulianFields). Fields can also be written by application code by implementing this interface.
+The most commonly used units are defined in [ChronoField](../java/time/temporal/ChronoField.md). Further fields are supplied in [IsoFields](../java/time/temporal/IsoFields.md), [WeekFields](../java/time/temporal/WeekFields.md) and [JulianFields](../java/time/temporal/JulianFields.md). Fields can also be written by application code by implementing this interface.
 
 The field works using double dispatch. Client code calls methods on a date-time like`LocalDateTime`which check if the field is a`ChronoField`. If it is, then the date-time must handle it. Otherwise, the method call is re-dispatched to the matching method in this interface.
 
@@ -28,20 +28,20 @@ The field works using double dispatch. Client code calls methods on a date-time 
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractR | [adjustInto](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#adjustInto(java.time.temporal.TemporalField.adjustInto.R,%20kotlin.Long))`(`temporal:` `R`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of the specified temporal object with the value of this field set. |
-| abstract [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | [getBaseUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#getBaseUnit())`()` Gets the unit that the field is measured in. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#getDisplayName(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the display name for the field in the requested locale. |
+| abstractR | [adjustInto](../java/time/temporal/TemporalField.md))`(`temporal:` `R`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of the specified temporal object with the value of this field set. |
+| abstract [TemporalUnit](../java/time/temporal/TemporalUnit.md)! | [getBaseUnit](../java/time/temporal/TemporalField.md))`()` Gets the unit that the field is measured in. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/time/temporal/TemporalField.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Gets the display name for the field in the requested locale. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFrom](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#getFrom(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!`)` Gets the value of this field from the specified temporal object. |
-| abstract [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | [getRangeUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#getRangeUnit())`()` Gets the range that the field is bound by. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDateBased](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#isDateBased())`()` Checks if this field represents a component of a date. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFrom](../java/time/temporal/TemporalField.md))`(`temporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`)` Gets the value of this field from the specified temporal object. |
+| abstract [TemporalUnit](../java/time/temporal/TemporalUnit.md)! | [getRangeUnit](../java/time/temporal/TemporalField.md))`()` Gets the range that the field is bound by. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDateBased](../java/time/temporal/TemporalField.md))`()` Checks if this field represents a component of a date. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedBy](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#isSupportedBy(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!`)` Checks if this field is supported by the temporal object. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTimeBased](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#isTimeBased())`()` Checks if this field represents a component of a time. |
-| abstract [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | [range](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#range())`()` Gets the range of valid values for the field. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedBy](../java/time/temporal/TemporalField.md))`(`temporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`)` Checks if this field is supported by the temporal object. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTimeBased](../java/time/temporal/TemporalField.md))`()` Checks if this field represents a component of a time. |
+| abstract [ValueRange](../java/time/temporal/ValueRange.md)! | [range](../java/time/temporal/TemporalField.md))`()` Gets the range of valid values for the field. |
 | --- | --- |
-| abstract [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | [rangeRefinedBy](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#rangeRefinedBy(java.time.temporal.TemporalAccessor))`(`temporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!`)` Get the range of valid values for this field using the temporal object to refine the result. |
-| open [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)! | [resolve](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#resolve(kotlin.collections.MutableMap,%20java.time.temporal.TemporalAccessor,%20java.time.format.ResolverStyle))`(`fieldValues:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#)!,` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!>!`, `partialTemporal:` ` [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!`, `resolverStyle:` ` [ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#)!`)` Resolves this field to provide a simpler alternative or a date. |
+| abstract [ValueRange](../java/time/temporal/ValueRange.md)! | [rangeRefinedBy](../java/time/temporal/TemporalField.md))`(`temporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`)` Get the range of valid values for this field using the temporal object to refine the result. |
+| open [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)! | [resolve](../java/time/temporal/TemporalField.md))`(`fieldValues:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [TemporalField](../java/time/temporal/TemporalField.md)!,` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!>!`, `partialTemporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`, `resolverStyle:` ` [ResolverStyle](../java/time/format/ResolverStyle.md)!`)` Resolves this field to provide a simpler alternative or a date. |
 
 ## Public methods
 
@@ -62,7 +62,7 @@ This returns a new temporal object based on the specified one with the value for
 
 In some cases, changing a field is not fully defined. For example, if the target object is a date representing the 31st January, then changing the month to February would be unclear. In cases like this, the implementation is responsible for resolving the result. Typically it will choose the previous valid date, which would be the last valid day of February in this example.
 
-There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [Temporal.with(TemporalField, long)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#with(java.time.temporal.TemporalField,%20kotlin.Long)): 
+There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [Temporal.with(TemporalField, long)](../java/time/temporal/Temporal.md)): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -72,7 +72,7 @@ There are two equivalent ways of using this method. The first is to invoke this 
 ```
 It is recommended to use the second approach,`with(TemporalField)`, as it is a lot clearer to read in code.
 
-Implementations should perform any queries or calculations using the fields available in [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField). If the field is not supported an`UnsupportedTemporalTypeException`must be thrown.
+Implementations should perform any queries or calculations using the fields available in [ChronoField](../java/time/temporal/ChronoField.md). If the field is not supported an`UnsupportedTemporalTypeException`must be thrown.
 
 Implementations must not alter the specified temporal object. Instead, an adjusted copy of the original must be returned. This provides equivalent, safe behavior for immutable and mutable implementations.
 
@@ -104,11 +104,11 @@ abstract fun getBaseUnit(): TemporalUnit!
 
 Gets the unit that the field is measured in.
 
-The unit of the field is the period that varies within the range. For example, in the field 'MonthOfYear', the unit is 'Months'. See also [getRangeUnit()](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#getRangeUnit()).
+The unit of the field is the period that varies within the range. For example, in the field 'MonthOfYear', the unit is 'Months'. See also [getRangeUnit()](../java/time/temporal/TemporalField.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | the unit defining the base unit of the field, not null |
+| [TemporalUnit](../java/time/temporal/TemporalUnit.md)! | the unit defining the base unit of the field, not null |
 
 ### getDisplayName
 
@@ -126,7 +126,7 @@ The default implementation must check the locale is not null and return`toString
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the locale to use, not null |
+| `locale` | [Locale](../java/util/Locale.md)!:the locale to use, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -144,7 +144,7 @@ Gets the value of this field from the specified temporal object.
 
 This queries the temporal object for the value of this field.
 
-There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [TemporalAccessor.getLong(TemporalField)](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor#getLong(java.time.temporal.TemporalField))(or [TemporalAccessor.get(TemporalField)](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor#get(java.time.temporal.TemporalField))): 
+There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [TemporalAccessor.getLong(TemporalField)](../java/time/temporal/TemporalAccessor.md))(or [TemporalAccessor.get(TemporalField)](../java/time/temporal/TemporalAccessor.md))): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -154,11 +154,11 @@ There are two equivalent ways of using this method. The first is to invoke this 
 ```
 It is recommended to use the second approach,`getLong(TemporalField)`, as it is a lot clearer to read in code.
 
-Implementations should perform any queries or calculations using the fields available in [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField). If the field is not supported an`UnsupportedTemporalTypeException`must be thrown.
+Implementations should perform any queries or calculations using the fields available in [ChronoField](../java/time/temporal/ChronoField.md). If the field is not supported an`UnsupportedTemporalTypeException`must be thrown.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!:the temporal object to query, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!:the temporal object to query, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------|
@@ -181,13 +181,13 @@ abstract fun getRangeUnit(): TemporalUnit!
 
 Gets the range that the field is bound by.
 
-The range of the field is the period that the field varies within. For example, in the field 'MonthOfYear', the range is 'Years'. See also [getBaseUnit()](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#getBaseUnit()).
+The range of the field is the period that the field varies within. For example, in the field 'MonthOfYear', the range is 'Years'. See also [getBaseUnit()](../java/time/temporal/TemporalField.md)).
 
 The range is never null. For example, the 'Year' field is shorthand for 'YearOfForever'. It therefore has a unit of 'Years' and a range of 'Forever'.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)! | the unit defining the range of the field, not null |
+| [TemporalUnit](../java/time/temporal/TemporalUnit.md)! | the unit defining the range of the field, not null |
 
 ### isDateBased
 
@@ -199,7 +199,7 @@ abstract fun isDateBased(): Boolean
 
 Checks if this field represents a component of a date.
 
-A field is date-based if it can be derived from [EPOCH_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField). Note that it is valid for both`isDateBased()`and`isTimeBased()`to return false, such as when representing a field like minute-of-week.
+A field is date-based if it can be derived from [EPOCH_DAY](../java/time/temporal/ChronoField.md). Note that it is valid for both`isDateBased()`and`isTimeBased()`to return false, such as when representing a field like minute-of-week.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|
@@ -217,7 +217,7 @@ Checks if this field is supported by the temporal object.
 
 This determines whether the temporal accessor supports this field. If this returns false, then the temporal cannot be queried for this field.
 
-There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [TemporalAccessor.isSupported(TemporalField)](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor#isSupported(java.time.temporal.TemporalField)): 
+There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [TemporalAccessor.isSupported(TemporalField)](../java/time/temporal/TemporalAccessor.md)): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -227,11 +227,11 @@ There are two equivalent ways of using this method. The first is to invoke this 
 ```
 It is recommended to use the second approach,`isSupported(TemporalField)`, as it is a lot clearer to read in code.
 
-Implementations should determine whether they are supported using the fields available in [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField).
+Implementations should determine whether they are supported using the fields available in [ChronoField](../java/time/temporal/ChronoField.md).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!:the temporal object to query, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!:the temporal object to query, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -247,7 +247,7 @@ abstract fun isTimeBased(): Boolean
 
 Checks if this field represents a component of a time.
 
-A field is time-based if it can be derived from [NANO_OF_DAY](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField). Note that it is valid for both`isDateBased()`and`isTimeBased()`to return false, such as when representing a field like minute-of-week.
+A field is time-based if it can be derived from [NANO_OF_DAY](../java/time/temporal/ChronoField.md). Note that it is valid for both`isDateBased()`and`isTimeBased()`to return false, such as when representing a field like minute-of-week.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|
@@ -269,7 +269,7 @@ Note that the result only describes the minimum and maximum valid values and it 
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | the range of valid values for the field, not null |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | the range of valid values for the field, not null |
 
 ### rangeRefinedBy
 
@@ -281,9 +281,9 @@ abstract fun rangeRefinedBy(temporal: TemporalAccessor!): ValueRange!
 
 Get the range of valid values for this field using the temporal object to refine the result.
 
-This uses the temporal object to find the range of valid values for the field. This is similar to [range()](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#range()), however this method refines the result using the temporal. For example, if the field is`DAY_OF_MONTH`the`range`method is not accurate as there are four possible month lengths, 28, 29, 30 and 31 days. Using this method with a date allows the range to be accurate, returning just one of those four options.
+This uses the temporal object to find the range of valid values for the field. This is similar to [range()](../java/time/temporal/TemporalField.md)), however this method refines the result using the temporal. For example, if the field is`DAY_OF_MONTH`the`range`method is not accurate as there are four possible month lengths, 28, 29, 30 and 31 days. Using this method with a date allows the range to be accurate, returning just one of those four options.
 
-There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [TemporalAccessor.range(TemporalField)](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor#range(java.time.temporal.TemporalField)): 
+There are two equivalent ways of using this method. The first is to invoke this method directly. The second is to use [TemporalAccessor.range(TemporalField)](../java/time/temporal/TemporalAccessor.md)): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -293,15 +293,15 @@ There are two equivalent ways of using this method. The first is to invoke this 
 ```
 It is recommended to use the second approach,`range(TemporalField)`, as it is a lot clearer to read in code.
 
-Implementations should perform any queries or calculations using the fields available in [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField). If the field is not supported an`UnsupportedTemporalTypeException`must be thrown.
+Implementations should perform any queries or calculations using the fields available in [ChronoField](../java/time/temporal/ChronoField.md). If the field is not supported an`UnsupportedTemporalTypeException`must be thrown.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!:the temporal object used to refine the result, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!:the temporal object used to refine the result, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | the range of valid values for this field, not null |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | the range of valid values for this field, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-----------------------------------------------|
@@ -328,14 +328,14 @@ Applications should not normally invoke this method directly.
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fieldValues` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField#)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>!:the map of fields to values, which can be updated, not null |
-| `partialTemporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!:the partially complete temporal to query for zone and chronology; querying for other things is undefined and not recommended, not null |
-| `resolverStyle` | [ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#)!:the requested type of resolve, not null |
+| `fieldValues` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [TemporalField](../java/time/temporal/TemporalField.md)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>!:the map of fields to values, which can be updated, not null |
+| `partialTemporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!:the partially complete temporal to query for zone and chronology; querying for other things is undefined and not recommended, not null |
+| `resolverStyle` | [ResolverStyle](../java/time/format/ResolverStyle.md)!:the requested type of resolve, not null |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)! | the resolved temporal object; null if resolving only changed the map, or no resolve occurred |
+| [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)! | the resolved temporal object; null if resolving only changed the map, or no resolve occurred |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|

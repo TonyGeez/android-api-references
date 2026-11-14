@@ -4,20 +4,20 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # Renderer
 
-Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.Renderer "View this page in Java") 
+Kotlin| [Java](../android/opengl/GLSurfaceView.Renderer.md) 
 | --- | --- |
 
 ```
 interface Renderer
 ```
 
-| [android.opengl.GLSurfaceView.Renderer](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#) |
+| [android.opengl.GLSurfaceView.Renderer](../android/opengl/GLSurfaceView.Renderer.md) |
 
 A generic renderer interface.
 
 The renderer is responsible for making OpenGL calls to render a frame.
 
-GLSurfaceView clients typically create their own classes that implement this interface, and then call [GLSurfaceView.setRenderer](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setRenderer(android.opengl.GLSurfaceView.Renderer))to register the renderer with the GLSurfaceView.
+GLSurfaceView clients typically create their own classes that implement this interface, and then call [GLSurfaceView.setRenderer](../android/opengl/GLSurfaceView.md))to register the renderer with the GLSurfaceView.
 
 <br />
 
@@ -27,21 +27,21 @@ GLSurfaceView clients typically create their own classes that implement this int
 
 ### Threading
 
-The renderer will be called on a separate thread, so that rendering performance is decoupled from the UI thread. Clients typically need to communicate with the renderer from the UI thread, because that's where input events are received. Clients can communicate using any of the standard Java techniques for cross-thread communication, or they can use the [GLSurfaceView.queueEvent(Runnable)](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#queueEvent(java.lang.Runnable))convenience method.
+The renderer will be called on a separate thread, so that rendering performance is decoupled from the UI thread. Clients typically need to communicate with the renderer from the UI thread, because that's where input events are received. Clients can communicate using any of the standard Java techniques for cross-thread communication, or they can use the [GLSurfaceView.queueEvent(Runnable)](../android/opengl/GLSurfaceView.md))convenience method.
 
 <br />
 
 ### EGL Context Lost
 
-There are situations where the EGL rendering context will be lost. This typically happens when device wakes up after going to sleep. When the EGL context is lost, all OpenGL resources (such as textures) that are associated with that context will be automatically deleted. In order to keep rendering correctly, a renderer must recreate any lost resources that it still needs. The [onSurfaceCreated(javax.microedition.khronos.opengles.GL10,javax.microedition.khronos.egl.EGLConfig)](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#onSurfaceCreated(javax.microedition.khronos.opengles.GL10,%20javax.microedition.khronos.egl.EGLConfig))method is a convenient place to do this.
+There are situations where the EGL rendering context will be lost. This typically happens when device wakes up after going to sleep. When the EGL context is lost, all OpenGL resources (such as textures) that are associated with that context will be automatically deleted. In order to keep rendering correctly, a renderer must recreate any lost resources that it still needs. The [onSurfaceCreated(javax.microedition.khronos.opengles.GL10,javax.microedition.khronos.egl.EGLConfig)](../android/opengl/GLSurfaceView.Renderer.md))method is a convenient place to do this.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawFrame](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#onDrawFrame(javax.microedition.khronos.opengles.GL10))`(`gl:` ` [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!`)` Called to draw the current frame. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceChanged](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#onSurfaceChanged(javax.microedition.khronos.opengles.GL10,%20kotlin.Int,%20kotlin.Int))`(`gl:` ` [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the surface changed size. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceCreated](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer#onSurfaceCreated(javax.microedition.khronos.opengles.GL10,%20javax.microedition.khronos.egl.EGLConfig))`(`gl:` ` [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!`, `config:` ` [EGLConfig](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html#)!`)` Called when the surface is created or recreated. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawFrame](../android/opengl/GLSurfaceView.Renderer.md))`(`gl:` ` [GL10](../javax/microedition/khronos/opengles/GL10.md)!`)` Called to draw the current frame. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceChanged](../android/opengl/GLSurfaceView.Renderer.md))`(`gl:` ` [GL10](../javax/microedition/khronos/opengles/GL10.md)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the surface changed size. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSurfaceCreated](../android/opengl/GLSurfaceView.Renderer.md))`(`gl:` ` [GL10](../javax/microedition/khronos/opengles/GL10.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`)` Called when the surface is created or recreated. |
 | --- | --- |
 
 ## Public methods
@@ -70,7 +70,7 @@ void onDrawFrame(GL10 gl) {
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `gl` | [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!:the GL interface. Use`instanceof`to test if the interface supports GL11 or higher interfaces. |
+| `gl` | [GL10](../javax/microedition/khronos/opengles/GL10.md)!:the GL interface. Use`instanceof`to test if the interface supports GL11 or higher interfaces. |
 
 ### onSurfaceChanged
 
@@ -104,7 +104,7 @@ void onSurfaceChanged(GL10 gl, int width, int height) {
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `gl` | [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!:the GL interface. Use`instanceof`to test if the interface supports GL11 or higher interfaces. |
+| `gl` | [GL10](../javax/microedition/khronos/opengles/GL10.md)!:the GL interface. Use`instanceof`to test if the interface supports GL11 or higher interfaces. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
@@ -132,5 +132,5 @@ Note that when the EGL context is lost, all OpenGL resources associated with tha
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `gl` | [GL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html#)!:the GL interface. Use`instanceof`to test if the interface supports GL11 or higher interfaces. |
-| `config` | [EGLConfig](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html#)!:the EGLConfig of the created surface. Can be used to create matching pbuffers. |
+| `gl` | [GL10](../javax/microedition/khronos/opengles/GL10.md)!:the GL interface. Use`instanceof`to test if the interface supports GL11 or higher interfaces. |
+| `config` | [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!:the EGLConfig of the created surface. Can be used to create matching pbuffers. |

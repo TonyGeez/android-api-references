@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnDrawerScrollListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener "View this page in Java") 
+Kotlin| [Java](../android/widget/SlidingDrawer.OnDrawerScrollListener.md) 
 | --- | --- |
 
 ```
 interface OnDrawerScrollListener
 ```
 
-| [android.widget.SlidingDrawer.OnDrawerScrollListener](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerScrollListener#) |
+| [android.widget.SlidingDrawer.OnDrawerScrollListener](../android/widget/SlidingDrawer.OnDrawerScrollListener.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -24,8 +24,8 @@ Callback invoked when the drawer is scrolled.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollEnded](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerScrollListener#onScrollEnded())`()` Invoked when the user stops dragging/flinging the drawer's handle. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollStarted](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerScrollListener#onScrollStarted())`()` Invoked when the user starts dragging/flinging the drawer's handle. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollEnded](../android/widget/SlidingDrawer.OnDrawerScrollListener.md))`()` Invoked when the user stops dragging/flinging the drawer's handle. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollStarted](../android/widget/SlidingDrawer.OnDrawerScrollListener.md))`()` Invoked when the user starts dragging/flinging the drawer's handle. |
 
 ## Public methods
 

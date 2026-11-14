@@ -5,18 +5,18 @@ Also in [U Extensions 15](https://developer.android.com/sdkExtensions)
 
 # EmbeddedPhotoPickerProvider
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/photopicker/EmbeddedPhotoPickerProvider "View this page in Java") 
+Kotlin| [Java](../android/widget/photopicker/EmbeddedPhotoPickerProvider.md) 
 | --- | --- |
 
 ```
 interface EmbeddedPhotoPickerProvider
 ```
 
-| [android.widget.photopicker.EmbeddedPhotoPickerProvider](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerProvider#) |
+| [android.widget.photopicker.EmbeddedPhotoPickerProvider](../android/widget/photopicker/EmbeddedPhotoPickerProvider.md) |
 
-This interface provides an api that callers can use to get a session of embedded PhotoPicker ([EmbeddedPhotoPickerSession](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession)).
+This interface provides an api that callers can use to get a session of embedded PhotoPicker ([EmbeddedPhotoPickerSession](../android/widget/photopicker/EmbeddedPhotoPickerSession.md)).
 
-Callers can get instance of this class using [EmbeddedPhotoPickerProviderFactory.create(Context)](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerProviderFactory#create(android.content.Context)).
+Callers can get instance of this class using [EmbeddedPhotoPickerProviderFactory.create(Context)](../android/widget/photopicker/EmbeddedPhotoPickerProviderFactory.md)).
 
 Under the hood, a service connection with photopicker is established by the implementation of this api. To help establish this connection, a caller must include in their Manifest: 
 
@@ -29,11 +29,11 @@ Under the hood, a service connection with photopicker is established by the impl
   </code>
 ```
 
-When a session opens successfully, they would receive an instance of [EmbeddedPhotoPickerSession](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession) and [android.view.SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage.html#) via the [api](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient#onSessionOpened(android.widget.photopicker.EmbeddedPhotoPickerSession))
+When a session opens successfully, they would receive an instance of [EmbeddedPhotoPickerSession](../android/widget/photopicker/EmbeddedPhotoPickerSession.md) and [android.view.SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) via the [api](../android/widget/photopicker/EmbeddedPhotoPickerClient.md))
 
-Callers pass an instance of [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient) which is used by service to notify about different events (like sessionError, uri granted/revoked etc) to them. One-to-one relationship of client to session must be maintained by a caller i.e. they shouldn't reuse same callback for more than one openSession requests.
+Callers pass an instance of [EmbeddedPhotoPickerClient](../android/widget/photopicker/EmbeddedPhotoPickerClient.md) which is used by service to notify about different events (like sessionError, uri granted/revoked etc) to them. One-to-one relationship of client to session must be maintained by a caller i.e. they shouldn't reuse same callback for more than one openSession requests.
 
-The [EmbeddedPhotoPickerSession](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerSession) instance can be used to notify photopicker about different events (like resize, configChange etc).
+The [EmbeddedPhotoPickerSession](../android/widget/photopicker/EmbeddedPhotoPickerSession.md) instance can be used to notify photopicker about different events (like resize, configChange etc).
 
 This api is supported on api versions Android U+.
 
@@ -41,7 +41,7 @@ This api is supported on api versions Android U+.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openSession](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerProvider#openSession(android.os.IBinder,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.widget.photopicker.EmbeddedPhotoPickerFeatureInfo,%20java.util.concurrent.Executor,%20android.widget.photopicker.EmbeddedPhotoPickerClient))`(`hostToken:` ` [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)`, `displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `featureInfo:` ` [EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo)`, `clientExecutor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient)`)` Open a new session for displaying content with an initial size of width x height pixels. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openSession](../android/widget/photopicker/EmbeddedPhotoPickerProvider.md))`(`hostToken:` ` [IBinder](../android/os/IBinder.md)`, `displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `featureInfo:` ` [EmbeddedPhotoPickerFeatureInfo](../android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo.md)`, `clientExecutor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [EmbeddedPhotoPickerClient](../android/widget/photopicker/EmbeddedPhotoPickerClient.md)`)` Open a new session for displaying content with an initial size of width x height pixels. |
 
 ## Public methods
 
@@ -62,16 +62,16 @@ abstract fun openSession(
 ): Unit
 ```
 
-Open a new session for displaying content with an initial size of width x height pixels. [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient) will receive all incoming communication from the PhotoPicker. All incoming calls to [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient) will be made through the provided`clientExecutor`
+Open a new session for displaying content with an initial size of width x height pixels. [EmbeddedPhotoPickerClient](../android/widget/photopicker/EmbeddedPhotoPickerClient.md) will receive all incoming communication from the PhotoPicker. All incoming calls to [EmbeddedPhotoPickerClient](../android/widget/photopicker/EmbeddedPhotoPickerClient.md) will be made through the provided`clientExecutor`
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `hostToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#):Token used for constructing [android.view.SurfaceControlViewHost](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.html#). Use [AttachedSurfaceControl.getInputTransferToken()](https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl.html#getInputTransferToken())to get token of attached [android.view.SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage.html#). This value cannot be`null`. |
-| `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Application display id. Use [DisplayManager.getDisplays()](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplays())to get the id. |
+| `hostToken` | [IBinder](../android/os/IBinder.md):Token used for constructing [android.view.SurfaceControlViewHost](../android/view/SurfaceControlViewHost.md). Use [AttachedSurfaceControl.getInputTransferToken()](../android/view/AttachedSurfaceControl.md))to get token of attached [android.view.SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md). This value cannot be`null`. |
+| `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Application display id. Use [DisplayManager.getDisplays()](../android/hardware/display/DisplayManager.md))to get the id. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):width of the view, in pixels. |
 | --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):height of the view, in pixels. |
-| `featureInfo` | [EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo): [EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo) object containing all the required features for the given session. This value cannot be`null`. |
-| `clientExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) to invoke callbacks. This value cannot be`null`. |
+| `featureInfo` | [EmbeddedPhotoPickerFeatureInfo](../android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo.md): [EmbeddedPhotoPickerFeatureInfo](../android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo.md) object containing all the required features for the given session. This value cannot be`null`. |
+| `clientExecutor` | [Executor](../java/util/concurrent/Executor.md): [Executor](../java/util/concurrent/Executor.md) to invoke callbacks. This value cannot be`null`. |
 | --- | --- |
-| `callback` | [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient): [EmbeddedPhotoPickerClient](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerClient) object to receive callbacks from photopicker. This value cannot be`null`. |
+| `callback` | [EmbeddedPhotoPickerClient](../android/widget/photopicker/EmbeddedPhotoPickerClient.md): [EmbeddedPhotoPickerClient](../android/widget/photopicker/EmbeddedPhotoPickerClient.md) object to receive callbacks from photopicker. This value cannot be`null`. |

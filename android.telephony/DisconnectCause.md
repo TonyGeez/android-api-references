@@ -8,7 +8,7 @@ class DisconnectCause
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.DisconnectCause](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#) |
+| ↳ | [android.telephony.DisconnectCause](../android/telephony/DisconnectCause.md) |
 
 Describes the cause of a disconnected call. Those disconnect causes can be converted into a more generic `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause.html#` object. Used in `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCallDisconnectCauseChanged(kotlin.Int,%20kotlin.Int)`.
 

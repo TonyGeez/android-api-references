@@ -3,18 +3,18 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # PreferenceDataStore
 
-Kotlin | [Java](https://developer.android.com/reference/android/preference/PreferenceDataStore "View this page in Java")
+Kotlin | [Java](../android/preference/PreferenceDataStore.md)
 | --- | --- |
 
 ```
 interface PreferenceDataStore
 ```
 
-| [android.preference.PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#) |
+| [android.preference.PreferenceDataStore](../android/preference/PreferenceDataStore.md) |
 
 | **This interface was deprecated in API level 29.**
 |
-| Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](https://developer.android.com/reference/androidx/preference/package-summary.html) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
+| Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](../androidx/preference/_package.md) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
 
 A data store interface to be implemented and provided to the Preferences framework. This can be used to replace the default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#`, if needed.
 

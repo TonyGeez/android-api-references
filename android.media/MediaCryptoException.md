@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaCryptoException
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCryptoException "View this page in Java") 
+Kotlin| [Java](../android/media/MediaCryptoException.md) 
 | --- | --- |
 
 ```
@@ -14,8 +14,8 @@ class MediaCryptoException : Exception, MediaDrmThrowable
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [android.media.MediaCryptoException](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [android.media.MediaCryptoException](../android/media/MediaCryptoException.md) |
 | --- | --- | --- | --- |
 
 Exception thrown if MediaCrypto object could not be instantiated or if unable to perform an operation on the MediaCrypto object.
@@ -24,13 +24,13 @@ Exception thrown if MediaCrypto object could not be instantiated or if unable to
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaCryptoException](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#MediaCryptoException(kotlin.String))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
+| [MediaCryptoException](../android/media/MediaCryptoException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#getErrorContext())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#getOemError())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](https://developer.android.com/reference/kotlin/android/media/MediaCryptoException#getVendorError())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](../android/media/MediaCryptoException.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](../android/media/MediaCryptoException.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](../android/media/MediaCryptoException.md))`()` <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -59,7 +59,7 @@ fun getErrorContext(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an opaque integer that would help the @ [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm) vendor locate the source of the error if available, otherwise 0. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an opaque integer that would help the @ [MediaDrm](../android/media/MediaDrm.md) vendor locate the source of the error if available, otherwise 0. |
 
 ### getOemError
 
@@ -83,4 +83,4 @@ fun getVendorError(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an error code defined by the [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm) plugin vendor if available, otherwise 0. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an error code defined by the [MediaDrm](../android/media/MediaDrm.md) plugin vendor if available, otherwise 0. |

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BitmapShader
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/BitmapShader "View this page in Java")
+Kotlin | [Java](../android/graphics/BitmapShader.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class BitmapShader : Shader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.Shader](https://developer.android.com/reference/kotlin/android/graphics/Shader) ||
-| | ↳ | [android.graphics.BitmapShader](https://developer.android.com/reference/kotlin/android/graphics/BitmapShader#) |
+| ↳ | [android.graphics.Shader](../android/graphics/Shader.md) ||
+| | ↳ | [android.graphics.BitmapShader](../android/graphics/BitmapShader.md) |
 
 Shader used to draw a bitmap as a texture. The bitmap can be repeated or mirrored by setting the tiling mode.
 
@@ -115,9 +115,9 @@ Call this to create a new shader that will draw with a bitmap.
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap): The bitmap to use inside the shader. This value cannot be `null`. |
-| `tileX` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode): The tiling mode for x to draw the bitmap in. This value cannot be `null`. |
-| `tileY` | [Shader.TileMode](https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode): The tiling mode for y to draw the bitmap in. This value cannot be `null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): The bitmap to use inside the shader. This value cannot be `null`. |
+| `tileX` | [Shader.TileMode](../android/graphics/Shader.TileMode.md): The tiling mode for x to draw the bitmap in. This value cannot be `null`. |
+| `tileY` | [Shader.TileMode](../android/graphics/Shader.TileMode.md): The tiling mode for y to draw the bitmap in. This value cannot be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -186,4 +186,4 @@ Draws the BitmapShader with a copy of the given gainmap instead of the gainmap o
 
 | Parameters ||
 |---|---|
-| `overrideGainmap` | [Gainmap](https://developer.android.com/reference/kotlin/android/graphics/Gainmap)?: The gainmap to draw instead, null to use any gainmap on the Bitmap |
+| `overrideGainmap` | [Gainmap](../android/graphics/Gainmap.md)?: The gainmap to draw instead, null to use any gainmap on the Bitmap |

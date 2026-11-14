@@ -11,8 +11,8 @@ open class UnsupportedCallbackException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [javax.security.auth.callback.UnsupportedCallbackException](https://developer.android.com/reference/kotlin/javax/security/auth/callback/UnsupportedCallbackException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [javax.security.auth.callback.UnsupportedCallbackException](../javax/security/auth/callback/UnsupportedCallbackException.md) |
 | --- | --- | --- | --- |
 
 Signals that a`CallbackHandler`does not recognize a particular`Callback`.
@@ -21,12 +21,12 @@ Signals that a`CallbackHandler`does not recognize a particular`Callback`.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedCallbackException](https://developer.android.com/reference/kotlin/javax/security/auth/callback/UnsupportedCallbackException#UnsupportedCallbackException(javax.security.auth.callback.Callback))`(`callback:` ` [Callback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/Callback)!`)` Constructs a`UnsupportedCallbackException`with no detail message. |
-| [UnsupportedCallbackException](https://developer.android.com/reference/kotlin/javax/security/auth/callback/UnsupportedCallbackException#UnsupportedCallbackException(javax.security.auth.callback.Callback,%20kotlin.String))`(`callback:` ` [Callback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/Callback)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a UnsupportedCallbackException with the specified detail message. |
+| [UnsupportedCallbackException](../javax/security/auth/callback/UnsupportedCallbackException.md))`(`callback:` ` [Callback](../javax/security/auth/callback/Callback.md)!`)` Constructs a`UnsupportedCallbackException`with no detail message. |
+| [UnsupportedCallbackException](../javax/security/auth/callback/UnsupportedCallbackException.md))`(`callback:` ` [Callback](../javax/security/auth/callback/Callback.md)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a UnsupportedCallbackException with the specified detail message. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Callback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/Callback)! | [getCallback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/UnsupportedCallbackException#getCallback())`()` Get the unrecognized`Callback`. |
+| open [Callback](../javax/security/auth/callback/Callback.md)! | [getCallback](../javax/security/auth/callback/UnsupportedCallbackException.md))`()` Get the unrecognized`Callback`. |
 
 ## Public constructors
 
@@ -44,7 +44,7 @@ Constructs a`UnsupportedCallbackException`with no detail message.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Callback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/Callback)!:the unrecognized`Callback`. |
+| `callback` | [Callback](../javax/security/auth/callback/Callback.md)!:the unrecognized`Callback`. |
 
 ### UnsupportedCallbackException
 
@@ -62,7 +62,7 @@ Constructs a UnsupportedCallbackException with the specified detail message. A d
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Callback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/Callback)!:the unrecognized`Callback`. <br /> |
+| `callback` | [Callback](../javax/security/auth/callback/Callback.md)!:the unrecognized`Callback`. <br /> |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. |
 
 ## Public methods
@@ -81,4 +81,4 @@ Get the unrecognized`Callback`.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-----------------------------|
-| [Callback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/Callback)! | the unrecognized`Callback`. |
+| [Callback](../javax/security/auth/callback/Callback.md)! | the unrecognized`Callback`. |

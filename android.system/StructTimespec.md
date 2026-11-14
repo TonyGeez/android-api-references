@@ -4,7 +4,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 
 # StructTimespec
 
-Kotlin| [Java](https://developer.android.com/reference/android/system/StructTimespec "View this page in Java") 
+Kotlin| [Java](../android/system/StructTimespec.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StructTimespec : Comparable<StructTimespec!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec#) |
+| ↳ | [android.system.StructTimespec](../android/system/StructTimespec.md) |
 
 Corresponds to C's`struct timespec`from`<time.h>`.
 
@@ -21,20 +21,20 @@ Corresponds to C's`struct timespec`from`<time.h>`.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec#StructTimespec(kotlin.Long,%20kotlin.Long))`(`tv_sec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `tv_nsec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [StructTimespec](../android/system/StructTimespec.md))`(`tv_sec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `tv_nsec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/system/StructTimespec#compareTo(android.system.StructTimespec))`(`other:` ` [StructTimespec](https://developer.android.com/reference/kotlin/android/system/StructTimespec#)!`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/system/StructTimespec#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/system/StructTimespec#hashCode())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/system/StructTimespec.md))`(`other:` ` [StructTimespec](../android/system/StructTimespec.md)!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/system/StructTimespec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/system/StructTimespec.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/system/StructTimespec#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/system/StructTimespec.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_nsec](https://developer.android.com/reference/kotlin/android/system/StructTimespec#tv_nsec:kotlin.Long) Nanoseconds (values are \[0, 999999999\]). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_sec](https://developer.android.com/reference/kotlin/android/system/StructTimespec#tv_sec:kotlin.Long) Seconds part of time of last data modification. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_nsec](../android/system/StructTimespec.md) Nanoseconds (values are \[0, 999999999\]). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_sec](../android/system/StructTimespec.md) Seconds part of time of last data modification. |
 
 ## Public constructors
 

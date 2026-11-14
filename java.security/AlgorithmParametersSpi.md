@@ -10,7 +10,7 @@ abstract class AlgorithmParametersSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.AlgorithmParametersSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#) |
+| ↳ | [java.security.AlgorithmParametersSpi](../java/security/AlgorithmParametersSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`AlgorithmParameters`class, which is used to manage algorithm parameters.
 
@@ -20,19 +20,19 @@ All the abstract methods in this class must be implemented by each cryptographic
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlgorithmParametersSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#AlgorithmParametersSpi())`()` <br /> |
+| [AlgorithmParametersSpi](../java/security/AlgorithmParametersSpi.md))`()` <br /> |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#engineGetEncoded())`()` Returns the parameters in their primary encoding format. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#engineGetEncoded(kotlin.String))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the parameters encoded in the specified format. |
-| abstractT | [engineGetParameterSpec](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#engineGetParameterSpec(java.lang.Class))`(`paramSpec:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>!`)` Returns a (transparent) specification of this parameters object. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](../java/security/AlgorithmParametersSpi.md))`()` Returns the parameters in their primary encoding format. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](../java/security/AlgorithmParametersSpi.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the parameters encoded in the specified format. |
+| abstractT | [engineGetParameterSpec](../java/security/AlgorithmParametersSpi.md))`(`paramSpec:` ` [Class](../java/lang/Class.md)<T>!`)` Returns a (transparent) specification of this parameters object. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#engineInit(kotlin.ByteArray))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Imports the specified parameters and decodes them according to the primary decoding format for parameters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#engineInit(kotlin.ByteArray,%20kotlin.String))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Imports the parameters from`params`and decodes them according to the specified decoding format. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#engineInit(java.security.spec.AlgorithmParameterSpec))`(`paramSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` Initializes this parameters object using the parameters specified in`paramSpec`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParametersSpi.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Imports the specified parameters and decodes them according to the primary decoding format for parameters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParametersSpi.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Imports the parameters from`params`and decodes them according to the specified decoding format. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParametersSpi.md))`(`paramSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes this parameters object using the parameters specified in`paramSpec`. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [engineToString](https://developer.android.com/reference/kotlin/java/security/AlgorithmParametersSpi#engineToString())`()` Returns a formatted string describing the parameters. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [engineToString](../java/security/AlgorithmParametersSpi.md))`()` Returns a formatted string describing the parameters. |
 
 ## Public constructors
 
@@ -99,7 +99,7 @@ Returns a (transparent) specification of this parameters object.`paramSpec`ident
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the parameter specification to be returned |
-| `paramSpec` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>!:the specification class in which the parameters should be returned. |
+| `paramSpec` | [Class](../java/lang/Class.md)\<T\>!:the specification class in which the parameters should be returned. |
 
 | Return ||
 |---|------------------------------|
@@ -161,7 +161,7 @@ Initializes this parameters object using the parameters specified in`paramSpec`.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `paramSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the parameter specification. |
+| `paramSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameter specification. |
 
 | Exceptions ||
 |----------------------------------------------------|--------------------------------------------------------------------------------------------------------|

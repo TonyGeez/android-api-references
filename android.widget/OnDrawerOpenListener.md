@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnDrawerOpenListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerOpenListener "View this page in Java") 
+Kotlin| [Java](../android/widget/SlidingDrawer.OnDrawerOpenListener.md) 
 | --- | --- |
 
 ```
 interface OnDrawerOpenListener
 ```
 
-| [android.widget.SlidingDrawer.OnDrawerOpenListener](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerOpenListener#) |
+| [android.widget.SlidingDrawer.OnDrawerOpenListener](../android/widget/SlidingDrawer.OnDrawerOpenListener.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -24,7 +24,7 @@ Callback invoked when the drawer is opened.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawerOpened](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerOpenListener#onDrawerOpened())`()` Invoked when the drawer becomes fully open. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawerOpened](../android/widget/SlidingDrawer.OnDrawerOpenListener.md))`()` Invoked when the drawer becomes fully open. |
 
 ## Public methods
 

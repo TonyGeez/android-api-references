@@ -8,7 +8,7 @@ class BluetoothGatt : BluetoothProfile
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothGatt](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#) |
+| ↳ | [android.bluetooth.BluetoothGatt](../android/bluetooth/BluetoothGatt.md) |
 
 Public API for the Bluetooth GATT Profile.
 
@@ -174,14 +174,14 @@ The profile is in disconnecting state
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#discoverServices()()` Discovers services offered by a remote device as well as their characteristics and descriptors. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#executeReliableWrite()()` Executes a reliable write transaction for a given remote device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getConnectedDevices()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getConnectedDevices()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getConnectionState(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!)` <br /> |
-| [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getDevice()()` Return the remote bluetooth device this GATT client targets to |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` <br /> |
+| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getDevice()()` Return the remote bluetooth device this GATT client targets to |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` <br /> |
 | --- | --- |
-| [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getService(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService`, if the requested UUID is supported by the remote device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getServices()()` Returns a list of GATT services offered by the remote device. |
+| [BluetoothGattService](../android/bluetooth/BluetoothGattService.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getService(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService`, if the requested UUID is supported by the remote device. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattService](../android/bluetooth/BluetoothGattService.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getServices()()` Returns a list of GATT services offered by the remote device. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)(characteristic: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic!)` Reads the requested characteristic from the associated remote device. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readDescriptor(android.bluetooth.BluetoothGattDescriptor)(descriptor: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor!)` Reads the value for a given descriptor from the associated remote device. |
@@ -634,7 +634,7 @@ fun getConnectionState(device: BluetoothDevice!): Int
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: Remote bluetooth device. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Remote bluetooth device. |
 
 | Return ||
 |---|---|
@@ -697,7 +697,7 @@ For apps targeting `https://developer.android.com/reference/kotlin/android/os/Bu
 
 | Parameters ||
 |---|---|
-| `uuid` | [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)!: UUID of the requested service |
+| `uuid` | [UUID](../java/util/UUID.md)!: UUID of the requested service |
 
 | Return ||
 |---|---|
@@ -737,7 +737,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `characteristic` | [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!: Characteristic to read from the remote device |
+| `characteristic` | [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md)!: Characteristic to read from the remote device |
 
 | Return ||
 |---|---|
@@ -760,7 +760,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `descriptor` | [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!: Descriptor value to read from the remote device |
+| `descriptor` | [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!: Descriptor value to read from the remote device |
 
 | Return ||
 |---|---|
@@ -887,7 +887,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `characteristic` | [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!: The characteristic for which to enable notifications |
+| `characteristic` | [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md)!: The characteristic for which to enable notifications |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Set to true to enable notifications/indications |
 
 | Return ||
@@ -939,7 +939,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `characteristic` | [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic)!: Characteristic to write on the remote device |
+| `characteristic` | [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md)!: Characteristic to write on the remote device |
 
 | Return ||
 |---|---|
@@ -969,7 +969,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `characteristic` | [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic): Characteristic to write on the remote device. This value cannot be `null`. |
+| `characteristic` | [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md): Characteristic to write on the remote device. This value cannot be `null`. |
 | `value` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): This value cannot be `null`. |
 | `writeType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_SIGNED:kotlin.Int` |
 | --- | --- |
@@ -1002,7 +1002,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `descriptor` | [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!: Descriptor to write to the associated remote device |
+| `descriptor` | [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!: Descriptor to write to the associated remote device |
 
 | Return ||
 |---|---|
@@ -1031,7 +1031,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `descriptor` | [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor): Descriptor to write to the associated remote device. This value cannot be `null`. |
+| `descriptor` | [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md): Descriptor to write to the associated remote device. This value cannot be `null`. |
 | `value` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): This value cannot be `null`. |
 
 | Return ||

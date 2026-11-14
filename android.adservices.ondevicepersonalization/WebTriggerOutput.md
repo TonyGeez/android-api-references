@@ -9,7 +9,7 @@ class WebTriggerOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.WebTriggerOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#) |
+| ↳ | [android.adservices.ondevicepersonalization.WebTriggerOutput](../android/adservices/ondevicepersonalization/WebTriggerOutput.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -27,8 +27,8 @@ The result that should be returned by `https://developer.android.com/reference/k
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#getEventLogRecords()()` A list of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord` objects to be written to the EVENTS table. |
-| [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#getRequestLogRecord()()` Persistent data to be written to the REQUESTS table after `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onWebTrigger(android.adservices.ondevicepersonalization.WebTriggerInput,%20android.os.OutcomeReceiver)` completes. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#getEventLogRecords()()` A list of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord` objects to be written to the EVENTS table. |
+| [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#getRequestLogRecord()()` Persistent data to be written to the REQUESTS table after `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onWebTrigger(android.adservices.ondevicepersonalization.WebTriggerInput,%20android.os.OutcomeReceiver)` completes. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#hashCode()()` Returns a hash code value for the object. |
 

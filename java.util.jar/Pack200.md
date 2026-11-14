@@ -10,7 +10,7 @@ abstract class Pack200
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.jar.Pack200](https://developer.android.com/reference/kotlin/java/util/jar/Pack200#) |
+| ↳ | [java.util.jar.Pack200](../java/util/jar/Pack200.md) |
 
 Transforms a JAR file to or from a packed stream in Pack200 format. Please refer to Network Transfer Format JSR 200 Specification at<http://jcp.org/aboutJava/communityprocess/review/jsr200/index.html>
 
@@ -68,19 +68,19 @@ Here is an example using packer and unpacker:
 
 A Pack200 file compressed with gzip can be hosted on HTTP/1.1 web servers. The deployment applications can use "Accept-Encoding=pack200-gzip". This indicates to the server that the client application desires a version of the file encoded with Pack200 and further compressed with gzip. Please refer to [Java Deployment Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/deployment/deployment-guide/pack200.html) for more details and techniques.
 
-Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) to be thrown.
+Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Nested classes ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Packer](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Packer) The packer engine applies various transformations to the input JAR file, making the pack stream highly compressible by a compressor such as gzip or zip. |
-| abstract | [Unpacker](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker) The unpacker engine converts the packed stream to a JAR file. |
+| abstract | [Packer](../java/util/jar/Pack200.Packer.md) The packer engine applies various transformations to the input JAR file, making the pack stream highly compressible by a compressor such as gzip or zip. |
+| abstract | [Unpacker](../java/util/jar/Pack200.Unpacker.md) The unpacker engine converts the packed stream to a JAR file. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Pack200.Packer](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Packer)! | [newPacker](https://developer.android.com/reference/kotlin/java/util/jar/Pack200#newPacker())`()` Obtain new instance of a class that implements Packer. |
-| openstatic [Pack200.Unpacker](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker)! | [newUnpacker](https://developer.android.com/reference/kotlin/java/util/jar/Pack200#newUnpacker())`()` Obtain new instance of a class that implements Unpacker. |
+| openstatic [Pack200.Packer](../java/util/jar/Pack200.Packer.md)! | [newPacker](../java/util/jar/Pack200.md))`()` Obtain new instance of a class that implements Packer. |
+| openstatic [Pack200.Unpacker](../java/util/jar/Pack200.Unpacker.md)! | [newUnpacker](../java/util/jar/Pack200.md))`()` Obtain new instance of a class that implements Unpacker. |
 
 ## Public methods
 
@@ -103,7 +103,7 @@ Note: The returned object is not guaranteed to operate correctly if multiple thr
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------------|
-| [Pack200.Packer](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Packer)! | A newly allocated Packer engine. |
+| [Pack200.Packer](../java/util/jar/Pack200.Packer.md)! | A newly allocated Packer engine. |
 
 ### newUnpacker
 
@@ -124,4 +124,4 @@ Note: The returned object is not guaranteed to operate correctly if multiple thr
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------------------------------------|
-| [Pack200.Unpacker](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker)! | A newly allocated Unpacker engine. |
+| [Pack200.Unpacker](../java/util/jar/Pack200.Unpacker.md)! | A newly allocated Unpacker engine. |

@@ -9,9 +9,9 @@ class BodyFatRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.BodyFatRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.BodyFatRecord](../android/health/connect/datatypes/BodyFatRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the body fat percentage of a user. Each record represents a person's total body fat as a percentage of their total body mass.
@@ -29,7 +29,7 @@ Captures the body fat percentage of a user. Each record represents a person's to
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Percentage](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Percentage) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#getPercentage()()` <br /> |
+| [Percentage](../android/health/connect/datatypes/units/Percentage.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#getPercentage()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyFatRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 

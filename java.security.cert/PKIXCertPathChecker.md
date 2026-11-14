@@ -10,20 +10,20 @@ abstract class PKIXCertPathChecker : CertPathChecker, Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.PKIXCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#) |
+| ↳ | [java.security.cert.PKIXCertPathChecker](../java/security/cert/PKIXCertPathChecker.md) |
 
-| Known Direct Subclasses [PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker) | A`PKIXCertPathChecker`for checking the revocation status of certificates with the PKIX algorithm. | |
+| Known Direct Subclasses [PKIXRevocationChecker](../java/security/cert/PKIXRevocationChecker.md) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [PKIXRevocationChecker](../java/security/cert/PKIXRevocationChecker.md) | A`PKIXCertPathChecker`for checking the revocation status of certificates with the PKIX algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An abstract class that performs one or more checks on an`X509Certificate`.
 
 A concrete implementation of the`PKIXCertPathChecker`class can be created to extend the PKIX certification path validation algorithm. For example, an implementation may check for and process a critical private extension of each certificate in a certification path.
 
-Instances of`PKIXCertPathChecker`are passed as parameters using the [setCertPathCheckers](https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setCertPathCheckers(kotlin.collections.MutableList))or [addCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#addCertPathChecker(java.security.cert.PKIXCertPathChecker))methods of the`PKIXParameters`and`PKIXBuilderParameters`class. Each of the`PKIXCertPathChecker`s #check methods will be called, in turn, for each certificate processed by a PKIX`CertPathValidator`or`CertPathBuilder`implementation.
+Instances of`PKIXCertPathChecker`are passed as parameters using the [setCertPathCheckers](../java/security/cert/PKIXParameters.md))or [addCertPathChecker](../java/security/cert/PKIXParameters.md))methods of the`PKIXParameters`and`PKIXBuilderParameters`class. Each of the`PKIXCertPathChecker`s #check methods will be called, in turn, for each certificate processed by a PKIX`CertPathValidator`or`CertPathBuilder`implementation.
 
-A`PKIXCertPathChecker`may be called multiple times on successive certificates in a certification path. Concrete subclasses are expected to maintain any internal state that may be necessary to check successive certificates. The [init](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#init(kotlin.Boolean))method is used to initialize the internal state of the checker so that the certificates of a new certification path may be checked. A stateful implementation**must** override the [clone](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#clone())method if necessary in order to allow a PKIX`CertPathBuilder`to efficiently backtrack and try other paths. In these situations, the`CertPathBuilder`is able to restore prior path validation states by restoring the cloned`PKIXCertPathChecker`s.
+A`PKIXCertPathChecker`may be called multiple times on successive certificates in a certification path. Concrete subclasses are expected to maintain any internal state that may be necessary to check successive certificates. The [init](../java/security/cert/PKIXCertPathChecker.md))method is used to initialize the internal state of the checker so that the certificates of a new certification path may be checked. A stateful implementation**must** override the [clone](../java/security/cert/PKIXCertPathChecker.md))method if necessary in order to allow a PKIX`CertPathBuilder`to efficiently backtrack and try other paths. In these situations, the`CertPathBuilder`is able to restore prior path validation states by restoring the cloned`PKIXCertPathChecker`s.
 
-The order in which the certificates are presented to the`PKIXCertPathChecker`may be either in the forward direction (from target to most-trusted CA) or in the reverse direction (from most-trusted CA to target). A`PKIXCertPathChecker`implementation**must** support reverse checking (the ability to perform its checks when it is presented with certificates in the reverse direction) and**may** support forward checking (the ability to perform its checks when it is presented with certificates in the forward direction). The [isForwardCheckingSupported](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#isForwardCheckingSupported())method indicates whether forward checking is supported.
+The order in which the certificates are presented to the`PKIXCertPathChecker`may be either in the forward direction (from target to most-trusted CA) or in the reverse direction (from most-trusted CA to target). A`PKIXCertPathChecker`implementation**must** support reverse checking (the ability to perform its checks when it is presented with certificates in the reverse direction) and**may** support forward checking (the ability to perform its checks when it is presented with certificates in the forward direction). The [isForwardCheckingSupported](../java/security/cert/PKIXCertPathChecker.md))method indicates whether forward checking is supported.
 
 Additional input parameters required for executing the check may be specified through constructors of concrete implementations of this class.
 
@@ -35,17 +35,17 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PKIXCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#PKIXCertPathChecker())`()` Default constructor. |
+| [PKIXCertPathChecker](../java/security/cert/PKIXCertPathChecker.md))`()` Default constructor. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#check(java.security.cert.Certificate))`(`cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`)` Performs the check(s) on the specified certificate using its internal state. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#check(java.security.cert.Certificate,%20kotlin.collections.MutableCollection))`(`cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`, `unresolvedCritExts:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Performs the check(s) on the specified certificate using its internal state and removes any critical extensions that it processes from the specified collection of OID strings that represent the unresolved critical extensions. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#clone())`()` Returns a clone of this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](../java/security/cert/PKIXCertPathChecker.md))`(`cert:` ` [Certificate](../java/security/cert/Certificate.md)!`)` Performs the check(s) on the specified certificate using its internal state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](../java/security/cert/PKIXCertPathChecker.md))`(`cert:` ` [Certificate](../java/security/cert/Certificate.md)!`, `unresolvedCritExts:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Performs the check(s) on the specified certificate using its internal state and removes any critical extensions that it processes from the specified collection of OID strings that represent the unresolved critical extensions. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/PKIXCertPathChecker.md))`()` Returns a clone of this object. |
 | --- | --- |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedExtensions](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#getSupportedExtensions())`()` Returns an immutable`Set`of X. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#init(kotlin.Boolean))`(`forward:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes the internal state of this`PKIXCertPathChecker`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForwardCheckingSupported](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker#isForwardCheckingSupported())`()` Indicates if forward checking is supported. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedExtensions](../java/security/cert/PKIXCertPathChecker.md))`()` Returns an immutable`Set`of X. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/cert/PKIXCertPathChecker.md))`(`forward:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes the internal state of this`PKIXCertPathChecker`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForwardCheckingSupported](../java/security/cert/PKIXCertPathChecker.md))`()` Indicates if forward checking is supported. |
 | --- | --- |
 
 ## Protected constructors
@@ -76,7 +76,7 @@ This implementation calls`check(cert, java.util.Collections.<String>emptySet())`
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------|
-| `cert` | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!:the`Certificate`to be checked |
+| `cert` | [Certificate](../java/security/cert/Certificate.md)!:the`Certificate`to be checked |
 
 | Exceptions ||
 |-------------------------------------------------|------------------------------------------------------|
@@ -97,7 +97,7 @@ Performs the check(s) on the specified certificate using its internal state and 
 
 | Parameters ||
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cert` | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!:the`Certificate`to be checked |
+| `cert` | [Certificate](../java/security/cert/Certificate.md)!:the`Certificate`to be checked |
 | `unresolvedCritExts` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:a`Collection`of OID strings representing the current set of unresolved critical extensions |
 
 | Exceptions ||

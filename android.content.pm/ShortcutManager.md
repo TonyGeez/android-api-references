@@ -8,13 +8,13 @@ open class ShortcutManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.ShortcutManager](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#) |
+| ↳ | [android.content.pm.ShortcutManager](../android/content/pm/ShortcutManager.md) |
 
 `ShortcutManager` executes operations on an app's set of *shortcuts* , which represent specific tasks and actions that users can perform within your app. This page lists components of the `ShortcutManager` class that you can use to create and manage sets of shortcuts.
 
 To learn about methods that retrieve information about a single shortcut---including identifiers, type, and status---read the ` https://developer.android.com/reference/kotlin/reference/android/content/pm/ShortcutInfo.html` reference.
 
-For guidance about using shortcuts, see [App shortcuts](https://developer.android.com/reference/kotlin/guide/topics/ui/shortcuts/index.html).
+For guidance about using shortcuts, see [App shortcuts](../guide/topics/ui/shortcuts/index.md).
 
 ### Retrieving class instances
 
@@ -34,20 +34,20 @@ Restricted for SDK Runtime environment in API level 34.
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#addDynamicShortcuts(kotlin.collections.MutableList)(shortcutInfoList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo!>)` Publish the list of dynamic shortcuts. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#createShortcutResultIntent(android.content.pm.ShortcutInfo)(shortcut: https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)` Returns an Intent which can be used by the default launcher to pin a shortcut containing the given `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`. |
+| open [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#createShortcutResultIntent(android.content.pm.ShortcutInfo)(shortcut: https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)` Returns an Intent which can be used by the default launcher to pin a shortcut containing the given `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#disableShortcuts(kotlin.collections.MutableList)(shortcutIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Disable pinned shortcuts. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#disableShortcuts(kotlin.collections.MutableList,%20kotlin.CharSequence)(shortcutIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, disabledMessage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Disable pinned shortcuts, showing the user a custom error message when they try to select the disabled shortcuts. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#enableShortcuts(kotlin.collections.MutableList)(shortcutIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Re-enable pinned shortcuts that were previously disabled. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getDynamicShortcuts()()` Return all dynamic shortcuts from the caller app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getDynamicShortcuts()()` Return all dynamic shortcuts from the caller app. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getIconMaxHeight()()` Return the max height for icons, in pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getIconMaxWidth()()` Return the max width for icons, in pixels. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getManifestShortcuts()()` Return all static (manifest) shortcuts from the caller app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getManifestShortcuts()()` Return all static (manifest) shortcuts from the caller app. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getMaxShortcutCountPerActivity()()` Return the maximum number of static and dynamic shortcuts that each launcher icon can have at a time. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getPinnedShortcuts()()` Return all pinned shortcuts from the caller app. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getShortcuts(kotlin.Int)(matchFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`s that match `matchFlags`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getPinnedShortcuts()()` Return all pinned shortcuts from the caller app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#getShortcuts(kotlin.Int)(matchFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`s that match `matchFlags`. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#isRateLimitingActive()()` Return `true` when rate-limiting is active for the caller app. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#isRequestPinShortcutSupported()()` Returns `true` if the app is running on a device whose default launcher supports `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager#requestPinShortcut(android.content.pm.ShortcutInfo,%20android.content.IntentSender)`. |
@@ -146,7 +146,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `shortcutInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)!\>: This value cannot be `null`. |
+| `shortcutInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\>: This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -170,7 +170,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `shortcut` | [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo): New shortcut to pin. If an app wants to pin an existing (either dynamic or manifest) shortcut, then it only needs to have an ID, and other fields don't have to be set, in which case, the target shortcut must be enabled. If it's a new shortcut, all the mandatory fields, such as a short label, must be set. This value cannot be `null`. |
+| `shortcut` | [ShortcutInfo](../android/content/pm/ShortcutInfo.md): New shortcut to pin. If an app wants to pin an existing (either dynamic or manifest) shortcut, then it only needs to have an ID, and other fields don't have to be set, in which case, the target shortcut must be enabled. If it's a new shortcut, all the mandatory fields, such as a short label, must be set. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -192,7 +192,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 open fun disableShortcuts(shortcutIds: MutableList<String!>): Unit
 ```
 
-Disable pinned shortcuts. For more details, read [Disable shortcuts](https://developer.android.com/reference/kotlin/guide/topics/ui/shortcuts/managing-shortcuts.html#disable-shortcuts).
+Disable pinned shortcuts. For more details, read [Disable shortcuts](../guide/topics/ui/shortcuts/managing-shortcuts.md).
 
 | Parameters ||
 |---|---|
@@ -214,7 +214,7 @@ open fun disableShortcuts(
 ): Unit
 ```
 
-Disable pinned shortcuts, showing the user a custom error message when they try to select the disabled shortcuts. For more details, read [Disable shortcuts](https://developer.android.com/reference/kotlin/guide/topics/ui/shortcuts/managing-shortcuts.html#disable-shortcuts).
+Disable pinned shortcuts, showing the user a custom error message when they try to select the disabled shortcuts. For more details, read [Disable shortcuts](../guide/topics/ui/shortcuts/managing-shortcuts.md).
 
 | Parameters ||
 |---|---|
@@ -372,7 +372,7 @@ open fun isRateLimitingActive(): Boolean
 
 Return `true` when rate-limiting is active for the caller app.
 
-For details, see [Rate limiting](https://developer.android.com/reference/kotlin/guide/topics/ui/shortcuts/managing-shortcuts#rate-limiting).
+For details, see [Rate limiting](../guide/topics/ui/shortcuts/managing-shortcuts.md).
 
 | Exceptions ||
 |---|---|
@@ -411,7 +411,7 @@ This method is useful when posting notifications which are tagged with shortcut 
 
 | Parameters ||
 |---|---|
-| `shortcut` | [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo): This value cannot be `null`. |
+| `shortcut` | [ShortcutInfo](../android/content/pm/ShortcutInfo.md): This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -481,7 +481,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 open fun reportShortcutUsed(shortcutId: String!): Unit
 ```
 
-Apps that publish shortcuts should call this method whenever the user selects the shortcut containing the given ID or when the user completes an action in the app that is equivalent to selecting the shortcut. For more details, read about [tracking shortcut usage](https://developer.android.com/reference/kotlin/guide/topics/ui/shortcuts/managing-shortcuts.html#track-usage).
+Apps that publish shortcuts should call this method whenever the user selects the shortcut containing the given ID or when the user completes an action in the app that is equivalent to selecting the shortcut. For more details, read about [tracking shortcut usage](../guide/topics/ui/shortcuts/managing-shortcuts.md).
 
 The information is accessible via android.app.usage.UsageStatsManager#queryEvents Typically, launcher apps use this information to build a prediction model so that they can promote the shortcuts that are likely to be used at the moment.
 
@@ -511,8 +511,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `shortcut` | [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo): Shortcut to pin. If an app wants to pin an existing (either static or dynamic) shortcut, then it only needs to have an ID. Although other fields don't have to be set, the target shortcut must be enabled. If it's a new shortcut, all the mandatory fields, such as a short label, must be set. This value cannot be `null`. |
-| `resultIntent` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)?: If not null, this intent will be sent when the shortcut is pinned. Use `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getIntentSender()` to create an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#`. To avoid background execution limits, use an unexported, manifest-declared receiver. For more details, see [Creating pinned shortcuts](https://developer.android.com/reference/kotlin/guide/topics/ui/shortcuts/creating-shortcuts.html#pinned). |
+| `shortcut` | [ShortcutInfo](../android/content/pm/ShortcutInfo.md): Shortcut to pin. If an app wants to pin an existing (either static or dynamic) shortcut, then it only needs to have an ID. Although other fields don't have to be set, the target shortcut must be enabled. If it's a new shortcut, all the mandatory fields, such as a short label, must be set. This value cannot be `null`. |
+| `resultIntent` | [IntentSender](../android/content/IntentSender.md)?: If not null, this intent will be sent when the shortcut is pinned. Use `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getIntentSender()` to create an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#`. To avoid background execution limits, use an unexported, manifest-declared receiver. For more details, see [Creating pinned shortcuts](../guide/topics/ui/shortcuts/creating-shortcuts.md). |
 
 | Return ||
 |---|---|
@@ -544,7 +544,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `shortcutInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)!\>: This value cannot be `null`. |
+| `shortcutInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\>: This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -570,7 +570,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `shortcutInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)!\>: This value cannot be `null`. |
+| `shortcutInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\>: This value cannot be `null`. |
 
 | Return ||
 |---|---|

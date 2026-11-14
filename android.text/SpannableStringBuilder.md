@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SpannableStringBuilder
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/SpannableStringBuilder "View this page in Java") 
+Kotlin| [Java](../android/text/SpannableStringBuilder.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class SpannableStringBuilder : Appendable, CharSequence, Editable, GetCha
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#) |
+| ↳ | [android.text.SpannableStringBuilder](../android/text/SpannableStringBuilder.md) |
 
 This is the class for text whose content and markup can both be changed.
 
@@ -21,54 +21,54 @@ This is the class for text whose content and markup can both be changed.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#SpannableStringBuilder())`()` Create a new SpannableStringBuilder with empty contents |
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#SpannableStringBuilder(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Create a new SpannableStringBuilder containing a copy of the specified text, including its spans if any. |
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#SpannableStringBuilder(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new SpannableStringBuilder containing a copy of the specified slice of the specified text, including its spans if any. |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md))`()` Create a new SpannableStringBuilder with empty contents |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Create a new SpannableStringBuilder containing a copy of the specified text, including its spans if any. |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new SpannableStringBuilder containing a copy of the specified slice of the specified text, including its spans if any. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#) | [append](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#append(kotlin.Char))`(`text:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` <br /> |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#) | [append](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#append(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` <br /> |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#) | [append](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | [append](../android/text/SpannableStringBuilder.md))`(`text:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` <br /> |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | [append](../android/text/SpannableStringBuilder.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` <br /> |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | [append](../android/text/SpannableStringBuilder.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | [append](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#append(kotlin.CharSequence,%20kotlin.Any,%20kotlin.Int))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends the character sequence`text`and spans`what`over the appended part. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#clear())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearSpans](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#clearSpans())`()` <br /> |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | [append](../android/text/SpannableStringBuilder.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends the character sequence`text`and spans`what`over the appended part. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/text/SpannableStringBuilder.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearSpans](../android/text/SpannableStringBuilder.md))`()` <br /> |
 | --- | --- |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | [delete](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#delete(kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#get(kotlin.Int))`(`where:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the char at the specified offset within the buffer. |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | [delete](../android/text/SpannableStringBuilder.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/text/SpannableStringBuilder.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](../android/text/SpannableStringBuilder.md))`(`where:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the char at the specified offset within the buffer. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getChars](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `destoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copy the specified range of chars from this buffer into the specified array, beginning at the specified offset. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InputFilter](https://developer.android.com/reference/kotlin/android/text/InputFilter)!\>! | [getFilters](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getFilters())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanEnd](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getSpanEnd(kotlin.Any))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the buffer offset of the end of the specified markup object, or -1 if it is not attached to this buffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getChars](../android/text/SpannableStringBuilder.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `destoff:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copy the specified range of chars from this buffer into the specified array, beginning at the specified offset. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InputFilter](../android/text/InputFilter.md)!\>! | [getFilters](../android/text/SpannableStringBuilder.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanEnd](../android/text/SpannableStringBuilder.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the buffer offset of the end of the specified markup object, or -1 if it is not attached to this buffer. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanFlags](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getSpanFlags(kotlin.Any))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the flags of the end of the specified markup object, or 0 if it is not attached to this buffer. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanStart](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getSpanStart(kotlin.Any))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the buffer offset of the beginning of the specified markup object, or -1 if it is not attached to this buffer. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getSpans](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getSpans(kotlin.Int,%20kotlin.Int,%20java.lang.Class))`(`queryStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `queryEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `kind:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>?`)` Return an array of the spans of the specified type that overlap the specified range of the buffer. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanFlags](../android/text/SpannableStringBuilder.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the flags of the end of the specified markup object, or 0 if it is not attached to this buffer. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanStart](../android/text/SpannableStringBuilder.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the buffer offset of the beginning of the specified markup object, or -1 if it is not attached to this buffer. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getSpans](../android/text/SpannableStringBuilder.md))`(`queryStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `queryEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `kind:` ` [Class](../java/lang/Class.md)<T>?`)` Return an array of the spans of the specified type that overlap the specified range of the buffer. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextRunCursor](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getTextRunCursor(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Paint))`(`contextStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dir:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cursorOpt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `p:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!`)` Returns the next cursor position in the run. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextWatcherDepth](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#getTextWatcherDepth())`()` Returns the depth of TextWatcher callbacks. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#hashCode())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextRunCursor](../android/text/SpannableStringBuilder.md))`(`contextStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dir:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cursorOpt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `p:` ` [Paint](../android/graphics/Paint.md)!`)` Returns the next cursor position in the run. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextWatcherDepth](../android/text/SpannableStringBuilder.md))`()` Returns the depth of TextWatcher callbacks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/text/SpannableStringBuilder.md))`()` <br /> |
 | --- | --- |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | [insert](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#insert(kotlin.Int,%20kotlin.CharSequence))`(`where:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | [insert](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#insert(kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`where:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSpanTransition](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#nextSpanTransition(kotlin.Int,%20kotlin.Int,%20java.lang.Class))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `kind:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Return the next offset after`start`but less than or equal to`limit`where a span of the specified type begins or ends. |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | [insert](../android/text/SpannableStringBuilder.md))`(`where:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | [insert](../android/text/SpannableStringBuilder.md))`(`where:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSpanTransition](../android/text/SpannableStringBuilder.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `kind:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Return the next offset after`start`but less than or equal to`limit`where a span of the specified type begins or ends. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpan](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#removeSpan(kotlin.Any))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Remove the specified markup object from the buffer. |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | [replace](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#replace(kotlin.Int,%20kotlin.Int,%20kotlin.CharSequence))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
-| open [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | [replace](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#replace(kotlin.Int,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `tbstart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tbend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpan](../android/text/SpannableStringBuilder.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Remove the specified markup object from the buffer. |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | [replace](../android/text/SpannableStringBuilder.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
+| open [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | [replace](../android/text/SpannableStringBuilder.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tb:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `tbstart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tbend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilters](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#setFilters(kotlin.Array))`(`filters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [InputFilter](https://developer.android.com/reference/kotlin/android/text/InputFilter)!>!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpan](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#setSpan(kotlin.Any,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Mark the specified range of text with the specified object. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#subSequence(kotlin.Int,%20kotlin.Int))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a new CharSequence containing a copy of the specified range of this buffer, including the overlapping spans. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilters](../android/text/SpannableStringBuilder.md))`(`filters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [InputFilter](../android/text/InputFilter.md)!>!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpan](../android/text/SpannableStringBuilder.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Mark the specified range of text with the specified object. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](../android/text/SpannableStringBuilder.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a new CharSequence containing a copy of the specified range of this buffer, including the overlapping spans. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#toString())`()` Return a String containing a copy of the chars in this buffer. |
-| openstatic [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | [valueOf](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#valueOf(kotlin.CharSequence))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/SpannableStringBuilder.md))`()` Return a String containing a copy of the chars in this buffer. |
+| openstatic [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | [valueOf](../android/text/SpannableStringBuilder.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#length:kotlin.Int) Return the number of chars in the buffer. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../android/text/SpannableStringBuilder.md) Return the number of chars in the buffer. |
 
 ## Public constructors
 
@@ -121,7 +121,7 @@ open fun append(text: Char): SpannableStringBuilder
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#) | A reference to this`Appendable` |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | A reference to this`Appendable` |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -141,7 +141,7 @@ open fun append(text: CharSequence?): SpannableStringBuilder
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#) | A reference to this`Appendable` |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | A reference to this`Appendable` |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -168,7 +168,7 @@ open fun append(
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#) | A reference to this`Appendable` |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | A reference to this`Appendable` |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------------------------------------|
@@ -187,18 +187,18 @@ open fun append(
 ): SpannableStringBuilder!
 ```
 
-Appends the character sequence`text`and spans`what`over the appended part. See [Spanned](https://developer.android.com/reference/kotlin/android/text/Spanned) for an explanation of what the flags mean.
+Appends the character sequence`text`and spans`what`over the appended part. See [Spanned](../android/text/Spanned.md) for an explanation of what the flags mean.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the character sequence to append. |
 | `what` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the object to be spanned over the appended text. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):see [Spanned](https://developer.android.com/reference/kotlin/android/text/Spanned). |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):see [Spanned](../android/text/Spanned.md). |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | this`SpannableStringBuilder`. |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | this`SpannableStringBuilder`. |
 
 ### clear
 
@@ -347,7 +347,7 @@ Return an array of the spans of the specified type that overlap the specified ra
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `kind` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>?:This value may be`null`. |
+| `kind` | [Class](../java/lang/Class.md)\<T\>?:This value may be`null`. |
 
 ### getTextRunCursor
 
@@ -381,7 +381,7 @@ If cursorOpt is CURSOR_AT and the offset is not a valid cursor position, this re
 | --- | --- |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the cursor position to move from |
 | `cursorOpt` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):how to move the cursor, one of CURSOR_AFTER, CURSOR_AT_OR_AFTER, CURSOR_BEFORE, CURSOR_AT_OR_BEFORE, or CURSOR_AT |
-| `p` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!:the Paint object that is requesting this information |
+| `p` | [Paint](../android/graphics/Paint.md)!:the Paint object that is requesting this information |
 | --- | --- |
 
 | Return ||
@@ -486,7 +486,7 @@ open fun replace(
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [SpannableStringBuilder](https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder#)! | a reference to this object. |
+| [SpannableStringBuilder](../android/text/SpannableStringBuilder.md)! | a reference to this object. |
 
 ### setFilters
 

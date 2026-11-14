@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # PrepareGetCredentialResponse
 
-Kotlin | [Java](https://developer.android.com/reference/android/credentials/PrepareGetCredentialResponse "View this page in Java")
+Kotlin | [Java](../android/credentials/PrepareGetCredentialResponse.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PrepareGetCredentialResponse
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.PrepareGetCredentialResponse](https://developer.android.com/reference/kotlin/android/credentials/PrepareGetCredentialResponse#) |
+| ↳ | [android.credentials.PrepareGetCredentialResponse](../android/credentials/PrepareGetCredentialResponse.md) |
 
 A response object that prefetches user app credentials and provides metadata about them. It can then be used to issue the full credential retrieval flow via the `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#getCredential(android.content.Context,%20android.credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method to perform the remaining flows such as consent collection and credential selection, to officially retrieve a credential.
 
@@ -23,7 +23,7 @@ A response object that prefetches user app credentials and provides metadata abo
 
 | Public methods ||
 |---|---|
-| [PrepareGetCredentialResponse.PendingGetCredentialHandle](https://developer.android.com/reference/kotlin/android/credentials/PrepareGetCredentialResponse.PendingGetCredentialHandle) | `https://developer.android.com/reference/kotlin/android/credentials/PrepareGetCredentialResponse#getPendingGetCredentialHandle()()` Returns a handle that represents this pending get-credential operation. |
+| [PrepareGetCredentialResponse.PendingGetCredentialHandle](../android/credentials/PrepareGetCredentialResponse.PendingGetCredentialHandle.md) | `https://developer.android.com/reference/kotlin/android/credentials/PrepareGetCredentialResponse#getPendingGetCredentialHandle()()` Returns a handle that represents this pending get-credential operation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/PrepareGetCredentialResponse#hasAuthenticationResults()()` Returns true if the user has any candidate authentication actions (locked credential supplier), and false otherwise. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/PrepareGetCredentialResponse#hasCredentialResults(kotlin.String)(credentialType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true if the user has any candidate credentials for the given `credentialType`, and false otherwise. |
 | --- | --- |

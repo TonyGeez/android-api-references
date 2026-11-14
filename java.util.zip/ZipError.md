@@ -11,11 +11,11 @@ open class ZipError : InternalError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||||
-| | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError.html#) |||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) ||||
+| | | ↳ | [java.lang.VirtualMachineError](../java/lang/VirtualMachineError.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.InternalError](https://developer.android.com/reference/kotlin/java/lang/InternalError.html#) ||
-| | | | | ↳ | [java.util.zip.ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError#) |
+| | | | ↳ | [java.lang.InternalError](../java/lang/InternalError.md) ||
+| | | | | ↳ | [java.util.zip.ZipError](../java/util/zip/ZipError.md) |
 
 Signals that an unrecoverable error has occurred.
 
@@ -23,7 +23,7 @@ Signals that an unrecoverable error has occurred.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ZipError](https://developer.android.com/reference/kotlin/java/util/zip/ZipError#ZipError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ZipError with the given detail message. |
+| [ZipError](../java/util/zip/ZipError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ZipError with the given detail message. |
 
 ## Public constructors
 

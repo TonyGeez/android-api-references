@@ -5,14 +5,14 @@ Also in [T Extensions 3](https://developer.android.com/sdkExtensions)
 
 # ObserverCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/observer/ObserverCallback "View this page in Java") 
+Kotlin| [Java](../android/app/appsearch/observer/ObserverCallback.md) 
 | --- | --- |
 
 ```
 interface ObserverCallback
 ```
 
-| [android.app.appsearch.observer.ObserverCallback](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback#) |
+| [android.app.appsearch.observer.ObserverCallback](../android/app/appsearch/observer/ObserverCallback.md) |
 
 An interface which apps can implement to subscribe to notifications of changes to AppSearch data.
 
@@ -20,8 +20,8 @@ An interface which apps can implement to subscribe to notifications of changes t
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDocumentChanged](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback#onDocumentChanged(android.app.appsearch.observer.DocumentChangeInfo))`(`changeInfo:` ` [DocumentChangeInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/DocumentChangeInfo)`)` Callback to trigger after document changes (documents added, updated or removed). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSchemaChanged](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback#onSchemaChanged(android.app.appsearch.observer.SchemaChangeInfo))`(`changeInfo:` ` [SchemaChangeInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo)`)` Callback to trigger after schema changes (schema type added, updated or removed). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDocumentChanged](../android/app/appsearch/observer/ObserverCallback.md))`(`changeInfo:` ` [DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md)`)` Callback to trigger after document changes (documents added, updated or removed). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSchemaChanged](../android/app/appsearch/observer/ObserverCallback.md))`(`changeInfo:` ` [SchemaChangeInfo](../android/app/appsearch/observer/SchemaChangeInfo.md)`)` Callback to trigger after schema changes (schema type added, updated or removed). |
 
 ## Public methods
 
@@ -38,7 +38,7 @@ Callback to trigger after document changes (documents added, updated or removed)
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `changeInfo` | [DocumentChangeInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/DocumentChangeInfo):Information about the nature of the change. This value cannot be`null`. |
+| `changeInfo` | [DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md):Information about the nature of the change. This value cannot be`null`. |
 
 ### onSchemaChanged
 
@@ -53,4 +53,4 @@ Callback to trigger after schema changes (schema type added, updated or removed)
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `changeInfo` | [SchemaChangeInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo):Information about the nature of the change. This value cannot be`null`. |
+| `changeInfo` | [SchemaChangeInfo](../android/app/appsearch/observer/SchemaChangeInfo.md):Information about the nature of the change. This value cannot be`null`. |

@@ -2,12 +2,12 @@
 
 # android.net.eap
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/eap/package-summary "View this page in Java")
+Kotlin| [Java](../android/net/eap/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [EapAkaInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo) | EapAkaInfo represents data provided by the server during EAP AKA authentication |
+| [EapAkaInfo](../android/net/eap/EapAkaInfo.md) | EapAkaInfo represents data provided by the server during EAP AKA authentication |
 | --- | --- |
-| [EapInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapInfo) | EapInfo represents data provided by the server during EAP authentication |
-| [EapSessionConfig](https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig) | EapSessionConfig represents a container for EAP method configuration. |
+| [EapInfo](../android/net/eap/EapInfo.md) | EapInfo represents data provided by the server during EAP authentication |
+| [EapSessionConfig](../android/net/eap/EapSessionConfig.md) | EapSessionConfig represents a container for EAP method configuration. |

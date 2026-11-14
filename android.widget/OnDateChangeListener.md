@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # OnDateChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/CalendarView.OnDateChangeListener "View this page in Java") 
+Kotlin| [Java](../android/widget/CalendarView.OnDateChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnDateChangeListener
 ```
 
-| [android.widget.CalendarView.OnDateChangeListener](https://developer.android.com/reference/kotlin/android/widget/CalendarView.OnDateChangeListener#) |
+| [android.widget.CalendarView.OnDateChangeListener](../android/widget/CalendarView.OnDateChangeListener.md) |
 
 The callback used to indicate the user changes the date.
 
@@ -19,7 +19,7 @@ The callback used to indicate the user changes the date.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSelectedDayChange](https://developer.android.com/reference/kotlin/android/widget/CalendarView.OnDateChangeListener#onSelectedDayChange(android.widget.CalendarView,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`view:` ` [CalendarView](https://developer.android.com/reference/kotlin/android/widget/CalendarView)`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called upon change of the selected day. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSelectedDayChange](../android/widget/CalendarView.OnDateChangeListener.md))`(`view:` ` [CalendarView](../android/widget/CalendarView.md)`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called upon change of the selected day. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ Called upon change of the selected day.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [CalendarView](https://developer.android.com/reference/kotlin/android/widget/CalendarView):The view associated with this listener. This value cannot be`null`. |
+| `view` | [CalendarView](../android/widget/CalendarView.md):The view associated with this listener. This value cannot be`null`. |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The year that was set. |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The month that was set \[0-11\]. |
 | --- | --- |

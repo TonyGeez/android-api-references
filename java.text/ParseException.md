@@ -11,11 +11,11 @@ open class ParseException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [java.text.ParseException](https://developer.android.com/reference/kotlin/java/text/ParseException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [java.text.ParseException](../java/text/ParseException.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [StringPrepParseException](https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException.html#) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [StringPrepParseException](https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException.html#) | Exception that signals an error has occurred while parsing the input to StringPrep or IDNA. | |
+| Known Direct Subclasses [StringPrepParseException](../android/icu/text/StringPrepParseException.md) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [StringPrepParseException](../android/icu/text/StringPrepParseException.md) | Exception that signals an error has occurred while parsing the input to StringPrep or IDNA. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Signals that an error has been reached unexpectedly while parsing.
@@ -24,11 +24,11 @@ Signals that an error has been reached unexpectedly while parsing.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ParseException](https://developer.android.com/reference/kotlin/java/text/ParseException#ParseException(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a ParseException with the specified detail message and offset. |
+| [ParseException](../java/text/ParseException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a ParseException with the specified detail message and offset. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorOffset](https://developer.android.com/reference/kotlin/java/text/ParseException#getErrorOffset())`()` Returns the position where the error was found. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorOffset](../java/text/ParseException.md))`()` Returns the position where the error was found. |
 
 ## Public constructors
 

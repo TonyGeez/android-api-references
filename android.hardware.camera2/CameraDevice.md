@@ -8,7 +8,7 @@ abstract class CameraDevice : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#) |
+| ↳ | [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) |
 
 The CameraDevice class is a representation of a single camera connected to an Android device, allowing for fine-grain control of image capture and post-processing at high frame rates.
 
@@ -41,8 +41,8 @@ A given camera device may provide support at one of several levels defined in `h
 | Public methods ||
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#close()()` Close the connection to this camera device as quickly as possible. |
-| abstract [CaptureRequest.Builder](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
-| open [CaptureRequest.Builder](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int,%20kotlin.collections.MutableSet)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, physicalCameraIdSet: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
+| abstract [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
+| open [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int,%20kotlin.collections.MutableSet)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, physicalCameraIdSet: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)(config: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration!)` Create a new `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession` using a `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration` helper object that aggregates all supported parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new camera capture session by providing the target output set of Surfaces to the camera device. |
@@ -50,7 +50,7 @@ A given camera device may provide support at one of several levels defined in `h
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new constrained high speed capture session. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createExtensionSession(android.hardware.camera2.params.ExtensionSessionConfiguration)(extensionConfiguration: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration)` Initialize a specific device-specific extension augmented camera capture session. |
-| abstract [CaptureRequest.Builder](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessCaptureRequest(android.hardware.camera2.TotalCaptureResult)(inputResult: https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for a new reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` from a `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult`. |
+| abstract [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessCaptureRequest(android.hardware.camera2.TotalCaptureResult)(inputResult: https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for a new reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` from a `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult`. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSession(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(inputConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration, outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new reprocessable camera capture session by providing the desired reprocessing input Surface configuration and the target output set of Surfaces to the camera device. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSessionByConfigurations(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(inputConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration, outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new reprocessable camera capture session by providing the desired reprocessing input configuration and output `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` to the camera device. |
@@ -789,7 +789,7 @@ A `https://developer.android.com/reference/kotlin/android/hardware/camera2/param
 
 | Parameters ||
 |---|---|
-| `config` | [SessionConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration)!: A session configuration (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration`). |
+| `config` | [SessionConfiguration](../android/hardware/camera2/params/SessionConfiguration.md)!: A session configuration (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration`). |
 
 | Exceptions ||
 |---|---|
@@ -824,9 +824,9 @@ Create a new camera capture session by providing the target output set of Surfac
 
 | Parameters ||
 |---|---|
-| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!\>: The new set of Surfaces that should be made available as targets for captured image data. This value cannot be `null`. |
-| `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): The callback to notify about the status of the new capture session. This value cannot be `null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](../android/view/Surface.md)!\>: The new set of Surfaces that should be made available as targets for captured image data. This value cannot be `null`. |
+| `callback` | [CameraCaptureSession.StateCallback](../android/hardware/camera2/CameraCaptureSession.StateCallback.md): The callback to notify about the status of the new capture session. This value cannot be `null`. |
+| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 | --- | --- |
 
 | Exceptions ||
@@ -862,7 +862,7 @@ Create a new camera capture session by providing the target output set of Surfac
 
 | Parameters ||
 |---|---|
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: This value may be `null`. |
+| `handler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -887,9 +887,9 @@ Create a new constrained high speed capture session.
 
 | Parameters ||
 |---|---|
-| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!\>: The new set of Surfaces that should be made available as targets for captured high speed image data. This value cannot be `null`. |
-| `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): The callback to notify about the status of the new capture session. This value cannot be `null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](../android/view/Surface.md)!\>: The new set of Surfaces that should be made available as targets for captured high speed image data. This value cannot be `null`. |
+| `callback` | [CameraCaptureSession.StateCallback](../android/hardware/camera2/CameraCaptureSession.StateCallback.md): The callback to notify about the status of the new capture session. This value cannot be `null`. |
+| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 | --- | --- |
 
 | Exceptions ||
@@ -934,7 +934,7 @@ At the very minimum the initialization expects either one valid output surface f
 
 | Parameters ||
 |---|---|
-| `extensionConfiguration` | [ExtensionSessionConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration): extension configuration. This value cannot be `null`. |
+| `extensionConfiguration` | [ExtensionSessionConfiguration](../android/hardware/camera2/params/ExtensionSessionConfiguration.md): extension configuration. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -959,7 +959,7 @@ Each reprocess `https://developer.android.com/reference/kotlin/android/hardware/
 
 | Parameters ||
 |---|---|
-| `inputResult` | [TotalCaptureResult](https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult): The capture result of the output image or one of the output images used to generate the reprocess input image for this capture request. This value cannot be `null`. |
+| `inputResult` | [TotalCaptureResult](../android/hardware/camera2/TotalCaptureResult.md): The capture result of the output image or one of the output images used to generate the reprocess input image for this capture request. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1000,11 +1000,11 @@ Create a new reprocessable camera capture session by providing the desired repro
 
 | Parameters ||
 |---|---|
-| `inputConfig` | [InputConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration): The configuration for the input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` This value cannot be `null`. |
-| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!\>: The new set of Surfaces that should be made available as targets for captured image data. This value cannot be `null`. |
-| `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): The callback to notify about the status of the new capture session. This value cannot be `null`. |
+| `inputConfig` | [InputConfiguration](../android/hardware/camera2/params/InputConfiguration.md): The configuration for the input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` This value cannot be `null`. |
+| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](../android/view/Surface.md)!\>: The new set of Surfaces that should be made available as targets for captured image data. This value cannot be `null`. |
+| `callback` | [CameraCaptureSession.StateCallback](../android/hardware/camera2/CameraCaptureSession.StateCallback.md): The callback to notify about the status of the new capture session. This value cannot be `null`. |
 | --- | --- |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 
 | Exceptions ||
 |---|---|
@@ -1044,11 +1044,11 @@ Create a new reprocessable camera capture session by providing the desired repro
 
 | Parameters ||
 |---|---|
-| `inputConfig` | [InputConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration): This value cannot be `null`. |
-| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration)!\>: This value cannot be `null`. |
-| `callback` | [CameraCaptureSession.StateCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback): This value cannot be `null`. |
+| `inputConfig` | [InputConfiguration](../android/hardware/camera2/params/InputConfiguration.md): This value cannot be `null`. |
+| `outputs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!\>: This value cannot be `null`. |
+| `callback` | [CameraCaptureSession.StateCallback](../android/hardware/camera2/CameraCaptureSession.StateCallback.md): This value cannot be `null`. |
 | --- | --- |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: This value may be `null`. |
+| `handler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -1135,7 +1135,7 @@ For other cases where concurrent captures of a stream combination are not suppor
 
 | Parameters ||
 |---|---|
-| `sessionConfig` | [SessionConfiguration](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration): This value cannot be `null`. |
+| `sessionConfig` | [SessionConfiguration](../android/hardware/camera2/params/SessionConfiguration.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

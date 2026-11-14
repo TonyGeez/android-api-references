@@ -10,12 +10,12 @@ abstract class AbstractMap<K : Any!, V : Any!> : MutableMap<K, V>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap#) |
+| ↳ | [java.util.AbstractMap](../java/util/AbstractMap.md) |
 
-| Known Direct Subclasses [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap), [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap), [EnumMap](https://developer.android.com/reference/kotlin/java/util/EnumMap), [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap), [IdentityHashMap](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap), [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap), [WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. | | [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) | A scalable concurrent [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) implementation. | | [EnumMap](https://developer.android.com/reference/kotlin/java/util/EnumMap) | A specialized [Map](https://developer.android.com/reference/kotlin/java/util/Map) implementation for use with enum type keys. | | [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap) | Hash table based implementation of the`Map`interface. | | [IdentityHashMap](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap) | This class implements the`Map`interface with a hash table, using reference-equality in place of object-equality when comparing keys (and values). | | [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap) | A Red-Black tree based [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) implementation. | | [WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap) | Hash table based implementation of the`Map`interface, with*weak keys*. | |
+| Known Direct Subclasses [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md), [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md), [EnumMap](../java/util/EnumMap.md), [HashMap](../java/util/HashMap.md), [IdentityHashMap](../java/util/IdentityHashMap.md), [TreeMap](../java/util/TreeMap.md), [WeakHashMap](../java/util/WeakHashMap.md) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. | | [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md) | A scalable concurrent [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md) implementation. | | [EnumMap](../java/util/EnumMap.md) | A specialized [Map](../java/util/Map.md) implementation for use with enum type keys. | | [HashMap](../java/util/HashMap.md) | Hash table based implementation of the`Map`interface. | | [IdentityHashMap](../java/util/IdentityHashMap.md) | This class implements the`Map`interface with a hash table, using reference-equality in place of object-equality when comparing keys (and values). | | [TreeMap](../java/util/TreeMap.md) | A Red-Black tree based [NavigableMap](../java/util/NavigableMap.md) implementation. | | [WeakHashMap](../java/util/WeakHashMap.md) | Hash table based implementation of the`Map`interface, with*weak keys*. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [LinkedHashMap](https://developer.android.com/reference/kotlin/java/util/LinkedHashMap) |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [LinkedHashMap](https://developer.android.com/reference/kotlin/java/util/LinkedHashMap) | Hash table and linked list implementation of the`Map`interface, with well-defined encounter order. | |
+| Known Indirect Subclasses [LinkedHashMap](../java/util/LinkedHashMap.md) |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [LinkedHashMap](../java/util/LinkedHashMap.md) | Hash table and linked list implementation of the`Map`interface, with well-defined encounter order. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class provides a skeletal implementation of the`Map`interface, to minimize the effort required to implement this interface.
@@ -34,41 +34,41 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Nested classes ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [SimpleEntry](https://developer.android.com/reference/kotlin/java/util/AbstractMap.SimpleEntry) An Entry maintaining a key and a value. |
-| open | [SimpleImmutableEntry](https://developer.android.com/reference/kotlin/java/util/AbstractMap.SimpleImmutableEntry) An unmodifiable Entry maintaining a key and a value. |
+| open | [SimpleEntry](../java/util/AbstractMap.SimpleEntry.md) An Entry maintaining a key and a value. |
+| open | [SimpleImmutableEntry](../java/util/AbstractMap.SimpleImmutableEntry.md) An unmodifiable Entry maintaining a key and a value. |
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
-| [AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap#AbstractMap())`()` Sole constructor. |
+| [AbstractMap](../java/util/AbstractMap.md))`()` Sole constructor. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/AbstractMap#clear())`()` Removes all of the mappings from this map (optional operation). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/AbstractMap#containsKey(java.util.AbstractMap.K))`(`key:` `K?`)` Returns`true`if this map contains a mapping for the specified key. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/AbstractMap#containsValue(java.util.AbstractMap.V))`(`value:` `V?`)` Returns`true`if this map maps one or more keys to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/AbstractMap.md))`()` Removes all of the mappings from this map (optional operation). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../java/util/AbstractMap.md))`(`key:` `K?`)` Returns`true`if this map contains a mapping for the specified key. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](../java/util/AbstractMap.md))`(`value:` `V?`)` Returns`true`if this map maps one or more keys to the specified value. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/AbstractMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
-| openV? | [get](https://developer.android.com/reference/kotlin/java/util/AbstractMap#get(java.util.AbstractMap.K))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/AbstractMap#hashCode())`()` Returns the hash code value for this map. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/AbstractMap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
+| openV? | [get](../java/util/AbstractMap.md))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/AbstractMap.md))`()` Returns the hash code value for this map. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/AbstractMap#isEmpty())`()` Returns`true`if this map contains no key-value mappings. |
-| openV? | [put](https://developer.android.com/reference/kotlin/java/util/AbstractMap#put(java.util.AbstractMap.K,%20java.util.AbstractMap.V))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this map (optional operation). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](https://developer.android.com/reference/kotlin/java/util/AbstractMap#putAll(kotlin.collections.Map))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map (optional operation). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/AbstractMap.md))`()` Returns`true`if this map contains no key-value mappings. |
+| openV? | [put](../java/util/AbstractMap.md))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this map (optional operation). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](../java/util/AbstractMap.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map (optional operation). |
 | --- | --- |
-| openV? | [remove](https://developer.android.com/reference/kotlin/java/util/AbstractMap#remove(java.util.AbstractMap.K))`(`key:` `K?`)` Removes the mapping for a key from this map if it is present (optional operation). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/AbstractMap#toString())`()` Returns a string representation of this map. |
+| openV? | [remove](../java/util/AbstractMap.md))`(`key:` `K?`)` Removes the mapping for a key from this map if it is present (optional operation). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/AbstractMap.md))`()` Returns a string representation of this map. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/AbstractMap#clone())`()` Returns a shallow copy of this`AbstractMap`instance: the keys and values themselves are not cloned. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/AbstractMap.md))`()` Returns a shallow copy of this`AbstractMap`instance: the keys and values themselves are not cloned. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/AbstractMap#entries:kotlin.collections.MutableSet) <br /> |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/AbstractMap#keys:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the keys contained in this map. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/AbstractMap#size:kotlin.Int) Returns the number of key-value mappings in this map. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](../java/util/AbstractMap.md) <br /> |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](../java/util/AbstractMap.md) Returns a [Set](../java/util/Set.md) view of the keys contained in this map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/AbstractMap.md) Returns the number of key-value mappings in this map. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](https://developer.android.com/reference/kotlin/java/util/AbstractMap#values:kotlin.collections.MutableCollection) Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) view of the values contained in this map. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](../java/util/AbstractMap.md) Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. |
 
 ## Protected constructors
 
@@ -175,7 +175,7 @@ Returns the value to which the specified key is mapped, or`null`if this map cont
 
 More formally, if this map contains a mapping from a key`k`to a value`v`such that`Objects.equals(key, k)`, then this method returns`v`; otherwise it returns`null`. (There can be at most one such mapping.)
 
-If this map permits null values, then a return value of`null`does not*necessarily* indicate that the map contains no mapping for the key; it's also possible that the map explicitly maps the key to`null`. The [containsKey](https://developer.android.com/reference/kotlin/java/util/Map#containsKey(kotlin.Any))operation may be used to distinguish these two cases.
+If this map permits null values, then a return value of`null`does not*necessarily* indicate that the map contains no mapping for the key; it's also possible that the map explicitly maps the key to`null`. The [containsKey](../java/util/Map.md))operation may be used to distinguish these two cases.
 
 | Parameters ||
 |-------|-----------------------------------------------------|
@@ -198,7 +198,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun hashCode(): Int
 ```
 
-Returns the hash code value for this map. The hash code of a map is defined to be the sum of the hash codes of each entry in the map's`entrySet()`view. This ensures that`m1.equals(m2)`implies that`m1.hashCode()==m2.hashCode()`for any two maps`m1`and`m2`, as required by the general contract of [Object.hashCode](https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()).
+Returns the hash code value for this map. The hash code of a map is defined to be the sum of the hash codes of each entry in the map's`entrySet()`view. This ensures that`m1.equals(m2)`implies that`m1.hashCode()==m2.hashCode()`for any two maps`m1`and`m2`, as required by the general contract of [Object.hashCode](../java/lang/Object.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------|
@@ -206,8 +206,8 @@ Returns the hash code value for this map. The hash code of a map is defined to b
 
 **See Also**
 
-- [java.util.Map.Entry#hashCode()](https://developer.android.com/reference/kotlin/java/util/AbstractMap#)
-- [java.lang.Object#equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)) 
+- [java.util.Map.Entry#hashCode()](../java/util/AbstractMap.md)
+- [java.lang.Object#equals(Object)](../java/lang/Object.md)) 
 
 ### isEmpty
 
@@ -234,7 +234,7 @@ open fun put(
 ): V?
 ```
 
-Associates the specified value with the specified key in this map (optional operation). If the map previously contained a mapping for the key, the old value is replaced by the specified value. (A map`m`is said to contain a mapping for a key`k`if and only if [m.containsKey(k)](https://developer.android.com/reference/kotlin/java/util/Map#containsKey(kotlin.Any))would return`true`.)
+Associates the specified value with the specified key in this map (optional operation). If the map previously contained a mapping for the key, the old value is replaced by the specified value. (A map`m`is said to contain a mapping for a key`k`if and only if [m.containsKey(k)](../java/util/Map.md))would return`true`.)
 
 | Parameters ||
 |---------|----------------------------------------------------------|
@@ -261,7 +261,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun putAll(from: Map<out K, V>): Unit
 ```
 
-Copies all of the mappings from the specified map to this map (optional operation). The effect of this call is equivalent to that of calling [put(k, v)](https://developer.android.com/reference/kotlin/java/util/Map#put(java.util.Map.K,%20java.util.Map.V))on this map once for each mapping from key`k`to value`v`in the specified map. The behavior of this operation is undefined if the specified map is modified while the operation is in progress. If the specified map has a defined [encounter order](https://developer.android.com/reference/kotlin/java/util/SequencedCollection#encounter), processing of its mappings generally occurs in that order.
+Copies all of the mappings from the specified map to this map (optional operation). The effect of this call is equivalent to that of calling [put(k, v)](../java/util/Map.md))on this map once for each mapping from key`k`to value`v`in the specified map. The behavior of this operation is undefined if the specified map is modified while the operation is in progress. If the specified map has a defined [encounter order](../java/util/SequencedCollection.md), processing of its mappings generally occurs in that order.
 
 | Parameters ||
 |-----|-----------------------------------|
@@ -314,7 +314,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toString(): String
 ```
 
-Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's`entrySet`view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters`", "`(comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by [String.valueOf(Object)](https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)).
+Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's`entrySet`view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters`", "`(comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by [String.valueOf(Object)](../java/lang/String.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------|
@@ -362,7 +362,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val keys: MutableSet<K>
 ```
 
-Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set) view of the keys contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
+Returns a [Set](../java/util/Set.md) view of the keys contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------|
@@ -390,7 +390,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val values: MutableCollection<V>
 ```
 
-Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. If the map is modified while an iteration over the collection is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The collection supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`and`clear`operations. It does not support the`add`or`addAll`operations.
+Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. If the map is modified while an iteration over the collection is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The collection supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`and`clear`operations. It does not support the`add`or`addAll`operations.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ContextParams
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/ContextParams "View this page in Java") 
+Kotlin| [Java](../android/content/ContextParams.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class ContextParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.ContextParams](https://developer.android.com/reference/kotlin/android/content/ContextParams#) |
+| ↳ | [android.content.ContextParams](../android/content/ContextParams.md) |
 
-This class represents rules around how a context being created via [Context.createContext](https://developer.android.com/reference/kotlin/android/content/Context#createContext(android.content.ContextParams))should behave.
+This class represents rules around how a context being created via [Context.createContext](../android/content/Context.md))should behave.
 
 One of the dimensions to customize is how permissions should behave. For example, you can specify how permission accesses from a context should be attributed in the platform's permission tracking system.
 
@@ -25,13 +25,13 @@ The two main types of attribution are: against an attribution tag which is an ar
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/content/ContextParams.Builder) Builder for creating a [ContextParams](https://developer.android.com/reference/kotlin/android/content/ContextParams#). |
+| | [Builder](../android/content/ContextParams.Builder.md) Builder for creating a [ContextParams](../android/content/ContextParams.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAttributionTag](https://developer.android.com/reference/kotlin/android/content/ContextParams#getAttributionTag())`()` <br /> |
-| [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource)? | [getNextAttributionSource](https://developer.android.com/reference/kotlin/android/content/ContextParams#getNextAttributionSource())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldRegisterAttributionSource](https://developer.android.com/reference/kotlin/android/content/ContextParams#shouldRegisterAttributionSource())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAttributionTag](../android/content/ContextParams.md))`()` <br /> |
+| [AttributionSource](../android/content/AttributionSource.md)? | [getNextAttributionSource](../android/content/ContextParams.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldRegisterAttributionSource](../android/content/ContextParams.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -58,7 +58,7 @@ fun getNextAttributionSource(): AttributionSource?
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource)? | The receiving attribution source. This value may be`null`. |
+| [AttributionSource](../android/content/AttributionSource.md)? | The receiving attribution source. This value may be`null`. |
 
 ### shouldRegisterAttributionSource
 

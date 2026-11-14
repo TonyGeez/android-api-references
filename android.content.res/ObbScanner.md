@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # ObbScanner
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/res/ObbScanner "View this page in Java") 
+Kotlin| [Java](../android/content/res/ObbScanner.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ open class ObbScanner
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.res.ObbScanner](https://developer.android.com/reference/kotlin/android/content/res/ObbScanner#) |
+| ↳ | [android.content.res.ObbScanner](../android/content/res/ObbScanner.md) |
 
-Class to scan Opaque Binary Blob (OBB) files. Use this to get information about an OBB file for use in a program via [ObbInfo](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo).
+Class to scan Opaque Binary Blob (OBB) files. Use this to get information about an OBB file for use in a program via [ObbInfo](../android/content/res/ObbInfo.md).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [ObbInfo](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo)! | [getObbInfo](https://developer.android.com/reference/kotlin/android/content/res/ObbScanner#getObbInfo(kotlin.String))`(`filePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Scan a file for OBB information. |
+| openstatic [ObbInfo](../android/content/res/ObbInfo.md)! | [getObbInfo](../android/content/res/ObbScanner.md))`(`filePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Scan a file for OBB information. |
 
 ## Public methods
 
@@ -41,7 +41,7 @@ Scan a file for OBB information.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [ObbInfo](https://developer.android.com/reference/kotlin/android/content/res/ObbInfo)! | ObbInfo object information corresponding to the file path |
+| [ObbInfo](../android/content/res/ObbInfo.md)! | ObbInfo object information corresponding to the file path |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------|

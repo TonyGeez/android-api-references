@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # ProtoOutputStream
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/proto/ProtoOutputStream "View this page in Java") 
+Kotlin| [Java](../android/util/proto/ProtoOutputStream.md) 
 | --- | --- |
 
 ```
@@ -13,104 +13,104 @@ class ProtoOutputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.proto.ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#) |
+| ↳ | [android.util.proto.ProtoOutputStream](../android/util/proto/ProtoOutputStream.md) |
 
 Class to write to a protobuf stream.
 
 This API is not as convenient or type safe as the standard protobuf classes. If possible, the best recommended library is to use protobuf lite. However, in environments (such as the Android platform itself), a more memory efficient version is necessary.
 
-Each write method takes an ID code from the protoc generated classes and the value to write. To make a nested object, call [start(long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#start(kotlin.Long))and then [end(long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#end(kotlin.Long))when you are done.
+Each write method takes an ID code from the protoc generated classes and the value to write. To make a nested object, call [start(long)](../android/util/proto/ProtoOutputStream.md))and then [end(long)](../android/util/proto/ProtoOutputStream.md))when you are done.
 
-The ID codes have type information embedded into them, so if you call the incorrect function you will get an [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#).
+The ID codes have type information embedded into them, so if you call the incorrect function you will get an [IllegalArgumentException](../java/lang/IllegalArgumentException.md).
 
-To retrieve the encoded protobuf stream, call [getBytes()](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getBytes()). stream as the top-level objects are finished.
+To retrieve the encoded protobuf stream, call [getBytes()](../android/util/proto/ProtoOutputStream.md)). stream as the top-level objects are finished.
 
 ## Summary
 
 | Constants ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_MASK:kotlin.Long) Bit mask for selecting the field count when reading a field id that is used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_PACKED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_PACKED:kotlin.Long) Repeated packed field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_REPEATED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_REPEATED:kotlin.Long) Repeated field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_MASK](../android/util/proto/ProtoOutputStream.md) Bit mask for selecting the field count when reading a field id that is used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_PACKED](../android/util/proto/ProtoOutputStream.md) Repeated packed field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_REPEATED](../android/util/proto/ProtoOutputStream.md) Repeated field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_COUNT_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SHIFT:kotlin.Int) Bit offset for building a field id to be used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_SINGLE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SINGLE:kotlin.Long) Single field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_UNKNOWN](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_UNKNOWN:kotlin.Long) Unknown field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_COUNT_SHIFT](../android/util/proto/ProtoOutputStream.md) Bit offset for building a field id to be used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_SINGLE](../android/util/proto/ProtoOutputStream.md) Single field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_COUNT_UNKNOWN](../android/util/proto/ProtoOutputStream.md) Unknown field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_ID_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_ID_SHIFT:kotlin.Int) Number of bits to shift the field number to form a tag. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_BOOL](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_BOOL:kotlin.Long) Field type code for bool fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_BYTES](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_BYTES:kotlin.Long) Field type code for bytes fields. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_ID_SHIFT](../android/util/proto/ProtoOutputStream.md) Number of bits to shift the field number to form a tag. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_BOOL](../android/util/proto/ProtoOutputStream.md) Field type code for bool fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_BYTES](../android/util/proto/ProtoOutputStream.md) Field type code for bytes fields. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_DOUBLE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_DOUBLE:kotlin.Long) Field type code for double fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_ENUM](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_ENUM:kotlin.Long) Field type code for enum fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_FIXED32](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_FIXED32:kotlin.Long) Field type code for fixed32 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_DOUBLE](../android/util/proto/ProtoOutputStream.md) Field type code for double fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_ENUM](../android/util/proto/ProtoOutputStream.md) Field type code for enum fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_FIXED32](../android/util/proto/ProtoOutputStream.md) Field type code for fixed32 fields. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_FIXED64](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_FIXED64:kotlin.Long) Field type code for fixed64 fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_FLOAT:kotlin.Long) Field type code for float fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_INT32](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_INT32:kotlin.Long) Field type code for int32 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_FIXED64](../android/util/proto/ProtoOutputStream.md) Field type code for fixed64 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_FLOAT](../android/util/proto/ProtoOutputStream.md) Field type code for float fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_INT32](../android/util/proto/ProtoOutputStream.md) Field type code for int32 fields. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_INT64](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_INT64:kotlin.Long) Field type code for int64 fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_MASK:kotlin.Long) Mask for the field types stored in a fieldId. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_MESSAGE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_MESSAGE:kotlin.Long) Field type code for message fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_INT64](../android/util/proto/ProtoOutputStream.md) Field type code for int64 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_MASK](../android/util/proto/ProtoOutputStream.md) Mask for the field types stored in a fieldId. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_MESSAGE](../android/util/proto/ProtoOutputStream.md) Field type code for message fields. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SFIXED32](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_SFIXED32:kotlin.Long) Field type code for sfixed32 fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SFIXED64](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_SFIXED64:kotlin.Long) Field type code for sfixed64 fields. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_SHIFT:kotlin.Int) Position of the field type in a (long) fieldId. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SFIXED32](../android/util/proto/ProtoOutputStream.md) Field type code for sfixed32 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SFIXED64](../android/util/proto/ProtoOutputStream.md) Field type code for sfixed64 fields. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_SHIFT](../android/util/proto/ProtoOutputStream.md) Position of the field type in a (long) fieldId. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SINT32](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_SINT32:kotlin.Long) Field type code for sint32 fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SINT64](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_SINT64:kotlin.Long) Field type code for sint64 fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_STRING:kotlin.Long) Field type code for string fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SINT32](../android/util/proto/ProtoOutputStream.md) Field type code for sint32 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_SINT64](../android/util/proto/ProtoOutputStream.md) Field type code for sint64 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_STRING](../android/util/proto/ProtoOutputStream.md) Field type code for string fields. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_UINT32](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_UINT32:kotlin.Long) Field type code for uint32 fields. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_UINT64](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_TYPE_UINT64:kotlin.Long) Field type code for uint64 fields. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_END_GROUP](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#WIRE_TYPE_END_GROUP:kotlin.Int) End group wire type code. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_UINT32](../android/util/proto/ProtoOutputStream.md) Field type code for uint32 fields. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [FIELD_TYPE_UINT64](../android/util/proto/ProtoOutputStream.md) Field type code for uint64 fields. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_END_GROUP](../android/util/proto/ProtoOutputStream.md) End group wire type code. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_FIXED32](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#WIRE_TYPE_FIXED32:kotlin.Int) Fixed32 wire type code. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_FIXED64](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#WIRE_TYPE_FIXED64:kotlin.Int) Fixed64 wire type code. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_LENGTH_DELIMITED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#WIRE_TYPE_LENGTH_DELIMITED:kotlin.Int) Length delimited wire type code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_FIXED32](../android/util/proto/ProtoOutputStream.md) Fixed32 wire type code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_FIXED64](../android/util/proto/ProtoOutputStream.md) Fixed64 wire type code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_LENGTH_DELIMITED](../android/util/proto/ProtoOutputStream.md) Length delimited wire type code. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#WIRE_TYPE_MASK:kotlin.Int) Mask to select the wire type from a tag. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_START_GROUP](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#WIRE_TYPE_START_GROUP:kotlin.Int) Start group wire type code. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_VARINT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#WIRE_TYPE_VARINT:kotlin.Int) Varint wire type code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_MASK](../android/util/proto/ProtoOutputStream.md) Mask to select the wire type from a tag. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_START_GROUP](../android/util/proto/ProtoOutputStream.md) Start group wire type code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIRE_TYPE_VARINT](../android/util/proto/ProtoOutputStream.md) Varint wire type code. |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#ProtoOutputStream())`()` Construct a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#) with the default chunk size. |
-| [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#ProtoOutputStream(kotlin.Int))`(`chunkSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Construct a [with the given chunk size.](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getBytes()) |
-| [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#ProtoOutputStream(java.io.OutputStream))`(`stream:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)`)` Construct a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#) that sits on top of an [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#). |
+| [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md))`()` Construct a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md) with the default chunk size. |
+| [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md))`(`chunkSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Construct a [with the given chunk size.](../android/util/proto/ProtoOutputStream.md)) |
+| [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md))`(`stream:` ` [OutputStream](../java/io/OutputStream.md)`)` Construct a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md) that sits on top of an [OutputStream](../java/io/OutputStream.md). |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkFieldId](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#checkFieldId(kotlin.Long,%20kotlin.Long))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `expectedFlags:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Validates that the fieldId provided is of the type and count from expectedType. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#dump(kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Dump debugging data about the buffers with the given log tag. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#end(kotlin.Long))`(`token:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` End the object started by start() that returned token. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkFieldId](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `expectedFlags:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Validates that the fieldId provided is of the type and count from expectedType. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](../android/util/proto/ProtoOutputStream.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Dump debugging data about the buffers with the given log tag. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../android/util/proto/ProtoOutputStream.md))`(`token:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` End the object started by start() that returned token. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#flush())`()` Write remaining data to the output stream. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getBytes](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getBytes())`()` Finish the encoding of the data, and return a byte\[\] with the protobuf formatted data. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFieldCountString](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getFieldCountString(kotlin.Long))`(`fieldCount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Get the developer-usable name of a field count. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../android/util/proto/ProtoOutputStream.md))`()` Write remaining data to the output stream. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getBytes](../android/util/proto/ProtoOutputStream.md))`()` Finish the encoding of the data, and return a byte\[\] with the protobuf formatted data. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFieldCountString](../android/util/proto/ProtoOutputStream.md))`(`fieldCount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Get the developer-usable name of a field count. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFieldIdString](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getFieldIdString(kotlin.Long))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Get a debug string for a fieldId. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFieldTypeString](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getFieldTypeString(kotlin.Long))`(`fieldType:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Get the developer-usable name of a field type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRawSize](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getRawSize())`()` Returns the total size of the data that has been written, after full protobuf encoding has occurred. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFieldIdString](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Get a debug string for a fieldId. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFieldTypeString](../android/util/proto/ProtoOutputStream.md))`(`fieldType:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Get the developer-usable name of a field type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRawSize](../android/util/proto/ProtoOutputStream.md))`()` Returns the total size of the data that has been written, after full protobuf encoding has occurred. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getWireTypeString](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getWireTypeString(kotlin.Int))`(`wireType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the developer-usable name of a wire type. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [makeFieldId](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#makeFieldId(kotlin.Int,%20kotlin.Long))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fieldFlags:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Combine a fieldId (the field keys in the proto file) and the field flags. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [makeToken](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#makeToken(kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`tagSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `repeated:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `depth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make a token. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getWireTypeString](../android/util/proto/ProtoOutputStream.md))`(`wireType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the developer-usable name of a wire type. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [makeFieldId](../android/util/proto/ProtoOutputStream.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fieldFlags:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Combine a fieldId (the field keys in the proto file) and the field flags. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [makeToken](../android/util/proto/ProtoOutputStream.md))`(`tagSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `repeated:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `depth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make a token. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [start](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#start(kotlin.Long))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Start a sub object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [token2String](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#token2String(kotlin.Long))`(`token:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Return a debugging string of a token. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Boolean))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Write a boolean value for the given fieldId. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [start](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Start a sub object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [token2String](../android/util/proto/ProtoOutputStream.md))`(`token:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Return a debugging string of a token. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Write a boolean value for the given fieldId. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.ByteArray))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Write a byte\[\] value for the given fieldId. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Double))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Write a value for the given fieldId. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Float))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Write a value for the given fieldId. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Write a byte\[\] value for the given fieldId. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Write a value for the given fieldId. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Write a value for the given fieldId. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Int))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Write a value for the given fieldId. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.String))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Write a string value for the given fieldId. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Long))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Write a value for the given fieldId. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Write a value for the given fieldId. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Write a string value for the given fieldId. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/util/proto/ProtoOutputStream.md))`(`fieldId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Write a value for the given fieldId. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTag](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#writeTag(kotlin.Int,%20kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `wireType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Write an individual field tag by hand. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTag](../android/util/proto/ProtoOutputStream.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `wireType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Write an individual field tag by hand. |
 
 ## Constants
 
@@ -120,18 +120,18 @@ To retrieve the encoded protobuf stream, call [getBytes()](https://developer.and
 static val FIELD_COUNT_MASK: Long
 ```
 
-Bit mask for selecting the field count when reading a field id that is used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. 
+Bit mask for selecting the field count when reading a field id that is used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. 
 
  Value: 16492674416640L
 
 **See Also**
 
-- [#FIELD_COUNT_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SHIFT:kotlin.Int)
-- [#FIELD_COUNT_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_MASK:kotlin.Long)
-- [#FIELD_COUNT_UNKNOWN](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_UNKNOWN:kotlin.Long)
-- [#FIELD_COUNT_SINGLE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SINGLE:kotlin.Long)
-- [#FIELD_COUNT_REPEATED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_REPEATED:kotlin.Long)
-- [#FIELD_COUNT_PACKED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_PACKED:kotlin.Long) 
+- [#FIELD_COUNT_SHIFT](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_MASK](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_UNKNOWN](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_SINGLE](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_REPEATED](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_PACKED](../android/util/proto/ProtoOutputStream.md) 
 
 ### FIELD_COUNT_PACKED
 
@@ -139,17 +139,17 @@ Bit mask for selecting the field count when reading a field id that is used with
 static val FIELD_COUNT_PACKED: Long
 ```
 
-Repeated packed field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. 
+Repeated packed field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. 
 
  Value: 5497558138880L
 
 **See Also**
 
-- [#FIELD_COUNT_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SHIFT:kotlin.Int)
-- [#FIELD_COUNT_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_MASK:kotlin.Long)
-- [#FIELD_COUNT_UNKNOWN](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_UNKNOWN:kotlin.Long)
-- [#FIELD_COUNT_SINGLE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SINGLE:kotlin.Long)
-- [#FIELD_COUNT_REPEATED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_REPEATED:kotlin.Long) 
+- [#FIELD_COUNT_SHIFT](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_MASK](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_UNKNOWN](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_SINGLE](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_REPEATED](../android/util/proto/ProtoOutputStream.md) 
 
 ### FIELD_COUNT_REPEATED
 
@@ -157,17 +157,17 @@ Repeated packed field count, encoded into a field id used with a [ProtoOutputStr
 static val FIELD_COUNT_REPEATED: Long
 ```
 
-Repeated field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. 
+Repeated field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. 
 
  Value: 2199023255552L
 
 **See Also**
 
-- [#FIELD_COUNT_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SHIFT:kotlin.Int)
-- [#FIELD_COUNT_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_MASK:kotlin.Long)
-- [#FIELD_COUNT_UNKNOWN](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_UNKNOWN:kotlin.Long)
-- [#FIELD_COUNT_SINGLE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SINGLE:kotlin.Long)
-- [#FIELD_COUNT_PACKED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_PACKED:kotlin.Long) 
+- [#FIELD_COUNT_SHIFT](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_MASK](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_UNKNOWN](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_SINGLE](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_PACKED](../android/util/proto/ProtoOutputStream.md) 
 
 ### FIELD_COUNT_SHIFT
 
@@ -175,17 +175,17 @@ Repeated field count, encoded into a field id used with a [ProtoOutputStream](ht
 static val FIELD_COUNT_SHIFT: Int
 ```
 
-Bit offset for building a field id to be used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`. 
+Bit offset for building a field id to be used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`. 
 
  Value: 40
 
 **See Also**
 
-- [#FIELD_COUNT_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_MASK:kotlin.Long)
-- [#FIELD_COUNT_UNKNOWN](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_UNKNOWN:kotlin.Long)
-- [#FIELD_COUNT_SINGLE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SINGLE:kotlin.Long)
-- [#FIELD_COUNT_REPEATED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_REPEATED:kotlin.Long)
-- [#FIELD_COUNT_PACKED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_PACKED:kotlin.Long) 
+- [#FIELD_COUNT_MASK](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_UNKNOWN](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_SINGLE](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_REPEATED](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_PACKED](../android/util/proto/ProtoOutputStream.md) 
 
 ### FIELD_COUNT_SINGLE
 
@@ -193,17 +193,17 @@ Bit offset for building a field id to be used with a [ProtoOutputStream](https:/
 static val FIELD_COUNT_SINGLE: Long
 ```
 
-Single field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. 
+Single field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. 
 
  Value: 1099511627776L
 
 **See Also**
 
-- [#FIELD_COUNT_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SHIFT:kotlin.Int)
-- [#FIELD_COUNT_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_MASK:kotlin.Long)
-- [#FIELD_COUNT_UNKNOWN](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_UNKNOWN:kotlin.Long)
-- [#FIELD_COUNT_REPEATED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_REPEATED:kotlin.Long)
-- [#FIELD_COUNT_PACKED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_PACKED:kotlin.Long) 
+- [#FIELD_COUNT_SHIFT](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_MASK](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_UNKNOWN](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_REPEATED](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_PACKED](../android/util/proto/ProtoOutputStream.md) 
 
 ### FIELD_COUNT_UNKNOWN
 
@@ -211,17 +211,17 @@ Single field count, encoded into a field id used with a [ProtoOutputStream](http
 static val FIELD_COUNT_UNKNOWN: Long
 ```
 
-Unknown field count, encoded into a field id used with a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#)`.write(...)`method. 
+Unknown field count, encoded into a field id used with a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md)`.write(...)`method. 
 
  Value: 0L
 
 **See Also**
 
-- [#FIELD_COUNT_SHIFT](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SHIFT:kotlin.Int)
-- [#FIELD_COUNT_MASK](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_MASK:kotlin.Long)
-- [#FIELD_COUNT_SINGLE](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_SINGLE:kotlin.Long)
-- [#FIELD_COUNT_REPEATED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_REPEATED:kotlin.Long)
-- [#FIELD_COUNT_PACKED](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#FIELD_COUNT_PACKED:kotlin.Long) 
+- [#FIELD_COUNT_SHIFT](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_MASK](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_SINGLE](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_REPEATED](../android/util/proto/ProtoOutputStream.md)
+- [#FIELD_COUNT_PACKED](../android/util/proto/ProtoOutputStream.md) 
 
 ### FIELD_ID_SHIFT
 
@@ -252,7 +252,7 @@ Number of bits to shift the field number to form a tag.
 static val FIELD_TYPE_BOOL: Long
 ```
 
-Field type code for bool fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, boolean)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Boolean))method. 
+Field type code for bool fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, boolean)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 34359738368L
 
@@ -272,7 +272,7 @@ Field type code for bytes fields. Used to build constants in generated code for 
 static val FIELD_TYPE_DOUBLE: Long
 ```
 
-Field type code for double fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, double)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Double))method. 
+Field type code for double fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, double)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 4294967296L
 
@@ -282,7 +282,7 @@ Field type code for double fields. Used to build constants in generated code for
 static val FIELD_TYPE_ENUM: Long
 ```
 
-Field type code for enum fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Int))method. 
+Field type code for enum fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 60129542144L
 
@@ -292,7 +292,7 @@ Field type code for enum fields. Used to build constants in generated code for u
 static val FIELD_TYPE_FIXED32: Long
 ```
 
-Field type code for fixed32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Int))method. 
+Field type code for fixed32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 30064771072L
 
@@ -302,7 +302,7 @@ Field type code for fixed32 fields. Used to build constants in generated code fo
 static val FIELD_TYPE_FIXED64: Long
 ```
 
-Field type code for fixed64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Long))method. 
+Field type code for fixed64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 25769803776L
 
@@ -312,7 +312,7 @@ Field type code for fixed64 fields. Used to build constants in generated code fo
 static val FIELD_TYPE_FLOAT: Long
 ```
 
-Field type code for float fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, float)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Float))method. 
+Field type code for float fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, float)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 8589934592L
 
@@ -322,7 +322,7 @@ Field type code for float fields. Used to build constants in generated code for 
 static val FIELD_TYPE_INT32: Long
 ```
 
-Field type code for int32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Int))method. 
+Field type code for int32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 21474836480L
 
@@ -332,7 +332,7 @@ Field type code for int32 fields. Used to build constants in generated code for 
 static val FIELD_TYPE_INT64: Long
 ```
 
-Field type code for int64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Long))method. 
+Field type code for int64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 12884901888L
 
@@ -352,7 +352,7 @@ Mask for the field types stored in a fieldId. Leaves a whole byte for future exp
 static val FIELD_TYPE_MESSAGE: Long
 ```
 
-Field type code for message fields. Used to build constants in generated code for use with the [ProtoOutputStream.start(long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#start(kotlin.Long))method. 
+Field type code for message fields. Used to build constants in generated code for use with the [ProtoOutputStream.start(long)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 47244640256L
 
@@ -362,7 +362,7 @@ Field type code for message fields. Used to build constants in generated code fo
 static val FIELD_TYPE_SFIXED32: Long
 ```
 
-Field type code for sfixed32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Int))method. 
+Field type code for sfixed32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 64424509440L
 
@@ -372,7 +372,7 @@ Field type code for sfixed32 fields. Used to build constants in generated code f
 static val FIELD_TYPE_SFIXED64: Long
 ```
 
-Field type code for sfixed64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Long))method. 
+Field type code for sfixed64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 68719476736L
 
@@ -392,7 +392,7 @@ Position of the field type in a (long) fieldId.
 static val FIELD_TYPE_SINT32: Long
 ```
 
-Field type code for sint32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Int))method. 
+Field type code for sint32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 73014444032L
 
@@ -402,7 +402,7 @@ Field type code for sint32 fields. Used to build constants in generated code for
 static val FIELD_TYPE_SINT64: Long
 ```
 
-Field type code for sint64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Long))method. 
+Field type code for sint64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 77309411328L
 
@@ -412,7 +412,7 @@ Field type code for sint64 fields. Used to build constants in generated code for
 static val FIELD_TYPE_STRING: Long
 ```
 
-Field type code for string fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, String)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.String))method. 
+Field type code for string fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, String)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 38654705664L
 
@@ -422,7 +422,7 @@ Field type code for string fields. Used to build constants in generated code for
 static val FIELD_TYPE_UINT32: Long
 ```
 
-Field type code for uint32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Int))method. 
+Field type code for uint32 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, int)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 55834574848L
 
@@ -432,7 +432,7 @@ Field type code for uint32 fields. Used to build constants in generated code for
 static val FIELD_TYPE_UINT64: Long
 ```
 
-Field type code for uint64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#write(kotlin.Long,%20kotlin.Long))method. 
+Field type code for uint64 fields. Used to build constants in generated code for use with the [ProtoOutputStream.write(long, long)](../android/util/proto/ProtoOutputStream.md))method. 
 
  Value: 17179869184L
 
@@ -541,9 +541,9 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 ProtoOutputStream()
 ```
 
-Construct a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#) with the default chunk size.
+Construct a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md) with the default chunk size.
 
-This is for an in-memory proto. The caller should use [getBytes()](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getBytes())for the result. 
+This is for an in-memory proto. The caller should use [getBytes()](../android/util/proto/ProtoOutputStream.md))for the result. 
 
 ### ProtoOutputStream
 
@@ -551,7 +551,7 @@ This is for an in-memory proto. The caller should use [getBytes()](https://devel
 ProtoOutputStream(chunkSize: Int)
 ```
 
-Construct a [with the given chunk size.](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getBytes()) 
+Construct a [with the given chunk size.](../android/util/proto/ProtoOutputStream.md)) 
 
 ### ProtoOutputStream
 
@@ -561,13 +561,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 ProtoOutputStream(stream: OutputStream)
 ```
 
-Construct a [ProtoOutputStream](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#) that sits on top of an [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#).
+Construct a [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md) that sits on top of an [OutputStream](../java/io/OutputStream.md).
 
-The [flush()](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#flush())method must be called when done writing to flush any remaining data, although data \*may\* be written at intermediate points within the writing as well.
+The [flush()](../android/util/proto/ProtoOutputStream.md))method must be called when done writing to flush any remaining data, although data \*may\* be written at intermediate points within the writing as well.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------|
-| `stream` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#):This value cannot be`null`. |
+| `stream` | [OutputStream](../java/io/OutputStream.md):This value cannot be`null`. |
 
 ## Public methods
 
@@ -594,7 +594,7 @@ The count must match according to this truth table to pass the check: expectedFl
 
 | Exceptions ||
 |---|----------------------------------------------------------------------------------------------------------------------------------|
-| | [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) if it is not. |
+| | [IllegalArgumentException](../java/lang/IllegalArgumentException.md) if it is not. |
 
 ### dump
 
@@ -622,7 +622,7 @@ End the object started by start() that returned token.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `token` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The token returned from [start(long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#start(kotlin.Long)) |
+| `token` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The token returned from [start(long)](../android/util/proto/ProtoOutputStream.md)) |
 
 ### flush
 
@@ -632,7 +632,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun flush(): Unit
 ```
 
-Write remaining data to the output stream. If there is no output stream, this function does nothing. Any currently open objects (i.e. ones that have not had [end(long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#end(kotlin.Long))called for them will not be written). Whether this writes objects that are closed if there are remaining open objects is undefined (current implementation does not write it, future ones will). For now, can either call [getBytes()](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#getBytes())or [flush()](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#flush()), but not both. 
+Write remaining data to the output stream. If there is no output stream, this function does nothing. Any currently open objects (i.e. ones that have not had [end(long)](../android/util/proto/ProtoOutputStream.md))called for them will not be written). Whether this writes objects that are closed if there are remaining open objects is undefined (current implementation does not write it, future ones will). For now, can either call [getBytes()](../android/util/proto/ProtoOutputStream.md))or [flush()](../android/util/proto/ProtoOutputStream.md)), but not both. 
 
 ### getBytes
 
@@ -773,7 +773,7 @@ Start a sub object.
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The token to call [end(long)](https://developer.android.com/reference/kotlin/android/util/proto/ProtoOutputStream#end(kotlin.Long))with. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The token to call [end(long)](../android/util/proto/ProtoOutputStream.md))with. |
 
 ### token2String
 
@@ -802,7 +802,7 @@ fun write(
 
 Write a boolean value for the given fieldId.
 
-If the field is not a bool field, an [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) will be thrown.
+If the field is not a bool field, an [IllegalStateException](../java/lang/IllegalStateException.md) will be thrown.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------|

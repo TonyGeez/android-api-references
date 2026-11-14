@@ -10,7 +10,7 @@ open class BitSet : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#) |
+| ↳ | [java.util.BitSet](../java/util/BitSet.md) |
 
 This class implements a vector of bits that grows as needed. Each component of the bit set has a`boolean`value. The bits of a`BitSet`are indexed by nonnegative integers. Individual indexed bits can be examined, set, or cleared. One`BitSet`may be used to modify the contents of another`BitSet`through logical AND, logical inclusive OR, and logical exclusive OR operations.
 
@@ -26,57 +26,57 @@ A`BitSet`is not safe for multithreaded use without external synchronization.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#BitSet())`()` Creates a new bit set. |
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#BitSet(kotlin.Int))`(`nbits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a bit set whose initial size is large enough to explicitly represent bits with indices in the range`0`through`nbits-1`. |
+| [BitSet](../java/util/BitSet.md))`()` Creates a new bit set. |
+| [BitSet](../java/util/BitSet.md))`(`nbits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a bit set whose initial size is large enough to explicitly represent bits with indices in the range`0`through`nbits-1`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [and](https://developer.android.com/reference/kotlin/java/util/BitSet#and(java.util.BitSet))`(`set:` ` [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!`)` Performs a logical**AND**of this target bit set with the argument bit set. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [andNot](https://developer.android.com/reference/kotlin/java/util/BitSet#andNot(java.util.BitSet))`(`set:` ` [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!`)` Clears all of the bits in this`BitSet`whose corresponding bit is set in the specified`BitSet`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cardinality](https://developer.android.com/reference/kotlin/java/util/BitSet#cardinality())`()` Returns the number of bits set to`true`in this`BitSet`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [and](../java/util/BitSet.md))`(`set:` ` [BitSet](../java/util/BitSet.md)!`)` Performs a logical**AND**of this target bit set with the argument bit set. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [andNot](../java/util/BitSet.md))`(`set:` ` [BitSet](../java/util/BitSet.md)!`)` Clears all of the bits in this`BitSet`whose corresponding bit is set in the specified`BitSet`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cardinality](../java/util/BitSet.md))`()` Returns the number of bits set to`true`in this`BitSet`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/BitSet#clear())`()` Sets all of the bits in this BitSet to`false`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/BitSet#clear(kotlin.Int))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bit specified by the index to`false`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/BitSet#clear(kotlin.Int,%20kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bits from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to`false`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/BitSet.md))`()` Sets all of the bits in this BitSet to`false`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/BitSet.md))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bit specified by the index to`false`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bits from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to`false`. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/BitSet#clone())`()` Cloning this`BitSet`produces a new`BitSet`that is equal to it. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/BitSet#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flip](https://developer.android.com/reference/kotlin/java/util/BitSet#flip(kotlin.Int))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bit at the specified index to the complement of its current value. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/BitSet.md))`()` Cloning this`BitSet`produces a new`BitSet`that is equal to it. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/BitSet.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flip](../java/util/BitSet.md))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bit at the specified index to the complement of its current value. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flip](https://developer.android.com/reference/kotlin/java/util/BitSet#flip(kotlin.Int,%20kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets each bit from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to the complement of its current value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [get](https://developer.android.com/reference/kotlin/java/util/BitSet#get(kotlin.Int))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the bit with the specified index. |
-| open [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | [get](https://developer.android.com/reference/kotlin/java/util/BitSet#get(kotlin.Int,%20kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new`BitSet`composed of bits from this`BitSet`from`fromIndex`(inclusive) to`toIndex`(exclusive). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flip](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets each bit from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to the complement of its current value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [get](../java/util/BitSet.md))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the bit with the specified index. |
+| open [BitSet](../java/util/BitSet.md)! | [get](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new`BitSet`composed of bits from this`BitSet`from`fromIndex`(inclusive) to`toIndex`(exclusive). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/BitSet#hashCode())`()` Returns the hash code value for this bit set. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [intersects](https://developer.android.com/reference/kotlin/java/util/BitSet#intersects(java.util.BitSet))`(`set:` ` [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!`)` Returns true if the specified`BitSet`has any bits set to`true`that are also set to`true`in this`BitSet`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/BitSet#isEmpty())`()` Returns true if this`BitSet`contains no bits that are set to`true`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/BitSet.md))`()` Returns the hash code value for this bit set. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [intersects](../java/util/BitSet.md))`(`set:` ` [BitSet](../java/util/BitSet.md)!`)` Returns true if the specified`BitSet`has any bits set to`true`that are also set to`true`in this`BitSet`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/BitSet.md))`()` Returns true if this`BitSet`contains no bits that are set to`true`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/java/util/BitSet#length())`()` Returns the "logical size" of this`BitSet`: the index of the highest set bit in the`BitSet`plus one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextClearBit](https://developer.android.com/reference/kotlin/java/util/BitSet#nextClearBit(kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the first bit that is set to`false`that occurs on or after the specified starting index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSetBit](https://developer.android.com/reference/kotlin/java/util/BitSet#nextSetBit(kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the first bit that is set to`true`that occurs on or after the specified starting index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../java/util/BitSet.md))`()` Returns the "logical size" of this`BitSet`: the index of the highest set bit in the`BitSet`plus one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextClearBit](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the first bit that is set to`false`that occurs on or after the specified starting index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSetBit](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the first bit that is set to`true`that occurs on or after the specified starting index. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [or](https://developer.android.com/reference/kotlin/java/util/BitSet#or(java.util.BitSet))`(`set:` ` [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!`)` Performs a logical**OR**of this bit set with the bit set argument. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousClearBit](https://developer.android.com/reference/kotlin/java/util/BitSet#previousClearBit(kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the nearest bit that is set to`false`that occurs on or before the specified starting index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousSetBit](https://developer.android.com/reference/kotlin/java/util/BitSet#previousSetBit(kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the nearest bit that is set to`true`that occurs on or before the specified starting index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [or](../java/util/BitSet.md))`(`set:` ` [BitSet](../java/util/BitSet.md)!`)` Performs a logical**OR**of this bit set with the bit set argument. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousClearBit](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the nearest bit that is set to`false`that occurs on or before the specified starting index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousSetBit](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the nearest bit that is set to`true`that occurs on or before the specified starting index. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/BitSet#set(kotlin.Int))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bit at the specified index to`true`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/BitSet#set(kotlin.Int,%20kotlin.Boolean))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the bit at the specified index to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/BitSet#set(kotlin.Int,%20kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bits from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to`true`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/BitSet.md))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bit at the specified index to`true`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/BitSet.md))`(`bitIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the bit at the specified index to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bits from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to`true`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/BitSet#set(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the bits from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to the specified value. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/BitSet#size())`()` Returns the number of bits of space actually in use by this`BitSet`to represent bit values. |
-| open [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | [stream](https://developer.android.com/reference/kotlin/java/util/BitSet#stream())`()` Returns a stream of indices for which this`BitSet`contains a bit in the set state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/BitSet.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the bits from the specified`fromIndex`(inclusive) to the specified`toIndex`(exclusive) to the specified value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/BitSet.md))`()` Returns the number of bits of space actually in use by this`BitSet`to represent bit values. |
+| open [IntStream](../java/util/stream/IntStream.md)! | [stream](../java/util/BitSet.md))`()` Returns a stream of indices for which this`BitSet`contains a bit in the set state. |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](https://developer.android.com/reference/kotlin/java/util/BitSet#toByteArray())`()` Returns a new byte array containing all the bits in this bit set. |
-| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [toLongArray](https://developer.android.com/reference/kotlin/java/util/BitSet#toLongArray())`()` Returns a new long array containing all the bits in this bit set. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/BitSet#toString())`()` Returns a string representation of this bit set. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](../java/util/BitSet.md))`()` Returns a new byte array containing all the bits in this bit set. |
+| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [toLongArray](../java/util/BitSet.md))`()` Returns a new long array containing all the bits in this bit set. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/BitSet.md))`()` Returns a string representation of this bit set. |
 | --- | --- |
-| openstatic [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | [valueOf](https://developer.android.com/reference/kotlin/java/util/BitSet#valueOf(kotlin.ByteArray))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns a new bit set containing all the bits in the given byte array. |
-| openstatic [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | [valueOf](https://developer.android.com/reference/kotlin/java/util/BitSet#valueOf(java.nio.ByteBuffer))`(`bb:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Returns a new bit set containing all the bits in the given byte buffer between its position and limit. |
-| openstatic [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | [valueOf](https://developer.android.com/reference/kotlin/java/util/BitSet#valueOf(java.nio.LongBuffer))`(`lb:` ` [LongBuffer](https://developer.android.com/reference/kotlin/java/nio/LongBuffer.html#)!`)` Returns a new bit set containing all the bits in the given long buffer between its position and limit. |
+| openstatic [BitSet](../java/util/BitSet.md)! | [valueOf](../java/util/BitSet.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns a new bit set containing all the bits in the given byte array. |
+| openstatic [BitSet](../java/util/BitSet.md)! | [valueOf](../java/util/BitSet.md))`(`bb:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Returns a new bit set containing all the bits in the given byte buffer between its position and limit. |
+| openstatic [BitSet](../java/util/BitSet.md)! | [valueOf](../java/util/BitSet.md))`(`lb:` ` [LongBuffer](../java/nio/LongBuffer.md)!`)` Returns a new bit set containing all the bits in the given long buffer between its position and limit. |
 | --- | --- |
-| openstatic [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | [valueOf](https://developer.android.com/reference/kotlin/java/util/BitSet#valueOf(kotlin.LongArray))`(`longs:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Returns a new bit set containing all the bits in the given long array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [xor](https://developer.android.com/reference/kotlin/java/util/BitSet#xor(java.util.BitSet))`(`set:` ` [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!`)` Performs a logical**XOR**of this bit set with the bit set argument. |
+| openstatic [BitSet](../java/util/BitSet.md)! | [valueOf](../java/util/BitSet.md))`(`longs:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Returns a new bit set containing all the bits in the given long array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [xor](../java/util/BitSet.md))`(`set:` ` [BitSet](../java/util/BitSet.md)!`)` Performs a logical**XOR**of this bit set with the bit set argument. |
 
 ## Public constructors
 
@@ -122,7 +122,7 @@ Performs a logical**AND** of this target bit set with the argument bit set. This
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------|
-| `set` | [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!:a bit set |
+| `set` | [BitSet](../java/util/BitSet.md)!:a bit set |
 
 ### andNot
 
@@ -136,7 +136,7 @@ Clears all of the bits in this`BitSet`whose corresponding bit is set in the spec
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------|
-| `set` | [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!:the`BitSet`with which to mask this`BitSet` |
+| `set` | [BitSet](../java/util/BitSet.md)!:the`BitSet`with which to mask this`BitSet` |
 
 ### cardinality
 
@@ -335,7 +335,7 @@ Returns a new`BitSet`composed of bits from this`BitSet`from`fromIndex`(inclusive
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------------------|
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | a new`BitSet`from a range of this`BitSet` |
+| [BitSet](../java/util/BitSet.md)! | a new`BitSet`from a range of this`BitSet` |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------------------------|
@@ -380,7 +380,7 @@ Returns true if the specified`BitSet`has any bits set to`true`that are also set 
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------|
-| `set` | [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!:`BitSet`to intersect with |
+| `set` | [BitSet](../java/util/BitSet.md)!:`BitSet`to intersect with |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -481,7 +481,7 @@ Performs a logical**OR** of this bit set with the bit set argument. This bit set
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------|
-| `set` | [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!:a bit set |
+| `set` | [BitSet](../java/util/BitSet.md)!:a bit set |
 
 ### previousClearBit
 
@@ -644,13 +644,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun stream(): IntStream!
 ```
 
-Returns a stream of indices for which this`BitSet`contains a bit in the set state. The indices are returned in order, from lowest to highest. The size of the stream is the number of bits in the set state, equal to the value returned by the [cardinality()](https://developer.android.com/reference/kotlin/java/util/BitSet#cardinality())method.
+Returns a stream of indices for which this`BitSet`contains a bit in the set state. The indices are returned in order, from lowest to highest. The size of the stream is the number of bits in the set state, equal to the value returned by the [cardinality()](../java/util/BitSet.md))method.
 
-The stream binds to this bit set when the terminal stream operation commences (specifically, the spliterator for the stream is [*late-binding*](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)). If the bit set is modified during that operation then the result is undefined.
+The stream binds to this bit set when the terminal stream operation commences (specifically, the spliterator for the stream is [*late-binding*](../java/util/Spliterator.md)). If the bit set is modified during that operation then the result is undefined.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------|
-| [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | a stream of integers representing set indices |
+| [IntStream](../java/util/stream/IntStream.md)! | a stream of integers representing set indices |
 
 ### toByteArray
 
@@ -746,7 +746,7 @@ This method is equivalent to`BitSet.valueOf(ByteBuffer.wrap(bytes))`.
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------|
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | a`BitSet`containing all the bits in the byte array |
+| [BitSet](../java/util/BitSet.md)! | a`BitSet`containing all the bits in the byte array |
 
 ### valueOf
 
@@ -766,11 +766,11 @@ The byte buffer is not modified by this method, and no reference to the buffer i
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bb` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:a byte buffer containing a little-endian representation of a sequence of bits between its position and limit, to be used as the initial bits of the new bit set |
+| `bb` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a byte buffer containing a little-endian representation of a sequence of bits between its position and limit, to be used as the initial bits of the new bit set |
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | a`BitSet`containing all the bits in the buffer in the specified range |
+| [BitSet](../java/util/BitSet.md)! | a`BitSet`containing all the bits in the buffer in the specified range |
 
 ### valueOf
 
@@ -790,11 +790,11 @@ The long buffer is not modified by this method, and no reference to the buffer i
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `lb` | [LongBuffer](https://developer.android.com/reference/kotlin/java/nio/LongBuffer.html#)!:a long buffer containing a little-endian representation of a sequence of bits between its position and limit, to be used as the initial bits of the new bit set |
+| `lb` | [LongBuffer](../java/nio/LongBuffer.md)!:a long buffer containing a little-endian representation of a sequence of bits between its position and limit, to be used as the initial bits of the new bit set |
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | a`BitSet`containing all the bits in the buffer in the specified range |
+| [BitSet](../java/util/BitSet.md)! | a`BitSet`containing all the bits in the buffer in the specified range |
 
 ### valueOf
 
@@ -818,7 +818,7 @@ This method is equivalent to`BitSet.valueOf(LongBuffer.wrap(longs))`.
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------|
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)! | a`BitSet`containing all the bits in the long array |
+| [BitSet](../java/util/BitSet.md)! | a`BitSet`containing all the bits in the long array |
 
 ### xor
 
@@ -837,4 +837,4 @@ Performs a logical**XOR** of this bit set with the bit set argument. This bit se
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------|
-| `set` | [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet#)!:a bit set |
+| `set` | [BitSet](../java/util/BitSet.md)!:a bit set |

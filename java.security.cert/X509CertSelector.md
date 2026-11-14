@@ -8,7 +8,7 @@ open class X509CertSelector : CertSelector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.X509CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#) |
+| ↳ | [java.security.cert.X509CertSelector](../java/security/cert/X509CertSelector.md) |
 
 A `CertSelector` that selects `X509Certificates` that match all specified criteria. This class is particularly useful when selecting certificates from a `CertStore` to build a PKIX-compliant certification path.
 
@@ -39,14 +39,14 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getAuthorityKeyIdentifier()()` Returns the authorityKeyIdentifier criterion. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getBasicConstraints()()` Returns the basic constraints constraint. |
-| open [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getCertificate()()` Returns the certificateEquals criterion. |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getCertificateValid()()` Returns the certificateValid criterion. |
+| open [X509Certificate](../java/security/cert/X509Certificate.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getCertificate()()` Returns the certificateEquals criterion. |
+| open [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getCertificateValid()()` Returns the certificateValid criterion. |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getExtendedKeyUsage()()` Returns the extendedKeyUsage criterion. |
-| open [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuer()()` Returns the issuer criterion as an `X500Principal`. |
+| open [X500Principal](../javax/security/auth/x500/X500Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuer()()` Returns the issuer criterion as an `X500Principal`. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuerAsBytes()()` Returns the issuer criterion as a byte array. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuerAsString()()` **Denigrated** , use [getIssuer()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuer()) or [getIssuerAsBytes()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuerAsBytes()) instead. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuerAsString()()` **Denigrated** , use [getIssuer()](../java/security/cert/X509CertSelector.md)) or [getIssuerAsBytes()](../java/security/cert/X509CertSelector.md)) instead. |
 | open [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getKeyUsage()()` Returns the keyUsage criterion. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getMatchAllSubjectAltNames()()` Indicates if the `X509Certificate` must contain all or at least one of the subjectAlternativeNames specified in the `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubjectAlternativeNames(kotlin.collections.MutableCollection)` or #addSubjectAlternativeName methods. |
 | --- | --- |
@@ -54,16 +54,16 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getPathToNames()()` Returns a copy of the pathToNames criterion. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getPolicy()()` Returns the policy criterion. |
 | --- | --- |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getPrivateKeyValid()()` Returns the privateKeyValid criterion. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSerialNumber()()` Returns the serialNumber criterion. |
-| open [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubject()()` Returns the subject criterion as an `X500Principal`. |
+| open [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getPrivateKeyValid()()` Returns the privateKeyValid criterion. |
+| open [BigInteger](../java/math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSerialNumber()()` Returns the serialNumber criterion. |
+| open [X500Principal](../javax/security/auth/x500/X500Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubject()()` Returns the subject criterion as an `X500Principal`. |
 | --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectAlternativeNames()()` Returns a copy of the subjectAlternativeNames criterion. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectAsBytes()()` Returns the subject criterion as a byte array. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectAsString()()` **Denigrated** , use [getSubject()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubject()) or [getSubjectAsBytes()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectAsBytes()) instead. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectAsString()()` **Denigrated** , use [getSubject()](../java/security/cert/X509CertSelector.md)) or [getSubjectAsBytes()](../java/security/cert/X509CertSelector.md)) instead. |
 | --- | --- |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectKeyIdentifier()()` Returns the subjectKeyIdentifier criterion. |
-| open [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectPublicKey()()` Returns the subjectPublicKey criterion. |
+| open [PublicKey](../java/security/PublicKey.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectPublicKey()()` Returns the subjectPublicKey criterion. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectPublicKeyAlgID()()` Returns the subjectPublicKeyAlgID criterion. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#match(java.security.cert.Certificate)(cert: https://developer.android.com/reference/kotlin/java/security/cert/Certificate!)` Decides whether a `Certificate` should be selected. |
@@ -75,7 +75,7 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setExtendedKeyUsage(kotlin.collections.MutableSet)(keyPurposeSet: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Sets the extendedKeyUsage criterion. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(kotlin.ByteArray)(issuerDN: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Sets the issuer criterion. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(kotlin.String)(issuerDN: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **Denigrated** , use [setIssuer(X500Principal)](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(javax.security.auth.x500.X500Principal)) or [setIssuer(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(kotlin.ByteArray)) instead. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(kotlin.String)(issuerDN: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **Denigrated** , use [setIssuer(X500Principal)](../java/security/cert/X509CertSelector.md)) or [setIssuer(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(kotlin.ByteArray)) instead. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(javax.security.auth.x500.X500Principal)(issuer: https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#!)` Sets the issuer criterion. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setKeyUsage(kotlin.BooleanArray)(keyUsage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html!)` Sets the keyUsage criterion. |
@@ -88,7 +88,7 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSerialNumber(java.math.BigInteger)(serial: https://developer.android.com/reference/kotlin/java/math/BigInteger.html#!)` Sets the serialNumber criterion. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(kotlin.ByteArray)(subjectDN: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Sets the subject criterion. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(kotlin.String)(subjectDN: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **Denigrated** , use [setSubject(X500Principal)](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(javax.security.auth.x500.X500Principal)) or [setSubject(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(kotlin.ByteArray)) instead. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(kotlin.String)(subjectDN: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **Denigrated** , use [setSubject(X500Principal)](../java/security/cert/X509CertSelector.md)) or [setSubject(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(kotlin.ByteArray)) instead. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(javax.security.auth.x500.X500Principal)(subject: https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#!)` Sets the subject criterion. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubjectAlternativeNames(kotlin.collections.MutableCollection)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<*>!>!)` Sets the subjectAlternativeNames criterion. |
@@ -396,7 +396,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getIssuerAsString(): String!
 ```
 
-**Denigrated** , use [getIssuer()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuer()) or [getIssuerAsBytes()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getIssuerAsBytes()) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
+**Denigrated** , use [getIssuer()](../java/security/cert/X509CertSelector.md)) or [getIssuerAsBytes()](../java/security/cert/X509CertSelector.md)) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
 
 Returns the issuer criterion as a `String`. This distinguished name must match the issuer distinguished name in the `X509Certificate`. If `null`, the issuer criterion is disabled and any issuer distinguished name will do.
 
@@ -614,7 +614,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSubjectAsString(): String!
 ```
 
-**Denigrated** , use [getSubject()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubject()) or [getSubjectAsBytes()](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#getSubjectAsBytes()) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
+**Denigrated** , use [getSubject()](../java/security/cert/X509CertSelector.md)) or [getSubjectAsBytes()](../java/security/cert/X509CertSelector.md)) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
 
 Returns the subject criterion as a `String`. This distinguished name must match the subject distinguished name in the `X509Certificate`. If `null`, the subject criterion is disabled and any subject distinguished name will do.
 
@@ -690,7 +690,7 @@ Decides whether a `Certificate` should be selected.
 
 | Parameters ||
 |---|---|
-| `cert` | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!: the `Certificate` to be checked |
+| `cert` | [Certificate](../java/security/cert/Certificate.md)!: the `Certificate` to be checked |
 
 | Return ||
 |---|---|
@@ -770,7 +770,7 @@ This method is particularly useful when it is necessary to match a single certif
 
 | Parameters ||
 |---|---|
-| `cert` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)!: the `X509Certificate` to match (or `null`) |
+| `cert` | [X509Certificate](../java/security/cert/X509Certificate.md)!: the `X509Certificate` to match (or `null`) |
 
 **See Also**
 
@@ -790,7 +790,7 @@ Note that the `Date` supplied here is cloned to protect against subsequent modif
 
 | Parameters ||
 |---|---|
-| `certValid` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!: the `Date` to check (or `null`) |
+| `certValid` | [Date](../java/util/Date.md)!: the `Date` to check (or `null`) |
 
 **See Also**
 
@@ -876,7 +876,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setIssuer(issuerDN: String!): Unit
 ```
 
-**Denigrated** , use [setIssuer(X500Principal)](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(javax.security.auth.x500.X500Principal)) or [setIssuer(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(kotlin.ByteArray)) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the [RFC 2253](http://www.ietf.org/rfc/rfc2253.txt) String form of some distinguished names.
+**Denigrated** , use [setIssuer(X500Principal)](../java/security/cert/X509CertSelector.md)) or [setIssuer(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setIssuer(kotlin.ByteArray)) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the [RFC 2253](http://www.ietf.org/rfc/rfc2253.txt) String form of some distinguished names.
 
 Sets the issuer criterion. The specified distinguished name must match the issuer distinguished name in the `X509Certificate`. If `null`, any issuer distinguished name will do.
 
@@ -902,7 +902,7 @@ Sets the issuer criterion. The specified distinguished name must match the issue
 
 | Parameters ||
 |---|---|
-| `issuer` | [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!: a distinguished name as X500Principal (or `null`) |
+| `issuer` | [X500Principal](../javax/security/auth/x500/X500Principal.md)!: a distinguished name as X500Principal (or `null`) |
 
 ### setKeyUsage
 
@@ -1071,7 +1071,7 @@ Note that the `Date` supplied here is cloned to protect against subsequent modif
 
 | Parameters ||
 |---|---|
-| `privateKeyValid` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!: the `Date` to check (or `null`) |
+| `privateKeyValid` | [Date](../java/util/Date.md)!: the `Date` to check (or `null`) |
 
 **See Also**
 
@@ -1089,7 +1089,7 @@ Sets the serialNumber criterion. The specified serial number must match the cert
 
 | Parameters ||
 |---|---|
-| `serial` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!: the certificate serial number to match (or `null`) |
+| `serial` | [BigInteger](../java/math/BigInteger.md)!: the certificate serial number to match (or `null`) |
 
 **See Also**
 
@@ -1123,7 +1123,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setSubject(subjectDN: String!): Unit
 ```
 
-**Denigrated** , use [setSubject(X500Principal)](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(javax.security.auth.x500.X500Principal)) or [setSubject(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(kotlin.ByteArray)) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
+**Denigrated** , use [setSubject(X500Principal)](../java/security/cert/X509CertSelector.md)) or [setSubject(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector#setSubject(kotlin.ByteArray)) instead. This method should not be relied on as it can fail to match some certificates because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
 
 Sets the subject criterion. The specified distinguished name must match the subject distinguished name in the `X509Certificate`. If `null`, any subject distinguished name will do.
 
@@ -1149,7 +1149,7 @@ Sets the subject criterion. The specified distinguished name must match the subj
 
 | Parameters ||
 |---|---|
-| `subject` | [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!: a distinguished name as X500Principal (or `null`) |
+| `subject` | [X500Principal](../javax/security/auth/x500/X500Principal.md)!: a distinguished name as X500Principal (or `null`) |
 
 ### setSubjectAlternativeNames
 
@@ -1270,7 +1270,7 @@ Sets the subjectPublicKey criterion. The `X509Certificate` must contain the spec
 
 | Parameters ||
 |---|---|
-| `key` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!: the subject public key to check for (or `null`) |
+| `key` | [PublicKey](../java/security/PublicKey.md)!: the subject public key to check for (or `null`) |
 
 **See Also**
 

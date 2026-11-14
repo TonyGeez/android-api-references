@@ -4,7 +4,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # UsbRequest
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/usb/UsbRequest "View this page in Java") 
+Kotlin| [Java](../android/hardware/usb/UsbRequest.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class UsbRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.usb.UsbRequest](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#) |
+| ↳ | [android.hardware.usb.UsbRequest](../android/hardware/usb/UsbRequest.md) |
 
-A class representing USB request packet. This can be used for both reading and writing data to or from a [android.hardware.usb.UsbDeviceConnection](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection). UsbRequests can be used to transfer data on bulk and interrupt endpoints. Requests on bulk endpoints can be sent synchronously via android.hardware.usb.UsbDeviceConnection#bulkTransfer or asynchronously via #queue and android.hardware.usb.UsbDeviceConnection#requestWait. Requests on interrupt endpoints are only send and received asynchronously.
+A class representing USB request packet. This can be used for both reading and writing data to or from a [android.hardware.usb.UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md). UsbRequests can be used to transfer data on bulk and interrupt endpoints. Requests on bulk endpoints can be sent synchronously via android.hardware.usb.UsbDeviceConnection#bulkTransfer or asynchronously via #queue and android.hardware.usb.UsbDeviceConnection#requestWait. Requests on interrupt endpoints are only send and received asynchronously.
 
 Requests on endpoint zero are not supported by this class; use android.hardware.usb.UsbDeviceConnection#controlTransfer for endpoint zero requests instead.
 
@@ -23,24 +23,24 @@ Requests on endpoint zero are not supported by this class; use android.hardware.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------|---|
-| [UsbRequest](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#UsbRequest())`()` <br /> |
+| [UsbRequest](../android/hardware/usb/UsbRequest.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#cancel())`()` Cancels a pending queue operation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#close())`()` Releases all resources related to this request. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getClientData](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#getClientData())`()` Returns the client data for the request. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](../android/hardware/usb/UsbRequest.md))`()` Cancels a pending queue operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/hardware/usb/UsbRequest.md))`()` Releases all resources related to this request. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getClientData](../android/hardware/usb/UsbRequest.md))`()` Returns the client data for the request. |
 | --- | --- |
-| open [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)! | [getEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#getEndpoint())`()` Returns the endpoint for the request, or null if the request is not opened. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [initialize](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#initialize(android.hardware.usb.UsbDeviceConnection,%20android.hardware.usb.UsbEndpoint))`(`connection:` ` [UsbDeviceConnection](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection)!`, `endpoint:` ` [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)!`)` Initializes the request so it can read or write data on the given endpoint. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queue](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#queue(java.nio.ByteBuffer))`(`buffer:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)?`)` Queues the request to send or receive data on its endpoint. |
+| open [UsbEndpoint](../android/hardware/usb/UsbEndpoint.md)! | [getEndpoint](../android/hardware/usb/UsbRequest.md))`()` Returns the endpoint for the request, or null if the request is not opened. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [initialize](../android/hardware/usb/UsbRequest.md))`(`connection:` ` [UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md)!`, `endpoint:` ` [UsbEndpoint](../android/hardware/usb/UsbEndpoint.md)!`)` Initializes the request so it can read or write data on the given endpoint. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queue](../android/hardware/usb/UsbRequest.md))`(`buffer:` ` [ByteBuffer](../java/nio/ByteBuffer.md)?`)` Queues the request to send or receive data on its endpoint. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queue](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#queue(java.nio.ByteBuffer,%20kotlin.Int))`(`buffer:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Queues the request to send or receive data on its endpoint. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientData](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#setClientData(kotlin.Any))`(`data:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the client data for the request. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queue](../android/hardware/usb/UsbRequest.md))`(`buffer:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Queues the request to send or receive data on its endpoint. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientData](../android/hardware/usb/UsbRequest.md))`(`data:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the client data for the request. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#finalize())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/hardware/usb/UsbRequest.md))`()` <br /> |
 
 ## Public constructors
 
@@ -86,7 +86,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 open fun getClientData(): Any!
 ```
 
-Returns the client data for the request. This can be used in conjunction with [setClientData](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#setClientData(kotlin.Any))to associate another object with this request, which can be useful for maintaining state between calls to #queue and android.hardware.usb.UsbDeviceConnection#requestWait
+Returns the client data for the request. This can be used in conjunction with [setClientData](../android/hardware/usb/UsbRequest.md))to associate another object with this request, which can be useful for maintaining state between calls to #queue and android.hardware.usb.UsbDeviceConnection#requestWait
 
 | Return ||
 |-----------------------------------------------------------------------------|---------------------------------|
@@ -104,7 +104,7 @@ Returns the endpoint for the request, or null if the request is not opened.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------|
-| [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)! | the request's endpoint |
+| [UsbEndpoint](../android/hardware/usb/UsbEndpoint.md)! | the request's endpoint |
 
 ### initialize
 
@@ -121,7 +121,7 @@ Initializes the request so it can read or write data on the given endpoint. Whet
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `endpoint` | [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint)!:the endpoint to be used for this request. |
+| `endpoint` | [UsbEndpoint](../android/hardware/usb/UsbEndpoint.md)!:the endpoint to be used for this request. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------|
@@ -141,7 +141,7 @@ For OUT endpoints, the remaining bytes of the buffer will be sent on the endpoin
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `buffer` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)?:the buffer containing the bytes to send, or the buffer to fill. The state of the buffer is undefined until the request is returned by android.hardware.usb.UsbDeviceConnection#requestWait. If the request failed the buffer will be unchanged; if the request succeeded the position of the buffer is incremented by the number of bytes sent/received. Before {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P}, a buffer of length larger than 16384 bytes would throw IllegalArgumentException. In API {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P} and after, any size buffer is valid. This value may be`null`. |
+| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md)?:the buffer containing the bytes to send, or the buffer to fill. The state of the buffer is undefined until the request is returned by android.hardware.usb.UsbDeviceConnection#requestWait. If the request failed the buffer will be unchanged; if the request succeeded the position of the buffer is incremented by the number of bytes sent/received. Before {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P}, a buffer of length larger than 16384 bytes would throw IllegalArgumentException. In API {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P} and after, any size buffer is valid. This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
@@ -159,7 +159,7 @@ open fun queue(
 ): Boolean
 ```
 
-**Deprecated:** *Use [queue(java.nio.ByteBuffer)](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#queue(java.nio.ByteBuffer))instead.*
+**Deprecated:** *Use [queue(java.nio.ByteBuffer)](../android/hardware/usb/UsbRequest.md))instead.*
 
 Queues the request to send or receive data on its endpoint.
 
@@ -167,7 +167,7 @@ For OUT endpoints, the given buffer data will be sent on the endpoint. For IN en
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `buffer` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:the buffer containing the bytes to write, or location to store the results of a read. Position and array offset will be ignored and assumed to be 0. Limit and capacity will be ignored. Once the request [is processed](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDeviceConnection#requestWait())the position will be set to the number of bytes read/written. |
+| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the buffer containing the bytes to write, or location to store the results of a read. Position and array offset will be ignored and assumed to be 0. Limit and capacity will be ignored. Once the request [is processed](../android/hardware/usb/UsbDeviceConnection.md))the position will be set to the number of bytes read/written. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of bytes to read or write. Before {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P}, a value larger than 16384 bytes would be truncated down to 16384. In API {@value android.os.Build.VERSION_CODES#P Build.VERSION_CODES.P} and after, any value of length is valid. |
 
 | Return ||
@@ -182,7 +182,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 open fun setClientData(data: Any!): Unit
 ```
 
-Sets the client data for the request. This can be used in conjunction with [getClientData](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbRequest#getClientData())to associate another object with this request, which can be useful for maintaining state between calls to #queue and android.hardware.usb.UsbDeviceConnection#requestWait
+Sets the client data for the request. This can be used in conjunction with [getClientData](../android/hardware/usb/UsbRequest.md))to associate another object with this request, which can be useful for maintaining state between calls to #queue and android.hardware.usb.UsbDeviceConnection#requestWait
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------|

@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # DrmRights
 
-Kotlin| [Java](https://developer.android.com/reference/android/drm/DrmRights "View this page in Java") 
+Kotlin| [Java](../android/drm/DrmRights.md) 
 | --- | --- |
 
 ```
@@ -14,17 +14,17 @@ open class DrmRights
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#) |
+| ↳ | [android.drm.DrmRights](../android/drm/DrmRights.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm.html#)
+| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
 
 An entity class that wraps the license information retrieved from the online DRM server.
 
-A caller can instantiate a [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#) object by first invoking the [DrmManagerClient.processDrmInfo(DrmInfo)](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#processDrmInfo(android.drm.DrmInfo))method and then using the resulting [ProcessedData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData) object to invoke the [DrmRights.DrmRights(ProcessedData, String)](https://developer.android.com/reference/kotlin/android/drm/DrmRights#DrmRights(android.drm.ProcessedData,%20kotlin.String))constructor.
+A caller can instantiate a [DrmRights](../android/drm/DrmRights.md) object by first invoking the [DrmManagerClient.processDrmInfo(DrmInfo)](../android/drm/DrmManagerClient.md))method and then using the resulting [ProcessedData](../android/drm/ProcessedData.md) object to invoke the [DrmRights.DrmRights(ProcessedData, String)](../android/drm/DrmRights.md))constructor.
 
-A caller can also instantiate a [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#) object by using the [DrmRights.DrmRights(String, String)](https://developer.android.com/reference/kotlin/android/drm/DrmRights#DrmRights(kotlin.String,%20kotlin.String))constructor, which takes a path to a file containing rights information instead of a`ProcessedData`.
+A caller can also instantiate a [DrmRights](../android/drm/DrmRights.md) object by using the [DrmRights.DrmRights(String, String)](../android/drm/DrmRights.md))constructor, which takes a path to a file containing rights information instead of a`ProcessedData`.
 
 Please note that the account id and subscription id is not mandatory by all DRM agents or plugins. When account id or subscription id is not required by the specific DRM agent or plugin, they can be either null, or an empty string, or any other don't-care string value.
 
@@ -32,19 +32,19 @@ Please note that the account id and subscription id is not mandatory by all DRM 
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#DrmRights(android.drm.ProcessedData,%20kotlin.String))`(`data:` ` [ProcessedData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
-| [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#DrmRights(java.io.File,%20kotlin.String))`(`rightsFile:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
-| [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#DrmRights(kotlin.String,%20kotlin.String))`(`rightsFilePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
-| [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#DrmRights(kotlin.String,%20kotlin.String,%20kotlin.String))`(`rightsFilePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `accountId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
-| [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights#DrmRights(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`rightsFilePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `accountId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `subscriptionId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
+| [DrmRights](../android/drm/DrmRights.md))`(`data:` ` [ProcessedData](../android/drm/ProcessedData.md)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
+| [DrmRights](../android/drm/DrmRights.md))`(`rightsFile:` ` [File](../java/io/File.md)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
+| [DrmRights](../android/drm/DrmRights.md))`(`rightsFilePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
+| [DrmRights](../android/drm/DrmRights.md))`(`rightsFilePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `accountId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
+| [DrmRights](../android/drm/DrmRights.md))`(`rightsFilePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `accountId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `subscriptionId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmRights`object with the given parameters. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAccountId](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getAccountId())`()` Retrieves the account ID associated with this`DrmRights`object. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getData())`()` Retrieves the rights data associated with this`DrmRights`object. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeType](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getMimeType())`()` Retrieves the MIME type associated with this`DrmRights`object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAccountId](../android/drm/DrmRights.md))`()` Retrieves the account ID associated with this`DrmRights`object. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](../android/drm/DrmRights.md))`()` Retrieves the rights data associated with this`DrmRights`object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeType](../android/drm/DrmRights.md))`()` Retrieves the MIME type associated with this`DrmRights`object. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/drm/DrmRights#getSubscriptionId())`()` Retrieves the subscription ID associated with this`DrmRights`object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubscriptionId](../android/drm/DrmRights.md))`()` Retrieves the subscription ID associated with this`DrmRights`object. |
 
 ## Public constructors
 
@@ -62,7 +62,7 @@ Creates a`DrmRights`object with the given parameters.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `data` | [ProcessedData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData)!:A [ProcessedData](https://developer.android.com/reference/kotlin/android/drm/ProcessedData) object containing rights information. Must not be null. |
+| `data` | [ProcessedData](../android/drm/ProcessedData.md)!:A [ProcessedData](../android/drm/ProcessedData.md) object containing rights information. Must not be null. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The MIME type. It must not be null or an empty string. |
 
 ### DrmRights
@@ -79,7 +79,7 @@ Creates a`DrmRights`object with the given parameters.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `rightsFile` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:File containing rights information. |
+| `rightsFile` | [File](../java/io/File.md)!:File containing rights information. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:MIME type. Must not be null or an empty string. |
 
 ### DrmRights

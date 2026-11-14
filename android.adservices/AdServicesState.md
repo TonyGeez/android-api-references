@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AdServicesState
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/AdServicesState "View this page in Java") 
+Kotlin| [Java](../android/adservices/AdServicesState.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class AdServicesState
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.AdServicesState](https://developer.android.com/reference/kotlin/android/adservices/AdServicesState#) |
+| ↳ | [android.adservices.AdServicesState](../android/adservices/AdServicesState.md) |
 
 This class specifies the state of the APIs exposed by AdServicesApi apk.
 
@@ -22,7 +22,7 @@ This class specifies the state of the APIs exposed by AdServicesApi apk.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAdServicesStateEnabled](https://developer.android.com/reference/kotlin/android/adservices/AdServicesState#isAdServicesStateEnabled())`()` Returns current state of the`AdServicesApi`. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAdServicesStateEnabled](../android/adservices/AdServicesState.md))`()` Returns current state of the`AdServicesApi`. |
 
 ## Public methods
 

@@ -4,14 +4,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # OnJankDataListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListener "View this page in Java") 
+Kotlin| [Java](../android/view/SurfaceControl.OnJankDataListener.md) 
 | --- | --- |
 
 ```
 interface OnJankDataListener
 ```
 
-| [android.view.SurfaceControl.OnJankDataListener](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener#) |
+| [android.view.SurfaceControl.OnJankDataListener](../android/view/SurfaceControl.OnJankDataListener.md) |
 
 Listener interface to be informed about SurfaceFlinger's jank classification for a specific surface.
 
@@ -19,7 +19,7 @@ Listener interface to be informed about SurfaceFlinger's jank classification for
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onJankDataAvailable](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener#onJankDataAvailable(kotlin.collections.MutableList))`(`jankData:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SurfaceControl.JankData](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.JankData)!>`)` Called when new jank classifications are available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onJankDataAvailable](../android/view/SurfaceControl.OnJankDataListener.md))`(`jankData:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SurfaceControl.JankData](../android/view/SurfaceControl.JankData.md)!>`)` Called when new jank classifications are available. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called when new jank classifications are available. The listener is invoked out 
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `jankData` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SurfaceControl.JankData](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.JankData)!\>:This value cannot be`null`. |
+| `jankData` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SurfaceControl.JankData](../android/view/SurfaceControl.JankData.md)!\>:This value cannot be`null`. |

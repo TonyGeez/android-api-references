@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # WalletServiceEvent
 
-Kotlin | [Java](https://developer.android.com/reference/android/service/quickaccesswallet/WalletServiceEvent "View this page in Java")
+Kotlin | [Java](../android/service/quickaccesswallet/WalletServiceEvent.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class WalletServiceEvent : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.quickaccesswallet.WalletServiceEvent](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#) |
+| ↳ | [android.service.quickaccesswallet.WalletServiceEvent](../android/service/quickaccesswallet/WalletServiceEvent.md) |
 
 Represents a request from the `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService` to the Quick Access Wallet in System UI. Background events may necessitate that the Quick Access Wallet update its view. For example, if the wallet application handles an NFC payment while the Quick Access Wallet is being shown, it needs to tell the Quick Access Wallet so that the wallet can be dismissed and Activity showing the payment can be displayed to the user.
 
@@ -38,7 +38,7 @@ Represents a request from the `https://developer.android.com/reference/kotlin/an
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WalletServiceEvent](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#)!\> | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WalletServiceEvent](../android/service/quickaccesswallet/WalletServiceEvent.md)!\> | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletServiceEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -113,7 +113,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

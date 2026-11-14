@@ -5,21 +5,21 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 
 # GroupsColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.GroupsColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/Contacts.GroupsColumns.md) 
 | --- | --- |
 
 ```
 interface GroupsColumns
 ```
 
-| [android.provider.Contacts.GroupsColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupsColumns#) |
+| [android.provider.Contacts.GroupsColumns](../android/provider/Contacts.GroupsColumns.md) |
 
-| Known Direct Subclasses [Contacts.GroupMembership](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupMembership), [Contacts.Groups](https://developer.android.com/reference/kotlin/android/provider/Contacts.Groups) |----------------------------------------------------------------------------------------------------------------------|------------------------------------------------| | [Contacts.GroupMembership](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupMembership) | <br /> | | [Contacts.Groups](https://developer.android.com/reference/kotlin/android/provider/Contacts.Groups) | This table contains the groups for an account. | |
+| Known Direct Subclasses [Contacts.GroupMembership](../android/provider/Contacts.GroupMembership.md), [Contacts.Groups](../android/provider/Contacts.Groups.md) |----------------------------------------------------------------------------------------------------------------------|------------------------------------------------| | [Contacts.GroupMembership](../android/provider/Contacts.GroupMembership.md) | <br /> | | [Contacts.Groups](../android/provider/Contacts.Groups.md) | This table contains the groups for an account. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)
+| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
 
 Columns from the groups table.
 
@@ -27,11 +27,11 @@ Columns from the groups table.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupsColumns#NAME:kotlin.String) The group name. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NOTES](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupsColumns#NOTES:kotlin.String) Notes about the group. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SHOULD_SYNC](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupsColumns#SHOULD_SYNC:kotlin.String) Whether this group should be synced if the SYNC_EVERYTHING settings is false for this group's account. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](../android/provider/Contacts.GroupsColumns.md) The group name. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NOTES](../android/provider/Contacts.GroupsColumns.md) Notes about the group. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SHOULD_SYNC](../android/provider/Contacts.GroupsColumns.md) Whether this group should be synced if the SYNC_EVERYTHING settings is false for this group's account. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYSTEM_ID](https://developer.android.com/reference/kotlin/android/provider/Contacts.GroupsColumns#SYSTEM_ID:kotlin.String) The ID of this group if it is a System Group, null otherwise. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYSTEM_ID](../android/provider/Contacts.GroupsColumns.md) The ID of this group if it is a System Group, null otherwise. |
 
 ## Constants
 
@@ -43,7 +43,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The group name.
 
@@ -59,7 +59,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NOTES: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Notes about the group.
 
@@ -75,7 +75,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SHOULD_SYNC: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Whether this group should be synced if the SYNC_EVERYTHING settings is false for this group's account.
 
@@ -91,7 +91,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYSTEM_ID: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The ID of this group if it is a System Group, null otherwise.
 

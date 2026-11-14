@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableByte
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/MutableByte "View this page in Java") 
+Kotlin| [Java](../android/util/MutableByte.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableByte
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableByte](https://developer.android.com/reference/kotlin/android/util/MutableByte#) |
+| ↳ | [android.util.MutableByte](../android/util/MutableByte.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableByte
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableByte](https://developer.android.com/reference/kotlin/android/util/MutableByte#MutableByte(kotlin.Byte))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
+| [MutableByte](../android/util/MutableByte.md))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [value](https://developer.android.com/reference/kotlin/android/util/MutableByte#value:kotlin.Byte) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [value](../android/util/MutableByte.md) <br /> |
 
 ## Public constructors
 

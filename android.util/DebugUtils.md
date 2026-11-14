@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DebugUtils
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/DebugUtils "View this page in Java") 
+Kotlin| [Java](../android/util/DebugUtils.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class DebugUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.DebugUtils](https://developer.android.com/reference/kotlin/android/util/DebugUtils#) |
+| ↳ | [android.util.DebugUtils](../android/util/DebugUtils.md) |
 
 Various utilities for debugging and logging.
 
@@ -21,7 +21,7 @@ Various utilities for debugging and logging.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isObjectSelected](https://developer.android.com/reference/kotlin/android/util/DebugUtils#isObjectSelected(kotlin.Any))`(`object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Filters objects against the`ANDROID_OBJECT_FILTER`environment variable. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isObjectSelected](../android/util/DebugUtils.md))`(`object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Filters objects against the`ANDROID_OBJECT_FILTER`environment variable. |
 
 ## Public methods
 

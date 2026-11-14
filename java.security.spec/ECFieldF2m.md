@@ -10,7 +10,7 @@ open class ECFieldF2m : ECField
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECFieldF2m](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#) |
+| ↳ | [java.security.spec.ECFieldF2m](../java/security/spec/ECFieldF2m.md) |
 
 This immutable class defines an elliptic curve (EC) characteristic 2 finite field.
 
@@ -18,19 +18,19 @@ This immutable class defines an elliptic curve (EC) characteristic 2 finite fiel
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECFieldF2m](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#ECFieldF2m(kotlin.Int))`(`m:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an elliptic curve characteristic 2 finite field which has 2\^`m`elements with normal basis. |
-| [ECFieldF2m](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#ECFieldF2m(kotlin.Int,%20kotlin.IntArray))`(`m:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ks:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Creates an elliptic curve characteristic 2 finite field which has 2\^`m`elements with polynomial basis. |
-| [ECFieldF2m](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#ECFieldF2m(kotlin.Int,%20java.math.BigInteger))`(`m:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rp:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Creates an elliptic curve characteristic 2 finite field which has 2\^`m`elements with polynomial basis. |
+| [ECFieldF2m](../java/security/spec/ECFieldF2m.md))`(`m:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an elliptic curve characteristic 2 finite field which has 2\^`m`elements with normal basis. |
+| [ECFieldF2m](../java/security/spec/ECFieldF2m.md))`(`m:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ks:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Creates an elliptic curve characteristic 2 finite field which has 2\^`m`elements with polynomial basis. |
+| [ECFieldF2m](../java/security/spec/ECFieldF2m.md))`(`m:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rp:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates an elliptic curve characteristic 2 finite field which has 2\^`m`elements with polynomial basis. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this finite field for equality with the specified object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getFieldSize())`()` Returns the field size in bits which is`m`for this characteristic 2 finite field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getM](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getM())`()` Returns the value`m`of this characteristic 2 finite field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/spec/ECFieldF2m.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this finite field for equality with the specified object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](../java/security/spec/ECFieldF2m.md))`()` Returns the field size in bits which is`m`for this characteristic 2 finite field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getM](../java/security/spec/ECFieldF2m.md))`()` Returns the value`m`of this characteristic 2 finite field. |
 | --- | --- |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getMidTermsOfReductionPolynomial](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getMidTermsOfReductionPolynomial())`()` Returns an integer array which contains the order of the middle term(s) of the reduction polynomial for polynomial basis or null for normal basis. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getReductionPolynomial](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#getReductionPolynomial())`()` Returns a BigInteger whose i-th bit corresponds to the i-th coefficient of the reduction polynomial for polynomial basis or null for normal basis. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldF2m#hashCode())`()` Returns a hash code value for this characteristic 2 finite field. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getMidTermsOfReductionPolynomial](../java/security/spec/ECFieldF2m.md))`()` Returns an integer array which contains the order of the middle term(s) of the reduction polynomial for polynomial basis or null for normal basis. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getReductionPolynomial](../java/security/spec/ECFieldF2m.md))`()` Returns a BigInteger whose i-th bit corresponds to the i-th coefficient of the reduction polynomial for polynomial basis or null for normal basis. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/spec/ECFieldF2m.md))`()` Returns a hash code value for this characteristic 2 finite field. |
 | --- | --- |
 
 ## Public constructors
@@ -92,7 +92,7 @@ Note: A valid reduction polynomial is either a trinomial (X\^`m`+ X\^`k`+ 1 with
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `m` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):with 2\^`m`being the number of elements. |
-| `rp` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the BigInteger whose i-th bit corresponds to the i-th coefficient of the reduction polynomial. |
+| `rp` | [BigInteger](../java/math/BigInteger.md)!:the BigInteger whose i-th bit corresponds to the i-th coefficient of the reduction polynomial. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------|
@@ -173,7 +173,7 @@ Returns a BigInteger whose i-th bit corresponds to the i-th coefficient of the r
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | a BigInteger whose i-th bit corresponds to the i-th coefficient of the reduction polynomial for polynomial basis or null for normal basis. |
+| [BigInteger](../java/math/BigInteger.md)! | a BigInteger whose i-th bit corresponds to the i-th coefficient of the reduction polynomial for polynomial basis or null for normal basis. |
 
 ### hashCode
 

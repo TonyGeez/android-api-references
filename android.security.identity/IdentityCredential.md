@@ -9,7 +9,7 @@ abstract class IdentityCredential
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.IdentityCredential](https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#) |
+| ↳ | [android.security.identity.IdentityCredential](../android/security/identity/IdentityCredential.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**
@@ -22,17 +22,17 @@ Class used to read data from a previously provisioned credential.
 
 | Public methods ||
 |---|---|
-| abstract [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair.html#) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#createEphemeralKeyPair()()` Create an ephemeral key pair to use to establish a secure channel with a reader. |
+| abstract [KeyPair](../java/security/KeyPair.md) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#createEphemeralKeyPair()()` Create an ephemeral key pair to use to establish a secure channel with a reader. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#decryptMessageFromReader(kotlin.ByteArray)(messageCiphertext: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Decrypt a message received from the reader. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#delete(kotlin.ByteArray)(challenge: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Deletes a credential. |
 | --- | --- |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#encryptMessageToReader(kotlin.ByteArray)(messagePlaintext: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Encrypt a message for transmission to the reader. |
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getAuthKeysNeedingCertification()()` Gets a collection of dynamic authentication keys that need certification. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getAuthKeysNeedingCertification()()` Gets a collection of dynamic authentication keys that need certification. |
 | abstract [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getAuthenticationDataUsageCount()()` Get the number of times the dynamic authentication keys have been used. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AuthenticationKeyMetadata](https://developer.android.com/reference/kotlin/android/security/identity/AuthenticationKeyMetadata)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getAuthenticationKeyMetadata()()` Get information about dynamic authentication keys. |
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getCredentialKeyCertificateChain()()` Gets the X. |
-| abstract [ResultData](https://developer.android.com/reference/kotlin/android/security/identity/ResultData) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getEntries(kotlin.ByteArray,%20kotlin.collections.MutableMap,%20kotlin.ByteArray,%20kotlin.ByteArray)(requestMessage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, entriesToRequest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>, sessionTranscript: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, readerSignature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Retrieve data entries and associated data from this `IdentityCredential`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AuthenticationKeyMetadata](../android/security/identity/AuthenticationKeyMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getAuthenticationKeyMetadata()()` Get information about dynamic authentication keys. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getCredentialKeyCertificateChain()()` Gets the X. |
+| abstract [ResultData](../android/security/identity/ResultData.md) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getEntries(kotlin.ByteArray,%20kotlin.collections.MutableMap,%20kotlin.ByteArray,%20kotlin.ByteArray)(requestMessage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, entriesToRequest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>, sessionTranscript: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, readerSignature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Retrieve data entries and associated data from this `IdentityCredential`. |
 | --- | --- |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#proveOwnership(kotlin.ByteArray)(challenge: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Proves ownership of a credential. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#setAllowUsingExhaustedKeys(kotlin.Boolean)(allowUsingExhaustedKeys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether to allow using an authentication key which use count has been exceeded if no other key is available. |
@@ -492,7 +492,7 @@ Set the ephemeral public key provided by the reader. If called, this must be cal
 
 | Parameters ||
 |---|---|
-| `readerEphemeralPublicKey` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#): The ephemeral public key provided by the reader to establish a secure session. This value cannot be `null`. |
+| `readerEphemeralPublicKey` | [PublicKey](../java/security/PublicKey.md): The ephemeral public key provided by the reader to establish a secure session. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -516,7 +516,7 @@ Store authentication data associated with a dynamic authentication key. This sho
 
 | Parameters ||
 |---|---|
-| `authenticationKey` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#): The dynamic authentication key for which certification and associated static authentication data is being provided. This value cannot be `null`. |
+| `authenticationKey` | [X509Certificate](../java/security/cert/X509Certificate.md): The dynamic authentication key for which certification and associated static authentication data is being provided. This value cannot be `null`. |
 | `staticAuthData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): Static authentication data provided by the issuer that validates the authenticity and integrity of the credential data fields. This value cannot be `null`. |
 
 | Exceptions ||
@@ -542,8 +542,8 @@ Store authentication data associated with a dynamic authentication key. This sho
 
 | Parameters ||
 |---|---|
-| `authenticationKey` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#): The dynamic authentication key for which certification and associated static authentication data is being provided. This value cannot be `null`. |
-| `expirationDate` | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#): The expiration date of the static authentication data. This value cannot be `null`. |
+| `authenticationKey` | [X509Certificate](../java/security/cert/X509Certificate.md): The dynamic authentication key for which certification and associated static authentication data is being provided. This value cannot be `null`. |
+| `expirationDate` | [Instant](../java/time/Instant.md): The expiration date of the static authentication data. This value cannot be `null`. |
 | `staticAuthData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): Static authentication data provided by the issuer that validates the authenticity and integrity of the credential data fields. This value cannot be `null`. |
 | --- | --- |
 
@@ -572,7 +572,7 @@ This is only implemented in feature version 202101 or later. If not implemented,
 
 | Parameters ||
 |---|---|
-| `personalizationData` | [PersonalizationData](https://developer.android.com/reference/kotlin/android/security/identity/PersonalizationData): The data to update, including access control profiles and data elements and their values, grouped into namespaces. This value cannot be `null`. |
+| `personalizationData` | [PersonalizationData](../android/security/identity/PersonalizationData.md): The data to update, including access control profiles and data elements and their values, grouped into namespaces. This value cannot be `null`. |
 
 | Return ||
 |---|---|

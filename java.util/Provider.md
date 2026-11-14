@@ -8,18 +8,18 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 interface Provider<S : Any!> : Supplier<S>
 ```
 
-| [java.util.ServiceLoader.Provider](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider#) |
+| [java.util.ServiceLoader.Provider](../java/util/ServiceLoader.Provider.md) |
 
 Represents a service provider located by`ServiceLoader`.
 
-When using a loader's [stream()](https://developer.android.com/reference/kotlin/java/util/ServiceLoader#stream())method then the elements are of type`Provider`. This allows processing to select or filter on the provider class without instantiating the provider.
+When using a loader's [stream()](../java/util/ServiceLoader.md))method then the elements are of type`Provider`. This allows processing to select or filter on the provider class without instantiating the provider.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| abstractS | [get](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider#get())`()` Returns an instance of the provider. |
-| abstract [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<outS\>! | [type](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider#type())`()` Returns the provider type. |
+| abstractS | [get](../java/util/ServiceLoader.Provider.md))`()` Returns an instance of the provider. |
+| abstract [Class](../java/lang/Class.md)\<outS\>! | [type](../java/util/ServiceLoader.Provider.md))`()` Returns the provider type. |
 
 ## Public methods
 
@@ -49,10 +49,10 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 abstract fun type(): Class<out S>!
 ```
 
-Returns the provider type. There is no guarantee that this type is accessible or that it has a public no-args constructor. The [get()](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider#get())method should be used to obtain the provider instance.
+Returns the provider type. There is no guarantee that this type is accessible or that it has a public no-args constructor. The [get()](../java/util/ServiceLoader.Provider.md))method should be used to obtain the provider instance.
 
 When a module declares that the provider class is created by a provider factory then this method returns the return type of its public static "`provider()`" method.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<out` `S>! | The provider type |
+| [Class](../java/lang/Class.md)<out` `S>! | The provider type |

@@ -8,7 +8,7 @@ class LocalDateTime : ChronoLocalDateTime<LocalDate!>, Serializable, Temporal,
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#) |
+| ↳ | [java.time.LocalDateTime](../java/time/LocalDateTime.md) |
 
 A date-time without a time-zone in the ISO-8601 calendar system, such as `2007-12-03T10:15:30`.
 
@@ -18,31 +18,31 @@ This class does not store or represent a time-zone. Instead, it is a description
 
 The ISO-8601 calendar system is the modern civil calendar system used today in most of the world. It is equivalent to the proleptic Gregorian calendar system, in which today's rules for leap years are applied for all time. For most applications written today, the ISO-8601 rules are entirely suitable. However, any application that makes use of historical dates, and requires them to be accurate will find the ISO-8601 approach unsuitable.
 
-This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#equals(kotlin.Any)) as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. The `equals` method should be used for comparisons.
+This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](../java/time/LocalDateTime.md)) as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. The `equals` method should be used for comparisons.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have the same date and time as this object. |
-| [OffsetDateTime](https://developer.android.com/reference/kotlin/java/time/OffsetDateTime)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#atOffset(java.time.ZoneOffset)(offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Combines this date-time with an offset to create an `OffsetDateTime`. |
-| [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#atZone(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Combines this date-time with a time-zone to create a `ZonedDateTime`. |
+| [Temporal](../java/time/temporal/Temporal.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have the same date and time as this object. |
+| [OffsetDateTime](../java/time/OffsetDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#atOffset(java.time.ZoneOffset)(offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Combines this date-time with an offset to create an `OffsetDateTime`. |
+| [ZonedDateTime](../java/time/ZonedDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#atZone(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Combines this date-time with a time-zone to create a `ZonedDateTime`. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#compareTo(java.time.chrono.ChronoLocalDateTime)(other: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime<*>!)` Compares this date-time to another date-time. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this date-time is equal to another date-time. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#format(java.time.format.DateTimeFormatter)(formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Formats this date-time using the specified formatter. |
 | --- | --- |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `LocalDateTime` from a temporal object. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `LocalDateTime` from a temporal object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this date-time as an `int`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getDayOfMonth()()` Gets the day-of-month field. |
 | --- | --- |
-| [DayOfWeek](https://developer.android.com/reference/kotlin/java/time/DayOfWeek)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getDayOfWeek()()` Gets the day-of-week field, which is an enum `DayOfWeek`. |
+| [DayOfWeek](../java/time/DayOfWeek.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getDayOfWeek()()` Gets the day-of-week field, which is an enum `DayOfWeek`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getDayOfYear()()` Gets the day-of-year field. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getHour()()` Gets the hour-of-day field. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this date-time as a `long`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getMinute()()` Gets the minute-of-hour field. |
-| [Month](https://developer.android.com/reference/kotlin/java/time/Month)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getMonth()()` Gets the month-of-year field using the `Month` enum. |
+| [Month](../java/time/Month.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getMonth()()` Gets the month-of-year field using the `Month` enum. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getMonthValue()()` Gets the month-of-year field from 1 to 12. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#getNano()()` Gets the nano-of-second field. |
@@ -57,74 +57,74 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#isSupported(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Checks if the specified unit is supported. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minus(java.time.temporal.TemporalAmount)(amountToSubtract: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this date-time with the specified amount subtracted. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this date-time with the specified amount subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minus(java.time.temporal.TemporalAmount)(amountToSubtract: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this date-time with the specified amount subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this date-time with the specified amount subtracted. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusDays(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of days subtracted. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusHours(kotlin.Long)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of hours subtracted. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusMinutes(kotlin.Long)(minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of minutes subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusDays(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of days subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusHours(kotlin.Long)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of hours subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusMinutes(kotlin.Long)(minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of minutes subtracted. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusMonths(kotlin.Long)(months: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of months subtracted. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusNanos(kotlin.Long)(nanos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of nanoseconds subtracted. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusSeconds(kotlin.Long)(seconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of seconds subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusMonths(kotlin.Long)(months: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of months subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusNanos(kotlin.Long)(nanos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of nanoseconds subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusSeconds(kotlin.Long)(seconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of seconds subtracted. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusWeeks(kotlin.Long)(weeks: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of weeks subtracted. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusYears(kotlin.Long)(years: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of years subtracted. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#now()()` Obtains the current date-time from the system clock in the default time-zone. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusWeeks(kotlin.Long)(weeks: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of weeks subtracted. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#minusYears(kotlin.Long)(years: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of years subtracted. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#now()()` Obtains the current date-time from the system clock in the default time-zone. |
 | --- | --- |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock!)` Obtains the current date-time from the specified clock. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains the current date-time from the system clock in the specified time-zone. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour and minute, setting the second and nanosecond to zero. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock!)` Obtains the current date-time from the specified clock. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains the current date-time from the system clock in the specified time-zone. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour and minute, setting the second and nanosecond to zero. |
 | --- | --- |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute and second, setting the nanosecond to zero. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute, second and nanosecond. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20java.time.Month,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour and minute, setting the second and nanosecond to zero. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute and second, setting the nanosecond to zero. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute, second and nanosecond. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20java.time.Month,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour and minute, setting the second and nanosecond to zero. |
 | --- | --- |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20java.time.Month,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute and second, setting the nanosecond to zero. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20java.time.Month,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute, second and nanosecond. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(java.time.LocalDate,%20java.time.LocalTime)(date: https://developer.android.com/reference/kotlin/java/time/LocalDate!, time: https://developer.android.com/reference/kotlin/java/time/LocalTime!)` Obtains an instance of `LocalDateTime` from a date and time. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20java.time.Month,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute and second, setting the nanosecond to zero. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(kotlin.Int,%20java.time.Month,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalDateTime` from year, month, day, hour, minute, second and nanosecond. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#of(java.time.LocalDate,%20java.time.LocalTime)(date: https://developer.android.com/reference/kotlin/java/time/LocalDate!, time: https://developer.android.com/reference/kotlin/java/time/LocalTime!)` Obtains an instance of `LocalDateTime` from a date and time. |
 | --- | --- |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#ofEpochSecond(kotlin.Long,%20kotlin.Int,%20java.time.ZoneOffset)(epochSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Obtains an instance of `LocalDateTime` using seconds from the epoch of 1970-01-01T00:00:00Z. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#ofInstant(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains an instance of `LocalDateTime` from an `Instant` and zone ID. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Obtains an instance of `LocalDateTime` from a text string such as `2007-12-03T10:15:30`. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#ofEpochSecond(kotlin.Long,%20kotlin.Int,%20java.time.ZoneOffset)(epochSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Obtains an instance of `LocalDateTime` using seconds from the epoch of 1970-01-01T00:00:00Z. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#ofInstant(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains an instance of `LocalDateTime` from an `Instant` and zone ID. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Obtains an instance of `LocalDateTime` from a text string such as `2007-12-03T10:15:30`. |
 | --- | --- |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Obtains an instance of `LocalDateTime` from a text string using a specific formatter. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plus(java.time.temporal.TemporalAmount)(amountToAdd: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this date-time with the specified amount added. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this date-time with the specified amount added. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Obtains an instance of `LocalDateTime` from a text string using a specific formatter. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plus(java.time.temporal.TemporalAmount)(amountToAdd: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this date-time with the specified amount added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this date-time with the specified amount added. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusDays(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of days added. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusHours(kotlin.Long)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of hours added. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusMinutes(kotlin.Long)(minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of minutes added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusDays(kotlin.Long)(days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of days added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusHours(kotlin.Long)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of hours added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusMinutes(kotlin.Long)(minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of minutes added. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusMonths(kotlin.Long)(months: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of months added. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusNanos(kotlin.Long)(nanos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of nanoseconds added. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusSeconds(kotlin.Long)(seconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of seconds added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusMonths(kotlin.Long)(months: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of months added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusNanos(kotlin.Long)(nanos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of nanoseconds added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusSeconds(kotlin.Long)(seconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of seconds added. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusWeeks(kotlin.Long)(weeks: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of weeks added. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusYears(kotlin.Long)(years: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of years added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusWeeks(kotlin.Long)(weeks: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of weeks added. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#plusYears(kotlin.Long)(years: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalDateTime` with the specified number of years added. |
 | R | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this date-time using the specified query. |
 | --- | --- |
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#toLocalDate()()` Gets the `LocalDate` part of this date-time. |
-| [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#toLocalTime()()` Gets the `LocalTime` part of this date-time. |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#toLocalDate()()` Gets the `LocalDate` part of this date-time. |
+| [LocalTime](../java/time/LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#toLocalTime()()` Gets the `LocalTime` part of this date-time. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#toString()()` Outputs this date-time as a `String`, such as `2007-12-03T10:15:30`. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#truncatedTo(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this `LocalDateTime` with the time truncated. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#truncatedTo(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this `LocalDateTime` with the time truncated. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit)(endExclusive: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Calculates the amount of time until another date-time in terms of the specified unit. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster!)` Returns an adjusted copy of this date-time. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this date-time with the specified field set to a new value. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withDayOfMonth(kotlin.Int)(dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the day-of-month altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster!)` Returns an adjusted copy of this date-time. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this date-time with the specified field set to a new value. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withDayOfMonth(kotlin.Int)(dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the day-of-month altered. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withDayOfYear(kotlin.Int)(dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the day-of-year altered. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withHour(kotlin.Int)(hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the hour-of-day altered. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withMinute(kotlin.Int)(minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the minute-of-hour altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withDayOfYear(kotlin.Int)(dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the day-of-year altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withHour(kotlin.Int)(hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the hour-of-day altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withMinute(kotlin.Int)(minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the minute-of-hour altered. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withMonth(kotlin.Int)(month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the month-of-year altered. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withNano(kotlin.Int)(nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the nano-of-second altered. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withSecond(kotlin.Int)(second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the second-of-minute altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withMonth(kotlin.Int)(month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the month-of-year altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withNano(kotlin.Int)(nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the nano-of-second altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withSecond(kotlin.Int)(second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the second-of-minute altered. |
 | --- | --- |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the year altered. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#withYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalDateTime` with the year altered. |
 
 | Inherited functions ||
 |---|---|
@@ -135,8 +135,8 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 
 | Properties ||
 |---|---|
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#MAX:java.time.LocalDateTime` The maximum supported `LocalDateTime`, '+999999999-12-31T23:59:59. |
-| static [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime#)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#MIN:java.time.LocalDateTime` The minimum supported `LocalDateTime`, '-999999999-01-01T00:00:00'. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#MAX:java.time.LocalDateTime` The maximum supported `LocalDateTime`, '+999999999-12-31T23:59:59. |
+| static [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalDateTime#MIN:java.time.LocalDateTime` The minimum supported `LocalDateTime`, '-999999999-01-01T00:00:00'. |
 
 ## Public methods
 
@@ -167,7 +167,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!: the target object to be adjusted, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!: the target object to be adjusted, not null |
 
 | Return ||
 |---|---|
@@ -192,7 +192,7 @@ This returns an `OffsetDateTime` formed from this date-time at the specified off
 
 | Parameters ||
 |---|---|
-| `offset` | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)!: the offset to combine with, not null |
+| `offset` | [ZoneOffset](../java/time/ZoneOffset.md)!: the offset to combine with, not null |
 
 | Return ||
 |---|---|
@@ -220,7 +220,7 @@ To obtain the later offset during an overlap, call `https://developer.android.co
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!: the time-zone to use, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the time-zone to use, not null |
 
 | Return ||
 |---|---|
@@ -243,7 +243,7 @@ If all the date-times being compared are instances of `LocalDateTime`, then the 
 | Parameters ||
 |---|---|
 | `o` | the object to be compared. |
-| `other` | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -288,7 +288,7 @@ This date-time will be passed to the formatter to produce a string.
 
 | Parameters ||
 |---|---|
-| `formatter` | [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter)!: the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!: the formatter to use, not null |
 
 | Return ||
 |---|---|
@@ -316,7 +316,7 @@ This method matches the signature of the functional interface `https://developer
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor)!: the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
 
 | Return ||
 |---|---|
@@ -344,7 +344,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -439,7 +439,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to get, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -591,7 +591,7 @@ This method only considers the position of the two date-times on the local time-
 
 | Parameters ||
 |---|---|
-| `other` | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -622,7 +622,7 @@ This method only considers the position of the two date-times on the local time-
 
 | Parameters ||
 |---|---|
-| `other` | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -653,7 +653,7 @@ This method only considers the position of the two date-times on the local time-
 
 | Parameters ||
 |---|---|
-| `other` | [ChronoLocalDateTime](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime)\<\*\>!: the other date-time to compare to, not null |
+| `other` | [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\<\*\>!: the other date-time to compare to, not null |
 
 | Return ||
 |---|---|
@@ -708,7 +708,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to check, null returns false |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to check, null returns false |
 
 | Return ||
 |---|---|
@@ -750,7 +750,7 @@ If the unit is not a `ChronoUnit`, then the result of this method is obtained by
 
 | Parameters ||
 |---|---|
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!: the unit to check, null returns false |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to check, null returns false |
 
 | Return ||
 |---|---|
@@ -775,7 +775,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amount` | the amount to subtract, not null |
-| `amountToSubtract` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!: the amount to subtract, not null |
+| `amountToSubtract` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -808,7 +808,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amountToSubtract` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the unit to subtract from the result, may be negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!: the unit of the amount to subtract, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -1069,7 +1069,7 @@ This will query the specified clock to obtain the current date-time. Using this 
 
 | Parameters ||
 |---|---|
-| `clock` | [Clock](https://developer.android.com/reference/kotlin/java/time/Clock)!: the clock to use, not null |
+| `clock` | [Clock](../java/time/Clock.md)!: the clock to use, not null |
 
 | Return ||
 |---|---|
@@ -1091,7 +1091,7 @@ Using this method will prevent the ability to use an alternate clock for testing
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!: the zone ID to use, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the zone ID to use, not null |
 
 | Return ||
 |---|---|
@@ -1231,7 +1231,7 @@ This returns a `LocalDateTime` with the specified year, month, day-of-month, hou
 | Parameters ||
 |---|---|
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year to represent, from MIN_YEAR to MAX_YEAR |
-| `month` | [Month](https://developer.android.com/reference/kotlin/java/time/Month)!: the month-of-year to represent, not null |
+| `month` | [Month](../java/time/Month.md)!: the month-of-year to represent, not null |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month to represent, from 1 to 31 |
 | --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the hour-of-day to represent, from 0 to 23 |
@@ -1267,7 +1267,7 @@ This returns a `LocalDateTime` with the specified year, month, day-of-month, hou
 | Parameters ||
 |---|---|
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year to represent, from MIN_YEAR to MAX_YEAR |
-| `month` | [Month](https://developer.android.com/reference/kotlin/java/time/Month)!: the month-of-year to represent, not null |
+| `month` | [Month](../java/time/Month.md)!: the month-of-year to represent, not null |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month to represent, from 1 to 31 |
 | --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the hour-of-day to represent, from 0 to 23 |
@@ -1306,7 +1306,7 @@ This returns a `LocalDateTime` with the specified year, month, day-of-month, hou
 | Parameters ||
 |---|---|
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year to represent, from MIN_YEAR to MAX_YEAR |
-| `month` | [Month](https://developer.android.com/reference/kotlin/java/time/Month)!: the month-of-year to represent, not null |
+| `month` | [Month](../java/time/Month.md)!: the month-of-year to represent, not null |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the day-of-month to represent, from 1 to 31 |
 | --- | --- |
 | `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the hour-of-day to represent, from 0 to 23 |
@@ -1338,8 +1338,8 @@ Obtains an instance of `LocalDateTime` from a date and time.
 
 | Parameters ||
 |---|---|
-| `date` | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)!: the local date, not null |
-| `time` | [LocalTime](https://developer.android.com/reference/kotlin/java/time/LocalTime)!: the local time, not null |
+| `date` | [LocalDate](../java/time/LocalDate.md)!: the local date, not null |
+| `time` | [LocalTime](../java/time/LocalTime.md)!: the local time, not null |
 
 | Return ||
 |---|---|
@@ -1365,7 +1365,7 @@ This allows the `https://developer.android.com/reference/kotlin/java/time/tempor
 |---|---|
 | `epochSecond` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the number of seconds from the epoch of 1970-01-01T00:00:00Z |
 | `nanoOfSecond` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the nanosecond within the second, from 0 to 999,999,999 |
-| `offset` | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset)!: the zone offset, not null |
+| `offset` | [ZoneOffset](../java/time/ZoneOffset.md)!: the zone offset, not null |
 | --- | --- |
 
 | Return ||
@@ -1393,8 +1393,8 @@ This creates a local date-time based on the specified instant. First, the offset
 
 | Parameters ||
 |---|---|
-| `instant` | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant)!: the instant to create the date-time from, not null |
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId)!: the time-zone, which may be an offset, not null |
+| `instant` | [Instant](../java/time/Instant.md)!: the instant to create the date-time from, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the time-zone, which may be an offset, not null |
 
 | Return ||
 |---|---|
@@ -1446,7 +1446,7 @@ The text is parsed using the formatter, returning a date-time.
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to parse, not null |
-| `formatter` | [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter)!: the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!: the formatter to use, not null |
 
 | Return ||
 |---|---|
@@ -1475,7 +1475,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amount` | the amount to add, not null |
-| `amountToAdd` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!: the amount to add, not null |
+| `amountToAdd` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -1510,7 +1510,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the unit to add to the result, may be negative |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!: the unit of the amount to add, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -1756,7 +1756,7 @@ The result of this method is obtained by invoking the `https://developer.android
 | Parameters ||
 |---|---|
 | `<R>` | the type of the result |
-| `query` | [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery)\<R\>!: the query to invoke, not null |
+| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<R\>!: the query to invoke, not null |
 
 | Return ||
 |---|---|
@@ -1785,7 +1785,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to query the range for, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to query the range for, not null |
 
 | Return ||
 |---|---|
@@ -1864,13 +1864,13 @@ Returns a copy of this `LocalDateTime` with the time truncated.
 
 Truncation returns a copy of the original date-time with fields smaller than the specified unit set to zero. For example, truncating with the `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit` unit will set the second-of-minute and nano-of-second field to zero.
 
-The unit must have a [duration](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#getDuration()) that divides into the length of a standard day without remainder. This includes all supplied time units on `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit` and `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit`. Other units throw an exception.
+The unit must have a [duration](../java/time/temporal/TemporalUnit.md)) that divides into the length of a standard day without remainder. This includes all supplied time units on `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit` and `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit`. Other units throw an exception.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!: the unit to truncate to, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to truncate to, not null |
 
 | Return ||
 |---|---|
@@ -1916,8 +1916,8 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `endExclusive` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!: the end date, exclusive, which is converted to a `LocalDateTime`, not null |
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!: the unit to measure the amount in, not null |
+| `endExclusive` | [Temporal](../java/time/temporal/Temporal.md)!: the end date, exclusive, which is converted to a `LocalDateTime`, not null |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to measure the amount in, not null |
 
 | Return ||
 |---|---|
@@ -1970,7 +1970,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `adjuster` | [TemporalAdjuster](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster)!: the adjuster to use, not null |
+| `adjuster` | [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
 
 | Return ||
 |---|---|
@@ -2006,7 +2006,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField)!: the field to set in the result, not null |
+| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to set in the result, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new value of the field in the result |
 
 | Return ||

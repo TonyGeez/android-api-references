@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # JsonReader
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/JsonReader "View this page in Java") 
+Kotlin| [Java](../android/util/JsonReader.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class JsonReader : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.JsonReader](https://developer.android.com/reference/kotlin/android/util/JsonReader#) |
+| ↳ | [android.util.JsonReader](../android/util/JsonReader.md) |
 
 Reads a JSON ([RFC 4627](http://www.ietf.org/rfc/rfc4627.txt)) encoded value as a stream of tokens. This stream includes both literal values (strings, numbers, booleans, and nulls) as well as the begin and end delimiters of objects and arrays. The tokens are traversed in depth-first order, the same order that they appear in the JSON document. Within JSON objects, name/value pairs are represented by a single token.
 
@@ -25,14 +25,14 @@ To create a recursive descent parser for your own JSON streams, first create an 
 
 Next, create handler methods for each structure in your JSON text. You'll need a method for each object type and for each array type.
 
-- Within**array handling** methods, first call [beginArray](https://developer.android.com/reference/kotlin/android/util/JsonReader#beginArray())to consume the array's opening bracket. Then create a while loop that accumulates values, terminating when [hasNext](https://developer.android.com/reference/kotlin/android/util/JsonReader#hasNext())is false. Finally, read the array's closing bracket by calling [endArray](https://developer.android.com/reference/kotlin/android/util/JsonReader#endArray()).
-- Within**object handling** methods, first call [beginObject](https://developer.android.com/reference/kotlin/android/util/JsonReader#beginObject())to consume the object's opening brace. Then create a while loop that assigns values to local variables based on their name. This loop should terminate when [hasNext](https://developer.android.com/reference/kotlin/android/util/JsonReader#hasNext())is false. Finally, read the object's closing brace by calling [endObject](https://developer.android.com/reference/kotlin/android/util/JsonReader#endObject()).
+- Within**array handling** methods, first call [beginArray](../android/util/JsonReader.md))to consume the array's opening bracket. Then create a while loop that accumulates values, terminating when [hasNext](../android/util/JsonReader.md))is false. Finally, read the array's closing bracket by calling [endArray](../android/util/JsonReader.md)).
+- Within**object handling** methods, first call [beginObject](../android/util/JsonReader.md))to consume the object's opening brace. Then create a while loop that assigns values to local variables based on their name. This loop should terminate when [hasNext](../android/util/JsonReader.md))is false. Finally, read the object's closing brace by calling [endObject](../android/util/JsonReader.md)).
 
 When a nested object or array is encountered, delegate to the corresponding handler method.
 
-When an unknown name is encountered, strict parsers should fail with an exception. Lenient parsers should call [skipValue()](https://developer.android.com/reference/kotlin/android/util/JsonReader#skipValue())to recursively skip the value's nested tokens, which may otherwise conflict.
+When an unknown name is encountered, strict parsers should fail with an exception. Lenient parsers should call [skipValue()](../android/util/JsonReader.md))to recursively skip the value's nested tokens, which may otherwise conflict.
 
-If a value may be null, you should first check using [peek()](https://developer.android.com/reference/kotlin/android/util/JsonReader#peek()). Null literals can be consumed using either [nextNull()](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextNull())or [skipValue()](https://developer.android.com/reference/kotlin/android/util/JsonReader#skipValue()).
+If a value may be null, you should first check using [peek()](../android/util/JsonReader.md)). Null literals can be consumed using either [nextNull()](../android/util/JsonReader.md))or [skipValue()](../android/util/JsonReader.md)).
 
 ### Example
 
@@ -141,7 +141,7 @@ This code implements the parser for the above structure:
 
 ### Number Handling
 
-This reader permits numeric values to be read as strings and string values to be read as numbers. For example, both elements of the JSON array`[1, "1"]`may be read using either [nextInt](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextInt())or [nextString](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextString()). This behavior is intended to prevent lossy numeric conversions: double is JavaScript's only numeric type and very large values like`9007199254740993`cannot be represented exactly on that platform. To minimize precision loss, extremely large values should be written and read as strings in JSON.
+This reader permits numeric values to be read as strings and string values to be read as numbers. For example, both elements of the JSON array`[1, "1"]`may be read using either [nextInt](../android/util/JsonReader.md))or [nextString](../android/util/JsonReader.md)). This behavior is intended to prevent lossy numeric conversions: double is JavaScript's only numeric type and very large values like`9007199254740993`cannot be represented exactly on that platform. To minimize precision loss, extremely large values should be written and read as strings in JSON.
 
 Each`JsonReader`may be used to read a single JSON stream. Instances of this class are not thread safe.
 
@@ -149,33 +149,33 @@ Each`JsonReader`may be used to read a single JSON stream. Instances of this clas
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [JsonReader](https://developer.android.com/reference/kotlin/android/util/JsonReader#JsonReader(java.io.Reader))`(`in:` ` [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!`)` Creates a new instance that reads a JSON-encoded stream from`in`. |
+| [JsonReader](../android/util/JsonReader.md))`(`in:` ` [Reader](../java/io/Reader.md)!`)` Creates a new instance that reads a JSON-encoded stream from`in`. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginArray](https://developer.android.com/reference/kotlin/android/util/JsonReader#beginArray())`()` Consumes the next token from the JSON stream and asserts that it is the beginning of a new array. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginObject](https://developer.android.com/reference/kotlin/android/util/JsonReader#beginObject())`()` Consumes the next token from the JSON stream and asserts that it is the beginning of a new object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/util/JsonReader#close())`()` Closes this JSON reader and the underlying [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginArray](../android/util/JsonReader.md))`()` Consumes the next token from the JSON stream and asserts that it is the beginning of a new array. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginObject](../android/util/JsonReader.md))`()` Consumes the next token from the JSON stream and asserts that it is the beginning of a new object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/util/JsonReader.md))`()` Closes this JSON reader and the underlying [Reader](../java/io/Reader.md). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endArray](https://developer.android.com/reference/kotlin/android/util/JsonReader#endArray())`()` Consumes the next token from the JSON stream and asserts that it is the end of the current array. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endObject](https://developer.android.com/reference/kotlin/android/util/JsonReader#endObject())`()` Consumes the next token from the JSON stream and asserts that it is the end of the current object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](https://developer.android.com/reference/kotlin/android/util/JsonReader#hasNext())`()` Returns true if the current array or object has another element. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endArray](../android/util/JsonReader.md))`()` Consumes the next token from the JSON stream and asserts that it is the end of the current array. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endObject](../android/util/JsonReader.md))`()` Consumes the next token from the JSON stream and asserts that it is the end of the current object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](../android/util/JsonReader.md))`()` Returns true if the current array or object has another element. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLenient](https://developer.android.com/reference/kotlin/android/util/JsonReader#isLenient())`()` Returns true if this parser is liberal in what it accepts. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextBoolean](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextBoolean())`()` Returns the [boolean](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [nextDouble](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextDouble())`()` Returns the [double](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLenient](../android/util/JsonReader.md))`()` Returns true if this parser is liberal in what it accepts. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextBoolean](../android/util/JsonReader.md))`()` Returns the [boolean](../android/util/JsonToken.md) value of the next token, consuming it. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [nextDouble](../android/util/JsonReader.md))`()` Returns the [double](../android/util/JsonToken.md) value of the next token, consuming it. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextInt](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextInt())`()` Returns the [int](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [nextLong](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextLong())`()` Returns the [long](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextName](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextName())`()` Returns the next token, a [property name](https://developer.android.com/reference/kotlin/android/util/JsonToken), and consumes it. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextInt](../android/util/JsonReader.md))`()` Returns the [int](../android/util/JsonToken.md) value of the next token, consuming it. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [nextLong](../android/util/JsonReader.md))`()` Returns the [long](../android/util/JsonToken.md) value of the next token, consuming it. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextName](../android/util/JsonReader.md))`()` Returns the next token, a [property name](../android/util/JsonToken.md), and consumes it. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [nextNull](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextNull())`()` Consumes the next token from the JSON stream and asserts that it is a literal null. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextString](https://developer.android.com/reference/kotlin/android/util/JsonReader#nextString())`()` Returns the [string](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. |
-| [JsonToken](https://developer.android.com/reference/kotlin/android/util/JsonToken)! | [peek](https://developer.android.com/reference/kotlin/android/util/JsonReader#peek())`()` Returns the type of the next token without consuming it. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [nextNull](../android/util/JsonReader.md))`()` Consumes the next token from the JSON stream and asserts that it is a literal null. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextString](../android/util/JsonReader.md))`()` Returns the [string](../android/util/JsonToken.md) value of the next token, consuming it. |
+| [JsonToken](../android/util/JsonToken.md)! | [peek](../android/util/JsonReader.md))`()` Returns the type of the next token without consuming it. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLenient](https://developer.android.com/reference/kotlin/android/util/JsonReader#setLenient(kotlin.Boolean))`(`lenient:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configure this parser to be be liberal in what it accepts. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skipValue](https://developer.android.com/reference/kotlin/android/util/JsonReader#skipValue())`()` Skips the next value recursively. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/util/JsonReader#toString())`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLenient](../android/util/JsonReader.md))`(`lenient:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configure this parser to be be liberal in what it accepts. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skipValue](../android/util/JsonReader.md))`()` Skips the next value recursively. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/util/JsonReader.md))`()` <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -220,7 +220,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun close(): Unit
 ```
 
-Closes this JSON reader and the underlying [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#).
+Closes this JSON reader and the underlying [Reader](../java/io/Reader.md).
 
 | Exceptions ||
 |-----------------------|-----------------------------------|
@@ -275,7 +275,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun nextBoolean(): Boolean
 ```
 
-Returns the [boolean](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it.
+Returns the [boolean](../android/util/JsonToken.md) value of the next token, consuming it.
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------------------|
@@ -289,7 +289,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun nextDouble(): Double
 ```
 
-Returns the [double](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. If the next token is a string, this method will attempt to parse it as a double using [Double.parseDouble(String)](https://developer.android.com/reference/kotlin/java/lang/Double.html#parseDouble(kotlin.String)).
+Returns the [double](../android/util/JsonToken.md) value of the next token, consuming it. If the next token is a string, this method will attempt to parse it as a double using [Double.parseDouble(String)](../java/lang/Double.md)).
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------|
@@ -303,7 +303,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun nextInt(): Int
 ```
 
-Returns the [int](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. If the next token is a string, this method will attempt to parse it as an int. If the next token's numeric value cannot be exactly represented by a Java`int`, this method throws.
+Returns the [int](../android/util/JsonToken.md) value of the next token, consuming it. If the next token is a string, this method will attempt to parse it as an int. If the next token's numeric value cannot be exactly represented by a Java`int`, this method throws.
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------------|
@@ -318,7 +318,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun nextLong(): Long
 ```
 
-Returns the [long](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. If the next token is a string, this method will attempt to parse it as a long. If the next token's numeric value cannot be exactly represented by a Java`long`, this method throws.
+Returns the [long](../android/util/JsonToken.md) value of the next token, consuming it. If the next token is a string, this method will attempt to parse it as a long. If the next token's numeric value cannot be exactly represented by a Java`long`, this method throws.
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------------|
@@ -333,7 +333,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun nextName(): String!
 ```
 
-Returns the next token, a [property name](https://developer.android.com/reference/kotlin/android/util/JsonToken), and consumes it.
+Returns the next token, a [property name](../android/util/JsonToken.md), and consumes it.
 
 | Exceptions ||
 |-----------------------|---------------------------------------------------------|
@@ -361,7 +361,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun nextString(): String!
 ```
 
-Returns the [string](https://developer.android.com/reference/kotlin/android/util/JsonToken) value of the next token, consuming it. If the next token is a number, this method will return its string form.
+Returns the [string](../android/util/JsonToken.md) value of the next token, consuming it. If the next token is a number, this method will return its string form.
 
 | Exceptions ||
 |-----------------------------------|----------------------------------------------------------------|

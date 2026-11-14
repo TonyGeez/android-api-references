@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface ToDoubleFunction<T : Any!>
 ```
 
-| [java.util.function.ToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction#) |
+| [java.util.function.ToDoubleFunction](../java/util/function/ToDoubleFunction.md) |
 
-Represents a function that produces a double-valued result. This is the`double`-producing primitive specialization for [Function](https://developer.android.com/reference/kotlin/java/util/function/Function).
+Represents a function that produces a double-valued result. This is the`double`-producing primitive specialization for [Function](../java/util/function/Function.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [applyAsDouble(java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction#applyAsDouble(java.util.function.ToDoubleFunction.T)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsDouble(java.lang.Object)](../java/util/function/ToDoubleFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction#applyAsDouble(java.util.function.ToDoubleFunction.T))`(`value:` `T`)` Applies this function to the given argument. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](../java/util/function/ToDoubleFunction.md))`(`value:` `T`)` Applies this function to the given argument. |
 
 ## Public methods
 

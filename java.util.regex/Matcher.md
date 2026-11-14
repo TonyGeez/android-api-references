@@ -10,29 +10,29 @@ class Matcher : MatchResult
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.regex.Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) |
+| ↳ | [java.util.regex.Matcher](../java/util/regex/Matcher.md) |
 
-An engine that performs match operations on a by interpreting a [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern).
+An engine that performs match operations on a by interpreting a [Pattern](../java/util/regex/Pattern.md).
 
-A matcher is created from a pattern by invoking the pattern's [matcher](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#matcher(kotlin.CharSequence))method. Once created, a matcher can be used to perform three different kinds of match operations:
+A matcher is created from a pattern by invoking the pattern's [matcher](../java/util/regex/Pattern.md))method. Once created, a matcher can be used to perform three different kinds of match operations:
 
-- The [matches](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#matches())method attempts to match the entire input sequence against the pattern.
-- The [lookingAt](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#lookingAt())method attempts to match the input sequence, starting at the beginning, against the pattern.
+- The [matches](../java/util/regex/Matcher.md))method attempts to match the entire input sequence against the pattern.
+- The [lookingAt](../java/util/regex/Matcher.md))method attempts to match the input sequence, starting at the beginning, against the pattern.
 - The #find method scans the input sequence looking for the next subsequence that matches the pattern.
 
 Each of these methods returns a boolean indicating success or failure. More information about a successful match can be obtained by querying the state of the matcher.
 
-A matcher finds matches in a subset of its input called the*region* . By default, the region contains all of the matcher's input. The region can be modified via the [region](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#region(kotlin.Int,%20kotlin.Int))method and queried via the [regionStart](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionStart())and [regionEnd](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionEnd())methods. The way that the region boundaries interact with some pattern constructs can be changed. See [useAnchoringBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useAnchoringBounds(kotlin.Boolean))and [useTransparentBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useTransparentBounds(kotlin.Boolean))for more details.
+A matcher finds matches in a subset of its input called the*region* . By default, the region contains all of the matcher's input. The region can be modified via the [region](../java/util/regex/Matcher.md))method and queried via the [regionStart](../java/util/regex/Matcher.md))and [regionEnd](../java/util/regex/Matcher.md))methods. The way that the region boundaries interact with some pattern constructs can be changed. See [useAnchoringBounds](../java/util/regex/Matcher.md))and [useTransparentBounds](../java/util/regex/Matcher.md))for more details.
 
 This class also defines methods for replacing matched subsequences with new strings whose contents can, if desired, be computed from the match result. The #appendReplacement and #appendTail methods can be used in tandem in order to collect the result into an existing string buffer or string builder. Alternatively, the more convenient #replaceAll method can be used to create a string in which every matching subsequence in the input sequence is replaced.
 
-The explicit state of a matcher includes the start and end indices of the most recent successful match. It also includes the start and end indices of the input subsequence captured by each [capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) in the pattern as well as a total count of such subsequences. As a convenience, methods are also provided for returning these captured subsequences in string form.
+The explicit state of a matcher includes the start and end indices of the most recent successful match. It also includes the start and end indices of the input subsequence captured by each [capturing group](../java/util/regex/Pattern.md) in the pattern as well as a total count of such subsequences. As a convenience, methods are also provided for returning these captured subsequences in string form.
 
-The explicit state of a matcher is initially undefined; attempting to query any part of it before a successful match will cause an [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) to be thrown. The explicit state of a matcher is recomputed by every match operation.
+The explicit state of a matcher is initially undefined; attempting to query any part of it before a successful match will cause an [IllegalStateException](../java/lang/IllegalStateException.md) to be thrown. The explicit state of a matcher is recomputed by every match operation.
 
 The implicit state of a matcher includes the input character sequence as well as the*append position*, which is initially zero and is updated by the #appendReplacement method.
 
-A matcher may be reset explicitly by invoking its [reset()](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#reset())method or, if a new input sequence is desired, its [reset(CharSequence)](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#reset(kotlin.CharSequence))method. Resetting a matcher discards its explicit state information and sets the append position to zero.
+A matcher may be reset explicitly by invoking its [reset()](../java/util/regex/Matcher.md))method or, if a new input sequence is desired, its [reset(CharSequence)](../java/util/regex/Matcher.md))method. Resetting a matcher discards its explicit state information and sets the append position to zero.
 
 Instances of this class are not safe for use by multiple concurrent threads.
 
@@ -40,57 +40,57 @@ Instances of this class are not safe for use by multiple concurrent threads.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [appendReplacement](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendReplacement(java.lang.StringBuffer,%20kotlin.String))`(`sb:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`, `replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Implements a non-terminal append-and-replace step. |
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [appendReplacement](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendReplacement(java.lang.StringBuilder,%20kotlin.String))`(`sb:` ` [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)`, `replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Implements a non-terminal append-and-replace step. |
-| [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | [appendTail](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendTail(java.lang.StringBuffer))`(`sb:` ` [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)`)` Implements a terminal append-and-replace step. |
+| [Matcher](../java/util/regex/Matcher.md) | [appendReplacement](../java/util/regex/Matcher.md))`(`sb:` ` [StringBuffer](../java/lang/StringBuffer.md)`, `replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Implements a non-terminal append-and-replace step. |
+| [Matcher](../java/util/regex/Matcher.md) | [appendReplacement](../java/util/regex/Matcher.md))`(`sb:` ` [StringBuilder](../java/lang/StringBuilder.md)`, `replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Implements a non-terminal append-and-replace step. |
+| [StringBuffer](../java/lang/StringBuffer.md) | [appendTail](../java/util/regex/Matcher.md))`(`sb:` ` [StringBuffer](../java/lang/StringBuffer.md)`)` Implements a terminal append-and-replace step. |
 | --- | --- |
-| [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#) | [appendTail](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendTail(java.lang.StringBuilder))`(`sb:` ` [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#)`)` Implements a terminal append-and-replace step. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#end())`()` Returns the offset after the last character matched. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#end(kotlin.Int))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the offset after the last character of the subsequence captured by the given group during the previous match operation. |
+| [StringBuilder](../java/lang/StringBuilder.md) | [appendTail](../java/util/regex/Matcher.md))`(`sb:` ` [StringBuilder](../java/lang/StringBuilder.md)`)` Implements a terminal append-and-replace step. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](../java/util/regex/Matcher.md))`()` Returns the offset after the last character matched. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](../java/util/regex/Matcher.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the offset after the last character of the subsequence captured by the given group during the previous match operation. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#end(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the offset after the last character of the subsequence captured by the given [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname) during the previous match operation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [find](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#find())`()` Attempts to find the next subsequence of the input sequence that matches the pattern. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [find](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#find(kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Resets this matcher and then attempts to find the next subsequence of the input sequence that matches the pattern, starting at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](../java/util/regex/Matcher.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the offset after the last character of the subsequence captured by the given [named-capturing group](../java/util/regex/Pattern.md) during the previous match operation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [find](../java/util/regex/Matcher.md))`()` Attempts to find the next subsequence of the input sequence that matches the pattern. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [find](../java/util/regex/Matcher.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Resets this matcher and then attempts to find the next subsequence of the input sequence that matches the pattern, starting at the specified index. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [group](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#group())`()` Returns the input subsequence matched by the previous match. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [group](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#group(kotlin.Int))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the input subsequence captured by the given group during the previous match operation. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [group](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#group(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the input subsequence captured by the given [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname) during the previous match operation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [group](../java/util/regex/Matcher.md))`()` Returns the input subsequence matched by the previous match. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [group](../java/util/regex/Matcher.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the input subsequence captured by the given group during the previous match operation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [group](../java/util/regex/Matcher.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the input subsequence captured by the given [named-capturing group](../java/util/regex/Pattern.md) during the previous match operation. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [groupCount](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#groupCount())`()` Returns the number of capturing groups in this matcher's pattern. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAnchoringBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#hasAnchoringBounds())`()` Queries the anchoring of region bounds for this matcher. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasTransparentBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#hasTransparentBounds())`()` Queries the transparency of region bounds for this matcher. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [groupCount](../java/util/regex/Matcher.md))`()` Returns the number of capturing groups in this matcher's pattern. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAnchoringBounds](../java/util/regex/Matcher.md))`()` Queries the anchoring of region bounds for this matcher. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasTransparentBounds](../java/util/regex/Matcher.md))`()` Queries the transparency of region bounds for this matcher. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hitEnd](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#hitEnd())`()` Returns true if the end of input was hit by the search engine in the last match operation performed by this matcher. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [lookingAt](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#lookingAt())`()` Attempts to match the input sequence, starting at the beginning of the region, against the pattern. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#matches())`()` Attempts to match the entire region against the pattern. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hitEnd](../java/util/regex/Matcher.md))`()` Returns true if the end of input was hit by the search engine in the last match operation performed by this matcher. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [lookingAt](../java/util/regex/Matcher.md))`()` Attempts to match the input sequence, starting at the beginning of the region, against the pattern. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](../java/util/regex/Matcher.md))`()` Attempts to match the entire region against the pattern. |
 | --- | --- |
-| [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern) | [pattern](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#pattern())`()` Returns the pattern that is interpreted by this matcher. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [quoteReplacement](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#quoteReplacement(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a literal replacement`String`for the specified`String`. |
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [region](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#region(kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limits of this matcher's region. |
+| [Pattern](../java/util/regex/Pattern.md) | [pattern](../java/util/regex/Matcher.md))`()` Returns the pattern that is interpreted by this matcher. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [quoteReplacement](../java/util/regex/Matcher.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a literal replacement`String`for the specified`String`. |
+| [Matcher](../java/util/regex/Matcher.md) | [region](../java/util/regex/Matcher.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limits of this matcher's region. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [regionEnd](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionEnd())`()` Reports the end index (exclusive) of this matcher's region. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [regionStart](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionStart())`()` Reports the start index of this matcher's region. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#replaceAll(kotlin.String))`(`replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Replaces every subsequence of the input sequence that matches the pattern with the given replacement string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [regionEnd](../java/util/regex/Matcher.md))`()` Reports the end index (exclusive) of this matcher's region. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [regionStart](../java/util/regex/Matcher.md))`()` Reports the start index of this matcher's region. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceAll](../java/util/regex/Matcher.md))`(`replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Replaces every subsequence of the input sequence that matches the pattern with the given replacement string. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#replaceAll(java.util.function.Function))`(`replacer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Replaces every subsequence of the input sequence that matches the pattern with the result of applying the given replacer function to the match result of this matcher corresponding to that subsequence. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceFirst](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#replaceFirst(kotlin.String))`(`replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Replaces the first subsequence of the input sequence that matches the pattern with the given replacement string. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceFirst](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#replaceFirst(java.util.function.Function))`(`replacer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Replaces the first subsequence of the input sequence that matches the pattern with the result of applying the given replacer function to the match result of this matcher corresponding to that subsequence. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceAll](../java/util/regex/Matcher.md))`(`replacer:` ` [Function](../java/util/function/Function.md)< [MatchResult](../java/util/regex/MatchResult.md)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Replaces every subsequence of the input sequence that matches the pattern with the result of applying the given replacer function to the match result of this matcher corresponding to that subsequence. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceFirst](../java/util/regex/Matcher.md))`(`replacement:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Replaces the first subsequence of the input sequence that matches the pattern with the given replacement string. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [replaceFirst](../java/util/regex/Matcher.md))`(`replacer:` ` [Function](../java/util/function/Function.md)< [MatchResult](../java/util/regex/MatchResult.md)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Replaces the first subsequence of the input sequence that matches the pattern with the result of applying the given replacer function to the match result of this matcher corresponding to that subsequence. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requireEnd](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#requireEnd())`()` Returns true if more input could change a positive match into a negative one. |
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [reset](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#reset())`()` Resets this matcher. |
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [reset](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#reset(kotlin.CharSequence))`(`input:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Resets this matcher with a new input sequence. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requireEnd](../java/util/regex/Matcher.md))`()` Returns true if more input could change a positive match into a negative one. |
+| [Matcher](../java/util/regex/Matcher.md) | [reset](../java/util/regex/Matcher.md))`()` Resets this matcher. |
+| [Matcher](../java/util/regex/Matcher.md) | [reset](../java/util/regex/Matcher.md))`(`input:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Resets this matcher with a new input sequence. |
 | --- | --- |
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!\> | [results](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#results())`()` Returns a stream of match results for each subsequence of the input sequence that matches the pattern. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#start())`()` Returns the start index of the previous match. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#start(kotlin.Int))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the start index of the subsequence captured by the given group during the previous match operation. |
+| [Stream](../java/util/stream/Stream.md)\< [MatchResult](../java/util/regex/MatchResult.md)!\> | [results](../java/util/regex/Matcher.md))`()` Returns a stream of match results for each subsequence of the input sequence that matches the pattern. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](../java/util/regex/Matcher.md))`()` Returns the start index of the previous match. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](../java/util/regex/Matcher.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the start index of the subsequence captured by the given group during the previous match operation. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#start(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the start index of the subsequence captured by the given [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname) during the previous match operation. |
-| [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult) | [toMatchResult](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#toMatchResult())`()` Returns the match state of this matcher as a [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#toString())`()` Returns the string representation of this matcher. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](../java/util/regex/Matcher.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the start index of the subsequence captured by the given [named-capturing group](../java/util/regex/Pattern.md) during the previous match operation. |
+| [MatchResult](../java/util/regex/MatchResult.md) | [toMatchResult](../java/util/regex/Matcher.md))`()` Returns the match state of this matcher as a [MatchResult](../java/util/regex/MatchResult.md). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/regex/Matcher.md))`()` Returns the string representation of this matcher. |
 | --- | --- |
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [useAnchoringBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useAnchoringBounds(kotlin.Boolean))`(`b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the anchoring of region bounds for this matcher. |
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [usePattern](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#usePattern(java.util.regex.Pattern))`(`newPattern:` ` [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)`)` Changes the`Pattern`that this`Matcher`uses to find matches with. |
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | [useTransparentBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useTransparentBounds(kotlin.Boolean))`(`b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the transparency of region bounds for this matcher. |
+| [Matcher](../java/util/regex/Matcher.md) | [useAnchoringBounds](../java/util/regex/Matcher.md))`(`b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the anchoring of region bounds for this matcher. |
+| [Matcher](../java/util/regex/Matcher.md) | [usePattern](../java/util/regex/Matcher.md))`(`newPattern:` ` [Pattern](../java/util/regex/Pattern.md)`)` Changes the`Pattern`that this`Matcher`uses to find matches with. |
+| [Matcher](../java/util/regex/Matcher.md) | [useTransparentBounds](../java/util/regex/Matcher.md))`(`b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the transparency of region bounds for this matcher. |
 | --- | --- |
 
 ## Public methods
@@ -110,15 +110,15 @@ Implements a non-terminal append-and-replace step.
 
 This method performs the following actions:
 
-1. It reads characters from the input sequence, starting at the append position, and appends them to the given string buffer. It stops after reading the last character preceding the previous match, that is, the character at index [start()](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#start())`-``1`.
+1. It reads characters from the input sequence, starting at the append position, and appends them to the given string buffer. It stops after reading the last character preceding the previous match, that is, the character at index [start()](../java/util/regex/Matcher.md))`-``1`.
 2. It appends the given replacement string to the string buffer.
-3. It sets the append position of this matcher to the index of the last character matched, plus one, that is, to [end()](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#end()).
+3. It sets the append position of this matcher to the index of the last character matched, plus one, that is, to [end()](../java/util/regex/Matcher.md)).
 
-The replacement string may contain references to subsequences captured during the previous match: Each occurrence of`${`*name* `}`or`$`*g* will be replaced by the result of evaluating the corresponding [group(name)](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#group(kotlin.String))or [group(g)](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#group(kotlin.Int))respectively. For`$`*g* , the first number after the`$`is always treated as part of the group reference. Subsequent numbers are incorporated into g if they would form a legal group reference. Only the numerals '0' through '9' are considered as potential components of the group reference. If the second group matched the string`"foo"`, for example, then passing the replacement string`"$2bar"`would cause`"foobar"`to be appended to the string buffer. A dollar sign (`$`) may be included as a literal in the replacement string by preceding it with a backslash (`\$`).
+The replacement string may contain references to subsequences captured during the previous match: Each occurrence of`${`*name* `}`or`$`*g* will be replaced by the result of evaluating the corresponding [group(name)](../java/util/regex/Matcher.md))or [group(g)](../java/util/regex/Matcher.md))respectively. For`$`*g* , the first number after the`$`is always treated as part of the group reference. Subsequent numbers are incorporated into g if they would form a legal group reference. Only the numerals '0' through '9' are considered as potential components of the group reference. If the second group matched the string`"foo"`, for example, then passing the replacement string`"$2bar"`would cause`"foobar"`to be appended to the string buffer. A dollar sign (`$`) may be included as a literal in the replacement string by preceding it with a backslash (`\$`).
 
 Note that backslashes (`\`) and dollar signs (`$`) in the replacement string may cause the results to be different than if it were being treated as a literal replacement string. Dollar signs may be treated as references to captured subsequences as described above, and backslashes are used to escape literal characters in the replacement string.
 
-This method is intended to be used in a loop together with the [appendTail](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendTail(java.lang.StringBuffer))and [find](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#find())methods. The following code, for example, writes`one dog two dogs in the yard`to the standard-output stream: 
+This method is intended to be used in a loop together with the [appendTail](../java/util/regex/Matcher.md))and [find](../java/util/regex/Matcher.md))methods. The following code, for example, writes`one dog two dogs in the yard`to the standard-output stream: 
 
 ```kotlin
 Pattern p = Pattern.compile("cat");
@@ -133,12 +133,12 @@ Pattern p = Pattern.compile("cat");
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------|
-| `sb` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):The target string buffer |
+| `sb` | [StringBuffer](../java/lang/StringBuffer.md):The target string buffer |
 | `replacement` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The replacement string |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | This matcher |
+| [Matcher](../java/util/regex/Matcher.md) | This matcher |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------------------------------------|
@@ -162,15 +162,15 @@ Implements a non-terminal append-and-replace step.
 
 This method performs the following actions:
 
-1. It reads characters from the input sequence, starting at the append position, and appends them to the given string builder. It stops after reading the last character preceding the previous match, that is, the character at index [start()](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#start())`-``1`.
+1. It reads characters from the input sequence, starting at the append position, and appends them to the given string builder. It stops after reading the last character preceding the previous match, that is, the character at index [start()](../java/util/regex/Matcher.md))`-``1`.
 2. It appends the given replacement string to the string builder.
-3. It sets the append position of this matcher to the index of the last character matched, plus one, that is, to [end()](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#end()).
+3. It sets the append position of this matcher to the index of the last character matched, plus one, that is, to [end()](../java/util/regex/Matcher.md)).
 
-The replacement string may contain references to subsequences captured during the previous match: Each occurrence of`$`*g* will be replaced by the result of evaluating [group](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#group(kotlin.Int))`(`*g* `)`. The first number after the`$`is always treated as part of the group reference. Subsequent numbers are incorporated into g if they would form a legal group reference. Only the numerals '0' through '9' are considered as potential components of the group reference. If the second group matched the string`"foo"`, for example, then passing the replacement string`"$2bar"`would cause`"foobar"`to be appended to the string builder. A dollar sign (`$`) may be included as a literal in the replacement string by preceding it with a backslash (`\$`).
+The replacement string may contain references to subsequences captured during the previous match: Each occurrence of`$`*g* will be replaced by the result of evaluating [group](../java/util/regex/Matcher.md))`(`*g* `)`. The first number after the`$`is always treated as part of the group reference. Subsequent numbers are incorporated into g if they would form a legal group reference. Only the numerals '0' through '9' are considered as potential components of the group reference. If the second group matched the string`"foo"`, for example, then passing the replacement string`"$2bar"`would cause`"foobar"`to be appended to the string builder. A dollar sign (`$`) may be included as a literal in the replacement string by preceding it with a backslash (`\$`).
 
 Note that backslashes (`\`) and dollar signs (`$`) in the replacement string may cause the results to be different than if it were being treated as a literal replacement string. Dollar signs may be treated as references to captured subsequences as described above, and backslashes are used to escape literal characters in the replacement string.
 
-This method is intended to be used in a loop together with the [appendTail](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendTail(java.lang.StringBuilder))and [find](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#find())methods. The following code, for example, writes`one dog two dogs in the yard`to the standard-output stream: 
+This method is intended to be used in a loop together with the [appendTail](../java/util/regex/Matcher.md))and [find](../java/util/regex/Matcher.md))methods. The following code, for example, writes`one dog two dogs in the yard`to the standard-output stream: 
 
 ```kotlin
 Pattern p = Pattern.compile("cat");
@@ -185,12 +185,12 @@ Pattern p = Pattern.compile("cat");
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------|
-| `sb` | [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#):The target string builder |
+| `sb` | [StringBuilder](../java/lang/StringBuilder.md):The target string builder |
 | `replacement` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The replacement string |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | This matcher |
+| [Matcher](../java/util/regex/Matcher.md) | This matcher |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------------------------------------|
@@ -209,15 +209,15 @@ fun appendTail(sb: StringBuffer): StringBuffer
 
 Implements a terminal append-and-replace step.
 
-This method reads characters from the input sequence, starting at the append position, and appends them to the given string buffer. It is intended to be invoked after one or more invocations of the [appendReplacement](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendReplacement(java.lang.StringBuffer,%20kotlin.String))method in order to copy the remainder of the input sequence.
+This method reads characters from the input sequence, starting at the append position, and appends them to the given string buffer. It is intended to be invoked after one or more invocations of the [appendReplacement](../java/util/regex/Matcher.md))method in order to copy the remainder of the input sequence.
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------|
-| `sb` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#):The target string buffer |
+| `sb` | [StringBuffer](../java/lang/StringBuffer.md):The target string buffer |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------------|
-| [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#) | The target string buffer |
+| [StringBuffer](../java/lang/StringBuffer.md) | The target string buffer |
 
 ### appendTail
 
@@ -229,15 +229,15 @@ fun appendTail(sb: StringBuilder): StringBuilder
 
 Implements a terminal append-and-replace step.
 
-This method reads characters from the input sequence, starting at the append position, and appends them to the given string builder. It is intended to be invoked after one or more invocations of the [appendReplacement](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#appendReplacement(java.lang.StringBuilder,%20kotlin.String))method in order to copy the remainder of the input sequence.
+This method reads characters from the input sequence, starting at the append position, and appends them to the given string builder. It is intended to be invoked after one or more invocations of the [appendReplacement](../java/util/regex/Matcher.md))method in order to copy the remainder of the input sequence.
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------|
-| `sb` | [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#):The target string builder |
+| `sb` | [StringBuilder](../java/lang/StringBuilder.md):The target string builder |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------|
-| [StringBuilder](https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#) | The target string builder |
+| [StringBuilder](../java/lang/StringBuilder.md) | The target string builder |
 
 ### end
 
@@ -267,7 +267,7 @@ fun end(group: Int): Int
 
 Returns the offset after the last character of the subsequence captured by the given group during the previous match operation.
 
-[Capturing groups](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `end(0)`is equivalent to*m.* `end()`.
+[Capturing groups](../java/util/regex/Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `end(0)`is equivalent to*m.* `end()`.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -290,7 +290,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun end(name: String): Int
 ```
 
-Returns the offset after the last character of the subsequence captured by the given [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname) during the previous match operation.
+Returns the offset after the last character of the subsequence captured by the given [named-capturing group](../java/util/regex/Pattern.md) during the previous match operation.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -333,7 +333,7 @@ fun find(start: Int): Boolean
 
 Resets this matcher and then attempts to find the next subsequence of the input sequence that matches the pattern, starting at the specified index.
 
-If the match succeeds then more information can be obtained via the`start`,`end`, and`group`methods, and subsequent invocations of the [find()](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#find())method will start at the first character not matched by this match.
+If the match succeeds then more information can be obtained via the`start`,`end`, and`group`methods, and subsequent invocations of the [find()](../java/util/regex/Matcher.md))method will start at the first character not matched by this match.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------|
@@ -381,7 +381,7 @@ Returns the input subsequence captured by the given group during the previous ma
 
 For a matcher*m* , input sequence*s* , and group index*g* , the expressions*m.* `group(`*g* `)`and*s.* `substring(`*m.* `start(`*g* `),`*m.* `end(`*g* `))`are equivalent.
 
-[Capturing groups](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression`m.group(0)`is equivalent to`m.group()`.
+[Capturing groups](../java/util/regex/Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression`m.group(0)`is equivalent to`m.group()`.
 
 If the match was successful but the group specified failed to match any part of the input sequence, then`null`is returned. Note that some groups, for example`(a*)`, match the empty string. This method will return the empty string when such a group successfully matches the empty string in the input.
 
@@ -406,7 +406,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun group(name: String): String?
 ```
 
-Returns the input subsequence captured by the given [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname) during the previous match operation.
+Returns the input subsequence captured by the given [named-capturing group](../java/util/regex/Pattern.md) during the previous match operation.
 
 If the match was successful but the group specified failed to match any part of the input sequence, then`null`is returned. Note that some groups, for example`(a*)`, match the empty string. This method will return the empty string when such a group successfully matches the empty string in the input.
 
@@ -453,7 +453,7 @@ Queries the anchoring of region bounds for this matcher.
 
 This method returns`true`if this matcher uses*anchoring* bounds,`false`otherwise.
 
-See [useAnchoringBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useAnchoringBounds(kotlin.Boolean))for a description of anchoring bounds.
+See [useAnchoringBounds](../java/util/regex/Matcher.md))for a description of anchoring bounds.
 
 By default, a matcher uses anchoring region boundaries.
 
@@ -463,7 +463,7 @@ By default, a matcher uses anchoring region boundaries.
 
 **See Also**
 
-- [java.util.regex.Matcher#useAnchoringBounds(boolean)](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useAnchoringBounds(kotlin.Boolean)) 
+- [java.util.regex.Matcher#useAnchoringBounds(boolean)](../java/util/regex/Matcher.md)) 
 
 ### hasTransparentBounds
 
@@ -477,7 +477,7 @@ Queries the transparency of region bounds for this matcher.
 
 This method returns`true`if this matcher uses*transparent* bounds,`false`if it uses*opaque*bounds.
 
-See [useTransparentBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useTransparentBounds(kotlin.Boolean))for a description of transparent and opaque bounds.
+See [useTransparentBounds](../java/util/regex/Matcher.md))for a description of transparent and opaque bounds.
 
 By default, a matcher uses opaque region boundaries.
 
@@ -487,7 +487,7 @@ By default, a matcher uses opaque region boundaries.
 
 **See Also**
 
-- [java.util.regex.Matcher#useTransparentBounds(boolean)](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useTransparentBounds(kotlin.Boolean)) 
+- [java.util.regex.Matcher#useTransparentBounds(boolean)](../java/util/regex/Matcher.md)) 
 
 ### hitEnd
 
@@ -515,7 +515,7 @@ fun lookingAt(): Boolean
 
 Attempts to match the input sequence, starting at the beginning of the region, against the pattern.
 
-Like the [matches](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#matches())method, this method always starts at the beginning of the region; unlike that method, it does not require that the entire region be matched.
+Like the [matches](../java/util/regex/Matcher.md))method, this method always starts at the beginning of the region; unlike that method, it does not require that the entire region be matched.
 
 If the match succeeds then more information can be obtained via the`start`,`end`, and`group`methods.
 
@@ -551,7 +551,7 @@ Returns the pattern that is interpreted by this matcher.
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------|
-| [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern) | The pattern for which this matcher was created |
+| [Pattern](../java/util/regex/Pattern.md) | The pattern for which this matcher was created |
 
 ### quoteReplacement
 
@@ -561,7 +561,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun quoteReplacement(s: String): String
 ```
 
-Returns a literal replacement`String`for the specified`String`. This method produces a`String`that will work as a literal replacement`s`in the`appendReplacement`method of the [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) class. The`String`produced will match the sequence of characters in`s`treated as a literal sequence. Slashes ('\\') and dollar signs ('$') will be given no special meaning.
+Returns a literal replacement`String`for the specified`String`. This method produces a`String`that will work as a literal replacement`s`in the`appendReplacement`method of the [Matcher](../java/util/regex/Matcher.md) class. The`String`produced will match the sequence of characters in`s`treated as a literal sequence. Slashes ('\\') and dollar signs ('$') will be given no special meaning.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------|
@@ -584,7 +584,7 @@ fun region(
 
 Sets the limits of this matcher's region. The region is the part of the input sequence that will be searched to find a match. Invoking this method resets the matcher, and then sets the region to start at the index specified by the`start`parameter and end at the index specified by the`end`parameter.
 
-Depending on the transparency and anchoring being used (see [useTransparentBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useTransparentBounds(kotlin.Boolean))and [useAnchoringBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#useAnchoringBounds(kotlin.Boolean))), certain constructs such as anchors may behave differently at or around the boundaries of the region.
+Depending on the transparency and anchoring being used (see [useTransparentBounds](../java/util/regex/Matcher.md))and [useAnchoringBounds](../java/util/regex/Matcher.md))), certain constructs such as anchors may behave differently at or around the boundaries of the region.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------|
@@ -593,7 +593,7 @@ Depending on the transparency and anchoring being used (see [useTransparentBound
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | this matcher |
+| [Matcher](../java/util/regex/Matcher.md) | this matcher |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -607,7 +607,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun regionEnd(): Int
 ```
 
-Reports the end index (exclusive) of this matcher's region. The searches this matcher conducts are limited to finding matches within [regionStart](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionStart())(inclusive) and [regionEnd](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionEnd())(exclusive).
+Reports the end index (exclusive) of this matcher's region. The searches this matcher conducts are limited to finding matches within [regionStart](../java/util/regex/Matcher.md))(inclusive) and [regionEnd](../java/util/regex/Matcher.md))(exclusive).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------|
@@ -621,7 +621,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun regionStart(): Int
 ```
 
-Reports the start index of this matcher's region. The searches this matcher conducts are limited to finding matches within [regionStart](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionStart())(inclusive) and [regionEnd](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#regionEnd())(exclusive).
+Reports the start index of this matcher's region. The searches this matcher conducts are limited to finding matches within [regionStart](../java/util/regex/Matcher.md))(inclusive) and [regionEnd](../java/util/regex/Matcher.md))(exclusive).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------|
@@ -671,13 +671,13 @@ Given the regular expression`dog`, the input`"zzzdogzzzdogzzz"`, and the functio
 
 Invoking this method changes this matcher's state. If the matcher is to be used in further matching operations then it should first be reset.
 
-The replacer function should not modify this matcher's state during replacement. This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException.html#) if such modification is detected.
+The replacer function should not modify this matcher's state during replacement. This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) if such modification is detected.
 
 The state of each match result passed to the replacer function is guaranteed to be constant only for the duration of the replacer function call and only if the replacer function does not modify this matcher's state.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `replacer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:The function to be applied to the match result of this matcher that returns a replacement string. |
+| `replacer` | [Function](../java/util/function/Function.md)\< [MatchResult](../java/util/regex/MatchResult.md)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:The function to be applied to the match result of this matcher that returns a replacement string. |
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -732,13 +732,13 @@ Given the regular expression`dog`, the input`"zzzdogzzzdogzzz"`, and the functio
 
 Invoking this method changes this matcher's state. If the matcher is to be used in further matching operations then it should first be reset.
 
-The replacer function should not modify this matcher's state during replacement. This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException.html#) if such modification is detected.
+The replacer function should not modify this matcher's state during replacement. This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) if such modification is detected.
 
 The state of the match result passed to the replacer function is guaranteed to be constant only for the duration of the replacer function call and only if the replacer function does not modify this matcher's state.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `replacer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:The function to be applied to the match result of this matcher that returns a replacement string. |
+| `replacer` | [Function](../java/util/function/Function.md)\< [MatchResult](../java/util/regex/MatchResult.md)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:The function to be applied to the match result of this matcher that returns a replacement string. |
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -779,7 +779,7 @@ Resetting a matcher discards all of its explicit state information and sets its 
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | This matcher |
+| [Matcher](../java/util/regex/Matcher.md) | This matcher |
 
 ### reset
 
@@ -799,7 +799,7 @@ Resetting a matcher discards all of its explicit state information and sets its 
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | This matcher |
+| [Matcher](../java/util/regex/Matcher.md) | This matcher |
 
 ### results
 
@@ -811,17 +811,17 @@ fun results(): Stream<MatchResult!>
 
 Returns a stream of match results for each subsequence of the input sequence that matches the pattern. The match results occur in the same order as the matching subsequences in the input sequence.
 
-Each match result is produced as if by [toMatchResult()](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#toMatchResult()).
+Each match result is produced as if by [toMatchResult()](../java/util/regex/Matcher.md)).
 
 This method does not reset this matcher. Matching starts on initiation of the terminal stream operation either at the beginning of this matcher's region, or, if the matcher has not since been reset, at the first character not matched by a previous match.
 
 If the matcher is to be used for further matching operations after the terminal stream operation completes then it should be first reset.
 
-This matcher's state should not be modified during execution of the returned stream's pipeline. The returned stream's source`Spliterator`is*fail-fast* and will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException.html#) if such modification is detected.
+This matcher's state should not be modified during execution of the returned stream's pipeline. The returned stream's source`Spliterator`is*fail-fast* and will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) if such modification is detected.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!> | a sequential stream of match results. |
+| [Stream](../java/util/stream/Stream.md)< [MatchResult](../java/util/regex/MatchResult.md)!> | a sequential stream of match results. |
 
 ### start
 
@@ -851,7 +851,7 @@ fun start(group: Int): Int
 
 Returns the start index of the subsequence captured by the given group during the previous match operation.
 
-[Capturing groups](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#cg) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `start(0)`is equivalent to*m.* `start()`.
+[Capturing groups](../java/util/regex/Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `start(0)`is equivalent to*m.* `start()`.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -874,7 +874,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun start(name: String): Int
 ```
 
-Returns the start index of the subsequence captured by the given [named-capturing group](https://developer.android.com/reference/kotlin/java/util/regex/Pattern#groupname) during the previous match operation.
+Returns the start index of the subsequence captured by the given [named-capturing group](../java/util/regex/Pattern.md) during the previous match operation.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -897,11 +897,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toMatchResult(): MatchResult
 ```
 
-Returns the match state of this matcher as a [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult). The result is unaffected by subsequent operations performed upon this matcher.
+Returns the match state of this matcher as a [MatchResult](../java/util/regex/MatchResult.md). The result is unaffected by subsequent operations performed upon this matcher.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------|
-| [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult) | a`MatchResult`with the state of this matcher |
+| [MatchResult](../java/util/regex/MatchResult.md) | a`MatchResult`with the state of this matcher |
 
 | Exceptions ||
 |-----------------------------------|-----------------------|
@@ -945,11 +945,11 @@ By default, a matcher uses anchoring region boundaries.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | this matcher |
+| [Matcher](../java/util/regex/Matcher.md) | this matcher |
 
 **See Also**
 
-- [java.util.regex.Matcher#hasAnchoringBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#hasAnchoringBounds()) 
+- [java.util.regex.Matcher#hasAnchoringBounds](../java/util/regex/Matcher.md)) 
 
 ### usePattern
 
@@ -965,11 +965,11 @@ This method causes this matcher to lose information about the groups of the last
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------|
-| `newPattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern):The new pattern used by this matcher |
+| `newPattern` | [Pattern](../java/util/regex/Pattern.md):The new pattern used by this matcher |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | This matcher |
+| [Matcher](../java/util/regex/Matcher.md) | This matcher |
 
 | Exceptions ||
 |--------------------------------------|------------------------|
@@ -999,8 +999,8 @@ By default, a matcher uses opaque bounds.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#) | this matcher |
+| [Matcher](../java/util/regex/Matcher.md) | this matcher |
 
 **See Also**
 
-- [java.util.regex.Matcher#hasTransparentBounds](https://developer.android.com/reference/kotlin/java/util/regex/Matcher#hasTransparentBounds())
+- [java.util.regex.Matcher#hasTransparentBounds](../java/util/regex/Matcher.md))

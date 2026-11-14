@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MediaScannerConnectionClient
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient "View this page in Java") 
+Kotlin| [Java](../android/media/MediaScannerConnection.MediaScannerConnectionClient.md) 
 | --- | --- |
 
 ```
 interface MediaScannerConnectionClient : MediaScannerConnection.OnScanCompletedListener
 ```
 
-| [android.media.MediaScannerConnection.MediaScannerConnectionClient](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.MediaScannerConnectionClient#) |
+| [android.media.MediaScannerConnection.MediaScannerConnectionClient](../android/media/MediaScannerConnection.MediaScannerConnectionClient.md) |
 
 An interface for notifying clients of MediaScannerConnection when a connection to the MediaScanner service has been established and when the scanning of a file has completed.
 
@@ -19,11 +19,11 @@ An interface for notifying clients of MediaScannerConnection when a connection t
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMediaScannerConnected](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.MediaScannerConnectionClient#onMediaScannerConnected())`()` Called to notify the client when a connection to the MediaScanner service has been established. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMediaScannerConnected](../android/media/MediaScannerConnection.MediaScannerConnectionClient.md))`()` Called to notify the client when a connection to the MediaScanner service has been established. |
 
 | Inherited functions ||
 |---|---|
-| From class [OnScanCompletedListener](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScanCompleted](https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener#onScanCompleted(kotlin.String,%20android.net.Uri))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` <br /> Called to notify the client when the media scanner has finished scanning a file. <br /> | ||
+| From class [OnScanCompletedListener](../android/media/MediaScannerConnection.OnScanCompletedListener.md) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScanCompleted](../android/media/MediaScannerConnection.OnScanCompletedListener.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [Uri](../android/net/Uri.md)!`)` <br /> Called to notify the client when the media scanner has finished scanning a file. <br /> | ||
 
 ## Public methods
 

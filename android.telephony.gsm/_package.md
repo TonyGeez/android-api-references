@@ -2,12 +2,12 @@
 
 # android.telephony.gsm
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/gsm/package-summary "View this page in Java")
+Kotlin| [Java](../android/telephony/gsm/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [GsmCellLocation](https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation) | Represents the cell location on a GSM phone. |
+| [GsmCellLocation](../android/telephony/gsm/GsmCellLocation.md) | Represents the cell location on a GSM phone. |
 | --- | --- |
-| [SmsManager](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsManager) | Manages SMS operations such as sending data, text, and pdu SMS messages. |
-| [SmsMessage](https://developer.android.com/reference/kotlin/android/telephony/gsm/SmsMessage) | A Short Message Service message. |
+| [SmsManager](../android/telephony/gsm/SmsManager.md) | Manages SMS operations such as sending data, text, and pdu SMS messages. |
+| [SmsMessage](../android/telephony/gsm/SmsMessage.md) | A Short Message Service message. |

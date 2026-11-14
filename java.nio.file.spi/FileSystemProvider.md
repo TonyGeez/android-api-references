@@ -10,13 +10,13 @@ abstract class FileSystemProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.file.spi.FileSystemProvider](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#) |
+| ↳ | [java.nio.file.spi.FileSystemProvider](../java/nio/file/spi/FileSystemProvider.md) |
 
 Service-provider class for file systems. The methods defined by the class will typically delegate to an instance of this class.
 
-A file system provider is a concrete implementation of this class that implements the abstract methods defined by this class. A provider is identified by a`URI` [scheme](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getScheme()). The default provider is identified by the URI scheme "file". It creates the [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#) that provides access to the file systems accessible to the Java virtual machine. The [FileSystems](https://developer.android.com/reference/kotlin/java/nio/file/FileSystems.html#) class defines how file system providers are located and loaded. The default provider is typically a system-default provider but may be overridden if the system property`java.nio.file.spi.DefaultFileSystemProvider`is set. In that case, the provider has a one argument constructor whose formal parameter type is`FileSystemProvider`. All other providers have a zero argument constructor that initializes the provider.
+A file system provider is a concrete implementation of this class that implements the abstract methods defined by this class. A provider is identified by a`URI` [scheme](../java/nio/file/spi/FileSystemProvider.md)). The default provider is identified by the URI scheme "file". It creates the [FileSystem](../java/nio/file/FileSystem.md) that provides access to the file systems accessible to the Java virtual machine. The [FileSystems](../java/nio/file/FileSystems.md) class defines how file system providers are located and loaded. The default provider is typically a system-default provider but may be overridden if the system property`java.nio.file.spi.DefaultFileSystemProvider`is set. In that case, the provider has a one argument constructor whose formal parameter type is`FileSystemProvider`. All other providers have a zero argument constructor that initializes the provider.
 
-A provider is a factory for one or more [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#) instances. Each file system is identified by a`URI`where the URI's scheme matches the provider's [scheme](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getScheme()). The default file system, for example, is identified by the URI`"file:///"`. A memory-based file system, for example, may be identified by a URI such as`"memory:///?name=logfs"`. The #newFileSystem method may be used to create a file system, and the [getFileSystem](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getFileSystem(java.net.URI))method may be used to obtain a reference to an existing file system created by the provider. Where a provider is the factory for a single file system then it is provider dependent if the file system is created when the provider is initialized, or later when the`newFileSystem`method is invoked. In the case of the default provider, the`FileSystem`is created when the provider is initialized.
+A provider is a factory for one or more [FileSystem](../java/nio/file/FileSystem.md) instances. Each file system is identified by a`URI`where the URI's scheme matches the provider's [scheme](../java/nio/file/spi/FileSystemProvider.md)). The default file system, for example, is identified by the URI`"file:///"`. A memory-based file system, for example, may be identified by a URI such as`"memory:///?name=logfs"`. The #newFileSystem method may be used to create a file system, and the [getFileSystem](../java/nio/file/spi/FileSystemProvider.md))method may be used to obtain a reference to an existing file system created by the provider. Where a provider is the factory for a single file system then it is provider dependent if the file system is created when the provider is initialized, or later when the`newFileSystem`method is invoked. In the case of the default provider, the`FileSystem`is created when the provider is initialized.
 
 All of the methods in this class are safe for use by multiple concurrent threads.
 
@@ -24,47 +24,47 @@ All of the methods in this class are safe for use by multiple concurrent threads
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FileSystemProvider](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#FileSystemProvider())`()` Initializes a new instance of this class. |
+| [FileSystemProvider](../java/nio/file/spi/FileSystemProvider.md))`()` Initializes a new instance of this class. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#checkAccess(java.nio.file.Path,%20java.nio.file.AccessMode))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `modes:` ` [AccessMode](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode.html#)!`)` Checks the existence, and optionally the accessibility, of a file. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copy](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#copy(java.nio.file.Path,%20java.nio.file.Path,%20java.nio.file.CopyOption))`(`source:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `target:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `options:` ` [CopyOption](https://developer.android.com/reference/kotlin/java/nio/file/CopyOption.html#)!`)` Copy a file to a target file. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createDirectory](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#createDirectory(java.nio.file.Path,%20java.nio.file.attribute.FileAttribute))`(`dir:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)<*>!`)` Creates a new directory. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `modes:` ` [AccessMode](../java/nio/file/AccessMode.md)!`)` Checks the existence, and optionally the accessibility, of a file. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copy](../java/nio/file/spi/FileSystemProvider.md))`(`source:` ` [Path](../java/nio/file/Path.md)!`, `target:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `options:` ` [CopyOption](../java/nio/file/CopyOption.md)!`)` Copy a file to a target file. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createDirectory](../java/nio/file/spi/FileSystemProvider.md))`(`dir:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `attrs:` ` [FileAttribute](../java/nio/file/attribute/FileAttribute.md)<*>!`)` Creates a new directory. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createLink](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#createLink(java.nio.file.Path,%20java.nio.file.Path))`(`link:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `existing:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`)` Creates a new link (directory entry) for an existing file. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createSymbolicLink](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#createSymbolicLink(java.nio.file.Path,%20java.nio.file.Path,%20java.nio.file.attribute.FileAttribute))`(`link:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `target:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)<*>!`)` Creates a symbolic link to a target. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [delete](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#delete(java.nio.file.Path))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`)` Deletes a file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createLink](../java/nio/file/spi/FileSystemProvider.md))`(`link:` ` [Path](../java/nio/file/Path.md)!`, `existing:` ` [Path](../java/nio/file/Path.md)!`)` Creates a new link (directory entry) for an existing file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createSymbolicLink](../java/nio/file/spi/FileSystemProvider.md))`(`link:` ` [Path](../java/nio/file/Path.md)!`, `target:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `attrs:` ` [FileAttribute](../java/nio/file/attribute/FileAttribute.md)<*>!`)` Creates a symbolic link to a target. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [delete](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`)` Deletes a file. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteIfExists](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#deleteIfExists(java.nio.file.Path))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`)` Deletes a file if it exists. |
-| abstractV | [getFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getFileAttributeView(java.nio.file.Path,%20java.lang.Class,%20java.nio.file.LinkOption))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<V>!`, `vararg` `options:` ` [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!`)` Returns a file attribute view of a given type. |
-| abstract [FileStore](https://developer.android.com/reference/kotlin/java/nio/file/FileStore.html#)! | [getFileStore](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getFileStore(java.nio.file.Path))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`)` Returns the [FileStore](https://developer.android.com/reference/kotlin/java/nio/file/FileStore.html#) representing the file store where a file is located. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteIfExists](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`)` Deletes a file if it exists. |
+| abstractV | [getFileAttributeView](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `type:` ` [Class](../java/lang/Class.md)<V>!`, `vararg` `options:` ` [LinkOption](../java/nio/file/LinkOption.md)!`)` Returns a file attribute view of a given type. |
+| abstract [FileStore](../java/nio/file/FileStore.md)! | [getFileStore](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`)` Returns the [FileStore](../java/nio/file/FileStore.md) representing the file store where a file is located. |
 | --- | --- |
-| abstract [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#)! | [getFileSystem](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getFileSystem(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`)` Returns an existing`FileSystem`created by this provider. |
-| abstract [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)! | [getPath](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getPath(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`)` Return a`Path`object by converting the given [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#). |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScheme](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#getScheme())`()` Returns the URI scheme that identifies this provider. |
+| abstract [FileSystem](../java/nio/file/FileSystem.md)! | [getFileSystem](../java/nio/file/spi/FileSystemProvider.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Returns an existing`FileSystem`created by this provider. |
+| abstract [Path](../java/nio/file/Path.md)! | [getPath](../java/nio/file/spi/FileSystemProvider.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Return a`Path`object by converting the given [URI](../java/net/URI.md). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScheme](../java/nio/file/spi/FileSystemProvider.md))`()` Returns the URI scheme that identifies this provider. |
 | --- | --- |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FileSystemProvider](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#)!\>! | [installedProviders](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#installedProviders())`()` Returns a list of the installed file system providers. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHidden](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#isHidden(java.nio.file.Path))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`)` Tells whether or not a file is considered*hidden*. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSameFile](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#isSameFile(java.nio.file.Path,%20java.nio.file.Path))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `path2:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`)` Tests if two paths locate the same file. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FileSystemProvider](../java/nio/file/spi/FileSystemProvider.md)!\>! | [installedProviders](../java/nio/file/spi/FileSystemProvider.md))`()` Returns a list of the installed file system providers. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHidden](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`)` Tells whether or not a file is considered*hidden*. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSameFile](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `path2:` ` [Path](../java/nio/file/Path.md)!`)` Tests if two paths locate the same file. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [move](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#move(java.nio.file.Path,%20java.nio.file.Path,%20java.nio.file.CopyOption))`(`source:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `target:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `options:` ` [CopyOption](https://developer.android.com/reference/kotlin/java/nio/file/CopyOption.html#)!`)` Move or rename a file to a target file. |
-| open [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel.html#)! | [newAsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newAsynchronousFileChannel(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.util.concurrent.ExecutorService,%20java.nio.file.attribute.FileAttribute))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!>!`, `executor:` ` [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html#)!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)<*>!`)` Opens or creates a file for reading and/or writing, returning an asynchronous file channel to access the file. |
-| abstract [SeekableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel.html#)! | [newByteChannel](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newByteChannel(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!>!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)<*>!`)` Opens or creates a file, returning a seekable byte channel to access the file. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [move](../java/nio/file/spi/FileSystemProvider.md))`(`source:` ` [Path](../java/nio/file/Path.md)!`, `target:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `options:` ` [CopyOption](../java/nio/file/CopyOption.md)!`)` Move or rename a file to a target file. |
+| open [AsynchronousFileChannel](../java/nio/channels/AsynchronousFileChannel.md)! | [newAsynchronousFileChannel](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](../java/nio/file/OpenOption.md)!>!`, `executor:` ` [ExecutorService](../java/util/concurrent/ExecutorService.md)!`, `vararg` `attrs:` ` [FileAttribute](../java/nio/file/attribute/FileAttribute.md)<*>!`)` Opens or creates a file for reading and/or writing, returning an asynchronous file channel to access the file. |
+| abstract [SeekableByteChannel](../java/nio/channels/SeekableByteChannel.md)! | [newByteChannel](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](../java/nio/file/OpenOption.md)!>!`, `vararg` `attrs:` ` [FileAttribute](../java/nio/file/attribute/FileAttribute.md)<*>!`)` Opens or creates a file, returning a seekable byte channel to access the file. |
 | --- | --- |
-| abstract [DirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryStream.html#)\< [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!\>! | [newDirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newDirectoryStream(java.nio.file.Path,%20java.nio.file.DirectoryStream.Filter))`(`dir:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `filter:` ` [DirectoryStream.Filter](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryStream.Filter.html#)<in` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!>!`)` Opens a directory, returning a`DirectoryStream`to iterate over the entries in the directory. |
-| open [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#)! | [newFileChannel](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newFileChannel(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!>!`, `vararg` `attrs:` ` [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)<*>!`)` Opens or creates a file for reading and/or writing, returning a file channel to access the file. |
-| abstract [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#)! | [newFileSystem](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`, `env:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` `*>!`)` Constructs a new`FileSystem`object identified by a URI. |
+| abstract [DirectoryStream](../java/nio/file/DirectoryStream.md)\< [Path](../java/nio/file/Path.md)!\>! | [newDirectoryStream](../java/nio/file/spi/FileSystemProvider.md))`(`dir:` ` [Path](../java/nio/file/Path.md)!`, `filter:` ` [DirectoryStream.Filter](../java/nio/file/DirectoryStream.Filter.md)<in` ` [Path](../java/nio/file/Path.md)!>!`)` Opens a directory, returning a`DirectoryStream`to iterate over the entries in the directory. |
+| open [FileChannel](../java/nio/channels/FileChannel.md)! | [newFileChannel](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](../java/nio/file/OpenOption.md)!>!`, `vararg` `attrs:` ` [FileAttribute](../java/nio/file/attribute/FileAttribute.md)<*>!`)` Opens or creates a file for reading and/or writing, returning a file channel to access the file. |
+| abstract [FileSystem](../java/nio/file/FileSystem.md)! | [newFileSystem](../java/nio/file/spi/FileSystemProvider.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `env:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` `*>!`)` Constructs a new`FileSystem`object identified by a URI. |
 | --- | --- |
-| open [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#)! | [newFileSystem](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `env:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` `*>!`)` Constructs a new`FileSystem`to access the contents of a file as a file system. |
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [newInputStream](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newInputStream(java.nio.file.Path,%20java.nio.file.OpenOption))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `options:` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!`)` Opens a file, returning an input stream to read from the file. |
-| open [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [newOutputStream](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newOutputStream(java.nio.file.Path,%20java.nio.file.OpenOption))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `vararg` `options:` ` [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!`)` Opens or creates a file, returning an output stream that may be used to write bytes to the file. |
+| open [FileSystem](../java/nio/file/FileSystem.md)! | [newFileSystem](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `env:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` `*>!`)` Constructs a new`FileSystem`to access the contents of a file as a file system. |
+| open [InputStream](../java/io/InputStream.md)! | [newInputStream](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `options:` ` [OpenOption](../java/nio/file/OpenOption.md)!`)` Opens a file, returning an input stream to read from the file. |
+| open [OutputStream](../java/io/OutputStream.md)! | [newOutputStream](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `options:` ` [OpenOption](../java/nio/file/OpenOption.md)!`)` Opens or creates a file, returning an output stream that may be used to write bytes to the file. |
 | --- | --- |
-| abstractA | [readAttributes](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#readAttributes(java.nio.file.Path,%20java.lang.Class,%20java.nio.file.LinkOption))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<A>!`, `vararg` `options:` ` [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!`)` Reads a file's attributes as a bulk operation. |
-| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [readAttributes](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#readAttributes(java.nio.file.Path,%20kotlin.String,%20java.nio.file.LinkOption))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `attributes:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `options:` ` [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!`)` Reads a set of file attributes as a bulk operation. |
-| open [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)! | [readSymbolicLink](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#readSymbolicLink(java.nio.file.Path))`(`link:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`)` Reads the target of a symbolic link. |
+| abstractA | [readAttributes](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `type:` ` [Class](../java/lang/Class.md)<A>!`, `vararg` `options:` ` [LinkOption](../java/nio/file/LinkOption.md)!`)` Reads a file's attributes as a bulk operation. |
+| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [readAttributes](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `attributes:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `options:` ` [LinkOption](../java/nio/file/LinkOption.md)!`)` Reads a set of file attributes as a bulk operation. |
+| open [Path](../java/nio/file/Path.md)! | [readSymbolicLink](../java/nio/file/spi/FileSystemProvider.md))`(`link:` ` [Path](../java/nio/file/Path.md)!`)` Reads the target of a symbolic link. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#setAttribute(java.nio.file.Path,%20kotlin.String,%20kotlin.Any,%20java.nio.file.LinkOption))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `vararg` `options:` ` [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!`)` Sets the value of a file attribute. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](../java/nio/file/spi/FileSystemProvider.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `attribute:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `vararg` `options:` ` [LinkOption](../java/nio/file/LinkOption.md)!`)` Sets the value of a file attribute. |
 
 ## Protected constructors
 
@@ -82,7 +82,7 @@ During construction a provider may safely access files associated with the defau
 
 | Exceptions ||
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#)`("fileSystemProvider")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [RuntimePermission](../java/lang/RuntimePermission.md)`("fileSystemProvider")` |
 
 ## Public methods
 
@@ -99,15 +99,15 @@ abstract fun checkAccess(
 
 Checks the existence, and optionally the accessibility, of a file.
 
-This method may be used by the [isReadable](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#isReadable(java.nio.file.Path)), [isWritable](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#isWritable(java.nio.file.Path))and [isExecutable](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#isExecutable(java.nio.file.Path))methods to check the accessibility of a file.
+This method may be used by the [isReadable](../java/nio/file/Files.md)), [isWritable](../java/nio/file/Files.md))and [isExecutable](../java/nio/file/Files.md))methods to check the accessibility of a file.
 
 This method checks the existence of a file and that this Java virtual machine has appropriate privileges that would allow it access the file according to all of access modes specified in the`modes`parameter as follows:
 
 | Value | Description |
 | --- | --- |
-| [READ](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode.html#) | Checks that the file exists and that the Java virtual machine has permission to read the file. |
-| [WRITE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode.html#) | Checks that the file exists and that the Java virtual machine has permission to write to the file, |
-| [EXECUTE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode.html#) | Checks that the file exists and that the Java virtual machine has permission to java.lang.Runtime#exec the file. The semantics may differ when checking access to a directory. For example, on UNIX systems, checking for`EXECUTE`access checks that the Java virtual machine has permission to search the directory in order to access file or subdirectories. |
+| [READ](../java/nio/file/AccessMode.md) | Checks that the file exists and that the Java virtual machine has permission to read the file. |
+| [WRITE](../java/nio/file/AccessMode.md) | Checks that the file exists and that the Java virtual machine has permission to write to the file, |
+| [EXECUTE](../java/nio/file/AccessMode.md) | Checks that the file exists and that the Java virtual machine has permission to java.lang.Runtime#exec the file. The semantics may differ when checking access to a directory. For example, on UNIX systems, checking for`EXECUTE`access checks that the Java virtual machine has permission to search the directory in order to access file or subdirectories. |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 If the`modes`parameter is of length zero, then the existence of the file is checked.
@@ -116,8 +116,8 @@ This method follows symbolic links if the file referenced by this object is a sy
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to check |
-| `modes` | [AccessMode](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode.html#)!:The access modes to check; may have zero elements |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file to check |
+| `modes` | [AccessMode](../java/nio/file/AccessMode.md)!:The access modes to check; may have zero elements |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,7 +126,7 @@ This method follows symbolic links if the file referenced by this object is a sy
 | `java.nio.file.AccessDeniedException` | the requested access would be denied or the access cannot be determined because the Java virtual machine has insufficient privileges or other reasons.*(optional specific exception)* |
 | --- | --- |
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))is invoked when checking read access to the file or only the existence of the file, the [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))is invoked when checking write access to the file, and [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkExec(kotlin.String))is invoked when checking execute access. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))is invoked when checking read access to the file or only the existence of the file, the [checkWrite](../java/lang/SecurityManager.md))is invoked when checking write access to the file, and [checkExec](../java/lang/SecurityManager.md))is invoked when checking execute access. |
 
 ### copy
 
@@ -144,9 +144,9 @@ Copy a file to a target file. This method works in exactly the manner specified 
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to copy |
-| `target` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the target file |
-| `options` | [CopyOption](https://developer.android.com/reference/kotlin/java/nio/file/CopyOption.html#)!:options specifying how the copy should be done |
+| `source` | [Path](../java/nio/file/Path.md)!:the path to the file to copy |
+| `target` | [Path](../java/nio/file/Path.md)!:the path to the target file |
+| `options` | [CopyOption](../java/nio/file/CopyOption.md)!:options specifying how the copy should be done |
 | --- | --- |
 
 | Exceptions ||
@@ -156,7 +156,7 @@ Copy a file to a target file. This method works in exactly the manner specified 
 | `java.nio.file.DirectoryNotEmptyException` | the`REPLACE_EXISTING`option is specified but the file cannot be replaced because it is a non-empty directory*(optional specific exception)* |
 | --- | --- |
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the source file, the [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))is invoked to check write access to the target file. If a symbolic link is copied the security manager is invoked to check [LinkPermission](https://developer.android.com/reference/kotlin/java/nio/file/LinkPermission.html#)`("symbolic")`. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the source file, the [checkWrite](../java/lang/SecurityManager.md))is invoked to check write access to the target file. If a symbolic link is copied the security manager is invoked to check [LinkPermission](../java/nio/file/LinkPermission.md)`("symbolic")`. |
 
 ### createDirectory
 
@@ -169,12 +169,12 @@ abstract fun createDirectory(
 ): Unit
 ```
 
-Creates a new directory. This method works in exactly the manner specified by the [Files.createDirectory](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#createDirectory(java.nio.file.Path,%20java.nio.file.attribute.FileAttribute))method.
+Creates a new directory. This method works in exactly the manner specified by the [Files.createDirectory](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dir` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the directory to create |
-| `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)\<\*\>!:an optional list of file attributes to set atomically when creating the directory |
+| `dir` | [Path](../java/nio/file/Path.md)!:the directory to create |
+| `attrs` | [FileAttribute](../java/nio/file/attribute/FileAttribute.md)\<\*\>!:an optional list of file attributes to set atomically when creating the directory |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -182,7 +182,7 @@ Creates a new directory. This method works in exactly the manner specified by th
 | `java.nio.file.FileAlreadyExistsException` | if a directory could not otherwise be created because a file of that name already exists*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs or the parent directory does not exist |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access to the new directory. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkWrite](../java/lang/SecurityManager.md))method is invoked to check write access to the new directory. |
 
 ### createLink
 
@@ -195,14 +195,14 @@ open fun createLink(
 ): Unit
 ```
 
-Creates a new link (directory entry) for an existing file. This method works in exactly the manner specified by the [Files.createLink](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#createLink(java.nio.file.Path,%20java.nio.file.Path))method.
+Creates a new link (directory entry) for an existing file. This method works in exactly the manner specified by the [Files.createLink](../java/nio/file/Files.md))method.
 
 The default implementation of this method throws`UnsupportedOperationException`.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------|
-| `link` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the link (directory entry) to create |
-| `existing` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:a path to an existing file |
+| `link` | [Path](../java/nio/file/Path.md)!:the link (directory entry) to create |
+| `existing` | [Path](../java/nio/file/Path.md)!:a path to an existing file |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -210,7 +210,7 @@ The default implementation of this method throws`UnsupportedOperationException`.
 | `java.nio.file.FileAlreadyExistsException` | if the entry could not otherwise be created because a file of that name already exists*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, it denies [LinkPermission](https://developer.android.com/reference/kotlin/java/nio/file/LinkPermission.html#)`("hard")`or its [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method denies write access to either the link or the existing file. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, it denies [LinkPermission](../java/nio/file/LinkPermission.md)`("hard")`or its [checkWrite](../java/lang/SecurityManager.md))method denies write access to either the link or the existing file. |
 
 ### createSymbolicLink
 
@@ -224,15 +224,15 @@ open fun createSymbolicLink(
 ): Unit
 ```
 
-Creates a symbolic link to a target. This method works in exactly the manner specified by the [Files.createSymbolicLink](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#createSymbolicLink(java.nio.file.Path,%20java.nio.file.Path,%20java.nio.file.attribute.FileAttribute))method.
+Creates a symbolic link to a target. This method works in exactly the manner specified by the [Files.createSymbolicLink](../java/nio/file/Files.md))method.
 
 The default implementation of this method throws`UnsupportedOperationException`.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `link` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path of the symbolic link to create |
-| `target` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the target of the symbolic link |
-| `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)\<\*\>!:the array of attributes to set atomically when creating the symbolic link |
+| `link` | [Path](../java/nio/file/Path.md)!:the path of the symbolic link to create |
+| `target` | [Path](../java/nio/file/Path.md)!:the target of the symbolic link |
+| `attrs` | [FileAttribute](../java/nio/file/attribute/FileAttribute.md)\<\*\>!:the array of attributes to set atomically when creating the symbolic link |
 | --- | --- |
 
 | Exceptions ||
@@ -241,7 +241,7 @@ The default implementation of this method throws`UnsupportedOperationException`.
 | `java.nio.file.FileAlreadyExistsException` | if a file with the name already exists*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, it denies [LinkPermission](https://developer.android.com/reference/kotlin/java/nio/file/LinkPermission.html#)`("symbolic")`or its [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method denies write access to the path of the symbolic link. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, it denies [LinkPermission](../java/nio/file/LinkPermission.md)`("symbolic")`or its [checkWrite](../java/lang/SecurityManager.md))method denies write access to the path of the symbolic link. |
 
 ### delete
 
@@ -251,11 +251,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun delete(path: Path!): Unit
 ```
 
-Deletes a file. This method works in exactly the manner specified by the [Files.delete](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#delete(java.nio.file.Path))method.
+Deletes a file. This method works in exactly the manner specified by the [Files.delete](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to delete |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file to delete |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -263,7 +263,7 @@ Deletes a file. This method works in exactly the manner specified by the [Files.
 | `java.nio.file.DirectoryNotEmptyException` | if the file is a directory and could not otherwise be deleted because the directory is not empty*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [SecurityManager.checkDelete(String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkDelete(kotlin.String))method is invoked to check delete access to the file |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [SecurityManager.checkDelete(String)](../java/lang/SecurityManager.md))method is invoked to check delete access to the file |
 
 ### deleteIfExists
 
@@ -273,13 +273,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun deleteIfExists(path: Path!): Boolean
 ```
 
-Deletes a file if it exists. This method works in exactly the manner specified by the [Files.deleteIfExists](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path))method.
+Deletes a file if it exists. This method works in exactly the manner specified by the [Files.deleteIfExists](../java/nio/file/Files.md))method.
 
-The default implementation of this method simply invokes [delete](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#delete(java.nio.file.Path))ignoring the`NoSuchFileException`when the file does not exist. It may be overridden where appropriate.
+The default implementation of this method simply invokes [delete](../java/nio/file/spi/FileSystemProvider.md))ignoring the`NoSuchFileException`when the file does not exist. It may be overridden where appropriate.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to delete |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file to delete |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -289,7 +289,7 @@ The default implementation of this method simply invokes [delete](https://develo
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.nio.file.DirectoryNotEmptyException` | if the file is a directory and could not otherwise be deleted because the directory is not empty*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [SecurityManager.checkDelete(String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkDelete(kotlin.String))method is invoked to check delete access to the file |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [SecurityManager.checkDelete(String)](../java/lang/SecurityManager.md))method is invoked to check delete access to the file |
 | --- | --- |
 
 ### getFileAttributeView
@@ -304,15 +304,15 @@ abstract fun <V : FileAttributeView!> getFileAttributeView(
 ): V
 ```
 
-Returns a file attribute view of a given type. This method works in exactly the manner specified by the [Files.getFileAttributeView](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#getFileAttributeView(java.nio.file.Path,%20java.lang.Class,%20java.nio.file.LinkOption))method.
+Returns a file attribute view of a given type. This method works in exactly the manner specified by the [Files.getFileAttributeView](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<V>` | The`FileAttributeView`type |
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file |
-| `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<V\>!:the`Class`object corresponding to the file attribute view |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file |
+| `type` | [Class](../java/lang/Class.md)\<V\>!:the`Class`object corresponding to the file attribute view |
 | --- | --- |
-| `options` | [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!:options indicating how symbolic links are handled |
+| `options` | [LinkOption](../java/nio/file/LinkOption.md)!:options indicating how symbolic links are handled |
 
 | Return ||
 |---|--------------------------------------------------------------------------------------------------|
@@ -326,20 +326,20 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getFileStore(path: Path!): FileStore!
 ```
 
-Returns the [FileStore](https://developer.android.com/reference/kotlin/java/nio/file/FileStore.html#) representing the file store where a file is located. This method works in exactly the manner specified by the [Files.getFileStore](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#getFileStore(java.nio.file.Path))method.
+Returns the [FileStore](../java/nio/file/FileStore.md) representing the file store where a file is located. This method works in exactly the manner specified by the [Files.getFileStore](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------|
-| [FileStore](https://developer.android.com/reference/kotlin/java/nio/file/FileStore.html#)! | the file store where the file is stored |
+| [FileStore](../java/nio/file/FileStore.md)! | the file store where the file is stored |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the file, and in addition it checks [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#)`("getFileStoreAttributes")` |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the file, and in addition it checks [RuntimePermission](../java/lang/RuntimePermission.md)`("getFileStoreAttributes")` |
 
 ### getFileSystem
 
@@ -351,19 +351,19 @@ abstract fun getFileSystem(uri: URI!): FileSystem!
 
 Returns an existing`FileSystem`created by this provider.
 
-This method returns a reference to a`FileSystem`that was created by invoking the [newFileSystem(URI,Map)](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap))method. File systems created the [newFileSystem(Path,Map)](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap))method are not returned by this method. The file system is identified by its`URI`. Its exact form is highly provider dependent. In the case of the default provider the URI's path component is`"/"`and the authority, query and fragment components are undefined (Undefined components are represented by`null`).
+This method returns a reference to a`FileSystem`that was created by invoking the [newFileSystem(URI,Map)](../java/nio/file/spi/FileSystemProvider.md))method. File systems created the [newFileSystem(Path,Map)](../java/nio/file/spi/FileSystemProvider.md))method are not returned by this method. The file system is identified by its`URI`. Its exact form is highly provider dependent. In the case of the default provider the URI's path component is`"/"`and the authority, query and fragment components are undefined (Undefined components are represented by`null`).
 
-Once a file system created by this provider is java.nio.file.FileSystem#close it is provider-dependent if this method returns a reference to the closed file system or throws [FileSystemNotFoundException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemNotFoundException.html#). If the provider allows a new file system to be created with the same URI as a file system it previously created then this method throws the exception if invoked after the file system is closed (and before a new instance is created by the #newFileSystem method).
+Once a file system created by this provider is java.nio.file.FileSystem#close it is provider-dependent if this method returns a reference to the closed file system or throws [FileSystemNotFoundException](../java/nio/file/FileSystemNotFoundException.md). If the provider allows a new file system to be created with the same URI as a file system it previously created then this method throws the exception if invoked after the file system is closed (and before a new instance is created by the #newFileSystem method).
 
-If a security manager is installed then a provider implementation may require to check a permission before returning a reference to an existing file system. In the case of the [default](https://developer.android.com/reference/kotlin/java/nio/file/FileSystems.html#getDefault())file system, no permission check is required.
+If a security manager is installed then a provider implementation may require to check a permission before returning a reference to an existing file system. In the case of the [default](../java/nio/file/FileSystems.md))file system, no permission check is required.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:URI reference |
+| `uri` | [URI](../java/net/URI.md)!:URI reference |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------|
-| [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#)! | The file system |
+| [FileSystem](../java/nio/file/FileSystem.md)! | The file system |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------------------------------|
@@ -380,19 +380,19 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getPath(uri: URI!): Path!
 ```
 
-Return a`Path`object by converting the given [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#). The resulting`Path`is associated with a [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#) that already exists or is constructed automatically.
+Return a`Path`object by converting the given [URI](../java/net/URI.md). The resulting`Path`is associated with a [FileSystem](../java/nio/file/FileSystem.md) that already exists or is constructed automatically.
 
-The exact form of the URI is file system provider dependent. In the case of the default provider, the URI scheme is`"file"`and the given URI has a non-empty path component, and undefined query, and fragment components. The resulting`Path`is associated with the default [default](https://developer.android.com/reference/kotlin/java/nio/file/FileSystems.html#getDefault())`FileSystem`.
+The exact form of the URI is file system provider dependent. In the case of the default provider, the URI scheme is`"file"`and the given URI has a non-empty path component, and undefined query, and fragment components. The resulting`Path`is associated with the default [default](../java/nio/file/FileSystems.md))`FileSystem`.
 
-If a security manager is installed then a provider implementation may require to check a permission. In the case of the [default](https://developer.android.com/reference/kotlin/java/nio/file/FileSystems.html#getDefault())file system, no permission check is required.
+If a security manager is installed then a provider implementation may require to check a permission. In the case of the [default](../java/nio/file/FileSystems.md))file system, no permission check is required.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:The URI to convert |
+| `uri` | [URI](../java/net/URI.md)!:The URI to convert |
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------|
-| [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)! | The resulting`Path` |
+| [Path](../java/nio/file/Path.md)! | The resulting`Path` |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -425,11 +425,11 @@ open static fun installedProviders(): MutableList<FileSystemProvider!>!
 
 Returns a list of the installed file system providers.
 
-The first invocation of this method causes the default provider to be initialized (if not already initialized) and loads any other installed providers as described by the [FileSystems](https://developer.android.com/reference/kotlin/java/nio/file/FileSystems.html#) class.
+The first invocation of this method causes the default provider to be initialized (if not already initialized) and loads any other installed providers as described by the [FileSystems](../java/nio/file/FileSystems.md) class.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [FileSystemProvider](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#)!>! | An unmodifiable list of the installed file system providers. The list contains at least one element, that is the default file system provider |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [FileSystemProvider](../java/nio/file/spi/FileSystemProvider.md)!>! | An unmodifiable list of the installed file system providers. The list contains at least one element, that is the default file system provider |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------|
@@ -443,13 +443,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun isHidden(path: Path!): Boolean
 ```
 
-Tells whether or not a file is considered*hidden* . This method works in exactly the manner specified by the [Files.isHidden](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#isHidden(java.nio.file.Path))method.
+Tells whether or not a file is considered*hidden* . This method works in exactly the manner specified by the [Files.isHidden](../java/nio/file/Files.md))method.
 
-This method is invoked by the [isHidden](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#isHidden(java.nio.file.Path))method.
+This method is invoked by the [isHidden](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to test |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file to test |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|
@@ -458,7 +458,7 @@ This method is invoked by the [isHidden](https://developer.android.com/reference
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the file. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the file. |
 
 ### isSameFile
 
@@ -471,12 +471,12 @@ abstract fun isSameFile(
 ): Boolean
 ```
 
-Tests if two paths locate the same file. This method works in exactly the manner specified by the [Files.isSameFile](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#isSameFile(java.nio.file.Path,%20java.nio.file.Path))method.
+Tests if two paths locate the same file. This method works in exactly the manner specified by the [Files.isSameFile](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:one path to the file |
-| `path2` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the other path |
+| `path` | [Path](../java/nio/file/Path.md)!:one path to the file |
+| `path2` | [Path](../java/nio/file/Path.md)!:the other path |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -485,7 +485,7 @@ Tests if two paths locate the same file. This method works in exactly the manner
 | Exceptions ||
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to both files. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to both files. |
 
 ### move
 
@@ -499,13 +499,13 @@ abstract fun move(
 ): Unit
 ```
 
-Move or rename a file to a target file. This method works in exactly the manner specified by the [Files.move](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#move(java.nio.file.Path,%20java.nio.file.Path,%20java.nio.file.CopyOption))method except that both the source and target paths must be associated with this provider.
+Move or rename a file to a target file. This method works in exactly the manner specified by the [Files.move](../java/nio/file/Files.md))method except that both the source and target paths must be associated with this provider.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to move |
-| `target` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the target file |
-| `options` | [CopyOption](https://developer.android.com/reference/kotlin/java/nio/file/CopyOption.html#)!:options specifying how the move should be done |
+| `source` | [Path](../java/nio/file/Path.md)!:the path to the file to move |
+| `target` | [Path](../java/nio/file/Path.md)!:the path to the target file |
+| `options` | [CopyOption](../java/nio/file/CopyOption.md)!:options specifying how the move should be done |
 | --- | --- |
 
 | Exceptions ||
@@ -516,7 +516,7 @@ Move or rename a file to a target file. This method works in exactly the manner 
 | --- | --- |
 | `java.nio.file.AtomicMoveNotSupportedException` | if the options array contains the`ATOMIC_MOVE`option but the file cannot be moved as an atomic file system operation. |
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access to both the source and target file. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkWrite](../java/lang/SecurityManager.md))method is invoked to check write access to both the source and target file. |
 | --- | --- |
 
 ### newAsynchronousFileChannel
@@ -532,19 +532,19 @@ open fun newAsynchronousFileChannel(
 ): AsynchronousFileChannel!
 ```
 
-Opens or creates a file for reading and/or writing, returning an asynchronous file channel to access the file. This method works in exactly the manner specified by the [AsynchronousFileChannel.open](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.util.concurrent.ExecutorService,%20java.nio.file.attribute.FileAttribute))method. A provider that does not support all the features required to construct an asynchronous file channel throws`UnsupportedOperationException`. The default provider is required to support the creation of asynchronous file channels. When not overridden, the default implementation of this method throws`UnsupportedOperationException`.
+Opens or creates a file for reading and/or writing, returning an asynchronous file channel to access the file. This method works in exactly the manner specified by the [AsynchronousFileChannel.open](../java/nio/channels/AsynchronousFileChannel.md))method. A provider that does not support all the features required to construct an asynchronous file channel throws`UnsupportedOperationException`. The default provider is required to support the creation of asynchronous file channels. When not overridden, the default implementation of this method throws`UnsupportedOperationException`.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path of the file to open or create |
-| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!\>!:options specifying how the file is opened |
-| `executor` | [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html#)!:the thread pool or`null`to associate the channel with the default thread pool |
+| `path` | [Path](../java/nio/file/Path.md)!:the path of the file to open or create |
+| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](../java/nio/file/OpenOption.md)!\>!:options specifying how the file is opened |
+| `executor` | [ExecutorService](../java/util/concurrent/ExecutorService.md)!:the thread pool or`null`to associate the channel with the default thread pool |
 | --- | --- |
-| `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)\<\*\>!:an optional list of file attributes to set atomically when creating the file |
+| `attrs` | [FileAttribute](../java/nio/file/attribute/FileAttribute.md)\<\*\>!:an optional list of file attributes to set atomically when creating the file |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [AsynchronousFileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousFileChannel.html#)! | a new asynchronous file channel |
+| [AsynchronousFileChannel](../java/nio/channels/AsynchronousFileChannel.md)! | a new asynchronous file channel |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -552,7 +552,7 @@ Opens or creates a file for reading and/or writing, returning an asynchronous fi
 | `java.lang.UnsupportedOperationException` | If this provider that does not support creating asynchronous file channels, or an unsupported open option or file attribute is specified |
 | `java.io.IOException` | If an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default file system, the [java.lang.SecurityManager#checkRead(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access if the file is opened for writing |
+| `java.lang.SecurityException` | In the case of the default file system, the [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check write access if the file is opened for writing |
 
 ### newByteChannel
 
@@ -570,23 +570,23 @@ Opens or creates a file, returning a seekable byte channel to access the file. T
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to open or create |
-| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!\>!:options specifying how the file is opened |
-| `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)\<\*\>!:an optional list of file attributes to set atomically when creating the file |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file to open or create |
+| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](../java/nio/file/OpenOption.md)!\>!:options specifying how the file is opened |
+| `attrs` | [FileAttribute](../java/nio/file/attribute/FileAttribute.md)\<\*\>!:an optional list of file attributes to set atomically when creating the file |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [SeekableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SeekableByteChannel.html#)! | a new seekable byte channel |
+| [SeekableByteChannel](../java/nio/channels/SeekableByteChannel.md)! | a new seekable byte channel |
 
 | Exceptions ||
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if the set contains an invalid combination of options |
 | `java.lang.UnsupportedOperationException` | if an unsupported open option is specified or the array contains attributes that cannot be set atomically when creating the file |
-| `java.nio.file.FileAlreadyExistsException` | if a file of that name already exists and the [CREATE_NEW](https://developer.android.com/reference/kotlin/java/nio/file/StandardOpenOption.html#) option is specified*(optional specific exception)* |
+| `java.nio.file.FileAlreadyExistsException` | if a file of that name already exists and the [CREATE_NEW](../java/nio/file/StandardOpenOption.md) option is specified*(optional specific exception)* |
 | --- | --- |
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the path if the file is opened for reading. The [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access to the path if the file is opened for writing. The [checkDelete](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkDelete(kotlin.String))method is invoked to check delete access if the file is opened with the`DELETE_ON_CLOSE`option. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the path if the file is opened for reading. The [checkWrite](../java/lang/SecurityManager.md))method is invoked to check write access to the path if the file is opened for writing. The [checkDelete](../java/lang/SecurityManager.md))method is invoked to check delete access if the file is opened with the`DELETE_ON_CLOSE`option. |
 
 ### newDirectoryStream
 
@@ -599,22 +599,22 @@ abstract fun newDirectoryStream(
 ): DirectoryStream<Path!>!
 ```
 
-Opens a directory, returning a`DirectoryStream`to iterate over the entries in the directory. This method works in exactly the manner specified by the [java.nio.file.Files#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream.Filter)](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path,%20java.nio.file.DirectoryStream.Filter))method.
+Opens a directory, returning a`DirectoryStream`to iterate over the entries in the directory. This method works in exactly the manner specified by the [java.nio.file.Files#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream.Filter)](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dir` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the directory |
-| `filter` | [DirectoryStream.Filter](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryStream.Filter.html#)\<in [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!\>!:the directory stream filter |
+| `dir` | [Path](../java/nio/file/Path.md)!:the path to the directory |
+| `filter` | [DirectoryStream.Filter](../java/nio/file/DirectoryStream.Filter.md)\<in [Path](../java/nio/file/Path.md)!\>!:the directory stream filter |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [DirectoryStream](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryStream.html#)< [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!>! | a new and open`DirectoryStream`object |
+| [DirectoryStream](../java/nio/file/DirectoryStream.md)< [Path](../java/nio/file/Path.md)!>! | a new and open`DirectoryStream`object |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.nio.file.NotDirectoryException` | if the file could not otherwise be opened because it is not a directory*(optional specific exception)* |
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the directory. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the directory. |
 | --- | --- |
 
 ### newFileChannel
@@ -629,18 +629,18 @@ open fun newFileChannel(
 ): FileChannel!
 ```
 
-Opens or creates a file for reading and/or writing, returning a file channel to access the file. This method works in exactly the manner specified by the [FileChannel.open](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#open(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))method. A provider that does not support all the features required to construct a file channel throws`UnsupportedOperationException`. The default provider is required to support the creation of file channels. When not overridden, the default implementation throws`UnsupportedOperationException`.
+Opens or creates a file for reading and/or writing, returning a file channel to access the file. This method works in exactly the manner specified by the [FileChannel.open](../java/nio/channels/FileChannel.md))method. A provider that does not support all the features required to construct a file channel throws`UnsupportedOperationException`. The default provider is required to support the creation of file channels. When not overridden, the default implementation throws`UnsupportedOperationException`.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path of the file to open or create |
-| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!\>!:options specifying how the file is opened |
-| `attrs` | [FileAttribute](https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileAttribute.html#)\<\*\>!:an optional list of file attributes to set atomically when creating the file |
+| `path` | [Path](../java/nio/file/Path.md)!:the path of the file to open or create |
+| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](../java/nio/file/OpenOption.md)!\>!:options specifying how the file is opened |
+| `attrs` | [FileAttribute](../java/nio/file/attribute/FileAttribute.md)\<\*\>!:an optional list of file attributes to set atomically when creating the file |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------|
-| [FileChannel](https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#)! | a new file channel |
+| [FileChannel](../java/nio/channels/FileChannel.md)! | a new file channel |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -648,7 +648,7 @@ Opens or creates a file for reading and/or writing, returning a file channel to 
 | `java.lang.UnsupportedOperationException` | If this provider that does not support creating file channels, or an unsupported open option or file attribute is specified |
 | `java.io.IOException` | If an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default file system, the [java.lang.SecurityManager#checkRead(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access if the file is opened for writing |
+| `java.lang.SecurityException` | In the case of the default file system, the [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check write access if the file is opened for writing |
 
 ### newFileSystem
 
@@ -661,20 +661,20 @@ abstract fun newFileSystem(
 ): FileSystem!
 ```
 
-Constructs a new`FileSystem`object identified by a URI. This method is invoked by the [FileSystems.newFileSystem(URI,Map)](https://developer.android.com/reference/kotlin/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap))method to open a new file system identified by a URI.
+Constructs a new`FileSystem`object identified by a URI. This method is invoked by the [FileSystems.newFileSystem(URI,Map)](../java/nio/file/FileSystems.md))method to open a new file system identified by a URI.
 
 The`uri`parameter is an absolute, hierarchical URI, with a scheme equal (without regard to case) to the scheme supported by this provider. The exact form of the URI is highly provider dependent. The`env`parameter is a map of provider specific properties to configure the file system.
 
-This method throws [FileSystemAlreadyExistsException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemAlreadyExistsException.html#) if the file system already exists because it was previously created by an invocation of this method. Once a file system is java.nio.file.FileSystem#close it is provider-dependent if the provider allows a new file system to be created with the same URI as a file system it previously created.
+This method throws [FileSystemAlreadyExistsException](../java/nio/file/FileSystemAlreadyExistsException.md) if the file system already exists because it was previously created by an invocation of this method. Once a file system is java.nio.file.FileSystem#close it is provider-dependent if the provider allows a new file system to be created with the same URI as a file system it previously created.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:URI reference |
+| `uri` | [URI](../java/net/URI.md)!:URI reference |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,\*\>!:A map of provider specific properties to configure the file system; may be empty |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------|
-| [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#)! | A new file system |
+| [FileSystem](../java/nio/file/FileSystem.md)! | A new file system |
 
 | Exceptions ||
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -703,12 +703,12 @@ If this provider does not support the creation of such file systems or if the pr
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:The path to the file |
+| `path` | [Path](../java/nio/file/Path.md)!:The path to the file |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,\*\>!:A map of provider specific properties to configure the file system; may be empty |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------|
-| [FileSystem](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#)! | A new file system |
+| [FileSystem](../java/nio/file/FileSystem.md)! | A new file system |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -729,18 +729,18 @@ open fun newInputStream(
 ): InputStream!
 ```
 
-Opens a file, returning an input stream to read from the file. This method works in exactly the manner specified by the [java.nio.file.Files#newInputStream](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#newInputStream(java.nio.file.Path,%20java.nio.file.OpenOption))method.
+Opens a file, returning an input stream to read from the file. This method works in exactly the manner specified by the [java.nio.file.Files#newInputStream](../java/nio/file/Files.md))method.
 
-The default implementation of this method opens a channel to the file as if by invoking the [newByteChannel](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newByteChannel(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))method and constructs a stream that reads bytes from the channel. This method should be overridden where appropriate.
+The default implementation of this method opens a channel to the file as if by invoking the [newByteChannel](../java/nio/file/spi/FileSystemProvider.md))method and constructs a stream that reads bytes from the channel. This method should be overridden where appropriate.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to open |
-| `options` | [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!:options specifying how the file is opened |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file to open |
+| `options` | [OpenOption](../java/nio/file/OpenOption.md)!:options specifying how the file is opened |
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | a new input stream |
+| [InputStream](../java/io/InputStream.md)! | a new input stream |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -748,7 +748,7 @@ The default implementation of this method opens a channel to the file as if by i
 | `java.lang.UnsupportedOperationException` | if an unsupported option is specified |
 | `java.io.IOException` | if an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the file. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the file. |
 
 ### newOutputStream
 
@@ -761,18 +761,18 @@ open fun newOutputStream(
 ): OutputStream!
 ```
 
-Opens or creates a file, returning an output stream that may be used to write bytes to the file. This method works in exactly the manner specified by the [Files.newOutputStream](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#newOutputStream(java.nio.file.Path,%20java.nio.file.OpenOption))method.
+Opens or creates a file, returning an output stream that may be used to write bytes to the file. This method works in exactly the manner specified by the [Files.newOutputStream](../java/nio/file/Files.md))method.
 
-The default implementation of this method opens a channel to the file as if by invoking the [newByteChannel](https://developer.android.com/reference/kotlin/java/nio/file/spi/FileSystemProvider#newByteChannel(java.nio.file.Path,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))method and constructs a stream that writes bytes to the channel. This method should be overridden where appropriate.
+The default implementation of this method opens a channel to the file as if by invoking the [newByteChannel](../java/nio/file/spi/FileSystemProvider.md))method and constructs a stream that writes bytes to the channel. This method should be overridden where appropriate.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file to open or create |
-| `options` | [OpenOption](https://developer.android.com/reference/kotlin/java/nio/file/OpenOption.html#)!:options specifying how the file is opened |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file to open or create |
+| `options` | [OpenOption](../java/nio/file/OpenOption.md)!:options specifying how the file is opened |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------|
-| [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | a new output stream |
+| [OutputStream](../java/io/OutputStream.md)! | a new output stream |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -780,7 +780,7 @@ The default implementation of this method opens a channel to the file as if by i
 | `java.lang.UnsupportedOperationException` | if an unsupported option is specified |
 | `java.io.IOException` | if an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method is invoked to check write access to the file. The [checkDelete](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkDelete(kotlin.String))method is invoked to check delete access if the file is opened with the`DELETE_ON_CLOSE`option. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, the [checkWrite](../java/lang/SecurityManager.md))method is invoked to check write access to the file. The [checkDelete](../java/lang/SecurityManager.md))method is invoked to check delete access if the file is opened with the`DELETE_ON_CLOSE`option. |
 
 ### readAttributes
 
@@ -799,10 +799,10 @@ Reads a file's attributes as a bulk operation. This method works in exactly the 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<A>` | The`BasicFileAttributes`type |
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file |
-| `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<A\>!:the`Class`of the file attributes required to read |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file |
+| `type` | [Class](../java/lang/Class.md)\<A\>!:the`Class`of the file attributes required to read |
 | --- | --- |
-| `options` | [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!:options indicating how symbolic links are handled |
+| `options` | [LinkOption](../java/nio/file/LinkOption.md)!:options indicating how symbolic links are handled |
 
 | Return ||
 |---|---------------------|
@@ -812,7 +812,7 @@ Reads a file's attributes as a bulk operation. This method works in exactly the 
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if an attributes of the given type are not supported |
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, its [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method is invoked to check read access to the file |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, its [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the file |
 | --- | --- |
 
 ### readAttributes
@@ -831,9 +831,9 @@ Reads a set of file attributes as a bulk operation. This method works in exactly
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file |
 | `attributes` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the attributes to read |
-| `options` | [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!:options indicating how symbolic links are handled |
+| `options` | [LinkOption](../java/nio/file/LinkOption.md)!:options indicating how symbolic links are handled |
 | --- | --- |
 
 | Return ||
@@ -846,7 +846,7 @@ Reads a set of file attributes as a bulk operation. This method works in exactly
 | `java.lang.IllegalArgumentException` | if no attributes are specified or an unrecognized attributes is specified |
 | `java.io.IOException` | If an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, its [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String))method denies read access to the file. If this method is invoked to read security sensitive attributes then the security manager may be invoke to check for additional permissions. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, its [checkRead](../java/lang/SecurityManager.md))method denies read access to the file. If this method is invoked to read security sensitive attributes then the security manager may be invoke to check for additional permissions. |
 
 ### readSymbolicLink
 
@@ -856,17 +856,17 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun readSymbolicLink(link: Path!): Path!
 ```
 
-Reads the target of a symbolic link. This method works in exactly the manner specified by the [Files.readSymbolicLink](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#readSymbolicLink(java.nio.file.Path))method.
+Reads the target of a symbolic link. This method works in exactly the manner specified by the [Files.readSymbolicLink](../java/nio/file/Files.md))method.
 
 The default implementation of this method throws`UnsupportedOperationException`.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------|
-| `link` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the symbolic link |
+| `link` | [Path](../java/nio/file/Path.md)!:the path to the symbolic link |
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------|
-| [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)! | The target of the symbolic link |
+| [Path](../java/nio/file/Path.md)! | The target of the symbolic link |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -889,15 +889,15 @@ abstract fun setAttribute(
 ): Unit
 ```
 
-Sets the value of a file attribute. This method works in exactly the manner specified by the [Files.setAttribute](https://developer.android.com/reference/kotlin/java/nio/file/Files.html#setAttribute(java.nio.file.Path,%20kotlin.String,%20kotlin.Any,%20java.nio.file.LinkOption))method.
+Sets the value of a file attribute. This method works in exactly the manner specified by the [Files.setAttribute](../java/nio/file/Files.md))method.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!:the path to the file |
+| `path` | [Path](../java/nio/file/Path.md)!:the path to the file |
 | `attribute` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the attribute to set |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the attribute value |
 | --- | --- |
-| `options` | [LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption.html#)!:options indicating how symbolic links are handled |
+| `options` | [LinkOption](../java/nio/file/LinkOption.md)!:options indicating how symbolic links are handled |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -906,4 +906,4 @@ Sets the value of a file attribute. This method works in exactly the manner spec
 | `java.lang.ClassCastException` | If the attribute value is not of the expected type or is a collection containing elements that are not of the expected type |
 | --- | --- |
 | `java.io.IOException` | If an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, its [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String))method denies write access to the file. If this method is invoked to set security sensitive attributes then the security manager may be invoked to check for additional permissions. |
+| `java.lang.SecurityException` | In the case of the default provider, and a security manager is installed, its [checkWrite](../java/lang/SecurityManager.md))method denies write access to the file. If this method is invoked to set security sensitive attributes then the security manager may be invoked to check for additional permissions. |

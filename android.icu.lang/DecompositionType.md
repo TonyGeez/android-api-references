@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # DecompositionType
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.DecompositionType "View this page in Java") 
+Kotlin| [Java](../android/icu/lang/UCharacter.DecompositionType.md) 
 | --- | --- |
 
 ```
 interface DecompositionType
 ```
 
-| [android.icu.lang.UCharacter.DecompositionType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#) |
+| [android.icu.lang.UCharacter.DecompositionType](../android/icu/lang/UCharacter.DecompositionType.md) |
 
 Decomposition Type constants.
 
@@ -19,29 +19,29 @@ Decomposition Type constants.
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANONICAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#CANONICAL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CIRCLE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#CIRCLE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPAT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#COMPAT:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANONICAL](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CIRCLE](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPAT](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#FINAL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#FONT:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRACTION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#FRACTION:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FONT](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRACTION](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INITIAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#INITIAL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ISOLATED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#ISOLATED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#MEDIAL:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INITIAL](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ISOLATED](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIAL](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NARROW](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#NARROW:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOBREAK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#NOBREAK:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#NONE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NARROW](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOBREAK](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SMALL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#SMALL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SQUARE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#SQUARE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUB](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#SUB:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SMALL](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SQUARE](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUB](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#SUPER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTICAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#VERTICAL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType#WIDE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPER](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTICAL](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDE](../android/icu/lang/UCharacter.DecompositionType.md) <br /> |
 | --- | --- |
 
 ## Constants

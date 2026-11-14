@@ -2,7 +2,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 
 # LuhnChecksumValidator
 
-Kotlin | [Java](https://developer.android.com/reference/android/service/autofill/LuhnChecksumValidator "View this page in Java")
+Kotlin | [Java](../android/service/autofill/LuhnChecksumValidator.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class LuhnChecksumValidator : Parcelable, Validator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.LuhnChecksumValidator](https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#) |
+| ↳ | [android.service.autofill.LuhnChecksumValidator](../android/service/autofill/LuhnChecksumValidator.md) |
 
 Validator that returns `true` if the number created by concatenating all given fields pass a Luhn algorithm checksum. All non-digits are ignored.
 
@@ -36,7 +36,7 @@ See `https://developer.android.com/reference/kotlin/android/service/autofill/Sav
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [LuhnChecksumValidator](https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#)!\> | `https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LuhnChecksumValidator](../android/service/autofill/LuhnChecksumValidator.md)!\> | `https://developer.android.com/reference/kotlin/android/service/autofill/LuhnChecksumValidator#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -52,7 +52,7 @@ Default constructor.
 
 | Parameters ||
 |---|---|
-| `ids` | [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)!: id of fields that comprises the number to be checked. This value cannot be `null`. |
+| `ids` | [AutofillId](../android/view/autofill/AutofillId.md)!: id of fields that comprises the number to be checked. This value cannot be `null`. |
 
 ## Public methods
 

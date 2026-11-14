@@ -11,11 +11,11 @@ open class NonWritableChannelException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.channels.NonWritableChannelException](https://developer.android.com/reference/kotlin/java/nio/channels/NonWritableChannelException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.NonWritableChannelException](../java/nio/channels/NonWritableChannelException.md) |
 
 Unchecked exception thrown when an attempt is made to write to a channel that was not originally opened for writing.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to write to a channel that wa
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NonWritableChannelException](https://developer.android.com/reference/kotlin/java/nio/channels/NonWritableChannelException#NonWritableChannelException())`()` Constructs an instance of this class. |
+| [NonWritableChannelException](../java/nio/channels/NonWritableChannelException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

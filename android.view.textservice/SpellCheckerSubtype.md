@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # SpellCheckerSubtype
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/textservice/SpellCheckerSubtype "View this page in Java") 
+Kotlin| [Java](../android/view/textservice/SpellCheckerSubtype.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SpellCheckerSubtype : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.textservice.SpellCheckerSubtype](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#) |
+| ↳ | [android.view.textservice.SpellCheckerSubtype](../android/view/textservice/SpellCheckerSubtype.md) |
 
 This class is used to specify meta information of a subtype contained in a spell checker. Subtype can describe locale (e.g. en_US, fr_FR...) used for settings.
 
@@ -21,41 +21,41 @@ This class is used to specify meta information of a subtype contained in a spell
 
 | XML attributes ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [`android:label`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The name of the subtype. |
-| [`android:languageTag`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The BCP-47 Language Tag of the subtype. |
-| [`android:subtypeExtraValue`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The extra value of the subtype. |
+| [`android:label`](../android/view/textservice/SpellCheckerSubtype.md) | The name of the subtype. |
+| [`android:languageTag`](../android/view/textservice/SpellCheckerSubtype.md) | The BCP-47 Language Tag of the subtype. |
+| [`android:subtypeExtraValue`](../android/view/textservice/SpellCheckerSubtype.md) | The extra value of the subtype. |
 | --- | --- |
-| [`android:subtypeId`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The unique id for the subtype. |
-| [`android:subtypeLocale`](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#attr_SpellCheckerSubtype) | The locale of the subtype. |
+| [`android:subtypeId`](../android/view/textservice/SpellCheckerSubtype.md) | The unique id for the subtype. |
+| [`android:subtypeLocale`](../android/view/textservice/SpellCheckerSubtype.md) | The locale of the subtype. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SpellCheckerSubtype](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#SpellCheckerSubtype(kotlin.Int,%20kotlin.String,%20kotlin.String))`(`nameId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extraValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor. |
+| [SpellCheckerSubtype](../android/view/textservice/SpellCheckerSubtype.md))`(`nameId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extraValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsExtraValueKey](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#containsExtraValueKey(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsExtraValueKey](../android/view/textservice/SpellCheckerSubtype.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/textservice/SpellCheckerSubtype.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/textservice/SpellCheckerSubtype.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getDisplayName(android.content.Context,%20kotlin.String,%20android.content.pm.ApplicationInfo))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appInfo:` ` [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)!`)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValue](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getExtraValue())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValueOf](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getExtraValueOf(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDisplayName](../android/view/textservice/SpellCheckerSubtype.md))`(`context:` ` [Context](../android/content/Context.md)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appInfo:` ` [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValue](../android/view/textservice/SpellCheckerSubtype.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValueOf](../android/view/textservice/SpellCheckerSubtype.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLanguageTag](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getLanguageTag())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getLocale())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNameResId](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getNameResId())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLanguageTag](../android/view/textservice/SpellCheckerSubtype.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](../android/view/textservice/SpellCheckerSubtype.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNameResId](../android/view/textservice/SpellCheckerSubtype.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#hashCode())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/textservice/SpellCheckerSubtype.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/textservice/SpellCheckerSubtype.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SpellCheckerSubtype](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SpellCheckerSubtype](../android/view/textservice/SpellCheckerSubtype.md)!\> | [CREATOR](../android/view/textservice/SpellCheckerSubtype.md) <br /> |
 
 ## XML attributes
 
@@ -75,7 +75,7 @@ May be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\
 ```
 android:languageTag
 ```
-The BCP-47 Language Tag of the subtype. This replaces [android.R.styleable#SpellChecker_Subtype_subtypeLocale](https://developer.android.com/reference/kotlin/android/R.styleable.html#SpellChecker_Subtype_subtypeLocale:kotlin.Int).
+The BCP-47 Language Tag of the subtype. This replaces [android.R.styleable#SpellChecker_Subtype_subtypeLocale](../android/R.styleable.md).
 
 May be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character; 
 
@@ -102,7 +102,7 @@ May be an integer value, such as "`100`".
 ```
 android:subtypeLocale
 ```
-The locale of the subtype. This string should be a locale (for example, en_US and fr_FR). This is also used by the framework to know the supported locales of the spell checker. [android.view.textservice.SpellCheckerSubtype#getLocale()](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getLocale())returns the value specified in this attribute.
+The locale of the subtype. This string should be a locale (for example, en_US and fr_FR). This is also used by the framework to know the supported locales of the spell checker. [android.view.textservice.SpellCheckerSubtype#getLocale()](../android/view/textservice/SpellCheckerSubtype.md))returns the value specified in this attribute.
 
 May be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character;
 
@@ -119,7 +119,7 @@ SpellCheckerSubtype(
     extraValue: String!)
 ```
 
-**Deprecated:** *There is no public API that requires developers to directly instantiate custom [SpellCheckerSubtype](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#) objects right now. Hence only the system is expected to be able to instantiate [SpellCheckerSubtype](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#) object.*
+**Deprecated:** *There is no public API that requires developers to directly instantiate custom [SpellCheckerSubtype](../android/view/textservice/SpellCheckerSubtype.md) objects right now. Hence only the system is expected to be able to instantiate [SpellCheckerSubtype](../android/view/textservice/SpellCheckerSubtype.md) object.*
 
 Constructor.
 
@@ -160,7 +160,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -205,9 +205,9 @@ fun getDisplayName(
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Context will be used for getting Locale and PackageManager. |
+| `context` | [Context](../android/content/Context.md)!:Context will be used for getting Locale and PackageManager. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The package name of the spell checker |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)!:The application info of the spell checker |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!:The application info of the spell checker |
 | --- | --- |
 
 | Return ||
@@ -258,7 +258,7 @@ fun getLanguageTag(): String
 
 **See Also**
 
-- [java.util.Locale#forLanguageTag(String)](https://developer.android.com/reference/kotlin/java/util/Locale.html#forLanguageTag(kotlin.String)) 
+- [java.util.Locale#forLanguageTag(String)](../java/util/Locale.md)) 
 
 ### getLocale
 
@@ -269,7 +269,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 fun getLocale(): String
 ```
 
-**Deprecated:** *Use [getLanguageTag()](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSubtype#getLanguageTag())instead.*
+**Deprecated:** *Use [getLanguageTag()](../android/view/textservice/SpellCheckerSubtype.md))instead.*
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -312,8 +312,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

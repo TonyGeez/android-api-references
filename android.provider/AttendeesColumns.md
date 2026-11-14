@@ -4,16 +4,16 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # AttendeesColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.AttendeesColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/CalendarContract.AttendeesColumns.md) 
 | --- | --- |
 
 ```
 protected interface AttendeesColumns
 ```
 
-| [android.provider.CalendarContract.AttendeesColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#) |
+| [android.provider.CalendarContract.AttendeesColumns](../android/provider/CalendarContract.AttendeesColumns.md) |
 
-| Known Direct Subclasses [CalendarContract.Attendees](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Attendees) |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------| | [CalendarContract.Attendees](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Attendees) | Fields and helpers for interacting with Attendees. | |
+| Known Direct Subclasses [CalendarContract.Attendees](../android/provider/CalendarContract.Attendees.md) |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------| | [CalendarContract.Attendees](../android/provider/CalendarContract.Attendees.md) | Fields and helpers for interacting with Attendees. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Columns from the Attendees table that other tables join into themselves.
@@ -22,35 +22,35 @@ Columns from the Attendees table that other tables join into themselves.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_EMAIL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_EMAIL:kotlin.String) The email address of the attendee. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_IDENTITY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_IDENTITY:kotlin.String) The identity of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.IDENTITY](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Identity#IDENTITY:kotlin.String). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_ID_NAMESPACE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_ID_NAMESPACE:kotlin.String) The identity name space of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.NAMESPACE](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Identity#NAMESPACE:kotlin.String). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_EMAIL](../android/provider/CalendarContract.AttendeesColumns.md) The email address of the attendee. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_IDENTITY](../android/provider/CalendarContract.AttendeesColumns.md) The identity of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.IDENTITY](../android/provider/ContactsContract.CommonDataKinds.Identity.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_ID_NAMESPACE](../android/provider/CalendarContract.AttendeesColumns.md) The identity name space of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.NAMESPACE](../android/provider/ContactsContract.CommonDataKinds.Identity.md). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_NAME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_NAME:kotlin.String) The name of the attendee. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_RELATIONSHIP](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_RELATIONSHIP:kotlin.String) The relationship of the attendee to the user. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_STATUS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_STATUS:kotlin.String) The attendance status of the attendee. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_NAME](../android/provider/CalendarContract.AttendeesColumns.md) The name of the attendee. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_RELATIONSHIP](../android/provider/CalendarContract.AttendeesColumns.md) The relationship of the attendee to the user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_STATUS](../android/provider/CalendarContract.AttendeesColumns.md) The attendance status of the attendee. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_ACCEPTED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_STATUS_ACCEPTED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_DECLINED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_STATUS_DECLINED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_INVITED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_STATUS_INVITED:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_ACCEPTED](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_DECLINED](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_INVITED](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_NONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_STATUS_NONE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_TENTATIVE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_STATUS_TENTATIVE:kotlin.Int) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_TYPE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_TYPE:kotlin.String) The type of attendee. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_NONE](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTENDEE_STATUS_TENTATIVE](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ATTENDEE_TYPE](../android/provider/CalendarContract.AttendeesColumns.md) The type of attendee. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#EVENT_ID:kotlin.String) The id of the event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_ATTENDEE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#RELATIONSHIP_ATTENDEE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_NONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#RELATIONSHIP_NONE:kotlin.Int) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](../android/provider/CalendarContract.AttendeesColumns.md) The id of the event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_ATTENDEE](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_NONE](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_ORGANIZER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#RELATIONSHIP_ORGANIZER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_PERFORMER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#RELATIONSHIP_PERFORMER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_SPEAKER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#RELATIONSHIP_SPEAKER:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_ORGANIZER](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_PERFORMER](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIONSHIP_SPEAKER](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_NONE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OPTIONAL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_OPTIONAL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REQUIRED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_REQUIRED:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NONE](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OPTIONAL](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REQUIRED](../android/provider/CalendarContract.AttendeesColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RESOURCE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_RESOURCE:kotlin.Int) This specifies that an attendee is a resource, like a room, a cabbage, or something and not an actual person. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RESOURCE](../android/provider/CalendarContract.AttendeesColumns.md) This specifies that an attendee is a resource, like a room, a cabbage, or something and not an actual person. |
 
 ## Constants
 
@@ -76,7 +76,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val ATTENDEE_IDENTITY: String
 ```
 
-The identity of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.IDENTITY](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Identity#IDENTITY:kotlin.String). This is required only if [ATTENDEE_ID_NAMESPACE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_ID_NAMESPACE:kotlin.String) is present. Column name.
+The identity of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.IDENTITY](../android/provider/ContactsContract.CommonDataKinds.Identity.md). This is required only if [ATTENDEE_ID_NAMESPACE](../android/provider/CalendarContract.AttendeesColumns.md) is present. Column name.
 
 Type: STRING 
 
@@ -90,7 +90,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val ATTENDEE_ID_NAMESPACE: String
 ```
 
-The identity name space of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.NAMESPACE](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Identity#NAMESPACE:kotlin.String). This is required only if [ATTENDEE_IDENTITY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_IDENTITY:kotlin.String) is present. Column name.
+The identity name space of the attendee as referenced in [ContactsContract.CommonDataKinds.Identity.NAMESPACE](../android/provider/ContactsContract.CommonDataKinds.Identity.md). This is required only if [ATTENDEE_IDENTITY](../android/provider/CalendarContract.AttendeesColumns.md) is present. Column name.
 
 Type: STRING 
 
@@ -120,7 +120,7 @@ static val ATTENDEE_RELATIONSHIP: String
 
 The relationship of the attendee to the user. Column name.
 
-Type: INTEGER (one of [RELATIONSHIP_ATTENDEE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#RELATIONSHIP_ATTENDEE:kotlin.Int), ...}. 
+Type: INTEGER (one of [RELATIONSHIP_ATTENDEE](../android/provider/CalendarContract.AttendeesColumns.md), ...}. 
 
  Value: "attendeeRelationship"
 
@@ -134,7 +134,7 @@ static val ATTENDEE_STATUS: String
 
 The attendance status of the attendee. Column name.
 
-Type: Integer (one of [ATTENDEE_STATUS_ACCEPTED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#ATTENDEE_STATUS_ACCEPTED:kotlin.Int), ...). 
+Type: Integer (one of [ATTENDEE_STATUS_ACCEPTED](../android/provider/CalendarContract.AttendeesColumns.md), ...). 
 
  Value: "attendeeStatus"
 
@@ -198,7 +198,7 @@ static val ATTENDEE_TYPE: String
 
 The type of attendee. Column name.
 
-Type: Integer (one of [TYPE_NONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_NONE:kotlin.Int), [TYPE_REQUIRED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_REQUIRED:kotlin.Int), [TYPE_OPTIONAL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_OPTIONAL:kotlin.Int), [TYPE_RESOURCE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_RESOURCE:kotlin.Int)) 
+Type: Integer (one of [TYPE_NONE](../android/provider/CalendarContract.AttendeesColumns.md), [TYPE_REQUIRED](../android/provider/CalendarContract.AttendeesColumns.md), [TYPE_OPTIONAL](../android/provider/CalendarContract.AttendeesColumns.md), [TYPE_RESOURCE](../android/provider/CalendarContract.AttendeesColumns.md)) 
 
  Value: "attendeeType"
 

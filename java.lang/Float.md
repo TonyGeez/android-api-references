@@ -9,17 +9,17 @@ class Float : Number, Comparable<Float!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.lang.Float](https://developer.android.com/reference/kotlin/java/lang/Float#) |
+| | ↳ | [java.lang.Float](../java/lang/Float.md) |
 
 The `Float` class wraps a value of primitive type in an object. An object of type `Float` contains a single field whose type is .
 
 In addition, this class provides several methods for converting a `float` to a `String` and a `String` to a `float`, as well as other constants and methods useful when dealing with a `float`.
 
-This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](https://developer.android.com/reference/kotlin/java/lang/Float#equals(kotlin.Any)) as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
+This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](../java/lang/Float.md)) as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
 
 ## Floating-point Equality, Equivalence, and Comparison
 
-The class `java.lang.Double` has a [discussion of equality, equivalence, and comparison of floating-point values](https://developer.android.com/reference/kotlin/java/lang/Double#equivalenceRelation) that is equally applicable to `float` values.
+The class `java.lang.Double` has a [discussion of equality, equivalence, and comparison of floating-point values](../java/lang/Double.md) that is equally applicable to `float` values.
 
 ## Summary
 
@@ -53,7 +53,7 @@ The class `java.lang.Double` has a [discussion of equality, equivalence, and com
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this object against the specified object. |
 | --- | --- |
 | static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#float16ToFloat(kotlin.Short)(floatBinary16: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` {@return the {@code float} value closest to the numerical value \* of the argument, a floating-point binary16 value encoded in a \* {@code short}} The conversion is exact; all binary16 values can be exactly represented in `float`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#floatToFloat16(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` {@return the floating-point binary16 value, encoded in a {@code \* short}, closest in value to the argument} The conversion is computed under the [round to nearest even rounding](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#floatToFloat16(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` {@return the floating-point binary16 value, encoded in a {@code \* short}, closest in value to the argument} The conversion is computed under the [round to nearest even rounding](../java/math/RoundingMode.md). |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#floatToIntBits(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "single format" bit layout. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#floatToRawIntBits(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "single format" bit layout, preserving Not-a-Number (NaN) values. |
@@ -91,7 +91,7 @@ The class `java.lang.Double` has a [discussion of equality, equivalence, and com
 
 | Properties ||
 |---|---|
-| static [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\< [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/lang/Float#TYPE:java.lang.Class` The `Class` instance representing the primitive type `float`. |
+| static [Class](../java/lang/Class.md)\< [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/lang/Float#TYPE:java.lang.Class` The `Class` instance representing the primitive type `float`. |
 
 ## Constants
 
@@ -325,7 +325,7 @@ Compares two `Float` objects numerically. This method imposes a total order on `
 - A NaN is *unordered* with respect to other values and unequal to itself under the comparison operators. This method chooses to define `Float.NaN` to be equal to itself and greater than all other `double` values (including `Float.POSITIVE_INFINITY`).
 - Positive zero and negative zero compare equal numerically, but are distinct and distinguishable values. This method chooses to define positive zero (`+0.0f`), to be greater than negative zero (`-0.0f`).
 
-This ensures that the *natural ordering* of `Float` objects imposed by this method is *consistent with equals* ; see [this discussion](https://developer.android.com/reference/kotlin/java/lang/Double#equivalenceRelation) for details of floating-point comparison and ordering.
+This ensures that the *natural ordering* of `Float` objects imposed by this method is *consistent with equals* ; see [this discussion](../java/lang/Double.md) for details of floating-point comparison and ordering.
 
 <br />
 
@@ -397,13 +397,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static fun floatToFloat16(f: Float): Short
 ```
 
-{@return the floating-point binary16 value, encoded in a {@code \* short}, closest in value to the argument} The conversion is computed under the [round to nearest even rounding](https://developer.android.com/reference/kotlin/java/math/RoundingMode.html#). Special cases:
+{@return the floating-point binary16 value, encoded in a {@code \* short}, closest in value to the argument} The conversion is computed under the [round to nearest even rounding](../java/math/RoundingMode.md). Special cases:
 
 - If the argument is zero, the result is a zero with the same sign as the argument.
 - If the argument is infinite, the result is an infinity with the same sign as the argument.
 - If the argument is a NaN, the result is a NaN.
 
-The [binary16 format](https://developer.android.com/reference/kotlin/java/lang/Float#binary16Format) is discussed in more detail in the `https://developer.android.com/reference/kotlin/java/lang/Float#float16ToFloat(kotlin.Short)` method.
+The [binary16 format](../java/lang/Float.md) is discussed in more detail in the `https://developer.android.com/reference/kotlin/java/lang/Float#float16ToFloat(kotlin.Short)` method.
 
 <br />
 

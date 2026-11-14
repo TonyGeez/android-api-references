@@ -11,10 +11,10 @@ open class FileSystemNotFoundException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.file.FileSystemNotFoundException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemNotFoundException#) |
+| | | | ↳ | [java.nio.file.FileSystemNotFoundException](../java/nio/file/FileSystemNotFoundException.md) |
 
 Runtime exception thrown when a file system cannot be found.
 
@@ -22,8 +22,8 @@ Runtime exception thrown when a file system cannot be found.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FileSystemNotFoundException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemNotFoundException#FileSystemNotFoundException())`()` Constructs an instance of this class. |
-| [FileSystemNotFoundException](https://developer.android.com/reference/kotlin/java/nio/file/FileSystemNotFoundException#FileSystemNotFoundException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class. |
+| [FileSystemNotFoundException](../java/nio/file/FileSystemNotFoundException.md))`()` Constructs an instance of this class. |
+| [FileSystemNotFoundException](../java/nio/file/FileSystemNotFoundException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class. |
 
 ## Public constructors
 

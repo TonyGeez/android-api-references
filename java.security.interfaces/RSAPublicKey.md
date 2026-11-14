@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface RSAPublicKey : PublicKey, RSAKey
 ```
 
-| [java.security.interfaces.RSAPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPublicKey#) |
+| [java.security.interfaces.RSAPublicKey](../java/security/interfaces/RSAPublicKey.md) |
 
 The interface to an RSA public key.
 
@@ -16,15 +16,15 @@ The interface to an RSA public key.
 
 | Constants ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPublicKey#serialVersionUID:kotlin.Long) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/RSAPublicKey.md) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPublicKey#getPublicExponent())`()` Returns the public exponent. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | [getPublicExponent](../java/security/interfaces/RSAPublicKey.md))`()` Returns the public exponent. |
 
 | Inherited functions ||
 |---|---|
-| From class [RSAKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAKey) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getModulus](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAKey#getModulus())`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | [getParams](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAKey#getParams())`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
+| From class [RSAKey](../java/security/interfaces/RSAKey.md) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java/math/BigInteger.md)! | [getModulus](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getParams](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
 
 ## Constants
 
@@ -57,4 +57,4 @@ Returns the public exponent.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the public exponent |
+| [BigInteger](../java/math/BigInteger.md)! | the public exponent |

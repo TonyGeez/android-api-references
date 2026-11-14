@@ -2,7 +2,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiAwareDataPathSecurityConfig
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig "View this page in Java")
+Kotlin | [Java](../android/net/wifi/aware/WifiAwareDataPathSecurityConfig.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class WifiAwareDataPathSecurityConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.aware.WifiAwareDataPathSecurityConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#) |
+| ↳ | [android.net.wifi.aware.WifiAwareDataPathSecurityConfig](../android/net/wifi/aware/WifiAwareDataPathSecurityConfig.md) |
 
 Wi-Fi Aware data-path security config. The config is used with `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier.Builder#setDataPathSecurityConfig(android.net.wifi.aware.WifiAwareDataPathSecurityConfig)` to request a secure data-path.
 
@@ -42,7 +42,7 @@ Wi-Fi Aware data-path security config. The config is used with `https://develope
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiAwareDataPathSecurityConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiAwareDataPathSecurityConfig](../android/net/wifi/aware/WifiAwareDataPathSecurityConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -197,7 +197,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -2,26 +2,26 @@
 
 # android.speech
 
-Kotlin| [Java](https://developer.android.com/reference/android/speech/package-summary "View this page in Java")
+Kotlin| [Java](../android/speech/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [ModelDownloadListener](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener) | Listener for model download events. |
+| [ModelDownloadListener](../android/speech/ModelDownloadListener.md) | Listener for model download events. |
 | --- | --- |
-| [RecognitionListener](https://developer.android.com/reference/kotlin/android/speech/RecognitionListener) | Used for receiving notifications from the SpeechRecognizer when the recognition related events occur. |
-| [RecognitionSupportCallback](https://developer.android.com/reference/kotlin/android/speech/RecognitionSupportCallback) | Used for receiving notifications from the SpeechRecognizer about the device support status for the given recognition request. |
+| [RecognitionListener](../android/speech/RecognitionListener.md) | Used for receiving notifications from the SpeechRecognizer when the recognition related events occur. |
+| [RecognitionSupportCallback](../android/speech/RecognitionSupportCallback.md) | Used for receiving notifications from the SpeechRecognizer about the device support status for the given recognition request. |
 
 ## Classes
 
-| [AlternativeSpan](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpan) | List of alternative hypotheses for a specific span of a speech recognition result string. |
+| [AlternativeSpan](../android/speech/AlternativeSpan.md) | List of alternative hypotheses for a specific span of a speech recognition result string. |
 | --- | --- |
-| [AlternativeSpans](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans) | List of [AlternativeSpan](https://developer.android.com/reference/kotlin/android/speech/AlternativeSpan) for a specific speech recognition result. |
-| [RecognitionPart](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart) | Info about a single recognition part. |
-| [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) | This class provides a base class for recognition service implementations. |
+| [AlternativeSpans](../android/speech/AlternativeSpans.md) | List of [AlternativeSpan](../android/speech/AlternativeSpan.md) for a specific speech recognition result. |
+| [RecognitionPart](../android/speech/RecognitionPart.md) | Info about a single recognition part. |
+| [RecognitionService](../android/speech/RecognitionService.md) | This class provides a base class for recognition service implementations. |
 | --- | --- |
-| [RecognitionSupport](https://developer.android.com/reference/kotlin/android/speech/RecognitionSupport) | Encodes the level of support for a given speech recognition request |
-| [RecognizerIntent](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent) | Constants for supporting speech recognition through starting an [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) |
-| [RecognizerResultsIntent](https://developer.android.com/reference/kotlin/android/speech/RecognizerResultsIntent) | Constants for intents related to showing speech recognition results. |
+| [RecognitionSupport](../android/speech/RecognitionSupport.md) | Encodes the level of support for a given speech recognition request |
+| [RecognizerIntent](../android/speech/RecognizerIntent.md) | Constants for supporting speech recognition through starting an [Intent](../android/content/Intent.md) |
+| [RecognizerResultsIntent](../android/speech/RecognizerResultsIntent.md) | Constants for intents related to showing speech recognition results. |
 | --- | --- |
-| [SpeechRecognizer](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer) | This class provides access to the speech recognition service. |
+| [SpeechRecognizer](../android/speech/SpeechRecognizer.md) | This class provides access to the speech recognition service. |

@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class Override
 ```
 
-| [java.lang.Override](https://developer.android.com/reference/kotlin/java/lang/Override#) |
+| [java.lang.Override](../java/lang/Override.md) |
 
 Indicates that a method declaration is intended to override a method declaration in a supertype. If a method is annotated with this annotation type compilers are required to generate an error message unless at least one of the following conditions hold:
 
 - The method does override or implement a method declared in a supertype.
-- The method has a signature that is override-equivalent to that of any public method declared in [Object](https://developer.android.com/reference/kotlin/java/lang/Object).
+- The method has a signature that is override-equivalent to that of any public method declared in [Object](../java/lang/Object.md).
 
 <br />
 
@@ -21,7 +21,7 @@ Indicates that a method declaration is intended to override a method declaration
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Override](https://developer.android.com/reference/kotlin/java/lang/Override#Override())`()` Indicates that a method declaration is intended to override a method declaration in a supertype. |
+| [Override](../java/lang/Override.md))`()` Indicates that a method declaration is intended to override a method declaration in a supertype. |
 
 ## Public constructors
 
@@ -36,6 +36,6 @@ Override()
 Indicates that a method declaration is intended to override a method declaration in a supertype. If a method is annotated with this annotation type compilers are required to generate an error message unless at least one of the following conditions hold:
 
 - The method does override or implement a method declared in a supertype.
-- The method has a signature that is override-equivalent to that of any public method declared in [Object](https://developer.android.com/reference/kotlin/java/lang/Object).
+- The method has a signature that is override-equivalent to that of any public method declared in [Object](../java/lang/Object.md).
 
 <br />

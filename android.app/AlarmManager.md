@@ -8,7 +8,7 @@ open class AlarmManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.AlarmManager](https://developer.android.com/reference/kotlin/android/app/AlarmManager#) |
+| ↳ | [android.app.AlarmManager](../android/app/AlarmManager.md) |
 
 This class provides access to the system alarm services. These allow you to schedule your application to be run at some point in the future. When an alarm goes off, the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that had been registered for it is broadcast by the system, automatically starting the target application if it is not already running. Registered alarms are retained while the device is asleep (and can optionally wake the device up if they go off during that time), but will be cleared if it is turned off and rebooted.
 
@@ -49,7 +49,7 @@ The Alarm Manager holds a CPU wake lock as long as the alarm receiver's onReceiv
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlarmManager#cancel(android.app.PendingIntent)(operation: https://developer.android.com/reference/kotlin/android/app/PendingIntent)` Remove any alarms with a matching `https://developer.android.com/reference/kotlin/android/content/Intent.html#`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlarmManager#cancelAll()()` Remove all alarms previously set by the caller, if any. |
-| open [AlarmManager.AlarmClockInfo](https://developer.android.com/reference/kotlin/android/app/AlarmManager.AlarmClockInfo)! | `https://developer.android.com/reference/kotlin/android/app/AlarmManager#getNextAlarmClock()()` Gets information about the next alarm clock currently scheduled. |
+| open [AlarmManager.AlarmClockInfo](../android/app/AlarmManager.AlarmClockInfo.md)! | `https://developer.android.com/reference/kotlin/android/app/AlarmManager#getNextAlarmClock()()` Gets information about the next alarm clock currently scheduled. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlarmManager#set(kotlin.Int,%20kotlin.Long,%20android.app.PendingIntent)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, triggerAtMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, operation: https://developer.android.com/reference/kotlin/android/app/PendingIntent)` Schedule an alarm. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlarmManager#set(kotlin.Int,%20kotlin.Long,%20kotlin.String,%20android.app.AlarmManager.OnAlarmListener,%20android.os.Handler)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, triggerAtMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, listener: https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener, targetHandler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Direct callback version of `https://developer.android.com/reference/kotlin/android/app/AlarmManager#set(kotlin.Int,%20kotlin.Long,%20android.app.PendingIntent)`. |
@@ -261,7 +261,7 @@ Remove any alarm scheduled to be delivered to the given `https://developer.andro
 
 | Parameters ||
 |---|---|
-| `listener` | [AlarmManager.OnAlarmListener](https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener): OnAlarmListener instance that is the target of a currently-set alarm. This value cannot be `null`. |
+| `listener` | [AlarmManager.OnAlarmListener](../android/app/AlarmManager.OnAlarmListener.md): OnAlarmListener instance that is the target of a currently-set alarm. This value cannot be `null`. |
 
 ### cancel
 
@@ -275,7 +275,7 @@ Remove any alarms with a matching `https://developer.android.com/reference/kotli
 
 | Parameters ||
 |---|---|
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): IntentSender which matches a previously added IntentSender. This parameter must not be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): IntentSender which matches a previously added IntentSender. This parameter must not be `null`. |
 
 **See Also**
 
@@ -340,7 +340,7 @@ Alarm intents are delivered with a data extra of type int called `https://develo
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): type of alarm. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME:kotlin.Int` |
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds that the alarm should go off, using the appropriate clock (depending on the alarm type). |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
@@ -369,7 +369,7 @@ open fun set(
 
 Direct callback version of `https://developer.android.com/reference/kotlin/android/app/AlarmManager#set(kotlin.Int,%20kotlin.Long,%20android.app.PendingIntent)`. Rather than supplying a PendingIntent to be sent when the alarm time is reached, this variant supplies an `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance that will be invoked at that time.
 
-Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](https://developer.android.com/reference/kotlin/android/app/AlarmManager#cancel(android.app.AlarmManager.OnAlarmListener)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
+Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](../android/app/AlarmManager.md)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
 
 The OnAlarmListener's `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be invoked via the specified target Handler, or on the application's main looper if `null` is passed as the `targetHandler` parameter.
 
@@ -379,8 +379,8 @@ The OnAlarmListener's `https://developer.android.com/reference/kotlin/android/ap
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds that the alarm should go off, using the appropriate clock (depending on the alarm type). |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: string describing the alarm, used for logging and battery-use attribution. This value may be `null`. |
 | --- | --- |
-| `listener` | [AlarmManager.OnAlarmListener](https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener): `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance whose `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be called when the alarm time is reached. A given OnAlarmListener instance can only be the target of a single pending alarm, just as a given PendingIntent can only be used with one alarm at a time. This value cannot be `null`. |
-| `targetHandler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` on which to execute the listener's onAlarm() callback, or `null` to run that callback on the main looper. |
+| `listener` | [AlarmManager.OnAlarmListener](../android/app/AlarmManager.OnAlarmListener.md): `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance whose `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be called when the alarm time is reached. A given OnAlarmListener instance can only be the target of a single pending alarm, just as a given PendingIntent can only be used with one alarm at a time. This value cannot be `null`. |
+| `targetHandler` | [Handler](../android/os/Handler.md)?: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` on which to execute the listener's onAlarm() callback, or `null` to run that callback on the main looper. |
 
 ### setAlarmClock
 
@@ -408,8 +408,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `info` | [AlarmManager.AlarmClockInfo](https://developer.android.com/reference/kotlin/android/app/AlarmManager.AlarmClockInfo): This value cannot be `null`. |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `info` | [AlarmManager.AlarmClockInfo](../android/app/AlarmManager.AlarmClockInfo.md): This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 
 **See Also**
 
@@ -444,7 +444,7 @@ Regardless of the app's target SDK version, this call always allows batching of 
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): type of alarm. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME:kotlin.Int` |
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds that the alarm should go off, using the appropriate clock (depending on the alarm type). |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
@@ -482,7 +482,7 @@ This method is like `https://developer.android.com/reference/kotlin/android/app/
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): type of alarm. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME:kotlin.Int` |
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds that the alarm should go off, using the appropriate clock (depending on the alarm type). |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
@@ -511,7 +511,7 @@ open fun setExact(
 
 Direct callback version of `https://developer.android.com/reference/kotlin/android/app/AlarmManager#setExact(kotlin.Int,%20kotlin.Long,%20android.app.PendingIntent)`. Rather than supplying a PendingIntent to be sent when the alarm time is reached, this variant supplies an `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance that will be invoked at that time.
 
-Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](https://developer.android.com/reference/kotlin/android/app/AlarmManager#cancel(android.app.AlarmManager.OnAlarmListener)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
+Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](../android/app/AlarmManager.md)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
 
 The OnAlarmListener's `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be invoked via the specified target Handler, or on the application's main looper if `null` is passed as the `targetHandler` parameter.
 
@@ -523,9 +523,9 @@ On previous android versions `https://developer.android.com/reference/kotlin/and
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME:kotlin.Int` |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `listener` | [AlarmManager.OnAlarmListener](https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener): This value cannot be `null`. |
+| `listener` | [AlarmManager.OnAlarmListener](../android/app/AlarmManager.OnAlarmListener.md): This value cannot be `null`. |
 | --- | --- |
-| `targetHandler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: This value may be `null`. |
+| `targetHandler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
 
 ### setExactAndAllowWhileIdle
 
@@ -557,7 +557,7 @@ Alarms scheduled via this API will be allowed to start a foreground service even
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): type of alarm. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME:kotlin.Int` |
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds that the alarm should go off, using the appropriate clock (depending on the alarm type). |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
@@ -586,7 +586,7 @@ open fun setExactAndAllowWhileIdle(
 
 Like `https://developer.android.com/reference/kotlin/android/app/AlarmManager#setExact(kotlin.Int,%20kotlin.Long,%20kotlin.String,%20android.app.AlarmManager.OnAlarmListener,%20android.os.Handler)`, but this alarm will be allowed to execute even when the system is in low-power idle modes.
 
-Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](https://developer.android.com/reference/kotlin/android/app/AlarmManager#cancel(android.app.AlarmManager.OnAlarmListener)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
+Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](../android/app/AlarmManager.md)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
 
 | Parameters ||
 |---|---|
@@ -594,8 +594,8 @@ Listener based alarms may be canceled by the Android system whenever the calling
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The exact time in milliseconds, that the alarm should be delivered, expressed in the appropriate clock's units (depending on the alarm type). |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A string tag used to identify this alarm in logs and battery-attribution. This value cannot be `null`. |
 | --- | --- |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to execute the listener's onAlarm() callback. This value cannot be `null`. |
-| `listener` | [AlarmManager.OnAlarmListener](https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener): `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance whose `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be called when the alarm time is reached. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to execute the listener's onAlarm() callback. This value cannot be `null`. |
+| `listener` | [AlarmManager.OnAlarmListener](../android/app/AlarmManager.OnAlarmListener.md): `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance whose `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be called when the alarm time is reached. This value cannot be `null`. |
 
 ### setInexactRepeating
 
@@ -624,7 +624,7 @@ Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds that the alarm should first go off, using the appropriate clock (depending on the alarm type). This is inexact: the alarm will not fire before this time, but there may be a delay of almost an entire alarm interval before the first invocation of the alarm. |
 | `intervalMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): interval in milliseconds between subsequent repeats of the alarm. Prior to API 19, if this is one of INTERVAL_FIFTEEN_MINUTES, INTERVAL_HALF_HOUR, INTERVAL_HOUR, INTERVAL_HALF_DAY, or INTERVAL_DAY then the alarm will be phase-aligned with other alarms to reduce the number of wakeups. Otherwise, the alarm will be set as though the application had called `https://developer.android.com/reference/kotlin/android/app/AlarmManager#setRepeating(kotlin.Int,%20kotlin.Long,%20kotlin.Long,%20android.app.PendingIntent)`. As of API 19, all repeating alarms will be inexact and subject to batching with other alarms regardless of their stated repeat interval. |
 | --- | --- |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 
 **See Also**
 
@@ -672,7 +672,7 @@ Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.
 | `triggerAtMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds that the alarm should first go off, using the appropriate clock (depending on the alarm type). |
 | `intervalMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): interval in milliseconds between subsequent repeats of the alarm. |
 | --- | --- |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 
 **See Also**
 
@@ -743,7 +743,7 @@ When precise delivery is not required, applications should use the standard `htt
 | `windowStartMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The earliest time, in milliseconds, that the alarm should be delivered, expressed in the appropriate clock's units (depending on the alarm type). |
 | `windowLengthMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The length of the requested delivery window, in milliseconds. The alarm will be delivered no later than this many milliseconds after `windowStartMillis`. Note that this parameter is a *duration,* not the timestamp of the end of the window. |
 | --- | --- |
-| `operation` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the alarm goes off; typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
 
 **See Also**
 
@@ -771,7 +771,7 @@ open fun setWindow(
 
 Direct callback version of `https://developer.android.com/reference/kotlin/android/app/AlarmManager#setWindow(kotlin.Int,%20kotlin.Long,%20kotlin.Long,%20android.app.PendingIntent)`. Rather than supplying a PendingIntent to be sent when the alarm time is reached, this variant supplies an `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance that will be invoked at that time.
 
-Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](https://developer.android.com/reference/kotlin/android/app/AlarmManager#cancel(android.app.AlarmManager.OnAlarmListener)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
+Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](../android/app/AlarmManager.md)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
 
 The OnAlarmListener `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be invoked via the specified target Handler, or on the application's main looper if `null` is passed as the `targetHandler` parameter.
 
@@ -781,9 +781,9 @@ Note: Starting with API `https://developer.android.com/reference/kotlin/android/
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME:kotlin.Int` |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `listener` | [AlarmManager.OnAlarmListener](https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener): This value cannot be `null`. |
+| `listener` | [AlarmManager.OnAlarmListener](../android/app/AlarmManager.OnAlarmListener.md): This value cannot be `null`. |
 | --- | --- |
-| `targetHandler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: This value may be `null`. |
+| `targetHandler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -806,7 +806,7 @@ open fun setWindow(
 
 Direct callback version of `https://developer.android.com/reference/kotlin/android/app/AlarmManager#setWindow(kotlin.Int,%20kotlin.Long,%20kotlin.Long,%20android.app.PendingIntent)`. Rather than supplying a PendingIntent to be sent when the alarm time is reached, this variant supplies an `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener` instance that will be invoked at that time.
 
-Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](https://developer.android.com/reference/kotlin/android/app/AlarmManager#cancel(android.app.AlarmManager.OnAlarmListener)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
+Listener based alarms may be canceled by the Android system whenever the calling process no longer has any components running, such as `https://developer.android.com/reference/kotlin/android/app/Activity`, `https://developer.android.com/reference/kotlin/android/app/Service`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`, so only use these APIs when you do not need to receive alarms after the current component finishes, and also make sure to [cancel(OnAlarmListener)](../android/app/AlarmManager.md)) them when it does. For example, if you use these APIs from an Activity, make sure to cancel the respective alarms when the activity finishes. If you need to receive the alarm even after that, use the PendingIntent based APIs.
 
 The OnAlarmListener `https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener#onAlarm()` method will be invoked via the specified target Executor.
 
@@ -816,9 +816,9 @@ Note: Starting with API `https://developer.android.com/reference/kotlin/android/
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#RTC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME_WAKEUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AlarmManager#ELAPSED_REALTIME:kotlin.Int` |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. |
 | --- | --- |
-| `listener` | [AlarmManager.OnAlarmListener](https://developer.android.com/reference/kotlin/android/app/AlarmManager.OnAlarmListener): This value cannot be `null`. |
+| `listener` | [AlarmManager.OnAlarmListener](../android/app/AlarmManager.OnAlarmListener.md): This value cannot be `null`. |
 
 **See Also**
 

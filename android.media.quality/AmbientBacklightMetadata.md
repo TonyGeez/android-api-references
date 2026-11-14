@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # AmbientBacklightMetadata
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/quality/AmbientBacklightMetadata "View this page in Java")
+Kotlin | [Java](../android/media/quality/AmbientBacklightMetadata.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AmbientBacklightMetadata : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.quality.AmbientBacklightMetadata](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#) |
+| ↳ | [android.media.quality.AmbientBacklightMetadata](../android/media/quality/AmbientBacklightMetadata.md) |
 
 Metadata of ambient backlight.
 
@@ -50,7 +50,7 @@ A metadata instance is sent from ambient backlight hardware in a `https://develo
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AmbientBacklightMetadata](https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AmbientBacklightMetadata](../android/media/quality/AmbientBacklightMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/AmbientBacklightMetadata#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -254,7 +254,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

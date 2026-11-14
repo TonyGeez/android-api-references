@@ -2,7 +2,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # SuggestionRangeSpan
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/style/SuggestionRangeSpan "View this page in Java")
+Kotlin | [Java](../android/text/style/SuggestionRangeSpan.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class SuggestionRangeSpan : CharacterStyle, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) ||
-| | ↳ | [android.text.style.SuggestionRangeSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionRangeSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) ||
+| | ↳ | [android.text.style.SuggestionRangeSpan](../android/text/style/SuggestionRangeSpan.md) |
 
 A SuggestionRangeSpan is used to show which part of an EditText is affected by a suggestion popup window.
 
@@ -39,7 +39,7 @@ A SuggestionRangeSpan is used to show which part of an EditText is affected by a
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SuggestionRangeSpan](https://developer.android.com/reference/kotlin/android/text/style/SuggestionRangeSpan#)!\> | `https://developer.android.com/reference/kotlin/android/text/style/SuggestionRangeSpan#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SuggestionRangeSpan](../android/text/style/SuggestionRangeSpan.md)!\> | `https://developer.android.com/reference/kotlin/android/text/style/SuggestionRangeSpan#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -103,7 +103,7 @@ fun updateDrawState(tp: TextPaint): Unit
 
 | Parameters ||
 |---|---|
-| `tp` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#): This value cannot be `null`. |
+| `tp` | [TextPaint](../android/text/TextPaint.md): This value cannot be `null`. |
 
 ### writeToParcel
 
@@ -120,7 +120,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

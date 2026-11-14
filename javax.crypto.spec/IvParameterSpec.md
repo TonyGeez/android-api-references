@@ -10,7 +10,7 @@ open class IvParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.IvParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/IvParameterSpec#) |
+| ↳ | [javax.crypto.spec.IvParameterSpec](../javax/crypto/spec/IvParameterSpec.md) |
 
 This class specifies an*initialization vector*(IV). Examples which use IVs are ciphers in feedback mode, e.g., DES in CBC mode and RSA ciphers with OAEP encoding operation.
 
@@ -18,12 +18,12 @@ This class specifies an*initialization vector*(IV). Examples which use IVs are c
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IvParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/IvParameterSpec#IvParameterSpec(kotlin.ByteArray))`(`iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an IvParameterSpec object using the bytes in`iv`as the IV. |
-| [IvParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/IvParameterSpec#IvParameterSpec(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an IvParameterSpec object using the first`len`bytes in`iv`, beginning at`offset`inclusive, as the IV. |
+| [IvParameterSpec](../javax/crypto/spec/IvParameterSpec.md))`(`iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an IvParameterSpec object using the bytes in`iv`as the IV. |
+| [IvParameterSpec](../javax/crypto/spec/IvParameterSpec.md))`(`iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an IvParameterSpec object using the first`len`bytes in`iv`, beginning at`offset`inclusive, as the IV. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](https://developer.android.com/reference/kotlin/javax/crypto/spec/IvParameterSpec#getIV())`()` Returns the initialization vector (IV). |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](../javax/crypto/spec/IvParameterSpec.md))`()` Returns the initialization vector (IV). |
 
 ## Public constructors
 

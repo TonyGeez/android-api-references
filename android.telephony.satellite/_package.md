@@ -2,15 +2,15 @@
 
 # android.telephony.satellite
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/satellite/package-summary "View this page in Java")
+Kotlin| [Java](../android/telephony/satellite/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [SatelliteStateChangeListener](https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteStateChangeListener) | A listener interface to monitor satellite state change events. |
+| [SatelliteStateChangeListener](../android/telephony/satellite/SatelliteStateChangeListener.md) | A listener interface to monitor satellite state change events. |
 | --- | --- |
 
 ## Classes
 
-| [SatelliteManager](https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager) | Manages satellite states such as monitoring enabled state and operations such as provisioning, pointing, messaging, location sharing, etc. |
+| [SatelliteManager](../android/telephony/satellite/SatelliteManager.md) | Manages satellite states such as monitoring enabled state and operations such as provisioning, pointing, messaging, location sharing, etc. |
 | --- | --- |

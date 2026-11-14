@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DHKey
 ```
 
-| [javax.crypto.interfaces.DHKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/DHKey#) |
+| [javax.crypto.interfaces.DHKey](../javax/crypto/interfaces/DHKey.md) |
 
-| Known Direct Subclasses [DHPrivateKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/DHPrivateKey), [DHPublicKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/DHPublicKey) |-----------------------------------------------------------------------------------------------------|------------------------------------------------| | [DHPrivateKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/DHPrivateKey) | The interface to a Diffie-Hellman private key. | | [DHPublicKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/DHPublicKey) | The interface to a Diffie-Hellman public key. | |
+| Known Direct Subclasses [DHPrivateKey](../javax/crypto/interfaces/DHPrivateKey.md), [DHPublicKey](../javax/crypto/interfaces/DHPublicKey.md) |-----------------------------------------------------------------------------------------------------|------------------------------------------------| | [DHPrivateKey](../javax/crypto/interfaces/DHPrivateKey.md) | The interface to a Diffie-Hellman private key. | | [DHPublicKey](../javax/crypto/interfaces/DHPublicKey.md) | The interface to a Diffie-Hellman public key. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The interface to a Diffie-Hellman key.
@@ -19,7 +19,7 @@ The interface to a Diffie-Hellman key.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [DHParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHParameterSpec.html#)! | [getParams](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/DHKey#getParams())`()` Returns the key parameters. |
+| abstract [DHParameterSpec](../javax/crypto/spec/DHParameterSpec.md)! | [getParams](../javax/crypto/interfaces/DHKey.md))`()` Returns the key parameters. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Returns the key parameters.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|--------------------|
-| [DHParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DHParameterSpec.html#)! | the key parameters |
+| [DHParameterSpec](../javax/crypto/spec/DHParameterSpec.md)! | the key parameters |

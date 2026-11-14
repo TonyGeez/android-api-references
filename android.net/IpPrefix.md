@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # IpPrefix
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/IpPrefix "View this page in Java") 
+Kotlin| [Java](../android/net/IpPrefix.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class IpPrefix : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix#) |
+| ↳ | [android.net.IpPrefix](../android/net/IpPrefix.md) |
 
 This class represents an IP prefix, i.e., a contiguous block of IP addresses aligned on a power of two boundary (also known as an "IP subnet"). A prefix is specified by two pieces of information:
 
@@ -28,30 +28,30 @@ For example, the prefix`192.0.2.0/24`covers the 256 IPv4 addresses from`192.0.2.
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix#IpPrefix(java.net.InetAddress,%20kotlin.Int))`(`address:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)`, `prefixLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`IpPrefix`from an IPv4 or IPv6 address and a prefix length. |
+| [IpPrefix](../android/net/IpPrefix.md))`(`address:` ` [InetAddress](../java/net/InetAddress.md)`, `prefixLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`IpPrefix`from an IPv4 or IPv6 address and a prefix length. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/android/net/IpPrefix#contains(java.net.InetAddress))`(`address:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)`)` Determines whether the prefix contains the specified address. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/IpPrefix#describeContents())`()` Implement the Parcelable interface. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/IpPrefix#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`IpPrefix`object against the specified object in`obj`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../android/net/IpPrefix.md))`(`address:` ` [InetAddress](../java/net/InetAddress.md)`)` Determines whether the prefix contains the specified address. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/IpPrefix.md))`()` Implement the Parcelable interface. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/IpPrefix.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`IpPrefix`object against the specified object in`obj`. |
 | --- | --- |
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | [getAddress](https://developer.android.com/reference/kotlin/android/net/IpPrefix#getAddress())`()` Returns a copy of the first IP address in the prefix. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrefixLength](https://developer.android.com/reference/kotlin/android/net/IpPrefix#getPrefixLength())`()` Returns the prefix length of this`IpPrefix`. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getRawAddress](https://developer.android.com/reference/kotlin/android/net/IpPrefix#getRawAddress())`()` Returns a copy of the IP address bytes in network order (the highest order byte is the zeroth element). |
+| [InetAddress](../java/net/InetAddress.md) | [getAddress](../android/net/IpPrefix.md))`()` Returns a copy of the first IP address in the prefix. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrefixLength](../android/net/IpPrefix.md))`()` Returns the prefix length of this`IpPrefix`. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getRawAddress](../android/net/IpPrefix.md))`()` Returns a copy of the IP address bytes in network order (the highest order byte is the zeroth element). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/IpPrefix#hashCode())`()` Gets the hashcode of the represented IP prefix. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/IpPrefix#toString())`()` Returns a string representation of this`IpPrefix`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/IpPrefix#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/IpPrefix.md))`()` Gets the hashcode of the represented IP prefix. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/IpPrefix.md))`()` Returns a string representation of this`IpPrefix`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/IpPrefix.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface. |
 | --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [IpPrefix](https://developer.android.com/reference/kotlin/android/net/IpPrefix#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/IpPrefix#CREATOR:android.os.Parcelable.Creator) Implement the Parcelable interface. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [IpPrefix](../android/net/IpPrefix.md)!\> | [CREATOR](../android/net/IpPrefix.md) Implement the Parcelable interface. |
 
 ## Public constructors
 
@@ -69,7 +69,7 @@ Constructs a new`IpPrefix`from an IPv4 or IPv6 address and a prefix length. Sile
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `address` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#):the IP address. Must be non-null. |
+| `address` | [InetAddress](../java/net/InetAddress.md):the IP address. Must be non-null. |
 | `prefixLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the prefix length. Must be \>= 0 and \<= (32 or 128) (IPv4 or IPv6). Value is between 0 and 128 inclusive |
 
 ## Public methods
@@ -86,7 +86,7 @@ Determines whether the prefix contains the specified address.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `address` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#):An [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) to test. This value cannot be`null`. |
+| `address` | [InetAddress](../java/net/InetAddress.md):An [InetAddress](../java/net/InetAddress.md) to test. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -104,7 +104,7 @@ Implement the Parcelable interface.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -136,7 +136,7 @@ Returns a copy of the first IP address in the prefix. Modifying the returned obj
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | the address in the form of a byte array. This value cannot be`null`. |
+| [InetAddress](../java/net/InetAddress.md) | the address in the form of a byte array. This value cannot be`null`. |
 
 ### getPrefixLength
 
@@ -209,8 +209,8 @@ Implement the Parcelable interface.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

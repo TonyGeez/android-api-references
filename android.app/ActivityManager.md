@@ -8,7 +8,7 @@ open class ActivityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.ActivityManager](https://developer.android.com/reference/kotlin/android/app/ActivityManager#) |
+| ↳ | [android.app.ActivityManager](../android/app/ActivityManager.md) |
 
 This class gives information about, and interacts with, activities, services, and the containing process.
 
@@ -59,12 +59,12 @@ In some special use cases, where an app interacts with its Task stack, the app m
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#clearWatchHeapLimit()()` Clear a heap watch limit previously set by `https://developer.android.com/reference/kotlin/android/app/ActivityManager#setWatchHeapLimit(kotlin.Long)`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#dumpPackageState(java.io.FileDescriptor,%20kotlin.String)(fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Perform a system dump of various state associated with the given application package name. |
-| open [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getAppTaskThumbnailSize()()` Return the current design dimensions for `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask` thumbnails, for use with `https://developer.android.com/reference/kotlin/android/app/ActivityManager#addAppTask(android.app.Activity,%20android.content.Intent,%20android.app.ActivityManager.TaskDescription,%20android.graphics.Bitmap)`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.AppTask](https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getAppTasks()()` Get the list of tasks associated with the calling application. |
+| open [Size](../android/util/Size.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getAppTaskThumbnailSize()()` Return the current design dimensions for `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask` thumbnails, for use with `https://developer.android.com/reference/kotlin/android/app/ActivityManager#addAppTask(android.app.Activity,%20android.content.Intent,%20android.app.ActivityManager.TaskDescription,%20android.graphics.Bitmap)`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.AppTask](../android/app/ActivityManager.AppTask.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getAppTasks()()` Get the list of tasks associated with the calling application. |
 | --- | --- |
-| open [ConfigurationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo.html#)! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getDeviceConfigurationInfo()()` Get the device configuration attributes. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationExitInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo)!\> | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getHistoricalProcessExitReasons(kotlin.String,%20kotlin.Int,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo` records containing the reasons for the most recent app deaths. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationStartInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo)!\> | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getHistoricalProcessStartReasons(kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo` records containing the information about the most recent app startups. |
+| open [ConfigurationInfo](../android/content/pm/ConfigurationInfo.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getDeviceConfigurationInfo()()` Get the device configuration attributes. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationExitInfo](../android/app/ApplicationExitInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getHistoricalProcessExitReasons(kotlin.String,%20kotlin.Int,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo` records containing the reasons for the most recent app deaths. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationStartInfo](../android/app/ApplicationStartInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getHistoricalProcessStartReasons(kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo` records containing the information about the most recent app startups. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getLargeMemoryClass()()` Return the approximate per-application memory class of the current device when an application is running with a large heap. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getLauncherLargeIconDensity()()` Get the preferred density of icons for the launcher. |
@@ -75,15 +75,15 @@ In some special use cases, where an app interacts with its Task stack, the app m
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getMemoryInfo(android.app.ActivityManager.MemoryInfo)(outInfo: https://developer.android.com/reference/kotlin/android/app/ActivityManager.MemoryInfo!)` Return general information about the memory state of the system. |
 | --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getMyMemoryState(android.app.ActivityManager.RunningAppProcessInfo)(outState: https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningAppProcessInfo!)` Return global memory state information for the calling process. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Debug.MemoryInfo](https://developer.android.com/reference/kotlin/android/os/Debug.MemoryInfo.html#)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getProcessMemoryInfo(kotlin.IntArray)(pids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Return information about the memory usage of one or more processes. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.ProcessErrorStateInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.ProcessErrorStateInfo)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getProcessesInErrorState()()` Returns a list of any processes that are currently in an error condition. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Debug.MemoryInfo](../android/os/Debug.MemoryInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getProcessMemoryInfo(kotlin.IntArray)(pids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Return information about the memory usage of one or more processes. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.ProcessErrorStateInfo](../android/app/ActivityManager.ProcessErrorStateInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getProcessesInErrorState()()` Returns a list of any processes that are currently in an error condition. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RecentTaskInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RecentTaskInfo)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRecentTasks(kotlin.Int,%20kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RunningAppProcessInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningAppProcessInfo)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningAppProcesses()()` Returns a list of application processes that are running on the device. |
-| open [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent)! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningServiceControlPanel(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Returns a PendingIntent you can start to show a control panel for the given running service. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RecentTaskInfo](../android/app/ActivityManager.RecentTaskInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRecentTasks(kotlin.Int,%20kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RunningAppProcessInfo](../android/app/ActivityManager.RunningAppProcessInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningAppProcesses()()` Returns a list of application processes that are running on the device. |
+| open [PendingIntent](../android/app/PendingIntent.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningServiceControlPanel(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Returns a PendingIntent you can start to show a control panel for the given running service. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RunningServiceInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningServiceInfo)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningServices(kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of the services that are currently running. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RunningTaskInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningTaskInfo)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningTasks(kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of the tasks that are currently running, with the most recent being first and older ones after in order. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RunningServiceInfo](../android/app/ActivityManager.RunningServiceInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningServices(kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of the services that are currently running. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActivityManager.RunningTaskInfo](../android/app/ActivityManager.RunningTaskInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getRunningTasks(kotlin.Int)(maxNum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of the tasks that are currently running, with the most recent being first and older ones after in order. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#isActivityStartAllowedOnDisplay(android.content.Context,%20kotlin.Int,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Check if the context is allowed to start an activity on specified display. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityManager#isBackgroundRestricted()()` Query whether the user has enabled background restrictions for this app. |
@@ -238,11 +238,11 @@ Add a new `https://developer.android.com/reference/kotlin/android/app/ActivityMa
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity): The activity that is adding the entry. This is used to help determine the context that the new recents entry will be in. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The Intent that describes the recents entry. This is the same Intent that you would have used to launch the activity for it. In generally you will want to set both `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_RETAIN_IN_RECENTS:kotlin.Int`; the latter is required since this recents entry will exist without an activity, so it doesn't make sense to not retain it when its activity disappears. The given Intent here also must have an explicit ComponentName set on it. This value cannot be `null`. |
-| `description` | [ActivityManager.TaskDescription](https://developer.android.com/reference/kotlin/android/app/ActivityManager.TaskDescription)?: Optional additional description information. This value may be `null`. |
+| `activity` | [Activity](../android/app/Activity.md): The activity that is adding the entry. This is used to help determine the context that the new recents entry will be in. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The Intent that describes the recents entry. This is the same Intent that you would have used to launch the activity for it. In generally you will want to set both `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_RETAIN_IN_RECENTS:kotlin.Int`; the latter is required since this recents entry will exist without an activity, so it doesn't make sense to not retain it when its activity disappears. The given Intent here also must have an explicit ComponentName set on it. This value cannot be `null`. |
+| `description` | [ActivityManager.TaskDescription](../android/app/ActivityManager.TaskDescription.md)?: Optional additional description information. This value may be `null`. |
 | --- | --- |
-| `thumbnail` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#): Thumbnail to use for the recents entry. Should be the size given by `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getAppTaskThumbnailSize()`. If the bitmap is not that exact size, it will be recreated in your process, probably in a way you don't like, before the recents entry is added. This value cannot be `null`. |
+| `thumbnail` | [Bitmap](../android/graphics/Bitmap.md): Thumbnail to use for the recents entry. Should be the size given by `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getAppTaskThumbnailSize()`. If the bitmap is not that exact size, it will be recreated in your process, probably in a way you don't like, before the recents entry is added. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -265,8 +265,8 @@ Note: callback is asynchronous and should be made from a background thread.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor on which the listener should be called. This value cannot be `null`. |
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [ApplicationStartInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo)!\>: Callback to be called when collection of `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo` is complete. Will replace existing listener if one is already attached. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the listener should be called. This value cannot be `null`. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [ApplicationStartInfo](../android/app/ApplicationStartInfo.md)!\>: Callback to be called when collection of `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo` is complete. Will replace existing listener if one is already attached. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -348,7 +348,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The file descriptor that the dump should be written to. The file descriptor is *not* closed by this function; the caller continues to own it. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The file descriptor that the dump should be written to. The file descriptor is *not* closed by this function; the caller continues to own it. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the package that is to be dumped. |
 
 ### getAppTaskThumbnailSize
@@ -676,9 +676,9 @@ Check if the context is allowed to start an activity on specified display. Some 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): Source context, from which an activity will be started. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): Source context, from which an activity will be started. This value cannot be `null`. |
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Target display id. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): Intent used to launch an activity. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): Intent used to launch an activity. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -845,7 +845,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 |---|---|
 | `taskId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The identifier of the task to be moved, as found in `https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningTaskInfo` or `https://developer.android.com/reference/kotlin/android/app/ActivityManager.RecentTaskInfo`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional operational flags. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/ActivityManager#MOVE_TASK_WITH_HOME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/ActivityManager#MOVE_TASK_NO_USER_ACTION:kotlin.Int` |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Additional options for the operation, either null or as per `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)`. |
+| `options` | [Bundle](../android/os/Bundle.md)!: Additional options for the operation, either null or as per `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)`. |
 | --- | --- |
 
 ### registerAnrWarningListener
@@ -869,8 +869,8 @@ The app can unregister the listener using `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor on which listener will be invoked. This should not be the application's main thread. This value cannot be `null`. |
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [AnrWarningResult](https://developer.android.com/reference/kotlin/android/app/AnrWarningResult)!\>: The listener to be triggered on the ANR warning condition. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which listener will be invoked. This should not be the application's main thread. This value cannot be `null`. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [AnrWarningResult](../android/app/AnrWarningResult.md)!\>: The listener to be triggered on the ANR warning condition. This value cannot be `null`. |
 
 ### removeApplicationStartInfoCompletionListener
 
@@ -884,7 +884,7 @@ Removes the provided callback set by `https://developer.android.com/reference/ko
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [ApplicationStartInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo)!\>: This value cannot be `null`. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [ApplicationStartInfo](../android/app/ApplicationStartInfo.md)!\>: This value cannot be `null`. |
 
 ### restartPackage
 
@@ -963,4 +963,4 @@ Unregisters a previously registered ANR warning listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [AnrWarningResult](https://developer.android.com/reference/kotlin/android/app/AnrWarningResult)!\>: The listener to unregister. This must be the same object that was previously passed to `https://developer.android.com/reference/kotlin/android/app/ActivityManager#registerAnrWarningListener(java.util.concurrent.Executor,%20java.util.function.Consumer)`. This value cannot be `null`. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [AnrWarningResult](../android/app/AnrWarningResult.md)!\>: The listener to unregister. This must be the same object that was previously passed to `https://developer.android.com/reference/kotlin/android/app/ActivityManager#registerAnrWarningListener(java.util.concurrent.Executor,%20java.util.function.Consumer)`. This value cannot be `null`. |

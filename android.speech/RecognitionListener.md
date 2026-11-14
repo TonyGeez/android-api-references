@@ -2,14 +2,14 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # RecognitionListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/speech/RecognitionListener "View this page in Java")
+Kotlin | [Java](../android/speech/RecognitionListener.md)
 | --- | --- |
 
 ```
 interface RecognitionListener
 ```
 
-| [android.speech.RecognitionListener](https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#) |
+| [android.speech.RecognitionListener](../android/speech/RecognitionListener.md) |
 
 Used for receiving notifications from the SpeechRecognizer when the recognition related events occur. All the callbacks are executed on the Application main thread.
 
@@ -110,7 +110,7 @@ Reserved for adding future events.
 | Parameters ||
 |---|---|
 | `eventType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the type of the occurred event |
-| `params` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: a Bundle containing the passed parameters |
+| `params` | [Bundle](../android/os/Bundle.md)!: a Bundle containing the passed parameters |
 
 ### onLanguageDetection
 
@@ -128,7 +128,7 @@ To request automatic language switching, use `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `results` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the returned language detection (and switching) results. To retrieve the most confidently detected language IETF tag (as defined by BCP 47, e.g., "en-US", "de-DE"), use `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#getString(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#DETECTED_LANGUAGE:kotlin.String` as the parameter. To retrieve the language detection confidence level represented by a value prefixed by `LANGUAGE_DETECTION_CONFIDENCE_LEVEL_` and defined in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer`, use `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#getInt(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#LANGUAGE_DETECTION_CONFIDENCE_LEVEL:kotlin.String` as the parameter. To retrieve the alternative locales for the same language retrieved by the key `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#DETECTED_LANGUAGE:kotlin.String`, use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#TOP_LOCALE_ALTERNATIVES:kotlin.String` as the parameter. To retrieve the language switching results represented by a value prefixed by `LANGUAGE_SWITCH_RESULT_` and defined in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer`, use `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#getInt(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#LANGUAGE_SWITCH_RESULT:kotlin.String` as the parameter. This value cannot be `null`. |
+| `results` | [Bundle](../android/os/Bundle.md): the returned language detection (and switching) results. To retrieve the most confidently detected language IETF tag (as defined by BCP 47, e.g., "en-US", "de-DE"), use `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#getString(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#DETECTED_LANGUAGE:kotlin.String` as the parameter. To retrieve the language detection confidence level represented by a value prefixed by `LANGUAGE_DETECTION_CONFIDENCE_LEVEL_` and defined in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer`, use `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#getInt(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#LANGUAGE_DETECTION_CONFIDENCE_LEVEL:kotlin.String` as the parameter. To retrieve the alternative locales for the same language retrieved by the key `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#DETECTED_LANGUAGE:kotlin.String`, use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#TOP_LOCALE_ALTERNATIVES:kotlin.String` as the parameter. To retrieve the language switching results represented by a value prefixed by `LANGUAGE_SWITCH_RESULT_` and defined in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer`, use `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#getInt(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#LANGUAGE_SWITCH_RESULT:kotlin.String` as the parameter. This value cannot be `null`. |
 
 ### onPartialResults
 
@@ -142,7 +142,7 @@ Called when partial recognition results are available. The callback might be cal
 
 | Parameters ||
 |---|---|
-| `partialResults` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: the returned results. To retrieve the results in ArrayList\<String\> format use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` as a parameter |
+| `partialResults` | [Bundle](../android/os/Bundle.md)!: the returned results. To retrieve the results in ArrayList\<String\> format use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` as a parameter |
 
 ### onReadyForSpeech
 
@@ -156,7 +156,7 @@ Called when the endpointer is ready for the user to start speaking.
 
 | Parameters ||
 |---|---|
-| `params` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: parameters set by the recognition service. Reserved for future use. |
+| `params` | [Bundle](../android/os/Bundle.md)!: parameters set by the recognition service. Reserved for future use. |
 
 ### onResults
 
@@ -172,7 +172,7 @@ Called with the results for the full speech since `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `results` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: the recognition results. To retrieve the results in `ArrayList<String>` format use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` as a parameter. A float array of confidence values might also be given in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#CONFIDENCE_SCORES:kotlin.String`. |
+| `results` | [Bundle](../android/os/Bundle.md)!: the recognition results. To retrieve the results in `ArrayList<String>` format use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` as a parameter. A float array of confidence values might also be given in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#CONFIDENCE_SCORES:kotlin.String`. |
 
 ### onRmsChanged
 
@@ -200,4 +200,4 @@ Called for each ready segment of a recognition request. To request segmented spe
 
 | Parameters ||
 |---|---|
-| `segmentResults` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the returned results. To retrieve the results in ArrayList\<String\> format use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` as a parameter. This value cannot be `null`. |
+| `segmentResults` | [Bundle](../android/os/Bundle.md): the returned results. To retrieve the results in ArrayList\<String\> format use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getStringArrayList(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` as a parameter. This value cannot be `null`. |

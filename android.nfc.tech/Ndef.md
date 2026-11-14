@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # Ndef
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/Ndef "View this page in Java") 
+Kotlin| [Java](../android/nfc/tech/Ndef.md) 
 | --- | --- |
 
 ```
@@ -13,61 +13,61 @@ class Ndef : TagTechnology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.tech.Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) |
+| ↳ | [android.nfc.tech.Ndef](../android/nfc/tech/Ndef.md) |
 
-Provides access to NDEF content and operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#).
+Provides access to NDEF content and operations on a [Tag](../android/nfc/Tag.md).
 
-Acquire a [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) object using [get](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#get(android.nfc.Tag)).
+Acquire a [Ndef](../android/nfc/tech/Ndef.md) object using [get](../android/nfc/tech/Ndef.md)).
 
-NDEF is an NFC Forum data format. The data formats are implemented in [android.nfc.NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) and [android.nfc.NdefRecord](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord.html#). This class provides methods to retrieve and modify the [android.nfc.NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) on a tag.
+NDEF is an NFC Forum data format. The data formats are implemented in [android.nfc.NdefMessage](../android/nfc/NdefMessage.md) and [android.nfc.NdefRecord](../android/nfc/NdefRecord.md). This class provides methods to retrieve and modify the [android.nfc.NdefMessage](../android/nfc/NdefMessage.md) on a tag.
 
 There are currently four NFC Forum standardized tag types that can be formatted to contain NDEF data.
 
-- NFC Forum Type 1 Tag ([NFC_FORUM_TYPE_1](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_1:kotlin.String)), such as the Innovision Topaz
-- NFC Forum Type 2 Tag ([NFC_FORUM_TYPE_2](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_2:kotlin.String)), such as the NXP MIFARE Ultralight
-- NFC Forum Type 3 Tag ([NFC_FORUM_TYPE_3](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_3:kotlin.String)), such as Sony Felica
-- NFC Forum Type 4 Tag ([NFC_FORUM_TYPE_4](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_4:kotlin.String)), such as NXP MIFARE Desfire
+- NFC Forum Type 1 Tag ([NFC_FORUM_TYPE_1](../android/nfc/tech/Ndef.md)), such as the Innovision Topaz
+- NFC Forum Type 2 Tag ([NFC_FORUM_TYPE_2](../android/nfc/tech/Ndef.md)), such as the NXP MIFARE Ultralight
+- NFC Forum Type 3 Tag ([NFC_FORUM_TYPE_3](../android/nfc/tech/Ndef.md)), such as Sony Felica
+- NFC Forum Type 4 Tag ([NFC_FORUM_TYPE_4](../android/nfc/tech/Ndef.md)), such as NXP MIFARE Desfire
 
-It is mandatory for all Android devices with NFC to correctly enumerate [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) on NFC Forum Tag Types 1-4, and implement all NDEF operations as defined in this class.
+It is mandatory for all Android devices with NFC to correctly enumerate [Ndef](../android/nfc/tech/Ndef.md) on NFC Forum Tag Types 1-4, and implement all NDEF operations as defined in this class.
 
-Some vendors have their own well defined specifications for storing NDEF data on tags that do not fall into the above categories. Android devices with NFC should enumerate and implement [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) under these vendor specifications where possible, but it is not mandatory. [getType](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getType())returns a String describing this specification, for example [MIFARE_CLASSIC](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#MIFARE_CLASSIC:kotlin.String) is`com.nxp.ndef.mifareclassic`.
+Some vendors have their own well defined specifications for storing NDEF data on tags that do not fall into the above categories. Android devices with NFC should enumerate and implement [Ndef](../android/nfc/tech/Ndef.md) under these vendor specifications where possible, but it is not mandatory. [getType](../android/nfc/tech/Ndef.md))returns a String describing this specification, for example [MIFARE_CLASSIC](../android/nfc/tech/Ndef.md) is`com.nxp.ndef.mifareclassic`.
 
-Android devices that support MIFARE Classic must also correctly implement [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) on MIFARE Classic tags formatted to NDEF.
+Android devices that support MIFARE Classic must also correctly implement [Ndef](../android/nfc/tech/Ndef.md) on MIFARE Classic tags formatted to NDEF.
 
 For guaranteed compatibility across all Android devices with NFC, it is recommended to use NFC Forum Types 1-4 in new deployments of NFC tags with NDEF payload. Vendor NDEF formats will not work on all Android devices.
 
-**Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+**Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MIFARE_CLASSIC](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#MIFARE_CLASSIC:kotlin.String) NDEF on MIFARE Classic |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_1](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_1:kotlin.String) NFC Forum Tag Type 1 |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_2](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_2:kotlin.String) NFC Forum Tag Type 2 |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MIFARE_CLASSIC](../android/nfc/tech/Ndef.md) NDEF on MIFARE Classic |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_1](../android/nfc/tech/Ndef.md) NFC Forum Tag Type 1 |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_2](../android/nfc/tech/Ndef.md) NFC Forum Tag Type 2 |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_3](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_3:kotlin.String) NFC Forum Tag Type 3 |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_4](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_4:kotlin.String) NFC Forum Tag Type 4 |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_3](../android/nfc/tech/Ndef.md) NFC Forum Tag Type 3 |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NFC_FORUM_TYPE_4](../android/nfc/tech/Ndef.md) NFC Forum Tag Type 4 |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canMakeReadOnly](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#canMakeReadOnly())`()` Indicates whether a tag can be made read-only with [makeReadOnly()](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#makeReadOnly()). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#close())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#connect())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canMakeReadOnly](../android/nfc/tech/Ndef.md))`()` Indicates whether a tag can be made read-only with [makeReadOnly()](../android/nfc/tech/Ndef.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/nfc/tech/Ndef.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/nfc/tech/Ndef.md))`()` <br /> |
 | --- | --- |
-| static [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) for the given tag. |
-| [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)! | [getCachedNdefMessage](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getCachedNdefMessage())`()` Get the [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) that was read from the tag at discovery time. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSize](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getMaxSize())`()` Get the maximum NDEF message size in bytes. |
+| static [Ndef](../android/nfc/tech/Ndef.md)! | [get](../android/nfc/tech/Ndef.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` Get an instance of [Ndef](../android/nfc/tech/Ndef.md) for the given tag. |
+| [NdefMessage](../android/nfc/NdefMessage.md)! | [getCachedNdefMessage](../android/nfc/tech/Ndef.md))`()` Get the [NdefMessage](../android/nfc/NdefMessage.md) that was read from the tag at discovery time. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSize](../android/nfc/tech/Ndef.md))`()` Get the maximum NDEF message size in bytes. |
 | --- | --- |
-| [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)! | [getNdefMessage](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getNdefMessage())`()` Read the current [android.nfc.NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) on this tag. |
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getTag())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#getType())`()` Get the NDEF tag type. |
+| [NdefMessage](../android/nfc/NdefMessage.md)! | [getNdefMessage](../android/nfc/tech/Ndef.md))`()` Read the current [android.nfc.NdefMessage](../android/nfc/NdefMessage.md) on this tag. |
+| [Tag](../android/nfc/Tag.md)! | [getTag](../android/nfc/tech/Ndef.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../android/nfc/tech/Ndef.md))`()` Get the NDEF tag type. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#isConnected())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWritable](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#isWritable())`()` Determine if the tag is writable. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [makeReadOnly](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#makeReadOnly())`()` Make a tag read-only. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/nfc/tech/Ndef.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWritable](../android/nfc/tech/Ndef.md))`()` Determine if the tag is writable. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [makeReadOnly](../android/nfc/tech/Ndef.md))`()` Make a tag read-only. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNdefMessage](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#writeNdefMessage(android.nfc.NdefMessage))`(`msg:` ` [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)!`)` Overwrite the [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) on this tag. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNdefMessage](../android/nfc/tech/Ndef.md))`(`msg:` ` [NdefMessage](../android/nfc/NdefMessage.md)!`)` Overwrite the [NdefMessage](../android/nfc/NdefMessage.md) on this tag. |
 
 ## Constants
 
@@ -141,7 +141,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 fun canMakeReadOnly(): Boolean
 ```
 
-Indicates whether a tag can be made read-only with [makeReadOnly()](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#makeReadOnly()).
+Indicates whether a tag can be made read-only with [makeReadOnly()](../android/nfc/tech/Ndef.md)).
 
 Does not cause any RF activity and does not block.
 
@@ -191,19 +191,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static fun get(tag: Tag!): Ndef!
 ```
 
-Get an instance of [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) for the given tag.
+Get an instance of [Ndef](../android/nfc/tech/Ndef.md) for the given tag.
 
-Returns null if [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#) was not enumerated in [Tag.getTechList](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#getTechList()). This indicates the tag is not NDEF formatted, or that this tag is NDEF formatted but under a vendor specification that this Android device does not implement.
+Returns null if [Ndef](../android/nfc/tech/Ndef.md) was not enumerated in [Tag.getTechList](../android/nfc/Tag.md)). This indicates the tag is not NDEF formatted, or that this tag is NDEF formatted but under a vendor specification that this Android device does not implement.
 
 Does not cause any RF activity and does not block.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------|
-| `tag` | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!:an NDEF compatible tag |
+| `tag` | [Tag](../android/nfc/Tag.md)!:an NDEF compatible tag |
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------|
-| [Ndef](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#)! | Ndef object |
+| [Ndef](../android/nfc/tech/Ndef.md)! | Ndef object |
 
 ### getCachedNdefMessage
 
@@ -213,7 +213,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 fun getCachedNdefMessage(): NdefMessage!
 ```
 
-Get the [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) that was read from the tag at discovery time.
+Get the [NdefMessage](../android/nfc/NdefMessage.md) that was read from the tag at discovery time.
 
 If the NDEF Message is modified by an I/O operation then it will not be updated here, this function only returns what was discovered when the tag entered the field.
 
@@ -223,7 +223,7 @@ Does not cause any RF activity and does not block.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)! | NDEF Message read from the tag at discovery time, can be null |
+| [NdefMessage](../android/nfc/NdefMessage.md)! | NDEF Message read from the tag at discovery time, can be null |
 
 ### getMaxSize
 
@@ -249,19 +249,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 fun getNdefMessage(): NdefMessage!
 ```
 
-Read the current [android.nfc.NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) on this tag.
+Read the current [android.nfc.NdefMessage](../android/nfc/NdefMessage.md) on this tag.
 
 This always reads the current NDEF Message stored on the tag.
 
 Note that this method may return null if the tag was in the INITIALIZED state as defined by NFC Forum, as in that state the tag is formatted to support NDEF but does not contain a message yet.
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
 
-Requires the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------|
-| [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)! | the NDEF Message, can be null |
+| [NdefMessage](../android/nfc/NdefMessage.md)! | the NDEF Message, can be null |
 
 | Exceptions ||
 |--------------------------------|--------------------------------------------------------------|
@@ -281,7 +281,7 @@ fun getTag(): Tag!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | the [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#) backing this [TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology) object. |
+| [Tag](../android/nfc/Tag.md)! | the [Tag](../android/nfc/Tag.md) backing this [TagTechnology](../android/nfc/tech/TagTechnology.md) object. |
 
 ### getType
 
@@ -293,7 +293,7 @@ fun getType(): String!
 
 Get the NDEF tag type.
 
-Returns one of [NFC_FORUM_TYPE_1](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_1:kotlin.String), [NFC_FORUM_TYPE_2](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_2:kotlin.String), [NFC_FORUM_TYPE_3](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_3:kotlin.String), [NFC_FORUM_TYPE_4](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#NFC_FORUM_TYPE_4:kotlin.String), [MIFARE_CLASSIC](https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef#MIFARE_CLASSIC:kotlin.String) or another NDEF tag type that has not yet been formalized in this Android API.
+Returns one of [NFC_FORUM_TYPE_1](../android/nfc/tech/Ndef.md), [NFC_FORUM_TYPE_2](../android/nfc/tech/Ndef.md), [NFC_FORUM_TYPE_3](../android/nfc/tech/Ndef.md), [NFC_FORUM_TYPE_4](../android/nfc/tech/Ndef.md), [MIFARE_CLASSIC](../android/nfc/tech/Ndef.md) or another NDEF tag type that has not yet been formalized in this Android API.
 
 Does not cause any RF activity and does not block.
 
@@ -327,7 +327,7 @@ NFC Forum tags can be in read-only or read-write states.
 
 Does not cause any RF activity and does not block.
 
-Requires [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------|
@@ -347,9 +347,9 @@ This sets the CC field to indicate the tag is read-only, and where possible perm
 
 This is a one-way process and cannot be reverted!
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
 
-Requires the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -370,15 +370,15 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 fun writeNdefMessage(msg: NdefMessage!): Unit
 ```
 
-Overwrite the [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#) on this tag.
+Overwrite the [NdefMessage](../android/nfc/NdefMessage.md) on this tag.
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
 
-Requires the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `msg` | [NdefMessage](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage.html#)!:the NDEF Message to write, must not be null |
+| `msg` | [NdefMessage](../android/nfc/NdefMessage.md)!:the NDEF Message to write, must not be null |
 
 | Exceptions ||
 |--------------------------------|--------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # StaleDataException
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/StaleDataException "View this page in Java") 
+Kotlin| [Java](../android/database/StaleDataException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class StaleDataException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.StaleDataException](https://developer.android.com/reference/kotlin/android/database/StaleDataException#) |
+| | | | ↳ | [android.database.StaleDataException](../android/database/StaleDataException.md) |
 
 This exception is thrown when a Cursor contains stale data and must be requeried before being used again.
 
@@ -25,8 +25,8 @@ This exception is thrown when a Cursor contains stale data and must be requeried
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StaleDataException](https://developer.android.com/reference/kotlin/android/database/StaleDataException#StaleDataException())`()` <br /> |
-| [StaleDataException](https://developer.android.com/reference/kotlin/android/database/StaleDataException#StaleDataException(kotlin.String))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [StaleDataException](../android/database/StaleDataException.md))`()` <br /> |
+| [StaleDataException](../android/database/StaleDataException.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

@@ -10,44 +10,44 @@ class Optional<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Optional](https://developer.android.com/reference/kotlin/java/util/Optional#) |
+| ↳ | [java.util.Optional](../java/util/Optional.md) |
 
 A container object which may or may not contain a non-`null`value. If a value is present,`isPresent()`returns`true`. If no value is present, the object is considered*empty* and`isPresent()`returns`false`.
 
-Additional methods that depend on the presence or absence of a contained value are provided, such as [orElse()](https://developer.android.com/reference/kotlin/java/util/Optional#orElse(java.util.Optional.T))(returns a default value if no value is present) and [ifPresent()](https://developer.android.com/reference/kotlin/java/util/Optional#ifPresent(java.util.function.Consumer))(performs an action if a value is present).
+Additional methods that depend on the presence or absence of a contained value are provided, such as [orElse()](../java/util/Optional.md))(returns a default value if no value is present) and [ifPresent()](../java/util/Optional.md))(performs an action if a value is present).
 
-This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](https://developer.android.com/reference/kotlin/java/util/Optional#equals(kotlin.Any))as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
+This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](../java/util/Optional.md))as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<T\> | [empty](https://developer.android.com/reference/kotlin/java/util/Optional#empty())`()` Returns an empty`Optional`instance. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/Optional#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`Optional`. |
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<T\>! | [filter](https://developer.android.com/reference/kotlin/java/util/Optional#filter(java.util.function.Predicate))`(`predicate:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)<in` `T>!`)` If a value is present, and the value matches the given predicate, returns an`Optional`describing the value, otherwise returns an empty`Optional`. |
+| static [Optional](../java/util/Optional.md)\<T\> | [empty](../java/util/Optional.md))`()` Returns an empty`Optional`instance. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/Optional.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`Optional`. |
+| [Optional](../java/util/Optional.md)\<T\>! | [filter](../java/util/Optional.md))`(`predicate:` ` [Predicate](../java/util/function/Predicate.md)<in` `T>!`)` If a value is present, and the value matches the given predicate, returns an`Optional`describing the value, otherwise returns an empty`Optional`. |
 | --- | --- |
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<U\>! | [flatMap](https://developer.android.com/reference/kotlin/java/util/Optional#flatMap(java.util.function.Function))`(`mapper:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function)<in` `T,` `out` ` [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<out` `U>!>!`)` If a value is present, returns the result of applying the given`Optional`-bearing mapping function to the value, otherwise returns an empty`Optional`. |
-| T | [get](https://developer.android.com/reference/kotlin/java/util/Optional#get())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/Optional#hashCode())`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
+| [Optional](../java/util/Optional.md)\<U\>! | [flatMap](../java/util/Optional.md))`(`mapper:` ` [Function](../java/util/function/Function.md)<in` `T,` `out` ` [Optional](../java/util/Optional.md)<out` `U>!>!`)` If a value is present, returns the result of applying the given`Optional`-bearing mapping function to the value, otherwise returns an empty`Optional`. |
+| T | [get](../java/util/Optional.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/Optional.md))`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](https://developer.android.com/reference/kotlin/java/util/Optional#ifPresent(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)<in` `T>`)` If a value is present, performs the given action with the value, otherwise does nothing. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](https://developer.android.com/reference/kotlin/java/util/Optional#ifPresentOrElse(java.util.function.Consumer,%20java.lang.Runnable))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)<in` `T>!`, `emptyAction:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/Optional#isEmpty())`()` If a value is not present, returns`true`, otherwise`false`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](../java/util/Optional.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `T>`)` If a value is present, performs the given action with the value, otherwise does nothing. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](../java/util/Optional.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `T>!`, `emptyAction:` ` [Runnable](../java/lang/Runnable.md)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/Optional.md))`()` If a value is not present, returns`true`, otherwise`false`. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](https://developer.android.com/reference/kotlin/java/util/Optional#isPresent())`()` If a value is present, returns`true`, otherwise`false`. |
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<U\>! | [map](https://developer.android.com/reference/kotlin/java/util/Optional#map(java.util.function.Function))`(`mapper:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function)<in` `T,` `out` `U>!`)` If a value is present, returns an`Optional`describing (as if by [ofNullable](https://developer.android.com/reference/kotlin/java/util/Optional#ofNullable(java.util.Optional.ofNullable.T))) the result of applying the given mapping function to the value, otherwise returns an empty`Optional`. |
-| static [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<T\> | [of](https://developer.android.com/reference/kotlin/java/util/Optional#of(java.util.Optional.of.T))`(`value:` `T`)` Returns an`Optional`describing the given non-`null`value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](../java/util/Optional.md))`()` If a value is present, returns`true`, otherwise`false`. |
+| [Optional](../java/util/Optional.md)\<U\>! | [map](../java/util/Optional.md))`(`mapper:` ` [Function](../java/util/function/Function.md)<in` `T,` `out` `U>!`)` If a value is present, returns an`Optional`describing (as if by [ofNullable](../java/util/Optional.md))) the result of applying the given mapping function to the value, otherwise returns an empty`Optional`. |
+| static [Optional](../java/util/Optional.md)\<T\> | [of](../java/util/Optional.md))`(`value:` `T`)` Returns an`Optional`describing the given non-`null`value. |
 | --- | --- |
-| static [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<T\> | [ofNullable](https://developer.android.com/reference/kotlin/java/util/Optional#ofNullable(java.util.Optional.ofNullable.T))`(`value:` `T?`)` Returns an`Optional`describing the given value, if non-`null`, otherwise returns an empty`Optional`. |
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<T\>! | [or](https://developer.android.com/reference/kotlin/java/util/Optional#or(java.util.function.Supplier))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)<out` ` [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<out` `T>!>!`)` If a value is present, returns an`Optional`describing the value, otherwise returns an`Optional`produced by the supplying function. |
-| T | [orElse](https://developer.android.com/reference/kotlin/java/util/Optional#orElse(java.util.Optional.T))`(`other:` `T`)` If a value is present, returns the value, otherwise returns`other`. |
+| static [Optional](../java/util/Optional.md)\<T\> | [ofNullable](../java/util/Optional.md))`(`value:` `T?`)` Returns an`Optional`describing the given value, if non-`null`, otherwise returns an empty`Optional`. |
+| [Optional](../java/util/Optional.md)\<T\>! | [or](../java/util/Optional.md))`(`supplier:` ` [Supplier](../java/util/function/Supplier.md)<out` ` [Optional](../java/util/Optional.md)<out` `T>!>!`)` If a value is present, returns an`Optional`describing the value, otherwise returns an`Optional`produced by the supplying function. |
+| T | [orElse](../java/util/Optional.md))`(`other:` `T`)` If a value is present, returns the value, otherwise returns`other`. |
 | --- | --- |
-| T | [orElseGet](https://developer.android.com/reference/kotlin/java/util/Optional#orElseGet(java.util.function.Supplier))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)<out` `T>!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
-| T | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/Optional#orElseThrow())`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
-| T | [orElseThrow](https://developer.android.com/reference/kotlin/java/util/Optional#orElseThrow(java.util.function.Supplier))`(`exceptionSupplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
+| T | [orElseGet](../java/util/Optional.md))`(`supplier:` ` [Supplier](../java/util/function/Supplier.md)<out` `T>!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
+| T | [orElseThrow](../java/util/Optional.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| T | [orElseThrow](../java/util/Optional.md))`(`exceptionSupplier:` ` [Supplier](../java/util/function/Supplier.md)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
 | --- | --- |
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<T\>! | [stream](https://developer.android.com/reference/kotlin/java/util/Optional#stream())`()` If a value is present, returns a sequential [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream) containing only that value, otherwise returns an empty`Stream`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/Optional#toString())`()` Returns a non-empty string representation of this`Optional`suitable for debugging. |
+| [Stream](../java/util/stream/Stream.md)\<T\>! | [stream](../java/util/Optional.md))`()` If a value is present, returns a sequential [Stream](../java/util/stream/Stream.md) containing only that value, otherwise returns an empty`Stream`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/Optional.md))`()` Returns a non-empty string representation of this`Optional`suitable for debugging. |
 
 ## Public methods
 
@@ -67,7 +67,7 @@ Returns an empty`Optional`instance. No value is present for this`Optional`.
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------|
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<T> | an empty`Optional` |
+| [Optional](../java/util/Optional.md)<T> | an empty`Optional` |
 
 ### equals
 
@@ -105,11 +105,11 @@ If a value is present, and the value matches the given predicate, returns an`Opt
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)\<inT\>!:the predicate to apply to a value, if present |
+| `predicate` | [Predicate](../java/util/function/Predicate.md)\<inT\>!:the predicate to apply to a value, if present |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<T>! | an`Optional`describing the value of this`Optional`, if a value is present and the value matches the given predicate, otherwise an empty`Optional` |
+| [Optional](../java/util/Optional.md)<T>! | an`Optional`describing the value of this`Optional`, if a value is present and the value matches the given predicate, otherwise an empty`Optional` |
 
 | Exceptions ||
 |----------------------------------|---------------------------|
@@ -125,16 +125,16 @@ fun <U : Any!> flatMap(mapper: Function<in T, out Optional<out U>!>!): Op
 
 If a value is present, returns the result of applying the given`Optional`-bearing mapping function to the value, otherwise returns an empty`Optional`.
 
-This method is similar to [map(java.util.function.Function)](https://developer.android.com/reference/kotlin/java/util/Optional#map(java.util.function.Function)), but the mapping function is one whose result is already an`Optional`, and if invoked,`flatMap`does not wrap it within an additional`Optional`.
+This method is similar to [map(java.util.function.Function)](../java/util/Optional.md)), but the mapping function is one whose result is already an`Optional`, and if invoked,`flatMap`does not wrap it within an additional`Optional`.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<U>` | The type of value of the`Optional`returned by the mapping function |
-| `mapper` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function)\<inT,out [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<outU\>!\>!:the mapping function to apply to a value, if present |
+| `mapper` | [Function](../java/util/function/Function.md)\<inT,out [Optional](../java/util/Optional.md)\<outU\>!\>!:the mapping function to apply to a value, if present |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<U>! | the result of applying an`Optional`-bearing mapping function to the value of this`Optional`, if a value is present, otherwise an empty`Optional` |
+| [Optional](../java/util/Optional.md)<U>! | the result of applying an`Optional`-bearing mapping function to the value of this`Optional`, if a value is present, otherwise an empty`Optional` |
 
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------|
@@ -184,7 +184,7 @@ If a value is present, performs the given action with the value, otherwise does 
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)\<inT\>:the action to be performed, if a value is present |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inT\>:the action to be performed, if a value is present |
 
 | Exceptions ||
 |----------------------------------|---------------------------------------------------|
@@ -205,8 +205,8 @@ If a value is present, performs the given action with the value, otherwise perfo
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)\<inT\>!:the action to be performed, if a value is present |
-| `emptyAction` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the empty-based action to be performed, if no value is present |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inT\>!:the action to be performed, if a value is present |
+| `emptyAction` | [Runnable](../java/lang/Runnable.md)!:the empty-based action to be performed, if no value is present |
 
 | Exceptions ||
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -248,18 +248,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun <U : Any!> map(mapper: Function<in T, out U>!): Optional<U>!
 ```
 
-If a value is present, returns an`Optional`describing (as if by [ofNullable](https://developer.android.com/reference/kotlin/java/util/Optional#ofNullable(java.util.Optional.ofNullable.T))) the result of applying the given mapping function to the value, otherwise returns an empty`Optional`.
+If a value is present, returns an`Optional`describing (as if by [ofNullable](../java/util/Optional.md))) the result of applying the given mapping function to the value, otherwise returns an empty`Optional`.
 
 If the mapping function returns a`null`result then this method returns an empty`Optional`.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function)\<inT,outU\>!:the mapping function to apply to a value, if present |
+| `mapper` | [Function](../java/util/function/Function.md)\<inT,outU\>!:the mapping function to apply to a value, if present |
 | `<U>` | The type of the value returned from the mapping function |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<U>! | an`Optional`describing the result of applying a mapping function to the value of this`Optional`, if a value is present, otherwise an empty`Optional` |
+| [Optional](../java/util/Optional.md)<U>! | an`Optional`describing the result of applying a mapping function to the value of this`Optional`, if a value is present, otherwise an empty`Optional` |
 
 | Exceptions ||
 |----------------------------------|----------------------------------|
@@ -282,7 +282,7 @@ Returns an`Optional`describing the given non-`null`value.
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------|
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<T> | an`Optional`with the value present |
+| [Optional](../java/util/Optional.md)<T> | an`Optional`with the value present |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -305,7 +305,7 @@ Returns an`Optional`describing the given value, if non-`null`, otherwise returns
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<T> | an`Optional`with a present value if the specified value is non-`null`, otherwise an empty`Optional` |
+| [Optional](../java/util/Optional.md)<T> | an`Optional`with a present value if the specified value is non-`null`, otherwise an empty`Optional` |
 
 ### or
 
@@ -319,11 +319,11 @@ If a value is present, returns an`Optional`describing the value, otherwise retur
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)\<out [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)\<outT\>!\>!:the supplying function that produces an`Optional`to be returned |
+| `supplier` | [Supplier](../java/util/function/Supplier.md)\<out [Optional](../java/util/Optional.md)\<outT\>!\>!:the supplying function that produces an`Optional`to be returned |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional#)<T>! | returns an`Optional`describing the value of this`Optional`, if a value is present, otherwise an`Optional`produced by the supplying function. |
+| [Optional](../java/util/Optional.md)<T>! | returns an`Optional`describing the value of this`Optional`, if a value is present, otherwise an`Optional`produced by the supplying function. |
 
 | Exceptions ||
 |----------------------------------|-------------------------------------------------------------|
@@ -359,7 +359,7 @@ If a value is present, returns the value, otherwise returns the result produced 
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)\<outT\>!:the supplying function that produces a value to be returned |
+| `supplier` | [Supplier](../java/util/function/Supplier.md)\<outT\>!:the supplying function that produces a value to be returned |
 
 | Return ||
 |---|--------------------------------------------------------------------------------|
@@ -400,7 +400,7 @@ If a value is present, returns the value, otherwise throws an exception produced
 | Parameters ||
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<X>` | Type of the exception to be thrown |
-| `exceptionSupplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)\<outX\>!:the supplying function that produces an exception to be thrown |
+| `exceptionSupplier` | [Supplier](../java/util/function/Supplier.md)\<outX\>!:the supplying function that produces an exception to be thrown |
 
 | Return ||
 |---|-----------------------|
@@ -419,11 +419,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun stream(): Stream<T>!
 ```
 
-If a value is present, returns a sequential [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream) containing only that value, otherwise returns an empty`Stream`.
+If a value is present, returns a sequential [Stream](../java/util/stream/Stream.md) containing only that value, otherwise returns an empty`Stream`.
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------|
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)<T>! | the optional value as a`Stream` |
+| [Stream](../java/util/stream/Stream.md)<T>! | the optional value as a`Stream` |
 
 ### toString
 

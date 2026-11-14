@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # EffectContext
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/effect/EffectContext "View this page in Java") 
+Kotlin| [Java](../android/media/effect/EffectContext.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class EffectContext
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.effect.EffectContext](https://developer.android.com/reference/kotlin/android/media/effect/EffectContext#) |
+| ↳ | [android.media.effect.EffectContext](../android/media/effect/EffectContext.md) |
 
 An EffectContext keeps all necessary state information to run Effects within a Open GL ES 2.0 context.
 
@@ -23,9 +23,9 @@ Every EffectContext is bound to one GL context. The application is responsible f
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [EffectContext](https://developer.android.com/reference/kotlin/android/media/effect/EffectContext#)! | [createWithCurrentGlContext](https://developer.android.com/reference/kotlin/android/media/effect/EffectContext#createWithCurrentGlContext())`()` Creates a context within the current GL context. |
-| open [EffectFactory](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory)! | [getFactory](https://developer.android.com/reference/kotlin/android/media/effect/EffectContext#getFactory())`()` Returns the EffectFactory for this context. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/media/effect/EffectContext#release())`()` Releases the context. |
+| openstatic [EffectContext](../android/media/effect/EffectContext.md)! | [createWithCurrentGlContext](../android/media/effect/EffectContext.md))`()` Creates a context within the current GL context. |
+| open [EffectFactory](../android/media/effect/EffectFactory.md)! | [getFactory](../android/media/effect/EffectContext.md))`()` Returns the EffectFactory for this context. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/media/effect/EffectContext.md))`()` Releases the context. |
 | --- | --- |
 
 ## Public methods
@@ -40,7 +40,7 @@ open static fun createWithCurrentGlContext(): EffectContext!
 
 Creates a context within the current GL context.
 
-Binds the EffectContext to the current OpenGL context. All subsequent calls to the EffectContext must be made in the GL context that was active during creation. When you have finished using a context, you must call [release()](https://developer.android.com/reference/kotlin/android/media/effect/EffectContext#release()). to dispose of all resources associated with this context. 
+Binds the EffectContext to the current OpenGL context. All subsequent calls to the EffectContext must be made in the GL context that was active during creation. When you have finished using a context, you must call [release()](../android/media/effect/EffectContext.md)). to dispose of all resources associated with this context. 
 
 ### getFactory
 
@@ -56,7 +56,7 @@ The EffectFactory returned from this method allows instantiating new effects wit
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------|
-| [EffectFactory](https://developer.android.com/reference/kotlin/android/media/effect/EffectFactory)! | The EffectFactory instance for this context. |
+| [EffectFactory](../android/media/effect/EffectFactory.md)! | The EffectFactory instance for this context. |
 
 ### release
 

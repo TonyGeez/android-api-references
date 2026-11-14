@@ -8,7 +8,7 @@ open class LauncherActivityInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.LauncherActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#) |
+| ↳ | [android.content.pm.LauncherActivityInfo](../android/content/pm/LauncherActivityInfo.md) |
 
 A representation of an activity that can belong to this user or a managed profile associated with this user. It can be used to query the label, icon and badged icon for the activity.
 
@@ -16,19 +16,19 @@ A representation of an activity that can belong to this user or a managed profil
 
 | Public methods ||
 |---|---|
-| open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getActivityInfo()()` Returns the ActivityInfo of the activity. |
-| open [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getApplicationInfo()()` Returns the application info for the application this activity belongs to. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getBadgedIcon(kotlin.Int)(density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the activity icon with badging appropriate for the profile. |
+| open [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getActivityInfo()()` Returns the ActivityInfo of the activity. |
+| open [ApplicationInfo](../android/content/pm/ApplicationInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getApplicationInfo()()` Returns the application info for the application this activity belongs to. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getBadgedIcon(kotlin.Int)(density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the activity icon with badging appropriate for the profile. |
 | --- | --- |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getComponentName()()` Returns the component name of this activity. |
+| open [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getComponentName()()` Returns the component name of this activity. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getFirstInstallTime()()` Returns the time at which the package was first installed. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getIcon(kotlin.Int)(density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the icon for this activity, without any badging for the profile. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getIcon(kotlin.Int)(density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the icon for this activity, without any badging for the profile. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getLabel()()` Retrieves the label for the activity. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getLoadingProgress()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getName()()` Returns the name for the activity from android:name in the manifest. |
 | --- | --- |
-| open [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getUser()()` Returns the user handle of the user profile that this activity belongs to. |
+| open [UserHandle](../android/os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getUser()()` Returns the user handle of the user profile that this activity belongs to. |
 
 ## Public methods
 

@@ -10,9 +10,9 @@ open class DataInputStream : FilterInputStream, DataInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) |||
-| | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream) ||
-| | | ↳ | [java.io.DataInputStream](https://developer.android.com/reference/kotlin/java/io/DataInputStream#) |
+| ↳ | [java.io.InputStream](../java/io/InputStream.md) |||
+| | ↳ | [java.io.FilterInputStream](../java/io/FilterInputStream.md) ||
+| | | ↳ | [java.io.DataInputStream](../java/io/DataInputStream.md) |
 | --- | --- | --- | --- |
 
 A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. An application uses a data output stream to write data that can later be read by a data input stream.
@@ -23,43 +23,43 @@ DataInputStream is not necessarily safe for multithreaded access. Thread safety 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DataInputStream](https://developer.android.com/reference/kotlin/java/io/DataInputStream#DataInputStream(java.io.InputStream))`(`in:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream)!`)` Creates a DataInputStream that uses the specified underlying InputStream. |
+| [DataInputStream](../java/io/DataInputStream.md))`(`in:` ` [InputStream](../java/io/InputStream.md)!`)` Creates a DataInputStream that uses the specified underlying InputStream. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/DataInputStream#read(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some number of bytes from the contained input stream and stores them into the buffer array`b`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/DataInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from the contained input stream into an array of bytes. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readBoolean())`()` See the general contract of the`readBoolean`method of`DataInput`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/DataInputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some number of bytes from the contained input stream and stores them into the buffer array`b`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/DataInputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from the contained input stream into an array of bytes. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](../java/io/DataInputStream.md))`()` See the general contract of the`readBoolean`method of`DataInput`. |
 | --- | --- |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readByte())`()` See the general contract of the`readByte`method of`DataInput`. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [readChar](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readChar())`()` See the general contract of the`readChar`method of`DataInput`. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readDouble())`()` See the general contract of the`readDouble`method of`DataInput`. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](../java/io/DataInputStream.md))`()` See the general contract of the`readByte`method of`DataInput`. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [readChar](../java/io/DataInputStream.md))`()` See the general contract of the`readChar`method of`DataInput`. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](../java/io/DataInputStream.md))`()` See the general contract of the`readDouble`method of`DataInput`. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readFloat())`()` See the general contract of the`readFloat`method of`DataInput`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readFully(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` See the general contract of the`readFully`method of`DataInput`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readFully(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See the general contract of the`readFully`method of`DataInput`. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](../java/io/DataInputStream.md))`()` See the general contract of the`readFloat`method of`DataInput`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](../java/io/DataInputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` See the general contract of the`readFully`method of`DataInput`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](../java/io/DataInputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See the general contract of the`readFully`method of`DataInput`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readInt())`()` See the general contract of the`readInt`method of`DataInput`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readLine())`()` See the general contract of the`readLine`method of`DataInput`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readLong())`()` See the general contract of the`readLong`method of`DataInput`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](../java/io/DataInputStream.md))`()` See the general contract of the`readInt`method of`DataInput`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](../java/io/DataInputStream.md))`()` See the general contract of the`readLine`method of`DataInput`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](../java/io/DataInputStream.md))`()` See the general contract of the`readLong`method of`DataInput`. |
 | --- | --- |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readShort())`()` See the general contract of the`readShort`method of`DataInput`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUTF())`()` See the general contract of the`readUTF`method of`DataInput`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUTF(java.io.DataInput))`(`in:` ` [DataInput](https://developer.android.com/reference/kotlin/java/io/DataInput)!`)` Reads from the stream`in`a representation of a Unicode character string encoded in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format; this string of characters is then returned as a`String`. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](../java/io/DataInputStream.md))`()` See the general contract of the`readShort`method of`DataInput`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](../java/io/DataInputStream.md))`()` See the general contract of the`readUTF`method of`DataInput`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](../java/io/DataInputStream.md))`(`in:` ` [DataInput](../java/io/DataInput.md)!`)` Reads from the stream`in`a representation of a Unicode character string encoded in [modified UTF-8](../java/io/DataInput.md) format; this string of characters is then returned as a`String`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedByte](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUnsignedByte())`()` See the general contract of the`readUnsignedByte`method of`DataInput`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedShort](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUnsignedShort())`()` See the general contract of the`readUnsignedShort`method of`DataInput`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [skipBytes](https://developer.android.com/reference/kotlin/java/io/DataInputStream#skipBytes(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See the general contract of the`skipBytes`method of`DataInput`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedByte](../java/io/DataInputStream.md))`()` See the general contract of the`readUnsignedByte`method of`DataInput`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedShort](../java/io/DataInputStream.md))`()` See the general contract of the`readUnsignedShort`method of`DataInput`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [skipBytes](../java/io/DataInputStream.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` See the general contract of the`skipBytes`method of`DataInput`. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#available())`()` <br /> Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking by the next caller of a method for this input stream. The next caller might be the same thread or another thread. A single read or skip of this many bytes will not block, but may read or skip fewer bytes. This method returns the result of [in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream).available(). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#close())`()` <br /> Closes this input stream and releases any system resources associated with the stream. This method simply performs`in.close()`. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#mark(kotlin.Int))`(`readlimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Marks the current position in this input stream. A subsequent call to the`reset`method repositions this stream at the last marked position so that subsequent reads re-read the same bytes. The`readlimit`argument tells this input stream to allow that many bytes to be read before the mark position gets invalidated. This method simply performs`in.mark(readlimit)`. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#markSupported())`()` <br /> Tests if this input stream supports the`mark`and`reset`methods. This method simply performs`in.markSupported()`. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#read())`()` <br /> Reads the next byte of data from this input stream. The value byte is returned as an`int`in the range`0`to`255`. If no byte is available because the end of the stream has been reached, the value`-1`is returned. This method blocks until input data is available, the end of the stream is detected, or an exception is thrown. This method simply performs`in.read()`and returns the result. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#reset())`()` <br /> Repositions this stream to the position at the time the`mark`method was last called on this input stream. This method simply performs`in.reset()`. Stream marks are intended to be used in situations where you need to read ahead a little to see what's in the stream. Often this is most easily done by invoking some general parser. If the stream is of the type handled by the parse, it just chugs along happily. If the stream is not of that type, the parser should toss an exception when it fails. If this happens within readlimit bytes, it allows the outer code to reset the stream and try another parser. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Skips over and discards`n`bytes of data from the input stream. The`skip`method may, for a variety of reasons, end up skipping over some smaller number of bytes, possibly`0`. The actual number of bytes skipped is returned. This method simply performs`in.skip(n)`. <br /> | ||
-| From class [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream)! | [nullInputStream](https://developer.android.com/reference/kotlin/java/io/InputStream#nullInputStream())`()` <br /> Returns a new`InputStream`that reads no bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`available()`,`read()`,`read(byte[])`,`read(byte[], int, int)`,`readAllBytes()`,`readNBytes(byte[], int, int)`,`readNBytes(int)`,`skip(long)`,`skipNBytes(long)`, and`transferTo()`methods all behave as if end of stream has been reached. After the stream has been closed, these methods all throw`IOException`. The`markSupported()`method returns`false`. The`mark()`method does nothing, and the`reset()`method throws`IOException`. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readAllBytes](https://developer.android.com/reference/kotlin/java/io/InputStream#readAllBytes())`()` <br /> Reads all remaining bytes from the input stream. This method blocks until all remaining bytes have been read and end of stream is detected, or an exception is thrown. This method does not close the input stream. When this stream reaches end of stream, further invocations of this method will return an empty byte array. Note that this method is intended for simple cases where it is convenient to read all bytes into a byte array. It is not intended for reading input streams with large amounts of data. The behavior for the case where the input stream is*asynchronously closed*, or the thread interrupted during the read, is highly input stream specific, and therefore not specified. If an I/O error occurs reading from the input stream, then it may do so after some, but not all, bytes have been read. Consequently the input stream may not be at end of stream and may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readNBytes](https://developer.android.com/reference/kotlin/java/io/InputStream#readNBytes(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Reads the requested number of bytes from the input stream into the given byte array. This method blocks until`len`bytes of input data have been read, end of stream is detected, or an exception is thrown. The number of bytes actually read, possibly zero, is returned. This method does not close the input stream. In the case where end of stream is reached before`len`bytes have been read, then the actual number of bytes read will be returned. When this stream reaches end of stream, further invocations of this method will return zero. If`len`is zero, then no bytes are read and`0`is returned; otherwise, there is an attempt to read up to`len`bytes. The first byte read is stored into element`b[off]`, the next one in to`b[off+1]`, and so on. The number of bytes read is, at most, equal to`len`. Let*k* be the number of bytes actually read; these bytes will be stored in elements`b[off]`through`b[off+`*k* `-1]`, leaving elements`b[off+`*k* `]`through`b[off+len-1]`unaffected. The behavior for the case where the input stream is*asynchronously closed*, or the thread interrupted during the read, is highly input stream specific, and therefore not specified. If an I/O error occurs reading from the input stream, then it may do so after some, but not all, bytes of`b`have been updated with data from the input stream. Consequently the input stream and`b`may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readNBytes](https://developer.android.com/reference/kotlin/java/io/InputStream#readNBytes(kotlin.Int))`(`len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Reads up to a specified number of bytes from the input stream. This method blocks until the requested number of bytes has been read, end of stream is detected, or an exception is thrown. This method does not close the input stream. The length of the returned array equals the number of bytes read from the stream. If`len`is zero, then no bytes are read and an empty byte array is returned. Otherwise, up to`len`bytes are read from the stream. Fewer than`len`bytes may be read if end of stream is encountered. When this stream reaches end of stream, further invocations of this method will return an empty byte array. Note that this method is intended for simple cases where it is convenient to read the specified number of bytes into a byte array. The total amount of memory allocated by this method is proportional to the number of bytes read from the stream which is bounded by`len`. Therefore, the method may be safely called with very large values of`len`provided sufficient memory is available. The behavior for the case where the input stream is*asynchronously closed*, or the thread interrupted during the read, is highly input stream specific, and therefore not specified. If an I/O error occurs reading from the input stream, then it may do so after some, but not all, bytes have been read. Consequently the input stream may not be at end of stream and may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skipNBytes](https://developer.android.com/reference/kotlin/java/io/InputStream#skipNBytes(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Skips over and discards exactly`n`bytes of data from this input stream. If`n`is zero, then no bytes are skipped. If`n`is negative, then no bytes are skipped. Subclasses may handle the negative value differently. This method blocks until the requested number of bytes has been skipped, end of file is reached, or an exception is thrown. If end of stream is reached before the stream is at the desired position, then an`EOFException`is thrown. If an I/O error occurs, then the input stream may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](https://developer.android.com/reference/kotlin/java/io/InputStream#transferTo(java.io.OutputStream))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream)!`)` <br /> Reads all bytes from this input stream and writes the bytes to the given output stream in the order that they are read. On return, this input stream will be at end of stream. This method does not close either stream. This method may block indefinitely reading from the input stream, or writing to the output stream. The behavior for the case where the input and/or output stream is*asynchronously closed*, or the thread interrupted during the transfer, is highly input and output stream specific, and therefore not specified. If an I/O error occurs reading from the input stream or writing to the output stream, then it may do so after some bytes have been read or written. Consequently the input stream may not be at end of stream and one, or both, streams may be in an inconsistent state. It is strongly recommended that both streams be promptly closed if an I/O error occurs. <br /> | ||
+| From class [FilterInputStream](../java/io/FilterInputStream.md) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](../java/io/FilterInputStream.md))`()` <br /> Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking by the next caller of a method for this input stream. The next caller might be the same thread or another thread. A single read or skip of this many bytes will not block, but may read or skip fewer bytes. This method returns the result of [in](../java/io/FilterInputStream.md).available(). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/io/FilterInputStream.md))`()` <br /> Closes this input stream and releases any system resources associated with the stream. This method simply performs`in.close()`. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](../java/io/FilterInputStream.md))`(`readlimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Marks the current position in this input stream. A subsequent call to the`reset`method repositions this stream at the last marked position so that subsequent reads re-read the same bytes. The`readlimit`argument tells this input stream to allow that many bytes to be read before the mark position gets invalidated. This method simply performs`in.mark(readlimit)`. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](../java/io/FilterInputStream.md))`()` <br /> Tests if this input stream supports the`mark`and`reset`methods. This method simply performs`in.markSupported()`. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/FilterInputStream.md))`()` <br /> Reads the next byte of data from this input stream. The value byte is returned as an`int`in the range`0`to`255`. If no byte is available because the end of the stream has been reached, the value`-1`is returned. This method blocks until input data is available, the end of the stream is detected, or an exception is thrown. This method simply performs`in.read()`and returns the result. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/io/FilterInputStream.md))`()` <br /> Repositions this stream to the position at the time the`mark`method was last called on this input stream. This method simply performs`in.reset()`. Stream marks are intended to be used in situations where you need to read ahead a little to see what's in the stream. Often this is most easily done by invoking some general parser. If the stream is of the type handled by the parse, it just chugs along happily. If the stream is not of that type, the parser should toss an exception when it fails. If this happens within readlimit bytes, it allows the outer code to reset the stream and try another parser. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](../java/io/FilterInputStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Skips over and discards`n`bytes of data from the input stream. The`skip`method may, for a variety of reasons, end up skipping over some smaller number of bytes, possibly`0`. The actual number of bytes skipped is returned. This method simply performs`in.skip(n)`. <br /> | ||
+| From class [InputStream](../java/io/InputStream.md) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputStream](../java/io/InputStream.md)! | [nullInputStream](../java/io/InputStream.md))`()` <br /> Returns a new`InputStream`that reads no bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`available()`,`read()`,`read(byte[])`,`read(byte[], int, int)`,`readAllBytes()`,`readNBytes(byte[], int, int)`,`readNBytes(int)`,`skip(long)`,`skipNBytes(long)`, and`transferTo()`methods all behave as if end of stream has been reached. After the stream has been closed, these methods all throw`IOException`. The`markSupported()`method returns`false`. The`mark()`method does nothing, and the`reset()`method throws`IOException`. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readAllBytes](../java/io/InputStream.md))`()` <br /> Reads all remaining bytes from the input stream. This method blocks until all remaining bytes have been read and end of stream is detected, or an exception is thrown. This method does not close the input stream. When this stream reaches end of stream, further invocations of this method will return an empty byte array. Note that this method is intended for simple cases where it is convenient to read all bytes into a byte array. It is not intended for reading input streams with large amounts of data. The behavior for the case where the input stream is*asynchronously closed*, or the thread interrupted during the read, is highly input stream specific, and therefore not specified. If an I/O error occurs reading from the input stream, then it may do so after some, but not all, bytes have been read. Consequently the input stream may not be at end of stream and may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readNBytes](../java/io/InputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Reads the requested number of bytes from the input stream into the given byte array. This method blocks until`len`bytes of input data have been read, end of stream is detected, or an exception is thrown. The number of bytes actually read, possibly zero, is returned. This method does not close the input stream. In the case where end of stream is reached before`len`bytes have been read, then the actual number of bytes read will be returned. When this stream reaches end of stream, further invocations of this method will return zero. If`len`is zero, then no bytes are read and`0`is returned; otherwise, there is an attempt to read up to`len`bytes. The first byte read is stored into element`b[off]`, the next one in to`b[off+1]`, and so on. The number of bytes read is, at most, equal to`len`. Let*k* be the number of bytes actually read; these bytes will be stored in elements`b[off]`through`b[off+`*k* `-1]`, leaving elements`b[off+`*k* `]`through`b[off+len-1]`unaffected. The behavior for the case where the input stream is*asynchronously closed*, or the thread interrupted during the read, is highly input stream specific, and therefore not specified. If an I/O error occurs reading from the input stream, then it may do so after some, but not all, bytes of`b`have been updated with data from the input stream. Consequently the input stream and`b`may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readNBytes](../java/io/InputStream.md))`(`len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Reads up to a specified number of bytes from the input stream. This method blocks until the requested number of bytes has been read, end of stream is detected, or an exception is thrown. This method does not close the input stream. The length of the returned array equals the number of bytes read from the stream. If`len`is zero, then no bytes are read and an empty byte array is returned. Otherwise, up to`len`bytes are read from the stream. Fewer than`len`bytes may be read if end of stream is encountered. When this stream reaches end of stream, further invocations of this method will return an empty byte array. Note that this method is intended for simple cases where it is convenient to read the specified number of bytes into a byte array. The total amount of memory allocated by this method is proportional to the number of bytes read from the stream which is bounded by`len`. Therefore, the method may be safely called with very large values of`len`provided sufficient memory is available. The behavior for the case where the input stream is*asynchronously closed*, or the thread interrupted during the read, is highly input stream specific, and therefore not specified. If an I/O error occurs reading from the input stream, then it may do so after some, but not all, bytes have been read. Consequently the input stream may not be at end of stream and may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skipNBytes](../java/io/InputStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Skips over and discards exactly`n`bytes of data from this input stream. If`n`is zero, then no bytes are skipped. If`n`is negative, then no bytes are skipped. Subclasses may handle the negative value differently. This method blocks until the requested number of bytes has been skipped, end of file is reached, or an exception is thrown. If end of stream is reached before the stream is at the desired position, then an`EOFException`is thrown. If an I/O error occurs, then the input stream may be in an inconsistent state. It is strongly recommended that the stream be promptly closed if an I/O error occurs. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](../java/io/InputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`)` <br /> Reads all bytes from this input stream and writes the bytes to the given output stream in the order that they are read. On return, this input stream will be at end of stream. This method does not close either stream. This method may block indefinitely reading from the input stream, or writing to the output stream. The behavior for the case where the input and/or output stream is*asynchronously closed*, or the thread interrupted during the transfer, is highly input and output stream specific, and therefore not specified. If an I/O error occurs reading from the input stream or writing to the output stream, then it may do so after some bytes have been read or written. Consequently the input stream may not be at end of stream and one, or both, streams may be in an inconsistent state. It is strongly recommended that both streams be promptly closed if an I/O error occurs. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream)! | [in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) <br /> The input stream to be filtered. <br /> | ||
+| From class [FilterInputStream](../java/io/FilterInputStream.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputStream](../java/io/InputStream.md)! | [in](../java/io/FilterInputStream.md) <br /> The input stream to be filtered. <br /> | ||
 
 ## Public constructors
 
@@ -75,7 +75,7 @@ Creates a DataInputStream that uses the specified underlying InputStream.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream)!:the specified input stream |
+| `in` | [InputStream](../java/io/InputStream.md)!:the specified input stream |
 
 ## Public methods
 
@@ -117,7 +117,7 @@ read(b, 0, b.length)
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream)
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md)
 - [java.io.InputStream#read(byte[], int, int)](https://developer.android.com/reference/kotlin/java/io/InputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)) 
 
 ### read
@@ -166,7 +166,7 @@ In every case, elements`b[0]`through`b[off]`and elements`b[off+len]`through`b[b.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream)
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md)
 - [java.io.InputStream#read(byte[], int, int)](https://developer.android.com/reference/kotlin/java/io/InputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)) 
 
 ### readBoolean
@@ -192,7 +192,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readByte
 
@@ -217,7 +217,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readChar
 
@@ -242,7 +242,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readDouble
 
@@ -267,8 +267,8 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.DataInputStream#readLong()](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readLong())
-- [java.lang.Double#longBitsToDouble(long)](https://developer.android.com/reference/kotlin/java/lang/Double.html#longBitsToDouble(kotlin.Long)) 
+- [java.io.DataInputStream#readLong()](../java/io/DataInputStream.md))
+- [java.lang.Double#longBitsToDouble(long)](../java/lang/Double.md)) 
 
 ### readFloat
 
@@ -293,8 +293,8 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.DataInputStream#readInt()](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readInt())
-- [java.lang.Float#intBitsToFloat(int)](https://developer.android.com/reference/kotlin/java/lang/Float.html#intBitsToFloat(kotlin.Int)) 
+- [java.io.DataInputStream#readInt()](../java/io/DataInputStream.md))
+- [java.lang.Float#intBitsToFloat(int)](../java/lang/Float.md)) 
 
 ### readFully
 
@@ -321,7 +321,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readFully
 
@@ -361,7 +361,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readInt
 
@@ -386,7 +386,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readLine
 
@@ -425,8 +425,8 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.BufferedReader#readLine()](https://developer.android.com/reference/kotlin/java/io/BufferedReader#readLine())
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.BufferedReader#readLine()](../java/io/BufferedReader.md))
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readLong
 
@@ -451,7 +451,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readShort
 
@@ -476,7 +476,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readUTF
 
@@ -503,7 +503,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.DataInputStream#readUTF(java.io.DataInput)](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUTF(java.io.DataInput)) 
+- [java.io.DataInputStream#readUTF(java.io.DataInput)](../java/io/DataInputStream.md)) 
 
 ### readUTF
 
@@ -513,11 +513,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun readUTF(in: DataInput!): String!
 ```
 
-Reads from the stream`in`a representation of a Unicode character string encoded in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format; this string of characters is then returned as a`String`. The details of the modified UTF-8 representation are exactly the same as for the`readUTF`method of`DataInput`.
+Reads from the stream`in`a representation of a Unicode character string encoded in [modified UTF-8](../java/io/DataInput.md) format; this string of characters is then returned as a`String`. The details of the modified UTF-8 representation are exactly the same as for the`readUTF`method of`DataInput`.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------|
-| `in` | [DataInput](https://developer.android.com/reference/kotlin/java/io/DataInput)!:a data input stream. |
+| `in` | [DataInput](../java/io/DataInput.md)!:a data input stream. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------|
@@ -532,7 +532,7 @@ Reads from the stream`in`a representation of a Unicode character string encoded 
 
 **See Also**
 
-- [java.io.DataInputStream#readUnsignedShort()](https://developer.android.com/reference/kotlin/java/io/DataInputStream#readUnsignedShort()) 
+- [java.io.DataInputStream#readUnsignedShort()](../java/io/DataInputStream.md)) 
 
 ### readUnsignedByte
 
@@ -557,7 +557,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### readUnsignedShort
 
@@ -582,7 +582,7 @@ Bytes for this operation are read from the contained input stream.
 
 **See Also**
 
-- [java.io.FilterInputStream#in](https://developer.android.com/reference/kotlin/java/io/FilterInputStream#in:java.io.InputStream) 
+- [java.io.FilterInputStream#in](../java/io/FilterInputStream.md) 
 
 ### skipBytes
 

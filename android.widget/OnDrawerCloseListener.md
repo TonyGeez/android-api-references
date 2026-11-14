@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnDrawerCloseListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerCloseListener "View this page in Java") 
+Kotlin| [Java](../android/widget/SlidingDrawer.OnDrawerCloseListener.md) 
 | --- | --- |
 
 ```
 interface OnDrawerCloseListener
 ```
 
-| [android.widget.SlidingDrawer.OnDrawerCloseListener](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerCloseListener#) |
+| [android.widget.SlidingDrawer.OnDrawerCloseListener](../android/widget/SlidingDrawer.OnDrawerCloseListener.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -24,7 +24,7 @@ Callback invoked when the drawer is closed.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawerClosed](https://developer.android.com/reference/kotlin/android/widget/SlidingDrawer.OnDrawerCloseListener#onDrawerClosed())`()` Invoked when the drawer becomes fully closed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawerClosed](../android/widget/SlidingDrawer.OnDrawerCloseListener.md))`()` Invoked when the drawer becomes fully closed. |
 
 ## Public methods
 

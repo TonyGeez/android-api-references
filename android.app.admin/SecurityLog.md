@@ -8,7 +8,7 @@ open class SecurityLog
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.SecurityLog](https://developer.android.com/reference/kotlin/android/app/admin/SecurityLog#) |
+| ↳ | [android.app.admin.SecurityLog](../android/app/admin/SecurityLog.md) |
 
 Definitions for working with security logs.
 

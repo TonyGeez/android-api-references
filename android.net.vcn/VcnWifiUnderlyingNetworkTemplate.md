@@ -2,7 +2,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # VcnWifiUnderlyingNetworkTemplate
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/vcn/VcnWifiUnderlyingNetworkTemplate "View this page in Java")
+Kotlin | [Java](../android/net/vcn/VcnWifiUnderlyingNetworkTemplate.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class VcnWifiUnderlyingNetworkTemplate : VcnUnderlyingNetworkTemplate
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.vcn.VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate) ||
-| | ↳ | [android.net.vcn.VcnWifiUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#) |
+| ↳ | [android.net.vcn.VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) ||
+| | ↳ | [android.net.vcn.VcnWifiUnderlyingNetworkTemplate](../android/net/vcn/VcnWifiUnderlyingNetworkTemplate.md) |
 
 This class represents a configuration for a network template class of underlying Carrier WiFi networks.
 

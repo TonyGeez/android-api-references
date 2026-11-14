@@ -8,8 +8,8 @@ class ChildSaProposal : SaProposal
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.SaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal) ||
-| | ↳ | [android.net.ipsec.ike.ChildSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSaProposal#) |
+| ↳ | [android.net.ipsec.ike.SaProposal](../android/net/ipsec/ike/SaProposal.md) ||
+| | ↳ | [android.net.ipsec.ike.ChildSaProposal](../android/net/ipsec/ike/ChildSaProposal.md) |
 
 ChildSaProposal represents a proposed configuration to negotiate a Child SA.
 

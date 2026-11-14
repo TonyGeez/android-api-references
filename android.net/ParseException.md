@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ParseException
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/ParseException "View this page in Java") 
+Kotlin| [Java](../android/net/ParseException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class ParseException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.net.ParseException](https://developer.android.com/reference/kotlin/android/net/ParseException#) |
+| | | | ↳ | [android.net.ParseException](../android/net/ParseException.md) |
 
 Thrown when parsing failed.
 
@@ -25,12 +25,12 @@ Thrown when parsing failed.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ParseException](https://developer.android.com/reference/kotlin/android/net/ParseException#ParseException(kotlin.String))`(`response:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> |
-| [ParseException](https://developer.android.com/reference/kotlin/android/net/ParseException#ParseException(kotlin.String,%20kotlin.Throwable))`(`response:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` <br /> |
+| [ParseException](../android/net/ParseException.md))`(`response:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> |
+| [ParseException](../android/net/ParseException.md))`(`response:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [response](https://developer.android.com/reference/kotlin/android/net/ParseException#response:kotlin.String) <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [response](../android/net/ParseException.md) <br /> |
 
 ## Public constructors
 

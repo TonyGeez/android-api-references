@@ -11,20 +11,20 @@ open class AEADBadTagException : BadPaddingException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.crypto.BadPaddingException](https://developer.android.com/reference/kotlin/javax/crypto/BadPaddingException) ||
-| | | | | ↳ | [javax.crypto.AEADBadTagException](https://developer.android.com/reference/kotlin/javax/crypto/AEADBadTagException#) |
+| | | | ↳ | [javax.crypto.BadPaddingException](../javax/crypto/BadPaddingException.md) ||
+| | | | | ↳ | [javax.crypto.AEADBadTagException](../javax/crypto/AEADBadTagException.md) |
 
-This exception is thrown when a [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher) operating in an AEAD mode (such as GCM/CCM) is unable to verify the supplied authentication tag.
+This exception is thrown when a [Cipher](../javax/crypto/Cipher.md) operating in an AEAD mode (such as GCM/CCM) is unable to verify the supplied authentication tag.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AEADBadTagException](https://developer.android.com/reference/kotlin/javax/crypto/AEADBadTagException#AEADBadTagException())`()` Constructs a AEADBadTagException with no detail message. |
-| [AEADBadTagException](https://developer.android.com/reference/kotlin/javax/crypto/AEADBadTagException#AEADBadTagException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a AEADBadTagException with the specified detail message. |
+| [AEADBadTagException](../javax/crypto/AEADBadTagException.md))`()` Constructs a AEADBadTagException with no detail message. |
+| [AEADBadTagException](../javax/crypto/AEADBadTagException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a AEADBadTagException with the specified detail message. |
 
 ## Public constructors
 

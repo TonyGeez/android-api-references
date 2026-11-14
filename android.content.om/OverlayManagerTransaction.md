@@ -8,7 +8,7 @@ class OverlayManagerTransaction : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.om.OverlayManagerTransaction](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#) |
+| ↳ | [android.content.om.OverlayManagerTransaction](../android/content/om/OverlayManagerTransaction.md) |
 
 A container for a batch of requests to the OverlayManager.
 
@@ -42,7 +42,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| static [OverlayManagerTransaction](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#newInstance()()` Get an overlay manager transaction. |
+| static [OverlayManagerTransaction](../android/content/om/OverlayManagerTransaction.md) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#newInstance()()` Get an overlay manager transaction. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#registerFabricatedOverlay(android.content.om.FabricatedOverlay)(overlay: https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay)` Registers the fabricated overlays with the overlay manager so it can be used to overlay the app resources in runtime. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#toString()()` Returns a string representation of the object. |
@@ -52,7 +52,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [OverlayManagerTransaction](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#)!\> | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OverlayManagerTransaction](../android/content/om/OverlayManagerTransaction.md)!\> | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -98,7 +98,7 @@ If an overlay is re-registered the existing overlay will be replaced by the newl
 
 | Parameters ||
 |---|---|
-| `overlay` | [FabricatedOverlay](https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay): the overlay to register with the overlay manager. This value cannot be `null`. |
+| `overlay` | [FabricatedOverlay](../android/content/om/FabricatedOverlay.md): the overlay to register with the overlay manager. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -130,7 +130,7 @@ Unregisters the registered overlays from the overlay manager.
 
 | Parameters ||
 |---|---|
-| `overlay` | [OverlayIdentifier](https://developer.android.com/reference/kotlin/android/content/om/OverlayIdentifier): the overlay to be unregistered. This value cannot be `null`. |
+| `overlay` | [OverlayIdentifier](../android/content/om/OverlayIdentifier.md): the overlay to be unregistered. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -156,7 +156,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

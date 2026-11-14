@@ -6,7 +6,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SharedPreferences
 ```
 
-| [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences#) |
+| [android.content.SharedPreferences](../android/content/SharedPreferences.md) |
 
 Interface for accessing and modifying preference data returned by `https://developer.android.com/reference/kotlin/android/content/Context#getSharedPreferences(kotlin.String,%20kotlin.Int)`. For any particular set of preferences, there is a single instance of this class that all clients share. Modifications to the preferences must go through an `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor` object to ensure the preference values remain in a consistent state and control when they are committed to storage. Objects that are returned from the various `get` methods must be treated as immutable by the application.
 
@@ -37,7 +37,7 @@ There are several significant drawbacks to using `SharedPreferences`:
 | Public methods ||
 |---|---|
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#contains(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks whether the preferences contains a preference. |
-| abstract [SharedPreferences.Editor](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor)! | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#edit()()` Create a new Editor for these preferences, through which you can make modifications to the data in the preferences and atomically commit those changes back to the SharedPreferences object. |
+| abstract [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md)! | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#edit()()` Create a new Editor for these preferences, through which you can make modifications to the data in the preferences and atomically commit those changes back to the SharedPreferences object. |
 | abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>! | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getAll()()` Retrieve all values from the preferences. |
 | --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getBoolean(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Retrieve a boolean value from the preferences. |
@@ -279,7 +279,7 @@ Registers a callback to be invoked when a change happens to a preference.
 
 | Parameters ||
 |---|---|
-| `listener` | [SharedPreferences.OnSharedPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.OnSharedPreferenceChangeListener)!: The callback that will run. |
+| `listener` | [SharedPreferences.OnSharedPreferenceChangeListener](../android/content/SharedPreferences.OnSharedPreferenceChangeListener.md)!: The callback that will run. |
 
 **See Also**
 
@@ -297,7 +297,7 @@ Unregisters a previous callback.
 
 | Parameters ||
 |---|---|
-| `listener` | [SharedPreferences.OnSharedPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.OnSharedPreferenceChangeListener)!: The callback that should be unregistered. |
+| `listener` | [SharedPreferences.OnSharedPreferenceChangeListener](../android/content/SharedPreferences.OnSharedPreferenceChangeListener.md)!: The callback that should be unregistered. |
 
 **See Also**
 

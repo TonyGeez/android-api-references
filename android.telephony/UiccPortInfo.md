@@ -2,7 +2,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # UiccPortInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/UiccPortInfo "View this page in Java")
+Kotlin | [Java](../android/telephony/UiccPortInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class UiccPortInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.UiccPortInfo](https://developer.android.com/reference/kotlin/android/telephony/UiccPortInfo#) |
+| ↳ | [android.telephony.UiccPortInfo](../android/telephony/UiccPortInfo.md) |
 
 UiccPortInfo class represents information about a single port contained on `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo`. Per GSMA SGP.22 V3.0, a port is a logical entity to which an active UICC profile can be bound on a UICC card. If UICC supports 2 ports, then the port index is numbered 0,1. Each port index is unique within an UICC, but not necessarily unique across UICC's. For UICC's does not support MEP(Multi-enabled profile) `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC_MEP:kotlin.String`, just return the default port index 0.
 
@@ -42,7 +42,7 @@ UiccPortInfo class represents information about a single port contained on `http
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [UiccPortInfo](https://developer.android.com/reference/kotlin/android/telephony/UiccPortInfo#)!\> | `https://developer.android.com/reference/kotlin/android/telephony/UiccPortInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UiccPortInfo](../android/telephony/UiccPortInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/UiccPortInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -201,7 +201,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!: This value may be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md)!: This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -4,7 +4,7 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 
 # WallpaperInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/WallpaperInfo "View this page in Java") 
+Kotlin| [Java](../android/app/WallpaperInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class WallpaperInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#) |
+| ↳ | [android.app.WallpaperInfo](../android/app/WallpaperInfo.md) |
 
 This class is used to specify meta information of a wallpaper service.
 
@@ -21,44 +21,44 @@ This class is used to specify meta information of a wallpaper service.
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#WallpaperInfo(android.content.Context,%20android.content.pm.ResolveInfo))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `service:` ` [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!`)` Constructor. |
+| [WallpaperInfo](../android/app/WallpaperInfo.md))`(`context:` ` [Context](../android/content/Context.md)!`, `service:` ` [ResolveInfo](../android/content/pm/ResolveInfo.md)!`)` Constructor. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#describeContents())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#dump(android.util.Printer,%20kotlin.String))`(`pw:` ` [Printer](https://developer.android.com/reference/kotlin/android/util/Printer.html#)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | [getComponent](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getComponent())`()` Return the component of the service that implements this wallpaper. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/WallpaperInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](../android/app/WallpaperInfo.md))`(`pw:` ` [Printer](../android/util/Printer.md)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [ComponentName](../android/content/ComponentName.md)! | [getComponent](../android/app/WallpaperInfo.md))`()` Return the component of the service that implements this wallpaper. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPackageName](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getPackageName())`()` Return the . |
-| [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)! | [getServiceInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getServiceInfo())`()` Return the raw information about the Service implementing this wallpaper. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceName](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getServiceName())`()` Return the class name of the service component that implements this wallpaper. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPackageName](../android/app/WallpaperInfo.md))`()` Return the . |
+| [ServiceInfo](../android/content/pm/ServiceInfo.md)! | [getServiceInfo](../android/app/WallpaperInfo.md))`()` Return the raw information about the Service implementing this wallpaper. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceName](../android/app/WallpaperInfo.md))`()` Return the class name of the service component that implements this wallpaper. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSettingsActivity](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getSettingsActivity())`()` Return the class name of an activity that provides a settings UI for the wallpaper. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getSettingsSliceUri](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getSettingsSliceUri())`()` Returns an URI that provides a settings [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice) for this wallpaper. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getShowMetadataInPreview](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getShowMetadataInPreview())`()` Queries whether any metadata should be shown when previewing the wallpaper. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSettingsActivity](../android/app/WallpaperInfo.md))`()` Return the class name of an activity that provides a settings UI for the wallpaper. |
+| [Uri](../android/net/Uri.md)? | [getSettingsSliceUri](../android/app/WallpaperInfo.md))`()` Returns an URI that provides a settings [Slice](../android/app/slice/Slice.md) for this wallpaper. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getShowMetadataInPreview](../android/app/WallpaperInfo.md))`()` Queries whether any metadata should be shown when previewing the wallpaper. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadAuthor](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadAuthor(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Return a string indicating the author(s) of this wallpaper. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadContextDescription](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadContextDescription(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Retrieves a title of the URI that specifies a link for further context about this wallpaper. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [loadContextUri](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadContextUri(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Returns an URI that specifies a link for further context about this wallpaper. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadAuthor](../android/app/WallpaperInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Return a string indicating the author(s) of this wallpaper. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadContextDescription](../android/app/WallpaperInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Retrieves a title of the URI that specifies a link for further context about this wallpaper. |
+| [Uri](../android/net/Uri.md)! | [loadContextUri](../android/app/WallpaperInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Returns an URI that specifies a link for further context about this wallpaper. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadDescription](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadDescription(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Return a brief summary of this wallpaper's behavior. |
-| [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [loadIcon](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadIcon(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Load the user-displayed icon for this wallpaper. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadLabel](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadLabel(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Load the user-displayed label for this wallpaper. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadDescription](../android/app/WallpaperInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Return a brief summary of this wallpaper's behavior. |
+| [Drawable](../android/graphics/drawable/Drawable.md)! | [loadIcon](../android/app/WallpaperInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Load the user-displayed icon for this wallpaper. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadLabel](../android/app/WallpaperInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Load the user-displayed label for this wallpaper. |
 | --- | --- |
-| [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [loadThumbnail](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadThumbnail(android.content.pm.PackageManager))`(`pm:` ` [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!`)` Load the thumbnail image for this wallpaper. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldUseDefaultUnfoldTransition](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#shouldUseDefaultUnfoldTransition())`()` Returns whether this wallpaper should receive default zooming updates when the device changes its state (e.g. when folding or unfolding a foldable device). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleDisplays](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#supportsMultipleDisplays())`()` Returns whether this wallpaper service can support multiple engines to render on each surface independently. |
+| [Drawable](../android/graphics/drawable/Drawable.md)! | [loadThumbnail](../android/app/WallpaperInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Load the thumbnail image for this wallpaper. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldUseDefaultUnfoldTransition](../android/app/WallpaperInfo.md))`()` Returns whether this wallpaper should receive default zooming updates when the device changes its state (e.g. when folding or unfolding a foldable device). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleDisplays](../android/app/WallpaperInfo.md))`()` Returns whether this wallpaper service can support multiple engines to render on each surface independently. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/WallpaperInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/WallpaperInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android/os/Parcel.md). |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#CREATOR:android.os.Parcelable.Creator) Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WallpaperInfo](../android/app/WallpaperInfo.md)!\> | [CREATOR](../android/app/WallpaperInfo.md) Used to make this class parcelable. |
 
 ## Public constructors
 
@@ -76,8 +76,8 @@ Constructor.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The Context in which we are parsing the wallpaper. |
-| `service` | [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)!:The ResolveInfo returned from the package manager about this wallpaper's component. |
+| `context` | [Context](../android/content/Context.md)!:The Context in which we are parsing the wallpaper. |
+| `service` | [ResolveInfo](../android/content/pm/ResolveInfo.md)!:The ResolveInfo returned from the package manager about this wallpaper's component. |
 
 ## Public methods
 
@@ -91,7 +91,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### dump
 
@@ -152,7 +152,7 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 fun getSettingsActivity(): String!
 ```
 
-Return the class name of an activity that provides a settings UI for the wallpaper. You can launch this activity be starting it with an [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) whose action is MAIN and with an explicit [android.content.ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) composed of [getPackageName](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#getPackageName())and the class name returned here.
+Return the class name of an activity that provides a settings UI for the wallpaper. You can launch this activity be starting it with an [android.content.Intent](../android/content/Intent.md) whose action is MAIN and with an explicit [android.content.ComponentName](../android/content/ComponentName.md) composed of [getPackageName](../android/app/WallpaperInfo.md))and the class name returned here.
 
 `null`will be returned if there is no settings activity associated with the wallpaper. 
 
@@ -164,13 +164,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getSettingsSliceUri(): Uri?
 ```
 
-Returns an URI that provides a settings [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice) for this wallpaper. The wallpaper should implement a SliceProvider associated with this URI. The system will display the Slice in the customization section while previewing the live wallpaper. Because this URI is accessible to other apps, it is recommended to protect it with the android.permission.BIND_WALLPAPER permission.
+Returns an URI that provides a settings [Slice](../android/app/slice/Slice.md) for this wallpaper. The wallpaper should implement a SliceProvider associated with this URI. The system will display the Slice in the customization section while previewing the live wallpaper. Because this URI is accessible to other apps, it is recommended to protect it with the android.permission.BIND_WALLPAPER permission.
 
 `null`will be returned if there is no settings Slice URI associated with the wallpaper.
 
 | Return ||
 |------------------------------------------------------------------------------|----------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | The URI. |
+| [Uri](../android/net/Uri.md)? | The URI. |
 
 ### getShowMetadataInPreview
 
@@ -180,7 +180,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 fun getShowMetadataInPreview(): Boolean
 ```
 
-Queries whether any metadata should be shown when previewing the wallpaper. If this value is set to true, any component that shows a preview of this live wallpaper should also show accompanying information like [loadLabel](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadLabel(android.content.pm.PackageManager)), [loadDescription](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadDescription(android.content.pm.PackageManager)), [loadAuthor](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadAuthor(android.content.pm.PackageManager))and [loadContextDescription(android.content.pm.PackageManager)](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo#loadContextDescription(android.content.pm.PackageManager)), so the user gets to know further information about this wallpaper.
+Queries whether any metadata should be shown when previewing the wallpaper. If this value is set to true, any component that shows a preview of this live wallpaper should also show accompanying information like [loadLabel](../android/app/WallpaperInfo.md)), [loadDescription](../android/app/WallpaperInfo.md)), [loadAuthor](../android/app/WallpaperInfo.md))and [loadContextDescription(android.content.pm.PackageManager)](../android/app/WallpaperInfo.md)), so the user gets to know further information about this wallpaper.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -208,7 +208,7 @@ Retrieves a title of the URI that specifies a link for further context about thi
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!:An instance of [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#) to retrieve the title. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:An instance of [PackageManager](../android/content/pm/PackageManager.md) to retrieve the title. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------|
@@ -226,11 +226,11 @@ Returns an URI that specifies a link for further context about this wallpaper.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!:An instance of [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#) to retrieve the URI. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:An instance of [PackageManager](../android/content/pm/PackageManager.md) to retrieve the URI. |
 
 | Return ||
 |------------------------------------------------------------------------------|----------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | The URI. |
+| [Uri](../android/net/Uri.md)! | The URI. |
 
 ### loadDescription
 
@@ -254,7 +254,7 @@ Load the user-displayed icon for this wallpaper.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!:Supply a PackageManager used to load the wallpaper's resources. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:Supply a PackageManager used to load the wallpaper's resources. |
 
 ### loadLabel
 
@@ -268,7 +268,7 @@ Load the user-displayed label for this wallpaper.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!:Supply a PackageManager used to load the wallpaper's resources. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:Supply a PackageManager used to load the wallpaper's resources. |
 
 ### loadThumbnail
 
@@ -282,7 +282,7 @@ Load the thumbnail image for this wallpaper.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!:Supply a PackageManager used to load the wallpaper's resources. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:Supply a PackageManager used to load the wallpaper's resources. |
 
 ### shouldUseDefaultUnfoldTransition
 
@@ -294,7 +294,7 @@ fun shouldUseDefaultUnfoldTransition(): Boolean
 
 Returns whether this wallpaper should receive default zooming updates when the device changes its state (e.g. when folding or unfolding a foldable device). If set to false the wallpaper will not receive zoom events when changing the device state, so it can implement its own transition instead.
 
-This corresponds to the value [android.R.styleable#Wallpaper_shouldUseDefaultUnfoldTransition](https://developer.android.com/reference/kotlin/android/R.styleable.html#Wallpaper_shouldUseDefaultUnfoldTransition:kotlin.Int) in the XML description of the wallpaper.
+This corresponds to the value [android.R.styleable#Wallpaper_shouldUseDefaultUnfoldTransition](../android/R.styleable.md) in the XML description of the wallpaper.
 
 The default value is`true`.
 
@@ -304,7 +304,7 @@ The default value is`true`.
 
 **See Also**
 
-- [android.R.styleable#Wallpaper_shouldUseDefaultUnfoldTransition](https://developer.android.com/reference/kotlin/android/R.styleable.html#Wallpaper_shouldUseDefaultUnfoldTransition:kotlin.Int) 
+- [android.R.styleable#Wallpaper_shouldUseDefaultUnfoldTransition](../android/R.styleable.md) 
 
 ### supportsMultipleDisplays
 
@@ -316,7 +316,7 @@ fun supportsMultipleDisplays(): Boolean
 
 Returns whether this wallpaper service can support multiple engines to render on each surface independently. An example use case is a multi-display set-up where the wallpaper service can render surfaces to each of the connected displays.
 
-This corresponds to the value [android.R.styleable#Wallpaper_supportsMultipleDisplays](https://developer.android.com/reference/kotlin/android/R.styleable.html#Wallpaper_supportsMultipleDisplays:kotlin.Int) in the XML description of the wallpaper.
+This corresponds to the value [android.R.styleable#Wallpaper_supportsMultipleDisplays](../android/R.styleable.md) in the XML description of the wallpaper.
 
 The default value is`false`.
 
@@ -326,8 +326,8 @@ The default value is`false`.
 
 **See Also**
 
-- [android.service.wallpaper.WallpaperService#onCreateEngine()](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.html#onCreateEngine())
-- [android.service.wallpaper.WallpaperService.Engine#onCreate(SurfaceHolder)](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine.html#onCreate(android.view.SurfaceHolder)) 
+- [android.service.wallpaper.WallpaperService#onCreateEngine()](../android/service/wallpaper/WallpaperService.md))
+- [android.service.wallpaper.WallpaperService.Engine#onCreate(SurfaceHolder)](../android/service/wallpaper/WallpaperService.Engine.md)) 
 
 ### toString
 
@@ -352,11 +352,11 @@ fun writeToParcel(
 ): Unit
 ```
 
-Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#).
+Used to package this object into a [Parcel](../android/os/Parcel.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#) to be written. |
+| `dest` | [Parcel](../android/os/Parcel.md):The [Parcel](../android/os/Parcel.md) to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The flags used for parceling. |
 
 ## Properties

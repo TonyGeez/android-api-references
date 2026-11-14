@@ -3,7 +3,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # FragmentHostCallback
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/FragmentHostCallback "View this page in Java")
+Kotlin | [Java](../android/app/FragmentHostCallback.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ abstract class FragmentHostCallback<E : Any!> : FragmentContainer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.app.FragmentContainer](https://developer.android.com/reference/kotlin/android/app/FragmentContainer) ||
-| | ↳ | [android.app.FragmentHostCallback](https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#) |
+| ↳ | [android.app.FragmentContainer](../android/app/FragmentContainer.md) ||
+| | ↳ | [android.app.FragmentHostCallback](../android/app/FragmentHostCallback.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -36,7 +36,7 @@ Fragments may be hosted by any object; such as an `https://developer.android.com
 | open T? | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onFindViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the view with the given resource ID. |
 | --- | --- |
 | abstract E? | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onGetHost()()` Return the object that's currently hosting the fragment. |
-| open [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#)! | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onGetLayoutInflater()()` Return a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`. |
+| open [LayoutInflater](../android/view/LayoutInflater.md)! | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onGetLayoutInflater()()` Return a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onGetWindowAnimations()()` Return the window animations. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onHasView()()` Return `true` if the container holds any view. |
@@ -97,8 +97,8 @@ Print internal state into the given stream.
 | Parameters ||
 |---|---|
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Desired prefix to prepend at each line of output. |
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
-| `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
+| `writer` | [PrintWriter](../java/io/PrintWriter.md)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 
@@ -212,7 +212,7 @@ Requests permissions from the given fragment. See `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `fragment` | [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment): This value cannot be `null`. |
+| `fragment` | [Fragment](../android/app/Fragment.md): This value cannot be `null`. |
 | `permissions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: This value cannot be `null`. |
 
 ### onShouldSaveFragmentState
@@ -268,7 +268,7 @@ Starts a new `https://developer.android.com/reference/kotlin/android/content/Int
 
 | Parameters ||
 |---|---|
-| `fillInIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: This value may be `null`. |
+| `fillInIntent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
 
 ### onUseFragmentManagerInflaterFactory
 

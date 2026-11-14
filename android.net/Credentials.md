@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Credentials
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/Credentials "View this page in Java") 
+Kotlin| [Java](../android/net/Credentials.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Credentials
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.Credentials](https://developer.android.com/reference/kotlin/android/net/Credentials#) |
+| ↳ | [android.net.Credentials](../android/net/Credentials.md) |
 
 A class for representing UNIX credentials passed via ancillary data on UNIX domain sockets. See "man 7 unix" on a desktop linux distro.
 
@@ -21,13 +21,13 @@ A class for representing UNIX credentials passed via ancillary data on UNIX doma
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Credentials](https://developer.android.com/reference/kotlin/android/net/Credentials#Credentials(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`pid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `gid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Credentials](../android/net/Credentials.md))`(`pid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `gid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGid](https://developer.android.com/reference/kotlin/android/net/Credentials#getGid())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPid](https://developer.android.com/reference/kotlin/android/net/Credentials#getPid())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUid](https://developer.android.com/reference/kotlin/android/net/Credentials#getUid())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGid](../android/net/Credentials.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPid](../android/net/Credentials.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUid](../android/net/Credentials.md))`()` <br /> |
 | --- | --- |
 
 ## Public constructors

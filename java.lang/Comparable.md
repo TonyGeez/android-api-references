@@ -6,11 +6,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Comparable<T : Any!>
 ```
 
-| [java.lang.Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable#) |
+| [java.lang.Comparable](../java/lang/Comparable.md) |
 
 This interface imposes a total ordering on the objects of each class that implements it. This ordering is referred to as the class's *natural ordering* , and the class's method is referred to as its *natural comparison method*.
 
-Lists (and arrays) of objects that implement this interface can be sorted automatically by `https://developer.android.com/reference/kotlin/java/util/Collections.html#sort(kotlin.collections.MutableList)` (and `https://developer.android.com/reference/kotlin/java/util/Arrays.html#sort(kotlin.Array)`). Objects that implement this interface can be used as keys in a [sorted map](https://developer.android.com/reference/kotlin/java/util/SortedMap.html#) or as elements in a [sorted set](https://developer.android.com/reference/kotlin/java/util/SortedSet.html#), without the need to specify a [comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#).
+Lists (and arrays) of objects that implement this interface can be sorted automatically by `https://developer.android.com/reference/kotlin/java/util/Collections.html#sort(kotlin.collections.MutableList)` (and `https://developer.android.com/reference/kotlin/java/util/Arrays.html#sort(kotlin.Array)`). Objects that implement this interface can be used as keys in a [sorted map](../java/util/SortedMap.md) or as elements in a [sorted set](../java/util/SortedSet.md), without the need to specify a [comparator](../java/util/Comparator.md).
 
 The natural ordering for a class `C` is said to be *consistent with equals* if and only if `e1.compareTo(e2) == 0` has the same boolean value as `e1.equals(e2)` for every `e1` and `e2` of class `C`. Note that `null` is not an instance of any class, and `e.compareTo(null)` should throw a `NullPointerException` even though `e.equals(null)` returns `false`.
 
@@ -18,7 +18,7 @@ It is strongly recommended (though not required) that natural orderings be consi
 
 For example, if one adds two keys `a` and `b` such that `(!a.equals(b) && a.compareTo(b) == 0)` to a sorted set that does not use an explicit comparator, the second `add` operation returns false (and the size of the sorted set does not increase) because `a` and `b` are equivalent from the sorted set's perspective.
 
-Virtually all Java core classes that implement `Comparable` have natural orderings that are consistent with equals. One exception is `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#`, whose [natural ordering](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#compareTo(java.math.BigDecimal)) equates `BigDecimal` objects with equal numerical values and different representations (such as 4.0 and 4.00). For `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#equals(kotlin.Any)` to return true, the representation and numerical value of the two `BigDecimal` objects must be the same.
+Virtually all Java core classes that implement `Comparable` have natural orderings that are consistent with equals. One exception is `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#`, whose [natural ordering](../java/math/BigDecimal.md)) equates `BigDecimal` objects with equal numerical values and different representations (such as 4.0 and 4.00). For `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#equals(kotlin.Any)` to return true, the representation and numerical value of the two `BigDecimal` objects must be the same.
 
 For the mathematically inclined, the *relation* that defines the natural ordering on a given class C is:
 

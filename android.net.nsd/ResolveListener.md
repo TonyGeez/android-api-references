@@ -4,26 +4,26 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # ResolveListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/nsd/NsdManager.ResolveListener "View this page in Java") 
+Kotlin| [Java](../android/net/nsd/NsdManager.ResolveListener.md) 
 | --- | --- |
 
 ```
 interface ResolveListener
 ```
 
-| [android.net.nsd.NsdManager.ResolveListener](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#) |
+| [android.net.nsd.NsdManager.ResolveListener](../android/net/nsd/NsdManager.ResolveListener.md) |
 
-Callback for use with android.net.nsd.NsdManager#resolveService to resolve the service info and use with [NsdManager.stopServiceResolution](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#stopServiceResolution(android.net.nsd.NsdManager.ResolveListener))to stop resolution.
+Callback for use with android.net.nsd.NsdManager#resolveService to resolve the service info and use with [NsdManager.stopServiceResolution](../android/net/nsd/NsdManager.md))to stop resolution.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResolutionStopped](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onResolutionStopped(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)`)` Called on the internal thread or with an executor passed to android. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResolveFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onResolveFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called on the internal thread or with an executor passed to android. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceResolved](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onServiceResolved(android.net.nsd.NsdServiceInfo))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)!`)` Called on the internal thread or with an executor passed to android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResolutionStopped](../android/net/nsd/NsdManager.ResolveListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)`)` Called on the internal thread or with an executor passed to android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResolveFailed](../android/net/nsd/NsdManager.ResolveListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called on the internal thread or with an executor passed to android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceResolved](../android/net/nsd/NsdManager.ResolveListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`)` Called on the internal thread or with an executor passed to android. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopResolutionFailed](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.ResolveListener#onStopResolutionFailed(android.net.nsd.NsdServiceInfo,%20kotlin.Int))`(`serviceInfo:` ` [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo)`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called once on the internal thread or with an executor passed to android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopResolutionFailed](../android/net/nsd/NsdManager.ResolveListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called once on the internal thread or with an executor passed to android. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ Called on the internal thread or with an executor passed to android.net.nsd.NsdM
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `serviceInfo` | [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo):This value cannot be`null`. |
+| `serviceInfo` | [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md):This value cannot be`null`. |
 
 ### onResolveFailed
 
@@ -81,5 +81,5 @@ Called once on the internal thread or with an executor passed to android.net.nsd
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `serviceInfo` | [NsdServiceInfo](https://developer.android.com/reference/kotlin/android/net/nsd/NsdServiceInfo):This value cannot be`null`. |
-| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.net.nsd.NsdManager#FAILURE_OPERATION_NOT_RUNNING](https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager#FAILURE_OPERATION_NOT_RUNNING:kotlin.Int) |
+| `serviceInfo` | [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md):This value cannot be`null`. |
+| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.net.nsd.NsdManager#FAILURE_OPERATION_NOT_RUNNING](../android/net/nsd/NsdManager.md) |

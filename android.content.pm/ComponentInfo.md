@@ -8,12 +8,12 @@ open class ComponentInfo : PackageItemInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo) ||
-| | ↳ | [android.content.pm.ComponentInfo](https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#) |
+| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) ||
+| | ↳ | [android.content.pm.ComponentInfo](../android/content/pm/ComponentInfo.md) |
 
-Known Direct Subclasses [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo), [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo), [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo) [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo) Information you can retrieve about a particular application activity or receiver.
-[ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo) Holds information about a specific `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`.
-[ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo) Information you can retrieve about a particular application service.
+Known Direct Subclasses [ActivityInfo](../android/content/pm/ActivityInfo.md), [ProviderInfo](../android/content/pm/ProviderInfo.md), [ServiceInfo](../android/content/pm/ServiceInfo.md) [ActivityInfo](../android/content/pm/ActivityInfo.md) Information you can retrieve about a particular application activity or receiver.
+[ProviderInfo](../android/content/pm/ProviderInfo.md) Holds information about a specific `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`.
+[ServiceInfo](../android/content/pm/ServiceInfo.md) Information you can retrieve about a particular application service.
 
 Base class containing information common to all application components (`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo`, `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo`). This class is not intended to be used by itself; it is simply here to share common definitions between all application components. As such, it does not itself implement Parcelable, but does provide convenience methods to assist in the implementation of Parcelable in subclasses.
 
@@ -88,7 +88,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Properties ||
 |---|---|
-| [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo)! | `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo` Global information about the application/package this component is a part of. |
+| [ApplicationInfo](../android/content/pm/ApplicationInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo` Global information about the application/package this component is a part of. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#attributionTags:kotlin.Array` Set of attribution tags that should be automatically applied to this component. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#descriptionRes:kotlin.Int` A string resource identifier (in the package's resources) containing a user-readable description of the component. |
 | --- | --- |

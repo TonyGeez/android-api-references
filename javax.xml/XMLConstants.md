@@ -10,7 +10,7 @@ class XMLConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.XMLConstants](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#) |
+| ↳ | [javax.xml.XMLConstants](../javax/xml/XMLConstants.md) |
 
 Utility class to contain basic XML values as constants.
 
@@ -18,21 +18,21 @@ Utility class to contain basic XML values as constants.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_NS_PREFIX](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#DEFAULT_NS_PREFIX:kotlin.String) Prefix to use to represent the default XML Namespace. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_SECURE_PROCESSING](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#FEATURE_SECURE_PROCESSING:kotlin.String) Feature for secure processing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NULL_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#NULL_NS_URI:kotlin.String) Namespace URI to use to represent that there is no Namespace. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_NS_PREFIX](../javax/xml/XMLConstants.md) Prefix to use to represent the default XML Namespace. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_SECURE_PROCESSING](../javax/xml/XMLConstants.md) Feature for secure processing. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NULL_NS_URI](../javax/xml/XMLConstants.md) Namespace URI to use to represent that there is no Namespace. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RELAXNG_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#RELAXNG_NS_URI:kotlin.String) RELAX NG Namespace URI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [W3C_XML_SCHEMA_INSTANCE_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#W3C_XML_SCHEMA_INSTANCE_NS_URI:kotlin.String) W3C XML Schema Instance Namespace URI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [W3C_XML_SCHEMA_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#W3C_XML_SCHEMA_NS_URI:kotlin.String) W3C XML Schema Namespace URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RELAXNG_NS_URI](../javax/xml/XMLConstants.md) RELAX NG Namespace URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [W3C_XML_SCHEMA_INSTANCE_NS_URI](../javax/xml/XMLConstants.md) W3C XML Schema Instance Namespace URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [W3C_XML_SCHEMA_NS_URI](../javax/xml/XMLConstants.md) W3C XML Schema Namespace URI. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [W3C_XPATH_DATATYPE_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#W3C_XPATH_DATATYPE_NS_URI:kotlin.String) W3C XPath Datatype Namespace URI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XMLNS_ATTRIBUTE](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#XMLNS_ATTRIBUTE:kotlin.String) The official XML attribute used for specifying XML Namespace declarations. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XMLNS_ATTRIBUTE_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#XMLNS_ATTRIBUTE_NS_URI:kotlin.String) The official XML attribute used for specifying XML Namespace declarations, [XMLConstants.XMLNS_ATTRIBUTE](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#XMLNS_ATTRIBUTE:kotlin.String), Namespace name URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [W3C_XPATH_DATATYPE_NS_URI](../javax/xml/XMLConstants.md) W3C XPath Datatype Namespace URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XMLNS_ATTRIBUTE](../javax/xml/XMLConstants.md) The official XML attribute used for specifying XML Namespace declarations. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XMLNS_ATTRIBUTE_NS_URI](../javax/xml/XMLConstants.md) The official XML attribute used for specifying XML Namespace declarations, [XMLConstants.XMLNS_ATTRIBUTE](../javax/xml/XMLConstants.md), Namespace name URI. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XML_DTD_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#XML_DTD_NS_URI:kotlin.String) XML Document Type Declaration Namespace URI as an arbitrary value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XML_NS_PREFIX](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#XML_NS_PREFIX:kotlin.String) The official XML Namespace prefix. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XML_NS_URI](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#XML_NS_URI:kotlin.String) The official XML Namespace name URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XML_DTD_NS_URI](../javax/xml/XMLConstants.md) XML Document Type Declaration Namespace URI as an arbitrary value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XML_NS_PREFIX](../javax/xml/XMLConstants.md) The official XML Namespace prefix. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [XML_NS_URI](../javax/xml/XMLConstants.md) The official XML Namespace name URI. |
 | --- | --- |
 
 ## Constants
@@ -172,7 +172,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val XMLNS_ATTRIBUTE_NS_URI: String
 ```
 
-The official XML attribute used for specifying XML Namespace declarations, [XMLConstants.XMLNS_ATTRIBUTE](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants#XMLNS_ATTRIBUTE:kotlin.String), Namespace name URI.
+The official XML attribute used for specifying XML Namespace declarations, [XMLConstants.XMLNS_ATTRIBUTE](../javax/xml/XMLConstants.md), Namespace name URI.
 
 Defined by the XML specification to be "`http://www.w3.org/2000/xmlns/`". 
 

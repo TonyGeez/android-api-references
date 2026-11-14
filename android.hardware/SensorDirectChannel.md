@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # SensorDirectChannel
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorDirectChannel "View this page in Java") 
+Kotlin| [Java](../android/hardware/SensorDirectChannel.md) 
 | --- | --- |
 
 ```
@@ -13,33 +13,33 @@ class SensorDirectChannel : Channel
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#) |
+| ↳ | [android.hardware.SensorDirectChannel](../android/hardware/SensorDirectChannel.md) |
 
-Class representing a sensor direct channel. Use [SensorManager.createDirectChannel(android.os.MemoryFile)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.os.MemoryFile))or [SensorManager.createDirectChannel(android.hardware.HardwareBuffer)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.hardware.HardwareBuffer))to obtain an object. The channel object can be then configured (see [configure(android.hardware.Sensor,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#configure(android.hardware.Sensor,%20kotlin.Int))) to start delivery of sensor events into shared memory buffer.
+Class representing a sensor direct channel. Use [SensorManager.createDirectChannel(android.os.MemoryFile)](../android/hardware/SensorManager.md))or [SensorManager.createDirectChannel(android.hardware.HardwareBuffer)](../android/hardware/SensorManager.md))to obtain an object. The channel object can be then configured (see [configure(android.hardware.Sensor,int)](../android/hardware/SensorDirectChannel.md))) to start delivery of sensor events into shared memory buffer.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_FAST](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_FAST:kotlin.Int) Sensor operates at nominal rate of 200Hz. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_NORMAL:kotlin.Int) Sensor operates at nominal rate of 50Hz. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_STOP](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_STOP:kotlin.Int) Sensor stopped (no event output). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_FAST](../android/hardware/SensorDirectChannel.md) Sensor operates at nominal rate of 200Hz. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_NORMAL](../android/hardware/SensorDirectChannel.md) Sensor operates at nominal rate of 50Hz. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_STOP](../android/hardware/SensorDirectChannel.md) Sensor stopped (no event output). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_VERY_FAST](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_VERY_FAST:kotlin.Int) Sensor operates at nominal rate of 800Hz. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HARDWARE_BUFFER](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#TYPE_HARDWARE_BUFFER:kotlin.Int) Shared memory type wrapped by HardwareBuffer object. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MEMORY_FILE](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#TYPE_MEMORY_FILE:kotlin.Int) Shared memory type ashmem, wrapped in MemoryFile object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RATE_VERY_FAST](../android/hardware/SensorDirectChannel.md) Sensor operates at nominal rate of 800Hz. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HARDWARE_BUFFER](../android/hardware/SensorDirectChannel.md) Shared memory type wrapped by HardwareBuffer object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MEMORY_FILE](../android/hardware/SensorDirectChannel.md) Shared memory type ashmem, wrapped in MemoryFile object. |
 | --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#close())`()` Close sensor direct channel. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [configure](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#configure(android.hardware.Sensor,%20kotlin.Int))`(`sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`, `rateLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure sensor rate or stop sensor report. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#isOpen())`()` Determine if a channel is still valid. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/hardware/SensorDirectChannel.md))`()` Close sensor direct channel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [configure](../android/hardware/SensorDirectChannel.md))`(`sensor:` ` [Sensor](../android/hardware/Sensor.md)!`, `rateLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure sensor rate or stop sensor report. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](../android/hardware/SensorDirectChannel.md))`()` Determine if a channel is still valid. |
 | --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#finalize())`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/hardware/SensorDirectChannel.md))`()` <br /> |
 
 ## Constants
 
@@ -57,7 +57,7 @@ Sensor operates at nominal rate of 200Hz. The actual rate is expected to be betw
 
 **See Also**
 
-- [#configure(Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#configure(android.hardware.Sensor,%20kotlin.Int)) 
+- [#configure(Sensor, int)](../android/hardware/SensorDirectChannel.md)) 
 
 ### RATE_NORMAL
 
@@ -73,7 +73,7 @@ Sensor operates at nominal rate of 50Hz. The actual rate is expected to be betwe
 
 **See Also**
 
-- [#configure(Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#configure(android.hardware.Sensor,%20kotlin.Int)) 
+- [#configure(Sensor, int)](../android/hardware/SensorDirectChannel.md)) 
 
 ### RATE_STOP
 
@@ -89,7 +89,7 @@ Sensor stopped (no event output).
 
 **See Also**
 
-- [#configure(Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#configure(android.hardware.Sensor,%20kotlin.Int)) 
+- [#configure(Sensor, int)](../android/hardware/SensorDirectChannel.md)) 
 
 ### RATE_VERY_FAST
 
@@ -105,7 +105,7 @@ Sensor operates at nominal rate of 800Hz. The actual rate is expected to be betw
 
 **See Also**
 
-- [#configure(Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#configure(android.hardware.Sensor,%20kotlin.Int)) 
+- [#configure(Sensor, int)](../android/hardware/SensorDirectChannel.md)) 
 
 ### TYPE_HARDWARE_BUFFER
 
@@ -121,7 +121,7 @@ Shared memory type wrapped by HardwareBuffer object.
 
 **See Also**
 
-- [android.hardware.SensorManager#createDirectChannel(HardwareBuffer)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.hardware.HardwareBuffer)) 
+- [android.hardware.SensorManager#createDirectChannel(HardwareBuffer)](../android/hardware/SensorManager.md)) 
 
 ### TYPE_MEMORY_FILE
 
@@ -137,7 +137,7 @@ Shared memory type ashmem, wrapped in MemoryFile object.
 
 **See Also**
 
-- [android.hardware.SensorManager#createDirectChannel(MemoryFile)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.os.MemoryFile))
+- [android.hardware.SensorManager#createDirectChannel(MemoryFile)](../android/hardware/SensorManager.md))
 
 ## Public methods
 
@@ -158,8 +158,8 @@ Close sensor direct channel. Stop all active sensor in the channel and free sens
 
 **See Also**
 
-- [android.hardware.SensorManager#createDirectChannel(MemoryFile)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.os.MemoryFile))
-- [android.hardware.SensorManager#createDirectChannel(HardwareBuffer)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.hardware.HardwareBuffer)) 
+- [android.hardware.SensorManager#createDirectChannel(MemoryFile)](../android/hardware/SensorManager.md))
+- [android.hardware.SensorManager#createDirectChannel(HardwareBuffer)](../android/hardware/SensorManager.md)) 
 
 ### configure
 
@@ -172,7 +172,7 @@ fun configure(
 ): Int
 ```
 
-Configure sensor rate or stop sensor report. To start event report of a sensor, or change rate of existing report, call this function with rateLevel other than [android.hardware.SensorDirectChannel#RATE_STOP](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_STOP:kotlin.Int). Sensor events will be added into a queue formed by the shared memory used in creation of direction channel. Each element of the queue has size of 104 bytes and represents a sensor event. Data structure of an element (all fields in little-endian): 
+Configure sensor rate or stop sensor report. To start event report of a sensor, or change rate of existing report, call this function with rateLevel other than [android.hardware.SensorDirectChannel#RATE_STOP](../android/hardware/SensorDirectChannel.md). Sensor events will be added into a queue formed by the shared memory used in creation of direction channel. Each element of the queue has size of 104 bytes and represents a sensor event. Data structure of an element (all fields in little-endian): 
 
 ```kotlin
 offset   type                    name
@@ -186,14 +186,14 @@ offset   type                    name
     0x0058   int32_t[4]              reserved (set to zero)
   
 ```
-There are no head or tail pointers. The sequence and frontier of new sensor events is determined by the atomic counter, which counts from 1 after creation of direct channel and increments 1 for each new event. Atomic counter will wrap back to 1 after it reaches UINT32_MAX, skipping value 0 to avoid confusion with uninitialized memory. The writer in sensor system will wrap around from the start of shared memory region when it reaches the end. If size of memory region is not a multiple of size of element (104 bytes), the residual is not used at the end. Function returns a positive sensor report token on success. This token can be used to differentiate sensor events from multiple sensor of the same type. For example, if there are two accelerometers in the system A and B, it is guaranteed different report tokens will be returned when starting sensor A and B. To stop a sensor, call this function with rateLevel equal [android.hardware.SensorDirectChannel#RATE_STOP](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_STOP:kotlin.Int). If the sensor parameter is left to be null, this will stop all active sensor report associated with the direct channel specified. Function return 1 on success or 0 on failure.
+There are no head or tail pointers. The sequence and frontier of new sensor events is determined by the atomic counter, which counts from 1 after creation of direct channel and increments 1 for each new event. Atomic counter will wrap back to 1 after it reaches UINT32_MAX, skipping value 0 to avoid confusion with uninitialized memory. The writer in sensor system will wrap around from the start of shared memory region when it reaches the end. If size of memory region is not a multiple of size of element (104 bytes), the residual is not used at the end. Function returns a positive sensor report token on success. This token can be used to differentiate sensor events from multiple sensor of the same type. For example, if there are two accelerometers in the system A and B, it is guaranteed different report tokens will be returned when starting sensor A and B. To stop a sensor, call this function with rateLevel equal [android.hardware.SensorDirectChannel#RATE_STOP](../android/hardware/SensorDirectChannel.md). If the sensor parameter is left to be null, this will stop all active sensor report associated with the direct channel specified. Function return 1 on success or 0 on failure.
 
 <br />
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:A [android.hardware.Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) object to denote sensor to be operated. |
-| `rateLevel` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):rate level defined in [android.hardware.SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#). Value is [android.hardware.SensorDirectChannel#RATE_STOP](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_STOP:kotlin.Int), [android.hardware.SensorDirectChannel#RATE_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_NORMAL:kotlin.Int), [android.hardware.SensorDirectChannel#RATE_FAST](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_FAST:kotlin.Int), or [android.hardware.SensorDirectChannel#RATE_VERY_FAST](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_VERY_FAST:kotlin.Int) |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:A [android.hardware.Sensor](../android/hardware/Sensor.md) object to denote sensor to be operated. |
+| `rateLevel` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):rate level defined in [android.hardware.SensorDirectChannel](../android/hardware/SensorDirectChannel.md). Value is [android.hardware.SensorDirectChannel#RATE_STOP](../android/hardware/SensorDirectChannel.md), [android.hardware.SensorDirectChannel#RATE_NORMAL](../android/hardware/SensorDirectChannel.md), [android.hardware.SensorDirectChannel#RATE_FAST](../android/hardware/SensorDirectChannel.md), or [android.hardware.SensorDirectChannel#RATE_VERY_FAST](../android/hardware/SensorDirectChannel.md) |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|

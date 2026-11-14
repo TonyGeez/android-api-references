@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # PrintStreamPrinter
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/PrintStreamPrinter "View this page in Java") 
+Kotlin| [Java](../android/util/PrintStreamPrinter.md) 
 | --- | --- |
 
 ```
@@ -13,19 +13,19 @@ open class PrintStreamPrinter : Printer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.PrintStreamPrinter](https://developer.android.com/reference/kotlin/android/util/PrintStreamPrinter#) |
+| ↳ | [android.util.PrintStreamPrinter](../android/util/PrintStreamPrinter.md) |
 
-Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer) that sends its output to a [java.io.PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#).
+Implementation of a [android.util.Printer](../android/util/Printer.md) that sends its output to a [java.io.PrintStream](../java/io/PrintStream.md).
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PrintStreamPrinter](https://developer.android.com/reference/kotlin/android/util/PrintStreamPrinter#PrintStreamPrinter(java.io.PrintStream))`(`pw:` ` [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)!`)` Create a new Printer that sends to a PrintWriter object. |
+| [PrintStreamPrinter](../android/util/PrintStreamPrinter.md))`(`pw:` ` [PrintStream](../java/io/PrintStream.md)!`)` Create a new Printer that sends to a PrintWriter object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/android/util/PrintStreamPrinter#println(kotlin.String))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](../android/util/PrintStreamPrinter.md))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ Create a new Printer that sends to a PrintWriter object.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `pw` | [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)!:The PrintWriter where you would like output to go. |
+| `pw` | [PrintStream](../java/io/PrintStream.md)!:The PrintWriter where you would like output to go. |
 
 ## Public methods
 

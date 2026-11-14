@@ -10,7 +10,7 @@ class EncryptedTopic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.topics.EncryptedTopic](https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#) |
+| ↳ | [android.adservices.topics.EncryptedTopic](../android/adservices/topics/EncryptedTopic.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**

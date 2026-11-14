@@ -2,7 +2,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # MtpObjectInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/mtp/MtpObjectInfo "View this page in Java")
+Kotlin | [Java](../android/mtp/MtpObjectInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class MtpObjectInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.mtp.MtpObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo#) |
+| ↳ | [android.mtp.MtpObjectInfo](../android/mtp/MtpObjectInfo.md) |
 
 This class encapsulates information about an object on an MTP device. This corresponds to the ObjectInfo Dataset described in section 5.3.1 of the MTP specification.
 

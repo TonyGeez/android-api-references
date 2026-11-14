@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # SensorEvent
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorEvent "View this page in Java") 
+Kotlin| [Java](../android/hardware/SensorEvent.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class SensorEvent
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#) |
+| ↳ | [android.hardware.SensorEvent](../android/hardware/SensorEvent.md) |
 
-This class represents a [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) event and holds information such as the sensor's type, the time-stamp, accuracy and of course the sensor's [data](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray).
+This class represents a [Sensor](../android/hardware/Sensor.md) event and holds information such as the sensor's type, the time-stamp, accuracy and of course the sensor's [data](../android/hardware/SensorEvent.md).
 
 Definition of the coordinate system used by the SensorEvent API.
 
@@ -33,12 +33,12 @@ The X axis is horizontal and points to the right, the Y axis is vertical and poi
 
 | Properties ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [accuracy](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#accuracy:kotlin.Int) The accuracy of this event. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [firstEventAfterDiscontinuity](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#firstEventAfterDiscontinuity:kotlin.Boolean) Set to true when this is the first sensor event after a discontinuity. |
-| [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)! | [sensor](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#sensor:android.hardware.Sensor) The sensor that generated this event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [accuracy](../android/hardware/SensorEvent.md) The accuracy of this event. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [firstEventAfterDiscontinuity](../android/hardware/SensorEvent.md) Set to true when this is the first sensor event after a discontinuity. |
+| [Sensor](../android/hardware/Sensor.md)! | [sensor](../android/hardware/SensorEvent.md) The sensor that generated this event. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#timestamp:kotlin.Long) The time in nanoseconds at which the event happened. |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [values](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray) The length and contents of the [values](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray) array depends on which [sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) type is being monitored (see also [SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#) for a definition of the coordinate system used). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](../android/hardware/SensorEvent.md) The time in nanoseconds at which the event happened. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [values](../android/hardware/SensorEvent.md) The length and contents of the [values](../android/hardware/SensorEvent.md) array depends on which [sensor](../android/hardware/Sensor.md) type is being monitored (see also [SensorEvent](../android/hardware/SensorEvent.md) for a definition of the coordinate system used). |
 
 ## Properties
 
@@ -50,7 +50,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var accuracy: Int
 ```
 
-The accuracy of this event. See [SensorManager](https://developer.android.com/reference/kotlin/android/hardware/SensorManager) for details. 
+The accuracy of this event. See [SensorManager](../android/hardware/SensorManager.md) for details. 
 
 ### firstEventAfterDiscontinuity
 
@@ -60,7 +60,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 var firstEventAfterDiscontinuity: Boolean
 ```
 
-Set to true when this is the first sensor event after a discontinuity. The exact meaning of discontinuity depends on the sensor type. For [Sensor.TYPE_HEAD_TRACKER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEAD_TRACKER:kotlin.Int), this means that the reference frame has suddenly and significantly changed, for example if the head tracking device was removed then put back. Note that this concept is either not relevant to or not supported by most sensor types, [Sensor.TYPE_HEAD_TRACKER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEAD_TRACKER:kotlin.Int) being the notable exception. 
+Set to true when this is the first sensor event after a discontinuity. The exact meaning of discontinuity depends on the sensor type. For [Sensor.TYPE_HEAD_TRACKER](../android/hardware/Sensor.md), this means that the reference frame has suddenly and significantly changed, for example if the head tracking device was removed then put back. Note that this concept is either not relevant to or not supported by most sensor types, [Sensor.TYPE_HEAD_TRACKER](../android/hardware/Sensor.md) being the notable exception. 
 
 ### sensor
 
@@ -70,7 +70,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var sensor: Sensor!
 ```
 
-The sensor that generated this event. See [SensorManager](https://developer.android.com/reference/kotlin/android/hardware/SensorManager) for details. 
+The sensor that generated this event. See [SensorManager](../android/hardware/SensorManager.md) for details. 
 
 ### timestamp
 
@@ -80,7 +80,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var timestamp: Long
 ```
 
-The time in nanoseconds at which the event happened. For a given sensor, each new sensor event should be monotonically increasing using the same time base as [android.os.SystemClock#elapsedRealtimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtimeNanos()). 
+The time in nanoseconds at which the event happened. For a given sensor, each new sensor event should be monotonically increasing using the same time base as [android.os.SystemClock#elapsedRealtimeNanos()](../android/os/SystemClock.md)). 
 
 ### values
 
@@ -90,9 +90,9 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 val values: FloatArray!
 ```
 
-The length and contents of the [values](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray) array depends on which [sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) type is being monitored (see also [SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#) for a definition of the coordinate system used).
+The length and contents of the [values](../android/hardware/SensorEvent.md) array depends on which [sensor](../android/hardware/Sensor.md) type is being monitored (see also [SensorEvent](../android/hardware/SensorEvent.md) for a definition of the coordinate system used).
 
-#### [Sensor.TYPE_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int):
+#### [Sensor.TYPE_ACCELEROMETER](../android/hardware/Sensor.md):
 
 All values are in SI units (m/s\^2)
 
@@ -138,11 +138,11 @@ Examples:
 - When the device lies flat on a table, the acceleration value is +9.81, which correspond to the acceleration of the device (0 m/s\^2) minus the force of gravity (-9.81 m/s\^2).
 - When the device lies flat on a table and is pushed toward the sky with an acceleration of A m/s\^2, the acceleration value is equal to A+9.81 which correspond to the acceleration of the device (+A m/s\^2) minus the force of gravity (-9.81 m/s\^2).
 
-#### [Sensor.TYPE_MAGNETIC_FIELD](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MAGNETIC_FIELD:kotlin.Int):
+#### [Sensor.TYPE_MAGNETIC_FIELD](../android/hardware/Sensor.md):
 
 All values are in micro-Tesla (uT) and measure the ambient magnetic field in the X, Y and Z axis.
 
-#### [Sensor.TYPE_GYROSCOPE](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE:kotlin.Int):
+#### [Sensor.TYPE_GYROSCOPE](../android/hardware/Sensor.md):
 
 All values are in radians/second and measure the rate of rotation around the device's local X, Y and Z axis. The coordinate system is the same as is used for the acceleration sensor. Rotation is positive in the counter-clockwise direction. That is, an observer looking from some positive location on the x, y or z axis at a device positioned on the origin would report positive rotation if the device appeared to be rotating counter clockwise. Note that this is the standard mathematical definition of positive rotation and does not agree with the definition of roll given earlier.
 
@@ -201,27 +201,27 @@ private static final float NS2S = 1.0f / 1000000000.0f;
 
 In practice, the gyroscope noise and offset will introduce some errors which need to be compensated for. This is usually done using the information from other sensors, but is beyond the scope of this document.
 
-#### [Sensor.TYPE_LIGHT](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_LIGHT:kotlin.Int):
+#### [Sensor.TYPE_LIGHT](../android/hardware/Sensor.md):
 
 - values\[0\]: Ambient light level in SI lux units
 
-#### [Sensor.TYPE_PRESSURE](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PRESSURE:kotlin.Int):
+#### [Sensor.TYPE_PRESSURE](../android/hardware/Sensor.md):
 
 - values\[0\]: Atmospheric pressure in hPa (millibar)
 
-#### [Sensor.TYPE_PROXIMITY](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PROXIMITY:kotlin.Int):
+#### [Sensor.TYPE_PROXIMITY](../android/hardware/Sensor.md):
 
 - values\[0\]: Proximity sensor distance measured in centimeters
 
-**Note:** Some proximity sensors only support a binary*near* or*far* measurement. In this case, the sensor should report its [maximum range](https://developer.android.com/reference/kotlin/android/hardware/Sensor#getMaximumRange())value in the*far* state and a lesser value in the*near*state.
+**Note:** Some proximity sensors only support a binary*near* or*far* measurement. In this case, the sensor should report its [maximum range](../android/hardware/Sensor.md))value in the*far* state and a lesser value in the*near*state.
 
-#### [Sensor.TYPE_GRAVITY](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GRAVITY:kotlin.Int):
+#### [Sensor.TYPE_GRAVITY](../android/hardware/Sensor.md):
 
 A three dimensional vector indicating the direction and magnitude of gravity. Units are m/s\^2. The coordinate system is the same as is used by the acceleration sensor.
 
 **Note:**When the device is at rest, the output of the gravity sensor should be identical to that of the accelerometer.
 
-#### [Sensor.TYPE_LINEAR_ACCELERATION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_LINEAR_ACCELERATION:kotlin.Int):
+#### [Sensor.TYPE_LINEAR_ACCELERATION](../android/hardware/Sensor.md):
 
 A three dimensional vector indicating acceleration along each device axis, not including gravity. All values have units of m/s\^2. The coordinate system is the same as is used by the acceleration sensor.
 
@@ -233,7 +233,7 @@ acceleration = gravity + linear-acceleration
 
 <br />
 
-#### [Sensor.TYPE_ROTATION_VECTOR](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ROTATION_VECTOR:kotlin.Int):
+#### [Sensor.TYPE_ROTATION_VECTOR](../android/hardware/Sensor.md):
 
 The rotation vector represents the orientation of the device as a combination of an*angle* and an*axis*, in which the device has rotated through an angle θ around an axis \<x, y, z\>.
 
@@ -266,7 +266,7 @@ The reference coordinate system is defined as a direct orthonormal basis, where:
 
 values\[3\], originally optional, will always be present from SDK Level 18 onwards. values\[4\] is a new value that has been added in SDK Level 18.
 
-#### [Sensor.TYPE_ORIENTATION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ORIENTATION:kotlin.Int):
+#### [Sensor.TYPE_ORIENTATION](../android/hardware/Sensor.md):
 
 All values are angles in degrees.
 
@@ -278,11 +278,11 @@ All values are angles in degrees.
 
 **Note:** This definition is different from**yaw, pitch and roll**used in aviation where the X axis is along the long side of the plane (tail to nose).
 
-**Note:** This sensor type exists for legacy reasons, please use [rotation vector sensor type](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ROTATION_VECTOR:kotlin.Int) and [getRotationMatrix()](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray))in conjunction with [remapCoordinateSystem()](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray))and [getOrientation()](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray))to compute these values instead.
+**Note:** This sensor type exists for legacy reasons, please use [rotation vector sensor type](../android/hardware/Sensor.md) and [getRotationMatrix()](../android/hardware/SensorManager.md))in conjunction with [remapCoordinateSystem()](../android/hardware/SensorManager.md))and [getOrientation()](../android/hardware/SensorManager.md))to compute these values instead.
 
 **Important note:**For historical reasons the roll angle is positive in the clockwise direction (mathematically speaking, it should be positive in the counter-clockwise direction).
 
-#### [Sensor.TYPE_RELATIVE_HUMIDITY](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_RELATIVE_HUMIDITY:kotlin.Int):
+#### [Sensor.TYPE_RELATIVE_HUMIDITY](../android/hardware/Sensor.md):
 
 - values\[0\]: Relative ambient air humidity in percent
 
@@ -357,13 +357,13 @@ dv = 216.7 *
   
 ```
 
-#### [Sensor.TYPE_AMBIENT_TEMPERATURE](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_AMBIENT_TEMPERATURE:kotlin.Int):
+#### [Sensor.TYPE_AMBIENT_TEMPERATURE](../android/hardware/Sensor.md):
 
 - values\[0\]: Ambient (room) temperature in degrees Celsius
 
-#### [Sensor.TYPE_MAGNETIC_FIELD_UNCALIBRATED](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MAGNETIC_FIELD_UNCALIBRATED:kotlin.Int):
+#### [Sensor.TYPE_MAGNETIC_FIELD_UNCALIBRATED](../android/hardware/Sensor.md):
 
-Similar to [android.hardware.Sensor#TYPE_MAGNETIC_FIELD](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MAGNETIC_FIELD:kotlin.Int), but the hard iron calibration is reported separately instead of being included in the measurement. Factory calibration and temperature compensation will still be applied to the "uncalibrated" measurement. Assumptions that the magnetic field is due to the Earth's poles is avoided.
+Similar to [android.hardware.Sensor#TYPE_MAGNETIC_FIELD](../android/hardware/Sensor.md), but the hard iron calibration is reported separately instead of being included in the measurement. Factory calibration and temperature compensation will still be applied to the "uncalibrated" measurement. Assumptions that the magnetic field is due to the Earth's poles is avoided.
 
 The values array is shown below:
 
@@ -382,19 +382,19 @@ x_bias, y_bias, z_bias give the iron bias estimated in X, Y, Z axes. Each field 
 
 Hard iron - These distortions arise due to the magnetized iron, steel or permanent magnets on the device. Soft iron - These distortions arise due to the interaction with the earth's magnetic field.
 
-#### [Sensor.TYPE_GAME_ROTATION_VECTOR](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GAME_ROTATION_VECTOR:kotlin.Int):
+#### [Sensor.TYPE_GAME_ROTATION_VECTOR](../android/hardware/Sensor.md):
 
-Identical to [android.hardware.Sensor#TYPE_ROTATION_VECTOR](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ROTATION_VECTOR:kotlin.Int) except that it doesn't use the geomagnetic field. Therefore the Y axis doesn't point north, but instead to some other reference, that reference is allowed to drift by the same order of magnitude as the gyroscope drift around the Z axis.
+Identical to [android.hardware.Sensor#TYPE_ROTATION_VECTOR](../android/hardware/Sensor.md) except that it doesn't use the geomagnetic field. Therefore the Y axis doesn't point north, but instead to some other reference, that reference is allowed to drift by the same order of magnitude as the gyroscope drift around the Z axis.
 
-In the ideal case, a phone rotated and returning to the same real-world orientation will report the same game rotation vector (without using the earth's geomagnetic field). However, the orientation may drift somewhat over time. See [android.hardware.Sensor#TYPE_ROTATION_VECTOR](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ROTATION_VECTOR:kotlin.Int) for a detailed description of the values. This sensor will not have the estimated heading accuracy value.
+In the ideal case, a phone rotated and returning to the same real-world orientation will report the same game rotation vector (without using the earth's geomagnetic field). However, the orientation may drift somewhat over time. See [android.hardware.Sensor#TYPE_ROTATION_VECTOR](../android/hardware/Sensor.md) for a detailed description of the values. This sensor will not have the estimated heading accuracy value.
 
-#### [Sensor.TYPE_GYROSCOPE_UNCALIBRATED](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE_UNCALIBRATED:kotlin.Int):
+#### [Sensor.TYPE_GYROSCOPE_UNCALIBRATED](../android/hardware/Sensor.md):
 
 All values are in radians/second and measure the rate of rotation around the X, Y and Z axis. An estimation of the drift on each axis is reported as well.
 
 No gyro-drift compensation is performed. Factory calibration and temperature compensation is still applied to the rate of rotation (angular speeds).
 
-The coordinate system is the same as is used for the [android.hardware.Sensor#TYPE_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int) Rotation is positive in the counter-clockwise direction (right-hand rule). That is, an observer looking from some positive location on the x, y or z axis at a device positioned on the origin would report positive rotation if the device appeared to be rotating counter clockwise. The range would at least be 17.45 rad/s (ie: \~1000 deg/s).
+The coordinate system is the same as is used for the [android.hardware.Sensor#TYPE_ACCELEROMETER](../android/hardware/Sensor.md) Rotation is positive in the counter-clockwise direction (right-hand rule). That is, an observer looking from some positive location on the x, y or z axis at a device positioned on the origin would report positive rotation if the device appeared to be rotating counter clockwise. The range would at least be 17.45 rad/s (ie: \~1000 deg/s).
 
 - values\[0\] : angular speed (w/o drift compensation) around the X axis in rad/s
 - values\[1\] : angular speed (w/o drift compensation) around the Y axis in rad/s
@@ -407,7 +407,7 @@ The coordinate system is the same as is used for the [android.hardware.Sensor#TY
 
 **Pro Tip:**Always use the length of the values array while performing operations on it. In earlier versions, this used to be always 3 which has changed now.
 
-#### [Sensor.TYPE_POSE_6DOF](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_POSE_6DOF:kotlin.Int):
+#### [Sensor.TYPE_POSE_6DOF](../android/hardware/Sensor.md):
 
 A TYPE_POSE_6DOF event consists of a rotation expressed as a quaternion and a translation expressed in SI units. The event also contains a delta rotation and translation that show how the device?s pose has changed since the previous sequence numbered pose. The event uses the cannonical Android Sensor axes.
 
@@ -427,27 +427,27 @@ A TYPE_POSE_6DOF event consists of a rotation expressed as a quaternion and a tr
 - values\[13\]: Delta translation along z axis.
 - values\[14\]: Sequence number
 
-#### [Sensor.TYPE_STATIONARY_DETECT](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_STATIONARY_DETECT:kotlin.Int):
+#### [Sensor.TYPE_STATIONARY_DETECT](../android/hardware/Sensor.md):
 
 A TYPE_STATIONARY_DETECT event is produced if the device has been stationary for at least 5 seconds with a maximal latency of 5 additional seconds. ie: it may take up anywhere from 5 to 10 seconds afte the device has been at rest to trigger this event. The only allowed value is 1.0.
 
 - values\[0\]: 1.0
 
-#### [Sensor.TYPE_MOTION_DETECT](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MOTION_DETECT:kotlin.Int):
+#### [Sensor.TYPE_MOTION_DETECT](../android/hardware/Sensor.md):
 
 A TYPE_MOTION_DETECT event is produced if the device has been in motion for at least 5 seconds with a maximal latency of 5 additional seconds. ie: it may take up anywhere from 5 to 10 seconds afte the device has been at rest to trigger this event. The only allowed value is 1.0.
 
 - values\[0\]: 1.0
 
-#### [Sensor.TYPE_STEP_COUNTER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_STEP_COUNTER:kotlin.Int):
+#### [Sensor.TYPE_STEP_COUNTER](../android/hardware/Sensor.md):
 
 - values\[0\]: Number of steps taken by the user since the last reboot while the sensor is activated
 
-#### [Sensor.TYPE_STEP_DETECTOR](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_STEP_DETECTOR:kotlin.Int):
+#### [Sensor.TYPE_STEP_DETECTOR](../android/hardware/Sensor.md):
 
 - values\[0\]: Always set to 1.0, representing a single step detected event
 
-#### [Sensor.TYPE_HEART_BEAT](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEART_BEAT:kotlin.Int):
+#### [Sensor.TYPE_HEART_BEAT](../android/hardware/Sensor.md):
 
 A sensor of this type returns an event everytime a heart beat peak is detected. Peak here ideally corresponds to the positive peak in the QRS complex of an ECG signal.
 
@@ -455,7 +455,7 @@ A sensor of this type returns an event everytime a heart beat peak is detected. 
 
 A confidence value of 0.0 indicates complete uncertainty - that a peak is as likely to be at the indicated timestamp as anywhere else. A confidence value of 1.0 indicates complete certainly - that a peak is completely unlikely to be anywhere else on the QRS complex.
 
-#### [Sensor.TYPE_LOW_LATENCY_OFFBODY_DETECT](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_LOW_LATENCY_OFFBODY_DETECT:kotlin.Int):
+#### [Sensor.TYPE_LOW_LATENCY_OFFBODY_DETECT](../android/hardware/Sensor.md):
 
 A sensor of this type returns an event every time the device transitions from off-body to on-body and from on-body to off-body (e.g. a wearable device being removed from the wrist would trigger an event indicating an off-body transition). The event returned will contain a single value to indicate off-body state:
 
@@ -472,9 +472,9 @@ When a sensor of this type is activated, it must deliver the initial on-body or 
 
 This sensor must be able to detect and report an on-body to off-body transition within 3 seconds of the device being removed from the body, and must be able to detect and report an off-body to on-body transition within 5 seconds of the device being put back onto the body.
 
-#### [Sensor.TYPE_ACCELEROMETER_UNCALIBRATED](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER_UNCALIBRATED:kotlin.Int):
+#### [Sensor.TYPE_ACCELEROMETER_UNCALIBRATED](../android/hardware/Sensor.md):
 
-All values are in SI units (m/s\^2) Similar to [android.hardware.Sensor#TYPE_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int), Factory calibration and temperature compensation will still be applied to the "uncalibrated" measurement.
+All values are in SI units (m/s\^2) Similar to [android.hardware.Sensor#TYPE_ACCELEROMETER](../android/hardware/Sensor.md), Factory calibration and temperature compensation will still be applied to the "uncalibrated" measurement.
 
 The values array is shown below:
 
@@ -487,15 +487,15 @@ The values array is shown below:
 
 <br />
 
-x_uncalib, y_uncalib, z_uncalib are the measured acceleration in X, Y, Z axes similar to the [android.hardware.Sensor#TYPE_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int), without any bias correction (factory bias compensation and any temperature compensation is allowed). x_bias, y_bias, z_bias are the estimated biases.
+x_uncalib, y_uncalib, z_uncalib are the measured acceleration in X, Y, Z axes similar to the [android.hardware.Sensor#TYPE_ACCELEROMETER](../android/hardware/Sensor.md), without any bias correction (factory bias compensation and any temperature compensation is allowed). x_bias, y_bias, z_bias are the estimated biases.
 
-#### [Sensor.TYPE_HINGE_ANGLE](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HINGE_ANGLE:kotlin.Int):
+#### [Sensor.TYPE_HINGE_ANGLE](../android/hardware/Sensor.md):
 
 A sensor of this type measures the angle, in degrees, between two integral parts of the device. Movement of a hinge measured by this sensor type is expected to alter the ways in which the user may interact with the device, for example by unfolding or revealing a display.
 
 - values\[0\]: Measured hinge angle between 0 and 360 degrees inclusive
 
-#### [Sensor.TYPE_HEAD_TRACKER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEAD_TRACKER:kotlin.Int):
+#### [Sensor.TYPE_HEAD_TRACKER](../android/hardware/Sensor.md):
 
 A sensor of this type measures the orientation of a user's head relative to an arbitrary reference frame, as well as the rate of rotation. Events produced by this sensor follow a special head-centric coordinate frame, where:
 
@@ -514,9 +514,9 @@ Data is provided in Euler vector representation, which is a vector whose directi
 - values\[4\] : Y component of Euler vector representing angular velocity (if supported, otherwise 0)
 - values\[5\] : Z component of Euler vector representing angular velocity (if supported, otherwise 0)
 
-#### [Sensor.TYPE_ACCELEROMETER_LIMITED_AXES](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER_LIMITED_AXES:kotlin.Int):
+#### [Sensor.TYPE_ACCELEROMETER_LIMITED_AXES](../android/hardware/Sensor.md):
 
-Equivalent to TYPE_ACCELEROMETER, but supporting cases where one or two axes are not supported. The last three values represent whether the acceleration value for a given axis is supported. A value of 1.0 indicates that the axis is supported, while a value of 0 means it isn't supported. The supported axes should be determined at build time and these values do not change during runtime. The acceleration values for axes that are not supported are set to 0. Similar to [android.hardware.Sensor#TYPE_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int).
+Equivalent to TYPE_ACCELEROMETER, but supporting cases where one or two axes are not supported. The last three values represent whether the acceleration value for a given axis is supported. A value of 1.0 indicates that the axis is supported, while a value of 0 means it isn't supported. The supported axes should be determined at build time and these values do not change during runtime. The acceleration values for axes that are not supported are set to 0. Similar to [android.hardware.Sensor#TYPE_ACCELEROMETER](../android/hardware/Sensor.md).
 
 - values\[0\]: Acceleration minus Gx on the x-axis (if supported)
 - values\[1\]: Acceleration minus Gy on the y-axis (if supported)
@@ -525,9 +525,9 @@ Equivalent to TYPE_ACCELEROMETER, but supporting cases where one or two axes are
 - values\[4\]: Acceleration supported for y-axis
 - values\[5\]: Acceleration supported for z-axis
 
-#### [Sensor.TYPE_GYROSCOPE_LIMITED_AXES](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE_LIMITED_AXES:kotlin.Int):
+#### [Sensor.TYPE_GYROSCOPE_LIMITED_AXES](../android/hardware/Sensor.md):
 
-Equivalent to TYPE_GYROSCOPE, but supporting cases where one or two axes are not supported. The last three values represent whether the angular speed value for a given axis is supported. A value of 1.0 indicates that the axis is supported, while a value of 0 means it isn't supported. The supported axes should be determined at build time and these values do not change during runtime. The angular speed values for axes that are not supported are set to 0. Similar to [android.hardware.Sensor#TYPE_GYROSCOPE](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE:kotlin.Int).
+Equivalent to TYPE_GYROSCOPE, but supporting cases where one or two axes are not supported. The last three values represent whether the angular speed value for a given axis is supported. A value of 1.0 indicates that the axis is supported, while a value of 0 means it isn't supported. The supported axes should be determined at build time and these values do not change during runtime. The angular speed values for axes that are not supported are set to 0. Similar to [android.hardware.Sensor#TYPE_GYROSCOPE](../android/hardware/Sensor.md).
 
 - values\[0\]: Angular speed around the x-axis (if supported)
 - values\[1\]: Angular speed around the y-axis (if supported)
@@ -538,7 +538,7 @@ Equivalent to TYPE_GYROSCOPE, but supporting cases where one or two axes are not
 
 <br />
 
-#### [Sensor.TYPE_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED:kotlin.Int):
+#### [Sensor.TYPE_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED](../android/hardware/Sensor.md):
 
 Equivalent to TYPE_ACCELEROMETER_UNCALIBRATED, but supporting cases where one or two axes are not supported. The last three values represent whether the acceleration value for a given axis is supported. A value of 1.0 indicates that the axis is supported, while a value of 0 means it isn't supported. The supported axes should be determined at build time and these values do not change during runtime. The acceleration values and bias values for axes that are not supported are set to 0.
 
@@ -554,7 +554,7 @@ Equivalent to TYPE_ACCELEROMETER_UNCALIBRATED, but supporting cases where one or
 
 <br />
 
-#### [Sensor.TYPE_GYROSCOPE_LIMITED_AXES_UNCALIBRATED](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_GYROSCOPE_LIMITED_AXES_UNCALIBRATED:kotlin.Int):
+#### [Sensor.TYPE_GYROSCOPE_LIMITED_AXES_UNCALIBRATED](../android/hardware/Sensor.md):
 
 Equivalent to TYPE_GYROSCOPE_UNCALIBRATED, but supporting cases where one or two axes are not supported. The last three values represent whether the angular speed value for a given axis is supported. A value of 1.0 indicates that the axis is supported, while a value of 0 means it isn't supported. The supported axes should be determined at build time and these values do not change during runtime. The angular speed values and drift values for axes that are not supported are set to 0.
 
@@ -570,7 +570,7 @@ Equivalent to TYPE_GYROSCOPE_UNCALIBRATED, but supporting cases where one or two
 
 <br />
 
-#### [Sensor.TYPE_HEADING](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_HEADING:kotlin.Int):
+#### [Sensor.TYPE_HEADING](../android/hardware/Sensor.md):
 
 A sensor of this type measures the direction in which the device is pointing relative to true north in degrees. The value must be between 0.0 (inclusive) and 360.0 (exclusive), with 0 indicating north, 90 east, 180 south, and 270 west. Accuracy is defined at 68% confidence. In the case where the underlying distribution is assumed Gaussian normal, this would be considered one standard deviation. For example, if heading returns 60 degrees, and accuracy returns 10 degrees, then there is a 68 percent probability of the true heading being between 50 degrees and 70 degrees.
 
@@ -579,4 +579,4 @@ A sensor of this type measures the direction in which the device is pointing rel
 
 **See Also**
 
-- [android.hardware.GeomagneticField](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField)
+- [android.hardware.GeomagneticField](../android/hardware/GeomagneticField.md)

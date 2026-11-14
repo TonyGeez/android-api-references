@@ -6,10 +6,10 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 interface InputMethod
 ```
 
-| [android.view.inputmethod.InputMethod](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod#) |
+| [android.view.inputmethod.InputMethod](../android/view/inputmethod/InputMethod.md) |
 
-Known Direct Subclasses [AbstractInputMethodService.AbstractInputMethodImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.html#) [AbstractInputMethodService.AbstractInputMethodImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.html#) Base class for derived classes to implement their `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod#` interface.
-Known Indirect Subclasses [InputMethodService.InputMethodImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodImpl.html#) [InputMethodService.InputMethodImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodImpl.html#) Concrete implementation of `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.html#` that provides all of the standard behavior for an input method.
+Known Direct Subclasses [AbstractInputMethodService.AbstractInputMethodImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.md) [AbstractInputMethodService.AbstractInputMethodImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.md) Base class for derived classes to implement their `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod#` interface.
+Known Indirect Subclasses [InputMethodService.InputMethodImpl](../android/inputmethodservice/InputMethodService.InputMethodImpl.md) [InputMethodService.InputMethodImpl](../android/inputmethodservice/InputMethodService.InputMethodImpl.md) Concrete implementation of `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.html#` that provides all of the standard behavior for an input method.
 
 The InputMethod interface represents an input method which can generate key events and text, such as digital, email addresses, CJK characters, other language characters, and etc., while handling various input events, and send the text back to the application that requests text input. See `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager` for more general information about the architecture.
 
@@ -134,7 +134,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `binding` | [InputBinding](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding)!: Information about the application window that is binding to the input method. |
+| `binding` | [InputBinding](../android/view/inputmethod/InputBinding.md)!: Information about the application window that is binding to the input method. |
 
 **See Also**
 
@@ -154,7 +154,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `subtype` | [InputMethodSubtype](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype)!: New subtype of the notified input method |
+| `subtype` | [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!: New subtype of the notified input method |
 
 ### createSession
 
@@ -169,7 +169,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `callback` | [InputMethod.SessionCallback](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod.SessionCallback)!: Interface that is called with the newly created session. |
+| `callback` | [InputMethod.SessionCallback](../android/view/inputmethod/InputMethod.SessionCallback.md)!: Interface that is called with the newly created session. |
 
 ### hideSoftInput
 
@@ -188,7 +188,7 @@ This method must be called from the main thread of your app.
 | Parameters ||
 |---|---|
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Provides additional information about the hide request. Currently always 0. |
-| `resultReceiver` | [ResultReceiver](https://developer.android.com/reference/kotlin/android/os/ResultReceiver.html#)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
+| `resultReceiver` | [ResultReceiver](../android/os/ResultReceiver.md)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
 
 ### restartInput
 
@@ -208,8 +208,8 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `inputConnection` | [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
-| `editorInfo` | [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo)!: The attribute of the text box (typically, a EditText) that requests input. |
+| `inputConnection` | [InputConnection](../android/view/inputmethod/InputConnection.md)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
+| `editorInfo` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: The attribute of the text box (typically, a EditText) that requests input. |
 
 **See Also**
 
@@ -228,7 +228,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `session` | [InputMethodSession](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be revoked. |
+| `session` | [InputMethodSession](../android/view/inputmethod/InputMethodSession.md)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be revoked. |
 
 ### setSessionEnabled
 
@@ -246,7 +246,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `session` | [InputMethodSession](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be changed. |
+| `session` | [InputMethodSession](../android/view/inputmethod/InputMethodSession.md)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be changed. |
 
 ### showSoftInput
 
@@ -264,7 +264,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `resultReceiver` | [ResultReceiver](https://developer.android.com/reference/kotlin/android/os/ResultReceiver.html#)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
+| `resultReceiver` | [ResultReceiver](../android/os/ResultReceiver.md)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
 
 ### startInput
 
@@ -282,8 +282,8 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `inputConnection` | [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
-| `editorInfo` | [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo)!: Information about the text box (typically, an EditText) that requests input. |
+| `inputConnection` | [InputConnection](../android/view/inputmethod/InputConnection.md)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
+| `editorInfo` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: Information about the text box (typically, an EditText) that requests input. |
 
 **See Also**
 

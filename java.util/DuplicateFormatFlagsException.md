@@ -11,31 +11,31 @@ open class DuplicateFormatFlagsException : IllegalFormatException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) |||
-| | | | | ↳ | [java.util.IllegalFormatException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException) ||
-| | | | | | ↳ | [java.util.DuplicateFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/DuplicateFormatFlagsException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) |||
+| | | | | ↳ | [java.util.IllegalFormatException](../java/util/IllegalFormatException.md) ||
+| | | | | | ↳ | [java.util.DuplicateFormatFlagsException](../java/util/DuplicateFormatFlagsException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when duplicate flags are provided in the format specifier.
 
-Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) to be thrown.
+Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DuplicateFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/DuplicateFormatFlagsException#DuplicateFormatFlagsException(kotlin.String))`(`f:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class with the specified flags. |
+| [DuplicateFormatFlagsException](../java/util/DuplicateFormatFlagsException.md))`(`f:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class with the specified flags. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFlags](https://developer.android.com/reference/kotlin/java/util/DuplicateFormatFlagsException#getFlags())`()` Returns the set of flags which contains a duplicate flag. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFlags](../java/util/DuplicateFormatFlagsException.md))`()` Returns the set of flags which contains a duplicate flag. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/util/DuplicateFormatFlagsException#message:kotlin.String) <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/util/DuplicateFormatFlagsException.md) <br /> |
 
 ## Public constructors
 

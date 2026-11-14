@@ -10,7 +10,7 @@ open class SealedObject : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.SealedObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#) |
+| ↳ | [javax.crypto.SealedObject](../javax/crypto/SealedObject.md) |
 
 This class enables a programmer to create an object and protect its confidentiality with a cryptographic algorithm.
 
@@ -20,12 +20,12 @@ Note that the Cipher object must be fully initialized with the correct algorithm
 
 The original object that was sealed can be recovered in two different ways:
 
-- by using the [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(javax.crypto.Cipher))method that takes a`Cipher`object.
+- by using the [getObject](../javax/crypto/SealedObject.md))method that takes a`Cipher`object.
 
  This method requires a fully initialized`Cipher`object, initialized with the exact same algorithm, key, padding scheme, etc., that were used to seal the object.
 
  This approach has the advantage that the party who unseals the sealed object does not require knowledge of the decryption key. For example, after one party has initialized the cipher object with the required decryption key, it could hand over the cipher object to another party who then unseals the sealed object.
-- by using one of the [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(java.security.Key))methods that take a`Key`object.
+- by using one of the [getObject](../javax/crypto/SealedObject.md))methods that take a`Key`object.
 
  In this approach, the`getObject`method creates a cipher object for the appropriate decryption algorithm and initializes it with the given decryption key and the algorithm parameters (if any) that were stored in the sealed object.
 
@@ -35,23 +35,23 @@ The original object that was sealed can be recovered in two different ways:
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SealedObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#SealedObject(java.io.Serializable,%20javax.crypto.Cipher))`(`object:` ` [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable.html#)!`, `c:` ` [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!`)` Constructs a SealedObject from any Serializable object. |
+| [SealedObject](../javax/crypto/SealedObject.md))`(`object:` ` [Serializable](../java/io/Serializable.md)!`, `c:` ` [Cipher](../javax/crypto/Cipher.md)!`)` Constructs a SealedObject from any Serializable object. |
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SealedObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#SealedObject(javax.crypto.SealedObject))`(`so:` ` [SealedObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#)!`)` Constructs a SealedObject object from the passed-in SealedObject. |
+| [SealedObject](../javax/crypto/SealedObject.md))`(`so:` ` [SealedObject](../javax/crypto/SealedObject.md)!`)` Constructs a SealedObject object from the passed-in SealedObject. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getAlgorithm())`()` Returns the algorithm that was used to seal this object. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(java.security.Key))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`)` Retrieves the original (encapsulated) object. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(java.security.Key,%20kotlin.String))`(`key:` ` [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the original (encapsulated) object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../javax/crypto/SealedObject.md))`()` Returns the algorithm that was used to seal this object. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../javax/crypto/SealedObject.md))`(`key:` ` [Key](../java/security/Key.md)!`)` Retrieves the original (encapsulated) object. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../javax/crypto/SealedObject.md))`(`key:` ` [Key](../java/security/Key.md)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the original (encapsulated) object. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#getObject(javax.crypto.Cipher))`(`c:` ` [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!`)` Retrieves the original (encapsulated) object. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../javax/crypto/SealedObject.md))`(`c:` ` [Cipher](../javax/crypto/Cipher.md)!`)` Retrieves the original (encapsulated) object. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [encodedParams](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#encodedParams:kotlin.ByteArray) The cryptographic parameters used by the sealing Cipher, encoded in the default format. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [encodedParams](../javax/crypto/SealedObject.md) The cryptographic parameters used by the sealing Cipher, encoded in the default format. |
 
 ## Public constructors
 
@@ -73,8 +73,8 @@ Any algorithm parameters that may be used in the encryption operation are stored
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------|
-| `object` | [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable.html#)!:the object to be sealed; can be null. |
-| `c` | [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!:the cipher used to seal the object. |
+| `object` | [Serializable](../java/io/Serializable.md)!:the object to be sealed; can be null. |
+| `c` | [Cipher](../javax/crypto/Cipher.md)!:the cipher used to seal the object. |
 
 | Exceptions ||
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ Constructs a SealedObject object from the passed-in SealedObject.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------|
-| `so` | [SealedObject](https://developer.android.com/reference/kotlin/javax/crypto/SealedObject#)!:a SealedObject object |
+| `so` | [SealedObject](../javax/crypto/SealedObject.md)!:a SealedObject object |
 
 | Exceptions ||
 |----------------------------------|-------------------------------------|
@@ -135,7 +135,7 @@ The encapsulated object is unsealed and de-serialized, before it is returned.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the key used to unseal the object. |
+| `key` | [Key](../java/security/Key.md)!:the key used to unseal the object. |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------|
@@ -169,7 +169,7 @@ The encapsulated object is unsealed and de-serialized, before it is returned.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](https://developer.android.com/reference/kotlin/java/security/Key.html#)!:the key used to unseal the object. |
+| `key` | [Key](../java/security/Key.md)!:the key used to unseal the object. |
 | `provider` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the provider of the algorithm to unseal the object. |
 
 | Return ||
@@ -202,7 +202,7 @@ The encapsulated object is unsealed (using the given Cipher, assuming that the C
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------|
-| `c` | [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!:the cipher used to unseal the object |
+| `c` | [Cipher](../javax/crypto/Cipher.md)!:the cipher used to unseal the object |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------|

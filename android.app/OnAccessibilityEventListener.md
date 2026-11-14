@@ -4,22 +4,22 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # OnAccessibilityEventListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/UiAutomation.OnAccessibilityEventListener "View this page in Java") 
+Kotlin| [Java](../android/app/UiAutomation.OnAccessibilityEventListener.md) 
 | --- | --- |
 
 ```
 interface OnAccessibilityEventListener
 ```
 
-| [android.app.UiAutomation.OnAccessibilityEventListener](https://developer.android.com/reference/kotlin/android/app/UiAutomation.OnAccessibilityEventListener#) |
+| [android.app.UiAutomation.OnAccessibilityEventListener](../android/app/UiAutomation.OnAccessibilityEventListener.md) |
 
-Listener for observing the [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#) stream.
+Listener for observing the [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md) stream.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityEvent](https://developer.android.com/reference/kotlin/android/app/UiAutomation.OnAccessibilityEventListener#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent))`(`event:` ` [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#)!`)` Callback for receiving an [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityEvent](../android/app/UiAutomation.OnAccessibilityEventListener.md))`(`event:` ` [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!`)` Callback for receiving an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md). |
 
 ## Public methods
 
@@ -31,7 +31,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onAccessibilityEvent(event: AccessibilityEvent!): Unit
 ```
 
-Callback for receiving an [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#).
+Callback for receiving an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md).
 
 **Note:** This method is**NOT**executed on the main test thread. The client is responsible for proper synchronization.
 
@@ -39,4 +39,4 @@ Callback for receiving an [AccessibilityEvent](https://developer.android.com/ref
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#)!:The received event. |
+| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!:The received event. |

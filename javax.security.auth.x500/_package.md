@@ -4,6 +4,6 @@
 
 ## Classes
 
-| [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal) | This class represents an X. |
+| [X500Principal](../javax/security/auth/x500/X500Principal.md) | This class represents an X. |
 | --- | --- |
-| [X500PrivateCredential](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500PrivateCredential) | This class represents an`X500PrivateCredential`. |
+| [X500PrivateCredential](../javax/security/auth/x500/X500PrivateCredential.md) | This class represents an`X500PrivateCredential`. |

@@ -8,8 +8,8 @@ class WifiAwareNetworkSpecifier : NetworkSpecifier, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.NetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier.html#) ||
-| | ↳ | [android.net.wifi.aware.WifiAwareNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#) |
+| ↳ | [android.net.NetworkSpecifier](../android/net/NetworkSpecifier.md) ||
+| | ↳ | [android.net.wifi.aware.WifiAwareNetworkSpecifier](../android/net/wifi/aware/WifiAwareNetworkSpecifier.md) |
 
 Network specifier object used to request a Wi-Fi Aware network. Apps should use the `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier.Builder` class to create an instance.
 
@@ -30,7 +30,7 @@ Network specifier object used to request a Wi-Fi Aware network. Apps should use 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#getChannelFrequencyMhz()()` Get the specified channel in MHZ for this Wi-Fi Aware network specifier. |
-| [WifiAwareDataPathSecurityConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#getWifiAwareDataPathSecurityConfig()()` Get the security config specified in this Network Specifier to encrypt Wi-Fi Aware data-path |
+| [WifiAwareDataPathSecurityConfig](../android/net/wifi/aware/WifiAwareDataPathSecurityConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#getWifiAwareDataPathSecurityConfig()()` Get the security config specified in this Network Specifier to encrypt Wi-Fi Aware data-path |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#isChannelRequired()()` Check if the specified channel is required to honor or not. |
@@ -40,7 +40,7 @@ Network specifier object used to request a Wi-Fi Aware network. Apps should use 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiAwareNetworkSpecifier](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiAwareNetworkSpecifier](../android/net/wifi/aware/WifiAwareNetworkSpecifier.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -193,7 +193,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -2,14 +2,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # AnimatorUpdateListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/animation/ValueAnimator.AnimatorUpdateListener "View this page in Java")
+Kotlin | [Java](../android/animation/ValueAnimator.AnimatorUpdateListener.md)
 | --- | --- |
 
 ```
 interface AnimatorUpdateListener
 ```
 
-| [android.animation.ValueAnimator.AnimatorUpdateListener](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator.AnimatorUpdateListener#) |
+| [android.animation.ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md) |
 
 Implementors of this interface can add themselves as update listeners to an `ValueAnimator` instance to receive callbacks on every animation frame, after the current frame's values have been calculated for that `ValueAnimator`.
 
@@ -33,4 +33,4 @@ Notifies the occurrence of another frame of the animation.
 
 | Parameters ||
 |---|---|
-| `animation` | [ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator): The animation which was repeated. This value cannot be `null`. |
+| `animation` | [ValueAnimator](../android/animation/ValueAnimator.md): The animation which was repeated. This value cannot be `null`. |

@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnScrollListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener "View this page in Java") 
+Kotlin| [Java](../android/widget/AbsListView.OnScrollListener.md) 
 | --- | --- |
 
 ```
 interface OnScrollListener
 ```
 
-| [android.widget.AbsListView.OnScrollListener](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#) |
+| [android.widget.AbsListView.OnScrollListener](../android/widget/AbsListView.OnScrollListener.md) |
 
 Interface definition for a callback to be invoked when the list or grid has been scrolled.
 
@@ -19,15 +19,15 @@ Interface definition for a callback to be invoked when the list or grid has been
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCROLL_STATE_FLING](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#SCROLL_STATE_FLING:kotlin.Int) The user had previously been scrolling using touch and had performed a fling. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCROLL_STATE_IDLE](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#SCROLL_STATE_IDLE:kotlin.Int) The view is not scrolling. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCROLL_STATE_TOUCH_SCROLL](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#SCROLL_STATE_TOUCH_SCROLL:kotlin.Int) The user is scrolling using touch, and their finger is still on the screen |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCROLL_STATE_FLING](../android/widget/AbsListView.OnScrollListener.md) The user had previously been scrolling using touch and had performed a fling. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCROLL_STATE_IDLE](../android/widget/AbsListView.OnScrollListener.md) The view is not scrolling. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCROLL_STATE_TOUCH_SCROLL](../android/widget/AbsListView.OnScrollListener.md) The user is scrolling using touch, and their finger is still on the screen |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScroll](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#onScroll(android.widget.AbsListView,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`view:` ` [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView)!`, `firstVisibleItem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `visibleItemCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `totalItemCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback method to be invoked when the list or grid has been scrolled. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollStateChanged](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#onScrollStateChanged(android.widget.AbsListView,%20kotlin.Int))`(`view:` ` [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView)!`, `scrollState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback method to be invoked while the list view or grid view is being scrolled. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScroll](../android/widget/AbsListView.OnScrollListener.md))`(`view:` ` [AbsListView](../android/widget/AbsListView.md)!`, `firstVisibleItem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `visibleItemCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `totalItemCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback method to be invoked when the list or grid has been scrolled. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScrollStateChanged](../android/widget/AbsListView.OnScrollListener.md))`(`view:` ` [AbsListView](../android/widget/AbsListView.md)!`, `scrollState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback method to be invoked while the list view or grid view is being scrolled. |
 
 ## Constants
 
@@ -86,7 +86,7 @@ Callback method to be invoked when the list or grid has been scrolled. This will
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView)!:The view whose scroll state is being reported |
+| `view` | [AbsListView](../android/widget/AbsListView.md)!:The view whose scroll state is being reported |
 | `firstVisibleItem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the first visible cell (ignore if visibleItemCount == 0) |
 | `visibleItemCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of visible cells |
 | --- | --- |
@@ -103,9 +103,9 @@ abstract fun onScrollStateChanged(
 ): Unit
 ```
 
-Callback method to be invoked while the list view or grid view is being scrolled. If the view is being scrolled, this method will be called before the next frame of the scroll is rendered. In particular, it will be called before any calls to [Adapter.getView(int, View, ViewGroup)](https://developer.android.com/reference/kotlin/android/widget/Adapter#getView(kotlin.Int,%20android.view.View,%20android.view.ViewGroup)).
+Callback method to be invoked while the list view or grid view is being scrolled. If the view is being scrolled, this method will be called before the next frame of the scroll is rendered. In particular, it will be called before any calls to [Adapter.getView(int, View, ViewGroup)](../android/widget/Adapter.md)).
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView)!:The view whose scroll state is being reported |
-| `scrollState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current scroll state. One of [SCROLL_STATE_TOUCH_SCROLL](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#SCROLL_STATE_TOUCH_SCROLL:kotlin.Int) or [SCROLL_STATE_IDLE](https://developer.android.com/reference/kotlin/android/widget/AbsListView.OnScrollListener#SCROLL_STATE_IDLE:kotlin.Int). |
+| `view` | [AbsListView](../android/widget/AbsListView.md)!:The view whose scroll state is being reported |
+| `scrollState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current scroll state. One of [SCROLL_STATE_TOUCH_SCROLL](../android/widget/AbsListView.OnScrollListener.md) or [SCROLL_STATE_IDLE](../android/widget/AbsListView.OnScrollListener.md). |

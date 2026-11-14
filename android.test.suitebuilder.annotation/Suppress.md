@@ -5,18 +5,18 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # Suppress
 
-Kotlin| [Java](https://developer.android.com/reference/android/test/suitebuilder/annotation/Suppress "View this page in Java") 
+Kotlin| [Java](../android/test/suitebuilder/annotation/Suppress.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class Suppress
 ```
 
-| [android.test.suitebuilder.annotation.Suppress](https://developer.android.com/reference/kotlin/android/test/suitebuilder/annotation/Suppress#) |
+| [android.test.suitebuilder.annotation.Suppress](../android/test/suitebuilder/annotation/Suppress.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
-| Use [Suppress](https://developer.android.com/reference/android/support/test/filters/Suppress.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
+| Use [Suppress](../android/support/test/filters/Suppress.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
 
 Use this annotation on test classes or test methods that should not be included in a test suite. If the annotation appears on the class then no tests in that class will be included. If the annotation appears only on a test method then only that method will be excluded.
 
@@ -24,7 +24,7 @@ Use this annotation on test classes or test methods that should not be included 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Suppress](https://developer.android.com/reference/kotlin/android/test/suitebuilder/annotation/Suppress#Suppress())`()` Use this annotation on test classes or test methods that should not be included in a test suite. |
+| [Suppress](../android/test/suitebuilder/annotation/Suppress.md))`()` Use this annotation on test classes or test methods that should not be included in a test suite. |
 
 ## Public constructors
 
@@ -37,6 +37,6 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 Suppress()
 ```
 
-**Deprecated:** *Use [Suppress](https://developer.android.com/reference/android/support/test/filters/Suppress.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).*
+**Deprecated:** *Use [Suppress](../android/support/test/filters/Suppress.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).*
 
 Use this annotation on test classes or test methods that should not be included in a test suite. If the annotation appears on the class then no tests in that class will be included. If the annotation appears only on a test method then only that method will be excluded.

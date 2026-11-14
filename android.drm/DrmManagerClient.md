@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # DrmManagerClient
 
-Kotlin | [Java](https://developer.android.com/reference/android/drm/DrmManagerClient "View this page in Java") 
+Kotlin | [Java](../android/drm/DrmManagerClient.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class DrmManagerClient : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.DrmManagerClient](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#) |
+| ↳ | [android.drm.DrmManagerClient](../android/drm/DrmManagerClient.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm.html#)
+| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
 
 The main programming interface for the DRM framework. An application must instantiate this class to access DRM agents through the DRM framework.
 
@@ -26,67 +26,67 @@ The main programming interface for the DRM framework. An application must instan
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [OnErrorListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener) Interface definition for a callback that receives information about DRM framework errors. |
-| abstract | [OnEventListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnEventListener) Interface definition for a callback that receives information about DRM processing events. |
-| abstract | [OnInfoListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnInfoListener) Interface definition for a callback that receives status messages and warnings during registration and rights acquisition. |
+| abstract | [OnErrorListener](../android/drm/DrmManagerClient.OnErrorListener.md) Interface definition for a callback that receives information about DRM framework errors. |
+| abstract | [OnEventListener](../android/drm/DrmManagerClient.OnEventListener.md) Interface definition for a callback that receives information about DRM processing events. |
+| abstract | [OnInfoListener](../android/drm/DrmManagerClient.OnInfoListener.md) Interface definition for a callback that receives status messages and warnings during registration and rights acquisition. |
 | --- | --- |
 
 | Constants ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NONE](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#ERROR_NONE:kotlin.Int) Indicates that a request was successful or that no error occurred. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#ERROR_UNKNOWN:kotlin.Int) Indicates that an error occurred and the reason is not known. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NONE](../android/drm/DrmManagerClient.md) Indicates that a request was successful or that no error occurred. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](../android/drm/DrmManagerClient.md) Indicates that an error occurred and the reason is not known. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DrmManagerClient](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#DrmManagerClient(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Creates a `DrmManagerClient`. |
+| [DrmManagerClient](../android/drm/DrmManagerClient.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Creates a `DrmManagerClient`. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo)! | [acquireDrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#acquireDrmInfo(android.drm.DrmInfoRequest))`(`drmInfoRequest:` ` [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest)!`)` Retrieves information for registering, unregistering, or acquiring rights. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [acquireRights](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#acquireRights(android.drm.DrmInfoRequest))`(`drmInfoRequest:` ` [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest)!`)` Processes a given [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest) and returns the rights information asynchronously. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canHandle](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#canHandle(android.net.Uri,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks whether the given MIME type or URI can be handled. |
+| open [DrmInfo](../android/drm/DrmInfo.md)! | [acquireDrmInfo](../android/drm/DrmManagerClient.md))`(`drmInfoRequest:` ` [DrmInfoRequest](../android/drm/DrmInfoRequest.md)!`)` Retrieves information for registering, unregistering, or acquiring rights. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [acquireRights](../android/drm/DrmManagerClient.md))`(`drmInfoRequest:` ` [DrmInfoRequest](../android/drm/DrmInfoRequest.md)!`)` Processes a given [DrmInfoRequest](../android/drm/DrmInfoRequest.md) and returns the rights information asynchronously. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canHandle](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks whether the given MIME type or URI can be handled. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canHandle](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#canHandle(kotlin.String,%20kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks whether the given MIME type or path can be handled. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#checkRightsStatus(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Check whether the given content has valid rights. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#checkRightsStatus(android.net.Uri,%20kotlin.Int))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canHandle](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks whether the given MIME type or path can be handled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Check whether the given content has valid rights. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](../android/drm/DrmStore.Action.md). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#checkRightsStatus(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks whether the given content has valid rights. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#checkRightsStatus(kotlin.String,%20kotlin.Int))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#close())`()` Releases resources associated with the current session of DrmManagerClient. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks whether the given content has valid rights. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkRightsStatus](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](../android/drm/DrmStore.Action.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/drm/DrmManagerClient.md))`()` Releases resources associated with the current session of DrmManagerClient. |
 | --- | --- |
-| open [DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus)! | [closeConvertSession](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#closeConvertSession(kotlin.Int))`(`convertId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Informs the DRM plug-in (agent) that there is no more data to convert or that an error has occurred. |
-| open [DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus)! | [convertData](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#convertData(kotlin.Int,%20kotlin.ByteArray))`(`convertId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Converts the input data (content) that is part of a rights-protected file. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableDrmEngines](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getAvailableDrmEngines())`()` Retrieves information about all the DRM plug-ins (agents) that are registered with the DRM framework. |
+| open [DrmConvertedStatus](../android/drm/DrmConvertedStatus.md)! | [closeConvertSession](../android/drm/DrmManagerClient.md))`(`convertId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Informs the DRM plug-in (agent) that there is no more data to convert or that an error has occurred. |
+| open [DrmConvertedStatus](../android/drm/DrmConvertedStatus.md)! | [convertData](../android/drm/DrmManagerClient.md))`(`convertId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Converts the input data (content) that is part of a rights-protected file. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableDrmEngines](../android/drm/DrmManagerClient.md))`()` Retrieves information about all the DRM plug-ins (agents) that are registered with the DRM framework. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [DrmSupportInfo](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo)!\> | [getAvailableDrmSupportInfo](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getAvailableDrmSupportInfo())`()` Retrieves information about all the DRM plug-ins (agents) that are registered with the DRM framework. |
-| open [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | [getConstraints](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getConstraints(android.net.Uri,%20kotlin.Int))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves constraint information for rights-protected content. |
-| open [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | [getConstraints](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getConstraints(kotlin.String,%20kotlin.Int))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves constraint information for rights-protected content. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [DrmSupportInfo](../android/drm/DrmSupportInfo.md)!\> | [getAvailableDrmSupportInfo](../android/drm/DrmManagerClient.md))`()` Retrieves information about all the DRM plug-ins (agents) that are registered with the DRM framework. |
+| open [ContentValues](../android/content/ContentValues.md)! | [getConstraints](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves constraint information for rights-protected content. |
+| open [ContentValues](../android/content/ContentValues.md)! | [getConstraints](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves constraint information for rights-protected content. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDrmObjectType](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getDrmObjectType(android.net.Uri,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the type of rights-protected object (for example, content object, rights object, and so on) using the specified URI or MIME type. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDrmObjectType](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getDrmObjectType(kotlin.String,%20kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the type of rights-protected object (for example, content object, rights object, and so on) using the specified path or MIME type. |
-| open [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | [getMetadata](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getMetadata(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Retrieves metadata information for rights-protected content. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDrmObjectType](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the type of rights-protected object (for example, content object, rights object, and so on) using the specified URI or MIME type. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDrmObjectType](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the type of rights-protected object (for example, content object, rights object, and so on) using the specified path or MIME type. |
+| open [ContentValues](../android/content/ContentValues.md)! | [getMetadata](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Retrieves metadata information for rights-protected content. |
 | --- | --- |
-| open [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | [getMetadata](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getMetadata(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves metadata information for rights-protected content. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginalMimeType](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getOriginalMimeType(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Retrieves the MIME type embedded in the original content. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginalMimeType](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#getOriginalMimeType(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the MIME type embedded in the original content. |
+| open [ContentValues](../android/content/ContentValues.md)! | [getMetadata](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves metadata information for rights-protected content. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginalMimeType](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Retrieves the MIME type embedded in the original content. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOriginalMimeType](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the MIME type embedded in the original content. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [openConvertSession](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#openConvertSession(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Initiates a new conversion session. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [processDrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#processDrmInfo(android.drm.DrmInfo))`(`drmInfo:` ` [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo)!`)` Processes the given DRM information based on the information type. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#release())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [openConvertSession](../android/drm/DrmManagerClient.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Initiates a new conversion session. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [processDrmInfo](../android/drm/DrmManagerClient.md))`(`drmInfo:` ` [DrmInfo](../android/drm/DrmInfo.md)!`)` Processes the given DRM information based on the information type. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/drm/DrmManagerClient.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [removeAllRights](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#removeAllRights())`()` Removes all the rights information of every DRM plug-in (agent) associated with the DRM framework. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [removeRights](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#removeRights(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Removes the rights associated with the given rights-protected content. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [removeRights](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#removeRights(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Removes the rights associated with the given rights-protected content. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [removeAllRights](../android/drm/DrmManagerClient.md))`()` Removes all the rights information of every DRM plug-in (agent) associated with the DRM framework. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [removeRights](../android/drm/DrmManagerClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Removes the rights associated with the given rights-protected content. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [removeRights](../android/drm/DrmManagerClient.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Removes the rights associated with the given rights-protected content. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [saveRights](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#saveRights(android.drm.DrmRights,%20kotlin.String,%20kotlin.String))`(`drmRights:` ` [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights)!`, `rightsPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Saves rights to a specified path and associates that path with the content path. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnErrorListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#setOnErrorListener(android.drm.DrmManagerClient.OnErrorListener))`(`errorListener:` ` [DrmManagerClient.OnErrorListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener)!`)` Registers an [DrmManagerClient.OnErrorListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener) callback, which is invoked when the DRM framework sends error information. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnEventListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#setOnEventListener(android.drm.DrmManagerClient.OnEventListener))`(`eventListener:` ` [DrmManagerClient.OnEventListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnEventListener)!`)` Registers an [DrmManagerClient.OnEventListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnEventListener) callback, which is invoked when the DRM framework sends information about DRM processing. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [saveRights](../android/drm/DrmManagerClient.md))`(`drmRights:` ` [DrmRights](../android/drm/DrmRights.md)!`, `rightsPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Saves rights to a specified path and associates that path with the content path. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnErrorListener](../android/drm/DrmManagerClient.md))`(`errorListener:` ` [DrmManagerClient.OnErrorListener](../android/drm/DrmManagerClient.OnErrorListener.md)!`)` Registers an [DrmManagerClient.OnErrorListener](../android/drm/DrmManagerClient.OnErrorListener.md) callback, which is invoked when the DRM framework sends error information. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnEventListener](../android/drm/DrmManagerClient.md))`(`eventListener:` ` [DrmManagerClient.OnEventListener](../android/drm/DrmManagerClient.OnEventListener.md)!`)` Registers an [DrmManagerClient.OnEventListener](../android/drm/DrmManagerClient.OnEventListener.md) callback, which is invoked when the DRM framework sends information about DRM processing. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnInfoListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#setOnInfoListener(android.drm.DrmManagerClient.OnInfoListener))`(`infoListener:` ` [DrmManagerClient.OnInfoListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnInfoListener)!`)` Registers an [DrmManagerClient.OnInfoListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnInfoListener) callback, which is invoked when the DRM framework sends status or warning information during registration or rights acquisition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnInfoListener](../android/drm/DrmManagerClient.md))`(`infoListener:` ` [DrmManagerClient.OnInfoListener](../android/drm/DrmManagerClient.OnInfoListener.md)!`)` Registers an [DrmManagerClient.OnInfoListener](../android/drm/DrmManagerClient.OnInfoListener.md) callback, which is invoked when the DRM framework sends status or warning information during registration or rights acquisition. |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#finalize())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/drm/DrmManagerClient.md))`()` <br /> |
 
 ## Constants
 
@@ -132,7 +132,7 @@ Creates a `DrmManagerClient`.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Context of the caller. |
+| `context` | [Context](../android/content/Context.md)!: Context of the caller. |
 
 ## Public methods
 
@@ -150,11 +150,11 @@ Retrieves information for registering, unregistering, or acquiring rights.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `drmInfoRequest` | [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest)!: The [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest) that specifies the type of DRM information being retrieved. |
+| `drmInfoRequest` | [DrmInfoRequest](../android/drm/DrmInfoRequest.md)!: The [DrmInfoRequest](../android/drm/DrmInfoRequest.md) that specifies the type of DRM information being retrieved. |
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo)! | A [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo) instance. |
+| [DrmInfo](../android/drm/DrmInfo.md)! | A [DrmInfo](../android/drm/DrmInfo.md) instance. |
 
 ### acquireRights
 
@@ -166,13 +166,13 @@ open fun acquireRights(drmInfoRequest: DrmInfoRequest!): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Processes a given [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest) and returns the rights information asynchronously.
+Processes a given [DrmInfoRequest](../android/drm/DrmInfoRequest.md) and returns the rights information asynchronously.
 
-This is a utility method that consists of an [acquireDrmInfo()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#acquireDrmInfo(android.drm.DrmInfoRequest)) and a [processDrmInfo()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#processDrmInfo(android.drm.DrmInfo)) method call. This utility method can be used only if the selected DRM plug-in (agent) supports this sequence of calls. Some DRM agents, such as OMA, do not support this utility method, in which case an application must invoke [acquireDrmInfo()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#acquireDrmInfo(android.drm.DrmInfoRequest)) and [processDrmInfo()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#processDrmInfo(android.drm.DrmInfo)) separately.
+This is a utility method that consists of an [acquireDrmInfo()](../android/drm/DrmManagerClient.md)) and a [processDrmInfo()](../android/drm/DrmManagerClient.md)) method call. This utility method can be used only if the selected DRM plug-in (agent) supports this sequence of calls. Some DRM agents, such as OMA, do not support this utility method, in which case an application must invoke [acquireDrmInfo()](../android/drm/DrmManagerClient.md)) and [processDrmInfo()](../android/drm/DrmManagerClient.md)) separately.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `drmInfoRequest` | [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest)!: The [DrmInfoRequest](https://developer.android.com/reference/kotlin/android/drm/DrmInfoRequest) used to acquire the rights. |
+| `drmInfoRequest` | [DrmInfoRequest](../android/drm/DrmInfoRequest.md)!: The [DrmInfoRequest](../android/drm/DrmInfoRequest.md) used to acquire the rights. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------|
@@ -195,7 +195,7 @@ Checks whether the given MIME type or URI can be handled.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI for the content to be handled. |
+| `uri` | [Uri](../android/net/Uri.md)!: URI for the content to be handled. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: MIME type of the object to be handled |
 
 | Return ||
@@ -240,11 +240,11 @@ Check whether the given content has valid rights.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI of the rights-protected content. |
+| `uri` | [Uri](../android/net/Uri.md)!: URI of the rights-protected content. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmStore.RightsStatus) of the content. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](../android/drm/DrmStore.RightsStatus.md) of the content. |
 
 ### checkRightsStatus
 
@@ -259,16 +259,16 @@ open fun checkRightsStatus(
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action).
+Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](../android/drm/DrmStore.Action.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI for the rights-protected content. |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action) to perform. |
+| `uri` | [Uri](../android/net/Uri.md)!: URI for the rights-protected content. |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The [DrmStore.Action](../android/drm/DrmStore.Action.md) to perform. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmStore.RightsStatus) of the content. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](../android/drm/DrmStore.RightsStatus.md) of the content. |
 
 ### checkRightsStatus
 
@@ -288,7 +288,7 @@ Checks whether the given content has valid rights.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmStore.RightsStatus) of the content. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](../android/drm/DrmStore.RightsStatus.md) of the content. |
 
 ### checkRightsStatus
 
@@ -303,16 +303,16 @@ open fun checkRightsStatus(
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action).
+Checks whether the given rights-protected content has valid rights for the specified [DrmStore.Action](../android/drm/DrmStore.Action.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Path to the rights-protected content. |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action) to perform. |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The [DrmStore.Action](../android/drm/DrmStore.Action.md) to perform. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](https://developer.android.com/reference/kotlin/android/drm/DrmStore.RightsStatus) of the content. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` representing the [DrmStore.RightsStatus](../android/drm/DrmStore.RightsStatus.md) of the content. |
 
 ### close
 
@@ -325,7 +325,7 @@ open fun close(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Releases resources associated with the current session of DrmManagerClient. It is considered good practice to call this method when the [DrmManagerClient](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#) object is no longer needed in your application. After this method is called, [DrmManagerClient](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#) is no longer usable since it has lost all of its required resource. This method was added in API 24. In API versions 16 through 23, release() should be called instead. There is no need to do anything for API versions prior to 16.
+Releases resources associated with the current session of DrmManagerClient. It is considered good practice to call this method when the [DrmManagerClient](../android/drm/DrmManagerClient.md) object is no longer needed in your application. After this method is called, [DrmManagerClient](../android/drm/DrmManagerClient.md) is no longer usable since it has lost all of its required resource. This method was added in API 24. In API versions 16 through 23, release() should be called instead. There is no need to do anything for API versions prior to 16.
 
 | Exceptions ||
 |-----------------------|-----------------------------------|
@@ -349,7 +349,7 @@ Informs the DRM plug-in (agent) that there is no more data to convert or that an
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus)! | A [DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus) object that contains the status of the data conversion, the converted data, and the offset for the header and body signature. |
+| [DrmConvertedStatus](../android/drm/DrmConvertedStatus.md)! | A [DrmConvertedStatus](../android/drm/DrmConvertedStatus.md) object that contains the status of the data conversion, the converted data, and the offset for the header and body signature. |
 
 ### convertData
 
@@ -364,7 +364,7 @@ open fun convertData(
 
 **Deprecated:** *Deprecated in Java.*
 
-Converts the input data (content) that is part of a rights-protected file. The converted data and status is returned in a [DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus) object. This method should be called each time there is a new block of data received by the application.
+Converts the input data (content) that is part of a rights-protected file. The converted data and status is returned in a [DrmConvertedStatus](../android/drm/DrmConvertedStatus.md) object. This method should be called each time there is a new block of data received by the application.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -373,7 +373,7 @@ Converts the input data (content) that is part of a rights-protected file. The c
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus)! | A [DrmConvertedStatus](https://developer.android.com/reference/kotlin/android/drm/DrmConvertedStatus) object that contains the status of the data conversion, the converted data, and offset for the header and body signature. An application can ignore the offset because it is only relevant to the [closeConvertSession()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#closeConvertSession(kotlin.Int)) method. |
+| [DrmConvertedStatus](../android/drm/DrmConvertedStatus.md)! | A [DrmConvertedStatus](../android/drm/DrmConvertedStatus.md) object that contains the status of the data conversion, the converted data, and offset for the header and body signature. An application can ignore the offset because it is only relevant to the [closeConvertSession()](../android/drm/DrmManagerClient.md)) method. |
 
 ### getAvailableDrmEngines
 
@@ -406,7 +406,7 @@ Retrieves information about all the DRM plug-ins (agents) that are registered wi
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [DrmSupportInfo](https://developer.android.com/reference/kotlin/android/drm/DrmSupportInfo)!> | List of all the DRM plug-ins (agents) that are registered with the DRM framework. This value cannot be `null`. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [DrmSupportInfo](../android/drm/DrmSupportInfo.md)!> | List of all the DRM plug-ins (agents) that are registered with the DRM framework. This value cannot be `null`. |
 
 ### getConstraints
 
@@ -425,12 +425,12 @@ Retrieves constraint information for rights-protected content.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI for the content from which you are retrieving DRM constraints. |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action defined in [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action). |
+| `uri` | [Uri](../android/net/Uri.md)!: URI for the content from which you are retrieving DRM constraints. |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action defined in [DrmStore.Action](../android/drm/DrmStore.Action.md). |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | A [android.content.ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#) instance that contains key-value pairs representing the constraints. Null in case of failure. |
+| [ContentValues](../android/content/ContentValues.md)! | A [android.content.ContentValues](../android/content/ContentValues.md) instance that contains key-value pairs representing the constraints. Null in case of failure. |
 
 ### getConstraints
 
@@ -450,11 +450,11 @@ Retrieves constraint information for rights-protected content.
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Path to the content from which you are retrieving DRM constraints. |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action defined in [DrmStore.Action](https://developer.android.com/reference/kotlin/android/drm/DrmStore.Action). |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action defined in [DrmStore.Action](../android/drm/DrmStore.Action.md). |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | A [android.content.ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#) instance that contains key-value pairs representing the constraints. Null in case of failure. The keys are defined in [DrmStore.ConstraintsColumns](https://developer.android.com/reference/kotlin/android/drm/DrmStore.ConstraintsColumns). |
+| [ContentValues](../android/content/ContentValues.md)! | A [android.content.ContentValues](../android/content/ContentValues.md) instance that contains key-value pairs representing the constraints. Null in case of failure. The keys are defined in [DrmStore.ConstraintsColumns](../android/drm/DrmStore.ConstraintsColumns.md). |
 
 ### getDrmObjectType
 
@@ -473,12 +473,12 @@ Retrieves the type of rights-protected object (for example, content object, righ
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI for the content or null. |
+| `uri` | [Uri](../android/net/Uri.md)!: URI for the content or null. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: MIME type of the content or null. |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` that corresponds to a [DrmStore.DrmObjectType](https://developer.android.com/reference/kotlin/android/drm/DrmStore.DrmObjectType). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` that corresponds to a [DrmStore.DrmObjectType](../android/drm/DrmStore.DrmObjectType.md). |
 
 ### getDrmObjectType
 
@@ -502,7 +502,7 @@ Retrieves the type of rights-protected object (for example, content object, righ
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` that corresponds to a [DrmStore.DrmObjectType](https://developer.android.com/reference/kotlin/android/drm/DrmStore.DrmObjectType). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An `int` that corresponds to a [DrmStore.DrmObjectType](../android/drm/DrmStore.DrmObjectType.md). |
 
 ### getMetadata
 
@@ -518,11 +518,11 @@ Retrieves metadata information for rights-protected content.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI for the content from which you are retrieving metadata information. |
+| `uri` | [Uri](../android/net/Uri.md)!: URI for the content from which you are retrieving metadata information. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | A [android.content.ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#) instance that contains key-value pairs representing the constraints. Null in case of failure. |
+| [ContentValues](../android/content/ContentValues.md)! | A [android.content.ContentValues](../android/content/ContentValues.md) instance that contains key-value pairs representing the constraints. Null in case of failure. |
 
 ### getMetadata
 
@@ -542,7 +542,7 @@ Retrieves metadata information for rights-protected content.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)! | A [android.content.ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#) instance that contains key-value pairs representing the metadata. Null in case of failure. |
+| [ContentValues](../android/content/ContentValues.md)! | A [android.content.ContentValues](../android/content/ContentValues.md) instance that contains key-value pairs representing the metadata. Null in case of failure. |
 
 ### getOriginalMimeType
 
@@ -558,7 +558,7 @@ Retrieves the MIME type embedded in the original content.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI of the rights-protected content. |
+| `uri` | [Uri](../android/net/Uri.md)!: URI of the rights-protected content. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -620,7 +620,7 @@ Processes the given DRM information based on the information type.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `drmInfo` | [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo)!: The [DrmInfo](https://developer.android.com/reference/kotlin/android/drm/DrmInfo) to be processed. |
+| `drmInfo` | [DrmInfo](../android/drm/DrmInfo.md)!: The [DrmInfo](../android/drm/DrmInfo.md) to be processed. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------|
@@ -635,7 +635,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 open fun release(): Unit
 ```
 
-**Deprecated:** *replaced by [close()](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient#close()).* 
+**Deprecated:** *replaced by [close()](../android/drm/DrmManagerClient.md)).* 
 
 ### removeAllRights
 
@@ -667,7 +667,7 @@ Removes the rights associated with the given rights-protected content.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: URI for the rights-protected content. |
+| `uri` | [Uri](../android/net/Uri.md)!: URI for the rights-protected content. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------|
@@ -713,7 +713,7 @@ Saves rights to a specified path and associates that path with the content path.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `drmRights` | [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights)!: The [DrmRights](https://developer.android.com/reference/kotlin/android/drm/DrmRights) to be saved. |
+| `drmRights` | [DrmRights](../android/drm/DrmRights.md)!: The [DrmRights](../android/drm/DrmRights.md) to be saved. |
 | `rightsPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: File path where rights will be saved. |
 | `contentPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: File path where content is saved. |
 | --- | --- |
@@ -736,11 +736,11 @@ open fun setOnErrorListener(errorListener: DrmManagerClient.OnErrorListener!): 
 
 **Deprecated:** *Deprecated in Java.*
 
-Registers an [DrmManagerClient.OnErrorListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener) callback, which is invoked when the DRM framework sends error information.
+Registers an [DrmManagerClient.OnErrorListener](../android/drm/DrmManagerClient.OnErrorListener.md) callback, which is invoked when the DRM framework sends error information.
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `errorListener` | [DrmManagerClient.OnErrorListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnErrorListener)!: Interface definition for the callback. |
+| `errorListener` | [DrmManagerClient.OnErrorListener](../android/drm/DrmManagerClient.OnErrorListener.md)!: Interface definition for the callback. |
 
 ### setOnEventListener
 
@@ -752,11 +752,11 @@ open fun setOnEventListener(eventListener: DrmManagerClient.OnEventListener!): 
 
 **Deprecated:** *Deprecated in Java.*
 
-Registers an [DrmManagerClient.OnEventListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnEventListener) callback, which is invoked when the DRM framework sends information about DRM processing.
+Registers an [DrmManagerClient.OnEventListener](../android/drm/DrmManagerClient.OnEventListener.md) callback, which is invoked when the DRM framework sends information about DRM processing.
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `eventListener` | [DrmManagerClient.OnEventListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnEventListener)!: Interface definition for the callback. |
+| `eventListener` | [DrmManagerClient.OnEventListener](../android/drm/DrmManagerClient.OnEventListener.md)!: Interface definition for the callback. |
 
 ### setOnInfoListener
 
@@ -768,11 +768,11 @@ open fun setOnInfoListener(infoListener: DrmManagerClient.OnInfoListener!): Uni
 
 **Deprecated:** *Deprecated in Java.*
 
-Registers an [DrmManagerClient.OnInfoListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnInfoListener) callback, which is invoked when the DRM framework sends status or warning information during registration or rights acquisition.
+Registers an [DrmManagerClient.OnInfoListener](../android/drm/DrmManagerClient.OnInfoListener.md) callback, which is invoked when the DRM framework sends status or warning information during registration or rights acquisition.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `infoListener` | [DrmManagerClient.OnInfoListener](https://developer.android.com/reference/kotlin/android/drm/DrmManagerClient.OnInfoListener)!: Interface definition for the callback. |
+| `infoListener` | [DrmManagerClient.OnInfoListener](../android/drm/DrmManagerClient.OnInfoListener.md)!: Interface definition for the callback. |
 
 ## Protected methods
 

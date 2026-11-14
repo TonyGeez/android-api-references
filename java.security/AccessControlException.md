@@ -11,11 +11,11 @@ open class AccessControlException : SecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#) ||
-| | | | | ↳ | [java.security.AccessControlException](https://developer.android.com/reference/kotlin/java/security/AccessControlException#) |
+| | | | ↳ | [java.lang.SecurityException](../java/lang/SecurityException.md) ||
+| | | | | ↳ | [java.security.AccessControlException](../java/security/AccessControlException.md) |
 
 This exception is thrown by the AccessController to indicate that a requested access (to a critical system resource such as the file system or the network) is denied.
 
@@ -25,12 +25,12 @@ The reason to deny access can vary. For example, the requested permission might 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AccessControlException](https://developer.android.com/reference/kotlin/java/security/AccessControlException#AccessControlException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`AccessControlException`with the specified, detailed message. |
-| [AccessControlException](https://developer.android.com/reference/kotlin/java/security/AccessControlException#AccessControlException(kotlin.String,%20java.security.Permission))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `p:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` Constructs an`AccessControlException`with the specified, detailed message, and the requested permission that caused the exception. |
+| [AccessControlException](../java/security/AccessControlException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`AccessControlException`with the specified, detailed message. |
+| [AccessControlException](../java/security/AccessControlException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `p:` ` [Permission](../java/security/Permission.md)!`)` Constructs an`AccessControlException`with the specified, detailed message, and the requested permission that caused the exception. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)! | [getPermission](https://developer.android.com/reference/kotlin/java/security/AccessControlException#getPermission())`()` Gets the Permission object associated with this exception, or null if there was no corresponding Permission object. |
+| open [Permission](../java/security/Permission.md)! | [getPermission](../java/security/AccessControlException.md))`()` Gets the Permission object associated with this exception, or null if there was no corresponding Permission object. |
 
 ## Public constructors
 
@@ -63,7 +63,7 @@ Constructs an`AccessControlException`with the specified, detailed message, and t
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------------|
 | `s` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. |
-| `p` | [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!:the permission that caused the exception. |
+| `p` | [Permission](../java/security/Permission.md)!:the permission that caused the exception. |
 
 ## Public methods
 
@@ -79,4 +79,4 @@ Gets the Permission object associated with this exception, or null if there was 
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------------|
-| [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)! | the Permission object. |
+| [Permission](../java/security/Permission.md)! | the Permission object. |

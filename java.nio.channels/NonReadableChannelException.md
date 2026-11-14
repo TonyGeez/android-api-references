@@ -11,11 +11,11 @@ open class NonReadableChannelException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.channels.NonReadableChannelException](https://developer.android.com/reference/kotlin/java/nio/channels/NonReadableChannelException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.NonReadableChannelException](../java/nio/channels/NonReadableChannelException.md) |
 
 Unchecked exception thrown when an attempt is made to read from a channel that was not originally opened for reading.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to read from a channel that w
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NonReadableChannelException](https://developer.android.com/reference/kotlin/java/nio/channels/NonReadableChannelException#NonReadableChannelException())`()` Constructs an instance of this class. |
+| [NonReadableChannelException](../java/nio/channels/NonReadableChannelException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

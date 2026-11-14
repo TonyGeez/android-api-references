@@ -8,7 +8,7 @@ class GetValueResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.settings.preferences.GetValueResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#) |
+| ↳ | [android.service.settings.preferences.GetValueResult](../android/service/settings/preferences/GetValueResult.md) |
 
 Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueRequest`.
 
@@ -42,15 +42,15 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getMetadata()()` Returns the metadata of requested Preference if request successful. |
+| [SettingsPreferenceMetadata](../android/service/settings/preferences/SettingsPreferenceMetadata.md)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getMetadata()()` Returns the metadata of requested Preference if request successful. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getResultCode()()` Returns the result code indicating status of the request. |
 | --- | --- |
-| [SettingsPreferenceValue](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getValue()()` Returns the value of requested Preference if request successful. |
+| [SettingsPreferenceValue](../android/service/settings/preferences/SettingsPreferenceValue.md)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#getValue()()` Returns the value of requested Preference if request successful. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [GetValueResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GetValueResult](../android/service/settings/preferences/GetValueResult.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult#`. |
 
 ## Constants
 
@@ -215,7 +215,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

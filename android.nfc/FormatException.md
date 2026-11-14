@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # FormatException
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/FormatException "View this page in Java") 
+Kotlin| [Java](../android/nfc/FormatException.md) 
 | --- | --- |
 
 ```
@@ -14,17 +14,17 @@ open class FormatException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [android.nfc.FormatException](https://developer.android.com/reference/kotlin/android/nfc/FormatException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [android.nfc.FormatException](../android/nfc/FormatException.md) |
 | --- | --- | --- | --- |
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FormatException](https://developer.android.com/reference/kotlin/android/nfc/FormatException#FormatException())`()` <br /> |
-| [FormatException](https://developer.android.com/reference/kotlin/android/nfc/FormatException#FormatException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [FormatException](https://developer.android.com/reference/kotlin/android/nfc/FormatException#FormatException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [FormatException](../android/nfc/FormatException.md))`()` <br /> |
+| [FormatException](../android/nfc/FormatException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [FormatException](../android/nfc/FormatException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
 
 ## Public constructors
 

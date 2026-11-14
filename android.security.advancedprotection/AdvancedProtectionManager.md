@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # AdvancedProtectionManager
 
-Kotlin | [Java](https://developer.android.com/reference/android/security/advancedprotection/AdvancedProtectionManager "View this page in Java")
+Kotlin | [Java](../android/security/advancedprotection/AdvancedProtectionManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AdvancedProtectionManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.advancedprotection.AdvancedProtectionManager](https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#) |
+| ↳ | [android.security.advancedprotection.AdvancedProtectionManager](../android/security/advancedprotection/AdvancedProtectionManager.md) |
 
 Advanced Protection is a mode that users can enroll their device into, that enhances security by enabling features and restrictions across both the platform and user apps.
 
@@ -65,8 +65,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [AdvancedProtectionManager.Callback](https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback): The `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` object to register.. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [AdvancedProtectionManager.Callback](../android/security/advancedprotection/AdvancedProtectionManager.Callback.md): The `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` object to register.. This value cannot be `null`. |
 
 ### unregisterAdvancedProtectionCallback
 
@@ -81,4 +81,4 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `callback` | [AdvancedProtectionManager.Callback](https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback): The `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` object to unregister. This value cannot be `null`. |
+| `callback` | [AdvancedProtectionManager.Callback](../android/security/advancedprotection/AdvancedProtectionManager.Callback.md): The `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` object to unregister. This value cannot be `null`. |

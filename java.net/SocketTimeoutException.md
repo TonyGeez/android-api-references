@@ -11,11 +11,11 @@ open class SocketTimeoutException : InterruptedIOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.InterruptedIOException](https://developer.android.com/reference/kotlin/java/io/InterruptedIOException.html#) ||
-| | | | | ↳ | [java.net.SocketTimeoutException](https://developer.android.com/reference/kotlin/java/net/SocketTimeoutException#) |
+| | | | ↳ | [java.io.InterruptedIOException](../java/io/InterruptedIOException.md) ||
+| | | | | ↳ | [java.net.SocketTimeoutException](../java/net/SocketTimeoutException.md) |
 
 Signals that a timeout has occurred on a socket read or accept.
 
@@ -23,12 +23,12 @@ Signals that a timeout has occurred on a socket read or accept.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SocketTimeoutException](https://developer.android.com/reference/kotlin/java/net/SocketTimeoutException#SocketTimeoutException())`()` Construct a new SocketTimeoutException with no detailed message. |
-| [SocketTimeoutException](https://developer.android.com/reference/kotlin/java/net/SocketTimeoutException#SocketTimeoutException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new SocketTimeoutException with a detail message. |
+| [SocketTimeoutException](../java/net/SocketTimeoutException.md))`()` Construct a new SocketTimeoutException with no detailed message. |
+| [SocketTimeoutException](../java/net/SocketTimeoutException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new SocketTimeoutException with a detail message. |
 
 | Inherited properties ||
 |---|---|
-| From class [InterruptedIOException](https://developer.android.com/reference/kotlin/java/io/InterruptedIOException.html#) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesTransferred](https://developer.android.com/reference/kotlin/java/io/InterruptedIOException.html#bytesTransferred:kotlin.Int) <br /> Reports how many bytes had been transferred as part of the I/O operation before it was interrupted. <br /> | ||
+| From class [InterruptedIOException](../java/io/InterruptedIOException.md) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesTransferred](../java/io/InterruptedIOException.md) <br /> Reports how many bytes had been transferred as part of the I/O operation before it was interrupted. <br /> | ||
 
 ## Public constructors
 

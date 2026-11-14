@@ -8,12 +8,12 @@ open class Application : ContextWrapper, ComponentCallbacks2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||
-| | | ↳ | [android.app.Application](https://developer.android.com/reference/kotlin/android/app/Application#) |
+| ↳ | [android.content.Context](../android/content/Context.md) |||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
+| | | ↳ | [android.app.Application](../android/app/Application.md) |
 | --- | --- | --- | --- |
 
-Known Direct Subclasses [MockApplication](https://developer.android.com/reference/kotlin/android/test/mock/MockApplication.html#) [MockApplication](https://developer.android.com/reference/kotlin/android/test/mock/MockApplication.html#) A mock `https://developer.android.com/reference/kotlin/android/app/Application#` class.
+Known Direct Subclasses [MockApplication](../android/test/mock/MockApplication.md) [MockApplication](../android/test/mock/MockApplication.md) A mock `https://developer.android.com/reference/kotlin/android/app/Application#` class.
 
 Base class for maintaining global application state. You can provide your own implementation by creating a subclass and specifying the fully-qualified name of this subclass as the `"android:name"` attribute in your AndroidManifest.xml's `<application>` tag. The Application class, or your subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
@@ -473,7 +473,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -2264,7 +2264,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2305,9 +2305,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2521,7 +2521,7 @@ For more information, read [Handling Runtime Changes](https://developer.android.
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#): This value cannot be `null`. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md): This value cannot be `null`. |
 
 ### onCreate
 
@@ -2600,7 +2600,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
+| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
 
 | Exceptions ||
 |---|---|
@@ -2636,7 +2636,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
+| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
 
 | Exceptions ||
 |---|---|

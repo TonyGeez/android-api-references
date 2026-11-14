@@ -4,14 +4,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ConfigRequestIpv6DnsServer
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer "View this page in Java") 
+Kotlin| [Java](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer.md) 
 | --- | --- |
 
 ```
 interface ConfigRequestIpv6DnsServer : TunnelModeChildSessionParams.TunnelModeChildConfigRequest
 ```
 
-| [android.net.ipsec.ike.TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer#) |
+| [android.net.ipsec.ike.TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer.md) |
 
 Represents an IPv6 DNS Server request
 

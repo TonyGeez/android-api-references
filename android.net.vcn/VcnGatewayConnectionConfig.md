@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # VcnGatewayConnectionConfig
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig "View this page in Java") 
+Kotlin| [Java](../android/net/vcn/VcnGatewayConnectionConfig.md) 
 | --- | --- |
 
 ```
@@ -13,55 +13,55 @@ class VcnGatewayConnectionConfig
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.vcn.VcnGatewayConnectionConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#) |
+| ↳ | [android.net.vcn.VcnGatewayConnectionConfig](../android/net/vcn/VcnGatewayConnectionConfig.md) |
 
 This class represents a configuration for a connection to a Virtual Carrier Network gateway.
 
-Each VcnGatewayConnectionConfig represents a single logical connection to a carrier gateway, and may provide one or more telephony services (as represented by network capabilities). Each gateway is expected to provide mobility for a given session as the device roams across [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) s.
+Each VcnGatewayConnectionConfig represents a single logical connection to a carrier gateway, and may provide one or more telephony services (as represented by network capabilities). Each gateway is expected to provide mobility for a given session as the device roams across [Network](../android/net/Network.md) s.
 
-A VCN connection based on this configuration will be brought up dynamically based on device settings, and filed NetworkRequests. Underlying Networks must provide INTERNET connectivity, and must be part of the subscription group under which this configuration is registered (see [android.net.vcn.VcnManager#setVcnConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#setVcnConfig(android.os.ParcelUuid,%20android.net.vcn.VcnConfig))).
+A VCN connection based on this configuration will be brought up dynamically based on device settings, and filed NetworkRequests. Underlying Networks must provide INTERNET connectivity, and must be part of the subscription group under which this configuration is registered (see [android.net.vcn.VcnManager#setVcnConfig](../android/net/vcn/VcnManager.md))).
 
 As an abstraction of a cellular network, services that can be provided by a VCN network are limited to services provided by cellular networks:
 
-- [NetworkCapabilities.NET_CAPABILITY_MMS](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_MMS:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_SUPL](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_SUPL:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_DUN](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_DUN:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_FOTA](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_FOTA:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_IMS](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_IMS:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_CBS](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_CBS:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_IA](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_IA:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_RCS](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_RCS:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_XCAP](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_XCAP:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_EIMS](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_EIMS:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_INTERNET](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_INTERNET:kotlin.Int)
-- [NetworkCapabilities.NET_CAPABILITY_MCX](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_MCX:kotlin.Int)
+- [NetworkCapabilities.NET_CAPABILITY_MMS](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_SUPL](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_DUN](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_FOTA](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_IMS](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_CBS](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_IA](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_RCS](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_XCAP](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_EIMS](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_INTERNET](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_MCX](../android/net/NetworkCapabilities.md)
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder) This class is used to incrementally build [VcnGatewayConnectionConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#) objects. |
+| | [Builder](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md) This class is used to incrementally build [VcnGatewayConnectionConfig](../android/net/vcn/VcnGatewayConnectionConfig.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET:kotlin.Int) Minimum NAT timeout not set. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY:kotlin.Int) Perform mobility update to attempt recovery from suspected data stalls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET](../android/net/vcn/VcnGatewayConnectionConfig.md) Minimum NAT timeout not set. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](../android/net/vcn/VcnGatewayConnectionConfig.md) Perform mobility update to attempt recovery from suspected data stalls. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getExposedCapabilities](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getExposedCapabilities())`()` Returns all exposed capabilities. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getGatewayConnectionName](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getGatewayConnectionName())`()` Returns the configured Gateway Connection name. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/vcn/VcnGatewayConnectionConfig.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getExposedCapabilities](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Returns all exposed capabilities. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getGatewayConnectionName](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Returns the configured Gateway Connection name. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxMtu](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getMaxMtu())`()` Retrieves the maximum MTU allowed for this Gateway Connection. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinUdpPort4500NatTimeoutSeconds](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getMinUdpPort4500NatTimeoutSeconds())`()` Retrieves the maximum supported IKEv2/IPsec NATT keepalive timeout. |
-| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getRetryIntervalsMillis](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getRetryIntervalsMillis())`()` Retrieves the configured retry intervals. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxMtu](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieves the maximum MTU allowed for this Gateway Connection. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinUdpPort4500NatTimeoutSeconds](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieves the maximum supported IKEv2/IPsec NATT keepalive timeout. |
+| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getRetryIntervalsMillis](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieves the configured retry intervals. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate)!\> | [getVcnUnderlyingNetworkPriorities](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#getVcnUnderlyingNetworkPriorities())`()` Retrieve the VcnUnderlyingNetworkTemplate list, or a default list if it is not configured. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGatewayOption](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#hasGatewayOption(kotlin.Int))`(`option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given VCN gateway option is enabled. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#hashCode())`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md)!\> | [getVcnUnderlyingNetworkPriorities](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieve the VcnUnderlyingNetworkTemplate list, or a default list if it is not configured. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGatewayOption](../android/net/vcn/VcnGatewayConnectionConfig.md))`(`option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given VCN gateway option is enabled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSafeModeEnabled](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#isSafeModeEnabled())`()` Check whether safe mode is enabled |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSafeModeEnabled](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Check whether safe mode is enabled |
 
 ## Constants
 
@@ -142,8 +142,8 @@ The returned integer-value capabilities will not contain duplicates, and will be
 
 **See Also**
 
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#addExposedCapability(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#addExposedCapability(kotlin.Int))
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#removeExposedCapability(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#removeExposedCapability(kotlin.Int)) 
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#addExposedCapability(int)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md))
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#removeExposedCapability(int)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md)) 
 
 ### getGatewayConnectionName
 
@@ -155,7 +155,7 @@ fun getGatewayConnectionName(): String
 
 Returns the configured Gateway Connection name.
 
-This name is used by the configuring apps to distinguish between VcnGatewayConnectionConfigs configured on a single [VcnConfig](https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig). This will be used as the identifier in VcnStatusCallback invocations.
+This name is used by the configuring apps to distinguish between VcnGatewayConnectionConfigs configured on a single [VcnConfig](../android/net/vcn/VcnConfig.md). This will be used as the identifier in VcnStatusCallback invocations.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -163,7 +163,7 @@ This name is used by the configuring apps to distinguish between VcnGatewayConne
 
 **See Also**
 
-- [android.net.vcn.VcnManager.VcnStatusCallback#onGatewayConnectionError](https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback#onGatewayConnectionError(kotlin.String,%20kotlin.Int,%20kotlin.Throwable)) 
+- [android.net.vcn.VcnManager.VcnStatusCallback#onGatewayConnectionError](../android/net/vcn/VcnManager.VcnStatusCallback.md)) 
 
 ### getMaxMtu
 
@@ -181,7 +181,7 @@ Retrieves the maximum MTU allowed for this Gateway Connection.
 
 **See Also**
 
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setMaxMtu(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#setMaxMtu(kotlin.Int)) 
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setMaxMtu(int)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md)) 
 
 ### getMinUdpPort4500NatTimeoutSeconds
 
@@ -194,7 +194,7 @@ fun getMinUdpPort4500NatTimeoutSeconds(): Int
 Retrieves the maximum supported IKEv2/IPsec NATT keepalive timeout. 
 **See Also**
 
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setMinUdpPort4500NatTimeoutSeconds(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#setMinUdpPort4500NatTimeoutSeconds(kotlin.Int)) 
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setMinUdpPort4500NatTimeoutSeconds(int)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md)) 
 
 ### getRetryIntervalsMillis
 
@@ -226,11 +226,11 @@ Retrieve the VcnUnderlyingNetworkTemplate list, or a default list if it is not c
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md)!> | This value cannot be`null`. |
 
 **See Also**
 
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setVcnUnderlyingNetworkPriorities(List)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#setVcnUnderlyingNetworkPriorities(kotlin.collections.MutableList)) 
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setVcnUnderlyingNetworkPriorities(List)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md)) 
 
 ### hasGatewayOption
 
@@ -244,7 +244,7 @@ Checks if the given VCN gateway option is enabled.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the option to check. Value is [android.net.vcn.VcnGatewayConnectionConfig#VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig#VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY:kotlin.Int) |
+| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the option to check. Value is [android.net.vcn.VcnGatewayConnectionConfig#VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](../android/net/vcn/VcnGatewayConnectionConfig.md) |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------|
@@ -252,8 +252,8 @@ Checks if the given VCN gateway option is enabled.
 
 **See Also**
 
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#addGatewayOption(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#addGatewayOption(kotlin.Int))
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#removeGatewayOption(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#removeGatewayOption(kotlin.Int)) 
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#addGatewayOption(int)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md))
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#removeGatewayOption(int)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md)) 
 
 ### hashCode
 
@@ -278,4 +278,4 @@ fun isSafeModeEnabled(): Boolean
 Check whether safe mode is enabled 
 **See Also**
 
-- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setSafeModeEnabled(boolean)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnGatewayConnectionConfig.Builder#setSafeModeEnabled(kotlin.Boolean))
+- [android.net.vcn.VcnGatewayConnectionConfig.Builder#setSafeModeEnabled(boolean)](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md))

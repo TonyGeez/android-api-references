@@ -10,7 +10,7 @@ open class InputSource
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#) |
+| ↳ | [org.xml.sax.InputSource](../org/xml/sax/InputSource.md) |
 
 A single input source for an XML entity.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
@@ -26,26 +26,26 @@ An InputSource object belongs to the application: the SAX parser shall never mod
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#InputSource())`()` Zero-argument default constructor. |
-| [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#InputSource(java.io.InputStream))`(`byteStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Create a new input source with a byte stream. |
-| [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#InputSource(java.io.Reader))`(`characterStream:` ` [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!`)` Create a new input source with a character stream. |
-| [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#InputSource(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new input source with a system identifier. |
+| [InputSource](../org/xml/sax/InputSource.md))`()` Zero-argument default constructor. |
+| [InputSource](../org/xml/sax/InputSource.md))`(`byteStream:` ` [InputStream](../java/io/InputStream.md)!`)` Create a new input source with a byte stream. |
+| [InputSource](../org/xml/sax/InputSource.md))`(`characterStream:` ` [Reader](../java/io/Reader.md)!`)` Create a new input source with a character stream. |
+| [InputSource](../org/xml/sax/InputSource.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new input source with a system identifier. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getByteStream())`()` Get the byte stream for this input source. |
-| open [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [getCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getCharacterStream())`()` Get the character stream for this input source. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getEncoding())`()` Get the character encoding for a byte stream or URI. |
+| open [InputStream](../java/io/InputStream.md)! | [getByteStream](../org/xml/sax/InputSource.md))`()` Get the byte stream for this input source. |
+| open [Reader](../java/io/Reader.md)! | [getCharacterStream](../org/xml/sax/InputSource.md))`()` Get the character stream for this input source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](../org/xml/sax/InputSource.md))`()` Get the character encoding for a byte stream or URI. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getPublicId())`()` Get the public identifier for this input source. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getSystemId())`()` Get the system identifier for this input source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream))`(`byteStream:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Set the byte stream for this input source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../org/xml/sax/InputSource.md))`()` Get the public identifier for this input source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org/xml/sax/InputSource.md))`()` Get the system identifier for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](../org/xml/sax/InputSource.md))`(`byteStream:` ` [InputStream](../java/io/InputStream.md)!`)` Set the byte stream for this input source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setCharacterStream(java.io.Reader))`(`characterStream:` ` [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!`)` Set the character stream for this input source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setEncoding(kotlin.String))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the character encoding, if known. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setPublicId(kotlin.String))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the public identifier for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](../org/xml/sax/InputSource.md))`(`characterStream:` ` [Reader](../java/io/Reader.md)!`)` Set the character stream for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](../org/xml/sax/InputSource.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the character encoding, if known. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](../org/xml/sax/InputSource.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the public identifier for this input source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setSystemId(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../org/xml/sax/InputSource.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this input source. |
 
 ## Public constructors
 
@@ -60,11 +60,11 @@ InputSource()
 Zero-argument default constructor. 
 **See Also**
 
-- [#setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setPublicId(kotlin.String))
-- [#setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setSystemId(kotlin.String))
-- [#setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream))
-- [#setCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setCharacterStream(java.io.Reader))
-- [#setEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setEncoding(kotlin.String)) 
+- [#setPublicId](../org/xml/sax/InputSource.md))
+- [#setSystemId](../org/xml/sax/InputSource.md))
+- [#setByteStream](../org/xml/sax/InputSource.md))
+- [#setCharacterStream](../org/xml/sax/InputSource.md))
+- [#setEncoding](../org/xml/sax/InputSource.md)) 
 
 ### InputSource
 
@@ -80,15 +80,15 @@ Application writers should use setSystemId() to provide a base for resolving rel
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `byteStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:The raw byte stream containing the document. |
+| `byteStream` | [InputStream](../java/io/InputStream.md)!:The raw byte stream containing the document. |
 
 **See Also**
 
-- [#setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setPublicId(kotlin.String))
-- [#setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setSystemId(kotlin.String))
-- [#setEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setEncoding(kotlin.String))
-- [#setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream))
-- [#setCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setCharacterStream(java.io.Reader)) 
+- [#setPublicId](../org/xml/sax/InputSource.md))
+- [#setSystemId](../org/xml/sax/InputSource.md))
+- [#setEncoding](../org/xml/sax/InputSource.md))
+- [#setByteStream](../org/xml/sax/InputSource.md))
+- [#setCharacterStream](../org/xml/sax/InputSource.md)) 
 
 ### InputSource
 
@@ -106,14 +106,14 @@ The character stream shall not include a byte order mark.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| `characterStream` | [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!:The raw character stream containing the document. |
+| `characterStream` | [Reader](../java/io/Reader.md)!:The raw character stream containing the document. |
 
 **See Also**
 
-- [#setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setPublicId(kotlin.String))
-- [#setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setSystemId(kotlin.String))
-- [#setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream))
-- [#setCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setCharacterStream(java.io.Reader)) 
+- [#setPublicId](../org/xml/sax/InputSource.md))
+- [#setSystemId](../org/xml/sax/InputSource.md))
+- [#setByteStream](../org/xml/sax/InputSource.md))
+- [#setCharacterStream](../org/xml/sax/InputSource.md)) 
 
 ### InputSource
 
@@ -135,11 +135,11 @@ If the system identifier is a URL, it must be fully resolved (it may not be a re
 
 **See Also**
 
-- [#setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setPublicId(kotlin.String))
-- [#setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setSystemId(kotlin.String))
-- [#setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream))
-- [#setEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setEncoding(kotlin.String))
-- [#setCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setCharacterStream(java.io.Reader))
+- [#setPublicId](../org/xml/sax/InputSource.md))
+- [#setSystemId](../org/xml/sax/InputSource.md))
+- [#setByteStream](../org/xml/sax/InputSource.md))
+- [#setEncoding](../org/xml/sax/InputSource.md))
+- [#setCharacterStream](../org/xml/sax/InputSource.md))
 
 ## Public methods
 
@@ -157,12 +157,12 @@ The getEncoding method will return the character encoding for this byte stream, 
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | The byte stream, or null if none was supplied. |
+| [InputStream](../java/io/InputStream.md)! | The byte stream, or null if none was supplied. |
 
 **See Also**
 
-- [#getEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getEncoding())
-- [#setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream)) 
+- [#getEncoding](../org/xml/sax/InputSource.md))
+- [#setByteStream](../org/xml/sax/InputSource.md)) 
 
 ### getCharacterStream
 
@@ -176,11 +176,11 @@ Get the character stream for this input source.
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------|
-| [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | The character stream, or null if none was supplied. |
+| [Reader](../java/io/Reader.md)! | The character stream, or null if none was supplied. |
 
 **See Also**
 
-- [#setCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setCharacterStream(java.io.Reader)) 
+- [#setCharacterStream](../org/xml/sax/InputSource.md)) 
 
 ### getEncoding
 
@@ -198,9 +198,9 @@ Get the character encoding for a byte stream or URI. This value will be ignored 
 
 **See Also**
 
-- [#setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream))
-- [#getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getSystemId())
-- [#getByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getByteStream()) 
+- [#setByteStream](../org/xml/sax/InputSource.md))
+- [#getSystemId](../org/xml/sax/InputSource.md))
+- [#getByteStream](../org/xml/sax/InputSource.md)) 
 
 ### getPublicId
 
@@ -218,7 +218,7 @@ Get the public identifier for this input source.
 
 **See Also**
 
-- [#setPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setPublicId(kotlin.String)) 
+- [#setPublicId](../org/xml/sax/InputSource.md)) 
 
 ### getSystemId
 
@@ -240,8 +240,8 @@ If the system ID is a URL, it will be fully resolved.
 
 **See Also**
 
-- [#setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setSystemId(kotlin.String))
-- [#getEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getEncoding()) 
+- [#setSystemId](../org/xml/sax/InputSource.md))
+- [#getEncoding](../org/xml/sax/InputSource.md)) 
 
 ### setByteStream
 
@@ -259,14 +259,14 @@ If the application knows the character encoding of the byte stream, it should se
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `byteStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:A byte stream containing an XML document or other entity. |
+| `byteStream` | [InputStream](../java/io/InputStream.md)!:A byte stream containing an XML document or other entity. |
 
 **See Also**
 
-- [#setEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setEncoding(kotlin.String))
-- [#getByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getByteStream())
-- [#getEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getEncoding())
-- [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) 
+- [#setEncoding](../org/xml/sax/InputSource.md))
+- [#getByteStream](../org/xml/sax/InputSource.md))
+- [#getEncoding](../org/xml/sax/InputSource.md))
+- [java.io.InputStream](../java/io/InputStream.md) 
 
 ### setCharacterStream
 
@@ -282,12 +282,12 @@ If there is a character stream specified, the SAX parser will ignore any byte st
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `characterStream` | [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!:The character stream containing the XML document or other entity. |
+| `characterStream` | [Reader](../java/io/Reader.md)!:The character stream containing the XML document or other entity. |
 
 **See Also**
 
-- [#getCharacterStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getCharacterStream())
-- [java.io.Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#) 
+- [#getCharacterStream](../org/xml/sax/InputSource.md))
+- [java.io.Reader](../java/io/Reader.md) 
 
 ### setEncoding
 
@@ -309,9 +309,9 @@ This method has no effect when the application provides a character stream.
 
 **See Also**
 
-- [#setSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setSystemId(kotlin.String))
-- [#setByteStream](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setByteStream(java.io.InputStream))
-- [#getEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getEncoding()) 
+- [#setSystemId](../org/xml/sax/InputSource.md))
+- [#setByteStream](../org/xml/sax/InputSource.md))
+- [#getEncoding](../org/xml/sax/InputSource.md)) 
 
 ### setPublicId
 
@@ -331,9 +331,9 @@ The public identifier is always optional: if the application writer includes one
 
 **See Also**
 
-- [#getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getPublicId())
-- [org.xml.sax.Locator#getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/Locator#getPublicId())
-- [org.xml.sax.SAXParseException#getPublicId](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException#getPublicId()) 
+- [#getPublicId](../org/xml/sax/InputSource.md))
+- [org.xml.sax.Locator#getPublicId](../org/xml/sax/Locator.md))
+- [org.xml.sax.SAXParseException#getPublicId](../org/xml/sax/SAXParseException.md)) 
 
 ### setSystemId
 
@@ -357,7 +357,7 @@ If the system identifier is a URL, it must be fully resolved (it may not be a re
 
 **See Also**
 
-- [#setEncoding](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#setEncoding(kotlin.String))
-- [#getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource#getSystemId())
-- [org.xml.sax.Locator#getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/Locator#getSystemId())
-- [org.xml.sax.SAXParseException#getSystemId](https://developer.android.com/reference/kotlin/org/xml/sax/SAXParseException#getSystemId())
+- [#setEncoding](../org/xml/sax/InputSource.md))
+- [#getSystemId](../org/xml/sax/InputSource.md))
+- [org.xml.sax.Locator#getSystemId](../org/xml/sax/Locator.md))
+- [org.xml.sax.SAXParseException#getSystemId](../org/xml/sax/SAXParseException.md))

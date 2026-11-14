@@ -11,11 +11,11 @@ open class PortUnreachableException : SocketException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.SocketException](https://developer.android.com/reference/kotlin/java/net/SocketException) ||
-| | | | | ↳ | [java.net.PortUnreachableException](https://developer.android.com/reference/kotlin/java/net/PortUnreachableException#) |
+| | | | ↳ | [java.net.SocketException](../java/net/SocketException.md) ||
+| | | | | ↳ | [java.net.PortUnreachableException](../java/net/PortUnreachableException.md) |
 
 Signals that an ICMP Port Unreachable message has been received on a connected datagram.
 
@@ -23,8 +23,8 @@ Signals that an ICMP Port Unreachable message has been received on a connected d
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PortUnreachableException](https://developer.android.com/reference/kotlin/java/net/PortUnreachableException#PortUnreachableException())`()` Construct a new`PortUnreachableException`with no detailed message. |
-| [PortUnreachableException](https://developer.android.com/reference/kotlin/java/net/PortUnreachableException#PortUnreachableException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`PortUnreachableException`with a detail message. |
+| [PortUnreachableException](../java/net/PortUnreachableException.md))`()` Construct a new`PortUnreachableException`with no detailed message. |
+| [PortUnreachableException](../java/net/PortUnreachableException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`PortUnreachableException`with a detail message. |
 
 ## Public constructors
 

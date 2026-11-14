@@ -10,10 +10,10 @@ class FileVisitOption
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.FileVisitOption](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitOption#)\> ||
-| | ↳ | [java.nio.file.FileVisitOption](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitOption#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.FileVisitOption](../java/nio/file/FileVisitOption.md)\> ||
+| | ↳ | [java.nio.file.FileVisitOption](../java/nio/file/FileVisitOption.md) |
 
-| Known Direct Subclasses [FileVisitOption.FOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitOption#ENUM_VALUE:FOLLOW_LINKS) |--------------------------------------------------------------------------------------------------------------------------------------|------------------------| | [FileVisitOption.FOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitOption#ENUM_VALUE:FOLLOW_LINKS) | Follow symbolic links. | |
+| Known Direct Subclasses [FileVisitOption.FOLLOW_LINKS](../java/nio/file/FileVisitOption.md) |--------------------------------------------------------------------------------------------------------------------------------------|------------------------| | [FileVisitOption.FOLLOW_LINKS](../java/nio/file/FileVisitOption.md) | Follow symbolic links. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Defines the file tree traversal options.
@@ -22,7 +22,7 @@ Defines the file tree traversal options.
 
 | Enum values ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitOption#ENUM_VALUE:FOLLOW_LINKS) Follow symbolic links. |
+| [FOLLOW_LINKS](../java/nio/file/FileVisitOption.md) Follow symbolic links. |
 
 ## Enum values
 

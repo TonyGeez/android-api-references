@@ -8,7 +8,7 @@ class SettingsPreferenceMetadata : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.settings.preferences.SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#) |
+| ↳ | [android.service.settings.preferences.SettingsPreferenceMetadata](../android/service/settings/preferences/SettingsPreferenceMetadata.md) |
 
 Data object representation of a Settings Preference definition and state.
 
@@ -33,10 +33,10 @@ Data object representation of a Settings Preference definition and state.
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getExtras()()` Returns any additional fields specific to this preference. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getExtras()()` Returns any additional fields specific to this preference. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getKey()()` Returns the key of Preference. |
 | --- | --- |
-| [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getLaunchIntent()()` Returns the intent to launch the host app page for this Preference. |
+| [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getLaunchIntent()()` Returns the intent to launch the host app page for this Preference. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getReadPermissions()()` Returns the permissions required to read this Preference's value. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getScreenKey()()` Returns the screen key of Preference. |
 | --- | --- |
@@ -56,7 +56,7 @@ Data object representation of a Settings Preference definition and state.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SettingsPreferenceMetadata](../android/service/settings/preferences/SettingsPreferenceMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#`. |
 
 ## Constants
 
@@ -303,7 +303,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

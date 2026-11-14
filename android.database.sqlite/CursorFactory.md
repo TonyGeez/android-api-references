@@ -4,22 +4,22 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CursorFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.CursorFactory "View this page in Java") 
+Kotlin| [Java](../android/database/sqlite/SQLiteDatabase.CursorFactory.md) 
 | --- | --- |
 
 ```
 interface CursorFactory
 ```
 
-| [android.database.sqlite.SQLiteDatabase.CursorFactory](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory#) |
+| [android.database.sqlite.SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md) |
 
-Used to allow returning sub-classes of [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) when calling query.
+Used to allow returning sub-classes of [Cursor](../android/database/Cursor.md) when calling query.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [newCursor](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory#newCursor(android.database.sqlite.SQLiteDatabase,%20android.database.sqlite.SQLiteCursorDriver,%20kotlin.String,%20android.database.sqlite.SQLiteQuery))`(`db:` ` [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase)!`, `masterQuery:` ` [SQLiteCursorDriver](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver)!`, `editTable:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery)!`)` See [SQLiteCursor.SQLiteCursor(SQLiteCursorDriver, String, SQLiteQuery)](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#SQLiteCursor(android.database.sqlite.SQLiteCursorDriver,%20kotlin.String,%20android.database.sqlite.SQLiteQuery)). |
+| abstract [Cursor](../android/database/Cursor.md)! | [newCursor](../android/database/sqlite/SQLiteDatabase.CursorFactory.md))`(`db:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!`, `masterQuery:` ` [SQLiteCursorDriver](../android/database/sqlite/SQLiteCursorDriver.md)!`, `editTable:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [SQLiteQuery](../android/database/sqlite/SQLiteQuery.md)!`)` See [SQLiteCursor.SQLiteCursor(SQLiteCursorDriver, String, SQLiteQuery)](../android/database/sqlite/SQLiteCursor.md)). |
 
 ## Public methods
 
@@ -36,4 +36,4 @@ abstract fun newCursor(
 ): Cursor!
 ```
 
-See [SQLiteCursor.SQLiteCursor(SQLiteCursorDriver, String, SQLiteQuery)](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursor#SQLiteCursor(android.database.sqlite.SQLiteCursorDriver,%20kotlin.String,%20android.database.sqlite.SQLiteQuery)).
+See [SQLiteCursor.SQLiteCursor(SQLiteCursorDriver, String, SQLiteQuery)](../android/database/sqlite/SQLiteCursor.md)).

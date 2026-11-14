@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PointF
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/PointF "View this page in Java")
+Kotlin | [Java](../android/graphics/PointF.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class PointF : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF#) |
+| ↳ | [android.graphics.PointF](../android/graphics/PointF.md) |
 
 PointF holds two float coordinates
 
@@ -50,7 +50,7 @@ PointF holds two float coordinates
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF#)!\> | `https://developer.android.com/reference/kotlin/android/graphics/PointF#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PointF](../android/graphics/PointF.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/PointF#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/PointF#x:kotlin.Float` <br /> |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/PointF#y:kotlin.Float` <br /> |
 | --- | --- |
@@ -75,7 +75,7 @@ PointF(p: Point)
 
 | Parameters ||
 |---|---|
-| `p` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point): This value cannot be `null`. |
+| `p` | [Point](../android/graphics/Point.md): This value cannot be `null`. |
 
 ### PointF
 
@@ -89,7 +89,7 @@ Create a new PointF initialized with the values in the specified PointF (which i
 
 | Parameters ||
 |---|---|
-| `p` | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF#): The point whose values are copied into the new point. This value cannot be `null`. |
+| `p` | [PointF](../android/graphics/PointF.md): The point whose values are copied into the new point. This value cannot be `null`. |
 
 ### PointF
 
@@ -232,7 +232,7 @@ Set the point's coordinates from the data stored in the specified parcel. To wri
 
 | Parameters ||
 |---|---|
-| `in` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The parcel to read the point's coordinates from. This value cannot be `null`. |
+| `in` | [Parcel](../android/os/Parcel.md): The parcel to read the point's coordinates from. This value cannot be `null`. |
 
 ### set
 
@@ -246,7 +246,7 @@ Set the point's x and y coordinates to the coordinates of p
 
 | Parameters ||
 |---|---|
-| `p` | [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF#): This value cannot be `null`. |
+| `p` | [PointF](../android/graphics/PointF.md): This value cannot be `null`. |
 
 ### set
 
@@ -292,7 +292,7 @@ Write this point to the specified parcel. To restore a point from a parcel, use 
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The parcel to write the point's coordinates into |
+| `out` | [Parcel](../android/os/Parcel.md): The parcel to write the point's coordinates into |
 | --- | --- |
 
 ## Properties

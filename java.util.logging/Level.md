@@ -10,7 +10,7 @@ open class Level : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.logging.Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) |
+| ↳ | [java.util.logging.Level](../java/util/logging/Level.md) |
 
 The Level class defines a set of standard logging levels that can be used to control logging output. The logging Level objects are ordered and are specified by ordered integers. Enabling logging at a given level also enables logging at all higher levels.
 
@@ -34,35 +34,35 @@ It is possible for third parties to define additional logging levels by subclass
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#Level(kotlin.String,%20kotlin.Int))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a named Level with a given integer value. |
-| [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#Level(kotlin.String,%20kotlin.Int,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resourceBundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a named Level with a given integer value and a given localization resource name. |
+| [Level](../java/util/logging/Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a named Level with a given integer value. |
+| [Level](../java/util/logging/Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resourceBundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a named Level with a given integer value and a given localization resource name. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/logging/Level#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compare two objects for value equality. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocalizedName](https://developer.android.com/reference/kotlin/java/util/logging/Level#getLocalizedName())`()` Return the localized string name of the Level, for the current default locale. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/util/logging/Level#getName())`()` Return the non-localized string name of the Level. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/logging/Level.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compare two objects for value equality. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocalizedName](../java/util/logging/Level.md))`()` Return the localized string name of the Level, for the current default locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../java/util/logging/Level.md))`()` Return the non-localized string name of the Level. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getResourceBundleName](https://developer.android.com/reference/kotlin/java/util/logging/Level#getResourceBundleName())`()` Return the level's localization resource bundle name, or null if no localization bundle is defined. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/logging/Level#hashCode())`()` Generate a hashcode. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [intValue](https://developer.android.com/reference/kotlin/java/util/logging/Level#intValue())`()` Get the integer value for this level. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getResourceBundleName](../java/util/logging/Level.md))`()` Return the level's localization resource bundle name, or null if no localization bundle is defined. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/logging/Level.md))`()` Generate a hashcode. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [intValue](../java/util/logging/Level.md))`()` Get the integer value for this level. |
 | --- | --- |
-| openstatic [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [parse](https://developer.android.com/reference/kotlin/java/util/logging/Level#parse(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parse a level name string into a Level. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/logging/Level#toString())`()` Returns a string representation of this Level. |
+| openstatic [Level](../java/util/logging/Level.md) | [parse](../java/util/logging/Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parse a level name string into a Level. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/logging/Level.md))`()` Returns a string representation of this Level. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [ALL](https://developer.android.com/reference/kotlin/java/util/logging/Level#ALL:java.util.logging.Level) ALL indicates that all messages should be logged. |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [CONFIG](https://developer.android.com/reference/kotlin/java/util/logging/Level#CONFIG:java.util.logging.Level) CONFIG is a message level for static configuration messages. |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [FINE](https://developer.android.com/reference/kotlin/java/util/logging/Level#FINE:java.util.logging.Level) FINE is a message level providing tracing information. |
+| static [Level](../java/util/logging/Level.md) | [ALL](../java/util/logging/Level.md) ALL indicates that all messages should be logged. |
+| static [Level](../java/util/logging/Level.md) | [CONFIG](../java/util/logging/Level.md) CONFIG is a message level for static configuration messages. |
+| static [Level](../java/util/logging/Level.md) | [FINE](../java/util/logging/Level.md) FINE is a message level providing tracing information. |
 | --- | --- |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [FINER](https://developer.android.com/reference/kotlin/java/util/logging/Level#FINER:java.util.logging.Level) FINER indicates a fairly detailed tracing message. |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [FINEST](https://developer.android.com/reference/kotlin/java/util/logging/Level#FINEST:java.util.logging.Level) FINEST indicates a highly detailed tracing message. |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [INFO](https://developer.android.com/reference/kotlin/java/util/logging/Level#INFO:java.util.logging.Level) INFO is a message level for informational messages. |
+| static [Level](../java/util/logging/Level.md) | [FINER](../java/util/logging/Level.md) FINER indicates a fairly detailed tracing message. |
+| static [Level](../java/util/logging/Level.md) | [FINEST](../java/util/logging/Level.md) FINEST indicates a highly detailed tracing message. |
+| static [Level](../java/util/logging/Level.md) | [INFO](../java/util/logging/Level.md) INFO is a message level for informational messages. |
 | --- | --- |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [OFF](https://developer.android.com/reference/kotlin/java/util/logging/Level#OFF:java.util.logging.Level) OFF is a special level that can be used to turn off logging. |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [SEVERE](https://developer.android.com/reference/kotlin/java/util/logging/Level#SEVERE:java.util.logging.Level) SEVERE is a message level indicating a serious failure. |
-| static [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | [WARNING](https://developer.android.com/reference/kotlin/java/util/logging/Level#WARNING:java.util.logging.Level) WARNING is a message level indicating a potential problem. |
+| static [Level](../java/util/logging/Level.md) | [OFF](../java/util/logging/Level.md) OFF is a special level that can be used to turn off logging. |
+| static [Level](../java/util/logging/Level.md) | [SEVERE](../java/util/logging/Level.md) SEVERE is a message level indicating a serious failure. |
+| static [Level](../java/util/logging/Level.md) | [WARNING](../java/util/logging/Level.md) WARNING is a message level indicating a potential problem. |
 | --- | --- |
 
 ## Protected constructors
@@ -231,7 +231,7 @@ For example:
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Level](https://developer.android.com/reference/kotlin/java/util/logging/Level#) | The parsed value. Passing an integer that corresponds to a known name (e.g., 700) will return the associated name (e.g.,`CONFIG`). Passing an integer that does not (e.g., 1) will return a new level name initialized to that value. |
+| [Level](../java/util/logging/Level.md) | The parsed value. Passing an integer that corresponds to a known name (e.g., 700) will return the associated name (e.g.,`CONFIG`). Passing an integer that does not (e.g., 1) will return a new level name initialized to that value. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

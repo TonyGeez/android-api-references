@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AlignmentSpan
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/style/AlignmentSpan "View this page in Java") 
+Kotlin| [Java](../android/text/style/AlignmentSpan.md) 
 | --- | --- |
 
 ```
 interface AlignmentSpan : ParagraphStyle
 ```
 
-| [android.text.style.AlignmentSpan](https://developer.android.com/reference/kotlin/android/text/style/AlignmentSpan#) |
+| [android.text.style.AlignmentSpan](../android/text/style/AlignmentSpan.md) |
 
-| Known Direct Subclasses [AlignmentSpan.Standard](https://developer.android.com/reference/kotlin/android/text/style/AlignmentSpan.Standard) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------| | [AlignmentSpan.Standard](https://developer.android.com/reference/kotlin/android/text/style/AlignmentSpan.Standard) | Default implementation of the [AlignmentSpan](https://developer.android.com/reference/kotlin/android/text/style/AlignmentSpan#). | |
+| Known Direct Subclasses [AlignmentSpan.Standard](../android/text/style/AlignmentSpan.Standard.md) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------| | [AlignmentSpan.Standard](../android/text/style/AlignmentSpan.Standard.md) | Default implementation of the [AlignmentSpan](../android/text/style/AlignmentSpan.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Span that allows defining the alignment of text at the paragraph level.
@@ -22,11 +22,11 @@ Span that allows defining the alignment of text at the paragraph level.
 
 | Nested classes ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Standard](https://developer.android.com/reference/kotlin/android/text/style/AlignmentSpan.Standard) Default implementation of the [AlignmentSpan](https://developer.android.com/reference/kotlin/android/text/style/AlignmentSpan#). |
+| open | [Standard](../android/text/style/AlignmentSpan.Standard.md) Default implementation of the [AlignmentSpan](../android/text/style/AlignmentSpan.md). |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment.html#)! | [getAlignment](https://developer.android.com/reference/kotlin/android/text/style/AlignmentSpan#getAlignment())`()` Returns the alignment of the text. |
+| abstract [Layout.Alignment](../android/text/Layout.Alignment.md)! | [getAlignment](../android/text/style/AlignmentSpan.md))`()` Returns the alignment of the text. |
 
 ## Public methods
 
@@ -42,4 +42,4 @@ Returns the alignment of the text.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------|
-| [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment.html#)! | the text alignment |
+| [Layout.Alignment](../android/text/Layout.Alignment.md)! | the text alignment |

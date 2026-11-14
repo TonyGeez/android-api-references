@@ -8,7 +8,7 @@ open class BaseInputConnection : InputConnection
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.BaseInputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#) |
+| ↳ | [android.view.inputmethod.BaseInputConnection](../android/view/inputmethod/BaseInputConnection.md) |
 
 Base class for implementors of the InputConnection interface, taking care of most of the common behavior for providing a connection to an Editable. Implementors of this class will want to be sure to implement `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getEditable()` to provide access to their own editable object, and to refer to the documentation in `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection`.
 
@@ -154,13 +154,13 @@ Although calling this API is allowed only for the IME that is currently selected
 | --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getComposingSpanStart(android.text.Spannable)(text: https://developer.android.com/reference/kotlin/android/text/Spannable.html#)` Return the beginning of the range of composing text, or -1 if there's no composing text. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getCursorCapsMode(kotlin.Int)(reqModes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation uses TextUtils. |
-| open [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getEditable()()` Return the target of edit operations. |
+| open [Editable](../android/text/Editable.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getEditable()()` Return the target of edit operations. |
 | --- | --- |
-| open [ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int)(request: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation always returns null. |
-| open [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getHandler()()` Called by the system to enable application developers to specify a dedicated thread on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` methods are called back. |
+| open [ExtractedText](../android/view/inputmethod/ExtractedText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int)(request: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation always returns null. |
+| open [Handler](../android/os/Handler.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getHandler()()` Called by the system to enable application developers to specify a dedicated thread on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` methods are called back. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getSelectedText(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation returns the text currently selected, or null if none is selected. |
 | --- | --- |
-| open [SurroundingText](https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation returns the given amount of text around the current cursor position in the buffer. |
+| open [SurroundingText](../android/view/inputmethod/SurroundingText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation returns the given amount of text around the current cursor position in the buffer. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getTextAfterCursor(kotlin.Int,%20kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation returns the given amount of text from the current cursor position in the buffer. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#getTextBeforeCursor(kotlin.Int,%20kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation returns the given amount of text from the current cursor position in the buffer. |
 | --- | --- |
@@ -180,7 +180,7 @@ Although calling this API is allowed only for the IME that is currently selected
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, newCursorPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation places the given text into the editable, replacing any existing composing text. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#setSelection(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` The default implementation changes the selection position in the current editable text. |
 | --- | --- |
-| open [TextSnapshot](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#takeSnapshot()()` Default implementation that constructs `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot` with information extracted from `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#`. |
+| open [TextSnapshot](../android/view/inputmethod/TextSnapshot.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#takeSnapshot()()` Default implementation that constructs `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot` with information extracted from `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection#`. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, newCursorPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, textAttribute: https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute?)`
 
@@ -262,7 +262,7 @@ BaseInputConnection(
 
 | Parameters ||
 |---|---|
-| `targetView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#): This value cannot be `null`. |
+| `targetView` | [View](../android/view/View.md): This value cannot be `null`. |
 
 ## Public methods
 
@@ -321,7 +321,7 @@ Default implementation does nothing and returns false.
 
 | Parameters ||
 |---|---|
-| `text` | [CompletionInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo)!: The committed completion. |
+| `text` | [CompletionInfo](../android/view/inputmethod/CompletionInfo.md)!: The committed completion. |
 
 | Return ||
 |---|---|
@@ -343,9 +343,9 @@ Default implementation which invokes `https://developer.android.com/reference/ko
 
 | Parameters ||
 |---|---|
-| `inputContentInfo` | [InputContentInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo): Content to be inserted. This value cannot be `null`. |
+| `inputContentInfo` | [InputContentInfo](../android/view/inputmethod/InputContentInfo.md): Content to be inserted. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#INPUT_CONTENT_GRANT_READ_URI_PERMISSION:kotlin.Int` if the content provider allows `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestProvider_grantUriPermissions:kotlin.Int` or `0` if the application does not need to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#requestPermission()`. |
-| `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: optional bundle data. This can be `null`. |
+| `opts` | [Bundle](../android/os/Bundle.md)?: optional bundle data. This can be `null`. |
 | --- | --- |
 
 | Return ||
@@ -364,7 +364,7 @@ Default implementation does nothing and returns false.
 
 | Parameters ||
 |---|---|
-| `correctionInfo` | [CorrectionInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo)!: Detailed information about the correction. |
+| `correctionInfo` | [CorrectionInfo](../android/view/inputmethod/CorrectionInfo.md)!: Detailed information about the correction. |
 
 | Return ||
 |---|---|
@@ -476,7 +476,7 @@ Return the end of the range of composing text, or -1 if there's no composing tex
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#): This value cannot be `null`. |
+| `text` | [Spannable](../android/text/Spannable.md): This value cannot be `null`. |
 
 ### getComposingSpanStart
 
@@ -490,7 +490,7 @@ Return the beginning of the range of composing text, or -1 if there's no composi
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#): This value cannot be `null`. |
+| `text` | [Spannable](../android/text/Spannable.md): This value cannot be `null`. |
 
 ### getCursorCapsMode
 
@@ -537,7 +537,7 @@ The default implementation always returns null.
 
 | Parameters ||
 |---|---|
-| `request` | [ExtractedTextRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest)!: Description of how the text should be returned. `https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest` |
+| `request` | [ExtractedTextRequest](../android/view/inputmethod/ExtractedTextRequest.md)!: Description of how the text should be returned. `https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest` |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional options to control the client, either `0` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_EXTRACTED_TEXT_MONITOR:kotlin.Int`. |
 
 | Return ||
@@ -709,7 +709,7 @@ The default implementation does nothing.
 | Parameters ||
 |---|---|
 | `action` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Name of the command to be performed. This *must* be a scoped name, i.e. prefixed with a package name you own, so that different developers will not create conflicting commands. |
-| `data` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Any data to include with the command. |
+| `data` | [Bundle](../android/os/Bundle.md)!: Any data to include with the command. |
 
 | Return ||
 |---|---|
@@ -727,7 +727,7 @@ Removes the composing spans from the given text if any.
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#): the spannable text to remove composing spans. This value cannot be `null`. |
+| `text` | [Spannable](../android/text/Spannable.md): the spannable text to remove composing spans. This value cannot be `null`. |
 
 ### replaceText
 
@@ -756,7 +756,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/view/inputmet
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): This value cannot be `null`. |
 | --- | --- |
 | `newCursorPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the new cursor position around the text. If \> 0, this is relative to the end of the text - 1; if \<= 0, this is relative to the start of the text. So a value of 1 will always advance you to the position after the full text being inserted. Note that this means you can't position the cursor within the text. |
-| `textAttribute` | [TextAttribute](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute)?: This value may be `null`. |
+| `textAttribute` | [TextAttribute](../android/view/inputmethod/TextAttribute.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -806,7 +806,7 @@ Provides standard implementation for sending a key event to the window attached 
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: The key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event. |
 
 | Return ||
 |---|---|
@@ -852,7 +852,7 @@ Removes the composing spans from the given text if any.
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#): the spannable text to remove composing spans. This value cannot be `null`. |
+| `text` | [Spannable](../android/text/Spannable.md): the spannable text to remove composing spans. This value cannot be `null`. |
 
 ### setComposingText
 

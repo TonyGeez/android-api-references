@@ -10,7 +10,7 @@ open class CodeSource : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource#) |
+| ↳ | [java.security.CodeSource](../java/security/CodeSource.md) |
 
 Legacy security code; do not use.
 
@@ -18,16 +18,16 @@ Legacy security code; do not use.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource#CodeSource(java.net.URL,%20kotlin.Array))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`, `certs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!>!`)` <br /> |
-| [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource#CodeSource(java.net.URL,%20kotlin.Array))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`, `signers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CodeSigner](https://developer.android.com/reference/kotlin/java/security/CodeSigner)!>!`)` <br /> |
+| [CodeSource](../java/security/CodeSource.md))`(`url:` ` [URL](../java/net/URL.md)!`, `certs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>!`)` <br /> |
+| [CodeSource](../java/security/CodeSource.md))`(`url:` ` [URL](../java/net/URL.md)!`, `signers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CodeSigner](../java/security/CodeSigner.md)!>!`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [getCertificates](https://developer.android.com/reference/kotlin/java/security/CodeSource#getCertificates())`()` <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CodeSigner](https://developer.android.com/reference/kotlin/java/security/CodeSigner)!\>! | [getCodeSigners](https://developer.android.com/reference/kotlin/java/security/CodeSource#getCodeSigners())`()` <br /> |
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [getLocation](https://developer.android.com/reference/kotlin/java/security/CodeSource#getLocation())`()` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getCertificates](../java/security/CodeSource.md))`()` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CodeSigner](../java/security/CodeSigner.md)!\>! | [getCodeSigners](../java/security/CodeSource.md))`()` <br /> |
+| [URL](../java/net/URL.md)! | [getLocation](../java/security/CodeSource.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/CodeSource#implies(java.security.CodeSource))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource#)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/CodeSource.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`)` <br /> |
 
 ## Public constructors
 

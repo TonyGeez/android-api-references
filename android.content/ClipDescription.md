@@ -8,7 +8,7 @@ open class ClipDescription : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription#) |
+| ↳ | [android.content.ClipDescription](../android/content/ClipDescription.md) |
 
 Meta-data describing the contents of a `https://developer.android.com/reference/kotlin/android/content/ClipData`. Provides enough information to know if you can handle the ClipData, but not the data itself.
 
@@ -63,7 +63,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getClassificationStatus()()` Returns `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` if text classification has been performed on the associated `https://developer.android.com/reference/kotlin/android/content/ClipData`. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)(entity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a score indicating confidence that an instance of the given entity is present in the first item of the clip data, if that item is plain text and text classification has been performed. |
-| open [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getExtras()()` Retrieve extended data from the clip description. |
+| open [PersistableBundle](../android/os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getExtras()()` Retrieve extended data from the clip description. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getLabel()()` Return the label for this clip. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getMimeType(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return one of the possible clip MIME types. |
@@ -85,7 +85,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ClipDescription](https://developer.android.com/reference/kotlin/android/content/ClipDescription#)!\> | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ClipDescription](../android/content/ClipDescription.md)!\> | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -522,7 +522,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

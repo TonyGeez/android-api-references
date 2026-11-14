@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface NodeList
 ```
 
-| [org.w3c.dom.NodeList](https://developer.android.com/reference/kotlin/org/w3c/dom/NodeList#) |
+| [org.w3c.dom.NodeList](../org/w3c/dom/NodeList.md) |
 
 The`NodeList`interface provides the abstraction of an ordered collection of nodes, without defining or constraining how this collection is implemented.`NodeList`objects in the DOM are live.
 
@@ -20,8 +20,8 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/org/w3c/dom/NodeList#getLength())`()` The number of nodes in the list. |
-| abstract [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [item](https://developer.android.com/reference/kotlin/org/w3c/dom/NodeList#item(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`index`th item in the collection. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../org/w3c/dom/NodeList.md))`()` The number of nodes in the list. |
+| abstract [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [item](../org/w3c/dom/NodeList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`index`th item in the collection. |
 
 ## Public methods
 

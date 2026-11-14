@@ -4,5 +4,5 @@
 
 ## Classes
 
-| [XMLConstants](https://developer.android.com/reference/kotlin/javax/xml/XMLConstants) | Utility class to contain basic XML values as constants. |
+| [XMLConstants](../javax/xml/XMLConstants.md) | Utility class to contain basic XML values as constants. |
 | --- | --- |

@@ -2,7 +2,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # AppWidgetProviderInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo "View this page in Java")
+Kotlin | [Java](../android/appwidget/AppWidgetProviderInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class AppWidgetProviderInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.appwidget.AppWidgetProviderInfo](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#) |
+| ↳ | [android.appwidget.AppWidgetProviderInfo](../android/appwidget/AppWidgetProviderInfo.md) |
 
 Describes the meta data for an installed AppWidget provider. The fields in this class correspond to the fields in the `<appwidget-provider>` xml tag.
 
@@ -45,25 +45,25 @@ Describes the meta data for an installed AppWidget provider. The fields in this 
 
 | Public methods ||
 |---|---|
-| open [AppWidgetProviderInfo](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#clone()()` Creates and returns a copy of this object. |
+| open [AppWidgetProviderInfo](../android/appwidget/AppWidgetProviderInfo.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#clone()()` Creates and returns a copy of this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getActivityInfo()()` Returns the broadcast receiver that is providing this widget. |
+| open [ActivityInfo](../android/content/pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getActivityInfo()()` Returns the broadcast receiver that is providing this widget. |
 | --- | --- |
-| [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getProfile()()` Gets the user profile in which the provider resides. |
+| [UserHandle](../android/os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getProfile()()` Gets the user profile in which the provider resides. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadDescription(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Loads localized description for the app widget. |
-| [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadIcon(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads the icon to display for this AppWidget in the AppWidget picker. |
+| [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadIcon(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads the icon to display for this AppWidget in the AppWidget picker. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadLabel(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Loads the localized label to display to the user in the AppWidget picker. |
-| [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadPreviewImage(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads a preview of what the AppWidget will look like after it's configured. |
+| [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadPreviewImage(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads a preview of what the AppWidget will look like after it's configured. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#toString()()` Returns a string representation of the object. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AppWidgetProviderInfo](https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#)!\> | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#CREATOR:android.os.Parcelable.Creator` Parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppWidgetProviderInfo](../android/appwidget/AppWidgetProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#CREATOR:android.os.Parcelable.Creator` Parcelable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#autoAdvanceViewId:kotlin.Int` The view id of the AppWidget subview which should be auto-advanced by the widget's host. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#configure:android.content.ComponentName` The activity to launch that will configure the AppWidget. |
+| [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#configure:android.content.ComponentName` The activity to launch that will configure the AppWidget. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#descriptionRes:kotlin.Int` Resource id for the description of the AppWidget. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#generatedPreviewCategories:kotlin.Int` Flags indicating the widget categories for which generated previews are available. |
@@ -83,7 +83,7 @@ Describes the meta data for an installed AppWidget provider. The fields in this 
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#previewImage:kotlin.Int` A preview of what the AppWidget will look like after it's configured. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#previewLayout:kotlin.Int` The layout resource id of a preview of what the AppWidget will look like after it's configured. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#provider:android.content.ComponentName` Identity of this AppWidget component. |
+| [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#provider:android.content.ComponentName` Identity of this AppWidget component. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#resizeMode:kotlin.Int` The rules by which a widget can be resized. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#targetCellHeight:kotlin.Int` The default height of a widget when added to a host, in units of launcher grid cells. |
@@ -362,7 +362,7 @@ Description is intended to be displayed in the UI of the widget picker.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): Context for accessing resources. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): Context for accessing resources. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -385,7 +385,7 @@ The loaded icon corresponds to the `android:icon` attribute in the `<receiver>` 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): Context for accessing resources. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): Context for accessing resources. This value cannot be `null`. |
 | `density` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The optional desired density as per `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#densityDpi:kotlin.Int`. |
 
 | Return ||
@@ -404,7 +404,7 @@ Loads the localized label to display to the user in the AppWidget picker.
 
 | Parameters ||
 |---|---|
-| `packageManager` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)!: Package manager instance for loading resources. |
+| `packageManager` | [PackageManager](../android/content/pm/PackageManager.md)!: Package manager instance for loading resources. |
 
 | Return ||
 |---|---|
@@ -427,7 +427,7 @@ The loaded image corresponds to the `android:previewImage` attribute in the `<re
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): Context for accessing resources. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): Context for accessing resources. This value cannot be `null`. |
 | `density` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The optional desired density as per `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#densityDpi:kotlin.Int`. |
 
 | Return ||

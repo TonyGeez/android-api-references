@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # WordBreak
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.WordBreak "View this page in Java") 
+Kotlin| [Java](../android/icu/lang/UCharacter.WordBreak.md) 
 | --- | --- |
 
 ```
 interface WordBreak
 ```
 
-| [android.icu.lang.UCharacter.WordBreak](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#) |
+| [android.icu.lang.UCharacter.WordBreak](../android/icu/lang/UCharacter.WordBreak.md) |
 
 Word Break constants.
 
@@ -19,36 +19,36 @@ Word Break constants.
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#ALETTER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#CR:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOUBLE_QUOTE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#DOUBLE_QUOTE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALETTER](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CR](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOUBLE_QUOTE](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTEND](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#EXTEND:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDNUMLET](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#EXTENDNUMLET:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_BASE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#E_BASE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTEND](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDNUMLET](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_BASE](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_BASE_GAZ](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#E_BASE_GAZ:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_MODIFIER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#E_MODIFIER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#FORMAT:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_BASE_GAZ](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [E_MODIFIER](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GLUE_AFTER_ZWJ](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#GLUE_AFTER_ZWJ:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEBREW_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#HEBREW_LETTER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KATAKANA](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#KATAKANA:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GLUE_AFTER_ZWJ](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEBREW_LETTER](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KATAKANA](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LF](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#LF:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIDLETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#MIDLETTER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIDNUM](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#MIDNUM:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LF](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIDLETTER](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIDNUM](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIDNUMLET](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#MIDNUMLET:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEWLINE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#NEWLINE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#NUMERIC:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIDNUMLET](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEWLINE](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#OTHER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGIONAL_INDICATOR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#REGIONAL_INDICATOR:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SINGLE_QUOTE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#SINGLE_QUOTE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGIONAL_INDICATOR](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SINGLE_QUOTE](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WSEGSPACE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#WSEGSPACE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZWJ](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak#ZWJ:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WSEGSPACE](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZWJ](../android/icu/lang/UCharacter.WordBreak.md) <br /> |
 
 ## Constants
 

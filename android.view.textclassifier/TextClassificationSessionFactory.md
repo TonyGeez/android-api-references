@@ -4,14 +4,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # TextClassificationSessionFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/textclassifier/TextClassificationSessionFactory "View this page in Java") 
+Kotlin| [Java](../android/view/textclassifier/TextClassificationSessionFactory.md) 
 | --- | --- |
 
 ```
 interface TextClassificationSessionFactory
 ```
 
-| [android.view.textclassifier.TextClassificationSessionFactory](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationSessionFactory#) |
+| [android.view.textclassifier.TextClassificationSessionFactory](../android/view/textclassifier/TextClassificationSessionFactory.md) |
 
 An interface for creating a session-aware TextClassifier.
 
@@ -19,7 +19,7 @@ An interface for creating a session-aware TextClassifier.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier) | [createTextClassificationSession](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationSessionFactory#createTextClassificationSession(android.view.textclassifier.TextClassificationContext))`(`classificationContext:` ` [TextClassificationContext](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext)`)` Creates and returns a session-aware TextClassifier. |
+| abstract [TextClassifier](../android/view/textclassifier/TextClassifier.md) | [createTextClassificationSession](../android/view/textclassifier/TextClassificationSessionFactory.md))`(`classificationContext:` ` [TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md)`)` Creates and returns a session-aware TextClassifier. |
 
 ## Public methods
 
@@ -35,8 +35,8 @@ Creates and returns a session-aware TextClassifier.
 
 | Parameters ||
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `classificationContext` | [TextClassificationContext](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext):the classification context This value cannot be`null`. |
+| `classificationContext` | [TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md):the classification context This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier) | This value cannot be`null`. |
+| [TextClassifier](../android/view/textclassifier/TextClassifier.md) | This value cannot be`null`. |

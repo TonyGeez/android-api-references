@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # SensorAdditionalInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/hardware/SensorAdditionalInfo "View this page in Java") 
+Kotlin | [Java](../android/hardware/SensorAdditionalInfo.md) 
 | --- | --- |
 
 ```
@@ -13,32 +13,32 @@ open class SensorAdditionalInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.SensorAdditionalInfo](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#) |
+| ↳ | [android.hardware.SensorAdditionalInfo](../android/hardware/SensorAdditionalInfo.md) |
 
-This class represents a [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) additional information frame, which is reported through listener callback [onSensorAdditionalInfo](https://developer.android.com/reference/kotlin/android/hardware/SensorEventCallback#onSensorAdditionalInfo(android.hardware.SensorAdditionalInfo)).
+This class represents a [Sensor](../android/hardware/Sensor.md) additional information frame, which is reported through listener callback [onSensorAdditionalInfo](../android/hardware/SensorEventCallback.md)).
 
 ## Summary
 
 | Constants ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FRAME_BEGIN](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#TYPE_FRAME_BEGIN:kotlin.Int) Mark the beginning of a set of additional info frames. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FRAME_END](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#TYPE_FRAME_END:kotlin.Int) Mark the end of a set of additional info frames. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_INTERNAL_TEMPERATURE](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#TYPE_INTERNAL_TEMPERATURE:kotlin.Int) Internal temperature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FRAME_BEGIN](../android/hardware/SensorAdditionalInfo.md) Mark the beginning of a set of additional info frames. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FRAME_END](../android/hardware/SensorAdditionalInfo.md) Mark the end of a set of additional info frames. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_INTERNAL_TEMPERATURE](../android/hardware/SensorAdditionalInfo.md) Internal temperature. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SAMPLING](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#TYPE_SAMPLING:kotlin.Int) Sampling parameter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SENSOR_PLACEMENT](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#TYPE_SENSOR_PLACEMENT:kotlin.Int) Sensor placement. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNTRACKED_DELAY](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#TYPE_UNTRACKED_DELAY:kotlin.Int) Untracked delay. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SAMPLING](../android/hardware/SensorAdditionalInfo.md) Sampling parameter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SENSOR_PLACEMENT](../android/hardware/SensorAdditionalInfo.md) Sensor placement. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNTRACKED_DELAY](../android/hardware/SensorAdditionalInfo.md) Untracked delay. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VEC3_CALIBRATION](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#TYPE_VEC3_CALIBRATION:kotlin.Int) Vector calibration parameter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VEC3_CALIBRATION](../android/hardware/SensorAdditionalInfo.md) Vector calibration parameter. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [floatValues](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#floatValues:kotlin.FloatArray) Additional info payload data represented in float values. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [intValues](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#intValues:kotlin.IntArray) Additional info payload data represented in int values. |
-| [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)! | [sensor](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#sensor:android.hardware.Sensor) The sensor that generated this event. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [floatValues](../android/hardware/SensorAdditionalInfo.md) Additional info payload data represented in float values. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [intValues](../android/hardware/SensorAdditionalInfo.md) Additional info payload data represented in int values. |
+| [Sensor](../android/hardware/Sensor.md)! | [sensor](../android/hardware/SensorAdditionalInfo.md) The sensor that generated this event. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [serial](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#serial:kotlin.Int) Sequence number of frame for a certain type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [type](https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo#type:kotlin.Int) Type of this additional info frame. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [serial](../android/hardware/SensorAdditionalInfo.md) Sequence number of frame for a certain type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [type](../android/hardware/SensorAdditionalInfo.md) Type of this additional info frame. |
 
 ## Constants
 
@@ -178,7 +178,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 val sensor: Sensor!
 ```
 
-The sensor that generated this event. See [SensorManager](https://developer.android.com/reference/kotlin/android/hardware/SensorManager) for details. 
+The sensor that generated this event. See [SensorManager](../android/hardware/SensorManager.md) for details. 
 
 ### serial
 

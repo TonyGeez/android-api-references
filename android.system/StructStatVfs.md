@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # StructStatVfs
 
-Kotlin| [Java](https://developer.android.com/reference/android/system/StructStatVfs "View this page in Java") 
+Kotlin| [Java](../android/system/StructStatVfs.md) 
 | --- | --- |
 
 ```
@@ -13,36 +13,36 @@ class StructStatVfs
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructStatVfs](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#) |
+| ↳ | [android.system.StructStatVfs](../android/system/StructStatVfs.md) |
 
-File information returned by [Os.fstatvfs](https://developer.android.com/reference/kotlin/android/system/Os#fstatvfs(java.io.FileDescriptor))and [Os.statvfs](https://developer.android.com/reference/kotlin/android/system/Os#statvfs(kotlin.String)).
+File information returned by [Os.fstatvfs](../android/system/Os.md))and [Os.statvfs](../android/system/Os.md)).
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StructStatVfs](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#StructStatVfs(kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long))`(`f_bsize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_frsize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_blocks:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_bfree:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_bavail:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_files:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_ffree:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_favail:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_fsid:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_flag:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_namemax:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an instance with the given field values. |
+| [StructStatVfs](../android/system/StructStatVfs.md))`(`f_bsize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_frsize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_blocks:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_bfree:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_bavail:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_files:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_ffree:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_favail:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_fsid:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_flag:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f_namemax:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an instance with the given field values. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/system/StructStatVfs.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_bavail](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_bavail:kotlin.Long) Free block count available to non-root. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_bfree](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_bfree:kotlin.Long) Free block count. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_blocks](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_blocks:kotlin.Long) Total block count. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_bavail](../android/system/StructStatVfs.md) Free block count available to non-root. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_bfree](../android/system/StructStatVfs.md) Free block count. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_blocks](../android/system/StructStatVfs.md) Total block count. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_bsize](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_bsize:kotlin.Long) File system block size (used for block counts). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_favail](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_favail:kotlin.Long) Free file (inode) count available to non-root. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_ffree](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_ffree:kotlin.Long) Free file (inode) count. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_bsize](../android/system/StructStatVfs.md) File system block size (used for block counts). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_favail](../android/system/StructStatVfs.md) Free file (inode) count available to non-root. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_ffree](../android/system/StructStatVfs.md) Free file (inode) count. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_files](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_files:kotlin.Long) Total file (inode) count. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_flag](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_flag:kotlin.Long) Bit mask of ST_\* flags. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_frsize](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_frsize:kotlin.Long) Fundamental file system block size. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_files](../android/system/StructStatVfs.md) Total file (inode) count. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_flag](../android/system/StructStatVfs.md) Bit mask of ST_\* flags. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_frsize](../android/system/StructStatVfs.md) Fundamental file system block size. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_fsid](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_fsid:kotlin.Long) File system id. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_namemax](https://developer.android.com/reference/kotlin/android/system/StructStatVfs#f_namemax:kotlin.Long) Maximum filename length. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_fsid](../android/system/StructStatVfs.md) File system id. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [f_namemax](../android/system/StructStatVfs.md) Maximum filename length. |
 
 ## Public constructors
 

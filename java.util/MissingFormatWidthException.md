@@ -11,31 +11,31 @@ open class MissingFormatWidthException : IllegalFormatException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) |||
-| | | | | ↳ | [java.util.IllegalFormatException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException) ||
-| | | | | | ↳ | [java.util.MissingFormatWidthException](https://developer.android.com/reference/kotlin/java/util/MissingFormatWidthException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) |||
+| | | | | ↳ | [java.util.IllegalFormatException](../java/util/IllegalFormatException.md) ||
+| | | | | | ↳ | [java.util.MissingFormatWidthException](../java/util/MissingFormatWidthException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when the format width is required.
 
-Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) to be thrown.
+Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MissingFormatWidthException](https://developer.android.com/reference/kotlin/java/util/MissingFormatWidthException#MissingFormatWidthException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class with the specified format specifier. |
+| [MissingFormatWidthException](../java/util/MissingFormatWidthException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class with the specified format specifier. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormatSpecifier](https://developer.android.com/reference/kotlin/java/util/MissingFormatWidthException#getFormatSpecifier())`()` Returns the format specifier which does not have a width. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormatSpecifier](../java/util/MissingFormatWidthException.md))`()` Returns the format specifier which does not have a width. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/util/MissingFormatWidthException#message:kotlin.String) <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/util/MissingFormatWidthException.md) <br /> |
 
 ## Public constructors
 

@@ -8,8 +8,8 @@ abstract class DocumentsProvider : ContentProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#) ||
-| | ↳ | [android.provider.DocumentsProvider](https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#) |
+| ↳ | [android.content.ContentProvider](../android/content/ContentProvider.md) ||
+| | ↳ | [android.provider.DocumentsProvider](../android/provider/DocumentsProvider.md) |
 
 Base class for a document provider. A document provider offers read and write access to durable files, such as files stored on a local disk, or files in a cloud storage service. To create a document provider, extend this class, implement the abstract methods, and add it to your manifest like this:
 
@@ -63,19 +63,19 @@ All documents are surfaced through one or more "roots." Each root represents the
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#attachInfo(android.content.Context,%20android.content.pm.ProviderInfo)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, info: https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#!)` Implementation is provided by the parent class. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#call(kotlin.String,%20kotlin.String,%20android.os.Bundle)(method: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#canonicalize(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implementation is provided by the parent class. |
+| open [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#call(kotlin.String,%20kotlin.String,%20android.os.Bundle)(method: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
+| open [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#canonicalize(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implementation is provided by the parent class. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#copyDocument(kotlin.String,%20kotlin.String)(sourceDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, targetParentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Copy the requested document or a document tree. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#createDocument(kotlin.String,%20kotlin.String,%20kotlin.String)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, displayName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a new document and return its newly generated `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String`. |
-| open [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#createWebLinkIntent(kotlin.String,%20android.os.Bundle)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates an intent sender for a web link, if the document is web linkable. |
+| open [IntentSender](../android/content/IntentSender.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#createWebLinkIntent(kotlin.String,%20android.os.Bundle)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates an intent sender for a web link, if the document is web linkable. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#delete(android.net.Uri,%20kotlin.String,%20kotlin.Array)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Implementation is provided by the parent class. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#deleteDocument(kotlin.String)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Delete the requested document. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#ejectRoot(kotlin.String)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Ejects the root. |
 | --- | --- |
-| open [DocumentsContract.Path](https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Path)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#findDocumentPath(kotlin.String,%20kotlin.String)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, childDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Finds the canonical path for the requested document. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#getDocumentMetadata(kotlin.String)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns metadata associated with the document. |
+| open [DocumentsContract.Path](../android/provider/DocumentsContract.Path.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#findDocumentPath(kotlin.String,%20kotlin.String)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, childDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Finds the canonical path for the requested document. |
+| open [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#getDocumentMetadata(kotlin.String)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns metadata associated with the document. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#getDocumentStreamTypes(kotlin.String,%20kotlin.String)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a list of streamable MIME types matching the filter, which can be passed to `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openTypedDocument(kotlin.String,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)`. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#getDocumentType(kotlin.String)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return concrete MIME type of the requested document. |
@@ -83,40 +83,40 @@ All documents are surfaced through one or more "roots." Each root represents the
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#getType(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implementation is provided by the parent class. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#getTypeAnonymous(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` An unrestricted version of getType, which does not reveal sensitive information |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#insert(android.net.Uri,%20android.content.ContentValues)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Implementation is provided by the parent class. |
+| [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#insert(android.net.Uri,%20android.content.ContentValues)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Implementation is provided by the parent class. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#isChildDocument(kotlin.String,%20kotlin.String)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Test if a document is descendant (child, grandchild, etc) from the given parent. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#moveDocument(kotlin.String,%20kotlin.String,%20kotlin.String)(sourceDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, sourceParentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, targetParentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Move the requested document or a document tree. |
-| [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openAssetFile(android.net.Uri,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Implementation is provided by the parent class. |
-| [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openAssetFile(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openAssetFile(android.net.Uri,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Implementation is provided by the parent class. |
+| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openAssetFile(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
 | --- | --- |
-| abstract [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openDocument(kotlin.String,%20kotlin.String,%20android.os.CancellationSignal)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Open and return the requested document. |
-| open [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openDocumentThumbnail(kotlin.String,%20android.graphics.Point,%20android.os.CancellationSignal)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, sizeHint: https://developer.android.com/reference/kotlin/android/graphics/Point.html#!, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#!)` Open and return a thumbnail of the requested document. |
-| [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openFile(android.net.Uri,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Implementation is provided by the parent class. |
+| abstract [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openDocument(kotlin.String,%20kotlin.String,%20android.os.CancellationSignal)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Open and return the requested document. |
+| open [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openDocumentThumbnail(kotlin.String,%20android.graphics.Point,%20android.os.CancellationSignal)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, sizeHint: https://developer.android.com/reference/kotlin/android/graphics/Point.html#!, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#!)` Open and return a thumbnail of the requested document. |
+| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openFile(android.net.Uri,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Implementation is provided by the parent class. |
 | --- | --- |
-| [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openFile(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
-| [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
-| [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openFile(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
+| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
 | --- | --- |
-| open [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openTypedDocument(kotlin.String,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#!)` Open and return the document in a format matching the specified MIME type filter. |
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Implement this to handle query requests from clients. |
+| open [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openTypedDocument(kotlin.String,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#!)` Open and return the document in a format matching the specified MIME type filter. |
+| [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Implement this to handle query requests from clients. |
 | --- | --- |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` WARNING: Sub-classes should not override this method. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryChildDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Override this method to return the children documents contained in the requested directory. |
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryChildDocuments(kotlin.String,%20kotlin.Array,%20kotlin.String)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return the children documents contained in the requested directory. |
+| open [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` WARNING: Sub-classes should not override this method. |
+| open [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryChildDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Override this method to return the children documents contained in the requested directory. |
+| abstract [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryChildDocuments(kotlin.String,%20kotlin.Array,%20kotlin.String)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return the children documents contained in the requested directory. |
 | --- | --- |
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryDocument(kotlin.String,%20kotlin.Array)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return metadata for the single requested document. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRecentDocuments(kotlin.String,%20kotlin.Array)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return recently modified documents under the requested root. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRecentDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Return recently modified documents under the requested root. |
+| abstract [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryDocument(kotlin.String,%20kotlin.Array)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return metadata for the single requested document. |
+| open [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRecentDocuments(kotlin.String,%20kotlin.Array)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return recently modified documents under the requested root. |
+| open [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRecentDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Return recently modified documents under the requested root. |
 | --- | --- |
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRoots(kotlin.Array)(projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return all roots currently provided. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.String,%20kotlin.Array)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return documents that match the given query under the requested root. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.CancellationSignal)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Return documents that match the given query under the requested directory. |
+| abstract [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRoots(kotlin.Array)(projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return all roots currently provided. |
+| open [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.String,%20kotlin.Array)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return documents that match the given query under the requested root. |
+| open [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.CancellationSignal)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Return documents that match the given query under the requested directory. |
 | --- | --- |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Return documents that match the given query under the requested root. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Return documents that match the given query under the requested directory. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryTrashDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` <br /> |
+| open [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Return documents that match the given query under the requested root. |
+| open [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Return documents that match the given query under the requested directory. |
+| open [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryTrashDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#removeDocument(kotlin.String,%20kotlin.String)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Removes the requested document or a document tree. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#renameDocument(kotlin.String,%20kotlin.String)(documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, displayName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Rename an existing document. |
@@ -157,8 +157,8 @@ Implementation is provided by the parent class.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context this provider is running in |
-| `info` | [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#)!: Registered information about this content provider |
+| `context` | [Context](../android/content/Context.md)!: The context this provider is running in |
+| `info` | [ProviderInfo](../android/content/pm/ProviderInfo.md)!: Registered information about this content provider |
 
 ### call
 
@@ -179,7 +179,7 @@ If you override this method you *must* call through to the superclass implementa
 |---|---|
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -282,7 +282,7 @@ It is all right to generate a web link without granting new permissions, if open
 | Parameters ||
 |---|---|
 | `documentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the document to create a web link intent for. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: additional information, such as list of recipients. Optional. This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: additional information, such as list of recipients. Optional. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -309,7 +309,7 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The full URI to query, including a row ID (if a specific record is requested). This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The full URI to query, including a row ID (if a specific record is requested). This value cannot be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: An optional restriction to apply to rows when deleting. This value may be `null`. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
 | --- | --- |
@@ -473,7 +473,7 @@ Overriding this method is deprecated. Override `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The data in the content provider being queried. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The data in the content provider being queried. This value cannot be `null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The type of data the client desires. May be a pattern, such as \*/\* to retrieve all possible data types. This value cannot be `null`. |
 
 | Return ||
@@ -496,7 +496,7 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the URI to query. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): the URI to query. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -518,7 +518,7 @@ An unrestricted version of getType, which does not reveal sensitive information
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -539,8 +539,8 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The content:// URI of the insertion request. This value cannot be `null`. |
-| `values` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)?: A set of column_name/value pairs to add to the database. This value may be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The content:// URI of the insertion request. This value cannot be `null`. |
+| `values` | [ContentValues](../android/content/ContentValues.md)?: A set of column_name/value pairs to add to the database. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -620,7 +620,7 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI whose file is to be opened. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI whose file is to be opened. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
 
 | Return ||
@@ -652,9 +652,9 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI whose file is to be opened. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI whose file is to be opened. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: A signal to cancel the operation in progress, or `null` if none. For example, if you are downloading a file from the network to service a "rw" mode request, you should periodically call `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#throwIfCanceled()` to check whether the client has canceled the request and abort the download. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: A signal to cancel the operation in progress, or `null` if none. For example, if you are downloading a file from the network to service a "rw" mode request, you should periodically call `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#throwIfCanceled()` to check whether the client has canceled the request and abort the download. |
 | --- | --- |
 
 | Return ||
@@ -694,7 +694,7 @@ If you block while downloading content, you should periodically check `https://d
 |---|---|
 | `documentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the document to return. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the mode to open with, such as 'r', 'w', or 'rw'. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: used by the caller to signal if the request should be cancelled. May be null. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: used by the caller to signal if the request should be cancelled. May be null. |
 | --- | --- |
 
 | Exceptions ||
@@ -728,8 +728,8 @@ If you perform expensive operations to download or generate a thumbnail, you sho
 | Parameters ||
 |---|---|
 | `documentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the document to return. |
-| `sizeHint` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)!: hint of the optimal thumbnail dimensions. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)!: used by the caller to signal if the request should be cancelled. May be null. |
+| `sizeHint` | [Point](../android/graphics/Point.md)!: hint of the optimal thumbnail dimensions. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)!: used by the caller to signal if the request should be cancelled. May be null. |
 | --- | --- |
 
 | Exceptions ||
@@ -755,7 +755,7 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI whose file is to be opened. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI whose file is to be opened. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
 
 | Return ||
@@ -787,9 +787,9 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI whose file is to be opened. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI whose file is to be opened. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: A signal to cancel the operation in progress, or `null` if none. For example, if you are downloading a file from the network to service a "rw" mode request, you should periodically call `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#throwIfCanceled()` to check whether the client has canceled the request and abort the download. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: A signal to cancel the operation in progress, or `null` if none. For example, if you are downloading a file from the network to service a "rw" mode request, you should periodically call `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#throwIfCanceled()` to check whether the client has canceled the request and abort the download. |
 | --- | --- |
 
 | Return ||
@@ -821,9 +821,9 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The data in the content provider being queried. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The data in the content provider being queried. This value cannot be `null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The type of data the client desires. May be a pattern, such as \*/\*, if the caller does not have specific type requirements; in this case the content provider will pick its best type matching the pattern. This value cannot be `null`. |
-| `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options from the client. The definitions of these are specific to the content provider being called. This value may be `null`. |
+| `opts` | [Bundle](../android/os/Bundle.md)?: Additional options from the client. The definitions of these are specific to the content provider being called. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -860,11 +860,11 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The data in the content provider being queried. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The data in the content provider being queried. This value cannot be `null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The type of data the client desires. May be a pattern, such as \*/\*, if the caller does not have specific type requirements; in this case the content provider will pick its best type matching the pattern. This value cannot be `null`. |
-| `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options from the client. The definitions of these are specific to the content provider being called. This value may be `null`. |
+| `opts` | [Bundle](../android/os/Bundle.md)?: Additional options from the client. The definitions of these are specific to the content provider being called. This value may be `null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: A signal to cancel the operation in progress, or `null` if none. For example, if you are downloading a file from the network to service a "rw" mode request, you should periodically call `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#throwIfCanceled()` to check whether the client has canceled the request and abort the download. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: A signal to cancel the operation in progress, or `null` if none. For example, if you are downloading a file from the network to service a "rw" mode request, you should periodically call `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#throwIfCanceled()` to check whether the client has canceled the request and abort the download. |
 
 | Return ||
 |---|---|
@@ -906,9 +906,9 @@ Virtual documents must have at least one streamable format.
 |---|---|
 | `documentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the document to return. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the MIME type filter for the requested format. May be \*\\/\*, which matches any MIME type. |
-| `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: extra options from the client. Specific to the content provider. |
+| `opts` | [Bundle](../android/os/Bundle.md)!: extra options from the client. Specific to the content provider. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)!: used by the caller to signal if the request should be cancelled. May be null. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)!: used by the caller to signal if the request should be cancelled. May be null. |
 
 | Exceptions ||
 |---|---|
@@ -935,11 +935,11 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI to query. This will be the full URI sent by the client. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI to query. This will be the full URI sent by the client. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The list of columns to put into the cursor. If `null` provide a default set of columns. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_LIMIT:kotlin.String`, but note that the documentation for each individual provider will indicate which arguments they support. This value may be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md)?: A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_LIMIT:kotlin.String`, but note that the documentation for each individual provider will indicate which arguments they support. This value may be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: A signal to cancel the operation in progress, or `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: A signal to cancel the operation in progress, or `null`. |
 
 | Return ||
 |---|---|
@@ -1021,7 +1021,7 @@ Example implementation:
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The list of columns to put into the cursor. If `null` all columns are included. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A selection criteria to apply when filtering rows. If `null` then all rows are included. |
 | --- | --- |
@@ -1051,13 +1051,13 @@ WARNING: Sub-classes should not override this method. This method is non-final s
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The list of columns to put into the cursor. If `null` all columns are included. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A selection criteria to apply when filtering rows. If `null` then all rows are included. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: You may include ?s in selection, which will be replaced by the values from selectionArgs, in order that they appear in the selection. The values will be bound as Strings. This value may be `null`. |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: How the rows in the cursor should be sorted. If `null` then the provider is free to define the sort order. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: A signal to cancel the operation in progress, or `null` if none. If the operation is canceled, then `https://developer.android.com/reference/kotlin/android/os/OperationCanceledException.html#` will be thrown when the query is executed. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: A signal to cancel the operation in progress, or `null` if none. If the operation is canceled, then `https://developer.android.com/reference/kotlin/android/os/OperationCanceledException.html#` will be thrown when the query is executed. |
 | --- | --- |
 
 | Return ||
@@ -1094,7 +1094,7 @@ To support change notifications, you must `https://developer.android.com/referen
 |---|---|
 | `parentDocumentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the directory to return children for. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: list of `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` columns to put into the cursor. If `null` all supported columns should be included. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Bundle containing sorting information or other argument useful to the provider. If no sorting information is available, default sorting will be used, which may be unordered. See `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SORT_COLUMNS:kotlin.String` for details. This value may be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md)?: Bundle containing sorting information or other argument useful to the provider. If no sorting information is available, default sorting will be used, which may be unordered. See `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SORT_COLUMNS:kotlin.String` for details. This value may be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -1212,9 +1212,9 @@ Recent documents do not support change notifications.
 |---|---|
 | `rootId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: list of `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` columns to put into the cursor. If `null` all supported columns should be included. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: the extra query arguments. This value may be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md)?: the extra query arguments. This value may be `null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: used by the caller to signal if the request should be cancelled. May be null. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: used by the caller to signal if the request should be cancelled. May be null. |
 
 | Return ||
 |---|---|
@@ -1304,7 +1304,7 @@ To support change notifications, you must `https://developer.android.com/referen
 | `query` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): string to match documents against. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: list of `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` columns to put into the cursor. If `null` all supported columns should be included. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: used by the caller to signal if the request should be cancelled. May be null. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: used by the caller to signal if the request should be cancelled. May be null. |
 
 | Return ||
 |---|---|
@@ -1338,7 +1338,7 @@ To support change notifications, you must `https://developer.android.com/referen
 |---|---|
 | `rootId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the root to search under. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: list of `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` columns to put into the cursor. If `null` all supported columns should be included. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the query arguments. `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_EXCLUDE_MEDIA:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_DISPLAY_NAME:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_MIME_TYPES:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_FILE_SIZE_OVER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_LAST_MODIFIED_AFTER:kotlin.String`. This value cannot be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md): the query arguments. `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_EXCLUDE_MEDIA:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_DISPLAY_NAME:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_MIME_TYPES:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_FILE_SIZE_OVER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_LAST_MODIFIED_AFTER:kotlin.String`. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -1379,9 +1379,9 @@ To support change notifications, you must `https://developer.android.com/referen
 |---|---|
 | `parentDocumentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the directory to search under. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: list of `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` columns to put into the cursor. If `null` all supported columns should be included. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the query arguments. `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_EXCLUDE_MEDIA:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_DISPLAY_NAME:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_MIME_TYPES:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_FILE_SIZE_OVER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_LAST_MODIFIED_AFTER:kotlin.String`. This value cannot be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md): the query arguments. `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_EXCLUDE_MEDIA:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_DISPLAY_NAME:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_MIME_TYPES:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_FILE_SIZE_OVER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_LAST_MODIFIED_AFTER:kotlin.String`. This value cannot be `null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: used by the caller to signal if the request should be cancelled. May be null. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: used by the caller to signal if the request should be cancelled. May be null. |
 
 | Return ||
 |---|---|
@@ -1413,9 +1413,9 @@ open fun queryTrashDocuments(
 |---|---|
 | `rootId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the root to return trash items for. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: list of `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` columns to put into the cursor. If `null` all supported columns should be included. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: the extra query arguments. This value may be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md)?: the extra query arguments. This value may be `null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: used by the caller to signal if the request should be cancelled. May be null. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: used by the caller to signal if the request should be cancelled. May be null. |
 
 | Return ||
 |---|---|
@@ -1554,8 +1554,8 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The URI to query. This can potentially have a record ID if this is an update request for a specific record. This value cannot be `null`. |
-| `values` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)?: A set of column_name/value pairs to update in the database. This value may be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The URI to query. This can potentially have a record ID if this is an update request for a specific record. This value cannot be `null`. |
+| `values` | [ContentValues](../android/content/ContentValues.md)?: A set of column_name/value pairs to update in the database. This value may be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: An optional filter to match rows to update. This value may be `null`. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |

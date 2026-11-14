@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioRecordingConfiguration
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AudioRecordingConfiguration "View this page in Java") 
+Kotlin| [Java](../android/media/AudioRecordingConfiguration.md) 
 | --- | --- |
 
 ```
@@ -13,45 +13,45 @@ class AudioRecordingConfiguration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioRecordingConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#) |
+| ↳ | [android.media.AudioRecordingConfiguration](../android/media/AudioRecordingConfiguration.md) |
 
 The AudioRecordingConfiguration class collects the information describing an audio recording session.
 
-Direct polling (see [AudioManager.getActiveRecordingConfigurations()](https://developer.android.com/reference/kotlin/android/media/AudioManager#getActiveRecordingConfigurations())) or callback (see [AudioManager.registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback, android.os.Handler)](https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback,%20android.os.Handler))methods are ways to receive information about the current recording configuration of the device.
+Direct polling (see [AudioManager.getActiveRecordingConfigurations()](../android/media/AudioManager.md))) or callback (see [AudioManager.registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback, android.os.Handler)](../android/media/AudioManager.md))methods are ways to receive information about the current recording configuration of the device.
 
-An audio recording configuration contains information about the recording format as used by the application ([getClientFormat()](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientFormat()), as well as the recording format actually used by the device ([getFormat()](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getFormat())). The two recording formats may, for instance, be at different sampling rates due to hardware limitations (e.g. application recording at 44.1kHz whereas the device always records at 48kHz, and the Android framework resamples for the application).
+An audio recording configuration contains information about the recording format as used by the application ([getClientFormat()](../android/media/AudioRecordingConfiguration.md)), as well as the recording format actually used by the device ([getFormat()](../android/media/AudioRecordingConfiguration.md))). The two recording formats may, for instance, be at different sampling rates due to hardware limitations (e.g. application recording at 44.1kHz whereas the device always records at 48kHz, and the Android framework resamples for the application).
 
-The configuration also contains the use case for which audio is recorded ([getClientAudioSource()](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientAudioSource())), enabling the ability to distinguish between different activities such as ongoing voice recognition or camcorder recording.
+The configuration also contains the use case for which audio is recorded ([getClientAudioSource()](../android/media/AudioRecordingConfiguration.md))), enabling the ability to distinguish between different activities such as ongoing voice recognition or camcorder recording.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)! | [getAudioDevice](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getAudioDevice())`()` Returns information about the audio input device used for this recording. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/AudioRecordingConfiguration.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/AudioRecordingConfiguration.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)! | [getAudioDevice](../android/media/AudioRecordingConfiguration.md))`()` Returns information about the audio input device used for this recording. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSource](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getAudioSource())`()` Returns the audio source currently used to configure the capture path. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClientAudioSessionId](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientAudioSessionId())`()` Returns the session number of the recording, see [AudioRecord.getAudioSessionId()](https://developer.android.com/reference/kotlin/android/media/AudioRecord#getAudioSessionId()). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClientAudioSource](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientAudioSource())`()` Returns the audio source selected by the client. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSource](../android/media/AudioRecordingConfiguration.md))`()` Returns the audio source currently used to configure the capture path. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClientAudioSessionId](../android/media/AudioRecordingConfiguration.md))`()` Returns the session number of the recording, see [AudioRecord.getAudioSessionId()](../android/media/AudioRecord.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClientAudioSource](../android/media/AudioRecordingConfiguration.md))`()` Returns the audio source selected by the client. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)!\> | [getClientEffects](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientEffects())`()` Returns the list of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) for all effects currently enabled on the audio capture client (e.g. |
-| [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat)! | [getClientFormat](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientFormat())`()` Returns the audio format at which the client application is recording audio. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)!\> | [getEffects](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getEffects())`()` Returns the list of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) for all effects currently enabled on the capture stream. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md)!\> | [getClientEffects](../android/media/AudioRecordingConfiguration.md))`()` Returns the list of [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) for all effects currently enabled on the audio capture client (e.g. |
+| [AudioFormat](../android/media/AudioFormat.md)! | [getClientFormat](../android/media/AudioRecordingConfiguration.md))`()` Returns the audio format at which the client application is recording audio. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md)!\> | [getEffects](../android/media/AudioRecordingConfiguration.md))`()` Returns the list of [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) for all effects currently enabled on the capture stream. |
 | --- | --- |
-| [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat)! | [getFormat](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getFormat())`()` Returns the audio format at which audio is recorded on this Android device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#hashCode())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClientSilenced](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#isClientSilenced())`()` Returns true if the audio returned to the client is currently being silenced by the audio framework due to concurrent capture policy (e.g the capturing application does not have an active foreground process or service anymore). |
+| [AudioFormat](../android/media/AudioFormat.md)! | [getFormat](../android/media/AudioRecordingConfiguration.md))`()` Returns the audio format at which audio is recorded on this Android device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/AudioRecordingConfiguration.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClientSilenced](../android/media/AudioRecordingConfiguration.md))`()` Returns true if the audio returned to the client is currently being silenced by the audio framework due to concurrent capture policy (e.g the capturing application does not have an active foreground process or service anymore). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/AudioRecordingConfiguration.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AudioRecordingConfiguration](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AudioRecordingConfiguration](../android/media/AudioRecordingConfiguration.md)!\> | [CREATOR](../android/media/AudioRecordingConfiguration.md) <br /> |
 
 ## Public methods
 
@@ -65,7 +65,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -95,7 +95,7 @@ Returns information about the audio input device used for this recording.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)! | the audio recording device or null if this information cannot be retrieved |
+| [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)! | the audio recording device or null if this information cannot be retrieved |
 
 ### getAudioSource
 
@@ -105,11 +105,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getAudioSource(): Int
 ```
 
-Returns the audio source currently used to configure the capture path. It can be different from the source returned by [getClientAudioSource()](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientAudioSource())if another capture is active.
+Returns the audio source currently used to configure the capture path. It can be different from the source returned by [getClientAudioSource()](../android/media/AudioRecordingConfiguration.md))if another capture is active.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the audio source active on the capture path. Value is [android.media.MediaRecorder.AudioSource#DEFAULT](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#DEFAULT:kotlin.Int), [android.media.MediaRecorder.AudioSource#MIC](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#MIC:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_UPLINK](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_UPLINK:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_DOWNLINK](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_DOWNLINK:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_CALL](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_CALL:kotlin.Int), [android.media.MediaRecorder.AudioSource#CAMCORDER](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#CAMCORDER:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_RECOGNITION](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_RECOGNITION:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_COMMUNICATION](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_COMMUNICATION:kotlin.Int), [android.media.MediaRecorder.AudioSource#UNPROCESSED](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#UNPROCESSED:kotlin.Int), or [android.media.MediaRecorder.AudioSource#VOICE_PERFORMANCE](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_PERFORMANCE:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the audio source active on the capture path. Value is [android.media.MediaRecorder.AudioSource#DEFAULT](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#MIC](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_UPLINK](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_DOWNLINK](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_CALL](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#CAMCORDER](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_RECOGNITION](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_COMMUNICATION](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#UNPROCESSED](../android/media/MediaRecorder.AudioSource.md), or [android.media.MediaRecorder.AudioSource#VOICE_PERFORMANCE](../android/media/MediaRecorder.AudioSource.md) |
 
 ### getClientAudioSessionId
 
@@ -119,7 +119,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getClientAudioSessionId(): Int
 ```
 
-Returns the session number of the recording, see [AudioRecord.getAudioSessionId()](https://developer.android.com/reference/kotlin/android/media/AudioRecord#getAudioSessionId()).
+Returns the session number of the recording, see [AudioRecord.getAudioSessionId()](../android/media/AudioRecord.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------|
@@ -137,7 +137,7 @@ Returns the audio source selected by the client.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the audio source selected by the client. Value is [android.media.MediaRecorder.AudioSource#DEFAULT](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#DEFAULT:kotlin.Int), [android.media.MediaRecorder.AudioSource#MIC](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#MIC:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_UPLINK](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_UPLINK:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_DOWNLINK](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_DOWNLINK:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_CALL](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_CALL:kotlin.Int), [android.media.MediaRecorder.AudioSource#CAMCORDER](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#CAMCORDER:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_RECOGNITION](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_RECOGNITION:kotlin.Int), [android.media.MediaRecorder.AudioSource#VOICE_COMMUNICATION](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_COMMUNICATION:kotlin.Int), [android.media.MediaRecorder.AudioSource#UNPROCESSED](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#UNPROCESSED:kotlin.Int), or [android.media.MediaRecorder.AudioSource#VOICE_PERFORMANCE](https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource#VOICE_PERFORMANCE:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the audio source selected by the client. Value is [android.media.MediaRecorder.AudioSource#DEFAULT](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#MIC](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_UPLINK](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_DOWNLINK](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_CALL](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#CAMCORDER](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_RECOGNITION](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#VOICE_COMMUNICATION](../android/media/MediaRecorder.AudioSource.md), [android.media.MediaRecorder.AudioSource#UNPROCESSED](../android/media/MediaRecorder.AudioSource.md), or [android.media.MediaRecorder.AudioSource#VOICE_PERFORMANCE](../android/media/MediaRecorder.AudioSource.md) |
 
 ### getClientEffects
 
@@ -147,11 +147,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getClientEffects(): MutableList<AudioEffect.Descriptor!>
 ```
 
-Returns the list of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) for all effects currently enabled on the audio capture client (e.g. [AudioRecord](https://developer.android.com/reference/kotlin/android/media/AudioRecord) or [MediaRecorder](https://developer.android.com/reference/kotlin/android/media/MediaRecorder)).
+Returns the list of [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) for all effects currently enabled on the audio capture client (e.g. [AudioRecord](../android/media/AudioRecord.md) or [MediaRecorder](../android/media/MediaRecorder.md)).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)!> | List of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) containing all effects enabled for the client. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md)!> | List of [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) containing all effects enabled for the client. This value cannot be`null`. |
 
 ### getClientFormat
 
@@ -161,11 +161,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getClientFormat(): AudioFormat!
 ```
 
-Returns the audio format at which the client application is recording audio. Note that it may differ from the actual recording format (see [getFormat()](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getFormat())).
+Returns the audio format at which the client application is recording audio. Note that it may differ from the actual recording format (see [getFormat()](../android/media/AudioRecordingConfiguration.md))).
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat)! | the recording format |
+| [AudioFormat](../android/media/AudioFormat.md)! | the recording format |
 
 ### getEffects
 
@@ -175,11 +175,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getEffects(): MutableList<AudioEffect.Descriptor!>
 ```
 
-Returns the list of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) for all effects currently enabled on the capture stream.
+Returns the list of [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) for all effects currently enabled on the capture stream.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)!> | List of [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) containing all effects enabled on the capture stream. This can be different from the list returned by [getClientEffects()](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientEffects())if another capture is active. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md)!> | List of [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) containing all effects enabled on the capture stream. This can be different from the list returned by [getClientEffects()](../android/media/AudioRecordingConfiguration.md))if another capture is active. This value cannot be`null`. |
 
 ### getFormat
 
@@ -189,11 +189,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getFormat(): AudioFormat!
 ```
 
-Returns the audio format at which audio is recorded on this Android device. Note that it may differ from the client application recording format (see [getClientFormat()](https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration#getClientFormat())).
+Returns the audio format at which audio is recorded on this Android device. Note that it may differ from the client application recording format (see [getClientFormat()](../android/media/AudioRecordingConfiguration.md))).
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat)! | the device recording format |
+| [AudioFormat](../android/media/AudioFormat.md)! | the device recording format |
 
 ### hashCode
 
@@ -234,8 +234,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

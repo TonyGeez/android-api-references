@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteClosable
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteClosable "View this page in Java") 
+Kotlin| [Java](../android/database/sqlite/SQLiteClosable.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ abstract class SQLiteClosable : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.sqlite.SQLiteClosable](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#) |
+| ↳ | [android.database.sqlite.SQLiteClosable](../android/database/sqlite/SQLiteClosable.md) |
 
-| Known Direct Subclasses [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow.html#), [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase), [SQLiteProgram](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram) |---------------------------------------------------------------------------------------------------------|----------------------------------------------| | [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow.html#) | A buffer containing multiple cursor rows. | | [SQLiteDatabase](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase) | Exposes methods to manage a SQLite database. | | [SQLiteProgram](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram) | A base class for compiled SQLite programs. | |
+| Known Direct Subclasses [CursorWindow](../android/database/CursorWindow.md), [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md), [SQLiteProgram](../android/database/sqlite/SQLiteProgram.md) |---------------------------------------------------------------------------------------------------------|----------------------------------------------| | [CursorWindow](../android/database/CursorWindow.md) | A buffer containing multiple cursor rows. | | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md) | Exposes methods to manage a SQLite database. | | [SQLiteProgram](../android/database/sqlite/SQLiteProgram.md) | A base class for compiled SQLite programs. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery), [SQLiteStatement](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement) |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------| | [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery) | Represents a query that reads the resulting rows into a [SQLiteQuery](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteQuery). | | [SQLiteStatement](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement) | Represents a statement that can be executed against a database. | |
+| Known Indirect Subclasses [SQLiteQuery](../android/database/sqlite/SQLiteQuery.md), [SQLiteStatement](../android/database/sqlite/SQLiteStatement.md) |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------| | [SQLiteQuery](../android/database/sqlite/SQLiteQuery.md) | Represents a query that reads the resulting rows into a [SQLiteQuery](../android/database/sqlite/SQLiteQuery.md). | | [SQLiteStatement](../android/database/sqlite/SQLiteStatement.md) | Represents a statement that can be executed against a database. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An object created from a SQLiteDatabase that can be closed. This class implements a primitive reference counting scheme for database objects.
@@ -27,20 +27,20 @@ An object created from a SQLiteDatabase that can be closed. This class implement
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteClosable](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#SQLiteClosable())`()` <br /> |
+| [SQLiteClosable](../android/database/sqlite/SQLiteClosable.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireReference](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#acquireReference())`()` Acquires a reference to the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#close())`()` Releases a reference to the object, closing the object if the last reference was released. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReference](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference())`()` Releases a reference to the object, closing the object if the last reference was released. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireReference](../android/database/sqlite/SQLiteClosable.md))`()` Acquires a reference to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/database/sqlite/SQLiteClosable.md))`()` Releases a reference to the object, closing the object if the last reference was released. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReference](../android/database/sqlite/SQLiteClosable.md))`()` Releases a reference to the object, closing the object if the last reference was released. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReferenceFromContainer](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReferenceFromContainer())`()` Releases a reference to the object that was owned by the container of the object, closing the object if the last reference was released. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReferenceFromContainer](../android/database/sqlite/SQLiteClosable.md))`()` Releases a reference to the object that was owned by the container of the object, closing the object if the last reference was released. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleased](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#onAllReferencesReleased())`()` Called when the last reference to the object was released by a call to [releaseReference()](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference())or #close(). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleasedFromContainer](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#onAllReferencesReleasedFromContainer())`()` Called when the last reference to the object was released by a call to [releaseReferenceFromContainer()](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReferenceFromContainer()). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleased](../android/database/sqlite/SQLiteClosable.md))`()` Called when the last reference to the object was released by a call to [releaseReference()](../android/database/sqlite/SQLiteClosable.md))or #close(). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleasedFromContainer](../android/database/sqlite/SQLiteClosable.md))`()` Called when the last reference to the object was released by a call to [releaseReferenceFromContainer()](../android/database/sqlite/SQLiteClosable.md)). |
 
 ## Public constructors
 
@@ -74,7 +74,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun close(): Unit
 ```
 
-Releases a reference to the object, closing the object if the last reference was released. Calling this method is equivalent to calling [releaseReference](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference()).
+Releases a reference to the object, closing the object if the last reference was released. Calling this method is equivalent to calling [releaseReference](../android/database/sqlite/SQLiteClosable.md)).
 
 | Exceptions ||
 |-----------------------|-----------------------------------|
@@ -125,7 +125,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected abstract fun onAllReferencesReleased(): Unit
 ```
 
-Called when the last reference to the object was released by a call to [releaseReference()](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference())or #close(). 
+Called when the last reference to the object was released by a call to [releaseReference()](../android/database/sqlite/SQLiteClosable.md))or #close(). 
 
 ### onAllReferencesReleasedFromContainer
 
@@ -138,4 +138,4 @@ protected open fun onAllReferencesReleasedFromContainer(): Unit
 
 **Deprecated:** *Do not use.*
 
-Called when the last reference to the object was released by a call to [releaseReferenceFromContainer()](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReferenceFromContainer()).
+Called when the last reference to the object was released by a call to [releaseReferenceFromContainer()](../android/database/sqlite/SQLiteClosable.md)).

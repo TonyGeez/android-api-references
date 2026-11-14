@@ -5,14 +5,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # TabContentFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/TabHost.TabContentFactory "View this page in Java") 
+Kotlin| [Java](../android/widget/TabHost.TabContentFactory.md) 
 | --- | --- |
 
 ```
 interface TabContentFactory
 ```
 
-| [android.widget.TabHost.TabContentFactory](https://developer.android.com/reference/kotlin/android/widget/TabHost.TabContentFactory#) |
+| [android.widget.TabHost.TabContentFactory](../android/widget/TabHost.TabContentFactory.md) |
 
 | **This interface was deprecated in API level 30.**
 |
@@ -24,7 +24,7 @@ Makes the content of a tab when it is selected. Use this if your tab content nee
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [createTabContent](https://developer.android.com/reference/kotlin/android/widget/TabHost.TabContentFactory#createTabContent(kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Callback to make the tab contents |
+| abstract [View](../android/view/View.md)! | [createTabContent](../android/widget/TabHost.TabContentFactory.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Callback to make the tab contents |
 
 ## Public methods
 
@@ -46,4 +46,4 @@ Callback to make the tab contents
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------|
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | The view to display the contents of the selected tab. |
+| [View](../android/view/View.md)! | The view to display the contents of the selected tab. |

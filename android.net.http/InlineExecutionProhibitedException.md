@@ -5,7 +5,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # InlineExecutionProhibitedException
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/http/InlineExecutionProhibitedException "View this page in Java") 
+Kotlin| [Java](../android/net/http/InlineExecutionProhibitedException.md) 
 | --- | --- |
 
 ```
@@ -15,19 +15,19 @@ class InlineExecutionProhibitedException : RejectedExecutionException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.concurrent.RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException.html#) ||
-| | | | | ↳ | [android.net.http.InlineExecutionProhibitedException](https://developer.android.com/reference/kotlin/android/net/http/InlineExecutionProhibitedException#) |
+| | | | ↳ | [java.util.concurrent.RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md) ||
+| | | | | ↳ | [android.net.http.InlineExecutionProhibitedException](../android/net/http/InlineExecutionProhibitedException.md) |
 
-Thrown when an executor runs a submitted runnable inline in [java.util.concurrent.Executor#execute(Runnable)](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#execute(java.lang.Runnable))and [android.net.http.UrlRequest.Builder#setDirectExecutorAllowed](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setDirectExecutorAllowed(kotlin.Boolean))was not called.
+Thrown when an executor runs a submitted runnable inline in [java.util.concurrent.Executor#execute(Runnable)](../java/util/concurrent/Executor.md))and [android.net.http.UrlRequest.Builder#setDirectExecutorAllowed](../android/net/http/UrlRequest.Builder.md))was not called.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InlineExecutionProhibitedException](https://developer.android.com/reference/kotlin/android/net/http/InlineExecutionProhibitedException#InlineExecutionProhibitedException())`()` <br /> |
+| [InlineExecutionProhibitedException](../android/net/http/InlineExecutionProhibitedException.md))`()` <br /> |
 
 ## Public constructors
 

@@ -2,7 +2,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # ChooserResult
 
-Kotlin | [Java](https://developer.android.com/reference/android/service/chooser/ChooserResult "View this page in Java")
+Kotlin | [Java](../android/service/chooser/ChooserResult.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ChooserResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.chooser.ChooserResult](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#) |
+| ↳ | [android.service.chooser.ChooserResult](../android/service/chooser/ChooserResult.md) |
 
 An event reported to a supplied \[IntentSender\] by the system chooser when an activity is selected or other actions are taken to complete the session.
 
@@ -33,7 +33,7 @@ An event reported to a supplied \[IntentSender\] by the system chooser when an a
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#getSelectedComponent()()` Provides the component of the Activity selected for results with type when type is `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CHOOSER_RESULT_SELECTED_COMPONENT:kotlin.Int`. |
+| [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#getSelectedComponent()()` Provides the component of the Activity selected for results with type when type is `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CHOOSER_RESULT_SELECTED_COMPONENT:kotlin.Int`. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#getType()()` The type of the result. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#hashCode()()` Returns a hash code value for the object. |
@@ -43,7 +43,7 @@ An event reported to a supplied \[IntentSender\] by the system chooser when an a
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ChooserResult](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#)!\> | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ChooserResult](../android/service/chooser/ChooserResult.md)!\> | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -218,7 +218,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

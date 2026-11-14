@@ -9,8 +9,8 @@ class ReadMedicalResourcesInitialRequest : ReadMedicalResourcesRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.health.connect.ReadMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest) ||
-| | ↳ | [android.health.connect.ReadMedicalResourcesInitialRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#) |
+| ↳ | [android.health.connect.ReadMedicalResourcesRequest](../android/health/connect/ReadMedicalResourcesRequest.md) ||
+| | ↳ | [android.health.connect.ReadMedicalResourcesInitialRequest](../android/health/connect/ReadMedicalResourcesInitialRequest.md) |
 
 An initial read request with specified filters for android.health.connect.HealthConnectManager#readMedicalResources.
 

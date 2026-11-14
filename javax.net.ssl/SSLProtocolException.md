@@ -11,11 +11,11 @@ open class SSLProtocolException : SSLException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.net.ssl.SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException) ||
-| | | | | ↳ | [javax.net.ssl.SSLProtocolException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLProtocolException#) |
+| | | | ↳ | [javax.net.ssl.SSLException](../javax/net/ssl/SSLException.md) ||
+| | | | | ↳ | [javax.net.ssl.SSLProtocolException](../javax/net/ssl/SSLProtocolException.md) |
 
 Reports an error in the operation of the SSL protocol. Normally this indicates a flaw in one of the protocol implementations.
 
@@ -23,7 +23,7 @@ Reports an error in the operation of the SSL protocol. Normally this indicates a
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLProtocolException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLProtocolException#SSLProtocolException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an SSL protocol error detected by an SSL subsystem. |
+| [SSLProtocolException](../javax/net/ssl/SSLProtocolException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an SSL protocol error detected by an SSL subsystem. |
 
 ## Public constructors
 

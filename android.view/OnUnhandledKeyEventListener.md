@@ -4,14 +4,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # OnUnhandledKeyEventListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnUnhandledKeyEventListener "View this page in Java") 
+Kotlin| [Java](../android/view/View.OnUnhandledKeyEventListener.md) 
 | --- | --- |
 
 ```
 interface OnUnhandledKeyEventListener
 ```
 
-| [android.view.View.OnUnhandledKeyEventListener](https://developer.android.com/reference/kotlin/android/view/View.OnUnhandledKeyEventListener#) |
+| [android.view.View.OnUnhandledKeyEventListener](../android/view/View.OnUnhandledKeyEventListener.md) |
 
 Interface definition for a callback to be invoked when a hardware key event hasn't been handled by the view hierarchy.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when a hardware key event hasn
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledKeyEvent](https://developer.android.com/reference/kotlin/android/view/View.OnUnhandledKeyEventListener#onUnhandledKeyEvent(android.view.View,%20android.view.KeyEvent))`(`v:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent)!`)` Called when a hardware key is dispatched to a view after being unhandled during normal [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent) dispatch. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledKeyEvent](../android/view/View.OnUnhandledKeyEventListener.md))`(`v:` ` [View](../android/view/View.md)!`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Called when a hardware key is dispatched to a view after being unhandled during normal [KeyEvent](../android/view/KeyEvent.md) dispatch. |
 
 ## Public methods
 
@@ -34,12 +34,12 @@ abstract fun onUnhandledKeyEvent(
 ): Boolean
 ```
 
-Called when a hardware key is dispatched to a view after being unhandled during normal [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent) dispatch.
+Called when a hardware key is dispatched to a view after being unhandled during normal [KeyEvent](../android/view/KeyEvent.md) dispatch.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view the key has been dispatched to. |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent)!:The KeyEvent object containing information about the event. |
+| `v` | [View](../android/view/View.md)!:The view the key has been dispatched to. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!:The KeyEvent object containing information about the event. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------|

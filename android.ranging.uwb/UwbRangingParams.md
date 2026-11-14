@@ -8,7 +8,7 @@ class UwbRangingParams : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.uwb.UwbRangingParams](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#) |
+| ↳ | [android.ranging.uwb.UwbRangingParams](../android/ranging/uwb/UwbRangingParams.md) |
 
 UwbRangingParams encapsulates the parameters required for a UWB ranging session.
 
@@ -41,11 +41,11 @@ UwbRangingParams encapsulates the parameters required for a UWB ranging session.
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [UwbComplexChannel](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getComplexChannel()()` Gets the complex channel information for this session. |
+| [UwbComplexChannel](../android/ranging/uwb/UwbComplexChannel.md) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getComplexChannel()()` Gets the complex channel information for this session. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getConfigId()()` Gets the configuration ID associated with this session. |
-| [UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getDeviceAddress()()` Gets the UWB address of the device. |
-| [UwbAddress](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getPeerAddress()()` Returns the UwbAddress of the peer device. |
+| [UwbAddress](../android/ranging/uwb/UwbAddress.md) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getDeviceAddress()()` Gets the UWB address of the device. |
+| [UwbAddress](../android/ranging/uwb/UwbAddress.md) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getPeerAddress()()` Returns the UwbAddress of the peer device. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getRangingUpdateRate()()` Returns the update rate for ranging operations. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSessionId()()` Gets the session ID associated with this ranging session. |
@@ -62,7 +62,7 @@ UwbRangingParams encapsulates the parameters required for a UWB ranging session.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [UwbRangingParams](https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#)!\> | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UwbRangingParams](../android/ranging/uwb/UwbRangingParams.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -407,7 +407,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

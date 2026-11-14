@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # Precision
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/number/Precision "View this page in Java") 
+Kotlin| [Java](../android/icu/number/Precision.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class Precision
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#) |
+| ↳ | [android.icu.number.Precision](../android/icu/number/Precision.md) |
 
-| Known Direct Subclasses [CurrencyPrecision](https://developer.android.com/reference/kotlin/android/icu/number/CurrencyPrecision), [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision) |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CurrencyPrecision](https://developer.android.com/reference/kotlin/android/icu/number/CurrencyPrecision) | A class that defines a rounding strategy parameterized by a currency to be used when formatting numbers in NumberFormatter. | | [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision) | A class that defines a rounding strategy based on a number of fraction places and optionally significant digits to be used when formatting numbers in NumberFormatter. | |
+| Known Direct Subclasses [CurrencyPrecision](../android/icu/number/CurrencyPrecision.md), [FractionPrecision](../android/icu/number/FractionPrecision.md) |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CurrencyPrecision](../android/icu/number/CurrencyPrecision.md) | A class that defines a rounding strategy parameterized by a currency to be used when formatting numbers in NumberFormatter. | | [FractionPrecision](../android/icu/number/FractionPrecision.md) | A class that defines a rounding strategy based on a number of fraction places and optionally significant digits to be used when formatting numbers in NumberFormatter. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A class that defines the rounding precision to be used when formatting numbers in NumberFormatter.
@@ -26,23 +26,23 @@ To create a Precision, use one of the factory methods.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CurrencyPrecision](https://developer.android.com/reference/kotlin/android/icu/number/CurrencyPrecision)! | [currency](https://developer.android.com/reference/kotlin/android/icu/number/Precision#currency(android.icu.util.Currency.CurrencyUsage))`(`currencyUsage:` ` [Currency.CurrencyUsage](https://developer.android.com/reference/kotlin/android/icu/util/Currency.CurrencyUsage.html#)!`)` Show numbers rounded and padded according to the rules for the currency unit. |
-| openstatic [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | [fixedFraction](https://developer.android.com/reference/kotlin/android/icu/number/Precision#fixedFraction(kotlin.Int))`(`minMaxFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of fraction places (numerals after the decimal separator). |
-| openstatic [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | [fixedSignificantDigits](https://developer.android.com/reference/kotlin/android/icu/number/Precision#fixedSignificantDigits(kotlin.Int))`(`minMaxSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of significant digits or significant figures. |
+| openstatic [CurrencyPrecision](../android/icu/number/CurrencyPrecision.md)! | [currency](../android/icu/number/Precision.md))`(`currencyUsage:` ` [Currency.CurrencyUsage](../android/icu/util/Currency.CurrencyUsage.md)!`)` Show numbers rounded and padded according to the rules for the currency unit. |
+| openstatic [FractionPrecision](../android/icu/number/FractionPrecision.md)! | [fixedFraction](../android/icu/number/Precision.md))`(`minMaxFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of fraction places (numerals after the decimal separator). |
+| openstatic [Precision](../android/icu/number/Precision.md)! | [fixedSignificantDigits](../android/icu/number/Precision.md))`(`minMaxSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of significant digits or significant figures. |
 | --- | --- |
-| openstatic [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | [increment](https://developer.android.com/reference/kotlin/android/icu/number/Precision#increment(java.math.BigDecimal))`(`roundingIncrement:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!`)` Show numbers rounded if necessary to the closest multiple of a certain rounding increment. |
-| openstatic [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | [integer](https://developer.android.com/reference/kotlin/android/icu/number/Precision#integer())`()` Show numbers rounded if necessary to the nearest integer. |
-| openstatic [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | [maxFraction](https://developer.android.com/reference/kotlin/android/icu/number/Precision#maxFraction(kotlin.Int))`(`maxFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of fraction places (numerals after the decimal separator). |
+| openstatic [Precision](../android/icu/number/Precision.md)! | [increment](../android/icu/number/Precision.md))`(`roundingIncrement:` ` [BigDecimal](../java/math/BigDecimal.md)!`)` Show numbers rounded if necessary to the closest multiple of a certain rounding increment. |
+| openstatic [FractionPrecision](../android/icu/number/FractionPrecision.md)! | [integer](../android/icu/number/Precision.md))`()` Show numbers rounded if necessary to the nearest integer. |
+| openstatic [FractionPrecision](../android/icu/number/FractionPrecision.md)! | [maxFraction](../android/icu/number/Precision.md))`(`maxFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of fraction places (numerals after the decimal separator). |
 | --- | --- |
-| openstatic [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | [maxSignificantDigits](https://developer.android.com/reference/kotlin/android/icu/number/Precision#maxSignificantDigits(kotlin.Int))`(`maxSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of significant digits/figures. |
-| openstatic [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | [minFraction](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minFraction(kotlin.Int))`(`minFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Always show at least a certain number of fraction places after the decimal separator, padding with zeros if necessary. |
-| openstatic [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | [minMaxFraction](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minMaxFraction(kotlin.Int,%20kotlin.Int))`(`minFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of fraction places (numerals after the decimal separator); in addition, always show at least a certain number of places after the decimal separator, padding with zeros if necessary. |
+| openstatic [Precision](../android/icu/number/Precision.md)! | [maxSignificantDigits](../android/icu/number/Precision.md))`(`maxSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of significant digits/figures. |
+| openstatic [FractionPrecision](../android/icu/number/FractionPrecision.md)! | [minFraction](../android/icu/number/Precision.md))`(`minFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Always show at least a certain number of fraction places after the decimal separator, padding with zeros if necessary. |
+| openstatic [FractionPrecision](../android/icu/number/FractionPrecision.md)! | [minMaxFraction](../android/icu/number/Precision.md))`(`minFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxFractionPlaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of fraction places (numerals after the decimal separator); in addition, always show at least a certain number of places after the decimal separator, padding with zeros if necessary. |
 | --- | --- |
-| openstatic [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | [minMaxSignificantDigits](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minMaxSignificantDigits(kotlin.Int,%20kotlin.Int))`(`minSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of significant digits/figures; in addition, always show at least a certain number of significant digits, padding with zeros if necessary. |
-| openstatic [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | [minSignificantDigits](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minSignificantDigits(kotlin.Int))`(`minSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Always show at least a certain number of significant digits/figures, padding with zeros if necessary. |
-| open [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | [trailingZeroDisplay](https://developer.android.com/reference/kotlin/android/icu/number/Precision#trailingZeroDisplay(android.icu.number.NumberFormatter.TrailingZeroDisplay))`(`trailingZeroDisplay:` ` [NumberFormatter.TrailingZeroDisplay](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.TrailingZeroDisplay)!`)` Configure how trailing zeros are displayed on numbers. |
+| openstatic [Precision](../android/icu/number/Precision.md)! | [minMaxSignificantDigits](../android/icu/number/Precision.md))`(`minSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Show numbers rounded if necessary to a certain number of significant digits/figures; in addition, always show at least a certain number of significant digits, padding with zeros if necessary. |
+| openstatic [Precision](../android/icu/number/Precision.md)! | [minSignificantDigits](../android/icu/number/Precision.md))`(`minSignificantDigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Always show at least a certain number of significant digits/figures, padding with zeros if necessary. |
+| open [Precision](../android/icu/number/Precision.md)! | [trailingZeroDisplay](../android/icu/number/Precision.md))`(`trailingZeroDisplay:` ` [NumberFormatter.TrailingZeroDisplay](../android/icu/number/NumberFormatter.TrailingZeroDisplay.md)!`)` Configure how trailing zeros are displayed on numbers. |
 | --- | --- |
-| openstatic [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | [unlimited](https://developer.android.com/reference/kotlin/android/icu/number/Precision#unlimited())`()` Show all available digits to full precision. |
+| openstatic [Precision](../android/icu/number/Precision.md)! | [unlimited](../android/icu/number/Precision.md))`()` Show all available digits to full precision. |
 
 ## Public methods
 
@@ -60,11 +60,11 @@ The exact rounding details will be resolved at runtime based on the currency uni
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `currencyUsage` | [Currency.CurrencyUsage](https://developer.android.com/reference/kotlin/android/icu/util/Currency.CurrencyUsage.html#)!:Either STANDARD (for digital transactions) or CASH (for transactions where the rounding increment may be limited by the available denominations of cash or coins). |
+| `currencyUsage` | [Currency.CurrencyUsage](../android/icu/util/Currency.CurrencyUsage.md)!:Either STANDARD (for digital transactions) or CASH (for transactions where the rounding increment may be limited by the available denominations of cash or coins). |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [CurrencyPrecision](https://developer.android.com/reference/kotlin/android/icu/number/CurrencyPrecision)! | A CurrencyPrecision for chaining or passing to the NumberFormatter precision() setter. |
+| [CurrencyPrecision](../android/icu/number/CurrencyPrecision.md)! | A CurrencyPrecision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------|
@@ -72,7 +72,7 @@ The exact rounding details will be resolved at runtime based on the currency uni
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### fixedFraction
 
@@ -96,7 +96,7 @@ Example output with minMaxFractionPlaces = 3:
 0.009 
 0.000 (zero)
 
-This method is equivalent to [minMaxFraction](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minMaxFraction(kotlin.Int,%20kotlin.Int))with both arguments equal.
+This method is equivalent to [minMaxFraction](../android/icu/number/Precision.md))with both arguments equal.
 
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -104,7 +104,7 @@ This method is equivalent to [minMaxFraction](https://developer.android.com/refe
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
+| [FractionPrecision](../android/icu/number/FractionPrecision.md)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -112,7 +112,7 @@ This method is equivalent to [minMaxFraction](https://developer.android.com/refe
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### fixedSignificantDigits
 
@@ -124,7 +124,7 @@ open static fun fixedSignificantDigits(minMaxSignificantDigits: Int): Precision
 
 Show numbers rounded if necessary to a certain number of significant digits or significant figures. Additionally, pad with zeros to ensure that this number of significant digits/figures are always shown.
 
-This method is equivalent to [minMaxSignificantDigits](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minMaxSignificantDigits(kotlin.Int,%20kotlin.Int))with both arguments equal.
+This method is equivalent to [minMaxSignificantDigits](../android/icu/number/Precision.md))with both arguments equal.
 
 | Parameters ||
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -132,7 +132,7 @@ This method is equivalent to [minMaxSignificantDigits](https://developer.android
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
+| [Precision](../android/icu/number/Precision.md)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -140,7 +140,7 @@ This method is equivalent to [minMaxSignificantDigits](https://developer.android
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### increment
 
@@ -159,15 +159,15 @@ Precision.increment(new BigDecimal("0.50"))
   
 ```
 
-For more information on the scale of Java BigDecimal, see [java.math.BigDecimal#scale()](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#scale()).
+For more information on the scale of Java BigDecimal, see [java.math.BigDecimal#scale()](../java/math/BigDecimal.md)).
 
 | Parameters ||
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `roundingIncrement` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!:The increment to which to round numbers. |
+| `roundingIncrement` | [BigDecimal](../java/math/BigDecimal.md)!:The increment to which to round numbers. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
+| [Precision](../android/icu/number/Precision.md)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------|
@@ -175,7 +175,7 @@ For more information on the scale of Java BigDecimal, see [java.math.BigDecimal#
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### integer
 
@@ -189,11 +189,11 @@ Show numbers rounded if necessary to the nearest integer.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
+| [FractionPrecision](../android/icu/number/FractionPrecision.md)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### maxFraction
 
@@ -211,7 +211,7 @@ Show numbers rounded if necessary to a certain number of fraction places (numera
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
+| [FractionPrecision](../android/icu/number/FractionPrecision.md)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -219,7 +219,7 @@ Show numbers rounded if necessary to a certain number of fraction places (numera
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### maxSignificantDigits
 
@@ -237,7 +237,7 @@ Show numbers rounded if necessary to a certain number of significant digits/figu
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
+| [Precision](../android/icu/number/Precision.md)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -245,7 +245,7 @@ Show numbers rounded if necessary to a certain number of significant digits/figu
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### minFraction
 
@@ -257,7 +257,7 @@ open static fun minFraction(minFractionPlaces: Int): FractionPrecision!
 
 Always show at least a certain number of fraction places after the decimal separator, padding with zeros if necessary. Do not perform rounding (display numbers to their full precision).
 
-**NOTE:** If you are formatting*doubles* , see the performance note in [unlimited](https://developer.android.com/reference/kotlin/android/icu/number/Precision#unlimited()).
+**NOTE:** If you are formatting*doubles* , see the performance note in [unlimited](../android/icu/number/Precision.md)).
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -265,7 +265,7 @@ Always show at least a certain number of fraction places after the decimal separ
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
+| [FractionPrecision](../android/icu/number/FractionPrecision.md)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -273,7 +273,7 @@ Always show at least a certain number of fraction places after the decimal separ
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### minMaxFraction
 
@@ -295,7 +295,7 @@ Show numbers rounded if necessary to a certain number of fraction places (numera
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [FractionPrecision](https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
+| [FractionPrecision](../android/icu/number/FractionPrecision.md)! | A FractionPrecision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -303,7 +303,7 @@ Show numbers rounded if necessary to a certain number of fraction places (numera
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### minMaxSignificantDigits
 
@@ -325,7 +325,7 @@ Show numbers rounded if necessary to a certain number of significant digits/figu
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
+| [Precision](../android/icu/number/Precision.md)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -333,7 +333,7 @@ Show numbers rounded if necessary to a certain number of significant digits/figu
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### minSignificantDigits
 
@@ -345,7 +345,7 @@ open static fun minSignificantDigits(minSignificantDigits: Int): Precision!
 
 Always show at least a certain number of significant digits/figures, padding with zeros if necessary. Do not perform rounding (display numbers to their full precision).
 
-**NOTE:** If you are formatting*doubles* , see the performance note in [unlimited](https://developer.android.com/reference/kotlin/android/icu/number/Precision#unlimited()).
+**NOTE:** If you are formatting*doubles* , see the performance note in [unlimited](../android/icu/number/Precision.md)).
 
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -353,7 +353,7 @@ Always show at least a certain number of significant digits/figures, padding wit
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
+| [Precision](../android/icu/number/Precision.md)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -361,7 +361,7 @@ Always show at least a certain number of significant digits/figures, padding wit
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### trailingZeroDisplay
 
@@ -375,7 +375,7 @@ Configure how trailing zeros are displayed on numbers. For example, to hide trai
 
 | Parameters ||
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `trailingZeroDisplay` | [NumberFormatter.TrailingZeroDisplay](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.TrailingZeroDisplay)!:Option to configure the display of trailing zeros. |
+| `trailingZeroDisplay` | [NumberFormatter.TrailingZeroDisplay](../android/icu/number/NumberFormatter.TrailingZeroDisplay.md)!:Option to configure the display of trailing zeros. |
 
 ### unlimited
 
@@ -387,14 +387,14 @@ open static fun unlimited(): Precision!
 
 Show all available digits to full precision.
 
-**NOTE:** When formatting a*double* , this method, along with [minFraction](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minFraction(kotlin.Int))and [minSignificantDigits](https://developer.android.com/reference/kotlin/android/icu/number/Precision#minSignificantDigits(kotlin.Int)), will trigger complex algorithm similar to*Dragon4* to determine the low-order digits and the number of digits to display based on the value of the double. If the number of fraction places or significant digits can be bounded, consider using [maxFraction](https://developer.android.com/reference/kotlin/android/icu/number/Precision#maxFraction(kotlin.Int))or [maxSignificantDigits](https://developer.android.com/reference/kotlin/android/icu/number/Precision#maxSignificantDigits(kotlin.Int))instead to maximize performance. For more information, read the following blog post.
+**NOTE:** When formatting a*double* , this method, along with [minFraction](../android/icu/number/Precision.md))and [minSignificantDigits](../android/icu/number/Precision.md)), will trigger complex algorithm similar to*Dragon4* to determine the low-order digits and the number of digits to display based on the value of the double. If the number of fraction places or significant digits can be bounded, consider using [maxFraction](../android/icu/number/Precision.md))or [maxSignificantDigits](../android/icu/number/Precision.md))instead to maximize performance. For more information, read the following blog post.
 
 http://www.serpentine.com/blog/2011/06/29/here-be-dragons-advances-in-problems-you-didnt-even-know-you-had/
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Precision](https://developer.android.com/reference/kotlin/android/icu/number/Precision#)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
+| [Precision](../android/icu/number/Precision.md)! | A Precision for chaining or passing to the NumberFormatter precision() setter. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter)
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md)

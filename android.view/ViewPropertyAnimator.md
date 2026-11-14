@@ -4,7 +4,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # ViewPropertyAnimator
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ViewPropertyAnimator "View this page in Java") 
+Kotlin| [Java](../android/view/ViewPropertyAnimator.md) 
 | --- | --- |
 
 ```
@@ -13,67 +13,67 @@ open class ViewPropertyAnimator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) |
+| ↳ | [android.view.ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) |
 
-This class enables automatic and optimized animation of select properties on View objects. If only one or two properties on a View object are being animated, then using an [android.animation.ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator.html#) is fine; the property setters called by ObjectAnimator are well equipped to do the right thing to set the property and invalidate the view appropriately. But if several properties are animated simultaneously, or if you just want a more convenient syntax to animate a specific property, then ViewPropertyAnimator might be more well-suited to the task.
+This class enables automatic and optimized animation of select properties on View objects. If only one or two properties on a View object are being animated, then using an [android.animation.ObjectAnimator](../android/animation/ObjectAnimator.md) is fine; the property setters called by ObjectAnimator are well equipped to do the right thing to set the property and invalidate the view appropriately. But if several properties are animated simultaneously, or if you just want a more convenient syntax to animate a specific property, then ViewPropertyAnimator might be more well-suited to the task.
 
 This class may provide better performance for several simultaneous animations, because it will optimize invalidate calls to take place only once for several properties instead of each animated property independently causing its own invalidation. Also, the syntax of using this class could be easier to use because the caller need only tell the View object which property to animate, and the value to animate either to or by, and this class handles the details of configuring the underlying Animator class and starting it.
 
-This class is not constructed by the caller, but rather by the View whose properties it will animate. Calls to [android.view.View#animate()](https://developer.android.com/reference/kotlin/android/view/View#animate())will return a reference to the appropriate ViewPropertyAnimator object for that View.
+This class is not constructed by the caller, but rather by the View whose properties it will animate. Calls to [android.view.View#animate()](../android/view/View.md))will return a reference to the appropriate ViewPropertyAnimator object for that View.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [alpha](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#alpha(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`alpha`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [alphaBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#alphaBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`alpha`property to be animated by the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#cancel())`()` Cancels all property animations that are currently running or pending. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [alpha](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`alpha`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [alphaBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`alpha`property to be animated by the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/view/ViewPropertyAnimator.md))`()` Cancels all property animations that are currently running or pending. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDuration](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#getDuration())`()` Returns the current duration of property animations. |
-| open [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html#)? | [getInterpolator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#getInterpolator())`()` Returns the timing interpolator that this animation uses. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#getStartDelay())`()` Returns the current startDelay of property animations. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDuration](../android/view/ViewPropertyAnimator.md))`()` Returns the current duration of property animations. |
+| open [TimeInterpolator](../android/animation/TimeInterpolator.md)? | [getInterpolator](../android/view/ViewPropertyAnimator.md))`()` Returns the timing interpolator that this animation uses. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](../android/view/ViewPropertyAnimator.md))`()` Returns the current startDelay of property animations. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [rotation](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#rotation(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotation`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [rotationBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#rotationBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotation`property to be animated by the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [rotationX](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#rotationX(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationX`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [rotation](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotation`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [rotationBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotation`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [rotationX](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationX`property to be animated to the specified value. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [rotationXBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#rotationXBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationX`property to be animated by the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [rotationY](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#rotationY(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationY`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [rotationYBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#rotationYBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationY`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [rotationXBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationX`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [rotationY](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationY`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [rotationYBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`rotationY`property to be animated by the specified value. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [scaleX](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#scaleX(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleX`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [scaleXBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#scaleXBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleX`property to be animated by the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [scaleY](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#scaleY(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleY`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [scaleX](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleX`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [scaleXBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleX`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [scaleY](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleY`property to be animated to the specified value. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [scaleYBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#scaleYBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleY`property to be animated by the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [setDuration](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setDuration(kotlin.Long))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the duration for the underlying animator that animates the requested properties. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [setInterpolator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setInterpolator(android.animation.TimeInterpolator))`(`interpolator:` ` [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html#)!`)` Sets the interpolator for the underlying animator that animates the requested properties. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [scaleYBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`scaleY`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [setDuration](../android/view/ViewPropertyAnimator.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the duration for the underlying animator that animates the requested properties. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [setInterpolator](../android/view/ViewPropertyAnimator.md))`(`interpolator:` ` [TimeInterpolator](../android/animation/TimeInterpolator.md)!`)` Sets the interpolator for the underlying animator that animates the requested properties. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [setListener](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setListener(android.animation.Animator.AnimatorListener))`(`listener:` ` [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener.html#)?`)` Sets a listener for events in the underlying Animators that run the property animations. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [setStartDelay](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setStartDelay(kotlin.Long))`(`startDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the startDelay for the underlying animator that animates the requested properties. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [setUpdateListener](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setUpdateListener(android.animation.ValueAnimator.AnimatorUpdateListener))`(`listener:` ` [ValueAnimator.AnimatorUpdateListener](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator.AnimatorUpdateListener.html#)?`)` Sets a listener for update events in the underlying ValueAnimator that runs the property animations. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [setListener](../android/view/ViewPropertyAnimator.md))`(`listener:` ` [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)?`)` Sets a listener for events in the underlying Animators that run the property animations. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [setStartDelay](../android/view/ViewPropertyAnimator.md))`(`startDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the startDelay for the underlying animator that animates the requested properties. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [setUpdateListener](../android/view/ViewPropertyAnimator.md))`(`listener:` ` [ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md)?`)` Sets a listener for update events in the underlying ValueAnimator that runs the property animations. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#start())`()` Starts the currently pending property animations immediately. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [translationX](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#translationX(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationX`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [translationXBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#translationXBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationX`property to be animated by the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/view/ViewPropertyAnimator.md))`()` Starts the currently pending property animations immediately. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [translationX](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationX`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [translationXBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationX`property to be animated by the specified value. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [translationY](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#translationY(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationY`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [translationYBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#translationYBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationY`property to be animated by the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [translationZ](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#translationZ(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationZ`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [translationY](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationY`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [translationYBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationY`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [translationZ](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationZ`property to be animated to the specified value. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [translationZBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#translationZBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationZ`property to be animated by the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [withEndAction](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#withEndAction(java.lang.Runnable))`(`runnable:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Specifies an action to take place when the next animation ends. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [withLayer](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#withLayer())`()` The View associated with this ViewPropertyAnimator will have its [layer type](https://developer.android.com/reference/kotlin/android/view/View#setLayerType(kotlin.Int,%20android.graphics.Paint))set to [View.LAYER_TYPE_HARDWARE](https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int) for the duration of the next animation. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [translationZBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`translationZ`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [withEndAction](../android/view/ViewPropertyAnimator.md))`(`runnable:` ` [Runnable](../java/lang/Runnable.md)!`)` Specifies an action to take place when the next animation ends. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [withLayer](../android/view/ViewPropertyAnimator.md))`()` The View associated with this ViewPropertyAnimator will have its [layer type](../android/view/View.md))set to [View.LAYER_TYPE_HARDWARE](../android/view/View.md) for the duration of the next animation. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [withStartAction](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#withStartAction(java.lang.Runnable))`(`runnable:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` Specifies an action to take place when the next animation runs. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [x](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#x(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`x`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [xBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#xBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`x`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [withStartAction](../android/view/ViewPropertyAnimator.md))`(`runnable:` ` [Runnable](../java/lang/Runnable.md)!`)` Specifies an action to take place when the next animation runs. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [x](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`x`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [xBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`x`property to be animated by the specified value. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [y](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#y(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`y`property to be animated to the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [yBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#yBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`y`property to be animated by the specified value. |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [z](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#z(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`z`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [y](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`y`property to be animated to the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [yBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`y`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [z](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`z`property to be animated to the specified value. |
 | --- | --- |
-| open [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | [zBy](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#zBy(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`z`property to be animated by the specified value. |
+| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | [zBy](../android/view/ViewPropertyAnimator.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` This method will cause the View's`z`property to be animated by the specified value. |
 
 ## Public methods
 
@@ -93,11 +93,11 @@ This method will cause the View's`alpha`property to be animated to the specified
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setAlpha(float)](https://developer.android.com/reference/kotlin/android/view/View#setAlpha(kotlin.Float)) 
+- [android.view.View#setAlpha(float)](../android/view/View.md)) 
 
 ### alphaBy
 
@@ -115,11 +115,11 @@ This method will cause the View's`alpha`property to be animated by the specified
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setAlpha(float)](https://developer.android.com/reference/kotlin/android/view/View#setAlpha(kotlin.Float)) 
+- [android.view.View#setAlpha(float)](../android/view/View.md)) 
 
 ### cancel
 
@@ -147,7 +147,7 @@ Returns the current duration of property animations. If the duration was set on 
 
 **See Also**
 
-- [#setDuration(long)](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setDuration(kotlin.Long)) 
+- [#setDuration(long)](../android/view/ViewPropertyAnimator.md)) 
 
 ### getInterpolator
 
@@ -161,7 +161,7 @@ Returns the timing interpolator that this animation uses.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html#)? | The timing interpolator for this animation. This value may be`null`. |
+| [TimeInterpolator](../android/animation/TimeInterpolator.md)? | The timing interpolator for this animation. This value may be`null`. |
 
 ### getStartDelay
 
@@ -179,7 +179,7 @@ Returns the current startDelay of property animations. If the startDelay was set
 
 **See Also**
 
-- [#setStartDelay(long)](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setStartDelay(kotlin.Long)) 
+- [#setStartDelay(long)](../android/view/ViewPropertyAnimator.md)) 
 
 ### rotation
 
@@ -197,11 +197,11 @@ This method will cause the View's`rotation`property to be animated to the specif
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setRotation(float)](https://developer.android.com/reference/kotlin/android/view/View#setRotation(kotlin.Float)) 
+- [android.view.View#setRotation(float)](../android/view/View.md)) 
 
 ### rotationBy
 
@@ -219,11 +219,11 @@ This method will cause the View's`rotation`property to be animated by the specif
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setRotation(float)](https://developer.android.com/reference/kotlin/android/view/View#setRotation(kotlin.Float)) 
+- [android.view.View#setRotation(float)](../android/view/View.md)) 
 
 ### rotationX
 
@@ -241,11 +241,11 @@ This method will cause the View's`rotationX`property to be animated to the speci
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setRotationX(float)](https://developer.android.com/reference/kotlin/android/view/View#setRotationX(kotlin.Float)) 
+- [android.view.View#setRotationX(float)](../android/view/View.md)) 
 
 ### rotationXBy
 
@@ -263,11 +263,11 @@ This method will cause the View's`rotationX`property to be animated by the speci
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setRotationX(float)](https://developer.android.com/reference/kotlin/android/view/View#setRotationX(kotlin.Float)) 
+- [android.view.View#setRotationX(float)](../android/view/View.md)) 
 
 ### rotationY
 
@@ -285,11 +285,11 @@ This method will cause the View's`rotationY`property to be animated to the speci
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setRotationY(float)](https://developer.android.com/reference/kotlin/android/view/View#setRotationY(kotlin.Float)) 
+- [android.view.View#setRotationY(float)](../android/view/View.md)) 
 
 ### rotationYBy
 
@@ -307,11 +307,11 @@ This method will cause the View's`rotationY`property to be animated by the speci
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setRotationY(float)](https://developer.android.com/reference/kotlin/android/view/View#setRotationY(kotlin.Float)) 
+- [android.view.View#setRotationY(float)](../android/view/View.md)) 
 
 ### scaleX
 
@@ -329,11 +329,11 @@ This method will cause the View's`scaleX`property to be animated to the specifie
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setScaleX(float)](https://developer.android.com/reference/kotlin/android/view/View#setScaleX(kotlin.Float)) 
+- [android.view.View#setScaleX(float)](../android/view/View.md)) 
 
 ### scaleXBy
 
@@ -351,11 +351,11 @@ This method will cause the View's`scaleX`property to be animated by the specifie
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setScaleX(float)](https://developer.android.com/reference/kotlin/android/view/View#setScaleX(kotlin.Float)) 
+- [android.view.View#setScaleX(float)](../android/view/View.md)) 
 
 ### scaleY
 
@@ -373,11 +373,11 @@ This method will cause the View's`scaleY`property to be animated to the specifie
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setScaleY(float)](https://developer.android.com/reference/kotlin/android/view/View#setScaleY(kotlin.Float)) 
+- [android.view.View#setScaleY(float)](../android/view/View.md)) 
 
 ### scaleYBy
 
@@ -395,11 +395,11 @@ This method will cause the View's`scaleY`property to be animated by the specifie
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setScaleY(float)](https://developer.android.com/reference/kotlin/android/view/View#setScaleY(kotlin.Float)) 
+- [android.view.View#setScaleY(float)](../android/view/View.md)) 
 
 ### setDuration
 
@@ -417,7 +417,7 @@ Sets the duration for the underlying animator that animates the requested proper
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 ### setInterpolator
 
@@ -431,11 +431,11 @@ Sets the interpolator for the underlying animator that animates the requested pr
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `interpolator` | [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html#)!:The TimeInterpolator to be used for ensuing property animations. A value of`null`will result in linear interpolation. |
+| `interpolator` | [TimeInterpolator](../android/animation/TimeInterpolator.md)!:The TimeInterpolator to be used for ensuing property animations. A value of`null`will result in linear interpolation. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 ### setListener
 
@@ -449,15 +449,15 @@ Sets a listener for events in the underlying Animators that run the property ani
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener.html#)?:The listener to be called with AnimatorListener events. A value of`null`removes any existing listener. |
+| `listener` | [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)?:The listener to be called with AnimatorListener events. A value of`null`removes any existing listener. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.animation.Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener.html#) 
+- [android.animation.Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md) 
 
 ### setStartDelay
 
@@ -475,7 +475,7 @@ Sets the startDelay for the underlying animator that animates the requested prop
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 ### setUpdateListener
 
@@ -489,15 +489,15 @@ Sets a listener for update events in the underlying ValueAnimator that runs the 
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [ValueAnimator.AnimatorUpdateListener](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator.AnimatorUpdateListener.html#)?:The listener to be called with update events. A value of`null`removes any existing listener. |
+| `listener` | [ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md)?:The listener to be called with update events. A value of`null`removes any existing listener. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.animation.ValueAnimator.AnimatorUpdateListener](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator.AnimatorUpdateListener.html#) 
+- [android.animation.ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md) 
 
 ### start
 
@@ -525,11 +525,11 @@ This method will cause the View's`translationX`property to be animated to the sp
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setTranslationX(float)](https://developer.android.com/reference/kotlin/android/view/View#setTranslationX(kotlin.Float)) 
+- [android.view.View#setTranslationX(float)](../android/view/View.md)) 
 
 ### translationXBy
 
@@ -547,11 +547,11 @@ This method will cause the View's`translationX`property to be animated by the sp
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setTranslationX(float)](https://developer.android.com/reference/kotlin/android/view/View#setTranslationX(kotlin.Float)) 
+- [android.view.View#setTranslationX(float)](../android/view/View.md)) 
 
 ### translationY
 
@@ -569,11 +569,11 @@ This method will cause the View's`translationY`property to be animated to the sp
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setTranslationY(float)](https://developer.android.com/reference/kotlin/android/view/View#setTranslationY(kotlin.Float)) 
+- [android.view.View#setTranslationY(float)](../android/view/View.md)) 
 
 ### translationYBy
 
@@ -591,11 +591,11 @@ This method will cause the View's`translationY`property to be animated by the sp
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setTranslationY(float)](https://developer.android.com/reference/kotlin/android/view/View#setTranslationY(kotlin.Float)) 
+- [android.view.View#setTranslationY(float)](../android/view/View.md)) 
 
 ### translationZ
 
@@ -613,11 +613,11 @@ This method will cause the View's`translationZ`property to be animated to the sp
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setTranslationZ(float)](https://developer.android.com/reference/kotlin/android/view/View#setTranslationZ(kotlin.Float)) 
+- [android.view.View#setTranslationZ(float)](../android/view/View.md)) 
 
 ### translationZBy
 
@@ -635,11 +635,11 @@ This method will cause the View's`translationZ`property to be animated by the sp
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setTranslationZ(float)](https://developer.android.com/reference/kotlin/android/view/View#setTranslationZ(kotlin.Float)) 
+- [android.view.View#setTranslationZ(float)](../android/view/View.md)) 
 
 ### withEndAction
 
@@ -649,7 +649,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun withEndAction(runnable: Runnable!): ViewPropertyAnimator
 ```
 
-Specifies an action to take place when the next animation ends. The action is only run if the animation ends normally; if the ViewPropertyAnimator is canceled during that animation, the runnable will not run. This method, along with [withStartAction(java.lang.Runnable)](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#withStartAction(java.lang.Runnable)), is intended to help facilitate choreographing ViewPropertyAnimator animations with other animations or actions in the application.
+Specifies an action to take place when the next animation ends. The action is only run if the animation ends normally; if the ViewPropertyAnimator is canceled during that animation, the runnable will not run. This method, along with [withStartAction(java.lang.Runnable)](../android/view/ViewPropertyAnimator.md)), is intended to help facilitate choreographing ViewPropertyAnimator animations with other animations or actions in the application.
 
 For example, the following code animates a view to x=200 and then back to 0: 
 
@@ -665,11 +665,11 @@ Runnable endAction = new Runnable() {
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `runnable` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:The action to run when the next animation ends. |
+| `runnable` | [Runnable](../java/lang/Runnable.md)!:The action to run when the next animation ends. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 ### withLayer
 
@@ -679,17 +679,17 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun withLayer(): ViewPropertyAnimator
 ```
 
-The View associated with this ViewPropertyAnimator will have its [layer type](https://developer.android.com/reference/kotlin/android/view/View#setLayerType(kotlin.Int,%20android.graphics.Paint))set to [View.LAYER_TYPE_HARDWARE](https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int) for the duration of the next animation. As stated in the documentation for [View.LAYER_TYPE_HARDWARE](https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int), the actual type of layer used internally depends on the runtime situation of the view. If the activity and this view are hardware-accelerated, then the layer will be accelerated as well. If the activity or the view is not accelerated, then the layer will effectively be the same as [View.LAYER_TYPE_SOFTWARE](https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_SOFTWARE:kotlin.Int).
+The View associated with this ViewPropertyAnimator will have its [layer type](../android/view/View.md))set to [View.LAYER_TYPE_HARDWARE](../android/view/View.md) for the duration of the next animation. As stated in the documentation for [View.LAYER_TYPE_HARDWARE](../android/view/View.md), the actual type of layer used internally depends on the runtime situation of the view. If the activity and this view are hardware-accelerated, then the layer will be accelerated as well. If the activity or the view is not accelerated, then the layer will effectively be the same as [View.LAYER_TYPE_SOFTWARE](../android/view/View.md).
 
-This state is not persistent, either on the View or on this ViewPropertyAnimator: the layer type of the View will be restored when the animation ends to what it was when this method was called, and this setting on ViewPropertyAnimator is only valid for the next animation. Note that calling this method and then independently setting the layer type of the View (by a direct call to [View.setLayerType(int, android.graphics.Paint)](https://developer.android.com/reference/kotlin/android/view/View#setLayerType(kotlin.Int,%20android.graphics.Paint))) will result in some inconsistency, including having the layer type restored to its pre-withLayer() value when the animation ends.
+This state is not persistent, either on the View or on this ViewPropertyAnimator: the layer type of the View will be restored when the animation ends to what it was when this method was called, and this setting on ViewPropertyAnimator is only valid for the next animation. Note that calling this method and then independently setting the layer type of the View (by a direct call to [View.setLayerType(int, android.graphics.Paint)](../android/view/View.md))) will result in some inconsistency, including having the layer type restored to its pre-withLayer() value when the animation ends.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setLayerType(int, android.graphics.Paint)](https://developer.android.com/reference/kotlin/android/view/View#setLayerType(kotlin.Int,%20android.graphics.Paint)) 
+- [android.view.View#setLayerType(int, android.graphics.Paint)](../android/view/View.md)) 
 
 ### withStartAction
 
@@ -699,15 +699,15 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun withStartAction(runnable: Runnable!): ViewPropertyAnimator
 ```
 
-Specifies an action to take place when the next animation runs. If there is a [startDelay](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#setStartDelay(kotlin.Long))set on this ViewPropertyAnimator, then the action will run after that startDelay expires, when the actual animation begins. This method, along with [withEndAction(java.lang.Runnable)](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#withEndAction(java.lang.Runnable)), is intended to help facilitate choreographing ViewPropertyAnimator animations with other animations or actions in the application.
+Specifies an action to take place when the next animation runs. If there is a [startDelay](../android/view/ViewPropertyAnimator.md))set on this ViewPropertyAnimator, then the action will run after that startDelay expires, when the actual animation begins. This method, along with [withEndAction(java.lang.Runnable)](../android/view/ViewPropertyAnimator.md)), is intended to help facilitate choreographing ViewPropertyAnimator animations with other animations or actions in the application.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `runnable` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:The action to run when the next animation starts. |
+| `runnable` | [Runnable](../java/lang/Runnable.md)!:The action to run when the next animation starts. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 ### x
 
@@ -725,11 +725,11 @@ This method will cause the View's`x`property to be animated to the specified val
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setX(float)](https://developer.android.com/reference/kotlin/android/view/View#setX(kotlin.Float)) 
+- [android.view.View#setX(float)](../android/view/View.md)) 
 
 ### xBy
 
@@ -747,11 +747,11 @@ This method will cause the View's`x`property to be animated by the specified val
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setX(float)](https://developer.android.com/reference/kotlin/android/view/View#setX(kotlin.Float)) 
+- [android.view.View#setX(float)](../android/view/View.md)) 
 
 ### y
 
@@ -769,11 +769,11 @@ This method will cause the View's`y`property to be animated to the specified val
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setY(float)](https://developer.android.com/reference/kotlin/android/view/View#setY(kotlin.Float)) 
+- [android.view.View#setY(float)](../android/view/View.md)) 
 
 ### yBy
 
@@ -791,11 +791,11 @@ This method will cause the View's`y`property to be animated by the specified val
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setY(float)](https://developer.android.com/reference/kotlin/android/view/View#setY(kotlin.Float)) 
+- [android.view.View#setY(float)](../android/view/View.md)) 
 
 ### z
 
@@ -813,11 +813,11 @@ This method will cause the View's`z`property to be animated to the specified val
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setZ(float)](https://developer.android.com/reference/kotlin/android/view/View#setZ(kotlin.Float)) 
+- [android.view.View#setZ(float)](../android/view/View.md)) 
 
 ### zBy
 
@@ -835,8 +835,8 @@ This method will cause the View's`z`property to be animated by the specified val
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [ViewPropertyAnimator](https://developer.android.com/reference/kotlin/android/view/ViewPropertyAnimator#) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
+| [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md) | This object, allowing calls to methods in this class to be chained. This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.View#setZ(float)](https://developer.android.com/reference/kotlin/android/view/View#setZ(kotlin.Float))
+- [android.view.View#setZ(float)](../android/view/View.md))

@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface ObjLongConsumer<T : Any!>
 ```
 
-| [java.util.function.ObjLongConsumer](https://developer.android.com/reference/kotlin/java/util/function/ObjLongConsumer#) |
+| [java.util.function.ObjLongConsumer](../java/util/function/ObjLongConsumer.md) |
 
-Represents an operation that accepts an object-valued and a`long`-valued argument, and returns no result. This is the`(reference, long)`specialization of [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer). Unlike most other functional interfaces,`ObjLongConsumer`is expected to operate via side-effects.
+Represents an operation that accepts an object-valued and a`long`-valued argument, and returns no result. This is the`(reference, long)`specialization of [BiConsumer](../java/util/function/BiConsumer.md). Unlike most other functional interfaces,`ObjLongConsumer`is expected to operate via side-effects.
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [accept(java.lang.Object,long)](https://developer.android.com/reference/kotlin/java/util/function/ObjLongConsumer#accept(java.util.function.ObjLongConsumer.T,%20kotlin.Long)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [accept(java.lang.Object,long)](../java/util/function/ObjLongConsumer.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](https://developer.android.com/reference/kotlin/java/util/function/ObjLongConsumer#accept(java.util.function.ObjLongConsumer.T,%20kotlin.Long))`(`t:` `T`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs this operation on the given arguments. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](../java/util/function/ObjLongConsumer.md))`(`t:` `T`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs this operation on the given arguments. |
 
 ## Public methods
 

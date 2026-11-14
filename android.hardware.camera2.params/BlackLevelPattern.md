@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # BlackLevelPattern
 
-Kotlin | [Java](https://developer.android.com/reference/android/hardware/camera2/params/BlackLevelPattern "View this page in Java")
+Kotlin | [Java](../android/hardware/camera2/params/BlackLevelPattern.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class BlackLevelPattern
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.BlackLevelPattern](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/BlackLevelPattern#) |
+| ↳ | [android.hardware.camera2.params.BlackLevelPattern](../android/hardware/camera2/params/BlackLevelPattern.md) |
 
 Immutable class to store a 4-element vector of integers corresponding to a 2x2 pattern of color channel offsets used for the black level offsets of each color channel. For a camera device with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MONOCHROME:kotlin.Int` capability, all 4 elements of the pattern will have the same value.
 

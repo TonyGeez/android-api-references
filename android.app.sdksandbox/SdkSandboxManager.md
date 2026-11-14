@@ -10,7 +10,7 @@ class SdkSandboxManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.sdksandbox.SdkSandboxManager](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#) |
+| ↳ | [android.app.sdksandbox.SdkSandboxManager](../android/app/sdksandbox/SdkSandboxManager.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -57,9 +57,9 @@ The app first needs to declare SDKs it depends on in its manifest using the `<us
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,%20android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)(callbackExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback)` Adds a callback which gets registered for SDK sandbox lifecycle events, such as SDK sandbox death. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSyncedSharedPreferencesKeys(kotlin.collections.MutableSet)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Adds keys to set of keys being synced from app's default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` to the SDK sandbox. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppOwnedSdkSandboxInterface](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getAppOwnedSdkSandboxInterfaces()()` Fetches a list of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` registered for an app |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppOwnedSdkSandboxInterface](../android/app/sdksandbox/AppOwnedSdkSandboxInterface.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getAppOwnedSdkSandboxInterfaces()()` Fetches a list of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` registered for an app |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SandboxedSdk](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getSandboxedSdks()()` Fetches information about SDKs that are loaded in the sandbox. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SandboxedSdk](../android/app/sdksandbox/SandboxedSdk.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getSandboxedSdks()()` Fetches information about SDKs that are loaded in the sandbox. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getSdkSandboxState()()` Returns the current state of the availability of the SDK sandbox feature. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getSyncedSharedPreferencesKeys()()` Returns the set keys that are being synced from app's default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` to the SDK sandbox. |
 | --- | --- |
@@ -373,8 +373,8 @@ Adds a callback which gets registered for SDK sandbox lifecycle events, such as 
 
 | Parameters ||
 |---|---|
-| `callbackExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [SdkSandboxManager.SdkSandboxProcessDeathCallback](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback): the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` which will receive SDK sandbox lifecycle events. This value cannot be `null`. |
+| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [SdkSandboxManager.SdkSandboxProcessDeathCallback](../android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback.md): the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` which will receive SDK sandbox lifecycle events. This value cannot be `null`. |
 
 ### addSyncedSharedPreferencesKeys
 
@@ -504,10 +504,10 @@ This API may only be called while the caller is running in the foreground. Calls
 | Parameters ||
 |---|---|
 | `sdkName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the SDK to be loaded. This value cannot be `null`. |
-| `params` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): additional parameters to be passed to the SDK in the form of a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` as agreed between the client and the SDK. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the receiver. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `params` | [Bundle](../android/os/Bundle.md): additional parameters to be passed to the SDK in the form of a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` as agreed between the client and the SDK. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the receiver. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [SandboxedSdk](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk)!, [LoadSdkException](https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException)!\>: This either receives a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk` on a successful run, or `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException`. This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [SandboxedSdk](../android/app/sdksandbox/SandboxedSdk.md)!, [LoadSdkException](../android/app/sdksandbox/LoadSdkException.md)!\>: This either receives a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk` on a successful run, or `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException`. This value cannot be `null`. |
 
 ### registerAppOwnedSdkSandboxInterface
 
@@ -529,7 +529,7 @@ Registering an `https://developer.android.com/reference/kotlin/android/app/sdksa
 
 | Parameters ||
 |---|---|
-| `appOwnedSdkSandboxInterface` | [AppOwnedSdkSandboxInterface](https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface): the AppOwnedSdkSandboxInterface to be registered. This value cannot be `null`. |
+| `appOwnedSdkSandboxInterface` | [AppOwnedSdkSandboxInterface](../android/app/sdksandbox/AppOwnedSdkSandboxInterface.md): the AppOwnedSdkSandboxInterface to be registered. This value cannot be `null`. |
 
 ### removeSdkSandboxProcessDeathCallback
 
@@ -547,7 +547,7 @@ Removes an `https://developer.android.com/reference/kotlin/android/app/sdksandbo
 
 | Parameters ||
 |---|---|
-| `callback` | [SdkSandboxManager.SdkSandboxProcessDeathCallback](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback): the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` which was previously added using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,%20android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)` This value cannot be `null`. |
+| `callback` | [SdkSandboxManager.SdkSandboxProcessDeathCallback](../android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback.md): the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` which was previously added using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,%20android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)` This value cannot be `null`. |
 
 ### removeSyncedSharedPreferencesKeys
 
@@ -599,10 +599,10 @@ This API may only be called while the caller is running in the foreground. Calls
 | Parameters ||
 |---|---|
 | `sdkName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the SDK loaded into the SDK sandbox. This value cannot be `null`. |
-| `params` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the parameters which the client application passes to the SDK. This value cannot be `null`. |
-| `callbackExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `params` | [Bundle](../android/os/Bundle.md): the parameters which the client application passes to the SDK. This value cannot be `null`. |
+| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!, [RequestSurfacePackageException](https://developer.android.com/reference/kotlin/android/app/sdksandbox/RequestSurfacePackageException)!\>: This either returns a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` on success which will contain the key `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` with a SurfacePackage value, or `https://developer.android.com/reference/kotlin/android/app/sdksandbox/RequestSurfacePackageException` on failure. This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Bundle](../android/os/Bundle.md)!, [RequestSurfacePackageException](../android/app/sdksandbox/RequestSurfacePackageException.md)!\>: This either returns a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` on success which will contain the key `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` with a SurfacePackage value, or `https://developer.android.com/reference/kotlin/android/app/sdksandbox/RequestSurfacePackageException` on failure. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -643,8 +643,8 @@ The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` 
 
 | Parameters ||
 |---|---|
-| `fromActivity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#): the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` will be used to start the new sandbox `https://developer.android.com/reference/kotlin/android/app/Activity.html#` by calling android.app.Activity#startActivity(android.content.Intent) against it. This value cannot be `null`. |
-| `sdkActivityToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#): the identifier that is shared by the SDK which requests the `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. This value cannot be `null`. |
+| `fromActivity` | [Activity](../android/app/Activity.md): the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` will be used to start the new sandbox `https://developer.android.com/reference/kotlin/android/app/Activity.html#` by calling android.app.Activity#startActivity(android.content.Intent) against it. This value cannot be `null`. |
+| `sdkActivityToken` | [IBinder](../android/os/IBinder.md): the identifier that is shared by the SDK which requests the `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. This value cannot be `null`. |
 
 ### unloadSdk
 

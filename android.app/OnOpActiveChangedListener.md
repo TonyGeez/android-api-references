@@ -4,14 +4,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # OnOpActiveChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener "View this page in Java") 
+Kotlin| [Java](../android/app/AppOpsManager.OnOpActiveChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnOpActiveChangedListener
 ```
 
-| [android.app.AppOpsManager.OnOpActiveChangedListener](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener#) |
+| [android.app.AppOpsManager.OnOpActiveChangedListener](../android/app/AppOpsManager.OnOpActiveChangedListener.md) |
 
 Callback for notification of changes to operation active state.
 
@@ -19,8 +19,8 @@ Callback for notification of changes to operation active state.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpActiveChanged](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener#onOpActiveChanged(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.Boolean))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `active:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the active state of an app-op changes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpActiveChanged](https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener#onOpActiveChanged(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `attributionTag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `virtualDeviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `active:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `attributionFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attributionChainId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Similar to #onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,boolean,int,int), but also includes the virtual device id of the op is now active or inactive. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpActiveChanged](../android/app/AppOpsManager.OnOpActiveChangedListener.md))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `active:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the active state of an app-op changes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpActiveChanged](../android/app/AppOpsManager.OnOpActiveChangedListener.md))`(`op:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `attributionTag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `virtualDeviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `active:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `attributionFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attributionChainId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Similar to #onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,boolean,int,int), but also includes the virtual device id of the op is now active or inactive. |
 
 ## Public methods
 
@@ -65,7 +65,7 @@ open fun onOpActiveChanged(
 
 Similar to #onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,boolean,int,int), but also includes the virtual device id of the op is now active or inactive.
 
-Implement this method if callbacks are required on all devices. If not implemented explicitly, the default implementation will notify for op state changes on the default device [Context.DEVICE_ID_DEFAULT](https://developer.android.com/reference/kotlin/android/content/Context.html#DEVICE_ID_DEFAULT:kotlin.Int) only.
+Implement this method if callbacks are required on all devices. If not implemented explicitly, the default implementation will notify for op state changes on the default device [Context.DEVICE_ID_DEFAULT](../android/content/Context.md) only.
 
 If implemented, #onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,boolean,int,int) will not be called automatically.
 

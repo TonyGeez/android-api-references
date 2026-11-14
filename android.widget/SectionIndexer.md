@@ -4,31 +4,31 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # SectionIndexer
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/SectionIndexer "View this page in Java") 
+Kotlin| [Java](../android/widget/SectionIndexer.md) 
 | --- | --- |
 
 ```
 interface SectionIndexer
 ```
 
-| [android.widget.SectionIndexer](https://developer.android.com/reference/kotlin/android/widget/SectionIndexer#) |
+| [android.widget.SectionIndexer](../android/widget/SectionIndexer.md) |
 
-| Known Direct Subclasses [AlphabetIndexer](https://developer.android.com/reference/kotlin/android/widget/AlphabetIndexer) |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [AlphabetIndexer](https://developer.android.com/reference/kotlin/android/widget/AlphabetIndexer) | A helper class for adapters that implement the SectionIndexer interface. | |
+| Known Direct Subclasses [AlphabetIndexer](../android/widget/AlphabetIndexer.md) |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [AlphabetIndexer](../android/widget/AlphabetIndexer.md) | A helper class for adapters that implement the SectionIndexer interface. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Interface that may implemented on [Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter) s to enable fast scrolling between sections of an [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView).
+Interface that may implemented on [Adapter](../android/widget/Adapter.md) s to enable fast scrolling between sections of an [AbsListView](../android/widget/AbsListView.md).
 
 A section is a group of list items that have something in common. For example, they may begin with the same letter or they may be songs from the same artist.
 
-[ExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter) s that consider groups and sections as synonymous should account for collapsed groups and return an appropriate section/position.
+[ExpandableListAdapter](../android/widget/ExpandableListAdapter.md) s that consider groups and sections as synonymous should account for collapsed groups and return an appropriate section/position.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPositionForSection](https://developer.android.com/reference/kotlin/android/widget/SectionIndexer#getPositionForSection(kotlin.Int))`(`sectionIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Given the index of a section within the array of section objects, returns the starting position of that section within the adapter. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSectionForPosition](https://developer.android.com/reference/kotlin/android/widget/SectionIndexer#getSectionForPosition(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Given a position within the adapter, returns the index of the corresponding section within the array of section objects. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getSections](https://developer.android.com/reference/kotlin/android/widget/SectionIndexer#getSections())`()` Returns an array of objects representing sections of the list. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPositionForSection](../android/widget/SectionIndexer.md))`(`sectionIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Given the index of a section within the array of section objects, returns the starting position of that section within the adapter. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSectionForPosition](../android/widget/SectionIndexer.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Given a position within the adapter, returns the index of the corresponding section within the array of section objects. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getSections](../android/widget/SectionIndexer.md))`()` Returns an array of objects representing sections of the list. |
 | --- | --- |
 
 ## Public methods

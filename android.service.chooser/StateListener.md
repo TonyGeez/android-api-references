@@ -4,14 +4,14 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 
 # StateListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/chooser/ChooserSession.StateListener "View this page in Java") 
+Kotlin| [Java](../android/service/chooser/ChooserSession.StateListener.md) 
 | --- | --- |
 
 ```
 interface StateListener
 ```
 
-| [android.service.chooser.ChooserSession.StateListener](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession.StateListener#) |
+| [android.service.chooser.ChooserSession.StateListener](../android/service/chooser/ChooserSession.StateListener.md) |
 
 A callback interface for Chooser session state updates.
 
@@ -19,8 +19,8 @@ A callback interface for Chooser session state updates.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBoundsChanged](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession.StateListener#onBoundsChanged(android.graphics.Rect))`(`bounds:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`)` Gets invoked when the Chooser bounds are changed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStateChanged](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession.StateListener#onStateChanged(kotlin.Int))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets invoked when ChooserManager lifecycle state has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBoundsChanged](../android/service/chooser/ChooserSession.StateListener.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)`)` Gets invoked when the Chooser bounds are changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStateChanged](../android/service/chooser/ChooserSession.StateListener.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets invoked when ChooserManager lifecycle state has changed. |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ Gets invoked when the Chooser bounds are changed. The rect parameter represents 
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------|
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):This value cannot be`null`. |
+| `bounds` | [Rect](../android/graphics/Rect.md):This value cannot be`null`. |
 
 ### onStateChanged
 
@@ -50,4 +50,4 @@ Gets invoked when ChooserManager lifecycle state has changed.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.service.chooser.ChooserSession#STATE_INITIALIZED](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#STATE_INITIALIZED:kotlin.Int), [android.service.chooser.ChooserSession#STATE_STARTED](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#STATE_STARTED:kotlin.Int), or [android.service.chooser.ChooserSession#STATE_CLOSED](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserSession#STATE_CLOSED:kotlin.Int) |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.service.chooser.ChooserSession#STATE_INITIALIZED](../android/service/chooser/ChooserSession.md), [android.service.chooser.ChooserSession#STATE_STARTED](../android/service/chooser/ChooserSession.md), or [android.service.chooser.ChooserSession#STATE_CLOSED](../android/service/chooser/ChooserSession.md) |

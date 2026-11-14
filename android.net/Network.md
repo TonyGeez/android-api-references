@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # Network
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/Network "View this page in Java") 
+Kotlin| [Java](../android/net/Network.md) 
 | --- | --- |
 
 ```
@@ -13,42 +13,42 @@ open class Network : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.Network](https://developer.android.com/reference/kotlin/android/net/Network#) |
+| ↳ | [android.net.Network](../android/net/Network.md) |
 
-Identifies a`Network`. This is supplied to applications via [ConnectivityManager.NetworkCallback](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback) in response to the active android.net.ConnectivityManager#requestNetwork or passive android.net.ConnectivityManager#registerNetworkCallback calls. It is used to direct traffic to the given`Network`, either on a [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) basis through a targeted [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) or process-wide via [ConnectivityManager.bindProcessToNetwork](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)).
+Identifies a`Network`. This is supplied to applications via [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md) in response to the active android.net.ConnectivityManager#requestNetwork or passive android.net.ConnectivityManager#registerNetworkCallback calls. It is used to direct traffic to the given`Network`, either on a [Socket](../java/net/Socket.md) basis through a targeted [SocketFactory](../javax/net/SocketFactory.md) or process-wide via [ConnectivityManager.bindProcessToNetwork](../android/net/ConnectivityManager.md)).
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](https://developer.android.com/reference/kotlin/android/net/Network#bindSocket(java.io.FileDescriptor))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`)` Binds the specified [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#) to this`Network`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](https://developer.android.com/reference/kotlin/android/net/Network#bindSocket(java.net.DatagramSocket))`(`socket:` ` [DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#)!`)` Binds the specified [DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#) to this`Network`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](https://developer.android.com/reference/kotlin/android/net/Network#bindSocket(java.net.Socket))`(`socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Binds the specified [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) to this`Network`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](../android/net/Network.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`)` Binds the specified [FileDescriptor](../java/io/FileDescriptor.md) to this`Network`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](../android/net/Network.md))`(`socket:` ` [DatagramSocket](../java/net/DatagramSocket.md)!`)` Binds the specified [DatagramSocket](../java/net/DatagramSocket.md) to this`Network`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bindSocket](../android/net/Network.md))`(`socket:` ` [Socket](../java/net/Socket.md)!`)` Binds the specified [Socket](../java/net/Socket.md) to this`Network`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/Network#describeContents())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/Network#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| openstatic [Network](https://developer.android.com/reference/kotlin/android/net/Network#)! | [fromNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#fromNetworkHandle(kotlin.Long))`(`networkHandle:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [Network](https://developer.android.com/reference/kotlin/android/net/Network#) object given a handle returned from [getNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#getNetworkHandle()). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/Network.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/Network.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| openstatic [Network](../android/net/Network.md)! | [fromNetworkHandle](../android/net/Network.md))`(`networkHandle:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [Network](../android/net/Network.md) object given a handle returned from [getNetworkHandle](../android/net/Network.md)). |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!\>! | [getAllByName](https://developer.android.com/reference/kotlin/android/net/Network#getAllByName(kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates the same as`InetAddress.getAllByName`except that host resolution is done on this network. |
-| open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [getByName](https://developer.android.com/reference/kotlin/android/net/Network#getByName(kotlin.String))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates the same as`InetAddress.getByName`except that host resolution is done on this network. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#getNetworkHandle())`()` Returns a handle representing this`Network`, for use with the NDK API. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InetAddress](../java/net/InetAddress.md)!\>! | [getAllByName](../android/net/Network.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates the same as`InetAddress.getAllByName`except that host resolution is done on this network. |
+| open [InetAddress](../java/net/InetAddress.md)! | [getByName](../android/net/Network.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates the same as`InetAddress.getByName`except that host resolution is done on this network. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNetworkHandle](../android/net/Network.md))`()` Returns a handle representing this`Network`, for use with the NDK API. |
 | --- | --- |
-| open [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#)! | [getSocketFactory](https://developer.android.com/reference/kotlin/android/net/Network#getSocketFactory())`()` Returns a [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) bound to this network. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/Network#hashCode())`()` <br /> |
-| open [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)! | [openConnection](https://developer.android.com/reference/kotlin/android/net/Network#openConnection(java.net.URL))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`)` Opens the specified [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) on this`Network`, such that all traffic will be sent on this Network. |
+| open [SocketFactory](../javax/net/SocketFactory.md)! | [getSocketFactory](../android/net/Network.md))`()` Returns a [SocketFactory](../javax/net/SocketFactory.md) bound to this network. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/Network.md))`()` <br /> |
+| open [URLConnection](../java/net/URLConnection.md)! | [openConnection](../android/net/Network.md))`(`url:` ` [URL](../java/net/URL.md)!`)` Opens the specified [URL](../java/net/URL.md) on this`Network`, such that all traffic will be sent on this Network. |
 | --- | --- |
-| open [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)! | [openConnection](https://developer.android.com/reference/kotlin/android/net/Network#openConnection(java.net.URL,%20java.net.Proxy))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`, `proxy:` ` [Proxy](https://developer.android.com/reference/kotlin/java/net/Proxy.html#)!`)` Opens the specified [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) on this`Network`, such that all traffic will be sent on this Network. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/Network#toString())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/Network#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [URLConnection](../java/net/URLConnection.md)! | [openConnection](../android/net/Network.md))`(`url:` ` [URL](../java/net/URL.md)!`, `proxy:` ` [Proxy](../java/net/Proxy.md)!`)` Opens the specified [URL](../java/net/URL.md) on this`Network`, such that all traffic will be sent on this Network. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/Network.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/Network.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Network](https://developer.android.com/reference/kotlin/android/net/Network#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/Network#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Network](../android/net/Network.md)!\> | [CREATOR](../android/net/Network.md) <br /> |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun bindSocket(fd: FileDescriptor!): Unit
 ```
 
-Binds the specified [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#) to this`Network`. All data traffic on the socket represented by this file descriptor will be sent on this`Network`, irrespective of any process-wide network binding set by [ConnectivityManager.bindProcessToNetwork](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)). The socket must not be connected. 
+Binds the specified [FileDescriptor](../java/io/FileDescriptor.md) to this`Network`. All data traffic on the socket represented by this file descriptor will be sent on this`Network`, irrespective of any process-wide network binding set by [ConnectivityManager.bindProcessToNetwork](../android/net/ConnectivityManager.md)). The socket must not be connected. 
 
 ### bindSocket
 
@@ -70,7 +70,7 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 open fun bindSocket(socket: DatagramSocket!): Unit
 ```
 
-Binds the specified [DatagramSocket](https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#) to this`Network`. All data traffic on the socket will be sent on this`Network`, irrespective of any process-wide network binding set by [ConnectivityManager.bindProcessToNetwork](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)). The socket must not be connected. 
+Binds the specified [DatagramSocket](../java/net/DatagramSocket.md) to this`Network`. All data traffic on the socket will be sent on this`Network`, irrespective of any process-wide network binding set by [ConnectivityManager.bindProcessToNetwork](../android/net/ConnectivityManager.md)). The socket must not be connected. 
 
 ### bindSocket
 
@@ -80,7 +80,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun bindSocket(socket: Socket!): Unit
 ```
 
-Binds the specified [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) to this`Network`. All data traffic on the socket will be sent on this`Network`, irrespective of any process-wide network binding set by [ConnectivityManager.bindProcessToNetwork](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)). The socket must not be connected. 
+Binds the specified [Socket](../java/net/Socket.md) to this`Network`. All data traffic on the socket will be sent on this`Network`, irrespective of any process-wide network binding set by [ConnectivityManager.bindProcessToNetwork](../android/net/ConnectivityManager.md)). The socket must not be connected. 
 
 ### describeContents
 
@@ -92,7 +92,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -130,15 +130,15 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open static fun fromNetworkHandle(networkHandle: Long): Network!
 ```
 
-Returns a [Network](https://developer.android.com/reference/kotlin/android/net/Network#) object given a handle returned from [getNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#getNetworkHandle()).
+Returns a [Network](../android/net/Network.md) object given a handle returned from [getNetworkHandle](../android/net/Network.md)).
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `networkHandle` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a handle returned from [getNetworkHandle](https://developer.android.com/reference/kotlin/android/net/Network#getNetworkHandle()). |
+| `networkHandle` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a handle returned from [getNetworkHandle](../android/net/Network.md)). |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [Network](https://developer.android.com/reference/kotlin/android/net/Network#)! | A [Network](https://developer.android.com/reference/kotlin/android/net/Network#) object derived from`networkHandle`. |
+| [Network](../android/net/Network.md)! | A [Network](../android/net/Network.md) object derived from`networkHandle`. |
 
 ### getAllByName
 
@@ -156,7 +156,7 @@ Operates the same as`InetAddress.getAllByName`except that host resolution is don
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!>! | the array of addresses associated with the specified host. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [InetAddress](../java/net/InetAddress.md)!>! | the array of addresses associated with the specified host. |
 
 | Exceptions ||
 |---------------------------------|------------------------------|
@@ -178,7 +178,7 @@ Operates the same as`InetAddress.getByName`except that host resolution is done o
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | the`InetAddress`instance representing the host. |
+| [InetAddress](../java/net/InetAddress.md)! | the`InetAddress`instance representing the host. |
 
 | Exceptions ||
 |---------------------------------|------------------------------|
@@ -202,11 +202,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getSocketFactory(): SocketFactory!
 ```
 
-Returns a [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) bound to this network. Any [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) created by this factory will have its traffic sent over this`Network`. Note that if this`Network`ever disconnects, this factory and any [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) it produced in the past or future will cease to work.
+Returns a [SocketFactory](../javax/net/SocketFactory.md) bound to this network. Any [Socket](../java/net/Socket.md) created by this factory will have its traffic sent over this`Network`. Note that if this`Network`ever disconnects, this factory and any [Socket](../java/net/Socket.md) it produced in the past or future will cease to work.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#)! | a [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory.html#) which produces [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#) instances bound to this`Network`. |
+| [SocketFactory](../javax/net/SocketFactory.md)! | a [SocketFactory](../javax/net/SocketFactory.md) which produces [Socket](../java/net/Socket.md) instances bound to this`Network`. |
 
 ### hashCode
 
@@ -228,11 +228,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun openConnection(url: URL!): URLConnection!
 ```
 
-Opens the specified [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) on this`Network`, such that all traffic will be sent on this Network. The URL protocol must be`HTTP`or`HTTPS`.
+Opens the specified [URL](../java/net/URL.md) on this`Network`, such that all traffic will be sent on this Network. The URL protocol must be`HTTP`or`HTTPS`.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)! | a`URLConnection`to the resource referred to by this URL. |
+| [URLConnection](../java/net/URLConnection.md)! | a`URLConnection`to the resource referred to by this URL. |
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------------|
@@ -241,7 +241,7 @@ Opens the specified [URL](https://developer.android.com/reference/kotlin/java/ne
 
 **See Also**
 
-- [java.net.URL#openConnection()](https://developer.android.com/reference/kotlin/java/net/URL.html#openConnection()) 
+- [java.net.URL#openConnection()](../java/net/URL.md)) 
 
 ### openConnection
 
@@ -254,15 +254,15 @@ open fun openConnection(
 ): URLConnection!
 ```
 
-Opens the specified [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) on this`Network`, such that all traffic will be sent on this Network. The URL protocol must be`HTTP`or`HTTPS`.
+Opens the specified [URL](../java/net/URL.md) on this`Network`, such that all traffic will be sent on this Network. The URL protocol must be`HTTP`or`HTTPS`.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `proxy` | [Proxy](https://developer.android.com/reference/kotlin/java/net/Proxy.html#)!:the proxy through which the connection will be established. |
+| `proxy` | [Proxy](../java/net/Proxy.md)!:the proxy through which the connection will be established. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#)! | a`URLConnection`to the resource referred to by this URL. |
+| [URLConnection](../java/net/URLConnection.md)! | a`URLConnection`to the resource referred to by this URL. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------|
@@ -273,7 +273,7 @@ Opens the specified [URL](https://developer.android.com/reference/kotlin/java/ne
 
 **See Also**
 
-- [java.net.URL#openConnection()](https://developer.android.com/reference/kotlin/java/net/URL.html#openConnection()) 
+- [java.net.URL#openConnection()](../java/net/URL.md)) 
 
 ### toString
 
@@ -300,8 +300,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

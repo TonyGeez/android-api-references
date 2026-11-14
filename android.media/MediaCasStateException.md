@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaCasStateException
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaCasStateException "View this page in Java") 
+Kotlin| [Java](../android/media/MediaCasStateException.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class MediaCasStateException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [android.media.MediaCasStateException](https://developer.android.com/reference/kotlin/android/media/MediaCasStateException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [android.media.MediaCasStateException](../android/media/MediaCasStateException.md) |
 
 Base class for MediaCas runtime exceptions
 
@@ -26,7 +26,7 @@ Base class for MediaCas runtime exceptions
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDiagnosticInfo](https://developer.android.com/reference/kotlin/android/media/MediaCasStateException#getDiagnosticInfo())`()` Retrieve a developer-readable diagnostic information string associated with the exception. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDiagnosticInfo](../android/media/MediaCasStateException.md))`()` Retrieve a developer-readable diagnostic information string associated with the exception. |
 
 ## Public methods
 

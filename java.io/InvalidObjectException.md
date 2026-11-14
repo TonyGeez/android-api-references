@@ -11,11 +11,11 @@ open class InvalidObjectException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](https://developer.android.com/reference/kotlin/java/io/ObjectStreamException) ||
-| | | | | ↳ | [java.io.InvalidObjectException](https://developer.android.com/reference/kotlin/java/io/InvalidObjectException#) |
+| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.InvalidObjectException](../java/io/InvalidObjectException.md) |
 
 Indicates that one or more deserialized objects failed validation tests. The argument should provide the reason for the failure.
 
@@ -23,7 +23,7 @@ Indicates that one or more deserialized objects failed validation tests. The arg
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidObjectException](https://developer.android.com/reference/kotlin/java/io/InvalidObjectException#InvalidObjectException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an `InvalidObjectException`. |
+| [InvalidObjectException](../java/io/InvalidObjectException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an `InvalidObjectException`. |
 
 ## Public constructors
 
@@ -43,4 +43,4 @@ Constructs an `InvalidObjectException`.
 
 **See Also**
 
-- [java.io.ObjectInputValidation](https://developer.android.com/reference/kotlin/java/io/ObjectInputValidation)
+- [java.io.ObjectInputValidation](../java/io/ObjectInputValidation.md)

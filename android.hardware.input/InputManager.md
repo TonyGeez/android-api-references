@@ -8,7 +8,7 @@ class InputManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.input.InputManager](https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#) |
+| ↳ | [android.hardware.input.InputManager](../android/hardware/input/InputManager.md) |
 
 Provides information about input devices and available key layouts.
 
@@ -26,15 +26,15 @@ Provides information about input devices and available key layouts.
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#addPeripheralCustomization(kotlin.Int,%20kotlin.Int,%20android.hardware.input.CustomizationTrigger,%20android.hardware.input.CustomizationAction)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, trigger: https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger, action: https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationAction)` Adds a new peripheral customization for a given vendor ID and product ID. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger)!, [CustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationAction)!\> | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getAllPeripheralCustomizations(kotlin.Int,%20kotlin.Int)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves all input customizations for a specific peripheral device. |
-| [HostUsiVersion](https://developer.android.com/reference/kotlin/android/hardware/input/HostUsiVersion)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getHostUsiVersion(android.view.Display)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#)` Reports the version of the Universal Stylus Initiative (USI) protocol supported by the given display, if any. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [CustomizationTrigger](../android/hardware/input/CustomizationTrigger.md)!, [CustomizationAction](../android/hardware/input/CustomizationAction.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getAllPeripheralCustomizations(kotlin.Int,%20kotlin.Int)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves all input customizations for a specific peripheral device. |
+| [HostUsiVersion](../android/hardware/input/HostUsiVersion.md)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getHostUsiVersion(android.view.Display)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#)` Reports the version of the Universal Stylus Initiative (USI) protocol supported by the given display, if any. |
 | --- | --- |
-| [InputDevice](https://developer.android.com/reference/kotlin/android/view/InputDevice.html#)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getInputDevice(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets information about the input device with the specified id. |
+| [InputDevice](../android/view/InputDevice.md)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getInputDevice(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets information about the input device with the specified id. |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getInputDeviceIds()()` Gets the ids of all input devices in the system. |
-| [InputDevice.ViewBehavior](https://developer.android.com/reference/kotlin/android/view/InputDevice.ViewBehavior.html#)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getInputDeviceViewBehavior(kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the `https://developer.android.com/reference/kotlin/android/view/InputDevice.ViewBehavior.html#` of the input device with a given `id`. |
+| [InputDevice.ViewBehavior](../android/view/InputDevice.ViewBehavior.md)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getInputDeviceViewBehavior(kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the `https://developer.android.com/reference/kotlin/android/view/InputDevice.ViewBehavior.html#` of the input device with a given `id`. |
 | --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getMaximumObscuringOpacityForTouch()()` Returns the maximum allowed obscuring opacity per UID to propagate touches. |
-| [CustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationAction)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getPeripheralCustomization(kotlin.Int,%20kotlin.Int,%20android.hardware.input.CustomizationTrigger)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, trigger: https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger)` Retrieves a specific peripheral customization action for a given trigger. |
+| [CustomizationAction](../android/hardware/input/CustomizationAction.md)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#getPeripheralCustomization(kotlin.Int,%20kotlin.Int,%20android.hardware.input.CustomizationTrigger)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, trigger: https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger)` Retrieves a specific peripheral customization action for a given trigger. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#isButtonAllowedForCustomization(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, buttonCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if a specific button is allowed for customization on the device(s). |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#isKeyAllowedForCustomization(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets whether a keycode can be customized on a device. |
@@ -45,7 +45,7 @@ Provides information about input devices and available key layouts.
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#removePeripheralCustomization(kotlin.Int,%20kotlin.Int,%20android.hardware.input.CustomizationTrigger)(vendorId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, productId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, trigger: https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger)` Removes a peripheral customization for a given vendor ID and product ID. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#unregisterInputDeviceListener(android.hardware.input.InputManager.InputDeviceListener)(listener: https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.InputDeviceListener!)` Unregisters an input device listener. |
 | --- | --- |
-| [VerifiedInputEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent.html#)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#verifyInputEvent(android.view.InputEvent)(event: https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)` Verify the details of an `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` that came from the system. |
+| [VerifiedInputEvent](../android/view/VerifiedInputEvent.md)? | `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager#verifyInputEvent(android.view.InputEvent)(event: https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)` Verify the details of an `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` that came from the system. |
 
 ## Constants
 
@@ -135,9 +135,9 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 |---|---|
 | `vendorId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the vendor ID of the device |
 | `productId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the product ID of the device |
-| `trigger` | [CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger): the trigger for the customization. This value cannot be `null`. |
+| `trigger` | [CustomizationTrigger](../android/hardware/input/CustomizationTrigger.md): the trigger for the customization. This value cannot be `null`. |
 | --- | --- |
-| `action` | [CustomizationAction](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationAction): the action to be executed by the trigger. This value cannot be `null`. |
+| `action` | [CustomizationAction](../android/hardware/input/CustomizationAction.md): the action to be executed by the trigger. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -183,7 +183,7 @@ Reports the version of the Universal Stylus Initiative (USI) protocol supported 
 
 | Parameters ||
 |---|---|
-| `display` | [Display](https://developer.android.com/reference/kotlin/android/view/Display.html#): This value cannot be `null`. |
+| `display` | [Display](../android/view/Display.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -284,7 +284,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 |---|---|
 | `vendorId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the vendor ID of the device |
 | `productId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the product ID of the device |
-| `trigger` | [CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger): This value cannot be `null`. |
+| `trigger` | [CustomizationTrigger](../android/hardware/input/CustomizationTrigger.md): This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -384,8 +384,8 @@ Registers an input device listener to receive notifications about when input dev
 
 | Parameters ||
 |---|---|
-| `listener` | [InputManager.InputDeviceListener](https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.InputDeviceListener)!: The listener to register. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
+| `listener` | [InputManager.InputDeviceListener](../android/hardware/input/InputManager.InputDeviceListener.md)!: The listener to register. |
+| `handler` | [Handler](../android/os/Handler.md)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
 
 **See Also**
 
@@ -433,7 +433,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 |---|---|
 | `vendorId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the vendor ID of the device |
 | `productId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the product ID of the device |
-| `trigger` | [CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger): the trigger of the customization to remove. This value cannot be `null`. |
+| `trigger` | [CustomizationTrigger](../android/hardware/input/CustomizationTrigger.md): the trigger of the customization to remove. This value cannot be `null`. |
 | --- | --- |
 
 ### unregisterInputDeviceListener
@@ -448,7 +448,7 @@ Unregisters an input device listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [InputManager.InputDeviceListener](https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.InputDeviceListener)!: The listener to unregister. |
+| `listener` | [InputManager.InputDeviceListener](../android/hardware/input/InputManager.InputDeviceListener.md)!: The listener to unregister. |
 
 **See Also**
 
@@ -466,7 +466,7 @@ Verify the details of an `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `event` | [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#): The `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` to check. This value cannot be `null`. |
+| `event` | [InputEvent](../android/view/InputEvent.md): The `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` to check. This value cannot be `null`. |
 
 | Return ||
 |---|---|

@@ -8,7 +8,7 @@ abstract class SelectorProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.channels.spi.SelectorProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#) |
+| ↳ | [java.nio.channels.spi.SelectorProvider](../java/nio/channels/spi/SelectorProvider.md) |
 
 Service-provider class for selectors and selectable channels.
 
@@ -26,16 +26,16 @@ All of the methods in this class are safe for use by multiple concurrent threads
 
 | Public methods ||
 |---|---|
-| open [Channel](https://developer.android.com/reference/kotlin/java/nio/channels/Channel.html#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#inheritedChannel()()` Returns the channel inherited from the entity that created this Java virtual machine. |
-| abstract [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel.html#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openDatagramChannel()()` Opens a datagram channel. |
-| abstract [DatagramChannel](https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel.html#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openDatagramChannel(java.net.ProtocolFamily)(family: https://developer.android.com/reference/kotlin/java/net/ProtocolFamily.html#!)` Opens a datagram channel. |
+| open [Channel](../java/nio/channels/Channel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#inheritedChannel()()` Returns the channel inherited from the entity that created this Java virtual machine. |
+| abstract [DatagramChannel](../java/nio/channels/DatagramChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openDatagramChannel()()` Opens a datagram channel. |
+| abstract [DatagramChannel](../java/nio/channels/DatagramChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openDatagramChannel(java.net.ProtocolFamily)(family: https://developer.android.com/reference/kotlin/java/net/ProtocolFamily.html#!)` Opens a datagram channel. |
 | --- | --- |
-| abstract [Pipe](https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.html#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openPipe()()` Opens a pipe. |
-| abstract [AbstractSelector](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openSelector()()` Opens a selector. |
-| abstract [ServerSocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel.html#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openServerSocketChannel()()` Opens a server-socket channel. |
+| abstract [Pipe](../java/nio/channels/Pipe.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openPipe()()` Opens a pipe. |
+| abstract [AbstractSelector](../java/nio/channels/spi/AbstractSelector.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openSelector()()` Opens a selector. |
+| abstract [ServerSocketChannel](../java/nio/channels/ServerSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openServerSocketChannel()()` Opens a server-socket channel. |
 | --- | --- |
-| abstract [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openSocketChannel()()` Opens a socket channel. |
-| open static [SelectorProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#provider()()` Returns the system-wide default selector provider for this invocation of the Java virtual machine. |
+| abstract [SocketChannel](../java/nio/channels/SocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openSocketChannel()()` Opens a socket channel. |
+| open static [SelectorProvider](../java/nio/channels/spi/SelectorProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#provider()()` Returns the system-wide default selector provider for this invocation of the Java virtual machine. |
 
 ## Protected constructors
 
@@ -116,7 +116,7 @@ Opens a datagram channel.
 
 | Parameters ||
 |---|---|
-| `family` | [ProtocolFamily](https://developer.android.com/reference/kotlin/java/net/ProtocolFamily.html#)!: The protocol family |
+| `family` | [ProtocolFamily](../java/net/ProtocolFamily.md)!: The protocol family |
 
 | Return ||
 |---|---|

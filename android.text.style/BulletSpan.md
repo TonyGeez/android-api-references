@@ -8,7 +8,7 @@ open class BulletSpan : LeadingMarginSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.style.BulletSpan](https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#) |
+| ↳ | [android.text.style.BulletSpan](../android/text/style/BulletSpan.md) |
 
 A span which styles paragraphs as bullet points (respecting layout direction).
 
@@ -101,7 +101,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/text/style/Bul
 
 | Parameters ||
 |---|---|
-| `src` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `src` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 
 ### BulletSpan
 
@@ -213,10 +213,10 @@ Renders the leading margin. This is called before the margin has been adjusted b
 | --- | --- |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end of the line |
 | `first` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if this is the first line of its paragraph |
-| `layout` | [Layout](https://developer.android.com/reference/kotlin/android/text/Layout.html#)?: This value may be `null`. |
+| `layout` | [Layout](../android/text/Layout.md)?: This value may be `null`. |
 | --- | --- |
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): This value cannot be `null`. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#): This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 
 ### getBulletRadius
 
@@ -317,5 +317,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |

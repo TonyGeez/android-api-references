@@ -8,7 +8,7 @@ class Objects
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Objects](https://developer.android.com/reference/kotlin/java/util/Objects#) |
+| ↳ | [java.util.Objects](../java/util/Objects.md) |
 
 This class consists of `static` utility methods for operating on objects, or checking certain conditions before operation. These utilities include `null`-safe or `null`-tolerant methods for computing the hash code of an object, returning a string for an object, comparing two objects, and checking if indexes or sub-range values are out of bounds.
 
@@ -277,7 +277,7 @@ Note that if one of the arguments is `null`, a `NullPointerException` may or may
 | `a` | T: an object |
 | `b` | T: an object to be compared with `a` |
 | --- | --- |
-| `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<in T\>: the `Comparator` to compare the first two arguments |
+| `c` | [Comparator](../java/util/Comparator.md)\<in T\>: the `Comparator` to compare the first two arguments |
 
 **See Also**
 
@@ -500,7 +500,7 @@ Unlike the method `https://developer.android.com/reference/kotlin/java/util/Obje
 |---|---|
 | `<T>` | the type of the reference |
 | `obj` | T?: the object reference to check for nullity |
-| `messageSupplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: supplier of the detail message to be used in the event that a `NullPointerException` is thrown |
+| `messageSupplier` | [Supplier](../java/util/function/Supplier.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: supplier of the detail message to be used in the event that a `NullPointerException` is thrown |
 | --- | --- |
 
 | Return ||
@@ -552,7 +552,7 @@ static fun <T : Any!> requireNonNullElseGet(
 |---|---|
 | `<T>` | the type of the first argument and return type |
 | `obj` | T?: an object |
-| `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier)\<out T\>: of a non-`null` object to return if the first argument is `null` |
+| `supplier` | [Supplier](../java/util/function/Supplier.md)\<out T\>: of a non-`null` object to return if the first argument is `null` |
 | --- | --- |
 
 | Exceptions ||

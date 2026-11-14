@@ -2,7 +2,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 
 # PhoneNumberManager
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/PhoneNumberManager "View this page in Java")
+Kotlin | [Java](../android/telephony/PhoneNumberManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class PhoneNumberManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.PhoneNumberManager](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager#) |
+| ↳ | [android.telephony.PhoneNumberManager](../android/telephony/PhoneNumberManager.md) |
 
 PhoneNumberManager provides APIs for parsing phone numbers from various sources, such as URIs.
 
@@ -19,7 +19,7 @@ PhoneNumberManager provides APIs for parsing phone numbers from various sources,
 
 | Public methods ||
 |---|---|
-| open [ParsedPhoneNumber](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber) | `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager#parsePhoneNumber(kotlin.collections.MutableList,%20kotlin.String)(associatedUris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>?, countryIso: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Parses the associated URIs into a `https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber` object. |
+| open [ParsedPhoneNumber](../android/telephony/ParsedPhoneNumber.md) | `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager#parsePhoneNumber(kotlin.collections.MutableList,%20kotlin.String)(associatedUris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>?, countryIso: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Parses the associated URIs into a `https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber` object. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ This method attempts to parse the provided list of URIs into a valid phone numbe
 
 | Parameters ||
 |---|---|
-| `associatedUris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>?: The list of URIs to be parsed. The order of the URIs in the list matters. The method iterates through the list and stops at the first URI that can be parsed into a valid phone number. It is recommended to place the URIs that are most likely to contain a valid phone number at the beginning of the list. This value may be `null`. |
+| `associatedUris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>?: The list of URIs to be parsed. The order of the URIs in the list matters. The method iterates through the list and stops at the first URI that can be parsed into a valid phone number. It is recommended to place the URIs that are most likely to contain a valid phone number at the beginning of the list. This value may be `null`. |
 | `countryIso` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The country ISO code to be used for parsing. This value cannot be `null`. |
 
 | Return ||

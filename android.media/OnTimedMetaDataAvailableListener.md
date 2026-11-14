@@ -4,14 +4,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # OnTimedMetaDataAvailableListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnTimedMetaDataAvailableListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaPlayer.OnTimedMetaDataAvailableListener.md) 
 | --- | --- |
 
 ```
 interface OnTimedMetaDataAvailableListener
 ```
 
-| [android.media.MediaPlayer.OnTimedMetaDataAvailableListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnTimedMetaDataAvailableListener#) |
+| [android.media.MediaPlayer.OnTimedMetaDataAvailableListener](../android/media/MediaPlayer.OnTimedMetaDataAvailableListener.md) |
 
 Interface definition of a callback to be invoked when a track has timed metadata available.
 
@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked when a track has timed metadata
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimedMetaDataAvailable](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnTimedMetaDataAvailableListener#onTimedMetaDataAvailable(android.media.MediaPlayer,%20android.media.TimedMetaData))`(`mp:` ` [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!`, `data:` ` [TimedMetaData](https://developer.android.com/reference/kotlin/android/media/TimedMetaData)!`)` Called to indicate avaliable timed metadata |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimedMetaDataAvailable](../android/media/MediaPlayer.OnTimedMetaDataAvailableListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `data:` ` [TimedMetaData](../android/media/TimedMetaData.md)!`)` Called to indicate avaliable timed metadata |
 
 ## Public methods
 
@@ -40,5 +40,5 @@ This method will be called as timed metadata is extracted from the media, in the
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the MediaPlayer associated with this callback |
-| `data` | [TimedMetaData](https://developer.android.com/reference/kotlin/android/media/TimedMetaData)!:the timed metadata sample associated with this event |
+| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer associated with this callback |
+| `data` | [TimedMetaData](../android/media/TimedMetaData.md)!:the timed metadata sample associated with this event |

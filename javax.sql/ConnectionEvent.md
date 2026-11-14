@@ -10,8 +10,8 @@ open class ConnectionEvent : EventObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
-| | ↳ | [javax.sql.ConnectionEvent](https://developer.android.com/reference/kotlin/javax/sql/ConnectionEvent#) |
+| ↳ | [java.util.EventObject](../java/util/EventObject.md) ||
+| | ↳ | [javax.sql.ConnectionEvent](../javax/sql/ConnectionEvent.md) |
 
 An`Event`object that provides information about the source of a connection-related event.`ConnectionEvent`objects are generated when an application closes a pooled connection and when an error occurs. The`ConnectionEvent`object contains two kinds of information:
 
@@ -22,20 +22,20 @@ An`Event`object that provides information about the source of a connection-relat
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConnectionEvent](https://developer.android.com/reference/kotlin/javax/sql/ConnectionEvent#ConnectionEvent(javax.sql.PooledConnection))`(`con:` ` [PooledConnection](https://developer.android.com/reference/kotlin/javax/sql/PooledConnection)!`)` Constructs a`ConnectionEvent`object initialized with the given`PooledConnection`object. |
-| [ConnectionEvent](https://developer.android.com/reference/kotlin/javax/sql/ConnectionEvent#ConnectionEvent(javax.sql.PooledConnection,%20java.sql.SQLException))`(`con:` ` [PooledConnection](https://developer.android.com/reference/kotlin/javax/sql/PooledConnection)!`, `ex:` ` [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException.html#)!`)` Constructs a`ConnectionEvent`object initialized with the given`PooledConnection`object and`SQLException`object. |
+| [ConnectionEvent](../javax/sql/ConnectionEvent.md))`(`con:` ` [PooledConnection](../javax/sql/PooledConnection.md)!`)` Constructs a`ConnectionEvent`object initialized with the given`PooledConnection`object. |
+| [ConnectionEvent](../javax/sql/ConnectionEvent.md))`(`con:` ` [PooledConnection](../javax/sql/PooledConnection.md)!`, `ex:` ` [SQLException](../java/sql/SQLException.md)!`)` Constructs a`ConnectionEvent`object initialized with the given`PooledConnection`object and`SQLException`object. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException.html#)! | [getSQLException](https://developer.android.com/reference/kotlin/javax/sql/ConnectionEvent#getSQLException())`()` Retrieves the`SQLException`for this`ConnectionEvent`object. |
+| open [SQLException](../java/sql/SQLException.md)! | [getSQLException](../javax/sql/ConnectionEvent.md))`()` Retrieves the`SQLException`for this`ConnectionEvent`object. |
 
 | Inherited functions ||
 |---|---|
-| From class [EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](https://developer.android.com/reference/kotlin/java/util/EventObject.html#getSource())`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/EventObject.html#toString())`()` <br /> Returns a String representation of this EventObject. <br /> | ||
+| From class [EventObject](../java/util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java/util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](https://developer.android.com/reference/kotlin/java/util/EventObject.html#source:kotlin.Any) <br /> The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java/util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
 
 ## Public constructors
 
@@ -51,7 +51,7 @@ Constructs a`ConnectionEvent`object initialized with the given`PooledConnection`
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `con` | [PooledConnection](https://developer.android.com/reference/kotlin/javax/sql/PooledConnection)!:the pooled connection that is the source of the event |
+| `con` | [PooledConnection](../javax/sql/PooledConnection.md)!:the pooled connection that is the source of the event |
 
 | Exceptions ||
 |--------------------------------------|-----------------|
@@ -71,8 +71,8 @@ Constructs a`ConnectionEvent`object initialized with the given`PooledConnection`
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `con` | [PooledConnection](https://developer.android.com/reference/kotlin/javax/sql/PooledConnection)!:the pooled connection that is the source of the event |
-| `ex` | [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException.html#)!:the SQLException about to be thrown to the application |
+| `con` | [PooledConnection](../javax/sql/PooledConnection.md)!:the pooled connection that is the source of the event |
+| `ex` | [SQLException](../java/sql/SQLException.md)!:the SQLException about to be thrown to the application |
 
 | Exceptions ||
 |--------------------------------------|-----------------|
@@ -92,4 +92,4 @@ Retrieves the`SQLException`for this`ConnectionEvent`object. May be`null`.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|----------------------------------------------|
-| [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException.html#)! | the SQLException about to be thrown or`null` |
+| [SQLException](../java/sql/SQLException.md)! | the SQLException about to be thrown or`null` |

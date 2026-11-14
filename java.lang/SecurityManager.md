@@ -10,81 +10,81 @@ open class SecurityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#) |
+| ↳ | [java.lang.SecurityManager](../java/lang/SecurityManager.md) |
 
 Legacy security code; do not use.
 
-Security managers do*not* provide a secure environment for executing untrusted code and are unsupported on Android. Untrusted code cannot be safely isolated within a single VM on Android. Application developers can assume that there's no SecurityManager installed, i.e. [java.lang.System#getSecurityManager()](https://developer.android.com/reference/kotlin/java/lang/System#getSecurityManager())will return null.
+Security managers do*not* provide a secure environment for executing untrusted code and are unsupported on Android. Untrusted code cannot be safely isolated within a single VM on Android. Application developers can assume that there's no SecurityManager installed, i.e. [java.lang.System#getSecurityManager()](../java/lang/System.md))will return null.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------|---|
-| [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#SecurityManager())`()` <br /> |
+| [SecurityManager](../java/lang/SecurityManager.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccept](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkAccept(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkAccess(java.lang.Thread))`(`t:` ` [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkAccess(java.lang.ThreadGroup))`(`g:` ` [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccept](../java/lang/SecurityManager.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](../java/lang/SecurityManager.md))`(`t:` ` [Thread](../java/lang/Thread.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](../java/lang/SecurityManager.md))`(`g:` ` [ThreadGroup](../java/lang/ThreadGroup.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAwtEventQueueAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkAwtEventQueueAccess())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkConnect](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkConnect(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkConnect](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkConnect(kotlin.String,%20kotlin.Int,%20kotlin.Any))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAwtEventQueueAccess](../java/lang/SecurityManager.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkConnect](../java/lang/SecurityManager.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkConnect](../java/lang/SecurityManager.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkCreateClassLoader](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkCreateClassLoader())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkDelete](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkDelete(kotlin.String))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkExec](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExec(kotlin.String))`(`cmd:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkCreateClassLoader](../java/lang/SecurityManager.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkDelete](../java/lang/SecurityManager.md))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkExec](../java/lang/SecurityManager.md))`(`cmd:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkExit](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExit(kotlin.Int))`(`status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkLink](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkLink(kotlin.String))`(`lib:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkListen](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkListen(kotlin.Int))`(`port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkExit](../java/lang/SecurityManager.md))`(`status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkLink](../java/lang/SecurityManager.md))`(`lib:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkListen](../java/lang/SecurityManager.md))`(`port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkMemberAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkMemberAccess(java.lang.Class,%20kotlin.Int))`(`clazz:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>!`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkMulticast](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkMulticast(java.net.InetAddress))`(`maddr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkMulticast](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkMulticast(java.net.InetAddress,%20kotlin.Byte))`(`maddr:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `ttl:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkMemberAccess](../java/lang/SecurityManager.md))`(`clazz:` ` [Class](../java/lang/Class.md)<*>!`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkMulticast](../java/lang/SecurityManager.md))`(`maddr:` ` [InetAddress](../java/net/InetAddress.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkMulticast](../java/lang/SecurityManager.md))`(`maddr:` ` [InetAddress](../java/net/InetAddress.md)!`, `ttl:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPackageAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPackageDefinition](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageDefinition(kotlin.String))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPermission](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPermission(java.security.Permission))`(`perm:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPackageAccess](../java/lang/SecurityManager.md))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPackageDefinition](../java/lang/SecurityManager.md))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPermission](../java/lang/SecurityManager.md))`(`perm:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPermission](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPermission(java.security.Permission,%20kotlin.Any))`(`perm:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#)!`, `context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPrintJobAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPrintJobAccess())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPropertiesAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPropertiesAccess())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPermission](../java/lang/SecurityManager.md))`(`perm:` ` [Permission](../java/security/Permission.md)!`, `context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPrintJobAccess](../java/lang/SecurityManager.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPropertiesAccess](../java/lang/SecurityManager.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPropertyAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPropertyAccess(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkRead(java.io.FileDescriptor))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkRead(kotlin.String))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPropertyAccess](../java/lang/SecurityManager.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkRead](../java/lang/SecurityManager.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkRead](../java/lang/SecurityManager.md))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkRead](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkRead(kotlin.String,%20kotlin.Any))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkSecurityAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkSecurityAccess(kotlin.String))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkSetFactory](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkSetFactory())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkRead](../java/lang/SecurityManager.md))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkSecurityAccess](../java/lang/SecurityManager.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkSetFactory](../java/lang/SecurityManager.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkSystemClipboardAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkSystemClipboardAccess())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [checkTopLevelWindow](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkTopLevelWindow(kotlin.Any))`(`window:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkWrite(java.io.FileDescriptor))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkSystemClipboardAccess](../java/lang/SecurityManager.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [checkTopLevelWindow](../java/lang/SecurityManager.md))`(`window:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkWrite](../java/lang/SecurityManager.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkWrite](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkWrite(kotlin.String))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getInCheck](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getInCheck())`()` <br /> |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSecurityContext](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getSecurityContext())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkWrite](../java/lang/SecurityManager.md))`(`file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getInCheck](../java/lang/SecurityManager.md))`()` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSecurityContext](../java/lang/SecurityManager.md))`()` <br /> |
 | --- | --- |
-| open [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)! | [getThreadGroup](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getThreadGroup())`()` Returns the current thread's thread group. |
+| open [ThreadGroup](../java/lang/ThreadGroup.md)! | [getThreadGroup](../java/lang/SecurityManager.md))`()` Returns the current thread's thread group. |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classDepth](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#classDepth(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classLoaderDepth](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#classLoaderDepth())`()` <br /> |
-| open [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader)! | [currentClassLoader](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#currentClassLoader())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classDepth](../java/lang/SecurityManager.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classLoaderDepth](../java/lang/SecurityManager.md))`()` <br /> |
+| open [ClassLoader](../java/lang/ClassLoader.md)! | [currentClassLoader](../java/lang/SecurityManager.md))`()` <br /> |
 | --- | --- |
-| open [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [currentLoadedClass](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#currentLoadedClass())`()` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>! | [getClassContext](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getClassContext())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inClass](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#inClass(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Class](../java/lang/Class.md)\<\*\>! | [currentLoadedClass](../java/lang/SecurityManager.md))`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>! | [getClassContext](../java/lang/SecurityManager.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inClass](../java/lang/SecurityManager.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inClassLoader](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#inClassLoader())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inClassLoader](../java/lang/SecurityManager.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inCheck](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#inCheck:kotlin.Boolean) <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inCheck](../java/lang/SecurityManager.md) <br /> |
 
 ## Public constructors
 
@@ -238,7 +238,7 @@ open fun checkMulticast(
 ): Unit
 ```
 
-**Deprecated:** *use [checkMulticast(java.net.InetAddress)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkMulticast(java.net.InetAddress))instead.* 
+**Deprecated:** *use [checkMulticast(java.net.InetAddress)](../java/lang/SecurityManager.md))instead.* 
 
 ### checkPackageAccess
 

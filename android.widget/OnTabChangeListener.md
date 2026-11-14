@@ -5,14 +5,14 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # OnTabChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/TabHost.OnTabChangeListener "View this page in Java") 
+Kotlin| [Java](../android/widget/TabHost.OnTabChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnTabChangeListener
 ```
 
-| [android.widget.TabHost.OnTabChangeListener](https://developer.android.com/reference/kotlin/android/widget/TabHost.OnTabChangeListener#) |
+| [android.widget.TabHost.OnTabChangeListener](../android/widget/TabHost.OnTabChangeListener.md) |
 
 | **This interface was deprecated in API level 30.**
 |
@@ -24,7 +24,7 @@ Interface definition for a callback to be invoked when tab changed
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabChanged](https://developer.android.com/reference/kotlin/android/widget/TabHost.OnTabChangeListener#onTabChanged(kotlin.String))`(`tabId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabChanged](../android/widget/TabHost.OnTabChangeListener.md))`(`tabId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public methods
 

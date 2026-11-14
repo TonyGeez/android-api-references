@@ -5,21 +5,21 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 
 # OrganizationColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.OrganizationColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/Contacts.OrganizationColumns.md) 
 | --- | --- |
 
 ```
 interface OrganizationColumns
 ```
 
-| [android.provider.Contacts.OrganizationColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#) |
+| [android.provider.Contacts.OrganizationColumns](../android/provider/Contacts.OrganizationColumns.md) |
 
-| Known Direct Subclasses [Contacts.Organizations](https://developer.android.com/reference/kotlin/android/provider/Contacts.Organizations) |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------| | [Contacts.Organizations](https://developer.android.com/reference/kotlin/android/provider/Contacts.Organizations) | A sub directory of a single person that contains all of their Phones. | |
+| Known Direct Subclasses [Contacts.Organizations](../android/provider/Contacts.Organizations.md) |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------| | [Contacts.Organizations](../android/provider/Contacts.Organizations.md) | A sub directory of a single person that contains all of their Phones. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)
+| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
 
 Columns from the Organizations table that other columns join into themselves.
 
@@ -27,17 +27,17 @@ Columns from the Organizations table that other columns join into themselves.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COMPANY](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#COMPANY:kotlin.String) The name of the company for this organization. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ISPRIMARY](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#ISPRIMARY:kotlin.String) Whether this is the primary organization |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#LABEL:kotlin.String) The user provided label, only used if TYPE is TYPE_CUSTOM. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COMPANY](../android/provider/Contacts.OrganizationColumns.md) The name of the company for this organization. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ISPRIMARY](../android/provider/Contacts.OrganizationColumns.md) Whether this is the primary organization |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](../android/provider/Contacts.OrganizationColumns.md) The user provided label, only used if TYPE is TYPE_CUSTOM. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PERSON_ID](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#PERSON_ID:kotlin.String) The person this organization is tied to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TITLE](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#TITLE:kotlin.String) The title within this organization. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#TYPE:kotlin.String) The type of the organizations. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PERSON_ID](../android/provider/Contacts.OrganizationColumns.md) The person this organization is tied to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TITLE](../android/provider/Contacts.OrganizationColumns.md) The title within this organization. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](../android/provider/Contacts.OrganizationColumns.md) The type of the organizations. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUSTOM](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#TYPE_CUSTOM:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#TYPE_OTHER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WORK](https://developer.android.com/reference/kotlin/android/provider/Contacts.OrganizationColumns#TYPE_WORK:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUSTOM](../android/provider/Contacts.OrganizationColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](../android/provider/Contacts.OrganizationColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WORK](../android/provider/Contacts.OrganizationColumns.md) <br /> |
 | --- | --- |
 
 ## Constants
@@ -50,7 +50,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val COMPANY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The name of the company for this organization.
 
@@ -66,7 +66,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ISPRIMARY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Whether this is the primary organization
 
@@ -82,7 +82,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LABEL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The user provided label, only used if TYPE is TYPE_CUSTOM.
 
@@ -98,7 +98,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PERSON_ID: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The person this organization is tied to.
 
@@ -114,7 +114,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TITLE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The title within this organization.
 
@@ -130,7 +130,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The type of the organizations.
 
@@ -146,7 +146,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_CUSTOM: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 0
 
@@ -158,7 +158,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_OTHER: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 2
 
@@ -170,6 +170,6 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_WORK: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 1

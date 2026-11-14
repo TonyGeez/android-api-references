@@ -8,7 +8,7 @@ class ApplicationStartInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.ApplicationStartInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#) |
+| ↳ | [android.app.ApplicationStartInfo](../android/app/ApplicationStartInfo.md) |
 
 Describes information related to an application process's startup.
 
@@ -93,7 +93,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getDefiningUid()()` Return the defining kernel user identifier, maybe different from `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()` and `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()`, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to ` true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider. |
 | --- | --- |
-| [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getIntent()()` The intent used to launch the application. |
+| [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getIntent()()` The intent used to launch the application. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getLaunchMode()()` An instruction on how the activity should be launched. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()()` Similar to `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()`, it's the kernel user identifier that is assigned at the package installation time. |
 | --- | --- |
@@ -114,7 +114,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ApplicationStartInfo](https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#)!\> | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationStartInfo](../android/app/ApplicationStartInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -884,7 +884,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

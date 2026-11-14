@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # NumberRangeFormatter
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/number/NumberRangeFormatter "View this page in Java") 
+Kotlin| [Java](../android/icu/number/NumberRangeFormatter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class NumberRangeFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.NumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#) |
+| ↳ | [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md) |
 
 The main entrypoint to the formatting of ranges of numbers, including currencies and other units of measurement.
 
@@ -37,16 +37,16 @@ Like NumberFormatter, NumberRangeFormatter instances (i.e., LocalizedNumberRange
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [RangeCollapse](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeCollapse) Defines how to merge fields that are identical across the range sign. |
-| | [RangeIdentityFallback](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeIdentityFallback) Defines the behavior when the two numbers in the range are identical after rounding. |
-| | [RangeIdentityResult](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter.RangeIdentityResult) Used in the result class FormattedNumberRange to indicate to the user whether the numbers formatted in the range were equal or not, and whether or not the identity fallback was applied. |
+| | [RangeCollapse](../android/icu/number/NumberRangeFormatter.RangeCollapse.md) Defines how to merge fields that are identical across the range sign. |
+| | [RangeIdentityFallback](../android/icu/number/NumberRangeFormatter.RangeIdentityFallback.md) Defines the behavior when the two numbers in the range are identical after rounding. |
+| | [RangeIdentityResult](../android/icu/number/NumberRangeFormatter.RangeIdentityResult.md) Used in the result class FormattedNumberRange to indicate to the user whether the numbers formatted in the range were equal or not, and whether or not the identity fallback was applied. |
 | --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter)! | [with](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#with())`()` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is not currently known at the call site. |
-| openstatic [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter)! | [withLocale](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#withLocale(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
-| openstatic [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter)! | [withLocale](https://developer.android.com/reference/kotlin/android/icu/number/NumberRangeFormatter#withLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
+| openstatic [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md)! | [with](../android/icu/number/NumberRangeFormatter.md))`()` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is not currently known at the call site. |
+| openstatic [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | [withLocale](../android/icu/number/NumberRangeFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
+| openstatic [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | [withLocale](../android/icu/number/NumberRangeFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
 | --- | --- |
 
 ## Public methods
@@ -63,7 +63,7 @@ Call this method at the beginning of a NumberRangeFormatter fluent chain in whic
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter)! | An [UnlocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberRangeFormatter), to be used for chaining. |
+| [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md)! | An [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md), to be used for chaining. |
 
 ### withLocale
 
@@ -77,11 +77,11 @@ Call this method at the beginning of a NumberRangeFormatter fluent chain in whic
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:The locale from which to load formats and symbols for number range formatting. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The locale from which to load formats and symbols for number range formatting. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter)! | A [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter), to be used for chaining. |
+| [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | A [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md), to be used for chaining. |
 
 ### withLocale
 
@@ -95,8 +95,8 @@ Call this method at the beginning of a NumberRangeFormatter fluent chain in whic
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:The locale from which to load formats and symbols for number range formatting. |
+| `locale` | [Locale](../java/util/Locale.md)!:The locale from which to load formats and symbols for number range formatting. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter)! | A [LocalizedNumberRangeFormatter](https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberRangeFormatter), to be used for chaining. |
+| [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | A [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md), to be used for chaining. |

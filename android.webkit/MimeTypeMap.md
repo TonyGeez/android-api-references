@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MimeTypeMap
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/MimeTypeMap "View this page in Java") 
+Kotlin| [Java](../android/webkit/MimeTypeMap.md) 
 | --- | --- |
 
 ```
@@ -13,23 +13,23 @@ open class MimeTypeMap
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.MimeTypeMap](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#) |
+| ↳ | [android.webkit.MimeTypeMap](../android/webkit/MimeTypeMap.md) |
 
 Two-way map that maps MIME-types to file extensions and vice versa.
 
-See also [java.net.URLConnection#guessContentTypeFromName](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#guessContentTypeFromName(kotlin.String))and [java.net.URLConnection#guessContentTypeFromStream](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream)). This class and`URLConnection`share the same MIME-type database.
+See also [java.net.URLConnection#guessContentTypeFromName](../java/net/URLConnection.md))and [java.net.URLConnection#guessContentTypeFromStream](../java/net/URLConnection.md)). This class and`URLConnection`share the same MIME-type database.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getExtensionFromMimeType](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getExtensionFromMimeType(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the registered extension for the given MIME type. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFileExtensionFromUrl](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getFileExtensionFromUrl(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the file extension or an empty string if there is no extension. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMimeTypeFromExtension](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getMimeTypeFromExtension(kotlin.String))`(`extension:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the MIME type for the given extension. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getExtensionFromMimeType](../android/webkit/MimeTypeMap.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the registered extension for the given MIME type. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFileExtensionFromUrl](../android/webkit/MimeTypeMap.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the file extension or an empty string if there is no extension. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMimeTypeFromExtension](../android/webkit/MimeTypeMap.md))`(`extension:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the MIME type for the given extension. |
 | --- | --- |
-| openstatic [MimeTypeMap](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#)! | [getSingleton](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#getSingleton())`()` Get the singleton instance of MimeTypeMap. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasExtension](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#hasExtension(kotlin.String))`(`extension:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return`true`if the given extension has a registered MIME type. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMimeType](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#hasMimeType(kotlin.String))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return`true`if the given MIME type has an entry in the map. |
+| openstatic [MimeTypeMap](../android/webkit/MimeTypeMap.md)! | [getSingleton](../android/webkit/MimeTypeMap.md))`()` Get the singleton instance of MimeTypeMap. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasExtension](../android/webkit/MimeTypeMap.md))`(`extension:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return`true`if the given extension has a registered MIME type. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMimeType](../android/webkit/MimeTypeMap.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return`true`if the given MIME type has an entry in the map. |
 | --- | --- |
 
 ## Public methods
@@ -100,7 +100,7 @@ Get the singleton instance of MimeTypeMap.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------|
-| [MimeTypeMap](https://developer.android.com/reference/kotlin/android/webkit/MimeTypeMap#)! | The singleton instance of the MIME-type map. |
+| [MimeTypeMap](../android/webkit/MimeTypeMap.md)! | The singleton instance of the MIME-type map. |
 
 ### hasExtension
 

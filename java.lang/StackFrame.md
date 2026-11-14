@@ -6,29 +6,29 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 interface StackFrame
 ```
 
-| [java.lang.StackWalker.StackFrame](https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#) |
+| [java.lang.StackWalker.StackFrame](../java/lang/StackWalker.StackFrame.md) |
 
 A `StackFrame` object represents a method invocation returned by `https://developer.android.com/reference/kotlin/java/lang/StackWalker`.
 
-The `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getDeclaringClass()` method may be unsupported as determined by the [stack walking options](https://developer.android.com/reference/kotlin/java/lang/StackWalker.Option) of a [stack walker](https://developer.android.com/reference/kotlin/java/lang/StackWalker).
+The `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getDeclaringClass()` method may be unsupported as determined by the [stack walking options](../java/lang/StackWalker.Option.md) of a [stack walker](../java/lang/StackWalker.md).
 
 ## Summary
 
 | Public methods ||
 |---|---|
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getByteCodeIndex()()` Returns the index to the `insns` array of a `code_item` containing the execution point represented by this stack frame. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getClassName()()` Gets the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the declaring class of the method represented by this stack frame. |
-| abstract [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getDeclaringClass()()` Gets the declaring `Class` for the method represented by this stack frame. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getClassName()()` Gets the [binary name](../java/lang/ClassLoader.md) of the declaring class of the method represented by this stack frame. |
+| abstract [Class](../java/lang/Class.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getDeclaringClass()()` Gets the declaring `Class` for the method represented by this stack frame. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getDescriptor()()` Returns the *descriptor* of the method represented by this stack frame as defined by The Java Virtual Machine Specification. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getFileName()()` Returns the name of the source file containing the execution point represented by this stack frame. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getLineNumber()()` Returns the line number of the source line containing the execution point represented by this stack frame. |
 | --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getMethodName()()` Gets the name of the method represented by this stack frame. |
-| open [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getMethodType()()` Returns the `https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType` representing the parameter types and the return type for the method represented by this stack frame. |
+| open [MethodType](../java/lang/invoke/MethodType.md)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#getMethodType()()` Returns the `https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType` representing the parameter types and the return type for the method represented by this stack frame. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#isNativeMethod()()` Returns `true` if the method containing the execution point represented by this stack frame is a native method. |
 | --- | --- |
-| abstract [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#toStackTraceElement()()` Gets a `StackTraceElement` for this stack frame. |
+| abstract [StackTraceElement](../java/lang/StackTraceElement.md)! | `https://developer.android.com/reference/kotlin/java/lang/StackWalker.StackFrame#toStackTraceElement()()` Gets a `StackTraceElement` for this stack frame. |
 
 ## Public methods
 
@@ -54,7 +54,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getClassName(): String!
 ```
 
-Gets the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the declaring class of the method represented by this stack frame.
+Gets the [binary name](../java/lang/ClassLoader.md) of the declaring class of the method represented by this stack frame.
 
 | Return ||
 |---|---|

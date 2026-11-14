@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # FilterQueryProvider
 
-Kotlin | [Java](https://developer.android.com/reference/android/widget/FilterQueryProvider "View this page in Java") 
+Kotlin | [Java](../android/widget/FilterQueryProvider.md) 
 | --- | --- |
 
 ```
 interface FilterQueryProvider
 ```
 
-| [android.widget.FilterQueryProvider](https://developer.android.com/reference/kotlin/android/widget/FilterQueryProvider#) |
+| [android.widget.FilterQueryProvider](../android/widget/FilterQueryProvider.md) |
 
 This class can be used by external clients of CursorAdapter and CursorTreeAdapter to define how the content of the adapter should be filtered.
 
@@ -19,7 +19,7 @@ This class can be used by external clients of CursorAdapter and CursorTreeAdapte
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [runQuery](https://developer.android.com/reference/kotlin/android/widget/FilterQueryProvider#runQuery(kotlin.CharSequence))`(`constraint:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Runs a query with the specified constraint. |
+| abstract [Cursor](../android/database/Cursor.md)! | [runQuery](../android/widget/FilterQueryProvider.md))`(`constraint:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Runs a query with the specified constraint. |
 
 ## Public methods
 
@@ -39,4 +39,4 @@ Runs a query with the specified constraint. This query is requested by the filte
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | a Cursor representing the results of the new query |
+| [Cursor](../android/database/Cursor.md)! | a Cursor representing the results of the new query |

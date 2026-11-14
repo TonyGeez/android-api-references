@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # CivicLocationKeys
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/rtt/CivicLocationKeys "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/rtt/CivicLocationKeys.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class CivicLocationKeys
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.CivicLocationKeys](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#) |
+| ↳ | [android.net.wifi.rtt.CivicLocationKeys](../android/net/wifi/rtt/CivicLocationKeys.md) |
 
 Civic Address key types used to define address elements.
 
@@ -23,48 +23,48 @@ These keys can be used with`ResponderLocation.toCivicLocationSparseArray()`to lo
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADDITIONAL_CODE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#ADDITIONAL_CODE:kotlin.Int) Additional Code key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APT](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#APT:kotlin.Int) Apartment or suite key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOROUGH](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#BOROUGH:kotlin.Int) Category label A4 key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADDITIONAL_CODE](../android/net/wifi/rtt/CivicLocationKeys.md) Additional Code key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APT](../android/net/wifi/rtt/CivicLocationKeys.md) Apartment or suite key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOROUGH](../android/net/wifi/rtt/CivicLocationKeys.md) Category label A4 key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BRANCH_ROAD_NAME](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#BRANCH_ROAD_NAME:kotlin.Int) Branch Rd Name key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUILDING](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#BUILDING:kotlin.Int) Building key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CITY](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#CITY:kotlin.Int) Category label A3 key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BRANCH_ROAD_NAME](../android/net/wifi/rtt/CivicLocationKeys.md) Branch Rd Name key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUILDING](../android/net/wifi/rtt/CivicLocationKeys.md) Building key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CITY](../android/net/wifi/rtt/CivicLocationKeys.md) Category label A3 key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COUNTY](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#COUNTY:kotlin.Int) Category label A2 key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DESK](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#DESK:kotlin.Int) Seat, desk, pole, or cubical key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLOOR](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#FLOOR:kotlin.Int) Floor key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COUNTY](../android/net/wifi/rtt/CivicLocationKeys.md) Category label A2 key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DESK](../android/net/wifi/rtt/CivicLocationKeys.md) Seat, desk, pole, or cubical key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLOOR](../android/net/wifi/rtt/CivicLocationKeys.md) Floor key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GROUP_OF_STREETS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#GROUP_OF_STREETS:kotlin.Int) Category label A6 key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HNO](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#HNO:kotlin.Int) House Number key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HNS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#HNS:kotlin.Int) House number suffix key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GROUP_OF_STREETS](../android/net/wifi/rtt/CivicLocationKeys.md) Category label A6 key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HNO](../android/net/wifi/rtt/CivicLocationKeys.md) House Number key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HNS](../android/net/wifi/rtt/CivicLocationKeys.md) House number suffix key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LANGUAGE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#LANGUAGE:kotlin.Int) Language key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LMK](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#LMK:kotlin.Int) Landmark or vanity address key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOC](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#LOC:kotlin.Int) Additional Location info key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LANGUAGE](../android/net/wifi/rtt/CivicLocationKeys.md) Language key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LMK](../android/net/wifi/rtt/CivicLocationKeys.md) Landmark or vanity address key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOC](../android/net/wifi/rtt/CivicLocationKeys.md) Additional Location info key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAM](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#NAM:kotlin.Int) Name of residence key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEIGHBORHOOD](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#NEIGHBORHOOD:kotlin.Int) Category label A5 key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PCN](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#PCN:kotlin.Int) Postal community name key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAM](../android/net/wifi/rtt/CivicLocationKeys.md) Name of residence key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEIGHBORHOOD](../android/net/wifi/rtt/CivicLocationKeys.md) Category label A5 key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PCN](../android/net/wifi/rtt/CivicLocationKeys.md) Postal community name key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POD](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#POD:kotlin.Int) Trailing street suffix key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSTAL_CODE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#POSTAL_CODE:kotlin.Int) Postal or ZIP code key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PO_BOX](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#PO_BOX:kotlin.Int) Post Office Box key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POD](../android/net/wifi/rtt/CivicLocationKeys.md) Trailing street suffix key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSTAL_CODE](../android/net/wifi/rtt/CivicLocationKeys.md) Postal or ZIP code key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PO_BOX](../android/net/wifi/rtt/CivicLocationKeys.md) Post Office Box key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRD](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#PRD:kotlin.Int) Leading Street direction key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIMARY_ROAD_NAME](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#PRIMARY_ROAD_NAME:kotlin.Int) Primary road name key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROAD_SECTION](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#ROAD_SECTION:kotlin.Int) Road Section key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRD](../android/net/wifi/rtt/CivicLocationKeys.md) Leading Street direction key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIMARY_ROAD_NAME](../android/net/wifi/rtt/CivicLocationKeys.md) Primary road name key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROAD_SECTION](../android/net/wifi/rtt/CivicLocationKeys.md) Road Section key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROOM](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#ROOM:kotlin.Int) Room key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCRIPT](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#SCRIPT:kotlin.Int) Script key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#STATE:kotlin.Int) Category label A1 key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROOM](../android/net/wifi/rtt/CivicLocationKeys.md) Room key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCRIPT](../android/net/wifi/rtt/CivicLocationKeys.md) Script key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE](../android/net/wifi/rtt/CivicLocationKeys.md) Category label A1 key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREET_NAME_POST_MODIFIER](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#STREET_NAME_POST_MODIFIER:kotlin.Int) Postmodifier key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREET_NAME_PRE_MODIFIER](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#STREET_NAME_PRE_MODIFIER:kotlin.Int) Premodifier key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#STS:kotlin.Int) Street suffix or Type key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREET_NAME_POST_MODIFIER](../android/net/wifi/rtt/CivicLocationKeys.md) Postmodifier key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREET_NAME_PRE_MODIFIER](../android/net/wifi/rtt/CivicLocationKeys.md) Premodifier key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STS](../android/net/wifi/rtt/CivicLocationKeys.md) Street suffix or Type key e. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUBBRANCH_ROAD_NAME](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#SUBBRANCH_ROAD_NAME:kotlin.Int) Subbranch Rd Name key e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OF_PLACE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/CivicLocationKeys#TYPE_OF_PLACE:kotlin.Int) Type of place key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUBBRANCH_ROAD_NAME](../android/net/wifi/rtt/CivicLocationKeys.md) Subbranch Rd Name key e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OF_PLACE](../android/net/wifi/rtt/CivicLocationKeys.md) Type of place key e. |
 
 ## Constants
 

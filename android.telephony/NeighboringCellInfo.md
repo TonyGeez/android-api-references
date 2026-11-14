@@ -5,7 +5,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # NeighboringCellInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/NeighboringCellInfo "View this page in Java") 
+Kotlin| [Java](../android/telephony/NeighboringCellInfo.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class NeighboringCellInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#) |
+| ↳ | [android.telephony.NeighboringCellInfo](../android/telephony/NeighboringCellInfo.md) |
 
 | **This class was deprecated in API level 29.**
 |
-| This class should not be used by any app targeting [Android Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int) or higher. Instead callers should use [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo).
+| This class should not be used by any app targeting [Android Q](../android/os/Build.VERSION_CODES.md) or higher. Instead callers should use [CellInfo](../android/telephony/CellInfo.md).
 
 Represents the neighboring cell information, including Received Signal Strength and Cell ID location.
 
@@ -26,39 +26,39 @@ Represents the neighboring cell information, including Received Signal Strength 
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_CID](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#UNKNOWN_CID:kotlin.Int) Cell location is not available |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_RSSI](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#UNKNOWN_RSSI:kotlin.Int) Signal strength is not available |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_CID](../android/telephony/NeighboringCellInfo.md) Cell location is not available |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_RSSI](../android/telephony/NeighboringCellInfo.md) Signal strength is not available |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo())`()` Empty constructor. |
-| [NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo(android.os.Parcel))`(`in:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` Initialize the object from a parcel. |
-| [NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo(kotlin.Int,%20kotlin.Int))`(`rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initialize the object from rssi and cid. |
-| [NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo(kotlin.Int,%20kotlin.String,%20kotlin.Int))`(`rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `location:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radioType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initialize the object from rssi, location string, and radioType radioType is one of following [TelephonyManager.NETWORK_TYPE_GPRS](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_GPRS:kotlin.Int), [TelephonyManager.NETWORK_TYPE_EDGE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_EDGE:kotlin.Int), [TelephonyManager.NETWORK_TYPE_UMTS](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_UMTS:kotlin.Int), [TelephonyManager.NETWORK_TYPE_HSDPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSDPA:kotlin.Int), [TelephonyManager.NETWORK_TYPE_HSUPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSUPA:kotlin.Int), and [TelephonyManager.NETWORK_TYPE_HSPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSPA:kotlin.Int). |
+| [NeighboringCellInfo](../android/telephony/NeighboringCellInfo.md))`()` Empty constructor. |
+| [NeighboringCellInfo](../android/telephony/NeighboringCellInfo.md))`(`in:` ` [Parcel](../android/os/Parcel.md)!`)` Initialize the object from a parcel. |
+| [NeighboringCellInfo](../android/telephony/NeighboringCellInfo.md))`(`rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initialize the object from rssi and cid. |
+| [NeighboringCellInfo](../android/telephony/NeighboringCellInfo.md))`(`rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `location:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radioType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initialize the object from rssi, location string, and radioType radioType is one of following [TelephonyManager.NETWORK_TYPE_GPRS](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_EDGE](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_UMTS](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_HSDPA](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_HSUPA](../android/telephony/TelephonyManager.md), and [TelephonyManager.NETWORK_TYPE_HSPA](../android/telephony/TelephonyManager.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#describeContents())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCid](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getCid())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLac](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getLac())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/NeighboringCellInfo.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCid](../android/telephony/NeighboringCellInfo.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLac](../android/telephony/NeighboringCellInfo.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getNetworkType())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPsc](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getPsc())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getRssi())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](../android/telephony/NeighboringCellInfo.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPsc](../android/telephony/NeighboringCellInfo.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](../android/telephony/NeighboringCellInfo.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCid](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#setCid(kotlin.Int))`(`cid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell id. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRssi](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#setRssi(kotlin.Int))`(`rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the signal strength of the cell. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#toString())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCid](../android/telephony/NeighboringCellInfo.md))`(`cid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell id. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRssi](../android/telephony/NeighboringCellInfo.md))`(`rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the signal strength of the cell. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/NeighboringCellInfo.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/NeighboringCellInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NeighboringCellInfo](../android/telephony/NeighboringCellInfo.md)!\> | [CREATOR](../android/telephony/NeighboringCellInfo.md) <br /> |
 
 ## Constants
 
@@ -100,7 +100,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 NeighboringCellInfo()
 ```
 
-**Deprecated:** *by [NeighboringCellInfo(int,java.lang.String,int)](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo(kotlin.Int,%20kotlin.String,%20kotlin.Int))*
+**Deprecated:** *by [NeighboringCellInfo(int,java.lang.String,int)](../android/telephony/NeighboringCellInfo.md))*
 
 Empty constructor. Initializes the RSSI and CID. NeighboringCellInfo is one time shot for the neighboring cells based on the radio network type at that moment. Its constructor needs radio network type. 
 
@@ -124,7 +124,7 @@ NeighboringCellInfo(
     cid: Int)
 ```
 
-**Deprecated:** *by [NeighboringCellInfo(int,java.lang.String,int)](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo(kotlin.Int,%20kotlin.String,%20kotlin.Int))*
+**Deprecated:** *by [NeighboringCellInfo(int,java.lang.String,int)](../android/telephony/NeighboringCellInfo.md))*
 
 Initialize the object from rssi and cid. NeighboringCellInfo is one time shot for the neighboring cells based on the radio network type at that moment. Its constructor needs radio network type. 
 
@@ -139,7 +139,7 @@ NeighboringCellInfo(
     radioType: Int)
 ```
 
-Initialize the object from rssi, location string, and radioType radioType is one of following [TelephonyManager.NETWORK_TYPE_GPRS](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_GPRS:kotlin.Int), [TelephonyManager.NETWORK_TYPE_EDGE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_EDGE:kotlin.Int), [TelephonyManager.NETWORK_TYPE_UMTS](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_UMTS:kotlin.Int), [TelephonyManager.NETWORK_TYPE_HSDPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSDPA:kotlin.Int), [TelephonyManager.NETWORK_TYPE_HSUPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSUPA:kotlin.Int), and [TelephonyManager.NETWORK_TYPE_HSPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSPA:kotlin.Int).
+Initialize the object from rssi, location string, and radioType radioType is one of following [TelephonyManager.NETWORK_TYPE_GPRS](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_EDGE](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_UMTS](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_HSDPA](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_HSUPA](../android/telephony/TelephonyManager.md), and [TelephonyManager.NETWORK_TYPE_HSPA](../android/telephony/TelephonyManager.md).
 
 ## Public methods
 
@@ -155,7 +155,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getCid
 
@@ -199,7 +199,7 @@ open fun getNetworkType(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Radio network type while neighboring cell location is stored. Return [TelephonyManager.NETWORK_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_UNKNOWN:kotlin.Int) means that the location information is unavailable. Return [TelephonyManager.NETWORK_TYPE_GPRS](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_GPRS:kotlin.Int) or [TelephonyManager.NETWORK_TYPE_EDGE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_EDGE:kotlin.Int) means that Neighboring Cell information is stored for GSM network, in which [NeighboringCellInfo.getLac](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getLac())and [NeighboringCellInfo.getCid](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getCid())should be called to access location. Return [TelephonyManager.NETWORK_TYPE_UMTS](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_UMTS:kotlin.Int), [TelephonyManager.NETWORK_TYPE_HSDPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSDPA:kotlin.Int), [TelephonyManager.NETWORK_TYPE_HSUPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSUPA:kotlin.Int), or [TelephonyManager.NETWORK_TYPE_HSPA](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_HSPA:kotlin.Int) means that Neighboring Cell information is stored for UMTS network, in which [NeighboringCellInfo.getPsc](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#getPsc())should be called to access location. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Radio network type while neighboring cell location is stored. Return [TelephonyManager.NETWORK_TYPE_UNKNOWN](../android/telephony/TelephonyManager.md) means that the location information is unavailable. Return [TelephonyManager.NETWORK_TYPE_GPRS](../android/telephony/TelephonyManager.md) or [TelephonyManager.NETWORK_TYPE_EDGE](../android/telephony/TelephonyManager.md) means that Neighboring Cell information is stored for GSM network, in which [NeighboringCellInfo.getLac](../android/telephony/NeighboringCellInfo.md))and [NeighboringCellInfo.getCid](../android/telephony/NeighboringCellInfo.md))should be called to access location. Return [TelephonyManager.NETWORK_TYPE_UMTS](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_HSDPA](../android/telephony/TelephonyManager.md), [TelephonyManager.NETWORK_TYPE_HSUPA](../android/telephony/TelephonyManager.md), or [TelephonyManager.NETWORK_TYPE_HSPA](../android/telephony/TelephonyManager.md) means that Neighboring Cell information is stored for UMTS network, in which [NeighboringCellInfo.getPsc](../android/telephony/NeighboringCellInfo.md))should be called to access location. |
 
 ### getPsc
 
@@ -239,7 +239,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun setCid(cid: Int): Unit
 ```
 
-**Deprecated:** *cid value passed as in location parameter passed to constructor [NeighboringCellInfo(int,java.lang.String,int)](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo(kotlin.Int,%20kotlin.String,%20kotlin.Int))*
+**Deprecated:** *cid value passed as in location parameter passed to constructor [NeighboringCellInfo(int,java.lang.String,int)](../android/telephony/NeighboringCellInfo.md))*
 
 Set the cell id. NeighboringCellInfo is a one time shot for the neighboring cells based on the radio network type at that moment. It shouldn't be changed after creation. 
 
@@ -252,7 +252,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun setRssi(rssi: Int): Unit
 ```
 
-**Deprecated:** *initial rssi value passed as parameter to constructor [NeighboringCellInfo(int,java.lang.String,int)](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo#NeighboringCellInfo(kotlin.Int,%20kotlin.String,%20kotlin.Int))*
+**Deprecated:** *initial rssi value passed as parameter to constructor [NeighboringCellInfo(int,java.lang.String,int)](../android/telephony/NeighboringCellInfo.md))*
 
 Set the signal strength of the cell. NeighboringCellInfo is a one time shot for the neighboring cells based on the radio network type at that moment. It shouldn't be changed after creation. 
 
@@ -285,8 +285,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface ToDoubleBiFunction<T : Any!, U : Any!>
 ```
 
-| [java.util.function.ToDoubleBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleBiFunction#) |
+| [java.util.function.ToDoubleBiFunction](../java/util/function/ToDoubleBiFunction.md) |
 
-Represents a function that accepts two arguments and produces a double-valued result. This is the`double`-producing primitive specialization for [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction).
+Represents a function that accepts two arguments and produces a double-valued result. This is the`double`-producing primitive specialization for [BiFunction](../java/util/function/BiFunction.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [applyAsDouble(java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleBiFunction#applyAsDouble(java.util.function.ToDoubleBiFunction.T,%20java.util.function.ToDoubleBiFunction.U)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsDouble(java.lang.Object,java.lang.Object)](../java/util/function/ToDoubleBiFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleBiFunction#applyAsDouble(java.util.function.ToDoubleBiFunction.T,%20java.util.function.ToDoubleBiFunction.U))`(`t:` `T`, `u:` `U`)` Applies this function to the given arguments. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](../java/util/function/ToDoubleBiFunction.md))`(`t:` `T`, `u:` `U`)` Applies this function to the given arguments. |
 
 ## Public methods
 

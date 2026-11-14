@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # CredentialEntry
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/credentials/CredentialEntry "View this page in Java") 
+Kotlin| [Java](../android/service/credentials/CredentialEntry.md) 
 | --- | --- |
 
 ```
@@ -13,36 +13,36 @@ class CredentialEntry : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.credentials.CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#) |
+| ↳ | [android.service.credentials.CredentialEntry](../android/service/credentials/CredentialEntry.md) |
 
 A credential entry that is to be displayed on the account selector that is presented to the user.
 
-If user selects this entry, the corresponding [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#), set on the`slice`will be invoked to launch activities that require some user engagement before getting the credential corresponding to this entry, e.g. authentication, confirmation etc. The extras associated with the resulting [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) will also contain the complete credential request containing all required parameters. This request can be retrieved against [CredentialProviderService.EXTRA_GET_CREDENTIAL_REQUEST](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#EXTRA_GET_CREDENTIAL_REQUEST:kotlin.String). Once the activity fulfills the required user engagement, the [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) result should be set to [android.app.Activity#RESULT_OK](https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int), and the [CredentialProviderService.EXTRA_GET_CREDENTIAL_RESPONSE](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#EXTRA_GET_CREDENTIAL_RESPONSE:kotlin.String) must be set with a [GetCredentialResponse](https://developer.android.com/reference/kotlin/android/credentials/GetCredentialResponse.html#) object.
+If user selects this entry, the corresponding [PendingIntent](../android/app/PendingIntent.md), set on the`slice`will be invoked to launch activities that require some user engagement before getting the credential corresponding to this entry, e.g. authentication, confirmation etc. The extras associated with the resulting [android.app.Activity](../android/app/Activity.md) will also contain the complete credential request containing all required parameters. This request can be retrieved against [CredentialProviderService.EXTRA_GET_CREDENTIAL_REQUEST](../android/service/credentials/CredentialProviderService.md). Once the activity fulfills the required user engagement, the [android.app.Activity](../android/app/Activity.md) result should be set to [android.app.Activity#RESULT_OK](../android/app/Activity.md), and the [CredentialProviderService.EXTRA_GET_CREDENTIAL_RESPONSE](../android/service/credentials/CredentialProviderService.md) must be set with a [GetCredentialResponse](../android/credentials/GetCredentialResponse.md) object.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#CredentialEntry(android.service.credentials.BeginGetCredentialOption,%20android.app.slice.Slice))`(`beginGetCredentialOption:` ` [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption)`, `slice:` ` [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#)`)` Creates an entry that is associated with a [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) request. |
-| [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#CredentialEntry(kotlin.String,%20android.app.slice.Slice))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `slice:` ` [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#)`)` Creates an entry that is independent of an incoming [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) request. |
-| [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#CredentialEntry(kotlin.String,%20kotlin.String,%20android.app.slice.Slice))`(`beginGetCredentialOptionId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `slice:` ` [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#)`)` Creates an entry that is associated with a [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) request. |
+| [CredentialEntry](../android/service/credentials/CredentialEntry.md))`(`beginGetCredentialOption:` ` [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md)`, `slice:` ` [Slice](../android/app/slice/Slice.md)`)` Creates an entry that is associated with a [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) request. |
+| [CredentialEntry](../android/service/credentials/CredentialEntry.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `slice:` ` [Slice](../android/app/slice/Slice.md)`)` Creates an entry that is independent of an incoming [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) request. |
+| [CredentialEntry](../android/service/credentials/CredentialEntry.md))`(`beginGetCredentialOptionId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `slice:` ` [Slice](../android/app/slice/Slice.md)`)` Creates an entry that is associated with a [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) request. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#describeContents())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getBeginGetCredentialOptionId](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#getBeginGetCredentialOptionId())`()` Returns the id of the [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) for which this credential entry has been constructed. |
-| [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) | [getSlice](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#getSlice())`()` Returns the [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) object containing UI display content to be shown for this entry. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/service/credentials/CredentialEntry.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getBeginGetCredentialOptionId](../android/service/credentials/CredentialEntry.md))`()` Returns the id of the [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) for which this credential entry has been constructed. |
+| [Slice](../android/app/slice/Slice.md) | [getSlice](../android/service/credentials/CredentialEntry.md))`()` Returns the [Slice](../android/app/slice/Slice.md) object containing UI display content to be shown for this entry. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#getType())`()` Returns the specific credential type of the entry. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](../android/service/credentials/CredentialEntry.md))`()` Returns the specific credential type of the entry. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/service/credentials/CredentialEntry.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CredentialEntry](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialEntry#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CredentialEntry](../android/service/credentials/CredentialEntry.md)!\> | [CREATOR](../android/service/credentials/CredentialEntry.md) <br /> |
 
 ## Public constructors
 
@@ -56,12 +56,12 @@ CredentialEntry(
     slice: Slice)
 ```
 
-Creates an entry that is associated with a [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) request. Providers must use this constructor when they extend from [CredentialProviderService](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService) to respond to query phase [CredentialProviderService.onBeginGetCredential](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onBeginGetCredential(android.service.credentials.BeginGetCredentialRequest,%20android.os.CancellationSignal,%20android.os.OutcomeReceiver))credential retrieval requests.
+Creates an entry that is associated with a [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) request. Providers must use this constructor when they extend from [CredentialProviderService](../android/service/credentials/CredentialProviderService.md) to respond to query phase [CredentialProviderService.onBeginGetCredential](../android/service/credentials/CredentialProviderService.md))credential retrieval requests.
 
 | Parameters ||
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `beginGetCredentialOption` | [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption):the request option for which this credential entry is being constructed This helps maintain an association, such that when the user selects this entry, providers can receive the complete corresponding request. This value cannot be`null`. |
-| `slice` | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#):the slice containing the metadata to be shown on the UI. Must be constructed through the androidx.credentials jetpack library. This value cannot be`null`. |
+| `beginGetCredentialOption` | [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md):the request option for which this credential entry is being constructed This helps maintain an association, such that when the user selects this entry, providers can receive the complete corresponding request. This value cannot be`null`. |
+| `slice` | [Slice](../android/app/slice/Slice.md):the slice containing the metadata to be shown on the UI. Must be constructed through the androidx.credentials jetpack library. This value cannot be`null`. |
 
 ### CredentialEntry
 
@@ -73,12 +73,12 @@ CredentialEntry(
     slice: Slice)
 ```
 
-Creates an entry that is independent of an incoming [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) request. Providers must use this constructor for constructing entries to be registered with the framework outside of the span of an API call.
+Creates an entry that is independent of an incoming [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) request. Providers must use this constructor for constructing entries to be registered with the framework outside of the span of an API call.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the type of the credential This value cannot be`null`. |
-| `slice` | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#):the slice containing the metadata to be shown on the UI. Must be constructed through the androidx.credentials jetpack library. This value cannot be`null`. |
+| `slice` | [Slice](../android/app/slice/Slice.md):the slice containing the metadata to be shown on the UI. Must be constructed through the androidx.credentials jetpack library. This value cannot be`null`. |
 
 ### CredentialEntry
 
@@ -91,13 +91,13 @@ CredentialEntry(
     slice: Slice)
 ```
 
-Creates an entry that is associated with a [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) request. Providers must use this constructor when they extend from [CredentialProviderService](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService) to respond to query phase [CredentialProviderService.onBeginGetCredential](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onBeginGetCredential(android.service.credentials.BeginGetCredentialRequest,%20android.os.CancellationSignal,%20android.os.OutcomeReceiver))credential retrieval requests.
+Creates an entry that is associated with a [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) request. Providers must use this constructor when they extend from [CredentialProviderService](../android/service/credentials/CredentialProviderService.md) to respond to query phase [CredentialProviderService.onBeginGetCredential](../android/service/credentials/CredentialProviderService.md))credential retrieval requests.
 
 | Parameters ||
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `beginGetCredentialOptionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the beginGetCredentialOptionId to be retrieved from [BeginGetCredentialOption.getId()](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption#getId())- the request option for which this CredentialEntry is being constructed This helps maintain an association such that when the user selects this entry, providers can receive the complete corresponding [GetCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/GetCredentialRequest). This value cannot be`null`. |
+| `beginGetCredentialOptionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the beginGetCredentialOptionId to be retrieved from [BeginGetCredentialOption.getId()](../android/service/credentials/BeginGetCredentialOption.md))- the request option for which this CredentialEntry is being constructed This helps maintain an association such that when the user selects this entry, providers can receive the complete corresponding [GetCredentialRequest](../android/service/credentials/GetCredentialRequest.md). This value cannot be`null`. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the type of the credential for which this credential entry is being created This value cannot be`null`. |
-| `slice` | [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#):the slice containing the metadata to be shown on the UI, must be constructed through the androidx.credentials.provider Jetpack library; If constructed manually, the`slice`object must contain the non-null properties of the androidx.credentials.provider.CredentialEntry class populated as slice items against specific hints as used in the class's`toSlice`method, since the Android System uses this library to parse the`slice`and extract the required attributes |
+| `slice` | [Slice](../android/app/slice/Slice.md):the slice containing the metadata to be shown on the UI, must be constructed through the androidx.credentials.provider Jetpack library; If constructed manually, the`slice`object must contain the non-null properties of the androidx.credentials.provider.CredentialEntry class populated as slice items against specific hints as used in the class's`toSlice`method, since the Android System uses this library to parse the`slice`and extract the required attributes |
 | --- | --- |
 
 | Exceptions ||
@@ -116,7 +116,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getBeginGetCredentialOptionId
 
@@ -126,7 +126,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getBeginGetCredentialOptionId(): String
 ```
 
-Returns the id of the [BeginGetCredentialOption](https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialOption) for which this credential entry has been constructed.
+Returns the id of the [BeginGetCredentialOption](../android/service/credentials/BeginGetCredentialOption.md) for which this credential entry has been constructed.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -140,11 +140,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getSlice(): Slice
 ```
 
-Returns the [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) object containing UI display content to be shown for this entry.
+Returns the [Slice](../android/app/slice/Slice.md) object containing UI display content to be shown for this entry.
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------|
-| [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#) | This value cannot be`null`. |
+| [Slice](../android/app/slice/Slice.md) | This value cannot be`null`. |
 
 ### getType
 
@@ -175,8 +175,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

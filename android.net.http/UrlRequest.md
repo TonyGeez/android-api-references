@@ -9,7 +9,7 @@ abstract class UrlRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.UrlRequest](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#) |
+| ↳ | [android.net.http.UrlRequest](../android/net/http/UrlRequest.md) |
 
 Controls an HTTP request (GET, PUT, POST etc). Created by `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder`, which can be obtained by calling `https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#newUrlRequestBuilder(kotlin.String,%20java.util.concurrent.Executor,%20android.net.http.UrlRequest.Callback)`. Note: All methods must be called on the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` passed to `https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#newUrlRequestBuilder(kotlin.String,%20java.util.concurrent.Executor,%20android.net.http.UrlRequest.Callback)`.
 
@@ -36,9 +36,9 @@ Controls an HTTP request (GET, PUT, POST etc). Created by `https://developer.and
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#cancel()()` Cancels the request. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#followRedirect()()` Follows a pending redirect. |
-| open [FinishedRequestTimings](https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getFinishedRequestTimings()()` Returns the detailed timing metrics for the request. |
+| open [FinishedRequestTimings](../android/net/http/FinishedRequestTimings.md) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getFinishedRequestTimings()()` Returns the detailed timing metrics for the request. |
 | --- | --- |
-| abstract [HeaderBlock](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getHeaders()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#addHeader(kotlin.String,%20kotlin.String)` |
+| abstract [HeaderBlock](../android/net/http/HeaderBlock.md) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getHeaders()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#addHeader(kotlin.String,%20kotlin.String)` |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getHttpMethod()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setHttpMethod(kotlin.String)`. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getPriority()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)` |
 | --- | --- |
@@ -226,7 +226,7 @@ The `listener` will be invoked back on the `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `listener` | [UrlRequest.StatusListener](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener): a `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener` that will be invoked with the request's current status. This value cannot be `null`. |
+| `listener` | [UrlRequest.StatusListener](../android/net/http/UrlRequest.StatusListener.md): a `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener` that will be invoked with the request's current status. This value cannot be `null`. |
 
 ### getTrafficStatsTag
 
@@ -322,7 +322,7 @@ Attempts to read part of the response body into the provided buffer. Must only b
 
 | Parameters ||
 |---|---|
-| `buffer` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` to write response body to. Must be a direct ByteBuffer. The embedder must not read or modify buffer's position, limit, or data between its position and limit until the request calls back into the `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. This value cannot be `null`. |
+| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md): `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` to write response body to. Must be a direct ByteBuffer. The embedder must not read or modify buffer's position, limit, or data between its position and limit until the request calls back into the `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. This value cannot be `null`. |
 
 ### start
 

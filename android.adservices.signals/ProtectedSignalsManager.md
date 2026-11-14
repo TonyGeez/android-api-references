@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 12](https://developer.android.com/sdkExtensions)
 
 # ProtectedSignalsManager
 
-Kotlin | [Java](https://developer.android.com/reference/android/adservices/signals/ProtectedSignalsManager "View this page in Java") 
+Kotlin | [Java](../android/adservices/signals/ProtectedSignalsManager.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class ProtectedSignalsManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.signals.ProtectedSignalsManager](https://developer.android.com/reference/kotlin/android/adservices/signals/ProtectedSignalsManager#) |
+| ↳ | [android.adservices.signals.ProtectedSignalsManager](../android/adservices/signals/ProtectedSignalsManager.md) |
 
 ProtectedSignalsManager provides APIs for apps and ad-SDKs to manage their protected signals.
 
@@ -22,8 +22,8 @@ ProtectedSignalsManager provides APIs for apps and ad-SDKs to manage their prote
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open static [ProtectedSignalsManager](https://developer.android.com/reference/kotlin/android/adservices/signals/ProtectedSignalsManager#) | [get](https://developer.android.com/reference/kotlin/android/adservices/signals/ProtectedSignalsManager#get(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`)` Factory method for creating an instance of ProtectedSignalsManager. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSignals](https://developer.android.com/reference/kotlin/android/adservices/signals/ProtectedSignalsManager#updateSignals(android.adservices.signals.UpdateSignalsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))`(`updateSignalsRequest:` ` [UpdateSignalsRequest](https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `receiver:` ` [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!,` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!>`)` The updateSignals API will retrieve a JSON from the URI that describes which signals to add or remove. |
+| open static [ProtectedSignalsManager](../android/adservices/signals/ProtectedSignalsManager.md) | [get](../android/adservices/signals/ProtectedSignalsManager.md))`(`context:` ` [Context](../android/content/Context.md)`)` Factory method for creating an instance of ProtectedSignalsManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSignals](../android/adservices/signals/ProtectedSignalsManager.md))`(`updateSignalsRequest:` ` [UpdateSignalsRequest](../android/adservices/signals/UpdateSignalsRequest.md)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `receiver:` ` [OutcomeReceiver](../android/os/OutcomeReceiver.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!,` ` [Exception](../java/lang/Exception.md)!>`)` The updateSignals API will retrieve a JSON from the URI that describes which signals to add or remove. |
 
 ## Public methods
 
@@ -40,11 +40,11 @@ Factory method for creating an instance of ProtectedSignalsManager.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) to use This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The [Context](../android/content/Context.md) to use This value cannot be `null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ProtectedSignalsManager](https://developer.android.com/reference/kotlin/android/adservices/signals/ProtectedSignalsManager#) | A [ProtectedSignalsManager](https://developer.android.com/reference/kotlin/android/adservices/signals/ProtectedSignalsManager#) instance This value cannot be `null`. |
+| [ProtectedSignalsManager](../android/adservices/signals/ProtectedSignalsManager.md) | A [ProtectedSignalsManager](../android/adservices/signals/ProtectedSignalsManager.md) instance This value cannot be `null`. |
 
 ### updateSignals
 
@@ -79,26 +79,26 @@ The sub-key for providing an encoder endpoint is "endpoint" and the value is the
 
 On success, the onResult method of the provided OutcomeReceiver will be called with an empty Object. This Object has no significance and is used merely as a placeholder.
 
-Key may only be operated on by one command per JSON. If two command attempt to operate on the same key, this method will through an [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#)
+Key may only be operated on by one command per JSON. If two command attempt to operate on the same key, this method will through an [IllegalArgumentException](../java/lang/IllegalArgumentException.md)
 
-This call fails with an [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#) if
+This call fails with an [SecurityException](../java/lang/SecurityException.md) if
 
 1. the `ownerPackageName` is not calling app's package name and/or
 2. the buyer is not authorized to use the API.
 
-This call fails with an [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) if
+This call fails with an [IllegalArgumentException](../java/lang/IllegalArgumentException.md) if
 
 1. The JSON retrieved from the server is not valid.
 2. The provided URI is invalid.
 
-This call fails with [LimitExceededException](https://developer.android.com/reference/kotlin/android/os/LimitExceededException.html#) if the calling package exceeds the allowed rate limits and is throttled.
+This call fails with [LimitExceededException](../android/os/LimitExceededException.md) if the calling package exceeds the allowed rate limits and is throttled.
 
-This call fails with an [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) if an internal service error is encountered. 
-Requires [android.adservices.common.AdServicesPermissions#ACCESS_ADSERVICES_PROTECTED_SIGNALS](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesPermissions.html#ACCESS_ADSERVICES_PROTECTED_SIGNALS:kotlin.String)
+This call fails with an [IllegalStateException](../java/lang/IllegalStateException.md) if an internal service error is encountered. 
+Requires [android.adservices.common.AdServicesPermissions#ACCESS_ADSERVICES_PROTECTED_SIGNALS](../android/adservices/common/AdServicesPermissions.md)
 
 | Parameters ||
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `updateSignalsRequest` | [UpdateSignalsRequest](https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `updateSignalsRequest` | [UpdateSignalsRequest](../android/adservices/signals/UpdateSignalsRequest.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |

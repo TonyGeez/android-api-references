@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaBrowser
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/browse/MediaBrowser "View this page in Java") 
+Kotlin| [Java](../android/media/browse/MediaBrowser.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MediaBrowser
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.browse.MediaBrowser](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#) |
+| ↳ | [android.media.browse.MediaBrowser](../android/media/browse/MediaBrowser.md) |
 
 Browses media content offered by a link MediaBrowserService.
 
@@ -21,47 +21,47 @@ This object is not thread-safe. All calls should happen on the thread on which t
 
 ### Standard Extra Data
 
-These are the current standard fields that can be used as extra data via [subscribe(java.lang.String,android.os.Bundle,android.media.browse.MediaBrowser.SubscriptionCallback)](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#subscribe(kotlin.String,%20android.os.Bundle,%20android.media.browse.MediaBrowser.SubscriptionCallback)), [unsubscribe(java.lang.String,android.media.browse.MediaBrowser.SubscriptionCallback)](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#unsubscribe(kotlin.String,%20android.media.browse.MediaBrowser.SubscriptionCallback)), and [SubscriptionCallback.onChildrenLoaded(String, List, Bundle)](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback#onChildrenLoaded(kotlin.String,%20kotlin.collections.MutableList,%20android.os.Bundle)).
+These are the current standard fields that can be used as extra data via [subscribe(java.lang.String,android.os.Bundle,android.media.browse.MediaBrowser.SubscriptionCallback)](../android/media/browse/MediaBrowser.md)), [unsubscribe(java.lang.String,android.media.browse.MediaBrowser.SubscriptionCallback)](../android/media/browse/MediaBrowser.md)), and [SubscriptionCallback.onChildrenLoaded(String, List, Bundle)](../android/media/browse/MediaBrowser.SubscriptionCallback.md)).
 
-- [EXTRA_PAGE](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#EXTRA_PAGE:kotlin.String)
-- [EXTRA_PAGE_SIZE](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#EXTRA_PAGE_SIZE:kotlin.String)
+- [EXTRA_PAGE](../android/media/browse/MediaBrowser.md)
+- [EXTRA_PAGE_SIZE](../android/media/browse/MediaBrowser.md)
 
 ## Summary
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [ConnectionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.ConnectionCallback) Callbacks for connection related events. |
-| abstract | [ItemCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.ItemCallback) Callback for receiving the result of [getItem](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#getItem(kotlin.String,%20android.media.browse.MediaBrowser.ItemCallback)). |
-| | [MediaItem](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.MediaItem) A class with information on a single media item for use in browsing/searching media. |
+| | [ConnectionCallback](../android/media/browse/MediaBrowser.ConnectionCallback.md) Callbacks for connection related events. |
+| abstract | [ItemCallback](../android/media/browse/MediaBrowser.ItemCallback.md) Callback for receiving the result of [getItem](../android/media/browse/MediaBrowser.md)). |
+| | [MediaItem](../android/media/browse/MediaBrowser.MediaItem.md) A class with information on a single media item for use in browsing/searching media. |
 | --- | --- |
-| abstract | [SubscriptionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback) Callbacks for subscription related events. |
+| abstract | [SubscriptionCallback](../android/media/browse/MediaBrowser.SubscriptionCallback.md) Callbacks for subscription related events. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PAGE](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#EXTRA_PAGE:kotlin.String) Used as an int extra field to denote the page number to subscribe. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PAGE_SIZE](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#EXTRA_PAGE_SIZE:kotlin.String) Used as an int extra field to denote the number of media items in a page. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PAGE](../android/media/browse/MediaBrowser.md) Used as an int extra field to denote the page number to subscribe. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PAGE_SIZE](../android/media/browse/MediaBrowser.md) Used as an int extra field to denote the number of media items in a page. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaBrowser](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#MediaBrowser(android.content.Context,%20android.content.ComponentName,%20android.media.browse.MediaBrowser.ConnectionCallback,%20android.os.Bundle))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `serviceComponent:` ` [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!`, `callback:` ` [MediaBrowser.ConnectionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.ConnectionCallback)!`, `rootHints:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Creates a media browser for the specified media browser service. |
+| [MediaBrowser](../android/media/browse/MediaBrowser.md))`(`context:` ` [Context](../android/content/Context.md)!`, `serviceComponent:` ` [ComponentName](../android/content/ComponentName.md)!`, `callback:` ` [MediaBrowser.ConnectionCallback](../android/media/browse/MediaBrowser.ConnectionCallback.md)!`, `rootHints:` ` [Bundle](../android/os/Bundle.md)!`)` Creates a media browser for the specified media browser service. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#connect())`()` Connects to the media browser service. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#disconnect())`()` Disconnects from the media browser service. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#getExtras())`()` Gets any extras for the media service. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/media/browse/MediaBrowser.md))`()` Connects to the media browser service. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](../android/media/browse/MediaBrowser.md))`()` Disconnects from the media browser service. |
+| [Bundle](../android/os/Bundle.md)? | [getExtras](../android/media/browse/MediaBrowser.md))`()` Gets any extras for the media service. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getItem](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#getItem(kotlin.String,%20android.media.browse.MediaBrowser.ItemCallback))`(`mediaId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cb:` ` [MediaBrowser.ItemCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.ItemCallback)`)` Retrieves a specific [MediaItem](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.MediaItem) from the connected service. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRoot](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#getRoot())`()` Gets the root id. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | [getServiceComponent](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#getServiceComponent())`()` Gets the service component that the media browser is connected to. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getItem](../android/media/browse/MediaBrowser.md))`(`mediaId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cb:` ` [MediaBrowser.ItemCallback](../android/media/browse/MediaBrowser.ItemCallback.md)`)` Retrieves a specific [MediaItem](../android/media/browse/MediaBrowser.MediaItem.md) from the connected service. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRoot](../android/media/browse/MediaBrowser.md))`()` Gets the root id. |
+| [ComponentName](../android/content/ComponentName.md) | [getServiceComponent](../android/media/browse/MediaBrowser.md))`()` Gets the service component that the media browser is connected to. |
 | --- | --- |
-| [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token.html#) | [getSessionToken](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#getSessionToken())`()` Gets the media session token associated with the media browser. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#isConnected())`()` Returns whether the browser is connected to the service. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [subscribe](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#subscribe(kotlin.String,%20android.media.browse.MediaBrowser.SubscriptionCallback))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `callback:` ` [MediaBrowser.SubscriptionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback)`)` Queries for information about the media items that are contained within the specified id and subscribes to receive updates when they change. |
+| [MediaSession.Token](../android/media/session/MediaSession.Token.md) | [getSessionToken](../android/media/browse/MediaBrowser.md))`()` Gets the media session token associated with the media browser. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/media/browse/MediaBrowser.md))`()` Returns whether the browser is connected to the service. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [subscribe](../android/media/browse/MediaBrowser.md))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `callback:` ` [MediaBrowser.SubscriptionCallback](../android/media/browse/MediaBrowser.SubscriptionCallback.md)`)` Queries for information about the media items that are contained within the specified id and subscribes to receive updates when they change. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [subscribe](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#subscribe(kotlin.String,%20android.os.Bundle,%20android.media.browse.MediaBrowser.SubscriptionCallback))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `options:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`, `callback:` ` [MediaBrowser.SubscriptionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback)`)` Queries with service-specific arguments for information about the media items that are contained within the specified id and subscribes to receive updates when they change. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unsubscribe](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#unsubscribe(kotlin.String))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Unsubscribes for changes to the children of the specified media id. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unsubscribe](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#unsubscribe(kotlin.String,%20android.media.browse.MediaBrowser.SubscriptionCallback))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `callback:` ` [MediaBrowser.SubscriptionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback)`)` Unsubscribes for changes to the children of the specified media id through a callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [subscribe](../android/media/browse/MediaBrowser.md))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `options:` ` [Bundle](../android/os/Bundle.md)`, `callback:` ` [MediaBrowser.SubscriptionCallback](../android/media/browse/MediaBrowser.SubscriptionCallback.md)`)` Queries with service-specific arguments for information about the media items that are contained within the specified id and subscribes to receive updates when they change. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unsubscribe](../android/media/browse/MediaBrowser.md))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Unsubscribes for changes to the children of the specified media id. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unsubscribe](../android/media/browse/MediaBrowser.md))`(`parentId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `callback:` ` [MediaBrowser.SubscriptionCallback](../android/media/browse/MediaBrowser.SubscriptionCallback.md)`)` Unsubscribes for changes to the children of the specified media id through a callback. |
 | --- | --- |
 
 ## Constants
@@ -80,7 +80,7 @@ Used as an int extra field to denote the page number to subscribe. The value of`
 
 **See Also**
 
-- [#EXTRA_PAGE_SIZE](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#EXTRA_PAGE_SIZE:kotlin.String) 
+- [#EXTRA_PAGE_SIZE](../android/media/browse/MediaBrowser.md) 
 
 ### EXTRA_PAGE_SIZE
 
@@ -96,7 +96,7 @@ Used as an int extra field to denote the number of media items in a page. The va
 
 **See Also**
 
-- [#EXTRA_PAGE](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser#EXTRA_PAGE:kotlin.String)
+- [#EXTRA_PAGE](../android/media/browse/MediaBrowser.md)
 
 ## Public constructors
 
@@ -116,17 +116,17 @@ Creates a media browser for the specified media browser service.
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The context. |
-| `serviceComponent` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)!:The component name of the media browser service. |
-| `callback` | [MediaBrowser.ConnectionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.ConnectionCallback)!:The connection callback. |
+| `context` | [Context](../android/content/Context.md)!:The context. |
+| `serviceComponent` | [ComponentName](../android/content/ComponentName.md)!:The component name of the media browser service. |
+| `callback` | [MediaBrowser.ConnectionCallback](../android/media/browse/MediaBrowser.ConnectionCallback.md)!:The connection callback. |
 | --- | --- |
-| `rootHints` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:An optional bundle of service-specific arguments to send to the media browser service when connecting and retrieving the root id for browsing, or null if none. The contents of this bundle may affect the information returned when browsing. |
+| `rootHints` | [Bundle](../android/os/Bundle.md)!:An optional bundle of service-specific arguments to send to the media browser service when connecting and retrieving the root id for browsing, or null if none. The contents of this bundle may affect the information returned when browsing. |
 
 **See Also**
 
-- [android.service.media.MediaBrowserService.BrowserRoot#EXTRA_RECENT](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.BrowserRoot.html#EXTRA_RECENT:kotlin.String)
-- [android.service.media.MediaBrowserService.BrowserRoot#EXTRA_OFFLINE](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.BrowserRoot.html#EXTRA_OFFLINE:kotlin.String)
-- [android.service.media.MediaBrowserService.BrowserRoot#EXTRA_SUGGESTED](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.BrowserRoot.html#EXTRA_SUGGESTED:kotlin.String)
+- [android.service.media.MediaBrowserService.BrowserRoot#EXTRA_RECENT](../android/service/media/MediaBrowserService.BrowserRoot.md)
+- [android.service.media.MediaBrowserService.BrowserRoot#EXTRA_OFFLINE](../android/service/media/MediaBrowserService.BrowserRoot.md)
+- [android.service.media.MediaBrowserService.BrowserRoot#EXTRA_SUGGESTED](../android/service/media/MediaBrowserService.BrowserRoot.md)
 
 ## Public methods
 
@@ -164,7 +164,7 @@ Gets any extras for the media service.
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | This value may be`null`. |
+| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
 
 | Exceptions ||
 |-----------------------------------|-------------------|
@@ -181,12 +181,12 @@ fun getItem(
 ): Unit
 ```
 
-Retrieves a specific [MediaItem](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.MediaItem) from the connected service. Not all services may support this, so falling back to subscribing to the parent's id should be used when unavailable.
+Retrieves a specific [MediaItem](../android/media/browse/MediaBrowser.MediaItem.md) from the connected service. Not all services may support this, so falling back to subscribing to the parent's id should be used when unavailable.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mediaId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The id of the item to retrieve. This value cannot be`null`. |
-| `cb` | [MediaBrowser.ItemCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.ItemCallback):The callback to receive the result on. This value cannot be`null`. |
+| `cb` | [MediaBrowser.ItemCallback](../android/media/browse/MediaBrowser.ItemCallback.md):The callback to receive the result on. This value cannot be`null`. |
 
 ### getRoot
 
@@ -220,7 +220,7 @@ Gets the service component that the media browser is connected to.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------|
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | This value cannot be`null`. |
+| [ComponentName](../android/content/ComponentName.md) | This value cannot be`null`. |
 
 ### getSessionToken
 
@@ -236,7 +236,7 @@ Note that the session token may become invalid or change when the browser is dis
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token.html#) | The session token for the browser, never null. |
+| [MediaSession.Token](../android/media/session/MediaSession.Token.md) | The session token for the browser, never null. |
 
 | Exceptions ||
 |-----------------------------------|-------------------|
@@ -272,7 +272,7 @@ If the id is already subscribed with a different callback then the new callback 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The id of the parent media item whose list of children will be subscribed. This value cannot be`null`. |
-| `callback` | [MediaBrowser.SubscriptionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback):The callback to receive the list of children. This value cannot be`null`. |
+| `callback` | [MediaBrowser.SubscriptionCallback](../android/media/browse/MediaBrowser.SubscriptionCallback.md):The callback to receive the list of children. This value cannot be`null`. |
 
 ### subscribe
 
@@ -295,8 +295,8 @@ If the id is already subscribed with a different callback then the new callback 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The id of the parent media item whose list of children will be subscribed. This value cannot be`null`. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):The bundle of service-specific arguments to send to the media browser service. The contents of this bundle may affect the information returned when browsing. This value cannot be`null`. |
-| `callback` | [MediaBrowser.SubscriptionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback):The callback to receive the list of children. This value cannot be`null`. |
+| `options` | [Bundle](../android/os/Bundle.md):The bundle of service-specific arguments to send to the media browser service. The contents of this bundle may affect the information returned when browsing. This value cannot be`null`. |
+| `callback` | [MediaBrowser.SubscriptionCallback](../android/media/browse/MediaBrowser.SubscriptionCallback.md):The callback to receive the list of children. This value cannot be`null`. |
 | --- | --- |
 
 ### unsubscribe
@@ -333,4 +333,4 @@ The query callback will no longer be invoked for results associated with this id
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parentId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The id of the parent media item whose list of children will be unsubscribed. This value cannot be`null`. |
-| `callback` | [MediaBrowser.SubscriptionCallback](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser.SubscriptionCallback):A callback sent to the media browser service to subscribe. This value cannot be`null`. |
+| `callback` | [MediaBrowser.SubscriptionCallback](../android/media/browse/MediaBrowser.SubscriptionCallback.md):A callback sent to the media browser service to subscribe. This value cannot be`null`. |

@@ -2,14 +2,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # GroupCallCallback
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback "View this page in Java")
+Kotlin | [Java](../android/telephony/mbms/GroupCallCallback.md)
 | --- | --- |
 
 ```
 interface GroupCallCallback
 ```
 
-| [android.telephony.mbms.GroupCallCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#) |
+| [android.telephony.mbms.GroupCallCallback](../android/telephony/mbms/GroupCallCallback.md) |
 
 A callback class for use when the application is in a group call. The middleware will provide updates on the status of the call via this callback.
 

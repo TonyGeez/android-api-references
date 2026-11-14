@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # OnTagRemovedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.OnTagRemovedListener "View this page in Java") 
+Kotlin| [Java](../android/nfc/NfcAdapter.OnTagRemovedListener.md) 
 | --- | --- |
 
 ```
 interface OnTagRemovedListener
 ```
 
-| [android.nfc.NfcAdapter.OnTagRemovedListener](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnTagRemovedListener#) |
+| [android.nfc.NfcAdapter.OnTagRemovedListener](../android/nfc/NfcAdapter.OnTagRemovedListener.md) |
 
 A callback that is invoked when a tag is removed from the field.
 
@@ -19,7 +19,7 @@ A callback that is invoked when a tag is removed from the field.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTagRemoved](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnTagRemovedListener#onTagRemoved())`()` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTagRemoved](../android/nfc/NfcAdapter.OnTagRemovedListener.md))`()` <br /> |
 
 ## Public methods
 

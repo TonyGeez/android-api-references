@@ -10,7 +10,7 @@ abstract class URLStreamHandler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.URLStreamHandler](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#) |
+| ↳ | [java.net.URLStreamHandler](../java/net/URLStreamHandler.md) |
 
 The abstract class`URLStreamHandler`is the common superclass for all stream protocol handlers. A stream protocol handler knows how to make a connection for a particular protocol type, such as`http`or`https`.
 
@@ -20,25 +20,25 @@ In most cases, an instance of a`URLStreamHandler`subclass is not created directl
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------|---|
-| [URLStreamHandler](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#URLStreamHandler())`()` <br /> |
+| [URLStreamHandler](../java/net/URLStreamHandler.md))`()` <br /> |
 
 | Protected methods ||
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#equals(java.net.URL,%20java.net.URL))`(`u1:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `u2:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Provides the default equals calculation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultPort](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#getDefaultPort())`()` Returns the default port for a URL parsed by this handler. |
-| open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | [getHostAddress](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#getHostAddress(java.net.URL))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Get the IP address of our host. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/net/URLStreamHandler.md))`(`u1:` ` [URL](../java/net/URL.md)!`, `u2:` ` [URL](../java/net/URL.md)!`)` Provides the default equals calculation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultPort](../java/net/URLStreamHandler.md))`()` Returns the default port for a URL parsed by this handler. |
+| open [InetAddress](../java/net/InetAddress.md)! | [getHostAddress](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`)` Get the IP address of our host. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#hashCode(java.net.URL))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Provides the default hash calculation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hostsEqual](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#hostsEqual(java.net.URL,%20java.net.URL))`(`u1:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `u2:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Compares the host components of two URLs. |
-| abstract [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)! | [openConnection](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#openConnection(java.net.URL))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Opens a connection to the object referenced by the`URL`argument. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`)` Provides the default hash calculation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hostsEqual](../java/net/URLStreamHandler.md))`(`u1:` ` [URL](../java/net/URL.md)!`, `u2:` ` [URL](../java/net/URL.md)!`)` Compares the host components of two URLs. |
+| abstract [URLConnection](../java/net/URLConnection.md)! | [openConnection](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`)` Opens a connection to the object referenced by the`URL`argument. |
 | --- | --- |
-| open [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)! | [openConnection](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#openConnection(java.net.URL,%20java.net.Proxy))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `p:` ` [Proxy](https://developer.android.com/reference/kotlin/java/net/Proxy)!`)` Same as openConnection(URL), except that the connection will be made through the specified proxy; Protocol handlers that do not support proxying will ignore the proxy parameter and make a normal connection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseURL](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#parseURL(java.net.URL,%20kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `spec:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string representation of a`URL`into a`URL`object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [sameFile](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#sameFile(java.net.URL,%20java.net.URL))`(`u1:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `u2:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Compare two urls to see whether they refer to the same file, i. |
+| open [URLConnection](../java/net/URLConnection.md)! | [openConnection](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`, `p:` ` [Proxy](../java/net/Proxy.md)!`)` Same as openConnection(URL), except that the connection will be made through the specified proxy; Protocol handlers that do not support proxying will ignore the proxy parameter and make a normal connection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseURL](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`, `spec:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string representation of a`URL`into a`URL`object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [sameFile](../java/net/URLStreamHandler.md))`(`u1:` ` [URL](../java/net/URL.md)!`, `u2:` ` [URL](../java/net/URL.md)!`)` Compare two urls to see whether they refer to the same file, i. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURL](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#setURL(java.net.URL,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ref:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the fields of the`URL`argument to the indicated values. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURL](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#setURL(java.net.URL,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `userInfo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ref:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the fields of the`URL`argument to the indicated values. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toExternalForm](https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#toExternalForm(java.net.URL))`(`u:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Converts a`URL`of a specific protocol to a`String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURL](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `file:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ref:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the fields of the`URL`argument to the indicated values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURL](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `userInfo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ref:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the fields of the`URL`argument to the indicated values. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toExternalForm](../java/net/URLStreamHandler.md))`(`u:` ` [URL](../java/net/URL.md)!`)` Converts a`URL`of a specific protocol to a`String`. |
 | --- | --- |
 
 ## Public constructors
@@ -68,8 +68,8 @@ Provides the default equals calculation. May be overidden by handlers for other 
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------|
-| `u1` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:a URL object |
-| `u2` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:a URL object |
+| `u1` | [URL](../java/net/URL.md)!:a URL object |
+| `u2` | [URL](../java/net/URL.md)!:a URL object |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -101,11 +101,11 @@ Get the IP address of our host. An empty host field or a DNS failure will result
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:a URL object |
+| `u` | [URL](../java/net/URL.md)!:a URL object |
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | an`InetAddress`representing the host IP address. |
+| [InetAddress](../java/net/InetAddress.md)! | an`InetAddress`representing the host IP address. |
 
 ### hashCode
 
@@ -119,7 +119,7 @@ Provides the default hash calculation. May be overidden by handlers for other pr
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:a URL object |
+| `u` | [URL](../java/net/URL.md)!:a URL object |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------|
@@ -140,8 +140,8 @@ Compares the host components of two URLs.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------|
-| `u1` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the URL of the first host to compare |
-| `u2` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the URL of the second host to compare |
+| `u1` | [URL](../java/net/URL.md)!:the URL of the first host to compare |
+| `u2` | [URL](../java/net/URL.md)!:the URL of the second host to compare |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -161,11 +161,11 @@ If for the handler's protocol (such as HTTP or JAR), there exists a public, spec
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the URL that this connects to. |
+| `u` | [URL](../java/net/URL.md)!:the URL that this connects to. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------|
-| [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)! | a`URLConnection`object for the`URL`. |
+| [URLConnection](../java/net/URLConnection.md)! | a`URLConnection`object for the`URL`. |
 
 | Exceptions ||
 |-----------------------|------------------------------------------------------|
@@ -186,12 +186,12 @@ Same as openConnection(URL), except that the connection will be made through the
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the URL that this connects to. |
-| `p` | [Proxy](https://developer.android.com/reference/kotlin/java/net/Proxy)!:the proxy through which the connection will be made. If direct connection is desired, Proxy.NO_PROXY should be specified. |
+| `u` | [URL](../java/net/URL.md)!:the URL that this connects to. |
+| `p` | [Proxy](../java/net/Proxy.md)!:the proxy through which the connection will be made. If direct connection is desired, Proxy.NO_PROXY should be specified. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------|
-| [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)! | a`URLConnection`object for the`URL`. |
+| [URLConnection](../java/net/URLConnection.md)! | a`URLConnection`object for the`URL`. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------|
@@ -221,7 +221,7 @@ The`parseURL`method of`URLStreamHandler`parses the string representation as if i
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the`URL`to receive the result of parsing the spec. |
+| `u` | [URL](../java/net/URL.md)!:the`URL`to receive the result of parsing the spec. |
 | `spec` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the`String`representing the URL that must be parsed. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the character index at which to begin parsing. This is just past the '`:`' (if there is one) that specifies the determination of the protocol name. |
 | --- | --- |
@@ -242,8 +242,8 @@ Compare two urls to see whether they refer to the same file, i.e., having the sa
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------|
-| `u1` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:a URL object |
-| `u2` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:a URL object |
+| `u1` | [URL](../java/net/URL.md)!:a URL object |
+| `u2` | [URL](../java/net/URL.md)!:a URL object |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
@@ -271,7 +271,7 @@ Sets the fields of the`URL`argument to the indicated values. Only classes derive
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the URL to modify. |
+| `u` | [URL](../java/net/URL.md)!:the URL to modify. |
 | `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the protocol name. This value is ignored since 1.2. |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the remote host value for the URL. |
 | --- | --- |
@@ -306,7 +306,7 @@ Sets the fields of the`URL`argument to the indicated values. Only classes derive
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the URL to modify. |
+| `u` | [URL](../java/net/URL.md)!:the URL to modify. |
 | `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the protocol name. |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the remote host value for the URL. |
 | --- | --- |
@@ -335,7 +335,7 @@ Converts a`URL`of a specific protocol to a`String`.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the URL. |
+| `u` | [URL](../java/net/URL.md)!:the URL. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------|

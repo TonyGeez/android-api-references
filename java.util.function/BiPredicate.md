@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface BiPredicate<T : Any!, U : Any!>
 ```
 
-| [java.util.function.BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#) |
+| [java.util.function.BiPredicate](../java/util/function/BiPredicate.md) |
 
-Represents a predicate (boolean-valued function) of two arguments. This is the two-arity specialization of [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate).
+Represents a predicate (boolean-valued function) of two arguments. This is the two-arity specialization of [Predicate](../java/util/function/Predicate.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [test(java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#test(java.util.function.BiPredicate.T,%20java.util.function.BiPredicate.U)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [test(java.lang.Object,java.lang.Object)](../java/util/function/BiPredicate.md)).
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)\<T,U\>! | [and](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#and(java.util.function.BiPredicate))`(`other:` ` [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
-| open [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)\<T,U\>! | [negate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#negate())`()` Returns a predicate that represents the logical negation of this predicate. |
-| open [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)\<T,U\>! | [or](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#or(java.util.function.BiPredicate))`(`other:` ` [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
+| open [BiPredicate](../java/util/function/BiPredicate.md)\<T,U\>! | [and](../java/util/function/BiPredicate.md))`(`other:` ` [BiPredicate](../java/util/function/BiPredicate.md)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
+| open [BiPredicate](../java/util/function/BiPredicate.md)\<T,U\>! | [negate](../java/util/function/BiPredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
+| open [BiPredicate](../java/util/function/BiPredicate.md)\<T,U\>! | [or](../java/util/function/BiPredicate.md))`(`other:` ` [BiPredicate](../java/util/function/BiPredicate.md)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#test(java.util.function.BiPredicate.T,%20java.util.function.BiPredicate.U))`(`t:` `T`, `u:` `U`)` Evaluates this predicate on the given arguments. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](../java/util/function/BiPredicate.md))`(`t:` `T`, `u:` `U`)` Evaluates this predicate on the given arguments. |
 
 ## Public methods
 
@@ -40,11 +40,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)\<inT,inU\>!:a predicate that will be logically-ANDed with this predicate |
+| `other` | [BiPredicate](../java/util/function/BiPredicate.md)\<inT,inU\>!:a predicate that will be logically-ANDed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)<T,` `U>! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
+| [BiPredicate](../java/util/function/BiPredicate.md)<T,` `U>! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -62,7 +62,7 @@ Returns a predicate that represents the logical negation of this predicate.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)<T,` `U>! | a predicate that represents the logical negation of this predicate |
+| [BiPredicate](../java/util/function/BiPredicate.md)<T,` `U>! | a predicate that represents the logical negation of this predicate |
 
 ### or
 
@@ -78,11 +78,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)\<inT,inU\>!:a predicate that will be logically-ORed with this predicate |
+| `other` | [BiPredicate](../java/util/function/BiPredicate.md)\<inT,inU\>!:a predicate that will be logically-ORed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [BiPredicate](https://developer.android.com/reference/kotlin/java/util/function/BiPredicate#)<T,` `U>! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
+| [BiPredicate](../java/util/function/BiPredicate.md)<T,` `U>! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|

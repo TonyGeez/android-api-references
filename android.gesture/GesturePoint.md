@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # GesturePoint
 
-Kotlin| [Java](https://developer.android.com/reference/android/gesture/GesturePoint "View this page in Java") 
+Kotlin| [Java](../android/gesture/GesturePoint.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class GesturePoint
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#) |
+| ↳ | [android.gesture.GesturePoint](../android/gesture/GesturePoint.md) |
 
 A timed point of a gesture stroke. Multiple points form a stroke.
 
@@ -21,17 +21,17 @@ A timed point of a gesture stroke. Multiple points form a stroke.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#GesturePoint(kotlin.Float,%20kotlin.Float,%20kotlin.Long))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `t:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [GesturePoint](../android/gesture/GesturePoint.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `t:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#clone())`()` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../android/gesture/GesturePoint.md))`()` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#timestamp:kotlin.Long) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#x:kotlin.Float) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint#y:kotlin.Float) <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](../android/gesture/GesturePoint.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](../android/gesture/GesturePoint.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](../android/gesture/GesturePoint.md) <br /> |
 | --- | --- |
 
 ## Public constructors

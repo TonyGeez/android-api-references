@@ -10,13 +10,13 @@ abstract class EGLDisplay
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.microedition.khronos.egl.EGLDisplay](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLDisplay#) |
+| ↳ | [javax.microedition.khronos.egl.EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md) |
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------|---|
-| [EGLDisplay](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLDisplay#EGLDisplay())`()` <br /> |
+| [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md))`()` <br /> |
 
 ## Public constructors
 

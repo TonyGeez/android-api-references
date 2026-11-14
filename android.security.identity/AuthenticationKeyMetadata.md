@@ -9,7 +9,7 @@ class AuthenticationKeyMetadata
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.AuthenticationKeyMetadata](https://developer.android.com/reference/kotlin/android/security/identity/AuthenticationKeyMetadata#) |
+| ↳ | [android.security.identity.AuthenticationKeyMetadata](../android/security/identity/AuthenticationKeyMetadata.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**
@@ -22,7 +22,7 @@ Data about authentication keys.
 
 | Public methods ||
 |---|---|
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | `https://developer.android.com/reference/kotlin/android/security/identity/AuthenticationKeyMetadata#getExpirationDate()()` Gets expiration date for the authentication key. |
+| [Instant](../java/time/Instant.md) | `https://developer.android.com/reference/kotlin/android/security/identity/AuthenticationKeyMetadata#getExpirationDate()()` Gets expiration date for the authentication key. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/AuthenticationKeyMetadata#getUsageCount()()` Gets usage count for the authentication key. |
 
 ## Public methods

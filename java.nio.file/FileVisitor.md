@@ -8,9 +8,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface FileVisitor<T : Any!>
 ```
 
-| [java.nio.file.FileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#) |
+| [java.nio.file.FileVisitor](../java/nio/file/FileVisitor.md) |
 
-| Known Direct Subclasses [SimpleFileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor) |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------| | [SimpleFileVisitor](https://developer.android.com/reference/kotlin/java/nio/file/SimpleFileVisitor) | A simple visitor of files with default behavior to visit all files and to re-throw I/O errors. | |
+| Known Direct Subclasses [SimpleFileVisitor](../java/nio/file/SimpleFileVisitor.md) |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------| | [SimpleFileVisitor](../java/nio/file/SimpleFileVisitor.md) | A simple visitor of files with default behavior to visit all files and to re-throw I/O errors. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A visitor of files. An implementation of this interface is provided to the java.nio.file.Files#walkFileTree methods to visit each file in a file tree.
@@ -79,11 +79,11 @@ final Path source = ...
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [postVisitDirectory](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#postVisitDirectory(java.nio.file.FileVisitor.T,%20java.io.IOException))`(`dir:` `T`, `exc:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Invoked for a directory after entries in the directory, and all of their descendants, have been visited. |
-| abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [preVisitDirectory](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#preVisitDirectory(java.nio.file.FileVisitor.T,%20java.nio.file.attribute.BasicFileAttributes))`(`dir:` `T`, `attrs:` ` [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!`)` Invoked for a directory before entries in the directory are visited. |
-| abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [visitFile](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#visitFile(java.nio.file.FileVisitor.T,%20java.nio.file.attribute.BasicFileAttributes))`(`file:` `T`, `attrs:` ` [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!`)` Invoked for a file in a directory. |
+| abstract [FileVisitResult](../java/nio/file/FileVisitResult.md)! | [postVisitDirectory](../java/nio/file/FileVisitor.md))`(`dir:` `T`, `exc:` ` [IOException](../java/io/IOException.md)!`)` Invoked for a directory after entries in the directory, and all of their descendants, have been visited. |
+| abstract [FileVisitResult](../java/nio/file/FileVisitResult.md)! | [preVisitDirectory](../java/nio/file/FileVisitor.md))`(`dir:` `T`, `attrs:` ` [BasicFileAttributes](../java/nio/file/attribute/BasicFileAttributes.md)!`)` Invoked for a directory before entries in the directory are visited. |
+| abstract [FileVisitResult](../java/nio/file/FileVisitResult.md)! | [visitFile](../java/nio/file/FileVisitor.md))`(`file:` `T`, `attrs:` ` [BasicFileAttributes](../java/nio/file/attribute/BasicFileAttributes.md)!`)` Invoked for a file in a directory. |
 | --- | --- |
-| abstract [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | [visitFileFailed](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#visitFileFailed(java.nio.file.FileVisitor.T,%20java.io.IOException))`(`file:` `T`, `exc:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Invoked for a file that could not be visited. |
+| abstract [FileVisitResult](../java/nio/file/FileVisitResult.md)! | [visitFileFailed](../java/nio/file/FileVisitor.md))`(`file:` `T`, `exc:` ` [IOException](../java/io/IOException.md)!`)` Invoked for a file that could not be visited. |
 
 ## Public methods
 
@@ -98,16 +98,16 @@ abstract fun postVisitDirectory(
 ): FileVisitResult!
 ```
 
-Invoked for a directory after entries in the directory, and all of their descendants, have been visited. This method is also invoked when iteration of the directory completes prematurely (by a [visitFile](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitor#visitFile(java.nio.file.FileVisitor.T,%20java.nio.file.attribute.BasicFileAttributes))method returning [SKIP_SIBLINGS](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult), or an I/O error when iterating over the directory).
+Invoked for a directory after entries in the directory, and all of their descendants, have been visited. This method is also invoked when iteration of the directory completes prematurely (by a [visitFile](../java/nio/file/FileVisitor.md))method returning [SKIP_SIBLINGS](../java/nio/file/FileVisitResult.md), or an I/O error when iterating over the directory).
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dir` | T:a reference to the directory |
-| `exc` | [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!:`null`if the iteration of the directory completes without an error; otherwise the I/O exception that caused the iteration of the directory to complete prematurely |
+| `exc` | [IOException](../java/io/IOException.md)!:`null`if the iteration of the directory completes without an error; otherwise the I/O exception that caused the iteration of the directory to complete prematurely |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------|
-| [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | the visit result |
+| [FileVisitResult](../java/nio/file/FileVisitResult.md)! | the visit result |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -126,16 +126,16 @@ abstract fun preVisitDirectory(
 
 Invoked for a directory before entries in the directory are visited.
 
-If this method returns [CONTINUE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult), then entries in the directory are visited. If this method returns [SKIP_SUBTREE](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult) or [SKIP_SIBLINGS](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult) then entries in the directory (and any descendants) will not be visited.
+If this method returns [CONTINUE](../java/nio/file/FileVisitResult.md), then entries in the directory are visited. If this method returns [SKIP_SUBTREE](../java/nio/file/FileVisitResult.md) or [SKIP_SIBLINGS](../java/nio/file/FileVisitResult.md) then entries in the directory (and any descendants) will not be visited.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dir` | T:a reference to the directory |
-| `attrs` | [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!:the directory's basic attributes |
+| `attrs` | [BasicFileAttributes](../java/nio/file/attribute/BasicFileAttributes.md)!:the directory's basic attributes |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------|
-| [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | the visit result |
+| [FileVisitResult](../java/nio/file/FileVisitResult.md)! | the visit result |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -157,11 +157,11 @@ Invoked for a file in a directory.
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `file` | T:a reference to the file |
-| `attrs` | [BasicFileAttributes](https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes)!:the file's basic attributes |
+| `attrs` | [BasicFileAttributes](../java/nio/file/attribute/BasicFileAttributes.md)!:the file's basic attributes |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------|
-| [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | the visit result |
+| [FileVisitResult](../java/nio/file/FileVisitResult.md)! | the visit result |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -183,11 +183,11 @@ Invoked for a file that could not be visited. This method is invoked if the file
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `file` | T:a reference to the file |
-| `exc` | [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!:the I/O exception that prevented the file from being visited |
+| `exc` | [IOException](../java/io/IOException.md)!:the I/O exception that prevented the file from being visited |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------|
-| [FileVisitResult](https://developer.android.com/reference/kotlin/java/nio/file/FileVisitResult)! | the visit result |
+| [FileVisitResult](../java/nio/file/FileVisitResult.md)! | the visit result |
 
 | Exceptions ||
 |-----------------------|------------------------|

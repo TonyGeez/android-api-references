@@ -5,18 +5,18 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # FaceDetectionListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.FaceDetectionListener "View this page in Java") 
+Kotlin| [Java](../android/hardware/Camera.FaceDetectionListener.md) 
 | --- | --- |
 
 ```
 interface FaceDetectionListener
 ```
 
-| [android.hardware.Camera.FaceDetectionListener](https://developer.android.com/reference/kotlin/android/hardware/Camera.FaceDetectionListener#) |
+| [android.hardware.Camera.FaceDetectionListener](../android/hardware/Camera.FaceDetectionListener.md) |
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
 
 Callback interface for face detected in the preview frame.
 
@@ -24,7 +24,7 @@ Callback interface for face detected in the preview frame.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFaceDetection](https://developer.android.com/reference/kotlin/android/hardware/Camera.FaceDetectionListener#onFaceDetection(kotlin.Array,%20android.hardware.Camera))`(`faces:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Camera.Face](https://developer.android.com/reference/kotlin/android/hardware/Camera.Face)!>!`, `camera:` ` [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!`)` Notify the listener of the detected faces in the preview frame. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFaceDetection](../android/hardware/Camera.FaceDetectionListener.md))`(`faces:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Camera.Face](../android/hardware/Camera.Face.md)!>!`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Notify the listener of the detected faces in the preview frame. |
 
 ## Public methods
 
@@ -45,5 +45,5 @@ Notify the listener of the detected faces in the preview frame.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `faces` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Camera.Face](https://developer.android.com/reference/kotlin/android/hardware/Camera.Face)!\>!:The detected faces in a list |
-| `camera` | [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!:The [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera) service object |
+| `faces` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Camera.Face](../android/hardware/Camera.Face.md)!\>!:The detected faces in a list |
+| `camera` | [Camera](../android/hardware/Camera.md)!:The [Camera](../android/hardware/Camera.md) service object |

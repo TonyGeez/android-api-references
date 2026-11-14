@@ -8,8 +8,8 @@ open class KeyEvent : InputEvent, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent) ||
-| | ↳ | [android.view.KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#) |
+| ↳ | [android.view.InputEvent](../android/view/InputEvent.md) ||
+| | ↳ | [android.view.KeyEvent](../android/view/KeyEvent.md) |
 
 Object used to report key and button events.
 
@@ -557,11 +557,11 @@ Refer to `https://developer.android.com/reference/kotlin/android/view/InputDevic
 
 | Public methods ||
 |---|---|
-| open static [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeAction(android.view.KeyEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose action is replaced with the given value. |
-| open static [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeFlags(android.view.KeyEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose flags are replaced with the given value. |
-| open static [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeTimeRepeat(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newRepeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
+| open static [KeyEvent](../android/view/KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeAction(android.view.KeyEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose action is replaced with the given value. |
+| open static [KeyEvent](../android/view/KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeFlags(android.view.KeyEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose flags are replaced with the given value. |
+| open static [KeyEvent](../android/view/KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeTimeRepeat(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newRepeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
 | --- | --- |
-| open static [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeTimeRepeat(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newRepeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
+| open static [KeyEvent](../android/view/KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeTimeRepeat(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newRepeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#dispatch(android.view.KeyEvent.Callback)(receiver: https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback!)` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#dispatch(android.view.KeyEvent.Callback,%20android.view.KeyEvent.DispatcherState,%20kotlin.Any)(receiver: https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback!, state: https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Deliver this key event to a `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback` interface. |
 | --- | --- |
@@ -575,7 +575,7 @@ Refer to `https://developer.android.com/reference/kotlin/android/view/InputDevic
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getEventTime()()` Retrieve the time this event occurred, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getFlags()()` Returns the flags for this key event. |
-| [KeyCharacterMap](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyCharacterMap()()` Gets the `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap` associated with the keyboard device. |
+| [KeyCharacterMap](../android/view/KeyCharacterMap.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyCharacterMap()()` Gets the `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap` associated with the keyboard device. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyCode()()` Retrieve the key code of the key event. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyData(android.view.KeyCharacterMap.KeyData)(results: https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap.KeyData!)` Get the character conversion data for a given key code. |
@@ -641,7 +641,7 @@ Refer to `https://developer.android.com/reference/kotlin/android/view/InputDevic
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)!\> | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [KeyEvent](../android/view/KeyEvent.md)!\> | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -5595,7 +5595,7 @@ Copy an existing key event, modifying its time and repeat count.
 
 | Parameters ||
 |---|---|
-| `origEvent` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)!: The existing event to be copied. |
+| `origEvent` | [KeyEvent](../android/view/KeyEvent.md)!: The existing event to be copied. |
 | `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) of the event. |
 | `newRepeat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new repeat count of the event. |
 | --- | --- |
@@ -5808,7 +5808,7 @@ Create a new key event that is the same as the given one, but whose action is re
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)!: The existing event to be copied. This is not modified. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The existing event to be copied. This is not modified. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new action code of the event. |
 
 ### changeFlags
@@ -5826,7 +5826,7 @@ Create a new key event that is the same as the given one, but whose flags are re
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)!: The existing event to be copied. This is not modified. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The existing event to be copied. This is not modified. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new flags constant. |
 
 ### changeTimeRepeat
@@ -5845,7 +5845,7 @@ Create a new key event that is the same as the given one, but whose event time a
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)!: The existing event to be copied. This is not modified. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The existing event to be copied. This is not modified. |
 | `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) of the event. |
 | `newRepeat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new repeat count of the event. |
 | --- | --- |
@@ -5867,7 +5867,7 @@ Create a new key event that is the same as the given one, but whose event time a
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent#)!: The existing event to be copied. This is not modified. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The existing event to be copied. This is not modified. |
 | `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) of the event. |
 | `newRepeat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new repeat count of the event. |
 | --- | --- |
@@ -5900,8 +5900,8 @@ Deliver this key event to a `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `receiver` | [KeyEvent.Callback](https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback)!: The Callback that will be given the event. |
-| `state` | [KeyEvent.DispatcherState](https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState)!: State information retained across events. |
+| `receiver` | [KeyEvent.Callback](../android/view/KeyEvent.Callback.md)!: The Callback that will be given the event. |
+| `state` | [KeyEvent.DispatcherState](../android/view/KeyEvent.DispatcherState.md)!: State information retained across events. |
 | `target` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The target of the dispatch, for use in tracking. |
 | --- | --- |
 
@@ -6073,7 +6073,7 @@ Get the character conversion data for a given key code.
 
 | Parameters ||
 |---|---|
-| `results` | [KeyCharacterMap.KeyData](https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap.KeyData)!: A `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap.KeyData` instance that will be filled with the results. |
+| `results` | [KeyCharacterMap.KeyData](../android/view/KeyCharacterMap.KeyData.md)!: A `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap.KeyData` instance that will be filled with the results. |
 
 | Return ||
 |---|---|

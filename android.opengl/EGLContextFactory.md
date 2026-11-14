@@ -4,25 +4,25 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # EGLContextFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.EGLContextFactory "View this page in Java") 
+Kotlin| [Java](../android/opengl/GLSurfaceView.EGLContextFactory.md) 
 | --- | --- |
 
 ```
 interface EGLContextFactory
 ```
 
-| [android.opengl.GLSurfaceView.EGLContextFactory](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLContextFactory#) |
+| [android.opengl.GLSurfaceView.EGLContextFactory](../android/opengl/GLSurfaceView.EGLContextFactory.md) |
 
 An interface for customizing the eglCreateContext and eglDestroyContext calls.
 
-This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLContextFactory(EGLContextFactory)](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLContextFactory(android.opengl.GLSurfaceView.EGLContextFactory))
+This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLContextFactory(EGLContextFactory)](../android/opengl/GLSurfaceView.md))
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [EGLContext](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLContext.html#)! | [createContext](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLContextFactory#createContext(javax.microedition.khronos.egl.EGL10,%20javax.microedition.khronos.egl.EGLDisplay,%20javax.microedition.khronos.egl.EGLConfig))`(`egl:` ` [EGL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL10.html#)!`, `display:` ` [EGLDisplay](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLDisplay.html#)!`, `eglConfig:` ` [EGLConfig](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html#)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroyContext](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLContextFactory#destroyContext(javax.microedition.khronos.egl.EGL10,%20javax.microedition.khronos.egl.EGLDisplay,%20javax.microedition.khronos.egl.EGLContext))`(`egl:` ` [EGL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL10.html#)!`, `display:` ` [EGLDisplay](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLDisplay.html#)!`, `context:` ` [EGLContext](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLContext.html#)!`)` <br /> |
+| abstract [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)! | [createContext](../android/opengl/GLSurfaceView.EGLContextFactory.md))`(`egl:` ` [EGL10](../javax/microedition/khronos/egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `eglConfig:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroyContext](../android/opengl/GLSurfaceView.EGLContextFactory.md))`(`egl:` ` [EGL10](../javax/microedition/khronos/egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `context:` ` [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)!`)` <br /> |
 
 ## Public methods
 

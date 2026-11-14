@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # RangingResultCallback
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/rtt/RangingResultCallback "View this page in Java")
+Kotlin | [Java](../android/net/wifi/rtt/RangingResultCallback.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ abstract class RangingResultCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.RangingResultCallback](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#) |
+| ↳ | [android.net.wifi.rtt.RangingResultCallback](../android/net/wifi/rtt/RangingResultCallback.md) |
 
 Base class for ranging result callbacks. Should be extended by applications and set when calling `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)`. If the ranging operation fails in whole (not attempted) then `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingFailure(kotlin.Int)` will be called with a failure code. If the ranging operation is performed for each of the requested peers then the `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingResults(kotlin.collections.MutableList)` will be called with the set of results (@link `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult`, each of which has its own success/failure code `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`.
 
@@ -95,4 +95,4 @@ Called when a ranging operation was executed. The list of results corresponds to
 
 | Parameters ||
 |---|---|
-| `results` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RangingResult](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult)!\>: List of range measurements, one per requested device. This value cannot be `null`. |
+| `results` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RangingResult](../android/net/wifi/rtt/RangingResult.md)!\>: List of range measurements, one per requested device. This value cannot be `null`. |

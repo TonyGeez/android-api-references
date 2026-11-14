@@ -2,7 +2,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # SearchableInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/SearchableInfo "View this page in Java")
+Kotlin | [Java](../android/app/SearchableInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class SearchableInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.SearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchableInfo#) |
+| ↳ | [android.app.SearchableInfo](../android/app/SearchableInfo.md) |
 
 Searchability meta-data for an activity. Only applications that search other applications should need to use this class. See [Searchable Configuration](https://developer.android.com/guide/topics/search/searchable-config.html) for more information about declaring searchability meta-data for your application.
 
@@ -29,7 +29,7 @@ Searchability meta-data for an activity. Only applications that search other app
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getImeOptions()()` Gets the input method options specified in the searchable attributes. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getInputType()()` Gets the input type as specified in the searchable attributes. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSearchActivity()()` Gets the component name of the searchable activity. |
+| [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSearchActivity()()` Gets the component name of the searchable activity. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSettingsDescriptionId()()` Gets the resource id of the description string to use for this source in system search settings, or `0` if none has been specified. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#getSuggestAuthority()()` Gets the search suggestion content provider authority. |
@@ -60,7 +60,7 @@ Searchability meta-data for an activity. Only applications that search other app
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SearchableInfo](https://developer.android.com/reference/kotlin/android/app/SearchableInfo#)!\> | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#CREATOR:android.os.Parcelable.Creator` Support for parcelable and aidl operations. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SearchableInfo](../android/app/SearchableInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/SearchableInfo#CREATOR:android.os.Parcelable.Creator` Support for parcelable and aidl operations. |
 
 ## Public methods
 
@@ -468,7 +468,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LogPrinter
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/LogPrinter "View this page in Java") 
+Kotlin| [Java](../android/util/LogPrinter.md) 
 | --- | --- |
 
 ```
@@ -13,19 +13,19 @@ open class LogPrinter : Printer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.LogPrinter](https://developer.android.com/reference/kotlin/android/util/LogPrinter#) |
+| ↳ | [android.util.LogPrinter](../android/util/LogPrinter.md) |
 
-Implementation of a [android.util.Printer](https://developer.android.com/reference/kotlin/android/util/Printer) that sends its output to the system log.
+Implementation of a [android.util.Printer](../android/util/Printer.md) that sends its output to the system log.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LogPrinter](https://developer.android.com/reference/kotlin/android/util/LogPrinter#LogPrinter(kotlin.Int,%20kotlin.String))`(`priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new Printer that sends to the log with the given priority and tag. |
+| [LogPrinter](../android/util/LogPrinter.md))`(`priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new Printer that sends to the log with the given priority and tag. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](https://developer.android.com/reference/kotlin/android/util/LogPrinter#println(kotlin.String))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](../android/util/LogPrinter.md))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Create a new Printer that sends to the log with the given priority and tag.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `priority` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired log priority: [Log.VERBOSE](https://developer.android.com/reference/kotlin/android/util/Log#VERBOSE:kotlin.Int), [Log.DEBUG](https://developer.android.com/reference/kotlin/android/util/Log#DEBUG:kotlin.Int), [Log.INFO](https://developer.android.com/reference/kotlin/android/util/Log#INFO:kotlin.Int), [Log.WARN](https://developer.android.com/reference/kotlin/android/util/Log#WARN:kotlin.Int), or [Log.ERROR](https://developer.android.com/reference/kotlin/android/util/Log#ERROR:kotlin.Int). |
+| `priority` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired log priority: [Log.VERBOSE](../android/util/Log.md), [Log.DEBUG](../android/util/Log.md), [Log.INFO](../android/util/Log.md), [Log.WARN](../android/util/Log.md), or [Log.ERROR](../android/util/Log.md). |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A string tag to associate with each printed log statement. |
 
 ## Public methods

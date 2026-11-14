@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DashPathEffect
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/DashPathEffect "View this page in Java") 
+Kotlin| [Java](../android/graphics/DashPathEffect.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class DashPathEffect : PathEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect) ||
-| | ↳ | [android.graphics.DashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/DashPathEffect#) |
+| ↳ | [android.graphics.PathEffect](../android/graphics/PathEffect.md) ||
+| | ↳ | [android.graphics.DashPathEffect](../android/graphics/DashPathEffect.md) |
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/DashPathEffect#DashPathEffect(kotlin.FloatArray,%20kotlin.Float))`(`intervals:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `phase:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The intervals array must contain an even number of entries (\>=2), with the even indices specifying the "on" intervals, and the odd indices specifying the "off" intervals. |
+| [DashPathEffect](../android/graphics/DashPathEffect.md))`(`intervals:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `phase:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The intervals array must contain an even number of entries (\>=2), with the even indices specifying the "on" intervals, and the odd indices specifying the "off" intervals. |
 
 | Inherited functions ||
 |---|---|
-| From class [PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/graphics/PathEffect#finalize())`()` <br /> | ||
+| From class [PathEffect](../android/graphics/PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/PathEffect.md))`()` <br /> | ||
 
 ## Public constructors
 

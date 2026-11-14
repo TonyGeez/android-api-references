@@ -2,7 +2,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # ContactsContract
 
-Kotlin | [Java](https://developer.android.com/reference/android/provider/ContactsContract "View this page in Java")
+Kotlin | [Java](../android/provider/ContactsContract.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ContactsContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract#) |
+| ↳ | [android.provider.ContactsContract](../android/provider/ContactsContract.md) |
 
 The contract between the contacts provider and applications. Contains definitions for the supported URIs and columns. These APIs supersede `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts`.
 
@@ -121,7 +121,7 @@ Other tables include:
 
 | Properties ||
 |---|---|
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#AUTHORITY_URI:android.net.Uri` A content:// style uri to the authority for the contacts provider |
+| static [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#AUTHORITY_URI:android.net.Uri` A content:// style uri to the authority for the contacts provider |
 
 ## Constants
 

@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # NetworkErrorException
 
-Kotlin| [Java](https://developer.android.com/reference/android/accounts/NetworkErrorException "View this page in Java") 
+Kotlin| [Java](../android/accounts/NetworkErrorException.md) 
 | --- | --- |
 
 ```
@@ -14,19 +14,19 @@ open class NetworkErrorException : AccountsException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [android.accounts.AccountsException](https://developer.android.com/reference/kotlin/android/accounts/AccountsException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [android.accounts.AccountsException](../android/accounts/AccountsException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.accounts.NetworkErrorException](https://developer.android.com/reference/kotlin/android/accounts/NetworkErrorException#) |
+| | | | ↳ | [android.accounts.NetworkErrorException](../android/accounts/NetworkErrorException.md) |
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NetworkErrorException](https://developer.android.com/reference/kotlin/android/accounts/NetworkErrorException#NetworkErrorException())`()` <br /> |
-| [NetworkErrorException](https://developer.android.com/reference/kotlin/android/accounts/NetworkErrorException#NetworkErrorException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [NetworkErrorException](https://developer.android.com/reference/kotlin/android/accounts/NetworkErrorException#NetworkErrorException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
-| [NetworkErrorException](https://developer.android.com/reference/kotlin/android/accounts/NetworkErrorException#NetworkErrorException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [NetworkErrorException](../android/accounts/NetworkErrorException.md))`()` <br /> |
+| [NetworkErrorException](../android/accounts/NetworkErrorException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [NetworkErrorException](../android/accounts/NetworkErrorException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [NetworkErrorException](../android/accounts/NetworkErrorException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
 
 ## Public constructors
 

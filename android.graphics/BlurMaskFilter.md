@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BlurMaskFilter
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/BlurMaskFilter "View this page in Java") 
+Kotlin| [Java](../android/graphics/BlurMaskFilter.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class BlurMaskFilter : MaskFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter) ||
-| | ↳ | [android.graphics.BlurMaskFilter](https://developer.android.com/reference/kotlin/android/graphics/BlurMaskFilter#) |
+| ↳ | [android.graphics.MaskFilter](../android/graphics/MaskFilter.md) ||
+| | ↳ | [android.graphics.BlurMaskFilter](../android/graphics/BlurMaskFilter.md) |
 
 This takes a mask, and blurs its edge by the specified radius. Whether or or not to include the original mask, and whether the blur goes outside, inside, or straddles, the original mask's border, is controlled by the Blur enum.
 
@@ -22,15 +22,15 @@ This takes a mask, and blurs its edge by the specified radius. Whether or or not
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------|
-| | [Blur](https://developer.android.com/reference/kotlin/android/graphics/BlurMaskFilter.Blur) <br /> |
+| | [Blur](../android/graphics/BlurMaskFilter.Blur.md) <br /> |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BlurMaskFilter](https://developer.android.com/reference/kotlin/android/graphics/BlurMaskFilter#BlurMaskFilter(kotlin.Float,%20android.graphics.BlurMaskFilter.Blur))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `style:` ` [BlurMaskFilter.Blur](https://developer.android.com/reference/kotlin/android/graphics/BlurMaskFilter.Blur)!`)` Create a blur maskfilter. |
+| [BlurMaskFilter](../android/graphics/BlurMaskFilter.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `style:` ` [BlurMaskFilter.Blur](../android/graphics/BlurMaskFilter.Blur.md)!`)` Create a blur maskfilter. |
 
 | Inherited functions ||
 |---|---|
-| From class [MaskFilter](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/graphics/MaskFilter#finalize())`()` <br /> | ||
+| From class [MaskFilter](../android/graphics/MaskFilter.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/MaskFilter.md))`()` <br /> | ||
 
 ## Public constructors
 
@@ -49,7 +49,7 @@ Create a blur maskfilter.
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The radius to extend the blur from the original mask. Must be \> 0. |
-| `style` | [BlurMaskFilter.Blur](https://developer.android.com/reference/kotlin/android/graphics/BlurMaskFilter.Blur)!:The Blur to use |
+| `style` | [BlurMaskFilter.Blur](../android/graphics/BlurMaskFilter.Blur.md)!:The Blur to use |
 
 | Return ||
 |---|-------------------------|

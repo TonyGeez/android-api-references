@@ -4,14 +4,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # OnWindowVisibilityChangeListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener "View this page in Java") 
+Kotlin | [Java](../android/view/ViewTreeObserver.OnWindowVisibilityChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnWindowVisibilityChangeListener
 ```
 
-| [android.view.ViewTreeObserver.OnWindowVisibilityChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener#) |
+| [android.view.ViewTreeObserver.OnWindowVisibilityChangeListener](../android/view/ViewTreeObserver.OnWindowVisibilityChangeListener.md) |
 
 Interface definition for a callback to be invoked when the view hierarchy's window visibility changes.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the view hierarchy's wind
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWindowVisibilityChanged](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener#onWindowVisibilityChanged(kotlin.Int))`(`visibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback method to be invoked when the window visibility changes in the view tree. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWindowVisibilityChanged](../android/view/ViewTreeObserver.OnWindowVisibilityChangeListener.md))`(`visibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback method to be invoked when the window visibility changes in the view tree. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Callback method to be invoked when the window visibility changes in the view tre
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility of the window. Value is [android.view.View#VISIBLE](https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int), [android.view.View#INVISIBLE](https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int), or [android.view.View#GONE](https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int) |
+| `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility of the window. Value is [android.view.View#VISIBLE](../android/view/View.md), [android.view.View#INVISIBLE](../android/view/View.md), or [android.view.View#GONE](../android/view/View.md) |

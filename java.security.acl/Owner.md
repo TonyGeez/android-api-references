@@ -9,9 +9,9 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 interface Owner
 ```
 
-| [java.security.acl.Owner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#) |
+| [java.security.acl.Owner](../java/security/acl/Owner.md) |
 
-| Known Direct Subclasses [Acl](https://developer.android.com/reference/kotlin/java/security/acl/Acl) |-----------------------------------------------------------------------------|------------------------------------------------------| | [Acl](https://developer.android.com/reference/kotlin/java/security/acl/Acl) | Interface representing an Access Control List (ACL). | |
+| Known Direct Subclasses [Acl](../java/security/acl/Acl.md) |-----------------------------------------------------------------------------|------------------------------------------------------| | [Acl](../java/security/acl/Acl.md) | Interface representing an Access Control List (ACL). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 33.**
@@ -24,9 +24,9 @@ Interface for managing owners of Access Control Lists (ACLs) or ACL configuratio
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#addOwner(java.security.Principal,%20java.security.Principal))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` Adds an owner. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#deleteOwner(java.security.Principal,%20java.security.Principal))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` Deletes an owner. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#isOwner(java.security.Principal))`(`owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` Returns true if the given principal is an owner of the ACL. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addOwner](../java/security/acl/Owner.md))`(`caller:` ` [Principal](../java/security/Principal.md)!`, `owner:` ` [Principal](../java/security/Principal.md)!`)` Adds an owner. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteOwner](../java/security/acl/Owner.md))`(`caller:` ` [Principal](../java/security/Principal.md)!`, `owner:` ` [Principal](../java/security/Principal.md)!`)` Deletes an owner. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOwner](../java/security/acl/Owner.md))`(`owner:` ` [Principal](../java/security/Principal.md)!`)` Returns true if the given principal is an owner of the ACL. |
 | --- | --- |
 
 ## Public methods
@@ -48,8 +48,8 @@ Adds an owner. Only owners can modify ACL contents. The caller principal must be
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caller` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal invoking this method. It must be an owner of the ACL. |
-| `owner` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the owner that should be added to the list of owners. |
+| `caller` | [Principal](../java/security/Principal.md)!:the principal invoking this method. It must be an owner of the ACL. |
+| `owner` | [Principal](../java/security/Principal.md)!:the owner that should be added to the list of owners. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -78,8 +78,8 @@ The caller principal must be an owner of the ACL in order to invoke this method.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caller` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal invoking this method. It must be an owner of the ACL. |
-| `owner` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the owner to be removed from the list of owners. |
+| `caller` | [Principal](../java/security/Principal.md)!:the principal invoking this method. It must be an owner of the ACL. |
+| `owner` | [Principal](../java/security/Principal.md)!:the owner to be removed from the list of owners. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -104,7 +104,7 @@ Returns true if the given principal is an owner of the ACL.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `owner` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal to be checked to determine whether or not it is an owner. |
+| `owner` | [Principal](../java/security/Principal.md)!:the principal to be checked to determine whether or not it is an owner. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------|

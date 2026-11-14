@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ScanResult
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/ScanResult "View this page in Java") 
+Kotlin| [Java](../android/bluetooth/le/ScanResult.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ScanResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#) |
+| ↳ | [android.bluetooth.le.ScanResult](../android/bluetooth/le/ScanResult.md) |
 
 ScanResult for Bluetooth LE scan.
 
@@ -21,52 +21,52 @@ ScanResult for Bluetooth LE scan.
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_COMPLETE](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#DATA_COMPLETE:kotlin.Int) For chained advertisements, indicates that the data contained in this scan result is complete. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_TRUNCATED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#DATA_TRUNCATED:kotlin.Int) For chained advertisements, indicates that the controller was unable to receive all chained packets and the scan result contains incomplete truncated data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERIODIC_INTERVAL_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#PERIODIC_INTERVAL_NOT_PRESENT:kotlin.Int) Periodic advertising interval is not present in the packet. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_COMPLETE](../android/bluetooth/le/ScanResult.md) For chained advertisements, indicates that the data contained in this scan result is complete. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_TRUNCATED](../android/bluetooth/le/ScanResult.md) For chained advertisements, indicates that the controller was unable to receive all chained packets and the scan result contains incomplete truncated data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERIODIC_INTERVAL_NOT_PRESENT](../android/bluetooth/le/ScanResult.md) Periodic advertising interval is not present in the packet. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHY_UNUSED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#PHY_UNUSED:kotlin.Int) Indicates that the secondary physical layer was not used. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SID_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#SID_NOT_PRESENT:kotlin.Int) Advertising Set ID is not present in the packet. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TX_POWER_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#TX_POWER_NOT_PRESENT:kotlin.Int) TX power is not present in the packet. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHY_UNUSED](../android/bluetooth/le/ScanResult.md) Indicates that the secondary physical layer was not used. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SID_NOT_PRESENT](../android/bluetooth/le/ScanResult.md) Advertising Set ID is not present in the packet. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TX_POWER_NOT_PRESENT](../android/bluetooth/le/ScanResult.md) TX power is not present in the packet. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#ScanResult(android.bluetooth.BluetoothDevice,%20android.bluetooth.le.ScanRecord,%20kotlin.Int,%20kotlin.Long))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!`, `scanRecord:` ` [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)!`, `rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timestampNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new ScanResult. |
-| [ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#ScanResult(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.bluetooth.le.ScanRecord,%20kotlin.Long))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!`, `eventType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `primaryPhy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `secondaryPhy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `advertisingSid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `txPower:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `periodicAdvertisingInterval:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `scanRecord:` ` [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)!`, `timestampNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new ScanResult. |
+| [ScanResult](../android/bluetooth/le/ScanResult.md))`(`device:` ` [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!`, `scanRecord:` ` [ScanRecord](../android/bluetooth/le/ScanRecord.md)!`, `rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timestampNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new ScanResult. |
+| [ScanResult](../android/bluetooth/le/ScanResult.md))`(`device:` ` [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!`, `eventType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `primaryPhy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `secondaryPhy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `advertisingSid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `txPower:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `periodicAdvertisingInterval:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `scanRecord:` ` [ScanRecord](../android/bluetooth/le/ScanRecord.md)!`, `timestampNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new ScanResult. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvertisingSid](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getAdvertisingSid())`()` Returns the advertising set id. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/bluetooth/le/ScanResult.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/bluetooth/le/ScanResult.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvertisingSid](../android/bluetooth/le/ScanResult.md))`()` Returns the advertising set id. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataStatus](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getDataStatus())`()` Returns the data status. |
-| [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)! | [getDevice](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getDevice())`()` Returns the remote Bluetooth device identified by the Bluetooth device address. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeriodicAdvertisingInterval](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getPeriodicAdvertisingInterval())`()` Returns the periodic advertising interval in units of 1. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDataStatus](../android/bluetooth/le/ScanResult.md))`()` Returns the data status. |
+| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)! | [getDevice](../android/bluetooth/le/ScanResult.md))`()` Returns the remote Bluetooth device identified by the Bluetooth device address. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeriodicAdvertisingInterval](../android/bluetooth/le/ScanResult.md))`()` Returns the periodic advertising interval in units of 1. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimaryPhy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getPrimaryPhy())`()` Returns the primary Physical Layer on which this advertisement was received. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getRssi())`()` Returns the received signal strength in dBm. |
-| [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)? | [getScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getScanRecord())`()` Returns the scan record, which is a combination of advertisement and scan response. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimaryPhy](../android/bluetooth/le/ScanResult.md))`()` Returns the primary Physical Layer on which this advertisement was received. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](../android/bluetooth/le/ScanResult.md))`()` Returns the received signal strength in dBm. |
+| [ScanRecord](../android/bluetooth/le/ScanRecord.md)? | [getScanRecord](../android/bluetooth/le/ScanResult.md))`()` Returns the scan record, which is a combination of advertisement and scan response. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecondaryPhy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getSecondaryPhy())`()` Returns the secondary Physical Layer on which this advertisement was received. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampNanos](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getTimestampNanos())`()` Returns timestamp since boot when the scan record was observed. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTxPower](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#getTxPower())`()` Returns the transmit power in dBm. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecondaryPhy](../android/bluetooth/le/ScanResult.md))`()` Returns the secondary Physical Layer on which this advertisement was received. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampNanos](../android/bluetooth/le/ScanResult.md))`()` Returns timestamp since boot when the scan record was observed. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTxPower](../android/bluetooth/le/ScanResult.md))`()` Returns the transmit power in dBm. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#hashCode())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectable](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#isConnectable())`()` Returns true if this object represents connectable scan result. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLegacy](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#isLegacy())`()` Returns true if this object represents legacy scan result. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/bluetooth/le/ScanResult.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectable](../android/bluetooth/le/ScanResult.md))`()` Returns true if this object represents connectable scan result. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLegacy](../android/bluetooth/le/ScanResult.md))`()` Returns true if this object represents legacy scan result. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/bluetooth/le/ScanResult.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/bluetooth/le/ScanResult.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ScanResult](../android/bluetooth/le/ScanResult.md)!\> | [CREATOR](../android/bluetooth/le/ScanResult.md) <br /> |
 
 ## Constants
 
@@ -156,14 +156,14 @@ ScanResult(
     timestampNanos: Long)
 ```
 
-**Deprecated:** *use [ScanResult(android.bluetooth.BluetoothDevice,int,int,int,int,int,int,int,android.bluetooth.le.ScanRecord,long)](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#ScanResult(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.bluetooth.le.ScanRecord,%20kotlin.Long))*
+**Deprecated:** *use [ScanResult(android.bluetooth.BluetoothDevice,int,int,int,int,int,int,int,android.bluetooth.le.ScanRecord,long)](../android/bluetooth/le/ScanResult.md))*
 
 Constructs a new ScanResult.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!:Remote Bluetooth device found. |
-| `scanRecord` | [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)!:Scan record including both advertising data and scan response data. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!:Remote Bluetooth device found. |
+| `scanRecord` | [ScanRecord](../android/bluetooth/le/ScanRecord.md)!:Scan record including both advertising data and scan response data. |
 | `rssi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Received signal strength. |
 | --- | --- |
 | `timestampNanos` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):Timestamp at which the scan result was observed. |
@@ -190,7 +190,7 @@ Constructs a new ScanResult.
 
 | Parameters ||
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!:Remote Bluetooth device found. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!:Remote Bluetooth device found. |
 | `eventType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Event type. |
 | `primaryPhy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Primary advertising phy. |
 | --- | --- |
@@ -200,7 +200,7 @@ Constructs a new ScanResult.
 | --- | --- |
 | `rssi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Received signal strength. |
 | `periodicAdvertisingInterval` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Periodic advertising interval. |
-| `scanRecord` | [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)!:Scan record including both advertising data and scan response data. |
+| `scanRecord` | [ScanRecord](../android/bluetooth/le/ScanRecord.md)!:Scan record including both advertising data and scan response data. |
 | --- | --- |
 | `timestampNanos` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):Timestamp at which the scan result was observed. |
 
@@ -216,7 +216,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -254,7 +254,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getAdvertisingSid(): Int
 ```
 
-Returns the advertising set id. May return [ScanResult.SID_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#SID_NOT_PRESENT:kotlin.Int) if no set id was is present. 
+Returns the advertising set id. May return [ScanResult.SID_NOT_PRESENT](../android/bluetooth/le/ScanResult.md) if no set id was is present. 
 
 ### getDataStatus
 
@@ -264,7 +264,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getDataStatus(): Int
 ```
 
-Returns the data status. Can be one of [ScanResult.DATA_COMPLETE](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#DATA_COMPLETE:kotlin.Int) or [android.bluetooth.le.ScanResult#DATA_TRUNCATED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#DATA_TRUNCATED:kotlin.Int). 
+Returns the data status. Can be one of [ScanResult.DATA_COMPLETE](../android/bluetooth/le/ScanResult.md) or [android.bluetooth.le.ScanResult#DATA_TRUNCATED](../android/bluetooth/le/ScanResult.md). 
 
 ### getDevice
 
@@ -274,7 +274,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getDevice(): BluetoothDevice!
 ```
 
-Returns the remote Bluetooth device identified by the Bluetooth device address. If the device is bonded, calling [BluetoothDevice.getAddress](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#getAddress())on the object returned by this method will return the address that was originally bonded with (either identity address or random address). 
+Returns the remote Bluetooth device identified by the Bluetooth device address. If the device is bonded, calling [BluetoothDevice.getAddress](../android/bluetooth/BluetoothDevice.md))on the object returned by this method will return the address that was originally bonded with (either identity address or random address). 
 
 ### getPeriodicAdvertisingInterval
 
@@ -284,7 +284,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getPeriodicAdvertisingInterval(): Int
 ```
 
-Returns the periodic advertising interval in units of 1.25ms. Valid range is 6 (7.5ms) to 65536 (81918.75ms). A value of [ScanResult.PERIODIC_INTERVAL_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#PERIODIC_INTERVAL_NOT_PRESENT:kotlin.Int) means periodic advertising interval is not present. 
+Returns the periodic advertising interval in units of 1.25ms. Valid range is 6 (7.5ms) to 65536 (81918.75ms). A value of [ScanResult.PERIODIC_INTERVAL_NOT_PRESENT](../android/bluetooth/le/ScanResult.md) means periodic advertising interval is not present. 
 
 ### getPrimaryPhy
 
@@ -294,7 +294,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getPrimaryPhy(): Int
 ```
 
-Returns the primary Physical Layer on which this advertisement was received. Can be one of [BluetoothDevice.PHY_LE_1M](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#PHY_LE_1M:kotlin.Int) or [BluetoothDevice.PHY_LE_CODED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#PHY_LE_CODED:kotlin.Int). 
+Returns the primary Physical Layer on which this advertisement was received. Can be one of [BluetoothDevice.PHY_LE_1M](../android/bluetooth/BluetoothDevice.md) or [BluetoothDevice.PHY_LE_CODED](../android/bluetooth/BluetoothDevice.md). 
 
 ### getRssi
 
@@ -318,7 +318,7 @@ Returns the scan record, which is a combination of advertisement and scan respon
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------|
-| [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord)? | This value may be`null`. |
+| [ScanRecord](../android/bluetooth/le/ScanRecord.md)? | This value may be`null`. |
 
 ### getSecondaryPhy
 
@@ -328,7 +328,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getSecondaryPhy(): Int
 ```
 
-Returns the secondary Physical Layer on which this advertisement was received. Can be one of [BluetoothDevice.PHY_LE_1M](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#PHY_LE_1M:kotlin.Int), [BluetoothDevice.PHY_LE_2M](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#PHY_LE_2M:kotlin.Int), [android.bluetooth.BluetoothDevice#PHY_LE_CODED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#PHY_LE_CODED:kotlin.Int) or [ScanResult.PHY_UNUSED](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#PHY_UNUSED:kotlin.Int)- if the advertisement was not received on a secondary physical channel. 
+Returns the secondary Physical Layer on which this advertisement was received. Can be one of [BluetoothDevice.PHY_LE_1M](../android/bluetooth/BluetoothDevice.md), [BluetoothDevice.PHY_LE_2M](../android/bluetooth/BluetoothDevice.md), [android.bluetooth.BluetoothDevice#PHY_LE_CODED](../android/bluetooth/BluetoothDevice.md) or [ScanResult.PHY_UNUSED](../android/bluetooth/le/ScanResult.md)- if the advertisement was not received on a secondary physical channel. 
 
 ### getTimestampNanos
 
@@ -348,7 +348,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getTxPower(): Int
 ```
 
-Returns the transmit power in dBm. Valid range is \[-127, 126\]. A value of [android.bluetooth.le.ScanResult#TX_POWER_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult#TX_POWER_NOT_PRESENT:kotlin.Int) indicates that the TX power is not present. 
+Returns the transmit power in dBm. Valid range is \[-127, 126\]. A value of [android.bluetooth.le.ScanResult#TX_POWER_NOT_PRESENT](../android/bluetooth/le/ScanResult.md) indicates that the TX power is not present. 
 
 ### hashCode
 
@@ -407,8 +407,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

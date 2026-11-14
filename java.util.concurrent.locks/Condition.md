@@ -8,18 +8,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Condition
 ```
 
-| [java.util.concurrent.locks.Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#) |
+| [java.util.concurrent.locks.Condition](../java/util/concurrent/locks/Condition.md) |
 
-| Known Direct Subclasses [AbstractQueuedLongSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject), [AbstractQueuedSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractQueuedLongSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject) | Condition implementation for a [AbstractQueuedLongSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer) serving as the basis of a [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) implementation. | | [AbstractQueuedSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject) | Condition implementation for a [AbstractQueuedSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer) serving as the basis of a [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) implementation. | |
+| Known Direct Subclasses [AbstractQueuedLongSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.md), [AbstractQueuedSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.md) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractQueuedLongSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.md) | Condition implementation for a [AbstractQueuedLongSynchronizer](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.md) serving as the basis of a [Lock](../java/util/concurrent/locks/Lock.md) implementation. | | [AbstractQueuedSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.md) | Condition implementation for a [AbstractQueuedSynchronizer](../java/util/concurrent/locks/AbstractQueuedSynchronizer.md) serving as the basis of a [Lock](../java/util/concurrent/locks/Lock.md) implementation. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-`Condition`factors out the`Object`monitor methods ([wait](https://developer.android.com/reference/kotlin/java/lang/Object.html#wait()), [notify](https://developer.android.com/reference/kotlin/java/lang/Object.html#notify())and [notifyAll](https://developer.android.com/reference/kotlin/java/lang/Object.html#notifyAll())) into distinct objects to give the effect of having multiple wait-sets per object, by combining them with the use of arbitrary [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) implementations. Where a`Lock`replaces the use of`synchronized`methods and statements, a`Condition`replaces the use of the Object monitor methods.
+`Condition`factors out the`Object`monitor methods ([wait](../java/lang/Object.md)), [notify](../java/lang/Object.md))and [notifyAll](../java/lang/Object.md))) into distinct objects to give the effect of having multiple wait-sets per object, by combining them with the use of arbitrary [Lock](../java/util/concurrent/locks/Lock.md) implementations. Where a`Lock`replaces the use of`synchronized`methods and statements, a`Condition`replaces the use of the Object monitor methods.
 
 Conditions (also known as*condition queues* or*condition variables* ) provide a means for one thread to suspend execution (to "wait") until notified by another thread that some state condition may now be true. Because access to this shared state information occurs in different threads, it must be protected, so a lock of some form is associated with the condition. The key property that waiting for a condition provides is that it*atomically* releases the associated lock and suspends the current thread, just like`Object.wait`.
 
-A`Condition`instance is intrinsically bound to a lock. To obtain a`Condition`instance for a particular [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) instance use its [newCondition()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#newCondition())method.
+A`Condition`instance is intrinsically bound to a lock. To obtain a`Condition`instance for a particular [Lock](../java/util/concurrent/locks/Lock.md) instance use its [newCondition()](../java/util/concurrent/locks/Lock.md))method.
 
-As an example, suppose we have a bounded buffer which supports`put`and`take`methods. If a`take`is attempted on an empty buffer, then the thread will block until an item becomes available; if a`put`is attempted on a full buffer, then the thread will block until a space becomes available. We would like to keep waiting`put`threads and`take`threads in separate wait-sets so that we can use the optimization of only notifying a single thread at a time when items or spaces become available in the buffer. This can be achieved using two [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#) instances. 
+As an example, suppose we have a bounded buffer which supports`put`and`take`methods. If a`take`is attempted on an empty buffer, then the thread will block until an item becomes available; if a`put`is attempted on a full buffer, then the thread will block until a space becomes available. We would like to keep waiting`put`threads and`take`threads in separate wait-sets so that we can use the optimization of only notifying a single thread at a time when items or spaces become available in the buffer. This can be achieved using two [Condition](../java/util/concurrent/locks/Condition.md) instances. 
 
 ```kotlin
 class BoundedBuffer<E> {
@@ -49,13 +49,13 @@ class BoundedBuffer<E> {
   }
   
 ```
-(The [java.util.concurrent.ArrayBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/ArrayBlockingQueue.html#) class provides this functionality, so there is no reason to implement this sample usage class.)
+(The [java.util.concurrent.ArrayBlockingQueue](../java/util/concurrent/ArrayBlockingQueue.md) class provides this functionality, so there is no reason to implement this sample usage class.)
 
 A`Condition`implementation can provide behavior and semantics that is different from that of the`Object`monitor methods, such as guaranteed ordering for notifications, or not requiring a lock to be held when performing notifications. If an implementation provides such specialized semantics then the implementation must document those semantics.
 
-Note that`Condition`instances are just normal objects and can themselves be used as the target in a`synchronized`statement, and can have their own monitor java.lang.Object#wait and [notify](https://developer.android.com/reference/kotlin/java/lang/Object.html#notify())methods invoked. Acquiring the monitor lock of a`Condition`instance, or using its monitor methods, has no specified relationship with acquiring the [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) associated with that`Condition`or the use of its #await and [signalling](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signal())methods. It is recommended that to avoid confusion you never use`Condition`instances in this way, except perhaps within their own implementation.
+Note that`Condition`instances are just normal objects and can themselves be used as the target in a`synchronized`statement, and can have their own monitor java.lang.Object#wait and [notify](../java/lang/Object.md))methods invoked. Acquiring the monitor lock of a`Condition`instance, or using its monitor methods, has no specified relationship with acquiring the [Lock](../java/util/concurrent/locks/Lock.md) associated with that`Condition`or the use of its #await and [signalling](../java/util/concurrent/locks/Condition.md))methods. It is recommended that to avoid confusion you never use`Condition`instances in this way, except perhaps within their own implementation.
 
-Except where noted, passing a`null`value for any parameter will result in a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) being thrown.
+Except where noted, passing a`null`value for any parameter will result in a [NullPointerException](../java/lang/NullPointerException.md) being thrown.
 
 ## Implementation Considerations
 
@@ -73,15 +73,15 @@ As interruption generally implies cancellation, and checks for interruption are 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [await](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#await())`()` Causes the current thread to wait until it is signalled or [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt()). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [await](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#await(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!`)` Causes the current thread to wait until it is signalled or interrupted, or the specified waiting time elapses. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [awaitNanos](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#awaitNanos(kotlin.Long))`(`nanosTimeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Causes the current thread to wait until it is signalled or interrupted, or the specified waiting time elapses. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [await](../java/util/concurrent/locks/Condition.md))`()` Causes the current thread to wait until it is signalled or [interrupted](../java/lang/Thread.md)). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [await](../java/util/concurrent/locks/Condition.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` Causes the current thread to wait until it is signalled or interrupted, or the specified waiting time elapses. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [awaitNanos](../java/util/concurrent/locks/Condition.md))`(`nanosTimeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Causes the current thread to wait until it is signalled or interrupted, or the specified waiting time elapses. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [awaitUninterruptibly](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#awaitUninterruptibly())`()` Causes the current thread to wait until it is signalled. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitUntil](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#awaitUntil(java.util.Date))`(`deadline:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Causes the current thread to wait until it is signalled or interrupted, or the specified deadline elapses. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [signal](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signal())`()` Wakes up one waiting thread. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [awaitUninterruptibly](../java/util/concurrent/locks/Condition.md))`()` Causes the current thread to wait until it is signalled. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitUntil](../java/util/concurrent/locks/Condition.md))`(`deadline:` ` [Date](../java/util/Date.md)!`)` Causes the current thread to wait until it is signalled or interrupted, or the specified deadline elapses. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [signal](../java/util/concurrent/locks/Condition.md))`()` Wakes up one waiting thread. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [signalAll](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signalAll())`()` Wakes up all waiting threads. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [signalAll](../java/util/concurrent/locks/Condition.md))`()` Wakes up all waiting threads. |
 
 ## Public methods
 
@@ -93,13 +93,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun await(): Unit
 ```
 
-Causes the current thread to wait until it is signalled or [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt()).
+Causes the current thread to wait until it is signalled or [interrupted](../java/lang/Thread.md)).
 
 The lock associated with this`Condition`is atomically released and the current thread becomes disabled for thread scheduling purposes and lies dormant until*one*of four things happens:
 
-- Some other thread invokes the [signal](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signal())method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
-- Some other thread invokes the [signalAll](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signalAll())method for this`Condition`; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread, and interruption of thread suspension is supported; or
+- Some other thread invokes the [signal](../java/util/concurrent/locks/Condition.md))method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
+- Some other thread invokes the [signalAll](../java/util/concurrent/locks/Condition.md))method for this`Condition`; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread, and interruption of thread suspension is supported; or
 - A "*spurious wakeup*" occurs.
 
 In all cases, before this method can return the current thread must re-acquire the lock associated with this condition. When the thread returns it is*guaranteed*to hold this lock.
@@ -107,13 +107,13 @@ In all cases, before this method can return the current thread must re-acquire t
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())while waiting and interruption of thread suspension is supported,
+- is [interrupted](../java/lang/Thread.md))while waiting and interruption of thread suspension is supported,
 
-then [InterruptedException](https://developer.android.com/reference/kotlin/java/lang/InterruptedException.html#) is thrown and the current thread's interrupted status is cleared. It is not specified, in the first case, whether or not the test for interruption occurs before the lock is released.
+then [InterruptedException](../java/lang/InterruptedException.md) is thrown and the current thread's interrupted status is cleared. It is not specified, in the first case, whether or not the test for interruption occurs before the lock is released.
 
 **Implementation Considerations**
 
-The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalMonitorStateException.html#)) and the implementation must document that fact.
+The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md)) and the implementation must document that fact.
 
 An implementation can favor responding to an interrupt over normal method return in response to a signal. In that case the implementation must ensure that the signal is redirected to another waiting thread, if there is one.
 
@@ -143,7 +143,7 @@ Causes the current thread to wait until it is signalled or interrupted, or the s
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------|
 | `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!:the time unit of the`time`argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit of the`time`argument |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -165,9 +165,9 @@ Causes the current thread to wait until it is signalled or interrupted, or the s
 
 The lock associated with this condition is atomically released and the current thread becomes disabled for thread scheduling purposes and lies dormant until*one*of five things happens:
 
-- Some other thread invokes the [signal](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signal())method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
-- Some other thread invokes the [signalAll](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signalAll())method for this`Condition`; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread, and interruption of thread suspension is supported; or
+- Some other thread invokes the [signal](../java/util/concurrent/locks/Condition.md))method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
+- Some other thread invokes the [signalAll](../java/util/concurrent/locks/Condition.md))method for this`Condition`; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread, and interruption of thread suspension is supported; or
 - The specified waiting time elapses; or
 - A "*spurious wakeup*" occurs.
 
@@ -176,9 +176,9 @@ In all cases, before this method can return the current thread must re-acquire t
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())while waiting and interruption of thread suspension is supported,
+- is [interrupted](../java/lang/Thread.md))while waiting and interruption of thread suspension is supported,
 
-then [InterruptedException](https://developer.android.com/reference/kotlin/java/lang/InterruptedException.html#) is thrown and the current thread's interrupted status is cleared. It is not specified, in the first case, whether or not the test for interruption occurs before the lock is released.
+then [InterruptedException](../java/lang/InterruptedException.md) is thrown and the current thread's interrupted status is cleared. It is not specified, in the first case, whether or not the test for interruption occurs before the lock is released.
 
 The method returns an estimate of the number of nanoseconds remaining to wait given the supplied`nanosTimeout`value upon return, or a value less than or equal to zero if it timed out. This value can be used to determine whether and how long to re-wait in cases where the wait returns but an awaited condition still does not hold. Typical uses of this method take the following form: 
 
@@ -205,7 +205,7 @@ Design note: This method requires a nanosecond argument so as to avoid truncatio
 
 **Implementation Considerations**
 
-The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalMonitorStateException.html#)) and the implementation must document that fact.
+The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md)) and the implementation must document that fact.
 
 An implementation can favor responding to an interrupt over normal method return in response to a signal, or over indicating the elapse of the specified waiting time. In either case the implementation must ensure that the signal is redirected to another waiting thread, if there is one.
 
@@ -233,17 +233,17 @@ Causes the current thread to wait until it is signalled.
 
 The lock associated with this condition is atomically released and the current thread becomes disabled for thread scheduling purposes and lies dormant until*one*of three things happens:
 
-- Some other thread invokes the [signal](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signal())method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
-- Some other thread invokes the [signalAll](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signalAll())method for this`Condition`; or
+- Some other thread invokes the [signal](../java/util/concurrent/locks/Condition.md))method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
+- Some other thread invokes the [signalAll](../java/util/concurrent/locks/Condition.md))method for this`Condition`; or
 - A "*spurious wakeup*" occurs.
 
 In all cases, before this method can return the current thread must re-acquire the lock associated with this condition. When the thread returns it is*guaranteed*to hold this lock.
 
-If the current thread's interrupted status is set when it enters this method, or it is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())while waiting, it will continue to wait until signalled. When it finally returns from this method its interrupted status will still be set.
+If the current thread's interrupted status is set when it enters this method, or it is [interrupted](../java/lang/Thread.md))while waiting, it will continue to wait until signalled. When it finally returns from this method its interrupted status will still be set.
 
 **Implementation Considerations**
 
-The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalMonitorStateException.html#)) and the implementation must document that fact. 
+The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md)) and the implementation must document that fact. 
 
 ### awaitUntil
 
@@ -257,9 +257,9 @@ Causes the current thread to wait until it is signalled or interrupted, or the s
 
 The lock associated with this condition is atomically released and the current thread becomes disabled for thread scheduling purposes and lies dormant until*one*of five things happens:
 
-- Some other thread invokes the [signal](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signal())method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
-- Some other thread invokes the [signalAll](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition#signalAll())method for this`Condition`; or
-- Some other thread [interrupts](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())the current thread, and interruption of thread suspension is supported; or
+- Some other thread invokes the [signal](../java/util/concurrent/locks/Condition.md))method for this`Condition`and the current thread happens to be chosen as the thread to be awakened; or
+- Some other thread invokes the [signalAll](../java/util/concurrent/locks/Condition.md))method for this`Condition`; or
+- Some other thread [interrupts](../java/lang/Thread.md))the current thread, and interruption of thread suspension is supported; or
 - The specified deadline elapses; or
 - A "*spurious wakeup*" occurs.
 
@@ -268,9 +268,9 @@ In all cases, before this method can return the current thread must re-acquire t
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread.html#interrupt())while waiting and interruption of thread suspension is supported,
+- is [interrupted](../java/lang/Thread.md))while waiting and interruption of thread suspension is supported,
 
-then [InterruptedException](https://developer.android.com/reference/kotlin/java/lang/InterruptedException.html#) is thrown and the current thread's interrupted status is cleared. It is not specified, in the first case, whether or not the test for interruption occurs before the lock is released.
+then [InterruptedException](../java/lang/InterruptedException.md) is thrown and the current thread's interrupted status is cleared. It is not specified, in the first case, whether or not the test for interruption occurs before the lock is released.
 
 The return value indicates whether the deadline has elapsed, which can be used as follows: 
 
@@ -295,13 +295,13 @@ The return value indicates whether the deadline has elapsed, which can be used a
 
 **Implementation Considerations**
 
-The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalMonitorStateException.html#)) and the implementation must document that fact.
+The current thread is assumed to hold the lock associated with this`Condition`when this method is called. It is up to the implementation to determine if this is the case and if not, how to respond. Typically, an exception will be thrown (such as [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md)) and the implementation must document that fact.
 
 An implementation can favor responding to an interrupt over normal method return in response to a signal, or over indicating the passing of the specified deadline. In either case the implementation must ensure that the signal is redirected to another waiting thread, if there is one.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `deadline` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!:the absolute time to wait until |
+| `deadline` | [Date](../java/util/Date.md)!:the absolute time to wait until |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -325,7 +325,7 @@ If any threads are waiting on this condition then one is selected for waking up.
 
 **Implementation Considerations**
 
-An implementation may (and typically does) require that the current thread hold the lock associated with this`Condition`when this method is called. Implementations must document this precondition and any actions taken if the lock is not held. Typically, an exception such as [IllegalMonitorStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalMonitorStateException.html#) will be thrown. 
+An implementation may (and typically does) require that the current thread hold the lock associated with this`Condition`when this method is called. Implementations must document this precondition and any actions taken if the lock is not held. Typically, an exception such as [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md) will be thrown. 
 
 ### signalAll
 
@@ -341,4 +341,4 @@ If any threads are waiting on this condition then they are all woken up. Each th
 
 **Implementation Considerations**
 
-An implementation may (and typically does) require that the current thread hold the lock associated with this`Condition`when this method is called. Implementations must document this precondition and any actions taken if the lock is not held. Typically, an exception such as [IllegalMonitorStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalMonitorStateException.html#) will be thrown.
+An implementation may (and typically does) require that the current thread hold the lock associated with this`Condition`when this method is called. Implementations must document this precondition and any actions taken if the lock is not held. Typically, an exception such as [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md) will be thrown.

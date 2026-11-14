@@ -10,7 +10,7 @@ open class MeasurementManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.measurement.MeasurementManager](https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#) |
+| ↳ | [android.adservices.measurement.MeasurementManager](../android/adservices/measurement/MeasurementManager.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -30,7 +30,7 @@ MeasurementManager provides APIs to manage source and trigger registrations.
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#deleteRegistrations(android.adservices.measurement.DeletionRequest,%20java.util.concurrent.Executor,%20android.adservices.common.AdServicesOutcomeReceiver)(deletionRequest: https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Deletes previous registrations. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#deleteRegistrations(android.adservices.measurement.DeletionRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(deletionRequest: https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Deletes previous registrations. |
-| open static [MeasurementManager](https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method for creating an instance of MeasurementManager. |
+| open static [MeasurementManager](../android/adservices/measurement/MeasurementManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method for creating an instance of MeasurementManager. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#getMeasurementApiStatus(java.util.concurrent.Executor,%20android.adservices.common.AdServicesOutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Gets Measurement API status. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/MeasurementManager#getMeasurementApiStatus(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Gets Measurement API status. |
@@ -109,9 +109,9 @@ For use on Android R or lower.
 
 | Parameters ||
 |---|---|
-| `deletionRequest` | [DeletionRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest): The request for deleting data. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor to run callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
+| `deletionRequest` | [DeletionRequest](../android/adservices/measurement/DeletionRequest.md): The request for deleting data. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
 | --- | --- |
 
 ### deleteRegistrations
@@ -136,9 +136,9 @@ If the deletion is successful, the callback's `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `deletionRequest` | [DeletionRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/DeletionRequest): The request for deleting data. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor to run callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
+| `deletionRequest` | [DeletionRequest](../android/adservices/measurement/DeletionRequest.md): The request for deleting data. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
 | --- | --- |
 
 ### get
@@ -157,7 +157,7 @@ Factory method for creating an instance of MeasurementManager.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -187,8 +187,8 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): used by callback to dispatch results. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): used by callback to dispatch results. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Exception](../java/lang/Exception.md)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
 
 ### getMeasurementApiStatus
 
@@ -212,8 +212,8 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): used by callback to dispatch results. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): used by callback to dispatch results. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Exception](../java/lang/Exception.md)!\>: intended to notify asynchronously the API result. This value cannot be `null`. |
 
 ### registerSource
 
@@ -238,9 +238,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [SourceRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest): app source registration request. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `request` | [SourceRegistrationRequest](../android/adservices/measurement/SourceRegistrationRequest.md): app source registration request. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |
 
 ### registerSource
@@ -266,9 +266,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [SourceRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/SourceRegistrationRequest): app source registration request. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `request` | [SourceRegistrationRequest](../android/adservices/measurement/SourceRegistrationRequest.md): app source registration request. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |
 
 ### registerSource
@@ -293,11 +293,11 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `attributionSource` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the platform issues a request to this URI in order to fetch metadata associated with the attribution source. The source metadata is stored on device, making it eligible to be matched to future triggers. This value cannot be `null`. |
-| `inputEvent` | [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)?: either an `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` object (for a click event) or null (for a view event). |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `attributionSource` | [Uri](../android/net/Uri.md): the platform issues a request to this URI in order to fetch metadata associated with the attribution source. The source metadata is stored on device, making it eligible to be matched to future triggers. This value cannot be `null`. |
+| `inputEvent` | [InputEvent](../android/view/InputEvent.md)?: either an `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` object (for a click event) or null (for a view event). |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 
 ### registerSource
 
@@ -321,11 +321,11 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `attributionSource` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the platform issues a request to this URI in order to fetch metadata associated with the attribution source. The source metadata is stored on device, making it eligible to be matched to future triggers. This value cannot be `null`. |
-| `inputEvent` | [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)?: either an `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` object (for a click event) or null (for a view event). |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `attributionSource` | [Uri](../android/net/Uri.md): the platform issues a request to this URI in order to fetch metadata associated with the attribution source. The source metadata is stored on device, making it eligible to be matched to future triggers. This value cannot be `null`. |
+| `inputEvent` | [InputEvent](../android/view/InputEvent.md)?: either an `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#` object (for a click event) or null (for a view event). |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -352,9 +352,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `trigger` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the API issues a request to this URI to fetch metadata associated with the trigger. The trigger metadata is stored on-device, and is eligible to be matched with sources during the attribution process. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `trigger` | [Uri](../android/net/Uri.md): the API issues a request to this URI to fetch metadata associated with the trigger. The trigger metadata is stored on-device, and is eligible to be matched with sources during the attribution process. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |
 
 ### registerTrigger
@@ -378,9 +378,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `trigger` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the API issues a request to this URI to fetch metadata associated with the trigger. The trigger metadata is stored on-device, and is eligible to be matched with sources during the attribution process. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `trigger` | [Uri](../android/net/Uri.md): the API issues a request to this URI to fetch metadata associated with the trigger. The trigger metadata is stored on-device, and is eligible to be matched with sources during the attribution process. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -412,9 +412,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [WebSourceRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest): source registration request. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. |
-| `callback` | [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `request` | [WebSourceRegistrationRequest](../android/adservices/measurement/WebSourceRegistrationRequest.md): source registration request. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. |
+| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |
 
 ### registerWebSource
@@ -440,9 +440,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [WebSourceRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest): source registration request. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `request` | [WebSourceRegistrationRequest](../android/adservices/measurement/WebSourceRegistrationRequest.md): source registration request. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |
 
 ### registerWebTrigger
@@ -470,9 +470,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [WebTriggerRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest): trigger registration request. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. |
-| `callback` | [AdServicesOutcomeReceiver](https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesOutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `request` | [WebTriggerRegistrationRequest](../android/adservices/measurement/WebTriggerRegistrationRequest.md): trigger registration request. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. |
+| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |
 
 ### registerWebTrigger
@@ -498,7 +498,7 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [WebTriggerRegistrationRequest](https://developer.android.com/reference/kotlin/android/adservices/measurement/WebTriggerRegistrationRequest): trigger registration request. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: used by callback to dispatch results. This value may be `null`. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
+| `request` | [WebTriggerRegistrationRequest](../android/adservices/measurement/WebTriggerRegistrationRequest.md): trigger registration request. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: used by callback to dispatch results. This value may be `null`. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>?: intended to notify asynchronously the API result. This value may be `null`. |
 | --- | --- |

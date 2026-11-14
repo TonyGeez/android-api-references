@@ -10,7 +10,7 @@ class TrustedBiddingData : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.customaudience.TrustedBiddingData](https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#) |
+| ↳ | [android.adservices.customaudience.TrustedBiddingData](../android/adservices/customaudience/TrustedBiddingData.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -35,14 +35,14 @@ Represents data used during the ad selection process to fetch buyer bidding sign
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#getTrustedBiddingKeys()()` <br /> |
 | --- | --- |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#getTrustedBiddingUri()()` <br /> |
+| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#getTrustedBiddingUri()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#hashCode()()` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [TrustedBiddingData](https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#)!\> | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TrustedBiddingData](../android/adservices/customaudience/TrustedBiddingData.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TrustedBiddingData#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -147,7 +147,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

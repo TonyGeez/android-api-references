@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # VerifiedInputEvent
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/VerifiedInputEvent "View this page in Java")
+Kotlin | [Java](../android/view/VerifiedInputEvent.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ abstract class VerifiedInputEvent : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.VerifiedInputEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#) |
+| ↳ | [android.view.VerifiedInputEvent](../android/view/VerifiedInputEvent.md) |
 
-| Known Direct Subclasses [VerifiedKeyEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent), [VerifiedMotionEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent) |---|---| | [VerifiedKeyEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedKeyEvent) | KeyEvent that has been verified by the system. | | [VerifiedMotionEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent) | MotionEvent that has been verified by the system. | |
+| Known Direct Subclasses [VerifiedKeyEvent](../android/view/VerifiedKeyEvent.md), [VerifiedMotionEvent](../android/view/VerifiedMotionEvent.md) |---|---| | [VerifiedKeyEvent](../android/view/VerifiedKeyEvent.md) | KeyEvent that has been verified by the system. | | [VerifiedMotionEvent](../android/view/VerifiedMotionEvent.md) | MotionEvent that has been verified by the system. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base class for verified events. Verified events contain the subset of an InputEvent that the system can verify. Data contained inside VerifiedInputEvent's should be considered trusted and contain only the original event data that first came from the system.
@@ -39,7 +39,7 @@ Base class for verified events. Verified events contain the subset of an InputEv
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [VerifiedInputEvent](https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#)!\> | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VerifiedInputEvent](../android/view/VerifiedInputEvent.md)!\> | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -173,7 +173,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

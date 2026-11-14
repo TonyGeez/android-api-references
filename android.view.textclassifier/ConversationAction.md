@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # ConversationAction
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/textclassifier/ConversationAction "View this page in Java")
+Kotlin | [Java](../android/view/textclassifier/ConversationAction.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ConversationAction : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.textclassifier.ConversationAction](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#) |
+| ↳ | [android.view.textclassifier.ConversationAction](../android/view/textclassifier/ConversationAction.md) |
 
 Represents the action suggested by a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier` on a given conversation.
 
@@ -44,10 +44,10 @@ Represents the action suggested by a `https://developer.android.com/reference/ko
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction.html#)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getAction()()` Returns a RemoteAction object, which contains the icon, label and a PendingIntent, for the specified action type. |
+| [RemoteAction](../android/app/RemoteAction.md)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getAction()()` Returns a RemoteAction object, which contains the icon, label and a PendingIntent, for the specified action type. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getConfidenceScore()()` Returns the confidence score for the specified action. |
 | --- | --- |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getExtras()()` Returns the extended data related to this conversation action. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getExtras()()` Returns the extended data related to this conversation action. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getTextReply()()` Returns the text reply that could be sent as a reply to the given conversation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#getType()()` Returns the type of this action, for example, `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#TYPE_VIEW_CALENDAR:kotlin.String`. |
 | --- | --- |
@@ -55,7 +55,7 @@ Represents the action suggested by a `https://developer.android.com/reference/ko
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ConversationAction](https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#)!\> | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ConversationAction](../android/view/textclassifier/ConversationAction.md)!\> | `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationAction#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

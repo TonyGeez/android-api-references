@@ -6,7 +6,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 @FunctionalInterface interface LongObjFunction<T : Any!, R : Any!>
 ```
 
-| [android.util.function.LongObjFunction](https://developer.android.com/reference/kotlin/android/util/function/LongObjFunction#) |
+| [android.util.function.LongObjFunction](../android/util/function/LongObjFunction.md) |
 
 Represents a function that accepts a `long`-valued argument and an object-valued argument, and produces a result.
 

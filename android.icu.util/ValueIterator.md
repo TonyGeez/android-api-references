@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # ValueIterator
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/util/ValueIterator "View this page in Java") 
+Kotlin| [Java](../android/icu/util/ValueIterator.md) 
 | --- | --- |
 
 ```
 interface ValueIterator
 ```
 
-| [android.icu.util.ValueIterator](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator#) |
+| [android.icu.util.ValueIterator](../android/icu/util/ValueIterator.md) |
 
 Interface for enabling iteration over sets of \<int, Object\>, where int is the sorted integer index in ascending order, and Object its associated value.
 
@@ -35,13 +35,13 @@ ValueIterator iterator = UCharacter.getNameIterator();
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Element](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator.Element) The return result container of each iteration. |
+| | [Element](../android/icu/util/ValueIterator.Element.md) The return result container of each iteration. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator#next(android.icu.util.ValueIterator.Element))`(`element:` ` [ValueIterator.Element](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator.Element)!`)` Returns the next result for this iteration and returns true if we are not at the end of the iteration, false otherwise. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator#reset())`()` Resets the iterator to start iterating from the integer index Integer. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRange](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator#setRange(kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Restricts the range of integers to iterate and resets the iteration to begin at the index argument start. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](../android/icu/util/ValueIterator.md))`(`element:` ` [ValueIterator.Element](../android/icu/util/ValueIterator.Element.md)!`)` Returns the next result for this iteration and returns true if we are not at the end of the iteration, false otherwise. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/util/ValueIterator.md))`()` Resets the iterator to start iterating from the integer index Integer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRange](../android/icu/util/ValueIterator.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Restricts the range of integers to iterate and resets the iteration to begin at the index argument start. |
 | --- | --- |
 
 ## Public methods
@@ -60,7 +60,7 @@ If this returns a false, the contents of elements will not be updated.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `element` | [ValueIterator.Element](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator.Element)!:for storing the result index and value |
+| `element` | [ValueIterator.Element](../android/icu/util/ValueIterator.Element.md)!:for storing the result index and value |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -68,7 +68,7 @@ If this returns a false, the contents of elements will not be updated.
 
 **See Also**
 
-- [android.icu.util.ValueIterator.Element](https://developer.android.com/reference/kotlin/android/icu/util/ValueIterator.Element) 
+- [android.icu.util.ValueIterator.Element](../android/icu/util/ValueIterator.Element.md) 
 
 ### reset
 

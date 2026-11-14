@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # PeopleManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/people/PeopleManager "View this page in Java") 
+Kotlin| [Java](../android/app/people/PeopleManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PeopleManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.people.PeopleManager](https://developer.android.com/reference/kotlin/android/app/people/PeopleManager#) |
+| ↳ | [android.app.people.PeopleManager](../android/app/people/PeopleManager.md) |
 
 This class allows interaction with conversation and people data. 
 Restricted for SDK Runtime environment in API level 34.
@@ -22,11 +22,11 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addOrUpdateStatus](https://developer.android.com/reference/kotlin/android/app/people/PeopleManager#addOrUpdateStatus(kotlin.String,%20android.app.people.ConversationStatus))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `status:` ` [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus)`)` Sets or updates a [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus) for a conversation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearStatus](https://developer.android.com/reference/kotlin/android/app/people/PeopleManager#clearStatus(kotlin.String,%20kotlin.String))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Unpublishes a given status from the given conversation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearStatuses](https://developer.android.com/reference/kotlin/android/app/people/PeopleManager#clearStatuses(kotlin.String))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Removes all published statuses for the given conversation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addOrUpdateStatus](../android/app/people/PeopleManager.md))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `status:` ` [ConversationStatus](../android/app/people/ConversationStatus.md)`)` Sets or updates a [ConversationStatus](../android/app/people/ConversationStatus.md) for a conversation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearStatus](../android/app/people/PeopleManager.md))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Unpublishes a given status from the given conversation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearStatuses](../android/app/people/PeopleManager.md))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Removes all published statuses for the given conversation. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus)!\> | [getStatuses](https://developer.android.com/reference/kotlin/android/app/people/PeopleManager#getStatuses(kotlin.String))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns all of the currently published statuses for a given conversation. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ConversationStatus](../android/app/people/ConversationStatus.md)!\> | [getStatuses](../android/app/people/PeopleManager.md))`(`conversationId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns all of the currently published statuses for a given conversation. |
 
 ## Public methods
 
@@ -41,7 +41,7 @@ fun addOrUpdateStatus(
 ): Unit
 ```
 
-Sets or updates a [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus) for a conversation.
+Sets or updates a [ConversationStatus](../android/app/people/ConversationStatus.md) for a conversation.
 
 Statuses are meant to represent current information about the conversation. Like notifications, they are transient and are not persisted beyond a reboot, nor are they backed up and restored.
 
@@ -49,8 +49,8 @@ If the provided conversation shortcut is not already pinned, or cached by the sy
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId())of the shortcut backing the conversation that has an active status This value cannot be`null`. |
-| `status` | [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus):the current status for the given conversation This value cannot be`null`. |
+| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](../android/content/pm/ShortcutInfo.md))of the shortcut backing the conversation that has an active status This value cannot be`null`. |
+| `status` | [ConversationStatus](../android/app/people/ConversationStatus.md):the current status for the given conversation This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------|
@@ -71,8 +71,8 @@ Unpublishes a given status from the given conversation.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId())of the shortcut backing the conversation that has an active status This value cannot be`null`. |
-| `statusId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus#getId())of a published status for the given conversation This value cannot be`null`. |
+| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](../android/content/pm/ShortcutInfo.md))of the shortcut backing the conversation that has an active status This value cannot be`null`. |
+| `statusId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](../android/app/people/ConversationStatus.md))of a published status for the given conversation This value cannot be`null`. |
 
 ### clearStatuses
 
@@ -86,7 +86,7 @@ Removes all published statuses for the given conversation.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId())of the shortcut backing the conversation that has one or more active statuses This value cannot be`null`. |
+| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](../android/content/pm/ShortcutInfo.md))of the shortcut backing the conversation that has one or more active statuses This value cannot be`null`. |
 
 ### getStatuses
 
@@ -100,8 +100,8 @@ Returns all of the currently published statuses for a given conversation.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId())of the shortcut backing the conversation that has one or more active statuses This value cannot be`null`. |
+| `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the [id](../android/content/pm/ShortcutInfo.md))of the shortcut backing the conversation that has one or more active statuses This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ConversationStatus](../android/app/people/ConversationStatus.md)!> | This value cannot be`null`. |

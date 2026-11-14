@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiNetworkSuggestion
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/WifiNetworkSuggestion.md) 
 | --- | --- |
 
 ```
@@ -13,69 +13,69 @@ class WifiNetworkSuggestion : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.WifiNetworkSuggestion](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#) |
+| ↳ | [android.net.wifi.WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md) |
 
-The Network Suggestion object is used to provide a Wi-Fi network for consideration when auto-connecting to networks. Apps cannot directly create this object, they must use [WifiNetworkSuggestion.Builder.build()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#build())to obtain an instance of this object.
+The Network Suggestion object is used to provide a Wi-Fi network for consideration when auto-connecting to networks. Apps cannot directly create this object, they must use [WifiNetworkSuggestion.Builder.build()](../android/net/wifi/WifiNetworkSuggestion.Builder.md))to obtain an instance of this object.
 
-Apps can provide a list of such networks to the platform using [WifiManager.addNetworkSuggestions(List)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)).
+Apps can provide a list of such networks to the platform using [WifiManager.addNetworkSuggestions(List)](../android/net/wifi/WifiManager.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder) Builder used to create [WifiNetworkSuggestion](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#) objects. |
+| | [Builder](../android/net/wifi/WifiNetworkSuggestion.Builder.md) Builder used to create [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_NON_PERSISTENT](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#RANDOMIZATION_NON_PERSISTENT:kotlin.Int) With this option, the randomized MAC address will periodically get re-randomized, and the randomized MAC address will change if the suggestion is removed and then added back. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_PERSISTENT](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#RANDOMIZATION_PERSISTENT:kotlin.Int) Generate a randomized MAC from a secret seed and information from the Wi-Fi configuration (SSID or Passpoint profile) and reuse it for all connections to this network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_NON_PERSISTENT](../android/net/wifi/WifiNetworkSuggestion.md) With this option, the randomized MAC address will periodically get re-randomized, and the randomized MAC address will change if the suggestion is removed and then added back. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_PERSISTENT](../android/net/wifi/WifiNetworkSuggestion.md) Generate a randomized MAC from a secret seed and information from the Wi-Fi configuration (SSID or Passpoint profile) and reuse it for all connections to this network. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | [getBssid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getBssid())`()` Get the BSSID, or null if unset. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/wifi/WifiNetworkSuggestion.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MacAddress](../android/net/MacAddress.md)? | [getBssid](../android/net/wifi/WifiNetworkSuggestion.md))`()` Get the BSSID, or null if unset. |
 | --- | --- |
-| [WifiEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig)? | [getEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getEnterpriseConfig())`()` Get the WifiEnterpriseConfig, or null if unset. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMacRandomizationSetting](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getMacRandomizationSetting())`()` Get the MAC randomization method. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassphrase](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getPassphrase())`()` Get the passphrase, or null if unset. |
+| [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md)? | [getEnterpriseConfig](../android/net/wifi/WifiNetworkSuggestion.md))`()` Get the WifiEnterpriseConfig, or null if unset. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMacRandomizationSetting](../android/net/wifi/WifiNetworkSuggestion.md))`()` Get the MAC randomization method. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassphrase](../android/net/wifi/WifiNetworkSuggestion.md))`()` Get the passphrase, or null if unset. |
 | --- | --- |
-| [PasspointConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration)? | [getPasspointConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getPasspointConfig())`()` Get the [PasspointConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration) associated with this Suggestion, or null if this Suggestion is not for a Passpoint network. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriority](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getPriority())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriorityGroup](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getPriorityGroup())`()` <br /> |
+| [PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md)? | [getPasspointConfig](../android/net/wifi/WifiNetworkSuggestion.md))`()` Get the [PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md) associated with this Suggestion, or null if this Suggestion is not for a Passpoint network. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriority](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriorityGroup](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getSsid())`()` Return the unicode SSID of the network, or null if this is a Passpoint network or the SSID is non-unicode. |
-| [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | [getSubscriptionGroup](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getSubscriptionGroup())`()` Get the subscription Group UUID of the suggestion |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getSubscriptionId())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSsid](../android/net/wifi/WifiNetworkSuggestion.md))`()` Return the unicode SSID of the network, or null if this is a Passpoint network or the SSID is non-unicode. |
+| [ParcelUuid](../android/os/ParcelUuid.md)? | [getSubscriptionGroup](../android/net/wifi/WifiNetworkSuggestion.md))`()` Get the subscription Group UUID of the suggestion |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
 | --- | --- |
-| [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid)? | [getWifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getWifiSsid())`()` Return the [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid) of the network, or null if this is a Passpoint network. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#hashCode())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppInteractionRequired](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isAppInteractionRequired())`()` <br /> |
+| [WifiSsid](../android/net/wifi/WifiSsid.md)? | [getWifiSsid](../android/net/wifi/WifiNetworkSuggestion.md))`()` Return the [WifiSsid](../android/net/wifi/WifiSsid.md) of the network, or null if this is a Passpoint network. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppInteractionRequired](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCarrierMerged](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isCarrierMerged())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCredentialSharedWithUser](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isCredentialSharedWithUser())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnhancedOpen](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isEnhancedOpen())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCarrierMerged](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCredentialSharedWithUser](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnhancedOpen](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHiddenSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isHiddenSsid())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInitialAutojoinEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isInitialAutojoinEnabled())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMetered](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isMetered())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHiddenSsid](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInitialAutojoinEnabled](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMetered](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRestricted](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isRestricted())`()` Return if a suggestion is for a restricted network |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUntrusted](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isUntrusted())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserInteractionRequired](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isUserInteractionRequired())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRestricted](../android/net/wifi/WifiNetworkSuggestion.md))`()` Return if a suggestion is for a restricted network |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUntrusted](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserInteractionRequired](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWifi7Enabled](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#isWifi7Enabled())`()` See [Builder.setWifi7Enabled(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWifi7Enabled(kotlin.Boolean)) |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWifi7Enabled](../android/net/wifi/WifiNetworkSuggestion.md))`()` See [Builder.setWifi7Enabled(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/wifi/WifiNetworkSuggestion.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/wifi/WifiNetworkSuggestion.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiNetworkSuggestion](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md)!\> | [CREATOR](../android/net/wifi/WifiNetworkSuggestion.md) <br /> |
 
 ## Constants
 
@@ -115,7 +115,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -144,7 +144,7 @@ fun getBssid(): MacAddress?
 Get the BSSID, or null if unset. 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setBssid(MacAddress)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setBssid(android.net.MacAddress)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setBssid(MacAddress)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getEnterpriseConfig
 
@@ -157,9 +157,9 @@ fun getEnterpriseConfig(): WifiEnterpriseConfig?
 Get the WifiEnterpriseConfig, or null if unset. 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setWapiEnterpriseConfig(WifiEnterpriseConfig)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWapiEnterpriseConfig(android.net.wifi.WifiEnterpriseConfig))
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa2EnterpriseConfig(WifiEnterpriseConfig)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWpa2EnterpriseConfig(android.net.wifi.WifiEnterpriseConfig))
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa3EnterpriseConfig(WifiEnterpriseConfig)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWpa3EnterpriseConfig(android.net.wifi.WifiEnterpriseConfig)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setWapiEnterpriseConfig(WifiEnterpriseConfig)](../android/net/wifi/WifiNetworkSuggestion.Builder.md))
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa2EnterpriseConfig(WifiEnterpriseConfig)](../android/net/wifi/WifiNetworkSuggestion.Builder.md))
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa3EnterpriseConfig(WifiEnterpriseConfig)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getMacRandomizationSetting
 
@@ -173,11 +173,11 @@ Get the MAC randomization method.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of`RANDOMIZATION_*`values Value is [android.net.wifi.WifiNetworkSuggestion#RANDOMIZATION_PERSISTENT](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#RANDOMIZATION_PERSISTENT:kotlin.Int), or [android.net.wifi.WifiNetworkSuggestion#RANDOMIZATION_NON_PERSISTENT](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#RANDOMIZATION_NON_PERSISTENT:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of`RANDOMIZATION_*`values Value is [android.net.wifi.WifiNetworkSuggestion#RANDOMIZATION_PERSISTENT](../android/net/wifi/WifiNetworkSuggestion.md), or [android.net.wifi.WifiNetworkSuggestion#RANDOMIZATION_NON_PERSISTENT](../android/net/wifi/WifiNetworkSuggestion.md) |
 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setMacRandomizationSetting(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setMacRandomizationSetting(kotlin.Int)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setMacRandomizationSetting(int)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getPassphrase
 
@@ -190,9 +190,9 @@ fun getPassphrase(): String?
 Get the passphrase, or null if unset. 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setWapiPassphrase(String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWapiPassphrase(kotlin.String))
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa2Passphrase(String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWpa2Passphrase(kotlin.String))
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa3Passphrase(String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWpa3Passphrase(kotlin.String)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setWapiPassphrase(String)](../android/net/wifi/WifiNetworkSuggestion.Builder.md))
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa2Passphrase(String)](../android/net/wifi/WifiNetworkSuggestion.Builder.md))
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setWpa3Passphrase(String)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getPasspointConfig
 
@@ -202,7 +202,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getPasspointConfig(): PasspointConfiguration?
 ```
 
-Get the [PasspointConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration) associated with this Suggestion, or null if this Suggestion is not for a Passpoint network. 
+Get the [PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md) associated with this Suggestion, or null if this Suggestion is not for a Passpoint network. 
 
 ### getPriority
 
@@ -218,7 +218,7 @@ fun getPriority(): Int
 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setPriority(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setPriority(kotlin.Int)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setPriority(int)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getPriorityGroup
 
@@ -234,7 +234,7 @@ fun getPriorityGroup(): Int
 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setPriorityGroup(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setPriorityGroup(kotlin.Int)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setPriorityGroup(int)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getSsid
 
@@ -246,10 +246,10 @@ fun getSsid(): String?
 
 Return the unicode SSID of the network, or null if this is a Passpoint network or the SSID is non-unicode.
 
-Note: use [getWifiSsid()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#getWifiSsid())which supports both unicode and non-unicode SSID. 
+Note: use [getWifiSsid()](../android/net/wifi/WifiNetworkSuggestion.md))which supports both unicode and non-unicode SSID. 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setSsid(String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setSsid(kotlin.String)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setSsid(String)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getSubscriptionGroup
 
@@ -263,11 +263,11 @@ Get the subscription Group UUID of the suggestion
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)? | Uuid represent a Subscription Group This value may be`null`. |
+| [ParcelUuid](../android/os/ParcelUuid.md)? | Uuid represent a Subscription Group This value may be`null`. |
 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setSubscriptionGroup(ParcelUuid)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setSubscriptionGroup(android.os.ParcelUuid)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setSubscriptionGroup(ParcelUuid)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getSubscriptionId
 
@@ -278,7 +278,7 @@ fun getSubscriptionId(): Int
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setSubscriptionId(kotlin.Int)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setSubscriptionId(int)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### getWifiSsid
 
@@ -288,15 +288,15 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getWifiSsid(): WifiSsid?
 ```
 
-Return the [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid) of the network, or null if this is a Passpoint network.
+Return the [WifiSsid](../android/net/wifi/WifiSsid.md) of the network, or null if this is a Passpoint network.
 
 | Return ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [WifiSsid](https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid)? | An object representing the SSID the network.`null`for passpoint network. |
+| [WifiSsid](../android/net/wifi/WifiSsid.md)? | An object representing the SSID the network.`null`for passpoint network. |
 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setWifiSsid(WifiSsid)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWifiSsid(android.net.wifi.WifiSsid)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setWifiSsid(WifiSsid)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### hashCode
 
@@ -319,7 +319,7 @@ fun isAppInteractionRequired(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsAppInteractionRequired(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsAppInteractionRequired(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsAppInteractionRequired(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isCarrierMerged
 
@@ -330,7 +330,7 @@ fun isCarrierMerged(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setCarrierMerged(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setCarrierMerged(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setCarrierMerged(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isCredentialSharedWithUser
 
@@ -341,7 +341,7 @@ fun isCredentialSharedWithUser(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setCredentialSharedWithUser(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setCredentialSharedWithUser(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setCredentialSharedWithUser(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isEnhancedOpen
 
@@ -352,7 +352,7 @@ fun isEnhancedOpen(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsEnhancedOpen(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsEnhancedOpen(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsEnhancedOpen(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isHiddenSsid
 
@@ -363,7 +363,7 @@ fun isHiddenSsid(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsHiddenSsid(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsHiddenSsid(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsHiddenSsid(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isInitialAutojoinEnabled
 
@@ -374,7 +374,7 @@ fun isInitialAutojoinEnabled(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsInitialAutojoinEnabled(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsInitialAutojoinEnabled(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsInitialAutojoinEnabled(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isMetered
 
@@ -385,7 +385,7 @@ fun isMetered(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsMetered(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsMetered(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsMetered(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isRestricted
 
@@ -403,7 +403,7 @@ Return if a suggestion is for a restricted network
 
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setRestricted(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setRestricted(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setRestricted(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isUntrusted
 
@@ -414,7 +414,7 @@ fun isUntrusted(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setUntrusted(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setUntrusted(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setUntrusted(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isUserInteractionRequired
 
@@ -425,7 +425,7 @@ fun isUserInteractionRequired(): Boolean
 ```  
 **See Also**
 
-- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsUserInteractionRequired(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsUserInteractionRequired(kotlin.Boolean)) 
+- [android.net.wifi.WifiNetworkSuggestion.Builder#setIsUserInteractionRequired(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### isWifi7Enabled
 
@@ -435,7 +435,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun isWifi7Enabled(): Boolean
 ```
 
-See [Builder.setWifi7Enabled(boolean)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setWifi7Enabled(kotlin.Boolean)) 
+See [Builder.setWifi7Enabled(boolean)](../android/net/wifi/WifiNetworkSuggestion.Builder.md)) 
 
 ### toString
 
@@ -462,8 +462,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

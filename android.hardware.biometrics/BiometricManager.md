@@ -8,7 +8,7 @@ open class BiometricManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.biometrics.BiometricManager](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#) |
+| ↳ | [android.hardware.biometrics.BiometricManager](../android/hardware/biometrics/BiometricManager.md) |
 
 A class that contains biometric utilities. For authentication, see `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt`. 
 Restricted for SDK Runtime environment in API level 34.
@@ -55,7 +55,7 @@ Restricted for SDK Runtime environment in API level 34.
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getBiometricSensorStrengths()()` Returns a map of biometric modalities to their sensor security strengths. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the last time the user successfully authenticated using one of the given authenticators. |
-| open [BiometricManager.Strings](https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getStrings(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Produces an instance of the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings` class, which provides localized strings for an application, given a set of allowed authenticator types. |
+| open [BiometricManager.Strings](../android/hardware/biometrics/BiometricManager.Strings.md) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getStrings(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Produces an instance of the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings` class, which provides localized strings for an application, given a set of allowed authenticator types. |
 
 ## Constants
 

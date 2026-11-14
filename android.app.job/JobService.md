@@ -8,11 +8,11 @@ abstract class JobService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.job.JobService](https://developer.android.com/reference/kotlin/android/app/job/JobService#) |
+| | | | ↳ | [android.app.job.JobService](../android/app/job/JobService.md) |
 
 Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler`.
 
@@ -482,7 +482,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1059,7 +1059,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#jobFinished(android.app.job.JobParameters,%20kotlin.Boolean)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters!, wantsReschedule: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Call this to inform the JobScheduler that the job has finished its work. |
-| [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onNetworkChanged(android.app.job.JobParameters)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters)` This method is called that for a job that has a network constraint when the network to be used by the job changes. |
 | --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)(params: https://developer.android.com/reference/kotlin/android/app/job/JobParameters!)` Called to indicate that the job has begun executing. |
@@ -2536,7 +2536,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2577,9 +2577,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2844,7 +2844,7 @@ Any `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Buil
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters)!: The parameters identifying this job, as supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md)!: The parameters identifying this job, as supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback. |
 | `wantsReschedule` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if this job should be rescheduled according to the back-off criteria specified when it was first scheduled; `false` otherwise. When `false` is returned for a periodic job, the job will be rescheduled according to its periodic policy. |
 
 ### onBind
@@ -2861,7 +2861,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2881,7 +2881,7 @@ For example, if a device is on a metered mobile network and then connects to an 
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): The parameters identifying this job, similar to what was supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback, but with an updated network. This value cannot be `null`. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md): The parameters identifying this job, similar to what was supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback, but with an updated network. This value cannot be `null`. |
 
 **See Also**
 
@@ -2906,7 +2906,7 @@ Returning `false` from this method means your job is already finished. The syste
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters)!: Parameters specifying info about this job, including the optional extras configured with `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setExtras(android.os.PersistableBundle)`. This object serves to identify this specific running job instance when calling `https://developer.android.com/reference/kotlin/android/app/job/JobService#jobFinished(android.app.job.JobParameters,%20kotlin.Boolean)`. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md)!: Parameters specifying info about this job, including the optional extras configured with `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setExtras(android.os.PersistableBundle)`. This object serves to identify this specific running job instance when calling `https://developer.android.com/reference/kotlin/android/app/job/JobService#jobFinished(android.app.job.JobParameters,%20kotlin.Boolean)`. |
 
 | Return ||
 |---|---|
@@ -2932,7 +2932,7 @@ Any `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Buil
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters)!: The parameters identifying this job, similar to what was supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback, but with the stop reason included. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md)!: The parameters identifying this job, similar to what was supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback, but with the stop reason included. |
 
 | Return ||
 |---|---|
@@ -2961,9 +2961,9 @@ If separate jobs use the same notification ID with this API, the most recently p
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): The parameters identifying this job, as supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback. This value cannot be `null`. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md): The parameters identifying this job, as supplied to the job in the `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStartJob(android.app.job.JobParameters)` callback. This value cannot be `null`. |
 | `notificationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The ID for this notification, as per `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify(kotlin.Int,%20android.app.Notification)`. |
-| `notification` | [Notification](https://developer.android.com/reference/kotlin/android/app/Notification.html#): The notification to be displayed. This value cannot be `null`. |
+| `notification` | [Notification](../android/app/Notification.md): The notification to be displayed. This value cannot be `null`. |
 | --- | --- |
 | `jobEndNotificationPolicy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The policy to apply to the notification when the job stops. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/job/JobService#JOB_END_NOTIFICATION_POLICY_DETACH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/job/JobService#JOB_END_NOTIFICATION_POLICY_REMOVE:kotlin.Int` |
 
@@ -2984,8 +2984,8 @@ Update the amount of data this JobWorkItem is estimated to transfer after the jo
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
-| `jobWorkItem` | [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem): This value cannot be `null`. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md): This value cannot be `null`. |
+| `jobWorkItem` | [JobWorkItem](../android/app/job/JobWorkItem.md): This value cannot be `null`. |
 | `downloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | --- | --- |
 | `uploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
@@ -3010,7 +3010,7 @@ Update the amount of data this job is estimated to transfer after the job has st
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md): This value cannot be `null`. |
 | `downloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | `uploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | --- | --- |
@@ -3036,8 +3036,8 @@ Tell JobScheduler how much data has been transferred for the data transfer `http
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
-| `item` | [JobWorkItem](https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem): This value cannot be `null`. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md): This value cannot be `null`. |
+| `item` | [JobWorkItem](../android/app/job/JobWorkItem.md): This value cannot be `null`. |
 | `transferredDownloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | --- | --- |
 | `transferredUploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
@@ -3058,7 +3058,7 @@ Tell JobScheduler how much data has successfully been transferred for the data t
 
 | Parameters ||
 |---|---|
-| `params` | [JobParameters](https://developer.android.com/reference/kotlin/android/app/job/JobParameters): This value cannot be `null`. |
+| `params` | [JobParameters](../android/app/job/JobParameters.md): This value cannot be `null`. |
 | `transferredDownloadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | `transferredUploadBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Value is a non-negative number of bytes. |
 | --- | --- |

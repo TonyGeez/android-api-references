@@ -8,7 +8,7 @@ class BluetoothLeAudioCodecConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig#) |
+| ↳ | [android.bluetooth.BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md) |
 
 Represents the codec configuration for a Bluetooth LE Audio source device.
 
@@ -97,7 +97,7 @@ The source codec type values are the same as those supported by the device hardw
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BluetoothLeAudioCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig#)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig#CREATOR:android.os.Parcelable.Creator` `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#` interface implementation. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothLeAudioCodecConfig](../android/bluetooth/BluetoothLeAudioCodecConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudioCodecConfig#CREATOR:android.os.Parcelable.Creator` `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#` interface implementation. |
 
 ## Constants
 
@@ -721,7 +721,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `out` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

@@ -5,21 +5,21 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # TestSuiteProvider
 
-Kotlin| [Java](https://developer.android.com/reference/android/test/TestSuiteProvider "View this page in Java") 
+Kotlin| [Java](../android/test/TestSuiteProvider.md) 
 | --- | --- |
 
 ```
 interface TestSuiteProvider
 ```
 
-| [android.test.TestSuiteProvider](https://developer.android.com/reference/kotlin/android/test/TestSuiteProvider#) |
+| [android.test.TestSuiteProvider](../android/test/TestSuiteProvider.md) |
 
-| Known Direct Subclasses [InstrumentationTestRunner](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [InstrumentationTestRunner](https://developer.android.com/reference/kotlin/android/test/InstrumentationTestRunner) | An [Instrumentation](https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#) that runs various types of junit. | |
+| Known Direct Subclasses [InstrumentationTestRunner](../android/test/InstrumentationTestRunner.md) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [InstrumentationTestRunner](../android/test/InstrumentationTestRunner.md) | An [Instrumentation](../android/app/Instrumentation.md) that runs various types of junit. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 24.**
 |
-| Use [AndroidJUnitRunner](https://developer.android.com/reference/android/support/test/runner/AndroidJUnitRunner.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
+| Use [AndroidJUnitRunner](../android/support/test/runner/AndroidJUnitRunner.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
 
 Implementors will know how to get a test suite.
 
@@ -27,7 +27,7 @@ Implementors will know how to get a test suite.
 
 | Public methods ||
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|
-| abstractTestSuite! | [getTestSuite](https://developer.android.com/reference/kotlin/android/test/TestSuiteProvider#getTestSuite())`()` <br /> |
+| abstractTestSuite! | [getTestSuite](../android/test/TestSuiteProvider.md))`()` <br /> |
 
 ## Public methods
 

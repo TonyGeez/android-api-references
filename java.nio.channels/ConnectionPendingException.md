@@ -11,19 +11,19 @@ open class ConnectionPendingException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.channels.ConnectionPendingException](https://developer.android.com/reference/kotlin/java/nio/channels/ConnectionPendingException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.ConnectionPendingException](../java/nio/channels/ConnectionPendingException.md) |
 
-Unchecked exception thrown when an attempt is made to connect a [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) for which a non-blocking connection operation is already in progress.
+Unchecked exception thrown when an attempt is made to connect a [SocketChannel](../java/nio/channels/SocketChannel.md) for which a non-blocking connection operation is already in progress.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConnectionPendingException](https://developer.android.com/reference/kotlin/java/nio/channels/ConnectionPendingException#ConnectionPendingException())`()` Constructs an instance of this class. |
+| [ConnectionPendingException](../java/nio/channels/ConnectionPendingException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

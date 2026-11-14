@@ -8,7 +8,7 @@ abstract class Process
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Process](https://developer.android.com/reference/kotlin/java/lang/Process#) |
+| ↳ | [java.lang.Process](../java/lang/Process.md) |
 
 The `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#start()` and `https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.Array,%20kotlin.Array,%20java.io.File)` methods create a native process and return an instance of a subclass of `Process` that can be used to control the process and obtain information about it. The class `Process` provides methods for performing input from the process, performing output to the process, waiting for the process to complete, checking the exit status of the process, and destroying (killing) the process.
 
@@ -16,7 +16,7 @@ The methods that create processes may not work well for special processes on cer
 
 By default, the created subprocess does not have its own terminal or console. All its standard I/O (i.e. stdin, stdout, stderr) operations will be redirected to the parent process, where they can be accessed via the streams obtained using the methods `https://developer.android.com/reference/kotlin/java/lang/Process#getOutputStream()`, `https://developer.android.com/reference/kotlin/java/lang/Process#getInputStream()`, and `https://developer.android.com/reference/kotlin/java/lang/Process#getErrorStream()`. The parent process uses these streams to feed input to and get output from the subprocess. Because some native platforms only provide limited buffer size for standard input and output streams, failure to promptly write the input stream or read the output stream of the subprocess may cause the subprocess to block, or even deadlock.
 
-Where desired, [subprocess I/O can also be redirected](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirect-input) using methods of the `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder` class.
+Where desired, [subprocess I/O can also be redirected](../java/lang/ProcessBuilder.md) using methods of the `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder` class.
 
 The subprocess is not killed when there are no more references to the `Process` object, but rather the subprocess continues executing asynchronously.
 
@@ -33,12 +33,12 @@ As of 1.5, `https://developer.android.com/reference/kotlin/java/lang/ProcessBuil
 | Public methods ||
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#destroy()()` Kills the subprocess. |
-| open [Process](https://developer.android.com/reference/kotlin/java/lang/Process#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#destroyForcibly()()` Kills the subprocess. |
+| open [Process](../java/lang/Process.md)! | `https://developer.android.com/reference/kotlin/java/lang/Process#destroyForcibly()()` Kills the subprocess. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#exitValue()()` Returns the exit value for the subprocess. |
 | --- | --- |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getErrorStream()()` Returns the input stream connected to the error output of the subprocess. |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getInputStream()()` Returns the input stream connected to the normal output of the subprocess. |
-| abstract [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getOutputStream()()` Returns the output stream connected to the normal input of the subprocess. |
+| abstract [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getErrorStream()()` Returns the input stream connected to the error output of the subprocess. |
+| abstract [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getInputStream()()` Returns the input stream connected to the normal output of the subprocess. |
+| abstract [OutputStream](../java/io/OutputStream.md)! | `https://developer.android.com/reference/kotlin/java/lang/Process#getOutputStream()()` Returns the output stream connected to the normal input of the subprocess. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#isAlive()()` Tests whether the subprocess represented by this `Process` is alive. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Process#pid()()` Returns the native process ID of the process. |
@@ -114,7 +114,7 @@ abstract fun getErrorStream(): InputStream!
 
 Returns the input stream connected to the error output of the subprocess. The stream obtains data piped from the error output of the process represented by this `Process` object.
 
-If the standard error of the subprocess has been redirected using java.lang.ProcessBuilder#redirectError(Redirect) or `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectErrorStream(kotlin.Boolean)` then this method will return a [null input stream](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirect-output).
+If the standard error of the subprocess has been redirected using java.lang.ProcessBuilder#redirectError(Redirect) or `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectErrorStream(kotlin.Boolean)` then this method will return a [null input stream](../java/lang/ProcessBuilder.md).
 
 Implementation note: It is a good idea for the returned input stream to be buffered.
 
@@ -132,7 +132,7 @@ abstract fun getInputStream(): InputStream!
 
 Returns the input stream connected to the normal output of the subprocess. The stream obtains data piped from the standard output of the process represented by this `Process` object.
 
-If the standard output of the subprocess has been redirected using java.lang.ProcessBuilder#redirectOutput(Redirect) then this method will return a [null input stream](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirect-output).
+If the standard output of the subprocess has been redirected using java.lang.ProcessBuilder#redirectOutput(Redirect) then this method will return a [null input stream](../java/lang/ProcessBuilder.md).
 
 Otherwise, if the standard error of the subprocess has been redirected using `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirectErrorStream(kotlin.Boolean)` then the input stream returned by this method will receive the merged standard output and the standard error of the subprocess.
 
@@ -152,7 +152,7 @@ abstract fun getOutputStream(): OutputStream!
 
 Returns the output stream connected to the normal input of the subprocess. Output to the stream is piped into the standard input of the process represented by this `Process` object.
 
-If the standard input of the subprocess has been redirected using java.lang.ProcessBuilder#redirectInput(Redirect) then this method will return a [null output stream](https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#redirect-input).
+If the standard input of the subprocess has been redirected using java.lang.ProcessBuilder#redirectInput(Redirect) then this method will return a [null output stream](../java/lang/ProcessBuilder.md).
 
 Implementation note: It is a good idea for the returned output stream to be buffered.
 
@@ -208,7 +208,7 @@ Causes the current thread to wait, if necessary, until the process represented b
 
 | Exceptions ||
 |---|---|
-| `java.lang.InterruptedException` | if the current thread is [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread#interrupt()) by another thread while it is waiting, then the wait is ended and an `https://developer.android.com/reference/kotlin/java/lang/InterruptedException` is thrown. |
+| `java.lang.InterruptedException` | if the current thread is [interrupted](../java/lang/Thread.md)) by another thread while it is waiting, then the wait is ended and an `https://developer.android.com/reference/kotlin/java/lang/InterruptedException` is thrown. |
 
 ### waitFor
 
@@ -230,7 +230,7 @@ The default implementation of this methods polls the `exitValue` to check if the
 | Parameters ||
 |---|---|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!: the time unit of the `timeout` argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the `timeout` argument |
 
 | Return ||
 |---|---|

@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface LSParser
 ```
 
-| [org.w3c.dom.ls.LSParser](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#) |
+| [org.w3c.dom.ls.LSParser](../org/w3c/dom/ls/LSParser.md) |
 
 An interface to an object that is able to build, or augment, a DOM tree from various input sources.
 
@@ -76,26 +76,26 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Constants ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_APPEND_AS_CHILDREN](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#ACTION_APPEND_AS_CHILDREN:kotlin.Short) Append the result of the parse operation as children of the context node. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_INSERT_AFTER](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#ACTION_INSERT_AFTER:kotlin.Short) Insert the result of the parse operation as the immediately following sibling of the context node. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_INSERT_BEFORE](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#ACTION_INSERT_BEFORE:kotlin.Short) Insert the result of the parse operation as the immediately preceding sibling of the context node. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_APPEND_AS_CHILDREN](../org/w3c/dom/ls/LSParser.md) Append the result of the parse operation as children of the context node. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_INSERT_AFTER](../org/w3c/dom/ls/LSParser.md) Insert the result of the parse operation as the immediately following sibling of the context node. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_INSERT_BEFORE](../org/w3c/dom/ls/LSParser.md) Insert the result of the parse operation as the immediately preceding sibling of the context node. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_REPLACE](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#ACTION_REPLACE:kotlin.Short) Replace the context node with the result of the parse operation. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_REPLACE_CHILDREN](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#ACTION_REPLACE_CHILDREN:kotlin.Short) Replace all the children of the context node with the result of the parse operation. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_REPLACE](../org/w3c/dom/ls/LSParser.md) Replace the context node with the result of the parse operation. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [ACTION_REPLACE_CHILDREN](../org/w3c/dom/ls/LSParser.md) Replace all the children of the context node with the result of the parse operation. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abort](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#abort())`()` Abort the loading of the document that is currently being loaded by the`LSParser`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAsync](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#getAsync())`()` `true`if the`LSParser`is asynchronous,`false`if it is synchronous. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBusy](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#getBusy())`()` `true`if the`LSParser`is currently busy loading a document, otherwise`false`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abort](../org/w3c/dom/ls/LSParser.md))`()` Abort the loading of the document that is currently being loaded by the`LSParser`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAsync](../org/w3c/dom/ls/LSParser.md))`()` `true`if the`LSParser`is asynchronous,`false`if it is synchronous. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBusy](../org/w3c/dom/ls/LSParser.md))`()` `true`if the`LSParser`is currently busy loading a document, otherwise`false`. |
 | --- | --- |
-| abstract [DOMConfiguration](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-configuration/index.html)! | [getDomConfig](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#getDomConfig())`()` The`DOMConfiguration`object used when parsing an input source. |
-| abstract [LSParserFilter](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter)! | [getFilter](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#getFilter())`()` When a filter is provided, the implementation will call out to the filter as it is constructing the DOM tree structure. |
-| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#parse(org.w3c.dom.ls.LSInput))`(`input:` ` [LSInput](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSInput)!`)` Parse an XML document from a resource identified by a`LSInput`. |
+| abstract [DOMConfiguration](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-configuration/index.html)! | [getDomConfig](../org/w3c/dom/ls/LSParser.md))`()` The`DOMConfiguration`object used when parsing an input source. |
+| abstract [LSParserFilter](../org/w3c/dom/ls/LSParserFilter.md)! | [getFilter](../org/w3c/dom/ls/LSParser.md))`()` When a filter is provided, the implementation will call out to the filter as it is constructing the DOM tree structure. |
+| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](../org/w3c/dom/ls/LSParser.md))`(`input:` ` [LSInput](../org/w3c/dom/ls/LSInput.md)!`)` Parse an XML document from a resource identified by a`LSInput`. |
 | --- | --- |
-| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parseURI](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#parseURI(kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an XML document from a location identified by a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\]. |
-| abstract [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [parseWithContext](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#parseWithContext(org.w3c.dom.ls.LSInput,%20org.w3c.dom.Node,%20kotlin.Short))`(`input:` ` [LSInput](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSInput)!`, `contextArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `action:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Parse an XML fragment from a resource identified by a`LSInput`and insert the content into an existing document at the position specified with the`context`and`action`arguments. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParser#setFilter(org.w3c.dom.ls.LSParserFilter))`(`filter:` ` [LSParserFilter](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSParserFilter)!`)` When a filter is provided, the implementation will call out to the filter as it is constructing the DOM tree structure. |
+| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parseURI](../org/w3c/dom/ls/LSParser.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an XML document from a location identified by a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\]. |
+| abstract [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [parseWithContext](../org/w3c/dom/ls/LSParser.md))`(`input:` ` [LSInput](../org/w3c/dom/ls/LSInput.md)!`, `contextArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `action:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Parse an XML fragment from a resource identified by a`LSInput`and insert the content into an existing document at the position specified with the`context`and`action`arguments. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](../org/w3c/dom/ls/LSParser.md))`(`filter:` ` [LSParserFilter](../org/w3c/dom/ls/LSParserFilter.md)!`)` When a filter is provided, the implementation will call out to the filter as it is constructing the DOM tree structure. |
 | --- | --- |
 
 ## Constants
@@ -288,7 +288,7 @@ Parse an XML document from a resource identified by a`LSInput`.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `input` | [LSInput](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSInput)!:The`LSInput`from which the source of the document is to be read. |
+| `input` | [LSInput](../org/w3c/dom/ls/LSInput.md)!:The`LSInput`from which the source of the document is to be read. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -343,7 +343,7 @@ When calling`parseWithContext`, the values of the following configuration parame
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `input` | [LSInput](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSInput)!:The`LSInput`from which the source document is to be read. The source document must be an XML fragment, i.e. anything except a complete XML document (except in the case where the context node of type`DOCUMENT_NODE`, and the action is`ACTION_REPLACE_CHILDREN`), a DOCTYPE (internal subset), entity declaration(s), notation declaration(s), or XML or text declaration(s). |
+| `input` | [LSInput](../org/w3c/dom/ls/LSInput.md)!:The`LSInput`from which the source document is to be read. The source document must be an XML fragment, i.e. anything except a complete XML document (except in the case where the context node of type`DOCUMENT_NODE`, and the action is`ACTION_REPLACE_CHILDREN`), a DOCTYPE (internal subset), entity declaration(s), notation declaration(s), or XML or text declaration(s). |
 | `contextArg` | [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!:The node that is used as the context for the data that is being parsed. This node must be a`Document`node, a`DocumentFragment`node, or a node of a type that is allowed as a child of an`Element`node, e.g. it cannot be an`Attribute`node. |
 | `action` | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html):This parameter describes which action should be taken between the new set of nodes being inserted and the existing children of the context node. The set of possible actions is defined in`ACTION_TYPES`above. |
 | --- | --- |

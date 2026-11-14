@@ -4,29 +4,29 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # PhoneLookupColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/ContactsContract.PhoneLookupColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/ContactsContract.PhoneLookupColumns.md) 
 | --- | --- |
 
 ```
 protected interface PhoneLookupColumns
 ```
 
-| [android.provider.ContactsContract.PhoneLookupColumns](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns#) |
+| [android.provider.ContactsContract.PhoneLookupColumns](../android/provider/ContactsContract.PhoneLookupColumns.md) |
 
-| Known Direct Subclasses [ContactsContract.PhoneLookup](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookup) |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [ContactsContract.PhoneLookup](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookup) | A table that represents the result of looking up a phone number, for example for caller ID. | |
+| Known Direct Subclasses [ContactsContract.PhoneLookup](../android/provider/ContactsContract.PhoneLookup.md) |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [ContactsContract.PhoneLookup](../android/provider/ContactsContract.PhoneLookup.md) | A table that represents the result of looking up a phone number, for example for caller ID. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns#CONTACT_ID:kotlin.String) A reference to the [ContactsContract.Contacts._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) that this data belongs to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA_ID](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns#DATA_ID:kotlin.String) The ID of the data row. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns#LABEL:kotlin.String) The user defined label for the phone number. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](../android/provider/ContactsContract.PhoneLookupColumns.md) A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that this data belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA_ID](../android/provider/ContactsContract.PhoneLookupColumns.md) The ID of the data row. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](../android/provider/ContactsContract.PhoneLookupColumns.md) The user defined label for the phone number. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NORMALIZED_NUMBER](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns#NORMALIZED_NUMBER:kotlin.String) The phone number's E164 representation. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns#NUMBER:kotlin.String) The phone number as the user entered it. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.PhoneLookupColumns#TYPE:kotlin.String) The type of phone number, for example Home or Work. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NORMALIZED_NUMBER](../android/provider/ContactsContract.PhoneLookupColumns.md) The phone number's E164 representation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER](../android/provider/ContactsContract.PhoneLookupColumns.md) The phone number as the user entered it. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](../android/provider/ContactsContract.PhoneLookupColumns.md) The type of phone number, for example Home or Work. |
 | --- | --- |
 
 ## Constants
@@ -39,7 +39,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val CONTACT_ID: String
 ```
 
-A reference to the [ContactsContract.Contacts._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) that this data belongs to.
+A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that this data belongs to.
 
 Type: INTEGER 
 

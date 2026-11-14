@@ -2,7 +2,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaMuxer
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/MediaMuxer "View this page in Java")
+Kotlin | [Java](../android/media/MediaMuxer.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class MediaMuxer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaMuxer](https://developer.android.com/reference/kotlin/android/media/MediaMuxer#) |
+| ↳ | [android.media.MediaMuxer](../android/media/MediaMuxer.md) |
 
 MediaMuxer facilitates muxing elementary streams. Currently MediaMuxer supports MP4, Webm and 3GP file as the output. It also supports muxing B-frames in MP4 since Android Nougat MR1.
 
@@ -157,7 +157,7 @@ It is the caller's responsibility to close the file descriptor, which is safe to
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#): The FileDescriptor of the output media file. If `format` is `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_WEBM:kotlin.Int`, `fd` must be open in read-write mode. Otherwise, write mode is sufficient, but read-write is also accepted. This value cannot be `null`. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md): The FileDescriptor of the output media file. If `format` is `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_WEBM:kotlin.Int`, `fd` must be open in read-write mode. Otherwise, write mode is sufficient, but read-write is also accepted. This value cannot be `null`. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the output media file. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_MPEG_4:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_WEBM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_3GPP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_HEIF:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_OGG:kotlin.Int` |
 
 | Exceptions ||
@@ -230,7 +230,7 @@ The following table summarizes support for specific format keys across android r
 
 The following table summarizes codec support for containers across android releases:
 
-| Codec | [MP4](https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_MPEG_4:kotlin.Int) | [WEBM](https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_WEBM:kotlin.Int) | [OGG](https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_OGG:kotlin.Int) | Supported From SDK version |
+| Codec | [MP4](../android/media/MediaMuxer.OutputFormat.md) | [WEBM](../android/media/MediaMuxer.OutputFormat.md) | [OGG](../android/media/MediaMuxer.OutputFormat.md) | Supported From SDK version |
 |---|---|---|---|---|
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AAC:kotlin.String` | ✓ | | | 16 |
 | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_AUDIO_AMR_NB:kotlin.String` | ✓ | | | 16 |
@@ -253,7 +253,7 @@ The following table summarizes codec support for containers across android relea
 
 | Parameters ||
 |---|---|
-| `format` | [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat): The media format for the track. This must not be an empty MediaFormat. This value cannot be `null`. |
+| `format` | [MediaFormat](../android/media/MediaFormat.md): The media format for the track. This must not be an empty MediaFormat. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -371,8 +371,8 @@ For MPEG4 media format, the duration of the last sample in a track can be set by
 | Parameters ||
 |---|---|
 | `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The track index for this sample. |
-| `byteBuf` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): The encoded sample. This value cannot be `null`. |
-| `bufferInfo` | [MediaCodec.BufferInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo): The buffer information related to this sample. This value cannot be `null`. |
+| `byteBuf` | [ByteBuffer](../java/nio/ByteBuffer.md): The encoded sample. This value cannot be `null`. |
+| `bufferInfo` | [MediaCodec.BufferInfo](../android/media/MediaCodec.BufferInfo.md): The buffer information related to this sample. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||

@@ -9,9 +9,9 @@ class HeartRateRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
-| | | ↳ | [android.health.connect.datatypes.HeartRateRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.HeartRateRecord](../android/health/connect/datatypes/HeartRateRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's heart rate. Each record represents a series of measurements.
@@ -30,7 +30,7 @@ Captures the user's heart rate. Each record represents a series of measurements.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HeartRateRecord.HeartRateSample](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord.HeartRateSample)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#getSamples()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HeartRateRecord.HeartRateSample](../android/health/connect/datatypes/HeartRateRecord.HeartRateSample.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#getSamples()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 
@@ -41,11 +41,11 @@ Captures the user's heart rate. Each record represents a series of measurements.
 
 | Properties ||
 |---|---|
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#BPM_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get avg heart rate using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#BPM_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get max heart rate in beats per minute using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#BPM_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get min heart rate in beats per minute using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#BPM_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get avg heart rate using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#BPM_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get max heart rate in beats per minute using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#BPM_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get min heart rate in beats per minute using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | --- | --- |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#HEART_MEASUREMENTS_COUNT:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the number of heart rate measurements using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateRecord#HEART_MEASUREMENTS_COUNT:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the number of heart rate measurements using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 
 ## Public methods
 

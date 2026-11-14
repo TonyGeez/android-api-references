@@ -8,19 +8,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ConcurrentMap<K : Any!, V : Any!> : MutableMap<K, V>
 ```
 
-| [java.util.concurrent.ConcurrentMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#) |
+| [java.util.concurrent.ConcurrentMap](../java/util/concurrent/ConcurrentMap.md) |
 
-| Known Direct Subclasses [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap), [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) |----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. | | [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) | A [ConcurrentMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#) supporting [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap.html#) operations, and recursively so for its navigable sub-maps. | |
+| Known Direct Subclasses [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md), [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md) |----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. | | [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md) | A [ConcurrentMap](../java/util/concurrent/ConcurrentMap.md) supporting [NavigableMap](../java/util/NavigableMap.md) operations, and recursively so for its navigable sub-maps. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) | A scalable concurrent [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) implementation. | |
+| Known Indirect Subclasses [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md) | A scalable concurrent [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md) implementation. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) providing thread safety and atomicity guarantees.
+A [Map](../java/util/Map.md) providing thread safety and atomicity guarantees.
 
-To maintain the specified guarantees, default implementations of methods including [putIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#putIfAbsent(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))inherited from [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) must be overridden by implementations of this interface. Similarly, implementations of the collections returned by methods [keySet](https://developer.android.com/reference/kotlin/java/util/Map.html#keySet()), [values](https://developer.android.com/reference/kotlin/java/util/Map.html#values()), and [entrySet](https://developer.android.com/reference/kotlin/java/util/Map.html#entrySet())must override methods such as`removeIf`when necessary to preserve atomicity guarantees.
+To maintain the specified guarantees, default implementations of methods including [putIfAbsent](../java/util/concurrent/ConcurrentMap.md))inherited from [Map](../java/util/Map.md) must be overridden by implementations of this interface. Similarly, implementations of the collections returned by methods [keySet](../java/util/Map.md)), [values](../java/util/Map.md)), and [entrySet](../java/util/Map.md))must override methods such as`removeIf`when necessary to preserve atomicity guarantees.
 
-Memory consistency effects: As with other concurrent collections, actions in a thread prior to placing an object into a`ConcurrentMap`as a key or value [*happen-before*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#MemoryVisibility) actions subsequent to the access or removal of that object from the`ConcurrentMap`in another thread.
+Memory consistency effects: As with other concurrent collections, actions in a thread prior to placing an object into a`ConcurrentMap`as a key or value [*happen-before*](../java/util/concurrent/_package.md) actions subsequent to the access or removal of that object from the`ConcurrentMap`in another thread.
 
 This interface is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
 
@@ -28,20 +28,20 @@ This interface is a member of the [Java Collections Framework](https://developer
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openV? | [compute](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#compute(java.util.concurrent.ConcurrentMap.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
-| openV | [computeIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#computeIfAbsent(java.util.concurrent.ConcurrentMap.K,%20java.util.function.Function))`(`key:` `K`, `mappingFunction:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value (or is mapped to`null`), attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
-| openV? | [computeIfPresent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#computeIfPresent(java.util.concurrent.ConcurrentMap.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
+| openV? | [compute](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
+| openV | [computeIfAbsent](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `mappingFunction:` ` [Function](../java/util/function/Function.md)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value (or is mapped to`null`), attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
+| openV? | [computeIfPresent](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#forEach(java.util.function.BiConsumer))`(`action:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<in` `K,` `in` `V>`)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
-| openV | [getOrDefault](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#getOrDefault(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `defaultValue:` `V`)` Returns the value to which the specified key is mapped, or`defaultValue`if this map contains no mapping for the key. |
-| openV? | [merge](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#merge(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V,%20java.util.function.BiFunction))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/concurrent/ConcurrentMap.md))`(`action:` ` [BiConsumer](../java/util/function/BiConsumer.md)<in` `K,` `in` `V>`)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
+| openV | [getOrDefault](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `defaultValue:` `V`)` Returns the value to which the specified key is mapped, or`defaultValue`if this map contains no mapping for the key. |
+| openV? | [merge](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
 | --- | --- |
-| abstractV? | [putIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#putIfAbsent(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `value:` `V`)` If the specified key is not already associated with a value, associates it with the given value. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#remove(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `value:` `V`)` Removes the entry for a key only if currently mapped to a given value. |
-| abstractV? | [replace](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#replace(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `value:` `V`)` Replaces the entry for a key only if currently mapped to some value. |
+| abstractV? | [putIfAbsent](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `value:` `V`)` If the specified key is not already associated with a value, associates it with the given value. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `value:` `V`)` Removes the entry for a key only if currently mapped to a given value. |
+| abstractV? | [replace](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `value:` `V`)` Replaces the entry for a key only if currently mapped to some value. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#replace(java.util.concurrent.ConcurrentMap.K,%20java.util.concurrent.ConcurrentMap.V,%20java.util.concurrent.ConcurrentMap.V))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for a key only if currently mapped to a given value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap#replaceAll(java.util.function.BiFunction))`(`function:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `V>`)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](../java/util/concurrent/ConcurrentMap.md))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for a key only if currently mapped to a given value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](../java/util/concurrent/ConcurrentMap.md))`(`function:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `V>`)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception. |
 
 ## Public methods
 
@@ -61,7 +61,7 @@ Attempts to compute a mapping for the specified key and its current mapped value
 ```kotlin
 <code>map.compute(key, (k, v) -&gt; (v == null) ? msg : v.concat(msg))</code>
 ```
-(Method [merge()](https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction))is often simpler to use for such purposes.)
+(Method [merge()](../java/util/Map.md))is often simpler to use for such purposes.)
 
 <br />
 
@@ -72,7 +72,7 @@ The remapping function should not modify this map during computation.
 | Parameters ||
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV?,outV?\>:the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV?,outV?\>:the remapping function to compute a value |
 
 | Return ||
 |----|------------------------------------------------------------------|
@@ -118,7 +118,7 @@ The mapping function should not modify this map during computation.
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `mappingFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inK,outV\>:the mapping function to compute a value |
+| `mappingFunction` | [Function](../java/util/function/Function.md)\<inK,outV\>:the mapping function to compute a value |
 
 | Return ||
 |---|-------------------------------------------------------------------------------------------------------------------|
@@ -152,7 +152,7 @@ The remapping function should not modify this map during computation.
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV,outV?\>:the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outV?\>:the remapping function to compute a value |
 
 | Return ||
 |----|------------------------------------------------------------------|
@@ -178,7 +178,7 @@ Performs the given action for each entry in this map until all entries have been
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<inK,inV\>:The action to be performed for each entry |
+| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<inK,inV\>:The action to be performed for each entry |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------|
@@ -241,7 +241,7 @@ The remapping function should not modify this map during computation.
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the resulting value is to be associated |
 | `value` | V:the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inV,inV,outV?\>:the remapping function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inV,inV,outV?\>:the remapping function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -436,7 +436,7 @@ Replaces each entry's value with the result of invoking the given function on th
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `function` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV,outV\>:the function to apply to each entry |
+| `function` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outV\>:the function to apply to each entry |
 
 | Exceptions ||
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

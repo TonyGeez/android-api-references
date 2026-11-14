@@ -8,22 +8,22 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface BinaryOperator<T : Any!> : BiFunction<T, T, T>
 ```
 
-| [java.util.function.BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#) |
+| [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) |
 
-Represents an operation upon two operands of the same type, producing a result of the same type as the operands. This is a specialization of [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction) for the case where the operands and the result are all of the same type.
+Represents an operation upon two operands of the same type, producing a result of the same type as the operands. This is a specialization of [BiFunction](../java/util/function/BiFunction.md) for the case where the operands and the result are all of the same type.
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [apply(java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/function/BiFunction#apply(java.util.function.BiFunction.T,%20java.util.function.BiFunction.U)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [apply(java.lang.Object,java.lang.Object)](../java/util/function/BiFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#)\<T\>! | [maxBy](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#maxBy(java.util.Comparator))`(`comparator:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)<in` `T>!`)` Returns a [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#) which returns the greater of two elements according to the specified`Comparator`. |
-| openstatic [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#)\<T\>! | [minBy](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#minBy(java.util.Comparator))`(`comparator:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)<in` `T>!`)` Returns a [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#) which returns the lesser of two elements according to the specified`Comparator`. |
+| openstatic [BinaryOperator](../java/util/function/BinaryOperator.md)\<T\>! | [maxBy](../java/util/function/BinaryOperator.md))`(`comparator:` ` [Comparator](../java/util/Comparator.md)<in` `T>!`)` Returns a [BinaryOperator](../java/util/function/BinaryOperator.md) which returns the greater of two elements according to the specified`Comparator`. |
+| openstatic [BinaryOperator](../java/util/function/BinaryOperator.md)\<T\>! | [minBy](../java/util/function/BinaryOperator.md))`(`comparator:` ` [Comparator](../java/util/Comparator.md)<in` `T>!`)` Returns a [BinaryOperator](../java/util/function/BinaryOperator.md) which returns the lesser of two elements according to the specified`Comparator`. |
 
 | Inherited functions ||
 |---|---|
-| From class [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction) |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)<T,` `U,` `V>! | [andThen](https://developer.android.com/reference/kotlin/java/util/function/BiFunction#andThen(java.util.function.Function))`(`after:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function)<in` `R,` `out` `V>!`)` <br /> Returns a composed function that first applies this function to its input, and then applies the`after`function to the result. If evaluation of either function throws an exception, it is relayed to the caller of the composed function. <br /> | | R | [apply](https://developer.android.com/reference/kotlin/java/util/function/BiFunction#apply(java.util.function.BiFunction.T,%20java.util.function.BiFunction.U))`(`t:` `T`, `u:` `U`)` <br /> Applies this function to the given arguments. <br /> | ||
+| From class [BiFunction](../java/util/function/BiFunction.md) |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BiFunction](../java/util/function/BiFunction.md)<T,` `U,` `V>! | [andThen](../java/util/function/BiFunction.md))`(`after:` ` [Function](../java/util/function/Function.md)<in` `R,` `out` `V>!`)` <br /> Returns a composed function that first applies this function to its input, and then applies the`after`function to the result. If evaluation of either function throws an exception, it is relayed to the caller of the composed function. <br /> | | R | [apply](../java/util/function/BiFunction.md))`(`t:` `T`, `u:` `U`)` <br /> Applies this function to the given arguments. <br /> | ||
 
 ## Public methods
 
@@ -35,16 +35,16 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun <T : Any!> maxBy(comparator: Comparator<in T>!): BinaryOperator<T>!
 ```
 
-Returns a [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#) which returns the greater of two elements according to the specified`Comparator`.
+Returns a [BinaryOperator](../java/util/function/BinaryOperator.md) which returns the greater of two elements according to the specified`Comparator`.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the input arguments of the comparator |
-| `comparator` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)\<inT\>!:a`Comparator`for comparing the two values |
+| `comparator` | [Comparator](../java/util/Comparator.md)\<inT\>!:a`Comparator`for comparing the two values |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#)<T>! | a`BinaryOperator`which returns the greater of its operands, according to the supplied`Comparator` |
+| [BinaryOperator](../java/util/function/BinaryOperator.md)<T>! | a`BinaryOperator`which returns the greater of its operands, according to the supplied`Comparator` |
 
 | Exceptions ||
 |----------------------------------|-------------------------|
@@ -58,16 +58,16 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun <T : Any!> minBy(comparator: Comparator<in T>!): BinaryOperator<T>!
 ```
 
-Returns a [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#) which returns the lesser of two elements according to the specified`Comparator`.
+Returns a [BinaryOperator](../java/util/function/BinaryOperator.md) which returns the lesser of two elements according to the specified`Comparator`.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the input arguments of the comparator |
-| `comparator` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator.html#)\<inT\>!:a`Comparator`for comparing the two values |
+| `comparator` | [Comparator](../java/util/Comparator.md)\<inT\>!:a`Comparator`for comparing the two values |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator#)<T>! | a`BinaryOperator`which returns the lesser of its operands, according to the supplied`Comparator` |
+| [BinaryOperator](../java/util/function/BinaryOperator.md)<T>! | a`BinaryOperator`which returns the lesser of its operands, according to the supplied`Comparator` |
 
 | Exceptions ||
 |----------------------------------|-------------------------|

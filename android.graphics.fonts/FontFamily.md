@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # FontFamily
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/fonts/FontFamily "View this page in Java") 
+Kotlin | [Java](../android/graphics/fonts/FontFamily.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class FontFamily
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.fonts.FontFamily](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontFamily#) |
+| ↳ | [android.graphics.fonts.FontFamily](../android/graphics/fonts/FontFamily.md) |
 
 A font family class can be used for creating Typeface.
 
@@ -39,12 +39,12 @@ In this example, "Hello, " is drawn with "regular.ttf", and "World." is drawn wi
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontFamily.Builder) A builder class for creating new FontFamily. |
+| | [Builder](../android/graphics/fonts/FontFamily.Builder.md) A builder class for creating new FontFamily. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Font](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font) | [getFont](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontFamily#getFont(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a font |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/graphics/fonts/FontFamily#getSize())`()` Returns the number of fonts in this FontFamily. |
+| [Font](../android/graphics/fonts/Font.md) | [getFont](../android/graphics/fonts/FontFamily.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a font |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](../android/graphics/fonts/FontFamily.md))`()` Returns the number of fonts in this FontFamily. |
 
 ## Public methods
 
@@ -64,7 +64,7 @@ Returns a font
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------|
-| [Font](https://developer.android.com/reference/kotlin/android/graphics/fonts/Font) | a registered font This value cannot be `null`. |
+| [Font](../android/graphics/fonts/Font.md) | a registered font This value cannot be `null`. |
 
 ### getSize
 

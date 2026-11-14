@@ -6,7 +6,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 interface LifecycleListener
 ```
 
-| [android.app.AppInteractionSession.LifecycleListener](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener#) |
+| [android.app.AppInteractionSession.LifecycleListener](../android/app/AppInteractionSession.LifecycleListener.md) |
 
 Listener for session lifecycle events.
 
@@ -37,5 +37,5 @@ If the session is already closed, the listener will be invoked immediately.
 
 | Parameters ||
 |---|---|
-| `session` | [AppInteractionSession](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession): The session that is closed. This value cannot be `null`. |
+| `session` | [AppInteractionSession](../android/app/AppInteractionSession.md): The session that is closed. This value cannot be `null`. |
 | `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The reason why the session is closed. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession#CLOSE_REASON_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession#CLOSE_REASON_TIMEOUT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession#CLOSE_REASON_CALLER_INITIATED:kotlin.Int` |

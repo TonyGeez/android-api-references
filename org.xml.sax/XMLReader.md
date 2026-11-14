@@ -8,17 +8,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface XMLReader
 ```
 
-| [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#) |
+| [org.xml.sax.XMLReader](../org/xml/sax/XMLReader.md) |
 
-| Known Direct Subclasses [Driver](https://developer.android.com/reference/kotlin/org/xmlpull/v1/sax2/Driver.html#), [ParserAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserAdapter), [XMLFilter](https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter) |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [Driver](https://developer.android.com/reference/kotlin/org/xmlpull/v1/sax2/Driver.html#) | SAX2 Driver that pulls events from XmlPullParser and converts them into SAX2 callbacks. | | [ParserAdapter](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserAdapter) | Adapt a SAX1 Parser as a SAX2 XMLReader. | | [XMLFilter](https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter) | Interface for an XML filter. | |
+| Known Direct Subclasses [Driver](../org/xmlpull/v1/sax2/Driver.md), [ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md), [XMLFilter](../org/xml/sax/XMLFilter.md) |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [Driver](../org/xmlpull/v1/sax2/Driver.md) | SAX2 Driver that pulls events from XmlPullParser and converts them into SAX2 callbacks. | | [ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md) | Adapt a SAX1 Parser as a SAX2 XMLReader. | | [XMLFilter](../org/xml/sax/XMLFilter.md) | Interface for an XML filter. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) |---------------------------------------------------------------------------------------------------|----------------------------------------| | [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) | Base class for deriving an XML filter. | |
+| Known Indirect Subclasses [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md) |---------------------------------------------------------------------------------------------------|----------------------------------------| | [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md) | Base class for deriving an XML filter. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Interface for reading an XML document using callbacks.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-**Note:** despite its name, this interface does*not* extend the standard Java [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#) interface, because reading XML is a fundamentally different activity than reading character data.
+**Note:** despite its name, this interface does*not* extend the standard Java [Reader](../java/io/Reader.md) interface, because reading XML is a fundamentally different activity than reading character data.
 
 XMLReader is the interface that an XML parser's SAX2 driver must implement. This interface allows an application to set and query features and properties in the parser, to register event handlers for document processing, and to initiate a document parse.
 
@@ -35,24 +35,24 @@ There are adapters available to convert a SAX1 Parser to a SAX2 XMLReader and vi
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler)! | [getContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getContentHandler())`()` Return the current content handler. |
-| abstract [DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler)! | [getDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getDTDHandler())`()` Return the current DTD handler. |
-| abstract [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver)! | [getEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getEntityResolver())`()` Return the current entity resolver. |
+| abstract [ContentHandler](../org/xml/sax/ContentHandler.md)! | [getContentHandler](../org/xml/sax/XMLReader.md))`()` Return the current content handler. |
+| abstract [DTDHandler](../org/xml/sax/DTDHandler.md)! | [getDTDHandler](../org/xml/sax/XMLReader.md))`()` Return the current DTD handler. |
+| abstract [EntityResolver](../org/xml/sax/EntityResolver.md)! | [getEntityResolver](../org/xml/sax/XMLReader.md))`()` Return the current entity resolver. |
 | --- | --- |
-| abstract [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler)! | [getErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getErrorHandler())`()` Return the current error handler. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getFeature(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature flag. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getProperty(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
+| abstract [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | [getErrorHandler](../org/xml/sax/XMLReader.md))`()` Return the current error handler. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../org/xml/sax/XMLReader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature flag. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](../org/xml/sax/XMLReader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#parse(kotlin.String))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an XML document from a system identifier (URI). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#parse(org.xml.sax.InputSource))`(`input:` ` [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource)!`)` Parse an XML document. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setContentHandler(org.xml.sax.ContentHandler))`(`handler:` ` [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler)!`)` Allow an application to register a content event handler. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/XMLReader.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an XML document from a system identifier (URI). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/XMLReader.md))`(`input:` ` [InputSource](../org/xml/sax/InputSource.md)!`)` Parse an XML document. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandler](../org/xml/sax/XMLReader.md))`(`handler:` ` [ContentHandler](../org/xml/sax/ContentHandler.md)!`)` Allow an application to register a content event handler. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setDTDHandler(org.xml.sax.DTDHandler))`(`handler:` ` [DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler)!`)` Allow an application to register a DTD event handler. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setEntityResolver(org.xml.sax.EntityResolver))`(`resolver:` ` [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver)!`)` Allow an application to register an entity resolver. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setErrorHandler(org.xml.sax.ErrorHandler))`(`handler:` ` [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler)!`)` Allow an application to register an error event handler. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](../org/xml/sax/XMLReader.md))`(`handler:` ` [DTDHandler](../org/xml/sax/DTDHandler.md)!`)` Allow an application to register a DTD event handler. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](../org/xml/sax/XMLReader.md))`(`resolver:` ` [EntityResolver](../org/xml/sax/EntityResolver.md)!`)` Allow an application to register an entity resolver. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](../org/xml/sax/XMLReader.md))`(`handler:` ` [ErrorHandler](../org/xml/sax/ErrorHandler.md)!`)` Allow an application to register an error event handler. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setFeature(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature flag. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setProperty(kotlin.String,%20kotlin.Any))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../org/xml/sax/XMLReader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature flag. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](../org/xml/sax/XMLReader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
 
 ## Public methods
 
@@ -68,11 +68,11 @@ Return the current content handler.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler)! | The current content handler, or null if none has been registered. |
+| [ContentHandler](../org/xml/sax/ContentHandler.md)! | The current content handler, or null if none has been registered. |
 
 **See Also**
 
-- [#setContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setContentHandler(org.xml.sax.ContentHandler)) 
+- [#setContentHandler](../org/xml/sax/XMLReader.md)) 
 
 ### getDTDHandler
 
@@ -86,11 +86,11 @@ Return the current DTD handler.
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler)! | The current DTD handler, or null if none has been registered. |
+| [DTDHandler](../org/xml/sax/DTDHandler.md)! | The current DTD handler, or null if none has been registered. |
 
 **See Also**
 
-- [#setDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setDTDHandler(org.xml.sax.DTDHandler)) 
+- [#setDTDHandler](../org/xml/sax/XMLReader.md)) 
 
 ### getEntityResolver
 
@@ -104,11 +104,11 @@ Return the current entity resolver.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver)! | The current entity resolver, or null if none has been registered. |
+| [EntityResolver](../org/xml/sax/EntityResolver.md)! | The current entity resolver, or null if none has been registered. |
 
 **See Also**
 
-- [#setEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setEntityResolver(org.xml.sax.EntityResolver)) 
+- [#setEntityResolver](../org/xml/sax/XMLReader.md)) 
 
 ### getErrorHandler
 
@@ -122,11 +122,11 @@ Return the current error handler.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler)! | The current error handler, or null if none has been registered. |
+| [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | The current error handler, or null if none has been registered. |
 
 **See Also**
 
-- [#setErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setErrorHandler(org.xml.sax.ErrorHandler)) 
+- [#setErrorHandler](../org/xml/sax/XMLReader.md)) 
 
 ### getFeature
 
@@ -138,7 +138,7 @@ abstract fun getFeature(name: String!): Boolean
 
 Look up the value of a feature flag.
 
-The feature name is any fully-qualified URI. It is possible for an XMLReader to recognize a feature name but temporarily be unable to return its value. Some feature values may be available only in specific contexts, such as before, during, or after a parse. Also, some feature values may not be programmatically accessible. (In the case of an adapter for SAX1 [Parser](https://developer.android.com/reference/kotlin/org/xml/sax/Parser), there is no implementation-independent way to expose whether the underlying parser is performing validation, expanding external entities, and so forth.)
+The feature name is any fully-qualified URI. It is possible for an XMLReader to recognize a feature name but temporarily be unable to return its value. Some feature values may be available only in specific contexts, such as before, during, or after a parse. Also, some feature values may not be programmatically accessible. (In the case of an adapter for SAX1 [Parser](../org/xml/sax/Parser.md), there is no implementation-independent way to expose whether the underlying parser is performing validation, expanding external entities, and so forth.)
 
 All XMLReaders are required to recognize the http://xml.org/sax/features/namespaces and the http://xml.org/sax/features/namespace-prefixes feature names.
 
@@ -186,7 +186,7 @@ Implementors are free (and encouraged) to invent their own features, using names
 
 **See Also**
 
-- [#setFeature](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setFeature(kotlin.String,%20kotlin.Boolean)) 
+- [#setFeature](../org/xml/sax/XMLReader.md)) 
 
 ### getProperty
 
@@ -219,7 +219,7 @@ Implementors are free (and encouraged) to invent their own properties, using nam
 
 **See Also**
 
-- [#setProperty](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setProperty(kotlin.String,%20kotlin.Any)) 
+- [#setProperty](../org/xml/sax/XMLReader.md)) 
 
 ### parse
 
@@ -273,7 +273,7 @@ This method is synchronous: it will not return until parsing has ended. If a cli
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `input` | [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource)!:The input source for the top-level of the XML document. |
+| `input` | [InputSource](../org/xml/sax/InputSource.md)!:The input source for the top-level of the XML document. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -282,12 +282,12 @@ This method is synchronous: it will not return until parsing has ended. If a cli
 
 **See Also**
 
-- [org.xml.sax.InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource)
-- [#parse(java.lang.String)](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#parse(kotlin.String))
-- [#setEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setEntityResolver(org.xml.sax.EntityResolver))
-- [#setDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setDTDHandler(org.xml.sax.DTDHandler))
-- [#setContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setContentHandler(org.xml.sax.ContentHandler))
-- [#setErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#setErrorHandler(org.xml.sax.ErrorHandler)) 
+- [org.xml.sax.InputSource](../org/xml/sax/InputSource.md)
+- [#parse(java.lang.String)](../org/xml/sax/XMLReader.md))
+- [#setEntityResolver](../org/xml/sax/XMLReader.md))
+- [#setDTDHandler](../org/xml/sax/XMLReader.md))
+- [#setContentHandler](../org/xml/sax/XMLReader.md))
+- [#setErrorHandler](../org/xml/sax/XMLReader.md)) 
 
 ### setContentHandler
 
@@ -305,11 +305,11 @@ Applications may register a new or different handler in the middle of a parse, a
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------|
-| `handler` | [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler)!:The content handler. |
+| `handler` | [ContentHandler](../org/xml/sax/ContentHandler.md)!:The content handler. |
 
 **See Also**
 
-- [#getContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getContentHandler()) 
+- [#getContentHandler](../org/xml/sax/XMLReader.md)) 
 
 ### setDTDHandler
 
@@ -327,11 +327,11 @@ Applications may register a new or different handler in the middle of a parse, a
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------|
-| `handler` | [DTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DTDHandler)!:The DTD handler. |
+| `handler` | [DTDHandler](../org/xml/sax/DTDHandler.md)!:The DTD handler. |
 
 **See Also**
 
-- [#getDTDHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getDTDHandler()) 
+- [#getDTDHandler](../org/xml/sax/XMLReader.md)) 
 
 ### setEntityResolver
 
@@ -349,11 +349,11 @@ Applications may register a new or different resolver in the middle of a parse, 
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver)!:The entity resolver. |
+| `resolver` | [EntityResolver](../org/xml/sax/EntityResolver.md)!:The entity resolver. |
 
 **See Also**
 
-- [#getEntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getEntityResolver()) 
+- [#getEntityResolver](../org/xml/sax/XMLReader.md)) 
 
 ### setErrorHandler
 
@@ -371,11 +371,11 @@ Applications may register a new or different handler in the middle of a parse, a
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------|
-| `handler` | [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler)!:The error handler. |
+| `handler` | [ErrorHandler](../org/xml/sax/ErrorHandler.md)!:The error handler. |
 
 **See Also**
 
-- [#getErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getErrorHandler()) 
+- [#getErrorHandler](../org/xml/sax/XMLReader.md)) 
 
 ### setFeature
 
@@ -406,7 +406,7 @@ All XMLReaders are required to support setting http://xml.org/sax/features/names
 
 **See Also**
 
-- [#getFeature](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader#getFeature(kotlin.String)) 
+- [#getFeature](../org/xml/sax/XMLReader.md)) 
 
 ### setProperty
 

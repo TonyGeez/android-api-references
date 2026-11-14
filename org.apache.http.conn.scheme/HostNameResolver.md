@@ -9,7 +9,7 @@ Deprecated in [API level 22](https://developer.android.com/guide/topics/manifest
 interface HostNameResolver
 ```
 
-| [org.apache.http.conn.scheme.HostNameResolver](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/HostNameResolver#) |
+| [org.apache.http.conn.scheme.HostNameResolver](../org/apache/http/conn/scheme/HostNameResolver.md) |
 
 | **This interface was deprecated in API level 22.**
 |
@@ -19,7 +19,7 @@ interface HostNameResolver
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)! | [resolve](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/HostNameResolver#resolve(kotlin.String))`(`hostname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| abstract [InetAddress](../java/net/InetAddress.md)! | [resolve](../org/apache/http/conn/scheme/HostNameResolver.md))`(`hostname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public methods
 

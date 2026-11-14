@@ -2,12 +2,12 @@
 
 # android.os.storage
 
-Kotlin | [Java](https://developer.android.com/reference/android/os/storage/package-summary "View this page in Java")
+Kotlin | [Java](../android/os/storage/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [OnObbStateChangeListener](https://developer.android.com/reference/kotlin/android/os/storage/OnObbStateChangeListener) | Used for receiving notifications from [StorageManager](https://developer.android.com/reference/kotlin/android/os/storage/StorageManager) about OBB file states. |
+| [OnObbStateChangeListener](../android/os/storage/OnObbStateChangeListener.md) | Used for receiving notifications from [StorageManager](../android/os/storage/StorageManager.md) about OBB file states. |
 | --- | --- |
-| [StorageManager](https://developer.android.com/reference/kotlin/android/os/storage/StorageManager) | StorageManager is the interface to the systems storage service. |
-| [StorageVolume](https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume) | Information about a shared/external storage volume for a specific user. |
+| [StorageManager](../android/os/storage/StorageManager.md) | StorageManager is the interface to the systems storage service. |
+| [StorageVolume](../android/os/storage/StorageVolume.md) | Information about a shared/external storage volume for a specific user. |

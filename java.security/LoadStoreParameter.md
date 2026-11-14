@@ -8,18 +8,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface LoadStoreParameter
 ```
 
-| [java.security.KeyStore.LoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter#) |
+| [java.security.KeyStore.LoadStoreParameter](../java/security/KeyStore.LoadStoreParameter.md) |
 
-| Known Direct Subclasses [DomainLoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------| | [DomainLoadStoreParameter](https://developer.android.com/reference/kotlin/java/security/DomainLoadStoreParameter) | Configuration data that specifies the keystores in a keystore domain. | |
+| Known Direct Subclasses [DomainLoadStoreParameter](../java/security/DomainLoadStoreParameter.md) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------| | [DomainLoadStoreParameter](../java/security/DomainLoadStoreParameter.md) | Configuration data that specifies the keystores in a keystore domain. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A marker interface for`KeyStore` [load](https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.security.KeyStore.LoadStoreParameter))and [store](https://developer.android.com/reference/kotlin/java/security/KeyStore#store(java.security.KeyStore.LoadStoreParameter))parameters.
+A marker interface for`KeyStore` [load](../java/security/KeyStore.md))and [store](../java/security/KeyStore.md))parameters.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)! | [getProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter#getProtectionParameter())`()` Gets the parameter used to protect keystore data. |
+| abstract [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)! | [getProtectionParameter](../java/security/KeyStore.LoadStoreParameter.md))`()` Gets the parameter used to protect keystore data. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Gets the parameter used to protect keystore data.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [KeyStore.ProtectionParameter](https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter)! | the parameter used to protect keystore data, or null |
+| [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)! | the parameter used to protect keystore data, or null |

@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # Event
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/Event "View this page in Java") 
+Kotlin| [Java](../android/media/metrics/Event.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class Event
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.Event](https://developer.android.com/reference/kotlin/android/media/metrics/Event#) |
+| ↳ | [android.media.metrics.Event](../android/media/metrics/Event.md) |
 
-| Known Direct Subclasses [EditingEndedEvent](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent), [NetworkEvent](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent), [PlaybackErrorEvent](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent), [PlaybackStateEvent](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent), [TrackChangeEvent](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent) |---------------------------------------------------------------------------------------------------------------|----------------------------------------------| | [EditingEndedEvent](https://developer.android.com/reference/kotlin/android/media/metrics/EditingEndedEvent) | Event for an editing operation having ended. | | [NetworkEvent](https://developer.android.com/reference/kotlin/android/media/metrics/NetworkEvent) | Media network event. | | [PlaybackErrorEvent](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackErrorEvent) | Playback error event. | | [PlaybackStateEvent](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackStateEvent) | Playback state event. | | [TrackChangeEvent](https://developer.android.com/reference/kotlin/android/media/metrics/TrackChangeEvent) | Playback track change event. | |
+| Known Direct Subclasses [EditingEndedEvent](../android/media/metrics/EditingEndedEvent.md), [NetworkEvent](../android/media/metrics/NetworkEvent.md), [PlaybackErrorEvent](../android/media/metrics/PlaybackErrorEvent.md), [PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md), [TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md) |---------------------------------------------------------------------------------------------------------------|----------------------------------------------| | [EditingEndedEvent](../android/media/metrics/EditingEndedEvent.md) | Event for an editing operation having ended. | | [NetworkEvent](../android/media/metrics/NetworkEvent.md) | Media network event. | | [PlaybackErrorEvent](../android/media/metrics/PlaybackErrorEvent.md) | Playback error event. | | [PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md) | Playback state event. | | [TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md) | Playback track change event. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for metrics events.
@@ -24,8 +24,8 @@ Abstract class for metrics events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetricsBundle](https://developer.android.com/reference/kotlin/android/media/metrics/Event#getMetricsBundle())`()` Gets metrics-related information that is not supported by dedicated methods. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](https://developer.android.com/reference/kotlin/android/media/metrics/Event#getTimeSinceCreatedMillis())`()` Gets time since the corresponding log session is created in millisecond. |
+| open [Bundle](../android/os/Bundle.md) | [getMetricsBundle](../android/media/metrics/Event.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](../android/media/metrics/Event.md))`()` Gets time since the corresponding log session is created in millisecond. |
 
 ## Public methods
 
@@ -43,7 +43,7 @@ It is intended to be used for backwards compatibility by the metrics infrastruct
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | This value cannot be`null`. |
+| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
 
 ### getTimeSinceCreatedMillis
 
@@ -61,6 +61,6 @@ Gets time since the corresponding log session is created in millisecond.
 
 **See Also**
 
-- [android.media.metrics.LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId)
-- [android.media.metrics.PlaybackSession](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession)
-- [android.media.metrics.RecordingSession](https://developer.android.com/reference/kotlin/android/media/metrics/RecordingSession)
+- [android.media.metrics.LogSessionId](../android/media/metrics/LogSessionId.md)
+- [android.media.metrics.PlaybackSession](../android/media/metrics/PlaybackSession.md)
+- [android.media.metrics.RecordingSession](../android/media/metrics/RecordingSession.md)

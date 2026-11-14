@@ -8,12 +8,12 @@ open class ProgressBar : View
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||
-| | ↳ | [android.widget.ProgressBar](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#) |
+| ↳ | [android.view.View](../android/view/View.md) ||
+| | ↳ | [android.widget.ProgressBar](../android/widget/ProgressBar.md) |
 
-Known Direct Subclasses [AbsSeekBar](https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar) [AbsSeekBar](https://developer.android.com/reference/kotlin/android/widget/AbsSeekBar) AbsSeekBar extends the capabilities of ProgressBar by adding a draggable thumb.
-Known Indirect Subclasses [RatingBar](https://developer.android.com/reference/kotlin/android/widget/RatingBar), [SeekBar](https://developer.android.com/reference/kotlin/android/widget/SeekBar) [RatingBar](https://developer.android.com/reference/kotlin/android/widget/RatingBar) A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars.
-[SeekBar](https://developer.android.com/reference/kotlin/android/widget/SeekBar) A SeekBar is an extension of ProgressBar that adds a draggable thumb.
+Known Direct Subclasses [AbsSeekBar](../android/widget/AbsSeekBar.md) [AbsSeekBar](../android/widget/AbsSeekBar.md) AbsSeekBar extends the capabilities of ProgressBar by adding a draggable thumb.
+Known Indirect Subclasses [RatingBar](../android/widget/RatingBar.md), [SeekBar](../android/widget/SeekBar.md) [RatingBar](../android/widget/RatingBar.md) A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars.
+[SeekBar](../android/widget/SeekBar.md) A SeekBar is an extension of ProgressBar that adds a draggable thumb.
 
 A user interface element that indicates the progress of an operation. Progress bar supports two modes to represent progress: determinate, and indeterminate. For a visual overview of the difference between determinate and indeterminate progress modes, see [Progress \& activity](https://material.io/guidelines/components/progress-activity.html#progress-activity-types-of-indicators). Display progress bars to a user in a non-interruptive way. Show the progress bar in your app's user interface or in a notification instead of within a dialog.
 
@@ -74,28 +74,28 @@ See `https://developer.android.com/reference/kotlin/android/R.styleable.html#Pro
 
 | XML attributes ||
 |---|---|
-| [`android:animationResolution`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Timeout between frames of animation in milliseconds. |
-| [`android:indeterminate`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Allows to enable the indeterminate mode. |
-| [`android:indeterminateBehavior`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines how the indeterminate mode should behave when the progress reaches max. |
+| [`android:animationResolution`](../android/widget/ProgressBar.md) | Timeout between frames of animation in milliseconds. |
+| [`android:indeterminate`](../android/widget/ProgressBar.md) | Allows to enable the indeterminate mode. |
+| [`android:indeterminateBehavior`](../android/widget/ProgressBar.md) | Defines how the indeterminate mode should behave when the progress reaches max. |
 | --- | --- |
-| [`android:indeterminateDrawable`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Drawable used for the indeterminate mode. |
-| [`android:indeterminateDuration`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Duration of the indeterminate animation. |
-| [`android:indeterminateOnly`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Restricts to ONLY indeterminate mode (state-keeping progress mode will not work). |
+| [`android:indeterminateDrawable`](../android/widget/ProgressBar.md) | Drawable used for the indeterminate mode. |
+| [`android:indeterminateDuration`](../android/widget/ProgressBar.md) | Duration of the indeterminate animation. |
+| [`android:indeterminateOnly`](../android/widget/ProgressBar.md) | Restricts to ONLY indeterminate mode (state-keeping progress mode will not work). |
 | --- | --- |
-| [`android:interpolator`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Sets the acceleration curve for the indeterminate animation. |
-| [`android:max`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the maximum value. |
-| [`android:maxHeight`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | An optional argument to supply a maximum height for this view. |
+| [`android:interpolator`](../android/widget/ProgressBar.md) | Sets the acceleration curve for the indeterminate animation. |
+| [`android:max`](../android/widget/ProgressBar.md) | Defines the maximum value. |
+| [`android:maxHeight`](../android/widget/ProgressBar.md) | An optional argument to supply a maximum height for this view. |
 | --- | --- |
-| [`android:maxWidth`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | An optional argument to supply a maximum width for this view. |
-| [`android:min`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the minimum value. |
-| [`android:minHeight`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | |
+| [`android:maxWidth`](../android/widget/ProgressBar.md) | An optional argument to supply a maximum width for this view. |
+| [`android:min`](../android/widget/ProgressBar.md) | Defines the minimum value. |
+| [`android:minHeight`](../android/widget/ProgressBar.md) | |
 | --- | --- |
-| [`android:minWidth`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | |
-| [`android:mirrorForRtl`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines if the associated drawables need to be mirrored when in RTL mode. |
-| [`android:progress`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the default progress value, between 0 and max. |
+| [`android:minWidth`](../android/widget/ProgressBar.md) | |
+| [`android:mirrorForRtl`](../android/widget/ProgressBar.md) | Defines if the associated drawables need to be mirrored when in RTL mode. |
+| [`android:progress`](../android/widget/ProgressBar.md) | Defines the default progress value, between 0 and max. |
 | --- | --- |
-| [`android:progressDrawable`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Drawable used for the progress mode. |
-| [`android:secondaryProgress`](https://developer.android.com/reference/kotlin/android/widget/ProgressBar#attr_ProgressBar) | Defines the secondary progress value, between 0 and max. |
+| [`android:progressDrawable`](../android/widget/ProgressBar.md) | Drawable used for the progress mode. |
+| [`android:secondaryProgress`](../android/widget/ProgressBar.md) | Defines the secondary progress value, between 0 and max. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
 
@@ -638,7 +638,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -663,7 +663,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -673,7 +673,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -693,7 +693,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -703,7 +703,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -713,7 +713,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -723,7 +723,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -733,7 +733,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -743,7 +743,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -753,7 +753,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -763,7 +763,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -773,7 +773,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -783,7 +783,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -953,7 +953,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -973,7 +973,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1015,7 +1015,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1111,7 +1111,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1205,7 +1205,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1662,7 +1662,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1677,14 +1677,14 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#drawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` This function is called whenever the view hotspot changes and needs to be propagated to drawables or child views managed by the view. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getCurrentDrawable()()` Returns the drawable currently used to draw the progress bar. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getCurrentDrawable()()` Returns the drawable currently used to draw the progress bar. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateDrawable()()` Get the drawable used to draw the progress bar in indeterminate mode. |
-| open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintBlendMode()()` Returns the blending mode used to apply the tint to the indeterminate drawable, if specified. |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintList()()` <br /> |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateDrawable()()` Get the drawable used to draw the progress bar in indeterminate mode. |
+| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintBlendMode()()` Returns the blending mode used to apply the tint to the indeterminate drawable, if specified. |
+| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintList()()` <br /> |
 | --- | --- |
-| open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintMode()()` Returns the blending mode used to apply the tint to the indeterminate drawable, if specified. |
-| open [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getInterpolator()()` Gets the acceleration curve type for the indeterminate animation. |
+| open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getIndeterminateTintMode()()` Returns the blending mode used to apply the tint to the indeterminate drawable, if specified. |
+| open [Interpolator](../android/view/animation/Interpolator.md)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getInterpolator()()` Gets the acceleration curve type for the indeterminate animation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMax()()` Return the upper limit of this progress bar's range. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMaxHeight()()` The units of this value are pixels. |
@@ -1695,20 +1695,20 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getMinWidth()()` The units of this value are pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgress()()` Get the progress bar's current level of progress. |
 | --- | --- |
-| open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintBlendMode()()` <br /> |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintList()()` Returns the tint applied to the progress background, if specified. |
-| open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintMode()()` <br /> |
+| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintBlendMode()()` <br /> |
+| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintList()()` Returns the tint applied to the progress background, if specified. |
+| open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressBackgroundTintMode()()` <br /> |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressDrawable()()` Get the drawable used to draw the progress bar in progress mode. |
-| open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintBlendMode()()` Returns the blending mode used to apply the tint to the progress drawable, if specified. |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintList()()` Returns the tint applied to the progress drawable, if specified. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressDrawable()()` Get the drawable used to draw the progress bar in progress mode. |
+| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintBlendMode()()` Returns the blending mode used to apply the tint to the progress drawable, if specified. |
+| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintList()()` Returns the tint applied to the progress drawable, if specified. |
 | --- | --- |
-| open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintMode()()` Returns the blending mode used to apply the tint to the progress drawable, if specified. |
+| open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getProgressTintMode()()` Returns the blending mode used to apply the tint to the progress drawable, if specified. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgress()()` Get the progress bar's current level of secondary progress. |
-| open [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintBlendMode()()` Returns the blending mode used to apply the tint to the secondary progress drawable, if specified. |
+| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintBlendMode()()` Returns the blending mode used to apply the tint to the secondary progress drawable, if specified. |
 | --- | --- |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintList()()` Returns the tint applied to the secondary progress drawable, if specified. |
-| open [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintMode()()` Returns the blending mode used to apply the tint to the secondary progress drawable, if specified. |
+| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintList()()` Returns the tint applied to the secondary progress drawable, if specified. |
+| open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#getSecondaryProgressTintMode()()` Returns the blending mode used to apply the tint to the secondary progress drawable, if specified. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#incrementProgressBy(kotlin.Int)(diff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Increase the progress bar's progress by the specified amount. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#incrementSecondaryProgressBy(kotlin.Int)(diff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Increase the progress bar's secondary progress by the specified amount. |
@@ -1719,7 +1719,7 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | --- | --- |
-| open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#onVisibilityAggregated(kotlin.Boolean)(isVisible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the user-visibility of this View is potentially affected by a change to this view itself, an ancestor view or the window this view is attached to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ProgressBar#postInvalidate()()` Cause an invalidate to happen on a subsequent cycle through the event loop. |
 | --- | --- |
@@ -6520,7 +6520,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -7383,7 +7383,7 @@ Create a new progress bar with range 0...100 and initial progress of 0.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the application environment |
+| `context` | [Context](../android/content/Context.md)!: the application environment |
 
 ### ProgressBar
 
@@ -7924,7 +7924,7 @@ Invalidates the specified Drawable.
 |---|---|
 | `who` | The drawable that is requesting the update. This value cannot be `null`. |
 | `drawable` | the drawable to invalidate. This value cannot be `null`. |
-| `dr` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): This value cannot be `null`. |
+| `dr` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
 | --- | --- |
 
 ### isAnimating
@@ -7981,7 +7981,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 
 ### onSaveInstanceState
 
@@ -8056,7 +8056,7 @@ For the Drawable to animate, it must implement `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: the new drawable |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)!: the new drawable |
 
 **See Also**
 
@@ -8077,7 +8077,7 @@ If the drawable is a BitmapDrawable or contains BitmapDrawables, a tiled copy wi
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: the new drawable |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)!: the new drawable |
 
 **See Also**
 
@@ -8096,7 +8096,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8117,7 +8117,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -8136,7 +8136,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `tintMode` | [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `tintMode` | [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8164,7 +8164,7 @@ This call must be made before the indeterminate animation starts for it to have 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The application environment |
+| `context` | [Context](../android/content/Context.md)!: The application environment |
 | `resID` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the interpolator to load |
 
 **See Also**
@@ -8188,7 +8188,7 @@ This call must be made before the indeterminate animation starts for it to have 
 
 | Parameters ||
 |---|---|
-| `interpolator` | [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#)!: The interpolator which defines the acceleration curve |
+| `interpolator` | [Interpolator](../android/view/animation/Interpolator.md)!: The interpolator which defines the acceleration curve |
 
 **See Also**
 
@@ -8346,7 +8346,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8369,7 +8369,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -8388,7 +8388,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `tintMode` | [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `tintMode` | [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8407,7 +8407,7 @@ Define the drawable used to draw the progress bar in progress mode.
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: the new drawable |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)!: the new drawable |
 
 **See Also**
 
@@ -8428,7 +8428,7 @@ If the drawable is a BitmapDrawable or contains BitmapDrawables, a tiled copy wi
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: the new drawable |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)!: the new drawable |
 
 **See Also**
 
@@ -8447,7 +8447,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8470,7 +8470,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -8489,7 +8489,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `tintMode` | [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `tintMode` | [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8529,7 +8529,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8552,7 +8552,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -8571,7 +8571,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `tintMode` | [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `tintMode` | [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -8643,7 +8643,7 @@ Implement this to do your drawing.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): the canvas on which the background will be drawn. This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
 
 ### onMeasure
 
@@ -8707,7 +8707,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#): This value cannot be `null`. |
+| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

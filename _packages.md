@@ -1,421 +1,421 @@
 # Package Index
 
 These are the API packages.
-See all [API classes](https://developer.android.com/reference/classes).
+See all [API classes](./classes.md).
 
-| [android](https://developer.android.com/reference/android/package-summary) | Contains resource classes used by applications included in the platform and defines application permissions for system features. |
-| --- | --- |
-| [android.accessibilityservice](https://developer.android.com/reference/android/accessibilityservice/package-summary) | The classes in this package are used for development of accessibility service that provide alternative or augmented feedback to the user. |
-| [android.accounts](https://developer.android.com/reference/android/accounts/package-summary) | |
-| [android.adservices](https://developer.android.com/reference/android/adservices/package-summary) | |
-| --- | --- |
-| [android.adservices.adid](https://developer.android.com/reference/android/adservices/adid/package-summary) | |
-| [android.adservices.adselection](https://developer.android.com/reference/android/adservices/adselection/package-summary) | |
-| [android.adservices.appsetid](https://developer.android.com/reference/android/adservices/appsetid/package-summary) | |
-| --- | --- |
-| [android.adservices.common](https://developer.android.com/reference/android/adservices/common/package-summary) | |
-| [android.adservices.customaudience](https://developer.android.com/reference/android/adservices/customaudience/package-summary) | |
-| [android.adservices.exceptions](https://developer.android.com/reference/android/adservices/exceptions/package-summary) | |
-| --- | --- |
-| [android.adservices.measurement](https://developer.android.com/reference/android/adservices/measurement/package-summary) | |
-| [android.adservices.ondevicepersonalization](https://developer.android.com/reference/android/adservices/ondevicepersonalization/package-summary) | |
-| [android.adservices.signals](https://developer.android.com/reference/android/adservices/signals/package-summary) | |
-| --- | --- |
-| [android.adservices.topics](https://developer.android.com/reference/android/adservices/topics/package-summary) | |
-| [android.animation](https://developer.android.com/reference/android/animation/package-summary) | These classes provide functionality for the property animation system, which allows you to animate object properties of any type. `int`, `float`, and hexadecimal color values are supported by default. You can animate any other type by telling the system how to calculate the values for that given type with a custom `https://developer.android.com/reference/android/animation/TypeEvaluator`. For more information, see the [Animation](https://developer.android.com/guide/topics/graphics/prop-animation) guide. |
-| [android.annotation](https://developer.android.com/reference/android/annotation/package-summary) | |
-| --- | --- |
-| [android.app](https://developer.android.com/reference/android/app/package-summary) | Contains high-level classes encapsulating the overall Android application model. |
-| [android.app.admin](https://developer.android.com/reference/android/app/admin/package-summary) | Provides device administration features at the system level, allowing you to create security-aware applications that are useful in enterprise settings, in which IT professionals require rich control over employee devices. For more information, see the [Device Administration](https://developer.android.com/guide/topics/admin/device-admin) guide. |
-| [android.app.admin.policy](https://developer.android.com/reference/android/app/admin/policy/package-summary) | |
-| --- | --- |
-| [android.app.appfunctions](https://developer.android.com/reference/android/app/appfunctions/package-summary) | Android App Functions provides APIs for applications to expose functionality to the system for cross-app orchestration, and for system-privileged agents to discover and execute this functionality. |
-| [android.app.appsearch](https://developer.android.com/reference/android/app/appsearch/package-summary) | |
-| [android.app.appsearch.exceptions](https://developer.android.com/reference/android/app/appsearch/exceptions/package-summary) | |
-| --- | --- |
-| [android.app.appsearch.observer](https://developer.android.com/reference/android/app/appsearch/observer/package-summary) | |
-| [android.app.appsearch.util](https://developer.android.com/reference/android/app/appsearch/util/package-summary) | |
-| [android.app.assist](https://developer.android.com/reference/android/app/assist/package-summary) | |
-| --- | --- |
-| [android.app.backup](https://developer.android.com/reference/android/app/backup/package-summary) | Contains the backup and restore functionality available to applications. If a user wipes the data on their device or upgrades to a new Android-powered device, all applications that have enabled backup can restore the user's previous data when the application is reinstalled. For more information, see the [Data Backup](https://developer.android.com/guide/topics/data/backup) guide. |
-| [android.app.blob](https://developer.android.com/reference/android/app/blob/package-summary) | |
-| [android.app.contentsafety](https://developer.android.com/reference/android/app/contentsafety/package-summary) | |
-| --- | --- |
-| [android.app.jank](https://developer.android.com/reference/android/app/jank/package-summary) | |
-| [android.app.job](https://developer.android.com/reference/android/app/job/package-summary) | |
-| [android.app.people](https://developer.android.com/reference/android/app/people/package-summary) | |
-| --- | --- |
-| [android.app.permissionui](https://developer.android.com/reference/android/app/permissionui/package-summary) | |
-| [android.app.privatecompute](https://developer.android.com/reference/android/app/privatecompute/package-summary) | |
-| [android.app.role](https://developer.android.com/reference/android/app/role/package-summary) | |
-| --- | --- |
-| [android.app.sdksandbox](https://developer.android.com/reference/android/app/sdksandbox/package-summary) | |
-| [android.app.sdksandbox.sdkprovider](https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/package-summary) | |
-| [android.app.slice](https://developer.android.com/reference/android/app/slice/package-summary) | |
-| --- | --- |
-| [android.app.time](https://developer.android.com/reference/android/app/time/package-summary) | |
-| [android.app.usage](https://developer.android.com/reference/android/app/usage/package-summary) | |
-| [android.app.voiceinteraction](https://developer.android.com/reference/android/app/voiceinteraction/package-summary) | |
-| --- | --- |
-| [android.app.wallpaper](https://developer.android.com/reference/android/app/wallpaper/package-summary) | |
-| [android.appwidget](https://developer.android.com/reference/android/appwidget/package-summary) | Contains the components necessary to create "app widgets", which users can embed in other applications (such as the home screen) to quickly access application data and services without launching a new activity. For more information, see the [App Widgets](https://developer.android.com/guide/topics/appwidgets) guide. |
-| [android.bluetooth](https://developer.android.com/reference/android/bluetooth/package-summary) | |
-| --- | --- |
-| [android.bluetooth.le](https://developer.android.com/reference/android/bluetooth/le/package-summary) | |
-| [android.companion](https://developer.android.com/reference/android/companion/package-summary) | |
-| [android.companion.virtual](https://developer.android.com/reference/android/companion/virtual/package-summary) | |
-| --- | --- |
-| [android.content](https://developer.android.com/reference/android/content/package-summary) | Contains classes for accessing and publishing data on a device. |
-| [android.content.om](https://developer.android.com/reference/android/content/om/package-summary) | |
-| [android.content.pm](https://developer.android.com/reference/android/content/pm/package-summary) | Contains classes for accessing information about an application package, including information about its activities, permissions, services, signatures, and providers. |
-| --- | --- |
-| [android.content.pm.verify.domain](https://developer.android.com/reference/android/content/pm/verify/domain/package-summary) | |
-| [android.content.pm.webapp](https://developer.android.com/reference/android/content/pm/webapp/package-summary) | |
-| [android.content.res](https://developer.android.com/reference/android/content/res/package-summary) | Contains classes for accessing application resources, such as raw asset files, colors, drawables, media, or other files in the package, plus important device configuration details (orientation, input types, etc.) that affect how the application may behave. For more information, see the [Application Resources](https://developer.android.com/guide/topics/resources) guide. |
-| --- | --- |
-| [android.content.res.loader](https://developer.android.com/reference/android/content/res/loader/package-summary) | |
-| [android.credentials](https://developer.android.com/reference/android/credentials/package-summary) | |
-| [android.crypto.hpke](https://developer.android.com/reference/android/crypto/hpke/package-summary) | |
-| --- | --- |
-| [android.database](https://developer.android.com/reference/android/database/package-summary) | Contains classes to explore data returned through a content provider. |
-| [android.database.sqlite](https://developer.android.com/reference/android/database/sqlite/package-summary) | Contains the SQLite database management classes that an application would use to manage its own private database. |
-| [android.devicelock](https://developer.android.com/reference/android/devicelock/package-summary) | |
-| --- | --- |
-| [android.drm](https://developer.android.com/reference/android/drm/package-summary) | Provides classes for managing DRM content and determining the capabilities of DRM plugins (agents). |
-| [android.gesture](https://developer.android.com/reference/android/gesture/package-summary) | Provides classes to create, recognize, load and save gestures. |
-| [android.graphics](https://developer.android.com/reference/android/graphics/package-summary) | Provides low level graphics tools such as canvases, color filters, points, and rectangles that let you handle drawing to the screen directly. |
-| --- | --- |
-| [android.graphics.drawable](https://developer.android.com/reference/android/graphics/drawable/package-summary) | Provides classes to manage a variety of visual elements that are intended for display only, such as bitmaps and gradients. |
-| [android.graphics.drawable.shapes](https://developer.android.com/reference/android/graphics/drawable/shapes/package-summary) | Contains classes for drawing geometric shapes. |
-| [android.graphics.fonts](https://developer.android.com/reference/android/graphics/fonts/package-summary) | |
-| --- | --- |
-| [android.graphics.pdf](https://developer.android.com/reference/android/graphics/pdf/package-summary) | Contains classes for manipulation of PDF content. |
-| [android.graphics.pdf.component](https://developer.android.com/reference/android/graphics/pdf/component/package-summary) | |
-| [android.graphics.pdf.content](https://developer.android.com/reference/android/graphics/pdf/content/package-summary) | |
-| --- | --- |
-| [android.graphics.pdf.models](https://developer.android.com/reference/android/graphics/pdf/models/package-summary) | |
-| [android.graphics.pdf.models.selection](https://developer.android.com/reference/android/graphics/pdf/models/selection/package-summary) | |
-| [android.graphics.text](https://developer.android.com/reference/android/graphics/text/package-summary) | |
-| --- | --- |
-| [android.hardware](https://developer.android.com/reference/android/hardware/package-summary) | Provides support for hardware features, such as the camera and other sensors. |
-| [android.hardware.biometrics](https://developer.android.com/reference/android/hardware/biometrics/package-summary) | |
-| [android.hardware.camera2](https://developer.android.com/reference/android/hardware/camera2/package-summary) | The android.hardware.camera2 package provides an interface to individual camera devices connected to an Android device. |
-| --- | --- |
-| [android.hardware.camera2.params](https://developer.android.com/reference/android/hardware/camera2/params/package-summary) | |
-| [android.hardware.display](https://developer.android.com/reference/android/hardware/display/package-summary) | |
-| [android.hardware.hid](https://developer.android.com/reference/android/hardware/hid/package-summary) | |
-| --- | --- |
-| [android.hardware.input](https://developer.android.com/reference/android/hardware/input/package-summary) | |
-| [android.hardware.lights](https://developer.android.com/reference/android/hardware/lights/package-summary) | |
-| [android.hardware.serial](https://developer.android.com/reference/android/hardware/serial/package-summary) | |
-| --- | --- |
-| [android.hardware.usb](https://developer.android.com/reference/android/hardware/usb/package-summary) | Provides support to communicate with USB hardware peripherals that are connected to Android-powered devices. For more information, see the [USB](https://developer.android.com/guide/topics/connectivity/usb) guide. |
-| [android.health.connect](https://developer.android.com/reference/android/health/connect/package-summary) | |
-| [android.health.connect.changelog](https://developer.android.com/reference/android/health/connect/changelog/package-summary) | |
-| --- | --- |
-| [android.health.connect.datatypes](https://developer.android.com/reference/android/health/connect/datatypes/package-summary) | |
-| [android.health.connect.datatypes.units](https://developer.android.com/reference/android/health/connect/datatypes/units/package-summary) | |
-| [android.icu.lang](https://developer.android.com/reference/android/icu/lang/package-summary) | |
-| --- | --- |
-| [android.icu.math](https://developer.android.com/reference/android/icu/math/package-summary) | |
-| [android.icu.number](https://developer.android.com/reference/android/icu/number/package-summary) | |
-| [android.icu.text](https://developer.android.com/reference/android/icu/text/package-summary) | |
-| --- | --- |
-| [android.icu.util](https://developer.android.com/reference/android/icu/util/package-summary) | |
-| [android.inputmethodservice](https://developer.android.com/reference/android/inputmethodservice/package-summary) | Base classes for writing input methods (such as software keyboards). |
-| [android.location](https://developer.android.com/reference/android/location/package-summary) | Contains framework API classes for accessing a variety of location related services. |
-| --- | --- |
-| [android.location.altitude](https://developer.android.com/reference/android/location/altitude/package-summary) | |
-| [android.location.provider](https://developer.android.com/reference/android/location/provider/package-summary) | |
-| [android.media](https://developer.android.com/reference/android/media/package-summary) | Provides classes that manage various media interfaces in audio and video. |
-| --- | --- |
-| [android.media.audiofx](https://developer.android.com/reference/android/media/audiofx/package-summary) | Provides classes that manage audio effects implemented in the media framework. |
-| [android.media.browse](https://developer.android.com/reference/android/media/browse/package-summary) | |
-| [android.media.effect](https://developer.android.com/reference/android/media/effect/package-summary) | Provides classes that allow you to apply a variety of visual effects to images and videos. |
-| --- | --- |
-| [android.media.metrics](https://developer.android.com/reference/android/media/metrics/package-summary) | |
-| [android.media.midi](https://developer.android.com/reference/android/media/midi/package-summary) | Provides classes for sending and receiving messages using the standard MIDI event protocol over USB, Bluetooth LE, and virtual (inter-app) transports. |
-| [android.media.projection](https://developer.android.com/reference/android/media/projection/package-summary) | |
-| --- | --- |
-| [android.media.quality](https://developer.android.com/reference/android/media/quality/package-summary) | |
-| [android.media.session](https://developer.android.com/reference/android/media/session/package-summary) | |
-| [android.media.tv](https://developer.android.com/reference/android/media/tv/package-summary) | |
-| --- | --- |
-| [android.media.tv.ad](https://developer.android.com/reference/android/media/tv/ad/package-summary) | |
-| [android.media.tv.interactive](https://developer.android.com/reference/android/media/tv/interactive/package-summary) | |
-| [android.mtp](https://developer.android.com/reference/android/mtp/package-summary) | Provides APIs that let you interact directly with connected cameras and other devices, using the PTP (Picture Transfer Protocol) subset of the MTP (Media Transfer Protocol) specification. |
-| --- | --- |
-| [android.net](https://developer.android.com/reference/android/net/package-summary) | Classes that help with network access, beyond the normal java.net.\* APIs. |
-| [android.net.dns](https://developer.android.com/reference/android/net/dns/package-summary) | |
-| [android.net.eap](https://developer.android.com/reference/android/net/eap/package-summary) | |
-| --- | --- |
-| [android.net.http](https://developer.android.com/reference/android/net/http/package-summary) | |
-| [android.net.ipsec.ike](https://developer.android.com/reference/android/net/ipsec/ike/package-summary) | |
-| [android.net.ipsec.ike.exceptions](https://developer.android.com/reference/android/net/ipsec/ike/exceptions/package-summary) | |
-| --- | --- |
-| [android.net.nsd](https://developer.android.com/reference/android/net/nsd/package-summary) | |
-| [android.net.rtp](https://developer.android.com/reference/android/net/rtp/package-summary) | |
-| [android.net.sip](https://developer.android.com/reference/android/net/sip/package-summary) | |
-| --- | --- |
-| [android.net.ssl](https://developer.android.com/reference/android/net/ssl/package-summary) | |
-| [android.net.vcn](https://developer.android.com/reference/android/net/vcn/package-summary) | |
-| [android.net.wifi](https://developer.android.com/reference/android/net/wifi/package-summary) | Provides classes to manage Wi-Fi functionality on the device. |
-| --- | --- |
-| [android.net.wifi.aware](https://developer.android.com/reference/android/net/wifi/aware/package-summary) | Provides classes which allow applications to use Wi-Fi Aware to discover peers and create connections to them. |
-| [android.net.wifi.hotspot2](https://developer.android.com/reference/android/net/wifi/hotspot2/package-summary) | |
-| [android.net.wifi.hotspot2.omadm](https://developer.android.com/reference/android/net/wifi/hotspot2/omadm/package-summary) | |
-| --- | --- |
-| [android.net.wifi.hotspot2.pps](https://developer.android.com/reference/android/net/wifi/hotspot2/pps/package-summary) | |
-| [android.net.wifi.p2p](https://developer.android.com/reference/android/net/wifi/p2p/package-summary) | Provides classes to create peer-to-peer (P2P) connections with Wi-Fi Direct. |
-| [android.net.wifi.p2p.nsd](https://developer.android.com/reference/android/net/wifi/p2p/nsd/package-summary) | |
-| --- | --- |
-| [android.net.wifi.rtt](https://developer.android.com/reference/android/net/wifi/rtt/package-summary) | Provides classes which allow applications to use Wi-Fi RTT (IEEE 802.11mc) to measure distance to supporting Access Points and peer devices. |
-| [android.nfc](https://developer.android.com/reference/android/nfc/package-summary) | |
-| [android.nfc.cardemulation](https://developer.android.com/reference/android/nfc/cardemulation/package-summary) | |
-| --- | --- |
-| [android.nfc.tech](https://developer.android.com/reference/android/nfc/tech/package-summary) | |
-| [android.opengl](https://developer.android.com/reference/android/opengl/package-summary) | Provides an OpenGL ES static interface and utilities. |
-| [android.os](https://developer.android.com/reference/android/os/package-summary) | Provides basic operating system services, message passing, and inter-process communication on the device. |
-| --- | --- |
-| [android.os.ext](https://developer.android.com/reference/android/os/ext/package-summary) | |
-| [android.os.flagging](https://developer.android.com/reference/android/os/flagging/package-summary) | |
-| [android.os.health](https://developer.android.com/reference/android/os/health/package-summary) | The android.os.health package contains a set of classes to provide data to track the system resources of applications. |
-| --- | --- |
-| [android.os.multisensory](https://developer.android.com/reference/android/os/multisensory/package-summary) | |
-| [android.os.storage](https://developer.android.com/reference/android/os/storage/package-summary) | Contains classes for the system storage service, which manages binary asset filesystems known as Opaque Binary Blobs (OBBs). |
-| [android.os.storage.operations](https://developer.android.com/reference/android/os/storage/operations/package-summary) | |
-| --- | --- |
-| [android.os.storage.operations.sources](https://developer.android.com/reference/android/os/storage/operations/sources/package-summary) | |
-| [android.os.storage.operations.targets](https://developer.android.com/reference/android/os/storage/operations/targets/package-summary) | |
-| [android.os.strictmode](https://developer.android.com/reference/android/os/strictmode/package-summary) | |
-| --- | --- |
-| [android.os.vibrator](https://developer.android.com/reference/android/os/vibrator/package-summary) | |
-| [android.preference](https://developer.android.com/reference/android/preference/package-summary) | These classes are deprecated. |
-| [android.print](https://developer.android.com/reference/android/print/package-summary) | ### Overview Provides classes for implementing print support in applications and also contains all base classes and abstractions involved in printing. |
-| --- | --- |
-| [android.print.pdf](https://developer.android.com/reference/android/print/pdf/package-summary) | |
-| [android.printservice](https://developer.android.com/reference/android/printservice/package-summary) | Provides classes for implementing print services. |
-| [android.provider](https://developer.android.com/reference/android/provider/package-summary) | Provides convenience classes to access the content providers supplied by Android. |
-| --- | --- |
-| [android.ranging](https://developer.android.com/reference/android/ranging/package-summary) | |
-| [android.ranging.ble](https://developer.android.com/reference/android/ranging/ble/package-summary) | |
-| [android.ranging.ble.cs](https://developer.android.com/reference/android/ranging/ble/cs/package-summary) | |
-| --- | --- |
-| [android.ranging.ble.rssi](https://developer.android.com/reference/android/ranging/ble/rssi/package-summary) | |
-| [android.ranging.oob](https://developer.android.com/reference/android/ranging/oob/package-summary) | |
-| [android.ranging.raw](https://developer.android.com/reference/android/ranging/raw/package-summary) | |
-| --- | --- |
-| [android.ranging.uwb](https://developer.android.com/reference/android/ranging/uwb/package-summary) | |
-| [android.ranging.wifi.pd](https://developer.android.com/reference/android/ranging/wifi/pd/package-summary) | |
-| [android.ranging.wifi.rtt](https://developer.android.com/reference/android/ranging/wifi/rtt/package-summary) | |
-| --- | --- |
-| [android.renderscript](https://developer.android.com/reference/android/renderscript/package-summary) | Renderscript is deprecated since API level 31. Please refer to the [migration guide](https://developer.android.com/guide/topics/renderscript/migration-guide) for alternatives. |
-| [android.sax](https://developer.android.com/reference/android/sax/package-summary) | A framework that makes it easy to write efficient and robust SAX handlers. |
-| [android.se.omapi](https://developer.android.com/reference/android/se/omapi/package-summary) | |
-| --- | --- |
-| [android.security](https://developer.android.com/reference/android/security/package-summary) | Provides access to a few facilities of the Android security subsystems. |
-| [android.security.advancedprotection](https://developer.android.com/reference/android/security/advancedprotection/package-summary) | |
-| [android.security.authenticationpolicy](https://developer.android.com/reference/android/security/authenticationpolicy/package-summary) | |
-| --- | --- |
-| [android.security.identity](https://developer.android.com/reference/android/security/identity/package-summary) | |
-| [android.security.keystore](https://developer.android.com/reference/android/security/keystore/package-summary) | |
-| [android.security.net.config](https://developer.android.com/reference/android/security/net/config/package-summary) | |
-| --- | --- |
-| [android.service.assist.classification](https://developer.android.com/reference/android/service/assist/classification/package-summary) | |
-| [android.service.autofill](https://developer.android.com/reference/android/service/autofill/package-summary) | |
-| [android.service.carrier](https://developer.android.com/reference/android/service/carrier/package-summary) | |
-| --- | --- |
-| [android.service.chooser](https://developer.android.com/reference/android/service/chooser/package-summary) | |
-| [android.service.contentsafety](https://developer.android.com/reference/android/service/contentsafety/package-summary) | |
-| [android.service.controls](https://developer.android.com/reference/android/service/controls/package-summary) | |
-| --- | --- |
-| [android.service.controls.actions](https://developer.android.com/reference/android/service/controls/actions/package-summary) | |
-| [android.service.controls.templates](https://developer.android.com/reference/android/service/controls/templates/package-summary) | |
-| [android.service.credentials](https://developer.android.com/reference/android/service/credentials/package-summary) | |
-| --- | --- |
-| [android.service.dreams](https://developer.android.com/reference/android/service/dreams/package-summary) | |
-| [android.service.media](https://developer.android.com/reference/android/service/media/package-summary) | |
-| [android.service.messaging](https://developer.android.com/reference/android/service/messaging/package-summary) | |
-| --- | --- |
-| [android.service.notification](https://developer.android.com/reference/android/service/notification/package-summary) | |
-| [android.service.persistentdata](https://developer.android.com/reference/android/service/persistentdata/package-summary) | |
-| [android.service.quickaccesswallet](https://developer.android.com/reference/android/service/quickaccesswallet/package-summary) | |
-| --- | --- |
-| [android.service.quicksettings](https://developer.android.com/reference/android/service/quicksettings/package-summary) | |
-| [android.service.restrictions](https://developer.android.com/reference/android/service/restrictions/package-summary) | |
-| [android.service.settings.preferences](https://developer.android.com/reference/android/service/settings/preferences/package-summary) | |
-| --- | --- |
-| [android.service.textservice](https://developer.android.com/reference/android/service/textservice/package-summary) | Provides classes that allow you to create spell checkers in a manner similar to the input method framework (for IMEs). |
-| [android.service.voice](https://developer.android.com/reference/android/service/voice/package-summary) | |
-| [android.service.vr](https://developer.android.com/reference/android/service/vr/package-summary) | |
-| --- | --- |
-| [android.service.wallpaper](https://developer.android.com/reference/android/service/wallpaper/package-summary) | |
-| [android.speech](https://developer.android.com/reference/android/speech/package-summary) | |
-| [android.speech.tts](https://developer.android.com/reference/android/speech/tts/package-summary) | |
-| --- | --- |
-| [android.system](https://developer.android.com/reference/android/system/package-summary) | |
-| [android.telecom](https://developer.android.com/reference/android/telecom/package-summary) | The Android Telecom framework is responsible for managing calls on an Android device. |
-| [android.telephony](https://developer.android.com/reference/android/telephony/package-summary) | Provides APIs for monitoring the basic phone information, such as the network type and connection state, plus utilities for manipulating phone number strings. |
-| --- | --- |
-| [android.telephony.cdma](https://developer.android.com/reference/android/telephony/cdma/package-summary) | Provides APIs for utilizing CDMA-specific telephony features. |
-| [android.telephony.data](https://developer.android.com/reference/android/telephony/data/package-summary) | |
-| [android.telephony.emergency](https://developer.android.com/reference/android/telephony/emergency/package-summary) | |
-| --- | --- |
-| [android.telephony.euicc](https://developer.android.com/reference/android/telephony/euicc/package-summary) | |
-| [android.telephony.gsm](https://developer.android.com/reference/android/telephony/gsm/package-summary) | Provides APIs for utilizing GSM-specific telephony features, such as text/data/PDU SMS messages. |
-| [android.telephony.ims](https://developer.android.com/reference/android/telephony/ims/package-summary) | |
-| --- | --- |
-| [android.telephony.ims.feature](https://developer.android.com/reference/android/telephony/ims/feature/package-summary) | |
-| [android.telephony.ims.stub](https://developer.android.com/reference/android/telephony/ims/stub/package-summary) | |
-| [android.telephony.mbms](https://developer.android.com/reference/android/telephony/mbms/package-summary) | |
-| --- | --- |
-| [android.telephony.satellite](https://developer.android.com/reference/android/telephony/satellite/package-summary) | |
-| [android.test](https://developer.android.com/reference/android/test/package-summary) | A framework for writing Android test cases and suites. For more information, see the [Testing](https://developer.android.com/tools/testing) developer guide. |
-| [android.test.mock](https://developer.android.com/reference/android/test/mock/package-summary) | Utility classes providing stubs or mocks of various Android framework building blocks. For more information, see the [Testing](https://developer.android.com/tools/testing) guide. |
-| --- | --- |
-| [android.test.suitebuilder](https://developer.android.com/reference/android/test/suitebuilder/package-summary) | Utility classes supporting the test runner classes. |
-| [android.test.suitebuilder.annotation](https://developer.android.com/reference/android/test/suitebuilder/annotation/package-summary) | Utility classes supporting the test runner classes. |
-| [android.text](https://developer.android.com/reference/android/text/package-summary) | Provides classes used to render or track text and text spans on the screen. |
-| --- | --- |
-| [android.text.format](https://developer.android.com/reference/android/text/format/package-summary) | This package contains alternative classes for some text formatting classes defined in `https://developer.android.com/reference/java/util/package-summary` and `https://developer.android.com/reference/java/text/package-summary`. |
-| [android.text.method](https://developer.android.com/reference/android/text/method/package-summary) | Provides classes that monitor or modify keypad input. |
-| [android.text.style](https://developer.android.com/reference/android/text/style/package-summary) | Provides classes used to view or change the style of a span of text in a View object. |
-| --- | --- |
-| [android.text.util](https://developer.android.com/reference/android/text/util/package-summary) | Utilities for converting identifiable text strings into clickable links and creating RFC 822-type message (SMTP) tokens. |
-| [android.transition](https://developer.android.com/reference/android/transition/package-summary) | The classes in this package enable "scenes \& transitions" functionality for view hiearchies. |
-| [android.util](https://developer.android.com/reference/android/util/package-summary) | Provides common utility methods such as date/time manipulation, base64 encoders and decoders, string and number conversion methods, and XML utilities. |
-| --- | --- |
-| [android.util.function](https://developer.android.com/reference/android/util/function/package-summary) | |
-| [android.util.proto](https://developer.android.com/reference/android/util/proto/package-summary) | Provides utility classes to export protocol buffers from the system. |
-| [android.view](https://developer.android.com/reference/android/view/package-summary) | Provides classes that expose basic user interface classes that handle screen layout and interaction with the user. |
-| --- | --- |
-| [android.view.accessibility](https://developer.android.com/reference/android/view/accessibility/package-summary) | The classes in this package are used to represent screen content and changes to it as well as APIs for querying the global accessibility state of the system. |
-| [android.view.animation](https://developer.android.com/reference/android/view/animation/package-summary) | Provides classes that handle tweened animations. |
-| [android.view.autofill](https://developer.android.com/reference/android/view/autofill/package-summary) | |
-| --- | --- |
-| [android.view.contentcapture](https://developer.android.com/reference/android/view/contentcapture/package-summary) | |
-| [android.view.displayhash](https://developer.android.com/reference/android/view/displayhash/package-summary) | |
-| [android.view.inputmethod](https://developer.android.com/reference/android/view/inputmethod/package-summary) | Framework classes for interaction between views and input methods (such as soft keyboards). |
-| --- | --- |
-| [android.view.inspector](https://developer.android.com/reference/android/view/inspector/package-summary) | |
-| [android.view.textclassifier](https://developer.android.com/reference/android/view/textclassifier/package-summary) | |
-| [android.view.textservice](https://developer.android.com/reference/android/view/textservice/package-summary) | |
-| --- | --- |
-| [android.view.translation](https://developer.android.com/reference/android/view/translation/package-summary) | |
-| [android.webkit](https://developer.android.com/reference/android/webkit/package-summary) | Provides tools for browsing the web. |
-| [android.widget](https://developer.android.com/reference/android/widget/package-summary) | The widget package contains (mostly visual) UI elements to use on your Application screen. |
-| --- | --- |
-| [android.widget.inline](https://developer.android.com/reference/android/widget/inline/package-summary) | |
-| [android.widget.photopicker](https://developer.android.com/reference/android/widget/photopicker/package-summary) | |
-| [android.window](https://developer.android.com/reference/android/window/package-summary) | |
-| --- | --- |
-| [dalvik.annotation](https://developer.android.com/reference/dalvik/annotation/package-summary) | |
-| [dalvik.annotation.optimization](https://developer.android.com/reference/dalvik/annotation/optimization/package-summary) | |
-| [dalvik.bytecode](https://developer.android.com/reference/dalvik/bytecode/package-summary) | |
-| --- | --- |
-| [dalvik.system](https://developer.android.com/reference/dalvik/system/package-summary) | |
-| [java.awt.font](https://developer.android.com/reference/java/awt/font/package-summary) | |
-| [java.beans](https://developer.android.com/reference/java/beans/package-summary) | |
-| --- | --- |
-| [java.io](https://developer.android.com/reference/java/io/package-summary) | Provides for system input and output through data streams, serialization and the file system. |
-| [java.lang](https://developer.android.com/reference/java/lang/package-summary) | Provides classes that are fundamental to the design of the Java programming language. |
-| [java.lang.annotation](https://developer.android.com/reference/java/lang/annotation/package-summary) | Provides library support for the Java programming language annotation facility. |
+| [android](./android/_package.md) | Contains resource classes used by applications included in the platform and defines application permissions for system features. |
+| --- | --- |
+| [android.accessibilityservice](./android/accessibilityservice/_package.md) | The classes in this package are used for development of accessibility service that provide alternative or augmented feedback to the user. |
+| [android.accounts](./android/accounts/_package.md) | |
+| [android.adservices](./android/adservices/_package.md) | |
+| --- | --- |
+| [android.adservices.adid](./android/adservices/adid/_package.md) | |
+| [android.adservices.adselection](./android/adservices/adselection/_package.md) | |
+| [android.adservices.appsetid](./android/adservices/appsetid/_package.md) | |
+| --- | --- |
+| [android.adservices.common](./android/adservices/common/_package.md) | |
+| [android.adservices.customaudience](./android/adservices/customaudience/_package.md) | |
+| [android.adservices.exceptions](./android/adservices/exceptions/_package.md) | |
+| --- | --- |
+| [android.adservices.measurement](./android/adservices/measurement/_package.md) | |
+| [android.adservices.ondevicepersonalization](./android/adservices/ondevicepersonalization/_package.md) | |
+| [android.adservices.signals](./android/adservices/signals/_package.md) | |
+| --- | --- |
+| [android.adservices.topics](./android/adservices/topics/_package.md) | |
+| [android.animation](./android/animation/_package.md) | These classes provide functionality for the property animation system, which allows you to animate object properties of any type. `int`, `float`, and hexadecimal color values are supported by default. You can animate any other type by telling the system how to calculate the values for that given type with a custom `https://developer.android.com/reference/android/animation/TypeEvaluator`. For more information, see the [Animation](https://developer.android.com/guide/topics/graphics/prop-animation) guide. |
+| [android.annotation](./android/annotation/_package.md) | |
+| --- | --- |
+| [android.app](./android/app/_package.md) | Contains high-level classes encapsulating the overall Android application model. |
+| [android.app.admin](./android/app/admin/_package.md) | Provides device administration features at the system level, allowing you to create security-aware applications that are useful in enterprise settings, in which IT professionals require rich control over employee devices. For more information, see the [Device Administration](https://developer.android.com/guide/topics/admin/device-admin) guide. |
+| [android.app.admin.policy](./android/app/admin/policy/_package.md) | |
+| --- | --- |
+| [android.app.appfunctions](./android/app/appfunctions/_package.md) | Android App Functions provides APIs for applications to expose functionality to the system for cross-app orchestration, and for system-privileged agents to discover and execute this functionality. |
+| [android.app.appsearch](./android/app/appsearch/_package.md) | |
+| [android.app.appsearch.exceptions](./android/app/appsearch/exceptions/_package.md) | |
+| --- | --- |
+| [android.app.appsearch.observer](./android/app/appsearch/observer/_package.md) | |
+| [android.app.appsearch.util](./android/app/appsearch/util/_package.md) | |
+| [android.app.assist](./android/app/assist/_package.md) | |
+| --- | --- |
+| [android.app.backup](./android/app/backup/_package.md) | Contains the backup and restore functionality available to applications. If a user wipes the data on their device or upgrades to a new Android-powered device, all applications that have enabled backup can restore the user's previous data when the application is reinstalled. For more information, see the [Data Backup](https://developer.android.com/guide/topics/data/backup) guide. |
+| [android.app.blob](./android/app/blob/_package.md) | |
+| [android.app.contentsafety](./android/app/contentsafety/_package.md) | |
+| --- | --- |
+| [android.app.jank](./android/app/jank/_package.md) | |
+| [android.app.job](./android/app/job/_package.md) | |
+| [android.app.people](./android/app/people/_package.md) | |
+| --- | --- |
+| [android.app.permissionui](./android/app/permissionui/_package.md) | |
+| [android.app.privatecompute](./android/app/privatecompute/_package.md) | |
+| [android.app.role](./android/app/role/_package.md) | |
+| --- | --- |
+| [android.app.sdksandbox](./android/app/sdksandbox/_package.md) | |
+| [android.app.sdksandbox.sdkprovider](./android/app/sdksandbox/sdkprovider/_package.md) | |
+| [android.app.slice](./android/app/slice/_package.md) | |
+| --- | --- |
+| [android.app.time](./android/app/time/_package.md) | |
+| [android.app.usage](./android/app/usage/_package.md) | |
+| [android.app.voiceinteraction](./android/app/voiceinteraction/_package.md) | |
+| --- | --- |
+| [android.app.wallpaper](./android/app/wallpaper/_package.md) | |
+| [android.appwidget](./android/appwidget/_package.md) | Contains the components necessary to create "app widgets", which users can embed in other applications (such as the home screen) to quickly access application data and services without launching a new activity. For more information, see the [App Widgets](https://developer.android.com/guide/topics/appwidgets) guide. |
+| [android.bluetooth](./android/bluetooth/_package.md) | |
+| --- | --- |
+| [android.bluetooth.le](./android/bluetooth/le/_package.md) | |
+| [android.companion](./android/companion/_package.md) | |
+| [android.companion.virtual](./android/companion/virtual/_package.md) | |
+| --- | --- |
+| [android.content](./android/content/_package.md) | Contains classes for accessing and publishing data on a device. |
+| [android.content.om](./android/content/om/_package.md) | |
+| [android.content.pm](./android/content/pm/_package.md) | Contains classes for accessing information about an application package, including information about its activities, permissions, services, signatures, and providers. |
+| --- | --- |
+| [android.content.pm.verify.domain](./android/content/pm/verify/domain/_package.md) | |
+| [android.content.pm.webapp](./android/content/pm/webapp/_package.md) | |
+| [android.content.res](./android/content/res/_package.md) | Contains classes for accessing application resources, such as raw asset files, colors, drawables, media, or other files in the package, plus important device configuration details (orientation, input types, etc.) that affect how the application may behave. For more information, see the [Application Resources](https://developer.android.com/guide/topics/resources) guide. |
+| --- | --- |
+| [android.content.res.loader](./android/content/res/loader/_package.md) | |
+| [android.credentials](./android/credentials/_package.md) | |
+| [android.crypto.hpke](./android/crypto/hpke/_package.md) | |
+| --- | --- |
+| [android.database](./android/database/_package.md) | Contains classes to explore data returned through a content provider. |
+| [android.database.sqlite](./android/database/sqlite/_package.md) | Contains the SQLite database management classes that an application would use to manage its own private database. |
+| [android.devicelock](./android/devicelock/_package.md) | |
+| --- | --- |
+| [android.drm](./android/drm/_package.md) | Provides classes for managing DRM content and determining the capabilities of DRM plugins (agents). |
+| [android.gesture](./android/gesture/_package.md) | Provides classes to create, recognize, load and save gestures. |
+| [android.graphics](./android/graphics/_package.md) | Provides low level graphics tools such as canvases, color filters, points, and rectangles that let you handle drawing to the screen directly. |
+| --- | --- |
+| [android.graphics.drawable](./android/graphics/drawable/_package.md) | Provides classes to manage a variety of visual elements that are intended for display only, such as bitmaps and gradients. |
+| [android.graphics.drawable.shapes](./android/graphics/drawable/shapes/_package.md) | Contains classes for drawing geometric shapes. |
+| [android.graphics.fonts](./android/graphics/fonts/_package.md) | |
+| --- | --- |
+| [android.graphics.pdf](./android/graphics/pdf/_package.md) | Contains classes for manipulation of PDF content. |
+| [android.graphics.pdf.component](./android/graphics/pdf/component/_package.md) | |
+| [android.graphics.pdf.content](./android/graphics/pdf/content/_package.md) | |
+| --- | --- |
+| [android.graphics.pdf.models](./android/graphics/pdf/models/_package.md) | |
+| [android.graphics.pdf.models.selection](./android/graphics/pdf/models/selection/_package.md) | |
+| [android.graphics.text](./android/graphics/text/_package.md) | |
+| --- | --- |
+| [android.hardware](./android/hardware/_package.md) | Provides support for hardware features, such as the camera and other sensors. |
+| [android.hardware.biometrics](./android/hardware/biometrics/_package.md) | |
+| [android.hardware.camera2](./android/hardware/camera2/_package.md) | The android.hardware.camera2 package provides an interface to individual camera devices connected to an Android device. |
+| --- | --- |
+| [android.hardware.camera2.params](./android/hardware/camera2/params/_package.md) | |
+| [android.hardware.display](./android/hardware/display/_package.md) | |
+| [android.hardware.hid](./android/hardware/hid/_package.md) | |
+| --- | --- |
+| [android.hardware.input](./android/hardware/input/_package.md) | |
+| [android.hardware.lights](./android/hardware/lights/_package.md) | |
+| [android.hardware.serial](./android/hardware/serial/_package.md) | |
+| --- | --- |
+| [android.hardware.usb](./android/hardware/usb/_package.md) | Provides support to communicate with USB hardware peripherals that are connected to Android-powered devices. For more information, see the [USB](https://developer.android.com/guide/topics/connectivity/usb) guide. |
+| [android.health.connect](./android/health/connect/_package.md) | |
+| [android.health.connect.changelog](./android/health/connect/changelog/_package.md) | |
+| --- | --- |
+| [android.health.connect.datatypes](./android/health/connect/datatypes/_package.md) | |
+| [android.health.connect.datatypes.units](./android/health/connect/datatypes/units/_package.md) | |
+| [android.icu.lang](./android/icu/lang/_package.md) | |
+| --- | --- |
+| [android.icu.math](./android/icu/math/_package.md) | |
+| [android.icu.number](./android/icu/number/_package.md) | |
+| [android.icu.text](./android/icu/text/_package.md) | |
+| --- | --- |
+| [android.icu.util](./android/icu/util/_package.md) | |
+| [android.inputmethodservice](./android/inputmethodservice/_package.md) | Base classes for writing input methods (such as software keyboards). |
+| [android.location](./android/location/_package.md) | Contains framework API classes for accessing a variety of location related services. |
+| --- | --- |
+| [android.location.altitude](./android/location/altitude/_package.md) | |
+| [android.location.provider](./android/location/provider/_package.md) | |
+| [android.media](./android/media/_package.md) | Provides classes that manage various media interfaces in audio and video. |
+| --- | --- |
+| [android.media.audiofx](./android/media/audiofx/_package.md) | Provides classes that manage audio effects implemented in the media framework. |
+| [android.media.browse](./android/media/browse/_package.md) | |
+| [android.media.effect](./android/media/effect/_package.md) | Provides classes that allow you to apply a variety of visual effects to images and videos. |
+| --- | --- |
+| [android.media.metrics](./android/media/metrics/_package.md) | |
+| [android.media.midi](./android/media/midi/_package.md) | Provides classes for sending and receiving messages using the standard MIDI event protocol over USB, Bluetooth LE, and virtual (inter-app) transports. |
+| [android.media.projection](./android/media/projection/_package.md) | |
+| --- | --- |
+| [android.media.quality](./android/media/quality/_package.md) | |
+| [android.media.session](./android/media/session/_package.md) | |
+| [android.media.tv](./android/media/tv/_package.md) | |
+| --- | --- |
+| [android.media.tv.ad](./android/media/tv/ad/_package.md) | |
+| [android.media.tv.interactive](./android/media/tv/interactive/_package.md) | |
+| [android.mtp](./android/mtp/_package.md) | Provides APIs that let you interact directly with connected cameras and other devices, using the PTP (Picture Transfer Protocol) subset of the MTP (Media Transfer Protocol) specification. |
+| --- | --- |
+| [android.net](./android/net/_package.md) | Classes that help with network access, beyond the normal java.net.\* APIs. |
+| [android.net.dns](./android/net/dns/_package.md) | |
+| [android.net.eap](./android/net/eap/_package.md) | |
+| --- | --- |
+| [android.net.http](./android/net/http/_package.md) | |
+| [android.net.ipsec.ike](./android/net/ipsec/ike/_package.md) | |
+| [android.net.ipsec.ike.exceptions](./android/net/ipsec/ike/exceptions/_package.md) | |
+| --- | --- |
+| [android.net.nsd](./android/net/nsd/_package.md) | |
+| [android.net.rtp](./android/net/rtp/_package.md) | |
+| [android.net.sip](./android/net/sip/_package.md) | |
+| --- | --- |
+| [android.net.ssl](./android/net/ssl/_package.md) | |
+| [android.net.vcn](./android/net/vcn/_package.md) | |
+| [android.net.wifi](./android/net/wifi/_package.md) | Provides classes to manage Wi-Fi functionality on the device. |
+| --- | --- |
+| [android.net.wifi.aware](./android/net/wifi/aware/_package.md) | Provides classes which allow applications to use Wi-Fi Aware to discover peers and create connections to them. |
+| [android.net.wifi.hotspot2](./android/net/wifi/hotspot2/_package.md) | |
+| [android.net.wifi.hotspot2.omadm](./android/net/wifi/hotspot2/omadm/_package.md) | |
+| --- | --- |
+| [android.net.wifi.hotspot2.pps](./android/net/wifi/hotspot2/pps/_package.md) | |
+| [android.net.wifi.p2p](./android/net/wifi/p2p/_package.md) | Provides classes to create peer-to-peer (P2P) connections with Wi-Fi Direct. |
+| [android.net.wifi.p2p.nsd](./android/net/wifi/p2p/nsd/_package.md) | |
+| --- | --- |
+| [android.net.wifi.rtt](./android/net/wifi/rtt/_package.md) | Provides classes which allow applications to use Wi-Fi RTT (IEEE 802.11mc) to measure distance to supporting Access Points and peer devices. |
+| [android.nfc](./android/nfc/_package.md) | |
+| [android.nfc.cardemulation](./android/nfc/cardemulation/_package.md) | |
+| --- | --- |
+| [android.nfc.tech](./android/nfc/tech/_package.md) | |
+| [android.opengl](./android/opengl/_package.md) | Provides an OpenGL ES static interface and utilities. |
+| [android.os](./android/os/_package.md) | Provides basic operating system services, message passing, and inter-process communication on the device. |
+| --- | --- |
+| [android.os.ext](./android/os/ext/_package.md) | |
+| [android.os.flagging](./android/os/flagging/_package.md) | |
+| [android.os.health](./android/os/health/_package.md) | The android.os.health package contains a set of classes to provide data to track the system resources of applications. |
+| --- | --- |
+| [android.os.multisensory](./android/os/multisensory/_package.md) | |
+| [android.os.storage](./android/os/storage/_package.md) | Contains classes for the system storage service, which manages binary asset filesystems known as Opaque Binary Blobs (OBBs). |
+| [android.os.storage.operations](./android/os/storage/operations/_package.md) | |
+| --- | --- |
+| [android.os.storage.operations.sources](./android/os/storage/operations/sources/_package.md) | |
+| [android.os.storage.operations.targets](./android/os/storage/operations/targets/_package.md) | |
+| [android.os.strictmode](./android/os/strictmode/_package.md) | |
+| --- | --- |
+| [android.os.vibrator](./android/os/vibrator/_package.md) | |
+| [android.preference](./android/preference/_package.md) | These classes are deprecated. |
+| [android.print](./android/print/_package.md) | ### Overview Provides classes for implementing print support in applications and also contains all base classes and abstractions involved in printing. |
+| --- | --- |
+| [android.print.pdf](./android/print/pdf/_package.md) | |
+| [android.printservice](./android/printservice/_package.md) | Provides classes for implementing print services. |
+| [android.provider](./android/provider/_package.md) | Provides convenience classes to access the content providers supplied by Android. |
+| --- | --- |
+| [android.ranging](./android/ranging/_package.md) | |
+| [android.ranging.ble](./android/ranging/ble/_package.md) | |
+| [android.ranging.ble.cs](./android/ranging/ble/cs/_package.md) | |
+| --- | --- |
+| [android.ranging.ble.rssi](./android/ranging/ble/rssi/_package.md) | |
+| [android.ranging.oob](./android/ranging/oob/_package.md) | |
+| [android.ranging.raw](./android/ranging/raw/_package.md) | |
+| --- | --- |
+| [android.ranging.uwb](./android/ranging/uwb/_package.md) | |
+| [android.ranging.wifi.pd](./android/ranging/wifi/pd/_package.md) | |
+| [android.ranging.wifi.rtt](./android/ranging/wifi/rtt/_package.md) | |
+| --- | --- |
+| [android.renderscript](./android/renderscript/_package.md) | Renderscript is deprecated since API level 31. Please refer to the [migration guide](https://developer.android.com/guide/topics/renderscript/migration-guide) for alternatives. |
+| [android.sax](./android/sax/_package.md) | A framework that makes it easy to write efficient and robust SAX handlers. |
+| [android.se.omapi](./android/se/omapi/_package.md) | |
+| --- | --- |
+| [android.security](./android/security/_package.md) | Provides access to a few facilities of the Android security subsystems. |
+| [android.security.advancedprotection](./android/security/advancedprotection/_package.md) | |
+| [android.security.authenticationpolicy](./android/security/authenticationpolicy/_package.md) | |
+| --- | --- |
+| [android.security.identity](./android/security/identity/_package.md) | |
+| [android.security.keystore](./android/security/keystore/_package.md) | |
+| [android.security.net.config](./android/security/net/config/_package.md) | |
+| --- | --- |
+| [android.service.assist.classification](./android/service/assist/classification/_package.md) | |
+| [android.service.autofill](./android/service/autofill/_package.md) | |
+| [android.service.carrier](./android/service/carrier/_package.md) | |
+| --- | --- |
+| [android.service.chooser](./android/service/chooser/_package.md) | |
+| [android.service.contentsafety](./android/service/contentsafety/_package.md) | |
+| [android.service.controls](./android/service/controls/_package.md) | |
+| --- | --- |
+| [android.service.controls.actions](./android/service/controls/actions/_package.md) | |
+| [android.service.controls.templates](./android/service/controls/templates/_package.md) | |
+| [android.service.credentials](./android/service/credentials/_package.md) | |
+| --- | --- |
+| [android.service.dreams](./android/service/dreams/_package.md) | |
+| [android.service.media](./android/service/media/_package.md) | |
+| [android.service.messaging](./android/service/messaging/_package.md) | |
+| --- | --- |
+| [android.service.notification](./android/service/notification/_package.md) | |
+| [android.service.persistentdata](./android/service/persistentdata/_package.md) | |
+| [android.service.quickaccesswallet](./android/service/quickaccesswallet/_package.md) | |
+| --- | --- |
+| [android.service.quicksettings](./android/service/quicksettings/_package.md) | |
+| [android.service.restrictions](./android/service/restrictions/_package.md) | |
+| [android.service.settings.preferences](./android/service/settings/preferences/_package.md) | |
+| --- | --- |
+| [android.service.textservice](./android/service/textservice/_package.md) | Provides classes that allow you to create spell checkers in a manner similar to the input method framework (for IMEs). |
+| [android.service.voice](./android/service/voice/_package.md) | |
+| [android.service.vr](./android/service/vr/_package.md) | |
+| --- | --- |
+| [android.service.wallpaper](./android/service/wallpaper/_package.md) | |
+| [android.speech](./android/speech/_package.md) | |
+| [android.speech.tts](./android/speech/tts/_package.md) | |
+| --- | --- |
+| [android.system](./android/system/_package.md) | |
+| [android.telecom](./android/telecom/_package.md) | The Android Telecom framework is responsible for managing calls on an Android device. |
+| [android.telephony](./android/telephony/_package.md) | Provides APIs for monitoring the basic phone information, such as the network type and connection state, plus utilities for manipulating phone number strings. |
+| --- | --- |
+| [android.telephony.cdma](./android/telephony/cdma/_package.md) | Provides APIs for utilizing CDMA-specific telephony features. |
+| [android.telephony.data](./android/telephony/data/_package.md) | |
+| [android.telephony.emergency](./android/telephony/emergency/_package.md) | |
+| --- | --- |
+| [android.telephony.euicc](./android/telephony/euicc/_package.md) | |
+| [android.telephony.gsm](./android/telephony/gsm/_package.md) | Provides APIs for utilizing GSM-specific telephony features, such as text/data/PDU SMS messages. |
+| [android.telephony.ims](./android/telephony/ims/_package.md) | |
+| --- | --- |
+| [android.telephony.ims.feature](./android/telephony/ims/feature/_package.md) | |
+| [android.telephony.ims.stub](./android/telephony/ims/stub/_package.md) | |
+| [android.telephony.mbms](./android/telephony/mbms/_package.md) | |
+| --- | --- |
+| [android.telephony.satellite](./android/telephony/satellite/_package.md) | |
+| [android.test](./android/test/_package.md) | A framework for writing Android test cases and suites. For more information, see the [Testing](https://developer.android.com/tools/testing) developer guide. |
+| [android.test.mock](./android/test/mock/_package.md) | Utility classes providing stubs or mocks of various Android framework building blocks. For more information, see the [Testing](https://developer.android.com/tools/testing) guide. |
+| --- | --- |
+| [android.test.suitebuilder](./android/test/suitebuilder/_package.md) | Utility classes supporting the test runner classes. |
+| [android.test.suitebuilder.annotation](./android/test/suitebuilder/annotation/_package.md) | Utility classes supporting the test runner classes. |
+| [android.text](./android/text/_package.md) | Provides classes used to render or track text and text spans on the screen. |
+| --- | --- |
+| [android.text.format](./android/text/format/_package.md) | This package contains alternative classes for some text formatting classes defined in `https://developer.android.com/reference/java/util/package-summary` and `https://developer.android.com/reference/java/text/package-summary`. |
+| [android.text.method](./android/text/method/_package.md) | Provides classes that monitor or modify keypad input. |
+| [android.text.style](./android/text/style/_package.md) | Provides classes used to view or change the style of a span of text in a View object. |
+| --- | --- |
+| [android.text.util](./android/text/util/_package.md) | Utilities for converting identifiable text strings into clickable links and creating RFC 822-type message (SMTP) tokens. |
+| [android.transition](./android/transition/_package.md) | The classes in this package enable "scenes \& transitions" functionality for view hiearchies. |
+| [android.util](./android/util/_package.md) | Provides common utility methods such as date/time manipulation, base64 encoders and decoders, string and number conversion methods, and XML utilities. |
+| --- | --- |
+| [android.util.function](./android/util/function/_package.md) | |
+| [android.util.proto](./android/util/proto/_package.md) | Provides utility classes to export protocol buffers from the system. |
+| [android.view](./android/view/_package.md) | Provides classes that expose basic user interface classes that handle screen layout and interaction with the user. |
+| --- | --- |
+| [android.view.accessibility](./android/view/accessibility/_package.md) | The classes in this package are used to represent screen content and changes to it as well as APIs for querying the global accessibility state of the system. |
+| [android.view.animation](./android/view/animation/_package.md) | Provides classes that handle tweened animations. |
+| [android.view.autofill](./android/view/autofill/_package.md) | |
+| --- | --- |
+| [android.view.contentcapture](./android/view/contentcapture/_package.md) | |
+| [android.view.displayhash](./android/view/displayhash/_package.md) | |
+| [android.view.inputmethod](./android/view/inputmethod/_package.md) | Framework classes for interaction between views and input methods (such as soft keyboards). |
+| --- | --- |
+| [android.view.inspector](./android/view/inspector/_package.md) | |
+| [android.view.textclassifier](./android/view/textclassifier/_package.md) | |
+| [android.view.textservice](./android/view/textservice/_package.md) | |
+| --- | --- |
+| [android.view.translation](./android/view/translation/_package.md) | |
+| [android.webkit](./android/webkit/_package.md) | Provides tools for browsing the web. |
+| [android.widget](./android/widget/_package.md) | The widget package contains (mostly visual) UI elements to use on your Application screen. |
+| --- | --- |
+| [android.widget.inline](./android/widget/inline/_package.md) | |
+| [android.widget.photopicker](./android/widget/photopicker/_package.md) | |
+| [android.window](./android/window/_package.md) | |
+| --- | --- |
+| [dalvik.annotation](./dalvik/annotation/_package.md) | |
+| [dalvik.annotation.optimization](./dalvik/annotation/optimization/_package.md) | |
+| [dalvik.bytecode](./dalvik/bytecode/_package.md) | |
+| --- | --- |
+| [dalvik.system](./dalvik/system/_package.md) | |
+| [java.awt.font](./java/awt/font/_package.md) | |
+| [java.beans](./java/beans/_package.md) | |
+| --- | --- |
+| [java.io](./java/io/_package.md) | Provides for system input and output through data streams, serialization and the file system. |
+| [java.lang](./java/lang/_package.md) | Provides classes that are fundamental to the design of the Java programming language. |
+| [java.lang.annotation](./java/lang/annotation/_package.md) | Provides library support for the Java programming language annotation facility. |
 | --- | --- |
-| [java.lang.invoke](https://developer.android.com/reference/java/lang/invoke/package-summary) | |
-| [java.lang.ref](https://developer.android.com/reference/java/lang/ref/package-summary) | Provides reference-object classes, which support a limited degree of interaction with the garbage collector. |
-| [java.lang.reflect](https://developer.android.com/reference/java/lang/reflect/package-summary) | Provides classes and interfaces for obtaining reflective information about classes and objects. |
+| [java.lang.invoke](./java/lang/invoke/_package.md) | |
+| [java.lang.ref](./java/lang/ref/_package.md) | Provides reference-object classes, which support a limited degree of interaction with the garbage collector. |
+| [java.lang.reflect](./java/lang/reflect/_package.md) | Provides classes and interfaces for obtaining reflective information about classes and objects. |
 | --- | --- |
-| [java.lang.runtime](https://developer.android.com/reference/java/lang/runtime/package-summary) | The `java.lang.runtime` package provides low-level runtime support for the Java language. |
-| [java.math](https://developer.android.com/reference/java/math/package-summary) | |
-| [java.net](https://developer.android.com/reference/java/net/package-summary) | Provides the classes for implementing networking applications. |
+| [java.lang.runtime](./java/lang/runtime/_package.md) | The `java.lang.runtime` package provides low-level runtime support for the Java language. |
+| [java.math](./java/math/_package.md) | |
+| [java.net](./java/net/_package.md) | Provides the classes for implementing networking applications. |
 | --- | --- |
-| [java.nio](https://developer.android.com/reference/java/nio/package-summary) | Defines buffers, which are containers for data, and provides an overview of the other NIO packages. |
-| [java.nio.channels](https://developer.android.com/reference/java/nio/channels/package-summary) | Defines channels, which represent connections to entities that are capable of performing I/O operations, such as files and sockets; defines selectors, for multiplexed, non-blocking I/O operations. |
-| [java.nio.channels.spi](https://developer.android.com/reference/java/nio/channels/spi/package-summary) | Service-provider classes for the `https://developer.android.com/reference/java/nio/channels/package-summary` package. |
+| [java.nio](./java/nio/_package.md) | Defines buffers, which are containers for data, and provides an overview of the other NIO packages. |
+| [java.nio.channels](./java/nio/channels/_package.md) | Defines channels, which represent connections to entities that are capable of performing I/O operations, such as files and sockets; defines selectors, for multiplexed, non-blocking I/O operations. |
+| [java.nio.channels.spi](./java/nio/channels/spi/_package.md) | Service-provider classes for the `https://developer.android.com/reference/java/nio/channels/package-summary` package. |
 | --- | --- |
-| [java.nio.charset](https://developer.android.com/reference/java/nio/charset/package-summary) | Defines charsets, decoders, and encoders, for translating between bytes and Unicode characters. |
-| [java.nio.charset.spi](https://developer.android.com/reference/java/nio/charset/spi/package-summary) | Service-provider classes for the `https://developer.android.com/reference/java/nio/charset/package-summary` package. |
-| [java.nio.file](https://developer.android.com/reference/java/nio/file/package-summary) | |
+| [java.nio.charset](./java/nio/charset/_package.md) | Defines charsets, decoders, and encoders, for translating between bytes and Unicode characters. |
+| [java.nio.charset.spi](./java/nio/charset/spi/_package.md) | Service-provider classes for the `https://developer.android.com/reference/java/nio/charset/package-summary` package. |
+| [java.nio.file](./java/nio/file/_package.md) | |
 | --- | --- |
-| [java.nio.file.attribute](https://developer.android.com/reference/java/nio/file/attribute/package-summary) | |
-| [java.nio.file.spi](https://developer.android.com/reference/java/nio/file/spi/package-summary) | |
-| [java.security](https://developer.android.com/reference/java/security/package-summary) | Provides the classes and interfaces for the security framework. |
+| [java.nio.file.attribute](./java/nio/file/attribute/_package.md) | |
+| [java.nio.file.spi](./java/nio/file/spi/_package.md) | |
+| [java.security](./java/security/_package.md) | Provides the classes and interfaces for the security framework. |
 | --- | --- |
-| [java.security.acl](https://developer.android.com/reference/java/security/acl/package-summary) | The classes and interfaces in this package have been superseded by classes in the java.security package. |
-| [java.security.cert](https://developer.android.com/reference/java/security/cert/package-summary) | Provides classes and interfaces for parsing and managing certificates, certificate revocation lists (CRLs), and certification paths. |
-| [java.security.interfaces](https://developer.android.com/reference/java/security/interfaces/package-summary) | Provides interfaces for generating RSA (Rivest, Shamir and Adleman AsymmetricCipher algorithm) keys as defined in the RSA Laboratory Technical Note PKCS#1, and DSA (Digital Signature Algorithm) keys as defined in NIST's FIPS-186. |
+| [java.security.acl](./java/security/acl/_package.md) | The classes and interfaces in this package have been superseded by classes in the java.security package. |
+| [java.security.cert](./java/security/cert/_package.md) | Provides classes and interfaces for parsing and managing certificates, certificate revocation lists (CRLs), and certification paths. |
+| [java.security.interfaces](./java/security/interfaces/_package.md) | Provides interfaces for generating RSA (Rivest, Shamir and Adleman AsymmetricCipher algorithm) keys as defined in the RSA Laboratory Technical Note PKCS#1, and DSA (Digital Signature Algorithm) keys as defined in NIST's FIPS-186. |
 | --- | --- |
-| [java.security.spec](https://developer.android.com/reference/java/security/spec/package-summary) | Provides classes and interfaces for key specifications and algorithm parameter specifications. |
-| [java.sql](https://developer.android.com/reference/java/sql/package-summary) | Provides the API for accessing and processing data stored in a data source (usually a relational database) using the Java^TM^ programming language. |
-| [java.text](https://developer.android.com/reference/java/text/package-summary) | Provides classes and interfaces for handling text, dates, numbers, and messages in a manner independent of natural languages. |
+| [java.security.spec](./java/security/spec/_package.md) | Provides classes and interfaces for key specifications and algorithm parameter specifications. |
+| [java.sql](./java/sql/_package.md) | Provides the API for accessing and processing data stored in a data source (usually a relational database) using the Java^TM^ programming language. |
+| [java.text](./java/text/_package.md) | Provides classes and interfaces for handling text, dates, numbers, and messages in a manner independent of natural languages. |
 | --- | --- |
-| [java.time](https://developer.android.com/reference/java/time/package-summary) | The main API for dates, times, instants, and durations. |
-| [java.time.chrono](https://developer.android.com/reference/java/time/chrono/package-summary) | Generic API for calendar systems other than the default ISO. |
-| [java.time.format](https://developer.android.com/reference/java/time/format/package-summary) | Provides classes to print and parse dates and times. |
+| [java.time](./java/time/_package.md) | The main API for dates, times, instants, and durations. |
+| [java.time.chrono](./java/time/chrono/_package.md) | Generic API for calendar systems other than the default ISO. |
+| [java.time.format](./java/time/format/_package.md) | Provides classes to print and parse dates and times. |
 | --- | --- |
-| [java.time.temporal](https://developer.android.com/reference/java/time/temporal/package-summary) | Access to date and time using fields and units, and date time adjusters. |
-| [java.time.zone](https://developer.android.com/reference/java/time/zone/package-summary) | Support for time-zones and their rules. |
-| [java.util](https://developer.android.com/reference/java/util/package-summary) | Contains the collections framework, some internationalization support classes, a service loader, properties, random number generation, string parsing and scanning classes, base64 encoding and decoding, a bit array, and several miscellaneous utility classes. |
+| [java.time.temporal](./java/time/temporal/_package.md) | Access to date and time using fields and units, and date time adjusters. |
+| [java.time.zone](./java/time/zone/_package.md) | Support for time-zones and their rules. |
+| [java.util](./java/util/_package.md) | Contains the collections framework, some internationalization support classes, a service loader, properties, random number generation, string parsing and scanning classes, base64 encoding and decoding, a bit array, and several miscellaneous utility classes. |
 | --- | --- |
-| [java.util.concurrent](https://developer.android.com/reference/java/util/concurrent/package-summary) | Utility classes commonly useful in concurrent programming. |
-| [java.util.concurrent.atomic](https://developer.android.com/reference/java/util/concurrent/atomic/package-summary) | A small toolkit of classes that support lock-free thread-safe programming on single variables. |
-| [java.util.concurrent.locks](https://developer.android.com/reference/java/util/concurrent/locks/package-summary) | Interfaces and classes providing a framework for locking and waiting for conditions that is distinct from built-in synchronization and monitors. |
+| [java.util.concurrent](./java/util/concurrent/_package.md) | Utility classes commonly useful in concurrent programming. |
+| [java.util.concurrent.atomic](./java/util/concurrent/atomic/_package.md) | A small toolkit of classes that support lock-free thread-safe programming on single variables. |
+| [java.util.concurrent.locks](./java/util/concurrent/locks/_package.md) | Interfaces and classes providing a framework for locking and waiting for conditions that is distinct from built-in synchronization and monitors. |
 | --- | --- |
-| [java.util.function](https://developer.android.com/reference/java/util/function/package-summary) | *Functional interfaces* provide target types for lambda expressions and method references. |
-| [java.util.jar](https://developer.android.com/reference/java/util/jar/package-summary) | Provides classes for reading and writing the JAR (Java ARchive) file format, which is based on the standard ZIP file format with an optional manifest file. |
-| [java.util.logging](https://developer.android.com/reference/java/util/logging/package-summary) | Provides the classes and interfaces of the Java 2 platform's core logging facilities. |
+| [java.util.function](./java/util/function/_package.md) | *Functional interfaces* provide target types for lambda expressions and method references. |
+| [java.util.jar](./java/util/jar/_package.md) | Provides classes for reading and writing the JAR (Java ARchive) file format, which is based on the standard ZIP file format with an optional manifest file. |
+| [java.util.logging](./java/util/logging/_package.md) | Provides the classes and interfaces of the Java 2 platform's core logging facilities. |
 | --- | --- |
-| [java.util.prefs](https://developer.android.com/reference/java/util/prefs/package-summary) | This package allows applications to store and retrieve user and system preference and configuration data. |
-| [java.util.random](https://developer.android.com/reference/java/util/random/package-summary) | This package contains classes and interfaces that support a generic API for random number generation. |
-| [java.util.regex](https://developer.android.com/reference/java/util/regex/package-summary) | Classes for matching character sequences against patterns specified by regular expressions. |
+| [java.util.prefs](./java/util/prefs/_package.md) | This package allows applications to store and retrieve user and system preference and configuration data. |
+| [java.util.random](./java/util/random/_package.md) | This package contains classes and interfaces that support a generic API for random number generation. |
+| [java.util.regex](./java/util/regex/_package.md) | Classes for matching character sequences against patterns specified by regular expressions. |
 | --- | --- |
-| [java.util.stream](https://developer.android.com/reference/java/util/stream/package-summary) | Classes to support functional-style operations on streams of elements, such as map-reduce transformations on collections. |
-| [java.util.zip](https://developer.android.com/reference/java/util/zip/package-summary) | Provides classes for reading and writing the standard ZIP and GZIP file formats. |
-| [javax.annotation.processing](https://developer.android.com/reference/javax/annotation/processing/package-summary) | |
+| [java.util.stream](./java/util/stream/_package.md) | Classes to support functional-style operations on streams of elements, such as map-reduce transformations on collections. |
+| [java.util.zip](./java/util/zip/_package.md) | Provides classes for reading and writing the standard ZIP and GZIP file formats. |
+| [javax.annotation.processing](./javax/annotation/processing/_package.md) | |
 | --- | --- |
-| [javax.crypto](https://developer.android.com/reference/javax/crypto/package-summary) | Provides the classes and interfaces for cryptographic operations. |
-| [javax.crypto.interfaces](https://developer.android.com/reference/javax/crypto/interfaces/package-summary) | Provides interfaces for Diffie-Hellman keys as defined in RSA Laboratories' PKCS #3. |
-| [javax.crypto.spec](https://developer.android.com/reference/javax/crypto/spec/package-summary) | Provides classes and interfaces for key specifications and algorithm parameter specifications. |
+| [javax.crypto](./javax/crypto/_package.md) | Provides the classes and interfaces for cryptographic operations. |
+| [javax.crypto.interfaces](./javax/crypto/interfaces/_package.md) | Provides interfaces for Diffie-Hellman keys as defined in RSA Laboratories' PKCS #3. |
+| [javax.crypto.spec](./javax/crypto/spec/_package.md) | Provides classes and interfaces for key specifications and algorithm parameter specifications. |
 | --- | --- |
-| [javax.microedition.khronos.egl](https://developer.android.com/reference/javax/microedition/khronos/egl/package-summary) | |
-| [javax.microedition.khronos.opengles](https://developer.android.com/reference/javax/microedition/khronos/opengles/package-summary) | Provides a standard OpenGL interface. |
-| [javax.net](https://developer.android.com/reference/javax/net/package-summary) | Provides classes for networking applications. |
+| [javax.microedition.khronos.egl](./javax/microedition/khronos/egl/_package.md) | |
+| [javax.microedition.khronos.opengles](./javax/microedition/khronos/opengles/_package.md) | Provides a standard OpenGL interface. |
+| [javax.net](./javax/net/_package.md) | Provides classes for networking applications. |
 | --- | --- |
-| [javax.net.ssl](https://developer.android.com/reference/javax/net/ssl/package-summary) | Provides classes for the secure socket package. |
-| [javax.security.auth](https://developer.android.com/reference/javax/security/auth/package-summary) | This package provides a framework for authentication and authorization. |
-| [javax.security.auth.callback](https://developer.android.com/reference/javax/security/auth/callback/package-summary) | This package provides the classes necessary for services to interact with applications in order to retrieve information (authentication data including usernames or passwords, for example) or to display information (error and warning messages, for example). |
+| [javax.net.ssl](./javax/net/ssl/_package.md) | Provides classes for the secure socket package. |
+| [javax.security.auth](./javax/security/auth/_package.md) | This package provides a framework for authentication and authorization. |
+| [javax.security.auth.callback](./javax/security/auth/callback/_package.md) | This package provides the classes necessary for services to interact with applications in order to retrieve information (authentication data including usernames or passwords, for example) or to display information (error and warning messages, for example). |
 | --- | --- |
-| [javax.security.auth.login](https://developer.android.com/reference/javax/security/auth/login/package-summary) | This package provides a pluggable authentication framework. |
-| [javax.security.auth.x500](https://developer.android.com/reference/javax/security/auth/x500/package-summary) | This package contains the classes that should be used to store X500 Principal and X500 Private Credentials in a *Subject*. |
-| [javax.security.cert](https://developer.android.com/reference/javax/security/cert/package-summary) | Provides classes for public key certificates. |
+| [javax.security.auth.login](./javax/security/auth/login/_package.md) | This package provides a pluggable authentication framework. |
+| [javax.security.auth.x500](./javax/security/auth/x500/_package.md) | This package contains the classes that should be used to store X500 Principal and X500 Private Credentials in a *Subject*. |
+| [javax.security.cert](./javax/security/cert/_package.md) | Provides classes for public key certificates. |
 | --- | --- |
-| [javax.sql](https://developer.android.com/reference/javax/sql/package-summary) | Provides the API for server side data source access and processing from the Java^TM^ programming language. |
-| [javax.xml](https://developer.android.com/reference/javax/xml/package-summary) | |
-| [javax.xml.datatype](https://developer.android.com/reference/javax/xml/datatype/package-summary) | |
+| [javax.sql](./javax/sql/_package.md) | Provides the API for server side data source access and processing from the Java^TM^ programming language. |
+| [javax.xml](./javax/xml/_package.md) | |
+| [javax.xml.datatype](./javax/xml/datatype/_package.md) | |
 | --- | --- |
-| [javax.xml.namespace](https://developer.android.com/reference/javax/xml/namespace/package-summary) | |
-| [javax.xml.parsers](https://developer.android.com/reference/javax/xml/parsers/package-summary) | |
-| [javax.xml.transform](https://developer.android.com/reference/javax/xml/transform/package-summary) | |
+| [javax.xml.namespace](./javax/xml/namespace/_package.md) | |
+| [javax.xml.parsers](./javax/xml/parsers/_package.md) | |
+| [javax.xml.transform](./javax/xml/transform/_package.md) | |
 | --- | --- |
-| [javax.xml.transform.dom](https://developer.android.com/reference/javax/xml/transform/dom/package-summary) | |
-| [javax.xml.transform.sax](https://developer.android.com/reference/javax/xml/transform/sax/package-summary) | |
-| [javax.xml.transform.stream](https://developer.android.com/reference/javax/xml/transform/stream/package-summary) | |
+| [javax.xml.transform.dom](./javax/xml/transform/dom/_package.md) | |
+| [javax.xml.transform.sax](./javax/xml/transform/sax/_package.md) | |
+| [javax.xml.transform.stream](./javax/xml/transform/stream/_package.md) | |
 | --- | --- |
-| [javax.xml.validation](https://developer.android.com/reference/javax/xml/validation/package-summary) | |
-| [javax.xml.xpath](https://developer.android.com/reference/javax/xml/xpath/package-summary) | |
-| [org.apache.http.conn](https://developer.android.com/reference/org/apache/http/conn/package-summary) | |
+| [javax.xml.validation](./javax/xml/validation/_package.md) | |
+| [javax.xml.xpath](./javax/xml/xpath/_package.md) | |
+| [org.apache.http.conn](./org/apache/http/conn/_package.md) | |
 | --- | --- |
-| [org.apache.http.conn.scheme](https://developer.android.com/reference/org/apache/http/conn/scheme/package-summary) | |
-| [org.apache.http.conn.ssl](https://developer.android.com/reference/org/apache/http/conn/ssl/package-summary) | TLS/SSL specific parts of the *HttpConn* API. |
-| [org.apache.http.params](https://developer.android.com/reference/org/apache/http/params/package-summary) | |
+| [org.apache.http.conn.scheme](./org/apache/http/conn/scheme/_package.md) | |
+| [org.apache.http.conn.ssl](./org/apache/http/conn/ssl/_package.md) | TLS/SSL specific parts of the *HttpConn* API. |
+| [org.apache.http.params](./org/apache/http/params/_package.md) | |
 | --- | --- |
-| [org.json](https://developer.android.com/reference/org/json/package-summary) | |
-| [org.w3c.dom](https://developer.android.com/reference/org/w3c/dom/package-summary) | |
-| [org.w3c.dom.ls](https://developer.android.com/reference/org/w3c/dom/ls/package-summary) | |
+| [org.json](./org/json/_package.md) | |
+| [org.w3c.dom](./org/w3c/dom/_package.md) | |
+| [org.w3c.dom.ls](./org/w3c/dom/ls/_package.md) | |
 | --- | --- |
-| [org.xml.sax](https://developer.android.com/reference/org/xml/sax/package-summary) | |
-| [org.xml.sax.ext](https://developer.android.com/reference/org/xml/sax/ext/package-summary) | |
-| [org.xml.sax.helpers](https://developer.android.com/reference/org/xml/sax/helpers/package-summary) | |
+| [org.xml.sax](./org/xml/sax/_package.md) | |
+| [org.xml.sax.ext](./org/xml/sax/ext/_package.md) | |
+| [org.xml.sax.helpers](./org/xml/sax/helpers/_package.md) | |
 | --- | --- |
-| [org.xmlpull.v1](https://developer.android.com/reference/org/xmlpull/v1/package-summary) | |
-| [org.xmlpull.v1.sax2](https://developer.android.com/reference/org/xmlpull/v1/sax2/package-summary) | |
+| [org.xmlpull.v1](./org/xmlpull/v1/_package.md) | |
+| [org.xmlpull.v1.sax2](./org/xmlpull/v1/sax2/_package.md) | |

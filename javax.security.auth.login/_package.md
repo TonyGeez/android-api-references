@@ -4,5 +4,5 @@
 
 ## Exceptions
 
-| [LoginException](https://developer.android.com/reference/kotlin/javax/security/auth/login/LoginException) | This is the basic login exception. |
+| [LoginException](../javax/security/auth/login/LoginException.md) | This is the basic login exception. |
 | --- | --- |

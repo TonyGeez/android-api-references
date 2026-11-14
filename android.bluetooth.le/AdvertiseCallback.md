@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # AdvertiseCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/AdvertiseCallback "View this page in Java") 
+Kotlin| [Java](../android/bluetooth/le/AdvertiseCallback.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class AdvertiseCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.AdvertiseCallback](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#) |
+| ↳ | [android.bluetooth.le.AdvertiseCallback](../android/bluetooth/le/AdvertiseCallback.md) |
 
 Bluetooth LE advertising callbacks, used to deliver advertising operation status.
 
@@ -21,21 +21,21 @@ Bluetooth LE advertising callbacks, used to deliver advertising operation status
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_ALREADY_STARTED](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_ALREADY_STARTED:kotlin.Int) Failed to start advertising as the advertising is already started. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_DATA_TOO_LARGE](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_DATA_TOO_LARGE:kotlin.Int) Failed to start advertising as the advertise data to be broadcasted is larger than 31 bytes. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_FEATURE_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_FEATURE_UNSUPPORTED:kotlin.Int) This feature is not supported on this platform. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_ALREADY_STARTED](../android/bluetooth/le/AdvertiseCallback.md) Failed to start advertising as the advertising is already started. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_DATA_TOO_LARGE](../android/bluetooth/le/AdvertiseCallback.md) Failed to start advertising as the advertise data to be broadcasted is larger than 31 bytes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_FEATURE_UNSUPPORTED](../android/bluetooth/le/AdvertiseCallback.md) This feature is not supported on this platform. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_INTERNAL_ERROR](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_INTERNAL_ERROR:kotlin.Int) Operation failed due to an internal error. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_TOO_MANY_ADVERTISERS](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#ADVERTISE_FAILED_TOO_MANY_ADVERTISERS:kotlin.Int) Failed to start advertising because no advertising instance is available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_INTERNAL_ERROR](../android/bluetooth/le/AdvertiseCallback.md) Operation failed due to an internal error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_TOO_MANY_ADVERTISERS](../android/bluetooth/le/AdvertiseCallback.md) Failed to start advertising because no advertising instance is available. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AdvertiseCallback](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#AdvertiseCallback())`()` <br /> |
+| [AdvertiseCallback](../android/bluetooth/le/AdvertiseCallback.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartFailure](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#onStartFailure(kotlin.Int))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback when advertising could not be started. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartSuccess](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback#onStartSuccess(android.bluetooth.le.AdvertiseSettings))`(`settingsInEffect:` ` [AdvertiseSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings)!`)` Callback triggered in response to android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartFailure](../android/bluetooth/le/AdvertiseCallback.md))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback when advertising could not be started. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartSuccess](../android/bluetooth/le/AdvertiseCallback.md))`(`settingsInEffect:` ` [AdvertiseSettings](../android/bluetooth/le/AdvertiseSettings.md)!`)` Callback triggered in response to android. |
 
 ## Constants
 
@@ -137,4 +137,4 @@ Callback triggered in response to android.bluetooth.le.BluetoothLeAdvertiser#sta
 
 | Parameters ||
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `settingsInEffect` | [AdvertiseSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings)!:The actual settings used for advertising, which may be different from what has been requested. |
+| `settingsInEffect` | [AdvertiseSettings](../android/bluetooth/le/AdvertiseSettings.md)!:The actual settings used for advertising, which may be different from what has been requested. |

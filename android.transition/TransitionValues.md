@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # TransitionValues
 
-Kotlin| [Java](https://developer.android.com/reference/android/transition/TransitionValues "View this page in Java") 
+Kotlin| [Java](../android/transition/TransitionValues.md) 
 | --- | --- |
 
 ```
@@ -13,30 +13,30 @@ open class TransitionValues
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.transition.TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#) |
+| ↳ | [android.transition.TransitionValues](../android/transition/TransitionValues.md) |
 
 Data structure which holds cached values for the transition. The view field is the target which all of the values pertain to. The values field is a map which holds information for fields according to names selected by the transitions. These names should be unique to avoid clobbering values stored by other transitions, such as the convention project:transition_name:property_name. For example, the platform might store a property "alpha" in a transition "Fader" as "android:fader:alpha".
 
-These values are cached during the [Transition.captureStartValues(TransitionValues)](https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues))capture} phases of a scene change, once when the start values are captured and again when the end values are captured. These start/end values are then passed into the transitions via the for [Transition.createAnimator(ViewGroup, TransitionValues, TransitionValues)](https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues))method.
+These values are cached during the [Transition.captureStartValues(TransitionValues)](../android/transition/Transition.md))capture} phases of a scene change, once when the start values are captured and again when the end values are captured. These start/end values are then passed into the transitions via the for [Transition.createAnimator(ViewGroup, TransitionValues, TransitionValues)](../android/transition/Transition.md))method.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#TransitionValues())`()` <br /> |
-| [TransitionValues](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#TransitionValues(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`)` <br /> |
+| [TransitionValues](../android/transition/TransitionValues.md))`()` <br /> |
+| [TransitionValues](../android/transition/TransitionValues.md))`(`view:` ` [View](../android/view/View.md)`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#hashCode())`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#toString())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/transition/TransitionValues.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/transition/TransitionValues.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/transition/TransitionValues.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [values](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#values:kotlin.collections.MutableMap) The set of values tracked by transitions for this scene |
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#) | [view](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#view:android.view.View) The View with these values |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [values](../android/transition/TransitionValues.md) The set of values tracked by transitions for this scene |
+| [View](../android/view/View.md) | [view](../android/transition/TransitionValues.md) The View with these values |
 
 ## Public constructors
 
@@ -48,7 +48,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 TransitionValues()
 ```
 
-**Deprecated:** *Use [TransitionValues(android.view.View)](https://developer.android.com/reference/kotlin/android/transition/TransitionValues#TransitionValues(android.view.View))instead* 
+**Deprecated:** *Use [TransitionValues(android.view.View)](../android/transition/TransitionValues.md))instead* 
 
 ### TransitionValues
 
@@ -60,7 +60,7 @@ TransitionValues(view: View)
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#):This value cannot be`null`. |
+| `view` | [View](../android/view/View.md):This value cannot be`null`. |
 
 ## Public methods
 

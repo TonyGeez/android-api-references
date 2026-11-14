@@ -11,11 +11,11 @@ open class UnsupportedTemporalTypeException : DateTimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.time.DateTimeException](https://developer.android.com/reference/kotlin/java/time/DateTimeException.html#) ||
-| | | | | ↳ | [java.time.temporal.UnsupportedTemporalTypeException](https://developer.android.com/reference/kotlin/java/time/temporal/UnsupportedTemporalTypeException#) |
+| | | | ↳ | [java.time.DateTimeException](../java/time/DateTimeException.md) ||
+| | | | | ↳ | [java.time.temporal.UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md) |
 
 UnsupportedTemporalTypeException indicates that a ChronoField or ChronoUnit is not supported for a Temporal class.
 
@@ -23,8 +23,8 @@ UnsupportedTemporalTypeException indicates that a ChronoField or ChronoUnit is n
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedTemporalTypeException](https://developer.android.com/reference/kotlin/java/time/temporal/UnsupportedTemporalTypeException#UnsupportedTemporalTypeException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new UnsupportedTemporalTypeException with the specified message. |
-| [UnsupportedTemporalTypeException](https://developer.android.com/reference/kotlin/java/time/temporal/UnsupportedTemporalTypeException#UnsupportedTemporalTypeException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new UnsupportedTemporalTypeException with the specified message and cause. |
+| [UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new UnsupportedTemporalTypeException with the specified message. |
+| [UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new UnsupportedTemporalTypeException with the specified message and cause. |
 
 ## Public constructors
 

@@ -10,7 +10,7 @@ open class ECPublicKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/ECPublicKeySpec#) |
+| ↳ | [java.security.spec.ECPublicKeySpec](../java/security/spec/ECPublicKeySpec.md) |
 
 This immutable class specifies an elliptic curve public key with its associated parameters.
 
@@ -18,12 +18,12 @@ This immutable class specifies an elliptic curve public key with its associated 
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/ECPublicKeySpec#ECPublicKeySpec(java.security.spec.ECPoint,%20java.security.spec.ECParameterSpec))`(`w:` ` [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint)!`, `params:` ` [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)!`)` Creates a new ECPublicKeySpec with the specified parameter values. |
+| [ECPublicKeySpec](../java/security/spec/ECPublicKeySpec.md))`(`w:` ` [ECPoint](../java/security/spec/ECPoint.md)!`, `params:` ` [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!`)` Creates a new ECPublicKeySpec with the specified parameter values. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)! | [getParams](https://developer.android.com/reference/kotlin/java/security/spec/ECPublicKeySpec#getParams())`()` Returns the associated elliptic curve domain parameters. |
-| open [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint)! | [getW](https://developer.android.com/reference/kotlin/java/security/spec/ECPublicKeySpec#getW())`()` Returns the public point W. |
+| open [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | [getParams](../java/security/spec/ECPublicKeySpec.md))`()` Returns the associated elliptic curve domain parameters. |
+| open [ECPoint](../java/security/spec/ECPoint.md)! | [getW](../java/security/spec/ECPublicKeySpec.md))`()` Returns the public point W. |
 
 ## Public constructors
 
@@ -41,8 +41,8 @@ Creates a new ECPublicKeySpec with the specified parameter values.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `w` | [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint)!:the public point. |
-| `params` | [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)!:the associated elliptic curve domain parameters. |
+| `w` | [ECPoint](../java/security/spec/ECPoint.md)!:the public point. |
+| `params` | [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!:the associated elliptic curve domain parameters. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------|
@@ -63,7 +63,7 @@ Returns the associated elliptic curve domain parameters.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|---------------------------|
-| [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)! | the EC domain parameters. |
+| [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | the EC domain parameters. |
 
 ### getW
 
@@ -77,4 +77,4 @@ Returns the public point W.
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------|
-| [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint)! | the public point W. |
+| [ECPoint](../java/security/spec/ECPoint.md)! | the public point W. |

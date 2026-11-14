@@ -2,11 +2,11 @@
 
 # android.app.people
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/people/package-summary "View this page in Java")
+Kotlin| [Java](../android/app/people/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [ConversationStatus](https://developer.android.com/reference/kotlin/android/app/people/ConversationStatus) | <br /> |
+| [ConversationStatus](../android/app/people/ConversationStatus.md) | <br /> |
 | --- | --- |
-| [PeopleManager](https://developer.android.com/reference/kotlin/android/app/people/PeopleManager) | This class allows interaction with conversation and people data. |
+| [PeopleManager](../android/app/people/PeopleManager.md) | This class allows interaction with conversation and people data. |

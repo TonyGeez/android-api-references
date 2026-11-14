@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # RemoteException
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/RemoteException "View this page in Java") 
+Kotlin| [Java](../android/os/RemoteException.md) 
 | --- | --- |
 
 ```
@@ -14,30 +14,30 @@ open class RemoteException : AndroidException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [android.util.AndroidException](https://developer.android.com/reference/kotlin/android/util/AndroidException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [android.util.AndroidException](../android/util/AndroidException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.os.RemoteException](https://developer.android.com/reference/kotlin/android/os/RemoteException#) |
+| | | | ↳ | [android.os.RemoteException](../android/os/RemoteException.md) |
 
-| Known Direct Subclasses [DeadObjectException](https://developer.android.com/reference/kotlin/android/os/DeadObjectException), [TransactionTooLargeException](https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException) |------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [DeadObjectException](https://developer.android.com/reference/kotlin/android/os/DeadObjectException) | The object you are calling has died, because its hosting process no longer exists, or there has been a low-level binder error. | | [TransactionTooLargeException](https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException) | The Binder transaction failed because it was too large. | |
+| Known Direct Subclasses [DeadObjectException](../android/os/DeadObjectException.md), [TransactionTooLargeException](../android/os/TransactionTooLargeException.md) |------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [DeadObjectException](../android/os/DeadObjectException.md) | The object you are calling has died, because its hosting process no longer exists, or there has been a low-level binder error. | | [TransactionTooLargeException](../android/os/TransactionTooLargeException.md) | The Binder transaction failed because it was too large. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [DeadSystemException](https://developer.android.com/reference/kotlin/android/os/DeadSystemException) |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [DeadSystemException](https://developer.android.com/reference/kotlin/android/os/DeadSystemException) | The core Android system has died and is going through a runtime restart. | |
+| Known Indirect Subclasses [DeadSystemException](../android/os/DeadSystemException.md) |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [DeadSystemException](../android/os/DeadSystemException.md) | The core Android system has died and is going through a runtime restart. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Parent exception for all Binder remote-invocation errors Note: not all exceptions from binder services will be subclasses of this. For instance, RuntimeException and several subclasses of it may be thrown as well as OutOfMemoryException. One common subclass is [DeadObjectException](https://developer.android.com/reference/kotlin/android/os/DeadObjectException).
+Parent exception for all Binder remote-invocation errors Note: not all exceptions from binder services will be subclasses of this. For instance, RuntimeException and several subclasses of it may be thrown as well as OutOfMemoryException. One common subclass is [DeadObjectException](../android/os/DeadObjectException.md).
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RemoteException](https://developer.android.com/reference/kotlin/android/os/RemoteException#RemoteException())`()` <br /> |
-| [RemoteException](https://developer.android.com/reference/kotlin/android/os/RemoteException#RemoteException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [RemoteException](../android/os/RemoteException.md))`()` <br /> |
+| [RemoteException](../android/os/RemoteException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) | [rethrowAsRuntimeException](https://developer.android.com/reference/kotlin/android/os/RemoteException#rethrowAsRuntimeException())`()` Rethrow this as an unchecked runtime exception. |
-| open [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) | [rethrowFromSystemServer](https://developer.android.com/reference/kotlin/android/os/RemoteException#rethrowFromSystemServer())`()` Rethrow this exception when we know it came from the system server. |
+| open [RuntimeException](../java/lang/RuntimeException.md) | [rethrowAsRuntimeException](../android/os/RemoteException.md))`()` Rethrow this as an unchecked runtime exception. |
+| open [RuntimeException](../java/lang/RuntimeException.md) | [rethrowFromSystemServer](../android/os/RemoteException.md))`()` Rethrow this exception when we know it came from the system server. |
 
 ## Public constructors
 
@@ -73,7 +73,7 @@ Apps making calls into other processes may end up persisting internal state or m
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------|
-| [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) | This value cannot be`null`. |
+| [RuntimeException](../java/lang/RuntimeException.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |------------------------------|---|
@@ -93,7 +93,7 @@ Apps making calls into the system server may end up persisting internal state or
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------|
-| [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) | This value cannot be`null`. |
+| [RuntimeException](../java/lang/RuntimeException.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |------------------------------|---|

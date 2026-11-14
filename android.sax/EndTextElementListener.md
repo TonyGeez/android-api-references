@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # EndTextElementListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/sax/EndTextElementListener "View this page in Java") 
+Kotlin| [Java](../android/sax/EndTextElementListener.md) 
 | --- | --- |
 
 ```
 interface EndTextElementListener
 ```
 
-| [android.sax.EndTextElementListener](https://developer.android.com/reference/kotlin/android/sax/EndTextElementListener#) |
+| [android.sax.EndTextElementListener](../android/sax/EndTextElementListener.md) |
 
-| Known Direct Subclasses [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) | Listens for the beginning and ending of text elements. | |
+| Known Direct Subclasses [TextElementListener](../android/sax/TextElementListener.md) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [TextElementListener](../android/sax/TextElementListener.md) | Listens for the beginning and ending of text elements. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Listens for the end of text elements.
@@ -22,7 +22,7 @@ Listens for the end of text elements.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/android/sax/EndTextElementListener#end(kotlin.String))`(`body:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Invoked at the end of a text element with the body of the element. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../android/sax/EndTextElementListener.md))`(`body:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Invoked at the end of a text element with the body of the element. |
 
 ## Public methods
 

@@ -8,7 +8,7 @@ open class SurfaceControlViewHost
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.SurfaceControlViewHost](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#) |
+| ↳ | [android.view.SurfaceControlViewHost](../android/view/SurfaceControlViewHost.md) |
 
 Utility class for adding a View hierarchy to a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl`. The View hierarchy will render in to a root SurfaceControl, and receive input based on the SurfaceControl's placement on-screen. The primary usage of this class is to embed a View hierarchy from one process in to another. After the SurfaceControlViewHost has been set up in the embedded content provider, we can send the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage` to the host process. The host process can then attach the hierarchy to a SurfaceView within its own by calling `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setChildSurfacePackage(android.view.SurfaceControlViewHost.SurfacePackage)`.
 
@@ -26,9 +26,9 @@ Utility class for adding a View hierarchy to a `https://developer.android.com/re
 
 | Public methods ||
 |---|---|
-| open [SurfaceControlViewHost.LayoutParams](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#getLayoutParams()()` Returns the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams` of the root view. |
-| open [SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#getSurfacePackage()()` Return a SurfacePackage for the root SurfaceControl of the embedded hierarchy. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#getView()()` <br /> |
+| open [SurfaceControlViewHost.LayoutParams](../android/view/SurfaceControlViewHost.LayoutParams.md) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#getLayoutParams()()` Returns the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams` of the root view. |
+| open [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#getSurfacePackage()()` Return a SurfacePackage for the root SurfaceControl of the embedded hierarchy. |
+| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#getView()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#relayout(android.view.SurfaceControlViewHost.LayoutParams)(attrs: https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams)` Modifies the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams` of the root view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#relayout(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Modify the size of the root view. |
@@ -60,9 +60,9 @@ Construct a new SurfaceControlViewHost. The root Surface will be allocated inter
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The Context object for your activity or application. This value cannot be `null`. |
-| `display` | [Display](https://developer.android.com/reference/kotlin/android/view/Display): The Display the hierarchy will be placed on. This value cannot be `null`. |
-| `hostToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)?: The host token, as discussed above. This value may be `null`. |
+| `context` | [Context](../android/content/Context.md): The Context object for your activity or application. This value cannot be `null`. |
+| `display` | [Display](../android/view/Display.md): The Display the hierarchy will be placed on. This value cannot be `null`. |
+| `hostToken` | [IBinder](../android/os/IBinder.md)?: The host token, as discussed above. This value may be `null`. |
 | --- | --- |
 
 ### SurfaceControlViewHost
@@ -82,9 +82,9 @@ The hostInputTransferToken parameter allows the host and embedded to be associat
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The Context object for your activity or application. This value cannot be `null`. |
-| `display` | [Display](https://developer.android.com/reference/kotlin/android/view/Display): The Display the hierarchy will be placed on. This value cannot be `null`. |
-| `hostInputTransferToken` | [InputTransferToken](https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#)?: The host input transfer token, as discussed above. This value may be `null`. |
+| `context` | [Context](../android/content/Context.md): The Context object for your activity or application. This value cannot be `null`. |
+| `display` | [Display](../android/view/Display.md): The Display the hierarchy will be placed on. This value cannot be `null`. |
+| `hostInputTransferToken` | [InputTransferToken](../android/window/InputTransferToken.md)?: The host input transfer token, as discussed above. This value may be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -141,7 +141,7 @@ Modifies the `https://developer.android.com/reference/kotlin/android/view/Surfac
 
 | Parameters ||
 |---|---|
-| `attrs` | [SurfaceControlViewHost.LayoutParams](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams): This value cannot be `null`. |
+| `attrs` | [SurfaceControlViewHost.LayoutParams](../android/view/SurfaceControlViewHost.LayoutParams.md): This value cannot be `null`. |
 
 ### relayout
 
@@ -186,8 +186,8 @@ Sets the root view of the `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View): The `https://developer.android.com/reference/kotlin/android/view/View` to add. This value cannot be `null`. |
-| `attrs` | [SurfaceControlViewHost.LayoutParams](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams): The `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams` parameters for the `https://developer.android.com/reference/kotlin/android/view/View`. This value cannot be `null`. |
+| `view` | [View](../android/view/View.md): The `https://developer.android.com/reference/kotlin/android/view/View` to add. This value cannot be `null`. |
+| `attrs` | [SurfaceControlViewHost.LayoutParams](../android/view/SurfaceControlViewHost.LayoutParams.md): The `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.LayoutParams` parameters for the `https://developer.android.com/reference/kotlin/android/view/View`. This value cannot be `null`. |
 
 ### setView
 
@@ -205,7 +205,7 @@ Set the root view of the SurfaceControlViewHost. This view will render in to the
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View): The View to add. This value cannot be `null`. |
+| `view` | [View](../android/view/View.md): The View to add. This value cannot be `null`. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width to layout the View within, in pixels. |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height to layout the View within, in pixels. |
 | --- | --- |

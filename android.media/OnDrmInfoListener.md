@@ -4,14 +4,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # OnDrmInfoListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnDrmInfoListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaPlayer.OnDrmInfoListener.md) 
 | --- | --- |
 
 ```
 interface OnDrmInfoListener
 ```
 
-| [android.media.MediaPlayer.OnDrmInfoListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnDrmInfoListener#) |
+| [android.media.MediaPlayer.OnDrmInfoListener](../android/media/MediaPlayer.OnDrmInfoListener.md) |
 
 Interface definition of a callback to be invoked when the DRM info becomes available
 
@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked when the DRM info becomes avail
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmInfo](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnDrmInfoListener#onDrmInfo(android.media.MediaPlayer,%20android.media.MediaPlayer.DrmInfo))`(`mp:` ` [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!`, `drmInfo:` ` [MediaPlayer.DrmInfo](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.DrmInfo)!`)` Called to indicate DRM info is available |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmInfo](../android/media/MediaPlayer.OnDrmInfoListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `drmInfo:` ` [MediaPlayer.DrmInfo](../android/media/MediaPlayer.DrmInfo.md)!`)` Called to indicate DRM info is available |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called to indicate DRM info is available
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the`MediaPlayer`associated with this callback |
-| `drmInfo` | [MediaPlayer.DrmInfo](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.DrmInfo)!:DRM info of the source including PSSH, and subset of crypto schemes supported by this device |
+| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the`MediaPlayer`associated with this callback |
+| `drmInfo` | [MediaPlayer.DrmInfo](../android/media/MediaPlayer.DrmInfo.md)!:DRM info of the source including PSSH, and subset of crypto schemes supported by this device |

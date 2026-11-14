@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # TriggerEventListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/TriggerEventListener "View this page in Java") 
+Kotlin| [Java](../android/hardware/TriggerEventListener.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ abstract class TriggerEventListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener#) |
+| ↳ | [android.hardware.TriggerEventListener](../android/hardware/TriggerEventListener.md) |
 
-This class is the listener used to handle Trigger Sensors. Trigger Sensors are sensors that trigger an event and are automatically disabled. [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int) is one such example.
+This class is the listener used to handle Trigger Sensors. Trigger Sensors are sensors that trigger an event and are automatically disabled. [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md) is one such example.
 
-[SensorManager](https://developer.android.com/reference/kotlin/android/hardware/SensorManager) lets you access the device's [sensors](https://developer.android.com/reference/kotlin/android/hardware/Sensor). Get an instance of [SensorManager](https://developer.android.com/reference/kotlin/android/hardware/SensorManager) by calling [Context.getSystemService()](https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String))with the argument [android.content.Context#SENSOR_SERVICE](https://developer.android.com/reference/kotlin/android/content/Context.html#SENSOR_SERVICE:kotlin.String).
+[SensorManager](../android/hardware/SensorManager.md) lets you access the device's [sensors](../android/hardware/Sensor.md). Get an instance of [SensorManager](../android/hardware/SensorManager.md) by calling [Context.getSystemService()](../android/content/Context.md))with the argument [android.content.Context#SENSOR_SERVICE](../android/content/Context.md).
 
 Here's an example setup for a TriggerEventListener: 
 
@@ -60,11 +60,11 @@ class TriggerListener extends TriggerEventListener {
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener#TriggerEventListener())`()` <br /> |
+| [TriggerEventListener](../android/hardware/TriggerEventListener.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTrigger](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener#onTrigger(android.hardware.TriggerEvent))`(`event:` ` [TriggerEvent](https://developer.android.com/reference/kotlin/android/hardware/TriggerEvent)!`)` The method that will be called when the sensor is triggered. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTrigger](../android/hardware/TriggerEventListener.md))`(`event:` ` [TriggerEvent](../android/hardware/TriggerEvent.md)!`)` The method that will be called when the sensor is triggered. |
 
 ## Public constructors
 
@@ -88,4 +88,4 @@ The method that will be called when the sensor is triggered. Override this metho
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------|
-| `event` | [TriggerEvent](https://developer.android.com/reference/kotlin/android/hardware/TriggerEvent)!:The details of the event. |
+| `event` | [TriggerEvent](../android/hardware/TriggerEvent.md)!:The details of the event. |

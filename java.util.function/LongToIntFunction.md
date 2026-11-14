@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface LongToIntFunction
 ```
 
-| [java.util.function.LongToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/LongToIntFunction#) |
+| [java.util.function.LongToIntFunction](../java/util/function/LongToIntFunction.md) |
 
-Represents a function that accepts a long-valued argument and produces an int-valued result. This is the`long`-to-`int`primitive specialization for [Function](https://developer.android.com/reference/kotlin/java/util/function/Function).
+Represents a function that accepts a long-valued argument and produces an int-valued result. This is the`long`-to-`int`primitive specialization for [Function](../java/util/function/Function.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [applyAsInt(long)](https://developer.android.com/reference/kotlin/java/util/function/LongToIntFunction#applyAsInt(kotlin.Long)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsInt(long)](../java/util/function/LongToIntFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](https://developer.android.com/reference/kotlin/java/util/function/LongToIntFunction#applyAsInt(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this function to the given argument. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](../java/util/function/LongToIntFunction.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this function to the given argument. |
 
 ## Public methods
 

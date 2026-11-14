@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # LensShadingMap
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap "View this page in Java") 
+Kotlin| [Java](../android/hardware/camera2/params/LensShadingMap.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class LensShadingMap
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.LensShadingMap](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#) |
+| ↳ | [android.hardware.camera2.params.LensShadingMap](../android/hardware/camera2/params/LensShadingMap.md) |
 
 Immutable class for describing a`4 x N x M`lens shading map of floats.
 
@@ -21,21 +21,21 @@ Immutable class for describing a`4 x N x M`lens shading map of floats.
 
 | Constants ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [MINIMUM_GAIN_FACTOR](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#MINIMUM_GAIN_FACTOR:kotlin.Float) The smallest gain factor in this map. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [MINIMUM_GAIN_FACTOR](../android/hardware/camera2/params/LensShadingMap.md) The smallest gain factor in this map. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyGainFactors](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#copyGainFactors(kotlin.FloatArray,%20kotlin.Int))`(`destination:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copy all gain factors in row-major order from this lens shading map into the destination. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this LensShadingMap is equal to another LensShadingMap. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getColumnCount())`()` Get the number of columns in this map. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyGainFactors](../android/hardware/camera2/params/LensShadingMap.md))`(`destination:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copy all gain factors in row-major order from this lens shading map into the destination. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/hardware/camera2/params/LensShadingMap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this LensShadingMap is equal to another LensShadingMap. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnCount](../android/hardware/camera2/params/LensShadingMap.md))`()` Get the number of columns in this map. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGainFactor](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getGainFactor(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`colorChannel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a single color channel gain factor from this lens shading map by its row and column. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGainFactorCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getGainFactorCount())`()` Get the total number of gain factors in this map. |
-| [RggbChannelVector](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector)! | [getGainFactorVector](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getGainFactorVector(kotlin.Int,%20kotlin.Int))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a gain factor vector from this lens shading map by its row and column. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGainFactor](../android/hardware/camera2/params/LensShadingMap.md))`(`colorChannel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a single color channel gain factor from this lens shading map by its row and column. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGainFactorCount](../android/hardware/camera2/params/LensShadingMap.md))`()` Get the total number of gain factors in this map. |
+| [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md)! | [getGainFactorVector](../android/hardware/camera2/params/LensShadingMap.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a gain factor vector from this lens shading map by its row and column. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRowCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getRowCount())`()` Get the number of rows in this map. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#hashCode())`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#toString())`()` Return the LensShadingMap as a string representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRowCount](../android/hardware/camera2/params/LensShadingMap.md))`()` Get the number of rows in this map. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/hardware/camera2/params/LensShadingMap.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/hardware/camera2/params/LensShadingMap.md))`()` Return the LensShadingMap as a string representation. |
 | --- | --- |
 
 ## Constants
@@ -69,11 +69,11 @@ fun copyGainFactors(
 
 Copy all gain factors in row-major order from this lens shading map into the destination.
 
-Each gain factor will be \>= [MINIMUM_GAIN_FACTOR](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#MINIMUM_GAIN_FACTOR:kotlin.Float).
+Each gain factor will be \>= [MINIMUM_GAIN_FACTOR](../android/hardware/camera2/params/LensShadingMap.md).
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `destination` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:an array big enough to hold at least [RggbChannelVector.COUNT](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector#COUNT:kotlin.Int) elements after the`offset` |
+| `destination` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:an array big enough to hold at least [RggbChannelVector.COUNT](../android/hardware/camera2/params/RggbChannelVector.md) elements after the`offset` |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a non-negative offset into the array |
 
 | Exceptions ||
@@ -85,7 +85,7 @@ Each gain factor will be \>= [MINIMUM_GAIN_FACTOR](https://developer.android.com
 
 **See Also**
 
-- [android.hardware.camera2.CaptureResult#STATISTICS_LENS_SHADING_CORRECTION_MAP](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.html#STATISTICS_LENS_SHADING_CORRECTION_MAP:android.hardware.camera2.CaptureResult.Key) 
+- [android.hardware.camera2.CaptureResult#STATISTICS_LENS_SHADING_CORRECTION_MAP](../android/hardware/camera2/CaptureResult.md) 
 
 ### equals
 
@@ -97,7 +97,7 @@ fun equals(other: Any?): Boolean
 
 Check if this LensShadingMap is equal to another LensShadingMap.
 
-Two lens shading maps are equal if and only if they have the same rows/columns, and all of their elements are [equal](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)).
+Two lens shading maps are equal if and only if they have the same rows/columns, and all of their elements are [equal](../java/lang/Object.md)).
 
 | Parameters ||
 |-------|---------------------------------------------|
@@ -131,15 +131,15 @@ fun getGainFactor(
 
 Get a single color channel gain factor from this lens shading map by its row and column.
 
-The rows must be within the range \ [0,[getRowCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getRowCount())), the column must be within the range \ [0,[getColumnCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getColumnCount())), and the color channel must be within the range \[0, {@value android.hardware.camera2.params.RggbChannelVector#COUNT RggbChannelVector.COUNT}).
+The rows must be within the range \ [0,[getRowCount](../android/hardware/camera2/params/LensShadingMap.md))), the column must be within the range \ [0,[getColumnCount](../android/hardware/camera2/params/LensShadingMap.md))), and the color channel must be within the range \[0, {@value android.hardware.camera2.params.RggbChannelVector#COUNT RggbChannelVector.COUNT}).
 
 The channel order is`[R, Geven, Godd, B]`, where`Geven`is the green channel for the even rows of a Bayer pattern, and`Godd`is the odd rows.
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `colorChannel` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):color channel from`[R, Geven, Godd, B]` |
-| `column` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getColumnCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getColumnCount())) |
-| `row` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getRowCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getRowCount())) |
+| `column` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getColumnCount](../android/hardware/camera2/params/LensShadingMap.md))) |
+| `row` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getRowCount](../android/hardware/camera2/params/LensShadingMap.md))) |
 | --- | --- |
 
 | Return ||
@@ -152,12 +152,12 @@ The channel order is`[R, Geven, Godd, B]`, where`Geven`is the green channel for 
 
 **See Also**
 
-- [android.hardware.camera2.params.RggbChannelVector#RED](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector#RED:kotlin.Int)
-- [android.hardware.camera2.params.RggbChannelVector#GREEN_EVEN](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector#GREEN_EVEN:kotlin.Int)
-- [android.hardware.camera2.params.RggbChannelVector#GREEN_ODD](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector#GREEN_ODD:kotlin.Int)
-- [android.hardware.camera2.params.RggbChannelVector#BLUE](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector#BLUE:kotlin.Int)
-- [#getRowCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getRowCount())
-- [#getColumnCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getColumnCount()) 
+- [android.hardware.camera2.params.RggbChannelVector#RED](../android/hardware/camera2/params/RggbChannelVector.md)
+- [android.hardware.camera2.params.RggbChannelVector#GREEN_EVEN](../android/hardware/camera2/params/RggbChannelVector.md)
+- [android.hardware.camera2.params.RggbChannelVector#GREEN_ODD](../android/hardware/camera2/params/RggbChannelVector.md)
+- [android.hardware.camera2.params.RggbChannelVector#BLUE](../android/hardware/camera2/params/RggbChannelVector.md)
+- [#getRowCount](../android/hardware/camera2/params/LensShadingMap.md))
+- [#getColumnCount](../android/hardware/camera2/params/LensShadingMap.md)) 
 
 ### getGainFactorCount
 
@@ -169,7 +169,7 @@ fun getGainFactorCount(): Int
 
 Get the total number of gain factors in this map.
 
-A single gain factor contains exactly one color channel. Use with [copyGainFactors](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#copyGainFactors(kotlin.FloatArray,%20kotlin.Int))to allocate a large-enough array. 
+A single gain factor contains exactly one color channel. Use with [copyGainFactors](../android/hardware/camera2/params/LensShadingMap.md))to allocate a large-enough array. 
 
 ### getGainFactorVector
 
@@ -184,16 +184,16 @@ fun getGainFactorVector(
 
 Get a gain factor vector from this lens shading map by its row and column.
 
-The rows must be within the range \ [0,[getRowCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getRowCount())), the column must be within the range \ [0,[getColumnCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getColumnCount())).
+The rows must be within the range \ [0,[getRowCount](../android/hardware/camera2/params/LensShadingMap.md))), the column must be within the range \ [0,[getColumnCount](../android/hardware/camera2/params/LensShadingMap.md))).
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `column` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getColumnCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getColumnCount())) |
-| `row` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getRowCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getRowCount())) |
+| `column` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getColumnCount](../android/hardware/camera2/params/LensShadingMap.md))) |
+| `row` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):within the range \ [0,[getRowCount](../android/hardware/camera2/params/LensShadingMap.md))) |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RggbChannelVector](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector)! | an [RggbChannelVector](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RggbChannelVector) where each gain factor \>= {@value #MINIMUM_GAIN_FACTOR} |
+| [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md)! | an [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md) where each gain factor \>= {@value #MINIMUM_GAIN_FACTOR} |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------|
@@ -201,8 +201,8 @@ The rows must be within the range \ [0,[getRowCount](https://developer.android.c
 
 **See Also**
 
-- [#getRowCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getRowCount())
-- [#getColumnCount](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#getColumnCount()) 
+- [#getRowCount](../android/hardware/camera2/params/LensShadingMap.md))
+- [#getColumnCount](../android/hardware/camera2/params/LensShadingMap.md)) 
 
 ### getRowCount
 
@@ -222,13 +222,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -248,4 +248,4 @@ Return the LensShadingMap as a string representation.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | string representation of [LensShadingMap](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/LensShadingMap#) |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | string representation of [LensShadingMap](../android/hardware/camera2/params/LensShadingMap.md) |

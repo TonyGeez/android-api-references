@@ -4,30 +4,30 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # DisplayNameSources
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/ContactsContract.DisplayNameSources "View this page in Java") 
+Kotlin| [Java](../android/provider/ContactsContract.DisplayNameSources.md) 
 | --- | --- |
 
 ```
 interface DisplayNameSources
 ```
 
-| [android.provider.ContactsContract.DisplayNameSources](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#) |
+| [android.provider.ContactsContract.DisplayNameSources](../android/provider/ContactsContract.DisplayNameSources.md) |
 
-Types of data used to produce the display name for a contact. In the order of increasing priority: [EMAIL](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#EMAIL:kotlin.Int), [PHONE](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#PHONE:kotlin.Int), [ORGANIZATION](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#ORGANIZATION:kotlin.Int), [NICKNAME](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#NICKNAME:kotlin.Int), [STRUCTURED_PHONETIC_NAME](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#STRUCTURED_PHONETIC_NAME:kotlin.Int), [STRUCTURED_NAME](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#STRUCTURED_NAME:kotlin.Int).
+Types of data used to produce the display name for a contact. In the order of increasing priority: [EMAIL](../android/provider/ContactsContract.DisplayNameSources.md), [PHONE](../android/provider/ContactsContract.DisplayNameSources.md), [ORGANIZATION](../android/provider/ContactsContract.DisplayNameSources.md), [NICKNAME](../android/provider/ContactsContract.DisplayNameSources.md), [STRUCTURED_PHONETIC_NAME](../android/provider/ContactsContract.DisplayNameSources.md), [STRUCTURED_NAME](../android/provider/ContactsContract.DisplayNameSources.md).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMAIL](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#EMAIL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NICKNAME](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#NICKNAME:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORGANIZATION](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#ORGANIZATION:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMAIL](../android/provider/ContactsContract.DisplayNameSources.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NICKNAME](../android/provider/ContactsContract.DisplayNameSources.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORGANIZATION](../android/provider/ContactsContract.DisplayNameSources.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHONE](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#PHONE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRUCTURED_NAME](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#STRUCTURED_NAME:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRUCTURED_PHONETIC_NAME](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#STRUCTURED_PHONETIC_NAME:kotlin.Int) Display name comes from a structured name that only has phonetic components. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHONE](../android/provider/ContactsContract.DisplayNameSources.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRUCTURED_NAME](../android/provider/ContactsContract.DisplayNameSources.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRUCTURED_PHONETIC_NAME](../android/provider/ContactsContract.DisplayNameSources.md) Display name comes from a structured name that only has phonetic components. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNDEFINED](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DisplayNameSources#UNDEFINED:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNDEFINED](../android/provider/ContactsContract.DisplayNameSources.md) <br /> |
 
 ## Constants
 

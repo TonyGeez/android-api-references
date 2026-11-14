@@ -4,14 +4,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # OnUnhandledInputEventListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener "View this page in Java") 
+Kotlin| [Java](../android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.md) 
 | --- | --- |
 
 ```
 interface OnUnhandledInputEventListener
 ```
 
-| [android.media.tv.interactive.TvInteractiveAppView.OnUnhandledInputEventListener](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener#) |
+| [android.media.tv.interactive.TvInteractiveAppView.OnUnhandledInputEventListener](../android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.md) |
 
 Interface definition for a callback to be invoked when the unhandled input event is received.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the unhandled input event
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledInputEvent](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener#onUnhandledInputEvent(android.view.InputEvent))`(`event:` ` [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)`)` Called when an input event was not handled by the TV Interactive App. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledInputEvent](../android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.md))`(`event:` ` [InputEvent](../android/view/InputEvent.md)`)` Called when an input event was not handled by the TV Interactive App. |
 
 ## Public methods
 
@@ -37,7 +37,7 @@ This is called asynchronously from where the event is dispatched. It gives the h
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#):The input event. This value cannot be`null`. |
+| `event` | [InputEvent](../android/view/InputEvent.md):The input event. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|

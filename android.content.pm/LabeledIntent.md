@@ -8,8 +8,8 @@ open class LabeledIntent : Intent
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) ||
-| | ↳ | [android.content.pm.LabeledIntent](https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#) |
+| ↳ | [android.content.Intent](../android/content/Intent.md) ||
+| | ↳ | [android.content.pm.LabeledIntent](../android/content/pm/LabeledIntent.md) |
 
 A special subclass of Intent that can have a custom label/icon associated with it. Primarily for use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String`.
 
@@ -2944,7 +2944,7 @@ Instead, this value can be useful in conjunction with `https://developer.android
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int`
 
-If set, this intent will not match any components in packages that are currently [stopped](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#FLAG_STOPPED:kotlin.Int). If this is not set, then the default behavior is to include such applications in the result.
+If set, this intent will not match any components in packages that are currently [stopped](../android/content/pm/ApplicationInfo.md). If this is not set, then the default behavior is to include such applications in the result.
 
 <br />
 
@@ -2980,7 +2980,7 @@ If set, the recipient of this Intent will be granted permission to perform write
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int`
 
-If set, this intent will always match any components in packages that are currently [stopped](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#FLAG_STOPPED:kotlin.Int). This is the default behavior when `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` is not set. If both of these flags are set, this one wins (it allows overriding of exclude for places where the framework may automatically set the exclude flag, such as broadcasts).
+If set, this intent will always match any components in packages that are currently [stopped](../android/content/pm/ApplicationInfo.md). This is the default behavior when `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` is not set. If both of these flags are set, this one wins (it allows overriding of exclude for places where the framework may automatically set the exclude flag, such as broadcasts).
 
 <br />
 
@@ -3084,7 +3084,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getNonLocalizedLabel()()` Return any concrete text that has been given for the label text. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getSourcePackage()()` Return the name of the package holding label and icon resources. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the icon associated with this object. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the icon associated with this object. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the label associated with this object. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#readFromParcel(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
@@ -4019,7 +4019,7 @@ You can convert the returned string back to an Intent with `https://developer.an
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [LabeledIntent](https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LabeledIntent](../android/content/pm/LabeledIntent.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -4039,7 +4039,7 @@ Create a labeled intent from the given intent, supplying the label and icon reso
 
 | Parameters ||
 |---|---|
-| `origIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The original Intent to copy. |
+| `origIntent` | [Intent](../android/content/Intent.md)!: The original Intent to copy. |
 | `sourcePackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package in which the label and icon live. |
 | `labelRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource containing the label, or 0 if none. |
 | --- | --- |
@@ -4061,7 +4061,7 @@ Create a labeled intent from the given intent, supplying a textual label and ico
 
 | Parameters ||
 |---|---|
-| `origIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The original Intent to copy. |
+| `origIntent` | [Intent](../android/content/Intent.md)!: The original Intent to copy. |
 | `sourcePackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package in which the label and icon live. |
 | `nonLocalizedLabel` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Concrete text to use for the label. |
 | --- | --- |
@@ -4194,7 +4194,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

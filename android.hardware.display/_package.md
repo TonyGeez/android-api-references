@@ -2,22 +2,22 @@
 
 # android.hardware.display
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/package-summary "View this page in Java")
+Kotlin| [Java](../android/hardware/display/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [DisplayListener](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener) | Listens for changes in available display devices. |
+| [DisplayListener](../android/hardware/display/DisplayManager.DisplayListener.md) | Listens for changes in available display devices. |
 | --- | --- |
-| [BrightnessListener](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig.BrightnessListener) | Listener for display brightness changes. |
+| [BrightnessListener](../android/hardware/display/VirtualDisplayConfig.BrightnessListener.md) | Listener for display brightness changes. |
 
 ## Classes
 
-| [DeviceProductInfo](https://developer.android.com/reference/kotlin/android/hardware/display/DeviceProductInfo) | Product-specific information about the display or the directly connected device on the display chain. |
+| [DeviceProductInfo](../android/hardware/display/DeviceProductInfo.md) | Product-specific information about the display or the directly connected device on the display chain. |
 | --- | --- |
-| [DisplayManager](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager) | Manages the properties of attached displays. |
-| [DisplayTopology](https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology) | Represents the relative placement of extended displays. |
-| [HdrConversionMode](https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode) | Describes the HDR conversion mode for a device. |
+| [DisplayManager](../android/hardware/display/DisplayManager.md) | Manages the properties of attached displays. |
+| [DisplayTopology](../android/hardware/display/DisplayTopology.md) | Represents the relative placement of extended displays. |
+| [HdrConversionMode](../android/hardware/display/HdrConversionMode.md) | Describes the HDR conversion mode for a device. |
 | --- | --- |
-| [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay) | Represents a virtual display. |
-| [VirtualDisplayConfig](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig) | Holds configuration used to create [VirtualDisplay](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay) instances. |
+| [VirtualDisplay](../android/hardware/display/VirtualDisplay.md) | Represents a virtual display. |
+| [VirtualDisplayConfig](../android/hardware/display/VirtualDisplayConfig.md) | Holds configuration used to create [VirtualDisplay](../android/hardware/display/VirtualDisplay.md) instances. |

@@ -8,11 +8,11 @@ open class DatePicker : FrameLayout
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) ||||
-| | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) |||
-| | | ↳ | [android.widget.FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout) ||
+| ↳ | [android.view.View](../android/view/View.md) ||||
+| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) |||
+| | | ↳ | [android.widget.FrameLayout](../android/widget/FrameLayout.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.DatePicker](https://developer.android.com/reference/kotlin/android/widget/DatePicker#) |
+| | | | ↳ | [android.widget.DatePicker](../android/widget/DatePicker.md) |
 
 Provides a widget for selecting a date.
 
@@ -32,27 +32,27 @@ For a dialog using this view, see `https://developer.android.com/reference/kotli
 
 | XML attributes ||
 |---|---|
-| [`android:calendarTextColor`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text color list of the calendar. |
-| [`android:calendarViewShown`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | Whether the calendar view is shown. |
-| [`android:datePickerMode`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | Defines the look of the widget. |
+| [`android:calendarTextColor`](../android/widget/DatePicker.md) | The text color list of the calendar. |
+| [`android:calendarViewShown`](../android/widget/DatePicker.md) | Whether the calendar view is shown. |
+| [`android:datePickerMode`](../android/widget/DatePicker.md) | Defines the look of the widget. |
 | --- | --- |
-| [`android:dayOfWeekBackground`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The background color for the header's day of week. |
-| [`android:dayOfWeekTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text color for the header's day of week. |
-| [`android:endYear`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The last year (inclusive), for example "2010". |
+| [`android:dayOfWeekBackground`](../android/widget/DatePicker.md) | The background color for the header's day of week. |
+| [`android:dayOfWeekTextAppearance`](../android/widget/DatePicker.md) | The text color for the header's day of week. |
+| [`android:endYear`](../android/widget/DatePicker.md) | The last year (inclusive), for example "2010". |
 | --- | --- |
-| [`android:headerBackground`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The background for the selected date header. |
-| [`android:headerDayOfMonthTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text appearance for the day of month (ex. 28) in the selected date header. |
-| [`android:headerMonthTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text appearance for the month (ex. May) in the selected date header. |
+| [`android:headerBackground`](../android/widget/DatePicker.md) | The background for the selected date header. |
+| [`android:headerDayOfMonthTextAppearance`](../android/widget/DatePicker.md) | The text appearance for the day of month (ex. 28) in the selected date header. |
+| [`android:headerMonthTextAppearance`](../android/widget/DatePicker.md) | The text appearance for the month (ex. May) in the selected date header. |
 | --- | --- |
-| [`android:headerYearTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The text appearance for the year (ex. 2014) in the selected date header. |
-| [`android:maxDate`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The maximal date shown by this calendar view in mm/dd/yyyy format. |
-| [`android:minDate`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The minimal date shown by this calendar view in mm/dd/yyyy format. |
+| [`android:headerYearTextAppearance`](../android/widget/DatePicker.md) | The text appearance for the year (ex. 2014) in the selected date header. |
+| [`android:maxDate`](../android/widget/DatePicker.md) | The maximal date shown by this calendar view in mm/dd/yyyy format. |
+| [`android:minDate`](../android/widget/DatePicker.md) | The minimal date shown by this calendar view in mm/dd/yyyy format. |
 | --- | --- |
-| [`android:spinnersShown`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | Whether the spinners are shown. |
-| [`android:startYear`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The first year (inclusive), for example "1940". |
-| [`android:yearListItemTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The list year's text appearance in the list. |
+| [`android:spinnersShown`](../android/widget/DatePicker.md) | Whether the spinners are shown. |
+| [`android:startYear`](../android/widget/DatePicker.md) | The first year (inclusive), for example "1940". |
+| [`android:yearListItemTextAppearance`](../android/widget/DatePicker.md) | The list year's text appearance in the list. |
 | --- | --- |
-| [`android:yearListSelectorColor`](https://developer.android.com/reference/kotlin/android/widget/DatePicker#attr_DatePicker) | The list year's selected circle color in the list. |
+| [`android:yearListSelectorColor`](../android/widget/DatePicker.md) | The list year's selected circle color in the list. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/FrameLayout` `https://developer.android.com/reference/kotlin/android/widget/FrameLayout#attr_FrameLayout` Determines whether to measure all children or just those in the VISIBLE or INVISIBLE state when measuring. Defaults to false.
 
@@ -671,7 +671,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -696,7 +696,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -706,7 +706,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -726,7 +726,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -736,7 +736,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -746,7 +746,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -756,7 +756,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -766,7 +766,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -776,7 +776,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -786,7 +786,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -796,7 +796,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -806,7 +806,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -816,7 +816,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -986,7 +986,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1006,7 +1006,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1048,7 +1048,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1144,7 +1144,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1238,7 +1238,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1695,7 +1695,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1773,8 +1773,8 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getAutofillType()()` Describes the autofill type of this view, so an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` can create the proper `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#` when autofilling the view. |
-| open [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#)? | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getAutofillValue()()` Gets the `https://developer.android.com/reference/kotlin/android/view/View.html#`'s current autofill value. |
-| open [CalendarView](https://developer.android.com/reference/kotlin/android/widget/CalendarView)! | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getCalendarView()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/CalendarView` used by this picker. |
+| open [AutofillValue](../android/view/autofill/AutofillValue.md)? | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getAutofillValue()()` Gets the `https://developer.android.com/reference/kotlin/android/view/View.html#`'s current autofill value. |
+| open [CalendarView](../android/widget/CalendarView.md)! | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getCalendarView()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/CalendarView` used by this picker. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getCalendarViewShown()()` Returns whether the `https://developer.android.com/reference/kotlin/android/widget/CalendarView` is shown. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#getDayOfMonth()()` <br /> |
@@ -1807,7 +1807,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Called when the current configuration of the resources being used by the application have changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | --- | --- |
-| open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/DatePicker#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
 
@@ -7532,7 +7532,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -8534,7 +8534,7 @@ If the value is updated asynchronously, the next call to `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `value` | [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#)!: value to be autofilled. |
+| `value` | [AutofillValue](../android/view/autofill/AutofillValue.md)!: value to be autofilled. |
 
 ### dispatchProvideAutofillStructure
 
@@ -8566,7 +8566,7 @@ This implementation adds in all child views of the view group, in addition to ca
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#): fill in with structured view data for autofill purposes. This value cannot be `null`. |
+| `structure` | [ViewStructure](../android/view/ViewStructure.md): fill in with structured view data for autofill purposes. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or - `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_FLAG_INCLUDE_NOT_IMPORTANT_VIEWS:kotlin.Int` |
 
 ### getAccessibilityClassName
@@ -8793,7 +8793,7 @@ Initialize the state. If the provided values designate an inconsistent date the 
 | `monthOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The initial month **starting from zero**. |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The initial day of the month. |
 | --- | --- |
-| `onDateChangedListener` | [DatePicker.OnDateChangedListener](https://developer.android.com/reference/kotlin/android/widget/DatePicker.OnDateChangedListener)!: How user is notified date is changed by user, can be null. |
+| `onDateChangedListener` | [DatePicker.OnDateChangedListener](../android/widget/DatePicker.OnDateChangedListener.md)!: How user is notified date is changed by user, can be null. |
 
 ### isEnabled
 
@@ -8906,7 +8906,7 @@ Set the callback that indicates the date has been adjusted by the user.
 
 | Parameters ||
 |---|---|
-| `onDateChangedListener` | [DatePicker.OnDateChangedListener](https://developer.android.com/reference/kotlin/android/widget/DatePicker.OnDateChangedListener)!: How user is notified date is changed by user, can be null. |
+| `onDateChangedListener` | [DatePicker.OnDateChangedListener](../android/widget/DatePicker.OnDateChangedListener.md)!: How user is notified date is changed by user, can be null. |
 
 ### setSpinnersShown
 
@@ -8962,7 +8962,7 @@ Called by `https://developer.android.com/reference/kotlin/android/view/View.html
 
 | Parameters ||
 |---|---|
-| `container` | [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!\>!: The SparseArray which holds previously saved state. |
+| `container` | [SparseArray](../android/util/SparseArray.md)\< [Parcelable](../android/os/Parcelable.md)!\>!: The SparseArray which holds previously saved state. |
 
 ### onConfigurationChanged
 
@@ -8976,7 +8976,7 @@ Called when the current configuration of the resources being used by the applica
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)!: The new resource configuration. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md)!: The new resource configuration. |
 
 ### onRestoreInstanceState
 
@@ -8991,7 +8991,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 
 ### onSaveInstanceState
 

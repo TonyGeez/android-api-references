@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # RegionIterator
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/RegionIterator "View this page in Java") 
+Kotlin| [Java](../android/graphics/RegionIterator.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ open class RegionIterator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.RegionIterator](https://developer.android.com/reference/kotlin/android/graphics/RegionIterator#) |
+| ↳ | [android.graphics.RegionIterator](../android/graphics/RegionIterator.md) |
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RegionIterator](https://developer.android.com/reference/kotlin/android/graphics/RegionIterator#RegionIterator(android.graphics.Region))`(`region:` ` [Region](https://developer.android.com/reference/kotlin/android/graphics/Region)!`)` Construct an iterator for all of the rectangles in a region. |
+| [RegionIterator](../android/graphics/RegionIterator.md))`(`region:` ` [Region](../android/graphics/Region.md)!`)` Construct an iterator for all of the rectangles in a region. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](https://developer.android.com/reference/kotlin/android/graphics/RegionIterator#next(android.graphics.Rect))`(`r:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect)!`)` Return the next rectangle in the region. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](../android/graphics/RegionIterator.md))`(`r:` ` [Rect](../android/graphics/Rect.md)!`)` Return the next rectangle in the region. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/graphics/RegionIterator#finalize())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/RegionIterator.md))`()` <br /> |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Construct an iterator for all of the rectangles in a region. This effectively ma
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------|
-| `region` | [Region](https://developer.android.com/reference/kotlin/android/graphics/Region)!:the region that will be iterated |
+| `region` | [Region](../android/graphics/Region.md)!:the region that will be iterated |
 
 ## Public methods
 

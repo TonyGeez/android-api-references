@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # TvTrackInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/tv/TvTrackInfo "View this page in Java")
+Kotlin | [Java](../android/media/tv/TvTrackInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TvTrackInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.tv.TvTrackInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#) |
+| ↳ | [android.media.tv.TvTrackInfo](../android/media/tv/TvTrackInfo.md) |
 
 Encapsulates the format of tracks played in `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService`.
 
@@ -42,7 +42,7 @@ Encapsulates the format of tracks played in `https://developer.android.com/refer
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getDescription()()` Returns a user readable description for the current track. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getEncoding()()` Returns the codec in the form of mime type. |
 | --- | --- |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getExtra()()` Returns the extra information about the current track. |
+| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getExtra()()` Returns the extra information about the current track. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getId()()` Returns the ID of the track. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#getLanguage()()` Returns the language information encoded by either ISO 639-1 or ISO 639-2/T. |
 | --- | --- |
@@ -65,7 +65,7 @@ Encapsulates the format of tracks played in `https://developer.android.com/refer
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [TvTrackInfo](https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TvTrackInfo](../android/media/tv/TvTrackInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -410,7 +410,7 @@ Used to package this object into a `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags used for parceling. |
 
 ## Properties

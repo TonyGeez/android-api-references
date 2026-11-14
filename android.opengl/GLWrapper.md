@@ -4,14 +4,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # GLWrapper
 
-Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.GLWrapper "View this page in Java") 
+Kotlin| [Java](../android/opengl/GLSurfaceView.GLWrapper.md) 
 | --- | --- |
 
 ```
 interface GLWrapper
 ```
 
-| [android.opengl.GLSurfaceView.GLWrapper](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.GLWrapper#) |
+| [android.opengl.GLSurfaceView.GLWrapper](../android/opengl/GLSurfaceView.GLWrapper.md) |
 
 An interface used to wrap a GL interface.
 
@@ -33,7 +33,7 @@ class MyGLWrapper implements GLWrapper {
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [GL](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL.html#)! | [wrap](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.GLWrapper#wrap(javax.microedition.khronos.opengles.GL))`(`gl:` ` [GL](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL.html#)!`)` Wraps a gl interface in another gl interface. |
+| abstract [GL](../javax/microedition/khronos/opengles/GL.md)! | [wrap](../android/opengl/GLSurfaceView.GLWrapper.md))`(`gl:` ` [GL](../javax/microedition/khronos/opengles/GL.md)!`)` Wraps a gl interface in another gl interface. |
 
 ## Public methods
 
@@ -49,8 +49,8 @@ Wraps a gl interface in another gl interface.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `gl` | [GL](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL.html#)!:a GL interface that is to be wrapped. |
+| `gl` | [GL](../javax/microedition/khronos/opengles/GL.md)!:a GL interface that is to be wrapped. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [GL](https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL.html#)! | either the input argument or another GL object that wraps the input argument. |
+| [GL](../javax/microedition/khronos/opengles/GL.md)! | either the input argument or another GL object that wraps the input argument. |

@@ -8,13 +8,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Unpacker
 ```
 
-| [java.util.jar.Pack200.Unpacker](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#) |
+| [java.util.jar.Pack200.Unpacker](../java/util/jar/Pack200.Unpacker.md) |
 
-The unpacker engine converts the packed stream to a JAR file. An instance of the engine can be obtained using [newUnpacker](https://developer.android.com/reference/kotlin/java/util/jar/Pack200#newUnpacker()).
+The unpacker engine converts the packed stream to a JAR file. An instance of the engine can be obtained using [newUnpacker](../java/util/jar/Pack200.md)).
 
 Every JAR file produced by this engine will include the string "PACK200" as a zip file comment. This allows a deployer to detect if a JAR archive was packed and unpacked.
 
-Note: Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) to be thrown.
+Note: Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 This version of the unpacker is compatible with all previous versions.
 
@@ -22,21 +22,21 @@ This version of the unpacker is compatible with all previous versions.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFLATE_HINT](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#DEFLATE_HINT:kotlin.String) Property indicating that the unpacker should ignore all transmitted values for DEFLATE_HINT, replacing them by the given value, [TRUE](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#TRUE:kotlin.String) or [FALSE](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#FALSE:kotlin.String). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FALSE](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#FALSE:kotlin.String) The string "false", a possible value for certain properties. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEEP](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#KEEP:kotlin.String) The string "keep", a possible value for certain properties. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFLATE_HINT](../java/util/jar/Pack200.Unpacker.md) Property indicating that the unpacker should ignore all transmitted values for DEFLATE_HINT, replacing them by the given value, [TRUE](../java/util/jar/Pack200.Unpacker.md) or [FALSE](../java/util/jar/Pack200.Unpacker.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FALSE](../java/util/jar/Pack200.Unpacker.md) The string "false", a possible value for certain properties. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEEP](../java/util/jar/Pack200.Unpacker.md) The string "keep", a possible value for certain properties. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROGRESS](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#PROGRESS:kotlin.String) The unpacker's progress as a percentage, as periodically updated by the unpacker. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TRUE](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#TRUE:kotlin.String) The string "true", a possible value for certain properties. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROGRESS](../java/util/jar/Pack200.Unpacker.md) The unpacker's progress as a percentage, as periodically updated by the unpacker. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TRUE](../java/util/jar/Pack200.Unpacker.md) The string "true", a possible value for certain properties. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#addPropertyChangeListener(java.beans.PropertyChangeListener))`(`listener:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener.html#)!`)` Registers a listener for PropertyChange events on the properties map. |
-| abstract [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [properties](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#properties())`()` Get the set of this engine's properties. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#removePropertyChangeListener(java.beans.PropertyChangeListener))`(`listener:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener.html#)!`)` Remove a listener for PropertyChange events, added by the [addPropertyChangeListener](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#addPropertyChangeListener(java.beans.PropertyChangeListener)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](../java/util/jar/Pack200.Unpacker.md))`(`listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Registers a listener for PropertyChange events on the properties map. |
+| abstract [SortedMap](../java/util/SortedMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [properties](../java/util/jar/Pack200.Unpacker.md))`()` Get the set of this engine's properties. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](../java/util/jar/Pack200.Unpacker.md))`(`listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Remove a listener for PropertyChange events, added by the [addPropertyChangeListener](../java/util/jar/Pack200.Unpacker.md)). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unpack](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#unpack(java.io.File,%20java.util.jar.JarOutputStream))`(`in:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`, `out:` ` [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream)!`)` Read a Pack200 archive, and write the encoded JAR to a JarOutputStream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unpack](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#unpack(java.io.InputStream,%20java.util.jar.JarOutputStream))`(`in:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `out:` ` [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream)!`)` Read a Pack200 archive, and write the encoded JAR to a JarOutputStream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unpack](../java/util/jar/Pack200.Unpacker.md))`(`in:` ` [File](../java/io/File.md)!`, `out:` ` [JarOutputStream](../java/util/jar/JarOutputStream.md)!`)` Read a Pack200 archive, and write the encoded JAR to a JarOutputStream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unpack](../java/util/jar/Pack200.Unpacker.md))`(`in:` ` [InputStream](../java/io/InputStream.md)!`, `out:` ` [JarOutputStream](../java/util/jar/JarOutputStream.md)!`)` Read a Pack200 archive, and write the encoded JAR to a JarOutputStream. |
 
 ## Constants
 
@@ -48,7 +48,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DEFLATE_HINT: String
 ```
 
-Property indicating that the unpacker should ignore all transmitted values for DEFLATE_HINT, replacing them by the given value, [TRUE](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#TRUE:kotlin.String) or [FALSE](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#FALSE:kotlin.String). The default value is the special string [KEEP](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#KEEP:kotlin.String), which asks the unpacker to preserve all transmitted deflation hints. 
+Property indicating that the unpacker should ignore all transmitted values for DEFLATE_HINT, replacing them by the given value, [TRUE](../java/util/jar/Pack200.Unpacker.md) or [FALSE](../java/util/jar/Pack200.Unpacker.md). The default value is the special string [KEEP](../java/util/jar/Pack200.Unpacker.md), which asks the unpacker to preserve all transmitted deflation hints. 
 
  Value: "unpack.deflate.hint"
 
@@ -66,7 +66,7 @@ The string "false", a possible value for certain properties.
 
 **See Also**
 
-- [#DEFLATE_HINT](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#DEFLATE_HINT:kotlin.String) 
+- [#DEFLATE_HINT](../java/util/jar/Pack200.Unpacker.md) 
 
 ### KEEP
 
@@ -82,7 +82,7 @@ The string "keep", a possible value for certain properties.
 
 **See Also**
 
-- [#DEFLATE_HINT](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#DEFLATE_HINT:kotlin.String) 
+- [#DEFLATE_HINT](../java/util/jar/Pack200.Unpacker.md) 
 
 ### PROGRESS
 
@@ -112,7 +112,7 @@ The string "true", a possible value for certain properties.
 
 **See Also**
 
-- [#DEFLATE_HINT](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#DEFLATE_HINT:kotlin.String)
+- [#DEFLATE_HINT](../java/util/jar/Pack200.Unpacker.md)
 
 ## Public methods
 
@@ -125,7 +125,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun addPropertyChangeListener(listener: PropertyChangeListener!): Unit
 ```
 
-**Deprecated:** *The dependency on`PropertyChangeListener`creates a significant impediment to future modularization of the Java platform. This method will be removed in a future release. Applications that need to monitor progress of the unpacker can poll the value of the [PROGRESS](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#PROGRESS:kotlin.String) property instead.*
+**Deprecated:** *The dependency on`PropertyChangeListener`creates a significant impediment to future modularization of the Java platform. This method will be removed in a future release. Applications that need to monitor progress of the unpacker can poll the value of the [PROGRESS](../java/util/jar/Pack200.Unpacker.md) property instead.*
 
 Registers a listener for PropertyChange events on the properties map. This is typically used by applications to update a progress bar.
 
@@ -135,12 +135,12 @@ The default implementation of this method does nothing and has no side-effects.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener.html#)!:An object to be invoked when a property is changed. |
+| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:An object to be invoked when a property is changed. |
 
 **See Also**
 
-- [#properties](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#properties())
-- [#PROGRESS](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#PROGRESS:kotlin.String) 
+- [#properties](../java/util/jar/Pack200.Unpacker.md))
+- [#PROGRESS](../java/util/jar/Pack200.Unpacker.md) 
 
 ### properties
 
@@ -160,7 +160,7 @@ Unknown properties may be ignored or rejected with an unspecified error, and inv
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | A sorted association of option key strings to option values. |
+| [SortedMap](../java/util/SortedMap.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | A sorted association of option key strings to option values. |
 
 ### removePropertyChangeListener
 
@@ -173,7 +173,7 @@ open fun removePropertyChangeListener(listener: PropertyChangeListener!): Unit
 
 **Deprecated:** *The dependency on`PropertyChangeListener`creates a significant impediment to future modularization of the Java platform. This method will be removed in a future release.*
 
-Remove a listener for PropertyChange events, added by the [addPropertyChangeListener](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#addPropertyChangeListener(java.beans.PropertyChangeListener)).
+Remove a listener for PropertyChange events, added by the [addPropertyChangeListener](../java/util/jar/Pack200.Unpacker.md)).
 
 The default implementation of this method does nothing and has no side-effects.
 
@@ -181,11 +181,11 @@ The default implementation of this method does nothing and has no side-effects.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener.html#)!:The PropertyChange listener to be removed. |
+| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:The PropertyChange listener to be removed. |
 
 **See Also**
 
-- [#addPropertyChangeListener](https://developer.android.com/reference/kotlin/java/util/jar/Pack200.Unpacker#addPropertyChangeListener(java.beans.PropertyChangeListener)) 
+- [#addPropertyChangeListener](../java/util/jar/Pack200.Unpacker.md)) 
 
 ### unpack
 
@@ -204,8 +204,8 @@ Does not close its output. (The output can accumulate more elements.)
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------|
-| `in` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:a File. |
-| `out` | [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream)!:a JarOutputStream. |
+| `in` | [File](../java/io/File.md)!:a File. |
+| `out` | [JarOutputStream](../java/util/jar/JarOutputStream.md)!:a JarOutputStream. |
 
 | Exceptions ||
 |-----------------------|-----------------------------|
@@ -228,8 +228,8 @@ Closes its input but not its output. (The output can accumulate more elements.)
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:an InputStream. |
-| `out` | [JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream)!:a JarOutputStream. |
+| `in` | [InputStream](../java/io/InputStream.md)!:an InputStream. |
+| `out` | [JarOutputStream](../java/util/jar/JarOutputStream.md)!:a JarOutputStream. |
 
 | Exceptions ||
 |-----------------------|-----------------------------|

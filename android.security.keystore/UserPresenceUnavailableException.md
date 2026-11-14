@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # UserPresenceUnavailableException
 
-Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/UserPresenceUnavailableException "View this page in Java") 
+Kotlin| [Java](../android/security/keystore/UserPresenceUnavailableException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class UserPresenceUnavailableException : InvalidKeyException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.KeyException](https://developer.android.com/reference/kotlin/java/security/KeyException.html#) |||
-| | | | | ↳ | [java.security.InvalidKeyException](https://developer.android.com/reference/kotlin/java/security/InvalidKeyException.html#) ||
-| | | | | | ↳ | [android.security.keystore.UserPresenceUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/UserPresenceUnavailableException#) |
+| | | | ↳ | [java.security.KeyException](../java/security/KeyException.md) |||
+| | | | | ↳ | [java.security.InvalidKeyException](../java/security/InvalidKeyException.md) ||
+| | | | | | ↳ | [android.security.keystore.UserPresenceUnavailableException](../android/security/keystore/UserPresenceUnavailableException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Indicates the condition that a proof of user-presence was requested but this proof was not presented.
@@ -28,9 +28,9 @@ Indicates the condition that a proof of user-presence was requested but this pro
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UserPresenceUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/UserPresenceUnavailableException#UserPresenceUnavailableException())`()` Constructs a`UserPresenceUnavailableException`without a detail message or cause. |
-| [UserPresenceUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/UserPresenceUnavailableException#UserPresenceUnavailableException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`UserPresenceUnavailableException`using the provided detail message but no cause. |
-| [UserPresenceUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/UserPresenceUnavailableException#UserPresenceUnavailableException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`UserPresenceUnavailableException`using the provided detail message and cause. |
+| [UserPresenceUnavailableException](../android/security/keystore/UserPresenceUnavailableException.md))`()` Constructs a`UserPresenceUnavailableException`without a detail message or cause. |
+| [UserPresenceUnavailableException](../android/security/keystore/UserPresenceUnavailableException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`UserPresenceUnavailableException`using the provided detail message but no cause. |
+| [UserPresenceUnavailableException](../android/security/keystore/UserPresenceUnavailableException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`UserPresenceUnavailableException`using the provided detail message and cause. |
 
 ## Public constructors
 

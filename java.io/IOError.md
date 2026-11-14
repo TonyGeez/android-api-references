@@ -11,8 +11,8 @@ open class IOError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||
-| | | ↳ | [java.io.IOError](https://developer.android.com/reference/kotlin/java/io/IOError#) |
+| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
+| | | ↳ | [java.io.IOError](../java/io/IOError.md) |
 | --- | --- | --- | --- |
 
 Thrown when a serious I/O error has occurred.
@@ -21,7 +21,7 @@ Thrown when a serious I/O error has occurred.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IOError](https://developer.android.com/reference/kotlin/java/io/IOError#IOError(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new instance of IOError with the specified cause. |
+| [IOError](../java/io/IOError.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new instance of IOError with the specified cause. |
 
 ## Public constructors
 

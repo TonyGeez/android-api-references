@@ -11,11 +11,11 @@ open class SSLPeerUnverifiedException : SSLException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.net.ssl.SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException) ||
-| | | | | ↳ | [javax.net.ssl.SSLPeerUnverifiedException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLPeerUnverifiedException#) |
+| | | | ↳ | [javax.net.ssl.SSLException](../javax/net/ssl/SSLException.md) ||
+| | | | | ↳ | [javax.net.ssl.SSLPeerUnverifiedException](../javax/net/ssl/SSLPeerUnverifiedException.md) |
 
 Indicates that the peer's identity has not been verified.
 
@@ -25,7 +25,7 @@ When the peer was not able to identify itself (for example; no certificate, the 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLPeerUnverifiedException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLPeerUnverifiedException#SSLPeerUnverifiedException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting that the SSL peer's identity has not been verified. |
+| [SSLPeerUnverifiedException](../javax/net/ssl/SSLPeerUnverifiedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting that the SSL peer's identity has not been verified. |
 
 ## Public constructors
 

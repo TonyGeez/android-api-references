@@ -8,7 +8,7 @@ class BluetoothHearingAid : BluetoothProfile
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothHearingAid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid#) |
+| ↳ | [android.bluetooth.BluetoothHearingAid](../android/bluetooth/BluetoothHearingAid.md) |
 
 This class provides the public APIs to control the Hearing Aid profile.
 
@@ -136,9 +136,9 @@ The profile is in disconnecting state
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid#getConnectedDevices()()` Get connected devices for this specific profile. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid#getConnectedDevices()()` Get connected devices for this specific profile. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid#getConnectionState(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)` Get the current connection state of the profile For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Get a list of devices that match any of the given connection states. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Get a list of devices that match any of the given connection states. |
 | --- | --- |
 
 ## Constants
@@ -202,7 +202,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice): This value cannot be `null`. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # ColorSpace
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/ColorSpace "View this page in Java")
+Kotlin | [Java](../android/graphics/ColorSpace.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ abstract class ColorSpace
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#) |
+| ↳ | [android.graphics.ColorSpace](../android/graphics/ColorSpace.md) |
 
-| Known Direct Subclasses [ColorSpace.Rgb](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb) |---|---| | [ColorSpace.Rgb](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb) | An RGB color space is an additive color space using the `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model` color model (a color is therefore represented by a tuple of 3 numbers). | |
+| Known Direct Subclasses [ColorSpace.Rgb](../android/graphics/ColorSpace.Rgb.md) |---|---| | [ColorSpace.Rgb](../android/graphics/ColorSpace.Rgb.md) | An RGB color space is an additive color space using the `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model` color model (a color is therefore represented by a tuple of 3 numbers). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` is used to identify a specific organization of colors. Each color space is characterized by a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model` that defines how a color value is represented (for instance the `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model` color model defines a color value as a triplet of numbers).
@@ -99,37 +99,37 @@ Public static methods provided by this class, such as `https://developer.android
 
 | Public methods ||
 |---|---|
-| open static [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#adapt(android.graphics.ColorSpace,%20kotlin.FloatArray)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, whitePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` Performs the chromatic adaptation of a color space from its native white point to the specified white point. |
-| open static [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#adapt(android.graphics.ColorSpace,%20kotlin.FloatArray,%20android.graphics.ColorSpace.Adaptation)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, whitePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, adaptation: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Adaptation)` Performs the chromatic adaptation of a color space from its native white point to the specified white point. |
+| open static [ColorSpace](../android/graphics/ColorSpace.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#adapt(android.graphics.ColorSpace,%20kotlin.FloatArray)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, whitePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` Performs the chromatic adaptation of a color space from its native white point to the specified white point. |
+| open static [ColorSpace](../android/graphics/ColorSpace.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#adapt(android.graphics.ColorSpace,%20kotlin.FloatArray,%20android.graphics.ColorSpace.Adaptation)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, whitePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, adaptation: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Adaptation)` Performs the chromatic adaptation of a color space from its native white point to the specified white point. |
 | open static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#cctToXyz(kotlin.Int)(cct: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Computes the chromaticity coordinates of a specified correlated color temperature (CCT) on the Planckian locus. |
 | --- | --- |
 | open static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#chromaticAdaptation(android.graphics.ColorSpace.Adaptation,%20kotlin.FloatArray,%20kotlin.FloatArray)(adaptation: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Adaptation, srcWhitePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, dstWhitePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` Computes the chromatic adaptation transform from the specified source white point to the specified destination white point. |
-| open static [ColorSpace.Connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#)` Connects the specified color spaces to sRGB. |
-| open static [ColorSpace.Connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace,%20android.graphics.ColorSpace)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, destination: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#)` Connects two color spaces to allow conversion from the source color space to the destination color space. |
+| open static [ColorSpace.Connector](../android/graphics/ColorSpace.Connector.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#)` Connects the specified color spaces to sRGB. |
+| open static [ColorSpace.Connector](../android/graphics/ColorSpace.Connector.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace,%20android.graphics.ColorSpace)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, destination: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#)` Connects two color spaces to allow conversion from the source color space to the destination color space. |
 | --- | --- |
-| open static [ColorSpace.Connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace,%20android.graphics.ColorSpace,%20android.graphics.ColorSpace.RenderIntent)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, destination: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, intent: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.RenderIntent)` Connects two color spaces to allow conversion from the source color space to the destination color space. |
-| open static [ColorSpace.Connector](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Connector) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace,%20android.graphics.ColorSpace.RenderIntent)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, intent: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.RenderIntent)` Connects the specified color spaces to sRGB. |
+| open static [ColorSpace.Connector](../android/graphics/ColorSpace.Connector.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace,%20android.graphics.ColorSpace,%20android.graphics.ColorSpace.RenderIntent)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, destination: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, intent: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.RenderIntent)` Connects two color spaces to allow conversion from the source color space to the destination color space. |
+| open static [ColorSpace.Connector](../android/graphics/ColorSpace.Connector.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#connect(android.graphics.ColorSpace,%20android.graphics.ColorSpace.RenderIntent)(source: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#, intent: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.RenderIntent)` Connects the specified color spaces to sRGB. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#fromXyz(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, z: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts tristimulus values from the CIE XYZ space to this color space's color model. |
 | abstract [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#fromXyz(kotlin.FloatArray)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` Converts tristimulus values from the CIE XYZ space to this color space's color model. |
-| open static [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#get(android.graphics.ColorSpace.Named)(name: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named)` Returns an instance of `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` identified by the specified name. |
+| open static [ColorSpace](../android/graphics/ColorSpace.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#get(android.graphics.ColorSpace.Named)(name: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named)` Returns an instance of `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` identified by the specified name. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getComponentCount()()` Returns the number of components that form a color value according to this color space's color model. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getDataSpace()()` Retrieve the `https://developer.android.com/reference/kotlin/android/hardware/DataSpace.html#` value from a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` object. |
-| open static [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#)? | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getFromDataSpace(kotlin.Int)(dataSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` object using a `https://developer.android.com/reference/kotlin/android/hardware/DataSpace.html#` value. |
+| open static [ColorSpace](../android/graphics/ColorSpace.md)? | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getFromDataSpace(kotlin.Int)(dataSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` object using a `https://developer.android.com/reference/kotlin/android/hardware/DataSpace.html#` value. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getId()()` Returns the ID of this color space. |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMaxValue(kotlin.Int)(component: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum valid value for the specified component of this color space's color model. |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getMinValue(kotlin.Int)(component: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum valid value for the specified component of this color space's color model. |
 | --- | --- |
-| open [ColorSpace.Model](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getModel()()` Return the color model of this color space. |
+| open [ColorSpace.Model](../android/graphics/ColorSpace.Model.md) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getModel()()` Return the color model of this color space. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#getName()()` Returns the name of this color space. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#isSrgb()()` Indicates whether this color space is the sRGB color space or equivalent to the sRGB color space. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#isWideGamut()()` Returns whether this color space is a wide-gamut color space. |
-| open static [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#)? | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#match(kotlin.FloatArray,%20android.graphics.ColorSpace.Rgb.TransferParameters)(toXYZD50: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, function: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb.TransferParameters)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named` instance of `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` that matches the specified RGB to CIE XYZ transform and transfer functions. |
+| open static [ColorSpace](../android/graphics/ColorSpace.md)? | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#match(kotlin.FloatArray,%20android.graphics.ColorSpace.Rgb.TransferParameters)(toXYZD50: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html, function: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb.TransferParameters)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named` instance of `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#` that matches the specified RGB to CIE XYZ transform and transfer functions. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#toString()()` Returns a string representation of the object. |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#toXyz(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, g: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts a color value from this color space's model to tristimulus CIE XYZ values. |
@@ -206,7 +206,7 @@ The color space returned by this method always has an ID of `https://developer.a
 
 | Parameters ||
 |---|---|
-| `colorSpace` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to chromatically adapt. This value cannot be `null`. |
+| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to chromatically adapt. This value cannot be `null`. |
 | `whitePoint` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): The new white point. This value cannot be `null`. |
 
 | Return ||
@@ -238,9 +238,9 @@ The color space returned by this method always has an ID of `https://developer.a
 
 | Parameters ||
 |---|---|
-| `colorSpace` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to chromatically adapt. This value cannot be `null`. |
+| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to chromatically adapt. This value cannot be `null`. |
 | `whitePoint` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): The new white point. This value cannot be `null`. |
-| `adaptation` | [ColorSpace.Adaptation](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Adaptation): The adaptation matrix. This value cannot be `null`. |
+| `adaptation` | [ColorSpace.Adaptation](../android/graphics/ColorSpace.Adaptation.md): The adaptation matrix. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -294,7 +294,7 @@ The transform is computed using the von Kries method, described in more details 
 
 | Parameters ||
 |---|---|
-| `adaptation` | [ColorSpace.Adaptation](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Adaptation): The adaptation method. This value cannot be `null`. |
+| `adaptation` | [ColorSpace.Adaptation](../android/graphics/ColorSpace.Adaptation.md): The adaptation method. This value cannot be `null`. |
 | `srcWhitePoint` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): The white point to adapt from. This value cannot be `null`. |
 | `dstWhitePoint` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): The white point to adapt to. This value cannot be `null`. |
 | --- | --- |
@@ -319,7 +319,7 @@ Colors are mapped from the source color space to the destination color space usi
 
 | Parameters ||
 |---|---|
-| `source` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to convert colors from. This value cannot be `null`. |
+| `source` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to convert colors from. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -350,8 +350,8 @@ Colors are mapped from the source color space to the destination color space usi
 
 | Parameters ||
 |---|---|
-| `source` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to convert colors from. This value cannot be `null`. |
-| `destination` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to convert colors to. This value cannot be `null`. |
+| `source` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to convert colors from. This value cannot be `null`. |
+| `destination` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to convert colors to. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -381,9 +381,9 @@ If the source and destination are the same, an optimized connector is returned t
 
 | Parameters ||
 |---|---|
-| `source` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to convert colors from. This value cannot be `null`. |
-| `destination` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to convert colors to. This value cannot be `null`. |
-| `intent` | [ColorSpace.RenderIntent](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.RenderIntent): The render intent to map colors from the source to the destination. This value cannot be `null`. |
+| `source` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to convert colors from. This value cannot be `null`. |
+| `destination` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to convert colors to. This value cannot be `null`. |
+| `intent` | [ColorSpace.RenderIntent](../android/graphics/ColorSpace.RenderIntent.md): The render intent to map colors from the source to the destination. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -413,8 +413,8 @@ If the source is the sRGB color space, an optimized connector is returned to avo
 
 | Parameters ||
 |---|---|
-| `source` | [ColorSpace](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace#): The color space to convert colors from. This value cannot be `null`. |
-| `intent` | [ColorSpace.RenderIntent](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.RenderIntent): The render intent to map colors from the source to the destination. This value cannot be `null`. |
+| `source` | [ColorSpace](../android/graphics/ColorSpace.md): The color space to convert colors from. This value cannot be `null`. |
+| `intent` | [ColorSpace.RenderIntent](../android/graphics/ColorSpace.RenderIntent.md): The render intent to map colors from the source to the destination. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -526,7 +526,7 @@ Note that in the Android W release and later, this can return the SRGB ColorSpac
 
 | Parameters ||
 |---|---|
-| `name` | [ColorSpace.Named](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named): The name of the color space to get an instance of. This value cannot be `null`. |
+| `name` | [ColorSpace.Named](../android/graphics/ColorSpace.Named.md): The name of the color space to get an instance of. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -768,7 +768,7 @@ The color transform matrix is assumed to target the CIE XYZ space a `https://dev
 | Parameters ||
 |---|---|
 | `toXYZD50` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): 3x3 column-major transform matrix from RGB to the profile connection space CIE XYZ as an array of 9 floats, cannot be null |
-| `function` | [ColorSpace.Rgb.TransferParameters](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb.TransferParameters): Parameters for the transfer functions. This value cannot be `null`. |
+| `function` | [ColorSpace.Rgb.TransferParameters](../android/graphics/ColorSpace.Rgb.TransferParameters.md): Parameters for the transfer functions. This value cannot be `null`. |
 
 | Return ||
 |---|---|

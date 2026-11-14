@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # SyncStateContract
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/SyncStateContract "View this page in Java") 
+Kotlin| [Java](../android/provider/SyncStateContract.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class SyncStateContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.SyncStateContract](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract#) |
+| ↳ | [android.provider.SyncStateContract](../android/provider/SyncStateContract.md) |
 
 The ContentProvider contract for associating data with ana data array account. This may be used by providers that want to store this data in a standard way.
 
@@ -21,14 +21,14 @@ The ContentProvider contract for associating data with ana data array account. T
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------|
-| abstract | [Columns](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Columns) <br /> |
-| open | [Constants](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Constants) <br /> |
-| | [Helpers](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract.Helpers) <br /> |
+| abstract | [Columns](../android/provider/SyncStateContract.Columns.md) <br /> |
+| open | [Constants](../android/provider/SyncStateContract.Constants.md) <br /> |
+| | [Helpers](../android/provider/SyncStateContract.Helpers.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SyncStateContract](https://developer.android.com/reference/kotlin/android/provider/SyncStateContract#SyncStateContract())`()` <br /> |
+| [SyncStateContract](../android/provider/SyncStateContract.md))`()` <br /> |
 
 ## Public constructors
 

@@ -10,7 +10,7 @@ class SandboxedSdk : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.sdksandbox.SandboxedSdk](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#) |
+| ↳ | [android.app.sdksandbox.SandboxedSdk](../android/app/sdksandbox/SandboxedSdk.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -36,14 +36,14 @@ The SDK should create it when `https://developer.android.com/reference/kotlin/an
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getInterface()()` Returns the interface to the SDK that was loaded in response to `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. |
-| [SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getSharedLibraryInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#` for the SDK. |
+| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getInterface()()` Returns the interface to the SDK that was loaded in response to `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. |
+| [SharedLibraryInfo](../android/content/pm/SharedLibraryInfo.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getSharedLibraryInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#` for the SDK. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SandboxedSdk](https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SandboxedSdk](../android/app/sdksandbox/SandboxedSdk.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -60,7 +60,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/app/sdksandbox
 
 | Parameters ||
 |---|---|
-| `sdkInterface` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#): The SDK's interface. This will be the entrypoint into the sandboxed SDK for the application. The SDK should keep this valid until it's loaded in the sandbox, and start failing calls to this interface once it has been unloaded. This interface can later be retrieved using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getInterface()`. This value cannot be `null`. |
+| `sdkInterface` | [IBinder](../android/os/IBinder.md): The SDK's interface. This will be the entrypoint into the sandboxed SDK for the application. The SDK should keep this valid until it's loaded in the sandbox, and start failing calls to this interface once it has been unloaded. This interface can later be retrieved using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getInterface()`. This value cannot be `null`. |
 
 ## Public methods
 
@@ -135,7 +135,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -10,9 +10,9 @@ abstract class EventListenerProxy<T : EventListener!> : EventListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.EventListenerProxy](https://developer.android.com/reference/kotlin/java/util/EventListenerProxy#) |
+| ↳ | [java.util.EventListenerProxy](../java/util/EventListenerProxy.md) |
 
-| Known Direct Subclasses [PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy.html#) |----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------| | [PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy.html#) | A class which extends the`EventListenerProxy`specifically for adding a`PropertyChangeListener`with a "bound" property. | |
+| Known Direct Subclasses [PropertyChangeListenerProxy](../java/beans/PropertyChangeListenerProxy.md) |----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------| | [PropertyChangeListenerProxy](../java/beans/PropertyChangeListenerProxy.md) | A class which extends the`EventListenerProxy`specifically for adding a`PropertyChangeListener`with a "bound" property. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An abstract wrapper class for an`EventListener`class which associates a set of additional parameters with the listener. Subclasses must provide the storage and accessor methods for the additional arguments or parameters.
@@ -38,11 +38,11 @@ If the calling method is interested in retrieving the named property then it wou
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EventListenerProxy](https://developer.android.com/reference/kotlin/java/util/EventListenerProxy#EventListenerProxy(java.util.EventListenerProxy.T))`(`listener:` `T`)` Creates a proxy for the specified listener. |
+| [EventListenerProxy](../java/util/EventListenerProxy.md))`(`listener:` `T`)` Creates a proxy for the specified listener. |
 
 | Public methods ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openT | [getListener](https://developer.android.com/reference/kotlin/java/util/EventListenerProxy#getListener())`()` Returns the listener associated with the proxy. |
+| openT | [getListener](../java/util/EventListenerProxy.md))`()` Returns the listener associated with the proxy. |
 
 ## Public constructors
 

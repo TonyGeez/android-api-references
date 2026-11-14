@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # OnMenuVisibilityListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/ActionBar.OnMenuVisibilityListener "View this page in Java") 
+Kotlin| [Java](../android/app/ActionBar.OnMenuVisibilityListener.md) 
 | --- | --- |
 
 ```
 interface OnMenuVisibilityListener
 ```
 
-| [android.app.ActionBar.OnMenuVisibilityListener](https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener#) |
+| [android.app.ActionBar.OnMenuVisibilityListener](../android/app/ActionBar.OnMenuVisibilityListener.md) |
 
 Listener for receiving events when action bar menus are shown or hidden.
 
@@ -19,7 +19,7 @@ Listener for receiving events when action bar menus are shown or hidden.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMenuVisibilityChanged](https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener#onMenuVisibilityChanged(kotlin.Boolean))`(`isVisible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when an action bar menu is shown or hidden. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMenuVisibilityChanged](../android/app/ActionBar.OnMenuVisibilityListener.md))`(`isVisible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when an action bar menu is shown or hidden. |
 
 ## Public methods
 

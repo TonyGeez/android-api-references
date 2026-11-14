@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ExerciseLap
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap "View this page in Java") 
+Kotlin| [Java](../android/health/connect/datatypes/ExerciseLap.md) 
 | --- | --- |
 
 ```
@@ -13,26 +13,26 @@ class ExerciseLap
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.ExerciseLap](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#) |
+| ↳ | [android.health.connect.datatypes.ExerciseLap](../android/health/connect/datatypes/ExerciseLap.md) |
 
-Captures the time of a lap within exercise session. Part of [ExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord).
+Captures the time of a lap within exercise session. Part of [ExerciseSessionRecord](../android/health/connect/datatypes/ExerciseSessionRecord.md).
 
-Each record contains the start and end time and optional [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length) of the lap (e.g. pool length while swimming or a track lap while running). There may or may not be direct correlation with [ExerciseSegment](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment) start and end times, e.g. [ExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord) of type running without any segments can be divided as laps of different lengths.
+Each record contains the start and end time and optional [Length](../android/health/connect/datatypes/units/Length.md) of the lap (e.g. pool length while swimming or a track lap while running). There may or may not be direct correlation with [ExerciseSegment](../android/health/connect/datatypes/ExerciseSegment.md) start and end times, e.g. [ExerciseSessionRecord](../android/health/connect/datatypes/ExerciseSessionRecord.md) of type running without any segments can be divided as laps of different lengths.
 
 ## Summary
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap.Builder) Builder class for [ExerciseLap](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#) |
+| | [Builder](../android/health/connect/datatypes/ExerciseLap.Builder.md) Builder class for [ExerciseLap](../android/health/connect/datatypes/ExerciseLap.md) |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getEndTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#getEndTime())`()` <br /> |
-| [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length)? | [getLength](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#getLength())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/ExerciseLap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Instant](../java/time/Instant.md) | [getEndTime](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
+| [Length](../android/health/connect/datatypes/units/Length.md)? | [getLength](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
 | --- | --- |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | [getStartTime](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#getStartTime())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap#hashCode())`()` <br /> |
+| [Instant](../java/time/Instant.md) | [getStartTime](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
 
 ## Public methods
 
@@ -75,7 +75,7 @@ fun getEndTime(): Instant
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | This value cannot be`null`. |
+| [Instant](../java/time/Instant.md) | This value cannot be`null`. |
 
 ### getLength
 
@@ -87,7 +87,7 @@ fun getLength(): Length?
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------|
-| [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length)? | This value may be`null`. |
+| [Length](../android/health/connect/datatypes/units/Length.md)? | This value may be`null`. |
 
 ### getStartTime
 
@@ -99,7 +99,7 @@ fun getStartTime(): Instant
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | This value cannot be`null`. |
+| [Instant](../java/time/Instant.md) | This value cannot be`null`. |
 
 ### hashCode
 

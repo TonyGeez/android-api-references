@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # RenderOutput
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/RenderOutput "View this page in Java") 
+Kotlin| [Java](../android/adservices/ondevicepersonalization/RenderOutput.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ class RenderOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.RenderOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#) |
+| ↳ | [android.adservices.ondevicepersonalization.RenderOutput](../android/adservices/ondevicepersonalization/RenderOutput.md) |
 
-The result returned by [IsolatedWorker.onRender(RenderInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onRender(android.adservices.ondevicepersonalization.RenderInput,%20android.os.OutcomeReceiver)).
+The result returned by [IsolatedWorker.onRender(RenderInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput.Builder) A builder for [RenderOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#) |
+| | [Builder](../android/adservices/ondevicepersonalization/RenderOutput.Builder.md) A builder for [RenderOutput](../android/adservices/ondevicepersonalization/RenderOutput.md) |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContent](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getContent())`()` The HTML content to be rendered in a webview. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTemplateId](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getTemplateId())`()` A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getRemoteData(android.adservices.ondevicepersonalization.RequestToken))table that points to an [Apache Velocity](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/velocity.apache.org) template. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/RenderOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContent](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` The HTML content to be rendered in a webview. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTemplateId](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](../android/adservices/ondevicepersonalization/IsolatedService.md))table that points to an [Apache Velocity](../android/adservices/ondevicepersonalization/velocity.apache.org.md) template. |
 | --- | --- |
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getTemplateParams](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getTemplateParams())`()` The parameters to be populated in the template from [getTemplateId()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getTemplateId()). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#hashCode())`()` <br /> |
+| [PersistableBundle](../android/os/PersistableBundle.md) | [getTemplateParams](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` The parameters to be populated in the template from [getTemplateId()](../android/adservices/ondevicepersonalization/RenderOutput.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` <br /> |
 
 ## Public methods
 
@@ -71,7 +71,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getContent(): String?
 ```
 
-The HTML content to be rendered in a webview. If this is null, the ODP service generates HTML from the data in [getTemplateId()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getTemplateId())and [getTemplateParams()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getTemplateParams())as described below. 
+The HTML content to be rendered in a webview. If this is null, the ODP service generates HTML from the data in [getTemplateId()](../android/adservices/ondevicepersonalization/RenderOutput.md))and [getTemplateParams()](../android/adservices/ondevicepersonalization/RenderOutput.md))as described below. 
 
 ### getTemplateId
 
@@ -81,7 +81,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getTemplateId(): String?
 ```
 
-A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getRemoteData(android.adservices.ondevicepersonalization.RequestToken))table that points to an [Apache Velocity](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/velocity.apache.org) template. This is ignored if [getContent()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getContent())is not null. 
+A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](../android/adservices/ondevicepersonalization/IsolatedService.md))table that points to an [Apache Velocity](../android/adservices/ondevicepersonalization/velocity.apache.org.md) template. This is ignored if [getContent()](../android/adservices/ondevicepersonalization/RenderOutput.md))is not null. 
 
 ### getTemplateParams
 
@@ -91,7 +91,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getTemplateParams(): PersistableBundle
 ```
 
-The parameters to be populated in the template from [getTemplateId()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getTemplateId()). This is ignored if [getContent()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderOutput#getContent())is not null. 
+The parameters to be populated in the template from [getTemplateId()](../android/adservices/ondevicepersonalization/RenderOutput.md)). This is ignored if [getContent()](../android/adservices/ondevicepersonalization/RenderOutput.md))is not null. 
 
 ### hashCode
 

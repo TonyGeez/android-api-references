@@ -10,9 +10,9 @@ open class PSource
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.PSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource#) |
+| ↳ | [javax.crypto.spec.PSource](../javax/crypto/spec/PSource.md) |
 
-| Known Direct Subclasses [PSource.PSpecified](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource.PSpecified) |-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------| | [PSource.PSpecified](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource.PSpecified) | This class is used to explicitly specify the value for encoding input P in OAEP Padding. | |
+| Known Direct Subclasses [PSource.PSpecified](../javax/crypto/spec/PSource.PSpecified.md) |-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------| | [PSource.PSpecified](../javax/crypto/spec/PSource.PSpecified.md) | This class is used to explicitly specify the value for encoding input P in OAEP Padding. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class specifies the source for encoding input P in OAEP Padding, as defined in the [PKCS #1](http://www.ietf.org/rfc/rfc3447.txt) standard. 
@@ -31,15 +31,15 @@ PKCS1PSourceAlgorithms    ALGORITHM-IDENTIFIER ::= {
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [PSpecified](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource.PSpecified) This class is used to explicitly specify the value for encoding input P in OAEP Padding. |
+| | [PSpecified](../javax/crypto/spec/PSource.PSpecified.md) This class is used to explicitly specify the value for encoding input P in OAEP Padding. |
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource#PSource(kotlin.String))`(`pSrcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a source of the encoding input P for OAEP padding as defined in the PKCS #1 standard using the specified PSource algorithm. |
+| [PSource](../javax/crypto/spec/PSource.md))`(`pSrcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a source of the encoding input P for OAEP padding as defined in the PKCS #1 standard using the specified PSource algorithm. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource#getAlgorithm())`()` Returns the PSource algorithm name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../javax/crypto/spec/PSource.md))`()` Returns the PSource algorithm name. |
 
 ## Protected constructors
 

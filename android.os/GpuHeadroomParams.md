@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # GpuHeadroomParams
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/GpuHeadroomParams "View this page in Java") 
+Kotlin| [Java](../android/os/GpuHeadroomParams.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ class GpuHeadroomParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.GpuHeadroomParams](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#) |
+| ↳ | [android.os.GpuHeadroomParams](../android/os/GpuHeadroomParams.md) |
 
-Headroom request params used by [SystemHealthManager.getGpuHeadroom(GpuHeadroomParams)](https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)).
+Headroom request params used by [SystemHealthManager.getGpuHeadroom(GpuHeadroomParams)](../android/os/health/SystemHealthManager.md)).
 
-This class is immutable and one should use the [Builder](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams.Builder) to build a new instance.
+This class is immutable and one should use the [Builder](../android/os/GpuHeadroomParams.Builder.md) to build a new instance.
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams.Builder) <br /> |
+| | [Builder](../android/os/GpuHeadroomParams.Builder.md) <br /> |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_TYPE_AVERAGE](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_AVERAGE:kotlin.Int) The headroom calculation type bases on average value over a specified window. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_TYPE_MIN](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_MIN:kotlin.Int) The headroom calculation type bases on minimum value over a specified window. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_WINDOW_MILLIS_MAX](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#GPU_HEADROOM_CALCULATION_WINDOW_MILLIS_MAX:kotlin.Int) The maximum size of the window to compute the headroom over. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_TYPE_AVERAGE](../android/os/GpuHeadroomParams.md) The headroom calculation type bases on average value over a specified window. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_TYPE_MIN](../android/os/GpuHeadroomParams.md) The headroom calculation type bases on minimum value over a specified window. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_WINDOW_MILLIS_MAX](../android/os/GpuHeadroomParams.md) The maximum size of the window to compute the headroom over. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_WINDOW_MILLIS_MIN](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#GPU_HEADROOM_CALCULATION_WINDOW_MILLIS_MIN:kotlin.Int) The minimum size of the window to compute the headroom over. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_HEADROOM_CALCULATION_WINDOW_MILLIS_MIN](../android/os/GpuHeadroomParams.md) The minimum size of the window to compute the headroom over. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCalculationType](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#getCalculationType())`()` Gets the headroom calculation type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCalculationWindowMillis](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#getCalculationWindowMillis())`()` Gets the headroom calculation window size in milliseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/os/GpuHeadroomParams.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCalculationType](../android/os/GpuHeadroomParams.md))`()` Gets the headroom calculation type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCalculationWindowMillis](../android/os/GpuHeadroomParams.md))`()` Gets the headroom calculation window size in milliseconds. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#toString())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/GpuHeadroomParams.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/os/GpuHeadroomParams.md))`()` <br /> |
 
 ## Constants
 
@@ -124,7 +124,7 @@ This will return the default value chosen by the device if not set.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.os.GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_MIN](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_MIN:kotlin.Int), or [android.os.GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_AVERAGE](https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_AVERAGE:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.os.GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_MIN](../android/os/GpuHeadroomParams.md), or [android.os.GpuHeadroomParams#GPU_HEADROOM_CALCULATION_TYPE_AVERAGE](../android/os/GpuHeadroomParams.md) |
 
 ### getCalculationWindowMillis
 

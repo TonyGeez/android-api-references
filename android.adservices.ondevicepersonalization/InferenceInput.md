@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # InferenceInput
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceInput "View this page in Java") 
+Kotlin| [Java](../android/adservices/ondevicepersonalization/InferenceInput.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ class InferenceInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.InferenceInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#) |
+| ↳ | [android.adservices.ondevicepersonalization.InferenceInput](../android/adservices/ondevicepersonalization/InferenceInput.md) |
 
-Contains all the information needed for a run of model inference. The input of [android.adservices.ondevicepersonalization.ModelManager#run](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ModelManager#run(android.adservices.ondevicepersonalization.InferenceInput,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)).
+Contains all the information needed for a run of model inference. The input of [android.adservices.ondevicepersonalization.ModelManager#run](../android/adservices/ondevicepersonalization/ModelManager.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput.Builder) A builder for [InferenceInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#) |
-| | [Params](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput.Params) <br /> |
+| | [Builder](../android/adservices/ondevicepersonalization/InferenceInput.Builder.md) A builder for [InferenceInput](../android/adservices/ondevicepersonalization/InferenceInput.md) |
+| | [Params](../android/adservices/ondevicepersonalization/InferenceInput.Params.md) <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBatchSize](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#getBatchSize())`()` The number of input examples. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#getData())`()` A byte array that holds input data. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/InferenceInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBatchSize](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` The number of input examples. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` A byte array that holds input data. |
 | --- | --- |
-| [InferenceOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput) | [getExpectedOutputStructure](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#getExpectedOutputStructure())`()` The empty InferenceOutput representing the expected output structure. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [getInputData](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#getInputData())`()` Note: use [InferenceInput.getData()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#getData())instead. |
-| [InferenceInput.Params](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput.Params) | [getParams](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#getParams())`()` The configuration that controls runtime interpreter behavior. |
+| [InferenceOutput](../android/adservices/ondevicepersonalization/InferenceOutput.md) | [getExpectedOutputStructure](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` The empty InferenceOutput representing the expected output structure. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [getInputData](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` Note: use [InferenceInput.getData()](../android/adservices/ondevicepersonalization/InferenceInput.md))instead. |
+| [InferenceInput.Params](../android/adservices/ondevicepersonalization/InferenceInput.Params.md) | [getParams](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` The configuration that controls runtime interpreter behavior. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#hashCode())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` <br /> |
 
 ## Public methods
 
@@ -125,7 +125,7 @@ If a model produce string tensors:
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [InferenceOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceOutput) | This value cannot be`null`. |
+| [InferenceOutput](../android/adservices/ondevicepersonalization/InferenceOutput.md) | This value cannot be`null`. |
 
 ### getInputData
 
@@ -135,7 +135,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getInputData(): Array<Any!>
 ```
 
-Note: use [InferenceInput.getData()](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput#getData())instead.
+Note: use [InferenceInput.getData()](../android/adservices/ondevicepersonalization/InferenceInput.md))instead.
 
 An array of input data. The inputs should be in the same order as inputs of the model.
 
@@ -165,7 +165,7 @@ The configuration that controls runtime interpreter behavior.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [InferenceInput.Params](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/InferenceInput.Params) | This value cannot be`null`. |
+| [InferenceInput.Params](../android/adservices/ondevicepersonalization/InferenceInput.Params.md) | This value cannot be`null`. |
 
 ### hashCode
 

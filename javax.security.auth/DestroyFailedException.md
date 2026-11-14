@@ -11,8 +11,8 @@ open class DestroyFailedException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [javax.security.auth.DestroyFailedException](https://developer.android.com/reference/kotlin/javax/security/auth/DestroyFailedException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [javax.security.auth.DestroyFailedException](../javax/security/auth/DestroyFailedException.md) |
 | --- | --- | --- | --- |
 
 Signals that a `destroy` operation failed.
@@ -23,8 +23,8 @@ This exception is thrown by credentials implementing the `Destroyable` interface
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DestroyFailedException](https://developer.android.com/reference/kotlin/javax/security/auth/DestroyFailedException#DestroyFailedException())`()` Constructs a DestroyFailedException with no detail message. |
-| [DestroyFailedException](https://developer.android.com/reference/kotlin/javax/security/auth/DestroyFailedException#DestroyFailedException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a DestroyFailedException with the specified detail message. |
+| [DestroyFailedException](../javax/security/auth/DestroyFailedException.md))`()` Constructs a DestroyFailedException with no detail message. |
+| [DestroyFailedException](../javax/security/auth/DestroyFailedException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a DestroyFailedException with the specified detail message. |
 
 ## Public constructors
 

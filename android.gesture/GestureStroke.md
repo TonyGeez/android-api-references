@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # GestureStroke
 
-Kotlin| [Java](https://developer.android.com/reference/android/gesture/GestureStroke "View this page in Java") 
+Kotlin| [Java](../android/gesture/GestureStroke.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class GestureStroke
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.GestureStroke](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#) |
+| ↳ | [android.gesture.GestureStroke](../android/gesture/GestureStroke.md) |
 
 A gesture stroke started on a touch down and ended on a touch up. A stroke consists of a sequence of timed points. One or multiple strokes form a gesture.
 
@@ -21,22 +21,22 @@ A gesture stroke started on a touch down and ended on a touch up. A stroke consi
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GestureStroke](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#GestureStroke(java.util.ArrayList))`(`points:` ` [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)< [GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint)!>!`)` A constructor that constructs a gesture stroke from a list of gesture points. |
+| [GestureStroke](../android/gesture/GestureStroke.md))`(`points:` ` [ArrayList](../java/util/ArrayList.md)< [GesturePoint](../android/gesture/GesturePoint.md)!>!`)` A constructor that constructs a gesture stroke from a list of gesture points. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPath](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#clearPath())`()` Invalidates the cached path that is used to render the stroke. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#clone())`()` <br /> |
-| open [OrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox)! | [computeOrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#computeOrientedBoundingBox())`()` Computes an oriented bounding box of the stroke. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPath](../android/gesture/GestureStroke.md))`()` Invalidates the cached path that is used to render the stroke. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../android/gesture/GestureStroke.md))`()` <br /> |
+| open [OrientedBoundingBox](../android/gesture/OrientedBoundingBox.md)! | [computeOrientedBoundingBox](../android/gesture/GestureStroke.md))`()` Computes an oriented bounding box of the stroke. |
 | --- | --- |
-| open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [getPath](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#getPath())`()` <br /> |
-| open [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | [toPath](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#toPath(kotlin.Float,%20kotlin.Float,%20kotlin.Int))`(`width:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `height:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `numSample:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the stroke to a Path of a given number of points. |
+| open [Path](../android/graphics/Path.md)! | [getPath](../android/gesture/GestureStroke.md))`()` <br /> |
+| open [Path](../android/graphics/Path.md)! | [toPath](../android/gesture/GestureStroke.md))`(`width:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `height:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `numSample:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the stroke to a Path of a given number of points. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)! | [boundingBox](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#boundingBox:android.graphics.RectF) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [length](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#length:kotlin.Float) <br /> |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [points](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke#points:kotlin.FloatArray) <br /> |
+| [RectF](../android/graphics/RectF.md)! | [boundingBox](../android/gesture/GestureStroke.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [length](../android/gesture/GestureStroke.md) <br /> |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [points](../android/gesture/GestureStroke.md) <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -53,7 +53,7 @@ A constructor that constructs a gesture stroke from a list of gesture points.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `points` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint)!\>!: |
+| `points` | [ArrayList](../java/util/ArrayList.md)\< [GesturePoint](../android/gesture/GesturePoint.md)!\>!: |
 
 ## Public methods
 
@@ -95,7 +95,7 @@ Computes an oriented bounding box of the stroke.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------|
-| [OrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox)! | OrientedBoundingBox |
+| [OrientedBoundingBox](../android/gesture/OrientedBoundingBox.md)! | OrientedBoundingBox |
 
 ### getPath
 
@@ -128,7 +128,7 @@ Converts the stroke to a Path of a given number of points.
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------|
-| [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)! | the path |
+| [Path](../android/graphics/Path.md)! | the path |
 
 ## Properties
 

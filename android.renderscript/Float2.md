@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Float2
 
-Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Float2 "View this page in Java") 
+Kotlin| [Java](../android/renderscript/Float2.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Float2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2#) |
+| ↳ | [android.renderscript.Float2](../android/renderscript/Float2.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,13 +26,13 @@ Vector version of the basic float type. Provides two float fields packed.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2#Float2())`()` <br /> |
-| [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2#Float2(kotlin.Float,%20kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| [Float2](../android/renderscript/Float2.md))`()` <br /> |
+| [Float2](../android/renderscript/Float2.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](https://developer.android.com/reference/kotlin/android/renderscript/Float2#x:kotlin.Float) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](https://developer.android.com/reference/kotlin/android/renderscript/Float2#y:kotlin.Float) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [x](../android/renderscript/Float2.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [y](../android/renderscript/Float2.md) <br /> |
 
 ## Public constructors
 

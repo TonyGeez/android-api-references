@@ -8,7 +8,7 @@ class DisconnectCause : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#) |
+| ↳ | [android.telecom.DisconnectCause](../android/telecom/DisconnectCause.md) |
 
 Describes the cause of a disconnected call. This always includes a code describing the generic cause of the disconnect. Optionally, it may include a label and/or description to display to the user. It is the responsibility of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to provide localized versions of the label and description. It also may contain a reason for the disconnect, which is intended for logging and not for display to the user.
 
@@ -78,7 +78,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#)!\> | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DisconnectCause](../android/telecom/DisconnectCause.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

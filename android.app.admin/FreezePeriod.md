@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # FreezePeriod
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/admin/FreezePeriod "View this page in Java") 
+Kotlin| [Java](../android/app/admin/FreezePeriod.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class FreezePeriod
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.FreezePeriod](https://developer.android.com/reference/kotlin/android/app/admin/FreezePeriod#) |
+| ↳ | [android.app.admin.FreezePeriod](../android/app/admin/FreezePeriod.md) |
 
 A class that represents one freeze period which repeats*annually*. A freeze period has two java.time#MonthDay values that define the start and end dates of the period, both inclusive. If the end date is earlier than the start date, the period is considered wrapped around the year-end. As far as freeze period is concerned, leap year is disregarded and February 29th should be treated as if it were February 28th: so a freeze starting or ending on February 28th is identical to a freeze starting or ending on February 29th. When calulating the length of a freeze or the distance bewteen two freee periods, February 29th is also ignored.
 
@@ -21,13 +21,13 @@ A class that represents one freeze period which repeats*annually*. A freeze peri
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FreezePeriod](https://developer.android.com/reference/kotlin/android/app/admin/FreezePeriod#FreezePeriod(java.time.MonthDay,%20java.time.MonthDay))`(`start:` ` [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay.html#)!`, `end:` ` [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay.html#)!`)` Creates a freeze period by its start and end dates. |
+| [FreezePeriod](../android/app/admin/FreezePeriod.md))`(`start:` ` [MonthDay](../java/time/MonthDay.md)!`, `end:` ` [MonthDay](../java/time/MonthDay.md)!`)` Creates a freeze period by its start and end dates. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay.html#)! | [getEnd](https://developer.android.com/reference/kotlin/android/app/admin/FreezePeriod#getEnd())`()` Returns the end date (inclusive) of this freeze period. |
-| open [MonthDay](https://developer.android.com/reference/kotlin/java/time/MonthDay.html#)! | [getStart](https://developer.android.com/reference/kotlin/android/app/admin/FreezePeriod#getStart())`()` Returns the start date (inclusive) of this freeze period. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/admin/FreezePeriod#toString())`()` <br /> |
+| open [MonthDay](../java/time/MonthDay.md)! | [getEnd](../android/app/admin/FreezePeriod.md))`()` Returns the end date (inclusive) of this freeze period. |
+| open [MonthDay](../java/time/MonthDay.md)! | [getStart](../android/app/admin/FreezePeriod.md))`()` Returns the start date (inclusive) of this freeze period. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/admin/FreezePeriod.md))`()` <br /> |
 | --- | --- |
 
 ## Public constructors

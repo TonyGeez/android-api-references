@@ -10,7 +10,7 @@ class UUID : Comparable<UUID!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.UUID](https://developer.android.com/reference/kotlin/java/util/UUID#) |
+| ↳ | [java.util.UUID](../java/util/UUID.md) |
 
 A class that represents an immutable universally unique identifier (UUID). A UUID represents a 128-bit value.
 
@@ -44,28 +44,28 @@ For more information including algorithms used to create `UUID`s, see [*RFC 4122
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#UUID(kotlin.Long,%20kotlin.Long))`(`mostSigBits:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `leastSigBits:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new `UUID` using the specified data. |
+| [UUID](../java/util/UUID.md))`(`mostSigBits:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `leastSigBits:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new `UUID` using the specified data. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [clockSequence](https://developer.android.com/reference/kotlin/java/util/UUID#clockSequence())`()` The clock sequence value associated with this UUID. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/util/UUID#compareTo(java.util.UUID))`(`other:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#)!`)` Compares this UUID with the specified UUID. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/UUID#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [clockSequence](../java/util/UUID.md))`()` The clock sequence value associated with this UUID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/util/UUID.md))`(`other:` ` [UUID](../java/util/UUID.md)!`)` Compares this UUID with the specified UUID. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/UUID.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
 | --- | --- |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#)! | [fromString](https://developer.android.com/reference/kotlin/java/util/UUID#fromString(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a `UUID` from the string standard representation as described in the [toString](https://developer.android.com/reference/kotlin/java/util/UUID#toString()) method. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLeastSignificantBits](https://developer.android.com/reference/kotlin/java/util/UUID#getLeastSignificantBits())`()` Returns the least significant 64 bits of this UUID's 128 bit value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMostSignificantBits](https://developer.android.com/reference/kotlin/java/util/UUID#getMostSignificantBits())`()` Returns the most significant 64 bits of this UUID's 128 bit value. |
+| static [UUID](../java/util/UUID.md)! | [fromString](../java/util/UUID.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a `UUID` from the string standard representation as described in the [toString](../java/util/UUID.md)) method. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLeastSignificantBits](../java/util/UUID.md))`()` Returns the least significant 64 bits of this UUID's 128 bit value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMostSignificantBits](../java/util/UUID.md))`()` Returns the most significant 64 bits of this UUID's 128 bit value. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/UUID#hashCode())`()` Returns a hash code for this `UUID`. |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#)! | [nameUUIDFromBytes](https://developer.android.com/reference/kotlin/java/util/UUID#nameUUIDFromBytes(kotlin.ByteArray))`(`name:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Static factory to retrieve a type 3 (name based) `UUID` based on the specified byte array. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [node](https://developer.android.com/reference/kotlin/java/util/UUID#node())`()` The node value associated with this UUID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/UUID.md))`()` Returns a hash code for this `UUID`. |
+| static [UUID](../java/util/UUID.md)! | [nameUUIDFromBytes](../java/util/UUID.md))`(`name:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Static factory to retrieve a type 3 (name based) `UUID` based on the specified byte array. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [node](../java/util/UUID.md))`()` The node value associated with this UUID. |
 | --- | --- |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#)! | [randomUUID](https://developer.android.com/reference/kotlin/java/util/UUID#randomUUID())`()` Static factory to retrieve a type 4 (pseudo randomly generated) UUID. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](https://developer.android.com/reference/kotlin/java/util/UUID#timestamp())`()` The timestamp value associated with this UUID. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/UUID#toString())`()` Returns a `String` object representing this `UUID`. |
+| static [UUID](../java/util/UUID.md)! | [randomUUID](../java/util/UUID.md))`()` Static factory to retrieve a type 4 (pseudo randomly generated) UUID. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [timestamp](../java/util/UUID.md))`()` The timestamp value associated with this UUID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/UUID.md))`()` Returns a `String` object representing this `UUID`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [variant](https://developer.android.com/reference/kotlin/java/util/UUID#variant())`()` The variant number associated with this `UUID`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [version](https://developer.android.com/reference/kotlin/java/util/UUID#version())`()` The version number associated with this `UUID`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [variant](../java/util/UUID.md))`()` The variant number associated with this `UUID`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [version](../java/util/UUID.md))`()` The version number associated with this `UUID`. |
 
 ## Public constructors
 
@@ -162,7 +162,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun fromString(name: String!): UUID!
 ```
 
-Creates a `UUID` from the string standard representation as described in the [toString](https://developer.android.com/reference/kotlin/java/util/UUID#toString()) method.
+Creates a `UUID` from the string standard representation as described in the [toString](../java/util/UUID.md)) method.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------|
@@ -170,11 +170,11 @@ Creates a `UUID` from the string standard representation as described in the [to
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------------|
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#)! | A `UUID` with the specified value |
+| [UUID](../java/util/UUID.md)! | A `UUID` with the specified value |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | If name does not conform to the string representation as described in [toString](https://developer.android.com/reference/kotlin/java/util/UUID#toString()) |
+| `java.lang.IllegalArgumentException` | If name does not conform to the string representation as described in [toString](../java/util/UUID.md)) |
 
 ### getLeastSignificantBits
 
@@ -234,7 +234,7 @@ Static factory to retrieve a type 3 (name based) `UUID` based on the specified b
 
 | Return ||
 |-------------------------------------------------------------------------|---------------------------------------------|
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#)! | A `UUID` generated from the specified array |
+| [UUID](../java/util/UUID.md)! | A `UUID` generated from the specified array |
 
 ### node
 
@@ -270,7 +270,7 @@ Static factory to retrieve a type 4 (pseudo randomly generated) UUID. The `UUID`
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------|
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID#)! | A randomly generated `UUID` |
+| [UUID](../java/util/UUID.md)! | A randomly generated `UUID` |
 
 ### timestamp
 

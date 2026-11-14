@@ -10,13 +10,13 @@ open class JSONArray
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.json.JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#) |
+| ↳ | [org.json.JSONArray](../org/json/JSONArray.md) |
 
-A dense indexed sequence of values. Values may be any mix of [JSONObjects](https://developer.android.com/reference/kotlin/org/json/JSONObject), other [JSONArrays](https://developer.android.com/reference/kotlin/org/json/JSONArray#), Strings, Booleans, Integers, Longs, Doubles,`null`or [JSONObject.NULL](https://developer.android.com/reference/kotlin/org/json/JSONObject#NULL:kotlin.Any). Values may not be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN()), [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite()), or of any type not listed here.
+A dense indexed sequence of values. Values may be any mix of [JSONObjects](../org/json/JSONObject.md), other [JSONArrays](../org/json/JSONArray.md), Strings, Booleans, Integers, Longs, Doubles,`null`or [JSONObject.NULL](../org/json/JSONObject.md). Values may not be [NaNs](../java/lang/Double.md)), [infinities](../java/lang/Double.md)), or of any type not listed here.
 
-`JSONArray`has the same type coercion behavior and optional/mandatory accessors as [JSONObject](https://developer.android.com/reference/kotlin/org/json/JSONObject). See that class' documentation for details.
+`JSONArray`has the same type coercion behavior and optional/mandatory accessors as [JSONObject](../org/json/JSONObject.md). See that class' documentation for details.
 
-**Warning:** this class represents null in two incompatible ways: the standard Java`null`reference, and the sentinel value [org.json.JSONObject#NULL](https://developer.android.com/reference/kotlin/org/json/JSONObject#NULL:kotlin.Any). In particular,`get`fails if the requested index holds the null reference, but succeeds if it holds`JSONObject.NULL`.
+**Warning:** this class represents null in two incompatible ways: the standard Java`null`reference, and the sentinel value [org.json.JSONObject#NULL](../org/json/JSONObject.md). In particular,`get`fails if the requested index holds the null reference, but succeeds if it holds`JSONObject.NULL`.
 
 Instances of this class are not thread safe. Although this class is nonfinal, it was not designed for inheritance and should not be subclassed. In particular, self-use by overridable methods is not specified. See*Effective Java*Item 17, "Design and Document or inheritance or else prohibit it" for further information.
 
@@ -24,67 +24,67 @@ Instances of this class are not thread safe. Although this class is nonfinal, it
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#JSONArray())`()` Creates a`JSONArray`with no values. |
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#JSONArray(kotlin.Any))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Creates a new`JSONArray`with values from the given primitive array. |
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#JSONArray(kotlin.String))`(`json:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`JSONArray`with values from the JSON string. |
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#JSONArray(kotlin.collections.MutableCollection))`(`copyFrom:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?>!`)` Creates a new`JSONArray`by copying all values from the given collection. |
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#JSONArray(org.json.JSONTokener))`(`readFrom:` ` [JSONTokener](https://developer.android.com/reference/kotlin/org/json/JSONTokener)!`)` Creates a new`JSONArray`with values from the next array in the tokener. |
+| [JSONArray](../org/json/JSONArray.md))`()` Creates a`JSONArray`with no values. |
+| [JSONArray](../org/json/JSONArray.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Creates a new`JSONArray`with values from the given primitive array. |
+| [JSONArray](../org/json/JSONArray.md))`(`json:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`JSONArray`with values from the JSON string. |
+| [JSONArray](../org/json/JSONArray.md))`(`copyFrom:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?>!`)` Creates a new`JSONArray`by copying all values from the given collection. |
+| [JSONArray](../org/json/JSONArray.md))`(`readFrom:` ` [JSONTokener](../org/json/JSONTokener.md)!`)` Creates a new`JSONArray`with values from the next array in the tokener. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/org/json/JSONArray#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [get](https://developer.android.com/reference/kotlin/org/json/JSONArray#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](https://developer.android.com/reference/kotlin/org/json/JSONArray#getBoolean(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a boolean or can be coerced to a boolean. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../org/json/JSONArray.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [get](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a boolean or can be coerced to a boolean. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](https://developer.android.com/reference/kotlin/org/json/JSONArray#getDouble(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a double or can be coerced to a double. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](https://developer.android.com/reference/kotlin/org/json/JSONArray#getInt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is an int or can be coerced to an int. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [getJSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#getJSONArray(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONArray`. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a double or can be coerced to a double. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is an int or can be coerced to an int. |
+| open [JSONArray](../org/json/JSONArray.md)! | [getJSONArray](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONArray`. |
 | --- | --- |
-| open [JSONObject](https://developer.android.com/reference/kotlin/org/json/JSONObject)! | [getJSONObject](https://developer.android.com/reference/kotlin/org/json/JSONArray#getJSONObject(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONObject`. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/org/json/JSONArray#getLong(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a long or can be coerced to a long. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](https://developer.android.com/reference/kotlin/org/json/JSONArray#getString(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists, coercing it if necessary. |
+| open [JSONObject](../org/json/JSONObject.md)! | [getJSONObject](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONObject`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a long or can be coerced to a long. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists, coercing it if necessary. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/org/json/JSONArray#hashCode())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](https://developer.android.com/reference/kotlin/org/json/JSONArray#isNull(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if this array has no value at`index`, or if its value is the`null`reference or [JSONObject.NULL](https://developer.android.com/reference/kotlin/org/json/JSONObject#NULL:kotlin.Any). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [join](https://developer.android.com/reference/kotlin/org/json/JSONArray#join(kotlin.String))`(`separator:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a new string by alternating this array's values with`separator`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../org/json/JSONArray.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if this array has no value at`index`, or if its value is the`null`reference or [JSONObject.NULL](../org/json/JSONObject.md). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [join](../org/json/JSONArray.md))`(`separator:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a new string by alternating this array's values with`separator`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](https://developer.android.com/reference/kotlin/org/json/JSONArray#length())`()` Returns the number of values in this array. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [opt](https://developer.android.com/reference/kotlin/org/json/JSONArray#opt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`, or null if the array has no value at`index`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [optBoolean](https://developer.android.com/reference/kotlin/org/json/JSONArray#optBoolean(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a boolean or can be coerced to a boolean. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../org/json/JSONArray.md))`()` Returns the number of values in this array. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [opt](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`, or null if the array has no value at`index`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [optBoolean](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a boolean or can be coerced to a boolean. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [optBoolean](https://developer.android.com/reference/kotlin/org/json/JSONArray#optBoolean(kotlin.Int,%20kotlin.Boolean))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns the value at`index`if it exists and is a boolean or can be coerced to a boolean. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [optDouble](https://developer.android.com/reference/kotlin/org/json/JSONArray#optDouble(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a double or can be coerced to a double. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [optDouble](https://developer.android.com/reference/kotlin/org/json/JSONArray#optDouble(kotlin.Int,%20kotlin.Double))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the value at`index`if it exists and is a double or can be coerced to a double. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [optBoolean](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns the value at`index`if it exists and is a boolean or can be coerced to a boolean. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [optDouble](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a double or can be coerced to a double. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [optDouble](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the value at`index`if it exists and is a double or can be coerced to a double. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [optInt](https://developer.android.com/reference/kotlin/org/json/JSONArray#optInt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is an int or can be coerced to an int. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [optInt](https://developer.android.com/reference/kotlin/org/json/JSONArray#optInt(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is an int or can be coerced to an int. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [optJSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#optJSONArray(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONArray`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [optInt](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is an int or can be coerced to an int. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [optInt](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is an int or can be coerced to an int. |
+| open [JSONArray](../org/json/JSONArray.md)! | [optJSONArray](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONArray`. |
 | --- | --- |
-| open [JSONObject](https://developer.android.com/reference/kotlin/org/json/JSONObject)! | [optJSONObject](https://developer.android.com/reference/kotlin/org/json/JSONArray#optJSONObject(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONObject`. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [optLong](https://developer.android.com/reference/kotlin/org/json/JSONArray#optLong(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a long or can be coerced to a long. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [optLong](https://developer.android.com/reference/kotlin/org/json/JSONArray#optLong(kotlin.Int,%20kotlin.Long))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value at`index`if it exists and is a long or can be coerced to a long. |
+| open [JSONObject](../org/json/JSONObject.md)! | [optJSONObject](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a`JSONObject`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [optLong](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists and is a long or can be coerced to a long. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [optLong](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value at`index`if it exists and is a long or can be coerced to a long. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [optString](https://developer.android.com/reference/kotlin/org/json/JSONArray#optString(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists, coercing it if necessary. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [optString](https://developer.android.com/reference/kotlin/org/json/JSONArray#optString(kotlin.Int,%20kotlin.String))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value at`index`if it exists, coercing it if necessary. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Appends`value`to the end of this array. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [optString](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value at`index`if it exists, coercing it if necessary. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [optString](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallback:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value at`index`if it exists, coercing it if necessary. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Appends`value`to the end of this array. |
 | --- | --- |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Appends`value`to the end of this array. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends`value`to the end of this array. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Int,%20kotlin.Boolean))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Appends`value`to the end of this array. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends`value`to the end of this array. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
 | --- | --- |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Int,%20kotlin.Double))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Int,%20kotlin.Any))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
 | --- | --- |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Int,%20kotlin.Long))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Appends`value`to the end of this array. |
-| open [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | [put](https://developer.android.com/reference/kotlin/org/json/JSONArray#put(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends`value`to the end of this array. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value at`index`to`value`, null padding this array to the required length if necessary. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Appends`value`to the end of this array. |
+| open [JSONArray](../org/json/JSONArray.md)! | [put](../org/json/JSONArray.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends`value`to the end of this array. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [remove](https://developer.android.com/reference/kotlin/org/json/JSONArray#remove(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes and returns the value at`index`, or null if the array has no value at`index`. |
-| open [JSONObject](https://developer.android.com/reference/kotlin/org/json/JSONObject)! | [toJSONObject](https://developer.android.com/reference/kotlin/org/json/JSONArray#toJSONObject(org.json.JSONArray))`(`names:` ` [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)!`)` Returns a new object whose values are the values in this array, and whose names are the values in`names`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/org/json/JSONArray#toString())`()` Encodes this array as a compact JSON string, such as: ```kotlin [94043,90210] ``` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [remove](../org/json/JSONArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes and returns the value at`index`, or null if the array has no value at`index`. |
+| open [JSONObject](../org/json/JSONObject.md)! | [toJSONObject](../org/json/JSONArray.md))`(`names:` ` [JSONArray](../org/json/JSONArray.md)!`)` Returns a new object whose values are the values in this array, and whose names are the values in`names`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../org/json/JSONArray.md))`()` Encodes this array as a compact JSON string, such as: ```kotlin [94043,90210] ``` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](https://developer.android.com/reference/kotlin/org/json/JSONArray#toString(kotlin.Int))`(`indentSpaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encodes this array as a human readable JSON string for debugging, such as: ```kotlin [ 94043, 90210 ] ``` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../org/json/JSONArray.md))`(`indentSpaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encodes this array as a human readable JSON string for debugging, such as: ```kotlin [ 94043, 90210 ] ``` <br /> |
 
 ## Public constructors
 
@@ -152,7 +152,7 @@ Creates a new`JSONArray`with values from the next array in the tokener.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `readFrom` | [JSONTokener](https://developer.android.com/reference/kotlin/org/json/JSONTokener)!:a tokener whose nextValue() method will yield a`JSONArray`. |
+| `readFrom` | [JSONTokener](../org/json/JSONTokener.md)!:a tokener whose nextValue() method will yield a`JSONArray`. |
 
 | Exceptions ||
 |--------------------------|---------------------------------------------------|
@@ -308,7 +308,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun isNull(index: Int): Boolean
 ```
 
-Returns true if this array has no value at`index`, or if its value is the`null`reference or [JSONObject.NULL](https://developer.android.com/reference/kotlin/org/json/JSONObject#NULL:kotlin.Any). 
+Returns true if this array has no value at`index`, or if its value is the`null`reference or [JSONObject.NULL](../org/json/JSONObject.md). 
 
 ### join
 
@@ -493,7 +493,7 @@ Appends`value`to the end of this array.
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -507,11 +507,11 @@ Appends`value`to the end of this array.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):a finite value. May not be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN())or [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite()). |
+| `value` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):a finite value. May not be [NaNs](../java/lang/Double.md))or [infinities](../java/lang/Double.md)). |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -525,7 +525,7 @@ Appends`value`to the end of this array.
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -542,7 +542,7 @@ Sets the value at`index`to`value`, null padding this array to the required lengt
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -559,11 +559,11 @@ Sets the value at`index`to`value`, null padding this array to the required lengt
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):a finite value. May not be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN())or [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite()). |
+| `value` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):a finite value. May not be [NaNs](../java/lang/Double.md))or [infinities](../java/lang/Double.md)). |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -580,7 +580,7 @@ Sets the value at`index`to`value`, null padding this array to the required lengt
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -597,11 +597,11 @@ Sets the value at`index`to`value`, null padding this array to the required lengt
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:a [JSONObject](https://developer.android.com/reference/kotlin/org/json/JSONObject), [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#), String, Boolean, Integer, Long, Double, [JSONObject.NULL](https://developer.android.com/reference/kotlin/org/json/JSONObject#NULL:kotlin.Any), or`null`. May not be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN())or [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite()). |
+| `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:a [JSONObject](../org/json/JSONObject.md), [JSONArray](../org/json/JSONArray.md), String, Boolean, Integer, Long, Double, [JSONObject.NULL](../org/json/JSONObject.md), or`null`. May not be [NaNs](../java/lang/Double.md))or [infinities](../java/lang/Double.md)). |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -618,7 +618,7 @@ Sets the value at`index`to`value`, null padding this array to the required lengt
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -632,11 +632,11 @@ Appends`value`to the end of this array.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:a [JSONObject](https://developer.android.com/reference/kotlin/org/json/JSONObject), [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#), String, Boolean, Integer, Long, Double, [JSONObject.NULL](https://developer.android.com/reference/kotlin/org/json/JSONObject#NULL:kotlin.Any), or`null`. May not be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN())or [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite()). Unsupported values are not permitted and will cause the array to be in an inconsistent state. |
+| `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:a [JSONObject](../org/json/JSONObject.md), [JSONArray](../org/json/JSONArray.md), String, Boolean, Integer, Long, Double, [JSONObject.NULL](../org/json/JSONObject.md), or`null`. May not be [NaNs](../java/lang/Double.md))or [infinities](../java/lang/Double.md)). Unsupported values are not permitted and will cause the array to be in an inconsistent state. |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### put
 
@@ -650,7 +650,7 @@ Appends`value`to the end of this array.
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------|
-| [JSONArray](https://developer.android.com/reference/kotlin/org/json/JSONArray#)! | this array. |
+| [JSONArray](../org/json/JSONArray.md)! | this array. |
 
 ### remove
 

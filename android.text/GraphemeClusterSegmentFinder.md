@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # GraphemeClusterSegmentFinder
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/GraphemeClusterSegmentFinder "View this page in Java")
+Kotlin | [Java](../android/text/GraphemeClusterSegmentFinder.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class GraphemeClusterSegmentFinder : SegmentFinder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.SegmentFinder](https://developer.android.com/reference/kotlin/android/text/SegmentFinder) ||
-| | ↳ | [android.text.GraphemeClusterSegmentFinder](https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder#) |
+| ↳ | [android.text.SegmentFinder](../android/text/SegmentFinder.md) ||
+| | ↳ | [android.text.GraphemeClusterSegmentFinder](../android/text/GraphemeClusterSegmentFinder.md) |
 
 Implementation of `SegmentFinder` using grapheme clusters as the text segment. Whitespace characters are included as segments.
 
@@ -53,7 +53,7 @@ Constructs a GraphemeClusterSegmentFinder instance for the specified text which 
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): text to be segmented. This value cannot be `null`. |
-| `textPaint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint): TextPaint used to draw the text. This value cannot be `null`. |
+| `textPaint` | [TextPaint](../android/text/TextPaint.md): TextPaint used to draw the text. This value cannot be `null`. |
 
 ## Public methods
 

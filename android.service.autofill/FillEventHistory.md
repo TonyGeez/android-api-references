@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # FillEventHistory
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FillEventHistory "View this page in Java") 
+Kotlin| [Java](../android/service/autofill/FillEventHistory.md) 
 | --- | --- |
 
 ```
@@ -13,38 +13,38 @@ class FillEventHistory : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.FillEventHistory](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#) |
+| ↳ | [android.service.autofill.FillEventHistory](../android/service/autofill/FillEventHistory.md) |
 
-Describes what happened after the last [AutofillService.onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback))call.
+Describes what happened after the last [AutofillService.onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)](../android/service/autofill/AutofillService.md))call.
 
 This history is typically used to keep track of previous user actions to optimize further requests. For example, the service might return email addresses in alphabetical order by default, but change that order based on the address the user picked on previous requests.
 
-The history is not persisted over reboots, and it's cleared every time the service replies to a [AutofillService.onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback))by calling [FillCallback.onSuccess(FillResponse)](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback#onSuccess(android.service.autofill.FillResponse))or [FillCallback.onFailure(CharSequence)](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback#onFailure(kotlin.CharSequence))(if the service doesn't call any of these methods, the history will clear out after some pre-defined time).
+The history is not persisted over reboots, and it's cleared every time the service replies to a [AutofillService.onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)](../android/service/autofill/AutofillService.md))by calling [FillCallback.onSuccess(FillResponse)](../android/service/autofill/FillCallback.md))or [FillCallback.onFailure(CharSequence)](../android/service/autofill/FillCallback.md))(if the service doesn't call any of these methods, the history will clear out after some pre-defined time).
 
 ## Summary
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Event](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory.Event) Description of an event that occurred after the latest call to [FillCallback.onSuccess(FillResponse)](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback#onSuccess(android.service.autofill.FillResponse)). |
+| | [Event](../android/service/autofill/FillEventHistory.Event.md) Description of an event that occurred after the latest call to [FillCallback.onSuccess(FillResponse)](../android/service/autofill/FillCallback.md)). |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#describeContents())`()` <br /> |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getClientState](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#getClientState())`()` Returns the client state set in the previous [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse). |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FillEventHistory.Event](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory.Event)!\>? | [getEvents](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#getEvents())`()` Returns the events occurred after the latest call to [FillCallback.onSuccess(FillResponse)](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback#onSuccess(android.service.autofill.FillResponse)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/service/autofill/FillEventHistory.md))`()` <br /> |
+| [Bundle](../android/os/Bundle.md)? | [getClientState](../android/service/autofill/FillEventHistory.md))`()` Returns the client state set in the previous [FillResponse](../android/service/autofill/FillResponse.md). |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FillEventHistory.Event](../android/service/autofill/FillEventHistory.Event.md)!\>? | [getEvents](../android/service/autofill/FillEventHistory.md))`()` Returns the events occurred after the latest call to [FillCallback.onSuccess(FillResponse)](../android/service/autofill/FillCallback.md)). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionId](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#getSessionId())`()` Returns the unique identifier of this FillEventHistory. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionId](../android/service/autofill/FillEventHistory.md))`()` Returns the unique identifier of this FillEventHistory. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/service/autofill/FillEventHistory.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/service/autofill/FillEventHistory.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [FillEventHistory](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FillEventHistory](../android/service/autofill/FillEventHistory.md)!\> | [CREATOR](../android/service/autofill/FillEventHistory.md) <br /> |
 
 ## Public methods
 
@@ -58,7 +58,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getClientState
 
@@ -69,15 +69,15 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun getClientState(): Bundle?
 ```
 
-**Deprecated:** *use [getEvents()](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory#getEvents())then [Event.getClientState()](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory.Event#getClientState())instead.*
+**Deprecated:** *use [getEvents()](../android/service/autofill/FillEventHistory.md))then [Event.getClientState()](../android/service/autofill/FillEventHistory.Event.md))instead.*
 
-Returns the client state set in the previous [FillResponse](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse).
+Returns the client state set in the previous [FillResponse](../android/service/autofill/FillResponse.md).
 
-**Note:** the state is associated with the app that was autofilled in the previous [AutofillService.onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)), which is not necessary the same app being autofilled now.
+**Note:** the state is associated with the app that was autofilled in the previous [AutofillService.onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)](../android/service/autofill/AutofillService.md)), which is not necessary the same app being autofilled now.
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | This value may be`null`. |
+| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
 
 ### getEvents
 
@@ -87,11 +87,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getEvents(): MutableList<FillEventHistory.Event!>?
 ```
 
-Returns the events occurred after the latest call to [FillCallback.onSuccess(FillResponse)](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback#onSuccess(android.service.autofill.FillResponse)).
+Returns the events occurred after the latest call to [FillCallback.onSuccess(FillResponse)](../android/service/autofill/FillCallback.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [FillEventHistory.Event](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory.Event)!>? | The list of events or`null`if non occurred. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [FillEventHistory.Event](../android/service/autofill/FillEventHistory.Event.md)!>? | The list of events or`null`if non occurred. |
 
 ### getSessionId
 
@@ -131,7 +131,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

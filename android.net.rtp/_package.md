@@ -2,14 +2,14 @@
 
 # android.net.rtp
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/rtp/package-summary "View this page in Java")
+Kotlin| [Java](../android/net/rtp/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [AudioCodec](https://developer.android.com/reference/kotlin/android/net/rtp/AudioCodec) | This class defines a collection of audio codecs to be used with [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream) s. |
+| [AudioCodec](../android/net/rtp/AudioCodec.md) | This class defines a collection of audio codecs to be used with [AudioStream](../android/net/rtp/AudioStream.md) s. |
 | --- | --- |
-| [AudioGroup](https://developer.android.com/reference/kotlin/android/net/rtp/AudioGroup) | An AudioGroup is an audio hub for the speaker, the microphone, and [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream) s. |
-| [AudioStream](https://developer.android.com/reference/kotlin/android/net/rtp/AudioStream) | An AudioStream is a [RtpStream](https://developer.android.com/reference/kotlin/android/net/rtp/RtpStream) which carrys audio payloads over Real-time Transport Protocol (RTP). |
-| [RtpStream](https://developer.android.com/reference/kotlin/android/net/rtp/RtpStream) | RtpStream represents the base class of streams which send and receive network packets with media payloads over Real-time Transport Protocol (RTP). |
+| [AudioGroup](../android/net/rtp/AudioGroup.md) | An AudioGroup is an audio hub for the speaker, the microphone, and [AudioStream](../android/net/rtp/AudioStream.md) s. |
+| [AudioStream](../android/net/rtp/AudioStream.md) | An AudioStream is a [RtpStream](../android/net/rtp/RtpStream.md) which carrys audio payloads over Real-time Transport Protocol (RTP). |
+| [RtpStream](../android/net/rtp/RtpStream.md) | RtpStream represents the base class of streams which send and receive network packets with media payloads over Real-time Transport Protocol (RTP). |
 | --- | --- |

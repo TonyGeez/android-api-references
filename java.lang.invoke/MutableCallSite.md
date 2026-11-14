@@ -8,10 +8,10 @@ open class MutableCallSite : CallSite
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.lang.invoke.CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) ||
-| | ↳ | [java.lang.invoke.MutableCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#) |
+| ↳ | [java.lang.invoke.CallSite](../java/lang/invoke/CallSite.md) ||
+| | ↳ | [java.lang.invoke.MutableCallSite](../java/lang/invoke/MutableCallSite.md) |
 
-A `MutableCallSite` is a `https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite` whose target variable behaves like an ordinary field. An `invokedynamic` instruction linked to a `MutableCallSite` delegates all calls to the site's current target. The [dynamic invoker](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#dynamicInvoker()) of a mutable call site also delegates each call to the site's current target.
+A `MutableCallSite` is a `https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite` whose target variable behaves like an ordinary field. An `invokedynamic` instruction linked to a `MutableCallSite` delegates all calls to the site's current target. The [dynamic invoker](../java/lang/invoke/CallSite.md)) of a mutable call site also delegates each call to the site's current target.
 
 Here is an example of a mutable call site which introduces a state variable into a method handle chain.
 
@@ -47,7 +47,7 @@ The same call site may be used in several places at once.
 
 *Non-synchronization of target values:* A write to a mutable call site's target does not force other threads to become aware of the updated value. Threads which do not perform suitable synchronization actions relative to the updated call site may cache the old target value and delay their use of the new target value indefinitely. (This is a normal consequence of the Java Memory Model as applied to object fields.)
 
-For target values which will be frequently updated, consider using a [volatile call site](https://developer.android.com/reference/kotlin/java/lang/invoke/VolatileCallSite) instead.
+For target values which will be frequently updated, consider using a [volatile call site](../java/lang/invoke/VolatileCallSite.md) instead.
 
 ## Summary
 
@@ -58,8 +58,8 @@ For target values which will be frequently updated, consider using a [volatile c
 
 | Public methods ||
 |---|---|
-| [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#dynamicInvoker()()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
-| [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#getTarget()()` Returns the target method of the call site, which behaves like a normal field of the `MutableCallSite`. |
+| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#dynamicInvoker()()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
+| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#getTarget()()` Returns the target method of the call site, which behaves like a normal field of the `MutableCallSite`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#setTarget(java.lang.invoke.MethodHandle)(newTarget: https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle!)` Updates the target method of this call site, as a normal variable. |
 | --- | --- |
 
@@ -81,7 +81,7 @@ Creates a call site object with an initial target method handle. The type of the
 
 | Parameters ||
 |---|---|
-| `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the method handle that will be the initial target of the call site |
+| `target` | [MethodHandle](../java/lang/invoke/MethodHandle.md)!: the method handle that will be the initial target of the call site |
 
 | Exceptions ||
 |---|---|
@@ -103,7 +103,7 @@ Before this `CallSite` object is returned from a bootstrap method, or invoked in
 
 | Parameters ||
 |---|---|
-| `type` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!: the method type that this call site will have |
+| `type` | [MethodType](../java/lang/invoke/MethodType.md)!: the method type that this call site will have |
 
 | Exceptions ||
 |---|---|
@@ -173,7 +173,7 @@ In particular, unrelated threads may fail to see the updated target until they p
 
 | Parameters ||
 |---|---|
-| `newTarget` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!: the new target |
+| `newTarget` | [MethodHandle](../java/lang/invoke/MethodHandle.md)!: the new target |
 
 | Exceptions ||
 |---|---|

@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # AnimatorInflater
 
-Kotlin| [Java](https://developer.android.com/reference/android/animation/AnimatorInflater "View this page in Java") 
+Kotlin| [Java](../android/animation/AnimatorInflater.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class AnimatorInflater
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.AnimatorInflater](https://developer.android.com/reference/kotlin/android/animation/AnimatorInflater#) |
+| ↳ | [android.animation.AnimatorInflater](../android/animation/AnimatorInflater.md) |
 
 This class is used to instantiate animator XML files into Animator objects.
 
@@ -23,12 +23,12 @@ For performance reasons, inflation relies heavily on pre-processing of XML files
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AnimatorInflater](https://developer.android.com/reference/kotlin/android/animation/AnimatorInflater#AnimatorInflater())`()` <br /> |
+| [AnimatorInflater](../android/animation/AnimatorInflater.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)! | [loadAnimator](https://developer.android.com/reference/kotlin/android/animation/AnimatorInflater#loadAnimator(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads an [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator) object from a resource |
-| openstatic [StateListAnimator](https://developer.android.com/reference/kotlin/android/animation/StateListAnimator)! | [loadStateListAnimator](https://developer.android.com/reference/kotlin/android/animation/AnimatorInflater#loadStateListAnimator(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Animator](../android/animation/Animator.md)! | [loadAnimator](../android/animation/AnimatorInflater.md))`(`context:` ` [Context](../android/content/Context.md)!`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads an [Animator](../android/animation/Animator.md) object from a resource |
+| openstatic [StateListAnimator](../android/animation/StateListAnimator.md)! | [loadStateListAnimator](../android/animation/AnimatorInflater.md))`(`context:` ` [Context](../android/content/Context.md)!`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public constructors
 
@@ -51,16 +51,16 @@ open static fun loadAnimator(
 ): Animator!
 ```
 
-Loads an [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator) object from a resource
+Loads an [Animator](../android/animation/Animator.md) object from a resource
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Application context used to access resources |
+| `context` | [Context](../android/content/Context.md)!:Application context used to access resources |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource id of the animation to load |
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator)! | The animator object reference by the specified id |
+| [Animator](../android/animation/Animator.md)! | The animator object reference by the specified id |
 
 | Exceptions ||
 |---------------------------------------------------|-------------------------------------|

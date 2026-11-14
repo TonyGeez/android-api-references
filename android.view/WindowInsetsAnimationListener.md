@@ -6,7 +6,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 interface WindowInsetsAnimationListener
 ```
 
-| [android.view.ViewTreeObserver.WindowInsetsAnimationListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.WindowInsetsAnimationListener#) |
+| [android.view.ViewTreeObserver.WindowInsetsAnimationListener](../android/view/ViewTreeObserver.WindowInsetsAnimationListener.md) |
 
 Interface definition for a callback to be invoked when window insets animations prepare or end.
 
@@ -39,7 +39,7 @@ Called after a window insets animation has ended.
 
 | Parameters ||
 |---|---|
-| `animation` | [WindowInsetsAnimation](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation): The animation that has ended. This value cannot be `null`. |
+| `animation` | [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md): The animation that has ended. This value cannot be `null`. |
 
 ### onPrepare
 
@@ -55,4 +55,4 @@ This is called before the final insets are dispatched to the view hierarchy via 
 
 | Parameters ||
 |---|---|
-| `animation` | [WindowInsetsAnimation](https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation): The animation that is about to start. This value cannot be `null`. |
+| `animation` | [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md): The animation that is about to start. This value cannot be `null`. |

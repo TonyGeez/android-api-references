@@ -11,8 +11,8 @@ open class TooManyListenersException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [java.util.TooManyListenersException](https://developer.android.com/reference/kotlin/java/util/TooManyListenersException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [java.util.TooManyListenersException](../java/util/TooManyListenersException.md) |
 | --- | --- | --- | --- |
 
 The`TooManyListenersException `Exception is used as part of the Java Event model to annotate and implement a unicast special case of a multicast Event Source.
@@ -23,8 +23,8 @@ The presence of a "throws TooManyListenersException" clause on any given concret
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TooManyListenersException](https://developer.android.com/reference/kotlin/java/util/TooManyListenersException#TooManyListenersException())`()` Constructs a TooManyListenersException with no detail message. |
-| [TooManyListenersException](https://developer.android.com/reference/kotlin/java/util/TooManyListenersException#TooManyListenersException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a TooManyListenersException with the specified detail message. |
+| [TooManyListenersException](../java/util/TooManyListenersException.md))`()` Constructs a TooManyListenersException with no detail message. |
+| [TooManyListenersException](../java/util/TooManyListenersException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a TooManyListenersException with the specified detail message. |
 
 ## Public constructors
 

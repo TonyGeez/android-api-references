@@ -8,7 +8,7 @@ open class DOMSource : Source
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.transform.dom.DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#) |
+| ↳ | [javax.xml.transform.dom.DOMSource](../javax/xml/transform/dom/DOMSource.md) |
 
 Acts as a holder for a transformation Source tree in the form of a Document Object Model (DOM) tree.
 

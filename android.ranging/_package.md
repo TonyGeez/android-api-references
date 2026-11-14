@@ -2,29 +2,29 @@
 
 # android.ranging
 
-Kotlin| [Java](https://developer.android.com/reference/android/ranging/package-summary "View this page in Java")
+Kotlin| [Java](../android/ranging/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [RangingCapabilitiesCallback](https://developer.android.com/reference/kotlin/android/ranging/RangingManager.RangingCapabilitiesCallback) | Callback interface to receive the availabilities and capabilities of all the ranging technology supported by the device. |
+| [RangingCapabilitiesCallback](../android/ranging/RangingManager.RangingCapabilitiesCallback.md) | Callback interface to receive the availabilities and capabilities of all the ranging technology supported by the device. |
 | --- | --- |
-| [Callback](https://developer.android.com/reference/kotlin/android/ranging/RangingSession.Callback) | Callback interface for receiving ranging session events. |
+| [Callback](../android/ranging/RangingSession.Callback.md) | Callback interface for receiving ranging session events. |
 
 ## Classes
 
-| [DataNotificationConfig](https://developer.android.com/reference/kotlin/android/ranging/DataNotificationConfig) | Represents the configuration for data notifications in ranging operations. |
+| [DataNotificationConfig](../android/ranging/DataNotificationConfig.md) | Represents the configuration for data notifications in ranging operations. |
 | --- | --- |
-| [RangingCapabilities](https://developer.android.com/reference/kotlin/android/ranging/RangingCapabilities) | Represents the capabilities and availability of various ranging technologies. |
-| [RangingConfig](https://developer.android.com/reference/kotlin/android/ranging/RangingConfig) | Abstract class to represent type of ranging configuration. |
-| [RangingData](https://developer.android.com/reference/kotlin/android/ranging/RangingData) | Represents ranging data, including distance, azimuth, elevation, and RSSI measurements, along with the ranging technology used and a timestamp. |
+| [RangingCapabilities](../android/ranging/RangingCapabilities.md) | Represents the capabilities and availability of various ranging technologies. |
+| [RangingConfig](../android/ranging/RangingConfig.md) | Abstract class to represent type of ranging configuration. |
+| [RangingData](../android/ranging/RangingData.md) | Represents ranging data, including distance, azimuth, elevation, and RSSI measurements, along with the ranging technology used and a timestamp. |
 | --- | --- |
-| [RangingDevice](https://developer.android.com/reference/kotlin/android/ranging/RangingDevice) | Represents a ranging device identified by a unique UUID. |
-| [RangingManager](https://developer.android.com/reference/kotlin/android/ranging/RangingManager) | This class provides a way to perform ranging operations such as querying the device's capabilities and determining the distance and angle between the local device and a remote device. |
-| [RangingMeasurement](https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement) | Represents a ranging measurement. |
+| [RangingDevice](../android/ranging/RangingDevice.md) | Represents a ranging device identified by a unique UUID. |
+| [RangingManager](../android/ranging/RangingManager.md) | This class provides a way to perform ranging operations such as querying the device's capabilities and determining the distance and angle between the local device and a remote device. |
+| [RangingMeasurement](../android/ranging/RangingMeasurement.md) | Represents a ranging measurement. |
 | --- | --- |
-| [RangingPreference](https://developer.android.com/reference/kotlin/android/ranging/RangingPreference) | Represents the configuration preferences for a ranging session. |
-| [RangingSession](https://developer.android.com/reference/kotlin/android/ranging/RangingSession) | Represents a session for performing ranging operations. |
-| [SensorFusionParams](https://developer.android.com/reference/kotlin/android/ranging/SensorFusionParams) | Represents the parameters for sensor fusion in ranging operations. |
+| [RangingPreference](../android/ranging/RangingPreference.md) | Represents the configuration preferences for a ranging session. |
+| [RangingSession](../android/ranging/RangingSession.md) | Represents a session for performing ranging operations. |
+| [SensorFusionParams](../android/ranging/SensorFusionParams.md) | Represents the parameters for sensor fusion in ranging operations. |
 | --- | --- |
-| [SessionConfig](https://developer.android.com/reference/kotlin/android/ranging/SessionConfig) | Defines the ranging session configurations. |
+| [SessionConfig](../android/ranging/SessionConfig.md) | Defines the ranging session configurations. |

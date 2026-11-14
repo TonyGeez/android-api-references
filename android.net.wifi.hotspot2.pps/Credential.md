@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # Credential
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/hotspot2/pps/Credential.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Credential : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.hotspot2.pps.Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#) |
+| ↳ | [android.net.wifi.hotspot2.pps.Credential](../android/net/wifi/hotspot2/pps/Credential.md) |
 
 Class representing Credential subtree in the PerProviderSubscription (PPS) Management Object (MO) tree. For more info, refer to Hotspot 2.0 PPS MO defined in section 9.1 of the Hotspot 2.0 Release 2 Technical Specification. In addition to the fields in the Credential subtree, this will also maintain necessary information for the private key and certificates associated with this credential.
 
@@ -21,54 +21,54 @@ Class representing Credential subtree in the PerProviderSubscription (PPS) Manag
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [CertificateCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.CertificateCredential) Certificate based credential. |
-| | [SimCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.SimCredential) SIM (Subscriber Identify Module) based credential. |
-| | [UserCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.UserCredential) Username-password based credential. |
+| | [CertificateCredential](../android/net/wifi/hotspot2/pps/Credential.CertificateCredential.md) Certificate based credential. |
+| | [SimCredential](../android/net/wifi/hotspot2/pps/Credential.SimCredential.md) SIM (Subscriber Identify Module) based credential. |
+| | [UserCredential](../android/net/wifi/hotspot2/pps/Credential.UserCredential.md) Username-password based credential. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#Credential())`()` Constructor for creating Credential with default values. |
-| [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#Credential(android.net.wifi.hotspot2.pps.Credential))`(`source:` ` [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#)!`)` Copy constructor. |
+| [Credential](../android/net/wifi/hotspot2/pps/Credential.md))`()` Constructor for creating Credential with default values. |
+| [Credential](../android/net/wifi/hotspot2/pps/Credential.md))`(`source:` ` [Credential](../android/net/wifi/hotspot2/pps/Credential.md)!`)` Copy constructor. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)! | [getCaCertificate](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getCaCertificate())`()` Get the CA (Certification Authority) certificate associated with this credential. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/wifi/hotspot2/pps/Credential.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/wifi/hotspot2/pps/Credential.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [X509Certificate](../java/security/cert/X509Certificate.md)! | [getCaCertificate](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the CA (Certification Authority) certificate associated with this credential. |
 | --- | --- |
-| [Credential.CertificateCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.CertificateCredential)! | [getCertCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getCertCredential())`()` Get the certificate credential information. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>! | [getClientCertificateChain](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getClientCertificateChain())`()` Get the client certificate chain associated with this credential. |
-| [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)! | [getClientPrivateKey](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getClientPrivateKey())`()` Get the client private key associated with this credential. |
+| [Credential.CertificateCredential](../android/net/wifi/hotspot2/pps/Credential.CertificateCredential.md)! | [getCertCredential](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the certificate credential information. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>! | [getClientCertificateChain](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the client certificate chain associated with this credential. |
+| [PrivateKey](../java/security/PrivateKey.md)! | [getClientPrivateKey](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the client private key associated with this credential. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumTlsVersion](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getMinimumTlsVersion())`()` Get the minimum TLS version for TLS-based EAP methods. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRealm](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getRealm())`()` Get the realm associated with this credential. |
-| [Credential.SimCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.SimCredential)! | [getSimCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getSimCredential())`()` Get the SIM credential information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumTlsVersion](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the minimum TLS version for TLS-based EAP methods. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRealm](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the realm associated with this credential. |
+| [Credential.SimCredential](../android/net/wifi/hotspot2/pps/Credential.SimCredential.md)! | [getSimCredential](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the SIM credential information. |
 | --- | --- |
-| [Credential.UserCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.UserCredential)! | [getUserCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#getUserCredential())`()` Get the user credential information. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#hashCode())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaCertificate](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setCaCertificate(java.security.cert.X509Certificate))`(`caCertificate:` ` [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!`)` Set the CA (Certification Authority) certificate associated with this credential. |
+| [Credential.UserCredential](../android/net/wifi/hotspot2/pps/Credential.UserCredential.md)! | [getUserCredential](../android/net/wifi/hotspot2/pps/Credential.md))`()` Get the user credential information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/wifi/hotspot2/pps/Credential.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaCertificate](../android/net/wifi/hotspot2/pps/Credential.md))`(`caCertificate:` ` [X509Certificate](../java/security/cert/X509Certificate.md)!`)` Set the CA (Certification Authority) certificate associated with this credential. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCertCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setCertCredential(android.net.wifi.hotspot2.pps.Credential.CertificateCredential))`(`certCredential:` ` [Credential.CertificateCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.CertificateCredential)!`)` Set the certificate credential information. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientCertificateChain](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setClientCertificateChain(kotlin.Array))`(`certificateChain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>!`)` Set the client certificate chain associated with this credential. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientPrivateKey](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setClientPrivateKey(java.security.PrivateKey))`(`clientPrivateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)!`)` Set the client private key associated with this credential. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCertCredential](../android/net/wifi/hotspot2/pps/Credential.md))`(`certCredential:` ` [Credential.CertificateCredential](../android/net/wifi/hotspot2/pps/Credential.CertificateCredential.md)!`)` Set the certificate credential information. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientCertificateChain](../android/net/wifi/hotspot2/pps/Credential.md))`(`certificateChain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>!`)` Set the client certificate chain associated with this credential. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientPrivateKey](../android/net/wifi/hotspot2/pps/Credential.md))`(`clientPrivateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`)` Set the client private key associated with this credential. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumTlsVersion](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setMinimumTlsVersion(kotlin.Int))`(`tlsVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the minimum TLS version for TLS-based EAP methods. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRealm](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setRealm(kotlin.String))`(`realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the realm associated with this credential. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSimCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setSimCredential(android.net.wifi.hotspot2.pps.Credential.SimCredential))`(`simCredential:` ` [Credential.SimCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.SimCredential)!`)` Set the SIM credential information. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumTlsVersion](../android/net/wifi/hotspot2/pps/Credential.md))`(`tlsVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the minimum TLS version for TLS-based EAP methods. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRealm](../android/net/wifi/hotspot2/pps/Credential.md))`(`realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the realm associated with this credential. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSimCredential](../android/net/wifi/hotspot2/pps/Credential.md))`(`simCredential:` ` [Credential.SimCredential](../android/net/wifi/hotspot2/pps/Credential.SimCredential.md)!`)` Set the SIM credential information. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUserCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#setUserCredential(android.net.wifi.hotspot2.pps.Credential.UserCredential))`(`userCredential:` ` [Credential.UserCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.UserCredential)!`)` Set the user credential information. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUserCredential](../android/net/wifi/hotspot2/pps/Credential.md))`(`userCredential:` ` [Credential.UserCredential](../android/net/wifi/hotspot2/pps/Credential.UserCredential.md)!`)` Set the user credential information. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/wifi/hotspot2/pps/Credential.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/wifi/hotspot2/pps/Credential.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Credential](../android/net/wifi/hotspot2/pps/Credential.md)!\> | [CREATOR](../android/net/wifi/hotspot2/pps/Credential.md) <br /> |
 
 ## Public constructors
 
@@ -94,7 +94,7 @@ Copy constructor.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential#)!:The source to copy from |
+| `source` | [Credential](../android/net/wifi/hotspot2/pps/Credential.md)!:The source to copy from |
 
 ## Public methods
 
@@ -108,7 +108,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -138,7 +138,7 @@ Get the CA (Certification Authority) certificate associated with this credential
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)! | CA certificate associated with this credential,`null`if certificate is not set or certificate is more than one. |
+| [X509Certificate](../java/security/cert/X509Certificate.md)! | CA certificate associated with this credential,`null`if certificate is not set or certificate is more than one. |
 
 ### getCertCredential
 
@@ -152,7 +152,7 @@ Get the certificate credential information.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| [Credential.CertificateCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.CertificateCredential)! | certificate credential information |
+| [Credential.CertificateCredential](../android/net/wifi/hotspot2/pps/Credential.CertificateCredential.md)! | certificate credential information |
 
 ### getClientCertificateChain
 
@@ -166,7 +166,7 @@ Get the client certificate chain associated with this credential.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>! | client certificate chain associated with this credential |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>! | client certificate chain associated with this credential |
 
 ### getClientPrivateKey
 
@@ -180,7 +180,7 @@ Get the client private key associated with this credential.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)! | client private key associated with this credential. |
+| [PrivateKey](../java/security/PrivateKey.md)! | client private key associated with this credential. |
 
 ### getMinimumTlsVersion
 
@@ -194,7 +194,7 @@ Get the minimum TLS version for TLS-based EAP methods.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_0:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_1:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_2:kotlin.Int), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_3:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](../android/net/wifi/WifiEnterpriseConfig.md), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](../android/net/wifi/WifiEnterpriseConfig.md) |
 
 ### getRealm
 
@@ -222,7 +222,7 @@ Get the SIM credential information.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| [Credential.SimCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.SimCredential)! | SIM credential information |
+| [Credential.SimCredential](../android/net/wifi/hotspot2/pps/Credential.SimCredential.md)! | SIM credential information |
 
 ### getUserCredential
 
@@ -236,7 +236,7 @@ Get the user credential information.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Credential.UserCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.UserCredential)! | user credential information |
+| [Credential.UserCredential](../android/net/wifi/hotspot2/pps/Credential.UserCredential.md)! | user credential information |
 
 ### hashCode
 
@@ -262,7 +262,7 @@ Set the CA (Certification Authority) certificate associated with this credential
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `caCertificate` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!:The CA certificate to set to |
+| `caCertificate` | [X509Certificate](../java/security/cert/X509Certificate.md)!:The CA certificate to set to |
 
 ### setCertCredential
 
@@ -276,7 +276,7 @@ Set the certificate credential information.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `certCredential` | [Credential.CertificateCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.CertificateCredential)!:The certificate credential to set to |
+| `certCredential` | [Credential.CertificateCredential](../android/net/wifi/hotspot2/pps/Credential.CertificateCredential.md)!:The certificate credential to set to |
 
 ### setClientCertificateChain
 
@@ -290,7 +290,7 @@ Set the client certificate chain associated with this credential.
 
 | Parameters ||
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `certificateChain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>!:The client certificate chain to set to |
+| `certificateChain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>!:The client certificate chain to set to |
 
 ### setClientPrivateKey
 
@@ -304,7 +304,7 @@ Set the client private key associated with this credential.
 
 | Parameters ||
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `clientPrivateKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)!:the client private key to set to |
+| `clientPrivateKey` | [PrivateKey](../java/security/PrivateKey.md)!:the client private key to set to |
 
 ### setMinimumTlsVersion
 
@@ -314,13 +314,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun setMinimumTlsVersion(tlsVersion: Int): Unit
 ```
 
-Set the minimum TLS version for TLS-based EAP methods. [android.net.wifi.WifiManager#isTlsMinimumVersionSupported()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#isTlsMinimumVersionSupported())indicates whether or not a minimum TLS version can be set. If not supported, the minimum TLS version is always TLS v1.0.
+Set the minimum TLS version for TLS-based EAP methods. [android.net.wifi.WifiManager#isTlsMinimumVersionSupported()](../android/net/wifi/WifiManager.md))indicates whether or not a minimum TLS version can be set. If not supported, the minimum TLS version is always TLS v1.0.
 
-[android.net.wifi.WifiManager#isTlsV13Supported()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#isTlsV13Supported())indicates whether or not TLS v1.3 is supported. If requested minimum is not supported, it will default to the maximum supported version.
+[android.net.wifi.WifiManager#isTlsV13Supported()](../android/net/wifi/WifiManager.md))indicates whether or not TLS v1.3 is supported. If requested minimum is not supported, it will default to the maximum supported version.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tlsVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_0:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_1:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_2:kotlin.Int), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.html#TLS_V1_3:kotlin.Int) |
+| `tlsVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](../android/net/wifi/WifiEnterpriseConfig.md), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](../android/net/wifi/WifiEnterpriseConfig.md) |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------|
@@ -352,7 +352,7 @@ Set the SIM credential information.
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `simCredential` | [Credential.SimCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.SimCredential)!:The SIM credential to set to |
+| `simCredential` | [Credential.SimCredential](../android/net/wifi/hotspot2/pps/Credential.SimCredential.md)!:The SIM credential to set to |
 
 ### setUserCredential
 
@@ -366,7 +366,7 @@ Set the user credential information.
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `userCredential` | [Credential.UserCredential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential.UserCredential)!:The user credential to set to |
+| `userCredential` | [Credential.UserCredential](../android/net/wifi/hotspot2/pps/Credential.UserCredential.md)!:The user credential to set to |
 
 ### toString
 
@@ -393,8 +393,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -10,11 +10,11 @@ class DelegateLastClassLoader : PathClassLoader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#) ||||
-| | ↳ | [dalvik.system.BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader) |||
-| | | ↳ | [dalvik.system.PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader) ||
+| ↳ | [java.lang.ClassLoader](../java/lang/ClassLoader.md) ||||
+| | ↳ | [dalvik.system.BaseDexClassLoader](../dalvik/system/BaseDexClassLoader.md) |||
+| | | ↳ | [dalvik.system.PathClassLoader](../dalvik/system/PathClassLoader.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [dalvik.system.DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#) |
+| | | | ↳ | [dalvik.system.DelegateLastClassLoader](../dalvik/system/DelegateLastClassLoader.md) |
 
 A`ClassLoader`implementation that implements a**delegate last**lookup policy. For every class or resource this loader is requested to load, the following lookup order is employed:
 
@@ -28,18 +28,18 @@ A`ClassLoader`implementation that implements a**delegate last**lookup policy. Fo
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#DelegateLastClassLoader(kotlin.String,%20java.lang.ClassLoader))`(`dexPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parent:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`)` Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#DelegateLastClassLoader(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader,%20kotlin.Boolean))with`librarySearchPath = null, delegateResourceLoading = true`. |
-| [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#DelegateLastClassLoader(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader))`(`dexPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `librarySearchPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parent:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`)` Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#DelegateLastClassLoader(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader,%20kotlin.Boolean))with`delegateResourceLoading = true`. |
-| [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#DelegateLastClassLoader(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader,%20kotlin.Boolean))`(`dexPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `librarySearchPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `parent:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?`, `delegateResourceLoading:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a`DelegateLastClassLoader`that operates on a given`dexPath`and a`librarySearchPath`. |
+| [DelegateLastClassLoader](../dalvik/system/DelegateLastClassLoader.md))`(`dexPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parent:` ` [ClassLoader](../java/lang/ClassLoader.md)!`)` Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](../dalvik/system/DelegateLastClassLoader.md))with`librarySearchPath = null, delegateResourceLoading = true`. |
+| [DelegateLastClassLoader](../dalvik/system/DelegateLastClassLoader.md))`(`dexPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `librarySearchPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parent:` ` [ClassLoader](../java/lang/ClassLoader.md)!`)` Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](../dalvik/system/DelegateLastClassLoader.md))with`delegateResourceLoading = true`. |
+| [DelegateLastClassLoader](../dalvik/system/DelegateLastClassLoader.md))`(`dexPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `librarySearchPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `parent:` ` [ClassLoader](../java/lang/ClassLoader.md)?`, `delegateResourceLoading:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a`DelegateLastClassLoader`that operates on a given`dexPath`and a`librarySearchPath`. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [getResource](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#getResource(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!\>! | [getResources](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#getResources(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [URL](../java/net/URL.md)! | [getResource](../dalvik/system/DelegateLastClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [Enumeration](../java/util/Enumeration.md)\< [URL](../java/net/URL.md)!\>! | [getResources](../dalvik/system/DelegateLastClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | [loadClass](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#loadClass(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resolve:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| [Class](../java/lang/Class.md)\<\*\>! | [loadClass](../dalvik/system/DelegateLastClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resolve:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 
 ## Public constructors
 
@@ -53,7 +53,7 @@ DelegateLastClassLoader(
     parent: ClassLoader!)
 ```
 
-Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#DelegateLastClassLoader(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader,%20kotlin.Boolean))with`librarySearchPath = null, delegateResourceLoading = true`. 
+Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](../dalvik/system/DelegateLastClassLoader.md))with`librarySearchPath = null, delegateResourceLoading = true`. 
 
 ### DelegateLastClassLoader
 
@@ -66,7 +66,7 @@ DelegateLastClassLoader(
     parent: ClassLoader!)
 ```
 
-Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#DelegateLastClassLoader(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader,%20kotlin.Boolean))with`delegateResourceLoading = true`. 
+Equivalent to calling [DelegateLastClassLoader(java.lang.String,java.lang.String,java.lang.ClassLoader,boolean)](../dalvik/system/DelegateLastClassLoader.md))with`delegateResourceLoading = true`. 
 
 ### DelegateLastClassLoader
 
@@ -85,7 +85,7 @@ Creates a`DelegateLastClassLoader`that operates on a given`dexPath`and a`library
 - JAR/ZIP/APK files, possibly containing a "classes.dex" file as well as arbitrary resources.
 - Raw ".dex" files (not inside a zip file).
 
-Unlike [PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader), this classloader will attempt to locate classes (or resources) using the following lookup order.
+Unlike [PathClassLoader](../dalvik/system/PathClassLoader.md), this classloader will attempt to locate classes (or resources) using the following lookup order.
 
 - The boot classpath is always searched first.
 - Then, the list of`dex`files contained in`dexPath`is searched./li\>
@@ -99,7 +99,7 @@ Note that this is in contrast to other standard classloaders that follow the del
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dexPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the list of jar/apk files containing classes and resources, delimited by`File.pathSeparator`, which defaults to`":"`on Android. This value cannot be`null`. |
 | `librarySearchPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the list of directories containing native libraries, delimited by`File.pathSeparator`; may be`null`. |
-| `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?:the parent class loader. May be`null`for the boot classloader. |
+| `parent` | [ClassLoader](../java/lang/ClassLoader.md)?:the parent class loader. May be`null`for the boot classloader. |
 | --- | --- |
 | `delegateResourceLoading` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether to delegate resource loading to the parent if the resource is not found. This does not affect class loading delegation. |
 
@@ -119,7 +119,7 @@ fun getResource(name: String!): URL!
 
 | Return ||
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | `URL`object for reading the resource;`null`if the resource could not be found, a`URL`could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
+| [URL](../java/net/URL.md)! | `URL`object for reading the resource;`null`if the resource could not be found, a`URL`could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -139,7 +139,7 @@ fun getResources(name: String!): Enumeration<URL!>!
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!>! | An enumeration of [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
+| [Enumeration](../java/util/Enumeration.md)< [URL](../java/net/URL.md)!>! | An enumeration of [URL](../java/net/URL.md) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
 
 | Exceptions ||
 |----------------------------------|---------------------|
@@ -161,12 +161,12 @@ protected fun loadClass(
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader#binary-name) of the class |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](../dalvik/system/DelegateLastClassLoader.md) of the class |
 | `resolve` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If`true`then resolve the class |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>! | The resulting`Class`object |
+| [Class](../java/lang/Class.md)<*>! | The resulting`Class`object |
 
 | Exceptions ||
 |------------------------------------|---------------------------------|

@@ -10,55 +10,55 @@ class Spliterators
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Spliterators](https://developer.android.com/reference/kotlin/java/util/Spliterators#) |
+| ↳ | [java.util.Spliterators](../java/util/Spliterators.md) |
 
-Static classes and methods for operating on or creating instances of [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) and its primitive specializations [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt), [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong), and [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble).
+Static classes and methods for operating on or creating instances of [Spliterator](../java/util/Spliterator.md) and its primitive specializations [Spliterator.OfInt](../java/util/Spliterator.OfInt.md), [Spliterator.OfLong](../java/util/Spliterator.OfLong.md), and [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md).
 
 ## Summary
 
 | Nested classes ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [AbstractDoubleSpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators.AbstractDoubleSpliterator) An abstract `Spliterator.OfDouble` that implements `trySplit` to permit limited parallelism. |
-| abstract | [AbstractIntSpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators.AbstractIntSpliterator) An abstract `Spliterator.OfInt` that implements `trySplit` to permit limited parallelism. |
-| abstract | [AbstractLongSpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators.AbstractLongSpliterator) An abstract `Spliterator.OfLong` that implements `trySplit` to permit limited parallelism. |
+| abstract | [AbstractDoubleSpliterator](../java/util/Spliterators.AbstractDoubleSpliterator.md) An abstract `Spliterator.OfDouble` that implements `trySplit` to permit limited parallelism. |
+| abstract | [AbstractIntSpliterator](../java/util/Spliterators.AbstractIntSpliterator.md) An abstract `Spliterator.OfInt` that implements `trySplit` to permit limited parallelism. |
+| abstract | [AbstractLongSpliterator](../java/util/Spliterators.AbstractLongSpliterator.md) An abstract `Spliterator.OfLong` that implements `trySplit` to permit limited parallelism. |
 | --- | --- |
-| abstract | [AbstractSpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators.AbstractSpliterator) An abstract `Spliterator` that implements `trySplit` to permit limited parallelism. |
+| abstract | [AbstractSpliterator](../java/util/Spliterators.AbstractSpliterator.md) An abstract `Spliterator` that implements `trySplit` to permit limited parallelism. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | [emptyDoubleSpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#emptyDoubleSpliterator())`()` Creates an empty `Spliterator.OfDouble` |
-| static [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | [emptyIntSpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#emptyIntSpliterator())`()` Creates an empty `Spliterator.OfInt` |
-| static [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | [emptyLongSpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#emptyLongSpliterator())`()` Creates an empty `Spliterator.OfLong` |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [emptyDoubleSpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator.OfDouble` |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [emptyIntSpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator.OfInt` |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [emptyLongSpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator.OfLong` |
 | --- | --- |
-| static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\>! | [emptySpliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#emptySpliterator())`()` Creates an empty `Spliterator` |
-| static [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble)! | [iterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#iterator(java.util.Spliterator.OfDouble))`(`spliterator:` ` [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)!`)` Creates an `PrimitiveIterator.OfDouble` from a `Spliterator.OfDouble`. |
-| static [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt)! | [iterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#iterator(java.util.Spliterator.OfInt))`(`spliterator:` ` [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)!`)` Creates an `PrimitiveIterator.OfInt` from a `Spliterator.OfInt`. |
+| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [emptySpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator` |
+| static [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)!`)` Creates an `PrimitiveIterator.OfDouble` from a `Spliterator.OfDouble`. |
+| static [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)!`)` Creates an `PrimitiveIterator.OfInt` from a `Spliterator.OfInt`. |
 | --- | --- |
-| static [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong)! | [iterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#iterator(java.util.Spliterator.OfLong))`(`spliterator:` ` [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)!`)` Creates an `PrimitiveIterator.OfLong` from a `Spliterator.OfLong`. |
-| static [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\>! | [iterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#iterator(java.util.Spliterator))`(`spliterator:` ` [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<out` `T>!`)` Creates an `Iterator` from a `Spliterator`. |
-| static [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.DoubleArray,%20kotlin.Int))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)!`)` Creates an `PrimitiveIterator.OfLong` from a `Spliterator.OfLong`. |
+| static [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\>! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator](../java/util/Spliterator.md)<out` `T>!`)` Creates an `Iterator` from a `Spliterator`. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering the elements of a given array, using a customized set of spliterator characteristics. |
 | --- | --- |
-| static [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.IntArray,%20kotlin.Int))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering the elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
 | --- | --- |
-| static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\>! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.Array,%20kotlin.Int))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering the elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\>! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\>! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.collections.MutableCollection,%20kotlin.Int))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using the given collection's [iterator](https://developer.android.com/reference/kotlin/java/util/Collection#iterator()) as the source of elements, and reporting its [size](https://developer.android.com/reference/kotlin/java/util/Collection#size()) as its initial size. |
+| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using the given collection's [iterator](../java/util/Collection.md)) as the source of elements, and reporting its [size](../java/util/Collection.md)) as its initial size. |
 | --- | --- |
-| static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\>! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.collections.MutableIterator,%20kotlin.Long,%20kotlin.Int))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, and with a given initially reported size. |
-| static [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(java.util.PrimitiveIterator.OfDouble,%20kotlin.Long,%20kotlin.Int))`(`iterator:` ` [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, and with a given initially reported size. |
-| static [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(java.util.PrimitiveIterator.OfInt,%20kotlin.Long,%20kotlin.Int))`(`iterator:` ` [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, and with a given initially reported size. |
 | --- | --- |
-| static [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(java.util.PrimitiveIterator.OfLong,%20kotlin.Long,%20kotlin.Int))`(`iterator:` ` [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, and with a given initially reported size. |
-| static [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.LongArray,%20kotlin.Int))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering the elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliterator(kotlin.LongArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
 | --- | --- |
-| static [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<T\>! | [spliteratorUnknownSize](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliteratorUnknownSize(kotlin.collections.MutableIterator,%20kotlin.Int))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, with no initial size estimate. |
-| static [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | [spliteratorUnknownSize](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliteratorUnknownSize(java.util.PrimitiveIterator.OfDouble,%20kotlin.Int))`(`iterator:` ` [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, with no initial size estimate. |
-| static [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | [spliteratorUnknownSize](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliteratorUnknownSize(java.util.PrimitiveIterator.OfInt,%20kotlin.Int))`(`iterator:` ` [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, with no initial size estimate. |
 | --- | --- |
-| static [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | [spliteratorUnknownSize](https://developer.android.com/reference/kotlin/java/util/Spliterators#spliteratorUnknownSize(java.util.PrimitiveIterator.OfLong,%20kotlin.Int))`(`iterator:` ` [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, with no initial size estimate. |
 
 ## Public methods
 
@@ -72,11 +72,11 @@ static fun emptyDoubleSpliterator(): Spliterator.OfDouble!
 
 Creates an empty `Spliterator.OfDouble`
 
-The empty spliterator reports [Spliterator.SIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SIZED:kotlin.Int) and [Spliterator.SUBSIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SUBSIZED:kotlin.Int). Calls to [java.util.Spliterator#trySplit()](https://developer.android.com/reference/kotlin/java/util/Spliterator#trySplit()) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------|
-| [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | An empty spliterator |
+| [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | An empty spliterator |
 
 ### emptyIntSpliterator
 
@@ -88,11 +88,11 @@ static fun emptyIntSpliterator(): Spliterator.OfInt!
 
 Creates an empty `Spliterator.OfInt`
 
-The empty spliterator reports [Spliterator.SIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SIZED:kotlin.Int) and [Spliterator.SUBSIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SUBSIZED:kotlin.Int). Calls to [java.util.Spliterator#trySplit()](https://developer.android.com/reference/kotlin/java/util/Spliterator#trySplit()) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------|
-| [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | An empty spliterator |
+| [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | An empty spliterator |
 
 ### emptyLongSpliterator
 
@@ -104,11 +104,11 @@ static fun emptyLongSpliterator(): Spliterator.OfLong!
 
 Creates an empty `Spliterator.OfLong`
 
-The empty spliterator reports [Spliterator.SIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SIZED:kotlin.Int) and [Spliterator.SUBSIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SUBSIZED:kotlin.Int). Calls to [java.util.Spliterator#trySplit()](https://developer.android.com/reference/kotlin/java/util/Spliterator#trySplit()) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------|
-| [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | An empty spliterator |
+| [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | An empty spliterator |
 
 ### emptySpliterator
 
@@ -120,7 +120,7 @@ static fun <T : Any!> emptySpliterator(): Spliterator<T>!
 
 Creates an empty `Spliterator`
 
-The empty spliterator reports [Spliterator.SIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SIZED:kotlin.Int) and [Spliterator.SUBSIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SUBSIZED:kotlin.Int). Calls to [java.util.Spliterator#trySplit()](https://developer.android.com/reference/kotlin/java/util/Spliterator#trySplit()) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
 
 | Parameters ||
 |-------|------------------|
@@ -128,7 +128,7 @@ The empty spliterator reports [Spliterator.SIZED](https://developer.android.com/
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<T>! | An empty spliterator |
+| [Spliterator](../java/util/Spliterator.md)<T>! | An empty spliterator |
 
 ### iterator
 
@@ -144,11 +144,11 @@ Traversal of elements should be accomplished through the iterator. The behaviour
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------|
-| `spliterator` | [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)!: The spliterator |
+| `spliterator` | [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)!: The spliterator |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|-------------|
-| [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble)! | An iterator |
+| [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)! | An iterator |
 
 | Exceptions ||
 |----------------------------------|------------------------------------|
@@ -168,11 +168,11 @@ Traversal of elements should be accomplished through the iterator. The behaviour
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------|
-| `spliterator` | [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)!: The spliterator |
+| `spliterator` | [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)!: The spliterator |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|-------------|
-| [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt)! | An iterator |
+| [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)! | An iterator |
 
 | Exceptions ||
 |----------------------------------|------------------------------------|
@@ -192,11 +192,11 @@ Traversal of elements should be accomplished through the iterator. The behaviour
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------|
-| `spliterator` | [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)!: The spliterator |
+| `spliterator` | [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)!: The spliterator |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-------------|
-| [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong)! | An iterator |
+| [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)! | An iterator |
 
 | Exceptions ||
 |----------------------------------|------------------------------------|
@@ -217,7 +217,7 @@ Traversal of elements should be accomplished through the iterator. The behaviour
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------|
 | `<T>` | Type of elements |
-| `spliterator` | [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<out T\>!: The spliterator |
+| `spliterator` | [Spliterator](../java/util/Spliterator.md)\<out T\>!: The spliterator |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-------------|
@@ -251,7 +251,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | A spliterator for an array |
+| [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | A spliterator for an array |
 
 | Exceptions ||
 |----------------------------------|------------------------------|
@@ -290,7 +290,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | A spliterator for an array |
+| [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | A spliterator for an array |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -325,7 +325,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | A spliterator for an array |
+| [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | A spliterator for an array |
 
 | Exceptions ||
 |----------------------------------|------------------------------|
@@ -364,7 +364,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | A spliterator for an array |
+| [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | A spliterator for an array |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -401,7 +401,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<T>! | A spliterator for an array |
+| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator for an array |
 
 | Exceptions ||
 |----------------------------------|------------------------------|
@@ -441,7 +441,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<T>! | A spliterator for an array |
+| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator for an array |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -463,9 +463,9 @@ static fun <T : Any!> spliterator(
 ): Spliterator<T>!
 ```
 
-Creates a `Spliterator` using the given collection's [iterator](https://developer.android.com/reference/kotlin/java/util/Collection#iterator()) as the source of elements, and reporting its [size](https://developer.android.com/reference/kotlin/java/util/Collection#size()) as its initial size.
+Creates a `Spliterator` using the given collection's [iterator](../java/util/Collection.md)) as the source of elements, and reporting its [size](../java/util/Collection.md)) as its initial size.
 
-The spliterator is * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the collection's iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the collection's iterator, and implements `trySplit` to permit limited parallelism.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -476,7 +476,7 @@ The spliterator is * [late-binding](https://developer.android.com/reference/kotl
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<T>! | A spliterator from an iterator |
+| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------|
@@ -496,7 +496,7 @@ static fun <T : Any!> spliterator(
 
 Creates a `Spliterator` using a given `Iterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
@@ -510,7 +510,7 @@ Traversal of elements should be accomplished through the spliterator. The behavi
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<T>! | A spliterator from an iterator |
+| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -530,20 +530,20 @@ static fun spliterator(
 
 Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `iterator` | [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble)!: The iterator for the source |
+| `iterator` | [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!: The iterator for the source |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The number of elements in the source, to be reported as initial `estimateSize` |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Characteristics of this spliterator's source or elements. The characteristics `SIZED` and `SUBSIZED` are additionally reported unless `CONCURRENT` is supplied. |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | A spliterator from an iterator |
+| [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -563,20 +563,20 @@ static fun spliterator(
 
 Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `iterator` | [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt)!: The iterator for the source |
+| `iterator` | [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!: The iterator for the source |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The number of elements in the source, to be reported as initial `estimateSize`. |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Characteristics of this spliterator's source or elements. The characteristics `SIZED` and `SUBSIZED` are additionally reported unless `CONCURRENT` is supplied. |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | A spliterator from an iterator |
+| [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -596,20 +596,20 @@ static fun spliterator(
 
 Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `iterator` | [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong)!: The iterator for the source |
+| `iterator` | [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!: The iterator for the source |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The number of elements in the source, to be reported as initial `estimateSize`. |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Characteristics of this spliterator's source or elements. The characteristics `SIZED` and `SUBSIZED` are additionally reported unless `CONCURRENT` is supplied. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | A spliterator from an iterator |
+| [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -639,7 +639,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | A spliterator for an array |
+| [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | A spliterator for an array |
 
 | Exceptions ||
 |----------------------------------|------------------------------|
@@ -678,7 +678,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | A spliterator for an array |
+| [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | A spliterator for an array |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -702,7 +702,7 @@ static fun <T : Any!> spliteratorUnknownSize(
 
 Creates a `Spliterator` using a given `Iterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 
@@ -715,7 +715,7 @@ Traversal of elements should be accomplished through the spliterator. The behavi
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<T>! | A spliterator from an iterator |
+| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -734,18 +734,18 @@ static fun spliteratorUnknownSize(
 
 Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `iterator` | [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble)!: The iterator for the source |
+| `iterator` | [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!: The iterator for the source |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Characteristics of this spliterator's source or elements (`SIZED` and `SUBSIZED`, if supplied, are ignored and are not reported.) |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble)! | A spliterator from an iterator |
+| [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -764,18 +764,18 @@ static fun spliteratorUnknownSize(
 
 Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `iterator` | [PrimitiveIterator.OfInt](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfInt)!: The iterator for the source |
+| `iterator` | [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!: The iterator for the source |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Characteristics of this spliterator's source or elements (`SIZED` and `SUBSIZED`, if supplied, are ignored and are not reported.) |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt)! | A spliterator from an iterator |
+| [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -794,18 +794,18 @@ static fun spliteratorUnknownSize(
 
 Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `iterator` | [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong)!: The iterator for the source |
+| `iterator` | [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!: The iterator for the source |
 | `characteristics` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Characteristics of this spliterator's source or elements (`SIZED` and `SUBSIZED`, if supplied, are ignored and are not reported.) |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong)! | A spliterator from an iterator |
+| [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|

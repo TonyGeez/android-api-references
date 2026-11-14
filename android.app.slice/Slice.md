@@ -9,7 +9,7 @@ class Slice : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.slice.Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice#) |
+| ↳ | [android.app.slice.Slice](../android/app/slice/Slice.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 35.**
@@ -89,10 +89,10 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getHints()()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem)!\>! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getItems()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SliceItem](../android/app/slice/SliceItem.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getItems()()` <br /> |
 | --- | --- |
-| [SliceSpec](https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec)? | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getSpec()()` <br /> |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getUri()()` <br /> |
+| [SliceSpec](../android/app/slice/SliceSpec.md)? | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getSpec()()` <br /> |
+| [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getUri()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#isCallerNeeded()()` Returns whether the caller for this slice matters. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#toString()()` <br /> |
@@ -100,7 +100,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice#)!\> | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Slice](../android/app/slice/Slice.md)!\> | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -658,7 +658,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

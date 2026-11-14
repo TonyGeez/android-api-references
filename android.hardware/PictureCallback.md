@@ -5,18 +5,18 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # PictureCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.PictureCallback "View this page in Java") 
+Kotlin| [Java](../android/hardware/Camera.PictureCallback.md) 
 | --- | --- |
 
 ```
 interface PictureCallback
 ```
 
-| [android.hardware.Camera.PictureCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback#) |
+| [android.hardware.Camera.PictureCallback](../android/hardware/Camera.PictureCallback.md) |
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
 
 Callback interface used to supply image data from a photo capture.
 
@@ -24,7 +24,7 @@ Callback interface used to supply image data from a photo capture.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPictureTaken](https://developer.android.com/reference/kotlin/android/hardware/Camera.PictureCallback#onPictureTaken(kotlin.ByteArray,%20android.hardware.Camera))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `camera:` ` [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!`)` Called when image data is available after a picture is taken. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPictureTaken](../android/hardware/Camera.PictureCallback.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Called when image data is available after a picture is taken. |
 
 ## Public methods
 
@@ -41,9 +41,9 @@ abstract fun onPictureTaken(
 
 **Deprecated:** *Deprecated in Java.*
 
-Called when image data is available after a picture is taken. The format of the data depends on the context of the callback and [Camera.Parameters](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters) settings.
+Called when image data is available after a picture is taken. The format of the data depends on the context of the callback and [Camera.Parameters](../android/hardware/Camera.Parameters.md) settings.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------|
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array of the picture data |
-| `camera` | [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!:the Camera service object |
+| `camera` | [Camera](../android/hardware/Camera.md)!:the Camera service object |

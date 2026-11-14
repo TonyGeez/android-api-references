@@ -11,11 +11,11 @@ open class UnsupportedAddressTypeException : IllegalArgumentException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) ||
-| | | | | ↳ | [java.nio.channels.UnsupportedAddressTypeException](https://developer.android.com/reference/kotlin/java/nio/channels/UnsupportedAddressTypeException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) ||
+| | | | | ↳ | [java.nio.channels.UnsupportedAddressTypeException](../java/nio/channels/UnsupportedAddressTypeException.md) |
 
 Unchecked exception thrown when an attempt is made to bind or connect to a socket address of a type that is not supported.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to bind or connect to a socke
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedAddressTypeException](https://developer.android.com/reference/kotlin/java/nio/channels/UnsupportedAddressTypeException#UnsupportedAddressTypeException())`()` Constructs an instance of this class. |
+| [UnsupportedAddressTypeException](../java/nio/channels/UnsupportedAddressTypeException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

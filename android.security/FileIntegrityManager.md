@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # FileIntegrityManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/security/FileIntegrityManager "View this page in Java") 
+Kotlin| [Java](../android/security/FileIntegrityManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class FileIntegrityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.FileIntegrityManager](https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager#) |
+| ↳ | [android.security.FileIntegrityManager](../android/security/FileIntegrityManager.md) |
 
 This class provides access to file integrity related operations. 
 Restricted for SDK Runtime environment in API level 34.
@@ -22,8 +22,8 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isApkVeritySupported](https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager#isApkVeritySupported())`()` Returns whether fs-verity is supported on the device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppSourceCertificateTrusted](https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager#isAppSourceCertificateTrusted(java.security.cert.X509Certificate))`(`certificate:` ` [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)`)` Returns whether the given certificate can be used to prove app's install source. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isApkVeritySupported](../android/security/FileIntegrityManager.md))`()` Returns whether fs-verity is supported on the device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppSourceCertificateTrusted](../android/security/FileIntegrityManager.md))`(`certificate:` ` [X509Certificate](../java/security/cert/X509Certificate.md)`)` Returns whether the given certificate can be used to prove app's install source. |
 
 ## Public methods
 
@@ -55,11 +55,11 @@ fun isAppSourceCertificateTrusted(certificate: X509Certificate): Boolean
 Returns whether the given certificate can be used to prove app's install source. Always return false if the feature is not supported.
 
 A store can use this API to decide if a signature file needs to be downloaded. Also, if a store has shipped different certificates before (e.g. with stronger and weaker key), it can also use this API to download the best signature on the running device. 
-Requires [android.Manifest.permission#INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_INSTALL_PACKAGES:kotlin.String)
+Requires [android.Manifest.permission#INSTALL_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `certificate` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#):This value cannot be`null`. |
+| `certificate` | [X509Certificate](../java/security/cert/X509Certificate.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|

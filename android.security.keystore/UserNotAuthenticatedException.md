@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # UserNotAuthenticatedException
 
-Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/UserNotAuthenticatedException "View this page in Java") 
+Kotlin| [Java](../android/security/keystore/UserNotAuthenticatedException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class UserNotAuthenticatedException : InvalidKeyException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.KeyException](https://developer.android.com/reference/kotlin/java/security/KeyException.html#) |||
-| | | | | ↳ | [java.security.InvalidKeyException](https://developer.android.com/reference/kotlin/java/security/InvalidKeyException.html#) ||
-| | | | | | ↳ | [android.security.keystore.UserNotAuthenticatedException](https://developer.android.com/reference/kotlin/android/security/keystore/UserNotAuthenticatedException#) |
+| | | | ↳ | [java.security.KeyException](../java/security/KeyException.md) |||
+| | | | | ↳ | [java.security.InvalidKeyException](../java/security/InvalidKeyException.md) ||
+| | | | | | ↳ | [android.security.keystore.UserNotAuthenticatedException](../android/security/keystore/UserNotAuthenticatedException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Indicates that a cryptographic operation could not be performed because the user has not been authenticated recently enough. Authenticating the user will resolve this issue.
@@ -28,9 +28,9 @@ Indicates that a cryptographic operation could not be performed because the user
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UserNotAuthenticatedException](https://developer.android.com/reference/kotlin/android/security/keystore/UserNotAuthenticatedException#UserNotAuthenticatedException())`()` Constructs a new`UserNotAuthenticatedException`without detail message and cause. |
-| [UserNotAuthenticatedException](https://developer.android.com/reference/kotlin/android/security/keystore/UserNotAuthenticatedException#UserNotAuthenticatedException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`UserNotAuthenticatedException`with the provided detail message and no cause. |
-| [UserNotAuthenticatedException](https://developer.android.com/reference/kotlin/android/security/keystore/UserNotAuthenticatedException#UserNotAuthenticatedException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`UserNotAuthenticatedException`with the provided detail message and cause. |
+| [UserNotAuthenticatedException](../android/security/keystore/UserNotAuthenticatedException.md))`()` Constructs a new`UserNotAuthenticatedException`without detail message and cause. |
+| [UserNotAuthenticatedException](../android/security/keystore/UserNotAuthenticatedException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`UserNotAuthenticatedException`with the provided detail message and no cause. |
+| [UserNotAuthenticatedException](../android/security/keystore/UserNotAuthenticatedException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`UserNotAuthenticatedException`with the provided detail message and cause. |
 
 ## Public constructors
 

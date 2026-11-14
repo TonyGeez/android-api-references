@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # StorageStats
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/usage/StorageStats "View this page in Java")
+Kotlin | [Java](../android/app/usage/StorageStats.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class StorageStats : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.usage.StorageStats](https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#) |
+| ↳ | [android.app.usage.StorageStats](../android/app/usage/StorageStats.md) |
 
 Storage statistics for a UID, package, or `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` on a single storage volume.
 
@@ -46,7 +46,7 @@ Storage statistics for a UID, package, or `https://developer.android.com/referen
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [StorageStats](https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#)!\> | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [StorageStats](../android/app/usage/StorageStats.md)!\> | `https://developer.android.com/reference/kotlin/android/app/usage/StorageStats#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -245,7 +245,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

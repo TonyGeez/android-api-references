@@ -8,7 +8,7 @@ class CallEndpoint : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#) |
+| ↳ | [android.telecom.CallEndpoint](../android/telecom/CallEndpoint.md) |
 
 Encapsulates the endpoint where call media can flow
 
@@ -48,7 +48,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#getEndpointName()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#getEndpointType()()` <br /> |
-| [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#getIdentifier()()` <br /> |
+| [ParcelUuid](../android/os/ParcelUuid.md) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#getIdentifier()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#toString()()` Returns a string representation of the object. |
@@ -56,8 +56,8 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#BASELINE_ENDPOINT:android.telecom.CallEndpoint` Used to reset the previous request and go with the system default call endpoint. |
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#)!\> | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#CREATOR:android.os.Parcelable.Creator` Responsible for creating CallEndpoint objects for deserialized Parcels. |
+| static [CallEndpoint](../android/telecom/CallEndpoint.md) | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#BASELINE_ENDPOINT:android.telecom.CallEndpoint` Used to reset the previous request and go with the system default call endpoint. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CallEndpoint](../android/telecom/CallEndpoint.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#CREATOR:android.os.Parcelable.Creator` Responsible for creating CallEndpoint objects for deserialized Parcels. |
 
 ## Constants
 
@@ -152,7 +152,7 @@ Constructor for a `https://developer.android.com/reference/kotlin/android/teleco
 |---|---|
 | `name` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): Human-readable name associated with the endpoint. This value cannot be `null`. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of endpoint through which call media being routed Allowed values: `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_EARPIECE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_BLUETOOTH:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_WIRED_HEADSET:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_SPEAKER:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_STREAMING:kotlin.Int` `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_UNKNOWN:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_EARPIECE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_BLUETOOTH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_WIRED_HEADSET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_SPEAKER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint#TYPE_STREAMING:kotlin.Int` |
-| `id` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): A unique identifier for this endpoint on the device. This value cannot be `null`. |
+| `id` | [ParcelUuid](../android/os/ParcelUuid.md): A unique identifier for this endpoint on the device. This value cannot be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -286,7 +286,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `destination` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `destination` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

@@ -8,7 +8,7 @@ abstract class SocketImpl : SocketOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl#) |
+| ↳ | [java.net.SocketImpl](../java/net/SocketImpl.md) |
 
 The abstract class `SocketImpl` is a common superclass of all classes that actually implement sockets. It is used to create both client and server sockets.
 
@@ -40,14 +40,14 @@ A "plain" socket implements these methods exactly as described, without attempti
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#connect(java.net.SocketAddress,%20kotlin.Int)(address: https://developer.android.com/reference/kotlin/java/net/SocketAddress!, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connects this socket to the specified port number on the specified host. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#create(kotlin.Boolean)(stream: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates either a stream or a datagram socket. |
-| open [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getFileDescriptor()()` Returns the value of this socket's `fd` field. |
+| open [FileDescriptor](../java/io/FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getFileDescriptor()()` Returns the value of this socket's `fd` field. |
 | --- | --- |
-| open [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getInetAddress()()` Returns the value of this socket's `address` field. |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getInputStream()()` Returns an input stream for this socket. |
+| open [InetAddress](../java/net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getInetAddress()()` Returns the value of this socket's `address` field. |
+| abstract [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getInputStream()()` Returns an input stream for this socket. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getLocalPort()()` Returns the value of this socket's `localport` field. |
 | --- | --- |
 | open T | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getOption(java.net.SocketOption)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption<T>!)` Called to get a socket option. |
-| abstract [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getOutputStream()()` Returns an output stream for this socket. |
+| abstract [OutputStream](../java/io/OutputStream.md)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getOutputStream()()` Returns an output stream for this socket. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#getPort()()` Returns the value of this socket's `port` field. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#listen(kotlin.Int)(backlog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the maximum queue length for incoming connection indications (a request to connect) to the `count` argument. |
@@ -58,7 +58,7 @@ A "plain" socket implements these methods exactly as described, without attempti
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#shutdownInput()()` Places the input stream for this socket at "end of stream". |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#shutdownOutput()()` Disables the output stream for this socket. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#supportedOptions()()` Returns a set of SocketOptions supported by this impl and by this impl's socket (Socket or ServerSocket) |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](../java/net/SocketOption.md)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#supportedOptions()()` Returns a set of SocketOptions supported by this impl and by this impl's socket (Socket or ServerSocket) |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#supportsUrgentData()()` Returns whether or not this SocketImpl supports sending urgent data. |
 
 | Inherited functions ||
@@ -67,8 +67,8 @@ A "plain" socket implements these methods exactly as described, without attempti
 
 | Properties ||
 |---|---|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#address:java.net.InetAddress` The IP address of the remote end of this socket. |
-| [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#fd:java.io.FileDescriptor` The file descriptor object for this socket. |
+| [InetAddress](../java/net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#address:java.net.InetAddress` The IP address of the remote end of this socket. |
+| [FileDescriptor](../java/io/FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#fd:java.io.FileDescriptor` The file descriptor object for this socket. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#localport:kotlin.Int` The local port number to which this socket is connected. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketImpl#port:kotlin.Int` The port number on the remote host to which this socket is connected. |
@@ -113,7 +113,7 @@ Accepts a connection.
 
 | Parameters ||
 |---|---|
-| `s` | [SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl#)!: the accepted connection. |
+| `s` | [SocketImpl](../java/net/SocketImpl.md)!: the accepted connection. |
 
 | Exceptions ||
 |---|---|
@@ -152,7 +152,7 @@ Binds this socket to the specified local IP address and port number.
 
 | Parameters ||
 |---|---|
-| `host` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!: an IP address that belongs to a local interface. |
+| `host` | [InetAddress](../java/net/InetAddress.md)!: an IP address that belongs to a local interface. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port number. |
 
 | Exceptions ||
@@ -210,7 +210,7 @@ Connects this socket to the specified port number on the specified host.
 
 | Parameters ||
 |---|---|
-| `address` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress)!: the IP address of the remote host. |
+| `address` | [InetAddress](../java/net/InetAddress.md)!: the IP address of the remote host. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port number. |
 
 | Exceptions ||
@@ -232,7 +232,7 @@ Connects this socket to the specified port number on the specified host. A timeo
 
 | Parameters ||
 |---|---|
-| `address` | [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress)!: the Socket address of the remote host. |
+| `address` | [SocketAddress](../java/net/SocketAddress.md)!: the Socket address of the remote host. |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the timeout value, in milliseconds, or zero for no timeout. |
 
 | Exceptions ||
@@ -342,7 +342,7 @@ Called to get a socket option.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<T\>!: The socket option |
+| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!: The socket option |
 
 | Return ||
 |---|---|
@@ -441,7 +441,7 @@ Called to set a socket option.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption)\<T\>!: The socket option |
+| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!: The socket option |
 | `value` | T: The value of the socket option. A value of `null` may be valid for some options. |
 | --- | --- |
 

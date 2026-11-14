@@ -10,120 +10,120 @@ open class Vector<E : Any!> : AbstractList<E>, Cloneable, MutableList<E>, Ra
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> |||
-| | ↳ | [java.util.AbstractList](https://developer.android.com/reference/kotlin/java/util/AbstractList)\<E\> ||
-| | | ↳ | [java.util.Vector](https://developer.android.com/reference/kotlin/java/util/Vector#) |
+| ↳ | [java.util.AbstractCollection](../java/util/AbstractCollection.md)\<E\> |||
+| | ↳ | [java.util.AbstractList](../java/util/AbstractList.md)\<E\> ||
+| | | ↳ | [java.util.Vector](../java/util/Vector.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [Stack](https://developer.android.com/reference/kotlin/java/util/Stack) |-------------------------------------------------------------------------|-------------------------------------------------------------------------| | [Stack](https://developer.android.com/reference/kotlin/java/util/Stack) | The`Stack`class represents a last-in-first-out (LIFO) stack of objects. | |
+| Known Direct Subclasses [Stack](../java/util/Stack.md) |-------------------------------------------------------------------------|-------------------------------------------------------------------------| | [Stack](../java/util/Stack.md) | The`Stack`class represents a last-in-first-out (LIFO) stack of objects. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The`Vector`class implements a growable array of objects. Like an array, it contains components that can be accessed using an integer index. However, the size of a`Vector`can grow or shrink as needed to accommodate adding and removing items after the`Vector`has been created.
 
 Each vector tries to optimize storage management by maintaining a`capacity`and a`capacityIncrement`. The`capacity`is always at least as large as the vector size; it is usually larger because as components are added to the vector, the vector's storage increases in chunks the size of`capacityIncrement`. An application can increase the capacity of a vector before inserting a large number of components; this reduces the amount of incremental reallocation.
 
-The iterators returned by this class's #iterator() and [listIterator](https://developer.android.com/reference/kotlin/java/util/Vector#listIterator(kotlin.Int))methods are*fail-fast* : if the vector is structurally modified at any time after the iterator is created, in any way except through the iterator's own [remove](https://developer.android.com/reference/kotlin/java/util/ListIterator#remove())or [add](https://developer.android.com/reference/kotlin/java/util/ListIterator#add(java.util.ListIterator.E))methods, the iterator will throw a [ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future. The [Enumerations](https://developer.android.com/reference/kotlin/java/util/Enumeration) returned by the [elements](https://developer.android.com/reference/kotlin/java/util/Vector#elements())method are*not*fail-fast; if the Vector is structurally modified at any time after the enumeration is created then the results of enumerating are undefined.
+The iterators returned by this class's #iterator() and [listIterator](../java/util/Vector.md))methods are*fail-fast* : if the vector is structurally modified at any time after the iterator is created, in any way except through the iterator's own [remove](../java/util/ListIterator.md))or [add](../java/util/ListIterator.md))methods, the iterator will throw a [ConcurrentModificationException](../java/util/ConcurrentModificationException.md). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future. The [Enumerations](../java/util/Enumeration.md) returned by the [elements](../java/util/Vector.md))method are*not*fail-fast; if the Vector is structurally modified at any time after the enumeration is created then the results of enumerating are undefined.
 
 Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. Fail-fast iterators throw`ConcurrentModificationException`on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness:*the fail-fast behavior of iterators should be used only to detect bugs.*
 
-As of the Java 2 platform v1.2, this class was retrofitted to implement the [List](https://developer.android.com/reference/kotlin/java/util/List) interface, making it a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework). Unlike the new collection implementations,`Vector`is synchronized. If a thread-safe implementation is not needed, it is recommended to use [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList) in place of`Vector`.
+As of the Java 2 platform v1.2, this class was retrofitted to implement the [List](../java/util/List.md) interface, making it a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework). Unlike the new collection implementations,`Vector`is synchronized. If a thread-safe implementation is not needed, it is recommended to use [ArrayList](../java/util/ArrayList.md) in place of`Vector`.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Vector](https://developer.android.com/reference/kotlin/java/util/Vector#Vector())`()` Constructs an empty vector so that its internal data array has size`10`and its standard capacity increment is zero. |
-| [Vector](https://developer.android.com/reference/kotlin/java/util/Vector#Vector(kotlin.Int))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an empty vector with the specified initial capacity and with its capacity increment equal to zero. |
-| [Vector](https://developer.android.com/reference/kotlin/java/util/Vector#Vector(kotlin.Int,%20kotlin.Int))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `capacityIncrement:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an empty vector with the specified initial capacity and capacity increment. |
-| [Vector](https://developer.android.com/reference/kotlin/java/util/Vector#Vector(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>`)` Constructs a vector containing the elements of the specified collection, in the order they are returned by the collection's iterator. |
+| [Vector](../java/util/Vector.md))`()` Constructs an empty vector so that its internal data array has size`10`and its standard capacity increment is zero. |
+| [Vector](../java/util/Vector.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an empty vector with the specified initial capacity and with its capacity increment equal to zero. |
+| [Vector](../java/util/Vector.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `capacityIncrement:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an empty vector with the specified initial capacity and capacity increment. |
+| [Vector](../java/util/Vector.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>`)` Constructs a vector containing the elements of the specified collection, in the order they are returned by the collection's iterator. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/Vector#add(java.util.Vector.E))`(`element:` `E`)` Appends the specified element to the end of this Vector. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/Vector#add(kotlin.Int,%20java.util.Vector.E))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Inserts the specified element at the specified position in this Vector. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/Vector#addAll(kotlin.Int,%20kotlin.collections.Collection))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Inserts all of the elements in the specified Collection into this Vector at the specified position. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../java/util/Vector.md))`(`element:` `E`)` Appends the specified element to the end of this Vector. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Inserts the specified element at the specified position in this Vector. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Inserts all of the elements in the specified Collection into this Vector at the specified position. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/Vector#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Appends all of the elements in the specified Collection to the end of this Vector, in the order that they are returned by the specified Collection's Iterator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addElement](https://developer.android.com/reference/kotlin/java/util/Vector#addElement(java.util.Vector.E))`(`obj:` `E`)` Adds the specified component to the end of this vector, increasing its size by one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](https://developer.android.com/reference/kotlin/java/util/Vector#capacity())`()` Returns the current capacity of this vector. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/Vector.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Appends all of the elements in the specified Collection to the end of this Vector, in the order that they are returned by the specified Collection's Iterator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addElement](../java/util/Vector.md))`(`obj:` `E`)` Adds the specified component to the end of this vector, increasing its size by one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](../java/util/Vector.md))`()` Returns the current capacity of this vector. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/Vector#clear())`()` Removes all of the elements from this Vector. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/Vector#clone())`()` Returns a clone of this vector. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/Vector#contains(java.util.Vector.E))`(`element:` `E?`)` Returns`true`if this vector contains the specified element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/Vector.md))`()` Removes all of the elements from this Vector. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/Vector.md))`()` Returns a clone of this vector. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/Vector.md))`(`element:` `E?`)` Returns`true`if this vector contains the specified element. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/java/util/Vector#containsAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Returns true if this Vector contains all of the elements in the specified Collection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyInto](https://developer.android.com/reference/kotlin/java/util/Vector#copyInto(kotlin.Array))`(`anArray:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>`)` Copies the components of this vector into the specified array. |
-| openE | [elementAt](https://developer.android.com/reference/kotlin/java/util/Vector#elementAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the component at the specified index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](../java/util/Vector.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Returns true if this Vector contains all of the elements in the specified Collection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyInto](../java/util/Vector.md))`(`anArray:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>`)` Copies the components of this vector into the specified array. |
+| openE | [elementAt](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the component at the specified index. |
 | --- | --- |
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)\<E\> | [elements](https://developer.android.com/reference/kotlin/java/util/Vector#elements())`()` Returns an enumeration of the components of this vector. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ensureCapacity](https://developer.android.com/reference/kotlin/java/util/Vector#ensureCapacity(kotlin.Int))`(`minCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Increases the capacity of this vector, if necessary, to ensure that it can hold at least the number of components specified by the minimum capacity argument. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/Vector#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified Object with this Vector for equality. |
+| open [Enumeration](../java/util/Enumeration.md)\<E\> | [elements](../java/util/Vector.md))`()` Returns an enumeration of the components of this vector. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ensureCapacity](../java/util/Vector.md))`(`minCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Increases the capacity of this vector, if necessary, to ensure that it can hold at least the number of components specified by the minimum capacity argument. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/Vector.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified Object with this Vector for equality. |
 | --- | --- |
-| openE | [firstElement](https://developer.android.com/reference/kotlin/java/util/Vector#firstElement())`()` Returns the first component (the item at index`0`) of this vector. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/Vector#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)<in` `E>`)` <br /> |
-| openE | [get](https://developer.android.com/reference/kotlin/java/util/Vector#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the element at the specified position in this Vector. |
+| openE | [firstElement](../java/util/Vector.md))`()` Returns the first component (the item at index`0`) of this vector. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/Vector.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `E>`)` <br /> |
+| openE | [get](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the element at the specified position in this Vector. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/Vector#hashCode())`()` Returns the hash code value for this Vector. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](https://developer.android.com/reference/kotlin/java/util/Vector#indexOf(kotlin.Any,%20kotlin.Int))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the first occurrence of the specified element in this vector, searching forwards from`index`, or returns -1 if the element is not found. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](https://developer.android.com/reference/kotlin/java/util/Vector#indexOf(java.util.Vector.E))`(`element:` `E?`)` Returns the index of the first occurrence of the specified element in this vector, or -1 if this vector does not contain the element. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/Vector.md))`()` Returns the hash code value for this Vector. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](../java/util/Vector.md))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the first occurrence of the specified element in this vector, searching forwards from`index`, or returns -1 if the element is not found. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](../java/util/Vector.md))`(`element:` `E?`)` Returns the index of the first occurrence of the specified element in this vector, or -1 if this vector does not contain the element. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [insertElementAt](https://developer.android.com/reference/kotlin/java/util/Vector#insertElementAt(java.util.Vector.E,%20kotlin.Int))`(`obj:` `E`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Inserts the specified object as a component in this vector at the specified`index`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/Vector#isEmpty())`()` Tests if this vector has no components. |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/Vector#iterator())`()` Returns an iterator over the elements in this list in proper sequence. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [insertElementAt](../java/util/Vector.md))`(`obj:` `E`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Inserts the specified object as a component in this vector at the specified`index`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/Vector.md))`()` Tests if this vector has no components. |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](../java/util/Vector.md))`()` Returns an iterator over the elements in this list in proper sequence. |
 | --- | --- |
-| openE | [lastElement](https://developer.android.com/reference/kotlin/java/util/Vector#lastElement())`()` Returns the last component of the vector. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOf](https://developer.android.com/reference/kotlin/java/util/Vector#lastIndexOf(kotlin.Any,%20kotlin.Int))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the last occurrence of the specified element in this vector, searching backwards from`index`, or returns -1 if the element is not found. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOf](https://developer.android.com/reference/kotlin/java/util/Vector#lastIndexOf(java.util.Vector.E))`(`element:` `E?`)` Returns the index of the last occurrence of the specified element in this vector, or -1 if this vector does not contain the element. |
+| openE | [lastElement](../java/util/Vector.md))`()` Returns the last component of the vector. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOf](../java/util/Vector.md))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the last occurrence of the specified element in this vector, searching backwards from`index`, or returns -1 if the element is not found. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOf](../java/util/Vector.md))`(`element:` `E?`)` Returns the index of the last occurrence of the specified element in this vector, or -1 if this vector does not contain the element. |
 | --- | --- |
-| open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | [listIterator](https://developer.android.com/reference/kotlin/java/util/Vector#listIterator())`()` Returns a list iterator over the elements in this list (in proper sequence). |
-| open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | [listIterator](https://developer.android.com/reference/kotlin/java/util/Vector#listIterator(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/Vector#remove(java.util.Vector.E))`(`element:` `E?`)` Removes the first occurrence of the specified element in this Vector If the Vector does not contain the element, it is unchanged. |
+| open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | [listIterator](../java/util/Vector.md))`()` Returns a list iterator over the elements in this list (in proper sequence). |
+| open [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<E\> | [listIterator](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/Vector.md))`(`element:` `E?`)` Removes the first occurrence of the specified element in this Vector If the Vector does not contain the element, it is unchanged. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/Vector#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Removes from this Vector all of its elements that are contained in the specified Collection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllElements](https://developer.android.com/reference/kotlin/java/util/Vector#removeAllElements())`()` Removes all components from this vector and sets its size to zero. |
-| openE | [removeAt](https://developer.android.com/reference/kotlin/java/util/Vector#removeAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes the element at the specified position in this Vector. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../java/util/Vector.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Removes from this Vector all of its elements that are contained in the specified Collection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllElements](../java/util/Vector.md))`()` Removes all components from this vector and sets its size to zero. |
+| openE | [removeAt](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes the element at the specified position in this Vector. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeElement](https://developer.android.com/reference/kotlin/java/util/Vector#removeElement(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the first (lowest-indexed) occurrence of the argument from this vector. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeElementAt](https://developer.android.com/reference/kotlin/java/util/Vector#removeElementAt(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Deletes the component at the specified index. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/java/util/Vector#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)<in` `E>`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeElement](../java/util/Vector.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the first (lowest-indexed) occurrence of the argument from this vector. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeElementAt](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Deletes the component at the specified index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](../java/util/Vector.md))`(`filter:` ` [Predicate](../java/util/function/Predicate.md)<in` `E>`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/Vector#replaceAll(java.util.function.UnaryOperator))`(`operator:` ` [UnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator)<E>`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/Vector#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Retains only the elements in this Vector that are contained in the specified Collection. |
-| openE | [set](https://developer.android.com/reference/kotlin/java/util/Vector#set(kotlin.Int,%20java.util.Vector.E))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Replaces the element at the specified position in this Vector with the specified element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](../java/util/Vector.md))`(`operator:` ` [UnaryOperator](../java/util/function/UnaryOperator.md)<E>`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](../java/util/Vector.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Retains only the elements in this Vector that are contained in the specified Collection. |
+| openE | [set](../java/util/Vector.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `element:` `E`)` Replaces the element at the specified position in this Vector with the specified element. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElementAt](https://developer.android.com/reference/kotlin/java/util/Vector#setElementAt(java.util.Vector.E,%20kotlin.Int))`(`obj:` `E`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the component at the specified`index`of this vector to be the specified object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](https://developer.android.com/reference/kotlin/java/util/Vector#setSize(kotlin.Int))`(`newSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of this vector. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](https://developer.android.com/reference/kotlin/java/util/Vector#sort(java.util.Comparator))`(`c:` ` [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)<in` `E>?`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElementAt](../java/util/Vector.md))`(`obj:` `E`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the component at the specified`index`of this vector to be the specified object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](../java/util/Vector.md))`(`newSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of this vector. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](../java/util/Vector.md))`(`c:` ` [Comparator](../java/util/Comparator.md)<in` `E>?`)` <br /> |
 | --- | --- |
-| open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/Vector#spliterator())`()` Creates a* [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* and*fail-fast* [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) over the elements in this list. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | [subList](https://developer.android.com/reference/kotlin/java/util/Vector#subList(kotlin.Int,%20kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a view of the portion of this List between fromIndex, inclusive, and toIndex, exclusive. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/Vector#toArray())`()` Returns an array containing all of the elements in this Vector in the correct order. |
+| open [Spliterator](../java/util/Spliterator.md)\<E\> | [spliterator](../java/util/Vector.md))`()` Creates a* [late-binding](../java/util/Spliterator.md)* and*fail-fast* [Spliterator](../java/util/Spliterator.md) over the elements in this list. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | [subList](../java/util/Vector.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a view of the portion of this List between fromIndex, inclusive, and toIndex, exclusive. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](../java/util/Vector.md))`()` Returns an array containing all of the elements in this Vector in the correct order. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/Vector#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this Vector in the correct order; the runtime type of the returned array is that of the specified array. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/Vector#toString())`()` Returns a string representation of this Vector, containing the String representation of each element. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trimToSize](https://developer.android.com/reference/kotlin/java/util/Vector#trimToSize())`()` Trims the capacity of this vector to be the vector's current size. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](../java/util/Vector.md))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this Vector in the correct order; the runtime type of the returned array is that of the specified array. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/Vector.md))`()` Returns a string representation of this Vector, containing the String representation of each element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trimToSize](../java/util/Vector.md))`()` Trims the capacity of this vector to be the vector's current size. |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeRange](https://developer.android.com/reference/kotlin/java/util/Vector#removeRange(kotlin.Int,%20kotlin.Int))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes from this list all of the elements whose index is between`fromIndex`, inclusive, and`toIndex`, exclusive. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeRange](../java/util/Vector.md))`(`fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Removes from this list all of the elements whose index is between`fromIndex`, inclusive, and`toIndex`, exclusive. |
 
 | Inherited functions ||
 |---|---|
-| From class [AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection) |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Adds all of the elements in the specified collection to this collection (optional operation). The behavior of this operation is undefined if the specified collection is modified while the operation is in progress. (This implies that the behavior of this call is undefined if the specified collection is this collection, and this collection is nonempty.) If the specified collection has a defined [encounter order](https://developer.android.com/reference/kotlin/java/util/SequencedCollection#encounter), processing of its elements generally occurs in that order. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#contains(java.util.AbstractCollection.E))`(`element:` `E?`)` <br /> Returns`true`if this collection contains the specified element. More formally, returns`true`if and only if this collection contains at least one element`e`such that`Objects.equals(o, e)`. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#containsAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Returns`true`if this collection contains all of the elements in the specified collection. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#isEmpty())`()` <br /> Returns`true`if this collection contains no elements. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#remove(java.util.AbstractCollection.E))`(`element:` `E?`)` <br /> Removes a single instance of the specified element from this collection, if it is present (optional operation). More formally, removes an element`e`such that`Objects.equals(o, e)`, if this collection contains one or more such elements. Returns`true`if this collection contained the specified element (or equivalently, if this collection changed as a result of the call). <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Removes all of this collection's elements that are also contained in the specified collection (optional operation). After this call returns, this collection will contain no elements in common with the specified collection. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Retains only the elements in this collection that are contained in the specified collection (optional operation). In other words, removes from this collection all of its elements that are not contained in the specified collection. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!> | [toArray](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#toArray())`()` <br /> Returns an array containing all of the elements in this collection. If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. The returned array's [runtime component type](https://developer.android.com/reference/kotlin/java/lang/Class.html#getComponentType())is`Object`. The returned array will be "safe" in that no references to it are maintained by this collection. (In other words, this method must allocate a new array even if this collection is backed by an array). The caller is thus free to modify the returned array. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T> | [toArray](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` <br /> Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. If the collection fits in the specified array, it is returned therein. Otherwise, a new array is allocated with the runtime type of the specified array and the size of this collection. If this collection fits in the specified array with room to spare (i.e., the array has more elements than this collection), the element in the array immediately following the end of the collection is set to`null`. (This is useful in determining the length of this collection*only* if the caller knows that this collection does not contain any`null`elements.) If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#toString())`()` <br /> Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters`", "`(comma and space). Elements are converted to strings as by [String.valueOf(Object)](https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)). <br /> | ||
+| From class [AbstractCollection](../java/util/AbstractCollection.md) |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Adds all of the elements in the specified collection to this collection (optional operation). The behavior of this operation is undefined if the specified collection is modified while the operation is in progress. (This implies that the behavior of this call is undefined if the specified collection is this collection, and this collection is nonempty.) If the specified collection has a defined [encounter order](../java/util/SequencedCollection.md), processing of its elements generally occurs in that order. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/AbstractCollection.md))`(`element:` `E?`)` <br /> Returns`true`if this collection contains the specified element. More formally, returns`true`if and only if this collection contains at least one element`e`such that`Objects.equals(o, e)`. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Returns`true`if this collection contains all of the elements in the specified collection. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/AbstractCollection.md))`()` <br /> Returns`true`if this collection contains no elements. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/AbstractCollection.md))`(`element:` `E?`)` <br /> Removes a single instance of the specified element from this collection, if it is present (optional operation). More formally, removes an element`e`such that`Objects.equals(o, e)`, if this collection contains one or more such elements. Returns`true`if this collection contained the specified element (or equivalently, if this collection changed as a result of the call). <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Removes all of this collection's elements that are also contained in the specified collection (optional operation). After this call returns, this collection will contain no elements in common with the specified collection. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Retains only the elements in this collection that are contained in the specified collection (optional operation). In other words, removes from this collection all of its elements that are not contained in the specified collection. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!> | [toArray](../java/util/AbstractCollection.md))`()` <br /> Returns an array containing all of the elements in this collection. If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. The returned array's [runtime component type](../java/lang/Class.md))is`Object`. The returned array will be "safe" in that no references to it are maintained by this collection. (In other words, this method must allocate a new array even if this collection is backed by an array). The caller is thus free to modify the returned array. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T> | [toArray](../java/util/AbstractCollection.md))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` <br /> Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. If the collection fits in the specified array, it is returned therein. Otherwise, a new array is allocated with the runtime type of the specified array and the size of this collection. If this collection fits in the specified array with room to spare (i.e., the array has more elements than this collection), the element in the array immediately following the end of the collection is set to`null`. (This is useful in determining the length of this collection*only* if the caller knows that this collection does not contain any`null`elements.) If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/AbstractCollection.md))`()` <br /> Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters`", "`(comma and space). Elements are converted to strings as by [String.valueOf(Object)](../java/lang/String.md)). <br /> | ||
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacityIncrement](https://developer.android.com/reference/kotlin/java/util/Vector#capacityIncrement:kotlin.Int) The amount by which the capacity of the vector is automatically incremented when its size becomes greater than its capacity. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [elementCount](https://developer.android.com/reference/kotlin/java/util/Vector#elementCount:kotlin.Int) The number of valid components in this`Vector`object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [elementData](https://developer.android.com/reference/kotlin/java/util/Vector#elementData:kotlin.Array) The array buffer into which the components of the vector are stored. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacityIncrement](../java/util/Vector.md) The amount by which the capacity of the vector is automatically incremented when its size becomes greater than its capacity. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [elementCount](../java/util/Vector.md) The number of valid components in this`Vector`object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [elementData](../java/util/Vector.md) The array buffer into which the components of the vector are stored. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/Vector#size:kotlin.Int) Returns the number of components in this vector. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/Vector.md) Returns the number of components in this vector. |
 
 | Inherited properties ||
 |---|---|
-| From class [AbstractList](https://developer.android.com/reference/kotlin/java/util/AbstractList) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [modCount](https://developer.android.com/reference/kotlin/java/util/AbstractList#modCount:kotlin.Int) <br /> The number of times this list has been*structurally modified*. Structural modifications are those that change the size of the list, or otherwise perturb it in such a fashion that iterations in progress may yield incorrect results. This field is used by the iterator and list iterator implementation returned by the`iterator`and`listIterator`methods. If the value of this field changes unexpectedly, the iterator (or list iterator) will throw a`ConcurrentModificationException`in response to the`next`,`remove`,`previous`,`set`or`add`operations. This provides*fail-fast*behavior, rather than non-deterministic behavior in the face of concurrent modification during iteration. **Use of this field by subclasses is optional.** If a subclass wishes to provide fail-fast iterators (and list iterators), then it merely has to increment this field in its`add(int, E)`and`remove(int)`methods (and any other methods that it overrides that result in structural modifications to the list). A single call to`add(int, E)`or`remove(int)`must add no more than one to this field, or the iterators (and list iterators) will throw bogus`ConcurrentModificationExceptions`. If an implementation does not wish to provide fail-fast iterators, this field may be ignored. <br /> | ||
-| From class [AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#size:kotlin.Int) <br /> | ||
+| From class [AbstractList](../java/util/AbstractList.md) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [modCount](../java/util/AbstractList.md) <br /> The number of times this list has been*structurally modified*. Structural modifications are those that change the size of the list, or otherwise perturb it in such a fashion that iterations in progress may yield incorrect results. This field is used by the iterator and list iterator implementation returned by the`iterator`and`listIterator`methods. If the value of this field changes unexpectedly, the iterator (or list iterator) will throw a`ConcurrentModificationException`in response to the`next`,`remove`,`previous`,`set`or`add`operations. This provides*fail-fast*behavior, rather than non-deterministic behavior in the face of concurrent modification during iteration. **Use of this field by subclasses is optional.** If a subclass wishes to provide fail-fast iterators (and list iterators), then it merely has to increment this field in its`add(int, E)`and`remove(int)`methods (and any other methods that it overrides that result in structural modifications to the list). A single call to`add(int, E)`or`remove(int)`must add no more than one to this field, or the iterators (and list iterators) will throw bogus`ConcurrentModificationExceptions`. If an implementation does not wish to provide fail-fast iterators, this field may be ignored. <br /> | ||
+| From class [AbstractCollection](../java/util/AbstractCollection.md) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/AbstractCollection.md) <br /> | ||
 
 ## Public constructors
 
@@ -212,7 +212,7 @@ Appends the specified element to the end of this Vector.
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Collection.add](https://developer.android.com/reference/kotlin/java/util/Collection#add(java.util.Collection.E))) |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Collection.add](../java/util/Collection.md))) |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------------|
@@ -322,7 +322,7 @@ open fun addElement(obj: E): Unit
 
 Adds the specified component to the end of this vector, increasing its size by one. The capacity of this vector is increased if its size becomes greater than its capacity.
 
-This method is identical in functionality to the #add(java.lang.Object) method (which is part of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface).
+This method is identical in functionality to the #add(java.lang.Object) method (which is part of the [List](../java/util/List.md) interface).
 
 | Parameters ||
 |-------|-----------------------------|
@@ -394,8 +394,8 @@ Returns`true`if this vector contains the specified element. More formally, retur
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
 
 ### containsAll
 
@@ -417,7 +417,7 @@ Returns true if this Vector contains all of the elements in the specified Collec
 
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the types of one or more elements in the specified collection are incompatible with this list ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.ClassCastException` | if the types of one or more elements in the specified collection are incompatible with this list ([optional](../java/util/Collection.md)) |
 | `java.lang.NullPointerException` | if the specified collection is null |
 
 ### copyInto
@@ -453,7 +453,7 @@ open fun elementAt(index: Int): E
 
 Returns the component at the specified index.
 
-This method is identical in functionality to the [get(int)](https://developer.android.com/reference/kotlin/java/util/Vector#get(kotlin.Int))method (which is part of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface).
+This method is identical in functionality to the [get(int)](../java/util/Vector.md))method (which is part of the [List](../java/util/List.md) interface).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------|
@@ -479,11 +479,11 @@ Returns an enumeration of the components of this vector. The returned`Enumeratio
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)<E> | an enumeration of the components of this vector |
+| [Enumeration](../java/util/Enumeration.md)<E> | an enumeration of the components of this vector |
 
 **See Also**
 
-- [java.util.Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator) 
+- [java.util.Iterator](../java/util/Iterator.md) 
 
 ### ensureCapacity
 
@@ -548,7 +548,7 @@ open fun forEach(action: Consumer<in E>): Unit
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)\<inE\>:The action to be performed for each element |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inE\>:The action to be performed for each element |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -619,7 +619,7 @@ Returns the index of the first occurrence of the specified element in this vecto
 
 **See Also**
 
-- [java.lang.Object#equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)) 
+- [java.lang.Object#equals(Object)](../java/lang/Object.md)) 
 
 ### indexOf
 
@@ -641,8 +641,8 @@ Returns the index of the first occurrence of the specified element in this vecto
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
 
 ### insertElementAt
 
@@ -659,7 +659,7 @@ Inserts the specified object as a component in this vector at the specified`inde
 
 The index must be a value greater than or equal to`0`and less than or equal to the current size of the vector. (If the index is equal to the current size of the vector, the new element is appended to the Vector.)
 
-This method is identical in functionality to the [add(int, E)](https://developer.android.com/reference/kotlin/java/util/Vector#add(kotlin.Int,%20java.util.Vector.E))method (which is part of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface). Note that the`add`method reverses the order of the parameters, to more closely match array usage.
+This method is identical in functionality to the [add(int, E)](../java/util/Vector.md))method (which is part of the [List](../java/util/List.md) interface). Note that the`add`method reverses the order of the parameters, to more closely match array usage.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------|
@@ -694,7 +694,7 @@ open fun iterator(): MutableIterator<E>
 
 Returns an iterator over the elements in this list in proper sequence.
 
-The returned iterator is [*fail-fast*](https://developer.android.com/reference/kotlin/java/util/Vector#fail-fast).
+The returned iterator is [*fail-fast*](../java/util/Vector.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -764,8 +764,8 @@ Returns the index of the last occurrence of the specified element in this vector
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
 
 ### listIterator
 
@@ -777,7 +777,7 @@ open fun listIterator(): MutableListIterator<E>
 
 Returns a list iterator over the elements in this list (in proper sequence).
 
-The returned list iterator is [*fail-fast*](https://developer.android.com/reference/kotlin/java/util/Vector#fail-fast).
+The returned list iterator is [*fail-fast*](../java/util/Vector.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -785,7 +785,7 @@ The returned list iterator is [*fail-fast*](https://developer.android.com/refere
 
 **See Also**
 
-- [#listIterator(int)](https://developer.android.com/reference/kotlin/java/util/Vector#listIterator(kotlin.Int)) 
+- [#listIterator(int)](../java/util/Vector.md)) 
 
 ### listIterator
 
@@ -795,13 +795,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun listIterator(index: Int): MutableListIterator<E>
 ```
 
-Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list. The specified index indicates the first element that would be returned by an initial call to [next](https://developer.android.com/reference/kotlin/java/util/ListIterator#next()). An initial call to [previous](https://developer.android.com/reference/kotlin/java/util/ListIterator#previous())would return the element with the specified index minus one.
+Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list. The specified index indicates the first element that would be returned by an initial call to [next](../java/util/ListIterator.md)). An initial call to [previous](../java/util/ListIterator.md))would return the element with the specified index minus one.
 
-The returned list iterator is [*fail-fast*](https://developer.android.com/reference/kotlin/java/util/Vector#fail-fast).
+The returned list iterator is [*fail-fast*](../java/util/Vector.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index of the first element to be returned from the list iterator (by a call to [next](https://developer.android.com/reference/kotlin/java/util/ListIterator#next())) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index of the first element to be returned from the list iterator (by a call to [next](../java/util/ListIterator.md))) |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -831,8 +831,8 @@ Removes the first occurrence of the specified element in this Vector If the Vect
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this list |
 | --- | --- |
 
@@ -857,8 +857,8 @@ Removes from this Vector all of its elements that are contained in the specified
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if the`removeAll`operation is not supported by this list |
-| `java.lang.ClassCastException` | if the types of one or more elements in this vector are incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if this vector contains one or more null elements and the specified collection does not support null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the types of one or more elements in this vector are incompatible with the specified collection ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if this vector contains one or more null elements and the specified collection does not support null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
 | --- | --- |
 
 ### removeAllElements
@@ -871,7 +871,7 @@ open fun removeAllElements(): Unit
 
 Removes all components from this vector and sets its size to zero.
 
-This method is identical in functionality to the #clear method (which is part of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface). 
+This method is identical in functionality to the #clear method (which is part of the [List](../java/util/List.md) interface). 
 
 ### removeAt
 
@@ -908,7 +908,7 @@ open fun removeElement(obj: Any?): Boolean
 
 Removes the first (lowest-indexed) occurrence of the argument from this vector. If the object is found in this vector, each component in the vector with an index greater or equal to the object's index is shifted downward to have an index one smaller than the value it had previously.
 
-This method is identical in functionality to the #remove(java.lang.Object) method (which is part of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface).
+This method is identical in functionality to the #remove(java.lang.Object) method (which is part of the [List](../java/util/List.md) interface).
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------|
@@ -930,7 +930,7 @@ Deletes the component at the specified index. Each component in this vector with
 
 The index must be a value greater than or equal to`0`and less than the current size of the vector.
 
-This method is identical in functionality to the [remove(int)](https://developer.android.com/reference/kotlin/java/util/Vector#removeAt(kotlin.Int))method (which is part of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface). Note that the`remove`method returns the old value that was stored at the specified position.
+This method is identical in functionality to the [remove(int)](../java/util/Vector.md))method (which is part of the [List](../java/util/List.md) interface). Note that the`remove`method returns the old value that was stored at the specified position.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------|
@@ -950,7 +950,7 @@ open fun removeIf(filter: Predicate<in E>): Boolean
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `filter` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)\<inE\>:a predicate which returns`true`for elements to be removed |
+| `filter` | [Predicate](../java/util/function/Predicate.md)\<inE\>:a predicate which returns`true`for elements to be removed |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|
@@ -971,12 +971,12 @@ open fun replaceAll(operator: UnaryOperator<E>): Unit
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `operator` | [UnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator)\<E\>:the operator to apply to each element |
+| `operator` | [UnaryOperator](../java/util/function/UnaryOperator.md)\<E\>:the operator to apply to each element |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if this list is unmodifiable. Implementations may throw this exception if an element cannot be replaced or if, in general, modification is not supported |
-| `java.lang.NullPointerException` | if the specified operator is null or if the operator result is a null value and this list does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.NullPointerException` | if the specified operator is null or if the operator result is a null value and this list does not permit null elements ([optional](../java/util/Collection.md)) |
 
 ### retainAll
 
@@ -999,8 +999,8 @@ Retains only the elements in this Vector that are contained in the specified Col
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if the`retainAll`operation is not supported by this list |
-| `java.lang.ClassCastException` | if the types of one or more elements in this vector are incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if this vector contains one or more null elements and the specified collection does not support null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the types of one or more elements in this vector are incompatible with the specified collection ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if this vector contains one or more null elements and the specified collection does not support null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
 | --- | --- |
 
 ### set
@@ -1051,7 +1051,7 @@ Sets the component at the specified`index`of this vector to be the specified obj
 
 The index must be a value greater than or equal to`0`and less than the current size of the vector.
 
-This method is identical in functionality to the [set(int, E)](https://developer.android.com/reference/kotlin/java/util/Vector#set(kotlin.Int,%20java.util.Vector.E))method (which is part of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface). Note that the`set`method reverses the order of the parameters, to more closely match array usage. Note also that the`set`method returns the old value that was stored at the specified position.
+This method is identical in functionality to the [set(int, E)](../java/util/Vector.md))method (which is part of the [List](../java/util/List.md) interface). Note that the`set`method reverses the order of the parameters, to more closely match array usage. Note also that the`set`method returns the old value that was stored at the specified position.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------|
@@ -1090,13 +1090,13 @@ open fun sort(c: Comparator<in E>?): Unit
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `c` | [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<inE\>?:the`Comparator`used to compare list elements. A`null`value indicates that the elements' [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) should be used |
+| `c` | [Comparator](../java/util/Comparator.md)\<inE\>?:the`Comparator`used to compare list elements. A`null`value indicates that the elements' [natural ordering](../java/lang/Comparable.md) should be used |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.ClassCastException` | if the list contains elements that are not*mutually comparable*using the specified comparator |
 | `java.lang.UnsupportedOperationException` | if the list's list-iterator does not support the`set`operation |
-| `java.lang.IllegalArgumentException` | ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) if the comparator is found to violate the [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator) contract |
+| `java.lang.IllegalArgumentException` | ([optional](../java/util/Collection.md)) if the comparator is found to violate the [Comparator](../java/util/Comparator.md) contract |
 | --- | --- |
 
 ### spliterator
@@ -1107,13 +1107,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun spliterator(): Spliterator<E>
 ```
 
-Creates a* [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* and*fail-fast* [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) over the elements in this list.
+Creates a* [late-binding](../java/util/Spliterator.md)* and*fail-fast* [Spliterator](../java/util/Spliterator.md) over the elements in this list.
 
-The`Spliterator`reports [Spliterator.SIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SIZED:kotlin.Int), [Spliterator.SUBSIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SUBSIZED:kotlin.Int), and [Spliterator.ORDERED](https://developer.android.com/reference/kotlin/java/util/Spliterator#ORDERED:kotlin.Int). Overriding implementations should document the reporting of additional characteristic values.
+The`Spliterator`reports [Spliterator.SIZED](../java/util/Spliterator.md), [Spliterator.SUBSIZED](../java/util/Spliterator.md), and [Spliterator.ORDERED](../java/util/Spliterator.md). Overriding implementations should document the reporting of additional characteristic values.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<E> | a`Spliterator`over the elements in this list |
+| [Spliterator](../java/util/Spliterator.md)<E> | a`Spliterator`over the elements in this list |
 
 ### subList
 

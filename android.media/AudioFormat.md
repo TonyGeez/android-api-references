@@ -8,17 +8,17 @@ class AudioFormat : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat#) |
+| ↳ | [android.media.AudioFormat](../android/media/AudioFormat.md) |
 
 The `https://developer.android.com/reference/kotlin/android/media/AudioFormat#` class is used to access a number of audio format and channel configuration constants. They are for instance used in `https://developer.android.com/reference/kotlin/android/media/AudioTrack``https://developer.android.com/reference/kotlin/android/media/AudioRecord`, as valid values in individual parameters of constructors like `https://developer.android.com/reference/kotlin/android/media/AudioTrack#AudioTrack(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, where the fourth parameter is one of the `AudioFormat.ENCODING_*` constants. The `AudioFormat` constants are also used in `https://developer.android.com/reference/kotlin/android/media/MediaFormat` to specify audio related values commonly used in media, such as for `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_MASK:kotlin.String`
 
 The `https://developer.android.com/reference/kotlin/android/media/AudioFormat.Builder` class can be used to create instances of the `AudioFormat` format class. Refer to `https://developer.android.com/reference/kotlin/android/media/AudioFormat.Builder` for documentation on the mechanics of the configuration and building of such instances. Here we describe the main concepts that the `AudioFormat` class allow you to convey in each instance, they are:
 
-1. [sample rate](https://developer.android.com/reference/kotlin/android/media/AudioFormat#sampleRate)
-2. [encoding](https://developer.android.com/reference/kotlin/android/media/AudioFormat#encoding)
-3. [channel masks](https://developer.android.com/reference/kotlin/android/media/AudioFormat#channelMask)
+1. [sample rate](../android/media/AudioFormat.md)
+2. [encoding](../android/media/AudioFormat.md)
+3. [channel masks](../android/media/AudioFormat.md)
 
-Closely associated with the `AudioFormat` is the notion of an [audio frame](https://developer.android.com/reference/kotlin/android/media/AudioFormat#audioFrame), which is used throughout the documentation to represent the minimum size complete unit of audio data.
+Closely associated with the `AudioFormat` is the notion of an [audio frame](../android/media/AudioFormat.md), which is used throughout the documentation to represent the minimum size complete unit of audio data.
 
 #### Sample rate
 
@@ -113,7 +113,7 @@ As of API `https://developer.android.com/reference/kotlin/android/os/Build.VERSI
 
 #### Audio Frame
 
-For linear PCM, an audio frame consists of a set of samples captured at the same time, whose count and channel association are given by the [channel mask](https://developer.android.com/reference/kotlin/android/media/AudioFormat#channelMask), and whose sample contents are specified by the [encoding](https://developer.android.com/reference/kotlin/android/media/AudioFormat#encoding). For example, a stereo 16 bit PCM frame consists of two 16 bit linear PCM samples, with a frame size of 4 bytes. For compressed audio, an audio frame may alternately refer to an access unit of compressed data bytes that is logically grouped together for decoding and bitstream access (e.g. `https://developer.android.com/reference/kotlin/android/media/MediaCodec`), or a single byte of compressed data (e.g. `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getBufferSizeInFrames()`), or the linear PCM frame result from decoding the compressed data (e.g.`https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackHeadPosition()`), depending on the context where audio frame is used. For the purposes of `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getFrameSizeInBytes()`, a compressed data format returns a frame size of 1 byte.
+For linear PCM, an audio frame consists of a set of samples captured at the same time, whose count and channel association are given by the [channel mask](../android/media/AudioFormat.md), and whose sample contents are specified by the [encoding](../android/media/AudioFormat.md). For example, a stereo 16 bit PCM frame consists of two 16 bit linear PCM samples, with a frame size of 4 bytes. For compressed audio, an audio frame may alternately refer to an access unit of compressed data bytes that is logically grouped together for decoding and bitstream access (e.g. `https://developer.android.com/reference/kotlin/android/media/MediaCodec`), or a single byte of compressed data (e.g. `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getBufferSizeInFrames()`), or the linear PCM frame result from decoding the compressed data (e.g.`https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackHeadPosition()`), depending on the context where audio frame is used. For the purposes of `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getFrameSizeInBytes()`, a compressed data format returns a frame size of 1 byte.
 
 ## Summary
 
@@ -346,7 +346,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AudioFormat](https://developer.android.com/reference/kotlin/android/media/AudioFormat#)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AudioFormat](../android/media/AudioFormat.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioFormat#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -2068,7 +2068,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun getChannelAcnMask(): Int
 ```
 
-Return the Ambisonics channel mask. See the section on [Ambisonics channel masks](https://developer.android.com/reference/kotlin/android/media/AudioFormat#channelAcnMask) for more information.
+Return the Ambisonics channel mask. See the section on [Ambisonics channel masks](../android/media/AudioFormat.md) for more information.
 
 | Return ||
 |---|---|
@@ -2096,7 +2096,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getChannelIndexMask(): Int
 ```
 
-Return the channel index mask. See the section on [channel masks](https://developer.android.com/reference/kotlin/android/media/AudioFormat#channelMask) for more information about the difference between index-based masks, and position-based masks (as returned by `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelMask()`).
+Return the channel index mask. See the section on [channel masks](../android/media/AudioFormat.md) for more information about the difference between index-based masks, and position-based masks (as returned by `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelMask()`).
 
 | Return ||
 |---|---|
@@ -2110,7 +2110,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getChannelMask(): Int
 ```
 
-Return the channel mask. See the section on [channel masks](https://developer.android.com/reference/kotlin/android/media/AudioFormat#channelMask) for more information about the difference between index-based masks(as returned by `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelIndexMask()`) and the position-based mask returned by this function.
+Return the channel mask. See the section on [channel masks](../android/media/AudioFormat.md) for more information about the difference between index-based masks(as returned by `https://developer.android.com/reference/kotlin/android/media/AudioFormat#getChannelIndexMask()`) and the position-based mask returned by this function.
 
 | Return ||
 |---|---|
@@ -2124,7 +2124,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getEncoding(): Int
 ```
 
-Return the encoding. See the section on [encodings](https://developer.android.com/reference/kotlin/android/media/AudioFormat#encoding) for more information about the different types of supported audio encoding.
+Return the encoding. See the section on [encodings](../android/media/AudioFormat.md) for more information about the different types of supported audio encoding.
 
 | Return ||
 |---|---|
@@ -2207,7 +2207,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

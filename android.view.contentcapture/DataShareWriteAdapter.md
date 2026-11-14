@@ -4,14 +4,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # DataShareWriteAdapter
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter "View this page in Java") 
+Kotlin| [Java](../android/view/contentcapture/DataShareWriteAdapter.md) 
 | --- | --- |
 
 ```
 interface DataShareWriteAdapter
 ```
 
-| [android.view.contentcapture.DataShareWriteAdapter](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareWriteAdapter#) |
+| [android.view.contentcapture.DataShareWriteAdapter](../android/view/contentcapture/DataShareWriteAdapter.md) |
 
 Adapter class used by apps to share data with the Content Capture service.
 
@@ -19,9 +19,9 @@ Adapter class used by apps to share data with the Content Capture service.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareWriteAdapter#onError(kotlin.Int))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method invoked when an error occurred, for example sessions has not been started or terminated unsuccessfully. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRejected](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareWriteAdapter#onRejected())`()` Data share sessions has been rejected by the Content Capture service. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWrite](https://developer.android.com/reference/kotlin/android/view/contentcapture/DataShareWriteAdapter#onWrite(android.os.ParcelFileDescriptor))`(`destination:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)`)` Method invoked when the data share session has been started and the app needs to start writing into the file used for sharing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/view/contentcapture/DataShareWriteAdapter.md))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method invoked when an error occurred, for example sessions has not been started or terminated unsuccessfully. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRejected](../android/view/contentcapture/DataShareWriteAdapter.md))`()` Data share sessions has been rejected by the Content Capture service. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWrite](../android/view/contentcapture/DataShareWriteAdapter.md))`(`destination:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)`)` Method invoked when the data share session has been started and the app needs to start writing into the file used for sharing. |
 | --- | --- |
 
 ## Public methods
@@ -38,7 +38,7 @@ Method invoked when an error occurred, for example sessions has not been started
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the error code corresponding to an ERROR_\* value. Value is [android.view.contentcapture.ContentCaptureManager#DATA_SHARE_ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#DATA_SHARE_ERROR_UNKNOWN:kotlin.Int), [android.view.contentcapture.ContentCaptureManager#DATA_SHARE_ERROR_CONCURRENT_REQUEST](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#DATA_SHARE_ERROR_CONCURRENT_REQUEST:kotlin.Int), or [android.view.contentcapture.ContentCaptureManager#DATA_SHARE_ERROR_TIMEOUT_INTERRUPTED](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#DATA_SHARE_ERROR_TIMEOUT_INTERRUPTED:kotlin.Int) |
+| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the error code corresponding to an ERROR_\* value. Value is [android.view.contentcapture.ContentCaptureManager#DATA_SHARE_ERROR_UNKNOWN](../android/view/contentcapture/ContentCaptureManager.md), [android.view.contentcapture.ContentCaptureManager#DATA_SHARE_ERROR_CONCURRENT_REQUEST](../android/view/contentcapture/ContentCaptureManager.md), or [android.view.contentcapture.ContentCaptureManager#DATA_SHARE_ERROR_TIMEOUT_INTERRUPTED](../android/view/contentcapture/ContentCaptureManager.md) |
 
 ### onRejected
 
@@ -64,4 +64,4 @@ App needs to handle explicitly cases when the file descriptor is closed and hand
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `destination` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#):file descriptor used to write data into. This value cannot be`null`. |
+| `destination` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md):file descriptor used to write data into. This value cannot be`null`. |

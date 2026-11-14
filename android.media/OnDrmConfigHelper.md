@@ -4,14 +4,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # OnDrmConfigHelper
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnDrmConfigHelper "View this page in Java") 
+Kotlin| [Java](../android/media/MediaPlayer.OnDrmConfigHelper.md) 
 | --- | --- |
 
 ```
 interface OnDrmConfigHelper
 ```
 
-| [android.media.MediaPlayer.OnDrmConfigHelper](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnDrmConfigHelper#) |
+| [android.media.MediaPlayer.OnDrmConfigHelper](../android/media/MediaPlayer.OnDrmConfigHelper.md) |
 
 Interface definition of a callback to be invoked when the app can do DRM configuration (get/set properties) before the session is opened. This facilitates configuration of the properties, like 'securityLevel', which has to be set after DRM scheme creation but before the DRM session is opened. The only allowed DRM calls in this listener are`getDrmPropertyString`and`setDrmPropertyString`.
 
@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked when the app can do DRM configu
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmConfig](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnDrmConfigHelper#onDrmConfig(android.media.MediaPlayer))`(`mp:` ` [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!`)` Called to give the app the opportunity to configure DRM before the session is created |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmConfig](../android/media/MediaPlayer.OnDrmConfigHelper.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`)` Called to give the app the opportunity to configure DRM before the session is created |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called to give the app the opportunity to configure DRM before the session is cr
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the`MediaPlayer`associated with this callback |
+| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the`MediaPlayer`associated with this callback |

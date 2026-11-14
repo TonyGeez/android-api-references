@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # RenderInput
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/RenderInput "View this page in Java") 
+Kotlin| [Java](../android/adservices/ondevicepersonalization/RenderInput.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ class RenderInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.RenderInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#) |
+| ↳ | [android.adservices.ondevicepersonalization.RenderInput](../android/adservices/ondevicepersonalization/RenderInput.md) |
 
-The input data for [IsolatedWorker.onRender(RenderInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onRender(android.adservices.ondevicepersonalization.RenderInput,%20android.os.OutcomeReceiver)).
+The input data for [IsolatedWorker.onRender(RenderInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RenderInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#RenderInput(kotlin.Int,%20kotlin.Int,%20android.adservices.ondevicepersonalization.RenderingConfig))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `renderingConfig:` ` [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig)?`)` Creates a new RenderInput. |
+| [RenderInput](../android/adservices/ondevicepersonalization/RenderInput.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `renderingConfig:` ` [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md)?`)` Creates a new RenderInput. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#getHeight())`()` The height of the slot. |
-| [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig)? | [getRenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#getRenderingConfig())`()` A [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig) within an [ExecuteOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/RenderInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/adservices/ondevicepersonalization/RenderInput.md))`()` The height of the slot. |
+| [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md)? | [getRenderingConfig](../android/adservices/ondevicepersonalization/RenderInput.md))`()` A [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md) within an [ExecuteOutput](../android/adservices/ondevicepersonalization/ExecuteOutput.md) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#getWidth())`()` The width of the slot. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderInput#hashCode())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/adservices/ondevicepersonalization/RenderInput.md))`()` The width of the slot. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/RenderInput.md))`()` <br /> |
 
 ## Public constructors
 
@@ -51,7 +51,7 @@ Creates a new RenderInput.
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the slot. |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The height of the slot. |
-| `renderingConfig` | [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig)?:A [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig) within an [ExecuteOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)). This value may be`null`. |
+| `renderingConfig` | [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md)?:A [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md) within an [ExecuteOutput](../android/adservices/ondevicepersonalization/ExecuteOutput.md) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)). This value may be`null`. |
 | --- | --- |
 
 ## Public methods
@@ -103,11 +103,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getRenderingConfig(): RenderingConfig?
 ```
 
-A [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig) within an [ExecuteOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteOutput) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)).
+A [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md) within an [ExecuteOutput](../android/adservices/ondevicepersonalization/ExecuteOutput.md) that was returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [RenderingConfig](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RenderingConfig)? | This value may be`null`. |
+| [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md)? | This value may be`null`. |
 
 ### getWidth
 

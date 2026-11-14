@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiEnterpriseConfig
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/WifiEnterpriseConfig.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class WifiEnterpriseConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.WifiEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#) |
+| ↳ | [android.net.wifi.WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md) |
 
 Enterprise configuration details for Wi-Fi. Stores details about the EAP method and any associated credentials.
 
@@ -21,98 +21,98 @@ Enterprise configuration details for Wi-Fi. Stores details about the EAP method 
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Eap](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.Eap) The Extensible Authentication Protocol method used |
-| | [Phase2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.Phase2) The inner authentication method used |
+| | [Eap](../android/net/wifi/WifiEnterpriseConfig.Eap.md) The Extensible Authentication Protocol method used |
+| | [Phase2](../android/net/wifi/WifiEnterpriseConfig.Phase2.md) The inner authentication method used |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_AS_CERTIFICATE_DATA](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#EXTRA_WAPI_AS_CERTIFICATE_DATA:kotlin.String) Intent extra: data for WAPI AS certificates |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_AS_CERTIFICATE_NAME](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#EXTRA_WAPI_AS_CERTIFICATE_NAME:kotlin.String) Intent extra: name for WAPI AS certificates |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_USER_CERTIFICATE_DATA](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#EXTRA_WAPI_USER_CERTIFICATE_DATA:kotlin.String) Intent extra: data for WAPI USER certificates |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_AS_CERTIFICATE_DATA](../android/net/wifi/WifiEnterpriseConfig.md) Intent extra: data for WAPI AS certificates |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_AS_CERTIFICATE_NAME](../android/net/wifi/WifiEnterpriseConfig.md) Intent extra: name for WAPI AS certificates |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_USER_CERTIFICATE_DATA](../android/net/wifi/WifiEnterpriseConfig.md) Intent extra: data for WAPI USER certificates |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_USER_CERTIFICATE_NAME](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#EXTRA_WAPI_USER_CERTIFICATE_NAME:kotlin.String) Intent extra: name for WAPI USER certificates |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_0](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_0:kotlin.Int) Constant definition for TLS v1. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_1](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_1:kotlin.Int) Constant definition for TLS v1. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_WAPI_USER_CERTIFICATE_NAME](../android/net/wifi/WifiEnterpriseConfig.md) Intent extra: name for WAPI USER certificates |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_0](../android/net/wifi/WifiEnterpriseConfig.md) Constant definition for TLS v1. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_1](../android/net/wifi/WifiEnterpriseConfig.md) Constant definition for TLS v1. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_2:kotlin.Int) Constant definition for TLS v1. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_3](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_3:kotlin.Int) Constant definition for TLS v1. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [WAPI_AS_CERTIFICATE](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#WAPI_AS_CERTIFICATE:kotlin.String) Key prefix for WAPI AS certificates. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_2](../android/net/wifi/WifiEnterpriseConfig.md) Constant definition for TLS v1. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TLS_V1_3](../android/net/wifi/WifiEnterpriseConfig.md) Constant definition for TLS v1. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [WAPI_AS_CERTIFICATE](../android/net/wifi/WifiEnterpriseConfig.md) Key prefix for WAPI AS certificates. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [WAPI_USER_CERTIFICATE](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#WAPI_USER_CERTIFICATE:kotlin.String) Key prefix for WAPI user certificates. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [WAPI_USER_CERTIFICATE](../android/net/wifi/WifiEnterpriseConfig.md) Key prefix for WAPI user certificates. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WifiEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#WifiEnterpriseConfig())`()` <br /> |
-| [WifiEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#WifiEnterpriseConfig(android.net.wifi.WifiEnterpriseConfig))`(`source:` ` [WifiEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#)!`)` Copy constructor. |
+| [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md))`()` <br /> |
+| [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md))`(`source:` ` [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md)!`)` Copy constructor. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#describeContents())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableTrustOnFirstUse](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#enableTrustOnFirstUse(kotlin.Boolean))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable Trust On First Use. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAltSubjectMatch](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getAltSubjectMatch())`()` Get alternate subject match |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/wifi/WifiEnterpriseConfig.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableTrustOnFirstUse](../android/net/wifi/WifiEnterpriseConfig.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable Trust On First Use. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAltSubjectMatch](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get alternate subject match |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAnonymousIdentity](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getAnonymousIdentity())`()` Get the anonymous identity |
-| open [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)? | [getCaCertificate](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getCaCertificate())`()` Get CA certificate. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>? | [getCaCertificates](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getCaCertificates())`()` Get CA certificates. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAnonymousIdentity](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the anonymous identity |
+| open [X509Certificate](../java/security/cert/X509Certificate.md)? | [getCaCertificate](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get CA certificate. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>? | [getCaCertificates](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get CA certificates. |
 | --- | --- |
-| open [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)! | [getClientCertificate](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getClientCertificate())`()` Get client certificate |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>? | [getClientCertificateChain](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getClientCertificateChain())`()` Get the complete client certificate chain in the same order as it was last supplied. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getClientKeyPairAlias](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getClientKeyPairAlias())`()` Get KeyChain alias to use for client authentication. |
+| open [X509Certificate](../java/security/cert/X509Certificate.md)! | [getClientCertificate](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get client certificate |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>? | [getClientCertificateChain](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the complete client certificate chain in the same order as it was last supplied. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getClientKeyPairAlias](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get KeyChain alias to use for client authentication. |
 | --- | --- |
-| open [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)? | [getClientPrivateKey](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getClientPrivateKey())`()` Get the client private key as supplied in [setClientKeyEntryWithCertificateChain](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyEntryWithCertificateChain(java.security.PrivateKey,%20kotlin.Array)), or null if unset. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDecoratedIdentityPrefix](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getDecoratedIdentityPrefix())`()` Get the decorated identity prefix. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDomainSuffixMatch](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getDomainSuffixMatch())`()` Get the domain_suffix_match value. |
+| open [PrivateKey](../java/security/PrivateKey.md)? | [getClientPrivateKey](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the client private key as supplied in [setClientKeyEntryWithCertificateChain](../android/net/wifi/WifiEnterpriseConfig.md)), or null if unset. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDecoratedIdentityPrefix](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the decorated identity prefix. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDomainSuffixMatch](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the domain_suffix_match value. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEapMethod](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getEapMethod())`()` Get the eap method. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIdentity](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getIdentity())`()` Get the identity |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumTlsVersion](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getMinimumTlsVersion())`()` Get the minimum TLS version for TLS-based EAP methods. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEapMethod](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the eap method. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIdentity](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the identity |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumTlsVersion](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the minimum TLS version for TLS-based EAP methods. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPassword](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getPassword())`()` Get the password. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPhase2Method](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getPhase2Method())`()` Get the phase 2 authentication method. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPlmn](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getPlmn())`()` Get plmn (Public Land Mobile Network) for Passpoint credential; see [(java.lang.String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setPlmn(kotlin.String))for more information |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPassword](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the password. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPhase2Method](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get the phase 2 authentication method. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPlmn](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get plmn (Public Land Mobile Network) for Passpoint credential; see [(java.lang.String)](../android/net/wifi/WifiEnterpriseConfig.md))for more information |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRealm](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getRealm())`()` Get realm for Passpoint credential; see [setRealm(java.lang.String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setRealm(kotlin.String))for more information |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubjectMatch](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#getSubjectMatch())`()` Get subject match (deprecated) |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasCaCertificate](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#hasCaCertificate())`()` Indicates whether or not this enterprise config has a CA certificate configured. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRealm](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get realm for Passpoint credential; see [setRealm(java.lang.String)](../android/net/wifi/WifiEnterpriseConfig.md))for more information |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubjectMatch](../android/net/wifi/WifiEnterpriseConfig.md))`()` Get subject match (deprecated) |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasCaCertificate](../android/net/wifi/WifiEnterpriseConfig.md))`()` Indicates whether or not this enterprise config has a CA certificate configured. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuthenticationSimBased](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#isAuthenticationSimBased())`()` Utility method to determine whether the configuration's authentication method is SIM-based. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEapMethodServerCertUsed](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#isEapMethodServerCertUsed())`()` Determines whether an Enterprise configuration's EAP method requires a Root CA certification to validate the authentication server i. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isServerCertValidationEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#isServerCertValidationEnabled())`()` Determines whether an Enterprise configuration enables server certificate validation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuthenticationSimBased](../android/net/wifi/WifiEnterpriseConfig.md))`()` Utility method to determine whether the configuration's authentication method is SIM-based. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEapMethodServerCertUsed](../android/net/wifi/WifiEnterpriseConfig.md))`()` Determines whether an Enterprise configuration's EAP method requires a Root CA certification to validate the authentication server i. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isServerCertValidationEnabled](../android/net/wifi/WifiEnterpriseConfig.md))`()` Determines whether an Enterprise configuration enables server certificate validation. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTrustOnFirstUseEnabled](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#isTrustOnFirstUseEnabled())`()` Indicates whether or not Trust On First Use (TOFU) is enabled. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAltSubjectMatch](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setAltSubjectMatch(kotlin.String))`(`altSubjectMatch:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set alternate subject match. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnonymousIdentity](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setAnonymousIdentity(kotlin.String))`(`anonymousIdentity:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set anonymous identity. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTrustOnFirstUseEnabled](../android/net/wifi/WifiEnterpriseConfig.md))`()` Indicates whether or not Trust On First Use (TOFU) is enabled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAltSubjectMatch](../android/net/wifi/WifiEnterpriseConfig.md))`(`altSubjectMatch:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set alternate subject match. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnonymousIdentity](../android/net/wifi/WifiEnterpriseConfig.md))`(`anonymousIdentity:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set anonymous identity. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaCertificate](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setCaCertificate(java.security.cert.X509Certificate))`(`cert:` ` [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)?`)` Specify a X. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaCertificates](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setCaCertificates(kotlin.Array))`(`certs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>?`)` Specify a list of X. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientKeyEntry](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyEntry(java.security.PrivateKey,%20java.security.cert.X509Certificate))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)!`, `clientCertificate:` ` [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!`)` Specify a private key and client certificate for client authorization. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaCertificate](../android/net/wifi/WifiEnterpriseConfig.md))`(`cert:` ` [X509Certificate](../java/security/cert/X509Certificate.md)?`)` Specify a X. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaCertificates](../android/net/wifi/WifiEnterpriseConfig.md))`(`certs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>?`)` Specify a list of X. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientKeyEntry](../android/net/wifi/WifiEnterpriseConfig.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `clientCertificate:` ` [X509Certificate](../java/security/cert/X509Certificate.md)!`)` Specify a private key and client certificate for client authorization. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientKeyEntryWithCertificateChain](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyEntryWithCertificateChain(java.security.PrivateKey,%20kotlin.Array))`(`privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)!`, `clientCertificateChain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>!`)` Specify a private key and client certificate chain for client authorization. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientKeyPairAlias](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyPairAlias(kotlin.String))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Specify a key pair via KeyChain alias for client authentication. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecoratedIdentityPrefix](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setDecoratedIdentityPrefix(kotlin.String))`(`decoratedIdentityPrefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Set a prefix for a decorated identity as per RFC 7542. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientKeyEntryWithCertificateChain](../android/net/wifi/WifiEnterpriseConfig.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `clientCertificateChain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>!`)` Specify a private key and client certificate chain for client authorization. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientKeyPairAlias](../android/net/wifi/WifiEnterpriseConfig.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Specify a key pair via KeyChain alias for client authentication. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecoratedIdentityPrefix](../android/net/wifi/WifiEnterpriseConfig.md))`(`decoratedIdentityPrefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Set a prefix for a decorated identity as per RFC 7542. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDomainSuffixMatch](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setDomainSuffixMatch(kotlin.String))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the domain_suffix_match directive on wpa_supplicant. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEapMethod](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setEapMethod(kotlin.Int))`(`eapMethod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the EAP authentication method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIdentity](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setIdentity(kotlin.String))`(`identity:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the identity |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDomainSuffixMatch](../android/net/wifi/WifiEnterpriseConfig.md))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the domain_suffix_match directive on wpa_supplicant. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEapMethod](../android/net/wifi/WifiEnterpriseConfig.md))`(`eapMethod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the EAP authentication method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIdentity](../android/net/wifi/WifiEnterpriseConfig.md))`(`identity:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the identity |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumTlsVersion](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setMinimumTlsVersion(kotlin.Int))`(`tlsVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the minimum TLS version for TLS-based EAP methods. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPassword](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setPassword(kotlin.String))`(`password:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the password. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPhase2Method](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setPhase2Method(kotlin.Int))`(`phase2Method:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set Phase 2 authentication method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumTlsVersion](../android/net/wifi/WifiEnterpriseConfig.md))`(`tlsVersion:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the minimum TLS version for TLS-based EAP methods. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPassword](../android/net/wifi/WifiEnterpriseConfig.md))`(`password:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the password. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPhase2Method](../android/net/wifi/WifiEnterpriseConfig.md))`(`phase2Method:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set Phase 2 authentication method. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlmn](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setPlmn(kotlin.String))`(`plmn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set plmn (Public Land Mobile Network) of the provider of Passpoint credential |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRealm](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setRealm(kotlin.String))`(`realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set realm for Passpoint credential; realm identifies a set of networks where your Passpoint credential can be used |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSubjectMatch](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setSubjectMatch(kotlin.String))`(`subjectMatch:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set subject match (deprecated). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlmn](../android/net/wifi/WifiEnterpriseConfig.md))`(`plmn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set plmn (Public Land Mobile Network) of the provider of Passpoint credential |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRealm](../android/net/wifi/WifiEnterpriseConfig.md))`(`realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set realm for Passpoint credential; realm identifies a set of networks where your Passpoint credential can be used |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSubjectMatch](../android/net/wifi/WifiEnterpriseConfig.md))`(`subjectMatch:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set subject match (deprecated). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#toString())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/wifi/WifiEnterpriseConfig.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/wifi/WifiEnterpriseConfig.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md)!\> | [CREATOR](../android/net/wifi/WifiEnterpriseConfig.md) <br /> |
 
 ## Constants
 
@@ -172,7 +172,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TLS_V1_0: Int
 ```
 
-Constant definition for TLS v1.0 which is used in [setMinimumTlsVersion(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setMinimumTlsVersion(kotlin.Int)) 
+Constant definition for TLS v1.0 which is used in [setMinimumTlsVersion(int)](../android/net/wifi/WifiEnterpriseConfig.md)) 
 
  Value: 0
 
@@ -184,7 +184,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TLS_V1_1: Int
 ```
 
-Constant definition for TLS v1.1 which is used in [setMinimumTlsVersion(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setMinimumTlsVersion(kotlin.Int)) 
+Constant definition for TLS v1.1 which is used in [setMinimumTlsVersion(int)](../android/net/wifi/WifiEnterpriseConfig.md)) 
 
  Value: 1
 
@@ -196,7 +196,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TLS_V1_2: Int
 ```
 
-Constant definition for TLS v1.2 which is used in [setMinimumTlsVersion(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setMinimumTlsVersion(kotlin.Int)) 
+Constant definition for TLS v1.2 which is used in [setMinimumTlsVersion(int)](../android/net/wifi/WifiEnterpriseConfig.md)) 
 
  Value: 2
 
@@ -208,7 +208,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TLS_V1_3: Int
 ```
 
-Constant definition for TLS v1.3 which is used in [setMinimumTlsVersion(int)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setMinimumTlsVersion(kotlin.Int)) 
+Constant definition for TLS v1.3 which is used in [setMinimumTlsVersion(int)](../android/net/wifi/WifiEnterpriseConfig.md)) 
 
  Value: 3
 
@@ -258,7 +258,7 @@ Copy constructor. This copies over all the fields verbatim (does not ignore mask
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [WifiEnterpriseConfig](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#)!:Source WifiEnterpriseConfig object. |
+| `source` | [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md)!:Source WifiEnterpriseConfig object. |
 
 ## Public methods
 
@@ -272,7 +272,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### enableTrustOnFirstUse
 
@@ -283,7 +283,7 @@ open fun enableTrustOnFirstUse(enable: Boolean): Unit
 ```
 
 Enable Trust On First Use. Trust On First Use (TOFU) simplifies manual or partial configurations of TLS-based EAP networks. TOFU operates by installing the Root CA cert which is received from the server during an initial connection to a new network. Such installation is gated by user approval. Use only when it is not possible to configure the Root CA cert for the server. 
-Note: If a Root CA cert is already configured, this option is ignored, e.g. if [setCaCertificate(java.security.cert.X509Certificate)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setCaCertificate(java.security.cert.X509Certificate)), or[setCaCertificates(java.security.cert.X509Certificate[])](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setCaCertificates(kotlin.Array))is called.
+Note: If a Root CA cert is already configured, this option is ignored, e.g. if [setCaCertificate(java.security.cert.X509Certificate)](../android/net/wifi/WifiEnterpriseConfig.md)), or[setCaCertificates(java.security.cert.X509Certificate[])](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setCaCertificates(kotlin.Array))is called.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -329,7 +329,7 @@ Get CA certificate. If multiple CA certificates are configured previously, retur
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)? | X.509 CA certificate This value may be`null`. |
+| [X509Certificate](../java/security/cert/X509Certificate.md)? | X.509 CA certificate This value may be`null`. |
 
 ### getCaCertificates
 
@@ -343,7 +343,7 @@ Get CA certificates.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>? | This value may be`null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>? | This value may be`null`. |
 
 ### getClientCertificate
 
@@ -357,7 +357,7 @@ Get client certificate
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|--------------------------|
-| [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)! | X.509 client certificate |
+| [X509Certificate](../java/security/cert/X509Certificate.md)! | X.509 client certificate |
 
 ### getClientCertificateChain
 
@@ -369,11 +369,11 @@ open fun getClientCertificateChain(): Array<X509Certificate!>?
 
 Get the complete client certificate chain in the same order as it was last supplied.
 
-If the chain was last supplied by a call to [setClientKeyEntry(java.security.PrivateKey,java.security.cert.X509Certificate)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyEntry(java.security.PrivateKey,%20java.security.cert.X509Certificate))with a non-null \* certificate instance, a single-element array containing the certificate will be \* returned. If[setClientKeyEntryWithCertificateChain(java.security.PrivateKey,java.security.cert.X509Certificate[])](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyEntryWithCertificateChain(java.security.PrivateKey,%20kotlin.Array))was last called with a non-empty array, this array will be returned in the same order as it was supplied. Otherwise,`null`will be returned.
+If the chain was last supplied by a call to [setClientKeyEntry(java.security.PrivateKey,java.security.cert.X509Certificate)](../android/net/wifi/WifiEnterpriseConfig.md))with a non-null \* certificate instance, a single-element array containing the certificate will be \* returned. If[setClientKeyEntryWithCertificateChain(java.security.PrivateKey,java.security.cert.X509Certificate[])](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyEntryWithCertificateChain(java.security.PrivateKey,%20kotlin.Array))was last called with a non-empty array, this array will be returned in the same order as it was supplied. Otherwise,`null`will be returned.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!>? | X.509 client certificates |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>? | X.509 client certificates |
 
 ### getClientKeyPairAlias
 
@@ -397,7 +397,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getClientPrivateKey(): PrivateKey?
 ```
 
-Get the client private key as supplied in [setClientKeyEntryWithCertificateChain](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setClientKeyEntryWithCertificateChain(java.security.PrivateKey,%20kotlin.Array)), or null if unset. 
+Get the client private key as supplied in [setClientKeyEntryWithCertificateChain](../android/net/wifi/WifiEnterpriseConfig.md)), or null if unset. 
 
 ### getDecoratedIdentityPrefix
 
@@ -467,7 +467,7 @@ Get the minimum TLS version for TLS-based EAP methods.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_0:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_1:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_2:kotlin.Int), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_3:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](../android/net/wifi/WifiEnterpriseConfig.md), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](../android/net/wifi/WifiEnterpriseConfig.md) |
 
 ### getPassword
 
@@ -491,7 +491,7 @@ Get the phase 2 authentication method.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a phase 2 method defined at [Phase2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.Phase2) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a phase 2 method defined at [Phase2](../android/net/wifi/WifiEnterpriseConfig.Phase2.md) |
 
 ### getPlmn
 
@@ -501,7 +501,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getPlmn(): String!
 ```
 
-Get plmn (Public Land Mobile Network) for Passpoint credential; see [(java.lang.String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setPlmn(kotlin.String))for more information
+Get plmn (Public Land Mobile Network) for Passpoint credential; see [(java.lang.String)](../android/net/wifi/WifiEnterpriseConfig.md))for more information
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------|
@@ -515,7 +515,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getRealm(): String!
 ```
 
-Get realm for Passpoint credential; see [setRealm(java.lang.String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setRealm(kotlin.String))for more information
+Get realm for Passpoint credential; see [setRealm(java.lang.String)](../android/net/wifi/WifiEnterpriseConfig.md))for more information
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------|
@@ -586,7 +586,7 @@ open fun isServerCertValidationEnabled(): Boolean
 
 Determines whether an Enterprise configuration enables server certificate validation.
 
-The caller can determine, along with [isEapMethodServerCertUsed()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#isEapMethodServerCertUsed()), if an Enterprise configuration enables server certificate validation, which is a mandatory requirement for networks that use TLS based EAP methods. A configuration that does not enable server certificate validation will be ignored and will not be considered for network selection. A network suggestion with such a configuration will cause an IllegalArgumentException to be thrown when suggested. Server validation is achieved by the following: - Either certificate or CA path is configured. - Either alternative subject match or domain suffix match is set.
+The caller can determine, along with [isEapMethodServerCertUsed()](../android/net/wifi/WifiEnterpriseConfig.md)), if an Enterprise configuration enables server certificate validation, which is a mandatory requirement for networks that use TLS based EAP methods. A configuration that does not enable server certificate validation will be ignored and will not be considered for network selection. A network suggestion with such a configuration will cause an IllegalArgumentException to be thrown when suggested. Server validation is achieved by the following: - Either certificate or CA path is configured. - Either alternative subject match or domain suffix match is set.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -622,7 +622,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun setAltSubjectMatch(altSubjectMatch: String!): Unit
 ```
 
-Set alternate subject match. This is the substring to be matched against the alternate subject of the authentication server certificate. Note: If no alternate subject is set for an Enterprise configuration, either by not calling this API, or by calling it with null, or not setting domain suffix match using the [setDomainSuffixMatch(java.lang.String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setDomainSuffixMatch(kotlin.String)), then the server certificate validation is incomplete - which means that the connection is not secure.
+Set alternate subject match. This is the substring to be matched against the alternate subject of the authentication server certificate. Note: If no alternate subject is set for an Enterprise configuration, either by not calling this API, or by calling it with null, or not setting domain suffix match using the [setDomainSuffixMatch(java.lang.String)](../android/net/wifi/WifiEnterpriseConfig.md)), then the server certificate validation is incomplete - which means that the connection is not secure.
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -656,7 +656,7 @@ A default name is automatically assigned to the certificate and used with this c
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cert` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)?:X.509 CA certificate This value may be`null`. |
+| `cert` | [X509Certificate](../java/security/cert/X509Certificate.md)?:X.509 CA certificate This value may be`null`. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -672,11 +672,11 @@ open fun setCaCertificates(certs: Array<X509Certificate!>?): Unit
 
 Specify a list of X.509 certificates that identifies the server. The validation passes if the CA of server certificate matches one of the given certificates.
 
-Default names are automatically assigned to the certificates and used with this configuration. The framework takes care of installing the certificates when the config is saved and removing the certificates when the config is removed. Note: If no certificates are set for an Enterprise configuration, either by not calling this API (or the [setCaCertificate(java.security.cert.X509Certificate)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setCaCertificate(java.security.cert.X509Certificate)), or by calling it with null, then the server certificate validation is skipped - which means that the connection is not secure.
+Default names are automatically assigned to the certificates and used with this configuration. The framework takes care of installing the certificates when the config is saved and removing the certificates when the config is removed. Note: If no certificates are set for an Enterprise configuration, either by not calling this API (or the [setCaCertificate(java.security.cert.X509Certificate)](../android/net/wifi/WifiEnterpriseConfig.md)), or by calling it with null, then the server certificate validation is skipped - which means that the connection is not secure.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `certs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>?:X.509 CA certificates This value may be`null`. |
+| `certs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>?:X.509 CA certificates This value may be`null`. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -699,8 +699,8 @@ A default name is automatically assigned to the key entry and used with this con
 
 | Parameters ||
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `privateKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)!:a PrivateKey instance for the end certificate. |
-| `clientCertificate` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!:an X509Certificate representing the end certificate. |
+| `privateKey` | [PrivateKey](../java/security/PrivateKey.md)!:a PrivateKey instance for the end certificate. |
+| `clientCertificate` | [X509Certificate](../java/security/cert/X509Certificate.md)!:an X509Certificate representing the end certificate. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------|
@@ -723,8 +723,8 @@ A default name is automatically assigned to the key entry and used with this con
 
 | Parameters ||
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `privateKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#)!:a PrivateKey instance for the end certificate. |
-| `clientCertificateChain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!\>!:an array of X509Certificate instances which starts with end certificate and continues with additional CA certificates necessary to link the end certificate with some root certificate known by the authenticator. |
+| `privateKey` | [PrivateKey](../java/security/PrivateKey.md)!:a PrivateKey instance for the end certificate. |
+| `clientCertificateChain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>!:an array of X509Certificate instances which starts with end certificate and continues with additional CA certificates necessary to link the end certificate with some root certificate known by the authenticator. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------|
@@ -746,7 +746,7 @@ Specify a key pair via KeyChain alias for client authentication. The alias shoul
 
 **See Also**
 
-- [android.app.admin.DevicePolicyManager#grantKeyPairToWifiAuth(String)](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#grantKeyPairToWifiAuth(kotlin.String)) 
+- [android.app.admin.DevicePolicyManager#grantKeyPairToWifiAuth(String)](../android/app/admin/DevicePolicyManager.md)) 
 
 ### setDecoratedIdentityPrefix
 
@@ -756,7 +756,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun setDecoratedIdentityPrefix(decoratedIdentityPrefix: String?): Unit
 ```
 
-Set a prefix for a decorated identity as per RFC 7542. This prefix must contain a list of realms (could be a list of 1) delimited by a '!' character. e.g. homerealm.example.org! or proxyrealm.example.net!homerealm.example.org! A prefix of "homerealm.example.org!" will generate a decorated identity that looks like: homerealm.example.org!user@otherrealm.example.net Calling with a null parameter will clear the decorated prefix. Note: Caller must verify that the device supports this feature by calling [WifiManager.isDecoratedIdentitySupported()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isDecoratedIdentitySupported())
+Set a prefix for a decorated identity as per RFC 7542. This prefix must contain a list of realms (could be a list of 1) delimited by a '!' character. e.g. homerealm.example.org! or proxyrealm.example.net!homerealm.example.org! A prefix of "homerealm.example.org!" will generate a decorated identity that looks like: homerealm.example.org!user@otherrealm.example.net Calling with a null parameter will clear the decorated prefix. Note: Caller must verify that the device supports this feature by calling [WifiManager.isDecoratedIdentitySupported()](../android/net/wifi/WifiManager.md))
 
 | Parameters ||
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -780,7 +780,7 @@ Suffix match here means that the host/domain name is compared one label at a tim
 
 More than one match string can be provided by using semicolons to separate the strings (e.g., example.org;example.com). When multiple strings are specified, a match with any one of the values is considered a sufficient match for the certificate, i.e., the conditions are ORed ogether.
 
-For example, domain_suffix_match=example.com would match test.example.com but would not match test-example.com. Note: If no domain suffix is set for an Enterprise configuration, either by not calling this API, or by calling it with null, or not setting alternate subject match using the [setAltSubjectMatch(java.lang.String)](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#setAltSubjectMatch(kotlin.String)), then the server certificate validation is incomplete - which means that the connection is not secure.
+For example, domain_suffix_match=example.com would match test.example.com but would not match test-example.com. Note: If no domain suffix is set for an Enterprise configuration, either by not calling this API, or by calling it with null, or not setting alternate subject match using the [setAltSubjectMatch(java.lang.String)](../android/net/wifi/WifiEnterpriseConfig.md)), then the server certificate validation is incomplete - which means that the connection is not secure.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------|
@@ -798,7 +798,7 @@ Set the EAP authentication method.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `eapMethod` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is one of [Eap](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.Eap), except for [Eap.NONE](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.Eap#NONE:kotlin.Int) |
+| `eapMethod` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is one of [Eap](../android/net/wifi/WifiEnterpriseConfig.Eap.md), except for [Eap.NONE](../android/net/wifi/WifiEnterpriseConfig.Eap.md) |
 
 | Exceptions ||
 |--------------------------------------|--------------------------|
@@ -826,13 +826,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun setMinimumTlsVersion(tlsVersion: Int): Unit
 ```
 
-Set the minimum TLS version for TLS-based EAP methods. [WifiManager.isTlsMinimumVersionSupported()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTlsMinimumVersionSupported())indicates whether or not a minimum TLS version can be set. If not supported, the minimum TLS version is always TLS v1.0.
+Set the minimum TLS version for TLS-based EAP methods. [WifiManager.isTlsMinimumVersionSupported()](../android/net/wifi/WifiManager.md))indicates whether or not a minimum TLS version can be set. If not supported, the minimum TLS version is always TLS v1.0.
 
-[WifiManager.isTlsV13Supported()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTlsV13Supported())indicates whether or not TLS v1.3 is supported. If requested minimum is not supported, it will default to the maximum supported version.
+[WifiManager.isTlsV13Supported()](../android/net/wifi/WifiManager.md))indicates whether or not TLS v1.3 is supported. If requested minimum is not supported, it will default to the maximum supported version.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tlsVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_0:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_1:kotlin.Int), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_2:kotlin.Int), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig#TLS_V1_3:kotlin.Int) |
+| `tlsVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the TLS version Value is [android.net.wifi.WifiEnterpriseConfig#TLS_V1_0](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_1](../android/net/wifi/WifiEnterpriseConfig.md), [android.net.wifi.WifiEnterpriseConfig#TLS_V1_2](../android/net/wifi/WifiEnterpriseConfig.md), or [android.net.wifi.WifiEnterpriseConfig#TLS_V1_3](../android/net/wifi/WifiEnterpriseConfig.md) |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------|
@@ -864,7 +864,7 @@ Set Phase 2 authentication method. Sets the inner authentication method to be us
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `phase2Method` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is the inner authentication method and can be one of [Phase2](https://developer.android.com/reference/kotlin/android/net/wifi/WifiEnterpriseConfig.Phase2) |
+| `phase2Method` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is the inner authentication method and can be one of [Phase2](../android/net/wifi/WifiEnterpriseConfig.Phase2.md) |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------|
@@ -940,8 +940,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

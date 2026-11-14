@@ -2,17 +2,17 @@
 
 # android.ranging.oob
 
-Kotlin| [Java](https://developer.android.com/reference/android/ranging/oob/package-summary "View this page in Java")
+Kotlin| [Java](../android/ranging/oob/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [TransportHandle](https://developer.android.com/reference/kotlin/android/ranging/oob/TransportHandle) | TransportHandle is used as the Out-Of-Band (OOB) transport mechanism by ranging module. |
+| [TransportHandle](../android/ranging/oob/TransportHandle.md) | TransportHandle is used as the Out-Of-Band (OOB) transport mechanism by ranging module. |
 | --- | --- |
 
 ## Classes
 
-| [DeviceHandle](https://developer.android.com/reference/kotlin/android/ranging/oob/DeviceHandle) | Represents a handle to a ranging device, containing information about the device and a transport handle for out-of-band communication. |
+| [DeviceHandle](../android/ranging/oob/DeviceHandle.md) | Represents a handle to a ranging device, containing information about the device and a transport handle for out-of-band communication. |
 | --- | --- |
-| [OobInitiatorRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobInitiatorRangingConfig) | Represents the configuration for an Out-of-Band (OOB) initiator in a ranging session. |
-| [OobResponderRangingConfig](https://developer.android.com/reference/kotlin/android/ranging/oob/OobResponderRangingConfig) | Represents the configuration for an Out-of-Band (OOB) responder in a ranging session. |
+| [OobInitiatorRangingConfig](../android/ranging/oob/OobInitiatorRangingConfig.md) | Represents the configuration for an Out-of-Band (OOB) initiator in a ranging session. |
+| [OobResponderRangingConfig](../android/ranging/oob/OobResponderRangingConfig.md) | Represents the configuration for an Out-of-Band (OOB) responder in a ranging session. |

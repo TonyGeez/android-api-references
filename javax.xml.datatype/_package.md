@@ -4,14 +4,14 @@
 
 ## Classes
 
-| [DatatypeConstants](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants) | Utility class to contain basic Datatype values as constants. |
+| [DatatypeConstants](../javax/xml/datatype/DatatypeConstants.md) | Utility class to contain basic Datatype values as constants. |
 | --- | --- |
-| [DatatypeFactory](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeFactory) | Factory that creates new`javax.xml.datatype``Object`s that map XML to/from Java`Object`s. |
-| [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration) | Immutable representation of a time span as defined in the W3C XML Schema 1. |
-| [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar) | Representation for W3C XML Schema 1. |
+| [DatatypeFactory](../javax/xml/datatype/DatatypeFactory.md) | Factory that creates new`javax.xml.datatype``Object`s that map XML to/from Java`Object`s. |
+| [Duration](../javax/xml/datatype/Duration.md) | Immutable representation of a time span as defined in the W3C XML Schema 1. |
+| [XMLGregorianCalendar](../javax/xml/datatype/XMLGregorianCalendar.md) | Representation for W3C XML Schema 1. |
 | --- | --- |
 
 ## Exceptions
 
-| [DatatypeConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConfigurationException) | Indicates a serious configuration error. |
+| [DatatypeConfigurationException](../javax/xml/datatype/DatatypeConfigurationException.md) | Indicates a serious configuration error. |
 | --- | --- |

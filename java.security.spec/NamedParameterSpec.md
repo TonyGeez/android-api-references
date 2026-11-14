@@ -10,9 +10,9 @@ open class NamedParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#) |
+| ↳ | [java.security.spec.NamedParameterSpec](../java/security/spec/NamedParameterSpec.md) |
 
-| Known Direct Subclasses [ECGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECGenParameterSpec) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------| | [ECGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECGenParameterSpec) | This immutable class specifies the set of parameters used for generating elliptic curve (EC) domain parameters. | |
+| Known Direct Subclasses [ECGenParameterSpec](../java/security/spec/ECGenParameterSpec.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------| | [ECGenParameterSpec](../java/security/spec/ECGenParameterSpec.md) | This immutable class specifies the set of parameters used for generating elliptic curve (EC) domain parameters. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class is used to specify any algorithm parameters that are determined by a standard name. This class also holds constants for standard parameter set names. The names of these constants exactly match the corresponding parameter set name. For example, NamedParameterSpec.X25519 represents the parameter set identified by the string "X25519". These strings are defined in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#parameterspec-names).
@@ -21,19 +21,19 @@ This class is used to specify any algorithm parameters that are determined by a 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#NamedParameterSpec(kotlin.String))`(`stdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a parameter specification using a standard (or predefined) name`stdName`. |
+| [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md))`(`stdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a parameter specification using a standard (or predefined) name`stdName`. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#getName())`()` Returns the standard name that determines the algorithm parameters. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../java/security/spec/NamedParameterSpec.md))`()` Returns the standard name that determines the algorithm parameters. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#)! | [ED25519](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#ED25519:java.security.spec.NamedParameterSpec) The Ed25519 parameters |
-| static [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#)! | [ED448](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#ED448:java.security.spec.NamedParameterSpec) The Ed448 parameters |
-| static [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#)! | [X25519](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#X25519:java.security.spec.NamedParameterSpec) The X25519 parameters |
+| static [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md)! | [ED25519](../java/security/spec/NamedParameterSpec.md) The Ed25519 parameters |
+| static [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md)! | [ED448](../java/security/spec/NamedParameterSpec.md) The Ed448 parameters |
+| static [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md)! | [X25519](../java/security/spec/NamedParameterSpec.md) The X25519 parameters |
 | --- | --- |
-| static [NamedParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#)! | [X448](https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec#X448:java.security.spec.NamedParameterSpec) The X448 parameters |
+| static [NamedParameterSpec](../java/security/spec/NamedParameterSpec.md)! | [X448](../java/security/spec/NamedParameterSpec.md) The X448 parameters |
 
 ## Public constructors
 

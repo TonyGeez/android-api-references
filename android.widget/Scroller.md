@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Scroller
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/Scroller "View this page in Java") 
+Kotlin| [Java](../android/widget/Scroller.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class Scroller
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.Scroller](https://developer.android.com/reference/kotlin/android/widget/Scroller#) |
+| ↳ | [android.widget.Scroller](../android/widget/Scroller.md) |
 
-This class encapsulates scrolling. You can use scrollers ([Scroller](https://developer.android.com/reference/kotlin/android/widget/Scroller#) or [OverScroller](https://developer.android.com/reference/kotlin/android/widget/OverScroller)) to collect the data you need to produce a scrolling animation---for example, in response to a fling gesture. Scrollers track scroll offsets for you over time, but they don't automatically apply those positions to your view. It's your responsibility to get and apply new coordinates at a rate that will make the scrolling animation look smooth.
+This class encapsulates scrolling. You can use scrollers ([Scroller](../android/widget/Scroller.md) or [OverScroller](../android/widget/OverScroller.md)) to collect the data you need to produce a scrolling animation---for example, in response to a fling gesture. Scrollers track scroll offsets for you over time, but they don't automatically apply those positions to your view. It's your responsibility to get and apply new coordinates at a rate that will make the scrolling animation look smooth.
 
 Here is a simple example: 
 
@@ -33,7 +33,7 @@ private Scroller mScroller = new Scroller(context);
   }
 ```
 
-To track the changing positions of the x/y coordinates, use [computeScrollOffset](https://developer.android.com/reference/kotlin/android/widget/Scroller#computeScrollOffset()). The method returns a boolean to indicate whether the scroller is finished. If it isn't, it means that a fling or programmatic pan operation is still in progress. You can use this method to find the current offsets of the x and y coordinates, for example: 
+To track the changing positions of the x/y coordinates, use [computeScrollOffset](../android/widget/Scroller.md)). The method returns a boolean to indicate whether the scroller is finished. If it isn't, it means that a fling or programmatic pan operation is still in progress. You can use this method to find the current offsets of the x and y coordinates, for example: 
 
 ```kotlin
 if (mScroller.computeScrollOffset()) {
@@ -48,38 +48,38 @@ if (mScroller.computeScrollOffset()) {
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Scroller](https://developer.android.com/reference/kotlin/android/widget/Scroller#Scroller(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Create a Scroller with the default duration and interpolator. |
-| [Scroller](https://developer.android.com/reference/kotlin/android/widget/Scroller#Scroller(android.content.Context,%20android.view.animation.Interpolator))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `interpolator:` ` [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#)!`)` Create a Scroller with the specified interpolator. |
-| [Scroller](https://developer.android.com/reference/kotlin/android/widget/Scroller#Scroller(android.content.Context,%20android.view.animation.Interpolator,%20kotlin.Boolean))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `interpolator:` ` [Interpolator](https://developer.android.com/reference/kotlin/android/view/animation/Interpolator.html#)!`, `flywheel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a Scroller with the specified interpolator. |
+| [Scroller](../android/widget/Scroller.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Create a Scroller with the default duration and interpolator. |
+| [Scroller](../android/widget/Scroller.md))`(`context:` ` [Context](../android/content/Context.md)!`, `interpolator:` ` [Interpolator](../android/view/animation/Interpolator.md)!`)` Create a Scroller with the specified interpolator. |
+| [Scroller](../android/widget/Scroller.md))`(`context:` ` [Context](../android/content/Context.md)!`, `interpolator:` ` [Interpolator](../android/view/animation/Interpolator.md)!`, `flywheel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a Scroller with the specified interpolator. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abortAnimation](https://developer.android.com/reference/kotlin/android/widget/Scroller#abortAnimation())`()` Stops the animation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [computeScrollOffset](https://developer.android.com/reference/kotlin/android/widget/Scroller#computeScrollOffset())`()` Call this when you want to know the new location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [extendDuration](https://developer.android.com/reference/kotlin/android/widget/Scroller#extendDuration(kotlin.Int))`(`extend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Extend the scroll animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abortAnimation](../android/widget/Scroller.md))`()` Stops the animation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [computeScrollOffset](../android/widget/Scroller.md))`()` Call this when you want to know the new location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [extendDuration](../android/widget/Scroller.md))`(`extend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Extend the scroll animation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fling](https://developer.android.com/reference/kotlin/android/widget/Scroller#fling(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling based on a fling gesture. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forceFinished](https://developer.android.com/reference/kotlin/android/widget/Scroller#forceFinished(kotlin.Boolean))`(`finished:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Force the finished field to a particular value. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCurrVelocity](https://developer.android.com/reference/kotlin/android/widget/Scroller#getCurrVelocity())`()` Returns the current velocity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fling](../android/widget/Scroller.md))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `velocityY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling based on a fling gesture. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forceFinished](../android/widget/Scroller.md))`(`finished:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Force the finished field to a particular value. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCurrVelocity](../android/widget/Scroller.md))`()` Returns the current velocity. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrX](https://developer.android.com/reference/kotlin/android/widget/Scroller#getCurrX())`()` Returns the current X offset in the scroll. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrY](https://developer.android.com/reference/kotlin/android/widget/Scroller#getCurrY())`()` Returns the current Y offset in the scroll. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuration](https://developer.android.com/reference/kotlin/android/widget/Scroller#getDuration())`()` Returns how long the scroll event will take, in milliseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrX](../android/widget/Scroller.md))`()` Returns the current X offset in the scroll. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrY](../android/widget/Scroller.md))`()` Returns the current Y offset in the scroll. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuration](../android/widget/Scroller.md))`()` Returns how long the scroll event will take, in milliseconds. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinalX](https://developer.android.com/reference/kotlin/android/widget/Scroller#getFinalX())`()` Returns where the scroll will end. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinalY](https://developer.android.com/reference/kotlin/android/widget/Scroller#getFinalY())`()` Returns where the scroll will end. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartX](https://developer.android.com/reference/kotlin/android/widget/Scroller#getStartX())`()` Returns the start X offset in the scroll. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinalX](../android/widget/Scroller.md))`()` Returns where the scroll will end. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFinalY](../android/widget/Scroller.md))`()` Returns where the scroll will end. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartX](../android/widget/Scroller.md))`()` Returns the start X offset in the scroll. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartY](https://developer.android.com/reference/kotlin/android/widget/Scroller#getStartY())`()` Returns the start Y offset in the scroll. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinished](https://developer.android.com/reference/kotlin/android/widget/Scroller#isFinished())`()` Returns whether the scroller has finished scrolling. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFinalX](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalX(kotlin.Int))`(`newX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the final position (X) for this scroller. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartY](../android/widget/Scroller.md))`()` Returns the start Y offset in the scroll. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinished](../android/widget/Scroller.md))`()` Returns whether the scroller has finished scrolling. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFinalX](../android/widget/Scroller.md))`(`newX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the final position (X) for this scroller. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFinalY](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalY(kotlin.Int))`(`newY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the final position (Y) for this scroller. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFriction](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFriction(kotlin.Float))`(`friction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The amount of friction applied to flings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startScroll](https://developer.android.com/reference/kotlin/android/widget/Scroller#startScroll(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling by providing a starting point and the distance to travel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFinalY](../android/widget/Scroller.md))`(`newY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the final position (Y) for this scroller. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFriction](../android/widget/Scroller.md))`(`friction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The amount of friction applied to flings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startScroll](../android/widget/Scroller.md))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling by providing a starting point and the distance to travel. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startScroll](https://developer.android.com/reference/kotlin/android/widget/Scroller#startScroll(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling by providing a starting point, the distance to travel, and the duration of the scroll. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [timePassed](https://developer.android.com/reference/kotlin/android/widget/Scroller#timePassed())`()` Returns the time elapsed since the beginning of the scrolling. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startScroll](../android/widget/Scroller.md))`(`startX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start scrolling by providing a starting point, the distance to travel, and the duration of the scroll. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [timePassed](../android/widget/Scroller.md))`()` Returns the time elapsed since the beginning of the scrolling. |
 
 ## Public constructors
 
@@ -128,10 +128,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun abortAnimation(): Unit
 ```
 
-Stops the animation. Contrary to [forceFinished(boolean)](https://developer.android.com/reference/kotlin/android/widget/Scroller#forceFinished(kotlin.Boolean)), aborting the animating cause the scroller to move to the final x and y position 
+Stops the animation. Contrary to [forceFinished(boolean)](../android/widget/Scroller.md)), aborting the animating cause the scroller to move to the final x and y position 
 **See Also**
 
-- [#forceFinished(boolean)](https://developer.android.com/reference/kotlin/android/widget/Scroller#forceFinished(kotlin.Boolean)) 
+- [#forceFinished(boolean)](../android/widget/Scroller.md)) 
 
 ### computeScrollOffset
 
@@ -151,7 +151,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun extendDuration(extend: Int): Unit
 ```
 
-Extend the scroll animation. This allows a running animation to scroll further and longer, when used with [setFinalX(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalX(kotlin.Int))or [setFinalY(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalY(kotlin.Int)).
+Extend the scroll animation. This allows a running animation to scroll further and longer, when used with [setFinalX(int)](../android/widget/Scroller.md))or [setFinalY(int)](../android/widget/Scroller.md)).
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------|
@@ -159,8 +159,8 @@ Extend the scroll animation. This allows a running animation to scroll further a
 
 **See Also**
 
-- [#setFinalX(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalX(kotlin.Int))
-- [#setFinalY(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalY(kotlin.Int)) 
+- [#setFinalX(int)](../android/widget/Scroller.md))
+- [#setFinalY(int)](../android/widget/Scroller.md)) 
 
 ### fling
 
@@ -350,8 +350,8 @@ Sets the final position (X) for this scroller.
 
 **See Also**
 
-- [#extendDuration(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#extendDuration(kotlin.Int))
-- [#setFinalY(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalY(kotlin.Int)) 
+- [#extendDuration(int)](../android/widget/Scroller.md))
+- [#setFinalY(int)](../android/widget/Scroller.md)) 
 
 ### setFinalY
 
@@ -369,8 +369,8 @@ Sets the final position (Y) for this scroller.
 
 **See Also**
 
-- [#extendDuration(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#extendDuration(kotlin.Int))
-- [#setFinalX(int)](https://developer.android.com/reference/kotlin/android/widget/Scroller#setFinalX(kotlin.Int)) 
+- [#extendDuration(int)](../android/widget/Scroller.md))
+- [#setFinalX(int)](../android/widget/Scroller.md)) 
 
 ### setFriction
 
@@ -380,7 +380,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun setFriction(friction: Float): Unit
 ```
 
-The amount of friction applied to flings. The default value is [ViewConfiguration.getScrollFriction](https://developer.android.com/reference/kotlin/android/view/ViewConfiguration.html#getScrollFriction()).
+The amount of friction applied to flings. The default value is [ViewConfiguration.getScrollFriction](../android/view/ViewConfiguration.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ContentObserver
 
-Kotlin | [Java](https://developer.android.com/reference/android/database/ContentObserver "View this page in Java")
+Kotlin | [Java](../android/database/ContentObserver.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ abstract class ContentObserver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.ContentObserver](https://developer.android.com/reference/kotlin/android/database/ContentObserver#) |
+| ↳ | [android.database.ContentObserver](../android/database/ContentObserver.md) |
 
-| Known Direct Subclasses [AbstractCursor.SelfContentObserver](https://developer.android.com/reference/kotlin/android/database/AbstractCursor.SelfContentObserver), [Loader.ForceLoadContentObserver](https://developer.android.com/reference/kotlin/android/content/Loader.ForceLoadContentObserver.html#) |---|---| | [AbstractCursor.SelfContentObserver](https://developer.android.com/reference/kotlin/android/database/AbstractCursor.SelfContentObserver) | Cursors use this class to track changes others make to their URI. | | [Loader.ForceLoadContentObserver](https://developer.android.com/reference/kotlin/android/content/Loader.ForceLoadContentObserver.html#) | An implementation of a ContentObserver that takes care of connecting it to the Loader to have the loader re-load its data when the observer is told it has changed. | |
+| Known Direct Subclasses [AbstractCursor.SelfContentObserver](../android/database/AbstractCursor.SelfContentObserver.md), [Loader.ForceLoadContentObserver](../android/content/Loader.ForceLoadContentObserver.md) |---|---| | [AbstractCursor.SelfContentObserver](../android/database/AbstractCursor.SelfContentObserver.md) | Cursors use this class to track changes others make to their URI. | | [Loader.ForceLoadContentObserver](../android/content/Loader.ForceLoadContentObserver.md) | An implementation of a ContentObserver that takes care of connecting it to the Loader to have the loader re-load its data when the observer is told it has changed. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Receives call backs for changes to content. Must be implemented by objects which are added to a `https://developer.android.com/reference/kotlin/android/database/ContentObservable`.
@@ -53,7 +53,7 @@ Creates a content observer.
 
 | Parameters ||
 |---|---|
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!: The handler to run #onChange on, or null if none. |
+| `handler` | [Handler](../android/os/Handler.md)!: The handler to run #onChange on, or null if none. |
 
 ## Public methods
 
@@ -104,7 +104,7 @@ If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` w
 | Parameters ||
 |---|---|
 | `selfChange` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if this is a self-change notification. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The Uri of the changed content. This value may be `null`. |
+| `uri` | [Uri](../android/net/Uri.md)?: The Uri of the changed content. This value may be `null`. |
 
 ### dispatchChange
 
@@ -125,7 +125,7 @@ If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` w
 | Parameters ||
 |---|---|
 | `selfChange` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if this is a self-change notification. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The Uri of the changed content. This value may be `null`. |
+| `uri` | [Uri](../android/net/Uri.md)?: The Uri of the changed content. This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags indicating details about this change. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SYNC_TO_NETWORK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_INSERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_UPDATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_DELETE:kotlin.Int` |
 | --- | --- |
 
@@ -148,7 +148,7 @@ If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` w
 | Parameters ||
 |---|---|
 | `selfChange` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if this is a self-change notification. |
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: The Uri of the changed content. This value cannot be `null`. |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>: The Uri of the changed content. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags indicating details about this change. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SYNC_TO_NETWORK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_INSERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_UPDATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_DELETE:kotlin.Int` |
 | --- | --- |
 
@@ -208,7 +208,7 @@ Example implementation:
 | Parameters ||
 |---|---|
 | `selfChange` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if this is a self-change notification. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The Uri of the changed content. This value may be `null`. |
+| `uri` | [Uri](../android/net/Uri.md)?: The Uri of the changed content. This value may be `null`. |
 
 ### onChange
 
@@ -229,7 +229,7 @@ Subclasses should override this method to handle content changes. To ensure corr
 | Parameters ||
 |---|---|
 | `selfChange` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if this is a self-change notification. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The Uri of the changed content. This value may be `null`. |
+| `uri` | [Uri](../android/net/Uri.md)?: The Uri of the changed content. This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags indicating details about this change. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SYNC_TO_NETWORK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_INSERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_UPDATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_DELETE:kotlin.Int` |
 | --- | --- |
 
@@ -252,6 +252,6 @@ Subclasses should override this method to handle content changes. To ensure corr
 | Parameters ||
 |---|---|
 | `selfChange` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if this is a self-change notification. |
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: The Uris of the changed content. This value cannot be `null`. |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>: The Uris of the changed content. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags indicating details about this change. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SYNC_TO_NETWORK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_INSERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_UPDATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#NOTIFY_DELETE:kotlin.Int` |
 | --- | --- |

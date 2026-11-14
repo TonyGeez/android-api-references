@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiP2pServiceInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pServiceInfo "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class WifiP2pServiceInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#) |
+| ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) |
 
-| Known Direct Subclasses [WifiP2pDnsSdServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo), [WifiP2pUpnpServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo) |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [WifiP2pDnsSdServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo) | A class for storing Bonjour service information that is advertised over a Wi-Fi peer-to-peer setup. | | [WifiP2pUpnpServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo) | A class for storing Upnp service information that is advertised over a Wi-Fi peer-to-peer setup. | |
+| Known Direct Subclasses [WifiP2pDnsSdServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo.md), [WifiP2pUpnpServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo.md) |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [WifiP2pDnsSdServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo.md) | A class for storing Bonjour service information that is advertised over a Wi-Fi peer-to-peer setup. | | [WifiP2pUpnpServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo.md) | A class for storing Upnp service information that is advertised over a Wi-Fi peer-to-peer setup. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A class for storing service information that is advertised over a Wi-Fi peer-to-peer setup
@@ -24,25 +24,25 @@ A class for storing service information that is advertised over a Wi-Fi peer-to-
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_ALL](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_ALL:kotlin.Int) All service protocol types. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_BONJOUR](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_BONJOUR:kotlin.Int) DNS based service discovery protocol. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_UPNP](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_UPNP:kotlin.Int) UPnP protocol. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_ALL](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) All service protocol types. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_BONJOUR](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) DNS based service discovery protocol. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_UPNP](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) UPnP protocol. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_VENDOR_SPECIFIC](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int) Vendor Specific protocol |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_TYPE_VENDOR_SPECIFIC](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md) Vendor Specific protocol |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WifiP2pServiceInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#WifiP2pServiceInfo(android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceConfig))`(`usdConfig:` ` [WifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig)`)` Constructor for creating a service information for advertising the service using un-synchronized service discovery (USD) protocol. |
+| [WifiP2pServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md))`(`usdConfig:` ` [WifiP2pUsdBasedServiceConfig](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig.md)`)` Constructor for creating a service information for advertising the service using un-synchronized service discovery (USD) protocol. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [WifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig)? | [getWifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#getWifiP2pUsdBasedServiceConfig())`()` Get the service information configured to advertise using un-synchronized service discovery (USD) protocol. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#hashCode())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [WifiP2pUsdBasedServiceConfig](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig.md)? | [getWifiP2pUsdBasedServiceConfig](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md))`()` Get the service information configured to advertise using un-synchronized service discovery (USD) protocol. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md))`()` <br /> |
 | --- | --- |
 
 ## Constants
@@ -109,7 +109,7 @@ Constructor for creating a service information for advertising the service using
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `usdConfig` | [WifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig):See [WifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig) This value cannot be`null`. |
+| `usdConfig` | [WifiP2pUsdBasedServiceConfig](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig.md):See [WifiP2pUsdBasedServiceConfig](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig.md) This value cannot be`null`. |
 
 | Return ||
 |---|----------------------------------------------------------|
@@ -141,11 +141,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getWifiP2pUsdBasedServiceConfig(): WifiP2pUsdBasedServiceConfig?
 ```
 
-Get the service information configured to advertise using un-synchronized service discovery (USD) protocol. See [WifiP2pServiceInfo(android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceConfig)](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#WifiP2pServiceInfo(android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceConfig))
+Get the service information configured to advertise using un-synchronized service discovery (USD) protocol. See [WifiP2pServiceInfo(android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceConfig)](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md))
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [WifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig)? | A valid or not null [WifiP2pUsdBasedServiceConfig](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig) if the service information is configured to advertise using un-synchronized service discovery (USD) protocol. Otherwise, it is null. |
+| [WifiP2pUsdBasedServiceConfig](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig.md)? | A valid or not null [WifiP2pUsdBasedServiceConfig](../android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig.md) if the service information is configured to advertise using un-synchronized service discovery (USD) protocol. Otherwise, it is null. |
 
 ### hashCode
 

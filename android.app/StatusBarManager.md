@@ -8,7 +8,7 @@ open class StatusBarManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.StatusBarManager](https://developer.android.com/reference/kotlin/android/app/StatusBarManager#) |
+| ↳ | [android.app.StatusBarManager](../android/app/StatusBarManager.md) |
 
 Allows an app to control the status bar.
 
@@ -211,7 +211,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity): Calling activity. This value cannot be `null`. |
+| `activity` | [Activity](../android/app/Activity.md): Calling activity. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -251,12 +251,12 @@ The user for which this will be added is determined from the `https://developer.
 
 | Parameters ||
 |---|---|
-| `tileServiceComponentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` for the request. This value cannot be `null`. |
+| `tileServiceComponentName` | [ComponentName](../android/content/ComponentName.md): `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` for the request. This value cannot be `null`. |
 | `tileLabel` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): label of the tile to show to the user. This value cannot be `null`. |
-| `icon` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#): icon to use in the tile shown to the user. This value cannot be `null`. |
+| `icon` | [Icon](../android/graphics/drawable/Icon.md): icon to use in the tile shown to the user. This value cannot be `null`. |
 | --- | --- |
-| `resultExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): an executor to run the callback on. This value cannot be `null`. |
-| `resultCallback` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: callback to indicate the result of the request. This value cannot be `null`. |
+| `resultExecutor` | [Executor](../java/util/concurrent/Executor.md): an executor to run the callback on. This value cannot be `null`. |
+| `resultCallback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: callback to indicate the result of the request. This value cannot be `null`. |
 
 **See Also**
 
@@ -288,5 +288,5 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` in which the methods of `callback` will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\>: will call back with the result of the request, or a possible error. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_SHOWING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_DISABLED:kotlin.Int` |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` in which the methods of `callback` will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\>: will call back with the result of the request, or a possible error. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_SHOWING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_DISABLED:kotlin.Int` |

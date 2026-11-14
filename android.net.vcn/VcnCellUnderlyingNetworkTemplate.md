@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # VcnCellUnderlyingNetworkTemplate
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate "View this page in Java") 
+Kotlin | [Java](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md) 
 | --- | --- |
 
 ```
@@ -13,45 +13,45 @@ class VcnCellUnderlyingNetworkTemplate : VcnUnderlyingNetworkTemplate
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.vcn.VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate) ||
-| | ↳ | [android.net.vcn.VcnCellUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#) |
+| ↳ | [android.net.vcn.VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) ||
+| | ↳ | [android.net.vcn.VcnCellUnderlyingNetworkTemplate](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md) |
 
 This class represents a configuration for a network template class of underlying cellular networks.
 
-See [VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate)
+See [VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md)
 
 ## Summary
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder) This class is used to incrementally build VcnCellUnderlyingNetworkTemplate objects. |
+| | [Builder](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md) This class is used to incrementally build VcnCellUnderlyingNetworkTemplate objects. |
 
 | Inherited constants ||
 |---|---|
-| From class [VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int) Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that networks with or without the characteristic are both acceptable to match this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST NOT have the capability in order to match this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int) Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST have the capability in order to match this template. <br /> | ||
+| From class [VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that networks with or without the characteristic are both acceptable to match this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST NOT have the capability in order to match this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST have the capability in order to match this template. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCbs](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getCbs())`()` Returns the matching criteria for CBS networks. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDun](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getDun())`()` Returns the matching criteria for DUN networks. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCbs](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Returns the matching criteria for CBS networks. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDun](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Returns the matching criteria for DUN networks. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIms](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getIms())`()` Returns the matching criteria for IMS networks. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInternet](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getInternet())`()` Returns the matching criteria for INTERNET networks. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMms](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getMms())`()` Returns the matching criteria for MMS networks. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIms](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Returns the matching criteria for IMS networks. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInternet](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Returns the matching criteria for INTERNET networks. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMms](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Returns the matching criteria for MMS networks. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getOperatorPlmnIds](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getOperatorPlmnIds())`()` Retrieve the matching operator PLMN IDs, or an empty set if any PLMN ID is acceptable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpportunistic](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getOpportunistic())`()` Return the matching criteria for opportunistic cellular subscriptions. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRcs](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getRcs())`()` Returns the matching criteria for RCS networks. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getOperatorPlmnIds](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Retrieve the matching operator PLMN IDs, or an empty set if any PLMN ID is acceptable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpportunistic](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Return the matching criteria for opportunistic cellular subscriptions. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRcs](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Returns the matching criteria for RCS networks. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoaming](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getRoaming())`()` Return the matching criteria for roaming networks. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getSimSpecificCarrierIds](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#getSimSpecificCarrierIds())`()` Retrieve the matching sim specific carrier IDs, or an empty set if any sim specific carrier ID is acceptable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate#hashCode())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoaming](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Return the matching criteria for roaming networks. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getSimSpecificCarrierIds](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` Retrieve the matching sim specific carrier IDs, or an empty set if any sim specific carrier ID is acceptable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.md))`()` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [VcnUnderlyingNetworkTemplate](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetered](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMetered())`()` Return the matching criteria for metered networks. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinEntryDownstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinEntryDownstreamBandwidthKbps())`()` Returns the minimum entry downstream bandwidth allowed by this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinEntryUpstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinEntryUpstreamBandwidthKbps())`()` Returns the minimum entry upstream bandwidth allowed by this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinExitDownstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinExitDownstreamBandwidthKbps())`()` Returns the minimum exit downstream bandwidth allowed by this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinExitUpstreamBandwidthKbps](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinExitUpstreamBandwidthKbps())`()` Returns the minimum exit upstream bandwidth allowed by this template. <br /> | ||
+| From class [VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetered](../android/net/vcn/VcnUnderlyingNetworkTemplate.md))`()` Return the matching criteria for metered networks. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinEntryDownstreamBandwidthKbps](../android/net/vcn/VcnUnderlyingNetworkTemplate.md))`()` Returns the minimum entry downstream bandwidth allowed by this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinEntryUpstreamBandwidthKbps](../android/net/vcn/VcnUnderlyingNetworkTemplate.md))`()` Returns the minimum entry upstream bandwidth allowed by this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinExitDownstreamBandwidthKbps](../android/net/vcn/VcnUnderlyingNetworkTemplate.md))`()` Returns the minimum exit downstream bandwidth allowed by this template. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinExitUpstreamBandwidthKbps](../android/net/vcn/VcnUnderlyingNetworkTemplate.md))`()` Returns the minimum exit upstream bandwidth allowed by this template. <br /> | ||
 
 ## Public methods
 
@@ -96,11 +96,11 @@ Returns the matching criteria for CBS networks.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setCbs(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setCbs(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setCbs(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getDun
 
@@ -114,11 +114,11 @@ Returns the matching criteria for DUN networks.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setDun(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setDun(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setDun(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getIms
 
@@ -132,11 +132,11 @@ Returns the matching criteria for IMS networks.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setIms(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setIms(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setIms(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getInternet
 
@@ -150,11 +150,11 @@ Returns the matching criteria for INTERNET networks.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setInternet(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setInternet(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setInternet(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getMms
 
@@ -168,11 +168,11 @@ Returns the matching criteria for MMS networks.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setMms(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setMms(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setMms(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getOperatorPlmnIds
 
@@ -190,7 +190,7 @@ Retrieve the matching operator PLMN IDs, or an empty set if any PLMN ID is accep
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setOperatorPlmnIds(Set)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setOperatorPlmnIds(kotlin.collections.MutableSet)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setOperatorPlmnIds(Set)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getOpportunistic
 
@@ -204,11 +204,11 @@ Return the matching criteria for opportunistic cellular subscriptions.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setOpportunistic(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setOpportunistic(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setOpportunistic(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getRcs
 
@@ -222,11 +222,11 @@ Returns the matching criteria for RCS networks.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setRcs(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setRcs(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setRcs(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getRoaming
 
@@ -240,11 +240,11 @@ Return the matching criteria for roaming networks.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_ANY](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_REQUIRED](../android/net/vcn/VcnUnderlyingNetworkTemplate.md), or [android.net.vcn.VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN](../android/net/vcn/VcnUnderlyingNetworkTemplate.md) |
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setRoaming(int)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setRoaming(kotlin.Int)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setRoaming(int)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### getSimSpecificCarrierIds
 
@@ -262,7 +262,7 @@ Retrieve the matching sim specific carrier IDs, or an empty set if any sim speci
 
 **See Also**
 
-- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setSimSpecificCarrierIds(Set)](https://developer.android.com/reference/kotlin/android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder#setSimSpecificCarrierIds(kotlin.collections.MutableSet)) 
+- [android.net.vcn.VcnCellUnderlyingNetworkTemplate.Builder#setSimSpecificCarrierIds(Set)](../android/net/vcn/VcnCellUnderlyingNetworkTemplate.Builder.md)) 
 
 ### hashCode
 

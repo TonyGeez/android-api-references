@@ -9,9 +9,9 @@ open class IsolatedContext : ContextWrapper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||
-| | | ↳ | [android.test.IsolatedContext](https://developer.android.com/reference/kotlin/android/test/IsolatedContext#) |
+| ↳ | [android.content.Context](../android/content/Context.md) |||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
+| | | ↳ | [android.test.IsolatedContext](../android/test/IsolatedContext.md) |
 | --- | --- | --- | --- |
 
 > [!CAUTION]
@@ -470,7 +470,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -944,14 +944,14 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether a particular process and uid has been granted permission to access a specific URI. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#checkUriPermission(android.net.Uri,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, readPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, writePermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check both a Uri and normal permission. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!\>! | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getAndClearBroadcastIntents()()` Returns the list of intents that were broadcast since the last call to this method. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Intent](../android/content/Intent.md)!\>! | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getAndClearBroadcastIntents()()` Returns the list of intents that were broadcast since the last call to this method. |
 | --- | --- |
-| open [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource.html#) | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getAttributionSource()()` <br /> |
-| open [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#)! | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getContentResolver()()` Return a ContentResolver instance for your application's package. |
-| open [File](https://developer.android.com/reference/kotlin/java/io/File.html#)! | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getFilesDir()()` Returns the absolute path to the directory on the filesystem where files created with `https://developer.android.com/reference/kotlin/android/content/Context.html#openFileOutput(kotlin.String,%20kotlin.Int)` are stored. |
+| open [AttributionSource](../android/content/AttributionSource.md) | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getAttributionSource()()` <br /> |
+| open [ContentResolver](../android/content/ContentResolver.md)! | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getContentResolver()()` Return a ContentResolver instance for your application's package. |
+| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getFilesDir()()` Returns the absolute path to the directory on the filesystem where files created with `https://developer.android.com/reference/kotlin/android/content/Context.html#openFileOutput(kotlin.String,%20kotlin.Int)` are stored. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!)` Register a BroadcastReceiver to be run in the main activity thread. |
+| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!)` Register a BroadcastReceiver to be run in the main activity thread. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#sendBroadcast(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Broadcast the given intent to all interested BroadcastReceivers. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/IsolatedContext#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Broadcast the given intent to all interested BroadcastReceivers, delivering them one at a time to allow more preferred receivers to consume the broadcast before it is delivered to less preferred receivers. |
@@ -2035,7 +2035,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2076,9 +2076,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2275,12 +2275,12 @@ Variation of #bindService that, in the specific case of isolated services, allow
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
+| `service` | [Intent](../android/content/Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operation options for the binding as per #bindService. |
 | `instanceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Unique identifier for the service instance. Each unique name here will result in a different service instance being created. Identifiers must only contain ASCII letters, digits, underscores, and periods. This value cannot be `null`. |
 | --- | --- |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `conn` | [ServiceConnection](https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
 
 | Return ||
 |---|---|
@@ -2315,8 +2315,8 @@ This method only accepts a int type flag, to pass in a long type flag, call `htt
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
-| `conn` | [ServiceConnection](https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
+| `service` | [Intent](../android/content/Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
+| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operation options for the binding. Can be: - 0 - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_AUTO_CREATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_DEBUG_UNBIND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_NOT_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ABOVE_CLIENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ALLOW_OOM_MANAGEMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_WAIVE_PRIORITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_IMPORTANT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_NOT_PERCEPTIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_INCLUDE_CAPABILITIES:kotlin.Int` |
 | --- | --- |
 
@@ -2350,11 +2350,11 @@ This method only accepts a 32 bits flag, to pass in a 64 bits flag, call `https:
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
+| `service` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_AUTO_CREATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_DEBUG_UNBIND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_NOT_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ABOVE_CLIENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ALLOW_OOM_MANAGEMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_WAIVE_PRIORITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_IMPORTANT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_NOT_PERCEPTIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ALLOW_ACTIVITY_STARTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_INCLUDE_CAPABILITIES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_SHARED_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_PACKAGE_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `conn` | [ServiceConnection](https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#): This value cannot be `null`. |
+| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2379,7 +2379,7 @@ Determine whether a particular process and uid has been granted permission to ac
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The uri that is being checked. |
+| `uri` | [Uri](../android/net/Uri.md)!: The uri that is being checked. |
 | `pid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The process ID being checked against. Must be \> 0. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The UID being checked against. A uid of 0 is the root user, which will pass every permission check. |
 | --- | --- |
@@ -2410,7 +2410,7 @@ Check both a Uri and normal permission. This allows you to perform both `https:/
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: This value may be `null`. |
+| `uri` | [Uri](../android/net/Uri.md)?: This value may be `null`. |
 | `readPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | `writePermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
@@ -2627,8 +2627,8 @@ Note: this method *cannot be called from a `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `receiver` | [BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#)?: This value may be `null`. |
-| `filter` | [IntentFilter](https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#)!: Selects the Intent broadcasts to be received. |
+| `receiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
+| `filter` | [IntentFilter](../android/content/IntentFilter.md)!: Selects the Intent broadcasts to be received. |
 
 | Return ||
 |---|---|
@@ -2650,7 +2650,7 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
 
 ### sendOrderedBroadcast
 
@@ -2671,7 +2671,7 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 ### unregisterReceiver
@@ -2688,7 +2688,7 @@ Unregister a previously registered BroadcastReceiver. *All* filters that have be
 
 | Parameters ||
 |---|---|
-| `receiver` | [BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#)!: The BroadcastReceiver to unregister. |
+| `receiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)!: The BroadcastReceiver to unregister. |
 
 | Exceptions ||
 |---|---|

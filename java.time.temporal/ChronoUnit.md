@@ -10,15 +10,15 @@ class ChronoUnit : TemporalUnit
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.temporal.ChronoUnit](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#)\> ||
-| | ↳ | [java.time.temporal.ChronoUnit](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.temporal.ChronoUnit](../java/time/temporal/ChronoUnit.md)\> ||
+| | ↳ | [java.time.temporal.ChronoUnit](../java/time/temporal/ChronoUnit.md) |
 
-| Known Direct Subclasses [ChronoUnit.CENTURIES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:CENTURIES), [ChronoUnit.DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:DAYS), [ChronoUnit.DECADES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:DECADES), [ChronoUnit.ERAS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:ERAS), [ChronoUnit.FOREVER](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:FOREVER), [ChronoUnit.HALF_DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:HALF_DAYS), [ChronoUnit.HOURS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:HOURS), [ChronoUnit.MICROS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MICROS), [ChronoUnit.MILLENNIA](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MILLENNIA), [ChronoUnit.MILLIS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MILLIS), [ChronoUnit.MINUTES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MINUTES), [ChronoUnit.MONTHS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MONTHS), and 4 others. |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------| | [ChronoUnit.CENTURIES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:CENTURIES) | Unit that represents the concept of a century. | | [ChronoUnit.DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:DAYS) | Unit that represents the concept of a day. | | [ChronoUnit.DECADES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:DECADES) | Unit that represents the concept of a decade. | | [ChronoUnit.ERAS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:ERAS) | Unit that represents the concept of an era. | | [ChronoUnit.FOREVER](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:FOREVER) | Artificial unit that represents the concept of forever. | | [ChronoUnit.HALF_DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:HALF_DAYS) | Unit that represents the concept of half a day, as used in AM/PM. | | [ChronoUnit.HOURS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:HOURS) | Unit that represents the concept of an hour. | | [ChronoUnit.MICROS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MICROS) | Unit that represents the concept of a microsecond. | | [ChronoUnit.MILLENNIA](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MILLENNIA) | Unit that represents the concept of a millennium. | | [ChronoUnit.MILLIS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MILLIS) | Unit that represents the concept of a millisecond. | | [ChronoUnit.MINUTES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MINUTES) | Unit that represents the concept of a minute. | | [ChronoUnit.MONTHS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MONTHS) | Unit that represents the concept of a month. | | [ChronoUnit.NANOS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:NANOS) | Unit that represents the concept of a nanosecond, the smallest supported unit of time. | | [ChronoUnit.SECONDS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:SECONDS) | Unit that represents the concept of a second. | | [ChronoUnit.WEEKS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:WEEKS) | Unit that represents the concept of a week. | | [ChronoUnit.YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:YEARS) | Unit that represents the concept of a year. | |
+| Known Direct Subclasses [ChronoUnit.CENTURIES](../java/time/temporal/ChronoUnit.md), [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.DECADES](../java/time/temporal/ChronoUnit.md), [ChronoUnit.ERAS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.FOREVER](../java/time/temporal/ChronoUnit.md), [ChronoUnit.HALF_DAYS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.HOURS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MICROS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MILLENNIA](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MILLIS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MINUTES](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MONTHS](../java/time/temporal/ChronoUnit.md), and 4 others. |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------| | [ChronoUnit.CENTURIES](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a century. | | [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a day. | | [ChronoUnit.DECADES](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a decade. | | [ChronoUnit.ERAS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of an era. | | [ChronoUnit.FOREVER](../java/time/temporal/ChronoUnit.md) | Artificial unit that represents the concept of forever. | | [ChronoUnit.HALF_DAYS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of half a day, as used in AM/PM. | | [ChronoUnit.HOURS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of an hour. | | [ChronoUnit.MICROS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a microsecond. | | [ChronoUnit.MILLENNIA](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a millennium. | | [ChronoUnit.MILLIS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a millisecond. | | [ChronoUnit.MINUTES](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a minute. | | [ChronoUnit.MONTHS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a month. | | [ChronoUnit.NANOS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a nanosecond, the smallest supported unit of time. | | [ChronoUnit.SECONDS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a second. | | [ChronoUnit.WEEKS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a week. | | [ChronoUnit.YEARS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a year. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A standard set of date periods units.
 
-This set of units provide unit-based access to manipulate a date, time or date-time. The standard set of units can be extended by implementing [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit).
+This set of units provide unit-based access to manipulate a date, time or date-time. The standard set of units can be extended by implementing [TemporalUnit](../java/time/temporal/TemporalUnit.md).
 
 These units are intended to be applicable in multiple calendar systems. For example, most non-ISO calendar systems define units of years, months and days, just with slightly different rules. The documentation of each unit explains how it operates.
 
@@ -26,35 +26,35 @@ These units are intended to be applicable in multiple calendar systems. For exam
 
 | Enum values ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CENTURIES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:CENTURIES) Unit that represents the concept of a century. |
-| [DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:DAYS) Unit that represents the concept of a day. |
-| [DECADES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:DECADES) Unit that represents the concept of a decade. |
-| [ERAS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:ERAS) Unit that represents the concept of an era. |
-| [FOREVER](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:FOREVER) Artificial unit that represents the concept of forever. |
-| [HALF_DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:HALF_DAYS) Unit that represents the concept of half a day, as used in AM/PM. |
-| [HOURS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:HOURS) Unit that represents the concept of an hour. |
-| [MICROS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MICROS) Unit that represents the concept of a microsecond. |
-| [MILLENNIA](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MILLENNIA) Unit that represents the concept of a millennium. |
-| [MILLIS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MILLIS) Unit that represents the concept of a millisecond. |
-| [MINUTES](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MINUTES) Unit that represents the concept of a minute. |
-| [MONTHS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:MONTHS) Unit that represents the concept of a month. |
-| [NANOS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:NANOS) Unit that represents the concept of a nanosecond, the smallest supported unit of time. |
-| [SECONDS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:SECONDS) Unit that represents the concept of a second. |
-| [WEEKS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:WEEKS) Unit that represents the concept of a week. |
-| [YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#ENUM_VALUE:YEARS) Unit that represents the concept of a year. |
+| [CENTURIES](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a century. |
+| [DAYS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a day. |
+| [DECADES](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a decade. |
+| [ERAS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of an era. |
+| [FOREVER](../java/time/temporal/ChronoUnit.md) Artificial unit that represents the concept of forever. |
+| [HALF_DAYS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of half a day, as used in AM/PM. |
+| [HOURS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of an hour. |
+| [MICROS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a microsecond. |
+| [MILLENNIA](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a millennium. |
+| [MILLIS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a millisecond. |
+| [MINUTES](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a minute. |
+| [MONTHS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a month. |
+| [NANOS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a nanosecond, the smallest supported unit of time. |
+| [SECONDS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a second. |
+| [WEEKS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a week. |
+| [YEARS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a year. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| R | [addTo](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#addTo(java.time.temporal.ChronoUnit.addTo.R,%20kotlin.Long))`(`temporal:` `R`, `amount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [between](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#between(java.time.temporal.Temporal,%20java.time.temporal.Temporal))`(`temporal1Inclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`, `temporal2Exclusive:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` <br /> |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)! | [getDuration](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#getDuration())`()` Gets the estimated duration of this unit in the ISO calendar system. |
+| R | [addTo](../java/time/temporal/ChronoUnit.md))`(`temporal:` `R`, `amount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [between](../java/time/temporal/ChronoUnit.md))`(`temporal1Inclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`, `temporal2Exclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` <br /> |
+| [Duration](../java/time/Duration.md)! | [getDuration](../java/time/temporal/ChronoUnit.md))`()` Gets the estimated duration of this unit in the ISO calendar system. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDateBased](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#isDateBased())`()` Checks if this unit is a date unit. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDurationEstimated](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#isDurationEstimated())`()` Checks if the duration of the unit is an estimate. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedBy](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#isSupportedBy(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDateBased](../java/time/temporal/ChronoUnit.md))`()` Checks if this unit is a date unit. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDurationEstimated](../java/time/temporal/ChronoUnit.md))`()` Checks if the duration of the unit is an estimate. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedBy](../java/time/temporal/ChronoUnit.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTimeBased](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#isTimeBased())`()` Checks if this unit is a time unit. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit#toString())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTimeBased](../java/time/temporal/ChronoUnit.md))`()` Checks if this unit is a time unit. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/temporal/ChronoUnit.md))`()` <br /> |
 
 ## Enum values
 
@@ -114,7 +114,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 enum val FOREVER : ChronoUnit
 ```
 
-Artificial unit that represents the concept of forever. This is primarily used with [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField) to represent unbounded fields such as the year or era. The estimated duration of this unit is artificially defined as the largest duration supported by [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#). 
+Artificial unit that represents the concept of forever. This is primarily used with [TemporalField](../java/time/temporal/TemporalField.md) to represent unbounded fields such as the year or era. The estimated duration of this unit is artificially defined as the largest duration supported by [Duration](../java/time/Duration.md). 
 
 ### HALF_DAYS
 
@@ -276,8 +276,8 @@ fun between(
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal1Inclusive` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the base temporal object, not null |
-| `temporal2Exclusive` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the other temporal object, exclusive, not null |
+| `temporal1Inclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the base temporal object, not null |
+| `temporal2Exclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the other temporal object, exclusive, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -304,7 +304,7 @@ All of the units in this class have an estimated duration. Days vary due to dayl
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)! | the estimated duration of this unit, not null |
+| [Duration](../java/time/Duration.md)! | the estimated duration of this unit, not null |
 
 ### isDateBased
 
@@ -350,7 +350,7 @@ fun isSupportedBy(temporal: Temporal!): Boolean
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the temporal object to check, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to check, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------|

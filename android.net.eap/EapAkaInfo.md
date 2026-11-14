@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # EapAkaInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/eap/EapAkaInfo "View this page in Java") 
+Kotlin | [Java](../android/net/eap/EapAkaInfo.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class EapAkaInfo : EapInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.eap.EapInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapInfo) ||
-| | ↳ | [android.net.eap.EapAkaInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo#) |
+| ↳ | [android.net.eap.EapInfo](../android/net/eap/EapInfo.md) ||
+| | ↳ | [android.net.eap.EapAkaInfo](../android/net/eap/EapAkaInfo.md) |
 
 EapAkaInfo represents data provided by the server during EAP AKA authentication
 
@@ -22,15 +22,15 @@ EapAkaInfo represents data provided by the server during EAP AKA authentication
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo.Builder) This class can be used to incrementally construct an [EapAkaInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo#). |
+| | [Builder](../android/net/eap/EapAkaInfo.Builder.md) This class can be used to incrementally construct an [EapAkaInfo](../android/net/eap/EapAkaInfo.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getReauthId](https://developer.android.com/reference/kotlin/android/net/eap/EapAkaInfo#getReauthId())`()` Retrieves re-authentication ID from server for next use. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getReauthId](../android/net/eap/EapAkaInfo.md))`()` Retrieves re-authentication ID from server for next use. |
 
 | Inherited functions ||
 |---|---|
-| From class [EapInfo](https://developer.android.com/reference/kotlin/android/net/eap/EapInfo) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEapMethodType](https://developer.android.com/reference/kotlin/android/net/eap/EapInfo#getEapMethodType())`()` Retrieves EAP method type <br /> | ||
+| From class [EapInfo](../android/net/eap/EapInfo.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEapMethodType](../android/net/eap/EapInfo.md))`()` Retrieves EAP method type <br /> | ||
 
 ## Public methods
 

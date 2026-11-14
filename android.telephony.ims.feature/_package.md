@@ -2,10 +2,10 @@
 
 # android.telephony.ims.feature
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/ims/feature/package-summary "View this page in Java")
+Kotlin| [Java](../android/telephony/ims/feature/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [MmTelFeature](https://developer.android.com/reference/kotlin/android/telephony/ims/feature/MmTelFeature) | Base implementation for Voice and SMS (IR-92) and Video (IR-94) IMS support. |
+| [MmTelFeature](../android/telephony/ims/feature/MmTelFeature.md) | Base implementation for Voice and SMS (IR-92) and Video (IR-94) IMS support. |
 | --- | --- |

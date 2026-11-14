@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # SslError
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/http/SslError "View this page in Java") 
+Kotlin| [Java](../android/net/http/SslError.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class SslError
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.SslError](https://developer.android.com/reference/kotlin/android/net/http/SslError#) |
+| ↳ | [android.net.http.SslError](../android/net/http/SslError.md) |
 
 This class represents a set of one or more SSL errors and the associated SSL certificate.
 
@@ -21,32 +21,32 @@ This class represents a set of one or more SSL errors and the associated SSL cer
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_DATE_INVALID](https://developer.android.com/reference/kotlin/android/net/http/SslError#SSL_DATE_INVALID:kotlin.Int) The date of the certificate is invalid |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_EXPIRED](https://developer.android.com/reference/kotlin/android/net/http/SslError#SSL_EXPIRED:kotlin.Int) The certificate has expired |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_IDMISMATCH](https://developer.android.com/reference/kotlin/android/net/http/SslError#SSL_IDMISMATCH:kotlin.Int) Hostname mismatch |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_DATE_INVALID](../android/net/http/SslError.md) The date of the certificate is invalid |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_EXPIRED](../android/net/http/SslError.md) The certificate has expired |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_IDMISMATCH](../android/net/http/SslError.md) Hostname mismatch |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_INVALID](https://developer.android.com/reference/kotlin/android/net/http/SslError#SSL_INVALID:kotlin.Int) A generic error occurred |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_MAX_ERROR](https://developer.android.com/reference/kotlin/android/net/http/SslError#SSL_MAX_ERROR:kotlin.Int) The number of different SSL errors. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_NOTYETVALID](https://developer.android.com/reference/kotlin/android/net/http/SslError#SSL_NOTYETVALID:kotlin.Int) The certificate is not yet valid |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_INVALID](../android/net/http/SslError.md) A generic error occurred |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_MAX_ERROR](../android/net/http/SslError.md) The number of different SSL errors. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_NOTYETVALID](../android/net/http/SslError.md) The certificate is not yet valid |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_UNTRUSTED](https://developer.android.com/reference/kotlin/android/net/http/SslError#SSL_UNTRUSTED:kotlin.Int) The certificate authority is not trusted |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SSL_UNTRUSTED](../android/net/http/SslError.md) The certificate authority is not trusted |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SslError](https://developer.android.com/reference/kotlin/android/net/http/SslError#SslError(kotlin.Int,%20android.net.http.SslCertificate))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [SslCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslCertificate)!`)` Creates a new SslError object using the supplied error and certificate. |
-| [SslError](https://developer.android.com/reference/kotlin/android/net/http/SslError#SslError(kotlin.Int,%20android.net.http.SslCertificate,%20kotlin.String))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [SslCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslCertificate)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new SslError object using the supplied error, certificate and URL. |
-| [SslError](https://developer.android.com/reference/kotlin/android/net/http/SslError#SslError(kotlin.Int,%20java.security.cert.X509Certificate))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!`)` Creates a new SslError object using the supplied error and certificate. |
-| [SslError](https://developer.android.com/reference/kotlin/android/net/http/SslError#SslError(kotlin.Int,%20java.security.cert.X509Certificate,%20kotlin.String))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new SslError object using the supplied error, certificate and URL. |
+| [SslError](../android/net/http/SslError.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [SslCertificate](../android/net/http/SslCertificate.md)!`)` Creates a new SslError object using the supplied error and certificate. |
+| [SslError](../android/net/http/SslError.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [SslCertificate](../android/net/http/SslCertificate.md)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new SslError object using the supplied error, certificate and URL. |
+| [SslError](../android/net/http/SslError.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [X509Certificate](../java/security/cert/X509Certificate.md)!`)` Creates a new SslError object using the supplied error and certificate. |
+| [SslError](../android/net/http/SslError.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [X509Certificate](../java/security/cert/X509Certificate.md)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new SslError object using the supplied error, certificate and URL. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addError](https://developer.android.com/reference/kotlin/android/net/http/SslError#addError(kotlin.Int))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds the supplied SSL error to the set. |
-| open [SslCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslCertificate)! | [getCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslError#getCertificate())`()` Gets the SSL certificate associated with this object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimaryError](https://developer.android.com/reference/kotlin/android/net/http/SslError#getPrimaryError())`()` Gets the most severe SSL error in this object's set of errors. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addError](../android/net/http/SslError.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds the supplied SSL error to the set. |
+| open [SslCertificate](../android/net/http/SslCertificate.md)! | [getCertificate](../android/net/http/SslError.md))`()` Gets the SSL certificate associated with this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimaryError](../android/net/http/SslError.md))`()` Gets the most severe SSL error in this object's set of errors. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUrl](https://developer.android.com/reference/kotlin/android/net/http/SslError#getUrl())`()` Gets the URL associated with this object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasError](https://developer.android.com/reference/kotlin/android/net/http/SslError#hasError(kotlin.Int))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether this object includes the supplied error. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/http/SslError#toString())`()` Returns a string representation of this object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUrl](../android/net/http/SslError.md))`()` Gets the URL associated with this object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasError](../android/net/http/SslError.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether this object includes the supplied error. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/http/SslError.md))`()` Returns a string representation of this object. |
 | --- | --- |
 
 ## Constants
@@ -150,14 +150,14 @@ SslError(
     certificate: SslCertificate!)
 ```
 
-**Deprecated:** *Use [SslError(int,android.net.http.SslCertificate,java.lang.String)](https://developer.android.com/reference/kotlin/android/net/http/SslError#SslError(kotlin.Int,%20android.net.http.SslCertificate,%20kotlin.String))*
+**Deprecated:** *Use [SslError(int,android.net.http.SslCertificate,java.lang.String)](../android/net/http/SslError.md))*
 
 Creates a new SslError object using the supplied error and certificate. The URL will be set to the empty string.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The SSL error |
-| `certificate` | [SslCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslCertificate)!:The associated SSL certificate |
+| `certificate` | [SslCertificate](../android/net/http/SslCertificate.md)!:The associated SSL certificate |
 
 ### SslError
 
@@ -175,7 +175,7 @@ Creates a new SslError object using the supplied error, certificate and URL.
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The SSL error |
-| `certificate` | [SslCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslCertificate)!:The associated SSL certificate |
+| `certificate` | [SslCertificate](../android/net/http/SslCertificate.md)!:The associated SSL certificate |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The associated URL |
 | --- | --- |
 
@@ -189,14 +189,14 @@ SslError(
     certificate: X509Certificate!)
 ```
 
-**Deprecated:** *Use [SslError(int,java.security.cert.X509Certificate,java.lang.String)](https://developer.android.com/reference/kotlin/android/net/http/SslError#SslError(kotlin.Int,%20java.security.cert.X509Certificate,%20kotlin.String))*
+**Deprecated:** *Use [SslError(int,java.security.cert.X509Certificate,java.lang.String)](../android/net/http/SslError.md))*
 
 Creates a new SslError object using the supplied error and certificate. The URL will be set to the empty string.
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The SSL error |
-| `certificate` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!:The associated SSL certificate |
+| `certificate` | [X509Certificate](../java/security/cert/X509Certificate.md)!:The associated SSL certificate |
 
 ### SslError
 
@@ -214,7 +214,7 @@ Creates a new SslError object using the supplied error, certificate and URL.
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The SSL error |
-| `certificate` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#)!:The associated SSL certificate |
+| `certificate` | [X509Certificate](../java/security/cert/X509Certificate.md)!:The associated SSL certificate |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The associated URL |
 | --- | --- |
 
@@ -250,7 +250,7 @@ Gets the SSL certificate associated with this object.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|--------------------------------|
-| [SslCertificate](https://developer.android.com/reference/kotlin/android/net/http/SslCertificate)! | The SSL certificate, non-null. |
+| [SslCertificate](../android/net/http/SslCertificate.md)! | The SSL certificate, non-null. |
 
 ### getPrimaryError
 

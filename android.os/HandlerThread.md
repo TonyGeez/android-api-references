@@ -8,8 +8,8 @@ open class HandlerThread : Thread
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.lang.Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#) ||
-| | ↳ | [android.os.HandlerThread](https://developer.android.com/reference/kotlin/android/os/HandlerThread#) |
+| ↳ | [java.lang.Thread](../java/lang/Thread.md) ||
+| | ↳ | [android.os.HandlerThread](../android/os/HandlerThread.md) |
 
 A `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` that has a `https://developer.android.com/reference/kotlin/android/os/Looper`. The `https://developer.android.com/reference/kotlin/android/os/Looper` can then be used to create `https://developer.android.com/reference/kotlin/android/os/Handler`s. Just like with a regular `https://developer.android.com/reference/kotlin/java/lang/Thread.html#`, `https://developer.android.com/reference/kotlin/java/lang/Thread.html#start()` must still be called.
 
@@ -64,7 +64,7 @@ The default priority that is assigned to a thread.
 
 | Public methods ||
 |---|---|
-| open [Looper](https://developer.android.com/reference/kotlin/android/os/Looper)! | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#getLooper()()` This method returns the Looper associated with this thread. |
+| open [Looper](../android/os/Looper.md)! | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#getLooper()()` This method returns the Looper associated with this thread. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#getThreadId()()` Returns the identifier of this thread. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/HandlerThread#quit()()` Quits the handler thread's looper. |
 | --- | --- |
@@ -77,7 +77,7 @@ The default priority that is assigned to a thread.
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/lang/Thread.html#activeCount()()`
 
-Returns an estimate of the number of active threads in the current thread's [thread group](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup.html#) and its subgroups. Recursively iterates over all subgroups in the current thread's thread group.
+Returns an estimate of the number of active threads in the current thread's [thread group](../java/lang/ThreadGroup.md) and its subgroups. Recursively iterates over all subgroups in the current thread's thread group.
 
 The value returned is only an estimate because the number of threads may change dynamically while this method traverses internal data structures, and might be affected by the presence of certain system threads. This method is intended primarily for debugging and monitoring purposes.
 
@@ -113,7 +113,7 @@ Prints a stack trace of the current thread to the standard error stream. This me
 
 Copies into the specified array every active thread in the current thread's thread group and its subgroups. This method simply invokes the `https://developer.android.com/reference/kotlin/java/lang/ThreadGroup.html#enumerate(kotlin.Array)` method of the current thread's thread group.
 
-An application might use the [activeCount](https://developer.android.com/reference/kotlin/java/lang/Thread.html#activeCount()) method to get an estimate of how big the array should be, however *if the array is too short to hold all the threads, the extra threads are silently ignored.* If it is critical to obtain every active thread in the current thread's thread group and its subgroups, the invoker should verify that the returned int value is strictly less than the length of `tarray`.
+An application might use the [activeCount](../java/lang/Thread.md)) method to get an estimate of how big the array should be, however *if the array is too short to hold all the threads, the extra threads are silently ignored.* If it is critical to obtain every active thread in the current thread's thread group and its subgroups, the invoker should verify that the returned int value is strictly less than the length of `tarray`.
 
 Due to the inherent race condition in this method, it is recommended that the method only be used for debugging and monitoring purposes.
 
@@ -129,7 +129,7 @@ The threads may be executing while this method is called. The stack trace of eac
 
 `https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?` `https://developer.android.com/reference/kotlin/java/lang/Thread.html#getContextClassLoader()()`
 
-Returns the context `ClassLoader` for this thread. The context `ClassLoader` is provided by the creator of the thread for use by code running in this thread when loading classes and resources. If not [set](https://developer.android.com/reference/kotlin/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)), the default is the `ClassLoader` context of the parent thread. The context `ClassLoader` of the primordial thread is typically set to the class loader used to load the application.
+Returns the context `ClassLoader` for this thread. The context `ClassLoader` is provided by the creator of the thread for use by code running in this thread when loading classes and resources. If not [set](../java/lang/Thread.md)), the default is the `ClassLoader` context of the parent thread. The context `ClassLoader` of the primordial thread is typically set to the class loader used to load the application.
 
 <br />
 
@@ -251,7 +251,7 @@ Returns `true` if this thread is a virtual thread. A virtual thread is scheduled
 Waits for this thread to die.
 
 An invocation of this method behaves in exactly the same way as the invocation
-[join](https://developer.android.com/reference/kotlin/java/lang/Thread.html#join(kotlin.Long))`(0)`
+[join](../java/lang/Thread.md))`(0)`
 
 <br />
 
@@ -295,7 +295,7 @@ If a security manager is present, its `https://developer.android.com/reference/k
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/lang/Thread.html#setDaemon(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
 
-Marks this thread as either a [daemon](https://developer.android.com/reference/kotlin/java/lang/Thread.html#isDaemon()) thread or a user thread. The Java Virtual Machine exits when the only threads running are all daemon threads.
+Marks this thread as either a [daemon](../java/lang/Thread.md)) thread or a user thread. The Java Virtual Machine exits when the only threads running are all daemon threads.
 
 This method must be invoked before the thread is started.
 
@@ -341,7 +341,7 @@ A thread can take full control of how it responds to uncaught exceptions by havi
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/lang/Thread.html#sleep(java.time.Duration)(duration: https://developer.android.com/reference/kotlin/java/time/Duration.html#!)`
 
-Causes the currently executing thread to sleep (temporarily cease execution) for the specified duration, subject to the precision and accuracy of system timers and schedulers. This method is a no-op if the duration is [negative](https://developer.android.com/reference/kotlin/java/time/Duration.html#isNegative()).
+Causes the currently executing thread to sleep (temporarily cease execution) for the specified duration, subject to the precision and accuracy of system timers and schedulers. This method is a no-op if the duration is [negative](../java/time/Duration.md)).
 
 <br />
 

@@ -4,14 +4,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # WakeLockStateListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/PowerManager.WakeLockStateListener "View this page in Java") 
+Kotlin| [Java](../android/os/PowerManager.WakeLockStateListener.md) 
 | --- | --- |
 
 ```
 interface WakeLockStateListener
 ```
 
-| [android.os.PowerManager.WakeLockStateListener](https://developer.android.com/reference/kotlin/android/os/PowerManager.WakeLockStateListener#) |
+| [android.os.PowerManager.WakeLockStateListener](../android/os/PowerManager.WakeLockStateListener.md) |
 
 A listener interface to get notified when the wakelock is enabled/disabled.
 
@@ -19,7 +19,7 @@ A listener interface to get notified when the wakelock is enabled/disabled.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStateChanged](https://developer.android.com/reference/kotlin/android/os/PowerManager.WakeLockStateListener#onStateChanged(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Frameworks could disable the wakelock because either device's power allowlist has changed, or the app's wakelock has exceeded its quota, or the app goes into cached state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStateChanged](../android/os/PowerManager.WakeLockStateListener.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Frameworks could disable the wakelock because either device's power allowlist has changed, or the app's wakelock has exceeded its quota, or the app goes into cached state. |
 
 ## Public methods
 

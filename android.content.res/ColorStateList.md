@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ColorStateList
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/res/ColorStateList "View this page in Java") 
+Kotlin| [Java](../android/content/res/ColorStateList.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class ColorStateList : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.res.ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) |
+| ↳ | [android.content.res.ColorStateList](../android/content/res/ColorStateList.md) |
 
-Lets you map [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) state sets to colors.
+Lets you map [android.view.View](../android/view/View.md) state sets to colors.
 
-[android.content.res.ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) s are created from XML resource files defined in the "color" subdirectory directory of an application's resource directory. The XML file contains a single "selector" element with a number of "item" elements inside. For example: 
+[android.content.res.ColorStateList](../android/content/res/ColorStateList.md) s are created from XML resource files defined in the "color" subdirectory directory of an application's resource directory. The XML file contains a single "selector" element with a number of "item" elements inside. For example: 
 
 ```kotlin
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -46,7 +46,7 @@ For example, the following item will be matched whenever the focused state is se
   
 ```
 
-Typically, a color state list will reference framework-defined state attributes such as [android:state_focused](https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int) or [android:state_enabled](https://developer.android.com/reference/kotlin/android/R.attr.html#state_enabled:kotlin.Int); however, app-defined attributes may also be used.
+Typically, a color state list will reference framework-defined state attributes such as [android:state_focused](../android/R.attr.md) or [android:state_enabled](../android/R.attr.md); however, app-defined attributes may also be used.
 
 **Note:**The list of state specs will be matched against in the order that they appear in the XML file. For this reason, more-specific items should be placed earlier in the file. An item with no state spec is considered to match any set of states and is generally useful as a final item to be used as a default.
 
@@ -54,9 +54,9 @@ If an item with no state spec is placed before other items, those items will be 
 
 ### Item attributes
 
-Each item must define an [android:color](https://developer.android.com/reference/kotlin/android/R.attr.html#color:kotlin.Int) attribute, which may be an HTML-style hex color, a reference to a color resource, or -- in API 23 and above -- a theme attribute that resolves to a color.
+Each item must define an [android:color](../android/R.attr.md) attribute, which may be an HTML-style hex color, a reference to a color resource, or -- in API 23 and above -- a theme attribute that resolves to a color.
 
-Starting with API 23, items may optionally define an [android:alpha](https://developer.android.com/reference/kotlin/android/R.attr.html#alpha:kotlin.Int) attribute to modify the base color's opacity. This attribute takes a either floating-point value between 0 and 1 or a theme attribute that resolves as such. The item's overall color is calculated by multiplying by the base color's alpha channel by the`alpha`value. For example, the following item represents the theme's accent color at 50% opacity: 
+Starting with API 23, items may optionally define an [android:alpha](../android/R.attr.md) attribute to modify the base color's opacity. This attribute takes a either floating-point value between 0 and 1 or a theme attribute that resolves as such. The item's overall color is calculated by multiplying by the base color's alpha channel by the`alpha`value. For example, the following item represents the theme's accent color at 50% opacity: 
 
 ```kotlin
 <item android:state_enabled="false"
@@ -65,7 +65,7 @@ Starting with API 23, items may optionally define an [android:alpha](https://dev
   
 ```
 
-Starting with API 31, items may optionally define an [android:lStar](https://developer.android.com/reference/kotlin/android/R.attr.html#lStar:kotlin.Int) attribute to modify the base color's perceptual luminance. This attribute takes either a floating-point value between 0 and 100 or a theme attribute that resolves as such. The item's overall color is calculated by converting the base color to an accessibility friendly color space and setting its L\* to the value specified on the`lStar`attribute. For example, the following item represents the theme's accent color at 50% perceptual luminance: 
+Starting with API 31, items may optionally define an [android:lStar](../android/R.attr.md) attribute to modify the base color's perceptual luminance. This attribute takes either a floating-point value between 0 and 100 or a theme attribute that resolves as such. The item's overall color is calculated by converting the base color to an accessibility friendly color space and setting its L\* to the value specified on the`lStar`attribute. For example, the following item represents the theme's accent color at 50% perceptual luminance: 
 
 ```kotlin
 <item android:state_enabled="false"
@@ -82,42 +82,42 @@ For more information, see the guide to [Color State List Resource](https://devel
 
 | XML attributes ||
 |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [`android:alpha`](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#attr_ColorStateList) | Alpha multiplier applied to the base color. |
-| [`android:color`](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#attr_ColorStateList) | Base color for this state. |
-| [`android:lStar`](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#attr_ColorStateList) | Perceptual luminance applied to the base color. |
+| [`android:alpha`](../android/content/res/ColorStateList.md) | Alpha multiplier applied to the base color. |
+| [`android:color`](../android/content/res/ColorStateList.md) | Base color for this state. |
+| [`android:lStar`](../android/content/res/ColorStateList.md) | Perceptual luminance applied to the base color. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#ColorStateList(kotlin.Array,%20kotlin.IntArray))`(`states:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!>!`, `colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Creates a ColorStateList that returns the specified mapping from states to colors. |
+| [ColorStateList](../android/content/res/ColorStateList.md))`(`states:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!>!`, `colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Creates a ColorStateList that returns the specified mapping from states to colors. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [createFromXml](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#createFromXml(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources)!`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!`)` Creates a ColorStateList from an XML document. |
-| openstatic [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [createFromXml](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#createFromXml(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.content.res.Resources.Theme))`(`r:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources)`, `parser:` ` [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)`, `theme:` ` [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?`)` Creates a ColorStateList from an XML document using given a set of [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources) and a [Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#describeContents())`()` <br /> |
+| openstatic [ColorStateList](../android/content/res/ColorStateList.md) | [createFromXml](../android/content/res/ColorStateList.md))`(`r:` ` [Resources](../android/content/res/Resources.md)!`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!`)` Creates a ColorStateList from an XML document. |
+| openstatic [ColorStateList](../android/content/res/ColorStateList.md) | [createFromXml](../android/content/res/ColorStateList.md))`(`r:` ` [Resources](../android/content/res/Resources.md)`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`, `theme:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)?`)` Creates a ColorStateList from an XML document using given a set of [Resources](../android/content/res/Resources.md) and a [Theme](../android/content/res/Resources.Theme.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/res/ColorStateList.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getChangingConfigurations())`()` Returns a mask of the configuration parameters for which this color state list may change, requiring that it be re-created. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorForState](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getColorForState(kotlin.IntArray,%20kotlin.Int))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `defaultColor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the color associated with the given set of [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) states. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultColor](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getDefaultColor())`()` Return the default color in this [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](../android/content/res/ColorStateList.md))`()` Returns a mask of the configuration parameters for which this color state list may change, requiring that it be re-created. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorForState](../android/content/res/ColorStateList.md))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `defaultColor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the color associated with the given set of [android.view.View](../android/view/View.md) states. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultColor](../android/content/res/ColorStateList.md))`()` Return the default color in this [ColorStateList](../android/content/res/ColorStateList.md). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#isOpaque())`()` Indicates whether this color state list is opaque, which means that every color returned from[getColorForState(int[],int)](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getColorForState(kotlin.IntArray,%20kotlin.Int))has an alpha value of 255. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#isStateful())`()` Indicates whether this color state list contains at least one state spec and the first spec is not empty (e.g. match-all). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#toString())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](../android/content/res/ColorStateList.md))`()` Indicates whether this color state list is opaque, which means that every color returned from[getColorForState(int[],int)](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#getColorForState(kotlin.IntArray,%20kotlin.Int))has an alpha value of 255. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](../android/content/res/ColorStateList.md))`()` Indicates whether this color state list contains at least one state spec and the first spec is not empty (e.g. match-all). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/res/ColorStateList.md))`()` <br /> |
 | --- | --- |
-| openstatic [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [valueOf](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#valueOf(kotlin.Int))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [withAlpha](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#withAlpha(kotlin.Int))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new ColorStateList that has the same states and colors as this one but where each color has the specified alpha value (0-255). |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | [withLStar](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#withLStar(kotlin.Float))`(`lStar:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a new ColorStateList that has the same states and colors as this one but where each color has the specified perceived luminosity value (0-100). |
+| openstatic [ColorStateList](../android/content/res/ColorStateList.md) | [valueOf](../android/content/res/ColorStateList.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [ColorStateList](../android/content/res/ColorStateList.md) | [withAlpha](../android/content/res/ColorStateList.md))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new ColorStateList that has the same states and colors as this one but where each color has the specified alpha value (0-255). |
+| open [ColorStateList](../android/content/res/ColorStateList.md) | [withLStar](../android/content/res/ColorStateList.md))`(`lStar:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a new ColorStateList that has the same states and colors as this one but where each color has the specified perceived luminosity value (0-100). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/res/ColorStateList.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ColorStateList](../android/content/res/ColorStateList.md)!\> | [CREATOR](../android/content/res/ColorStateList.md) <br /> |
 
 ## XML attributes
 
@@ -182,12 +182,12 @@ Creates a ColorStateList from an XML document.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources)!:Resources against which the ColorStateList should be inflated. |
-| `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)!:Parser for the XML document defining the ColorStateList. |
+| `r` | [Resources](../android/content/res/Resources.md)!:Resources against which the ColorStateList should be inflated. |
+| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!:Parser for the XML document defining the ColorStateList. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | A new color state list. This value cannot be`null`. |
+| [ColorStateList](../android/content/res/ColorStateList.md) | A new color state list. This value cannot be`null`. |
 
 ### createFromXml
 
@@ -201,18 +201,18 @@ open static fun createFromXml(
 ): ColorStateList
 ```
 
-Creates a ColorStateList from an XML document using given a set of [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources) and a [Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme).
+Creates a ColorStateList from an XML document using given a set of [Resources](../android/content/res/Resources.md) and a [Theme](../android/content/res/Resources.Theme.md).
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources):Resources against which the ColorStateList should be inflated. This value cannot be`null`. |
-| `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#):Parser for the XML document defining the ColorStateList. This value cannot be`null`. |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?:Optional theme to apply to the color state list, may be`null`. |
+| `r` | [Resources](../android/content/res/Resources.md):Resources against which the ColorStateList should be inflated. This value cannot be`null`. |
+| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md):Parser for the XML document defining the ColorStateList. This value cannot be`null`. |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?:Optional theme to apply to the color state list, may be`null`. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | A new color state list. This value cannot be`null`. |
+| [ColorStateList](../android/content/res/ColorStateList.md) | A new color state list. This value cannot be`null`. |
 
 ### describeContents
 
@@ -224,7 +224,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getChangingConfigurations
 
@@ -238,11 +238,11 @@ Returns a mask of the configuration parameters for which this color state list m
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a mask of the changing configuration parameters, as defined by [android.content.pm.ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#) Value is either`0`or a combination of [android.content.pm.ActivityInfo#CONFIG_MCC](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_MCC:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_MNC](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_MNC:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_LOCALE](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_LOCALE:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_TOUCHSCREEN](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_TOUCHSCREEN:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_KEYBOARD:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD_HIDDEN](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_KEYBOARD_HIDDEN:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_NAVIGATION](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_NAVIGATION:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_ORIENTATION](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_ORIENTATION:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_SCREEN_LAYOUT](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_SCREEN_LAYOUT:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_UI_MODE](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_UI_MODE:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_SCREEN_SIZE](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_SCREEN_SIZE:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_SMALLEST_SCREEN_SIZE](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_SMALLEST_SCREEN_SIZE:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_DENSITY](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_DENSITY:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_LAYOUT_DIRECTION](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_LAYOUT_DIRECTION:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_COLOR_MODE](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_COLOR_MODE:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_FONT_SCALE](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_FONT_SCALE:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_GRAMMATICAL_GENDER](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_GRAMMATICAL_GENDER:kotlin.Int), [android.content.pm.ActivityInfo#CONFIG_FONT_WEIGHT_ADJUSTMENT](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_FONT_WEIGHT_ADJUSTMENT:kotlin.Int), android.content.pm.ActivityInfo.CONFIG_WINDOW_CONFIGURATION, [android.content.pm.ActivityInfo#CONFIG_ASSETS_PATHS](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_ASSETS_PATHS:kotlin.Int), and [android.content.pm.ActivityInfo#CONFIG_RESOURCES_UNUSED](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#CONFIG_RESOURCES_UNUSED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a mask of the changing configuration parameters, as defined by [android.content.pm.ActivityInfo](../android/content/pm/ActivityInfo.md) Value is either`0`or a combination of [android.content.pm.ActivityInfo#CONFIG_MCC](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_MNC](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LOCALE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_TOUCHSCREEN](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD_HIDDEN](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_NAVIGATION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_ORIENTATION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_LAYOUT](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_UI_MODE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_SIZE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SMALLEST_SCREEN_SIZE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_DENSITY](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LAYOUT_DIRECTION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_COLOR_MODE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_SCALE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_GRAMMATICAL_GENDER](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_WEIGHT_ADJUSTMENT](../android/content/pm/ActivityInfo.md), android.content.pm.ActivityInfo.CONFIG_WINDOW_CONFIGURATION, [android.content.pm.ActivityInfo#CONFIG_ASSETS_PATHS](../android/content/pm/ActivityInfo.md), and [android.content.pm.ActivityInfo#CONFIG_RESOURCES_UNUSED](../android/content/pm/ActivityInfo.md) |
 
 **See Also**
 
-- [android.content.pm.ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#) 
+- [android.content.pm.ActivityInfo](../android/content/pm/ActivityInfo.md) 
 
 ### getColorForState
 
@@ -255,16 +255,16 @@ open fun getColorForState(
 ): Int
 ```
 
-Return the color associated with the given set of [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) states.
+Return the color associated with the given set of [android.view.View](../android/view/View.md) states.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `stateSet` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?:an array of [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) states This value may be`null`. |
-| `defaultColor` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the color to return if there's no matching state spec in this [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) that matches the stateSet. |
+| `stateSet` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?:an array of [android.view.View](../android/view/View.md) states This value may be`null`. |
+| `defaultColor` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the color to return if there's no matching state spec in this [ColorStateList](../android/content/res/ColorStateList.md) that matches the stateSet. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the color associated with that set of states in this [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the color associated with that set of states in this [ColorStateList](../android/content/res/ColorStateList.md). |
 
 ### getDefaultColor
 
@@ -274,11 +274,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getDefaultColor(): Int
 ```
 
-Return the default color in this [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#).
+Return the default color in this [ColorStateList](../android/content/res/ColorStateList.md).
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the default color in this [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the default color in this [ColorStateList](../android/content/res/ColorStateList.md). |
 
 ### isOpaque
 
@@ -334,7 +334,7 @@ open static fun valueOf(color: Int): ColorStateList
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | A ColorStateList containing a single color. This value cannot be`null`. |
+| [ColorStateList](../android/content/res/ColorStateList.md) | A ColorStateList containing a single color. This value cannot be`null`. |
 
 ### withAlpha
 
@@ -352,7 +352,7 @@ Creates a new ColorStateList that has the same states and colors as this one but
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | A new color state list. This value cannot be`null`. |
+| [ColorStateList](../android/content/res/ColorStateList.md) | A new color state list. This value cannot be`null`. |
 
 ### withLStar
 
@@ -370,7 +370,7 @@ Creates a new ColorStateList that has the same states and colors as this one but
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList#) | A new color state list. This value cannot be`null`. |
+| [ColorStateList](../android/content/res/ColorStateList.md) | A new color state list. This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -385,8 +385,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

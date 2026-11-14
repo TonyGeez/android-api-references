@@ -10,7 +10,7 @@ class Normalizer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.Normalizer](https://developer.android.com/reference/kotlin/java/text/Normalizer#) |
+| ↳ | [java.text.Normalizer](../java/text/Normalizer.md) |
 
 This class provides the method`normalize`which transforms Unicode text into an equivalent composed or decomposed form, allowing for easier sorting and searching of text. The`normalize`method supports the standard normalization forms described in [Unicode Standard Annex #15 --- Unicode Normalization Forms](https://www.unicode.org/reports/tr15/).
 
@@ -49,12 +49,12 @@ The W3C generally recommends to exchange texts in NFC. Note also that most legac
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Form](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form) This enum provides constants of the four Unicode normalization forms that are described in [Unicode Standard Annex #15 --- Unicode Normalization Forms](https://www.unicode.org/reports/tr15/) and two methods to access them. |
+| | [Form](../java/text/Normalizer.Form.md) This enum provides constants of the four Unicode normalization forms that are described in [Unicode Standard Annex #15 --- Unicode Normalization Forms](https://www.unicode.org/reports/tr15/) and two methods to access them. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNormalized](https://developer.android.com/reference/kotlin/java/text/Normalizer#isNormalized(kotlin.CharSequence,%20java.text.Normalizer.Form))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form)!`)` Determines if the given sequence of char values is normalized. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalize](https://developer.android.com/reference/kotlin/java/text/Normalizer#normalize(kotlin.CharSequence,%20java.text.Normalizer.Form))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form)!`)` Normalize a sequence of char values. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNormalized](../java/text/Normalizer.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](../java/text/Normalizer.Form.md)!`)` Determines if the given sequence of char values is normalized. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalize](../java/text/Normalizer.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](../java/text/Normalizer.Form.md)!`)` Normalize a sequence of char values. |
 
 ## Public methods
 
@@ -74,7 +74,7 @@ Determines if the given sequence of char values is normalized.
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `src` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The sequence of char values to be checked. |
-| `form` | [Normalizer.Form](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form)!:The normalization form; one of [java.text.Normalizer.Form#NFC](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form), [java.text.Normalizer.Form#NFD](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form), [java.text.Normalizer.Form#NFKC](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form), [java.text.Normalizer.Form#NFKD](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form) |
+| `form` | [Normalizer.Form](../java/text/Normalizer.Form.md)!:The normalization form; one of [java.text.Normalizer.Form#NFC](../java/text/Normalizer.Form.md), [java.text.Normalizer.Form#NFD](../java/text/Normalizer.Form.md), [java.text.Normalizer.Form#NFKC](../java/text/Normalizer.Form.md), [java.text.Normalizer.Form#NFKD](../java/text/Normalizer.Form.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -100,7 +100,7 @@ Normalize a sequence of char values. The sequence will be normalized according t
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `src` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The sequence of char values to normalize. |
-| `form` | [Normalizer.Form](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form)!:The normalization form; one of [java.text.Normalizer.Form#NFC](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form), [java.text.Normalizer.Form#NFD](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form), [java.text.Normalizer.Form#NFKC](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form), [java.text.Normalizer.Form#NFKD](https://developer.android.com/reference/kotlin/java/text/Normalizer.Form) |
+| `form` | [Normalizer.Form](../java/text/Normalizer.Form.md)!:The normalization form; one of [java.text.Normalizer.Form#NFC](../java/text/Normalizer.Form.md), [java.text.Normalizer.Form#NFD](../java/text/Normalizer.Form.md), [java.text.Normalizer.Form#NFKC](../java/text/Normalizer.Form.md), [java.text.Normalizer.Form#NFKD](../java/text/Normalizer.Form.md) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------|

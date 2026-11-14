@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # NfcA
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/NfcA "View this page in Java") 
+Kotlin| [Java](../android/nfc/tech/NfcA.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ class NfcA : TagTechnology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.tech.NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#) |
+| ↳ | [android.nfc.tech.NfcA](../android/nfc/tech/NfcA.md) |
 
-Provides access to NFC-A (ISO 14443-3A) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#).
+Provides access to NFC-A (ISO 14443-3A) properties and I/O operations on a [Tag](../android/nfc/Tag.md).
 
-Acquire a [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#) object using [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#get(android.nfc.Tag)).
+Acquire a [NfcA](../android/nfc/tech/NfcA.md) object using [get](../android/nfc/tech/NfcA.md)).
 
-The primary NFC-A I/O operation is [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray)). Applications must implement their own protocol stack on top of [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray)).
+The primary NFC-A I/O operation is [transceive](../android/nfc/tech/NfcA.md)). Applications must implement their own protocol stack on top of [transceive](../android/nfc/tech/NfcA.md)).
 
-**Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+**Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#close())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#connect())`()` <br /> |
-| static [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#) for the given tag. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/nfc/tech/NfcA.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/nfc/tech/NfcA.md))`()` <br /> |
+| static [NfcA](../android/nfc/tech/NfcA.md)! | [get](../android/nfc/tech/NfcA.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` Get an instance of [NfcA](../android/nfc/tech/NfcA.md) for the given tag. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAtqa](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getAtqa())`()` Return the ATQA/SENS_RES bytes from tag discovery. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getMaxTransceiveLength())`()` Return the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray)). |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getSak](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getSak())`()` Return the SAK/SEL_RES bytes from tag discovery. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAtqa](../android/nfc/tech/NfcA.md))`()` Return the ATQA/SENS_RES bytes from tag discovery. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](../android/nfc/tech/NfcA.md))`()` Return the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcA.md)). |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getSak](../android/nfc/tech/NfcA.md))`()` Return the SAK/SEL_RES bytes from tag discovery. |
 | --- | --- |
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getTag())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimeout](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getTimeout())`()` Get the current [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))timeout in milliseconds. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#isConnected())`()` <br /> |
+| [Tag](../android/nfc/Tag.md)! | [getTag](../android/nfc/tech/NfcA.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimeout](../android/nfc/tech/NfcA.md))`()` Get the current [transceive](../android/nfc/tech/NfcA.md))timeout in milliseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/nfc/tech/NfcA.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeout](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#setTimeout(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))timeout in milliseconds. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NFC-A commands to the tag and receive the response. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeout](../android/nfc/tech/NfcA.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the [transceive](../android/nfc/tech/NfcA.md))timeout in milliseconds. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](../android/nfc/tech/NfcA.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NFC-A commands to the tag and receive the response. |
 
 ## Public methods
 
@@ -82,19 +82,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static fun get(tag: Tag!): NfcA!
 ```
 
-Get an instance of [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#) for the given tag.
+Get an instance of [NfcA](../android/nfc/tech/NfcA.md) for the given tag.
 
-Returns null if [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#) was not enumerated in [Tag.getTechList](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#getTechList()). This indicates the tag does not support NFC-A.
+Returns null if [NfcA](../android/nfc/tech/NfcA.md) was not enumerated in [Tag.getTechList](../android/nfc/Tag.md)). This indicates the tag does not support NFC-A.
 
 Does not cause any RF activity and does not block.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------|
-| `tag` | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!:an NFC-A compatible tag |
+| `tag` | [Tag](../android/nfc/Tag.md)!:an NFC-A compatible tag |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------|
-| [NfcA](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#)! | NFC-A object |
+| [NfcA](../android/nfc/tech/NfcA.md)! | NFC-A object |
 
 ### getAtqa
 
@@ -120,11 +120,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun getMaxTransceiveLength(): Int
 ```
 
-Return the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray)).
+Return the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcA.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcA.md)). |
 
 ### getSak
 
@@ -152,7 +152,7 @@ fun getTag(): Tag!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | the [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#) backing this [TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology) object. |
+| [Tag](../android/nfc/Tag.md)! | the [Tag](../android/nfc/Tag.md) backing this [TagTechnology](../android/nfc/tech/TagTechnology.md) object. |
 
 ### getTimeout
 
@@ -162,9 +162,9 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun getTimeout(): Int
 ```
 
-Get the current [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))timeout in milliseconds.
+Get the current [transceive](../android/nfc/tech/NfcA.md))timeout in milliseconds.
 
-Requires the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------|
@@ -194,13 +194,13 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun setTimeout(timeout: Int): Unit
 ```
 
-Set the [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))timeout in milliseconds.
+Set the [transceive](../android/nfc/tech/NfcA.md))timeout in milliseconds.
 
-The timeout only applies to [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray))on this object, and is reset to a default value when #close is called.
+The timeout only applies to [transceive](../android/nfc/tech/NfcA.md))on this object, and is reset to a default value when #close is called.
 
 Setting a longer timeout may be useful when performing transactions that require a long processing time on the tag such as key generation.
 
-Requires the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------|
@@ -224,11 +224,11 @@ Applications must not append the EoD (CRC) to the payload, it will be automatica
 
 Applications must only send commands that are complete bytes, for example a SENS_REQ is not possible (these are used to manage tag polling and initialization).
 
-Use [getMaxTransceiveLength](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#getMaxTransceiveLength())to retrieve the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA#transceive(kotlin.ByteArray)).
+Use [getMaxTransceiveLength](../android/nfc/tech/NfcA.md))to retrieve the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcA.md)).
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
 
-Requires the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------|

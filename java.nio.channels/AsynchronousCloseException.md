@@ -11,13 +11,13 @@ open class AsynchronousCloseException : ClosedChannelException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.channels.ClosedChannelException](https://developer.android.com/reference/kotlin/java/nio/channels/ClosedChannelException) ||
-| | | | | ↳ | [java.nio.channels.AsynchronousCloseException](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousCloseException#) |
+| | | | ↳ | [java.nio.channels.ClosedChannelException](../java/nio/channels/ClosedChannelException.md) ||
+| | | | | ↳ | [java.nio.channels.AsynchronousCloseException](../java/nio/channels/AsynchronousCloseException.md) |
 
-| Known Direct Subclasses [ClosedByInterruptException](https://developer.android.com/reference/kotlin/java/nio/channels/ClosedByInterruptException) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------| | [ClosedByInterruptException](https://developer.android.com/reference/kotlin/java/nio/channels/ClosedByInterruptException) | Checked exception received by a thread when another thread interrupts it while it is blocked in an I/O operation upon a channel. | |
+| Known Direct Subclasses [ClosedByInterruptException](../java/nio/channels/ClosedByInterruptException.md) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------| | [ClosedByInterruptException](../java/nio/channels/ClosedByInterruptException.md) | Checked exception received by a thread when another thread interrupts it while it is blocked in an I/O operation upon a channel. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Checked exception received by a thread when another thread closes the channel or the part of the channel upon which it is blocked in an I/O operation.
@@ -26,7 +26,7 @@ Checked exception received by a thread when another thread closes the channel or
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AsynchronousCloseException](https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousCloseException#AsynchronousCloseException())`()` Constructs an instance of this class. |
+| [AsynchronousCloseException](../java/nio/channels/AsynchronousCloseException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

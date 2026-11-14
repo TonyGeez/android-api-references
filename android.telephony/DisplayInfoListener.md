@@ -4,14 +4,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # DisplayInfoListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.DisplayInfoListener "View this page in Java") 
+Kotlin | [Java](../android/telephony/TelephonyCallback.DisplayInfoListener.md) 
 | --- | --- |
 
 ```
 interface DisplayInfoListener
 ```
 
-| [android.telephony.TelephonyCallback.DisplayInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DisplayInfoListener#) |
+| [android.telephony.TelephonyCallback.DisplayInfoListener](../android/telephony/TelephonyCallback.DisplayInfoListener.md) |
 
 Interface for display info listener.
 
@@ -19,7 +19,7 @@ Interface for display info listener.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayInfoChanged](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DisplayInfoListener#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo))`(`telephonyDisplayInfo:` ` [TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo)`)` Callback invoked when the display info has changed on the registered subscription. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayInfoChanged](../android/telephony/TelephonyCallback.DisplayInfoListener.md))`(`telephonyDisplayInfo:` ` [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md)`)` Callback invoked when the display info has changed on the registered subscription. |
 
 ## Public methods
 
@@ -33,8 +33,8 @@ abstract fun onDisplayInfoChanged(telephonyDisplayInfo: TelephonyDisplayInfo): 
 
 Callback invoked when the display info has changed on the registered subscription.
 
-The [TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo) contains status information shown to the user based on carrier policy.
+The [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md) contains status information shown to the user based on carrier policy.
 
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `telephonyDisplayInfo` | [TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo): The display information. This value cannot be `null`. |
+| `telephonyDisplayInfo` | [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md): The display information. This value cannot be `null`. |

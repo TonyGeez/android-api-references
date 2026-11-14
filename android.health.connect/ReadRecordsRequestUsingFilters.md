@@ -3,7 +3,7 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 
 # ReadRecordsRequestUsingFilters
 
-Kotlin | [Java](https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters "View this page in Java")
+Kotlin | [Java](../android/health/connect/ReadRecordsRequestUsingFilters.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ class ReadRecordsRequestUsingFilters<T : Record!> : ReadRecordsRequest<T>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.health.connect.ReadRecordsRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequest)\<T\> ||
-| | ↳ | [android.health.connect.ReadRecordsRequestUsingFilters](https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#) |
+| ↳ | [android.health.connect.ReadRecordsRequest](../android/health/connect/ReadRecordsRequest.md)\<T\> ||
+| | ↳ | [android.health.connect.ReadRecordsRequestUsingFilters](../android/health/connect/ReadRecordsRequestUsingFilters.md) |
 
 Class to represent a request based on time range and data origin filters for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
 
@@ -25,11 +25,11 @@ Class to represent a request based on time range and data origin filters for `ht
 
 | Public methods ||
 |---|---|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#getDataOrigins()()` Returns the set of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` to be read, or empty list for no filter |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DataOrigin](../android/health/connect/datatypes/DataOrigin.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#getDataOrigins()()` Returns the set of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` to be read, or empty list for no filter |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#getPageSize()()` Returns maximum number of records to be returned by the read operation |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#getPageToken()()` Returns page token to read the current page of the result. |
 | --- | --- |
-| [TimeRangeFilter](https://developer.android.com/reference/kotlin/android/health/connect/TimeRangeFilter)? | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#getTimeRangeFilter()()` Returns time range b/w which the read operation is to be performed |
+| [TimeRangeFilter](../android/health/connect/TimeRangeFilter.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#getTimeRangeFilter()()` Returns time range b/w which the read operation is to be performed |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters#isAscending()()` Returns ordering of results to be returned |
 
 | Inherited functions ||

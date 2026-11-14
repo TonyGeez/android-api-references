@@ -4,14 +4,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # BrailleDisplayController
 
-Kotlin| [Java](https://developer.android.com/reference/android/accessibilityservice/BrailleDisplayController "View this page in Java") 
+Kotlin| [Java](../android/accessibilityservice/BrailleDisplayController.md) 
 | --- | --- |
 
 ```
 interface BrailleDisplayController
 ```
 
-| [android.accessibilityservice.BrailleDisplayController](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#) |
+| [android.accessibilityservice.BrailleDisplayController](../android/accessibilityservice/BrailleDisplayController.md) |
 
 Used to communicate with a Braille display that supports the Braille display HID standard (usage page 0x41).
 
@@ -21,19 +21,19 @@ Only one Braille display may be connected at a time.
 
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback) Interface provided to [BrailleDisplayController](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#) connection methods to receive callbacks from the system. |
+| abstract | [BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md) Interface provided to [BrailleDisplayController](../android/accessibilityservice/BrailleDisplayController.md) connection methods to receive callbacks from the system. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#connect(android.bluetooth.BluetoothDevice,%20android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback))`(`bluetoothDevice:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback)`)` Connects to the requested bluetooth Braille display using the Braille display HID standard (usage page 0x41). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#connect(android.bluetooth.BluetoothDevice,%20java.util.concurrent.Executor,%20android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback))`(`bluetoothDevice:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)`, `callbackExecutor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback)`)` Connects to the requested bluetooth Braille display using the Braille display HID standard (usage page 0x41). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#connect(android.hardware.usb.UsbDevice,%20android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback))`(`usbDevice:` ` [UsbDevice](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice.html#)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback)`)` Connects to the requested USB Braille display using the Braille display HID standard (usage page 0x41). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/accessibilityservice/BrailleDisplayController.md))`(`bluetoothDevice:` ` [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)`)` Connects to the requested bluetooth Braille display using the Braille display HID standard (usage page 0x41). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/accessibilityservice/BrailleDisplayController.md))`(`bluetoothDevice:` ` [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)`, `callbackExecutor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)`)` Connects to the requested bluetooth Braille display using the Braille display HID standard (usage page 0x41). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/accessibilityservice/BrailleDisplayController.md))`(`usbDevice:` ` [UsbDevice](../android/hardware/usb/UsbDevice.md)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)`)` Connects to the requested USB Braille display using the Braille display HID standard (usage page 0x41). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#connect(android.hardware.usb.UsbDevice,%20java.util.concurrent.Executor,%20android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback))`(`usbDevice:` ` [UsbDevice](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice.html#)`, `callbackExecutor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback)`)` Connects to the requested USB Braille display using the Braille display HID standard (usage page 0x41). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#disconnect())`()` Disconnects from the currently connected Braille display. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#isConnected())`()` Returns true if a Braille display is currently connected, otherwise false. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/accessibilityservice/BrailleDisplayController.md))`(`usbDevice:` ` [UsbDevice](../android/hardware/usb/UsbDevice.md)`, `callbackExecutor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)`)` Connects to the requested USB Braille display using the Braille display HID standard (usage page 0x41). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](../android/accessibilityservice/BrailleDisplayController.md))`()` Disconnects from the currently connected Braille display. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/accessibilityservice/BrailleDisplayController.md))`()` Returns true if a Braille display is currently connected, otherwise false. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#write(kotlin.ByteArray))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Writes a HID report to the currently connected Braille display. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../android/accessibilityservice/BrailleDisplayController.md))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Writes a HID report to the currently connected Braille display. |
 
 ## Public methods
 
@@ -50,15 +50,15 @@ abstract fun connect(
 
 Connects to the requested bluetooth Braille display using the Braille display HID standard (usage page 0x41).
 
-If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onInput(kotlin.ByteArray)). If there is an error in reading input then the system will disconnect the Braille display.
+If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)). If there is an error in reading input then the system will disconnect the Braille display.
 
-Note that the callbacks will be executed on the main thread using [AccessibilityService.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#getMainExecutor()). To specify the execution thread, use [connect(android.bluetooth.BluetoothDevice,java.util.concurrent.Executor,android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback)](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#connect(android.bluetooth.BluetoothDevice,%20java.util.concurrent.Executor,%20android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback)). 
-Requires [android.Manifest.permission#BLUETOOTH_CONNECT](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String)
+Note that the callbacks will be executed on the main thread using [AccessibilityService.getMainExecutor()](../android/content/ContextWrapper.md)). To specify the execution thread, use [connect(android.bluetooth.BluetoothDevice,java.util.concurrent.Executor,android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback)](../android/accessibilityservice/BrailleDisplayController.md)). 
+Requires [android.Manifest.permission#BLUETOOTH_CONNECT](../android/Manifest.permission.md)
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bluetoothDevice` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#):The Braille display device. This value cannot be`null`. |
-| `callback` | [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback):Callbacks used to provide connection results. This value cannot be`null`. |
+| `bluetoothDevice` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md):The Braille display device. This value cannot be`null`. |
+| `callback` | [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md):Callbacks used to provide connection results. This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------------------------------|
@@ -66,8 +66,8 @@ Requires [android.Manifest.permission#BLUETOOTH_CONNECT](https://developer.andro
 
 **See Also**
 
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed(kotlin.Int)) 
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)) 
 
 ### connect
 
@@ -83,14 +83,14 @@ abstract fun connect(
 
 Connects to the requested bluetooth Braille display using the Braille display HID standard (usage page 0x41).
 
-If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onInput(kotlin.ByteArray)). If there is an error in reading input then the system will disconnect the Braille display. 
-Requires [android.Manifest.permission#BLUETOOTH_CONNECT](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String)
+If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)). If there is an error in reading input then the system will disconnect the Braille display. 
+Requires [android.Manifest.permission#BLUETOOTH_CONNECT](../android/Manifest.permission.md)
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bluetoothDevice` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#):The Braille display device. This value cannot be`null`. |
-| `callbackExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):Executor for executing the provided callbacks. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `callback` | [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback):Callbacks used to provide connection results. This value cannot be`null`. |
+| `bluetoothDevice` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md):The Braille display device. This value cannot be`null`. |
+| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md):Executor for executing the provided callbacks. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md):Callbacks used to provide connection results. This value cannot be`null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -99,8 +99,8 @@ Requires [android.Manifest.permission#BLUETOOTH_CONNECT](https://developer.andro
 
 **See Also**
 
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed(kotlin.Int)) 
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)) 
 
 ### connect
 
@@ -115,16 +115,16 @@ abstract fun connect(
 
 Connects to the requested USB Braille display using the Braille display HID standard (usage page 0x41).
 
-If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onInput(kotlin.ByteArray)). If there is an error in reading input then the system will disconnect the Braille display.
+If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)). If there is an error in reading input then the system will disconnect the Braille display.
 
-The accessibility service app must already have approval to access the USB device from the standard [android.hardware.usb.UsbManager](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager.html#) access approval process.
+The accessibility service app must already have approval to access the USB device from the standard [android.hardware.usb.UsbManager](../android/hardware/usb/UsbManager.md) access approval process.
 
-Note that the callbacks will be executed on the main thread using [AccessibilityService.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#getMainExecutor()). To specify the execution thread, use [connect(android.hardware.usb.UsbDevice,java.util.concurrent.Executor,android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback)](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController#connect(android.hardware.usb.UsbDevice,%20java.util.concurrent.Executor,%20android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback)).
+Note that the callbacks will be executed on the main thread using [AccessibilityService.getMainExecutor()](../android/content/ContextWrapper.md)). To specify the execution thread, use [connect(android.hardware.usb.UsbDevice,java.util.concurrent.Executor,android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback)](../android/accessibilityservice/BrailleDisplayController.md)).
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `usbDevice` | [UsbDevice](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice.html#):The Braille display device. This value cannot be`null`. |
-| `callback` | [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback):Callbacks used to provide connection results. This value cannot be`null`. |
+| `usbDevice` | [UsbDevice](../android/hardware/usb/UsbDevice.md):The Braille display device. This value cannot be`null`. |
+| `callback` | [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md):Callbacks used to provide connection results. This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------------------------------|
@@ -133,8 +133,8 @@ Note that the callbacks will be executed on the main thread using [Accessibility
 
 **See Also**
 
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed(kotlin.Int)) 
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)) 
 
 ### connect
 
@@ -150,15 +150,15 @@ abstract fun connect(
 
 Connects to the requested USB Braille display using the Braille display HID standard (usage page 0x41).
 
-If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onInput(kotlin.ByteArray)). If there is an error in reading input then the system will disconnect the Braille display.
+If successful then the HID report descriptor will be provided to [BrailleDisplayCallback.onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))and the Braille display will start sending incoming input bytes to [BrailleDisplayCallback.onInput](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)). If there is an error in reading input then the system will disconnect the Braille display.
 
-The accessibility service app must already have approval to access the USB device from the standard [android.hardware.usb.UsbManager](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager.html#) access approval process.
+The accessibility service app must already have approval to access the USB device from the standard [android.hardware.usb.UsbManager](../android/hardware/usb/UsbManager.md) access approval process.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `usbDevice` | [UsbDevice](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice.html#):The Braille display device. This value cannot be`null`. |
-| `callbackExecutor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):Executor for executing the provided callbacks. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `callback` | [BrailleDisplayController.BrailleDisplayCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback):Callbacks used to provide connection results. This value cannot be`null`. |
+| `usbDevice` | [UsbDevice](../android/hardware/usb/UsbDevice.md):The Braille display device. This value cannot be`null`. |
+| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md):Executor for executing the provided callbacks. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [BrailleDisplayController.BrailleDisplayCallback](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md):Callbacks used to provide connection results. This value cannot be`null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -168,8 +168,8 @@ The accessibility service app must already have approval to access the USB devic
 
 **See Also**
 
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnected(kotlin.ByteArray))
-- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed(kotlin.Int)) 
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnected](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md))
+- [android.accessibilityservice.BrailleDisplayController.BrailleDisplayCallback#onConnectionFailed](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)) 
 
 ### disconnect
 
@@ -205,7 +205,7 @@ abstract fun write(buffer: ByteArray): Unit
 
 Writes a HID report to the currently connected Braille display.
 
-This method returns immediately after dispatching the write request to the system. If the system experiences an error in writing output (e.g. the Braille display is unplugged after the system receives the write request but before writing the bytes to the Braille display) then the system will disconnect the Braille display, which calls [BrailleDisplayCallback.onDisconnected()](https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback#onDisconnected()).
+This method returns immediately after dispatching the write request to the system. If the system experiences an error in writing output (e.g. the Braille display is unplugged after the system receives the write request but before writing the bytes to the Braille display) then the system will disconnect the Braille display, which calls [BrailleDisplayCallback.onDisconnected()](../android/accessibilityservice/BrailleDisplayController.BrailleDisplayCallback.md)).
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -214,4 +214,4 @@ This method returns immediately after dispatching the write request to the syste
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if there is no currently connected Braille display. |
-| `java.lang.IllegalArgumentException` | if the buffer exceeds the maximum safe payload size for binder transactions of [IBinder.getSuggestedMaxIpcSizeBytes()](https://developer.android.com/reference/kotlin/android/os/IBinder.html#getSuggestedMaxIpcSizeBytes()) |
+| `java.lang.IllegalArgumentException` | if the buffer exceeds the maximum safe payload size for binder transactions of [IBinder.getSuggestedMaxIpcSizeBytes()](../android/os/IBinder.md)) |

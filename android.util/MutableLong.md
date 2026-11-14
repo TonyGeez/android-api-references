@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableLong
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/MutableLong "View this page in Java") 
+Kotlin| [Java](../android/util/MutableLong.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableLong
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableLong](https://developer.android.com/reference/kotlin/android/util/MutableLong#) |
+| ↳ | [android.util.MutableLong](../android/util/MutableLong.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableLong
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableLong](https://developer.android.com/reference/kotlin/android/util/MutableLong#MutableLong(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [MutableLong](../android/util/MutableLong.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [value](https://developer.android.com/reference/kotlin/android/util/MutableLong#value:kotlin.Long) <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [value](../android/util/MutableLong.md) <br /> |
 
 ## Public constructors
 

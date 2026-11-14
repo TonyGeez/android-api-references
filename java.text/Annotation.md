@@ -10,7 +10,7 @@ open class Annotation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.Annotation](https://developer.android.com/reference/kotlin/java/text/Annotation#) |
+| ↳ | [java.text.Annotation](../java/text/Annotation.md) |
 
 An Annotation object is used as a wrapper for a text attribute value if the attribute has annotation characteristics. These characteristics are:
 
@@ -27,12 +27,12 @@ Wrapping the attribute value into an Annotation object guarantees that adjacent 
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Annotation](https://developer.android.com/reference/kotlin/java/text/Annotation#Annotation(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs an annotation record with the given value, which may be null. |
+| [Annotation](../java/text/Annotation.md))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs an annotation record with the given value, which may be null. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getValue](https://developer.android.com/reference/kotlin/java/text/Annotation#getValue())`()` Returns the value of the attribute, which may be null. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/text/Annotation#toString())`()` Returns the String representation of this Annotation. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getValue](../java/text/Annotation.md))`()` Returns the value of the attribute, which may be null. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/text/Annotation.md))`()` Returns the String representation of this Annotation. |
 
 ## Public constructors
 

@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # SelectionBoundsAdjuster
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/AbsListView.SelectionBoundsAdjuster "View this page in Java") 
+Kotlin| [Java](../android/widget/AbsListView.SelectionBoundsAdjuster.md) 
 | --- | --- |
 
 ```
 interface SelectionBoundsAdjuster
 ```
 
-| [android.widget.AbsListView.SelectionBoundsAdjuster](https://developer.android.com/reference/kotlin/android/widget/AbsListView.SelectionBoundsAdjuster#) |
+| [android.widget.AbsListView.SelectionBoundsAdjuster](../android/widget/AbsListView.SelectionBoundsAdjuster.md) |
 
 The top-level view of a list item can implement this interface to allow itself to modify the bounds of the selection shown for that item.
 
@@ -19,7 +19,7 @@ The top-level view of a list item can implement this interface to allow itself t
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [adjustListItemSelectionBounds](https://developer.android.com/reference/kotlin/android/widget/AbsListView.SelectionBoundsAdjuster#adjustListItemSelectionBounds(android.graphics.Rect))`(`bounds:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Called to allow the list item to adjust the bounds shown for its selection. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [adjustListItemSelectionBounds](../android/widget/AbsListView.SelectionBoundsAdjuster.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)!`)` Called to allow the list item to adjust the bounds shown for its selection. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called to allow the list item to adjust the bounds shown for its selection.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!:On call, this contains the bounds the list has selected for the item (that is the bounds of the entire view). The values can be modified as desired. |
+| `bounds` | [Rect](../android/graphics/Rect.md)!:On call, this contains the bounds the list has selected for the item (that is the bounds of the entire view). The values can be modified as desired. |

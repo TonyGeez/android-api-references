@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # PhoneStateListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/PhoneStateListener "View this page in Java") 
+Kotlin| [Java](../android/telephony/PhoneStateListener.md) 
 | --- | --- |
 
 ```
@@ -14,15 +14,15 @@ open class PhoneStateListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.PhoneStateListener](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#) |
+| ↳ | [android.telephony.PhoneStateListener](../android/telephony/PhoneStateListener.md) |
 
 | **This class was deprecated in API level 31.**
 |
-| Use [TelephonyCallback](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback) instead.
+| Use [TelephonyCallback](../android/telephony/TelephonyCallback.md) instead.
 
 A listener class for monitoring changes in specific telephony states on the device, including service state, signal strength, message waiting indicator (voicemail), and others.
 
-Override the methods for the state that you wish to receive updates for, and pass your PhoneStateListener object, along with bitwise-or of the LISTEN_ flags to [TelephonyManager.listen()](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). Methods are called when the state changes, as well as once on initial registration.
+Override the methods for the state that you wish to receive updates for, and pass your PhoneStateListener object, along with bitwise-or of the LISTEN_ flags to [TelephonyManager.listen()](../android/telephony/TelephonyManager.md)). Methods are called when the state changes, as well as once on initial registration.
 
 Note that access to some telephony information is permission-protected. Your application won't receive updates for protected information unless it has the appropriate permissions declared in its manifest file. Where permissions apply, they are noted in the appropriate LISTEN_ flags.
 
@@ -30,66 +30,66 @@ Note that access to some telephony information is permission-protected. Your app
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE:kotlin.Int) Listen for changes to active data subId. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_BARRING_INFO](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_BARRING_INFO:kotlin.Int) Listen for Barring Information for the current registered / camped cell. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CALL_DISCONNECT_CAUSES](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_CALL_DISCONNECT_CAUSES:kotlin.Int) Listen for call disconnect causes which contains [DisconnectCause](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause) and the precise disconnect cause. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE](../android/telephony/PhoneStateListener.md) Listen for changes to active data subId. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_BARRING_INFO](../android/telephony/PhoneStateListener.md) Listen for Barring Information for the current registered / camped cell. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CALL_DISCONNECT_CAUSES](../android/telephony/PhoneStateListener.md) Listen for call disconnect causes which contains [DisconnectCause](../android/telephony/DisconnectCause.md) and the precise disconnect cause. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CALL_FORWARDING_INDICATOR](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_CALL_FORWARDING_INDICATOR:kotlin.Int) Listen for changes to the call-forwarding indicator. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CALL_STATE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_CALL_STATE:kotlin.Int) Listen for changes to the device call state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CELL_INFO](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_CELL_INFO:kotlin.Int) Listen for changes to observed cell info. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CALL_FORWARDING_INDICATOR](../android/telephony/PhoneStateListener.md) Listen for changes to the call-forwarding indicator. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CALL_STATE](../android/telephony/PhoneStateListener.md) Listen for changes to the device call state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CELL_INFO](../android/telephony/PhoneStateListener.md) Listen for changes to observed cell info. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CELL_LOCATION](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_CELL_LOCATION:kotlin.Int) Listen for changes to the device's cell location. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_DATA_ACTIVITY](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_DATA_ACTIVITY:kotlin.Int) Listen for changes to the direction of data traffic on the data connection (cellular). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_DATA_CONNECTION_STATE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_DATA_CONNECTION_STATE:kotlin.Int) Listen for changes to the data connection state (cellular). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_CELL_LOCATION](../android/telephony/PhoneStateListener.md) Listen for changes to the device's cell location. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_DATA_ACTIVITY](../android/telephony/PhoneStateListener.md) Listen for changes to the direction of data traffic on the data connection (cellular). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_DATA_CONNECTION_STATE](../android/telephony/PhoneStateListener.md) Listen for changes to the data connection state (cellular). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_DISPLAY_INFO_CHANGED](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_DISPLAY_INFO_CHANGED:kotlin.Int) Listen for display info changed event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_EMERGENCY_NUMBER_LIST](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_EMERGENCY_NUMBER_LIST:kotlin.Int) Listen for changes to emergency number list based on all active subscriptions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_IMS_CALL_DISCONNECT_CAUSES](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_IMS_CALL_DISCONNECT_CAUSES:kotlin.Int) Listen for IMS call disconnect causes which contains [android.telephony.ims.ImsReasonInfo](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_DISPLAY_INFO_CHANGED](../android/telephony/PhoneStateListener.md) Listen for display info changed event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_EMERGENCY_NUMBER_LIST](../android/telephony/PhoneStateListener.md) Listen for changes to emergency number list based on all active subscriptions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_IMS_CALL_DISCONNECT_CAUSES](../android/telephony/PhoneStateListener.md) Listen for IMS call disconnect causes which contains [android.telephony.ims.ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_MESSAGE_WAITING_INDICATOR](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_MESSAGE_WAITING_INDICATOR:kotlin.Int) Listen for changes to the message-waiting indicator. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_NONE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_NONE:kotlin.Int) Stop listening for updates. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_PRECISE_DATA_CONNECTION_STATE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_PRECISE_DATA_CONNECTION_STATE:kotlin.Int) Listen for [PreciseDataConnectionState](https://developer.android.com/reference/kotlin/android/telephony/PreciseDataConnectionState) on the data connection (cellular). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_MESSAGE_WAITING_INDICATOR](../android/telephony/PhoneStateListener.md) Listen for changes to the message-waiting indicator. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_NONE](../android/telephony/PhoneStateListener.md) Stop listening for updates. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_PRECISE_DATA_CONNECTION_STATE](../android/telephony/PhoneStateListener.md) Listen for [PreciseDataConnectionState](../android/telephony/PreciseDataConnectionState.md) on the data connection (cellular). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_REGISTRATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_REGISTRATION_FAILURE:kotlin.Int) Listen for Registration Failures. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_SERVICE_STATE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_SERVICE_STATE:kotlin.Int) Listen for changes to the network service state (cellular). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_SIGNAL_STRENGTH](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_SIGNAL_STRENGTH:kotlin.Int) Listen for changes to the network signal strength (cellular). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_REGISTRATION_FAILURE](../android/telephony/PhoneStateListener.md) Listen for Registration Failures. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_SERVICE_STATE](../android/telephony/PhoneStateListener.md) Listen for changes to the network service state (cellular). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_SIGNAL_STRENGTH](../android/telephony/PhoneStateListener.md) Listen for changes to the network signal strength (cellular). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_SIGNAL_STRENGTHS](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_SIGNAL_STRENGTHS:kotlin.Int) Listen for changes to the network signal strengths (cellular). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_USER_MOBILE_DATA_STATE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_USER_MOBILE_DATA_STATE:kotlin.Int) Listen for changes to the user mobile data state |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_SIGNAL_STRENGTHS](../android/telephony/PhoneStateListener.md) Listen for changes to the network signal strengths (cellular). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LISTEN_USER_MOBILE_DATA_STATE](../android/telephony/PhoneStateListener.md) Listen for changes to the user mobile data state |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PhoneStateListener](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#PhoneStateListener())`()` Create a PhoneStateListener for the Phone with the default subscription. |
-| [PhoneStateListener](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#PhoneStateListener(java.util.concurrent.Executor))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`)` Create a PhoneStateListener for the Phone using the specified Executor |
+| [PhoneStateListener](../android/telephony/PhoneStateListener.md))`()` Create a PhoneStateListener for the Phone with the default subscription. |
+| [PhoneStateListener](../android/telephony/PhoneStateListener.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`)` Create a PhoneStateListener for the Phone using the specified Executor |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActiveDataSubscriptionIdChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onActiveDataSubscriptionIdChanged(kotlin.Int))`(`subId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when active data subId changes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBarringInfoChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onBarringInfoChanged(android.telephony.BarringInfo))`(`barringInfo:` ` [BarringInfo](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo)`)` Report updated barring information for the current camped/registered cell. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCallDisconnectCauseChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCallDisconnectCauseChanged(kotlin.Int,%20kotlin.Int))`(`disconnectCause:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `preciseDisconnectCause:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when call disconnect cause changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActiveDataSubscriptionIdChanged](../android/telephony/PhoneStateListener.md))`(`subId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when active data subId changes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBarringInfoChanged](../android/telephony/PhoneStateListener.md))`(`barringInfo:` ` [BarringInfo](../android/telephony/BarringInfo.md)`)` Report updated barring information for the current camped/registered cell. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCallDisconnectCauseChanged](../android/telephony/PhoneStateListener.md))`(`disconnectCause:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `preciseDisconnectCause:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when call disconnect cause changes on the registered subscription. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCallForwardingIndicatorChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCallForwardingIndicatorChanged(kotlin.Boolean))`(`cfi:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when the call-forwarding indicator changes on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCallStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCallStateChanged(kotlin.Int,%20kotlin.String))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Callback invoked when device call state changes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCellInfoChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCellInfoChanged(kotlin.collections.MutableList))`(`cellInfo:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo)!>!`)` Callback invoked when a observed cell info has changed or new cells have been added or removed on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCallForwardingIndicatorChanged](../android/telephony/PhoneStateListener.md))`(`cfi:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when the call-forwarding indicator changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCallStateChanged](../android/telephony/PhoneStateListener.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Callback invoked when device call state changes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCellInfoChanged](../android/telephony/PhoneStateListener.md))`(`cellInfo:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [CellInfo](../android/telephony/CellInfo.md)!>!`)` Callback invoked when a observed cell info has changed or new cells have been added or removed on the registered subscription. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCellLocationChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCellLocationChanged(android.telephony.CellLocation))`(`location:` ` [CellLocation](https://developer.android.com/reference/kotlin/android/telephony/CellLocation)!`)` Callback invoked when device cell location changes on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataActivity](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onDataActivity(kotlin.Int))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when data activity state changes on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataConnectionStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onDataConnectionStateChanged(kotlin.Int))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when connection state changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCellLocationChanged](../android/telephony/PhoneStateListener.md))`(`location:` ` [CellLocation](../android/telephony/CellLocation.md)!`)` Callback invoked when device cell location changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataActivity](../android/telephony/PhoneStateListener.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when data activity state changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataConnectionStateChanged](../android/telephony/PhoneStateListener.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when connection state changes on the registered subscription. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataConnectionStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onDataConnectionStateChanged(kotlin.Int,%20kotlin.Int))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `networkType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` same as above, but with the network type. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayInfoChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo))`(`telephonyDisplayInfo:` ` [TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo)`)` Callback invoked when the display info has changed on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEmergencyNumberListChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onEmergencyNumberListChanged(kotlin.collections.MutableMap))`(`emergencyNumberList:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [EmergencyNumber](https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber)!>!>`)` Callback invoked when the current emergency number list has changed on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDataConnectionStateChanged](../android/telephony/PhoneStateListener.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `networkType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` same as above, but with the network type. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayInfoChanged](../android/telephony/PhoneStateListener.md))`(`telephonyDisplayInfo:` ` [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md)`)` Callback invoked when the display info has changed on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEmergencyNumberListChanged](../android/telephony/PhoneStateListener.md))`(`emergencyNumberList:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [EmergencyNumber](../android/telephony/emergency/EmergencyNumber.md)!>!>`)` Callback invoked when the current emergency number list has changed on the registered subscription. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onImsCallDisconnectCauseChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo))`(`imsReasonInfo:` ` [ImsReasonInfo](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo)`)` Callback invoked when Ims call disconnect cause changes on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMessageWaitingIndicatorChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onMessageWaitingIndicatorChanged(kotlin.Boolean))`(`mwi:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when the message-waiting indicator changes on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPreciseDataConnectionStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState))`(`dataConnectionState:` ` [PreciseDataConnectionState](https://developer.android.com/reference/kotlin/android/telephony/PreciseDataConnectionState)`)` Callback providing update about the default/internet data connection on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onImsCallDisconnectCauseChanged](../android/telephony/PhoneStateListener.md))`(`imsReasonInfo:` ` [ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md)`)` Callback invoked when Ims call disconnect cause changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMessageWaitingIndicatorChanged](../android/telephony/PhoneStateListener.md))`(`mwi:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when the message-waiting indicator changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPreciseDataConnectionStateChanged](../android/telephony/PhoneStateListener.md))`(`dataConnectionState:` ` [PreciseDataConnectionState](../android/telephony/PreciseDataConnectionState.md)`)` Callback providing update about the default/internet data connection on the registered subscription. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onRegistrationFailed(android.telephony.CellIdentity,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`cellIdentity:` ` [CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity)`, `chosenPlmn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `domain:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `causeCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCauseCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Report that Registration or a Location/Routing/Tracking Area update has failed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onServiceStateChanged(android.telephony.ServiceState))`(`serviceState:` ` [ServiceState](https://developer.android.com/reference/kotlin/android/telephony/ServiceState)!`)` Callback invoked when device service state changes on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSignalStrengthChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onSignalStrengthChanged(kotlin.Int))`(`asu:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when network signal strength changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](../android/telephony/PhoneStateListener.md))`(`cellIdentity:` ` [CellIdentity](../android/telephony/CellIdentity.md)`, `chosenPlmn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `domain:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `causeCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCauseCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Report that Registration or a Location/Routing/Tracking Area update has failed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceStateChanged](../android/telephony/PhoneStateListener.md))`(`serviceState:` ` [ServiceState](../android/telephony/ServiceState.md)!`)` Callback invoked when device service state changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSignalStrengthChanged](../android/telephony/PhoneStateListener.md))`(`asu:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when network signal strength changes on the registered subscription. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSignalStrengthsChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onSignalStrengthsChanged(android.telephony.SignalStrength))`(`signalStrength:` ` [SignalStrength](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength)!`)` Callback invoked when network signal strengths changes on the registered subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUserMobileDataStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onUserMobileDataStateChanged(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when the user mobile data state has changed on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSignalStrengthsChanged](../android/telephony/PhoneStateListener.md))`(`signalStrength:` ` [SignalStrength](../android/telephony/SignalStrength.md)!`)` Callback invoked when network signal strengths changes on the registered subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUserMobileDataStateChanged](../android/telephony/PhoneStateListener.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback invoked when the user mobile data state has changed on the registered subscription. |
 
 ## Constants
 
@@ -102,16 +102,16 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.ActiveDataSubscriptionIdListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.ActiveDataSubscriptionIdListener](../android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.md) instead.*
 
 Listen for changes to active data subId. Active data subscription is the current subscription used to setup Cellular Internet data. For example, it could be the current active opportunistic subscription in use, or the subscription user selected as default data subscription in DSDS mode. 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) 
 
  Value: 4194304
 
 **See Also**
 
-- [#onActiveDataSubscriptionIdChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onActiveDataSubscriptionIdChanged(kotlin.Int)) 
+- [#onActiveDataSubscriptionIdChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_BARRING_INFO
 
@@ -122,20 +122,20 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_BARRING_INFO: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.BarringInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.BarringInfoListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.BarringInfoListener](../android/telephony/TelephonyCallback.BarringInfoListener.md) instead.*
 
 Listen for Barring Information for the current registered / camped cell.
 
-Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())).
+Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))).
 
-Also requires the [Manifest.permission.ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) permission, regardless of whether the calling app has carrier privileges. 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) and [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) 
+Also requires the [Manifest.permission.ACCESS_FINE_LOCATION](../android/Manifest.permission.md) permission, regardless of whether the calling app has carrier privileges. 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md) 
 
  Value: -2147483648
 
 **See Also**
 
-- [#onBarringInfoChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onBarringInfoChanged(android.telephony.BarringInfo)) 
+- [#onBarringInfoChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_CALL_DISCONNECT_CAUSES
 
@@ -146,12 +146,12 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_CALL_DISCONNECT_CAUSES: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallDisconnectCauseListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CallDisconnectCauseListener](../android/telephony/TelephonyCallback.CallDisconnectCauseListener.md) instead.*
 
-Listen for call disconnect causes which contains [DisconnectCause](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause) and the precise disconnect cause.
+Listen for call disconnect causes which contains [DisconnectCause](../android/telephony/DisconnectCause.md) and the precise disconnect cause.
 
-Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) 
+Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) 
 
  Value: 33554432
 
@@ -163,16 +163,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LISTEN_CALL_FORWARDING_INDICATOR: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CallForwardingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallForwardingIndicatorListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CallForwardingIndicatorListener](../android/telephony/TelephonyCallback.CallForwardingIndicatorListener.md) instead.*
 
-Listen for changes to the call-forwarding indicator. {@more} Requires Permission: [READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) 
+Listen for changes to the call-forwarding indicator. {@more} Requires Permission: [READ_PHONE_STATE](../android/Manifest.permission.md) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) 
 
  Value: 8
 
 **See Also**
 
-- [#onCallForwardingIndicatorChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCallForwardingIndicatorChanged(kotlin.Boolean)) 
+- [#onCallForwardingIndicatorChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_CALL_STATE
 
@@ -182,7 +182,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LISTEN_CALL_STATE: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CallStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CallStateListener](../android/telephony/TelephonyCallback.CallStateListener.md) instead.*
 
 Listen for changes to the device call state. {@more} 
 
@@ -190,7 +190,7 @@ Listen for changes to the device call state. {@more}
 
 **See Also**
 
-- [#onCallStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCallStateChanged(kotlin.Int,%20kotlin.String)) 
+- [#onCallStateChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_CELL_INFO
 
@@ -201,16 +201,16 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_CELL_INFO: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CellInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellInfoListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CellInfoListener](../android/telephony/TelephonyCallback.CellInfoListener.md) instead.*
 
-Listen for changes to observed cell info. Listening to this event requires the [Manifest.permission.READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) and [Manifest.permission.ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) permission. 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) and [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) 
+Listen for changes to observed cell info. Listening to this event requires the [Manifest.permission.READ_PHONE_STATE](../android/Manifest.permission.md) and [Manifest.permission.ACCESS_FINE_LOCATION](../android/Manifest.permission.md) permission. 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md) 
 
  Value: 1024
 
 **See Also**
 
-- [#onCellInfoChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCellInfoChanged(kotlin.collections.MutableList)) 
+- [#onCellInfoChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_CELL_LOCATION
 
@@ -220,18 +220,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LISTEN_CELL_LOCATION: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CellLocationListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellLocationListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CellLocationListener](../android/telephony/TelephonyCallback.CellLocationListener.md) instead.*
 
-Listen for changes to the device's cell location. Note that this will result in frequent callbacks to the listener. {@more} Requires Permission: [ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String)
+Listen for changes to the device's cell location. Note that this will result in frequent callbacks to the listener. {@more} Requires Permission: [ACCESS_FINE_LOCATION](../android/Manifest.permission.md)
 
-If you need regular location updates but want more control over the update interval or location precision, you can set up a listener through the [location manager](https://developer.android.com/reference/kotlin/android/location/LocationManager.html#) instead. 
-Requires [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) 
+If you need regular location updates but want more control over the update interval or location precision, you can set up a listener through the [location manager](../android/location/LocationManager.md) instead. 
+Requires [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md) 
 
  Value: 16
 
 **See Also**
 
-- [#onCellLocationChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCellLocationChanged(android.telephony.CellLocation)) 
+- [#onCellLocationChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_DATA_ACTIVITY
 
@@ -241,7 +241,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LISTEN_DATA_ACTIVITY: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.DataActivityListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivityListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.DataActivityListener](../android/telephony/TelephonyCallback.DataActivityListener.md) instead.*
 
 Listen for changes to the direction of data traffic on the data connection (cellular). {@more} Example: The status bar uses this to display the appropriate data-traffic icon. 
 
@@ -249,7 +249,7 @@ Listen for changes to the direction of data traffic on the data connection (cell
 
 **See Also**
 
-- [#onDataActivity](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onDataActivity(kotlin.Int)) 
+- [#onDataActivity](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_DATA_CONNECTION_STATE
 
@@ -259,7 +259,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LISTEN_DATA_CONNECTION_STATE: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.DataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataConnectionStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.DataConnectionStateListener](../android/telephony/TelephonyCallback.DataConnectionStateListener.md) instead.*
 
 Listen for changes to the data connection state (cellular). 
 
@@ -276,15 +276,15 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_DISPLAY_INFO_CHANGED: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.DisplayInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DisplayInfoListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.DisplayInfoListener](../android/telephony/TelephonyCallback.DisplayInfoListener.md) instead.*
 
-Listen for display info changed event. For clients compiled on Android 11 SDK, requires permission: [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). For clients compiled on Android 12 SDK or newer, [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) or carrier privileges is not required anymore. 
+Listen for display info changed event. For clients compiled on Android 11 SDK, requires permission: [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). For clients compiled on Android 12 SDK or newer, [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) or carrier privileges is not required anymore. 
 
  Value: 1048576
 
 **See Also**
 
-- [#onDisplayInfoChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)) 
+- [#onDisplayInfoChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_EMERGENCY_NUMBER_LIST
 
@@ -295,12 +295,12 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_EMERGENCY_NUMBER_LIST: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.EmergencyNumberListListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.EmergencyNumberListListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.EmergencyNumberListListener](../android/telephony/TelephonyCallback.EmergencyNumberListListener.md) instead.*
 
 Listen for changes to emergency number list based on all active subscriptions.
 
-Requires permission [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) 
+Requires permission [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) 
 
  Value: 16777216
 
@@ -313,18 +313,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_IMS_CALL_DISCONNECT_CAUSES: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.ImsCallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.ImsCallDisconnectCauseListener](../android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.md) instead.*
 
-Listen for IMS call disconnect causes which contains [android.telephony.ims.ImsReasonInfo](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo)
+Listen for IMS call disconnect causes which contains [android.telephony.ims.ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md)
 
-Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) 
+Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) 
 
  Value: 134217728
 
 **See Also**
 
-- [#onImsCallDisconnectCauseChanged(ImsReasonInfo)](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)) 
+- [#onImsCallDisconnectCauseChanged(ImsReasonInfo)](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_MESSAGE_WAITING_INDICATOR
 
@@ -334,18 +334,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LISTEN_MESSAGE_WAITING_INDICATOR: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.MessageWaitingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.MessageWaitingIndicatorListener](../android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.md) instead.*
 
-Listen for changes to the message-waiting indicator. {@more} Requires Permission: [READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())).
+Listen for changes to the message-waiting indicator. {@more} Requires Permission: [READ_PHONE_STATE](../android/Manifest.permission.md) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))).
 
 Example: The status bar uses this to determine when to display the voicemail icon. 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) 
 
  Value: 4
 
 **See Also**
 
-- [#onMessageWaitingIndicatorChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onMessageWaitingIndicatorChanged(kotlin.Boolean)) 
+- [#onMessageWaitingIndicatorChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_NONE
 
@@ -370,18 +370,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_PRECISE_DATA_CONNECTION_STATE: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.PreciseDataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.PreciseDataConnectionStateListener](../android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.md) instead.*
 
-Listen for [PreciseDataConnectionState](https://developer.android.com/reference/kotlin/android/telephony/PreciseDataConnectionState) on the data connection (cellular).
+Listen for [PreciseDataConnectionState](../android/telephony/PreciseDataConnectionState.md) on the data connection (cellular).
 
-Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) 
+Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) 
 
  Value: 4096
 
 **See Also**
 
-- [#onPreciseDataConnectionStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)) 
+- [#onPreciseDataConnectionStateChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_REGISTRATION_FAILURE
 
@@ -392,20 +392,20 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_REGISTRATION_FAILURE: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.RegistrationFailedListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.RegistrationFailedListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.RegistrationFailedListener](../android/telephony/TelephonyCallback.RegistrationFailedListener.md) instead.*
 
-Listen for Registration Failures. Listen for indications that a registration procedure has failed in either the CS or PS domain. This indication does not necessarily indicate a change of service state, which should be tracked via [LISTEN_SERVICE_STATE](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_SERVICE_STATE:kotlin.Int).
+Listen for Registration Failures. Listen for indications that a registration procedure has failed in either the CS or PS domain. This indication does not necessarily indicate a change of service state, which should be tracked via [LISTEN_SERVICE_STATE](../android/telephony/PhoneStateListener.md).
 
-Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())).
+Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))).
 
-Also requires the [Manifest.permission.ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) permission, regardless of whether the calling app has carrier privileges. 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) and [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) 
+Also requires the [Manifest.permission.ACCESS_FINE_LOCATION](../android/Manifest.permission.md) permission, regardless of whether the calling app has carrier privileges. 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md) 
 
  Value: 1073741824
 
 **See Also**
 
-- [#onRegistrationFailed](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onRegistrationFailed(android.telephony.CellIdentity,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)) 
+- [#onRegistrationFailed](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_SERVICE_STATE
 
@@ -415,7 +415,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LISTEN_SERVICE_STATE: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.ServiceStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.ServiceStateListener](../android/telephony/TelephonyCallback.ServiceStateListener.md) instead.*
 
 Listen for changes to the network service state (cellular). 
 
@@ -423,8 +423,8 @@ Listen for changes to the network service state (cellular).
 
 **See Also**
 
-- [#onServiceStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onServiceStateChanged(android.telephony.ServiceState))
-- [android.telephony.ServiceState](https://developer.android.com/reference/kotlin/android/telephony/ServiceState) 
+- [#onServiceStateChanged](../android/telephony/PhoneStateListener.md))
+- [android.telephony.ServiceState](../android/telephony/ServiceState.md) 
 
 ### LISTEN_SIGNAL_STRENGTH
 
@@ -435,7 +435,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val LISTEN_SIGNAL_STRENGTH: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.SignalStrengthsListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.SignalStrengthsListener](../android/telephony/TelephonyCallback.SignalStrengthsListener.md) instead.*
 
 Listen for changes to the network signal strength (cellular). {@more} 
 
@@ -443,7 +443,7 @@ Listen for changes to the network signal strength (cellular). {@more}
 
 **See Also**
 
-- [#onSignalStrengthChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onSignalStrengthChanged(kotlin.Int)) 
+- [#onSignalStrengthChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_SIGNAL_STRENGTHS
 
@@ -454,7 +454,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_SIGNAL_STRENGTHS: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.SignalStrengthsListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.SignalStrengthsListener](../android/telephony/TelephonyCallback.SignalStrengthsListener.md) instead.*
 
 Listen for changes to the network signal strengths (cellular).
 
@@ -464,7 +464,7 @@ Example: The status bar uses this to control the signal-strength icon.
 
 **See Also**
 
-- [#onSignalStrengthsChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onSignalStrengthsChanged(android.telephony.SignalStrength)) 
+- [#onSignalStrengthsChanged](../android/telephony/PhoneStateListener.md)) 
 
 ### LISTEN_USER_MOBILE_DATA_STATE
 
@@ -475,7 +475,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val LISTEN_USER_MOBILE_DATA_STATE: Int
 ```
 
-**Deprecated:** *Use [TelephonyCallback.UserMobileDataStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.UserMobileDataStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.UserMobileDataStateListener](../android/telephony/TelephonyCallback.UserMobileDataStateListener.md) instead.*
 
 Listen for changes to the user mobile data state 
 
@@ -483,7 +483,7 @@ Listen for changes to the user mobile data state
 
 **See Also**
 
-- [#onUserMobileDataStateChanged](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onUserMobileDataStateChanged(kotlin.Boolean))
+- [#onUserMobileDataStateChanged](../android/telephony/PhoneStateListener.md))
 
 ## Public constructors
 
@@ -511,7 +511,7 @@ Create a PhoneStateListener with a specified Executor for handling necessary cal
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):a non-null Executor that will execute callbacks for the PhoneStateListener. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):a non-null Executor that will execute callbacks for the PhoneStateListener. |
 
 ## Public methods
 
@@ -524,10 +524,10 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onActiveDataSubscriptionIdChanged(subId: Int): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.ActiveDataSubscriptionIdListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.ActiveDataSubscriptionIdListener](../android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.md) instead.*
 
 Callback invoked when active data subId changes. Note, this callback triggers regardless of registered subscription. Requires the READ_PHONE_STATE permission. 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String)
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md)
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -542,20 +542,20 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onBarringInfoChanged(barringInfo: BarringInfo): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.BarringInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.BarringInfoListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.BarringInfoListener](../android/telephony/TelephonyCallback.BarringInfoListener.md) instead.*
 
 Report updated barring information for the current camped/registered cell.
 
 Barring info is provided for all services applicable to the current camped/registered cell, for the registered PLMN and current access class/access category. 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) and [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String)
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md)
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `barringInfo` | [BarringInfo](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo):for all services on the current cell. This value cannot be`null`. |
+| `barringInfo` | [BarringInfo](../android/telephony/BarringInfo.md):for all services on the current cell. This value cannot be`null`. |
 
 **See Also**
 
-- [android.telephony.BarringInfo](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo) 
+- [android.telephony.BarringInfo](../android/telephony/BarringInfo.md) 
 
 ### onCallDisconnectCauseChanged
 
@@ -569,14 +569,14 @@ open fun onCallDisconnectCauseChanged(
 ): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallDisconnectCauseListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CallDisconnectCauseListener](../android/telephony/TelephonyCallback.CallDisconnectCauseListener.md) instead.*
 
-Callback invoked when call disconnect cause changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String)
+Callback invoked when call disconnect cause changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md)
 
 | Parameters ||
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `disconnectCause` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the disconnect cause Value is [android.telephony.DisconnectCause#NOT_VALID](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#NOT_VALID:kotlin.Int), [android.telephony.DisconnectCause#NOT_DISCONNECTED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#NOT_DISCONNECTED:kotlin.Int), [android.telephony.DisconnectCause#INCOMING_MISSED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#INCOMING_MISSED:kotlin.Int), [android.telephony.DisconnectCause#NORMAL](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#NORMAL:kotlin.Int), [android.telephony.DisconnectCause#LOCAL](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#LOCAL:kotlin.Int), [android.telephony.DisconnectCause#BUSY](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#BUSY:kotlin.Int), [android.telephony.DisconnectCause#CONGESTION](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CONGESTION:kotlin.Int), [android.telephony.DisconnectCause#MMI](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#MMI:kotlin.Int), [android.telephony.DisconnectCause#INVALID_NUMBER](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#INVALID_NUMBER:kotlin.Int), [android.telephony.DisconnectCause#NUMBER_UNREACHABLE](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#NUMBER_UNREACHABLE:kotlin.Int), [android.telephony.DisconnectCause#SERVER_UNREACHABLE](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#SERVER_UNREACHABLE:kotlin.Int), [android.telephony.DisconnectCause#INVALID_CREDENTIALS](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#INVALID_CREDENTIALS:kotlin.Int), [android.telephony.DisconnectCause#OUT_OF_NETWORK](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#OUT_OF_NETWORK:kotlin.Int), [android.telephony.DisconnectCause#SERVER_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#SERVER_ERROR:kotlin.Int), [android.telephony.DisconnectCause#TIMED_OUT](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#TIMED_OUT:kotlin.Int), [android.telephony.DisconnectCause#LOST_SIGNAL](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#LOST_SIGNAL:kotlin.Int), [android.telephony.DisconnectCause#LIMIT_EXCEEDED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#LIMIT_EXCEEDED:kotlin.Int), [android.telephony.DisconnectCause#INCOMING_REJECTED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#INCOMING_REJECTED:kotlin.Int), [android.telephony.DisconnectCause#POWER_OFF](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#POWER_OFF:kotlin.Int), [android.telephony.DisconnectCause#OUT_OF_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#OUT_OF_SERVICE:kotlin.Int), [android.telephony.DisconnectCause#ICC_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#ICC_ERROR:kotlin.Int), [android.telephony.DisconnectCause#CALL_BARRED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CALL_BARRED:kotlin.Int), [android.telephony.DisconnectCause#FDN_BLOCKED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#FDN_BLOCKED:kotlin.Int), [android.telephony.DisconnectCause#CS_RESTRICTED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CS_RESTRICTED:kotlin.Int), [android.telephony.DisconnectCause#CS_RESTRICTED_NORMAL](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CS_RESTRICTED_NORMAL:kotlin.Int), [android.telephony.DisconnectCause#CS_RESTRICTED_EMERGENCY](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CS_RESTRICTED_EMERGENCY:kotlin.Int), [android.telephony.DisconnectCause#UNOBTAINABLE_NUMBER](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#UNOBTAINABLE_NUMBER:kotlin.Int), [android.telephony.DisconnectCause#CDMA_LOCKED_UNTIL_POWER_CYCLE](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_LOCKED_UNTIL_POWER_CYCLE:kotlin.Int), [android.telephony.DisconnectCause#CDMA_DROP](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_DROP:kotlin.Int), [android.telephony.DisconnectCause#CDMA_INTERCEPT](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_INTERCEPT:kotlin.Int), [android.telephony.DisconnectCause#CDMA_REORDER](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_REORDER:kotlin.Int), [android.telephony.DisconnectCause#CDMA_SO_REJECT](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_SO_REJECT:kotlin.Int), [android.telephony.DisconnectCause#CDMA_RETRY_ORDER](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_RETRY_ORDER:kotlin.Int), [android.telephony.DisconnectCause#CDMA_ACCESS_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_ACCESS_FAILURE:kotlin.Int), [android.telephony.DisconnectCause#CDMA_PREEMPTED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_PREEMPTED:kotlin.Int), [android.telephony.DisconnectCause#CDMA_NOT_EMERGENCY](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_NOT_EMERGENCY:kotlin.Int), [android.telephony.DisconnectCause#CDMA_ACCESS_BLOCKED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#CDMA_ACCESS_BLOCKED:kotlin.Int), or [android.telephony.DisconnectCause#ERROR_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause#ERROR_UNSPECIFIED:kotlin.Int) |
+| `disconnectCause` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the disconnect cause Value is [android.telephony.DisconnectCause#NOT_VALID](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#NOT_DISCONNECTED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#INCOMING_MISSED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#NORMAL](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#LOCAL](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#BUSY](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CONGESTION](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#MMI](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#INVALID_NUMBER](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#NUMBER_UNREACHABLE](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#SERVER_UNREACHABLE](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#INVALID_CREDENTIALS](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#OUT_OF_NETWORK](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#SERVER_ERROR](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#TIMED_OUT](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#LOST_SIGNAL](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#LIMIT_EXCEEDED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#INCOMING_REJECTED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#POWER_OFF](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#OUT_OF_SERVICE](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#ICC_ERROR](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CALL_BARRED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#FDN_BLOCKED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CS_RESTRICTED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CS_RESTRICTED_NORMAL](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CS_RESTRICTED_EMERGENCY](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#UNOBTAINABLE_NUMBER](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_LOCKED_UNTIL_POWER_CYCLE](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_DROP](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_INTERCEPT](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_REORDER](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_SO_REJECT](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_RETRY_ORDER](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_ACCESS_FAILURE](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_PREEMPTED](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_NOT_EMERGENCY](../android/telephony/DisconnectCause.md), [android.telephony.DisconnectCause#CDMA_ACCESS_BLOCKED](../android/telephony/DisconnectCause.md), or [android.telephony.DisconnectCause#ERROR_UNSPECIFIED](../android/telephony/DisconnectCause.md) |
 | `preciseDisconnectCause` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the precise disconnect cause Value is android.telephony.PreciseDisconnectCause.NOT_VALID, android.telephony.PreciseDisconnectCause.NO_DISCONNECT_CAUSE_AVAILABLE, android.telephony.PreciseDisconnectCause.UNOBTAINABLE_NUMBER, android.telephony.PreciseDisconnectCause.NORMAL, android.telephony.PreciseDisconnectCause.BUSY, android.telephony.PreciseDisconnectCause.NUMBER_CHANGED, android.telephony.PreciseDisconnectCause.STATUS_ENQUIRY, android.telephony.PreciseDisconnectCause.NORMAL_UNSPECIFIED, android.telephony.PreciseDisconnectCause.NO_CIRCUIT_AVAIL, android.telephony.PreciseDisconnectCause.TEMPORARY_FAILURE, android.telephony.PreciseDisconnectCause.SWITCHING_CONGESTION, android.telephony.PreciseDisconnectCause.CHANNEL_NOT_AVAIL, android.telephony.PreciseDisconnectCause.QOS_NOT_AVAIL, android.telephony.PreciseDisconnectCause.BEARER_NOT_AVAIL, android.telephony.PreciseDisconnectCause.ACM_LIMIT_EXCEEDED, android.telephony.PreciseDisconnectCause.CALL_BARRED, android.telephony.PreciseDisconnectCause.FDN_BLOCKED, android.telephony.PreciseDisconnectCause.IMSI_UNKNOWN_IN_VLR, android.telephony.PreciseDisconnectCause.IMEI_NOT_ACCEPTED, android.telephony.PreciseDisconnectCause.CDMA_LOCKED_UNTIL_POWER_CYCLE, android.telephony.PreciseDisconnectCause.CDMA_DROP, android.telephony.PreciseDisconnectCause.CDMA_INTERCEPT, android.telephony.PreciseDisconnectCause.CDMA_REORDER, android.telephony.PreciseDisconnectCause.CDMA_SO_REJECT, android.telephony.PreciseDisconnectCause.CDMA_RETRY_ORDER, android.telephony.PreciseDisconnectCause.CDMA_ACCESS_FAILURE, android.telephony.PreciseDisconnectCause.CDMA_PREEMPTED, android.telephony.PreciseDisconnectCause.CDMA_NOT_EMERGENCY, android.telephony.PreciseDisconnectCause.CDMA_ACCESS_BLOCKED, or android.telephony.PreciseDisconnectCause.ERROR_UNSPECIFIED |
 
 ### onCallForwardingIndicatorChanged
@@ -587,10 +587,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onCallForwardingIndicatorChanged(cfi: Boolean): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CallForwardingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallForwardingIndicatorListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CallForwardingIndicatorListener](../android/telephony/TelephonyCallback.CallForwardingIndicatorListener.md) instead.*
 
-Callback invoked when the call-forwarding indicator changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) 
+Callback invoked when the call-forwarding indicator changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) 
 
 ### onCallStateChanged
 
@@ -603,20 +603,20 @@ open fun onCallStateChanged(
 ): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CallStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CallStateListener](../android/telephony/TelephonyCallback.CallStateListener.md) instead.*
 
 Callback invoked when device call state changes.
 
 Reports the state of Telephony (mobile) calls on the device for the registered subscription.
 
-Note: the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()).
+Note: the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)).
 
-Note: The state returned here may differ from that returned by [TelephonyManager.getCallState()](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallState()). Receivers of this callback should be aware that calling [TelephonyManager.getCallState()](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallState())from within this callback may return a different state than the callback reports. Requires Permission: [READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) for applications targeting API level 31+.
+Note: The state returned here may differ from that returned by [TelephonyManager.getCallState()](../android/telephony/TelephonyManager.md)). Receivers of this callback should be aware that calling [TelephonyManager.getCallState()](../android/telephony/TelephonyManager.md))from within this callback may return a different state than the callback reports. Requires Permission: [READ_PHONE_STATE](../android/Manifest.permission.md) for applications targeting API level 31+.
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):call state Value is [android.telephony.TelephonyManager#CALL_STATE_IDLE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_STATE_IDLE:kotlin.Int), [android.telephony.TelephonyManager#CALL_STATE_RINGING](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_STATE_RINGING:kotlin.Int), or [android.telephony.TelephonyManager#CALL_STATE_OFFHOOK](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_STATE_OFFHOOK:kotlin.Int) |
-| `phoneNumber` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:call phone number. If application does not have [READ_CALL_LOG](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_CALL_LOG:kotlin.String) permission or carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())), an empty string will be passed as an argument. |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):call state Value is [android.telephony.TelephonyManager#CALL_STATE_IDLE](../android/telephony/TelephonyManager.md), [android.telephony.TelephonyManager#CALL_STATE_RINGING](../android/telephony/TelephonyManager.md), or [android.telephony.TelephonyManager#CALL_STATE_OFFHOOK](../android/telephony/TelephonyManager.md) |
+| `phoneNumber` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:call phone number. If application does not have [READ_CALL_LOG](../android/Manifest.permission.md) permission or carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))), an empty string will be passed as an argument. |
 
 ### onCellInfoChanged
 
@@ -627,14 +627,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onCellInfoChanged(cellInfo: MutableList<CellInfo!>!): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CellInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellInfoListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CellInfoListener](../android/telephony/TelephonyCallback.CellInfoListener.md) instead.*
 
-Callback invoked when a observed cell info has changed or new cells have been added or removed on the registered subscription. Note, the registration subId s from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) and [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String)
+Callback invoked when a observed cell info has changed or new cells have been added or removed on the registered subscription. Note, the registration subId s from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md)
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cellInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo)!\>!:is the list of currently visible cells. |
+| `cellInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](../android/telephony/CellInfo.md)!\>!:is the list of currently visible cells. |
 
 ### onCellLocationChanged
 
@@ -644,10 +644,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onCellLocationChanged(location: CellLocation!): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.CellLocationListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellLocationListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.CellLocationListener](../android/telephony/TelephonyCallback.CellLocationListener.md) instead.*
 
-Callback invoked when device cell location changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
-Requires [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) 
+Callback invoked when device cell location changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
+Requires [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md) 
 
 ### onDataActivity
 
@@ -657,16 +657,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onDataActivity(direction: Int): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.DataActivityListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivityListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.DataActivityListener](../android/telephony/TelephonyCallback.DataActivityListener.md) instead.*
 
-Callback invoked when data activity state changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
+Callback invoked when data activity state changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
 **See Also**
 
-- [android.telephony.TelephonyManager#DATA_ACTIVITY_NONE](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ACTIVITY_NONE:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_ACTIVITY_IN](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ACTIVITY_IN:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_ACTIVITY_OUT](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ACTIVITY_OUT:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_ACTIVITY_INOUT](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ACTIVITY_INOUT:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_ACTIVITY_DORMANT](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ACTIVITY_DORMANT:kotlin.Int) 
+- [android.telephony.TelephonyManager#DATA_ACTIVITY_NONE](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_ACTIVITY_IN](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_ACTIVITY_OUT](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_ACTIVITY_INOUT](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_ACTIVITY_DORMANT](../android/telephony/TelephonyManager.md) 
 
 ### onDataConnectionStateChanged
 
@@ -676,16 +676,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onDataConnectionStateChanged(state: Int): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.DataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataConnectionStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.DataConnectionStateListener](../android/telephony/TelephonyCallback.DataConnectionStateListener.md) instead.*
 
-Callback invoked when connection state changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
+Callback invoked when connection state changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
 **See Also**
 
-- [android.telephony.TelephonyManager#DATA_DISCONNECTED](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_DISCONNECTED:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_CONNECTING](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_CONNECTING:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_CONNECTED](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_CONNECTED:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_SUSPENDED](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_SUSPENDED:kotlin.Int)
-- [android.telephony.TelephonyManager#DATA_HANDOVER_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_HANDOVER_IN_PROGRESS:kotlin.Int) 
+- [android.telephony.TelephonyManager#DATA_DISCONNECTED](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_CONNECTING](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_CONNECTED](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_SUSPENDED](../android/telephony/TelephonyManager.md)
+- [android.telephony.TelephonyManager#DATA_HANDOVER_IN_PROGRESS](../android/telephony/TelephonyManager.md) 
 
 ### onDataConnectionStateChanged
 
@@ -699,7 +699,7 @@ open fun onDataConnectionStateChanged(
 ): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.DataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataConnectionStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.DataConnectionStateListener](../android/telephony/TelephonyCallback.DataConnectionStateListener.md) instead.*
 
 same as above, but with the network type. Both called. 
 
@@ -712,16 +712,16 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onDisplayInfoChanged(telephonyDisplayInfo: TelephonyDisplayInfo): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.DisplayInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DisplayInfoListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.DisplayInfoListener](../android/telephony/TelephonyCallback.DisplayInfoListener.md) instead.*
 
 Callback invoked when the display info has changed on the registered subscription.
 
-The [TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo) contains status information shown to the user based on carrier policy. For clients compiled on Android 11 SDK, requires permission: [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). For clients compiled on Android 12 SDK or newer, [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) or carrier privileges is not required anymore. 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String)
+The [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md) contains status information shown to the user based on carrier policy. For clients compiled on Android 11 SDK, requires permission: [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) or that the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). For clients compiled on Android 12 SDK or newer, [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) or carrier privileges is not required anymore. 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md)
 
 | Parameters ||
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `telephonyDisplayInfo` | [TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo):The display information. This value cannot be`null`. |
+| `telephonyDisplayInfo` | [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md):The display information. This value cannot be`null`. |
 
 ### onEmergencyNumberListChanged
 
@@ -732,14 +732,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onEmergencyNumberListChanged(emergencyNumberList: MutableMap<Int!, MutableList<EmergencyNumber!>!>): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.EmergencyNumberListListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.EmergencyNumberListListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.EmergencyNumberListListener](../android/telephony/TelephonyCallback.EmergencyNumberListListener.md) instead.*
 
-Callback invoked when the current emergency number list has changed on the registered subscription. Note, the registered subscription is associated with [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object on which [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int))was called. If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the given subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String)
+Callback invoked when the current emergency number list has changed on the registered subscription. Note, the registered subscription is associated with [TelephonyManager](../android/telephony/TelephonyManager.md) object on which [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md))was called. If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the given subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md)
 
 | Parameters ||
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `emergencyNumberList` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmergencyNumber](https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber)!\>!\>:Map associating all active subscriptions on the device with the list of emergency numbers originating from that subscription. If there are no active subscriptions, the map will contain a single entry with [SubscriptionManager.INVALID_SUBSCRIPTION_ID](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#INVALID_SUBSCRIPTION_ID:kotlin.Int) as the key and a list of emergency numbers as the value. If no emergency number information is available, the value will be null. |
+| `emergencyNumberList` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmergencyNumber](../android/telephony/emergency/EmergencyNumber.md)!\>!\>:Map associating all active subscriptions on the device with the list of emergency numbers originating from that subscription. If there are no active subscriptions, the map will contain a single entry with [SubscriptionManager.INVALID_SUBSCRIPTION_ID](../android/telephony/SubscriptionManager.md) as the key and a list of emergency numbers as the value. If no emergency number information is available, the value will be null. |
 
 ### onImsCallDisconnectCauseChanged
 
@@ -750,14 +750,14 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onImsCallDisconnectCauseChanged(imsReasonInfo: ImsReasonInfo): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.ImsCallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.ImsCallDisconnectCauseListener](../android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.md) instead.*
 
-Callback invoked when Ims call disconnect cause changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String)
+Callback invoked when Ims call disconnect cause changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md)
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `imsReasonInfo` | [ImsReasonInfo](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo): [ImsReasonInfo](https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo) contains details on why IMS call failed. This value cannot be`null`. |
+| `imsReasonInfo` | [ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md): [ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md) contains details on why IMS call failed. This value cannot be`null`. |
 
 ### onMessageWaitingIndicatorChanged
 
@@ -767,10 +767,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onMessageWaitingIndicatorChanged(mwi: Boolean): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.MessageWaitingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.MessageWaitingIndicatorListener](../android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.md) instead.*
 
-Callback invoked when the message-waiting indicator changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
-Requires [android.Manifest.permission#READ_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String) 
+Callback invoked when the message-waiting indicator changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
+Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.permission.md) 
 
 ### onPreciseDataConnectionStateChanged
 
@@ -781,16 +781,16 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onPreciseDataConnectionStateChanged(dataConnectionState: PreciseDataConnectionState): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.PreciseDataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.PreciseDataConnectionStateListener](../android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.md) instead.*
 
-Callback providing update about the default/internet data connection on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()).
+Callback providing update about the default/internet data connection on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)).
 
-Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges())). 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String)
+Requires permission [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) or the calling app has carrier privileges (see [TelephonyManager.hasCarrierPrivileges](../android/telephony/TelephonyManager.md))). 
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md)
 
 | Parameters ||
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dataConnectionState` | [PreciseDataConnectionState](https://developer.android.com/reference/kotlin/android/telephony/PreciseDataConnectionState): [PreciseDataConnectionState](https://developer.android.com/reference/kotlin/android/telephony/PreciseDataConnectionState) This value cannot be`null`. |
+| `dataConnectionState` | [PreciseDataConnectionState](../android/telephony/PreciseDataConnectionState.md): [PreciseDataConnectionState](../android/telephony/PreciseDataConnectionState.md) This value cannot be`null`. |
 
 ### onRegistrationFailed
 
@@ -807,18 +807,18 @@ open fun onRegistrationFailed(
 ): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.RegistrationFailedListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.RegistrationFailedListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.RegistrationFailedListener](../android/telephony/TelephonyCallback.RegistrationFailedListener.md) instead.*
 
 Report that Registration or a Location/Routing/Tracking Area update has failed.
 
 Indicate whenever a registration procedure, including a location, routing, or tracking area update fails. This includes procedures that do not necessarily result in a change of the modem's registration status. If the modem's registration status changes, that is reflected in the onNetworkStateChanged() and subsequent get{Voice/Data}RegistrationState().
 
 Because registration failures are ephemeral, this callback is not sticky. Registrants will not receive the most recent past value when registering. 
-Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String) and [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String)
+Requires [android.Manifest.permission#READ_PRECISE_PHONE_STATE](../android/Manifest.permission.md) and [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md)
 
 | Parameters ||
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cellIdentity` | [CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity):the CellIdentity, which must include the globally unique identifier for the cell (for example, all components of the CGI or ECGI). This value cannot be`null`. |
+| `cellIdentity` | [CellIdentity](../android/telephony/CellIdentity.md):the CellIdentity, which must include the globally unique identifier for the cell (for example, all components of the CGI or ECGI). This value cannot be`null`. |
 | `chosenPlmn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):a 5 or 6 digit alphanumeric PLMN (MCC|MNC) among those broadcast by the cell that was chosen for the failed registration attempt. This value cannot be`null`. |
 | `domain` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):DOMAIN_CS, DOMAIN_PS or both in case of a combined procedure. |
 | --- | --- |
@@ -833,15 +833,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onServiceStateChanged(serviceState: ServiceState!): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.ServiceStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.ServiceStateListener](../android/telephony/TelephonyCallback.ServiceStateListener.md) instead.*
 
-Callback invoked when device service state changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). The instance of [ServiceState](https://developer.android.com/reference/kotlin/android/telephony/ServiceState) passed as an argument here will have various levels of location information stripped from it depending on the location permissions that your app holds. Only apps holding the [Manifest.permission.ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) permission will receive all the information in [ServiceState](https://developer.android.com/reference/kotlin/android/telephony/ServiceState), otherwise the cellIdentity will be null if apps only holding the [Manifest.permission.ACCESS_COARSE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String) permission. Network operator name in long/short alphanumeric format and numeric id will be null if apps holding neither [android.Manifest.permission#ACCESS_FINE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String) nor [android.Manifest.permission#ACCESS_COARSE_LOCATION](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String). 
+Callback invoked when device service state changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). The instance of [ServiceState](../android/telephony/ServiceState.md) passed as an argument here will have various levels of location information stripped from it depending on the location permissions that your app holds. Only apps holding the [Manifest.permission.ACCESS_FINE_LOCATION](../android/Manifest.permission.md) permission will receive all the information in [ServiceState](../android/telephony/ServiceState.md), otherwise the cellIdentity will be null if apps only holding the [Manifest.permission.ACCESS_COARSE_LOCATION](../android/Manifest.permission.md) permission. Network operator name in long/short alphanumeric format and numeric id will be null if apps holding neither [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md) nor [android.Manifest.permission#ACCESS_COARSE_LOCATION](../android/Manifest.permission.md). 
 **See Also**
 
-- [android.telephony.ServiceState#STATE_EMERGENCY_ONLY](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_EMERGENCY_ONLY:kotlin.Int)
-- [android.telephony.ServiceState#STATE_IN_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_IN_SERVICE:kotlin.Int)
-- [android.telephony.ServiceState#STATE_OUT_OF_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_OUT_OF_SERVICE:kotlin.Int)
-- [android.telephony.ServiceState#STATE_POWER_OFF](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_POWER_OFF:kotlin.Int) 
+- [android.telephony.ServiceState#STATE_EMERGENCY_ONLY](../android/telephony/ServiceState.md)
+- [android.telephony.ServiceState#STATE_IN_SERVICE](../android/telephony/ServiceState.md)
+- [android.telephony.ServiceState#STATE_OUT_OF_SERVICE](../android/telephony/ServiceState.md)
+- [android.telephony.ServiceState#STATE_POWER_OFF](../android/telephony/ServiceState.md) 
 
 ### onSignalStrengthChanged
 
@@ -852,15 +852,15 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun onSignalStrengthChanged(asu: Int): Unit
 ```
 
-**Deprecated:** *Use [onSignalStrengthsChanged(android.telephony.SignalStrength)](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onSignalStrengthsChanged(android.telephony.SignalStrength))*
+**Deprecated:** *Use [onSignalStrengthsChanged(android.telephony.SignalStrength)](../android/telephony/PhoneStateListener.md))*
 
-Callback invoked when network signal strength changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
+Callback invoked when network signal strength changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
 **See Also**
 
-- [android.telephony.ServiceState#STATE_EMERGENCY_ONLY](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_EMERGENCY_ONLY:kotlin.Int)
-- [android.telephony.ServiceState#STATE_IN_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_IN_SERVICE:kotlin.Int)
-- [android.telephony.ServiceState#STATE_OUT_OF_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_OUT_OF_SERVICE:kotlin.Int)
-- [android.telephony.ServiceState#STATE_POWER_OFF](https://developer.android.com/reference/kotlin/android/telephony/ServiceState#STATE_POWER_OFF:kotlin.Int) 
+- [android.telephony.ServiceState#STATE_EMERGENCY_ONLY](../android/telephony/ServiceState.md)
+- [android.telephony.ServiceState#STATE_IN_SERVICE](../android/telephony/ServiceState.md)
+- [android.telephony.ServiceState#STATE_OUT_OF_SERVICE](../android/telephony/ServiceState.md)
+- [android.telephony.ServiceState#STATE_POWER_OFF](../android/telephony/ServiceState.md) 
 
 ### onSignalStrengthsChanged
 
@@ -871,9 +871,9 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onSignalStrengthsChanged(signalStrength: SignalStrength!): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.SignalStrengthsListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.SignalStrengthsListener](../android/telephony/TelephonyCallback.SignalStrengthsListener.md) instead.*
 
-Callback invoked when network signal strengths changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()). 
+Callback invoked when network signal strengths changes on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)). 
 
 ### onUserMobileDataStateChanged
 
@@ -884,9 +884,9 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun onUserMobileDataStateChanged(enabled: Boolean): Unit
 ```
 
-**Deprecated:** *Use [TelephonyCallback.UserMobileDataStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.UserMobileDataStateListener) instead.*
+**Deprecated:** *Use [TelephonyCallback.UserMobileDataStateListener](../android/telephony/TelephonyCallback.UserMobileDataStateListener.md) instead.*
 
-Callback invoked when the user mobile data state has changed on the registered subscription. Note, the registration subId comes from [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()).
+Callback invoked when the user mobile data state has changed on the registered subscription. Note, the registration subId comes from [TelephonyManager](../android/telephony/TelephonyManager.md) object which registers PhoneStateListener by [TelephonyManager.listen(PhoneStateListener, int)](../android/telephony/TelephonyManager.md)). If this TelephonyManager object was created with [TelephonyManager.createForSubscriptionId(int)](../android/telephony/TelephonyManager.md)), then the callback applies to the subId. Otherwise, this callback applies to [SubscriptionManager.getDefaultSubscriptionId()](../android/telephony/SubscriptionManager.md)).
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -10,7 +10,7 @@ class PKCS12Attribute : KeyStore.Entry.Attribute
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.PKCS12Attribute](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#) |
+| ↳ | [java.security.PKCS12Attribute](../java/security/PKCS12Attribute.md) |
 
 An attribute associated with a PKCS12 keystore entry. The attribute name is an ASN.1 Object Identifier and the attribute value is a set of ASN.1 types.
 
@@ -18,18 +18,18 @@ An attribute associated with a PKCS12 keystore entry. The attribute name is an A
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PKCS12Attribute](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#PKCS12Attribute(kotlin.ByteArray))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs a PKCS12 attribute from its ASN. |
-| [PKCS12Attribute](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#PKCS12Attribute(kotlin.String,%20kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a PKCS12 attribute from its name and value. |
+| [PKCS12Attribute](../java/security/PKCS12Attribute.md))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs a PKCS12 attribute from its ASN. |
+| [PKCS12Attribute](../java/security/PKCS12Attribute.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a PKCS12 attribute from its name and value. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`PKCS12Attribute`and a specified object for equality. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#getEncoded())`()` Returns the attribute's ASN. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#getName())`()` Returns the attribute's ASN. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/PKCS12Attribute.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`PKCS12Attribute`and a specified object for equality. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/PKCS12Attribute.md))`()` Returns the attribute's ASN. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/security/PKCS12Attribute.md))`()` Returns the attribute's ASN. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#getValue())`()` Returns the attribute's ASN. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#hashCode())`()` Returns the hashcode for this`PKCS12Attribute`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/PKCS12Attribute#toString())`()` Returns a string representation of this`PKCS12Attribute`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../java/security/PKCS12Attribute.md))`()` Returns the attribute's ASN. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/PKCS12Attribute.md))`()` Returns the hashcode for this`PKCS12Attribute`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/PKCS12Attribute.md))`()` Returns a string representation of this`PKCS12Attribute`. |
 | --- | --- |
 
 ## Public constructors

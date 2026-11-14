@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @Target([AnnotationTarget.ANNOTATION_CLASS]) class Retention
 ```
 
-| [java.lang.annotation.Retention](https://developer.android.com/reference/kotlin/java/lang/annotation/Retention#) |
+| [java.lang.annotation.Retention](../java/lang/annotation/Retention.md) |
 
 Indicates how long annotations with the annotated interface are to be retained. If no Retention annotation is present on an annotation interface declaration, the retention policy defaults to`RetentionPolicy.CLASS`.
 
@@ -18,11 +18,11 @@ A Retention meta-annotation has effect only if the meta-annotated interface is u
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Retention](https://developer.android.com/reference/kotlin/java/lang/annotation/Retention#Retention(java.lang.annotation.RetentionPolicy))`(`value:` ` [RetentionPolicy](https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy)`)` Indicates how long annotations with the annotated interface are to be retained. |
+| [Retention](../java/lang/annotation/Retention.md))`(`value:` ` [RetentionPolicy](../java/lang/annotation/RetentionPolicy.md)`)` Indicates how long annotations with the annotated interface are to be retained. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RetentionPolicy](https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy) | [value](https://developer.android.com/reference/kotlin/java/lang/annotation/Retention#value:java.lang.annotation.RetentionPolicy) Returns the retention policy. |
+| [RetentionPolicy](../java/lang/annotation/RetentionPolicy.md) | [value](../java/lang/annotation/Retention.md) Returns the retention policy. |
 
 ## Public constructors
 
@@ -52,4 +52,4 @@ Returns the retention policy.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------|
-| [RetentionPolicy](https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy) | the retention policy |
+| [RetentionPolicy](../java/lang/annotation/RetentionPolicy.md) | the retention policy |

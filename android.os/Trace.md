@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # Trace
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/Trace "View this page in Java") 
+Kotlin| [Java](../android/os/Trace.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Trace
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.Trace](https://developer.android.com/reference/kotlin/android/os/Trace#) |
+| ↳ | [android.os.Trace](../android/os/Trace.md) |
 
 Writes trace events to the system trace buffer. These trace events can be collected and visualized using the Systrace tool.
 
@@ -25,13 +25,13 @@ For information about using the Systrace tool, read [Analyzing Display and Perfo
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginAsyncSection](https://developer.android.com/reference/kotlin/android/os/Trace#beginAsyncSection(kotlin.String,%20kotlin.Int))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cookie:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a trace message to indicate that a given section of code has begun. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginSection](https://developer.android.com/reference/kotlin/android/os/Trace#beginSection(kotlin.String))`(`sectionName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Writes a trace message to indicate that a given section of code has begun. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endAsyncSection](https://developer.android.com/reference/kotlin/android/os/Trace#endAsyncSection(kotlin.String,%20kotlin.Int))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cookie:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a trace message to indicate that the current method has ended. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginAsyncSection](../android/os/Trace.md))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cookie:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a trace message to indicate that a given section of code has begun. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginSection](../android/os/Trace.md))`(`sectionName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Writes a trace message to indicate that a given section of code has begun. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endAsyncSection](../android/os/Trace.md))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cookie:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a trace message to indicate that the current method has ended. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endSection](https://developer.android.com/reference/kotlin/android/os/Trace#endSection())`()` Writes a trace message to indicate that a given section of code has ended. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/os/Trace#isEnabled())`()` Checks whether or not tracing is currently enabled. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCounter](https://developer.android.com/reference/kotlin/android/os/Trace#setCounter(kotlin.String,%20kotlin.Long))`(`counterName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `counterValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes trace message to indicate the value of a given counter. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endSection](../android/os/Trace.md))`()` Writes a trace message to indicate that a given section of code has ended. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/os/Trace.md))`()` Checks whether or not tracing is currently enabled. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCounter](../android/os/Trace.md))`(`counterName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `counterValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes trace message to indicate the value of a given counter. |
 | --- | --- |
 
 ## Public methods
@@ -47,7 +47,7 @@ static fun beginAsyncSection(
 ): Unit
 ```
 
-Writes a trace message to indicate that a given section of code has begun. Must be followed by a call to [endAsyncSection(java.lang.String,int)](https://developer.android.com/reference/kotlin/android/os/Trace#endAsyncSection(kotlin.String,%20kotlin.Int))with the same methodName and cookie. Unlike [beginSection(java.lang.String)](https://developer.android.com/reference/kotlin/android/os/Trace#beginSection(kotlin.String))and [endSection()](https://developer.android.com/reference/kotlin/android/os/Trace#endSection()), asynchronous events do not need to be nested. The name and cookie used to begin an event must be used to end it.
+Writes a trace message to indicate that a given section of code has begun. Must be followed by a call to [endAsyncSection(java.lang.String,int)](../android/os/Trace.md))with the same methodName and cookie. Unlike [beginSection(java.lang.String)](../android/os/Trace.md))and [endSection()](../android/os/Trace.md)), asynchronous events do not need to be nested. The name and cookie used to begin an event must be used to end it.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,7 +62,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 static fun beginSection(sectionName: String): Unit
 ```
 
-Writes a trace message to indicate that a given section of code has begun. This call must be followed by a corresponding call to [endSection()](https://developer.android.com/reference/kotlin/android/os/Trace#endSection())on the same thread.
+Writes a trace message to indicate that a given section of code has begun. This call must be followed by a corresponding call to [endSection()](../android/os/Trace.md))on the same thread.
 
 At this time the vertical bar character '|', newline character '\\n', and null character '\\0' are used internally by the tracing mechanism. If sectionName contains these characters they will be replaced with a space character in the trace.
 | --- | --- |
@@ -86,7 +86,7 @@ static fun endAsyncSection(
 ): Unit
 ```
 
-Writes a trace message to indicate that the current method has ended. Must be called exactly once for each call to [beginAsyncSection(java.lang.String,int)](https://developer.android.com/reference/kotlin/android/os/Trace#beginAsyncSection(kotlin.String,%20kotlin.Int))using the same name and cookie.
+Writes a trace message to indicate that the current method has ended. Must be called exactly once for each call to [beginAsyncSection(java.lang.String,int)](../android/os/Trace.md))using the same name and cookie.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -101,7 +101,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 static fun endSection(): Unit
 ```
 
-Writes a trace message to indicate that a given section of code has ended. This call must be preceeded by a corresponding call to [beginSection(java.lang.String)](https://developer.android.com/reference/kotlin/android/os/Trace#beginSection(kotlin.String)). Calling this method will mark the end of the most recently begun section of code, so care must be taken to ensure that beginSection / endSection pairs are properly nested and called from the same thread. 
+Writes a trace message to indicate that a given section of code has ended. This call must be preceeded by a corresponding call to [beginSection(java.lang.String)](../android/os/Trace.md)). Calling this method will mark the end of the most recently begun section of code, so care must be taken to ensure that beginSection / endSection pairs are properly nested and called from the same thread. 
 
 ### isEnabled
 

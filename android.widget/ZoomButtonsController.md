@@ -9,7 +9,7 @@ open class ZoomButtonsController : View.OnTouchListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.ZoomButtonsController](https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#) |
+| ↳ | [android.widget.ZoomButtonsController](../android/widget/ZoomButtonsController.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 26.**
@@ -34,8 +34,8 @@ If you are using this with a custom View, please call `https://developer.android
 
 | Public methods ||
 |---|---|
-| open [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getContainer()()` Gets the container that is the parent of the zoom controls. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getZoomControls()()` Gets the view for the zoom controls. |
+| open [ViewGroup](../android/view/ViewGroup.md)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getContainer()()` Gets the container that is the parent of the zoom controls. |
+| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getZoomControls()()` Gets the view for the zoom controls. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#isAutoDismissed()()` Whether the zoom controls will be automatically dismissed after showing. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#isVisible()()` Whether the zoom controls are visible to the user. |
@@ -65,7 +65,7 @@ Constructor for the `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `ownerView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view that is being zoomed by the zoom controls. The zoom controls will be displayed aligned with this view. |
+| `ownerView` | [View](../android/view/View.md)!: The view that is being zoomed by the zoom controls. The zoom controls will be displayed aligned with this view. |
 
 ## Public methods
 
@@ -152,8 +152,8 @@ The ZoomButtonsController implements the OnTouchListener, but this does not need
 
 | Parameters ||
 |---|---|
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view the touch event has been dispatched to. |
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The MotionEvent object containing full information about the event. |
+| `v` | [View](../android/view/View.md)!: The view the touch event has been dispatched to. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The MotionEvent object containing full information about the event. |
 
 | Return ||
 |---|---|
@@ -201,7 +201,7 @@ Sets the `https://developer.android.com/reference/kotlin/android/widget/ZoomButt
 
 | Parameters ||
 |---|---|
-| `listener` | [ZoomButtonsController.OnZoomListener](https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener)!: The listener that will be told to zoom. |
+| `listener` | [ZoomButtonsController.OnZoomListener](../android/widget/ZoomButtonsController.OnZoomListener.md)!: The listener that will be told to zoom. |
 
 ### setVisible
 

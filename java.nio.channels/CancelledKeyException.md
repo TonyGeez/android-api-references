@@ -11,11 +11,11 @@ open class CancelledKeyException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.channels.CancelledKeyException](https://developer.android.com/reference/kotlin/java/nio/channels/CancelledKeyException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.CancelledKeyException](../java/nio/channels/CancelledKeyException.md) |
 
 Unchecked exception thrown when an attempt is made to use a selection key that is no longer valid.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to use a selection key that i
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CancelledKeyException](https://developer.android.com/reference/kotlin/java/nio/channels/CancelledKeyException#CancelledKeyException())`()` Constructs an instance of this class. |
+| [CancelledKeyException](../java/nio/channels/CancelledKeyException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

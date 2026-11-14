@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ColorSpaceProfiles
 
-Kotlin | [Java](https://developer.android.com/reference/android/hardware/camera2/params/ColorSpaceProfiles "View this page in Java")
+Kotlin | [Java](../android/hardware/camera2/params/ColorSpaceProfiles.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ColorSpaceProfiles
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.ColorSpaceProfiles](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#) |
+| ↳ | [android.hardware.camera2.params.ColorSpaceProfiles](../android/hardware/camera2/params/ColorSpaceProfiles.md) |
 
 Immutable class with information about supported color space profiles.
 
@@ -31,8 +31,8 @@ All camera devices supporting the `https://developer.android.com/reference/kotli
 
 | Public methods ||
 |---|---|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpaces(kotlin.Int)(imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of color spaces that are compatible with an ImageFormat. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpacesForDynamicRange(kotlin.Int,%20kotlin.Long)(imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dynamicRangeProfile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Return a list of color spaces that are compatible with an ImageFormat and a dynamic range profile. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](../android/graphics/ColorSpace.Named.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpaces(kotlin.Int)(imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of color spaces that are compatible with an ImageFormat. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](../android/graphics/ColorSpace.Named.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpacesForDynamicRange(kotlin.Int,%20kotlin.Long)(imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dynamicRangeProfile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Return a list of color spaces that are compatible with an ImageFormat and a dynamic range profile. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedDynamicRangeProfiles(android.graphics.ColorSpace.Named,%20kotlin.Int)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#, imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of dynamic range profiles that are compatible with a color space and ImageFormat. |
 | --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedImageFormatsForColorSpace(android.graphics.ColorSpace.Named)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#)` Return a list of image formats that are compatible with a color space. |
@@ -143,7 +143,7 @@ Return a list of dynamic range profiles that are compatible with a color space a
 
 | Parameters ||
 |---|---|
-| `colorSpace` | [ColorSpace.Named](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#): This value cannot be `null`. |
+| `colorSpace` | [ColorSpace.Named](../android/graphics/ColorSpace.Named.md): This value cannot be `null`. |
 | `imageFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBX_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RGB_565:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YV12:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#Y8:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P210:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#NV16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#NV21:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUY2:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH_JPEG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_422_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_444_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW10:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW12:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW14:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH_POINT_CLOUD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC_ULTRAHDR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG_R:kotlin.Int` |
 
 | Return ||
@@ -169,7 +169,7 @@ Return a list of image formats that are compatible with a color space. Color spa
 
 | Parameters ||
 |---|---|
-| `colorSpace` | [ColorSpace.Named](https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#): This value cannot be `null`. |
+| `colorSpace` | [ColorSpace.Named](../android/graphics/ColorSpace.Named.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

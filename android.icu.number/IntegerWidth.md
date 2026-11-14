@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # IntegerWidth
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/number/IntegerWidth "View this page in Java") 
+Kotlin | [Java](../android/icu/number/IntegerWidth.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class IntegerWidth
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.IntegerWidth](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#) |
+| ↳ | [android.icu.number.IntegerWidth](../android/icu/number/IntegerWidth.md) |
 
 A class that defines the strategy for padding and truncating integers before the decimal separator.
 
@@ -23,8 +23,8 @@ To create an IntegerWidth, use one of the factory methods.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IntegerWidth](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#)! | [truncateAt](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#truncateAt(kotlin.Int))`(`maxInt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Truncate numbers exceeding a certain number of numerals before the decimal separator. |
-| open static [IntegerWidth](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#)! | [zeroFillTo](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#zeroFillTo(kotlin.Int))`(`minInt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Pad numbers at the beginning with zeros to guarantee a certain number of numerals before the decimal separator. |
+| open [IntegerWidth](../android/icu/number/IntegerWidth.md)! | [truncateAt](../android/icu/number/IntegerWidth.md))`(`maxInt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Truncate numbers exceeding a certain number of numerals before the decimal separator. |
+| open static [IntegerWidth](../android/icu/number/IntegerWidth.md)! | [zeroFillTo](../android/icu/number/IntegerWidth.md))`(`minInt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Pad numbers at the beginning with zeros to guarantee a certain number of numerals before the decimal separator. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ Truncate numbers exceeding a certain number of numerals before the decimal separ
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [IntegerWidth](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#)! | An IntegerWidth for passing to the NumberFormatter integerWidth() setter. |
+| [IntegerWidth](../android/icu/number/IntegerWidth.md)! | An IntegerWidth for passing to the NumberFormatter integerWidth() setter. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------|
@@ -52,7 +52,7 @@ Truncate numbers exceeding a certain number of numerals before the decimal separ
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter) 
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
 
 ### zeroFillTo
 
@@ -72,7 +72,7 @@ For example, with minInt=3, the number 55 will get printed as "055".
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [IntegerWidth](https://developer.android.com/reference/kotlin/android/icu/number/IntegerWidth#)! | An IntegerWidth for chaining or passing to the NumberFormatter integerWidth() setter. |
+| [IntegerWidth](../android/icu/number/IntegerWidth.md)! | An IntegerWidth for chaining or passing to the NumberFormatter integerWidth() setter. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -80,4 +80,4 @@ For example, with minInt=3, the number 55 will get printed as "055".
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter)
+- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md)

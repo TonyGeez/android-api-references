@@ -11,10 +11,10 @@ open class MalformedParameterizedTypeException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.reflect.MalformedParameterizedTypeException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParameterizedTypeException#) |
+| | | | ↳ | [java.lang.reflect.MalformedParameterizedTypeException](../java/lang/reflect/MalformedParameterizedTypeException.md) |
 
 Thrown when a semantically malformed parameterized type is encountered by a reflective method that needs to instantiate it. For example, if the number of type arguments to a parameterized type is wrong.
 
@@ -22,8 +22,8 @@ Thrown when a semantically malformed parameterized type is encountered by a refl
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MalformedParameterizedTypeException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParameterizedTypeException#MalformedParameterizedTypeException())`()` Constructs a`MalformedParameterizedTypeException`with no detail message. |
-| [MalformedParameterizedTypeException](https://developer.android.com/reference/kotlin/java/lang/reflect/MalformedParameterizedTypeException#MalformedParameterizedTypeException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`MalformedParameterizedTypeException`with the given detail message. |
+| [MalformedParameterizedTypeException](../java/lang/reflect/MalformedParameterizedTypeException.md))`()` Constructs a`MalformedParameterizedTypeException`with no detail message. |
+| [MalformedParameterizedTypeException](../java/lang/reflect/MalformedParameterizedTypeException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`MalformedParameterizedTypeException`with the given detail message. |
 
 ## Public constructors
 

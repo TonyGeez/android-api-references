@@ -8,12 +8,12 @@ abstract class DateFormat : UFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format.html#) |||
-| | ↳ | [android.icu.text.UFormat](https://developer.android.com/reference/kotlin/android/icu/text/UFormat) ||
-| | | ↳ | [android.icu.text.DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#) |
+| ↳ | [java.text.Format](../java/text/Format.md) |||
+| | ↳ | [android.icu.text.UFormat](../android/icu/text/UFormat.md) ||
+| | | ↳ | [android.icu.text.DateFormat](../android/icu/text/DateFormat.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [SimpleDateFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat) |---|---| | [SimpleDateFormat](https://developer.android.com/reference/kotlin/android/icu/text/SimpleDateFormat) | **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat.html#`. | |
+| Known Direct Subclasses [SimpleDateFormat](../android/icu/text/SimpleDateFormat.md) |---|---| | [SimpleDateFormat](../android/icu/text/SimpleDateFormat.md) | **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/text/SimpleDateFormat.html#`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/text/DateFormat.html#`. Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
@@ -223,79 +223,79 @@ Date formats are not synchronized. It is recommended to create separate format i
 |---|---|
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#clone()()` Overrides clone. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Overrides equals. |
-| abstract [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(android.icu.util.Calendar,%20java.lang.StringBuffer,%20java.text.FieldPosition)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a date into a date/time string. |
+| abstract [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(android.icu.util.Calendar,%20java.lang.StringBuffer,%20java.text.FieldPosition)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a date into a date/time string. |
 | --- | --- |
-| [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a time object into a time string. |
+| [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a time object into a time string. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(java.time.temporal.Temporal)(date: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!)` Formats a `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#` into a date/time string. |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(java.time.temporal.Temporal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(date: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#` into a date/time string. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(java.time.temporal.Temporal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(date: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#` into a date/time string. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!)` Formats a Date into a date/time string. |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(java.util.Date,%20java.lang.StringBuffer,%20java.text.FieldPosition)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a Date into a date/time string. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getAvailableLocales()()` Returns the set of locales for which DateFormats are installed. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#format(java.util.Date,%20java.lang.StringBuffer,%20java.text.FieldPosition)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!, toAppendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Formats a Date into a date/time string. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getAvailableLocales()()` Returns the set of locales for which DateFormats are installed. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getBooleanAttribute(android.icu.text.DateFormat.BooleanAttribute)(key: https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.BooleanAttribute!)` Returns the current value for the specified BooleanAttribute for this instance if attribute is missing false is returned. |
-| open [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getCalendar()()` Returns the calendar associated with this date/time formatter. |
-| open [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getContext(android.icu.text.DisplayContext.Type)(type: https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext.Type!)` **\[icu\]** Get the formatter's DisplayContext value for the specified DisplayContext. |
+| open [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getCalendar()()` Returns the calendar associated with this date/time formatter. |
+| open [DisplayContext](../android/icu/text/DisplayContext.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getContext(android.icu.text.DisplayContext.Type)(type: https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext.Type!)` **\[icu\]** Get the formatter's DisplayContext value for the specified DisplayContext. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance()()` Returns the date formatter with the default formatting style for the default `FORMAT` locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(android.icu.util.Calendar,%20kotlin.Int)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object for the default locale that can be used to format dates in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(android.icu.util.Calendar,%20kotlin.Int,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance()()` Returns the date formatter with the default formatting style for the default `FORMAT` locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(android.icu.util.Calendar,%20kotlin.Int)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object for the default locale that can be used to format dates in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(android.icu.util.Calendar,%20kotlin.Int,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates in the calendar system specified by `cal`. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(android.icu.util.Calendar,%20kotlin.Int,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the date formatter with the given formatting style for the default `FORMAT` locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(kotlin.Int,%20android.icu.util.ULocale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns the date formatter with the given formatting style for the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(android.icu.util.Calendar,%20kotlin.Int,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the date formatter with the given formatting style for the default `FORMAT` locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(kotlin.Int,%20android.icu.util.ULocale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns the date formatter with the given formatting style for the given locale. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(kotlin.Int,%20java.util.Locale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the date formatter with the given formatting style for the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance()()` Returns the date/time formatter with the default formatting style for the default `FORMAT` locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20kotlin.Int)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object for the default locale that can be used to format dates and times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateInstance(kotlin.Int,%20java.util.Locale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the date formatter with the given formatting style for the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance()()` Returns the date/time formatter with the default formatting style for the default `FORMAT` locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20kotlin.Int)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object for the default locale that can be used to format dates and times in the calendar system specified by `cal`. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20kotlin.Int,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20kotlin.Int,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the date/time formatter with the given date and time formatting styles for the default `FORMAT` locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20kotlin.Int,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20kotlin.Int,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the date/time formatter with the given date and time formatting styles for the default `FORMAT` locale. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int,%20android.icu.util.ULocale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns the date/time formatter with the given formatting styles for the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the date/time formatter with the given formatting styles for the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance()()` Returns a default date/time formatter that uses the SHORT style for both the date and the time. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int,%20android.icu.util.ULocale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns the date/time formatter with the given formatting styles for the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getDateTimeInstance(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the date/time formatter with the given formatting styles for the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance()()` Returns a default date/time formatter that uses the SHORT style for both the date and the time. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance(android.icu.util.Calendar)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!)` Returns a default date/time formatter that uses the SHORT style for both the date and the time. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance(android.icu.util.Calendar,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns a date/time formatter that uses the SHORT style for both the date and the time. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance(android.icu.util.Calendar,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a date/time formatter that uses the SHORT style for both the date and the time. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance(android.icu.util.Calendar)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!)` Returns a default date/time formatter that uses the SHORT style for both the date and the time. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance(android.icu.util.Calendar,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns a date/time formatter that uses the SHORT style for both the date and the time. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstance(android.icu.util.Calendar,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a date/time formatter that uses the SHORT style for both the date and the time. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(android.icu.util.Calendar,%20kotlin.String,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(android.icu.util.Calendar,%20kotlin.String,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(kotlin.String)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the default locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(android.icu.util.Calendar,%20kotlin.String,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(android.icu.util.Calendar,%20kotlin.String,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(kotlin.String)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the default locale. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(kotlin.String,%20android.icu.util.ULocale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(kotlin.String,%20java.util.Locale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
-| open [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getNumberFormat()()` Returns the number formatter which this date/time formatter uses to format and parse a time. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(kotlin.String,%20android.icu.util.ULocale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getInstanceForSkeleton(kotlin.String,%20java.util.Locale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
+| open [NumberFormat](../android/icu/text/NumberFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getNumberFormat()()` Returns the number formatter which this date/time formatter uses to format and parse a time. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(android.icu.util.Calendar,%20kotlin.String,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(android.icu.util.Calendar,%20kotlin.String,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(kotlin.String)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the default locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(android.icu.util.Calendar,%20kotlin.String,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(android.icu.util.Calendar,%20kotlin.String,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(kotlin.String)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the default locale. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(kotlin.String,%20android.icu.util.ULocale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(kotlin.String,%20java.util.Locale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance()()` Gets the time formatter with the default formatting style for the default `FORMAT` locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(kotlin.String,%20android.icu.util.ULocale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getPatternInstance(kotlin.String,%20java.util.Locale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format dates and times in the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance()()` Gets the time formatter with the default formatting style for the default `FORMAT` locale. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(android.icu.util.Calendar,%20kotlin.Int)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format times in the calendar system specified by `cal`. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(android.icu.util.Calendar,%20kotlin.Int)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20android.icu.util.ULocale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format times in the calendar system specified by `cal`. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(android.icu.util.Calendar,%20kotlin.Int,%20java.util.Locale)(cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#` object that can be used to format times in the calendar system specified by `cal`. |
 | --- | --- |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the time formatter with the given formatting style for the default `FORMAT` locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(kotlin.Int,%20android.icu.util.ULocale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns the time formatter with the given formatting style for the given locale. |
-| static [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(kotlin.Int,%20java.util.Locale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the time formatter with the given formatting style for the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the time formatter with the given formatting style for the default `FORMAT` locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(kotlin.Int,%20android.icu.util.ULocale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns the time formatter with the given formatting style for the given locale. |
+| static [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeInstance(kotlin.Int,%20java.util.Locale)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the time formatter with the given formatting style for the given locale. |
 | --- | --- |
-| open [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeZone()()` Returns the time zone. |
+| open [TimeZone](../android/icu/util/TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#getTimeZone()()` Returns the time zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#hashCode()()` Overrides hashCode. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#isCalendarLenient()()` Returns whether date/time parsing in the encapsulated Calendar object is lenient. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#isLenient()()` Returns whether both date/time parsing in the encapsulated Calendar object and DateFormat whitespace \& numeric processing is lenient. |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#parse(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses a date/time string. |
+| open [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#parse(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses a date/time string. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#parse(kotlin.String,%20android.icu.util.Calendar,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cal: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses a date/time string according to the given parse position. |
 | --- | --- |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#parse(kotlin.String,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses a date/time string according to the given parse position. |
+| open [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#parse(kotlin.String,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses a date/time string according to the given parse position. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#parseObject(kotlin.String,%20java.text.ParsePosition)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses a date/time string into an Object. |
-| open [DateFormat](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#setBooleanAttribute(android.icu.text.DateFormat.BooleanAttribute,%20kotlin.Boolean)(key: https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.BooleanAttribute!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets a boolean attribute for this instance. |
+| open [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#setBooleanAttribute(android.icu.text.DateFormat.BooleanAttribute,%20kotlin.Boolean)(key: https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.BooleanAttribute!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets a boolean attribute for this instance. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#setCalendar(android.icu.util.Calendar)(newCalendar: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!)` Sets the calendar to be used by this date format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#setCalendarLenient(kotlin.Boolean)(lenient: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies whether date/time parsing in the encapsulated Calendar object should be lenient. |
@@ -308,8 +308,8 @@ Date formats are not synchronized. It is recommended to create separate format i
 
 | Properties ||
 |---|---|
-| [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#calendar:android.icu.util.Calendar` The calendar that `DateFormat` uses to produce the time field values needed to implement date and time formatting. |
-| [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#numberFormat:android.icu.text.NumberFormat` The number formatter that `DateFormat` uses to format numbers in dates and times. |
+| [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#calendar:android.icu.util.Calendar` The calendar that `DateFormat` uses to produce the time field values needed to implement date and time formatting. |
+| [NumberFormat](../android/icu/text/NumberFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#numberFormat:android.icu.text.NumberFormat` The number formatter that `DateFormat` uses to format numbers in dates and times. |
 
 ## Constants
 
@@ -1471,9 +1471,9 @@ Formats a date into a date/time string.
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: a Calendar set to the date and time to be formatted into a date/time string. When the calendar type is different from the internal calendar held by this DateFormat instance, the date and the time zone will be inherited from the input calendar, but other calendar field values will be calculated by the internal calendar. |
-| `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!: the string buffer for the returning date/time string. |
-| `fieldPosition` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given fieldPosition is DateFormat.YEAR_FIELD, the begin index and end index of fieldPosition will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a Date to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field DateFormat.TIMEZONE_FIELD, the begin index and end index of fieldPosition will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: a Calendar set to the date and time to be formatted into a date/time string. When the calendar type is different from the internal calendar held by this DateFormat instance, the date and the time zone will be inherited from the input calendar, but other calendar field values will be calculated by the internal calendar. |
+| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: the string buffer for the returning date/time string. |
+| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given fieldPosition is DateFormat.YEAR_FIELD, the begin index and end index of fieldPosition will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a Date to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field DateFormat.TIMEZONE_FIELD, the begin index and end index of fieldPosition will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
 | --- | --- |
 
 | Return ||
@@ -1497,10 +1497,10 @@ Formats a time object into a time string. Examples of time objects are a time va
 | Parameters ||
 |---|---|
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: must be a Number or a Date or a Calendar. |
-| `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!: the string buffer for the returning time string. |
+| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: the string buffer for the returning time string. |
 | `pos` | A `FieldPosition` identifying a field in the formatted text |
 | --- | --- |
-| `fieldPosition` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given fieldPosition is DateFormat.YEAR_FIELD, the begin index and end index of fieldPosition will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a Date to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field DateFormat.TIMEZONE_FIELD, the begin index and end index of fieldPosition will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
+| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given fieldPosition is DateFormat.YEAR_FIELD, the begin index and end index of fieldPosition will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a Date to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field DateFormat.TIMEZONE_FIELD, the begin index and end index of fieldPosition will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
 
 | Return ||
 |---|---|
@@ -1527,7 +1527,7 @@ Formats a `https://developer.android.com/reference/kotlin/java/time/temporal/Tem
 
 | Parameters ||
 |---|---|
-| `date` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!: the time value to be formatted into a time string. |
+| `date` | [Temporal](../java/time/temporal/Temporal.md)!: the time value to be formatted into a time string. |
 
 | Return ||
 |---|---|
@@ -1549,9 +1549,9 @@ Formats a `https://developer.android.com/reference/kotlin/java/time/temporal/Tem
 
 | Parameters ||
 |---|---|
-| `date` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#)!: a `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#` to be formatted into a date/time string. |
-| `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!: the string buffer for the returning date/time string. |
-| `fieldPosition` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given `fieldPosition` is `DateFormat.YEAR_FIELD`, the begin index and end index of `fieldPosition` will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#` to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field `DateFormat.TIMEZONE_FIELD`, the begin index and end index of `fieldPosition` will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
+| `date` | [Temporal](../java/time/temporal/Temporal.md)!: a `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#` to be formatted into a date/time string. |
+| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: the string buffer for the returning date/time string. |
+| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given `fieldPosition` is `DateFormat.YEAR_FIELD`, the begin index and end index of `fieldPosition` will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#` to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field `DateFormat.TIMEZONE_FIELD`, the begin index and end index of `fieldPosition` will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
 | --- | --- |
 
 | Return ||
@@ -1570,7 +1570,7 @@ Formats a Date into a date/time string.
 
 | Parameters ||
 |---|---|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!: the time value to be formatted into a time string. |
+| `date` | [Date](../java/util/Date.md)!: the time value to be formatted into a time string. |
 
 | Return ||
 |---|---|
@@ -1592,9 +1592,9 @@ Formats a Date into a date/time string.
 
 | Parameters ||
 |---|---|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!: a Date to be formatted into a date/time string. |
-| `toAppendTo` | [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)!: the string buffer for the returning date/time string. |
-| `fieldPosition` | [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given fieldPosition is DateFormat.YEAR_FIELD, the begin index and end index of fieldPosition will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a Date to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field DateFormat.TIMEZONE_FIELD, the begin index and end index of fieldPosition will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
+| `date` | [Date](../java/util/Date.md)!: a Date to be formatted into a date/time string. |
+| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: the string buffer for the returning date/time string. |
+| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md)!: keeps track of the position of the field within the returned string. On input: an alignment field, if desired. On output: the offsets of the alignment field. For example, given a time text "1996.07.10 AD at 15:08:56 PDT", if the given fieldPosition is DateFormat.YEAR_FIELD, the begin index and end index of fieldPosition will be set to 0 and 4, respectively. Notice that if the same time field appears more than once in a pattern, the fieldPosition will be set for the first occurrence of that time field. For instance, formatting a Date to the time string "1 PM PDT (Pacific Daylight Time)" using the pattern "h a z (zzzz)" and the alignment field DateFormat.TIMEZONE_FIELD, the begin index and end index of fieldPosition will be set to 5 and 8, respectively, for the first occurrence of the timezone pattern character 'z'. |
 | --- | --- |
 
 | Return ||
@@ -1654,7 +1654,7 @@ open fun getContext(type: DisplayContext.Type!): DisplayContext!
 
 | Parameters ||
 |---|---|
-| `type` | [DisplayContext.Type](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext.Type)!: the DisplayContext.Type whose value to return |
+| `type` | [DisplayContext.Type](../android/icu/text/DisplayContext.Type.md)!: the DisplayContext.Type whose value to return |
 
 | Return ||
 |---|---|
@@ -1695,7 +1695,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date format is desired. |
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of date format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 
 ### getDateInstance
@@ -1716,9 +1716,9 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date format is desired. |
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of date format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the date format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the date format is desired. |
 | --- | --- |
 
 ### getDateInstance
@@ -1739,9 +1739,9 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date format is desired. |
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of date format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the date format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the date format is desired. |
 | --- | --- |
 
 ### getDateInstance
@@ -1782,7 +1782,7 @@ Returns the date formatter with the given formatting style for the given locale.
 | Parameters ||
 |---|---|
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given formatting style. For example, SHORT for "M/d/yy" in the US locale. As currently implemented, relative date formatting only affects a limited range of calendar days before or after the current date, based on the CLDR \<field type="day"\>/\<relative\> data: For example, in English, "Yesterday", "Today", and "Tomorrow". Outside of this range, relative dates are formatted using the corresponding non-relative style. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the given ulocale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 | Return ||
 |---|---|
@@ -1804,7 +1804,7 @@ Returns the date formatter with the given formatting style for the given locale.
 | Parameters ||
 |---|---|
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given formatting style. For example, SHORT for "M/d/yy" in the US locale. As currently implemented, relative date formatting only affects a limited range of calendar days before or after the current date, based on the CLDR \<field type="day"\>/\<relative\> data: For example, in English, "Yesterday", "Today", and "Tomorrow". Outside of this range, relative dates are formatted using the corresponding non-relative style. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 
 | Return ||
 |---|---|
@@ -1844,7 +1844,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of date format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of time format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 | --- | --- |
@@ -1868,11 +1868,11 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of date format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of time format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 | --- | --- |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the date/time format is desired. |
 
 **See Also**
 
@@ -1893,11 +1893,11 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of date format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of time format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 | --- | --- |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the date/time format is desired. |
 
 **See Also**
 
@@ -1945,7 +1945,7 @@ Returns the date/time formatter with the given formatting styles for the given l
 |---|---|
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given date formatting style. As currently implemented, relative date formatting only affects a limited range of calendar days before or after the current date, based on the CLDR \<field type="day"\>/\<relative\> data: For example, in English, "Yesterday", "Today", and "Tomorrow". Outside of this range, relative dates are formatted using the corresponding non-relative style. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given time formatting style. Relative time styles are not currently supported, and behave just like the corresponding non-relative style. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the given ulocale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 | --- | --- |
 
 | Return ||
@@ -1970,7 +1970,7 @@ Returns the date/time formatter with the given formatting styles for the given l
 |---|---|
 | `dateStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given date formatting style. As currently implemented, relative date formatting only affects a limited range of calendar days before or after the current date, based on the CLDR \<field type="day"\>/\<relative\> data: For example, in English, "Yesterday", "Today", and "Tomorrow". Outside of this range, relative dates are formatted using the corresponding non-relative style. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given time formatting style. Relative time styles are not currently supported, and behave just like the corresponding non-relative style. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 | --- | --- |
 
 | Return ||
@@ -1999,7 +1999,7 @@ Returns a default date/time formatter that uses the SHORT style for both the dat
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 
 ### getInstance
 
@@ -2016,8 +2016,8 @@ Returns a date/time formatter that uses the SHORT style for both the date and th
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the date/time format is desired. |
 
 ### getInstance
 
@@ -2034,8 +2034,8 @@ Returns a date/time formatter that uses the SHORT style for both the date and th
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the date/time format is desired. |
 
 ### getInstanceForSkeleton
 
@@ -2053,9 +2053,9 @@ static fun getInstanceForSkeleton(
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the date/time format is desired. |
 | --- | --- |
 
 ### getInstanceForSkeleton
@@ -2074,9 +2074,9 @@ static fun getInstanceForSkeleton(
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the date/time format is desired. |
 | --- | --- |
 
 ### getInstanceForSkeleton
@@ -2109,7 +2109,7 @@ static fun getInstanceForSkeleton(
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the date/time format is desired. |
 
 ### getInstanceForSkeleton
 
@@ -2127,7 +2127,7 @@ static fun getInstanceForSkeleton(
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the date/time format is desired. |
 
 ### getNumberFormat
 
@@ -2159,9 +2159,9 @@ static fun getPatternInstance(
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the date/time format is desired. |
 | --- | --- |
 
 ### getPatternInstance
@@ -2180,9 +2180,9 @@ static fun getPatternInstance(
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a date/time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a date/time format is desired. |
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the date/time format is desired. |
 | --- | --- |
 
 ### getPatternInstance
@@ -2215,7 +2215,7 @@ static fun getPatternInstance(
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the date/time format is desired. |
 
 ### getPatternInstance
 
@@ -2233,7 +2233,7 @@ static fun getPatternInstance(
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The skeleton that selects the fields to be formatted. (Uses the `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator`.) This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#ABBR_MONTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MONTH_WEEKDAY_DAY:kotlin.String`, etc. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the date/time format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the date/time format is desired. |
 
 ### getTimeInstance
 
@@ -2268,7 +2268,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a time format is desired. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of time format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
 
 **See Also**
@@ -2289,9 +2289,9 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a time format is desired. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of time format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale for which the time format is desired. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the time format is desired. |
 | --- | --- |
 
 **See Also**
@@ -2312,9 +2312,9 @@ Creates a `https://developer.android.com/reference/kotlin/android/icu/text/DateF
 
 | Parameters ||
 |---|---|
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar system for which a time format is desired. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar system for which a time format is desired. |
 | `timeStyle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of time format desired. This can be `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#SHORT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat#MEDIUM:kotlin.Int`, etc. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The locale for which the time format is desired. |
+| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the time format is desired. |
 | --- | --- |
 
 **See Also**
@@ -2357,7 +2357,7 @@ Returns the time formatter with the given formatting style for the given locale.
 | Parameters ||
 |---|---|
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given formatting style. For example, SHORT for "h:mm a" in the US locale. Relative time styles are not currently supported, and behave just like the corresponding non-relative style. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: the given ulocale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 | Return ||
 |---|---|
@@ -2379,7 +2379,7 @@ Returns the time formatter with the given formatting style for the given locale.
 | Parameters ||
 |---|---|
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the given formatting style. For example, SHORT for "h:mm a" in the US locale. Relative time styles are not currently supported, and behave just like the corresponding non-relative style. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 
 | Return ||
 |---|---|
@@ -2482,8 +2482,8 @@ By default, parsing is lenient: If the input is not in the form used by this obj
 | Parameters ||
 |---|---|
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The date/time string to be parsed |
-| `cal` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: The calendar set on input to the date and time to be used for missing values in the date/time string being parsed, and set on output to the parsed date/time. In general, this should be initialized before calling this method - either cleared or set to the current date, depending on desired behavior. If this parse fails, the calendar may still have been modified. When the calendar type is different from the internal calendar held by this DateFormat instance, calendar field values will be parsed based on the internal calendar initialized with the time and the time zone taken from this calendar, then the parse result (time in milliseconds and time zone) will be set back to this calendar. |
-| `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: On input, the position at which to start parsing; on output, the position at which parsing terminated, or the start position if the parse failed. |
+| `cal` | [Calendar](../android/icu/util/Calendar.md)!: The calendar set on input to the date and time to be used for missing values in the date/time string being parsed, and set on output to the parsed date/time. In general, this should be initialized before calling this method - either cleared or set to the current date, depending on desired behavior. If this parse fails, the calendar may still have been modified. When the calendar type is different from the internal calendar held by this DateFormat instance, calendar field values will be parsed based on the internal calendar initialized with the time and the time zone taken from this calendar, then the parse result (time in milliseconds and time zone) will be set back to this calendar. |
+| `pos` | [ParsePosition](../java/text/ParsePosition.md)!: On input, the position at which to start parsing; on output, the position at which parsing terminated, or the start position if the parse failed. |
 | --- | --- |
 
 **See Also**
@@ -2510,7 +2510,7 @@ Note that the normal date formats associated with some calendars - such as the C
 | Parameters ||
 |---|---|
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The date/time string to be parsed |
-| `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: On input, the position at which to start parsing; on output, the position at which parsing terminated, or the start position if the parse failed. |
+| `pos` | [ParsePosition](../java/text/ParsePosition.md)!: On input, the position at which to start parsing; on output, the position at which parsing terminated, or the start position if the parse failed. |
 
 | Return ||
 |---|---|
@@ -2536,7 +2536,7 @@ Parses a date/time string into an Object. This convenience method simply calls p
 | Parameters ||
 |---|---|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A `String`, part of which should be parsed. |
-| `pos` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: A `ParsePosition` object with index and error index information as described above. |
+| `pos` | [ParsePosition](../java/text/ParsePosition.md)!: A `ParsePosition` object with index and error index information as described above. |
 
 | Return ||
 |---|---|
@@ -2578,7 +2578,7 @@ Sets the calendar to be used by this date format. Initially, the default calenda
 
 | Parameters ||
 |---|---|
-| `newCalendar` | [Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#)!: the new Calendar to be used by the date format |
+| `newCalendar` | [Calendar](../android/icu/util/Calendar.md)!: the new Calendar to be used by the date format |
 
 ### setCalendarLenient
 
@@ -2610,7 +2610,7 @@ open fun setContext(context: DisplayContext!): Unit
 
 | Parameters ||
 |---|---|
-| `context` | [DisplayContext](https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext)!: The DisplayContext value to set. |
+| `context` | [DisplayContext](../android/icu/text/DisplayContext.md)!: The DisplayContext value to set. |
 
 ### setLenient
 
@@ -2646,7 +2646,7 @@ Sets the number formatter.
 
 | Parameters ||
 |---|---|
-| `newNumberFormat` | [NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat)!: the given new NumberFormat. |
+| `newNumberFormat` | [NumberFormat](../android/icu/text/NumberFormat.md)!: the given new NumberFormat. |
 
 ### setTimeZone
 
@@ -2660,7 +2660,7 @@ Sets the time zone for the calendar of this DateFormat object.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#)!: the given new time zone. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given new time zone. |
 
 ## Properties
 

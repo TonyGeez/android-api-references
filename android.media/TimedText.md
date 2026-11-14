@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # TimedText
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/TimedText "View this page in Java") 
+Kotlin| [Java](../android/media/TimedText.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class TimedText
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.TimedText](https://developer.android.com/reference/kotlin/android/media/TimedText#) |
+| ↳ | [android.media.TimedText](../android/media/TimedText.md) |
 
 Class to hold the timed text's metadata, including:
 
@@ -24,18 +24,18 @@ Class to hold the timed text's metadata, including:
 
 To render the timed text, applications need to do the following:
 
-- Implement the [MediaPlayer.OnTimedTextListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnTimedTextListener) interface
-- Register the [MediaPlayer.OnTimedTextListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnTimedTextListener) callback on a MediaPlayer object that is used for playback
+- Implement the [MediaPlayer.OnTimedTextListener](../android/media/MediaPlayer.OnTimedTextListener.md) interface
+- Register the [MediaPlayer.OnTimedTextListener](../android/media/MediaPlayer.OnTimedTextListener.md) callback on a MediaPlayer object that is used for playback
 - When a onTimedText callback is received, do the following:
- - call [getText](https://developer.android.com/reference/kotlin/android/media/TimedText#getText())to get the characters for rendering
- - call [getBounds](https://developer.android.com/reference/kotlin/android/media/TimedText#getBounds())to get the text rendering area/region
+ - call [getText](../android/media/TimedText.md))to get the characters for rendering
+ - call [getBounds](../android/media/TimedText.md))to get the text rendering area/region
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | [getBounds](https://developer.android.com/reference/kotlin/android/media/TimedText#getBounds())`()` Get the rectangle area or region for rendering the timed text as specified by a Rect object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/media/TimedText#getText())`()` Get the characters in the timed text. |
+| [Rect](../android/graphics/Rect.md)! | [getBounds](../android/media/TimedText.md))`()` Get the rectangle area or region for rendering the timed text as specified by a Rect object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](../android/media/TimedText.md))`()` Get the characters in the timed text. |
 
 ## Public methods
 
@@ -51,7 +51,7 @@ Get the rectangle area or region for rendering the timed text as specified by a 
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | the rectangle region to render the characters in the timed text. If no bounds information is available (a null is returned), render the timed text at the center bottom of the display. |
+| [Rect](../android/graphics/Rect.md)! | the rectangle region to render the characters in the timed text. If no bounds information is available (a null is returned), render the timed text at the center bottom of the display. |
 
 ### getText
 

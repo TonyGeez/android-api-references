@@ -2,5 +2,5 @@
 
 ## Classes
 
-| [DeviceRadioState](https://developer.android.com/reference/kotlin/android/app/admin/policy/DeviceRadioState) | Controls for device radio settings. |
+| [DeviceRadioState](../android/app/admin/policy/DeviceRadioState.md) | Controls for device radio settings. |
 | --- | --- |

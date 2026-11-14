@@ -9,9 +9,9 @@ class MenstruationFlowRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.MenstruationFlowRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MenstruationFlowRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.MenstruationFlowRecord](../android/health/connect/datatypes/MenstruationFlowRecord.md) |
 | --- | --- | --- | --- |
 
 Captures a description of how heavy a user's menstrual flow was (spotting, light, medium, or heavy). Each record represents a description of how heavy the user's menstrual bleeding was.

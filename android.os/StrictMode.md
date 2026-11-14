@@ -2,7 +2,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # StrictMode
 
-Kotlin | [Java](https://developer.android.com/reference/android/os/StrictMode "View this page in Java")
+Kotlin | [Java](../android/os/StrictMode.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class StrictMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.StrictMode](https://developer.android.com/reference/kotlin/android/os/StrictMode#) |
+| ↳ | [android.os.StrictMode](../android/os/StrictMode.md) |
 
 StrictMode is a developer tool which detects things you might be doing by accident and brings them to your attention so you can fix them.
 
@@ -56,12 +56,12 @@ StrictMode is not a security mechanism and is not guaranteed to find all disk or
 
 | Public methods ||
 |---|---|
-| static [StrictMode.ThreadPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#allowThreadDiskReads()()` A convenience wrapper that takes the current `https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy` from `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()`, modifies it to permit disk reads, and sets the new policy with `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)`, returning the old policy so you can restore it at the end of a block. |
-| static [StrictMode.ThreadPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#allowThreadDiskWrites()()` A convenience wrapper that takes the current `https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy` from `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()`, modifies it to permit both disk reads \& writes, and sets the new policy with `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)`, returning the old policy so you can restore it at the end of a block. |
+| static [StrictMode.ThreadPolicy](../android/os/StrictMode.ThreadPolicy.md)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#allowThreadDiskReads()()` A convenience wrapper that takes the current `https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy` from `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()`, modifies it to permit disk reads, and sets the new policy with `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)`, returning the old policy so you can restore it at the end of a block. |
+| static [StrictMode.ThreadPolicy](../android/os/StrictMode.ThreadPolicy.md)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#allowThreadDiskWrites()()` A convenience wrapper that takes the current `https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy` from `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()`, modifies it to permit both disk reads \& writes, and sets the new policy with `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)`, returning the old policy so you can restore it at the end of a block. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/StrictMode#enableDefaults()()` Enables the recommended StrictMode defaults, with violations just being logged. |
 | --- | --- |
-| static [StrictMode.ThreadPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()()` Returns the current thread's policy. |
-| static [StrictMode.VmPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#getVmPolicy()()` Gets the current VM policy. |
+| static [StrictMode.ThreadPolicy](../android/os/StrictMode.ThreadPolicy.md)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#getThreadPolicy()()` Returns the current thread's policy. |
+| static [StrictMode.VmPolicy](../android/os/StrictMode.VmPolicy.md)! | `https://developer.android.com/reference/kotlin/android/os/StrictMode#getVmPolicy()()` Gets the current VM policy. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/StrictMode#noteSlowCall(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` For code to note that it's slow. |
 | --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/StrictMode#setThreadPolicy(android.os.StrictMode.ThreadPolicy)(policy: https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy!)` Sets the policy for what actions on the current thread should be detected, as well as the penalty if such actions occur. |
@@ -157,7 +157,7 @@ Internally this sets a thread-local variable which is propagated across cross-pr
 
 | Parameters ||
 |---|---|
-| `policy` | [StrictMode.ThreadPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy)!: the policy to put into place |
+| `policy` | [StrictMode.ThreadPolicy](../android/os/StrictMode.ThreadPolicy.md)!: the policy to put into place |
 
 ### setVmPolicy
 
@@ -171,4 +171,4 @@ Sets the policy for what actions in the VM process (on any thread) should be det
 
 | Parameters ||
 |---|---|
-| `policy` | [StrictMode.VmPolicy](https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy)!: the policy to put into place |
+| `policy` | [StrictMode.VmPolicy](../android/os/StrictMode.VmPolicy.md)!: the policy to put into place |

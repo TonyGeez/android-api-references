@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # WebResourceError
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebResourceError "View this page in Java") 
+Kotlin| [Java](../android/webkit/WebResourceError.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ abstract class WebResourceError
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.WebResourceError](https://developer.android.com/reference/kotlin/android/webkit/WebResourceError#) |
+| ↳ | [android.webkit.WebResourceError](../android/webkit/WebResourceError.md) |
 
-Encapsulates information about errors that occurred during loading of web resources. See [WebViewClient.onReceivedError(WebView, WebResourceRequest, WebResourceError)](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onReceivedError(android.webkit.WebView,%20android.webkit.WebResourceRequest,%20android.webkit.WebResourceError))
+Encapsulates information about errors that occurred during loading of web resources. See [WebViewClient.onReceivedError(WebView, WebResourceRequest, WebResourceError)](../android/webkit/WebViewClient.md))
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDescription](https://developer.android.com/reference/kotlin/android/webkit/WebResourceError#getDescription())`()` Gets the string describing the error. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](https://developer.android.com/reference/kotlin/android/webkit/WebResourceError#getErrorCode())`()` Gets the error code of the error. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getDescription](../android/webkit/WebResourceError.md))`()` Gets the string describing the error. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](../android/webkit/WebResourceError.md))`()` Gets the error code of the error. |
 
 ## Public methods
 
@@ -48,7 +48,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getErrorCode(): Int
 ```
 
-Gets the error code of the error. The code corresponds to one of the ERROR_\* constants in [WebViewClient](https://developer.android.com/reference/kotlin/android/webkit/WebViewClient).
+Gets the error code of the error. The code corresponds to one of the ERROR_\* constants in [WebViewClient](../android/webkit/WebViewClient.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------|

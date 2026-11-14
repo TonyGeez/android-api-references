@@ -8,9 +8,9 @@ abstract class EgressResponse : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.privatecompute.EgressResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse#) |
+| ↳ | [android.app.privatecompute.EgressResponse](../android/app/privatecompute/EgressResponse.md) |
 
-Known Direct Subclasses [AssistantQueryResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse) [AssistantQueryResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse) Specialized response for Assistant Query use-cases.
+Known Direct Subclasses [AssistantQueryResponse](../android/app/privatecompute/AssistantQueryResponse.md) [AssistantQueryResponse](../android/app/privatecompute/AssistantQueryResponse.md) Specialized response for Assistant Query use-cases.
 
 Abstract base response class for PccSandboxManager.egressData operations.
 
@@ -37,7 +37,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [EgressResponse](https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse#)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse#` instance from a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EgressResponse](../android/app/privatecompute/EgressResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressResponse#` instance from a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
 ## Public methods
 
@@ -70,7 +70,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

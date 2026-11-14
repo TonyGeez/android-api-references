@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # LocaleData
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/util/LocaleData "View this page in Java") 
+Kotlin | [Java](../android/icu/util/LocaleData.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class LocaleData
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.LocaleData](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#) |
+| ↳ | [android.icu.util.LocaleData](../android/icu/util/LocaleData.md) |
 
 A class for accessing miscellaneous data in the locale bundles
 
@@ -21,29 +21,29 @@ A class for accessing miscellaneous data in the locale bundles
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [MeasurementSystem](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData.MeasurementSystem) Enumeration for representing the measurement systems. |
-| | [PaperSize](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData.PaperSize) A class that represents the size of letter head used in the country |
+| | [MeasurementSystem](../android/icu/util/LocaleData.MeasurementSystem.md) Enumeration for representing the measurement systems. |
+| | [PaperSize](../android/icu/util/LocaleData.PaperSize.md) A class that represents the size of letter head used in the country |
 
 | Constants ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALT_QUOTATION_END](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#ALT_QUOTATION_END:kotlin.Int) Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALT_QUOTATION_START](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#ALT_QUOTATION_START:kotlin.Int) Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUOTATION_END](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#QUOTATION_END:kotlin.Int) Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALT_QUOTATION_END](../android/icu/util/LocaleData.md) Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALT_QUOTATION_START](../android/icu/util/LocaleData.md) Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUOTATION_END](../android/icu/util/LocaleData.md) Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUOTATION_START](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#QUOTATION_START:kotlin.Int) Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUOTATION_START](../android/icu/util/LocaleData.md) Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo)! | [getCLDRVersion](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getCLDRVersion())`()` Returns the current CLDR version |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDelimiter](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a delimiter string from the locale data. |
-| static [LocaleData](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getInstance())`()` Gets the LocaleData object associated with the default `FORMAT` locale |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | [getCLDRVersion](../android/icu/util/LocaleData.md))`()` Returns the current CLDR version |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDelimiter](../android/icu/util/LocaleData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a delimiter string from the locale data. |
+| static [LocaleData](../android/icu/util/LocaleData.md)! | [getInstance](../android/icu/util/LocaleData.md))`()` Gets the LocaleData object associated with the default `FORMAT` locale |
 | --- | --- |
-| static [LocaleData](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`)` Gets the LocaleData object associated with the ULocale specified in locale |
-| static [LocaleData.MeasurementSystem](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData.MeasurementSystem)! | [getMeasurementSystem](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getMeasurementSystem(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`)` Returns the measurement system used in the locale specified by the locale. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNoSubstitute](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getNoSubstitute())`()` Gets the "no substitute" behavior of this locale data object. |
+| static [LocaleData](../android/icu/util/LocaleData.md)! | [getInstance](../android/icu/util/LocaleData.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Gets the LocaleData object associated with the ULocale specified in locale |
+| static [LocaleData.MeasurementSystem](../android/icu/util/LocaleData.MeasurementSystem.md)! | [getMeasurementSystem](../android/icu/util/LocaleData.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns the measurement system used in the locale specified by the locale. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNoSubstitute](../android/icu/util/LocaleData.md))`()` Gets the "no substitute" behavior of this locale data object. |
 | --- | --- |
-| static [LocaleData.PaperSize](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData.PaperSize)! | [getPaperSize](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getPaperSize(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!`)` Returns the size of paper used in the locale. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNoSubstitute](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#setNoSubstitute(kotlin.Boolean))`(`setting:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the "no substitute" behavior of this locale data object. |
+| static [LocaleData.PaperSize](../android/icu/util/LocaleData.PaperSize.md)! | [getPaperSize](../android/icu/util/LocaleData.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns the size of paper used in the locale. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNoSubstitute](../android/icu/util/LocaleData.md))`(`setting:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the "no substitute" behavior of this locale data object. |
 
 ## Constants
 
@@ -55,7 +55,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val ALT_QUOTATION_END: Int
 ```
 
-Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). 
+Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). 
 
  Value: 3
 
@@ -67,7 +67,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val ALT_QUOTATION_START: Int
 ```
 
-Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). 
+Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). 
 
  Value: 2
 
@@ -79,7 +79,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val QUOTATION_END: Int
 ```
 
-Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). 
+Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). 
 
  Value: 1
 
@@ -91,7 +91,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val QUOTATION_START: Int
 ```
 
-Delimiter type for [getDelimiter(int)](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#getDelimiter(kotlin.Int)). 
+Delimiter type for [getDelimiter(int)](../android/icu/util/LocaleData.md)). 
 
  Value: 0
 
@@ -137,11 +137,11 @@ Gets the LocaleData object associated with the default `FORMAT` locale
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------|
-| [LocaleData](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#)! | A locale data object. |
+| [LocaleData](../android/icu/util/LocaleData.md)! | A locale data object. |
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#FORMAT](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#FORMAT](../android/icu/util/ULocale.Category.md) 
 
 ### getInstance
 
@@ -155,11 +155,11 @@ Gets the LocaleData object associated with the ULocale specified in locale
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: Locale with thich the locale data object is associated. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: Locale with thich the locale data object is associated. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------|
-| [LocaleData](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData#)! | A locale data object. |
+| [LocaleData](../android/icu/util/LocaleData.md)! | A locale data object. |
 
 ### getMeasurementSystem
 
@@ -173,11 +173,11 @@ Returns the measurement system used in the locale specified by the locale.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: The locale for which the measurement system to be retrieved. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the measurement system to be retrieved. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [LocaleData.MeasurementSystem](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData.MeasurementSystem)! | MeasurementSystem the measurement system used in the locale. |
+| [LocaleData.MeasurementSystem](../android/icu/util/LocaleData.MeasurementSystem.md)! | MeasurementSystem the measurement system used in the locale. |
 
 ### getNoSubstitute
 
@@ -205,11 +205,11 @@ Returns the size of paper used in the locale. The paper sizes returned are alway
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: The locale for which the measurement system to be retrieved. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: The locale for which the measurement system to be retrieved. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [LocaleData.PaperSize](https://developer.android.com/reference/kotlin/android/icu/util/LocaleData.PaperSize)! | The paper size used in the locale |
+| [LocaleData.PaperSize](../android/icu/util/LocaleData.PaperSize.md)! | The paper size used in the locale |
 
 ### setNoSubstitute
 

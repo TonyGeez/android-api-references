@@ -10,12 +10,12 @@ abstract class SocketFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#) |
+| ↳ | [javax.net.SocketFactory](../javax/net/SocketFactory.md) |
 
-| Known Direct Subclasses [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory) |---------------------------------------------------------------------------------------------------|-----------------------------------------| | [SSLSocketFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory) | `SSLSocketFactory`s create`SSLSocket`s. | |
+| Known Direct Subclasses [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md) |---------------------------------------------------------------------------------------------------|-----------------------------------------| | [SSLSocketFactory](../javax/net/ssl/SSLSocketFactory.md) | `SSLSocketFactory`s create`SSLSocket`s. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [SSLCertificateSocketFactory](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory.html#) |-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SSLCertificateSocketFactory](https://developer.android.com/reference/kotlin/android/net/SSLCertificateSocketFactory.html#) | SSLSocketFactory implementation with several extra features: - Timeout specification for SSL handshake operations - Hostname verification in most cases (see WARNINGs below) - Optional SSL session caching with [SSLSessionCache](https://developer.android.com/reference/kotlin/android/net/SSLSessionCache.html#) - Optionally bypass all SSL certificate checks The handshake timeout does not apply to actual TCP socket connection. <br /> | |
+| Known Indirect Subclasses [SSLCertificateSocketFactory](../android/net/SSLCertificateSocketFactory.md) |-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SSLCertificateSocketFactory](../android/net/SSLCertificateSocketFactory.md) | SSLSocketFactory implementation with several extra features: - Timeout specification for SSL handshake operations - Hostname verification in most cases (see WARNINGs below) - Optional SSL session caching with [SSLSessionCache](../android/net/SSLSessionCache.md) - Optionally bypass all SSL certificate checks The handshake timeout does not apply to actual TCP socket connection. <br /> | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class creates sockets. It may be subclassed by other factories, which create particular subclasses of sockets and thus provide a general framework for the addition of public socket-level functionality.
@@ -32,17 +32,17 @@ Factory classes are specified by environment-specific configuration mechanisms. 
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#SocketFactory())`()` Creates a`SocketFactory`. |
+| [SocketFactory](../javax/net/SocketFactory.md))`()` Creates a`SocketFactory`. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#createSocket())`()` Creates an unconnected socket. |
-| abstract [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#createSocket(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host at the specified remote port. |
-| abstract [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#createSocket(kotlin.String,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localHost:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host on the specified remote port. |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`()` Creates an unconnected socket. |
+| abstract [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host at the specified remote port. |
+| abstract [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localHost:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host on the specified remote port. |
 | --- | --- |
-| abstract [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#createSocket(java.net.InetAddress,%20kotlin.Int))`(`host:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified port number at the specified address. |
-| abstract [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#createSocket(java.net.InetAddress,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int))`(`address:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddress:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connect it to the specified remote address on the specified remote port. |
-| openstatic [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#)! | [getDefault](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#getDefault())`()` Returns a copy of the environment's default socket factory. |
+| abstract [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`host:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified port number at the specified address. |
+| abstract [Socket](../java/net/Socket.md)! | [createSocket](../javax/net/SocketFactory.md))`(`address:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddress:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connect it to the specified remote address on the specified remote port. |
+| openstatic [SocketFactory](../javax/net/SocketFactory.md)! | [getDefault](../javax/net/SocketFactory.md))`()` Returns a copy of the environment's default socket factory. |
 | --- | --- |
 
 ## Protected constructors
@@ -71,7 +71,7 @@ Creates an unconnected socket.
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the unconnected socket |
+| [Socket](../java/net/Socket.md)! | the unconnected socket |
 
 | Exceptions ||
 |-----------------------|---------------------------------|
@@ -79,9 +79,9 @@ Creates an unconnected socket.
 
 **See Also**
 
-- [java.net.Socket#connect(java.net.SocketAddress)](https://developer.android.com/reference/kotlin/java/net/Socket.html#connect(java.net.SocketAddress))
-- [java.net.Socket#connect(java.net.SocketAddress, int)](https://developer.android.com/reference/kotlin/java/net/Socket.html#connect(java.net.SocketAddress,%20kotlin.Int))
-- [java.net.Socket#Socket()](https://developer.android.com/reference/kotlin/java/net/Socket.html#Socket()) 
+- [java.net.Socket#connect(java.net.SocketAddress)](../java/net/Socket.md))
+- [java.net.Socket#connect(java.net.SocketAddress, int)](../java/net/Socket.md))
+- [java.net.Socket#Socket()](../java/net/Socket.md)) 
 
 ### createSocket
 
@@ -105,7 +105,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -117,7 +117,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 **See Also**
 
-- [java.net.Socket#Socket(String, int)](https://developer.android.com/reference/kotlin/java/net/Socket.html#Socket(kotlin.String,%20kotlin.Int)) 
+- [java.net.Socket#Socket(String, int)](../java/net/Socket.md)) 
 
 ### createSocket
 
@@ -140,13 +140,13 @@ If there is a security manager, its`checkConnect`method is called with the host 
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the server host name with which to connect, or`null`for the loopback address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the server port |
-| `localHost` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:the local address the socket is bound to |
+| `localHost` | [InetAddress](../java/net/InetAddress.md)!:the local address the socket is bound to |
 | --- | --- |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the local port the socket is bound to |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -158,7 +158,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 **See Also**
 
-- [java.net.Socket#Socket(String, int, java.net.InetAddress, int)](https://developer.android.com/reference/kotlin/java/net/Socket.html#Socket(kotlin.String,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int)) 
+- [java.net.Socket#Socket(String, int, java.net.InetAddress, int)](../java/net/Socket.md)) 
 
 ### createSocket
 
@@ -177,12 +177,12 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------|
-| `host` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:the server host |
+| `host` | [InetAddress](../java/net/InetAddress.md)!:the server host |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the server port |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -194,7 +194,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 **See Also**
 
-- [java.net.Socket#Socket(java.net.InetAddress, int)](https://developer.android.com/reference/kotlin/java/net/Socket.html#Socket(java.net.InetAddress,%20kotlin.Int)) 
+- [java.net.Socket#Socket(java.net.InetAddress, int)](../java/net/Socket.md)) 
 
 ### createSocket
 
@@ -215,15 +215,15 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------|
-| `address` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:the server network address |
+| `address` | [InetAddress](../java/net/InetAddress.md)!:the server network address |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the server port |
-| `localAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:the client network address |
+| `localAddress` | [InetAddress](../java/net/InetAddress.md)!:the client network address |
 | --- | --- |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the client port |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the`Socket` |
+| [Socket](../java/net/Socket.md)! | the`Socket` |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -236,7 +236,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 **See Also**
 
 - [java.net.Socket#Socket(java.net.InetAddress, int,
-* java.net.InetAddress, int)](https://developer.android.com/reference/kotlin/java/net/Socket.html#Socket(java.net.InetAddress,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int)) 
+* java.net.InetAddress, int)](../java/net/Socket.md)) 
 
 ### getDefault
 
@@ -250,4 +250,4 @@ Returns a copy of the environment's default socket factory.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------------------|
-| [SocketFactory](https://developer.android.com/reference/kotlin/javax/net/SocketFactory#)! | the default`SocketFactory` |
+| [SocketFactory](../javax/net/SocketFactory.md)! | the default`SocketFactory` |

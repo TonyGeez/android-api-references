@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyPermanentlyInvalidatedException
 
-Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/KeyPermanentlyInvalidatedException "View this page in Java") 
+Kotlin| [Java](../android/security/keystore/KeyPermanentlyInvalidatedException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class KeyPermanentlyInvalidatedException : InvalidKeyException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.KeyException](https://developer.android.com/reference/kotlin/java/security/KeyException.html#) |||
-| | | | | ↳ | [java.security.InvalidKeyException](https://developer.android.com/reference/kotlin/java/security/InvalidKeyException.html#) ||
-| | | | | | ↳ | [android.security.keystore.KeyPermanentlyInvalidatedException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyPermanentlyInvalidatedException#) |
+| | | | ↳ | [java.security.KeyException](../java/security/KeyException.md) |||
+| | | | | ↳ | [java.security.InvalidKeyException](../java/security/InvalidKeyException.md) ||
+| | | | | | ↳ | [android.security.keystore.KeyPermanentlyInvalidatedException](../android/security/keystore/KeyPermanentlyInvalidatedException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Indicates that the key can no longer be used because it has been permanently invalidated.
@@ -30,9 +30,9 @@ This only occurs for keys which are authorized to be used only if the user has b
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyPermanentlyInvalidatedException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyPermanentlyInvalidatedException#KeyPermanentlyInvalidatedException())`()` Constructs a new`KeyPermanentlyInvalidatedException`without detail message and cause. |
-| [KeyPermanentlyInvalidatedException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyPermanentlyInvalidatedException#KeyPermanentlyInvalidatedException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`KeyPermanentlyInvalidatedException`with the provided detail message and no cause. |
-| [KeyPermanentlyInvalidatedException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyPermanentlyInvalidatedException#KeyPermanentlyInvalidatedException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`KeyPermanentlyInvalidatedException`with the provided detail message and cause. |
+| [KeyPermanentlyInvalidatedException](../android/security/keystore/KeyPermanentlyInvalidatedException.md))`()` Constructs a new`KeyPermanentlyInvalidatedException`without detail message and cause. |
+| [KeyPermanentlyInvalidatedException](../android/security/keystore/KeyPermanentlyInvalidatedException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`KeyPermanentlyInvalidatedException`with the provided detail message and no cause. |
+| [KeyPermanentlyInvalidatedException](../android/security/keystore/KeyPermanentlyInvalidatedException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`KeyPermanentlyInvalidatedException`with the provided detail message and cause. |
 
 ## Public constructors
 

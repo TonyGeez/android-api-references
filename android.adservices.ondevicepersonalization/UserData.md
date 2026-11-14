@@ -9,7 +9,7 @@ class UserData : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.UserData](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#) |
+| ↳ | [android.adservices.ondevicepersonalization.UserData](../android/adservices/ondevicepersonalization/UserData.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -28,24 +28,24 @@ User data provided by the platform to an `https://developer.android.com/referenc
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [AppInfo](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/AppInfo)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getAppInfos()()` A map from package name to app information for installed and uninstalled apps. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [AppInfo](../android/adservices/ondevicepersonalization/AppInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getAppInfos()()` A map from package name to app information for installed and uninstalled apps. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getAvailableStorageBytes()()` The available space on device in bytes. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getBatteryPercentage()()` Battery percentage. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getCarrier()()` The Service Provider Name (SPN) returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSimOperatorName()` |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getDataNetworkType()()` Data network type. |
-| [NetworkCapabilities](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getNetworkCapabilities()()` A filtered subset of the Network capabilities of the device that contains upstream and downstream speeds, and whether the network is metered. |
+| [NetworkCapabilities](../android/net/NetworkCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getNetworkCapabilities()()` A filtered subset of the Network capabilities of the device that contains upstream and downstream speeds, and whether the network is metered. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getOrientation()()` The device orientation. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getTimezoneUtcOffset()()` The device timezone +/- offset from UTC. |
+| [Duration](../java/time/Duration.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getTimezoneUtcOffset()()` The device timezone +/- offset from UTC. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [UserData](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UserData](../android/adservices/ondevicepersonalization/UserData.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -263,7 +263,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

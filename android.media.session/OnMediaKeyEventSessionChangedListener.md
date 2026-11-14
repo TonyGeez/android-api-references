@@ -4,14 +4,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # OnMediaKeyEventSessionChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener "View this page in Java") 
+Kotlin| [Java](../android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnMediaKeyEventSessionChangedListener
 ```
 
-| [android.media.session.MediaSessionManager.OnMediaKeyEventSessionChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener#) |
+| [android.media.session.MediaSessionManager.OnMediaKeyEventSessionChangedListener](../android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.md) |
 
 Listener to receive changes in the media key event session, which would receive a media key event unless specified.
 
@@ -19,7 +19,7 @@ Listener to receive changes in the media key event session, which would receive 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMediaKeyEventSessionChanged](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener#onMediaKeyEventSessionChanged(kotlin.String,%20android.media.session.MediaSession.Token))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `sessionToken:` ` [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token)?`)` Called when the media key session is changed to the given media session. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMediaKeyEventSessionChanged](../android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `sessionToken:` ` [MediaSession.Token](../android/media/session/MediaSession.Token.md)?`)` Called when the media key session is changed to the given media session. |
 
 ## Public methods
 
@@ -41,4 +41,4 @@ The session token can be`null`if the media button session is unset. In that case
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package name of the component that will receive the media key event. Can be empty. This value cannot be`null`. |
-| `sessionToken` | [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token)?:The media session's token. Can be`null`. |
+| `sessionToken` | [MediaSession.Token](../android/media/session/MediaSession.Token.md)?:The media session's token. Can be`null`. |

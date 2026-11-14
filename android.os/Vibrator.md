@@ -8,7 +8,7 @@ abstract class Vibrator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.Vibrator](https://developer.android.com/reference/kotlin/android/os/Vibrator#) |
+| ↳ | [android.os.Vibrator](../android/os/Vibrator.md) |
 
 Class that operates the vibrator on the device.
 
@@ -33,11 +33,11 @@ If your process exits, any vibration you started will stop.
 | open [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#arePrimitivesSupported(kotlin.Int)(vararg primitiveIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query whether the vibrator supports the given primitives. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#cancel()()` Turn the vibrator off. |
 | --- | --- |
-| open [VibratorEnvelopeEffectInfo](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getEnvelopeEffectInfo()()` Retrieves the vibrator's capabilities and limitations for envelope effects. |
-| open [VibratorFrequencyProfile](https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile)? | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getFrequencyProfile()()` Gets the profile that describes the vibrator output across the supported frequency range. |
+| open [VibratorEnvelopeEffectInfo](../android/os/vibrator/VibratorEnvelopeEffectInfo.md) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getEnvelopeEffectInfo()()` Retrieves the vibrator's capabilities and limitations for envelope effects. |
+| open [VibratorFrequencyProfile](../android/os/vibrator/VibratorFrequencyProfile.md)? | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getFrequencyProfile()()` Gets the profile that describes the vibrator output across the supported frequency range. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getId()()` Return the ID of this vibrator. |
 | --- | --- |
-| open [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getPresetDuration(kotlin.Int)(presetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query the estimated duration of the given preset. |
+| open [Duration](../java/time/Duration.md) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getPresetDuration(kotlin.Int)(presetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query the estimated duration of the given preset. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getPrimitiveDurations(kotlin.Int)(vararg primitiveIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query the estimated durations of the given primitives. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getQFactor()()` Gets the [Q factor](https://en.wikipedia.org/wiki/Q_factor) of the vibrator. |
 | --- | --- |
@@ -407,7 +407,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `vibe` | [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect)!: `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. |
+| `vibe` | [VibrationEffect](../android/os/VibrationEffect.md)!: `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. |
 
 ### vibrate
 
@@ -431,8 +431,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `vibe` | [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect)!: `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. |
-| `attributes` | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#)!: `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_NOTIFICATION_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. |
+| `vibe` | [VibrationEffect](../android/os/VibrationEffect.md)!: `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. |
+| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md)!: `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_NOTIFICATION_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. |
 
 ### vibrate
 
@@ -453,8 +453,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `vibe` | [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect): `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. This value cannot be `null`. |
-| `attributes` | [VibrationAttributes](https://developer.android.com/reference/kotlin/android/os/VibrationAttributes): `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. This value cannot be `null`. |
+| `vibe` | [VibrationEffect](../android/os/VibrationEffect.md): `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. This value cannot be `null`. |
+| `attributes` | [VibrationAttributes](../android/os/VibrationAttributes.md): `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. This value cannot be `null`. |
 
 ### vibrate
 
@@ -500,7 +500,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `milliseconds` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The number of milliseconds to vibrate. |
-| `attributes` | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#)!: `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_NOTIFICATION_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. |
+| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md)!: `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_NOTIFICATION_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. |
 
 ### vibrate
 
@@ -560,5 +560,5 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 |---|---|
 | `pattern` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!: an array of longs of times for which to turn the vibrator on or off. |
 | `repeat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index into pattern at which to repeat, or -1 if you don't want to repeat. |
-| `attributes` | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#)!: `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_NOTIFICATION_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. |
+| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md)!: `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_NOTIFICATION_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. |
 | --- | --- |

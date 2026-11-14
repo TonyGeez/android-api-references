@@ -10,7 +10,7 @@ open class OutputKeys
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.transform.OutputKeys](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#) |
+| ↳ | [javax.xml.transform.OutputKeys](../javax/xml/transform/OutputKeys.md) |
 
 Provides string constants that can be used to set output properties for a Transformer, or to retrieve output properties from a Transformer or Templates object.
 
@@ -20,19 +20,19 @@ All the fields in this class are read-only.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CDATA_SECTION_ELEMENTS](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#CDATA_SECTION_ELEMENTS:kotlin.String) cdata-section-elements = expanded names. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOCTYPE_PUBLIC](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#DOCTYPE_PUBLIC:kotlin.String) doctype-public = string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOCTYPE_SYSTEM](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#DOCTYPE_SYSTEM:kotlin.String) doctype-system = string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CDATA_SECTION_ELEMENTS](../javax/xml/transform/OutputKeys.md) cdata-section-elements = expanded names. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOCTYPE_PUBLIC](../javax/xml/transform/OutputKeys.md) doctype-public = string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOCTYPE_SYSTEM](../javax/xml/transform/OutputKeys.md) doctype-system = string. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENCODING](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#ENCODING:kotlin.String) encoding = string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INDENT](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#INDENT:kotlin.String) indent = "yes" | "no". |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_TYPE](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#MEDIA_TYPE:kotlin.String) media-type = string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENCODING](../javax/xml/transform/OutputKeys.md) encoding = string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INDENT](../javax/xml/transform/OutputKeys.md) indent = "yes" | "no". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MEDIA_TYPE](../javax/xml/transform/OutputKeys.md) media-type = string. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [METHOD](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#METHOD:kotlin.String) method = "xml" | "html" | "text" | expanded name. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [OMIT_XML_DECLARATION](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#OMIT_XML_DECLARATION:kotlin.String) omit-xml-declaration = "yes" | "no". |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STANDALONE](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#STANDALONE:kotlin.String) standalone = "yes" | "no". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [METHOD](../javax/xml/transform/OutputKeys.md) method = "xml" | "html" | "text" | expanded name. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [OMIT_XML_DECLARATION](../javax/xml/transform/OutputKeys.md) omit-xml-declaration = "yes" | "no". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STANDALONE](../javax/xml/transform/OutputKeys.md) standalone = "yes" | "no". |
 | --- | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VERSION](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#VERSION:kotlin.String) version = nmtoken. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VERSION](../javax/xml/transform/OutputKeys.md) version = nmtoken. |
 
 ## Constants
 
@@ -46,7 +46,7 @@ static val CDATA_SECTION_ELEMENTS: String
 
 cdata-section-elements = expanded names.
 
-`cdata-section-elements`specifies a whitespace delimited list of the names of elements whose text node children should be output using CDATA sections. Note that these names must use the format described in the section Qualfied Name Representation in [javax.xml.transform](https://developer.android.com/reference/kotlin/javax/xml/transform/package-summary). 
+`cdata-section-elements`specifies a whitespace delimited list of the names of elements whose text node children should be output using CDATA sections. Note that these names must use the format described in the section Qualfied Name Representation in [javax.xml.transform](../javax/xml/transform/_package.md). 
 
  Value: "cdata-section-elements"
 
@@ -62,7 +62,7 @@ static val DOCTYPE_PUBLIC: String
 
 doctype-public = string.
 
-See the documentation for the [DOCTYPE_SYSTEM](https://developer.android.com/reference/kotlin/javax/xml/transform/OutputKeys#DOCTYPE_SYSTEM:kotlin.String) property for a description of what the value of the key should be. 
+See the documentation for the [DOCTYPE_SYSTEM](../javax/xml/transform/OutputKeys.md) property for a description of what the value of the key should be. 
 
  Value: "doctype-public"
 
@@ -150,7 +150,7 @@ static val METHOD: String
 method = "xml" | "html" | "text" | expanded name.
 | --- | --- | --- | --- |
 
-The value of the method property identifies the overall method that should be used for outputting the result tree. Other non-namespaced values may be used, such as "xhtml", but, if accepted, the handling of such values is implementation defined. If any of the method values are not accepted and are not namespace qualified, then [javax.xml.transform.Transformer#setOutputProperty](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setOutputProperty(kotlin.String,%20kotlin.String))or [javax.xml.transform.Transformer#setOutputProperties](https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer#setOutputProperties(java.util.Properties))will throw a [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#). 
+The value of the method property identifies the overall method that should be used for outputting the result tree. Other non-namespaced values may be used, such as "xhtml", but, if accepted, the handling of such values is implementation defined. If any of the method values are not accepted and are not namespace qualified, then [javax.xml.transform.Transformer#setOutputProperty](../javax/xml/transform/Transformer.md))or [javax.xml.transform.Transformer#setOutputProperties](../javax/xml/transform/Transformer.md))will throw a [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md). 
 
  Value: "method"
 

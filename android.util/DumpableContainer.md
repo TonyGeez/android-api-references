@@ -4,23 +4,23 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # DumpableContainer
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/DumpableContainer "View this page in Java") 
+Kotlin| [Java](../android/util/DumpableContainer.md) 
 | --- | --- |
 
 ```
 interface DumpableContainer
 ```
 
-| [android.util.DumpableContainer](https://developer.android.com/reference/kotlin/android/util/DumpableContainer#) |
+| [android.util.DumpableContainer](../android/util/DumpableContainer.md) |
 
-Represents a container that manages [dumpables](https://developer.android.com/reference/kotlin/android/util/Dumpable).
+Represents a container that manages [dumpables](../android/util/Dumpable.md).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addDumpable](https://developer.android.com/reference/kotlin/android/util/DumpableContainer#addDumpable(android.util.Dumpable))`(`dumpable:` ` [Dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable)`)` Adds the given [dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable) to the container. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeDumpable](https://developer.android.com/reference/kotlin/android/util/DumpableContainer#removeDumpable(android.util.Dumpable))`(`dumpable:` ` [Dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable)`)` Removes the given [dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable) from the container. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addDumpable](../android/util/DumpableContainer.md))`(`dumpable:` ` [Dumpable](../android/util/Dumpable.md)`)` Adds the given [dumpable](../android/util/Dumpable.md) to the container. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeDumpable](../android/util/DumpableContainer.md))`(`dumpable:` ` [Dumpable](../android/util/Dumpable.md)`)` Removes the given [dumpable](../android/util/Dumpable.md) from the container. |
 
 ## Public methods
 
@@ -32,13 +32,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 abstract fun addDumpable(dumpable: Dumpable): Boolean
 ```
 
-Adds the given [dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable) to the container.
+Adds the given [dumpable](../android/util/Dumpable.md) to the container.
 
-If a dumpable with the same [name](https://developer.android.com/reference/kotlin/android/util/Dumpable#getDumpableName())was added before, this call is ignored.
+If a dumpable with the same [name](../android/util/Dumpable.md))was added before, this call is ignored.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `dumpable` | [Dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable):dumpable to be added. This value cannot be`null`. |
+| `dumpable` | [Dumpable](../android/util/Dumpable.md):dumpable to be added. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -46,7 +46,7 @@ If a dumpable with the same [name](https://developer.android.com/reference/kotli
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if the [dumpable name](https://developer.android.com/reference/kotlin/android/util/Dumpable#getDumpableName())is`null`. |
+| `java.lang.IllegalArgumentException` | if the [dumpable name](../android/util/Dumpable.md))is`null`. |
 
 ### removeDumpable
 
@@ -56,12 +56,12 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 abstract fun removeDumpable(dumpable: Dumpable): Boolean
 ```
 
-Removes the given [dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable) from the container.
+Removes the given [dumpable](../android/util/Dumpable.md) from the container.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `dumpable` | [Dumpable](https://developer.android.com/reference/kotlin/android/util/Dumpable):dumpable to be removed. This value cannot be`null`. |
+| `dumpable` | [Dumpable](../android/util/Dumpable.md):dumpable to be removed. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the dumpable was removed,`false`if it was not previously [added](https://developer.android.com/reference/kotlin/android/util/DumpableContainer#addDumpable(android.util.Dumpable))with the same identify (object reference) and [name](https://developer.android.com/reference/kotlin/android/util/Dumpable#getDumpableName()). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the dumpable was removed,`false`if it was not previously [added](../android/util/DumpableContainer.md))with the same identify (object reference) and [name](../android/util/Dumpable.md)). |

@@ -2,7 +2,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # PhoneAccountHandle
 
-Kotlin | [Java](https://developer.android.com/reference/android/telecom/PhoneAccountHandle "View this page in Java")
+Kotlin | [Java](../android/telecom/PhoneAccountHandle.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PhoneAccountHandle : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#) |
+| ↳ | [android.telecom.PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) |
 
 The unique identifier for a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. A `PhoneAccountHandle` is made of two parts:
 
@@ -37,10 +37,10 @@ Note: This Class requires a non-null `https://developer.android.com/reference/ko
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getComponentName()()` The `ComponentName` of the connection service which is responsible for making phone calls using this `PhoneAccountHandle`. |
+| [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getComponentName()()` The `ComponentName` of the connection service which is responsible for making phone calls using this `PhoneAccountHandle`. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getId()()` A string that uniquely distinguishes this particular `PhoneAccountHandle` from all the others supported by the connection service that created it. |
-| [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getUserHandle()()` <br /> |
+| [UserHandle](../android/os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getUserHandle()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#toString()()` Returns a string representation of the object. |
@@ -48,7 +48,7 @@ Note: This Class requires a non-null `https://developer.android.com/reference/ko
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#)!\> | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -66,7 +66,7 @@ Creates a new `https://developer.android.com/reference/kotlin/android/telecom/Ph
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which services this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android/content/ComponentName.md): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which services this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. This value cannot be `null`. |
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`s should ensure that the ID provided does not expose personally identifying information. A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` should use an opaque token as the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#` identifier. Note: Each String field is limited to 256 characters. This check is enforced when registering the PhoneAccount via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown if the character field limit is over 256. This value cannot be `null`. |
 
 ### PhoneAccountHandle
@@ -84,9 +84,9 @@ Creates a new `https://developer.android.com/reference/kotlin/android/telecom/Ph
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which services this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android/content/ComponentName.md): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which services this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. This value cannot be `null`. |
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`s should ensure that the ID provided does not expose personally identifying information. A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` should use an opaque token as the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#` identifier. This value cannot be `null`. |
-| `userHandle` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` associated with this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. Note: Each String field is limited to 256 characters. This check is enforced when registering the PhoneAccount via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown if the character field limit is over 256. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android/os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` associated with this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. Note: Each String field is limited to 256 characters. This check is enforced when registering the PhoneAccount via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown if the character field limit is over 256. This value cannot be `null`. |
 | --- | --- |
 
 ## Public methods

@@ -8,7 +8,7 @@ class VibrationEffectInflater
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.VibrationEffectInflater](https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#) |
+| ↳ | [android.view.VibrationEffectInflater](../android/view/VibrationEffectInflater.md) |
 
 Instantiates `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#` objects from Android XML resources.
 
@@ -16,8 +16,8 @@ Instantiates `https://developer.android.com/reference/kotlin/android/os/Vibratio
 
 | Public methods ||
 |---|---|
-| static [VibrationEffectInflater](https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#) | `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#from(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Obtains the `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#` associated with the given context. |
-| [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#) | `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#inflate(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Inflates a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#` from an Android XML resource containing a vibration pattern (e.g., stored inside |
+| static [VibrationEffectInflater](../android/view/VibrationEffectInflater.md) | `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#from(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Obtains the `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#` associated with the given context. |
+| [VibrationEffect](../android/os/VibrationEffect.md) | `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#inflate(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Inflates a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#` from an Android XML resource containing a vibration pattern (e.g., stored inside |
 
 ## Public methods
 
@@ -33,7 +33,7 @@ Obtains the `https://developer.android.com/reference/kotlin/android/view/Vibrati
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to access resources. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to access resources. This value cannot be `null`. |
 
 | Return ||
 |---|---|

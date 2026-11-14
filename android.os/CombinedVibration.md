@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # CombinedVibration
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/CombinedVibration "View this page in Java") 
+Kotlin| [Java](../android/os/CombinedVibration.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ abstract class CombinedVibration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#) |
+| ↳ | [android.os.CombinedVibration](../android/os/CombinedVibration.md) |
 
-A CombinedVibration describes a combination of haptic effects to be performed by one or more [Vibrators](https://developer.android.com/reference/kotlin/android/os/Vibrator). These effects may be any number of things, from single shot vibrations to complex waveforms.
+A CombinedVibration describes a combination of haptic effects to be performed by one or more [Vibrators](../android/os/Vibrator.md). These effects may be any number of things, from single shot vibrations to complex waveforms.
 
 ## Summary
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [ParallelCombination](https://developer.android.com/reference/kotlin/android/os/CombinedVibration.ParallelCombination) A combination of haptic effects that should be played in multiple vibrators in parallel. |
+| | [ParallelCombination](../android/os/CombinedVibration.ParallelCombination.md) A combination of haptic effects that should be played in multiple vibrators in parallel. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#) | [createParallel](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#createParallel(android.os.VibrationEffect))`(`effect:` ` [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect)`)` Create a vibration that plays a single effect in parallel on all vibrators. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#describeContents())`()` <br /> |
-| openstatic [CombinedVibration.ParallelCombination](https://developer.android.com/reference/kotlin/android/os/CombinedVibration.ParallelCombination) | [startParallel](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#startParallel())`()` Start creating a vibration that plays effects in parallel on one or more vibrators. |
+| openstatic [CombinedVibration](../android/os/CombinedVibration.md) | [createParallel](../android/os/CombinedVibration.md))`(`effect:` ` [VibrationEffect](../android/os/VibrationEffect.md)`)` Create a vibration that plays a single effect in parallel on all vibrators. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/os/CombinedVibration.md))`()` <br /> |
+| openstatic [CombinedVibration.ParallelCombination](../android/os/CombinedVibration.ParallelCombination.md) | [startParallel](../android/os/CombinedVibration.md))`()` Start creating a vibration that plays effects in parallel on one or more vibrators. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/Parcelable.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator)\< [CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CombinedVibration](../android/os/CombinedVibration.md)!\> | [CREATOR](../android/os/CombinedVibration.md) <br /> |
 
 ## Public methods
 
@@ -52,15 +52,15 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun createParallel(effect: VibrationEffect): CombinedVibration
 ```
 
-Create a vibration that plays a single effect in parallel on all vibrators. A parallel vibration that takes a single [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect) to be performed by multiple vibrators at the same time.
+Create a vibration that plays a single effect in parallel on all vibrators. A parallel vibration that takes a single [VibrationEffect](../android/os/VibrationEffect.md) to be performed by multiple vibrators at the same time.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `effect` | [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect):The [VibrationEffect](https://developer.android.com/reference/kotlin/android/os/VibrationEffect) to perform. This value cannot be`null`. |
+| `effect` | [VibrationEffect](../android/os/VibrationEffect.md):The [VibrationEffect](../android/os/VibrationEffect.md) to perform. This value cannot be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [CombinedVibration](https://developer.android.com/reference/kotlin/android/os/CombinedVibration#) | The combined vibration representing the single effect to be played in all vibrators. This value cannot be`null`. |
+| [CombinedVibration](../android/os/CombinedVibration.md) | The combined vibration representing the single effect to be played in all vibrators. This value cannot be`null`. |
 
 ### describeContents
 
@@ -72,7 +72,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### startParallel
 
@@ -82,15 +82,15 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun startParallel(): CombinedVibration.ParallelCombination
 ```
 
-Start creating a vibration that plays effects in parallel on one or more vibrators. A parallel vibration takes one or more [VibrationEffects](https://developer.android.com/reference/kotlin/android/os/VibrationEffect) associated to individual vibrators to be performed at the same time.
+Start creating a vibration that plays effects in parallel on one or more vibrators. A parallel vibration takes one or more [VibrationEffects](../android/os/VibrationEffect.md) associated to individual vibrators to be performed at the same time.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [CombinedVibration.ParallelCombination](https://developer.android.com/reference/kotlin/android/os/CombinedVibration.ParallelCombination) | This value cannot be`null`. |
+| [CombinedVibration.ParallelCombination](../android/os/CombinedVibration.ParallelCombination.md) | This value cannot be`null`. |
 
 **See Also**
 
-- [android.os.CombinedVibration.ParallelCombination](https://developer.android.com/reference/kotlin/android/os/CombinedVibration.ParallelCombination)
+- [android.os.CombinedVibration.ParallelCombination](../android/os/CombinedVibration.ParallelCombination.md)
 
 ## Properties
 

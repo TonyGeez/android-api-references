@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ViewFactory
 
-Kotlin | [Java](https://developer.android.com/reference/android/widget/ViewSwitcher.ViewFactory "View this page in Java") 
+Kotlin | [Java](../android/widget/ViewSwitcher.ViewFactory.md) 
 | --- | --- |
 
 ```
 interface ViewFactory
 ```
 
-| [android.widget.ViewSwitcher.ViewFactory](https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher.ViewFactory#) |
+| [android.widget.ViewSwitcher.ViewFactory](../android/widget/ViewSwitcher.ViewFactory.md) |
 
 Creates views in a ViewSwitcher.
 
@@ -19,7 +19,7 @@ Creates views in a ViewSwitcher.
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [makeView](https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher.ViewFactory#makeView())`()` Creates a new [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be added in a [android.widget.ViewSwitcher](https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher). |
+| abstract [View](../android/view/View.md)! | [makeView](../android/widget/ViewSwitcher.ViewFactory.md))`()` Creates a new [android.view.View](../android/view/View.md) to be added in a [android.widget.ViewSwitcher](../android/widget/ViewSwitcher.md). |
 
 ## Public methods
 
@@ -31,8 +31,8 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun makeView(): View!
 ```
 
-Creates a new [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be added in a [android.widget.ViewSwitcher](https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher).
+Creates a new [android.view.View](../android/view/View.md) to be added in a [android.widget.ViewSwitcher](../android/widget/ViewSwitcher.md).
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | a [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |
+| [View](../android/view/View.md)! | a [android.view.View](../android/view/View.md) |

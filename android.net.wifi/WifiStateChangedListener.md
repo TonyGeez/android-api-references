@@ -4,14 +4,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiStateChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/WifiManager.WifiStateChangedListener "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/WifiManager.WifiStateChangedListener.md) 
 | --- | --- |
 
 ```
 interface WifiStateChangedListener
 ```
 
-| [android.net.wifi.WifiManager.WifiStateChangedListener](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WifiStateChangedListener#) |
+| [android.net.wifi.WifiManager.WifiStateChangedListener](../android/net/wifi/WifiManager.WifiStateChangedListener.md) |
 
 Listener interface for applications to be notified when the Wi-Fi enabled state changes.
 
@@ -19,7 +19,7 @@ Listener interface for applications to be notified when the Wi-Fi enabled state 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWifiStateChanged](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WifiStateChangedListener#onWifiStateChanged())`()` Called when the Wi-Fi enabled state changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWifiStateChanged](../android/net/wifi/WifiManager.WifiStateChangedListener.md))`()` Called when the Wi-Fi enabled state changes. |
 
 ## Public methods
 
@@ -31,4 +31,4 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onWifiStateChanged(): Unit
 ```
 
-Called when the Wi-Fi enabled state changes. The new value can be queried via [WifiManager.getWifiState()](https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()).
+Called when the Wi-Fi enabled state changes. The new value can be queried via [WifiManager.getWifiState()](../android/net/wifi/WifiManager.md)).

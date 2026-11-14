@@ -4,14 +4,14 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # OnKeyStatusChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaDrm.OnKeyStatusChangeListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaDrm.OnKeyStatusChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnKeyStatusChangeListener
 ```
 
-| [android.media.MediaDrm.OnKeyStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnKeyStatusChangeListener#) |
+| [android.media.MediaDrm.OnKeyStatusChangeListener](../android/media/MediaDrm.OnKeyStatusChangeListener.md) |
 
 Interface definition for a callback to be invoked when the keys in a drm session change states.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the keys in a drm session
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onKeyStatusChange](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnKeyStatusChangeListener#onKeyStatusChange(android.media.MediaDrm,%20kotlin.ByteArray,%20kotlin.collections.MutableList,%20kotlin.Boolean))`(`md:` ` [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `keyInformation:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MediaDrm.KeyStatus](https://developer.android.com/reference/kotlin/android/media/MediaDrm.KeyStatus)!>`, `hasNewUsableKey:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the keys in a session change status, such as when the license is renewed or expires. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onKeyStatusChange](../android/media/MediaDrm.OnKeyStatusChangeListener.md))`(`md:` ` [MediaDrm](../android/media/MediaDrm.md)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `keyInformation:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MediaDrm.KeyStatus](../android/media/MediaDrm.KeyStatus.md)!>`, `hasNewUsableKey:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the keys in a session change status, such as when the license is renewed or expires. |
 
 ## Public methods
 
@@ -40,8 +40,8 @@ Called when the keys in a session change status, such as when the license is ren
 
 | Parameters ||
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `md` | [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm):the MediaDrm object on which the event occurred This value cannot be`null`. |
+| `md` | [MediaDrm](../android/media/MediaDrm.md):the MediaDrm object on which the event occurred This value cannot be`null`. |
 | `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the DRM session ID on which the event occurred This value cannot be`null`. |
-| `keyInformation` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaDrm.KeyStatus](https://developer.android.com/reference/kotlin/android/media/MediaDrm.KeyStatus)!\>:a list of [MediaDrm.KeyStatus](https://developer.android.com/reference/kotlin/android/media/MediaDrm.KeyStatus) instances indicating the status for each key in the session This value cannot be`null`. |
+| `keyInformation` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaDrm.KeyStatus](../android/media/MediaDrm.KeyStatus.md)!\>:a list of [MediaDrm.KeyStatus](../android/media/MediaDrm.KeyStatus.md) instances indicating the status for each key in the session This value cannot be`null`. |
 | --- | --- |
 | `hasNewUsableKey` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key. |

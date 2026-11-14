@@ -4,12 +4,12 @@
 
 ## Classes
 
-| [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal) | Immutable, arbitrary-precision signed decimal numbers. |
+| [BigDecimal](../java/math/BigDecimal.md) | Immutable, arbitrary-precision signed decimal numbers. |
 | --- | --- |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger) | Immutable arbitrary-precision integers. |
-| [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext) | Immutable objects which encapsulate the context settings which describe certain rules for numerical operators, such as those implemented by the [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal) class. |
+| [BigInteger](../java/math/BigInteger.md) | Immutable arbitrary-precision integers. |
+| [MathContext](../java/math/MathContext.md) | Immutable objects which encapsulate the context settings which describe certain rules for numerical operators, such as those implemented by the [BigDecimal](../java/math/BigDecimal.md) class. |
 
 ## Enums
 
-| [RoundingMode](https://developer.android.com/reference/kotlin/java/math/RoundingMode) | Specifies a*rounding policy*for numerical operations capable of discarding precision. |
+| [RoundingMode](../java/math/RoundingMode.md) | Specifies a*rounding policy*for numerical operations capable of discarding precision. |
 | --- | --- |

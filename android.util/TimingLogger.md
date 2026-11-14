@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # TimingLogger
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/TimingLogger "View this page in Java") 
+Kotlin| [Java](../android/util/TimingLogger.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class TimingLogger
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.TimingLogger](https://developer.android.com/reference/kotlin/android/util/TimingLogger#) |
+| ↳ | [android.util.TimingLogger](../android/util/TimingLogger.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Use [android.os.Trace](https://developer.android.com/reference/kotlin/android/os/Trace.html#), or [Android Studio](https://developer.android.com/studio/profile/benchmark). In general, milliseconds is the wrong granularity for method-level tracing. Rounding errors can overemphasize cheap operations, or underemphasize repeated operations. This timing system also does not take CPU scheduling or frequency into account.
+| Use [android.os.Trace](../android/os/Trace.md), or [Android Studio](https://developer.android.com/studio/profile/benchmark). In general, milliseconds is the wrong granularity for method-level tracing. Rounding errors can overemphasize cheap operations, or underemphasize repeated operations. This timing system also does not take CPU scheduling or frequency into account.
 
 A utility class to help log timings splits throughout a method call. Typical usage is: 
 
@@ -51,15 +51,15 @@ D/TAG     ( 3459): methodA: begin
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TimingLogger](https://developer.android.com/reference/kotlin/android/util/TimingLogger#TimingLogger(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create and initialize a TimingLogger object that will log using the specific tag. |
+| [TimingLogger](../android/util/TimingLogger.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create and initialize a TimingLogger object that will log using the specific tag. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSplit](https://developer.android.com/reference/kotlin/android/util/TimingLogger#addSplit(kotlin.String))`(`splitLabel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a split for the current time, labeled with splitLabel. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpToLog](https://developer.android.com/reference/kotlin/android/util/TimingLogger#dumpToLog())`()` Dumps the timings to the log using Log. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/util/TimingLogger#reset())`()` Clear and initialize a TimingLogger object that will log using the tag and label that was specified previously, either via the constructor or a call to reset(tag, label). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSplit](../android/util/TimingLogger.md))`(`splitLabel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a split for the current time, labeled with splitLabel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpToLog](../android/util/TimingLogger.md))`()` Dumps the timings to the log using Log. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/util/TimingLogger.md))`()` Clear and initialize a TimingLogger object that will log using the tag and label that was specified previously, either via the constructor or a call to reset(tag, label). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/util/TimingLogger#reset(kotlin.String,%20kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Clear and initialize a TimingLogger object that will log using the specific tag. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/util/TimingLogger.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Clear and initialize a TimingLogger object that will log using the specific tag. |
 
 ## Public constructors
 

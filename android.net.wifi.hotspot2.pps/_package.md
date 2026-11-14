@@ -2,11 +2,11 @@
 
 # android.net.wifi.hotspot2.pps
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/hotspot2/pps/package-summary "View this page in Java")
+Kotlin| [Java](../android/net/wifi/hotspot2/pps/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential) | Class representing Credential subtree in the PerProviderSubscription (PPS) Management Object (MO) tree. |
+| [Credential](../android/net/wifi/hotspot2/pps/Credential.md) | Class representing Credential subtree in the PerProviderSubscription (PPS) Management Object (MO) tree. |
 | --- | --- |
-| [HomeSp](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp) | Class representing HomeSP subtree in PerProviderSubscription (PPS) Management Object (MO) tree. |
+| [HomeSp](../android/net/wifi/hotspot2/pps/HomeSp.md) | Class representing HomeSP subtree in PerProviderSubscription (PPS) Management Object (MO) tree. |

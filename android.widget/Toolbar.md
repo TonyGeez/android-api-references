@@ -8,9 +8,9 @@ open class Toolbar : ViewGroup
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) |||
-| | ↳ | [android.view.ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) ||
-| | | ↳ | [android.widget.Toolbar](https://developer.android.com/reference/kotlin/android/widget/Toolbar#) |
+| ↳ | [android.view.View](../android/view/View.md) |||
+| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) ||
+| | | ↳ | [android.widget.Toolbar](../android/widget/Toolbar.md) |
 | --- | --- | --- | --- |
 
 A standard toolbar for use within application content.
@@ -38,41 +38,41 @@ In modern Android UIs developers should lean more on a visually distinct color s
 
 | XML attributes ||
 |---|---|
-| [`android:buttonGravity`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
-| [`android:collapseContentDescription`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Text to set as the content description for the collapse button. |
-| [`android:collapseIcon`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Icon drawable to use for the collapse button. |
+| [`android:buttonGravity`](../android/widget/Toolbar.md) | |
+| [`android:collapseContentDescription`](../android/widget/Toolbar.md) | Text to set as the content description for the collapse button. |
+| [`android:collapseIcon`](../android/widget/Toolbar.md) | Icon drawable to use for the collapse button. |
 | --- | --- |
-| [`android:contentInsetEnd`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
-| [`android:contentInsetEndWithActions`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar when actions from a menu are present. |
-| [`android:contentInsetLeft`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
+| [`android:contentInsetEnd`](../android/widget/Toolbar.md) | Minimum inset for content views within a bar. |
+| [`android:contentInsetEndWithActions`](../android/widget/Toolbar.md) | Minimum inset for content views within a bar when actions from a menu are present. |
+| [`android:contentInsetLeft`](../android/widget/Toolbar.md) | Minimum inset for content views within a bar. |
 | --- | --- |
-| [`android:contentInsetRight`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
-| [`android:contentInsetStart`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar. |
-| [`android:contentInsetStartWithNavigation`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Minimum inset for content views within a bar when a navigation button is present, such as the Up button. |
+| [`android:contentInsetRight`](../android/widget/Toolbar.md) | Minimum inset for content views within a bar. |
+| [`android:contentInsetStart`](../android/widget/Toolbar.md) | Minimum inset for content views within a bar. |
+| [`android:contentInsetStartWithNavigation`](../android/widget/Toolbar.md) | Minimum inset for content views within a bar when a navigation button is present, such as the Up button. |
 | --- | --- |
-| [`android:gravity`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies how an object should position its content, on both the X and Y axes, within its own bounds. |
-| [`android:logo`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Drawable to set as the logo that appears at the starting side of the Toolbar, just after the navigation button. |
-| [`android:logoDescription`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | A content description string to describe the appearance of the associated logo image. |
+| [`android:gravity`](../android/widget/Toolbar.md) | Specifies how an object should position its content, on both the X and Y axes, within its own bounds. |
+| [`android:logo`](../android/widget/Toolbar.md) | Drawable to set as the logo that appears at the starting side of the Toolbar, just after the navigation button. |
+| [`android:logoDescription`](../android/widget/Toolbar.md) | A content description string to describe the appearance of the associated logo image. |
 | --- | --- |
-| [`android:maxButtonHeight`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
-| [`android:navigationContentDescription`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Text to set as the content description for the navigation button located at the start of the toolbar. |
-| [`android:navigationIcon`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Icon drawable to use for the navigation button located at the start of the toolbar. |
+| [`android:maxButtonHeight`](../android/widget/Toolbar.md) | |
+| [`android:navigationContentDescription`](../android/widget/Toolbar.md) | Text to set as the content description for the navigation button located at the start of the toolbar. |
+| [`android:navigationIcon`](../android/widget/Toolbar.md) | Icon drawable to use for the navigation button located at the start of the toolbar. |
 | --- | --- |
-| [`android:popupTheme`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Reference to a theme that should be used to inflate popups shown by widgets in the toolbar. |
-| [`android:subtitle`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies subtitle text used for navigationMode="normal". |
-| [`android:subtitleTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
+| [`android:popupTheme`](../android/widget/Toolbar.md) | Reference to a theme that should be used to inflate popups shown by widgets in the toolbar. |
+| [`android:subtitle`](../android/widget/Toolbar.md) | Specifies subtitle text used for navigationMode="normal". |
+| [`android:subtitleTextAppearance`](../android/widget/Toolbar.md) | |
 | --- | --- |
-| [`android:subtitleTextColor`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | A color to apply to the subtitle string. |
-| [`android:title`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | The title associated with the item. |
-| [`android:titleMargin`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the left, start, right and end sides of the toolbar's title. |
+| [`android:subtitleTextColor`](../android/widget/Toolbar.md) | A color to apply to the subtitle string. |
+| [`android:title`](../android/widget/Toolbar.md) | The title associated with the item. |
+| [`android:titleMargin`](../android/widget/Toolbar.md) | Specifies extra space on the left, start, right and end sides of the toolbar's title. |
 | --- | --- |
-| [`android:titleMarginBottom`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the bottom side of the toolbar's title. |
-| [`android:titleMarginEnd`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the end side of the toolbar's title. |
-| [`android:titleMarginStart`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the start side of the toolbar's title. |
+| [`android:titleMarginBottom`](../android/widget/Toolbar.md) | Specifies extra space on the bottom side of the toolbar's title. |
+| [`android:titleMarginEnd`](../android/widget/Toolbar.md) | Specifies extra space on the end side of the toolbar's title. |
+| [`android:titleMarginStart`](../android/widget/Toolbar.md) | Specifies extra space on the start side of the toolbar's title. |
 | --- | --- |
-| [`android:titleMarginTop`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | Specifies extra space on the top side of the toolbar's title. |
-| [`android:titleTextAppearance`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | |
-| [`android:titleTextColor`](https://developer.android.com/reference/kotlin/android/widget/Toolbar#attr_Toolbar) | A color to apply to the title string. |
+| [`android:titleMarginTop`](../android/widget/Toolbar.md) | Specifies extra space on the top side of the toolbar's title. |
+| [`android:titleTextAppearance`](../android/widget/Toolbar.md) | |
+| [`android:titleTextColor`](../android/widget/Toolbar.md) | A color to apply to the title string. |
 | --- | --- |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
@@ -686,7 +686,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -711,7 +711,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -721,7 +721,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -741,7 +741,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -751,7 +751,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -761,7 +761,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -771,7 +771,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -781,7 +781,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -791,7 +791,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -801,7 +801,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -811,7 +811,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -821,7 +821,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -831,7 +831,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1001,7 +1001,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1021,7 +1021,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1063,7 +1063,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1159,7 +1159,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1253,7 +1253,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1710,7 +1710,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1785,10 +1785,10 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#collapseActionView()()` Collapse a currently expanded action view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#dismissPopupMenus()()` Dismiss all currently showing popup menus, including overflow or submenus. |
-| open [Toolbar.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/Toolbar.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
+| open [Toolbar.LayoutParams](../android/widget/Toolbar.LayoutParams.md)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateLayoutParams(android.util.AttributeSet)(attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Returns a new set of layout parameters based on the supplied attributes set. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCollapseContentDescription()()` Retrieve the currently configured content description for the collapse button view. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCollapseIcon()()` Return the current drawable used as the collapse icon. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCollapseIcon()()` Return the current drawable used as the collapse icon. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetEnd()()` Gets the ending content inset for this toolbar. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getContentInsetEndWithActions()()` Gets the end content inset to use when action buttons are present. |
@@ -1803,13 +1803,13 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCurrentContentInsetRight()()` Gets the content inset that will be used on the right side of the bar in the current toolbar configuration. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getCurrentContentInsetStart()()` Gets the content inset that will be used on the starting side of the bar in the current toolbar configuration. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getLogo()()` Return the current logo drawable. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getLogo()()` Return the current logo drawable. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getLogoDescription()()` Return the description of the toolbar's logo. |
-| open [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getMenu()()` Return the Menu shown in the toolbar. |
+| open [Menu](../android/view/Menu.md)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getMenu()()` Return the Menu shown in the toolbar. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getNavigationContentDescription()()` Retrieve the currently configured content description for the navigation button view. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getNavigationIcon()()` Return the current drawable used as the navigation icon. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getOverflowIcon()()` Return the current drawable used as the overflow icon. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getNavigationIcon()()` Return the current drawable used as the navigation icon. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getOverflowIcon()()` Return the current drawable used as the overflow icon. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getPopupTheme()()` <br /> |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#getSubtitle()()` Return the subtitle of this toolbar. |
@@ -1877,8 +1877,8 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | Protected methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#checkLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` <br /> |
-| open [Toolbar.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/Toolbar.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
-| open [Toolbar.LayoutParams](https://developer.android.com/reference/kotlin/android/widget/Toolbar.LayoutParams)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
+| open [Toolbar.LayoutParams](../android/widget/Toolbar.LayoutParams.md)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateDefaultLayoutParams()()` Returns a set of default layout parameters. |
+| open [Toolbar.LayoutParams](../android/widget/Toolbar.LayoutParams.md)! | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#generateLayoutParams(android.view.ViewGroup.LayoutParams)(p: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#!)` Returns a safe set of layout parameters based on the supplied layout params. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onAttachedToWindow()()` This is called when the view is attached to a window. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onDetachedFromWindow()()` This is called when the view is detached from a window. |
@@ -1886,7 +1886,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onMeasure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Measure the view and its content to determine the measured width and the measured height. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
-| open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/Toolbar#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | --- | --- |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -7610,7 +7610,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View.html#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -8653,7 +8653,7 @@ Returns a new set of layout parameters based on the supplied attributes set.
 
 | Parameters ||
 |---|---|
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: the attributes to build the layout parameters from |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: the attributes to build the layout parameters from |
 
 | Return ||
 |---|---|
@@ -9238,7 +9238,7 @@ The collapse button appears at the start of the toolbar when an action view is p
 
 | Parameters ||
 |---|---|
-| `icon` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: Drawable to set, may be null to use the default icon |
+| `icon` | [Drawable](../android/graphics/drawable/Drawable.md)?: Drawable to set, may be null to use the default icon |
 
 ### setCollapseIcon
 
@@ -9366,7 +9366,7 @@ This drawable should generally take the place of title text. The logo cannot be 
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: Drawable to use as a logo |
+| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: Drawable to use as a logo |
 
 ### setLogo
 
@@ -9460,7 +9460,7 @@ If you use a navigation icon you should also set a description for its action us
 
 | Parameters ||
 |---|---|
-| `icon` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: Drawable to set, may be null to clear the icon |
+| `icon` | [Drawable](../android/graphics/drawable/Drawable.md)?: Drawable to set, may be null to clear the icon |
 
 ### setNavigationIcon
 
@@ -9494,7 +9494,7 @@ This listener will be called whenever the user clicks the navigation button at t
 
 | Parameters ||
 |---|---|
-| `listener` | [View.OnClickListener](https://developer.android.com/reference/kotlin/android/view/View.OnClickListener.html#)!: Listener to set |
+| `listener` | [View.OnClickListener](../android/view/View.OnClickListener.md)!: Listener to set |
 
 **See Also**
 
@@ -9514,7 +9514,7 @@ This listener will be invoked whenever a user selects a menu item from the actio
 
 | Parameters ||
 |---|---|
-| `listener` | [Toolbar.OnMenuItemClickListener](https://developer.android.com/reference/kotlin/android/widget/Toolbar.OnMenuItemClickListener)!: Listener to set |
+| `listener` | [Toolbar.OnMenuItemClickListener](../android/widget/Toolbar.OnMenuItemClickListener.md)!: Listener to set |
 
 ### setOverflowIcon
 
@@ -9528,7 +9528,7 @@ Set the icon to use for the overflow button.
 
 | Parameters ||
 |---|---|
-| `icon` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: Drawable to set, may be null to clear the icon |
+| `icon` | [Drawable](../android/graphics/drawable/Drawable.md)?: Drawable to set, may be null to clear the icon |
 
 ### setPopupTheme
 
@@ -9818,7 +9818,7 @@ Returns a safe set of layout parameters based on the supplied layout params. Whe
 
 | Parameters ||
 |---|---|
-| `p` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: The layout parameters to convert into a suitable set of layout parameters for this ViewGroup. |
+| `p` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: The layout parameters to convert into a suitable set of layout parameters for this ViewGroup. |
 
 | Return ||
 |---|---|
@@ -9908,7 +9908,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 
 ### onSaveInstanceState
 

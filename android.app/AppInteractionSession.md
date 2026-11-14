@@ -8,7 +8,7 @@ class AppInteractionSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.AppInteractionSession](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession#) |
+| ↳ | [android.app.AppInteractionSession](../android/app/AppInteractionSession.md) |
 
 Represents an app interaction session.
 
@@ -95,8 +95,8 @@ Adds a listener to receive session lifecycle events.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [AppInteractionSession.LifecycleListener](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener): The `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener` to receive lifecycle events. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [AppInteractionSession.LifecycleListener](../android/app/AppInteractionSession.LifecycleListener.md): The `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener` to receive lifecycle events. This value cannot be `null`. |
 
 ### close
 
@@ -124,7 +124,7 @@ Removes a previously registered session lifecycle listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [AppInteractionSession.LifecycleListener](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener): The `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener` that should no longer receive lifecycle events. This value cannot be `null`. |
+| `listener` | [AppInteractionSession.LifecycleListener](../android/app/AppInteractionSession.LifecycleListener.md): The `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener` that should no longer receive lifecycle events. This value cannot be `null`. |
 
 ### update
 
@@ -142,7 +142,7 @@ Updates the session with the given `params`.
 
 | Parameters ||
 |---|---|
-| `params` | [AppInteractionSession.UpdateParams](https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.UpdateParams): The parameters to update the session with. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!, [AppInteractionException](https://developer.android.com/reference/kotlin/android/app/AppInteractionException)!\>: The `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` to receive the result of the update. This value cannot be `null`. |
+| `params` | [AppInteractionSession.UpdateParams](../android/app/AppInteractionSession.UpdateParams.md): The parameters to update the session with. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [AppInteractionException](../android/app/AppInteractionException.md)!\>: The `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` to receive the result of the update. This value cannot be `null`. |
 | --- | --- |

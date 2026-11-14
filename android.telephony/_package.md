@@ -2,125 +2,125 @@
 
 # android.telephony
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/package-summary "View this page in Java")
+Kotlin| [Java](../android/telephony/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [CarrierConfigChangeListener](https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.CarrierConfigChangeListener) | Listener interface to get a notification when the carrier configurations have changed. |
+| [CarrierConfigChangeListener](../android/telephony/CarrierConfigManager.CarrierConfigChangeListener.md) | Listener interface to get a notification when the carrier configurations have changed. |
 | --- | --- |
-| [ActiveDataSubscriptionIdListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener) | Interface for active data subscription ID listener. |
-| [BarringInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.BarringInfoListener) | Interface for barring information listener. |
-| [CallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallDisconnectCauseListener) | Interface for call disconnect cause listener. |
+| [ActiveDataSubscriptionIdListener](../android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.md) | Interface for active data subscription ID listener. |
+| [BarringInfoListener](../android/telephony/TelephonyCallback.BarringInfoListener.md) | Interface for barring information listener. |
+| [CallDisconnectCauseListener](../android/telephony/TelephonyCallback.CallDisconnectCauseListener.md) | Interface for call disconnect cause listener. |
 | --- | --- |
-| [CallForwardingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallForwardingIndicatorListener) | Interface for call-forwarding indicator listener. |
-| [CallStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallStateListener) | Interface for call state listener. |
-| [CarrierNetworkListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CarrierNetworkListener) | Interface for carrier network listener. |
+| [CallForwardingIndicatorListener](../android/telephony/TelephonyCallback.CallForwardingIndicatorListener.md) | Interface for call-forwarding indicator listener. |
+| [CallStateListener](../android/telephony/TelephonyCallback.CallStateListener.md) | Interface for call state listener. |
+| [CarrierNetworkListener](../android/telephony/TelephonyCallback.CarrierNetworkListener.md) | Interface for carrier network listener. |
 | --- | --- |
-| [CellInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellInfoListener) | Interface for cell info listener. |
-| [CellLocationListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellLocationListener) | Interface for device cell location listener. |
-| [DataActivationStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivationStateListener) | Interface for SIM data activation state listener. |
+| [CellInfoListener](../android/telephony/TelephonyCallback.CellInfoListener.md) | Interface for cell info listener. |
+| [CellLocationListener](../android/telephony/TelephonyCallback.CellLocationListener.md) | Interface for device cell location listener. |
+| [DataActivationStateListener](../android/telephony/TelephonyCallback.DataActivationStateListener.md) | Interface for SIM data activation state listener. |
 | --- | --- |
-| [DataActivityListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataActivityListener) | Interface for data activity state listener. |
-| [DataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DataConnectionStateListener) | Interface for data connection state listener. |
-| [DisplayInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.DisplayInfoListener) | Interface for display info listener. |
+| [DataActivityListener](../android/telephony/TelephonyCallback.DataActivityListener.md) | Interface for data activity state listener. |
+| [DataConnectionStateListener](../android/telephony/TelephonyCallback.DataConnectionStateListener.md) | Interface for data connection state listener. |
+| [DisplayInfoListener](../android/telephony/TelephonyCallback.DisplayInfoListener.md) | Interface for display info listener. |
 | --- | --- |
-| [EmergencyNumberListListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.EmergencyNumberListListener) | Interface for the current emergency number list listener. |
-| [ImsCallDisconnectCauseListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener) | Interface for IMS call disconnect cause listener. |
-| [MessageWaitingIndicatorListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener) | Interface for message waiting indicator listener. |
+| [EmergencyNumberListListener](../android/telephony/TelephonyCallback.EmergencyNumberListListener.md) | Interface for the current emergency number list listener. |
+| [ImsCallDisconnectCauseListener](../android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.md) | Interface for IMS call disconnect cause listener. |
+| [MessageWaitingIndicatorListener](../android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.md) | Interface for message waiting indicator listener. |
 | --- | --- |
-| [PhysicalChannelConfigListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.PhysicalChannelConfigListener) | Interface for current physical channel configuration listener. |
-| [PreciseDataConnectionStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener) | Interface for precise data connection state listener. |
-| [RegistrationFailedListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.RegistrationFailedListener) | Interface for registration failures listener. |
+| [PhysicalChannelConfigListener](../android/telephony/TelephonyCallback.PhysicalChannelConfigListener.md) | Interface for current physical channel configuration listener. |
+| [PreciseDataConnectionStateListener](../android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.md) | Interface for precise data connection state listener. |
+| [RegistrationFailedListener](../android/telephony/TelephonyCallback.RegistrationFailedListener.md) | Interface for registration failures listener. |
 | --- | --- |
-| [ServiceStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener) | Interface for service state listener. |
-| [SignalStrengthsListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener) | Interface for network signal strengths listener. |
-| [UserMobileDataStateListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.UserMobileDataStateListener) | Interface for user mobile data state listener. |
+| [ServiceStateListener](../android/telephony/TelephonyCallback.ServiceStateListener.md) | Interface for service state listener. |
+| [SignalStrengthsListener](../android/telephony/TelephonyCallback.SignalStrengthsListener.md) | Interface for network signal strengths listener. |
+| [UserMobileDataStateListener](../android/telephony/TelephonyCallback.UserMobileDataStateListener.md) | Interface for user mobile data state listener. |
 | --- | --- |
 
 ## Classes
 
-| [AccessNetworkConstants](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants) | Contains access network related constants. |
+| [AccessNetworkConstants](../android/telephony/AccessNetworkConstants.md) | Contains access network related constants. |
 | --- | --- |
-| [AvailableNetworkInfo](https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo) | Defines available network information which includes corresponding subscription id, network plmns and corresponding priority to be used for network selection by Opportunistic Network Service when passed through [TelephonyManager.updateAvailableNetworks](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#updateAvailableNetworks(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20java.util.function.Consumer)) |
-| [BarringInfo](https://developer.android.com/reference/kotlin/android/telephony/BarringInfo) | Provides the barring configuration for a particular service type. |
-| [CarrierConfigManager](https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager) | Provides access to telephony configuration values that are carrier-specific. |
+| [AvailableNetworkInfo](../android/telephony/AvailableNetworkInfo.md) | Defines available network information which includes corresponding subscription id, network plmns and corresponding priority to be used for network selection by Opportunistic Network Service when passed through [TelephonyManager.updateAvailableNetworks](../android/telephony/TelephonyManager.md)) |
+| [BarringInfo](../android/telephony/BarringInfo.md) | Provides the barring configuration for a particular service type. |
+| [CarrierConfigManager](../android/telephony/CarrierConfigManager.md) | Provides access to telephony configuration values that are carrier-specific. |
 | --- | --- |
-| [CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity) | CellIdentity represents the identity of a unique cell. |
-| [CellIdentityCdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityCdma) | CellIdentity is to represent a unique CDMA cell |
-| [CellIdentityGsm](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityGsm) | CellIdentity to represent a unique GSM cell |
+| [CellIdentity](../android/telephony/CellIdentity.md) | CellIdentity represents the identity of a unique cell. |
+| [CellIdentityCdma](../android/telephony/CellIdentityCdma.md) | CellIdentity is to represent a unique CDMA cell |
+| [CellIdentityGsm](../android/telephony/CellIdentityGsm.md) | CellIdentity to represent a unique GSM cell |
 | --- | --- |
-| [CellIdentityLte](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityLte) | CellIdentity is to represent a unique LTE cell |
-| [CellIdentityNr](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityNr) | Information to represent a unique NR(New Radio 5G) cell. |
-| [CellIdentityTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityTdscdma) | CellIdentity is to represent a unique TD-SCDMA cell |
+| [CellIdentityLte](../android/telephony/CellIdentityLte.md) | CellIdentity is to represent a unique LTE cell |
+| [CellIdentityNr](../android/telephony/CellIdentityNr.md) | Information to represent a unique NR(New Radio 5G) cell. |
+| [CellIdentityTdscdma](../android/telephony/CellIdentityTdscdma.md) | CellIdentity is to represent a unique TD-SCDMA cell |
 | --- | --- |
-| [CellIdentityWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellIdentityWcdma) | CellIdentity to represent a unique UMTS cell |
-| [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) | Immutable cell information from a point in time. |
-| [CellInfoCdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoCdma) | A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) representing a CDMA cell that provides identity and measurement info. |
+| [CellIdentityWcdma](../android/telephony/CellIdentityWcdma.md) | CellIdentity to represent a unique UMTS cell |
+| [CellInfo](../android/telephony/CellInfo.md) | Immutable cell information from a point in time. |
+| [CellInfoCdma](../android/telephony/CellInfoCdma.md) | A [CellInfo](../android/telephony/CellInfo.md) representing a CDMA cell that provides identity and measurement info. |
 | --- | --- |
-| [CellInfoGsm](https://developer.android.com/reference/kotlin/android/telephony/CellInfoGsm) | A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) representing a GSM cell that provides identity and measurement info. |
-| [CellInfoLte](https://developer.android.com/reference/kotlin/android/telephony/CellInfoLte) | A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) representing an LTE cell that provides identity and measurement info. |
-| [CellInfoNr](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr) | A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) representing an 5G NR cell that provides identity and measurement info. |
+| [CellInfoGsm](../android/telephony/CellInfoGsm.md) | A [CellInfo](../android/telephony/CellInfo.md) representing a GSM cell that provides identity and measurement info. |
+| [CellInfoLte](../android/telephony/CellInfoLte.md) | A [CellInfo](../android/telephony/CellInfo.md) representing an LTE cell that provides identity and measurement info. |
+| [CellInfoNr](../android/telephony/CellInfoNr.md) | A [CellInfo](../android/telephony/CellInfo.md) representing an 5G NR cell that provides identity and measurement info. |
 | --- | --- |
-| [CellInfoTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma) | A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) representing a TD-SCDMA cell that provides identity and measurement info. |
-| [CellInfoWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoWcdma) | A [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo) representing a WCDMA cell that provides identity and measurement info. |
-| [CellLocation](https://developer.android.com/reference/kotlin/android/telephony/CellLocation) | Abstract class that represents the location of the device. |
+| [CellInfoTdscdma](../android/telephony/CellInfoTdscdma.md) | A [CellInfo](../android/telephony/CellInfo.md) representing a TD-SCDMA cell that provides identity and measurement info. |
+| [CellInfoWcdma](../android/telephony/CellInfoWcdma.md) | A [CellInfo](../android/telephony/CellInfo.md) representing a WCDMA cell that provides identity and measurement info. |
+| [CellLocation](../android/telephony/CellLocation.md) | Abstract class that represents the location of the device. |
 | --- | --- |
-| [CellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength) | Abstract base class for cell phone signal strength related information. |
-| [CellSignalStrengthCdma](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthCdma) | Signal strength related information. |
-| [CellSignalStrengthGsm](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthGsm) | GSM signal strength related information. |
+| [CellSignalStrength](../android/telephony/CellSignalStrength.md) | Abstract base class for cell phone signal strength related information. |
+| [CellSignalStrengthCdma](../android/telephony/CellSignalStrengthCdma.md) | Signal strength related information. |
+| [CellSignalStrengthGsm](../android/telephony/CellSignalStrengthGsm.md) | GSM signal strength related information. |
 | --- | --- |
-| [CellSignalStrengthLte](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte) | LTE signal strength related information. |
-| [CellSignalStrengthNr](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthNr) | 5G NR signal strength related information. |
-| [CellSignalStrengthTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthTdscdma) | Tdscdma signal strength related information. |
+| [CellSignalStrengthLte](../android/telephony/CellSignalStrengthLte.md) | LTE signal strength related information. |
+| [CellSignalStrengthNr](../android/telephony/CellSignalStrengthNr.md) | 5G NR signal strength related information. |
+| [CellSignalStrengthTdscdma](../android/telephony/CellSignalStrengthTdscdma.md) | Tdscdma signal strength related information. |
 | --- | --- |
-| [CellSignalStrengthWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthWcdma) | Wcdma signal strength related information. |
-| [ClosedSubscriberGroupInfo](https://developer.android.com/reference/kotlin/android/telephony/ClosedSubscriberGroupInfo) | Information to represent a closed subscriber group. |
-| [DataFailCause](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause) | DataFailCause collects data connection failure causes code from different sources. |
+| [CellSignalStrengthWcdma](../android/telephony/CellSignalStrengthWcdma.md) | Wcdma signal strength related information. |
+| [ClosedSubscriberGroupInfo](../android/telephony/ClosedSubscriberGroupInfo.md) | Information to represent a closed subscriber group. |
+| [DataFailCause](../android/telephony/DataFailCause.md) | DataFailCause collects data connection failure causes code from different sources. |
 | --- | --- |
-| [DisconnectCause](https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause) | Describes the cause of a disconnected call. |
-| [IccOpenLogicalChannelResponse](https://developer.android.com/reference/kotlin/android/telephony/IccOpenLogicalChannelResponse) | Response to the android. |
-| [MbmsDownloadSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession) | This class provides functionality for file download over MBMS. |
+| [DisconnectCause](../android/telephony/DisconnectCause.md) | Describes the cause of a disconnected call. |
+| [IccOpenLogicalChannelResponse](../android/telephony/IccOpenLogicalChannelResponse.md) | Response to the android. |
+| [MbmsDownloadSession](../android/telephony/MbmsDownloadSession.md) | This class provides functionality for file download over MBMS. |
 | --- | --- |
-| [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession) | This class provides functionality for accessing group call functionality over MBMS. |
-| [MbmsStreamingSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession) | This class provides functionality for streaming media over MBMS. |
-| [NeighboringCellInfo](https://developer.android.com/reference/kotlin/android/telephony/NeighboringCellInfo) | Represents the neighboring cell information, including Received Signal Strength and Cell ID location. |
+| [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) | This class provides functionality for accessing group call functionality over MBMS. |
+| [MbmsStreamingSession](../android/telephony/MbmsStreamingSession.md) | This class provides functionality for streaming media over MBMS. |
+| [NeighboringCellInfo](../android/telephony/NeighboringCellInfo.md) | Represents the neighboring cell information, including Received Signal Strength and Cell ID location. |
 | --- | --- |
-| [NetworkRegistrationInfo](https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo) | Description of a mobile network registration info |
-| [NetworkScan](https://developer.android.com/reference/kotlin/android/telephony/NetworkScan) | The caller of android. |
-| [NetworkScanRequest](https://developer.android.com/reference/kotlin/android/telephony/NetworkScanRequest) | Defines a request to perform a network scan. |
+| [NetworkRegistrationInfo](../android/telephony/NetworkRegistrationInfo.md) | Description of a mobile network registration info |
+| [NetworkScan](../android/telephony/NetworkScan.md) | The caller of android. |
+| [NetworkScanRequest](../android/telephony/NetworkScanRequest.md) | Defines a request to perform a network scan. |
 | --- | --- |
-| [ParsedPhoneNumber](https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber) | Handles the results from PhoneNumberManager by providing Phone number, error code, and is valid number. |
-| [PhoneNumberFormattingTextWatcher](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberFormattingTextWatcher) | Watches a [android.widget.TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#) and if a phone number is entered will format it. |
-| [PhoneNumberManager](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager) | PhoneNumberManager provides APIs for parsing phone numbers from various sources, such as URIs. |
+| [ParsedPhoneNumber](../android/telephony/ParsedPhoneNumber.md) | Handles the results from PhoneNumberManager by providing Phone number, error code, and is valid number. |
+| [PhoneNumberFormattingTextWatcher](../android/telephony/PhoneNumberFormattingTextWatcher.md) | Watches a [android.widget.TextView](../android/widget/TextView.md) and if a phone number is entered will format it. |
+| [PhoneNumberManager](../android/telephony/PhoneNumberManager.md) | PhoneNumberManager provides APIs for parsing phone numbers from various sources, such as URIs. |
 | --- | --- |
-| [PhoneNumberUtils](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils) | Various utilities for dealing with phone number strings. |
-| [PhoneStateListener](https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener) | A listener class for monitoring changes in specific telephony states on the device, including service state, signal strength, message waiting indicator (voicemail), and others. |
-| [PhysicalChannelConfig](https://developer.android.com/reference/kotlin/android/telephony/PhysicalChannelConfig) | <br /> |
+| [PhoneNumberUtils](../android/telephony/PhoneNumberUtils.md) | Various utilities for dealing with phone number strings. |
+| [PhoneStateListener](../android/telephony/PhoneStateListener.md) | A listener class for monitoring changes in specific telephony states on the device, including service state, signal strength, message waiting indicator (voicemail), and others. |
+| [PhysicalChannelConfig](../android/telephony/PhysicalChannelConfig.md) | <br /> |
 | --- | --- |
-| [PreciseDataConnectionState](https://developer.android.com/reference/kotlin/android/telephony/PreciseDataConnectionState) | Contains precise data connection state. |
-| [RadioAccessSpecifier](https://developer.android.com/reference/kotlin/android/telephony/RadioAccessSpecifier) | Describes a particular radio access network to be scanned. |
-| [ServiceState](https://developer.android.com/reference/kotlin/android/telephony/ServiceState) | Contains phone state and service related information. |
+| [PreciseDataConnectionState](../android/telephony/PreciseDataConnectionState.md) | Contains precise data connection state. |
+| [RadioAccessSpecifier](../android/telephony/RadioAccessSpecifier.md) | Describes a particular radio access network to be scanned. |
+| [ServiceState](../android/telephony/ServiceState.md) | Contains phone state and service related information. |
 | --- | --- |
-| [SignalStrength](https://developer.android.com/reference/kotlin/android/telephony/SignalStrength) | Contains phone signal strength related information. |
-| [SignalStrengthUpdateRequest](https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest) | Request used to register [SignalThresholdInfo](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo) to be notified when the signal strength breach the specified thresholds. |
-| [SignalThresholdInfo](https://developer.android.com/reference/kotlin/android/telephony/SignalThresholdInfo) | Defines the threshold value of the signal strength. |
+| [SignalStrength](../android/telephony/SignalStrength.md) | Contains phone signal strength related information. |
+| [SignalStrengthUpdateRequest](../android/telephony/SignalStrengthUpdateRequest.md) | Request used to register [SignalThresholdInfo](../android/telephony/SignalThresholdInfo.md) to be notified when the signal strength breach the specified thresholds. |
+| [SignalThresholdInfo](../android/telephony/SignalThresholdInfo.md) | Defines the threshold value of the signal strength. |
 | --- | --- |
-| [SmsManager](https://developer.android.com/reference/kotlin/android/telephony/SmsManager) | Manages SMS operations such as sending data, text, and pdu SMS messages. |
-| [SmsMessage](https://developer.android.com/reference/kotlin/android/telephony/SmsMessage) | A Short Message Service message. |
-| [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo) | A Parcelable class for Subscription Information. |
+| [SmsManager](../android/telephony/SmsManager.md) | Manages SMS operations such as sending data, text, and pdu SMS messages. |
+| [SmsMessage](../android/telephony/SmsMessage.md) | A Short Message Service message. |
+| [SubscriptionInfo](../android/telephony/SubscriptionInfo.md) | A Parcelable class for Subscription Information. |
 | --- | --- |
-| [SubscriptionManager](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager) | Subscription manager provides the mobile subscription information. |
-| [SubscriptionPlan](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan) | Description of a billing relationship plan between a carrier and a specific subscriber. |
-| [TelephonyCallback](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback) | A callback class for monitoring changes in specific telephony states on the device, including service state, signal strength, message waiting indicator (voicemail), and others. |
+| [SubscriptionManager](../android/telephony/SubscriptionManager.md) | Subscription manager provides the mobile subscription information. |
+| [SubscriptionPlan](../android/telephony/SubscriptionPlan.md) | Description of a billing relationship plan between a carrier and a specific subscriber. |
+| [TelephonyCallback](../android/telephony/TelephonyCallback.md) | A callback class for monitoring changes in specific telephony states on the device, including service state, signal strength, message waiting indicator (voicemail), and others. |
 | --- | --- |
-| [TelephonyDisplayInfo](https://developer.android.com/reference/kotlin/android/telephony/TelephonyDisplayInfo) | TelephonyDisplayInfo contains telephony-related information used for display purposes only. |
-| [TelephonyManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager) | Provides access to information about the telephony services on the device. |
-| [TelephonyScanManager](https://developer.android.com/reference/kotlin/android/telephony/TelephonyScanManager) | Manages the radio access network scan requests and callbacks. |
+| [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md) | TelephonyDisplayInfo contains telephony-related information used for display purposes only. |
+| [TelephonyManager](../android/telephony/TelephonyManager.md) | Provides access to information about the telephony services on the device. |
+| [TelephonyScanManager](../android/telephony/TelephonyScanManager.md) | Manages the radio access network scan requests and callbacks. |
 | --- | --- |
-| [UiccCardInfo](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo) | The UiccCardInfo represents information about a currently inserted UICC or embedded eUICC. |
-| [UiccPortInfo](https://developer.android.com/reference/kotlin/android/telephony/UiccPortInfo) | UiccPortInfo class represents information about a single port contained on [UiccCardInfo](https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo). |
-| [VisualVoicemailService](https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService) | This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails. |
+| [UiccCardInfo](../android/telephony/UiccCardInfo.md) | The UiccCardInfo represents information about a currently inserted UICC or embedded eUICC. |
+| [UiccPortInfo](../android/telephony/UiccPortInfo.md) | UiccPortInfo class represents information about a single port contained on [UiccCardInfo](../android/telephony/UiccCardInfo.md). |
+| [VisualVoicemailService](../android/telephony/VisualVoicemailService.md) | This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails. |
 | --- | --- |
-| [VisualVoicemailSms](https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms) | Represents the content of a visual voicemail SMS. |
-| [VisualVoicemailSmsFilterSettings](https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings) | Class to represent various settings for the visual voicemail SMS filter. |
+| [VisualVoicemailSms](../android/telephony/VisualVoicemailSms.md) | Represents the content of a visual voicemail SMS. |
+| [VisualVoicemailSmsFilterSettings](../android/telephony/VisualVoicemailSmsFilterSettings.md) | Class to represent various settings for the visual voicemail SMS filter. |

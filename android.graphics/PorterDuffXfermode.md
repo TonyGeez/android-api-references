@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PorterDuffXfermode
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/PorterDuffXfermode "View this page in Java") 
+Kotlin| [Java](../android/graphics/PorterDuffXfermode.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ open class PorterDuffXfermode : Xfermode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.Xfermode](https://developer.android.com/reference/kotlin/android/graphics/Xfermode) ||
-| | ↳ | [android.graphics.PorterDuffXfermode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuffXfermode#) |
+| ↳ | [android.graphics.Xfermode](../android/graphics/Xfermode.md) ||
+| | ↳ | [android.graphics.PorterDuffXfermode](../android/graphics/PorterDuffXfermode.md) |
 
-Specialized implementation of [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint)'s [transfer mode](https://developer.android.com/reference/kotlin/android/graphics/Paint#setXfermode(android.graphics.Xfermode)). Refer to the documentation of the [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode) enum for more information on the available alpha compositing and blending modes.
+Specialized implementation of [Paint](../android/graphics/Paint.md)'s [transfer mode](../android/graphics/Paint.md)). Refer to the documentation of the [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md) enum for more information on the available alpha compositing and blending modes.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PorterDuffXfermode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuffXfermode#PorterDuffXfermode(android.graphics.PorterDuff.Mode))`(`mode:` ` [PorterDuff.Mode](https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode)!`)` <br /> |
+| [PorterDuffXfermode](../android/graphics/PorterDuffXfermode.md))`(`mode:` ` [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)!`)` <br /> |
 
 ## Public constructors
 

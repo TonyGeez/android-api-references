@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PhoneNumberUtils
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/PhoneNumberUtils "View this page in Java") 
+Kotlin| [Java](../android/telephony/PhoneNumberUtils.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class PhoneNumberUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.PhoneNumberUtils](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#) |
+| ↳ | [android.telephony.PhoneNumberUtils](../android/telephony/PhoneNumberUtils.md) |
 
 Various utilities for dealing with phone number strings.
 
@@ -21,87 +21,87 @@ Various utilities for dealing with phone number strings.
 
 | Constants ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BCD_EXTENDED_TYPE_CALLED_PARTY](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JAPAN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#FORMAT_JAPAN:kotlin.Int) Japanese formatting |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BCD_EXTENDED_TYPE_CALLED_PARTY](../android/telephony/PhoneNumberUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JAPAN](../android/telephony/PhoneNumberUtils.md) Japanese formatting |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NANP](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#FORMAT_NANP:kotlin.Int) NANP formatting |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#FORMAT_UNKNOWN:kotlin.Int) The current locale is unknown, look for a country code or don't format |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [PAUSE](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#PAUSE:kotlin.Char) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NANP](../android/telephony/PhoneNumberUtils.md) NANP formatting |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNKNOWN](../android/telephony/PhoneNumberUtils.md) The current locale is unknown, look for a country code or don't format |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [PAUSE](../android/telephony/PhoneNumberUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOA_International](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#TOA_International:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOA_Unknown](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#TOA_Unknown:kotlin.Int) <br /> |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [WAIT](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#WAIT:kotlin.Char) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOA_International](../android/telephony/PhoneNumberUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOA_Unknown](../android/telephony/PhoneNumberUtils.md) <br /> |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [WAIT](../android/telephony/PhoneNumberUtils.md) <br /> |
 | --- | --- |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [WILD](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#WILD:kotlin.Char) <br /> |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [WILD](../android/telephony/PhoneNumberUtils.md) <br /> |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PhoneNumberUtils](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#PhoneNumberUtils())`()` <br /> |
+| [PhoneNumberUtils](../android/telephony/PhoneNumberUtils.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTtsSpan](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#addTtsSpan(android.text.Spannable,%20kotlin.Int,%20kotlin.Int))`(`s:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endExclusive:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attach a [TtsSpan](https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.html#) to the supplied`Spannable`at the indicated location, annotating that location as containing a phone number. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areSamePhoneNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#areSamePhoneNumber(kotlin.String,%20kotlin.String,%20kotlin.String))`(`number1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `number2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Determines if two phone numbers are the same. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDFragmentToString](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDFragmentToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Like calledPartyBCDToString, but field does not start with a TOA byte. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTtsSpan](../android/telephony/PhoneNumberUtils.md))`(`s:` ` [Spannable](../android/text/Spannable.md)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endExclusive:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attach a [TtsSpan](../android/text/style/TtsSpan.md) to the supplied`Spannable`at the indicated location, annotating that location as containing a phone number. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areSamePhoneNumber](../android/telephony/PhoneNumberUtils.md))`(`number1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `number2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Determines if two phone numbers are the same. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDFragmentToString](../android/telephony/PhoneNumberUtils.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Like calledPartyBCDToString, but field does not start with a TOA byte. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDFragmentToString](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDFragmentToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bcdExtType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Like calledPartyBCDToString, but field does not start with a TOA byte. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDToString](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` 3GPP TS 24. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDToString](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bcdExtType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` 3GPP TS 24. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDFragmentToString](../android/telephony/PhoneNumberUtils.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bcdExtType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Like calledPartyBCDToString, but field does not start with a TOA byte. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDToString](../android/telephony/PhoneNumberUtils.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` 3GPP TS 24. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [calledPartyBCDToString](../android/telephony/PhoneNumberUtils.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bcdExtType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` 3GPP TS 24. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compare](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#compare(android.content.Context,%20kotlin.String,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compare phone numbers a and b, and return true if they're identical enough for caller ID purposes. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compare](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#compare(kotlin.String,%20kotlin.String))`(`a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compare phone numbers a and b, return true if they're identical enough for caller ID purposes. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [convertKeypadLettersToDigits](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#convertKeypadLettersToDigits(kotlin.String))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Translates any alphabetic letters (i.e. \[A-Za-z\]) in the specified phone number into the equivalent numeric digits, according to the phone keypad letter mapping described in ITU E. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compare](../android/telephony/PhoneNumberUtils.md))`(`context:` ` [Context](../android/content/Context.md)!`, `a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compare phone numbers a and b, and return true if they're identical enough for caller ID purposes. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compare](../android/telephony/PhoneNumberUtils.md))`(`a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compare phone numbers a and b, return true if they're identical enough for caller ID purposes. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [convertKeypadLettersToDigits](../android/telephony/PhoneNumberUtils.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Translates any alphabetic letters (i.e. \[A-Za-z\]) in the specified phone number into the equivalent numeric digits, according to the phone keypad letter mapping described in ITU E. |
 | --- | --- |
-| openstatic [TtsSpan](https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.html#)! | [createTtsSpan](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#createTtsSpan(kotlin.String))`(`phoneNumberString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a`TtsSpan`for the supplied`String`. |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [createTtsSpannable](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#createTtsSpannable(kotlin.CharSequence))`(`phoneNumber:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Wrap the supplied`CharSequence`with a`TtsSpan`, annotating it as containing a phone number in its entirety. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [extractNetworkPortion](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#extractNetworkPortion(kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Extracts the network address portion and canonicalizes (filters out separators.) Network address portion is everything up to DTMF control digit separators (pause or wait), but without non-dialable characters. |
+| openstatic [TtsSpan](../android/text/style/TtsSpan.md)! | [createTtsSpan](../android/telephony/PhoneNumberUtils.md))`(`phoneNumberString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a`TtsSpan`for the supplied`String`. |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [createTtsSpannable](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Wrap the supplied`CharSequence`with a`TtsSpan`, annotating it as containing a phone number in its entirety. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [extractNetworkPortion](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Extracts the network address portion and canonicalizes (filters out separators.) Network address portion is everything up to DTMF control digit separators (pause or wait), but without non-dialable characters. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [extractPostDialPortion](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#extractPostDialPortion(kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Extracts the post-dial sequence of DTMF control digits, pauses, and waits. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatJapaneseNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatJapaneseNumber(android.text.Editable))`(`text:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`)` Formats a phone number in-place using the Japanese formatting rules. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatNanpNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatNanpNumber(android.text.Editable))`(`text:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`)` Formats a phone number in-place using the NANP formatting rules. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [extractPostDialPortion](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Extracts the post-dial sequence of DTMF control digits, pauses, and waits. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatJapaneseNumber](../android/telephony/PhoneNumberUtils.md))`(`text:` ` [Editable](../android/text/Editable.md)!`)` Formats a phone number in-place using the Japanese formatting rules. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatNanpNumber](../android/telephony/PhoneNumberUtils.md))`(`text:` ` [Editable](../android/text/Editable.md)!`)` Formats a phone number in-place using the NANP formatting rules. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatNumber(android.text.Editable,%20kotlin.Int))`(`text:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `defaultFormattingType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a phone number in-place. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatNumber(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Breaks the given number down and formats it according to the rules for the country the number is from. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatNumber(kotlin.String,%20kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Format a phone number. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatNumber](../android/telephony/PhoneNumberUtils.md))`(`text:` ` [Editable](../android/text/Editable.md)!`, `defaultFormattingType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a phone number in-place. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumber](../android/telephony/PhoneNumberUtils.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Breaks the given number down and formats it according to the rules for the country the number is from. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumber](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Format a phone number. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatNumber(kotlin.String,%20kotlin.String,%20kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `phoneNumberE164:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Format the phone number only if the given number hasn't been formatted. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumberToE164](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatNumberToE164(kotlin.String,%20kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Formats the specified`phoneNumber`to the E. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumberToRFC3966](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#formatNumberToRFC3966(kotlin.String,%20kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Formats the specified`phoneNumber`to the RFC3966 representation. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumber](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `phoneNumberE164:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Format the phone number only if the given number hasn't been formatted. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumberToE164](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Formats the specified`phoneNumber`to the E. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatNumberToRFC3966](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultCountryIso:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Formats the specified`phoneNumber`to the RFC3966 representation. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFormatTypeForLocale](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#getFormatTypeForLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns the phone number formatting type for the given locale. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumberFromIntent](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#getNumberFromIntent(android.content.Intent,%20android.content.Context))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`, `context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Extracts the phone number from an Intent. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStrippedReversed](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#getStrippedReversed(kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the network portion reversed. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFormatTypeForLocale](../android/telephony/PhoneNumberUtils.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns the phone number formatting type for the given locale. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumberFromIntent](../android/telephony/PhoneNumberUtils.md))`(`intent:` ` [Intent](../android/content/Intent.md)!`, `context:` ` [Context](../android/content/Context.md)!`)` Extracts the phone number from an Intent. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStrippedReversed](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the network portion reversed. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is12Key](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#is12Key(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDialable](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isDialable(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # , +, WILD |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmergencyNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isEmergencyNumber(kotlin.String))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks a given number against the list of emergency numbers provided by the RIL and SIM card. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is12Key](../android/telephony/PhoneNumberUtils.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDialable](../android/telephony/PhoneNumberUtils.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # , +, WILD |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmergencyNumber](../android/telephony/PhoneNumberUtils.md))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks a given number against the list of emergency numbers provided by the RIL and SIM card. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGlobalPhoneNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isGlobalPhoneNumber(kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isISODigit](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isISODigit(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9 |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLocalEmergencyNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isLocalEmergencyNumber(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks if a given number is an emergency number for the country that the user is in. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGlobalPhoneNumber](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isISODigit](../android/telephony/PhoneNumberUtils.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9 |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLocalEmergencyNumber](../android/telephony/PhoneNumberUtils.md))`(`context:` ` [Context](../android/content/Context.md)!`, `number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks if a given number is an emergency number for the country that the user is in. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNonSeparator](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isNonSeparator(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # , +, WILD, WAIT, PAUSE |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReallyDialable](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isReallyDialable(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # , + (no WILD) |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStartsPostDial](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isStartsPostDial(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` This any anything to the right of this char is part of the post-dial string (eg this is PAUSE or WAIT) |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNonSeparator](../android/telephony/PhoneNumberUtils.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # , +, WILD, WAIT, PAUSE |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReallyDialable](../android/telephony/PhoneNumberUtils.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` True if c is ISO-LATIN characters 0-9, \*, # , + (no WILD) |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStartsPostDial](../android/telephony/PhoneNumberUtils.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` This any anything to the right of this char is part of the post-dial string (eg this is PAUSE or WAIT) |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVoiceMailNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isVoiceMailNumber(kotlin.String))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` isVoiceMailNumber: checks a given number against the voicemail number provided by the RIL and SIM card. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWellFormedSmsAddress](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isWellFormedSmsAddress(kotlin.String))`(`address:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return true iff the network portion of`address`is, as far as we can tell on the device, suitable for use as an SMS destination address. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWpsCallNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isWpsCallNumber(kotlin.String))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Check if the number is for Wireless Priority Service call. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVoiceMailNumber](../android/telephony/PhoneNumberUtils.md))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` isVoiceMailNumber: checks a given number against the voicemail number provided by the RIL and SIM card. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWellFormedSmsAddress](../android/telephony/PhoneNumberUtils.md))`(`address:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return true iff the network portion of`address`is, as far as we can tell on the device, suitable for use as an SMS destination address. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWpsCallNumber](../android/telephony/PhoneNumberUtils.md))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Check if the number is for Wireless Priority Service call. |
 | --- | --- |
-| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [networkPortionToCalledPartyBCD](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#networkPortionToCalledPartyBCD(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Note: calls extractNetworkPortion(), so do not use for SIM EF\[ADN\] style records Returns null if network portion is empty. |
-| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [networkPortionToCalledPartyBCDWithLength](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#networkPortionToCalledPartyBCDWithLength(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Same as [networkPortionToCalledPartyBCD](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#networkPortionToCalledPartyBCD(kotlin.String)), but includes a one-byte length prefix. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalizeNumber](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#normalizeNumber(kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Normalize a phone number by removing the characters other than digits. |
+| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [networkPortionToCalledPartyBCD](../android/telephony/PhoneNumberUtils.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Note: calls extractNetworkPortion(), so do not use for SIM EF\[ADN\] style records Returns null if network portion is empty. |
+| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [networkPortionToCalledPartyBCDWithLength](../android/telephony/PhoneNumberUtils.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Same as [networkPortionToCalledPartyBCD](../android/telephony/PhoneNumberUtils.md)), but includes a one-byte length prefix. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalizeNumber](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Normalize a phone number by removing the characters other than digits. |
 | --- | --- |
-| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [numberToCalledPartyBCD](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#numberToCalledPartyBCD(kotlin.String))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convert a dialing number to BCD byte array |
-| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [numberToCalledPartyBCD](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#numberToCalledPartyBCD(kotlin.String,%20kotlin.Int))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bcdExtType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a dialing number to BCD byte array |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceUnicodeDigits](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#replaceUnicodeDigits(kotlin.String))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Replaces all unicode(e.g. Arabic, Persian) digits with their decimal digit equivalents. |
+| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [numberToCalledPartyBCD](../android/telephony/PhoneNumberUtils.md))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convert a dialing number to BCD byte array |
+| openstatic [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [numberToCalledPartyBCD](../android/telephony/PhoneNumberUtils.md))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bcdExtType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a dialing number to BCD byte array |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceUnicodeDigits](../android/telephony/PhoneNumberUtils.md))`(`number:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Replaces all unicode(e.g. Arabic, Persian) digits with their decimal digit equivalents. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [stringFromStringAndTOA](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#stringFromStringAndTOA(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `TOA:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Basically: makes sure there's a + in front of a TOA_International number Returns null if s == null |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [stripSeparators](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#stripSeparators(kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Strips separators from a phone number string. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toCallerIDMinMatch](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#toCallerIDMinMatch(kotlin.String))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the rightmost minimum matched characters in the network portion in \*reversed\* order This can be used to do a database lookup against the column that stores getStrippedReversed() Returns null if phoneNumber == null |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [stringFromStringAndTOA](../android/telephony/PhoneNumberUtils.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `TOA:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Basically: makes sure there's a + in front of a TOA_International number Returns null if s == null |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [stripSeparators](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Strips separators from a phone number string. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toCallerIDMinMatch](../android/telephony/PhoneNumberUtils.md))`(`phoneNumber:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the rightmost minimum matched characters in the network portion in \*reversed\* order This can be used to do a database lookup against the column that stores getStrippedReversed() Returns null if phoneNumber == null |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toaFromString](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#toaFromString(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the TOA for the given dial string Basically, returns TOA_International if there's a + prefix |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toaFromString](../android/telephony/PhoneNumberUtils.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the TOA for the given dial string Basically, returns TOA_International if there's a + prefix |
 
 ## Constants
 
@@ -233,11 +233,11 @@ open static fun addTtsSpan(
 ): Unit
 ```
 
-Attach a [TtsSpan](https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.html#) to the supplied`Spannable`at the indicated location, annotating that location as containing a phone number.
+Attach a [TtsSpan](../android/text/style/TtsSpan.md) to the supplied`Spannable`at the indicated location, annotating that location as containing a phone number.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `s` | [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!:A`Spannable`to annotate. |
+| `s` | [Spannable](../android/text/Spannable.md)!:A`Spannable`to annotate. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The starting character position of the phone number in`s`. |
 | `endExclusive` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position after the ending character in the phone number`s`. |
 | --- | --- |
@@ -262,7 +262,7 @@ Matching is based on [compare(java.lang.String,java.lang.String)](https://github
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `number1` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `number2` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `defaultCountryIso` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The lowercase two letter ISO 3166-1 country code. Used when parsing the phone numbers where it is not possible to determine the country associated with a phone number based on the number alone. It is recommended to pass in [TelephonyManager.getNetworkCountryIso()](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkCountryIso()). This value cannot be`null`. |
+| `defaultCountryIso` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The lowercase two letter ISO 3166-1 country code. Used when parsing the phone numbers where it is not possible to determine the country associated with a phone number based on the number alone. It is recommended to pass in [TelephonyManager.getNetworkCountryIso()](../android/telephony/TelephonyManager.md)). This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
@@ -282,7 +282,7 @@ open static fun calledPartyBCDFragmentToString(
 ): String!
 ```
 
-**Deprecated:** *use[calledPartyBCDFragmentToString(byte[],int,int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDFragmentToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))instead. Calling this method is equivalent to calling[calledPartyBCDFragmentToString(byte[],int,int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDFragmentToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))with [BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int) as the extended type.*
+**Deprecated:** *use[calledPartyBCDFragmentToString(byte[],int,int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDFragmentToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))instead. Calling this method is equivalent to calling[calledPartyBCDFragmentToString(byte[],int,int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDFragmentToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))with [BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md) as the extended type.*
 
 Like calledPartyBCDToString, but field does not start with a TOA byte. For example: SIM ADN extension fields 
 
@@ -303,7 +303,7 @@ Like calledPartyBCDToString, but field does not start with a TOA byte. For examp
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bcdExtType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int), or [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY:kotlin.Int) |
+| `bcdExtType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md), or [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY](../android/telephony/PhoneNumberUtils.md) |
 
 ### calledPartyBCDToString
 
@@ -318,7 +318,7 @@ open static fun calledPartyBCDToString(
 ): String!
 ```
 
-**Deprecated:** *use[calledPartyBCDToString(byte[],int,int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))instead. Calling this method is equivalent to calling[calledPartyBCDToString(byte[],int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))with [BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int) as the extended type.*
+**Deprecated:** *use[calledPartyBCDToString(byte[],int,int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))instead. Calling this method is equivalent to calling[calledPartyBCDToString(byte[],int,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#calledPartyBCDToString(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))with [BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md) as the extended type.*
 
 3GPP TS 24.008 10.5.4.7 Called Party BCD Number See Also TS 51.011 10.5.1 "dialing number/ssc string" and TS 11.11 "10.3.1 EF adn (Abbreviated dialing numbers)"
 
@@ -354,12 +354,12 @@ open static fun calledPartyBCDToString(
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):should point to the TOA (aka. TON/NPI) octet after the length byte |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is the number of bytes including TOA byte and must be at least 2 |
 | --- | --- |
-| `bcdExtType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):used to determine the extended bcd coding Value is [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int), or [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY:kotlin.Int) |
+| `bcdExtType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):used to determine the extended bcd coding Value is [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md), or [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY](../android/telephony/PhoneNumberUtils.md) |
 
 **See Also**
 
-- [#BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int)
-- [#BCD_EXTENDED_TYPE_CALLED_PARTY](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY:kotlin.Int) 
+- [#BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md)
+- [#BCD_EXTENDED_TYPE_CALLED_PARTY](../android/telephony/PhoneNumberUtils.md) 
 
 ### compare
 
@@ -374,7 +374,7 @@ open static fun compare(
 ): Boolean
 ```
 
-**Deprecated:** *use [areSamePhoneNumber(java.lang.String,java.lang.String,java.lang.String)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#areSamePhoneNumber(kotlin.String,%20kotlin.String,%20kotlin.String))instead*
+**Deprecated:** *use [areSamePhoneNumber(java.lang.String,java.lang.String,java.lang.String)](../android/telephony/PhoneNumberUtils.md))instead*
 
 Compare phone numbers a and b, and return true if they're identical enough for caller ID purposes. Checks a resource to determine whether to use a strict or loose comparison algorithm. 
 
@@ -390,7 +390,7 @@ open static fun compare(
 ): Boolean
 ```
 
-**Deprecated:** *use [areSamePhoneNumber(java.lang.String,java.lang.String,java.lang.String)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#areSamePhoneNumber(kotlin.String,%20kotlin.String,%20kotlin.String))instead*
+**Deprecated:** *use [areSamePhoneNumber(java.lang.String,java.lang.String,java.lang.String)](../android/telephony/PhoneNumberUtils.md))instead*
 
 Compare phone numbers a and b, return true if they're identical enough for caller ID purposes. 
 
@@ -424,7 +424,7 @@ Create a`TtsSpan`for the supplied`String`.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------|
-| [TtsSpan](https://developer.android.com/reference/kotlin/android/text/style/TtsSpan.html#)! | A`TtsSpan`for {@param phoneNumberString}. |
+| [TtsSpan](../android/text/style/TtsSpan.md)! | A`TtsSpan`for {@param phoneNumberString}. |
 
 ### createTtsSpannable
 
@@ -481,7 +481,7 @@ Formats a phone number in-place using the Japanese formatting rules. Numbers wil
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!:the number to be formatted, will be modified with the formatting |
+| `text` | [Editable](../android/text/Editable.md)!:the number to be formatted, will be modified with the formatting |
 
 ### formatNanpNumber
 
@@ -500,7 +500,7 @@ Formats a phone number in-place using the NANP formatting rules. Numbers will be
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!:the number to be formatted, will be modified with the formatting |
+| `text` | [Editable](../android/text/Editable.md)!:the number to be formatted, will be modified with the formatting |
 
 ### formatNumber
 
@@ -516,11 +516,11 @@ open static fun formatNumber(
 
 **Deprecated:** *Use link #formatNumber(String phoneNumber, String defaultCountryIso) instead*
 
-Formats a phone number in-place. Currently [FORMAT_JAPAN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#FORMAT_JAPAN:kotlin.Int) and [FORMAT_NANP](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#FORMAT_NANP:kotlin.Int) is supported as a second argument.
+Formats a phone number in-place. Currently [FORMAT_JAPAN](../android/telephony/PhoneNumberUtils.md) and [FORMAT_NANP](../android/telephony/PhoneNumberUtils.md) is supported as a second argument.
 
 | Parameters ||
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!:The number to be formatted, will be modified with the formatting |
+| `text` | [Editable](../android/text/Editable.md)!:The number to be formatted, will be modified with the formatting |
 | `defaultFormattingType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The default formatting rules to apply if the number does not begin with +\[country_code\] |
 
 ### formatNumber
@@ -654,7 +654,7 @@ Returns the phone number formatting type for the given locale.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:The locale of interest, usually [Locale.getDefault()](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()) |
+| `locale` | [Locale](../java/util/Locale.md)!:The locale of interest, usually [Locale.getDefault()](../java/util/Locale.md)) |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -675,8 +675,8 @@ Extracts the phone number from an Intent.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:the intent to get the number of |
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:a context to use for database access |
+| `intent` | [Intent](../android/content/Intent.md)!:the intent to get the number of |
+| `context` | [Context](../android/content/Context.md)!:a context to use for database access |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -721,7 +721,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open static fun isEmergencyNumber(number: String!): Boolean
 ```
 
-**Deprecated:** *Please use [TelephonyManager.isEmergencyNumber(String)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isEmergencyNumber(kotlin.String))instead.*
+**Deprecated:** *Please use [TelephonyManager.isEmergencyNumber(String)](../android/telephony/TelephonyManager.md))instead.*
 
 Checks a given number against the list of emergency numbers provided by the RIL and SIM card.
 
@@ -763,14 +763,14 @@ open static fun isLocalEmergencyNumber(
 ): Boolean
 ```
 
-**Deprecated:** *Please use [TelephonyManager.isEmergencyNumber(String)](https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isEmergencyNumber(kotlin.String))instead.*
+**Deprecated:** *Please use [TelephonyManager.isEmergencyNumber(String)](../android/telephony/TelephonyManager.md))instead.*
 
 Checks if a given number is an emergency number for the country that the user is in.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `number` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the number to look up. |
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:the specific context which the number should be checked against |
+| `context` | [Context](../android/content/Context.md)!:the specific context which the number should be checked against |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -870,7 +870,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun networkPortionToCalledPartyBCDWithLength(s: String!): ByteArray!
 ```
 
-Same as [networkPortionToCalledPartyBCD](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#networkPortionToCalledPartyBCD(kotlin.String)), but includes a one-byte length prefix. 
+Same as [networkPortionToCalledPartyBCD](../android/telephony/PhoneNumberUtils.md)), but includes a one-byte length prefix. 
 
 ### normalizeNumber
 
@@ -899,7 +899,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 open static fun numberToCalledPartyBCD(number: String!): ByteArray!
 ```
 
-**Deprecated:** *use [numberToCalledPartyBCD(java.lang.String,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#numberToCalledPartyBCD(kotlin.String,%20kotlin.Int))instead. Calling this method is equivalent to calling [numberToCalledPartyBCD(java.lang.String,int)](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#numberToCalledPartyBCD(kotlin.String,%20kotlin.Int))with [BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int) as the extended type.*
+**Deprecated:** *use [numberToCalledPartyBCD(java.lang.String,int)](../android/telephony/PhoneNumberUtils.md))instead. Calling this method is equivalent to calling [numberToCalledPartyBCD(java.lang.String,int)](../android/telephony/PhoneNumberUtils.md))with [BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md) as the extended type.*
 
 Convert a dialing number to BCD byte array
 
@@ -927,7 +927,7 @@ Convert a dialing number to BCD byte array
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `number` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:dialing number string. If the dialing number starts with '+', set to international TOA |
-| `bcdExtType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):used to determine the extended bcd coding Value is [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int), or [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY:kotlin.Int) |
+| `bcdExtType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):used to determine the extended bcd coding Value is [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md), or [android.telephony.PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY](../android/telephony/PhoneNumberUtils.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------|
@@ -935,8 +935,8 @@ Convert a dialing number to BCD byte array
 
 **See Also**
 
-- [#BCD_EXTENDED_TYPE_EF_ADN](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_EF_ADN:kotlin.Int)
-- [#BCD_EXTENDED_TYPE_CALLED_PARTY](https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#BCD_EXTENDED_TYPE_CALLED_PARTY:kotlin.Int) 
+- [#BCD_EXTENDED_TYPE_EF_ADN](../android/telephony/PhoneNumberUtils.md)
+- [#BCD_EXTENDED_TYPE_CALLED_PARTY](../android/telephony/PhoneNumberUtils.md) 
 
 ### replaceUnicodeDigits
 

@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface Consumer<T : Any!>
 ```
 
-| [java.util.function.Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer#) |
+| [java.util.function.Consumer](../java/util/function/Consumer.md) |
 
-| Known Direct Subclasses [Stream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/Stream.Builder.html#) |--------------------------------------------------------------------------------------------------------|-----------------------------------| | [Stream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/Stream.Builder.html#) | A mutable builder for a `Stream`. | |
+| Known Direct Subclasses [Stream.Builder](../java/util/stream/Stream.Builder.md) |--------------------------------------------------------------------------------------------------------|-----------------------------------| | [Stream.Builder](../java/util/stream/Stream.Builder.md) | A mutable builder for a `Stream`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Represents an operation that accepts a single input argument and returns no result. Unlike most other functional interfaces, `Consumer` is expected to operate via side-effects.
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [accept(java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/function/Consumer#accept(java.util.function.Consumer.T)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [accept(java.lang.Object)](../java/util/function/Consumer.md)).
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](https://developer.android.com/reference/kotlin/java/util/function/Consumer#accept(java.util.function.Consumer.T))`(`t:` `T`)` Performs this operation on the given argument. |
-| open [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer#)\<T\>! | [andThen](https://developer.android.com/reference/kotlin/java/util/function/Consumer#andThen(java.util.function.Consumer))`(`after:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer#)<in` `T>!`)` Returns a composed `Consumer` that performs, in sequence, this operation followed by the `after` operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](../java/util/function/Consumer.md))`(`t:` `T`)` Performs this operation on the given argument. |
+| open [Consumer](../java/util/function/Consumer.md)\<T\>! | [andThen](../java/util/function/Consumer.md))`(`after:` ` [Consumer](../java/util/function/Consumer.md)<in` `T>!`)` Returns a composed `Consumer` that performs, in sequence, this operation followed by the `after` operation. |
 
 ## Public methods
 
@@ -52,11 +52,11 @@ Returns a composed `Consumer` that performs, in sequence, this operation followe
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `after` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer#)\<in T\>!: the operation to perform after this operation |
+| `after` | [Consumer](../java/util/function/Consumer.md)\<in T\>!: the operation to perform after this operation |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer#)<T>! | a composed `Consumer` that performs in sequence this operation followed by the `after` operation |
+| [Consumer](../java/util/function/Consumer.md)<T>! | a composed `Consumer` that performs in sequence this operation followed by the `after` operation |
 
 | Exceptions ||
 |----------------------------------|--------------------|

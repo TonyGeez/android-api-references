@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # SyncRequest
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/SyncRequest "View this page in Java")
+Kotlin | [Java](../android/content/SyncRequest.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class SyncRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.SyncRequest](https://developer.android.com/reference/kotlin/android/content/SyncRequest#) |
+| ↳ | [android.content.SyncRequest](../android/content/SyncRequest.md) |
 
 Convenience class to construct sync requests. See `https://developer.android.com/reference/kotlin/android/content/SyncRequest.Builder` for an explanation of the various functions. The resulting object is passed through to the framework via `https://developer.android.com/reference/kotlin/android/content/ContentResolver#requestSync(android.content.SyncRequest)`.
 
@@ -32,7 +32,7 @@ Convenience class to construct sync requests. See `https://developer.android.com
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SyncRequest](https://developer.android.com/reference/kotlin/android/content/SyncRequest#)!\> | `https://developer.android.com/reference/kotlin/android/content/SyncRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SyncRequest](../android/content/SyncRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/content/SyncRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

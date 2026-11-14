@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # Output
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/util/Output "View this page in Java") 
+Kotlin | [Java](../android/icu/util/Output.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Output<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.Output](https://developer.android.com/reference/kotlin/android/icu/util/Output#) |
+| ↳ | [android.icu.util.Output](../android/icu/util/Output.md) |
 
 Simple struct-like class for output parameters.
 
@@ -21,16 +21,16 @@ Simple struct-like class for output parameters.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Output](https://developer.android.com/reference/kotlin/android/icu/util/Output#Output())`()` Constructs an empty `Output` |
-| [Output](https://developer.android.com/reference/kotlin/android/icu/util/Output#Output(android.icu.util.Output.T))`(`value:` `T`)` Constructs an `Output` with the given value. |
+| [Output](../android/icu/util/Output.md))`()` Constructs an empty `Output` |
+| [Output](../android/icu/util/Output.md))`(`value:` `T`)` Constructs an `Output` with the given value. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/util/Output#toString())`()` Returns a string representation of the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/util/Output.md))`()` Returns a string representation of the object. |
 
 | Properties ||
 |---|---------------------------------------------------------------------------------------------------------------------------------|
-| T | [value](https://developer.android.com/reference/kotlin/android/icu/util/Output#value:android.icu.util.Output.T) The value field |
+| T | [value](../android/icu/util/Output.md) The value field |
 
 ## Public constructors
 

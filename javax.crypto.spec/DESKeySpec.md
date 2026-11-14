@@ -10,7 +10,7 @@ open class DESKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.DESKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#) |
+| ↳ | [javax.crypto.spec.DESKeySpec](../javax/crypto/spec/DESKeySpec.md) |
 
 This class specifies a DES key.
 
@@ -18,18 +18,18 @@ This class specifies a DES key.
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DES_KEY_LEN](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#DES_KEY_LEN:kotlin.Int) The constant which defines the length of a DES key in bytes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DES_KEY_LEN](../javax/crypto/spec/DESKeySpec.md) The constant which defines the length of a DES key in bytes. |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DESKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#DESKeySpec(kotlin.ByteArray))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a DESKeySpec object using the first 8 bytes in`key`as the key material for the DES key. |
-| [DESKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#DESKeySpec(kotlin.ByteArray,%20kotlin.Int))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a DESKeySpec object using the first 8 bytes in`key`, beginning at`offset`inclusive, as the key material for the DES key. |
+| [DESKeySpec](../javax/crypto/spec/DESKeySpec.md))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a DESKeySpec object using the first 8 bytes in`key`as the key material for the DES key. |
+| [DESKeySpec](../javax/crypto/spec/DESKeySpec.md))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a DESKeySpec object using the first 8 bytes in`key`, beginning at`offset`inclusive, as the key material for the DES key. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getKey](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#getKey())`()` Returns the DES key material. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParityAdjusted](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#isParityAdjusted(kotlin.ByteArray,%20kotlin.Int))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES key material, starting at`offset`inclusive, is parity-adjusted. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWeak](https://developer.android.com/reference/kotlin/javax/crypto/spec/DESKeySpec#isWeak(kotlin.ByteArray,%20kotlin.Int))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES key material is weak or semi-weak. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getKey](../javax/crypto/spec/DESKeySpec.md))`()` Returns the DES key material. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParityAdjusted](../javax/crypto/spec/DESKeySpec.md))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES key material, starting at`offset`inclusive, is parity-adjusted. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWeak](../javax/crypto/spec/DESKeySpec.md))`(`key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given DES key material is weak or semi-weak. |
 | --- | --- |
 
 ## Constants

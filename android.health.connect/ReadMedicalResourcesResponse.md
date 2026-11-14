@@ -3,7 +3,7 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 
 # ReadMedicalResourcesResponse
 
-Kotlin | [Java](https://developer.android.com/reference/android/health/connect/ReadMedicalResourcesResponse "View this page in Java")
+Kotlin | [Java](../android/health/connect/ReadMedicalResourcesResponse.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class ReadMedicalResourcesResponse : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.ReadMedicalResourcesResponse](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#) |
+| ↳ | [android.health.connect.ReadMedicalResourcesResponse](../android/health/connect/ReadMedicalResourcesResponse.md) |
 
 A read response for android.health.connect.HealthConnectManager#readMedicalResources.
 
@@ -30,7 +30,7 @@ A read response for android.health.connect.HealthConnectManager#readMedicalResou
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#getMedicalResources()()` Returns list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MedicalResource](../android/health/connect/datatypes/MedicalResource.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#getMedicalResources()()` Returns list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#getNextPageToken()()` Returns a page token to read the next page of the result. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#getRemainingCount()()` Returns the count of medical resources still remaining which were not returned due to pagination. |
@@ -41,7 +41,7 @@ A read response for android.health.connect.HealthConnectManager#readMedicalResou
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ReadMedicalResourcesResponse](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ReadMedicalResourcesResponse](../android/health/connect/ReadMedicalResourcesResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -61,7 +61,7 @@ Constructs a new `https://developer.android.com/reference/kotlin/android/health/
 
 | Parameters ||
 |---|---|
-| `medicalResources` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource)!\>: List of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s. This value cannot be `null`. |
+| `medicalResources` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MedicalResource](../android/health/connect/datatypes/MedicalResource.md)!\>: List of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s. This value cannot be `null`. |
 | `nextPageToken` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The token value of the read result which can be used as input token for next read request. `null` if there are no more pages available. |
 | `remainingCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the total number of medical resources remaining, excluding the ones in this response |
 | --- | --- |
@@ -198,7 +198,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

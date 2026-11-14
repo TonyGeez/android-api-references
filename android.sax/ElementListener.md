@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ElementListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/sax/ElementListener "View this page in Java") 
+Kotlin| [Java](../android/sax/ElementListener.md) 
 | --- | --- |
 
 ```
 interface ElementListener : EndElementListener, StartElementListener
 ```
 
-| [android.sax.ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener#) |
+| [android.sax.ElementListener](../android/sax/ElementListener.md) |
 
 Listens for the beginning and ending of elements.
 
@@ -19,5 +19,5 @@ Listens for the beginning and ending of elements.
 
 | Inherited functions ||
 |---|---|
-| From class [EndElementListener](https://developer.android.com/reference/kotlin/android/sax/EndElementListener) |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/android/sax/EndElementListener#end())`()` <br /> Invoked at the end of an element. <br /> | ||
-| From class [StartElementListener](https://developer.android.com/reference/kotlin/android/sax/StartElementListener) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/sax/StartElementListener#start(org.xml.sax.Attributes))`(`attributes:` ` [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes.html#)!`)` <br /> Invoked at the beginning of an element. <br /> | ||
+| From class [EndElementListener](../android/sax/EndElementListener.md) |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../android/sax/EndElementListener.md))`()` <br /> Invoked at the end of an element. <br /> | ||
+| From class [StartElementListener](../android/sax/StartElementListener.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/sax/StartElementListener.md))`(`attributes:` ` [Attributes](../org/xml/sax/Attributes.md)!`)` <br /> Invoked at the beginning of an element. <br /> | ||

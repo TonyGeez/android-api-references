@@ -4,20 +4,20 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DownloadListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/DownloadListener "View this page in Java") 
+Kotlin| [Java](../android/webkit/DownloadListener.md) 
 | --- | --- |
 
 ```
 interface DownloadListener
 ```
 
-| [android.webkit.DownloadListener](https://developer.android.com/reference/kotlin/android/webkit/DownloadListener#) |
+| [android.webkit.DownloadListener](../android/webkit/DownloadListener.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDownloadStart](https://developer.android.com/reference/kotlin/android/webkit/DownloadListener#onDownloadStart(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Long))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `userAgent:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentDisposition:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimetype:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentLength:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Notify the host application that a file should be downloaded |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDownloadStart](../android/webkit/DownloadListener.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `userAgent:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentDisposition:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimetype:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentLength:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Notify the host application that a file should be downloaded |
 
 ## Public methods
 

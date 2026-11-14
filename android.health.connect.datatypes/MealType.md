@@ -3,7 +3,7 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 
 # MealType
 
-Kotlin | [Java](https://developer.android.com/reference/android/health/connect/datatypes/MealType "View this page in Java")
+Kotlin | [Java](../android/health/connect/datatypes/MealType.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class MealType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.MealType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MealType#) |
+| ↳ | [android.health.connect.datatypes.MealType](../android/health/connect/datatypes/MealType.md) |
 
 Identifier for the meal type.
 

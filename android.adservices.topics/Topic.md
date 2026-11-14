@@ -10,7 +10,7 @@ class Topic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.topics.Topic](https://developer.android.com/reference/kotlin/android/adservices/topics/Topic#) |
+| ↳ | [android.adservices.topics.Topic](../android/adservices/topics/Topic.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**

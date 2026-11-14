@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # ContentCaptureContext
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/contentcapture/ContentCaptureContext "View this page in Java") 
+Kotlin| [Java](../android/view/contentcapture/ContentCaptureContext.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ class ContentCaptureContext : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.contentcapture.ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) |
+| ↳ | [android.view.contentcapture.ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) |
 
-Context associated with a [ContentCaptureSession](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession)- see [ContentCaptureManager](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager) for more info.
+Context associated with a [ContentCaptureSession](../android/view/contentcapture/ContentCaptureSession.md)- see [ContentCaptureManager](../android/view/contentcapture/ContentCaptureManager.md) for more info.
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext.Builder) Builder for [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) objects. |
+| | [Builder](../android/view/contentcapture/ContentCaptureContext.Builder.md) Builder for [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) objects. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#describeContents())`()` <br /> |
-| static [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) | [forLocusId](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#forLocusId(kotlin.String))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Helper that creates a [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) associated with the given`id`. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#getExtras())`()` Gets the (optional) extras set by the app (through [Builder.setExtras(Bundle)](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext.Builder#setExtras(android.os.Bundle))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/contentcapture/ContentCaptureContext.md))`()` <br /> |
+| static [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) | [forLocusId](../android/view/contentcapture/ContentCaptureContext.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Helper that creates a [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) associated with the given`id`. |
+| [Bundle](../android/os/Bundle.md)? | [getExtras](../android/view/contentcapture/ContentCaptureContext.md))`()` Gets the (optional) extras set by the app (through [Builder.setExtras(Bundle)](../android/view/contentcapture/ContentCaptureContext.Builder.md))). |
 | --- | --- |
-| [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#)? | [getLocusId](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#getLocusId())`()` Gets the context id. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [LocusId](../android/content/LocusId.md)? | [getLocusId](../android/view/contentcapture/ContentCaptureContext.md))`()` Gets the context id. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/contentcapture/ContentCaptureContext.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/contentcapture/ContentCaptureContext.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md)!\> | [CREATOR](../android/view/contentcapture/ContentCaptureContext.md) <br /> |
 
 ## Public methods
 
@@ -54,7 +54,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### forLocusId
 
@@ -64,7 +64,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static fun forLocusId(id: String): ContentCaptureContext
 ```
 
-Helper that creates a [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) associated with the given`id`.
+Helper that creates a [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) associated with the given`id`.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ Helper that creates a [ContentCaptureContext](https://developer.android.com/refe
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#) | This value cannot be`null`. |
+| [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) | This value cannot be`null`. |
 
 ### getExtras
 
@@ -82,13 +82,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getExtras(): Bundle?
 ```
 
-Gets the (optional) extras set by the app (through [Builder.setExtras(Bundle)](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext.Builder#setExtras(android.os.Bundle))).
+Gets the (optional) extras set by the app (through [Builder.setExtras(Bundle)](../android/view/contentcapture/ContentCaptureContext.Builder.md))).
 
 It can be used to provide vendor-specific data that can be modified and examined.
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | This value may be`null`. |
+| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
 
 ### getLocusId
 
@@ -102,7 +102,7 @@ Gets the context id.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------|
-| [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#)? | This value may be`null`. |
+| [LocusId](../android/content/LocusId.md)? | This value may be`null`. |
 
 ### toString
 
@@ -130,7 +130,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

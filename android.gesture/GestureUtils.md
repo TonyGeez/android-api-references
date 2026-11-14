@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # GestureUtils
 
-Kotlin| [Java](https://developer.android.com/reference/android/gesture/GestureUtils "View this page in Java") 
+Kotlin| [Java](../android/gesture/GestureUtils.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class GestureUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.GestureUtils](https://developer.android.com/reference/kotlin/android/gesture/GestureUtils#) |
+| ↳ | [android.gesture.GestureUtils](../android/gesture/GestureUtils.md) |
 
 Utility functions for gesture processing \& analysis, including methods for:
 
@@ -27,12 +27,12 @@ Utility functions for gesture processing \& analysis, including methods for:
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [OrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox)! | [computeOrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/GestureUtils#computeOrientedBoundingBox(kotlin.FloatArray))`(`originalPoints:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes an oriented, minimum bounding box of a set of points. |
-| static [OrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox)! | [computeOrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/GestureUtils#computeOrientedBoundingBox(java.util.ArrayList))`(`originalPoints:` ` [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)< [GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint)!>!`)` Computes an oriented, minimum bounding box of a set of points. |
-| static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [spatialSampling](https://developer.android.com/reference/kotlin/android/gesture/GestureUtils#spatialSampling(android.gesture.Gesture,%20kotlin.Int))`(`gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`, `bitmapSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Samples the gesture spatially by rendering the gesture into a 2D grayscale bitmap. |
+| static [OrientedBoundingBox](../android/gesture/OrientedBoundingBox.md)! | [computeOrientedBoundingBox](../android/gesture/GestureUtils.md))`(`originalPoints:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes an oriented, minimum bounding box of a set of points. |
+| static [OrientedBoundingBox](../android/gesture/OrientedBoundingBox.md)! | [computeOrientedBoundingBox](../android/gesture/GestureUtils.md))`(`originalPoints:` ` [ArrayList](../java/util/ArrayList.md)< [GesturePoint](../android/gesture/GesturePoint.md)!>!`)` Computes an oriented, minimum bounding box of a set of points. |
+| static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [spatialSampling](../android/gesture/GestureUtils.md))`(`gesture:` ` [Gesture](../android/gesture/Gesture.md)!`, `bitmapSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Samples the gesture spatially by rendering the gesture into a 2D grayscale bitmap. |
 | --- | --- |
-| static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [spatialSampling](https://developer.android.com/reference/kotlin/android/gesture/GestureUtils#spatialSampling(android.gesture.Gesture,%20kotlin.Int,%20kotlin.Boolean))`(`gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`, `bitmapSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `keepAspectRatio:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Samples the gesture spatially by rendering the gesture into a 2D grayscale bitmap. |
-| static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [temporalSampling](https://developer.android.com/reference/kotlin/android/gesture/GestureUtils#temporalSampling(android.gesture.GestureStroke,%20kotlin.Int))`(`stroke:` ` [GestureStroke](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke)!`, `numPoints:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Samples a stroke temporally into a given number of evenly-distributed points. |
+| static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [spatialSampling](../android/gesture/GestureUtils.md))`(`gesture:` ` [Gesture](../android/gesture/Gesture.md)!`, `bitmapSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `keepAspectRatio:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Samples the gesture spatially by rendering the gesture into a 2D grayscale bitmap. |
+| static [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [temporalSampling](../android/gesture/GestureUtils.md))`(`stroke:` ` [GestureStroke](../android/gesture/GestureStroke.md)!`, `numPoints:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Samples a stroke temporally into a given number of evenly-distributed points. |
 
 ## Public methods
 
@@ -52,7 +52,7 @@ Computes an oriented, minimum bounding box of a set of points.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|--------------------------|
-| [OrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox)! | an oriented bounding box |
+| [OrientedBoundingBox](../android/gesture/OrientedBoundingBox.md)! | an oriented bounding box |
 
 ### computeOrientedBoundingBox
 
@@ -66,11 +66,11 @@ Computes an oriented, minimum bounding box of a set of points.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `originalPoints` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [GesturePoint](https://developer.android.com/reference/kotlin/android/gesture/GesturePoint)!\>!: |
+| `originalPoints` | [ArrayList](../java/util/ArrayList.md)\< [GesturePoint](../android/gesture/GesturePoint.md)!\>!: |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|--------------------------|
-| [OrientedBoundingBox](https://developer.android.com/reference/kotlin/android/gesture/OrientedBoundingBox)! | an oriented bounding box |
+| [OrientedBoundingBox](../android/gesture/OrientedBoundingBox.md)! | an oriented bounding box |
 
 ### spatialSampling
 
@@ -87,7 +87,7 @@ Samples the gesture spatially by rendering the gesture into a 2D grayscale bitma
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------|
-| `gesture` | [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!:the gesture to be sampled |
+| `gesture` | [Gesture](../android/gesture/Gesture.md)!:the gesture to be sampled |
 | `bitmapSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size of the bitmap |
 
 | Return ||
@@ -110,7 +110,7 @@ Samples the gesture spatially by rendering the gesture into a 2D grayscale bitma
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `gesture` | [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!:the gesture to be sampled |
+| `gesture` | [Gesture](../android/gesture/Gesture.md)!:the gesture to be sampled |
 | `bitmapSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size of the bitmap |
 | `keepAspectRatio` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if the scaling should keep the gesture's aspect ratio |
 | --- | --- |
@@ -134,7 +134,7 @@ Samples a stroke temporally into a given number of evenly-distributed points.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `stroke` | [GestureStroke](https://developer.android.com/reference/kotlin/android/gesture/GestureStroke)!:the gesture stroke to be sampled |
+| `stroke` | [GestureStroke](../android/gesture/GestureStroke.md)!:the gesture stroke to be sampled |
 | `numPoints` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of points |
 
 | Return ||

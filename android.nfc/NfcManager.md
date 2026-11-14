@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # NfcManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcManager "View this page in Java") 
+Kotlin| [Java](../android/nfc/NfcManager.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ class NfcManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.NfcManager](https://developer.android.com/reference/kotlin/android/nfc/NfcManager#) |
+| ↳ | [android.nfc.NfcManager](../android/nfc/NfcManager.md) |
 
-High level manager used to obtain an instance of an [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter).
+High level manager used to obtain an instance of an [NfcAdapter](../android/nfc/NfcAdapter.md).
 
-Use [android.content.Context#getSystemService(java.lang.String)](https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String))with [Context.NFC_SERVICE](https://developer.android.com/reference/kotlin/android/content/Context.html#NFC_SERVICE:kotlin.String) to create an [NfcManager](https://developer.android.com/reference/kotlin/android/nfc/NfcManager#), then call [getDefaultAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcManager#getDefaultAdapter())to obtain the [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter).
+Use [android.content.Context#getSystemService(java.lang.String)](../android/content/Context.md))with [Context.NFC_SERVICE](../android/content/Context.md) to create an [NfcManager](../android/nfc/NfcManager.md), then call [getDefaultAdapter](../android/nfc/NfcManager.md))to obtain the [NfcAdapter](../android/nfc/NfcAdapter.md).
 
-Alternately, you can just call the static helper [NfcAdapter.getDefaultAdapter(android.content.Context)](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#getDefaultAdapter(android.content.Context)).
+Alternately, you can just call the static helper [NfcAdapter.getDefaultAdapter(android.content.Context)](../android/nfc/NfcAdapter.md)).
 |
 | ### Developer Guides
 |
@@ -29,7 +29,7 @@ Alternately, you can just call the static helper [NfcAdapter.getDefaultAdapter(a
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter)! | [getDefaultAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcManager#getDefaultAdapter())`()` Get the default NFC Adapter for this device. |
+| [NfcAdapter](../android/nfc/NfcAdapter.md)! | [getDefaultAdapter](../android/nfc/NfcManager.md))`()` Get the default NFC Adapter for this device. |
 
 ## Public methods
 
@@ -45,4 +45,4 @@ Get the default NFC Adapter for this device.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------|
-| [NfcAdapter](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter)! | the default NFC Adapter |
+| [NfcAdapter](../android/nfc/NfcAdapter.md)! | the default NFC Adapter |

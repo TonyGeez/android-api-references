@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # Pair
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/Pair "View this page in Java") 
+Kotlin| [Java](../android/util/Pair.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Pair<F : Any!, S : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.Pair](https://developer.android.com/reference/kotlin/android/util/Pair#) |
+| ↳ | [android.util.Pair](../android/util/Pair.md) |
 
 Container to ease passing around a tuple of two objects. This object provides a sensible implementation of equals(), returning true if equals() is true on each of the contained objects.
 
@@ -21,20 +21,20 @@ Container to ease passing around a tuple of two objects. This object provides a 
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Pair](https://developer.android.com/reference/kotlin/android/util/Pair#Pair(android.util.Pair.F,%20android.util.Pair.S))`(`first:` `F`, `second:` `S`)` Constructor for a Pair. |
+| [Pair](../android/util/Pair.md))`(`first:` `F`, `second:` `S`)` Constructor for a Pair. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Pair](https://developer.android.com/reference/kotlin/android/util/Pair#)\<A,B\>! | [create](https://developer.android.com/reference/kotlin/android/util/Pair#create(android.util.Pair.create.A,%20android.util.Pair.create.B))`(`a:` `A`, `b:` `B`)` Convenience method for creating an appropriately typed pair. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/util/Pair#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks the two objects for equality by delegating to their respective [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any))methods. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/util/Pair#hashCode())`()` Compute a hash code using the hash codes of the underlying objects |
+| openstatic [Pair](../android/util/Pair.md)\<A,B\>! | [create](../android/util/Pair.md))`(`a:` `A`, `b:` `B`)` Convenience method for creating an appropriately typed pair. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/util/Pair.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks the two objects for equality by delegating to their respective [Object.equals(Object)](../java/lang/Object.md))methods. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/util/Pair.md))`()` Compute a hash code using the hash codes of the underlying objects |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/util/Pair#toString())`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/util/Pair.md))`()` <br /> |
 
 | Properties ||
 |---|--------------------------------------------------------------------------------------------------------------|
-| F | [first](https://developer.android.com/reference/kotlin/android/util/Pair#first:android.util.Pair.F) <br /> |
-| S | [second](https://developer.android.com/reference/kotlin/android/util/Pair#second:android.util.Pair.S) <br /> |
+| F | [first](../android/util/Pair.md) <br /> |
+| S | [second](../android/util/Pair.md) <br /> |
 
 ## Public constructors
 
@@ -77,7 +77,7 @@ Convenience method for creating an appropriately typed pair.
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Pair](https://developer.android.com/reference/kotlin/android/util/Pair#)<A,` `B>! | a Pair that is templatized with the types of a and b |
+| [Pair](../android/util/Pair.md)<A,` `B>! | a Pair that is templatized with the types of a and b |
 
 ### equals
 
@@ -87,12 +87,12 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open fun equals(other: Any?): Boolean
 ```
 
-Checks the two objects for equality by delegating to their respective [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any))methods.
+Checks the two objects for equality by delegating to their respective [Object.equals(Object)](../java/lang/Object.md))methods.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | the reference object with which to compare. |
-| `o` | the [Pair](https://developer.android.com/reference/kotlin/android/util/Pair#) to which this one is to be checked for equality This value may be`null`. |
+| `o` | the [Pair](../android/util/Pair.md) to which this one is to be checked for equality This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------|

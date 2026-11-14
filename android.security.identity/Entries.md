@@ -7,7 +7,7 @@ Deprecated in [API level 37.2](https://developer.android.com/guide/topics/manife
 interface Entries
 ```
 
-| [android.security.identity.CredentialDataResult.Entries](https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#) |
+| [android.security.identity.CredentialDataResult.Entries](../android/security/identity/CredentialDataResult.Entries.md) |
 
 > [!CAUTION]
 > **This interface was deprecated in API level 37.2.**

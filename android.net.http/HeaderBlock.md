@@ -5,7 +5,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # HeaderBlock
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/http/HeaderBlock "View this page in Java") 
+Kotlin| [Java](../android/net/http/HeaderBlock.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ abstract class HeaderBlock
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.HeaderBlock](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock#) |
+| ↳ | [android.net.http.HeaderBlock](../android/net/http/HeaderBlock.md) |
 
 Unmodifiable container of headers or trailers.
 
@@ -22,12 +22,12 @@ Unmodifiable container of headers or trailers.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------|---|
-| [HeaderBlock](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock#HeaderBlock())`()` <br /> |
+| [HeaderBlock](../android/net/http/HeaderBlock.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | [getAsList](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock#getAsList())`()` Returns an unmodifiable list of the header field and value pairs. |
-| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | [getAsMap](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock#getAsMap())`()` Returns an unmodifiable map from header field names to lists of values. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | [getAsList](../android/net/http/HeaderBlock.md))`()` Returns an unmodifiable list of the header field and value pairs. |
+| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | [getAsMap](../android/net/http/HeaderBlock.md))`()` Returns an unmodifiable map from header field names to lists of values. |
 
 ## Public constructors
 

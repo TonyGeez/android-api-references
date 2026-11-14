@@ -3,7 +3,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicBLAS
 
-Kotlin | [Java](https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS "View this page in Java")
+Kotlin | [Java](../android/renderscript/ScriptIntrinsicBLAS.md)
 | --- | --- |
 
 ```
@@ -12,11 +12,11 @@ class ScriptIntrinsicBLAS : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||||
-| | ↳ | [android.renderscript.Script](https://developer.android.com/reference/kotlin/android/renderscript/Script) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsic) ||
+| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicBLAS](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicBLAS](../android/renderscript/ScriptIntrinsicBLAS.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -172,7 +172,7 @@ ScriptIntrinsicBLAS class provides high performance RenderScript APIs to BLAS. T
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#ZTRSM(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.Double2,%20android.renderscript.Allocation,%20android.renderscript.Allocation)(Side: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, Uplo: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, TransA: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, Diag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alpha: https://developer.android.com/reference/kotlin/android/renderscript/Double2!, A: https://developer.android.com/reference/kotlin/android/renderscript/Allocation!, B: https://developer.android.com/reference/kotlin/android/renderscript/Allocation!)` ZTRSM solves one of the matrix equations op(A)\*X := alpha\*B or X\*op(A) := alpha\*B op(A) is one of op(A) = A or op(A) = A\*\*T or op(A) = A\*\*H Details: http://www. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#ZTRSV(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.Allocation,%20android.renderscript.Allocation,%20kotlin.Int)(Uplo: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, TransA: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, Diag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, A: https://developer.android.com/reference/kotlin/android/renderscript/Allocation!, X: https://developer.android.com/reference/kotlin/android/renderscript/Allocation!, incX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` ZTRSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b or A\*\*H\*x = b Details: http://www. |
-| static [ScriptIntrinsicBLAS](https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#)! | `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#create(android.renderscript.RenderScript)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!)` Create an intrinsic to access BLAS subroutines. |
+| static [ScriptIntrinsicBLAS](../android/renderscript/ScriptIntrinsicBLAS.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#create(android.renderscript.RenderScript)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!)` Create an intrinsic to access BLAS subroutines. |
 
 ## Constants
 
@@ -308,12 +308,12 @@ fun BNNM(
 
 | Parameters ||
 |---|---|
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript)`. |
 | `a_offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset for all values in matrix A, e.g A\[i,j\] = A\[i,j\] - a_offset. Value should be from 0 to 255. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `b_offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset for all values in matrix B, e.g B\[i,j\] = B\[i,j\] - b_offset. Value should be from 0 to 255. |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript)`. |
 | `c_offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset for all values in matrix C. |
 | --- | --- |
 | `c_mult` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The multiplier for all values in matrix C, e.g C\[i,j\] = (C\[i,j\] + c_offset) \* c_mult. |
@@ -347,13 +347,13 @@ CGBMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 | `KL` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of sub-diagonals of the matrix A. |
 | `KU` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of super-diagonals of the matrix A. |
 | --- | --- |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
@@ -381,13 +381,13 @@ CGEMM performs one of the matrix-matrix operations C := alpha\*op(A)\*op(B) + be
 |---|---|
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `TransB` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix B. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CGEMV
 
@@ -413,14 +413,14 @@ CGEMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 | Parameters ||
 |---|---|
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### CGERC
@@ -444,13 +444,13 @@ CGERC performs the rank 1 operation A := alpha\*x\*y\*\*H + A Details: http://ww
 
 | Parameters ||
 |---|---|
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### CGERU
@@ -474,13 +474,13 @@ CGERU performs the rank 1 operation A := alpha\*x\*y\*\*T + A Details: http://ww
 
 | Parameters ||
 |---|---|
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### CHBMV
@@ -509,14 +509,14 @@ CHBMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of the band matrix A is being supplied. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
 
@@ -544,13 +544,13 @@ CHEMM performs one of the matrix-matrix operations C := alpha\*A\*B + beta\*C or
 |---|---|
 | `Side` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the symmetric matrix A appears on the left or right. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#RIGHT:kotlin.Int` |
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CHEMV
 
@@ -576,14 +576,14 @@ CHEMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### CHER
@@ -608,10 +608,10 @@ CHER performs the rank 1 operation A := alpha\*x\*x\*\*H + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CHER2
 
@@ -636,14 +636,14 @@ CHER2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*H + alpha\*y\*
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CHER2K
 
@@ -669,13 +669,13 @@ CHER2K performs one of the hermitian rank 2k operations C := alpha\*A\*B\*\*H + 
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of C is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CHERK
 
@@ -702,9 +702,9 @@ CHERK performs one of the hermitian rank k operations C := alpha\*A\*A\*\*H + be
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### CHPMV
@@ -731,14 +731,14 @@ CHPMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of the matrix A is supplied in packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### CHPR
@@ -763,10 +763,10 @@ CHPR performs the rank 1 operation A := alpha\*x\*x\*\*H + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CHPR2
 
@@ -791,14 +791,14 @@ CHPR2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*H + alpha\*y\*
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CSYMM
 
@@ -824,13 +824,13 @@ CSYMM performs one of the matrix-matrix operations C := alpha\*A\*B + beta\*C or
 |---|---|
 | `Side` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the symmetric matrix A appears on the left or right. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#RIGHT:kotlin.Int` |
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CSYR2K
 
@@ -856,13 +856,13 @@ CSYR2K performs one of the symmetric rank 2k operations C := alpha\*A\*B\*\*T + 
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of C is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CSYRK
 
@@ -887,11 +887,11 @@ CSYRK performs one of the symmetric rank k operations C := alpha\*A\*A\*\*T + be
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of C is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `beta` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar beta. |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `beta` | [Float2](../android/renderscript/Float2.md)!: The scalar beta. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### CTBMV
@@ -921,8 +921,8 @@ CTBMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x o
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -953,8 +953,8 @@ CTBSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b or A\*\*H
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -983,8 +983,8 @@ CTPMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x o
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1013,8 +1013,8 @@ CTPSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b or A\*\*H
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1045,10 +1045,10 @@ CTRMM performs one of the matrix-matrix operations B := alpha\*op(A)\*B or B := 
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CTRMV
 
@@ -1075,8 +1075,8 @@ CTRMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x o
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1107,10 +1107,10 @@ CTRSM solves one of the matrix equations op(A)\*X := alpha\*B or X\*op(A) := alp
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
-| `alpha` | [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Float2](../android/renderscript/Float2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 
 ### CTRSV
 
@@ -1137,8 +1137,8 @@ CTRSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b or A\*\*H
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1172,12 +1172,12 @@ DGBMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 | `KU` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of super-diagonals of the matrix A. |
 | --- | --- |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
@@ -1207,11 +1207,11 @@ DGEMM performs one of the matrix-matrix operations C := alpha\*op(A)\*op(B) + be
 | `TransB` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix B. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DGEMV
 
@@ -1238,13 +1238,13 @@ DGEMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 |---|---|
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### DGER
@@ -1269,12 +1269,12 @@ DGER performs the rank 1 operation A := alpha\*x\*y\*\*T + A Details: http://www
 | Parameters ||
 |---|---|
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### DSBMV
@@ -1305,12 +1305,12 @@ DSBMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
 
@@ -1339,13 +1339,13 @@ DSPMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of the matrix A is supplied in packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### DSPR
@@ -1370,10 +1370,10 @@ DSPR performs the rank 1 operation A := alpha\*x\*x\*\*T + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DSPR2
 
@@ -1399,13 +1399,13 @@ DSPR2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*T + alpha\*y\*
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DSYMM
 
@@ -1433,11 +1433,11 @@ DSYMM performs one of the matrix-matrix operations C := alpha\*A\*B + beta\*C or
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DSYMV
 
@@ -1464,13 +1464,13 @@ DSYMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### DSYR
@@ -1495,10 +1495,10 @@ DSYR performs the rank 1 operation A := alpha\*x\*x\*\*T + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DSYR2
 
@@ -1524,13 +1524,13 @@ DSYR2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*T + alpha\*y\*
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DSYR2K
 
@@ -1558,11 +1558,11 @@ DSYR2K performs one of the symmetric rank 2k operations C := alpha\*A\*B\*\*T + 
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DSYRK
 
@@ -1589,9 +1589,9 @@ DSYRK performs one of the symmetric rank k operations C := alpha\*A\*A\*\*T + be
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### DTBMV
@@ -1621,8 +1621,8 @@ DTBMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x D
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -1653,8 +1653,8 @@ DTBSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b Details: 
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -1683,8 +1683,8 @@ DTPMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x D
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1713,8 +1713,8 @@ DTPSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b Details: 
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1746,9 +1746,9 @@ DTRMM performs one of the matrix-matrix operations B := alpha\*op(A)\*B or B := 
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DTRMV
 
@@ -1775,8 +1775,8 @@ DTRMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x D
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1808,9 +1808,9 @@ DTRSM solves one of the matrix equations op(A)\*X := alpha\*B or X\*op(A) := alp
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 
 ### DTRSV
 
@@ -1837,8 +1837,8 @@ DTRSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b Details: 
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -1872,12 +1872,12 @@ SGBMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 | `KU` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of super-diagonals of the matrix A. |
 | --- | --- |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
@@ -1907,11 +1907,11 @@ SGEMM performs one of the matrix-matrix operations C := alpha\*op(A)\*op(B) + be
 | `TransB` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix B. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### SGEMV
 
@@ -1938,13 +1938,13 @@ SGEMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 |---|---|
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### SGER
@@ -1969,12 +1969,12 @@ SGER performs the rank 1 operation A := alpha\*x\*y\*\*T + A Details: http://www
 | Parameters ||
 |---|---|
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### SSBMV
@@ -2005,12 +2005,12 @@ SSBMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
 
@@ -2039,13 +2039,13 @@ SSPMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of the matrix A is supplied in packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### SSPR
@@ -2070,10 +2070,10 @@ SSPR performs the rank 1 operation A := alpha\*x\*x\*\*T + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### SSPR2
 
@@ -2099,13 +2099,13 @@ SSPR2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*T + alpha\*y\*
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### SSYMM
 
@@ -2133,11 +2133,11 @@ SSYMM performs one of the matrix-matrix operations C := alpha\*A\*B + beta\*C or
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### SSYMV
 
@@ -2164,13 +2164,13 @@ SSYMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### SSYR
@@ -2195,10 +2195,10 @@ SSYR performs the rank 1 operation A := alpha\*x\*x\*\*T + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### SSYR2
 
@@ -2224,13 +2224,13 @@ SSYR2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*T + alpha\*y\*
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### SSYR2K
 
@@ -2258,11 +2258,11 @@ SSYR2K performs one of the symmetric rank 2k operations C := alpha\*A\*B\*\*T + 
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### SSYRK
 
@@ -2289,9 +2289,9 @@ SSYRK performs one of the symmetric rank k operations C := alpha\*A\*A\*\*T + be
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `beta` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar beta. |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### STBMV
@@ -2321,8 +2321,8 @@ STBMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x D
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -2353,8 +2353,8 @@ STBSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b Details: 
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -2383,8 +2383,8 @@ STPMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x D
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -2413,8 +2413,8 @@ STPSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b Details: 
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -2446,9 +2446,9 @@ STRMM performs one of the matrix-matrix operations B := alpha\*op(A)\*B or B := 
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### STRMV
 
@@ -2475,8 +2475,8 @@ STRMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x D
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -2508,9 +2508,9 @@ STRSM solves one of the matrix equations op(A)\*X := alpha\*B or X\*op(A) := alp
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 
 ### STRSV
 
@@ -2537,8 +2537,8 @@ STRSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b Details: 
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -2571,13 +2571,13 @@ ZGBMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 | `KL` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of sub-diagonals of the matrix A. |
 | `KU` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of super-diagonals of the matrix A. |
 | --- | --- |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains the band matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
@@ -2605,13 +2605,13 @@ ZGEMM performs one of the matrix-matrix operations C := alpha\*op(A)\*op(B) + be
 |---|---|
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `TransB` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix B. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZGEMV
 
@@ -2637,14 +2637,14 @@ ZGEMV performs one of the matrix-vector operations y := alpha\*A\*x + beta\*y or
 | Parameters ||
 |---|---|
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### ZGERC
@@ -2668,13 +2668,13 @@ ZGERC performs the rank 1 operation A := alpha\*x\*y\*\*H + A Details: http://ww
 
 | Parameters ||
 |---|---|
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### ZGERU
@@ -2698,13 +2698,13 @@ ZGERU performs the rank 1 operation A := alpha\*x\*y\*\*T + A Details: http://ww
 
 | Parameters ||
 |---|---|
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### ZHBMV
@@ -2733,14 +2733,14 @@ ZHBMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of the band matrix A is being supplied. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
 
@@ -2768,13 +2768,13 @@ ZHEMM performs one of the matrix-matrix operations C := alpha\*A\*B + beta\*C or
 |---|---|
 | `Side` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the symmetric matrix A appears on the left or right. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#RIGHT:kotlin.Int` |
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZHEMV
 
@@ -2800,14 +2800,14 @@ ZHEMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### ZHER
@@ -2832,10 +2832,10 @@ ZHER performs the rank 1 operation A := alpha\*x\*x\*\*H + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZHER2
 
@@ -2860,14 +2860,14 @@ ZHER2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*H + alpha\*y\*
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZHER2K
 
@@ -2893,13 +2893,13 @@ ZHER2K performs one of the hermitian rank 2k operations C := alpha\*A\*B\*\*H + 
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of C is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZHERK
 
@@ -2926,9 +2926,9 @@ ZHERK performs one of the hermitian rank k operations C := alpha\*A\*A\*\*H + be
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `beta` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar beta. |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### ZHPMV
@@ -2955,14 +2955,14 @@ ZHPMV performs the matrix-vector operation y := alpha\*A\*x + beta\*y Details: h
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of the matrix A is supplied in packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
 | --- | --- |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 
 ### ZHPR
@@ -2987,10 +2987,10 @@ ZHPR performs the rank 1 operation A := alpha\*x\*x\*\*H + A Details: http://www
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `alpha` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZHPR2
 
@@ -3015,14 +3015,14 @@ ZHPR2 performs the symmetric rank 2 operation A := alpha\*x\*y\*\*H + alpha\*y\*
 | Parameters ||
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be supplied in the packed form. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
-| `Y` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Y` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector y, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector y, must be larger than zero. |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZSYMM
 
@@ -3048,13 +3048,13 @@ ZSYMM performs one of the matrix-matrix operations C := alpha\*A\*B + beta\*C or
 |---|---|
 | `Side` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the symmetric matrix A appears on the left or right. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#RIGHT:kotlin.Int` |
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZSYR2K
 
@@ -3080,13 +3080,13 @@ ZSYR2K performs one of the symmetric rank 2k operations C := alpha\*A\*B\*\*T + 
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of C is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
 | --- | --- |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZSYRK
 
@@ -3111,11 +3111,11 @@ ZSYRK performs one of the symmetric rank k operations C := alpha\*A\*A\*\*T + be
 |---|---|
 | `Uplo` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether the upper or lower triangular part of C is to be referenced. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UPPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#LOWER:kotlin.Int` |
 | `Trans` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to the operation. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `beta` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar beta. |
-| `C` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `beta` | [Double2](../android/renderscript/Double2.md)!: The scalar beta. |
+| `C` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix C, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 
 ### ZTBMV
@@ -3145,8 +3145,8 @@ ZTBMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x o
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -3177,8 +3177,8 @@ ZTBSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b or A\*\*H
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
 | `K` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of off-diagonals of the matrix A |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 
@@ -3207,8 +3207,8 @@ ZTPMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x o
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -3237,8 +3237,8 @@ ZTPSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b or A\*\*H
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `Ap` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `Ap` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains packed matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -3269,10 +3269,10 @@ ZTRMM performs one of the matrix-matrix operations B := alpha\*op(A)\*B or B := 
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZTRMV
 
@@ -3299,8 +3299,8 @@ ZTRMV performs one of the matrix-vector operations x := A\*x or x := A\*\*T\*x o
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -3331,10 +3331,10 @@ ZTRSM solves one of the matrix equations op(A)\*X := alpha\*B or X\*op(A) := alp
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | --- | --- |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
-| `alpha` | [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!: The scalar alpha. |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `alpha` | [Double2](../android/renderscript/Double2.md)!: The scalar alpha. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | --- | --- |
-| `B` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `B` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix B, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 
 ### ZTRSV
 
@@ -3361,8 +3361,8 @@ ZTRSV solves one of the systems of equations A\*x = b or A\*\*T\*x = b or A\*\*H
 | `TransA` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of transpose applied to matrix A. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NO_TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#TRANSPOSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#CONJ_TRANSPOSE:kotlin.Int` |
 | `Diag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies whether or not A is unit triangular. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#NON_UNIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/renderscript/ScriptIntrinsicBLAS#UNIT:kotlin.Int` |
 | --- | --- |
-| `A` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
-| `X` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `A` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains matrix A, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
+| `X` | [Allocation](../android/renderscript/Allocation.md)!: The input allocation contains vector x, supported elements type `https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript)`. |
 | `incX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The increment for the elements of vector x, must be larger than zero. |
 | --- | --- |
 
@@ -3380,7 +3380,7 @@ Create an intrinsic to access BLAS subroutines.
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: The RenderScript context |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: The RenderScript context |
 
 | Return ||
 |---|---|

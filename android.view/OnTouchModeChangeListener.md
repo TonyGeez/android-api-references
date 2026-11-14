@@ -4,19 +4,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnTouchModeChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnTouchModeChangeListener "View this page in Java") 
+Kotlin| [Java](../android/view/ViewTreeObserver.OnTouchModeChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnTouchModeChangeListener
 ```
 
-| [android.view.ViewTreeObserver.OnTouchModeChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnTouchModeChangeListener#) |
+| [android.view.ViewTreeObserver.OnTouchModeChangeListener](../android/view/ViewTreeObserver.OnTouchModeChangeListener.md) |
 
-| Known Direct Subclasses [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView.html#), [TabHost](https://developer.android.com/reference/kotlin/android/widget/TabHost.html#) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [AbsListView](https://developer.android.com/reference/kotlin/android/widget/AbsListView.html#) | Base class that can be used to implement virtualized lists of items. | | [TabHost](https://developer.android.com/reference/kotlin/android/widget/TabHost.html#) | Container for a tabbed window view. | |
+| Known Direct Subclasses [AbsListView](../android/widget/AbsListView.md), [TabHost](../android/widget/TabHost.md) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [AbsListView](../android/widget/AbsListView.md) | Base class that can be used to implement virtualized lists of items. | | [TabHost](../android/widget/TabHost.md) | Container for a tabbed window view. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#), [GridView](https://developer.android.com/reference/kotlin/android/widget/GridView.html#), [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#) |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------| | [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#) | A view that shows items in a vertically scrolling two-level list. | | [GridView](https://developer.android.com/reference/kotlin/android/widget/GridView.html#) | A view that shows items in two-dimensional scrolling grid. | | [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#) | Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list. | |
+| Known Indirect Subclasses [ExpandableListView](../android/widget/ExpandableListView.md), [GridView](../android/widget/GridView.md), [ListView](../android/widget/ListView.md) |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------| | [ExpandableListView](../android/widget/ExpandableListView.md) | A view that shows items in a vertically scrolling two-level list. | | [GridView](../android/widget/GridView.md) | A view that shows items in two-dimensional scrolling grid. | | [ListView](../android/widget/ListView.md) | Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when the touch mode changes.
@@ -25,7 +25,7 @@ Interface definition for a callback to be invoked when the touch mode changes.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTouchModeChanged](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnTouchModeChangeListener#onTouchModeChanged(kotlin.Boolean))`(`isInTouchMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback method to be invoked when the touch mode changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTouchModeChanged](../android/view/ViewTreeObserver.OnTouchModeChangeListener.md))`(`isInTouchMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback method to be invoked when the touch mode changes. |
 
 ## Public methods
 

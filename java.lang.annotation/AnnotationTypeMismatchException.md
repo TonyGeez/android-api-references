@@ -11,10 +11,10 @@ open class AnnotationTypeMismatchException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.annotation.AnnotationTypeMismatchException](https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationTypeMismatchException#) |
+| | | | ↳ | [java.lang.annotation.AnnotationTypeMismatchException](../java/lang/annotation/AnnotationTypeMismatchException.md) |
 
 Thrown to indicate that a program has attempted to access an element of an annotation whose type has changed after the annotation was compiled (or serialized). This exception can be thrown by the .
 
@@ -22,12 +22,12 @@ Thrown to indicate that a program has attempted to access an element of an annot
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AnnotationTypeMismatchException](https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationTypeMismatchException#AnnotationTypeMismatchException(java.lang.reflect.Method,%20kotlin.String))`(`element:` ` [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method.html#)!`, `foundType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an AnnotationTypeMismatchException for the specified annotation type element and found data type. |
+| [AnnotationTypeMismatchException](../java/lang/annotation/AnnotationTypeMismatchException.md))`(`element:` ` [Method](../java/lang/reflect/Method.md)!`, `foundType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an AnnotationTypeMismatchException for the specified annotation type element and found data type. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method.html#)! | [element](https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationTypeMismatchException#element())`()` Returns the`Method`object for the incorrectly typed element. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [foundType](https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationTypeMismatchException#foundType())`()` Returns the type of data found in the incorrectly typed element. |
+| open [Method](../java/lang/reflect/Method.md)! | [element](../java/lang/annotation/AnnotationTypeMismatchException.md))`()` Returns the`Method`object for the incorrectly typed element. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [foundType](../java/lang/annotation/AnnotationTypeMismatchException.md))`()` Returns the type of data found in the incorrectly typed element. |
 
 ## Public constructors
 
@@ -45,7 +45,7 @@ Constructs an AnnotationTypeMismatchException for the specified annotation type 
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `element` | [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method.html#)!:the`Method`object for the annotation element, may be`null` |
+| `element` | [Method](../java/lang/reflect/Method.md)!:the`Method`object for the annotation element, may be`null` |
 | `foundType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the (erroneous) type of data found in the annotation. This string may, but is not required to, contain the value as well. The exact format of the string is unspecified, may be`null`. |
 
 ## Public methods
@@ -62,7 +62,7 @@ Returns the`Method`object for the incorrectly typed element. The value may be un
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Method](https://developer.android.com/reference/kotlin/java/lang/reflect/Method.html#)! | the`Method`object for the incorrectly typed element, or`null`if unavailable |
+| [Method](../java/lang/reflect/Method.md)! | the`Method`object for the incorrectly typed element, or`null`if unavailable |
 
 ### foundType
 

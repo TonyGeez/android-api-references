@@ -8,23 +8,23 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface CookieStore
 ```
 
-| [java.net.CookieStore](https://developer.android.com/reference/kotlin/java/net/CookieStore#) |
+| [java.net.CookieStore](../java/net/CookieStore.md) |
 
 A CookieStore object represents a storage for cookie. Can store and retrieve cookies.
 
-[CookieManager](https://developer.android.com/reference/kotlin/java/net/CookieManager) will call`CookieStore.add`to save cookies for every incoming HTTP response, and call`CookieStore.get`to retrieve cookie for every outgoing HTTP request. A CookieStore is responsible for removing HttpCookie instances which have expired.
+[CookieManager](../java/net/CookieManager.md) will call`CookieStore.add`to save cookies for every incoming HTTP response, and call`CookieStore.get`to retrieve cookie for every outgoing HTTP request. A CookieStore is responsible for removing HttpCookie instances which have expired.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/net/CookieStore#add(java.net.URI,%20java.net.HttpCookie))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `cookie:` ` [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!`)` Adds one HTTP cookie to the store. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!\>! | [get](https://developer.android.com/reference/kotlin/java/net/CookieStore#get(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`)` Retrieve cookies associated with given URI, or whose domain matches the given URI. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!\>! | [getCookies](https://developer.android.com/reference/kotlin/java/net/CookieStore#getCookies())`()` Get all not-expired cookies in cookie store. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](../java/net/CookieStore.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `cookie:` ` [HttpCookie](../java/net/HttpCookie.md)!`)` Adds one HTTP cookie to the store. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HttpCookie](../java/net/HttpCookie.md)!\>! | [get](../java/net/CookieStore.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Retrieve cookies associated with given URI, or whose domain matches the given URI. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HttpCookie](../java/net/HttpCookie.md)!\>! | [getCookies](../java/net/CookieStore.md))`()` Get all not-expired cookies in cookie store. |
 | --- | --- |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [URI](https://developer.android.com/reference/kotlin/java/net/URI)!\>! | [getURIs](https://developer.android.com/reference/kotlin/java/net/CookieStore#getURIs())`()` Get all URIs which identify the cookies in this cookie store. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/net/CookieStore#remove(java.net.URI,%20java.net.HttpCookie))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `cookie:` ` [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!`)` Remove a cookie from store. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/net/CookieStore#removeAll())`()` Remove all cookies in this cookie store. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [URI](../java/net/URI.md)!\>! | [getURIs](../java/net/CookieStore.md))`()` Get all URIs which identify the cookies in this cookie store. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/net/CookieStore.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `cookie:` ` [HttpCookie](../java/net/HttpCookie.md)!`)` Remove a cookie from store. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../java/net/CookieStore.md))`()` Remove all cookies in this cookie store. |
 | --- | --- |
 
 ## Public methods
@@ -48,8 +48,8 @@ If a cookie corresponding to the given URI already exists, then it is replaced w
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:the uri this cookie associated with. if`null`, this cookie will not be associated with an URI |
-| `cookie` | [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!:the cookie to store |
+| `uri` | [URI](../java/net/URI.md)!:the uri this cookie associated with. if`null`, this cookie will not be associated with an URI |
+| `cookie` | [HttpCookie](../java/net/HttpCookie.md)!:the cookie to store |
 
 | Exceptions ||
 |----------------------------------|--------------------|
@@ -57,7 +57,7 @@ If a cookie corresponding to the given URI already exists, then it is replaced w
 
 **See Also**
 
-- [#get](https://developer.android.com/reference/kotlin/java/net/CookieStore#get(java.net.URI)) 
+- [#get](../java/net/CookieStore.md)) 
 
 ### get
 
@@ -71,11 +71,11 @@ Retrieve cookies associated with given URI, or whose domain matches the given UR
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:the uri associated with the cookies to be returned |
+| `uri` | [URI](../java/net/URI.md)!:the uri associated with the cookies to be returned |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!>! | an immutable list of HttpCookie, return empty list if no cookies match the given URI |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [HttpCookie](../java/net/HttpCookie.md)!>! | an immutable list of HttpCookie, return empty list if no cookies match the given URI |
 
 | Exceptions ||
 |----------------------------------|-----------------|
@@ -83,7 +83,7 @@ Retrieve cookies associated with given URI, or whose domain matches the given UR
 
 **See Also**
 
-- [#add](https://developer.android.com/reference/kotlin/java/net/CookieStore#add(java.net.URI,%20java.net.HttpCookie)) 
+- [#add](../java/net/CookieStore.md)) 
 
 ### getCookies
 
@@ -97,7 +97,7 @@ Get all not-expired cookies in cookie store.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!>! | an immutable list of http cookies; return empty list if there's no http cookie in store |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [HttpCookie](../java/net/HttpCookie.md)!>! | an immutable list of http cookies; return empty list if there's no http cookie in store |
 
 ### getURIs
 
@@ -111,7 +111,7 @@ Get all URIs which identify the cookies in this cookie store.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [URI](https://developer.android.com/reference/kotlin/java/net/URI)!>! | an immutable list of URIs; return empty list if no cookie in this cookie store is associated with an URI |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [URI](../java/net/URI.md)!>! | an immutable list of URIs; return empty list if no cookie in this cookie store is associated with an URI |
 
 ### remove
 
@@ -128,8 +128,8 @@ Remove a cookie from store.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:the uri this cookie associated with. if`null`, the cookie to be removed is not associated with an URI when added; if not`null`, the cookie to be removed is associated with the given URI when added. |
-| `cookie` | [HttpCookie](https://developer.android.com/reference/kotlin/java/net/HttpCookie)!:the cookie to remove |
+| `uri` | [URI](../java/net/URI.md)!:the uri this cookie associated with. if`null`, the cookie to be removed is not associated with an URI when added; if not`null`, the cookie to be removed is associated with the given URI when added. |
+| `cookie` | [HttpCookie](../java/net/HttpCookie.md)!:the cookie to remove |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------|

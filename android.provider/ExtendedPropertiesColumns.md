@@ -4,25 +4,25 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # ExtendedPropertiesColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.ExtendedPropertiesColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/CalendarContract.ExtendedPropertiesColumns.md) 
 | --- | --- |
 
 ```
 protected interface ExtendedPropertiesColumns
 ```
 
-| [android.provider.CalendarContract.ExtendedPropertiesColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#) |
+| [android.provider.CalendarContract.ExtendedPropertiesColumns](../android/provider/CalendarContract.ExtendedPropertiesColumns.md) |
 
-| Known Direct Subclasses [CalendarContract.ExtendedProperties](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedProperties) |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [CalendarContract.ExtendedProperties](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedProperties) | Fields for accessing the Extended Properties. | |
+| Known Direct Subclasses [CalendarContract.ExtendedProperties](../android/provider/CalendarContract.ExtendedProperties.md) |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [CalendarContract.ExtendedProperties](../android/provider/CalendarContract.ExtendedProperties.md) | Fields for accessing the Extended Properties. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#EVENT_ID:kotlin.String) The event the extended property belongs to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#NAME:kotlin.String) The name of the extended property. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VALUE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.ExtendedPropertiesColumns#VALUE:kotlin.String) The value of the extended property. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](../android/provider/CalendarContract.ExtendedPropertiesColumns.md) The event the extended property belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](../android/provider/CalendarContract.ExtendedPropertiesColumns.md) The name of the extended property. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VALUE](../android/provider/CalendarContract.ExtendedPropertiesColumns.md) The value of the extended property. |
 | --- | --- |
 
 ## Constants

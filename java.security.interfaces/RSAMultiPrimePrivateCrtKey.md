@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface RSAMultiPrimePrivateCrtKey : RSAPrivateKey
 ```
 
-| [java.security.interfaces.RSAMultiPrimePrivateCrtKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#) |
+| [java.security.interfaces.RSAMultiPrimePrivateCrtKey](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md) |
 
 The interface to an RSA multi-prime private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard, using the*Chinese Remainder Theorem*(CRT) information values.
 
@@ -16,24 +16,24 @@ The interface to an RSA multi-prime private key, as defined in the [PKCS#1 v2.2]
 
 | Constants ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#serialVersionUID:kotlin.Long) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getCrtCoefficient](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getCrtCoefficient())`()` Returns the crtCoefficient. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RSAOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo.html#)!\>! | [getOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getOtherPrimeInfo())`()` Returns the otherPrimeInfo or null if there are only two prime factors (p and q). |
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentP](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeExponentP())`()` Returns the primeExponentP. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | [getCrtCoefficient](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md))`()` Returns the crtCoefficient. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RSAOtherPrimeInfo](../java/security/spec/RSAOtherPrimeInfo.md)!\>! | [getOtherPrimeInfo](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md))`()` Returns the otherPrimeInfo or null if there are only two prime factors (p and q). |
+| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeExponentP](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md))`()` Returns the primeExponentP. |
 | --- | --- |
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeExponentQ](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeExponentQ())`()` Returns the primeExponentQ. |
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeP](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeP())`()` Returns the primeP. |
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrimeQ](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPrimeQ())`()` Returns the primeQ. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeExponentQ](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md))`()` Returns the primeExponentQ. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeP](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md))`()` Returns the primeP. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeQ](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md))`()` Returns the primeQ. |
 | --- | --- |
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAMultiPrimePrivateCrtKey#getPublicExponent())`()` Returns the public exponent. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | [getPublicExponent](../java/security/interfaces/RSAMultiPrimePrivateCrtKey.md))`()` Returns the public exponent. |
 
 | Inherited functions ||
 |---|---|
-| From class [RSAKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAKey) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getModulus](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAKey#getModulus())`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | [getParams](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAKey#getParams())`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
-| From class [RSAPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateKey) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPrivateExponent](https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPrivateKey#getPrivateExponent())`()` <br /> Returns the private exponent. <br /> | ||
+| From class [RSAKey](../java/security/interfaces/RSAKey.md) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java/math/BigInteger.md)! | [getModulus](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getParams](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
+| From class [RSAPrivateKey](../java/security/interfaces/RSAPrivateKey.md) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java/math/BigInteger.md)! | [getPrivateExponent](../java/security/interfaces/RSAPrivateKey.md))`()` <br /> Returns the private exponent. <br /> | ||
 
 ## Constants
 
@@ -66,7 +66,7 @@ Returns the crtCoefficient.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the crtCoefficient. |
+| [BigInteger](../java/math/BigInteger.md)! | the crtCoefficient. |
 
 ### getOtherPrimeInfo
 
@@ -80,7 +80,7 @@ Returns the otherPrimeInfo or null if there are only two prime factors (p and q)
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RSAOtherPrimeInfo](https://developer.android.com/reference/kotlin/java/security/spec/RSAOtherPrimeInfo.html#)!>! | the otherPrimeInfo. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RSAOtherPrimeInfo](../java/security/spec/RSAOtherPrimeInfo.md)!>! | the otherPrimeInfo. |
 
 ### getPrimeExponentP
 
@@ -94,7 +94,7 @@ Returns the primeExponentP.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the primeExponentP. |
+| [BigInteger](../java/math/BigInteger.md)! | the primeExponentP. |
 
 ### getPrimeExponentQ
 
@@ -108,7 +108,7 @@ Returns the primeExponentQ.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the primeExponentQ. |
+| [BigInteger](../java/math/BigInteger.md)! | the primeExponentQ. |
 
 ### getPrimeP
 
@@ -122,7 +122,7 @@ Returns the primeP.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the primeP. |
+| [BigInteger](../java/math/BigInteger.md)! | the primeP. |
 
 ### getPrimeQ
 
@@ -136,7 +136,7 @@ Returns the primeQ.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the primeQ. |
+| [BigInteger](../java/math/BigInteger.md)! | the primeQ. |
 
 ### getPublicExponent
 
@@ -150,4 +150,4 @@ Returns the public exponent.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the public exponent. |
+| [BigInteger](../java/math/BigInteger.md)! | the public exponent. |

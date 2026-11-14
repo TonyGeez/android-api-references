@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnSeekCompleteListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnSeekCompleteListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaPlayer.OnSeekCompleteListener.md) 
 | --- | --- |
 
 ```
 interface OnSeekCompleteListener
 ```
 
-| [android.media.MediaPlayer.OnSeekCompleteListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnSeekCompleteListener#) |
+| [android.media.MediaPlayer.OnSeekCompleteListener](../android/media/MediaPlayer.OnSeekCompleteListener.md) |
 
 Interface definition of a callback to be invoked indicating the completion of a seek operation.
 
@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked indicating the completion of a 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSeekComplete](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnSeekCompleteListener#onSeekComplete(android.media.MediaPlayer))`(`mp:` ` [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!`)` Called to indicate the completion of a seek operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSeekComplete](../android/media/MediaPlayer.OnSeekCompleteListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`)` Called to indicate the completion of a seek operation. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called to indicate the completion of a seek operation.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the MediaPlayer that issued the seek operation |
+| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer that issued the seek operation |

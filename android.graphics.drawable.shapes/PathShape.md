@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PathShape
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/PathShape "View this page in Java") 
+Kotlin| [Java](../android/graphics/drawable/shapes/PathShape.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ open class PathShape : Shape
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) ||
-| | ↳ | [android.graphics.drawable.shapes.PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#) |
+| ↳ | [android.graphics.drawable.shapes.Shape](../android/graphics/drawable/shapes/Shape.md) ||
+| | ↳ | [android.graphics.drawable.shapes.PathShape](../android/graphics/drawable/shapes/PathShape.md) |
 
-Creates geometric paths, utilizing the [android.graphics.Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#) class.
+Creates geometric paths, utilizing the [android.graphics.Path](../android/graphics/Path.md) class.
 
-The path can be drawn to a Canvas with its own draw() method, but more graphical control is available if you instead pass the PathShape to a [android.graphics.drawable.ShapeDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ShapeDrawable.html#).
+The path can be drawn to a Canvas with its own draw() method, but more graphical control is available if you instead pass the PathShape to a [android.graphics.drawable.ShapeDrawable](../android/graphics/drawable/ShapeDrawable.md).
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#PathShape(android.graphics.Path,%20kotlin.Float,%20kotlin.Float))`(`path:` ` [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#)`, `stdWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `stdHeight:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` PathShape constructor. |
+| [PathShape](../android/graphics/drawable/shapes/PathShape.md))`(`path:` ` [Path](../android/graphics/Path.md)`, `stdWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `stdHeight:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` PathShape constructor. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#) | [clone](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#clone())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#draw(android.graphics.Canvas,%20android.graphics.Paint))`(`canvas:` ` [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!`, `paint:` ` [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [PathShape](../android/graphics/drawable/shapes/PathShape.md) | [clone](../android/graphics/drawable/shapes/PathShape.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](../android/graphics/drawable/shapes/PathShape.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)!`, `paint:` ` [Paint](../android/graphics/Paint.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/drawable/shapes/PathShape.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#hashCode())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/drawable/shapes/PathShape.md))`()` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResize](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#onResize(kotlin.Float,%20kotlin.Float))`(`width:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `height:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResize](../android/graphics/drawable/shapes/PathShape.md))`(`width:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `height:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getHeight())`()` <br /> Returns the height of the Shape. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getOutline(android.graphics.Outline))`(`outline:` ` [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)`)` <br /> Computes the Outline of the shape and return it in the supplied Outline parameter. The default implementation does nothing and`outline`is not changed. <br /> | | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getWidth())`()` <br /> Returns the width of the Shape. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAlpha](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#hasAlpha())`()` <br /> Checks whether the Shape is opaque. Default impl returns`true`. Override if your subclass can be opaque. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resize](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#resize(kotlin.Float,%20kotlin.Float))`(`width:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `height:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> Resizes the dimensions of this shape. Must be called before [draw(android.graphics.Canvas,android.graphics.Paint)](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#draw(android.graphics.Canvas,%20android.graphics.Paint)). <br /> | ||
+| From class [Shape](../android/graphics/drawable/shapes/Shape.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHeight](../android/graphics/drawable/shapes/Shape.md))`()` <br /> Returns the height of the Shape. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](../android/graphics/drawable/shapes/Shape.md))`(`outline:` ` [Outline](../android/graphics/Outline.md)`)` <br /> Computes the Outline of the shape and return it in the supplied Outline parameter. The default implementation does nothing and`outline`is not changed. <br /> | | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWidth](../android/graphics/drawable/shapes/Shape.md))`()` <br /> Returns the width of the Shape. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAlpha](../android/graphics/drawable/shapes/Shape.md))`()` <br /> Checks whether the Shape is opaque. Default impl returns`true`. Override if your subclass can be opaque. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resize](../android/graphics/drawable/shapes/Shape.md))`(`width:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `height:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> Resizes the dimensions of this shape. Must be called before [draw(android.graphics.Canvas,android.graphics.Paint)](../android/graphics/drawable/shapes/Shape.md)). <br /> | ||
 
 ## Public constructors
 
@@ -59,7 +59,7 @@ PathShape constructor.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path.html#):a Path that defines the geometric paths for this shape This value cannot be`null`. |
+| `path` | [Path](../android/graphics/Path.md):a Path that defines the geometric paths for this shape This value cannot be`null`. |
 | `stdWidth` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the standard width for the shape. Any changes to the width with resize() will result in a width scaled based on the new width divided by this width. |
 | `stdHeight` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the standard height for the shape. Any changes to the height with resize() will result in a height scaled based on the new height divided by this height. |
 | --- | --- |
@@ -76,7 +76,7 @@ open fun clone(): PathShape
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------|
-| [PathShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/PathShape#) | a clone of this instance. |
+| [PathShape](../android/graphics/drawable/shapes/PathShape.md) | a clone of this instance. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -95,8 +95,8 @@ open fun draw(
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!:the Canvas within which this shape should be drawn |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!:the Paint object that defines this shape's characteristics |
+| `canvas` | [Canvas](../android/graphics/Canvas.md)!:the Canvas within which this shape should be drawn |
+| `paint` | [Paint](../android/graphics/Paint.md)!:the Paint object that defines this shape's characteristics |
 
 ### equals
 

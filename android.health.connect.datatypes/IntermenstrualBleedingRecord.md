@@ -9,9 +9,9 @@ class IntermenstrualBleedingRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.IntermenstrualBleedingRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntermenstrualBleedingRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.IntermenstrualBleedingRecord](../android/health/connect/datatypes/IntermenstrualBleedingRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's inter-menstrual bleeding. Each record represents a single instance.

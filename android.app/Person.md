@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # Person
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/Person "View this page in Java")
+Kotlin | [Java](../android/app/Person.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class Person : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.Person](https://developer.android.com/reference/kotlin/android/app/Person#) |
+| ↳ | [android.app.Person](../android/app/Person.md) |
 
 Provides an immutable reference to an entity that appears repeatedly on different surfaces of the platform. For example, this could represent the sender of a message.
 
@@ -29,7 +29,7 @@ Provides an immutable reference to an entity that appears repeatedly on differen
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)? | `https://developer.android.com/reference/kotlin/android/app/Person#getIcon()()` <br /> |
+| [Icon](../android/graphics/drawable/Icon.md)? | `https://developer.android.com/reference/kotlin/android/app/Person#getIcon()()` <br /> |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Person#getKey()()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Person#getName()()` <br /> |
@@ -39,12 +39,12 @@ Provides an immutable reference to an entity that appears repeatedly on differen
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#isBot()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#isImportant()()` <br /> |
 | --- | --- |
-| [Person.Builder](https://developer.android.com/reference/kotlin/android/app/Person.Builder)! | `https://developer.android.com/reference/kotlin/android/app/Person#toBuilder()()` Creates and returns a new `https://developer.android.com/reference/kotlin/android/app/Person.Builder` initialized with this Person's data. |
+| [Person.Builder](../android/app/Person.Builder.md)! | `https://developer.android.com/reference/kotlin/android/app/Person#toBuilder()()` Creates and returns a new `https://developer.android.com/reference/kotlin/android/app/Person.Builder` initialized with this Person's data. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Person#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Person](https://developer.android.com/reference/kotlin/android/app/Person#)!\> | `https://developer.android.com/reference/kotlin/android/app/Person#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Person](../android/app/Person.md)!\> | `https://developer.android.com/reference/kotlin/android/app/Person#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -207,7 +207,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Address
 
-Kotlin | [Java](https://developer.android.com/reference/android/location/Address "View this page in Java")
+Kotlin | [Java](../android/location/Address.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Address : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.Address](https://developer.android.com/reference/kotlin/android/location/Address#) |
+| ↳ | [android.location.Address](../android/location/Address.md) |
 
 A class representing an Address, that is, a set of Strings describing a location. The address format is a simplified version of xAL (eXtensible Address Language) http://www.oasis-open.org/committees/ciq/ciq.html#6
 
@@ -36,11 +36,11 @@ A class representing an Address, that is, a set of Strings describing a location
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getCountryCode()()` Returns the country code of the address, for example "US", or null if it is unknown. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getCountryName()()` Returns the localized country name of the address, for example "Iceland", or null if it is unknown. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/location/Address#getExtras()()` Returns additional provider-specific information about the address as a Bundle. |
+| open [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/location/Address#getExtras()()` Returns additional provider-specific information about the address as a Bundle. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getFeatureName()()` Returns the feature name of the address, for example, "Golden Gate Bridge", or null if it is unknown |
 | --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#getLatitude()()` Returns the latitude of the address if known. |
-| open [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | `https://developer.android.com/reference/kotlin/android/location/Address#getLocale()()` Returns the Locale associated with this address. |
+| open [Locale](../java/util/Locale.md)! | `https://developer.android.com/reference/kotlin/android/location/Address#getLocale()()` Returns the Locale associated with this address. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/location/Address#getLocality()()` Returns the locality of the address, for example "Mountain View", or null if it is unknown. |
 | --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/Address#getLongitude()()` Returns the longitude of the address if known. |
@@ -87,7 +87,7 @@ A class representing an Address, that is, a set of Strings describing a location
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Address](https://developer.android.com/reference/kotlin/android/location/Address#)!\> | `https://developer.android.com/reference/kotlin/android/location/Address#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Address](../android/location/Address.md)!\> | `https://developer.android.com/reference/kotlin/android/location/Address#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 

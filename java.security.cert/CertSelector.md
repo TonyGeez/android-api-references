@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CertSelector : Cloneable
 ```
 
-| [java.security.cert.CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector#) |
+| [java.security.cert.CertSelector](../java/security/cert/CertSelector.md) |
 
-| Known Direct Subclasses [X509CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector) |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [X509CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CertSelector) | A`CertSelector`that selects`X509Certificates`that match all specified criteria. | |
+| Known Direct Subclasses [X509CertSelector](../java/security/cert/X509CertSelector.md) |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [X509CertSelector](../java/security/cert/X509CertSelector.md) | A`CertSelector`that selects`X509Certificates`that match all specified criteria. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A selector that defines a set of criteria for selecting`Certificate`s. Classes that implement this interface are often used to specify which`Certificate`s should be retrieved from a`CertStore`.
@@ -23,8 +23,8 @@ Unless otherwise specified, the methods defined in this interface are not thread
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector#clone())`()` Makes a copy of this`CertSelector`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [match](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector#match(java.security.cert.Certificate))`(`cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`)` Decides whether a`Certificate`should be selected. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/CertSelector.md))`()` Makes a copy of this`CertSelector`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [match](../java/security/cert/CertSelector.md))`(`cert:` ` [Certificate](../java/security/cert/Certificate.md)!`)` Decides whether a`Certificate`should be selected. |
 
 ## Public methods
 
@@ -58,7 +58,7 @@ Decides whether a`Certificate`should be selected.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------|
-| `cert` | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!:the`Certificate`to be checked |
+| `cert` | [Certificate](../java/security/cert/Certificate.md)!:the`Certificate`to be checked |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------|

@@ -4,20 +4,20 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # OnCloseListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/SearchView.OnCloseListener "View this page in Java") 
+Kotlin| [Java](../android/widget/SearchView.OnCloseListener.md) 
 | --- | --- |
 
 ```
 interface OnCloseListener
 ```
 
-| [android.widget.SearchView.OnCloseListener](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnCloseListener#) |
+| [android.widget.SearchView.OnCloseListener](../android/widget/SearchView.OnCloseListener.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onClose](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnCloseListener#onClose())`()` The user is attempting to close the SearchView. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onClose](../android/widget/SearchView.OnCloseListener.md))`()` The user is attempting to close the SearchView. |
 
 ## Public methods
 

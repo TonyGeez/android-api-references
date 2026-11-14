@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # TextDirectionHeuristics
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/TextDirectionHeuristics "View this page in Java") 
+Kotlin| [Java](../android/text/TextDirectionHeuristics.md) 
 | --- | --- |
 
 ```
@@ -13,27 +13,27 @@ open class TextDirectionHeuristics
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.TextDirectionHeuristics](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#) |
+| ↳ | [android.text.TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md) |
 
-Some objects that implement [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic). Use these with the android.text.BidiFormatter#unicodeWrap methods in [BidiFormatter](https://developer.android.com/reference/kotlin/android/text/BidiFormatter). Also notice that these direction heuristics correspond to the same types of constants provided in the [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) class for [setTextDirection()](https://developer.android.com/reference/kotlin/android/view/View.html#setTextDirection(kotlin.Int)), such as [android.view.View#TEXT_DIRECTION_RTL](https://developer.android.com/reference/kotlin/android/view/View.html#TEXT_DIRECTION_RTL:kotlin.Int).
+Some objects that implement [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md). Use these with the android.text.BidiFormatter#unicodeWrap methods in [BidiFormatter](../android/text/BidiFormatter.md). Also notice that these direction heuristics correspond to the same types of constants provided in the [android.view.View](../android/view/View.md) class for [setTextDirection()](../android/view/View.md)), such as [android.view.View#TEXT_DIRECTION_RTL](../android/view/View.md).
 
-To support versions lower than [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int), you can use the support library's androidx.core.text.TextDirectionHeuristicsCompat class.
+To support versions lower than [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](../android/os/Build.VERSION_CODES.md), you can use the support library's androidx.core.text.TextDirectionHeuristicsCompat class.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TextDirectionHeuristics](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#TextDirectionHeuristics())`()` <br /> |
+| [TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md))`()` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic)! | [ANYRTL_LTR](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#ANYRTL_LTR:android.text.TextDirectionHeuristic) If the text contains any strong right to left non-format character, determines that the direction is right to left, falling back to left to right if it finds none. |
-| static [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic)! | [FIRSTSTRONG_LTR](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#FIRSTSTRONG_LTR:android.text.TextDirectionHeuristic) Determines the direction based on the first strong directional character, including bidi format chars, falling back to left to right if it finds none. |
-| static [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic)! | [FIRSTSTRONG_RTL](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#FIRSTSTRONG_RTL:android.text.TextDirectionHeuristic) Determines the direction based on the first strong directional character, including bidi format chars, falling back to right to left if it finds none. |
+| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [ANYRTL_LTR](../android/text/TextDirectionHeuristics.md) If the text contains any strong right to left non-format character, determines that the direction is right to left, falling back to left to right if it finds none. |
+| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [FIRSTSTRONG_LTR](../android/text/TextDirectionHeuristics.md) Determines the direction based on the first strong directional character, including bidi format chars, falling back to left to right if it finds none. |
+| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [FIRSTSTRONG_RTL](../android/text/TextDirectionHeuristics.md) Determines the direction based on the first strong directional character, including bidi format chars, falling back to right to left if it finds none. |
 | --- | --- |
-| static [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic)! | [LOCALE](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#LOCALE:android.text.TextDirectionHeuristic) Force the paragraph direction to the Locale direction. |
-| static [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic)! | [LTR](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#LTR:android.text.TextDirectionHeuristic) Always decides that the direction is left to right. |
-| static [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic)! | [RTL](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristics#RTL:android.text.TextDirectionHeuristic) Always decides that the direction is right to left. |
+| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [LOCALE](../android/text/TextDirectionHeuristics.md) Force the paragraph direction to the Locale direction. |
+| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [LTR](../android/text/TextDirectionHeuristics.md) Always decides that the direction is left to right. |
+| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [RTL](../android/text/TextDirectionHeuristics.md) Always decides that the direction is right to left. |
 | --- | --- |
 
 ## Public constructors

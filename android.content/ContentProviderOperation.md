@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # ContentProviderOperation
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/ContentProviderOperation "View this page in Java") 
+Kotlin| [Java](../android/content/ContentProviderOperation.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ContentProviderOperation : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.ContentProviderOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#) |
+| ↳ | [android.content.ContentProviderOperation](../android/content/ContentProviderOperation.md) |
 
 Represents a single operation to be performed as part of a batch of operations.
 
@@ -21,47 +21,47 @@ Represents a single operation to be performed as part of a batch of operations.
 
 | Nested classes ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) Used to add parameters to a [ContentProviderOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#). |
+| open | [Builder](../android/content/ContentProviderOperation.Builder.md) Used to add parameters to a [ContentProviderOperation](../android/content/ContentProviderOperation.md). |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult) | [apply](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#apply(android.content.ContentProvider,%20kotlin.Array,%20kotlin.Int))`(`provider:` ` [ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider)`, `backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operation using the given provider. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#describeContents())`()` <br /> |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getUri](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#getUri())`()` Gets the Uri for the target of the operation. |
+| open [ContentProviderResult](../android/content/ContentProviderResult.md) | [apply](../android/content/ContentProviderOperation.md))`(`provider:` ` [ContentProvider](../android/content/ContentProvider.md)`, `backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](../android/content/ContentProviderResult.md)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operation using the given provider. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/ContentProviderOperation.md))`()` <br /> |
+| open [Uri](../android/net/Uri.md) | [getUri](../android/content/ContentProviderOperation.md))`()` Gets the Uri for the target of the operation. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAssertQuery](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isAssertQuery())`()` Returns true if the operation represents an assert query. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCall](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isCall())`()` Returns true if the operation represents a android. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDelete](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isDelete())`()` Returns true if the operation represents a android. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAssertQuery](../android/content/ContentProviderOperation.md))`()` Returns true if the operation represents an assert query. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCall](../android/content/ContentProviderOperation.md))`()` Returns true if the operation represents a android. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDelete](../android/content/ContentProviderOperation.md))`()` Returns true if the operation represents a android. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExceptionAllowed](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isExceptionAllowed())`()` Returns true if this operation allows subsequent operations to continue even if this operation throws an exception. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInsert](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isInsert())`()` Returns true if the operation represents a android. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isReadOperation())`()` Returns true if the operation represents an assert query. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExceptionAllowed](../android/content/ContentProviderOperation.md))`()` Returns true if this operation allows subsequent operations to continue even if this operation throws an exception. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInsert](../android/content/ContentProviderOperation.md))`()` Returns true if the operation represents a android. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOperation](../android/content/ContentProviderOperation.md))`()` Returns true if the operation represents an assert query. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUpdate](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isUpdate())`()` Returns true if the operation represents a android. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWriteOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isWriteOperation())`()` Returns true if the operation represents an insertion, deletion, or update. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isYieldAllowed](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isYieldAllowed())`()` Returns true if the operation allows yielding the database to other transactions if the database is contended. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUpdate](../android/content/ContentProviderOperation.md))`()` Returns true if the operation represents a android. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWriteOperation](../android/content/ContentProviderOperation.md))`()` Returns true if the operation represents an insertion, deletion, or update. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isYieldAllowed](../android/content/ContentProviderOperation.md))`()` Returns true if the operation allows yielding the database to other transactions if the database is contended. |
 | --- | --- |
-| openstatic [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | [newAssertQuery](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newAssertQuery(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building a [ContentProviderOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#) to assert a set of values as provided through [Builder.withValues(ContentValues)](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder#withValues(android.content.ContentValues)). |
-| openstatic [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | [newCall](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newCall(android.net.Uri,%20kotlin.String,%20kotlin.String))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android. |
-| openstatic [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | [newDelete](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newDelete(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android. |
+| openstatic [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | [newAssertQuery](../android/content/ContentProviderOperation.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building a [ContentProviderOperation](../android/content/ContentProviderOperation.md) to assert a set of values as provided through [Builder.withValues(ContentValues)](../android/content/ContentProviderOperation.Builder.md)). |
+| openstatic [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | [newCall](../android/content/ContentProviderOperation.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android. |
+| openstatic [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | [newDelete](../android/content/ContentProviderOperation.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android. |
 | --- | --- |
-| openstatic [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | [newInsert](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newInsert(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android. |
-| openstatic [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | [newUpdate](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newUpdate(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [resolveExtrasBackReferences](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#resolveExtrasBackReferences(kotlin.Array,%20kotlin.Int))`(`backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the extras for this operation after resolving any requested back-references using the given results. |
+| openstatic [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | [newInsert](../android/content/ContentProviderOperation.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android. |
+| openstatic [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | [newUpdate](../android/content/ContentProviderOperation.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android. |
+| open [Bundle](../android/os/Bundle.md)? | [resolveExtrasBackReferences](../android/content/ContentProviderOperation.md))`(`backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](../android/content/ContentProviderResult.md)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the extras for this operation after resolving any requested back-references using the given results. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [resolveSelectionArgsBackReferences](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#resolveSelectionArgsBackReferences(kotlin.Array,%20kotlin.Int))`(`backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the selection arguments for this operation after resolving any requested back-references using the given results. |
-| open [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)? | [resolveValueBackReferences](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#resolveValueBackReferences(kotlin.Array,%20kotlin.Int))`(`backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the values for this operation after resolving any requested back-references using the given results. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#toString())`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [resolveSelectionArgsBackReferences](../android/content/ContentProviderOperation.md))`(`backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](../android/content/ContentProviderResult.md)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the selection arguments for this operation after resolving any requested back-references using the given results. |
+| open [ContentValues](../android/content/ContentValues.md)? | [resolveValueBackReferences](../android/content/ContentProviderOperation.md))`(`backRefs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](../android/content/ContentProviderResult.md)!>`, `numBackRefs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the values for this operation after resolving any requested back-references using the given results. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/ContentProviderOperation.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/ContentProviderOperation.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ContentProviderOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!\> | [CREATOR](../android/content/ContentProviderOperation.md) <br /> |
 
 ## Public methods
 
@@ -77,18 +77,18 @@ open fun apply(
 ): ContentProviderResult
 ```
 
-Applies this operation using the given provider. The backRefs array is used to resolve any back references that were requested using [Builder.withValueBackReferences(ContentValues)](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder#withValueBackReferences(android.content.ContentValues))and android.content.ContentProviderOperation.Builder#withSelectionBackReference.
+Applies this operation using the given provider. The backRefs array is used to resolve any back references that were requested using [Builder.withValueBackReferences(ContentValues)](../android/content/ContentProviderOperation.Builder.md))and android.content.ContentProviderOperation.Builder#withSelectionBackReference.
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `provider` | [ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider):the [ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider) on which this batch is applied This value cannot be`null`. |
-| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!\>:a [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult) array that will be consulted to resolve any requested back references. This value cannot be`null`. |
+| `provider` | [ContentProvider](../android/content/ContentProvider.md):the [ContentProvider](../android/content/ContentProvider.md) on which this batch is applied This value cannot be`null`. |
+| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\>:a [ContentProviderResult](../android/content/ContentProviderResult.md) array that will be consulted to resolve any requested back references. This value cannot be`null`. |
 | `numBackRefs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of valid results on the backRefs array. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult) | a [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult) that contains either the [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) of the inserted row if this was an insert otherwise the number of rows affected. This value cannot be`null`. |
+| [ContentProviderResult](../android/content/ContentProviderResult.md) | a [ContentProviderResult](../android/content/ContentProviderResult.md) that contains either the [Uri](../android/net/Uri.md) of the inserted row if this was an insert otherwise the number of rows affected. This value cannot be`null`. |
 
 | Exceptions ||
 |-------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -104,7 +104,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getUri
 
@@ -118,7 +118,7 @@ Gets the Uri for the target of the operation.
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | This value cannot be`null`. |
+| [Uri](../android/net/Uri.md) | This value cannot be`null`. |
 
 ### isAssertQuery
 
@@ -131,7 +131,7 @@ open fun isAssertQuery(): Boolean
 Returns true if the operation represents an assert query. 
 **See Also**
 
-- [#newAssertQuery](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newAssertQuery(android.net.Uri)) 
+- [#newAssertQuery](../android/content/ContentProviderOperation.md)) 
 
 ### isCall
 
@@ -144,7 +144,7 @@ open fun isCall(): Boolean
 Returns true if the operation represents a android.content.ContentProvider#call operation. 
 **See Also**
 
-- [#newCall](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newCall(android.net.Uri,%20kotlin.String,%20kotlin.String)) 
+- [#newCall](../android/content/ContentProviderOperation.md)) 
 
 ### isDelete
 
@@ -157,7 +157,7 @@ open fun isDelete(): Boolean
 Returns true if the operation represents a android.content.ContentProvider#delete operation. 
 **See Also**
 
-- [#newDelete](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newDelete(android.net.Uri)) 
+- [#newDelete](../android/content/ContentProviderOperation.md)) 
 
 ### isExceptionAllowed
 
@@ -167,7 +167,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun isExceptionAllowed(): Boolean
 ```
 
-Returns true if this operation allows subsequent operations to continue even if this operation throws an exception. When true, any encountered exception is returned via [ContentProviderResult.exception](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult#exception:kotlin.Throwable). 
+Returns true if this operation allows subsequent operations to continue even if this operation throws an exception. When true, any encountered exception is returned via [ContentProviderResult.exception](../android/content/ContentProviderResult.md). 
 
 ### isInsert
 
@@ -180,7 +180,7 @@ open fun isInsert(): Boolean
 Returns true if the operation represents a android.content.ContentProvider#insert operation. 
 **See Also**
 
-- [#newInsert](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newInsert(android.net.Uri)) 
+- [#newInsert](../android/content/ContentProviderOperation.md)) 
 
 ### isReadOperation
 
@@ -193,7 +193,7 @@ open fun isReadOperation(): Boolean
 Returns true if the operation represents an assert query. 
 **See Also**
 
-- [#isAssertQuery](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isAssertQuery()) 
+- [#isAssertQuery](../android/content/ContentProviderOperation.md)) 
 
 ### isUpdate
 
@@ -206,7 +206,7 @@ open fun isUpdate(): Boolean
 Returns true if the operation represents a android.content.ContentProvider#update operation. 
 **See Also**
 
-- [#newUpdate](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#newUpdate(android.net.Uri)) 
+- [#newUpdate](../android/content/ContentProviderOperation.md)) 
 
 ### isWriteOperation
 
@@ -219,9 +219,9 @@ open fun isWriteOperation(): Boolean
 Returns true if the operation represents an insertion, deletion, or update. 
 **See Also**
 
-- [#isInsert](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isInsert())
-- [#isDelete](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isDelete())
-- [#isUpdate](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#isUpdate()) 
+- [#isInsert](../android/content/ContentProviderOperation.md))
+- [#isDelete](../android/content/ContentProviderOperation.md))
+- [#isUpdate](../android/content/ContentProviderOperation.md)) 
 
 ### isYieldAllowed
 
@@ -234,7 +234,7 @@ open fun isYieldAllowed(): Boolean
 Returns true if the operation allows yielding the database to other transactions if the database is contended. 
 **See Also**
 
-- [android.database.sqlite.SQLiteDatabase#yieldIfContendedSafely()](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.html#yieldIfContendedSafely()) 
+- [android.database.sqlite.SQLiteDatabase#yieldIfContendedSafely()](../android/database/sqlite/SQLiteDatabase.md)) 
 
 ### newAssertQuery
 
@@ -244,15 +244,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open static fun newAssertQuery(uri: Uri): ContentProviderOperation.Builder
 ```
 
-Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building a [ContentProviderOperation](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation#) to assert a set of values as provided through [Builder.withValues(ContentValues)](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder#withValues(android.content.ContentValues)).
+Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building a [ContentProviderOperation](../android/content/ContentProviderOperation.md) to assert a set of values as provided through [Builder.withValues(ContentValues)](../android/content/ContentProviderOperation.Builder.md)).
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):This value cannot be`null`. |
+| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | This value cannot be`null`. |
+| [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | This value cannot be`null`. |
 
 ### newCall
 
@@ -266,18 +266,18 @@ open static fun newCall(
 ): ContentProviderOperation.Builder
 ```
 
-Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android.content.ContentProvider#call.
+Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android.content.ContentProvider#call.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) that is the target of the operation. This value cannot be`null`. |
+| `uri` | [Uri](../android/net/Uri.md):The [Uri](../android/net/Uri.md) that is the target of the operation. This value cannot be`null`. |
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | This value cannot be`null`. |
+| [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | This value cannot be`null`. |
 
 ### newDelete
 
@@ -287,15 +287,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open static fun newDelete(uri: Uri): ContentProviderOperation.Builder
 ```
 
-Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android.content.ContentProvider#delete.
+Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android.content.ContentProvider#delete.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) that is the target of the operation. This value cannot be`null`. |
+| `uri` | [Uri](../android/net/Uri.md):The [Uri](../android/net/Uri.md) that is the target of the operation. This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | This value cannot be`null`. |
+| [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | This value cannot be`null`. |
 
 ### newInsert
 
@@ -305,15 +305,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open static fun newInsert(uri: Uri): ContentProviderOperation.Builder
 ```
 
-Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android.content.ContentProvider#insert.
+Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android.content.ContentProvider#insert.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) that is the target of the operation. This value cannot be`null`. |
+| `uri` | [Uri](../android/net/Uri.md):The [Uri](../android/net/Uri.md) that is the target of the operation. This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | This value cannot be`null`. |
+| [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | This value cannot be`null`. |
 
 ### newUpdate
 
@@ -323,15 +323,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open static fun newUpdate(uri: Uri): ContentProviderOperation.Builder
 ```
 
-Create a [Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) suitable for building an operation that will invoke android.content.ContentProvider#update.
+Create a [Builder](../android/content/ContentProviderOperation.Builder.md) suitable for building an operation that will invoke android.content.ContentProvider#update.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):The [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) that is the target of the operation. This value cannot be`null`. |
+| `uri` | [Uri](../android/net/Uri.md):The [Uri](../android/net/Uri.md) that is the target of the operation. This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentProviderOperation.Builder](https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.Builder) | This value cannot be`null`. |
+| [ContentProviderOperation.Builder](../android/content/ContentProviderOperation.Builder.md) | This value cannot be`null`. |
 
 ### resolveExtrasBackReferences
 
@@ -348,12 +348,12 @@ Return the extras for this operation after resolving any requested back-referenc
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!\>:the results to use when resolving any back-references This value cannot be`null`. |
+| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\>:the results to use when resolving any back-references This value cannot be`null`. |
 | `numBackRefs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of results which are valid |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | This value may be`null`. |
+| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
 
 ### resolveSelectionArgsBackReferences
 
@@ -370,7 +370,7 @@ Return the selection arguments for this operation after resolving any requested 
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!\>:the results to use when resolving any back-references This value cannot be`null`. |
+| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\>:the results to use when resolving any back-references This value cannot be`null`. |
 | `numBackRefs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of results which are valid |
 
 | Return ||
@@ -392,12 +392,12 @@ Return the values for this operation after resolving any requested back-referenc
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](https://developer.android.com/reference/kotlin/android/content/ContentProviderResult)!\>:the results to use when resolving any back-references This value cannot be`null`. |
+| `backRefs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\>:the results to use when resolving any back-references This value cannot be`null`. |
 | `numBackRefs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of results which are valid |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------|
-| [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues)? | This value may be`null`. |
+| [ContentValues](../android/content/ContentValues.md)? | This value may be`null`. |
 
 ### toString
 
@@ -424,8 +424,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

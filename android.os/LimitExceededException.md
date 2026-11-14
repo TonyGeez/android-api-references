@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # LimitExceededException
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/LimitExceededException "View this page in Java") 
+Kotlin| [Java](../android/os/LimitExceededException.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class LimitExceededException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [android.os.LimitExceededException](https://developer.android.com/reference/kotlin/android/os/LimitExceededException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [android.os.LimitExceededException](../android/os/LimitExceededException.md) |
 
 Indicates that the app has exceeded a limit set by the System.
 
@@ -26,8 +26,8 @@ Indicates that the app has exceeded a limit set by the System.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LimitExceededException](https://developer.android.com/reference/kotlin/android/os/LimitExceededException#LimitExceededException())`()` Constructs a new`LimitExceededException`with`null`as its detail message. |
-| [LimitExceededException](https://developer.android.com/reference/kotlin/android/os/LimitExceededException#LimitExceededException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a new`LimitExceededException`with the specified detail message. |
+| [LimitExceededException](../android/os/LimitExceededException.md))`()` Constructs a new`LimitExceededException`with`null`as its detail message. |
+| [LimitExceededException](../android/os/LimitExceededException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a new`LimitExceededException`with the specified detail message. |
 
 ## Public constructors
 
@@ -39,7 +39,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 LimitExceededException()
 ```
 
-Constructs a new`LimitExceededException`with`null`as its detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable)). 
+Constructs a new`LimitExceededException`with`null`as its detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](../java/lang/Throwable.md)). 
 
 ### LimitExceededException
 
@@ -49,8 +49,8 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 LimitExceededException(message: String)
 ```
 
-Constructs a new`LimitExceededException`with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable)).
+Constructs a new`LimitExceededException`with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](../java/lang/Throwable.md)).
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the detail message which is saved for later retrieval by the [getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage())method. This value cannot be`null`. |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the detail message which is saved for later retrieval by the [getMessage()](../java/lang/Throwable.md))method. This value cannot be`null`. |

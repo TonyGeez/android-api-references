@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # UriPermission
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/UriPermission "View this page in Java")
+Kotlin | [Java](../android/content/UriPermission.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class UriPermission : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.UriPermission](https://developer.android.com/reference/kotlin/android/content/UriPermission#) |
+| ↳ | [android.content.UriPermission](../android/content/UriPermission.md) |
 
 Description of a single Uri permission grant. This grants may have been created via `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int`, etc when sending an `https://developer.android.com/reference/kotlin/android/content/Intent`, or explicitly through `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)`.
 
@@ -29,7 +29,7 @@ Description of a single Uri permission grant. This grants may have been created 
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriPermission#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriPermission#getPersistedTime()()` Return the time when this permission was first persisted, in milliseconds since January 1, 1970 00:00:00. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/content/UriPermission#getUri()()` Return the Uri this permission pertains to. |
+| [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/content/UriPermission#getUri()()` Return the Uri this permission pertains to. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriPermission#isReadPermission()()` Returns if this permission offers read access. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriPermission#isWritePermission()()` Returns if this permission offers write access. |
@@ -39,7 +39,7 @@ Description of a single Uri permission grant. This grants may have been created 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [UriPermission](https://developer.android.com/reference/kotlin/android/content/UriPermission#)!\> | `https://developer.android.com/reference/kotlin/android/content/UriPermission#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UriPermission](../android/content/UriPermission.md)!\> | `https://developer.android.com/reference/kotlin/android/content/UriPermission#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -144,7 +144,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

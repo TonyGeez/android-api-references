@@ -2,11 +2,11 @@
 
 # android.icu.math
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/math/package-summary "View this page in Java")
+Kotlin| [Java](../android/icu/math/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [BigDecimal](https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal) | The`BigDecimal`class implements immutable arbitrary-precision decimal numbers. |
+| [BigDecimal](../android/icu/math/BigDecimal.md) | The`BigDecimal`class implements immutable arbitrary-precision decimal numbers. |
 | --- | --- |
-| [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext) | The`MathContext`immutable class encapsulates the settings understood by the operator methods of the [BigDecimal](https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal) class (and potentially other classes). |
+| [MathContext](../android/icu/math/MathContext.md) | The`MathContext`immutable class encapsulates the settings understood by the operator methods of the [BigDecimal](../android/icu/math/BigDecimal.md) class (and potentially other classes). |

@@ -4,15 +4,15 @@
 
 ## Classes
 
-| [DocumentBuilder](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder) | Defines the API to obtain DOM Document instances from an XML document. |
+| [DocumentBuilder](../javax/xml/parsers/DocumentBuilder.md) | Defines the API to obtain DOM Document instances from an XML document. |
 | --- | --- |
-| [DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory) | Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents. |
-| [SAXParser](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParser) | Defines the API that wraps an [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#) implementation class. |
-| [SAXParserFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory) | Defines a factory API that enables applications to configure and obtain a SAX based parser to parse XML documents. |
+| [DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md) | Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents. |
+| [SAXParser](../javax/xml/parsers/SAXParser.md) | Defines the API that wraps an [org.xml.sax.XMLReader](../org/xml/sax/XMLReader.md) implementation class. |
+| [SAXParserFactory](../javax/xml/parsers/SAXParserFactory.md) | Defines a factory API that enables applications to configure and obtain a SAX based parser to parse XML documents. |
 | --- | --- |
 
 ## Exceptions
 
-| [FactoryConfigurationError](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError) | Thrown when a problem with configuration with the Parser Factories exists. |
+| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md) | Thrown when a problem with configuration with the Parser Factories exists. |
 | --- | --- |
-| [ParserConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/parsers/ParserConfigurationException) | Indicates a serious configuration error. |
+| [ParserConfigurationException](../javax/xml/parsers/ParserConfigurationException.md) | Indicates a serious configuration error. |

@@ -8,9 +8,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 interface SecureRandomParameters
 ```
 
-| [java.security.SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters#) |
+| [java.security.SecureRandomParameters](../java/security/SecureRandomParameters.md) |
 
-| Known Direct Subclasses [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation), [DrbgParameters.NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes), [DrbgParameters.Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------| | [DrbgParameters.Instantiation](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Instantiation) | DRBG parameters for instantiation. | | [DrbgParameters.NextBytes](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.NextBytes) | DRBG parameters for random bits generation. | | [DrbgParameters.Reseed](https://developer.android.com/reference/kotlin/java/security/DrbgParameters.Reseed) | DRBG parameters for reseed. | |
+| Known Direct Subclasses [DrbgParameters.Instantiation](../java/security/DrbgParameters.Instantiation.md), [DrbgParameters.NextBytes](../java/security/DrbgParameters.NextBytes.md), [DrbgParameters.Reseed](../java/security/DrbgParameters.Reseed.md) |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------| | [DrbgParameters.Instantiation](../java/security/DrbgParameters.Instantiation.md) | DRBG parameters for instantiation. | | [DrbgParameters.NextBytes](../java/security/DrbgParameters.NextBytes.md) | DRBG parameters for random bits generation. | | [DrbgParameters.Reseed](../java/security/DrbgParameters.Reseed.md) | DRBG parameters for reseed. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A marker interface for parameters used in various`SecureRandom`methods.

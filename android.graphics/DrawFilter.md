@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DrawFilter
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/DrawFilter "View this page in Java") 
+Kotlin| [Java](../android/graphics/DrawFilter.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class DrawFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.DrawFilter](https://developer.android.com/reference/kotlin/android/graphics/DrawFilter#) |
+| ↳ | [android.graphics.DrawFilter](../android/graphics/DrawFilter.md) |
 
-| Known Direct Subclasses [PaintFlagsDrawFilter](https://developer.android.com/reference/kotlin/android/graphics/PaintFlagsDrawFilter) |--------------------------------------------------------------------------------------------------------------|--------| | [PaintFlagsDrawFilter](https://developer.android.com/reference/kotlin/android/graphics/PaintFlagsDrawFilter) | <br /> | |
+| Known Direct Subclasses [PaintFlagsDrawFilter](../android/graphics/PaintFlagsDrawFilter.md) |--------------------------------------------------------------------------------------------------------------|--------| | [PaintFlagsDrawFilter](../android/graphics/PaintFlagsDrawFilter.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A DrawFilter subclass can be installed in a Canvas. When it is present, it can modify the paint that is used to draw (temporarily). With this, a filter can disable/enable antialiasing, or change the color for everything this is drawn.
@@ -24,11 +24,11 @@ A DrawFilter subclass can be installed in a Canvas. When it is present, it can m
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [DrawFilter](https://developer.android.com/reference/kotlin/android/graphics/DrawFilter#DrawFilter())`()` <br /> |
+| [DrawFilter](../android/graphics/DrawFilter.md))`()` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/graphics/DrawFilter#finalize())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/DrawFilter.md))`()` <br /> |
 
 ## Public constructors
 

@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # InsertGesture
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/InsertGesture "View this page in Java")
+Kotlin | [Java](../android/view/inputmethod/InsertGesture.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class InsertGesture : HandwritingGesture, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.inputmethod.HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture) ||
-| | ↳ | [android.view.inputmethod.InsertGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#) |
+| ↳ | [android.view.inputmethod.HandwritingGesture](../android/view/inputmethod/HandwritingGesture.md) ||
+| | ↳ | [android.view.inputmethod.InsertGesture](../android/view/inputmethod/InsertGesture.md) |
 
 A sub-class of `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` for inserting text at the defined insertion point. This class holds the information required for insertion of text in toolkit widgets like `https://developer.android.com/reference/kotlin/android/widget/TextView.html#`.
 
@@ -31,7 +31,7 @@ A sub-class of `https://developer.android.com/reference/kotlin/android/view/inpu
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [PointF](https://developer.android.com/reference/kotlin/android/graphics/PointF.html#) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getInsertionPoint()()` Returns the insertion point `https://developer.android.com/reference/kotlin/android/graphics/PointF.html#` (in screen coordinates) where `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getTextToInsert()` will be inserted. |
+| [PointF](../android/graphics/PointF.md) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getInsertionPoint()()` Returns the insertion point `https://developer.android.com/reference/kotlin/android/graphics/PointF.html#` (in screen coordinates) where `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getTextToInsert()` will be inserted. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getTextToInsert()()` Returns the text that will be inserted at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#getInsertionPoint()`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#hashCode()()` Returns a hash code value for the object. |
@@ -44,7 +44,7 @@ A sub-class of `https://developer.android.com/reference/kotlin/android/view/inpu
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [InsertGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InsertGesture](../android/view/inputmethod/InsertGesture.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
 
 ## Public methods
 
@@ -153,7 +153,7 @@ Used to package this object into a `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags used for parceling. |
 
 ## Properties

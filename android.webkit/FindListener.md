@@ -4,14 +4,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # FindListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebView.FindListener "View this page in Java") 
+Kotlin| [Java](../android/webkit/WebView.FindListener.md) 
 | --- | --- |
 
 ```
 interface FindListener
 ```
 
-| [android.webkit.WebView.FindListener](https://developer.android.com/reference/kotlin/android/webkit/WebView.FindListener#) |
+| [android.webkit.WebView.FindListener](../android/webkit/WebView.FindListener.md) |
 
 Interface to listen for find results.
 
@@ -19,7 +19,7 @@ Interface to listen for find results.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFindResultReceived](https://developer.android.com/reference/kotlin/android/webkit/WebView.FindListener#onFindResultReceived(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`activeMatchOrdinal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numberOfMatches:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isDoneCounting:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notifies the listener about progress made by a find operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFindResultReceived](../android/webkit/WebView.FindListener.md))`(`activeMatchOrdinal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numberOfMatches:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isDoneCounting:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notifies the listener about progress made by a find operation. |
 
 ## Public methods
 

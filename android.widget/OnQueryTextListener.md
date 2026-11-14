@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # OnQueryTextListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/SearchView.OnQueryTextListener "View this page in Java") 
+Kotlin| [Java](../android/widget/SearchView.OnQueryTextListener.md) 
 | --- | --- |
 
 ```
 interface OnQueryTextListener
 ```
 
-| [android.widget.SearchView.OnQueryTextListener](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnQueryTextListener#) |
+| [android.widget.SearchView.OnQueryTextListener](../android/widget/SearchView.OnQueryTextListener.md) |
 
 Callbacks for changes to the query text.
 
@@ -19,8 +19,8 @@ Callbacks for changes to the query text.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onQueryTextChange](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnQueryTextListener#onQueryTextChange(kotlin.String))`(`newText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when the query text is changed by the user. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onQueryTextSubmit](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnQueryTextListener#onQueryTextSubmit(kotlin.String))`(`query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when the user submits the query. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onQueryTextChange](../android/widget/SearchView.OnQueryTextListener.md))`(`newText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when the query text is changed by the user. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onQueryTextSubmit](../android/widget/SearchView.OnQueryTextListener.md))`(`query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when the user submits the query. |
 
 ## Public methods
 

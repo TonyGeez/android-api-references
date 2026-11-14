@@ -9,7 +9,7 @@ open class Time
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.format.Time](https://developer.android.com/reference/kotlin/android/text/format/Time#) |
+| ↳ | [android.text.format.Time](../android/text/format/Time.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 22.**
@@ -378,7 +378,7 @@ A copy constructor. Construct a Time object by copying the given Time object. No
 
 | Parameters ||
 |---|---|
-| `other` | [Time](https://developer.android.com/reference/kotlin/android/text/format/Time#)!: |
+| `other` | [Time](../android/text/format/Time.md)!: |
 
 ### Time
 
@@ -416,7 +416,7 @@ Equivalent to `Time.compare(this, that) > 0`. See `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `that` | [Time](https://developer.android.com/reference/kotlin/android/text/format/Time#)!: a given Time object to compare against |
+| `that` | [Time](../android/text/format/Time.md)!: a given Time object to compare against |
 
 | Return ||
 |---|---|
@@ -438,7 +438,7 @@ Equivalent to `Time.compare(this, that) < 0`. See `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `that` | [Time](https://developer.android.com/reference/kotlin/android/text/format/Time#)!: a given Time object to compare against |
+| `that` | [Time](../android/text/format/Time.md)!: a given Time object to compare against |
 
 | Return ||
 |---|---|
@@ -479,8 +479,8 @@ This method can return an incorrect answer when the date / time fields of either
 
 | Parameters ||
 |---|---|
-| `a` | [Time](https://developer.android.com/reference/kotlin/android/text/format/Time#)!: first `Time` instance to compare |
-| `b` | [Time](https://developer.android.com/reference/kotlin/android/text/format/Time#)!: second `Time` instance to compare |
+| `a` | [Time](../android/text/format/Time.md)!: first `Time` instance to compare |
+| `b` | [Time](../android/text/format/Time.md)!: second `Time` instance to compare |
 
 | Return ||
 |---|---|
@@ -691,7 +691,7 @@ This method can return an incorrect answer when the date / time fields have been
 
 | Parameters ||
 |---|---|
-| `time` | [Time](https://developer.android.com/reference/kotlin/android/text/format/Time#)!: the time to test |
+| `time` | [Time](../android/text/format/Time.md)!: the time to test |
 
 | Return ||
 |---|---|

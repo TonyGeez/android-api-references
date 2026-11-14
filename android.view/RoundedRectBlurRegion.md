@@ -8,8 +8,8 @@ class RoundedRectBlurRegion : BlurRegion
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.BlurRegion](https://developer.android.com/reference/kotlin/android/view/BlurRegion) ||
-| | ↳ | [android.view.RoundedRectBlurRegion](https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#) |
+| ↳ | [android.view.BlurRegion](../android/view/BlurRegion.md) ||
+| | ↳ | [android.view.RoundedRectBlurRegion](../android/view/RoundedRectBlurRegion.md) |
 
 Defines a rounded rectangular blur region on the SurfaceView.
 
@@ -22,8 +22,8 @@ Defines a rounded rectangular blur region on the SurfaceView.
 
 | Public methods ||
 |---|---|
-| [RoundedRectBlurRegion](https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#) | `https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#copy()()` Returns a deep copy of this blur region. |
-| [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | `https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#getBounds()()` Returns the bounds of the blur region. |
+| [RoundedRectBlurRegion](../android/view/RoundedRectBlurRegion.md) | `https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#copy()()` Returns a deep copy of this blur region. |
+| [RectF](../android/graphics/RectF.md) | `https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#getBounds()()` Returns the bounds of the blur region. |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#getCornerRadii()()` Returns the corner radii for the blur region. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/RoundedRectBlurRegion#setBounds(android.graphics.RectF)(rect: https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)` Sets the bounds of the blur region. |
@@ -121,7 +121,7 @@ The `cornerRadii` values are ordered \[topLeftX, topLeftY, topRightX, topRightY,
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#): bounds of the blur region. This value cannot be `null`. |
+| `rect` | [RectF](../android/graphics/RectF.md): bounds of the blur region. This value cannot be `null`. |
 | `cornerRadii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): array of 8 floats representing the corner radii. This value cannot be `null`. |
 | `alpha` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): alpha value of the region \[0.0 - 1.0\]. Value is between 0.0f and 1.0f inclusive |
 | --- | --- |
@@ -189,7 +189,7 @@ The default value is an empty rectangle.
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#): the bounds of the blur region. This value cannot be `null`. |
+| `rect` | [RectF](../android/graphics/RectF.md): the bounds of the blur region. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

@@ -8,7 +8,7 @@ open class Process
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.Process](https://developer.android.com/reference/kotlin/android/os/Process#) |
+| ↳ | [android.os.Process](../android/os/Process.md) |
 
 Tools for managing OS processes.
 
@@ -89,7 +89,7 @@ Tools for managing OS processes.
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#myTid()()` Returns the identifier of the calling thread, which be used with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#myUid()()` Returns the identifier of this process's uid. |
-| open static [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)! | `https://developer.android.com/reference/kotlin/android/os/Process#myUserHandle()()` Returns this process's user handle. |
+| open static [UserHandle](../android/os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/os/Process#myUserHandle()()` Returns this process's user handle. |
 | --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#sendSignal(kotlin.Int,%20kotlin.Int)(pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, signal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Send a signal to the given process. |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)(priority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the priority of the calling thread, based on Linux niceness priorities. |

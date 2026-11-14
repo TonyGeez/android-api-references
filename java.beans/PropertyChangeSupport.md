@@ -10,9 +10,9 @@ open class PropertyChangeSupport : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.beans.PropertyChangeSupport](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#) |
+| ↳ | [java.beans.PropertyChangeSupport](../java/beans/PropertyChangeSupport.md) |
 
-This is a utility class that can be used by beans that support bound properties. It manages a list of listeners and dispatches [PropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent) s to them. You can use an instance of this class as a member field of your bean and delegate these types of work to it. The [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener) can be registered for all properties or for a property specified by name.
+This is a utility class that can be used by beans that support bound properties. It manages a list of listeners and dispatches [PropertyChangeEvent](../java/beans/PropertyChangeEvent.md) s to them. You can use an instance of this class as a member field of your bean and delegate these types of work to it. The [PropertyChangeListener](../java/beans/PropertyChangeListener.md) can be registered for all properties or for a property specified by name.
 
 Here is an example of`PropertyChangeSupport`usage that follows the rules and recommendations laid out in the JavaBeans™ specification: 
 
@@ -53,28 +53,28 @@ This class is serializable. When it is serialized it will save (and restore) any
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PropertyChangeSupport](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#PropertyChangeSupport(kotlin.Any))`(`sourceBean:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs a`PropertyChangeSupport`object. |
+| [PropertyChangeSupport](../java/beans/PropertyChangeSupport.md))`(`sourceBean:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs a`PropertyChangeSupport`object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#addPropertyChangeListener(java.beans.PropertyChangeListener))`(`listener:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!`)` Add a PropertyChangeListener to the listener list. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#addPropertyChangeListener(kotlin.String,%20java.beans.PropertyChangeListener))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `listener:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!`)` Add a PropertyChangeListener for a specific property. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fireIndexedPropertyChange](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#fireIndexedPropertyChange(kotlin.String,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Reports a boolean bound indexed property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](../java/beans/PropertyChangeSupport.md))`(`listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Add a PropertyChangeListener to the listener list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Add a PropertyChangeListener for a specific property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fireIndexedPropertyChange](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Reports a boolean bound indexed property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fireIndexedPropertyChange](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#fireIndexedPropertyChange(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reports an integer bound indexed property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fireIndexedPropertyChange](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#fireIndexedPropertyChange(kotlin.String,%20kotlin.Int,%20kotlin.Any,%20kotlin.Any))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Reports a bound indexed property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(java.beans.PropertyChangeEvent))`(`event:` ` [PropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent)!`)` Fires a property change event to listeners that have been registered to track updates of all properties or a property with the specified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fireIndexedPropertyChange](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reports an integer bound indexed property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fireIndexedPropertyChange](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Reports a bound indexed property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](../java/beans/PropertyChangeSupport.md))`(`event:` ` [PropertyChangeEvent](../java/beans/PropertyChangeEvent.md)!`)` Fires a property change event to listeners that have been registered to track updates of all properties or a property with the specified name. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(kotlin.String,%20kotlin.Boolean,%20kotlin.Boolean))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Reports a boolean bound property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reports an integer bound property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(kotlin.String,%20kotlin.Any,%20kotlin.Any))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Reports a bound property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Reports a boolean bound property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reports an integer bound property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [firePropertyChange](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Reports a bound property update to listeners that have been registered to track updates of all properties or a property with the specified name. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!\>! | [getPropertyChangeListeners](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#getPropertyChangeListeners())`()` Returns an array of all the listeners that were added to the PropertyChangeSupport object with addPropertyChangeListener(). |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!\>! | [getPropertyChangeListeners](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#getPropertyChangeListeners(kotlin.String))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an array of all the listeners which have been associated with the named property. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasListeners](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#hasListeners(kotlin.String))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if there are any listeners for a specific property, including those registered on all properties. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!\>! | [getPropertyChangeListeners](../java/beans/PropertyChangeSupport.md))`()` Returns an array of all the listeners that were added to the PropertyChangeSupport object with addPropertyChangeListener(). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!\>! | [getPropertyChangeListeners](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an array of all the listeners which have been associated with the named property. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasListeners](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if there are any listeners for a specific property, including those registered on all properties. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#removePropertyChangeListener(java.beans.PropertyChangeListener))`(`listener:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!`)` Remove a PropertyChangeListener from the listener list. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#removePropertyChangeListener(kotlin.String,%20java.beans.PropertyChangeListener))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `listener:` ` [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!`)` Remove a PropertyChangeListener for a specific property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](../java/beans/PropertyChangeSupport.md))`(`listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Remove a PropertyChangeListener from the listener list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](../java/beans/PropertyChangeSupport.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Remove a PropertyChangeListener for a specific property. |
 
 ## Public constructors
 
@@ -106,7 +106,7 @@ Add a PropertyChangeListener to the listener list. The listener is registered fo
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!:The PropertyChangeListener to be added |
+| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:The PropertyChangeListener to be added |
 
 ### addPropertyChangeListener
 
@@ -124,7 +124,7 @@ Add a PropertyChangeListener for a specific property. The listener will be invok
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property to listen on. |
-| `listener` | [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!:The PropertyChangeListener to be added |
+| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:The PropertyChangeListener to be added |
 
 ### fireIndexedPropertyChange
 
@@ -143,7 +143,7 @@ Reports a boolean bound indexed property update to listeners that have been regi
 
 No event is fired if old and new values are equal.
 
-This is merely a convenience wrapper around the more general [fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#fireIndexedPropertyChange(kotlin.String,%20kotlin.Int,%20kotlin.Any,%20kotlin.Any))method.
+This is merely a convenience wrapper around the more general [fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)](../java/beans/PropertyChangeSupport.md))method.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -170,7 +170,7 @@ Reports an integer bound indexed property update to listeners that have been reg
 
 No event is fired if old and new values are equal.
 
-This is merely a convenience wrapper around the more general [fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#fireIndexedPropertyChange(kotlin.String,%20kotlin.Int,%20kotlin.Any,%20kotlin.Any))method.
+This is merely a convenience wrapper around the more general [fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)](../java/beans/PropertyChangeSupport.md))method.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -197,7 +197,7 @@ Reports a bound indexed property update to listeners that have been registered t
 
 No event is fired if old and new values are equal and non-null.
 
-This is merely a convenience wrapper around the more general [firePropertyChange(java.beans.PropertyChangeEvent)](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(java.beans.PropertyChangeEvent))method.
+This is merely a convenience wrapper around the more general [firePropertyChange(java.beans.PropertyChangeEvent)](../java/beans/PropertyChangeSupport.md))method.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -221,7 +221,7 @@ No event is fired if the given event's old and new values are equal and non-null
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [PropertyChangeEvent](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeEvent)!:the`PropertyChangeEvent`to be fired |
+| `event` | [PropertyChangeEvent](../java/beans/PropertyChangeEvent.md)!:the`PropertyChangeEvent`to be fired |
 
 ### firePropertyChange
 
@@ -239,7 +239,7 @@ Reports a boolean bound property update to listeners that have been registered t
 
 No event is fired if old and new values are equal.
 
-This is merely a convenience wrapper around the more general [firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(kotlin.String,%20kotlin.Any,%20kotlin.Any))method.
+This is merely a convenience wrapper around the more general [firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)](../java/beans/PropertyChangeSupport.md))method.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -264,7 +264,7 @@ Reports an integer bound property update to listeners that have been registered 
 
 No event is fired if old and new values are equal.
 
-This is merely a convenience wrapper around the more general [firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(kotlin.String,%20kotlin.Any,%20kotlin.Any))method.
+This is merely a convenience wrapper around the more general [firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)](../java/beans/PropertyChangeSupport.md))method.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -289,7 +289,7 @@ Reports a bound property update to listeners that have been registered to track 
 
 No event is fired if old and new values are equal and non-null.
 
-This is merely a convenience wrapper around the more general [firePropertyChange(java.beans.PropertyChangeEvent)](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeSupport#firePropertyChange(java.beans.PropertyChangeEvent))method.
+This is merely a convenience wrapper around the more general [firePropertyChange(java.beans.PropertyChangeEvent)](../java/beans/PropertyChangeSupport.md))method.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -327,11 +327,11 @@ If some listeners have been added with a named property, then the returned array
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!>! | all of the`PropertyChangeListeners`added or an empty array if no listeners have been added |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!>! | all of the`PropertyChangeListeners`added or an empty array if no listeners have been added |
 
 **See Also**
 
-- [java.beans.PropertyChangeListenerProxy](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListenerProxy) 
+- [java.beans.PropertyChangeListenerProxy](../java/beans/PropertyChangeListenerProxy.md) 
 
 ### getPropertyChangeListeners
 
@@ -349,7 +349,7 @@ Returns an array of all the listeners which have been associated with the named 
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!>! | all of the`PropertyChangeListeners`associated with the named property. If no such listeners have been added, or if`propertyName`is null, an empty array is returned. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!>! | all of the`PropertyChangeListeners`associated with the named property. If no such listeners have been added, or if`propertyName`is null, an empty array is returned. |
 
 ### hasListeners
 
@@ -381,7 +381,7 @@ Remove a PropertyChangeListener from the listener list. This removes a PropertyC
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!:The PropertyChangeListener to be removed |
+| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:The PropertyChangeListener to be removed |
 
 ### removePropertyChangeListener
 
@@ -399,4 +399,4 @@ Remove a PropertyChangeListener for a specific property. If`listener`was added m
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `propertyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name of the property that was listened on. |
-| `listener` | [PropertyChangeListener](https://developer.android.com/reference/kotlin/java/beans/PropertyChangeListener)!:The PropertyChangeListener to be removed |
+| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:The PropertyChangeListener to be removed |

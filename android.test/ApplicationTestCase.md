@@ -3,7 +3,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # ApplicationTestCase
 
-Kotlin | [Java](https://developer.android.com/reference/android/test/ApplicationTestCase "View this page in Java")
+Kotlin | [Java](../android/test/ApplicationTestCase.md)
 | --- | --- |
 
 ```
@@ -12,13 +12,13 @@ abstract class ApplicationTestCase<T : Application!> : AndroidTestCase
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.test.AndroidTestCase](https://developer.android.com/reference/kotlin/android/test/AndroidTestCase) ||
-| | ↳ | [android.test.ApplicationTestCase](https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#) |
+| ↳ | [android.test.AndroidTestCase](../android/test/AndroidTestCase.md) ||
+| | ↳ | [android.test.ApplicationTestCase](../android/test/ApplicationTestCase.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 24.**
 >
-> Use [InstrumentationRegistry](https://developer.android.com/reference/android/support/test/InstrumentationRegistry.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
+> Use [InstrumentationRegistry](../android/support/test/InstrumentationRegistry.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
 
 This test case provides a framework in which you can test Application classes in a controlled environment. It provides basic support for the lifecycle of a Application, and hooks by which you can inject various dependencies and control the environment in which your Application is tested.
 
@@ -40,7 +40,7 @@ If simply run your tests as-is, your Application will be injected with a fully-f
 | Public methods ||
 |---|---|
 | open T | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getApplication()()` <br /> |
-| open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getSystemContext()()` Return a real (not mocked or instrumented) system Context that can be used when generating Mock or other Context objects for your Application under test. |
+| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getSystemContext()()` Return a real (not mocked or instrumented) system Context that can be used when generating Mock or other Context objects for your Application under test. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#testApplicationTestCaseSetUpProperly()()` This test simply confirms that the Application class can be instantiated properly. |
 | --- | --- |
 

@@ -10,27 +10,27 @@ open class Adler32 : Checksum
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.zip.Adler32](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#) |
+| ↳ | [java.util.zip.Adler32](../java/util/zip/Adler32.md) |
 
 A class that can be used to compute the Adler-32 checksum of a data stream. An Adler-32 checksum is almost as reliable as a CRC-32 but can be computed much faster.
 
-Passing a`null`argument to a method in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) to be thrown.
+Passing a`null`argument to a method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------|---|
-| [Adler32](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#Adler32())`()` Creates a new Adler32 object. |
+| [Adler32](../java/util/zip/Adler32.md))`()` Creates a new Adler32 object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#getValue())`()` Returns the checksum value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#reset())`()` Resets the checksum to initial value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#update(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the checksum with the specified array of bytes. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](../java/util/zip/Adler32.md))`()` Returns the checksum value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/util/zip/Adler32.md))`()` Resets the checksum to initial value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Adler32.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the checksum with the specified array of bytes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#update(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the checksum with the specified array of bytes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#update(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the checksum with the specified byte (the low eight bits of the argument b). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/util/zip/Adler32#update(java.nio.ByteBuffer))`(`buffer:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`)` Updates the checksum with the bytes from the specified buffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Adler32.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the checksum with the specified array of bytes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Adler32.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the checksum with the specified byte (the low eight bits of the argument b). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Adler32.md))`(`buffer:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Updates the checksum with the bytes from the specified buffer. |
 | --- | --- |
 
 ## Public constructors
@@ -140,7 +140,7 @@ Updates the checksum with the bytes from the specified buffer. The checksum is u
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `buffer` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:the ByteBuffer to update the checksum with |
+| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer to update the checksum with |
 
 | Exceptions ||
 |----------------------------------|--------------------|

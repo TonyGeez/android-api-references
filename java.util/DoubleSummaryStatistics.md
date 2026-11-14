@@ -10,11 +10,11 @@ open class DoubleSummaryStatistics : DoubleConsumer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#) |
+| ↳ | [java.util.DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md) |
 
 A state object for collecting statistics such as count, min, max, sum, and average.
 
-This class is designed to work with (though does not require) [streams](https://developer.android.com/reference/kotlin/java/util/stream/package-summary). For example, you can compute summary statistics on a stream of doubles with: 
+This class is designed to work with (though does not require) [streams](../java/util/stream/_package.md). For example, you can compute summary statistics on a stream of doubles with: 
 
 ```kotlin
 <code>DoubleSummaryStatistics stats = doubleStream.collect(DoubleSummaryStatistics::new,
@@ -23,7 +23,7 @@ This class is designed to work with (though does not require) [streams](https://
   </code>
 ```
 
-`DoubleSummaryStatistics`can be used as a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/Stream#collect(java.util.stream.Collector))target for a [stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream). For example: 
+`DoubleSummaryStatistics`can be used as a [reduction](../java/util/stream/Stream.md))target for a [stream](../java/util/stream/Stream.md). For example: 
 
 ```kotlin
 <code>DoubleSummaryStatistics stats = people.stream()
@@ -36,25 +36,25 @@ This computes, in a single pass, the count of people, as well as the minimum, ma
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#DoubleSummaryStatistics())`()` Constructs an empty instance with zero count, zero sum,`Double.POSITIVE_INFINITY`min,`Double.NEGATIVE_INFINITY`max and zero average. |
-| [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#DoubleSummaryStatistics(kotlin.Long,%20kotlin.Double,%20kotlin.Double,%20kotlin.Double))`(`count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `min:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `max:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `sum:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Constructs a non-empty instance with the specified`count`,`min`,`max`, and`sum`. |
+| [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md))`()` Constructs an empty instance with zero count, zero sum,`Double.POSITIVE_INFINITY`min,`Double.NEGATIVE_INFINITY`max and zero average. |
+| [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md))`(`count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `min:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `max:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `sum:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Constructs a non-empty instance with the specified`count`,`min`,`max`, and`sum`. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#accept(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Records another value into the summary information. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [combine](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#combine(java.util.DoubleSummaryStatistics))`(`other:` ` [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#)!`)` Combines the state of another`DoubleSummaryStatistics`into this one. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAverage](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getAverage())`()` Returns the arithmetic mean of values recorded, or zero if no values have been recorded. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](../java/util/DoubleSummaryStatistics.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Records another value into the summary information. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [combine](../java/util/DoubleSummaryStatistics.md))`(`other:` ` [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md)!`)` Combines the state of another`DoubleSummaryStatistics`into this one. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAverage](../java/util/DoubleSummaryStatistics.md))`()` Returns the arithmetic mean of values recorded, or zero if no values have been recorded. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCount](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getCount())`()` Return the count of values recorded. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMax](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getMax())`()` Returns the maximum recorded value,`Double.NaN`if any recorded value was NaN or`Double.NEGATIVE_INFINITY`if no values were recorded. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMin](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getMin())`()` Returns the minimum recorded value,`Double.NaN`if any recorded value was NaN or`Double.POSITIVE_INFINITY`if no values were recorded. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCount](../java/util/DoubleSummaryStatistics.md))`()` Return the count of values recorded. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMax](../java/util/DoubleSummaryStatistics.md))`()` Returns the maximum recorded value,`Double.NaN`if any recorded value was NaN or`Double.NEGATIVE_INFINITY`if no values were recorded. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMin](../java/util/DoubleSummaryStatistics.md))`()` Returns the minimum recorded value,`Double.NaN`if any recorded value was NaN or`Double.POSITIVE_INFINITY`if no values were recorded. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getSum](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getSum())`()` Returns the sum of values recorded, or zero if no values have been recorded. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#toString())`()` Returns a non-empty string representation of this object suitable for debugging. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getSum](../java/util/DoubleSummaryStatistics.md))`()` Returns the sum of values recorded, or zero if no values have been recorded. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/DoubleSummaryStatistics.md))`()` Returns a non-empty string representation of this object suitable for debugging. |
 
 | Inherited functions ||
 |---|---|
-| From class [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer) |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer)! | [andThen](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer#andThen(java.util.function.DoubleConsumer))`(`after:` ` [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer)!`)` <br /> Returns a composed`DoubleConsumer`that performs, in sequence, this operation followed by the`after`operation. If performing either operation throws an exception, it is relayed to the caller of the composed operation. If performing this operation throws an exception, the`after`operation will not be performed. <br /> | ||
+| From class [DoubleConsumer](../java/util/function/DoubleConsumer.md) |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DoubleConsumer](../java/util/function/DoubleConsumer.md)! | [andThen](../java/util/function/DoubleConsumer.md))`(`after:` ` [DoubleConsumer](../java/util/function/DoubleConsumer.md)!`)` <br /> Returns a composed`DoubleConsumer`that performs, in sequence, this operation followed by the`after`operation. If performing either operation throws an exception, it is relayed to the caller of the composed operation. If performing this operation throws an exception, the`after`operation will not be performed. <br /> | ||
 
 ## Public constructors
 
@@ -130,7 +130,7 @@ Combines the state of another`DoubleSummaryStatistics`into this one.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#)!:another`DoubleSummaryStatistics` |
+| `other` | [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md)!:another`DoubleSummaryStatistics` |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -146,7 +146,7 @@ fun getAverage(): Double
 
 Returns the arithmetic mean of values recorded, or zero if no values have been recorded.
 
-The computed average can vary numerically and have the special case behavior as computing the sum; see [getSum](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics#getSum())for details.
+The computed average can vary numerically and have the special case behavior as computing the sum; see [getSum](../java/util/DoubleSummaryStatistics.md))for details.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------|

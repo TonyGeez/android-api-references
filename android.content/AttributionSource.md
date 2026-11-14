@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # AttributionSource
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/AttributionSource "View this page in Java")
+Kotlin | [Java](../android/content/AttributionSource.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AttributionSource : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource#) |
+| ↳ | [android.content.AttributionSource](../android/content/AttributionSource.md) |
 
 This class represents a source to which access to permission protected data should be attributed. Attribution sources can be chained to represent cases where the protected data would flow through several applications. For example, app A may ask app B for contacts and in turn app B may ask app C for contacts. In this case, the attribution chain would be A -\> B -\> C and the data flow would be C -\> B -\> A. There are two main benefits of using the attribution source mechanism: avoid doing explicit permission checks on behalf of the calling app if you are accessing private data on their behalf to send back; avoid double data access blaming which happens as you check the calling app's permissions and when you access the data behind these permissions (for runtime permissions). Also if not explicitly blaming the caller the data access would be counted towards your app vs to the previous app where yours was just a proxy.
 
@@ -43,7 +43,7 @@ Since creating an attribution context leads to all permissions for apps in the a
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#getAttributionTag()()` The attribution tag of the app accessing the permission protected data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#getDeviceId()()` Gets the device ID for this attribution source. |
 | --- | --- |
-| [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource#)? | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#getNext()()` The next app to receive the permission protected data. |
+| [AttributionSource](../android/content/AttributionSource.md)? | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#getNext()()` The next app to receive the permission protected data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#getPackageName()()` The package that is accessing the permission protected data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#getPid()()` The PID that is accessing the permission protected data. |
 | --- | --- |
@@ -51,14 +51,14 @@ Since creating an attribution context leads to all permissions for apps in the a
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#isTrusted(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context)` Checks whether this attribution source can be trusted. |
 | --- | --- |
-| static [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource#) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#myAttributionSource()()` Returns a generic `https://developer.android.com/reference/kotlin/android/content/AttributionSource#` that represents the entire calling process. |
+| static [AttributionSource](../android/content/AttributionSource.md) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#myAttributionSource()()` Returns a generic `https://developer.android.com/reference/kotlin/android/content/AttributionSource#` that represents the entire calling process. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AttributionSource](https://developer.android.com/reference/kotlin/android/content/AttributionSource#)!\> | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AttributionSource](../android/content/AttributionSource.md)!\> | `https://developer.android.com/reference/kotlin/android/content/AttributionSource#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -239,7 +239,7 @@ Checks whether this attribution source can be trusted. That is whether the app i
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context): Context handle. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): Context handle. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -299,7 +299,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

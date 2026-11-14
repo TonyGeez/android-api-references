@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # MbmsStreamingSessionCallback
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/mbms/MbmsStreamingSessionCallback "View this page in Java")
+Kotlin | [Java](../android/telephony/mbms/MbmsStreamingSessionCallback.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class MbmsStreamingSessionCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.mbms.MbmsStreamingSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#) |
+| ↳ | [android.telephony.mbms.MbmsStreamingSessionCallback](../android/telephony/mbms/MbmsStreamingSessionCallback.md) |
 
 A callback class that is used to receive information from the middleware on MBMS streaming services. An instance of this object should be passed into `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#create(android.content.Context,%20java.util.concurrent.Executor,%20kotlin.Int,%20android.telephony.mbms.MbmsStreamingSessionCallback)`.
 
@@ -78,4 +78,4 @@ Called to indicate published Streaming Services have changed. This will only be 
 
 | Parameters ||
 |---|---|
-| `services` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo)!\>!: The list of available services. |
+| `services` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [StreamingServiceInfo](../android/telephony/mbms/StreamingServiceInfo.md)!\>!: The list of available services. |

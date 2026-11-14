@@ -2,11 +2,11 @@
 
 # android.service.media
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/media/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/media/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [CameraPrewarmService](https://developer.android.com/reference/kotlin/android/service/media/CameraPrewarmService) | Extend this class to implement a camera prewarm service. |
+| [CameraPrewarmService](../android/service/media/CameraPrewarmService.md) | Extend this class to implement a camera prewarm service. |
 | --- | --- |
-| [MediaBrowserService](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService) | Base class for media browser services. |
+| [MediaBrowserService](../android/service/media/MediaBrowserService.md) | Base class for media browser services. |

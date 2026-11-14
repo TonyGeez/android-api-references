@@ -9,12 +9,12 @@ open class ExpandableListActivity : Activity, ExpandableListView.OnChildClickL
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) |||
+| ↳ | [android.content.Context](../android/content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity) ||
-| | | | | ↳ | [android.app.ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#) |
+| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
+| | | | | ↳ | [android.app.ExpandableListActivity](../android/app/ExpandableListActivity.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -541,7 +541,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1129,8 +1129,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [ExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter.html#)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListAdapter()()` Get the ExpandableListAdapter associated with this activity's ExpandableListView. |
-| open [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListView()()` Get the activity's expandable list view widget. |
+| open [ExpandableListAdapter](../android/widget/ExpandableListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListAdapter()()` Get the ExpandableListAdapter associated with this activity's ExpandableListView. |
+| open [ExpandableListView](../android/widget/ExpandableListView.md)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListView()()` Get the activity's expandable list view widget. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getSelectedId()()` Gets the ID of the currently selected group or child. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getSelectedPosition()()` Gets the position (in packed position representation) of the currently selected group or child. |
@@ -4700,7 +4700,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -4741,9 +4741,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -5028,8 +5028,8 @@ Callback method to be invoked when a child in this expandable list has been clic
 
 | Parameters ||
 |---|---|
-| `parent` | [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.html#)!: The ExpandableListView where the click happened |
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view within the expandable list/ListView that was clicked |
+| `parent` | [ExpandableListView](../android/widget/ExpandableListView.md)!: The ExpandableListView where the click happened |
+| `v` | [View](../android/view/View.md)!: The view within the expandable list/ListView that was clicked |
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The group position that contains the child that was clicked |
 | --- | --- |
 | `childPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The child position within the group |
@@ -5078,9 +5078,9 @@ It is not safe to hold onto the context menu after this method returns.
 
 | Parameters ||
 |---|---|
-| `menu` | [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu.html#)!: The context menu that is being built |
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view for which the context menu is being built |
-| `menuInfo` | [ContextMenu.ContextMenuInfo](https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html#)!: Extra information about the item for which the context menu should be shown. This information will vary depending on the class of v. |
+| `menu` | [ContextMenu](../android/view/ContextMenu.md)!: The context menu that is being built |
+| `v` | [View](../android/view/View.md)!: The view for which the context menu is being built |
+| `menuInfo` | [ContextMenu.ContextMenuInfo](../android/view/ContextMenu.ContextMenuInfo.md)!: Extra information about the item for which the context menu should be shown. This information will vary depending on the class of v. |
 | --- | --- |
 
 ### onGroupCollapse

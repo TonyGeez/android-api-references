@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnGlobalFocusChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnGlobalFocusChangeListener "View this page in Java") 
+Kotlin| [Java](../android/view/ViewTreeObserver.OnGlobalFocusChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnGlobalFocusChangeListener
 ```
 
-| [android.view.ViewTreeObserver.OnGlobalFocusChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalFocusChangeListener#) |
+| [android.view.ViewTreeObserver.OnGlobalFocusChangeListener](../android/view/ViewTreeObserver.OnGlobalFocusChangeListener.md) |
 
-| Known Direct Subclasses [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView.html#) |----------------------------------------------------------------------------------------|---------------------------------| | [WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView.html#) | A View that displays web pages. | |
+| Known Direct Subclasses [WebView](../android/webkit/WebView.md) |----------------------------------------------------------------------------------------|---------------------------------| | [WebView](../android/webkit/WebView.md) | A View that displays web pages. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when the focus state within the view tree changes.
@@ -22,7 +22,7 @@ Interface definition for a callback to be invoked when the focus state within th
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGlobalFocusChanged](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalFocusChangeListener#onGlobalFocusChanged(android.view.View,%20android.view.View))`(`oldFocus:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `newFocus:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`)` Callback method to be invoked when the focus changes in the view tree. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGlobalFocusChanged](../android/view/ViewTreeObserver.OnGlobalFocusChangeListener.md))`(`oldFocus:` ` [View](../android/view/View.md)!`, `newFocus:` ` [View](../android/view/View.md)!`)` Callback method to be invoked when the focus changes in the view tree. |
 
 ## Public methods
 
@@ -41,5 +41,5 @@ Callback method to be invoked when the focus changes in the view tree. When the 
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------|
-| `oldFocus` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The previously focused view, if any. |
-| `newFocus` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The newly focused View, if any. |
+| `oldFocus` | [View](../android/view/View.md)!:The previously focused view, if any. |
+| `newFocus` | [View](../android/view/View.md)!:The newly focused View, if any. |

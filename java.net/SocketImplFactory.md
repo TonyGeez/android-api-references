@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SocketImplFactory
 ```
 
-| [java.net.SocketImplFactory](https://developer.android.com/reference/kotlin/java/net/SocketImplFactory#) |
+| [java.net.SocketImplFactory](../java/net/SocketImplFactory.md) |
 
 This interface defines a factory for socket implementations. It is used by the classes`Socket`and`ServerSocket`to create actual socket implementations.
 
@@ -16,7 +16,7 @@ This interface defines a factory for socket implementations. It is used by the c
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl)! | [createSocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImplFactory#createSocketImpl())`()` Creates a new`SocketImpl`instance. |
+| abstract [SocketImpl](../java/net/SocketImpl.md)! | [createSocketImpl](../java/net/SocketImplFactory.md))`()` Creates a new`SocketImpl`instance. |
 
 ## Public methods
 
@@ -32,8 +32,8 @@ Creates a new`SocketImpl`instance.
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------|
-| [SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl)! | a new instance of`SocketImpl`. |
+| [SocketImpl](../java/net/SocketImpl.md)! | a new instance of`SocketImpl`. |
 
 **See Also**
 
-- [java.net.SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl)
+- [java.net.SocketImpl](../java/net/SocketImpl.md)

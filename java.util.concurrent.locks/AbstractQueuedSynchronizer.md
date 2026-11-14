@@ -8,8 +8,8 @@ abstract class AbstractQueuedSynchronizer : AbstractOwnableSynchronizer, Seria
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer) ||
-| | ↳ | [java.util.concurrent.locks.AbstractQueuedSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#) |
+| ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](../java/util/concurrent/locks/AbstractOwnableSynchronizer.md) ||
+| | ↳ | [java.util.concurrent.locks.AbstractQueuedSynchronizer](../java/util/concurrent/locks/AbstractQueuedSynchronizer.md) |
 
 Provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues. This class is designed to be a useful basis for most kinds of synchronizers that rely on a single atomic `int` value to represent state. Subclasses must define the protected methods that change this state, and which define what that state means in terms of this object being acquired or released. Given these, the other methods in this class carry out all queuing and blocking mechanics. Subclasses can maintain other state fields, but only the atomically updated `int` value manipulated using methods `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getState()`, `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#setState(kotlin.Int)` and `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#compareAndSetState(kotlin.Int,%20kotlin.Int)` is tracked with respect to synchronization.
 
@@ -177,15 +177,15 @@ Here is a latch class that is like a `https://developer.android.com/reference/ko
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#acquireShared(kotlin.Int)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Acquires in shared mode, ignoring interrupts. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#acquireSharedInterruptibly(kotlin.Int)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Acquires in shared mode, aborting if interrupted. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getExclusiveQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in exclusive mode. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getFirstQueuedThread()()` Returns the first (longest-waiting) thread in the queue, or `null` if no threads are currently queued. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getExclusiveQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in exclusive mode. |
+| [Thread](../java/lang/Thread.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getFirstQueuedThread()()` Returns the first (longest-waiting) thread in the queue, or `null` if no threads are currently queued. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getQueueLength()()` Returns an estimate of the number of threads waiting to acquire. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getSharedQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in shared mode. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getSharedQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in shared mode. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject!)` Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject!)` Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject!)` Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#hasContended()()` Queries whether any threads have ever contended to acquire this synchronizer; that is, if an acquire method has ever blocked. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#hasQueuedPredecessors()()` Queries whether any threads have been waiting to acquire longer than the current thread. |
@@ -389,7 +389,7 @@ Returns an estimate of the number of threads waiting on the given condition asso
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|
@@ -414,7 +414,7 @@ Returns a collection containing those threads that may be waiting on the given c
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|
@@ -462,7 +462,7 @@ An invocation of this method is equivalent to (but may be more efficient than):
 
 Note that because cancellations due to interrupts and timeouts may occur at any time, a `true` return does not guarantee that some other thread will acquire before the current thread. Likewise, it is possible for another thread to win a race to enqueue after this method has returned `false`, due to the queue being empty.
 
-This method is designed to be used by a fair synchronizer to avoid [barging](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#barging). Such a synchronizer's `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#tryAcquire(kotlin.Int)` method should return `false`, and its `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#tryAcquireShared(kotlin.Int)` method should return a negative value, if this method returns `true` (unless this is a reentrant acquire). For example, the `tryAcquire` method for a fair, reentrant, exclusive mode synchronizer might look like this:
+This method is designed to be used by a fair synchronizer to avoid [barging](../java/util/concurrent/locks/AbstractQueuedSynchronizer.md). Such a synchronizer's `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#tryAcquire(kotlin.Int)` method should return `false`, and its `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#tryAcquireShared(kotlin.Int)` method should return a negative value, if this method returns `true` (unless this is a reentrant acquire). For example, the `tryAcquire` method for a fair, reentrant, exclusive mode synchronizer might look like this:
 
 ```kotlin
 <code>protected boolean tryAcquire(int arg) {
@@ -507,7 +507,7 @@ Queries whether any threads are waiting on the given condition associated with t
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|
@@ -534,7 +534,7 @@ This implementation traverses the queue to determine presence of the given threa
 
 | Parameters ||
 |---|---|
-| `thread` | [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!: the thread |
+| `thread` | [Thread](../java/lang/Thread.md)!: the thread |
 
 | Return ||
 |---|---|
@@ -556,7 +556,7 @@ Queries whether the given ConditionObject uses this synchronizer as its lock.
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|

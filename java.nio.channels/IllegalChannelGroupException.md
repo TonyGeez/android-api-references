@@ -11,11 +11,11 @@ open class IllegalChannelGroupException : IllegalArgumentException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) ||
-| | | | | ↳ | [java.nio.channels.IllegalChannelGroupException](https://developer.android.com/reference/kotlin/java/nio/channels/IllegalChannelGroupException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) ||
+| | | | | ↳ | [java.nio.channels.IllegalChannelGroupException](../java/nio/channels/IllegalChannelGroupException.md) |
 
 Unchecked exception thrown when an attempt is made to open a channel in a group that was not created by the same provider.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to open a channel in a group 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalChannelGroupException](https://developer.android.com/reference/kotlin/java/nio/channels/IllegalChannelGroupException#IllegalChannelGroupException())`()` Constructs an instance of this class. |
+| [IllegalChannelGroupException](../java/nio/channels/IllegalChannelGroupException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

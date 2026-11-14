@@ -11,64 +11,64 @@ open class AtomicLong : Number, Serializable
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.util.concurrent.atomic.AtomicLong](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#) |
+| | ↳ | [java.util.concurrent.atomic.AtomicLong](../java/util/concurrent/atomic/AtomicLong.md) |
 
-A`long`value that may be updated atomically. See the [VarHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#) specification for descriptions of the properties of atomic accesses. An`AtomicLong`is used in applications such as atomically incremented sequence numbers, and cannot be used as a replacement for a [java.lang.Long](https://developer.android.com/reference/kotlin/java/lang/Long.html#). However, this class does extend`Number`to allow uniform access by tools and utilities that deal with numerically-based classes.
+A`long`value that may be updated atomically. See the [VarHandle](../java/lang/invoke/VarHandle.md) specification for descriptions of the properties of atomic accesses. An`AtomicLong`is used in applications such as atomically incremented sequence numbers, and cannot be used as a replacement for a [java.lang.Long](../java/lang/Long.md). However, this class does extend`Number`to allow uniform access by tools and utilities that deal with numerically-based classes.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AtomicLong](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#AtomicLong())`()` Creates a new AtomicLong with initial value`0`. |
-| [AtomicLong](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#AtomicLong(kotlin.Long))`(`initialValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new AtomicLong with the given initial value. |
+| [AtomicLong](../java/util/concurrent/atomic/AtomicLong.md))`()` Creates a new AtomicLong with initial value`0`. |
+| [AtomicLong](../java/util/concurrent/atomic/AtomicLong.md))`(`initialValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new AtomicLong with the given initial value. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [accumulateAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#accumulateAndGet(kotlin.Long,%20java.util.function.LongBinaryOperator))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function to the current and given values, returning the updated value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#addAndGet(kotlin.Long))`(`delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compareAndExchange](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#compareAndExchange(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchange(kotlin.Any)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [accumulateAndGet](../java/util/concurrent/atomic/AtomicLong.md))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the updated value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addAndGet](../java/util/concurrent/atomic/AtomicLong.md))`(`delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compareAndExchange](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compareAndExchangeAcquire](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#compareAndExchangeAcquire(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compareAndExchangeRelease](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#compareAndExchangeRelease(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(kotlin.Any)). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#compareAndSet(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compareAndExchangeAcquire](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compareAndExchangeRelease](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](../java/lang/invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [decrementAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#decrementAndGet())`()` Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#get())`()` Returns the current value, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAcquire](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getAcquire())`()` Returns the current value, with memory effects as specified by [VarHandle.getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAcquire(kotlin.Any)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [decrementAndGet](../java/util/concurrent/atomic/AtomicLong.md))`()` Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAcquire](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getAcquire](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAccumulate](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getAndAccumulate(kotlin.Long,%20java.util.function.LongBinaryOperator))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function to the current and given values, returning the previous value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAdd](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getAndAdd(kotlin.Long))`(`delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndDecrement](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getAndDecrement())`()` Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAccumulate](../java/util/concurrent/atomic/AtomicLong.md))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the previous value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAdd](../java/util/concurrent/atomic/AtomicLong.md))`(`delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndDecrement](../java/util/concurrent/atomic/AtomicLong.md))`()` Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndIncrement](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getAndIncrement())`()` Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getAndSet(kotlin.Long))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndSet(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndUpdate](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getAndUpdate(java.util.function.LongUnaryOperator))`(`updateFunction:` ` [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function, returning the previous value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndIncrement](../java/util/concurrent/atomic/AtomicLong.md))`()` Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndSet](../java/util/concurrent/atomic/AtomicLong.md))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndUpdate](../java/util/concurrent/atomic/AtomicLong.md))`(`updateFunction:` ` [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the previous value. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getOpaque](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getOpaque())`()` Returns the current value, with memory effects as specified by [VarHandle.getOpaque](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getOpaque(kotlin.Any)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPlain](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#getPlain())`()` Returns the current value, with memory semantics of reading as if the variable was declared non-`volatile`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [incrementAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#incrementAndGet())`()` Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getOpaque](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getOpaque](../java/lang/invoke/VarHandle.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPlain](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value, with memory semantics of reading as if the variable was declared non-`volatile`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [incrementAndGet](../java/util/concurrent/atomic/AtomicLong.md))`()` Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#lazySet(kotlin.Long))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#set(kotlin.Long))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setVolatile(kotlin.Any)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#setOpaque(kotlin.Long))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setOpaque(kotlin.Any)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](../java/util/concurrent/atomic/AtomicLong.md))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/concurrent/atomic/AtomicLong.md))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](../java/lang/invoke/VarHandle.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](../java/util/concurrent/atomic/AtomicLong.md))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlain](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#setPlain(kotlin.Long))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory semantics of setting as if the variable was declared non-`volatile`and non-`final`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRelease](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#setRelease(kotlin.Long))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)). |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#toDouble())`()` Returns the current value of this`AtomicLong`as a`double`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlain](../java/util/concurrent/atomic/AtomicLong.md))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory semantics of setting as if the variable was declared non-`volatile`and non-`final`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRelease](../java/util/concurrent/atomic/AtomicLong.md))`(`newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)). |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value of this`AtomicLong`as a`double`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#toFloat())`()` Returns the current value of this`AtomicLong`as a`float`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#toInt())`()` Returns the current value of this`AtomicLong`as an`int`after a narrowing primitive conversion, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)). |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#toLong())`()` Returns the current value of this`AtomicLong`as a`long`, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)). |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value of this`AtomicLong`as a`float`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value of this`AtomicLong`as an`int`after a narrowing primitive conversion, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the current value of this`AtomicLong`as a`long`, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#toString())`()` Returns the String representation of the current value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [updateAndGet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#updateAndGet(java.util.function.LongUnaryOperator))`(`updateFunction:` ` [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function, returning the updated value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#weakCompareAndSet(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/concurrent/atomic/AtomicLong.md))`()` Returns the String representation of the current value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [updateAndGet](../java/util/concurrent/atomic/AtomicLong.md))`(`updateFunction:` ` [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the updated value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetAcquire](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#weakCompareAndSetAcquire(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(kotlin.Any)). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#weakCompareAndSetPlain(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetRelease](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#weakCompareAndSetRelease(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(kotlin.Any)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetAcquire](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](../java/lang/invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetPlain](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetRelease](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](../java/lang/invoke/VarHandle.md)). |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetVolatile](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#weakCompareAndSetVolatile(kotlin.Long,%20kotlin.Long))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSet(kotlin.Any)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetVolatile](../java/util/concurrent/atomic/AtomicLong.md))`(`expectedValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](../java/lang/invoke/VarHandle.md)). |
 
 ## Public constructors
 
@@ -109,12 +109,12 @@ fun accumulateAndGet(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the update value |
-| `accumulatorFunction` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!:a side-effect-free function of two arguments |
+| `accumulatorFunction` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!:a side-effect-free function of two arguments |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------|
@@ -128,7 +128,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun addAndGet(delta: Long): Long
 ```
 
-Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)).
+Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------|
@@ -149,7 +149,7 @@ fun compareAndExchange(
 ): Long
 ```
 
-Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchange(kotlin.Any)).
+Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -171,7 +171,7 @@ fun compareAndExchangeAcquire(
 ): Long
 ```
 
-Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(kotlin.Any)).
+Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -193,7 +193,7 @@ fun compareAndExchangeRelease(
 ): Long
 ```
 
-Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(kotlin.Any)).
+Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -215,7 +215,7 @@ fun compareAndSet(
 ): Boolean
 ```
 
-Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)).
+Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -234,7 +234,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun decrementAndGet(): Long
 ```
 
-Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)).
+Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)).
 
 Equivalent to`addAndGet(-1)`.
 
@@ -250,7 +250,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun get(): Long
 ```
 
-Returns the current value, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)).
+Returns the current value, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)).
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------|
@@ -264,7 +264,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getAcquire(): Long
 ```
 
-Returns the current value, with memory effects as specified by [VarHandle.getAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAcquire(kotlin.Any)).
+Returns the current value, with memory effects as specified by [VarHandle.getAcquire](../java/lang/invoke/VarHandle.md)).
 
 | Return ||
 |------------------------------------------------------------------------------|-----------|
@@ -281,12 +281,12 @@ fun getAndAccumulate(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the update value |
-| `accumulatorFunction` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!:a side-effect-free function of two arguments |
+| `accumulatorFunction` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!:a side-effect-free function of two arguments |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------|
@@ -300,7 +300,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAndAdd(delta: Long): Long
 ```
 
-Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)).
+Atomically adds the given value to the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------|
@@ -318,7 +318,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAndDecrement(): Long
 ```
 
-Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)).
+Atomically decrements the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)).
 
 Equivalent to`getAndAdd(-1)`.
 
@@ -334,7 +334,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAndIncrement(): Long
 ```
 
-Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)).
+Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)).
 
 Equivalent to`getAndAdd(1)`.
 
@@ -350,7 +350,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAndSet(newValue: Long): Long
 ```
 
-Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndSet(kotlin.Any)).
+Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------|
@@ -368,11 +368,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getAndUpdate(updateFunction: LongUnaryOperator!): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `updateFunction` | [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!:a side-effect-free function |
+| `updateFunction` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!:a side-effect-free function |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------|
@@ -386,7 +386,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getOpaque(): Long
 ```
 
-Returns the current value, with memory effects as specified by [VarHandle.getOpaque](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getOpaque(kotlin.Any)).
+Returns the current value, with memory effects as specified by [VarHandle.getOpaque](../java/lang/invoke/VarHandle.md)).
 
 | Return ||
 |------------------------------------------------------------------------------|-----------|
@@ -414,7 +414,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun incrementAndGet(): Long
 ```
 
-Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)).
+Atomically increments the current value, with memory effects as specified by [VarHandle.getAndAdd](../java/lang/invoke/VarHandle.md)).
 
 Equivalent to`addAndGet(1)`.
 
@@ -430,7 +430,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun lazySet(newValue: Long): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------|
@@ -444,7 +444,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun set(newValue: Long): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setVolatile(kotlin.Any)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------|
@@ -458,7 +458,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun setOpaque(newValue: Long): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setOpaque(kotlin.Any)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------|
@@ -486,7 +486,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun setRelease(newValue: Long): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------|
@@ -500,7 +500,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toDouble(): Double
 ```
 
-Returns the current value of this`AtomicLong`as a`double`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)).
+Returns the current value of this`AtomicLong`as a`double`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -514,7 +514,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toFloat(): Float
 ```
 
-Returns the current value of this`AtomicLong`as a`float`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)).
+Returns the current value of this`AtomicLong`as a`float`after a widening primitive conversion, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)).
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -528,7 +528,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toInt(): Int
 ```
 
-Returns the current value of this`AtomicLong`as an`int`after a narrowing primitive conversion, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)).
+Returns the current value of this`AtomicLong`as an`int`after a narrowing primitive conversion, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -542,7 +542,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toLong(): Long
 ```
 
-Returns the current value of this`AtomicLong`as a`long`, with memory effects as specified by [VarHandle.getVolatile](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)). Equivalent to [get()](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#get()).
+Returns the current value of this`AtomicLong`as a`long`, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)). Equivalent to [get()](../java/util/concurrent/atomic/AtomicLong.md)).
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -570,11 +570,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun updateAndGet(updateFunction: LongUnaryOperator!): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any))) the current value with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `updateFunction` | [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!:a side-effect-free function |
+| `updateFunction` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!:a side-effect-free function |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------|
@@ -592,9 +592,9 @@ fun weakCompareAndSet(
 ): Boolean
 ```
 
-**Deprecated:** *This method has plain memory effects but the method name implies volatile memory effects (see methods such as [compareAndExchange](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#compareAndExchange(kotlin.Long,%20kotlin.Long))and [compareAndSet](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#compareAndSet(kotlin.Long,%20kotlin.Long))). To avoid confusion over plain or volatile memory effects it is recommended that the method [weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#weakCompareAndSetPlain(kotlin.Long,%20kotlin.Long))be used instead.*
+**Deprecated:** *This method has plain memory effects but the method name implies volatile memory effects (see methods such as [compareAndExchange](../java/util/concurrent/atomic/AtomicLong.md))and [compareAndSet](../java/util/concurrent/atomic/AtomicLong.md))). To avoid confusion over plain or volatile memory effects it is recommended that the method [weakCompareAndSetPlain](../java/util/concurrent/atomic/AtomicLong.md))be used instead.*
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -607,7 +607,7 @@ Possibly atomically sets the value to`newValue`if the current value`== expectedV
 
 **See Also**
 
-- [#weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLong#weakCompareAndSetPlain(kotlin.Long,%20kotlin.Long)) 
+- [#weakCompareAndSetPlain](../java/util/concurrent/atomic/AtomicLong.md)) 
 
 ### weakCompareAndSetAcquire
 
@@ -620,7 +620,7 @@ fun weakCompareAndSetAcquire(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(kotlin.Any)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -642,7 +642,7 @@ fun weakCompareAndSetPlain(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -664,7 +664,7 @@ fun weakCompareAndSetRelease(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(kotlin.Any)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|
@@ -686,7 +686,7 @@ fun weakCompareAndSetVolatile(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSet(kotlin.Any)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](../java/lang/invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------|

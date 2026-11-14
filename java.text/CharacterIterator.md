@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CharacterIterator : Cloneable
 ```
 
-| [java.text.CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#) |
+| [java.text.CharacterIterator](../java/text/CharacterIterator.md) |
 
-| Known Direct Subclasses [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator), [StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator) |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------| | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator) | An`AttributedCharacterIterator`allows iteration through both text and related attribute information. | | [StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator) | `StringCharacterIterator`implements the`CharacterIterator`protocol for a`String`. | |
+| Known Direct Subclasses [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md), [StringCharacterIterator](../java/text/StringCharacterIterator.md) |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------| | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md) | An`AttributedCharacterIterator`allows iteration through both text and related attribute information. | | [StringCharacterIterator](../java/text/StringCharacterIterator.md) | `StringCharacterIterator`implements the`CharacterIterator`protocol for a`String`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This interface defines a protocol for bidirectional iteration over text. The iterator iterates over a bounded sequence of characters. Characters are indexed with values beginning with the value returned by getBeginIndex() and continuing through the value returned by getEndIndex()-1.
@@ -64,23 +64,23 @@ Traverse both forward and backward from a given position in the text. Calls to n
 
 | Constants ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [DONE](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#DONE:kotlin.Char) Constant that is returned when the iterator has reached either the end or the beginning of the text. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [DONE](../java/text/CharacterIterator.md) Constant that is returned when the iterator has reached either the end or the beginning of the text. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#clone())`()` Create a copy of this iterator |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [current](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#current())`()` Gets the character at the current position (as returned by getIndex()). |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [first](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#first())`()` Sets the position to getBeginIndex() and returns the character at that position. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/CharacterIterator.md))`()` Create a copy of this iterator |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [current](../java/text/CharacterIterator.md))`()` Gets the character at the current position (as returned by getIndex()). |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [first](../java/text/CharacterIterator.md))`()` Sets the position to getBeginIndex() and returns the character at that position. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getBeginIndex())`()` Returns the start index of the text. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getEndIndex())`()` Returns the end index of the text. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getIndex())`()` Returns the current index. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](../java/text/CharacterIterator.md))`()` Returns the start index of the text. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](../java/text/CharacterIterator.md))`()` Returns the end index of the text. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../java/text/CharacterIterator.md))`()` Returns the current index. |
 | --- | --- |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [last](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#last())`()` Sets the position to getEndIndex()-1 (getEndIndex() if the text is empty) and returns the character at that position. |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [next](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#next())`()` Increments the iterator's index by one and returns the character at the new index. |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [previous](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#previous())`()` Decrements the iterator's index by one and returns the character at the new index. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [last](../java/text/CharacterIterator.md))`()` Sets the position to getEndIndex()-1 (getEndIndex() if the text is empty) and returns the character at that position. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [next](../java/text/CharacterIterator.md))`()` Increments the iterator's index by one and returns the character at the new index. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [previous](../java/text/CharacterIterator.md))`()` Decrements the iterator's index by one and returns the character at the new index. |
 | --- | --- |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [setIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#setIndex(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the position to the specified position in the text and returns that character. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [setIndex](../java/text/CharacterIterator.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the position to the specified position in the text and returns that character. |
 
 ## Constants
 

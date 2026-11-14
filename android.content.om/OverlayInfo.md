@@ -8,7 +8,7 @@ class OverlayInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.om.OverlayInfo](https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#) |
+| ↳ | [android.content.om.OverlayInfo](../android/content/om/OverlayInfo.md) |
 
 An immutable information about an overlay.
 
@@ -32,7 +32,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [OverlayIdentifier](https://developer.android.com/reference/kotlin/android/content/om/OverlayIdentifier) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#getOverlayIdentifier()()` Get the unique identifier from the overlay information. |
+| [OverlayIdentifier](../android/content/om/OverlayIdentifier.md) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#getOverlayIdentifier()()` Get the unique identifier from the overlay information. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#getOverlayName()()` Get the overlay name from the registered fabricated overlay. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#getTargetOverlayableName()()` Return the target overlayable name. |
@@ -45,7 +45,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [OverlayInfo](https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OverlayInfo](../android/content/om/OverlayInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -198,7 +198,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

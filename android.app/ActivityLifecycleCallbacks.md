@@ -4,46 +4,46 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # ActivityLifecycleCallbacks
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks "View this page in Java") 
+Kotlin| [Java](../android/app/Application.ActivityLifecycleCallbacks.md) 
 | --- | --- |
 
 ```
 interface ActivityLifecycleCallbacks
 ```
 
-| [android.app.Application.ActivityLifecycleCallbacks](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#) |
+| [android.app.Application.ActivityLifecycleCallbacks](../android/app/Application.ActivityLifecycleCallbacks.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityCreated](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityCreated(android.app.Activity,%20android.os.Bundle))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`, `savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Called when the Activity calls android. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityDestroyed](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityDestroyed(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called when the Activity calls [super.onDestroy()](https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy()). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPaused](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPaused(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called when the Activity calls [super.onPause()](https://developer.android.com/reference/kotlin/android/app/Activity#onPause()). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityCreated](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`, `savedInstanceState:` ` [Bundle](../android/os/Bundle.md)?`)` Called when the Activity calls android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityDestroyed](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called when the Activity calls [super.onDestroy()](../android/app/Activity.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPaused](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called when the Activity calls [super.onPause()](../android/app/Activity.md)). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostCreated](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPostCreated(android.app.Activity,%20android.os.Bundle))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`, `savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Called as the last step of the Activity being created. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostDestroyed](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPostDestroyed(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the last step of the Activity being destroyed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostPaused](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPostPaused(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the last step of the Activity being paused. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostCreated](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`, `savedInstanceState:` ` [Bundle](../android/os/Bundle.md)?`)` Called as the last step of the Activity being created. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostDestroyed](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the last step of the Activity being destroyed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostPaused](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the last step of the Activity being paused. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostResumed](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPostResumed(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the last step of the Activity being resumed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostSaveInstanceState](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPostSaveInstanceState(android.app.Activity,%20android.os.Bundle))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`, `outState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`)` Called as the last step of the Activity saving its instance state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostStarted](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPostStarted(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the last step of the Activity being started. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostResumed](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the last step of the Activity being resumed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostSaveInstanceState](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`, `outState:` ` [Bundle](../android/os/Bundle.md)`)` Called as the last step of the Activity saving its instance state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostStarted](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the last step of the Activity being started. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostStopped](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPostStopped(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the last step of the Activity being stopped. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreCreated](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPreCreated(android.app.Activity,%20android.os.Bundle))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`, `savedInstanceState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Called as the first step of the Activity being created. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreDestroyed](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPreDestroyed(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the first step of the Activity being destroyed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPostStopped](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the last step of the Activity being stopped. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreCreated](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`, `savedInstanceState:` ` [Bundle](../android/os/Bundle.md)?`)` Called as the first step of the Activity being created. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreDestroyed](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the first step of the Activity being destroyed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPrePaused](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPrePaused(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the first step of the Activity being paused. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreResumed](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPreResumed(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the first step of the Activity being resumed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreSaveInstanceState](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPreSaveInstanceState(android.app.Activity,%20android.os.Bundle))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`, `outState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`)` Called as the first step of the Activity saving its instance state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPrePaused](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the first step of the Activity being paused. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreResumed](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the first step of the Activity being resumed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreSaveInstanceState](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`, `outState:` ` [Bundle](../android/os/Bundle.md)`)` Called as the first step of the Activity saving its instance state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreStarted](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPreStarted(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the first step of the Activity being started. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreStopped](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityPreStopped(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called as the first step of the Activity being stopped. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityResumed](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityResumed(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called when the Activity calls [super.onResume()](https://developer.android.com/reference/kotlin/android/app/Activity#onResume()). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreStarted](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the first step of the Activity being started. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityPreStopped](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called as the first step of the Activity being stopped. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityResumed](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called when the Activity calls [super.onResume()](../android/app/Activity.md)). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivitySaveInstanceState](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivitySaveInstanceState(android.app.Activity,%20android.os.Bundle))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`, `outState:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`)` Called when the Activity calls android. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityStarted](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityStarted(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called when the Activity calls [super.onStart()](https://developer.android.com/reference/kotlin/android/app/Activity#onStart()). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityStopped](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks#onActivityStopped(android.app.Activity))`(`activity:` ` [Activity](https://developer.android.com/reference/kotlin/android/app/Activity)`)` Called when the Activity calls [super.onStop()](https://developer.android.com/reference/kotlin/android/app/Activity#onStop()). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivitySaveInstanceState](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`, `outState:` ` [Bundle](../android/os/Bundle.md)`)` Called when the Activity calls android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityStarted](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called when the Activity calls [super.onStart()](../android/app/Activity.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActivityStopped](../android/app/Application.ActivityLifecycleCallbacks.md))`(`activity:` ` [Activity](../android/app/Activity.md)`)` Called when the Activity calls [super.onStop()](../android/app/Activity.md)). |
 | --- | --- |
 
 ## Public methods
@@ -63,8 +63,8 @@ Called when the Activity calls android.app.Activity#onCreate.
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:This value may be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
 
 ### onActivityDestroyed
 
@@ -74,11 +74,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onActivityDestroyed(activity: Activity): Unit
 ```
 
-Called when the Activity calls [super.onDestroy()](https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy()).
+Called when the Activity calls [super.onDestroy()](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPaused
 
@@ -88,11 +88,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onActivityPaused(activity: Activity): Unit
 ```
 
-Called when the Activity calls [super.onPause()](https://developer.android.com/reference/kotlin/android/app/Activity#onPause()).
+Called when the Activity calls [super.onPause()](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPostCreated
 
@@ -109,8 +109,8 @@ Called as the last step of the Activity being created. This is always called aft
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:This value may be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
 
 ### onActivityPostDestroyed
 
@@ -120,11 +120,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPostDestroyed(activity: Activity): Unit
 ```
 
-Called as the last step of the Activity being destroyed. This is always called after [Activity.onDestroy](https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy()).
+Called as the last step of the Activity being destroyed. This is always called after [Activity.onDestroy](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPostPaused
 
@@ -134,11 +134,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPostPaused(activity: Activity): Unit
 ```
 
-Called as the last step of the Activity being paused. This is always called after [Activity.onPause](https://developer.android.com/reference/kotlin/android/app/Activity#onPause()).
+Called as the last step of the Activity being paused. This is always called after [Activity.onPause](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPostResumed
 
@@ -148,11 +148,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPostResumed(activity: Activity): Unit
 ```
 
-Called as the last step of the Activity being resumed. This is always called after [Activity.onResume](https://developer.android.com/reference/kotlin/android/app/Activity#onResume())and [Activity.onPostResume](https://developer.android.com/reference/kotlin/android/app/Activity#onPostResume()).
+Called as the last step of the Activity being resumed. This is always called after [Activity.onResume](../android/app/Activity.md))and [Activity.onPostResume](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPostSaveInstanceState
 
@@ -169,8 +169,8 @@ Called as the last step of the Activity saving its instance state. This is alway
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
-| `outState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
+| `outState` | [Bundle](../android/os/Bundle.md):This value cannot be`null`. |
 
 ### onActivityPostStarted
 
@@ -180,11 +180,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPostStarted(activity: Activity): Unit
 ```
 
-Called as the last step of the Activity being started. This is always called after [Activity.onStart](https://developer.android.com/reference/kotlin/android/app/Activity#onStart()).
+Called as the last step of the Activity being started. This is always called after [Activity.onStart](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPostStopped
 
@@ -194,11 +194,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPostStopped(activity: Activity): Unit
 ```
 
-Called as the last step of the Activity being stopped. This is always called after [Activity.onStop](https://developer.android.com/reference/kotlin/android/app/Activity#onStop()).
+Called as the last step of the Activity being stopped. This is always called after [Activity.onStop](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPreCreated
 
@@ -215,8 +215,8 @@ Called as the first step of the Activity being created. This is always called be
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:This value may be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
 
 ### onActivityPreDestroyed
 
@@ -226,11 +226,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPreDestroyed(activity: Activity): Unit
 ```
 
-Called as the first step of the Activity being destroyed. This is always called before [Activity.onDestroy](https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy()).
+Called as the first step of the Activity being destroyed. This is always called before [Activity.onDestroy](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPrePaused
 
@@ -240,11 +240,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPrePaused(activity: Activity): Unit
 ```
 
-Called as the first step of the Activity being paused. This is always called before [Activity.onPause](https://developer.android.com/reference/kotlin/android/app/Activity#onPause()).
+Called as the first step of the Activity being paused. This is always called before [Activity.onPause](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPreResumed
 
@@ -254,11 +254,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPreResumed(activity: Activity): Unit
 ```
 
-Called as the first step of the Activity being resumed. This is always called before [Activity.onResume](https://developer.android.com/reference/kotlin/android/app/Activity#onResume()).
+Called as the first step of the Activity being resumed. This is always called before [Activity.onResume](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPreSaveInstanceState
 
@@ -275,8 +275,8 @@ Called as the first step of the Activity saving its instance state. This is alwa
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
-| `outState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
+| `outState` | [Bundle](../android/os/Bundle.md):This value cannot be`null`. |
 
 ### onActivityPreStarted
 
@@ -286,11 +286,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPreStarted(activity: Activity): Unit
 ```
 
-Called as the first step of the Activity being started. This is always called before [Activity.onStart](https://developer.android.com/reference/kotlin/android/app/Activity#onStart()).
+Called as the first step of the Activity being started. This is always called before [Activity.onStart](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityPreStopped
 
@@ -300,11 +300,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun onActivityPreStopped(activity: Activity): Unit
 ```
 
-Called as the first step of the Activity being stopped. This is always called before [Activity.onStop](https://developer.android.com/reference/kotlin/android/app/Activity#onStop()).
+Called as the first step of the Activity being stopped. This is always called before [Activity.onStop](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityResumed
 
@@ -314,11 +314,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onActivityResumed(activity: Activity): Unit
 ```
 
-Called when the Activity calls [super.onResume()](https://developer.android.com/reference/kotlin/android/app/Activity#onResume()).
+Called when the Activity calls [super.onResume()](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivitySaveInstanceState
 
@@ -335,8 +335,8 @@ Called when the Activity calls android.app.Activity#onSaveInstanceState.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
-| `outState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
+| `outState` | [Bundle](../android/os/Bundle.md):This value cannot be`null`. |
 
 ### onActivityStarted
 
@@ -346,11 +346,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onActivityStarted(activity: Activity): Unit
 ```
 
-Called when the Activity calls [super.onStart()](https://developer.android.com/reference/kotlin/android/app/Activity#onStart()).
+Called when the Activity calls [super.onStart()](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |
 
 ### onActivityStopped
 
@@ -360,8 +360,8 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onActivityStopped(activity: Activity): Unit
 ```
 
-Called when the Activity calls [super.onStop()](https://developer.android.com/reference/kotlin/android/app/Activity#onStop()).
+Called when the Activity calls [super.onStop()](../android/app/Activity.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity):This value cannot be`null`. |
+| `activity` | [Activity](../android/app/Activity.md):This value cannot be`null`. |

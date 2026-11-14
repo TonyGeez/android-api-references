@@ -10,7 +10,7 @@ class PasswordAuthentication
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.PasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication#) |
+| ↳ | [java.net.PasswordAuthentication](../java/net/PasswordAuthentication.md) |
 
 The class PasswordAuthentication is a data holder that is used by Authenticator. It is simply a repository for a user name and a password.
 
@@ -18,12 +18,12 @@ The class PasswordAuthentication is a data holder that is used by Authenticator.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PasswordAuthentication](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication#PasswordAuthentication(kotlin.String,%20kotlin.CharArray))`(`userName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Creates a new`PasswordAuthentication`object from the given user name and password. |
+| [PasswordAuthentication](../java/net/PasswordAuthentication.md))`(`userName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Creates a new`PasswordAuthentication`object from the given user name and password. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication#getPassword())`()` Returns the user password. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserName](https://developer.android.com/reference/kotlin/java/net/PasswordAuthentication#getUserName())`()` Returns the user name. |
+| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](../java/net/PasswordAuthentication.md))`()` Returns the user password. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserName](../java/net/PasswordAuthentication.md))`()` Returns the user name. |
 
 ## Public constructors
 

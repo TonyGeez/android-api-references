@@ -9,7 +9,7 @@ abstract class IdentityCredentialStore
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.IdentityCredentialStore](https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#) |
+| ↳ | [android.security.identity.IdentityCredentialStore](../android/security/identity/IdentityCredentialStore.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**
@@ -46,13 +46,13 @@ The Identity Credential API is designed to be able to evolve and change over tim
 
 | Public methods ||
 |---|---|
-| abstract [WritableIdentityCredential](https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#createCredential(kotlin.String,%20kotlin.String)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, docType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new credential. |
-| open [PresentationSession](https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#createPresentationSession(kotlin.Int)(cipherSuite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new presentation session. |
+| abstract [WritableIdentityCredential](../android/security/identity/WritableIdentityCredential.md) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#createCredential(kotlin.String,%20kotlin.String)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, docType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new credential. |
+| open [PresentationSession](../android/security/identity/PresentationSession.md) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#createPresentationSession(kotlin.Int)(cipherSuite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new presentation session. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#deleteCredentialByName(kotlin.String)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Delete a named credential. |
 | --- | --- |
-| abstract [IdentityCredential](https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getCredentialByName(kotlin.String,%20kotlin.Int)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cipherSuite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a named credential. |
-| open static [IdentityCredentialStore](https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getDirectAccessInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#` for direct access. |
-| open static [IdentityCredentialStore](https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the default `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#`. |
+| abstract [IdentityCredential](../android/security/identity/IdentityCredential.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getCredentialByName(kotlin.String,%20kotlin.Int)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cipherSuite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a named credential. |
+| open static [IdentityCredentialStore](../android/security/identity/IdentityCredentialStore.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getDirectAccessInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#` for direct access. |
+| open static [IdentityCredentialStore](../android/security/identity/IdentityCredentialStore.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the default `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#`. |
 | --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getSupportedDocTypes()()` Gets a list of supported document types. |
 
@@ -218,7 +218,7 @@ Direct access requires specialized NFC hardware and may not be supported on all 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the application context. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): the application context. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -238,7 +238,7 @@ Gets the default `https://developer.android.com/reference/kotlin/android/securit
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the application context. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): the application context. This value cannot be `null`. |
 
 | Return ||
 |---|---|

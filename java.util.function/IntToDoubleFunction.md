@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface IntToDoubleFunction
 ```
 
-| [java.util.function.IntToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/IntToDoubleFunction#) |
+| [java.util.function.IntToDoubleFunction](../java/util/function/IntToDoubleFunction.md) |
 
-Represents a function that accepts an int-valued argument and produces a double-valued result. This is the`int`-to-`double`primitive specialization for [Function](https://developer.android.com/reference/kotlin/java/util/function/Function).
+Represents a function that accepts an int-valued argument and produces a double-valued result. This is the`int`-to-`double`primitive specialization for [Function](../java/util/function/Function.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [applyAsDouble(int)](https://developer.android.com/reference/kotlin/java/util/function/IntToDoubleFunction#applyAsDouble(kotlin.Int)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsDouble(int)](../java/util/function/IntToDoubleFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](https://developer.android.com/reference/kotlin/java/util/function/IntToDoubleFunction#applyAsDouble(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this function to the given argument. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [applyAsDouble](../java/util/function/IntToDoubleFunction.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this function to the given argument. |
 
 ## Public methods
 

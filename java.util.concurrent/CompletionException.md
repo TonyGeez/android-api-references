@@ -11,10 +11,10 @@ open class CompletionException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.concurrent.CompletionException](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException#) |
+| | | | ↳ | [java.util.concurrent.CompletionException](../java/util/concurrent/CompletionException.md) |
 
 Exception thrown when an error or other exception is encountered in the course of completing a result or task.
 
@@ -22,13 +22,13 @@ Exception thrown when an error or other exception is encountered in the course o
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CompletionException](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException#CompletionException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`CompletionException`with the specified detail message and cause. |
-| [CompletionException](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException#CompletionException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`CompletionException`with the specified cause. |
+| [CompletionException](../java/util/concurrent/CompletionException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`CompletionException`with the specified detail message and cause. |
+| [CompletionException](../java/util/concurrent/CompletionException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`CompletionException`with the specified cause. |
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CompletionException](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException#CompletionException())`()` Constructs a`CompletionException`with no detail message. |
-| [CompletionException](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException#CompletionException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`CompletionException`with the specified detail message. |
+| [CompletionException](../java/util/concurrent/CompletionException.md))`()` Constructs a`CompletionException`with no detail message. |
+| [CompletionException](../java/util/concurrent/CompletionException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`CompletionException`with the specified detail message. |
 
 ## Public constructors
 
@@ -47,7 +47,7 @@ Constructs a`CompletionException`with the specified detail message and cause.
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method) |
 
 ### CompletionException
 
@@ -61,7 +61,7 @@ Constructs a`CompletionException`with the specified cause. The detail message is
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method) |
 
 ## Protected constructors
 
@@ -73,7 +73,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 protected CompletionException()
 ```
 
-Constructs a`CompletionException`with no detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable)). 
+Constructs a`CompletionException`with no detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](../java/lang/Throwable.md)). 
 
 ### CompletionException
 
@@ -83,7 +83,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 protected CompletionException(message: String!)
 ```
 
-Constructs a`CompletionException`with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable)).
+Constructs a`CompletionException`with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](../java/lang/Throwable.md)).
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------|

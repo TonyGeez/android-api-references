@@ -8,11 +8,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 interface LongStream : BaseStream<Long!, LongStream!>
 ```
 
-| [java.util.stream.LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#) |
+| [java.util.stream.LongStream](../java/util/stream/LongStream.md) |
 
 A sequence of primitive long-valued elements supporting sequential and parallel aggregate operations. This is the`long`primitive specialization of .
 
-The following example illustrates an aggregate operation using [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream) and [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#), computing the sum of the weights of the red widgets: 
+The following example illustrates an aggregate operation using [Stream](../java/util/stream/Stream.md) and [LongStream](../java/util/stream/LongStream.md), computing the sum of the weights of the red widgets: 
 
 ```kotlin
 <code>long sum = widgets.stream()
@@ -21,83 +21,83 @@ The following example illustrates an aggregate operation using [Stream](https://
                         .sum();
   </code>
 ```
-See the class documentation for [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream) and the package documentation for [java.util.stream](https://developer.android.com/reference/kotlin/java/util/stream/package-summary) for additional specification of streams, stream operations, stream pipelines, and parallelism.
+See the class documentation for [Stream](../java/util/stream/Stream.md) and the package documentation for [java.util.stream](../java/util/stream/_package.md) for additional specification of streams, stream operations, stream pipelines, and parallelism.
 
 ## Summary
 
 | Nested classes ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Builder](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.Builder) A mutable builder for a`LongStream`. |
-| abstract | [LongMapMultiConsumer](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.LongMapMultiConsumer) Represents an operation that accepts a`long`-valued argument and a LongConsumer, and returns no result. |
+| abstract | [Builder](../java/util/stream/LongStream.Builder.md) A mutable builder for a`LongStream`. |
+| abstract | [LongMapMultiConsumer](../java/util/stream/LongStream.LongMapMultiConsumer.md) Represents an operation that accepts a`long`-valued argument and a LongConsumer, and returns no result. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allMatch](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#allMatch(java.util.function.LongPredicate))`(`predicate:` ` [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!`)` Returns whether all elements of this stream match the provided predicate. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [anyMatch](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#anyMatch(java.util.function.LongPredicate))`(`predicate:` ` [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!`)` Returns whether any elements of this stream match the provided predicate. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | [asDoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#asDoubleStream())`()` Returns a`DoubleStream`consisting of the elements of this stream, converted to`double`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allMatch](../java/util/stream/LongStream.md))`(`predicate:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns whether all elements of this stream match the provided predicate. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [anyMatch](../java/util/stream/LongStream.md))`(`predicate:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns whether any elements of this stream match the provided predicate. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [asDoubleStream](../java/util/stream/LongStream.md))`()` Returns a`DoubleStream`consisting of the elements of this stream, converted to`double`. |
 | --- | --- |
-| abstract [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | [average](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#average())`()` Returns an`OptionalDouble`describing the arithmetic mean of elements of this stream, or an empty optional if this stream is empty. |
-| abstract [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | [boxed](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#boxed())`()` Returns a`Stream`consisting of the elements of this stream, each boxed to a`Long`. |
-| openstatic [LongStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.Builder)! | [builder](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#builder())`()` Returns a builder for a`LongStream`. |
+| abstract [OptionalDouble](../java/util/OptionalDouble.md)! | [average](../java/util/stream/LongStream.md))`()` Returns an`OptionalDouble`describing the arithmetic mean of elements of this stream, or an empty optional if this stream is empty. |
+| abstract [Stream](../java/util/stream/Stream.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | [boxed](../java/util/stream/LongStream.md))`()` Returns a`Stream`consisting of the elements of this stream, each boxed to a`Long`. |
+| openstatic [LongStream.Builder](../java/util/stream/LongStream.Builder.md)! | [builder](../java/util/stream/LongStream.md))`()` Returns a builder for a`LongStream`. |
 | --- | --- |
-| abstractR | [collect](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#collect(java.util.function.Supplier,%20java.util.function.ObjLongConsumer,%20java.util.function.BiConsumer))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<R>!`, `accumulator:` ` [ObjLongConsumer](https://developer.android.com/reference/kotlin/java/util/function/ObjLongConsumer.html#)<R>!`, `combiner:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<R,` `R>!`)` Performs a [mutable reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#MutableReduction) operation on the elements of this stream. |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [concat](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#concat(java.util.stream.LongStream,%20java.util.stream.LongStream))`(`a:` ` [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)!`, `b:` ` [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)!`)` Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [count](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#count())`()` Returns the count of elements in this stream. |
+| abstractR | [collect](../java/util/stream/LongStream.md))`(`supplier:` ` [Supplier](../java/util/function/Supplier.md)<R>!`, `accumulator:` ` [ObjLongConsumer](../java/util/function/ObjLongConsumer.md)<R>!`, `combiner:` ` [BiConsumer](../java/util/function/BiConsumer.md)<R,` `R>!`)` Performs a [mutable reduction](../java/util/stream/_package.md) operation on the elements of this stream. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [concat](../java/util/stream/LongStream.md))`(`a:` ` [LongStream](../java/util/stream/LongStream.md)!`, `b:` ` [LongStream](../java/util/stream/LongStream.md)!`)` Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [count](../java/util/stream/LongStream.md))`()` Returns the count of elements in this stream. |
 | --- | --- |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [distinct](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#distinct())`()` Returns a stream consisting of the distinct elements of this stream. |
-| open [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [dropWhile](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#dropWhile(java.util.function.LongPredicate))`(`predicate:` ` [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!`)` Returns, if this stream is ordered, a stream consisting of the remaining elements of this stream after dropping the longest prefix of elements that match the given predicate. |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [empty](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#empty())`()` Returns an empty sequential`LongStream`. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [distinct](../java/util/stream/LongStream.md))`()` Returns a stream consisting of the distinct elements of this stream. |
+| open [LongStream](../java/util/stream/LongStream.md)! | [dropWhile](../java/util/stream/LongStream.md))`(`predicate:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns, if this stream is ordered, a stream consisting of the remaining elements of this stream after dropping the longest prefix of elements that match the given predicate. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [empty](../java/util/stream/LongStream.md))`()` Returns an empty sequential`LongStream`. |
 | --- | --- |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [filter](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#filter(java.util.function.LongPredicate))`(`predicate:` ` [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!`)` Returns a stream consisting of the elements of this stream that match the given predicate. |
-| abstract [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | [findAny](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#findAny())`()` Returns an [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#) describing some element of the stream, or an empty`OptionalLong`if the stream is empty. |
-| abstract [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | [findFirst](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#findFirst())`()` Returns an [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#) describing the first element of this stream, or an empty`OptionalLong`if the stream is empty. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [filter](../java/util/stream/LongStream.md))`(`predicate:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns a stream consisting of the elements of this stream that match the given predicate. |
+| abstract [OptionalLong](../java/util/OptionalLong.md)! | [findAny](../java/util/stream/LongStream.md))`()` Returns an [OptionalLong](../java/util/OptionalLong.md) describing some element of the stream, or an empty`OptionalLong`if the stream is empty. |
+| abstract [OptionalLong](../java/util/OptionalLong.md)! | [findFirst](../java/util/stream/LongStream.md))`()` Returns an [OptionalLong](../java/util/OptionalLong.md) describing the first element of this stream, or an empty`OptionalLong`if the stream is empty. |
 | --- | --- |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [flatMap](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#flatMap(java.util.function.LongFunction))`(`mapper:` ` [LongFunction](https://developer.android.com/reference/kotlin/java/util/function/LongFunction.html#)<out` ` [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)!>!`)` Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#forEach(java.util.function.LongConsumer))`(`action:` ` [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#)!`)` Performs an action for each element of this stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachOrdered](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#forEachOrdered(java.util.function.LongConsumer))`(`action:` ` [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#)!`)` Performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [flatMap](../java/util/stream/LongStream.md))`(`mapper:` ` [LongFunction](../java/util/function/LongFunction.md)<out` ` [LongStream](../java/util/stream/LongStream.md)!>!`)` Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/stream/LongStream.md))`(`action:` ` [LongConsumer](../java/util/function/LongConsumer.md)!`)` Performs an action for each element of this stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachOrdered](../java/util/stream/LongStream.md))`(`action:` ` [LongConsumer](../java/util/function/LongConsumer.md)!`)` Performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order. |
 | --- | --- |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [generate](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#generate(java.util.function.LongSupplier))`(`s:` ` [LongSupplier](https://developer.android.com/reference/kotlin/java/util/function/LongSupplier.html#)!`)` Returns an infinite sequential unordered stream where each element is generated by the provided`LongSupplier`. |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [iterate](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#iterate(kotlin.Long,%20java.util.function.LongPredicate,%20java.util.function.LongUnaryOperator))`(`seed:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `hasNext:` ` [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!`, `next:` ` [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!`)` Returns a sequential ordered`LongStream`produced by iterative application of the given`next`function to an initial element, conditioned on satisfying the given`hasNext`predicate. |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [iterate](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#iterate(kotlin.Long,%20java.util.function.LongUnaryOperator))`(`seed:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f:` ` [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!`)` Returns an infinite sequential ordered`LongStream`produced by iterative application of a function`f`to an initial element`seed`, producing a`Stream`consisting of`seed`,`f(seed)`,`f(f(seed))`, etc. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [generate](../java/util/stream/LongStream.md))`(`s:` ` [LongSupplier](../java/util/function/LongSupplier.md)!`)` Returns an infinite sequential unordered stream where each element is generated by the provided`LongSupplier`. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [iterate](../java/util/stream/LongStream.md))`(`seed:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `hasNext:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`, `next:` ` [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!`)` Returns a sequential ordered`LongStream`produced by iterative application of the given`next`function to an initial element, conditioned on satisfying the given`hasNext`predicate. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [iterate](../java/util/stream/LongStream.md))`(`seed:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `f:` ` [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!`)` Returns an infinite sequential ordered`LongStream`produced by iterative application of a function`f`to an initial element`seed`, producing a`Stream`consisting of`seed`,`f(seed)`,`f(f(seed))`, etc. |
 | --- | --- |
-| abstract [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong.html#)! | [iterator](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#iterator())`()` <br /> |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [limit](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#limit(kotlin.Long))`(`maxSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the elements of this stream, truncated to be no longer than`maxSize`in length. |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [map](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#map(java.util.function.LongUnaryOperator))`(`mapper:` ` [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!`)` Returns a stream consisting of the results of applying the given function to the elements of this stream. |
+| abstract [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)! | [iterator](../java/util/stream/LongStream.md))`()` <br /> |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [limit](../java/util/stream/LongStream.md))`(`maxSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the elements of this stream, truncated to be no longer than`maxSize`in length. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [map](../java/util/stream/LongStream.md))`(`mapper:` ` [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!`)` Returns a stream consisting of the results of applying the given function to the elements of this stream. |
 | --- | --- |
-| open [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [mapMulti](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#mapMulti(java.util.stream.LongStream.LongMapMultiConsumer))`(`mapper:` ` [LongStream.LongMapMultiConsumer](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.LongMapMultiConsumer)!`)` Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | [mapToDouble](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#mapToDouble(java.util.function.LongToDoubleFunction))`(`mapper:` ` [LongToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/LongToDoubleFunction.html#)!`)` Returns a`DoubleStream`consisting of the results of applying the given function to the elements of this stream. |
-| abstract [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | [mapToInt](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#mapToInt(java.util.function.LongToIntFunction))`(`mapper:` ` [LongToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/LongToIntFunction.html#)!`)` Returns an`IntStream`consisting of the results of applying the given function to the elements of this stream. |
+| open [LongStream](../java/util/stream/LongStream.md)! | [mapMulti](../java/util/stream/LongStream.md))`(`mapper:` ` [LongStream.LongMapMultiConsumer](../java/util/stream/LongStream.LongMapMultiConsumer.md)!`)` Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [mapToDouble](../java/util/stream/LongStream.md))`(`mapper:` ` [LongToDoubleFunction](../java/util/function/LongToDoubleFunction.md)!`)` Returns a`DoubleStream`consisting of the results of applying the given function to the elements of this stream. |
+| abstract [IntStream](../java/util/stream/IntStream.md)! | [mapToInt](../java/util/stream/LongStream.md))`(`mapper:` ` [LongToIntFunction](../java/util/function/LongToIntFunction.md)!`)` Returns an`IntStream`consisting of the results of applying the given function to the elements of this stream. |
 | --- | --- |
-| abstract [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<U\>! | [mapToObj](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#mapToObj(java.util.function.LongFunction))`(`mapper:` ` [LongFunction](https://developer.android.com/reference/kotlin/java/util/function/LongFunction.html#)<out` `U>!`)` Returns an object-valued`Stream`consisting of the results of applying the given function to the elements of this stream. |
-| abstract [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | [max](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#max())`()` Returns an`OptionalLong`describing the maximum element of this stream, or an empty optional if this stream is empty. |
-| abstract [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | [min](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#min())`()` Returns an`OptionalLong`describing the minimum element of this stream, or an empty optional if this stream is empty. |
+| abstract [Stream](../java/util/stream/Stream.md)\<U\>! | [mapToObj](../java/util/stream/LongStream.md))`(`mapper:` ` [LongFunction](../java/util/function/LongFunction.md)<out` `U>!`)` Returns an object-valued`Stream`consisting of the results of applying the given function to the elements of this stream. |
+| abstract [OptionalLong](../java/util/OptionalLong.md)! | [max](../java/util/stream/LongStream.md))`()` Returns an`OptionalLong`describing the maximum element of this stream, or an empty optional if this stream is empty. |
+| abstract [OptionalLong](../java/util/OptionalLong.md)! | [min](../java/util/stream/LongStream.md))`()` Returns an`OptionalLong`describing the minimum element of this stream, or an empty optional if this stream is empty. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [noneMatch](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#noneMatch(java.util.function.LongPredicate))`(`predicate:` ` [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!`)` Returns whether no elements of this stream match the provided predicate. |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [of](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#of(kotlin.Long))`(`t:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential`LongStream`containing a single element. |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [of](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#of(kotlin.Long))`(`vararg` `values:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential ordered stream whose elements are the specified values. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [noneMatch](../java/util/stream/LongStream.md))`(`predicate:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns whether no elements of this stream match the provided predicate. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [of](../java/util/stream/LongStream.md))`(`t:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential`LongStream`containing a single element. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [of](../java/util/stream/LongStream.md))`(`vararg` `values:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential ordered stream whose elements are the specified values. |
 | --- | --- |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [parallel](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#parallel())`()` <br /> |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [peek](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#peek(java.util.function.LongConsumer))`(`action:` ` [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#)!`)` Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream. |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [range](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#range(kotlin.Long,%20kotlin.Long))`(`startInclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endExclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential ordered`LongStream`from`startInclusive`(inclusive) to`endExclusive`(exclusive) by an incremental step of`1`. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [parallel](../java/util/stream/LongStream.md))`()` <br /> |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [peek](../java/util/stream/LongStream.md))`(`action:` ` [LongConsumer](../java/util/function/LongConsumer.md)!`)` Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [range](../java/util/stream/LongStream.md))`(`startInclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endExclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential ordered`LongStream`from`startInclusive`(inclusive) to`endExclusive`(exclusive) by an incremental step of`1`. |
 | --- | --- |
-| openstatic [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [rangeClosed](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#rangeClosed(kotlin.Long,%20kotlin.Long))`(`startInclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endInclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential ordered`LongStream`from`startInclusive`(inclusive) to`endInclusive`(inclusive) by an incremental step of`1`. |
-| abstract [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | [reduce](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#reduce(java.util.function.LongBinaryOperator))`(`op:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!`)` Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns an`OptionalLong`describing the reduced value, if any. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduce](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#reduce(kotlin.Long,%20java.util.function.LongBinaryOperator))`(`identity:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `op:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!`)` Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using the provided identity value and an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns the reduced value. |
+| openstatic [LongStream](../java/util/stream/LongStream.md)! | [rangeClosed](../java/util/stream/LongStream.md))`(`startInclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endInclusive:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a sequential ordered`LongStream`from`startInclusive`(inclusive) to`endInclusive`(inclusive) by an incremental step of`1`. |
+| abstract [OptionalLong](../java/util/OptionalLong.md)! | [reduce](../java/util/stream/LongStream.md))`(`op:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!`)` Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using an [associative](../java/util/stream/_package.md) accumulation function, and returns an`OptionalLong`describing the reduced value, if any. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduce](../java/util/stream/LongStream.md))`(`identity:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `op:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!`)` Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using the provided identity value and an [associative](../java/util/stream/_package.md) accumulation function, and returns the reduced value. |
 | --- | --- |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [sequential](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#sequential())`()` <br /> |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [skip](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the remaining elements of this stream after discarding the first`n`elements of the stream. |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [sorted](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#sorted())`()` Returns a stream consisting of the elements of this stream in sorted order. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [sequential](../java/util/stream/LongStream.md))`()` <br /> |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [skip](../java/util/stream/LongStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the remaining elements of this stream after discarding the first`n`elements of the stream. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [sorted](../java/util/stream/LongStream.md))`()` Returns a stream consisting of the elements of this stream in sorted order. |
 | --- | --- |
-| abstract [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong.html#)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#spliterator())`()` <br /> |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [sum](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#sum())`()` Returns the sum of elements in this stream. |
-| abstract [LongSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics.html#)! | [summaryStatistics](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#summaryStatistics())`()` Returns a`LongSummaryStatistics`describing various summary data about the elements of this stream. |
+| abstract [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](../java/util/stream/LongStream.md))`()` <br /> |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [sum](../java/util/stream/LongStream.md))`()` Returns the sum of elements in this stream. |
+| abstract [LongSummaryStatistics](../java/util/LongSummaryStatistics.md)! | [summaryStatistics](../java/util/stream/LongStream.md))`()` Returns a`LongSummaryStatistics`describing various summary data about the elements of this stream. |
 | --- | --- |
-| open [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | [takeWhile](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#takeWhile(java.util.function.LongPredicate))`(`predicate:` ` [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!`)` Returns, if this stream is ordered, a stream consisting of the longest prefix of elements taken from this stream that match the given predicate. |
-| abstract [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [toArray](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#toArray())`()` Returns an array containing the elements of this stream. |
+| open [LongStream](../java/util/stream/LongStream.md)! | [takeWhile](../java/util/stream/LongStream.md))`(`predicate:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns, if this stream is ordered, a stream consisting of the longest prefix of elements taken from this stream that match the given predicate. |
+| abstract [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [toArray](../java/util/stream/LongStream.md))`()` Returns an array containing the elements of this stream. |
 
 | Inherited functions ||
 |---|---|
-| From class [BaseStream](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#close())`()` <br /> Closes this stream, causing all close handlers for this stream pipeline to be called. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParallel](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#isParallel())`()` <br /> Returns whether this stream, if a terminal operation were to be executed, would execute in parallel. Calling this method after invoking an terminal stream operation method may yield unpredictable results. <br /> | | S | [onClose](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#onClose(java.lang.Runnable))`(`closeHandler:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` <br /> Returns an equivalent stream with an additional close handler. Close handlers are run when the [close()](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#close())method is called on the stream, and are executed in the order they were added. All close handlers are run, even if earlier close handlers throw exceptions. If any close handler throws an exception, the first exception thrown will be relayed to the caller of`close()`, with any remaining exceptions added to that exception as suppressed exceptions (unless one of the remaining exceptions is the same exception as the first exception, since an exception cannot suppress itself.) May return itself. This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps). <br /> | | S | [unordered](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#unordered())`()` <br /> Returns an equivalent stream that is [unordered](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Ordering). May return itself, either because the stream was already unordered, or because the underlying stream state was modified to be unordered. This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps). <br /> | ||
+| From class [BaseStream](../java/util/stream/BaseStream.md) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/stream/BaseStream.md))`()` <br /> Closes this stream, causing all close handlers for this stream pipeline to be called. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParallel](../java/util/stream/BaseStream.md))`()` <br /> Returns whether this stream, if a terminal operation were to be executed, would execute in parallel. Calling this method after invoking an terminal stream operation method may yield unpredictable results. <br /> | | S | [onClose](../java/util/stream/BaseStream.md))`(`closeHandler:` ` [Runnable](../java/lang/Runnable.md)!`)` <br /> Returns an equivalent stream with an additional close handler. Close handlers are run when the [close()](../java/util/stream/BaseStream.md))method is called on the stream, and are executed in the order they were added. All close handlers are run, even if earlier close handlers throw exceptions. If any close handler throws an exception, the first exception thrown will be relayed to the caller of`close()`, with any remaining exceptions added to that exception as suppressed exceptions (unless one of the remaining exceptions is the same exception as the first exception, since an exception cannot suppress itself.) May return itself. This is an [intermediate operation](../java/util/stream/_package.md). <br /> | | S | [unordered](../java/util/stream/BaseStream.md))`()` <br /> Returns an equivalent stream that is [unordered](../java/util/stream/_package.md). May return itself, either because the stream was already unordered, or because the underlying stream state was modified to be unordered. This is an [intermediate operation](../java/util/stream/_package.md). <br /> | ||
 
 ## Public methods
 
@@ -111,11 +111,11 @@ abstract fun allMatch(predicate: LongPredicate!): Boolean
 
 Returns whether all elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then`true`is returned and the predicate is not evaluated.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements of this stream |
+| `predicate` | [LongPredicate](../java/util/function/LongPredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements of this stream |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -131,11 +131,11 @@ abstract fun anyMatch(predicate: LongPredicate!): Boolean
 
 Returns whether any elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then`false`is returned and the predicate is not evaluated.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements of this stream |
+| `predicate` | [LongPredicate](../java/util/function/LongPredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements of this stream |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
@@ -151,11 +151,11 @@ abstract fun asDoubleStream(): DoubleStream!
 
 Returns a`DoubleStream`consisting of the elements of this stream, converted to`double`.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | a`DoubleStream`consisting of the elements of this stream, converted to`double` |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | a`DoubleStream`consisting of the elements of this stream, converted to`double` |
 
 ### average
 
@@ -165,13 +165,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun average(): OptionalDouble!
 ```
 
-Returns an`OptionalDouble`describing the arithmetic mean of elements of this stream, or an empty optional if this stream is empty. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction).
+Returns an`OptionalDouble`describing the arithmetic mean of elements of this stream, or an empty optional if this stream is empty. This is a special case of a [reduction](../java/util/stream/_package.md).
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | an`OptionalDouble`containing the average element of this stream, or an empty optional if the stream is empty |
+| [OptionalDouble](../java/util/OptionalDouble.md)! | an`OptionalDouble`containing the average element of this stream, or an empty optional if the stream is empty |
 
 ### boxed
 
@@ -183,11 +183,11 @@ abstract fun boxed(): Stream<Long!>!
 
 Returns a`Stream`consisting of the elements of this stream, each boxed to a`Long`.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!>! | a`Stream`consistent of the elements of this stream, each boxed to`Long` |
+| [Stream](../java/util/stream/Stream.md)< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!>! | a`Stream`consistent of the elements of this stream, each boxed to`Long` |
 
 ### builder
 
@@ -201,7 +201,7 @@ Returns a builder for a`LongStream`.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|------------------|
-| [LongStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.Builder)! | a stream builder |
+| [LongStream.Builder](../java/util/stream/LongStream.Builder.md)! | a stream builder |
 
 ### collect
 
@@ -215,7 +215,7 @@ abstract fun <R : Any!> collect(
 ): R
 ```
 
-Performs a [mutable reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#MutableReduction) operation on the elements of this stream. A mutable reduction is one in which the reduced value is a mutable result container, such as an`ArrayList`, and elements are incorporated by updating the state of the result rather than by replacing the result. This produces a result equivalent to: 
+Performs a [mutable reduction](../java/util/stream/_package.md) operation on the elements of this stream. A mutable reduction is one in which the reduced value is a mutable result container, such as an`ArrayList`, and elements are incorporated by updating the state of the result rather than by replacing the result. This produces a result equivalent to: 
 
 ```kotlin
 <code>R result = supplier.get();
@@ -227,17 +227,17 @@ Performs a [mutable reduction](https://developer.android.com/reference/kotlin/ja
 
 <br />
 
-Like [reduce(long,java.util.function.LongBinaryOperator)](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#reduce(kotlin.Long,%20java.util.function.LongBinaryOperator)),`collect`operations can be parallelized without requiring additional synchronization.
+Like [reduce(long,java.util.function.LongBinaryOperator)](../java/util/stream/LongStream.md)),`collect`operations can be parallelized without requiring additional synchronization.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<R>` | the type of the mutable result container |
-| `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<R\>!:a function that creates a new mutable result container. For a parallel execution, this function may be called multiple times and must return a fresh value each time. |
-| `accumulator` | [ObjLongConsumer](https://developer.android.com/reference/kotlin/java/util/function/ObjLongConsumer.html#)\<R\>!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function that must fold an element into a result container. |
+| `supplier` | [Supplier](../java/util/function/Supplier.md)\<R\>!:a function that creates a new mutable result container. For a parallel execution, this function may be called multiple times and must return a fresh value each time. |
+| `accumulator` | [ObjLongConsumer](../java/util/function/ObjLongConsumer.md)\<R\>!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function that must fold an element into a result container. |
 | --- | --- |
-| `combiner` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<R,R\>!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function that accepts two partial result containers and merges them, which must be compatible with the accumulator function. The combiner function must fold the elements from the second result container into the first result container. |
+| `combiner` | [BiConsumer](../java/util/function/BiConsumer.md)\<R,R\>!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function that accepts two partial result containers and merges them, which must be compatible with the accumulator function. The combiner function must fold the elements from the second result container into the first result container. |
 
 | Return ||
 |---|-----------------------------|
@@ -245,7 +245,7 @@ This is a [terminal operation](https://developer.android.com/reference/kotlin/ja
 
 **See Also**
 
-- [java.util.stream.Stream#collect(Supplier, BiConsumer, BiConsumer)](https://developer.android.com/reference/kotlin/java/util/stream/Stream#collect(java.util.function.Supplier,%20java.util.function.BiConsumer,%20java.util.function.BiConsumer)) 
+- [java.util.stream.Stream#collect(Supplier, BiConsumer, BiConsumer)](../java/util/stream/Stream.md)) 
 
 ### concat
 
@@ -264,12 +264,12 @@ This method operates on the two input streams and binds each stream to its sourc
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------|
-| `a` | [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)!:the first stream |
-| `b` | [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)!:the second stream |
+| `a` | [LongStream](../java/util/stream/LongStream.md)!:the first stream |
+| `b` | [LongStream](../java/util/stream/LongStream.md)!:the second stream |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the concatenation of the two input streams |
+| [LongStream](../java/util/stream/LongStream.md)! | the concatenation of the two input streams |
 
 ### count
 
@@ -279,7 +279,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun count(): Long
 ```
 
-Returns the count of elements in this stream. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) and is equivalent to: 
+Returns the count of elements in this stream. This is a special case of a [reduction](../java/util/stream/_package.md) and is equivalent to: 
 
 ```kotlin
 <code>return map(e -&gt; 1L).sum();
@@ -288,7 +288,7 @@ Returns the count of elements in this stream. This is a special case of a [reduc
 
 <br />
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------|
@@ -304,11 +304,11 @@ abstract fun distinct(): LongStream!
 
 Returns a stream consisting of the distinct elements of this stream.
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### dropWhile
 
@@ -326,15 +326,15 @@ If this stream is unordered, and some (but not all) elements of this stream matc
 
 Independent of whether this stream is ordered or unordered if all elements of this stream match the given predicate then this operation drops all elements (the result is an empty stream), or if no elements of the stream match the given predicate then no elements are dropped (the result is the same as the input).
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements to determine the longest prefix of elements. |
+| `predicate` | [LongPredicate](../java/util/function/LongPredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements to determine the longest prefix of elements. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### empty
 
@@ -348,7 +348,7 @@ Returns an empty sequential`LongStream`.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | an empty sequential stream |
+| [LongStream](../java/util/stream/LongStream.md)! | an empty sequential stream |
 
 ### filter
 
@@ -360,15 +360,15 @@ abstract fun filter(predicate: LongPredicate!): LongStream!
 
 Returns a stream consisting of the elements of this stream that match the given predicate.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to each element to determine if it should be included |
+| `predicate` | [LongPredicate](../java/util/function/LongPredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to each element to determine if it should be included |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### findAny
 
@@ -378,15 +378,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun findAny(): OptionalLong!
 ```
 
-Returns an [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#) describing some element of the stream, or an empty`OptionalLong`if the stream is empty.
+Returns an [OptionalLong](../java/util/OptionalLong.md) describing some element of the stream, or an empty`OptionalLong`if the stream is empty.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
-The behavior of this operation is explicitly nondeterministic; it is free to select any element in the stream. This is to allow for maximal performance in parallel operations; the cost is that multiple invocations on the same source may not return the same result. (If a stable result is desired, use [findFirst()](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#findFirst())instead.)
+The behavior of this operation is explicitly nondeterministic; it is free to select any element in the stream. This is to allow for maximal performance in parallel operations; the cost is that multiple invocations on the same source may not return the same result. (If a stable result is desired, use [findFirst()](../java/util/stream/LongStream.md))instead.)
 
 | Return ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | an`OptionalLong`describing some element of this stream, or an empty`OptionalLong`if the stream is empty |
+| [OptionalLong](../java/util/OptionalLong.md)! | an`OptionalLong`describing some element of this stream, or an empty`OptionalLong`if the stream is empty |
 
 **See Also**
 
@@ -400,13 +400,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun findFirst(): OptionalLong!
 ```
 
-Returns an [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#) describing the first element of this stream, or an empty`OptionalLong`if the stream is empty. If the stream has no encounter order, then any element may be returned.
+Returns an [OptionalLong](../java/util/OptionalLong.md) describing the first element of this stream, or an empty`OptionalLong`if the stream is empty. If the stream has no encounter order, then any element may be returned.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | an`OptionalLong`describing the first element of this stream, or an empty`OptionalLong`if the stream is empty |
+| [OptionalLong](../java/util/OptionalLong.md)! | an`OptionalLong`describing the first element of this stream, or an empty`OptionalLong`if the stream is empty |
 
 ### flatMap
 
@@ -416,21 +416,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun flatMap(mapper: LongFunction<out LongStream!>!): LongStream!
 ```
 
-Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. Each mapped stream is [closed](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#close())after its contents have been placed into this stream. (If a mapped stream is`null`an empty stream is used, instead.)
+Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. Each mapped stream is [closed](../java/util/stream/BaseStream.md))after its contents have been placed into this stream. (If a mapped stream is`null`an empty stream is used, instead.)
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [LongFunction](https://developer.android.com/reference/kotlin/java/util/function/LongFunction.html#)\<out [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)!\>!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element which produces a`LongStream`of new values |
+| `mapper` | [LongFunction](../java/util/function/LongFunction.md)\<out [LongStream](../java/util/stream/LongStream.md)!\>!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element which produces a`LongStream`of new values |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 **See Also**
 
-- [java.util.stream.Stream#flatMap(Function)](https://developer.android.com/reference/kotlin/java/util/stream/Stream#flatMap(java.util.function.Function)) 
+- [java.util.stream.Stream#flatMap(Function)](../java/util/stream/Stream.md)) 
 
 ### forEach
 
@@ -442,13 +442,13 @@ abstract fun forEach(action: LongConsumer!): Unit
 
 Performs an action for each element of this stream.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 For parallel stream pipelines, this operation does*not*guarantee to respect the encounter order of the stream, as doing so would sacrifice the benefit of parallelism. For any given element, the action may be performed at whatever time and in whatever thread the library chooses. If the action accesses shared state, it is responsible for providing the required synchronization.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference) action to perform on the elements |
+| `action` | [LongConsumer](../java/util/function/LongConsumer.md)!:a [non-interfering](../java/util/stream/_package.md) action to perform on the elements |
 
 ### forEachOrdered
 
@@ -460,15 +460,15 @@ abstract fun forEachOrdered(action: LongConsumer!): Unit
 
 Performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference) action to perform on the elements |
+| `action` | [LongConsumer](../java/util/function/LongConsumer.md)!:a [non-interfering](../java/util/stream/_package.md) action to perform on the elements |
 
 **See Also**
 
-- [#forEach(LongConsumer)](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#forEach(java.util.function.LongConsumer)) 
+- [#forEach(LongConsumer)](../java/util/stream/LongStream.md)) 
 
 ### generate
 
@@ -482,11 +482,11 @@ Returns an infinite sequential unordered stream where each element is generated 
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `s` | [LongSupplier](https://developer.android.com/reference/kotlin/java/util/function/LongSupplier.html#)!:the`LongSupplier`for generated elements |
+| `s` | [LongSupplier](../java/util/function/LongSupplier.md)!:the`LongSupplier`for generated elements |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a new infinite sequential unordered`LongStream` |
+| [LongStream](../java/util/stream/LongStream.md)! | a new infinite sequential unordered`LongStream` |
 
 ### iterate
 
@@ -513,18 +513,18 @@ Returns a sequential ordered`LongStream`produced by iterative application of the
 
 The resulting sequence may be empty if the`hasNext`predicate does not hold on the seed value. Otherwise the first element will be the supplied`seed`value, the next element (if present) will be the result of applying the`next`function to the`seed`value, and so on iteratively until the`hasNext`predicate indicates that the stream should terminate.
 
-The action of applying the`hasNext`predicate to an element [*happens-before*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary.html#MemoryVisibility) the action of applying the`next`function to that element. The action of applying the`next`function for one element*happens-before* the action of applying the`hasNext`predicate for subsequent elements. For any given element an action may be performed in whatever thread the library chooses.
+The action of applying the`hasNext`predicate to an element [*happens-before*](../java/util/concurrent/_package.md) the action of applying the`next`function to that element. The action of applying the`next`function for one element*happens-before* the action of applying the`hasNext`predicate for subsequent elements. For any given element an action may be performed in whatever thread the library chooses.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `seed` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the initial element |
-| `hasNext` | [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!:a predicate to apply to elements to determine when the stream must terminate. |
-| `next` | [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!:a function to be applied to the previous element to produce a new element |
+| `hasNext` | [LongPredicate](../java/util/function/LongPredicate.md)!:a predicate to apply to elements to determine when the stream must terminate. |
+| `next` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!:a function to be applied to the previous element to produce a new element |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|------------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a new sequential`LongStream` |
+| [LongStream](../java/util/stream/LongStream.md)! | a new sequential`LongStream` |
 
 ### iterate
 
@@ -541,16 +541,16 @@ Returns an infinite sequential ordered`LongStream`produced by iterative applicat
 
 The first element (position`0`) in the`LongStream`will be the provided`seed`. For`n > 0`, the element at position`n`, will be the result of applying the function`f`to the element at position`n - 1`.
 
-The action of applying`f`for one element [*happens-before*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary.html#MemoryVisibility) the action of applying`f`for subsequent elements. For any given element the action may be performed in whatever thread the library chooses.
+The action of applying`f`for one element [*happens-before*](../java/util/concurrent/_package.md) the action of applying`f`for subsequent elements. For any given element the action may be performed in whatever thread the library chooses.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `seed` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the initial element |
-| `f` | [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!:a function to be applied to the previous element to produce a new element |
+| `f` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!:a function to be applied to the previous element to produce a new element |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|------------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a new sequential`LongStream` |
+| [LongStream](../java/util/stream/LongStream.md)! | a new sequential`LongStream` |
 
 ### iterator
 
@@ -562,7 +562,7 @@ abstract fun iterator(): PrimitiveIterator.OfLong!
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [PrimitiveIterator.OfLong](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfLong.html#)! | the element iterator for this stream |
+| [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)! | the element iterator for this stream |
 
 ### limit
 
@@ -574,7 +574,7 @@ abstract fun limit(maxSize: Long): LongStream!
 
 Returns a stream consisting of the elements of this stream, truncated to be no longer than`maxSize`in length.
 
-This is a [short-circuiting stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -582,7 +582,7 @@ This is a [short-circuiting stateful intermediate operation](https://developer.a
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 | Exceptions ||
 |--------------------------------------|------------------------|
@@ -598,15 +598,15 @@ abstract fun map(mapper: LongUnaryOperator!): LongStream!
 
 Returns a stream consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [LongUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### mapMulti
 
@@ -616,23 +616,23 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun mapMulti(mapper: LongStream.LongMapMultiConsumer!): LongStream!
 ```
 
-Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. Replacement is performed by applying the provided mapping function to each element in conjunction with a [consumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#) argument that accepts replacement elements. The mapping function calls the consumer zero or more times to provide the replacement elements.
+Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. Replacement is performed by applying the provided mapping function to each element in conjunction with a [consumer](../java/util/function/LongConsumer.md) argument that accepts replacement elements. The mapping function calls the consumer zero or more times to provide the replacement elements.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
-If the [consumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#) argument is used outside the scope of its application to the mapping function, the results are undefined.
+If the [consumer](../java/util/function/LongConsumer.md) argument is used outside the scope of its application to the mapping function, the results are undefined.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [LongStream.LongMapMultiConsumer](https://developer.android.com/reference/kotlin/java/util/stream/LongStream.LongMapMultiConsumer)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function that generates replacement elements |
+| `mapper` | [LongStream.LongMapMultiConsumer](../java/util/stream/LongStream.LongMapMultiConsumer.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function that generates replacement elements |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 **See Also**
 
-- [java.util.stream.Stream#mapMulti](https://developer.android.com/reference/kotlin/java/util/stream/Stream#mapMulti(java.util.function.BiConsumer)) 
+- [java.util.stream.Stream#mapMulti](../java/util/stream/Stream.md)) 
 
 ### mapToDouble
 
@@ -644,15 +644,15 @@ abstract fun mapToDouble(mapper: LongToDoubleFunction!): DoubleStream!
 
 Returns a`DoubleStream`consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [LongToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/LongToDoubleFunction.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [LongToDoubleFunction](../java/util/function/LongToDoubleFunction.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 ### mapToInt
 
@@ -664,15 +664,15 @@ abstract fun mapToInt(mapper: LongToIntFunction!): IntStream!
 
 Returns an`IntStream`consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [LongToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/LongToIntFunction.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [LongToIntFunction](../java/util/function/LongToIntFunction.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------|
-| [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | the new stream |
+| [IntStream](../java/util/stream/IntStream.md)! | the new stream |
 
 ### mapToObj
 
@@ -684,16 +684,16 @@ abstract fun <U : Any!> mapToObj(mapper: LongFunction<out U>!): Stream<U>!
 
 Returns an object-valued`Stream`consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<U>` | the element type of the new stream |
-| `mapper` | [LongFunction](https://developer.android.com/reference/kotlin/java/util/function/LongFunction.html#)\<outU\>!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [LongFunction](../java/util/function/LongFunction.md)\<outU\>!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------|
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)<U>! | the new stream |
+| [Stream](../java/util/stream/Stream.md)<U>! | the new stream |
 
 ### max
 
@@ -703,7 +703,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun max(): OptionalLong!
 ```
 
-Returns an`OptionalLong`describing the maximum element of this stream, or an empty optional if this stream is empty. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) and is equivalent to: 
+Returns an`OptionalLong`describing the maximum element of this stream, or an empty optional if this stream is empty. This is a special case of a [reduction](../java/util/stream/_package.md) and is equivalent to: 
 
 ```kotlin
 <code>return reduce(Long::max);
@@ -712,11 +712,11 @@ Returns an`OptionalLong`describing the maximum element of this stream, or an emp
 
 <br />
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | an`OptionalLong`containing the maximum element of this stream, or an empty`OptionalLong`if the stream is empty |
+| [OptionalLong](../java/util/OptionalLong.md)! | an`OptionalLong`containing the maximum element of this stream, or an empty`OptionalLong`if the stream is empty |
 
 ### min
 
@@ -726,7 +726,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun min(): OptionalLong!
 ```
 
-Returns an`OptionalLong`describing the minimum element of this stream, or an empty optional if this stream is empty. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) and is equivalent to: 
+Returns an`OptionalLong`describing the minimum element of this stream, or an empty optional if this stream is empty. This is a special case of a [reduction](../java/util/stream/_package.md) and is equivalent to: 
 
 ```kotlin
 <code>return reduce(Long::min);
@@ -735,11 +735,11 @@ Returns an`OptionalLong`describing the minimum element of this stream, or an emp
 
 <br />
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | an`OptionalLong`containing the minimum element of this stream, or an empty`OptionalLong`if the stream is empty |
+| [OptionalLong](../java/util/OptionalLong.md)! | an`OptionalLong`containing the minimum element of this stream, or an empty`OptionalLong`if the stream is empty |
 
 ### noneMatch
 
@@ -751,11 +751,11 @@ abstract fun noneMatch(predicate: LongPredicate!): Boolean
 
 Returns whether no elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then`true`is returned and the predicate is not evaluated.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements of this stream |
+| `predicate` | [LongPredicate](../java/util/function/LongPredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements of this stream |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -777,7 +777,7 @@ Returns a sequential`LongStream`containing a single element.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a singleton sequential stream |
+| [LongStream](../java/util/stream/LongStream.md)! | a singleton sequential stream |
 
 ### of
 
@@ -795,7 +795,7 @@ Returns a sequential ordered stream whose elements are the specified values.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### parallel
 
@@ -807,7 +807,7 @@ abstract fun parallel(): LongStream!
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a parallel stream |
+| [LongStream](../java/util/stream/LongStream.md)! | a parallel stream |
 
 ### peek
 
@@ -819,17 +819,17 @@ abstract fun peek(action: LongConsumer!): LongStream!
 
 Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 For parallel stream pipelines, the action may be called at whatever time and in whatever thread the element is made available by the upstream operation. If the action modifies shared state, it is responsible for providing the required synchronization.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [LongConsumer](https://developer.android.com/reference/kotlin/java/util/function/LongConsumer.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference) action to perform on the elements as they are consumed from the stream |
+| `action` | [LongConsumer](../java/util/function/LongConsumer.md)!:a [non-interfering](../java/util/stream/_package.md) action to perform on the elements as they are consumed from the stream |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### range
 
@@ -851,7 +851,7 @@ Returns a sequential ordered`LongStream`from`startInclusive`(inclusive) to`endEx
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a sequential`LongStream`for the range of`long`elements |
+| [LongStream](../java/util/stream/LongStream.md)! | a sequential`LongStream`for the range of`long`elements |
 
 ### rangeClosed
 
@@ -873,7 +873,7 @@ Returns a sequential ordered`LongStream`from`startInclusive`(inclusive) to`endIn
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a sequential`LongStream`for the range of`long`elements |
+| [LongStream](../java/util/stream/LongStream.md)! | a sequential`LongStream`for the range of`long`elements |
 
 ### reduce
 
@@ -883,7 +883,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun reduce(op: LongBinaryOperator!): OptionalLong!
 ```
 
-Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns an`OptionalLong`describing the reduced value, if any. This is equivalent to: 
+Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using an [associative](../java/util/stream/_package.md) accumulation function, and returns an`OptionalLong`describing the reduced value, if any. This is equivalent to: 
 
 ```kotlin
 <code>boolean foundAny = false;
@@ -903,21 +903,21 @@ but is not constrained to execute sequentially.
 
 <br />
 
-The`accumulator`function must be an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) function.
+The`accumulator`function must be an [associative](../java/util/stream/_package.md) function.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `op` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function for combining two values |
+| `op` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function for combining two values |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------|
-| [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong.html#)! | the result of the reduction |
+| [OptionalLong](../java/util/OptionalLong.md)! | the result of the reduction |
 
 **See Also**
 
-- [#reduce(long, LongBinaryOperator)](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#reduce(kotlin.Long,%20java.util.function.LongBinaryOperator)) 
+- [#reduce(long, LongBinaryOperator)](../java/util/stream/LongStream.md)) 
 
 ### reduce
 
@@ -930,7 +930,7 @@ abstract fun reduce(
 ): Long
 ```
 
-Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using the provided identity value and an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns the reduced value. This is equivalent to: 
+Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using the provided identity value and an [associative](../java/util/stream/_package.md) accumulation function, and returns the reduced value. This is equivalent to: 
 
 ```kotlin
 <code>long result = identity;
@@ -943,14 +943,14 @@ but is not constrained to execute sequentially.
 
 <br />
 
-The`identity`value must be an identity for the accumulator function. This means that for all`x`,`accumulator.apply(identity, x)`is equal to`x`. The`accumulator`function must be an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) function.
+The`identity`value must be an identity for the accumulator function. This means that for all`x`,`accumulator.apply(identity, x)`is equal to`x`. The`accumulator`function must be an [associative](../java/util/stream/_package.md) function.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `identity` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the identity value for the accumulating function |
-| `op` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function for combining two values |
+| `op` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function for combining two values |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------|
@@ -973,7 +973,7 @@ abstract fun sequential(): LongStream!
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | a sequential stream |
+| [LongStream](../java/util/stream/LongStream.md)! | a sequential stream |
 
 ### skip
 
@@ -985,7 +985,7 @@ abstract fun skip(n: Long): LongStream!
 
 Returns a stream consisting of the remaining elements of this stream after discarding the first`n`elements of the stream. If this stream contains fewer than`n`elements then an empty stream will be returned.
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------|
@@ -993,7 +993,7 @@ This is a [stateful intermediate operation](https://developer.android.com/refere
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 | Exceptions ||
 |--------------------------------------|------------------|
@@ -1009,11 +1009,11 @@ abstract fun sorted(): LongStream!
 
 Returns a stream consisting of the elements of this stream in sorted order.
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### spliterator
 
@@ -1025,7 +1025,7 @@ abstract fun spliterator(): Spliterator.OfLong!
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong.html#)! | the element spliterator for this stream |
+| [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | the element spliterator for this stream |
 
 ### sum
 
@@ -1035,7 +1035,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun sum(): Long
 ```
 
-Returns the sum of elements in this stream. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) and is equivalent to: 
+Returns the sum of elements in this stream. This is a special case of a [reduction](../java/util/stream/_package.md) and is equivalent to: 
 
 ```kotlin
 <code>return reduce(0, Long::sum);
@@ -1044,7 +1044,7 @@ Returns the sum of elements in this stream. This is a special case of a [reducti
 
 <br />
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------|
@@ -1058,13 +1058,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun summaryStatistics(): LongSummaryStatistics!
 ```
 
-Returns a`LongSummaryStatistics`describing various summary data about the elements of this stream. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction).
+Returns a`LongSummaryStatistics`describing various summary data about the elements of this stream. This is a special case of a [reduction](../java/util/stream/_package.md).
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [LongSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics.html#)! | a`LongSummaryStatistics`describing various summary data about the elements of this stream |
+| [LongSummaryStatistics](../java/util/LongSummaryStatistics.md)! | a`LongSummaryStatistics`describing various summary data about the elements of this stream |
 
 ### takeWhile
 
@@ -1082,15 +1082,15 @@ If this stream is unordered, and some (but not all) elements of this stream matc
 
 Independent of whether this stream is ordered or unordered if all elements of this stream match the given predicate then this operation takes all elements (the result is the same as the input), or if no elements of the stream match the given predicate then no elements are taken (the result is an empty stream).
 
-This is a [short-circuiting stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [LongPredicate](https://developer.android.com/reference/kotlin/java/util/function/LongPredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements to determine the longest prefix of elements. |
+| `predicate` | [LongPredicate](../java/util/function/LongPredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements to determine the longest prefix of elements. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream#)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### toArray
 
@@ -1102,7 +1102,7 @@ abstract fun toArray(): LongArray!
 
 Returns an array containing the elements of this stream.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------|

@@ -8,11 +8,11 @@ abstract class AppFunctionService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.appfunctions.AppFunctionService](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#) |
+| | | | ↳ | [android.app.appfunctions.AppFunctionService](../android/app/appfunctions/AppFunctionService.md) |
 
 Extend this class to implement app functions, that can be executed by android.app.appfunctions.AppFunctionManager#executeAppFunction.
 
@@ -497,7 +497,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1073,7 +1073,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
+| [IBinder](../android/os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#onExecuteFunction(android.app.appfunctions.ExecuteAppFunctionRequest,%20kotlin.String,%20android.content.pm.SigningInfo,%20android.os.CancellationSignal,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest, callingPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, callingPackageSigningInfo: https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse!, https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException!>)` Called by the system following an android. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2540,7 +2540,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2581,9 +2581,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2807,7 +2807,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: This value may be `null`. |
+| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2838,9 +2838,9 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `request` | [ExecuteAppFunctionRequest](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest): The function execution request. This value cannot be `null`. |
+| `request` | [ExecuteAppFunctionRequest](../android/app/appfunctions/ExecuteAppFunctionRequest.md): The function execution request. This value cannot be `null`. |
 | `callingPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an empty string. This value cannot be `null`. |
-| `callingPackageSigningInfo` | [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#): The signing information of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an unknown signing info. This value cannot be `null`. |
+| `callingPackageSigningInfo` | [SigningInfo](../android/content/pm/SigningInfo.md): The signing information of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an unknown signing info. This value cannot be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#): A signal to cancel the execution. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [ExecuteAppFunctionResponse](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse)!, [AppFunctionException](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException)!\>: A callback to report back the result or error. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): A signal to cancel the execution. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](../android/app/appfunctions/ExecuteAppFunctionResponse.md)!, [AppFunctionException](../android/app/appfunctions/AppFunctionException.md)!\>: A callback to report back the result or error. This value cannot be `null`. |

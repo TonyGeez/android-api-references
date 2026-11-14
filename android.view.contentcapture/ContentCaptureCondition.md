@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # ContentCaptureCondition
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/contentcapture/ContentCaptureCondition "View this page in Java")
+Kotlin | [Java](../android/view/contentcapture/ContentCaptureCondition.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ContentCaptureCondition : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.contentcapture.ContentCaptureCondition](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#) |
+| ↳ | [android.view.contentcapture.ContentCaptureCondition](../android/view/contentcapture/ContentCaptureCondition.md) |
 
 Defines a condition for when content capture should be allowed.
 
@@ -37,7 +37,7 @@ See `https://developer.android.com/reference/kotlin/android/view/contentcapture/
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#getFlags()()` Gets the flags associates with this condition. |
 | --- | --- |
-| [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#getLocusId()()` Gets the `LocusId` per se. |
+| [LocusId](../android/content/LocusId.md) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#getLocusId()()` Gets the `LocusId` per se. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -45,7 +45,7 @@ See `https://developer.android.com/reference/kotlin/android/view/contentcapture/
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ContentCaptureCondition](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#)!\> | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentCaptureCondition](../android/view/contentcapture/ContentCaptureCondition.md)!\> | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -77,7 +77,7 @@ Default constructor.
 
 | Parameters ||
 |---|---|
-| `locusId` | [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#): id of the condition, as defined by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#getLocusId()`. This value cannot be `null`. |
+| `locusId` | [LocusId](../android/content/LocusId.md): id of the condition, as defined by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#getLocusId()`. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): either `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` (to use a regular expression match) or `0` (in which case the `LocusId` must be an exact match of the `LocusId` used in the `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext`). Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` |
 
 ## Public methods
@@ -203,7 +203,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `parcel` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

@@ -8,8 +8,8 @@ open class DeviceAdminReceiver : BroadcastReceiver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#) ||
-| | ↳ | [android.app.admin.DeviceAdminReceiver](https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#) |
+| ↳ | [android.content.BroadcastReceiver](../android/content/BroadcastReceiver.md) ||
+| | ↳ | [android.app.admin.DeviceAdminReceiver](../android/app/admin/DeviceAdminReceiver.md) |
 
 Base class for implementing a device administration component. This class provides a convenience for interpreting the raw intent actions that are sent by the system.
 
@@ -63,8 +63,8 @@ The meta-data referenced here provides addition information specific to the devi
 
 | Public methods ||
 |---|---|
-| open [DevicePolicyManager](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#getManager(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Retrieve the DevicePolicyManager interface for this administrator to work with the system. |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#getWho(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Retrieve the ComponentName describing who this device administrator is, for use in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` APIs that require the administrator to identify itself. |
+| open [DevicePolicyManager](../android/app/admin/DevicePolicyManager.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#getManager(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Retrieve the DevicePolicyManager interface for this administrator to work with the system. |
+| open [ComponentName](../android/content/ComponentName.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#getWho(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Retrieve the ComponentName describing who this device administrator is, for use in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` APIs that require the administrator to identify itself. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onBugreportFailed(android.content.Context,%20android.content.Intent,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, failureCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the bugreport collection flow has failed. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onBugreportShared(android.content.Context,%20android.content.Intent,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, bugreportHash: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called when the bugreport has been shared with the device administrator app. |
@@ -559,7 +559,7 @@ Retrieve the DevicePolicyManager interface for this administrator to work with t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -577,7 +577,7 @@ Retrieve the ComponentName describing who this device administrator is, for use 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -601,8 +601,8 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `failureCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): int containing failure code. One of `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FAILED_COMPLETING:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FAILED_COMPLETING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE:kotlin.Int` |
 | --- | --- |
 
@@ -628,8 +628,8 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. Contains the URI of the bugreport file (with MIME type "application/vnd.android.bugreport"), that can be accessed by calling `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. Contains the URI of the bugreport file (with MIME type "application/vnd.android.bugreport"), that can be accessed by calling `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` This value cannot be `null`. |
 | `bugreportHash` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): SHA-256 hash of the bugreport file. This value cannot be `null`. |
 | --- | --- |
 
@@ -654,8 +654,8 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 **See Also**
 
@@ -679,11 +679,11 @@ Allows this receiver to select the alias for a private key and certificate pair 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the app asking for the private key and certificate pair. |
 | --- | --- |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The URI to authenticate, may be null. |
+| `uri` | [Uri](../android/net/Uri.md)?: The URI to authenticate, may be null. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The alias preselected by the client, or null. |
 
 | Return ||
@@ -709,8 +709,8 @@ Default implementation acknowledges compliance immediately. DPC may prefer to ov
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 **See Also**
 
@@ -733,8 +733,8 @@ Called when the user has asked to disable the administrator, as a result of rece
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -755,8 +755,8 @@ Called prior to the administrator being disabled, as a result of receiving `http
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onEnabled
 
@@ -775,8 +775,8 @@ If the admin is activated by a device owner, then the intent may contain private
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onLockTaskModeEntering
 
@@ -794,8 +794,8 @@ Called when a device is entering lock task mode.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The authorized package using lock task mode. This value cannot be `null`. |
 | --- | --- |
 
@@ -814,8 +814,8 @@ Called when a device is exiting lock task mode.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onNetworkLogsAvailable
 
@@ -840,8 +840,8 @@ This callback is triggered by a foreground broadcast and the app should ensure t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `batchToken` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The token representing the current batch of network logs. |
 | --- | --- |
 | `networkLogsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The total count of events in the current batch of network logs. Value is 1 or greater |
@@ -868,7 +868,7 @@ Called to notify the state of operations that can be unsafe to execute has chang
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
 | `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the reason an operation could be unsafe. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#OPERATION_SAFETY_REASON_DRIVING_DISTRACTION:kotlin.Int` |
 | `isSafe` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the operation is safe to be executed. |
 | --- | --- |
@@ -891,8 +891,8 @@ Called after the user has changed their device or profile challenge password, as
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onPasswordChanged
 
@@ -910,9 +910,9 @@ Called after the user has changed their device or profile challenge password, as
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The user or profile for whom the password changed. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The user or profile for whom the password changed. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
 | --- | --- |
 
 ### onPasswordExpiring
@@ -939,8 +939,8 @@ The admin should be sure to take down any notifications it posted in response to
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onPasswordExpiring
 
@@ -964,9 +964,9 @@ The admin should be sure to take down any notifications it posted in response to
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The user or profile for whom the password is expiring. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The user or profile for whom the password is expiring. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
 | --- | --- |
 
 ### onPasswordFailed
@@ -987,8 +987,8 @@ Called after the user has failed at entering their device or profile challenge p
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onPasswordFailed
 
@@ -1006,9 +1006,9 @@ Called after the user has failed at entering their device or profile challenge p
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The user or profile for whom the password check failed. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The user or profile for whom the password check failed. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
 | --- | --- |
 
 ### onPasswordSucceeded
@@ -1029,8 +1029,8 @@ Called after the user has succeeded at entering their device or profile challeng
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onPasswordSucceeded
 
@@ -1048,9 +1048,9 @@ Called after the user has succeeded at entering their device or profile challeng
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The user of profile for whom the password check succeeded. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): The user of profile for whom the password check succeeded. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
 | --- | --- |
 
 ### onProfileProvisioningComplete
@@ -1078,8 +1078,8 @@ The `Intent` may include any of the extras specified for `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onReadyForUserInitialization
 
@@ -1099,8 +1099,8 @@ Called during provisioning of a managed device to allow the device initializer t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 ### onReceive
 
@@ -1117,8 +1117,8 @@ Intercept standard device administrator broadcasts. Implementations should not o
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
 
 ### onSecurityLogsAvailable
 
@@ -1143,8 +1143,8 @@ This callback is triggered by a foreground broadcast and the app should ensure t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 **See Also**
 
@@ -1172,8 +1172,8 @@ To get further information about a pending system update (for example, whether o
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `receivedTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time as given by `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()` indicating when the current pending update was first available. -1 if no pending update is available. |
 | --- | --- |
 
@@ -1203,8 +1203,8 @@ This can be used when transferring both device and profile ownership when using 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): the `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the affiliated user. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
+| `user` | [UserHandle](../android/os/UserHandle.md): the `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the affiliated user. This value cannot be `null`. |
 
 **See Also**
 
@@ -1227,8 +1227,8 @@ The `bundle` parameter allows the original owner to pass data to the new one.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
-| `bundle` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)?: the data to be passed to the new owner. This value may be `null`. |
+| `context` | [Context](../android/content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
+| `bundle` | [PersistableBundle](../android/os/PersistableBundle.md)?: the data to be passed to the new owner. This value may be `null`. |
 
 ### onUserAdded
 
@@ -1248,9 +1248,9 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `addedUser` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been added. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `addedUser` | [UserHandle](../android/os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been added. This value cannot be `null`. |
 | --- | --- |
 
 ### onUserRemoved
@@ -1271,9 +1271,9 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `removedUser` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been removed. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `removedUser` | [UserHandle](../android/os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been removed. This value cannot be `null`. |
 | --- | --- |
 
 ### onUserStarted
@@ -1294,9 +1294,9 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `startedUser` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been started. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `startedUser` | [UserHandle](../android/os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been started. This value cannot be `null`. |
 | --- | --- |
 
 ### onUserStopped
@@ -1317,9 +1317,9 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `stoppedUser` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been stopped. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `stoppedUser` | [UserHandle](../android/os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been stopped. This value cannot be `null`. |
 | --- | --- |
 
 ### onUserSwitched
@@ -1340,7 +1340,7 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `switchedUser` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been switched to. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `switchedUser` | [UserHandle](../android/os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been switched to. This value cannot be `null`. |
 | --- | --- |

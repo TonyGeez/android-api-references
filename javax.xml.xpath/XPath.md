@@ -6,7 +6,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface XPath
 ```
 
-| [javax.xml.xpath.XPath](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#) |
+| [javax.xml.xpath.XPath](../javax/xml/xpath/XPath.md) |
 
 `XPath` provides access to the XPath evaluation environment and expressions.
 
@@ -23,16 +23,16 @@ interface XPath
 
 | Public methods ||
 |---|---|
-| abstract [XPathExpression](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathExpression)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#compile(kotlin.String)(expression: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Compile an XPath expression for later evaluation. |
+| abstract [XPathExpression](../javax/xml/xpath/XPathExpression.md)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#compile(kotlin.String)(expression: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Compile an XPath expression for later evaluation. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#evaluate(kotlin.String,%20kotlin.Any)(expression: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, item: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Evaluate an XPath expression in the specified context and return the result as a `String`. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#evaluate(kotlin.String,%20kotlin.Any,%20javax.xml.namespace.QName)(expression: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, item: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, returnType: https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#!)` Evaluate an `XPath` expression in the specified context and return the result as the specified type. |
 | --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#evaluate(kotlin.String,%20org.xml.sax.InputSource)(expression: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, source: https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#!)` Evaluate an XPath expression in the context of the specified `InputSource` and return the result as a `String`. |
 | abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#evaluate(kotlin.String,%20org.xml.sax.InputSource,%20javax.xml.namespace.QName)(expression: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, source: https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#!, returnType: https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#!)` Evaluate an XPath expression in the context of the specified `InputSource` and return the result as the specified type. |
-| abstract [NamespaceContext](https://developer.android.com/reference/kotlin/javax/xml/namespace/NamespaceContext.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#getNamespaceContext()()` Return the current namespace context. |
+| abstract [NamespaceContext](../javax/xml/namespace/NamespaceContext.md)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#getNamespaceContext()()` Return the current namespace context. |
 | --- | --- |
-| abstract [XPathFunctionResolver](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionResolver)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#getXPathFunctionResolver()()` Return the current function resolver. |
-| abstract [XPathVariableResolver](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathVariableResolver)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#getXPathVariableResolver()()` Return the current variable resolver. |
+| abstract [XPathFunctionResolver](../javax/xml/xpath/XPathFunctionResolver.md)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#getXPathFunctionResolver()()` Return the current function resolver. |
+| abstract [XPathVariableResolver](../javax/xml/xpath/XPathVariableResolver.md)! | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#getXPathVariableResolver()()` Return the current variable resolver. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#reset()()` Reset this `XPath` to its original configuration. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#setNamespaceContext(javax.xml.namespace.NamespaceContext)(nsContext: https://developer.android.com/reference/kotlin/javax/xml/namespace/NamespaceContext.html#!)` Establish a namespace context. |
@@ -84,7 +84,7 @@ Evaluate an XPath expression in the specified context and return the result as a
 
 This method calls `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#evaluate(kotlin.String,%20kotlin.Any,%20javax.xml.namespace.QName)` with a `returnType` of `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#STRING:javax.xml.namespace.QName`.
 
-See [Evaluation of XPath Expressions](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#XPath-evaluation) for context item evaluation, variable, function and QName resolution and return type conversion.
+See [Evaluation of XPath Expressions](../javax/xml/xpath/XPath.md) for context item evaluation, variable, function and QName resolution and return type conversion.
 
 If a `null` value is provided for `item`, an empty document will be used for the context. If `expression` is `null`, then a `NullPointerException` is thrown.
 
@@ -116,7 +116,7 @@ abstract fun evaluate(
 
 Evaluate an `XPath` expression in the specified context and return the result as the specified type.
 
-See [Evaluation of XPath Expressions](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#XPath-evaluation) for context item evaluation, variable, function and `QName` resolution and return type conversion.
+See [Evaluation of XPath Expressions](../javax/xml/xpath/XPath.md) for context item evaluation, variable, function and `QName` resolution and return type conversion.
 
 If `returnType` is not one of the types defined in `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants` ( `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#NUMBER:javax.xml.namespace.QName`, `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#STRING:javax.xml.namespace.QName`, `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#BOOLEAN:javax.xml.namespace.QName`, `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#NODE:javax.xml.namespace.QName` or `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#NODESET:javax.xml.namespace.QName`) then an `IllegalArgumentException` is thrown.
 
@@ -126,7 +126,7 @@ If a `null` value is provided for `item`, an empty document will be used for the
 |---|---|
 | `expression` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The XPath expression. |
 | `item` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The starting context (node or node list, for example). |
-| `returnType` | [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)!: The desired return type. |
+| `returnType` | [QName](../javax/xml/namespace/QName.md)!: The desired return type. |
 | --- | --- |
 
 | Return ||
@@ -155,14 +155,14 @@ Evaluate an XPath expression in the context of the specified `InputSource` and r
 
 This method calls `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#evaluate(kotlin.String,%20org.xml.sax.InputSource,%20javax.xml.namespace.QName)` with a `returnType` of `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants#STRING:javax.xml.namespace.QName`.
 
-See [Evaluation of XPath Expressions](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#XPath-evaluation) for context item evaluation, variable, function and QName resolution and return type conversion.
+See [Evaluation of XPath Expressions](../javax/xml/xpath/XPath.md) for context item evaluation, variable, function and QName resolution and return type conversion.
 
 If `expression` or `source` is `null`, then a `NullPointerException` is thrown.
 
 | Parameters ||
 |---|---|
 | `expression` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The XPath expression. |
-| `source` | [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!: The `InputSource` of the document to evaluate over. |
+| `source` | [InputSource](../org/xml/sax/InputSource.md)!: The `InputSource` of the document to evaluate over. |
 
 | Return ||
 |---|---|
@@ -189,7 +189,7 @@ Evaluate an XPath expression in the context of the specified `InputSource` and r
 
 This method builds a data model for the `https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#` and calls `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#evaluate(kotlin.String,%20kotlin.Any,%20javax.xml.namespace.QName)` on the resulting document object.
 
-See [Evaluation of XPath Expressions](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPath#XPath-evaluation) for context item evaluation, variable, function and QName resolution and return type conversion.
+See [Evaluation of XPath Expressions](../javax/xml/xpath/XPath.md) for context item evaluation, variable, function and QName resolution and return type conversion.
 
 If `returnType` is not one of the types defined in `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathConstants`, then an `IllegalArgumentException` is thrown.
 
@@ -198,8 +198,8 @@ If `expression`, `source` or `returnType` is `null`, then a `NullPointerExceptio
 | Parameters ||
 |---|---|
 | `expression` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The XPath expression. |
-| `source` | [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!: The input source of the document to evaluate over. |
-| `returnType` | [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)!: The desired return type. |
+| `source` | [InputSource](../org/xml/sax/InputSource.md)!: The input source of the document to evaluate over. |
+| `returnType` | [QName](../javax/xml/namespace/QName.md)!: The desired return type. |
 | --- | --- |
 
 | Return ||
@@ -289,7 +289,7 @@ A `NullPointerException` is thrown if `nsContext` is `null`.
 
 | Parameters ||
 |---|---|
-| `nsContext` | [NamespaceContext](https://developer.android.com/reference/kotlin/javax/xml/namespace/NamespaceContext.html#)!: Namespace context to use. |
+| `nsContext` | [NamespaceContext](../javax/xml/namespace/NamespaceContext.md)!: Namespace context to use. |
 
 | Exceptions ||
 |---|---|
@@ -309,7 +309,7 @@ A `NullPointerException` is thrown if `resolver` is `null`.
 
 | Parameters ||
 |---|---|
-| `resolver` | [XPathFunctionResolver](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionResolver)!: XPath function resolver. |
+| `resolver` | [XPathFunctionResolver](../javax/xml/xpath/XPathFunctionResolver.md)!: XPath function resolver. |
 
 | Exceptions ||
 |---|---|
@@ -329,7 +329,7 @@ A `NullPointerException` is thrown if `resolver` is `null`.
 
 | Parameters ||
 |---|---|
-| `resolver` | [XPathVariableResolver](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathVariableResolver)!: Variable resolver. |
+| `resolver` | [XPathVariableResolver](../javax/xml/xpath/XPathVariableResolver.md)!: Variable resolver. |
 
 | Exceptions ||
 |---|---|

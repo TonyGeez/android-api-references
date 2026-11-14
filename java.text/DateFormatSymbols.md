@@ -10,11 +10,11 @@ open class DateFormatSymbols : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#) |
+| ↳ | [java.text.DateFormatSymbols](../java/text/DateFormatSymbols.md) |
 
 `DateFormatSymbols`is a public class for encapsulating localizable date-time formatting data, such as the names of the months, the names of the days of the week, and the time zone data.`SimpleDateFormat`uses`DateFormatSymbols`to encapsulate this information.
 
-Typically you shouldn't use`DateFormatSymbols`directly. Rather, you are encouraged to create a date-time formatter with the`DateFormat`class's factory methods:`getTimeInstance`,`getDateInstance`, or`getDateTimeInstance`. These methods automatically create a`DateFormatSymbols`for the formatter so that you don't have to. After the formatter is created, you may modify its format pattern using the`setPattern`method. For more information about creating formatters using`DateFormat`'s factory methods, see [DateFormat](https://developer.android.com/reference/kotlin/java/text/DateFormat).
+Typically you shouldn't use`DateFormatSymbols`directly. Rather, you are encouraged to create a date-time formatter with the`DateFormat`class's factory methods:`getTimeInstance`,`getDateInstance`, or`getDateTimeInstance`. These methods automatically create a`DateFormatSymbols`for the formatter so that you don't have to. After the formatter is created, you may modify its format pattern using the`setPattern`method. For more information about creating formatters using`DateFormat`'s factory methods, see [DateFormat](../java/text/DateFormat.md).
 
 If you decide to create a date-time formatter with a specific format pattern for a specific locale, you can do so with: 
 
@@ -31,40 +31,40 @@ New`DateFormatSymbols`subclasses may be added to support`SimpleDateFormat`for da
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#DateFormatSymbols())`()` Construct a DateFormatSymbols object by loading format data from resources for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. |
-| [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#DateFormatSymbols(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Construct a DateFormatSymbols object by loading format data from resources for the given locale. |
+| [DateFormatSymbols](../java/text/DateFormatSymbols.md))`()` Construct a DateFormatSymbols object by loading format data from resources for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| [DateFormatSymbols](../java/text/DateFormatSymbols.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Construct a DateFormatSymbols object by loading format data from resources for the given locale. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#clone())`()` Overrides Cloneable |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Override equals |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAmPmStrings](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getAmPmStrings())`()` Gets ampm strings. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/DateFormatSymbols.md))`()` Overrides Cloneable |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/DateFormatSymbols.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Override equals |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAmPmStrings](../java/text/DateFormatSymbols.md))`()` Gets ampm strings. |
 | --- | --- |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getAvailableLocales())`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEras](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getEras())`()` Gets era strings. |
-| static [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#)! | [getInstance](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getInstance())`()` Gets the`DateFormatSymbols`instance for the default locale. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../java/text/DateFormatSymbols.md))`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEras](../java/text/DateFormatSymbols.md))`()` Gets era strings. |
+| static [DateFormatSymbols](../java/text/DateFormatSymbols.md)! | [getInstance](../java/text/DateFormatSymbols.md))`()` Gets the`DateFormatSymbols`instance for the default locale. |
 | --- | --- |
-| static [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#)! | [getInstance](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Gets the`DateFormatSymbols`instance for the specified locale. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalPatternChars](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getLocalPatternChars())`()` Gets localized date-time pattern characters. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getMonths())`()` Gets month strings. |
+| static [DateFormatSymbols](../java/text/DateFormatSymbols.md)! | [getInstance](../java/text/DateFormatSymbols.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Gets the`DateFormatSymbols`instance for the specified locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalPatternChars](../java/text/DateFormatSymbols.md))`()` Gets localized date-time pattern characters. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](../java/text/DateFormatSymbols.md))`()` Gets month strings. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortMonths](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getShortMonths())`()` Gets short month strings. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortWeekdays](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getShortWeekdays())`()` Gets short weekday strings. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getWeekdays())`()` Gets weekday strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortMonths](../java/text/DateFormatSymbols.md))`()` Gets short month strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortWeekdays](../java/text/DateFormatSymbols.md))`()` Gets short weekday strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](../java/text/DateFormatSymbols.md))`()` Gets weekday strings. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getZoneStrings](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getZoneStrings())`()` Gets time zone strings. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#hashCode())`()` Override hashCode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAmPmStrings](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setAmPmStrings(kotlin.Array))`(`newAmpms:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets ampm strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getZoneStrings](../java/text/DateFormatSymbols.md))`()` Gets time zone strings. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/text/DateFormatSymbols.md))`()` Override hashCode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAmPmStrings](../java/text/DateFormatSymbols.md))`(`newAmpms:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets ampm strings. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEras](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setEras(kotlin.Array))`(`newEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets era strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalPatternChars](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setLocalPatternChars(kotlin.String))`(`newLocalPatternChars:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets localized date-time pattern characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setMonths(kotlin.Array))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets month strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEras](../java/text/DateFormatSymbols.md))`(`newEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets era strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalPatternChars](../java/text/DateFormatSymbols.md))`(`newLocalPatternChars:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets localized date-time pattern characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](../java/text/DateFormatSymbols.md))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets month strings. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortMonths](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setShortMonths(kotlin.Array))`(`newShortMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets short month strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortWeekdays](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setShortWeekdays(kotlin.Array))`(`newShortWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets short weekday strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setWeekdays(kotlin.Array))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets weekday strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortMonths](../java/text/DateFormatSymbols.md))`(`newShortMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets short month strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortWeekdays](../java/text/DateFormatSymbols.md))`(`newShortWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets short weekday strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](../java/text/DateFormatSymbols.md))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets weekday strings. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZoneStrings](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setZoneStrings(kotlin.Array))`(`newZoneStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Sets time zone strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZoneStrings](../java/text/DateFormatSymbols.md))`(`newZoneStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Sets time zone strings. |
 
 ## Public constructors
 
@@ -76,9 +76,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DateFormatSymbols()
 ```
 
-Construct a DateFormatSymbols object by loading format data from resources for the default [FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) locale. It is recommended that the [getInstance](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getInstance(java.util.Locale))method is used instead.
+Construct a DateFormatSymbols object by loading format data from resources for the default [FORMAT](../java/util/Locale.Category.md) locale. It is recommended that the [getInstance](../java/text/DateFormatSymbols.md))method is used instead.
 
-This is equivalent to calling [DateFormatSymbols(Locale.getDefault(Locale.Category.FORMAT))](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#DateFormatSymbols(java.util.Locale)).
+This is equivalent to calling [DateFormatSymbols(Locale.getDefault(Locale.Category.FORMAT))](../java/text/DateFormatSymbols.md)).
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------|
@@ -87,8 +87,8 @@ This is equivalent to calling [DateFormatSymbols(Locale.getDefault(Locale.Catego
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getInstance()>
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### DateFormatSymbols
 
@@ -98,11 +98,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DateFormatSymbols(locale: Locale!)
 ```
 
-Construct a DateFormatSymbols object by loading format data from resources for the given locale. It is recommended that the [getInstance](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getInstance(java.util.Locale))method is used instead.
+Construct a DateFormatSymbols object by loading format data from resources for the given locale. It is recommended that the [getInstance](../java/text/DateFormatSymbols.md))method is used instead.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the desired locale |
+| `locale` | [Locale](../java/util/Locale.md)!:the desired locale |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------|
@@ -110,7 +110,7 @@ Construct a DateFormatSymbols object by loading format data from resources for t
 
 **See Also**
 
-- [#getInstance(Locale)](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getInstance(java.util.Locale))
+- [#getInstance(Locale)](../java/text/DateFormatSymbols.md))
 
 ## Public methods
 
@@ -172,11 +172,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getAvailableLocales(): Array<Locale!>!
 ```
 
-Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. It must contain at least a`Locale`instance equal to [Locale.US](https://developer.android.com/reference/kotlin/java/util/Locale.html#US:java.util.Locale).
+Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. It must contain at least a`Locale`instance equal to [Locale.US](../java/util/Locale.md).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!>! | An array of locales for which localized`DateFormatSymbols`instances are available. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!>! | An array of locales for which localized`DateFormatSymbols`instances are available. |
 
 ### getEras
 
@@ -202,16 +202,16 @@ static fun getInstance(): DateFormatSymbols!
 
 Gets the`DateFormatSymbols`instance for the default locale.
 
-This is equivalent to calling [getInstance(Locale.getDefault(Locale.Category.FORMAT))](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#getInstance(java.util.Locale)).
+This is equivalent to calling [getInstance(Locale.getDefault(Locale.Category.FORMAT))](../java/text/DateFormatSymbols.md)).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------|
-| [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#)! | a`DateFormatSymbols`instance. |
+| [DateFormatSymbols](../java/text/DateFormatSymbols.md)! | a`DateFormatSymbols`instance. |
 
 **See Also**
 
-- [java.util.Locale#getDefault(java.util.Locale.Category)](https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category))
-- [java.util.Locale.Category#FORMAT](https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#) 
+- [java.util.Locale#getDefault(java.util.Locale.Category)](../java/util/Locale.md))
+- [java.util.Locale.Category#FORMAT](../java/util/Locale.Category.md) 
 
 ### getInstance
 
@@ -225,11 +225,11 @@ Gets the`DateFormatSymbols`instance for the specified locale.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the given locale. |
+| `locale` | [Locale](../java/util/Locale.md)!:the given locale. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------|
-| [DateFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#)! | a`DateFormatSymbols`instance. |
+| [DateFormatSymbols](../java/text/DateFormatSymbols.md)! | a`DateFormatSymbols`instance. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -257,7 +257,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getMonths(): Array<String!>!
 ```
 
-Gets month strings. For example: "January", "February", etc. An array with either 12 or 13 elements will be returned depending on whether or not [Calendar.UNDECIMBER](https://developer.android.com/reference/kotlin/java/util/Calendar.html#UNDECIMBER:kotlin.Int) is supported. Use [Calendar.JANUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#JANUARY:kotlin.Int), [Calendar.FEBRUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#FEBRUARY:kotlin.Int), etc. to index the result array.
+Gets month strings. For example: "January", "February", etc. An array with either 12 or 13 elements will be returned depending on whether or not [Calendar.UNDECIMBER](../java/util/Calendar.md) is supported. Use [Calendar.JANUARY](../java/util/Calendar.md), [Calendar.FEBRUARY](../java/util/Calendar.md), etc. to index the result array.
 
 If the language requires different forms for formatting and stand-alone usages, this method returns month names in the formatting form. For example, the preferred month name for January in the Czech language is*ledna* in the formatting form, while it is*leden* in the stand-alone form. This method returns`"ledna"`in this case. Refer to the [Calendar Elements in the Unicode Locale Data Markup Language (LDML) specification](http://unicode.org/reports/tr35/#Calendar_Elements) for more details.
 
@@ -273,7 +273,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getShortMonths(): Array<String!>!
 ```
 
-Gets short month strings. For example: "Jan", "Feb", etc. An array with either 12 or 13 elements will be returned depending on whether or not [Calendar.UNDECIMBER](https://developer.android.com/reference/kotlin/java/util/Calendar.html#UNDECIMBER:kotlin.Int) is supported. Use [Calendar.JANUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#JANUARY:kotlin.Int), [Calendar.FEBRUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#FEBRUARY:kotlin.Int), etc. to index the result array.
+Gets short month strings. For example: "Jan", "Feb", etc. An array with either 12 or 13 elements will be returned depending on whether or not [Calendar.UNDECIMBER](../java/util/Calendar.md) is supported. Use [Calendar.JANUARY](../java/util/Calendar.md), [Calendar.FEBRUARY](../java/util/Calendar.md), etc. to index the result array.
 
 If the language requires different forms for formatting and stand-alone usages, this method returns short month names in the formatting form. For example, the preferred abbreviation for January in the Catalan language is*de gen.* in the formatting form, while it is*gen.* in the stand-alone form. This method returns`"de gen."`in this case. Refer to the [Calendar Elements in the Unicode Locale Data Markup Language (LDML) specification](http://unicode.org/reports/tr35/#Calendar_Elements) for more details.
 
@@ -293,7 +293,7 @@ Gets short weekday strings. For example: "Sun", "Mon", etc.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the short weekday strings. Use [Calendar.SUNDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#SUNDAY:kotlin.Int), [Calendar.MONDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#MONDAY:kotlin.Int), etc. to index the result array. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the short weekday strings. Use [Calendar.SUNDAY](../java/util/Calendar.md), [Calendar.MONDAY](../java/util/Calendar.md), etc. to index the result array. |
 
 ### getWeekdays
 
@@ -307,7 +307,7 @@ Gets weekday strings. For example: "Sunday", "Monday", etc.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the weekday strings. Use [Calendar.SUNDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#SUNDAY:kotlin.Int), [Calendar.MONDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#MONDAY:kotlin.Int), etc. to index the result array. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the weekday strings. Use [Calendar.SUNDAY](../java/util/Calendar.md), [Calendar.MONDAY](../java/util/Calendar.md), etc. to index the result array. |
 
 ### getZoneStrings
 
@@ -317,7 +317,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getZoneStrings(): Array<Array<String!>!>!
 ```
 
-Gets time zone strings. Use of this method is discouraged; use [TimeZone.getDisplayName()](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#getDisplayName())instead.
+Gets time zone strings. Use of this method is discouraged; use [TimeZone.getDisplayName()](../java/util/TimeZone.md))instead.
 
 The value returned is a two-dimensional array of strings of size*n* by*m* , where*m* is at least 5. Each of the*n* rows is an entry containing the localized names for a single`TimeZone`. Each such row contains (with`i`ranging from 0..*n*-1):
 
@@ -327,9 +327,9 @@ The value returned is a two-dimensional array of strings of size*n* by*m* , wher
 - `zoneStrings[i][3]`- long name of zone in daylight saving time
 - `zoneStrings[i][4]`- short name of zone in daylight saving time
 
-The zone ID is*not* localized; it's one of the valid IDs of the [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#) class that are not [custom IDs](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#CustomID). All other entries are localized names. If a zone does not implement daylight saving time, the daylight saving time names should not be used.
+The zone ID is*not* localized; it's one of the valid IDs of the [TimeZone](../java/util/TimeZone.md) class that are not [custom IDs](../java/util/TimeZone.md). All other entries are localized names. If a zone does not implement daylight saving time, the daylight saving time names should not be used.
 
-If [setZoneStrings](https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols#setZoneStrings(kotlin.Array))has been called on this`DateFormatSymbols`instance, then the strings provided by that call are returned. Otherwise, the returned array contains names provided by the runtime.
+If [setZoneStrings](../java/text/DateFormatSymbols.md))has been called on this`DateFormatSymbols`instance, then the strings provided by that call are returned. Otherwise, the returned array contains names provided by the runtime.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
@@ -407,7 +407,7 @@ Sets month strings. For example: "January", "February", etc.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newMonths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new month strings. The array should be indexed by [Calendar.JANUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#JANUARY:kotlin.Int), [Calendar.FEBRUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#FEBRUARY:kotlin.Int), etc. |
+| `newMonths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new month strings. The array should be indexed by [Calendar.JANUARY](../java/util/Calendar.md), [Calendar.FEBRUARY](../java/util/Calendar.md), etc. |
 
 ### setShortMonths
 
@@ -421,7 +421,7 @@ Sets short month strings. For example: "Jan", "Feb", etc.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newShortMonths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new short month strings. The array should be indexed by [Calendar.JANUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#JANUARY:kotlin.Int), [Calendar.FEBRUARY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#FEBRUARY:kotlin.Int), etc. |
+| `newShortMonths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new short month strings. The array should be indexed by [Calendar.JANUARY](../java/util/Calendar.md), [Calendar.FEBRUARY](../java/util/Calendar.md), etc. |
 
 ### setShortWeekdays
 
@@ -435,7 +435,7 @@ Sets short weekday strings. For example: "Sun", "Mon", etc.
 
 | Parameters ||
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newShortWeekdays` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new short weekday strings. The array should be indexed by [Calendar.SUNDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#SUNDAY:kotlin.Int), [Calendar.MONDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#MONDAY:kotlin.Int), etc. |
+| `newShortWeekdays` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new short weekday strings. The array should be indexed by [Calendar.SUNDAY](../java/util/Calendar.md), [Calendar.MONDAY](../java/util/Calendar.md), etc. |
 
 ### setWeekdays
 
@@ -449,7 +449,7 @@ Sets weekday strings. For example: "Sunday", "Monday", etc.
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newWeekdays` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new weekday strings. The array should be indexed by [Calendar.SUNDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#SUNDAY:kotlin.Int), [Calendar.MONDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#MONDAY:kotlin.Int), etc. |
+| `newWeekdays` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the new weekday strings. The array should be indexed by [Calendar.SUNDAY](../java/util/Calendar.md), [Calendar.MONDAY](../java/util/Calendar.md), etc. |
 
 ### setZoneStrings
 
@@ -467,7 +467,7 @@ Sets time zone strings. The argument must be a two-dimensional array of strings 
 - `zoneStrings[i][3]`- long name of zone in daylight saving time
 - `zoneStrings[i][4]`- short name of zone in daylight saving time
 
-The zone ID is*not* localized; it's one of the valid IDs of the [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#) class that are not [custom IDs](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#CustomID). All other entries are localized names.
+The zone ID is*not* localized; it's one of the valid IDs of the [TimeZone](../java/util/TimeZone.md) class that are not [custom IDs](../java/util/TimeZone.md). All other entries are localized names.
 
 <br />
 

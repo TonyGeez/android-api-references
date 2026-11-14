@@ -4,50 +4,50 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ExpandableListAdapter
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/ExpandableListAdapter "View this page in Java") 
+Kotlin| [Java](../android/widget/ExpandableListAdapter.md) 
 | --- | --- |
 
 ```
 interface ExpandableListAdapter
 ```
 
-| [android.widget.ExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#) |
+| [android.widget.ExpandableListAdapter](../android/widget/ExpandableListAdapter.md) |
 
-| Known Direct Subclasses [BaseExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/BaseExpandableListAdapter) |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BaseExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/BaseExpandableListAdapter) | Base class for a [ExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#) used to provide data and Views from some data to an expandable list view. | |
+| Known Direct Subclasses [BaseExpandableListAdapter](../android/widget/BaseExpandableListAdapter.md) |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BaseExpandableListAdapter](../android/widget/BaseExpandableListAdapter.md) | Base class for a [ExpandableListAdapter](../android/widget/ExpandableListAdapter.md) used to provide data and Views from some data to an expandable list view. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [CursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter), [ResourceCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorTreeAdapter), [SimpleCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorTreeAdapter), [SimpleExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleExpandableListAdapter) |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter) | An adapter that exposes data from a series of [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) s to an [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView) widget. | | [ResourceCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorTreeAdapter) | A fairly simple ExpandableListAdapter that creates views defined in an XML file. | | [SimpleCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorTreeAdapter) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | | [SimpleExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleExpandableListAdapter) | An easy adapter to map static data to group and child views defined in an XML file. | |
+| Known Indirect Subclasses [CursorTreeAdapter](../android/widget/CursorTreeAdapter.md), [ResourceCursorTreeAdapter](../android/widget/ResourceCursorTreeAdapter.md), [SimpleCursorTreeAdapter](../android/widget/SimpleCursorTreeAdapter.md), [SimpleExpandableListAdapter](../android/widget/SimpleExpandableListAdapter.md) |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CursorTreeAdapter](../android/widget/CursorTreeAdapter.md) | An adapter that exposes data from a series of [Cursor](../android/database/Cursor.md) s to an [ExpandableListView](../android/widget/ExpandableListView.md) widget. | | [ResourceCursorTreeAdapter](../android/widget/ResourceCursorTreeAdapter.md) | A fairly simple ExpandableListAdapter that creates views defined in an XML file. | | [SimpleCursorTreeAdapter](../android/widget/SimpleCursorTreeAdapter.md) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | | [SimpleExpandableListAdapter](../android/widget/SimpleExpandableListAdapter.md) | An easy adapter to map static data to group and child views defined in an XML file. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-An adapter that links a [ExpandableListView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView) with the underlying data. The implementation of this interface will provide access to the data of the children (categorized by groups), and also instantiate [View](https://developer.android.com/reference/kotlin/android/view/View.html#) s for children and groups.
+An adapter that links a [ExpandableListView](../android/widget/ExpandableListView.md) with the underlying data. The implementation of this interface will provide access to the data of the children (categorized by groups), and also instantiate [View](../android/view/View.md) s for children and groups.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAllItemsEnabled](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#areAllItemsEnabled())`()` <br /> |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getChild](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChild(kotlin.Int,%20kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the data associated with the given child within the given group. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getChildId](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChildId(kotlin.Int,%20kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the ID for the given child within the given group. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAllItemsEnabled](../android/widget/ExpandableListAdapter.md))`()` <br /> |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getChild](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the data associated with the given child within the given group. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getChildId](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the ID for the given child within the given group. |
 | --- | --- |
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [getChildView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChildView(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isLastChild:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `convertView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` Gets a View that displays the data for the given child within the given group. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChildrenCount](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChildrenCount(kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the number of children in a specified group. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCombinedChildId](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getCombinedChildId(kotlin.Long,%20kotlin.Long))`(`groupId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `childId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Gets an ID for a child that is unique across any item (either group or child) that is in this list. |
+| abstract [View](../android/view/View.md)! | [getChildView](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isLastChild:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `convertView:` ` [View](../android/view/View.md)!`, `parent:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Gets a View that displays the data for the given child within the given group. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChildrenCount](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the number of children in a specified group. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCombinedChildId](../android/widget/ExpandableListAdapter.md))`(`groupId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `childId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Gets an ID for a child that is unique across any item (either group or child) that is in this list. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCombinedGroupId](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getCombinedGroupId(kotlin.Long))`(`groupId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Gets an ID for a group that is unique across any item (either group or child) that is in this list. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getGroup](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getGroup(kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the data associated with the given group. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGroupCount](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getGroupCount())`()` Gets the number of groups. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCombinedGroupId](../android/widget/ExpandableListAdapter.md))`(`groupId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Gets an ID for a group that is unique across any item (either group or child) that is in this list. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getGroup](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the data associated with the given group. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGroupCount](../android/widget/ExpandableListAdapter.md))`()` Gets the number of groups. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getGroupId](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getGroupId(kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the ID for the group at the given position. |
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [getGroupView](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getGroupView(kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isExpanded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `convertView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` Gets a View that displays the given group. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#hasStableIds())`()` Indicates whether the child and group IDs are stable across changes to the underlying data. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getGroupId](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the ID for the group at the given position. |
+| abstract [View](../android/view/View.md)! | [getGroupView](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isExpanded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `convertView:` ` [View](../android/view/View.md)!`, `parent:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Gets a View that displays the given group. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](../android/widget/ExpandableListAdapter.md))`()` Indicates whether the child and group IDs are stable across changes to the underlying data. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChildSelectable](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#isChildSelectable(kotlin.Int,%20kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Whether the child at the specified position is selectable. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#isEmpty())`()` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGroupCollapsed](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#onGroupCollapsed(kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a group is collapsed. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isChildSelectable](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `childPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Whether the child at the specified position is selectable. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../android/widget/ExpandableListAdapter.md))`()` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGroupCollapsed](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a group is collapsed. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGroupExpanded](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#onGroupExpanded(kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a group is expanded. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#registerDataSetObserver(android.database.DataSetObserver))`(`observer:` ` [DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver.html#)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#unregisterDataSetObserver(android.database.DataSetObserver))`(`observer:` ` [DataSetObserver](https://developer.android.com/reference/kotlin/android/database/DataSetObserver.html#)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGroupExpanded](../android/widget/ExpandableListAdapter.md))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a group is expanded. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](../android/widget/ExpandableListAdapter.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](../android/widget/ExpandableListAdapter.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -61,7 +61,7 @@ abstract fun areAllItemsEnabled(): Boolean
 ```  
 **See Also**
 
-- [android.widget.ListAdapter#areAllItemsEnabled()](https://developer.android.com/reference/kotlin/android/widget/ListAdapter#areAllItemsEnabled()) 
+- [android.widget.ListAdapter#areAllItemsEnabled()](../android/widget/ListAdapter.md)) 
 
 ### getChild
 
@@ -96,7 +96,7 @@ abstract fun getChildId(
 ): Long
 ```
 
-Gets the ID for the given child within the given group. This ID must be unique across all children within the group. The combined ID (see [getCombinedChildId(long,long)](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getCombinedChildId(kotlin.Long,%20kotlin.Long))) must be unique across ALL items (groups and all children).
+Gets the ID for the given child within the given group. This ID must be unique across all children within the group. The combined ID (see [getCombinedChildId(long,long)](../android/widget/ExpandableListAdapter.md))) must be unique across ALL items (groups and all children).
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -129,12 +129,12 @@ Gets a View that displays the data for the given child within the given group.
 | `childPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position of the child (for which the View is returned) within the group |
 | `isLastChild` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the child is the last child within the group |
 | --- | --- |
-| `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by [getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChildView(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)). |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:the parent that this view will eventually be attached to |
+| `convertView` | [View](../android/view/View.md)!:the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by [getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)](../android/widget/ExpandableListAdapter.md)). |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!:the parent that this view will eventually be attached to |
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | the View corresponding to the child at the specified position |
+| [View](../android/view/View.md)! | the View corresponding to the child at the specified position |
 
 ### getChildrenCount
 
@@ -165,7 +165,7 @@ abstract fun getCombinedChildId(
 ): Long
 ```
 
-Gets an ID for a child that is unique across any item (either group or child) that is in this list. Expandable lists require each item (group or child) to have a unique ID among all children and groups in the list. This method is responsible for returning that unique ID given a child's ID and its group's ID. Furthermore, if [hasStableIds()](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#hasStableIds())is true, the returned ID must be stable as well.
+Gets an ID for a child that is unique across any item (either group or child) that is in this list. Expandable lists require each item (group or child) to have a unique ID among all children and groups in the list. This method is responsible for returning that unique ID given a child's ID and its group's ID. Furthermore, if [hasStableIds()](../android/widget/ExpandableListAdapter.md))is true, the returned ID must be stable as well.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------|
@@ -184,7 +184,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getCombinedGroupId(groupId: Long): Long
 ```
 
-Gets an ID for a group that is unique across any item (either group or child) that is in this list. Expandable lists require each item (group or child) to have a unique ID among all children and groups in the list. This method is responsible for returning that unique ID given a group's ID. Furthermore, if [hasStableIds()](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#hasStableIds())is true, the returned ID must be stable as well.
+Gets an ID for a group that is unique across any item (either group or child) that is in this list. Expandable lists require each item (group or child) to have a unique ID among all children and groups in the list. This method is responsible for returning that unique ID given a group's ID. Furthermore, if [hasStableIds()](../android/widget/ExpandableListAdapter.md))is true, the returned ID must be stable as well.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------|
@@ -234,7 +234,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getGroupId(groupPosition: Int): Long
 ```
 
-Gets the ID for the group at the given position. This group ID must be unique across groups. The combined ID (see [getCombinedGroupId(long)](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getCombinedGroupId(kotlin.Long))) must be unique across ALL items (groups and all children).
+Gets the ID for the group at the given position. This group ID must be unique across groups. The combined ID (see [getCombinedGroupId(long)](../android/widget/ExpandableListAdapter.md))) must be unique across ALL items (groups and all children).
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -257,19 +257,19 @@ abstract fun getGroupView(
 ): View!
 ```
 
-Gets a View that displays the given group. This View is only for the group--the Views for the group's children will be fetched using [getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChildView(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)).
+Gets a View that displays the given group. This View is only for the group--the Views for the group's children will be fetched using [getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)](../android/widget/ExpandableListAdapter.md)).
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position of the group for which the View is returned |
 | `isExpanded` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether the group is expanded or collapsed |
-| `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by [getGroupView(int,boolean,android.view.View,android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getGroupView(kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)). |
+| `convertView` | [View](../android/view/View.md)!:the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by [getGroupView(int,boolean,android.view.View,android.view.ViewGroup)](../android/widget/ExpandableListAdapter.md)). |
 | --- | --- |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:the parent that this view will eventually be attached to |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!:the parent that this view will eventually be attached to |
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | the View corresponding to the group at the specified position |
+| [View](../android/view/View.md)! | the View corresponding to the group at the specified position |
 
 ### hasStableIds
 
@@ -287,7 +287,7 @@ Indicates whether the child and group IDs are stable across changes to the under
 
 **See Also**
 
-- [android.widget.Adapter#hasStableIds()](https://developer.android.com/reference/kotlin/android/widget/Adapter#hasStableIds()) 
+- [android.widget.Adapter#hasStableIds()](../android/widget/Adapter.md)) 
 
 ### isChildSelectable
 
@@ -320,7 +320,7 @@ abstract fun isEmpty(): Boolean
 ```  
 **See Also**
 
-- [android.widget.ListAdapter#isEmpty()](https://developer.android.com/reference/kotlin/android/widget/Adapter#isEmpty()) 
+- [android.widget.ListAdapter#isEmpty()](../android/widget/Adapter.md)) 
 
 ### onGroupCollapsed
 
@@ -359,7 +359,7 @@ abstract fun registerDataSetObserver(observer: DataSetObserver!): Unit
 ```  
 **See Also**
 
-- [android.widget.Adapter#registerDataSetObserver(DataSetObserver)](https://developer.android.com/reference/kotlin/android/widget/Adapter#registerDataSetObserver(android.database.DataSetObserver)) 
+- [android.widget.Adapter#registerDataSetObserver(DataSetObserver)](../android/widget/Adapter.md)) 
 
 ### unregisterDataSetObserver
 
@@ -370,4 +370,4 @@ abstract fun unregisterDataSetObserver(observer: DataSetObserver!): Unit
 ```  
 **See Also**
 
-- [android.widget.Adapter#unregisterDataSetObserver(DataSetObserver)](https://developer.android.com/reference/kotlin/android/widget/Adapter#unregisterDataSetObserver(android.database.DataSetObserver))
+- [android.widget.Adapter#unregisterDataSetObserver(DataSetObserver)](../android/widget/Adapter.md))

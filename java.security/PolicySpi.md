@@ -10,7 +10,7 @@ abstract class PolicySpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.PolicySpi](https://developer.android.com/reference/kotlin/java/security/PolicySpi#) |
+| ↳ | [java.security.PolicySpi](../java/security/PolicySpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`Policy`class. All the abstract methods in this class must be implemented by each service provider who wishes to supply a Policy implementation.
 
@@ -20,15 +20,15 @@ Subclass implementations of this abstract class must provide a public constructo
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------|---|
-| [PolicySpi](https://developer.android.com/reference/kotlin/java/security/PolicySpi#PolicySpi())`()` <br /> |
+| [PolicySpi](../java/security/PolicySpi.md))`()` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | [engineGetPermissions](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineGetPermissions(java.security.CodeSource))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!`)` Return a PermissionCollection object containing the set of permissions granted to the specified CodeSource. |
-| open [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | [engineGetPermissions](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineGetPermissions(java.security.ProtectionDomain))`(`domain:` ` [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain)!`)` Return a PermissionCollection object containing the set of permissions granted to the specified ProtectionDomain. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineImplies](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineImplies(java.security.ProtectionDomain,%20java.security.Permission))`(`domain:` ` [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain)!`, `permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` Check whether the policy has granted a Permission to a ProtectionDomain. |
+| open [PermissionCollection](../java/security/PermissionCollection.md)! | [engineGetPermissions](../java/security/PolicySpi.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`)` Return a PermissionCollection object containing the set of permissions granted to the specified CodeSource. |
+| open [PermissionCollection](../java/security/PermissionCollection.md)! | [engineGetPermissions](../java/security/PolicySpi.md))`(`domain:` ` [ProtectionDomain](../java/security/ProtectionDomain.md)!`)` Return a PermissionCollection object containing the set of permissions granted to the specified ProtectionDomain. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineImplies](../java/security/PolicySpi.md))`(`domain:` ` [ProtectionDomain](../java/security/ProtectionDomain.md)!`, `permission:` ` [Permission](../java/security/Permission.md)!`)` Check whether the policy has granted a Permission to a ProtectionDomain. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineRefresh](https://developer.android.com/reference/kotlin/java/security/PolicySpi#engineRefresh())`()` Refreshes/reloads the policy configuration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineRefresh](../java/security/PolicySpi.md))`()` Refreshes/reloads the policy configuration. |
 
 ## Public constructors
 
@@ -56,11 +56,11 @@ The default implementation of this method returns Policy.UNSUPPORTED_EMPTY_COLLE
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `codesource` | [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!:the CodeSource to which the returned PermissionCollection has been granted. |
+| `codesource` | [CodeSource](../java/security/CodeSource.md)!:the CodeSource to which the returned PermissionCollection has been granted. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | a set of permissions granted to the specified CodeSource. If this operation is supported, the returned set of permissions must be a new mutable instance and it must support heterogeneous Permission types. If this operation is not supported, Policy.UNSUPPORTED_EMPTY_COLLECTION is returned. |
+| [PermissionCollection](../java/security/PermissionCollection.md)! | a set of permissions granted to the specified CodeSource. If this operation is supported, the returned set of permissions must be a new mutable instance and it must support heterogeneous Permission types. If this operation is not supported, Policy.UNSUPPORTED_EMPTY_COLLECTION is returned. |
 
 ### engineGetPermissions
 
@@ -76,11 +76,11 @@ The default implementation of this method returns Policy.UNSUPPORTED_EMPTY_COLLE
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `domain` | [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain)!:the ProtectionDomain to which the returned PermissionCollection has been granted. |
+| `domain` | [ProtectionDomain](../java/security/ProtectionDomain.md)!:the ProtectionDomain to which the returned PermissionCollection has been granted. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | a set of permissions granted to the specified ProtectionDomain. If this operation is supported, the returned set of permissions must be a new mutable instance and it must support heterogeneous Permission types. If this operation is not supported, Policy.UNSUPPORTED_EMPTY_COLLECTION is returned. |
+| [PermissionCollection](../java/security/PermissionCollection.md)! | a set of permissions granted to the specified ProtectionDomain. If this operation is supported, the returned set of permissions must be a new mutable instance and it must support heterogeneous Permission types. If this operation is not supported, Policy.UNSUPPORTED_EMPTY_COLLECTION is returned. |
 
 ### engineImplies
 
@@ -97,8 +97,8 @@ Check whether the policy has granted a Permission to a ProtectionDomain.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `domain` | [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain)!:the ProtectionDomain to check. |
-| `permission` | [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!:check whether this permission is granted to the specified domain. |
+| `domain` | [ProtectionDomain](../java/security/ProtectionDomain.md)!:the ProtectionDomain to check. |
+| `permission` | [Permission](../java/security/Permission.md)!:check whether this permission is granted to the specified domain. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|

@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaMetadata
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/MediaMetadata "View this page in Java")
+Kotlin | [Java](../android/media/MediaMetadata.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class MediaMetadata : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaMetadata](https://developer.android.com/reference/kotlin/android/media/MediaMetadata#) |
+| ↳ | [android.media.MediaMetadata](../android/media/MediaMetadata.md) |
 
 Contains metadata about an item, such as the title, artist, etc.
 
@@ -72,12 +72,12 @@ Contains metadata about an item, such as the title, artist, etc.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the contents of this object to another MediaMetadata object. |
 | --- | --- |
-| [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getBitmap(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` for the given key or null if no bitmap exists for the given key. |
+| [Bitmap](../android/graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getBitmap(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` for the given key or null if no bitmap exists for the given key. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getBitmapDimensionLimit()()` Gets the width/height limit (in pixels) for the bitmaps when this metadata was created. |
-| [MediaDescription](https://developer.android.com/reference/kotlin/android/media/MediaDescription) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getDescription()()` Returns a simple description of this metadata for display purposes. |
+| [MediaDescription](../android/media/MediaDescription.md) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getDescription()()` Returns a simple description of this metadata for display purposes. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getLong(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or 0L if no long exists for the given key. |
-| [Rating](https://developer.android.com/reference/kotlin/android/media/Rating)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getRating(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/media/Rating` for the given key or null if no rating exists for the given key. |
+| [Rating](../android/media/Rating.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getRating(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/media/Rating` for the given key or null if no rating exists for the given key. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getString(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the text value associated with the given key as a String, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getText(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
@@ -89,7 +89,7 @@ Contains metadata about an item, such as the title, artist, etc.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [MediaMetadata](https://developer.android.com/reference/kotlin/android/media/MediaMetadata#)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MediaMetadata](../android/media/MediaMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -715,7 +715,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

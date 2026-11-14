@@ -8,7 +8,7 @@ abstract class ValidatorHandler : ContentHandler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.validation.ValidatorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#) |
+| ↳ | [javax.xml.validation.ValidatorHandler](../javax/xml/validation/ValidatorHandler.md) |
 
 Streaming validator that works on SAX stream.
 
@@ -46,13 +46,13 @@ This feature is set to `false` by default.
 
 | Public methods ||
 |---|---|
-| abstract [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getContentHandler()()` Gets the `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#` which receives the augmented validation result. |
-| abstract [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getErrorHandler()()` Gets the current `https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#` set to this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
+| abstract [ContentHandler](../org/xml/sax/ContentHandler.md)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getContentHandler()()` Gets the `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#` which receives the augmented validation result. |
+| abstract [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getErrorHandler()()` Gets the current `https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#` set to this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Look up the value of a feature flag. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getProperty(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Look up the value of a property. |
-| abstract [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getResourceResolver()()` Gets the current `https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#` set to this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
-| abstract [TypeInfoProvider](https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getTypeInfoProvider()()` Obtains the `https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider` implementation of this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
+| abstract [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getResourceResolver()()` Gets the current `https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#` set to this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
+| abstract [TypeInfoProvider](../javax/xml/validation/TypeInfoProvider.md)! | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#getTypeInfoProvider()()` Obtains the `https://developer.android.com/reference/kotlin/javax/xml/validation/TypeInfoProvider` implementation of this `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#`. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#setContentHandler(org.xml.sax.ContentHandler)(receiver: https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#!)` Sets the `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#` which receives the augmented validation result. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/validation/ValidatorHandler#setErrorHandler(org.xml.sax.ErrorHandler)(errorHandler: https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#!)` Sets the `https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#` to receive errors encountered during the validation. |
@@ -249,7 +249,7 @@ This method can be called even during a middle of a validation.
 
 | Parameters ||
 |---|---|
-| `receiver` | [ContentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#)!: A `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#` or a null value. |
+| `receiver` | [ContentHandler](../org/xml/sax/ContentHandler.md)!: A `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#` or a null value. |
 
 ### setErrorHandler
 
@@ -290,7 +290,7 @@ When a new `https://developer.android.com/reference/kotlin/javax/xml/validation/
 
 | Parameters ||
 |---|---|
-| `errorHandler` | [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!: A new error handler to be set. This parameter can be null. |
+| `errorHandler` | [ErrorHandler](../org/xml/sax/ErrorHandler.md)!: A new error handler to be set. This parameter can be null. |
 
 ### setFeature
 
@@ -385,4 +385,4 @@ When a new `https://developer.android.com/reference/kotlin/javax/xml/validation/
 
 | Parameters ||
 |---|---|
-| `resourceResolver` | [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)!: A new resource resolver to be set. This parameter can be null. |
+| `resourceResolver` | [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md)!: A new resource resolver to be set. This parameter can be null. |

@@ -2,7 +2,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # Equalizer
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/audiofx/Equalizer "View this page in Java")
+Kotlin | [Java](../android/media/audiofx/Equalizer.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class Equalizer : AudioEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
-| | ↳ | [android.media.audiofx.Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#) |
+| ↳ | [android.media.audiofx.AudioEffect](../android/media/audiofx/AudioEffect.md) ||
+| | ↳ | [android.media.audiofx.Equalizer](../android/media/audiofx/Equalizer.md) |
 
 An Equalizer is used to alter the frequency response of a particular music source or of the main output mix.
 
@@ -73,7 +73,7 @@ See `https://developer.android.com/reference/kotlin/android/media/audiofx/AudioE
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getNumberOfPresets()()` Gets the total number of presets the equalizer supports. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getPresetName(kotlin.Short)(preset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Gets the preset name based on the index. |
 | --- | --- |
-| open [Equalizer.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.Settings)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getProperties()()` Gets the equalizer properties. |
+| open [Equalizer.Settings](../android/media/audiofx/Equalizer.Settings.md)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#getProperties()()` Gets the equalizer properties. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#setBandLevel(kotlin.Short,%20kotlin.Short)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Sets the given equalizer band to the given gain value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#setParameterListener(android.media.audiofx.Equalizer.OnParameterChangeListener)(listener: https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.OnParameterChangeListener!)` Registers an OnParameterChangeListener interface. |
 | --- | --- |
@@ -510,7 +510,7 @@ Registers an OnParameterChangeListener interface.
 
 | Parameters ||
 |---|---|
-| `listener` | [Equalizer.OnParameterChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.OnParameterChangeListener)!: OnParameterChangeListener interface registered |
+| `listener` | [Equalizer.OnParameterChangeListener](../android/media/audiofx/Equalizer.OnParameterChangeListener.md)!: OnParameterChangeListener interface registered |
 
 ### setProperties
 
@@ -524,7 +524,7 @@ Sets the equalizer properties. This method is useful when equalizer settings hav
 
 | Parameters ||
 |---|---|
-| `settings` | [Equalizer.Settings](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.Settings)!: an Equalizer.Settings object containing the properties to apply |
+| `settings` | [Equalizer.Settings](../android/media/audiofx/Equalizer.Settings.md)!: an Equalizer.Settings object containing the properties to apply |
 
 | Exceptions ||
 |---|---|

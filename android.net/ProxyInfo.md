@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ProxyInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/ProxyInfo "View this page in Java") 
+Kotlin| [Java](../android/net/ProxyInfo.md) 
 | --- | --- |
 
 ```
@@ -13,42 +13,42 @@ open class ProxyInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) |
+| ↳ | [android.net.ProxyInfo](../android/net/ProxyInfo.md) |
 
-Describes a proxy configuration. Proxy configurations are already integrated within the`java.net`and Apache HTTP stack. So [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection.html#) and Apache's`HttpClient`will use them automatically. Other HTTP stacks will need to obtain the proxy info by watching for the [Proxy.PROXY_CHANGE_ACTION](https://developer.android.com/reference/kotlin/android/net/Proxy#PROXY_CHANGE_ACTION:kotlin.String) broadcast and calling methods such as [android.net.ConnectivityManager#getDefaultProxy](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getDefaultProxy()).
+Describes a proxy configuration. Proxy configurations are already integrated within the`java.net`and Apache HTTP stack. So [URLConnection](../java/net/URLConnection.md) and Apache's`HttpClient`will use them automatically. Other HTTP stacks will need to obtain the proxy info by watching for the [Proxy.PROXY_CHANGE_ACTION](../android/net/Proxy.md) broadcast and calling methods such as [android.net.ConnectivityManager#getDefaultProxy](../android/net/ConnectivityManager.md)).
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#ProxyInfo(android.net.ProxyInfo))`(`source:` ` [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)?`)` A copy constructor to hold proxy properties. |
+| [ProxyInfo](../android/net/ProxyInfo.md))`(`source:` ` [ProxyInfo](../android/net/ProxyInfo.md)?`)` A copy constructor to hold proxy properties. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)! | [buildDirectProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildDirectProxy(kotlin.String,%20kotlin.Int))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that points at a Direct proxy on the specified host and port. |
-| openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)! | [buildDirectProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildDirectProxy(kotlin.String,%20kotlin.Int,%20kotlin.collections.MutableList))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exclList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Constructs a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that points at a Direct proxy on the specified host and port. |
-| openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)! | [buildPacProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildPacProxy(android.net.Uri))`(`pacUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri)!`)` Construct a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) that will download and run the PAC script at the specified URL. |
+| openstatic [ProxyInfo](../android/net/ProxyInfo.md)! | [buildDirectProxy](../android/net/ProxyInfo.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a [ProxyInfo](../android/net/ProxyInfo.md) object that points at a Direct proxy on the specified host and port. |
+| openstatic [ProxyInfo](../android/net/ProxyInfo.md)! | [buildDirectProxy](../android/net/ProxyInfo.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exclList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Constructs a [ProxyInfo](../android/net/ProxyInfo.md) object that points at a Direct proxy on the specified host and port. |
+| openstatic [ProxyInfo](../android/net/ProxyInfo.md)! | [buildPacProxy](../android/net/ProxyInfo.md))`(`pacUri:` ` [Uri](../android/net/Uri.md)!`)` Construct a [ProxyInfo](../android/net/ProxyInfo.md) that will download and run the PAC script at the specified URL. |
 | --- | --- |
-| openstatic [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) | [buildPacProxy](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#buildPacProxy(android.net.Uri,%20kotlin.Int))`(`pacUrl:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri)`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Construct a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that will download and run the PAC script at the specified URL and port. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getExclusionList](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getExclusionList())`()` When configured to use a Direct Proxy this returns the list of hosts for which the proxy is ignored. |
+| openstatic [ProxyInfo](../android/net/ProxyInfo.md) | [buildPacProxy](../android/net/ProxyInfo.md))`(`pacUrl:` ` [Uri](../android/net/Uri.md)`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Construct a [ProxyInfo](../android/net/ProxyInfo.md) object that will download and run the PAC script at the specified URL and port. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/ProxyInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getExclusionList](../android/net/ProxyInfo.md))`()` When configured to use a Direct Proxy this returns the list of hosts for which the proxy is ignored. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getHost())`()` When configured to use a Direct Proxy this returns the host of the proxy. |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri)! | [getPacFileUrl](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getPacFileUrl())`()` Returns the URL of the current PAC script or null if there is no PAC script. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#getPort())`()` When configured to use a Direct Proxy this returns the port of the proxy |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](../android/net/ProxyInfo.md))`()` When configured to use a Direct Proxy this returns the host of the proxy. |
+| open [Uri](../android/net/Uri.md)! | [getPacFileUrl](../android/net/ProxyInfo.md))`()` Returns the URL of the current PAC script or null if there is no PAC script. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../android/net/ProxyInfo.md))`()` When configured to use a Direct Proxy this returns the port of the proxy |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#hashCode())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#isValid())`()` Return true if the pattern of proxy is valid, otherwise return false. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#toString())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/ProxyInfo.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../android/net/ProxyInfo.md))`()` Return true if the pattern of proxy is valid, otherwise return false. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/ProxyInfo.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ProxyInfo](../android/net/ProxyInfo.md)!\> | [CREATOR](../android/net/ProxyInfo.md) <br /> |
 
 ## Public constructors
 
@@ -64,7 +64,7 @@ A copy constructor to hold proxy properties.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------|
-| `source` | [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#)?:This value may be`null`. |
+| `source` | [ProxyInfo](../android/net/ProxyInfo.md)?:This value may be`null`. |
 
 ## Public methods
 
@@ -79,7 +79,7 @@ open static fun buildDirectProxy(
 ): ProxyInfo!
 ```
 
-Constructs a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that points at a Direct proxy on the specified host and port. 
+Constructs a [ProxyInfo](../android/net/ProxyInfo.md) object that points at a Direct proxy on the specified host and port. 
 
 ### buildDirectProxy
 
@@ -93,7 +93,7 @@ open static fun buildDirectProxy(
 ): ProxyInfo!
 ```
 
-Constructs a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that points at a Direct proxy on the specified host and port. The proxy will not be used to access any host in exclusion list, exclList.
+Constructs a [ProxyInfo](../android/net/ProxyInfo.md) object that points at a Direct proxy on the specified host and port. The proxy will not be used to access any host in exclusion list, exclList.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -107,7 +107,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open static fun buildPacProxy(pacUri: Uri!): ProxyInfo!
 ```
 
-Construct a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) that will download and run the PAC script at the specified URL. 
+Construct a [ProxyInfo](../android/net/ProxyInfo.md) that will download and run the PAC script at the specified URL. 
 
 ### buildPacProxy
 
@@ -120,15 +120,15 @@ open static fun buildPacProxy(
 ): ProxyInfo
 ```
 
-Construct a [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) object that will download and run the PAC script at the specified URL and port.
+Construct a [ProxyInfo](../android/net/ProxyInfo.md) object that will download and run the PAC script at the specified URL and port.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------|
-| `pacUrl` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri):This value cannot be`null`. |
+| `pacUrl` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------|
-| [ProxyInfo](https://developer.android.com/reference/kotlin/android/net/ProxyInfo#) | This value cannot be`null`. |
+| [ProxyInfo](../android/net/ProxyInfo.md) | This value cannot be`null`. |
 
 ### equals
 

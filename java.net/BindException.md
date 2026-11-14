@@ -11,11 +11,11 @@ open class BindException : SocketException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.SocketException](https://developer.android.com/reference/kotlin/java/net/SocketException) ||
-| | | | | ↳ | [java.net.BindException](https://developer.android.com/reference/kotlin/java/net/BindException#) |
+| | | | ↳ | [java.net.SocketException](../java/net/SocketException.md) ||
+| | | | | ↳ | [java.net.BindException](../java/net/BindException.md) |
 
 Signals that an error occurred while attempting to bind a socket to a local address and port. Typically, the port is in use, or the requested local address could not be assigned.
 
@@ -23,8 +23,8 @@ Signals that an error occurred while attempting to bind a socket to a local addr
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BindException](https://developer.android.com/reference/kotlin/java/net/BindException#BindException())`()` Construct a new BindException with no detailed message. |
-| [BindException](https://developer.android.com/reference/kotlin/java/net/BindException#BindException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new BindException with the specified detail message as to why the bind error occurred. |
+| [BindException](../java/net/BindException.md))`()` Construct a new BindException with no detailed message. |
+| [BindException](../java/net/BindException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new BindException with the specified detail message as to why the bind error occurred. |
 
 ## Public constructors
 

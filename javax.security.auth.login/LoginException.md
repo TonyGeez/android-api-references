@@ -11,10 +11,10 @@ open class LoginException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.security.auth.login.LoginException](https://developer.android.com/reference/kotlin/javax/security/auth/login/LoginException#) |
+| | | | ↳ | [javax.security.auth.login.LoginException](../javax/security/auth/login/LoginException.md) |
 
 This is the basic login exception.
 
@@ -22,8 +22,8 @@ This is the basic login exception.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LoginException](https://developer.android.com/reference/kotlin/javax/security/auth/login/LoginException#LoginException())`()` Constructs a LoginException with no detail message. |
-| [LoginException](https://developer.android.com/reference/kotlin/javax/security/auth/login/LoginException#LoginException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a LoginException with the specified detail message. |
+| [LoginException](../javax/security/auth/login/LoginException.md))`()` Constructs a LoginException with no detail message. |
+| [LoginException](../javax/security/auth/login/LoginException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a LoginException with the specified detail message. |
 
 ## Public constructors
 

@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # CursorAnchorInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo "View this page in Java")
+Kotlin | [Java](../android/view/inputmethod/CursorAnchorInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class CursorAnchorInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.CursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#) |
+| ↳ | [android.view.inputmethod.CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md) |
 
 Positional information about the text insertion point and characters in the composition string.
 
@@ -42,13 +42,13 @@ This class encapsulates locations of the text insertion point and the compositio
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getCharacterBounds(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new instance of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` that indicates the location of the character specified with the index. |
+| [RectF](../android/graphics/RectF.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getCharacterBounds(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new instance of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` that indicates the location of the character specified with the index. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getCharacterBoundsFlags(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the flags associated with the character bounds specified with the index. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getComposingText()()` Returns the entire composing text. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getComposingTextStart()()` Returns the index where the composing text starts. |
 | --- | --- |
-| [EditorBoundsInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getEditorBoundsInfo()()` Returns `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo` for the current editor, or `null` if IME is not subscribed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`. |
+| [EditorBoundsInfo](../android/view/inputmethod/EditorBoundsInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getEditorBoundsInfo()()` Returns `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo` for the current editor, or `null` if IME is not subscribed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerBaseline()()` Returns the vertical baseline position of the insertion marker, in the local coordinates that will be transformed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getMatrix()` when rendered on the screen. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerBottom()()` Returns the vertical bottom position of the insertion marker, in the local coordinates that will be transformed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getMatrix()` when rendered on the screen. |
 | --- | --- |
@@ -56,12 +56,12 @@ This class encapsulates locations of the text insertion point and the compositio
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerHorizontal()()` Returns the horizontal start of the insertion marker, in the local coordinates that will be transformed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getMatrix()` when rendered on the screen. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerTop()()` Returns the vertical top position of the insertion marker, in the local coordinates that will be transformed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getMatrix()` when rendered on the screen. |
 | --- | --- |
-| [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getMatrix()()` Returns a new instance of `https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#` that indicates the transformation matrix that is to be applied other positional data in this class. |
+| [Matrix](../android/graphics/Matrix.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getMatrix()()` Returns a new instance of `https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#` that indicates the transformation matrix that is to be applied other positional data in this class. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getSelectionEnd()()` Returns the index where the selection ends. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getSelectionStart()()` Returns the index where the selection starts. |
 | --- | --- |
-| [TextAppearanceInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getTextAppearanceInfo()()` Returns `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo` for the current editor, or `null` if IME is not subscribed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getVisibleLineBounds()()` Returns the list of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#`s indicating the locations of the visible line bounds in the editor. |
+| [TextAppearanceInfo](../android/view/inputmethod/TextAppearanceInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getTextAppearanceInfo()()` Returns `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAppearanceInfo` for the current editor, or `null` if IME is not subscribed with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getVisibleLineBounds()()` Returns the list of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#`s indicating the locations of the visible line bounds in the editor. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#toString()()` Returns a string representation of the object. |
@@ -69,7 +69,7 @@ This class encapsulates locations of the text insertion point and the compositio
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
 
 ## Constants
 
@@ -430,7 +430,7 @@ Used to package this object into a `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
+| `dest` | [Parcel](../android/os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags used for parceling. |
 
 ## Properties

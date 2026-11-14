@@ -2,7 +2,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # Account
 
-Kotlin | [Java](https://developer.android.com/reference/android/accounts/Account "View this page in Java")
+Kotlin | [Java](../android/accounts/Account.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Account : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.accounts.Account](https://developer.android.com/reference/kotlin/android/accounts/Account#) |
+| ↳ | [android.accounts.Account](../android/accounts/Account.md) |
 
 Value type that represents an Account in the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager`. This object is `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` and also overrides `https://developer.android.com/reference/kotlin/android/accounts/Account#equals(kotlin.Any)` and `https://developer.android.com/reference/kotlin/android/accounts/Account#hashCode()`, making it suitable for use as the key of a `https://developer.android.com/reference/kotlin/java/util/Map.html#`
 
@@ -37,7 +37,7 @@ Value type that represents an Account in the `https://developer.android.com/refe
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Account](https://developer.android.com/reference/kotlin/android/accounts/Account#)!\> | `https://developer.android.com/reference/kotlin/android/accounts/Account#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Account](../android/accounts/Account.md)!\> | `https://developer.android.com/reference/kotlin/android/accounts/Account#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#name:kotlin.String` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/Account#type:kotlin.String` <br /> |
 | --- | --- |
@@ -161,7 +161,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

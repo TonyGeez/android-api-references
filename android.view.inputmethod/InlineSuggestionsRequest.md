@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # InlineSuggestionsRequest
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest "View this page in Java") 
+Kotlin| [Java](../android/view/inputmethod/InlineSuggestionsRequest.md) 
 | --- | --- |
 
 ```
@@ -13,44 +13,44 @@ class InlineSuggestionsRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.InlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#) |
+| ↳ | [android.view.inputmethod.InlineSuggestionsRequest](../android/view/inputmethod/InlineSuggestionsRequest.md) |
 
-This class represents an inline suggestion request made by one app to get suggestions from the other source. See [InlineSuggestion](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion) for more information.
+This class represents an inline suggestion request made by one app to get suggestions from the other source. See [InlineSuggestion](../android/view/inputmethod/InlineSuggestion.md) for more information.
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest.Builder) A builder for [InlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#) |
+| | [Builder](../android/view/inputmethod/InlineSuggestionsRequest.Builder.md) A builder for [InlineSuggestionsRequest](../android/view/inputmethod/InlineSuggestionsRequest.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUGGESTION_COUNT_UNLIMITED](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#SUGGESTION_COUNT_UNLIMITED:kotlin.Int) Constant used to indicate not putting a cap on the number of suggestions to return. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUGGESTION_COUNT_UNLIMITED](../android/view/inputmethod/InlineSuggestionsRequest.md) Constant used to indicate not putting a cap on the number of suggestions to return. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getExtras())`()` The extras state propagated from the IME to pass extra data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/inputmethod/InlineSuggestionsRequest.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Bundle](../android/os/Bundle.md) | [getExtras](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` The extras state propagated from the IME to pass extra data. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHostPackageName](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getHostPackageName())`()` The package name of the app that requests for the inline suggestions and will host the embedded suggestion views. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#)!\> | [getInlinePresentationSpecs](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getInlinePresentationSpecs())`()` The [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#) for each suggestion in the response. |
-| [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#)? | [getInlineTooltipPresentationSpec](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getInlineTooltipPresentationSpec())`()` Specifies the UI specification for the inline suggestion tooltip in the response. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHostPackageName](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` The package name of the app that requests for the inline suggestions and will host the embedded suggestion views. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md)!\> | [getInlinePresentationSpecs](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` The [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) for each suggestion in the response. |
+| [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md)? | [getInlineTooltipPresentationSpec](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` Specifies the UI specification for the inline suggestion tooltip in the response. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSuggestionCount](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getMaxSuggestionCount())`()` Max number of suggestions expected from the response. |
-| [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | [getSupportedLocales](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#getSupportedLocales())`()` The IME provided locales for the request. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#hashCode())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSuggestionCount](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` Max number of suggestions expected from the response. |
+| [LocaleList](../android/os/LocaleList.md) | [getSupportedLocales](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` The IME provided locales for the request. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/inputmethod/InlineSuggestionsRequest.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/inputmethod/InlineSuggestionsRequest.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [InlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlineSuggestionsRequest](../android/view/inputmethod/InlineSuggestionsRequest.md)!\> | [CREATOR](../android/view/inputmethod/InlineSuggestionsRequest.md) <br /> |
 
 ## Constants
 
@@ -78,7 +78,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -123,7 +123,7 @@ Note: There should be no remote objects in the bundle, all included remote objec
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | This value cannot be`null`. |
+| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
 
 ### getHostPackageName
 
@@ -147,11 +147,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getInlinePresentationSpecs(): MutableList<InlinePresentationSpec!>
 ```
 
-The [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#) for each suggestion in the response. If the max suggestion count is larger than the number of specs in the list, then the last spec is used for the remainder of the suggestions. The list should not be empty.
+The [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) for each suggestion in the response. If the max suggestion count is larger than the number of specs in the list, then the last spec is used for the remainder of the suggestions. The list should not be empty.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md)!> | This value cannot be`null`. |
 
 ### getInlineTooltipPresentationSpec
 
@@ -165,7 +165,7 @@ Specifies the UI specification for the inline suggestion tooltip in the response
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [InlinePresentationSpec](https://developer.android.com/reference/kotlin/android/widget/inline/InlinePresentationSpec.html#)? | This value may be`null`. |
+| [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md)? | This value may be`null`. |
 
 ### getMaxSuggestionCount
 
@@ -193,7 +193,7 @@ Note for Autofill Providers: It is**recommended**for the returned inline suggest
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#) | This value cannot be`null`. |
+| [LocaleList](../android/os/LocaleList.md) | This value cannot be`null`. |
 
 ### hashCode
 
@@ -234,8 +234,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

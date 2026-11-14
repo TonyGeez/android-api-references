@@ -10,11 +10,11 @@ abstract class CharsetProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.charset.spi.CharsetProvider](https://developer.android.com/reference/kotlin/java/nio/charset/spi/CharsetProvider#) |
+| ↳ | [java.nio.charset.spi.CharsetProvider](../java/nio/charset/spi/CharsetProvider.md) |
 
 Charset service-provider class.
 
-A charset provider is a concrete subclass of this class that has a zero-argument constructor and some number of associated charset implementation classes. Charset providers may be installed in an instance of the Java platform as extensions. Providers may also be made available by adding them to the applet or application class path or by some other platform-specific means. Charset providers are looked up via the current thread's [context class](https://developer.android.com/reference/kotlin/java/lang/Thread.html#getContextClassLoader()).
+A charset provider is a concrete subclass of this class that has a zero-argument constructor and some number of associated charset implementation classes. Charset providers may be installed in an instance of the Java platform as extensions. Providers may also be made available by adding them to the applet or application class path or by some other platform-specific means. Charset providers are looked up via the current thread's [context class](../java/lang/Thread.md)).
 
 A charset provider identifies itself with a provider-configuration file named`java.nio.charset.spi.CharsetProvider`in the resource directory`META-INF/services`. The file should contain a list of fully-qualified concrete charset-provider class names, one per line. A line is terminated by any one of a line feed (`'\n'`), a carriage return (`'\r'`), or a carriage return followed immediately by a line feed. Space and tab characters surrounding each name, as well as blank lines, are ignored. The comment character is`'#'`(`'\u0023'`); on each line all characters following the first comment character are ignored. The file must be encoded in UTF-8.
 
@@ -24,12 +24,12 @@ If a particular concrete charset provider class is named in more than one config
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CharsetProvider](https://developer.android.com/reference/kotlin/java/nio/charset/spi/CharsetProvider#CharsetProvider())`()` Initializes a new charset provider. |
+| [CharsetProvider](../java/nio/charset/spi/CharsetProvider.md))`()` Initializes a new charset provider. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)! | [charsetForName](https://developer.android.com/reference/kotlin/java/nio/charset/spi/CharsetProvider#charsetForName(kotlin.String))`(`charsetName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a charset for the given charset name. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!\>! | [charsets](https://developer.android.com/reference/kotlin/java/nio/charset/spi/CharsetProvider#charsets())`()` Creates an iterator that iterates over the charsets supported by this provider. |
+| abstract [Charset](../java/nio/charset/Charset.md)! | [charsetForName](../java/nio/charset/spi/CharsetProvider.md))`(`charsetName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a charset for the given charset name. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Charset](../java/nio/charset/Charset.md)!\>! | [charsets](../java/nio/charset/spi/CharsetProvider.md))`()` Creates an iterator that iterates over the charsets supported by this provider. |
 
 ## Protected constructors
 
@@ -45,7 +45,7 @@ Initializes a new charset provider.
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#)`("charsetProvider")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [RuntimePermission](../java/lang/RuntimePermission.md)`("charsetProvider")` |
 
 ## Public methods
 
@@ -65,7 +65,7 @@ Retrieves a charset for the given charset name.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)! | A charset object for the named charset, or`null`if the named charset is not supported by this provider |
+| [Charset](../java/nio/charset/Charset.md)! | A charset object for the named charset, or`null`if the named charset is not supported by this provider |
 
 ### charsets
 
@@ -75,8 +75,8 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun charsets(): MutableIterator<Charset!>!
 ```
 
-Creates an iterator that iterates over the charsets supported by this provider. This method is used in the implementation of the [Charset.availableCharsets](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#availableCharsets())method.
+Creates an iterator that iterates over the charsets supported by this provider. This method is used in the implementation of the [Charset.availableCharsets](../java/nio/charset/Charset.md))method.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!>! | The new iterator |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [Charset](../java/nio/charset/Charset.md)!>! | The new iterator |

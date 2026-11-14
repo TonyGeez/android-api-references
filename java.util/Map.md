@@ -6,13 +6,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Map<K : Any!, V : Any!>
 ```
 
-| [java.util.Map](https://developer.android.com/reference/kotlin/java/util/Map#) |
+| [java.util.Map](../java/util/Map.md) |
 
 An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value.
 
 This interface takes the place of the `Dictionary` class, which was a totally abstract class rather than an interface.
 
-The `Map` interface provides three *collection views* , which allow a map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings. The *order* of a map is defined as the order in which the iterators on the map's collection views return their elements. Some map implementations, like the `TreeMap` class, make specific guarantees as to their encounter order; others, like the `HashMap` class, do not. Maps with a defined [encounter order](https://developer.android.com/reference/kotlin/java/util/SequencedCollection#encounter) are generally subtypes of the `https://developer.android.com/reference/kotlin/java/util/SequencedMap` interface.
+The `Map` interface provides three *collection views* , which allow a map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings. The *order* of a map is defined as the order in which the iterators on the map's collection views return their elements. Some map implementations, like the `TreeMap` class, make specific guarantees as to their encounter order; others, like the `HashMap` class, do not. Maps with a defined [encounter order](../java/util/SequencedCollection.md) are generally subtypes of the `https://developer.android.com/reference/kotlin/java/util/SequencedMap` interface.
 
 Note: great care must be exercised if mutable objects are used as map keys. The behavior of a map is not specified if the value of an object is changed in a manner that affects `equals` comparisons while the object is a key in the map. A special case of this prohibition is that it is not permissible for a map to contain itself as a key. While it is permissible for a map to contain itself as a value, extreme caution is advised: the `equals` and `hashCode` methods are no longer well defined on such a map.
 
@@ -30,12 +30,12 @@ Some map operations which perform recursive traversal of the map may fail with a
 
 The `https://developer.android.com/reference/kotlin/java/util/Map#of()`, `https://developer.android.com/reference/kotlin/java/util/Map#ofEntries(kotlin.collections.MutableMap.MutableEntry)`, and `https://developer.android.com/reference/kotlin/java/util/Map#copyOf(kotlin.collections.MutableMap)` static factory methods provide a convenient way to create unmodifiable maps. The `Map` instances created by these methods have the following characteristics:
 
-- They are [*unmodifiable*](https://developer.android.com/reference/kotlin/java/util/Collection#unmodifiable). Keys and values cannot be added, removed, or updated. Calling any mutator method on the Map will always cause `UnsupportedOperationException` to be thrown. However, if the contained keys or values are themselves mutable, this may cause the Map to behave inconsistently or its contents to appear to change.
+- They are [*unmodifiable*](../java/util/Collection.md). Keys and values cannot be added, removed, or updated. Calling any mutator method on the Map will always cause `UnsupportedOperationException` to be thrown. However, if the contained keys or values are themselves mutable, this may cause the Map to behave inconsistently or its contents to appear to change.
 - They disallow `null` keys and values. Attempts to create them with `null` keys or values result in `NullPointerException`.
 - They are serializable if all keys and values are serializable.
 - They reject duplicate keys at creation time. Duplicate keys passed to a static factory method result in `IllegalArgumentException`.
 - The iteration order of mappings is unspecified and is subject to change.
-- They are [value-based](https://developer.android.com/reference/kotlin/java/lang/doc-files/ValueBased.html). Programmers should treat instances that are [equal](https://developer.android.com/reference/kotlin/java/util/Map#) as interchangeable and should not use them for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. Callers should make no assumptions about the identity of the returned instances. Factories are free to create new instances or reuse existing ones.
+- They are [value-based](../java/lang/doc-files/ValueBased.md). Programmers should treat instances that are [equal](../java/util/Map.md) as interchangeable and should not use them for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. Callers should make no assumptions about the identity of the returned instances. Factories are free to create new instances or reuse existing ones.
 - They are serialized as specified on the [Serialized Form](https://developer.android.com//serialized-form.html#java.util.CollSer) page.
 
 This interface is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
@@ -56,7 +56,7 @@ This interface is a member of the [Java Collections Framework](https://developer
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#containsKey(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns `true` if this map contains a mapping for the specified key. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Map#containsValue(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns `true` if this map maps one or more keys to the specified value. |
 | --- | --- |
-| open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#copyOf(kotlin.collections.MutableMap)(map: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<out K, out V>)` Returns an [unmodifiable Map](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) containing the entries of the given Map. |
+| open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#copyOf(kotlin.collections.MutableMap)(map: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<out K, out V>)` Returns an [unmodifiable Map](../java/util/Map.md) containing the entries of the given Map. |
 | open static [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/Map#entry(java.util.Map.entry.K,%20java.util.Map.entry.V)(k: K, v: V)` Returns an unmodifiable `https://developer.android.com/reference/kotlin/java/util/Map.Entry` containing the given key and value. |
 | abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>!\> | `https://developer.android.com/reference/kotlin/java/util/Map#entrySet()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the mappings contained in this map. |
 | --- | --- |
@@ -141,7 +141,7 @@ The remapping function should not modify this map during computation.
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in K, in V?, out V?\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V?, out V?\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -187,7 +187,7 @@ The mapping function should not modify this map during computation.
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `mappingFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function)\<in K, out V\>: the mapping function to compute a value |
+| `mappingFunction` | [Function](../java/util/function/Function.md)\<in K, out V\>: the mapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -221,7 +221,7 @@ The remapping function should not modify this map during computation.
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in K, in V, out V?\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V?\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -289,7 +289,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun <K : Any!, V : Any!> copyOf(map: MutableMap<out K, out V>): MutableMap<K, V>
 ```
 
-Returns an [unmodifiable Map](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) containing the entries of the given Map. The given Map must not be null, and it must not contain any null keys or values. If the given Map is subsequently modified, the returned Map will not reflect such modifications.
+Returns an [unmodifiable Map](../java/util/Map.md) containing the entries of the given Map. The given Map must not be null, and it must not contain any null keys or values. If the given Map is subsequently modified, the returned Map will not reflect such modifications.
 
 | Parameters ||
 |---|---|
@@ -322,7 +322,7 @@ Returns an unmodifiable `https://developer.android.com/reference/kotlin/java/uti
 - They disallow `null` keys and values. Attempts to create them using a `null` key or value result in `NullPointerException`.
 - They are unmodifiable. Calls to `https://developer.android.com/reference/kotlin/java/util/Map.Entry#setValue(java.util.Map.Entry.V)` on a returned `Entry` result in `UnsupportedOperationException`.
 - They are not serializable.
-- They are [value-based](https://developer.android.com/reference/kotlin/java/lang/doc-files/ValueBased.html). Programmers should treat instances that are [equal](https://developer.android.com/reference/kotlin/java/util/Map#) as interchangeable and should not use them for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. Callers should make no assumptions about the identity of the returned instances. This method is free to create new instances or reuse existing ones.
+- They are [value-based](../java/lang/doc-files/ValueBased.md). Programmers should treat instances that are [equal](../java/util/Map.md) as interchangeable and should not use them for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. Callers should make no assumptions about the identity of the returned instances. This method is free to create new instances or reuse existing ones.
 
 <br />
 
@@ -372,7 +372,7 @@ Performs the given action for each entry in this map until all entries have been
 
 | Parameters ||
 |---|---|
-| `action` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer)\<in K, in V\>: The action to be performed for each entry |
+| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<in K, in V\>: The action to be performed for each entry |
 
 | Exceptions ||
 |---|---|
@@ -490,7 +490,7 @@ The remapping function should not modify this map during computation.
 |---|---|
 | `key` | K: key with which the resulting value is to be associated |
 | `value` | V: the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in V, in V, out V?\>: the remapping function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in V, in V, out V?\>: the remapping function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -513,7 +513,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open static fun <K : Any!, V : Any!> of(): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing zero mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing zero mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -535,7 +535,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing a single mapping. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing a single mapping. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -566,7 +566,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing two mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing two mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -603,7 +603,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing three mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing three mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -644,7 +644,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing four mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing four mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -690,7 +690,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing five mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing five mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -741,7 +741,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing six mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing six mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -796,7 +796,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing seven mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing seven mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -856,7 +856,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing eight mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing eight mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -921,7 +921,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing nine mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing nine mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -990,7 +990,7 @@ open static fun <K : Any!, V : Any!> of(
 ): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing ten mappings. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing ten mappings. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -1041,7 +1041,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 @SafeVarargs open static fun <K : Any!, V : Any!> ofEntries(vararg entries: MutableEntry<out K, out V>!): MutableMap<K, V>
 ```
 
-Returns an unmodifiable map containing keys and values extracted from the given entries. The entries themselves are not stored in the map. See [Unmodifiable Maps](https://developer.android.com/reference/kotlin/java/util/Map#unmodifiable) for details.
+Returns an unmodifiable map containing keys and values extracted from the given entries. The entries themselves are not stored in the map. See [Unmodifiable Maps](../java/util/Map.md) for details.
 
 | Parameters ||
 |---|---|
@@ -1101,7 +1101,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun putAll(m: MutableMap<out K, out V>): Unit
 ```
 
-Copies all of the mappings from the specified map to this map (optional operation). The effect of this call is equivalent to that of calling `https://developer.android.com/reference/kotlin/java/util/Map#put(java.util.Map.K,%20java.util.Map.V)` on this map once for each mapping from key `k` to value `v` in the specified map. The behavior of this operation is undefined if the specified map is modified while the operation is in progress. If the specified map has a defined [encounter order](https://developer.android.com/reference/kotlin/java/util/SequencedCollection#encounter), processing of its mappings generally occurs in that order.
+Copies all of the mappings from the specified map to this map (optional operation). The effect of this call is equivalent to that of calling `https://developer.android.com/reference/kotlin/java/util/Map#put(java.util.Map.K,%20java.util.Map.V)` on this map once for each mapping from key `k` to value `v` in the specified map. The behavior of this operation is undefined if the specified map is modified while the operation is in progress. If the specified map has a defined [encounter order](../java/util/SequencedCollection.md), processing of its mappings generally occurs in that order.
 
 | Parameters ||
 |---|---|
@@ -1280,7 +1280,7 @@ Replaces each entry's value with the result of invoking the given function on th
 
 | Parameters ||
 |---|---|
-| `function` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in K, in V, out V\>: the function to apply to each entry |
+| `function` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V\>: the function to apply to each entry |
 
 | Exceptions ||
 |---|---|

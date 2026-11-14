@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # CaseMap
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/CaseMap "View this page in Java") 
+Kotlin| [Java](../android/icu/text/CaseMap.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class CaseMap
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.CaseMap](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#) |
+| ↳ | [android.icu.text.CaseMap](../android/icu/text/CaseMap.md) |
 
-| Known Direct Subclasses [CaseMap.Fold](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Fold), [CaseMap.Lower](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Lower), [CaseMap.Title](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Title), [CaseMap.Upper](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Upper) |------------------------------------------------------------------------------------------------|-----------------------------------| | [CaseMap.Fold](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Fold) | Case folding options and methods. | | [CaseMap.Lower](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Lower) | Lowercasing options and methods. | | [CaseMap.Title](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Title) | Titlecasing options and methods. | | [CaseMap.Upper](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Upper) | Uppercasing options and methods. | |
+| Known Direct Subclasses [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md), [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md), [CaseMap.Title](../android/icu/text/CaseMap.Title.md), [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md) |------------------------------------------------------------------------------------------------|-----------------------------------| | [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md) | Case folding options and methods. | | [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md) | Lowercasing options and methods. | | [CaseMap.Title](../android/icu/text/CaseMap.Title.md) | Titlecasing options and methods. | | [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md) | Uppercasing options and methods. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Low-level case mapping options and methods. Immutable. "Setters" return instances with the union of the current and new options set. This class is not intended for public subclassing.
@@ -24,20 +24,20 @@ Low-level case mapping options and methods. Immutable. "Setters" return instance
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------|
-| | [Fold](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Fold) Case folding options and methods. |
-| | [Lower](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Lower) Lowercasing options and methods. |
-| | [Title](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Title) Titlecasing options and methods. |
+| | [Fold](../android/icu/text/CaseMap.Fold.md) Case folding options and methods. |
+| | [Lower](../android/icu/text/CaseMap.Lower.md) Lowercasing options and methods. |
+| | [Title](../android/icu/text/CaseMap.Title.md) Titlecasing options and methods. |
 | --- | --- |
-| | [Upper](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Upper) Uppercasing options and methods. |
+| | [Upper](../android/icu/text/CaseMap.Upper.md) Uppercasing options and methods. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CaseMap.Fold](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Fold)! | [fold](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#fold())`()` <br /> |
-| abstract [CaseMap](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#)! | [omitUnchangedText](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#omitUnchangedText())`()` Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](https://developer.android.com/reference/kotlin/android/icu/text/Edits). |
-| openstatic [CaseMap.Lower](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Lower)! | [toLower](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#toLower())`()` <br /> |
+| openstatic [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md)! | [fold](../android/icu/text/CaseMap.md))`()` <br /> |
+| abstract [CaseMap](../android/icu/text/CaseMap.md)! | [omitUnchangedText](../android/icu/text/CaseMap.md))`()` Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](../android/icu/text/Edits.md). |
+| openstatic [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md)! | [toLower](../android/icu/text/CaseMap.md))`()` <br /> |
 | --- | --- |
-| openstatic [CaseMap.Title](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Title)! | [toTitle](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#toTitle())`()` <br /> |
-| openstatic [CaseMap.Upper](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Upper)! | [toUpper](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#toUpper())`()` <br /> |
+| openstatic [CaseMap.Title](../android/icu/text/CaseMap.Title.md)! | [toTitle](../android/icu/text/CaseMap.md))`()` <br /> |
+| openstatic [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md)! | [toUpper](../android/icu/text/CaseMap.md))`()` <br /> |
 
 ## Public methods
 
@@ -51,7 +51,7 @@ open static fun fold(): CaseMap.Fold!
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------|
-| [CaseMap.Fold](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Fold)! | Case folding object with default options. |
+| [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md)! | Case folding object with default options. |
 
 ### omitUnchangedText
 
@@ -61,11 +61,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 abstract fun omitUnchangedText(): CaseMap!
 ```
 
-Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](https://developer.android.com/reference/kotlin/android/icu/text/Edits).
+Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](../android/icu/text/Edits.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------------------|
-| [CaseMap](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap#)! | an options object with this option. |
+| [CaseMap](../android/icu/text/CaseMap.md)! | an options object with this option. |
 
 ### toLower
 
@@ -77,7 +77,7 @@ open static fun toLower(): CaseMap.Lower!
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------|
-| [CaseMap.Lower](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Lower)! | Lowercasing object with default options. |
+| [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md)! | Lowercasing object with default options. |
 
 ### toTitle
 
@@ -89,7 +89,7 @@ open static fun toTitle(): CaseMap.Title!
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------|
-| [CaseMap.Title](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Title)! | Titlecasing object with default options. |
+| [CaseMap.Title](../android/icu/text/CaseMap.Title.md)! | Titlecasing object with default options. |
 
 ### toUpper
 
@@ -101,4 +101,4 @@ open static fun toUpper(): CaseMap.Upper!
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------|
-| [CaseMap.Upper](https://developer.android.com/reference/kotlin/android/icu/text/CaseMap.Upper)! | Uppercasing object with default options. |
+| [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md)! | Uppercasing object with default options. |

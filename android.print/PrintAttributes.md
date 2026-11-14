@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintAttributes
 
-Kotlin | [Java](https://developer.android.com/reference/android/print/PrintAttributes "View this page in Java")
+Kotlin | [Java](../android/print/PrintAttributes.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PrintAttributes : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes#) |
+| ↳ | [android.print.PrintAttributes](../android/print/PrintAttributes.md) |
 
 This class represents the attributes of a print job. These attributes describe how the printed content should be laid out. For example, the print attributes may state that the content should be laid out on a letter size with 300 DPI (dots per inch) resolution, have a margin of 10 mills (thousand of an inch) on all sides, and be black and white.
 
@@ -45,10 +45,10 @@ This class represents the attributes of a print job. These attributes describe h
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getColorMode()()` Gets the color mode. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getDuplexMode()()` Gets the duplex mode. |
-| [PrintAttributes.MediaSize](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.MediaSize)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getMediaSize()()` Gets the media size. |
-| [PrintAttributes.Margins](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Margins)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getMinMargins()()` Gets the minimal margins. |
+| [PrintAttributes.MediaSize](../android/print/PrintAttributes.MediaSize.md)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getMediaSize()()` Gets the media size. |
+| [PrintAttributes.Margins](../android/print/PrintAttributes.Margins.md)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getMinMargins()()` Gets the minimal margins. |
 | --- | --- |
-| [PrintAttributes.Resolution](https://developer.android.com/reference/kotlin/android/print/PrintAttributes.Resolution)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getResolution()()` Gets the resolution. |
+| [PrintAttributes.Resolution](../android/print/PrintAttributes.Resolution.md)? | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#getResolution()()` Gets the resolution. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -56,7 +56,7 @@ This class represents the attributes of a print job. These attributes describe h
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PrintAttributes](https://developer.android.com/reference/kotlin/android/print/PrintAttributes#)!\> | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrintAttributes](../android/print/PrintAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

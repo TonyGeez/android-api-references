@@ -11,10 +11,10 @@ open class NoSuchPaddingException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.crypto.NoSuchPaddingException](https://developer.android.com/reference/kotlin/javax/crypto/NoSuchPaddingException#) |
+| | | | ↳ | [javax.crypto.NoSuchPaddingException](../javax/crypto/NoSuchPaddingException.md) |
 
 This exception is thrown when a particular padding mechanism is requested but is not available in the environment.
 
@@ -22,8 +22,8 @@ This exception is thrown when a particular padding mechanism is requested but is
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoSuchPaddingException](https://developer.android.com/reference/kotlin/javax/crypto/NoSuchPaddingException#NoSuchPaddingException())`()` Constructs a NoSuchPaddingException with no detail message. |
-| [NoSuchPaddingException](https://developer.android.com/reference/kotlin/javax/crypto/NoSuchPaddingException#NoSuchPaddingException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchPaddingException with the specified detail message. |
+| [NoSuchPaddingException](../javax/crypto/NoSuchPaddingException.md))`()` Constructs a NoSuchPaddingException with no detail message. |
+| [NoSuchPaddingException](../javax/crypto/NoSuchPaddingException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchPaddingException with the specified detail message. |
 
 ## Public constructors
 

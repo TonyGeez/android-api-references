@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # CreateBeamUrisCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.CreateBeamUrisCallback "View this page in Java") 
+Kotlin| [Java](../android/nfc/NfcAdapter.CreateBeamUrisCallback.md) 
 | --- | --- |
 
 ```
 interface CreateBeamUrisCallback
 ```
 
-| [android.nfc.NfcAdapter.CreateBeamUrisCallback](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.CreateBeamUrisCallback#) |
+| [android.nfc.NfcAdapter.CreateBeamUrisCallback](../android/nfc/NfcAdapter.CreateBeamUrisCallback.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -22,7 +22,7 @@ interface CreateBeamUrisCallback
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>! | [createBeamUris](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.CreateBeamUrisCallback#createBeamUris(android.nfc.NfcEvent))`(`event:` ` [NfcEvent](https://developer.android.com/reference/kotlin/android/nfc/NfcEvent)!`)` <br /> |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](../android/net/Uri.md)!\>! | [createBeamUris](../android/nfc/NfcAdapter.CreateBeamUrisCallback.md))`(`event:` ` [NfcEvent](../android/nfc/NfcEvent.md)!`)` <br /> |
 
 ## Public methods
 

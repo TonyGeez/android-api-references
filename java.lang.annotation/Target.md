@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @Target([AnnotationTarget.ANNOTATION_CLASS]) class Target
 ```
 
-| [java.lang.annotation.Target](https://developer.android.com/reference/kotlin/java/lang/annotation/Target#) |
+| [java.lang.annotation.Target](../java/lang/annotation/Target.md) |
 
-Indicates the contexts in which an annotation interface is applicable. The declaration contexts and type contexts in which an annotation interface may be applicable are specified in JLS {@jls 9.6.4.1}, and denoted in source code by enum constants of [java.lang.annotation.ElementType](https://developer.android.com/reference/kotlin/java/lang/annotation/ElementType).
+Indicates the contexts in which an annotation interface is applicable. The declaration contexts and type contexts in which an annotation interface may be applicable are specified in JLS {@jls 9.6.4.1}, and denoted in source code by enum constants of [java.lang.annotation.ElementType](../java/lang/annotation/ElementType.md).
 
 If an `@Target` meta-annotation is not present on an annotation interface `T`, then an annotation of type `T` may be written as a modifier for any declaration.
 
@@ -50,11 +50,11 @@ It is a compile-time error for a single `ElementType` constant to appear more th
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Target](https://developer.android.com/reference/kotlin/java/lang/annotation/Target#Target(java.lang.annotation.ElementType))`(`vararg` `value:` ` [ElementType](https://developer.android.com/reference/kotlin/java/lang/annotation/ElementType)`)` Indicates the contexts in which an annotation interface is applicable. |
+| [Target](../java/lang/annotation/Target.md))`(`vararg` `value:` ` [ElementType](../java/lang/annotation/ElementType.md)`)` Indicates the contexts in which an annotation interface is applicable. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ElementType](https://developer.android.com/reference/kotlin/java/lang/annotation/ElementType)\> | [value](https://developer.android.com/reference/kotlin/java/lang/annotation/Target#value:kotlin.Array) Returns an array of the kinds of elements an annotation interface can be applied to. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ElementType](../java/lang/annotation/ElementType.md)\> | [value](../java/lang/annotation/Target.md) Returns an array of the kinds of elements an annotation interface can be applied to. |
 
 ## Public constructors
 
@@ -66,7 +66,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Target(vararg value: ElementType)
 ```
 
-Indicates the contexts in which an annotation interface is applicable. The declaration contexts and type contexts in which an annotation interface may be applicable are specified in JLS {@jls 9.6.4.1}, and denoted in source code by enum constants of [java.lang.annotation.ElementType](https://developer.android.com/reference/kotlin/java/lang/annotation/ElementType).
+Indicates the contexts in which an annotation interface is applicable. The declaration contexts and type contexts in which an annotation interface may be applicable are specified in JLS {@jls 9.6.4.1}, and denoted in source code by enum constants of [java.lang.annotation.ElementType](../java/lang/annotation/ElementType.md).
 
 If an `@Target` meta-annotation is not present on an annotation interface `T`, then an annotation of type `T` may be written as a modifier for any declaration.
 
@@ -116,4 +116,4 @@ Returns an array of the kinds of elements an annotation interface can be applied
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ElementType](https://developer.android.com/reference/kotlin/java/lang/annotation/ElementType)> | an array of the kinds of elements an annotation interface can be applied to |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ElementType](../java/lang/annotation/ElementType.md)> | an array of the kinds of elements an annotation interface can be applied to |

@@ -8,8 +8,8 @@ abstract class Conference : Conferenceable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.telecom.Conferenceable](https://developer.android.com/reference/kotlin/android/telecom/Conferenceable) ||
-| | ↳ | [android.telecom.Conference](https://developer.android.com/reference/kotlin/android/telecom/Conference#) |
+| ↳ | [android.telecom.Conferenceable](../android/telecom/Conferenceable.md) ||
+| | ↳ | [android.telecom.Conference](../android/telecom/Conference.md) |
 
 Represents a conference call which can contain any number of `https://developer.android.com/reference/kotlin/android/telecom/Connection` objects.
 
@@ -26,28 +26,28 @@ Represents a conference call which can contain any number of `https://developer.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#addConnection(android.telecom.Connection)(connection: https://developer.android.com/reference/kotlin/android/telecom/Connection!)` Adds the specified connection as a child of this conference. |
-| open static [Conference](https://developer.android.com/reference/kotlin/android/telecom/Conference#) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#createFailedConference(android.telecom.DisconnectCause,%20android.telecom.PhoneAccountHandle)(disconnectCause: https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause, phoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle)` Return a `Conference` which represents a failed conference attempt. |
+| open static [Conference](../android/telecom/Conference.md) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#createFailedConference(android.telecom.DisconnectCause,%20android.telecom.PhoneAccountHandle)(disconnectCause: https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause, phoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle)` Return a `Conference` which represents a failed conference attempt. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#destroy()()` Tears down the conference object and any of its current connections. |
 | --- | --- |
-| [CallAudioState](https://developer.android.com/reference/kotlin/android/telecom/CallAudioState)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getCallAudioState()()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConferenceableConnections()()` Returns the connections with which this connection can be conferenced. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Conferenceable](https://developer.android.com/reference/kotlin/android/telecom/Conferenceable)!\> | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConferenceables()()` Returns the `https://developer.android.com/reference/kotlin/android/telecom/Connection`s or `https://developer.android.com/reference/kotlin/android/telecom/Conference#`s with which this `https://developer.android.com/reference/kotlin/android/telecom/Conference#` can be merged / conferenced. |
+| [CallAudioState](../android/telecom/CallAudioState.md)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getCallAudioState()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Connection](../android/telecom/Connection.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConferenceableConnections()()` Returns the connections with which this connection can be conferenced. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Conferenceable](../android/telecom/Conferenceable.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConferenceables()()` Returns the `https://developer.android.com/reference/kotlin/android/telecom/Connection`s or `https://developer.android.com/reference/kotlin/android/telecom/Conference#`s with which this `https://developer.android.com/reference/kotlin/android/telecom/Conference#` can be merged / conferenced. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConnectionCapabilities()()` Returns the capabilities of the conference. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConnectionProperties()()` Returns the properties of the conference. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConnectionStartElapsedRealtimeMillis()()` Retrieves the connection start time of the `https://developer.android.com/reference/kotlin/android/telecom/Conference#`, if specified. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConnectionTime()()` Retrieves the connection start time of the `Conference`, if specified. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConnections()()` Returns the list of connections currently associated with the conference call. |
-| [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getCurrentCallEndpoint()()` Obtains the current CallEndpoint. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Connection](../android/telecom/Connection.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getConnections()()` Returns the list of connections currently associated with the conference call. |
+| [CallEndpoint](../android/telecom/CallEndpoint.md) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getCurrentCallEndpoint()()` Obtains the current CallEndpoint. |
 | --- | --- |
-| [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getDisconnectCause()()` <br /> |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getExtras()()` Returns the extras associated with this conference. |
-| [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getPhoneAccountHandle()()` Returns the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the conference call is being placed through. |
+| [DisconnectCause](../android/telecom/DisconnectCause.md)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getDisconnectCause()()` <br /> |
+| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getExtras()()` Returns the extras associated with this conference. |
+| [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getPhoneAccountHandle()()` Returns the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the conference call is being placed through. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getState()()` Gets the state of the conference call. |
-| [StatusHints](https://developer.android.com/reference/kotlin/android/telecom/StatusHints)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getStatusHints()()` <br /> |
-| open [Connection.VideoProvider](https://developer.android.com/reference/kotlin/android/telecom/Connection.VideoProvider)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getVideoProvider()()` Returns VideoProvider of the primary call. |
+| [StatusHints](../android/telecom/StatusHints.md)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getStatusHints()()` <br /> |
+| open [Connection.VideoProvider](../android/telecom/Connection.VideoProvider.md)! | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getVideoProvider()()` Returns VideoProvider of the primary call. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#getVideoState()()` Returns video state of the primary call. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/Conference#isRingbackRequested()()` Returns whether this conference is requesting that the system play a ringback tone on its behalf. |
@@ -138,7 +138,7 @@ Constructs a new Conference with a mandatory `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `phoneAccount` | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle)!: The `PhoneAccountHandle` associated with the conference. |
+| `phoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The `PhoneAccountHandle` associated with the conference. |
 
 ## Public methods
 
@@ -154,7 +154,7 @@ Adds the specified connection as a child of this conference.
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!: The connection to add. |
+| `connection` | [Connection](../android/telecom/Connection.md)!: The connection to add. |
 
 | Return ||
 |---|---|
@@ -177,8 +177,8 @@ The returned `Conference` can be assumed to `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `disconnectCause` | [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause): The disconnect cause, (see android.telecomm.DisconnectCause). This value cannot be `null`. |
-| `phoneAccount` | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle): This value cannot be `null`. |
+| `disconnectCause` | [DisconnectCause](../android/telecom/DisconnectCause.md): The disconnect cause, (see android.telecomm.DisconnectCause). This value cannot be `null`. |
+| `phoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -446,7 +446,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `participants` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: that will be added to this conference call. This value cannot be `null`. |
+| `participants` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: that will be added to this conference call. This value cannot be `null`. |
 
 ### onAnswer
 
@@ -474,7 +474,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `availableEndpoints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint)!\>: The available call endpoints. This value cannot be `null`. |
+| `availableEndpoints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CallEndpoint](../android/telecom/CallEndpoint.md)!\>: The available call endpoints. This value cannot be `null`. |
 
 ### onCallAudioStateChanged
 
@@ -491,7 +491,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `state` | [CallAudioState](https://developer.android.com/reference/kotlin/android/telecom/CallAudioState)!: The new call audio state. |
+| `state` | [CallAudioState](../android/telecom/CallAudioState.md)!: The new call audio state. |
 
 ### onCallEndpointChanged
 
@@ -505,7 +505,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `callEndpoint` | [CallEndpoint](https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint): The new call endpoint. This value cannot be `null`. |
+| `callEndpoint` | [CallEndpoint](../android/telecom/CallEndpoint.md): The new call endpoint. This value cannot be `null`. |
 
 ### onConnectionAdded
 
@@ -519,7 +519,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!: The newly added connection. |
+| `connection` | [Connection](../android/telecom/Connection.md)!: The newly added connection. |
 
 ### onDisconnect
 
@@ -545,7 +545,7 @@ These extras changes can originate from Telecom itself, or from an `https://deve
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The new extras bundle. |
+| `extras` | [Bundle](../android/os/Bundle.md)!: The new extras bundle. |
 
 ### onHold
 
@@ -579,7 +579,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `conference` | [Conference](https://developer.android.com/reference/kotlin/android/telecom/Conference#): The `Conference` to merge. This value cannot be `null`. |
+| `conference` | [Conference](../android/telecom/Conference.md): The `Conference` to merge. This value cannot be `null`. |
 
 ### onMerge
 
@@ -593,7 +593,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!: The `Connection` to merge. |
+| `connection` | [Connection](../android/telecom/Connection.md)!: The `Connection` to merge. |
 
 ### onMuteStateChanged
 
@@ -645,7 +645,7 @@ Notifies the `https://developer.android.com/reference/kotlin/android/telecom/Con
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!: The connection to separate. |
+| `connection` | [Connection](../android/telecom/Connection.md)!: The connection to separate. |
 
 ### onStopDtmfTone
 
@@ -691,7 +691,7 @@ No assumptions should be made as to how an In-Call UI or service will handle the
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): The extras to add. This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): The extras to add. This value cannot be `null`. |
 
 ### removeConnection
 
@@ -705,7 +705,7 @@ Removes the specified connection as a child of this conference.
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!: The connection to remove. |
+| `connection` | [Connection](../android/telecom/Connection.md)!: The connection to remove. |
 
 ### removeExtras
 
@@ -768,7 +768,7 @@ Expected connection events from the Telephony stack are:
 | Parameters ||
 |---|---|
 | `event` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The conference event. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Optional bundle containing extra information associated with the event. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: Optional bundle containing extra information associated with the event. This value may be `null`. |
 
 ### setActive
 
@@ -795,7 +795,7 @@ Sets the connections with which this connection can be conferenced.
 
 | Parameters ||
 |---|---|
-| `conferenceableConnections` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection)!\>!: The set of connections this conference can conference with. |
+| `conferenceableConnections` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Connection](../android/telecom/Connection.md)!\>!: The set of connections this conference can conference with. |
 
 ### setConferenceables
 
@@ -809,7 +809,7 @@ Sets a list of connections or conferences with which this conference can be conf
 
 | Parameters ||
 |---|---|
-| `conferenceables` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Conferenceable](https://developer.android.com/reference/kotlin/android/telecom/Conferenceable)!\>: The set of conferenceables this conference can conference with. This value cannot be `null`. |
+| `conferenceables` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Conferenceable](../android/telecom/Conferenceable.md)!\>: The set of conferenceables this conference can conference with. This value cannot be `null`. |
 
 ### setConnectionCapabilities
 
@@ -918,7 +918,7 @@ Sets state to disconnected.
 
 | Parameters ||
 |---|---|
-| `disconnectCause` | [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause)!: The reason for the disconnection, as described by `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause`. |
+| `disconnectCause` | [DisconnectCause](../android/telecom/DisconnectCause.md)!: The reason for the disconnection, as described by `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause`. |
 
 ### setExtras
 
@@ -938,7 +938,7 @@ No assumptions should be made as to how an In-Call UI or service will handle the
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: The extras associated with this `Conference`. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: The extras associated with this `Conference`. This value may be `null`. |
 
 ### setOnHold
 
@@ -986,7 +986,7 @@ Sets the label and icon status to display in the InCall UI.
 
 | Parameters ||
 |---|---|
-| `statusHints` | [StatusHints](https://developer.android.com/reference/kotlin/android/telecom/StatusHints)!: The status label and icon to set. |
+| `statusHints` | [StatusHints](../android/telecom/StatusHints.md)!: The status label and icon to set. |
 
 ### setVideoProvider
 
@@ -1003,7 +1003,7 @@ Sets the video connection provider.
 
 | Parameters ||
 |---|---|
-| `videoProvider` | [Connection.VideoProvider](https://developer.android.com/reference/kotlin/android/telecom/Connection.VideoProvider)!: The video provider. |
+| `videoProvider` | [Connection.VideoProvider](../android/telecom/Connection.VideoProvider.md)!: The video provider. |
 
 ### setVideoState
 

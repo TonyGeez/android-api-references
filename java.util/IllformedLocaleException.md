@@ -11,24 +11,24 @@ open class IllformedLocaleException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.IllformedLocaleException](https://developer.android.com/reference/kotlin/java/util/IllformedLocaleException#) |
+| | | | ↳ | [java.util.IllformedLocaleException](../java/util/IllformedLocaleException.md) |
 
-Thrown by methods in [Locale](https://developer.android.com/reference/kotlin/java/util/Locale) and [Locale.Builder](https://developer.android.com/reference/kotlin/java/util/Locale.Builder) to indicate that an argument is not a well-formed BCP 47 tag.
+Thrown by methods in [Locale](../java/util/Locale.md) and [Locale.Builder](../java/util/Locale.Builder.md) to indicate that an argument is not a well-formed BCP 47 tag.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllformedLocaleException](https://developer.android.com/reference/kotlin/java/util/IllformedLocaleException#IllformedLocaleException())`()` Constructs a new`IllformedLocaleException`with no detail message and -1 as the error index. |
-| [IllformedLocaleException](https://developer.android.com/reference/kotlin/java/util/IllformedLocaleException#IllformedLocaleException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`IllformedLocaleException`with the given message and -1 as the error index. |
-| [IllformedLocaleException](https://developer.android.com/reference/kotlin/java/util/IllformedLocaleException#IllformedLocaleException(kotlin.String,%20kotlin.Int))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`IllformedLocaleException`with the given message and the error index. |
+| [IllformedLocaleException](../java/util/IllformedLocaleException.md))`()` Constructs a new`IllformedLocaleException`with no detail message and -1 as the error index. |
+| [IllformedLocaleException](../java/util/IllformedLocaleException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`IllformedLocaleException`with the given message and -1 as the error index. |
+| [IllformedLocaleException](../java/util/IllformedLocaleException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`IllformedLocaleException`with the given message and the error index. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorIndex](https://developer.android.com/reference/kotlin/java/util/IllformedLocaleException#getErrorIndex())`()` Returns the index where the error was found. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorIndex](../java/util/IllformedLocaleException.md))`()` Returns the index where the error was found. |
 
 ## Public constructors
 

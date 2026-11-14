@@ -8,9 +8,9 @@ abstract class Calendar : Cloneable, Comparable<Calendar!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar#) |
+| ↳ | [java.util.Calendar](../java/util/Calendar.md) |
 
-| Known Direct Subclasses [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar) |---|---| | [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar) | `GregorianCalendar` is a concrete subclass of `Calendar` and provides the standard calendar system used by most of the world. | |
+| Known Direct Subclasses [GregorianCalendar](../java/util/GregorianCalendar.md) |---|---| | [GregorianCalendar](../java/util/GregorianCalendar.md) | `GregorianCalendar` is a concrete subclass of `Calendar` and provides the standard calendar system used by most of the world. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The class is an abstract class that provides methods for converting between a specific instant in time and a set of `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray` such as `YEAR``MONTH``DAY_OF_MONTH``HOUR`, and so on, and for manipulating the calendar fields, such as getting the date of the next week. An instant in time can be represented by a millisecond value that is an offset from the *Epoch*, January 1, 1970 00:00:00.000 GMT (Gregorian).
@@ -38,7 +38,7 @@ When a `Calendar` is in non-lenient mode, it throws an exception if there is any
 
 ### First Week
 
-`Calendar` defines a locale-specific seven day week using two parameters: the first day of the week and the minimal days in first week (from 1 to 7). These numbers are taken from the locale resource data or the locale itself when a `Calendar` is constructed. If the designated locale contains "fw" [Unicode extensions](https://developer.android.com/reference/kotlin/java/util/Locale#def_locale_extension), the first day of the week will be obtained according to those extensions. They may also be specified explicitly through the methods for setting their values.
+`Calendar` defines a locale-specific seven day week using two parameters: the first day of the week and the minimal days in first week (from 1 to 7). These numbers are taken from the locale resource data or the locale itself when a `Calendar` is constructed. If the designated locale contains "fw" [Unicode extensions](../java/util/Locale.md), the first day of the week will be obtained according to those extensions. They may also be specified explicitly through the methods for setting their values.
 
 When setting or getting the `WEEK_OF_MONTH` or `WEEK_OF_YEAR` fields, `Calendar` must determine the first week of the month or year as a reference point. The first week of a month or year is defined as the earliest seven day period beginning on `getFirstDayOfWeek()` and containing at least `getMinimalDaysInFirstWeek()` days of that month or year. Weeks numbered ..., -1, 0 precede the first week; weeks numbered 2, 3,... follow it. Note that the normalized numbering returned by `get()` may be different. For example, a specific `Calendar` subclass may designate the week before week 1 of a year as week `n` of the previous year.
 
@@ -187,11 +187,11 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#after(kotlin.Any)(when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns whether this `Calendar` represents a time after the time represented by the specified `Object`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#before(kotlin.Any)(when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns whether this `Calendar` represents a time before the time represented by the specified `Object`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clear()()` Sets all the calendar field values and the time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) of this `Calendar` undefined. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clear(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the given calendar field value and the time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) of this `Calendar` undefined. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clear()()` Sets all the calendar field values and the time value (millisecond offset from the [Epoch](../java/util/Calendar.md)) of this `Calendar` undefined. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clear(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the given calendar field value and the time value (millisecond offset from the [Epoch](../java/util/Calendar.md)) of this `Calendar` undefined. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clone()()` Creates and returns a copy of this object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#compareTo(java.util.Calendar)(other: https://developer.android.com/reference/kotlin/java/util/Calendar#)` Compares the time values (millisecond offsets from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) represented by two `Calendar` objects. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#compareTo(java.util.Calendar)(other: https://developer.android.com/reference/kotlin/java/util/Calendar#)` Compares the time values (millisecond offsets from the [Epoch](../java/util/Calendar.md)) represented by two `Calendar` objects. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this `Calendar` to the specified `Object`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#get(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the given calendar field. |
 | --- | --- |
@@ -199,7 +199,7 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum value that the specified calendar field could have, given the time value of this `Calendar`. |
 | open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Calendar#getAvailableCalendarTypes()()` Returns an unmodifiable `Set` containing all calendar types supported by `Calendar` in the runtime environment. |
 | --- | --- |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!\> | `https://developer.android.com/reference/kotlin/java/util/Calendar#getAvailableLocales()()` Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\> | `https://developer.android.com/reference/kotlin/java/util/Calendar#getAvailableLocales()()` Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getCalendarType()()` Returns the calendar type of this `Calendar`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale)` Returns the string representation of the calendar `field` value in the given `style` and `locale`. |
 | --- | --- |
@@ -207,20 +207,20 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()()` Gets what the first day of the week is; e. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getGreatestMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the highest minimum value for the given calendar field of this `Calendar` instance. |
 | --- | --- |
-| open static [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar#) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance()()` Gets a calendar using the default time zone and locale. |
-| open static [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar#) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.Locale)(aLocale: https://developer.android.com/reference/kotlin/java/util/Locale)` Gets a calendar using the default time zone and specified locale. |
-| open static [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar#) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.TimeZone)(zone: https://developer.android.com/reference/kotlin/java/util/TimeZone)` Gets a calendar using the specified time zone and default locale. |
+| open static [Calendar](../java/util/Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance()()` Gets a calendar using the default time zone and locale. |
+| open static [Calendar](../java/util/Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.Locale)(aLocale: https://developer.android.com/reference/kotlin/java/util/Locale)` Gets a calendar using the default time zone and specified locale. |
+| open static [Calendar](../java/util/Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.TimeZone)(zone: https://developer.android.com/reference/kotlin/java/util/TimeZone)` Gets a calendar using the specified time zone and default locale. |
 | --- | --- |
-| open static [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar#) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/java/util/TimeZone, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale)` Gets a calendar with the specified time zone and locale. |
+| open static [Calendar](../java/util/Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/java/util/TimeZone, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale)` Gets a calendar with the specified time zone and locale. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getLeastMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the lowest maximum value for the given calendar field of this `Calendar` instance. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum value for the given calendar field of this `Calendar` instance. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()()` Gets what the minimal days required in the first week of the year are; e. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum value for the given calendar field of this `Calendar` instance. |
-| [Date](https://developer.android.com/reference/kotlin/java/util/Date) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTime()()` Returns a `Date` object representing this `Calendar`'s time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)"). |
+| [Date](../java/util/Date.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTime()()` Returns a `Date` object representing this `Calendar`'s time value (millisecond offset from the [Epoch](../java/util/Calendar.md)"). |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeInMillis()()` Returns this Calendar's time value in milliseconds. |
-| open [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeZone()()` Gets the time zone. |
+| open [TimeZone](../java/util/TimeZone.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeZone()()` Gets the time zone. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getWeekYear()()` Returns the week year represented by this `Calendar`. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getWeeksInWeekYear()()` Returns the number of weeks in the week year represented by this `Calendar`. |
@@ -247,7 +247,7 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setTimeZone(java.util.TimeZone)(value: https://developer.android.com/reference/kotlin/java/util/TimeZone)` Sets the time zone with the given time zone value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setWeekDate(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(weekYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weekOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the date of this `Calendar` with the given date specifiers - week year, week of year, and day of week. |
 | --- | --- |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#) | `https://developer.android.com/reference/kotlin/java/util/Calendar#toInstant()()` Converts this object to an `https://developer.android.com/reference/kotlin/java/time/Instant.html#`. |
+| [Instant](../java/time/Instant.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#toInstant()()` Converts this object to an `https://developer.android.com/reference/kotlin/java/time/Instant.html#`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#toString()()` Return a string representation of this calendar. |
 
 | Protected methods ||
@@ -1026,8 +1026,8 @@ Constructs a calendar with the specified time zone and locale.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone): the time zone to use |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale): the locale for the week data |
+| `zone` | [TimeZone](../java/util/TimeZone.md): the time zone to use |
+| `aLocale` | [Locale](../java/util/Locale.md): the locale for the week data |
 
 ## Public methods
 
@@ -1124,7 +1124,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun clear(): Unit
 ```
 
-Sets all the calendar field values and the time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) of this `Calendar` undefined. This means that `https://developer.android.com/reference/kotlin/java/util/Calendar#isSet(kotlin.Int)` will return `false` for all the calendar fields, and the date and time calculations will treat the fields as if they had never been set. A `Calendar` implementation class may use its specific default field values for date/time calculations. For example, `GregorianCalendar` uses 1970 if the `YEAR` field value is undefined.
+Sets all the calendar field values and the time value (millisecond offset from the [Epoch](../java/util/Calendar.md)) of this `Calendar` undefined. This means that `https://developer.android.com/reference/kotlin/java/util/Calendar#isSet(kotlin.Int)` will return `false` for all the calendar fields, and the date and time calculations will treat the fields as if they had never been set. A `Calendar` implementation class may use its specific default field values for date/time calculations. For example, `GregorianCalendar` uses 1970 if the `YEAR` field value is undefined.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/util/Calendar#clear(kotlin.Int)`
@@ -1137,9 +1137,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun clear(field: Int): Unit
 ```
 
-Sets the given calendar field value and the time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) of this `Calendar` undefined. This means that `https://developer.android.com/reference/kotlin/java/util/Calendar#isSet(kotlin.Int)` will return `false`, and the date and time calculations will treat the field as if it had never been set. A `Calendar` implementation class may use the field's specific default value for date and time calculations.
+Sets the given calendar field value and the time value (millisecond offset from the [Epoch](../java/util/Calendar.md)) of this `Calendar` undefined. This means that `https://developer.android.com/reference/kotlin/java/util/Calendar#isSet(kotlin.Int)` will return `false`, and the date and time calculations will treat the field as if it had never been set. A `Calendar` implementation class may use the field's specific default value for date and time calculations.
 
-The `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR_OF_DAY:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR:kotlin.Int` and `https://developer.android.com/reference/kotlin/java/util/Calendar#AM_PM:kotlin.Int` fields are handled independently and the [the resolution rule for the time of day](https://developer.android.com/reference/kotlin/java/util/Calendar#time_resolution) is applied. Clearing one of the fields doesn't reset the hour of day value of this `Calendar`. Use `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)` to reset the hour value.
+The `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR_OF_DAY:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR:kotlin.Int` and `https://developer.android.com/reference/kotlin/java/util/Calendar#AM_PM:kotlin.Int` fields are handled independently and the [the resolution rule for the time of day](../java/util/Calendar.md) is applied. Clearing one of the fields doesn't reset the hour of day value of this `Calendar`. Use `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)` to reset the hour value.
 
 | Parameters ||
 |---|---|
@@ -1175,7 +1175,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun compareTo(other: Calendar): Int
 ```
 
-Compares the time values (millisecond offsets from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) represented by two `Calendar` objects.
+Compares the time values (millisecond offsets from the [Epoch](../java/util/Calendar.md)) represented by two `Calendar` objects.
 
 | Parameters ||
 |---|---|
@@ -1201,7 +1201,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun equals(other: Any?): Boolean
 ```
 
-Compares this `Calendar` to the specified `Object`. The result is `true` if and only if the argument is a `Calendar` object of the same calendar system that represents the same time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) under the same `Calendar` parameters as this object.
+Compares this `Calendar` to the specified `Object`. The result is `true` if and only if the argument is a `Calendar` object of the same calendar system that represents the same time value (millisecond offset from the [Epoch](../java/util/Calendar.md)) under the same `Calendar` parameters as this object.
 
 The `Calendar` parameters are the values represented by the `isLenient`, `getFirstDayOfWeek`, `getMinimalDaysInFirstWeek` and `getTimeZone` methods. If there is any difference in those parameters between the two `Calendar`s, this method returns `false`.
 
@@ -1306,7 +1306,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open static fun getAvailableCalendarTypes(): MutableSet<String!>
 ```
 
-Returns an unmodifiable `Set` containing all calendar types supported by `Calendar` in the runtime environment. The available calendar types can be used for the [Unicode locale extensions](https://developer.android.com/reference/kotlin/java/util/Locale#def_locale_extension). The `Set` returned contains at least `"gregory"`. The calendar types don't include aliases, such as `"gregorian"` for `"gregory"`.
+Returns an unmodifiable `Set` containing all calendar types supported by `Calendar` in the runtime environment. The available calendar types can be used for the [Unicode locale extensions](../java/util/Locale.md). The `Set` returned contains at least `"gregory"`. The calendar types don't include aliases, such as `"gregorian"` for `"gregory"`.
 
 | Return ||
 |---|---|
@@ -1375,7 +1375,7 @@ The default implementation supports the calendar fields for which a `https://dev
 |---|---|
 | `field` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the calendar field for which the string representation is returned |
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the style applied to the string representation; one of `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int` (`https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT:kotlin.Int`), `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_STANDALONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int` (`https://developer.android.com/reference/kotlin/java/util/Calendar#LONG:kotlin.Int`), `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_STANDALONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_FORMAT:kotlin.Int`, or `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_STANDALONE:kotlin.Int`. |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale): the locale for the string representation (any calendar types specified by `locale` are ignored) |
+| `locale` | [Locale](../java/util/Locale.md): the locale for the string representation (any calendar types specified by `locale` are ignored) |
 | --- | --- |
 
 | Return ||
@@ -1399,7 +1399,7 @@ open fun getDisplayNames(
 ): MutableMap<String!, Int!>?
 ```
 
-Returns a `Map` containing all names of the calendar `field` in the given `style` and `locale` and their corresponding field values. For example, if this `Calendar` is a `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar`, the returned map would contain "Jan" to `https://developer.android.com/reference/kotlin/java/util/Calendar#JANUARY:kotlin.Int`, "Feb" to `https://developer.android.com/reference/kotlin/java/util/Calendar#FEBRUARY:kotlin.Int`, and so on, in the [short](https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT:kotlin.Int) style in an English locale.
+Returns a `Map` containing all names of the calendar `field` in the given `style` and `locale` and their corresponding field values. For example, if this `Calendar` is a `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar`, the returned map would contain "Jan" to `https://developer.android.com/reference/kotlin/java/util/Calendar#JANUARY:kotlin.Int`, "Feb" to `https://developer.android.com/reference/kotlin/java/util/Calendar#FEBRUARY:kotlin.Int`, and so on, in the [short](../java/util/Calendar.md) style in an English locale.
 
 Narrow names may not be unique due to use of single characters, such as "S" for Sunday and Saturday. In that case narrow names are not included in the returned `Map`.
 
@@ -1411,7 +1411,7 @@ The default implementation supports display names contained in a `https://develo
 |---|---|
 | `field` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the calendar field for which the display names are returned |
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the style applied to the string representation; one of `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int` (`https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT:kotlin.Int`), `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_STANDALONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int` (`https://developer.android.com/reference/kotlin/java/util/Calendar#LONG:kotlin.Int`), `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_STANDALONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_FORMAT:kotlin.Int`, or `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_STANDALONE:kotlin.Int` |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale): the locale for the display names |
+| `locale` | [Locale](../java/util/Locale.md): the locale for the display names |
 | --- | --- |
 
 | Return ||
@@ -1478,7 +1478,7 @@ open static fun getInstance(): Calendar
 
 Gets a calendar using the default time zone and locale. The `Calendar` returned is based on the current time in the default time zone with the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category` locale.
 
-Since Android 13, if the locale contains the time zone with "tz" [Unicode extension](https://developer.android.com/reference/kotlin/java/util/Locale#def_locale_extension), that time zone is used instead.
+Since Android 13, if the locale contains the time zone with "tz" [Unicode extension](../java/util/Locale.md), that time zone is used instead.
 
 | Return ||
 |---|---|
@@ -1494,11 +1494,11 @@ open static fun getInstance(aLocale: Locale): Calendar
 
 Gets a calendar using the default time zone and specified locale. The `Calendar` returned is based on the current time in the default time zone with the given locale.
 
-Since Android 13, if the locale contains the time zone with "tz" [Unicode extension](https://developer.android.com/reference/kotlin/java/util/Locale#def_locale_extension), that time zone is used instead.
+Since Android 13, if the locale contains the time zone with "tz" [Unicode extension](../java/util/Locale.md), that time zone is used instead.
 
 | Parameters ||
 |---|---|
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale): the locale for the week data |
+| `aLocale` | [Locale](../java/util/Locale.md): the locale for the week data |
 
 | Return ||
 |---|---|
@@ -1516,7 +1516,7 @@ Gets a calendar using the specified time zone and default locale. The `Calendar`
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone): the time zone to use |
+| `zone` | [TimeZone](../java/util/TimeZone.md): the time zone to use |
 
 | Return ||
 |---|---|
@@ -1537,8 +1537,8 @@ Gets a calendar with the specified time zone and locale. The `Calendar` returned
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone): the time zone to use |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale): the locale for the week data |
+| `zone` | [TimeZone](../java/util/TimeZone.md): the time zone to use |
+| `aLocale` | [Locale](../java/util/Locale.md): the locale for the week data |
 
 | Return ||
 |---|---|
@@ -1648,7 +1648,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getTime(): Date
 ```
 
-Returns a `Date` object representing this `Calendar`'s time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)").
+Returns a `Date` object representing this `Calendar`'s time value (millisecond offset from the [Epoch](../java/util/Calendar.md)").
 
 | Return ||
 |---|---|
@@ -1700,7 +1700,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getWeekYear(): Int
 ```
 
-Returns the week year represented by this `Calendar`. The week year is in sync with the week cycle. The [first day of the first week](https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()) is the first day of the week year.
+Returns the week year represented by this `Calendar`. The week year is in sync with the week cycle. The [first day of the first week](../java/util/Calendar.md)) is the first day of the week year.
 
 The default implementation of this method throws an `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#`.
 
@@ -2059,7 +2059,7 @@ Note: Calling `setTime()` with `Date(Long.MAX_VALUE)` or `Date(Long.MIN_VALUE)` 
 
 | Parameters ||
 |---|---|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date): the given Date. |
+| `date` | [Date](../java/util/Date.md): the given Date. |
 
 | Exceptions ||
 |---|---|
@@ -2101,7 +2101,7 @@ Sets the time zone with the given time zone value.
 
 | Parameters ||
 |---|---|
-| `value` | [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone): the given time zone. |
+| `value` | [TimeZone](../java/util/TimeZone.md): the given time zone. |
 
 ### setWeekDate
 
@@ -2181,7 +2181,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun complete(): Unit
 ```
 
-Fills in any unset fields in the calendar fields. First, the `https://developer.android.com/reference/kotlin/java/util/Calendar#computeTime()` method is called if the time value (millisecond offset from the [Epoch](https://developer.android.com/reference/kotlin/java/util/Calendar#Epoch)) has not been calculated from calendar field values. Then, the `https://developer.android.com/reference/kotlin/java/util/Calendar#computeFields()` method is called to calculate all calendar field values.
+Fills in any unset fields in the calendar fields. First, the `https://developer.android.com/reference/kotlin/java/util/Calendar#computeTime()` method is called if the time value (millisecond offset from the [Epoch](../java/util/Calendar.md)) has not been calculated from calendar field values. Then, the `https://developer.android.com/reference/kotlin/java/util/Calendar#computeFields()` method is called to calculate all calendar field values.
 
 ### computeFields
 

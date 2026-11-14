@@ -8,7 +8,7 @@ class UScript
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.lang.UScript](https://developer.android.com/reference/kotlin/android/icu/lang/UScript#) |
+| ↳ | [android.icu.lang.UScript](../android/icu/lang/UScript.md) |
 
 Constants for ISO 15924 script codes, and related functions.
 
@@ -336,7 +336,7 @@ Starting with ICU 55, script codes are only added when their scripts have been o
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getScriptExtensions(kotlin.Int,%20java.util.BitSet)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, set: https://developer.android.com/reference/kotlin/java/util/BitSet.html#!)` Sets code point c's Script_Extensions as script code integers into the output BitSet. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getShortName(kotlin.Int)(scriptCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the 4-letter ISO 15924 script code, which is the same as the short Unicode script name if Unicode has names for the script. |
-| static [UScript.ScriptUsage](https://developer.android.com/reference/kotlin/android/icu/lang/UScript.ScriptUsage)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getUsage(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the script usage according to UAX #31 Unicode Identifier and Pattern Syntax. |
+| static [UScript.ScriptUsage](../android/icu/lang/UScript.ScriptUsage.md)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getUsage(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the script usage according to UAX #31 Unicode Identifier and Pattern Syntax. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#hasScript(kotlin.Int,%20kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, sc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Do the Script_Extensions of code point c contain script sc? If c does not have explicit Script_Extensions, then this tests whether c has the Script property value sc. |
 | --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#isCased(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if in modern (or most recent) usage of the script case distinctions are customary. |
@@ -2936,7 +2936,7 @@ Gets a script codes associated with the given locale or ISO 15924 abbreviation o
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: ULocale |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: ULocale |
 
 | Return ||
 |---|---|
@@ -2974,7 +2974,7 @@ Gets a script codes associated with the given locale or ISO 15924 abbreviation o
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: Locale |
+| `locale` | [Locale](../java/util/Locale.md)!: Locale |
 
 | Return ||
 |---|---|
@@ -3082,7 +3082,7 @@ Some characters are commonly used in multiple scripts. For more information, see
 | Parameters ||
 |---|---|
 | `c` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): code point |
-| `set` | [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet.html#)!: set of script code integers; will be cleared, then bits are set corresponding to c's Script_Extensions |
+| `set` | [BitSet](../java/util/BitSet.md)!: set of script code integers; will be cleared, then bits are set corresponding to c's Script_Extensions |
 
 | Return ||
 |---|---|

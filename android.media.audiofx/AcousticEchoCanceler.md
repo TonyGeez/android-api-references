@@ -2,7 +2,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # AcousticEchoCanceler
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/audiofx/AcousticEchoCanceler "View this page in Java")
+Kotlin | [Java](../android/media/audiofx/AcousticEchoCanceler.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class AcousticEchoCanceler : AudioEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect) ||
-| | ↳ | [android.media.audiofx.AcousticEchoCanceler](https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler#) |
+| ↳ | [android.media.audiofx.AudioEffect](../android/media/audiofx/AudioEffect.md) ||
+| | ↳ | [android.media.audiofx.AcousticEchoCanceler](../android/media/audiofx/AcousticEchoCanceler.md) |
 
 Acoustic Echo Canceler (AEC).
 
@@ -36,7 +36,7 @@ See `https://developer.android.com/reference/kotlin/android/media/audiofx/AudioE
 
 | Public methods ||
 |---|---|
-| open static [AcousticEchoCanceler](https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler#)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler#create(kotlin.Int)(audioSession: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an AcousticEchoCanceler and attaches it to the AudioRecord on the audio session specified. |
+| open static [AcousticEchoCanceler](../android/media/audiofx/AcousticEchoCanceler.md)! | `https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler#create(kotlin.Int)(audioSession: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an AcousticEchoCanceler and attaches it to the AudioRecord on the audio session specified. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler#isAvailable()()` Checks if the device implements acoustic echo cancellation. |
 
 | Inherited functions ||

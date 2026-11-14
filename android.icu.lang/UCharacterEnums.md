@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UCharacterEnums
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacterEnums "View this page in Java") 
+Kotlin| [Java](../android/icu/lang/UCharacterEnums.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UCharacterEnums
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.lang.UCharacterEnums](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums#) |
+| ↳ | [android.icu.lang.UCharacterEnums](../android/icu/lang/UCharacterEnums.md) |
 
 A container for the different 'enumerated types' used by UCharacter.
 
@@ -21,5 +21,5 @@ A container for the different 'enumerated types' used by UCharacter.
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [ECharacterCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory) 'Enum' for the CharacterCategory constants. |
-| abstract | [ECharacterDirection](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterDirection) 'Enum' for the CharacterDirection constants. |
+| abstract | [ECharacterCategory](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) 'Enum' for the CharacterCategory constants. |
+| abstract | [ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) 'Enum' for the CharacterDirection constants. |

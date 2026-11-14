@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # PlaybackMetrics
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/PlaybackMetrics "View this page in Java") 
+Kotlin| [Java](../android/media/metrics/PlaybackMetrics.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PlaybackMetrics : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.PlaybackMetrics](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#) |
+| ↳ | [android.media.metrics.PlaybackMetrics](../android/media/metrics/PlaybackMetrics.md) |
 
 This class is used to store playback data.
 
@@ -21,83 +21,83 @@ This class is used to store playback data.
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics.Builder) A builder for [PlaybackMetrics](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#) |
+| | [Builder](../android/media/metrics/PlaybackMetrics.Builder.md) A builder for [PlaybackMetrics](../android/media/metrics/PlaybackMetrics.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_AD](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_AD:kotlin.Int) Advertisement contents. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MAIN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_MAIN:kotlin.Int) Main contents. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_OTHER:kotlin.Int) Other contents. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_AD](../android/media/metrics/PlaybackMetrics.md) Advertisement contents. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MAIN](../android/media/metrics/PlaybackMetrics.md) Main contents. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md) Other contents. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_UNKNOWN:kotlin.Int) Unknown content type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_CLEARKEY](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_CLEARKEY:kotlin.Int) Clear key DRM type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_NONE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_NONE:kotlin.Int) DRM is not used. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md) Unknown content type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_CLEARKEY](../android/media/metrics/PlaybackMetrics.md) Clear key DRM type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_NONE](../android/media/metrics/PlaybackMetrics.md) DRM is not used. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_OTHER:kotlin.Int) Other DRM type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_PLAY_READY](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_PLAY_READY:kotlin.Int) Play ready DRM type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_WIDEVINE_L1](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_WIDEVINE_L1:kotlin.Int) Widevine L1 DRM type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md) Other DRM type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_PLAY_READY](../android/media/metrics/PlaybackMetrics.md) Play ready DRM type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_WIDEVINE_L1](../android/media/metrics/PlaybackMetrics.md) Widevine L1 DRM type. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_WIDEVINE_L3](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_WIDEVINE_L3:kotlin.Int) Widevine L3 DRM type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_WV_L3_FALLBACK](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_WV_L3_FALLBACK:kotlin.Int) Widevine L3 fallback DRM type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_LIVE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_LIVE:kotlin.Int) Live playback type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_WIDEVINE_L3](../android/media/metrics/PlaybackMetrics.md) Widevine L3 DRM type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRM_TYPE_WV_L3_FALLBACK](../android/media/metrics/PlaybackMetrics.md) Widevine L3 fallback DRM type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_LIVE](../android/media/metrics/PlaybackMetrics.md) Live playback type. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_OTHER:kotlin.Int) Other playback type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_UNKNOWN:kotlin.Int) Unknown playback type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_VOD](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_VOD:kotlin.Int) VOD (Video on Demand) playback type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md) Other playback type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md) Unknown playback type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYBACK_TYPE_VOD](../android/media/metrics/PlaybackMetrics.md) VOD (Video on Demand) playback type. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_DEVICE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_DEVICE:kotlin.Int) Stream from device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_MIXED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_MIXED:kotlin.Int) Stream from more than one sources. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_NETWORK](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_NETWORK:kotlin.Int) Stream from network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_DEVICE](../android/media/metrics/PlaybackMetrics.md) Stream from device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_MIXED](../android/media/metrics/PlaybackMetrics.md) Stream from more than one sources. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_NETWORK](../android/media/metrics/PlaybackMetrics.md) Stream from network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_UNKNOWN:kotlin.Int) Unknown stream source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_DASH](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_DASH:kotlin.Int) DASH (Dynamic Adaptive Streaming over HTTP) stream type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_HLS](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_HLS:kotlin.Int) HLS (HTTP Live Streaming) stream type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_SOURCE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md) Unknown stream source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_DASH](../android/media/metrics/PlaybackMetrics.md) DASH (Dynamic Adaptive Streaming over HTTP) stream type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_HLS](../android/media/metrics/PlaybackMetrics.md) HLS (HTTP Live Streaming) stream type. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_OTHER:kotlin.Int) Other stream type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_PROGRESSIVE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_PROGRESSIVE:kotlin.Int) Progressive stream type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_SS](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_SS:kotlin.Int) SS (HTTP Smooth Streaming) stream type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md) Other stream type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_PROGRESSIVE](../android/media/metrics/PlaybackMetrics.md) Progressive stream type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_SS](../android/media/metrics/PlaybackMetrics.md) SS (HTTP Smooth Streaming) stream type. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_UNKNOWN:kotlin.Int) Unknown stream type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md) Unknown stream type. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioUnderrunCount](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getAudioUnderrunCount())`()` Gets audio underrun count. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/metrics/PlaybackMetrics.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/metrics/PlaybackMetrics.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioUnderrunCount](../android/media/metrics/PlaybackMetrics.md))`()` Gets audio underrun count. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentType](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getContentType())`()` Gets content type. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getDrmSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getDrmSessionId())`()` Gets DRM session ID. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDrmType](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getDrmType())`()` Gets DRM type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentType](../android/media/metrics/PlaybackMetrics.md))`()` Gets content type. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getDrmSessionId](../android/media/metrics/PlaybackMetrics.md))`()` Gets DRM session ID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDrmType](../android/media/metrics/PlaybackMetrics.md))`()` Gets DRM type. |
 | --- | --- |
-| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getExperimentIds](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getExperimentIds())`()` Gets experiment IDs. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLocalBytesRead](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getLocalBytesRead())`()` Gets number of local bytes read. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMediaDurationMillis](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getMediaDurationMillis())`()` Gets the media duration in milliseconds. |
+| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getExperimentIds](../android/media/metrics/PlaybackMetrics.md))`()` Gets experiment IDs. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLocalBytesRead](../android/media/metrics/PlaybackMetrics.md))`()` Gets number of local bytes read. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMediaDurationMillis](../android/media/metrics/PlaybackMetrics.md))`()` Gets the media duration in milliseconds. |
 | --- | --- |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getMetricsBundle](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getMetricsBundle())`()` Gets metrics-related information that is not supported by dedicated methods. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNetworkBytesRead](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getNetworkBytesRead())`()` Gets number of network bytes read. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNetworkTransferDurationMillis](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getNetworkTransferDurationMillis())`()` Gets network transfer duration in milliseconds. |
+| [Bundle](../android/os/Bundle.md) | [getMetricsBundle](../android/media/metrics/PlaybackMetrics.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNetworkBytesRead](../android/media/metrics/PlaybackMetrics.md))`()` Gets number of network bytes read. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNetworkTransferDurationMillis](../android/media/metrics/PlaybackMetrics.md))`()` Gets network transfer duration in milliseconds. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPlaybackType](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getPlaybackType())`()` Gets playback type. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPlayerName](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getPlayerName())`()` Gets player name. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPlayerVersion](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getPlayerVersion())`()` Gets player version. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPlaybackType](../android/media/metrics/PlaybackMetrics.md))`()` Gets playback type. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPlayerName](../android/media/metrics/PlaybackMetrics.md))`()` Gets player name. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPlayerVersion](../android/media/metrics/PlaybackMetrics.md))`()` Gets player version. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamSource](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getStreamSource())`()` Gets stream source type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamType](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getStreamType())`()` Gets stream type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoFramesDropped](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getVideoFramesDropped())`()` Gets video frames dropped. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamSource](../android/media/metrics/PlaybackMetrics.md))`()` Gets stream source type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamType](../android/media/metrics/PlaybackMetrics.md))`()` Gets stream type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoFramesDropped](../android/media/metrics/PlaybackMetrics.md))`()` Gets video frames dropped. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoFramesPlayed](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#getVideoFramesPlayed())`()` Gets video frames played. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#toString())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoFramesPlayed](../android/media/metrics/PlaybackMetrics.md))`()` Gets video frames played. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/metrics/PlaybackMetrics.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/metrics/PlaybackMetrics.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/metrics/PlaybackMetrics.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PlaybackMetrics](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PlaybackMetrics](../android/media/metrics/PlaybackMetrics.md)!\> | [CREATOR](../android/media/metrics/PlaybackMetrics.md) <br /> |
 
 ## Constants
 
@@ -413,7 +413,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -456,7 +456,7 @@ Gets audio underrun count.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the audio underrun count, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the audio underrun count, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
 
 ### getContentType
 
@@ -470,7 +470,7 @@ Gets content type.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_UNKNOWN:kotlin.Int), [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_MAIN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_MAIN:kotlin.Int), [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_AD](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_AD:kotlin.Int), or [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#CONTENT_TYPE_OTHER:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_MAIN](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_AD](../android/media/metrics/PlaybackMetrics.md), or [android.media.metrics.PlaybackMetrics#CONTENT_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md) |
 
 ### getDrmSessionId
 
@@ -498,7 +498,7 @@ Gets DRM type.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#DRM_TYPE_NONE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_NONE:kotlin.Int), [android.media.metrics.PlaybackMetrics#DRM_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_OTHER:kotlin.Int), [android.media.metrics.PlaybackMetrics#DRM_TYPE_PLAY_READY](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_PLAY_READY:kotlin.Int), [android.media.metrics.PlaybackMetrics#DRM_TYPE_WIDEVINE_L1](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_WIDEVINE_L1:kotlin.Int), [android.media.metrics.PlaybackMetrics#DRM_TYPE_WIDEVINE_L3](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_WIDEVINE_L3:kotlin.Int), [android.media.metrics.PlaybackMetrics#DRM_TYPE_WV_L3_FALLBACK](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_WV_L3_FALLBACK:kotlin.Int), or [android.media.metrics.PlaybackMetrics#DRM_TYPE_CLEARKEY](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#DRM_TYPE_CLEARKEY:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#DRM_TYPE_NONE](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#DRM_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#DRM_TYPE_PLAY_READY](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#DRM_TYPE_WIDEVINE_L1](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#DRM_TYPE_WIDEVINE_L3](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#DRM_TYPE_WV_L3_FALLBACK](../android/media/metrics/PlaybackMetrics.md), or [android.media.metrics.PlaybackMetrics#DRM_TYPE_CLEARKEY](../android/media/metrics/PlaybackMetrics.md) |
 
 ### getExperimentIds
 
@@ -558,7 +558,7 @@ It is intended to be used for backwards compatibility by the metrics infrastruct
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | This value cannot be`null`. |
+| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
 
 ### getNetworkBytesRead
 
@@ -602,7 +602,7 @@ Gets playback type.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_UNKNOWN:kotlin.Int), [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_VOD](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_VOD:kotlin.Int), [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_LIVE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_LIVE:kotlin.Int), or [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#PLAYBACK_TYPE_OTHER:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_VOD](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_LIVE](../android/media/metrics/PlaybackMetrics.md), or [android.media.metrics.PlaybackMetrics#PLAYBACK_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md) |
 
 ### getPlayerName
 
@@ -644,7 +644,7 @@ Gets stream source type.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_UNKNOWN:kotlin.Int), [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_NETWORK](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_NETWORK:kotlin.Int), [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_DEVICE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_DEVICE:kotlin.Int), or [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_MIXED](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_SOURCE_MIXED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_NETWORK](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_DEVICE](../android/media/metrics/PlaybackMetrics.md), or [android.media.metrics.PlaybackMetrics#STREAM_SOURCE_MIXED](../android/media/metrics/PlaybackMetrics.md) |
 
 ### getStreamType
 
@@ -658,7 +658,7 @@ Gets stream type.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#STREAM_TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_UNKNOWN:kotlin.Int), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_OTHER](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_OTHER:kotlin.Int), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_PROGRESSIVE](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_PROGRESSIVE:kotlin.Int), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_DASH](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_DASH:kotlin.Int), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_HLS](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_HLS:kotlin.Int), or [android.media.metrics.PlaybackMetrics#STREAM_TYPE_SS](https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackMetrics#STREAM_TYPE_SS:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackMetrics#STREAM_TYPE_UNKNOWN](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_OTHER](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_PROGRESSIVE](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_DASH](../android/media/metrics/PlaybackMetrics.md), [android.media.metrics.PlaybackMetrics#STREAM_TYPE_HLS](../android/media/metrics/PlaybackMetrics.md), or [android.media.metrics.PlaybackMetrics#STREAM_TYPE_SS](../android/media/metrics/PlaybackMetrics.md) |
 
 ### getVideoFramesDropped
 
@@ -672,7 +672,7 @@ Gets video frames dropped.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video frames dropped, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video frames dropped, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
 
 ### getVideoFramesPlayed
 
@@ -686,7 +686,7 @@ Gets video frames played.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video frames played, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video frames played, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
 
 ### hashCode
 
@@ -727,8 +727,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

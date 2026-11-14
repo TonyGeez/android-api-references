@@ -8,7 +8,7 @@ open class ImageReader : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader#) |
+| ↳ | [android.media.ImageReader](../android/media/ImageReader.md) |
 
 The ImageReader class allows direct application access to image data rendered into a `https://developer.android.com/reference/kotlin/android/view/Surface.html#`
 
@@ -25,8 +25,8 @@ The image data is encapsulated in `https://developer.android.com/reference/kotli
 
 | Public methods ||
 |---|---|
-| open [Image](https://developer.android.com/reference/kotlin/android/media/Image)! | `https://developer.android.com/reference/kotlin/android/media/ImageReader#acquireLatestImage()()` Acquire the latest `https://developer.android.com/reference/kotlin/android/media/Image` from the ImageReader's queue, dropping older `https://developer.android.com/reference/kotlin/android/media/Image`. |
-| open [Image](https://developer.android.com/reference/kotlin/android/media/Image)! | `https://developer.android.com/reference/kotlin/android/media/ImageReader#acquireNextImage()()` Acquire the next Image from the ImageReader's queue. |
+| open [Image](../android/media/Image.md)! | `https://developer.android.com/reference/kotlin/android/media/ImageReader#acquireLatestImage()()` Acquire the latest `https://developer.android.com/reference/kotlin/android/media/Image` from the ImageReader's queue, dropping older `https://developer.android.com/reference/kotlin/android/media/Image`. |
+| open [Image](../android/media/Image.md)! | `https://developer.android.com/reference/kotlin/android/media/ImageReader#acquireNextImage()()` Acquire the next Image from the ImageReader's queue. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#close()()` Free up all the resources associated with this ImageReader. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#discardFreeBuffers()()` Discard any free buffers owned by this ImageReader. |
@@ -37,12 +37,12 @@ The image data is encapsulated in `https://developer.android.com/reference/kotli
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#getImageFormat()()` The default `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` of `https://developer.android.com/reference/kotlin/android/media/Image`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#getMaxImages()()` Maximum number of images that can be acquired from the ImageReader by any time (for example, with `https://developer.android.com/reference/kotlin/android/media/ImageReader#acquireNextImage()`). |
 | --- | --- |
-| open [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)! | `https://developer.android.com/reference/kotlin/android/media/ImageReader#getSurface()()` Get a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` that can be used to produce `https://developer.android.com/reference/kotlin/android/media/Image` for this `ImageReader`. |
+| open [Surface](../android/view/Surface.md)! | `https://developer.android.com/reference/kotlin/android/media/ImageReader#getSurface()()` Get a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` that can be used to produce `https://developer.android.com/reference/kotlin/android/media/Image` for this `ImageReader`. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#getUsage()()` The usage flag of images that can be produced by the ImageReader. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#getWidth()()` The default width of `https://developer.android.com/reference/kotlin/android/media/Image`, in pixels. |
 | --- | --- |
-| open static [ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader#) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#newInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new reader for images of the desired size and format. |
-| open static [ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader#) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#newInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Create a new reader for images of the desired size, format and consumer usage flag. |
+| open static [ImageReader](../android/media/ImageReader.md) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#newInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new reader for images of the desired size and format. |
+| open static [ImageReader](../android/media/ImageReader.md) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#newInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Create a new reader for images of the desired size, format and consumer usage flag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageReader#setOnImageAvailableListener(android.media.ImageReader.OnImageAvailableListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/ImageReader.OnImageAvailableListener!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Register a listener to be invoked when a new image becomes available from the ImageReader. |
 | --- | --- |
 
@@ -387,8 +387,8 @@ Register a listener to be invoked when a new image becomes available from the Im
 
 | Parameters ||
 |---|---|
-| `listener` | [ImageReader.OnImageAvailableListener](https://developer.android.com/reference/kotlin/android/media/ImageReader.OnImageAvailableListener)!: The listener that will be run. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
+| `listener` | [ImageReader.OnImageAvailableListener](../android/media/ImageReader.OnImageAvailableListener.md)!: The listener that will be run. |
+| `handler` | [Handler](../android/os/Handler.md)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
 
 | Exceptions ||
 |---|---|

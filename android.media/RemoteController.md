@@ -9,7 +9,7 @@ class RemoteController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.RemoteController](https://developer.android.com/reference/kotlin/android/media/RemoteController#) |
+| ↳ | [android.media.RemoteController](../android/media/RemoteController.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 21.**
@@ -43,7 +43,7 @@ Registration requires the `https://developer.android.com/reference/kotlin/androi
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#clearArtworkConfiguration()()` Prevents this RemoteController from receiving artwork images. |
-| [RemoteController.MetadataEditor](https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor)! | `https://developer.android.com/reference/kotlin/android/media/RemoteController#editMetadata()()` Creates a `https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor` for updating metadata values of the editable keys of the current `https://developer.android.com/reference/kotlin/android/media/RemoteControlClient`. |
+| [RemoteController.MetadataEditor](../android/media/RemoteController.MetadataEditor.md)! | `https://developer.android.com/reference/kotlin/android/media/RemoteController#editMetadata()()` Creates a `https://developer.android.com/reference/kotlin/android/media/RemoteController.MetadataEditor` for updating metadata values of the editable keys of the current `https://developer.android.com/reference/kotlin/android/media/RemoteControlClient`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#getEstimatedMediaPosition()()` Return the estimated playback position of the current media track or a negative value if not available. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RemoteController#seekTo(kotlin.Long)(timeMs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the new playback position. |
@@ -98,8 +98,8 @@ Class constructor.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
-| `updateListener` | [RemoteController.OnClientUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteController.OnClientUpdateListener)!: the listener to be called whenever new client information is available, must be non-null. |
+| `context` | [Context](../android/content/Context.md)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
+| `updateListener` | [RemoteController.OnClientUpdateListener](../android/media/RemoteController.OnClientUpdateListener.md)!: the listener to be called whenever new client information is available, must be non-null. |
 
 | Exceptions ||
 |---|---|
@@ -120,9 +120,9 @@ Class constructor.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
-| `updateListener` | [RemoteController.OnClientUpdateListener](https://developer.android.com/reference/kotlin/android/media/RemoteController.OnClientUpdateListener)!: the listener to be called whenever new client information is available, must be non-null. |
-| `looper` | [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.html#)!: the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` on which to run the event loop, or null to use the current thread's looper. |
+| `context` | [Context](../android/content/Context.md)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
+| `updateListener` | [RemoteController.OnClientUpdateListener](../android/media/RemoteController.OnClientUpdateListener.md)!: the listener to be called whenever new client information is available, must be non-null. |
+| `looper` | [Looper](../android/os/Looper.md)!: the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` on which to run the event loop, or null to use the current thread's looper. |
 | --- | --- |
 
 | Exceptions ||
@@ -225,7 +225,7 @@ The key event will be sent to the registered receiver (see `https://developer.an
 
 | Parameters ||
 |---|---|
-| `keyEvent` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#isMediaSessionKey(kotlin.Int)`. |
+| `keyEvent` | [KeyEvent](../android/view/KeyEvent.md)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#isMediaSessionKey(kotlin.Int)`. |
 
 | Return ||
 |---|---|

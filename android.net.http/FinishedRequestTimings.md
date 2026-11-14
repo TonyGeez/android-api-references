@@ -9,7 +9,7 @@ class FinishedRequestTimings
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.FinishedRequestTimings](https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#) |
+| ↳ | [android.net.http.FinishedRequestTimings](../android/net/http/FinishedRequestTimings.md) |
 
 Metrics collected for a single request. Most of these metrics are timestamps for events during the lifetime of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream` or `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest`, which can be used to build a detailed timeline for investigating performance.
 
@@ -23,21 +23,21 @@ A metric can be null if it's unavailable (e.g. SSL metrics are null if the host 
 
 | Public methods ||
 |---|---|
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getConnectingEnd()()` Returns the timestamp for when the connection establishment ended. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getConnectingStart()()` Returns the timestamp for when the connection attempt began. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getDnsEnd()()` Returns the timestamp when the DNS lookup finished. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getConnectingEnd()()` Returns the timestamp for when the connection establishment ended. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getConnectingStart()()` Returns the timestamp for when the connection attempt began. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getDnsEnd()()` Returns the timestamp when the DNS lookup finished. |
 | --- | --- |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getDnsStart()()` Returns the timestamp when DNS lookup started. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getDnsStart()()` Returns the timestamp when DNS lookup started. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getReceivedByteCount()()` Returns total bytes received. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getRequestEnd()()` Returns the timestamp when the request finished. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getRequestEnd()()` Returns the timestamp when the request finished. |
 | --- | --- |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getRequestStart()()` Returns the timestamp when the request started. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSendingEnd()()` Returns the timestamp when sending the request finished. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSendingStart()()` Returns the timestamp when sending the request started. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getRequestStart()()` Returns the timestamp when the request started. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSendingEnd()()` Returns the timestamp when sending the request finished. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSendingStart()()` Returns the timestamp when sending the request started. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSentByteCount()()` Returns total bytes sent. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getTlsHandshakeEnd()()` Returns the timestamp when TLS handshake finished. |
-| [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getTlsHandshakeStart()()` Returns the timestamp when TLS handshake started. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getTlsHandshakeEnd()()` Returns the timestamp when TLS handshake finished. |
+| [Instant](../java/time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getTlsHandshakeStart()()` Returns the timestamp when TLS handshake started. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#wasSocketReused()()` Returns whether the socket was reused from a previous request. |
 

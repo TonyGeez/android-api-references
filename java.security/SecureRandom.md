@@ -8,8 +8,8 @@ open class SecureRandom : Random
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.Random](https://developer.android.com/reference/kotlin/java/util/Random.html#) ||
-| | ↳ | [java.security.SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#) |
+| ↳ | [java.util.Random](../java/util/Random.md) ||
+| | ↳ | [java.security.SecureRandom](../java/security/SecureRandom.md) |
 
 This class provides a cryptographically strong random number generator (RNG).
 
@@ -71,18 +71,18 @@ Note: Depending on the implementation, the `generateSeed`, `reseed` and `nextByt
 |---|---|
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#generateSeed(kotlin.Int)(numBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the given number of seed bytes, computed using the seed generation algorithm that this class uses to seed itself. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getAlgorithm()()` Returns the name of the algorithm implemented by this `SecureRandom` object. |
-| open static [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
+| open static [SecureRandom](../java/security/SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
 | --- | --- |
-| open static [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
-| open static [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.Provider)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
-| open static [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
+| open static [SecureRandom](../java/security/SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
+| open static [SecureRandom](../java/security/SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.Provider)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
+| open static [SecureRandom](../java/security/SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
 | --- | --- |
-| open static [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters,%20kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
-| open static [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters,%20java.security.Provider)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
-| open static [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom#)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstanceStrong()()` Returns a `SecureRandom` object. |
+| open static [SecureRandom](../java/security/SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters,%20kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
+| open static [SecureRandom](../java/security/SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters,%20java.security.Provider)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
+| open static [SecureRandom](../java/security/SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstanceStrong()()` Returns a `SecureRandom` object. |
 | --- | --- |
-| open [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters()()` Returns the effective `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters` for this `SecureRandom` instance. |
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getProvider()()` Returns the provider of this `SecureRandom` object. |
+| open [SecureRandomParameters](../java/security/SecureRandomParameters.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters()()` Returns the effective `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters` for this `SecureRandom` instance. |
+| [Provider](../java/security/Provider.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getProvider()()` Returns the provider of this `SecureRandom` object. |
 | open static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getSeed(kotlin.Int)(numBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the given number of seed bytes, computed using the seed generation algorithm that this class uses to seed itself. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#nextBytes(kotlin.ByteArray)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Generates a user-specified number of random bytes. |
@@ -503,8 +503,8 @@ Creates a `SecureRandom` object.
 
 | Parameters ||
 |---|---|
-| `secureRandomSpi` | [SecureRandomSpi](https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi)!: the `SecureRandom` implementation. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!: the provider. |
+| `secureRandomSpi` | [SecureRandomSpi](../java/security/SecureRandomSpi.md)!: the `SecureRandom` implementation. |
+| `provider` | [Provider](../java/security/Provider.md)!: the provider. |
 
 ## Public methods
 
@@ -631,7 +631,7 @@ A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation f
 | Parameters ||
 |---|---|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the RNG algorithm. See the `SecureRandom` section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#securerandom-number-generation-algorithms) for information about standard RNG algorithm names. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!: the provider. |
+| `provider` | [Provider](../java/security/Provider.md)!: the provider. |
 
 | Return ||
 |---|---|
@@ -668,7 +668,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 | Parameters ||
 |---|---|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the RNG algorithm. See the `SecureRandom` section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#securerandom-number-generation-algorithms) for information about standard RNG algorithm names. |
-| `params` | [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)!: the `SecureRandomParameters` the newly created `SecureRandom` object must support. |
+| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!: the `SecureRandomParameters` the newly created `SecureRandom` object must support. |
 
 | Return ||
 |---|---|
@@ -706,7 +706,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 | Parameters ||
 |---|---|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the RNG algorithm. See the `SecureRandom` section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#securerandom-number-generation-algorithms) for information about standard RNG algorithm names. |
-| `params` | [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)!: the `SecureRandomParameters` the newly created `SecureRandom` object must support. |
+| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!: the `SecureRandomParameters` the newly created `SecureRandom` object must support. |
 | `provider` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the provider. |
 | --- | --- |
 
@@ -745,8 +745,8 @@ A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation f
 | Parameters ||
 |---|---|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the RNG algorithm. See the `SecureRandom` section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#securerandom-number-generation-algorithms) for information about standard RNG algorithm names. |
-| `params` | [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)!: the `SecureRandomParameters` the newly created `SecureRandom` object must support. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider)!: the provider. |
+| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!: the `SecureRandomParameters` the newly created `SecureRandom` object must support. |
+| `provider` | [Provider](../java/security/Provider.md)!: the provider. |
 | --- | --- |
 
 | Return ||
@@ -884,7 +884,7 @@ Generates a user-specified number of random bytes with additional parameters.
 | Parameters ||
 |---|---|
 | `bytes` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the array to be filled in with random bytes |
-| `params` | [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)!: additional parameters |
+| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!: additional parameters |
 
 | Exceptions ||
 |---|---|
@@ -921,7 +921,7 @@ Note that entropy is obtained from an entropy source. While some data in `params
 
 | Parameters ||
 |---|---|
-| `params` | [SecureRandomParameters](https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters)!: extra parameters |
+| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!: extra parameters |
 
 | Exceptions ||
 |---|---|

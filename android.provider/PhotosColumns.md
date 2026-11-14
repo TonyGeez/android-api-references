@@ -5,21 +5,21 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 
 # PhotosColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.PhotosColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/Contacts.PhotosColumns.md) 
 | --- | --- |
 
 ```
 interface PhotosColumns
 ```
 
-| [android.provider.Contacts.PhotosColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns#) |
+| [android.provider.Contacts.PhotosColumns](../android/provider/Contacts.PhotosColumns.md) |
 
-| Known Direct Subclasses [Contacts.Photos](https://developer.android.com/reference/kotlin/android/provider/Contacts.Photos) |----------------------------------------------------------------------------------------------------|-----------------------------------| | [Contacts.Photos](https://developer.android.com/reference/kotlin/android/provider/Contacts.Photos) | The photos over all of the people | |
+| Known Direct Subclasses [Contacts.Photos](../android/provider/Contacts.Photos.md) |----------------------------------------------------------------------------------------------------|-----------------------------------| | [Contacts.Photos](../android/provider/Contacts.Photos.md) | The photos over all of the people | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)
+| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
 
 Columns from the Photos table that other columns join into themselves.
 
@@ -27,13 +27,13 @@ Columns from the Photos table that other columns join into themselves.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns#DATA:kotlin.String) The image data, or null if there is no image. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOWNLOAD_REQUIRED](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns#DOWNLOAD_REQUIRED:kotlin.String) non-zero if a download is required and the photo isn't marked as a bad resource. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXISTS_ON_SERVER](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns#EXISTS_ON_SERVER:kotlin.String) non-zero if this photo is known to exist on the server |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA](../android/provider/Contacts.PhotosColumns.md) The image data, or null if there is no image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOWNLOAD_REQUIRED](../android/provider/Contacts.PhotosColumns.md) non-zero if a download is required and the photo isn't marked as a bad resource. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXISTS_ON_SERVER](../android/provider/Contacts.PhotosColumns.md) non-zero if this photo is known to exist on the server |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LOCAL_VERSION](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns#LOCAL_VERSION:kotlin.String) The _SYNC_VERSION of the photo that was last downloaded |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PERSON_ID](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns#PERSON_ID:kotlin.String) The person this photo is associated with. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_ERROR](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhotosColumns#SYNC_ERROR:kotlin.String) Contains the description of the upload or download error from the previous attempt. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LOCAL_VERSION](../android/provider/Contacts.PhotosColumns.md) The _SYNC_VERSION of the photo that was last downloaded |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PERSON_ID](../android/provider/Contacts.PhotosColumns.md) The person this photo is associated with. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_ERROR](../android/provider/Contacts.PhotosColumns.md) Contains the description of the upload or download error from the previous attempt. |
 | --- | --- |
 
 ## Constants
@@ -46,7 +46,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DATA: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The image data, or null if there is no image.
 
@@ -62,7 +62,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DOWNLOAD_REQUIRED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 non-zero if a download is required and the photo isn't marked as a bad resource. You must specify this in the columns in order to use it in the where clause.
 
@@ -78,7 +78,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val EXISTS_ON_SERVER: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 non-zero if this photo is known to exist on the server
 
@@ -94,7 +94,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LOCAL_VERSION: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The _SYNC_VERSION of the photo that was last downloaded
 
@@ -110,7 +110,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PERSON_ID: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The person this photo is associated with.
 
@@ -126,7 +126,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYNC_ERROR: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Contains the description of the upload or download error from the previous attempt. If null then the previous attempt succeeded.
 

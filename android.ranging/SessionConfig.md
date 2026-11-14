@@ -8,7 +8,7 @@ class SessionConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.SessionConfig](https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#) |
+| ↳ | [android.ranging.SessionConfig](../android/ranging/SessionConfig.md) |
 
 Defines the ranging session configurations.
 
@@ -35,9 +35,9 @@ This class allows apps to set various parameters related to a ranging session.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getAntennaMode()()` Returns antenna mode of the session. |
 | --- | --- |
-| [DataNotificationConfig](https://developer.android.com/reference/kotlin/android/ranging/DataNotificationConfig) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getDataNotificationConfig()()` Returns the data notification configuration for this preference. |
+| [DataNotificationConfig](../android/ranging/DataNotificationConfig.md) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getDataNotificationConfig()()` Returns the data notification configuration for this preference. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getRangingMeasurementsLimit()()` Returns the configured ranging measurements limit for the ranging session. |
-| [SensorFusionParams](https://developer.android.com/reference/kotlin/android/ranging/SensorFusionParams) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getSensorFusionParams()()` Returns the sensor fusion parameters used for this preference. |
+| [SensorFusionParams](../android/ranging/SensorFusionParams.md) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#getSensorFusionParams()()` Returns the sensor fusion parameters used for this preference. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#isAngleOfArrivalNeeded()()` Returns whether hardware-provided Angle-of-arrival was requested by the app. |
@@ -47,7 +47,7 @@ This class allows apps to set various parameters related to a ranging session.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SessionConfig](https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#)!\> | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SessionConfig](../android/ranging/SessionConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/SessionConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -234,7 +234,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

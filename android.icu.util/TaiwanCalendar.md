@@ -8,9 +8,9 @@ open class TaiwanCalendar : GregorianCalendar
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) |||
-| | ↳ | [android.icu.util.GregorianCalendar](https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar) ||
-| | | ↳ | [android.icu.util.TaiwanCalendar](https://developer.android.com/reference/kotlin/android/icu/util/TaiwanCalendar#) |
+| ↳ | [android.icu.util.Calendar](../android/icu/util/Calendar.md) |||
+| | ↳ | [android.icu.util.GregorianCalendar](../android/icu/util/GregorianCalendar.md) ||
+| | | ↳ | [android.icu.util.TaiwanCalendar](../android/icu/util/TaiwanCalendar.md) |
 | --- | --- | --- | --- |
 
 `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912.
@@ -126,7 +126,7 @@ Constructs a `TaiwanCalendar` based on the current time in the given time zone w
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
 
 ### TaiwanCalendar
 
@@ -142,8 +142,8 @@ Constructs a `TaiwanCalendar` based on the current time in the given time zone w
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: the given ulocale. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 ### TaiwanCalendar
 
@@ -159,7 +159,7 @@ Constructs a `TaiwanCalendar` based on the current time in the given time zone w
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
 
 ### TaiwanCalendar
 
@@ -173,7 +173,7 @@ Constructs a `TaiwanCalendar` based on the current time in the default time zone
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: the given ulocale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 ### TaiwanCalendar
 
@@ -234,7 +234,7 @@ Constructs a `TaiwanCalendar` with the given date set in the default time zone w
 
 | Parameters ||
 |---|---|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!: The date to which the new calendar is set. |
+| `date` | [Date](../java/util/Date.md)!: The date to which the new calendar is set. |
 
 ### TaiwanCalendar
 
@@ -248,7 +248,7 @@ Constructs a `TaiwanCalendar` based on the current time in the default time zone
 
 | Parameters ||
 |---|---|
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 
 ## Public methods
 

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BoringLayout
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/BoringLayout "View this page in Java")
+Kotlin | [Java](../android/text/BoringLayout.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class BoringLayout : Layout, TextUtils.EllipsizeCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.Layout](https://developer.android.com/reference/kotlin/android/text/Layout) ||
-| | ↳ | [android.text.BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout#) |
+| ↳ | [android.text.Layout](../android/text/Layout.md) ||
+| | ↳ | [android.text.BoringLayout](../android/text/BoringLayout.md) |
 
 A BoringLayout is a very simple Layout implementation for text that fits on a single line and is all left-to-right characters. You will probably never want to make one of these yourself; if you do, be sure to call #isBoring first to make sure the text meets the criteria.
 
@@ -36,7 +36,7 @@ This class is used by widgets to control text layout. You should not need to use
 
 | Public methods ||
 |---|---|
-| open [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#computeDrawingBoundingBox()()` Get an actual bounding box that draws text content. |
+| open [RectF](../android/graphics/RectF.md) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#computeDrawingBoundingBox()()` Get an actual bounding box that draws text content. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#draw(android.graphics.Canvas,%20android.graphics.Path,%20android.graphics.Paint,%20kotlin.Int)(c: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#!, highlight: https://developer.android.com/reference/kotlin/android/graphics/Path.html#!, highlightpaint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#!, cursorOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Draw this Layout on the specified canvas, with the highlight path drawn between the background and the text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#ellipsized(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback for the ellipsizer to report what region it ellipsized. |
 | --- | --- |
@@ -50,7 +50,7 @@ This class is used by widgets to control text layout. You should not need to use
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getLineCount()()` Return the number of lines of text in this layout. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getLineDescent(kotlin.Int)(line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the descent of the specified line(0...getLineCount() - 1). |
-| [Layout.Directions](https://developer.android.com/reference/kotlin/android/text/Layout.Directions)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getLineDirections(kotlin.Int)(line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the directional run information for the specified line. |
+| [Layout.Directions](../android/text/Layout.Directions.md)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getLineDirections(kotlin.Int)(line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the directional run information for the specified line. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getLineMax(kotlin.Int)(line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the unsigned horizontal extent of the specified line, including leading margin indent, but excluding trailing whitespace. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getLineStart(kotlin.Int)(line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the text offset of the beginning of the specified line ( 0...getLineCount()). |
@@ -60,19 +60,19 @@ This class is used by widgets to control text layout. You should not need to use
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getParagraphDirection(kotlin.Int)(line: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the primary directionality of the paragraph containing the specified line, either 1 for left-to-right lines, or -1 for right-to-left lines (see `https://developer.android.com/reference/kotlin/android/text/Layout#DIR_LEFT_TO_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/text/Layout#DIR_RIGHT_TO_LEFT:kotlin.Int`). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#getTopPadding()()` Returns the (negative) number of extra pixels of ascent padding in the top line of the Layout. |
 | --- | --- |
-| open static [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#isBoring(kotlin.CharSequence,%20android.text.TextPaint)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!)` Determine and compute metrics if given text can be handled by BoringLayout. |
-| open static [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#isBoring(kotlin.CharSequence,%20android.text.TextPaint,%20android.text.BoringLayout.Metrics)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!)` Determine and compute metrics if given text can be handled by BoringLayout. |
-| open static [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)? | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#isBoring(kotlin.CharSequence,%20android.text.TextPaint,%20android.text.TextDirectionHeuristic,%20kotlin.Boolean,%20android.text.BoringLayout.Metrics)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint, textDir: https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic, useFallbackLineSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics?)` Returns null if not boring; the width, ascent, and descent in the provided Metrics object (or a new one if the provided one was null) if boring. |
+| open static [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#isBoring(kotlin.CharSequence,%20android.text.TextPaint)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!)` Determine and compute metrics if given text can be handled by BoringLayout. |
+| open static [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#isBoring(kotlin.CharSequence,%20android.text.TextPaint,%20android.text.BoringLayout.Metrics)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!)` Determine and compute metrics if given text can be handled by BoringLayout. |
+| open static [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)? | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#isBoring(kotlin.CharSequence,%20android.text.TextPaint,%20android.text.TextDirectionHeuristic,%20kotlin.Boolean,%20android.text.BoringLayout.Metrics)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint, textDir: https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic, useFallbackLineSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics?)` Returns null if not boring; the width, ascent, and descent in the provided Metrics object (or a new one if the provided one was null) if boring. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#isFallbackLineSpacingEnabled()()` Return true if the fallback line space is enabled in this Layout. |
-| open static [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout#) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#make(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt?, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useFallbackLineSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Utility function to construct a BoringLayout instance. |
-| open static [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout#)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#make(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingMult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Utility function to construct a BoringLayout instance. |
+| open static [BoringLayout](../android/text/BoringLayout.md) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#make(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt?, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useFallbackLineSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Utility function to construct a BoringLayout instance. |
+| open static [BoringLayout](../android/text/BoringLayout.md)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#make(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingMult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Utility function to construct a BoringLayout instance. |
 | --- | --- |
-| open static [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout#)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#make(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingmult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingadd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt!, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Utility function to construct a BoringLayout instance. |
-| open [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout#) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#replaceOrMake(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt?, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useFallbackLineSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a BoringLayout for the specified text, potentially reusing this one if it is already suitable. |
-| open [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout#)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#replaceOrMake(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerwidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingMult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a BoringLayout for the specified text, potentially reusing this one if it is already suitable. |
+| open static [BoringLayout](../android/text/BoringLayout.md)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#make(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingmult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingadd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt!, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Utility function to construct a BoringLayout instance. |
+| open [BoringLayout](../android/text/BoringLayout.md) | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#replaceOrMake(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt?, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useFallbackLineSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a BoringLayout for the specified text, potentially reusing this one if it is already suitable. |
+| open [BoringLayout](../android/text/BoringLayout.md)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#replaceOrMake(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerwidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingMult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a BoringLayout for the specified text, potentially reusing this one if it is already suitable. |
 | --- | --- |
-| open [BoringLayout](https://developer.android.com/reference/kotlin/android/text/BoringLayout#)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#replaceOrMake(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingMult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt!, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a BoringLayout for the specified text, potentially reusing this one if it is already suitable. |
+| open [BoringLayout](../android/text/BoringLayout.md)! | `https://developer.android.com/reference/kotlin/android/text/BoringLayout#replaceOrMake(kotlin.CharSequence,%20android.text.TextPaint,%20kotlin.Int,%20android.text.Layout.Alignment,%20kotlin.Float,%20kotlin.Float,%20android.text.BoringLayout.Metrics,%20kotlin.Boolean,%20android.text.TextUtils.TruncateAt,%20kotlin.Int)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint!, outerWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, align: https://developer.android.com/reference/kotlin/android/text/Layout.Alignment!, spacingMult: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, spacingAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, metrics: https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics!, includePad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ellipsize: https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt!, ellipsizedWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a BoringLayout for the specified text, potentially reusing this one if it is already suitable. |
 
 | Inherited functions ||
 |---|---|
@@ -103,14 +103,14 @@ BoringLayout(
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to render |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: the default paint for the layout |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: the default paint for the layout |
 | `outerwidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment)!: whether to left, right, or center the text |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md)!: whether to left, right, or center the text |
 | `spacingMult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | `spacingAdd` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | --- | --- |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)!: `Metrics` instance that contains information about FontMetrics and line width |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)!: `Metrics` instance that contains information about FontMetrics and line width |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
 
 ### BoringLayout
@@ -134,16 +134,16 @@ BoringLayout(
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to render |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: the default paint for the layout |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: the default paint for the layout |
 | `outerWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment)!: whether to left, right, or center the text |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md)!: whether to left, right, or center the text |
 | `spacingMult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | `spacingAdd` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | --- | --- |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)!: `Metrics` instance that contains information about FontMetrics and line width |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)!: `Metrics` instance that contains information about FontMetrics and line width |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
-| `ellipsize` | [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt)!: whether to ellipsize the text if width of the text is longer than the requested `outerWidth` |
+| `ellipsize` | [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)!: whether to ellipsize the text if width of the text is longer than the requested `outerWidth` |
 | --- | --- |
 | `ellipsizedWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width to which this Layout is ellipsizing. If `ellipsize` is `null`, or is `https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt` this value is not used, `outerWidth` is used instead |
 
@@ -169,16 +169,16 @@ BoringLayout(
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): the text to render. This value cannot be `null`. |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint): the default paint for the layout. This value cannot be `null`. |
+| `paint` | [TextPaint](../android/text/TextPaint.md): the default paint for the layout. This value cannot be `null`. |
 | `outerWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text. Value is 0 or greater |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment): whether to left, right, or center the text. This value cannot be `null`. |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md): whether to left, right, or center the text. This value cannot be `null`. |
 | `spacingMult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | `spacingAdd` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | --- | --- |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics): `Metrics` instance that contains information about FontMetrics and line width. This value cannot be `null`. |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md): `Metrics` instance that contains information about FontMetrics and line width. This value cannot be `null`. |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
-| `ellipsize` | [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt)?: whether to ellipsize the text if width of the text is longer than the requested `outerWidth`. null if ellipsis is not applied. |
+| `ellipsize` | [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)?: whether to ellipsize the text if width of the text is longer than the requested `outerWidth`. null if ellipsis is not applied. |
 | --- | --- |
 | `ellipsizedWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width to which this Layout is ellipsizing. If `ellipsize` is `null`, or is `https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt` this value is not used, `outerWidth` is used instead. Value is 0 or greater |
 | `useFallbackLineSpacing` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True for adjusting the line spacing based on fallback fonts. False for keeping the first font's line height. If some glyphs requires larger vertical spaces, by passing true to this argument, the layout increase the line height to fit all glyphs. |
@@ -407,7 +407,7 @@ Determine and compute metrics if given text can be handled by BoringLayout.
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: a text |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: a paint |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: a paint |
 
 | Return ||
 |---|---|
@@ -430,8 +430,8 @@ Determine and compute metrics if given text can be handled by BoringLayout.
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: a text |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: a paint |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)!: a metrics object to be recycled. If null is passed, this function creat new object. |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: a paint |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)!: a metrics object to be recycled. If null is passed, this function creat new object. |
 | --- | --- |
 
 | Return ||
@@ -457,11 +457,11 @@ Returns null if not boring; the width, ascent, and descent in the provided Metri
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): a text to be calculated text layout. This value cannot be `null`. |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint): a paint object used for styling. This value cannot be `null`. |
-| `textDir` | [TextDirectionHeuristic](https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic): a text direction. This value cannot be `null`. |
+| `paint` | [TextPaint](../android/text/TextPaint.md): a paint object used for styling. This value cannot be `null`. |
+| `textDir` | [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md): a text direction. This value cannot be `null`. |
 | --- | --- |
 | `useFallbackLineSpacing` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True for adjusting the line spacing based on fallback fonts. False for keeping the first font's line height. If some glyphs requires larger vertical spaces, by passing true to this argument, the layout increase the line height to fit all glyphs. |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)?: the out metrics. This value may be `null`. |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)?: the out metrics. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -504,14 +504,14 @@ Utility function to construct a BoringLayout instance. The spacing multiplier an
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): the text to render. This value cannot be `null`. |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint): the default paint for the layout. This value cannot be `null`. |
+| `paint` | [TextPaint](../android/text/TextPaint.md): the default paint for the layout. This value cannot be `null`. |
 | `outerWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text. Value is 0 or greater |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment): whether to left, right, or center the text. This value cannot be `null`. |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics): `Metrics` instance that contains information about FontMetrics and line width. This value cannot be `null`. |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md): whether to left, right, or center the text. This value cannot be `null`. |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md): `Metrics` instance that contains information about FontMetrics and line width. This value cannot be `null`. |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
 | --- | --- |
-| `ellipsize` | [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt)?: whether to ellipsize the text if width of the text is longer than the requested width. null if ellipsis is not applied. |
+| `ellipsize` | [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)?: whether to ellipsize the text if width of the text is longer than the requested width. null if ellipsis is not applied. |
 | `ellipsizedWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width to which this Layout is ellipsizing. If `ellipsize` is `null`, or is `https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt` this value is not used, `outerWidth` is used instead. Value is 0 or greater |
 | `useFallbackLineSpacing` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True for adjusting the line spacing based on fallback fonts. False for keeping the first font's line height. If some glyphs requires larger vertical spaces, by passing true to this argument, the layout increase the line height to fit all glyphs. |
 | --- | --- |
@@ -542,14 +542,14 @@ Utility function to construct a BoringLayout instance.
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to render |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: the default paint for the layout |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: the default paint for the layout |
 | `outerWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment)!: whether to left, right, or center the text |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md)!: whether to left, right, or center the text |
 | `spacingMult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | `spacingAdd` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | --- | --- |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)!: `Metrics` instance that contains information about FontMetrics and line width |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)!: `Metrics` instance that contains information about FontMetrics and line width |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
 
 ### make
@@ -576,16 +576,16 @@ Utility function to construct a BoringLayout instance.
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to render |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: the default paint for the layout |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: the default paint for the layout |
 | `outerWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment)!: whether to left, right, or center the text |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md)!: whether to left, right, or center the text |
 | `spacingmult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | `spacingadd` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | --- | --- |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)!: `Metrics` instance that contains information about FontMetrics and line width |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)!: `Metrics` instance that contains information about FontMetrics and line width |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
-| `ellipsize` | [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt)!: whether to ellipsize the text if width of the text is longer than the requested width |
+| `ellipsize` | [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)!: whether to ellipsize the text if width of the text is longer than the requested width |
 | --- | --- |
 | `ellipsizedWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width to which this Layout is ellipsizing. If `ellipsize` is `null`, or is `https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt` this value is not used, `outerWidth` is used instead |
 
@@ -612,14 +612,14 @@ Returns a BoringLayout for the specified text, potentially reusing this one if i
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): the text to render. This value cannot be `null`. |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint): the default paint for the layout. This value cannot be `null`. |
+| `paint` | [TextPaint](../android/text/TextPaint.md): the default paint for the layout. This value cannot be `null`. |
 | `outerWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text. Value is 0 or greater |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment): whether to left, right, or center the text. This value cannot be `null`. |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics): `Metrics` instance that contains information about FontMetrics and line width. This value cannot be `null`. |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md): whether to left, right, or center the text. This value cannot be `null`. |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md): `Metrics` instance that contains information about FontMetrics and line width. This value cannot be `null`. |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
 | --- | --- |
-| `ellipsize` | [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt)?: whether to ellipsize the text if width of the text is longer than the requested width. null if ellipsis not applied. |
+| `ellipsize` | [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)?: whether to ellipsize the text if width of the text is longer than the requested width. null if ellipsis not applied. |
 | `ellipsizedWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width to which this Layout is ellipsizing. If `ellipsize` is `null`, or is `https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt` this value is not used, `outerWidth` is used instead. Value is 0 or greater |
 | `useFallbackLineSpacing` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True for adjusting the line spacing based on fallback fonts. False for keeping the first font's line height. If some glyphs requires larger vertical spaces, by passing true to this argument, the layout increase the line height to fit all glyphs. |
 | --- | --- |
@@ -650,14 +650,14 @@ Returns a BoringLayout for the specified text, potentially reusing this one if i
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to render |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: the default paint for the layout |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: the default paint for the layout |
 | `outerwidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment)!: whether to left, right, or center the text |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md)!: whether to left, right, or center the text |
 | `spacingMult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | `spacingAdd` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | --- | --- |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)!: `Metrics` instance that contains information about FontMetrics and line width |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)!: `Metrics` instance that contains information about FontMetrics and line width |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
 
 ### replaceOrMake
@@ -684,15 +684,15 @@ Returns a BoringLayout for the specified text, potentially reusing this one if i
 | Parameters ||
 |---|---|
 | `source` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to render |
-| `paint` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint)!: the default paint for the layout |
+| `paint` | [TextPaint](../android/text/TextPaint.md)!: the default paint for the layout |
 | `outerWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text |
 | --- | --- |
-| `align` | [Layout.Alignment](https://developer.android.com/reference/kotlin/android/text/Layout.Alignment)!: whether to left, right, or center the text |
+| `align` | [Layout.Alignment](../android/text/Layout.Alignment.md)!: whether to left, right, or center the text |
 | `spacingMult` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | `spacingAdd` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): this value is no longer used by BoringLayout |
 | --- | --- |
-| `metrics` | [BoringLayout.Metrics](https://developer.android.com/reference/kotlin/android/text/BoringLayout.Metrics)!: `Metrics` instance that contains information about FontMetrics and line width |
+| `metrics` | [BoringLayout.Metrics](../android/text/BoringLayout.Metrics.md)!: `Metrics` instance that contains information about FontMetrics and line width |
 | `includePad` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): set whether to include extra space beyond font ascent and descent which is needed to avoid clipping in some scripts |
-| `ellipsize` | [TextUtils.TruncateAt](https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt)!: whether to ellipsize the text if width of the text is longer than the requested width |
+| `ellipsize` | [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)!: whether to ellipsize the text if width of the text is longer than the requested width |
 | --- | --- |
 | `ellipsizedWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the width to which this Layout is ellipsizing. If `ellipsize` is `null`, or is `https://developer.android.com/reference/kotlin/android/text/TextUtils.TruncateAt` this value is not used, `outerWidth` is used instead |

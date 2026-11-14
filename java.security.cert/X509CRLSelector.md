@@ -10,11 +10,11 @@ open class X509CRLSelector : CRLSelector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.X509CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#) |
+| ↳ | [java.security.cert.X509CRLSelector](../java/security/cert/X509CRLSelector.md) |
 
 A`CRLSelector`that selects`X509CRLs`that match all specified criteria. This class is particularly useful when selecting CRLs from a`CertStore`to check revocation status of a particular certificate.
 
-When first constructed, an`X509CRLSelector`has no criteria enabled and each of the`get`methods return a default value (`null`). Therefore, the [match](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#match(java.security.cert.CRL))method would return`true`for any`X509CRL`. Typically, several criteria are enabled (by calling [setIssuers](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuers(kotlin.collections.MutableCollection))or [setDateAndTime](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setDateAndTime(java.util.Date)), for instance) and then the`X509CRLSelector`is passed to [CertStore.getCRLs](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getCRLs(java.security.cert.CRLSelector))or some similar method.
+When first constructed, an`X509CRLSelector`has no criteria enabled and each of the`get`methods return a default value (`null`). Therefore, the [match](../java/security/cert/X509CRLSelector.md))method would return`true`for any`X509CRL`. Typically, several criteria are enabled (by calling [setIssuers](../java/security/cert/X509CRLSelector.md))or [setDateAndTime](../java/security/cert/X509CRLSelector.md)), for instance) and then the`X509CRLSelector`is passed to [CertStore.getCRLs](../java/security/cert/CertStore.md))or some similar method.
 
 Please refer to [RFC 5280: Internet X.509 Public Key Infrastructure Certificate and CRL Profile](http://tools.ietf.org/html/rfc5280) for definitions of the X.509 CRL fields and extensions mentioned below.
 
@@ -26,33 +26,33 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [X509CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#X509CRLSelector())`()` Creates an`X509CRLSelector`. |
+| [X509CRLSelector](../java/security/cert/X509CRLSelector.md))`()` Creates an`X509CRLSelector`. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIssuer](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuer(javax.security.auth.x500.X500Principal))`(`issuer:` ` [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!`)` Adds a name to the issuerNames criterion. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIssuerName](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuerName(kotlin.ByteArray))`(`name:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Adds a name to the issuerNames criterion. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIssuerName](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuerName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **Denigrated** , use [addIssuer(javax.security.auth.x500.X500Principal)](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuer(javax.security.auth.x500.X500Principal))or[addIssuerName(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuerName(kotlin.ByteArray))instead. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIssuer](../java/security/cert/X509CRLSelector.md))`(`issuer:` ` [X500Principal](../javax/security/auth/x500/X500Principal.md)!`)` Adds a name to the issuerNames criterion. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIssuerName](../java/security/cert/X509CRLSelector.md))`(`name:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Adds a name to the issuerNames criterion. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addIssuerName](../java/security/cert/X509CRLSelector.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **Denigrated** , use [addIssuer(javax.security.auth.x500.X500Principal)](../java/security/cert/X509CRLSelector.md))or[addIssuerName(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuerName(kotlin.ByteArray))instead. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#clone())`()` Returns a copy of this object. |
-| open [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)! | [getCertificateChecking](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getCertificateChecking())`()` Returns the certificate being checked. |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getDateAndTime](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getDateAndTime())`()` Returns the dateAndTime criterion. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/X509CRLSelector.md))`()` Returns a copy of this object. |
+| open [X509Certificate](../java/security/cert/X509Certificate.md)! | [getCertificateChecking](../java/security/cert/X509CRLSelector.md))`()` Returns the certificate being checked. |
+| open [Date](../java/util/Date.md)! | [getDateAndTime](../java/security/cert/X509CRLSelector.md))`()` Returns the dateAndTime criterion. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getIssuerNames](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getIssuerNames())`()` Returns a copy of the issuerNames criterion. |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!\>! | [getIssuers](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getIssuers())`()` Returns the issuerNames criterion. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getMaxCRL](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getMaxCRL())`()` Returns the maxCRLNumber criterion. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getIssuerNames](../java/security/cert/X509CRLSelector.md))`()` Returns a copy of the issuerNames criterion. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X500Principal](../javax/security/auth/x500/X500Principal.md)!\>! | [getIssuers](../java/security/cert/X509CRLSelector.md))`()` Returns the issuerNames criterion. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getMaxCRL](../java/security/cert/X509CRLSelector.md))`()` Returns the maxCRLNumber criterion. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getMinCRL](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getMinCRL())`()` Returns the minCRLNumber criterion. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [match](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#match(java.security.cert.CRL))`(`crl:` ` [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!`)` Decides whether a`CRL`should be selected. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCertificateChecking](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setCertificateChecking(java.security.cert.X509Certificate))`(`cert:` ` [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)!`)` Sets the certificate being checked. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getMinCRL](../java/security/cert/X509CRLSelector.md))`()` Returns the minCRLNumber criterion. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [match](../java/security/cert/X509CRLSelector.md))`(`crl:` ` [CRL](../java/security/cert/CRL.md)!`)` Decides whether a`CRL`should be selected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCertificateChecking](../java/security/cert/X509CRLSelector.md))`(`cert:` ` [X509Certificate](../java/security/cert/X509Certificate.md)!`)` Sets the certificate being checked. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDateAndTime](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setDateAndTime(java.util.Date))`(`dateAndTime:` ` [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!`)` Sets the dateAndTime criterion. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIssuerNames](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuerNames(kotlin.collections.MutableCollection))`(`names:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` **Note:** use [setIssuers(java.util.Collection)](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuers(kotlin.collections.MutableCollection))instead or only specify the byte array form of distinguished names when using this method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIssuers](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuers(kotlin.collections.MutableCollection))`(`issuers:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!>!`)` Sets the issuerNames criterion. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDateAndTime](../java/security/cert/X509CRLSelector.md))`(`dateAndTime:` ` [Date](../java/util/Date.md)!`)` Sets the dateAndTime criterion. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIssuerNames](../java/security/cert/X509CRLSelector.md))`(`names:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` **Note:** use [setIssuers(java.util.Collection)](../java/security/cert/X509CRLSelector.md))instead or only specify the byte array form of distinguished names when using this method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIssuers](../java/security/cert/X509CRLSelector.md))`(`issuers:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [X500Principal](../javax/security/auth/x500/X500Principal.md)!>!`)` Sets the issuerNames criterion. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxCRLNumber](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setMaxCRLNumber(java.math.BigInteger))`(`maxCRL:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Sets the maxCRLNumber criterion. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinCRLNumber](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setMinCRLNumber(java.math.BigInteger))`(`minCRL:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Sets the minCRLNumber criterion. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#toString())`()` Returns a printable representation of the`X509CRLSelector`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxCRLNumber](../java/security/cert/X509CRLSelector.md))`(`maxCRL:` ` [BigInteger](../java/math/BigInteger.md)!`)` Sets the maxCRLNumber criterion. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinCRLNumber](../java/security/cert/X509CRLSelector.md))`(`minCRL:` ` [BigInteger](../java/math/BigInteger.md)!`)` Sets the minCRLNumber criterion. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/X509CRLSelector.md))`()` Returns a printable representation of the`X509CRLSelector`. |
 | --- | --- |
 
 ## Public constructors
@@ -83,7 +83,7 @@ This method allows the caller to add a name to the set of issuer names which`X50
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `issuer` | [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!:the issuer as X500Principal |
+| `issuer` | [X500Principal](../javax/security/auth/x500/X500Principal.md)!:the issuer as X500Principal |
 
 ### addIssuerName
 
@@ -97,7 +97,7 @@ Adds a name to the issuerNames criterion. The issuer distinguished name in the`X
 
 This method allows the caller to add a name to the set of issuer names which`X509CRLs`may contain. The specified name is added to any previous value for the issuerNames criterion. If the specified name is a duplicate, it may be ignored. If a name is specified as a byte array, it should contain a single DER encoded distinguished name, as defined in X.501. The ASN.1 notation for this structure is as follows.
 
-The name is provided as a byte array. This byte array should contain a single DER encoded distinguished name, as defined in X.501. The ASN.1 notation for this structure appears in the documentation for [setIssuerNames(java.util.Collection)](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuerNames(kotlin.collections.MutableCollection)).
+The name is provided as a byte array. This byte array should contain a single DER encoded distinguished name, as defined in X.501. The ASN.1 notation for this structure appears in the documentation for [setIssuerNames(java.util.Collection)](../java/security/cert/X509CRLSelector.md)).
 
 Note that the byte array supplied here is cloned to protect against subsequent modifications.
 
@@ -117,7 +117,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun addIssuerName(name: String!): Unit
 ```
 
-**Denigrated** , use [addIssuer(javax.security.auth.x500.X500Principal)](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuer(javax.security.auth.x500.X500Principal))or[addIssuerName(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuerName(kotlin.ByteArray))instead. This method should not be relied on as it can fail to match some CRLs because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
+**Denigrated** , use [addIssuer(javax.security.auth.x500.X500Principal)](../java/security/cert/X509CRLSelector.md))or[addIssuerName(byte\[\])](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuerName(kotlin.ByteArray))instead. This method should not be relied on as it can fail to match some CRLs because of a loss of encoding information in the RFC 2253 String form of some distinguished names.
 
 Adds a name to the issuerNames criterion. The issuer distinguished name in the`X509CRL`must match at least one of the specified distinguished names.
 
@@ -161,11 +161,11 @@ Returns the certificate being checked. This is not a criterion. Rather, it is op
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|------------------------------------------|
-| [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)! | the certificate being checked (or`null`) |
+| [X509Certificate](../java/security/cert/X509Certificate.md)! | the certificate being checked (or`null`) |
 
 **See Also**
 
-- [#setCertificateChecking](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setCertificateChecking(java.security.cert.X509Certificate)) 
+- [#setCertificateChecking](../java/security/cert/X509CRLSelector.md)) 
 
 ### getDateAndTime
 
@@ -181,11 +181,11 @@ Note that the`Date`returned is cloned to protect against subsequent modification
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------|
-| [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | the`Date`to match against (or`null`) |
+| [Date](../java/util/Date.md)! | the`Date`to match against (or`null`) |
 
 **See Also**
 
-- [#setDateAndTime](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setDateAndTime(java.util.Date)) 
+- [#setDateAndTime](../java/security/cert/X509CRLSelector.md)) 
 
 ### getIssuerNames
 
@@ -199,7 +199,7 @@ Returns a copy of the issuerNames criterion. The issuer distinguished name in th
 
 If the value returned is not`null`, it is a`Collection`of names. Each name is a`String`or a byte array representing a distinguished name (in RFC 2253 or ASN.1 DER encoded form, respectively). Note that the`Collection`returned may contain duplicate names.
 
-If a name is specified as a byte array, it should contain a single DER encoded distinguished name, as defined in X.501. The ASN.1 notation for this structure is given in the documentation for [setIssuerNames(java.util.Collection)](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuerNames(kotlin.collections.MutableCollection)).
+If a name is specified as a byte array, it should contain a single DER encoded distinguished name, as defined in X.501. The ASN.1 notation for this structure is given in the documentation for [setIssuerNames(java.util.Collection)](../java/security/cert/X509CRLSelector.md)).
 
 Note that a deep copy is performed on the`Collection`to protect against subsequent modifications.
 
@@ -209,7 +209,7 @@ Note that a deep copy is performed on the`Collection`to protect against subseque
 
 **See Also**
 
-- [#setIssuerNames](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuerNames(kotlin.collections.MutableCollection)) 
+- [#setIssuerNames](../java/security/cert/X509CRLSelector.md)) 
 
 ### getIssuers
 
@@ -225,11 +225,11 @@ If the value returned is not`null`, it is a unmodifiable`Collection`of`X500Princ
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!>! | an unmodifiable`Collection`of names (or`null`) |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [X500Principal](../javax/security/auth/x500/X500Principal.md)!>! | an unmodifiable`Collection`of names (or`null`) |
 
 **See Also**
 
-- [#setIssuers](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuers(kotlin.collections.MutableCollection)) 
+- [#setIssuers](../java/security/cert/X509CRLSelector.md)) 
 
 ### getMaxCRL
 
@@ -243,7 +243,7 @@ Returns the maxCRLNumber criterion. The`X509CRL`must have a CRL number extension
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the maximum CRL number accepted (or`null`) |
+| [BigInteger](../java/math/BigInteger.md)! | the maximum CRL number accepted (or`null`) |
 
 ### getMinCRL
 
@@ -257,7 +257,7 @@ Returns the minCRLNumber criterion. The`X509CRL`must have a CRL number extension
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the minimum CRL number accepted (or`null`) |
+| [BigInteger](../java/math/BigInteger.md)! | the minimum CRL number accepted (or`null`) |
 
 ### match
 
@@ -271,7 +271,7 @@ Decides whether a`CRL`should be selected.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------|
-| `crl` | [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!:the`CRL`to be checked |
+| `crl` | [CRL](../java/security/cert/CRL.md)!:the`CRL`to be checked |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -289,11 +289,11 @@ Sets the certificate being checked. This is not a criterion. Rather, it is optio
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cert` | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate)!:the`X509Certificate`being checked (or`null`) |
+| `cert` | [X509Certificate](../java/security/cert/X509Certificate.md)!:the`X509Certificate`being checked (or`null`) |
 
 **See Also**
 
-- [#getCertificateChecking](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getCertificateChecking()) 
+- [#getCertificateChecking](../java/security/cert/X509CRLSelector.md)) 
 
 ### setDateAndTime
 
@@ -309,11 +309,11 @@ Note that the`Date`supplied here is cloned to protect against subsequent modific
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------|
-| `dateAndTime` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!:the`Date`to match against (or`null`) |
+| `dateAndTime` | [Date](../java/util/Date.md)!:the`Date`to match against (or`null`) |
 
 **See Also**
 
-- [#getDateAndTime](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getDateAndTime()) 
+- [#getDateAndTime](../java/security/cert/X509CRLSelector.md)) 
 
 ### setIssuerNames
 
@@ -323,7 +323,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setIssuerNames(names: MutableCollection<*>!): Unit
 ```
 
-**Note:** use [setIssuers(java.util.Collection)](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#setIssuers(kotlin.collections.MutableCollection))instead or only specify the byte array form of distinguished names when using this method. See [addIssuerName(java.lang.String)](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#addIssuerName(kotlin.String))for more information.
+**Note:** use [setIssuers(java.util.Collection)](../java/security/cert/X509CRLSelector.md))instead or only specify the byte array form of distinguished names when using this method. See [addIssuerName(java.lang.String)](../java/security/cert/X509CRLSelector.md))for more information.
 
 Sets the issuerNames criterion. The issuer distinguished name in the`X509CRL`must match at least one of the specified distinguished names. If`null`, any issuer distinguished name will do.
 
@@ -331,7 +331,7 @@ This method allows the caller to specify, with a single method call, the complet
 
 The`names`parameter (if not`null`) is a`Collection`of names. Each name is a`String`or a byte array representing a distinguished name (in [RFC 2253](http://www.ietf.org/rfc/rfc2253.txt) or ASN.1 DER encoded form, respectively). If`null`is supplied as the value for this argument, no issuerNames check will be performed.
 
-Note that the`names`parameter can contain duplicate distinguished names, but they may be removed from the`Collection`of names returned by the [getIssuerNames](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getIssuerNames())method.
+Note that the`names`parameter can contain duplicate distinguished names, but they may be removed from the`Collection`of names returned by the [getIssuerNames](../java/security/cert/X509CRLSelector.md))method.
 
 If a name is specified as a byte array, it should contain a single DER encoded distinguished name, as defined in X.501. The ASN.1 notation for this structure is as follows. 
 
@@ -373,7 +373,7 @@ Note that a deep copy is performed on the`Collection`to protect against subseque
 
 **See Also**
 
-- [#getIssuerNames](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getIssuerNames()) 
+- [#getIssuerNames](../java/security/cert/X509CRLSelector.md)) 
 
 ### setIssuers
 
@@ -389,17 +389,17 @@ This method allows the caller to specify, with a single method call, the complet
 
 The`names`parameter (if not`null`) is a`Collection`of`X500Principal`s.
 
-Note that the`names`parameter can contain duplicate distinguished names, but they may be removed from the`Collection`of names returned by the [getIssuers](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getIssuers())method.
+Note that the`names`parameter can contain duplicate distinguished names, but they may be removed from the`Collection`of names returned by the [getIssuers](../java/security/cert/X509CRLSelector.md))method.
 
 Note that a copy is performed on the`Collection`to protect against subsequent modifications.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `issuers` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal.html#)!\>!:a`Collection`of X500Principals (or`null`) |
+| `issuers` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X500Principal](../javax/security/auth/x500/X500Principal.md)!\>!:a`Collection`of X500Principals (or`null`) |
 
 **See Also**
 
-- [#getIssuers](https://developer.android.com/reference/kotlin/java/security/cert/X509CRLSelector#getIssuers()) 
+- [#getIssuers](../java/security/cert/X509CRLSelector.md)) 
 
 ### setMaxCRLNumber
 
@@ -413,7 +413,7 @@ Sets the maxCRLNumber criterion. The`X509CRL`must have a CRL number extension wh
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `maxCRL` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the maximum CRL number accepted (or`null`) |
+| `maxCRL` | [BigInteger](../java/math/BigInteger.md)!:the maximum CRL number accepted (or`null`) |
 
 ### setMinCRLNumber
 
@@ -427,7 +427,7 @@ Sets the minCRLNumber criterion. The`X509CRL`must have a CRL number extension wh
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `minCRL` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the minimum CRL number accepted (or`null`) |
+| `minCRL` | [BigInteger](../java/math/BigInteger.md)!:the minimum CRL number accepted (or`null`) |
 
 ### toString
 

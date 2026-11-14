@@ -10,9 +10,9 @@ abstract class Certificate : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#) |
+| ↳ | [java.security.cert.Certificate](../java/security/cert/Certificate.md) |
 
-| Known Direct Subclasses [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate) |------------------------------------------------------------------------------------------------------|-----------------------| | [X509Certificate](https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate) | Abstract class for X. | |
+| Known Direct Subclasses [X509Certificate](../java/security/cert/X509Certificate.md) |------------------------------------------------------------------------------------------------------|-----------------------| | [X509Certificate](../java/security/cert/X509Certificate.md) | Abstract class for X. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for managing a variety of identity certificates. An identity certificate is a binding of a principal to a public key which is vouched for by another principal. (A principal represents an entity such as an individual user, a group, or a corporation.)
@@ -25,30 +25,30 @@ X.509, PGP, and SDSI certificates can all be implemented by subclassing the Cert
 
 | Nested classes ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [CertificateRep](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.CertificateRep) Alternate Certificate class for serialization. |
+| open | [CertificateRep](../java/security/cert/Certificate.CertificateRep.md) Alternate Certificate class for serialization. |
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#Certificate(kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a certificate of the specified type. |
+| [Certificate](../java/security/cert/Certificate.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a certificate of the specified type. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this certificate for equality with the specified object. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#getEncoded())`()` Returns the encoded form of this certificate. |
-| abstract [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)! | [getPublicKey](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#getPublicKey())`()` Gets the public key from this certificate. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/cert/Certificate.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this certificate for equality with the specified object. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/cert/Certificate.md))`()` Returns the encoded form of this certificate. |
+| abstract [PublicKey](../java/security/PublicKey.md)! | [getPublicKey](../java/security/cert/Certificate.md))`()` Gets the public key from this certificate. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#getType())`()` Returns the type of this certificate. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#hashCode())`()` Returns a hashcode value for this certificate from its encoded form. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#toString())`()` Returns a string representation of this certificate. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../java/security/cert/Certificate.md))`()` Returns the type of this certificate. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/cert/Certificate.md))`()` Returns a hashcode value for this certificate from its encoded form. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/Certificate.md))`()` Returns a string representation of this certificate. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#verify(java.security.PublicKey))`(`key:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!`)` Verifies that this certificate was signed using the private key that corresponds to the specified public key. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#verify(java.security.PublicKey,%20kotlin.String))`(`key:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!`, `sigProvider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Verifies that this certificate was signed using the private key that corresponds to the specified public key. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#verify(java.security.PublicKey,%20java.security.Provider))`(`key:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!`, `sigProvider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Verifies that this certificate was signed using the private key that corresponds to the specified public key. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](../java/security/cert/Certificate.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`)` Verifies that this certificate was signed using the private key that corresponds to the specified public key. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](../java/security/cert/Certificate.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`, `sigProvider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Verifies that this certificate was signed using the private key that corresponds to the specified public key. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](../java/security/cert/Certificate.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`, `sigProvider:` ` [Provider](../java/security/Provider.md)!`)` Verifies that this certificate was signed using the private key that corresponds to the specified public key. |
 | --- | --- |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [writeReplace](https://developer.android.com/reference/kotlin/java/security/cert/Certificate#writeReplace())`()` Replace the Certificate to be serialized. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [writeReplace](../java/security/cert/Certificate.md))`()` Replace the Certificate to be serialized. |
 
 ## Protected constructors
 
@@ -117,7 +117,7 @@ Gets the public key from this certificate.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------|
-| [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)! | the public key. |
+| [PublicKey](../java/security/PublicKey.md)! | the public key. |
 
 ### getType
 
@@ -173,7 +173,7 @@ Verifies that this certificate was signed using the private key that corresponds
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!:the PublicKey used to carry out the verification. |
+| `key` | [PublicKey](../java/security/PublicKey.md)!:the PublicKey used to carry out the verification. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------|
@@ -199,7 +199,7 @@ Verifies that this certificate was signed using the private key that corresponds
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!:the PublicKey used to carry out the verification. |
+| `key` | [PublicKey](../java/security/PublicKey.md)!:the PublicKey used to carry out the verification. |
 | `sigProvider` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the signature provider. |
 
 | Exceptions ||
@@ -228,8 +228,8 @@ This method was added to version 1.8 of the Java Platform Standard Edition. In o
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)!:the PublicKey used to carry out the verification. |
-| `sigProvider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the signature provider. |
+| `key` | [PublicKey](../java/security/PublicKey.md)!:the PublicKey used to carry out the verification. |
+| `sigProvider` | [Provider](../java/security/Provider.md)!:the signature provider. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------|

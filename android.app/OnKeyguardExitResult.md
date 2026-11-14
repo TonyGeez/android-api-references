@@ -5,26 +5,26 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 
 # OnKeyguardExitResult
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/KeyguardManager.OnKeyguardExitResult "View this page in Java") 
+Kotlin| [Java](../android/app/KeyguardManager.OnKeyguardExitResult.md) 
 | --- | --- |
 
 ```
 interface OnKeyguardExitResult
 ```
 
-| [android.app.KeyguardManager.OnKeyguardExitResult](https://developer.android.com/reference/kotlin/android/app/KeyguardManager.OnKeyguardExitResult#) |
+| [android.app.KeyguardManager.OnKeyguardExitResult](../android/app/KeyguardManager.OnKeyguardExitResult.md) |
 
 | **This interface was deprecated in API level 26.**
 |
-| Use [KeyguardDismissCallback](https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardDismissCallback)
+| Use [KeyguardDismissCallback](../android/app/KeyguardManager.KeyguardDismissCallback.md)
 
-Callback passed to [KeyguardManager.exitKeyguardSecurely](https://developer.android.com/reference/kotlin/android/app/KeyguardManager#exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult))to notify caller of result.
+Callback passed to [KeyguardManager.exitKeyguardSecurely](../android/app/KeyguardManager.md))to notify caller of result.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onKeyguardExitResult](https://developer.android.com/reference/kotlin/android/app/KeyguardManager.OnKeyguardExitResult#onKeyguardExitResult(kotlin.Boolean))`(`success:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onKeyguardExitResult](../android/app/KeyguardManager.OnKeyguardExitResult.md))`(`success:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 
 ## Public methods
 

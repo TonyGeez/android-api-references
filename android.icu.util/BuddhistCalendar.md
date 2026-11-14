@@ -8,9 +8,9 @@ open class BuddhistCalendar : GregorianCalendar
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.icu.util.Calendar](https://developer.android.com/reference/kotlin/android/icu/util/Calendar) |||
-| | ↳ | [android.icu.util.GregorianCalendar](https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar) ||
-| | | ↳ | [android.icu.util.BuddhistCalendar](https://developer.android.com/reference/kotlin/android/icu/util/BuddhistCalendar#) |
+| ↳ | [android.icu.util.Calendar](../android/icu/util/Calendar.md) |||
+| | ↳ | [android.icu.util.GregorianCalendar](../android/icu/util/GregorianCalendar.md) ||
+| | | ↳ | [android.icu.util.BuddhistCalendar](../android/icu/util/BuddhistCalendar.md) |
 | --- | --- | --- | --- |
 
 `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. This is the civil calendar in some predominantly Buddhist countries such as Thailand, and it is used for religious purposes elsewhere.
@@ -110,7 +110,7 @@ Constructs a `BuddhistCalendar` based on the current time in the given time zone
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
 
 ### BuddhistCalendar
 
@@ -126,8 +126,8 @@ Constructs a `BuddhistCalendar` based on the current time in the given time zone
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: the given ulocale. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 ### BuddhistCalendar
 
@@ -143,8 +143,8 @@ Constructs a `BuddhistCalendar` based on the current time in the given time zone
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](https://developer.android.com/reference/kotlin/android/icu/util/TimeZone)!: the given time zone. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 
 ### BuddhistCalendar
 
@@ -158,7 +158,7 @@ Constructs a `BuddhistCalendar` based on the current time in the default time zo
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale)!: the given ulocale. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
 
 ### BuddhistCalendar
 
@@ -219,7 +219,7 @@ Constructs a `BuddhistCalendar` with the given date set in the default time zone
 
 | Parameters ||
 |---|---|
-| `date` | [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)!: The date to which the new calendar is set. |
+| `date` | [Date](../java/util/Date.md)!: The date to which the new calendar is set. |
 
 ### BuddhistCalendar
 
@@ -233,7 +233,7 @@ Constructs a `BuddhistCalendar` based on the current time in the default time zo
 
 | Parameters ||
 |---|---|
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the given locale. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
 
 ## Public methods
 

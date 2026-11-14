@@ -10,7 +10,7 @@ open class RC2ParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.RC2ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#) |
+| ↳ | [javax.crypto.spec.RC2ParameterSpec](../javax/crypto/spec/RC2ParameterSpec.md) |
 
 This class specifies the parameters used with the [*RC2*](http://www.ietf.org/rfc/rfc2268.txt) algorithm.
 
@@ -22,17 +22,17 @@ This class can be used to initialize a`Cipher`object that implements the*RC2*alg
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RC2ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#RC2ParameterSpec(kotlin.Int))`(`effectiveKeyBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for RC2 from the given effective key size (in bits). |
-| [RC2ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#RC2ParameterSpec(kotlin.Int,%20kotlin.ByteArray))`(`effectiveKeyBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs a parameter set for RC2 from the given effective key size (in bits) and an 8-byte IV. |
-| [RC2ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#RC2ParameterSpec(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int))`(`effectiveKeyBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for RC2 from the given effective key size (in bits) and IV. |
+| [RC2ParameterSpec](../javax/crypto/spec/RC2ParameterSpec.md))`(`effectiveKeyBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for RC2 from the given effective key size (in bits). |
+| [RC2ParameterSpec](../javax/crypto/spec/RC2ParameterSpec.md))`(`effectiveKeyBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs a parameter set for RC2 from the given effective key size (in bits) and an 8-byte IV. |
+| [RC2ParameterSpec](../javax/crypto/spec/RC2ParameterSpec.md))`(`effectiveKeyBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for RC2 from the given effective key size (in bits) and IV. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEffectiveKeyBits](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#getEffectiveKeyBits())`()` Returns the effective key size in bits. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#getIV())`()` Returns the IV or null if this parameter set does not contain an IV. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../javax/crypto/spec/RC2ParameterSpec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEffectiveKeyBits](../javax/crypto/spec/RC2ParameterSpec.md))`()` Returns the effective key size in bits. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](../javax/crypto/spec/RC2ParameterSpec.md))`()` Returns the IV or null if this parameter set does not contain an IV. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/crypto/spec/RC2ParameterSpec#hashCode())`()` Calculates a hash code value for the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../javax/crypto/spec/RC2ParameterSpec.md))`()` Calculates a hash code value for the object. |
 
 ## Public constructors
 

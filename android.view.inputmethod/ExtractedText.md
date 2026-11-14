@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # ExtractedText
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/ExtractedText "View this page in Java") 
+Kotlin| [Java](../android/view/inputmethod/ExtractedText.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ExtractedText : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#) |
+| ↳ | [android.view.inputmethod.ExtractedText](../android/view/inputmethod/ExtractedText.md) |
 
 Information about text that has been extracted for use by an input method. This contains information about a portion of the currently edited text, that the IME should display into its own interface while in extracted mode.
 
@@ -21,35 +21,35 @@ Information about text that has been extracted for use by an input method. This 
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SELECTING](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#FLAG_SELECTING:kotlin.Int) Bit for [flags](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#flags:kotlin.Int): set if the editor is currently in selection mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SINGLE_LINE](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#FLAG_SINGLE_LINE:kotlin.Int) Bit for [flags](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#flags:kotlin.Int): set if the text being edited can only be on a single line. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SELECTING](../android/view/inputmethod/ExtractedText.md) Bit for [flags](../android/view/inputmethod/ExtractedText.md): set if the editor is currently in selection mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SINGLE_LINE](../android/view/inputmethod/ExtractedText.md) Bit for [flags](../android/view/inputmethod/ExtractedText.md): set if the text being edited can only be on a single line. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------|---|
-| [ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#ExtractedText())`()` <br /> |
+| [ExtractedText](../android/view/inputmethod/ExtractedText.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#describeContents())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/inputmethod/ExtractedText.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/inputmethod/ExtractedText.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android/os/Parcel.md). |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#CREATOR:android.os.Parcelable.Creator) Used to make this class parcelable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#flags:kotlin.Int) Additional bit flags of information about the edited text. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [hint](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#hint:kotlin.CharSequence) The hint that has been extracted. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ExtractedText](../android/view/inputmethod/ExtractedText.md)!\> | [CREATOR](../android/view/inputmethod/ExtractedText.md) Used to make this class parcelable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](../android/view/inputmethod/ExtractedText.md) Additional bit flags of information about the edited text. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [hint](../android/view/inputmethod/ExtractedText.md) The hint that has been extracted. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [partialEndOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialEndOffset:kotlin.Int) If the content is a report of a partial text change, this is the offset where the change ends. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [partialStartOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialStartOffset:kotlin.Int) If the content is a report of a partial text change, this is the offset where the change starts and it runs until [partialEndOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialEndOffset:kotlin.Int). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectionEnd](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#selectionEnd:kotlin.Int) The offset where the selection currently ends within the extracted text. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [partialEndOffset](../android/view/inputmethod/ExtractedText.md) If the content is a report of a partial text change, this is the offset where the change ends. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [partialStartOffset](../android/view/inputmethod/ExtractedText.md) If the content is a report of a partial text change, this is the offset where the change starts and it runs until [partialEndOffset](../android/view/inputmethod/ExtractedText.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectionEnd](../android/view/inputmethod/ExtractedText.md) The offset where the selection currently ends within the extracted text. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectionStart](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#selectionStart:kotlin.Int) The offset where the selection currently starts within the extracted text. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [startOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#startOffset:kotlin.Int) The offset in the overall text at which the extracted text starts. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [text](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#text:kotlin.CharSequence) The text that has been extracted. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectionStart](../android/view/inputmethod/ExtractedText.md) The offset where the selection currently starts within the extracted text. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [startOffset](../android/view/inputmethod/ExtractedText.md) The offset in the overall text at which the extracted text starts. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [text](../android/view/inputmethod/ExtractedText.md) The text that has been extracted. |
 | --- | --- |
 
 ## Constants
@@ -62,7 +62,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val FLAG_SELECTING: Int
 ```
 
-Bit for [flags](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#flags:kotlin.Int): set if the editor is currently in selection mode. This happens when a hardware keyboard with latched keys is attached and the shift key is currently latched. 
+Bit for [flags](../android/view/inputmethod/ExtractedText.md): set if the editor is currently in selection mode. This happens when a hardware keyboard with latched keys is attached and the shift key is currently latched. 
 
  Value: 2
 
@@ -74,7 +74,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val FLAG_SINGLE_LINE: Int
 ```
 
-Bit for [flags](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#flags:kotlin.Int): set if the text being edited can only be on a single line. 
+Bit for [flags](../android/view/inputmethod/ExtractedText.md): set if the text being edited can only be on a single line. 
 
  Value: 1
 
@@ -98,7 +98,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### writeToParcel
 
@@ -111,11 +111,11 @@ open fun writeToParcel(
 ): Unit
 ```
 
-Used to package this object into a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#).
+Used to package this object into a [Parcel](../android/os/Parcel.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#) to be written. |
+| `dest` | [Parcel](../android/os/Parcel.md):The [Parcel](../android/os/Parcel.md) to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The flags used for parceling. |
 
 ## Properties
@@ -151,7 +151,7 @@ var hint: CharSequence!
 The hint that has been extracted. 
 **See Also**
 
-- [android.widget.TextView#getHint()](https://developer.android.com/reference/kotlin/android/widget/TextView.html#getHint()) 
+- [android.widget.TextView#getHint()](../android/widget/TextView.md)) 
 
 ### partialEndOffset
 
@@ -161,7 +161,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var partialEndOffset: Int
 ```
 
-If the content is a report of a partial text change, this is the offset where the change ends. Note that the actual text may be larger or smaller than the difference between this and [partialStartOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialStartOffset:kotlin.Int), meaning a reduction or increase, respectively, in the total text. 
+If the content is a report of a partial text change, this is the offset where the change ends. Note that the actual text may be larger or smaller than the difference between this and [partialStartOffset](../android/view/inputmethod/ExtractedText.md), meaning a reduction or increase, respectively, in the total text. 
 
 ### partialStartOffset
 
@@ -171,7 +171,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var partialStartOffset: Int
 ```
 
-If the content is a report of a partial text change, this is the offset where the change starts and it runs until [partialEndOffset](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText#partialEndOffset:kotlin.Int). If the content is the full text, this field is -1. 
+If the content is a report of a partial text change, this is the offset where the change starts and it runs until [partialEndOffset](../android/view/inputmethod/ExtractedText.md). If the content is the full text, this field is -1. 
 
 ### selectionEnd
 
@@ -214,4 +214,4 @@ var text: CharSequence!
 The text that has been extracted. 
 **See Also**
 
-- [android.widget.TextView#getText()](https://developer.android.com/reference/kotlin/android/widget/TextView.html#getText())
+- [android.widget.TextView#getText()](../android/widget/TextView.md))

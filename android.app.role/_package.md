@@ -2,10 +2,10 @@
 
 # android.app.role
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/role/package-summary "View this page in Java")
+Kotlin| [Java](../android/app/role/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [RoleManager](https://developer.android.com/reference/kotlin/android/app/role/RoleManager) | This class provides information about and manages roles. |
+| [RoleManager](../android/app/role/RoleManager.md) | This class provides information about and manages roles. |
 | --- | --- |

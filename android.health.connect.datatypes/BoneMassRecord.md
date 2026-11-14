@@ -9,9 +9,9 @@ class BoneMassRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.BoneMassRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BoneMassRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.BoneMassRecord](../android/health/connect/datatypes/BoneMassRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's bone mass. Each record represents a single instantaneous measurement.
@@ -29,7 +29,7 @@ Captures the user's bone mass. Each record represents a single instantaneous mea
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BoneMassRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Mass](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BoneMassRecord#getMass()()` <br /> |
+| [Mass](../android/health/connect/datatypes/units/Mass.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BoneMassRecord#getMass()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BoneMassRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 

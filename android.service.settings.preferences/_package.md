@@ -2,22 +2,22 @@
 
 # android.service.settings.preferences
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/settings/preferences/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/settings/preferences/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [GetValueRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueRequest) | Request parameters to retrieve the current value of a Settings Preference. |
+| [GetValueRequest](../android/service/settings/preferences/GetValueRequest.md) | Request parameters to retrieve the current value of a Settings Preference. |
 | --- | --- |
-| [GetValueResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult) | Result object given a corresponding [GetValueRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueRequest). |
-| [MetadataRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataRequest) | Request parameters to retrieve all metadata for all available settings preferences within this application. |
-| [MetadataResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult) | Result object given a corresponding [MetadataRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataRequest). |
+| [GetValueResult](../android/service/settings/preferences/GetValueResult.md) | Result object given a corresponding [GetValueRequest](../android/service/settings/preferences/GetValueRequest.md). |
+| [MetadataRequest](../android/service/settings/preferences/MetadataRequest.md) | Request parameters to retrieve all metadata for all available settings preferences within this application. |
+| [MetadataResult](../android/service/settings/preferences/MetadataResult.md) | Result object given a corresponding [MetadataRequest](../android/service/settings/preferences/MetadataRequest.md). |
 | --- | --- |
-| [SettingsPreferenceMetadata](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata) | Data object representation of a Settings Preference definition and state. |
-| [SettingsPreferenceService](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceService) | Base class for a service that exposes its settings preferences to external access. |
-| [SettingsPreferenceServiceClient](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceServiceClient) | Client class responsible for binding to and interacting with an instance of [SettingsPreferenceService](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceService). |
+| [SettingsPreferenceMetadata](../android/service/settings/preferences/SettingsPreferenceMetadata.md) | Data object representation of a Settings Preference definition and state. |
+| [SettingsPreferenceService](../android/service/settings/preferences/SettingsPreferenceService.md) | Base class for a service that exposes its settings preferences to external access. |
+| [SettingsPreferenceServiceClient](../android/service/settings/preferences/SettingsPreferenceServiceClient.md) | Client class responsible for binding to and interacting with an instance of [SettingsPreferenceService](../android/service/settings/preferences/SettingsPreferenceService.md). |
 | --- | --- |
-| [SettingsPreferenceValue](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue) | This objects represents a value that can be used for a particular settings preference. |
-| [SetValueRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest) | Request parameters to set the current value to a Settings Preference. |
-| [SetValueResult](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult) | Result object given a corresponding [SetValueRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest). |
+| [SettingsPreferenceValue](../android/service/settings/preferences/SettingsPreferenceValue.md) | This objects represents a value that can be used for a particular settings preference. |
+| [SetValueRequest](../android/service/settings/preferences/SetValueRequest.md) | Request parameters to set the current value to a Settings Preference. |
+| [SetValueResult](../android/service/settings/preferences/SetValueResult.md) | Result object given a corresponding [SetValueRequest](../android/service/settings/preferences/SetValueRequest.md). |
 | --- | --- |

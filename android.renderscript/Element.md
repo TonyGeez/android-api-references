@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Element
 
-Kotlin| [Java](https://developer.android.com/reference/android/renderscript/Element "View this page in Java") 
+Kotlin| [Java](../android/renderscript/Element.md) 
 | --- | --- |
 
 ```
@@ -14,8 +14,8 @@ open class Element : BaseObj
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||
-| | ↳ | [android.renderscript.Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#) |
+| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||
+| | ↳ | [android.renderscript.Element](../android/renderscript/Element.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,7 +30,7 @@ An Element represents one item within an . An Element is roughly equivalent to a
 
 A complex element is roughly equivalent to a C struct and contains a number of basic or complex Elements. From Java code, a complex element contains a list of sub-elements and names that represents a particular data structure. Structs used in RS scripts are available to Java code by using the`ScriptField_structname`class that is reflected from a particular script.
 
-Basic Elements are comprised of a and a . The DataType encodes C type information of an Element, while the DataKind encodes how that Element should be interpreted by a [android.renderscript.Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler). Note that objects with DataKind [android.renderscript.Element.DataKind#USER](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataKind) cannot be used as input for a [android.renderscript.Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler). In general, objects that are intended for use with a [android.renderscript.Sampler](https://developer.android.com/reference/kotlin/android/renderscript/Sampler) should use bitmap-derived Elements such as [android.renderscript.Element#RGBA_8888](https://developer.android.com/reference/kotlin/android/renderscript/Element#RGBA_8888(android.renderscript.RenderScript))or android.renderscript#Element.A_8.
+Basic Elements are comprised of a and a . The DataType encodes C type information of an Element, while the DataKind encodes how that Element should be interpreted by a [android.renderscript.Sampler](../android/renderscript/Sampler.md). Note that objects with DataKind [android.renderscript.Element.DataKind#USER](../android/renderscript/Element.DataKind.md) cannot be used as input for a [android.renderscript.Sampler](../android/renderscript/Sampler.md). In general, objects that are intended for use with a [android.renderscript.Sampler](../android/renderscript/Sampler.md) should use bitmap-derived Elements such as [android.renderscript.Element#RGBA_8888](../android/renderscript/Element.md))or android.renderscript#Element.A_8.
 |
 | ### Developer Guides
 |
@@ -40,123 +40,123 @@ Basic Elements are comprised of a and a . The DataType encodes C type informatio
 
 | Nested classes ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Builder](https://developer.android.com/reference/kotlin/android/renderscript/Element.Builder) Builder class for producing complex elements with matching field and name pairs. |
-| | [DataKind](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataKind) The special interpretation of the data if required. |
-| | [DataType](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType) DataType represents the basic type information for a basic element. |
+| open | [Builder](../android/renderscript/Element.Builder.md) Builder class for producing complex elements with matching field and name pairs. |
+| | [DataKind](../android/renderscript/Element.DataKind.md) The special interpretation of the data if required. |
+| | [DataType](../android/renderscript/Element.DataType.md) DataType represents the basic type information for a basic element. |
 | --- | --- |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [ALLOCATION](https://developer.android.com/reference/kotlin/android/renderscript/Element#ALLOCATION(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [A_8](https://developer.android.com/reference/kotlin/android/renderscript/Element#A_8(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [BOOLEAN](https://developer.android.com/reference/kotlin/android/renderscript/Element#BOOLEAN(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Utility function for returning an Element containing a single Boolean. |
+| openstatic [Element](../android/renderscript/Element.md)! | [ALLOCATION](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [A_8](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [BOOLEAN](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Utility function for returning an Element containing a single Boolean. |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [ELEMENT](https://developer.android.com/reference/kotlin/android/renderscript/Element#ELEMENT(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F16](https://developer.android.com/reference/kotlin/android/renderscript/Element#F16(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F16_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#F16_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [ELEMENT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F16](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F16_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F16_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#F16_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F16_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#F16_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F32](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F16_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F16_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F32](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F32_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F32_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F32_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#F32_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F32_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F32_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F32_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F64](https://developer.android.com/reference/kotlin/android/renderscript/Element#F64(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F64_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F64_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F64](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F64_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F64_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [F64_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#F64_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [FONT](https://developer.android.com/reference/kotlin/android/renderscript/Element#FONT(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I16](https://developer.android.com/reference/kotlin/android/renderscript/Element#I16(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [F64_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [FONT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I16](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I16_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#I16_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I16_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#I16_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I16_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#I16_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I16_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I16_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I16_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I32](https://developer.android.com/reference/kotlin/android/renderscript/Element#I32(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I32_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#I32_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I32_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#I32_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I32](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I32_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I32_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I32_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#I32_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I64](https://developer.android.com/reference/kotlin/android/renderscript/Element#I64(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I64_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#I64_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I32_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I64](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I64_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I64_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#I64_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I64_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#I64_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I8](https://developer.android.com/reference/kotlin/android/renderscript/Element#I8(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Utility function for returning an Element containing a single SIGNED_8. |
+| openstatic [Element](../android/renderscript/Element.md)! | [I64_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I64_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I8](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Utility function for returning an Element containing a single SIGNED_8. |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I8_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#I8_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I8_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#I8_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [I8_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#I8_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I8_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I8_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [I8_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [MATRIX4X4](https://developer.android.com/reference/kotlin/android/renderscript/Element#MATRIX4X4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [MATRIX_2X2](https://developer.android.com/reference/kotlin/android/renderscript/Element#MATRIX_2X2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [MATRIX_3X3](https://developer.android.com/reference/kotlin/android/renderscript/Element#MATRIX_3X3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX4X4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX_2X2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX_3X3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [MATRIX_4X4](https://developer.android.com/reference/kotlin/android/renderscript/Element#MATRIX_4X4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [MESH](https://developer.android.com/reference/kotlin/android/renderscript/Element#MESH(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [PROGRAM_FRAGMENT](https://developer.android.com/reference/kotlin/android/renderscript/Element#PROGRAM_FRAGMENT(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX_4X4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [MESH](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_FRAGMENT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [PROGRAM_RASTER](https://developer.android.com/reference/kotlin/android/renderscript/Element#PROGRAM_RASTER(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [PROGRAM_STORE](https://developer.android.com/reference/kotlin/android/renderscript/Element#PROGRAM_STORE(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [PROGRAM_VERTEX](https://developer.android.com/reference/kotlin/android/renderscript/Element#PROGRAM_VERTEX(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_RASTER](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_STORE](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_VERTEX](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [RGBA_4444](https://developer.android.com/reference/kotlin/android/renderscript/Element#RGBA_4444(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [RGBA_5551](https://developer.android.com/reference/kotlin/android/renderscript/Element#RGBA_5551(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [RGBA_8888](https://developer.android.com/reference/kotlin/android/renderscript/Element#RGBA_8888(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [RGBA_4444](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [RGBA_5551](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [RGBA_8888](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [RGB_565](https://developer.android.com/reference/kotlin/android/renderscript/Element#RGB_565(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [RGB_888](https://developer.android.com/reference/kotlin/android/renderscript/Element#RGB_888(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [SAMPLER](https://developer.android.com/reference/kotlin/android/renderscript/Element#SAMPLER(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [RGB_565](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [RGB_888](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [SAMPLER](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [SCRIPT](https://developer.android.com/reference/kotlin/android/renderscript/Element#SCRIPT(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [TYPE](https://developer.android.com/reference/kotlin/android/renderscript/Element#TYPE(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U16](https://developer.android.com/reference/kotlin/android/renderscript/Element#U16(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [SCRIPT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [TYPE](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U16](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U16_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#U16_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U16_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#U16_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U16_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#U16_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U16_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U16_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U16_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U32](https://developer.android.com/reference/kotlin/android/renderscript/Element#U32(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U32_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#U32_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U32_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#U32_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U32](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U32_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U32_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U32_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#U32_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U64](https://developer.android.com/reference/kotlin/android/renderscript/Element#U64(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U64_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#U64_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U32_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U64](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U64_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U64_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#U64_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U64_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#U64_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U8](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` Utility function for returning an Element containing a single UNSIGNED_8. |
+| openstatic [Element](../android/renderscript/Element.md)! | [U64_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U64_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U8](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Utility function for returning an Element containing a single UNSIGNED_8. |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U8_2](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_2(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U8_3](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_3(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [U8_4](https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_4(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U8_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U8_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [U8_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [YUV](https://developer.android.com/reference/kotlin/android/renderscript/Element#YUV(android.renderscript.RenderScript))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`)` <br /> |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [createPixel](https://developer.android.com/reference/kotlin/android/renderscript/Element#createPixel(android.renderscript.RenderScript,%20android.renderscript.Element.DataType,%20android.renderscript.Element.DataKind))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `dt:` ` [Element.DataType](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType)!`, `dk:` ` [Element.DataKind](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataKind)!`)` Create a new pixel Element type. |
-| openstatic [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [createVector](https://developer.android.com/reference/kotlin/android/renderscript/Element#createVector(android.renderscript.RenderScript,%20android.renderscript.Element.DataType,%20kotlin.Int))`(`rs:` ` [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!`, `dt:` ` [Element.DataType](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType)!`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a custom vector element of the specified DataType and vector size. |
+| openstatic [Element](../android/renderscript/Element.md)! | [YUV](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](../android/renderscript/Element.md)! | [createPixel](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `dt:` ` [Element.DataType](../android/renderscript/Element.DataType.md)!`, `dk:` ` [Element.DataKind](../android/renderscript/Element.DataKind.md)!`)` Create a new pixel Element type. |
+| openstatic [Element](../android/renderscript/Element.md)! | [createVector](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `dt:` ` [Element.DataType](../android/renderscript/Element.DataType.md)!`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a custom vector element of the specified DataType and vector size. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBytesSize](https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize())`()` <br /> |
-| open [Element.DataKind](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataKind)! | [getDataKind](https://developer.android.com/reference/kotlin/android/renderscript/Element#getDataKind())`()` <br /> |
-| open [Element.DataType](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType)! | [getDataType](https://developer.android.com/reference/kotlin/android/renderscript/Element#getDataType())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBytesSize](../android/renderscript/Element.md))`()` <br /> |
+| open [Element.DataKind](../android/renderscript/Element.DataKind.md)! | [getDataKind](../android/renderscript/Element.md))`()` <br /> |
+| open [Element.DataType](../android/renderscript/Element.DataType.md)! | [getDataType](../android/renderscript/Element.md))`()` <br /> |
 | --- | --- |
-| open [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | [getSubElement](https://developer.android.com/reference/kotlin/android/renderscript/Element#getSubElement(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element at index |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementArraySize](https://developer.android.com/reference/kotlin/android/renderscript/Element#getSubElementArraySize(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, some sub-elements could be statically sized arrays. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementCount](https://developer.android.com/reference/kotlin/android/renderscript/Element#getSubElementCount())`()` Elements could be simple, such as an int or a float, or a structure with multiple sub elements, such as a collection of floats, float2, float4. |
+| open [Element](../android/renderscript/Element.md)! | [getSubElement](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element at index |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementArraySize](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, some sub-elements could be statically sized arrays. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementCount](../android/renderscript/Element.md))`()` Elements could be simple, such as an int or a float, or a structure with multiple sub elements, such as a collection of floats, float2, float4. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubElementName](https://developer.android.com/reference/kotlin/android/renderscript/Element#getSubElementName(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element name at index |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementOffsetBytes](https://developer.android.com/reference/kotlin/android/renderscript/Element#getSubElementOffsetBytes(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This function specifies the location of a sub-element within the element |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVectorSize](https://developer.android.com/reference/kotlin/android/renderscript/Element#getVectorSize())`()` Returns the number of vector components. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubElementName](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element name at index |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementOffsetBytes](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This function specifies the location of a sub-element within the element |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVectorSize](../android/renderscript/Element.md))`()` Returns the number of vector components. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompatible](https://developer.android.com/reference/kotlin/android/renderscript/Element#isCompatible(android.renderscript.Element))`(`e:` ` [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)!`)` Check if the current Element is compatible with another Element. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isComplex](https://developer.android.com/reference/kotlin/android/renderscript/Element#isComplex())`()` Return if a element is too complex for use as a data source for a Mesh or a Program. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompatible](../android/renderscript/Element.md))`(`e:` ` [Element](../android/renderscript/Element.md)!`)` Check if the current Element is compatible with another Element. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isComplex](../android/renderscript/Element.md))`()` Return if a element is too complex for use as a data source for a Mesh or a Program. |
 
 | Inherited functions ||
 |---|---|
-| From class [BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#destroy())`()` <br /> Frees any native resources associated with this object. The primary use is to force immediate cleanup of resources when it is believed the GC will not respond quickly enough. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#finalize())`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#getName())`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#hashCode())`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#setName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
+| From class [BaseObj](../android/renderscript/BaseObj.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](../android/renderscript/BaseObj.md))`()` <br /> Frees any native resources associated with this object. The primary use is to force immediate cleanup of resources when it is believed the GC will not respond quickly enough. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/renderscript/BaseObj.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/renderscript/BaseObj.md))`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/renderscript/BaseObj.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/renderscript/BaseObj.md))`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../android/renderscript/BaseObj.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
 
 ## Public methods
 
@@ -194,11 +194,11 @@ Utility function for returning an Element containing a single Boolean.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:Context to which the element will belong. |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the element will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | Element |
+| [Element](../android/renderscript/Element.md)! | Element |
 
 ### ELEMENT
 
@@ -491,11 +491,11 @@ Utility function for returning an Element containing a single SIGNED_8.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:Context to which the element will belong. |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the element will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | Element |
+| [Element](../android/renderscript/Element.md)! | Element |
 
 ### I8_2
 
@@ -844,11 +844,11 @@ Utility function for returning an Element containing a single UNSIGNED_8.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:Context to which the element will belong. |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the element will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | Element |
+| [Element](../android/renderscript/Element.md)! | Element |
 
 ### U8_2
 
@@ -911,14 +911,14 @@ Create a new pixel Element type. A matching DataType and DataKind must be provid
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:The context associated with the new Element. |
-| `dt` | [Element.DataType](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType)!:The DataType for the new element. |
-| `dk` | [Element.DataKind](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataKind)!:The DataKind to specify the mapping of each component in the DataType. |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The context associated with the new Element. |
+| `dt` | [Element.DataType](../android/renderscript/Element.DataType.md)!:The DataType for the new element. |
+| `dk` | [Element.DataKind](../android/renderscript/Element.DataKind.md)!:The DataKind to specify the mapping of each component in the DataType. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | Element |
+| [Element](../android/renderscript/Element.md)! | Element |
 
 ### createVector
 
@@ -938,14 +938,14 @@ Create a custom vector element of the specified DataType and vector size. DataKi
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!:The context associated with the new Element. |
-| `dt` | [Element.DataType](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType)!:The DataType for the new Element. |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The context associated with the new Element. |
+| `dt` | [Element.DataType](../android/renderscript/Element.DataType.md)!:The DataType for the new Element. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Vector size for the new Element. Range 2-4 inclusive supported. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | Element |
+| [Element](../android/renderscript/Element.md)! | Element |
 
 ### getBytesSize
 
@@ -975,7 +975,7 @@ open fun getDataKind(): Element.DataKind!
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------|
-| [Element.DataKind](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataKind)! | element data kind |
+| [Element.DataKind](../android/renderscript/Element.DataKind.md)! | element data kind |
 
 ### getDataType
 
@@ -990,7 +990,7 @@ open fun getDataType(): Element.DataType!
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------|
-| [Element.DataType](https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType)! | element data type |
+| [Element.DataType](../android/renderscript/Element.DataType.md)! | element data type |
 
 ### getSubElement
 
@@ -1011,7 +1011,7 @@ For complex elements, this function will return the sub-element at index
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------|
-| [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)! | sub-element in this element at given index |
+| [Element](../android/renderscript/Element.md)! | sub-element in this element at given index |
 
 ### getSubElementArraySize
 
@@ -1125,7 +1125,7 @@ Check if the current Element is compatible with another Element. Primitive Eleme
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element#)!:The Element to check compatibility with. |
+| `e` | [Element](../android/renderscript/Element.md)!:The Element to check compatibility with. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

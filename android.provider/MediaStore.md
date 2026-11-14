@@ -8,7 +8,7 @@ class MediaStore
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.MediaStore](https://developer.android.com/reference/kotlin/android/provider/MediaStore#) |
+| ↳ | [android.provider.MediaStore](../android/provider/MediaStore.md) |
 
 The contract between the media provider and applications. Contains definitions for the supported URIs and columns.
 
@@ -147,26 +147,26 @@ The media provider provides an indexed collection of common media types, such as
 | Public methods ||
 |---|---|
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#canManageMedia(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns whether the calling app is granted `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_MEDIA:kotlin.String` or not. |
-| static [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createDeleteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to permanently delete the requested media items. |
-| static [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createFavoriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to favorite the requested media items. |
+| static [PendingIntent](../android/app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createDeleteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to permanently delete the requested media items. |
+| static [PendingIntent](../android/app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createFavoriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to favorite the requested media items. |
 | --- | --- |
-| static [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createTrashRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to trash the requested media items. |
-| static [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createWriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to grant your app write access for the requested media items. |
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getDocumentUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, mediaUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri. |
+| static [PendingIntent](../android/app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createTrashRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to trash the requested media items. |
+| static [PendingIntent](../android/app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createWriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to grant your app write access for the requested media items. |
+| static [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getDocumentUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, mediaUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri. |
 | --- | --- |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Return list of all specific volume names that make up `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String`. |
 | static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getGeneration(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, volumeName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the latest generation value for the given volume. |
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getMediaScannerUri()()` Uri for querying the state of the media scanner. |
+| static [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getMediaScannerUri()()` Uri for querying the state of the media scanner. |
 | --- | --- |
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getMediaUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri. |
-| static [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getOriginalMediaFormatFileDescriptor(android.content.Context,%20android.os.ParcelFileDescriptor)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, fileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)` Returns `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#` representing the original media file format for `fileDescriptor`. |
+| static [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getMediaUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri. |
+| static [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getOriginalMediaFormatFileDescriptor(android.content.Context,%20android.os.ParcelFileDescriptor)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, fileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)` Returns `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#` representing the original media file format for `fileDescriptor`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getPackageForSearchMediaService(android.content.ContentResolver)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#)` Gets the package name of the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` that client apps use to connect. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getPickImagesMaxLimit()()` The maximum limit for the number of items that can be selected using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String` when launched in multiple selection mode. |
 | static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRecentExternalVolumeNames(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Return list of all recent volume names that have been part of `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String`. |
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20android.net.Uri)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Returns an EXIF redacted version of `uri` i. |
+| static [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20android.net.Uri)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Returns an EXIF redacted version of `uri` i. |
 | --- | --- |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20kotlin.collections.MutableList)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Returns a list of EXIF redacted version of `uris` i. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\> | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20kotlin.collections.MutableList)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Returns a list of EXIF redacted version of `uris` i. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRequireOriginal(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return if the caller requires the original file contents when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVersion(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Return an opaque version string describing the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` state. |
 | --- | --- |
@@ -179,21 +179,21 @@ The media provider provides an indexed collection of common media types, such as
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#markIsFavoriteStatus(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, areFavorites: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the media isFavorite status if the calling app has wider read permission on media files for given type. |
 | --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#notifyCloudMediaChangedEvent(android.content.ContentResolver,%20kotlin.String,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, currentMediaCollectionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Notifies the OS about a cloud media event requiring a full or incremental media collection sync for the currently enabled cloud provider, `authority`. |
-| static [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
-| static [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
+| static [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
+| static [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
 | --- | --- |
-| static [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openTypedAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
-| static [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#queryDeletedFiles(android.content.ContentResolver,%20android.os.Bundle,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Returns a cursor of deleted items matching the given query arguments. |
+| static [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openTypedAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
+| static [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#queryDeletedFiles(android.content.ContentResolver,%20android.os.Bundle,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Returns a cursor of deleted items matching the given query arguments. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#restoreFileFromTrash(android.content.ContentResolver,%20kotlin.String,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, targetPath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Restores a file or directory from a trashed state. |
 | --- | --- |
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setIncludePending(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to also include any pending media items from calls such as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)`. |
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setRequireOriginal(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to indicate that the caller requires the original file contents when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`. |
+| static [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setIncludePending(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to also include any pending media items from calls such as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)`. |
+| static [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setRequireOriginal(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to indicate that the caller requires the original file contents when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#trashFile(android.content.ContentResolver,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Moves a file or directory to a trashed state. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY_URI:android.net.Uri` A content:// style uri to the authority for the media provider |
+| static [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY_URI:android.net.Uri` A content:// style uri to the authority for the media provider |
 
 ## Constants
 
@@ -1515,7 +1515,7 @@ To request access, use `https://developer.android.com/reference/kotlin/android/p
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): the request context. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): the request context. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1550,8 +1550,8 @@ Note: if your app targets `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1579,8 +1579,8 @@ Note: if your app targets `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 | `value` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` value to apply. |
 | --- | --- |
 
@@ -1615,8 +1615,8 @@ Note: if your app targets `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 | `value` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String` value to apply. |
 | --- | --- |
 
@@ -1656,8 +1656,8 @@ Note: if your app targets `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1680,8 +1680,8 @@ This allows apps with Storage Access Framework permissions to convert between `h
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
-| `mediaUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri to convert. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `mediaUri` | [Uri](../android/net/Uri.md): The `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri to convert. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1705,7 +1705,7 @@ Each specific volume name can be passed to APIs like `https://developer.android.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1733,7 +1733,7 @@ Note that before comparing these detailed generation values, you should first co
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 | `volumeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): specific volume to obtain an generation value for. Must be one of the values returned from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)`. This value cannot be `null`. |
 
 **See Also**
@@ -1768,8 +1768,8 @@ This allows apps with Storage Access Framework permissions to convert between `h
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
-| `documentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri to convert. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `documentUri` | [Uri](../android/net/Uri.md): The `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri to convert. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1800,8 +1800,8 @@ The method returns the original file descriptor with the same permission that th
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
-| `fileDescriptor` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `fileDescriptor` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1828,7 +1828,7 @@ Gets the package name of the `https://developer.android.com/reference/kotlin/and
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1861,7 +1861,7 @@ Each specific volume name can be passed to APIs like `https://developer.android.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1884,8 +1884,8 @@ A redacted Uri can be used to share a file with another application wherein expo
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` Uri to convert. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` Uri to convert. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1916,8 +1916,8 @@ A redacted Uri can be used to share a file with another application wherein expo
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
-| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: the list of `https://developer.android.com/reference/kotlin/android/net/Uri.html#` Uri to convert. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: the list of `https://developer.android.com/reference/kotlin/android/net/Uri.html#` Uri to convert. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1944,7 +1944,7 @@ Return if the caller requires the original file contents when calling `https://d
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 
 **See Also**
 
@@ -1968,7 +1968,7 @@ This method returns the version for `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 ### getVersion
 
@@ -1989,7 +1989,7 @@ No other assumptions should be made about the meaning of the version. It can ret
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 | `volumeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): specific volume to obtain an opaque version string for. Must be one of the values returned from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)`. This value cannot be `null`. |
 
 ### getVolumeName
@@ -2004,7 +2004,7 @@ Return the volume name that the given `https://developer.android.com/reference/k
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2026,7 +2026,7 @@ Returns `true` if and only if the caller with `authority` is the currently enabl
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): This value cannot be `null`. |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 
 **See Also**
@@ -2052,7 +2052,7 @@ The system gallery is one app chosen by the OEM that has read \& write access to
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid to be checked if it is the current system gallery. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name to be checked if it is the current system gallery. This value cannot be `null`. |
 | --- | --- |
@@ -2073,7 +2073,7 @@ Returns `true` if and only if the caller with `authority` is a supported `https:
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): This value cannot be `null`. |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 
 **See Also**
@@ -2098,8 +2098,8 @@ Sets the media isFavorite status if the calling app has wider read permission on
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` This value cannot be `null`. |
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: a collection of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String` sample uri - content://media/external_primary/images/media/24. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` This value cannot be `null`. |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>: a collection of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String` sample uri - content://media/external_primary/images/media/24. This value cannot be `null`. |
 | `areFavorites` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): the `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` value to apply. |
 | --- | --- |
 
@@ -2120,7 +2120,7 @@ Notifies the OS about a cloud media event requiring a full or incremental media 
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): This value cannot be `null`. |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `currentMediaCollectionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | --- | --- |
@@ -2149,11 +2149,11 @@ This API is preferred over `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The desired URI to open. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The desired URI to open. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: This value may be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2184,11 +2184,11 @@ This API is preferred over `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The desired URI to open. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The desired URI to open. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: A signal to cancel the operation in progress, or null if none. If the operation is canceled, then `https://developer.android.com/reference/kotlin/android/os/OperationCanceledException.html#` will be thrown. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: A signal to cancel the operation in progress, or null if none. If the operation is canceled, then `https://developer.android.com/reference/kotlin/android/os/OperationCanceledException.html#` will be thrown. |
 
 | Return ||
 |---|---|
@@ -2220,12 +2220,12 @@ This API is preferred over `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The desired URI to open. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): The desired URI to open. This value cannot be `null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The desired MIME type of the returned data. This can be a pattern such as \*/\*, which will allow the content provider to select a type, though there is no way for you to determine what type it is returning. This value cannot be `null`. |
 | --- | --- |
-| `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional provider-dependent options. This value may be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: This value may be `null`. |
+| `opts` | [Bundle](../android/os/Bundle.md)?: Additional provider-dependent options. This value may be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2259,9 +2259,9 @@ The returned cursor includes columns such as `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The ContentResolver to use for the call. This value cannot be `null`. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Arguments for the query. Supported arguments include `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_SELECTION:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_SELECTION_ARGS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_SORT_ORDER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_LIMIT:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_OFFSET:kotlin.String`. The selection and sort order can filter and sort on any of the columns defined in `https://developer.android.com/reference/kotlin/android/provider/MediaStore.DeletedFiles.DeletedFilesColumns`. This value may be `null`. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: A cancellation signal to cancel the operation in progress. This value may be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The ContentResolver to use for the call. This value cannot be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md)?: Arguments for the query. Supported arguments include `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_SELECTION:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_SELECTION_ARGS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_SQL_SORT_ORDER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_LIMIT:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#QUERY_ARG_OFFSET:kotlin.String`. The selection and sort order can filter and sort on any of the columns defined in `https://developer.android.com/reference/kotlin/android/provider/MediaStore.DeletedFiles.DeletedFilesColumns`. This value may be `null`. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: A cancellation signal to cancel the operation in progress. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -2293,7 +2293,7 @@ Apps using this API must declare the `https://developer.android.com/reference/ko
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` to use for the call. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` to use for the call. This value cannot be `null`. |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The absolute path of the trashed file or directory to be restored. This path should be the path of the item as it exists in the trash. This value cannot be `null`. |
 | `targetPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: An optional absolute path where the item should be restored. If `null`, the item will be restored to its original location prior to being trashed. |
 | --- | --- |
@@ -2328,7 +2328,7 @@ Update the given `https://developer.android.com/reference/kotlin/android/net/Uri
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2354,7 +2354,7 @@ If the original file contents cannot be provided, a `https://developer.android.c
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2384,7 +2384,7 @@ Apps using this API must declare the `https://developer.android.com/reference/ko
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` to use for the call. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` to use for the call. This value cannot be `null`. |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The absolute path of the file or directory to be trashed. This value cannot be `null`. |
 
 | Return ||

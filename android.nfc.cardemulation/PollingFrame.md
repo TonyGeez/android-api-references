@@ -2,7 +2,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # PollingFrame
 
-Kotlin | [Java](https://developer.android.com/reference/android/nfc/cardemulation/PollingFrame "View this page in Java")
+Kotlin | [Java](../android/nfc/cardemulation/PollingFrame.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PollingFrame : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.cardemulation.PollingFrame](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/PollingFrame#) |
+| ↳ | [android.nfc.cardemulation.PollingFrame](../android/nfc/cardemulation/PollingFrame.md) |
 
 Polling Frames represent data about individual frames of an NFC polling loop. These frames will be delivered to subclasses of `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService` that have registered filters with `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerPollingLoopFilterForService(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)` that match a given frame in a loop and will be delivered through calls to `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#processPollingFrames(kotlin.collections.MutableList)`.
 
@@ -47,7 +47,7 @@ Polling Frames represent data about individual frames of an NFC polling loop. Th
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PollingFrame](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/PollingFrame#)!\> | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/PollingFrame#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PollingFrame](../android/nfc/cardemulation/PollingFrame.md)!\> | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/PollingFrame#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -242,7 +242,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

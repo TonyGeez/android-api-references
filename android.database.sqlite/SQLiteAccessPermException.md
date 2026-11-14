@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # SQLiteAccessPermException
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteAccessPermException "View this page in Java") 
+Kotlin| [Java](../android/database/sqlite/SQLiteAccessPermException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class SQLiteAccessPermException : SQLiteException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.SQLException](https://developer.android.com/reference/kotlin/android/database/SQLException.html#) |||
-| | | | | ↳ | [android.database.sqlite.SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) ||
-| | | | | | ↳ | [android.database.sqlite.SQLiteAccessPermException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteAccessPermException#) |
+| | | | ↳ | [android.database.SQLException](../android/database/SQLException.md) |||
+| | | | | ↳ | [android.database.sqlite.SQLiteException](../android/database/sqlite/SQLiteException.md) ||
+| | | | | | ↳ | [android.database.sqlite.SQLiteAccessPermException](../android/database/sqlite/SQLiteAccessPermException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This exception class is used when sqlite can't access the database file due to lack of permissions on the file.
@@ -28,8 +28,8 @@ This exception class is used when sqlite can't access the database file due to l
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteAccessPermException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteAccessPermException#SQLiteAccessPermException())`()` <br /> |
-| [SQLiteAccessPermException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteAccessPermException#SQLiteAccessPermException(kotlin.String))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SQLiteAccessPermException](../android/database/sqlite/SQLiteAccessPermException.md))`()` <br /> |
+| [SQLiteAccessPermException](../android/database/sqlite/SQLiteAccessPermException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

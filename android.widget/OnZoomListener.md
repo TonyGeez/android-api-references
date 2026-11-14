@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnZoomListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener "View this page in Java") 
+Kotlin | [Java](../android/widget/ZoomButtonsController.OnZoomListener.md) 
 | --- | --- |
 
 ```
 interface OnZoomListener
 ```
 
-| [android.widget.ZoomButtonsController.OnZoomListener](https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener#) |
+| [android.widget.ZoomButtonsController.OnZoomListener](../android/widget/ZoomButtonsController.OnZoomListener.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -24,8 +24,8 @@ Interface that will be called when the user performs an interaction that trigger
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVisibilityChanged](https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener#onVisibilityChanged(kotlin.Boolean))`(`visible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the zoom controls' visibility changes. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onZoom](https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener#onZoom(kotlin.Boolean))`(`zoomIn:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the owner view needs to be zoomed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVisibilityChanged](../android/widget/ZoomButtonsController.OnZoomListener.md))`(`visible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the zoom controls' visibility changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onZoom](../android/widget/ZoomButtonsController.OnZoomListener.md))`(`zoomIn:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the owner view needs to be zoomed. |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyNotYetValidException
 
-Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/KeyNotYetValidException "View this page in Java") 
+Kotlin| [Java](../android/security/keystore/KeyNotYetValidException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class KeyNotYetValidException : InvalidKeyException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.KeyException](https://developer.android.com/reference/kotlin/java/security/KeyException.html#) |||
-| | | | | ↳ | [java.security.InvalidKeyException](https://developer.android.com/reference/kotlin/java/security/InvalidKeyException.html#) ||
-| | | | | | ↳ | [android.security.keystore.KeyNotYetValidException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyNotYetValidException#) |
+| | | | ↳ | [java.security.KeyException](../java/security/KeyException.md) |||
+| | | | | ↳ | [java.security.InvalidKeyException](../java/security/InvalidKeyException.md) ||
+| | | | | | ↳ | [android.security.keystore.KeyNotYetValidException](../android/security/keystore/KeyNotYetValidException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Indicates that a cryptographic operation failed because the employed key's validity start date is in the future.
@@ -28,9 +28,9 @@ Indicates that a cryptographic operation failed because the employed key's valid
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyNotYetValidException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyNotYetValidException#KeyNotYetValidException())`()` Constructs a new`KeyNotYetValidException`without detail message and cause. |
-| [KeyNotYetValidException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyNotYetValidException#KeyNotYetValidException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`KeyNotYetValidException`with the provided detail message and no cause. |
-| [KeyNotYetValidException](https://developer.android.com/reference/kotlin/android/security/keystore/KeyNotYetValidException#KeyNotYetValidException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`KeyNotYetValidException`with the provided detail message and cause. |
+| [KeyNotYetValidException](../android/security/keystore/KeyNotYetValidException.md))`()` Constructs a new`KeyNotYetValidException`without detail message and cause. |
+| [KeyNotYetValidException](../android/security/keystore/KeyNotYetValidException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`KeyNotYetValidException`with the provided detail message and no cause. |
+| [KeyNotYetValidException](../android/security/keystore/KeyNotYetValidException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`KeyNotYetValidException`with the provided detail message and cause. |
 
 ## Public constructors
 

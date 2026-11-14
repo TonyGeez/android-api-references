@@ -10,7 +10,7 @@ open class OAEPParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.OAEPParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#) |
+| ↳ | [javax.crypto.spec.OAEPParameterSpec](../javax/crypto/spec/OAEPParameterSpec.md) |
 
 This class specifies the set of parameters used with OAEP Padding, as defined in the [PKCS #1](http://www.ietf.org/rfc/rfc3447.txt) standard. Its ASN.1 definition in PKCS#1 standard is described below: 
 
@@ -51,19 +51,19 @@ Note: the OAEPParameterSpec.DEFAULT uses the following: message digest -- "SHA-1
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [OAEPParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#OAEPParameterSpec(kotlin.String,%20kotlin.String,%20java.security.spec.AlgorithmParameterSpec,%20javax.crypto.spec.PSource))`(`mdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`, `pSrc:` ` [PSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource)!`)` Constructs a parameter set for OAEP padding as defined in the PKCS #1 standard using the specified message digest algorithm`mdName`, mask generation function algorithm`mgfName`, parameters for the mask generation function`mgfSpec`, and source of the encoding input P`pSrc`. |
+| [OAEPParameterSpec](../javax/crypto/spec/OAEPParameterSpec.md))`(`mdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `pSrc:` ` [PSource](../javax/crypto/spec/PSource.md)!`)` Constructs a parameter set for OAEP padding as defined in the PKCS #1 standard using the specified message digest algorithm`mdName`, mask generation function algorithm`mgfName`, parameters for the mask generation function`mgfSpec`, and source of the encoding input P`pSrc`. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDigestAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#getDigestAlgorithm())`()` Returns the message digest algorithm name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMGFAlgorithm](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#getMGFAlgorithm())`()` Returns the mask generation function algorithm name. |
-| open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | [getMGFParameters](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#getMGFParameters())`()` Returns the parameters for the mask generation function. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDigestAlgorithm](../javax/crypto/spec/OAEPParameterSpec.md))`()` Returns the message digest algorithm name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMGFAlgorithm](../javax/crypto/spec/OAEPParameterSpec.md))`()` Returns the mask generation function algorithm name. |
+| open [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getMGFParameters](../javax/crypto/spec/OAEPParameterSpec.md))`()` Returns the parameters for the mask generation function. |
 | --- | --- |
-| open [PSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource)! | [getPSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#getPSource())`()` Returns the source of encoding input P. |
+| open [PSource](../javax/crypto/spec/PSource.md)! | [getPSource](../javax/crypto/spec/OAEPParameterSpec.md))`()` Returns the source of encoding input P. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [OAEPParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#)! | [DEFAULT](https://developer.android.com/reference/kotlin/javax/crypto/spec/OAEPParameterSpec#DEFAULT:javax.crypto.spec.OAEPParameterSpec) The OAEP parameter set with all default values. |
+| static [OAEPParameterSpec](../javax/crypto/spec/OAEPParameterSpec.md)! | [DEFAULT](../javax/crypto/spec/OAEPParameterSpec.md) The OAEP parameter set with all default values. |
 
 ## Public constructors
 
@@ -85,9 +85,9 @@ Constructs a parameter set for OAEP padding as defined in the PKCS #1 standard u
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mdName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name for the message digest. |
 | `mgfName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name for the mask generation function. |
-| `mgfSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:the parameters for the mask generation function. If null is specified, null will be returned by getMGFParameters(). |
+| `mgfSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameters for the mask generation function. If null is specified, null will be returned by getMGFParameters(). |
 | --- | --- |
-| `pSrc` | [PSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource)!:the source of the encoding input P. |
+| `pSrc` | [PSource](../javax/crypto/spec/PSource.md)!:the source of the encoding input P. |
 
 | Exceptions ||
 |----------------------------------|----------------------------------------|
@@ -135,7 +135,7 @@ Returns the parameters for the mask generation function.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | the parameters for the mask generation function. |
+| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | the parameters for the mask generation function. |
 
 ### getPSource
 
@@ -149,7 +149,7 @@ Returns the source of encoding input P.
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------|
-| [PSource](https://developer.android.com/reference/kotlin/javax/crypto/spec/PSource)! | the source of encoding input P. |
+| [PSource](../javax/crypto/spec/PSource.md)! | the source of encoding input P. |
 
 ## Properties
 

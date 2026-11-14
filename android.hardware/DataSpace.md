@@ -8,7 +8,7 @@ class DataSpace
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.DataSpace](https://developer.android.com/reference/kotlin/android/hardware/DataSpace#) |
+| ↳ | [android.hardware.DataSpace](../android/hardware/DataSpace.md) |
 
 DataSpace identifies three components of colors - standard (primaries), transfer and range.
 

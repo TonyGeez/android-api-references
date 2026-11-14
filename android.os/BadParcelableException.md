@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BadParcelableException
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/BadParcelableException "View this page in Java") 
+Kotlin| [Java](../android/os/BadParcelableException.md) 
 | --- | --- |
 
 ```
@@ -14,22 +14,22 @@ open class BadParcelableException : AndroidRuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.util.AndroidRuntimeException](https://developer.android.com/reference/kotlin/android/util/AndroidRuntimeException.html#) ||
-| | | | | ↳ | [android.os.BadParcelableException](https://developer.android.com/reference/kotlin/android/os/BadParcelableException#) |
+| | | | ↳ | [android.util.AndroidRuntimeException](../android/util/AndroidRuntimeException.md) ||
+| | | | | ↳ | [android.os.BadParcelableException](../android/os/BadParcelableException.md) |
 
-Exception thrown when a [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable) is malformed or otherwise invalid.
+Exception thrown when a [Parcelable](../android/os/Parcelable.md) is malformed or otherwise invalid.
 
-This is typically encountered when a custom [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable) object is passed to another process that doesn't have the same [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable) class in its [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#).
+This is typically encountered when a custom [Parcelable](../android/os/Parcelable.md) object is passed to another process that doesn't have the same [Parcelable](../android/os/Parcelable.md) class in its [ClassLoader](../java/lang/ClassLoader.md).
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BadParcelableException](https://developer.android.com/reference/kotlin/android/os/BadParcelableException#BadParcelableException(java.lang.Exception))`(`cause:` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!`)` <br /> |
-| [BadParcelableException](https://developer.android.com/reference/kotlin/android/os/BadParcelableException#BadParcelableException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [BadParcelableException](../android/os/BadParcelableException.md))`(`cause:` ` [Exception](../java/lang/Exception.md)!`)` <br /> |
+| [BadParcelableException](../android/os/BadParcelableException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

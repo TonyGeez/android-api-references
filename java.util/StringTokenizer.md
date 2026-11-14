@@ -10,7 +10,7 @@ open class StringTokenizer : Enumeration<Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#) |
+| ↳ | [java.util.StringTokenizer](../java/util/StringTokenizer.md) |
 
 The string tokenizer class allows an application to break a string into tokens. The tokenization method is much simpler than the one used by the`StreamTokenizer`class. The`StringTokenizer`methods do not distinguish among identifiers, numbers, and quoted strings, nor do they recognize and skip comments.
 
@@ -70,24 +70,24 @@ this
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#StringTokenizer(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a string tokenizer for the specified string. |
-| [StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#StringTokenizer(kotlin.String,%20kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `delim:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a string tokenizer for the specified string. |
-| [StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#StringTokenizer(kotlin.String,%20kotlin.String,%20kotlin.Boolean))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `delim:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `returnDelims:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructs a string tokenizer for the specified string. |
+| [StringTokenizer](../java/util/StringTokenizer.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a string tokenizer for the specified string. |
+| [StringTokenizer](../java/util/StringTokenizer.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `delim:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a string tokenizer for the specified string. |
+| [StringTokenizer](../java/util/StringTokenizer.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `delim:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `returnDelims:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructs a string tokenizer for the specified string. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countTokens](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#countTokens())`()` Calculates the number of times that this tokenizer's`nextToken`method can be called before it generates an exception. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreElements](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#hasMoreElements())`()` Returns the same value as the`hasMoreTokens`method. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreTokens](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#hasMoreTokens())`()` Tests if there are more tokens available from this tokenizer's string. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countTokens](../java/util/StringTokenizer.md))`()` Calculates the number of times that this tokenizer's`nextToken`method can be called before it generates an exception. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreElements](../java/util/StringTokenizer.md))`()` Returns the same value as the`hasMoreTokens`method. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreTokens](../java/util/StringTokenizer.md))`()` Tests if there are more tokens available from this tokenizer's string. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [nextElement](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextElement())`()` Returns the same value as the`nextToken`method, except that its declared return value is`Object`rather than`String`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextToken](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextToken())`()` Returns the next token from this string tokenizer. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextToken](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextToken(kotlin.String))`(`delim:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the next token in this string tokenizer's string. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [nextElement](../java/util/StringTokenizer.md))`()` Returns the same value as the`nextToken`method, except that its declared return value is`Object`rather than`String`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextToken](../java/util/StringTokenizer.md))`()` Returns the next token from this string tokenizer. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextToken](../java/util/StringTokenizer.md))`(`delim:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the next token in this string tokenizer's string. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration) |---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<E>! | [asIterator](https://developer.android.com/reference/kotlin/java/util/Enumeration#asIterator())`()` <br /> Returns an [Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator) that traverses the remaining elements covered by this enumeration. Traversal is undefined if any methods are called on this enumeration after the call to`asIterator`. <br /> | ||
+| From class [Enumeration](../java/util/Enumeration.md) |---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<E>! | [asIterator](../java/util/Enumeration.md))`()` <br /> Returns an [Iterator](../java/util/Iterator.md) that traverses the remaining elements covered by this enumeration. Traversal is undefined if any methods are called on this enumeration after the call to`asIterator`. <br /> | ||
 
 ## Public constructors
 
@@ -178,7 +178,7 @@ Calculates the number of times that this tokenizer's`nextToken`method can be cal
 
 **See Also**
 
-- [java.util.StringTokenizer#nextToken()](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextToken()) 
+- [java.util.StringTokenizer#nextToken()](../java/util/StringTokenizer.md)) 
 
 ### hasMoreElements
 
@@ -196,8 +196,8 @@ Returns the same value as the`hasMoreTokens`method. It exists so that this class
 
 **See Also**
 
-- [java.util.Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)
-- [java.util.StringTokenizer#hasMoreTokens()](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#hasMoreTokens()) 
+- [java.util.Enumeration](../java/util/Enumeration.md)
+- [java.util.StringTokenizer#hasMoreTokens()](../java/util/StringTokenizer.md)) 
 
 ### hasMoreTokens
 
@@ -233,8 +233,8 @@ Returns the same value as the`nextToken`method, except that its declared return 
 
 **See Also**
 
-- [java.util.Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration)
-- [java.util.StringTokenizer#nextToken()](https://developer.android.com/reference/kotlin/java/util/StringTokenizer#nextToken()) 
+- [java.util.Enumeration](../java/util/Enumeration.md)
+- [java.util.StringTokenizer#nextToken()](../java/util/StringTokenizer.md)) 
 
 ### nextToken
 

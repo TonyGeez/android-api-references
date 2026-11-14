@@ -9,7 +9,7 @@ open class ParserFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.ParserFactory](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#) |
+| ↳ | [org.xml.sax.helpers.ParserFactory](../org/xml/sax/helpers/ParserFactory.md) |
 
 | **This class was deprecated in API level 9.**
 |
@@ -27,8 +27,8 @@ Note that the application still requires an XML parser that implements SAX1.
 
 | Public methods ||
 |---|---|
-| open static [Parser](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser()()` Create a new SAX parser using the \`org. |
-| open static [Parser](https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser(kotlin.String)(className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a new SAX parser object using the class name provided. |
+| open static [Parser](../org/xml/sax/Parser.md)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser()()` Create a new SAX parser using the \`org. |
+| open static [Parser](../org/xml/sax/Parser.md)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser(kotlin.String)(className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a new SAX parser object using the class name provided. |
 
 ## Public methods
 

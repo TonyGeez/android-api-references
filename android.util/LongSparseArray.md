@@ -8,7 +8,7 @@ open class LongSparseArray<E : Any!> : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.LongSparseArray](https://developer.android.com/reference/kotlin/android/util/LongSparseArray#) |
+| ↳ | [android.util.LongSparseArray](../android/util/LongSparseArray.md) |
 
 SparseArray mapping longs to Objects. Unlike a normal array of Objects, there can be gaps in the indices. It is intended to be more memory efficient than using a HashMap to map Longs to Objects, both because it avoids auto-boxing keys and its data structure doesn't rely on an extra entry object for each mapping.
 
@@ -29,7 +29,7 @@ It is possible to iterate over the items in this container using `https://develo
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#append(kotlin.Long,%20android.util.LongSparseArray.E)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, value: E)` Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#clear()()` Removes all key-value mappings from this LongSparseArray. |
-| open [LongSparseArray](https://developer.android.com/reference/kotlin/android/util/LongSparseArray#)\<E\> | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#clone()()` Creates and returns a copy of this object. |
+| open [LongSparseArray](../android/util/LongSparseArray.md)\<E\> | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#clone()()` Creates and returns a copy of this object. |
 | --- | --- |
 | open E? | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#compute(kotlin.Long,%20android.util.function.LongObjFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, function: https://developer.android.com/reference/kotlin/android/util/function/LongObjFunction<in E, out E>)` Attempts to compute a new mapped value for the specified key based on its current mapping (or null if there is no current mapping). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#delete(kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Removes the mapping from the specified key, if there was any. |
@@ -152,7 +152,7 @@ Attempts to compute a new mapped value for the specified key based on its curren
 | Parameters ||
 |---|---|
 | `key` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The key to compute the value for. |
-| `function` | [LongObjFunction](https://developer.android.com/reference/kotlin/android/util/function/LongObjFunction)\<in E, out E\>: The function to compute the new value. This value cannot be `null`. |
+| `function` | [LongObjFunction](../android/util/function/LongObjFunction.md)\<in E, out E\>: The function to compute the new value. This value cannot be `null`. |
 
 | Return ||
 |---|---|

@@ -8,21 +8,21 @@ open class Activity : ContextThemeWrapper, ComponentCallbacks2, KeyEvent.Callb
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity#) |
+| | | | ↳ | [android.app.Activity](../android/app/Activity.md) |
 
-Known Direct Subclasses [AccountAuthenticatorActivity](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorActivity.html#), [ActivityGroup](https://developer.android.com/reference/kotlin/android/app/ActivityGroup), [AliasActivity](https://developer.android.com/reference/kotlin/android/app/AliasActivity), [ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity), [ListActivity](https://developer.android.com/reference/kotlin/android/app/ListActivity), [NativeActivity](https://developer.android.com/reference/kotlin/android/app/NativeActivity) [AccountAuthenticatorActivity](https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorActivity.html#) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
-[ActivityGroup](https://developer.android.com/reference/kotlin/android/app/ActivityGroup) A screen that contains and runs multiple embedded activities.
-[AliasActivity](https://developer.android.com/reference/kotlin/android/app/AliasActivity) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
-[ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
-[ListActivity](https://developer.android.com/reference/kotlin/android/app/ListActivity) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
-[NativeActivity](https://developer.android.com/reference/kotlin/android/app/NativeActivity) Convenience for implementing an activity that will be implemented purely in native code.
-Known Indirect Subclasses [LauncherActivity](https://developer.android.com/reference/kotlin/android/app/LauncherActivity), [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity.html#), [TabActivity](https://developer.android.com/reference/kotlin/android/app/TabActivity) [LauncherActivity](https://developer.android.com/reference/kotlin/android/app/LauncherActivity) Displays a list of all activities which can be performed for a given intent.
-[PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity.html#) This is the base class for an activity to show a hierarchy of preferences to the user.
-[TabActivity](https://developer.android.com/reference/kotlin/android/app/TabActivity) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar#newTab()` and related APIs for placing tabs within their action bar area.
+Known Direct Subclasses [AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md), [ActivityGroup](../android/app/ActivityGroup.md), [AliasActivity](../android/app/AliasActivity.md), [ExpandableListActivity](../android/app/ExpandableListActivity.md), [ListActivity](../android/app/ListActivity.md), [NativeActivity](../android/app/NativeActivity.md) [AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
+[ActivityGroup](../android/app/ActivityGroup.md) A screen that contains and runs multiple embedded activities.
+[AliasActivity](../android/app/AliasActivity.md) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
+[ExpandableListActivity](../android/app/ExpandableListActivity.md) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
+[ListActivity](../android/app/ListActivity.md) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
+[NativeActivity](../android/app/NativeActivity.md) Convenience for implementing an activity that will be implemented purely in native code.
+Known Indirect Subclasses [LauncherActivity](../android/app/LauncherActivity.md), [PreferenceActivity](../android/preference/PreferenceActivity.md), [TabActivity](../android/app/TabActivity.md) [LauncherActivity](../android/app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
+[PreferenceActivity](../android/preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
+[TabActivity](../android/app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar#newTab()` and related APIs for placing tabs within their action bar area.
 
 An activity is a single, focused thing that the user can do. Almost all activities interact with the user, so the Activity class takes care of creating a window for you in which you can place your UI with #setContentView. While activities are often presented to the user as full-screen windows, they can also be used in other ways: as floating windows (via a theme with `https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsFloating:kotlin.Int` set), [Multi-Window mode](https://developer.android.com/guide/topics/ui/multi-window) or embedded into other windows. There are two methods almost all subclasses of Activity will implement:
 
@@ -35,13 +35,13 @@ To be of use with android.content.Context#startActivity, all activity classes mu
 
 Topics covered here:
 
-1. [Fragments](https://developer.android.com/reference/kotlin/android/app/Activity#Fragments)
-2. [Activity Lifecycle](https://developer.android.com/reference/kotlin/android/app/Activity#ActivityLifecycle)
-3. [Configuration Changes](https://developer.android.com/reference/kotlin/android/app/Activity#ConfigurationChanges)
-4. [Starting Activities and Getting Results](https://developer.android.com/reference/kotlin/android/app/Activity#StartingActivities)
-5. [Saving Persistent State](https://developer.android.com/reference/kotlin/android/app/Activity#SavingPersistentState)
-6. [Permissions](https://developer.android.com/reference/kotlin/android/app/Activity#Permissions)
-7. [Process Lifecycle](https://developer.android.com/reference/kotlin/android/app/Activity#ProcessLifecycle)
+1. [Fragments](../android/app/Activity.md)
+2. [Activity Lifecycle](../android/app/Activity.md)
+3. [Configuration Changes](../android/app/Activity.md)
+4. [Starting Activities and Getting Results](../android/app/Activity.md)
+5. [Saving Persistent State](../android/app/Activity.md)
+6. [Permissions](../android/app/Activity.md)
+7. [Process Lifecycle](../android/app/Activity.md)
 
 > [!NOTE]
 >
@@ -115,7 +115,7 @@ In general the movement through an activity's lifecycle looks like this:
 | --- | --- | --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy()` ||| The final call you receive before your activity is destroyed. This can happen either because the activity is finishing (someone called `https://developer.android.com/reference/kotlin/android/app/Activity#finish()` on it), or because the system is temporarily destroying this instance of the activity to save space. You can distinguish between these two scenarios with the `https://developer.android.com/reference/kotlin/android/app/Activity#isFinishing()` method. | **Yes** | *nothing* |
 
-Note the "Killable" column in the above table -- for those methods that are marked as being killable, after that method returns the process hosting the activity may be killed by the system *at any time* without another line of its code being executed. Because of this, you should use the `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()` method to write any persistent data (such as user edits) to storage. In addition, the method `https://developer.android.com/reference/kotlin/android/app/Activity#onSaveInstanceState(android.os.Bundle)` is called before placing the activity in such a background state, allowing you to save away any dynamic instance state in your activity into the given Bundle, to be later received in #onCreate if the activity needs to be re-created. See the [Process Lifecycle](https://developer.android.com/reference/kotlin/android/app/Activity#ProcessLifecycle) section for more information on how the lifecycle of a process is tied to the activities it is hosting. Note that it is important to save persistent data in `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()` instead of #onSaveInstanceState because the latter is not part of the lifecycle callbacks, so will not be called in every situation as described in its documentation.
+Note the "Killable" column in the above table -- for those methods that are marked as being killable, after that method returns the process hosting the activity may be killed by the system *at any time* without another line of its code being executed. Because of this, you should use the `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()` method to write any persistent data (such as user edits) to storage. In addition, the method `https://developer.android.com/reference/kotlin/android/app/Activity#onSaveInstanceState(android.os.Bundle)` is called before placing the activity in such a background state, allowing you to save away any dynamic instance state in your activity into the given Bundle, to be later received in #onCreate if the activity needs to be re-created. See the [Process Lifecycle](../android/app/Activity.md) section for more information on how the lifecycle of a process is tied to the activities it is hosting. Note that it is important to save persistent data in `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()` instead of #onSaveInstanceState because the latter is not part of the lifecycle callbacks, so will not be called in every situation as described in its documentation.
 
 Be aware that these semantics will change slightly between applications targeting platforms starting with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` vs. those targeting prior platforms. Starting with Honeycomb, an application is not in the killable state until its `https://developer.android.com/reference/kotlin/android/app/Activity#onStop()` has returned. This impacts when `https://developer.android.com/reference/kotlin/android/app/Activity#onSaveInstanceState(android.os.Bundle)` may be called (it may be safely called after `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()`) and allows an application to safely wait until `https://developer.android.com/reference/kotlin/android/app/Activity#onStop()` to save persistent state.
 
@@ -177,7 +177,7 @@ public class MyActivity extends Activity {
 
 ### Saving Persistent State
 
-There are generally two kinds of persistent state that an activity will deal with: shared document-like data (typically stored in a SQLite database using a [content provider](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#)) and internal state such as user preferences.
+There are generally two kinds of persistent state that an activity will deal with: shared document-like data (typically stored in a SQLite database using a [content provider](../android/content/ContentProvider.md)) and internal state such as user preferences.
 
 For content provider data, we suggest that activities use an "edit in place" user model. That is, any edits a user makes are effectively made immediately without requiring an additional confirmation step. Supporting this model is generally a simple matter of following two rules:
 
@@ -187,7 +187,7 @@ For content provider data, we suggest that activities use an "edit in place" use
 
 This model is designed to prevent data loss when a user is navigating between activities, and allows the system to safely kill an activity (because system resources are needed somewhere else) at any time after it has been stopped (or paused on platform versions before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`). Note this implies that the user pressing BACK from your activity does *not* mean "cancel" -- it means to leave the activity with its current contents saved away. Canceling edits in an activity must be provided through some other mechanism, such as an explicit "revert" or "undo" option.
 
-See the [content package](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#) for more information about content providers. These are a key aspect of how different activities invoke and propagate data between themselves.
+See the [content package](../android/content/ContentProvider.md) for more information about content providers. These are a key aspect of how different activities invoke and propagate data between themselves.
 
 The Activity class also provides an API for managing internal persistent state associated with an activity. This can be used, for example, to remember the user's preferred initial display in a calendar (day view or week view) or the user's default home page in a web browser.
 
@@ -233,7 +233,7 @@ See the [Security and Permissions](https://developer.android.com/guide/topics/se
 
 ### Process Lifecycle
 
-The Android system attempts to keep an application process around for as long as possible, but eventually will need to remove old processes when memory runs low. As described in [Activity Lifecycle](https://developer.android.com/reference/kotlin/android/app/Activity#ActivityLifecycle), the decision about which process to remove is intimately tied to the state of the user's interaction with it. In general, there are four states a process can be in based on the activities running in it, listed here in order of importance. The system will kill less important processes (the last ones) before it resorts to killing more important processes (the first ones).
+The Android system attempts to keep an application process around for as long as possible, but eventually will need to remove old processes when memory runs low. As described in [Activity Lifecycle](../android/app/Activity.md), the decision about which process to remove is intimately tied to the state of the user's interaction with it. In general, there are four states a process can be in based on the activities running in it, listed here in order of importance. The system will kill less important processes (the last ones) before it resorts to killing more important processes (the first ones).
 
 1. The **foreground activity** (the activity at the top of the screen that the user is currently interacting with) is considered the most important. Its process will only be killed as a last resort, if it uses more memory than is available on the device. Generally at this point the device has reached a memory paging state, so this is required in order to keep the user interface responsive.
 
@@ -717,7 +717,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1232,7 +1232,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#closeContextMenu()()` Programmatically closes the most recently opened context menu, if showing. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#closeOptionsMenu()()` Progammatically closes the options menu. |
-| open [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent)! | `https://developer.android.com/reference/kotlin/android/app/Activity#createPendingResult(kotlin.Int,%20android.content.Intent,%20kotlin.Int)(requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new PendingIntent object which you can hand to others for them to use to send result data back to your #onActivityResult callback. |
+| open [PendingIntent](../android/app/PendingIntent.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#createPendingResult(kotlin.Int,%20android.content.Intent,%20kotlin.Int)(requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new PendingIntent object which you can hand to others for them to use to send result data back to your #onActivityResult callback. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#dismissDialog(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dismiss a dialog that was previously shown via `https://developer.android.com/reference/kotlin/android/app/Activity#showDialog(kotlin.Int)`. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#dismissKeyboardShortcutsHelper()()` Dismiss the Keyboard Shortcuts screen. |
@@ -1259,59 +1259,59 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#finishAndRemoveTask()()` Call this when your activity is done and should be closed and the task should be completely removed as a part of finishing the root activity of the task. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#finishFromChild(android.app.Activity)(child: https://developer.android.com/reference/kotlin/android/app/Activity#!)` This is called when a child activity of this one calls its `https://developer.android.com/reference/kotlin/android/app/Activity#finish()` method. |
 | --- | --- |
-| open [ActionBar](https://developer.android.com/reference/kotlin/android/app/ActionBar)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getActionBar()()` Retrieve a reference to this activity's ActionBar. |
-| [Application](https://developer.android.com/reference/kotlin/android/app/Application)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getApplication()()` Return the application that owns this activity. |
-| open [ComponentCaller](https://developer.android.com/reference/kotlin/android/app/ComponentCaller)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getCaller()()` Returns the ComponentCaller instance of the app that started this activity. |
+| open [ActionBar](../android/app/ActionBar.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getActionBar()()` Retrieve a reference to this activity's ActionBar. |
+| [Application](../android/app/Application.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getApplication()()` Return the application that owns this activity. |
+| open [ComponentCaller](../android/app/ComponentCaller.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getCaller()()` Returns the ComponentCaller instance of the app that started this activity. |
 | --- | --- |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getCallingActivity()()` Return the name of the activity that invoked this activity. |
+| open [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getCallingActivity()()` Return the name of the activity that invoked this activity. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getCallingPackage()()` Return the name of the package that invoked this activity. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getChangingConfigurations()()` If this activity is being destroyed because it can not handle a configuration parameter being changed (and thus its `https://developer.android.com/reference/kotlin/android/app/Activity#onConfigurationChanged(android.content.res.Configuration)` method is *not* being called), then you can use this method to discover the set of changes that have occurred while in the process of being destroyed. |
 | --- | --- |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getComponentName()()` Returns the complete component name of this activity. |
-| open [Scene](https://developer.android.com/reference/kotlin/android/transition/Scene.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getContentScene()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/Scene.html#` representing this window's current content. |
-| open [TransitionManager](https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getContentTransitionManager()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` responsible for default transitions in this window. |
+| open [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getComponentName()()` Returns the complete component name of this activity. |
+| open [Scene](../android/transition/Scene.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getContentScene()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/Scene.html#` representing this window's current content. |
+| open [TransitionManager](../android/transition/TransitionManager.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getContentTransitionManager()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` responsible for default transitions in this window. |
 | --- | --- |
-| open [ComponentCaller](https://developer.android.com/reference/kotlin/android/app/ComponentCaller) | `https://developer.android.com/reference/kotlin/android/app/Activity#getCurrentCaller()()` Returns the ComponentCaller instance of the app that re-launched this activity with a new intent via #onNewIntent or #onActivityResult. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getCurrentFocus()()` Calls `https://developer.android.com/reference/kotlin/android/view/Window.html#getCurrentFocus()` on the Window of this Activity to return the currently focused view. |
-| open [FragmentManager](https://developer.android.com/reference/kotlin/android/app/FragmentManager)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getFragmentManager()()` Return the FragmentManager for interacting with fragments associated with this activity. |
+| open [ComponentCaller](../android/app/ComponentCaller.md) | `https://developer.android.com/reference/kotlin/android/app/Activity#getCurrentCaller()()` Returns the ComponentCaller instance of the app that re-launched this activity with a new intent via #onNewIntent or #onActivityResult. |
+| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getCurrentFocus()()` Calls `https://developer.android.com/reference/kotlin/android/view/Window.html#getCurrentFocus()` on the Window of this Activity to return the currently focused view. |
+| open [FragmentManager](../android/app/FragmentManager.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getFragmentManager()()` Return the FragmentManager for interacting with fragments associated with this activity. |
 | --- | --- |
-| open [ComponentCaller](https://developer.android.com/reference/kotlin/android/app/ComponentCaller) | `https://developer.android.com/reference/kotlin/android/app/Activity#getInitialCaller()()` Returns the ComponentCaller instance of the app that initially launched this activity. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getIntent()()` Returns the intent that started this activity. |
+| open [ComponentCaller](../android/app/ComponentCaller.md) | `https://developer.android.com/reference/kotlin/android/app/Activity#getInitialCaller()()` Returns the ComponentCaller instance of the app that initially launched this activity. |
+| open [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getIntent()()` Returns the intent that started this activity. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getLastNonConfigurationInstance()()` Retrieve the non-configuration instance data that was previously returned by `https://developer.android.com/reference/kotlin/android/app/Activity#onRetainNonConfigurationInstance()`. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getLaunchedFromPackage()()` Returns the package name of the app that initially launched this activity. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getLaunchedFromUid()()` Returns the uid of the app that initially launched this activity. |
-| open [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#) | `https://developer.android.com/reference/kotlin/android/app/Activity#getLayoutInflater()()` Convenience for calling `https://developer.android.com/reference/kotlin/android/view/Window.html#getLayoutInflater()`. |
+| open [LayoutInflater](../android/view/LayoutInflater.md) | `https://developer.android.com/reference/kotlin/android/app/Activity#getLayoutInflater()()` Convenience for calling `https://developer.android.com/reference/kotlin/android/view/Window.html#getLayoutInflater()`. |
 | --- | --- |
-| open [LoaderManager](https://developer.android.com/reference/kotlin/android/app/LoaderManager)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getLoaderManager()()` Return the LoaderManager for this activity, creating it if needed. |
+| open [LoaderManager](../android/app/LoaderManager.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getLoaderManager()()` Return the LoaderManager for this activity, creating it if needed. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getLocalClassName()()` Returns class name for this activity with the package prefix removed. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getMaxNumPictureInPictureActions()()` Return the number of actions that will be displayed in the picture-in-picture UI when the user interacts with the activity currently in picture-in-picture mode. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getMaxNumPictureInPictureOverlayActions()()` Returns the maximum number of overlay actions that will be displayed in the picture-in-picture window. |
-| [MediaController](https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getMediaController()()` Gets the controller which should be receiving media key and volume events while this activity is in the foreground. |
-| open [MenuInflater](https://developer.android.com/reference/kotlin/android/view/MenuInflater.html#) | `https://developer.android.com/reference/kotlin/android/app/Activity#getMenuInflater()()` Returns a `https://developer.android.com/reference/kotlin/android/view/MenuInflater.html#` with this context. |
+| [MediaController](../android/media/session/MediaController.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getMediaController()()` Gets the controller which should be receiving media key and volume events while this activity is in the foreground. |
+| open [MenuInflater](../android/view/MenuInflater.md) | `https://developer.android.com/reference/kotlin/android/app/Activity#getMenuInflater()()` Returns a `https://developer.android.com/reference/kotlin/android/view/MenuInflater.html#` with this context. |
 | --- | --- |
-| open [OnBackInvokedDispatcher](https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#) | `https://developer.android.com/reference/kotlin/android/app/Activity#getOnBackInvokedDispatcher()()` Returns the `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#` instance associated with the window that this activity is attached to. |
-| [Activity](https://developer.android.com/reference/kotlin/android/app/Activity#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getParent()()` Returns the parent `https://developer.android.com/reference/kotlin/android/app/Activity#` if this is a child `https://developer.android.com/reference/kotlin/android/app/Activity#` of an `https://developer.android.com/reference/kotlin/android/app/ActivityGroup`. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getParentActivityIntent()()` Obtain an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that will launch an explicit target activity specified by this activity's logical parent. |
+| open [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md) | `https://developer.android.com/reference/kotlin/android/app/Activity#getOnBackInvokedDispatcher()()` Returns the `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#` instance associated with the window that this activity is attached to. |
+| [Activity](../android/app/Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getParent()()` Returns the parent `https://developer.android.com/reference/kotlin/android/app/Activity#` if this is a child `https://developer.android.com/reference/kotlin/android/app/Activity#` of an `https://developer.android.com/reference/kotlin/android/app/ActivityGroup`. |
+| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getParentActivityIntent()()` Obtain an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that will launch an explicit target activity specified by this activity's logical parent. |
 | --- | --- |
-| open [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getPreferences(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` object for accessing preferences that are private to this activity. |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getReferrer()()` Return information about who launched this activity. |
+| open [SharedPreferences](../android/content/SharedPreferences.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getPreferences(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` object for accessing preferences that are private to this activity. |
+| open [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#getReferrer()()` Return information about who launched this activity. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getRequestedOrientation()()` Returns the current requested orientation of the activity, which is either the orientation requested in the app manifest or the last orientation given to `https://developer.android.com/reference/kotlin/android/app/Activity#setRequestedOrientation(kotlin.Int)`. |
 | --- | --- |
-| [SearchEvent](https://developer.android.com/reference/kotlin/android/view/SearchEvent.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getSearchEvent()()` During the onSearchRequested() callbacks, this function will return the `https://developer.android.com/reference/kotlin/android/view/SearchEvent.html#` that triggered the callback, if it exists. |
-| [SplashScreen](https://developer.android.com/reference/kotlin/android/window/SplashScreen.html#) | `https://developer.android.com/reference/kotlin/android/app/Activity#getSplashScreen()()` Get the interface that activity use to talk to the splash screen. |
+| [SearchEvent](../android/view/SearchEvent.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getSearchEvent()()` During the onSearchRequested() callbacks, this function will return the `https://developer.android.com/reference/kotlin/android/view/SearchEvent.html#` that triggered the callback, if it exists. |
+| [SplashScreen](../android/window/SplashScreen.md) | `https://developer.android.com/reference/kotlin/android/app/Activity#getSplashScreen()()` Get the interface that activity use to talk to the splash screen. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getTaskId()()` Return the identifier of the task this activity is in. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getTitle()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getTitleColor()()` <br /> |
 | --- | --- |
-| open [VoiceInteractor](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getVoiceInteractor()()` Retrieve the active `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor` that the user is going through to interact with this activity. |
+| open [VoiceInteractor](../android/app/VoiceInteractor.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getVoiceInteractor()()` Retrieve the active `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor` that the user is going through to interact with this activity. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#getVolumeControlStream()()` Gets the suggested audio stream whose volume should be changed by the hardware volume controls. |
-| open [Window](https://developer.android.com/reference/kotlin/android/view/Window.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getWindow()()` Retrieve the current `https://developer.android.com/reference/kotlin/android/view/Window.html#` for the activity. |
+| open [Window](../android/view/Window.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getWindow()()` Retrieve the current `https://developer.android.com/reference/kotlin/android/view/Window.html#` for the activity. |
 | --- | --- |
-| open [WindowManager](https://developer.android.com/reference/kotlin/android/view/WindowManager.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getWindowManager()()` Retrieve the window manager for showing custom windows. |
+| open [WindowManager](../android/view/WindowManager.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#getWindowManager()()` Retrieve the window manager for showing custom windows. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#hasWindowFocus()()` Returns true if this activity's *main* window currently has window focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#invalidateOptionsMenu()()` Declare that the options menu has changed, so should be recreated. |
 | --- | --- |
@@ -1333,7 +1333,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#isVoiceInteraction()()` Check whether this activity is running as part of a voice interaction with the user. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#isVoiceInteractionRoot()()` Like `https://developer.android.com/reference/kotlin/android/app/Activity#isVoiceInteraction()`, but only returns `true` if this is also the root of a voice interaction. |
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#managedQuery(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Wrapper around `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)` that gives the resulting `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` to call `https://developer.android.com/reference/kotlin/android/app/Activity#startManagingCursor(android.database.Cursor)` so that the activity will manage its lifecycle for you. |
+| [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#managedQuery(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Wrapper around `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)` that gives the resulting `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` to call `https://developer.android.com/reference/kotlin/android/app/Activity#startManagingCursor(android.database.Cursor)` so that the activity will manage its lifecycle for you. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#moveTaskToBack(kotlin.Boolean)(nonRoot: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Move the task containing this activity to the back of the activity stack. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#navigateUpTo(android.content.Intent)(upIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Navigate from this activity to the activity specified by upIntent, finishing this activity in the process. |
@@ -1361,18 +1361,18 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateOptionsMenu(android.view.Menu)(menu: https://developer.android.com/reference/kotlin/android/view/Menu.html#!)` Initialize the contents of the Activity's standard options menu. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreatePanelMenu(kotlin.Int,%20android.view.Menu)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, menu: https://developer.android.com/reference/kotlin/android/view/Menu.html#)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/Window.Callback.html#onCreatePanelMenu(kotlin.Int,%20android.view.Menu)` for activities. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreatePanelView(kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/Window.Callback.html#onCreatePanelView(kotlin.Int)` for activities. |
+| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreatePanelView(kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/Window.Callback.html#onCreatePanelView(kotlin.Int)` for activities. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateThumbnail(android.graphics.Bitmap,%20android.graphics.Canvas)(outBitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#!)` <br /> |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateView(android.view.View,%20kotlin.String,%20android.content.Context,%20android.util.AttributeSet)(parent: https://developer.android.com/reference/kotlin/android/view/View.html#?, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, context: https://developer.android.com/reference/kotlin/android/content/Context.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)` Standard implementation of `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory2.html#onCreateView(android.view.View,%20kotlin.String,%20android.content.Context,%20android.util.AttributeSet)` used when inflating with the LayoutInflater returned by #getSystemService. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateView(kotlin.String,%20android.content.Context,%20android.util.AttributeSet)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, context: https://developer.android.com/reference/kotlin/android/content/Context.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)` Standard implementation of `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory.html#onCreateView(kotlin.String,%20android.content.Context,%20android.util.AttributeSet)` used when inflating with the LayoutInflater returned by #getSystemService. |
+| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateView(android.view.View,%20kotlin.String,%20android.content.Context,%20android.util.AttributeSet)(parent: https://developer.android.com/reference/kotlin/android/view/View.html#?, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, context: https://developer.android.com/reference/kotlin/android/content/Context.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)` Standard implementation of `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory2.html#onCreateView(android.view.View,%20kotlin.String,%20android.content.Context,%20android.util.AttributeSet)` used when inflating with the LayoutInflater returned by #getSystemService. |
+| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateView(kotlin.String,%20android.content.Context,%20android.util.AttributeSet)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, context: https://developer.android.com/reference/kotlin/android/content/Context.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)` Standard implementation of `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.Factory.html#onCreateView(kotlin.String,%20android.content.Context,%20android.util.AttributeSet)` used when inflating with the LayoutInflater returned by #getSystemService. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onDetachedFromWindow()()` Called when the main window associated with the activity has been detached from the window manager. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onEnterAnimationComplete()()` Activities cannot draw during the period that their windows are animating in. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onGenericMotionEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Called when a generic motion event was not handled by any of the views inside of the activity. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onGetDirectActions(android.os.CancellationSignal,%20java.util.function.Consumer)(cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/DirectAction!>!>)` Returns the list of direct actions supported by the app. |
-| open [HandoffActivityData](https://developer.android.com/reference/kotlin/android/app/HandoffActivityData)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onHandoffActivityDataRequested(android.app.HandoffActivityDataRequestInfo)(requestInfo: https://developer.android.com/reference/kotlin/android/app/HandoffActivityDataRequestInfo)` Retrieves `https://developer.android.com/reference/kotlin/android/app/HandoffActivityData` representing this activity, allowing it to be recreated on another device owned by the user. |
+| open [HandoffActivityData](../android/app/HandoffActivityData.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onHandoffActivityDataRequested(android.app.HandoffActivityDataRequestInfo)(requestInfo: https://developer.android.com/reference/kotlin/android/app/HandoffActivityDataRequestInfo)` Retrieves `https://developer.android.com/reference/kotlin/android/app/HandoffActivityData` representing this activity, allowing it to be recreated on another device owned by the user. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Called when a key was pressed down and not handled by any of the views inside of the activity. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onKeyLongPress(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Default implementation of `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback.html#onKeyLongPress(kotlin.Int,%20android.view.KeyEvent)`: always returns false (doesn't handle the event). |
@@ -1413,7 +1413,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onProvideAssistData(android.os.Bundle)(data: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` This is called when the user is requesting an assist, to build a full `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_ASSIST:kotlin.String` Intent with all of the context of the current application. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onProvideKeyboardShortcuts(kotlin.collections.MutableList,%20android.view.Menu,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup.html#!>!, menu: https://developer.android.com/reference/kotlin/android/view/Menu.html#?, deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when Keyboard Shortcuts are requested for the current window. |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#onProvideReferrer()()` Override to generate the desired referrer for the content currently being shown by the app. |
+| open [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#onProvideReferrer()()` Override to generate the desired referrer for the content currently being shown by the app. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onRequestPermissionsResult(kotlin.Int,%20kotlin.Array,%20kotlin.IntArray)(requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, grantResults: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Callback for the result from requesting permissions. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onRequestPermissionsResult(kotlin.Int,%20kotlin.Array,%20kotlin.IntArray,%20kotlin.Int)(requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, grantResults: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback for the result from requesting permissions. |
@@ -1436,8 +1436,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onWindowAttributesChanged(android.view.WindowManager.LayoutParams)(params: https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#!)` This is called whenever the current window attributes change. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onWindowFocusChanged(kotlin.Boolean)(hasFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the current `https://developer.android.com/reference/kotlin/android/view/Window.html#` of the activity gains or loses focus. |
-| open [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onWindowStartingActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` Give the Activity a chance to control the UI for an action mode requested by the system. |
-| open [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onWindowStartingActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when an action mode is being started for this window. |
+| open [ActionMode](../android/view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onWindowStartingActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` Give the Activity a chance to control the UI for an action mode requested by the system. |
+| open [ActionMode](../android/view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onWindowStartingActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when an action mode is being started for this window. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#openContextMenu(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Programmatically opens the context menu for a particular `view`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#openOptionsMenu()()` Programmatically opens the options menu. |
@@ -1459,7 +1459,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#removeDialog(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes any internal references to a dialog managed by this Activity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#reportFullyDrawn()()` Report to the system that your app is now fully drawn, for diagnostic and optimization purposes. |
 | --- | --- |
-| open [DragAndDropPermissions](https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions.html#)! | `https://developer.android.com/reference/kotlin/android/app/Activity#requestDragAndDropPermissions(android.view.DragEvent)(event: https://developer.android.com/reference/kotlin/android/view/DragEvent.html#!)` Create `https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions.html#` object bound to this activity and controlling the access permissions for content URIs associated with the `https://developer.android.com/reference/kotlin/android/view/DragEvent.html#`. |
+| open [DragAndDropPermissions](../android/view/DragAndDropPermissions.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#requestDragAndDropPermissions(android.view.DragEvent)(event: https://developer.android.com/reference/kotlin/android/view/DragEvent.html#!)` Create `https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions.html#` object bound to this activity and controlling the access permissions for content URIs associated with the `https://developer.android.com/reference/kotlin/android/view/DragEvent.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#requestFullscreenMode(kotlin.Int,%20android.os.OutcomeReceiver)(request: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, approvalCallback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!>?)` Request to put the activity into fullscreen. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#requestOpenInBrowserEducation()()` Requests to show the "Open in browser" education. |
 | --- | --- |
@@ -1540,8 +1540,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#showDialog(kotlin.Int,%20android.os.Bundle)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Show a dialog managed by this activity. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#showLockTaskEscapeMessage()()` Shows the user the system defined message for telling the user how to exit lock task mode. |
-| open [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#startActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` Start an action mode of the default type `https://developer.android.com/reference/kotlin/android/view/ActionMode.html#TYPE_PRIMARY:kotlin.Int`. |
-| open [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#)? | `https://developer.android.com/reference/kotlin/android/app/Activity#startActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Start an action mode of the given type. |
+| open [ActionMode](../android/view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#startActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` Start an action mode of the default type `https://developer.android.com/reference/kotlin/android/view/ActionMode.html#TYPE_PRIMARY:kotlin.Int`. |
+| open [ActionMode](../android/view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#startActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Start an action mode of the given type. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#startActivities(kotlin.Array)(intents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>!)` Same as #startActivities(android.content.Intent\[\],android.os.Bundle) with no options specified. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#startActivities(kotlin.Array,%20android.os.Bundle)(intents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Launch a new activity. |
@@ -1597,9 +1597,9 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onChildTitleChanged(android.app.Activity,%20kotlin.CharSequence)(childActivity: https://developer.android.com/reference/kotlin/android/app/Activity#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreate(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called when the activity is starting. |
-| open [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog)! | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateDialog(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Dialog](../android/app/Dialog.md)! | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateDialog(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | --- | --- |
-| open [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateDialog(kotlin.Int,%20android.os.Bundle)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Callback for creating dialogs that are managed (saved and restored) for you by the activity. |
+| open [Dialog](../android/app/Dialog.md)? | `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateDialog(kotlin.Int,%20android.os.Bundle)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Callback for creating dialogs that are managed (saved and restored) for you by the activity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onDestroy()()` Perform any final cleanup before an activity is destroyed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Activity#onNewIntent(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` This is called for activities that set launchMode to "singleTop" in their package, or if a client used the `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_SINGLE_TOP:kotlin.Int` flag when calling #startActivity. |
 | --- | --- |
@@ -2797,7 +2797,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2838,9 +2838,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -3231,8 +3231,8 @@ Add an additional content view to the activity. Added after any existing ones in
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The desired content to display. |
-| `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: Layout parameters for the view. |
+| `view` | [View](../android/view/View.md)!: The desired content to display. |
+| `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: Layout parameters for the view. |
 
 ### clearOverrideActivityTransition
 
@@ -3290,7 +3290,7 @@ Create a new PendingIntent object which you can hand to others for them to use t
 | Parameters ||
 |---|---|
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Private request code for the sender that will be associated with the result data when it is returned. The sender can not modify this value, allowing you to identify incoming results. |
-| `data` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): Default data to supply in the result, which may be modified by the sender. This value cannot be `null`. |
+| `data` | [Intent](../android/content/Intent.md): Default data to supply in the result, which may be modified by the sender. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): May be `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_ONE_SHOT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_NO_CREATE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_CANCEL_CURRENT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_UPDATE_CURRENT:kotlin.Int`, or any of the flags as supported by `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to control which unspecified parts of the intent that can be supplied when the actual send happens. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_ONE_SHOT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_NO_CREATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_CANCEL_CURRENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_UPDATE_CURRENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_IMMUTABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_MUTABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/PendingIntent#FLAG_ALLOW_UNSAFE_IMPLICIT_INTENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_DATA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_CATEGORIES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_COMPONENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_PACKAGE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_SOURCE_BOUNDS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_SELECTOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_CLIP_DATA:kotlin.Int` |
 | --- | --- |
 
@@ -3353,7 +3353,7 @@ Called to process generic motion events. You can override this to intercept all 
 | Parameters ||
 |---|---|
 | `event` | The generic motion event. |
-| `ev` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The generic motion event. |
+| `ev` | [MotionEvent](../android/view/MotionEvent.md)!: The generic motion event. |
 
 | Return ||
 |---|---|
@@ -3375,7 +3375,7 @@ Called to process key events. You can override this to intercept all key events 
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: The key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event. |
 
 | Return ||
 |---|---|
@@ -3393,7 +3393,7 @@ Called to process a key shortcut event. You can override this to intercept all k
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: The key shortcut event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key shortcut event. |
 
 | Return ||
 |---|---|
@@ -3411,7 +3411,7 @@ Called to process population of `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `event` | [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#)!: The event. |
+| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!: The event. |
 
 | Return ||
 |---|---|
@@ -3430,7 +3430,7 @@ Called to process touch screen events. You can override this to intercept all to
 | Parameters ||
 |---|---|
 | `event` | The touch screen event. |
-| `ev` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The touch screen event. |
+| `ev` | [MotionEvent](../android/view/MotionEvent.md)!: The touch screen event. |
 
 | Return ||
 |---|---|
@@ -3453,7 +3453,7 @@ Called to process trackball events. You can override this to intercept all track
 | Parameters ||
 |---|---|
 | `event` | The trackball event. |
-| `ev` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The trackball event. |
+| `ev` | [MotionEvent](../android/view/MotionEvent.md)!: The trackball event. |
 
 | Return ||
 |---|---|
@@ -3489,8 +3489,8 @@ This method won't be called if the app targets `https://developer.android.com/re
 | Parameters ||
 |---|---|
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Desired prefix to prepend at each line of output. This value cannot be `null`. |
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)?: The raw file descriptor that the dump is being sent to. This value may be `null`. |
-| `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#): The PrintWriter to which you should dump your state. This will be closed for you after you return. This value cannot be `null`. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)?: The raw file descriptor that the dump is being sent to. This value may be `null`. |
+| `writer` | [PrintWriter](../java/io/PrintWriter.md): The PrintWriter to which you should dump your state. This will be closed for you after you return. This value cannot be `null`. |
 | --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: additional arguments to the dump request. This value may be `null`. |
 
@@ -3525,7 +3525,7 @@ By default, system calculates the dimension of picture-in-picture window based o
 
 | Parameters ||
 |---|---|
-| `params` | [PictureInPictureParams](https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams): non-null parameters to be combined with previously set parameters when entering picture-in-picture. |
+| `params` | [PictureInPictureParams](../android/app/PictureInPictureParams.md): non-null parameters to be combined with previously set parameters when entering picture-in-picture. |
 
 | Return ||
 |---|---|
@@ -3603,7 +3603,7 @@ This is called when a child activity of this one calls its finishActivity().
 
 | Parameters ||
 |---|---|
-| `child` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity#): The activity making the call. This value cannot be `null`. |
+| `child` | [Activity](../android/app/Activity.md): The activity making the call. This value cannot be `null`. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Request code that had been used to start the activity. |
 
 ### finishAffinity
@@ -3656,7 +3656,7 @@ This is called when a child activity of this one calls its `https://developer.an
 
 | Parameters ||
 |---|---|
-| `child` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity#)!: The activity making the call. |
+| `child` | [Activity](../android/app/Activity.md)!: The activity making the call. |
 
 **See Also**
 
@@ -4668,7 +4668,7 @@ Wrapper around `https://developer.android.com/reference/kotlin/android/content/C
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The URI of the content provider to query. |
+| `uri` | [Uri](../android/net/Uri.md)!: The URI of the content provider to query. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: List of columns to return. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: SQL WHERE clause. |
 | --- | --- |
@@ -4718,7 +4718,7 @@ This method should be used when performing up navigation from within the same ta
 
 | Parameters ||
 |---|---|
-| `upIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: An intent representing the target destination for up navigation |
+| `upIntent` | [Intent](../android/content/Intent.md)!: An intent representing the target destination for up navigation |
 
 | Return ||
 |---|---|
@@ -4742,8 +4742,8 @@ This is called when a child activity of this one calls its `https://developer.an
 
 | Parameters ||
 |---|---|
-| `child` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity#)!: The activity making the call. |
-| `upIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: An intent representing the target destination for up navigation |
+| `child` | [Activity](../android/app/Activity.md)!: The activity making the call. |
+| `upIntent` | [Intent](../android/content/Intent.md)!: An intent representing the target destination for up navigation |
 
 | Return ||
 |---|---|
@@ -4762,7 +4762,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `mode` | [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#)!: The action mode that just finished. |
+| `mode` | [ActionMode](../android/view/ActionMode.md)!: The action mode that just finished. |
 
 ### onActionModeStarted
 
@@ -4777,7 +4777,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `mode` | [ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode.html#)!: The new action mode. |
+| `mode` | [ActionMode](../android/view/ActionMode.md)!: The new action mode. |
 
 ### onActivityReenter
 
@@ -4797,7 +4797,7 @@ The purpose of this function is to let the called Activity send a hint about its
 | Parameters ||
 |---|---|
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer result code returned by the child activity through its setResult(). |
-| `data` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). |
+| `data` | [Intent](../android/content/Intent.md)!: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). |
 
 ### onActivityResult
 
@@ -4822,9 +4822,9 @@ Note that you should only override one #onActivityResult method.
 |---|---|
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer request code originally supplied to startActivityForResult(), allowing you to identify who this result came from. |
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer result code returned by the child activity through its setResult(). |
-| `data` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). This value may be `null`. |
+| `data` | [Intent](../android/content/Intent.md)?: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). This value may be `null`. |
 | --- | --- |
-| `caller` | [ComponentCaller](https://developer.android.com/reference/kotlin/android/app/ComponentCaller): The `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` instance associated with the app that sent the intent. This value cannot be `null`. |
+| `caller` | [ComponentCaller](../android/app/ComponentCaller.md): The `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` instance associated with the app that sent the intent. This value cannot be `null`. |
 
 ### onAttachFragment
 
@@ -4896,7 +4896,7 @@ At the time that this function has been called, your Resources object will have 
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#): The new device configuration. This value cannot be `null`. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md): The new device configuration. This value cannot be `null`. |
 
 ### onContentChanged
 
@@ -4924,7 +4924,7 @@ Derived classes should call through to the base class for it to perform the defa
 
 | Parameters ||
 |---|---|
-| `item` | [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#): The context menu item that was selected. This value cannot be `null`. |
+| `item` | [MenuItem](../android/view/MenuItem.md): The context menu item that was selected. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4942,7 +4942,7 @@ This hook is called whenever the context menu is being closed (either by the use
 
 | Parameters ||
 |---|---|
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#): The context menu that is being closed. This value cannot be `null`. |
+| `menu` | [Menu](../android/view/Menu.md): The context menu that is being closed. This value cannot be `null`. |
 
 ### onCreate
 
@@ -4959,8 +4959,8 @@ Same as `https://developer.android.com/reference/kotlin/android/app/Activity#onC
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: if the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
-| `persistentState` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)?: if the activity is being re-initialized after previously being shut down, powered off or updated to a new version then this Bundle contains the data it most recently supplied to outPersistentState in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: if the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `persistentState` | [PersistableBundle](../android/os/PersistableBundle.md)?: if the activity is being re-initialized after previously being shut down, powered off or updated to a new version then this Bundle contains the data it most recently supplied to outPersistentState in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
 
 **See Also**
 
@@ -4987,9 +4987,9 @@ It is not safe to hold onto the context menu after this method returns.
 
 | Parameters ||
 |---|---|
-| `menu` | [ContextMenu](https://developer.android.com/reference/kotlin/android/view/ContextMenu.html#)!: The context menu that is being built |
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view for which the context menu is being built |
-| `menuInfo` | [ContextMenu.ContextMenuInfo](https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html#)!: Extra information about the item for which the context menu should be shown. This information will vary depending on the class of v. |
+| `menu` | [ContextMenu](../android/view/ContextMenu.md)!: The context menu that is being built |
+| `v` | [View](../android/view/View.md)!: The view for which the context menu is being built |
+| `menuInfo` | [ContextMenu.ContextMenuInfo](../android/view/ContextMenu.ContextMenuInfo.md)!: Extra information about the item for which the context menu should be shown. This information will vary depending on the class of v. |
 | --- | --- |
 
 ### onCreateDescription
@@ -5030,7 +5030,7 @@ Applications that wish to supply extra Intent parameters to the parent stack def
 
 | Parameters ||
 |---|---|
-| `builder` | [TaskStackBuilder](https://developer.android.com/reference/kotlin/android/app/TaskStackBuilder)!: An empty TaskStackBuilder - the application should add intents representing the desired task stack |
+| `builder` | [TaskStackBuilder](../android/app/TaskStackBuilder.md)!: An empty TaskStackBuilder - the application should add intents representing the desired task stack |
 
 ### onCreateOptionsMenu
 
@@ -5052,7 +5052,7 @@ When you add items to the menu, you can implement the Activity's `https://develo
 
 | Parameters ||
 |---|---|
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#)!: The options menu in which you place your items. |
+| `menu` | [Menu](../android/view/Menu.md)!: The options menu in which you place your items. |
 
 | Return ||
 |---|---|
@@ -5079,7 +5079,7 @@ Default implementation of `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel being created. |
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#): This value cannot be `null`. |
+| `menu` | [Menu](../android/view/Menu.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5134,11 +5134,11 @@ Standard implementation of `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `parent` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?: This value may be `null`. |
+| `parent` | [View](../android/view/View.md)?: This value may be `null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 | --- | --- |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5165,8 +5165,8 @@ Standard implementation of `https://developer.android.com/reference/kotlin/andro
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -5218,7 +5218,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#onGen
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The generic motion event being processed. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The generic motion event being processed. |
 
 | Return ||
 |---|---|
@@ -5249,8 +5249,8 @@ You should return the action list as soon as possible to ensure the consumer, fo
 
 | Parameters ||
 |---|---|
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#): A signal to cancel the operation in progress. This value cannot be `null`. |
-| `callback` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DirectAction](https://developer.android.com/reference/kotlin/android/app/DirectAction)!\>!\>: The callback to send the action list. The actions list cannot contain `null` elements. You can call this on any thread. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): A signal to cancel the operation in progress. This value cannot be `null`. |
+| `callback` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DirectAction](../android/app/DirectAction.md)!\>!\>: The callback to send the action list. The actions list cannot contain `null` elements. You can call this on any thread. |
 
 ### onHandoffActivityDataRequested
 
@@ -5264,7 +5264,7 @@ Retrieves `https://developer.android.com/reference/kotlin/android/app/HandoffAct
 
 | Parameters ||
 |---|---|
-| `requestInfo` | [HandoffActivityDataRequestInfo](https://developer.android.com/reference/kotlin/android/app/HandoffActivityDataRequestInfo): the request info for the activity data. This value cannot be `null`. |
+| `requestInfo` | [HandoffActivityDataRequestInfo](../android/app/HandoffActivityDataRequestInfo.md): the request info for the activity data. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5292,7 +5292,7 @@ Other additional default key handling may be performed if configured with `https
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -5319,7 +5319,7 @@ Default implementation of `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -5347,7 +5347,7 @@ Default implementation of `https://developer.android.com/reference/kotlin/androi
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
 | `count` | Number of pairs as returned by event.getRepeatCount(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 | --- | --- |
 
 | Return ||
@@ -5370,7 +5370,7 @@ Called when a key shortcut event is not handled by any of the views in the Activ
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -5394,7 +5394,7 @@ The default implementation handles KEYCODE_BACK to stop the activity and go back
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -5451,7 +5451,7 @@ Default implementation of `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that the menu is in. |
-| `item` | [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#): This value cannot be `null`. |
+| `item` | [MenuItem](../android/view/MenuItem.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5473,7 +5473,7 @@ Called when a panel's menu is opened by the user. This may also be called when t
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that the menu is in. |
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#): This value cannot be `null`. |
+| `menu` | [Menu](../android/view/Menu.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5516,7 +5516,7 @@ Called by the system when the activity changes from fullscreen mode to multi-win
 | Parameters ||
 |---|---|
 | `isInMultiWindowMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the activity is in multi-window mode. |
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)!: The new configuration of the activity with the state `isInMultiWindowMode`. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md)!: The new configuration of the activity with the state `isInMultiWindowMode`. |
 
 **See Also**
 
@@ -5557,7 +5557,7 @@ This is called when a child activity of this one attempts to navigate up. The de
 
 | Parameters ||
 |---|---|
-| `child` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity#)!: The activity making the call. |
+| `child` | [Activity](../android/app/Activity.md)!: The activity making the call. |
 
 ### onNewIntent
 
@@ -5578,8 +5578,8 @@ Note that you should only override one #onNewIntent method.
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The new intent that was used to start the activity. This value cannot be `null`. |
-| `caller` | [ComponentCaller](https://developer.android.com/reference/kotlin/android/app/ComponentCaller): The `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` instance associated with the app that sent the intent. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The new intent that was used to start the activity. This value cannot be `null`. |
+| `caller` | [ComponentCaller](../android/app/ComponentCaller.md): The `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` instance associated with the app that sent the intent. This value cannot be `null`. |
 
 **See Also**
 
@@ -5603,7 +5603,7 @@ Derived classes should call through to the base class for it to perform the defa
 
 | Parameters ||
 |---|---|
-| `item` | [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#): The menu item that was selected. This value cannot be `null`. |
+| `item` | [MenuItem](../android/view/MenuItem.md): The menu item that was selected. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5625,7 +5625,7 @@ This hook is called whenever the options menu is being closed (either by the use
 
 | Parameters ||
 |---|---|
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#)!: The options menu as last shown or first initialized by onCreateOptionsMenu(). |
+| `menu` | [Menu](../android/view/Menu.md)!: The options menu as last shown or first initialized by onCreateOptionsMenu(). |
 
 ### onPanelClosed
 
@@ -5643,7 +5643,7 @@ Default implementation of `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that is being displayed. |
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#): This value cannot be `null`. |
+| `menu` | [Menu](../android/view/Menu.md): This value cannot be `null`. |
 
 ### onPerformDirectAction
 
@@ -5663,10 +5663,10 @@ This is called to perform an action previously defined by the app. Apps also hav
 | Parameters ||
 |---|---|
 | `actionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The ID for the action you previously reported via `https://developer.android.com/reference/kotlin/android/app/Activity#onGetDirectActions(android.os.CancellationSignal,%20java.util.function.Consumer)`. This value cannot be `null`. |
-| `arguments` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): Any additional arguments provided by the caller that are specific to the given action. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#): A signal to cancel the operation in progress. This value cannot be `null`. |
+| `arguments` | [Bundle](../android/os/Bundle.md): Any additional arguments provided by the caller that are specific to the given action. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): A signal to cancel the operation in progress. This value cannot be `null`. |
 | --- | --- |
-| `resultListener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!\>: The callback to provide the result back to the caller. You can call this on any thread. The result bundle is action specific. This value cannot be `null`. |
+| `resultListener` | [Consumer](../java/util/function/Consumer.md)\< [Bundle](../android/os/Bundle.md)!\>: The callback to provide the result back to the caller. You can call this on any thread. The result bundle is action specific. This value cannot be `null`. |
 
 **See Also**
 
@@ -5709,7 +5709,7 @@ Called by the system when the activity changes to and from picture-in-picture mo
 | Parameters ||
 |---|---|
 | `isInPictureInPictureMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the activity is in picture-in-picture mode. |
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)!: The new configuration of the activity with the state `isInPictureInPictureMode`. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md)!: The new configuration of the activity with the state `isInPictureInPictureMode`. |
 
 **See Also**
 
@@ -5743,7 +5743,7 @@ Called by the system when the activity is in PiP and has state changes. Compare 
 
 | Parameters ||
 |---|---|
-| `pipState` | [PictureInPictureUiState](https://developer.android.com/reference/kotlin/android/app/PictureInPictureUiState): the new Picture-in-Picture state. This value cannot be `null`. |
+| `pipState` | [PictureInPictureUiState](../android/app/PictureInPictureUiState.md): the new Picture-in-Picture state. This value cannot be `null`. |
 
 ### onPostCreate
 
@@ -5760,8 +5760,8 @@ This is the same as `https://developer.android.com/reference/kotlin/android/app/
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: The data most recently supplied in #onSaveInstanceState This value may be `null`. |
-| `persistentState` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)?: The data coming from the PersistableBundle first saved in `https://developer.android.com/reference/kotlin/android/app/Activity#onSaveInstanceState(android.os.Bundle,%20android.os.PersistableBundle)`. This value may be `null`. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: The data most recently supplied in #onSaveInstanceState This value may be `null`. |
+| `persistentState` | [PersistableBundle](../android/os/PersistableBundle.md)?: The data coming from the PersistableBundle first saved in `https://developer.android.com/reference/kotlin/android/app/Activity#onSaveInstanceState(android.os.Bundle,%20android.os.PersistableBundle)`. This value may be `null`. |
 
 **See Also**
 
@@ -5779,7 +5779,7 @@ This method receives the `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `builder` | [TaskStackBuilder](https://developer.android.com/reference/kotlin/android/app/TaskStackBuilder)!: A TaskStackBuilder that has been populated with Intents by onCreateNavigateUpTaskStack. |
+| `builder` | [TaskStackBuilder](../android/app/TaskStackBuilder.md)!: A TaskStackBuilder that has been populated with Intents by onCreateNavigateUpTaskStack. |
 
 ### onPrepareOptionsMenu
 
@@ -5795,7 +5795,7 @@ The default implementation updates the system menu items based on the activity's
 
 | Parameters ||
 |---|---|
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#)!: The options menu as last shown or first initialized by onCreateOptionsMenu(). |
+| `menu` | [Menu](../android/view/Menu.md)!: The options menu as last shown or first initialized by onCreateOptionsMenu(). |
 
 | Return ||
 |---|---|
@@ -5822,8 +5822,8 @@ Default implementation of `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that is being displayed. |
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)?: This value may be `null`. |
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#): This value cannot be `null`. |
+| `view` | [View](../android/view/View.md)?: This value may be `null`. |
+| `menu` | [Menu](../android/view/Menu.md): This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -5844,7 +5844,7 @@ Custom implementation may adjust the content intent to better reflect the top-le
 
 | Parameters ||
 |---|---|
-| `outContent` | [AssistContent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent)!: The assist content to return. |
+| `outContent` | [AssistContent](../android/app/assist/AssistContent.md)!: The assist content to return. |
 
 ### onProvideAssistData
 
@@ -5874,8 +5874,8 @@ Called when Keyboard Shortcuts are requested for the current window.
 
 | Parameters ||
 |---|---|
-| `data` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyboardShortcutGroup](https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup.html#)!\>!: The data list to populate with shortcuts. |
-| `menu` | [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html#)?: The current menu, which may be null. |
+| `data` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyboardShortcutGroup](../android/view/KeyboardShortcutGroup.md)!\>!: The data list to populate with shortcuts. |
+| `menu` | [Menu](../android/view/Menu.md)?: The current menu, which may be null. |
 | `deviceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id for the connected device the shortcuts should be provided for. |
 | --- | --- |
 
@@ -5962,8 +5962,8 @@ At least one of `savedInstanceState` or `persistentState` will not be null.
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: the data most recently supplied in #onSaveInstanceState or null. |
-| `persistentState` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)?: the data most recently supplied in #onSaveInstanceState or null. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: the data most recently supplied in #onSaveInstanceState or null. |
+| `persistentState` | [PersistableBundle](../android/os/PersistableBundle.md)?: the data most recently supplied in #onSaveInstanceState or null. |
 
 **See Also**
 
@@ -6011,8 +6011,8 @@ This is the same as #onSaveInstanceState but is called for activities created wi
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): Bundle in which to place your saved state. This value cannot be `null`. |
-| `outPersistentState` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#): State which will be saved across reboots and updates. This value cannot be `null`. |
+| `outState` | [Bundle](../android/os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
+| `outPersistentState` | [PersistableBundle](../android/os/PersistableBundle.md): State which will be saved across reboots and updates. This value cannot be `null`. |
 
 **See Also**
 
@@ -6054,7 +6054,7 @@ Note: when running in a `https://developer.android.com/reference/kotlin/android/
 
 | Parameters ||
 |---|---|
-| `searchEvent` | [SearchEvent](https://developer.android.com/reference/kotlin/android/view/SearchEvent.html#)?: The `https://developer.android.com/reference/kotlin/android/view/SearchEvent.html#` that signaled this search. This value may be `null`. |
+| `searchEvent` | [SearchEvent](../android/view/SearchEvent.md)?: The `https://developer.android.com/reference/kotlin/android/view/SearchEvent.html#` that signaled this search. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -6113,7 +6113,7 @@ Called when a touch screen event was not handled by any of the views inside of t
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The touch screen event being processed. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The touch screen event being processed. |
 
 | Return ||
 |---|---|
@@ -6131,7 +6131,7 @@ Called when the trackball was moved and not handled by any of the views inside o
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The trackball event being processed. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The trackball event being processed. |
 
 | Return ||
 |---|---|
@@ -6242,7 +6242,7 @@ Note: If you are looking for a notification callback that an action mode has bee
 
 | Parameters ||
 |---|---|
-| `callback` | [ActionMode.Callback](https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#)!: The callback that should control the new action mode |
+| `callback` | [ActionMode.Callback](../android/view/ActionMode.Callback.md)!: The callback that should control the new action mode |
 
 | Return ||
 |---|---|
@@ -6263,7 +6263,7 @@ Called when an action mode is being started for this window. Gives the callback 
 
 | Parameters ||
 |---|---|
-| `callback` | [ActionMode.Callback](https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#)!: Callback to control the lifecycle of this action mode |
+| `callback` | [ActionMode.Callback](../android/view/ActionMode.Callback.md)!: Callback to control the lifecycle of this action mode |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of `https://developer.android.com/reference/kotlin/android/view/ActionMode.html#TYPE_PRIMARY:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/ActionMode.html#TYPE_FLOATING:kotlin.Int`. |
 
 | Return ||
@@ -6282,7 +6282,7 @@ Programmatically opens the context menu for a particular `view`. The `view` shou
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view to show the context menu for. |
+| `view` | [View](../android/view/View.md)!: The view to show the context menu for. |
 
 ### openOptionsMenu
 
@@ -6487,7 +6487,7 @@ It is strongly recommended to register this in the constructor of your Activity 
 
 | Parameters ||
 |---|---|
-| `callback` | [Application.ActivityLifecycleCallbacks](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks): The callback instance to register. This value cannot be `null`. |
+| `callback` | [Application.ActivityLifecycleCallbacks](../android/app/Application.ActivityLifecycleCallbacks.md): The callback instance to register. This value cannot be `null`. |
 
 ### registerComponentCallbacks
 
@@ -6503,7 +6503,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
+| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
 
 | Exceptions ||
 |---|---|
@@ -6521,7 +6521,7 @@ Registers a context menu to be shown for the given view (multiple views can show
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view that should show a context menu. |
+| `view` | [View](../android/view/View.md)!: The view that should show a context menu. |
 
 **See Also**
 
@@ -6543,8 +6543,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [Activity.ScreenCaptureCallback](https://developer.android.com/reference/kotlin/android/app/Activity.ScreenCaptureCallback): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [Activity.ScreenCaptureCallback](../android/app/Activity.ScreenCaptureCallback.md): This value cannot be `null`. |
 
 ### releaseInstance
 
@@ -6614,7 +6614,7 @@ Create `https://developer.android.com/reference/kotlin/android/view/DragAndDropP
 
 | Parameters ||
 |---|---|
-| `event` | [DragEvent](https://developer.android.com/reference/kotlin/android/view/DragEvent.html#)!: Drag event |
+| `event` | [DragEvent](../android/view/DragEvent.md)!: Drag event |
 
 | Return ||
 |---|---|
@@ -6636,7 +6636,7 @@ Request to put the activity into fullscreen. The requester must be pinned or the
 | Parameters ||
 |---|---|
 | `request` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Can be `https://developer.android.com/reference/kotlin/android/app/Activity#FULLSCREEN_MODE_REQUEST_ENTER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/Activity#FULLSCREEN_MODE_REQUEST_EXIT:kotlin.Int` to indicate this request is to get fullscreen or get restored. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/Activity#FULLSCREEN_MODE_REQUEST_EXIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/Activity#FULLSCREEN_MODE_REQUEST_ENTER:kotlin.Int` |
-| `approvalCallback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!, [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\>?: Optional callback, use `null` when not necessary. When the request is approved or rejected, the callback will be triggered. This will happen before any configuration change. The callback will be dispatched on the main thread except on devices with API level 36.1 or lower, where the behavior is undefined. If the request is rejected, the Throwable provided will be an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` with a detailed message can be retrieved by `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage()`. |
+| `approvalCallback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\>?: Optional callback, use `null` when not necessary. When the request is approved or rejected, the callback will be triggered. This will happen before any configuration change. The callback will be dispatched on the main thread except on devices with API level 36.1 or lower, where the behavior is undefined. If the request is rejected, the Throwable provided will be an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` with a detailed message can be retrieved by `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage()`. |
 
 ### requestOpenInBrowserEducation
 
@@ -6845,7 +6845,7 @@ Runs the specified action on the UI thread. If the current thread is the UI thre
 
 | Parameters ||
 |---|---|
-| `action` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!: the action to run on the UI thread |
+| `action` | [Runnable](../java/lang/Runnable.md)!: the action to run on the UI thread |
 
 ### setActionBar
 
@@ -6863,7 +6863,7 @@ In order to use a Toolbar within the Activity's window content the application m
 
 | Parameters ||
 |---|---|
-| `toolbar` | [Toolbar](https://developer.android.com/reference/kotlin/android/widget/Toolbar.html#)?: Toolbar to set as the Activity's action bar, or `null` to clear it |
+| `toolbar` | [Toolbar](../android/widget/Toolbar.md)?: Toolbar to set as the Activity's action bar, or `null` to clear it |
 
 ### setAllowCrossUidActivitySwitchFromBelow
 
@@ -6895,7 +6895,7 @@ Set the `https://developer.android.com/reference/kotlin/android/transition/Trans
 
 | Parameters ||
 |---|---|
-| `tm` | [TransitionManager](https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#)!: The TransitionManager to use for scene changes. |
+| `tm` | [TransitionManager](../android/transition/TransitionManager.md)!: The TransitionManager to use for scene changes. |
 
 ### setContentView
 
@@ -6909,7 +6909,7 @@ Set the activity content to an explicit view. This view is placed directly into 
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The desired content to display. |
+| `view` | [View](../android/view/View.md)!: The desired content to display. |
 
 **See Also**
 
@@ -6931,8 +6931,8 @@ Set the activity content to an explicit view. This view is placed directly into 
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The desired content to display. |
-| `params` | [ViewGroup.LayoutParams](https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#)!: Layout parameters for the view. |
+| `view` | [View](../android/view/View.md)!: The desired content to display. |
+| `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: Layout parameters for the view. |
 
 **See Also**
 
@@ -6990,7 +6990,7 @@ When `https://developer.android.com/reference/kotlin/android/app/ActivityOptions
 
 | Parameters ||
 |---|---|
-| `callback` | [SharedElementCallback](https://developer.android.com/reference/kotlin/android/app/SharedElementCallback)!: Used to manipulate shared element transitions on the launched Activity. |
+| `callback` | [SharedElementCallback](../android/app/SharedElementCallback.md)!: Used to manipulate shared element transitions on the launched Activity. |
 
 ### setExitSharedElementCallback
 
@@ -7004,7 +7004,7 @@ When `https://developer.android.com/reference/kotlin/android/app/ActivityOptions
 
 | Parameters ||
 |---|---|
-| `callback` | [SharedElementCallback](https://developer.android.com/reference/kotlin/android/app/SharedElementCallback)!: Used to manipulate shared element transitions on the launching Activity. |
+| `callback` | [SharedElementCallback](../android/app/SharedElementCallback.md)!: Used to manipulate shared element transitions on the launching Activity. |
 
 ### setFeatureDrawable
 
@@ -7083,7 +7083,7 @@ Sets if Handoff is enabled for this Activity. See `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `handoffActivityParams` | [HandoffActivityParams](https://developer.android.com/reference/kotlin/android/app/HandoffActivityParams)?: Configuration parameters for Handoff. This value may be `null`. |
+| `handoffActivityParams` | [HandoffActivityParams](../android/app/HandoffActivityParams.md)?: Configuration parameters for Handoff. This value may be `null`. |
 
 ### setImmersive
 
@@ -7130,7 +7130,7 @@ Changes the intent returned by `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `newIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The new Intent object to return from `https://developer.android.com/reference/kotlin/android/app/Activity#getIntent()` |
+| `newIntent` | [Intent](../android/content/Intent.md)!: The new Intent object to return from `https://developer.android.com/reference/kotlin/android/app/Activity#getIntent()` |
 
 **See Also**
 
@@ -7152,8 +7152,8 @@ Changes the intent returned by `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `newIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: The new Intent object to return from `https://developer.android.com/reference/kotlin/android/app/Activity#getIntent()` This value may be `null`. |
-| `newCaller` | [ComponentCaller](https://developer.android.com/reference/kotlin/android/app/ComponentCaller)?: The new `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` object to return from `https://developer.android.com/reference/kotlin/android/app/Activity#getCaller()` This value may be `null`. |
+| `newIntent` | [Intent](../android/content/Intent.md)?: The new Intent object to return from `https://developer.android.com/reference/kotlin/android/app/Activity#getIntent()` This value may be `null`. |
+| `newCaller` | [ComponentCaller](../android/app/ComponentCaller.md)?: The new `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` object to return from `https://developer.android.com/reference/kotlin/android/app/Activity#getCaller()` This value may be `null`. |
 
 **See Also**
 
@@ -7180,8 +7180,8 @@ It is recommended to set the same locus id in the shortcut's locus id using `htt
 
 | Parameters ||
 |---|---|
-| `locusId` | [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId.html#)?: a unique, stable id that identifies this `Activity` instance. LocusId is an opaque ID that links this Activity's state to different Android concepts: `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder.html#setLocusId(android.content.LocusId)`. LocusID is null by default or if you explicitly reset it. |
-| `bundle` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: extras set or updated as part of this locus context. This may help provide additional metadata such as URLs, conversation participants specific to this `Activity`'s context. Bundle can be null if additional metadata is not needed. Bundle should always be null for null locusId. |
+| `locusId` | [LocusId](../android/content/LocusId.md)?: a unique, stable id that identifies this `Activity` instance. LocusId is an opaque ID that links this Activity's state to different Android concepts: `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder.html#setLocusId(android.content.LocusId)`. LocusID is null by default or if you explicitly reset it. |
+| `bundle` | [Bundle](../android/os/Bundle.md)?: extras set or updated as part of this locus context. This may help provide additional metadata such as URLs, conversation participants specific to this `Activity`'s context. Bundle can be null if additional metadata is not needed. Bundle should always be null for null locusId. |
 
 **See Also**
 
@@ -7204,7 +7204,7 @@ It is not guaranteed that the hardware volume controls will always change this s
 
 | Parameters ||
 |---|---|
-| `controller` | [MediaController](https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#)!: The controller for the session which should receive media keys and volume changes. |
+| `controller` | [MediaController](../android/media/session/MediaController.md)!: The controller for the session which should receive media keys and volume changes. |
 
 ### setPictureInPictureParams
 
@@ -7218,7 +7218,7 @@ Updates the properties of the picture-in-picture activity, or sets it to be used
 
 | Parameters ||
 |---|---|
-| `params` | [PictureInPictureParams](https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams): the new parameters for the picture-in-picture. This value cannot be `null`. |
+| `params` | [PictureInPictureParams](../android/app/PictureInPictureParams.md): the new parameters for the picture-in-picture. This value cannot be `null`. |
 
 ### setProgress
 
@@ -7375,7 +7375,7 @@ As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 | Parameters ||
 |---|---|
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The result code to propagate back to the originating activity, often RESULT_CANCELED or RESULT_OK |
-| `data` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The data to propagate back to the originating activity. |
+| `data` | [Intent](../android/content/Intent.md)!: The data to propagate back to the originating activity. |
 
 **See Also**
 
@@ -7458,7 +7458,7 @@ Sets information describing the task with this activity for presentation inside 
 
 | Parameters ||
 |---|---|
-| `taskDescription` | [ActivityManager.TaskDescription](https://developer.android.com/reference/kotlin/android/app/ActivityManager.TaskDescription)!: The TaskDescription properties that describe the task with this activity |
+| `taskDescription` | [ActivityManager.TaskDescription](../android/app/ActivityManager.TaskDescription.md)!: The TaskDescription properties that describe the task with this activity |
 
 **See Also**
 
@@ -7634,7 +7634,7 @@ String servicePackage = "com.whatever.app";
 | Parameters ||
 |---|---|
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to enable this mode. |
-| `requestedComponent` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#): the name of the component to use as a `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService.html#` while VR mode is enabled. This value cannot be `null`. |
+| `requestedComponent` | [ComponentName](../android/content/ComponentName.md): the name of the component to use as a `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService.html#` while VR mode is enabled. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -7727,7 +7727,7 @@ If this method returns false the app can trivially call `https://developer.andro
 
 | Parameters ||
 |---|---|
-| `targetIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: An intent representing the target destination for up navigation |
+| `targetIntent` | [Intent](../android/content/Intent.md)!: An intent representing the target destination for up navigation |
 
 | Return ||
 |---|---|
@@ -7781,7 +7781,7 @@ Each time a dialog is shown, `https://developer.android.com/reference/kotlin/and
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the managed dialog. |
-| `args` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Arguments to pass through to the dialog. These will be saved and restored for you. Note that if the dialog is already created, `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateDialog(kotlin.Int,%20android.os.Bundle)` will not be called with the new arguments but `https://developer.android.com/reference/kotlin/android/app/Activity#onPrepareDialog(kotlin.Int,%20android.app.Dialog,%20android.os.Bundle)` will be. If you need to rebuild the dialog, call `https://developer.android.com/reference/kotlin/android/app/Activity#removeDialog(kotlin.Int)` first. |
+| `args` | [Bundle](../android/os/Bundle.md)!: Arguments to pass through to the dialog. These will be saved and restored for you. Note that if the dialog is already created, `https://developer.android.com/reference/kotlin/android/app/Activity#onCreateDialog(kotlin.Int,%20android.os.Bundle)` will not be called with the new arguments but `https://developer.android.com/reference/kotlin/android/app/Activity#onPrepareDialog(kotlin.Int,%20android.app.Dialog,%20android.os.Bundle)` will be. If you need to rebuild the dialog, call `https://developer.android.com/reference/kotlin/android/app/Activity#removeDialog(kotlin.Int)` first. |
 
 | Return ||
 |---|---|
@@ -7817,7 +7817,7 @@ Start an action mode of the default type `https://developer.android.com/referenc
 
 | Parameters ||
 |---|---|
-| `callback` | [ActionMode.Callback](https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#)!: Callback that will manage lifecycle events for this action mode |
+| `callback` | [ActionMode.Callback](../android/view/ActionMode.Callback.md)!: Callback that will manage lifecycle events for this action mode |
 
 | Return ||
 |---|---|
@@ -7842,7 +7842,7 @@ Start an action mode of the given type.
 
 | Parameters ||
 |---|---|
-| `callback` | [ActionMode.Callback](https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#)!: Callback that will manage lifecycle events for this action mode |
+| `callback` | [ActionMode.Callback](../android/view/ActionMode.Callback.md)!: Callback that will manage lifecycle events for this action mode |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of `https://developer.android.com/reference/kotlin/android/view/ActionMode.html#TYPE_PRIMARY:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/ActionMode.html#TYPE_FLOATING:kotlin.Int`. |
 
 | Return ||
@@ -7865,7 +7865,7 @@ Same as #startActivities(android.content.Intent\[\],android.os.Bundle) with no o
 
 | Parameters ||
 |---|---|
-| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!\>!: The intents to start. |
+| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\>!: The intents to start. |
 
 | Exceptions ||
 |---|---|
@@ -7890,8 +7890,8 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 | Parameters ||
 |---|---|
-| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!\>!: The intents to start. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
+| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\>!: The intents to start. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -7911,7 +7911,7 @@ Same as #startActivity(android.content.Intent,android.os.Bundle) with no options
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
 
 | Exceptions ||
 |---|---|
@@ -7936,8 +7936,8 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -7960,7 +7960,7 @@ Same as calling `https://developer.android.com/reference/kotlin/android/app/Acti
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If \>= 0, this code will be returned in onActivityResult() when the activity exits; If \< 0, no result will return when the activity exits. |
 
 | Exceptions ||
@@ -7991,9 +7991,9 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If \>= 0, this code will be returned in onActivityResult() when the activity exits; If \< 0, no result will return when the activity exits. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -8021,8 +8021,8 @@ Same as calling `https://developer.android.com/reference/kotlin/android/app/Acti
 
 | Parameters ||
 |---|---|
-| `child` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity#): The activity making the call. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
+| `child` | [Activity](../android/app/Activity.md): The activity making the call. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Reply request code. \< 0 if reply is not requested. |
 | --- | --- |
 
@@ -8054,11 +8054,11 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 | Parameters ||
 |---|---|
-| `child` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity#): The activity making the call. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
+| `child` | [Activity](../android/app/Activity.md): The activity making the call. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Reply request code. \< 0 if reply is not requested. |
 | --- | --- |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -8085,8 +8085,8 @@ Same as calling `https://developer.android.com/reference/kotlin/android/app/Acti
 
 | Parameters ||
 |---|---|
-| `fragment` | [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment): The fragment making the call. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
+| `fragment` | [Fragment](../android/app/Fragment.md): The fragment making the call. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Reply request code. \< 0 if reply is not requested. |
 | --- | --- |
 
@@ -8118,11 +8118,11 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 | Parameters ||
 |---|---|
-| `fragment` | [Fragment](https://developer.android.com/reference/kotlin/android/app/Fragment): The fragment making the call. This value cannot be `null`. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The intent to start. |
+| `fragment` | [Fragment](../android/app/Fragment.md): The fragment making the call. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md)!: The intent to start. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Reply request code. \< 0 if reply is not requested. |
 | --- | --- |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -8145,7 +8145,7 @@ Same as calling `https://developer.android.com/reference/kotlin/android/app/Acti
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent to start. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent to start. This value cannot be `null`. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If \>= 0, this code will be returned in onActivityResult() when the activity exits; If \< 0, no result will return when the activity exits, as described in #startActivityForResult. |
 
 | Return ||
@@ -8172,9 +8172,9 @@ This function can only be called from a top-level activity; if it is called from
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent to start. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent to start. This value cannot be `null`. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If \>= 0, this code will be returned in onActivityResult() when the activity exits; If \< 0, no result will return when the activity exits, as described in #startActivityForResult. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -8201,8 +8201,8 @@ Same as calling #startIntentSender(android.content.IntentSender,android.content.
 
 | Parameters ||
 |---|---|
-| `intent` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)!: The IntentSender to launch. |
-| `fillInIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
+| `intent` | [IntentSender](../android/content/IntentSender.md)!: The IntentSender to launch. |
+| `fillInIntent` | [Intent](../android/content/Intent.md)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
 | `flagsMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Intent flags in the original IntentSender that you would like to change. |
 | --- | --- |
 | `flagsValues` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired values for any bits set in flagsMask |
@@ -8227,13 +8227,13 @@ Like #startActivity(android.content.Intent,android.os.Bundle), but taking a Inte
 
 | Parameters ||
 |---|---|
-| `intent` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)!: The IntentSender to launch. |
-| `fillInIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
+| `intent` | [IntentSender](../android/content/IntentSender.md)!: The IntentSender to launch. |
+| `fillInIntent` | [Intent](../android/content/Intent.md)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
 | `flagsMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Intent flags in the original IntentSender that you would like to change. |
 | --- | --- |
 | `flagsValues` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired values for any bits set in flagsMask |
 | `extraFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Always set to 0. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. If options have also been supplied by the IntentSender, options given here will override any that conflict with those given by the IntentSender. This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. If options have also been supplied by the IntentSender, options given here will override any that conflict with those given by the IntentSender. This value may be `null`. |
 | --- | --- |
 
 ### startIntentSenderForResult
@@ -8255,9 +8255,9 @@ Same as calling `https://developer.android.com/reference/kotlin/android/app/Acti
 
 | Parameters ||
 |---|---|
-| `intent` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)!: The IntentSender to launch. |
+| `intent` | [IntentSender](../android/content/IntentSender.md)!: The IntentSender to launch. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If \>= 0, this code will be returned in onActivityResult() when the activity exits; If \< 0, no result will return when the activity exits. |
-| `fillInIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
+| `fillInIntent` | [Intent](../android/content/Intent.md)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
 | --- | --- |
 | `flagsMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Intent flags in the original IntentSender that you would like to change. |
 | `flagsValues` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired values for any bits set in flagsMask |
@@ -8284,15 +8284,15 @@ Like `https://developer.android.com/reference/kotlin/android/app/Activity#startA
 
 | Parameters ||
 |---|---|
-| `intent` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)!: The IntentSender to launch. |
+| `intent` | [IntentSender](../android/content/IntentSender.md)!: The IntentSender to launch. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If \>= 0, this code will be returned in onActivityResult() when the activity exits; If \< 0, no result will return when the activity exits. |
-| `fillInIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
+| `fillInIntent` | [Intent](../android/content/Intent.md)?: If non-null, this will be provided as the intent parameter to android.content.IntentSender#sendIntent. |
 | --- | --- |
 | `flagsMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Intent flags in the original IntentSender that you would like to change. |
 | `flagsValues` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired values for any bits set in flagsMask |
 | `extraFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Always set to 0. |
 | --- | --- |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. If options have also been supplied by the IntentSender, options given here will override any that conflict with those given by the IntentSender. This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. If options have also been supplied by the IntentSender, options given here will override any that conflict with those given by the IntentSender. This value may be `null`. |
 
 ### startIntentSenderFromChild
 
@@ -8339,7 +8339,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/Activity#startA
 
 | Parameters ||
 |---|---|
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: This value may be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
 
 ### startLocalVoiceInteraction
 
@@ -8353,7 +8353,7 @@ Starts a local voice interaction session. When ready, `https://developer.android
 
 | Parameters ||
 |---|---|
-| `privateOptions` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: a Bundle of private arguments to the current voice interaction service |
+| `privateOptions` | [Bundle](../android/os/Bundle.md)!: a Bundle of private arguments to the current voice interaction service |
 
 ### startLockTask
 
@@ -8392,7 +8392,7 @@ This method allows the activity to take care of managing the given `https://deve
 
 | Parameters ||
 |---|---|
-| `c` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The Cursor to be managed. |
+| `c` | [Cursor](../android/database/Cursor.md)!: The Cursor to be managed. |
 
 **See Also**
 
@@ -8411,7 +8411,7 @@ Same as calling `https://developer.android.com/reference/kotlin/android/app/Acti
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent to dispatch to the next activity. For correct behavior, this must be the same as the Intent that started your own activity; the only changes you can make are to the extras inside of it. This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent to dispatch to the next activity. For correct behavior, this must be the same as the Intent that started your own activity; the only changes you can make are to the extras inside of it. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8432,8 +8432,8 @@ Special version of starting an activity, for use when you are replacing other ac
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): The intent to dispatch to the next activity. For correct behavior, this must be the same as the Intent that started your own activity; the only changes you can make are to the extras inside of it. This value cannot be `null`. |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): The intent to dispatch to the next activity. For correct behavior, this must be the same as the Intent that started your own activity; the only changes you can make are to the extras inside of it. This value cannot be `null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8472,7 +8472,7 @@ Note: when running in a `https://developer.android.com/reference/kotlin/android/
 |---|---|
 | `initialQuery` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Any non-null non-empty string will be inserted as pre-entered text in the search query box. |
 | `selectInitialQuery` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, the initial query will be preselected, which means that any further typing will replace it. This is useful for cases where an entire pre-formed query is being inserted. If false, the selection point will be placed at the end of the inserted query. This is useful when the inserted query is text that the user entered, and the user would expect to be able to keep typing. *This parameter is only meaningful if initialQuery is a non-empty string.* |
-| `appSearchData` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. This value may be `null`. |
+| `appSearchData` | [Bundle](../android/os/Bundle.md)?: An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. This value may be `null`. |
 | --- | --- |
 | `globalSearch` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If false, this will only launch the search that has been specifically defined by the application (which is usually defined as a local search). If no default search is defined in the current application or activity, global search will be launched. If true, this will always launch a platform-global (e.g. web-based) search instead. |
 
@@ -8526,7 +8526,7 @@ Given a Cursor that was previously given to `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `c` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The Cursor that was being managed. |
+| `c` | [Cursor](../android/database/Cursor.md)!: The Cursor that was being managed. |
 
 **See Also**
 
@@ -8561,7 +8561,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/app/Activity#
 | Parameters ||
 |---|---|
 | `query` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The query to trigger. If empty, the request will be ignored. |
-| `appSearchData` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. This value may be `null`. |
+| `appSearchData` | [Bundle](../android/os/Bundle.md)?: An application can insert application-specific context here, in order to improve quality or specificity of its own searches. This data will be returned with SEARCH intent(s). Null if no extra data is required. This value may be `null`. |
 
 ### unregisterActivityLifecycleCallbacks
 
@@ -8575,7 +8575,7 @@ Unregister an `https://developer.android.com/reference/kotlin/android/app/Applic
 
 | Parameters ||
 |---|---|
-| `callback` | [Application.ActivityLifecycleCallbacks](https://developer.android.com/reference/kotlin/android/app/Application.ActivityLifecycleCallbacks): The callback instance to unregister. This value cannot be `null`. |
+| `callback` | [Application.ActivityLifecycleCallbacks](../android/app/Application.ActivityLifecycleCallbacks.md): The callback instance to unregister. This value cannot be `null`. |
 
 **See Also**
 
@@ -8595,7 +8595,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
+| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
 
 | Exceptions ||
 |---|---|
@@ -8613,7 +8613,7 @@ Prevents a context menu to be shown for the given view. This method will remove 
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: The view that should stop showing a context menu. |
+| `view` | [View](../android/view/View.md)!: The view that should stop showing a context menu. |
 
 **See Also**
 
@@ -8632,7 +8632,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `callback` | [Activity.ScreenCaptureCallback](https://developer.android.com/reference/kotlin/android/app/Activity.ScreenCaptureCallback): This value cannot be `null`. |
+| `callback` | [Activity.ScreenCaptureCallback](../android/app/Activity.ScreenCaptureCallback.md): This value cannot be `null`. |
 
 ## Protected methods
 
@@ -8672,7 +8672,7 @@ This method is never invoked if your activity sets `https://developer.android.co
 |---|---|
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer request code originally supplied to startActivityForResult(), allowing you to identify who this result came from. |
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer result code returned by the child activity through its setResult(). |
-| `data` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). |
+| `data` | [Intent](../android/content/Intent.md)!: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). |
 | --- | --- |
 
 **See Also**
@@ -8696,7 +8696,7 @@ Called by #setTheme and #getTheme to apply a theme resource to the current Theme
 
 | Parameters ||
 |---|---|
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)!: the theme being modified |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)!: the theme being modified |
 | `resId` | the style resource being applied to theme |
 | `first` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if this is the first time a style is being applied to theme |
 | --- | --- |
@@ -8731,7 +8731,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
 
 **See Also**
 
@@ -8773,7 +8773,7 @@ If you would like an opportunity to prepare your dialog before it is shown, over
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the dialog. |
-| `args` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The dialog arguments provided to `https://developer.android.com/reference/kotlin/android/app/Activity#showDialog(kotlin.Int,%20android.os.Bundle)`. |
+| `args` | [Bundle](../android/os/Bundle.md)!: The dialog arguments provided to `https://developer.android.com/reference/kotlin/android/app/Activity#showDialog(kotlin.Int,%20android.os.Bundle)`. |
 
 | Return ||
 |---|---|
@@ -8823,7 +8823,7 @@ Note that `https://developer.android.com/reference/kotlin/android/app/Activity#g
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The new intent that was used to start the activity |
+| `intent` | [Intent](../android/content/Intent.md)!: The new intent that was used to start the activity |
 
 **See Also**
 
@@ -8872,7 +8872,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
 
 **See Also**
 
@@ -8928,8 +8928,8 @@ Override this if you need to update a managed dialog based on the state of the a
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The id of the managed dialog. |
-| `dialog` | [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog)!: The dialog. |
-| `args` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The dialog arguments provided to `https://developer.android.com/reference/kotlin/android/app/Activity#showDialog(kotlin.Int,%20android.os.Bundle)`. |
+| `dialog` | [Dialog](../android/app/Dialog.md)!: The dialog. |
+| `args` | [Bundle](../android/os/Bundle.md)!: The dialog arguments provided to `https://developer.android.com/reference/kotlin/android/app/Activity#showDialog(kotlin.Int,%20android.os.Bundle)`. |
 | --- | --- |
 
 **See Also**
@@ -8973,7 +8973,7 @@ This method is called between `https://developer.android.com/reference/kotlin/an
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the data most recently supplied in #onSaveInstanceState. This value cannot be `null`. |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md): the data most recently supplied in #onSaveInstanceState. This value cannot be `null`. |
 
 **See Also**
 
@@ -9020,7 +9020,7 @@ If called, this method will occur after `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): Bundle in which to place your saved state. This value cannot be `null`. |
+| `outState` | [Bundle](../android/os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
 
 **See Also**
 

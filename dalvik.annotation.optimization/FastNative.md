@@ -8,7 +8,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class FastNative
 ```
 
-| [dalvik.annotation.optimization.FastNative](https://developer.android.com/reference/kotlin/dalvik/annotation/optimization/FastNative#) |
+| [dalvik.annotation.optimization.FastNative](../dalvik/annotation/optimization/FastNative.md) |
 
 An ART runtime built-in optimization for`native`methods to speed up JNI transitions: Compared to normal`native`methods,`native`methods that are annotated with @`FastNative`use faster JNI transitions from managed code to the native code and back. Calls from a @`FastNative`method implementation to JNI functions that access the managed heap or call managed code also have faster internal transitions.
 
@@ -18,7 +18,7 @@ For performance critical methods that need this annotation, it is strongly recom
 
 The @`FastNative`optimization was implemented for system use since Android 8 and became CTS-tested public API in Android 14. Developers aiming for maximum compatibility should avoid calling @`FastNative`methods on Android 13-. The optimization is likely to work also on Android 8-13 devices (after all, it was used in the system, albeit without the strong CTS guarantees), especially those that use unmodified versions of ART, such as Android 12+ devices with the official ART Module. The built-in dynamic JNI linking is working only in Android 12+, the explicit registration with JNI`RegisterNatives`is strictly required for running on Android versions 8-11. The annotation is ignored on Android 7-.
 
-**Deadlock Warning:** As a rule of thumb, any native locks acquired in a @ [FastNative](https://developer.android.com/reference/kotlin/dalvik/annotation/optimization/FastNative#) call (despite the above warning that this is an unbounded operation that can block GC for a long time) must be released before returning to managed code.
+**Deadlock Warning:** As a rule of thumb, any native locks acquired in a @ [FastNative](../dalvik/annotation/optimization/FastNative.md) call (despite the above warning that this is an unbounded operation that can block GC for a long time) must be released before returning to managed code.
 
 Say some code does:` fast_jni_call_to_grab_a_lock(); does_some_java_work(); fast_jni_call_to_release_a_lock(); `
 
@@ -34,7 +34,7 @@ Has no effect when used with non-native methods.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FastNative](https://developer.android.com/reference/kotlin/dalvik/annotation/optimization/FastNative#FastNative())`()` An ART runtime built-in optimization for`native`methods to speed up JNI transitions: Compared to normal`native`methods,`native`methods that are annotated with @`FastNative`use faster JNI transitions from managed code to the native code and back. |
+| [FastNative](../dalvik/annotation/optimization/FastNative.md))`()` An ART runtime built-in optimization for`native`methods to speed up JNI transitions: Compared to normal`native`methods,`native`methods that are annotated with @`FastNative`use faster JNI transitions from managed code to the native code and back. |
 
 ## Public constructors
 
@@ -54,7 +54,7 @@ For performance critical methods that need this annotation, it is strongly recom
 
 The @`FastNative`optimization was implemented for system use since Android 8 and became CTS-tested public API in Android 14. Developers aiming for maximum compatibility should avoid calling @`FastNative`methods on Android 13-. The optimization is likely to work also on Android 8-13 devices (after all, it was used in the system, albeit without the strong CTS guarantees), especially those that use unmodified versions of ART, such as Android 12+ devices with the official ART Module. The built-in dynamic JNI linking is working only in Android 12+, the explicit registration with JNI`RegisterNatives`is strictly required for running on Android versions 8-11. The annotation is ignored on Android 7-.
 
-**Deadlock Warning:** As a rule of thumb, any native locks acquired in a @ [FastNative](https://developer.android.com/reference/kotlin/dalvik/annotation/optimization/FastNative#) call (despite the above warning that this is an unbounded operation that can block GC for a long time) must be released before returning to managed code.
+**Deadlock Warning:** As a rule of thumb, any native locks acquired in a @ [FastNative](../dalvik/annotation/optimization/FastNative.md) call (despite the above warning that this is an unbounded operation that can block GC for a long time) must be released before returning to managed code.
 
 Say some code does:` fast_jni_call_to_grab_a_lock(); does_some_java_work(); fast_jni_call_to_release_a_lock(); `
 

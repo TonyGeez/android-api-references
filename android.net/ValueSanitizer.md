@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ValueSanitizer
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/UrlQuerySanitizer.ValueSanitizer "View this page in Java") 
+Kotlin| [Java](../android/net/UrlQuerySanitizer.ValueSanitizer.md) 
 | --- | --- |
 
 ```
 interface ValueSanitizer
 ```
 
-| [android.net.UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer#) |
+| [android.net.UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md) |
 
-| Known Direct Subclasses [UrlQuerySanitizer.IllegalCharacterValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer) |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [UrlQuerySanitizer.IllegalCharacterValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer) | Sanitize values based on which characters they contain. | |
+| Known Direct Subclasses [UrlQuerySanitizer.IllegalCharacterValueSanitizer](../android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer.md) |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [UrlQuerySanitizer.IllegalCharacterValueSanitizer](../android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer.md) | Sanitize values based on which characters they contain. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A functor used to sanitize a single query value.
@@ -22,7 +22,7 @@ A functor used to sanitize a single query value.
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [sanitize](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer#sanitize(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sanitize an unencoded value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [sanitize](../android/net/UrlQuerySanitizer.ValueSanitizer.md))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sanitize an unencoded value. |
 
 ## Public methods
 

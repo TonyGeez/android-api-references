@@ -10,7 +10,7 @@ class KeyedFrequencyCap : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.common.KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#) |
+| ↳ | [android.adservices.common.KeyedFrequencyCap](../android/adservices/common/KeyedFrequencyCap.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -37,7 +37,7 @@ Frequency caps define the maximum rate an event can occur within a given time in
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` objects contain the same information. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getAdCounterKey()()` Returns the ad counter key that the frequency cap is applied to. |
 | --- | --- |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getInterval()()` Returns the interval, as a `https://developer.android.com/reference/kotlin/java/time/Duration.html#` which will be truncated to the nearest second, over which the frequency cap is calculated. |
+| [Duration](../java/time/Duration.md) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getInterval()()` Returns the interval, as a `https://developer.android.com/reference/kotlin/java/time/Duration.html#` which will be truncated to the nearest second, over which the frequency cap is calculated. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getMaxCount()()` Returns the maximum count of event occurrences allowed within a given time interval. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` object's data. |
 | --- | --- |
@@ -46,7 +46,7 @@ Frequency caps define the maximum rate an event can occur within a given time in
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [KeyedFrequencyCap](https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [KeyedFrequencyCap](../android/adservices/common/KeyedFrequencyCap.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -198,7 +198,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

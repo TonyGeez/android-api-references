@@ -2,16 +2,16 @@
 
 # android.companion.virtual
 
-Kotlin| [Java](https://developer.android.com/reference/android/companion/virtual/package-summary "View this page in Java")
+Kotlin| [Java](../android/companion/virtual/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [VirtualDeviceListener](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener) | Listener for changes in the available virtual devices. |
+| [VirtualDeviceListener](../android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.md) | Listener for changes in the available virtual devices. |
 | --- | --- |
 
 ## Classes
 
-| [VirtualDevice](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice) | Details of a particular virtual device. |
+| [VirtualDevice](../android/companion/virtual/VirtualDevice.md) | Details of a particular virtual device. |
 | --- | --- |
-| [VirtualDeviceManager](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager) | System level service for creation and management of virtual devices. |
+| [VirtualDeviceManager](../android/companion/virtual/VirtualDeviceManager.md) | System level service for creation and management of virtual devices. |

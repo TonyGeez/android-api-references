@@ -5,18 +5,18 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # SmallTest
 
-Kotlin| [Java](https://developer.android.com/reference/android/test/suitebuilder/annotation/SmallTest "View this page in Java") 
+Kotlin| [Java](../android/test/suitebuilder/annotation/SmallTest.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class SmallTest
 ```
 
-| [android.test.suitebuilder.annotation.SmallTest](https://developer.android.com/reference/kotlin/android/test/suitebuilder/annotation/SmallTest#) |
+| [android.test.suitebuilder.annotation.SmallTest](../android/test/suitebuilder/annotation/SmallTest.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
-| Use [SmallTest](https://developer.android.com/reference/android/support/test/filters/SmallTest.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
+| Use [SmallTest](../android/support/test/filters/SmallTest.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
 
 Marks a test that should run as part of the small tests.
 
@@ -24,7 +24,7 @@ Marks a test that should run as part of the small tests.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SmallTest](https://developer.android.com/reference/kotlin/android/test/suitebuilder/annotation/SmallTest#SmallTest())`()` Marks a test that should run as part of the small tests. |
+| [SmallTest](../android/test/suitebuilder/annotation/SmallTest.md))`()` Marks a test that should run as part of the small tests. |
 
 ## Public constructors
 
@@ -37,6 +37,6 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 SmallTest()
 ```
 
-**Deprecated:** *Use [SmallTest](https://developer.android.com/reference/android/support/test/filters/SmallTest.html) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).*
+**Deprecated:** *Use [SmallTest](../android/support/test/filters/SmallTest.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).*
 
 Marks a test that should run as part of the small tests.

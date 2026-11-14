@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # GestureLibrary
 
-Kotlin| [Java](https://developer.android.com/reference/android/gesture/GestureLibrary "View this page in Java") 
+Kotlin| [Java](../android/gesture/GestureLibrary.md) 
 | --- | --- |
 
 ```
@@ -13,37 +13,37 @@ abstract class GestureLibrary
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#) |
+| ↳ | [android.gesture.GestureLibrary](../android/gesture/GestureLibrary.md) |
 
 ## Summary
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------|---|
-| [GestureLibrary](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#GestureLibrary())`()` <br /> |
+| [GestureLibrary](../android/gesture/GestureLibrary.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addGesture](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#addGesture(kotlin.String,%20android.gesture.Gesture))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`)` <br /> |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getGestureEntries](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#getGestureEntries())`()` <br /> |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!\>! | [getGestures](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#getGestures(kotlin.String))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addGesture](../android/gesture/GestureLibrary.md))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `gesture:` ` [Gesture](../android/gesture/Gesture.md)!`)` <br /> |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getGestureEntries](../android/gesture/GestureLibrary.md))`()` <br /> |
+| open [ArrayList](../java/util/ArrayList.md)\< [Gesture](../android/gesture/Gesture.md)!\>! | [getGestures](../android/gesture/GestureLibrary.md))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrientationStyle](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#getOrientationStyle())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSequenceType](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#getSequenceType())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#isReadOnly())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrientationStyle](../android/gesture/GestureLibrary.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSequenceType](../android/gesture/GestureLibrary.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../android/gesture/GestureLibrary.md))`()` <br /> |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [load](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#load())`()` <br /> |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Prediction](https://developer.android.com/reference/kotlin/android/gesture/Prediction)!\>! | [recognize](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#recognize(android.gesture.Gesture))`(`gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeEntry](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#removeEntry(kotlin.String))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [load](../android/gesture/GestureLibrary.md))`()` <br /> |
+| open [ArrayList](../java/util/ArrayList.md)\< [Prediction](../android/gesture/Prediction.md)!\>! | [recognize](../android/gesture/GestureLibrary.md))`(`gesture:` ` [Gesture](../android/gesture/Gesture.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeEntry](../android/gesture/GestureLibrary.md))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeGesture](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#removeGesture(kotlin.String,%20android.gesture.Gesture))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `gesture:` ` [Gesture](https://developer.android.com/reference/kotlin/android/gesture/Gesture)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [save](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#save())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientationStyle](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#setOrientationStyle(kotlin.Int))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeGesture](../android/gesture/GestureLibrary.md))`(`entryName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `gesture:` ` [Gesture](../android/gesture/Gesture.md)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [save](../android/gesture/GestureLibrary.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientationStyle](../android/gesture/GestureLibrary.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSequenceType](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#setSequenceType(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSequenceType](../android/gesture/GestureLibrary.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [GestureStore](https://developer.android.com/reference/kotlin/android/gesture/GestureStore)! | [mStore](https://developer.android.com/reference/kotlin/android/gesture/GestureLibrary#mStore:android.gesture.GestureStore) <br /> |
+| [GestureStore](../android/gesture/GestureStore.md)! | [mStore](../android/gesture/GestureLibrary.md) <br /> |
 
 ## Protected constructors
 

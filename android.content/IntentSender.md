@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # IntentSender
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/IntentSender "View this page in Java") 
+Kotlin| [Java](../android/content/IntentSender.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class IntentSender : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender#) |
+| ↳ | [android.content.IntentSender](../android/content/IntentSender.md) |
 
 A description of an Intent and target action to perform with it. The returned object can be handed to other applications so that they can perform the action you described on your behalf at a later time.
 
@@ -21,43 +21,43 @@ By giving a IntentSender to another application, you are granting it the right t
 
 A IntentSender itself is simply a reference to a token maintained by the system describing the original data used to retrieve it. This means that, even if its owning application's process is killed, the IntentSender itself will remain usable from other processes that have been given it. If the creating application later re-retrieves the same kind of IntentSender (same operation, same Intent action, data, categories, and components, and same flags), it will receive a IntentSender representing the same token if that is still valid.
 
-Instances of this class can not be made directly, but rather must be created from an existing [android.app.PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) with [PendingIntent.getIntentSender()](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getIntentSender()).
+Instances of this class can not be made directly, but rather must be created from an existing [android.app.PendingIntent](../android/app/PendingIntent.md) with [PendingIntent.getIntentSender()](../android/app/PendingIntent.md)).
 
 ## Summary
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [OnFinished](https://developer.android.com/reference/kotlin/android/content/IntentSender.OnFinished) Callback interface for discovering when a send operation has completed. |
-| open | [SendIntentException](https://developer.android.com/reference/kotlin/android/content/IntentSender.SendIntentException) Exception thrown when trying to send through a PendingIntent that has been canceled or is otherwise no longer able to execute the request. |
+| abstract | [OnFinished](../android/content/IntentSender.OnFinished.md) Callback interface for discovering when a send operation has completed. |
+| open | [SendIntentException](../android/content/IntentSender.SendIntentException.md) Exception thrown when trying to send through a PendingIntent that has been canceled or is otherwise no longer able to execute the request. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/IntentSender#describeContents())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/IntentSender#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Comparison operator on two IntentSender objects, such that true is returned then they both represent the same operation from the same package. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCreatorPackage](https://developer.android.com/reference/kotlin/android/content/IntentSender#getCreatorPackage())`()` Return the package name of the application that created this IntentSender, that is the identity under which you will actually be sending the Intent. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/IntentSender.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/content/IntentSender.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Comparison operator on two IntentSender objects, such that true is returned then they both represent the same operation from the same package. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCreatorPackage](../android/content/IntentSender.md))`()` Return the package name of the application that created this IntentSender, that is the identity under which you will actually be sending the Intent. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCreatorUid](https://developer.android.com/reference/kotlin/android/content/IntentSender#getCreatorUid())`()` Return the uid of the application that created this PendingIntent, that is the identity under which you will actually be sending the Intent. |
-| open [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)! | [getCreatorUserHandle](https://developer.android.com/reference/kotlin/android/content/IntentSender#getCreatorUserHandle())`()` Return the user handle of the application that created this PendingIntent, that is the user under which you will actually be sending the Intent. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTargetPackage](https://developer.android.com/reference/kotlin/android/content/IntentSender#getTargetPackage())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCreatorUid](../android/content/IntentSender.md))`()` Return the uid of the application that created this PendingIntent, that is the identity under which you will actually be sending the Intent. |
+| open [UserHandle](../android/os/UserHandle.md)! | [getCreatorUserHandle](../android/content/IntentSender.md))`()` Return the user handle of the application that created this PendingIntent, that is the user under which you will actually be sending the Intent. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTargetPackage](../android/content/IntentSender.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/content/IntentSender#hashCode())`()` <br /> |
-| openstatic [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender#)! | [readIntentSenderOrNullFromParcel](https://developer.android.com/reference/kotlin/android/content/IntentSender#readIntentSenderOrNullFromParcel(android.os.Parcel))`(`in:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` Convenience function for reading either a Messenger or`null`pointer from a Parcel. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendIntent](https://developer.android.com/reference/kotlin/android/content/IntentSender#sendIntent(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20android.content.IntentSender.OnFinished,%20android.os.Handler))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent)!`, `onFinished:` ` [IntentSender.OnFinished](https://developer.android.com/reference/kotlin/android/content/IntentSender.OnFinished)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Perform the operation associated with this IntentSender, allowing the caller to specify information about the Intent to use and be notified when the send has completed. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/content/IntentSender.md))`()` <br /> |
+| openstatic [IntentSender](../android/content/IntentSender.md)! | [readIntentSenderOrNullFromParcel](../android/content/IntentSender.md))`(`in:` ` [Parcel](../android/os/Parcel.md)!`)` Convenience function for reading either a Messenger or`null`pointer from a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendIntent](../android/content/IntentSender.md))`(`context:` ` [Context](../android/content/Context.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intent:` ` [Intent](../android/content/Intent.md)!`, `onFinished:` ` [IntentSender.OnFinished](../android/content/IntentSender.OnFinished.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Perform the operation associated with this IntentSender, allowing the caller to specify information about the Intent to use and be notified when the send has completed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendIntent](https://developer.android.com/reference/kotlin/android/content/IntentSender#sendIntent(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20android.content.IntentSender.OnFinished,%20android.os.Handler,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent)!`, `onFinished:` ` [IntentSender.OnFinished](https://developer.android.com/reference/kotlin/android/content/IntentSender.OnFinished)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`, `requiredPermission:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform the operation associated with this IntentSender, allowing the caller to specify information about the Intent to use and be notified when the send has completed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendIntent](https://developer.android.com/reference/kotlin/android/content/IntentSender#sendIntent(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.content.IntentSender.OnFinished))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context)?`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent)?`, `requiredPermission:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `options:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?`, `onFinished:` ` [IntentSender.OnFinished](https://developer.android.com/reference/kotlin/android/content/IntentSender.OnFinished)?`)` Perform the operation associated with this IntentSender, allowing the caller to specify information about the Intent to use and be notified when the send has completed. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/IntentSender#toString())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendIntent](../android/content/IntentSender.md))`(`context:` ` [Context](../android/content/Context.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intent:` ` [Intent](../android/content/Intent.md)!`, `onFinished:` ` [IntentSender.OnFinished](../android/content/IntentSender.OnFinished.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`, `requiredPermission:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform the operation associated with this IntentSender, allowing the caller to specify information about the Intent to use and be notified when the send has completed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendIntent](../android/content/IntentSender.md))`(`context:` ` [Context](../android/content/Context.md)?`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intent:` ` [Intent](../android/content/Intent.md)?`, `requiredPermission:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `options:` ` [Bundle](../android/os/Bundle.md)?`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)?`, `onFinished:` ` [IntentSender.OnFinished](../android/content/IntentSender.OnFinished.md)?`)` Perform the operation associated with this IntentSender, allowing the caller to specify information about the Intent to use and be notified when the send has completed. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/IntentSender.md))`()` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeIntentSenderOrNullToParcel](https://developer.android.com/reference/kotlin/android/content/IntentSender#writeIntentSenderOrNullToParcel(android.content.IntentSender,%20android.os.Parcel))`(`sender:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender#)!`, `out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` Convenience function for writing either a IntentSender or`null`pointer to a Parcel. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/IntentSender#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeIntentSenderOrNullToParcel](../android/content/IntentSender.md))`(`sender:` ` [IntentSender](../android/content/IntentSender.md)!`, `out:` ` [Parcel](../android/os/Parcel.md)!`)` Convenience function for writing either a IntentSender or`null`pointer to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/IntentSender.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/IntentSender#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [IntentSender](../android/content/IntentSender.md)!\> | [CREATOR](../android/content/IntentSender.md) <br /> |
 
 ## Public methods
 
@@ -71,7 +71,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -128,11 +128,11 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun getCreatorUserHandle(): UserHandle!
 ```
 
-Return the user handle of the application that created this PendingIntent, that is the user under which you will actually be sending the Intent. The returned UserHandle is supplied by the system, so that an application can not spoof its user. See [Process.myUserHandle()](https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle())for more explanation of user handles.
+Return the user handle of the application that created this PendingIntent, that is the user under which you will actually be sending the Intent. The returned UserHandle is supplied by the system, so that an application can not spoof its user. See [Process.myUserHandle()](../android/os/Process.md))for more explanation of user handles.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)! | The user handle of the PendingIntent,`null`if there is none associated with it. |
+| [UserHandle](../android/os/UserHandle.md)! | The user handle of the PendingIntent,`null`if there is none associated with it. |
 
 ### getTargetPackage
 
@@ -143,7 +143,7 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 open fun getTargetPackage(): String!
 ```
 
-**Deprecated:** *Renamed to [getCreatorPackage()](https://developer.android.com/reference/kotlin/android/content/IntentSender#getCreatorPackage()).* 
+**Deprecated:** *Renamed to [getCreatorPackage()](../android/content/IntentSender.md)).* 
 
 ### hashCode
 
@@ -165,15 +165,15 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 open static fun readIntentSenderOrNullFromParcel(in: Parcel!): IntentSender!
 ```
 
-Convenience function for reading either a Messenger or`null`pointer from a Parcel. You must have previously written the Messenger with [writeIntentSenderOrNullToParcel](https://developer.android.com/reference/kotlin/android/content/IntentSender#writeIntentSenderOrNullToParcel(android.content.IntentSender,%20android.os.Parcel)).
+Convenience function for reading either a Messenger or`null`pointer from a Parcel. You must have previously written the Messenger with [writeIntentSenderOrNullToParcel](../android/content/IntentSender.md)).
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------------|
-| `in` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!:The Parcel containing the written Messenger. |
+| `in` | [Parcel](../android/os/Parcel.md)!:The Parcel containing the written Messenger. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender#)! | Returns the Messenger read from the Parcel, or @code null} if @code null} had been written. |
+| [IntentSender](../android/content/IntentSender.md)! | Returns the Messenger read from the Parcel, or @code null} if @code null} had been written. |
 
 ### sendIntent
 
@@ -193,12 +193,12 @@ Perform the operation associated with this IntentSender, allowing the caller to 
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context)!:The Context of the caller. This may be`null`if intent is also`null`. |
+| `context` | [Context](../android/content/Context.md)!:The Context of the caller. This may be`null`if intent is also`null`. |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Result code to supply back to the IntentSender's target. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent)!:Additional Intent data. See [Intent.fillIn()](https://developer.android.com/reference/kotlin/android/content/Intent#fillIn(android.content.Intent,%20kotlin.Int))for information on how this is applied to the original Intent. Use`null`to not modify the original Intent. |
+| `intent` | [Intent](../android/content/Intent.md)!:Additional Intent data. See [Intent.fillIn()](../android/content/Intent.md))for information on how this is applied to the original Intent. Use`null`to not modify the original Intent. |
 | --- | --- |
-| `onFinished` | [IntentSender.OnFinished](https://developer.android.com/reference/kotlin/android/content/IntentSender.OnFinished)!:The object to call back on when the send has completed, or`null`for no callback. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:Handler identifying the thread on which the callback should happen. If`null`, the callback will happen from the thread pool of the process. |
+| `onFinished` | [IntentSender.OnFinished](../android/content/IntentSender.OnFinished.md)!:The object to call back on when the send has completed, or`null`for no callback. |
+| `handler` | [Handler](../android/os/Handler.md)!:Handler identifying the thread on which the callback should happen. If`null`, the callback will happen from the thread pool of the process. |
 
 | Exceptions ||
 |----------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -223,13 +223,13 @@ Perform the operation associated with this IntentSender, allowing the caller to 
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context)!:The Context of the caller. This may be`null`if intent is also`null`. |
+| `context` | [Context](../android/content/Context.md)!:The Context of the caller. This may be`null`if intent is also`null`. |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Result code to supply back to the IntentSender's target. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent)!:Additional Intent data. See [Intent.fillIn()](https://developer.android.com/reference/kotlin/android/content/Intent#fillIn(android.content.Intent,%20kotlin.Int))for information on how this is applied to the original Intent. Use`null`to not modify the original Intent. |
+| `intent` | [Intent](../android/content/Intent.md)!:Additional Intent data. See [Intent.fillIn()](../android/content/Intent.md))for information on how this is applied to the original Intent. Use`null`to not modify the original Intent. |
 | --- | --- |
-| `onFinished` | [IntentSender.OnFinished](https://developer.android.com/reference/kotlin/android/content/IntentSender.OnFinished)!:The object to call back on when the send has completed, or`null`for no callback. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:Handler identifying the thread on which the callback should happen. If`null`, the callback will happen from the thread pool of the process. |
-| `requiredPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Name of permission that a recipient of the PendingIntent is required to hold. This is only valid for broadcast intents, and corresponds to the permission argument in [Context.sendOrderedBroadcast(Intent, String)](https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)). If`null`, no permission is required. |
+| `onFinished` | [IntentSender.OnFinished](../android/content/IntentSender.OnFinished.md)!:The object to call back on when the send has completed, or`null`for no callback. |
+| `handler` | [Handler](../android/os/Handler.md)!:Handler identifying the thread on which the callback should happen. If`null`, the callback will happen from the thread pool of the process. |
+| `requiredPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Name of permission that a recipient of the PendingIntent is required to hold. This is only valid for broadcast intents, and corresponds to the permission argument in [Context.sendOrderedBroadcast(Intent, String)](../android/content/Context.md)). If`null`, no permission is required. |
 | --- | --- |
 
 | Exceptions ||
@@ -256,15 +256,15 @@ Perform the operation associated with this IntentSender, allowing the caller to 
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context)?:The Context of the caller. This may be`null`if intent is also`null`. |
+| `context` | [Context](../android/content/Context.md)?:The Context of the caller. This may be`null`if intent is also`null`. |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Result code to supply back to the IntentSender's target. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent)?:Additional Intent data. See [Intent.fillIn()](https://developer.android.com/reference/kotlin/android/content/Intent#fillIn(android.content.Intent,%20kotlin.Int))for information on how this is applied to the original Intent. Use`null`to not modify the original Intent. |
+| `intent` | [Intent](../android/content/Intent.md)?:Additional Intent data. See [Intent.fillIn()](../android/content/Intent.md))for information on how this is applied to the original Intent. Use`null`to not modify the original Intent. |
 | --- | --- |
-| `onFinished` | [IntentSender.OnFinished](https://developer.android.com/reference/kotlin/android/content/IntentSender.OnFinished)?:The object to call back on when the send has completed, or`null`for no callback. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?:Executor identifying the thread on which the callback should happen. If`null`, the callback will happen from the thread pool of the process. |
-| `requiredPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Name of permission that a recipient of the PendingIntent is required to hold. This is only valid for broadcast intents, and corresponds to the permission argument in [Context.sendOrderedBroadcast(Intent, String)](https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)). If`null`, no permission is required. |
+| `onFinished` | [IntentSender.OnFinished](../android/content/IntentSender.OnFinished.md)?:The object to call back on when the send has completed, or`null`for no callback. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?:Executor identifying the thread on which the callback should happen. If`null`, the callback will happen from the thread pool of the process. |
+| `requiredPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Name of permission that a recipient of the PendingIntent is required to hold. This is only valid for broadcast intents, and corresponds to the permission argument in [Context.sendOrderedBroadcast(Intent, String)](../android/content/Context.md)). If`null`, no permission is required. |
 | --- | --- |
-| `options` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:Additional options the caller would like to provide to modify the sending behavior. Typically built from using [ActivityOptions](https://developer.android.com/reference/kotlin/android/app/ActivityOptions.html#) to apply to an activity start. This value may be`null`. |
+| `options` | [Bundle](../android/os/Bundle.md)?:Additional options the caller would like to provide to modify the sending behavior. Typically built from using [ActivityOptions](../android/app/ActivityOptions.md) to apply to an activity start. This value may be`null`. |
 
 | Exceptions ||
 |----------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -293,12 +293,12 @@ open static fun writeIntentSenderOrNullToParcel(
 ): Unit
 ```
 
-Convenience function for writing either a IntentSender or`null`pointer to a Parcel. You must use this with [readIntentSenderOrNullFromParcel](https://developer.android.com/reference/kotlin/android/content/IntentSender#readIntentSenderOrNullFromParcel(android.os.Parcel))for later reading it.
+Convenience function for writing either a IntentSender or`null`pointer to a Parcel. You must use this with [readIntentSenderOrNullFromParcel](../android/content/IntentSender.md))for later reading it.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `sender` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender#)!:The IntentSender to write, or`null`. |
-| `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!:Where to write the IntentSender. |
+| `sender` | [IntentSender](../android/content/IntentSender.md)!:The IntentSender to write, or`null`. |
+| `out` | [Parcel](../android/os/Parcel.md)!:Where to write the IntentSender. |
 
 ### writeToParcel
 
@@ -314,7 +314,7 @@ open fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

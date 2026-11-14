@@ -8,7 +8,7 @@ open class NetworkSecurityPolicy
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.NetworkSecurityPolicy](https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#) |
+| ↳ | [android.security.NetworkSecurityPolicy](../android/security/NetworkSecurityPolicy.md) |
 
 Network security policy.
 
@@ -32,7 +32,7 @@ Network stacks/components should honor this policy to make it possible to centra
 | Public methods ||
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getDomainEncryptionMode(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the domain encryption mode the app has chosen for the given `hostname`, including the setting for Encrypted Client Hello. |
-| open static [NetworkSecurityPolicy](https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getInstance()()` Gets the policy for this process. |
+| open static [NetworkSecurityPolicy](../android/security/NetworkSecurityPolicy.md) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getInstance()()` Gets the policy for this process. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCertificateTransparencyVerificationRequired(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if Certificate Transparency information is required to be verified by the client in TLS connections to `hostname`. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCleartextTrafficPermitted()()` Returns whether cleartext network traffic (e.g. HTTP, FTP, WebSockets, XMPP, IMAP, SMTP -- without TLS or STARTTLS) is permitted for all network communication from this process. |

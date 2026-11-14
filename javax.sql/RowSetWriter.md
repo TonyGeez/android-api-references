@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface RowSetWriter
 ```
 
-| [javax.sql.RowSetWriter](https://developer.android.com/reference/kotlin/javax/sql/RowSetWriter#) |
+| [javax.sql.RowSetWriter](../javax/sql/RowSetWriter.md) |
 
 An object that implements the`RowSetWriter`interface, called a*writer* . A writer may be registered with a`RowSet`object that supports the reader/writer paradigm.
 
@@ -20,7 +20,7 @@ If the data to be updated has already been changed in the data source, there is 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [writeData](https://developer.android.com/reference/kotlin/javax/sql/RowSetWriter#writeData(javax.sql.RowSetInternal))`(`caller:` ` [RowSetInternal](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal)!`)` Writes the changes in this`RowSetWriter`object's rowset back to the data source from which it got its data. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [writeData](../javax/sql/RowSetWriter.md))`(`caller:` ` [RowSetInternal](../javax/sql/RowSetInternal.md)!`)` Writes the changes in this`RowSetWriter`object's rowset back to the data source from which it got its data. |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ Writes the changes in this`RowSetWriter`object's rowset back to the data source 
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caller` | [RowSetInternal](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal)!:the`RowSet`object (1) that has implemented the`RowSetInternal`interface, (2) with which this writer is registered, and (3) that called this method internally |
+| `caller` | [RowSetInternal](../javax/sql/RowSetInternal.md)!:the`RowSet`object (1) that has implemented the`RowSetInternal`interface, (2) with which this writer is registered, and (3) that called this method internally |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|

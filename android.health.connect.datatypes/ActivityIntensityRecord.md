@@ -9,9 +9,9 @@ class ActivityIntensityRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
-| | | ↳ | [android.health.connect.datatypes.ActivityIntensityRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.ActivityIntensityRecord](../android/health/connect/datatypes/ActivityIntensityRecord.md) |
 | --- | --- | --- | --- |
 
 Represents intensity of an activity.
@@ -49,11 +49,11 @@ Each record requires the start time, the end time and the activity intensity typ
 
 | Properties ||
 |---|---|
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of activity intensity regardless of the type using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#INTENSITY_MINUTES_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the number of weighted intensity minutes using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#MODERATE_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of moderate activity intensity using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Duration](../java/time/Duration.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of activity intensity regardless of the type using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#INTENSITY_MINUTES_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the number of weighted intensity minutes using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Duration](../java/time/Duration.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#MODERATE_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of moderate activity intensity using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 | --- | --- |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#VIGOROUS_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of vigorous activity intensity using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Duration](../java/time/Duration.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActivityIntensityRecord#VIGOROUS_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve the total duration of vigorous activity intensity using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 
 ## Constants
 

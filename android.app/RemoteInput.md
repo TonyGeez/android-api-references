@@ -4,7 +4,7 @@ Added in [API level 20](https://developer.android.com/guide/topics/manifest/uses
 
 # RemoteInput
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/RemoteInput "View this page in Java") 
+Kotlin| [Java](../android/app/RemoteInput.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ class RemoteInput : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#) |
+| ↳ | [android.app.RemoteInput](../android/app/RemoteInput.md) |
 
-A`RemoteInput`object specifies input to be collected from a user to be passed along with an intent inside a [android.app.PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent) that is sent. Always use [RemoteInput.Builder](https://developer.android.com/reference/kotlin/android/app/RemoteInput.Builder) to create instances of this class.
+A`RemoteInput`object specifies input to be collected from a user to be passed along with an intent inside a [android.app.PendingIntent](../android/app/PendingIntent.md) that is sent. Always use [RemoteInput.Builder](../android/app/RemoteInput.Builder.md) to create instances of this class.
 
 See [Replying to notifications](https://developer.android.com/guide/topics/ui/notifiers/notifications.html#direct) for more information on how to use this class.
 
-The following example adds a`RemoteInput`to a [Notification.Action](https://developer.android.com/reference/kotlin/android/app/Notification.Action), sets the result key as`quick_reply`, and sets the label as`Quick reply`. Users are prompted to input a response when they trigger the action. The results are sent along with the intent and can be retrieved with the result key (provided to the [Builder](https://developer.android.com/reference/kotlin/android/app/RemoteInput.Builder) constructor) from the Bundle returned by [getResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsFromIntent(android.content.Intent)). 
+The following example adds a`RemoteInput`to a [Notification.Action](../android/app/Notification.Action.md), sets the result key as`quick_reply`, and sets the label as`Quick reply`. Users are prompted to input a response when they trigger the action. The results are sent along with the intent and can be retrieved with the result key (provided to the [Builder](../android/app/RemoteInput.Builder.md) constructor) from the Bundle returned by [getResultsFromIntent](../android/app/RemoteInput.md)). 
 
 ```kotlin
 public static final String KEY_QUICK_REPLY_TEXT = "quick_reply";
@@ -30,7 +30,7 @@ public static final String KEY_QUICK_REPLY_TEXT = "quick_reply";
           .build();
 ```
 
-When the [android.app.PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent) is fired, the intent inside will contain the input results if collected. To access these results, use the [getResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsFromIntent(android.content.Intent))function. The result values will present under the result key passed to the [Builder](https://developer.android.com/reference/kotlin/android/app/RemoteInput.Builder) constructor. 
+When the [android.app.PendingIntent](../android/app/PendingIntent.md) is fired, the intent inside will contain the input results if collected. To access these results, use the [getResultsFromIntent](../android/app/RemoteInput.md))function. The result values will present under the result key passed to the [Builder](../android/app/RemoteInput.Builder.md) constructor. 
 
 ```kotlin
 public static final String KEY_QUICK_REPLY_TEXT = "quick_reply";
@@ -44,51 +44,51 @@ public static final String KEY_QUICK_REPLY_TEXT = "quick_reply";
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/app/RemoteInput.Builder) Builder class for [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#) objects. |
+| | [Builder](../android/app/RemoteInput.Builder.md) Builder class for [RemoteInput](../android/app/RemoteInput.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDIT_CHOICES_BEFORE_SENDING_AUTO](https://developer.android.com/reference/kotlin/android/app/RemoteInput#EDIT_CHOICES_BEFORE_SENDING_AUTO:kotlin.Int) The platform will determine whether choices will be edited before being sent to the app. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDIT_CHOICES_BEFORE_SENDING_DISABLED](https://developer.android.com/reference/kotlin/android/app/RemoteInput#EDIT_CHOICES_BEFORE_SENDING_DISABLED:kotlin.Int) Tapping on a choice should send the input immediately, without letting the user edit it. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDIT_CHOICES_BEFORE_SENDING_ENABLED](https://developer.android.com/reference/kotlin/android/app/RemoteInput#EDIT_CHOICES_BEFORE_SENDING_ENABLED:kotlin.Int) Tapping on a choice should let the user edit the input before it is sent to the app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDIT_CHOICES_BEFORE_SENDING_AUTO](../android/app/RemoteInput.md) The platform will determine whether choices will be edited before being sent to the app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDIT_CHOICES_BEFORE_SENDING_DISABLED](../android/app/RemoteInput.md) Tapping on a choice should send the input immediately, without letting the user edit it. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDIT_CHOICES_BEFORE_SENDING_ENABLED](../android/app/RemoteInput.md) Tapping on a choice should let the user edit the input before it is sent to the app. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_RESULTS_DATA](https://developer.android.com/reference/kotlin/android/app/RemoteInput#EXTRA_RESULTS_DATA:kotlin.String) Extra added to a clip data intent object to hold the text results bundle. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESULTS_CLIP_LABEL](https://developer.android.com/reference/kotlin/android/app/RemoteInput#RESULTS_CLIP_LABEL:kotlin.String) Label used to denote the clip data type used for remote input transport |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CHOICE](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_CHOICE:kotlin.Int) The user selected one of the choices from [getChoices](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getChoices()). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_RESULTS_DATA](../android/app/RemoteInput.md) Extra added to a clip data intent object to hold the text results bundle. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESULTS_CLIP_LABEL](../android/app/RemoteInput.md) Label used to denote the clip data type used for remote input transport |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_CHOICE](../android/app/RemoteInput.md) The user selected one of the choices from [getChoices](../android/app/RemoteInput.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_FREE_FORM_INPUT](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_FREE_FORM_INPUT:kotlin.Int) The user manually entered the data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_FREE_FORM_INPUT](../android/app/RemoteInput.md) The user manually entered the data. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addDataResultToIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#addDataResultToIntent(android.app.RemoteInput,%20android.content.Intent,%20kotlin.collections.MutableMap))`(`remoteInput:` ` [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#)!`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`, `results:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!>!`)` Same as [addResultsToIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#addResultsToIntent(kotlin.Array,%20android.content.Intent,%20android.os.Bundle))but for setting data results. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addResultsToIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#addResultsToIntent(kotlin.Array,%20android.content.Intent,%20android.os.Bundle))`(`remoteInputs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#)!>!`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`, `results:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Populate an intent object with the text results gathered from remote input. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/RemoteInput#describeContents())`()` <br /> |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addDataResultToIntent](../android/app/RemoteInput.md))`(`remoteInput:` ` [RemoteInput](../android/app/RemoteInput.md)!`, `intent:` ` [Intent](../android/content/Intent.md)!`, `results:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Uri](../android/net/Uri.md)!>!`)` Same as [addResultsToIntent](../android/app/RemoteInput.md))but for setting data results. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addResultsToIntent](../android/app/RemoteInput.md))`(`remoteInputs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RemoteInput](../android/app/RemoteInput.md)!>!`, `intent:` ` [Intent](../android/content/Intent.md)!`, `results:` ` [Bundle](../android/os/Bundle.md)!`)` Populate an intent object with the text results gathered from remote input. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/RemoteInput.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowFreeFormInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getAllowFreeFormInput())`()` Get whether or not users can provide an arbitrary value for input. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAllowedDataTypes](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getAllowedDataTypes())`()` Get possible non-textual inputs that are accepted. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | [getChoices](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getChoices())`()` Get possible input choices. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowFreeFormInput](../android/app/RemoteInput.md))`()` Get whether or not users can provide an arbitrary value for input. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAllowedDataTypes](../android/app/RemoteInput.md))`()` Get possible non-textual inputs that are accepted. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | [getChoices](../android/app/RemoteInput.md))`()` Get possible input choices. |
 | --- | --- |
-| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>! | [getDataResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getDataResultsFromIntent(android.content.Intent,%20kotlin.String))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`, `remoteInputResultKey:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Similar as [getResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsFromIntent(android.content.Intent))but retrieves data results for a specific RemoteInput result. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEditChoicesBeforeSending](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getEditChoicesBeforeSending())`()` Gets whether tapping on a choice should let the user edit the input before it is sent to the app. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getExtras](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getExtras())`()` Get additional metadata carried around with this remote input. |
+| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Uri](../android/net/Uri.md)!\>! | [getDataResultsFromIntent](../android/app/RemoteInput.md))`(`intent:` ` [Intent](../android/content/Intent.md)!`, `remoteInputResultKey:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Similar as [getResultsFromIntent](../android/app/RemoteInput.md))but retrieves data results for a specific RemoteInput result. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEditChoicesBeforeSending](../android/app/RemoteInput.md))`()` Gets whether tapping on a choice should let the user edit the input before it is sent to the app. |
+| [Bundle](../android/os/Bundle.md)! | [getExtras](../android/app/RemoteInput.md))`()` Get additional metadata carried around with this remote input. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getLabel](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getLabel())`()` Get the label to display to users when collecting this input. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResultKey](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultKey())`()` Get the key that the result of this input will be set in from the Bundle returned by [getResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsFromIntent(android.content.Intent))when the [android.app.PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent) is sent. |
-| static [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsFromIntent(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Get the remote input text results bundle from an intent. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getLabel](../android/app/RemoteInput.md))`()` Get the label to display to users when collecting this input. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResultKey](../android/app/RemoteInput.md))`()` Get the key that the result of this input will be set in from the Bundle returned by [getResultsFromIntent](../android/app/RemoteInput.md))when the [android.app.PendingIntent](../android/app/PendingIntent.md) is sent. |
+| static [Bundle](../android/os/Bundle.md)! | [getResultsFromIntent](../android/app/RemoteInput.md))`(`intent:` ` [Intent](../android/content/Intent.md)!`)` Get the remote input text results bundle from an intent. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultsSource](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsSource(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Get the source of the RemoteInput results. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDataOnly](https://developer.android.com/reference/kotlin/android/app/RemoteInput#isDataOnly())`()` Returns true if the input only accepts data, meaning [getAllowFreeFormInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getAllowFreeFormInput())is false, [getChoices](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getChoices())is null or empty, and [getAllowedDataTypes](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getAllowedDataTypes())is non-null and not empty. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultsSource](https://developer.android.com/reference/kotlin/android/app/RemoteInput#setResultsSource(android.content.Intent,%20kotlin.Int))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the source of the RemoteInput results. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultsSource](../android/app/RemoteInput.md))`(`intent:` ` [Intent](../android/content/Intent.md)!`)` Get the source of the RemoteInput results. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDataOnly](../android/app/RemoteInput.md))`()` Returns true if the input only accepts data, meaning [getAllowFreeFormInput](../android/app/RemoteInput.md))is false, [getChoices](../android/app/RemoteInput.md))is null or empty, and [getAllowedDataTypes](../android/app/RemoteInput.md))is non-null and not empty. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultsSource](../android/app/RemoteInput.md))`(`intent:` ` [Intent](../android/content/Intent.md)!`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the source of the RemoteInput results. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/RemoteInput#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/RemoteInput.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/app/RemoteInput#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RemoteInput](../android/app/RemoteInput.md)!\> | [CREATOR](../android/app/RemoteInput.md) <br /> |
 
 ## Constants
 
@@ -160,7 +160,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val SOURCE_CHOICE: Int
 ```
 
-The user selected one of the choices from [getChoices](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getChoices()). 
+The user selected one of the choices from [getChoices](../android/app/RemoteInput.md)). 
 
  Value: 1
 
@@ -190,13 +190,13 @@ static fun addDataResultToIntent(
 ): Unit
 ```
 
-Same as [addResultsToIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#addResultsToIntent(kotlin.Array,%20android.content.Intent,%20android.os.Bundle))but for setting data results. This is used for inputs that accept non-textual results (see [Builder.setAllowDataType](https://developer.android.com/reference/kotlin/android/app/RemoteInput.Builder#setAllowDataType(kotlin.String,%20kotlin.Boolean))). Only one result can be provided for every mime type accepted by the RemoteInput. If multiple inputs of the same mime type are expected then multiple RemoteInputs should be used.
+Same as [addResultsToIntent](../android/app/RemoteInput.md))but for setting data results. This is used for inputs that accept non-textual results (see [Builder.setAllowDataType](../android/app/RemoteInput.Builder.md))). Only one result can be provided for every mime type accepted by the RemoteInput. If multiple inputs of the same mime type are expected then multiple RemoteInputs should be used.
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `remoteInput` | [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#)!:The remote input for which results are being provided |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent to add remote input results to. The [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#) field of the intent will be modified to contain the results. |
-| `results` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>!:A map of mime type to the Uri result for that mime type. |
+| `remoteInput` | [RemoteInput](../android/app/RemoteInput.md)!:The remote input for which results are being provided |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent to add remote input results to. The [ClipData](../android/content/ClipData.md) field of the intent will be modified to contain the results. |
+| `results` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Uri](../android/net/Uri.md)!\>!:A map of mime type to the Uri result for that mime type. |
 | --- | --- |
 
 ### addResultsToIntent
@@ -215,9 +215,9 @@ Populate an intent object with the text results gathered from remote input. This
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `remoteInputs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#)!\>!:The remote inputs for which results are being provided |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent to add remote inputs to. The [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#) field of the intent will be modified to contain the results. |
-| `results` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:A bundle holding the remote input results. This bundle should be populated with keys matching the result keys specified in`remoteInputs`with values being the CharSequence results per key. |
+| `remoteInputs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RemoteInput](../android/app/RemoteInput.md)!\>!:The remote inputs for which results are being provided |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent to add remote inputs to. The [ClipData](../android/content/ClipData.md) field of the intent will be modified to contain the results. |
+| `results` | [Bundle](../android/os/Bundle.md)!:A bundle holding the remote input results. This bundle should be populated with keys matching the result keys specified in`remoteInputs`with values being the CharSequence results per key. |
 | --- | --- |
 
 ### describeContents
@@ -230,7 +230,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getAllowFreeFormInput
 
@@ -240,7 +240,7 @@ Added in [API level 20](https://developer.android.com/guide/topics/manifest/uses
 fun getAllowFreeFormInput(): Boolean
 ```
 
-Get whether or not users can provide an arbitrary value for input. If you set this to`false`, users must select one of the choices in [getChoices](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getChoices()). An [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) is thrown if you set this to false and [getChoices](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getChoices())returns`null`or empty. 
+Get whether or not users can provide an arbitrary value for input. If you set this to`false`, users must select one of the choices in [getChoices](../android/app/RemoteInput.md)). An [IllegalArgumentException](../java/lang/IllegalArgumentException.md) is thrown if you set this to false and [getChoices](../android/app/RemoteInput.md))returns`null`or empty. 
 
 ### getAllowedDataTypes
 
@@ -250,7 +250,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getAllowedDataTypes(): MutableSet<String!>!
 ```
 
-Get possible non-textual inputs that are accepted. This can be`null`if the input does not accept non-textual values. See [Builder.setAllowDataType](https://developer.android.com/reference/kotlin/android/app/RemoteInput.Builder#setAllowDataType(kotlin.String,%20kotlin.Boolean)). 
+Get possible non-textual inputs that are accepted. This can be`null`if the input does not accept non-textual values. See [Builder.setAllowDataType](../android/app/RemoteInput.Builder.md)). 
 
 ### getChoices
 
@@ -273,7 +273,7 @@ static fun getDataResultsFromIntent(
 ): MutableMap<String!, Uri!>!
 ```
 
-Similar as [getResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsFromIntent(android.content.Intent))but retrieves data results for a specific RemoteInput result. To retrieve a value use: 
+Similar as [getResultsFromIntent](../android/app/RemoteInput.md))but retrieves data results for a specific RemoteInput result. To retrieve a value use: 
 
 ```kotlin
 <code>Map&lt;String, Uri&gt; results =
@@ -288,7 +288,7 @@ Similar as [getResultsFromIntent](https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent object that fired in response to an action or content intent which also had one or more remote input requested. |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent object that fired in response to an action or content intent which also had one or more remote input requested. |
 | `remoteInputResultKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The result key for the RemoteInput you want results for. |
 
 ### getEditChoicesBeforeSending
@@ -303,7 +303,7 @@ Gets whether tapping on a choice should let the user edit the input before it is
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.RemoteInput#EDIT_CHOICES_BEFORE_SENDING_AUTO](https://developer.android.com/reference/kotlin/android/app/RemoteInput#EDIT_CHOICES_BEFORE_SENDING_AUTO:kotlin.Int), [android.app.RemoteInput#EDIT_CHOICES_BEFORE_SENDING_DISABLED](https://developer.android.com/reference/kotlin/android/app/RemoteInput#EDIT_CHOICES_BEFORE_SENDING_DISABLED:kotlin.Int), or [android.app.RemoteInput#EDIT_CHOICES_BEFORE_SENDING_ENABLED](https://developer.android.com/reference/kotlin/android/app/RemoteInput#EDIT_CHOICES_BEFORE_SENDING_ENABLED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.RemoteInput#EDIT_CHOICES_BEFORE_SENDING_AUTO](../android/app/RemoteInput.md), [android.app.RemoteInput#EDIT_CHOICES_BEFORE_SENDING_DISABLED](../android/app/RemoteInput.md), or [android.app.RemoteInput#EDIT_CHOICES_BEFORE_SENDING_ENABLED](../android/app/RemoteInput.md) |
 
 ### getExtras
 
@@ -333,7 +333,7 @@ Added in [API level 20](https://developer.android.com/guide/topics/manifest/uses
 fun getResultKey(): String!
 ```
 
-Get the key that the result of this input will be set in from the Bundle returned by [getResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getResultsFromIntent(android.content.Intent))when the [android.app.PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent) is sent. 
+Get the key that the result of this input will be set in from the Bundle returned by [getResultsFromIntent](../android/app/RemoteInput.md))when the [android.app.PendingIntent](../android/app/PendingIntent.md) is sent. 
 
 ### getResultsFromIntent
 
@@ -343,11 +343,11 @@ Added in [API level 20](https://developer.android.com/guide/topics/manifest/uses
 static fun getResultsFromIntent(intent: Intent!): Bundle!
 ```
 
-Get the remote input text results bundle from an intent. The returned Bundle will contain a key/value for every result key populated with text by remote input collector. Use the [Bundle.getCharSequence(String)](https://developer.android.com/reference/kotlin/android/os/Bundle.html#getCharSequence(kotlin.String))method to retrieve a value. For non-text results use [getDataResultsFromIntent](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getDataResultsFromIntent(android.content.Intent,%20kotlin.String)).
+Get the remote input text results bundle from an intent. The returned Bundle will contain a key/value for every result key populated with text by remote input collector. Use the [Bundle.getCharSequence(String)](../android/os/Bundle.md))method to retrieve a value. For non-text results use [getDataResultsFromIntent](../android/app/RemoteInput.md)).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent object that fired in response to an action or content intent which also had one or more remote input requested. |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent object that fired in response to an action or content intent which also had one or more remote input requested. |
 
 ### getResultsSource
 
@@ -361,16 +361,16 @@ Get the source of the RemoteInput results.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent object that fired in response to an action or content intent which also had one or more remote input requested. |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent object that fired in response to an action or content intent which also had one or more remote input requested. |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The source of the results. If no source was set, [SOURCE_FREE_FORM_INPUT](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_FREE_FORM_INPUT:kotlin.Int) will be returned. Value is [android.app.RemoteInput#SOURCE_FREE_FORM_INPUT](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_FREE_FORM_INPUT:kotlin.Int), or [android.app.RemoteInput#SOURCE_CHOICE](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_CHOICE:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The source of the results. If no source was set, [SOURCE_FREE_FORM_INPUT](../android/app/RemoteInput.md) will be returned. Value is [android.app.RemoteInput#SOURCE_FREE_FORM_INPUT](../android/app/RemoteInput.md), or [android.app.RemoteInput#SOURCE_CHOICE](../android/app/RemoteInput.md) |
 
 **See Also**
 
-- [#SOURCE_FREE_FORM_INPUT](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_FREE_FORM_INPUT:kotlin.Int)
-- [#SOURCE_CHOICE](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_CHOICE:kotlin.Int) 
+- [#SOURCE_FREE_FORM_INPUT](../android/app/RemoteInput.md)
+- [#SOURCE_CHOICE](../android/app/RemoteInput.md) 
 
 ### isDataOnly
 
@@ -380,7 +380,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun isDataOnly(): Boolean
 ```
 
-Returns true if the input only accepts data, meaning [getAllowFreeFormInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getAllowFreeFormInput())is false, [getChoices](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getChoices())is null or empty, and [getAllowedDataTypes](https://developer.android.com/reference/kotlin/android/app/RemoteInput#getAllowedDataTypes())is non-null and not empty. 
+Returns true if the input only accepts data, meaning [getAllowFreeFormInput](../android/app/RemoteInput.md))is false, [getChoices](../android/app/RemoteInput.md))is null or empty, and [getAllowedDataTypes](../android/app/RemoteInput.md))is non-null and not empty. 
 
 ### setResultsSource
 
@@ -393,17 +393,17 @@ static fun setResultsSource(
 ): Unit
 ```
 
-Set the source of the RemoteInput results. This method should only be called by remote input collection services (e.g. [android.service.notification.NotificationListenerService](https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#)) when sending results to a pending intent.
+Set the source of the RemoteInput results. This method should only be called by remote input collection services (e.g. [android.service.notification.NotificationListenerService](../android/service/notification/NotificationListenerService.md)) when sending results to a pending intent.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent to add remote input source to. The [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#) field of the intent will be modified to contain the source. |
-| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The source of the results. Value is [android.app.RemoteInput#SOURCE_FREE_FORM_INPUT](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_FREE_FORM_INPUT:kotlin.Int), or [android.app.RemoteInput#SOURCE_CHOICE](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_CHOICE:kotlin.Int) |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent to add remote input source to. The [ClipData](../android/content/ClipData.md) field of the intent will be modified to contain the source. |
+| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The source of the results. Value is [android.app.RemoteInput#SOURCE_FREE_FORM_INPUT](../android/app/RemoteInput.md), or [android.app.RemoteInput#SOURCE_CHOICE](../android/app/RemoteInput.md) |
 
 **See Also**
 
-- [#SOURCE_FREE_FORM_INPUT](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_FREE_FORM_INPUT:kotlin.Int)
-- [#SOURCE_CHOICE](https://developer.android.com/reference/kotlin/android/app/RemoteInput#SOURCE_CHOICE:kotlin.Int) 
+- [#SOURCE_FREE_FORM_INPUT](../android/app/RemoteInput.md)
+- [#SOURCE_CHOICE](../android/app/RemoteInput.md) 
 
 ### writeToParcel
 
@@ -419,7 +419,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

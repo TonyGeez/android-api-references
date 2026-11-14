@@ -10,7 +10,7 @@ open class FieldPosition
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition#) |
+| ↳ | [java.text.FieldPosition](../java/text/FieldPosition.md) |
 
 `FieldPosition`is a simple class used by`Format`and its subclasses to identify fields in formatted output. Fields can be identified in two ways:
 
@@ -29,23 +29,23 @@ If you are interested in the positions of all attributes in the formatted string
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition#FieldPosition(kotlin.Int))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a FieldPosition object for the given field. |
-| [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition#FieldPosition(java.text.Format.Field))`(`attribute:` ` [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field)!`)` Creates a FieldPosition object for the given field constant. |
-| [FieldPosition](https://developer.android.com/reference/kotlin/java/text/FieldPosition#FieldPosition(java.text.Format.Field,%20kotlin.Int))`(`attribute:` ` [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field)!`, `fieldID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`FieldPosition`object for the given field. |
+| [FieldPosition](../java/text/FieldPosition.md))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a FieldPosition object for the given field. |
+| [FieldPosition](../java/text/FieldPosition.md))`(`attribute:` ` [Format.Field](../java/text/Format.Field.md)!`)` Creates a FieldPosition object for the given field constant. |
+| [FieldPosition](../java/text/FieldPosition.md))`(`attribute:` ` [Format.Field](../java/text/Format.Field.md)!`, `fieldID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`FieldPosition`object for the given field. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/FieldPosition#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getBeginIndex())`()` Retrieves the index of the first character in the requested field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getEndIndex())`()` Retrieves the index of the character following the last character in the requested field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/FieldPosition.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](../java/text/FieldPosition.md))`()` Retrieves the index of the first character in the requested field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](../java/text/FieldPosition.md))`()` Retrieves the index of the character following the last character in the requested field. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getField](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getField())`()` Retrieves the field identifier. |
-| open [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field)! | [getFieldAttribute](https://developer.android.com/reference/kotlin/java/text/FieldPosition#getFieldAttribute())`()` Returns the field identifier as an attribute constant from one of the`Field`subclasses. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/FieldPosition#hashCode())`()` Returns a hash code for this FieldPosition. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getField](../java/text/FieldPosition.md))`()` Retrieves the field identifier. |
+| open [Format.Field](../java/text/Format.Field.md)! | [getFieldAttribute](../java/text/FieldPosition.md))`()` Returns the field identifier as an attribute constant from one of the`Field`subclasses. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/text/FieldPosition.md))`()` Returns a hash code for this FieldPosition. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBeginIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#setBeginIndex(kotlin.Int))`(`bi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the begin index. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndIndex](https://developer.android.com/reference/kotlin/java/text/FieldPosition#setEndIndex(kotlin.Int))`(`ei:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the end index. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/text/FieldPosition#toString())`()` Return a string representation of this FieldPosition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBeginIndex](../java/text/FieldPosition.md))`(`bi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the begin index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndIndex](../java/text/FieldPosition.md))`(`ei:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the end index. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/text/FieldPosition.md))`()` Return a string representation of this FieldPosition. |
 | --- | --- |
 
 ## Public constructors
@@ -66,10 +66,10 @@ Creates a FieldPosition object for the given field. Fields are identified by con
 
 **See Also**
 
-- [java.text.NumberFormat#INTEGER_FIELD](https://developer.android.com/reference/kotlin/java/text/NumberFormat#INTEGER_FIELD:kotlin.Int)
-- [java.text.NumberFormat#FRACTION_FIELD](https://developer.android.com/reference/kotlin/java/text/NumberFormat#FRACTION_FIELD:kotlin.Int)
-- [java.text.DateFormat#YEAR_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#YEAR_FIELD:kotlin.Int)
-- [java.text.DateFormat#MONTH_FIELD](https://developer.android.com/reference/kotlin/java/text/DateFormat#MONTH_FIELD:kotlin.Int) 
+- [java.text.NumberFormat#INTEGER_FIELD](../java/text/NumberFormat.md)
+- [java.text.NumberFormat#FRACTION_FIELD](../java/text/NumberFormat.md)
+- [java.text.DateFormat#YEAR_FIELD](../java/text/DateFormat.md)
+- [java.text.DateFormat#MONTH_FIELD](../java/text/DateFormat.md) 
 
 ### FieldPosition
 
@@ -83,7 +83,7 @@ Creates a FieldPosition object for the given field constant. Fields are identifi
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------|
-| `attribute` | [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field)!:Format.Field constant identifying a field |
+| `attribute` | [Format.Field](../java/text/Format.Field.md)!:Format.Field constant identifying a field |
 
 ### FieldPosition
 
@@ -99,7 +99,7 @@ Creates a`FieldPosition`object for the given field. The field is identified by a
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------|
-| `attribute` | [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field)!:Format.Field constant identifying a field |
+| `attribute` | [Format.Field](../java/text/Format.Field.md)!:Format.Field constant identifying a field |
 | `fieldID` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):integer constant identifying a field |
 
 ## Public methods
@@ -176,7 +176,7 @@ Returns the field identifier as an attribute constant from one of the`Field`subc
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------------------|
-| [Format.Field](https://developer.android.com/reference/kotlin/java/text/Format.Field)! | Identifier for the field |
+| [Format.Field](../java/text/Format.Field.md)! | Identifier for the field |
 
 ### hashCode
 

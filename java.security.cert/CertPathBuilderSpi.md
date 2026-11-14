@@ -10,9 +10,9 @@ abstract class CertPathBuilderSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CertPathBuilderSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderSpi#) |
+| ↳ | [java.security.cert.CertPathBuilderSpi](../java/security/cert/CertPathBuilderSpi.md) |
 
-The*Service Provider Interface* (**SPI** ) for the [CertPathBuilder](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilder) class. All`CertPathBuilder`implementations must include a class (the SPI class) that extends this class (`CertPathBuilderSpi`) and implements all of its methods. In general, instances of this class should only be accessed through the`CertPathBuilder`class. For details, see the Java Cryptography Architecture.
+The*Service Provider Interface* (**SPI** ) for the [CertPathBuilder](../java/security/cert/CertPathBuilder.md) class. All`CertPathBuilder`implementations must include a class (the SPI class) that extends this class (`CertPathBuilderSpi`) and implements all of its methods. In general, instances of this class should only be accessed through the`CertPathBuilder`class. For details, see the Java Cryptography Architecture.
 
 **Concurrent Access**
 
@@ -24,12 +24,12 @@ However, implementations of`CertPathBuilderSpi`may still encounter concurrency i
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertPathBuilderSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderSpi#CertPathBuilderSpi())`()` The default constructor. |
+| [CertPathBuilderSpi](../java/security/cert/CertPathBuilderSpi.md))`()` The default constructor. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderResult)! | [engineBuild](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderSpi#engineBuild(java.security.cert.CertPathParameters))`(`params:` ` [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters)!`)` Attempts to build a certification path using the specified algorithm parameter set. |
-| open [CertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker)! | [engineGetRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderSpi#engineGetRevocationChecker())`()` Returns a`CertPathChecker`that this implementation uses to check the revocation status of certificates. |
+| abstract [CertPathBuilderResult](../java/security/cert/CertPathBuilderResult.md)! | [engineBuild](../java/security/cert/CertPathBuilderSpi.md))`(`params:` ` [CertPathParameters](../java/security/cert/CertPathParameters.md)!`)` Attempts to build a certification path using the specified algorithm parameter set. |
+| open [CertPathChecker](../java/security/cert/CertPathChecker.md)! | [engineGetRevocationChecker](../java/security/cert/CertPathBuilderSpi.md))`()` Returns a`CertPathChecker`that this implementation uses to check the revocation status of certificates. |
 
 ## Public constructors
 
@@ -57,11 +57,11 @@ Attempts to build a certification path using the specified algorithm parameter s
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters)!:the algorithm parameters |
+| `params` | [CertPathParameters](../java/security/cert/CertPathParameters.md)!:the algorithm parameters |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [CertPathBuilderResult](https://developer.android.com/reference/kotlin/java/security/cert/CertPathBuilderResult)! | the result of the build algorithm |
+| [CertPathBuilderResult](../java/security/cert/CertPathBuilderResult.md)! | the result of the build algorithm |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -84,7 +84,7 @@ This method was added to version 1.8 of the Java Platform Standard Edition. In o
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [CertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker)! | a`CertPathChecker`that this implementation uses to check the revocation status of certificates |
+| [CertPathChecker](../java/security/cert/CertPathChecker.md)! | a`CertPathChecker`that this implementation uses to check the revocation status of certificates |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------|

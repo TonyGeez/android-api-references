@@ -10,19 +10,19 @@ abstract class ClassLoader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#) |
+| ↳ | [java.lang.ClassLoader](../java/lang/ClassLoader.md) |
 
-| Known Direct Subclasses [BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader.html#), [SecureClassLoader](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader.html#) |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BaseDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/BaseDexClassLoader.html#) | Base class for common functionality between various dex-based [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#) implementations. | | [SecureClassLoader](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader.html#) | This class extends ClassLoader with additional support for defining classes with an associated code source and permissions which are retrieved by the system policy by default. | |
+| Known Direct Subclasses [BaseDexClassLoader](../dalvik/system/BaseDexClassLoader.md), [SecureClassLoader](../java/security/SecureClassLoader.md) |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BaseDexClassLoader](../dalvik/system/BaseDexClassLoader.md) | Base class for common functionality between various dex-based [ClassLoader](../java/lang/ClassLoader.md) implementations. | | [SecureClassLoader](../java/security/SecureClassLoader.md) | This class extends ClassLoader with additional support for defining classes with an associated code source and permissions which are retrieved by the system policy by default. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader.html#), [DexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DexClassLoader.html#), [InMemoryDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/InMemoryDexClassLoader.html#), [PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader.html#), [URLClassLoader](https://developer.android.com/reference/kotlin/java/net/URLClassLoader.html#) |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DelegateLastClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DelegateLastClassLoader.html#) | A`ClassLoader`implementation that implements a**delegate last**lookup policy. | | [DexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/DexClassLoader.html#) | A class loader that loads classes from`.jar`and`.apk`files containing a`classes.dex`entry. | | [InMemoryDexClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/InMemoryDexClassLoader.html#) | A [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#) implementation that loads classes from a buffer containing a DEX file. | | [PathClassLoader](https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader.html#) | Provides a simple [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#) implementation that operates on a list of files and directories in the local file system, but does not attempt to load classes from the network. | | [URLClassLoader](https://developer.android.com/reference/kotlin/java/net/URLClassLoader.html#) | This class loader is used to load classes and resources from a search path of URLs referring to both JAR files and directories. | |
+| Known Indirect Subclasses [DelegateLastClassLoader](../dalvik/system/DelegateLastClassLoader.md), [DexClassLoader](../dalvik/system/DexClassLoader.md), [InMemoryDexClassLoader](../dalvik/system/InMemoryDexClassLoader.md), [PathClassLoader](../dalvik/system/PathClassLoader.md), [URLClassLoader](../java/net/URLClassLoader.md) |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DelegateLastClassLoader](../dalvik/system/DelegateLastClassLoader.md) | A`ClassLoader`implementation that implements a**delegate last**lookup policy. | | [DexClassLoader](../dalvik/system/DexClassLoader.md) | A class loader that loads classes from`.jar`and`.apk`files containing a`classes.dex`entry. | | [InMemoryDexClassLoader](../dalvik/system/InMemoryDexClassLoader.md) | A [ClassLoader](../java/lang/ClassLoader.md) implementation that loads classes from a buffer containing a DEX file. | | [PathClassLoader](../dalvik/system/PathClassLoader.md) | Provides a simple [ClassLoader](../java/lang/ClassLoader.md) implementation that operates on a list of files and directories in the local file system, but does not attempt to load classes from the network. | | [URLClassLoader](../java/net/URLClassLoader.md) | This class loader is used to load classes and resources from a search path of URLs referring to both JAR files and directories. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A class loader is an object that is responsible for loading classes. The class`ClassLoader`is an abstract class. Given the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of a class, a class loader should attempt to locate or generate data that constitutes a definition for the class. A typical strategy is to transform the name into a file name and then read a "class file" of that name from a file system.
+A class loader is an object that is responsible for loading classes. The class`ClassLoader`is an abstract class. Given the [binary name](../java/lang/ClassLoader.md) of a class, a class loader should attempt to locate or generate data that constitutes a definition for the class. A typical strategy is to transform the name into a file name and then read a "class file" of that name from a file system.
 
-Every [Class](https://developer.android.com/reference/kotlin/java/lang/Class) object contains a [reference](https://developer.android.com/reference/kotlin/java/lang/Class#getClassLoader())to the`ClassLoader`that defined it.
+Every [Class](../java/lang/Class.md) object contains a [reference](../java/lang/Class.md))to the`ClassLoader`that defined it.
 
-`Class`objects for array classes are not created by class loaders, but are created automatically as required by the Java runtime. The class loader for an array class, as returned by [java.lang.Class#getClassLoader()](https://developer.android.com/reference/kotlin/java/lang/Class#getClassLoader())is the same as the class loader for its element type; if the element type is a primitive type, then the array class has no class loader.
+`Class`objects for array classes are not created by class loaders, but are created automatically as required by the Java runtime. The class loader for an array class, as returned by [java.lang.Class#getClassLoader()](../java/lang/Class.md))is the same as the class loader for its element type; if the element type is a primitive type, then the array class has no class loader.
 
 Applications implement subclasses of`ClassLoader`in order to extend the manner in which the Java virtual machine dynamically loads classes.
 
@@ -39,9 +39,9 @@ Class loaders that support concurrent loading of classes are known as*`isRegiste
 The Java run-time has the following built-in class loaders:
 
 - Bootstrap class loader. It is the virtual machine's built-in class loader, typically represented as`null`, and does not have a parent.
-- [System class loader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemClassLoader()). It is also known as*application class loader*and is distinct from the platform class loader. The system class loader is typically used to define classes on the application class path, module path, and JDK-specific tools. The platform class loader is the parent or an ancestor of the system class loader, so the system class loader can load platform classes by delegating to its parent.
+- [System class loader](../java/lang/ClassLoader.md)). It is also known as*application class loader*and is distinct from the platform class loader. The system class loader is typically used to define classes on the application class path, module path, and JDK-specific tools. The platform class loader is the parent or an ancestor of the system class loader, so the system class loader can load platform classes by delegating to its parent.
 
-Normally, the Java virtual machine loads classes from the local file system in a platform-dependent manner. However, some classes may not originate from a file; they may originate from other sources, such as the network, or they could be constructed by an application. The method [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))converts an array of bytes into an instance of class`Class`. Instances of this newly defined class can be created using [Class.newInstance](https://developer.android.com/reference/kotlin/java/lang/Class#newInstance()).
+Normally, the Java virtual machine loads classes from the local file system in a platform-dependent manner. However, some classes may not originate from a file; they may originate from other sources, such as the network, or they could be constructed by an application. The method [defineClass](../java/lang/ClassLoader.md))converts an array of bytes into an instance of class`Class`. Instances of this newly defined class can be created using [Class.newInstance](../java/lang/Class.md)).
 
 The methods and constructors of objects created by a class loader may reference other classes. To determine the class(es) referred to, the Java virtual machine invokes the #loadClass method of the class loader that originally created the class.
 
@@ -54,7 +54,7 @@ ClassLoader loader = new NetworkClassLoader(host, port);
   
 ```
 
-The network class loader subclass must define the methods [findClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findClass(kotlin.String))and`loadClassData`to load a class from the network. Once it has downloaded the bytes that make up the class, it should use the method #defineClass to create a class instance. A sample implementation is: 
+The network class loader subclass must define the methods [findClass](../java/lang/ClassLoader.md))and`loadClassData`to load a class from the network. Once it has downloaded the bytes that make up the class, it should use the method #defineClass to create a class instance. A sample implementation is: 
 
 ```kotlin
 class NetworkClassLoader extends ClassLoader {
@@ -94,53 +94,53 @@ Any package name provided as a`String`parameter to methods in`ClassLoader`must b
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#ClassLoader())`()` Creates a new class loader using the`ClassLoader`returned by the method [getSystemClassLoader()](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemClassLoader())as the parent class loader. |
-| [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#ClassLoader(java.lang.ClassLoader))`(`parent:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#)!`)` Creates a new class loader using the specified parent class loader for delegation. |
+| [ClassLoader](../java/lang/ClassLoader.md))`()` Creates a new class loader using the`ClassLoader`returned by the method [getSystemClassLoader()](../java/lang/ClassLoader.md))as the parent class loader. |
+| [ClassLoader](../java/lang/ClassLoader.md))`(`parent:` ` [ClassLoader](../java/lang/ClassLoader.md)!`)` Creates a new class loader using the specified parent class loader for delegation. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAssertionStatus](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#clearAssertionStatus())`()` Sets the default assertion status for this class loader to`false`and discards any package defaults or class assertion status settings associated with the class loader. |
-| [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#)! | [getParent](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getParent())`()` Returns the parent class loader for delegation. |
-| open [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [getResource](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getResource(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds the resource with the given name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAssertionStatus](../java/lang/ClassLoader.md))`()` Sets the default assertion status for this class loader to`false`and discards any package defaults or class assertion status settings associated with the class loader. |
+| [ClassLoader](../java/lang/ClassLoader.md)! | [getParent](../java/lang/ClassLoader.md))`()` Returns the parent class loader for delegation. |
+| open [URL](../java/net/URL.md)! | [getResource](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds the resource with the given name. |
 | --- | --- |
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getResourceAsStream](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getResourceAsStream(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an input stream for reading the specified resource. |
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!\>! | [getResources](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getResources(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds all the resources with the given name. |
-| openstatic [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#)! | [getSystemClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemClassLoader())`()` Returns the system class loader. |
+| open [InputStream](../java/io/InputStream.md)! | [getResourceAsStream](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an input stream for reading the specified resource. |
+| open [Enumeration](../java/util/Enumeration.md)\< [URL](../java/net/URL.md)!\>! | [getResources](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds all the resources with the given name. |
+| openstatic [ClassLoader](../java/lang/ClassLoader.md)! | [getSystemClassLoader](../java/lang/ClassLoader.md))`()` Returns the system class loader. |
 | --- | --- |
-| openstatic [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [getSystemResource](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResource(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Find a resource of the specified name from the search path used to load classes. |
-| openstatic [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getSystemResourceAsStream](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResourceAsStream(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Open for reading, a resource of the specified name from the search path used to load classes. |
-| openstatic [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!\>! | [getSystemResources](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResources(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds all resources of the specified name from the search path used to load classes. |
+| openstatic [URL](../java/net/URL.md)! | [getSystemResource](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Find a resource of the specified name from the search path used to load classes. |
+| openstatic [InputStream](../java/io/InputStream.md)! | [getSystemResourceAsStream](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Open for reading, a resource of the specified name from the search path used to load classes. |
+| openstatic [Enumeration](../java/util/Enumeration.md)\< [URL](../java/net/URL.md)!\>! | [getSystemResources](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds all resources of the specified name from the search path used to load classes. |
 | --- | --- |
-| open [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [loadClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#loadClass(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Loads the class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClassAssertionStatus](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setClassAssertionStatus(kotlin.String,%20kotlin.Boolean))`(`className:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the desired assertion status for the named top-level class in this class loader and any nested classes contained therein. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultAssertionStatus](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setDefaultAssertionStatus(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default assertion status for this class loader. |
+| open [Class](../java/lang/Class.md)\<\*\>! | [loadClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Loads the class with the specified [binary name](../java/lang/ClassLoader.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClassAssertionStatus](../java/lang/ClassLoader.md))`(`className:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the desired assertion status for the named top-level class in this class loader and any nested classes contained therein. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultAssertionStatus](../java/lang/ClassLoader.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default assertion status for this class loader. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPackageAssertionStatus](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setPackageAssertionStatus(kotlin.String,%20kotlin.Boolean))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the package default assertion status for the named package. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPackageAssertionStatus](../java/lang/ClassLoader.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the package default assertion status for the named package. |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts an array of bytes into an instance of class`Class`. |
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts an array of bytes into an instance of class`Class`. |
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.security.ProtectionDomain))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protectionDomain:` ` [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain.html#)!`)` Converts an array of bytes into an instance of class`Class`, with a given`ProtectionDomain`. |
+| [Class](../java/lang/Class.md)\<\*\>! | [defineClass](../java/lang/ClassLoader.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts an array of bytes into an instance of class`Class`. |
+| [Class](../java/lang/Class.md)\<\*\>! | [defineClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts an array of bytes into an instance of class`Class`. |
+| [Class](../java/lang/Class.md)\<\*\>! | [defineClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protectionDomain:` ` [ProtectionDomain](../java/security/ProtectionDomain.md)!`)` Converts an array of bytes into an instance of class`Class`, with a given`ProtectionDomain`. |
 | --- | --- |
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20java.nio.ByteBuffer,%20java.security.ProtectionDomain))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!`, `protectionDomain:` ` [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain.html#)!`)` Converts a [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) into an instance of class`Class`, with the given`ProtectionDomain`. |
-| open [Package](https://developer.android.com/reference/kotlin/java/lang/Package)! | [definePackage](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#definePackage(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20java.net.URL))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `specTitle:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `specVersion:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `specVendor:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `implTitle:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `implVersion:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `implVendor:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sealBase:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`)` Defines a package by [name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) in this`ClassLoader`. |
-| open [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [findClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findClass(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds the class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). |
+| [Class](../java/lang/Class.md)\<\*\>! | [defineClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `protectionDomain:` ` [ProtectionDomain](../java/security/ProtectionDomain.md)!`)` Converts a [ByteBuffer](../java/nio/ByteBuffer.md) into an instance of class`Class`, with the given`ProtectionDomain`. |
+| open [Package](../java/lang/Package.md)! | [definePackage](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `specTitle:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `specVersion:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `specVendor:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `implTitle:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `implVersion:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `implVendor:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sealBase:` ` [URL](../java/net/URL.md)!`)` Defines a package by [name](../java/lang/ClassLoader.md) in this`ClassLoader`. |
+| open [Class](../java/lang/Class.md)\<\*\>! | [findClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds the class with the specified [binary name](../java/lang/ClassLoader.md). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findLibrary](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findLibrary(kotlin.String))`(`libname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the absolute path name of a native library. |
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [findLoadedClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findLoadedClass(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the class with the given [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) if this loader has been recorded by the Java virtual machine as an initiating loader of a class with that [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). |
-| open [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [findResource](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findResource(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds the resource with the given name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findLibrary](../java/lang/ClassLoader.md))`(`libname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the absolute path name of a native library. |
+| [Class](../java/lang/Class.md)\<\*\>! | [findLoadedClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the class with the given [binary name](../java/lang/ClassLoader.md) if this loader has been recorded by the Java virtual machine as an initiating loader of a class with that [binary name](../java/lang/ClassLoader.md). |
+| open [URL](../java/net/URL.md)! | [findResource](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds the resource with the given name. |
 | --- | --- |
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!\>! | [findResources](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findResources(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an enumeration of [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) objects representing all the resources with the given name. |
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [findSystemClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findSystemClass(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds a class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name), loading it if necessary. |
-| open [Package](https://developer.android.com/reference/kotlin/java/lang/Package)! | [getPackage](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getPackage(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds a package by [name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) in this class loader and its ancestors. |
+| open [Enumeration](../java/util/Enumeration.md)\< [URL](../java/net/URL.md)!\>! | [findResources](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an enumeration of [URL](../java/net/URL.md) objects representing all the resources with the given name. |
+| [Class](../java/lang/Class.md)\<\*\>! | [findSystemClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds a class with the specified [binary name](../java/lang/ClassLoader.md), loading it if necessary. |
+| open [Package](../java/lang/Package.md)! | [getPackage](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds a package by [name](../java/lang/ClassLoader.md) in this class loader and its ancestors. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Package](https://developer.android.com/reference/kotlin/java/lang/Package)!\>! | [getPackages](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getPackages())`()` Returns all of the`Package`s that have been defined by this class loader and its ancestors. |
-| open [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>! | [loadClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#loadClass(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resolve:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Loads the class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerAsParallelCapable](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#registerAsParallelCapable())`()` Registers the caller as`isRegisteredAsParallelCapable() parallel capable`. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Package](../java/lang/Package.md)!\>! | [getPackages](../java/lang/ClassLoader.md))`()` Returns all of the`Package`s that have been defined by this class loader and its ancestors. |
+| open [Class](../java/lang/Class.md)\<\*\>! | [loadClass](../java/lang/ClassLoader.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resolve:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Loads the class with the specified [binary name](../java/lang/ClassLoader.md). |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerAsParallelCapable](../java/lang/ClassLoader.md))`()` Registers the caller as`isRegisteredAsParallelCapable() parallel capable`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resolveClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#resolveClass(java.lang.Class))`(`c:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>!`)` Links the specified class. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSigners](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setSigners(java.lang.Class,%20kotlin.Array))`(`c:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>!`, `signers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Sets the signers of a class. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resolveClass](../java/lang/ClassLoader.md))`(`c:` ` [Class](../java/lang/Class.md)<*>!`)` Links the specified class. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSigners](../java/lang/ClassLoader.md))`(`c:` ` [Class](../java/lang/Class.md)<*>!`, `signers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Sets the signers of a class. |
 
 ## Protected constructors
 
@@ -152,9 +152,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected ClassLoader()
 ```
 
-Creates a new class loader using the`ClassLoader`returned by the method [getSystemClassLoader()](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemClassLoader())as the parent class loader.
+Creates a new class loader using the`ClassLoader`returned by the method [getSystemClassLoader()](../java/lang/ClassLoader.md))as the parent class loader.
 
-If there is a security manager, its [checkCreateClassLoader](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkCreateClassLoader())method is invoked. This may result in a security exception.
+If there is a security manager, its [checkCreateClassLoader](../java/lang/SecurityManager.md))method is invoked. This may result in a security exception.
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -170,11 +170,11 @@ protected ClassLoader(parent: ClassLoader!)
 
 Creates a new class loader using the specified parent class loader for delegation.
 
-If there is a security manager, its [checkCreateClassLoader](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkCreateClassLoader())method is invoked. This may result in a security exception.
+If there is a security manager, its [checkCreateClassLoader](../java/lang/SecurityManager.md))method is invoked. This may result in a security exception.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------|
-| `parent` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#)!:The parent class loader |
+| `parent` | [ClassLoader](../java/lang/ClassLoader.md)!:The parent class loader |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -204,11 +204,11 @@ Returns the parent class loader for delegation. Some implementations may use`nul
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------|
-| [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#)! | The parent`ClassLoader` |
+| [ClassLoader](../java/lang/ClassLoader.md)! | The parent`ClassLoader` |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager is present, and the caller's class loader is not`null`and is not an ancestor of this class loader, and the caller does not have the [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission)`("getClassLoader")` |
+| `java.lang.SecurityException` | If a security manager is present, and the caller's class loader is not`null`and is not an ancestor of this class loader, and the caller does not have the [RuntimePermission](../java/lang/RuntimePermission.md)`("getClassLoader")` |
 
 ### getResource
 
@@ -228,7 +228,7 @@ The name of a resource is a '`/`'-separated path name thatf identifies the resou
 
 | Return ||
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | `URL`object for reading the resource;`null`if the resource could not be found, a`URL`could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
+| [URL](../java/net/URL.md)! | `URL`object for reading the resource;`null`if the resource could not be found, a`URL`could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -244,7 +244,7 @@ open fun getResourceAsStream(name: String!): InputStream!
 
 Returns an input stream for reading the specified resource.
 
-The search order is described in the documentation for [getResource(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getResource(kotlin.String)).
+The search order is described in the documentation for [getResource(java.lang.String)](../java/lang/ClassLoader.md)).
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------|
@@ -252,7 +252,7 @@ The search order is described in the documentation for [getResource(java.lang.St
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | An input stream for reading the resource;`null`if the resource could not be found, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
+| [InputStream](../java/io/InputStream.md)! | An input stream for reading the resource;`null`if the resource could not be found, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -276,7 +276,7 @@ The name of a resource is a`/`-separated path name that identifies the resource.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!>! | An enumeration of [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
+| [Enumeration](../java/util/Enumeration.md)< [URL](../java/net/URL.md)!>! | An enumeration of [URL](../java/net/URL.md) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
 
 | Exceptions ||
 |----------------------------------|---------------------|
@@ -299,13 +299,13 @@ The default system class loader is an implementation-dependent instance of this 
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------|
-| [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#)! | The system`ClassLoader` |
+| [ClassLoader](../java/lang/ClassLoader.md)! | The system`ClassLoader` |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager is present, and the caller's class loader is not`null`and is not the same as or an ancestor of the system class loader, and the caller does not have the [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission)`("getClassLoader")` |
+| `java.lang.SecurityException` | If a security manager is present, and the caller's class loader is not`null`and is not the same as or an ancestor of the system class loader, and the caller does not have the [RuntimePermission](../java/lang/RuntimePermission.md)`("getClassLoader")` |
 | `java.lang.IllegalStateException` | If invoked recursively during the construction of the class loader specified by the "`java.system.class.loader`" property. |
-| `java.lang.Error` | If the system property "`java.system.class.loader`" is defined but the named class could not be loaded, the provider class does not define the required constructor, or an exception is thrown by that constructor when it is invoked. The underlying cause of the error can be retrieved via the [Throwable.getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause())method. |
+| `java.lang.Error` | If the system property "`java.system.class.loader`" is defined but the named class could not be loaded, the provider class does not define the required constructor, or an exception is thrown by that constructor when it is invoked. The underlying cause of the error can be retrieved via the [Throwable.getCause()](../java/lang/Throwable.md))method. |
 | --- | --- |
 
 ### getSystemResource
@@ -316,7 +316,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getSystemResource(name: String!): URL!
 ```
 
-Find a resource of the specified name from the search path used to load classes. This method locates the resource through the system class loader (see [getSystemClassLoader()](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemClassLoader())).
+Find a resource of the specified name from the search path used to load classes. This method locates the resource through the system class loader (see [getSystemClassLoader()](../java/lang/ClassLoader.md))).
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------|
@@ -324,7 +324,7 @@ Find a resource of the specified name from the search path used to load classes.
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | A [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) to the resource;`null`if the resource could not be found, a URL could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally or access to the resource is denied by the security manager. |
+| [URL](../java/net/URL.md)! | A [URL](../java/net/URL.md) to the resource;`null`if the resource could not be found, a URL could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally or access to the resource is denied by the security manager. |
 
 ### getSystemResourceAsStream
 
@@ -334,7 +334,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getSystemResourceAsStream(name: String!): InputStream!
 ```
 
-Open for reading, a resource of the specified name from the search path used to load classes. This method locates the resource through the system class loader (see [getSystemClassLoader()](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemClassLoader())).
+Open for reading, a resource of the specified name from the search path used to load classes. This method locates the resource through the system class loader (see [getSystemClassLoader()](../java/lang/ClassLoader.md))).
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------|
@@ -342,7 +342,7 @@ Open for reading, a resource of the specified name from the search path used to 
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | An input stream for reading the resource;`null`if the resource could not be found, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
+| [InputStream](../java/io/InputStream.md)! | An input stream for reading the resource;`null`if the resource could not be found, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
 
 ### getSystemResources
 
@@ -352,9 +352,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getSystemResources(name: String!): Enumeration<URL!>!
 ```
 
-Finds all resources of the specified name from the search path used to load classes. The resources thus found are returned as an [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#) of objects.
+Finds all resources of the specified name from the search path used to load classes. The resources thus found are returned as an [Enumeration](../java/util/Enumeration.md) of objects.
 
-The search order is described in the documentation for [getSystemResource(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResource(kotlin.String)).
+The search order is described in the documentation for [getSystemResource(java.lang.String)](../java/lang/ClassLoader.md)).
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------|
@@ -362,7 +362,7 @@ The search order is described in the documentation for [getSystemResource(java.l
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!>! | An enumeration of [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
+| [Enumeration](../java/util/Enumeration.md)< [URL](../java/net/URL.md)!>! | An enumeration of [URL](../java/net/URL.md) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
 
 | Exceptions ||
 |-----------------------|---------------------|
@@ -376,15 +376,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun loadClass(name: String!): Class<*>!
 ```
 
-Loads the class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). This method searches for classes in the same manner as the [loadClass(java.lang.String,boolean)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#loadClass(kotlin.String,%20kotlin.Boolean))method. It is invoked by the Java virtual machine to resolve class references. Invoking this method is equivalent to invoking [loadClass(name,](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#loadClass(kotlin.String,%20kotlin.Boolean)).
+Loads the class with the specified [binary name](../java/lang/ClassLoader.md). This method searches for classes in the same manner as the [loadClass(java.lang.String,boolean)](../java/lang/ClassLoader.md))method. It is invoked by the Java virtual machine to resolve class references. Invoking this method is equivalent to invoking [loadClass(name,](../java/lang/ClassLoader.md)).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](../java/lang/ClassLoader.md) of the class |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The resulting`Class`object |
+| [Class](../java/lang/Class.md)<*>! | The resulting`Class`object |
 
 | Exceptions ||
 |------------------------------------|----------------------------|
@@ -419,7 +419,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setDefaultAssertionStatus(enabled: Boolean): Unit
 ```
 
-Sets the default assertion status for this class loader. This setting determines whether classes loaded by this class loader and initialized in the future will have assertions enabled or disabled by default. This setting may be overridden on a per-package or per-class basis by invoking [setPackageAssertionStatus(java.lang.String,boolean)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setPackageAssertionStatus(kotlin.String,%20kotlin.Boolean))or [setClassAssertionStatus(java.lang.String,boolean)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setClassAssertionStatus(kotlin.String,%20kotlin.Boolean)). Android-note: AssertionStatuses are unsupported. This method is a no-op.
+Sets the default assertion status for this class loader. This setting determines whether classes loaded by this class loader and initialized in the future will have assertions enabled or disabled by default. This setting may be overridden on a per-package or per-class basis by invoking [setPackageAssertionStatus(java.lang.String,boolean)](../java/lang/ClassLoader.md))or [setClassAssertionStatus(java.lang.String,boolean)](../java/lang/ClassLoader.md)). Android-note: AssertionStatuses are unsupported. This method is a no-op.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -442,7 +442,7 @@ A subpackage of a package named p is any package whose name begins with "`p.`". 
 
 In the event that multiple package defaults apply to a given class, the package default pertaining to the most specific package takes precedence over the others. For example, if`javax.lang`and`javax.lang.reflect`both have package defaults associated with them, the latter package default applies to classes in`javax.lang.reflect`.
 
-Package defaults take precedence over the class loader's default assertion status, and may be overridden on a per-class basis by invoking [setClassAssertionStatus(java.lang.String,boolean)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setClassAssertionStatus(kotlin.String,%20kotlin.Boolean)).
+Package defaults take precedence over the class loader's default assertion status, and may be overridden on a per-class basis by invoking [setClassAssertionStatus(java.lang.String,boolean)](../java/lang/ClassLoader.md)).
 Android-note: AssertionStatuses are unsupported. This method is a no-op.
 
 | Parameters ||
@@ -467,7 +467,7 @@ protected fun defineClass(
 
 **Deprecated:** *Replaced by[defineClass(String, byte[], int, int)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))*
 
-Converts an array of bytes into an instance of class`Class`. Before the`Class`can be used it must be resolved. This method is deprecated in favor of the version that takes a [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) as its first argument, and is more secure.
+Converts an array of bytes into an instance of class`Class`. Before the`Class`can be used it must be resolved. This method is deprecated in favor of the version that takes a [binary name](../java/lang/ClassLoader.md) as its first argument, and is more secure.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -478,7 +478,7 @@ Converts an array of bytes into an instance of class`Class`. Before the`Class`ca
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The`Class`object that was created from the specified class data |
+| [Class](../java/lang/Class.md)<*>! | The`Class`object that was created from the specified class data |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -489,8 +489,8 @@ Converts an array of bytes into an instance of class`Class`. Before the`Class`ca
 
 **See Also**
 
-- [#loadClass(String, boolean)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#loadClass(kotlin.String,%20kotlin.Boolean))
-- [#resolveClass(Class)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#resolveClass(java.lang.Class)) 
+- [#loadClass(String, boolean)](../java/lang/ClassLoader.md))
+- [#resolveClass(Class)](../java/lang/ClassLoader.md)) 
 
 ### defineClass
 
@@ -507,15 +507,15 @@ protected fun defineClass(
 
 Converts an array of bytes into an instance of class`Class`. Before the`Class`can be used it must be resolved.
 
-This method assigns a default [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain.html#) to the newly defined class. The`ProtectionDomain`is effectively granted the same set of permissions returned when [Policy.getPolicy().getPermissions(new CodeSource(null, null))](https://developer.android.com/reference/kotlin/java/security/Policy.html#getPermissions(java.security.CodeSource))is invoked. The default protection domain is created on the first invocation of [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)), and re-used on subsequent invocations.
+This method assigns a default [ProtectionDomain](../java/security/ProtectionDomain.md) to the newly defined class. The`ProtectionDomain`is effectively granted the same set of permissions returned when [Policy.getPolicy().getPermissions(new CodeSource(null, null))](../java/security/Policy.md))is invoked. The default protection domain is created on the first invocation of [defineClass](../java/lang/ClassLoader.md)), and re-used on subsequent invocations.
 
-To assign a specific`ProtectionDomain`to the class, use the [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.security.ProtectionDomain))method that takes a`ProtectionDomain`as one of its arguments.
+To assign a specific`ProtectionDomain`to the class, use the [defineClass](../java/lang/ClassLoader.md))method that takes a`ProtectionDomain`as one of its arguments.
 
-This method defines a package in this class loader corresponding to the package of the`Class`(if such a package has not already been defined in this class loader). The name of the defined package is derived from the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class specified by the byte array`b`. Other properties of the defined package are as specified by [Package](https://developer.android.com/reference/kotlin/java/lang/Package).
+This method defines a package in this class loader corresponding to the package of the`Class`(if such a package has not already been defined in this class loader). The name of the defined package is derived from the [binary name](../java/lang/ClassLoader.md) of the class specified by the byte array`b`. Other properties of the defined package are as specified by [Package](../java/lang/Package.md).
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The expected [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class, or`null`if not known |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The expected [binary name](../java/lang/ClassLoader.md) of the class, or`null`if not known |
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:The bytes that make up the class data. The bytes in positions`off`through`off+len-1`should have the format of a valid class file as defined by The Java Virtual Machine Specification. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The start offset in`b`of the class data |
 | --- | --- |
@@ -523,7 +523,7 @@ This method defines a package in this class loader corresponding to the package 
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The`Class`object that was created from the specified class data. |
+| [Class](../java/lang/Class.md)<*>! | The`Class`object that was created from the specified class data. |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -534,10 +534,10 @@ This method defines a package in this class loader corresponding to the package 
 
 **See Also**
 
-- [#loadClass(String, boolean)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#loadClass(kotlin.String,%20kotlin.Boolean))
-- [#resolveClass(Class)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#resolveClass(java.lang.Class))
-- [java.security.CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource.html#)
-- [java.security.SecureClassLoader](https://developer.android.com/reference/kotlin/java/security/SecureClassLoader.html#) 
+- [#loadClass(String, boolean)](../java/lang/ClassLoader.md))
+- [#resolveClass(Class)](../java/lang/ClassLoader.md))
+- [java.security.CodeSource](../java/security/CodeSource.md)
+- [java.security.SecureClassLoader](../java/security/SecureClassLoader.md) 
 
 ### defineClass
 
@@ -557,27 +557,27 @@ Converts an array of bytes into an instance of class`Class`, with a given`Protec
 
 If the given`ProtectionDomain`is`null`, then a default protection domain will be assigned to the class as specified in the documentation for[defineClass(java.lang.String,byte[],int,int)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)). Before the class can be used it must be resolved.
 
-The first class defined in a package determines the exact set of certificates that all subsequent classes defined in that package must contain. The set of certificates for a class is obtained from the [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource.html#) within the`ProtectionDomain`of the class. Any classes added to that package must contain the same set of certificates or a`SecurityException`will be thrown. Note that if`name`is`null`, this check is not performed. You should always pass in the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class you are defining as well as the bytes. This ensures that the class you are defining is indeed the class you think it is.
+The first class defined in a package determines the exact set of certificates that all subsequent classes defined in that package must contain. The set of certificates for a class is obtained from the [CodeSource](../java/security/CodeSource.md) within the`ProtectionDomain`of the class. Any classes added to that package must contain the same set of certificates or a`SecurityException`will be thrown. Note that if`name`is`null`, this check is not performed. You should always pass in the [binary name](../java/lang/ClassLoader.md) of the class you are defining as well as the bytes. This ensures that the class you are defining is indeed the class you think it is.
 
-This method defines a package in this class loader corresponding to the package of the`Class`(if such a package has not already been defined in this class loader). The name of the defined package is derived from the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class specified by the byte array`b`. Other properties of the defined package are as specified by [Package](https://developer.android.com/reference/kotlin/java/lang/Package).
+This method defines a package in this class loader corresponding to the package of the`Class`(if such a package has not already been defined in this class loader). The name of the defined package is derived from the [binary name](../java/lang/ClassLoader.md) of the class specified by the byte array`b`. Other properties of the defined package are as specified by [Package](../java/lang/Package.md).
 
 | Parameters ||
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The expected [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class, or`null`if not known |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The expected [binary name](../java/lang/ClassLoader.md) of the class, or`null`if not known |
 | `b` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:The bytes that make up the class data. The bytes in positions`off`through`off+len-1`should have the format of a valid class file as defined by The Java Virtual Machine Specification. |
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The start offset in`b`of the class data |
 | --- | --- |
 | `len` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The length of the class data |
-| `protectionDomain` | [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain.html#)!:The`ProtectionDomain`of the class |
+| `protectionDomain` | [ProtectionDomain](../java/security/ProtectionDomain.md)!:The`ProtectionDomain`of the class |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The`Class`object created from the data, and`ProtectionDomain`. |
+| [Class](../java/lang/Class.md)<*>! | The`Class`object created from the data, and`ProtectionDomain`. |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.ClassFormatError` | If the data did not contain a valid class |
-| `java.lang.NoClassDefFoundError` | If`name`is not`null`and not equal to the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class specified by`b` |
+| `java.lang.NoClassDefFoundError` | If`name`is not`null`and not equal to the [binary name](../java/lang/ClassLoader.md) of the class specified by`b` |
 | `java.lang.IndexOutOfBoundsException` | If either`off`or`len`is negative, or if`off+len`is greater than`b.length`. |
 | --- | --- |
 | `java.lang.SecurityException` | If an attempt is made to add this class to a package that contains classes that were signed by a different set of certificates than this class, or if`name`begins with "`java.`" and this class loader is not the platform class loader or its ancestor. |
@@ -594,33 +594,33 @@ protected fun defineClass(
 ): Class<*>!
 ```
 
-Converts a [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) into an instance of class`Class`, with the given`ProtectionDomain`. If the given`ProtectionDomain`is`null`, then a default protection domain will be assigned to the class as specified in the documentation for[defineClass(java.lang.String,byte[],int,int)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)). Before the class can be used it must be resolved.
+Converts a [ByteBuffer](../java/nio/ByteBuffer.md) into an instance of class`Class`, with the given`ProtectionDomain`. If the given`ProtectionDomain`is`null`, then a default protection domain will be assigned to the class as specified in the documentation for[defineClass(java.lang.String,byte[],int,int)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)). Before the class can be used it must be resolved.
 
 The rules about the first class defined in a package determining the set of certificates for the package, the restrictions on class names, and the defined package of the class are identical to those specified in the documentation for[defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.security.ProtectionDomain)).
 
 An invocation of this method of the form*cl* `.defineClass(`*name* `,`*bBuffer* `,`*pd* `)`yields exactly the same result as the statements
 
 ` ...` 
-` byte[] temp = new byte [bBuffer.`[remaining](https://developer.android.com/reference/kotlin/java/nio/Buffer.html#remaining())`()];` 
-` bBuffer.` [get](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#get(kotlin.ByteArray))`(temp);` 
-` return ` [cl.defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.security.ProtectionDomain))`(name, temp, 0, temp.length, pd);` 
+` byte[] temp = new byte [bBuffer.`[remaining](../java/nio/Buffer.md))`()];` 
+` bBuffer.` [get](../java/nio/ByteBuffer.md))`(temp);` 
+` return ` [cl.defineClass](../java/lang/ClassLoader.md))`(name, temp, 0, temp.length, pd);` 
 ` `
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The expected [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). of the class, or`null`if not known |
-| `b` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)!:The bytes that make up the class data. The bytes from positions`b.position()`through`b.position() + b.limit() -1 `should have the format of a valid class file as defined by The Java Virtual Machine Specification. |
-| `protectionDomain` | [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain.html#)!:The`ProtectionDomain`of the class, or`null`. |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The expected [binary name](../java/lang/ClassLoader.md). of the class, or`null`if not known |
+| `b` | [ByteBuffer](../java/nio/ByteBuffer.md)!:The bytes that make up the class data. The bytes from positions`b.position()`through`b.position() + b.limit() -1 `should have the format of a valid class file as defined by The Java Virtual Machine Specification. |
+| `protectionDomain` | [ProtectionDomain](../java/security/ProtectionDomain.md)!:The`ProtectionDomain`of the class, or`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The`Class`object created from the data, and`ProtectionDomain`. |
+| [Class](../java/lang/Class.md)<*>! | The`Class`object created from the data, and`ProtectionDomain`. |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.ClassFormatError` | If the data did not contain a valid class. |
-| `java.lang.NoClassDefFoundError` | If`name`is not`null`and not equal to the [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class specified by`b` |
+| `java.lang.NoClassDefFoundError` | If`name`is not`null`and not equal to the [binary name](../java/lang/ClassLoader.md) of the class specified by`b` |
 | `java.lang.SecurityException` | If an attempt is made to add this class to a package that contains classes that were signed by a different set of certificates than this class, or if`name`begins with "`java.`". |
 | --- | --- |
 
@@ -645,15 +645,15 @@ protected open fun definePackage(
 ): Package!
 ```
 
-Defines a package by [name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) in this`ClassLoader`.
+Defines a package by [name](../java/lang/ClassLoader.md) in this`ClassLoader`.
 
-[Package names](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) must be unique within a class loader and cannot be redefined or changed once created.
+[Package names](../java/lang/ClassLoader.md) must be unique within a class loader and cannot be redefined or changed once created.
 
-If a class loader wishes to define a package with specific properties, such as version information, then the class loader should call this`definePackage`method before calling`defineClass`. Otherwise, the [defineClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.security.ProtectionDomain))method will define a package in this class loader corresponding to the package of the newly defined class; the properties of this defined package are specified by [Package](https://developer.android.com/reference/kotlin/java/lang/Package).
+If a class loader wishes to define a package with specific properties, such as version information, then the class loader should call this`definePackage`method before calling`defineClass`. Otherwise, the [defineClass](../java/lang/ClassLoader.md))method will define a package in this class loader corresponding to the package of the newly defined class; the properties of this defined package are specified by [Package](../java/lang/Package.md).
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [package name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [package name](../java/lang/ClassLoader.md) |
 | `specTitle` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The specification title |
 | `specVersion` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The specification version |
 | --- | --- |
@@ -662,11 +662,11 @@ If a class loader wishes to define a package with specific properties, such as v
 | `implVersion` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The implementation version |
 | --- | --- |
 | `implVendor` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The implementation vendor |
-| `sealBase` | [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!:If not`null`, then this package is sealed with respect to the given code source [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) object. Otherwise, the package is not sealed. |
+| `sealBase` | [URL](../java/net/URL.md)!:If not`null`, then this package is sealed with respect to the given code source [URL](../java/net/URL.md) object. Otherwise, the package is not sealed. |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------|
-| [Package](https://developer.android.com/reference/kotlin/java/lang/Package)! | The newly defined`Package`object |
+| [Package](../java/lang/Package.md)! | The newly defined`Package`object |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------|
@@ -683,15 +683,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun findClass(name: String!): Class<*>!
 ```
 
-Finds the class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). This method should be overridden by class loader implementations that follow the delegation model for loading classes, and will be invoked by the #loadClass method after checking the parent class loader for the requested class.
+Finds the class with the specified [binary name](../java/lang/ClassLoader.md). This method should be overridden by class loader implementations that follow the delegation model for loading classes, and will be invoked by the #loadClass method after checking the parent class loader for the requested class.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](../java/lang/ClassLoader.md) of the class |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The resulting`Class`object |
+| [Class](../java/lang/Class.md)<*>! | The resulting`Class`object |
 
 | Exceptions ||
 |------------------------------------|---------------------------------|
@@ -717,8 +717,8 @@ Returns the absolute path name of a native library. The VM invokes this method t
 
 **See Also**
 
-- [java.lang.System#loadLibrary(String)](https://developer.android.com/reference/kotlin/java/lang/System#loadLibrary(kotlin.String))
-- [java.lang.System#mapLibraryName(String)](https://developer.android.com/reference/kotlin/java/lang/System#mapLibraryName(kotlin.String)) 
+- [java.lang.System#loadLibrary(String)](../java/lang/System.md))
+- [java.lang.System#mapLibraryName(String)](../java/lang/System.md)) 
 
 ### findLoadedClass
 
@@ -728,15 +728,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected fun findLoadedClass(name: String!): Class<*>!
 ```
 
-Returns the class with the given [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) if this loader has been recorded by the Java virtual machine as an initiating loader of a class with that [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). Otherwise`null`is returned.
+Returns the class with the given [binary name](../java/lang/ClassLoader.md) if this loader has been recorded by the Java virtual machine as an initiating loader of a class with that [binary name](../java/lang/ClassLoader.md). Otherwise`null`is returned.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](../java/lang/ClassLoader.md) of the class |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The`Class`object, or`null`if the class has not been loaded |
+| [Class](../java/lang/Class.md)<*>! | The`Class`object, or`null`if the class has not been loaded |
 
 ### findResource
 
@@ -754,7 +754,7 @@ Finds the resource with the given name. Class loader implementations should over
 
 | Return ||
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | `URL`object for reading the resource;`null`if the resource could not be found, a`URL`could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
+| [URL](../java/net/URL.md)! | `URL`object for reading the resource;`null`if the resource could not be found, a`URL`could not be constructed to locate the resource, the resource is in a package that is not opened unconditionally, or access to the resource is denied by the security manager. |
 
 ### findResources
 
@@ -764,7 +764,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun findResources(name: String!): Enumeration<URL!>!
 ```
 
-Returns an enumeration of [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) objects representing all the resources with the given name. Class loader implementations should override this method.
+Returns an enumeration of [URL](../java/net/URL.md) objects representing all the resources with the given name. Class loader implementations should override this method.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------|
@@ -772,7 +772,7 @@ Returns an enumeration of [URL](https://developer.android.com/reference/kotlin/j
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!>! | An enumeration of [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
+| [Enumeration](../java/util/Enumeration.md)< [URL](../java/net/URL.md)!>! | An enumeration of [URL](../java/net/URL.md) objects for the resource. If no resources could be found, the enumeration will be empty. Resources for which a`URL`cannot be constructed, are in a package that is not opened unconditionally, or access to the resource is denied by the security manager, are not returned in the enumeration. |
 
 | Exceptions ||
 |-----------------------|---------------------|
@@ -786,17 +786,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected fun findSystemClass(name: String!): Class<*>!
 ```
 
-Finds a class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name), loading it if necessary.
+Finds a class with the specified [binary name](../java/lang/ClassLoader.md), loading it if necessary.
 
-This method loads the class through the system class loader (see [getSystemClassLoader()](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemClassLoader())). The`Class`object returned might have more than one`ClassLoader`associated with it. Subclasses of`ClassLoader`need not usually invoke this method, because most class loaders need to override just [findClass(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findClass(kotlin.String)).
+This method loads the class through the system class loader (see [getSystemClassLoader()](../java/lang/ClassLoader.md))). The`Class`object returned might have more than one`ClassLoader`associated with it. Subclasses of`ClassLoader`need not usually invoke this method, because most class loaders need to override just [findClass(java.lang.String)](../java/lang/ClassLoader.md)).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](../java/lang/ClassLoader.md) of the class |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The`Class`object for the specified`name` |
+| [Class](../java/lang/Class.md)<*>! | The`Class`object for the specified`name` |
 
 | Exceptions ||
 |------------------------------------|---------------------------------|
@@ -804,7 +804,7 @@ This method loads the class through the system class loader (see [getSystemClass
 
 **See Also**
 
-- [#ClassLoader(ClassLoader)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#ClassLoader(java.lang.ClassLoader))
+- [#ClassLoader(ClassLoader)](../java/lang/ClassLoader.md))
 - <https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getParent()> 
 
 ### getPackage
@@ -818,17 +818,17 @@ protected open fun getPackage(name: String!): Package!
 
 **Deprecated:** *If multiple class loaders delegate to each other and define classes with the same package name, and one such loader relies on the lookup behavior of`getPackage`to return a`Package`from a parent loader, then the properties exposed by the`Package`may not be as expected in the rest of the program. For example, the`Package`will only expose annotations from the`package-info.class`file defined by the parent loader, even if annotations exist in a`package-info.class`file defined by a child loader.*
 
-Finds a package by [name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) in this class loader and its ancestors.
+Finds a package by [name](../java/lang/ClassLoader.md) in this class loader and its ancestors.
 
 If this class loader defines a`Package`of the given name, the`Package`is returned. Otherwise, the ancestors of this class loader are searched recursively (parent by parent) for a`Package`of the given name.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [package name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [package name](../java/lang/ClassLoader.md) |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [Package](https://developer.android.com/reference/kotlin/java/lang/Package)! | The`Package`of the given name that has been defined by this class loader or its ancestors, or`null`if not found. |
+| [Package](../java/lang/Package.md)! | The`Package`of the given name that has been defined by this class loader or its ancestors, or`null`if not found. |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -846,7 +846,7 @@ Returns all of the`Package`s that have been defined by this class loader and its
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Package](https://developer.android.com/reference/kotlin/java/lang/Package)!>! | The array of`Package`objects that have been defined by this class loader and its ancestors |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Package](../java/lang/Package.md)!>! | The array of`Package`objects that have been defined by this class loader and its ancestors |
 
 ### loadClass
 
@@ -859,26 +859,26 @@ protected open fun loadClass(
 ): Class<*>!
 ```
 
-Loads the class with the specified [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name). The default implementation of this method searches for classes in the following order:
+Loads the class with the specified [binary name](../java/lang/ClassLoader.md). The default implementation of this method searches for classes in the following order:
 
-1. Invoke [findLoadedClass(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findLoadedClass(kotlin.String))to check if the class has already been loaded.
-2. Invoke the [loadClass](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#loadClass(kotlin.String))method on the parent class loader. If the parent is`null`the class loader built into the virtual machine is used, instead.
-3. Invoke the [findClass(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findClass(kotlin.String))method to find the class.
+1. Invoke [findLoadedClass(java.lang.String)](../java/lang/ClassLoader.md))to check if the class has already been loaded.
+2. Invoke the [loadClass](../java/lang/ClassLoader.md))method on the parent class loader. If the parent is`null`the class loader built into the virtual machine is used, instead.
+3. Invoke the [findClass(java.lang.String)](../java/lang/ClassLoader.md))method to find the class.
 
 <br />
 
-If the class was found using the above steps, and the`resolve`flag is true, this method will then invoke the [resolveClass(java.lang.Class)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#resolveClass(java.lang.Class))method on the resulting`Class`object.
+If the class was found using the above steps, and the`resolve`flag is true, this method will then invoke the [resolveClass(java.lang.Class)](../java/lang/ClassLoader.md))method on the resulting`Class`object.
 
-Subclasses of`ClassLoader`are encouraged to override [findClass(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findClass(kotlin.String)), rather than this method.
+Subclasses of`ClassLoader`are encouraged to override [findClass(java.lang.String)](../java/lang/ClassLoader.md)), rather than this method.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](https://developer.android.com/reference/kotlin/java/lang/ClassLoader#binary-name) of the class |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The [binary name](../java/lang/ClassLoader.md) of the class |
 | `resolve` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If`true`then resolve the class |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>! | The resulting`Class`object |
+| [Class](../java/lang/Class.md)<*>! | The resulting`Class`object |
 
 | Exceptions ||
 |------------------------------------|---------------------------------|
@@ -917,7 +917,7 @@ Links the specified class. This (misleadingly named) method may be used by a cla
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------|
-| `c` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>!:The class to link |
+| `c` | [Class](../java/lang/Class.md)\<\*\>!:The class to link |
 
 | Exceptions ||
 |----------------------------------|----------------|
@@ -942,5 +942,5 @@ Sets the signers of a class. This should be invoked after defining a class.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `c` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>!:The`Class`object |
+| `c` | [Class](../java/lang/Class.md)\<\*\>!:The`Class`object |
 | `signers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:The signers for the class |

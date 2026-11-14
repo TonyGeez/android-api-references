@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # FloatArrayEvaluator
 
-Kotlin| [Java](https://developer.android.com/reference/android/animation/FloatArrayEvaluator "View this page in Java") 
+Kotlin| [Java](../android/animation/FloatArrayEvaluator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class FloatArrayEvaluator : TypeEvaluator<FloatArray!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.FloatArrayEvaluator](https://developer.android.com/reference/kotlin/android/animation/FloatArrayEvaluator#) |
+| ↳ | [android.animation.FloatArrayEvaluator](../android/animation/FloatArrayEvaluator.md) |
 
 This evaluator can be used to perform type interpolation between`float[]`values. Each index into the array is treated as a separate value to interpolate. For example, evaluating`{100, 200}`and`{300, 400}`will interpolate the value at the first index between 100 and 300 and the value at the second index value between 200 and 400.
 
@@ -21,12 +21,12 @@ This evaluator can be used to perform type interpolation between`float[]`values.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FloatArrayEvaluator](https://developer.android.com/reference/kotlin/android/animation/FloatArrayEvaluator#FloatArrayEvaluator())`()` Create a FloatArrayEvaluator that does not reuse the animated value. |
-| [FloatArrayEvaluator](https://developer.android.com/reference/kotlin/android/animation/FloatArrayEvaluator#FloatArrayEvaluator(kotlin.FloatArray))`(`reuseArray:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Create a FloatArrayEvaluator that reuses`reuseArray`for every evaluate() call. |
+| [FloatArrayEvaluator](../android/animation/FloatArrayEvaluator.md))`()` Create a FloatArrayEvaluator that does not reuse the animated value. |
+| [FloatArrayEvaluator](../android/animation/FloatArrayEvaluator.md))`(`reuseArray:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Create a FloatArrayEvaluator that reuses`reuseArray`for every evaluate() call. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [evaluate](https://developer.android.com/reference/kotlin/android/animation/FloatArrayEvaluator#evaluate(kotlin.Float,%20kotlin.FloatArray,%20kotlin.FloatArray))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `endValue:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Interpolates the value at each index by the fraction. |
+| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [evaluate](../android/animation/FloatArrayEvaluator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `endValue:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Interpolates the value at each index by the fraction. |
 
 ## Public constructors
 
@@ -51,7 +51,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 FloatArrayEvaluator(reuseArray: FloatArray!)
 ```
 
-Create a FloatArrayEvaluator that reuses`reuseArray`for every evaluate() call. Caution must be taken to ensure that the value returned from [android.animation.ValueAnimator#getAnimatedValue()](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator#getAnimatedValue())is not cached, modified, or used across threads. The value will be modified on each`evaluate()`call.
+Create a FloatArrayEvaluator that reuses`reuseArray`for every evaluate() call. Caution must be taken to ensure that the value returned from [android.animation.ValueAnimator#getAnimatedValue()](../android/animation/ValueAnimator.md))is not cached, modified, or used across threads. The value will be modified on each`evaluate()`call.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------|

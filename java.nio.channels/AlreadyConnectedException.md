@@ -11,19 +11,19 @@ open class AlreadyConnectedException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.channels.AlreadyConnectedException](https://developer.android.com/reference/kotlin/java/nio/channels/AlreadyConnectedException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.AlreadyConnectedException](../java/nio/channels/AlreadyConnectedException.md) |
 
-Unchecked exception thrown when an attempt is made to connect a [SocketChannel](https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel) that is already connected.
+Unchecked exception thrown when an attempt is made to connect a [SocketChannel](../java/nio/channels/SocketChannel.md) that is already connected.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlreadyConnectedException](https://developer.android.com/reference/kotlin/java/nio/channels/AlreadyConnectedException#AlreadyConnectedException())`()` Constructs an instance of this class. |
+| [AlreadyConnectedException](../java/nio/channels/AlreadyConnectedException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

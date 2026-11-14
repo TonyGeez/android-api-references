@@ -2,7 +2,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # TrainingExampleRecord
 
-Kotlin | [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingExampleRecord "View this page in Java")
+Kotlin | [Java](../android/adservices/ondevicepersonalization/TrainingExampleRecord.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TrainingExampleRecord : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.TrainingExampleRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#) |
+| ↳ | [android.adservices.ondevicepersonalization.TrainingExampleRecord](../android/adservices/ondevicepersonalization/TrainingExampleRecord.md) |
 
 One record of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesOutput`.
 
@@ -35,7 +35,7 @@ One record of `https://developer.android.com/reference/kotlin/android/adservices
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [TrainingExampleRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TrainingExampleRecord](../android/adservices/ondevicepersonalization/TrainingExampleRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExampleRecord#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -104,7 +104,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

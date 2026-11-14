@@ -2,7 +2,7 @@
 
 ## Classes
 
-| [FileOperationEnqueueResult](https://developer.android.com/reference/kotlin/android/os/storage/operations/FileOperationEnqueueResult) | Result of an operation enqueue request. |
+| [FileOperationEnqueueResult](../android/os/storage/operations/FileOperationEnqueueResult.md) | Result of an operation enqueue request. |
 | --- | --- |
-| [FileOperationRequest](https://developer.android.com/reference/kotlin/android/os/storage/operations/FileOperationRequest) | Encapsulates a request to Move, or Copy files. |
-| [FileOperationResult](https://developer.android.com/reference/kotlin/android/os/storage/operations/FileOperationResult) | Represents the result of a file operation. |
+| [FileOperationRequest](../android/os/storage/operations/FileOperationRequest.md) | Encapsulates a request to Move, or Copy files. |
+| [FileOperationResult](../android/os/storage/operations/FileOperationResult.md) | Represents the result of a file operation. |

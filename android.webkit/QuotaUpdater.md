@@ -5,26 +5,26 @@ Deprecated in [API level 19](https://developer.android.com/guide/topics/manifest
 
 # QuotaUpdater
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebStorage.QuotaUpdater "View this page in Java") 
+Kotlin| [Java](../android/webkit/WebStorage.QuotaUpdater.md) 
 | --- | --- |
 
 ```
 interface QuotaUpdater
 ```
 
-| [android.webkit.WebStorage.QuotaUpdater](https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater#) |
+| [android.webkit.WebStorage.QuotaUpdater](../android/webkit/WebStorage.QuotaUpdater.md) |
 
 | **This interface was deprecated in API level 19.**
 |
 | This class is obsolete and no longer used.
 
-Encapsulates a callback function which is used to provide a new quota for a JavaScript storage API. See [WebChromeClient.onExceededDatabaseQuota](https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onExceededDatabaseQuota(kotlin.String,%20kotlin.String,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20android.webkit.WebStorage.QuotaUpdater)).
+Encapsulates a callback function which is used to provide a new quota for a JavaScript storage API. See [WebChromeClient.onExceededDatabaseQuota](../android/webkit/WebChromeClient.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateQuota](https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater#updateQuota(kotlin.Long))`(`newQuota:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Provides a new quota, specified in bytes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateQuota](../android/webkit/WebStorage.QuotaUpdater.md))`(`newQuota:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Provides a new quota, specified in bytes. |
 
 ## Public methods
 

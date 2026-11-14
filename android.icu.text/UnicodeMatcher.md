@@ -4,19 +4,19 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UnicodeMatcher
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/UnicodeMatcher "View this page in Java") 
+Kotlin| [Java](../android/icu/text/UnicodeMatcher.md) 
 | --- | --- |
 
 ```
 interface UnicodeMatcher
 ```
 
-| [android.icu.text.UnicodeMatcher](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#) |
+| [android.icu.text.UnicodeMatcher](../android/icu/text/UnicodeMatcher.md) |
 
-| Known Direct Subclasses [UnicodeFilter](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeFilter) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------| | [UnicodeFilter](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeFilter) | `UnicodeFilter`defines a protocol for selecting a subset of the full range (U+0000 to U+FFFF) of Unicode characters. | |
+| Known Direct Subclasses [UnicodeFilter](../android/icu/text/UnicodeFilter.md) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------| | [UnicodeFilter](../android/icu/text/UnicodeFilter.md) | `UnicodeFilter`defines a protocol for selecting a subset of the full range (U+0000 to U+FFFF) of Unicode characters. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet) |------------------------------------------------------------------------------------------|-----------------------------------------------------------------| | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet) | A mutable set of Unicode characters and multicharacter strings. | |
+| Known Indirect Subclasses [UnicodeSet](../android/icu/text/UnicodeSet.md) |------------------------------------------------------------------------------------------|-----------------------------------------------------------------| | [UnicodeSet](../android/icu/text/UnicodeSet.md) | A mutable set of Unicode characters and multicharacter strings. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 `UnicodeMatcher`defines a protocol for objects that can match a range of characters in a Replaceable string.
@@ -25,19 +25,19 @@ interface UnicodeMatcher
 
 | Constants ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [ETHER](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#ETHER:kotlin.Char) The character at index i, where i \< contextStart || i \>= contextLimit, is ETHER. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [U_MATCH](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#U_MATCH:kotlin.Int) Constant returned by`matches()`indicating a complete match between the text and this matcher. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [U_MISMATCH](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#U_MISMATCH:kotlin.Int) Constant returned by`matches()`indicating a mismatch between the text and this matcher. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [ETHER](../android/icu/text/UnicodeMatcher.md) The character at index i, where i \< contextStart || i \>= contextLimit, is ETHER. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [U_MATCH](../android/icu/text/UnicodeMatcher.md) Constant returned by`matches()`indicating a complete match between the text and this matcher. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [U_MISMATCH](../android/icu/text/UnicodeMatcher.md) Constant returned by`matches()`indicating a mismatch between the text and this matcher. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [U_PARTIAL_MATCH](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#U_PARTIAL_MATCH:kotlin.Int) Constant returned by`matches()`indicating a partial match between the text and this matcher. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [U_PARTIAL_MATCH](../android/icu/text/UnicodeMatcher.md) Constant returned by`matches()`indicating a partial match between the text and this matcher. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatchSetTo](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#addMatchSetTo(android.icu.text.UnicodeSet))`(`toUnionTo:` ` [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet)!`)` Union the set of all characters that may be matched by this object into the given set. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [matches](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#matches(android.icu.text.Replaceable,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Boolean))`(`text:` ` [Replaceable](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable)!`, `offset:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `incremental:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return a UMatchDegree value indicating the degree of match for the given text at the given offset. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesIndexValue](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#matchesIndexValue(kotlin.Int))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if this matcher will match a character c, where c \& 0xFF == v, at offset, in the forward direction (with limit \> offset). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatchSetTo](../android/icu/text/UnicodeMatcher.md))`(`toUnionTo:` ` [UnicodeSet](../android/icu/text/UnicodeSet.md)!`)` Union the set of all characters that may be matched by this object into the given set. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [matches](../android/icu/text/UnicodeMatcher.md))`(`text:` ` [Replaceable](../android/icu/text/Replaceable.md)!`, `offset:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `incremental:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return a UMatchDegree value indicating the degree of match for the given text at the given offset. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesIndexValue](../android/icu/text/UnicodeMatcher.md))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if this matcher will match a character c, where c \& 0xFF == v, at offset, in the forward direction (with limit \> offset). |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeMatcher#toPattern(kotlin.Boolean))`(`escapeUnprintable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a string representation of this matcher. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](../android/icu/text/UnicodeMatcher.md))`(`escapeUnprintable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a string representation of this matcher. |
 
 ## Constants
 
@@ -104,7 +104,7 @@ Union the set of all characters that may be matched by this object into the give
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `toUnionTo` | [UnicodeSet](https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet)!:the set into which to union the source characters |
+| `toUnionTo` | [UnicodeSet](../android/icu/text/UnicodeSet.md)!:the set into which to union the source characters |
 
 ### matches
 
@@ -123,7 +123,7 @@ Return a UMatchDegree value indicating the degree of match for the given text at
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Replaceable](https://developer.android.com/reference/kotlin/android/icu/text/Replaceable)!:the text to be matched |
+| `text` | [Replaceable](../android/icu/text/Replaceable.md)!:the text to be matched |
 | `offset` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:on input, the index into text at which to begin matching. On output, the limit of the matched text. The number of matched characters is the output value of offset minus the input value. Offset should always point to the HIGH SURROGATE (leading code unit) of a pair of surrogates, both on entry and upon return. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the limit index of text to be matched. Greater than offset for a forward direction match, less than offset for a backward direction match. The last character to be considered for matching will be text.charAt(limit-1) in the forward direction or text.charAt(limit+1) in the backward direction. |
 | --- | --- |

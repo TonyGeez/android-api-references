@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # AccessibilityButtonController
 
-Kotlin | [Java](https://developer.android.com/reference/android/accessibilityservice/AccessibilityButtonController "View this page in Java")
+Kotlin | [Java](../android/accessibilityservice/AccessibilityButtonController.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AccessibilityButtonController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.accessibilityservice.AccessibilityButtonController](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController#) |
+| ↳ | [android.accessibilityservice.AccessibilityButtonController](../android/accessibilityservice/AccessibilityButtonController.md) |
 
 Controller for the accessibility button within the system's navigation area
 
@@ -65,7 +65,7 @@ Registers the provided `https://developer.android.com/reference/kotlin/android/a
 
 | Parameters ||
 |---|---|
-| `callback` | [AccessibilityButtonController.AccessibilityButtonCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback): the callback to add, must be non-null |
+| `callback` | [AccessibilityButtonController.AccessibilityButtonCallback](../android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback.md): the callback to add, must be non-null |
 
 ### registerAccessibilityButtonCallback
 
@@ -82,8 +82,8 @@ Registers the provided `https://developer.android.com/reference/kotlin/android/a
 
 | Parameters ||
 |---|---|
-| `callback` | [AccessibilityButtonController.AccessibilityButtonCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback): the callback to add, must be non-null |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#): the handler on which the callback should execute, must be non-null |
+| `callback` | [AccessibilityButtonController.AccessibilityButtonCallback](../android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback.md): the callback to add, must be non-null |
+| `handler` | [Handler](../android/os/Handler.md): the handler on which the callback should execute, must be non-null |
 
 ### unregisterAccessibilityButtonCallback
 
@@ -97,4 +97,4 @@ Unregisters the provided `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `callback` | [AccessibilityButtonController.AccessibilityButtonCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback): the callback to remove, must be non-null |
+| `callback` | [AccessibilityButtonController.AccessibilityButtonCallback](../android/accessibilityservice/AccessibilityButtonController.AccessibilityButtonCallback.md): the callback to remove, must be non-null |

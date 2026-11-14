@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnBufferingUpdateListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnBufferingUpdateListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaPlayer.OnBufferingUpdateListener.md) 
 | --- | --- |
 
 ```
 interface OnBufferingUpdateListener
 ```
 
-| [android.media.MediaPlayer.OnBufferingUpdateListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnBufferingUpdateListener#) |
+| [android.media.MediaPlayer.OnBufferingUpdateListener](../android/media/MediaPlayer.OnBufferingUpdateListener.md) |
 
 Interface definition of a callback to be invoked indicating buffering status of a media resource being streamed over the network.
 
@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked indicating buffering status of 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBufferingUpdate](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnBufferingUpdateListener#onBufferingUpdate(android.media.MediaPlayer,%20kotlin.Int))`(`mp:` ` [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!`, `percent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to update status in buffering a media stream received through progressive HTTP download. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBufferingUpdate](../android/media/MediaPlayer.OnBufferingUpdateListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `percent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to update status in buffering a media stream received through progressive HTTP download. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called to update status in buffering a media stream received through progressive
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the MediaPlayer the update pertains to |
+| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer the update pertains to |
 | `percent` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the percentage (0-100) of the content that has been buffered or played thus far |

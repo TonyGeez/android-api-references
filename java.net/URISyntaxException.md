@@ -11,8 +11,8 @@ open class URISyntaxException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [java.net.URISyntaxException](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [java.net.URISyntaxException](../java/net/URISyntaxException.md) |
 | --- | --- | --- | --- |
 
 Checked exception thrown to indicate that a string could not be parsed as a URI reference.
@@ -21,19 +21,19 @@ Checked exception thrown to indicate that a string could not be parsed as a URI 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [URISyntaxException](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#URISyntaxException(kotlin.String,%20kotlin.String))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance from the given input string and reason. |
-| [URISyntaxException](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#URISyntaxException(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance from the given input string, reason, and error index. |
+| [URISyntaxException](../java/net/URISyntaxException.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance from the given input string and reason. |
+| [URISyntaxException](../java/net/URISyntaxException.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance from the given input string, reason, and error index. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#getIndex())`()` Returns an index into the input string of the position at which the parse error occurred, or`-1`if this position is not known. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInput](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#getInput())`()` Returns the input string. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#getReason())`()` Returns a string explaining why the input string could not be parsed. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../java/net/URISyntaxException.md))`()` Returns an index into the input string of the position at which the parse error occurred, or`-1`if this position is not known. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInput](../java/net/URISyntaxException.md))`()` Returns the input string. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](../java/net/URISyntaxException.md))`()` Returns a string explaining why the input string could not be parsed. |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/net/URISyntaxException#message:kotlin.String) Returns a string describing the parse error. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/net/URISyntaxException.md) Returns a string describing the parse error. |
 
 ## Public constructors
 

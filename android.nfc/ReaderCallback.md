@@ -4,24 +4,24 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # ReaderCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/NfcAdapter.ReaderCallback "View this page in Java") 
+Kotlin| [Java](../android/nfc/NfcAdapter.ReaderCallback.md) 
 | --- | --- |
 
 ```
 interface ReaderCallback
 ```
 
-| [android.nfc.NfcAdapter.ReaderCallback](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.ReaderCallback#) |
+| [android.nfc.NfcAdapter.ReaderCallback](../android/nfc/NfcAdapter.ReaderCallback.md) |
 
 A callback to be invoked when the system finds a tag while the foreground activity is operating in reader mode.
 
-Register your`ReaderCallback`implementation with [android.nfc.NfcAdapter#enableReaderMode](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle))and disable it with [android.nfc.NfcAdapter#disableReaderMode](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#disableReaderMode(android.app.Activity)).
+Register your`ReaderCallback`implementation with [android.nfc.NfcAdapter#enableReaderMode](../android/nfc/NfcAdapter.md))and disable it with [android.nfc.NfcAdapter#disableReaderMode](../android/nfc/NfcAdapter.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTagDiscovered](https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.ReaderCallback#onTagDiscovered(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTagDiscovered](../android/nfc/NfcAdapter.ReaderCallback.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` <br /> |
 
 ## Public methods
 

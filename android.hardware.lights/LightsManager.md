@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # LightsManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/lights/LightsManager "View this page in Java") 
+Kotlin| [Java](../android/hardware/lights/LightsManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class LightsManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.lights.LightsManager](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager#) |
+| ↳ | [android.hardware.lights.LightsManager](../android/hardware/lights/LightsManager.md) |
 
 The LightsManager class allows control over device lights.
 
@@ -21,13 +21,13 @@ The LightsManager class allows control over device lights.
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [LightsSession](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager.LightsSession) Encapsulates a session that can be used to control device lights and represents the lifetime of the requests. |
+| abstract | [LightsSession](../android/hardware/lights/LightsManager.LightsSession.md) Encapsulates a session that can be used to control device lights and represents the lifetime of the requests. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [LightState](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState) | [getLightState](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager#getLightState(android.hardware.lights.Light))`(`light:` ` [Light](https://developer.android.com/reference/kotlin/android/hardware/lights/Light)`)` Returns the state of a specified light. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Light](https://developer.android.com/reference/kotlin/android/hardware/lights/Light)!\> | [getLights](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager#getLights())`()` Returns the lights available on the device. |
-| abstract [LightsManager.LightsSession](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager.LightsSession) | [openSession](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager#openSession())`()` Creates a new LightsSession that can be used to control the device lights. |
+| abstract [LightState](../android/hardware/lights/LightState.md) | [getLightState](../android/hardware/lights/LightsManager.md))`(`light:` ` [Light](../android/hardware/lights/Light.md)`)` Returns the state of a specified light. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Light](../android/hardware/lights/Light.md)!\> | [getLights](../android/hardware/lights/LightsManager.md))`()` Returns the lights available on the device. |
+| abstract [LightsManager.LightsSession](../android/hardware/lights/LightsManager.LightsSession.md) | [openSession](../android/hardware/lights/LightsManager.md))`()` Creates a new LightsSession that can be used to control the device lights. |
 | --- | --- |
 
 ## Public methods
@@ -44,11 +44,11 @@ Returns the state of a specified light.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------|
-| `light` | [Light](https://developer.android.com/reference/kotlin/android/hardware/lights/Light):This value cannot be`null`. |
+| `light` | [Light](../android/hardware/lights/Light.md):This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-----------------------------|
-| [LightState](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState) | This value cannot be`null`. |
+| [LightState](../android/hardware/lights/LightState.md) | This value cannot be`null`. |
 
 ### getLights
 
@@ -62,7 +62,7 @@ Returns the lights available on the device.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Light](https://developer.android.com/reference/kotlin/android/hardware/lights/Light)!> | A list of available lights This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Light](../android/hardware/lights/Light.md)!> | A list of available lights This value cannot be`null`. |
 
 ### openSession
 
@@ -76,4 +76,4 @@ Creates a new LightsSession that can be used to control the device lights.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [LightsManager.LightsSession](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager.LightsSession) | This value cannot be`null`. |
+| [LightsManager.LightsSession](../android/hardware/lights/LightsManager.LightsSession.md) | This value cannot be`null`. |

@@ -4,22 +4,22 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # OnClearApplicationUserDataListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener "View this page in Java") 
+Kotlin| [Java](../android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.md) 
 | --- | --- |
 
 ```
 interface OnClearApplicationUserDataListener
 ```
 
-| [android.app.admin.DevicePolicyManager.OnClearApplicationUserDataListener](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener#) |
+| [android.app.admin.DevicePolicyManager.OnClearApplicationUserDataListener](../android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.md) |
 
-Callback used in [clearApplicationUserData](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#clearApplicationUserData(android.content.ComponentName,%20kotlin.String,%20java.util.concurrent.Executor,%20android.app.admin.DevicePolicyManager.OnClearApplicationUserDataListener))to indicate that the clearing of an application's user data is done.
+Callback used in [clearApplicationUserData](../android/app/admin/DevicePolicyManager.md))to indicate that the clearing of an application's user data is done.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onApplicationUserDataCleared](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener#onApplicationUserDataCleared(kotlin.String,%20kotlin.Boolean))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `succeeded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Method invoked when clearing the application user data has completed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onApplicationUserDataCleared](../android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `succeeded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Method invoked when clearing the application user data has completed. |
 
 ## Public methods
 

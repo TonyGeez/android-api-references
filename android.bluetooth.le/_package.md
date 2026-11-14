@@ -2,30 +2,30 @@
 
 # android.bluetooth.le
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/le/package-summary "View this page in Java")
+Kotlin| [Java](../android/bluetooth/le/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [AdvertiseCallback](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseCallback) | Bluetooth LE advertising callbacks, used to deliver advertising operation status. |
+| [AdvertiseCallback](../android/bluetooth/le/AdvertiseCallback.md) | Bluetooth LE advertising callbacks, used to deliver advertising operation status. |
 | --- | --- |
-| [AdvertiseData](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseData) | Advertise data packet container for Bluetooth LE advertising. |
-| [AdvertiseSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings) | The [AdvertiseSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertiseSettings) provide a way to adjust advertising preferences for each Bluetooth LE advertisement instance. |
-| [AdvertisingSet](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSet) | This class provides a way to control single Bluetooth LE advertising instance. |
+| [AdvertiseData](../android/bluetooth/le/AdvertiseData.md) | Advertise data packet container for Bluetooth LE advertising. |
+| [AdvertiseSettings](../android/bluetooth/le/AdvertiseSettings.md) | The [AdvertiseSettings](../android/bluetooth/le/AdvertiseSettings.md) provide a way to adjust advertising preferences for each Bluetooth LE advertisement instance. |
+| [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md) | This class provides a way to control single Bluetooth LE advertising instance. |
 | --- | --- |
-| [AdvertisingSetCallback](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetCallback) | Bluetooth LE advertising set callbacks, used to deliver advertising operation status. |
-| [AdvertisingSetParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters) | The [AdvertisingSetParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters) provide a way to adjust advertising preferences for each Bluetooth LE advertising set. |
-| [BluetoothLeAdvertiser](https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeAdvertiser) | This class provides a way to perform Bluetooth LE advertise operations, such as starting and stopping advertising. |
+| [AdvertisingSetCallback](../android/bluetooth/le/AdvertisingSetCallback.md) | Bluetooth LE advertising set callbacks, used to deliver advertising operation status. |
+| [AdvertisingSetParameters](../android/bluetooth/le/AdvertisingSetParameters.md) | The [AdvertisingSetParameters](../android/bluetooth/le/AdvertisingSetParameters.md) provide a way to adjust advertising preferences for each Bluetooth LE advertising set. |
+| [BluetoothLeAdvertiser](../android/bluetooth/le/BluetoothLeAdvertiser.md) | This class provides a way to perform Bluetooth LE advertise operations, such as starting and stopping advertising. |
 | --- | --- |
-| [BluetoothLeScanner](https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner) | This class provides methods to perform scan related operations for Bluetooth LE devices. |
-| [PeriodicAdvertisingParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters) | The [PeriodicAdvertisingParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/PeriodicAdvertisingParameters) provide a way to adjust periodic advertising preferences for each Bluetooth LE advertising set. |
-| [ScanCallback](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback) | Bluetooth LE scan callbacks. |
+| [BluetoothLeScanner](../android/bluetooth/le/BluetoothLeScanner.md) | This class provides methods to perform scan related operations for Bluetooth LE devices. |
+| [PeriodicAdvertisingParameters](../android/bluetooth/le/PeriodicAdvertisingParameters.md) | The [PeriodicAdvertisingParameters](../android/bluetooth/le/PeriodicAdvertisingParameters.md) provide a way to adjust periodic advertising preferences for each Bluetooth LE advertising set. |
+| [ScanCallback](../android/bluetooth/le/ScanCallback.md) | Bluetooth LE scan callbacks. |
 | --- | --- |
-| [ScanFilter](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter) | Criteria for filtering result from Bluetooth LE scans. |
-| [ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord) | Represents a scan record from Bluetooth LE scan. |
-| [ScanResult](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult) | ScanResult for Bluetooth LE scan. |
+| [ScanFilter](../android/bluetooth/le/ScanFilter.md) | Criteria for filtering result from Bluetooth LE scans. |
+| [ScanRecord](../android/bluetooth/le/ScanRecord.md) | Represents a scan record from Bluetooth LE scan. |
+| [ScanResult](../android/bluetooth/le/ScanResult.md) | ScanResult for Bluetooth LE scan. |
 | --- | --- |
-| [ScanSettings](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings) | Bluetooth LE scan settings are passed to android. |
-| [TransportBlock](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock) | Wrapper for Transport Discovery Data Transport Blocks. |
-| [TransportDiscoveryData](https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportDiscoveryData) | Wrapper for Transport Discovery Data AD Type. |
+| [ScanSettings](../android/bluetooth/le/ScanSettings.md) | Bluetooth LE scan settings are passed to android. |
+| [TransportBlock](../android/bluetooth/le/TransportBlock.md) | Wrapper for Transport Discovery Data Transport Blocks. |
+| [TransportDiscoveryData](../android/bluetooth/le/TransportDiscoveryData.md) | Wrapper for Transport Discovery Data AD Type. |
 | --- | --- |

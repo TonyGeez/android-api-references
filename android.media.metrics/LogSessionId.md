@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # LogSessionId
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/metrics/LogSessionId "View this page in Java") 
+Kotlin| [Java](../android/media/metrics/LogSessionId.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class LogSessionId
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#) |
+| ↳ | [android.media.metrics.LogSessionId](../android/media/metrics/LogSessionId.md) |
 
 An instances of this class represents the ID of a log session.
 
@@ -21,15 +21,15 @@ An instances of this class represents the ID of a log session.
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getStringId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#getStringId())`()` Returns the ID represented by a string. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#hashCode())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/metrics/LogSessionId.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getStringId](../android/media/metrics/LogSessionId.md))`()` Returns the ID represented by a string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/metrics/LogSessionId.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/metrics/LogSessionId.md))`()` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#) | [LOG_SESSION_ID_NONE](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#LOG_SESSION_ID_NONE:android.media.metrics.LogSessionId) A [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#) object which is used to clear any existing session ID. |
+| static [LogSessionId](../android/media/metrics/LogSessionId.md) | [LOG_SESSION_ID_NONE](../android/media/metrics/LogSessionId.md) A [LogSessionId](../android/media/metrics/LogSessionId.md) object which is used to clear any existing session ID. |
 
 ## Public methods
 
@@ -110,4 +110,4 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val LOG_SESSION_ID_NONE: LogSessionId
 ```
 
-A [LogSessionId](https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#) object which is used to clear any existing session ID.
+A [LogSessionId](../android/media/metrics/LogSessionId.md) object which is used to clear any existing session ID.

@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # OverlayManager
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/om/OverlayManager "View this page in Java")
+Kotlin | [Java](../android/content/om/OverlayManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class OverlayManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.om.OverlayManager](https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#) |
+| ↳ | [android.content.om.OverlayManager](../android/content/om/OverlayManager.md) |
 
 OverlayManager gives apps the ability to create an `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction` to maintain the overlays and list the registered fabricated runtime resources overlays(FRROs).
 
@@ -26,7 +26,7 @@ OverlayManager returns the list of overlays to the app calling `https://develope
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#commit(android.content.om.OverlayManagerTransaction)(transaction: https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction)` Commit the overlay manager transaction. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OverlayInfo](https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo)!\> | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#getOverlayInfosForTarget(kotlin.String)(targetPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get the related information of self-targeting overlays for `targetPackageName`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OverlayInfo](../android/content/om/OverlayInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#getOverlayInfosForTarget(kotlin.String)(targetPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get the related information of self-targeting overlays for `targetPackageName`. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ Applications can register overlays and unregister the registered overlays in an 
 
 | Parameters ||
 |---|---|
-| `transaction` | [OverlayManagerTransaction](https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction): the series of overlay related requests to perform. This value cannot be `null`. |
+| `transaction` | [OverlayManagerTransaction](../android/content/om/OverlayManagerTransaction.md): the series of overlay related requests to perform. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

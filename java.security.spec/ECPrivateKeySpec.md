@@ -10,7 +10,7 @@ open class ECPrivateKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/ECPrivateKeySpec#) |
+| ↳ | [java.security.spec.ECPrivateKeySpec](../java/security/spec/ECPrivateKeySpec.md) |
 
 This immutable class specifies an elliptic curve private key with its associated parameters.
 
@@ -18,12 +18,12 @@ This immutable class specifies an elliptic curve private key with its associated
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/ECPrivateKeySpec#ECPrivateKeySpec(java.math.BigInteger,%20java.security.spec.ECParameterSpec))`(`s:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `params:` ` [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)!`)` Creates a new ECPrivateKeySpec with the specified parameter values. |
+| [ECPrivateKeySpec](../java/security/spec/ECPrivateKeySpec.md))`(`s:` ` [BigInteger](../java/math/BigInteger.md)!`, `params:` ` [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!`)` Creates a new ECPrivateKeySpec with the specified parameter values. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)! | [getParams](https://developer.android.com/reference/kotlin/java/security/spec/ECPrivateKeySpec#getParams())`()` Returns the associated elliptic curve domain parameters. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getS](https://developer.android.com/reference/kotlin/java/security/spec/ECPrivateKeySpec#getS())`()` Returns the private value S. |
+| open [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | [getParams](../java/security/spec/ECPrivateKeySpec.md))`()` Returns the associated elliptic curve domain parameters. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getS](../java/security/spec/ECPrivateKeySpec.md))`()` Returns the private value S. |
 
 ## Public constructors
 
@@ -41,8 +41,8 @@ Creates a new ECPrivateKeySpec with the specified parameter values.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `s` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private value. |
-| `params` | [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)!:the associated elliptic curve domain parameters. |
+| `s` | [BigInteger](../java/math/BigInteger.md)!:the private value. |
+| `params` | [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!:the associated elliptic curve domain parameters. |
 
 | Exceptions ||
 |----------------------------------|-------------------------|
@@ -62,7 +62,7 @@ Returns the associated elliptic curve domain parameters.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|---------------------------|
-| [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec)! | the EC domain parameters. |
+| [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | the EC domain parameters. |
 
 ### getS
 
@@ -76,4 +76,4 @@ Returns the private value S.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the private value S. |
+| [BigInteger](../java/math/BigInteger.md)! | the private value S. |

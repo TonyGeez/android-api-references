@@ -8,11 +8,11 @@ abstract class CarrierMessagingService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.carrier.CarrierMessagingService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#) |
+| | | | ↳ | [android.service.carrier.CarrierMessagingService](../android/service/carrier/CarrierMessagingService.md) |
 
 A service that receives calls from the system when new SMS and MMS are sent or received.
 
@@ -560,7 +560,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1136,7 +1136,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onDownloadMms(android.net.Uri,%20kotlin.Int,%20android.net.Uri,%20android.service.carrier.CarrierMessagingService.ResultCallback)(contentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, location: https://developer.android.com/reference/kotlin/android/net/Uri.html#, callback: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Override this method to download MMSs received. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onFilterSms(android.service.carrier.MessagePdu,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20android.service.carrier.CarrierMessagingService.ResultCallback)(pdu: https://developer.android.com/reference/kotlin/android/service/carrier/MessagePdu, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, destPort: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Override this method to filter inbound SMS messages. |
 | --- | --- |
@@ -2615,7 +2615,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2656,9 +2656,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -3697,7 +3697,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3720,11 +3720,11 @@ Override this method to download MMSs received.
 
 | Parameters ||
 |---|---|
-| `contentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the content provider URI of the PDU to be downloaded. This value cannot be `null`. |
+| `contentUri` | [Uri](../android/net/Uri.md): the content provider URI of the PDU to be downloaded. This value cannot be `null`. |
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
-| `location` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the URI of the message to be downloaded. This value cannot be `null`. |
+| `location` | [Uri](../android/net/Uri.md): the URI of the message to be downloaded. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: result callback. Call with a status code which is one of `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_OK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_ERROR:kotlin.Int`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: result callback. Call with a status code which is one of `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_OK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_ERROR:kotlin.Int`. This value cannot be `null`. |
 
 ### onFilterSms
 
@@ -3747,12 +3747,12 @@ Override this method to filter inbound SMS messages.
 
 | Parameters ||
 |---|---|
-| `pdu` | [MessagePdu](https://developer.android.com/reference/kotlin/android/service/carrier/MessagePdu): the PDUs of the message. This value cannot be `null`. |
+| `pdu` | [MessagePdu](../android/service/carrier/MessagePdu.md): the PDUs of the message. This value cannot be `null`. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the format of the PDUs, typically "3gpp" or "3gpp2". This value cannot be `null`. |
 | `destPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the destination port of a binary SMS, this will be -1 for text SMS |
 | --- | --- |
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: result callback. Call with `true` to keep an inbound SMS message and deliver to SMS apps, and `false` to drop the message. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: result callback. Call with `true` to keep an inbound SMS message and deliver to SMS apps, and `false` to drop the message. This value cannot be `null`. |
 
 ### onReceiveTextSms
 
@@ -3774,12 +3774,12 @@ This method will be called once for every incoming text SMS. You can invoke the 
 
 | Parameters ||
 |---|---|
-| `pdu` | [MessagePdu](https://developer.android.com/reference/kotlin/android/service/carrier/MessagePdu): the PDUs of the message. This value cannot be `null`. |
+| `pdu` | [MessagePdu](../android/service/carrier/MessagePdu.md): the PDUs of the message. This value cannot be `null`. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the format of the PDUs, typically "3gpp" or "3gpp2". This value cannot be `null`. |
 | `destPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the destination port of a binary SMS, this will be -1 for text SMS |
 | --- | --- |
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: result callback. Call with a bitmask integer to indicate how the incoming text SMS should be handled by the platform. Use `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#RECEIVE_OPTIONS_DROP:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE:kotlin.Int` to set the flags in the bitmask. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: result callback. Call with a bitmask integer to indicate how the incoming text SMS should be handled by the platform. Use `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#RECEIVE_OPTIONS_DROP:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE:kotlin.Int` to set the flags in the bitmask. This value cannot be `null`. |
 
 ### onSendDataSms
 
@@ -3807,7 +3807,7 @@ Override this method to intercept binary SMSs sent from the device.
 | `destAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): phone number of the recipient of the message. This value cannot be `null`. |
 | --- | --- |
 | `destPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the destination port |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [CarrierMessagingService.SendSmsResult](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendSmsResult](../android/service/carrier/CarrierMessagingService.SendSmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |
 
 ### onSendDataSms
 
@@ -3834,7 +3834,7 @@ Override this method to intercept binary SMSs sent from the device.
 | --- | --- |
 | `destPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the destination port |
 | `sendSmsFlag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flag for sending SMS. Acceptable values are 0 and `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#SEND_FLAG_REQUEST_DELIVERY_STATUS:kotlin.Int`. |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [CarrierMessagingService.SendSmsResult](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendSmsResult](../android/service/carrier/CarrierMessagingService.SendSmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |
 | --- | --- |
 
 ### onSendMms
@@ -3854,11 +3854,11 @@ Override this method to intercept MMSs sent from the device.
 
 | Parameters ||
 |---|---|
-| `pduUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): the content provider URI of the PDU to send. This value cannot be `null`. |
+| `pduUri` | [Uri](../android/net/Uri.md): the content provider URI of the PDU to send. This value cannot be `null`. |
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
-| `location` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: the optional URI to send this MMS PDU. If this is {code null}, the PDU should be sent to the default MMSC URL. |
+| `location` | [Uri](../android/net/Uri.md)?: the optional URI to send this MMS PDU. If this is {code null}, the PDU should be sent to the default MMSC URL. |
 | --- | --- |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [CarrierMessagingService.SendMmsResult](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMmsResult)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMmsResult`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendMmsResult](../android/service/carrier/CarrierMessagingService.SendMmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMmsResult`. This value cannot be `null`. |
 
 ### onSendMultipartTextSms
 
@@ -3884,7 +3884,7 @@ Override this method to intercept long SMSs sent from the device.
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
 | `destAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): phone number of the recipient of the message. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [CarrierMessagingService.SendMultipartSmsResult](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendMultipartSmsResult](../android/service/carrier/CarrierMessagingService.SendMultipartSmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult`. This value cannot be `null`. |
 
 ### onSendMultipartTextSms
 
@@ -3909,7 +3909,7 @@ Override this method to intercept long SMSs sent from the device.
 | `destAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): phone number of the recipient of the message. This value cannot be `null`. |
 | --- | --- |
 | `sendSmsFlag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flag for sending SMS. Acceptable values are 0 and `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#SEND_FLAG_REQUEST_DELIVERY_STATUS:kotlin.Int`. |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [CarrierMessagingService.SendMultipartSmsResult](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendMultipartSmsResult](../android/service/carrier/CarrierMessagingService.SendMultipartSmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult`. This value cannot be `null`. |
 
 ### onSendTextSms
 
@@ -3935,7 +3935,7 @@ Override this method to intercept text SMSs sent from the device.
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
 | `destAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): phone number of the recipient of the message. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [CarrierMessagingService.SendSmsResult](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendSmsResult](../android/service/carrier/CarrierMessagingService.SendSmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |
 
 ### onSendTextSms
 
@@ -3960,4 +3960,4 @@ Override this method to intercept text SMSs sent from the device.
 | `destAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): phone number of the recipient of the message. This value cannot be `null`. |
 | --- | --- |
 | `sendSmsFlag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flag for sending SMS. Acceptable values are 0 and `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#SEND_FLAG_REQUEST_DELIVERY_STATUS:kotlin.Int`. |
-| `callback` | [CarrierMessagingService.ResultCallback](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback)\< [CarrierMessagingService.SendSmsResult](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |
+| `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendSmsResult](../android/service/carrier/CarrierMessagingService.SendSmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendSmsResult`. This value cannot be `null`. |

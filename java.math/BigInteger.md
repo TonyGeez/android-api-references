@@ -11,7 +11,7 @@ open class BigInteger : Number, Comparable<BigInteger!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.math.BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) |
+| | ↳ | [java.math.BigInteger](../java/math/BigInteger.md) |
 
 Immutable arbitrary-precision integers. All operations behave as if BigIntegers were represented in two's-complement notation (like Java's primitive integer types). BigInteger provides analogues to all of Java's primitive integer operators, and all relevant methods from java.lang.Math. Additionally, BigInteger provides operations for modular arithmetic, GCD calculation, primality testing, prime generation, bit manipulation, and a few other miscellaneous operations.
 
@@ -35,91 +35,91 @@ All methods and constructors in this class throw`NullPointerException`when passe
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.ByteArray))`(`val:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Translates a byte array containing the two's-complement binary representation of a BigInteger into a BigInteger. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`val:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates a byte sub-array containing the two's-complement binary representation of a BigInteger into a BigInteger. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.Int,%20kotlin.ByteArray))`(`signum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `magnitude:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Translates the sign-magnitude representation of a BigInteger into a BigInteger. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`signum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `magnitude:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates the sign-magnitude representation of a BigInteger into a BigInteger. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.Int,%20kotlin.Int,%20java.util.Random))`(`bitLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certainty:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rnd:` ` [Random](https://developer.android.com/reference/kotlin/java/util/Random.html#)`)` Constructs a randomly generated positive BigInteger that is probably prime, with the specified bitLength. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.Int,%20java.util.Random))`(`numBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rnd:` ` [Random](https://developer.android.com/reference/kotlin/java/util/Random.html#)`)` Constructs a randomly generated BigInteger, uniformly distributed over the range 0 to (2`numBits`- 1), inclusive. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.String))`(`val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Translates the decimal String representation of a BigInteger into a BigInteger. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.String,%20kotlin.Int))`(`val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates the String representation of a BigInteger in the specified radix into a BigInteger. |
+| [BigInteger](../java/math/BigInteger.md))`(`val:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Translates a byte array containing the two's-complement binary representation of a BigInteger into a BigInteger. |
+| [BigInteger](../java/math/BigInteger.md))`(`val:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates a byte sub-array containing the two's-complement binary representation of a BigInteger into a BigInteger. |
+| [BigInteger](../java/math/BigInteger.md))`(`signum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `magnitude:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Translates the sign-magnitude representation of a BigInteger into a BigInteger. |
+| [BigInteger](../java/math/BigInteger.md))`(`signum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `magnitude:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates the sign-magnitude representation of a BigInteger into a BigInteger. |
+| [BigInteger](../java/math/BigInteger.md))`(`bitLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certainty:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rnd:` ` [Random](../java/util/Random.md)`)` Constructs a randomly generated positive BigInteger that is probably prime, with the specified bitLength. |
+| [BigInteger](../java/math/BigInteger.md))`(`numBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rnd:` ` [Random](../java/util/Random.md)`)` Constructs a randomly generated BigInteger, uniformly distributed over the range 0 to (2`numBits`- 1), inclusive. |
+| [BigInteger](../java/math/BigInteger.md))`(`val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Translates the decimal String representation of a BigInteger into a BigInteger. |
+| [BigInteger](../java/math/BigInteger.md))`(`val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates the String representation of a BigInteger in the specified radix into a BigInteger. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [abs](https://developer.android.com/reference/kotlin/java/math/BigInteger#abs())`()` Returns a BigInteger whose value is the absolute value of this BigInteger. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [add](https://developer.android.com/reference/kotlin/java/math/BigInteger#add(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this + val)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [and](https://developer.android.com/reference/kotlin/java/math/BigInteger#and(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this & val)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [abs](../java/math/BigInteger.md))`()` Returns a BigInteger whose value is the absolute value of this BigInteger. |
+| open [BigInteger](../java/math/BigInteger.md) | [add](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this + val)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [and](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this & val)`. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [andNot](https://developer.android.com/reference/kotlin/java/math/BigInteger#andNot(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this & ~val)`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitCount](https://developer.android.com/reference/kotlin/java/math/BigInteger#bitCount())`()` Returns the number of bits in the two's complement representation of this BigInteger that differ from its sign bit. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitLength](https://developer.android.com/reference/kotlin/java/math/BigInteger#bitLength())`()` Returns the number of bits in the minimal two's-complement representation of this BigInteger,*excluding*a sign bit. |
+| open [BigInteger](../java/math/BigInteger.md) | [andNot](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this & ~val)`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitCount](../java/math/BigInteger.md))`()` Returns the number of bits in the two's complement representation of this BigInteger that differ from its sign bit. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitLength](../java/math/BigInteger.md))`()` Returns the number of bits in the minimal two's-complement representation of this BigInteger,*excluding*a sign bit. |
 | --- | --- |
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [byteValueExact](https://developer.android.com/reference/kotlin/java/math/BigInteger#byteValueExact())`()` Converts this`BigInteger`to a`byte`, checking for lost information. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [clearBit](https://developer.android.com/reference/kotlin/java/math/BigInteger#clearBit(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is equivalent to this BigInteger with the designated bit cleared. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/math/BigInteger#compareTo(java.math.BigInteger))`(`other:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Compares this BigInteger with the specified BigInteger. |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [byteValueExact](../java/math/BigInteger.md))`()` Converts this`BigInteger`to a`byte`, checking for lost information. |
+| open [BigInteger](../java/math/BigInteger.md) | [clearBit](../java/math/BigInteger.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is equivalent to this BigInteger with the designated bit cleared. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/math/BigInteger.md))`(`other:` ` [BigInteger](../java/math/BigInteger.md)`)` Compares this BigInteger with the specified BigInteger. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [divide](https://developer.android.com/reference/kotlin/java/math/BigInteger#divide(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this / val)`. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)!\> | [divideAndRemainder](https://developer.android.com/reference/kotlin/java/math/BigInteger#divideAndRemainder(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns an array of two BigIntegers containing`(this / val)`followed by`(this % val)`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/math/BigInteger#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this BigInteger with the specified Object for equality. |
+| open [BigInteger](../java/math/BigInteger.md) | [divide](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this / val)`. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BigInteger](../java/math/BigInteger.md)!\> | [divideAndRemainder](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns an array of two BigIntegers containing`(this / val)`followed by`(this % val)`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/math/BigInteger.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this BigInteger with the specified Object for equality. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [flipBit](https://developer.android.com/reference/kotlin/java/math/BigInteger#flipBit(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is equivalent to this BigInteger with the designated bit flipped. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [gcd](https://developer.android.com/reference/kotlin/java/math/BigInteger#gcd(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is the greatest common divisor of`abs(this)`and`abs(val)`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLowestSetBit](https://developer.android.com/reference/kotlin/java/math/BigInteger#getLowestSetBit())`()` Returns the index of the rightmost (lowest-order) one bit in this BigInteger (the number of zero bits to the right of the rightmost one bit). |
+| open [BigInteger](../java/math/BigInteger.md) | [flipBit](../java/math/BigInteger.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is equivalent to this BigInteger with the designated bit flipped. |
+| open [BigInteger](../java/math/BigInteger.md) | [gcd](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is the greatest common divisor of`abs(this)`and`abs(val)`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLowestSetBit](../java/math/BigInteger.md))`()` Returns the index of the rightmost (lowest-order) one bit in this BigInteger (the number of zero bits to the right of the rightmost one bit). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/math/BigInteger#hashCode())`()` Returns the hash code for this BigInteger. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [intValueExact](https://developer.android.com/reference/kotlin/java/math/BigInteger#intValueExact())`()` Converts this`BigInteger`to an`int`, checking for lost information. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProbablePrime](https://developer.android.com/reference/kotlin/java/math/BigInteger#isProbablePrime(kotlin.Int))`(`certainty:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns`true`if this BigInteger is probably prime,`false`if it's definitely composite. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/math/BigInteger.md))`()` Returns the hash code for this BigInteger. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [intValueExact](../java/math/BigInteger.md))`()` Converts this`BigInteger`to an`int`, checking for lost information. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProbablePrime](../java/math/BigInteger.md))`(`certainty:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns`true`if this BigInteger is probably prime,`false`if it's definitely composite. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [longValueExact](https://developer.android.com/reference/kotlin/java/math/BigInteger#longValueExact())`()` Converts this`BigInteger`to a`long`, checking for lost information. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [max](https://developer.android.com/reference/kotlin/java/math/BigInteger#max(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns the maximum of this BigInteger and`val`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [min](https://developer.android.com/reference/kotlin/java/math/BigInteger#min(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns the minimum of this BigInteger and`val`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [longValueExact](../java/math/BigInteger.md))`()` Converts this`BigInteger`to a`long`, checking for lost information. |
+| open [BigInteger](../java/math/BigInteger.md) | [max](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns the maximum of this BigInteger and`val`. |
+| open [BigInteger](../java/math/BigInteger.md) | [min](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns the minimum of this BigInteger and`val`. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [mod](https://developer.android.com/reference/kotlin/java/math/BigInteger#mod(java.math.BigInteger))`(`m:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this mod m`). |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [modInverse](https://developer.android.com/reference/kotlin/java/math/BigInteger#modInverse(java.math.BigInteger))`(`m:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this`-1`mod m)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [modPow](https://developer.android.com/reference/kotlin/java/math/BigInteger#modPow(java.math.BigInteger,%20java.math.BigInteger))`(`exponent:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`, `m:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(thisexponent mod m)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [mod](../java/math/BigInteger.md))`(`m:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this mod m`). |
+| open [BigInteger](../java/math/BigInteger.md) | [modInverse](../java/math/BigInteger.md))`(`m:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this`-1`mod m)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [modPow](../java/math/BigInteger.md))`(`exponent:` ` [BigInteger](../java/math/BigInteger.md)`, `m:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(thisexponent mod m)`. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [multiply](https://developer.android.com/reference/kotlin/java/math/BigInteger#multiply(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this * val)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [negate](https://developer.android.com/reference/kotlin/java/math/BigInteger#negate())`()` Returns a BigInteger whose value is`(-this)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [nextProbablePrime](https://developer.android.com/reference/kotlin/java/math/BigInteger#nextProbablePrime())`()` Returns the first integer greater than this`BigInteger`that is probably prime. |
+| open [BigInteger](../java/math/BigInteger.md) | [multiply](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this * val)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [negate](../java/math/BigInteger.md))`()` Returns a BigInteger whose value is`(-this)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [nextProbablePrime](../java/math/BigInteger.md))`()` Returns the first integer greater than this`BigInteger`that is probably prime. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [not](https://developer.android.com/reference/kotlin/java/math/BigInteger#not())`()` Returns a BigInteger whose value is`(~this)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [or](https://developer.android.com/reference/kotlin/java/math/BigInteger#or(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this | val)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [pow](https://developer.android.com/reference/kotlin/java/math/BigInteger#pow(kotlin.Int))`(`exponent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is`(thisexponent)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [not](../java/math/BigInteger.md))`()` Returns a BigInteger whose value is`(~this)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [or](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this | val)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [pow](../java/math/BigInteger.md))`(`exponent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is`(thisexponent)`. |
 | --- | --- |
-| openstatic [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [probablePrime](https://developer.android.com/reference/kotlin/java/math/BigInteger#probablePrime(kotlin.Int,%20java.util.Random))`(`bitLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rnd:` ` [Random](https://developer.android.com/reference/kotlin/java/util/Random.html#)`)` Returns a positive BigInteger that is probably prime, with the specified bitLength. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [remainder](https://developer.android.com/reference/kotlin/java/math/BigInteger#remainder(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this % val)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [setBit](https://developer.android.com/reference/kotlin/java/math/BigInteger#setBit(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is equivalent to this BigInteger with the designated bit set. |
+| openstatic [BigInteger](../java/math/BigInteger.md) | [probablePrime](../java/math/BigInteger.md))`(`bitLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rnd:` ` [Random](../java/util/Random.md)`)` Returns a positive BigInteger that is probably prime, with the specified bitLength. |
+| open [BigInteger](../java/math/BigInteger.md) | [remainder](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this % val)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [setBit](../java/math/BigInteger.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is equivalent to this BigInteger with the designated bit set. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [shiftLeft](https://developer.android.com/reference/kotlin/java/math/BigInteger#shiftLeft(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is`(this << n)`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [shiftRight](https://developer.android.com/reference/kotlin/java/math/BigInteger#shiftRight(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is`(this >> n)`. |
-| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [shortValueExact](https://developer.android.com/reference/kotlin/java/math/BigInteger#shortValueExact())`()` Converts this`BigInteger`to a`short`, checking for lost information. |
+| open [BigInteger](../java/math/BigInteger.md) | [shiftLeft](../java/math/BigInteger.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is`(this << n)`. |
+| open [BigInteger](../java/math/BigInteger.md) | [shiftRight](../java/math/BigInteger.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a BigInteger whose value is`(this >> n)`. |
+| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [shortValueExact](../java/math/BigInteger.md))`()` Converts this`BigInteger`to a`short`, checking for lost information. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [signum](https://developer.android.com/reference/kotlin/java/math/BigInteger#signum())`()` Returns the signum function of this BigInteger. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [sqrt](https://developer.android.com/reference/kotlin/java/math/BigInteger#sqrt())`()` Returns the integer square root of this BigInteger. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)!\> | [sqrtAndRemainder](https://developer.android.com/reference/kotlin/java/math/BigInteger#sqrtAndRemainder())`()` Returns an array of two BigIntegers containing the integer square root`s`of`this`and its remainder`this - s*s`, respectively. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [signum](../java/math/BigInteger.md))`()` Returns the signum function of this BigInteger. |
+| open [BigInteger](../java/math/BigInteger.md) | [sqrt](../java/math/BigInteger.md))`()` Returns the integer square root of this BigInteger. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BigInteger](../java/math/BigInteger.md)!\> | [sqrtAndRemainder](../java/math/BigInteger.md))`()` Returns an array of two BigIntegers containing the integer square root`s`of`this`and its remainder`this - s*s`, respectively. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [subtract](https://developer.android.com/reference/kotlin/java/math/BigInteger#subtract(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this - val)`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [testBit](https://developer.android.com/reference/kotlin/java/math/BigInteger#testBit(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns`true`if and only if the designated bit is set. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](https://developer.android.com/reference/kotlin/java/math/BigInteger#toByteArray())`()` Returns a byte array containing the two's-complement representation of this BigInteger. |
+| open [BigInteger](../java/math/BigInteger.md) | [subtract](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this - val)`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [testBit](../java/math/BigInteger.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns`true`if and only if the designated bit is set. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](../java/math/BigInteger.md))`()` Returns a byte array containing the two's-complement representation of this BigInteger. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/math/BigInteger#toDouble())`()` Converts this BigInteger to a`double`. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/math/BigInteger#toFloat())`()` Converts this BigInteger to a`float`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/math/BigInteger#toInt())`()` Converts this BigInteger to an`int`. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/math/BigInteger.md))`()` Converts this BigInteger to a`double`. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/math/BigInteger.md))`()` Converts this BigInteger to a`float`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/math/BigInteger.md))`()` Converts this BigInteger to an`int`. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/math/BigInteger#toLong())`()` Converts this BigInteger to a`long`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/math/BigInteger#toString())`()` Returns the decimal String representation of this BigInteger. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/math/BigInteger#toString(kotlin.Int))`(`radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the String representation of this BigInteger in the given radix. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/math/BigInteger.md))`()` Converts this BigInteger to a`long`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/math/BigInteger.md))`()` Returns the decimal String representation of this BigInteger. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/math/BigInteger.md))`(`radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the String representation of this BigInteger in the given radix. |
 | --- | --- |
-| openstatic [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [valueOf](https://developer.android.com/reference/kotlin/java/math/BigInteger#valueOf(kotlin.Long))`(`val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a BigInteger whose value is equal to that of the specified`long`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [xor](https://developer.android.com/reference/kotlin/java/math/BigInteger#xor(java.math.BigInteger))`(`val:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)`)` Returns a BigInteger whose value is`(this ^ val)`. |
+| openstatic [BigInteger](../java/math/BigInteger.md) | [valueOf](../java/math/BigInteger.md))`(`val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a BigInteger whose value is equal to that of the specified`long`. |
+| open [BigInteger](../java/math/BigInteger.md) | [xor](../java/math/BigInteger.md))`(`val:` ` [BigInteger](../java/math/BigInteger.md)`)` Returns a BigInteger whose value is`(this ^ val)`. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| static [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [ONE](https://developer.android.com/reference/kotlin/java/math/BigInteger#ONE:java.math.BigInteger) The BigInteger constant one. |
-| static [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [TEN](https://developer.android.com/reference/kotlin/java/math/BigInteger#TEN:java.math.BigInteger) The BigInteger constant ten. |
-| static [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [TWO](https://developer.android.com/reference/kotlin/java/math/BigInteger#TWO:java.math.BigInteger) The BigInteger constant two. |
+| static [BigInteger](../java/math/BigInteger.md) | [ONE](../java/math/BigInteger.md) The BigInteger constant one. |
+| static [BigInteger](../java/math/BigInteger.md) | [TEN](../java/math/BigInteger.md) The BigInteger constant ten. |
+| static [BigInteger](../java/math/BigInteger.md) | [TWO](../java/math/BigInteger.md) The BigInteger constant two. |
 | --- | --- |
-| static [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | [ZERO](https://developer.android.com/reference/kotlin/java/math/BigInteger#ZERO:java.math.BigInteger) The BigInteger constant zero. |
+| static [BigInteger](../java/math/BigInteger.md) | [ZERO](../java/math/BigInteger.md) The BigInteger constant zero. |
 
 ## Public constructors
 
@@ -231,7 +231,7 @@ Constructs a randomly generated positive BigInteger that is probably prime, with
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `bitLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):bitLength of the returned BigInteger. |
 | `certainty` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a measure of the uncertainty that the caller is willing to tolerate. The probability that the new BigInteger represents a prime number will exceed (1 - 1/2`certainty`). The execution time of this constructor is proportional to the value of this parameter. |
-| `rnd` | [Random](https://developer.android.com/reference/kotlin/java/util/Random.html#):source of random bits used to select candidates to be tested for primality. |
+| `rnd` | [Random](../java/util/Random.md):source of random bits used to select candidates to be tested for primality. |
 | --- | --- |
 
 | Exceptions ||
@@ -257,7 +257,7 @@ Constructs a randomly generated BigInteger, uniformly distributed over the range
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | `numBits` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):maximum bitLength of the new BigInteger. |
-| `rnd` | [Random](https://developer.android.com/reference/kotlin/java/util/Random.html#):source of randomness to be used in computing the new BigInteger. |
+| `rnd` | [Random](../java/util/Random.md):source of randomness to be used in computing the new BigInteger. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------|
@@ -275,7 +275,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 BigInteger(val: String)
 ```
 
-Translates the decimal String representation of a BigInteger into a BigInteger. The String representation consists of an optional minus or plus sign followed by a sequence of one or more decimal digits. The character-to-digit mapping is provided by [Character.digit](https://developer.android.com/reference/kotlin/java/lang/Character.html#digit(kotlin.Char,%20kotlin.Int)). The String may not contain any extraneous characters (whitespace, for example).
+Translates the decimal String representation of a BigInteger into a BigInteger. The String representation consists of an optional minus or plus sign followed by a sequence of one or more decimal digits. The character-to-digit mapping is provided by [Character.digit](../java/lang/Character.md)). The String may not contain any extraneous characters (whitespace, for example).
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -295,7 +295,7 @@ BigInteger(
     radix: Int)
 ```
 
-Translates the String representation of a BigInteger in the specified radix into a BigInteger. The String representation consists of an optional minus or plus sign followed by a sequence of one or more digits in the specified radix. The character-to-digit mapping is provided by [Character.digit](https://developer.android.com/reference/kotlin/java/lang/Character.html#digit(kotlin.Char,%20kotlin.Int)). The String may not contain any extraneous characters (whitespace, for example).
+Translates the String representation of a BigInteger in the specified radix into a BigInteger. The String representation consists of an optional minus or plus sign followed by a sequence of one or more digits in the specified radix. The character-to-digit mapping is provided by [Character.digit](../java/lang/Character.md)). The String may not contain any extraneous characters (whitespace, for example).
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------|
@@ -304,7 +304,7 @@ Translates the String representation of a BigInteger in the specified radix into
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.NumberFormatException` | `val`is not a valid representation of a BigInteger in the specified radix, or`radix`is outside the range from [Character.MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int) to [Character.MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int), inclusive. |
+| `java.lang.NumberFormatException` | `val`is not a valid representation of a BigInteger in the specified radix, or`radix`is outside the range from [Character.MIN_RADIX](../java/lang/Character.md) to [Character.MAX_RADIX](../java/lang/Character.md), inclusive. |
 
 ## Public methods
 
@@ -320,7 +320,7 @@ Returns a BigInteger whose value is the absolute value of this BigInteger.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `abs(this)` |
+| [BigInteger](../java/math/BigInteger.md) | `abs(this)` |
 
 ### add
 
@@ -334,11 +334,11 @@ Returns a BigInteger whose value is`(this + val)`.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value to be added to this BigInteger. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value to be added to this BigInteger. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this + val` |
+| [BigInteger](../java/math/BigInteger.md) | `this + val` |
 
 ### and
 
@@ -352,11 +352,11 @@ Returns a BigInteger whose value is`(this & val)`. (This method returns a negati
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value to be AND'ed with this BigInteger. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value to be AND'ed with this BigInteger. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this & val` |
+| [BigInteger](../java/math/BigInteger.md) | `this & val` |
 
 ### andNot
 
@@ -370,11 +370,11 @@ Returns a BigInteger whose value is`(this & ~val)`. This method, which is equiva
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value to be complemented and AND'ed with this BigInteger. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value to be complemented and AND'ed with this BigInteger. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this & ~val` |
+| [BigInteger](../java/math/BigInteger.md) | `this & ~val` |
 
 ### bitCount
 
@@ -424,7 +424,7 @@ Converts this`BigInteger`to a`byte`, checking for lost information. If the value
 
 **See Also**
 
-- [java.math.BigInteger#byteValue](https://developer.android.com/reference/kotlin/java/lang/Number.html#byteValue()) 
+- [java.math.BigInteger#byteValue](../java/lang/Number.md)) 
 
 ### clearBit
 
@@ -442,7 +442,7 @@ Returns a BigInteger whose value is equivalent to this BigInteger with the desig
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this & ~(1<<n)` |
+| [BigInteger](../java/math/BigInteger.md) | `this & ~(1<<n)` |
 
 | Exceptions ||
 |---------------------------------|-----------------|
@@ -484,11 +484,11 @@ Returns a BigInteger whose value is`(this / val)`.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value by which this BigInteger is to be divided. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value by which this BigInteger is to be divided. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this / val` |
+| [BigInteger](../java/math/BigInteger.md) | `this / val` |
 
 | Exceptions ||
 |---------------------------------|-----------------|
@@ -506,11 +506,11 @@ Returns an array of two BigIntegers containing`(this / val)`followed by`(this % 
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value by which this BigInteger is to be divided, and the remainder computed. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value by which this BigInteger is to be divided, and the remainder computed. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)!> | an array of two BigIntegers: the quotient`(this / val)`is the initial element, and the remainder`(this % val)`is the final element. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [BigInteger](../java/math/BigInteger.md)!> | an array of two BigIntegers: the quotient`(this / val)`is the initial element, and the remainder`(this % val)`is the final element. |
 
 | Exceptions ||
 |---------------------------------|-----------------|
@@ -551,7 +551,7 @@ Returns a BigInteger whose value is equivalent to this BigInteger with the desig
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this ^ (1<<n)` |
+| [BigInteger](../java/math/BigInteger.md) | `this ^ (1<<n)` |
 
 | Exceptions ||
 |---------------------------------|-----------------|
@@ -569,11 +569,11 @@ Returns a BigInteger whose value is the greatest common divisor of`abs(this)`and
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value with which the GCD is to be computed. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value with which the GCD is to be computed. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `GCD(abs(this), abs(val))` |
+| [BigInteger](../java/math/BigInteger.md) | `GCD(abs(this), abs(val))` |
 
 ### getLowestSetBit
 
@@ -623,7 +623,7 @@ Converts this`BigInteger`to an`int`, checking for lost information. If the value
 
 **See Also**
 
-- [java.math.BigInteger#intValue](https://developer.android.com/reference/kotlin/java/math/BigInteger#toInt()) 
+- [java.math.BigInteger#intValue](../java/math/BigInteger.md)) 
 
 ### isProbablePrime
 
@@ -663,7 +663,7 @@ Converts this`BigInteger`to a`long`, checking for lost information. If the value
 
 **See Also**
 
-- [java.math.BigInteger#longValue](https://developer.android.com/reference/kotlin/java/math/BigInteger#toLong()) 
+- [java.math.BigInteger#longValue](../java/math/BigInteger.md)) 
 
 ### max
 
@@ -677,11 +677,11 @@ Returns the maximum of this BigInteger and`val`.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value with which the maximum is to be computed. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value with which the maximum is to be computed. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | the BigInteger whose value is the greater of this and`val`. If they are equal, either may be returned. |
+| [BigInteger](../java/math/BigInteger.md) | the BigInteger whose value is the greater of this and`val`. If they are equal, either may be returned. |
 
 ### min
 
@@ -695,11 +695,11 @@ Returns the minimum of this BigInteger and`val`.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value with which the minimum is to be computed. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value with which the minimum is to be computed. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | the BigInteger whose value is the lesser of this BigInteger and`val`. If they are equal, either may be returned. |
+| [BigInteger](../java/math/BigInteger.md) | the BigInteger whose value is the lesser of this BigInteger and`val`. If they are equal, either may be returned. |
 
 ### mod
 
@@ -713,11 +713,11 @@ Returns a BigInteger whose value is`(this mod m`). This method differs from`rema
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------|
-| `m` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):the modulus. |
+| `m` | [BigInteger](../java/math/BigInteger.md):the modulus. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this mod m` |
+| [BigInteger](../java/math/BigInteger.md) | `this mod m` |
 
 | Exceptions ||
 |---------------------------------|--------|
@@ -725,7 +725,7 @@ Returns a BigInteger whose value is`(this mod m`). This method differs from`rema
 
 **See Also**
 
-- [#remainder](https://developer.android.com/reference/kotlin/java/math/BigInteger#remainder(java.math.BigInteger)) 
+- [#remainder](../java/math/BigInteger.md)) 
 
 ### modInverse
 
@@ -739,11 +739,11 @@ Returns a BigInteger whose value is`(this`-1`mod m)`.
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------|
-| `m` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):the modulus. |
+| `m` | [BigInteger](../java/math/BigInteger.md):the modulus. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this`-1`mod m`. |
+| [BigInteger](../java/math/BigInteger.md) | `this`-1`mod m`. |
 
 | Exceptions ||
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -764,12 +764,12 @@ Returns a BigInteger whose value is`(thisexponent mod m)`. (Unlike`pow`, this me
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------|
-| `exponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):the exponent. |
-| `m` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):the modulus. |
+| `exponent` | [BigInteger](../java/math/BigInteger.md):the exponent. |
+| `m` | [BigInteger](../java/math/BigInteger.md):the modulus. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `thisexponent mod m` |
+| [BigInteger](../java/math/BigInteger.md) | `thisexponent mod m` |
 
 | Exceptions ||
 |---------------------------------|----------------------------------------------------------------------------------------|
@@ -777,7 +777,7 @@ Returns a BigInteger whose value is`(thisexponent mod m)`. (Unlike`pow`, this me
 
 **See Also**
 
-- [#modInverse](https://developer.android.com/reference/kotlin/java/math/BigInteger#modInverse(java.math.BigInteger)) 
+- [#modInverse](../java/math/BigInteger.md)) 
 
 ### multiply
 
@@ -791,11 +791,11 @@ Returns a BigInteger whose value is`(this * val)`.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value to be multiplied by this BigInteger. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value to be multiplied by this BigInteger. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this * val` |
+| [BigInteger](../java/math/BigInteger.md) | `this * val` |
 
 ### negate
 
@@ -809,7 +809,7 @@ Returns a BigInteger whose value is`(-this)`.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `-this` |
+| [BigInteger](../java/math/BigInteger.md) | `-this` |
 
 ### nextProbablePrime
 
@@ -823,7 +823,7 @@ Returns the first integer greater than this`BigInteger`that is probably prime. T
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | the first integer greater than this`BigInteger`that is probably prime. |
+| [BigInteger](../java/math/BigInteger.md) | the first integer greater than this`BigInteger`that is probably prime. |
 
 | Exceptions ||
 |---------------------------------|---------------------------------|
@@ -841,7 +841,7 @@ Returns a BigInteger whose value is`(~this)`. (This method returns a negative va
 
 | Return ||
 |------------------------------------------------------------------------------------|---------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `~this` |
+| [BigInteger](../java/math/BigInteger.md) | `~this` |
 
 ### or
 
@@ -856,11 +856,11 @@ Returns a BigInteger whose value is`(this | val)`. (This method returns a negati
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value to be OR'ed with this BigInteger. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value to be OR'ed with this BigInteger. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this | val` |
+| [BigInteger](../java/math/BigInteger.md) | `this | val` |
 
 ### pow
 
@@ -878,7 +878,7 @@ Returns a BigInteger whose value is`(thisexponent)`. Note that`exponent`is an in
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `thisexponent` |
+| [BigInteger](../java/math/BigInteger.md) | `thisexponent` |
 
 | Exceptions ||
 |---------------------------------|---------------------------------------------------------------------------------------|
@@ -900,11 +900,11 @@ Returns a positive BigInteger that is probably prime, with the specified bitLeng
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `bitLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):bitLength of the returned BigInteger. |
-| `rnd` | [Random](https://developer.android.com/reference/kotlin/java/util/Random.html#):source of random bits used to select candidates to be tested for primality. |
+| `rnd` | [Random](../java/util/Random.md):source of random bits used to select candidates to be tested for primality. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | a BigInteger of`bitLength`bits that is probably prime |
+| [BigInteger](../java/math/BigInteger.md) | a BigInteger of`bitLength`bits that is probably prime |
 
 | Exceptions ||
 |---------------------------------|-------------------------------------------|
@@ -926,11 +926,11 @@ Returns a BigInteger whose value is`(this % val)`.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value by which this BigInteger is to be divided, and the remainder computed. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value by which this BigInteger is to be divided, and the remainder computed. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this % val` |
+| [BigInteger](../java/math/BigInteger.md) | `this % val` |
 
 | Exceptions ||
 |---------------------------------|-----------------|
@@ -953,7 +953,7 @@ Returns a BigInteger whose value is equivalent to this BigInteger with the desig
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this | (1<<n)` |
+| [BigInteger](../java/math/BigInteger.md) | `this | (1<<n)` |
 
 | Exceptions ||
 |---------------------------------|-----------------|
@@ -975,11 +975,11 @@ Returns a BigInteger whose value is`(this << n)`. The shift distance,`n`, may be
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this << n` |
+| [BigInteger](../java/math/BigInteger.md) | `this << n` |
 
 **See Also**
 
-- [#shiftRight](https://developer.android.com/reference/kotlin/java/math/BigInteger#shiftRight(kotlin.Int)) 
+- [#shiftRight](../java/math/BigInteger.md)) 
 
 ### shiftRight
 
@@ -997,11 +997,11 @@ Returns a BigInteger whose value is`(this >> n)`. Sign extension is performed. T
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this >> n` |
+| [BigInteger](../java/math/BigInteger.md) | `this >> n` |
 
 **See Also**
 
-- [#shiftLeft](https://developer.android.com/reference/kotlin/java/math/BigInteger#shiftLeft(kotlin.Int)) 
+- [#shiftLeft](../java/math/BigInteger.md)) 
 
 ### shortValueExact
 
@@ -1023,7 +1023,7 @@ Converts this`BigInteger`to a`short`, checking for lost information. If the valu
 
 **See Also**
 
-- [java.math.BigInteger#shortValue](https://developer.android.com/reference/kotlin/java/lang/Number.html#shortValue()) 
+- [java.math.BigInteger#shortValue](../java/lang/Number.md)) 
 
 ### signum
 
@@ -1051,7 +1051,7 @@ Returns the integer square root of this BigInteger. The integer square root of t
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | the integer square root of`this` |
+| [BigInteger](../java/math/BigInteger.md) | the integer square root of`this` |
 
 | Exceptions ||
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1069,7 +1069,7 @@ Returns an array of two BigIntegers containing the integer square root`s`of`this
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#)!> | an array of two BigIntegers with the integer square root at offset 0 and the remainder at offset 1 |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [BigInteger](../java/math/BigInteger.md)!> | an array of two BigIntegers with the integer square root at offset 0 and the remainder at offset 1 |
 
 | Exceptions ||
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1091,11 +1091,11 @@ Returns a BigInteger whose value is`(this - val)`.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value to be subtracted from this BigInteger. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value to be subtracted from this BigInteger. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this - val` |
+| [BigInteger](../java/math/BigInteger.md) | `this - val` |
 
 ### testBit
 
@@ -1145,7 +1145,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toDouble(): Double
 ```
 
-Converts this BigInteger to a`double`. This conversion is similar to the*narrowing primitive conversion* from`double`to`float`as defined in The Java Language Specification: if this BigInteger has too great a magnitude to represent as a`double`, it will be converted to [Double.NEGATIVE_INFINITY](https://developer.android.com/reference/kotlin/java/lang/Double.html#NEGATIVE_INFINITY:kotlin.Double) or [java.lang.Double#POSITIVE_INFINITY](https://developer.android.com/reference/kotlin/java/lang/Double.html#POSITIVE_INFINITY:kotlin.Double) as appropriate. Note that even when the return value is finite, this conversion can lose information about the precision of the BigInteger value.
+Converts this BigInteger to a`double`. This conversion is similar to the*narrowing primitive conversion* from`double`to`float`as defined in The Java Language Specification: if this BigInteger has too great a magnitude to represent as a`double`, it will be converted to [Double.NEGATIVE_INFINITY](../java/lang/Double.md) or [java.lang.Double#POSITIVE_INFINITY](../java/lang/Double.md) as appropriate. Note that even when the return value is finite, this conversion can lose information about the precision of the BigInteger value.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------|
@@ -1159,7 +1159,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toFloat(): Float
 ```
 
-Converts this BigInteger to a`float`. This conversion is similar to the*narrowing primitive conversion* from`double`to`float`as defined in The Java Language Specification: if this BigInteger has too great a magnitude to represent as a`float`, it will be converted to [Float.NEGATIVE_INFINITY](https://developer.android.com/reference/kotlin/java/lang/Float.html#NEGATIVE_INFINITY:kotlin.Float) or [java.lang.Float#POSITIVE_INFINITY](https://developer.android.com/reference/kotlin/java/lang/Float.html#POSITIVE_INFINITY:kotlin.Float) as appropriate. Note that even when the return value is finite, this conversion can lose information about the precision of the BigInteger value.
+Converts this BigInteger to a`float`. This conversion is similar to the*narrowing primitive conversion* from`double`to`float`as defined in The Java Language Specification: if this BigInteger has too great a magnitude to represent as a`float`, it will be converted to [Float.NEGATIVE_INFINITY](../java/lang/Float.md) or [java.lang.Float#POSITIVE_INFINITY](../java/lang/Float.md) as appropriate. Note that even when the return value is finite, this conversion can lose information about the precision of the BigInteger value.
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
@@ -1209,7 +1209,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toString(): String
 ```
 
-Returns the decimal String representation of this BigInteger. The digit-to-character mapping provided by`Character.forDigit`is used, and a minus sign is prepended if appropriate. (This representation is compatible with the [(String)](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.String))constructor, and allows for String concatenation with Java's + operator.)
+Returns the decimal String representation of this BigInteger. The digit-to-character mapping provided by`Character.forDigit`is used, and a minus sign is prepended if appropriate. (This representation is compatible with the [(String)](../java/math/BigInteger.md))constructor, and allows for String concatenation with Java's + operator.)
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------|
@@ -1217,8 +1217,8 @@ Returns the decimal String representation of this BigInteger. The digit-to-chara
 
 **See Also**
 
-- [java.lang.Character#forDigit](https://developer.android.com/reference/kotlin/java/lang/Character.html#forDigit(kotlin.Int,%20kotlin.Int))
-- [#BigInteger(java.lang.String)](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.String)) 
+- [java.lang.Character#forDigit](../java/lang/Character.md))
+- [#BigInteger(java.lang.String)](../java/math/BigInteger.md)) 
 
 ### toString
 
@@ -1228,7 +1228,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toString(radix: Int): String
 ```
 
-Returns the String representation of this BigInteger in the given radix. If the radix is outside the range from [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int) to [Character.MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int) inclusive, it will default to 10 (as is the case for`Integer.toString`). The digit-to-character mapping provided by`Character.forDigit`is used, and a minus sign is prepended if appropriate. (This representation is compatible with the [(String,](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.String,%20kotlin.Int))constructor.)
+Returns the String representation of this BigInteger in the given radix. If the radix is outside the range from [java.lang.Character#MIN_RADIX](../java/lang/Character.md) to [Character.MAX_RADIX](../java/lang/Character.md) inclusive, it will default to 10 (as is the case for`Integer.toString`). The digit-to-character mapping provided by`Character.forDigit`is used, and a minus sign is prepended if appropriate. (This representation is compatible with the [(String,](../java/math/BigInteger.md))constructor.)
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------|
@@ -1240,8 +1240,8 @@ Returns the String representation of this BigInteger in the given radix. If the 
 
 **See Also**
 
-- [java.lang.Character#forDigit](https://developer.android.com/reference/kotlin/java/lang/Character.html#forDigit(kotlin.Int,%20kotlin.Int))
-- [#BigInteger(java.lang.String, int)](https://developer.android.com/reference/kotlin/java/math/BigInteger#BigInteger(kotlin.String,%20kotlin.Int)) 
+- [java.lang.Character#forDigit](../java/lang/Character.md))
+- [#BigInteger(java.lang.String, int)](../java/math/BigInteger.md)) 
 
 ### valueOf
 
@@ -1259,7 +1259,7 @@ Returns a BigInteger whose value is equal to that of the specified`long`.
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | a BigInteger with the specified value. |
+| [BigInteger](../java/math/BigInteger.md) | a BigInteger with the specified value. |
 
 ### xor
 
@@ -1273,11 +1273,11 @@ Returns a BigInteger whose value is`(this ^ val)`. (This method returns a negati
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------|
-| `val` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#):value to be XOR'ed with this BigInteger. |
+| `val` | [BigInteger](../java/math/BigInteger.md):value to be XOR'ed with this BigInteger. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger#) | `this ^ val` |
+| [BigInteger](../java/math/BigInteger.md) | `this ^ val` |
 
 ## Properties
 

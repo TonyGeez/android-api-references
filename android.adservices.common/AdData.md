@@ -10,7 +10,7 @@ class AdData : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.common.AdData](https://developer.android.com/reference/kotlin/android/adservices/common/AdData#) |
+| ↳ | [android.adservices.common.AdData](../android/adservices/common/AdData.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -35,11 +35,11 @@ Represents data specific to an ad that is necessary for ad selection and renderi
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether two `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` objects contain the same information. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdCounterKeys()()` Gets the set of keys used in counting events. |
 | --- | --- |
-| [AdFilters](https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdFilters()()` Gets all `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters` associated with the ad. |
+| [AdFilters](../android/adservices/common/AdFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdFilters()()` Gets all `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters` associated with the ad. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdRenderId()()` Gets the ad render id for server auctions. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getMetadata()()` Gets the buyer ad metadata used during the ad selection process. |
 | --- | --- |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getRenderUri()()` Gets the URI that points to the ad's rendering assets. |
+| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getRenderUri()()` Gets the URI that points to the ad's rendering assets. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` object's data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -47,7 +47,7 @@ Represents data specific to an ad that is necessary for ad selection and renderi
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AdData](https://developer.android.com/reference/kotlin/android/adservices/common/AdData#)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AdData](../android/adservices/common/AdData.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -245,7 +245,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

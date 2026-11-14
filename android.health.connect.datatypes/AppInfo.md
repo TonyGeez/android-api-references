@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # AppInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/datatypes/AppInfo "View this page in Java") 
+Kotlin| [Java](../android/health/connect/datatypes/AppInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AppInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.AppInfo](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AppInfo#) |
+| ↳ | [android.health.connect.datatypes.AppInfo](../android/health/connect/datatypes/AppInfo.md) |
 
 Application Info class containing details about a given application
 
@@ -21,9 +21,9 @@ Application Info class containing details about a given application
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | [getIcon](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AppInfo#getIcon())`()` Returns the application icon as bitmap |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AppInfo#getName())`()` Returns the application name/label |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AppInfo#getPackageName())`()` Returns the application package name |
+| [Bitmap](../android/graphics/Bitmap.md)? | [getIcon](../android/health/connect/datatypes/AppInfo.md))`()` Returns the application icon as bitmap |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](../android/health/connect/datatypes/AppInfo.md))`()` Returns the application name/label |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](../android/health/connect/datatypes/AppInfo.md))`()` Returns the application package name |
 | --- | --- |
 
 ## Public methods
@@ -40,7 +40,7 @@ Returns the application icon as bitmap
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------|
-| [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | This value may be`null`. |
+| [Bitmap](../android/graphics/Bitmap.md)? | This value may be`null`. |
 
 ### getName
 

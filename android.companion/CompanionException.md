@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # CompanionException
 
-Kotlin| [Java](https://developer.android.com/reference/android/companion/CompanionException "View this page in Java") 
+Kotlin| [Java](../android/companion/CompanionException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class CompanionException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.companion.CompanionException](https://developer.android.com/reference/kotlin/android/companion/CompanionException#) |
+| | | | ↳ | [android.companion.CompanionException](../android/companion/CompanionException.md) |
 
 `CompanionException`can be thrown during the companion system data transfer process.
 

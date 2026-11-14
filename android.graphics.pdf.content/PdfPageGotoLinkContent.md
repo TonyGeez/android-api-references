@@ -5,7 +5,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # PdfPageGotoLinkContent
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/content/PdfPageGotoLinkContent "View this page in Java") 
+Kotlin| [Java](../android/graphics/pdf/content/PdfPageGotoLinkContent.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class PdfPageGotoLinkContent : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.content.PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#) |
+| ↳ | [android.graphics.pdf.content.PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md) |
 
 Represents the content associated with a goto link on a page in the PDF document. Goto Link is an internal navigation link which directs the user to a different location within the same pdf document
 
@@ -22,27 +22,27 @@ Represents the content associated with a goto link on a page in the PDF document
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination) Represents the content associated with the destination where a goto link is directing |
+| | [Destination](../android/graphics/pdf/content/PdfPageGotoLinkContent.Destination.md) Represents the content associated with the destination where a goto link is directing |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#PdfPageGotoLinkContent(kotlin.collections.MutableList,%20android.graphics.pdf.content.PdfPageGotoLinkContent.Destination))`(`bounds:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!>`, `destination:` ` [PdfPageGotoLinkContent.Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination)`)` Creates a new instance of [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#) using the bounds of the goto link and the destination where it is directing |
+| [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md))`(`bounds:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RectF](../android/graphics/RectF.md)!>`, `destination:` ` [PdfPageGotoLinkContent.Destination](../android/graphics/pdf/content/PdfPageGotoLinkContent.Destination.md)`)` Creates a new instance of [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md) using the bounds of the goto link and the destination where it is directing |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#describeContents())`()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | [getBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#getBounds())`()` Gets the bounds of a [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#) represented as a list of [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#). |
-| [PdfPageGotoLinkContent.Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination) | [getDestination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#getDestination())`()` Gets the destination [Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination) of the [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/graphics/pdf/content/PdfPageGotoLinkContent.md))`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\> | [getBounds](../android/graphics/pdf/content/PdfPageGotoLinkContent.md))`()` Gets the bounds of a [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md) represented as a list of [RectF](../android/graphics/RectF.md). |
+| [PdfPageGotoLinkContent.Destination](../android/graphics/pdf/content/PdfPageGotoLinkContent.Destination.md) | [getDestination](../android/graphics/pdf/content/PdfPageGotoLinkContent.md))`()` Gets the destination [Destination](../android/graphics/pdf/content/PdfPageGotoLinkContent.Destination.md) of the [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/graphics/pdf/content/PdfPageGotoLinkContent.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md)!\> | [CREATOR](../android/graphics/pdf/content/PdfPageGotoLinkContent.md) <br /> |
 
 ## Public constructors
 
@@ -57,12 +57,12 @@ PdfPageGotoLinkContent(
     destination: PdfPageGotoLinkContent.Destination)
 ```
 
-Creates a new instance of [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#) using the bounds of the goto link and the destination where it is directing
+Creates a new instance of [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md) using the bounds of the goto link and the destination where it is directing
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\>:Bounds which envelop the goto link This value cannot be`null`. |
-| `destination` | [PdfPageGotoLinkContent.Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination):Destination where the goto link is directing This value cannot be`null`. |
+| `bounds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\>:Bounds which envelop the goto link This value cannot be`null`. |
+| `destination` | [PdfPageGotoLinkContent.Destination](../android/graphics/pdf/content/PdfPageGotoLinkContent.Destination.md):Destination where the goto link is directing This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------|
@@ -81,7 +81,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getBounds
 
@@ -92,13 +92,13 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 fun getBounds(): MutableList<RectF!>
 ```
 
-Gets the bounds of a [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#) represented as a list of [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#). Links which are spread across multiple lines will be surrounded by multiple [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) in order of viewing.
+Gets the bounds of a [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md) represented as a list of [RectF](../android/graphics/RectF.md). Links which are spread across multiple lines will be surrounded by multiple [RectF](../android/graphics/RectF.md) in order of viewing.
 
-**Note:** Each [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#) represents a bound of the goto link in a single line and defines the coordinates of its 4 edges (left, top, right and bottom) in points (1/72"). The developer will need to render the highlighter as well as intercept the touch events for functionalities such as clicking the link.
+**Note:** Each [RectF](../android/graphics/RectF.md) represents a bound of the goto link in a single line and defines the coordinates of its 4 edges (left, top, right and bottom) in points (1/72"). The developer will need to render the highlighter as well as intercept the touch events for functionalities such as clicking the link.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!> | The bounds of the goto link. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RectF](../android/graphics/RectF.md)!> | The bounds of the goto link. This value cannot be`null`. |
 
 ### getDestination
 
@@ -109,11 +109,11 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 fun getDestination(): PdfPageGotoLinkContent.Destination
 ```
 
-Gets the destination [Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination) of the [PdfPageGotoLinkContent](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent#).
+Gets the destination [Destination](../android/graphics/pdf/content/PdfPageGotoLinkContent.Destination.md) of the [PdfPageGotoLinkContent](../android/graphics/pdf/content/PdfPageGotoLinkContent.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [PdfPageGotoLinkContent.Destination](https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageGotoLinkContent.Destination) | Destination where goto link is directing the user. This value cannot be`null`. |
+| [PdfPageGotoLinkContent.Destination](../android/graphics/pdf/content/PdfPageGotoLinkContent.Destination.md) | Destination where goto link is directing the user. This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -130,8 +130,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

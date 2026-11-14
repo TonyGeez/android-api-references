@@ -10,7 +10,7 @@ open class DSAPrivateKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.DSAPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#) |
+| ↳ | [java.security.spec.DSAPrivateKeySpec](../java/security/spec/DSAPrivateKeySpec.md) |
 
 This class specifies a DSA private key with its associated parameters.
 
@@ -18,15 +18,15 @@ This class specifies a DSA private key with its associated parameters.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DSAPrivateKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#DSAPrivateKeySpec(java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger))`(`x:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `p:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `q:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `g:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Creates a new DSAPrivateKeySpec with the specified parameter values. |
+| [DSAPrivateKeySpec](../java/security/spec/DSAPrivateKeySpec.md))`(`x:` ` [BigInteger](../java/math/BigInteger.md)!`, `p:` ` [BigInteger](../java/math/BigInteger.md)!`, `q:` ` [BigInteger](../java/math/BigInteger.md)!`, `g:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates a new DSAPrivateKeySpec with the specified parameter values. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getG())`()` Returns the base`g`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getP())`()` Returns the prime`p`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getQ](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getQ())`()` Returns the sub-prime`q`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getG](../java/security/spec/DSAPrivateKeySpec.md))`()` Returns the base`g`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getP](../java/security/spec/DSAPrivateKeySpec.md))`()` Returns the prime`p`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getQ](../java/security/spec/DSAPrivateKeySpec.md))`()` Returns the sub-prime`q`. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getX](https://developer.android.com/reference/kotlin/java/security/spec/DSAPrivateKeySpec#getX())`()` Returns the private key`x`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getX](../java/security/spec/DSAPrivateKeySpec.md))`()` Returns the private key`x`. |
 
 ## Public constructors
 
@@ -46,11 +46,11 @@ Creates a new DSAPrivateKeySpec with the specified parameter values.
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------|
-| `x` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the private key. |
-| `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime. |
-| `q` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the sub-prime. |
+| `x` | [BigInteger](../java/math/BigInteger.md)!:the private key. |
+| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime. |
+| `q` | [BigInteger](../java/math/BigInteger.md)!:the sub-prime. |
 | --- | --- |
-| `g` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the base. |
+| `g` | [BigInteger](../java/math/BigInteger.md)!:the base. |
 
 ## Public methods
 
@@ -66,7 +66,7 @@ Returns the base`g`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the base`g`. |
+| [BigInteger](../java/math/BigInteger.md)! | the base`g`. |
 
 ### getP
 
@@ -80,7 +80,7 @@ Returns the prime`p`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the prime`p`. |
+| [BigInteger](../java/math/BigInteger.md)! | the prime`p`. |
 
 ### getQ
 
@@ -94,7 +94,7 @@ Returns the sub-prime`q`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the sub-prime`q`. |
+| [BigInteger](../java/math/BigInteger.md)! | the sub-prime`q`. |
 
 ### getX
 
@@ -108,4 +108,4 @@ Returns the private key`x`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the private key`x`. |
+| [BigInteger](../java/math/BigInteger.md)! | the private key`x`. |

@@ -8,11 +8,11 @@ abstract class CompanionDeviceService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.companion.CompanionDeviceService](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#) |
+| | | | ↳ | [android.companion.CompanionDeviceService](../android/companion/CompanionDeviceService.md) |
 
 A service that receives calls from the system with device events.
 
@@ -503,7 +503,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1083,7 +1083,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#detachSystemDataTransport(kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Detach any bidirectional communication streams previously configured through `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onActionRequested(android.companion.AssociationInfo,%20android.companion.ActionRequest)(associationInfo: https://developer.android.com/reference/kotlin/android/companion/AssociationInfo, request: https://developer.android.com/reference/kotlin/android/companion/ActionRequest)` Called by the system when it requests an action for an association managed by this app. |
 | --- | --- |
-| [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDeviceAppeared(android.companion.AssociationInfo)(associationInfo: https://developer.android.com/reference/kotlin/android/companion/AssociationInfo)` Called by the system when an associated device is nearby or connected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDeviceAppeared(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called by system whenever a device associated with this app is available. |
 | --- | --- |
@@ -2561,7 +2561,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2602,9 +2602,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2845,8 +2845,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): id of the associated device |
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#): already connected stream of data incoming from remote associated device. This value cannot be `null`. |
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#): already connected stream of data outgoing to remote associated device. This value cannot be `null`. |
+| `in` | [InputStream](../java/io/InputStream.md): already connected stream of data incoming from remote associated device. This value cannot be `null`. |
+| `out` | [OutputStream](../java/io/OutputStream.md): already connected stream of data outgoing to remote associated device. This value cannot be `null`. |
 | --- | --- |
 
 ### detachSystemDataTransport
@@ -2882,8 +2882,8 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `associationInfo` | [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo): The association for which the action is requested. This value cannot be `null`. |
-| `request` | [ActionRequest](https://developer.android.com/reference/kotlin/android/companion/ActionRequest): The specific request being requested. This value cannot be `null`. |
+| `associationInfo` | [AssociationInfo](../android/companion/AssociationInfo.md): The association for which the action is requested. This value cannot be `null`. |
+| `request` | [ActionRequest](../android/companion/ActionRequest.md): The specific request being requested. This value cannot be `null`. |
 
 ### onBind
 
@@ -2899,7 +2899,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#): This value cannot be `null`. |
+| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2921,7 +2921,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `associationInfo` | [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo): A record for the companion device. This value cannot be `null`. |
+| `associationInfo` | [AssociationInfo](../android/companion/AssociationInfo.md): A record for the companion device. This value cannot be `null`. |
 
 ### onDeviceAppeared
 
@@ -2957,7 +2957,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `associationInfo` | [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo): A record for the companion device. This value cannot be `null`. |
+| `associationInfo` | [AssociationInfo](../android/companion/AssociationInfo.md): A record for the companion device. This value cannot be `null`. |
 
 ### onDeviceDisappeared
 
@@ -2990,7 +2990,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `event` | [DevicePresenceEvent](https://developer.android.com/reference/kotlin/android/companion/DevicePresenceEvent): This value cannot be `null`. |
+| `event` | [DevicePresenceEvent](../android/companion/DevicePresenceEvent.md): This value cannot be `null`. |
 
 **See Also**
 
@@ -3012,7 +3012,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `associationInfo` | [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo): The association for which trust establishment failed. Note that if trust resumption failed, this `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` will reflect that the device is no longer trusted (i.e. `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#isTrusted()` will return `false`). This value cannot be `null`. |
+| `associationInfo` | [AssociationInfo](../android/companion/AssociationInfo.md): The association for which trust establishment failed. Note that if trust resumption failed, this `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` will reflect that the device is no longer trusted (i.e. `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#isTrusted()` will return `false`). This value cannot be `null`. |
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The error code indicating the reason for failure. One of: - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_TRANSPORT_NOT_ATTACHED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_CANCELED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_FAILED_TO_CREATE_PAIRING_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_PIN_CODE_NOT_MATCHING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_ASSOCIATION_DOES_NOT_EXIST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_RESUMPTION_FAILED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_OUT_OF_BAND_PAIRING_FAILED:kotlin.Int` . Value is one of the following: - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_TRANSPORT_NOT_ATTACHED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_CANCELED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_FAILED_TO_CREATE_PAIRING_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_PIN_CODE_NOT_MATCHING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_PAIRING_ASSOCIATION_DOES_NOT_EXIST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_RESUMPTION_FAILED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_OUT_OF_BAND_PAIRING_FAILED:kotlin.Int` |
 
 ### onDeviceTrusted
@@ -3028,7 +3028,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `associationInfo` | [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo): The association that is now trusted. This value cannot be `null`. |
+| `associationInfo` | [AssociationInfo](../android/companion/AssociationInfo.md): The association that is now trusted. This value cannot be `null`. |
 
 ### onTrustPairingCanceledFromRemote
 
@@ -3046,8 +3046,8 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `associationInfo` | [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo): The association for which trust pairing is canceled. This value cannot be `null`. |
-| `cancelIntentSender` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#): An `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which the application should use to launch in order to cancel the trust pairing dialog. This value cannot be `null`. |
+| `associationInfo` | [AssociationInfo](../android/companion/AssociationInfo.md): The association for which trust pairing is canceled. This value cannot be `null`. |
+| `cancelIntentSender` | [IntentSender](../android/content/IntentSender.md): An `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which the application should use to launch in order to cancel the trust pairing dialog. This value cannot be `null`. |
 
 ### onTrustPairingResponsePending
 
@@ -3065,5 +3065,5 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `associationInfo` | [AssociationInfo](https://developer.android.com/reference/kotlin/android/companion/AssociationInfo): The association for which trust pairing is requested. This value cannot be `null`. |
-| `intentSender` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#): An `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which the application should use to launch the UI for the user to confirm the trust pairing. This value cannot be `null`. |
+| `associationInfo` | [AssociationInfo](../android/companion/AssociationInfo.md): The association for which trust pairing is requested. This value cannot be `null`. |
+| `intentSender` | [IntentSender](../android/content/IntentSender.md): An `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which the application should use to launch the UI for the user to confirm the trust pairing. This value cannot be `null`. |

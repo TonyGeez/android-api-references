@@ -4,48 +4,48 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # InputMethodSession
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/inputmethod/InputMethodSession "View this page in Java") 
+Kotlin| [Java](../android/view/inputmethod/InputMethodSession.md) 
 | --- | --- |
 
 ```
 interface InputMethodSession
 ```
 
-| [android.view.inputmethod.InputMethodSession](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#) |
+| [android.view.inputmethod.InputMethodSession](../android/view/inputmethod/InputMethodSession.md) |
 
-| Known Direct Subclasses [AbstractInputMethodService.AbstractInputMethodSessionImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#) |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractInputMethodService.AbstractInputMethodSessionImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#) | Base class for derived classes to implement their [InputMethodSession](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#) interface. | |
+| Known Direct Subclasses [AbstractInputMethodService.AbstractInputMethodSessionImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.md) |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractInputMethodService.AbstractInputMethodSessionImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.md) | Base class for derived classes to implement their [InputMethodSession](../android/view/inputmethod/InputMethodSession.md) interface. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [InputMethodService.InputMethodSessionImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodSessionImpl.html#) |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputMethodService.InputMethodSessionImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodSessionImpl.html#) | Concrete implementation of [AbstractInputMethodService.AbstractInputMethodSessionImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#) that provides all of the standard behavior for an input method session. | |
+| Known Indirect Subclasses [InputMethodService.InputMethodSessionImpl](../android/inputmethodservice/InputMethodService.InputMethodSessionImpl.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputMethodService.InputMethodSessionImpl](../android/inputmethodservice/InputMethodService.InputMethodSessionImpl.md) | Concrete implementation of [AbstractInputMethodService.AbstractInputMethodSessionImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.md) that provides all of the standard behavior for an input method session. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-The InputMethodSession interface provides the per-client functionality of [InputMethod](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod) that is safe to expose to applications.
+The InputMethodSession interface provides the per-client functionality of [InputMethod](../android/view/inputmethod/InputMethod.md) that is safe to expose to applications.
 
-Applications will not normally use this interface themselves, instead relying on the standard interaction provided by [android.widget.TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#) and [android.widget.EditText](https://developer.android.com/reference/kotlin/android/widget/EditText.html#).
+Applications will not normally use this interface themselves, instead relying on the standard interaction provided by [android.widget.TextView](../android/widget/TextView.md) and [android.widget.EditText](../android/widget/EditText.md).
 
 ## Summary
 
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [EventCallback](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession.EventCallback) <br /> |
+| abstract | [EventCallback](../android/view/inputmethod/InputMethodSession.EventCallback.md) <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appPrivateCommand](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#appPrivateCommand(kotlin.String,%20android.os.Bundle))`(`action:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Process a private command sent from the application to the input method. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchGenericMotionEvent](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#dispatchGenericMotionEvent(kotlin.Int,%20android.view.MotionEvent,%20android.view.inputmethod.InputMethodSession.EventCallback))`(`seq:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!`, `callback:` ` [InputMethodSession.EventCallback](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession.EventCallback)!`)` This method is called when there is a generic motion event. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchKeyEvent](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#dispatchKeyEvent(kotlin.Int,%20android.view.KeyEvent,%20android.view.inputmethod.InputMethodSession.EventCallback))`(`seq:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`, `callback:` ` [InputMethodSession.EventCallback](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession.EventCallback)!`)` This method is called when a key is pressed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appPrivateCommand](../android/view/inputmethod/InputMethodSession.md))`(`action:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [Bundle](../android/os/Bundle.md)!`)` Process a private command sent from the application to the input method. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchGenericMotionEvent](../android/view/inputmethod/InputMethodSession.md))`(`seq:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`, `callback:` ` [InputMethodSession.EventCallback](../android/view/inputmethod/InputMethodSession.EventCallback.md)!`)` This method is called when there is a generic motion event. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchKeyEvent](../android/view/inputmethod/InputMethodSession.md))`(`seq:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`, `callback:` ` [InputMethodSession.EventCallback](../android/view/inputmethod/InputMethodSession.EventCallback.md)!`)` This method is called when a key is pressed. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchTrackballEvent](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#dispatchTrackballEvent(kotlin.Int,%20android.view.MotionEvent,%20android.view.inputmethod.InputMethodSession.EventCallback))`(`seq:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!`, `callback:` ` [InputMethodSession.EventCallback](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession.EventCallback)!`)` This method is called when there is a track ball event. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [displayCompletions](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#displayCompletions(kotlin.Array))`(`completions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CompletionInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo)!>!`)` Called by a text editor that performs auto completion, to tell the input method about the completions it has available. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finishInput](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#finishInput())`()` This method is called when the application would like to stop receiving text input. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchTrackballEvent](../android/view/inputmethod/InputMethodSession.md))`(`seq:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`, `callback:` ` [InputMethodSession.EventCallback](../android/view/inputmethod/InputMethodSession.EventCallback.md)!`)` This method is called when there is a track ball event. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [displayCompletions](../android/view/inputmethod/InputMethodSession.md))`(`completions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CompletionInfo](../android/view/inputmethod/CompletionInfo.md)!>!`)` Called by a text editor that performs auto completion, to tell the input method about the completions it has available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finishInput](../android/view/inputmethod/InputMethodSession.md))`()` This method is called when the application would like to stop receiving text input. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [toggleSoftInput](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#toggleSoftInput(kotlin.Int,%20kotlin.Int))`(`showFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hideFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Toggle the soft input window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateCursor](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#updateCursor(android.graphics.Rect))`(`newCursor:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` This method is called when cursor location of the target input field has changed within its window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateCursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#updateCursorAnchorInfo(android.view.inputmethod.CursorAnchorInfo))`(`cursorAnchorInfo:` ` [CursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo)!`)` This method is called when the cursor and/or the character position relevant to text input is changed on the screen. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [toggleSoftInput](../android/view/inputmethod/InputMethodSession.md))`(`showFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hideFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Toggle the soft input window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateCursor](../android/view/inputmethod/InputMethodSession.md))`(`newCursor:` ` [Rect](../android/graphics/Rect.md)!`)` This method is called when cursor location of the target input field has changed within its window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateCursorAnchorInfo](../android/view/inputmethod/InputMethodSession.md))`(`cursorAnchorInfo:` ` [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)!`)` This method is called when the cursor and/or the character position relevant to text input is changed on the screen. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#updateExtractedText(kotlin.Int,%20android.view.inputmethod.ExtractedText))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `text:` ` [ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText)!`)` Called by a text editor to report its new extracted text when its contents change. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSelection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#updateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`oldSelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldSelEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newSelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newSelEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `candidatesStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `candidatesEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is called when the selection or cursor in the current target input field has changed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [viewClicked](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#viewClicked(kotlin.Boolean))`(`focusChanged:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` This method is called when the user tapped a text view. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateExtractedText](../android/view/inputmethod/InputMethodSession.md))`(`token:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `text:` ` [ExtractedText](../android/view/inputmethod/ExtractedText.md)!`)` Called by a text editor to report its new extracted text when its contents change. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSelection](../android/view/inputmethod/InputMethodSession.md))`(`oldSelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldSelEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newSelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newSelEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `candidatesStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `candidatesEnd:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is called when the selection or cursor in the current target input field has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [viewClicked](../android/view/inputmethod/InputMethodSession.md))`(`focusChanged:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` This method is called when the user tapped a text view. |
 | --- | --- |
 
 ## Public methods
@@ -66,7 +66,7 @@ Process a private command sent from the application to the input method. This ca
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `action` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Name of the command to be performed. This*must*be a scoped name, i.e. prefixed with a package name you own, so that different developers will not create conflicting commands. |
-| `data` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:Any data to include with the command. |
+| `data` | [Bundle](../android/os/Bundle.md)!:Any data to include with the command. |
 
 ### dispatchGenericMotionEvent
 
@@ -86,7 +86,7 @@ If the input method wants to handle this event, return true, otherwise return fa
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!:The motion event. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!:The motion event. |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------|
@@ -94,7 +94,7 @@ If the input method wants to handle this event, return true, otherwise return fa
 
 **See Also**
 
-- [android.view.MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#) 
+- [android.view.MotionEvent](../android/view/MotionEvent.md) 
 
 ### dispatchKeyEvent
 
@@ -114,7 +114,7 @@ If the input method wants to handle this event, return true, otherwise return fa
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!:The key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!:The key event. |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------|
@@ -122,7 +122,7 @@ If the input method wants to handle this event, return true, otherwise return fa
 
 **See Also**
 
-- [android.view.KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#) 
+- [android.view.KeyEvent](../android/view/KeyEvent.md) 
 
 ### dispatchTrackballEvent
 
@@ -142,7 +142,7 @@ If the input method wants to handle this event, return true, otherwise return fa
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!:The motion event. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!:The motion event. |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------|
@@ -150,7 +150,7 @@ If the input method wants to handle this event, return true, otherwise return fa
 
 **See Also**
 
-- [android.view.MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#) 
+- [android.view.MotionEvent](../android/view/MotionEvent.md) 
 
 ### displayCompletions
 
@@ -164,7 +164,7 @@ Called by a text editor that performs auto completion, to tell the input method 
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `completions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CompletionInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo)!\>!:Array of text completions that are available, starting with the best. If this array is null, any existing completions will be removed. |
+| `completions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CompletionInfo](../android/view/inputmethod/CompletionInfo.md)!\>!:Array of text completions that are available, starting with the best. If this array is null, any existing completions will be removed. |
 
 ### finishInput
 
@@ -188,14 +188,14 @@ abstract fun toggleSoftInput(
 ): Unit
 ```
 
-**Deprecated:** *Starting in [android.os.Build.VERSION_CODES#S](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int) the system no longer invokes this method, instead it explicitly shows or hides the IME. An`InputMethodService`wishing to toggle its own visibility should instead invoke [android.inputmethodservice.InputMethodService#requestShowSelf](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#requestShowSelf(kotlin.Int))or [InputMethodService.requestHideSelf](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#requestHideSelf(kotlin.Int))*
+**Deprecated:** *Starting in [android.os.Build.VERSION_CODES#S](../android/os/Build.VERSION_CODES.md) the system no longer invokes this method, instead it explicitly shows or hides the IME. An`InputMethodService`wishing to toggle its own visibility should instead invoke [android.inputmethodservice.InputMethodService#requestShowSelf](../android/inputmethodservice/InputMethodService.md))or [InputMethodService.requestHideSelf](../android/inputmethodservice/InputMethodService.md))*
 
 Toggle the soft input window. Applications can toggle the state of the soft input window.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `showFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.view.inputmethod.InputMethodManager#SHOW_IMPLICIT](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_IMPLICIT:kotlin.Int), and [android.view.inputmethod.InputMethodManager#SHOW_FORCED](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_FORCED:kotlin.Int) |
-| `hideFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.view.inputmethod.InputMethodManager#HIDE_IMPLICIT_ONLY](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_IMPLICIT_ONLY:kotlin.Int), and [android.view.inputmethod.InputMethodManager#HIDE_NOT_ALWAYS](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_NOT_ALWAYS:kotlin.Int) |
+| `showFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.view.inputmethod.InputMethodManager#SHOW_IMPLICIT](../android/view/inputmethod/InputMethodManager.md), and [android.view.inputmethod.InputMethodManager#SHOW_FORCED](../android/view/inputmethod/InputMethodManager.md) |
+| `hideFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.view.inputmethod.InputMethodManager#HIDE_IMPLICIT_ONLY](../android/view/inputmethod/InputMethodManager.md), and [android.view.inputmethod.InputMethodManager#HIDE_NOT_ALWAYS](../android/view/inputmethod/InputMethodManager.md) |
 
 ### updateCursor
 
@@ -209,7 +209,7 @@ This method is called when cursor location of the target input field has changed
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newCursor` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!:The rectangle of the cursor currently being shown in the input field's window coordinates. |
+| `newCursor` | [Rect](../android/graphics/Rect.md)!:The rectangle of the cursor currently being shown in the input field's window coordinates. |
 
 ### updateCursorAnchorInfo
 
@@ -223,7 +223,7 @@ This method is called when the cursor and/or the character position relevant to 
 
 | Parameters ||
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cursorAnchorInfo` | [CursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo)!:Positional information relevant to text input, such as text insertion point and composition string. |
+| `cursorAnchorInfo` | [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)!:Positional information relevant to text input, such as text insertion point and composition string. |
 
 ### updateExtractedText
 
@@ -236,12 +236,12 @@ abstract fun updateExtractedText(
 ): Unit
 ```
 
-Called by a text editor to report its new extracted text when its contents change. This will only be called if the input method calls [InputConnection.getExtractedText()](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int))with the option to report updates.
+Called by a text editor to report its new extracted text when its contents change. This will only be called if the input method calls [InputConnection.getExtractedText()](../android/view/inputmethod/InputConnection.md))with the option to report updates.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `token` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The input method supplied token for identifying its request. |
-| `text` | [ExtractedText](https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText)!:The new extracted text. |
+| `text` | [ExtractedText](../android/view/inputmethod/ExtractedText.md)!:The new extracted text. |
 
 ### updateSelection
 

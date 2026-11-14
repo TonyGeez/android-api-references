@@ -10,7 +10,7 @@ class Array
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.reflect.Array](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#) |
+| ↳ | [java.lang.reflect.Array](../java/lang/reflect/Array.md) |
 
 The`Array`class provides static methods to dynamically create and access Java arrays.
 
@@ -20,33 +20,33 @@ The`Array`class provides static methods to dynamically create and access Java ar
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getBoolean(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`boolean`. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getByte](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getByte(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`byte`. |
+| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [get](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`boolean`. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getByte](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`byte`. |
 | --- | --- |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getChar](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getChar(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`char`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getDouble(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`double`. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getFloat(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`float`. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getChar](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`char`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`double`. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`float`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getInt(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as an`int`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getLength(kotlin.Any))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Returns the length of the specified array object, as an`int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getLong(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`long`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as an`int`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Returns the length of the specified array object, as an`int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`long`. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#getShort(kotlin.Any,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`short`. |
-| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [newInstance](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#newInstance(java.lang.Class,%20kotlin.Int))`(`componentType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new array with the specified component type and length. |
-| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [newInstance](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#newInstance(java.lang.Class,%20kotlin.Int))`(`componentType:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>`, `vararg` `dimensions:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new array with the specified component type and dimensions. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the indexed component in the specified array object, as a`short`. |
+| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [newInstance](../java/lang/reflect/Array.md))`(`componentType:` ` [Class](../java/lang/Class.md)<*>`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new array with the specified component type and length. |
+| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [newInstance](../java/lang/reflect/Array.md))`(`componentType:` ` [Class](../java/lang/Class.md)<*>`, `vararg` `dimensions:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new array with the specified component type and dimensions. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Sets the value of the indexed component of the specified array object to the specified new value. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBoolean](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setBoolean(kotlin.Any,%20kotlin.Int,%20kotlin.Boolean))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `z:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`boolean`value. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByte](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setByte(kotlin.Any,%20kotlin.Int,%20kotlin.Byte))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`byte`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Sets the value of the indexed component of the specified array object to the specified new value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBoolean](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `z:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`boolean`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByte](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`byte`value. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChar](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setChar(kotlin.Any,%20kotlin.Int,%20kotlin.Char))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`char`value. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDouble](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setDouble(kotlin.Any,%20kotlin.Int,%20kotlin.Double))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`double`value. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloat](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setFloat(kotlin.Any,%20kotlin.Int,%20kotlin.Float))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `f:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`float`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChar](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`char`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDouble](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`double`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloat](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `f:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`float`value. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInt](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setInt(kotlin.Any,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`int`value. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLong](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setLong(kotlin.Any,%20kotlin.Int,%20kotlin.Long))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`long`value. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShort](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#setShort(kotlin.Any,%20kotlin.Int,%20kotlin.Short))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`short`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInt](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`int`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLong](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`long`value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShort](../java/lang/reflect/Array.md))`(`array:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Sets the value of the indexed component of the specified array object to the specified`short`value. |
 | --- | --- |
 
 ## Public methods
@@ -111,7 +111,7 @@ Returns the value of the indexed component in the specified array object, as a`b
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### getByte
 
@@ -144,7 +144,7 @@ Returns the value of the indexed component in the specified array object, as a`b
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### getChar
 
@@ -177,7 +177,7 @@ Returns the value of the indexed component in the specified array object, as a`c
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### getDouble
 
@@ -210,7 +210,7 @@ Returns the value of the indexed component in the specified array object, as a`d
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### getFloat
 
@@ -243,7 +243,7 @@ Returns the value of the indexed component in the specified array object, as a`f
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### getInt
 
@@ -276,7 +276,7 @@ Returns the value of the indexed component in the specified array object, as an`
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### getLength
 
@@ -331,7 +331,7 @@ Returns the value of the indexed component in the specified array object, as a`l
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### getShort
 
@@ -364,7 +364,7 @@ Returns the value of the indexed component in the specified array object, as a`s
 
 **See Also**
 
-- [java.lang.reflect.Array#get](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#get(kotlin.Any,%20kotlin.Int)) 
+- [java.lang.reflect.Array#get](../java/lang/reflect/Array.md)) 
 
 ### newInstance
 
@@ -391,7 +391,7 @@ The number of dimensions of the new array must not exceed 255.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `componentType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>:the`Class`object representing the component type of the new array |
+| `componentType` | [Class](../java/lang/Class.md)\<\*\>:the`Class`object representing the component type of the new array |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of the new array |
 
 | Return ||
@@ -401,7 +401,7 @@ The number of dimensions of the new array must not exceed 255.
 | Exceptions ||
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if the specified`componentType`parameter is null |
-| `java.lang.IllegalArgumentException` | if componentType is [java.lang.Void#TYPE](https://developer.android.com/reference/kotlin/java/lang/Void.html#TYPE:java.lang.Class) or if the number of dimensions of the requested array instance exceed 255. |
+| `java.lang.IllegalArgumentException` | if componentType is [java.lang.Void#TYPE](../java/lang/Void.md) or if the number of dimensions of the requested array instance exceed 255. |
 | `java.lang.NegativeArraySizeException` | if the specified`length`is negative |
 | --- | --- |
 
@@ -422,7 +422,7 @@ The number of dimensions of the new array must not exceed 255.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `componentType` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>:the`Class`object representing the component type of the new array |
+| `componentType` | [Class](../java/lang/Class.md)\<\*\>:the`Class`object representing the component type of the new array |
 | `dimensions` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an array of`int`representing the dimensions of the new array |
 
 | Return ||
@@ -432,7 +432,7 @@ The number of dimensions of the new array must not exceed 255.
 | Exceptions ||
 |----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if the specified`componentType`argument is null |
-| `java.lang.IllegalArgumentException` | if the specified`dimensions`argument is a zero-dimensional array, if componentType is [java.lang.Void#TYPE](https://developer.android.com/reference/kotlin/java/lang/Void.html#TYPE:java.lang.Class), or if the number of dimensions of the requested array instance exceed 255. |
+| `java.lang.IllegalArgumentException` | if the specified`dimensions`argument is a zero-dimensional array, if componentType is [java.lang.Void#TYPE](../java/lang/Void.md), or if the number of dimensions of the requested array instance exceed 255. |
 | `java.lang.NegativeArraySizeException` | if any of the components in the specified`dimensions`argument is negative. |
 | --- | --- |
 
@@ -494,7 +494,7 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any)) 
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md)) 
 
 ### setByte
 
@@ -526,7 +526,7 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any)) 
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md)) 
 
 ### setChar
 
@@ -558,7 +558,7 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any)) 
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md)) 
 
 ### setDouble
 
@@ -590,7 +590,7 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any)) 
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md)) 
 
 ### setFloat
 
@@ -622,7 +622,7 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any)) 
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md)) 
 
 ### setInt
 
@@ -654,7 +654,7 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any)) 
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md)) 
 
 ### setLong
 
@@ -686,7 +686,7 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any)) 
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md)) 
 
 ### setShort
 
@@ -718,4 +718,4 @@ Sets the value of the indexed component of the specified array object to the spe
 
 **See Also**
 
-- [java.lang.reflect.Array#set](https://developer.android.com/reference/kotlin/java/lang/reflect/Array#set(kotlin.Any,%20kotlin.Int,%20kotlin.Any))
+- [java.lang.reflect.Array#set](../java/lang/reflect/Array.md))

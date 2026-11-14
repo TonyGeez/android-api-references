@@ -11,31 +11,31 @@ open class IllegalFormatCodePointException : IllegalFormatException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) |||
-| | | | | ↳ | [java.util.IllegalFormatException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException) ||
-| | | | | | ↳ | [java.util.IllegalFormatCodePointException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatCodePointException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) |||
+| | | | | ↳ | [java.util.IllegalFormatException](../java/util/IllegalFormatException.md) ||
+| | | | | | ↳ | [java.util.IllegalFormatCodePointException](../java/util/IllegalFormatCodePointException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Unchecked exception thrown when a character with an invalid Unicode code point as defined by [Character.isValidCodePoint](https://developer.android.com/reference/kotlin/java/lang/Character.html#isValidCodePoint(kotlin.Int))is passed to the [Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter).
+Unchecked exception thrown when a character with an invalid Unicode code point as defined by [Character.isValidCodePoint](../java/lang/Character.md))is passed to the [Formatter](../java/util/Formatter.md).
 
-Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#) to be thrown.
+Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalFormatCodePointException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatCodePointException#IllegalFormatCodePointException(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance of this class with the specified illegal code point as defined by [Character.isValidCodePoint](https://developer.android.com/reference/kotlin/java/lang/Character.html#isValidCodePoint(kotlin.Int)). |
+| [IllegalFormatCodePointException](../java/util/IllegalFormatCodePointException.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance of this class with the specified illegal code point as defined by [Character.isValidCodePoint](../java/lang/Character.md)). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](https://developer.android.com/reference/kotlin/java/util/IllegalFormatCodePointException#getCodePoint())`()` Returns the illegal code point as defined by [java.lang.Character#isValidCodePoint](https://developer.android.com/reference/kotlin/java/lang/Character.html#isValidCodePoint(kotlin.Int)). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](../java/util/IllegalFormatCodePointException.md))`()` Returns the illegal code point as defined by [java.lang.Character#isValidCodePoint](../java/lang/Character.md)). |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/util/IllegalFormatCodePointException#message:kotlin.String) <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/util/IllegalFormatCodePointException.md) <br /> |
 
 ## Public constructors
 
@@ -47,7 +47,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 IllegalFormatCodePointException(c: Int)
 ```
 
-Constructs an instance of this class with the specified illegal code point as defined by [Character.isValidCodePoint](https://developer.android.com/reference/kotlin/java/lang/Character.html#isValidCodePoint(kotlin.Int)).
+Constructs an instance of this class with the specified illegal code point as defined by [Character.isValidCodePoint](../java/lang/Character.md)).
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------|
@@ -63,7 +63,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getCodePoint(): Int
 ```
 
-Returns the illegal code point as defined by [java.lang.Character#isValidCodePoint](https://developer.android.com/reference/kotlin/java/lang/Character.html#isValidCodePoint(kotlin.Int)).
+Returns the illegal code point as defined by [java.lang.Character#isValidCodePoint](../java/lang/Character.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------|

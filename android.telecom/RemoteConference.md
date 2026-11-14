@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # RemoteConference
 
-Kotlin| [Java](https://developer.android.com/reference/android/telecom/RemoteConference "View this page in Java") 
+Kotlin| [Java](../android/telecom/RemoteConference.md) 
 | --- | --- |
 
 ```
@@ -13,43 +13,43 @@ class RemoteConference
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.RemoteConference](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#) |
+| ↳ | [android.telecom.RemoteConference](../android/telecom/RemoteConference.md) |
 
-A conference provided to a [ConnectionService](https://developer.android.com/reference/kotlin/android/telecom/ConnectionService) by another`ConnectionService`through [ConnectionService.conferenceRemoteConnections](https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#conferenceRemoteConnections(android.telecom.RemoteConnection,%20android.telecom.RemoteConnection)). Once created, a`RemoteConference`can be used to control the conference call or monitor changes through [RemoteConnection.Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection.Callback).
+A conference provided to a [ConnectionService](../android/telecom/ConnectionService.md) by another`ConnectionService`through [ConnectionService.conferenceRemoteConnections](../android/telecom/ConnectionService.md)). Once created, a`RemoteConference`can be used to control the conference call or monitor changes through [RemoteConnection.Callback](../android/telecom/RemoteConnection.Callback.md).
 
 ## Summary
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference.Callback) Callback base class for [RemoteConference](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#). |
+| abstract | [Callback](../android/telecom/RemoteConference.Callback.md) Callback base class for [RemoteConference](../android/telecom/RemoteConference.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#disconnect())`()` Disconnects the conference call as well as the child [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection)!\>! | [getConferenceableConnections](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#getConferenceableConnections())`()` Returns a list of independent connections that can me merged with this conference. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionCapabilities](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#getConnectionCapabilities())`()` Returns the capabilities of the conference. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disconnect](../android/telecom/RemoteConference.md))`()` Disconnects the conference call as well as the child [RemoteConnection](../android/telecom/RemoteConnection.md) s. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteConnection](../android/telecom/RemoteConnection.md)!\>! | [getConferenceableConnections](../android/telecom/RemoteConference.md))`()` Returns a list of independent connections that can me merged with this conference. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionCapabilities](../android/telecom/RemoteConference.md))`()` Returns the capabilities of the conference. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionProperties](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#getConnectionProperties())`()` Returns the properties of the conference. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection)!\>! | [getConnections](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#getConnections())`()` Returns the list of [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s contained in this conference. |
-| [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause)! | [getDisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#getDisconnectCause())`()` Returns the [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause) for the conference if it is in the state [Connection.STATE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/telecom/Connection#STATE_DISCONNECTED:kotlin.Int). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionProperties](../android/telecom/RemoteConference.md))`()` Returns the properties of the conference. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteConnection](../android/telecom/RemoteConnection.md)!\>! | [getConnections](../android/telecom/RemoteConference.md))`()` Returns the list of [RemoteConnection](../android/telecom/RemoteConnection.md) s contained in this conference. |
+| [DisconnectCause](../android/telecom/DisconnectCause.md)! | [getDisconnectCause](../android/telecom/RemoteConference.md))`()` Returns the [DisconnectCause](../android/telecom/DisconnectCause.md) for the conference if it is in the state [Connection.STATE_DISCONNECTED](../android/telecom/Connection.md). |
 | --- | --- |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getExtras](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#getExtras())`()` Obtain the extras associated with this`RemoteConnection`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#getState())`()` Gets the state of the conference call. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [hold](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#hold())`()` Puts the conference on hold. |
+| [Bundle](../android/os/Bundle.md)! | [getExtras](../android/telecom/RemoteConference.md))`()` Obtain the extras associated with this`RemoteConnection`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](../android/telecom/RemoteConference.md))`()` Gets the state of the conference call. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [hold](../android/telecom/RemoteConference.md))`()` Puts the conference on hold. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [merge](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#merge())`()` Merges all [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s of this conference into a single call. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [playDtmfTone](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#playDtmfTone(kotlin.Char))`(`digit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Requests that the conference start playing the specified DTMF tone. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#registerCallback(android.telecom.RemoteConference.Callback))`(`callback:` ` [RemoteConference.Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference.Callback)!`)` Register a callback through which to receive state updates for this conference. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [merge](../android/telecom/RemoteConference.md))`()` Merges all [RemoteConnection](../android/telecom/RemoteConnection.md) s of this conference into a single call. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [playDtmfTone](../android/telecom/RemoteConference.md))`(`digit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Requests that the conference start playing the specified DTMF tone. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](../android/telecom/RemoteConference.md))`(`callback:` ` [RemoteConference.Callback](../android/telecom/RemoteConference.Callback.md)!`)` Register a callback through which to receive state updates for this conference. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#registerCallback(android.telecom.RemoteConference.Callback,%20android.os.Handler))`(`callback:` ` [RemoteConference.Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference.Callback)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Registers a callback through which to receive state updates for this conference. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [separate](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#separate(android.telecom.RemoteConnection))`(`connection:` ` [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection)!`)` Removes the specified [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) from the conference. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCallAudioState](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#setCallAudioState(android.telecom.CallAudioState))`(`state:` ` [CallAudioState](https://developer.android.com/reference/kotlin/android/telecom/CallAudioState)!`)` Request to change the conference's audio routing to the specified state. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](../android/telecom/RemoteConference.md))`(`callback:` ` [RemoteConference.Callback](../android/telecom/RemoteConference.Callback.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Registers a callback through which to receive state updates for this conference. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [separate](../android/telecom/RemoteConference.md))`(`connection:` ` [RemoteConnection](../android/telecom/RemoteConnection.md)!`)` Removes the specified [RemoteConnection](../android/telecom/RemoteConnection.md) from the conference. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCallAudioState](../android/telecom/RemoteConference.md))`(`state:` ` [CallAudioState](../android/telecom/CallAudioState.md)!`)` Request to change the conference's audio routing to the specified state. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopDtmfTone](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#stopDtmfTone())`()` Stops the most recent request to play a DTMF tone. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swap](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#swap())`()` Swaps the active audio stream between the conference's child [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unhold](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#unhold())`()` Unholds the conference call. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopDtmfTone](../android/telecom/RemoteConference.md))`()` Stops the most recent request to play a DTMF tone. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swap](../android/telecom/RemoteConference.md))`()` Swaps the active audio stream between the conference's child [RemoteConnection](../android/telecom/RemoteConnection.md) s. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unhold](../android/telecom/RemoteConference.md))`()` Unholds the conference call. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCallback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#unregisterCallback(android.telecom.RemoteConference.Callback))`(`callback:` ` [RemoteConference.Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference.Callback)!`)` Unregisters a previously registered callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCallback](../android/telecom/RemoteConference.md))`(`callback:` ` [RemoteConference.Callback](../android/telecom/RemoteConference.Callback.md)!`)` Unregisters a previously registered callback. |
 
 ## Public methods
 
@@ -61,7 +61,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun disconnect(): Unit
 ```
 
-Disconnects the conference call as well as the child [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s. 
+Disconnects the conference call as well as the child [RemoteConnection](../android/telecom/RemoteConnection.md) s. 
 
 ### getConferenceableConnections
 
@@ -75,7 +75,7 @@ Returns a list of independent connections that can me merged with this conferenc
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection)!>! | A list of conferenceable connections. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RemoteConnection](../android/telecom/RemoteConnection.md)!>! | A list of conferenceable connections. |
 
 ### getConnectionCapabilities
 
@@ -85,7 +85,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getConnectionCapabilities(): Int
 ```
 
-Returns the capabilities of the conference. See`CAPABILITY_*`constants in class [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection) for valid values.
+Returns the capabilities of the conference. See`CAPABILITY_*`constants in class [Connection](../android/telecom/Connection.md) for valid values.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------|
@@ -99,7 +99,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getConnectionProperties(): Int
 ```
 
-Returns the properties of the conference. See`PROPERTY_*`constants in class [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection) for valid values.
+Returns the properties of the conference. See`PROPERTY_*`constants in class [Connection](../android/telecom/Connection.md) for valid values.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------|
@@ -113,11 +113,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getConnections(): MutableList<RemoteConnection!>!
 ```
 
-Returns the list of [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s contained in this conference.
+Returns the list of [RemoteConnection](../android/telecom/RemoteConnection.md) s contained in this conference.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection)!>! | A list of child connections. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RemoteConnection](../android/telecom/RemoteConnection.md)!>! | A list of child connections. |
 
 ### getDisconnectCause
 
@@ -127,11 +127,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getDisconnectCause(): DisconnectCause!
 ```
 
-Returns the [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause) for the conference if it is in the state [Connection.STATE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/telecom/Connection#STATE_DISCONNECTED:kotlin.Int). If the conference is not disconnected, this will return null.
+Returns the [DisconnectCause](../android/telecom/DisconnectCause.md) for the conference if it is in the state [Connection.STATE_DISCONNECTED](../android/telecom/Connection.md). If the conference is not disconnected, this will return null.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-----------------------|
-| [DisconnectCause](https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause)! | The disconnect cause. |
+| [DisconnectCause](../android/telecom/DisconnectCause.md)! | The disconnect cause. |
 
 ### getExtras
 
@@ -145,7 +145,7 @@ Obtain the extras associated with this`RemoteConnection`.
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | The extras for this connection. |
+| [Bundle](../android/os/Bundle.md)! | The extras for this connection. |
 
 ### getState
 
@@ -155,7 +155,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getState(): Int
 ```
 
-Gets the state of the conference call. See [Connection](https://developer.android.com/reference/kotlin/android/telecom/Connection) for valid values.
+Gets the state of the conference call. See [Connection](../android/telecom/Connection.md) for valid values.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------|
@@ -179,7 +179,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun merge(): Unit
 ```
 
-Merges all [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s of this conference into a single call. This should be invoked only if the conference contains the capability [Connection.CAPABILITY_MERGE_CONFERENCE](https://developer.android.com/reference/kotlin/android/telecom/Connection#CAPABILITY_MERGE_CONFERENCE:kotlin.Int), otherwise it is a no-op. The presence of said capability indicates that the connections of this conference, despite being part of the same conference object, are yet to have their audio streams merged; this is a common pattern for CDMA conference calls, but the capability is not used for GSM and SIP conference calls. Invoking this method will cause the unmerged child connections to merge their audio streams. 
+Merges all [RemoteConnection](../android/telecom/RemoteConnection.md) s of this conference into a single call. This should be invoked only if the conference contains the capability [Connection.CAPABILITY_MERGE_CONFERENCE](../android/telecom/Connection.md), otherwise it is a no-op. The presence of said capability indicates that the connections of this conference, despite being part of the same conference object, are yet to have their audio streams merged; this is a common pattern for CDMA conference calls, but the capability is not used for GSM and SIP conference calls. Invoking this method will cause the unmerged child connections to merge their audio streams. 
 
 ### playDtmfTone
 
@@ -207,7 +207,7 @@ Register a callback through which to receive state updates for this conference.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [RemoteConference.Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference.Callback)!:The callback to notify of state changes. |
+| `callback` | [RemoteConference.Callback](../android/telecom/RemoteConference.Callback.md)!:The callback to notify of state changes. |
 
 ### registerCallback
 
@@ -224,8 +224,8 @@ Registers a callback through which to receive state updates for this conference.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [RemoteConference.Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference.Callback)!:The callback to notify of state changes. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:The handler on which to execute the callbacks. |
+| `callback` | [RemoteConference.Callback](../android/telecom/RemoteConference.Callback.md)!:The callback to notify of state changes. |
+| `handler` | [Handler](../android/os/Handler.md)!:The handler on which to execute the callbacks. |
 
 ### separate
 
@@ -235,11 +235,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun separate(connection: RemoteConnection!): Unit
 ```
 
-Removes the specified [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) from the conference. This causes the [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) to become a standalone connection. This is a no-op if the [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) does not belong to this conference.
+Removes the specified [RemoteConnection](../android/telecom/RemoteConnection.md) from the conference. This causes the [RemoteConnection](../android/telecom/RemoteConnection.md) to become a standalone connection. This is a no-op if the [RemoteConnection](../android/telecom/RemoteConnection.md) does not belong to this conference.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `connection` | [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection)!:The remote-connection to remove. |
+| `connection` | [RemoteConnection](../android/telecom/RemoteConnection.md)!:The remote-connection to remove. |
 
 ### setCallAudioState
 
@@ -262,7 +262,7 @@ fun stopDtmfTone(): Unit
 Stops the most recent request to play a DTMF tone. 
 **See Also**
 
-- [#playDtmfTone](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference#playDtmfTone(kotlin.Char)) 
+- [#playDtmfTone](../android/telecom/RemoteConference.md)) 
 
 ### swap
 
@@ -272,7 +272,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun swap(): Unit
 ```
 
-Swaps the active audio stream between the conference's child [RemoteConnection](https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection) s. This should be invoked only if the conference contains the capability [Connection.CAPABILITY_SWAP_CONFERENCE](https://developer.android.com/reference/kotlin/android/telecom/Connection#CAPABILITY_SWAP_CONFERENCE:kotlin.Int), otherwise it is a no-op. This is only used by [ConnectionService](https://developer.android.com/reference/kotlin/android/telecom/ConnectionService) s that create conferences for connections that do not yet have their audio streams merged; this is a common pattern for CDMA conference calls, but the capability is not used for GSM and SIP conference calls. Invoking this method will change the active audio stream to a different child connection. 
+Swaps the active audio stream between the conference's child [RemoteConnection](../android/telecom/RemoteConnection.md) s. This should be invoked only if the conference contains the capability [Connection.CAPABILITY_SWAP_CONFERENCE](../android/telecom/Connection.md), otherwise it is a no-op. This is only used by [ConnectionService](../android/telecom/ConnectionService.md) s that create conferences for connections that do not yet have their audio streams merged; this is a common pattern for CDMA conference calls, but the capability is not used for GSM and SIP conference calls. Invoking this method will change the active audio stream to a different child connection. 
 
 ### unhold
 
@@ -296,6 +296,6 @@ Unregisters a previously registered callback.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [RemoteConference.Callback](https://developer.android.com/reference/kotlin/android/telecom/RemoteConference.Callback)!:The callback to unregister. |
+| `callback` | [RemoteConference.Callback](../android/telecom/RemoteConference.Callback.md)!:The callback to unregister. |
 
 **See Also**

@@ -8,10 +8,10 @@ abstract class HttpURLConnection : URLConnection
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.net.URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection) ||
-| | ↳ | [java.net.HttpURLConnection](https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#) |
+| ↳ | [java.net.URLConnection](../java/net/URLConnection.md) ||
+| | ↳ | [java.net.HttpURLConnection](../java/net/HttpURLConnection.md) |
 
-| Known Direct Subclasses [HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#) |---|---| | [HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#) | `HttpsURLConnection` extends `HttpURLConnection` with support for https-specific features. | |
+| Known Direct Subclasses [HttpsURLConnection](../javax/net/ssl/HttpsURLConnection.md) |---|---| | [HttpsURLConnection](../javax/net/ssl/HttpsURLConnection.md) | `HttpsURLConnection` extends `HttpURLConnection` with support for https-specific features. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A URLConnection with support for HTTP-specific features. See [the spec](http://www.w3.org/pub/WWW/Protocols/) for details.
@@ -243,7 +243,7 @@ Each instance of `HttpURLConnection` may be used for one request/response pair. 
 | Public methods ||
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#disconnect()()` Indicates that other requests to the server are unlikely in the near future. |
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getErrorStream()()` Returns the error stream if the connection failed but the server sent useful data nonetheless. |
+| open [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getErrorStream()()` Returns the error stream if the connection failed but the server sent useful data nonetheless. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getFollowRedirects()()` Returns a `boolean` indicating whether or not HTTP redirects (3xx) should be automatically followed. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getHeaderField(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value for the `n`th header field. |
@@ -251,7 +251,7 @@ Each instance of `HttpURLConnection` may be used for one request/response pair. 
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getHeaderFieldKey(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the key for the `n`th header field. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getInstanceFollowRedirects()()` Returns the value of this `HttpURLConnection`'s `instanceFollowRedirects` field. |
-| open [Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getPermission()()` Returns a `https://developer.android.com/reference/kotlin/java/net/SocketPermission` object representing the permission necessary to connect to the destination host and port. |
+| open [Permission](../java/security/Permission.md)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getPermission()()` Returns a `https://developer.android.com/reference/kotlin/java/net/SocketPermission` object representing the permission necessary to connect to the destination host and port. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getRequestMethod()()` Get the request method. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/HttpURLConnection#getResponseCode()()` Gets the status code from an HTTP response message. |
@@ -738,7 +738,7 @@ Constructor for the HttpURLConnection.
 
 | Parameters ||
 |---|---|
-| `u` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!: the URL |
+| `u` | [URL](../java/net/URL.md)!: the URL |
 
 ## Public methods
 
@@ -1030,7 +1030,7 @@ This method is used to enable streaming of a HTTP request body without internal 
 
 An exception will be thrown if the application attempts to write more data than the indicated content-length, or if the application closes the OutputStream before writing the indicated amount.
 
-When output streaming is enabled, authentication and redirection cannot be handled automatically. A [HttpRetryException](https://developer.android.com/reference/kotlin/java/net/HttpRetryException) will be thrown when reading the response if authentication or redirection are required. This exception can be queried for the details of the error.
+When output streaming is enabled, authentication and redirection cannot be handled automatically. A [HttpRetryException](../java/net/HttpRetryException.md) will be thrown when reading the response if authentication or redirection are required. This exception can be queried for the details of the error.
 
 This method must be called before the URLConnection is connected.
 

@@ -11,19 +11,19 @@ open class InvalidPreferencesFormatException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [java.util.prefs.InvalidPreferencesFormatException](https://developer.android.com/reference/kotlin/java/util/prefs/InvalidPreferencesFormatException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [java.util.prefs.InvalidPreferencesFormatException](../java/util/prefs/InvalidPreferencesFormatException.md) |
 | --- | --- | --- | --- |
 
-Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of preferences, as per the [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences) specification.
+Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of preferences, as per the [Preferences](../java/util/prefs/Preferences.md) specification.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidPreferencesFormatException](https://developer.android.com/reference/kotlin/java/util/prefs/InvalidPreferencesFormatException#InvalidPreferencesFormatException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidPreferencesFormatException with the specified detail message. |
-| [InvalidPreferencesFormatException](https://developer.android.com/reference/kotlin/java/util/prefs/InvalidPreferencesFormatException#InvalidPreferencesFormatException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an InvalidPreferencesFormatException with the specified detail message and cause. |
-| [InvalidPreferencesFormatException](https://developer.android.com/reference/kotlin/java/util/prefs/InvalidPreferencesFormatException#InvalidPreferencesFormatException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an InvalidPreferencesFormatException with the specified cause. |
+| [InvalidPreferencesFormatException](../java/util/prefs/InvalidPreferencesFormatException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidPreferencesFormatException with the specified detail message. |
+| [InvalidPreferencesFormatException](../java/util/prefs/InvalidPreferencesFormatException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an InvalidPreferencesFormatException with the specified detail message and cause. |
+| [InvalidPreferencesFormatException](../java/util/prefs/InvalidPreferencesFormatException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an InvalidPreferencesFormatException with the specified cause. |
 
 ## Public constructors
 
@@ -39,7 +39,7 @@ Constructs an InvalidPreferencesFormatException with the specified detail messag
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. The detail message is saved for later retrieval by the [Throwable.getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage())method. |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. The detail message is saved for later retrieval by the [Throwable.getMessage()](../java/lang/Throwable.md))method. |
 
 ### InvalidPreferencesFormatException
 
@@ -55,8 +55,8 @@ Constructs an InvalidPreferencesFormatException with the specified detail messag
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. The detail message is saved for later retrieval by the [Throwable.getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage())method. |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method). |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. The detail message is saved for later retrieval by the [Throwable.getMessage()](../java/lang/Throwable.md))method. |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java/lang/Throwable.md))method). |
 
 ### InvalidPreferencesFormatException
 
@@ -70,4 +70,4 @@ Constructs an InvalidPreferencesFormatException with the specified cause.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java/lang/Throwable.md))method). |

@@ -8,7 +8,7 @@ open class DateTimePatternGenerator : Cloneable, Freezable<DateTimePatternGene
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#) |
+| ↳ | [android.icu.text.DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md) |
 
 This class provides flexible generation of date format patterns, like "yy-MM-dd". The user can build up the generator by adding successive patterns. Once that is done, a query can be made using a "skeleton", which is a pattern which just includes the desired fields and lengths. The generator will return the "best fit" pattern corresponding to that skeleton.
 
@@ -55,11 +55,11 @@ The main method people will use is getBestPattern(String skeleton), since normal
 
 | Public methods ||
 |---|---|
-| open [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#addPattern(kotlin.String,%20kotlin.Boolean,%20android.icu.text.DateTimePatternGenerator.PatternInfo)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, override: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, returnInfo: https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator.PatternInfo!)` Adds a pattern to the generator. |
+| open [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#addPattern(kotlin.String,%20kotlin.Boolean,%20android.icu.text.DateTimePatternGenerator.PatternInfo)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, override: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, returnInfo: https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator.PatternInfo!)` Adds a pattern to the generator. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#clone()()` Returns a copy of this `DateTimePatternGenerator` object. |
-| open [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#cloneAsThawed()()` Provides for the clone operation. |
+| open [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#cloneAsThawed()()` Provides for the clone operation. |
 | --- | --- |
-| open [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#freeze()()` Freezes the object. |
+| open [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#freeze()()` Freezes the object. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getAppendItemFormat(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Getter corresponding to setAppendItemFormats. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getAppendItemName(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Getter corresponding to setAppendItemName. |
 | --- | --- |
@@ -72,14 +72,14 @@ The main method people will use is getBestPattern(String skeleton), since normal
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getDateTimeFormat(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Getter corresponding to setDateTimeFormat. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getDecimal()()` Getter corresponding to setDecimal. |
-| open [DateFormat.HourCycle](https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.HourCycle)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getDefaultHourCycle()()` Return the default hour cycle. |
-| open static [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getEmptyInstance()()` Create empty generator, to be constructed with addPattern(...) etc. |
+| open [DateFormat.HourCycle](../android/icu/text/DateFormat.HourCycle.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getDefaultHourCycle()()` Return the default hour cycle. |
+| open static [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getEmptyInstance()()` Create empty generator, to be constructed with addPattern(...) etc. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getFieldDisplayName(kotlin.Int,%20android.icu.text.DateTimePatternGenerator.DisplayWidth)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator.DisplayWidth!)` The general interface to get a display name for a particular date/time field, in one of several possible display widths. |
-| open static [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getInstance()()` Construct a flexible generator according to data for the default `FORMAT` locale. |
-| open static [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getInstance(android.icu.util.ULocale)(uLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Construct a flexible generator according to data for a given locale. |
+| open static [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getInstance()()` Construct a flexible generator according to data for the default `FORMAT` locale. |
+| open static [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getInstance(android.icu.util.ULocale)(uLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Construct a flexible generator according to data for a given locale. |
 | --- | --- |
-| open static [DateTimePatternGenerator](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Construct a flexible generator according to data for a given locale. |
+| open static [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Construct a flexible generator according to data for a given locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getSkeleton(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Utility to return a unique skeleton from a given pattern. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator#getSkeletons(kotlin.collections.MutableMap)(result: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Return a list of all the skeletons (in canonical form) from this class, and the patterns that they map to. |
 | --- | --- |
@@ -364,7 +364,7 @@ Date date= new GregorianCalendar(1999,9,13,23,58,59).getTime();
 |---|---|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Pattern to add. |
 | `override` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): When existing values are to be overridden use true, otherwise use false. |
-| `returnInfo` | [DateTimePatternGenerator.PatternInfo](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator.PatternInfo)!: Returned information. |
+| `returnInfo` | [DateTimePatternGenerator.PatternInfo](../android/icu/text/DateTimePatternGenerator.PatternInfo.md)!: Returned information. |
 | --- | --- |
 
 ### clone
@@ -675,7 +675,7 @@ The general interface to get a display name for a particular date/time field, in
 | Parameters ||
 |---|---|
 | `field` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The field type, such as ERA. |
-| `width` | [DateTimePatternGenerator.DisplayWidth](https://developer.android.com/reference/kotlin/android/icu/text/DateTimePatternGenerator.DisplayWidth)!: The desired DisplayWidth, such as DisplayWidth.ABBREVIATED. |
+| `width` | [DateTimePatternGenerator.DisplayWidth](../android/icu/text/DateTimePatternGenerator.DisplayWidth.md)!: The desired DisplayWidth, such as DisplayWidth.ABBREVIATED. |
 
 | Return ||
 |---|---|
@@ -706,7 +706,7 @@ Construct a flexible generator according to data for a given locale.
 
 | Parameters ||
 |---|---|
-| `uLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!: The locale to pass. |
+| `uLocale` | [ULocale](../android/icu/util/ULocale.md)!: The locale to pass. |
 
 ### getInstance
 
@@ -720,7 +720,7 @@ Construct a flexible generator according to data for a given locale.
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: The `https://developer.android.com/reference/kotlin/java/util/Locale.html#` to pass. |
+| `locale` | [Locale](../java/util/Locale.md)!: The `https://developer.android.com/reference/kotlin/java/util/Locale.html#` to pass. |
 
 ### getSkeleton
 

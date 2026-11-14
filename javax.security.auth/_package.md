@@ -4,19 +4,19 @@
 
 ## Interfaces
 
-| [Destroyable](https://developer.android.com/reference/kotlin/javax/security/auth/Destroyable) | Objects such as credentials may optionally implement this interface to provide the capability to destroy its contents. |
+| [Destroyable](../javax/security/auth/Destroyable.md) | Objects such as credentials may optionally implement this interface to provide the capability to destroy its contents. |
 | --- | --- |
 
 ## Classes
 
-| [AuthPermission](https://developer.android.com/reference/kotlin/javax/security/auth/AuthPermission) | Legacy security code; do not use. |
+| [AuthPermission](../javax/security/auth/AuthPermission.md) | Legacy security code; do not use. |
 | --- | --- |
-| [PrivateCredentialPermission](https://developer.android.com/reference/kotlin/javax/security/auth/PrivateCredentialPermission) | Legacy security code; do not use. |
-| [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject) | A `Subject` represents a grouping of related information for a single entity, such as a person. |
-| [SubjectDomainCombiner](https://developer.android.com/reference/kotlin/javax/security/auth/SubjectDomainCombiner) | Legacy security code; do not use. |
+| [PrivateCredentialPermission](../javax/security/auth/PrivateCredentialPermission.md) | Legacy security code; do not use. |
+| [Subject](../javax/security/auth/Subject.md) | A `Subject` represents a grouping of related information for a single entity, such as a person. |
+| [SubjectDomainCombiner](../javax/security/auth/SubjectDomainCombiner.md) | Legacy security code; do not use. |
 | --- | --- |
 
 ## Exceptions
 
-| [DestroyFailedException](https://developer.android.com/reference/kotlin/javax/security/auth/DestroyFailedException) | Signals that a `destroy` operation failed. |
+| [DestroyFailedException](../javax/security/auth/DestroyFailedException.md) | Signals that a `destroy` operation failed. |
 | --- | --- |

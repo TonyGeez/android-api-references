@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface WildcardType : Type
 ```
 
-| [java.lang.reflect.WildcardType](https://developer.android.com/reference/kotlin/java/lang/reflect/WildcardType#) |
+| [java.lang.reflect.WildcardType](../java/lang/reflect/WildcardType.md) |
 
 WildcardType represents a wildcard type expression, such as`?`,`? extends Number`, or`? super Integer`.
 
@@ -16,12 +16,12 @@ WildcardType represents a wildcard type expression, such as`?`,`? extends Number
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | [getLowerBounds](https://developer.android.com/reference/kotlin/java/lang/reflect/WildcardType#getLowerBounds())`()` Returns an array of`Type`objects representing the lower bound(s) of this type variable. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!\> | [getUpperBounds](https://developer.android.com/reference/kotlin/java/lang/reflect/WildcardType#getUpperBounds())`()` Returns an array of`Type`objects representing the upper bound(s) of this type variable. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java/lang/reflect/Type.md)!\> | [getLowerBounds](../java/lang/reflect/WildcardType.md))`()` Returns an array of`Type`objects representing the lower bound(s) of this type variable. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java/lang/reflect/Type.md)!\> | [getUpperBounds](../java/lang/reflect/WildcardType.md))`()` Returns an array of`Type`objects representing the upper bound(s) of this type variable. |
 
 | Inherited functions ||
 |---|---|
-| From class [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type) |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTypeName](https://developer.android.com/reference/kotlin/java/lang/reflect/Type#getTypeName())`()` <br /> Returns a string describing this type, including information about any type parameters. <br /> | ||
+| From class [Type](../java/lang/reflect/Type.md) |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTypeName](../java/lang/reflect/Type.md))`()` <br /> Returns a string describing this type, including information about any type parameters. <br /> | ||
 
 ## Public methods
 
@@ -37,12 +37,12 @@ Returns an array of`Type`objects representing the lower bound(s) of this type va
 
 For each lower bound B :
 
-- if B is a parameterized type or a type variable, it is created, (see [ParameterizedType](https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType) for the details of the creation process for parameterized types).
+- if B is a parameterized type or a type variable, it is created, (see [ParameterizedType](../java/lang/reflect/ParameterizedType.md) for the details of the creation process for parameterized types).
 - Otherwise, B is resolved.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!> | an array of Types representing the lower bound(s) of this type variable |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Type](../java/lang/reflect/Type.md)!> | an array of Types representing the lower bound(s) of this type variable |
 
 | Exceptions ||
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -61,12 +61,12 @@ Returns an array of`Type`objects representing the upper bound(s) of this type va
 
 For each upper bound B :
 
-- if B is a parameterized type or a type variable, it is created, (see [ParameterizedType](https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType) for the details of the creation process for parameterized types).
+- if B is a parameterized type or a type variable, it is created, (see [ParameterizedType](../java/lang/reflect/ParameterizedType.md) for the details of the creation process for parameterized types).
 - Otherwise, B is resolved.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type)!> | an array of Types representing the upper bound(s) of this type variable |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Type](../java/lang/reflect/Type.md)!> | an array of Types representing the upper bound(s) of this type variable |
 
 | Exceptions ||
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------|

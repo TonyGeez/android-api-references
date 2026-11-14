@@ -4,14 +4,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # Callback
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/GeolocationPermissions.Callback "View this page in Java") 
+Kotlin| [Java](../android/webkit/GeolocationPermissions.Callback.md) 
 | --- | --- |
 
 ```
 interface Callback
 ```
 
-| [android.webkit.GeolocationPermissions.Callback](https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions.Callback#) |
+| [android.webkit.GeolocationPermissions.Callback](../android/webkit/GeolocationPermissions.Callback.md) |
 
 A callback interface used by the host application to set the Geolocation permission state for an origin.
 
@@ -19,7 +19,7 @@ A callback interface used by the host application to set the Geolocation permiss
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invoke](https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions.Callback#invoke(kotlin.String,%20kotlin.Boolean,%20kotlin.Boolean))`(`origin:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `retain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the Geolocation permission state for the supplied origin. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invoke](../android/webkit/GeolocationPermissions.Callback.md))`(`origin:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `retain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the Geolocation permission state for the supplied origin. |
 
 ## Public methods
 

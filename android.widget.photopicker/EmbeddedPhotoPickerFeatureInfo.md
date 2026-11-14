@@ -9,7 +9,7 @@ class EmbeddedPhotoPickerFeatureInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.photopicker.EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#) |
+| ↳ | [android.widget.photopicker.EmbeddedPhotoPickerFeatureInfo](../android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo.md) |
 
 An immutable parcel to carry information regarding desired features of caller for a given session.
 
@@ -49,7 +49,7 @@ Callers should use `https://developer.android.com/reference/kotlin/android/widge
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getAccentColor()()` <br /> |
-| [EmbeddedPhotoPickerUiCustomizationParams](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getEmbeddedUiCustomizationParams()()` Returns the embedded-specific UI customization options set by the app. |
+| [EmbeddedPhotoPickerUiCustomizationParams](../android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams.md)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getEmbeddedUiCustomizationParams()()` Returns the embedded-specific UI customization options set by the app. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getHighlightAlbumId()()` Returns the highlight album set by the app |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getHighlightSearchMediaTextQuery()()` Returns the highlight media text query set by the app |
@@ -59,11 +59,11 @@ Callers should use `https://developer.android.com/reference/kotlin/android/widge
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getMaxSelectionLimit()()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getMimeTypes()()` <br /> |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getPreSelectedUris()()` <br /> |
-| [PhotoPickerSelectionParams](https://developer.android.com/reference/kotlin/android/widget/photopicker/PhotoPickerSelectionParams)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getSelectionParams()()` Returns the selection options, which specify filters for media item properties. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\> | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getPreSelectedUris()()` <br /> |
+| [PhotoPickerSelectionParams](../android/widget/photopicker/PhotoPickerSelectionParams.md)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getSelectionParams()()` Returns the selection options, which specify filters for media item properties. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getThemeNightMode()()` <br /> |
 | --- | --- |
-| [PhotoPickerUiCustomizationParams](https://developer.android.com/reference/kotlin/android/widget/photopicker/PhotoPickerUiCustomizationParams)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getUiCustomizationParams()()` Returns the ui customization options set by the app. |
+| [PhotoPickerUiCustomizationParams](../android/widget/photopicker/PhotoPickerUiCustomizationParams.md)? | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#getUiCustomizationParams()()` Returns the ui customization options set by the app. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#isCollapsedModeScrollingEnabled()()` Returns whether the app enabled scrolling in collapsed mode. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#isLocationMetadataRequested()()` Returns whether the app is requesting location metadata for selected media items. |
 | --- | --- |
@@ -75,7 +75,7 @@ Callers should use `https://developer.android.com/reference/kotlin/android/widge
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [EmbeddedPhotoPickerFeatureInfo](https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#)!\> | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EmbeddedPhotoPickerFeatureInfo](../android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerFeatureInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -366,7 +366,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

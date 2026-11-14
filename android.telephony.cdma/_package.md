@@ -2,10 +2,10 @@
 
 # android.telephony.cdma
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/cdma/package-summary "View this page in Java")
+Kotlin| [Java](../android/telephony/cdma/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [CdmaCellLocation](https://developer.android.com/reference/kotlin/android/telephony/cdma/CdmaCellLocation) | Represents the cell location on a CDMA phone. |
+| [CdmaCellLocation](../android/telephony/cdma/CdmaCellLocation.md) | Represents the cell location on a CDMA phone. |
 | --- | --- |

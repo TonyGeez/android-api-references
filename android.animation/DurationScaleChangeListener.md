@@ -4,14 +4,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # DurationScaleChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/animation/ValueAnimator.DurationScaleChangeListener "View this page in Java") 
+Kotlin| [Java](../android/animation/ValueAnimator.DurationScaleChangeListener.md) 
 | --- | --- |
 
 ```
 interface DurationScaleChangeListener
 ```
 
-| [android.animation.ValueAnimator.DurationScaleChangeListener](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator.DurationScaleChangeListener#) |
+| [android.animation.ValueAnimator.DurationScaleChangeListener](../android/animation/ValueAnimator.DurationScaleChangeListener.md) |
 
 Listener interface for the system-wide scaling factor for Animator-based animations.
 
@@ -19,7 +19,7 @@ Listener interface for the system-wide scaling factor for Animator-based animati
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChanged](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator.DurationScaleChangeListener#onChanged(kotlin.Float))`(`scale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Called when the duration scale changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChanged](../android/animation/ValueAnimator.DurationScaleChangeListener.md))`(`scale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Called when the duration scale changes. |
 
 ## Public methods
 

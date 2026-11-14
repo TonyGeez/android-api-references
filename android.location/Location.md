@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Location
 
-Kotlin| [Java](https://developer.android.com/reference/android/location/Location "View this page in Java") 
+Kotlin| [Java](../android/location/Location.md) 
 | --- | --- |
 
 ```
@@ -13,134 +13,134 @@ open class Location : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.Location](https://developer.android.com/reference/kotlin/android/location/Location#) |
+| ↳ | [android.location.Location](../android/location/Location.md) |
 
 A data class representing a geographic location. A location consists of a latitude, longitude, timestamp, accuracy, and other information such as bearing, altitude and velocity.
 
-All locations generated through [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) are guaranteed to have a valid latitude, longitude, timestamp (both Unix epoch time and elapsed realtime since boot), and accuracy. All other parameters are optional.
+All locations generated through [LocationManager](../android/location/LocationManager.md) are guaranteed to have a valid latitude, longitude, timestamp (both Unix epoch time and elapsed realtime since boot), and accuracy. All other parameters are optional.
 
-Note that Android provides the ability for applications to submit "mock" or faked locations through [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager), and that these locations can then be received by applications using LocationManager to obtain location information. These locations can be identified via the [isMock()](https://developer.android.com/reference/kotlin/android/location/Location#isMock())API. Applications that wish to determine if a given location represents the best estimate of the real position of the device as opposed to a fake location coming from another application or the user should use this API. Keep in mind that the user may have a good reason for mocking their location, and thus apps should generally reject mock locations only when it is essential to their use case that only real locations are accepted.
+Note that Android provides the ability for applications to submit "mock" or faked locations through [LocationManager](../android/location/LocationManager.md), and that these locations can then be received by applications using LocationManager to obtain location information. These locations can be identified via the [isMock()](../android/location/Location.md))API. Applications that wish to determine if a given location represents the best estimate of the real position of the device as opposed to a fake location coming from another application or the user should use this API. Keep in mind that the user may have a good reason for mocking their location, and thus apps should generally reject mock locations only when it is essential to their use case that only real locations are accepted.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DEGREES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_DEGREES:kotlin.Int) Constant used to specify formatting of a latitude or longitude in the form "\[+-\]DDD. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MINUTES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_MINUTES:kotlin.Int) Constant used to specify formatting of a latitude or longitude in the form "\[+-\]DDD:MM. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SECONDS](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_SECONDS:kotlin.Int) Constant used to specify formatting of a latitude or longitude in the form "DDD:MM:SS. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DEGREES](../android/location/Location.md) Constant used to specify formatting of a latitude or longitude in the form "\[+-\]DDD. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MINUTES](../android/location/Location.md) Constant used to specify formatting of a latitude or longitude in the form "\[+-\]DDD:MM. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SECONDS](../android/location/Location.md) Constant used to specify formatting of a latitude or longitude in the form "DDD:MM:SS. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Location](https://developer.android.com/reference/kotlin/android/location/Location#Location(android.location.Location))`(`location:` ` [Location](https://developer.android.com/reference/kotlin/android/location/Location#)`)` Constructs a new location copied from the given location. |
-| [Location](https://developer.android.com/reference/kotlin/android/location/Location#Location(kotlin.String))`(`provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Constructs a new location with a named provider. |
+| [Location](../android/location/Location.md))`(`location:` ` [Location](../android/location/Location.md)`)` Constructs a new location copied from the given location. |
+| [Location](../android/location/Location.md))`(`provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Constructs a new location with a named provider. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [bearingTo](https://developer.android.com/reference/kotlin/android/location/Location#bearingTo(android.location.Location))`(`dest:` ` [Location](https://developer.android.com/reference/kotlin/android/location/Location#)`)` Returns the approximate initial bearing in degrees east of true north when traveling along the shortest path between this location and the given location. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [convert](https://developer.android.com/reference/kotlin/android/location/Location#convert(kotlin.Double,%20kotlin.Int))`(`coordinate:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `outputType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts a latitude/longitude coordinate to a String representation. |
-| openstatic [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [convert](https://developer.android.com/reference/kotlin/android/location/Location#convert(kotlin.String))`(`coordinate:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Converts a String in one of the formats described by [FORMAT_DEGREES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_DEGREES:kotlin.Int), [FORMAT_MINUTES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_MINUTES:kotlin.Int), or [FORMAT_SECONDS](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_SECONDS:kotlin.Int) into a double. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [bearingTo](../android/location/Location.md))`(`dest:` ` [Location](../android/location/Location.md)`)` Returns the approximate initial bearing in degrees east of true north when traveling along the shortest path between this location and the given location. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [convert](../android/location/Location.md))`(`coordinate:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `outputType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts a latitude/longitude coordinate to a String representation. |
+| openstatic [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [convert](../android/location/Location.md))`(`coordinate:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Converts a String in one of the formats described by [FORMAT_DEGREES](../android/location/Location.md), [FORMAT_MINUTES](../android/location/Location.md), or [FORMAT_SECONDS](../android/location/Location.md) into a double. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/location/Location#describeContents())`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [distanceBetween](https://developer.android.com/reference/kotlin/android/location/Location#distanceBetween(kotlin.Double,%20kotlin.Double,%20kotlin.Double,%20kotlin.Double,%20kotlin.FloatArray))`(`startLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `startLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `endLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `endLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `results:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the approximate distance in meters between two locations, and optionally the initial and final bearings of the shortest path between them. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [distanceTo](https://developer.android.com/reference/kotlin/android/location/Location#distanceTo(android.location.Location))`(`dest:` ` [Location](https://developer.android.com/reference/kotlin/android/location/Location#)`)` Returns the approximate distance in meters between this location and the given location. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/location/Location.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [distanceBetween](../android/location/Location.md))`(`startLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `startLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `endLatitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `endLongitude:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `results:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the approximate distance in meters between two locations, and optionally the initial and final bearings of the shortest path between them. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [distanceTo](../android/location/Location.md))`(`dest:` ` [Location](../android/location/Location.md)`)` Returns the approximate distance in meters between this location and the given location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](https://developer.android.com/reference/kotlin/android/location/Location#dump(android.util.Printer,%20kotlin.String))`(`pw:` ` [Printer](https://developer.android.com/reference/kotlin/android/util/Printer.html#)`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Dumps location information to the given Printer. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/location/Location#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Location equality is provided primarily for test purposes. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#getAccuracy())`()` Returns the estimated horizontal accuracy radius in meters of this location at the 68th percentile confidence level. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](../android/location/Location.md))`(`pw:` ` [Printer](../android/util/Printer.md)`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Dumps location information to the given Printer. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/location/Location.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Location equality is provided primarily for test purposes. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAccuracy](../android/location/Location.md))`()` Returns the estimated horizontal accuracy radius in meters of this location at the 68th percentile confidence level. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](https://developer.android.com/reference/kotlin/android/location/Location#getAltitude())`()` The altitude of this location in meters above the WGS84 reference ellipsoid. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getBearing](https://developer.android.com/reference/kotlin/android/location/Location#getBearing())`()` Returns the bearing at the time of this location in degrees. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getBearingAccuracyDegrees](https://developer.android.com/reference/kotlin/android/location/Location#getBearingAccuracyDegrees())`()` Returns the estimated bearing accuracy in degrees of this location at the 68th percentile confidence level. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](../android/location/Location.md))`()` The altitude of this location in meters above the WGS84 reference ellipsoid. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getBearing](../android/location/Location.md))`()` Returns the bearing at the time of this location in degrees. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getBearingAccuracyDegrees](../android/location/Location.md))`()` Returns the estimated bearing accuracy in degrees of this location at the 68th percentile confidence level. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeAgeMillis](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeAgeMillis())`()` A convenience methods that returns the age of this location in milliseconds with respect to the current elapsed realtime. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeAgeMillis](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeAgeMillis(kotlin.Long))`(`referenceRealtimeMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` A convenience method that returns the age of this location with respect to the given reference elapsed realtime. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeMillis](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeMillis())`()` Return the time of this fix in milliseconds of elapsed realtime since system boot. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeAgeMillis](../android/location/Location.md))`()` A convenience methods that returns the age of this location in milliseconds with respect to the current elapsed realtime. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeAgeMillis](../android/location/Location.md))`(`referenceRealtimeMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` A convenience method that returns the age of this location with respect to the given reference elapsed realtime. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeMillis](../android/location/Location.md))`()` Return the time of this fix in milliseconds of elapsed realtime since system boot. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeNanos](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeNanos())`()` Return the time of this fix in nanoseconds of elapsed realtime since system boot. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getElapsedRealtimeUncertaintyNanos](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeUncertaintyNanos())`()` Get the uncertainty in nanoseconds of the precision of [getElapsedRealtimeNanos()](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeNanos())at the 68th percentile confidence level. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | [getExtras](https://developer.android.com/reference/kotlin/android/location/Location#getExtras())`()` Returns an optional bundle of additional information associated with this location. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getElapsedRealtimeNanos](../android/location/Location.md))`()` Return the time of this fix in nanoseconds of elapsed realtime since system boot. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getElapsedRealtimeUncertaintyNanos](../android/location/Location.md))`()` Get the uncertainty in nanoseconds of the precision of [getElapsedRealtimeNanos()](../android/location/Location.md))at the 68th percentile confidence level. |
+| open [Bundle](../android/os/Bundle.md)? | [getExtras](../android/location/Location.md))`()` Returns an optional bundle of additional information associated with this location. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitude](https://developer.android.com/reference/kotlin/android/location/Location#getLatitude())`()` Get the latitude in degrees. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitude](https://developer.android.com/reference/kotlin/android/location/Location#getLongitude())`()` Get the longitude in degrees. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMslAltitudeAccuracyMeters](https://developer.android.com/reference/kotlin/android/location/Location#getMslAltitudeAccuracyMeters())`()` Returns the estimated Mean Sea Level altitude accuracy in meters of this location at the 68th percentile confidence level. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitude](../android/location/Location.md))`()` Get the latitude in degrees. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitude](../android/location/Location.md))`()` Get the longitude in degrees. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMslAltitudeAccuracyMeters](../android/location/Location.md))`()` Returns the estimated Mean Sea Level altitude accuracy in meters of this location at the 68th percentile confidence level. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMslAltitudeMeters](https://developer.android.com/reference/kotlin/android/location/Location#getMslAltitudeMeters())`()` Returns the Mean Sea Level altitude of this location in meters. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getProvider](https://developer.android.com/reference/kotlin/android/location/Location#getProvider())`()` Returns the name of the provider associated with this location. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpeed](https://developer.android.com/reference/kotlin/android/location/Location#getSpeed())`()` Returns the speed at the time of this location in meters per second. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getMslAltitudeMeters](../android/location/Location.md))`()` Returns the Mean Sea Level altitude of this location in meters. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getProvider](../android/location/Location.md))`()` Returns the name of the provider associated with this location. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpeed](../android/location/Location.md))`()` Returns the speed at the time of this location in meters per second. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpeedAccuracyMetersPerSecond](https://developer.android.com/reference/kotlin/android/location/Location#getSpeedAccuracyMetersPerSecond())`()` Returns the estimated speed accuracy in meters per second of this location at the 68th percentile confidence level. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](https://developer.android.com/reference/kotlin/android/location/Location#getTime())`()` Returns the Unix epoch time of this location fix, in milliseconds since the start of the Unix epoch (00:00:00 January 1, 1970 UTC). |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVerticalAccuracyMeters](https://developer.android.com/reference/kotlin/android/location/Location#getVerticalAccuracyMeters())`()` Returns the estimated altitude accuracy in meters of this location at the 68th percentile confidence level. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpeedAccuracyMetersPerSecond](../android/location/Location.md))`()` Returns the estimated speed accuracy in meters per second of this location at the 68th percentile confidence level. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](../android/location/Location.md))`()` Returns the Unix epoch time of this location fix, in milliseconds since the start of the Unix epoch (00:00:00 January 1, 1970 UTC). |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVerticalAccuracyMeters](../android/location/Location.md))`()` Returns the estimated altitude accuracy in meters of this location at the 68th percentile confidence level. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#hasAccuracy())`()` Returns true if this location has a horizontal accuracy, false otherwise. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAltitude](https://developer.android.com/reference/kotlin/android/location/Location#hasAltitude())`()` Returns true if this location has an altitude, false otherwise. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBearing](https://developer.android.com/reference/kotlin/android/location/Location#hasBearing())`()` True if this location has a bearing, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAccuracy](../android/location/Location.md))`()` Returns true if this location has a horizontal accuracy, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAltitude](../android/location/Location.md))`()` Returns true if this location has an altitude, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBearing](../android/location/Location.md))`()` True if this location has a bearing, false otherwise. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBearingAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#hasBearingAccuracy())`()` Returns true if this location has a bearing accuracy, false otherwise. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasElapsedRealtimeUncertaintyNanos](https://developer.android.com/reference/kotlin/android/location/Location#hasElapsedRealtimeUncertaintyNanos())`()` True if this location has an elapsed realtime uncertainty, false otherwise. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMslAltitude](https://developer.android.com/reference/kotlin/android/location/Location#hasMslAltitude())`()` Returns true if this location has a Mean Sea Level altitude, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBearingAccuracy](../android/location/Location.md))`()` Returns true if this location has a bearing accuracy, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasElapsedRealtimeUncertaintyNanos](../android/location/Location.md))`()` True if this location has an elapsed realtime uncertainty, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMslAltitude](../android/location/Location.md))`()` Returns true if this location has a Mean Sea Level altitude, false otherwise. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMslAltitudeAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#hasMslAltitudeAccuracy())`()` Returns true if this location has a Mean Sea Level altitude accuracy, false otherwise. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSpeed](https://developer.android.com/reference/kotlin/android/location/Location#hasSpeed())`()` True if this location has a speed, false otherwise. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSpeedAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#hasSpeedAccuracy())`()` Returns true if this location has a speed accuracy, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMslAltitudeAccuracy](../android/location/Location.md))`()` Returns true if this location has a Mean Sea Level altitude accuracy, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSpeed](../android/location/Location.md))`()` True if this location has a speed, false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSpeedAccuracy](../android/location/Location.md))`()` Returns true if this location has a speed accuracy, false otherwise. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasVerticalAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#hasVerticalAccuracy())`()` Returns true if this location has a vertical accuracy, false otherwise. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/location/Location#hashCode())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isComplete](https://developer.android.com/reference/kotlin/android/location/Location#isComplete())`()` Return true if this location is considered complete. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasVerticalAccuracy](../android/location/Location.md))`()` Returns true if this location has a vertical accuracy, false otherwise. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/location/Location.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isComplete](../android/location/Location.md))`()` Return true if this location is considered complete. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFromMockProvider](https://developer.android.com/reference/kotlin/android/location/Location#isFromMockProvider())`()` Returns true if this is a mock location. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMock](https://developer.android.com/reference/kotlin/android/location/Location#isMock())`()` Returns true if this location is marked as a mock location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#removeAccuracy())`()` Remove the horizontal accuracy from this location. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFromMockProvider](../android/location/Location.md))`()` Returns true if this is a mock location. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMock](../android/location/Location.md))`()` Returns true if this location is marked as a mock location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAccuracy](../android/location/Location.md))`()` Remove the horizontal accuracy from this location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAltitude](https://developer.android.com/reference/kotlin/android/location/Location#removeAltitude())`()` Removes the altitude from this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeBearing](https://developer.android.com/reference/kotlin/android/location/Location#removeBearing())`()` Remove the bearing from this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeBearingAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#removeBearingAccuracy())`()` Remove the bearing accuracy from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAltitude](../android/location/Location.md))`()` Removes the altitude from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeBearing](../android/location/Location.md))`()` Remove the bearing from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeBearingAccuracy](../android/location/Location.md))`()` Remove the bearing accuracy from this location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeElapsedRealtimeUncertaintyNanos](https://developer.android.com/reference/kotlin/android/location/Location#removeElapsedRealtimeUncertaintyNanos())`()` Removes the elapsed realtime uncertainty from this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeMslAltitude](https://developer.android.com/reference/kotlin/android/location/Location#removeMslAltitude())`()` Removes the Mean Sea Level altitude from this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeMslAltitudeAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#removeMslAltitudeAccuracy())`()` Removes the Mean Sea Level altitude accuracy from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeElapsedRealtimeUncertaintyNanos](../android/location/Location.md))`()` Removes the elapsed realtime uncertainty from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeMslAltitude](../android/location/Location.md))`()` Removes the Mean Sea Level altitude from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeMslAltitudeAccuracy](../android/location/Location.md))`()` Removes the Mean Sea Level altitude accuracy from this location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpeed](https://developer.android.com/reference/kotlin/android/location/Location#removeSpeed())`()` Remove the speed from this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpeedAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#removeSpeedAccuracy())`()` Remove the speed accuracy from this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeVerticalAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#removeVerticalAccuracy())`()` Remove the vertical accuracy from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpeed](../android/location/Location.md))`()` Remove the speed from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpeedAccuracy](../android/location/Location.md))`()` Remove the speed accuracy from this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeVerticalAccuracy](../android/location/Location.md))`()` Remove the vertical accuracy from this location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/location/Location#reset())`()` Sets the provider to null, removes all optional fields, and sets the values of all other fields to zero. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](https://developer.android.com/reference/kotlin/android/location/Location#set(android.location.Location))`(`location:` ` [Location](https://developer.android.com/reference/kotlin/android/location/Location#)`)` Turns this location into a copy of the given location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAccuracy](https://developer.android.com/reference/kotlin/android/location/Location#setAccuracy(kotlin.Float))`(`horizontalAccuracyMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the horizontal accuracy in meters of this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/location/Location.md))`()` Sets the provider to null, removes all optional fields, and sets the values of all other fields to zero. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../android/location/Location.md))`(`location:` ` [Location](../android/location/Location.md)`)` Turns this location into a copy of the given location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAccuracy](../android/location/Location.md))`(`horizontalAccuracyMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the horizontal accuracy in meters of this location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAltitude](https://developer.android.com/reference/kotlin/android/location/Location#setAltitude(kotlin.Double))`(`altitudeMeters:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set the altitude of this location in meters above the WGS84 reference ellipsoid. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBearing](https://developer.android.com/reference/kotlin/android/location/Location#setBearing(kotlin.Float))`(`bearingDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the bearing at the time of this location, in degrees. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBearingAccuracyDegrees](https://developer.android.com/reference/kotlin/android/location/Location#setBearingAccuracyDegrees(kotlin.Float))`(`bearingAccuracyDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the bearing accuracy in degrees of this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAltitude](../android/location/Location.md))`(`altitudeMeters:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set the altitude of this location in meters above the WGS84 reference ellipsoid. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBearing](../android/location/Location.md))`(`bearingDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the bearing at the time of this location, in degrees. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBearingAccuracyDegrees](../android/location/Location.md))`(`bearingAccuracyDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the bearing accuracy in degrees of this location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElapsedRealtimeNanos](https://developer.android.com/reference/kotlin/android/location/Location#setElapsedRealtimeNanos(kotlin.Long))`(`elapsedRealtimeNs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Set the time of this location in nanoseconds of elapsed realtime since system boot. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElapsedRealtimeUncertaintyNanos](https://developer.android.com/reference/kotlin/android/location/Location#setElapsedRealtimeUncertaintyNanos(kotlin.Double))`(`elapsedRealtimeUncertaintyNs:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the uncertainty in nanoseconds of the precision of the elapsed realtime timestamp at a 68% confidence level. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtras](https://developer.android.com/reference/kotlin/android/location/Location#setExtras(android.os.Bundle))`(`extras:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?`)` Sets the extra information associated with this fix to the given Bundle. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElapsedRealtimeNanos](../android/location/Location.md))`(`elapsedRealtimeNs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Set the time of this location in nanoseconds of elapsed realtime since system boot. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setElapsedRealtimeUncertaintyNanos](../android/location/Location.md))`(`elapsedRealtimeUncertaintyNs:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the uncertainty in nanoseconds of the precision of the elapsed realtime timestamp at a 68% confidence level. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtras](../android/location/Location.md))`(`extras:` ` [Bundle](../android/os/Bundle.md)?`)` Sets the extra information associated with this fix to the given Bundle. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLatitude](https://developer.android.com/reference/kotlin/android/location/Location#setLatitude(kotlin.Double))`(`latitudeDegrees:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set the latitude of this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLongitude](https://developer.android.com/reference/kotlin/android/location/Location#setLongitude(kotlin.Double))`(`longitudeDegrees:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set the longitude of this location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMock](https://developer.android.com/reference/kotlin/android/location/Location#setMock(kotlin.Boolean))`(`mock:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this location is marked as a mock location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLatitude](../android/location/Location.md))`(`latitudeDegrees:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set the latitude of this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLongitude](../android/location/Location.md))`(`longitudeDegrees:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set the longitude of this location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMock](../android/location/Location.md))`(`mock:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this location is marked as a mock location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMslAltitudeAccuracyMeters](https://developer.android.com/reference/kotlin/android/location/Location#setMslAltitudeAccuracyMeters(kotlin.Float))`(`mslAltitudeAccuracyMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the Mean Sea Level altitude accuracy of this location in meters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMslAltitudeMeters](https://developer.android.com/reference/kotlin/android/location/Location#setMslAltitudeMeters(kotlin.Double))`(`mslAltitudeMeters:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the Mean Sea Level altitude of this location in meters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProvider](https://developer.android.com/reference/kotlin/android/location/Location#setProvider(kotlin.String))`(`provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the name of the provider associated with this location |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMslAltitudeAccuracyMeters](../android/location/Location.md))`(`mslAltitudeAccuracyMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the Mean Sea Level altitude accuracy of this location in meters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMslAltitudeMeters](../android/location/Location.md))`(`mslAltitudeMeters:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Sets the Mean Sea Level altitude of this location in meters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProvider](../android/location/Location.md))`(`provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the name of the provider associated with this location |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpeed](https://developer.android.com/reference/kotlin/android/location/Location#setSpeed(kotlin.Float))`(`speedMetersPerSecond:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the speed at the time of this location, in meters per second. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpeedAccuracyMetersPerSecond](https://developer.android.com/reference/kotlin/android/location/Location#setSpeedAccuracyMetersPerSecond(kotlin.Float))`(`speedAccuracyMeterPerSecond:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the speed accuracy of this location in meters per second. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](https://developer.android.com/reference/kotlin/android/location/Location#setTime(kotlin.Long))`(`timeMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the Unix epoch time of this location fix, in milliseconds since the start of the Unix epoch (00:00:00 January 1 1970 UTC). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpeed](../android/location/Location.md))`(`speedMetersPerSecond:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the speed at the time of this location, in meters per second. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpeedAccuracyMetersPerSecond](../android/location/Location.md))`(`speedAccuracyMeterPerSecond:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the speed accuracy of this location in meters per second. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](../android/location/Location.md))`(`timeMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the Unix epoch time of this location fix, in milliseconds since the start of the Unix epoch (00:00:00 January 1 1970 UTC). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVerticalAccuracyMeters](https://developer.android.com/reference/kotlin/android/location/Location#setVerticalAccuracyMeters(kotlin.Float))`(`altitudeAccuracyMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the altitude accuracy of this location in meters. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/location/Location#toString())`()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/location/Location#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVerticalAccuracyMeters](../android/location/Location.md))`(`altitudeAccuracyMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the altitude accuracy of this location in meters. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/location/Location.md))`()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/location/Location.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Location](https://developer.android.com/reference/kotlin/android/location/Location#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/location/Location#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Location](../android/location/Location.md)!\> | [CREATOR](../android/location/Location.md) <br /> |
 
 ## Constants
 
@@ -194,7 +194,7 @@ Constructs a new location copied from the given location.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------|
-| `location` | [Location](https://developer.android.com/reference/kotlin/android/location/Location#):This value cannot be`null`. |
+| `location` | [Location](../android/location/Location.md):This value cannot be`null`. |
 
 ### Location
 
@@ -224,7 +224,7 @@ Returns the approximate initial bearing in degrees east of true north when trave
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Location](https://developer.android.com/reference/kotlin/android/location/Location#):the destination location This value cannot be`null`. |
+| `dest` | [Location](../android/location/Location.md):the destination location This value cannot be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------|
@@ -241,11 +241,11 @@ open static fun convert(
 ): String
 ```
 
-Converts a latitude/longitude coordinate to a String representation. The outputType must be one of [FORMAT_DEGREES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_DEGREES:kotlin.Int), [FORMAT_MINUTES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_MINUTES:kotlin.Int), or [FORMAT_SECONDS](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_SECONDS:kotlin.Int). The coordinate must be a number between -180.0 and 180.0, inclusive. This conversion is performed in a method that is dependent on the default locale, and so is not guaranteed to round-trip with [convert(java.lang.String)](https://developer.android.com/reference/kotlin/android/location/Location#convert(kotlin.String)).
+Converts a latitude/longitude coordinate to a String representation. The outputType must be one of [FORMAT_DEGREES](../android/location/Location.md), [FORMAT_MINUTES](../android/location/Location.md), or [FORMAT_SECONDS](../android/location/Location.md). The coordinate must be a number between -180.0 and 180.0, inclusive. This conversion is performed in a method that is dependent on the default locale, and so is not guaranteed to round-trip with [convert(java.lang.String)](../android/location/Location.md)).
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `outputType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.location.Location#FORMAT_DEGREES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_DEGREES:kotlin.Int), [android.location.Location#FORMAT_MINUTES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_MINUTES:kotlin.Int), or [android.location.Location#FORMAT_SECONDS](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_SECONDS:kotlin.Int) |
+| `outputType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.location.Location#FORMAT_DEGREES](../android/location/Location.md), [android.location.Location#FORMAT_MINUTES](../android/location/Location.md), or [android.location.Location#FORMAT_SECONDS](../android/location/Location.md) |
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -263,7 +263,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun convert(coordinate: String): Double
 ```
 
-Converts a String in one of the formats described by [FORMAT_DEGREES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_DEGREES:kotlin.Int), [FORMAT_MINUTES](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_MINUTES:kotlin.Int), or [FORMAT_SECONDS](https://developer.android.com/reference/kotlin/android/location/Location#FORMAT_SECONDS:kotlin.Int) into a double. This conversion is performed in a locale agnostic method, and so is not guaranteed to round-trip with [convert(double,int)](https://developer.android.com/reference/kotlin/android/location/Location#convert(kotlin.Double,%20kotlin.Int)).
+Converts a String in one of the formats described by [FORMAT_DEGREES](../android/location/Location.md), [FORMAT_MINUTES](../android/location/Location.md), or [FORMAT_SECONDS](../android/location/Location.md) into a double. This conversion is performed in a locale agnostic method, and so is not guaranteed to round-trip with [convert(double,int)](../android/location/Location.md)).
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------|
@@ -284,7 +284,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### distanceBetween
 
@@ -329,7 +329,7 @@ Returns the approximate distance in meters between this location and the given l
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Location](https://developer.android.com/reference/kotlin/android/location/Location#):the destination location This value cannot be`null`. |
+| `dest` | [Location](../android/location/Location.md):the destination location This value cannot be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -347,13 +347,13 @@ open fun dump(
 ): Unit
 ```
 
-**Deprecated:** *Prefer to use [toString()](https://developer.android.com/reference/kotlin/android/location/Location#toString())along with whatever custom formatting is required instead of this method. It is not this class's job to manage print representations.*
+**Deprecated:** *Prefer to use [toString()](../android/location/Location.md))along with whatever custom formatting is required instead of this method. It is not this class's job to manage print representations.*
 
 Dumps location information to the given Printer.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------|
-| `pw` | [Printer](https://developer.android.com/reference/kotlin/android/util/Printer.html#):This value cannot be`null`. |
+| `pw` | [Printer](../android/util/Printer.md):This value cannot be`null`. |
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 
 ### equals
@@ -397,7 +397,7 @@ open fun getAccuracy(): Float
 
 Returns the estimated horizontal accuracy radius in meters of this location at the 68th percentile confidence level. This means that there is a 68% chance that the true location of the device is within a distance of this uncertainty of the reported location. Another way of putting this is that if a circle with a radius equal to this accuracy is drawn around the reported location, there is a 68% chance that the true location falls within this circle. This accuracy value is only valid for horizontal positioning, and not vertical positioning.
 
-This is only valid if [hasAccuracy()](https://developer.android.com/reference/kotlin/android/location/Location#hasAccuracy())is true. All locations generated by the [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) include horizontal accuracy.
+This is only valid if [hasAccuracy()](../android/location/Location.md))is true. All locations generated by the [LocationManager](../android/location/LocationManager.md) include horizontal accuracy.
 
 | Return ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -413,7 +413,7 @@ open fun getAltitude(): Double
 
 The altitude of this location in meters above the WGS84 reference ellipsoid.
 
-This is only valid if [hasAltitude()](https://developer.android.com/reference/kotlin/android/location/Location#hasAltitude())is true.
+This is only valid if [hasAltitude()](../android/location/Location.md))is true.
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------|
@@ -429,7 +429,7 @@ open fun getBearing(): Float
 
 Returns the bearing at the time of this location in degrees. Bearing is the horizontal direction of travel of this device and is unrelated to the device orientation. The bearing is guaranteed to be in the range \[0, 360).
 
-This is only valid if [hasBearing()](https://developer.android.com/reference/kotlin/android/location/Location#hasBearing())is true.
+This is only valid if [hasBearing()](../android/location/Location.md))is true.
 
 | Return ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -443,9 +443,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getBearingAccuracyDegrees(): Float
 ```
 
-Returns the estimated bearing accuracy in degrees of this location at the 68th percentile confidence level. This means that there is 68% chance that the true bearing at the time of this location falls within [getBearing()](https://developer.android.com/reference/kotlin/android/location/Location#getBearing())()} +/- this uncertainty.
+Returns the estimated bearing accuracy in degrees of this location at the 68th percentile confidence level. This means that there is 68% chance that the true bearing at the time of this location falls within [getBearing()](../android/location/Location.md))()} +/- this uncertainty.
 
-This is only valid if [hasBearingAccuracy()](https://developer.android.com/reference/kotlin/android/location/Location#hasBearingAccuracy())()} is true.
+This is only valid if [hasBearingAccuracy()](../android/location/Location.md))()} is true.
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -511,9 +511,9 @@ open fun getElapsedRealtimeNanos(): Long
 
 Return the time of this fix in nanoseconds of elapsed realtime since system boot.
 
-This value can be compared with [android.os.SystemClock#elapsedRealtimeNanos](https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtimeNanos())to reliably order or compare locations. This is reliable because elapsed realtime is guaranteed to be monotonic and continues to increment even when the system is in deep sleep (unlike [getTime](https://developer.android.com/reference/kotlin/android/location/Location#getTime())). However, since elapsed realtime is with reference to system boot, it does not make sense to use this value to order or compare locations across boot cycles or devices.
+This value can be compared with [android.os.SystemClock#elapsedRealtimeNanos](../android/os/SystemClock.md))to reliably order or compare locations. This is reliable because elapsed realtime is guaranteed to be monotonic and continues to increment even when the system is in deep sleep (unlike [getTime](../android/location/Location.md))). However, since elapsed realtime is with reference to system boot, it does not make sense to use this value to order or compare locations across boot cycles or devices.
 
-All locations generated by the [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) are guaranteed to have a valid elapsed realtime set.
+All locations generated by the [LocationManager](../android/location/LocationManager.md) are guaranteed to have a valid elapsed realtime set.
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------|
@@ -527,9 +527,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getElapsedRealtimeUncertaintyNanos(): Double
 ```
 
-Get the uncertainty in nanoseconds of the precision of [getElapsedRealtimeNanos()](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeNanos())at the 68th percentile confidence level. This means that there is 68% chance that the true elapsed realtime of this location is within [getElapsedRealtimeNanos()](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeNanos())+/- this uncertainty.
+Get the uncertainty in nanoseconds of the precision of [getElapsedRealtimeNanos()](../android/location/Location.md))at the 68th percentile confidence level. This means that there is 68% chance that the true elapsed realtime of this location is within [getElapsedRealtimeNanos()](../android/location/Location.md))+/- this uncertainty.
 
-This is only valid if [hasElapsedRealtimeUncertaintyNanos()](https://developer.android.com/reference/kotlin/android/location/Location#hasElapsedRealtimeUncertaintyNanos())is true.
+This is only valid if [hasElapsedRealtimeUncertaintyNanos()](../android/location/Location.md))is true.
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
@@ -547,11 +547,11 @@ Returns an optional bundle of additional information associated with this locati
 
 Common key/value pairs are listed below. There is no guarantee that these key/value pairs will be present for any location.
 
-- satellites - the number of satellites used to derive a GNSS fix. This key was deprecated in API 34 because the information can be obtained through more accurate means, such as by referencing [GnssStatus.usedInFix](https://developer.android.com/reference/kotlin/android/location/GnssStatus#usedInFix(kotlin.Int)).
+- satellites - the number of satellites used to derive a GNSS fix. This key was deprecated in API 34 because the information can be obtained through more accurate means, such as by referencing [GnssStatus.usedInFix](../android/location/GnssStatus.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | This value may be`null`. |
+| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
 
 ### getLatitude
 
@@ -561,7 +561,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getLatitude(): Double
 ```
 
-Get the latitude in degrees. All locations generated by the [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) will have a valid latitude.
+Get the latitude in degrees. All locations generated by the [LocationManager](../android/location/LocationManager.md) will have a valid latitude.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -575,7 +575,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getLongitude(): Double
 ```
 
-Get the longitude in degrees. All locations generated by the [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) will have a valid longitude.
+Get the longitude in degrees. All locations generated by the [LocationManager](../android/location/LocationManager.md) will have a valid longitude.
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -589,9 +589,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getMslAltitudeAccuracyMeters(): Float
 ```
 
-Returns the estimated Mean Sea Level altitude accuracy in meters of this location at the 68th percentile confidence level. This means that there is 68% chance that the true Mean Sea Level altitude of this location falls within [getMslAltitudeMeters()](https://developer.android.com/reference/kotlin/android/location/Location#getMslAltitudeMeters())+/- this uncertainty.
+Returns the estimated Mean Sea Level altitude accuracy in meters of this location at the 68th percentile confidence level. This means that there is 68% chance that the true Mean Sea Level altitude of this location falls within [getMslAltitudeMeters()](../android/location/Location.md))+/- this uncertainty.
 
-This is only valid if [hasMslAltitudeAccuracy()](https://developer.android.com/reference/kotlin/android/location/Location#hasMslAltitudeAccuracy())is true.
+This is only valid if [hasMslAltitudeAccuracy()](../android/location/Location.md))is true.
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------|
@@ -607,7 +607,7 @@ open fun getMslAltitudeMeters(): Double
 
 Returns the Mean Sea Level altitude of this location in meters.
 
-This is only valid if [hasMslAltitude()](https://developer.android.com/reference/kotlin/android/location/Location#hasMslAltitude())is true. 
+This is only valid if [hasMslAltitude()](../android/location/Location.md))is true. 
 
 ### getProvider
 
@@ -633,7 +633,7 @@ open fun getSpeed(): Float
 
 Returns the speed at the time of this location in meters per second. Note that the speed returned here may be more accurate than would be obtained simply by calculating`distance / time`for sequential positions, such as if the Doppler measurements from GNSS satellites are taken into account.
 
-This is only valid if [hasSpeed()](https://developer.android.com/reference/kotlin/android/location/Location#hasSpeed())is true.
+This is only valid if [hasSpeed()](../android/location/Location.md))is true.
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -647,9 +647,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getSpeedAccuracyMetersPerSecond(): Float
 ```
 
-Returns the estimated speed accuracy in meters per second of this location at the 68th percentile confidence level. This means that there is 68% chance that the true speed at the time of this location falls within [getSpeed()](https://developer.android.com/reference/kotlin/android/location/Location#getSpeed())()} +/- this uncertainty.
+Returns the estimated speed accuracy in meters per second of this location at the 68th percentile confidence level. This means that there is 68% chance that the true speed at the time of this location falls within [getSpeed()](../android/location/Location.md))()} +/- this uncertainty.
 
-This is only valid if [hasSpeedAccuracy()](https://developer.android.com/reference/kotlin/android/location/Location#hasSpeedAccuracy())is true.
+This is only valid if [hasSpeedAccuracy()](../android/location/Location.md))is true.
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -665,13 +665,13 @@ open fun getTime(): Long
 
 Returns the Unix epoch time of this location fix, in milliseconds since the start of the Unix epoch (00:00:00 January 1, 1970 UTC).
 
-There is no guarantee that different locations have times set from the same clock. Locations derived from the [LocationManager.GPS_PROVIDER](https://developer.android.com/reference/kotlin/android/location/LocationManager#GPS_PROVIDER:kotlin.String) are guaranteed to have their time originate from the clock in use by the satellite constellation that provided the fix. Locations derived from other providers may use any clock to set their time, though it is most common to use the device's Unix epoch time system clock (which may be incorrect).
+There is no guarantee that different locations have times set from the same clock. Locations derived from the [LocationManager.GPS_PROVIDER](../android/location/LocationManager.md) are guaranteed to have their time originate from the clock in use by the satellite constellation that provided the fix. Locations derived from other providers may use any clock to set their time, though it is most common to use the device's Unix epoch time system clock (which may be incorrect).
 
-Note that the device's Unix epoch time system clock is not monotonic; it can jump forwards or backwards unpredictably and may be changed at any time by the user, so this time should not be used to order or compare locations. Prefer [getElapsedRealtimeNanos](https://developer.android.com/reference/kotlin/android/location/Location#getElapsedRealtimeNanos())for that purpose, as the elapsed realtime clock is guaranteed to be monotonic.
+Note that the device's Unix epoch time system clock is not monotonic; it can jump forwards or backwards unpredictably and may be changed at any time by the user, so this time should not be used to order or compare locations. Prefer [getElapsedRealtimeNanos](../android/location/Location.md))for that purpose, as the elapsed realtime clock is guaranteed to be monotonic.
 
 On the other hand, this method may be useful for presenting a human-readable time to the user, or as a heuristic for comparing location fixes across reboot or across devices.
 
-All locations generated by the [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) are guaranteed to have this time set, however remember that the device's system clock may have changed since the location was generated.
+All locations generated by the [LocationManager](../android/location/LocationManager.md) are guaranteed to have this time set, however remember that the device's system clock may have changed since the location was generated.
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -685,9 +685,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getVerticalAccuracyMeters(): Float
 ```
 
-Returns the estimated altitude accuracy in meters of this location at the 68th percentile confidence level. This means that there is 68% chance that the true altitude of this location falls within [getAltitude()](https://developer.android.com/reference/kotlin/android/location/Location#getAltitude())()} +/- this uncertainty.
+Returns the estimated altitude accuracy in meters of this location at the 68th percentile confidence level. This means that there is 68% chance that the true altitude of this location falls within [getAltitude()](../android/location/Location.md))()} +/- this uncertainty.
 
-This is only valid if [hasVerticalAccuracy()](https://developer.android.com/reference/kotlin/android/location/Location#hasVerticalAccuracy())is true.
+This is only valid if [hasVerticalAccuracy()](../android/location/Location.md))is true.
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -815,7 +815,7 @@ open fun isComplete(): Boolean
 
 Return true if this location is considered complete. A location is considered complete if it has a non-null provider, accuracy, and non-zero time and elapsed realtime. The exact definition of completeness may change over time.
 
-All locations supplied by the [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) are guaranteed to be complete. 
+All locations supplied by the [LocationManager](../android/location/LocationManager.md) are guaranteed to be complete. 
 
 ### isFromMockProvider
 
@@ -826,7 +826,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun isFromMockProvider(): Boolean
 ```
 
-**Deprecated:** *Prefer [isMock()](https://developer.android.com/reference/kotlin/android/location/Location#isMock())instead.*
+**Deprecated:** *Prefer [isMock()](../android/location/Location.md))instead.*
 
 Returns true if this is a mock location. If this location comes from the Android framework, this indicates that the location was provided by a test location provider, and thus may not be related to the actual location of the device.
 
@@ -967,7 +967,7 @@ Turns this location into a copy of the given location.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------|
-| `location` | [Location](https://developer.android.com/reference/kotlin/android/location/Location#):This value cannot be`null`. |
+| `location` | [Location](../android/location/Location.md):This value cannot be`null`. |
 
 ### setAccuracy
 
@@ -1069,7 +1069,7 @@ Note this stores a copy of the given extras, so any changes to extras after call
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?:This value may be`null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
 
 ### setLatitude
 
@@ -1233,8 +1233,8 @@ Flatten this object in to a Parcel.
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
-| `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `parcel` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
 | --- | --- |
 
 ## Properties

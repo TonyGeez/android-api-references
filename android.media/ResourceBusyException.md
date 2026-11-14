@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # ResourceBusyException
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/ResourceBusyException "View this page in Java") 
+Kotlin| [Java](../android/media/ResourceBusyException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ class ResourceBusyException : MediaDrmException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [android.media.MediaDrmException](https://developer.android.com/reference/kotlin/android/media/MediaDrmException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [android.media.MediaDrmException](../android/media/MediaDrmException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.ResourceBusyException](https://developer.android.com/reference/kotlin/android/media/ResourceBusyException#) |
+| | | | ↳ | [android.media.ResourceBusyException](../android/media/ResourceBusyException.md) |
 
 Exception thrown when an operation on a MediaDrm object is attempted and hardware resources are not available, due to being in use.
 
@@ -25,11 +25,11 @@ Exception thrown when an operation on a MediaDrm object is attempted and hardwar
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ResourceBusyException](https://developer.android.com/reference/kotlin/android/media/ResourceBusyException#ResourceBusyException(kotlin.String))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [ResourceBusyException](../android/media/ResourceBusyException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [MediaDrmException](https://developer.android.com/reference/kotlin/android/media/MediaDrmException) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](https://developer.android.com/reference/kotlin/android/media/MediaDrmException#getErrorContext())`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](https://developer.android.com/reference/kotlin/android/media/MediaDrmException#getOemError())`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](https://developer.android.com/reference/kotlin/android/media/MediaDrmException#getVendorError())`()` <br /> | ||
+| From class [MediaDrmException](../android/media/MediaDrmException.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](../android/media/MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](../android/media/MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](../android/media/MediaDrmException.md))`()` <br /> | ||
 
 ## Public constructors
 

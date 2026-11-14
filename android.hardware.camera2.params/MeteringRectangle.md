@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # MeteringRectangle
 
-Kotlin | [Java](https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle "View this page in Java") 
+Kotlin | [Java](../android/hardware/camera2/params/MeteringRectangle.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ class MeteringRectangle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.MeteringRectangle](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#) |
+| ↳ | [android.hardware.camera2.params.MeteringRectangle](../android/hardware/camera2/params/MeteringRectangle.md) |
 
 An immutable class to represent a rectangle `(x, y, width, height)` with an additional weight component.
 
 The rectangle is defined to be inclusive of the specified coordinates.
 
-When used with a [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#), the coordinate system is based on the active pixel array, with `(0,0)` being the top-left pixel in the [active pixel array](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key), and `(android.sensor.info.activeArraySize.width - 1, android.sensor.info.activeArraySize.height - 1)` being the bottom-right pixel in the active pixel array.
+When used with a [CaptureRequest](../android/hardware/camera2/CaptureRequest.md), the coordinate system is based on the active pixel array, with `(0,0)` being the top-left pixel in the [active pixel array](../android/hardware/camera2/CameraCharacteristics.md), and `(android.sensor.info.activeArraySize.width - 1, android.sensor.info.activeArraySize.height - 1)` being the bottom-right pixel in the active pixel array.
 
 The weight must range from {@value #METERING_WEIGHT_MIN} to {@value #METERING_WEIGHT_MAX} inclusively, and represents a weight for every pixel in the area. This means that a large metering area with the same weight as a smaller area will have more effect in the metering result. Metering areas can partially overlap and the camera device will add the weights in the overlap rectangle.
 
@@ -29,34 +29,34 @@ If all rectangles have 0 weight, then no specific metering area needs to be used
 
 | Constants ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METERING_WEIGHT_DONT_CARE](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#METERING_WEIGHT_DONT_CARE:kotlin.Int) Weights set to this value will cause the camera device to ignore this rectangle. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METERING_WEIGHT_MAX](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#METERING_WEIGHT_MAX:kotlin.Int) The maximum value of valid metering weight. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METERING_WEIGHT_MIN](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#METERING_WEIGHT_MIN:kotlin.Int) The minimum value of valid metering weight. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METERING_WEIGHT_DONT_CARE](../android/hardware/camera2/params/MeteringRectangle.md) Weights set to this value will cause the camera device to ignore this rectangle. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METERING_WEIGHT_MAX](../android/hardware/camera2/params/MeteringRectangle.md) The maximum value of valid metering weight. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METERING_WEIGHT_MIN](../android/hardware/camera2/params/MeteringRectangle.md) The minimum value of valid metering weight. |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MeteringRectangle](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#MeteringRectangle(android.graphics.Point,%20android.util.Size,%20kotlin.Int))`(`xy:` ` [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)!`, `dimensions:` ` [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!`, `meteringWeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new metering rectangle. |
-| [MeteringRectangle](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#MeteringRectangle(android.graphics.Rect,%20kotlin.Int))`(`rect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`, `meteringWeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new metering rectangle. |
-| [MeteringRectangle](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#MeteringRectangle(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `meteringWeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new metering rectangle. |
+| [MeteringRectangle](../android/hardware/camera2/params/MeteringRectangle.md))`(`xy:` ` [Point](../android/graphics/Point.md)!`, `dimensions:` ` [Size](../android/util/Size.md)!`, `meteringWeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new metering rectangle. |
+| [MeteringRectangle](../android/hardware/camera2/params/MeteringRectangle.md))`(`rect:` ` [Rect](../android/graphics/Rect.md)!`, `meteringWeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new metering rectangle. |
+| [MeteringRectangle](../android/hardware/camera2/params/MeteringRectangle.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `meteringWeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new metering rectangle. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#equals(android.hardware.camera2.params.MeteringRectangle))`(`other:` ` [MeteringRectangle](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#)!`)` Compare two metering rectangles to see if they are equal. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getHeight())`()` Return the height of the rectangle. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/hardware/camera2/params/MeteringRectangle.md))`(`other:` ` [MeteringRectangle](../android/hardware/camera2/params/MeteringRectangle.md)!`)` Compare two metering rectangles to see if they are equal. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/hardware/camera2/params/MeteringRectangle.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/hardware/camera2/params/MeteringRectangle.md))`()` Return the height of the rectangle. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeteringWeight](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getMeteringWeight())`()` Return the metering weight of the rectangle. |
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | [getRect](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getRect())`()` Convenience method to create a [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) from this metering rectangle. |
-| [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)! | [getSize](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getSize())`()` Convenience method to create the size from this metering rectangle. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMeteringWeight](../android/hardware/camera2/params/MeteringRectangle.md))`()` Return the metering weight of the rectangle. |
+| [Rect](../android/graphics/Rect.md)! | [getRect](../android/hardware/camera2/params/MeteringRectangle.md))`()` Convenience method to create a [Rect](../android/graphics/Rect.md) from this metering rectangle. |
+| [Size](../android/util/Size.md)! | [getSize](../android/hardware/camera2/params/MeteringRectangle.md))`()` Convenience method to create the size from this metering rectangle. |
 | --- | --- |
-| [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)! | [getUpperLeftPoint](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getUpperLeftPoint())`()` Convenience method to create the upper-left (X,Y) coordinate as a [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getWidth())`()` Return the width of the rectangle. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getX](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getX())`()` Return the X coordinate of the left side of the rectangle. |
+| [Point](../android/graphics/Point.md)! | [getUpperLeftPoint](../android/hardware/camera2/params/MeteringRectangle.md))`()` Convenience method to create the upper-left (X,Y) coordinate as a [Point](../android/graphics/Point.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/hardware/camera2/params/MeteringRectangle.md))`()` Return the width of the rectangle. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getX](../android/hardware/camera2/params/MeteringRectangle.md))`()` Return the X coordinate of the left side of the rectangle. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getY](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#getY())`()` Return the Y coordinate of the upper side of the rectangle. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#hashCode())`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#toString())`()` Return the metering rectangle as a string representation `"(x:%d, y:%d, w:%d, h:%d, wt:%d)"` where each `%d` respectively represents the x, y, width, height, and weight points. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getY](../android/hardware/camera2/params/MeteringRectangle.md))`()` Return the Y coordinate of the upper side of the rectangle. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/hardware/camera2/params/MeteringRectangle.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/hardware/camera2/params/MeteringRectangle.md))`()` Return the metering rectangle as a string representation `"(x:%d, y:%d, w:%d, h:%d, wt:%d)"` where each `%d` respectively represents the x, y, width, height, and weight points. |
 | --- | --- |
 
 ## Constants
@@ -116,8 +116,8 @@ The point `xy`'s data is copied; the reference is not retained.
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `xy` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)!: a non-`null` [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#) with both x,y \>= 0 |
-| `dimensions` | [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)!: a non-`null` [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) with width, height \>= 0 |
+| `xy` | [Point](../android/graphics/Point.md)!: a non-`null` [Point](../android/graphics/Point.md) with both x,y \>= 0 |
+| `dimensions` | [Size](../android/util/Size.md)!: a non-`null` [Size](../android/util/Size.md) with width, height \>= 0 |
 | `meteringWeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): weight \>= 0 |
 | --- | --- |
 
@@ -142,7 +142,7 @@ The rectangle data is copied; the reference is not retained.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `rect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: a non-`null` rectangle with all x,y,w,h dimensions \>= 0 |
+| `rect` | [Rect](../android/graphics/Rect.md)!: a non-`null` rectangle with all x,y,w,h dimensions \>= 0 |
 | `meteringWeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): weight \>= 0 |
 
 | Exceptions ||
@@ -192,7 +192,7 @@ Compare two metering rectangles to see if they are equal. Two weighted rectangle
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [MeteringRectangle](https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MeteringRectangle#)!: Another MeteringRectangle |
+| `other` | [MeteringRectangle](../android/hardware/camera2/params/MeteringRectangle.md)!: Another MeteringRectangle |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -262,13 +262,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getRect(): Rect!
 ```
 
-Convenience method to create a [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) from this metering rectangle.
+Convenience method to create a [Rect](../android/graphics/Rect.md) from this metering rectangle.
 
 This strips away the weight from the rectangle.
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)! | a new [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) with non-negative x1, y1, x2, y2 |
+| [Rect](../android/graphics/Rect.md)! | a new [Rect](../android/graphics/Rect.md) with non-negative x1, y1, x2, y2 |
 
 ### getSize
 
@@ -284,7 +284,7 @@ This strips away the X,Y,weight from the rectangle.
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#)! | a new [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) with non-negative width and height |
+| [Size](../android/util/Size.md)! | a new [Size](../android/util/Size.md) with non-negative width and height |
 
 ### getUpperLeftPoint
 
@@ -294,11 +294,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getUpperLeftPoint(): Point!
 ```
 
-Convenience method to create the upper-left (X,Y) coordinate as a [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#).
+Convenience method to create the upper-left (X,Y) coordinate as a [Point](../android/graphics/Point.md).
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)! | a new `(x,y)` [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#) with both x,y \>= 0 |
+| [Point](../android/graphics/Point.md)! | a new `(x,y)` [Point](../android/graphics/Point.md) with both x,y \>= 0 |
 
 ### getWidth
 
@@ -350,13 +350,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
 
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)) method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the [equals](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)) method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java/lang/Object.md)) method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the [equals](../java/lang/Object.md)) method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|

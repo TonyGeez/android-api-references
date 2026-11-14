@@ -9,9 +9,9 @@ class BodyWaterMassRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.BodyWaterMassRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyWaterMassRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.BodyWaterMassRecord](../android/health/connect/datatypes/BodyWaterMassRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's body water mass. Each record represents a single instantaneous measurement.
@@ -29,7 +29,7 @@ Captures the user's body water mass. Each record represents a single instantaneo
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyWaterMassRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Mass](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyWaterMassRecord#getBodyWaterMass()()` Returns body water mass, in Mass unit. |
+| [Mass](../android/health/connect/datatypes/units/Mass.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyWaterMassRecord#getBodyWaterMass()()` Returns body water mass, in Mass unit. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyWaterMassRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 

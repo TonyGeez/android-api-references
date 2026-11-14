@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # TextClassifierEvent
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent "View this page in Java") 
+Kotlin| [Java](../android/view/textclassifier/TextClassifierEvent.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ abstract class TextClassifierEvent : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.textclassifier.TextClassifierEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#) |
+| ↳ | [android.view.textclassifier.TextClassifierEvent](../android/view/textclassifier/TextClassifierEvent.md) |
 
-| Known Direct Subclasses [TextClassifierEvent.ConversationActionsEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent), [TextClassifierEvent.LanguageDetectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent), [TextClassifierEvent.TextLinkifyEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent), [TextClassifierEvent.TextSelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent) |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [TextClassifierEvent.ConversationActionsEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent) | This class represents events that are related to the conversation actions feature. | | [TextClassifierEvent.LanguageDetectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent) | This class represents events that are related to the language detection feature. | | [TextClassifierEvent.TextLinkifyEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent) | This class represents events that are related to the smart linkify feature. | | [TextClassifierEvent.TextSelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent) | This class represents events that are related to the smart text selection feature. | |
+| Known Direct Subclasses [TextClassifierEvent.ConversationActionsEvent](../android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent.md), [TextClassifierEvent.LanguageDetectionEvent](../android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent.md), [TextClassifierEvent.TextLinkifyEvent](../android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent.md), [TextClassifierEvent.TextSelectionEvent](../android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.md) |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [TextClassifierEvent.ConversationActionsEvent](../android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent.md) | This class represents events that are related to the conversation actions feature. | | [TextClassifierEvent.LanguageDetectionEvent](../android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent.md) | This class represents events that are related to the language detection feature. | | [TextClassifierEvent.TextLinkifyEvent](../android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent.md) | This class represents events that are related to the smart linkify feature. | | [TextClassifierEvent.TextSelectionEvent](../android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.md) | This class represents events that are related to the smart text selection feature. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-This class represents events that are sent by components to the [TextClassifier](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier) to report something of note that relates to a feature powered by the TextClassifier. The TextClassifier may log these events or use them to improve future responses to queries.
+This class represents events that are sent by components to the [TextClassifier](../android/view/textclassifier/TextClassifier.md) to report something of note that relates to a feature powered by the TextClassifier. The TextClassifier may log these events or use them to improve future responses to queries.
 
 Each category of events has its their own subclass. Events of each type have an associated set of related properties. You can find their specification in the subclasses.
 
@@ -26,77 +26,77 @@ Each category of events has its their own subclass. Events of each type have an 
 
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Builder](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.Builder) Builder to build a text classifier event. |
-| | [ConversationActionsEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent) This class represents events that are related to the conversation actions feature. |
-| | [LanguageDetectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent) This class represents events that are related to the language detection feature. |
+| abstract | [Builder](../android/view/textclassifier/TextClassifierEvent.Builder.md) Builder to build a text classifier event. |
+| | [ConversationActionsEvent](../android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent.md) This class represents events that are related to the conversation actions feature. |
+| | [LanguageDetectionEvent](../android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent.md) This class represents events that are related to the language detection feature. |
 | --- | --- |
-| | [TextLinkifyEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent) This class represents events that are related to the smart linkify feature. |
-| | [TextSelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent) This class represents events that are related to the smart text selection feature. |
+| | [TextLinkifyEvent](../android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent.md) This class represents events that are related to the smart linkify feature. |
+| | [TextSelectionEvent](../android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.md) This class represents events that are related to the smart text selection feature. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_CONVERSATION_ACTIONS](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_CONVERSATION_ACTIONS:kotlin.Int) Conversation actions |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_LANGUAGE_DETECTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_LANGUAGE_DETECTION:kotlin.Int) Language detection |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_LINKIFY](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_LINKIFY:kotlin.Int) Linkify |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_CONVERSATION_ACTIONS](../android/view/textclassifier/TextClassifierEvent.md) Conversation actions |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_LANGUAGE_DETECTION](../android/view/textclassifier/TextClassifierEvent.md) Language detection |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_LINKIFY](../android/view/textclassifier/TextClassifierEvent.md) Linkify |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_SELECTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_SELECTION:kotlin.Int) Smart selection |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ACTIONS_GENERATED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_ACTIONS_GENERATED:kotlin.Int) TextClassifier generated some actions |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ACTIONS_SHOWN](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_ACTIONS_SHOWN:kotlin.Int) Smart actions shown to the user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORY_SELECTION](../android/view/textclassifier/TextClassifierEvent.md) Smart selection |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ACTIONS_GENERATED](../android/view/textclassifier/TextClassifierEvent.md) TextClassifier generated some actions |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ACTIONS_SHOWN](../android/view/textclassifier/TextClassifierEvent.md) Smart actions shown to the user. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_AUTO_SELECTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_AUTO_SELECTION:kotlin.Int) Something else other than user or the default TextClassifier triggered a selection. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_COPY_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_COPY_ACTION:kotlin.Int) User clicked on Copy action. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUT_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_CUT_ACTION:kotlin.Int) User clicked on Cut action. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_AUTO_SELECTION](../android/view/textclassifier/TextClassifierEvent.md) Something else other than user or the default TextClassifier triggered a selection. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_COPY_ACTION](../android/view/textclassifier/TextClassifierEvent.md) User clicked on Copy action. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUT_ACTION](../android/view/textclassifier/TextClassifierEvent.md) User clicked on Cut action. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LINKS_GENERATED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_LINKS_GENERATED:kotlin.Int) Some text links were generated. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LINK_CLICKED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_LINK_CLICKED:kotlin.Int) User clicked a link. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MANUAL_REPLY](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_MANUAL_REPLY:kotlin.Int) User composed a reply. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LINKS_GENERATED](../android/view/textclassifier/TextClassifierEvent.md) Some text links were generated. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LINK_CLICKED](../android/view/textclassifier/TextClassifierEvent.md) User clicked a link. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MANUAL_REPLY](../android/view/textclassifier/TextClassifierEvent.md) User composed a reply. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_OTHER_ACTION:kotlin.Int) User clicked on a custom action. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OVERTYPE](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_OVERTYPE:kotlin.Int) User typed over the selection. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PASTE_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_PASTE_ACTION:kotlin.Int) User clicked on Paste action. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER_ACTION](../android/view/textclassifier/TextClassifierEvent.md) User clicked on a custom action. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OVERTYPE](../android/view/textclassifier/TextClassifierEvent.md) User typed over the selection. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PASTE_ACTION](../android/view/textclassifier/TextClassifierEvent.md) User clicked on Paste action. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_DESTROYED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_DESTROYED:kotlin.Int) Selection is destroyed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_DRAG](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_DRAG:kotlin.Int) User dragged+dropped the selection. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_MODIFIED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_MODIFIED:kotlin.Int) User modified an existing selection. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_DESTROYED](../android/view/textclassifier/TextClassifierEvent.md) Selection is destroyed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_DRAG](../android/view/textclassifier/TextClassifierEvent.md) User dragged+dropped the selection. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_MODIFIED](../android/view/textclassifier/TextClassifierEvent.md) User modified an existing selection. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_RESET](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_RESET:kotlin.Int) User reset the smart selection. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_STARTED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_STARTED:kotlin.Int) User started a new selection. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECT_ALL](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECT_ALL:kotlin.Int) User clicked on Select All action |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_RESET](../android/view/textclassifier/TextClassifierEvent.md) User reset the smart selection. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECTION_STARTED](../android/view/textclassifier/TextClassifierEvent.md) User started a new selection. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SELECT_ALL](../android/view/textclassifier/TextClassifierEvent.md) User clicked on Select All action |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SHARE_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SHARE_ACTION:kotlin.Int) User clicked on Share action. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SMART_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SMART_ACTION:kotlin.Int) User clicked on a Smart action. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SMART_SELECTION_MULTI](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SMART_SELECTION_MULTI:kotlin.Int) Smart selection triggered spanning multiple tokens (words). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SHARE_ACTION](../android/view/textclassifier/TextClassifierEvent.md) User clicked on Share action. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SMART_ACTION](../android/view/textclassifier/TextClassifierEvent.md) User clicked on a Smart action. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SMART_SELECTION_MULTI](../android/view/textclassifier/TextClassifierEvent.md) Smart selection triggered spanning multiple tokens (words). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SMART_SELECTION_SINGLE](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SMART_SELECTION_SINGLE:kotlin.Int) Smart selection triggered for a single token (word). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SMART_SELECTION_SINGLE](../android/view/textclassifier/TextClassifierEvent.md) Smart selection triggered for a single token (word). |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#describeContents())`()` <br /> |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getActionIndices](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getActionIndices())`()` Returns the indices of the actions relating to this event. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getEntityTypes](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getEntityTypes())`()` Returns an array of entity types. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/textclassifier/TextClassifierEvent.md))`()` <br /> |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getActionIndices](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the indices of the actions relating to this event. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getEntityTypes](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns an array of entity types. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventCategory](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getEventCategory())`()` Returns the event category. |
-| open [TextClassificationContext](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext)? | [getEventContext](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getEventContext())`()` Returns the event context. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventIndex](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getEventIndex())`()` Returns the index of this event in the series of event it belongs to. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventCategory](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the event category. |
+| open [TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md)? | [getEventContext](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the event context. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventIndex](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the index of this event in the series of event it belongs to. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventType](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getEventType())`()` Returns the event type. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | [getExtras](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getExtras())`()` Returns a bundle containing non-structured extra information about this event. |
-| open [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)? | [getLocale](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getLocale())`()` Returns the detected locale. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventType](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the event type. |
+| open [Bundle](../android/os/Bundle.md) | [getExtras](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns a bundle containing non-structured extra information about this event. |
+| open [ULocale](../android/icu/util/ULocale.md)? | [getLocale](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the detected locale. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getModelName](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getModelName())`()` Returns the model name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getResultId](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getResultId())`()` Returns the id of the text classifier result related to this event. |
-| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getScores](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#getScores())`()` Returns the scores of the suggestions. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getModelName](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the model name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getResultId](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the id of the text classifier result related to this event. |
+| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getScores](../android/view/textclassifier/TextClassifierEvent.md))`()` Returns the scores of the suggestions. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#toString())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/textclassifier/TextClassifierEvent.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/textclassifier/TextClassifierEvent.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [TextClassifierEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TextClassifierEvent](../android/view/textclassifier/TextClassifierEvent.md)!\> | [CREATOR](../android/view/textclassifier/TextClassifierEvent.md) <br /> |
 
 ## Constants
 
@@ -114,7 +114,7 @@ Conversation actions
 
 **See Also**
 
-- [android.view.textclassifier.TextClassifierEvent.ConversationActionsEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent) 
+- [android.view.textclassifier.TextClassifierEvent.ConversationActionsEvent](../android/view/textclassifier/TextClassifierEvent.ConversationActionsEvent.md) 
 
 ### CATEGORY_LANGUAGE_DETECTION
 
@@ -130,7 +130,7 @@ Language detection
 
 **See Also**
 
-- [android.view.textclassifier.TextClassifierEvent.LanguageDetectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent) 
+- [android.view.textclassifier.TextClassifierEvent.LanguageDetectionEvent](../android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent.md) 
 
 ### CATEGORY_LINKIFY
 
@@ -146,7 +146,7 @@ Linkify
 
 **See Also**
 
-- [android.view.textclassifier.TextClassifierEvent.TextLinkifyEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent) 
+- [android.view.textclassifier.TextClassifierEvent.TextLinkifyEvent](../android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent.md) 
 
 ### CATEGORY_SELECTION
 
@@ -162,7 +162,7 @@ Smart selection
 
 **See Also**
 
-- [android.view.textclassifier.TextClassifierEvent.TextSelectionEvent](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent) 
+- [android.view.textclassifier.TextClassifierEvent.TextSelectionEvent](../android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.md) 
 
 ### TYPE_ACTIONS_GENERATED
 
@@ -428,7 +428,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getActionIndices
 
@@ -446,7 +446,7 @@ Returns the indices of the actions relating to this event. Actions are usually r
 
 **See Also**
 
-- [android.view.textclassifier.TextClassifierEvent.Builder#setActionIndices(int...)](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.Builder#setActionIndices(kotlin.Int)) 
+- [android.view.textclassifier.TextClassifierEvent.Builder#setActionIndices(int...)](../android/view/textclassifier/TextClassifierEvent.Builder.md)) 
 
 ### getEntityTypes
 
@@ -456,7 +456,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getEntityTypes(): Array<String!>
 ```
 
-Returns an array of entity types. e.g. [TextClassifier.TYPE_ADDRESS](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#TYPE_ADDRESS:kotlin.String).
+Returns an array of entity types. e.g. [TextClassifier.TYPE_ADDRESS](../android/view/textclassifier/TextClassifier.md).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
@@ -464,7 +464,7 @@ Returns an array of entity types. e.g. [TextClassifier.TYPE_ADDRESS](https://dev
 
 **See Also**
 
-- [android.view.textclassifier.TextClassifierEvent.Builder#setEntityTypes(String...)](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent.Builder#setEntityTypes(kotlin.String)) 
+- [android.view.textclassifier.TextClassifierEvent.Builder#setEntityTypes(String...)](../android/view/textclassifier/TextClassifierEvent.Builder.md)) 
 
 ### getEventCategory
 
@@ -474,11 +474,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getEventCategory(): Int
 ```
 
-Returns the event category. e.g. [CATEGORY_SELECTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_SELECTION:kotlin.Int).
+Returns the event category. e.g. [CATEGORY_SELECTION](../android/view/textclassifier/TextClassifierEvent.md).
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.textclassifier.TextClassifierEvent#CATEGORY_SELECTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_SELECTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#CATEGORY_LINKIFY](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_LINKIFY:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#CATEGORY_CONVERSATION_ACTIONS](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_CONVERSATION_ACTIONS:kotlin.Int), or [android.view.textclassifier.TextClassifierEvent#CATEGORY_LANGUAGE_DETECTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#CATEGORY_LANGUAGE_DETECTION:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.textclassifier.TextClassifierEvent#CATEGORY_SELECTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#CATEGORY_LINKIFY](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#CATEGORY_CONVERSATION_ACTIONS](../android/view/textclassifier/TextClassifierEvent.md), or [android.view.textclassifier.TextClassifierEvent#CATEGORY_LANGUAGE_DETECTION](../android/view/textclassifier/TextClassifierEvent.md) |
 
 ### getEventContext
 
@@ -492,7 +492,7 @@ Returns the event context.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [TextClassificationContext](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext)? | This value may be`null`. |
+| [TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md)? | This value may be`null`. |
 
 ### getEventIndex
 
@@ -512,11 +512,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getEventType(): Int
 ```
 
-Returns the event type. e.g. [TYPE_SELECTION_STARTED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_STARTED:kotlin.Int).
+Returns the event type. e.g. [TYPE_SELECTION_STARTED](../android/view/textclassifier/TextClassifierEvent.md).
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_STARTED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_STARTED:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_MODIFIED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_MODIFIED:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SMART_SELECTION_SINGLE](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SMART_SELECTION_SINGLE:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SMART_SELECTION_MULTI](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SMART_SELECTION_MULTI:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_AUTO_SELECTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_AUTO_SELECTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_ACTIONS_SHOWN](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_ACTIONS_SHOWN:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_LINK_CLICKED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_LINK_CLICKED:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_OVERTYPE](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_OVERTYPE:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_COPY_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_COPY_ACTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_PASTE_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_PASTE_ACTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_CUT_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_CUT_ACTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SHARE_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SHARE_ACTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SMART_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SMART_ACTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_DRAG](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_DRAG:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_DESTROYED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_DESTROYED:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_OTHER_ACTION](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_OTHER_ACTION:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECT_ALL](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECT_ALL:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_RESET](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_SELECTION_RESET:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_MANUAL_REPLY](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_MANUAL_REPLY:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_ACTIONS_GENERATED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_ACTIONS_GENERATED:kotlin.Int), [android.view.textclassifier.TextClassifierEvent#TYPE_LINKS_GENERATED](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent#TYPE_LINKS_GENERATED:kotlin.Int), or android.view.textclassifier.TextClassifierEvent.TYPE_READ_CLIPBOARD |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_STARTED](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_MODIFIED](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SMART_SELECTION_SINGLE](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SMART_SELECTION_MULTI](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_AUTO_SELECTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_ACTIONS_SHOWN](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_LINK_CLICKED](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_OVERTYPE](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_COPY_ACTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_PASTE_ACTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_CUT_ACTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SHARE_ACTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SMART_ACTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_DRAG](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_DESTROYED](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_OTHER_ACTION](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECT_ALL](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_SELECTION_RESET](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_MANUAL_REPLY](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_ACTIONS_GENERATED](../android/view/textclassifier/TextClassifierEvent.md), [android.view.textclassifier.TextClassifierEvent#TYPE_LINKS_GENERATED](../android/view/textclassifier/TextClassifierEvent.md), or android.view.textclassifier.TextClassifierEvent.TYPE_READ_CLIPBOARD |
 
 ### getExtras
 
@@ -532,7 +532,7 @@ Returns a bundle containing non-structured extra information about this event.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | This value cannot be`null`. |
+| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
 
 ### getLocale
 
@@ -546,7 +546,7 @@ Returns the detected locale.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)? | This value may be`null`. |
+| [ULocale](../android/icu/util/ULocale.md)? | This value may be`null`. |
 
 ### getModelName
 
@@ -615,8 +615,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

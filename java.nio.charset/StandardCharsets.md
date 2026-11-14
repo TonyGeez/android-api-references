@@ -8,7 +8,7 @@ class StandardCharsets
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.charset.StandardCharsets](https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#) |
+| ↳ | [java.nio.charset.StandardCharsets](../java/nio/charset/StandardCharsets.md) |
 
 Constant definitions for the standard `https://developer.android.com/reference/kotlin/java/nio/charset/Charset`. These charsets are guaranteed to be available on every implementation of the Java platform.
 
@@ -16,17 +16,17 @@ Constant definitions for the standard `https://developer.android.com/reference/k
 
 | Properties ||
 |---|---|
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#ISO_8859_1:java.nio.charset.Charset` ISO Latin Alphabet No. |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#US_ASCII:java.nio.charset.Charset` Seven-bit ASCII, a. |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_16:java.nio.charset.Charset` Sixteen-bit UCS Transformation Format, byte order identified by an optional byte-order mark |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#ISO_8859_1:java.nio.charset.Charset` ISO Latin Alphabet No. |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#US_ASCII:java.nio.charset.Charset` Seven-bit ASCII, a. |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_16:java.nio.charset.Charset` Sixteen-bit UCS Transformation Format, byte order identified by an optional byte-order mark |
 | --- | --- |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_16BE:java.nio.charset.Charset` Sixteen-bit UCS Transformation Format, big-endian byte order |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_16LE:java.nio.charset.Charset` Sixteen-bit UCS Transformation Format, little-endian byte order |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_32:java.nio.charset.Charset` Thirty-two-bit UCS Transformation Format, byte order identified by an optional byte-order mark. |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_16BE:java.nio.charset.Charset` Sixteen-bit UCS Transformation Format, big-endian byte order |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_16LE:java.nio.charset.Charset` Sixteen-bit UCS Transformation Format, little-endian byte order |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_32:java.nio.charset.Charset` Thirty-two-bit UCS Transformation Format, byte order identified by an optional byte-order mark. |
 | --- | --- |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_32BE:java.nio.charset.Charset` Thirty-two-bit UCS Transformation Format, big-endian byte order. |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_32LE:java.nio.charset.Charset` Thirty-two-bit UCS Transformation Format, little-endian byte order. |
-| static [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_8:java.nio.charset.Charset` Eight-bit UCS Transformation Format |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_32BE:java.nio.charset.Charset` Thirty-two-bit UCS Transformation Format, big-endian byte order. |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_32LE:java.nio.charset.Charset` Thirty-two-bit UCS Transformation Format, little-endian byte order. |
+| static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets#UTF_8:java.nio.charset.Charset` Eight-bit UCS Transformation Format |
 | --- | --- |
 
 ## Properties

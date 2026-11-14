@@ -5,21 +5,21 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 
 # PhonesColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.PhonesColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/Contacts.PhonesColumns.md) 
 | --- | --- |
 
 ```
 interface PhonesColumns
 ```
 
-| [android.provider.Contacts.PhonesColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#) |
+| [android.provider.Contacts.PhonesColumns](../android/provider/Contacts.PhonesColumns.md) |
 
-| Known Direct Subclasses [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People), [Contacts.People.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.Phones), [Contacts.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.Phones) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People) | This table contains people. | | [Contacts.People.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.Phones) | A sub directory of a single person that contains all of their Phones. | | [Contacts.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.Phones) | This table stores phone numbers and a reference to the person that the contact method belongs to. | |
+| Known Direct Subclasses [Contacts.People](../android/provider/Contacts.People.md), [Contacts.People.Phones](../android/provider/Contacts.People.Phones.md), [Contacts.Phones](../android/provider/Contacts.Phones.md) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [Contacts.People](../android/provider/Contacts.People.md) | This table contains people. | | [Contacts.People.Phones](../android/provider/Contacts.People.Phones.md) | A sub directory of a single person that contains all of their Phones. | | [Contacts.Phones](../android/provider/Contacts.Phones.md) | This table stores phone numbers and a reference to the person that the contact method belongs to. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)
+| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
 
 Columns from the Phones table that other columns join into themselves.
 
@@ -27,23 +27,23 @@ Columns from the Phones table that other columns join into themselves.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ISPRIMARY](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#ISPRIMARY:kotlin.String) Whether this is the primary phone number |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#LABEL:kotlin.String) The user provided label for the phone number, only used if TYPE is TYPE_CUSTOM. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#NUMBER:kotlin.String) The phone number as the user entered it. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ISPRIMARY](../android/provider/Contacts.PhonesColumns.md) Whether this is the primary phone number |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](../android/provider/Contacts.PhonesColumns.md) The user provided label for the phone number, only used if TYPE is TYPE_CUSTOM. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER](../android/provider/Contacts.PhonesColumns.md) The phone number as the user entered it. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER_KEY](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#NUMBER_KEY:kotlin.String) The normalized phone number |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE:kotlin.String) The type of the the phone number. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUSTOM](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_CUSTOM:kotlin.Int) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMBER_KEY](../android/provider/Contacts.PhonesColumns.md) The normalized phone number |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE](../android/provider/Contacts.PhonesColumns.md) The type of the the phone number. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CUSTOM](../android/provider/Contacts.PhonesColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FAX_HOME](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_FAX_HOME:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FAX_WORK](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_FAX_WORK:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HOME](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_HOME:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FAX_HOME](../android/provider/Contacts.PhonesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FAX_WORK](../android/provider/Contacts.PhonesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HOME](../android/provider/Contacts.PhonesColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MOBILE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_MOBILE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_OTHER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PAGER](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_PAGER:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MOBILE](../android/provider/Contacts.PhonesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_OTHER](../android/provider/Contacts.PhonesColumns.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_PAGER](../android/provider/Contacts.PhonesColumns.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WORK](https://developer.android.com/reference/kotlin/android/provider/Contacts.PhonesColumns#TYPE_WORK:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WORK](../android/provider/Contacts.PhonesColumns.md) <br /> |
 
 ## Constants
 
@@ -55,7 +55,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ISPRIMARY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Whether this is the primary phone number
 
@@ -71,7 +71,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LABEL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The user provided label for the phone number, only used if TYPE is TYPE_CUSTOM.
 
@@ -87,7 +87,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NUMBER: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The phone number as the user entered it.
 
@@ -103,7 +103,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NUMBER_KEY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The normalized phone number
 
@@ -119,7 +119,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The type of the the phone number.
 
@@ -135,7 +135,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_CUSTOM: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 0
 
@@ -147,7 +147,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_FAX_HOME: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 5
 
@@ -159,7 +159,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_FAX_WORK: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 4
 
@@ -171,7 +171,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_HOME: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 1
 
@@ -183,7 +183,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_MOBILE: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 2
 
@@ -195,7 +195,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_OTHER: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 7
 
@@ -207,7 +207,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_PAGER: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 6
 
@@ -219,6 +219,6 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_WORK: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)* 
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
 
  Value: 3

@@ -10,13 +10,13 @@ class Flow
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.Flow](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow#) |
+| ↳ | [java.util.concurrent.Flow](../java/util/concurrent/Flow.md) |
 
-Interrelated interfaces and static methods for establishing flow-controlled components in which [Publishers](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) produce items consumed by one or more [Subscribers](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber), each managed by a [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription).
+Interrelated interfaces and static methods for establishing flow-controlled components in which [Publishers](../java/util/concurrent/Flow.Publisher.md) produce items consumed by one or more [Subscribers](../java/util/concurrent/Flow.Subscriber.md), each managed by a [Subscription](../java/util/concurrent/Flow.Subscription.md).
 
-These interfaces correspond to the [reactive-streams](http://www.reactive-streams.org/) specification. They apply in both concurrent and distributed asynchronous settings: All (seven) methods are defined in`void`"one-way" message style. Communication relies on a simple form of flow control (method [Subscription.request](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription#request(kotlin.Long))) that can be used to avoid resource management problems that may otherwise occur in "push" based systems.
+These interfaces correspond to the [reactive-streams](http://www.reactive-streams.org/) specification. They apply in both concurrent and distributed asynchronous settings: All (seven) methods are defined in`void`"one-way" message style. Communication relies on a simple form of flow control (method [Subscription.request](../java/util/concurrent/Flow.Subscription.md))) that can be used to avoid resource management problems that may otherwise occur in "push" based systems.
 
-**Examples.** A [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) usually defines its own [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription) implementation; constructing one in method`subscribe`and issuing it to the calling [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber). It publishes items to the subscriber asynchronously, normally using an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor). For example, here is a very simple publisher that only issues (when requested) a single`TRUE`item to a single subscriber. Because the subscriber receives only a single item, this class does not use buffering and ordering control required in most implementations. 
+**Examples.** A [Publisher](../java/util/concurrent/Flow.Publisher.md) usually defines its own [Subscription](../java/util/concurrent/Flow.Subscription.md) implementation; constructing one in method`subscribe`and issuing it to the calling [Subscriber](../java/util/concurrent/Flow.Subscriber.md). It publishes items to the subscriber asynchronously, normally using an [Executor](../java/util/concurrent/Executor.md). For example, here is a very simple publisher that only issues (when requested) a single`TRUE`item to a single subscriber. Because the subscriber receives only a single item, this class does not use buffering and ordering control required in most implementations. 
 
 ```kotlin
 <code>class OneShotPublisher implements Publisher&lt;Boolean&gt; {
@@ -62,7 +62,7 @@ These interfaces correspond to the [reactive-streams](http://www.reactive-stream
   }</code>
 ```
 
-A [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber) arranges that items be requested and processed. Items (invocations of [Subscriber.onNext](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber#onNext(java.util.concurrent.Flow.Subscriber.T))) are not issued unless requested, but multiple items may be requested. Many Subscriber implementations can arrange this in the style of the following example, where a buffer size of 1 single-steps, and larger sizes usually allow for more efficient overlapped processing with less communication; for example with a value of 64, this keeps total outstanding requests between 32 and 64. Because Subscriber method invocations for a given [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription) are strictly ordered, there is no need for these methods to use locks or volatiles unless a Subscriber maintains multiple Subscriptions (in which case it is better to instead define multiple Subscribers, each with its own Subscription). 
+A [Subscriber](../java/util/concurrent/Flow.Subscriber.md) arranges that items be requested and processed. Items (invocations of [Subscriber.onNext](../java/util/concurrent/Flow.Subscriber.md))) are not issued unless requested, but multiple items may be requested. Many Subscriber implementations can arrange this in the style of the following example, where a buffer size of 1 single-steps, and larger sizes usually allow for more efficient overlapped processing with less communication; for example with a value of 64, this keeps total outstanding requests between 32 and 64. Because Subscriber method invocations for a given [Subscription](../java/util/concurrent/Flow.Subscription.md) are strictly ordered, there is no need for these methods to use locks or volatiles unless a Subscriber maintains multiple Subscriptions (in which case it is better to instead define multiple Subscribers, each with its own Subscription). 
 
 ```kotlin
 <code>class SampleSubscriber&lt;T&gt; implements Subscriber&lt;T&gt; {
@@ -89,7 +89,7 @@ A [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurre
   }</code>
 ```
 
-The default value of [defaultBufferSize](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow#defaultBufferSize())may provide a useful starting point for choosing request sizes and capacities in Flow components based on expected rates, resources, and usages. Or, when flow control is never needed, a subscriber may initially request an effectively unbounded number of items, as in: 
+The default value of [defaultBufferSize](../java/util/concurrent/Flow.md))may provide a useful starting point for choosing request sizes and capacities in Flow components based on expected rates, resources, and usages. Or, when flow control is never needed, a subscriber may initially request an effectively unbounded number of items, as in: 
 
 ```kotlin
 <code>class UnboundedSubscriber&lt;T&gt; implements Subscriber&lt;T&gt; {
@@ -107,15 +107,15 @@ The default value of [defaultBufferSize](https://developer.android.com/reference
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Processor](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Processor) A component that acts as both a Subscriber and Publisher. |
-| abstract | [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) A producer of items (and related control messages) received by Subscribers. |
-| abstract | [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber) A receiver of messages. |
+| abstract | [Processor](../java/util/concurrent/Flow.Processor.md) A component that acts as both a Subscriber and Publisher. |
+| abstract | [Publisher](../java/util/concurrent/Flow.Publisher.md) A producer of items (and related control messages) received by Subscribers. |
+| abstract | [Subscriber](../java/util/concurrent/Flow.Subscriber.md) A receiver of messages. |
 | --- | --- |
-| abstract | [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription) Message control linking a [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) and [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber). |
+| abstract | [Subscription](../java/util/concurrent/Flow.Subscription.md) Message control linking a [Publisher](../java/util/concurrent/Flow.Publisher.md) and [Subscriber](../java/util/concurrent/Flow.Subscriber.md). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [defaultBufferSize](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow#defaultBufferSize())`()` Returns a default value for Publisher or Subscriber buffering, that may be used in the absence of other constraints. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [defaultBufferSize](../java/util/concurrent/Flow.md))`()` Returns a default value for Publisher or Subscriber buffering, that may be used in the absence of other constraints. |
 
 ## Public methods
 

@@ -8,11 +8,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Blob
 ```
 
-| [java.sql.Blob](https://developer.android.com/reference/kotlin/java/sql/Blob#) |
+| [java.sql.Blob](../java/sql/Blob.md) |
 
 The representation (mapping) in the JavaTM programming language of an SQL`BLOB`value. An SQL`BLOB`is a built-in type that stores a Binary Large Object as a column value in a row of a database table. By default drivers implement`Blob`using an SQL`locator(BLOB)`, which means that a`Blob`object contains a logical pointer to the SQL`BLOB`data rather than the data itself. A`Blob`object is valid for the duration of the transaction in which is was created.
 
-Methods in the interfaces [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet), [CallableStatement](https://developer.android.com/reference/kotlin/java/sql/CallableStatement), and [PreparedStatement](https://developer.android.com/reference/kotlin/java/sql/PreparedStatement), such as`getBlob`and`setBlob`allow a programmer to access an SQL`BLOB`value. The`Blob`interface provides methods for getting the length of an SQL`BLOB`(Binary Large Object) value, for materializing a`BLOB`value on the client, and for determining the position of a pattern of bytes within a`BLOB`value. In addition, this interface has methods for updating a`BLOB`value.
+Methods in the interfaces [ResultSet](../java/sql/ResultSet.md), [CallableStatement](../java/sql/CallableStatement.md), and [PreparedStatement](../java/sql/PreparedStatement.md), such as`getBlob`and`setBlob`allow a programmer to access an SQL`BLOB`value. The`Blob`interface provides methods for getting the length of an SQL`BLOB`(Binary Large Object) value, for materializing a`BLOB`value on the client, and for determining the position of a pattern of bytes within a`BLOB`value. In addition, this interface has methods for updating a`BLOB`value.
 
 All methods on the`Blob`interface must be fully implemented if the JDBC driver supports the data type.
 
@@ -20,20 +20,20 @@ All methods on the`Blob`interface must be fully implemented if the JDBC driver s
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](https://developer.android.com/reference/kotlin/java/sql/Blob#free())`()` This method frees the`Blob`object and releases the resources that it holds. |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getBinaryStream](https://developer.android.com/reference/kotlin/java/sql/Blob#getBinaryStream())`()` Retrieves the`BLOB`value designated by this`Blob`instance as a stream. |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getBinaryStream](https://developer.android.com/reference/kotlin/java/sql/Blob#getBinaryStream(kotlin.Long,%20kotlin.Long))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an`InputStream`object that contains a partial`Blob`value, starting with the byte specified by pos, which is length bytes in length. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](../java/sql/Blob.md))`()` This method frees the`Blob`object and releases the resources that it holds. |
+| abstract [InputStream](../java/io/InputStream.md)! | [getBinaryStream](../java/sql/Blob.md))`()` Retrieves the`BLOB`value designated by this`Blob`instance as a stream. |
+| abstract [InputStream](../java/io/InputStream.md)! | [getBinaryStream](../java/sql/Blob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an`InputStream`object that contains a partial`Blob`value, starting with the byte specified by pos, which is length bytes in length. |
 | --- | --- |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBytes](https://developer.android.com/reference/kotlin/java/sql/Blob#getBytes(kotlin.Long,%20kotlin.Int))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves all or part of the`BLOB`value that this`Blob`object represents, as an array of bytes. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [length](https://developer.android.com/reference/kotlin/java/sql/Blob#length())`()` Returns the number of bytes in the`BLOB`value designated by this`Blob`object. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](https://developer.android.com/reference/kotlin/java/sql/Blob#position(kotlin.ByteArray,%20kotlin.Long))`(`pattern:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the byte position at which the specified byte array`pattern`begins within the`BLOB`value that this`Blob`object represents. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBytes](../java/sql/Blob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves all or part of the`BLOB`value that this`Blob`object represents, as an array of bytes. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [length](../java/sql/Blob.md))`()` Returns the number of bytes in the`BLOB`value designated by this`Blob`object. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](../java/sql/Blob.md))`(`pattern:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the byte position at which the specified byte array`pattern`begins within the`BLOB`value that this`Blob`object represents. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](https://developer.android.com/reference/kotlin/java/sql/Blob#position(java.sql.Blob,%20kotlin.Long))`(`pattern:` ` [Blob](https://developer.android.com/reference/kotlin/java/sql/Blob#)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the byte position in the`BLOB`value designated by this`Blob`object at which`pattern`begins. |
-| abstract [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [setBinaryStream](https://developer.android.com/reference/kotlin/java/sql/Blob#setBinaryStream(kotlin.Long))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves a stream that can be used to write to the`BLOB`value that this`Blob`object represents. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setBytes](https://developer.android.com/reference/kotlin/java/sql/Blob#setBytes(kotlin.Long,%20kotlin.ByteArray))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes the given array of bytes to the`BLOB`value that this`Blob`object represents, starting at position`pos`, and returns the number of bytes written. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](../java/sql/Blob.md))`(`pattern:` ` [Blob](../java/sql/Blob.md)!`, `start:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves the byte position in the`BLOB`value designated by this`Blob`object at which`pattern`begins. |
+| abstract [OutputStream](../java/io/OutputStream.md)! | [setBinaryStream](../java/sql/Blob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Retrieves a stream that can be used to write to the`BLOB`value that this`Blob`object represents. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setBytes](../java/sql/Blob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes the given array of bytes to the`BLOB`value that this`Blob`object represents, starting at position`pos`, and returns the number of bytes written. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setBytes](https://developer.android.com/reference/kotlin/java/sql/Blob#setBytes(kotlin.Long,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes all or part of the given`byte`array to the`BLOB`value that this`Blob`object represents and returns the number of bytes written. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [truncate](https://developer.android.com/reference/kotlin/java/sql/Blob#truncate(kotlin.Long))`(`len:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates the`BLOB`value that this`Blob`object represents to be`len`bytes in length. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setBytes](../java/sql/Blob.md))`(`pos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes all or part of the given`byte`array to the`BLOB`value that this`Blob`object represents and returns the number of bytes written. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [truncate](../java/sql/Blob.md))`(`len:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates the`BLOB`value that this`Blob`object represents to be`len`bytes in length. |
 
 ## Public methods
 
@@ -68,7 +68,7 @@ Retrieves the`BLOB`value designated by this`Blob`instance as a stream.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | a stream containing the`BLOB`data |
+| [InputStream](../java/io/InputStream.md)! | a stream containing the`BLOB`data |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -77,7 +77,7 @@ Retrieves the`BLOB`value designated by this`Blob`instance as a stream.
 
 **See Also**
 
-- [#setBinaryStream](https://developer.android.com/reference/kotlin/java/sql/Blob#setBinaryStream(kotlin.Long)) 
+- [#setBinaryStream](../java/sql/Blob.md)) 
 
 ### getBinaryStream
 
@@ -99,7 +99,7 @@ Returns an`InputStream`object that contains a partial`Blob`value, starting with 
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `InputStream`through which the partial`Blob`value can be read. |
+| [InputStream](../java/io/InputStream.md)! | `InputStream`through which the partial`Blob`value can be read. |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Retrieves the byte position in the`BLOB`value designated by this`Blob`object at 
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pattern` | [Blob](https://developer.android.com/reference/kotlin/java/sql/Blob#)!:the`Blob`object designating the`BLOB`value for which to search |
+| `pattern` | [Blob](../java/sql/Blob.md)!:the`Blob`object designating the`BLOB`value for which to search |
 | `start` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the position in the`BLOB`value at which to begin searching; the first position is 1 |
 
 | Return ||
@@ -226,7 +226,7 @@ Retrieves a stream that can be used to write to the`BLOB`value that this`Blob`ob
 
 | Return ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | a`java.io.OutputStream`object to which data can be written |
+| [OutputStream](../java/io/OutputStream.md)! | a`java.io.OutputStream`object to which data can be written |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------------------------------------------------|
@@ -266,7 +266,7 @@ Writes the given array of bytes to the`BLOB`value that this`Blob`object represen
 
 **See Also**
 
-- [#getBytes](https://developer.android.com/reference/kotlin/java/sql/Blob#getBytes(kotlin.Long,%20kotlin.Int)) 
+- [#getBytes](../java/sql/Blob.md)) 
 
 ### setBytes
 
@@ -304,7 +304,7 @@ Writes all or part of the given`byte`array to the`BLOB`value that this`Blob`obje
 
 **See Also**
 
-- [#getBytes](https://developer.android.com/reference/kotlin/java/sql/Blob#getBytes(kotlin.Long,%20kotlin.Int)) 
+- [#getBytes](../java/sql/Blob.md)) 
 
 ### truncate
 

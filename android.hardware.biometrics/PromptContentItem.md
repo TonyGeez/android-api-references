@@ -4,18 +4,18 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # PromptContentItem
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/biometrics/PromptContentItem "View this page in Java") 
+Kotlin| [Java](../android/hardware/biometrics/PromptContentItem.md) 
 | --- | --- |
 
 ```
 interface PromptContentItem
 ```
 
-| [android.hardware.biometrics.PromptContentItem](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItem#) |
+| [android.hardware.biometrics.PromptContentItem](../android/hardware/biometrics/PromptContentItem.md) |
 
-| Known Direct Subclasses [PromptContentItemBulletedText](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItemBulletedText), [PromptContentItemPlainText](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItemPlainText) |-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [PromptContentItemBulletedText](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItemBulletedText) | A list item with bulleted text shown on [PromptVerticalListContentView](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView). | | [PromptContentItemPlainText](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentItemPlainText) | A list item with plain text shown on [PromptVerticalListContentView](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptVerticalListContentView). | |
+| Known Direct Subclasses [PromptContentItemBulletedText](../android/hardware/biometrics/PromptContentItemBulletedText.md), [PromptContentItemPlainText](../android/hardware/biometrics/PromptContentItemPlainText.md) |-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [PromptContentItemBulletedText](../android/hardware/biometrics/PromptContentItemBulletedText.md) | A list item with bulleted text shown on [PromptVerticalListContentView](../android/hardware/biometrics/PromptVerticalListContentView.md). | | [PromptContentItemPlainText](../android/hardware/biometrics/PromptContentItemPlainText.md) | A list item with plain text shown on [PromptVerticalListContentView](../android/hardware/biometrics/PromptVerticalListContentView.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-An item shown on [PromptContentView](https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentView).
+An item shown on [PromptContentView](../android/hardware/biometrics/PromptContentView.md).
 
 ## Summary

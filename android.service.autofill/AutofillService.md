@@ -8,11 +8,11 @@ abstract class AutofillService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.autofill.AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#) |
+| | | | ↳ | [android.service.autofill.AutofillService](../android/service/autofill/AutofillService.md) |
 
 An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
 
@@ -173,7 +173,7 @@ private String getCertificatesHash(String packageName) throws Exception {
 </string>
 ```
 
-If the service did not store the signing certificates data the first time the data was saved --- for example, because the data was created by a previous version of the app that did not use the Autofill Framework --- the service should warn the user that the authenticity of the app cannot be confirmed (see an example on how to show such warning in the [Web security](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#WebSecurityDisclaimer) section below), and if the user agrees, then the service could save the data from the signing ceriticates for future use.
+If the service did not store the signing certificates data the first time the data was saved --- for example, because the data was created by a previous version of the app that did not use the Autofill Framework --- the service should warn the user that the authenticity of the app cannot be confirmed (see an example on how to show such warning in the [Web security](../android/service/autofill/AutofillService.md) section below), and if the user agrees, then the service could save the data from the signing ceriticates for future use.
 
 ### Ignoring views
 
@@ -784,7 +784,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1360,8 +1360,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [FillEventHistory](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#getFillEventHistory()()` Gets the events that happened after the last `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)` call. |
-| [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [FillEventHistory](../android/service/autofill/FillEventHistory.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#getFillEventHistory()()` Gets the events that happened after the last `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)` call. |
+| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onConnected()()` Called when the Android system connects to service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onCreate()()` Called by the system when the service is first created. |
@@ -2831,7 +2831,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2872,9 +2872,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -3156,7 +3156,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3214,9 +3214,9 @@ Service must call one of the `https://developer.android.com/reference/kotlin/and
 
 | Parameters ||
 |---|---|
-| `request` | [FillRequest](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest): the `https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#): signal for observing cancellation requests. The system will use this to notify you that the fill result is no longer needed and you should stop handling this fill request in order to save resources. This value cannot be `null`. |
-| `callback` | [FillCallback](https://developer.android.com/reference/kotlin/android/service/autofill/FillCallback): object used to notify the result of the request. This value cannot be `null`. |
+| `request` | [FillRequest](../android/service/autofill/FillRequest.md): the `https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): signal for observing cancellation requests. The system will use this to notify you that the fill result is no longer needed and you should stop handling this fill request in order to save resources. This value cannot be `null`. |
+| `callback` | [FillCallback](../android/service/autofill/FillCallback.md): object used to notify the result of the request. This value cannot be `null`. |
 | --- | --- |
 
 ### onSaveRequest
@@ -3238,8 +3238,8 @@ If the service could not handle the request right away---for example, because it
 
 | Parameters ||
 |---|---|
-| `request` | [SaveRequest](https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest): the `https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
-| `callback` | [SaveCallback](https://developer.android.com/reference/kotlin/android/service/autofill/SaveCallback): object used to notify the result of the request. This value cannot be `null`. |
+| `request` | [SaveRequest](../android/service/autofill/SaveRequest.md): the `https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
+| `callback` | [SaveCallback](../android/service/autofill/SaveCallback.md): object used to notify the result of the request. This value cannot be `null`. |
 
 ### onSavedDatasetsInfoRequest
 
@@ -3255,7 +3255,7 @@ There is no timeout for the request, but it's recommended to return the result w
 
 | Parameters ||
 |---|---|
-| `callback` | [SavedDatasetsInfoCallback](https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback): callback for responding to the request. This value cannot be `null`. |
+| `callback` | [SavedDatasetsInfoCallback](../android/service/autofill/SavedDatasetsInfoCallback.md): callback for responding to the request. This value cannot be `null`. |
 
 ### onSessionDestroyed
 
@@ -3273,4 +3273,4 @@ This will usually happens whenever `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `history` | [FillEventHistory](https://developer.android.com/reference/kotlin/android/service/autofill/FillEventHistory)?: This value may be `null`. |
+| `history` | [FillEventHistory](../android/service/autofill/FillEventHistory.md)?: This value may be `null`. |

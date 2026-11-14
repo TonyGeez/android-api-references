@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CertStoreParameters : Cloneable
 ```
 
-| [java.security.cert.CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters#) |
+| [java.security.cert.CertStoreParameters](../java/security/cert/CertStoreParameters.md) |
 
-| Known Direct Subclasses [CollectionCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters), [LDAPCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/LDAPCertStoreParameters), [URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters) |----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------| | [CollectionCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters) | Parameters used as input for the Collection `CertStore` algorithm. | | [LDAPCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/LDAPCertStoreParameters) | Parameters used as input for the LDAP `CertStore` algorithm. | | [URICertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/URICertStoreParameters) | Parameters used as input for `CertStore` algorithms which use information contained in a URI to retrieve certificates and CRLs. | |
+| Known Direct Subclasses [CollectionCertStoreParameters](../java/security/cert/CollectionCertStoreParameters.md), [LDAPCertStoreParameters](../java/security/cert/LDAPCertStoreParameters.md), [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) |----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------| | [CollectionCertStoreParameters](../java/security/cert/CollectionCertStoreParameters.md) | Parameters used as input for the Collection `CertStore` algorithm. | | [LDAPCertStoreParameters](../java/security/cert/LDAPCertStoreParameters.md) | Parameters used as input for the LDAP `CertStore` algorithm. | | [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) | Parameters used as input for `CertStore` algorithms which use information contained in a URI to retrieve certificates and CRLs. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A specification of `CertStore` parameters.
@@ -23,7 +23,7 @@ Typically, a `CertStoreParameters` object is passed as a parameter to one of the
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters#clone())`()` Makes a copy of this `CertStoreParameters`. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/CertStoreParameters.md))`()` Makes a copy of this `CertStoreParameters`. |
 
 ## Public methods
 

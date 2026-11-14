@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BatteryManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/BatteryManager "View this page in Java") 
+Kotlin| [Java](../android/os/BatteryManager.md) 
 | --- | --- |
 
 ```
@@ -13,83 +13,83 @@ open class BatteryManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.BatteryManager](https://developer.android.com/reference/kotlin/android/os/BatteryManager#) |
+| ↳ | [android.os.BatteryManager](../android/os/BatteryManager.md) |
 
-The BatteryManager class contains strings and constants used for values in the [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String) Intent, and provides a method for querying battery and charging properties.
+The BatteryManager class contains strings and constants used for values in the [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md) Intent, and provides a method for querying battery and charging properties.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_CHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#ACTION_CHARGING:kotlin.String) Sent when the device's battery has started charging (or has reached full charge and the device is on power). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_DISCHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#ACTION_DISCHARGING:kotlin.String) Sent when the device's battery may be discharging, so apps should avoid doing extraneous work that would cause it to discharge faster. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_CRITICAL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_CRITICAL:kotlin.Int) Battery capacity level is critical. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_CHARGING](../android/os/BatteryManager.md) Sent when the device's battery has started charging (or has reached full charge and the device is on power). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_DISCHARGING](../android/os/BatteryManager.md) Sent when the device's battery may be discharging, so apps should avoid doing extraneous work that would cause it to discharge faster. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_CRITICAL](../android/os/BatteryManager.md) Battery capacity level is critical. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_FULL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_FULL:kotlin.Int) Battery capacity level is full. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_HIGH](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_HIGH:kotlin.Int) Battery capacity level is high. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_LOW](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_LOW:kotlin.Int) Battery capacity level is low. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_FULL](../android/os/BatteryManager.md) Battery capacity level is full. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_HIGH](../android/os/BatteryManager.md) Battery capacity level is high. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_LOW](../android/os/BatteryManager.md) Battery capacity level is low. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_NORMAL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_NORMAL:kotlin.Int) Battery capacity level is normal. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_UNKNOWN](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_UNKNOWN:kotlin.Int) Battery capacity level is unknown. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_UNSUPPORTED:kotlin.Int) Battery capacity level is unsupported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_NORMAL](../android/os/BatteryManager.md) Battery capacity level is normal. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_UNKNOWN](../android/os/BatteryManager.md) Battery capacity level is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_CAPACITY_LEVEL_UNSUPPORTED](../android/os/BatteryManager.md) Battery capacity level is unsupported. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_COLD](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_HEALTH_COLD:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_DEAD](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_HEALTH_DEAD:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_GOOD](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_HEALTH_GOOD:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_COLD](../android/os/BatteryManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_DEAD](../android/os/BatteryManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_GOOD](../android/os/BatteryManager.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_OVERHEAT](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_HEALTH_OVERHEAT:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_OVER_VOLTAGE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_HEALTH_OVER_VOLTAGE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_UNKNOWN](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_HEALTH_UNKNOWN:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_OVERHEAT](../android/os/BatteryManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_OVER_VOLTAGE](../android/os/BatteryManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_UNKNOWN](../android/os/BatteryManager.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_UNSPECIFIED_FAILURE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_HEALTH_UNSPECIFIED_FAILURE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_AC](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PLUGGED_AC:kotlin.Int) Power source is an AC charger. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_DOCK](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PLUGGED_DOCK:kotlin.Int) Power source is dock. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_HEALTH_UNSPECIFIED_FAILURE](../android/os/BatteryManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_AC](../android/os/BatteryManager.md) Power source is an AC charger. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_DOCK](../android/os/BatteryManager.md) Power source is dock. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_USB](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PLUGGED_USB:kotlin.Int) Power source is a USB port. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_WIRELESS](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PLUGGED_WIRELESS:kotlin.Int) Power source is wireless. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CAPACITY](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PROPERTY_CAPACITY:kotlin.Int) Remaining battery capacity as an integer percentage of total capacity (with no fractional part). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_USB](../android/os/BatteryManager.md) Power source is a USB port. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PLUGGED_WIRELESS](../android/os/BatteryManager.md) Power source is wireless. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CAPACITY](../android/os/BatteryManager.md) Remaining battery capacity as an integer percentage of total capacity (with no fractional part). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CHARGE_COUNTER](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PROPERTY_CHARGE_COUNTER:kotlin.Int) Battery capacity in microampere-hours, as an integer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CURRENT_AVERAGE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PROPERTY_CURRENT_AVERAGE:kotlin.Int) Average battery current in microamperes, as an integer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CURRENT_NOW](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PROPERTY_CURRENT_NOW:kotlin.Int) Instantaneous battery current in microamperes, as an integer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CHARGE_COUNTER](../android/os/BatteryManager.md) Battery capacity in microampere-hours, as an integer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CURRENT_AVERAGE](../android/os/BatteryManager.md) Average battery current in microamperes, as an integer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_CURRENT_NOW](../android/os/BatteryManager.md) Instantaneous battery current in microamperes, as an integer. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_ENERGY_COUNTER](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PROPERTY_ENERGY_COUNTER:kotlin.Int) Battery remaining energy in nanowatt-hours, as a long integer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_STATUS](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_PROPERTY_STATUS:kotlin.Int) Battery charge status, from a BATTERY_STATUS_\* value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_CHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_STATUS_CHARGING:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_ENERGY_COUNTER](../android/os/BatteryManager.md) Battery remaining energy in nanowatt-hours, as a long integer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_PROPERTY_STATUS](../android/os/BatteryManager.md) Battery charge status, from a BATTERY_STATUS_\* value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_CHARGING](../android/os/BatteryManager.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_DISCHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_STATUS_DISCHARGING:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_FULL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_STATUS_FULL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_NOT_CHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_STATUS_NOT_CHARGING:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_DISCHARGING](../android/os/BatteryManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_FULL](../android/os/BatteryManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_NOT_CHARGING](../android/os/BatteryManager.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_UNKNOWN](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_STATUS_UNKNOWN:kotlin.Int) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_BATTERY_LOW](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_BATTERY_LOW:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Boolean field indicating whether the battery is currently considered to be low, that is whether a [Intent.ACTION_BATTERY_LOW](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_LOW:kotlin.String) broadcast has been sent. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Int value representing the battery's capacity level. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BATTERY_STATUS_UNKNOWN](../android/os/BatteryManager.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_BATTERY_LOW](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Boolean field indicating whether the battery is currently considered to be low, that is whether a [Intent.ACTION_BATTERY_LOW](../android/content/Intent.md) broadcast has been sent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Int value representing the battery's capacity level. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CHARGING_STATUS](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CHARGING_STATUS:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Int value representing the battery charging status. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CYCLE_COUNT](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CYCLE_COUNT:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Int value representing the battery charging cycle count. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_HEALTH](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_HEALTH:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current health constant. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CHARGING_STATUS](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Int value representing the battery charging status. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CYCLE_COUNT](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Int value representing the battery charging cycle count. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_HEALTH](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current health constant. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_ICON_SMALL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_ICON_SMALL:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the resource ID of a small status bar icon indicating the current battery state. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_LEVEL:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer field containing the current battery level, from 0 to [EXTRA_SCALE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_SCALE:kotlin.String). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PLUGGED](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_PLUGGED:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer indicating whether the device is plugged in to a power source; 0 means it is on battery, other constants are different types of power sources. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_ICON_SMALL](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the resource ID of a small status bar icon indicating the current battery state. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_LEVEL](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer field containing the current battery level, from 0 to [EXTRA_SCALE](../android/os/BatteryManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PLUGGED](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer indicating whether the device is plugged in to a power source; 0 means it is on battery, other constants are different types of power sources. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PRESENT](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_PRESENT:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): boolean indicating whether a battery is present. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SCALE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_SCALE:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the maximum battery level. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_STATUS:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current status constant. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PRESENT](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): boolean indicating whether a battery is present. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SCALE](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the maximum battery level. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATUS](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current status constant. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TECHNOLOGY](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_TECHNOLOGY:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): String describing the technology of the current battery. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TEMPERATURE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_TEMPERATURE:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current battery temperature. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_VOLTAGE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_VOLTAGE:kotlin.String) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current battery voltage level. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TECHNOLOGY](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): String describing the technology of the current battery. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TEMPERATURE](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current battery temperature. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_VOLTAGE](../android/os/BatteryManager.md) Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current battery voltage level. |
 | --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [computeChargeTimeRemaining](https://developer.android.com/reference/kotlin/android/os/BatteryManager#computeChargeTimeRemaining())`()` Compute an approximation for how much time (in milliseconds) remains until the battery is fully charged. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntProperty](https://developer.android.com/reference/kotlin/android/os/BatteryManager#getIntProperty(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of a battery property of integer type. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLongProperty](https://developer.android.com/reference/kotlin/android/os/BatteryManager#getLongProperty(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of a battery property of long type If the platform does not provide the property queried, this value will be Long. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [computeChargeTimeRemaining](../android/os/BatteryManager.md))`()` Compute an approximation for how much time (in milliseconds) remains until the battery is fully charged. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntProperty](../android/os/BatteryManager.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of a battery property of integer type. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLongProperty](../android/os/BatteryManager.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of a battery property of long type If the platform does not provide the property queried, this value will be Long. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getStringProperty](https://developer.android.com/reference/kotlin/android/os/BatteryManager#getStringProperty(kotlin.Int))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of a battery property of String type. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCharging](https://developer.android.com/reference/kotlin/android/os/BatteryManager#isCharging())`()` Return true if the battery is currently considered to be charging. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getStringProperty](../android/os/BatteryManager.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of a battery property of String type. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCharging](../android/os/BatteryManager.md))`()` Return true if the battery is currently considered to be charging. |
 
 ## Constants
 
@@ -101,7 +101,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_CHARGING: String
 ```
 
-Sent when the device's battery has started charging (or has reached full charge and the device is on power). This is a good time to do work that you would like to avoid doing while on battery (that is to avoid draining the user's battery due to things they don't care enough about). This is paired with [ACTION_DISCHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#ACTION_DISCHARGING:kotlin.String). The current state can always be retrieved with [isCharging()](https://developer.android.com/reference/kotlin/android/os/BatteryManager#isCharging()). 
+Sent when the device's battery has started charging (or has reached full charge and the device is on power). This is a good time to do work that you would like to avoid doing while on battery (that is to avoid draining the user's battery due to things they don't care enough about). This is paired with [ACTION_DISCHARGING](../android/os/BatteryManager.md). The current state can always be retrieved with [isCharging()](../android/os/BatteryManager.md)). 
 
  Value: "android.os.action.CHARGING"
 
@@ -113,7 +113,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_DISCHARGING: String
 ```
 
-Sent when the device's battery may be discharging, so apps should avoid doing extraneous work that would cause it to discharge faster. This is paired with [ACTION_CHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#ACTION_CHARGING:kotlin.String). The current state can always be retrieved with [isCharging()](https://developer.android.com/reference/kotlin/android/os/BatteryManager#isCharging()). 
+Sent when the device's battery may be discharging, so apps should avoid doing extraneous work that would cause it to discharge faster. This is paired with [ACTION_CHARGING](../android/os/BatteryManager.md). The current state can always be retrieved with [isCharging()](../android/os/BatteryManager.md)). 
 
  Value: "android.os.action.DISCHARGING"
 
@@ -131,7 +131,7 @@ Battery capacity level is critical. The Android framework has been notified to s
 
 **See Also**
 
-- [#EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) 
+- [#EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) 
 
 ### BATTERY_CAPACITY_LEVEL_FULL
 
@@ -147,7 +147,7 @@ Battery capacity level is full. The battery is full, the battery temperature is 
 
 **See Also**
 
-- [#EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) 
+- [#EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) 
 
 ### BATTERY_CAPACITY_LEVEL_HIGH
 
@@ -163,7 +163,7 @@ Battery capacity level is high. Battery level is high, battery temperature is wi
 
 **See Also**
 
-- [#EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) 
+- [#EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) 
 
 ### BATTERY_CAPACITY_LEVEL_LOW
 
@@ -179,7 +179,7 @@ Battery capacity level is low. The Android framework must limit background jobs 
 
 **See Also**
 
-- [#EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) 
+- [#EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) 
 
 ### BATTERY_CAPACITY_LEVEL_NORMAL
 
@@ -195,7 +195,7 @@ Battery capacity level is normal. Battery level and charging rates are normal, b
 
 **See Also**
 
-- [#EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) 
+- [#EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) 
 
 ### BATTERY_CAPACITY_LEVEL_UNKNOWN
 
@@ -211,7 +211,7 @@ Battery capacity level is unknown.
 
 **See Also**
 
-- [#EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) 
+- [#EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) 
 
 ### BATTERY_CAPACITY_LEVEL_UNSUPPORTED
 
@@ -227,7 +227,7 @@ Battery capacity level is unsupported.
 
 **See Also**
 
-- [#EXTRA_CAPACITY_LEVEL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_CAPACITY_LEVEL:kotlin.String) 
+- [#EXTRA_CAPACITY_LEVEL](../android/os/BatteryManager.md) 
 
 ### BATTERY_HEALTH_COLD
 
@@ -477,7 +477,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_BATTERY_LOW: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Boolean field indicating whether the battery is currently considered to be low, that is whether a [Intent.ACTION_BATTERY_LOW](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_LOW:kotlin.String) broadcast has been sent. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Boolean field indicating whether the battery is currently considered to be low, that is whether a [Intent.ACTION_BATTERY_LOW](../android/content/Intent.md) broadcast has been sent. 
 
  Value: "battery_low"
 
@@ -489,19 +489,19 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CAPACITY_LEVEL: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Int value representing the battery's capacity level. These constants are key indicators of battery status and system capabilities, guiding power management decisions for both the system and apps. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Int value representing the battery's capacity level. These constants are key indicators of battery status and system capabilities, guiding power management decisions for both the system and apps. 
 
  Value: "android.os.extra.CAPACITY_LEVEL"
 
 **See Also**
 
-- [#BATTERY_CAPACITY_LEVEL_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_UNSUPPORTED:kotlin.Int)
-- [#BATTERY_CAPACITY_LEVEL_UNKNOWN](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_UNKNOWN:kotlin.Int)
-- [#BATTERY_CAPACITY_LEVEL_CRITICAL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_CRITICAL:kotlin.Int)
-- [#BATTERY_CAPACITY_LEVEL_LOW](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_LOW:kotlin.Int)
-- [#BATTERY_CAPACITY_LEVEL_NORMAL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_NORMAL:kotlin.Int)
-- [#BATTERY_CAPACITY_LEVEL_HIGH](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_HIGH:kotlin.Int)
-- [#BATTERY_CAPACITY_LEVEL_FULL](https://developer.android.com/reference/kotlin/android/os/BatteryManager#BATTERY_CAPACITY_LEVEL_FULL:kotlin.Int) 
+- [#BATTERY_CAPACITY_LEVEL_UNSUPPORTED](../android/os/BatteryManager.md)
+- [#BATTERY_CAPACITY_LEVEL_UNKNOWN](../android/os/BatteryManager.md)
+- [#BATTERY_CAPACITY_LEVEL_CRITICAL](../android/os/BatteryManager.md)
+- [#BATTERY_CAPACITY_LEVEL_LOW](../android/os/BatteryManager.md)
+- [#BATTERY_CAPACITY_LEVEL_NORMAL](../android/os/BatteryManager.md)
+- [#BATTERY_CAPACITY_LEVEL_HIGH](../android/os/BatteryManager.md)
+- [#BATTERY_CAPACITY_LEVEL_FULL](../android/os/BatteryManager.md) 
 
 ### EXTRA_CHARGING_STATUS
 
@@ -511,7 +511,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CHARGING_STATUS: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Int value representing the battery charging status. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Int value representing the battery charging status. 
 
  Value: "android.os.extra.CHARGING_STATUS"
 
@@ -523,7 +523,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CYCLE_COUNT: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): Int value representing the battery charging cycle count. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): Int value representing the battery charging cycle count. 
 
  Value: "android.os.extra.CYCLE_COUNT"
 
@@ -535,7 +535,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_HEALTH: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current health constant. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current health constant. 
 
  Value: "health"
 
@@ -547,7 +547,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_ICON_SMALL: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the resource ID of a small status bar icon indicating the current battery state. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the resource ID of a small status bar icon indicating the current battery state. 
 
  Value: "icon-small"
 
@@ -559,7 +559,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_LEVEL: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer field containing the current battery level, from 0 to [EXTRA_SCALE](https://developer.android.com/reference/kotlin/android/os/BatteryManager#EXTRA_SCALE:kotlin.String). 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer field containing the current battery level, from 0 to [EXTRA_SCALE](../android/os/BatteryManager.md). 
 
  Value: "level"
 
@@ -571,7 +571,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_PLUGGED: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer indicating whether the device is plugged in to a power source; 0 means it is on battery, other constants are different types of power sources. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer indicating whether the device is plugged in to a power source; 0 means it is on battery, other constants are different types of power sources. 
 
  Value: "plugged"
 
@@ -583,7 +583,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_PRESENT: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): boolean indicating whether a battery is present. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): boolean indicating whether a battery is present. 
 
  Value: "present"
 
@@ -595,7 +595,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_SCALE: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the maximum battery level. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the maximum battery level. 
 
  Value: "scale"
 
@@ -607,7 +607,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_STATUS: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current status constant. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current status constant. 
 
  Value: "status"
 
@@ -619,7 +619,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_TECHNOLOGY: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): String describing the technology of the current battery. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): String describing the technology of the current battery. 
 
  Value: "technology"
 
@@ -631,7 +631,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_TEMPERATURE: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current battery temperature. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current battery temperature. 
 
  Value: "temperature"
 
@@ -643,7 +643,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_VOLTAGE: String
 ```
 
-Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String): integer containing the current battery voltage level. 
+Extra for [android.content.Intent#ACTION_BATTERY_CHANGED](../android/content/Intent.md): integer containing the current battery voltage level. 
 
  Value: "voltage"
 
@@ -725,4 +725,4 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun isCharging(): Boolean
 ```
 
-Return true if the battery is currently considered to be charging. This means that the device is plugged in and is supplying sufficient power that the battery level is going up (or the battery is fully charged). Changes in this state are matched by broadcasts of [ACTION_CHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#ACTION_CHARGING:kotlin.String) and [ACTION_DISCHARGING](https://developer.android.com/reference/kotlin/android/os/BatteryManager#ACTION_DISCHARGING:kotlin.String).
+Return true if the battery is currently considered to be charging. This means that the device is plugged in and is supplying sufficient power that the battery level is going up (or the battery is fully charged). Changes in this state are matched by broadcasts of [ACTION_CHARGING](../android/os/BatteryManager.md) and [ACTION_DISCHARGING](../android/os/BatteryManager.md).

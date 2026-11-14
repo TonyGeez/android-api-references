@@ -10,9 +10,9 @@ open class InflaterOutputStream : FilterOutputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
-| | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
-| | | ↳ | [java.util.zip.InflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#) |
+| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) |||
+| | ↳ | [java.io.FilterOutputStream](../java/io/FilterOutputStream.md) ||
+| | | ↳ | [java.util.zip.InflaterOutputStream](../java/util/zip/InflaterOutputStream.md) |
 | --- | --- | --- | --- |
 
 Implements an output stream filter for uncompressing data stored in the "deflate" compression format.
@@ -21,32 +21,32 @@ Implements an output stream filter for uncompressing data stored in the "deflate
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#InflaterOutputStream(java.io.OutputStream))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Creates a new output stream with a default decompressor and buffer size. |
-| [InflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#InflaterOutputStream(java.io.OutputStream,%20java.util.zip.Inflater))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`, `infl:` ` [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)!`)` Creates a new output stream with the specified decompressor and a default buffer size. |
-| [InflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#InflaterOutputStream(java.io.OutputStream,%20java.util.zip.Inflater,%20kotlin.Int))`(`out:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`, `infl:` ` [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)!`, `bufLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new output stream with the specified decompressor and buffer size. |
+| [InflaterOutputStream](../java/util/zip/InflaterOutputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`)` Creates a new output stream with a default decompressor and buffer size. |
+| [InflaterOutputStream](../java/util/zip/InflaterOutputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`, `infl:` ` [Inflater](../java/util/zip/Inflater.md)!`)` Creates a new output stream with the specified decompressor and a default buffer size. |
+| [InflaterOutputStream](../java/util/zip/InflaterOutputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`, `infl:` ` [Inflater](../java/util/zip/Inflater.md)!`, `bufLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new output stream with the specified decompressor and buffer size. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#close())`()` Writes any remaining uncompressed data to the output stream and closes the underlying output stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#finish())`()` Finishes writing uncompressed data to the output stream without closing the underlying stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#flush())`()` Flushes this output stream, forcing any pending buffered output bytes to be written. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/zip/InflaterOutputStream.md))`()` Writes any remaining uncompressed data to the output stream and closes the underlying output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](../java/util/zip/InflaterOutputStream.md))`()` Finishes writing uncompressed data to the output stream without closing the underlying stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../java/util/zip/InflaterOutputStream.md))`()` Flushes this output stream, forcing any pending buffered output bytes to be written. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes to the uncompressed output stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte to the uncompressed output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/util/zip/InflaterOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes to the uncompressed output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/util/zip/InflaterOutputStream.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte to the uncompressed output stream. |
 
 | Inherited functions ||
 |---|---|
-| From class [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [nullOutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#nullOutputStream())`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
-| From class [FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#write(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Writes`b.length`bytes to this output stream. The`write`method of`FilterOutputStream`calls its`write`method of three arguments with the arguments`b`,`0`, and`b.length`. Note that this method does not call the one-argument`write`method of its underlying output stream with the single argument`b`. <br /> | ||
+| From class [OutputStream](../java/io/OutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java/io/OutputStream.md)! | [nullOutputStream](../java/io/OutputStream.md))`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
+| From class [FilterOutputStream](../java/io/FilterOutputStream.md) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/FilterOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Writes`b.length`bytes to this output stream. The`write`method of`FilterOutputStream`calls its`write`method of three arguments with the arguments`b`,`0`, and`b.length`. Note that this method does not call the one-argument`write`method of its underlying output stream with the single argument`b`. <br /> | ||
 
 | Properties ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [buf](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#buf:kotlin.ByteArray) Output buffer for writing uncompressed data. |
-| [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)! | [inf](https://developer.android.com/reference/kotlin/java/util/zip/InflaterOutputStream#inf:java.util.zip.Inflater) Decompressor for this stream. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [buf](../java/util/zip/InflaterOutputStream.md) Output buffer for writing uncompressed data. |
+| [Inflater](../java/util/zip/Inflater.md)! | [inf](../java/util/zip/InflaterOutputStream.md) Decompressor for this stream. |
 
 | Inherited properties ||
 |---|---|
-| From class [FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [out](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#out:java.io.OutputStream) <br /> The underlying output stream to be filtered. <br /> | ||
+| From class [FilterOutputStream](../java/io/FilterOutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java/io/OutputStream.md)! | [out](../java/io/FilterOutputStream.md) <br /> The underlying output stream to be filtered. <br /> | ||
 
 ## Public constructors
 
@@ -62,7 +62,7 @@ Creates a new output stream with a default decompressor and buffer size.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:output stream to write the uncompressed data to |
+| `out` | [OutputStream](../java/io/OutputStream.md)!:output stream to write the uncompressed data to |
 
 | Exceptions ||
 |----------------------------------|----------------|
@@ -82,8 +82,8 @@ Creates a new output stream with the specified decompressor and a default buffer
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:output stream to write the uncompressed data to |
-| `infl` | [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)!:decompressor ("inflater") for this stream |
+| `out` | [OutputStream](../java/io/OutputStream.md)!:output stream to write the uncompressed data to |
+| `infl` | [Inflater](../java/util/zip/Inflater.md)!:decompressor ("inflater") for this stream |
 
 | Exceptions ||
 |----------------------------------|------------------------|
@@ -104,8 +104,8 @@ Creates a new output stream with the specified decompressor and buffer size.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:output stream to write the uncompressed data to |
-| `infl` | [Inflater](https://developer.android.com/reference/kotlin/java/util/zip/Inflater)!:decompressor ("inflater") for this stream |
+| `out` | [OutputStream](../java/io/OutputStream.md)!:output stream to write the uncompressed data to |
+| `infl` | [Inflater](../java/util/zip/Inflater.md)!:decompressor ("inflater") for this stream |
 | `bufLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):decompression buffer size |
 | --- | --- |
 

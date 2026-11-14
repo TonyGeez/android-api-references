@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # AccessibilityManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager "View this page in Java") 
+Kotlin| [Java](../android/view/accessibility/AccessibilityManager.md) 
 | --- | --- |
 
 ```
@@ -13,68 +13,68 @@ class AccessibilityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.accessibility.AccessibilityManager](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#) |
+| ↳ | [android.view.accessibility.AccessibilityManager](../android/view/accessibility/AccessibilityManager.md) |
 
-System level service that serves as an event dispatch for [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent) s, and provides facilities for querying the accessibility state of the system. Accessibility events are generated when something notable happens in the user interface, for example an [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) starts, the focus or selection of a [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) changes etc. Parties interested in handling accessibility events implement and register an accessibility service which extends [android.accessibilityservice.AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#).
+System level service that serves as an event dispatch for [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md) s, and provides facilities for querying the accessibility state of the system. Accessibility events are generated when something notable happens in the user interface, for example an [android.app.Activity](../android/app/Activity.md) starts, the focus or selection of a [android.view.View](../android/view/View.md) changes etc. Parties interested in handling accessibility events implement and register an accessibility service which extends [android.accessibilityservice.AccessibilityService](../android/accessibilityservice/AccessibilityService.md).
 
 ## Summary
 
 | Nested classes ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener) Listener for changes to the state of accessibility services. |
-| abstract | [AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener) Listener for the system accessibility state. |
-| abstract | [AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener) Listener for the audio description by default state. |
+| abstract | [AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md) Listener for changes to the state of accessibility services. |
+| abstract | [AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md) Listener for the system accessibility state. |
+| abstract | [AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md) Listener for the audio description by default state. |
 | --- | --- |
-| abstract | [HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener) Listener for the system high contrast text state. |
-| abstract | [TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener) Listener for the system touch exploration state. |
+| abstract | [HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md) Listener for the system high contrast text state. |
+| abstract | [TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md) Listener for the system touch exploration state. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CONTENT_CONTROLS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_CONTROLS:kotlin.Int) Use this flag to indicate the content of a UI that times out contains interactive controls. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CONTENT_ICONS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_ICONS:kotlin.Int) Use this flag to indicate the content of a UI that times out contains icons. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CONTENT_TEXT](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_TEXT:kotlin.Int) Use this flag to indicate the content of a UI that times out contains text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CONTENT_CONTROLS](../android/view/accessibility/AccessibilityManager.md) Use this flag to indicate the content of a UI that times out contains interactive controls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CONTENT_ICONS](../android/view/accessibility/AccessibilityManager.md) Use this flag to indicate the content of a UI that times out contains icons. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CONTENT_TEXT](../android/view/accessibility/AccessibilityManager.md) Use this flag to indicate the content of a UI that times out contains text. |
 | --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAccessibilityRequestPreparer(android.view.accessibility.AccessibilityRequestPreparer))`(`preparer:` ` [AccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRequestPreparer)!`)` Registers a [AccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRequestPreparer). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAccessibilityServicesStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityServicesStateChangeListener))`(`listener:` ` [AccessibilityManager.AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener)`)` Registers a [AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAccessibilityServicesStateChangeListener(java.util.concurrent.Executor,%20android.view.accessibility.AccessibilityManager.AccessibilityServicesStateChangeListener))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [AccessibilityManager.AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener)`)` Registers a [AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityRequestPreparer](../android/view/accessibility/AccessibilityManager.md))`(`preparer:` ` [AccessibilityRequestPreparer](../android/view/accessibility/AccessibilityRequestPreparer.md)!`)` Registers a [AccessibilityRequestPreparer](../android/view/accessibility/AccessibilityRequestPreparer.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md)`)` Registers a [AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `listener:` ` [AccessibilityManager.AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md)`)` Registers a [AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md). |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener))`(`listener:` ` [AccessibilityManager.AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener)`)` Registers an [AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener) for changes in the global accessibility state of the system. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener,%20android.os.Handler))`(`listener:` ` [AccessibilityManager.AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?`)` Registers an [AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener) for changes in the global accessibility state of the system. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAudioDescriptionRequestedChangeListener(java.util.concurrent.Executor,%20android.view.accessibility.AccessibilityManager.AudioDescriptionRequestedChangeListener))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [AccessibilityManager.AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener)`)` Registers a [AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener) for changes in the audio description by default state of the system. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md)`)` Registers an [AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md) for changes in the global accessibility state of the system. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Registers an [AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md) for changes in the global accessibility state of the system. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `listener:` ` [AccessibilityManager.AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md)`)` Registers a [AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md) for changes in the audio description by default state of the system. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addHighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addHighContrastTextStateChangeListener(java.util.concurrent.Executor,%20android.view.accessibility.AccessibilityManager.HighContrastTextStateChangeListener))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `listener:` ` [AccessibilityManager.HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener)`)` Registers a [HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener) for changes in the global high contrast text state of the system. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addTouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addTouchExplorationStateChangeListener(android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener))`(`listener:` ` [AccessibilityManager.TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener)`)` Registers a [TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener) for changes in the global touch exploration state of the system. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addTouchExplorationStateChangeListener(android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener,%20android.os.Handler))`(`listener:` ` [AccessibilityManager.TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?`)` Registers an [TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener) for changes in the global touch exploration state of the system. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addHighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `listener:` ` [AccessibilityManager.HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md)`)` Registers a [HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md) for changes in the global high contrast text state of the system. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addTouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md)`)` Registers a [TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md) for changes in the global touch exploration state of the system. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Registers an [TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md) for changes in the global touch exploration state of the system. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAccessibilityFocusColor](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getAccessibilityFocusColor())`()` Gets the color of the focus rectangle. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAccessibilityFocusStrokeWidth](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getAccessibilityFocusStrokeWidth())`()` Gets the strokeWidth of the focus rectangle. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)!\>! | [getAccessibilityServiceList](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getAccessibilityServiceList())`()` Returns the [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#) s of the installed accessibility services. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAccessibilityFocusColor](../android/view/accessibility/AccessibilityManager.md))`()` Gets the color of the focus rectangle. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAccessibilityFocusStrokeWidth](../android/view/accessibility/AccessibilityManager.md))`()` Gets the strokeWidth of the focus rectangle. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ServiceInfo](../android/content/pm/ServiceInfo.md)!\>! | [getAccessibilityServiceList](../android/view/accessibility/AccessibilityManager.md))`()` Returns the [ServiceInfo](../android/content/pm/ServiceInfo.md) s of the installed accessibility services. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#)!\>! | [getEnabledAccessibilityServiceList](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getEnabledAccessibilityServiceList(kotlin.Int))`(`feedbackTypeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#) s of the enabled accessibility services for a given feedback type. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#)!\>! | [getInstalledAccessibilityServiceList](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getInstalledAccessibilityServiceList())`()` Returns the [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#) s of the installed accessibility services. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRecommendedTimeoutMillis](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getRecommendedTimeoutMillis(kotlin.Int,%20kotlin.Int))`(`originalTimeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uiContentFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the recommended timeout for changes to the UI needed by this user. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md)!\>! | [getEnabledAccessibilityServiceList](../android/view/accessibility/AccessibilityManager.md))`(`feedbackTypeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md) s of the enabled accessibility services for a given feedback type. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md)!\>! | [getInstalledAccessibilityServiceList](../android/view/accessibility/AccessibilityManager.md))`()` Returns the [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md) s of the installed accessibility services. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRecommendedTimeoutMillis](../android/view/accessibility/AccessibilityManager.md))`(`originalTimeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uiContentFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the recommended timeout for changes to the UI needed by this user. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [interrupt](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#interrupt())`()` Requests feedback interruption from all accessibility services. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAccessibilityButtonSupported](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#isAccessibilityButtonSupported())`()` Determines if the accessibility button within the system navigation area is supported. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAudioDescriptionRequested](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#isAudioDescriptionRequested())`()` Determines if users want to select sound track with audio description by default. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [interrupt](../android/view/accessibility/AccessibilityManager.md))`()` Requests feedback interruption from all accessibility services. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAccessibilityButtonSupported](../android/view/accessibility/AccessibilityManager.md))`()` Determines if the accessibility button within the system navigation area is supported. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAudioDescriptionRequested](../android/view/accessibility/AccessibilityManager.md))`()` Determines if users want to select sound track with audio description by default. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#isEnabled())`()` Returns if the accessibility in the system is enabled. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHighContrastTextEnabled](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#isHighContrastTextEnabled())`()` Returns if high contrast text in the system is enabled. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRequestFromAccessibilityTool](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#isRequestFromAccessibilityTool())`()` Whether the current accessibility request comes from an [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#) with the [AccessibilityServiceInfo.isAccessibilityTool](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#isAccessibilityTool())property set to true. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/view/accessibility/AccessibilityManager.md))`()` Returns if the accessibility in the system is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHighContrastTextEnabled](../android/view/accessibility/AccessibilityManager.md))`()` Returns if high contrast text in the system is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRequestFromAccessibilityTool](../android/view/accessibility/AccessibilityManager.md))`()` Whether the current accessibility request comes from an [AccessibilityService](../android/accessibilityservice/AccessibilityService.md) with the [AccessibilityServiceInfo.isAccessibilityTool](../android/accessibilityservice/AccessibilityServiceInfo.md))property set to true. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTouchExplorationEnabled](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#isTouchExplorationEnabled())`()` Returns if the touch exploration in the system is enabled. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#removeAccessibilityRequestPreparer(android.view.accessibility.AccessibilityRequestPreparer))`(`preparer:` ` [AccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRequestPreparer)!`)` Unregisters a [AccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRequestPreparer). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#removeAccessibilityServicesStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityServicesStateChangeListener))`(`listener:` ` [AccessibilityManager.AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener)`)` Unregisters a [AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTouchExplorationEnabled](../android/view/accessibility/AccessibilityManager.md))`()` Returns if the touch exploration in the system is enabled. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAccessibilityRequestPreparer](../android/view/accessibility/AccessibilityManager.md))`(`preparer:` ` [AccessibilityRequestPreparer](../android/view/accessibility/AccessibilityRequestPreparer.md)!`)` Unregisters a [AccessibilityRequestPreparer](../android/view/accessibility/AccessibilityRequestPreparer.md). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md)`)` Unregisters a [AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md). |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#removeAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener))`(`listener:` ` [AccessibilityManager.AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener)`)` Unregisters an [AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#removeAudioDescriptionRequestedChangeListener(android.view.accessibility.AccessibilityManager.AudioDescriptionRequestedChangeListener))`(`listener:` ` [AccessibilityManager.AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener)`)` Unregisters a [AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeHighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#removeHighContrastTextStateChangeListener(android.view.accessibility.AccessibilityManager.HighContrastTextStateChangeListener))`(`listener:` ` [AccessibilityManager.HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener)`)` Unregisters a [HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md)`)` Unregisters an [AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md)`)` Unregisters a [AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeHighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md)`)` Unregisters a [HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md). |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeTouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#removeTouchExplorationStateChangeListener(android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener))`(`listener:` ` [AccessibilityManager.TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener)`)` Unregisters a [TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendAccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#sendAccessibilityEvent(android.view.accessibility.AccessibilityEvent))`(`event:` ` [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent)!`)` Sends an [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeTouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.md))`(`listener:` ` [AccessibilityManager.TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md)`)` Unregisters a [TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendAccessibilityEvent](../android/view/accessibility/AccessibilityManager.md))`(`event:` ` [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!`)` Sends an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md). |
 
 ## Constants
 
@@ -92,7 +92,7 @@ Use this flag to indicate the content of a UI that times out contains interactiv
 
 **See Also**
 
-- [#getRecommendedTimeoutMillis(int, int)](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getRecommendedTimeoutMillis(kotlin.Int,%20kotlin.Int)) 
+- [#getRecommendedTimeoutMillis(int, int)](../android/view/accessibility/AccessibilityManager.md)) 
 
 ### FLAG_CONTENT_ICONS
 
@@ -108,7 +108,7 @@ Use this flag to indicate the content of a UI that times out contains icons.
 
 **See Also**
 
-- [#getRecommendedTimeoutMillis(int, int)](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getRecommendedTimeoutMillis(kotlin.Int,%20kotlin.Int)) 
+- [#getRecommendedTimeoutMillis(int, int)](../android/view/accessibility/AccessibilityManager.md)) 
 
 ### FLAG_CONTENT_TEXT
 
@@ -124,7 +124,7 @@ Use this flag to indicate the content of a UI that times out contains text.
 
 **See Also**
 
-- [#getRecommendedTimeoutMillis(int, int)](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getRecommendedTimeoutMillis(kotlin.Int,%20kotlin.Int))
+- [#getRecommendedTimeoutMillis(int, int)](../android/view/accessibility/AccessibilityManager.md))
 
 ## Public methods
 
@@ -136,7 +136,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 fun addAccessibilityRequestPreparer(preparer: AccessibilityRequestPreparer!): Unit
 ```
 
-Registers a [AccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRequestPreparer). 
+Registers a [AccessibilityRequestPreparer](../android/view/accessibility/AccessibilityRequestPreparer.md). 
 
 ### addAccessibilityServicesStateChangeListener
 
@@ -146,11 +146,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun addAccessibilityServicesStateChangeListener(listener: AccessibilityManager.AccessibilityServicesStateChangeListener): Unit
 ```
 
-Registers a [AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener). This will execute a callback on the process's main handler.
+Registers a [AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md). This will execute a callback on the process's main handler.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md):The listener. This value cannot be`null`. |
 
 ### addAccessibilityServicesStateChangeListener
 
@@ -163,12 +163,12 @@ fun addAccessibilityServicesStateChangeListener(
 ): Unit
 ```
 
-Registers a [AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener).
+Registers a [AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `listener` | [AccessibilityManager.AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener):The listener. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `listener` | [AccessibilityManager.AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md):The listener. This value cannot be`null`. |
 
 ### addAccessibilityStateChangeListener
 
@@ -178,11 +178,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun addAccessibilityStateChangeListener(listener: AccessibilityManager.AccessibilityStateChangeListener): Boolean
 ```
 
-Registers an [AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener) for changes in the global accessibility state of the system. Equivalent to calling [addAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener,android.os.Handler)](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener,%20android.os.Handler))with a null handler.
+Registers an [AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md) for changes in the global accessibility state of the system. Equivalent to calling [addAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener,android.os.Handler)](../android/view/accessibility/AccessibilityManager.md))with a null handler.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md):The listener. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------|
@@ -199,12 +199,12 @@ fun addAccessibilityStateChangeListener(
 ): Unit
 ```
 
-Registers an [AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener) for changes in the global accessibility state of the system. If the listener has already been registered, the handler used to call it back is updated.
+Registers an [AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md) for changes in the global accessibility state of the system. If the listener has already been registered, the handler used to call it back is updated.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener):The listener. This value cannot be`null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?:The handler on which the listener should be called back, or`null`for a callback on the process's main handler. |
+| `listener` | [AccessibilityManager.AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md):The listener. This value cannot be`null`. |
+| `handler` | [Handler](../android/os/Handler.md)?:The handler on which the listener should be called back, or`null`for a callback on the process's main handler. |
 
 ### addAudioDescriptionRequestedChangeListener
 
@@ -217,12 +217,12 @@ fun addAudioDescriptionRequestedChangeListener(
 ): Unit
 ```
 
-Registers a [AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener) for changes in the audio description by default state of the system. The value could be read via [isAudioDescriptionRequested](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#isAudioDescriptionRequested()).
+Registers a [AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md) for changes in the audio description by default state of the system. The value could be read via [isAudioDescriptionRequested](../android/view/accessibility/AccessibilityManager.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor on which the listener should be called back. This value cannot be`null`. |
-| `listener` | [AccessibilityManager.AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener):The listener. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor on which the listener should be called back. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md):The listener. This value cannot be`null`. |
 
 ### addHighContrastTextStateChangeListener
 
@@ -235,12 +235,12 @@ fun addHighContrastTextStateChangeListener(
 ): Unit
 ```
 
-Registers a [HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener) for changes in the global high contrast text state of the system.
+Registers a [HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md) for changes in the global high contrast text state of the system.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):a executor to call the listener from This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `listener` | [AccessibilityManager.HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener):The listener to be called This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):a executor to call the listener from This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `listener` | [AccessibilityManager.HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md):The listener to be called This value cannot be`null`. |
 
 ### addTouchExplorationStateChangeListener
 
@@ -250,11 +250,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun addTouchExplorationStateChangeListener(listener: AccessibilityManager.TouchExplorationStateChangeListener): Boolean
 ```
 
-Registers a [TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener) for changes in the global touch exploration state of the system. Equivalent to calling [addTouchExplorationStateChangeListener(android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener,android.os.Handler)](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addTouchExplorationStateChangeListener(android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener,%20android.os.Handler))with a null handler.
+Registers a [TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md) for changes in the global touch exploration state of the system. Equivalent to calling [addTouchExplorationStateChangeListener(android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener,android.os.Handler)](../android/view/accessibility/AccessibilityManager.md))with a null handler.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md):The listener. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------|
@@ -271,12 +271,12 @@ fun addTouchExplorationStateChangeListener(
 ): Unit
 ```
 
-Registers an [TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener) for changes in the global touch exploration state of the system. If the listener has already been registered, the handler used to call it back is updated.
+Registers an [TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md) for changes in the global touch exploration state of the system. If the listener has already been registered, the handler used to call it back is updated.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener):The listener. This value cannot be`null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?:The handler on which the listener should be called back, or`null`for a callback on the process's main handler. |
+| `listener` | [AccessibilityManager.TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md):The listener. This value cannot be`null`. |
+| `handler` | [Handler](../android/os/Handler.md)?:The handler on which the listener should be called back, or`null`for a callback on the process's main handler. |
 
 ### getAccessibilityFocusColor
 
@@ -286,7 +286,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getAccessibilityFocusColor(): Int
 ```
 
-Gets the color of the focus rectangle. This value can be set by [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#).
+Gets the color of the focus rectangle. This value can be set by [AccessibilityService](../android/accessibilityservice/AccessibilityService.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------|
@@ -300,7 +300,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getAccessibilityFocusStrokeWidth(): Int
 ```
 
-Gets the strokeWidth of the focus rectangle. This value can be set by [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#).
+Gets the strokeWidth of the focus rectangle. This value can be set by [AccessibilityService](../android/accessibilityservice/AccessibilityService.md).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------|
@@ -315,13 +315,13 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 fun getAccessibilityServiceList(): MutableList<ServiceInfo!>!
 ```
 
-**Deprecated:** *Use [getInstalledAccessibilityServiceList()](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#getInstalledAccessibilityServiceList())*
+**Deprecated:** *Use [getInstalledAccessibilityServiceList()](../android/view/accessibility/AccessibilityManager.md))*
 
-Returns the [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#) s of the installed accessibility services.
+Returns the [ServiceInfo](../android/content/pm/ServiceInfo.md) s of the installed accessibility services.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#)!>! | An unmodifiable list with [ServiceInfo](https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#) s. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ServiceInfo](../android/content/pm/ServiceInfo.md)!>! | An unmodifiable list with [ServiceInfo](../android/content/pm/ServiceInfo.md) s. |
 
 ### getEnabledAccessibilityServiceList
 
@@ -331,7 +331,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun getEnabledAccessibilityServiceList(feedbackTypeFlags: Int): MutableList<AccessibilityServiceInfo!>!
 ```
 
-Returns the [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#) s of the enabled accessibility services for a given feedback type.
+Returns the [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md) s of the enabled accessibility services for a given feedback type.
 
 | Parameters ||
 |---------------------|-----------------------------------------------------------------------------------------------------|
@@ -339,16 +339,16 @@ Returns the [AccessibilityServiceInfo](https://developer.android.com/reference/k
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#)!>! | An unmodifiable list with [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#) s. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md)!>! | An unmodifiable list with [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md) s. |
 
 **See Also**
 
-- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_AUDIBLE](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FEEDBACK_AUDIBLE:kotlin.Int)
-- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_GENERIC](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FEEDBACK_GENERIC:kotlin.Int)
-- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_HAPTIC](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FEEDBACK_HAPTIC:kotlin.Int)
-- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_SPOKEN](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FEEDBACK_SPOKEN:kotlin.Int)
-- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_VISUAL](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FEEDBACK_VISUAL:kotlin.Int)
-- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_BRAILLE](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FEEDBACK_BRAILLE:kotlin.Int) 
+- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_AUDIBLE](../android/accessibilityservice/AccessibilityServiceInfo.md)
+- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_GENERIC](../android/accessibilityservice/AccessibilityServiceInfo.md)
+- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_HAPTIC](../android/accessibilityservice/AccessibilityServiceInfo.md)
+- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_SPOKEN](../android/accessibilityservice/AccessibilityServiceInfo.md)
+- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_VISUAL](../android/accessibilityservice/AccessibilityServiceInfo.md)
+- [android.accessibilityservice.AccessibilityServiceInfo#FEEDBACK_BRAILLE](../android/accessibilityservice/AccessibilityServiceInfo.md) 
 
 ### getInstalledAccessibilityServiceList
 
@@ -358,11 +358,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun getInstalledAccessibilityServiceList(): MutableList<AccessibilityServiceInfo!>!
 ```
 
-Returns the [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#) s of the installed accessibility services.
+Returns the [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md) s of the installed accessibility services.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#)!>! | An unmodifiable list with [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#) s. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md)!>! | An unmodifiable list with [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md) s. |
 
 ### getRecommendedTimeoutMillis
 
@@ -385,7 +385,7 @@ Use the combination of content flags to indicate contents of UI. For example, us
 | Parameters ||
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `originalTimeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The timeout appropriate for users with no accessibility needs. |
-| `uiContentFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The combination of flags [FLAG_CONTENT_ICONS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_ICONS:kotlin.Int), [FLAG_CONTENT_TEXT](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_TEXT:kotlin.Int) or [FLAG_CONTENT_CONTROLS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_CONTROLS:kotlin.Int) to indicate the contents of UI. Value is either`0`or a combination of [android.view.accessibility.AccessibilityManager#FLAG_CONTENT_ICONS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_ICONS:kotlin.Int), [android.view.accessibility.AccessibilityManager#FLAG_CONTENT_TEXT](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_TEXT:kotlin.Int), and [android.view.accessibility.AccessibilityManager#FLAG_CONTENT_CONTROLS](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#FLAG_CONTENT_CONTROLS:kotlin.Int) |
+| `uiContentFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The combination of flags [FLAG_CONTENT_ICONS](../android/view/accessibility/AccessibilityManager.md), [FLAG_CONTENT_TEXT](../android/view/accessibility/AccessibilityManager.md) or [FLAG_CONTENT_CONTROLS](../android/view/accessibility/AccessibilityManager.md) to indicate the contents of UI. Value is either`0`or a combination of [android.view.accessibility.AccessibilityManager#FLAG_CONTENT_ICONS](../android/view/accessibility/AccessibilityManager.md), [android.view.accessibility.AccessibilityManager#FLAG_CONTENT_TEXT](../android/view/accessibility/AccessibilityManager.md), and [android.view.accessibility.AccessibilityManager#FLAG_CONTENT_CONTROLS](../android/view/accessibility/AccessibilityManager.md) |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -429,7 +429,7 @@ Audio description, also referred to as a video description, described video, or 
 
 The method provides the preference value to content provider apps to select the default sound track during playing a video or movie.
 
-Add listener to detect the state change via [addAudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager#addAudioDescriptionRequestedChangeListener(java.util.concurrent.Executor,%20android.view.accessibility.AccessibilityManager.AudioDescriptionRequestedChangeListener))
+Add listener to detect the state change via [addAudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -445,7 +445,7 @@ fun isEnabled(): Boolean
 
 Returns if the accessibility in the system is enabled.
 
-**Note:** This query is used for sending [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent) s, since events are only needed if accessibility is on. Avoid changing UI or app behavior based on the state of accessibility. While well-intentioned, doing this creates brittle, less well-maintained code that works for some users but not others. Shared code leads to more equitable experiences and less technical debt.
+**Note:** This query is used for sending [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md) s, since events are only needed if accessibility is on. Avoid changing UI or app behavior based on the state of accessibility. While well-intentioned, doing this creates brittle, less well-maintained code that works for some users but not others. Shared code leads to more equitable experiences and less technical debt.
 
 For example, if you want to expose a unique interaction with your app, use ViewCompat#addAccessibilityAction in AndroidX to make this interaction - ideally with the same code path used for non-accessibility users - available to accessibility services. Services can then expose this action in the way best fit for their users.
 
@@ -477,11 +477,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun isRequestFromAccessibilityTool(): Boolean
 ```
 
-Whether the current accessibility request comes from an [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#) with the [AccessibilityServiceInfo.isAccessibilityTool](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#isAccessibilityTool())property set to true.
+Whether the current accessibility request comes from an [AccessibilityService](../android/accessibilityservice/AccessibilityService.md) with the [AccessibilityServiceInfo.isAccessibilityTool](../android/accessibilityservice/AccessibilityServiceInfo.md))property set to true.
 
-You can use this method inside [AccessibilityNodeProvider](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider) to decide how to populate your nodes.
+You can use this method inside [AccessibilityNodeProvider](../android/view/accessibility/AccessibilityNodeProvider.md) to decide how to populate your nodes.
 
-**Note:** The return value is valid only when an [AccessibilityNodeInfo](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo) request is in progress, can change from one request to another, and has no meaning when a request is not in progress.
+**Note:** The return value is valid only when an [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md) request is in progress, can change from one request to another, and has no meaning when a request is not in progress.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
@@ -497,7 +497,7 @@ fun isTouchExplorationEnabled(): Boolean
 
 Returns if the touch exploration in the system is enabled.
 
-**Note:** This query is used for dispatching hover events, such as [android.view.MotionEvent#ACTION_HOVER_ENTER](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_HOVER_ENTER:kotlin.Int), to accessibility services to manage touch exploration. Avoid changing UI or app behavior based on the state of accessibility. While well-intentioned, doing this creates brittle, less well-maintained code that works for som users but not others. Shared code leads to more equitable experiences and less technical debt.
+**Note:** This query is used for dispatching hover events, such as [android.view.MotionEvent#ACTION_HOVER_ENTER](../android/view/MotionEvent.md), to accessibility services to manage touch exploration. Avoid changing UI or app behavior based on the state of accessibility. While well-intentioned, doing this creates brittle, less well-maintained code that works for som users but not others. Shared code leads to more equitable experiences and less technical debt.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -511,7 +511,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 fun removeAccessibilityRequestPreparer(preparer: AccessibilityRequestPreparer!): Unit
 ```
 
-Unregisters a [AccessibilityRequestPreparer](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRequestPreparer). 
+Unregisters a [AccessibilityRequestPreparer](../android/view/accessibility/AccessibilityRequestPreparer.md). 
 
 ### removeAccessibilityServicesStateChangeListener
 
@@ -521,11 +521,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun removeAccessibilityServicesStateChangeListener(listener: AccessibilityManager.AccessibilityServicesStateChangeListener): Boolean
 ```
 
-Unregisters a [AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener).
+Unregisters a [AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md).
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.AccessibilityServicesStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.AccessibilityServicesStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md):The listener. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -539,11 +539,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun removeAccessibilityStateChangeListener(listener: AccessibilityManager.AccessibilityStateChangeListener): Boolean
 ```
 
-Unregisters an [AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener).
+Unregisters an [AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md):The listener. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -557,11 +557,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun removeAudioDescriptionRequestedChangeListener(listener: AccessibilityManager.AudioDescriptionRequestedChangeListener): Boolean
 ```
 
-Unregisters a [AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener).
+Unregisters a [AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.AudioDescriptionRequestedChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md):The listener. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|
@@ -575,11 +575,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun removeHighContrastTextStateChangeListener(listener: AccessibilityManager.HighContrastTextStateChangeListener): Unit
 ```
 
-Unregisters a [HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener).
+Unregisters a [HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.HighContrastTextStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md):The listener. This value cannot be`null`. |
 
 ### removeTouchExplorationStateChangeListener
 
@@ -589,11 +589,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun removeTouchExplorationStateChangeListener(listener: AccessibilityManager.TouchExplorationStateChangeListener): Boolean
 ```
 
-Unregisters a [TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener).
+Unregisters a [TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AccessibilityManager.TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener):The listener. This value cannot be`null`. |
+| `listener` | [AccessibilityManager.TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md):The listener. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|
@@ -607,12 +607,12 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 fun sendAccessibilityEvent(event: AccessibilityEvent!): Unit
 ```
 
-Sends an [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent).
+Sends an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md).
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent)!:The event to send. |
+| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!:The event to send. |
 
 | Exceptions ||
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if accessibility is not enabled.**Note:** The preferred mechanism for sending custom accessibility events is through calling [android.view.ViewParent#requestSendAccessibilityEvent(View, AccessibilityEvent)](https://developer.android.com/reference/kotlin/android/view/ViewParent.html#requestSendAccessibilityEvent(android.view.View,%20android.view.accessibility.AccessibilityEvent))instead of this method to allow predecessors to augment/filter events sent by their descendants. |
+| `java.lang.IllegalStateException` | if accessibility is not enabled.**Note:** The preferred mechanism for sending custom accessibility events is through calling [android.view.ViewParent#requestSendAccessibilityEvent(View, AccessibilityEvent)](../android/view/ViewParent.md))instead of this method to allow predecessors to augment/filter events sent by their descendants. |

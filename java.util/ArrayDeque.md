@@ -10,18 +10,18 @@ open class ArrayDeque<E : Any!> : AbstractCollection<E>, Cloneable, Deque<E>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection)\<E\> ||
-| | ↳ | [java.util.ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#) |
+| ↳ | [java.util.AbstractCollection](../java/util/AbstractCollection.md)\<E\> ||
+| | ↳ | [java.util.ArrayDeque](../java/util/ArrayDeque.md) |
 
-Resizable-array implementation of the [Deque](https://developer.android.com/reference/kotlin/java/util/Deque) interface. Array deques have no capacity restrictions; they grow as necessary to support usage. They are not thread-safe; in the absence of external synchronization, they do not support concurrent access by multiple threads. Null elements are prohibited. This class is likely to be faster than [Stack](https://developer.android.com/reference/kotlin/java/util/Stack) when used as a stack, and faster than [LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList) when used as a queue.
+Resizable-array implementation of the [Deque](../java/util/Deque.md) interface. Array deques have no capacity restrictions; they grow as necessary to support usage. They are not thread-safe; in the absence of external synchronization, they do not support concurrent access by multiple threads. Null elements are prohibited. This class is likely to be faster than [Stack](../java/util/Stack.md) when used as a stack, and faster than [LinkedList](../java/util/LinkedList.md) when used as a queue.
 
-Most`ArrayDeque`operations run in amortized constant time. Exceptions include #remove(java.lang.Object), [removeFirstOccurrence](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeFirstOccurrence(kotlin.Any)), [removeLastOccurrence](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeLastOccurrence(kotlin.Any)), #contains, #iterator, and the bulk operations, all of which run in linear time.
+Most`ArrayDeque`operations run in amortized constant time. Exceptions include #remove(java.lang.Object), [removeFirstOccurrence](../java/util/ArrayDeque.md)), [removeLastOccurrence](../java/util/ArrayDeque.md)), #contains, #iterator, and the bulk operations, all of which run in linear time.
 
-The iterators returned by this class's #iterator() method are*fail-fast* : If the deque is modified at any time after the iterator is created, in any way except through the iterator's own`remove`method, the iterator will generally throw a [ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
+The iterators returned by this class's #iterator() method are*fail-fast* : If the deque is modified at any time after the iterator is created, in any way except through the iterator's own`remove`method, the iterator will generally throw a [ConcurrentModificationException](../java/util/ConcurrentModificationException.md). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
 
 Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. Fail-fast iterators throw`ConcurrentModificationException`on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness:*the fail-fast behavior of iterators should be used only to detect bugs.*
 
-This class and its iterator implement all of the*optional* methods of the [Collection](https://developer.android.com/reference/kotlin/java/util/Collection), [SequencedCollection](https://developer.android.com/reference/kotlin/java/util/SequencedCollection), and [Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator) interfaces.
+This class and its iterator implement all of the*optional* methods of the [Collection](../java/util/Collection.md), [SequencedCollection](../java/util/SequencedCollection.md), and [Iterator](../java/util/Iterator.md) interfaces.
 
 This class is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
 
@@ -29,70 +29,70 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#ArrayDeque())`()` Constructs an empty array deque with an initial capacity sufficient to hold 16 elements. |
-| [ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#ArrayDeque(kotlin.Int))`(`numElements:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an empty array deque with an initial capacity sufficient to hold the specified number of elements. |
-| [ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#ArrayDeque(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>`)` Constructs a deque containing the elements of the specified collection, in the order they are returned by the collection's iterator. |
+| [ArrayDeque](../java/util/ArrayDeque.md))`()` Constructs an empty array deque with an initial capacity sufficient to hold 16 elements. |
+| [ArrayDeque](../java/util/ArrayDeque.md))`(`numElements:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an empty array deque with an initial capacity sufficient to hold the specified number of elements. |
+| [ArrayDeque](../java/util/ArrayDeque.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>`)` Constructs a deque containing the elements of the specified collection, in the order they are returned by the collection's iterator. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#add(java.util.ArrayDeque.E))`(`element:` `E`)` Inserts the specified element at the end of this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection at the end of this deque, as if by calling #addLast on each one, in the order that they are returned by the collection's iterator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#addFirst(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the front of this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../java/util/ArrayDeque.md))`(`element:` `E`)` Inserts the specified element at the end of this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/ArrayDeque.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection at the end of this deque, as if by calling #addLast on each one, in the order that they are returned by the collection's iterator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](../java/util/ArrayDeque.md))`(`e:` `E`)` Inserts the specified element at the front of this deque. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#addLast(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#clear())`()` Removes all of the elements from this deque. |
-| open [ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#)\<E\> | [clone](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#clone())`()` Returns a copy of this deque. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](../java/util/ArrayDeque.md))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/ArrayDeque.md))`()` Removes all of the elements from this deque. |
+| open [ArrayDeque](../java/util/ArrayDeque.md)\<E\> | [clone](../java/util/ArrayDeque.md))`()` Returns a copy of this deque. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#contains(java.util.ArrayDeque.E))`(`element:` `E?`)` Returns`true`if this deque contains the specified element. |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [descendingIterator](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#descendingIterator())`()` <br /> |
-| openE | [element](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#element())`()` Retrieves, but does not remove, the head of the queue represented by this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/ArrayDeque.md))`(`element:` `E?`)` Returns`true`if this deque contains the specified element. |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [descendingIterator](../java/util/ArrayDeque.md))`()` <br /> |
+| openE | [element](../java/util/ArrayDeque.md))`()` Retrieves, but does not remove, the head of the queue represented by this deque. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#forEach(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)<in` `E>`)` <br /> |
-| openE | [getFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#getFirst())`()` <br /> |
-| openE | [getLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#getLast())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/ArrayDeque.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `E>`)` <br /> |
+| openE | [getFirst](../java/util/ArrayDeque.md))`()` <br /> |
+| openE | [getLast](../java/util/ArrayDeque.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#isEmpty())`()` Returns`true`if this deque contains no elements. |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#iterator())`()` Returns an iterator over the elements in this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#offer(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/ArrayDeque.md))`()` Returns`true`if this deque contains no elements. |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](../java/util/ArrayDeque.md))`()` Returns an iterator over the elements in this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offer](../java/util/ArrayDeque.md))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#offerFirst(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the front of this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#offerLast(java.util.ArrayDeque.E))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
-| openE? | [peek](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#peek())`()` Retrieves, but does not remove, the head of the queue represented by this deque, or returns`null`if this deque is empty. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerFirst](../java/util/ArrayDeque.md))`(`e:` `E`)` Inserts the specified element at the front of this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [offerLast](../java/util/ArrayDeque.md))`(`e:` `E`)` Inserts the specified element at the end of this deque. |
+| openE? | [peek](../java/util/ArrayDeque.md))`()` Retrieves, but does not remove, the head of the queue represented by this deque, or returns`null`if this deque is empty. |
 | --- | --- |
-| openE? | [peekFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#peekFirst())`()` <br /> |
-| openE? | [peekLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#peekLast())`()` <br /> |
-| openE? | [poll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#poll())`()` Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns`null`if this deque is empty. |
+| openE? | [peekFirst](../java/util/ArrayDeque.md))`()` <br /> |
+| openE? | [peekLast](../java/util/ArrayDeque.md))`()` <br /> |
+| openE? | [poll](../java/util/ArrayDeque.md))`()` Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns`null`if this deque is empty. |
 | --- | --- |
-| openE? | [pollFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pollFirst())`()` <br /> |
-| openE? | [pollLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pollLast())`()` <br /> |
-| openE | [pop](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pop())`()` Pops an element from the stack represented by this deque. |
+| openE? | [pollFirst](../java/util/ArrayDeque.md))`()` <br /> |
+| openE? | [pollLast](../java/util/ArrayDeque.md))`()` <br /> |
+| openE | [pop](../java/util/ArrayDeque.md))`()` Pops an element from the stack represented by this deque. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#push(java.util.ArrayDeque.E))`(`e:` `E`)` Pushes an element onto the stack represented by this deque. |
-| openE | [remove](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#remove())`()` Retrieves and removes the head of the queue represented by this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#remove(java.util.ArrayDeque.E))`(`element:` `E?`)` Removes a single instance of the specified element from this deque. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](../java/util/ArrayDeque.md))`(`e:` `E`)` Pushes an element onto the stack represented by this deque. |
+| openE | [remove](../java/util/ArrayDeque.md))`()` Retrieves and removes the head of the queue represented by this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/ArrayDeque.md))`(`element:` `E?`)` Removes a single instance of the specified element from this deque. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
-| openE | [removeFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeFirst())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeFirstOccurrence](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeFirstOccurrence(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the first occurrence of the specified element in this deque (when traversing the deque from head to tail). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../java/util/ArrayDeque.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
+| openE | [removeFirst](../java/util/ArrayDeque.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeFirstOccurrence](../java/util/ArrayDeque.md))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the first occurrence of the specified element in this deque (when traversing the deque from head to tail). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeIf(java.util.function.Predicate))`(`filter:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)<in` `E>`)` <br /> |
-| openE | [removeLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeLast())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeLastOccurrence](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeLastOccurrence(kotlin.Any))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the last occurrence of the specified element in this deque (when traversing the deque from head to tail). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](../java/util/ArrayDeque.md))`(`filter:` ` [Predicate](../java/util/function/Predicate.md)<in` `E>`)` <br /> |
+| openE | [removeLast](../java/util/ArrayDeque.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeLastOccurrence](../java/util/ArrayDeque.md))`(`o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Removes the last occurrence of the specified element in this deque (when traversing the deque from head to tail). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
-| open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#spliterator())`()` Creates a* [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* and*fail-fast* [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) over the elements in this deque. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#toArray())`()` Returns an array containing all of the elements in this deque in proper sequence (from first to last element). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](../java/util/ArrayDeque.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> |
+| open [Spliterator](../java/util/Spliterator.md)\<E\> | [spliterator](../java/util/ArrayDeque.md))`()` Creates a* [late-binding](../java/util/Spliterator.md)* and*fail-fast* [Spliterator](../java/util/Spliterator.md) over the elements in this deque. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](../java/util/ArrayDeque.md))`()` Returns an array containing all of the elements in this deque in proper sequence (from first to last element). |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this deque in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](../java/util/ArrayDeque.md))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this deque in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
 
 | Inherited functions ||
 |---|---|
-| From class [AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#containsAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Returns`true`if this collection contains all of the elements in the specified collection. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/AbstractCollection#toString())`()` <br /> Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters`", "`(comma and space). Elements are converted to strings as by [String.valueOf(Object)](https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)). <br /> | ||
-| From class [Deque](https://developer.android.com/reference/kotlin/java/util/Deque) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Deque](https://developer.android.com/reference/kotlin/java/util/Deque)<E> | [reversed](https://developer.android.com/reference/kotlin/java/util/Deque#reversed())`()` <br /> Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation. <br /> | ||
+| From class [AbstractCollection](../java/util/AbstractCollection.md) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` <br /> Returns`true`if this collection contains all of the elements in the specified collection. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/AbstractCollection.md))`()` <br /> Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters`", "`(comma and space). Elements are converted to strings as by [String.valueOf(Object)](../java/lang/String.md)). <br /> | ||
+| From class [Deque](../java/util/Deque.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Deque](../java/util/Deque.md)<E> | [reversed](../java/util/Deque.md))`()` <br /> Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation. <br /> | ||
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#size:kotlin.Int) Returns the number of elements in this deque. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/ArrayDeque.md) Returns the number of elements in this deque. |
 
 ## Public constructors
 
@@ -158,7 +158,7 @@ This method is equivalent to #addLast.
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Collection.add](https://developer.android.com/reference/kotlin/java/util/Collection#add(java.util.Collection.E))) |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Collection.add](../java/util/Collection.md))) |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------|
@@ -270,7 +270,7 @@ Returns a copy of this deque.
 
 | Return ||
 |---------------------------------------------------------------------------------------|----------------------|
-| [ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#)<E> | a copy of this deque |
+| [ArrayDeque](../java/util/ArrayDeque.md)<E> | a copy of this deque |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -341,7 +341,7 @@ open fun forEach(action: Consumer<in E>): Unit
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)\<inE\>:The action to be performed for each element |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inE\>:The action to be performed for each element |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -401,7 +401,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open fun iterator(): MutableIterator<E>
 ```
 
-Returns an iterator over the elements in this deque. The elements will be ordered from first (head) to last (tail). This is the same order that elements would be dequeued (via successive calls to #remove or popped (via successive calls to [pop](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pop())).
+Returns an iterator over the elements in this deque. The elements will be ordered from first (head) to last (tail). This is the same order that elements would be dequeued (via successive calls to #remove or popped (via successive calls to [pop](../java/util/ArrayDeque.md))).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
@@ -417,7 +417,7 @@ open fun offer(e: E): Boolean
 
 Inserts the specified element at the end of this deque.
 
-This method is equivalent to [offerLast](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#offerLast(java.util.ArrayDeque.E)).
+This method is equivalent to [offerLast](../java/util/ArrayDeque.md)).
 
 | Parameters ||
 |-----|----------------------|
@@ -425,7 +425,7 @@ This method is equivalent to [offerLast](https://developer.android.com/reference
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Queue.offer](https://developer.android.com/reference/kotlin/java/util/Queue#offer(java.util.Queue.E))) |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Queue.offer](../java/util/Queue.md))) |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------|
@@ -450,7 +450,7 @@ Inserts the specified element at the front of this deque.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Deque.offerFirst](https://developer.android.com/reference/kotlin/java/util/Deque#offerFirst(java.util.Deque.E))) |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Deque.offerFirst](../java/util/Deque.md))) |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------|
@@ -475,7 +475,7 @@ Inserts the specified element at the end of this deque.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Deque.offerLast](https://developer.android.com/reference/kotlin/java/util/Deque#offerLast(java.util.Deque.E))) |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`(as specified by [Deque.offerLast](../java/util/Deque.md))) |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------|
@@ -494,7 +494,7 @@ open fun peek(): E?
 
 Retrieves, but does not remove, the head of the queue represented by this deque, or returns`null`if this deque is empty.
 
-This method is equivalent to [peekFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#peekFirst()).
+This method is equivalent to [peekFirst](../java/util/ArrayDeque.md)).
 
 | Return ||
 |----|---------------------------------------------------------------------------------|
@@ -534,7 +534,7 @@ open fun poll(): E?
 
 Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns`null`if this deque is empty.
 
-This method is equivalent to [pollFirst](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#pollFirst()).
+This method is equivalent to [pollFirst](../java/util/ArrayDeque.md)).
 
 | Return ||
 |----|---------------------------------------------------------------------------------|
@@ -638,7 +638,7 @@ open fun remove(element: E?): Boolean
 
 Removes a single instance of the specified element from this deque. If the deque does not contain the element, it is unchanged. More formally, removes the first element`e`such that`o.equals(e)`(if such an element exists). Returns`true`if this deque contained the specified element (or equivalently, if this deque changed as a result of the call).
 
-This method is equivalent to [removeFirstOccurrence(java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#removeFirstOccurrence(kotlin.Any)).
+This method is equivalent to [removeFirstOccurrence(java.lang.Object)](../java/util/ArrayDeque.md)).
 
 | Parameters ||
 |-----|---------------------------------------------------|
@@ -728,7 +728,7 @@ open fun removeIf(filter: Predicate<in E>): Boolean
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `filter` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate)\<inE\>:a predicate which returns`true`for elements to be removed |
+| `filter` | [Predicate](../java/util/function/Predicate.md)\<inE\>:a predicate which returns`true`for elements to be removed |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|
@@ -810,13 +810,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun spliterator(): Spliterator<E>
 ```
 
-Creates a* [late-binding](https://developer.android.com/reference/kotlin/java/util/Spliterator#binding)* and*fail-fast* [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) over the elements in this deque.
+Creates a* [late-binding](../java/util/Spliterator.md)* and*fail-fast* [Spliterator](../java/util/Spliterator.md) over the elements in this deque.
 
-The`Spliterator`reports [Spliterator.SIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SIZED:kotlin.Int), [Spliterator.SUBSIZED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SUBSIZED:kotlin.Int), [Spliterator.ORDERED](https://developer.android.com/reference/kotlin/java/util/Spliterator#ORDERED:kotlin.Int), and [Spliterator.NONNULL](https://developer.android.com/reference/kotlin/java/util/Spliterator#NONNULL:kotlin.Int). Overriding implementations should document the reporting of additional characteristic values.
+The`Spliterator`reports [Spliterator.SIZED](../java/util/Spliterator.md), [Spliterator.SUBSIZED](../java/util/Spliterator.md), [Spliterator.ORDERED](../java/util/Spliterator.md), and [Spliterator.NONNULL](../java/util/Spliterator.md). Overriding implementations should document the reporting of additional characteristic values.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<E> | a`Spliterator`over the elements in this deque |
+| [Spliterator](../java/util/Spliterator.md)<E> | a`Spliterator`over the elements in this deque |
 
 ### toArray
 
@@ -848,7 +848,7 @@ Returns an array containing all of the elements in this deque in proper sequence
 
 If this deque fits in the specified array with room to spare (i.e., the array has more elements than this deque), the element in the array immediately following the end of the deque is set to`null`.
 
-Like the [toArray()](https://developer.android.com/reference/kotlin/java/util/ArrayDeque#toArray())method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
+Like the [toArray()](../java/util/ArrayDeque.md))method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
 
 Suppose`x`is a deque known to contain only strings. The following code can be used to dump the deque into a newly allocated array of`String`: 
 

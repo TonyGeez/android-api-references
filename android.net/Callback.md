@@ -2,14 +2,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # Callback
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/DnsResolver.Callback "View this page in Java")
+Kotlin | [Java](../android/net/DnsResolver.Callback.md)
 | --- | --- |
 
 ```
 interface Callback<T : Any!>
 ```
 
-| [android.net.DnsResolver.Callback](https://developer.android.com/reference/kotlin/android/net/DnsResolver.Callback#) |
+| [android.net.DnsResolver.Callback](../android/net/DnsResolver.Callback.md) |
 
 Base interface for answer callbacks
 
@@ -54,4 +54,4 @@ Error response to android.net.DnsResolver#query or android.net.DnsResolver#rawQu
 
 | Parameters ||
 |---|---|
-| `error` | [DnsResolver.DnsException](https://developer.android.com/reference/kotlin/android/net/DnsResolver.DnsException): a `https://developer.android.com/reference/kotlin/android/net/DnsResolver.DnsException` object with additional detail regarding the failure. This value cannot be `null`. |
+| `error` | [DnsResolver.DnsException](../android/net/DnsResolver.DnsException.md): a `https://developer.android.com/reference/kotlin/android/net/DnsResolver.DnsException` object with additional detail regarding the failure. This value cannot be `null`. |

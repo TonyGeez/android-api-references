@@ -10,9 +10,9 @@ open class CipherOutputStream : FilterOutputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||
-| | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||
-| | | ↳ | [javax.crypto.CipherOutputStream](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#) |
+| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) |||
+| | ↳ | [java.io.FilterOutputStream](../java/io/FilterOutputStream.md) ||
+| | | ↳ | [javax.crypto.CipherOutputStream](../javax/crypto/CipherOutputStream.md) |
 | --- | --- | --- | --- |
 
 A CipherOutputStream is composed of an OutputStream and a Cipher so that write() methods first process the data before writing them out to the underlying OutputStream. The cipher must be fully initialized before being used by a CipherOutputStream.
@@ -27,28 +27,28 @@ It is crucial for a programmer using this class not to use methods that are not 
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CipherOutputStream](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#CipherOutputStream(java.io.OutputStream,%20javax.crypto.Cipher))`(`os:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`, `c:` ` [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!`)` Constructs a CipherOutputStream from an OutputStream and a Cipher. |
+| [CipherOutputStream](../javax/crypto/CipherOutputStream.md))`(`os:` ` [OutputStream](../java/io/OutputStream.md)!`, `c:` ` [Cipher](../javax/crypto/Cipher.md)!`)` Constructs a CipherOutputStream from an OutputStream and a Cipher. |
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CipherOutputStream](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#CipherOutputStream(java.io.OutputStream))`(`os:` ` [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!`)` Constructs a CipherOutputStream from an OutputStream without specifying a Cipher. |
+| [CipherOutputStream](../javax/crypto/CipherOutputStream.md))`(`os:` ` [OutputStream](../java/io/OutputStream.md)!`)` Constructs a CipherOutputStream from an OutputStream without specifying a Cipher. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#close())`()` Closes this output stream and releases any system resources associated with this stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#flush())`()` Flushes this output stream by forcing any buffered output bytes that have already been processed by the encapsulated cipher object to be written out. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#write(kotlin.ByteArray))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes`b.length`bytes from the specified byte array to this output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../javax/crypto/CipherOutputStream.md))`()` Closes this output stream and releases any system resources associated with this stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../javax/crypto/CipherOutputStream.md))`()` Flushes this output stream by forcing any buffered output bytes that have already been processed by the encapsulated cipher object to be written out. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../javax/crypto/CipherOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes`b.length`bytes from the specified byte array to this output stream. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`bytes from the specified byte array starting at offset`off`to this output stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](https://developer.android.com/reference/kotlin/javax/crypto/CipherOutputStream#write(kotlin.Int))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the specified byte to this output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../javax/crypto/CipherOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes`len`bytes from the specified byte array starting at offset`off`to this output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../javax/crypto/CipherOutputStream.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the specified byte to this output stream. |
 
 | Inherited functions ||
 |---|---|
-| From class [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [nullOutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#nullOutputStream())`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
+| From class [OutputStream](../java/io/OutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java/io/OutputStream.md)! | [nullOutputStream](../java/io/OutputStream.md))`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [out](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#out:java.io.OutputStream) <br /> The underlying output stream to be filtered. <br /> | ||
+| From class [FilterOutputStream](../java/io/FilterOutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java/io/OutputStream.md)! | [out](../java/io/FilterOutputStream.md) <br /> The underlying output stream to be filtered. <br /> | ||
 
 ## Public constructors
 
@@ -67,8 +67,8 @@ Note: if the specified output stream or cipher is null, a NullPointerException m
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------|
-| `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:the OutputStream object |
-| `c` | [Cipher](https://developer.android.com/reference/kotlin/javax/crypto/Cipher)!:an initialized Cipher object |
+| `os` | [OutputStream](../java/io/OutputStream.md)!:the OutputStream object |
+| `c` | [Cipher](../javax/crypto/Cipher.md)!:an initialized Cipher object |
 
 ## Protected constructors
 
@@ -85,7 +85,7 @@ Note: if the specified output stream is null, a NullPointerException may be thro
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------|
-| `os` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!:the OutputStream object |
+| `os` | [OutputStream](../java/io/OutputStream.md)!:the OutputStream object |
 
 ## Public methods
 

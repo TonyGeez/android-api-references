@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ObjectStreamConstants
 ```
 
-| [java.io.ObjectStreamConstants](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#) |
+| [java.io.ObjectStreamConstants](../java/io/ObjectStreamConstants.md) |
 
-| Known Direct Subclasses [ObjectInputStream](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream), [ObjectOutputStream](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream) |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [ObjectInputStream](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream) | An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream. | | [ObjectOutputStream](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream) | An ObjectOutputStream writes primitive data types and graphs of Java objects to an OutputStream. | |
+| Known Direct Subclasses [ObjectInputStream](../java/io/ObjectInputStream.md), [ObjectOutputStream](../java/io/ObjectOutputStream.md) |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [ObjectInputStream](../java/io/ObjectInputStream.md) | An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream. | | [ObjectOutputStream](../java/io/ObjectOutputStream.md) | An ObjectOutputStream writes primitive data types and graphs of Java objects to an OutputStream. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Constants written into the Object Serialization Stream.
@@ -19,47 +19,47 @@ Constants written into the Object Serialization Stream.
 
 | Constants ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_1](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#PROTOCOL_VERSION_1:kotlin.Int) A Stream Protocol Version. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_2](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#PROTOCOL_VERSION_2:kotlin.Int) A Stream Protocol Version. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_BLOCK_DATA](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SC_BLOCK_DATA:kotlin.Byte) Bit mask for ObjectStreamClass flag. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_1](../java/io/ObjectStreamConstants.md) A Stream Protocol Version. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_2](../java/io/ObjectStreamConstants.md) A Stream Protocol Version. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_BLOCK_DATA](../java/io/ObjectStreamConstants.md) Bit mask for ObjectStreamClass flag. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_ENUM](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SC_ENUM:kotlin.Byte) Bit mask for ObjectStreamClass flag. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_EXTERNALIZABLE](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SC_EXTERNALIZABLE:kotlin.Byte) Bit mask for ObjectStreamClass flag. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_SERIALIZABLE](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SC_SERIALIZABLE:kotlin.Byte) Bit mask for ObjectStreamClass flag. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_ENUM](../java/io/ObjectStreamConstants.md) Bit mask for ObjectStreamClass flag. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_EXTERNALIZABLE](../java/io/ObjectStreamConstants.md) Bit mask for ObjectStreamClass flag. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_SERIALIZABLE](../java/io/ObjectStreamConstants.md) Bit mask for ObjectStreamClass flag. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_WRITE_METHOD](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SC_WRITE_METHOD:kotlin.Byte) Bit mask for ObjectStreamClass flag. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_MAGIC](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#STREAM_MAGIC:kotlin.Short) Magic number that is written to the stream header. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_VERSION](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#STREAM_VERSION:kotlin.Short) Version number that is written to the stream header. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_WRITE_METHOD](../java/io/ObjectStreamConstants.md) Bit mask for ObjectStreamClass flag. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_MAGIC](../java/io/ObjectStreamConstants.md) Magic number that is written to the stream header. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_VERSION](../java/io/ObjectStreamConstants.md) Version number that is written to the stream header. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ARRAY](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_ARRAY:kotlin.Byte) new Array. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BASE](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_BASE:kotlin.Byte) First tag value. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATA](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_BLOCKDATA:kotlin.Byte) Block of optional data. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ARRAY](../java/io/ObjectStreamConstants.md) new Array. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BASE](../java/io/ObjectStreamConstants.md) First tag value. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATA](../java/io/ObjectStreamConstants.md) Block of optional data. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATALONG](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_BLOCKDATALONG:kotlin.Byte) long Block data. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASS](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_CLASS:kotlin.Byte) Reference to Class. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASSDESC](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_CLASSDESC:kotlin.Byte) new Class Descriptor. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATALONG](../java/io/ObjectStreamConstants.md) long Block data. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASS](../java/io/ObjectStreamConstants.md) Reference to Class. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASSDESC](../java/io/ObjectStreamConstants.md) new Class Descriptor. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENDBLOCKDATA](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_ENDBLOCKDATA:kotlin.Byte) End of optional block data blocks for an object. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENUM](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_ENUM:kotlin.Byte) new Enum constant. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_EXCEPTION](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_EXCEPTION:kotlin.Byte) Exception during write. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENDBLOCKDATA](../java/io/ObjectStreamConstants.md) End of optional block data blocks for an object. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENUM](../java/io/ObjectStreamConstants.md) new Enum constant. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_EXCEPTION](../java/io/ObjectStreamConstants.md) Exception during write. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_LONGSTRING](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_LONGSTRING:kotlin.Byte) Long string. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_MAX](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_MAX:kotlin.Byte) Last tag value. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_NULL](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_NULL:kotlin.Byte) Null object reference. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_LONGSTRING](../java/io/ObjectStreamConstants.md) Long string. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_MAX](../java/io/ObjectStreamConstants.md) Last tag value. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_NULL](../java/io/ObjectStreamConstants.md) Null object reference. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_OBJECT](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_OBJECT:kotlin.Byte) new Object. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_PROXYCLASSDESC](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_PROXYCLASSDESC:kotlin.Byte) new Proxy Class Descriptor. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_REFERENCE](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_REFERENCE:kotlin.Byte) Reference to an object already written into the stream. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_OBJECT](../java/io/ObjectStreamConstants.md) new Object. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_PROXYCLASSDESC](../java/io/ObjectStreamConstants.md) new Proxy Class Descriptor. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_REFERENCE](../java/io/ObjectStreamConstants.md) Reference to an object already written into the stream. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_RESET](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_RESET:kotlin.Byte) Reset stream context. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_STRING](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#TC_STRING:kotlin.Byte) new String. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [baseWireHandle](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#baseWireHandle:kotlin.Int) First wire handle to be assigned. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_RESET](../java/io/ObjectStreamConstants.md) Reset stream context. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_STRING](../java/io/ObjectStreamConstants.md) new String. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [baseWireHandle](../java/io/ObjectStreamConstants.md) First wire handle to be assigned. |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [SerializablePermission](https://developer.android.com/reference/kotlin/java/io/SerializablePermission)! | [SUBCLASS_IMPLEMENTATION_PERMISSION](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SUBCLASS_IMPLEMENTATION_PERMISSION:java.io.SerializablePermission) Enable overriding of readObject and writeObject. |
-| static [SerializablePermission](https://developer.android.com/reference/kotlin/java/io/SerializablePermission)! | [SUBSTITUTION_PERMISSION](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SUBSTITUTION_PERMISSION:java.io.SerializablePermission) Enable substitution of one object for another during serialization/deserialization. |
+| static [SerializablePermission](../java/io/SerializablePermission.md)! | [SUBCLASS_IMPLEMENTATION_PERMISSION](../java/io/ObjectStreamConstants.md) Enable overriding of readObject and writeObject. |
+| static [SerializablePermission](../java/io/SerializablePermission.md)! | [SUBSTITUTION_PERMISSION](../java/io/ObjectStreamConstants.md) Enable substitution of one object for another during serialization/deserialization. |
 
 ## Constants
 
@@ -79,7 +79,7 @@ All externalizable data is written in JDK 1.1 external data format after calling
 
 **See Also**
 
-- [java.io.ObjectOutputStream#useProtocolVersion(int)](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#useProtocolVersion(kotlin.Int)) 
+- [java.io.ObjectOutputStream#useProtocolVersion(int)](../java/io/ObjectOutputStream.md)) 
 
 ### PROTOCOL_VERSION_2
 
@@ -97,8 +97,8 @@ This protocol is written by JVM 1.2. Externalizable data is written in block dat
 
 **See Also**
 
-- [java.io.ObjectOutputStream#useProtocolVersion(int)](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#useProtocolVersion(kotlin.Int))
-- [#SC_BLOCK_DATA](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#SC_BLOCK_DATA:kotlin.Byte) 
+- [java.io.ObjectOutputStream#useProtocolVersion(int)](../java/io/ObjectOutputStream.md))
+- [#SC_BLOCK_DATA](../java/io/ObjectStreamConstants.md) 
 
 ### SC_BLOCK_DATA
 
@@ -114,7 +114,7 @@ Bit mask for ObjectStreamClass flag. Indicates Externalizable data written in Bl
 
 **See Also**
 
-- [#PROTOCOL_VERSION_2](https://developer.android.com/reference/kotlin/java/io/ObjectStreamConstants#PROTOCOL_VERSION_2:kotlin.Int) 
+- [#PROTOCOL_VERSION_2](../java/io/ObjectStreamConstants.md) 
 
 ### SC_ENUM
 
@@ -417,8 +417,8 @@ static val SUBCLASS_IMPLEMENTATION_PERMISSION: SerializablePermission!
 Enable overriding of readObject and writeObject. 
 **See Also**
 
-- [java.io.ObjectOutputStream#writeObjectOverride(Object)](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#writeObjectOverride(kotlin.Any))
-- [java.io.ObjectInputStream#readObjectOverride()](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readObjectOverride()) 
+- [java.io.ObjectOutputStream#writeObjectOverride(Object)](../java/io/ObjectOutputStream.md))
+- [java.io.ObjectInputStream#readObjectOverride()](../java/io/ObjectInputStream.md)) 
 
 ### SUBSTITUTION_PERMISSION
 
@@ -431,5 +431,5 @@ static val SUBSTITUTION_PERMISSION: SerializablePermission!
 Enable substitution of one object for another during serialization/deserialization. 
 **See Also**
 
-- [java.io.ObjectOutputStream#enableReplaceObject(boolean)](https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#enableReplaceObject(kotlin.Boolean))
-- [java.io.ObjectInputStream#enableResolveObject(boolean)](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#enableResolveObject(kotlin.Boolean))
+- [java.io.ObjectOutputStream#enableReplaceObject(boolean)](../java/io/ObjectOutputStream.md))
+- [java.io.ObjectInputStream#enableResolveObject(boolean)](../java/io/ObjectInputStream.md))

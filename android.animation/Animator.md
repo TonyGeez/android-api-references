@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # Animator
 
-Kotlin| [Java](https://developer.android.com/reference/android/animation/Animator "View this page in Java") 
+Kotlin| [Java](../android/animation/Animator.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ abstract class Animator : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.Animator](https://developer.android.com/reference/kotlin/android/animation/Animator#) |
+| ↳ | [android.animation.Animator](../android/animation/Animator.md) |
 
-| Known Direct Subclasses [AnimatorSet](https://developer.android.com/reference/kotlin/android/animation/AnimatorSet), [ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatorSet](https://developer.android.com/reference/kotlin/android/animation/AnimatorSet) | This class plays a set of [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator#) objects in the specified order. | | [ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) | This class provides a simple timing engine for running animations which calculate animated values and set them on target objects. | |
+| Known Direct Subclasses [AnimatorSet](../android/animation/AnimatorSet.md), [ValueAnimator](../android/animation/ValueAnimator.md) |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatorSet](../android/animation/AnimatorSet.md) | This class plays a set of [Animator](../android/animation/Animator.md) objects in the specified order. | | [ValueAnimator](../android/animation/ValueAnimator.md) | This class provides a simple timing engine for running animations which calculate animated values and set them on target objects. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator), [TimeAnimator](https://developer.android.com/reference/kotlin/android/animation/TimeAnimator) |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ObjectAnimator](https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator) | This subclass of [ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) provides support for animating properties on target objects. | | [TimeAnimator](https://developer.android.com/reference/kotlin/android/animation/TimeAnimator) | This class provides a simple callback mechanism to listeners that is synchronized with all other animators in the system. | |
+| Known Indirect Subclasses [ObjectAnimator](../android/animation/ObjectAnimator.md), [TimeAnimator](../android/animation/TimeAnimator.md) |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ObjectAnimator](../android/animation/ObjectAnimator.md) | This subclass of [ValueAnimator](../android/animation/ValueAnimator.md) provides support for animating properties on target objects. | | [TimeAnimator](../android/animation/TimeAnimator.md) | This class provides a simple callback mechanism to listeners that is synchronized with all other animators in the system. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This is the superclass for classes which provide basic support for animations which can be started, ended, and have`AnimatorListeners`added to them.
@@ -27,52 +27,52 @@ This is the superclass for classes which provide basic support for animations wh
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener) An animation listener receives notifications from an animation. |
-| abstract | [AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener) A pause listener receives notifications from an animation when the animation is [paused](https://developer.android.com/reference/kotlin/android/animation/Animator#pause())or [resumed](https://developer.android.com/reference/kotlin/android/animation/Animator#resume()). |
+| abstract | [AnimatorListener](../android/animation/Animator.AnimatorListener.md) An animation listener receives notifications from an animation. |
+| abstract | [AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md) A pause listener receives notifications from an animation when the animation is [paused](../android/animation/Animator.md))or [resumed](../android/animation/Animator.md)). |
 
 | Constants ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DURATION_INFINITE](https://developer.android.com/reference/kotlin/android/animation/Animator#DURATION_INFINITE:kotlin.Long) The value used to indicate infinite duration (e.g. when Animators repeat infinitely). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DURATION_INFINITE](../android/animation/Animator.md) The value used to indicate infinite duration (e.g. when Animators repeat infinitely). |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------|---|
-| [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator#Animator())`()` <br /> |
+| [Animator](../android/animation/Animator.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addListener](https://developer.android.com/reference/kotlin/android/animation/Animator#addListener(android.animation.Animator.AnimatorListener))`(`listener:` ` [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener)!`)` Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator#addPauseListener(android.animation.Animator.AnimatorPauseListener))`(`listener:` ` [Animator.AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener)!`)` Adds a pause listener to this animator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](https://developer.android.com/reference/kotlin/android/animation/Animator#cancel())`()` Cancels the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!`)` Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPauseListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!`)` Adds a pause listener to this animator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/animation/Animator.md))`()` Cancels the animation. |
 | --- | --- |
-| open [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator#) | [clone](https://developer.android.com/reference/kotlin/android/animation/Animator#clone())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/android/animation/Animator#end())`()` Ends the animation. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDuration](https://developer.android.com/reference/kotlin/android/animation/Animator#getDuration())`()` Gets the duration of the animation. |
+| open [Animator](../android/animation/Animator.md) | [clone](../android/animation/Animator.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../android/animation/Animator.md))`()` Ends the animation. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDuration](../android/animation/Animator.md))`()` Gets the duration of the animation. |
 | --- | --- |
-| open [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator)! | [getInterpolator](https://developer.android.com/reference/kotlin/android/animation/Animator#getInterpolator())`()` Returns the timing interpolator that this animation uses. |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener)!\>! | [getListeners](https://developer.android.com/reference/kotlin/android/animation/Animator#getListeners())`()` Gets the set of [android.animation.Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener) objects that are currently listening for events on this`Animator`object. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](https://developer.android.com/reference/kotlin/android/animation/Animator#getStartDelay())`()` The amount of time, in milliseconds, to delay processing the animation after [start()](https://developer.android.com/reference/kotlin/android/animation/Animator#start())is called. |
+| open [TimeInterpolator](../android/animation/TimeInterpolator.md)! | [getInterpolator](../android/animation/Animator.md))`()` Returns the timing interpolator that this animation uses. |
+| open [ArrayList](../java/util/ArrayList.md)\< [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!\>! | [getListeners](../android/animation/Animator.md))`()` Gets the set of [android.animation.Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md) objects that are currently listening for events on this`Animator`object. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](../android/animation/Animator.md))`()` The amount of time, in milliseconds, to delay processing the animation after [start()](../android/animation/Animator.md))is called. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalDuration](https://developer.android.com/reference/kotlin/android/animation/Animator#getTotalDuration())`()` Gets the total duration of the animation, accounting for animation sequences, start delay, and repeating. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPaused](https://developer.android.com/reference/kotlin/android/animation/Animator#isPaused())`()` Returns whether this animator is currently in a paused state. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](https://developer.android.com/reference/kotlin/android/animation/Animator#isRunning())`()` Returns whether this Animator is currently running (having been started and gone past any initial startDelay period and not yet ended). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalDuration](../android/animation/Animator.md))`()` Gets the total duration of the animation, accounting for animation sequences, start delay, and repeating. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPaused](../android/animation/Animator.md))`()` Returns whether this animator is currently in a paused state. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](../android/animation/Animator.md))`()` Returns whether this Animator is currently running (having been started and gone past any initial startDelay period and not yet ended). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](https://developer.android.com/reference/kotlin/android/animation/Animator#isStarted())`()` Returns whether this Animator has been started and not yet ended. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](https://developer.android.com/reference/kotlin/android/animation/Animator#pause())`()` Pauses a running animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllListeners](https://developer.android.com/reference/kotlin/android/animation/Animator#removeAllListeners())`()` Removes all [listeners](https://developer.android.com/reference/kotlin/android/animation/Animator#addListener(android.animation.Animator.AnimatorListener))and [pauseListeners](https://developer.android.com/reference/kotlin/android/animation/Animator#addPauseListener(android.animation.Animator.AnimatorPauseListener))from this object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](../android/animation/Animator.md))`()` Returns whether this Animator has been started and not yet ended. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](../android/animation/Animator.md))`()` Pauses a running animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllListeners](../android/animation/Animator.md))`()` Removes all [listeners](../android/animation/Animator.md))and [pauseListeners](../android/animation/Animator.md))from this object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeListener](https://developer.android.com/reference/kotlin/android/animation/Animator#removeListener(android.animation.Animator.AnimatorListener))`(`listener:` ` [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener)!`)` Removes a listener from the set listening to this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator#removePauseListener(android.animation.Animator.AnimatorPauseListener))`(`listener:` ` [Animator.AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener)!`)` Removes a pause listener from the set listening to this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](https://developer.android.com/reference/kotlin/android/animation/Animator#resume())`()` Resumes a paused animation, causing the animator to pick up where it left off when it was paused. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!`)` Removes a listener from the set listening to this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePauseListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!`)` Removes a pause listener from the set listening to this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](../android/animation/Animator.md))`()` Resumes a paused animation, causing the animator to pick up where it left off when it was paused. |
 | --- | --- |
-| abstract [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator#)! | [setDuration](https://developer.android.com/reference/kotlin/android/animation/Animator#setDuration(kotlin.Long))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the duration of the animation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterpolator](https://developer.android.com/reference/kotlin/android/animation/Animator#setInterpolator(android.animation.TimeInterpolator))`(`value:` ` [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator)!`)` The time interpolator used in calculating the elapsed fraction of the animation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartDelay](https://developer.android.com/reference/kotlin/android/animation/Animator#setStartDelay(kotlin.Long))`(`startDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` The amount of time, in milliseconds, to delay processing the animation after [start()](https://developer.android.com/reference/kotlin/android/animation/Animator#start())is called. |
+| abstract [Animator](../android/animation/Animator.md)! | [setDuration](../android/animation/Animator.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the duration of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterpolator](../android/animation/Animator.md))`(`value:` ` [TimeInterpolator](../android/animation/TimeInterpolator.md)!`)` The time interpolator used in calculating the elapsed fraction of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartDelay](../android/animation/Animator.md))`(`startDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` The amount of time, in milliseconds, to delay processing the animation after [start()](../android/animation/Animator.md))is called. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/android/animation/Animator#setTarget(kotlin.Any))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Sets the target object whose property will be animated by this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupEndValues](https://developer.android.com/reference/kotlin/android/animation/Animator#setupEndValues())`()` This method tells the object to use appropriate information to extract ending values for the animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupStartValues](https://developer.android.com/reference/kotlin/android/animation/Animator#setupStartValues())`()` This method tells the object to use appropriate information to extract starting values for the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](../android/animation/Animator.md))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Sets the target object whose property will be animated by this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupEndValues](../android/animation/Animator.md))`()` This method tells the object to use appropriate information to extract ending values for the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupStartValues](../android/animation/Animator.md))`()` This method tells the object to use appropriate information to extract starting values for the animation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/animation/Animator#start())`()` Starts this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/animation/Animator.md))`()` Starts this animation. |
 
 ## Constants
 
@@ -110,7 +110,7 @@ Adds a listener to the set of listeners that are sent events through the life of
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener)!:the listener to be added to the current set of listeners for this animation. |
+| `listener` | [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!:the listener to be added to the current set of listeners for this animation. |
 
 ### addPauseListener
 
@@ -124,7 +124,7 @@ Adds a pause listener to this animator.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [Animator.AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener)!:the listener to be added to the current set of pause listeners for this animation. |
+| `listener` | [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!:the listener to be added to the current set of pause listeners for this animation. |
 
 ### cancel
 
@@ -134,7 +134,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun cancel(): Unit
 ```
 
-Cancels the animation. Unlike [end()](https://developer.android.com/reference/kotlin/android/animation/Animator#end()),`cancel()`causes the animation to stop in its tracks, sending an [android.animation.Animator.AnimatorListener#onAnimationCancel(Animator)](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationCancel(android.animation.Animator))to its listeners, followed by an [android.animation.Animator.AnimatorListener#onAnimationEnd(Animator)](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationEnd(android.animation.Animator))message.
+Cancels the animation. Unlike [end()](../android/animation/Animator.md)),`cancel()`causes the animation to stop in its tracks, sending an [android.animation.Animator.AnimatorListener#onAnimationCancel(Animator)](../android/animation/Animator.AnimatorListener.md))to its listeners, followed by an [android.animation.Animator.AnimatorListener#onAnimationEnd(Animator)](../android/animation/Animator.AnimatorListener.md))message.
 
 This method must be called on the thread that is running the animation. 
 
@@ -148,7 +148,7 @@ open fun clone(): Animator
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------|
-| [Animator](https://developer.android.com/reference/kotlin/android/animation/Animator#) | a clone of this instance. |
+| [Animator](../android/animation/Animator.md) | a clone of this instance. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -162,7 +162,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun end(): Unit
 ```
 
-Ends the animation. This causes the animation to assign the end value of the property being animated, then calling the [android.animation.Animator.AnimatorListener#onAnimationEnd(Animator)](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationEnd(android.animation.Animator))method on its listeners.
+Ends the animation. This causes the animation to assign the end value of the property being animated, then calling the [android.animation.Animator.AnimatorListener#onAnimationEnd(Animator)](../android/animation/Animator.AnimatorListener.md))method on its listeners.
 
 This method must be called on the thread that is running the animation. 
 
@@ -192,7 +192,7 @@ Returns the timing interpolator that this animation uses.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator)! | The timing interpolator for this animation. |
+| [TimeInterpolator](../android/animation/TimeInterpolator.md)! | The timing interpolator for this animation. |
 
 ### getListeners
 
@@ -202,11 +202,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getListeners(): ArrayList<Animator.AnimatorListener!>!
 ```
 
-Gets the set of [android.animation.Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener) objects that are currently listening for events on this`Animator`object.
+Gets the set of [android.animation.Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md) objects that are currently listening for events on this`Animator`object.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)< [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener)!>! | ArrayList The set of listeners. |
+| [ArrayList](../java/util/ArrayList.md)< [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!>! | ArrayList The set of listeners. |
 
 ### getStartDelay
 
@@ -216,7 +216,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getStartDelay(): Long
 ```
 
-The amount of time, in milliseconds, to delay processing the animation after [start()](https://developer.android.com/reference/kotlin/android/animation/Animator#start())is called.
+The amount of time, in milliseconds, to delay processing the animation after [start()](../android/animation/Animator.md))is called.
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -230,11 +230,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getTotalDuration(): Long
 ```
 
-Gets the total duration of the animation, accounting for animation sequences, start delay, and repeating. Return [DURATION_INFINITE](https://developer.android.com/reference/kotlin/android/animation/Animator#DURATION_INFINITE:kotlin.Long) if the duration is infinite.
+Gets the total duration of the animation, accounting for animation sequences, start delay, and repeating. Return [DURATION_INFINITE](../android/animation/Animator.md) if the duration is infinite.
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Total time an animation takes to finish, starting from the time [start()](https://developer.android.com/reference/kotlin/android/animation/Animator#start())is called. [DURATION_INFINITE](https://developer.android.com/reference/kotlin/android/animation/Animator#DURATION_INFINITE:kotlin.Long) will be returned if the animation or any child animation repeats infinite times. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Total time an animation takes to finish, starting from the time [start()](../android/animation/Animator.md))is called. [DURATION_INFINITE](../android/animation/Animator.md) will be returned if the animation or any child animation repeats infinite times. |
 
 ### isPaused
 
@@ -277,7 +277,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun isStarted(): Boolean
 ```
 
-Returns whether this Animator has been started and not yet ended. For reusable Animators (which most Animators are, apart from the one-shot animator produced by [createCircularReveal()](https://developer.android.com/reference/kotlin/android/view/ViewAnimationUtils.html#createCircularReveal(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float))), this state is a superset of [isRunning()](https://developer.android.com/reference/kotlin/android/animation/Animator#isRunning()), because an Animator with a nonzero [startDelay](https://developer.android.com/reference/kotlin/android/animation/Animator#getStartDelay())will return true for [isStarted()](https://developer.android.com/reference/kotlin/android/animation/Animator#isStarted())during the delay phase, whereas [isRunning()](https://developer.android.com/reference/kotlin/android/animation/Animator#isRunning())will return true only after the delay phase is complete. Non-reusable animators will always return true after they have been started, because they cannot return to a non-started state.
+Returns whether this Animator has been started and not yet ended. For reusable Animators (which most Animators are, apart from the one-shot animator produced by [createCircularReveal()](../android/view/ViewAnimationUtils.md))), this state is a superset of [isRunning()](../android/animation/Animator.md)), because an Animator with a nonzero [startDelay](../android/animation/Animator.md))will return true for [isStarted()](../android/animation/Animator.md))during the delay phase, whereas [isRunning()](../android/animation/Animator.md))will return true only after the delay phase is complete. Non-reusable animators will always return true after they have been started, because they cannot return to a non-started state.
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -291,12 +291,12 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun pause(): Unit
 ```
 
-Pauses a running animation. This method should only be called on the same thread on which the animation was started. If the animation has not yet been [started](https://developer.android.com/reference/kotlin/android/animation/Animator#isStarted())or has since ended, then the call is ignored. Paused animations can be resumed by calling [resume()](https://developer.android.com/reference/kotlin/android/animation/Animator#resume()). 
+Pauses a running animation. This method should only be called on the same thread on which the animation was started. If the animation has not yet been [started](../android/animation/Animator.md))or has since ended, then the call is ignored. Paused animations can be resumed by calling [resume()](../android/animation/Animator.md)). 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/animation/Animator#resume()>
 - <https://developer.android.com/reference/kotlin/android/animation/Animator#isPaused()>
-- [android.animation.Animator.AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener) 
+- [android.animation.Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md) 
 
 ### removeAllListeners
 
@@ -306,7 +306,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun removeAllListeners(): Unit
 ```
 
-Removes all [listeners](https://developer.android.com/reference/kotlin/android/animation/Animator#addListener(android.animation.Animator.AnimatorListener))and [pauseListeners](https://developer.android.com/reference/kotlin/android/animation/Animator#addPauseListener(android.animation.Animator.AnimatorPauseListener))from this object. 
+Removes all [listeners](../android/animation/Animator.md))and [pauseListeners](../android/animation/Animator.md))from this object. 
 
 ### removeListener
 
@@ -320,7 +320,7 @@ Removes a listener from the set listening to this animation.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [Animator.AnimatorListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener)!:the listener to be removed from the current set of listeners for this animation. |
+| `listener` | [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!:the listener to be removed from the current set of listeners for this animation. |
 
 ### removePauseListener
 
@@ -334,7 +334,7 @@ Removes a pause listener from the set listening to this animation.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [Animator.AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener)!:the listener to be removed from the current set of pause listeners for this animation. |
+| `listener` | [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!:the listener to be removed from the current set of pause listeners for this animation. |
 
 ### resume
 
@@ -349,7 +349,7 @@ Resumes a paused animation, causing the animator to pick up where it left off wh
 
 - <https://developer.android.com/reference/kotlin/android/animation/Animator#pause()>
 - <https://developer.android.com/reference/kotlin/android/animation/Animator#isPaused()>
-- [android.animation.Animator.AnimatorPauseListener](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener) 
+- [android.animation.Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md) 
 
 ### setDuration
 
@@ -373,11 +373,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun setInterpolator(value: TimeInterpolator!): Unit
 ```
 
-The time interpolator used in calculating the elapsed fraction of the animation. The interpolator determines whether the animation runs with linear or non-linear motion, such as acceleration and deceleration. The default value is [android.view.animation.AccelerateDecelerateInterpolator](https://developer.android.com/reference/kotlin/android/view/animation/AccelerateDecelerateInterpolator.html#).
+The time interpolator used in calculating the elapsed fraction of the animation. The interpolator determines whether the animation runs with linear or non-linear motion, such as acceleration and deceleration. The default value is [android.view.animation.AccelerateDecelerateInterpolator](../android/view/animation/AccelerateDecelerateInterpolator.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [TimeInterpolator](https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator)!:the interpolator to be used by this animation |
+| `value` | [TimeInterpolator](../android/animation/TimeInterpolator.md)!:the interpolator to be used by this animation |
 
 ### setStartDelay
 
@@ -387,7 +387,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun setStartDelay(startDelay: Long): Unit
 ```
 
-The amount of time, in milliseconds, to delay processing the animation after [start()](https://developer.android.com/reference/kotlin/android/animation/Animator#start())is called.
+The amount of time, in milliseconds, to delay processing the animation after [start()](../android/animation/Animator.md))is called.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -401,7 +401,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setTarget(target: Any?): Unit
 ```
 
-Sets the target object whose property will be animated by this animation. Not all subclasses operate on target objects (for example, [ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator), but this method is on the superclass for the convenience of dealing generically with those subclasses that do handle targets.
+Sets the target object whose property will be animated by this animation. Not all subclasses operate on target objects (for example, [ValueAnimator](../android/animation/ValueAnimator.md), but this method is on the superclass for the convenience of dealing generically with those subclasses that do handle targets.
 
 **Note:**The target is stored as a weak reference internally to avoid leaking resources by having animators directly reference old targets. Therefore, you should ensure that animator targets always have a hard reference elsewhere.
 
@@ -437,6 +437,6 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun start(): Unit
 ```
 
-Starts this animation. If the animation has a nonzero startDelay, the animation will start running after that delay elapses. A non-delayed animation will have its initial value(s) set immediately, followed by calls to [AnimatorListener.onAnimationStart(Animator)](https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationStart(android.animation.Animator))for any listeners of this animator.
+Starts this animation. If the animation has a nonzero startDelay, the animation will start running after that delay elapses. A non-delayed animation will have its initial value(s) set immediately, followed by calls to [AnimatorListener.onAnimationStart(Animator)](../android/animation/Animator.AnimatorListener.md))for any listeners of this animator.
 
 The animation started by calling this method will be run on the thread that called this method. This thread should have a Looper on it (a runtime exception will be thrown if this is not the case). Also, if the animation will animate properties of objects in the view hierarchy, then the calling thread should be the UI thread for that view hierarchy.

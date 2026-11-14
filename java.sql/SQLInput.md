@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SQLInput
 ```
 
-| [java.sql.SQLInput](https://developer.android.com/reference/kotlin/java/sql/SQLInput#) |
+| [java.sql.SQLInput](../java/sql/SQLInput.md) |
 
 An input stream that contains a stream of values representing an instance of an SQL structured type or an SQL distinct type. This interface, used only for custom mapping, is used by the driver behind the scenes, and a programmer never directly invokes`SQLInput`methods. The*reader* methods (`readLong`,`readBytes`, and so on) provide a way for an implementation of the`SQLData`interface to read the values in an`SQLInput`object. And as described in`SQLData`, calls to reader methods must be made in the order that their corresponding attributes appear in the SQL definition of the type. The method`wasNull`is used to determine whether the last value read was SQL`NULL`.
 
@@ -18,41 +18,41 @@ When the method`getObject`is called with an object of a class implementing the i
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](https://developer.android.com/reference/kotlin/java/sql/Array)! | [readArray](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readArray())`()` Reads an SQL`ARRAY`value from the stream and returns it as an`Array`object in the Java programming language. |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [readAsciiStream](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readAsciiStream())`()` Reads the next attribute in the stream and returns it as a stream of ASCII characters. |
-| abstract [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | [readBigDecimal](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readBigDecimal())`()` Reads the next attribute in the stream and returns it as a`java.math.BigDecimal`object in the Java programming language. |
+| abstract [Array](../java/sql/Array.md)! | [readArray](../java/sql/SQLInput.md))`()` Reads an SQL`ARRAY`value from the stream and returns it as an`Array`object in the Java programming language. |
+| abstract [InputStream](../java/io/InputStream.md)! | [readAsciiStream](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of ASCII characters. |
+| abstract [BigDecimal](../java/math/BigDecimal.md)! | [readBigDecimal](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.math.BigDecimal`object in the Java programming language. |
 | --- | --- |
-| abstract [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [readBinaryStream](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readBinaryStream())`()` Reads the next attribute in the stream and returns it as a stream of uninterpreted bytes. |
-| abstract [Blob](https://developer.android.com/reference/kotlin/java/sql/Blob)! | [readBlob](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readBlob())`()` Reads an SQL`BLOB`value from the stream and returns it as a`Blob`object in the Java programming language. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readBoolean())`()` Reads the next attribute in the stream and returns it as a`boolean`in the Java programming language. |
+| abstract [InputStream](../java/io/InputStream.md)! | [readBinaryStream](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of uninterpreted bytes. |
+| abstract [Blob](../java/sql/Blob.md)! | [readBlob](../java/sql/SQLInput.md))`()` Reads an SQL`BLOB`value from the stream and returns it as a`Blob`object in the Java programming language. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`boolean`in the Java programming language. |
 | --- | --- |
-| abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readByte())`()` Reads the next attribute in the stream and returns it as a`byte`in the Java programming language. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readBytes](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readBytes())`()` Reads the next attribute in the stream and returns it as an array of bytes in the Java programming language. |
-| abstract [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | [readCharacterStream](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readCharacterStream())`()` Reads the next attribute in the stream and returns it as a stream of Unicode characters. |
+| abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`byte`in the Java programming language. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readBytes](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as an array of bytes in the Java programming language. |
+| abstract [Reader](../java/io/Reader.md)! | [readCharacterStream](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of Unicode characters. |
 | --- | --- |
-| abstract [Clob](https://developer.android.com/reference/kotlin/java/sql/Clob)! | [readClob](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readClob())`()` Reads an SQL`CLOB`value from the stream and returns it as a`Clob`object in the Java programming language. |
-| abstract [Date](https://developer.android.com/reference/kotlin/java/sql/Date)! | [readDate](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readDate())`()` Reads the next attribute in the stream and returns it as a`java.sql.Date`object. |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readDouble())`()` Reads the next attribute in the stream and returns it as a`double`in the Java programming language. |
+| abstract [Clob](../java/sql/Clob.md)! | [readClob](../java/sql/SQLInput.md))`()` Reads an SQL`CLOB`value from the stream and returns it as a`Clob`object in the Java programming language. |
+| abstract [Date](../java/sql/Date.md)! | [readDate](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Date`object. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`double`in the Java programming language. |
 | --- | --- |
-| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readFloat())`()` Reads the next attribute in the stream and returns it as a`float`in the Java programming language. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readInt())`()` Reads the next attribute in the stream and returns it as an`int`in the Java programming language. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readLong())`()` Reads the next attribute in the stream and returns it as a`long`in the Java programming language. |
+| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`float`in the Java programming language. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as an`int`in the Java programming language. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`long`in the Java programming language. |
 | --- | --- |
-| abstract [NClob](https://developer.android.com/reference/kotlin/java/sql/NClob)! | [readNClob](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readNClob())`()` Reads an SQL`NCLOB`value from the stream and returns it as a`NClob`object in the Java programming language. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readNString](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readNString())`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readObject](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readObject())`()` Reads the datum at the head of the stream and returns it as an`Object`in the Java programming language. |
+| abstract [NClob](../java/sql/NClob.md)! | [readNClob](../java/sql/SQLInput.md))`()` Reads an SQL`NCLOB`value from the stream and returns it as a`NClob`object in the Java programming language. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readNString](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readObject](../java/sql/SQLInput.md))`()` Reads the datum at the head of the stream and returns it as an`Object`in the Java programming language. |
 | --- | --- |
-| abstract [Ref](https://developer.android.com/reference/kotlin/java/sql/Ref)! | [readRef](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readRef())`()` Reads an SQL`REF`value from the stream and returns it as a`Ref`object in the Java programming language. |
-| abstract [RowId](https://developer.android.com/reference/kotlin/java/sql/RowId)! | [readRowId](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readRowId())`()` Reads an SQL`ROWID`value from the stream and returns it as a`RowId`object in the Java programming language. |
-| abstract [SQLXML](https://developer.android.com/reference/kotlin/java/sql/SQLXML)! | [readSQLXML](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readSQLXML())`()` Reads an SQL`XML`value from the stream and returns it as a`SQLXML`object in the Java programming language. |
+| abstract [Ref](../java/sql/Ref.md)! | [readRef](../java/sql/SQLInput.md))`()` Reads an SQL`REF`value from the stream and returns it as a`Ref`object in the Java programming language. |
+| abstract [RowId](../java/sql/RowId.md)! | [readRowId](../java/sql/SQLInput.md))`()` Reads an SQL`ROWID`value from the stream and returns it as a`RowId`object in the Java programming language. |
+| abstract [SQLXML](../java/sql/SQLXML.md)! | [readSQLXML](../java/sql/SQLInput.md))`()` Reads an SQL`XML`value from the stream and returns it as a`SQLXML`object in the Java programming language. |
 | --- | --- |
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readShort())`()` Reads the next attribute in the stream and returns it as a`short`in the Java programming language. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readString](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readString())`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
-| abstract [Time](https://developer.android.com/reference/kotlin/java/sql/Time)! | [readTime](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readTime())`()` Reads the next attribute in the stream and returns it as a`java.sql.Time`object. |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`short`in the Java programming language. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readString](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
+| abstract [Time](../java/sql/Time.md)! | [readTime](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Time`object. |
 | --- | --- |
-| abstract [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp)! | [readTimestamp](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readTimestamp())`()` Reads the next attribute in the stream and returns it as a`java.sql.Timestamp`object. |
-| abstract [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | [readURL](https://developer.android.com/reference/kotlin/java/sql/SQLInput#readURL())`()` Reads an SQL`DATALINK`value from the stream and returns it as a`java.net.URL`object in the Java programming language. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wasNull](https://developer.android.com/reference/kotlin/java/sql/SQLInput#wasNull())`()` Retrieves whether the last value read was SQL`NULL`. |
+| abstract [Timestamp](../java/sql/Timestamp.md)! | [readTimestamp](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Timestamp`object. |
+| abstract [URL](../java/net/URL.md)! | [readURL](../java/sql/SQLInput.md))`()` Reads an SQL`DATALINK`value from the stream and returns it as a`java.net.URL`object in the Java programming language. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wasNull](../java/sql/SQLInput.md))`()` Retrieves whether the last value read was SQL`NULL`. |
 | --- | --- |
 
 ## Public methods
@@ -69,7 +69,7 @@ Reads an SQL`ARRAY`value from the stream and returns it as an`Array`object in th
 
 | Return ||
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://developer.android.com/reference/kotlin/java/sql/Array)! | an`Array`object representing data of the SQL`ARRAY`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Array](../java/sql/Array.md)! | an`Array`object representing data of the SQL`ARRAY`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -88,7 +88,7 @@ Reads the next attribute in the stream and returns it as a stream of ASCII chara
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [InputStream](../java/io/InputStream.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -107,7 +107,7 @@ Reads the next attribute in the stream and returns it as a`java.math.BigDecimal`
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [BigDecimal](../java/math/BigDecimal.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -126,7 +126,7 @@ Reads the next attribute in the stream and returns it as a stream of uninterpret
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [InputStream](../java/io/InputStream.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -145,7 +145,7 @@ Reads an SQL`BLOB`value from the stream and returns it as a`Blob`object in the J
 
 | Return ||
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Blob](https://developer.android.com/reference/kotlin/java/sql/Blob)! | a`Blob`object representing data of the SQL`BLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Blob](../java/sql/Blob.md)! | a`Blob`object representing data of the SQL`BLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -221,7 +221,7 @@ Reads the next attribute in the stream and returns it as a stream of Unicode cha
 
 | Return ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------|
-| [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Reader](../java/io/Reader.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -240,7 +240,7 @@ Reads an SQL`CLOB`value from the stream and returns it as a`Clob`object in the J
 
 | Return ||
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Clob](https://developer.android.com/reference/kotlin/java/sql/Clob)! | a`Clob`object representing data of the SQL`CLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Clob](../java/sql/Clob.md)! | a`Clob`object representing data of the SQL`CLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -259,7 +259,7 @@ Reads the next attribute in the stream and returns it as a`java.sql.Date`object.
 
 | Return ||
 |-----------------------------------------------------------------------|---------------------------------------------------------|
-| [Date](https://developer.android.com/reference/kotlin/java/sql/Date)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Date](../java/sql/Date.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -354,7 +354,7 @@ Reads an SQL`NCLOB`value from the stream and returns it as a`NClob`object in the
 
 | Return ||
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [NClob](https://developer.android.com/reference/kotlin/java/sql/NClob)! | a`NClob`object representing data of the SQL`NCLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [NClob](../java/sql/NClob.md)! | a`NClob`object representing data of the SQL`NCLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -415,7 +415,7 @@ Reads an SQL`REF`value from the stream and returns it as a`Ref`object in the Jav
 
 | Return ||
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Ref](https://developer.android.com/reference/kotlin/java/sql/Ref)! | a`Ref`object representing the SQL`REF`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Ref](../java/sql/Ref.md)! | a`Ref`object representing the SQL`REF`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -434,7 +434,7 @@ Reads an SQL`ROWID`value from the stream and returns it as a`RowId`object in the
 
 | Return ||
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [RowId](https://developer.android.com/reference/kotlin/java/sql/RowId)! | a`RowId`object representing data of the SQL`ROWID`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [RowId](../java/sql/RowId.md)! | a`RowId`object representing data of the SQL`ROWID`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -453,7 +453,7 @@ Reads an SQL`XML`value from the stream and returns it as a`SQLXML`object in the 
 
 | Return ||
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [SQLXML](https://developer.android.com/reference/kotlin/java/sql/SQLXML)! | a`SQLXML`object representing data of the SQL`XML`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [SQLXML](../java/sql/SQLXML.md)! | a`SQLXML`object representing data of the SQL`XML`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -510,7 +510,7 @@ Reads the next attribute in the stream and returns it as a`java.sql.Time`object.
 
 | Return ||
 |-----------------------------------------------------------------------|---------------------------------------------------------|
-| [Time](https://developer.android.com/reference/kotlin/java/sql/Time)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Time](../java/sql/Time.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -529,7 +529,7 @@ Reads the next attribute in the stream and returns it as a`java.sql.Timestamp`ob
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------|
-| [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Timestamp](../java/sql/Timestamp.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -548,7 +548,7 @@ Reads an SQL`DATALINK`value from the stream and returns it as a`java.net.URL`obj
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------|
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)! | a`java.net.URL`object. |
+| [URL](../java/net/URL.md)! | a`java.net.URL`object. |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------|

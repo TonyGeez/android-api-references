@@ -8,8 +8,8 @@ open class ObjectInputStream : InputStream, ObjectInput, ObjectStreamConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) ||
-| | ↳ | [java.io.ObjectInputStream](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#) |
+| ↳ | [java.io.InputStream](../java/io/InputStream.md) ||
+| | ↳ | [java.io.ObjectInputStream](../java/io/ObjectInputStream.md) |
 
 An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream.
 
@@ -105,7 +105,7 @@ Enum constants are deserialized differently than ordinary serializable or extern
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readChar()()` Reads a 16 bit char. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readDouble()()` Reads a 64 bit double. |
 | --- | --- |
-| open [ObjectInputStream.GetField](https://developer.android.com/reference/kotlin/java/io/ObjectInputStream.GetField)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFields()()` Reads the persistent fields from the stream and makes them available by name. |
+| open [ObjectInputStream.GetField](../java/io/ObjectInputStream.GetField.md)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFields()()` Reads the persistent fields from the stream and makes them available by name. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFloat()()` Reads a 32 bit float. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readFully(kotlin.ByteArray)(buf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Reads bytes, blocking until all bytes are read. |
 | --- | --- |
@@ -117,7 +117,7 @@ Enum constants are deserialized differently than ordinary serializable or extern
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readObject()()` Read an object from the ObjectInputStream. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readShort()()` Reads a 16 bit short. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUTF()()` Reads a String in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUTF()()` Reads a String in [modified UTF-8](../java/io/DataInput.md) format. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUnshared()()` Reads an "unshared" object from the ObjectInputStream. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readUnsignedByte()()` Reads an unsigned 8 bit byte. |
 | --- | --- |
@@ -129,14 +129,14 @@ Enum constants are deserialized differently than ordinary serializable or extern
 | Protected methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#enableResolveObject(kotlin.Boolean)(enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable the stream to allow objects read from the stream to be replaced. |
-| open [ObjectStreamClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readClassDescriptor()()` Read a class descriptor from the serialization stream. |
+| open [ObjectStreamClass](../java/io/ObjectStreamClass.md)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readClassDescriptor()()` Read a class descriptor from the serialization stream. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readObjectOverride()()` This method is called by trusted subclasses of ObjectOutputStream that constructed ObjectOutputStream using the protected no-arg constructor. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#readStreamHeader()()` The readStreamHeader method is provided to allow subclasses to read and verify their own stream headers. |
-| open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveClass(java.io.ObjectStreamClass)(desc: https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass!)` Load the local class equivalent of the specified stream class description. |
+| open [Class](../java/lang/Class.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveClass(java.io.ObjectStreamClass)(desc: https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass!)` Load the local class equivalent of the specified stream class description. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveObject(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` This method will allow trusted subclasses of ObjectInputStream to substitute one object for another during deserialization. |
 | --- | --- |
-| open [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveProxyClass(kotlin.Array)(interfaces: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Returns a proxy class that implements the interfaces named in a proxy class descriptor; subclasses may implement this method to read custom data from the stream along with the descriptors for dynamic proxy classes, allowing them to use an alternate loading mechanism for the interfaces and the proxy class. |
+| open [Class](../java/lang/Class.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectInputStream#resolveProxyClass(kotlin.Array)(interfaces: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Returns a proxy class that implements the interfaces named in a proxy class descriptor; subclasses may implement this method to read custom data from the stream along with the descriptors for dynamic proxy classes, allowing them to use an alternate loading mechanism for the interfaces and the proxy class. |
 
 | Inherited functions ||
 |---|---|
@@ -162,7 +162,7 @@ If a security manager is installed, this constructor will check for the "enableS
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream)!: input stream to read from |
+| `in` | [InputStream](../java/io/InputStream.md)!: input stream to read from |
 
 | Exceptions ||
 |---|---|
@@ -588,7 +588,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun readUTF(): String!
 ```
 
-Reads a String in [modified UTF-8](https://developer.android.com/reference/kotlin/java/io/DataInput#modified-utf-8) format.
+Reads a String in [modified UTF-8](../java/io/DataInput.md) format.
 
 | Return ||
 |---|---|
@@ -686,7 +686,7 @@ Register an object to be validated before the graph is returned. While similar t
 
 | Parameters ||
 |---|---|
-| `obj` | [ObjectInputValidation](https://developer.android.com/reference/kotlin/java/io/ObjectInputValidation)!: the object to receive the validation callback. |
+| `obj` | [ObjectInputValidation](../java/io/ObjectInputValidation.md)!: the object to receive the validation callback. |
 | `prio` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): controls the order of callbacks;zero is a good default. Use higher numbers to be called back earlier, lower numbers for later callbacks. Within a priority, callbacks are processed in no particular order. |
 
 | Exceptions ||
@@ -833,7 +833,7 @@ where `loader` is determined as follows: if there is a method on the current thr
 
 | Parameters ||
 |---|---|
-| `desc` | [ObjectStreamClass](https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass)!: an instance of class `ObjectStreamClass` |
+| `desc` | [ObjectStreamClass](../java/io/ObjectStreamClass.md)!: an instance of class `ObjectStreamClass` |
 
 | Return ||
 |---|---|

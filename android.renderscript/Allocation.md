@@ -3,7 +3,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Allocation
 
-Kotlin | [Java](https://developer.android.com/reference/android/renderscript/Allocation "View this page in Java")
+Kotlin | [Java](../android/renderscript/Allocation.md)
 | --- | --- |
 
 ```
@@ -12,10 +12,10 @@ open class Allocation : BaseObj
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj) ||
-| | ↳ | [android.renderscript.Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#) |
+| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||
+| | ↳ | [android.renderscript.Allocation](../android/renderscript/Allocation.md) |
 
-| Known Direct Subclasses [AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter) |---|---| | [AllocationAdapter](https://developer.android.com/reference/kotlin/android/renderscript/AllocationAdapter) | Only intended for use by generated reflected code. | |
+| Known Direct Subclasses [AllocationAdapter](../android/renderscript/AllocationAdapter.md) |---|---| | [AllocationAdapter](../android/renderscript/AllocationAdapter.md) | Only intended for use by generated reflected code. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 31.**
@@ -127,38 +127,38 @@ An Allocation can be populated with the #copyFrom routines. For more complex Ele
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.Any)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from the Allocation into an array. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.ShortArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy from the Allocation into a short array. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!\>! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createAllocations(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, t: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, numAlloc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation Array with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, and usage flags. |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a graphics texture from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Allocation](../android/renderscript/Allocation.md)!\>! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createAllocations(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, t: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, numAlloc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation Array with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, and usage flags. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a graphics texture from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
 | --- | --- |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a sampler input from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a sampler input from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
 | --- | --- |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a non-mipmapped Allocation to use as a graphics texture from the `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` referenced by resource ID. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a non-mipmapped Allocation to use as a graphics texture from the `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` referenced by resource ID. |
 | --- | --- |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from the Bitmap referenced by resource ID. |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromString(android.renderscript.RenderScript,%20kotlin.String,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation containing string data encoded in UTF-8 format. |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from the Bitmap referenced by resource ID. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromString(android.renderscript.RenderScript,%20kotlin.String,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation containing string data encoded in UTF-8 format. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
 | --- | --- |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!)` Creates an Allocation for use by scripts with a given `https://developer.android.com/reference/kotlin/android/renderscript/Type` and no mipmaps |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, mipmap flag, and usage flags. |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!)` Creates an Allocation for use by scripts with a given `https://developer.android.com/reference/kotlin/android/renderscript/Type` and no mipmaps |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, mipmap flag, and usage flags. |
 | --- | --- |
-| open static [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with the size specified by the type and no mipmaps generated by default |
+| open static [Allocation](../android/renderscript/Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with the size specified by the type and no mipmaps generated by default |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#destroy()()` For USAGE_IO_OUTPUT, destroy() implies setSurface(null). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#generateMipmaps()()` Generate a mipmap chain. |
 | --- | --- |
-| open [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getByteBuffer()()` Gets or creates a ByteBuffer that contains the raw data of the current Allocation. |
+| open [ByteBuffer](../java/nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getByteBuffer()()` Gets or creates a ByteBuffer that contains the raw data of the current Allocation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()()` Get the size of the Allocation in bytes. |
-| open [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Element` of the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
+| open [Element](../android/renderscript/Element.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Element` of the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getStride()()` Gets the stride of the Allocation. |
-| open [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getSurface()()` Returns the handle to a raw buffer that is being managed by the screen compositor. |
+| open [Surface](../android/view/Surface.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getSurface()()` Returns the handle to a raw buffer that is being managed by the screen compositor. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getTimeStamp()()` Get the timestamp for the most recent buffer held by this Allocation. |
 | --- | --- |
-| open [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getType()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
+| open [Type](../android/renderscript/Type.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getType()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getUsage()()` Get the usage flags of the Allocation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#ioReceive()()` Receive the latest input into the Allocation. |
 | --- | --- |
@@ -327,7 +327,7 @@ Copy part of an Allocation into this Allocation.
 |---|---|
 | `off` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset of the first element to be copied. |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of elements to be copied. |
-| `data` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!: the source data allocation. |
+| `data` | [Allocation](../android/renderscript/Allocation.md)!: the source data allocation. |
 | --- | --- |
 | `dataOff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): off The offset of the first element in data to be copied. |
 
@@ -983,7 +983,7 @@ Copy a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.h
 |---|---|
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region to update in this Allocation |
 | `yoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region to update in this Allocation |
-| `data` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: the Bitmap to be copied |
+| `data` | [Bitmap](../android/graphics/Bitmap.md)!: the Bitmap to be copied |
 | --- | --- |
 
 ### copy2DRangeFrom
@@ -1014,7 +1014,7 @@ Copy a rectangular region from an Allocation into a rectangular region in this A
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Width of the region to update. |
 | --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update. |
-| `data` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!: source Allocation. |
+| `data` | [Allocation](../android/renderscript/Allocation.md)!: source Allocation. |
 | `dataXoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset in source Allocation |
 | --- | --- |
 | `dataYoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset in source Allocation |
@@ -1409,7 +1409,7 @@ Copy a rectangular region into the allocation from another allocation.
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Height of the region to update. |
 | `d` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Depth of the region to update. |
 | --- | --- |
-| `data` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!: source allocation. |
+| `data` | [Allocation](../android/renderscript/Allocation.md)!: source allocation. |
 | `dataXoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): X offset of the region in the source Allocation |
 | `dataYoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Y offset of the region in the source Allocation |
 | --- | --- |
@@ -1491,7 +1491,7 @@ If the `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.h
 
 | Parameters ||
 |---|---|
-| `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: the source bitmap |
+| `b` | [Bitmap](../android/graphics/Bitmap.md)!: the source bitmap |
 
 ### copyFrom
 
@@ -1508,7 +1508,7 @@ Copy an Allocation from an Allocation. The types of both allocations must be ide
 
 | Parameters ||
 |---|---|
-| `a` | [Allocation](https://developer.android.com/reference/kotlin/android/renderscript/Allocation#)!: the source allocation |
+| `a` | [Allocation](../android/renderscript/Allocation.md)!: the source allocation |
 
 ### copyFrom
 
@@ -1524,7 +1524,7 @@ Copy an array of RS objects to the Allocation.
 
 | Parameters ||
 |---|---|
-| `d` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj)!\>!: Source array. |
+| `d` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [BaseObj](../android/renderscript/BaseObj.md)!\>!: Source array. |
 
 ### copyFrom
 
@@ -1762,7 +1762,7 @@ Copy from the Allocation into a `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: The bitmap to be set from the Allocation. |
+| `b` | [Bitmap](../android/graphics/Bitmap.md)!: The bitmap to be set from the Allocation. |
 
 ### copyTo
 
@@ -1895,8 +1895,8 @@ Creates a new Allocation Array with the given `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: RenderScript context |
-| `t` | [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!: RenderScript type describing data layout |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: RenderScript context |
+| `t` | [Type](../android/renderscript/Type.md)!: RenderScript type describing data layout |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the Allocation is utilized |
 | --- | --- |
 | `numAlloc` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of Allocations in the array. |
@@ -1922,8 +1922,8 @@ Creates a non-mipmapped cubemap Allocation for use as a graphics texture from a 
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: bitmap with cubemap faces layed out in the following format: right, left, top, bottom, front, back |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `b` | [Bitmap](../android/graphics/Bitmap.md)!: bitmap with cubemap faces layed out in the following format: right, left, top, bottom, front, back |
 
 | Return ||
 |---|---|
@@ -1948,9 +1948,9 @@ Creates a cubemap Allocation from a `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: Bitmap with cubemap faces layed out in the following format: right, left, top, bottom, front, back |
-| `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the cubemap |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `b` | [Bitmap](../android/graphics/Bitmap.md)!: Bitmap with cubemap faces layed out in the following format: right, left, top, bottom, front, back |
+| `mips` | [Allocation.MipmapControl](../android/renderscript/Allocation.MipmapControl.md)!: specifies desired mipmap behaviour for the cubemap |
 | --- | --- |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the cubemap is utilized |
 
@@ -1980,15 +1980,15 @@ Creates a non-mipmapped cubemap Allocation for use as a sampler input from 6 `ht
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `xpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive x direction |
-| `xneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative x direction |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `xpos` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the positive x direction |
+| `xneg` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the negative x direction |
 | --- | --- |
-| `ypos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive y direction |
-| `yneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative y direction |
-| `zpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive z direction |
+| `ypos` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the positive y direction |
+| `yneg` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the negative y direction |
+| `zpos` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the positive z direction |
 | --- | --- |
-| `zneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative z direction |
+| `zneg` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the negative z direction |
 
 | Return ||
 |---|---|
@@ -2018,16 +2018,16 @@ Creates a cubemap Allocation from 6 `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `xpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive x direction |
-| `xneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative x direction |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `xpos` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the positive x direction |
+| `xneg` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the negative x direction |
 | --- | --- |
-| `ypos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive y direction |
-| `yneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative y direction |
-| `zpos` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the positive z direction |
+| `ypos` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the positive y direction |
+| `yneg` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the negative y direction |
+| `zpos` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the positive z direction |
 | --- | --- |
-| `zneg` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: cubemap face in the negative z direction |
-| `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the cubemap |
+| `zneg` | [Bitmap](../android/graphics/Bitmap.md)!: cubemap face in the negative z direction |
+| `mips` | [Allocation.MipmapControl](../android/renderscript/Allocation.MipmapControl.md)!: specifies desired mipmap behaviour for the cubemap |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the cubemap is utilized |
 | --- | --- |
 
@@ -2054,8 +2054,8 @@ With target API version 18 or greater, this Allocation will be created with `htt
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: bitmap source for the allocation data |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `b` | [Bitmap](../android/graphics/Bitmap.md)!: bitmap source for the allocation data |
 
 | Return ||
 |---|---|
@@ -2080,9 +2080,9 @@ Creates an Allocation from a `https://developer.android.com/reference/kotlin/and
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `b` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: Bitmap source for the allocation data |
-| `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the allocation |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `b` | [Bitmap](../android/graphics/Bitmap.md)!: Bitmap source for the allocation data |
+| `mips` | [Allocation.MipmapControl](../android/renderscript/Allocation.MipmapControl.md)!: specifies desired mipmap behaviour for the allocation |
 | --- | --- |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocation is utilized |
 
@@ -2110,8 +2110,8 @@ With target API version 18 or greater, this allocation will be created with `htt
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `res` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)!: application resources |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `res` | [Resources](../android/content/res/Resources.md)!: application resources |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): resource id to load the data from |
 | --- | --- |
 
@@ -2139,11 +2139,11 @@ Creates an Allocation from the Bitmap referenced by resource ID.
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `res` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)!: application resources |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `res` | [Resources](../android/content/res/Resources.md)!: application resources |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): resource id to load the data from |
 | --- | --- |
-| `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the allocation |
+| `mips` | [Allocation.MipmapControl](../android/renderscript/Allocation.MipmapControl.md)!: specifies desired mipmap behaviour for the allocation |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocation is utilized |
 
 | Return ||
@@ -2168,7 +2168,7 @@ Creates an Allocation containing string data encoded in UTF-8 format.
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: string to create the allocation from |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocaiton is utilized |
 | --- | --- |
@@ -2191,8 +2191,8 @@ Creates an Allocation with a specified number of given elements
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the Allocation will belong. |
-| `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!: Element to use in the Allocation |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the Allocation will belong. |
+| `e` | [Element](../android/renderscript/Element.md)!: Element to use in the Allocation |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of Elements in the Allocation |
 | --- | --- |
 
@@ -2219,8 +2219,8 @@ Creates an Allocation with a specified number of given elements
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the Allocation will belong. |
-| `e` | [Element](https://developer.android.com/reference/kotlin/android/renderscript/Element)!: Element to use in the Allocation |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the Allocation will belong. |
+| `e` | [Element](../android/renderscript/Element.md)!: Element to use in the Allocation |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of Elements in the Allocation |
 | --- | --- |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the Allocation is utilized |
@@ -2246,8 +2246,8 @@ Creates an Allocation for use by scripts with a given `https://developer.android
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the Allocation will belong. |
-| `type` | [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!: RenderScript Type describing data layout |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the Allocation will belong. |
+| `type` | [Type](../android/renderscript/Type.md)!: RenderScript Type describing data layout |
 
 | Return ||
 |---|---|
@@ -2272,8 +2272,8 @@ Creates a new Allocation with the given `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `type` | [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!: RenderScript type describing data layout |
-| `mips` | [Allocation.MipmapControl](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl)!: specifies desired mipmap behaviour for the allocation |
+| `type` | [Type](../android/renderscript/Type.md)!: RenderScript type describing data layout |
+| `mips` | [Allocation.MipmapControl](../android/renderscript/Allocation.MipmapControl.md)!: specifies desired mipmap behaviour for the allocation |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the Allocation is utilized |
 | --- | --- |
 
@@ -2295,8 +2295,8 @@ Creates an Allocation with the size specified by the type and no mipmaps generat
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](https://developer.android.com/reference/kotlin/android/renderscript/RenderScript)!: Context to which the allocation will belong. |
-| `type` | [Type](https://developer.android.com/reference/kotlin/android/renderscript/Type)!: renderscript type describing data layout |
+| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: Context to which the allocation will belong. |
+| `type` | [Type](../android/renderscript/Type.md)!: renderscript type describing data layout |
 | `usage` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): bit field specifying how the allocation is utilized |
 | --- | --- |
 
@@ -2569,7 +2569,7 @@ This is only intended to be used by auto-generated code reflected from the Rende
 | Parameters ||
 |---|---|
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
-| `fp` | [FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker)!: |
+| `fp` | [FieldPacker](../android/renderscript/FieldPacker.md)!: |
 
 ### setFromFieldPacker
 
@@ -2591,7 +2591,7 @@ This is only intended to be used by auto-generated code reflected from the Rende
 |---|---|
 | `xoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `component_number` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
-| `fp` | [FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker)!: |
+| `fp` | [FieldPacker](../android/renderscript/FieldPacker.md)!: |
 | --- | --- |
 
 ### setFromFieldPacker
@@ -2620,7 +2620,7 @@ This is only intended to be used by auto-generated code reflected from the Rende
 | `zoff` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
 | `component_number` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
-| `fp` | [FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker)!: |
+| `fp` | [FieldPacker](../android/renderscript/FieldPacker.md)!: |
 
 ### setOnBufferAvailableListener
 
@@ -2637,7 +2637,7 @@ Set a notification handler for `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `callback` | [Allocation.OnBufferAvailableListener](https://developer.android.com/reference/kotlin/android/renderscript/Allocation.OnBufferAvailableListener)!: instance of the OnBufferAvailableListener class to be called when buffer arrive. |
+| `callback` | [Allocation.OnBufferAvailableListener](../android/renderscript/Allocation.OnBufferAvailableListener.md)!: instance of the OnBufferAvailableListener class to be called when buffer arrive. |
 
 ### setSurface
 
@@ -2654,7 +2654,7 @@ Associate a `https://developer.android.com/reference/kotlin/android/view/Surface
 
 | Parameters ||
 |---|---|
-| `sur` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#)!: Surface to associate with allocation |
+| `sur` | [Surface](../android/view/Surface.md)!: Surface to associate with allocation |
 
 ### syncAll
 

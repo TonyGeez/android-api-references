@@ -8,7 +8,7 @@ class DomainVerificationUserState : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.verify.domain.DomainVerificationUserState](https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#) |
+| ↳ | [android.content.pm.verify.domain.DomainVerificationUserState](../android/content/pm/verify/domain/DomainVerificationUserState.md) |
 
 Contains the user selection state for a package. This means all web HTTP(S) domains declared by a package in its manifest, whether or not they were marked for auto verification.
 
@@ -50,7 +50,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getHostToStateMap()()` Mapping of domain host to state, as defined by android. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getPackageName()()` The package name that this data corresponds to. |
-| [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle.html#) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getUser()()` The user that this data corresponds to. |
+| [UserHandle](../android/os/UserHandle.md) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getUser()()` The user that this data corresponds to. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#isLinkHandlingAllowed()()` Whether or not this package is allowed to open links. |
@@ -60,7 +60,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [DomainVerificationUserState](https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DomainVerificationUserState](../android/content/pm/verify/domain/DomainVerificationUserState.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -250,7 +250,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

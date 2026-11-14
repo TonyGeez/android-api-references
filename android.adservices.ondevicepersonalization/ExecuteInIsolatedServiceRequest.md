@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # ExecuteInIsolatedServiceRequest
 
-Kotlin | [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest "View this page in Java")
+Kotlin | [Java](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class ExecuteInIsolatedServiceRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#) |
+| ↳ | [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.md) |
 
 The request of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationManager#executeInIsolatedService(android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
 
@@ -25,10 +25,10 @@ The request of `https://developer.android.com/reference/kotlin/android/adservice
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getAppParams()()` A `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed from the calling app to the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
-| open [ExecuteInIsolatedServiceRequest.OutputSpec](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getOutputSpec()()` The set of spec to indicate output of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
+| open [PersistableBundle](../android/os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getAppParams()()` A `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed from the calling app to the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
+| open [ExecuteInIsolatedServiceRequest.OutputSpec](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getOutputSpec()()` The set of spec to indicate output of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
 | --- | --- |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getService()()` The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
+| open [ComponentName](../android/content/ComponentName.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getService()()` The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#hashCode()()` Returns a hash code value for the object. |
 
 ## Public methods

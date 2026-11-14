@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface XPathFunction
 ```
 
-| [javax.xml.xpath.XPathFunction](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunction#) |
+| [javax.xml.xpath.XPathFunction](../javax/xml/xpath/XPathFunction.md) |
 
 `XPathFunction`provides access to XPath functions.
 
@@ -18,7 +18,7 @@ Functions are identified by QName and arity in XPath.
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [evaluate](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunction#evaluate(kotlin.collections.MutableList))`(`args:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?>!`)` Evaluate the function with the specified arguments. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [evaluate](../javax/xml/xpath/XPathFunction.md))`(`args:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?>!`)` Evaluate the function with the specified arguments. |
 
 ## Public methods
 

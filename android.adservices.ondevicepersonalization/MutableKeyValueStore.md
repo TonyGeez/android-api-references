@@ -7,7 +7,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 interface MutableKeyValueStore : KeyValueStore
 ```
 
-| [android.adservices.ondevicepersonalization.MutableKeyValueStore](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/MutableKeyValueStore#) |
+| [android.adservices.ondevicepersonalization.MutableKeyValueStore](../android/adservices/ondevicepersonalization/MutableKeyValueStore.md) |
 
 > [!CAUTION]
 > **This interface was deprecated in API level 37.**

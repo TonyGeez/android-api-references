@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DateSorter
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/DateSorter "View this page in Java") 
+Kotlin| [Java](../android/webkit/DateSorter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class DateSorter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.DateSorter](https://developer.android.com/reference/kotlin/android/webkit/DateSorter#) |
+| ↳ | [android.webkit.DateSorter](../android/webkit/DateSorter.md) |
 
 Sorts dates into the following groups: Today Yesterday seven days ago one month ago older than a month ago
 
@@ -21,17 +21,17 @@ Sorts dates into the following groups: Today Yesterday seven days ago one month 
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_COUNT](https://developer.android.com/reference/kotlin/android/webkit/DateSorter#DAY_COUNT:kotlin.Int) must be \>= 3 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_COUNT](../android/webkit/DateSorter.md) must be \>= 3 |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DateSorter](https://developer.android.com/reference/kotlin/android/webkit/DateSorter#DateSorter(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` <br /> |
+| [DateSorter](../android/webkit/DateSorter.md))`(`context:` ` [Context](../android/content/Context.md)!`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBoundary](https://developer.android.com/reference/kotlin/android/webkit/DateSorter#getBoundary(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/android/webkit/DateSorter#getIndex(kotlin.Long))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLabel](https://developer.android.com/reference/kotlin/android/webkit/DateSorter#getLabel(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBoundary](../android/webkit/DateSorter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../android/webkit/DateSorter.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLabel](../android/webkit/DateSorter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 ## Constants
@@ -60,7 +60,7 @@ DateSorter(context: Context!)
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Application context |
+| `context` | [Context](../android/content/Context.md)!:Application context |
 
 ## Public methods
 

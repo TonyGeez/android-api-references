@@ -8,13 +8,13 @@ abstract class AbstractInputMethodService : Service, KeyEvent.Callback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) ||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) |||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) ||
+| ↳ | [android.content.Context](../android/content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android/app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.inputmethodservice.AbstractInputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#) |
+| | | | ↳ | [android.inputmethodservice.AbstractInputMethodService](../android/inputmethodservice/AbstractInputMethodService.md) |
 
-Known Direct Subclasses [InputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService) [InputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
+Known Direct Subclasses [InputMethodService](../android/inputmethodservice/InputMethodService.md) [InputMethodService](../android/inputmethodservice/InputMethodService.md) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
 
 AbstractInputMethodService provides a abstract base class for input methods. Normal input method implementations will not derive from this directly, instead building on top of `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService` or another more complete base class. Be sure to read `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod.html#` for more information on the basics of writing input methods.
 
@@ -478,7 +478,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1054,13 +1054,13 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [KeyEvent.DispatcherState](https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#getKeyDispatcherState()()` Return the global `https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState.html#` for used for processing events from the target application. |
+| open [KeyEvent.DispatcherState](../android/view/KeyEvent.DispatcherState.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#getKeyDispatcherState()()` Return the global `https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState.html#` for used for processing events from the target application. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
-| [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onConfigurationChanged(android.content.res.Configuration)(configuration: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)` Called by the system when the device configuration changes while your component is running. |
-| abstract [AbstractInputMethodService.AbstractInputMethodImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onCreateInputMethodInterface()()` Called by the framework during initialization, when the InputMethod interface for this service needs to be created. |
-| abstract [AbstractInputMethodService.AbstractInputMethodSessionImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onCreateInputMethodSessionInterface()()` Called by the framework when a new InputMethodSession interface is needed for a new client of the input method. |
+| abstract [AbstractInputMethodService.AbstractInputMethodImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onCreateInputMethodInterface()()` Called by the framework during initialization, when the InputMethod interface for this service needs to be created. |
+| abstract [AbstractInputMethodService.AbstractInputMethodSessionImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onCreateInputMethodSessionInterface()()` Called by the framework when a new InputMethodSession interface is needed for a new client of the input method. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService#onGenericMotionEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this to handle generic motion events on your input method. |
@@ -2505,7 +2505,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2546,9 +2546,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2900,7 +2900,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2923,7 +2923,7 @@ For more information, read [Handling Runtime Changes](https://developer.android.
 | Parameters ||
 |---|---|
 | `newConfig` | The new device configuration. This value cannot be `null`. |
-| `configuration` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#): This value cannot be `null`. |
+| `configuration` | [Configuration](../android/content/res/Configuration.md): This value cannot be `null`. |
 
 ### onCreateInputMethodInterface
 
@@ -2967,7 +2967,7 @@ Implement this to handle generic motion events on your input method.
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The motion event being received. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event being received. |
 
 | Return ||
 |---|---|
@@ -2997,7 +2997,7 @@ open fun onShouldVerifyKeyEvent(event: KeyEvent): Boolean
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#): This value cannot be `null`. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md): This value cannot be `null`. |
 
 **See Also**
 
@@ -3015,7 +3015,7 @@ Implement this to handle trackball events on your input method.
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The motion event being received. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event being received. |
 
 | Return ||
 |---|---|
@@ -3053,7 +3053,7 @@ Here we override to prevent WindowProviderService from invoking Application.regi
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#): This value cannot be `null`. |
+| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md): This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3073,7 +3073,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#): This value cannot be `null`. |
+| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md): This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3097,7 +3097,7 @@ Implement this to handle android.os.Binder#dump calls on your input method.
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 | --- | --- |

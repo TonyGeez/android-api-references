@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # StatsLog
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/StatsLog "View this page in Java") 
+Kotlin| [Java](../android/util/StatsLog.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StatsLog
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.StatsLog](https://developer.android.com/reference/kotlin/android/util/StatsLog#) |
+| ↳ | [android.util.StatsLog](../android/util/StatsLog.md) |
 
 StatsLog provides an API for developers to send events to statsd. The events can be used to define custom metrics inside statsd.
 
@@ -21,11 +21,11 @@ StatsLog provides an API for developers to send events to statsd. The events can
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logBinaryPushStateChanged](https://developer.android.com/reference/kotlin/android/util/StatsLog#logBinaryPushStateChanged(kotlin.String,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.LongArray))`(`trainName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `trainVersionCode:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `experimentIds:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)`)` Logs an event for binary push for module updates. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logEvent](https://developer.android.com/reference/kotlin/android/util/StatsLog#logEvent(kotlin.Int))`(`label:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Logs an event that does not represent a start or stop boundary. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logStart](https://developer.android.com/reference/kotlin/android/util/StatsLog#logStart(kotlin.Int))`(`label:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Logs a start event. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logBinaryPushStateChanged](../android/util/StatsLog.md))`(`trainName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `trainVersionCode:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `experimentIds:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)`)` Logs an event for binary push for module updates. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logEvent](../android/util/StatsLog.md))`(`label:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Logs an event that does not represent a start or stop boundary. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logStart](../android/util/StatsLog.md))`(`label:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Logs a start event. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logStop](https://developer.android.com/reference/kotlin/android/util/StatsLog#logStop(kotlin.Int))`(`label:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Logs a stop event. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [logStop](../android/util/StatsLog.md))`(`label:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Logs a stop event. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ static fun logBinaryPushStateChanged(
 ```
 
 Logs an event for binary push for module updates. 
-Requires [android.Manifest.permission#DUMP](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#DUMP:kotlin.String) and [android.Manifest.permission#PACKAGE_USAGE_STATS](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#PACKAGE_USAGE_STATS:kotlin.String)
+Requires [android.Manifest.permission#DUMP](../android/Manifest.permission.md) and [android.Manifest.permission#PACKAGE_USAGE_STATS](../android/Manifest.permission.md)
 
 | Parameters ||
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

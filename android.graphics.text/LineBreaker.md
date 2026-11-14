@@ -8,7 +8,7 @@ open class LineBreaker
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.text.LineBreaker](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#) |
+| ↳ | [android.graphics.text.LineBreaker](../android/graphics/text/LineBreaker.md) |
 
 Provides automatic line breaking for a *single* paragraph.
 
@@ -88,7 +88,7 @@ Provides automatic line breaking for a *single* paragraph.
 
 | Public methods ||
 |---|---|
-| open [LineBreaker.Result](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.Result) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#computeLineBreaks(android.graphics.text.MeasuredText,%20android.graphics.text.LineBreaker.ParagraphConstraints,%20kotlin.Int)(measuredPara: https://developer.android.com/reference/kotlin/android/graphics/text/MeasuredText, constraints: https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.ParagraphConstraints, lineNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Break paragraph into lines. |
+| open [LineBreaker.Result](../android/graphics/text/LineBreaker.Result.md) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#computeLineBreaks(android.graphics.text.MeasuredText,%20android.graphics.text.LineBreaker.ParagraphConstraints,%20kotlin.Int)(measuredPara: https://developer.android.com/reference/kotlin/android/graphics/text/MeasuredText, constraints: https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.ParagraphConstraints, lineNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Break paragraph into lines. |
 
 ## Constants
 
@@ -218,8 +218,8 @@ Break paragraph into lines. The result is filled to out param.
 
 | Parameters ||
 |---|---|
-| `measuredPara` | [MeasuredText](https://developer.android.com/reference/kotlin/android/graphics/text/MeasuredText): a result of the text measurement. This value cannot be `null`. |
-| `constraints` | [LineBreaker.ParagraphConstraints](https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.ParagraphConstraints): for a single paragraph. This value cannot be `null`. |
+| `measuredPara` | [MeasuredText](../android/graphics/text/MeasuredText.md): a result of the text measurement. This value cannot be `null`. |
+| `constraints` | [LineBreaker.ParagraphConstraints](../android/graphics/text/LineBreaker.ParagraphConstraints.md): for a single paragraph. This value cannot be `null`. |
 | `lineNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a line number of this paragraph. Value is 0 or greater |
 | --- | --- |
 

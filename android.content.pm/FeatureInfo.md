@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # FeatureInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/pm/FeatureInfo "View this page in Java") 
+Kotlin| [Java](../android/content/pm/FeatureInfo.md) 
 | --- | --- |
 
 ```
@@ -13,46 +13,46 @@ open class FeatureInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#) |
+| ↳ | [android.content.pm.FeatureInfo](../android/content/pm/FeatureInfo.md) |
 
 Definition of a single optional hardware or software feature of an Android device.
 
 This object is used to represent both features supported by a device and features requested by an app. Apps can request that certain features be available as a prerequisite to being installed through the`uses-feature`tag in their manifests.
 
-Starting in [android.os.Build.VERSION_CODES#N](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int), features can have a version, which must always be backwards compatible. That is, a device claiming to support version 3 of a specific feature must support apps requesting version 1 of that feature.
+Starting in [android.os.Build.VERSION_CODES#N](../android/os/Build.VERSION_CODES.md), features can have a version, which must always be backwards compatible. That is, a device claiming to support version 3 of a specific feature must support apps requesting version 1 of that feature.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_REQUIRED](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#FLAG_REQUIRED:kotlin.Int) Set on [flags](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#flags:kotlin.Int) if this feature has been required by the application. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_ES_VERSION_UNDEFINED](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#GL_ES_VERSION_UNDEFINED:kotlin.Int) Default value for [reqGlEsVersion](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#reqGlEsVersion:kotlin.Int); |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_REQUIRED](../android/content/pm/FeatureInfo.md) Set on [flags](../android/content/pm/FeatureInfo.md) if this feature has been required by the application. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_ES_VERSION_UNDEFINED](../android/content/pm/FeatureInfo.md) Default value for [reqGlEsVersion](../android/content/pm/FeatureInfo.md); |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#FeatureInfo())`()` <br /> |
-| [FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#FeatureInfo(android.content.pm.FeatureInfo))`(`orig:` ` [FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#)!`)` <br /> |
+| [FeatureInfo](../android/content/pm/FeatureInfo.md))`()` <br /> |
+| [FeatureInfo](../android/content/pm/FeatureInfo.md))`(`orig:` ` [FeatureInfo](../android/content/pm/FeatureInfo.md)!`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#describeContents())`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getGlEsVersion](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#getGlEsVersion())`()` This method extracts the major and minor version of reqGLEsVersion attribute and returns it as a string. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#toString())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/pm/FeatureInfo.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getGlEsVersion](../android/content/pm/FeatureInfo.md))`()` This method extracts the major and minor version of reqGLEsVersion attribute and returns it as a string. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/pm/FeatureInfo.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/pm/FeatureInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [FeatureInfo](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#CREATOR:android.os.Parcelable.Creator) <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#flags:kotlin.Int) Additional flags. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#name:kotlin.String) The name of this feature, for example "android. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FeatureInfo](../android/content/pm/FeatureInfo.md)!\> | [CREATOR](../android/content/pm/FeatureInfo.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](../android/content/pm/FeatureInfo.md) Additional flags. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../android/content/pm/FeatureInfo.md) The name of this feature, for example "android. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reqGlEsVersion](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#reqGlEsVersion:kotlin.Int) The GLES version used by an application. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [version](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#version:kotlin.Int) If this object represents a feature supported by a device, this is the maximum version of this feature supported by the device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reqGlEsVersion](../android/content/pm/FeatureInfo.md) The GLES version used by an application. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [version](../android/content/pm/FeatureInfo.md) If this object represents a feature supported by a device, this is the maximum version of this feature supported by the device. |
 
 ## Constants
 
@@ -64,7 +64,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val FLAG_REQUIRED: Int
 ```
 
-Set on [flags](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#flags:kotlin.Int) if this feature has been required by the application. 
+Set on [flags](../android/content/pm/FeatureInfo.md) if this feature has been required by the application. 
 
  Value: 1
 
@@ -76,7 +76,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val GL_ES_VERSION_UNDEFINED: Int
 ```
 
-Default value for [reqGlEsVersion](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#reqGlEsVersion:kotlin.Int); 
+Default value for [reqGlEsVersion](../android/content/pm/FeatureInfo.md); 
 
  Value: 0
 
@@ -110,7 +110,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getGlEsVersion
 
@@ -151,8 +151,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 
@@ -172,7 +172,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 var flags: Int
 ```
 
-Additional flags. May be zero or more of [FLAG_REQUIRED](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#FLAG_REQUIRED:kotlin.Int). 
+Additional flags. May be zero or more of [FLAG_REQUIRED](../android/content/pm/FeatureInfo.md). 
 
 ### name
 
@@ -182,7 +182,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 var name: String!
 ```
 
-The name of this feature, for example "android.hardware.camera". If this is null, then this is an OpenGL ES version feature as described in [reqGlEsVersion](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#reqGlEsVersion:kotlin.Int). 
+The name of this feature, for example "android.hardware.camera". If this is null, then this is an OpenGL ES version feature as described in [reqGlEsVersion](../android/content/pm/FeatureInfo.md). 
 
 ### reqGlEsVersion
 
@@ -192,7 +192,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 var reqGlEsVersion: Int
 ```
 
-The GLES version used by an application. The upper order 16 bits represent the major version and the lower order 16 bits the minor version. Only valid if [name](https://developer.android.com/reference/kotlin/android/content/pm/FeatureInfo#name:kotlin.String) is null. 
+The GLES version used by an application. The upper order 16 bits represent the major version and the lower order 16 bits the minor version. Only valid if [name](../android/content/pm/FeatureInfo.md) is null. 
 
 ### version
 

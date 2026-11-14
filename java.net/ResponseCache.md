@@ -10,9 +10,9 @@ abstract class ResponseCache
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#) |
+| ↳ | [java.net.ResponseCache](../java/net/ResponseCache.md) |
 
-| Known Direct Subclasses [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache.html#) |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [HttpResponseCache](https://developer.android.com/reference/kotlin/android/net/http/HttpResponseCache.html#) | Caches HTTP and HTTPS responses to the filesystem so they may be reused, saving time and bandwidth. | |
+| Known Direct Subclasses [HttpResponseCache](../android/net/http/HttpResponseCache.md) |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [HttpResponseCache](../android/net/http/HttpResponseCache.md) | Caches HTTP and HTTPS responses to the filesystem so they may be reused, saving time and bandwidth. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Represents implementations of URLConnection caches. An instance of such a class can be registered with the system by doing ResponseCache.setDefault(ResponseCache), and the system will call this object in order to:
@@ -28,15 +28,15 @@ The ResponseCache implementation decides which resources should be cached, and f
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#ResponseCache())`()` <br /> |
+| [ResponseCache](../java/net/ResponseCache.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse)! | [get](https://developer.android.com/reference/kotlin/java/net/ResponseCache#get(java.net.URI,%20kotlin.String,%20kotlin.collections.MutableMap))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `rqstMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `rqstHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Retrieve the cached response based on the requesting uri, request method and request headers. |
-| openstatic [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#)! | [getDefault](https://developer.android.com/reference/kotlin/java/net/ResponseCache#getDefault())`()` Gets the system-wide response cache. |
-| abstract [CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest)! | [put](https://developer.android.com/reference/kotlin/java/net/ResponseCache#put(java.net.URI,%20java.net.URLConnection))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI)!`, `conn:` ` [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)!`)` The protocol handler calls this method after a resource has been retrieved, and the ResponseCache must decide whether or not to store the resource in its cache. |
+| abstract [CacheResponse](../java/net/CacheResponse.md)! | [get](../java/net/ResponseCache.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `rqstMethod:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `rqstHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Retrieve the cached response based on the requesting uri, request method and request headers. |
+| openstatic [ResponseCache](../java/net/ResponseCache.md)! | [getDefault](../java/net/ResponseCache.md))`()` Gets the system-wide response cache. |
+| abstract [CacheRequest](../java/net/CacheRequest.md)! | [put](../java/net/ResponseCache.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `conn:` ` [URLConnection](../java/net/URLConnection.md)!`)` The protocol handler calls this method after a resource has been retrieved, and the ResponseCache must decide whether or not to store the resource in its cache. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](https://developer.android.com/reference/kotlin/java/net/ResponseCache#setDefault(java.net.ResponseCache))`(`responseCache:` ` [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#)!`)` Sets (or unsets) the system-wide cache. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../java/net/ResponseCache.md))`(`responseCache:` ` [ResponseCache](../java/net/ResponseCache.md)!`)` Sets (or unsets) the system-wide cache. |
 
 ## Public constructors
 
@@ -66,14 +66,14 @@ Retrieve the cached response based on the requesting uri, request method and req
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:a`URI`used to reference the requested network resource |
+| `uri` | [URI](../java/net/URI.md)!:a`URI`used to reference the requested network resource |
 | `rqstMethod` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a`String`representing the request method |
 | `rqstHeaders` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>!:- a Map from request header field names to lists of field values representing the current request headers |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [CacheResponse](https://developer.android.com/reference/kotlin/java/net/CacheResponse)! | a`CacheResponse`instance if available from cache, or null otherwise |
+| [CacheResponse](../java/net/CacheResponse.md)! | a`CacheResponse`instance if available from cache, or null otherwise |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -82,10 +82,10 @@ Retrieve the cached response based on the requesting uri, request method and req
 
 **See Also**
 
-- [java.net.URLConnection#setUseCaches(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setUseCaches(kotlin.Boolean))
-- [java.net.URLConnection#getUseCaches()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getUseCaches())
-- [java.net.URLConnection#setDefaultUseCaches(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultUseCaches(kotlin.Boolean))
-- [java.net.URLConnection#getDefaultUseCaches()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDefaultUseCaches()) 
+- [java.net.URLConnection#setUseCaches(boolean)](../java/net/URLConnection.md))
+- [java.net.URLConnection#getUseCaches()](../java/net/URLConnection.md))
+- [java.net.URLConnection#setDefaultUseCaches(boolean)](../java/net/URLConnection.md))
+- [java.net.URLConnection#getDefaultUseCaches()](../java/net/URLConnection.md)) 
 
 ### getDefault
 
@@ -99,15 +99,15 @@ Gets the system-wide response cache.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------|
-| [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#)! | the system-wide`ResponseCache` |
+| [ResponseCache](../java/net/ResponseCache.md)! | the system-wide`ResponseCache` |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](https://developer.android.com/reference/kotlin/java/net/NetPermission)`("getResponseCache")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](../java/net/NetPermission.md)`("getResponseCache")` |
 
 **See Also**
 
-- [#setDefault(ResponseCache)](https://developer.android.com/reference/kotlin/java/net/ResponseCache#setDefault(java.net.ResponseCache)) 
+- [#setDefault(ResponseCache)](../java/net/ResponseCache.md)) 
 
 ### put
 
@@ -124,12 +124,12 @@ The protocol handler calls this method after a resource has been retrieved, and 
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI)!:a`URI`used to reference the requested network resource |
-| `conn` | [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection)!:- a URLConnection instance that is used to fetch the response to be cached |
+| `uri` | [URI](../java/net/URI.md)!:a`URI`used to reference the requested network resource |
+| `conn` | [URLConnection](../java/net/URLConnection.md)!:- a URLConnection instance that is used to fetch the response to be cached |
 
 | Return ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [CacheRequest](https://developer.android.com/reference/kotlin/java/net/CacheRequest)! | a`CacheRequest`for recording the response to be cached. Null return indicates that the caller does not intend to cache the response. |
+| [CacheRequest](../java/net/CacheRequest.md)! | a`CacheRequest`for recording the response to be cached. Null return indicates that the caller does not intend to cache the response. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -148,11 +148,11 @@ Sets (or unsets) the system-wide cache. Note: non-standard procotol handlers may
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `responseCache` | [ResponseCache](https://developer.android.com/reference/kotlin/java/net/ResponseCache#)!:The response cache, or`null`to unset the cache. |
+| `responseCache` | [ResponseCache](../java/net/ResponseCache.md)!:The response cache, or`null`to unset the cache. |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](https://developer.android.com/reference/kotlin/java/net/NetPermission)`("setResponseCache")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](../java/net/NetPermission.md)`("setResponseCache")` |
 
 **See Also**
 

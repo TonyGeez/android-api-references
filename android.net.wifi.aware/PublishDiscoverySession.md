@@ -8,8 +8,8 @@ open class PublishDiscoverySession : DiscoverySession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.wifi.aware.DiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession) ||
-| | ↳ | [android.net.wifi.aware.PublishDiscoverySession](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#) |
+| ↳ | [android.net.wifi.aware.DiscoverySession](../android/net/wifi/aware/DiscoverySession.md) ||
+| | ↳ | [android.net.wifi.aware.PublishDiscoverySession](../android/net/wifi/aware/PublishDiscoverySession.md) |
 
 A class representing a Aware publish session. Created when `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#publish(android.net.wifi.aware.PublishConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)` is called and a discovery session is created and returned in `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback#onPublishStarted(android.net.wifi.aware.PublishDiscoverySession)`. See baseline functionality of all discovery sessions in `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySession`. This object allows updating an existing/running publish discovery session using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#updatePublish(android.net.wifi.aware.PublishConfig)`.
 
@@ -43,8 +43,8 @@ Accept a Wi-Fi Aware data path request to create a connection with the target pe
 
 | Parameters ||
 |---|---|
-| `peerHandle` | [PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle): The peer's handle for the data path request. This value cannot be `null`. |
-| `request` | [AwareDataPathRequest](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwareDataPathRequest): The data path request. This value cannot be `null`. |
+| `peerHandle` | [PeerHandle](../android/net/wifi/aware/PeerHandle.md): The peer's handle for the data path request. This value cannot be `null`. |
+| `request` | [AwareDataPathRequest](../android/net/wifi/aware/AwareDataPathRequest.md): The data path request. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -62,7 +62,7 @@ Reject a Wi-Fi Aware data path request received from peer. This is the response 
 
 | Parameters ||
 |---|---|
-| `peerHandle` | [PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle): The peer's handle for the data path request. This value cannot be `null`. |
+| `peerHandle` | [PeerHandle](../android/net/wifi/aware/PeerHandle.md): The peer's handle for the data path request. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -85,4 +85,4 @@ Re-configure the currently active publish session. The `https://developer.androi
 
 | Parameters ||
 |---|---|
-| `publishConfig` | [PublishConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig): The new discovery publish session configuration (`https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig`). This value cannot be `null`. |
+| `publishConfig` | [PublishConfig](../android/net/wifi/aware/PublishConfig.md): The new discovery publish session configuration (`https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig`). This value cannot be `null`. |

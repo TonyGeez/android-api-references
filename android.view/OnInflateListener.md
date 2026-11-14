@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnInflateListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ViewStub.OnInflateListener "View this page in Java") 
+Kotlin| [Java](../android/view/ViewStub.OnInflateListener.md) 
 | --- | --- |
 
 ```
 interface OnInflateListener
 ```
 
-| [android.view.ViewStub.OnInflateListener](https://developer.android.com/reference/kotlin/android/view/ViewStub.OnInflateListener#) |
+| [android.view.ViewStub.OnInflateListener](../android/view/ViewStub.OnInflateListener.md) |
 
 Listener used to receive a notification after a ViewStub has successfully inflated its layout resource.
 
@@ -19,7 +19,7 @@ Listener used to receive a notification after a ViewStub has successfully inflat
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInflate](https://developer.android.com/reference/kotlin/android/view/ViewStub.OnInflateListener#onInflate(android.view.ViewStub,%20android.view.View))`(`stub:` ` [ViewStub](https://developer.android.com/reference/kotlin/android/view/ViewStub)!`, `inflated:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`)` Invoked after a ViewStub successfully inflated its layout resource. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInflate](../android/view/ViewStub.OnInflateListener.md))`(`stub:` ` [ViewStub](../android/view/ViewStub.md)!`, `inflated:` ` [View](../android/view/View.md)!`)` Invoked after a ViewStub successfully inflated its layout resource. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Invoked after a ViewStub successfully inflated its layout resource. This method 
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------|
-| `stub` | [ViewStub](https://developer.android.com/reference/kotlin/android/view/ViewStub)!:The ViewStub that initiated the inflation. |
-| `inflated` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The inflated View. |
+| `stub` | [ViewStub](../android/view/ViewStub.md)!:The ViewStub that initiated the inflation. |
+| `inflated` | [View](../android/view/View.md)!:The inflated View. |

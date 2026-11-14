@@ -8,8 +8,8 @@ class IsoChronology : AbstractChronology, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.time.chrono.AbstractChronology](https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology) ||
-| | ↳ | [java.time.chrono.IsoChronology](https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#) |
+| ↳ | [java.time.chrono.AbstractChronology](../java/time/chrono/AbstractChronology.md) ||
+| | ↳ | [java.time.chrono.IsoChronology](../java/time/chrono/IsoChronology.md) |
 
 The ISO calendar system.
 
@@ -29,36 +29,36 @@ The fields are defined as follows:
 
 | Public methods ||
 |---|---|
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#date(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the proleptic-year, month-of-year and day-of-month fields. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#date(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the era, year-of-era, month-of-year and day-of-month fields. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#date(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an ISO local date from another date-time object. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#date(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the proleptic-year, month-of-year and day-of-month fields. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#date(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the era, year-of-era, month-of-year and day-of-month fields. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#date(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an ISO local date from another date-time object. |
 | --- | --- |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateEpochDay(kotlin.Long)(epochDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains an ISO local date from the epoch-day. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateNow()()` Obtains the current ISO local date from the system clock in the default time-zone. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateNow(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current ISO local date from the specified clock. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateEpochDay(kotlin.Long)(epochDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains an ISO local date from the epoch-day. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateNow()()` Obtains the current ISO local date from the system clock in the default time-zone. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateNow(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current ISO local date from the specified clock. |
 | --- | --- |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateNow(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current ISO local date from the system clock in the specified time-zone. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateYearDay(kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the proleptic-year and day-of-year fields. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateYearDay(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the era, year-of-era and day-of-year fields. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateNow(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current ISO local date from the system clock in the specified time-zone. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateYearDay(kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the proleptic-year and day-of-year fields. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#dateYearDay(java.time.chrono.Era,%20kotlin.Int,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an ISO local date from the era, year-of-era and day-of-year fields. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#epochSecond(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.time.ZoneOffset)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoneOffset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!)` Gets the number of seconds from the epoch of 1970-01-01T00:00:00Z. |
-| [IsoEra](https://developer.android.com/reference/kotlin/java/time/chrono/IsoEra)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#eraOf(kotlin.Int)(eraValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates the chronology era object from the numeric value. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#eras()()` Gets the list of eras for the chronology. |
+| [IsoEra](../java/time/chrono/IsoEra.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#eraOf(kotlin.Int)(eraValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates the chronology era object from the numeric value. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Era](../java/time/chrono/Era.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#eras()()` Gets the list of eras for the chronology. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#getCalendarType()()` Gets the calendar type of the underlying calendar system - 'iso8601'. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#getId()()` Gets the ID of the chronology - 'ISO'. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#isIsoBased()()` `IsoChronology` is an ISO based chronology, which supports fields in `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#`, such as `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#DAY_OF_QUARTER:java.time.temporal.TemporalField` and `https://developer.android.com/reference/kotlin/java/time/temporal/IsoFields.html#QUARTER_OF_YEAR:java.time.temporal.TemporalField`. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#isLeapYear(kotlin.Long)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the year is a leap year, according to the ISO proleptic calendar system rules. |
-| [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#localDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an ISO local date-time from another date-time object. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#period(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(years: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, months: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a period for this chronology based on years, months and days. |
+| [LocalDateTime](../java/time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#localDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an ISO local date-time from another date-time object. |
+| [Period](../java/time/Period.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#period(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(years: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, months: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, days: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a period for this chronology based on years, months and days. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#prolepticYear(java.time.chrono.Era,%20kotlin.Int)(era: https://developer.android.com/reference/kotlin/java/time/chrono/Era!, yearOfEra: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Calculates the proleptic-year given the era and year-of-era. |
-| [ValueRange](https://developer.android.com/reference/kotlin/java/time/temporal/ValueRange.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#range(java.time.temporal.ChronoField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#!)` Gets the range of valid values for the specified field. |
-| [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
+| [ValueRange](../java/time/temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#range(java.time.temporal.ChronoField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#!)` Gets the range of valid values for the specified field. |
+| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
 | --- | --- |
-| [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#zonedDateTime(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains an ISO zoned date-time in this chronology from an `Instant`. |
-| [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#zonedDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an ISO zoned date-time from another date-time object. |
+| [ZonedDateTime](../java/time/ZonedDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#zonedDateTime(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains an ISO zoned date-time in this chronology from an `Instant`. |
+| [ZonedDateTime](../java/time/ZonedDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#zonedDateTime(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains an ISO zoned date-time from another date-time object. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#compareTo(java.time.chrono.Chronology)(other: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology!)`
 
@@ -308,7 +308,7 @@ This method matches the signature of the functional interface `https://developer
 
 | Properties ||
 |---|---|
-| static [IsoChronology](https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#INSTANCE:java.time.chrono.IsoChronology` Singleton instance of the ISO chronology. |
+| static [IsoChronology](../java/time/chrono/IsoChronology.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology#INSTANCE:java.time.chrono.IsoChronology` Singleton instance of the ISO chronology. |
 
 ## Public methods
 
@@ -360,7 +360,7 @@ Obtains an ISO local date from the era, year-of-era, month-of-year and day-of-mo
 
 | Parameters ||
 |---|---|
-| `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the ISO era, not null |
+| `era` | [Era](../java/time/chrono/Era.md)!: the ISO era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ISO year-of-era |
 | `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ISO month-of-year |
 | --- | --- |
@@ -389,7 +389,7 @@ This is equivalent to java.time.LocalDate#from(java.time.temporal.TemporalAccess
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!: the date-time object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the date-time object to convert, not null |
 
 | Return ||
 |---|---|
@@ -459,7 +459,7 @@ This will query the specified clock to obtain the current date - today. Using th
 
 | Parameters ||
 |---|---|
-| `clock` | [Clock](https://developer.android.com/reference/kotlin/java/time/Clock.html#)!: the clock to use, not null |
+| `clock` | [Clock](../java/time/Clock.md)!: the clock to use, not null |
 
 | Return ||
 |---|---|
@@ -485,7 +485,7 @@ Using this method will prevent the ability to use an alternate clock for testing
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!: the zone ID to use, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the zone ID to use, not null |
 
 | Return ||
 |---|---|
@@ -539,7 +539,7 @@ Obtains an ISO local date from the era, year-of-era and day-of-year fields.
 
 | Parameters ||
 |---|---|
-| `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the ISO era, not null |
+| `era` | [Era](../java/time/chrono/Era.md)!: the ISO era, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ISO year-of-era |
 | `dayOfYear` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ISO day-of-year |
 | --- | --- |
@@ -583,7 +583,7 @@ The number of seconds is calculated using the year, month, day-of-month, hour, m
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the minute-of-hour, from 0 to 59 |
 | `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the second-of-minute, from 0 to 59 |
 | --- | --- |
-| `zoneOffset` | [ZoneOffset](https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#)!: the zone offset, not null |
+| `zoneOffset` | [ZoneOffset](../java/time/ZoneOffset.md)!: the zone offset, not null |
 
 | Return ||
 |---|---|
@@ -733,7 +733,7 @@ This is equivalent to java.time.LocalDateTime#from(java.time.temporal.TemporalAc
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!: the date-time object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the date-time object to convert, not null |
 
 | Return ||
 |---|---|
@@ -789,7 +789,7 @@ If the chronology makes active use of eras, such as `JapaneseChronology` then th
 
 | Parameters ||
 |---|---|
-| `era` | [Era](https://developer.android.com/reference/kotlin/java/time/chrono/Era)!: the era of the correct type for the chronology, not null |
+| `era` | [Era](../java/time/chrono/Era.md)!: the era of the correct type for the chronology, not null |
 | `yearOfEra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the chronology year-of-era |
 
 | Return ||
@@ -819,7 +819,7 @@ This method will return a result whether or not the chronology supports the fiel
 
 | Parameters ||
 |---|---|
-| `field` | [ChronoField](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#)!: the field to get the range for, not null |
+| `field` | [ChronoField](../java/time/temporal/ChronoField.md)!: the field to get the range for, not null |
 
 | Return ||
 |---|---|
@@ -858,8 +858,8 @@ Most `TemporalField` implementations are resolved using the resolve method on th
 
 | Parameters ||
 |---|---|
-| `fieldValues` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>!: the map of fields to values, which can be updated, not null |
-| `resolverStyle` | [ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#)!: the requested type of resolve, not null |
+| `fieldValues` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [TemporalField](../java/time/temporal/TemporalField.md)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>!: the map of fields to values, which can be updated, not null |
+| `resolverStyle` | [ResolverStyle](../java/time/format/ResolverStyle.md)!: the requested type of resolve, not null |
 
 | Return ||
 |---|---|
@@ -886,8 +886,8 @@ This is equivalent to `https://developer.android.com/reference/kotlin/java/time/
 
 | Parameters ||
 |---|---|
-| `instant` | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#)!: the instant to create the date-time from, not null |
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!: the time-zone, not null |
+| `instant` | [Instant](../java/time/Instant.md)!: the instant to create the date-time from, not null |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the time-zone, not null |
 
 | Return ||
 |---|---|
@@ -911,7 +911,7 @@ This is equivalent to java.time.ZonedDateTime#from(java.time.temporal.TemporalAc
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!: the date-time object to convert, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the date-time object to convert, not null |
 
 | Return ||
 |---|---|

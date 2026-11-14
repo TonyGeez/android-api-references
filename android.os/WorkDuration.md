@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # WorkDuration
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/WorkDuration "View this page in Java") 
+Kotlin| [Java](../android/os/WorkDuration.md) 
 | --- | --- |
 
 ```
@@ -13,31 +13,31 @@ class WorkDuration
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.WorkDuration](https://developer.android.com/reference/kotlin/android/os/WorkDuration#) |
+| ↳ | [android.os.WorkDuration](../android/os/WorkDuration.md) |
 
-WorkDuration contains the measured time in nano seconds of the workload in each component, see [PerformanceHintManager.Session.reportActualWorkDuration(WorkDuration)](https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager.Session#reportActualWorkDuration(android.os.WorkDuration)). All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos())and measured in wall time.
+WorkDuration contains the measured time in nano seconds of the workload in each component, see [PerformanceHintManager.Session.reportActualWorkDuration(WorkDuration)](../android/os/PerformanceHintManager.Session.md)). All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md))and measured in wall time.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [WorkDuration](https://developer.android.com/reference/kotlin/android/os/WorkDuration#WorkDuration())`()` <br /> |
+| [WorkDuration](../android/os/WorkDuration.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/os/WorkDuration#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualCpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getActualCpuDurationNanos())`()` Returns the actual CPU duration in nanoseconds. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualGpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getActualGpuDurationNanos())`()` Returns the actual GPU duration in nanoseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/os/WorkDuration.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualCpuDurationNanos](../android/os/WorkDuration.md))`()` Returns the actual CPU duration in nanoseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualGpuDurationNanos](../android/os/WorkDuration.md))`()` Returns the actual GPU duration in nanoseconds. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualTotalDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getActualTotalDurationNanos())`()` Returns the actual total duration in nanoseconds. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getWorkPeriodStartTimestampNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#getWorkPeriodStartTimestampNanos())`()` Returns the work period start timestamp based in nanoseconds. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/WorkDuration#hashCode())`()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getActualTotalDurationNanos](../android/os/WorkDuration.md))`()` Returns the actual total duration in nanoseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getWorkPeriodStartTimestampNanos](../android/os/WorkDuration.md))`()` Returns the work period start timestamp based in nanoseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/WorkDuration.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualCpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setActualCpuDurationNanos(kotlin.Long))`(`actualCpuDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual CPU duration in nanoseconds. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualGpuDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setActualGpuDurationNanos(kotlin.Long))`(`actualGpuDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual GPU duration in nanoseconds. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualTotalDurationNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setActualTotalDurationNanos(kotlin.Long))`(`actualTotalDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual total duration in nanoseconds. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualCpuDurationNanos](../android/os/WorkDuration.md))`(`actualCpuDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual CPU duration in nanoseconds. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualGpuDurationNanos](../android/os/WorkDuration.md))`(`actualGpuDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual GPU duration in nanoseconds. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setActualTotalDurationNanos](../android/os/WorkDuration.md))`(`actualTotalDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the actual total duration in nanoseconds. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWorkPeriodStartTimestampNanos](https://developer.android.com/reference/kotlin/android/os/WorkDuration#setWorkPeriodStartTimestampNanos(kotlin.Long))`(`workPeriodStartTimestampNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the work period start timestamp in nanoseconds. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWorkPeriodStartTimestampNanos](../android/os/WorkDuration.md))`(`workPeriodStartTimestampNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the work period start timestamp in nanoseconds. |
 
 ## Public constructors
 
@@ -75,7 +75,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getActualCpuDurationNanos(): Long
 ```
 
-Returns the actual CPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()). 
+Returns the actual CPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)). 
 
 ### getActualGpuDurationNanos
 
@@ -85,7 +85,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getActualGpuDurationNanos(): Long
 ```
 
-Returns the actual GPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()). 
+Returns the actual GPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)). 
 
 ### getActualTotalDurationNanos
 
@@ -95,7 +95,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getActualTotalDurationNanos(): Long
 ```
 
-Returns the actual total duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()). 
+Returns the actual total duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)). 
 
 ### getWorkPeriodStartTimestampNanos
 
@@ -105,7 +105,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getWorkPeriodStartTimestampNanos(): Long
 ```
 
-Returns the work period start timestamp based in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()). 
+Returns the work period start timestamp based in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)). 
 
 ### hashCode
 
@@ -127,7 +127,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun setActualCpuDurationNanos(actualCpuDurationNanos: Long): Unit
 ```
 
-Sets the actual CPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()). 
+Sets the actual CPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)). 
 
 ### setActualGpuDurationNanos
 
@@ -137,7 +137,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun setActualGpuDurationNanos(actualGpuDurationNanos: Long): Unit
 ```
 
-Sets the actual GPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()). 
+Sets the actual GPU duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)). 
 
 ### setActualTotalDurationNanos
 
@@ -147,7 +147,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun setActualTotalDurationNanos(actualTotalDurationNanos: Long): Unit
 ```
 
-Sets the actual total duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()). 
+Sets the actual total duration in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)). 
 
 ### setWorkPeriodStartTimestampNanos
 
@@ -157,4 +157,4 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun setWorkPeriodStartTimestampNanos(workPeriodStartTimestampNanos: Long): Unit
 ```
 
-Sets the work period start timestamp in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeNanos()).
+Sets the work period start timestamp in nanoseconds. All timings should be in [SystemClock.uptimeNanos()](../android/os/SystemClock.md)).

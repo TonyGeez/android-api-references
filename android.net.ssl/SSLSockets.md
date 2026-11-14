@@ -8,7 +8,7 @@ open class SSLSockets
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ssl.SSLSockets](https://developer.android.com/reference/kotlin/android/net/ssl/SSLSockets#) |
+| ↳ | [android.net.ssl.SSLSockets](../android/net/ssl/SSLSockets.md) |
 
 Static utility methods for accessing additional functionality of supported instances of `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#`. Sockets from the platform TLS provider will be compatible with all methods in this class.
 
@@ -41,7 +41,7 @@ Exports a value derived from the TLS master secret as described in RFC 5705. A n
 
 | Parameters ||
 |---|---|
-| `socket` | [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#): the socket to use for exporting keying material. This value cannot be `null`. |
+| `socket` | [SSLSocket](../javax/net/ssl/SSLSocket.md): the socket to use for exporting keying material. This value cannot be `null`. |
 | `label` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the label to use in calculating the exported value. This must be an ASCII-only string. This value cannot be `null`. |
 | `context` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?: the application-specific context value to use in calculating the exported value. This may be `null` to use no application context, which is treated differently than an empty byte array. |
 | --- | --- |
@@ -67,7 +67,7 @@ Returns whether the given socket can be used with the methods in this class. In 
 
 | Parameters ||
 |---|---|
-| `socket` | [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#): This value cannot be `null`. |
+| `socket` | [SSLSocket](../javax/net/ssl/SSLSocket.md): This value cannot be `null`. |
 
 ### setEchConfigList
 
@@ -87,8 +87,8 @@ This function must be called before the handshake is started or it will have no 
 
 | Parameters ||
 |---|---|
-| `socket` | [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#): the socket. This value cannot be `null`. |
-| `echConfigList` | [EchConfigList](https://developer.android.com/reference/kotlin/android/net/ssl/EchConfigList): the ECH config data to be used in the handshake. This value cannot be `null`. |
+| `socket` | [SSLSocket](../javax/net/ssl/SSLSocket.md): the socket. This value cannot be `null`. |
+| `echConfigList` | [EchConfigList](../android/net/ssl/EchConfigList.md): the ECH config data to be used in the handshake. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -111,7 +111,7 @@ This function must be called before the handshake is started or it will have no 
 
 | Parameters ||
 |---|---|
-| `socket` | [SSLSocket](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#): the socket. This value cannot be `null`. |
+| `socket` | [SSLSocket](../javax/net/ssl/SSLSocket.md): the socket. This value cannot be `null`. |
 | `useSessionTickets` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether to enable or disable the use of session tickets |
 
 | Exceptions ||

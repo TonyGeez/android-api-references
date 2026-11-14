@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # FullNameStyle
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/ContactsContract.FullNameStyle "View this page in Java") 
+Kotlin| [Java](../android/provider/ContactsContract.FullNameStyle.md) 
 | --- | --- |
 
 ```
 interface FullNameStyle
 ```
 
-| [android.provider.ContactsContract.FullNameStyle](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle#) |
+| [android.provider.ContactsContract.FullNameStyle](../android/provider/ContactsContract.FullNameStyle.md) |
 
 Constants for various styles of combining given name, family name etc into a full name. For example, the western tradition follows the pattern 'given name' 'middle name' 'family name' with the alternative pattern being 'family name', 'given name' 'middle name'. The CJK tradition is 'family name' 'middle name' 'given name', with Japanese favoring a space between the names and Chinese omitting the space.
 
@@ -19,13 +19,13 @@ Constants for various styles of combining given name, family name etc into a ful
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHINESE](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle#CHINESE:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CJK](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle#CJK:kotlin.Int) Used if the name is written in Hanzi/Kanji/Hanja and we could not determine which specific language it belongs to: Chinese, Japanese or Korean. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAPANESE](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle#JAPANESE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHINESE](../android/provider/ContactsContract.FullNameStyle.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CJK](../android/provider/ContactsContract.FullNameStyle.md) Used if the name is written in Hanzi/Kanji/Hanja and we could not determine which specific language it belongs to: Chinese, Japanese or Korean. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAPANESE](../android/provider/ContactsContract.FullNameStyle.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KOREAN](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle#KOREAN:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNDEFINED](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle#UNDEFINED:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WESTERN](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.FullNameStyle#WESTERN:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KOREAN](../android/provider/ContactsContract.FullNameStyle.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNDEFINED](../android/provider/ContactsContract.FullNameStyle.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WESTERN](../android/provider/ContactsContract.FullNameStyle.md) <br /> |
 | --- | --- |
 
 ## Constants

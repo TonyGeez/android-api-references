@@ -8,9 +8,9 @@ open class Intent : Cloneable, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) |
+| ↳ | [android.content.Intent](../android/content/Intent.md) |
 
-Known Direct Subclasses [LabeledIntent](https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent) [LabeledIntent](https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent) A special subclass of Intent that can have a custom label/icon associated with it.
+Known Direct Subclasses [LabeledIntent](../android/content/pm/LabeledIntent.md) [LabeledIntent](../android/content/pm/LabeledIntent.md) A special subclass of Intent that can have a custom label/icon associated with it.
 
 An intent is an abstract description of an operation to be performed. It can be used with `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent)` to launch an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` to send it to any interested `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` components, and `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)` or android.content.Context#bindService to communicate with a background `https://developer.android.com/reference/kotlin/android/app/Service.html#`.
 
@@ -298,7 +298,7 @@ These are the current standard actions that Intent defines for receiving broadca
 - `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_POWER_DISCONNECTED:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_SHUTDOWN:kotlin.String`
 
-**Note:** If your app targets Android 11 (API level 30) or higher, registering broadcast such as `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_PACKAGES_SUSPENDED:kotlin.String` that includes package details in the extras receives a filtered list of apps or nothing. Learn more about how to [manage package visibility](https://developer.android.com/reference/kotlin/training/basics/intents/package-visibility).
+**Note:** If your app targets Android 11 (API level 30) or higher, registering broadcast such as `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_PACKAGES_SUSPENDED:kotlin.String` that includes package details in the extras receives a filtered list of apps or nothing. Learn more about how to [manage package visibility](../training/basics/intents/package-visibility.md).
 
 ### Standard Categories
 
@@ -822,7 +822,7 @@ These are the possible flags that can be used in the Intent via `https://develop
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_DEBUG_LOG_RESOLUTION:kotlin.Int` A flag you can enable for debugging: when set, log messages will be printed during the resolution of this intent to show you what has been found to create the final resolved list. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_DIRECT_BOOT_AUTO:kotlin.Int` Flag used to automatically match intents based on their Direct Boot awareness and the current user state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` If set, this intent will not match any components in packages that are currently [stopped](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#FLAG_STOPPED:kotlin.Int). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` If set, this intent will not match any components in packages that are currently [stopped](../android/content/pm/ApplicationInfo.md). |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_FROM_BACKGROUND:kotlin.Int` Can be set by the caller to indicate that this Intent is coming from a background operation, not from direct user interaction. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int` When combined with `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, the URI permission grant can be persisted across device reboots until explicitly revoked with `https://developer.android.com/reference/kotlin/android/content/Context#revokeUriPermission(android.net.Uri,%20kotlin.Int)`. |
@@ -830,7 +830,7 @@ These are the possible flags that can be used in the Intent via `https://develop
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` If set, the recipient of this Intent will be granted permission to perform read operations on the URI in the Intent's data and any URIs specified in its ClipData. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` If set, the recipient of this Intent will be granted permission to perform write operations on the URI in the Intent's data and any URIs specified in its ClipData. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int` If set, this intent will always match any components in packages that are currently [stopped](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#FLAG_STOPPED:kotlin.Int). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int` If set, this intent will always match any components in packages that are currently [stopped](../android/content/pm/ApplicationInfo.md). |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_FOREGROUND:kotlin.Int` If set, when sending a broadcast the recipient is allowed to run at foreground priority, with a shorter timeout interval. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_NO_ABORT:kotlin.Int` If this is an ordered broadcast, don't allow receivers to abort the broadcast. |
@@ -868,13 +868,13 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Public methods ||
 |---|---|
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#addCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Add a new category to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#addFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add additional flags to the intent (or with existing flags value). |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#addCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Add a new category to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#addFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add additional flags to the intent (or with existing flags value). |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#clone()()` Creates and returns a copy of this object. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#cloneFilter()()` Make a clone of only the parts of the Intent that are relevant for filter matching: the action, data, type, component, and categories. |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#createChooser(android.content.Intent,%20kotlin.CharSequence)(target: https://developer.android.com/reference/kotlin/android/content/Intent#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Convenience function for creating a `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_CHOOSER:kotlin.String` Intent. |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#createChooser(android.content.Intent,%20kotlin.CharSequence,%20android.content.IntentSender)(target: https://developer.android.com/reference/kotlin/android/content/Intent#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, sender: https://developer.android.com/reference/kotlin/android/content/IntentSender!)` Convenience function for creating a `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_CHOOSER:kotlin.String` Intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#cloneFilter()()` Make a clone of only the parts of the Intent that are relevant for filter matching: the action, data, type, component, and categories. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#createChooser(android.content.Intent,%20kotlin.CharSequence)(target: https://developer.android.com/reference/kotlin/android/content/Intent#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Convenience function for creating a `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_CHOOSER:kotlin.String` Intent. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#createChooser(android.content.Intent,%20kotlin.CharSequence,%20android.content.IntentSender)(target: https://developer.android.com/reference/kotlin/android/content/Intent#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, sender: https://developer.android.com/reference/kotlin/android/content/IntentSender!)` Convenience function for creating a `https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_CHOOSER:kotlin.String` Intent. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#fillIn(android.content.Intent,%20kotlin.Int)(other: https://developer.android.com/reference/kotlin/android/content/Intent#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy the contents of other in to this object, but only where fields are not defined by this object. |
@@ -885,7 +885,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getBooleanArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getBooleanExtra(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Retrieve extended data from the intent. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getBundleExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
+| open [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getBundleExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getByteArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getByteExtra(kotlin.String,%20kotlin.Byte)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Retrieve extended data from the intent. |
@@ -894,18 +894,18 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getCharExtra(kotlin.String,%20kotlin.Char)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Retrieve extended data from the intent. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getCharSequenceArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getCharSequenceArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
+| open [ArrayList](../java/util/ArrayList.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getCharSequenceArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getCharSequenceExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
-| open [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getClipData()()` Return the `https://developer.android.com/reference/kotlin/android/content/ClipData` associated with this Intent. |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getComponent()()` Retrieve the concrete component associated with the intent. |
+| open [ClipData](../android/content/ClipData.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getClipData()()` Return the `https://developer.android.com/reference/kotlin/android/content/ClipData` associated with this Intent. |
+| open [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getComponent()()` Retrieve the concrete component associated with the intent. |
 | --- | --- |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getData()()` Retrieve data this intent is operating on. |
+| open [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getData()()` Retrieve data this intent is operating on. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getDataString()()` The same as `https://developer.android.com/reference/kotlin/android/content/Intent#getData()`, but returns the URI as an encoded String. |
 | open [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getDoubleArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getDoubleExtra(kotlin.String,%20kotlin.Double)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Retrieve extended data from the intent. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getExtras()()` Retrieves a map of extended data from the intent. |
+| open [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getExtras()()` Retrieves a map of extended data from the intent. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getFlags()()` Retrieve any special flags associated with this intent. |
 | --- | --- |
 | open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getFloatArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
@@ -914,34 +914,34 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntExtra(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve extended data from the intent. |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntegerArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
+| open [ArrayList](../java/util/ArrayList.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntegerArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntent(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Call `https://developer.android.com/reference/kotlin/android/content/Intent#parseUri(kotlin.String,%20kotlin.Int)` with 0 flags. |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntentOld(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntent(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Call `https://developer.android.com/reference/kotlin/android/content/Intent#parseUri(kotlin.String,%20kotlin.Int)` with 0 flags. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#getIntentOld(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
 | open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getLongArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getLongExtra(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Retrieve extended data from the intent. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getPackage()()` Retrieve the application package name this Intent is limited to. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](../android/os/Parcelable.md)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableArrayExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Retrieve extended data from the intent. |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\<T\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\<T\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableArrayListExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Retrieve extended data from the intent. |
+| open [ArrayList](../java/util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
+| open [ArrayList](../java/util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableArrayListExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Retrieve extended data from the intent. |
 | --- | --- |
 | open T? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | open T? | `https://developer.android.com/reference/kotlin/android/content/Intent#getParcelableExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Retrieve extended data from the intent. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getScheme()()` Return the scheme portion of the intent's data. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getSelector()()` Return the specific selector associated with this Intent. |
-| open [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable.html#)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getSerializableExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
+| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getSelector()()` Return the specific selector associated with this Intent. |
+| open [Serializable](../java/io/Serializable.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getSerializableExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | open T? | `https://developer.android.com/reference/kotlin/android/content/Intent#getSerializableExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getShortArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#getShortExtra(kotlin.String,%20kotlin.Short)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Retrieve extended data from the intent. |
-| open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getSourceBounds()()` Get the bounds of the sender of this intent, in screen coordinates. |
+| open [Rect](../android/graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getSourceBounds()()` Get the bounds of the sender of this intent, in screen coordinates. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getStringArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
-| open [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getStringArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
+| open [ArrayList](../java/util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/Intent#getStringArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getStringExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieve extended data from the intent. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#getType()()` Retrieve any explicit MIME type included in the intent. |
@@ -950,54 +950,54 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#hasFileDescriptors()()` Returns true if the Intent's extras contain a parcelled file descriptor. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#isMismatchingFilter()()` Whether the intent mismatches all intent filters declared in the receiving component. |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#makeMainActivity(android.content.ComponentName)(mainActivity: https://developer.android.com/reference/kotlin/android/content/ComponentName!)` Create an intent to launch the main (root) activity of a task. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#makeMainActivity(android.content.ComponentName)(mainActivity: https://developer.android.com/reference/kotlin/android/content/ComponentName!)` Create an intent to launch the main (root) activity of a task. |
 | --- | --- |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#makeMainSelectorActivity(kotlin.String,%20kotlin.String)(selectorAction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, selectorCategory: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Make an Intent for the main activity of an application, without specifying a specific activity to run but giving a selector to find the activity. |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#makeRestartActivityTask(android.content.ComponentName)(mainActivity: https://developer.android.com/reference/kotlin/android/content/ComponentName!)` Make an Intent that can be used to re-launch an application's task in its base state. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#makeMainSelectorActivity(kotlin.String,%20kotlin.String)(selectorAction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, selectorCategory: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Make an Intent for the main activity of an application, without specifying a specific activity to run but giving a selector to find the activity. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#makeRestartActivityTask(android.content.ComponentName)(mainActivity: https://developer.android.com/reference/kotlin/android/content/ComponentName!)` Make an Intent that can be used to re-launch an application's task in its base state. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#normalizeMimeType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Normalize a MIME data type. |
 | --- | --- |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#parseIntent(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet)(resources: https://developer.android.com/reference/kotlin/android/content/res/Resources, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Parses the "intent" element (and its children) from XML and instantiates an Intent object. |
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)! | `https://developer.android.com/reference/kotlin/android/content/Intent#parseUri(kotlin.String,%20kotlin.Int)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an intent from a URI. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putCharSequenceArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?)` Add extended data to the intent. |
+| open static [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#parseIntent(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet)(resources: https://developer.android.com/reference/kotlin/android/content/res/Resources, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Parses the "intent" element (and its children) from XML and instantiates an Intent object. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#parseUri(kotlin.String,%20kotlin.Int)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an intent from a URI. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putCharSequenceArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20android.os.Bundle)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20android.os.Parcelable)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20android.os.Bundle)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20android.os.Parcelable)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.BooleanArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Byte)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.BooleanArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Byte)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.ByteArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Char)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.CharArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.ByteArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Char)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.CharArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Double)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.DoubleArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Double)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.DoubleArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.FloatArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.IntArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.FloatArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.IntArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20java.io.Serializable)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/io/Serializable.html#?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.CharSequence)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20java.io.Serializable)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/io/Serializable.html#?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.CharSequence)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.LongArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Short)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.ShortArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.LongArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.Short)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtra(kotlin.String,%20kotlin.ShortArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtras(android.content.Intent)(src: https://developer.android.com/reference/kotlin/android/content/Intent#)` Copy all extras in 'src' in to this intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Add a set of extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putIntegerArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtras(android.content.Intent)(src: https://developer.android.com/reference/kotlin/android/content/Intent#)` Copy all extras in 'src' in to this intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Add a set of extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putIntegerArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>?)` Add extended data to the intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putParcelableArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<out https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?)` Add extended data to the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#putStringArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putParcelableArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<out https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?)` Add extended data to the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#putStringArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Add extended data to the intent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#readFromParcel(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#removeCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Remove a category from an intent. |
@@ -1005,39 +1005,39 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#removeFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove these flags from the intent. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#removeLaunchSecurityProtection()()` When an intent comes from another app or component as an embedded extra intent, the system creates a token to identify the creator of this foreign intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#replaceExtras(android.content.Intent)(src: https://developer.android.com/reference/kotlin/android/content/Intent#)` Completely replace the extras in the Intent with the extras in the given Intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#replaceExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Completely replace the extras in the Intent with the given Bundle of extras. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#replaceExtras(android.content.Intent)(src: https://developer.android.com/reference/kotlin/android/content/Intent#)` Completely replace the extras in the Intent with the extras in the given Intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#replaceExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Completely replace the extras in the Intent with the given Bundle of extras. |
 | --- | --- |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)! | `https://developer.android.com/reference/kotlin/android/content/Intent#resolveActivity(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)` Return the Activity component that should be used to handle this intent. |
-| open [ActivityInfo](https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo)! | `https://developer.android.com/reference/kotlin/android/content/Intent#resolveActivityInfo(android.content.pm.PackageManager,%20kotlin.Int)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the Intent into an `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo` describing the activity that should execute the intent. |
+| open [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#resolveActivity(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)` Return the Activity component that should be used to handle this intent. |
+| open [ActivityInfo](../android/content/pm/ActivityInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/Intent#resolveActivityInfo(android.content.pm.PackageManager,%20kotlin.Int)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the Intent into an `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo` describing the activity that should execute the intent. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#resolveType(android.content.ContentResolver)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver)` Return the MIME data type of this intent. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#resolveType(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context)` Return the MIME data type of this intent. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Intent#resolveTypeIfNeeded(android.content.ContentResolver)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver)` Return the MIME data type of this intent, only if it will be needed for intent resolution. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setAction(kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set the general action to be performed. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setAction(kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set the general action to be performed. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setClass(android.content.Context,%20java.lang.Class)(packageContext: https://developer.android.com/reference/kotlin/android/content/Context, cls: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>)` Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)` with the name returned by a `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setClassName(android.content.Context,%20kotlin.String)(packageContext: https://developer.android.com/reference/kotlin/android/content/Context, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)` with an explicit class name. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setClassName(kotlin.String,%20kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)` with an explicit application package name and class name. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setClass(android.content.Context,%20java.lang.Class)(packageContext: https://developer.android.com/reference/kotlin/android/content/Context, cls: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>)` Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)` with the name returned by a `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setClassName(android.content.Context,%20kotlin.String)(packageContext: https://developer.android.com/reference/kotlin/android/content/Context, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)` with an explicit class name. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setClassName(kotlin.String,%20kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)` with an explicit application package name and class name. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#setClipData(android.content.ClipData)(clip: https://developer.android.com/reference/kotlin/android/content/ClipData?)` Set a `https://developer.android.com/reference/kotlin/android/content/ClipData` associated with this Intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName?)` (Usually optional) Explicitly set the component to handle the intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setData(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Set the data this intent is operating on. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setComponent(android.content.ComponentName)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName?)` (Usually optional) Explicitly set the component to handle the intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setData(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Set the data this intent is operating on. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setDataAndNormalize(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Normalize and set the data this intent is operating on. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setDataAndType(android.net.Uri,%20kotlin.String)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` (Usually optional) Set the data for the intent along with an explicit MIME data type. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setDataAndTypeAndNormalize(android.net.Uri,%20kotlin.String)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` (Usually optional) Normalize and set both the data Uri and an explicit MIME data type. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setDataAndNormalize(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Normalize and set the data this intent is operating on. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setDataAndType(android.net.Uri,%20kotlin.String)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` (Usually optional) Set the data for the intent along with an explicit MIME data type. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setDataAndTypeAndNormalize(android.net.Uri,%20kotlin.String)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` (Usually optional) Normalize and set both the data Uri and an explicit MIME data type. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#setExtrasClassLoader(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Sets the ClassLoader that will be used when unmarshalling any Parcelable values from the extras of this Intent. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set special flags controlling how this intent is handled. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setIdentifier(kotlin.String)(identifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set an identifier for this Intent. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set special flags controlling how this intent is handled. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setIdentifier(kotlin.String)(identifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set an identifier for this Intent. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` (Usually optional) Set an explicit application package name that limits the components this Intent will resolve to. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` (Usually optional) Set an explicit application package name that limits the components this Intent will resolve to. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#setSelector(android.content.Intent)(selector: https://developer.android.com/reference/kotlin/android/content/Intent#?)` Set a selector for this Intent. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#setSourceBounds(android.graphics.Rect)(r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Set the bounds of the sender of this intent, in screen coordinates. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set an explicit MIME data type. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#) | `https://developer.android.com/reference/kotlin/android/content/Intent#setTypeAndNormalize(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Normalize and set an explicit MIME data type. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set an explicit MIME data type. |
+| open [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/content/Intent#setTypeAndNormalize(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Normalize and set an explicit MIME data type. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Intent#toString()()` Returns a string representation of the object. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/Intent#toURI()()` Call `https://developer.android.com/reference/kotlin/android/content/Intent#toUri(kotlin.Int)` with 0 flags. |
@@ -1047,7 +1047,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)!\> | `https://developer.android.com/reference/kotlin/android/content/Intent#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Intent](../android/content/Intent.md)!\> | `https://developer.android.com/reference/kotlin/android/content/Intent#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -6276,7 +6276,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_EXCLUDE_STOPPED_PACKAGES: Int
 ```
 
-If set, this intent will not match any components in packages that are currently [stopped](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#FLAG_STOPPED:kotlin.Int). If this is not set, then the default behavior is to include such applications in the result.
+If set, this intent will not match any components in packages that are currently [stopped](../android/content/pm/ApplicationInfo.md). If this is not set, then the default behavior is to include such applications in the result.
 
  Value: 16
 
@@ -6355,7 +6355,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_INCLUDE_STOPPED_PACKAGES: Int
 ```
 
-If set, this intent will always match any components in packages that are currently [stopped](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#FLAG_STOPPED:kotlin.Int). This is the default behavior when `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` is not set. If both of these flags are set, this one wins (it allows overriding of exclude for places where the framework may automatically set the exclude flag, such as broadcasts).
+If set, this intent will always match any components in packages that are currently [stopped](../android/content/pm/ApplicationInfo.md). This is the default behavior when `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` is not set. If both of these flags are set, this one wins (it allows overriding of exclude for places where the framework may automatically set the exclude flag, such as broadcasts).
 
  Value: 32
 
@@ -6513,8 +6513,8 @@ Create an intent for a specific component. All other fields (action, data, type,
 
 | Parameters ||
 |---|---|
-| `packageContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context)!: A Context of the application package implementing this class. |
-| `cls` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!: The component class that is to be used for the intent. |
+| `packageContext` | [Context](../android/content/Context.md)!: A Context of the application package implementing this class. |
+| `cls` | [Class](../java/lang/Class.md)\<\*\>!: The component class that is to be used for the intent. |
 
 **See Also**
 
@@ -6563,7 +6563,7 @@ Create an intent with a given action and for a given data url. Note that the act
 | Parameters ||
 |---|---|
 | `action` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The Intent action, such as ACTION_VIEW. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The Intent data URI. |
+| `uri` | [Uri](../android/net/Uri.md)!: The Intent data URI. |
 
 ### Intent
 
@@ -6584,10 +6584,10 @@ Create an intent for a specific component with a specified action and data. This
 | Parameters ||
 |---|---|
 | `action` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The Intent action, such as ACTION_VIEW. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The Intent data URI. |
-| `packageContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context)!: A Context of the application package implementing this class. |
+| `uri` | [Uri](../android/net/Uri.md)!: The Intent data URI. |
+| `packageContext` | [Context](../android/content/Context.md)!: A Context of the application package implementing this class. |
 | --- | --- |
-| `cls` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!: The component class that is to be used for the intent. |
+| `cls` | [Class](../java/lang/Class.md)\<\*\>!: The component class that is to be used for the intent. |
 
 **See Also**
 
@@ -6715,7 +6715,7 @@ Builds a new `https://developer.android.com/reference/kotlin/android/content/Int
 
 | Parameters ||
 |---|---|
-| `target` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)!: The Intent that the user will be selecting an activity to perform. |
+| `target` | [Intent](../android/content/Intent.md)!: The Intent that the user will be selecting an activity to perform. |
 | `title` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Optional title that will be displayed in the chooser, only when the target action is not ACTION_SEND or ACTION_SEND_MULTIPLE. |
 
 | Return ||
@@ -6742,9 +6742,9 @@ The caller may optionally supply an `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `target` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)!: The Intent that the user will be selecting an activity to perform. |
+| `target` | [Intent](../android/content/Intent.md)!: The Intent that the user will be selecting an activity to perform. |
 | `title` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Optional title that will be displayed in the chooser, only when the target action is not ACTION_SEND or ACTION_SEND_MULTIPLE. |
-| `sender` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender)!: Optional IntentSender to be called when a choice is made. |
+| `sender` | [IntentSender](../android/content/IntentSender.md)!: Optional IntentSender to be called when a choice is made. |
 | --- | --- |
 
 | Return ||
@@ -6801,7 +6801,7 @@ Calling A.fillIn(B, Intent.FILL_IN_DATA) will result in A now containing: {actio
 
 | Parameters ||
 |---|---|
-| `other` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#): Another Intent whose values are to be used to fill in the current one. This value cannot be `null`. |
+| `other` | [Intent](../android/content/Intent.md): Another Intent whose values are to be used to fill in the current one. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Options to control which fields can be filled in. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_DATA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_CATEGORIES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_COMPONENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_PACKAGE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_SOURCE_BOUNDS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_SELECTOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FILL_IN_CLIP_DATA:kotlin.Int` |
 
 | Return ||
@@ -6820,7 +6820,7 @@ Determine if two intents are the same for the purposes of intent resolution (fil
 
 | Parameters ||
 |---|---|
-| `other` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)!: The other Intent to compare against. |
+| `other` | [Intent](../android/content/Intent.md)!: The other Intent to compare against. |
 
 | Return ||
 |---|---|
@@ -7525,7 +7525,7 @@ Retrieve extended data from the intent.
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the desired item. This value may be `null`. |
-| `clazz` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>: The type of the items inside the array. This is only verified when unparceling. This value cannot be `null`. |
+| `clazz` | [Class](../java/lang/Class.md)\<T\>: The type of the items inside the array. This is only verified when unparceling. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7576,7 +7576,7 @@ Retrieve extended data from the intent.
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the desired item. This value may be `null`. |
-| `clazz` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out T\>: The type of the items inside the array list. This is only verified when unparceling. This value cannot be `null`. |
+| `clazz` | [Class](../java/lang/Class.md)\<out T\>: The type of the items inside the array list. This is only verified when unparceling. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7627,7 +7627,7 @@ Retrieve extended data from the intent.
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the desired item. This value may be `null`. |
-| `clazz` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>: The type of the object expected. This value cannot be `null`. |
+| `clazz` | [Class](../java/lang/Class.md)\<T\>: The type of the object expected. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7711,7 +7711,7 @@ Retrieve extended data from the intent.
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the desired item. This value may be `null`. |
-| `clazz` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>: The type of the object expected. This value cannot be `null`. |
+| `clazz` | [Class](../java/lang/Class.md)\<T\>: The type of the object expected. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7963,7 +7963,7 @@ The returned Intent has the given Activity component as its explicit component, 
 
 | Parameters ||
 |---|---|
-| `mainActivity` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)!: The main activity component that this Intent will launch. |
+| `mainActivity` | [ComponentName](../android/content/ComponentName.md)!: The main activity component that this Intent will launch. |
 
 | Return ||
 |---|---|
@@ -8014,7 +8014,7 @@ Make an Intent that can be used to re-launch an application's task in its base s
 
 | Parameters ||
 |---|---|
-| `mainActivity` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)!: The activity component that is the root of the task; this is the activity that has been published in the application's manifest as the main launcher icon. |
+| `mainActivity` | [ComponentName](../android/content/ComponentName.md)!: The activity component that is the root of the task; this is the activity that has been published in the application's manifest as the main launcher icon. |
 
 | Return ||
 |---|---|
@@ -8065,9 +8065,9 @@ Parses the "intent" element (and its children) from XML and instantiates an Inte
 
 | Parameters ||
 |---|---|
-| `resources` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources): The Resources to use when inflating resources. This value cannot be `null`. |
-| `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#): The XML parser pointing at an "intent" tag. This value cannot be `null`. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The AttributeSet interface for retrieving extended attribute data at the current parser location. |
+| `resources` | [Resources](../android/content/res/Resources.md): The Resources to use when inflating resources. This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): The XML parser pointing at an "intent" tag. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The AttributeSet interface for retrieving extended attribute data at the current parser location. |
 | --- | --- |
 
 | Return ||
@@ -8127,7 +8127,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>?: The ArrayList data value. This value may be `null`. |
+| `value` | [ArrayList](../java/util/ArrayList.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>?: The ArrayList data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8154,7 +8154,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: The Bundle data value. This value may be `null`. |
+| `value` | [Bundle](../android/os/Bundle.md)?: The Bundle data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8181,7 +8181,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)?: The Parcelable data value. This value may be `null`. |
+| `value` | [Parcelable](../android/os/Parcelable.md)?: The Parcelable data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8208,7 +8208,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!\>?: The Parcelable\[\] data value. This value may be `null`. |
+| `value` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](../android/os/Parcelable.md)!\>?: The Parcelable\[\] data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8559,7 +8559,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable.html#)?: The Serializable data value. This value may be `null`. |
+| `value` | [Serializable](../java/io/Serializable.md)?: The Serializable data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8798,7 +8798,7 @@ Copy all extras in 'src' in to this intent.
 
 | Parameters ||
 |---|---|
-| `src` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#): Contains the extras to copy. This value cannot be `null`. |
+| `src` | [Intent](../android/content/Intent.md): Contains the extras to copy. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8818,7 +8818,7 @@ Add a set of extended data to the intent. The keys must include a package prefix
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): The Bundle of extras to add to this intent. This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): The Bundle of extras to add to this intent. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8844,7 +8844,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>?: The ArrayList data value. This value may be `null`. |
+| `value` | [ArrayList](../java/util/ArrayList.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>?: The ArrayList data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8871,7 +8871,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\<out [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!\>?: The ArrayList data value. This value may be `null`. |
+| `value` | [ArrayList](../java/util/ArrayList.md)\<out [Parcelable](../android/os/Parcelable.md)!\>?: The ArrayList data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8898,7 +8898,7 @@ Add extended data to the intent. The name must include a package prefix, for exa
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the extra data, with package prefix. |
-| `value` | [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The ArrayList data value. This value may be `null`. |
+| `value` | [ArrayList](../java/util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The ArrayList data value. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8988,7 +8988,7 @@ Completely replace the extras in the Intent with the extras in the given Intent.
 
 | Parameters ||
 |---|---|
-| `src` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#): The exact extras contained in this Intent are copied into the target intent, replacing any that were previously there. This value cannot be `null`. |
+| `src` | [Intent](../android/content/Intent.md): The exact extras contained in this Intent are copied into the target intent, replacing any that were previously there. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9006,7 +9006,7 @@ Completely replace the extras in the Intent with the given Bundle of extras.
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: The new set of extras in the Intent, or null to erase all extras. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: The new set of extras in the Intent, or null to erase all extras. |
 
 | Return ||
 |---|---|
@@ -9044,7 +9044,7 @@ This API is called for you as part of starting an activity from an intent. You d
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager): The package manager with which to resolve the Intent. This value cannot be `null`. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md): The package manager with which to resolve the Intent. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9071,7 +9071,7 @@ Resolve the Intent into an `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager): The package manager with which to resolve the Intent. This value cannot be `null`. |
+| `pm` | [PackageManager](../android/content/pm/PackageManager.md): The package manager with which to resolve the Intent. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Addition information to retrieve as per `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_META_DATA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_SHARED_LIBRARY_FILES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DEFAULT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DISABLED_COMPONENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DISABLED_UNTIL_USED_COMPONENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DIRECT_BOOT_AUTO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DIRECT_BOOT_AWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_DIRECT_BOOT_UNAWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_SYSTEM_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#MATCH_UNINSTALLED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_DISABLED_COMPONENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_DISABLED_UNTIL_USED_COMPONENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_UNINSTALLED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_APP_LOCK_INFO:kotlin.Long` |
 
 | Return ||
@@ -9094,7 +9094,7 @@ Return the MIME data type of this intent. If the type field is explicitly set, t
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver): A ContentResolver that can be used to determine the MIME type of the intent's data. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): A ContentResolver that can be used to determine the MIME type of the intent's data. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9117,7 +9117,7 @@ Return the MIME data type of this intent. If the type field is explicitly set, t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9140,7 +9140,7 @@ Return the MIME data type of this intent, only if it will be needed for intent r
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver): A ContentResolver that can be used to determine the MIME type of the intent's data. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android/content/ContentResolver.md): A ContentResolver that can be used to determine the MIME type of the intent's data. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9183,8 +9183,8 @@ Convenience for calling `https://developer.android.com/reference/kotlin/android/
 
 | Parameters ||
 |---|---|
-| `packageContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context): A Context of the application package implementing this class. This value cannot be `null`. |
-| `cls` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>: The class name to set, equivalent to `setClassName(context, cls.getName())`. This value cannot be `null`. |
+| `packageContext` | [Context](../android/content/Context.md): A Context of the application package implementing this class. This value cannot be `null`. |
+| `cls` | [Class](../java/lang/Class.md)\<\*\>: The class name to set, equivalent to `setClassName(context, cls.getName())`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9209,7 +9209,7 @@ Convenience for calling `https://developer.android.com/reference/kotlin/android/
 
 | Parameters ||
 |---|---|
-| `packageContext` | [Context](https://developer.android.com/reference/kotlin/android/content/Context): A Context of the application package implementing this class. This value cannot be `null`. |
+| `packageContext` | [Context](../android/content/Context.md): A Context of the application package implementing this class. This value cannot be `null`. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of a class inside of the application package that will be used as the component for this Intent. This value cannot be `null`. |
 
 | Return ||
@@ -9266,7 +9266,7 @@ The MIME type, label, and icon in the ClipData object are not directly used by I
 
 | Parameters ||
 |---|---|
-| `clip` | [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData)?: The new clip to set. May be null to clear the current clip. |
+| `clip` | [ClipData](../android/content/ClipData.md)?: The new clip to set. May be null to clear the current clip. |
 
 ### setComponent
 
@@ -9280,7 +9280,7 @@ open fun setComponent(component: ComponentName?): Intent
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName)?: The name of the application component to handle the intent, or null to let the system find one for you. |
+| `component` | [ComponentName](../android/content/ComponentName.md)?: The name of the application component to handle the intent, or null to let the system find one for you. |
 
 | Return ||
 |---|---|
@@ -9308,7 +9308,7 @@ Set the data this intent is operating on. This method automatically clears any t
 
 | Parameters ||
 |---|---|
-| `data` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The Uri of the data this intent is now targeting. This value may be `null`. |
+| `data` | [Uri](../android/net/Uri.md)?: The Uri of the data this intent is now targeting. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -9341,7 +9341,7 @@ setData(data.normalize())
 
 | Parameters ||
 |---|---|
-| `data` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The Uri of the data this intent is now targeting. This value cannot be `null`. |
+| `data` | [Uri](../android/net/Uri.md): The Uri of the data this intent is now targeting. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9370,7 +9370,7 @@ open fun setDataAndType(
 
 | Parameters ||
 |---|---|
-| `data` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?: The Uri of the data this intent is now targeting. This value may be `null`. |
+| `data` | [Uri](../android/net/Uri.md)?: The Uri of the data this intent is now targeting. This value may be `null`. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The MIME type of the data being handled by this intent. This value may be `null`. |
 
 | Return ||
@@ -9407,7 +9407,7 @@ setDataAndType(data.normalize(), Intent.normalizeMimeType(type))
 
 | Parameters ||
 |---|---|
-| `data` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): The Uri of the data this intent is now targeting. This value cannot be `null`. |
+| `data` | [Uri](../android/net/Uri.md): The Uri of the data this intent is now targeting. This value cannot be `null`. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The MIME type of the data being handled by this intent. This value may be `null`. |
 
 | Return ||
@@ -9434,7 +9434,7 @@ Sets the ClassLoader that will be used when unmarshalling any Parcelable values 
 
 | Parameters ||
 |---|---|
-| `loader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?: a ClassLoader, or null to use the default loader at the time of unmarshalling. |
+| `loader` | [ClassLoader](../java/lang/ClassLoader.md)?: a ClassLoader, or null to use the default loader at the time of unmarshalling. |
 
 ### setFlags
 
@@ -9527,7 +9527,7 @@ You can not use both a selector and `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `selector` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent#)?: The desired selector Intent; set to null to not use a special selector. |
+| `selector` | [Intent](../android/content/Intent.md)?: The desired selector Intent; set to null to not use a special selector. |
 
 ### setSourceBounds
 
@@ -9541,7 +9541,7 @@ Set the bounds of the sender of this intent, in screen coordinates. This can be 
 
 | Parameters ||
 |---|---|
-| `r` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: This value may be `null`. |
+| `r` | [Rect](../android/graphics/Rect.md)?: This value may be `null`. |
 
 ### setType
 

@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # WallpaperDescription
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/wallpaper/WallpaperDescription "View this page in Java") 
+Kotlin| [Java](../android/app/wallpaper/WallpaperDescription.md) 
 | --- | --- |
 
 ```
@@ -13,46 +13,46 @@ class WallpaperDescription : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.wallpaper.WallpaperDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#) |
+| ↳ | [android.app.wallpaper.WallpaperDescription](../android/app/wallpaper/WallpaperDescription.md) |
 
-Describes a wallpaper, including associated metadata and optional content to be used by its [android.service.wallpaper.WallpaperService.Engine](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine.html#), the [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) to be used by [android.app.WallpaperManager](https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#), and an optional id to differentiate between different distinct wallpapers rendered by the same wallpaper service.
+Describes a wallpaper, including associated metadata and optional content to be used by its [android.service.wallpaper.WallpaperService.Engine](../android/service/wallpaper/WallpaperService.Engine.md), the [ComponentName](../android/content/ComponentName.md) to be used by [android.app.WallpaperManager](../android/app/WallpaperManager.md), and an optional id to differentiate between different distinct wallpapers rendered by the same wallpaper service.
 
-This class is used to communicate among a wallpaper rendering service, a wallpaper chooser UI, and [android.app.WallpaperManager](https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#). This class describes a specific instance of a live wallpaper, unlike [WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo.html#) which is common to all instances of a wallpaper component. Each [WallpaperDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#) can have distinct metadata.
+This class is used to communicate among a wallpaper rendering service, a wallpaper chooser UI, and [android.app.WallpaperManager](../android/app/WallpaperManager.md). This class describes a specific instance of a live wallpaper, unlike [WallpaperInfo](../android/app/WallpaperInfo.md) which is common to all instances of a wallpaper component. Each [WallpaperDescription](../android/app/wallpaper/WallpaperDescription.md) can have distinct metadata.
 
 ## Summary
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.Builder) Builder for the immutable [WallpaperDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#) class |
+| | [Builder](../android/app/wallpaper/WallpaperDescription.Builder.md) Builder for the immutable [WallpaperDescription](../android/app/wallpaper/WallpaperDescription.md) class |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | [getComponent](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getComponent())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/wallpaper/WallpaperDescription.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [ComponentName](../android/content/ComponentName.md)? | [getComponent](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
 | --- | --- |
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getContent](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getContent())`()` <br /> |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getContextDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getContextDescription())`()` <br /> |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getContextUri](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getContextUri())`()` <br /> |
+| [PersistableBundle](../android/os/PersistableBundle.md) | [getContent](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getContextDescription](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [Uri](../android/net/Uri.md)? | [getContextUri](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\> | [getDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getDescription())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getId](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getId())`()` <br /> |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getThumbnail](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getThumbnail())`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\> | [getDescription](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getId](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [Uri](../android/net/Uri.md)? | [getThumbnail](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getTitle](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#getTitle())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#hashCode())`()` <br /> |
-| [WallpaperDescription.Builder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.Builder) | [toBuilder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#toBuilder())`()` Convert the current description to a [Builder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.Builder). |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getTitle](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [WallpaperDescription.Builder](../android/app/wallpaper/WallpaperDescription.Builder.md) | [toBuilder](../android/app/wallpaper/WallpaperDescription.md))`()` Convert the current description to a [Builder](../android/app/wallpaper/WallpaperDescription.Builder.md). |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/wallpaper/WallpaperDescription.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/wallpaper/WallpaperDescription.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WallpaperDescription](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WallpaperDescription](../android/app/wallpaper/WallpaperDescription.md)!\> | [CREATOR](../android/app/wallpaper/WallpaperDescription.md) <br /> |
 
 ## Public methods
 
@@ -66,7 +66,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -94,7 +94,7 @@ fun getComponent(): ComponentName?
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | the component for this wallpaper, or`null`for a static wallpaper |
+| [ComponentName](../android/content/ComponentName.md)? | the component for this wallpaper, or`null`for a static wallpaper |
 
 ### getContent
 
@@ -106,7 +106,7 @@ fun getContent(): PersistableBundle
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | any additional content required to render this wallpaper |
+| [PersistableBundle](../android/os/PersistableBundle.md) | any additional content required to render this wallpaper |
 
 ### getContextDescription
 
@@ -130,7 +130,7 @@ fun getContextUri(): Uri?
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | the [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) for the action associated with the wallpaper, or`null`if not provided |
+| [Uri](../android/net/Uri.md)? | the [Uri](../android/net/Uri.md) for the action associated with the wallpaper, or`null`if not provided |
 
 ### getDescription
 
@@ -166,7 +166,7 @@ fun getThumbnail(): Uri?
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | the thumbnail for this wallpaper, or`null`if not provided |
+| [Uri](../android/net/Uri.md)? | the thumbnail for this wallpaper, or`null`if not provided |
 
 ### getTitle
 
@@ -200,11 +200,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun toBuilder(): WallpaperDescription.Builder
 ```
 
-Convert the current description to a [Builder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.Builder).
+Convert the current description to a [Builder](../android/app/wallpaper/WallpaperDescription.Builder.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [WallpaperDescription.Builder](https://developer.android.com/reference/kotlin/android/app/wallpaper/WallpaperDescription.Builder) | the Builder representing this description |
+| [WallpaperDescription.Builder](../android/app/wallpaper/WallpaperDescription.Builder.md) | the Builder representing this description |
 
 ### toString
 
@@ -231,8 +231,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

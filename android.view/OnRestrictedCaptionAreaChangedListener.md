@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # OnRestrictedCaptionAreaChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/Window.OnRestrictedCaptionAreaChangedListener "View this page in Java") 
+Kotlin| [Java](../android/view/Window.OnRestrictedCaptionAreaChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnRestrictedCaptionAreaChangedListener
 ```
 
-| [android.view.Window.OnRestrictedCaptionAreaChangedListener](https://developer.android.com/reference/kotlin/android/view/Window.OnRestrictedCaptionAreaChangedListener#) |
+| [android.view.Window.OnRestrictedCaptionAreaChangedListener](../android/view/Window.OnRestrictedCaptionAreaChangedListener.md) |
 
 Callback for clients that want to be aware of where caption draws content.
 
@@ -19,7 +19,7 @@ Callback for clients that want to be aware of where caption draws content.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestrictedCaptionAreaChanged](https://developer.android.com/reference/kotlin/android/view/Window.OnRestrictedCaptionAreaChangedListener#onRestrictedCaptionAreaChanged(android.graphics.Rect))`(`rect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Called when the area where caption draws content changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestrictedCaptionAreaChanged](../android/view/Window.OnRestrictedCaptionAreaChangedListener.md))`(`rect:` ` [Rect](../android/graphics/Rect.md)!`)` Called when the area where caption draws content changes. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called when the area where caption draws content changes.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!:The area where caption content is positioned, relative to the top view. |
+| `rect` | [Rect](../android/graphics/Rect.md)!:The area where caption content is positioned, relative to the top view. |

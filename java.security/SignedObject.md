@@ -10,7 +10,7 @@ class SignedObject : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.SignedObject](https://developer.android.com/reference/kotlin/java/security/SignedObject#) |
+| ↳ | [java.security.SignedObject](../java/security/SignedObject.md) |
 
 SignedObject is a class for the purpose of creating authentic runtime objects whose integrity cannot be compromised without being detected.
 
@@ -58,15 +58,15 @@ Potential applications of SignedObject include:
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SignedObject](https://developer.android.com/reference/kotlin/java/security/SignedObject#SignedObject(java.io.Serializable,%20java.security.PrivateKey,%20java.security.Signature))`(`object:` ` [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable.html#)!`, `signingKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`, `signingEngine:` ` [Signature](https://developer.android.com/reference/kotlin/java/security/Signature)!`)` Constructs a SignedObject from any Serializable object. |
+| [SignedObject](../java/security/SignedObject.md))`(`object:` ` [Serializable](../java/io/Serializable.md)!`, `signingKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `signingEngine:` ` [Signature](../java/security/Signature.md)!`)` Constructs a SignedObject from any Serializable object. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/SignedObject#getAlgorithm())`()` Retrieves the name of the signature algorithm. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/java/security/SignedObject#getObject())`()` Retrieves the encapsulated object. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSignature](https://developer.android.com/reference/kotlin/java/security/SignedObject#getSignature())`()` Retrieves the signature on the signed object, in the form of a byte array. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/SignedObject.md))`()` Retrieves the name of the signature algorithm. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../java/security/SignedObject.md))`()` Retrieves the encapsulated object. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSignature](../java/security/SignedObject.md))`()` Retrieves the signature on the signed object, in the form of a byte array. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](https://developer.android.com/reference/kotlin/java/security/SignedObject#verify(java.security.PublicKey,%20java.security.Signature))`(`verificationKey:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`, `verificationEngine:` ` [Signature](https://developer.android.com/reference/kotlin/java/security/Signature)!`)` Verifies that the signature in this SignedObject is the valid signature for the object stored inside, with the given verification key, using the designated verification engine. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](../java/security/SignedObject.md))`(`verificationKey:` ` [PublicKey](../java/security/PublicKey.md)!`, `verificationEngine:` ` [Signature](../java/security/Signature.md)!`)` Verifies that the signature in this SignedObject is the valid signature for the object stored inside, with the given verification key, using the designated verification engine. |
 
 ## Public constructors
 
@@ -85,9 +85,9 @@ Constructs a SignedObject from any Serializable object. The given object is sign
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
-| `object` | [Serializable](https://developer.android.com/reference/kotlin/java/io/Serializable.html#)!:the object to be signed. |
-| `signingKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!:the private key for signing. |
-| `signingEngine` | [Signature](https://developer.android.com/reference/kotlin/java/security/Signature)!:the signature signing engine. |
+| `object` | [Serializable](../java/io/Serializable.md)!:the object to be signed. |
+| `signingKey` | [PrivateKey](../java/security/PrivateKey.md)!:the private key for signing. |
+| `signingEngine` | [Signature](../java/security/Signature.md)!:the signature signing engine. |
 | --- | --- |
 
 | Exceptions ||
@@ -161,8 +161,8 @@ Verifies that the signature in this SignedObject is the valid signature for the 
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------|
-| `verificationKey` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!:the public key for verification. |
-| `verificationEngine` | [Signature](https://developer.android.com/reference/kotlin/java/security/Signature)!:the signature verification engine. |
+| `verificationKey` | [PublicKey](../java/security/PublicKey.md)!:the public key for verification. |
+| `verificationEngine` | [Signature](../java/security/Signature.md)!:the signature verification engine. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|

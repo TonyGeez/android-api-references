@@ -11,11 +11,11 @@ open class TransformerException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [javax.xml.transform.TransformerException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [javax.xml.transform.TransformerException](../javax/xml/transform/TransformerException.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [TransformerConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerConfigurationException) |-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------| | [TransformerConfigurationException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerConfigurationException) | Indicates a serious configuration error. | |
+| Known Direct Subclasses [TransformerConfigurationException](../javax/xml/transform/TransformerConfigurationException.md) |-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------| | [TransformerConfigurationException](../javax/xml/transform/TransformerConfigurationException.md) | Indicates a serious configuration error. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class specifies an exceptional condition that occurred during the transformation process.
@@ -24,30 +24,30 @@ This class specifies an exceptional condition that occurred during the transform
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TransformerException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new TransformerException. |
-| [TransformerException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Wrap an existing exception in a TransformerException. |
-| [TransformerException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.String,%20javax.xml.transform.SourceLocator))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locator:` ` [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)!`)` Create a new TransformerException from a message and a Locator. |
-| [TransformerException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.String,%20javax.xml.transform.SourceLocator,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locator:` ` [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)!`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Wrap an existing exception in a TransformerException. |
-| [TransformerException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.Throwable))`(`e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Create a new TransformerException wrapping an existing exception. |
+| [TransformerException](../javax/xml/transform/TransformerException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new TransformerException. |
+| [TransformerException](../javax/xml/transform/TransformerException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Wrap an existing exception in a TransformerException. |
+| [TransformerException](../javax/xml/transform/TransformerException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locator:` ` [SourceLocator](../javax/xml/transform/SourceLocator.md)!`)` Create a new TransformerException from a message and a Locator. |
+| [TransformerException](../javax/xml/transform/TransformerException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locator:` ` [SourceLocator](../javax/xml/transform/SourceLocator.md)!`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Wrap an existing exception in a TransformerException. |
+| [TransformerException](../javax/xml/transform/TransformerException.md))`(`e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Create a new TransformerException wrapping an existing exception. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [getException](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#getException())`()` This method retrieves an exception that this exception wraps. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocationAsString](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#getLocationAsString())`()` Get the location information as a string. |
-| open [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)! | [getLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#getLocator())`()` Method getLocator retrieves an instance of a SourceLocator object that specifies where an error occurred. |
+| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [getException](../javax/xml/transform/TransformerException.md))`()` This method retrieves an exception that this exception wraps. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocationAsString](../javax/xml/transform/TransformerException.md))`()` Get the location information as a string. |
+| open [SourceLocator](../javax/xml/transform/SourceLocator.md)! | [getLocator](../javax/xml/transform/TransformerException.md))`()` Method getLocator retrieves an instance of a SourceLocator object that specifies where an error occurred. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessageAndLocation](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#getMessageAndLocation())`()` Get the error message with location information appended. |
-| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [initCause](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#initCause(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Initializes the*cause*of this throwable to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#printStackTrace())`()` Print the the trace of methods from where the error originated. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessageAndLocation](../javax/xml/transform/TransformerException.md))`()` Get the error message with location information appended. |
+| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [initCause](../javax/xml/transform/TransformerException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Initializes the*cause*of this throwable to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](../javax/xml/transform/TransformerException.md))`()` Print the the trace of methods from where the error originated. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#printStackTrace(java.io.PrintStream))`(`s:` ` [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)`)` Print the the trace of methods from where the error originated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#printStackTrace(java.io.PrintWriter))`(`s:` ` [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)`)` Print the the trace of methods from where the error originated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#setLocator(javax.xml.transform.SourceLocator))`(`location:` ` [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)!`)` Method setLocator sets an instance of a SourceLocator object that specifies where an error occurred. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](../javax/xml/transform/TransformerException.md))`(`s:` ` [PrintStream](../java/io/PrintStream.md)`)` Print the the trace of methods from where the error originated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printStackTrace](../javax/xml/transform/TransformerException.md))`(`s:` ` [PrintWriter](../java/io/PrintWriter.md)`)` Print the the trace of methods from where the error originated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocator](../javax/xml/transform/TransformerException.md))`(`location:` ` [SourceLocator](../javax/xml/transform/SourceLocator.md)!`)` Method setLocator sets an instance of a SourceLocator object that specifies where an error occurred. |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? | [cause](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#cause:kotlin.Throwable) Returns the cause of this throwable or`null`if the cause is nonexistent or unknown. |
+| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? | [cause](../javax/xml/transform/TransformerException.md) Returns the cause of this throwable or`null`if the cause is nonexistent or unknown. |
 
 ## Public constructors
 
@@ -101,7 +101,7 @@ This constructor is especially useful when an application is creating its own ex
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The error or warning message. |
-| `locator` | [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)!:The locator object for the error or warning. |
+| `locator` | [SourceLocator](../javax/xml/transform/SourceLocator.md)!:The locator object for the error or warning. |
 
 ### TransformerException
 
@@ -119,7 +119,7 @@ Wrap an existing exception in a TransformerException.
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The error or warning message, or null to use the message from the embedded exception. |
-| `locator` | [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)!:The locator object for the error or warning. |
+| `locator` | [SourceLocator](../javax/xml/transform/SourceLocator.md)!:The locator object for the error or warning. |
 | `e` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:Any exception |
 | --- | --- |
 
@@ -155,7 +155,7 @@ This method retrieves an exception that this exception wraps.
 
 **See Also**
 
-- [#getCause](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#cause:kotlin.Throwable) 
+- [#getCause](../javax/xml/transform/TransformerException.md) 
 
 ### getLocationAsString
 
@@ -183,7 +183,7 @@ Method getLocator retrieves an instance of a SourceLocator object that specifies
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)! | A SourceLocator object, or null if none was specified. |
+| [SourceLocator](../javax/xml/transform/SourceLocator.md)! | A SourceLocator object, or null if none was specified. |
 
 ### getMessageAndLocation
 
@@ -209,11 +209,11 @@ open fun initCause(cause: Throwable?): Throwable
 
 Initializes the*cause*of this throwable to the specified value. (The cause is the throwable that caused this throwable to get thrown.)
 
-This method can be called at most once. It is generally called from within the constructor, or immediately after creating the throwable. If this throwable was created with [TransformerException(java.lang.Throwable)](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.Throwable))or [TransformerException(java.lang.String,java.lang.Throwable)](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.String,%20kotlin.Throwable)), this method cannot be called even once.
+This method can be called at most once. It is generally called from within the constructor, or immediately after creating the throwable. If this throwable was created with [TransformerException(java.lang.Throwable)](../javax/xml/transform/TransformerException.md))or [TransformerException(java.lang.String,java.lang.Throwable)](../javax/xml/transform/TransformerException.md)), this method cannot be called even once.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#cause:kotlin.Throwable) method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:the cause (which is saved for later retrieval by the [getCause()](../javax/xml/transform/TransformerException.md) method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------|
@@ -222,7 +222,7 @@ This method can be called at most once. It is generally called from within the c
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if`cause`is this throwable. (A throwable cannot be its own cause.) |
-| `java.lang.IllegalStateException` | if this throwable was created with [TransformerException(java.lang.Throwable)](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.Throwable))or [TransformerException(java.lang.String,java.lang.Throwable)](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException#TransformerException(kotlin.String,%20kotlin.Throwable)), or this method has already been called on this throwable. |
+| `java.lang.IllegalStateException` | if this throwable was created with [TransformerException(java.lang.Throwable)](../javax/xml/transform/TransformerException.md))or [TransformerException(java.lang.String,java.lang.Throwable)](../javax/xml/transform/TransformerException.md)), or this method has already been called on this throwable. |
 
 ### printStackTrace
 
@@ -246,7 +246,7 @@ Print the the trace of methods from where the error originated. This will trace 
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------|
-| `s` | [PrintStream](https://developer.android.com/reference/kotlin/java/io/PrintStream.html#):The stream where the dump will be sent to. |
+| `s` | [PrintStream](../java/io/PrintStream.md):The stream where the dump will be sent to. |
 
 ### printStackTrace
 
@@ -260,7 +260,7 @@ Print the the trace of methods from where the error originated. This will trace 
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------|
-| `s` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#):The writer where the dump will be sent to. |
+| `s` | [PrintWriter](../java/io/PrintWriter.md):The writer where the dump will be sent to. |
 
 ### setLocator
 
@@ -274,7 +274,7 @@ Method setLocator sets an instance of a SourceLocator object that specifies wher
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `location` | [SourceLocator](https://developer.android.com/reference/kotlin/javax/xml/transform/SourceLocator)!:A SourceLocator object, or null to clear the location. |
+| `location` | [SourceLocator](../javax/xml/transform/SourceLocator.md)!:A SourceLocator object, or null to clear the location. |
 
 ## Properties
 

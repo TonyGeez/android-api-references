@@ -10,17 +10,17 @@ class Period : ChronoPeriod, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.Period](https://developer.android.com/reference/kotlin/java/time/Period#) |
+| ↳ | [java.time.Period](../java/time/Period.md) |
 
 A date-based amount of time in the ISO-8601 calendar system, such as '2 years, 3 months and 4 days'.
 
-This class models a quantity or amount of time in terms of years, months and days. See [Duration](https://developer.android.com/reference/kotlin/java/time/Duration) for the time-based equivalent to this class.
+This class models a quantity or amount of time in terms of years, months and days. See [Duration](../java/time/Duration.md) for the time-based equivalent to this class.
 
-Durations and periods differ in their treatment of daylight savings time when added to [ZonedDateTime](https://developer.android.com/reference/kotlin/java/time/ZonedDateTime). A`Duration`will add an exact number of seconds, thus a duration of one day is always exactly 24 hours. By contrast, a`Period`will add a conceptual day, trying to maintain the local time.
+Durations and periods differ in their treatment of daylight savings time when added to [ZonedDateTime](../java/time/ZonedDateTime.md). A`Duration`will add an exact number of seconds, thus a duration of one day is always exactly 24 hours. By contrast, a`Period`will add a conceptual day, trying to maintain the local time.
 
 For example, consider adding a period of one day and a duration of one day to 18:00 on the evening before a daylight savings gap. The`Period`will add the conceptual day and result in a`ZonedDateTime`at 18:00 the following day. By contrast, the`Duration`will add exactly 24 hours, resulting in a`ZonedDateTime`at 19:00 the following day (assuming a one hour DST gap).
 
-The supported units of a period are [YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit), [MONTHS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) and [DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit). All three fields are always present, but may be set to zero.
+The supported units of a period are [YEARS](../java/time/temporal/ChronoUnit.md), [MONTHS](../java/time/temporal/ChronoUnit.md) and [DAYS](../java/time/temporal/ChronoUnit.md). All three fields are always present, but may be set to zero.
 
 The ISO-8601 calendar system is the modern civil calendar system used today in most of the world. It is equivalent to the proleptic Gregorian calendar system, in which today's rules for leap years are applied for all time.
 
@@ -30,58 +30,58 @@ The period is modeled as a directed amount of time, meaning that individual part
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [addTo](https://developer.android.com/reference/kotlin/java/time/Period#addTo(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Adds this period to the specified temporal object. |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [between](https://developer.android.com/reference/kotlin/java/time/Period#between(java.time.LocalDate,%20java.time.LocalDate))`(`startDateInclusive:` ` [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)!`, `endDateExclusive:` ` [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)!`)` Obtains a`Period`consisting of the number of years, months, and days between two dates. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/time/Period#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this period is equal to another period. |
+| [Temporal](../java/time/temporal/Temporal.md)! | [addTo](../java/time/Period.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Adds this period to the specified temporal object. |
+| static [Period](../java/time/Period.md)! | [between](../java/time/Period.md))`(`startDateInclusive:` ` [LocalDate](../java/time/LocalDate.md)!`, `endDateExclusive:` ` [LocalDate](../java/time/LocalDate.md)!`)` Obtains a`Period`consisting of the number of years, months, and days between two dates. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/Period.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this period is equal to another period. |
 | --- | --- |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [from](https://developer.android.com/reference/kotlin/java/time/Period#from(java.time.temporal.TemporalAmount))`(`amount:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Obtains an instance of`Period`from a temporal amount. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](https://developer.android.com/reference/kotlin/java/time/Period#get(java.time.temporal.TemporalUnit))`(`unit:` ` [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!`)` Gets the value of the requested unit. |
-| [IsoChronology](https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology)! | [getChronology](https://developer.android.com/reference/kotlin/java/time/Period#getChronology())`()` Gets the chronology of this period, which is the ISO calendar system. |
+| static [Period](../java/time/Period.md)! | [from](../java/time/Period.md))`(`amount:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Obtains an instance of`Period`from a temporal amount. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](../java/time/Period.md))`(`unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Gets the value of the requested unit. |
+| [IsoChronology](../java/time/chrono/IsoChronology.md)! | [getChronology](../java/time/Period.md))`()` Gets the chronology of this period, which is the ISO calendar system. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDays](https://developer.android.com/reference/kotlin/java/time/Period#getDays())`()` Gets the amount of days of this period. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonths](https://developer.android.com/reference/kotlin/java/time/Period#getMonths())`()` Gets the amount of months of this period. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!\>! | [getUnits](https://developer.android.com/reference/kotlin/java/time/Period#getUnits())`()` Gets the set of units supported by this period. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDays](../java/time/Period.md))`()` Gets the amount of days of this period. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonths](../java/time/Period.md))`()` Gets the amount of months of this period. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TemporalUnit](../java/time/temporal/TemporalUnit.md)!\>! | [getUnits](../java/time/Period.md))`()` Gets the set of units supported by this period. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYears](https://developer.android.com/reference/kotlin/java/time/Period#getYears())`()` Gets the amount of years of this period. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/time/Period#hashCode())`()` A hash code for this period. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](https://developer.android.com/reference/kotlin/java/time/Period#isNegative())`()` Checks if any of the three units of this period are negative. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYears](../java/time/Period.md))`()` Gets the amount of years of this period. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/Period.md))`()` A hash code for this period. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](../java/time/Period.md))`()` Checks if any of the three units of this period are negative. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZero](https://developer.android.com/reference/kotlin/java/time/Period#isZero())`()` Checks if all three units of this period are zero. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [minus](https://developer.android.com/reference/kotlin/java/time/Period#minus(java.time.temporal.TemporalAmount))`(`amountToSubtract:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Returns a copy of this period with the specified period subtracted. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [minusDays](https://developer.android.com/reference/kotlin/java/time/Period#minusDays(kotlin.Long))`(`daysToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified days subtracted. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZero](../java/time/Period.md))`()` Checks if all three units of this period are zero. |
+| [Period](../java/time/Period.md)! | [minus](../java/time/Period.md))`(`amountToSubtract:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns a copy of this period with the specified period subtracted. |
+| [Period](../java/time/Period.md)! | [minusDays](../java/time/Period.md))`(`daysToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified days subtracted. |
 | --- | --- |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [minusMonths](https://developer.android.com/reference/kotlin/java/time/Period#minusMonths(kotlin.Long))`(`monthsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified months subtracted. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [minusYears](https://developer.android.com/reference/kotlin/java/time/Period#minusYears(kotlin.Long))`(`yearsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified years subtracted. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [multipliedBy](https://developer.android.com/reference/kotlin/java/time/Period#multipliedBy(kotlin.Int))`(`scalar:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new instance with each element in this period multiplied by the specified scalar. |
+| [Period](../java/time/Period.md)! | [minusMonths](../java/time/Period.md))`(`monthsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified months subtracted. |
+| [Period](../java/time/Period.md)! | [minusYears](../java/time/Period.md))`(`yearsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified years subtracted. |
+| [Period](../java/time/Period.md)! | [multipliedBy](../java/time/Period.md))`(`scalar:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new instance with each element in this period multiplied by the specified scalar. |
 | --- | --- |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [negated](https://developer.android.com/reference/kotlin/java/time/Period#negated())`()` Returns a new instance with each amount in this period negated. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [normalized](https://developer.android.com/reference/kotlin/java/time/Period#normalized())`()` Returns a copy of this period with the years and months normalized. |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [of](https://developer.android.com/reference/kotlin/java/time/Period#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`years:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `months:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `days:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of years, months and days. |
+| [Period](../java/time/Period.md)! | [negated](../java/time/Period.md))`()` Returns a new instance with each amount in this period negated. |
+| [Period](../java/time/Period.md)! | [normalized](../java/time/Period.md))`()` Returns a copy of this period with the years and months normalized. |
+| static [Period](../java/time/Period.md)! | [of](../java/time/Period.md))`(`years:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `months:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `days:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of years, months and days. |
 | --- | --- |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [ofDays](https://developer.android.com/reference/kotlin/java/time/Period#ofDays(kotlin.Int))`(`days:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of days. |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [ofMonths](https://developer.android.com/reference/kotlin/java/time/Period#ofMonths(kotlin.Int))`(`months:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of months. |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [ofWeeks](https://developer.android.com/reference/kotlin/java/time/Period#ofWeeks(kotlin.Int))`(`weeks:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of weeks. |
+| static [Period](../java/time/Period.md)! | [ofDays](../java/time/Period.md))`(`days:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of days. |
+| static [Period](../java/time/Period.md)! | [ofMonths](../java/time/Period.md))`(`months:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of months. |
+| static [Period](../java/time/Period.md)! | [ofWeeks](../java/time/Period.md))`(`weeks:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of weeks. |
 | --- | --- |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [ofYears](https://developer.android.com/reference/kotlin/java/time/Period#ofYears(kotlin.Int))`(`years:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of years. |
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [parse](https://developer.android.com/reference/kotlin/java/time/Period#parse(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains a`Period`from a text string such as`PnYnMnD`. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [plus](https://developer.android.com/reference/kotlin/java/time/Period#plus(java.time.temporal.TemporalAmount))`(`amountToAdd:` ` [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!`)` Returns a copy of this period with the specified period added. |
+| static [Period](../java/time/Period.md)! | [ofYears](../java/time/Period.md))`(`years:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains a`Period`representing a number of years. |
+| static [Period](../java/time/Period.md)! | [parse](../java/time/Period.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains a`Period`from a text string such as`PnYnMnD`. |
+| [Period](../java/time/Period.md)! | [plus](../java/time/Period.md))`(`amountToAdd:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns a copy of this period with the specified period added. |
 | --- | --- |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [plusDays](https://developer.android.com/reference/kotlin/java/time/Period#plusDays(kotlin.Long))`(`daysToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified days added. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [plusMonths](https://developer.android.com/reference/kotlin/java/time/Period#plusMonths(kotlin.Long))`(`monthsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified months added. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [plusYears](https://developer.android.com/reference/kotlin/java/time/Period#plusYears(kotlin.Long))`(`yearsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified years added. |
+| [Period](../java/time/Period.md)! | [plusDays](../java/time/Period.md))`(`daysToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified days added. |
+| [Period](../java/time/Period.md)! | [plusMonths](../java/time/Period.md))`(`monthsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified months added. |
+| [Period](../java/time/Period.md)! | [plusYears](../java/time/Period.md))`(`yearsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this period with the specified years added. |
 | --- | --- |
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | [subtractFrom](https://developer.android.com/reference/kotlin/java/time/Period#subtractFrom(java.time.temporal.Temporal))`(`temporal:` ` [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!`)` Subtracts this period from the specified temporal object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/time/Period#toString())`()` Outputs this period as a`String`, such as`P6Y3M1D`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toTotalMonths](https://developer.android.com/reference/kotlin/java/time/Period#toTotalMonths())`()` Gets the total number of months in this period. |
+| [Temporal](../java/time/temporal/Temporal.md)! | [subtractFrom](../java/time/Period.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Subtracts this period from the specified temporal object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/Period.md))`()` Outputs this period as a`String`, such as`P6Y3M1D`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toTotalMonths](../java/time/Period.md))`()` Gets the total number of months in this period. |
 | --- | --- |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [withDays](https://developer.android.com/reference/kotlin/java/time/Period#withDays(kotlin.Int))`(`days:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this period with the specified amount of days. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [withMonths](https://developer.android.com/reference/kotlin/java/time/Period#withMonths(kotlin.Int))`(`months:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this period with the specified amount of months. |
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [withYears](https://developer.android.com/reference/kotlin/java/time/Period#withYears(kotlin.Int))`(`years:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this period with the specified amount of years. |
+| [Period](../java/time/Period.md)! | [withDays](../java/time/Period.md))`(`days:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this period with the specified amount of days. |
+| [Period](../java/time/Period.md)! | [withMonths](../java/time/Period.md))`(`months:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this period with the specified amount of months. |
+| [Period](../java/time/Period.md)! | [withYears](../java/time/Period.md))`(`years:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a copy of this period with the specified amount of years. |
 | --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | [ZERO](https://developer.android.com/reference/kotlin/java/time/Period#ZERO:java.time.Period) A constant for a period of zero. |
+| static [Period](../java/time/Period.md)! | [ZERO](../java/time/Period.md) A constant for a period of zero. |
 
 ## Public methods
 
@@ -97,7 +97,7 @@ Adds this period to the specified temporal object.
 
 This returns a temporal object of the same observable type as the input with this period added. If the temporal has a chronology, it must be the ISO chronology.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.plus(TemporalAmount)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#plus(java.time.temporal.TemporalAmount)). 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.plus(TemporalAmount)](../java/time/temporal/Temporal.md)). 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -114,11 +114,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the temporal object to adjust, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to adjust, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | an object of the same type with the adjustment made, not null |
+| [Temporal](../java/time/temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -144,16 +144,16 @@ The result of this method can be a negative period if the end is before the star
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
-| `startDateInclusive` | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)!:the start date, inclusive, not null |
-| `endDateExclusive` | [LocalDate](https://developer.android.com/reference/kotlin/java/time/LocalDate)!:the end date, exclusive, not null |
+| `startDateInclusive` | [LocalDate](../java/time/LocalDate.md)!:the start date, inclusive, not null |
+| `endDateExclusive` | [LocalDate](../java/time/LocalDate.md)!:the end date, exclusive, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------|---------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the period between this date and the end date, not null |
+| [Period](../java/time/Period.md)! | the period between this date and the end date, not null |
 
 **See Also**
 
-- [java.time.chrono.ChronoLocalDate#until(ChronoLocalDate)](https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate#until(java.time.chrono.ChronoLocalDate)) 
+- [java.time.chrono.ChronoLocalDate#until(ChronoLocalDate)](../java/time/chrono/ChronoLocalDate.md)) 
 
 ### equals
 
@@ -187,17 +187,17 @@ Obtains an instance of`Period`from a temporal amount.
 
 This obtains a period based on the specified amount. A`TemporalAmount`represents an amount of time, which may be date-based or time-based, which this factory extracts to a`Period`.
 
-The conversion loops around the set of units from the amount and uses the [YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit), [MONTHS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) and [DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) units to create a period. If any other units are found then an exception is thrown.
+The conversion loops around the set of units from the amount and uses the [YEARS](../java/time/temporal/ChronoUnit.md), [MONTHS](../java/time/temporal/ChronoUnit.md) and [DAYS](../java/time/temporal/ChronoUnit.md) units to create a period. If any other units are found then an exception is thrown.
 
 If the amount is a`ChronoPeriod`then it must use the ISO chronology.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `amount` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!:the temporal amount to convert, not null |
+| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the temporal amount to convert, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------|---------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the equivalent period, not null |
+| [Period](../java/time/Period.md)! | the equivalent period, not null |
 
 | Exceptions ||
 |---------------------------------|-------------------------------------------------------|
@@ -214,11 +214,11 @@ fun get(unit: TemporalUnit!): Long
 
 Gets the value of the requested unit.
 
-This returns a value for each of the three supported units, [YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit), [MONTHS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) and [DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit). All other units throw an exception.
+This returns a value for each of the three supported units, [YEARS](../java/time/temporal/ChronoUnit.md), [MONTHS](../java/time/temporal/ChronoUnit.md) and [DAYS](../java/time/temporal/ChronoUnit.md). All other units throw an exception.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `unit` | [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!:the`TemporalUnit`for which to return the value |
+| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the`TemporalUnit`for which to return the value |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------|
@@ -243,7 +243,7 @@ The`Chronology`represents the calendar system in use. The ISO-8601 calendar syst
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------------|
-| [IsoChronology](https://developer.android.com/reference/kotlin/java/time/chrono/IsoChronology)! | the ISO chronology, not null |
+| [IsoChronology](../java/time/chrono/IsoChronology.md)! | the ISO chronology, not null |
 
 ### getDays
 
@@ -289,13 +289,13 @@ fun getUnits(): MutableList<TemporalUnit!>!
 
 Gets the set of units supported by this period.
 
-The supported units are [YEARS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit), [MONTHS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit) and [DAYS](https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit). They are returned in the order years, months, days.
+The supported units are [YEARS](../java/time/temporal/ChronoUnit.md), [MONTHS](../java/time/temporal/ChronoUnit.md) and [DAYS](../java/time/temporal/ChronoUnit.md). They are returned in the order years, months, days.
 
 This set can be used in conjunction with #get(java.time.temporal.TemporalUnit) to access the entire state of the period.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TemporalUnit](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit)!>! | a list containing the years, months and days units, not null |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TemporalUnit](../java/time/temporal/TemporalUnit.md)!>! | a list containing the years, months and days units, not null |
 
 ### getYears
 
@@ -375,17 +375,17 @@ This operates separately on the years, months and days. No normalization is perf
 
 For example, "1 year, 6 months and 3 days" minus "2 years, 2 months and 2 days" returns "-1 years, 4 months and 1 day".
 
-The specified amount is typically an instance of`Period`. Other types are interpreted using [Period.from(TemporalAmount)](https://developer.android.com/reference/kotlin/java/time/Period#from(java.time.temporal.TemporalAmount)).
+The specified amount is typically an instance of`Period`. Other types are interpreted using [Period.from(TemporalAmount)](../java/time/Period.md)).
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `amountToSubtract` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!:the amount to subtract, not null |
+| `amountToSubtract` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the amount to subtract, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the requested period subtracted, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the requested period subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------------------------------------------|
@@ -412,7 +412,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the specified days subtracted, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the specified days subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -438,7 +438,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the specified months subtracted, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the specified months subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -464,7 +464,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the specified years subtracted, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the specified years subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -488,7 +488,7 @@ This returns a period with each of the years, months and days units individually
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the amounts multiplied by the scalar, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the amounts multiplied by the scalar, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -508,7 +508,7 @@ This returns a period with each of the years, months and days units individually
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the amounts negated, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the amounts negated, not null |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -532,7 +532,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with excess months normalized to years, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with excess months normalized to years, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -563,7 +563,7 @@ This creates an instance based on years, months and days.
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the period of years, months and days, not null |
+| [Period](../java/time/Period.md)! | the period of years, months and days, not null |
 
 ### ofDays
 
@@ -583,7 +583,7 @@ The resulting period will have the specified days. The years and months units wi
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the period of days, not null |
+| [Period](../java/time/Period.md)! | the period of days, not null |
 
 ### ofMonths
 
@@ -603,7 +603,7 @@ The resulting period will have the specified months. The years and days units wi
 
 | Return ||
 |-----------------------------------------------------------------------------|--------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the period of months, not null |
+| [Period](../java/time/Period.md)! | the period of months, not null |
 
 ### ofWeeks
 
@@ -623,7 +623,7 @@ The resulting period will be day-based, with the amount of days equal to the num
 
 | Return ||
 |-----------------------------------------------------------------------------|--------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the period, with the input weeks converted to days, not null |
+| [Period](../java/time/Period.md)! | the period, with the input weeks converted to days, not null |
 
 ### ofYears
 
@@ -643,7 +643,7 @@ The resulting period will have the specified years. The months and days units wi
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the period of years, not null |
+| [Period](../java/time/Period.md)! | the period of years, not null |
 
 ### parse
 
@@ -681,7 +681,7 @@ For example, the following are valid inputs:
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | the parsed period, not null |
+| [Period](../java/time/Period.md)! | the parsed period, not null |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------|
@@ -701,17 +701,17 @@ This operates separately on the years, months and days. No normalization is perf
 
 For example, "1 year, 6 months and 3 days" plus "2 years, 2 months and 2 days" returns "3 years, 8 months and 5 days".
 
-The specified amount is typically an instance of`Period`. Other types are interpreted using [Period.from(TemporalAmount)](https://developer.android.com/reference/kotlin/java/time/Period#from(java.time.temporal.TemporalAmount)).
+The specified amount is typically an instance of`Period`. Other types are interpreted using [Period.from(TemporalAmount)](../java/time/Period.md)).
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `amountToAdd` | [TemporalAmount](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount)!:the amount to add, not null |
+| `amountToAdd` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the amount to add, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the requested period added, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the requested period added, not null |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------------------------------------------|
@@ -738,7 +738,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the specified days added, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the specified days added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -764,7 +764,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the specified months added, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the specified months added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -790,7 +790,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the specified years added, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the specified years added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -808,7 +808,7 @@ Subtracts this period from the specified temporal object.
 
 This returns a temporal object of the same observable type as the input with this period subtracted. If the temporal has a chronology, it must be the ISO chronology.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.minus(TemporalAmount)](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#minus(java.time.temporal.TemporalAmount)). 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.minus(TemporalAmount)](../java/time/temporal/Temporal.md)). 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -825,11 +825,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)!:the temporal object to adjust, not null |
+| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to adjust, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Temporal](https://developer.android.com/reference/kotlin/java/time/temporal/Temporal)! | an object of the same type with the adjustment made, not null |
+| [Temporal](../java/time/temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -890,7 +890,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the requested days, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the requested days, not null |
 
 ### withMonths
 
@@ -914,7 +914,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the requested months, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the requested months, not null |
 
 ### withYears
 
@@ -938,7 +938,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Period](https://developer.android.com/reference/kotlin/java/time/Period#)! | a`Period`based on this period with the requested years, not null |
+| [Period](../java/time/Period.md)! | a`Period`based on this period with the requested years, not null |
 
 ## Properties
 

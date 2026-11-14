@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # LocusId
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/LocusId "View this page in Java") 
+Kotlin| [Java](../android/content/LocusId.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ class LocusId : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId#) |
+| ↳ | [android.content.LocusId](../android/content/LocusId.md) |
 
 An identifier for an unique state (locus) in the application. Should be stable across reboots and backup / restore.
 
-Locus is a new concept introduced on [Android Q](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int) and it lets the intelligence service provided by the Android System to correlate state between different subsystems such as content capture, shortcuts, and notifications.
+Locus is a new concept introduced on [Android Q](../android/os/Build.VERSION_CODES.md) and it lets the intelligence service provided by the Android System to correlate state between different subsystems such as content capture, shortcuts, and notifications.
 
 For example, if your app provides an activity representing a chat between 2 users (say`A`and`B`, this chat state could be represented by: 
 
@@ -29,37 +29,37 @@ For example, if your app provides an activity representing a chat between 2 user
 
 And then you should use that`chatId`by:
 
-- Setting it in the chat notification (through [Notification.Builder.setLocusId(chatId)](https://developer.android.com/reference/kotlin/android/app/Notification.Builder.html#setLocusId(android.content.LocusId))).
-- Setting it into the [android.content.pm.ShortcutInfo](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo)(through [ShortcutInfo.Builder.setLocusId(chatId)](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder#setLocusId(android.content.LocusId))), if you provide a launcher shortcut for that chat conversation.
-- Associating it with the [android.view.contentcapture.ContentCaptureContext](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext.html#) of the root view of the chat conversation activity (through [android.view.View#getContentCaptureSession()](https://developer.android.com/reference/kotlin/android/view/View.html#getContentCaptureSession()), then [new ContentCaptureContext.Builder(chatId).build()](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext.Builder.html#) and [android.view.contentcapture.ContentCaptureSession#setContentCaptureContext( * android.view.contentcapture.ContentCaptureContext)](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession.html#setContentCaptureContext(android.view.contentcapture.ContentCaptureContext))- see [ContentCaptureManager](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager.html#) for more info about content capture).
-- Configuring your app to launch the chat conversation through the [Intent.ACTION_VIEW_LOCUS](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_VIEW_LOCUS:kotlin.String) intent.
+- Setting it in the chat notification (through [Notification.Builder.setLocusId(chatId)](../android/app/Notification.Builder.md))).
+- Setting it into the [android.content.pm.ShortcutInfo](../android/content/pm/ShortcutInfo.md)(through [ShortcutInfo.Builder.setLocusId(chatId)](../android/content/pm/ShortcutInfo.Builder.md))), if you provide a launcher shortcut for that chat conversation.
+- Associating it with the [android.view.contentcapture.ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) of the root view of the chat conversation activity (through [android.view.View#getContentCaptureSession()](../android/view/View.md)), then [new ContentCaptureContext.Builder(chatId).build()](../android/view/contentcapture/ContentCaptureContext.Builder.md) and [android.view.contentcapture.ContentCaptureSession#setContentCaptureContext( * android.view.contentcapture.ContentCaptureContext)](../android/view/contentcapture/ContentCaptureSession.md))- see [ContentCaptureManager](../android/view/contentcapture/ContentCaptureManager.md) for more info about content capture).
+- Configuring your app to launch the chat conversation through the [Intent.ACTION_VIEW_LOCUS](../android/content/Intent.md) intent.
 
-NOTE: The LocusId is only used by an on-device intelligence service provided by the Android System, see [ContentCaptureManager](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager.html#) for more details.
+NOTE: The LocusId is only used by an on-device intelligence service provided by the Android System, see [ContentCaptureManager](../android/view/contentcapture/ContentCaptureManager.md) for more details.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId#LocusId(kotlin.String))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Default constructor. |
+| [LocusId](../android/content/LocusId.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Default constructor. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/content/LocusId#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/content/LocusId#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](https://developer.android.com/reference/kotlin/android/content/LocusId#getId())`()` Gets the canonical`id`associated with the locus. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/LocusId.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/content/LocusId.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](../android/content/LocusId.md))`()` Gets the canonical`id`associated with the locus. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/content/LocusId#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/content/LocusId#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/content/LocusId#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/content/LocusId.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/LocusId.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/LocusId.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [LocusId](https://developer.android.com/reference/kotlin/android/content/LocusId#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/content/LocusId#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LocusId](../android/content/LocusId.md)!\> | [CREATOR](../android/content/LocusId.md) <br /> |
 
 ## Public constructors
 
@@ -93,7 +93,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -175,7 +175,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

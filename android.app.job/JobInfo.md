@@ -8,7 +8,7 @@ open class JobInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.job.JobInfo](https://developer.android.com/reference/kotlin/android/app/job/JobInfo#) |
+| ↳ | [android.app.job.JobInfo](../android/app/job/JobInfo.md) |
 
 Container of data passed to the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler` fully encapsulating the parameters required to schedule work against the calling application. These are constructed using the `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder`. The goal here is to provide the scheduler with high-level semantics about the work you want to accomplish.
 
@@ -67,14 +67,14 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getBackoffPolicy()()` Return the backoff policy of this job. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getCategory()()` <br /> |
-| open [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getClipData()()` <br /> |
+| open [ClipData](../android/content/ClipData.md)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getClipData()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getClipGrantFlags()()` <br /> |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getDebugTags()()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getEstimatedNetworkDownloadBytes()()` Return the estimated size of download traffic that will be performed by this job, in bytes. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getEstimatedNetworkUploadBytes()()` Return the estimated size of upload traffic that will be performed by this job, in bytes. |
 | --- | --- |
-| open [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getExtras()()` <br /> |
+| open [PersistableBundle](../android/os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getExtras()()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getFlexMillis()()` Flex time for this job. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getId()()` Unique job id associated with this application (uid). |
 | --- | --- |
@@ -90,15 +90,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getNetworkType()()` Return the basic description of the kind of network this job requires. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getPriority()()` <br /> |
 | --- | --- |
-| open [NetworkRequest](https://developer.android.com/reference/kotlin/android/net/NetworkRequest.html#)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getRequiredNetwork()()` Return the detailed description of the kind of network this job requires, or `null` if no specific kind of network is required. |
-| open [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getService()()` Name of the service endpoint that will be called back into by the JobScheduler. |
+| open [NetworkRequest](../android/net/NetworkRequest.md)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getRequiredNetwork()()` Return the detailed description of the kind of network this job requires, or `null` if no specific kind of network is required. |
+| open [ComponentName](../android/content/ComponentName.md) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getService()()` Name of the service endpoint that will be called back into by the JobScheduler. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTraceTag()()` <br /> |
 | --- | --- |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTransientExtras()()` <br /> |
+| open [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTransientExtras()()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTriggerContentMaxDelay()()` When triggering on content URI changes, this is the maximum delay we will use before scheduling the job. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTriggerContentUpdateDelay()()` When triggering on content URI changes, this is the delay from when a change is detected until the job is scheduled. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [JobInfo.TriggerContentUri](https://developer.android.com/reference/kotlin/android/app/job/JobInfo.TriggerContentUri)!\>? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTriggerContentUris()()` Which content: URIs must change for the job to be scheduled. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [JobInfo.TriggerContentUri](../android/app/job/JobInfo.TriggerContentUri.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTriggerContentUris()()` Which content: URIs must change for the job to be scheduled. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#hashCode()()` Returns a hash code value for the object. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isExpedited()()` <br /> |
 | --- | --- |
@@ -119,7 +119,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [JobInfo](https://developer.android.com/reference/kotlin/android/app/job/JobInfo#)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [JobInfo](../android/app/job/JobInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

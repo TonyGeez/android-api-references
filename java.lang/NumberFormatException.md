@@ -11,11 +11,11 @@ open class NumberFormatException : IllegalArgumentException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException) ||
-| | | | | ↳ | [java.lang.NumberFormatException](https://developer.android.com/reference/kotlin/java/lang/NumberFormatException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) ||
+| | | | | ↳ | [java.lang.NumberFormatException](../java/lang/NumberFormatException.md) |
 
 Thrown to indicate that the application has attempted to convert a string to one of the numeric types, but that the string does not have the appropriate format.
 
@@ -23,8 +23,8 @@ Thrown to indicate that the application has attempted to convert a string to one
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NumberFormatException](https://developer.android.com/reference/kotlin/java/lang/NumberFormatException#NumberFormatException())`()` Constructs a`NumberFormatException`with no detail message. |
-| [NumberFormatException](https://developer.android.com/reference/kotlin/java/lang/NumberFormatException#NumberFormatException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`NumberFormatException`with the specified detail message. |
+| [NumberFormatException](../java/lang/NumberFormatException.md))`()` Constructs a`NumberFormatException`with no detail message. |
+| [NumberFormatException](../java/lang/NumberFormatException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`NumberFormatException`with the specified detail message. |
 
 ## Public constructors
 

@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # CallingAppInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/service/credentials/CallingAppInfo "View this page in Java")
+Kotlin | [Java](../android/service/credentials/CallingAppInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class CallingAppInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.credentials.CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#) |
+| ↳ | [android.service.credentials.CallingAppInfo](../android/service/credentials/CallingAppInfo.md) |
 
 Information pertaining to the calling application, including the package name and a list of app signatures.
 
@@ -32,14 +32,14 @@ Information pertaining to the calling application, including the package name an
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#getOrigin()()` Returns the origin of the calling app if set otherwise returns null. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#getPackageName()()` Returns the package name of the source of this info. |
 | --- | --- |
-| [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#) | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#getSigningInfo()()` Returns the SigningInfo object that contains an array of `https://developer.android.com/reference/kotlin/android/content/pm/Signature.html#` belonging to the app. |
+| [SigningInfo](../android/content/pm/SigningInfo.md) | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#getSigningInfo()()` Returns the SigningInfo object that contains an array of `https://developer.android.com/reference/kotlin/android/content/pm/Signature.html#` belonging to the app. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#)!\> | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CallingAppInfo](../android/service/credentials/CallingAppInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -58,7 +58,7 @@ Constructs a new instance.
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `signingInfo` | [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#): This value cannot be `null`. |
+| `signingInfo` | [SigningInfo](../android/content/pm/SigningInfo.md): This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -81,7 +81,7 @@ Constructs a new instance.
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): - the package name of the calling app. This value cannot be `null`. |
-| `signingInfo` | [SigningInfo](https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#): - the signing info on the calling app. This value cannot be `null`. |
+| `signingInfo` | [SigningInfo](../android/content/pm/SigningInfo.md): - the signing info on the calling app. This value cannot be `null`. |
 | `origin` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: - the origin that the calling app wants to use when making request on behalf of other. This value may be `null`. |
 | --- | --- |
 
@@ -173,7 +173,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

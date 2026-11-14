@@ -4,157 +4,157 @@
 
 ## Interfaces
 
-| [Collection](https://developer.android.com/reference/kotlin/java/util/Collection) | The root interface in the*collection hierarchy*. |
+| [Collection](../java/util/Collection.md) | The root interface in the*collection hierarchy*. |
 | --- | --- |
-| [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator) | A comparison function, which imposes a*total ordering*on some collection of objects. |
-| [Deque](https://developer.android.com/reference/kotlin/java/util/Deque) | A linear collection that supports element insertion and removal at both ends. |
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration) | An object that implements the Enumeration interface generates a series of elements, one at a time. |
+| [Comparator](../java/util/Comparator.md) | A comparison function, which imposes a*total ordering*on some collection of objects. |
+| [Deque](../java/util/Deque.md) | A linear collection that supports element insertion and removal at both ends. |
+| [Enumeration](../java/util/Enumeration.md) | An object that implements the Enumeration interface generates a series of elements, one at a time. |
 | --- | --- |
-| [EventListener](https://developer.android.com/reference/kotlin/java/util/EventListener) | A tagging interface that all event listener interfaces must extend. |
-| [Formattable](https://developer.android.com/reference/kotlin/java/util/Formattable) | The`Formattable`interface must be implemented by any class that needs to perform custom formatting using the`'s'`conversion specifier of [java.util.Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter). |
-| [Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator) | An iterator over a collection. |
+| [EventListener](../java/util/EventListener.md) | A tagging interface that all event listener interfaces must extend. |
+| [Formattable](../java/util/Formattable.md) | The`Formattable`interface must be implemented by any class that needs to perform custom formatting using the`'s'`conversion specifier of [java.util.Formatter](../java/util/Formatter.md). |
+| [Iterator](../java/util/Iterator.md) | An iterator over a collection. |
 | --- | --- |
-| [List](https://developer.android.com/reference/kotlin/java/util/List) | An ordered collection, where the user has precise control over where in the list each element is inserted. |
-| [ListIterator](https://developer.android.com/reference/kotlin/java/util/ListIterator) | An iterator for lists that allows the programmer to traverse the list in either direction, modify the list during iteration, and obtain the iterator's current position in the list. |
-| [Map](https://developer.android.com/reference/kotlin/java/util/Map) | An object that maps keys to values. |
+| [List](../java/util/List.md) | An ordered collection, where the user has precise control over where in the list each element is inserted. |
+| [ListIterator](../java/util/ListIterator.md) | An iterator for lists that allows the programmer to traverse the list in either direction, modify the list during iteration, and obtain the iterator's current position in the list. |
+| [Map](../java/util/Map.md) | An object that maps keys to values. |
 | --- | --- |
-| [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) | A [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap) extended with navigation methods returning the closest matches for given search targets. |
-| [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet) | A [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet) extended with navigation methods reporting closest matches for given search targets. |
-| [Observer](https://developer.android.com/reference/kotlin/java/util/Observer) | A class can implement the`Observer`interface when it wants to be informed of changes in observable objects. |
+| [NavigableMap](../java/util/NavigableMap.md) | A [SortedMap](../java/util/SortedMap.md) extended with navigation methods returning the closest matches for given search targets. |
+| [NavigableSet](../java/util/NavigableSet.md) | A [SortedSet](../java/util/SortedSet.md) extended with navigation methods reporting closest matches for given search targets. |
+| [Observer](../java/util/Observer.md) | A class can implement the`Observer`interface when it wants to be informed of changes in observable objects. |
 | --- | --- |
-| [PrimitiveIterator](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator) | A base type for primitive specializations of`Iterator`. |
-| [Queue](https://developer.android.com/reference/kotlin/java/util/Queue) | A collection designed for holding elements prior to processing. |
-| [RandomAccess](https://developer.android.com/reference/kotlin/java/util/RandomAccess) | Marker interface used by`List`implementations to indicate that they support fast (generally constant time) random access. |
+| [PrimitiveIterator](../java/util/PrimitiveIterator.md) | A base type for primitive specializations of`Iterator`. |
+| [Queue](../java/util/Queue.md) | A collection designed for holding elements prior to processing. |
+| [RandomAccess](../java/util/RandomAccess.md) | Marker interface used by`List`implementations to indicate that they support fast (generally constant time) random access. |
 | --- | --- |
-| [SequencedCollection](https://developer.android.com/reference/kotlin/java/util/SequencedCollection) | A collection that has a well-defined encounter order, that supports operations at both ends, and that is reversible. |
-| [SequencedMap](https://developer.android.com/reference/kotlin/java/util/SequencedMap) | A Map that has a well-defined encounter order, that supports operations at both ends, and that is reversible. |
-| [SequencedSet](https://developer.android.com/reference/kotlin/java/util/SequencedSet) | A collection that is both a [SequencedCollection](https://developer.android.com/reference/kotlin/java/util/SequencedCollection) and a [Set](https://developer.android.com/reference/kotlin/java/util/Set). |
+| [SequencedCollection](../java/util/SequencedCollection.md) | A collection that has a well-defined encounter order, that supports operations at both ends, and that is reversible. |
+| [SequencedMap](../java/util/SequencedMap.md) | A Map that has a well-defined encounter order, that supports operations at both ends, and that is reversible. |
+| [SequencedSet](../java/util/SequencedSet.md) | A collection that is both a [SequencedCollection](../java/util/SequencedCollection.md) and a [Set](../java/util/Set.md). |
 | --- | --- |
-| [Provider](https://developer.android.com/reference/kotlin/java/util/ServiceLoader.Provider) | Represents a service provider located by`ServiceLoader`. |
-| [Set](https://developer.android.com/reference/kotlin/java/util/Set) | A collection that contains no duplicate elements. |
-| [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap) | A [Map](https://developer.android.com/reference/kotlin/java/util/Map) that further provides a*total ordering*on its keys. |
+| [Provider](../java/util/ServiceLoader.Provider.md) | Represents a service provider located by`ServiceLoader`. |
+| [Set](../java/util/Set.md) | A collection that contains no duplicate elements. |
+| [SortedMap](../java/util/SortedMap.md) | A [Map](../java/util/Map.md) that further provides a*total ordering*on its keys. |
 | --- | --- |
-| [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet) | A [Set](https://developer.android.com/reference/kotlin/java/util/Set) that further provides a*total ordering*on its elements. |
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) | An object for traversing and partitioning elements of a source. |
+| [SortedSet](../java/util/SortedSet.md) | A [Set](../java/util/Set.md) that further provides a*total ordering*on its elements. |
+| [Spliterator](../java/util/Spliterator.md) | An object for traversing and partitioning elements of a source. |
 
 ## Classes
 
-| [AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection) | This class provides a skeletal implementation of the`Collection`interface, to minimize the effort required to implement this interface. |
+| [AbstractCollection](../java/util/AbstractCollection.md) | This class provides a skeletal implementation of the`Collection`interface, to minimize the effort required to implement this interface. |
 | --- | --- |
-| [AbstractList](https://developer.android.com/reference/kotlin/java/util/AbstractList) | This class provides a skeletal implementation of the [List](https://developer.android.com/reference/kotlin/java/util/List) interface to minimize the effort required to implement this interface backed by a "random access" data store (such as an array). |
-| [AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap) | This class provides a skeletal implementation of the`Map`interface, to minimize the effort required to implement this interface. |
-| [AbstractQueue](https://developer.android.com/reference/kotlin/java/util/AbstractQueue) | This class provides skeletal implementations of some [Queue](https://developer.android.com/reference/kotlin/java/util/Queue) operations. |
+| [AbstractList](../java/util/AbstractList.md) | This class provides a skeletal implementation of the [List](../java/util/List.md) interface to minimize the effort required to implement this interface backed by a "random access" data store (such as an array). |
+| [AbstractMap](../java/util/AbstractMap.md) | This class provides a skeletal implementation of the`Map`interface, to minimize the effort required to implement this interface. |
+| [AbstractQueue](../java/util/AbstractQueue.md) | This class provides skeletal implementations of some [Queue](../java/util/Queue.md) operations. |
 | --- | --- |
-| [AbstractSequentialList](https://developer.android.com/reference/kotlin/java/util/AbstractSequentialList) | This class provides a skeletal implementation of the`List`interface to minimize the effort required to implement this interface backed by a "sequential access" data store (such as a linked list). |
-| [AbstractSet](https://developer.android.com/reference/kotlin/java/util/AbstractSet) | This class provides a skeletal implementation of the`Set`interface to minimize the effort required to implement this interface. |
-| [ArrayDeque](https://developer.android.com/reference/kotlin/java/util/ArrayDeque) | Resizable-array implementation of the [Deque](https://developer.android.com/reference/kotlin/java/util/Deque) interface. |
+| [AbstractSequentialList](../java/util/AbstractSequentialList.md) | This class provides a skeletal implementation of the`List`interface to minimize the effort required to implement this interface backed by a "sequential access" data store (such as a linked list). |
+| [AbstractSet](../java/util/AbstractSet.md) | This class provides a skeletal implementation of the`Set`interface to minimize the effort required to implement this interface. |
+| [ArrayDeque](../java/util/ArrayDeque.md) | Resizable-array implementation of the [Deque](../java/util/Deque.md) interface. |
 | --- | --- |
-| [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList) | Resizable-array implementation of the`List`interface. |
-| [Arrays](https://developer.android.com/reference/kotlin/java/util/Arrays) | This class contains various methods for manipulating arrays (such as sorting and searching). |
-| [Base64](https://developer.android.com/reference/kotlin/java/util/Base64) | This class consists exclusively of static methods for obtaining encoders and decoders for the Base64 encoding scheme. |
+| [ArrayList](../java/util/ArrayList.md) | Resizable-array implementation of the`List`interface. |
+| [Arrays](../java/util/Arrays.md) | This class contains various methods for manipulating arrays (such as sorting and searching). |
+| [Base64](../java/util/Base64.md) | This class consists exclusively of static methods for obtaining encoders and decoders for the Base64 encoding scheme. |
 | --- | --- |
-| [BitSet](https://developer.android.com/reference/kotlin/java/util/BitSet) | This class implements a vector of bits that grows as needed. |
-| [Calendar](https://developer.android.com/reference/kotlin/java/util/Calendar) | The class is an abstract class that provides methods for converting between a specific instant in time and a set of [calendar fields](https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray) such as`YEAR``MONTH``DAY_OF_MONTH``HOUR`, and so on, and for manipulating the calendar fields, such as getting the date of the next week. |
-| [Collections](https://developer.android.com/reference/kotlin/java/util/Collections) | This class consists exclusively of static methods that operate on or return collections. |
+| [BitSet](../java/util/BitSet.md) | This class implements a vector of bits that grows as needed. |
+| [Calendar](../java/util/Calendar.md) | The class is an abstract class that provides methods for converting between a specific instant in time and a set of [calendar fields](../java/util/Calendar.md) such as`YEAR``MONTH``DAY_OF_MONTH``HOUR`, and so on, and for manipulating the calendar fields, such as getting the date of the next week. |
+| [Collections](../java/util/Collections.md) | This class consists exclusively of static methods that operate on or return collections. |
 | --- | --- |
-| [Currency](https://developer.android.com/reference/kotlin/java/util/Currency) | Represents a currency. |
-| [Date](https://developer.android.com/reference/kotlin/java/util/Date) | The class`Date`represents a specific instant in time, with millisecond precision. |
-| [Dictionary](https://developer.android.com/reference/kotlin/java/util/Dictionary) | The`Dictionary`class is the abstract parent of any class, such as`Hashtable`, which maps keys to values. |
+| [Currency](../java/util/Currency.md) | Represents a currency. |
+| [Date](../java/util/Date.md) | The class`Date`represents a specific instant in time, with millisecond precision. |
+| [Dictionary](../java/util/Dictionary.md) | The`Dictionary`class is the abstract parent of any class, such as`Hashtable`, which maps keys to values. |
 | --- | --- |
-| [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics) | A state object for collecting statistics such as count, min, max, sum, and average. |
-| [EnumMap](https://developer.android.com/reference/kotlin/java/util/EnumMap) | A specialized [Map](https://developer.android.com/reference/kotlin/java/util/Map) implementation for use with enum type keys. |
-| [EnumSet](https://developer.android.com/reference/kotlin/java/util/EnumSet) | A specialized [Set](https://developer.android.com/reference/kotlin/java/util/Set) implementation for use with enum types. |
+| [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md) | A state object for collecting statistics such as count, min, max, sum, and average. |
+| [EnumMap](../java/util/EnumMap.md) | A specialized [Map](../java/util/Map.md) implementation for use with enum type keys. |
+| [EnumSet](../java/util/EnumSet.md) | A specialized [Set](../java/util/Set.md) implementation for use with enum types. |
 | --- | --- |
-| [EventListenerProxy](https://developer.android.com/reference/kotlin/java/util/EventListenerProxy) | An abstract wrapper class for an`EventListener`class which associates a set of additional parameters with the listener. |
-| [EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject) | The root class from which all event state objects shall be derived. |
-| [FormattableFlags](https://developer.android.com/reference/kotlin/java/util/FormattableFlags) | FormattableFlags are passed to the [Formattable.formatTo()](https://developer.android.com/reference/kotlin/java/util/Formattable#formatTo(java.util.Formatter,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))method and modify the output format for [Formattables](https://developer.android.com/reference/kotlin/java/util/Formattable). |
+| [EventListenerProxy](../java/util/EventListenerProxy.md) | An abstract wrapper class for an`EventListener`class which associates a set of additional parameters with the listener. |
+| [EventObject](../java/util/EventObject.md) | The root class from which all event state objects shall be derived. |
+| [FormattableFlags](../java/util/FormattableFlags.md) | FormattableFlags are passed to the [Formattable.formatTo()](../java/util/Formattable.md))method and modify the output format for [Formattables](../java/util/Formattable.md). |
 | --- | --- |
-| [Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter) | An interpreter for printf-style format strings. |
-| [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar) | `GregorianCalendar`is a concrete subclass of`Calendar`and provides the standard calendar system used by most of the world. |
-| [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap) | Hash table based implementation of the`Map`interface. |
+| [Formatter](../java/util/Formatter.md) | An interpreter for printf-style format strings. |
+| [GregorianCalendar](../java/util/GregorianCalendar.md) | `GregorianCalendar`is a concrete subclass of`Calendar`and provides the standard calendar system used by most of the world. |
+| [HashMap](../java/util/HashMap.md) | Hash table based implementation of the`Map`interface. |
 | --- | --- |
-| [HashSet](https://developer.android.com/reference/kotlin/java/util/HashSet) | This class implements the`Set`interface, backed by a hash table (actually a`HashMap`instance). |
-| [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable) | This class implements a hash table, which maps keys to values. |
-| [HexFormat](https://developer.android.com/reference/kotlin/java/util/HexFormat) | `HexFormat`converts between bytes and chars and hex-encoded strings which may include additional formatting markup such as prefixes, suffixes, and delimiters. |
+| [HashSet](../java/util/HashSet.md) | This class implements the`Set`interface, backed by a hash table (actually a`HashMap`instance). |
+| [Hashtable](../java/util/Hashtable.md) | This class implements a hash table, which maps keys to values. |
+| [HexFormat](../java/util/HexFormat.md) | `HexFormat`converts between bytes and chars and hex-encoded strings which may include additional formatting markup such as prefixes, suffixes, and delimiters. |
 | --- | --- |
-| [IdentityHashMap](https://developer.android.com/reference/kotlin/java/util/IdentityHashMap) | This class implements the`Map`interface with a hash table, using reference-equality in place of object-equality when comparing keys (and values). |
-| [IntSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/IntSummaryStatistics) | A state object for collecting statistics such as count, min, max, sum, and average. |
-| [LinkedHashMap](https://developer.android.com/reference/kotlin/java/util/LinkedHashMap) | Hash table and linked list implementation of the`Map`interface, with well-defined encounter order. |
+| [IdentityHashMap](../java/util/IdentityHashMap.md) | This class implements the`Map`interface with a hash table, using reference-equality in place of object-equality when comparing keys (and values). |
+| [IntSummaryStatistics](../java/util/IntSummaryStatistics.md) | A state object for collecting statistics such as count, min, max, sum, and average. |
+| [LinkedHashMap](../java/util/LinkedHashMap.md) | Hash table and linked list implementation of the`Map`interface, with well-defined encounter order. |
 | --- | --- |
-| [LinkedHashSet](https://developer.android.com/reference/kotlin/java/util/LinkedHashSet) | Hash table and linked list implementation of the`Set`interface, with well-defined encounter order. |
-| [LinkedList](https://developer.android.com/reference/kotlin/java/util/LinkedList) | Doubly-linked list implementation of the`List`and`Deque`interfaces. |
-| [ListResourceBundle](https://developer.android.com/reference/kotlin/java/util/ListResourceBundle) | `ListResourceBundle`is an abstract subclass of`ResourceBundle`that manages resources for a locale in a convenient and easy to use list. |
+| [LinkedHashSet](../java/util/LinkedHashSet.md) | Hash table and linked list implementation of the`Set`interface, with well-defined encounter order. |
+| [LinkedList](../java/util/LinkedList.md) | Doubly-linked list implementation of the`List`and`Deque`interfaces. |
+| [ListResourceBundle](../java/util/ListResourceBundle.md) | `ListResourceBundle`is an abstract subclass of`ResourceBundle`that manages resources for a locale in a convenient and easy to use list. |
 | --- | --- |
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale) | A object represents a specific geographical, political, or cultural region. |
-| [LongSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/LongSummaryStatistics) | A state object for collecting statistics such as count, min, max, sum, and average. |
-| [Objects](https://developer.android.com/reference/kotlin/java/util/Objects) | This class consists of`static`utility methods for operating on objects, or checking certain conditions before operation. |
+| [Locale](../java/util/Locale.md) | A object represents a specific geographical, political, or cultural region. |
+| [LongSummaryStatistics](../java/util/LongSummaryStatistics.md) | A state object for collecting statistics such as count, min, max, sum, and average. |
+| [Objects](../java/util/Objects.md) | This class consists of`static`utility methods for operating on objects, or checking certain conditions before operation. |
 | --- | --- |
-| [Observable](https://developer.android.com/reference/kotlin/java/util/Observable) | This class represents an observable object, or "data" in the model-view paradigm. |
-| [Optional](https://developer.android.com/reference/kotlin/java/util/Optional) | A container object which may or may not contain a non-`null`value. |
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble) | A container object which may or may not contain a`double`value. |
+| [Observable](../java/util/Observable.md) | This class represents an observable object, or "data" in the model-view paradigm. |
+| [Optional](../java/util/Optional.md) | A container object which may or may not contain a non-`null`value. |
+| [OptionalDouble](../java/util/OptionalDouble.md) | A container object which may or may not contain a`double`value. |
 | --- | --- |
-| [OptionalInt](https://developer.android.com/reference/kotlin/java/util/OptionalInt) | A container object which may or may not contain an`int`value. |
-| [OptionalLong](https://developer.android.com/reference/kotlin/java/util/OptionalLong) | A container object which may or may not contain a`long`value. |
-| [PriorityQueue](https://developer.android.com/reference/kotlin/java/util/PriorityQueue) | An unbounded priority [queue](https://developer.android.com/reference/kotlin/java/util/Queue) based on a priority heap. |
+| [OptionalInt](../java/util/OptionalInt.md) | A container object which may or may not contain an`int`value. |
+| [OptionalLong](../java/util/OptionalLong.md) | A container object which may or may not contain a`long`value. |
+| [PriorityQueue](../java/util/PriorityQueue.md) | An unbounded priority [queue](../java/util/Queue.md) based on a priority heap. |
 | --- | --- |
-| [Properties](https://developer.android.com/reference/kotlin/java/util/Properties) | The`Properties`class represents a persistent set of properties. |
-| [PropertyPermission](https://developer.android.com/reference/kotlin/java/util/PropertyPermission) | Legacy security code; do not use. |
-| [PropertyResourceBundle](https://developer.android.com/reference/kotlin/java/util/PropertyResourceBundle) | `PropertyResourceBundle`is a concrete subclass of`ResourceBundle`that manages resources for a locale using a set of static strings from a property file. |
+| [Properties](../java/util/Properties.md) | The`Properties`class represents a persistent set of properties. |
+| [PropertyPermission](../java/util/PropertyPermission.md) | Legacy security code; do not use. |
+| [PropertyResourceBundle](../java/util/PropertyResourceBundle.md) | `PropertyResourceBundle`is a concrete subclass of`ResourceBundle`that manages resources for a locale using a set of static strings from a property file. |
 | --- | --- |
-| [Random](https://developer.android.com/reference/kotlin/java/util/Random) | An instance of this class is used to generate a stream of pseudorandom numbers; its period is only 248. |
-| [ResourceBundle](https://developer.android.com/reference/kotlin/java/util/ResourceBundle) | Resource bundles contain locale-specific objects. |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner) | A simple text scanner which can parse primitive types and strings using regular expressions. |
+| [Random](../java/util/Random.md) | An instance of this class is used to generate a stream of pseudorandom numbers; its period is only 248. |
+| [ResourceBundle](../java/util/ResourceBundle.md) | Resource bundles contain locale-specific objects. |
+| [Scanner](../java/util/Scanner.md) | A simple text scanner which can parse primitive types and strings using regular expressions. |
 | --- | --- |
-| [ServiceLoader](https://developer.android.com/reference/kotlin/java/util/ServiceLoader) | A facility to load implementations of a service. |
-| [SimpleTimeZone](https://developer.android.com/reference/kotlin/java/util/SimpleTimeZone) | `SimpleTimeZone`is a concrete subclass of`TimeZone`that represents a time zone for use with a Gregorian calendar. |
-| [Spliterators](https://developer.android.com/reference/kotlin/java/util/Spliterators) | Static classes and methods for operating on or creating instances of [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator) and its primitive specializations [Spliterator.OfInt](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfInt), [Spliterator.OfLong](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfLong), and [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble). |
+| [ServiceLoader](../java/util/ServiceLoader.md) | A facility to load implementations of a service. |
+| [SimpleTimeZone](../java/util/SimpleTimeZone.md) | `SimpleTimeZone`is a concrete subclass of`TimeZone`that represents a time zone for use with a Gregorian calendar. |
+| [Spliterators](../java/util/Spliterators.md) | Static classes and methods for operating on or creating instances of [Spliterator](../java/util/Spliterator.md) and its primitive specializations [Spliterator.OfInt](../java/util/Spliterator.OfInt.md), [Spliterator.OfLong](../java/util/Spliterator.OfLong.md), and [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md). |
 | --- | --- |
-| [SplittableRandom](https://developer.android.com/reference/kotlin/java/util/SplittableRandom) | A generator of uniform pseudorandom values (with period 264) applicable for use in (among other contexts) isolated parallel computations that may generate subtasks. |
-| [Stack](https://developer.android.com/reference/kotlin/java/util/Stack) | The`Stack`class represents a last-in-first-out (LIFO) stack of objects. |
-| [StringJoiner](https://developer.android.com/reference/kotlin/java/util/StringJoiner) | `StringJoiner`is used to construct a sequence of characters separated by a delimiter and optionally starting with a supplied prefix and ending with a supplied suffix. |
+| [SplittableRandom](../java/util/SplittableRandom.md) | A generator of uniform pseudorandom values (with period 264) applicable for use in (among other contexts) isolated parallel computations that may generate subtasks. |
+| [Stack](../java/util/Stack.md) | The`Stack`class represents a last-in-first-out (LIFO) stack of objects. |
+| [StringJoiner](../java/util/StringJoiner.md) | `StringJoiner`is used to construct a sequence of characters separated by a delimiter and optionally starting with a supplied prefix and ending with a supplied suffix. |
 | --- | --- |
-| [StringTokenizer](https://developer.android.com/reference/kotlin/java/util/StringTokenizer) | The string tokenizer class allows an application to break a string into tokens. |
-| [Timer](https://developer.android.com/reference/kotlin/java/util/Timer) | A facility for threads to schedule tasks for future execution in a background thread. |
-| [TimerTask](https://developer.android.com/reference/kotlin/java/util/TimerTask) | A task that can be scheduled for one-time or repeated execution by a [Timer](https://developer.android.com/reference/kotlin/java/util/Timer). |
+| [StringTokenizer](../java/util/StringTokenizer.md) | The string tokenizer class allows an application to break a string into tokens. |
+| [Timer](../java/util/Timer.md) | A facility for threads to schedule tasks for future execution in a background thread. |
+| [TimerTask](../java/util/TimerTask.md) | A task that can be scheduled for one-time or repeated execution by a [Timer](../java/util/Timer.md). |
 | --- | --- |
-| [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone) | represents a time zone offset, and also figures out daylight savings. |
-| [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap) | A Red-Black tree based [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap) implementation. |
-| [TreeSet](https://developer.android.com/reference/kotlin/java/util/TreeSet) | A [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet) implementation based on a [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap). |
+| [TimeZone](../java/util/TimeZone.md) | represents a time zone offset, and also figures out daylight savings. |
+| [TreeMap](../java/util/TreeMap.md) | A Red-Black tree based [NavigableMap](../java/util/NavigableMap.md) implementation. |
+| [TreeSet](../java/util/TreeSet.md) | A [NavigableSet](../java/util/NavigableSet.md) implementation based on a [TreeMap](../java/util/TreeMap.md). |
 | --- | --- |
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID) | A class that represents an immutable universally unique identifier (UUID). |
-| [Vector](https://developer.android.com/reference/kotlin/java/util/Vector) | The`Vector`class implements a growable array of objects. |
-| [WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap) | Hash table based implementation of the`Map`interface, with*weak keys*. |
+| [UUID](../java/util/UUID.md) | A class that represents an immutable universally unique identifier (UUID). |
+| [Vector](../java/util/Vector.md) | The`Vector`class implements a growable array of objects. |
+| [WeakHashMap](../java/util/WeakHashMap.md) | Hash table based implementation of the`Map`interface, with*weak keys*. |
 | --- | --- |
 
 ## Exceptions
 
-| [ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException) | This exception may be thrown by methods that have detected concurrent modification of an object when such modification is not permissible. |
+| [ConcurrentModificationException](../java/util/ConcurrentModificationException.md) | This exception may be thrown by methods that have detected concurrent modification of an object when such modification is not permissible. |
 | --- | --- |
-| [DuplicateFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/DuplicateFormatFlagsException) | Unchecked exception thrown when duplicate flags are provided in the format specifier. |
-| [EmptyStackException](https://developer.android.com/reference/kotlin/java/util/EmptyStackException) | Thrown by methods in the`Stack`class to indicate that the stack is empty. |
-| [FormatFlagsConversionMismatchException](https://developer.android.com/reference/kotlin/java/util/FormatFlagsConversionMismatchException) | Unchecked exception thrown when a conversion and flag are incompatible. |
+| [DuplicateFormatFlagsException](../java/util/DuplicateFormatFlagsException.md) | Unchecked exception thrown when duplicate flags are provided in the format specifier. |
+| [EmptyStackException](../java/util/EmptyStackException.md) | Thrown by methods in the`Stack`class to indicate that the stack is empty. |
+| [FormatFlagsConversionMismatchException](../java/util/FormatFlagsConversionMismatchException.md) | Unchecked exception thrown when a conversion and flag are incompatible. |
 | --- | --- |
-| [FormatterClosedException](https://developer.android.com/reference/kotlin/java/util/FormatterClosedException) | Unchecked exception thrown when the formatter has been closed. |
-| [IllegalFormatCodePointException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatCodePointException) | Unchecked exception thrown when a character with an invalid Unicode code point as defined by [Character.isValidCodePoint](https://developer.android.com/reference/kotlin/java/lang/Character.html#isValidCodePoint(kotlin.Int))is passed to the [Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter). |
-| [IllegalFormatConversionException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatConversionException) | Unchecked exception thrown when the argument corresponding to the format specifier is of an incompatible type. |
+| [FormatterClosedException](../java/util/FormatterClosedException.md) | Unchecked exception thrown when the formatter has been closed. |
+| [IllegalFormatCodePointException](../java/util/IllegalFormatCodePointException.md) | Unchecked exception thrown when a character with an invalid Unicode code point as defined by [Character.isValidCodePoint](../java/lang/Character.md))is passed to the [Formatter](../java/util/Formatter.md). |
+| [IllegalFormatConversionException](../java/util/IllegalFormatConversionException.md) | Unchecked exception thrown when the argument corresponding to the format specifier is of an incompatible type. |
 | --- | --- |
-| [IllegalFormatException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException) | Unchecked exception thrown when a format string contains an illegal syntax or a format specifier that is incompatible with the given arguments. |
-| [IllegalFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatFlagsException) | Unchecked exception thrown when an illegal combination flags is given. |
-| [IllegalFormatPrecisionException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatPrecisionException) | Unchecked exception thrown when the precision is a negative value other than`-1`, the conversion does not support a precision, or the value is otherwise unsupported. |
+| [IllegalFormatException](../java/util/IllegalFormatException.md) | Unchecked exception thrown when a format string contains an illegal syntax or a format specifier that is incompatible with the given arguments. |
+| [IllegalFormatFlagsException](../java/util/IllegalFormatFlagsException.md) | Unchecked exception thrown when an illegal combination flags is given. |
+| [IllegalFormatPrecisionException](../java/util/IllegalFormatPrecisionException.md) | Unchecked exception thrown when the precision is a negative value other than`-1`, the conversion does not support a precision, or the value is otherwise unsupported. |
 | --- | --- |
-| [IllegalFormatWidthException](https://developer.android.com/reference/kotlin/java/util/IllegalFormatWidthException) | Unchecked exception thrown when the format width is a negative value other than`-1`or is otherwise unsupported. |
-| [IllformedLocaleException](https://developer.android.com/reference/kotlin/java/util/IllformedLocaleException) | Thrown by methods in [Locale](https://developer.android.com/reference/kotlin/java/util/Locale) and [Locale.Builder](https://developer.android.com/reference/kotlin/java/util/Locale.Builder) to indicate that an argument is not a well-formed BCP 47 tag. |
-| [InputMismatchException](https://developer.android.com/reference/kotlin/java/util/InputMismatchException) | Thrown by a`Scanner`to indicate that the token retrieved does not match the pattern for the expected type, or that the token is out of range for the expected type. |
+| [IllegalFormatWidthException](../java/util/IllegalFormatWidthException.md) | Unchecked exception thrown when the format width is a negative value other than`-1`or is otherwise unsupported. |
+| [IllformedLocaleException](../java/util/IllformedLocaleException.md) | Thrown by methods in [Locale](../java/util/Locale.md) and [Locale.Builder](../java/util/Locale.Builder.md) to indicate that an argument is not a well-formed BCP 47 tag. |
+| [InputMismatchException](../java/util/InputMismatchException.md) | Thrown by a`Scanner`to indicate that the token retrieved does not match the pattern for the expected type, or that the token is out of range for the expected type. |
 | --- | --- |
-| [InvalidPropertiesFormatException](https://developer.android.com/reference/kotlin/java/util/InvalidPropertiesFormatException) | Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of properties, as per the [Properties](https://developer.android.com/reference/kotlin/java/util/Properties) specification. |
-| [MissingFormatArgumentException](https://developer.android.com/reference/kotlin/java/util/MissingFormatArgumentException) | Unchecked exception thrown when there is a format specifier which does not have a corresponding argument or if an argument index refers to an argument that does not exist. |
-| [MissingFormatWidthException](https://developer.android.com/reference/kotlin/java/util/MissingFormatWidthException) | Unchecked exception thrown when the format width is required. |
+| [InvalidPropertiesFormatException](../java/util/InvalidPropertiesFormatException.md) | Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of properties, as per the [Properties](../java/util/Properties.md) specification. |
+| [MissingFormatArgumentException](../java/util/MissingFormatArgumentException.md) | Unchecked exception thrown when there is a format specifier which does not have a corresponding argument or if an argument index refers to an argument that does not exist. |
+| [MissingFormatWidthException](../java/util/MissingFormatWidthException.md) | Unchecked exception thrown when the format width is required. |
 | --- | --- |
-| [MissingResourceException](https://developer.android.com/reference/kotlin/java/util/MissingResourceException) | Signals that a resource is missing. |
-| [NoSuchElementException](https://developer.android.com/reference/kotlin/java/util/NoSuchElementException) | Thrown by various accessor methods to indicate that the element being requested does not exist. |
-| [ServiceConfigurationError](https://developer.android.com/reference/kotlin/java/util/ServiceConfigurationError) | Error thrown when something goes wrong while locating, loading, or instantiating a service provider. |
+| [MissingResourceException](../java/util/MissingResourceException.md) | Signals that a resource is missing. |
+| [NoSuchElementException](../java/util/NoSuchElementException.md) | Thrown by various accessor methods to indicate that the element being requested does not exist. |
+| [ServiceConfigurationError](../java/util/ServiceConfigurationError.md) | Error thrown when something goes wrong while locating, loading, or instantiating a service provider. |
 | --- | --- |
-| [TooManyListenersException](https://developer.android.com/reference/kotlin/java/util/TooManyListenersException) | The`TooManyListenersException `Exception is used as part of the Java Event model to annotate and implement a unicast special case of a multicast Event Source. |
-| [UnknownFormatConversionException](https://developer.android.com/reference/kotlin/java/util/UnknownFormatConversionException) | Unchecked exception thrown when an unknown conversion is given. |
-| [UnknownFormatFlagsException](https://developer.android.com/reference/kotlin/java/util/UnknownFormatFlagsException) | Unchecked exception thrown when an unknown flag is given. |
+| [TooManyListenersException](../java/util/TooManyListenersException.md) | The`TooManyListenersException `Exception is used as part of the Java Event model to annotate and implement a unicast special case of a multicast Event Source. |
+| [UnknownFormatConversionException](../java/util/UnknownFormatConversionException.md) | Unchecked exception thrown when an unknown conversion is given. |
+| [UnknownFormatFlagsException](../java/util/UnknownFormatFlagsException.md) | Unchecked exception thrown when an unknown flag is given. |
 | --- | --- |

@@ -4,16 +4,16 @@
 
 ## Interfaces
 
-| [EGL](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL) | <br /> |
+| [EGL](../javax/microedition/khronos/egl/EGL.md) | <br /> |
 | --- | --- |
-| [EGL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL10) | <br /> |
-| [EGL11](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL11) | <br /> |
+| [EGL10](../javax/microedition/khronos/egl/EGL10.md) | <br /> |
+| [EGL11](../javax/microedition/khronos/egl/EGL11.md) | <br /> |
 
 ## Classes
 
-| [EGLConfig](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig) | <br /> |
+| [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md) | <br /> |
 | --- | --- |
-| [EGLContext](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLContext) | <br /> |
-| [EGLDisplay](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLDisplay) | <br /> |
-| [EGLSurface](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLSurface) | <br /> |
+| [EGLContext](../javax/microedition/khronos/egl/EGLContext.md) | <br /> |
+| [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md) | <br /> |
+| [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md) | <br /> |
 | --- | --- |

@@ -11,10 +11,10 @@ open class VerifyError : LinkageError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
-| | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
+| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.VerifyError](https://developer.android.com/reference/kotlin/java/lang/VerifyError#) |
+| | | | ↳ | [java.lang.VerifyError](../java/lang/VerifyError.md) |
 
 Thrown when the "verifier" detects that a class file, though well formed, contains some sort of internal inconsistency or security problem.
 
@@ -22,8 +22,8 @@ Thrown when the "verifier" detects that a class file, though well formed, contai
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [VerifyError](https://developer.android.com/reference/kotlin/java/lang/VerifyError#VerifyError())`()` Constructs an`VerifyError`with no detail message. |
-| [VerifyError](https://developer.android.com/reference/kotlin/java/lang/VerifyError#VerifyError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`VerifyError`with the specified detail message. |
+| [VerifyError](../java/lang/VerifyError.md))`()` Constructs an`VerifyError`with no detail message. |
+| [VerifyError](../java/lang/VerifyError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`VerifyError`with the specified detail message. |
 
 ## Public constructors
 

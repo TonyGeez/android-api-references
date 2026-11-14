@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Ref
 ```
 
-| [java.sql.Ref](https://developer.android.com/reference/kotlin/java/sql/Ref#) |
+| [java.sql.Ref](../java/sql/Ref.md) |
 
 The mapping in the Java programming language of an SQL`REF`value, which is a reference to an SQL structured type value in the database.
 
@@ -24,11 +24,11 @@ All methods on the`Ref`interface must be fully implemented if the JDBC driver su
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseTypeName](https://developer.android.com/reference/kotlin/java/sql/Ref#getBaseTypeName())`()` Retrieves the fully-qualified SQL name of the SQL structured type that this`Ref`object references. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/java/sql/Ref#getObject())`()` Retrieves the SQL structured type instance referenced by this`Ref`object. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](https://developer.android.com/reference/kotlin/java/sql/Ref#getObject(kotlin.collections.MutableMap))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Retrieves the referenced object and maps it to a Java type using the given type map. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseTypeName](../java/sql/Ref.md))`()` Retrieves the fully-qualified SQL name of the SQL structured type that this`Ref`object references. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../java/sql/Ref.md))`()` Retrieves the SQL structured type instance referenced by this`Ref`object. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../java/sql/Ref.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>!`)` Retrieves the referenced object and maps it to a Java type using the given type map. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setObject](https://developer.android.com/reference/kotlin/java/sql/Ref#setObject(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the structured type value that this`Ref`object references to the given instance of`Object`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setObject](../java/sql/Ref.md))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the structured type value that this`Ref`object references to the given instance of`Object`. |
 
 ## Public methods
 
@@ -72,7 +72,7 @@ Retrieves the SQL structured type instance referenced by this`Ref`object. If the
 
 **See Also**
 
-- [#setObject](https://developer.android.com/reference/kotlin/java/sql/Ref#setObject(kotlin.Any)) 
+- [#setObject](../java/sql/Ref.md)) 
 
 ### getObject
 
@@ -86,7 +86,7 @@ Retrieves the referenced object and maps it to a Java type using the given type 
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!:a`java.util.Map`object that contains the mapping to use (the fully-qualified name of the SQL structured type being referenced and the class object for`SQLData`implementation to which the SQL structured type will be mapped) |
+| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>!:a`java.util.Map`object that contains the mapping to use (the fully-qualified name of the SQL structured type being referenced and the class object for`SQLData`implementation to which the SQL structured type will be mapped) |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -99,7 +99,7 @@ Retrieves the referenced object and maps it to a Java type using the given type 
 
 **See Also**
 
-- [#setObject](https://developer.android.com/reference/kotlin/java/sql/Ref#setObject(kotlin.Any)) 
+- [#setObject](../java/sql/Ref.md)) 
 
 ### setObject
 
@@ -123,5 +123,5 @@ Sets the structured type value that this`Ref`object references to the given inst
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/sql/Ref#getObject()>
-- [java.sql.PreparedStatement#setObject(int, Object)](https://developer.android.com/reference/kotlin/java/sql/PreparedStatement#setObject(kotlin.Int,%20kotlin.Any))
-- [java.sql.CallableStatement#setObject(String, Object)](https://developer.android.com/reference/kotlin/java/sql/CallableStatement#setObject(kotlin.String,%20kotlin.Any))
+- [java.sql.PreparedStatement#setObject(int, Object)](../java/sql/PreparedStatement.md))
+- [java.sql.CallableStatement#setObject(String, Object)](../java/sql/CallableStatement.md))

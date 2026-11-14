@@ -10,24 +10,24 @@ class AccessController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.AccessController](https://developer.android.com/reference/kotlin/java/security/AccessController#) |
+| ↳ | [java.security.AccessController](../java/security/AccessController.md) |
 
-Android doesn't support [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#). Do not use this class.
+Android doesn't support [SecurityManager](../java/lang/SecurityManager.md). Do not use this class.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPermission](https://developer.android.com/reference/kotlin/java/security/AccessController#checkPermission(java.security.Permission))`(`perm:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` <br /> |
-| staticT | [doPrivileged](https://developer.android.com/reference/kotlin/java/security/AccessController#doPrivileged(java.security.PrivilegedAction))`(`action:` ` [PrivilegedAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedAction)<T>!`)` Calls`action.run()`. |
-| staticT | [doPrivileged](https://developer.android.com/reference/kotlin/java/security/AccessController#doPrivileged(java.security.PrivilegedAction,%20java.security.AccessControlContext))`(`action:` ` [PrivilegedAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedAction)<T>!`, `context:` ` [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext)!`)` Calls`action.run()`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPermission](../java/security/AccessController.md))`(`perm:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
+| staticT | [doPrivileged](../java/security/AccessController.md))`(`action:` ` [PrivilegedAction](../java/security/PrivilegedAction.md)<T>!`)` Calls`action.run()`. |
+| staticT | [doPrivileged](../java/security/AccessController.md))`(`action:` ` [PrivilegedAction](../java/security/PrivilegedAction.md)<T>!`, `context:` ` [AccessControlContext](../java/security/AccessControlContext.md)!`)` Calls`action.run()`. |
 | --- | --- |
-| staticT | [doPrivileged](https://developer.android.com/reference/kotlin/java/security/AccessController#doPrivileged(java.security.PrivilegedExceptionAction))`(`action:` ` [PrivilegedExceptionAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedExceptionAction)<T>!`)` Calls`action.run()`. |
-| staticT | [doPrivileged](https://developer.android.com/reference/kotlin/java/security/AccessController#doPrivileged(java.security.PrivilegedExceptionAction,%20java.security.AccessControlContext))`(`action:` ` [PrivilegedExceptionAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedExceptionAction)<T>!`, `context:` ` [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext)!`)` Calls`action.run()`. |
-| staticT | [doPrivilegedWithCombiner](https://developer.android.com/reference/kotlin/java/security/AccessController#doPrivilegedWithCombiner(java.security.PrivilegedAction))`(`action:` ` [PrivilegedAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedAction)<T>!`)` Calls`action.run()`. |
+| staticT | [doPrivileged](../java/security/AccessController.md))`(`action:` ` [PrivilegedExceptionAction](../java/security/PrivilegedExceptionAction.md)<T>!`)` Calls`action.run()`. |
+| staticT | [doPrivileged](../java/security/AccessController.md))`(`action:` ` [PrivilegedExceptionAction](../java/security/PrivilegedExceptionAction.md)<T>!`, `context:` ` [AccessControlContext](../java/security/AccessControlContext.md)!`)` Calls`action.run()`. |
+| staticT | [doPrivilegedWithCombiner](../java/security/AccessController.md))`(`action:` ` [PrivilegedAction](../java/security/PrivilegedAction.md)<T>!`)` Calls`action.run()`. |
 | --- | --- |
-| staticT | [doPrivilegedWithCombiner](https://developer.android.com/reference/kotlin/java/security/AccessController#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction))`(`action:` ` [PrivilegedExceptionAction](https://developer.android.com/reference/kotlin/java/security/PrivilegedExceptionAction)<T>!`)` Calls`action.run()`. |
-| static [AccessControlContext](https://developer.android.com/reference/kotlin/java/security/AccessControlContext)! | [getContext](https://developer.android.com/reference/kotlin/java/security/AccessController#getContext())`()` <br /> |
+| staticT | [doPrivilegedWithCombiner](../java/security/AccessController.md))`(`action:` ` [PrivilegedExceptionAction](../java/security/PrivilegedExceptionAction.md)<T>!`)` Calls`action.run()`. |
+| static [AccessControlContext](../java/security/AccessControlContext.md)! | [getContext](../java/security/AccessController.md))`()` <br /> |
 
 ## Public methods
 

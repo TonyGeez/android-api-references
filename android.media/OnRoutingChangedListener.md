@@ -5,27 +5,27 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # OnRoutingChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener "View this page in Java") 
+Kotlin| [Java](../android/media/AudioTrack.OnRoutingChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnRoutingChangedListener : AudioRouting.OnRoutingChangedListener
 ```
 
-| [android.media.AudioTrack.OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnRoutingChangedListener#) |
+| [android.media.AudioTrack.OnRoutingChangedListener](../android/media/AudioTrack.OnRoutingChangedListener.md) |
 
 | **This interface was deprecated in API level 24.**
 |
-| users should switch to the general purpose [AudioRouting.OnRoutingChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioRouting.OnRoutingChangedListener) class instead.
+| users should switch to the general purpose [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md) class instead.
 
-Defines the interface by which applications can receive notifications of routing changes for the associated [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack).
+Defines the interface by which applications can receive notifications of routing changes for the associated [AudioTrack](../android/media/AudioTrack.md).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRoutingChanged](https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnRoutingChangedListener#onRoutingChanged(android.media.AudioRouting))`(`router:` ` [AudioRouting](https://developer.android.com/reference/kotlin/android/media/AudioRouting)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRoutingChanged](https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnRoutingChangedListener#onRoutingChanged(android.media.AudioTrack))`(`audioTrack:` ` [AudioTrack](https://developer.android.com/reference/kotlin/android/media/AudioTrack)!`)` Called when the routing of an AudioTrack changes from either and explicit or policy rerouting. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRoutingChanged](../android/media/AudioTrack.OnRoutingChangedListener.md))`(`router:` ` [AudioRouting](../android/media/AudioRouting.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRoutingChanged](../android/media/AudioTrack.OnRoutingChangedListener.md))`(`audioTrack:` ` [AudioTrack](../android/media/AudioTrack.md)!`)` Called when the routing of an AudioTrack changes from either and explicit or policy rerouting. |
 
 ## Public methods
 
@@ -50,4 +50,4 @@ abstract fun onRoutingChanged(audioTrack: AudioTrack!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called when the routing of an AudioTrack changes from either and explicit or policy rerouting. Use [getRoutedDevice()](https://developer.android.com/reference/kotlin/android/media/AudioTrack#getRoutedDevice())to retrieve the newly routed-to device.
+Called when the routing of an AudioTrack changes from either and explicit or policy rerouting. Use [getRoutedDevice()](../android/media/AudioTrack.md))to retrieve the newly routed-to device.

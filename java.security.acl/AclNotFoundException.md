@@ -12,8 +12,8 @@ open class AclNotFoundException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [java.security.acl.AclNotFoundException](https://developer.android.com/reference/kotlin/java/security/acl/AclNotFoundException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [java.security.acl.AclNotFoundException](../java/security/acl/AclNotFoundException.md) |
 | --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 33.**
@@ -26,7 +26,7 @@ This is an exception that is thrown whenever a reference is made to a non-existe
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AclNotFoundException](https://developer.android.com/reference/kotlin/java/security/acl/AclNotFoundException#AclNotFoundException())`()` Constructs an AclNotFoundException. |
+| [AclNotFoundException](../java/security/acl/AclNotFoundException.md))`()` Constructs an AclNotFoundException. |
 
 ## Public constructors
 

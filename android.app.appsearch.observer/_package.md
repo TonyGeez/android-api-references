@@ -2,17 +2,17 @@
 
 # android.app.appsearch.observer
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/observer/package-summary "View this page in Java")
+Kotlin| [Java](../android/app/appsearch/observer/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [ObserverCallback](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback) | An interface which apps can implement to subscribe to notifications of changes to AppSearch data. |
+| [ObserverCallback](../android/app/appsearch/observer/ObserverCallback.md) | An interface which apps can implement to subscribe to notifications of changes to AppSearch data. |
 | --- | --- |
 
 ## Classes
 
-| [DocumentChangeInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/DocumentChangeInfo) | Contains information about an individual change detected by an [ObserverCallback](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback). |
+| [DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md) | Contains information about an individual change detected by an [ObserverCallback](../android/app/appsearch/observer/ObserverCallback.md). |
 | --- | --- |
-| [ObserverSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverSpec) | Configures the types, namespaces and other properties that [ObserverCallback](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback) instances match against. |
-| [SchemaChangeInfo](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/SchemaChangeInfo) | Contains information about a schema change detected by an [ObserverCallback](https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback). |
+| [ObserverSpec](../android/app/appsearch/observer/ObserverSpec.md) | Configures the types, namespaces and other properties that [ObserverCallback](../android/app/appsearch/observer/ObserverCallback.md) instances match against. |
+| [SchemaChangeInfo](../android/app/appsearch/observer/SchemaChangeInfo.md) | Contains information about a schema change detected by an [ObserverCallback](../android/app/appsearch/observer/ObserverCallback.md). |

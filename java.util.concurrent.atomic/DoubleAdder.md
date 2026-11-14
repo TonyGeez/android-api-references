@@ -11,33 +11,33 @@ open class DoubleAdder : Number, Serializable
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.util.concurrent.atomic.DoubleAdder](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#) |
+| | ↳ | [java.util.concurrent.atomic.DoubleAdder](../java/util/concurrent/atomic/DoubleAdder.md) |
 
-One or more variables that together maintain an initially zero`double`sum. When updates (method [add](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#add(kotlin.Double))) are contended across threads, the set of variables may grow dynamically to reduce contention. Method [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())(or, equivalently [doubleValue](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#toDouble())) returns the current total combined across the variables maintaining the sum. The order of accumulation within or across threads is not guaranteed. Thus, this class may not be applicable if numerical stability is required, especially when combining values of substantially different orders of magnitude.
+One or more variables that together maintain an initially zero`double`sum. When updates (method [add](../java/util/concurrent/atomic/DoubleAdder.md))) are contended across threads, the set of variables may grow dynamically to reduce contention. Method [sum](../java/util/concurrent/atomic/DoubleAdder.md))(or, equivalently [doubleValue](../java/util/concurrent/atomic/DoubleAdder.md))) returns the current total combined across the variables maintaining the sum. The order of accumulation within or across threads is not guaranteed. Thus, this class may not be applicable if numerical stability is required, especially when combining values of substantially different orders of magnitude.
 
 This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
 
-This class extends [Number](https://developer.android.com/reference/kotlin/java/lang/Number.html#), but does*not* define methods such as`equals`,`hashCode`and`compareTo`because instances are expected to be mutated, and so are not useful as collection keys.
+This class extends [Number](../java/lang/Number.md), but does*not* define methods such as`equals`,`hashCode`and`compareTo`because instances are expected to be mutated, and so are not useful as collection keys.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DoubleAdder](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#DoubleAdder())`()` Creates a new adder with initial sum of zero. |
+| [DoubleAdder](../java/util/concurrent/atomic/DoubleAdder.md))`()` Creates a new adder with initial sum of zero. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#add(kotlin.Double))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Adds the given value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#reset())`()` Resets variables maintaining the sum to zero. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())`()` Returns the current sum. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](../java/util/concurrent/atomic/DoubleAdder.md))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Adds the given value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/util/concurrent/atomic/DoubleAdder.md))`()` Resets variables maintaining the sum to zero. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sum](../java/util/concurrent/atomic/DoubleAdder.md))`()` Returns the current sum. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sumThenReset](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sumThenReset())`()` Equivalent in effect to [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())followed by [reset](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#reset()). |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#toDouble())`()` Equivalent to [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum()). |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#toFloat())`()` Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())as a`float`after a narrowing primitive conversion. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sumThenReset](../java/util/concurrent/atomic/DoubleAdder.md))`()` Equivalent in effect to [sum](../java/util/concurrent/atomic/DoubleAdder.md))followed by [reset](../java/util/concurrent/atomic/DoubleAdder.md)). |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/util/concurrent/atomic/DoubleAdder.md))`()` Equivalent to [sum](../java/util/concurrent/atomic/DoubleAdder.md)). |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/util/concurrent/atomic/DoubleAdder.md))`()` Returns the [sum](../java/util/concurrent/atomic/DoubleAdder.md))as a`float`after a narrowing primitive conversion. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#toInt())`()` Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())as an`int`after a narrowing primitive conversion. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#toLong())`()` Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())as a`long`after a narrowing primitive conversion. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#toString())`()` Returns the String representation of the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum()). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/util/concurrent/atomic/DoubleAdder.md))`()` Returns the [sum](../java/util/concurrent/atomic/DoubleAdder.md))as an`int`after a narrowing primitive conversion. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/util/concurrent/atomic/DoubleAdder.md))`()` Returns the [sum](../java/util/concurrent/atomic/DoubleAdder.md))as a`long`after a narrowing primitive conversion. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/concurrent/atomic/DoubleAdder.md))`()` Returns the String representation of the [sum](../java/util/concurrent/atomic/DoubleAdder.md)). |
 | --- | --- |
 
 ## Public constructors
@@ -100,7 +100,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun sumThenReset(): Double
 ```
 
-Equivalent in effect to [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())followed by [reset](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#reset()). This method may apply for example during quiescent points between multithreaded computations. If there are updates concurrent with this method, the returned value is*not*guaranteed to be the final value occurring before the reset.
+Equivalent in effect to [sum](../java/util/concurrent/atomic/DoubleAdder.md))followed by [reset](../java/util/concurrent/atomic/DoubleAdder.md)). This method may apply for example during quiescent points between multithreaded computations. If there are updates concurrent with this method, the returned value is*not*guaranteed to be the final value occurring before the reset.
 
 | Return ||
 |----------------------------------------------------------------------------------|---------|
@@ -114,7 +114,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toDouble(): Double
 ```
 
-Equivalent to [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum()).
+Equivalent to [sum](../java/util/concurrent/atomic/DoubleAdder.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|---------|
@@ -128,7 +128,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toFloat(): Float
 ```
 
-Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())as a`float`after a narrowing primitive conversion.
+Returns the [sum](../java/util/concurrent/atomic/DoubleAdder.md))as a`float`after a narrowing primitive conversion.
 
 | Return ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -142,7 +142,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toInt(): Int
 ```
 
-Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())as an`int`after a narrowing primitive conversion.
+Returns the [sum](../java/util/concurrent/atomic/DoubleAdder.md))as an`int`after a narrowing primitive conversion.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -156,7 +156,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toLong(): Long
 ```
 
-Returns the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum())as a`long`after a narrowing primitive conversion.
+Returns the [sum](../java/util/concurrent/atomic/DoubleAdder.md))as a`long`after a narrowing primitive conversion.
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -170,8 +170,8 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toString(): String
 ```
 
-Returns the String representation of the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum()).
+Returns the String representation of the [sum](../java/util/concurrent/atomic/DoubleAdder.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | the String representation of the [sum](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder#sum()) |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | the String representation of the [sum](../java/util/concurrent/atomic/DoubleAdder.md)) |

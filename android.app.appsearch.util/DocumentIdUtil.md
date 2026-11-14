@@ -5,7 +5,7 @@ Also in [T Extensions 7](https://developer.android.com/sdkExtensions)
 
 # DocumentIdUtil
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/util/DocumentIdUtil "View this page in Java") 
+Kotlin| [Java](../android/app/appsearch/util/DocumentIdUtil.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class DocumentIdUtil
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.util.DocumentIdUtil](https://developer.android.com/reference/kotlin/android/app/appsearch/util/DocumentIdUtil#) |
+| ↳ | [android.app.appsearch.util.DocumentIdUtil](../android/app/appsearch/util/DocumentIdUtil.md) |
 
 A util class with methods for working with document ids.
 
@@ -22,8 +22,8 @@ A util class with methods for working with document ids.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [createQualifiedId](https://developer.android.com/reference/kotlin/android/app/appsearch/util/DocumentIdUtil#createQualifiedId(kotlin.String,%20kotlin.String,%20android.app.appsearch.GenericDocument))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `databaseName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `document:` ` [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#)`)` Generates a qualified id based on package, database, and a [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#). |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [createQualifiedId](https://developer.android.com/reference/kotlin/android/app/appsearch/util/DocumentIdUtil#createQualifiedId(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `databaseName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Generates a qualified id based on package, database, namespace, and doc id. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [createQualifiedId](../android/app/appsearch/util/DocumentIdUtil.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `databaseName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `document:` ` [GenericDocument](../android/app/appsearch/GenericDocument.md)`)` Generates a qualified id based on package, database, and a [GenericDocument](../android/app/appsearch/GenericDocument.md). |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [createQualifiedId](../android/app/appsearch/util/DocumentIdUtil.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `databaseName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Generates a qualified id based on package, database, namespace, and doc id. |
 
 ## Public methods
 
@@ -40,13 +40,13 @@ open static fun createQualifiedId(
 ): String
 ```
 
-Generates a qualified id based on package, database, and a [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#).
+Generates a qualified id based on package, database, and a [GenericDocument](../android/app/appsearch/GenericDocument.md).
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package the document belongs to. This value cannot be`null`. |
 | `databaseName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The database containing the document. This value cannot be`null`. |
-| `document` | [GenericDocument](https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#):The document to generate a qualified id for. This value cannot be`null`. |
+| `document` | [GenericDocument](../android/app/appsearch/GenericDocument.md):The document to generate a qualified id for. This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
@@ -55,7 +55,7 @@ Generates a qualified id based on package, database, and a [GenericDocument](htt
 
 **See Also**
 
-- [#createQualifiedId(String, String, String, String)](https://developer.android.com/reference/kotlin/android/app/appsearch/util/DocumentIdUtil#createQualifiedId(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)) 
+- [#createQualifiedId(String, String, String, String)](../android/app/appsearch/util/DocumentIdUtil.md)) 
 
 ### createQualifiedId
 
@@ -73,7 +73,7 @@ open static fun createQualifiedId(
 
 Generates a qualified id based on package, database, namespace, and doc id.
 
-A qualified id is a String referring to the combined package name, database name, namespace, and id of the document. It is useful for linking one document to another in order to perform a join operation with [JoinSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec.html#).
+A qualified id is a String referring to the combined package name, database name, namespace, and id of the document. It is useful for linking one document to another in order to perform a join operation with [JoinSpec](../android/app/appsearch/JoinSpec.md).
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,4 +89,4 @@ A qualified id is a String referring to the combined package name, database name
 
 **See Also**
 
-- [android.app.appsearch.JoinSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec.html#)
+- [android.app.appsearch.JoinSpec](../android/app/appsearch/JoinSpec.md)

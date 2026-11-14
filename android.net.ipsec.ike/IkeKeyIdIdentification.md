@@ -8,8 +8,8 @@ class IkeKeyIdIdentification : IkeIdentification
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification) ||
-| | ↳ | [android.net.ipsec.ike.IkeKeyIdIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeKeyIdIdentification#) |
+| ↳ | [android.net.ipsec.ike.IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) ||
+| | ↳ | [android.net.ipsec.ike.IkeKeyIdIdentification](../android/net/ipsec/ike/IkeKeyIdIdentification.md) |
 
 IkeKeyIdIdentification represents an IKE entity identification based on a Key ID.
 

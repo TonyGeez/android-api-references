@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Callback
 ```
 
-| [javax.security.auth.callback.Callback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/Callback#) |
+| [javax.security.auth.callback.Callback](../javax/security/auth/callback/Callback.md) |
 
-| Known Direct Subclasses [PasswordCallback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback) |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------| | [PasswordCallback](https://developer.android.com/reference/kotlin/javax/security/auth/callback/PasswordCallback) | Underlying security services instantiate and pass a`PasswordCallback`to the`handle`method of a`CallbackHandler`to retrieve password information. | |
+| Known Direct Subclasses [PasswordCallback](../javax/security/auth/callback/PasswordCallback.md) |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------| | [PasswordCallback](../javax/security/auth/callback/PasswordCallback.md) | Underlying security services instantiate and pass a`PasswordCallback`to the`handle`method of a`CallbackHandler`to retrieve password information. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Implementations of this interface are passed to a`CallbackHandler`, allowing underlying security services the ability to interact with a calling application to retrieve specific authentication data such as usernames and passwords, or to display certain information, such as error and warning messages.

@@ -8,12 +8,12 @@ open class JarInputStream : ZipInputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) |||||
-| | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream.html#) ||||
-| | | ↳ | [java.util.zip.InflaterInputStream](https://developer.android.com/reference/kotlin/java/util/zip/InflaterInputStream.html#) |||
+| ↳ | [java.io.InputStream](../java/io/InputStream.md) |||||
+| | ↳ | [java.io.FilterInputStream](../java/io/FilterInputStream.md) ||||
+| | | ↳ | [java.util.zip.InflaterInputStream](../java/util/zip/InflaterInputStream.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.zip.ZipInputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipInputStream.html#) ||
-| | | | | ↳ | [java.util.jar.JarInputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#) |
+| | | | ↳ | [java.util.zip.ZipInputStream](../java/util/zip/ZipInputStream.md) ||
+| | | | | ↳ | [java.util.jar.JarInputStream](../java/util/jar/JarInputStream.md) |
 
 The `JarInputStream` class is used to read the contents of a JAR file from any input stream. It extends the class `java.util.zip.ZipInputStream` with support for reading an optional `Manifest` entry. The `Manifest` can be used to store meta-information about the JAR file and its entries.
 
@@ -30,15 +30,15 @@ The `JarInputStream` class is used to read the contents of a JAR file from any i
 
 | Public methods ||
 |---|---|
-| open [Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#getManifest()()` Returns the `Manifest` for this JAR file, or `null` if none. |
-| open [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#getNextEntry()()` Reads the next ZIP file entry and positions the stream at the beginning of the entry data. |
-| open [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#getNextJarEntry()()` Reads the next JAR file entry and positions the stream at the beginning of the entry data. |
+| open [Manifest](../java/util/jar/Manifest.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#getManifest()()` Returns the `Manifest` for this JAR file, or `null` if none. |
+| open [ZipEntry](../java/util/zip/ZipEntry.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#getNextEntry()()` Reads the next ZIP file entry and positions the stream at the beginning of the entry data. |
+| open [JarEntry](../java/util/jar/JarEntry.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#getNextJarEntry()()` Reads the next JAR file entry and positions the stream at the beginning of the entry data. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads from the current JAR file entry into an array of bytes. |
 
 | Protected methods ||
 |---|---|
-| open [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#createZipEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new `JarEntry` (`ZipEntry`) for the specified JAR file entry name. |
+| open [ZipEntry](../java/util/zip/ZipEntry.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarInputStream#createZipEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new `JarEntry` (`ZipEntry`) for the specified JAR file entry name. |
 
 | Inherited functions ||
 |---|---|
@@ -67,7 +67,7 @@ Creates a new `JarInputStream` and reads the optional manifest. If a manifest is
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: the actual input stream |
+| `in` | [InputStream](../java/io/InputStream.md)!: the actual input stream |
 
 | Exceptions ||
 |---|---|
@@ -87,7 +87,7 @@ Creates a new `JarInputStream` and reads the optional manifest. If a manifest is
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: the actual input stream |
+| `in` | [InputStream](../java/io/InputStream.md)!: the actual input stream |
 | `verify` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether or not to verify the JarInputStream if it is signed. |
 
 | Exceptions ||

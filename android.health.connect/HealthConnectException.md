@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # HealthConnectException
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/HealthConnectException "View this page in Java") 
+Kotlin| [Java](../android/health/connect/HealthConnectException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class HealthConnectException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.health.connect.HealthConnectException](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#) |
+| | | | ↳ | [android.health.connect.HealthConnectException](../android/health/connect/HealthConnectException.md) |
 
 Class representing health connect exceptions.
 
@@ -25,22 +25,22 @@ Class representing health connect exceptions.
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DATA_SYNC_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_DATA_SYNC_IN_PROGRESS:kotlin.Int) Data sync is in progress. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INTERNAL](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_INTERNAL:kotlin.Int) An internal error occurred which the caller cannot address. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_ARGUMENT](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_INVALID_ARGUMENT:kotlin.Int) The caller supplied invalid arguments to the call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DATA_SYNC_IN_PROGRESS](../android/health/connect/HealthConnectException.md) Data sync is in progress. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INTERNAL](../android/health/connect/HealthConnectException.md) An internal error occurred which the caller cannot address. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_ARGUMENT](../android/health/connect/HealthConnectException.md) The caller supplied invalid arguments to the call. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_IO:kotlin.Int) An issue occurred reading or writing to storage. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_RATE_LIMIT_EXCEEDED](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_RATE_LIMIT_EXCEEDED:kotlin.Int) The caller exhausted the allotted rate limit. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REMOTE](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_REMOTE:kotlin.Int) An IPC related error occurred. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_IO](../android/health/connect/HealthConnectException.md) An issue occurred reading or writing to storage. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_RATE_LIMIT_EXCEEDED](../android/health/connect/HealthConnectException.md) The caller exhausted the allotted rate limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REMOTE](../android/health/connect/HealthConnectException.md) An IPC related error occurred. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SECURITY](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_SECURITY:kotlin.Int) The caller doesn't have the correct permissions for this call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_UNKNOWN:kotlin.Int) An unknown error occurred while processing the call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSUPPORTED_OPERATION](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_UNSUPPORTED_OPERATION:kotlin.Int) This operation is currently not supported by the platform. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SECURITY](../android/health/connect/HealthConnectException.md) The caller doesn't have the correct permissions for this call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](../android/health/connect/HealthConnectException.md) An unknown error occurred while processing the call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSUPPORTED_OPERATION](../android/health/connect/HealthConnectException.md) This operation is currently not supported by the platform. |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#getErrorCode())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](../android/health/connect/HealthConnectException.md))`()` <br /> |
 
 ## Constants
 
@@ -68,7 +68,7 @@ static val ERROR_INTERNAL: Int
 
 An internal error occurred which the caller cannot address.
 
-This error may be considered similar to [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) 
+This error may be considered similar to [IllegalStateException](../java/lang/IllegalStateException.md) 
 
  Value: 2
 
@@ -82,7 +82,7 @@ static val ERROR_INVALID_ARGUMENT: Int
 
 The caller supplied invalid arguments to the call.
 
-This error may be considered similar to [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#). 
+This error may be considered similar to [IllegalArgumentException](../java/lang/IllegalArgumentException.md). 
 
  Value: 3
 
@@ -96,7 +96,7 @@ static val ERROR_IO: Int
 
 An issue occurred reading or writing to storage. The call might succeed if repeated.
 
-This error may be considered similar to [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#). 
+This error may be considered similar to [java.io.IOException](../java/io/IOException.md). 
 
  Value: 4
 
@@ -122,7 +122,7 @@ static val ERROR_REMOTE: Int
 
 An IPC related error occurred.
 
-This error may be considered similar to [android.os.RemoteException](https://developer.android.com/reference/kotlin/android/os/RemoteException.html#). 
+This error may be considered similar to [android.os.RemoteException](../android/os/RemoteException.md). 
 
  Value: 6
 
@@ -136,7 +136,7 @@ static val ERROR_SECURITY: Int
 
 The caller doesn't have the correct permissions for this call.
 
-This error may be considered similar to [java.lang.SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#). 
+This error may be considered similar to [java.lang.SecurityException](../java/lang/SecurityException.md). 
 
  Value: 5
 

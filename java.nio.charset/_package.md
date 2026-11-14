@@ -4,22 +4,22 @@
 
 ## Classes
 
-| [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset) | A named mapping between sequences of sixteen-bit Unicode [code units](https://developer.android.com/reference/kotlin/java/lang/Character.html#unicode) and sequences of bytes. |
+| [Charset](../java/nio/charset/Charset.md) | A named mapping between sequences of sixteen-bit Unicode [code units](../java/lang/Character.md) and sequences of bytes. |
 | --- | --- |
-| [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder) | An engine that can transform a sequence of bytes in a specific charset into a sequence of sixteen-bit Unicode characters. |
-| [CharsetEncoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder) | An engine that can transform a sequence of sixteen-bit Unicode characters into a sequence of bytes in a specific charset. |
-| [CoderResult](https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult) | A description of the result state of a coder. |
+| [CharsetDecoder](../java/nio/charset/CharsetDecoder.md) | An engine that can transform a sequence of bytes in a specific charset into a sequence of sixteen-bit Unicode characters. |
+| [CharsetEncoder](../java/nio/charset/CharsetEncoder.md) | An engine that can transform a sequence of sixteen-bit Unicode characters into a sequence of bytes in a specific charset. |
+| [CoderResult](../java/nio/charset/CoderResult.md) | A description of the result state of a coder. |
 | --- | --- |
-| [CodingErrorAction](https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction) | A typesafe enumeration for coding-error actions. |
-| [StandardCharsets](https://developer.android.com/reference/kotlin/java/nio/charset/StandardCharsets) | Constant definitions for the standard [Charsets](https://developer.android.com/reference/kotlin/java/nio/charset/Charset). |
+| [CodingErrorAction](../java/nio/charset/CodingErrorAction.md) | A typesafe enumeration for coding-error actions. |
+| [StandardCharsets](../java/nio/charset/StandardCharsets.md) | Constant definitions for the standard [Charsets](../java/nio/charset/Charset.md). |
 
 ## Exceptions
 
-| [CharacterCodingException](https://developer.android.com/reference/kotlin/java/nio/charset/CharacterCodingException) | Checked exception thrown when a character encoding or decoding error occurs. |
+| [CharacterCodingException](../java/nio/charset/CharacterCodingException.md) | Checked exception thrown when a character encoding or decoding error occurs. |
 | --- | --- |
-| [CoderMalfunctionError](https://developer.android.com/reference/kotlin/java/nio/charset/CoderMalfunctionError) | Error thrown when the [decodeLoop](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder#decodeLoop(java.nio.ByteBuffer,%20java.nio.CharBuffer))method of a [CharsetDecoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetDecoder), or the [encodeLoop](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encodeLoop(java.nio.CharBuffer,%20java.nio.ByteBuffer))method of a [CharsetEncoder](https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder), throws an unexpected exception. |
-| [IllegalCharsetNameException](https://developer.android.com/reference/kotlin/java/nio/charset/IllegalCharsetNameException) | Unchecked exception thrown when a string that is not a [legal charset name](https://developer.android.com/reference/kotlin/java/nio/charset/Charset#names) is used as such. |
-| [MalformedInputException](https://developer.android.com/reference/kotlin/java/nio/charset/MalformedInputException) | Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence. |
+| [CoderMalfunctionError](../java/nio/charset/CoderMalfunctionError.md) | Error thrown when the [decodeLoop](../java/nio/charset/CharsetDecoder.md))method of a [CharsetDecoder](../java/nio/charset/CharsetDecoder.md), or the [encodeLoop](../java/nio/charset/CharsetEncoder.md))method of a [CharsetEncoder](../java/nio/charset/CharsetEncoder.md), throws an unexpected exception. |
+| [IllegalCharsetNameException](../java/nio/charset/IllegalCharsetNameException.md) | Unchecked exception thrown when a string that is not a [legal charset name](../java/nio/charset/Charset.md) is used as such. |
+| [MalformedInputException](../java/nio/charset/MalformedInputException.md) | Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence. |
 | --- | --- |
-| [UnmappableCharacterException](https://developer.android.com/reference/kotlin/java/nio/charset/UnmappableCharacterException) | Checked exception thrown when an input character (or byte) sequence is valid but cannot be mapped to an output byte (or character) sequence. |
-| [UnsupportedCharsetException](https://developer.android.com/reference/kotlin/java/nio/charset/UnsupportedCharsetException) | Unchecked exception thrown when no support is available for a requested charset. |
+| [UnmappableCharacterException](../java/nio/charset/UnmappableCharacterException.md) | Checked exception thrown when an input character (or byte) sequence is valid but cannot be mapped to an output byte (or character) sequence. |
+| [UnsupportedCharsetException](../java/nio/charset/UnsupportedCharsetException.md) | Unchecked exception thrown when no support is available for a requested charset. |

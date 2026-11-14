@@ -10,24 +10,24 @@ class FormatStyle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#)\> ||
-| | ↳ | [java.time.format.FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.FormatStyle](../java/time/format/FormatStyle.md)\> ||
+| | ↳ | [java.time.format.FormatStyle](../java/time/format/FormatStyle.md) |
 
-| Known Direct Subclasses [FormatStyle.FULL](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:FULL), [FormatStyle.LONG](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:LONG), [FormatStyle.MEDIUM](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:MEDIUM), [FormatStyle.SHORT](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:SHORT) |---------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [FormatStyle.FULL](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:FULL) | Full text style, with the most detail. | | [FormatStyle.LONG](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:LONG) | Long text style, with lots of detail. | | [FormatStyle.MEDIUM](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:MEDIUM) | Medium text style, with some detail. | | [FormatStyle.SHORT](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:SHORT) | Short text style, typically numeric. | |
+| Known Direct Subclasses [FormatStyle.FULL](../java/time/format/FormatStyle.md), [FormatStyle.LONG](../java/time/format/FormatStyle.md), [FormatStyle.MEDIUM](../java/time/format/FormatStyle.md), [FormatStyle.SHORT](../java/time/format/FormatStyle.md) |---------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [FormatStyle.FULL](../java/time/format/FormatStyle.md) | Full text style, with the most detail. | | [FormatStyle.LONG](../java/time/format/FormatStyle.md) | Long text style, with lots of detail. | | [FormatStyle.MEDIUM](../java/time/format/FormatStyle.md) | Medium text style, with some detail. | | [FormatStyle.SHORT](../java/time/format/FormatStyle.md) | Short text style, typically numeric. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of the style of a localized date, time or date-time formatter.
 
-These styles are used when obtaining a date-time style from configuration. See [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter) and [DateTimeFormatterBuilder](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder) for usage.
+These styles are used when obtaining a date-time style from configuration. See [DateTimeFormatter](../java/time/format/DateTimeFormatter.md) and [DateTimeFormatterBuilder](../java/time/format/DateTimeFormatterBuilder.md) for usage.
 
 ## Summary
 
 | Enum values ||
 |----------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FULL](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:FULL) Full text style, with the most detail. |
-| [LONG](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:LONG) Long text style, with lots of detail. |
-| [MEDIUM](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:MEDIUM) Medium text style, with some detail. |
-| [SHORT](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle#ENUM_VALUE:SHORT) Short text style, typically numeric. |
+| [FULL](../java/time/format/FormatStyle.md) Full text style, with the most detail. |
+| [LONG](../java/time/format/FormatStyle.md) Long text style, with lots of detail. |
+| [MEDIUM](../java/time/format/FormatStyle.md) Medium text style, with some detail. |
+| [SHORT](../java/time/format/FormatStyle.md) Short text style, typically numeric. |
 
 ## Enum values
 

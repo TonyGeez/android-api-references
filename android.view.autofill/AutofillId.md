@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # AutofillId
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/autofill/AutofillId "View this page in Java") 
+Kotlin| [Java](../android/view/autofill/AutofillId.md) 
 | --- | --- |
 
 ```
@@ -13,36 +13,36 @@ class AutofillId : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.autofill.AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) |
+| ↳ | [android.view.autofill.AutofillId](../android/view/autofill/AutofillId.md) |
 
-A unique identifier for an autofill node inside an [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#).
+A unique identifier for an autofill node inside an [android.app.Activity](../android/app/Activity.md).
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) | [create](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#create(android.view.View,%20kotlin.Int))`(`host:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)`, `virtualId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) with the virtual id. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [AutofillId](../android/view/autofill/AutofillId.md) | [create](../android/view/autofill/AutofillId.md))`(`host:` ` [View](../android/view/View.md)`, `virtualId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an [AutofillId](../android/view/autofill/AutofillId.md) with the virtual id. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/autofill/AutofillId.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/autofill/AutofillId.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAutofillVirtualId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#getAutofillVirtualId())`()` Gets the virtual id. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#getSessionId())`()` Used to get the Session identifier associated with this AutofillId. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#getViewId())`()` Returns the assigned unique identifier of this AutofillID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAutofillVirtualId](../android/view/autofill/AutofillId.md))`()` Gets the virtual id. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionId](../android/view/autofill/AutofillId.md))`()` Used to get the Session identifier associated with this AutofillId. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewId](../android/view/autofill/AutofillId.md))`()` Returns the assigned unique identifier of this AutofillID. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#hashCode())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInAutofillSession](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#isInAutofillSession())`()` Checks if this node is generate as part of a [android.app.assist.AssistStructure](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure.html#). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#isVirtual())`()` Checks whether this AutofillId represents a virtual view. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/autofill/AutofillId.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInAutofillSession](../android/view/autofill/AutofillId.md))`()` Checks if this node is generate as part of a [android.app.assist.AssistStructure](../android/app/assist/AssistStructure.md). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](../android/view/autofill/AutofillId.md))`()` Checks whether this AutofillId represents a virtual view. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/autofill/AutofillId.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/autofill/AutofillId.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AutofillId](../android/view/autofill/AutofillId.md)!\> | [CREATOR](../android/view/autofill/AutofillId.md) <br /> |
 
 ## Public methods
 
@@ -57,16 +57,16 @@ static fun create(
 ): AutofillId
 ```
 
-Creates an [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) with the virtual id. This method is used by a [View](https://developer.android.com/reference/kotlin/android/view/View.html#) that contains the virtual view hierarchy. Use this method to create the [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) for each virtual view.
+Creates an [AutofillId](../android/view/autofill/AutofillId.md) with the virtual id. This method is used by a [View](../android/view/View.md) that contains the virtual view hierarchy. Use this method to create the [AutofillId](../android/view/autofill/AutofillId.md) for each virtual view.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `host` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#):the view hosting the virtual view hierarchy which is used to show autofill suggestions. This value cannot be`null`. |
+| `host` | [View](../android/view/View.md):the view hosting the virtual view hierarchy which is used to show autofill suggestions. This value cannot be`null`. |
 | `virtualId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):id identifying the virtual view inside the host view. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) | an [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#) for the virtual view This value cannot be`null`. |
+| [AutofillId](../android/view/autofill/AutofillId.md) | an [AutofillId](../android/view/autofill/AutofillId.md) for the virtual view This value cannot be`null`. |
 
 ### describeContents
 
@@ -78,7 +78,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -116,7 +116,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getAutofillVirtualId(): Int
 ```
 
-Gets the virtual id. This is set if the view is a virtual view, most commonly set if the View is of [android.webkit.WebView](https://developer.android.com/reference/kotlin/android/webkit/WebView.html#). 
+Gets the virtual id. This is set if the view is a virtual view, most commonly set if the View is of [android.webkit.WebView](../android/webkit/WebView.md). 
 
 ### getSessionId
 
@@ -130,7 +130,7 @@ Used to get the Session identifier associated with this AutofillId.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a non-zero integer if [isInAutofillSession()](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId#isInAutofillSession())returns true |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a non-zero integer if [isInAutofillSession()](../android/view/autofill/AutofillId.md))returns true |
 
 ### getViewId
 
@@ -162,7 +162,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun isInAutofillSession(): Boolean
 ```
 
-Checks if this node is generate as part of a [android.app.assist.AssistStructure](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure.html#). This will usually return true if it should be used by an autofill service provider, and false otherwise. 
+Checks if this node is generate as part of a [android.app.assist.AssistStructure](../android/app/assist/AssistStructure.md). This will usually return true if it should be used by an autofill service provider, and false otherwise. 
 
 ### isVirtual
 
@@ -200,7 +200,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

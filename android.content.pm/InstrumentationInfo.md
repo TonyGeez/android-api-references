@@ -8,8 +8,8 @@ open class InstrumentationInfo : PackageItemInfo, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo) ||
-| | ↳ | [android.content.pm.InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#) |
+| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) ||
+| | ↳ | [android.content.pm.InstrumentationInfo](../android/content/pm/InstrumentationInfo.md) |
 
 Information you can retrieve about a particular piece of test instrumentation. This corresponds to information collected from the AndroidManifest.xml's \<instrumentation\> tag.
 
@@ -93,7 +93,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [InstrumentationInfo](https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InstrumentationInfo](../android/content/pm/InstrumentationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#dataDir:kotlin.String` Full path to a directory assigned to the package for its persistent data. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/InstrumentationInfo#functionalTest:kotlin.Boolean` Specifies whether or not to run this instrumentation as a functional test |
 | --- | --- |
@@ -227,7 +227,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

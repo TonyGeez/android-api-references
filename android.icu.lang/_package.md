@@ -2,41 +2,41 @@
 
 # android.icu.lang
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/package-summary "View this page in Java")
+Kotlin| [Java](../android/icu/lang/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [BidiPairedBracketType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType) | Bidi Paired Bracket Type constants. |
+| [BidiPairedBracketType](../android/icu/lang/UCharacter.BidiPairedBracketType.md) | Bidi Paired Bracket Type constants. |
 | --- | --- |
-| [DecompositionType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.DecompositionType) | Decomposition Type constants. |
-| [EastAsianWidth](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.EastAsianWidth) | East Asian Width constants. |
-| [GraphemeClusterBreak](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.GraphemeClusterBreak) | Grapheme Cluster Break constants. |
+| [DecompositionType](../android/icu/lang/UCharacter.DecompositionType.md) | Decomposition Type constants. |
+| [EastAsianWidth](../android/icu/lang/UCharacter.EastAsianWidth.md) | East Asian Width constants. |
+| [GraphemeClusterBreak](../android/icu/lang/UCharacter.GraphemeClusterBreak.md) | Grapheme Cluster Break constants. |
 | --- | --- |
-| [HangulSyllableType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.HangulSyllableType) | Hangul Syllable Type constants. |
-| [IndicPositionalCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicPositionalCategory) | Indic Positional Category constants. |
-| [IndicSyllabicCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.IndicSyllabicCategory) | Indic Syllabic Category constants. |
+| [HangulSyllableType](../android/icu/lang/UCharacter.HangulSyllableType.md) | Hangul Syllable Type constants. |
+| [IndicPositionalCategory](../android/icu/lang/UCharacter.IndicPositionalCategory.md) | Indic Positional Category constants. |
+| [IndicSyllabicCategory](../android/icu/lang/UCharacter.IndicSyllabicCategory.md) | Indic Syllabic Category constants. |
 | --- | --- |
-| [JoiningGroup](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningGroup) | Joining Group constants. |
-| [JoiningType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningType) | Joining Type constants. |
-| [LineBreak](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.LineBreak) | Line Break constants. |
+| [JoiningGroup](../android/icu/lang/UCharacter.JoiningGroup.md) | Joining Group constants. |
+| [JoiningType](../android/icu/lang/UCharacter.JoiningType.md) | Joining Type constants. |
+| [LineBreak](../android/icu/lang/UCharacter.LineBreak.md) | Line Break constants. |
 | --- | --- |
-| [NumericType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.NumericType) | Numeric Type constants. |
-| [SentenceBreak](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.SentenceBreak) | Sentence Break constants. |
-| [VerticalOrientation](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.VerticalOrientation) | Vertical Orientation constants. |
+| [NumericType](../android/icu/lang/UCharacter.NumericType.md) | Numeric Type constants. |
+| [SentenceBreak](../android/icu/lang/UCharacter.SentenceBreak.md) | Sentence Break constants. |
+| [VerticalOrientation](../android/icu/lang/UCharacter.VerticalOrientation.md) | Vertical Orientation constants. |
 | --- | --- |
-| [WordBreak](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.WordBreak) | Word Break constants. |
-| [ECharacterCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory) | 'Enum' for the CharacterCategory constants. |
-| [ECharacterDirection](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterDirection) | 'Enum' for the CharacterDirection constants. |
+| [WordBreak](../android/icu/lang/UCharacter.WordBreak.md) | Word Break constants. |
+| [ECharacterCategory](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) | 'Enum' for the CharacterCategory constants. |
+| [ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) | 'Enum' for the CharacterDirection constants. |
 | --- | --- |
-| [UProperty](https://developer.android.com/reference/kotlin/android/icu/lang/UProperty) | Selection constants for Unicode properties. |
+| [UProperty](../android/icu/lang/UProperty.md) | Selection constants for Unicode properties. |
 
 ## Classes
 
-| [UCharacter](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](https://developer.android.com/reference/kotlin/java/lang/Character.html#). |
+| [UCharacter](../android/icu/lang/UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java/lang/Character.md). |
 | --- | --- |
-| [UCharacterCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterCategory) | Enumerated Unicode category types from the UnicodeData. |
-| [UCharacterDirection](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterDirection) | Enumerated Unicode character linguistic direction constants. |
-| [UCharacterEnums](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums) | A container for the different 'enumerated types' used by UCharacter. |
+| [UCharacterCategory](../android/icu/lang/UCharacterCategory.md) | Enumerated Unicode category types from the UnicodeData. |
+| [UCharacterDirection](../android/icu/lang/UCharacterDirection.md) | Enumerated Unicode character linguistic direction constants. |
+| [UCharacterEnums](../android/icu/lang/UCharacterEnums.md) | A container for the different 'enumerated types' used by UCharacter. |
 | --- | --- |
-| [UScript](https://developer.android.com/reference/kotlin/android/icu/lang/UScript) | Constants for ISO 15924 script codes, and related functions. |
+| [UScript](../android/icu/lang/UScript.md) | Constants for ISO 15924 script codes, and related functions. |

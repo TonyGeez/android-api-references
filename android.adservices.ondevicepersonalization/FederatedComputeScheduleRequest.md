@@ -9,7 +9,7 @@ class FederatedComputeScheduleRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduleRequest](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest#) |
+| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduleRequest](../android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -27,7 +27,7 @@ The input for `https://developer.android.com/reference/kotlin/android/adservices
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [FederatedComputeScheduler.Params](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler.Params) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest#getParams()()` Parameters related to job scheduling. |
+| [FederatedComputeScheduler.Params](../android/adservices/ondevicepersonalization/FederatedComputeScheduler.Params.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest#getParams()()` Parameters related to job scheduling. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest#getPopulationName()()` Population refers to a collection of devices that specific task groups can run on. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest#hashCode()()` Returns a hash code value for the object. |
@@ -46,7 +46,7 @@ FederatedComputeScheduleRequest(
 
 | Parameters ||
 |---|---|
-| `params` | [FederatedComputeScheduler.Params](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler.Params): This value cannot be `null`. |
+| `params` | [FederatedComputeScheduler.Params](../android/adservices/ondevicepersonalization/FederatedComputeScheduler.Params.md): This value cannot be `null`. |
 | `populationName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 
 ## Public methods

@@ -8,8 +8,8 @@ class ButtonCustomizationTrigger : CustomizationTrigger
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.hardware.input.CustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/CustomizationTrigger) ||
-| | ↳ | [android.hardware.input.ButtonCustomizationTrigger](https://developer.android.com/reference/kotlin/android/hardware/input/ButtonCustomizationTrigger#) |
+| ↳ | [android.hardware.input.CustomizationTrigger](../android/hardware/input/CustomizationTrigger.md) ||
+| | ↳ | [android.hardware.input.ButtonCustomizationTrigger](../android/hardware/input/ButtonCustomizationTrigger.md) |
 
 Represents a trigger based on a physical button press on a peripheral (e.g., a mouse).
 

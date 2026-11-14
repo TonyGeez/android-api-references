@@ -11,101 +11,101 @@ class Long : Number, Comparable<Long!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.lang.Long](https://developer.android.com/reference/kotlin/java/lang/Long#) |
+| | ↳ | [java.lang.Long](../java/lang/Long.md) |
 
 The`Long`class wraps a value of the primitive type`long`in an object. An object of type`Long`contains a single field whose type is`long`.
 
 In addition, this class provides several methods for converting a`long`to a`String`and a`String`to a`long`, as well as other constants and methods useful when dealing with a`long`.
 
-Implementation note: The implementations of the "bit twiddling" methods (such as [highestOneBit](https://developer.android.com/reference/kotlin/java/lang/Long#highestOneBit(kotlin.Long))and [numberOfTrailingZeros](https://developer.android.com/reference/kotlin/java/lang/Long#numberOfTrailingZeros(kotlin.Long))) are based on material from Henry S. Warren, Jr.'s*Hacker's Delight*, (Addison Wesley, 2002).
+Implementation note: The implementations of the "bit twiddling" methods (such as [highestOneBit](../java/lang/Long.md))and [numberOfTrailingZeros](../java/lang/Long.md))) are based on material from Henry S. Warren, Jr.'s*Hacker's Delight*, (Addison Wesley, 2002).
 
 ## Summary
 
 | Constants ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](https://developer.android.com/reference/kotlin/java/lang/Long#BYTES:kotlin.Int) The number of bytes used to represent a`long`value in two's complement binary form. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MAX_VALUE:kotlin.Long) A constant holding the maximum value a`long`can have, 263-1. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long) A constant holding the minimum value a`long`can have, -263. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](../java/lang/Long.md) The number of bytes used to represent a`long`value in two's complement binary form. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [MAX_VALUE](../java/lang/Long.md) A constant holding the maximum value a`long`can have, 263-1. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [MIN_VALUE](../java/lang/Long.md) A constant holding the minimum value a`long`can have, -263. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](https://developer.android.com/reference/kotlin/java/lang/Long#SIZE:kotlin.Int) The number of bits used to represent a`long`value in two's complement binary form. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](../java/lang/Long.md) The number of bits used to represent a`long`value in two's complement binary form. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Long](https://developer.android.com/reference/kotlin/java/lang/Long#Long(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Long`object that represents the`long`value indicated by the`String`parameter. |
-| [Long](https://developer.android.com/reference/kotlin/java/lang/Long#Long(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a newly allocated`Long`object that represents the specified`long`argument. |
+| [Long](../java/lang/Long.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Long`object that represents the`long`value indicated by the`String`parameter. |
+| [Long](../java/lang/Long.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a newly allocated`Long`object that represents the specified`long`argument. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitCount](https://developer.android.com/reference/kotlin/java/lang/Long#bitCount(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the number of one-bits in the two's complement binary representation of the specified`long`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/lang/Long#compare(kotlin.Long,%20kotlin.Long))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `y:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Compares two`long`values numerically. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/lang/Long#compareTo(kotlin.Long))`(`other:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Compares two`Long`objects numerically. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitCount](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the number of one-bits in the two's complement binary representation of the specified`long`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../java/lang/Long.md))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `y:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Compares two`long`values numerically. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/lang/Long.md))`(`other:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Compares two`Long`objects numerically. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](https://developer.android.com/reference/kotlin/java/lang/Long#compareUnsigned(kotlin.Long,%20kotlin.Long))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `y:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Compares two`long`values numerically treating the values as unsigned. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compress](https://developer.android.com/reference/kotlin/java/lang/Long#compress(kotlin.Long,%20kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `mask:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by compressing the bits of the specified`long`value,`i`, in accordance with the specified bit mask. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [decode](https://developer.android.com/reference/kotlin/java/lang/Long#decode(kotlin.String))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Decodes a`String`into a`Long`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](../java/lang/Long.md))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `y:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Compares two`long`values numerically treating the values as unsigned. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [compress](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `mask:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by compressing the bits of the specified`long`value,`i`, in accordance with the specified bit mask. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [decode](../java/lang/Long.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Decodes a`String`into a`Long`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [divideUnsigned](https://developer.android.com/reference/kotlin/java/lang/Long#divideUnsigned(kotlin.Long,%20kotlin.Long))`(`dividend:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `divisor:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the unsigned quotient of dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/Long#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [expand](https://developer.android.com/reference/kotlin/java/lang/Long#expand(kotlin.Long,%20kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `mask:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by expanding the bits of the specified`long`value,`i`, in accordance with the specified bit mask. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [divideUnsigned](../java/lang/Long.md))`(`dividend:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `divisor:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the unsigned quotient of dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/Long.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [expand](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `mask:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by expanding the bits of the specified`long`value,`i`, in accordance with the specified bit mask. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)? | [getLong](https://developer.android.com/reference/kotlin/java/lang/Long#getLong(kotlin.String))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Determines the`long`value of the system property with the specified name. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)? | [getLong](https://developer.android.com/reference/kotlin/java/lang/Long#getLong(kotlin.String,%20kotlin.Long))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)?`)` Returns the`long`value of the system property with the specified name. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)? | [getLong](https://developer.android.com/reference/kotlin/java/lang/Long#getLong(kotlin.String,%20kotlin.Long))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Determines the`long`value of the system property with the specified name. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)? | [getLong](../java/lang/Long.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Determines the`long`value of the system property with the specified name. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)? | [getLong](../java/lang/Long.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)?`)` Returns the`long`value of the system property with the specified name. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)? | [getLong](../java/lang/Long.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Determines the`long`value of the system property with the specified name. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Long#hashCode())`()` Returns a hash code for this`Long`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Long#hashCode(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a hash code for a`long`value; compatible with`Long.hashCode()`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [highestOneBit](https://developer.android.com/reference/kotlin/java/lang/Long#highestOneBit(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`long`value with at most a single one-bit, in the position of the highest-order ("leftmost") one-bit in the specified`long`value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Long.md))`()` Returns a hash code for this`Long`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Long.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a hash code for a`long`value; compatible with`Long.hashCode()`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [highestOneBit](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`long`value with at most a single one-bit, in the position of the highest-order ("leftmost") one-bit in the specified`long`value. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [lowestOneBit](https://developer.android.com/reference/kotlin/java/lang/Long#lowestOneBit(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`long`value with at most a single one-bit, in the position of the lowest-order ("rightmost") one-bit in the specified`long`value. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [max](https://developer.android.com/reference/kotlin/java/lang/Long#max(kotlin.Long,%20kotlin.Long))`(`a:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `b:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the greater of two`long`values as if by calling [Math.max](https://developer.android.com/reference/kotlin/java/lang/Math#max(kotlin.Long,%20kotlin.Long)). |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [min](https://developer.android.com/reference/kotlin/java/lang/Long#min(kotlin.Long,%20kotlin.Long))`(`a:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `b:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the smaller of two`long`values as if by calling [Math.min](https://developer.android.com/reference/kotlin/java/lang/Math#min(kotlin.Long,%20kotlin.Long)). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [lowestOneBit](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`long`value with at most a single one-bit, in the position of the lowest-order ("rightmost") one-bit in the specified`long`value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [max](../java/lang/Long.md))`(`a:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `b:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the greater of two`long`values as if by calling [Math.max](../java/lang/Math.md)). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [min](../java/lang/Long.md))`(`a:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `b:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the smaller of two`long`values as if by calling [Math.min](../java/lang/Math.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfLeadingZeros](https://developer.android.com/reference/kotlin/java/lang/Long#numberOfLeadingZeros(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the number of zero bits preceding the highest-order ("leftmost") one-bit in the two's complement binary representation of the specified`long`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfTrailingZeros](https://developer.android.com/reference/kotlin/java/lang/Long#numberOfTrailingZeros(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the number of zero bits following the lowest-order ("rightmost") one-bit in the two's complement binary representation of the specified`long`value. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseLong](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as a signed`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfLeadingZeros](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the number of zero bits preceding the highest-order ("leftmost") one-bit in the two's complement binary representation of the specified`long`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfTrailingZeros](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the number of zero bits following the lowest-order ("rightmost") one-bit in the two's complement binary representation of the specified`long`value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseLong](../java/lang/Long.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](../java/lang/CharSequence.md) argument as a signed`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseLong](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as a signed decimal`long`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseLong](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`long`in the radix specified by the second argument. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseUnsignedLong](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as an unsigned`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseLong](../java/lang/Long.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as a signed decimal`long`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseLong](../java/lang/Long.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`long`in the radix specified by the second argument. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseUnsignedLong](../java/lang/Long.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](../java/lang/CharSequence.md) argument as an unsigned`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseUnsignedLong](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as an unsigned decimal`long`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseUnsignedLong](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as an unsigned`long`in the radix specified by the second argument. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [remainderUnsigned](https://developer.android.com/reference/kotlin/java/lang/Long#remainderUnsigned(kotlin.Long,%20kotlin.Long))`(`dividend:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `divisor:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the unsigned remainder from dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseUnsignedLong](../java/lang/Long.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as an unsigned decimal`long`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseUnsignedLong](../java/lang/Long.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as an unsigned`long`in the radix specified by the second argument. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [remainderUnsigned](../java/lang/Long.md))`(`dividend:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `divisor:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the unsigned remainder from dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reverse](https://developer.android.com/reference/kotlin/java/lang/Long#reverse(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by reversing the order of the bits in the two's complement binary representation of the specified`long`value. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reverseBytes](https://developer.android.com/reference/kotlin/java/lang/Long#reverseBytes(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by reversing the order of the bytes in the two's complement representation of the specified`long`value. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [rotateLeft](https://developer.android.com/reference/kotlin/java/lang/Long#rotateLeft(kotlin.Long,%20kotlin.Int))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`long`value left by the specified number of bits. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reverse](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by reversing the order of the bits in the two's complement binary representation of the specified`long`value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reverseBytes](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value obtained by reversing the order of the bytes in the two's complement representation of the specified`long`value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [rotateLeft](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`long`value left by the specified number of bits. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [rotateRight](https://developer.android.com/reference/kotlin/java/lang/Long#rotateRight(kotlin.Long,%20kotlin.Int))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`long`value right by the specified number of bits. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [signum](https://developer.android.com/reference/kotlin/java/lang/Long#signum(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the signum function of the specified`long`value. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [sum](https://developer.android.com/reference/kotlin/java/lang/Long#sum(kotlin.Long,%20kotlin.Long))`(`a:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `b:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds two`long`values together as per the + operator. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [rotateRight](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`long`value right by the specified number of bits. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [signum](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the signum function of the specified`long`value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [sum](../java/lang/Long.md))`(`a:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `b:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Adds two`long`values together as per the + operator. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toBinaryString](https://developer.android.com/reference/kotlin/java/lang/Long#toBinaryString(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the`long`argument as an unsigned integer in base 2. |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](https://developer.android.com/reference/kotlin/java/lang/Long#toByte())`()` Returns the value of this`Long`as a`byte`after a narrowing primitive conversion. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/lang/Long#toDouble())`()` Returns the value of this`Long`as a`double`after a widening primitive conversion. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toBinaryString](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the`long`argument as an unsigned integer in base 2. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](../java/lang/Long.md))`()` Returns the value of this`Long`as a`byte`after a narrowing primitive conversion. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/lang/Long.md))`()` Returns the value of this`Long`as a`double`after a widening primitive conversion. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/lang/Long#toFloat())`()` Returns the value of this`Long`as a`float`after a widening primitive conversion. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toHexString](https://developer.android.com/reference/kotlin/java/lang/Long#toHexString(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the`long`argument as an unsigned integer in base 16. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/lang/Long#toInt())`()` Returns the value of this`Long`as an`int`after a narrowing primitive conversion. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/lang/Long.md))`()` Returns the value of this`Long`as a`float`after a widening primitive conversion. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toHexString](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the`long`argument as an unsigned integer in base 16. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/lang/Long.md))`()` Returns the value of this`Long`as an`int`after a narrowing primitive conversion. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/lang/Long#toLong())`()` Returns the value of this`Long`as a`long`value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toOctalString](https://developer.android.com/reference/kotlin/java/lang/Long#toOctalString(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the`long`argument as an unsigned integer in base 8. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](https://developer.android.com/reference/kotlin/java/lang/Long#toShort())`()` Returns the value of this`Long`as a`short`after a narrowing primitive conversion. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/lang/Long.md))`()` Returns the value of this`Long`as a`long`value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toOctalString](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the`long`argument as an unsigned integer in base 8. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](../java/lang/Long.md))`()` Returns the value of this`Long`as a`short`after a narrowing primitive conversion. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Long#toString())`()` Returns a`String`object representing this`Long`'s value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Long#toString(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`String`object representing the specified`long`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Long#toString(kotlin.Long,%20kotlin.Int))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument in the radix specified by the second argument. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Long.md))`()` Returns a`String`object representing this`Long`'s value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`String`object representing the specified`long`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument in the radix specified by the second argument. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](https://developer.android.com/reference/kotlin/java/lang/Long#toUnsignedString(kotlin.Long))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the argument as an unsigned decimal value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](https://developer.android.com/reference/kotlin/java/lang/Long#toUnsignedString(kotlin.Long,%20kotlin.Int))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument as an unsigned integer value in the radix specified by the second argument. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a`Long`object holding the value of the specified`String`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string representation of the argument as an unsigned decimal value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](../java/lang/Long.md))`(`i:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument as an unsigned integer value in the radix specified by the second argument. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [valueOf](../java/lang/Long.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a`Long`object holding the value of the specified`String`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Long`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.Long))`(`l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`Long`instance representing the specified`long`value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [valueOf](../java/lang/Long.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Long`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [valueOf](../java/lang/Long.md))`(`l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a`Long`instance representing the specified`long`value. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | [TYPE](https://developer.android.com/reference/kotlin/java/lang/Long#TYPE:java.lang.Class) The`Class`instance representing the primitive type`long`. |
+| static [Class](../java/lang/Class.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | [TYPE](../java/lang/Long.md) The`Class`instance representing the primitive type`long`. |
 
 ## Constants
 
@@ -167,7 +167,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Long(s: String)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseLong(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.String))to convert a string to a`long`primitive, or use [valueOf(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.String))to convert a string to a`Long`object.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseLong(java.lang.String)](../java/lang/Long.md))to convert a string to a`long`primitive, or use [valueOf(java.lang.String)](../java/lang/Long.md))to convert a string to a`Long`object.*
 
 Constructs a newly allocated`Long`object that represents the`long`value indicated by the`String`parameter. The string is converted to a`long`value in exactly the manner used by the`parseLong`method for radix 10.
 
@@ -187,7 +187,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Long(value: Long)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(long)](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.Long))is generally a better choice, as it is likely to yield significantly better space and time performance.*
+**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(long)](../java/lang/Long.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
 
 Constructs a newly allocated`Long`object that represents the specified`long`argument.
 
@@ -316,7 +316,7 @@ For each one-bit value`mb`of the mask, from least significant to most significan
 
 **See Also**
 
-- [#expand](https://developer.android.com/reference/kotlin/java/lang/Long#expand(kotlin.Long,%20kotlin.Long)) 
+- [#expand](../java/lang/Long.md)) 
 
 ### decode
 
@@ -342,7 +342,7 @@ Decodes a`String`into a`Long`. Accepts decimal, hexadecimal, and octal numbers g
 
 <br />
 
-The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Long.parseLong`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](https://developer.android.com/reference/kotlin/java/lang/NumberFormatException) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
+The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Long.parseLong`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](../java/lang/NumberFormatException.md) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------|
@@ -358,7 +358,7 @@ The sequence of characters following an optional sign and/or radix specifier ("`
 
 **See Also**
 
-- [java.lang.Long#parseLong(String, int)](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.String,%20kotlin.Int)) 
+- [java.lang.Long#parseLong(String, int)](../java/lang/Long.md)) 
 
 ### divideUnsigned
 
@@ -386,7 +386,7 @@ Note that in two's complement arithmetic, the three other basic arithmetic opera
 
 **See Also**
 
-- [#remainderUnsigned](https://developer.android.com/reference/kotlin/java/lang/Long#remainderUnsigned(kotlin.Long,%20kotlin.Long)) 
+- [#remainderUnsigned](../java/lang/Long.md)) 
 
 ### equals
 
@@ -432,7 +432,7 @@ For each one-bit value`mb`of the mask, from least significant to most significan
 
 **See Also**
 
-- [#compress](https://developer.android.com/reference/kotlin/java/lang/Long#compress(kotlin.Long,%20kotlin.Long)) 
+- [#compress](../java/lang/Long.md)) 
 
 ### getLong
 
@@ -444,7 +444,7 @@ static fun getLong(nm: String): Long?
 
 Determines the`long`value of the system property with the specified name.
 
-The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))method. The string value of this property is then interpreted as a`long`value using the grammar supported by [decode](https://developer.android.com/reference/kotlin/java/lang/Long#decode(kotlin.String))and a`Long`object representing this value is returned.
+The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))method. The string value of this property is then interpreted as a`long`value using the grammar supported by [decode](../java/lang/Long.md))and a`Long`object representing this value is returned.
 
 If there is no property with the specified name, if the specified name is empty or`null`, or if the property does not have the correct numeric format, then`null`is returned.
 
@@ -461,12 +461,12 @@ In other words, this method returns a`Long`object equal to the value of:
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | for the same reasons as [System.getProperty](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)) |
+| `java.lang.SecurityException` | for the same reasons as [System.getProperty](../java/lang/System.md)) |
 
 **See Also**
 
-- [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))
-- [java.lang.System#getProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)) 
+- [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))
+- [java.lang.System#getProperty(java.lang.String, java.lang.String)](../java/lang/System.md)) 
 
 ### getLong
 
@@ -479,11 +479,11 @@ static fun getLong(
 ): Long?
 ```
 
-Returns the`long`value of the system property with the specified name. The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))method. The string value of this property is then interpreted as a`long`value, as per the [decode](https://developer.android.com/reference/kotlin/java/lang/Long#decode(kotlin.String))method, and a`Long`object representing this value is returned; in summary:
+Returns the`long`value of the system property with the specified name. The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))method. The string value of this property is then interpreted as a`long`value, as per the [decode](../java/lang/Long.md))method, and a`Long`object representing this value is returned; in summary:
 
-- If the property value begins with the two ASCII characters`0x`or the ASCII character, not followed by a minus sign, then the rest of it is parsed as a hexadecimal integer exactly as for the method [valueOf(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.String,%20kotlin.Int))with radix 16.
-- If the property value begins with the ASCII character`0`followed by another character, it is parsed as an octal integer exactly as by the method [valueOf(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.String,%20kotlin.Int))with radix 8.
-- Otherwise the property value is parsed as a decimal integer exactly as by the method [valueOf(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Long#valueOf(kotlin.String,%20kotlin.Int))with radix 10.
+- If the property value begins with the two ASCII characters`0x`or the ASCII character, not followed by a minus sign, then the rest of it is parsed as a hexadecimal integer exactly as for the method [valueOf(java.lang.String,int)](../java/lang/Long.md))with radix 16.
+- If the property value begins with the ASCII character`0`followed by another character, it is parsed as an octal integer exactly as by the method [valueOf(java.lang.String,int)](../java/lang/Long.md))with radix 8.
+- Otherwise the property value is parsed as a decimal integer exactly as by the method [valueOf(java.lang.String,int)](../java/lang/Long.md))with radix 10.
 
 <br />
 
@@ -502,12 +502,12 @@ The second argument is the default value. The default value is returned if there
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | for the same reasons as [System.getProperty](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)) |
+| `java.lang.SecurityException` | for the same reasons as [System.getProperty](../java/lang/System.md)) |
 
 **See Also**
 
-- [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))
-- [java.lang.System#getProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)) 
+- [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))
+- [java.lang.System#getProperty(java.lang.String, java.lang.String)](../java/lang/System.md)) 
 
 ### getLong
 
@@ -522,7 +522,7 @@ static fun getLong(
 
 Determines the`long`value of the system property with the specified name.
 
-The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))method. The string value of this property is then interpreted as a`long`value using the grammar supported by [decode](https://developer.android.com/reference/kotlin/java/lang/Long#decode(kotlin.String))and a`Long`object representing this value is returned.
+The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))method. The string value of this property is then interpreted as a`long`value using the grammar supported by [decode](../java/lang/Long.md))and a`Long`object representing this value is returned.
 
 The second argument is the default value. A`Long`object that represents the value of the second argument is returned if there is no property of the specified name, if the property does not have the correct numeric format, or if the specified name is empty or null.
 
@@ -547,12 +547,12 @@ to avoid the unnecessary allocation of a`Long`object when the default value is n
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | for the same reasons as [System.getProperty](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)) |
+| `java.lang.SecurityException` | for the same reasons as [System.getProperty](../java/lang/System.md)) |
 
 **See Also**
 
-- [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))
-- [java.lang.System#getProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)) 
+- [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))
+- [java.lang.System#getProperty(java.lang.String, java.lang.String)](../java/lang/System.md)) 
 
 ### hashCode
 
@@ -633,7 +633,7 @@ static fun max(
 ): Long
 ```
 
-Returns the greater of two`long`values as if by calling [Math.max](https://developer.android.com/reference/kotlin/java/lang/Math#max(kotlin.Long,%20kotlin.Long)).
+Returns the greater of two`long`values as if by calling [Math.max](../java/lang/Math.md)).
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------|
@@ -646,7 +646,7 @@ Returns the greater of two`long`values as if by calling [Math.max](https://devel
 
 **See Also**
 
-- [java.util.function.BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#) 
+- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
 
 ### min
 
@@ -659,7 +659,7 @@ static fun min(
 ): Long
 ```
 
-Returns the smaller of two`long`values as if by calling [Math.min](https://developer.android.com/reference/kotlin/java/lang/Math#min(kotlin.Long,%20kotlin.Long)).
+Returns the smaller of two`long`values as if by calling [Math.min](../java/lang/Math.md)).
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------|
@@ -672,7 +672,7 @@ Returns the smaller of two`long`values as if by calling [Math.min](https://devel
 
 **See Also**
 
-- [java.util.function.BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#) 
+- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
 
 ### numberOfLeadingZeros
 
@@ -728,7 +728,7 @@ static fun parseLong(
 ): Long
 ```
 
-Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as a signed`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
+Parses the [CharSequence](../java/lang/CharSequence.md) argument as a signed`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
 
 The method does not take steps to guard against the`CharSequence`being mutated while parsing.
 
@@ -748,7 +748,7 @@ The method does not take steps to guard against the`CharSequence`being mutated w
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`s`is null. |
 | `java.lang.IndexOutOfBoundsException` | if`beginIndex`is negative, or if`beginIndex`is greater than`endIndex`or if`endIndex`is greater than`s.length()`. |
-| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable`long`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int). |
+| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable`long`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md). |
 | --- | --- |
 
 ### parseLong
@@ -759,7 +759,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun parseLong(s: String): Long
 ```
 
-Parses the string argument as a signed decimal`long`. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`long`value is returned, exactly as if the argument and the radix`10`were given as arguments to the [parseLong(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.String,%20kotlin.Int))method.
+Parses the string argument as a signed decimal`long`. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`long`value is returned, exactly as if the argument and the radix`10`were given as arguments to the [parseLong(java.lang.String,int)](../java/lang/Long.md))method.
 
 Note that neither the character`L`(`'\u005Cu004C'`) nor`l`(`'\u005Cu006C'`) is permitted to appear at the end of the string as a type indicator, as would be permitted in Java programming language source code.
 
@@ -786,14 +786,14 @@ static fun parseLong(
 ): Long
 ```
 
-Parses the string argument as a signed`long`in the radix specified by the second argument. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Char,%20kotlin.Int))returns a nonnegative value), except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`long`value is returned.
+Parses the string argument as a signed`long`in the radix specified by the second argument. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](../java/lang/Character.md))returns a nonnegative value), except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`long`value is returned.
 
 Note that neither the character`L`(`'\u005Cu004C'`) nor`l`(`'\u005Cu006C'`) is permitted to appear at the end of the string as a type indicator, as would be permitted in Java programming language source code - except that either`L`or`l`may appear as a digit for a radix greater than or equal to 22.
 
 An exception of type`NumberFormatException`is thrown if any of the following situations occurs:
 
 - The first argument is`null`or is a string of length zero.
-- The`radix`is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int).
+- The`radix`is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md).
 - Any character of the string is not a digit of the specified radix, except that the first character may be a minus sign`'-'`(`'\u005Cu002d'`) or plus sign`'+'`(`'\u005Cu002B'`) provided that the string is longer than length 1.
 - The value represented by the string is not a value of type`long`.
 
@@ -838,7 +838,7 @@ static fun parseUnsignedLong(
 ): Long
 ```
 
-Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as an unsigned`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
+Parses the [CharSequence](../java/lang/CharSequence.md) argument as an unsigned`long`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
 
 The method does not take steps to guard against the`CharSequence`being mutated while parsing.
 
@@ -858,7 +858,7 @@ The method does not take steps to guard against the`CharSequence`being mutated w
 |---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`s`is null. |
 | `java.lang.IndexOutOfBoundsException` | if`beginIndex`is negative, or if`beginIndex`is greater than`endIndex`or if`endIndex`is greater than`s.length()`. |
-| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable unsigned`long`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int). |
+| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable unsigned`long`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md). |
 | --- | --- |
 
 ### parseUnsignedLong
@@ -869,7 +869,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun parseUnsignedLong(s: String): Long
 ```
 
-Parses the string argument as an unsigned decimal`long`. The characters in the string must all be decimal digits, except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseUnsignedLong(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int))method.
+Parses the string argument as an unsigned decimal`long`. The characters in the string must all be decimal digits, except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseUnsignedLong(java.lang.String,int)](../java/lang/Long.md))method.
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -894,12 +894,12 @@ static fun parseUnsignedLong(
 ): Long
 ```
 
-Parses the string argument as an unsigned`long`in the radix specified by the second argument. An unsigned integer maps the values usually associated with negative numbers to positive numbers larger than`MAX_VALUE`. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Char,%20kotlin.Int))returns a nonnegative value), except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned.
+Parses the string argument as an unsigned`long`in the radix specified by the second argument. An unsigned integer maps the values usually associated with negative numbers to positive numbers larger than`MAX_VALUE`. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](../java/lang/Character.md))returns a nonnegative value), except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned.
 
 An exception of type`NumberFormatException`is thrown if any of the following situations occurs:
 
 - The first argument is`null`or is a string of length zero.
-- The radix is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int).
+- The radix is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md).
 - Any character of the string is not a digit of the specified radix, except that the first character may be a plus sign`'+'`(`'\u005Cu002B'`) provided that the string is longer than length 1.
 - The value represented by the string is larger than the largest unsigned`long`, 264-1.
 
@@ -940,7 +940,7 @@ Returns the unsigned remainder from dividing the first argument by the second wh
 
 **See Also**
 
-- [#divideUnsigned](https://developer.android.com/reference/kotlin/java/lang/Long#divideUnsigned(kotlin.Long,%20kotlin.Long)) 
+- [#divideUnsigned](../java/lang/Long.md)) 
 
 ### reverse
 
@@ -1068,7 +1068,7 @@ Adds two`long`values together as per the + operator.
 
 **See Also**
 
-- [java.util.function.BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#) 
+- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
 
 ### toBinaryString
 
@@ -1082,7 +1082,7 @@ Returns a string representation of the`long`argument as an unsigned integer in b
 
 The unsigned`long`value is the argument plus 264 if the argument is negative; otherwise, it is equal to the argument. This value is converted to a string of ASCII digits in binary (base 2) with no extra leading`0`s.
 
-The value of the argument can be recovered from the returned string`s`by calling [2)](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int)).
+The value of the argument can be recovered from the returned string`s`by calling [2)](../java/lang/Long.md)).
 
 If the unsigned magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the unsigned magnitude will not be the zero character. The characters`'0'`(`'\u005Cu0030'`) and`'1'`(`'\u005Cu0031'`) are used as binary digits.
 
@@ -1096,8 +1096,8 @@ If the unsigned magnitude is zero, it is represented by a single zero character`
 
 **See Also**
 
-- [#parseUnsignedLong(String, int)](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int))
-- [#toUnsignedString(long, int)](https://developer.android.com/reference/kotlin/java/lang/Long#toUnsignedString(kotlin.Long,%20kotlin.Int)) 
+- [#parseUnsignedLong(String, int)](../java/lang/Long.md))
+- [#toUnsignedString(long, int)](../java/lang/Long.md)) 
 
 ### toByte
 
@@ -1153,10 +1153,10 @@ Returns a string representation of the`long`argument as an unsigned integer in b
 
 The unsigned`long`value is the argument plus 264 if the argument is negative; otherwise, it is equal to the argument. This value is converted to a string of ASCII digits in hexadecimal (base 16) with no extra leading`0`s.
 
-The value of the argument can be recovered from the returned string`s`by calling [16)](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int)).
+The value of the argument can be recovered from the returned string`s`by calling [16)](../java/lang/Long.md)).
 
 If the unsigned magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the unsigned magnitude will not be the zero character. The following characters are used as hexadecimal digits:
-`0123456789abcdef`These are the characters`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu0066'`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase())method may be called on the result:`Long.toHexString(n).toUpperCase()`
+`0123456789abcdef`These are the characters`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu0066'`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](../java/lang/String.md))method may be called on the result:`Long.toHexString(n).toUpperCase()`
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------|
@@ -1168,8 +1168,8 @@ If the unsigned magnitude is zero, it is represented by a single zero character`
 
 **See Also**
 
-- [#parseUnsignedLong(String, int)](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int))
-- [#toUnsignedString(long, int)](https://developer.android.com/reference/kotlin/java/lang/Long#toUnsignedString(kotlin.Long,%20kotlin.Int)) 
+- [#parseUnsignedLong(String, int)](../java/lang/Long.md))
+- [#toUnsignedString(long, int)](../java/lang/Long.md)) 
 
 ### toInt
 
@@ -1211,7 +1211,7 @@ Returns a string representation of the`long`argument as an unsigned integer in b
 
 The unsigned`long`value is the argument plus 264 if the argument is negative; otherwise, it is equal to the argument. This value is converted to a string of ASCII digits in octal (base 8) with no extra leading`0`s.
 
-The value of the argument can be recovered from the returned string`s`by calling [8)](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int)).
+The value of the argument can be recovered from the returned string`s`by calling [8)](../java/lang/Long.md)).
 
 If the unsigned magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the unsigned magnitude will not be the zero character. The following characters are used as octal digits:
 `01234567`These are the characters`'\u005Cu0030'`through`'\u005Cu0037'`.
@@ -1226,8 +1226,8 @@ If the unsigned magnitude is zero, it is represented by a single zero character`
 
 **See Also**
 
-- [#parseUnsignedLong(String, int)](https://developer.android.com/reference/kotlin/java/lang/Long#parseUnsignedLong(kotlin.String,%20kotlin.Int))
-- [#toUnsignedString(long, int)](https://developer.android.com/reference/kotlin/java/lang/Long#toUnsignedString(kotlin.Long,%20kotlin.Int)) 
+- [#parseUnsignedLong(String, int)](../java/lang/Long.md))
+- [#toUnsignedString(long, int)](../java/lang/Long.md)) 
 
 ### toShort
 
@@ -1251,7 +1251,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toString(): String
 ```
 
-Returns a`String`object representing this`Long`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the`long`value were given as an argument to the [java.lang.Long#toString(long)](https://developer.android.com/reference/kotlin/java/lang/Long#toString(kotlin.Long))method.
+Returns a`String`object representing this`Long`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the`long`value were given as an argument to the [java.lang.Long#toString(long)](../java/lang/Long.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -1265,7 +1265,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun toString(i: Long): String
 ```
 
-Returns a`String`object representing the specified`long`. The argument is converted to signed decimal representation and returned as a string, exactly as if the argument and the radix 10 were given as arguments to the [toString(long,int)](https://developer.android.com/reference/kotlin/java/lang/Long#toString(kotlin.Long,%20kotlin.Int))method.
+Returns a`String`object representing the specified`long`. The argument is converted to signed decimal representation and returned as a string, exactly as if the argument and the radix 10 were given as arguments to the [toString(long,int)](../java/lang/Long.md))method.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------|
@@ -1293,7 +1293,7 @@ If the radix is smaller than`Character.MIN_RADIX`or larger than`Character.MAX_RA
 If the first argument is negative, the first element of the result is the ASCII minus sign`'-'`(`'\u005Cu002d'`). If the first argument is not negative, no sign character appears in the result.
 
 The remaining characters of the result represent the magnitude of the first argument. If the magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the magnitude will not be the zero character. The following ASCII characters are used as digits:
-`0123456789abcdefghijklmnopqrstuvwxyz`These are`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu007a'`. If`radix`is N, then the first N of these characters are used as radix-N digits in the order shown. Thus, the digits for hexadecimal (radix 16) are`0123456789abcdef`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase())method may be called on the result:`Long.toString(n, 16).toUpperCase()`
+`0123456789abcdefghijklmnopqrstuvwxyz`These are`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu007a'`. If`radix`is N, then the first N of these characters are used as radix-N digits in the order shown. Thus, the digits for hexadecimal (radix 16) are`0123456789abcdef`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](../java/lang/String.md))method may be called on the result:`Long.toString(n, 16).toUpperCase()`
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------|
@@ -1306,8 +1306,8 @@ The remaining characters of the result represent the magnitude of the first argu
 
 **See Also**
 
-- [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int)
-- [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) 
+- [java.lang.Character#MAX_RADIX](../java/lang/Character.md)
+- [java.lang.Character#MIN_RADIX](../java/lang/Character.md) 
 
 ### toUnsignedString
 
@@ -1317,7 +1317,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun toUnsignedString(i: Long): String
 ```
 
-Returns a string representation of the argument as an unsigned decimal value. The argument is converted to unsigned decimal representation and returned as a string exactly as if the argument and radix 10 were given as arguments to the [toUnsignedString(long,int)](https://developer.android.com/reference/kotlin/java/lang/Long#toUnsignedString(kotlin.Long,%20kotlin.Int))method.
+Returns a string representation of the argument as an unsigned decimal value. The argument is converted to unsigned decimal representation and returned as a string exactly as if the argument and radix 10 were given as arguments to the [toUnsignedString(long,int)](../java/lang/Long.md))method.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------|
@@ -1329,7 +1329,7 @@ Returns a string representation of the argument as an unsigned decimal value. Th
 
 **See Also**
 
-- [#toUnsignedString(long, int)](https://developer.android.com/reference/kotlin/java/lang/Long#toUnsignedString(kotlin.Long,%20kotlin.Int)) 
+- [#toUnsignedString(long, int)](../java/lang/Long.md)) 
 
 ### toUnsignedString
 
@@ -1350,7 +1350,7 @@ Note that since the first argument is treated as an unsigned value, no leading s
 
 If the magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the magnitude will not be the zero character.
 
-The behavior of radixes and the characters used as digits are the same as [toString](https://developer.android.com/reference/kotlin/java/lang/Long#toString(kotlin.Long,%20kotlin.Int)).
+The behavior of radixes and the characters used as digits are the same as [toString](../java/lang/Long.md)).
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -1363,7 +1363,7 @@ The behavior of radixes and the characters used as digits are the same as [toStr
 
 **See Also**
 
-- [#toString(long, int)](https://developer.android.com/reference/kotlin/java/lang/Long#toString(kotlin.Long,%20kotlin.Int)) 
+- [#toString(long, int)](../java/lang/Long.md)) 
 
 ### valueOf
 
@@ -1373,7 +1373,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(s: String): Long
 ```
 
-Returns a`Long`object holding the value of the specified`String`. The argument is interpreted as representing a signed decimal`long`, exactly as if the argument were given to the [parseLong(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.String))method. The result is a`Long`object that represents the integer value specified by the string.
+Returns a`Long`object holding the value of the specified`String`. The argument is interpreted as representing a signed decimal`long`, exactly as if the argument were given to the [parseLong(java.lang.String)](../java/lang/Long.md))method. The result is a`Long`object that represents the integer value specified by the string.
 
 In other words, this method returns a`Long`object equal to the value of:
 `Long.valueOf(Long.parseLong(s))`
@@ -1401,7 +1401,7 @@ static fun valueOf(
 ): Long
 ```
 
-Returns a`Long`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed`long`in the radix specified by the second argument, exactly as if the arguments were given to the [parseLong(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Long#parseLong(kotlin.String,%20kotlin.Int))method. The result is a`Long`object that represents the`long`value specified by the string.
+Returns a`Long`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed`long`in the radix specified by the second argument, exactly as if the arguments were given to the [parseLong(java.lang.String,int)](../java/lang/Long.md))method. The result is a`Long`object that represents the`long`value specified by the string.
 
 In other words, this method returns a`Long`object equal to the value of:
 `Long.valueOf(Long.parseLong(s, radix))`
@@ -1427,7 +1427,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(l: Long): Long
 ```
 
-Returns a`Long`instance representing the specified`long`value. If a new`Long`instance is not required, this method should generally be used in preference to the constructor [Long(long)](https://developer.android.com/reference/kotlin/java/lang/Long#Long(kotlin.Long)), as this method is likely to yield significantly better space and time performance by caching frequently requested values. This method will always cache values in the range -128 to 127, inclusive, and may cache other values outside of this range.
+Returns a`Long`instance representing the specified`long`value. If a new`Long`instance is not required, this method should generally be used in preference to the constructor [Long(long)](../java/lang/Long.md)), as this method is likely to yield significantly better space and time performance by caching frequently requested values. This method will always cache values in the range -128 to 127, inclusive, and may cache other values outside of this range.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------|

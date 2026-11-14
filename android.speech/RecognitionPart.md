@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # RecognitionPart
 
-Kotlin| [Java](https://developer.android.com/reference/android/speech/RecognitionPart "View this page in Java") 
+Kotlin| [Java](../android/speech/RecognitionPart.md) 
 | --- | --- |
 
 ```
@@ -13,57 +13,57 @@ class RecognitionPart : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.speech.RecognitionPart](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#) |
+| ↳ | [android.speech.RecognitionPart](../android/speech/RecognitionPart.md) |
 
 Info about a single recognition part.
 
-A recognition part represents a recognized word or character, as well as any potential adjacent punctuation, that is returned by the [SpeechRecognizer](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer).
+A recognition part represents a recognized word or character, as well as any potential adjacent punctuation, that is returned by the [SpeechRecognizer](../android/speech/SpeechRecognizer.md).
 
-Each recognition part is described with a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) denoting the raw text. Additionally, if formatting is enabled with [RecognizerIntent.EXTRA_ENABLE_FORMATTING](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_FORMATTING:kotlin.String), another [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) representation exists denoting the formatted text.
+Each recognition part is described with a [String](../java/lang/String.md) denoting the raw text. Additionally, if formatting is enabled with [RecognizerIntent.EXTRA_ENABLE_FORMATTING](../android/speech/RecognizerIntent.md), another [String](../java/lang/String.md) representation exists denoting the formatted text.
 
-If the timestamps are requested with [RecognizerIntent.EXTRA_REQUEST_WORD_TIMING](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_TIMING:kotlin.String), each recognition part will contain a value representing the offset of the beginning of this part from the start of the recognition session in milliseconds.
+If the timestamps are requested with [RecognizerIntent.EXTRA_REQUEST_WORD_TIMING](../android/speech/RecognizerIntent.md), each recognition part will contain a value representing the offset of the beginning of this part from the start of the recognition session in milliseconds.
 
-If the confidence levels are requested with [RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_CONFIDENCE:kotlin.String), each recognition part will contain a value describing the level of recognition confidence.
+If the confidence levels are requested with [RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE](../android/speech/RecognizerIntent.md), each recognition part will contain a value describing the level of recognition confidence.
 
 ## Summary
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart.Builder) A builder for [RecognitionPart](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#) |
+| | [Builder](../android/speech/RecognitionPart.Builder.md) A builder for [RecognitionPart](../android/speech/RecognitionPart.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_HIGH](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_HIGH:kotlin.Int) Highest level of confidence out of five levels. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_LOW](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_LOW:kotlin.Int) Lowest level of confidence out of five levels. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM:kotlin.Int) Medium level of confidence out of five levels. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_HIGH](../android/speech/RecognitionPart.md) Highest level of confidence out of five levels. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_LOW](../android/speech/RecognitionPart.md) Lowest level of confidence out of five levels. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM](../android/speech/RecognitionPart.md) Medium level of confidence out of five levels. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM_HIGH](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_HIGH:kotlin.Int) Second-highest level of confidence out of five levels. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM_LOW](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_LOW:kotlin.Int) Second-lowest level of confidence out of five levels. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_UNKNOWN](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_UNKNOWN:kotlin.Int) Confidence level not requested. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM_HIGH](../android/speech/RecognitionPart.md) Second-highest level of confidence out of five levels. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_MEDIUM_LOW](../android/speech/RecognitionPart.md) Second-lowest level of confidence out of five levels. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIDENCE_LEVEL_UNKNOWN](../android/speech/RecognitionPart.md) Confidence level not requested. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConfidenceLevel](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getConfidenceLevel())`()` The level of confidence for this part if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_CONFIDENCE:kotlin.String). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/speech/RecognitionPart.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/speech/RecognitionPart.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConfidenceLevel](../android/speech/RecognitionPart.md))`()` The level of confidence for this part if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE](../android/speech/RecognizerIntent.md). |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFormattedText](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getFormattedText())`()` The formatted text version of the recognized part of the result. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRawText](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getRawText())`()` The`non-null`raw text version of the recognized part of the result. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#getTimestampMillis())`()` Non-negative offset of the beginning of this part from the start of the recognition session in milliseconds if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_TIMING](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_TIMING:kotlin.String). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFormattedText](../android/speech/RecognitionPart.md))`()` The formatted text version of the recognized part of the result. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getRawText](../android/speech/RecognitionPart.md))`()` The`non-null`raw text version of the recognized part of the result. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampMillis](../android/speech/RecognitionPart.md))`()` Non-negative offset of the beginning of this part from the start of the recognition session in milliseconds if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_TIMING](../android/speech/RecognizerIntent.md). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#hashCode())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/speech/RecognitionPart.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/speech/RecognitionPart.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/speech/RecognitionPart.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RecognitionPart](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RecognitionPart](../android/speech/RecognitionPart.md)!\> | [CREATOR](../android/speech/RecognitionPart.md) <br /> |
 
 ## Constants
 
@@ -151,7 +151,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -190,13 +190,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getConfidenceLevel(): Int
 ```
 
-The level of confidence for this part if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_CONFIDENCE:kotlin.String).
+The level of confidence for this part if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE](../android/speech/RecognizerIntent.md).
 
-Otherwise, this should equal [CONFIDENCE_LEVEL_UNKNOWN](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_UNKNOWN:kotlin.Int).
+Otherwise, this should equal [CONFIDENCE_LEVEL_UNKNOWN](../android/speech/RecognitionPart.md).
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.speech.RecognitionPart#CONFIDENCE_LEVEL_UNKNOWN](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_UNKNOWN:kotlin.Int), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_LOW](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_LOW:kotlin.Int), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_LOW](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_LOW:kotlin.Int), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_MEDIUM](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM:kotlin.Int), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_HIGH](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_HIGH:kotlin.Int), or [android.speech.RecognitionPart#CONFIDENCE_LEVEL_HIGH](https://developer.android.com/reference/kotlin/android/speech/RecognitionPart#CONFIDENCE_LEVEL_HIGH:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.speech.RecognitionPart#CONFIDENCE_LEVEL_UNKNOWN](../android/speech/RecognitionPart.md), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_LOW](../android/speech/RecognitionPart.md), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_LOW](../android/speech/RecognitionPart.md), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_MEDIUM](../android/speech/RecognitionPart.md), [android.speech.RecognitionPart#CONFIDENCE_LEVEL_MEDIUM_HIGH](../android/speech/RecognitionPart.md), or [android.speech.RecognitionPart#CONFIDENCE_LEVEL_HIGH](../android/speech/RecognitionPart.md) |
 
 ### getFormattedText
 
@@ -206,7 +206,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getFormattedText(): String?
 ```
 
-The formatted text version of the recognized part of the result. If formatting is enabled with [RecognizerIntent.EXTRA_ENABLE_FORMATTING](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_FORMATTING:kotlin.String), it has a`non-null`value.
+The formatted text version of the recognized part of the result. If formatting is enabled with [RecognizerIntent.EXTRA_ENABLE_FORMATTING](../android/speech/RecognizerIntent.md), it has a`non-null`value.
 
 Otherwise, it should be`null`by default. 
 
@@ -228,7 +228,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getTimestampMillis(): Long
 ```
 
-Non-negative offset of the beginning of this part from the start of the recognition session in milliseconds if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_TIMING](https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_REQUEST_WORD_TIMING:kotlin.String).
+Non-negative offset of the beginning of this part from the start of the recognition session in milliseconds if requested with [RecognizerIntent.EXTRA_REQUEST_WORD_TIMING](../android/speech/RecognizerIntent.md).
 
 Otherwise, this should equal 0. 
 
@@ -271,8 +271,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

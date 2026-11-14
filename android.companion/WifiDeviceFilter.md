@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiDeviceFilter
 
-Kotlin | [Java](https://developer.android.com/reference/android/companion/WifiDeviceFilter "View this page in Java")
+Kotlin | [Java](../android/companion/WifiDeviceFilter.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class WifiDeviceFilter : DeviceFilter<ScanResult!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.companion.WifiDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#) |
+| ↳ | [android.companion.WifiDeviceFilter](../android/companion/WifiDeviceFilter.md) |
 
 A filter for Wifi devices
 
@@ -31,7 +31,7 @@ A filter for Wifi devices
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [WifiDeviceFilter](https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#)!\> | `https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiDeviceFilter](../android/companion/WifiDeviceFilter.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/WifiDeviceFilter#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -113,7 +113,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

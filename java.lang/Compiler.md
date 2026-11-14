@@ -10,7 +10,7 @@ class Compiler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Compiler](https://developer.android.com/reference/kotlin/java/lang/Compiler#) |
+| ↳ | [java.lang.Compiler](../java/lang/Compiler.md) |
 
 Does nothing on Android.
 
@@ -18,12 +18,12 @@ Does nothing on Android.
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [command](https://developer.android.com/reference/kotlin/java/lang/Compiler#command(kotlin.Any))`(`cmd:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Executes an operation according to the specified command object. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compileClass](https://developer.android.com/reference/kotlin/java/lang/Compiler#compileClass(java.lang.Class))`(`classToCompile:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>!`)` Compiles the specified class using the JIT compiler and indicates if compilation has been successful. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compileClasses](https://developer.android.com/reference/kotlin/java/lang/Compiler#compileClasses(kotlin.String))`(`nameRoot:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compiles all classes whose name matches the specified name using the JIT compiler and indicates if compilation has been successful. |
+| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [command](../java/lang/Compiler.md))`(`cmd:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Executes an operation according to the specified command object. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compileClass](../java/lang/Compiler.md))`(`classToCompile:` ` [Class](../java/lang/Class.md)<*>!`)` Compiles the specified class using the JIT compiler and indicates if compilation has been successful. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compileClasses](../java/lang/Compiler.md))`(`nameRoot:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compiles all classes whose name matches the specified name using the JIT compiler and indicates if compilation has been successful. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disable](https://developer.android.com/reference/kotlin/java/lang/Compiler#disable())`()` Disables the JIT compiler. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enable](https://developer.android.com/reference/kotlin/java/lang/Compiler#enable())`()` Enables the JIT compiler. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [disable](../java/lang/Compiler.md))`()` Disables the JIT compiler. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enable](../java/lang/Compiler.md))`()` Enables the JIT compiler. |
 
 ## Public methods
 
@@ -57,7 +57,7 @@ Compiles the specified class using the JIT compiler and indicates if compilation
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------|
-| `classToCompile` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>!:java.lang.Class the class to JIT compile |
+| `classToCompile` | [Class](../java/lang/Class.md)\<\*\>!:java.lang.Class the class to JIT compile |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|

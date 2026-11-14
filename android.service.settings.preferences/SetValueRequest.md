@@ -8,7 +8,7 @@ class SetValueRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.settings.preferences.SetValueRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#) |
+| ↳ | [android.service.settings.preferences.SetValueRequest](../android/service/settings/preferences/SetValueRequest.md) |
 
 Request parameters to set the current value to a Settings Preference.
 
@@ -32,14 +32,14 @@ This object passed to `https://developer.android.com/reference/kotlin/android/se
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#getPreferenceKey()()` Returns the key of requested Preference. |
-| [SettingsPreferenceValue](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#getPreferenceValue()()` Returns the value of requested Preference. |
+| [SettingsPreferenceValue](../android/service/settings/preferences/SettingsPreferenceValue.md) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#getPreferenceValue()()` Returns the value of requested Preference. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#getScreenKey()()` Returns the screen key of requested Preference. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SetValueRequest](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SetValueRequest](../android/service/settings/preferences/SetValueRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest#`. |
 
 ## Public methods
 
@@ -102,7 +102,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

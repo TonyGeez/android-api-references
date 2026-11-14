@@ -8,7 +8,7 @@ class EapSessionConfig
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.eap.EapSessionConfig](https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#) |
+| ↳ | [android.net.eap.EapSessionConfig](../android/net/eap/EapSessionConfig.md) |
 
 EapSessionConfig represents a container for EAP method configuration.
 
@@ -32,14 +32,14 @@ The EAP authentication server decides which EAP method is used, so clients are e
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [EapSessionConfig.EapAkaConfig](https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.EapAkaConfig)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapAkaConfig()()` Retrieves configuration for EAP AKA |
-| [EapSessionConfig.EapAkaPrimeConfig](https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.EapAkaPrimeConfig)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapAkaPrimeConfig()()` Retrieves configuration for EAP AKA' |
+| [EapSessionConfig.EapAkaConfig](../android/net/eap/EapSessionConfig.EapAkaConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapAkaConfig()()` Retrieves configuration for EAP AKA |
+| [EapSessionConfig.EapAkaPrimeConfig](../android/net/eap/EapSessionConfig.EapAkaPrimeConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapAkaPrimeConfig()()` Retrieves configuration for EAP AKA' |
 | --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapIdentity()()` Retrieves client's EAP Identity |
-| [EapSessionConfig.EapMsChapV2Config](https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.EapMsChapV2Config)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapMsChapV2Config()()` Retrieves configuration for EAP MSCHAPV2 |
-| [EapSessionConfig.EapSimConfig](https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.EapSimConfig)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapSimConfig()()` Retrieves configuration for EAP SIM |
+| [EapSessionConfig.EapMsChapV2Config](../android/net/eap/EapSessionConfig.EapMsChapV2Config.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapMsChapV2Config()()` Retrieves configuration for EAP MSCHAPV2 |
+| [EapSessionConfig.EapSimConfig](../android/net/eap/EapSessionConfig.EapSimConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapSimConfig()()` Retrieves configuration for EAP SIM |
 | --- | --- |
-| [EapSessionConfig.EapTtlsConfig](https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.EapTtlsConfig)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapTtlsConfig()()` Retrieves configuration for EAP-TTLS |
+| [EapSessionConfig.EapTtlsConfig](../android/net/eap/EapSessionConfig.EapTtlsConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapTtlsConfig()()` Retrieves configuration for EAP-TTLS |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#hashCode()()` Returns a hash code value for the object. |
 
 ## Public methods

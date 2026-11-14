@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # MbmsGroupCallSession
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/MbmsGroupCallSession "View this page in Java") 
+Kotlin| [Java](../android/telephony/MbmsGroupCallSession.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MbmsGroupCallSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) |
+| ↳ | [android.telephony.MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) |
 
 This class provides functionality for accessing group call functionality over MBMS.
 
@@ -21,11 +21,11 @@ This class provides functionality for accessing group call functionality over MB
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#close())`()` Terminates this instance. |
-| openstatic [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#)? | [create](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#create(android.content.Context,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.telephony.mbms.MbmsGroupCallSessionCallback))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `subscriptionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [MbmsGroupCallSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback)`)` Create a new [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) using the given subscription ID. |
-| openstatic [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#)? | [create](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#create(android.content.Context,%20java.util.concurrent.Executor,%20android.telephony.mbms.MbmsGroupCallSessionCallback))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [MbmsGroupCallSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback)`)` Create a new [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) using the system default data subscription ID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/telephony/MbmsGroupCallSession.md))`()` Terminates this instance. |
+| openstatic [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md)? | [create](../android/telephony/MbmsGroupCallSession.md))`(`context:` ` [Context](../android/content/Context.md)`, `subscriptionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [MbmsGroupCallSessionCallback](../android/telephony/mbms/MbmsGroupCallSessionCallback.md)`)` Create a new [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) using the given subscription ID. |
+| openstatic [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md)? | [create](../android/telephony/MbmsGroupCallSession.md))`(`context:` ` [Context](../android/content/Context.md)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [MbmsGroupCallSessionCallback](../android/telephony/mbms/MbmsGroupCallSessionCallback.md)`)` Create a new [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) using the system default data subscription ID. |
 | --- | --- |
-| open [GroupCall](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall)? | [startGroupCall](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#startGroupCall(kotlin.Long,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.telephony.mbms.GroupCallCallback))`(`tmgi:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `saiList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`, `frequencyList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [GroupCallCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback)`)` Starts the requested group call, reporting status to the indicated callback. |
+| open [GroupCall](../android/telephony/mbms/GroupCall.md)? | [startGroupCall](../android/telephony/MbmsGroupCallSession.md))`(`tmgi:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `saiList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`, `frequencyList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [GroupCallCallback](../android/telephony/mbms/GroupCallCallback.md)`)` Starts the requested group call, reporting status to the indicated callback. |
 
 ## Public methods
 
@@ -37,7 +37,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun close(): Unit
 ```
 
-Terminates this instance. Also terminates any group calls spawned from this instance as if [GroupCall.close()](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#close())had been called on them. After this method returns, no further callbacks originating from the middleware will be enqueued on the provided instance of [MbmsGroupCallSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback), but callbacks that have already been enqueued will still be delivered. It is safe to call [create(android.content.Context,int,java.util.concurrent.Executor,android.telephony.mbms.MbmsGroupCallSessionCallback)](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#create(android.content.Context,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.telephony.mbms.MbmsGroupCallSessionCallback))to obtain another instance of [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) immediately after this method returns. May throw an [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#)
+Terminates this instance. Also terminates any group calls spawned from this instance as if [GroupCall.close()](../android/telephony/mbms/GroupCall.md))had been called on them. After this method returns, no further callbacks originating from the middleware will be enqueued on the provided instance of [MbmsGroupCallSessionCallback](../android/telephony/mbms/MbmsGroupCallSessionCallback.md), but callbacks that have already been enqueued will still be delivered. It is safe to call [create(android.content.Context,int,java.util.concurrent.Executor,android.telephony.mbms.MbmsGroupCallSessionCallback)](../android/telephony/MbmsGroupCallSession.md))to obtain another instance of [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) immediately after this method returns. May throw an [IllegalStateException](../java/lang/IllegalStateException.md)
 
 | Exceptions ||
 |-----------------------|-----------------------------------|
@@ -56,19 +56,19 @@ open static fun create(
 ): MbmsGroupCallSession?
 ```
 
-Create a new [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) using the given subscription ID. You may only have one instance of [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) per UID. If you call this method while there is an active instance of [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) in your process (in other words, one that has not had [close()](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#close())called on it), this method will throw an [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#). If you call this method in a different process running under the same UID, an error will be indicated via [MbmsGroupCallSessionCallback.onError(int, String)](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback#onError(kotlin.Int,%20kotlin.String)). Note that initialization may fail asynchronously. If you wish to try again after you receive such an asynchronous error, you must call [close()](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#close())on the instance of [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) that you received before calling this method again.
+Create a new [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) using the given subscription ID. You may only have one instance of [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) per UID. If you call this method while there is an active instance of [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) in your process (in other words, one that has not had [close()](../android/telephony/MbmsGroupCallSession.md))called on it), this method will throw an [IllegalStateException](../java/lang/IllegalStateException.md). If you call this method in a different process running under the same UID, an error will be indicated via [MbmsGroupCallSessionCallback.onError(int, String)](../android/telephony/mbms/MbmsGroupCallSessionCallback.md)). Note that initialization may fail asynchronously. If you wish to try again after you receive such an asynchronous error, you must call [close()](../android/telephony/MbmsGroupCallSession.md))on the instance of [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) that you received before calling this method again.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) to use. This value cannot be`null`. |
+| `context` | [Context](../android/content/Context.md):The [Context](../android/content/Context.md) to use. This value cannot be`null`. |
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The subscription ID to use. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor on which you wish to execute callbacks. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor on which you wish to execute callbacks. This value cannot be`null`. |
 | --- | --- |
-| `callback` | [MbmsGroupCallSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback):A callback object on which you wish to receive results of asynchronous operations. This value cannot be`null`. |
+| `callback` | [MbmsGroupCallSessionCallback](../android/telephony/mbms/MbmsGroupCallSessionCallback.md):A callback object on which you wish to receive results of asynchronous operations. This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#)? | An instance of [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#), or null if an error occurred. |
+| [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md)? | An instance of [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md), or null if an error occurred. |
 
 ### create
 
@@ -82,18 +82,18 @@ open static fun create(
 ): MbmsGroupCallSession?
 ```
 
-Create a new [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#) using the system default data subscription ID. See [create(android.content.Context,int,java.util.concurrent.Executor,android.telephony.mbms.MbmsGroupCallSessionCallback)](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#create(android.content.Context,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.telephony.mbms.MbmsGroupCallSessionCallback)).
+Create a new [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md) using the system default data subscription ID. See [create(android.content.Context,int,java.util.concurrent.Executor,android.telephony.mbms.MbmsGroupCallSessionCallback)](../android/telephony/MbmsGroupCallSession.md)).
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):This value cannot be`null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):This value cannot be`null`. |
-| `callback` | [MbmsGroupCallSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsGroupCallSessionCallback):This value cannot be`null`. |
+| `context` | [Context](../android/content/Context.md):This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):This value cannot be`null`. |
+| `callback` | [MbmsGroupCallSessionCallback](../android/telephony/mbms/MbmsGroupCallSessionCallback.md):This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [MbmsGroupCallSession](https://developer.android.com/reference/kotlin/android/telephony/MbmsGroupCallSession#)? | This value may be`null`. |
+| [MbmsGroupCallSession](../android/telephony/MbmsGroupCallSession.md)? | This value may be`null`. |
 
 ### startGroupCall
 
@@ -109,7 +109,7 @@ open fun startGroupCall(
 ): GroupCall?
 ```
 
-Starts the requested group call, reporting status to the indicated callback. Returns an object used to control that call. May throw an [IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) or an [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) Asynchronous errors through the callback include any of the errors in [MbmsErrors.GeneralErrors](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors).
+Starts the requested group call, reporting status to the indicated callback. Returns an object used to control that call. May throw an [IllegalArgumentException](../java/lang/IllegalArgumentException.md) or an [IllegalStateException](../java/lang/IllegalStateException.md) Asynchronous errors through the callback include any of the errors in [MbmsErrors.GeneralErrors](../android/telephony/mbms/MbmsErrors.GeneralErrors.md).
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,9 +117,9 @@ Starts the requested group call, reporting status to the indicated callback. Ret
 | `saiList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>:A list of SAIs for the group call that should be negotiated separately with the carrier. This value cannot be`null`. |
 | `frequencyList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>:A lost of frequencies for the group call that should be negotiated separately with the carrier. This value cannot be`null`. |
 | --- | --- |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):The executor on which you wish to execute callbacks for this stream. This value cannot be`null`. |
-| `callback` | [GroupCallCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback):The callback that you want to receive information about the call on. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor on which you wish to execute callbacks for this stream. This value cannot be`null`. |
+| `callback` | [GroupCallCallback](../android/telephony/mbms/GroupCallCallback.md):The callback that you want to receive information about the call on. This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [GroupCall](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall)? | An instance of [GroupCall](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall) through which the call can be controlled. May be`null`if an error occurred. |
+| [GroupCall](../android/telephony/mbms/GroupCall.md)? | An instance of [GroupCall](../android/telephony/mbms/GroupCall.md) through which the call can be controlled. May be`null`if an error occurred. |

@@ -8,7 +8,7 @@ class MigrationRequestResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.privatecompute.MigrationRequestResult](https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#) |
+| ↳ | [android.app.privatecompute.MigrationRequestResult](../android/app/privatecompute/MigrationRequestResult.md) |
 
 Result of a migration request initiated by a PCC component.
 
@@ -30,14 +30,14 @@ Result of a migration request initiated by a PCC component.
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#getExtras()()` <br /> |
+| [PersistableBundle](../android/os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#getExtras()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#getStatus()()` <br /> |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [MigrationRequestResult](https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MigrationRequestResult](../android/app/privatecompute/MigrationRequestResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -80,7 +80,7 @@ MigrationRequestResult(
 | Parameters ||
 |---|---|
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#MIGRATION_REQUEST_ACCEPTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult#MIGRATION_REQUEST_REJECTED:kotlin.Int` |
-| `extras` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)?: This value may be `null`. |
+| `extras` | [PersistableBundle](../android/os/PersistableBundle.md)?: This value may be `null`. |
 
 ## Public methods
 
@@ -137,7 +137,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

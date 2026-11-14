@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # VoiceInteractor
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/VoiceInteractor "View this page in Java") 
+Kotlin| [Java](../android/app/VoiceInteractor.md) 
 | --- | --- |
 
 ```
@@ -13,45 +13,45 @@ class VoiceInteractor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.VoiceInteractor](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#) |
+| ↳ | [android.app.VoiceInteractor](../android/app/VoiceInteractor.md) |
 
-Interface for an [Activity](https://developer.android.com/reference/kotlin/android/app/Activity) to interact with the user through voice. Use [Activity.getVoiceInteractor](https://developer.android.com/reference/kotlin/android/app/Activity#getVoiceInteractor())to retrieve the interface, if the activity is currently involved in a voice interaction.
+Interface for an [Activity](../android/app/Activity.md) to interact with the user through voice. Use [Activity.getVoiceInteractor](../android/app/Activity.md))to retrieve the interface, if the activity is currently involved in a voice interaction.
 
-The voice interactor revolves around submitting voice interaction requests to the back-end voice interaction service that is working with the user. These requests are submitted with #submitRequest, providing a new instance of a [Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request) subclass describing the type of operation to perform -- currently the possible requests are [ConfirmationRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.ConfirmationRequest) and [CommandRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.CommandRequest).
+The voice interactor revolves around submitting voice interaction requests to the back-end voice interaction service that is working with the user. These requests are submitted with #submitRequest, providing a new instance of a [Request](../android/app/VoiceInteractor.Request.md) subclass describing the type of operation to perform -- currently the possible requests are [ConfirmationRequest](../android/app/VoiceInteractor.ConfirmationRequest.md) and [CommandRequest](../android/app/VoiceInteractor.CommandRequest.md).
 
 Once a request is submitted, the voice system will process it and eventually deliver the result to the request object. The application can cancel a pending request at any time.
 
-The VoiceInteractor is integrated with Activity's state saving mechanism, so that if an activity is being restarted with retained state, it will retain the current VoiceInteractor and any outstanding requests. Because of this, you should always use [Request.getActivity](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request#getActivity())to get back to the activity of a request, rather than holding on to the activity instance yourself, either explicitly or implicitly through a non-static inner class.
+The VoiceInteractor is integrated with Activity's state saving mechanism, so that if an activity is being restarted with retained state, it will retain the current VoiceInteractor and any outstanding requests. Because of this, you should always use [Request.getActivity](../android/app/VoiceInteractor.Request.md))to get back to the activity of a request, rather than holding on to the activity instance yourself, either explicitly or implicitly through a non-static inner class.
 
 ## Summary
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [AbortVoiceRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.AbortVoiceRequest) Reports that the current interaction can not be complete with voice, so the application will need to switch to a traditional input UI. |
-| | [CommandRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.CommandRequest) Execute a vendor-specific command using the trusted system VoiceInteractionService. |
-| | [CompleteVoiceRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.CompleteVoiceRequest) Reports that the current interaction was successfully completed with voice, so the application can report the final status to the user. |
+| | [AbortVoiceRequest](../android/app/VoiceInteractor.AbortVoiceRequest.md) Reports that the current interaction can not be complete with voice, so the application will need to switch to a traditional input UI. |
+| | [CommandRequest](../android/app/VoiceInteractor.CommandRequest.md) Execute a vendor-specific command using the trusted system VoiceInteractionService. |
+| | [CompleteVoiceRequest](../android/app/VoiceInteractor.CompleteVoiceRequest.md) Reports that the current interaction was successfully completed with voice, so the application can report the final status to the user. |
 | --- | --- |
-| | [ConfirmationRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.ConfirmationRequest) Confirms an operation with the user via the trusted system VoiceInteractionService. |
-| | [PickOptionRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.PickOptionRequest) Select a single option from multiple potential options with the user via the trusted system VoiceInteractionService. |
-| | [Prompt](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Prompt) A set of voice prompts to use with the voice interaction system to confirm an action, select an option, or do similar operations. |
+| | [ConfirmationRequest](../android/app/VoiceInteractor.ConfirmationRequest.md) Confirms an operation with the user via the trusted system VoiceInteractionService. |
+| | [PickOptionRequest](../android/app/VoiceInteractor.PickOptionRequest.md) Select a single option from multiple potential options with the user via the trusted system VoiceInteractionService. |
+| | [Prompt](../android/app/VoiceInteractor.Prompt.md) A set of voice prompts to use with the voice interaction system to confirm an action, select an option, or do similar operations. |
 | --- | --- |
-| abstract | [Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request) Base class for voice interaction requests that can be submitted to the interactor. |
+| abstract | [Request](../android/app/VoiceInteractor.Request.md) Base class for voice interaction requests that can be submitted to the interactor. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [VoiceInteractor.Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request)! | [getActiveRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#getActiveRequest(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return any currently active request that was submitted with the given name. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [VoiceInteractor.Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request)!\>! | [getActiveRequests](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#getActiveRequests())`()` Return all currently active requests. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#getPackageName())`()` <br /> |
+| [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)! | [getActiveRequest](../android/app/VoiceInteractor.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return any currently active request that was submitted with the given name. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!\>! | [getActiveRequests](../android/app/VoiceInteractor.md))`()` Return all currently active requests. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](../android/app/VoiceInteractor.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDestroyed](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#isDestroyed())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDirectActionsChanged](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#notifyDirectActionsChanged())`()` Notifies the assist framework that the direct actions supported by the app changed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerOnDestroyedCallback](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#registerOnDestroyedCallback(java.util.concurrent.Executor,%20java.lang.Runnable))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)`)` Registers a callback to be called when the VoiceInteractor is destroyed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDestroyed](../android/app/VoiceInteractor.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDirectActionsChanged](../android/app/VoiceInteractor.md))`()` Notifies the assist framework that the direct actions supported by the app changed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerOnDestroyedCallback](../android/app/VoiceInteractor.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [Runnable](../java/lang/Runnable.md)`)` Registers a callback to be called when the VoiceInteractor is destroyed. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#submitRequest(android.app.VoiceInteractor.Request))`(`request:` ` [VoiceInteractor.Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request)!`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#submitRequest(android.app.VoiceInteractor.Request,%20kotlin.String))`(`request:` ` [VoiceInteractor.Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Submit a new [Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request) to the voice interaction service. |
-| [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | [supportsCommands](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#supportsCommands(kotlin.Array))`(`commands:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Queries the supported commands available from the VoiceInteractionService. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](../android/app/VoiceInteractor.md))`(`request:` ` [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](../android/app/VoiceInteractor.md))`(`request:` ` [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Submit a new [Request](../android/app/VoiceInteractor.Request.md) to the voice interaction service. |
+| [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | [supportsCommands](../android/app/VoiceInteractor.md))`(`commands:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Queries the supported commands available from the VoiceInteractionService. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterOnDestroyedCallback](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#unregisterOnDestroyedCallback(java.lang.Runnable))`(`callback:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)`)` Unregisters a previously registered onDestroy callback |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterOnDestroyedCallback](../android/app/VoiceInteractor.md))`(`callback:` ` [Runnable](../java/lang/Runnable.md)`)` Unregisters a previously registered onDestroy callback |
 
 ## Public methods
 
@@ -67,11 +67,11 @@ Return any currently active request that was submitted with the given name.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name used to submit the request, as per [submitRequest(android.app.VoiceInteractor.Request,java.lang.String)](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#submitRequest(android.app.VoiceInteractor.Request,%20kotlin.String)). |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name used to submit the request, as per [submitRequest(android.app.VoiceInteractor.Request,java.lang.String)](../android/app/VoiceInteractor.md)). |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [VoiceInteractor.Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request)! | Returns the active request with that name, or null if there was none. |
+| [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)! | Returns the active request with that name, or null if there was none. |
 
 ### getActiveRequests
 
@@ -132,8 +132,8 @@ Registers a callback to be called when the VoiceInteractor is destroyed.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):Executor on which to run the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `callback` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#):The callback to run. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):Executor on which to run the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [Runnable](../java/lang/Runnable.md):The callback to run. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------|
@@ -158,12 +158,12 @@ fun submitRequest(
 ): Boolean
 ```
 
-Submit a new [Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request) to the voice interaction service. The request must be one of the available subclasses -- [ConfirmationRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.ConfirmationRequest), [PickOptionRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.PickOptionRequest), [CompleteVoiceRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.CompleteVoiceRequest), [AbortVoiceRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.AbortVoiceRequest), or [CommandRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.CommandRequest).
+Submit a new [Request](../android/app/VoiceInteractor.Request.md) to the voice interaction service. The request must be one of the available subclasses -- [ConfirmationRequest](../android/app/VoiceInteractor.ConfirmationRequest.md), [PickOptionRequest](../android/app/VoiceInteractor.PickOptionRequest.md), [CompleteVoiceRequest](../android/app/VoiceInteractor.CompleteVoiceRequest.md), [AbortVoiceRequest](../android/app/VoiceInteractor.AbortVoiceRequest.md), or [CommandRequest](../android/app/VoiceInteractor.CommandRequest.md).
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [VoiceInteractor.Request](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.Request)!:The desired request to submit. |
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:An optional name for this request, or null. This can be used later with [getActiveRequests](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#getActiveRequests())and [getActiveRequest](https://developer.android.com/reference/kotlin/android/app/VoiceInteractor#getActiveRequest(kotlin.String))to find the request. |
+| `request` | [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!:The desired request to submit. |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:An optional name for this request, or null. This can be used later with [getActiveRequests](../android/app/VoiceInteractor.md))and [getActiveRequest](../android/app/VoiceInteractor.md))to find the request. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -199,7 +199,7 @@ Unregisters a previously registered onDestroy callback
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#):The callback to remove. This value cannot be`null`. |
+| `callback` | [Runnable](../java/lang/Runnable.md):The callback to remove. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|

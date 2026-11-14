@@ -8,7 +8,7 @@ class EmergencyNumber : Comparable<EmergencyNumber!>, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.emergency.EmergencyNumber](https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#) |
+| ↳ | [android.telephony.emergency.EmergencyNumber](../android/telephony/emergency/EmergencyNumber.md) |
 
 A parcelable class that wraps and retrieves the information of number, service category(s) and country code for a specific emergency number.
 
@@ -67,7 +67,7 @@ A parcelable class that wraps and retrieves the information of number, service c
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [EmergencyNumber](https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#)!\> | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EmergencyNumber](../android/telephony/emergency/EmergencyNumber.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -516,7 +516,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -4,14 +4,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # VirtualDeviceListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener "View this page in Java") 
+Kotlin| [Java](../android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.md) 
 | --- | --- |
 
 ```
 interface VirtualDeviceListener
 ```
 
-| [android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener#) |
+| [android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener](../android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.md) |
 
 Listener for changes in the available virtual devices.
 
@@ -19,8 +19,8 @@ Listener for changes in the available virtual devices.
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVirtualDeviceClosed](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener#onVirtualDeviceClosed(kotlin.Int))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a virtual device has been removed from the system. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVirtualDeviceCreated](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener#onVirtualDeviceCreated(kotlin.Int))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a new virtual device has been added to the system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVirtualDeviceClosed](../android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.md))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a virtual device has been removed from the system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVirtualDeviceCreated](../android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.md))`(`deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a new virtual device has been added to the system. |
 
 ## Public methods
 
@@ -46,7 +46,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun onVirtualDeviceCreated(deviceId: Int): Unit
 ```
 
-Called whenever a new virtual device has been added to the system. Use [VirtualDeviceManager.getVirtualDevice(int)](https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#getVirtualDevice(kotlin.Int))to get more information about the device.
+Called whenever a new virtual device has been added to the system. Use [VirtualDeviceManager.getVirtualDevice(int)](../android/companion/virtual/VirtualDeviceManager.md))to get more information about the device.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------|

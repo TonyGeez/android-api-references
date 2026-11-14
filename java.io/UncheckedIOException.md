@@ -11,23 +11,23 @@ open class UncheckedIOException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.UncheckedIOException](https://developer.android.com/reference/kotlin/java/io/UncheckedIOException#) |
+| | | | ↳ | [java.io.UncheckedIOException](../java/io/UncheckedIOException.md) |
 
-Wraps an [IOException](https://developer.android.com/reference/kotlin/java/io/IOException) with an unchecked exception.
+Wraps an [IOException](../java/io/IOException.md) with an unchecked exception.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UncheckedIOException](https://developer.android.com/reference/kotlin/java/io/UncheckedIOException#UncheckedIOException(java.io.IOException))`(`cause:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException)!`)` Constructs an instance of this class. |
-| [UncheckedIOException](https://developer.android.com/reference/kotlin/java/io/UncheckedIOException#UncheckedIOException(kotlin.String,%20java.io.IOException))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException)!`)` Constructs an instance of this class. |
+| [UncheckedIOException](../java/io/UncheckedIOException.md))`(`cause:` ` [IOException](../java/io/IOException.md)!`)` Constructs an instance of this class. |
+| [UncheckedIOException](../java/io/UncheckedIOException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [IOException](../java/io/IOException.md)!`)` Constructs an instance of this class. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IOException](https://developer.android.com/reference/kotlin/java/io/IOException)? | [cause](https://developer.android.com/reference/kotlin/java/io/UncheckedIOException#cause:java.io.IOException) Returns the cause of this exception. |
+| open [IOException](../java/io/IOException.md)? | [cause](../java/io/UncheckedIOException.md) Returns the cause of this exception. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Constructs an instance of this class.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------|
-| `cause` | [IOException](https://developer.android.com/reference/kotlin/java/io/IOException)!:the`IOException` |
+| `cause` | [IOException](../java/io/IOException.md)!:the`IOException` |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -64,7 +64,7 @@ Constructs an instance of this class.
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message, can be null |
-| `cause` | [IOException](https://developer.android.com/reference/kotlin/java/io/IOException)!:the`IOException` |
+| `cause` | [IOException](../java/io/IOException.md)!:the`IOException` |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -84,4 +84,4 @@ Returns the cause of this exception.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [IOException](https://developer.android.com/reference/kotlin/java/io/IOException)? | the`IOException`which is the cause of this exception. |
+| [IOException](../java/io/IOException.md)? | the`IOException`which is the cause of this exception. |

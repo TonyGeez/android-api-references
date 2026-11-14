@@ -2,10 +2,10 @@
 
 # android.media.browse
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/browse/package-summary "View this page in Java")
+Kotlin| [Java](../android/media/browse/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [MediaBrowser](https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser) | Browses media content offered by a link MediaBrowserService. |
+| [MediaBrowser](../android/media/browse/MediaBrowser.md) | Browses media content offered by a link MediaBrowserService. |
 | --- | --- |

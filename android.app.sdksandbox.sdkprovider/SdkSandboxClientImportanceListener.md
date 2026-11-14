@@ -3,14 +3,14 @@ Also in [Ad Services Extensions 14](https://developer.android.com/sdkExtensions)
 
 # SdkSandboxClientImportanceListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener "View this page in Java")
+Kotlin | [Java](../android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener.md)
 | --- | --- |
 
 ```
 interface SdkSandboxClientImportanceListener
 ```
 
-| [android.app.sdksandbox.sdkprovider.SdkSandboxClientImportanceListener](https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener#) |
+| [android.app.sdksandbox.sdkprovider.SdkSandboxClientImportanceListener](../android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener.md) |
 
 Used to notify the SDK about changes in the client's `https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningAppProcessInfo.html#importance:kotlin.Int`.
 

@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # IkeSessionConnectionInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo "View this page in Java") 
+Kotlin | [Java](../android/net/ipsec/ike/IkeSessionConnectionInfo.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class IkeSessionConnectionInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#) |
+| ↳ | [android.net.ipsec.ike.IkeSessionConnectionInfo](../android/net/ipsec/ike/IkeSessionConnectionInfo.md) |
 
-IkeSessionConnectionInfo represents the connection information of an [IkeSession](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession).
+IkeSessionConnectionInfo represents the connection information of an [IkeSession](../android/net/ipsec/ike/IkeSession.md).
 
 Connection information includes IP addresses of both the IKE client and server and the network being used.
 
@@ -23,13 +23,13 @@ Connection information includes IP addresses of both the IKE client and server a
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#IkeSessionConnectionInfo(java.net.InetAddress,%20java.net.InetAddress,%20android.net.Network))`(`localAddress:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)`, `remoteAddress:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)`, `network:` ` [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)`)` Construct an instance of [IkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#). |
+| [IkeSessionConnectionInfo](../android/net/ipsec/ike/IkeSessionConnectionInfo.md))`(`localAddress:` ` [InetAddress](../java/net/InetAddress.md)`, `remoteAddress:` ` [InetAddress](../java/net/InetAddress.md)`, `network:` ` [Network](../android/net/Network.md)`)` Construct an instance of [IkeSessionConnectionInfo](../android/net/ipsec/ike/IkeSessionConnectionInfo.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | [getLocalAddress](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#getLocalAddress())`()` Returns the local IP address for the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used. |
-| [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) | [getNetwork](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#getNetwork())`()` Returns the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used. |
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | [getRemoteAddress](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#getRemoteAddress())`()` Returns the remote IP address for the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used. |
+| [InetAddress](../java/net/InetAddress.md) | [getLocalAddress](../android/net/ipsec/ike/IkeSessionConnectionInfo.md))`()` Returns the local IP address for the underlying [Network](../android/net/Network.md) being used. |
+| [Network](../android/net/Network.md) | [getNetwork](../android/net/ipsec/ike/IkeSessionConnectionInfo.md))`()` Returns the underlying [Network](../android/net/Network.md) being used. |
+| [InetAddress](../java/net/InetAddress.md) | [getRemoteAddress](../android/net/ipsec/ike/IkeSessionConnectionInfo.md))`()` Returns the remote IP address for the underlying [Network](../android/net/Network.md) being used. |
 | --- | --- |
 
 ## Public constructors
@@ -45,15 +45,15 @@ IkeSessionConnectionInfo(
     network: Network)
 ```
 
-Construct an instance of [IkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#).
+Construct an instance of [IkeSessionConnectionInfo](../android/net/ipsec/ike/IkeSessionConnectionInfo.md).
 
-Except for testing, IKE library users normally do not instantiate [IkeSessionConnectionInfo](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConnectionInfo#) themselves but instead get a reference via [IkeSessionConfiguration](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration) or [IkeSessionCallback](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback)
+Except for testing, IKE library users normally do not instantiate [IkeSessionConnectionInfo](../android/net/ipsec/ike/IkeSessionConnectionInfo.md) themselves but instead get a reference via [IkeSessionConfiguration](../android/net/ipsec/ike/IkeSessionConfiguration.md) or [IkeSessionCallback](../android/net/ipsec/ike/IkeSessionCallback.md)
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------|
-| `localAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#): This value cannot be `null`. |
-| `remoteAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#): This value cannot be `null`. |
-| `network` | [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#): This value cannot be `null`. |
+| `localAddress` | [InetAddress](../java/net/InetAddress.md): This value cannot be `null`. |
+| `remoteAddress` | [InetAddress](../java/net/InetAddress.md): This value cannot be `null`. |
+| `network` | [Network](../android/net/Network.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -66,11 +66,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getLocalAddress(): InetAddress
 ```
 
-Returns the local IP address for the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used.
+Returns the local IP address for the underlying [Network](../android/net/Network.md) being used.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | the local IP address. This value cannot be `null`. |
+| [InetAddress](../java/net/InetAddress.md) | the local IP address. This value cannot be `null`. |
 
 ### getNetwork
 
@@ -80,11 +80,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getNetwork(): Network
 ```
 
-Returns the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used.
+Returns the underlying [Network](../android/net/Network.md) being used.
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) | the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) that carries all IKE traffic. This value cannot be `null`. |
+| [Network](../android/net/Network.md) | the underlying [Network](../android/net/Network.md) that carries all IKE traffic. This value cannot be `null`. |
 
 ### getRemoteAddress
 
@@ -94,8 +94,8 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getRemoteAddress(): InetAddress
 ```
 
-Returns the remote IP address for the underlying [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#) being used.
+Returns the remote IP address for the underlying [Network](../android/net/Network.md) being used.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#) | the remote IP address. This value cannot be `null`. |
+| [InetAddress](../java/net/InetAddress.md) | the remote IP address. This value cannot be `null`. |

@@ -8,7 +8,7 @@ abstract class CertPathValidatorSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CertPathValidatorSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#) |
+| ↳ | [java.security.cert.CertPathValidatorSpi](../java/security/cert/CertPathValidatorSpi.md) |
 
 The *Service Provider Interface* (**SPI** ) for the `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator` class. All `CertPathValidator` implementations must include a class (the SPI class) that extends this class (`CertPathValidatorSpi`) and implements all of its methods. In general, instances of this class should only be accessed through the `CertPathValidator` class. For details, see the Java Cryptography Architecture.
 
@@ -26,8 +26,8 @@ However, implementations of `CertPathValidatorSpi` may still encounter concurren
 
 | Public methods ||
 |---|---|
-| open [CertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#engineGetRevocationChecker()()` Returns a `CertPathChecker` that this implementation uses to check the revocation status of certificates. |
-| abstract [CertPathValidatorResult](https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorResult)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#engineValidate(java.security.cert.CertPath,%20java.security.cert.CertPathParameters)(certPath: https://developer.android.com/reference/kotlin/java/security/cert/CertPath!, params: https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters!)` Validates the specified certification path using the specified algorithm parameter set. |
+| open [CertPathChecker](../java/security/cert/CertPathChecker.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#engineGetRevocationChecker()()` Returns a `CertPathChecker` that this implementation uses to check the revocation status of certificates. |
+| abstract [CertPathValidatorResult](../java/security/cert/CertPathValidatorResult.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#engineValidate(java.security.cert.CertPath,%20java.security.cert.CertPathParameters)(certPath: https://developer.android.com/reference/kotlin/java/security/cert/CertPath!, params: https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters!)` Validates the specified certification path using the specified algorithm parameter set. |
 
 ## Public constructors
 
@@ -82,8 +82,8 @@ The `CertPath` specified must be of a type that is supported by the validation a
 
 | Parameters ||
 |---|---|
-| `certPath` | [CertPath](https://developer.android.com/reference/kotlin/java/security/cert/CertPath)!: the `CertPath` to be validated |
-| `params` | [CertPathParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters)!: the algorithm parameters |
+| `certPath` | [CertPath](../java/security/cert/CertPath.md)!: the `CertPath` to be validated |
+| `params` | [CertPathParameters](../java/security/cert/CertPathParameters.md)!: the algorithm parameters |
 
 | Return ||
 |---|---|

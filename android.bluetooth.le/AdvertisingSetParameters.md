@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # AdvertisingSetParameters
 
-Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters "View this page in Java")
+Kotlin | [Java](../android/bluetooth/le/AdvertisingSetParameters.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AdvertisingSetParameters : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.AdvertisingSetParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#) |
+| ↳ | [android.bluetooth.le.AdvertisingSetParameters](../android/bluetooth/le/AdvertisingSetParameters.md) |
 
 The `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#` provide a way to adjust advertising preferences for each Bluetooth LE advertising set. Use `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters.Builder` to create an instance of this class.
 
@@ -64,7 +64,7 @@ The `https://developer.android.com/reference/kotlin/android/bluetooth/le/Adverti
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AdvertisingSetParameters](https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AdvertisingSetParameters](../android/bluetooth/le/AdvertisingSetParameters.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/AdvertisingSetParameters#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -345,7 +345,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

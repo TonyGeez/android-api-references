@@ -8,8 +8,8 @@ open class WeakHashMap<K : Any!, V : Any!> : AbstractMap<K, V>, MutableMa
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap)\<K, V\> ||
-| | ↳ | [java.util.WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap#) |
+| ↳ | [java.util.AbstractMap](../java/util/AbstractMap.md)\<K, V\> ||
+| | ↳ | [java.util.WeakHashMap](../java/util/WeakHashMap.md) |
 
 Hash table based implementation of the `Map` interface, with *weak keys* . An entry in a `WeakHashMap` will automatically be removed when its key is no longer in ordinary use. More precisely, the presence of a mapping for a given key will not prevent the key from being discarded by the garbage collector, that is, made finalizable, finalized, and then reclaimed. When a key has been discarded its entry is effectively removed from the map, so this class behaves somewhat differently from other `Map` implementations.
 
@@ -50,7 +50,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open V? | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#get(java.util.WeakHashMap.K)(key: K?)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#isEmpty()()` Returns `true` if this map contains no key-value mappings. |
 | --- | --- |
-| open static [WeakHashMap](https://developer.android.com/reference/kotlin/java/util/WeakHashMap#)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#newWeakHashMap(kotlin.Int)(numMappings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new, empty WeakHashMap suitable for the expected number of mappings. |
+| open static [WeakHashMap](../java/util/WeakHashMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#newWeakHashMap(kotlin.Int)(numMappings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new, empty WeakHashMap suitable for the expected number of mappings. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#put(java.util.WeakHashMap.K,%20java.util.WeakHashMap.V)(key: K, value: V)` Associates the specified value with the specified key in this map. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/WeakHashMap#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<out K, V>)` Copies all of the mappings from the specified map to this map. |
 | --- | --- |
@@ -212,7 +212,7 @@ Performs the given action for each entry in this map until all entries have been
 
 | Parameters ||
 |---|---|
-| `action` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer)\<in K, in V\>: The action to be performed for each entry |
+| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<in K, in V\>: The action to be performed for each entry |
 
 | Exceptions ||
 |---|---|
@@ -382,7 +382,7 @@ Replaces each entry's value with the result of invoking the given function on th
 
 | Parameters ||
 |---|---|
-| `function` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction)\<in K, in V, out V\>: the function to apply to each entry |
+| `function` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V\>: the function to apply to each entry |
 
 | Exceptions ||
 |---|---|

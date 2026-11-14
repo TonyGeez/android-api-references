@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # CameraProfile
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/CameraProfile "View this page in Java") 
+Kotlin| [Java](../android/media/CameraProfile.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class CameraProfile
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.CameraProfile](https://developer.android.com/reference/kotlin/android/media/CameraProfile#) |
+| ↳ | [android.media.CameraProfile](../android/media/CameraProfile.md) |
 
 The CameraProfile class is used to retrieve the pre-defined still image capture (jpeg) quality levels (0-100) used for low, medium, and high quality settings in the Camera application.
 
@@ -21,19 +21,19 @@ The CameraProfile class is used to retrieve the pre-defined still image capture 
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH](https://developer.android.com/reference/kotlin/android/media/CameraProfile#QUALITY_HIGH:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_LOW](https://developer.android.com/reference/kotlin/android/media/CameraProfile#QUALITY_LOW:kotlin.Int) Define three quality levels for JPEG image encoding. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_MEDIUM](https://developer.android.com/reference/kotlin/android/media/CameraProfile#QUALITY_MEDIUM:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_HIGH](../android/media/CameraProfile.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_LOW](../android/media/CameraProfile.md) Define three quality levels for JPEG image encoding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALITY_MEDIUM](../android/media/CameraProfile.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------|---|
-| [CameraProfile](https://developer.android.com/reference/kotlin/android/media/CameraProfile#CameraProfile())`()` <br /> |
+| [CameraProfile](../android/media/CameraProfile.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJpegEncodingQualityParameter](https://developer.android.com/reference/kotlin/android/media/CameraProfile#getJpegEncodingQualityParameter(kotlin.Int))`(`quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a pre-defined still image capture (jpeg) quality level used for the given quality level in the Camera application for the first back-facing camera on the device. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJpegEncodingQualityParameter](https://developer.android.com/reference/kotlin/android/media/CameraProfile#getJpegEncodingQualityParameter(kotlin.Int,%20kotlin.Int))`(`cameraId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a pre-defined still image capture (jpeg) quality level used for the given quality level in the Camera application for the specified camera. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJpegEncodingQualityParameter](../android/media/CameraProfile.md))`(`quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a pre-defined still image capture (jpeg) quality level used for the given quality level in the Camera application for the first back-facing camera on the device. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJpegEncodingQualityParameter](../android/media/CameraProfile.md))`(`cameraId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a pre-defined still image capture (jpeg) quality level used for the given quality level in the Camera application for the specified camera. |
 
 ## Constants
 

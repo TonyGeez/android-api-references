@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothGattCharacteristic
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic "View this page in Java") 
+Kotlin| [Java](../android/bluetooth/BluetoothGattCharacteristic.md) 
 | --- | --- |
 
 ```
@@ -13,94 +13,94 @@ open class BluetoothGattCharacteristic : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#) |
+| ↳ | [android.bluetooth.BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md) |
 
 Represents a Bluetooth GATT Characteristic
 
-A GATT characteristic is a basic data element used to construct a GATT service, [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService). The characteristic contains a value as well as additional information and optional GATT descriptors, [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor).
+A GATT characteristic is a basic data element used to construct a GATT service, [BluetoothGattService](../android/bluetooth/BluetoothGattService.md). The characteristic contains a value as well as additional information and optional GATT descriptors, [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_FLOAT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_FLOAT:kotlin.Int) Characteristic value format type float (32-bit float) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SFLOAT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_SFLOAT:kotlin.Int) Characteristic value format type sfloat (16-bit float) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SINT16](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_SINT16:kotlin.Int) Characteristic value format type sint16 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_FLOAT](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type float (32-bit float) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SFLOAT](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type sfloat (16-bit float) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SINT16](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type sint16 |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SINT32](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_SINT32:kotlin.Int) Characteristic value format type sint32 |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SINT8](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_SINT8:kotlin.Int) Characteristic value format type sint8 |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UINT16](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_UINT16:kotlin.Int) Characteristic value format type uint16 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SINT32](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type sint32 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SINT8](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type sint8 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UINT16](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type uint16 |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UINT32](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_UINT32:kotlin.Int) Characteristic value format type uint32 |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UINT8](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_UINT8:kotlin.Int) Characteristic value format type uint8 |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_READ:kotlin.Int) Characteristic read permission |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UINT32](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type uint32 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UINT8](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic value format type uint8 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic read permission |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ_ENCRYPTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_READ_ENCRYPTED:kotlin.Int) Characteristic permission: Allow encrypted read operations |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ_ENCRYPTED_MITM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_READ_ENCRYPTED_MITM:kotlin.Int) Characteristic permission: Allow reading with person-in-the-middle protection |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_WRITE:kotlin.Int) Characteristic write permission |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ_ENCRYPTED](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic permission: Allow encrypted read operations |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_READ_ENCRYPTED_MITM](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic permission: Allow reading with person-in-the-middle protection |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic write permission |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_ENCRYPTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_WRITE_ENCRYPTED:kotlin.Int) Characteristic permission: Allow encrypted writes |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_ENCRYPTED_MITM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_WRITE_ENCRYPTED_MITM:kotlin.Int) Characteristic permission: Allow encrypted writes with person-in-the-middle protection |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_SIGNED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_WRITE_SIGNED:kotlin.Int) Characteristic permission: Allow signed write operations |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_ENCRYPTED](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic permission: Allow encrypted writes |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_ENCRYPTED_MITM](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic permission: Allow encrypted writes with person-in-the-middle protection |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_SIGNED](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic permission: Allow signed write operations |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_SIGNED_MITM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PERMISSION_WRITE_SIGNED_MITM:kotlin.Int) Characteristic permission: Allow signed write operations with person-in-the-middle protection |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_BROADCAST](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_BROADCAST:kotlin.Int) Characteristic property: Characteristic is broadcastable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_EXTENDED_PROPS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_EXTENDED_PROPS:kotlin.Int) Characteristic property: Characteristic has extended properties |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERMISSION_WRITE_SIGNED_MITM](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic permission: Allow signed write operations with person-in-the-middle protection |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_BROADCAST](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic is broadcastable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_EXTENDED_PROPS](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic has extended properties |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_INDICATE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_INDICATE:kotlin.Int) Characteristic property: Characteristic supports indication |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_NOTIFY](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_NOTIFY:kotlin.Int) Characteristic property: Characteristic supports notification |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_READ](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_READ:kotlin.Int) Characteristic property: Characteristic is readable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_INDICATE](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic supports indication |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_NOTIFY](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic supports notification |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_READ](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic is readable. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_SIGNED_WRITE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_SIGNED_WRITE:kotlin.Int) Characteristic property: Characteristic supports write with signature |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_WRITE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_WRITE:kotlin.Int) Characteristic property: Characteristic can be written. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_WRITE_NO_RESPONSE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#PROPERTY_WRITE_NO_RESPONSE:kotlin.Int) Characteristic property: Characteristic can be written without response. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_SIGNED_WRITE](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic supports write with signature |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_WRITE](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic can be written. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROPERTY_WRITE_NO_RESPONSE](../android/bluetooth/BluetoothGattCharacteristic.md) Characteristic property: Characteristic can be written without response. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_TYPE_DEFAULT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT:kotlin.Int) Write characteristic, requesting acknowledgement by the remote device |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_TYPE_NO_RESPONSE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE:kotlin.Int) Write characteristic without requiring a response by the remote device |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_TYPE_SIGNED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_SIGNED:kotlin.Int) Write characteristic including authentication signature |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_TYPE_DEFAULT](../android/bluetooth/BluetoothGattCharacteristic.md) Write characteristic, requesting acknowledgement by the remote device |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_TYPE_NO_RESPONSE](../android/bluetooth/BluetoothGattCharacteristic.md) Write characteristic without requiring a response by the remote device |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_TYPE_SIGNED](../android/bluetooth/BluetoothGattCharacteristic.md) Write characteristic including authentication signature |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#BluetoothGattCharacteristic(java.util.UUID,%20kotlin.Int,%20kotlin.Int))`(`uuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)!`, `properties:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `permissions:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new BluetoothGattCharacteristic. |
+| [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md))`(`uuid:` ` [UUID](../java/util/UUID.md)!`, `properties:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `permissions:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new BluetoothGattCharacteristic. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#addDescriptor(android.bluetooth.BluetoothGattDescriptor))`(`descriptor:` ` [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!`)` Adds a descriptor to this characteristic. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#describeContents())`()` <br /> |
-| open [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)! | [getDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getDescriptor(java.util.UUID))`(`uuid:` ` [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)!`)` Returns a descriptor with a given UUID out of the list of descriptors for this characteristic. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addDescriptor](../android/bluetooth/BluetoothGattCharacteristic.md))`(`descriptor:` ` [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!`)` Adds a descriptor to this characteristic. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/bluetooth/BluetoothGattCharacteristic.md))`()` <br /> |
+| open [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)! | [getDescriptor](../android/bluetooth/BluetoothGattCharacteristic.md))`(`uuid:` ` [UUID](../java/util/UUID.md)!`)` Returns a descriptor with a given UUID out of the list of descriptors for this characteristic. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!\>! | [getDescriptors](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getDescriptors())`()` Returns a list of descriptors for this characteristic. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [getFloatValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getFloatValue(kotlin.Int,%20kotlin.Int))`(`formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the stored value of this characteristic. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInstanceId](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getInstanceId())`()` Returns the instance ID for this characteristic. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!\>! | [getDescriptors](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Returns a list of descriptors for this characteristic. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)! | [getFloatValue](../android/bluetooth/BluetoothGattCharacteristic.md))`(`formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the stored value of this characteristic. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInstanceId](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Returns the instance ID for this characteristic. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [getIntValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getIntValue(kotlin.Int,%20kotlin.Int))`(`formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the stored value of this characteristic. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPermissions](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getPermissions())`()` Returns the permissions for this characteristic. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProperties](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getProperties())`()` Returns the properties of this characteristic. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [getIntValue](../android/bluetooth/BluetoothGattCharacteristic.md))`(`formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the stored value of this characteristic. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPermissions](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Returns the permissions for this characteristic. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProperties](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Returns the properties of this characteristic. |
 | --- | --- |
-| open [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService)! | [getService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getService())`()` Returns the service this characteristic belongs to. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStringValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getStringValue(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the stored value of this characteristic. |
-| open [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [getUuid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getUuid())`()` Returns the UUID of this characteristic |
+| open [BluetoothGattService](../android/bluetooth/BluetoothGattService.md)! | [getService](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Returns the service this characteristic belongs to. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStringValue](../android/bluetooth/BluetoothGattCharacteristic.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the stored value of this characteristic. |
+| open [UUID](../java/util/UUID.md)! | [getUuid](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Returns the UUID of this characteristic |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getValue())`()` Get the stored value for this characteristic. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWriteType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getWriteType())`()` Gets the write type for this characteristic. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#setValue(kotlin.ByteArray))`(`value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the locally stored value of this characteristic. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getValue](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Get the stored value for this characteristic. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWriteType](../android/bluetooth/BluetoothGattCharacteristic.md))`()` Gets the write type for this characteristic. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](../android/bluetooth/BluetoothGattCharacteristic.md))`(`value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the locally stored value of this characteristic. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#setValue(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the locally stored value of this characteristic. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#setValue(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`mantissa:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exponent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the locally stored value of this characteristic. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#setValue(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the locally stored value of this characteristic. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](../android/bluetooth/BluetoothGattCharacteristic.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the locally stored value of this characteristic. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](../android/bluetooth/BluetoothGattCharacteristic.md))`(`mantissa:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exponent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `formatType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the locally stored value of this characteristic. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setValue](../android/bluetooth/BluetoothGattCharacteristic.md))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the locally stored value of this characteristic. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWriteType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#setWriteType(kotlin.Int))`(`writeType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the write type for this characteristic |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWriteType](../android/bluetooth/BluetoothGattCharacteristic.md))`(`writeType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the write type for this characteristic |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/bluetooth/BluetoothGattCharacteristic.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BluetoothGattCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#CREATOR:android.os.Parcelable.Creator) <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!\>! | [mDescriptors](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#mDescriptors:kotlin.collections.MutableList) List of descriptors included in this characteristic. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothGattCharacteristic](../android/bluetooth/BluetoothGattCharacteristic.md)!\> | [CREATOR](../android/bluetooth/BluetoothGattCharacteristic.md) <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!\>! | [mDescriptors](../android/bluetooth/BluetoothGattCharacteristic.md) List of descriptors included in this characteristic. |
 
 ## Constants
 
@@ -445,7 +445,7 @@ Create a new BluetoothGattCharacteristic.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------|
-| `uuid` | [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)!:The UUID for this characteristic |
+| `uuid` | [UUID](../java/util/UUID.md)!:The UUID for this characteristic |
 | `properties` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Properties of this characteristic |
 | `permissions` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Permissions for this characteristic |
 | --- | --- |
@@ -464,7 +464,7 @@ Adds a descriptor to this characteristic.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `descriptor` | [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!:Descriptor to be added to this characteristic. |
+| `descriptor` | [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!:Descriptor to be added to this characteristic. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -480,7 +480,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getDescriptor
 
@@ -494,7 +494,7 @@ Returns a descriptor with a given UUID out of the list of descriptors for this c
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)! | GATT descriptor object or null if no descriptor with the given UUID was found. |
+| [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)! | GATT descriptor object or null if no descriptor with the given UUID was found. |
 
 ### getDescriptors
 
@@ -508,7 +508,7 @@ Returns a list of descriptors for this characteristic.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothGattDescriptor](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor)!>! | Descriptors for this characteristic |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothGattDescriptor](../android/bluetooth/BluetoothGattDescriptor.md)!>! | Descriptors for this characteristic |
 
 ### getFloatValue
 
@@ -522,11 +522,11 @@ open fun getFloatValue(
 ): Float!
 ```
 
-**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic))to get the characteristic value*
+**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](../android/bluetooth/BluetoothGatt.md))to get the characteristic value*
 
 Return the stored value of this characteristic.
 
-See [getValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getValue())for details.
+See [getValue](../android/bluetooth/BluetoothGattCharacteristic.md))for details.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -565,11 +565,11 @@ open fun getIntValue(
 ): Int!
 ```
 
-**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic))to get the characteristic value*
+**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](../android/bluetooth/BluetoothGatt.md))to get the characteristic value*
 
 Return the stored value of this characteristic.
 
-The formatType parameter determines how the characteristic value is to be interpreted. For example, setting formatType to [FORMAT_UINT16](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#FORMAT_UINT16:kotlin.Int) specifies that the first two bytes of the characteristic value at the given offset are interpreted to generate the return value.
+The formatType parameter determines how the characteristic value is to be interpreted. For example, setting formatType to [FORMAT_UINT16](../android/bluetooth/BluetoothGattCharacteristic.md) specifies that the first two bytes of the characteristic value at the given offset are interpreted to generate the return value.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -622,7 +622,7 @@ Returns the service this characteristic belongs to.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|------------------------|
-| [BluetoothGattService](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService)! | The associated service |
+| [BluetoothGattService](../android/bluetooth/BluetoothGattService.md)! | The associated service |
 
 ### getStringValue
 
@@ -633,11 +633,11 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open fun getStringValue(offset: Int): String!
 ```
 
-**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic))to get the characteristic value*
+**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](../android/bluetooth/BluetoothGatt.md))to get the characteristic value*
 
 Return the stored value of this characteristic.
 
-See [getValue](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#getValue())for details.
+See [getValue](../android/bluetooth/BluetoothGattCharacteristic.md))for details.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------|
@@ -659,7 +659,7 @@ Returns the UUID of this characteristic
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------|
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | UUID of this characteristic |
+| [UUID](../java/util/UUID.md)! | UUID of this characteristic |
 
 ### getValue
 
@@ -670,11 +670,11 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open fun getValue(): ByteArray!
 ```
 
-**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic))instead*
+**Deprecated:** *Use [BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic)](../android/bluetooth/BluetoothGatt.md))instead*
 
 Get the stored value for this characteristic.
 
-This function returns the stored value for this characteristic as retrieved by calling [BluetoothGatt.readCharacteristic](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)). The cached value of the characteristic is updated as a result of a read characteristic operation or if a characteristic update notification has been received.
+This function returns the stored value for this characteristic as retrieved by calling [BluetoothGatt.readCharacteristic](../android/bluetooth/BluetoothGatt.md)). The cached value of the characteristic is updated as a result of a read characteristic operation or if a characteristic update notification has been received.
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------|
@@ -692,7 +692,7 @@ Gets the write type for this characteristic.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Write type for this characteristic Value is [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT:kotlin.Int), [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE:kotlin.Int), or [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_SIGNED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_SIGNED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Write type for this characteristic Value is [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT](../android/bluetooth/BluetoothGattCharacteristic.md), [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE](../android/bluetooth/BluetoothGattCharacteristic.md), or [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_SIGNED](../android/bluetooth/BluetoothGattCharacteristic.md) |
 
 ### setValue
 
@@ -816,7 +816,7 @@ Setting the write type of a characteristic determines how the[android.bluetooth.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `writeType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The write type to for this characteristic. Value is [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT:kotlin.Int), [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE:kotlin.Int), or [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_SIGNED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic#WRITE_TYPE_SIGNED:kotlin.Int) |
+| `writeType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The write type to for this characteristic. Value is [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_DEFAULT](../android/bluetooth/BluetoothGattCharacteristic.md), [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_NO_RESPONSE](../android/bluetooth/BluetoothGattCharacteristic.md), or [android.bluetooth.BluetoothGattCharacteristic#WRITE_TYPE_SIGNED](../android/bluetooth/BluetoothGattCharacteristic.md) |
 
 ### writeToParcel
 
@@ -832,7 +832,7 @@ open fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

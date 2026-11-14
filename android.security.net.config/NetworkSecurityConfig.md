@@ -9,7 +9,7 @@ class NetworkSecurityConfig
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.net.config.NetworkSecurityConfig](https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#) |
+| ↳ | [android.security.net.config.NetworkSecurityConfig](../android/security/net/config/NetworkSecurityConfig.md) |
 
 The security configuration to use when performing network communications.
 
@@ -23,8 +23,8 @@ A `https://developer.android.com/reference/kotlin/android/security/net/config/Ne
 
 | Public methods ||
 |---|---|
-| static [NetworkSecurityConfig](https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#)? | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createBaseConfig(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns a base `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` using the provided app's defaults. |
-| static [NetworkSecurityConfig](https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createLocalhostConfig()()` Returns a `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` for localhost. |
+| static [NetworkSecurityConfig](../android/security/net/config/NetworkSecurityConfig.md)? | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createBaseConfig(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns a base `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` using the provided app's defaults. |
+| static [NetworkSecurityConfig](../android/security/net/config/NetworkSecurityConfig.md) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createLocalhostConfig()()` Returns a `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` for localhost. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#getDomainEncryptionMode()()` <br /> |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#isCertificateTransparencyVerificationRequired()()` <br /> |
@@ -54,7 +54,7 @@ An app default configuration has the following properties:
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): of the application. Must not be `null`. |
+| `context` | [Context](../android/content/Context.md): of the application. Must not be `null`. |
 
 | Return ||
 |---|---|

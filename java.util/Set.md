@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Set<E : Any!> : MutableCollection<E>
 ```
 
-| [java.util.Set](https://developer.android.com/reference/kotlin/java/util/Set#) |
+| [java.util.Set](../java/util/Set.md) |
 
 A collection that contains no duplicate elements. More formally, sets contain no pair of elements`e1`and`e2`such that`e1.equals(e2)`, and at most one null element. As implied by its name, this interface models the mathematical*set*abstraction.
 
@@ -22,14 +22,14 @@ Some set implementations have restrictions on the elements that they may contain
 
 ## Unmodifiable Sets
 
-The [Set.of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E))and [Set.copyOf](https://developer.android.com/reference/kotlin/java/util/Set#copyOf(kotlin.collections.MutableCollection))static factory methods provide a convenient way to create unmodifiable sets. The`Set`instances created by these methods have the following characteristics:
+The [Set.of](../java/util/Set.md))and [Set.copyOf](../java/util/Set.md))static factory methods provide a convenient way to create unmodifiable sets. The`Set`instances created by these methods have the following characteristics:
 
-- They are [*unmodifiable*](https://developer.android.com/reference/kotlin/java/util/Collection#unmodifiable). Elements cannot be added or removed. Calling any mutator method on the Set will always cause`UnsupportedOperationException`to be thrown. However, if the contained elements are themselves mutable, this may cause the Set to behave inconsistently or its contents to appear to change.
+- They are [*unmodifiable*](../java/util/Collection.md). Elements cannot be added or removed. Calling any mutator method on the Set will always cause`UnsupportedOperationException`to be thrown. However, if the contained elements are themselves mutable, this may cause the Set to behave inconsistently or its contents to appear to change.
 - They disallow`null`elements. Attempts to create them with`null`elements result in`NullPointerException`.
 - They are serializable if all elements are serializable.
 - They reject duplicate elements at creation time. Duplicate elements passed to a static factory method result in`IllegalArgumentException`.
 - The iteration order of set elements is unspecified and is subject to change.
-- They are [value-based](https://developer.android.com/reference/kotlin/java/lang/doc-files/ValueBased.html). Programmers should treat instances that are #equals(java.lang.Object) as interchangeable and should not use them for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. Callers should make no assumptions about the identity of the returned instances. Factories are free to create new instances or reuse existing ones.
+- They are [value-based](../java/lang/doc-files/ValueBased.md). Programmers should treat instances that are #equals(java.lang.Object) as interchangeable and should not use them for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. Callers should make no assumptions about the identity of the returned instances. Factories are free to create new instances or reuse existing ones.
 - They are serialized as specified on the [Serialized Form](https://developer.android.com//serialized-form.html#java.util.CollSer) page.
 
 This interface is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
@@ -38,44 +38,44 @@ This interface is a member of the [Java Collections Framework](https://developer
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](https://developer.android.com/reference/kotlin/java/util/Set#add(java.util.Set.E))`(`element:` `E`)` Adds the specified element to this set if it is not already present (optional operation). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](https://developer.android.com/reference/kotlin/java/util/Set#addAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection to this set if they're not already present (optional operation). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/Set#clear())`()` Removes all of the elements from this set (optional operation). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../java/util/Set.md))`(`element:` `E`)` Adds the specified element to this set if it is not already present (optional operation). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/Set.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection to this set if they're not already present (optional operation). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/Set.md))`()` Removes all of the elements from this set (optional operation). |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/Set#contains(java.util.Set.E))`(`element:` `E?`)` Returns`true`if this set contains the specified element. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](https://developer.android.com/reference/kotlin/java/util/Set#containsAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Returns`true`if this set contains all of the elements of the specified collection. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [copyOf](https://developer.android.com/reference/kotlin/java/util/Set#copyOf(kotlin.collections.MutableCollection))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>`)` Returns an [unmodifiable Set](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) containing the elements of the given Collection. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/Set.md))`(`element:` `E?`)` Returns`true`if this set contains the specified element. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](../java/util/Set.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Returns`true`if this set contains all of the elements of the specified collection. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [copyOf](../java/util/Set.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>`)` Returns an [unmodifiable Set](../java/util/Set.md) containing the elements of the given Collection. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/Set#isEmpty())`()` Returns`true`if this set contains no elements. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](https://developer.android.com/reference/kotlin/java/util/Set#iterator())`()` Returns an iterator over the elements in this set. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of())`()` Returns an unmodifiable set containing zero elements. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/Set.md))`()` Returns`true`if this set contains no elements. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](../java/util/Set.md))`()` Returns an iterator over the elements in this set. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`()` Returns an unmodifiable set containing zero elements. |
 | --- | --- |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E))`(`e1:` `E`)` Returns an unmodifiable set containing one element. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`)` Returns an unmodifiable set containing two elements. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`)` Returns an unmodifiable set containing three elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`)` Returns an unmodifiable set containing one element. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`)` Returns an unmodifiable set containing two elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`)` Returns an unmodifiable set containing three elements. |
 | --- | --- |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`)` Returns an unmodifiable set containing four elements. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`)` Returns an unmodifiable set containing five elements. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`)` Returns an unmodifiable set containing six elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`)` Returns an unmodifiable set containing four elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`)` Returns an unmodifiable set containing five elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`)` Returns an unmodifiable set containing six elements. |
 | --- | --- |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`)` Returns an unmodifiable set containing seven elements. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`, `e8:` `E`)` Returns an unmodifiable set containing eight elements. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`, `e8:` `E`, `e9:` `E`)` Returns an unmodifiable set containing nine elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`)` Returns an unmodifiable set containing seven elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`, `e8:` `E`)` Returns an unmodifiable set containing eight elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`, `e8:` `E`, `e9:` `E`)` Returns an unmodifiable set containing nine elements. |
 | --- | --- |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E,%20java.util.Set.of.E))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`, `e8:` `E`, `e9:` `E`, `e10:` `E`)` Returns an unmodifiable set containing ten elements. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](https://developer.android.com/reference/kotlin/java/util/Set#of(java.util.Set.of.E))`(`vararg` `elements:` `E`)` Returns an unmodifiable set containing an arbitrary number of elements. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/Set#remove(java.util.Set.E))`(`element:` `E?`)` Removes the specified element from this set if it is present (optional operation). |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`e1:` `E`, `e2:` `E`, `e3:` `E`, `e4:` `E`, `e5:` `E`, `e6:` `E`, `e7:` `E`, `e8:` `E`, `e9:` `E`, `e10:` `E`)` Returns an unmodifiable set containing ten elements. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [of](../java/util/Set.md))`(`vararg` `elements:` `E`)` Returns an unmodifiable set containing an arbitrary number of elements. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/Set.md))`(`element:` `E?`)` Removes the specified element from this set if it is present (optional operation). |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](https://developer.android.com/reference/kotlin/java/util/Set#removeAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Removes from this set all of its elements that are contained in the specified collection (optional operation). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](https://developer.android.com/reference/kotlin/java/util/Set#retainAll(kotlin.collections.Collection))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Retains only the elements in this set that are contained in the specified collection (optional operation). |
-| open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/Set#spliterator())`()` Creates a`Spliterator`over the elements in this set. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../java/util/Set.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Removes from this set all of its elements that are contained in the specified collection (optional operation). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](../java/util/Set.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Retains only the elements in this set that are contained in the specified collection (optional operation). |
+| open [Spliterator](../java/util/Spliterator.md)\<E\> | [spliterator](../java/util/Set.md))`()` Creates a`Spliterator`over the elements in this set. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](https://developer.android.com/reference/kotlin/java/util/Set#toArray())`()` Returns an array containing all of the elements in this set. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](https://developer.android.com/reference/kotlin/java/util/Set#toArray(kotlin.Array))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this set; the runtime type of the returned array is that of the specified array. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](../java/util/Set.md))`()` Returns an array containing all of the elements in this set. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](../java/util/Set.md))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this set; the runtime type of the returned array is that of the specified array. |
 
 | Properties ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/Set#size:kotlin.Int) Returns the number of elements in this set (its cardinality). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/Set.md) Returns the number of elements in this set (its cardinality). |
 
 ## Public methods
 
@@ -89,7 +89,7 @@ abstract fun add(element: E): Boolean
 
 Adds the specified element to this set if it is not already present (optional operation). More formally, adds the specified element`e`to this set if the set contains no element`e2`such that`Objects.equals(e, e2)`. If this set already contains the element, the call leaves the set unchanged and returns`false`. In combination with the restriction on constructors, this ensures that sets never contain duplicate elements.
 
-The stipulation above does not imply that sets must accept all elements; sets may refuse to add any particular element, including`null`, and throw an exception, as described in the specification for [Collection.add](https://developer.android.com/reference/kotlin/java/util/Collection#add(java.util.Collection.E)). Individual set implementations should clearly document any restrictions on the elements that they may contain.
+The stipulation above does not imply that sets must accept all elements; sets may refuse to add any particular element, including`null`, and throw an exception, as described in the specification for [Collection.add](../java/util/Collection.md)). Individual set implementations should clearly document any restrictions on the elements that they may contain.
 
 | Parameters ||
 |-----|---------------------------------|
@@ -137,7 +137,7 @@ Adds all of the elements in the specified collection to this set if they're not 
 
 **See Also**
 
-- [#add(Object)](https://developer.android.com/reference/kotlin/java/util/Set#add(java.util.Set.E)) 
+- [#add(Object)](../java/util/Set.md)) 
 
 ### clear
 
@@ -173,8 +173,8 @@ Returns`true`if this set contains the specified element. More formally, returns`
 
 | Exceptions ||
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](../java/util/Collection.md)) |
 
 ### containsAll
 
@@ -196,12 +196,12 @@ Returns`true`if this set contains all of the elements of the specified collectio
 
 | Exceptions ||
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the types of one or more elements in the specified collection are incompatible with this set ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this set does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the types of one or more elements in the specified collection are incompatible with this set ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this set does not permit null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
 
 **See Also**
 
-- [#contains(Object)](https://developer.android.com/reference/kotlin/java/util/Set#contains(java.util.Set.E)) 
+- [#contains(Object)](../java/util/Set.md)) 
 
 ### copyOf
 
@@ -211,7 +211,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun <E : Any!> copyOf(coll: MutableCollection<out E>): MutableSet<E>
 ```
 
-Returns an [unmodifiable Set](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) containing the elements of the given Collection. The given Collection must not be null, and it must not contain any null elements. If the given Collection contains duplicate elements, an arbitrary element of the duplicates is preserved. If the given Collection is subsequently modified, the returned Set will not reflect such modifications.
+Returns an [unmodifiable Set](../java/util/Set.md) containing the elements of the given Collection. The given Collection must not be null, and it must not contain any null elements. If the given Collection contains duplicate elements, an arbitrary element of the duplicates is preserved. If the given Collection is subsequently modified, the returned Set will not reflect such modifications.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -262,7 +262,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open static fun <E : Any!> of(): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing zero elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing zero elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -280,7 +280,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open static fun <E : Any!> of(e1: E): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing one element. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing one element. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -306,7 +306,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing two elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing two elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -336,7 +336,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing three elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing three elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -368,7 +368,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing four elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing four elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -402,7 +402,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing five elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing five elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -439,7 +439,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing six elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing six elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -478,7 +478,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing seven elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing seven elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -519,7 +519,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing eight elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing eight elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -563,7 +563,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing nine elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing nine elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -609,7 +609,7 @@ open static fun <E : Any!> of(
 ): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing ten elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing ten elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |-------|-------------------------|
@@ -645,7 +645,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 @SafeVarargs open static fun <E : Any!> of(vararg elements: E): MutableSet<E>
 ```
 
-Returns an unmodifiable set containing an arbitrary number of elements. See [Unmodifiable Sets](https://developer.android.com/reference/kotlin/java/util/Set#unmodifiable) for details.
+Returns an unmodifiable set containing an arbitrary number of elements. See [Unmodifiable Sets](../java/util/Set.md) for details.
 
 | Parameters ||
 |------------|-------------------------------------------|
@@ -681,8 +681,8 @@ Removes the specified element from this set if it is present (optional operation
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this set ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this set does not permit null elements ([optional](../java/util/Collection.md)) |
 | `java.lang.UnsupportedOperationException` | if the`remove`operation is not supported by this set |
 | --- | --- |
 
@@ -707,14 +707,14 @@ Removes from this set all of its elements that are contained in the specified co
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if the`removeAll`operation is not supported by this set |
-| `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
 | --- | --- |
 
 **See Also**
 
-- [#remove(Object)](https://developer.android.com/reference/kotlin/java/util/Set#remove(java.util.Set.E))
-- [#contains(Object)](https://developer.android.com/reference/kotlin/java/util/Set#contains(java.util.Set.E)) 
+- [#remove(Object)](../java/util/Set.md))
+- [#contains(Object)](../java/util/Set.md)) 
 
 ### retainAll
 
@@ -737,13 +737,13 @@ Retains only the elements in this set that are contained in the specified collec
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.UnsupportedOperationException` | if the`retainAll`operation is not supported by this set |
-| `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)) |
-| `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](https://developer.android.com/reference/kotlin/java/util/Collection#optional-restrictions)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the class of an element of this set is incompatible with the specified collection ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if this set contains a null element and the specified collection does not permit null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
 | --- | --- |
 
 **See Also**
 
-- [#remove(Object)](https://developer.android.com/reference/kotlin/java/util/Set#remove(java.util.Set.E)) 
+- [#remove(Object)](../java/util/Set.md)) 
 
 ### spliterator
 
@@ -755,11 +755,11 @@ open fun spliterator(): Spliterator<E>
 
 Creates a`Spliterator`over the elements in this set.
 
-The`Spliterator`reports [Spliterator.DISTINCT](https://developer.android.com/reference/kotlin/java/util/Spliterator#DISTINCT:kotlin.Int). Implementations should document the reporting of additional characteristic values.
+The`Spliterator`reports [Spliterator.DISTINCT](../java/util/Spliterator.md). Implementations should document the reporting of additional characteristic values.
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<E> | a`Spliterator`over the elements in this set |
+| [Spliterator](../java/util/Spliterator.md)<E> | a`Spliterator`over the elements in this set |
 
 ### toArray
 
@@ -793,7 +793,7 @@ If this set fits in the specified array with room to spare (i.e., the array has 
 
 If this set makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order.
 
-Like the [toArray()](https://developer.android.com/reference/kotlin/java/util/Set#toArray())method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
+Like the [toArray()](../java/util/Set.md))method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
 
 Suppose`x`is a set known to contain only strings. The following code can be used to dump the set into a newly allocated array of`String`: 
 

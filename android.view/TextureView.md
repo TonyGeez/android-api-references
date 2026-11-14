@@ -8,8 +8,8 @@ open class TextureView : View
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View) ||
-| | ↳ | [android.view.TextureView](https://developer.android.com/reference/kotlin/android/view/TextureView#) |
+| ↳ | [android.view.View](../android/view/View.md) ||
+| | ↳ | [android.view.TextureView](../android/view/TextureView.md) |
 
 A TextureView can be used to display a content stream, such as that coming from a camera preview, a video, or an OpenGL scene. The content stream can come from the application's process as well as a remote process.
 
@@ -642,7 +642,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -667,7 +667,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -677,7 +677,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -697,7 +697,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -707,7 +707,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -717,7 +717,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -727,7 +727,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -737,7 +737,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -747,7 +747,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -757,7 +757,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -767,7 +767,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -777,7 +777,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -787,7 +787,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -957,7 +957,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -977,7 +977,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1019,7 +1019,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View#focus
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1115,7 +1115,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1209,7 +1209,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View#getMeas
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1666,7 +1666,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1683,20 +1683,20 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Subclasses of TextureView cannot do their own rendering with the `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#` object. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/TextureView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
 | --- | --- |
-| open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap()()` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` representation of the content of the associated surface texture. |
-| open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap(android.graphics.Bitmap)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)` Copies the content of this view's surface texture into the specified bitmap. |
-| open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` representation of the content of the associated surface texture. |
+| open [Bitmap](../android/graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap()()` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` representation of the content of the associated surface texture. |
+| open [Bitmap](../android/graphics/Bitmap.md) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap(android.graphics.Bitmap)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)` Copies the content of this view's surface texture into the specified bitmap. |
+| open [Bitmap](../android/graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getBitmap(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` representation of the content of the associated surface texture. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getLayerType()()` Always returns `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int`. |
-| open [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTexture()()` Returns the `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` used by this view. |
-| open [TextureView.SurfaceTextureListener](https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTextureListener()()` Returns the `https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener` currently associated with this texture view. |
+| open [SurfaceTexture](../android/graphics/SurfaceTexture.md)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTexture()()` Returns the `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` used by this view. |
+| open [TextureView.SurfaceTextureListener](../android/view/TextureView.SurfaceTextureListener.md)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#getSurfaceTextureListener()()` Returns the `https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener` currently associated with this texture view. |
 | --- | --- |
-| open [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getTransform(android.graphics.Matrix)(transform: https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#?)` Returns the transform associated with this texture view. |
+| open [Matrix](../android/graphics/Matrix.md) | `https://developer.android.com/reference/kotlin/android/view/TextureView#getTransform(android.graphics.Matrix)(transform: https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#?)` Returns the transform associated with this texture view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#isAvailable()()` Returns true if the `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` associated with this TextureView is available for rendering. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#isOpaque()()` Indicates whether this View is opaque. |
 | --- | --- |
-| open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas()()` Start editing the pixels in the surface. |
-| open [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas(android.graphics.Rect)(dirty: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Just like `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas()` but allows specification of a dirty rectangle. |
+| open [Canvas](../android/graphics/Canvas.md)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas()()` Start editing the pixels in the surface. |
+| open [Canvas](../android/graphics/Canvas.md)? | `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas(android.graphics.Rect)(dirty: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Just like `https://developer.android.com/reference/kotlin/android/view/TextureView#lockCanvas()` but allows specification of a dirty rectangle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setBackgroundDrawable(android.graphics.drawable.Drawable)(background: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/TextureView#setForeground(android.graphics.drawable.Drawable)(foreground: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Supply a Drawable that is to be rendered on top of all of the content in the view. |
@@ -6480,7 +6480,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -7208,7 +7208,7 @@ Creates a new TextureView.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to associate this view with. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to associate this view with. This value cannot be `null`. |
 
 ### TextureView
 
@@ -7224,8 +7224,8 @@ Creates a new TextureView.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to associate this view with. This value cannot be `null`. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to associate this view with. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 
 ### TextureView
 
@@ -7242,8 +7242,8 @@ Creates a new TextureView.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to associate this view with. This value cannot be `null`. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to associate this view with. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 
@@ -7263,8 +7263,8 @@ Creates a new TextureView.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to associate this view with. This value cannot be `null`. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to associate this view with. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
@@ -7297,7 +7297,7 @@ Subclasses of TextureView cannot do their own rendering with the `https://develo
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): The Canvas to which the View is rendered. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): The Canvas to which the View is rendered. |
 
 ### getAccessibilityClassName
 
@@ -7351,7 +7351,7 @@ If an error occurs, the bitmap is left unchanged.
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#): The bitmap to copy the content of the surface texture into, cannot be null, all configurations are supported |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): The bitmap to copy the content of the surface texture into, cannot be null, all configurations are supported |
 
 | Return ||
 |---|---|
@@ -7459,7 +7459,7 @@ Returns the transform associated with this texture view.
 
 | Parameters ||
 |---|---|
-| `transform` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#)?: The `https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#` in which to copy the current transform. Can be null. |
+| `transform` | [Matrix](../android/graphics/Matrix.md)?: The `https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#` in which to copy the current transform. Can be null. |
 
 | Return ||
 |---|---|
@@ -7528,7 +7528,7 @@ Just like `https://developer.android.com/reference/kotlin/android/view/TextureVi
 
 | Parameters ||
 |---|---|
-| `dirty` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: Area of the surface that will be modified. If null the area of the entire surface is used. |
+| `dirty` | [Rect](../android/graphics/Rect.md)?: Area of the surface that will be modified. If null the area of the entire surface is used. |
 
 | Return ||
 |---|---|
@@ -7560,7 +7560,7 @@ Supply a Drawable that is to be rendered on top of all of the content in the vie
 
 | Parameters ||
 |---|---|
-| `foreground` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: the Drawable to be drawn on top of the children |
+| `foreground` | [Drawable](../android/graphics/drawable/Drawable.md)!: the Drawable to be drawn on top of the children |
 
 ### setLayerPaint
 
@@ -7582,7 +7582,7 @@ If this view has an alpha value set to \< 1.0 by calling `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)?: This value may be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md)?: This value may be `null`. |
 
 ### setLayerType
 
@@ -7600,7 +7600,7 @@ The layer type of a TextureView is ignored since a TextureView is always conside
 | Parameters ||
 |---|---|
 | `layerType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of layer to use with this view, must be one of `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_SOFTWARE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int` |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int` |
+| `paint` | [Paint](../android/graphics/Paint.md)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int` |
 
 ### setOpaque
 
@@ -7628,7 +7628,7 @@ Set the `https://developer.android.com/reference/kotlin/android/graphics/Surface
 
 | Parameters ||
 |---|---|
-| `surfaceTexture` | [SurfaceTexture](https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#): The `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` that the view should use. This value cannot be `null`. |
+| `surfaceTexture` | [SurfaceTexture](../android/graphics/SurfaceTexture.md): The `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` that the view should use. This value cannot be `null`. |
 
 **See Also**
 
@@ -7646,7 +7646,7 @@ Sets the `https://developer.android.com/reference/kotlin/android/view/TextureVie
 
 | Parameters ||
 |---|---|
-| `listener` | [TextureView.SurfaceTextureListener](https://developer.android.com/reference/kotlin/android/view/TextureView.SurfaceTextureListener)?: This value may be `null`. |
+| `listener` | [TextureView.SurfaceTextureListener](../android/view/TextureView.SurfaceTextureListener.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -7667,7 +7667,7 @@ Some transforms might prevent the content from drawing all the pixels contained 
 
 | Parameters ||
 |---|---|
-| `transform` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html#)?: The transform to apply to the content of this view. If null the transform will be set to identity. |
+| `transform` | [Matrix](../android/graphics/Matrix.md)?: The transform to apply to the content of this view. If null the transform will be set to identity. |
 
 **See Also**
 
@@ -7687,7 +7687,7 @@ Finish editing pixels in the surface. After this call, the surface's current pix
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): The Canvas previously returned by lockCanvas(). This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): The Canvas previously returned by lockCanvas(). This value cannot be `null`. |
 
 **See Also**
 
@@ -7719,7 +7719,7 @@ Subclasses of TextureView cannot do their own rendering with the `https://develo
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): The Canvas to which the View is rendered. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): The Canvas to which the View is rendered. |
 
 ### onSizeChanged
 
@@ -7759,5 +7759,5 @@ Called when the visibility of the view or an ancestor of the view has changed.
 
 | Parameters ||
 |---|---|
-| `changedView` | [View](https://developer.android.com/reference/kotlin/android/view/View): The view whose visibility changed. May be `this` or an ancestor view. This value cannot be `null`. |
+| `changedView` | [View](../android/view/View.md): The view whose visibility changed. May be `this` or an ancestor view. This value cannot be `null`. |
 | `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility, one of `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int` |

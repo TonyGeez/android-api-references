@@ -4,14 +4,14 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 
 # OnColorsChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener "View this page in Java") 
+Kotlin| [Java](../android/app/WallpaperManager.OnColorsChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnColorsChangedListener
 ```
 
-| [android.app.WallpaperManager.OnColorsChangedListener](https://developer.android.com/reference/kotlin/android/app/WallpaperManager.OnColorsChangedListener#) |
+| [android.app.WallpaperManager.OnColorsChangedListener](../android/app/WallpaperManager.OnColorsChangedListener.md) |
 
 Interface definition for a callback to be invoked when colors change on a wallpaper.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when colors change on a wallpa
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onColorsChanged](https://developer.android.com/reference/kotlin/android/app/WallpaperManager.OnColorsChangedListener#onColorsChanged(android.app.WallpaperColors,%20kotlin.Int))`(`colors:` ` [WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors)?`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when colors change. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onColorsChanged](../android/app/WallpaperManager.OnColorsChangedListener.md))`(`colors:` ` [WallpaperColors](../android/app/WallpaperColors.md)?`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when colors change. |
 
 ## Public methods
 
@@ -34,13 +34,13 @@ abstract fun onColorsChanged(
 ): Unit
 ```
 
-Called when colors change. A [android.app.WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors) object containing a simplified color histogram will be given.
+Called when colors change. A [android.app.WallpaperColors](../android/app/WallpaperColors.md) object containing a simplified color histogram will be given.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `colors` | [WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors)?:Wallpaper color info,`null`when not available. |
-| `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of [FLAG_LOCK](https://developer.android.com/reference/kotlin/android/app/WallpaperManager#FLAG_LOCK:kotlin.Int) and [FLAG_SYSTEM](https://developer.android.com/reference/kotlin/android/app/WallpaperManager#FLAG_SYSTEM:kotlin.Int) |
+| `colors` | [WallpaperColors](../android/app/WallpaperColors.md)?:Wallpaper color info,`null`when not available. |
+| `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of [FLAG_LOCK](../android/app/WallpaperManager.md) and [FLAG_SYSTEM](../android/app/WallpaperManager.md) |
 
 **See Also**
 
-- [android.service.wallpaper.WallpaperService.Engine#onComputeColors()](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine.html#onComputeColors())
+- [android.service.wallpaper.WallpaperService.Engine#onComputeColors()](../android/service/wallpaper/WallpaperService.Engine.md))

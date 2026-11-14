@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # LutProperties
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/LutProperties "View this page in Java") 
+Kotlin| [Java](../android/hardware/LutProperties.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ class LutProperties
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.LutProperties](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#) |
+| ↳ | [android.hardware.LutProperties](../android/hardware/LutProperties.md) |
 
 Provides Lut properties of the device.
 
-A Lut (Look-Up Table) is a pre-calculated table for color correction. Applications may be interested in the Lut properties exposed by this class to determine if the Lut(s) they select using [android.view.SurfaceControl.Transaction#setLuts](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction.html#setLuts(android.view.SurfaceControl,%20android.hardware.DisplayLuts))are by the HWC.
+A Lut (Look-Up Table) is a pre-calculated table for color correction. Applications may be interested in the Lut properties exposed by this class to determine if the Lut(s) they select using [android.view.SurfaceControl.Transaction#setLuts](../android/view/SurfaceControl.Transaction.md))are by the HWC.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONE_DIMENSION](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#ONE_DIMENSION:kotlin.Int) The Lut is one dimensional |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLING_KEY_CIE_Y](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#SAMPLING_KEY_CIE_Y:kotlin.Int) use y of CIE XYZ as the gain value of a lut |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLING_KEY_MAX_RGB](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#SAMPLING_KEY_MAX_RGB:kotlin.Int) use max of r,g,b channel as the gain value of a Lut |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONE_DIMENSION](../android/hardware/LutProperties.md) The Lut is one dimensional |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLING_KEY_CIE_Y](../android/hardware/LutProperties.md) use y of CIE XYZ as the gain value of a lut |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLING_KEY_MAX_RGB](../android/hardware/LutProperties.md) use max of r,g,b channel as the gain value of a Lut |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLING_KEY_RGB](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#SAMPLING_KEY_RGB:kotlin.Int) use r,g,b channel as the gain value of a Lut |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREE_DIMENSION](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#THREE_DIMENSION:kotlin.Int) The Lut is three dimensional |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMPLING_KEY_RGB](../android/hardware/LutProperties.md) use r,g,b channel as the gain value of a Lut |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREE_DIMENSION](../android/hardware/LutProperties.md) The Lut is three dimensional |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimension](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#getDimension())`()` <br /> |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getSamplingKeys](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#getSamplingKeys())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#getSize())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimension](../android/hardware/LutProperties.md))`()` <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getSamplingKeys](../android/hardware/LutProperties.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](../android/hardware/LutProperties.md))`()` <br /> |
 | --- | --- |
 
 ## Constants
@@ -111,7 +111,7 @@ fun getDimension(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.hardware.LutProperties#ONE_DIMENSION](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#ONE_DIMENSION:kotlin.Int), or [android.hardware.LutProperties#THREE_DIMENSION](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#THREE_DIMENSION:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.hardware.LutProperties#ONE_DIMENSION](../android/hardware/LutProperties.md), or [android.hardware.LutProperties#THREE_DIMENSION](../android/hardware/LutProperties.md) |
 
 ### getSamplingKeys
 
@@ -123,7 +123,7 @@ fun getSamplingKeys(): IntArray
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | the list of sampling keys This value cannot be`null`. Value is [android.hardware.LutProperties#SAMPLING_KEY_RGB](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#SAMPLING_KEY_RGB:kotlin.Int), [android.hardware.LutProperties#SAMPLING_KEY_MAX_RGB](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#SAMPLING_KEY_MAX_RGB:kotlin.Int), or [android.hardware.LutProperties#SAMPLING_KEY_CIE_Y](https://developer.android.com/reference/kotlin/android/hardware/LutProperties#SAMPLING_KEY_CIE_Y:kotlin.Int) |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | the list of sampling keys This value cannot be`null`. Value is [android.hardware.LutProperties#SAMPLING_KEY_RGB](../android/hardware/LutProperties.md), [android.hardware.LutProperties#SAMPLING_KEY_MAX_RGB](../android/hardware/LutProperties.md), or [android.hardware.LutProperties#SAMPLING_KEY_CIE_Y](../android/hardware/LutProperties.md) |
 
 ### getSize
 

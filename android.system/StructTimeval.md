@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # StructTimeval
 
-Kotlin| [Java](https://developer.android.com/reference/android/system/StructTimeval "View this page in Java") 
+Kotlin| [Java](../android/system/StructTimeval.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StructTimeval
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructTimeval](https://developer.android.com/reference/kotlin/android/system/StructTimeval#) |
+| ↳ | [android.system.StructTimeval](../android/system/StructTimeval.md) |
 
 Corresponds to C's`struct timeval`from`sys/time.h`.
 
@@ -21,17 +21,17 @@ Corresponds to C's`struct timeval`from`sys/time.h`.
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/system/StructTimeval#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| static [StructTimeval](https://developer.android.com/reference/kotlin/android/system/StructTimeval#) | [fromMillis](https://developer.android.com/reference/kotlin/android/system/StructTimeval#fromMillis(kotlin.Long))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/system/StructTimeval#hashCode())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/system/StructTimeval.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| static [StructTimeval](../android/system/StructTimeval.md) | [fromMillis](../android/system/StructTimeval.md))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/system/StructTimeval.md))`()` <br /> |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMillis](https://developer.android.com/reference/kotlin/android/system/StructTimeval#toMillis())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/system/StructTimeval#toString())`()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMillis](../android/system/StructTimeval.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/system/StructTimeval.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_sec](https://developer.android.com/reference/kotlin/android/system/StructTimeval#tv_sec:kotlin.Long) Seconds. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_usec](https://developer.android.com/reference/kotlin/android/system/StructTimeval#tv_usec:kotlin.Long) Microseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_sec](../android/system/StructTimeval.md) Seconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_usec](../android/system/StructTimeval.md) Microseconds. |
 
 ## Public methods
 
@@ -61,7 +61,7 @@ static fun fromMillis(millis: Long): StructTimeval
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------|
-| [StructTimeval](https://developer.android.com/reference/kotlin/android/system/StructTimeval#) | This value cannot be`null`. |
+| [StructTimeval](../android/system/StructTimeval.md) | This value cannot be`null`. |
 
 ### hashCode
 

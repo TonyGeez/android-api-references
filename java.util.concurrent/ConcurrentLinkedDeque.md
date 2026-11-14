@@ -8,12 +8,12 @@ open class ConcurrentLinkedDeque<E : Any!> : AbstractCollection<E>, Deque<E>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractCollection](https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#)\<E\> ||
-| | ↳ | [java.util.concurrent.ConcurrentLinkedDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#) |
+| ↳ | [java.util.AbstractCollection](../java/util/AbstractCollection.md)\<E\> ||
+| | ↳ | [java.util.concurrent.ConcurrentLinkedDeque](../java/util/concurrent/ConcurrentLinkedDeque.md) |
 
-An unbounded concurrent [deque](https://developer.android.com/reference/kotlin/java/util/Deque.html#) based on linked nodes. Concurrent insertion, removal, and access operations execute safely across multiple threads. A `ConcurrentLinkedDeque` is an appropriate choice when many threads will share access to a common collection. Like most other concurrent collection implementations, this class does not permit the use of `null` elements.
+An unbounded concurrent [deque](../java/util/Deque.md) based on linked nodes. Concurrent insertion, removal, and access operations execute safely across multiple threads. A `ConcurrentLinkedDeque` is an appropriate choice when many threads will share access to a common collection. Like most other concurrent collection implementations, this class does not permit the use of `null` elements.
 
-Iterators and spliterators are [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+Iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
 
 Beware that, unlike in most collections, the `size` method is *NOT* a constant-time operation. Because of the asynchronous nature of these deques, determining the current number of elements requires a traversal of the elements, and so may report inaccurate results if this collection is modified during traversal.
 
@@ -21,7 +21,7 @@ Bulk operations that add, remove, or examine multiple elements, such as #addAll,
 
 This class and its iterator implement all of the *optional* methods of the `https://developer.android.com/reference/kotlin/java/util/Deque.html#` and `https://developer.android.com/reference/kotlin/java/util/Iterator.html#` interfaces.
 
-Memory consistency effects: As with other concurrent collections, actions in a thread prior to placing an object into a `ConcurrentLinkedDeque` [*happen-before*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#MemoryVisibility) actions subsequent to the access or removal of that element from the `ConcurrentLinkedDeque` in another thread.
+Memory consistency effects: As with other concurrent collections, actions in a thread prior to placing an object into a `ConcurrentLinkedDeque` [*happen-before*](../java/util/concurrent/_package.md) actions subsequent to the access or removal of that element from the `ConcurrentLinkedDeque` in another thread.
 
 This class is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
 
@@ -78,7 +78,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeLastOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the last occurrence of the specified element from this deque. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#retainAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` <br /> |
 | --- | --- |
-| open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#spliterator()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this deque. |
+| open [Spliterator](../java/util/Spliterator.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#spliterator()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this deque. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#toArray()()` Returns an array containing all of the elements in this deque, in proper sequence (from first to last element). |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#toArray(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns an array containing all of the elements in this deque, in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
 | --- | --- |
@@ -87,7 +87,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | Inherited functions ||
 |---|---|
 | From class `https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#containsAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Returns `true` if this collection contains all of the elements in the specified collection. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/java/util/Deque.html#` |---|---| | `https://developer.android.com/reference/kotlin/java/util/Deque.html#<E>` | `https://developer.android.com/reference/kotlin/java/util/Deque.html#reversed()()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection.html#view) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/util/Deque.html#` |---|---| | `https://developer.android.com/reference/kotlin/java/util/Deque.html#<E>` | `https://developer.android.com/reference/kotlin/java/util/Deque.html#reversed()()` Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation. <br /> | ||
 
 | Properties ||
 |---|---|
@@ -274,7 +274,7 @@ open fun descendingIterator(): MutableIterator<E>
 
 Returns an iterator over the elements in this deque in reverse sequential order. The elements will be returned in order from last (tail) to first (head).
 
-The returned iterator is [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The returned iterator is [*weakly consistent*](../java/util/concurrent/_package.md).
 
 | Return ||
 |---|---|
@@ -306,7 +306,7 @@ open fun forEach(action: Consumer<in E>): Unit
 
 | Parameters ||
 |---|---|
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<in E\>: The action to be performed for each element |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<in E\>: The action to be performed for each element |
 
 | Exceptions ||
 |---|---|
@@ -368,7 +368,7 @@ open fun iterator(): MutableIterator<E>
 
 Returns an iterator over the elements in this deque in proper sequence. The elements will be returned in order from first (head) to last (tail).
 
-The returned iterator is [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The returned iterator is [*weakly consistent*](../java/util/concurrent/_package.md).
 
 | Return ||
 |---|---|
@@ -691,7 +691,7 @@ open fun removeIf(filter: Predicate<in E>): Boolean
 
 | Parameters ||
 |---|---|
-| `filter` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)\<in E\>: a predicate which returns `true` for elements to be removed |
+| `filter` | [Predicate](../java/util/function/Predicate.md)\<in E\>: a predicate which returns `true` for elements to be removed |
 
 | Return ||
 |---|---|
@@ -775,7 +775,7 @@ open fun spliterator(): Spliterator<E>
 
 Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this deque.
 
-The returned spliterator is [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The returned spliterator is [*weakly consistent*](../java/util/concurrent/_package.md).
 
 The `Spliterator` reports `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#CONCURRENT:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#ORDERED:kotlin.Int`, and `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#NONNULL:kotlin.Int`.
 

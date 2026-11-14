@@ -8,7 +8,7 @@ class SearchSpec : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.SearchSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#) |
+| ↳ | [android.app.appsearch.SearchSpec](../android/app/appsearch/SearchSpec.md) |
 
 This class represents the specification logic for AppSearch. It can be used to set the type of search, like prefix or exact only or apply filters to search for a specific schema type only etc.
 
@@ -61,7 +61,7 @@ This class represents the specification logic for AppSearch. It can be used to s
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getAdvancedRankingExpression()()` Get the advanced ranking expression, or "" if `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec.Builder#setRankingStrategy(kotlin.String)` was not called. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getDefaultEmbeddingSearchMetricType()()` Returns the default embedding metric type used for embedding search (see `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#search(kotlin.String,%20android.app.appsearch.SearchSpec)`) and ranking (see `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec.Builder#setRankingStrategy(kotlin.String)`). |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmbeddingVector](https://developer.android.com/reference/kotlin/android/app/appsearch/EmbeddingVector)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getEmbeddingParameters()()` Returns the list of `https://developer.android.com/reference/kotlin/android/app/appsearch/EmbeddingVector` that can be referenced in the query through the "getEmbeddingParameter({index})" function. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmbeddingVector](../android/app/appsearch/EmbeddingVector.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getEmbeddingParameters()()` Returns the list of `https://developer.android.com/reference/kotlin/android/app/appsearch/EmbeddingVector` that can be referenced in the query through the "getEmbeddingParameter({index})" function. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getFilterDocumentIds()()` Returns the list of document ids to search over. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getFilterNamespaces()()` Returns the list of namespaces to search over. |
 | --- | --- |
@@ -70,14 +70,14 @@ This class represents the specification logic for AppSearch. It can be used to s
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getFilterSchemas()()` Returns the list of schema types to search for. |
 | --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getInformationalRankingExpressions()()` Returns the informational ranking expressions. |
-| [JoinSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getJoinSpec()()` Returns specification on which documents need to be joined. |
+| [JoinSpec](../android/app/appsearch/JoinSpec.md)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getJoinSpec()()` Returns specification on which documents need to be joined. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getMaxSnippetSize()()` Returns the maximum size of a snippet in characters. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getOrder()()` Returns the order of returned search results (descending or ascending). |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getProjectionPaths()()` Returns a map from schema type to property paths to be used for projection. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PropertyPath](../android/app/appsearch/PropertyPath.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getProjectionPaths()()` Returns a map from schema type to property paths to be used for projection. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getProjections()()` Returns a map from schema type to property paths to be used for projection. |
 | --- | --- |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [PropertyPath](https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath)!, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getPropertyWeightPaths()()` Returns properties weights to be used for scoring. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [PropertyPath](../android/app/appsearch/PropertyPath.md)!, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getPropertyWeightPaths()()` Returns properties weights to be used for scoring. |
 | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getPropertyWeights()()` Returns properties weights to be used for scoring. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#getRankingStrategy()()` Returns the ranking strategy. |
 | --- | --- |
@@ -105,7 +105,7 @@ This class represents the specification logic for AppSearch. It can be used to s
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SearchSpec](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#CREATOR:android.os.Parcelable.Creator` Creator class for `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SearchSpec](../android/app/appsearch/SearchSpec.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#CREATOR:android.os.Parcelable.Creator` Creator class for `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec#`. |
 
 ## Constants
 
@@ -896,7 +896,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

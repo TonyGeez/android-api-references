@@ -4,39 +4,39 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # CalendarAlertsColumns
 
-Kotlin | [Java](https://developer.android.com/reference/android/provider/CalendarContract.CalendarAlertsColumns "View this page in Java") 
+Kotlin | [Java](../android/provider/CalendarContract.CalendarAlertsColumns.md) 
 | --- | --- |
 
 ```
 protected interface CalendarAlertsColumns
 ```
 
-| [android.provider.CalendarContract.CalendarAlertsColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#) |
+| [android.provider.CalendarContract.CalendarAlertsColumns](../android/provider/CalendarContract.CalendarAlertsColumns.md) |
 
-| Known Direct Subclasses [CalendarContract.CalendarAlerts](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlerts) |------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | [CalendarContract.CalendarAlerts](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlerts) | Fields and helpers for accessing calendar alerts information. | |
+| Known Direct Subclasses [CalendarContract.CalendarAlerts](../android/provider/CalendarContract.CalendarAlerts.md) |------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | [CalendarContract.CalendarAlerts](../android/provider/CalendarContract.CalendarAlerts.md) | Fields and helpers for accessing calendar alerts information. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Constants ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALARM_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#ALARM_TIME:kotlin.String) The alarm time of the event, in UTC. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BEGIN](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#BEGIN:kotlin.String) The start time of the event, in UTC. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CREATION_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#CREATION_TIME:kotlin.String) The creation time of this database entry, in UTC. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALARM_TIME](../android/provider/CalendarContract.CalendarAlertsColumns.md) The alarm time of the event, in UTC. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BEGIN](../android/provider/CalendarContract.CalendarAlertsColumns.md) The start time of the event, in UTC. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CREATION_TIME](../android/provider/CalendarContract.CalendarAlertsColumns.md) The creation time of this database entry, in UTC. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_SORT_ORDER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#DEFAULT_SORT_ORDER:kotlin.String) The default sort order for this alerts queries |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [END](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#END:kotlin.String) The end time of the event, in UTC. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#EVENT_ID:kotlin.String) The event that the alert belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_SORT_ORDER](../android/provider/CalendarContract.CalendarAlertsColumns.md) The default sort order for this alerts queries |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [END](../android/provider/CalendarContract.CalendarAlertsColumns.md) The end time of the event, in UTC. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EVENT_ID](../android/provider/CalendarContract.CalendarAlertsColumns.md) The event that the alert belongs to. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MINUTES](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#MINUTES:kotlin.String) The number of minutes that this alarm precedes the start time. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NOTIFY_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#NOTIFY_TIME:kotlin.String) The time that the notification was created by the Calendar app, in UTC. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RECEIVED_TIME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#RECEIVED_TIME:kotlin.String) The time that the alarm broadcast was received by the Calendar app, in UTC. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MINUTES](../android/provider/CalendarContract.CalendarAlertsColumns.md) The number of minutes that this alarm precedes the start time. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NOTIFY_TIME](../android/provider/CalendarContract.CalendarAlertsColumns.md) The time that the notification was created by the Calendar app, in UTC. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RECEIVED_TIME](../android/provider/CalendarContract.CalendarAlertsColumns.md) The time that the alarm broadcast was received by the Calendar app, in UTC. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STATE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#STATE:kotlin.String) The state of this alert. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DISMISSED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#STATE_DISMISSED:kotlin.Int) Once the user has dismissed the notification the alert's state should be set to dismissed so it is not fired again. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FIRED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#STATE_FIRED:kotlin.Int) After a notification for an alert has been created it should be updated to fired. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STATE](../android/provider/CalendarContract.CalendarAlertsColumns.md) The state of this alert. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DISMISSED](../android/provider/CalendarContract.CalendarAlertsColumns.md) Once the user has dismissed the notification the alert's state should be set to dismissed so it is not fired again. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FIRED](../android/provider/CalendarContract.CalendarAlertsColumns.md) After a notification for an alert has been created it should be updated to fired. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SCHEDULED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#STATE_SCHEDULED:kotlin.Int) An alert begins in this state when it is first created. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SCHEDULED](../android/provider/CalendarContract.CalendarAlertsColumns.md) An alert begins in this state when it is first created. |
 
 ## Constants
 
@@ -172,7 +172,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val STATE: String
 ```
 
-The state of this alert. It starts out as [STATE_SCHEDULED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#STATE_SCHEDULED:kotlin.Int), then when the alarm goes off, it changes to [STATE_FIRED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#STATE_FIRED:kotlin.Int), and then when the user dismisses the alarm it changes to [STATE_DISMISSED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlertsColumns#STATE_DISMISSED:kotlin.Int). Column name.
+The state of this alert. It starts out as [STATE_SCHEDULED](../android/provider/CalendarContract.CalendarAlertsColumns.md), then when the alarm goes off, it changes to [STATE_FIRED](../android/provider/CalendarContract.CalendarAlertsColumns.md), and then when the user dismisses the alarm it changes to [STATE_DISMISSED](../android/provider/CalendarContract.CalendarAlertsColumns.md). Column name.
 
 Type: INTEGER 
 

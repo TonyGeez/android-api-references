@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SensorManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/SensorManager "View this page in Java") 
+Kotlin| [Java](../android/hardware/SensorManager.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ abstract class SensorManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.SensorManager](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#) |
+| ↳ | [android.hardware.SensorManager](../android/hardware/SensorManager.md) |
 
-SensorManager lets you access the device's [sensors](https://developer.android.com/reference/kotlin/android/hardware/Sensor).
+SensorManager lets you access the device's [sensors](../android/hardware/Sensor.md).
 
 Always make sure to disable sensors you don't need, especially when your activity is paused. Failing to do so can drain the battery in just a few hours. Note that the system will*not*disable sensors automatically when the screen turns off.
 
-Note: Don't use this mechanism with a Trigger Sensor, have a look at [TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener). [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int) is an example of a trigger sensor.
+Note: Don't use this mechanism with a Trigger Sensor, have a look at [TriggerEventListener](../android/hardware/TriggerEventListener.md). [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md) is an example of a trigger sensor.
 
-In order to access sensor data at high sampling rates (i.e. greater than 200 Hz for [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) and greater than [SensorDirectChannel.RATE_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel#RATE_NORMAL:kotlin.Int) for [SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel)), apps must declare the [android.Manifest.permission#HIGH_SAMPLING_RATE_SENSORS](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#HIGH_SAMPLING_RATE_SENSORS:kotlin.String) permission in their AndroidManifest.xml file. 
+In order to access sensor data at high sampling rates (i.e. greater than 200 Hz for [SensorEventListener](../android/hardware/SensorEventListener.md) and greater than [SensorDirectChannel.RATE_NORMAL](../android/hardware/SensorDirectChannel.md) for [SensorDirectChannel](../android/hardware/SensorDirectChannel.md)), apps must declare the [android.Manifest.permission#HIGH_SAMPLING_RATE_SENSORS](../android/Manifest.permission.md) permission in their AndroidManifest.xml file. 
 
 ```kotlin
 public class SensorActivity extends Activity implements SensorEventListener {
@@ -56,132 +56,132 @@ public class SensorActivity extends Activity implements SensorEventListener {
 
 | Nested classes ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) Used for receiving notifications from the SensorManager when dynamic sensors are connected or disconnected. |
+| abstract | [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) Used for receiving notifications from the SensorManager when dynamic sensors are connected or disconnected. |
 
 | Constants ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_MINUS_X](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#AXIS_MINUS_X:kotlin.Int) see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_MINUS_Y](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#AXIS_MINUS_Y:kotlin.Int) see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_MINUS_Z](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#AXIS_MINUS_Z:kotlin.Int) see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_MINUS_X](../android/hardware/SensorManager.md) see [remapCoordinateSystem](../android/hardware/SensorManager.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_MINUS_Y](../android/hardware/SensorManager.md) see [remapCoordinateSystem](../android/hardware/SensorManager.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_MINUS_Z](../android/hardware/SensorManager.md) see [remapCoordinateSystem](../android/hardware/SensorManager.md)) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_X](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#AXIS_X:kotlin.Int) see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Y](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#AXIS_Y:kotlin.Int) see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Z](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#AXIS_Z:kotlin.Int) see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_X](../android/hardware/SensorManager.md) see [remapCoordinateSystem](../android/hardware/SensorManager.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Y](../android/hardware/SensorManager.md) see [remapCoordinateSystem](../android/hardware/SensorManager.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Z](../android/hardware/SensorManager.md) see [remapCoordinateSystem](../android/hardware/SensorManager.md)) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_X](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#DATA_X:kotlin.Int) Index of the X value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_Y](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#DATA_Y:kotlin.Int) Index of the Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_Z](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#DATA_Z:kotlin.Int) Index of the Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_X](../android/hardware/SensorManager.md) Index of the X value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_Y](../android/hardware/SensorManager.md) Index of the Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_Z](../android/hardware/SensorManager.md) Index of the Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_DEATH_STAR_I](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_DEATH_STAR_I:kotlin.Float) Gravity (estimate) on the first Death Star in Empire units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_EARTH](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_EARTH:kotlin.Float) Earth's gravity in SI units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_JUPITER](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_JUPITER:kotlin.Float) Jupiter's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_DEATH_STAR_I](../android/hardware/SensorManager.md) Gravity (estimate) on the first Death Star in Empire units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_EARTH](../android/hardware/SensorManager.md) Earth's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_JUPITER](../android/hardware/SensorManager.md) Jupiter's gravity in SI units (m/s\^2) |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_MARS](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_MARS:kotlin.Float) Mars' gravity in SI units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_MERCURY](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_MERCURY:kotlin.Float) Mercury's gravity in SI units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_MOON](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_MOON:kotlin.Float) The Moon's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_MARS](../android/hardware/SensorManager.md) Mars' gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_MERCURY](../android/hardware/SensorManager.md) Mercury's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_MOON](../android/hardware/SensorManager.md) The Moon's gravity in SI units (m/s\^2) |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_NEPTUNE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_NEPTUNE:kotlin.Float) Neptune's gravity in SI units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_PLUTO](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_PLUTO:kotlin.Float) Pluto's gravity in SI units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_SATURN](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_SATURN:kotlin.Float) Saturn's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_NEPTUNE](../android/hardware/SensorManager.md) Neptune's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_PLUTO](../android/hardware/SensorManager.md) Pluto's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_SATURN](../android/hardware/SensorManager.md) Saturn's gravity in SI units (m/s\^2) |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_SUN](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_SUN:kotlin.Float) Sun's gravity in SI units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_THE_ISLAND](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_THE_ISLAND:kotlin.Float) Gravity on the island |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_URANUS](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_URANUS:kotlin.Float) Uranus' gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_SUN](../android/hardware/SensorManager.md) Sun's gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_THE_ISLAND](../android/hardware/SensorManager.md) Gravity on the island |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_URANUS](../android/hardware/SensorManager.md) Uranus' gravity in SI units (m/s\^2) |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_VENUS](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#GRAVITY_VENUS:kotlin.Float) Venus' gravity in SI units (m/s\^2) |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_CLOUDY](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_CLOUDY:kotlin.Float) luminance under a cloudy sky in lux |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_FULLMOON](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_FULLMOON:kotlin.Float) luminance at night with full moon in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [GRAVITY_VENUS](../android/hardware/SensorManager.md) Venus' gravity in SI units (m/s\^2) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_CLOUDY](../android/hardware/SensorManager.md) luminance under a cloudy sky in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_FULLMOON](../android/hardware/SensorManager.md) luminance at night with full moon in lux |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_NO_MOON](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_NO_MOON:kotlin.Float) luminance at night with no moon in lux |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_OVERCAST](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_OVERCAST:kotlin.Float) luminance under an overcast sky in lux |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SHADE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_SHADE:kotlin.Float) luminance in shade in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_NO_MOON](../android/hardware/SensorManager.md) luminance at night with no moon in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_OVERCAST](../android/hardware/SensorManager.md) luminance under an overcast sky in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SHADE](../android/hardware/SensorManager.md) luminance in shade in lux |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SUNLIGHT](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_SUNLIGHT:kotlin.Float) luminance of sunlight in lux |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SUNLIGHT_MAX](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_SUNLIGHT_MAX:kotlin.Float) Maximum luminance of sunlight in lux |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SUNRISE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#LIGHT_SUNRISE:kotlin.Float) luminance at sunrise in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SUNLIGHT](../android/hardware/SensorManager.md) luminance of sunlight in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SUNLIGHT_MAX](../android/hardware/SensorManager.md) Maximum luminance of sunlight in lux |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [LIGHT_SUNRISE](../android/hardware/SensorManager.md) luminance at sunrise in lux |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [MAGNETIC_FIELD_EARTH_MAX](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#MAGNETIC_FIELD_EARTH_MAX:kotlin.Float) Maximum magnetic field on Earth's surface |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [MAGNETIC_FIELD_EARTH_MIN](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#MAGNETIC_FIELD_EARTH_MIN:kotlin.Float) Minimum magnetic field on Earth's surface |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [PRESSURE_STANDARD_ATMOSPHERE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#PRESSURE_STANDARD_ATMOSPHERE:kotlin.Float) Standard atmosphere, or average sea-level pressure in hPa (millibar) |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [MAGNETIC_FIELD_EARTH_MAX](../android/hardware/SensorManager.md) Maximum magnetic field on Earth's surface |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [MAGNETIC_FIELD_EARTH_MIN](../android/hardware/SensorManager.md) Minimum magnetic field on Earth's surface |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [PRESSURE_STANDARD_ATMOSPHERE](../android/hardware/SensorManager.md) Standard atmosphere, or average sea-level pressure in hPa (millibar) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_INDEX](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#RAW_DATA_INDEX:kotlin.Int) Offset to the untransformed values in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_X](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#RAW_DATA_X:kotlin.Int) Index of the untransformed X value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_Y](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#RAW_DATA_Y:kotlin.Int) Index of the untransformed Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_INDEX](../android/hardware/SensorManager.md) Offset to the untransformed values in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_X](../android/hardware/SensorManager.md) Index of the untransformed X value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_Y](../android/hardware/SensorManager.md) Index of the untransformed Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_Z](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#RAW_DATA_Z:kotlin.Int) Index of the untransformed Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_ACCELEROMETER:kotlin.Int) A constant describing an accelerometer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ALL](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_ALL:kotlin.Int) A constant that includes all sensors |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_DATA_Z](../android/hardware/SensorManager.md) Index of the untransformed Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ACCELEROMETER](../android/hardware/SensorManager.md) A constant describing an accelerometer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ALL](../android/hardware/SensorManager.md) A constant that includes all sensors |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_FASTEST](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_FASTEST:kotlin.Int) get sensor data as fast as possible |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_GAME](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_GAME:kotlin.Int) rate suitable for games |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_NORMAL:kotlin.Int) rate (default) suitable for screen orientation changes |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_FASTEST](../android/hardware/SensorManager.md) get sensor data as fast as possible |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_GAME](../android/hardware/SensorManager.md) rate suitable for games |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_NORMAL](../android/hardware/SensorManager.md) rate (default) suitable for screen orientation changes |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_UI](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_UI:kotlin.Int) rate suitable for the user interface |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_LIGHT](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_LIGHT:kotlin.Int) A constant describing an ambient light sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_MAGNETIC_FIELD](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_MAGNETIC_FIELD:kotlin.Int) A constant describing a magnetic sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_DELAY_UI](../android/hardware/SensorManager.md) rate suitable for the user interface |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_LIGHT](../android/hardware/SensorManager.md) A constant describing an ambient light sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_MAGNETIC_FIELD](../android/hardware/SensorManager.md) A constant describing a magnetic sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_MAX](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_MAX:kotlin.Int) Largest sensor ID |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_MIN](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_MIN:kotlin.Int) Smallest sensor ID |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ORIENTATION](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_ORIENTATION:kotlin.Int) A constant describing an orientation sensor. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_MAX](../android/hardware/SensorManager.md) Largest sensor ID |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_MIN](../android/hardware/SensorManager.md) Smallest sensor ID |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ORIENTATION](../android/hardware/SensorManager.md) A constant describing an orientation sensor. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ORIENTATION_RAW](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_ORIENTATION_RAW:kotlin.Int) A constant describing an orientation sensor. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_PROXIMITY](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_PROXIMITY:kotlin.Int) A constant describing a proximity sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_ACCURACY_HIGH](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_STATUS_ACCURACY_HIGH:kotlin.Int) This sensor is reporting data with maximum accuracy |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_ORIENTATION_RAW](../android/hardware/SensorManager.md) A constant describing an orientation sensor. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_PROXIMITY](../android/hardware/SensorManager.md) A constant describing a proximity sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_ACCURACY_HIGH](../android/hardware/SensorManager.md) This sensor is reporting data with maximum accuracy |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_ACCURACY_LOW](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_STATUS_ACCURACY_LOW:kotlin.Int) This sensor is reporting data with low accuracy, calibration with the environment is needed |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_ACCURACY_MEDIUM](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_STATUS_ACCURACY_MEDIUM:kotlin.Int) This sensor is reporting data with an average level of accuracy, calibration with the environment may improve the readings |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_NO_CONTACT](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_STATUS_NO_CONTACT:kotlin.Int) The values returned by this sensor cannot be trusted because the sensor had no contact with what it was measuring (for example, the heart rate monitor is not in contact with the user). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_ACCURACY_LOW](../android/hardware/SensorManager.md) This sensor is reporting data with low accuracy, calibration with the environment is needed |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_ACCURACY_MEDIUM](../android/hardware/SensorManager.md) This sensor is reporting data with an average level of accuracy, calibration with the environment may improve the readings |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_NO_CONTACT](../android/hardware/SensorManager.md) The values returned by this sensor cannot be trusted because the sensor had no contact with what it was measuring (for example, the heart rate monitor is not in contact with the user). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_UNRELIABLE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_STATUS_UNRELIABLE:kotlin.Int) The values returned by this sensor cannot be trusted, calibration is needed or the environment doesn't allow readings |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_TEMPERATURE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_TEMPERATURE:kotlin.Int) A constant describing a temperature sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_TRICORDER](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_TRICORDER:kotlin.Int) A constant describing a Tricorder See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_STATUS_UNRELIABLE](../android/hardware/SensorManager.md) The values returned by this sensor cannot be trusted, calibration is needed or the environment doesn't allow readings |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_TEMPERATURE](../android/hardware/SensorManager.md) A constant describing a temperature sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENSOR_TRICORDER](../android/hardware/SensorManager.md) A constant describing a Tricorder See [SensorListener](../android/hardware/SensorListener.md) for more details. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [STANDARD_GRAVITY](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#STANDARD_GRAVITY:kotlin.Float) Standard gravity (g) on Earth. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [STANDARD_GRAVITY](../android/hardware/SensorManager.md) Standard gravity (g) on Earth. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancelTriggerSensor](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#cancelTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor))`(`listener:` ` [TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener)!`, `sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`)` Cancels receiving trigger events for a trigger sensor. |
-| open [SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel)! | [createDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.hardware.HardwareBuffer))`(`mem:` ` [HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer)!`)` Create a sensor direct channel backed by shared memory wrapped in HardwareBuffer object. |
-| open [SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel)! | [createDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#createDirectChannel(android.os.MemoryFile))`(`mem:` ` [MemoryFile](https://developer.android.com/reference/kotlin/android/os/MemoryFile.html#)!`)` Create a sensor direct channel backed by shared memory wrapped in MemoryFile object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancelTriggerSensor](../android/hardware/SensorManager.md))`(`listener:` ` [TriggerEventListener](../android/hardware/TriggerEventListener.md)!`, `sensor:` ` [Sensor](../android/hardware/Sensor.md)!`)` Cancels receiving trigger events for a trigger sensor. |
+| open [SensorDirectChannel](../android/hardware/SensorDirectChannel.md)! | [createDirectChannel](../android/hardware/SensorManager.md))`(`mem:` ` [HardwareBuffer](../android/hardware/HardwareBuffer.md)!`)` Create a sensor direct channel backed by shared memory wrapped in HardwareBuffer object. |
+| open [SensorDirectChannel](../android/hardware/SensorDirectChannel.md)! | [createDirectChannel](../android/hardware/SensorManager.md))`(`mem:` ` [MemoryFile](../android/os/MemoryFile.md)!`)` Create a sensor direct channel backed by shared memory wrapped in MemoryFile object. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [flush](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#flush(android.hardware.SensorEventListener))`(`listener:` ` [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!`)` Flushes the FIFO of all the sensors registered for this listener. |
-| openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAltitude](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getAltitude(kotlin.Float,%20kotlin.Float))`(`p0:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `p:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Computes the Altitude in meters from the atmospheric pressure and the pressure at sea level. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAngleChange](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getAngleChange(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray))`(`angleChange:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `prevR:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Helper function to compute the angle change between two rotation matrices. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [flush](../android/hardware/SensorManager.md))`(`listener:` ` [SensorEventListener](../android/hardware/SensorEventListener.md)!`)` Flushes the FIFO of all the sensors registered for this listener. |
+| openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAltitude](../android/hardware/SensorManager.md))`(`p0:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `p:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Computes the Altitude in meters from the atmospheric pressure and the pressure at sea level. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAngleChange](../android/hardware/SensorManager.md))`(`angleChange:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `prevR:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Helper function to compute the angle change between two rotation matrices. |
 | --- | --- |
-| open [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)? | [getDefaultSensor](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getDefaultSensor(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this method to get the default sensor for a given type. |
-| open [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)? | [getDefaultSensor](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getDefaultSensor(kotlin.Int,%20kotlin.Boolean))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `wakeUp:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return a Sensor with the given type and wakeUp properties. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!\>! | [getDynamicSensorList](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getDynamicSensorList(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this method to get a list of available dynamic sensors of a certain type. |
+| open [Sensor](../android/hardware/Sensor.md)? | [getDefaultSensor](../android/hardware/SensorManager.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this method to get the default sensor for a given type. |
+| open [Sensor](../android/hardware/Sensor.md)? | [getDefaultSensor](../android/hardware/SensorManager.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `wakeUp:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return a Sensor with the given type and wakeUp properties. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Sensor](../android/hardware/Sensor.md)!\>! | [getDynamicSensorList](../android/hardware/SensorManager.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this method to get a list of available dynamic sensors of a certain type. |
 | --- | --- |
-| openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInclination](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getInclination(kotlin.FloatArray))`(`I:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the geomagnetic inclination angle in radians from the inclination matrix**I** returned by [getRotationMatrix](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray)). |
-| openstatic [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [getOrientation](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray))`(`R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `values:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the device's orientation based on the rotation matrix. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getQuaternionFromVector](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getQuaternionFromVector(kotlin.FloatArray,%20kotlin.FloatArray))`(`Q:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `rv:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Helper function to convert a rotation vector to a normalized quaternion. |
+| openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInclination](../android/hardware/SensorManager.md))`(`I:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the geomagnetic inclination angle in radians from the inclination matrix**I** returned by [getRotationMatrix](../android/hardware/SensorManager.md)). |
+| openstatic [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [getOrientation](../android/hardware/SensorManager.md))`(`R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `values:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the device's orientation based on the rotation matrix. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getQuaternionFromVector](../android/hardware/SensorManager.md))`(`Q:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `rv:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Helper function to convert a rotation vector to a normalized quaternion. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getRotationMatrix](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray))`(`R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `I:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `gravity:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `geomagnetic:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the inclination matrix**I** as well as the rotation matrix**R**transforming a vector from the device coordinate system to the world's coordinate system which is defined as a direct orthonormal basis, where: |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRotationMatrixFromVector](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrixFromVector(kotlin.FloatArray,%20kotlin.FloatArray))`(`R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `rotationVector:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Helper function to convert a rotation vector to a rotation matrix. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!\>! | [getSensorList](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this method to get the list of available sensors of a certain type. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getRotationMatrix](../android/hardware/SensorManager.md))`(`R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `I:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `gravity:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `geomagnetic:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Computes the inclination matrix**I** as well as the rotation matrix**R**transforming a vector from the device coordinate system to the world's coordinate system which is defined as a direct orthonormal basis, where: |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRotationMatrixFromVector](../android/hardware/SensorManager.md))`(`R:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `rotationVector:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Helper function to convert a rotation vector to a rotation matrix. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Sensor](../android/hardware/Sensor.md)!\>! | [getSensorList](../android/hardware/SensorManager.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this method to get the list of available sensors of a certain type. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSensors](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensors())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDynamicSensorDiscoverySupported](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#isDynamicSensorDiscoverySupported())`()` Tell if dynamic sensor discovery feature is supported by system. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback))`(`callback:` ` [SensorManager.DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback)!`)` Add a [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) to receive dynamic sensor connection callbacks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSensors](../android/hardware/SensorManager.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDynamicSensorDiscoverySupported](../android/hardware/SensorManager.md))`()` Tell if dynamic sensor discovery feature is supported by system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDynamicSensorCallback](../android/hardware/SensorManager.md))`(`callback:` ` [SensorManager.DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md)!`)` Add a [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) to receive dynamic sensor connection callbacks. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback,%20android.os.Handler))`(`callback:` ` [SensorManager.DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback)!`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Add a [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) to receive dynamic sensor connection callbacks. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int))`(`listener:` ` [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!`, `sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor at the given sampling frequency. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20android.os.Handler))`(`listener:` ` [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!`, `sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDynamicSensorCallback](../android/hardware/SensorManager.md))`(`callback:` ` [SensorManager.DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Add a [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) to receive dynamic sensor connection callbacks. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorEventListener](../android/hardware/SensorEventListener.md)!`, `sensor:` ` [Sensor](../android/hardware/Sensor.md)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor at the given sampling frequency. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorEventListener](../android/hardware/SensorEventListener.md)!`, `sensor:` ` [Sensor](../android/hardware/Sensor.md)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int))`(`listener:` ` [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!`, `sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxReportLatencyUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor at the given sampling frequency and the given maximum reporting latency. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int,%20android.os.Handler))`(`listener:` ` [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!`, `sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxReportLatencyUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!`)` Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor at the given sampling frequency and the given maximum reporting latency. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorListener,%20kotlin.Int))`(`listener:` ` [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!`, `sensors:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a listener for given sensors. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorEventListener](../android/hardware/SensorEventListener.md)!`, `sensor:` ` [Sensor](../android/hardware/Sensor.md)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxReportLatencyUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor at the given sampling frequency and the given maximum reporting latency. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorEventListener](../android/hardware/SensorEventListener.md)!`, `sensor:` ` [Sensor](../android/hardware/Sensor.md)!`, `samplingPeriodUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxReportLatencyUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor at the given sampling frequency and the given maximum reporting latency. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorListener](../android/hardware/SensorListener.md)!`, `sensors:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a listener for given sensors. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorListener,%20kotlin.Int,%20kotlin.Int))`(`listener:` ` [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!`, `sensors:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a SensorListener for given sensors. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray))`(`inR:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `X:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `Y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outR:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Rotates the supplied rotation matrix so it is expressed in a different coordinate system. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestTriggerSensor](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#requestTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor))`(`listener:` ` [TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener)!`, `sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`)` Requests receiving trigger events for a trigger sensor. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorListener](../android/hardware/SensorListener.md)!`, `sensors:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Registers a SensorListener for given sensors. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remapCoordinateSystem](../android/hardware/SensorManager.md))`(`inR:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `X:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `Y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outR:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Rotates the supplied rotation matrix so it is expressed in a different coordinate system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestTriggerSensor](../android/hardware/SensorManager.md))`(`listener:` ` [TriggerEventListener](../android/hardware/TriggerEventListener.md)!`, `sensor:` ` [Sensor](../android/hardware/Sensor.md)!`)` Requests receiving trigger events for a trigger sensor. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback))`(`callback:` ` [SensorManager.DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback)!`)` Remove a [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) to stop sending dynamic sensor connection events to that callback. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener))`(`listener:` ` [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!`)` Unregisters a listener for all sensors. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener,%20android.hardware.Sensor))`(`listener:` ` [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!`, `sensor:` ` [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!`)` Unregisters a listener for the sensors with which it is registered. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDynamicSensorCallback](../android/hardware/SensorManager.md))`(`callback:` ` [SensorManager.DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md)!`)` Remove a [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) to stop sending dynamic sensor connection events to that callback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorEventListener](../android/hardware/SensorEventListener.md)!`)` Unregisters a listener for all sensors. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorEventListener](../android/hardware/SensorEventListener.md)!`, `sensor:` ` [Sensor](../android/hardware/Sensor.md)!`)` Unregisters a listener for the sensors with which it is registered. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorListener))`(`listener:` ` [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!`)` Unregisters a listener for all sensors. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorListener,%20kotlin.Int))`(`listener:` ` [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!`, `sensors:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unregisters a listener for the sensors with which it is registered. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorListener](../android/hardware/SensorListener.md)!`)` Unregisters a listener for all sensors. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterListener](../android/hardware/SensorManager.md))`(`listener:` ` [SensorListener](../android/hardware/SensorListener.md)!`, `sensors:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unregisters a listener for the sensors with which it is registered. |
 
 ## Constants
 
@@ -193,7 +193,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val AXIS_MINUS_X: Int
 ```
 
-see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) 
+see [remapCoordinateSystem](../android/hardware/SensorManager.md)) 
 
  Value: 129
 
@@ -205,7 +205,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val AXIS_MINUS_Y: Int
 ```
 
-see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) 
+see [remapCoordinateSystem](../android/hardware/SensorManager.md)) 
 
  Value: 130
 
@@ -217,7 +217,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val AXIS_MINUS_Z: Int
 ```
 
-see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) 
+see [remapCoordinateSystem](../android/hardware/SensorManager.md)) 
 
  Value: 131
 
@@ -229,7 +229,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val AXIS_X: Int
 ```
 
-see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) 
+see [remapCoordinateSystem](../android/hardware/SensorManager.md)) 
 
  Value: 1
 
@@ -241,7 +241,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val AXIS_Y: Int
 ```
 
-see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) 
+see [remapCoordinateSystem](../android/hardware/SensorManager.md)) 
 
  Value: 2
 
@@ -253,7 +253,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val AXIS_Z: Int
 ```
 
-see [remapCoordinateSystem](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#remapCoordinateSystem(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)) 
+see [remapCoordinateSystem](../android/hardware/SensorManager.md)) 
 
  Value: 3
 
@@ -266,9 +266,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val DATA_X: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-Index of the X value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) 
+Index of the X value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) 
 
  Value: 0
 
@@ -281,9 +281,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val DATA_Y: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-Index of the Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) 
+Index of the Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) 
 
  Value: 1
 
@@ -296,9 +296,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val DATA_Z: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-Index of the Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) 
+Index of the Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) 
 
  Value: 2
 
@@ -599,9 +599,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val RAW_DATA_INDEX: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-Offset to the untransformed values in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) 
+Offset to the untransformed values in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) 
 
  Value: 3
 
@@ -614,9 +614,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val RAW_DATA_X: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-Index of the untransformed X value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) 
+Index of the untransformed X value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) 
 
  Value: 3
 
@@ -629,9 +629,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val RAW_DATA_Y: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-Index of the untransformed Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) 
+Index of the untransformed Y value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) 
 
  Value: 4
 
@@ -644,9 +644,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val RAW_DATA_Z: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-Index of the untransformed Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](https://developer.android.com/reference/kotlin/android/hardware/SensorListener#onSensorChanged(kotlin.Int,%20kotlin.FloatArray)) 
+Index of the untransformed Z value in the array returned by [android.hardware.SensorListener#onSensorChanged](../android/hardware/SensorListener.md)) 
 
  Value: 5
 
@@ -659,9 +659,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_ACCELEROMETER: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing an accelerometer. See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing an accelerometer. See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 2
 
@@ -674,7 +674,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_ALL: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
 A constant that includes all sensors 
 
@@ -737,9 +737,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_LIGHT: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing an ambient light sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing an ambient light sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 16
 
@@ -752,9 +752,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_MAGNETIC_FIELD: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing a magnetic sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing a magnetic sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 8
 
@@ -767,7 +767,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_MAX: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
 Largest sensor ID 
 
@@ -782,7 +782,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_MIN: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
 Smallest sensor ID 
 
@@ -797,9 +797,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_ORIENTATION: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing an orientation sensor. See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing an orientation sensor. See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 1
 
@@ -812,9 +812,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_ORIENTATION_RAW: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing an orientation sensor. See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing an orientation sensor. See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 128
 
@@ -827,9 +827,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_PROXIMITY: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing a proximity sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing a proximity sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 32
 
@@ -902,9 +902,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_TEMPERATURE: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing a temperature sensor See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing a temperature sensor See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 4
 
@@ -917,9 +917,9 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SENSOR_TRICORDER: Int
 ```
 
-**Deprecated:** *use [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) instead.*
+**Deprecated:** *use [Sensor](../android/hardware/Sensor.md) instead.*
 
-A constant describing a Tricorder See [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener) for more details. 
+A constant describing a Tricorder See [SensorListener](../android/hardware/SensorListener.md) for more details. 
 
  Value: 64
 
@@ -950,12 +950,12 @@ open fun cancelTriggerSensor(
 
 Cancels receiving trigger events for a trigger sensor.
 
-Note that a Trigger sensor will be auto disabled if [TriggerEventListener.onTrigger(TriggerEvent)](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener#onTrigger(android.hardware.TriggerEvent))has triggered. This method is provided in case the user wants to explicitly cancel the request to receive trigger events.
+Note that a Trigger sensor will be auto disabled if [TriggerEventListener.onTrigger(TriggerEvent)](../android/hardware/TriggerEventListener.md))has triggered. This method is provided in case the user wants to explicitly cancel the request to receive trigger events.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener)!:The listener on which the [TriggerEventListener.onTrigger(TriggerEvent)](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener#onTrigger(android.hardware.TriggerEvent))is delivered.It should be the same as the one used in [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#requestTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor)) |
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:The sensor for which the trigger request should be canceled. If null, it cancels receiving trigger for all sensors associated with the listener. |
+| `listener` | [TriggerEventListener](../android/hardware/TriggerEventListener.md)!:The listener on which the [TriggerEventListener.onTrigger(TriggerEvent)](../android/hardware/TriggerEventListener.md))is delivered.It should be the same as the one used in [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](../android/hardware/SensorManager.md)) |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:The sensor for which the trigger request should be canceled. If null, it cancels receiving trigger for all sensors associated with the listener. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -973,15 +973,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun createDirectChannel(mem: HardwareBuffer!): SensorDirectChannel!
 ```
 
-Create a sensor direct channel backed by shared memory wrapped in HardwareBuffer object. The resulting channel can be used for delivering sensor events to native code, other processes, GPU/DSP or other co-processors without CPU intervention. This is the recommended for high performance sensor applications that use high sensor rates (e.g. greater than 200Hz) and cares about sensor event latency. Use the returned [android.hardware.SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel) object to configure direct report of sensor events. After use, call android.hardware.SensorDirectChannel#close() to free up resource in sensor system associated with the direct channel.
+Create a sensor direct channel backed by shared memory wrapped in HardwareBuffer object. The resulting channel can be used for delivering sensor events to native code, other processes, GPU/DSP or other co-processors without CPU intervention. This is the recommended for high performance sensor applications that use high sensor rates (e.g. greater than 200Hz) and cares about sensor event latency. Use the returned [android.hardware.SensorDirectChannel](../android/hardware/SensorDirectChannel.md) object to configure direct report of sensor events. After use, call android.hardware.SensorDirectChannel#close() to free up resource in sensor system associated with the direct channel.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mem` | [HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer)!:A [android.hardware.HardwareBuffer](https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer) shared memory object. |
+| `mem` | [HardwareBuffer](../android/hardware/HardwareBuffer.md)!:A [android.hardware.HardwareBuffer](../android/hardware/HardwareBuffer.md) shared memory object. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel)! | A [android.hardware.SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel) object. |
+| [SensorDirectChannel](../android/hardware/SensorDirectChannel.md)! | A [android.hardware.SensorDirectChannel](../android/hardware/SensorDirectChannel.md) object. |
 
 | Exceptions ||
 |----------------------------------|--------------------------------|
@@ -998,15 +998,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun createDirectChannel(mem: MemoryFile!): SensorDirectChannel!
 ```
 
-Create a sensor direct channel backed by shared memory wrapped in MemoryFile object. The resulting channel can be used for delivering sensor events to native code, other processes, GPU/DSP or other co-processors without CPU intervention. This is the recommended for high performance sensor applications that use high sensor rates (e.g. greater than 200Hz) and cares about sensor event latency. Use the returned [android.hardware.SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel) object to configure direct report of sensor events. After use, call android.hardware.SensorDirectChannel#close() to free up resource in sensor system associated with the direct channel.
+Create a sensor direct channel backed by shared memory wrapped in MemoryFile object. The resulting channel can be used for delivering sensor events to native code, other processes, GPU/DSP or other co-processors without CPU intervention. This is the recommended for high performance sensor applications that use high sensor rates (e.g. greater than 200Hz) and cares about sensor event latency. Use the returned [android.hardware.SensorDirectChannel](../android/hardware/SensorDirectChannel.md) object to configure direct report of sensor events. After use, call android.hardware.SensorDirectChannel#close() to free up resource in sensor system associated with the direct channel.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mem` | [MemoryFile](https://developer.android.com/reference/kotlin/android/os/MemoryFile.html#)!:A [android.os.MemoryFile](https://developer.android.com/reference/kotlin/android/os/MemoryFile.html#) shared memory object. |
+| `mem` | [MemoryFile](../android/os/MemoryFile.md)!:A [android.os.MemoryFile](../android/os/MemoryFile.md) shared memory object. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel)! | A [android.hardware.SensorDirectChannel](https://developer.android.com/reference/kotlin/android/hardware/SensorDirectChannel) object. |
+| [SensorDirectChannel](../android/hardware/SensorDirectChannel.md)! | A [android.hardware.SensorDirectChannel](../android/hardware/SensorDirectChannel.md) object. |
 
 | Exceptions ||
 |----------------------------------|--------------------------------|
@@ -1023,11 +1023,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun flush(listener: SensorEventListener!): Boolean
 ```
 
-Flushes the FIFO of all the sensors registered for this listener. If there are events in the FIFO of the sensor, they are returned as if the maxReportLatency of the FIFO has expired. Events are returned in the usual way through the SensorEventListener. This call doesn't affect the maxReportLatency for this sensor. This call is asynchronous and returns immediately. [onFlushCompleted](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener2#onFlushCompleted(android.hardware.Sensor))is called after all the events in the batch at the time of calling this method have been delivered successfully. If the hardware doesn't support flush, it still returns true and a trivial flush complete event is sent after the current event for all the clients registered for this sensor.
+Flushes the FIFO of all the sensors registered for this listener. If there are events in the FIFO of the sensor, they are returned as if the maxReportLatency of the FIFO has expired. Events are returned in the usual way through the SensorEventListener. This call doesn't affect the maxReportLatency for this sensor. This call is asynchronous and returns immediately. [onFlushCompleted](../android/hardware/SensorEventListener2.md))is called after all the events in the batch at the time of calling this method have been delivered successfully. If the hardware doesn't support flush, it still returns true and a trivial flush complete event is sent after the current event for all the clients registered for this sensor.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!:A [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) object which was previously used in a registerListener call. |
+| `listener` | [SensorEventListener](../android/hardware/SensorEventListener.md)!:A [SensorEventListener](../android/hardware/SensorEventListener.md) object which was previously used in a registerListener call. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1039,7 +1039,7 @@ Flushes the FIFO of all the sensors registered for this listener. If there are e
 
 **See Also**
 
-- [#registerListener(SensorEventListener, Sensor, int, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int)) 
+- [#registerListener(SensorEventListener, Sensor, int, int)](../android/hardware/SensorManager.md)) 
 
 ### getAltitude
 
@@ -1054,9 +1054,9 @@ open static fun getAltitude(
 
 Computes the Altitude in meters from the atmospheric pressure and the pressure at sea level.
 
-Typically the atmospheric pressure is read from a [Sensor.TYPE_PRESSURE](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PRESSURE:kotlin.Int) sensor. The pressure at sea level must be known, usually it can be retrieved from airport databases in the vicinity. If unknown, you can use [PRESSURE_STANDARD_ATMOSPHERE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#PRESSURE_STANDARD_ATMOSPHERE:kotlin.Float) as an approximation, but absolute altitudes won't be accurate.
+Typically the atmospheric pressure is read from a [Sensor.TYPE_PRESSURE](../android/hardware/Sensor.md) sensor. The pressure at sea level must be known, usually it can be retrieved from airport databases in the vicinity. If unknown, you can use [PRESSURE_STANDARD_ATMOSPHERE](../android/hardware/SensorManager.md) as an approximation, but absolute altitudes won't be accurate.
 
-To calculate altitude differences, you must calculate the difference between the altitudes at both points. If you don't know the altitude as sea level, you can use [PRESSURE_STANDARD_ATMOSPHERE](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#PRESSURE_STANDARD_ATMOSPHERE:kotlin.Float) instead, which will give good results considering the range of pressure typically involved.
+To calculate altitude differences, you must calculate the difference between the altitudes at both points. If you don't know the altitude as sea level, you can use [PRESSURE_STANDARD_ATMOSPHERE](../android/hardware/SensorManager.md) instead, which will give good results considering the range of pressure typically involved.
 
 ` float altitude_difference = getAltitude(SensorManager.PRESSURE_STANDARD_ATMOSPHERE, pressure_at_point2) - getAltitude(SensorManager.PRESSURE_STANDARD_ATMOSPHERE, pressure_at_point1); `
 
@@ -1105,7 +1105,7 @@ If the array length is 16, then the array elements represent this matrix
     \  R[12]   R[13]   R[14]   R[15]  /
  
 ```
-See [getOrientation](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray))for more detailed definition of the output.
+See [getOrientation](../android/hardware/SensorManager.md))for more detailed definition of the output.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1122,7 +1122,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun getDefaultSensor(type: Int): Sensor?
 ```
 
-Use this method to get the default sensor for a given type. Note that the returned sensor could be a composite sensor, and its data could be averaged or filtered. If you need to access the raw sensors use [getSensorList](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int)).
+Use this method to get the default sensor for a given type. Note that the returned sensor could be a composite sensor, and its data could be averaged or filtered. If you need to access the raw sensors use [getSensorList](../android/hardware/SensorManager.md)).
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------|
@@ -1130,12 +1130,12 @@ Use this method to get the default sensor for a given type. Note that the return
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)? | the default sensor matching the requested type if one exists and the application has the necessary permissions, or null otherwise. |
+| [Sensor](../android/hardware/Sensor.md)? | the default sensor matching the requested type if one exists and the application has the necessary permissions, or null otherwise. |
 
 **See Also**
 
-- [#getSensorList(int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int))
-- [android.hardware.Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) 
+- [#getSensorList(int)](../android/hardware/SensorManager.md))
+- [android.hardware.Sensor](../android/hardware/Sensor.md) 
 
 ### getDefaultSensor
 
@@ -1152,13 +1152,13 @@ Return a Sensor with the given type and wakeUp properties. If multiple sensors o
 
 For example,
 
-- getDefaultSensor([Sensor.TYPE_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int), true) returns a wake-up accelerometer sensor if it exists.
-- getDefaultSensor([Sensor.TYPE_PROXIMITY](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PROXIMITY:kotlin.Int), false) returns a non wake-up proximity sensor if it exists.
-- getDefaultSensor([Sensor.TYPE_PROXIMITY](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PROXIMITY:kotlin.Int), true) returns a wake-up proximity sensor which is the same as the Sensor returned by [getDefaultSensor(int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getDefaultSensor(kotlin.Int)).
+- getDefaultSensor([Sensor.TYPE_ACCELEROMETER](../android/hardware/Sensor.md), true) returns a wake-up accelerometer sensor if it exists.
+- getDefaultSensor([Sensor.TYPE_PROXIMITY](../android/hardware/Sensor.md), false) returns a non wake-up proximity sensor if it exists.
+- getDefaultSensor([Sensor.TYPE_PROXIMITY](../android/hardware/Sensor.md), true) returns a wake-up proximity sensor which is the same as the Sensor returned by [getDefaultSensor(int)](../android/hardware/SensorManager.md)).
 
 <br />
 
-Note: Sensors like [Sensor.TYPE_PROXIMITY](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_PROXIMITY:kotlin.Int) and [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int) are declared as wake-up sensors by default.
+Note: Sensors like [Sensor.TYPE_PROXIMITY](../android/hardware/Sensor.md) and [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md) are declared as wake-up sensors by default.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1167,11 +1167,11 @@ Note: Sensors like [Sensor.TYPE_PROXIMITY](https://developer.android.com/referen
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)? | the default sensor matching the requested type and wakeUp properties if one exists and the application has the necessary permissions, or null otherwise. |
+| [Sensor](../android/hardware/Sensor.md)? | the default sensor matching the requested type and wakeUp properties if one exists and the application has the necessary permissions, or null otherwise. |
 
 **See Also**
 
-- [android.hardware.Sensor#isWakeUpSensor()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor()) 
+- [android.hardware.Sensor#isWakeUpSensor()](../android/hardware/Sensor.md)) 
 
 ### getDynamicSensorList
 
@@ -1181,9 +1181,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getDynamicSensorList(type: Int): MutableList<Sensor!>!
 ```
 
-Use this method to get a list of available dynamic sensors of a certain type. Make multiple calls to get sensors of different types or use [Sensor.TYPE_ALL](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ALL:kotlin.Int) to get all dynamic sensors.
+Use this method to get a list of available dynamic sensors of a certain type. Make multiple calls to get sensors of different types or use [Sensor.TYPE_ALL](../android/hardware/Sensor.md) to get all dynamic sensors.
 
-NOTE: Both wake-up and non wake-up sensors matching the given type are returned. Check [Sensor.isWakeUpSensor()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor())to know the wake-up properties of the returned [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor).
+NOTE: Both wake-up and non wake-up sensors matching the given type are returned. Check [Sensor.isWakeUpSensor()](../android/hardware/Sensor.md))to know the wake-up properties of the returned [Sensor](../android/hardware/Sensor.md).
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------|
@@ -1191,11 +1191,11 @@ NOTE: Both wake-up and non wake-up sensors matching the given type are returned.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!>! | a list of dynamic sensors matching the requested type. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Sensor](../android/hardware/Sensor.md)!>! | a list of dynamic sensors matching the requested type. |
 
 **See Also**
 
-- [android.hardware.Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) 
+- [android.hardware.Sensor](../android/hardware/Sensor.md) 
 
 ### getInclination
 
@@ -1205,11 +1205,11 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getInclination(I: FloatArray!): Float
 ```
 
-Computes the geomagnetic inclination angle in radians from the inclination matrix**I** returned by [getRotationMatrix](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray)).
+Computes the geomagnetic inclination angle in radians from the inclination matrix**I** returned by [getRotationMatrix](../android/hardware/SensorManager.md)).
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `I` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:inclination matrix see [getRotationMatrix](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray)). |
+| `I` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:inclination matrix see [getRotationMatrix](../android/hardware/SensorManager.md)). |
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------|
@@ -1219,7 +1219,7 @@ Computes the geomagnetic inclination angle in radians from the inclination matri
 
 - [#getRotationMatrix(float[], float[], float[], float[])](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray))
 - [#getOrientation(float[], float[])](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray))
-- [android.hardware.GeomagneticField](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField) 
+- [android.hardware.GeomagneticField](../android/hardware/GeomagneticField.md) 
 
 ### getOrientation
 
@@ -1244,7 +1244,7 @@ Applying these three rotations in the azimuth, pitch, roll order transforms an i
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `R` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:rotation matrix see [getRotationMatrix](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray)). |
+| `R` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:rotation matrix see [getRotationMatrix](../android/hardware/SensorManager.md)). |
 | `values` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:an array of 3 floats to hold the result. |
 
 | Return ||
@@ -1254,7 +1254,7 @@ Applying these three rotations in the azimuth, pitch, roll order transforms an i
 **See Also**
 
 - [#getRotationMatrix(float[], float[], float[], float[])](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray))
-- [android.hardware.GeomagneticField](https://developer.android.com/reference/kotlin/android/hardware/GeomagneticField) 
+- [android.hardware.GeomagneticField](../android/hardware/GeomagneticField.md) 
 
 ### getQuaternionFromVector
 
@@ -1307,7 +1307,7 @@ By definition:
 
 **R**is the identity matrix when the device is aligned with the world's coordinate system, that is, when the device's X axis points toward East, the Y axis points to the North Pole and the device is facing the sky.
 
-**I** is a rotation matrix transforming the geomagnetic vector into the same coordinate space as gravity (the world's coordinate space).**I** is a simple rotation around the X axis. The inclination angle in radians can be computed with [getInclination](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getInclination(kotlin.FloatArray)).
+**I** is a rotation matrix transforming the geomagnetic vector into the same coordinate space as gravity (the world's coordinate space).**I** is a simple rotation around the X axis. The inclination angle in radians can be computed with [getInclination](../android/hardware/SensorManager.md)).
 
 Each matrix is returned either as a 3x3 or 4x4 row-major matrix depending on the length of the passed array:
 
@@ -1351,9 +1351,9 @@ The matrices returned by this function are meaningful only when the device is no
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `R` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:is an array of 9 floats holding the rotation matrix**R** when this function returns. R can be null. <br /> |
 | `I` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:is an array of 9 floats holding the rotation matrix**I** when this function returns. I can be null. <br /> |
-| `gravity` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:is an array of 3 floats containing the gravity vector expressed in the device's coordinate. You can simply use the [values](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray) returned by a [SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent) of a [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) of type [TYPE_ACCELEROMETER](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ACCELEROMETER:kotlin.Int). <br /> |
+| `gravity` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:is an array of 3 floats containing the gravity vector expressed in the device's coordinate. You can simply use the [values](../android/hardware/SensorEvent.md) returned by a [SensorEvent](../android/hardware/SensorEvent.md) of a [Sensor](../android/hardware/Sensor.md) of type [TYPE_ACCELEROMETER](../android/hardware/Sensor.md). <br /> |
 | --- | --- |
-| `geomagnetic` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:is an array of 3 floats containing the geomagnetic vector expressed in the device's coordinate. You can simply use the [values](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent#values:kotlin.FloatArray) returned by a [SensorEvent](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent) of a [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) of type [TYPE_MAGNETIC_FIELD](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_MAGNETIC_FIELD:kotlin.Int). |
+| `geomagnetic` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:is an array of 3 floats containing the geomagnetic vector expressed in the device's coordinate. You can simply use the [values](../android/hardware/SensorEvent.md) returned by a [SensorEvent](../android/hardware/SensorEvent.md) of a [Sensor](../android/hardware/Sensor.md) of type [TYPE_MAGNETIC_FIELD](../android/hardware/Sensor.md). |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1409,9 +1409,9 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSensorList(type: Int): MutableList<Sensor!>!
 ```
 
-Use this method to get the list of available sensors of a certain type. Make multiple calls to get sensors of different types or use [Sensor.TYPE_ALL](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_ALL:kotlin.Int) to get all the sensors. Note that the [android.hardware.Sensor#getName()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#getName())is expected to yield a value that is unique across any sensors that return the same value for [android.hardware.Sensor#getType()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#getType()).
+Use this method to get the list of available sensors of a certain type. Make multiple calls to get sensors of different types or use [Sensor.TYPE_ALL](../android/hardware/Sensor.md) to get all the sensors. Note that the [android.hardware.Sensor#getName()](../android/hardware/Sensor.md))is expected to yield a value that is unique across any sensors that return the same value for [android.hardware.Sensor#getType()](../android/hardware/Sensor.md)).
 
-NOTE: Both wake-up and non wake-up sensors matching the given type are returned. Check [Sensor.isWakeUpSensor()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor())to know the wake-up properties of the returned [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor).
+NOTE: Both wake-up and non wake-up sensors matching the given type are returned. Check [Sensor.isWakeUpSensor()](../android/hardware/Sensor.md))to know the wake-up properties of the returned [Sensor](../android/hardware/Sensor.md).
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------|
@@ -1419,12 +1419,12 @@ NOTE: Both wake-up and non wake-up sensors matching the given type are returned.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!>! | a list of sensors matching the asked type. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Sensor](../android/hardware/Sensor.md)!>! | a list of sensors matching the asked type. |
 
 **See Also**
 
-- [#getDefaultSensor(int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getDefaultSensor(kotlin.Int))
-- [android.hardware.Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) 
+- [#getDefaultSensor(int)](../android/hardware/SensorManager.md))
+- [android.hardware.Sensor](../android/hardware/Sensor.md) 
 
 ### getSensors
 
@@ -1435,7 +1435,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun getSensors(): Int
 ```
 
-**Deprecated:** *This method is deprecated, use [SensorManager.getSensorList(int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int))instead*
+**Deprecated:** *This method is deprecated, use [SensorManager.getSensorList(int)](../android/hardware/SensorManager.md))instead*
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------|
@@ -1463,11 +1463,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun registerDynamicSensorCallback(callback: SensorManager.DynamicSensorCallback!): Unit
 ```
 
-Add a [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) to receive dynamic sensor connection callbacks. Repeat registration with the already registered callback object will have no additional effect.
+Add a [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) to receive dynamic sensor connection callbacks. Repeat registration with the already registered callback object will have no additional effect.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [SensorManager.DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback)!:An object that implements the [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) interface for receiving callbacks. |
+| `callback` | [SensorManager.DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md)!:An object that implements the [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) interface for receiving callbacks. |
 
 | Exceptions ||
 |--------------------------------------|------------------------|
@@ -1475,7 +1475,7 @@ Add a [DynamicSensorCallback](https://developer.android.com/reference/kotlin/and
 
 **See Also**
 
-- [#registerDynamicSensorCallback(DynamicSensorCallback, Handler)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback,%20android.os.Handler)) 
+- [#registerDynamicSensorCallback(DynamicSensorCallback, Handler)](../android/hardware/SensorManager.md)) 
 
 ### registerDynamicSensorCallback
 
@@ -1488,12 +1488,12 @@ open fun registerDynamicSensorCallback(
 ): Unit
 ```
 
-Add a [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) to receive dynamic sensor connection callbacks. Repeat registration with the already registered callback object will have no additional effect.
+Add a [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) to receive dynamic sensor connection callbacks. Repeat registration with the already registered callback object will have no additional effect.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [SensorManager.DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback)!:An object that implements the [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) interface for receiving callbacks. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:The [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) the will be delivered to. |
+| `callback` | [SensorManager.DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md)!:An object that implements the [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) interface for receiving callbacks. |
+| `handler` | [Handler](../android/os/Handler.md)!:The [Handler](../android/os/Handler.md) the will be delivered to. |
 
 | Exceptions ||
 |--------------------------------------|------------------------|
@@ -1511,21 +1511,21 @@ open fun registerListener(
 ): Boolean
 ```
 
-Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor at the given sampling frequency.
+Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor at the given sampling frequency.
 
-The events will be delivered to the provided`SensorEventListener`as soon as they are available. To reduce the power consumption, applications can use [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int))instead and specify a positive non-zero maximum reporting latency.
+The events will be delivered to the provided`SensorEventListener`as soon as they are available. To reduce the power consumption, applications can use [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](../android/hardware/SensorManager.md))instead and specify a positive non-zero maximum reporting latency.
 
-In the case of non-wake-up sensors, the events are only delivered while the Application Processor (AP) is not in suspend mode. See [Sensor.isWakeUpSensor()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor())for more details. To ensure delivery of events from non-wake-up sensors even when the screen is OFF, the application registering to the sensor must hold a partial wake-lock to keep the AP awake, otherwise some events might be lost while the AP is asleep. Note that although events might be lost while the AP is asleep, the sensor will still consume power if it is not explicitly deactivated by the application. Applications must unregister their`SensorEventListener`s in their activity's`onPause()`method to avoid consuming power while the device is inactive. See [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int))for more details on hardware FIFO (queueing) capabilities and when some sensor events might be lost.
+In the case of non-wake-up sensors, the events are only delivered while the Application Processor (AP) is not in suspend mode. See [Sensor.isWakeUpSensor()](../android/hardware/Sensor.md))for more details. To ensure delivery of events from non-wake-up sensors even when the screen is OFF, the application registering to the sensor must hold a partial wake-lock to keep the AP awake, otherwise some events might be lost while the AP is asleep. Note that although events might be lost while the AP is asleep, the sensor will still consume power if it is not explicitly deactivated by the application. Applications must unregister their`SensorEventListener`s in their activity's`onPause()`method to avoid consuming power while the device is inactive. See [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](../android/hardware/SensorManager.md))for more details on hardware FIFO (queueing) capabilities and when some sensor events might be lost.
 
-In the case of wake-up sensors, each event generated by the sensor will cause the AP to wake-up, ensuring that each event can be delivered. Because of this, registering to a wake-up sensor has very significant power implications. Call [Sensor.isWakeUpSensor()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor())to check whether a sensor is a wake-up sensor. See [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int))for information on how to reduce the power impact of registering to wake-up sensors.
+In the case of wake-up sensors, each event generated by the sensor will cause the AP to wake-up, ensuring that each event can be delivered. Because of this, registering to a wake-up sensor has very significant power implications. Call [Sensor.isWakeUpSensor()](../android/hardware/Sensor.md))to check whether a sensor is a wake-up sensor. See [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](../android/hardware/SensorManager.md))for information on how to reduce the power impact of registering to wake-up sensors.
 
-Note: Don't use this method with one-shot trigger sensors such as [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int). Use [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#requestTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor))instead. Use [Sensor.getReportingMode()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#getReportingMode())to obtain the reporting mode of a given sensor.
+Note: Don't use this method with one-shot trigger sensors such as [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md). Use [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](../android/hardware/SensorManager.md))instead. Use [Sensor.getReportingMode()](../android/hardware/Sensor.md))to obtain the reporting mode of a given sensor.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!:A [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) object. |
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:The [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) to register to. |
-| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The rate [sensor events](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent) are delivered at. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. The value must be one of [SENSOR_DELAY_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_NORMAL:kotlin.Int), [SENSOR_DELAY_UI](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_UI:kotlin.Int), [SENSOR_DELAY_GAME](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_GAME:kotlin.Int), or [SENSOR_DELAY_FASTEST](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_FASTEST:kotlin.Int) or, the desired delay between events in microseconds. Specifying the delay in microseconds only works from Android 2.3 (API level 9) onwards. For earlier releases, you must use one of the`SENSOR_DELAY_*`constants. |
+| `listener` | [SensorEventListener](../android/hardware/SensorEventListener.md)!:A [SensorEventListener](../android/hardware/SensorEventListener.md) object. |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:The [Sensor](../android/hardware/Sensor.md) to register to. |
+| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The rate [sensor events](../android/hardware/SensorEvent.md) are delivered at. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. The value must be one of [SENSOR_DELAY_NORMAL](../android/hardware/SensorManager.md), [SENSOR_DELAY_UI](../android/hardware/SensorManager.md), [SENSOR_DELAY_GAME](../android/hardware/SensorManager.md), or [SENSOR_DELAY_FASTEST](../android/hardware/SensorManager.md) or, the desired delay between events in microseconds. Specifying the delay in microseconds only works from Android 2.3 (API level 9) onwards. For earlier releases, you must use one of the`SENSOR_DELAY_*`constants. |
 | --- | --- |
 
 | Return ||
@@ -1534,9 +1534,9 @@ Note: Don't use this method with one-shot trigger sensors such as [Sensor.TYPE_S
 
 **See Also**
 
-- [#registerListener(SensorEventListener, Sensor, int, Handler)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20android.os.Handler))
-- [#unregisterListener(SensorEventListener)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener))
-- [#unregisterListener(SensorEventListener, Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener,%20android.hardware.Sensor)) 
+- [#registerListener(SensorEventListener, Sensor, int, Handler)](../android/hardware/SensorManager.md))
+- [#unregisterListener(SensorEventListener)](../android/hardware/SensorManager.md))
+- [#unregisterListener(SensorEventListener, Sensor)](../android/hardware/SensorManager.md)) 
 
 ### registerListener
 
@@ -1551,21 +1551,21 @@ open fun registerListener(
 ): Boolean
 ```
 
-Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor. Events are delivered in continuous mode as soon as they are available. To reduce the power consumption, applications can use [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int))instead and specify a positive non-zero maximum reporting latency.
+Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor. Events are delivered in continuous mode as soon as they are available. To reduce the power consumption, applications can use [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)](../android/hardware/SensorManager.md))instead and specify a positive non-zero maximum reporting latency.
 
 <br />
 
-Note: Don't use this method with a one shot trigger sensor such as [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int). Use [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#requestTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor))instead.
+Note: Don't use this method with a one shot trigger sensor such as [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md). Use [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](../android/hardware/SensorManager.md))instead.
 
 <br />
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!:A [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) object. |
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:The [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) to register to. |
-| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The rate [sensor events](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent) are delivered at. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. The value must be one of [SENSOR_DELAY_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_NORMAL:kotlin.Int), [SENSOR_DELAY_UI](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_UI:kotlin.Int), [SENSOR_DELAY_GAME](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_GAME:kotlin.Int), or [SENSOR_DELAY_FASTEST](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_FASTEST:kotlin.Int) or, the desired delay between events in microseconds. Specifying the delay in microseconds only works from Android 2.3 (API level 9) onwards. For earlier releases, you must use one of the`SENSOR_DELAY_*`constants. |
+| `listener` | [SensorEventListener](../android/hardware/SensorEventListener.md)!:A [SensorEventListener](../android/hardware/SensorEventListener.md) object. |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:The [Sensor](../android/hardware/Sensor.md) to register to. |
+| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The rate [sensor events](../android/hardware/SensorEvent.md) are delivered at. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. The value must be one of [SENSOR_DELAY_NORMAL](../android/hardware/SensorManager.md), [SENSOR_DELAY_UI](../android/hardware/SensorManager.md), [SENSOR_DELAY_GAME](../android/hardware/SensorManager.md), or [SENSOR_DELAY_FASTEST](../android/hardware/SensorManager.md) or, the desired delay between events in microseconds. Specifying the delay in microseconds only works from Android 2.3 (API level 9) onwards. For earlier releases, you must use one of the`SENSOR_DELAY_*`constants. |
 | --- | --- |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:The [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) the [sensor events](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent) will be delivered to. |
+| `handler` | [Handler](../android/os/Handler.md)!:The [Handler](../android/os/Handler.md) the [sensor events](../android/hardware/SensorEvent.md) will be delivered to. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -1573,9 +1573,9 @@ Note: Don't use this method with a one shot trigger sensor such as [Sensor.TYPE_
 
 **See Also**
 
-- [#registerListener(SensorEventListener, Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int))
-- [#unregisterListener(SensorEventListener)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener))
-- [#unregisterListener(SensorEventListener, Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener,%20android.hardware.Sensor)) 
+- [#registerListener(SensorEventListener, Sensor, int)](../android/hardware/SensorManager.md))
+- [#unregisterListener(SensorEventListener)](../android/hardware/SensorManager.md))
+- [#unregisterListener(SensorEventListener, Sensor)](../android/hardware/SensorManager.md)) 
 
 ### registerListener
 
@@ -1590,29 +1590,29 @@ open fun registerListener(
 ): Boolean
 ```
 
-Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor at the given sampling frequency and the given maximum reporting latency.
+Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor at the given sampling frequency and the given maximum reporting latency.
 
-This function is similar to [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int))but it allows events to stay temporarily in the hardware FIFO (queue) before being delivered. The events can be stored in the hardware FIFO up to`maxReportLatencyUs`microseconds. Once one of the events in the FIFO needs to be reported, all of the events in the FIFO are reported sequentially. This means that some events will be reported before the maximum reporting latency has elapsed.
+This function is similar to [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](../android/hardware/SensorManager.md))but it allows events to stay temporarily in the hardware FIFO (queue) before being delivered. The events can be stored in the hardware FIFO up to`maxReportLatencyUs`microseconds. Once one of the events in the FIFO needs to be reported, all of the events in the FIFO are reported sequentially. This means that some events will be reported before the maximum reporting latency has elapsed.
 
-When`maxReportLatencyUs`is 0, the call is equivalent to a call to [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)), as it requires the events to be delivered as soon as possible.
+When`maxReportLatencyUs`is 0, the call is equivalent to a call to [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](../android/hardware/SensorManager.md)), as it requires the events to be delivered as soon as possible.
 
-When`sensor.maxFifoEventCount()`is 0, the sensor does not use a FIFO, so the call will also be equivalent to [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)).
+When`sensor.maxFifoEventCount()`is 0, the sensor does not use a FIFO, so the call will also be equivalent to [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](../android/hardware/SensorManager.md)).
 
-Setting`maxReportLatencyUs`to a positive value allows to reduce the number of interrupts the AP (Application Processor) receives, hence reducing power consumption, as the AP can switch to a lower power state while the sensor is capturing the data. This is especially important when registering to wake-up sensors, for which each interrupt causes the AP to wake up if it was in suspend mode. See [Sensor.isWakeUpSensor()](https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor())for more information on wake-up sensors.
+Setting`maxReportLatencyUs`to a positive value allows to reduce the number of interrupts the AP (Application Processor) receives, hence reducing power consumption, as the AP can switch to a lower power state while the sensor is capturing the data. This is especially important when registering to wake-up sensors, for which each interrupt causes the AP to wake up if it was in suspend mode. See [Sensor.isWakeUpSensor()](../android/hardware/Sensor.md))for more information on wake-up sensors.
 
 <br />
 
-Note: Don't use this method with one-shot trigger sensors such as [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int). Use [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#requestTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor))instead.
+Note: Don't use this method with one-shot trigger sensors such as [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md). Use [requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](../android/hardware/SensorManager.md))instead.
 
 <br />
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!:A [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) object that will receive the sensor events. If the application is interested in receiving flush complete notifications, it should register with [SensorEventListener2](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) instead. |
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:The [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) to register to. |
-| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired delay between two consecutive events in microseconds. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. Can be one of [SENSOR_DELAY_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_NORMAL:kotlin.Int), [SENSOR_DELAY_UI](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_UI:kotlin.Int), [SENSOR_DELAY_GAME](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_GAME:kotlin.Int), [SENSOR_DELAY_FASTEST](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_FASTEST:kotlin.Int) or the delay in microseconds. |
+| `listener` | [SensorEventListener](../android/hardware/SensorEventListener.md)!:A [SensorEventListener](../android/hardware/SensorEventListener.md) object that will receive the sensor events. If the application is interested in receiving flush complete notifications, it should register with [SensorEventListener2](../android/hardware/SensorEventListener.md) instead. |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:The [Sensor](../android/hardware/Sensor.md) to register to. |
+| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired delay between two consecutive events in microseconds. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. Can be one of [SENSOR_DELAY_NORMAL](../android/hardware/SensorManager.md), [SENSOR_DELAY_UI](../android/hardware/SensorManager.md), [SENSOR_DELAY_GAME](../android/hardware/SensorManager.md), [SENSOR_DELAY_FASTEST](../android/hardware/SensorManager.md) or the delay in microseconds. |
 | --- | --- |
-| `maxReportLatencyUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Maximum time in microseconds that events can be delayed before being reported to the application. A large value allows reducing the power consumption associated with the sensor. If maxReportLatencyUs is set to zero, events are delivered as soon as they are available, which is equivalent to calling [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)). |
+| `maxReportLatencyUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Maximum time in microseconds that events can be delayed before being reported to the application. A large value allows reducing the power consumption associated with the sensor. If maxReportLatencyUs is set to zero, events are delivered as soon as they are available, which is equivalent to calling [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](../android/hardware/SensorManager.md)). |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -1620,9 +1620,9 @@ Note: Don't use this method with one-shot trigger sensors such as [Sensor.TYPE_S
 
 **See Also**
 
-- [#registerListener(SensorEventListener, Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int))
-- [#unregisterListener(SensorEventListener)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener))
-- [#flush(SensorEventListener)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#flush(android.hardware.SensorEventListener)) 
+- [#registerListener(SensorEventListener, Sensor, int)](../android/hardware/SensorManager.md))
+- [#unregisterListener(SensorEventListener)](../android/hardware/SensorManager.md))
+- [#flush(SensorEventListener)](../android/hardware/SensorManager.md)) 
 
 ### registerListener
 
@@ -1638,16 +1638,16 @@ open fun registerListener(
 ): Boolean
 ```
 
-Registers a [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) for the given sensor at the given sampling frequency and the given maximum reporting latency.
+Registers a [SensorEventListener](../android/hardware/SensorEventListener.md) for the given sensor at the given sampling frequency and the given maximum reporting latency.
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!:A [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) object that will receive the sensor events. If the application is interested in receiving flush complete notifications, it should register with [SensorEventListener2](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener) instead. |
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:The [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor) to register to. |
-| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired delay between two consecutive events in microseconds. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. Can be one of [SENSOR_DELAY_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_NORMAL:kotlin.Int), [SENSOR_DELAY_UI](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_UI:kotlin.Int), [SENSOR_DELAY_GAME](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_GAME:kotlin.Int), [SENSOR_DELAY_FASTEST](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_FASTEST:kotlin.Int) or the delay in microseconds. |
+| `listener` | [SensorEventListener](../android/hardware/SensorEventListener.md)!:A [SensorEventListener](../android/hardware/SensorEventListener.md) object that will receive the sensor events. If the application is interested in receiving flush complete notifications, it should register with [SensorEventListener2](../android/hardware/SensorEventListener.md) instead. |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:The [Sensor](../android/hardware/Sensor.md) to register to. |
+| `samplingPeriodUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired delay between two consecutive events in microseconds. This is only a hint to the system. Events may be received faster or slower than the specified rate. Usually events are received faster. Can be one of [SENSOR_DELAY_NORMAL](../android/hardware/SensorManager.md), [SENSOR_DELAY_UI](../android/hardware/SensorManager.md), [SENSOR_DELAY_GAME](../android/hardware/SensorManager.md), [SENSOR_DELAY_FASTEST](../android/hardware/SensorManager.md) or the delay in microseconds. |
 | --- | --- |
-| `maxReportLatencyUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Maximum time in microseconds that events can be delayed before being reported to the application. A large value allows reducing the power consumption associated with the sensor. If maxReportLatencyUs is set to zero, events are delivered as soon as they are available, which is equivalent to calling [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)). |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!:The [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#) the [sensor events](https://developer.android.com/reference/kotlin/android/hardware/SensorEvent) will be delivered to. |
+| `maxReportLatencyUs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Maximum time in microseconds that events can be delayed before being reported to the application. A large value allows reducing the power consumption associated with the sensor. If maxReportLatencyUs is set to zero, events are delivered as soon as they are available, which is equivalent to calling [registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)](../android/hardware/SensorManager.md)). |
+| `handler` | [Handler](../android/os/Handler.md)!:The [Handler](../android/os/Handler.md) the [sensor events](../android/hardware/SensorEvent.md) will be delivered to. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -1655,7 +1655,7 @@ Registers a [SensorEventListener](https://developer.android.com/reference/kotlin
 
 **See Also**
 
-- [#registerListener(SensorEventListener, Sensor, int, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int)) 
+- [#registerListener(SensorEventListener, Sensor, int, int)](../android/hardware/SensorManager.md)) 
 
 ### registerListener
 
@@ -1669,13 +1669,13 @@ open fun registerListener(
 ): Boolean
 ```
 
-**Deprecated:** *This method is deprecated, use [SensorManager.registerListener(SensorEventListener, Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int))instead.*
+**Deprecated:** *This method is deprecated, use [SensorManager.registerListener(SensorEventListener, Sensor, int)](../android/hardware/SensorManager.md))instead.*
 
 Registers a listener for given sensors.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!:sensor listener object |
+| `listener` | [SensorListener](../android/hardware/SensorListener.md)!:sensor listener object |
 | `sensors` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit masks of the sensors to register to |
 
 | Return ||
@@ -1695,15 +1695,15 @@ open fun registerListener(
 ): Boolean
 ```
 
-**Deprecated:** *This method is deprecated, use [SensorManager.registerListener(SensorEventListener, Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int))instead.*
+**Deprecated:** *This method is deprecated, use [SensorManager.registerListener(SensorEventListener, Sensor, int)](../android/hardware/SensorManager.md))instead.*
 
 Registers a SensorListener for given sensors.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!:sensor listener object |
+| `listener` | [SensorListener](../android/hardware/SensorListener.md)!:sensor listener object |
 | `sensors` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit masks of the sensors to register to |
-| `rate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):rate of events. This is only a hint to the system. events may be received faster or slower than the specified rate. Usually events are received faster. The value must be one of [SENSOR_DELAY_NORMAL](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_NORMAL:kotlin.Int), [SENSOR_DELAY_UI](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_UI:kotlin.Int), [SENSOR_DELAY_GAME](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_GAME:kotlin.Int), or [SENSOR_DELAY_FASTEST](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#SENSOR_DELAY_FASTEST:kotlin.Int). |
+| `rate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):rate of events. This is only a hint to the system. events may be received faster or slower than the specified rate. Usually events are received faster. The value must be one of [SENSOR_DELAY_NORMAL](../android/hardware/SensorManager.md), [SENSOR_DELAY_UI](../android/hardware/SensorManager.md), [SENSOR_DELAY_GAME](../android/hardware/SensorManager.md), or [SENSOR_DELAY_FASTEST](../android/hardware/SensorManager.md). |
 | --- | --- |
 
 | Return ||
@@ -1723,9 +1723,9 @@ open static fun remapCoordinateSystem(
 ): Boolean
 ```
 
-Rotates the supplied rotation matrix so it is expressed in a different coordinate system. This is typically used when an application needs to compute the three orientation angles of the device (see [getOrientation](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray))) in a different coordinate system.
+Rotates the supplied rotation matrix so it is expressed in a different coordinate system. This is typically used when an application needs to compute the three orientation angles of the device (see [getOrientation](../android/hardware/SensorManager.md))) in a different coordinate system.
 
-When the rotation matrix is used for drawing (for instance with OpenGL ES), it usually**doesn't need** to be transformed by this function, unless the screen is physically rotated, in which case you can use [Display.getRotation()](https://developer.android.com/reference/kotlin/android/view/Display.html#getRotation())to retrieve the current rotation of the screen. Note that because the user is generally free to rotate their screen, you often should consider the rotation in deciding the parameters to use here.
+When the rotation matrix is used for drawing (for instance with OpenGL ES), it usually**doesn't need** to be transformed by this function, unless the screen is physically rotated, in which case you can use [Display.getRotation()](../android/view/Display.md))to retrieve the current rotation of the screen. Note that because the user is generally free to rotate their screen, you often should consider the rotation in deciding the parameters to use here.
 
 Examples:
 
@@ -1733,14 +1733,14 @@ Examples:
 
 - Using the camera (Y axis along the camera's axis) for an augmented reality application where the rotation angles are needed:
 `remapCoordinateSystem(inR, AXIS_X, AXIS_Z, outR);`
-- Using the device as a mechanical compass when rotation is [Surface.ROTATION_90](https://developer.android.com/reference/kotlin/android/view/Surface.html#ROTATION_90:kotlin.Int):
-`remapCoordinateSystem(inR, AXIS_Y, AXIS_MINUS_X, outR);`Beware of the above example. This call is needed only to account for a rotation from its natural orientation when calculating the rotation angles (see [getOrientation](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray))). If the rotation matrix is also used for rendering, it may not need to be transformed, for instance if your [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#) is running in landscape mode.
+- Using the device as a mechanical compass when rotation is [Surface.ROTATION_90](../android/view/Surface.md):
+`remapCoordinateSystem(inR, AXIS_Y, AXIS_MINUS_X, outR);`Beware of the above example. This call is needed only to account for a rotation from its natural orientation when calculating the rotation angles (see [getOrientation](../android/hardware/SensorManager.md))). If the rotation matrix is also used for rendering, it may not need to be transformed, for instance if your [Activity](../android/app/Activity.md) is running in landscape mode.
 
 Since the resulting coordinate system is orthonormal, only two axes need to be specified.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inR` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:the rotation matrix to be transformed. Usually it is the matrix returned by [getRotationMatrix](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getRotationMatrix(kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray,%20kotlin.FloatArray)). |
+| `inR` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!:the rotation matrix to be transformed. Usually it is the matrix returned by [getRotationMatrix](../android/hardware/SensorManager.md)). |
 | `X` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):defines the axis of the new coordinate system that coincide with the X axis of the original coordinate system. |
 | `Y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):defines the axis of the new coordinate system that coincide with the Y axis of the original coordinate system. |
 | --- | --- |
@@ -1767,12 +1767,12 @@ open fun requestTriggerSensor(
 
 Requests receiving trigger events for a trigger sensor.
 
-When the sensor detects a trigger event condition, such as significant motion in the case of the [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int), the provided trigger listener will be invoked once and then its request to receive trigger events will be canceled. To continue receiving trigger events, the application must request to receive trigger events again.
+When the sensor detects a trigger event condition, such as significant motion in the case of the [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md), the provided trigger listener will be invoked once and then its request to receive trigger events will be canceled. To continue receiving trigger events, the application must request to receive trigger events again.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [TriggerEventListener](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener)!:The listener on which the [TriggerEventListener.onTrigger(TriggerEvent)](https://developer.android.com/reference/kotlin/android/hardware/TriggerEventListener#onTrigger(android.hardware.TriggerEvent))will be delivered. |
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:The sensor to be enabled. |
+| `listener` | [TriggerEventListener](../android/hardware/TriggerEventListener.md)!:The listener on which the [TriggerEventListener.onTrigger(TriggerEvent)](../android/hardware/TriggerEventListener.md))will be delivered. |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:The sensor to be enabled. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------|
@@ -1790,11 +1790,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterDynamicSensorCallback(callback: SensorManager.DynamicSensorCallback!): Unit
 ```
 
-Remove a [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) to stop sending dynamic sensor connection events to that callback.
+Remove a [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) to stop sending dynamic sensor connection events to that callback.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [SensorManager.DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback)!:An object that implements the [DynamicSensorCallback](https://developer.android.com/reference/kotlin/android/hardware/SensorManager.DynamicSensorCallback) interface for receiving callbacks. |
+| `callback` | [SensorManager.DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md)!:An object that implements the [DynamicSensorCallback](../android/hardware/SensorManager.DynamicSensorCallback.md) interface for receiving callbacks. |
 
 ### unregisterListener
 
@@ -1808,12 +1808,12 @@ Unregisters a listener for all sensors.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!:a SensorListener object |
+| `listener` | [SensorEventListener](../android/hardware/SensorEventListener.md)!:a SensorListener object |
 
 **See Also**
 
-- [#unregisterListener(SensorEventListener, Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener,%20android.hardware.Sensor))
-- [#registerListener(SensorEventListener, Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)) 
+- [#unregisterListener(SensorEventListener, Sensor)](../android/hardware/SensorManager.md))
+- [#registerListener(SensorEventListener, Sensor, int)](../android/hardware/SensorManager.md)) 
 
 ### unregisterListener
 
@@ -1828,17 +1828,17 @@ open fun unregisterListener(
 
 Unregisters a listener for the sensors with which it is registered.
 
-Note: Don't use this method with a one shot trigger sensor such as [Sensor.TYPE_SIGNIFICANT_MOTION](https://developer.android.com/reference/kotlin/android/hardware/Sensor#TYPE_SIGNIFICANT_MOTION:kotlin.Int). Use [cancelTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#cancelTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor))instead.
+Note: Don't use this method with a one shot trigger sensor such as [Sensor.TYPE_SIGNIFICANT_MOTION](../android/hardware/Sensor.md). Use [cancelTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)](../android/hardware/SensorManager.md))instead.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorEventListener](https://developer.android.com/reference/kotlin/android/hardware/SensorEventListener)!:a SensorEventListener object |
-| `sensor` | [Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor)!:the sensor to unregister from |
+| `listener` | [SensorEventListener](../android/hardware/SensorEventListener.md)!:a SensorEventListener object |
+| `sensor` | [Sensor](../android/hardware/Sensor.md)!:the sensor to unregister from |
 
 **See Also**
 
-- [#unregisterListener(SensorEventListener)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener))
-- [#registerListener(SensorEventListener, Sensor, int)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)) 
+- [#unregisterListener(SensorEventListener)](../android/hardware/SensorManager.md))
+- [#registerListener(SensorEventListener, Sensor, int)](../android/hardware/SensorManager.md)) 
 
 ### unregisterListener
 
@@ -1849,13 +1849,13 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun unregisterListener(listener: SensorListener!): Unit
 ```
 
-**Deprecated:** *This method is deprecated, use [SensorManager.unregisterListener(SensorEventListener)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener))instead.*
+**Deprecated:** *This method is deprecated, use [SensorManager.unregisterListener(SensorEventListener)](../android/hardware/SensorManager.md))instead.*
 
 Unregisters a listener for all sensors.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!:a SensorListener object |
+| `listener` | [SensorListener](../android/hardware/SensorListener.md)!:a SensorListener object |
 
 ### unregisterListener
 
@@ -1869,11 +1869,11 @@ open fun unregisterListener(
 ): Unit
 ```
 
-**Deprecated:** *This method is deprecated, use [SensorManager.unregisterListener(SensorEventListener, Sensor)](https://developer.android.com/reference/kotlin/android/hardware/SensorManager#unregisterListener(android.hardware.SensorEventListener,%20android.hardware.Sensor))instead.*
+**Deprecated:** *This method is deprecated, use [SensorManager.unregisterListener(SensorEventListener, Sensor)](../android/hardware/SensorManager.md))instead.*
 
 Unregisters a listener for the sensors with which it is registered.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [SensorListener](https://developer.android.com/reference/kotlin/android/hardware/SensorListener)!:a SensorListener object |
+| `listener` | [SensorListener](../android/hardware/SensorListener.md)!:a SensorListener object |
 | `sensors` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit masks of the sensors to unregister from |

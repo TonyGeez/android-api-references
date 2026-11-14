@@ -8,12 +8,12 @@ open class JarOutputStream : ZipOutputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [java.io.OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#) |||||
-| | ↳ | [java.io.FilterOutputStream](https://developer.android.com/reference/kotlin/java/io/FilterOutputStream.html#) ||||
-| | | ↳ | [java.util.zip.DeflaterOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/DeflaterOutputStream.html#) |||
+| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) |||||
+| | ↳ | [java.io.FilterOutputStream](../java/io/FilterOutputStream.md) ||||
+| | | ↳ | [java.util.zip.DeflaterOutputStream](../java/util/zip/DeflaterOutputStream.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.zip.ZipOutputStream](https://developer.android.com/reference/kotlin/java/util/zip/ZipOutputStream.html#) ||
-| | | | | ↳ | [java.util.jar.JarOutputStream](https://developer.android.com/reference/kotlin/java/util/jar/JarOutputStream#) |
+| | | | ↳ | [java.util.zip.ZipOutputStream](../java/util/zip/ZipOutputStream.md) ||
+| | | | | ↳ | [java.util.jar.JarOutputStream](../java/util/jar/JarOutputStream.md) |
 
 The `JarOutputStream` class is used to write the contents of a JAR file to any output stream. It extends the class `java.util.zip.ZipOutputStream` with support for writing an optional `Manifest` entry. The `Manifest` can be used to specify meta-information about the JAR file and its entries.
 
@@ -59,7 +59,7 @@ Creates a new `JarOutputStream` with no manifest.
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!: the actual output stream |
+| `out` | [OutputStream](../java/io/OutputStream.md)!: the actual output stream |
 
 | Exceptions ||
 |---|---|
@@ -79,8 +79,8 @@ Creates a new `JarOutputStream` with the specified `Manifest`. The manifest is w
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)!: the actual output stream |
-| `man` | [Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest)!: the optional `Manifest` |
+| `out` | [OutputStream](../java/io/OutputStream.md)!: the actual output stream |
+| `man` | [Manifest](../java/util/jar/Manifest.md)!: the optional `Manifest` |
 
 | Exceptions ||
 |---|---|
@@ -101,7 +101,7 @@ Begins writing a new JAR file entry and positions the stream to the start of the
 | Parameters ||
 |---|---|
 | `e` | the ZIP entry to be written |
-| `ze` | [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#)!: the ZIP/JAR entry to be written |
+| `ze` | [ZipEntry](../java/util/zip/ZipEntry.md)!: the ZIP/JAR entry to be written |
 
 | Exceptions ||
 |---|---|

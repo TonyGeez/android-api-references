@@ -9,9 +9,9 @@ class HeartRateVariabilityRmssdRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.HeartRateVariabilityRmssdRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeartRateVariabilityRmssdRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.HeartRateVariabilityRmssdRecord](../android/health/connect/datatypes/HeartRateVariabilityRmssdRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's heart rate variability RMSSD. Each record represents a single instantaneous measurement.

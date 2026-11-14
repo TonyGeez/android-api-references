@@ -4,24 +4,24 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # DeletedContactsColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/ContactsContract.DeletedContactsColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/ContactsContract.DeletedContactsColumns.md) 
 | --- | --- |
 
 ```
 protected interface DeletedContactsColumns
 ```
 
-| [android.provider.ContactsContract.DeletedContactsColumns](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContactsColumns#) |
+| [android.provider.ContactsContract.DeletedContactsColumns](../android/provider/ContactsContract.DeletedContactsColumns.md) |
 
-| Known Direct Subclasses [ContactsContract.DeletedContacts](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContacts) |--------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------| | [ContactsContract.DeletedContacts](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContacts) | Constants for the deleted contact table. | |
+| Known Direct Subclasses [ContactsContract.DeletedContacts](../android/provider/ContactsContract.DeletedContacts.md) |--------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------| | [ContactsContract.DeletedContacts](../android/provider/ContactsContract.DeletedContacts.md) | Constants for the deleted contact table. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_DELETED_TIMESTAMP](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContactsColumns#CONTACT_DELETED_TIMESTAMP:kotlin.String) Time (milliseconds since epoch) that the contact was deleted. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DeletedContactsColumns#CONTACT_ID:kotlin.String) A reference to the [ContactsContract.Contacts._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) that was deleted. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_DELETED_TIMESTAMP](../android/provider/ContactsContract.DeletedContactsColumns.md) Time (milliseconds since epoch) that the contact was deleted. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](../android/provider/ContactsContract.DeletedContactsColumns.md) A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that was deleted. |
 
 ## Constants
 
@@ -45,7 +45,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 static val CONTACT_ID: String
 ```
 
-A reference to the [ContactsContract.Contacts._ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String) that was deleted.
+A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that was deleted.
 
 Type: INTEGER 
 

@@ -8,12 +8,12 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 interface CertPathChecker
 ```
 
-| [java.security.cert.CertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker#) |
+| [java.security.cert.CertPathChecker](../java/security/cert/CertPathChecker.md) |
 
-| Known Direct Subclasses [PKIXCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker) |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------| | [PKIXCertPathChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXCertPathChecker) | An abstract class that performs one or more checks on an`X509Certificate`. | |
+| Known Direct Subclasses [PKIXCertPathChecker](../java/security/cert/PKIXCertPathChecker.md) |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------| | [PKIXCertPathChecker](../java/security/cert/PKIXCertPathChecker.md) | An abstract class that performs one or more checks on an`X509Certificate`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [PKIXRevocationChecker](https://developer.android.com/reference/kotlin/java/security/cert/PKIXRevocationChecker) | A`PKIXCertPathChecker`for checking the revocation status of certificates with the PKIX algorithm. | |
+| Known Indirect Subclasses [PKIXRevocationChecker](../java/security/cert/PKIXRevocationChecker.md) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [PKIXRevocationChecker](../java/security/cert/PKIXRevocationChecker.md) | A`PKIXCertPathChecker`for checking the revocation status of certificates with the PKIX algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Performs one or more checks on each`Certificate`of a`CertPath`.
@@ -24,9 +24,9 @@ A`CertPathChecker`implementation is typically created to extend a certification 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker#check(java.security.cert.Certificate))`(`cert:` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!`)` Performs the check(s) on the specified certificate using its internal state. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker#init(kotlin.Boolean))`(`forward:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes the internal state of this`CertPathChecker`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForwardCheckingSupported](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker#isForwardCheckingSupported())`()` Indicates if forward checking is supported. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [check](../java/security/cert/CertPathChecker.md))`(`cert:` ` [Certificate](../java/security/cert/Certificate.md)!`)` Performs the check(s) on the specified certificate using its internal state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/cert/CertPathChecker.md))`(`forward:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes the internal state of this`CertPathChecker`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForwardCheckingSupported](../java/security/cert/CertPathChecker.md))`()` Indicates if forward checking is supported. |
 | --- | --- |
 
 ## Public methods
@@ -43,7 +43,7 @@ Performs the check(s) on the specified certificate using its internal state. The
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------|
-| `cert` | [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!:the`Certificate`to be checked |
+| `cert` | [Certificate](../java/security/cert/Certificate.md)!:the`Certificate`to be checked |
 
 | Exceptions ||
 |-------------------------------------------------|------------------------------------------------------|
@@ -59,7 +59,7 @@ abstract fun init(forward: Boolean): Unit
 
 Initializes the internal state of this`CertPathChecker`.
 
-The`forward`flag specifies the order that certificates will be passed to the [check](https://developer.android.com/reference/kotlin/java/security/cert/CertPathChecker#check(java.security.cert.Certificate))method (forward or reverse).
+The`forward`flag specifies the order that certificates will be passed to the [check](../java/security/cert/CertPathChecker.md))method (forward or reverse).
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

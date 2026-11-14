@@ -11,11 +11,11 @@ open class UnrecoverableKeyException : UnrecoverableEntryException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.UnrecoverableEntryException](https://developer.android.com/reference/kotlin/java/security/UnrecoverableEntryException) ||
-| | | | | ↳ | [java.security.UnrecoverableKeyException](https://developer.android.com/reference/kotlin/java/security/UnrecoverableKeyException#) |
+| | | | ↳ | [java.security.UnrecoverableEntryException](../java/security/UnrecoverableEntryException.md) ||
+| | | | | ↳ | [java.security.UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md) |
 
 This exception is thrown if a key in the keystore cannot be recovered.
 
@@ -23,8 +23,8 @@ This exception is thrown if a key in the keystore cannot be recovered.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnrecoverableKeyException](https://developer.android.com/reference/kotlin/java/security/UnrecoverableKeyException#UnrecoverableKeyException())`()` Constructs an UnrecoverableKeyException with no detail message. |
-| [UnrecoverableKeyException](https://developer.android.com/reference/kotlin/java/security/UnrecoverableKeyException#UnrecoverableKeyException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an UnrecoverableKeyException with the specified detail message, which provides more information about why this exception has been thrown. |
+| [UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md))`()` Constructs an UnrecoverableKeyException with no detail message. |
+| [UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an UnrecoverableKeyException with the specified detail message, which provides more information about why this exception has been thrown. |
 
 ## Public constructors
 

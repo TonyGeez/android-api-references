@@ -5,7 +5,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 
 # AndroidCharacter
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/AndroidCharacter "View this page in Java") 
+Kotlin| [Java](../android/text/AndroidCharacter.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class AndroidCharacter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.AndroidCharacter](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#) |
+| ↳ | [android.text.AndroidCharacter](../android/text/AndroidCharacter.md) |
 
 | **This class was deprecated in API level 26.**
 |
-| Use various methods from [android.icu.lang.UCharacter](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.html#), instead.
+| Use various methods from [android.icu.lang.UCharacter](../android/icu/lang/UCharacter.md), instead.
 
 AndroidCharacter exposes some character properties that used to be not easily accessed from java.lang.Character, but are now available in ICU.
 
@@ -26,27 +26,27 @@ AndroidCharacter exposes some character properties that used to be not easily ac
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_AMBIGUOUS](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_AMBIGUOUS:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_FULL_WIDTH](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_FULL_WIDTH:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_HALF_WIDTH](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_HALF_WIDTH:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_AMBIGUOUS](../android/text/AndroidCharacter.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_FULL_WIDTH](../android/text/AndroidCharacter.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_HALF_WIDTH](../android/text/AndroidCharacter.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_NARROW](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_NARROW:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_NEUTRAL](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_NEUTRAL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_WIDE](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_WIDE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_NARROW](../android/text/AndroidCharacter.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_NEUTRAL](../android/text/AndroidCharacter.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH_WIDE](../android/text/AndroidCharacter.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------|---|
-| [AndroidCharacter](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#AndroidCharacter())`()` <br /> |
+| [AndroidCharacter](../android/text/AndroidCharacter.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getDirectionalities](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#getDirectionalities(kotlin.CharArray,%20kotlin.ByteArray,%20kotlin.Int))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `dest:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Fill in the first`count`bytes of`dest`with the directionalities from the first`count`chars of`src`. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEastAsianWidth](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#getEastAsianWidth(kotlin.Char))`(`input:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Calculate the East Asian Width of a character according to [Unicode TR#11](http://unicode.org/reports/tr11/). |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getEastAsianWidths](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#getEastAsianWidths(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Fill the first`count`bytes of`dest`with the East Asian Width from`count`chars of`src`starting at`start`. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getDirectionalities](../android/text/AndroidCharacter.md))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `dest:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Fill in the first`count`bytes of`dest`with the directionalities from the first`count`chars of`src`. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEastAsianWidth](../android/text/AndroidCharacter.md))`(`input:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Calculate the East Asian Width of a character according to [Unicode TR#11](http://unicode.org/reports/tr11/). |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getEastAsianWidths](../android/text/AndroidCharacter.md))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Fill the first`count`bytes of`dest`with the East Asian Width from`count`chars of`src`starting at`start`. |
 | --- | --- |
-| openstatic [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMirror](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#getMirror(kotlin.Char))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Return the right-to-left mirror (or the original char if none) of the specified char. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [mirror](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#mirror(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Replace the specified slice of`text`with the chars' right-to-left mirrors (if any), returning true if any replacements were made. |
+| openstatic [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMirror](../android/text/AndroidCharacter.md))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Return the right-to-left mirror (or the original char if none) of the specified char. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [mirror](../android/text/AndroidCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Replace the specified slice of`text`with the chars' right-to-left mirrors (if any), returning true if any replacements were made. |
 
 ## Constants
 
@@ -165,7 +165,7 @@ open static fun getEastAsianWidth(input: Char): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Calculate the East Asian Width of a character according to [Unicode TR#11](http://unicode.org/reports/tr11/). The return will be one of [EAST_ASIAN_WIDTH_NEUTRAL](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_NEUTRAL:kotlin.Int), [EAST_ASIAN_WIDTH_AMBIGUOUS](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_AMBIGUOUS:kotlin.Int), [EAST_ASIAN_WIDTH_HALF_WIDTH](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_HALF_WIDTH:kotlin.Int), [EAST_ASIAN_WIDTH_FULL_WIDTH](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_FULL_WIDTH:kotlin.Int), [EAST_ASIAN_WIDTH_NARROW](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_NARROW:kotlin.Int), or [EAST_ASIAN_WIDTH_WIDE](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_WIDE:kotlin.Int).
+Calculate the East Asian Width of a character according to [Unicode TR#11](http://unicode.org/reports/tr11/). The return will be one of [EAST_ASIAN_WIDTH_NEUTRAL](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_AMBIGUOUS](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_HALF_WIDTH](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_FULL_WIDTH](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_NARROW](../android/text/AndroidCharacter.md), or [EAST_ASIAN_WIDTH_WIDE](../android/text/AndroidCharacter.md).
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------|
@@ -191,7 +191,7 @@ open static fun getEastAsianWidths(
 
 **Deprecated:** *Deprecated in Java.*
 
-Fill the first`count`bytes of`dest`with the East Asian Width from`count`chars of`src`starting at`start`. East Asian Width is calculated based on [Unicode TR#11](http://unicode.org/reports/tr11/). Each entry in`dest`will be one of [EAST_ASIAN_WIDTH_NEUTRAL](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_NEUTRAL:kotlin.Int), [EAST_ASIAN_WIDTH_AMBIGUOUS](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_AMBIGUOUS:kotlin.Int), [EAST_ASIAN_WIDTH_HALF_WIDTH](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_HALF_WIDTH:kotlin.Int), [EAST_ASIAN_WIDTH_FULL_WIDTH](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_FULL_WIDTH:kotlin.Int), [EAST_ASIAN_WIDTH_NARROW](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_NARROW:kotlin.Int), or [EAST_ASIAN_WIDTH_WIDE](https://developer.android.com/reference/kotlin/android/text/AndroidCharacter#EAST_ASIAN_WIDTH_WIDE:kotlin.Int).
+Fill the first`count`bytes of`dest`with the East Asian Width from`count`chars of`src`starting at`start`. East Asian Width is calculated based on [Unicode TR#11](http://unicode.org/reports/tr11/). Each entry in`dest`will be one of [EAST_ASIAN_WIDTH_NEUTRAL](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_AMBIGUOUS](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_HALF_WIDTH](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_FULL_WIDTH](../android/text/AndroidCharacter.md), [EAST_ASIAN_WIDTH_NARROW](../android/text/AndroidCharacter.md), or [EAST_ASIAN_WIDTH_WIDE](../android/text/AndroidCharacter.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------|

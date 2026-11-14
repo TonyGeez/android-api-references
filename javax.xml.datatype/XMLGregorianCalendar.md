@@ -8,9 +8,9 @@ abstract class XMLGregorianCalendar : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.datatype.XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#) |
+| ↳ | [javax.xml.datatype.XMLGregorianCalendar](../javax/xml/datatype/XMLGregorianCalendar.md) |
 
-Representation for W3C XML Schema 1.0 date/time datatypes. Specifically, these date/time datatypes are [`dateTime`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#DATETIME), [`time`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#TIME), [`date`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#DATE), [`gYearMonth`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#GYEARMONTH), [`gMonthDay`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#GMONTHDAY), [`gYear`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#GYEAR) [`gMonth`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#GMONTH) and [`gDay`](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#GDAY) defined in the XML Namespace `"http://www.w3.org/2001/XMLSchema"`. These datatypes are normatively defined in [W3C XML Schema 1.0 Part 2, Section 3.2.7-14](http://www.w3.org/TR/xmlschema-2/#dateTime).
+Representation for W3C XML Schema 1.0 date/time datatypes. Specifically, these date/time datatypes are [`dateTime`](../javax/xml/datatype/XMLGregorianCalendar.md), [`time`](../javax/xml/datatype/XMLGregorianCalendar.md), [`date`](../javax/xml/datatype/XMLGregorianCalendar.md), [`gYearMonth`](../javax/xml/datatype/XMLGregorianCalendar.md), [`gMonthDay`](../javax/xml/datatype/XMLGregorianCalendar.md), [`gYear`](../javax/xml/datatype/XMLGregorianCalendar.md) [`gMonth`](../javax/xml/datatype/XMLGregorianCalendar.md) and [`gDay`](../javax/xml/datatype/XMLGregorianCalendar.md) defined in the XML Namespace `"http://www.w3.org/2001/XMLSchema"`. These datatypes are normatively defined in [W3C XML Schema 1.0 Part 2, Section 3.2.7-14](http://www.w3.org/TR/xmlschema-2/#dateTime).
 
 The table below defines the mapping between XML Schema 1.0 date/time datatype fields and this class' fields. It also summarizes the value constraints for the date and time fields defined in [W3C XML Schema 1.0 Part 2, Appendix D, *ISO 8601 Date and Time Formats*](http://www.w3.org/TR/xmlschema-2/#isoformats).
 
@@ -57,9 +57,9 @@ The following operations are defined for this class:
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether parameter `obj` is "equal to" this one. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getDay()()` Return day in month or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`. |
 | --- | --- |
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getEon()()` Return high order component for XML Schema 1. |
-| abstract [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getEonAndYear()()` Return XML Schema 1. |
-| abstract [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getFractionalSecond()()` Return fractional seconds. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getEon()()` Return high order component for XML Schema 1. |
+| abstract [BigInteger](../java/math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getEonAndYear()()` Return XML Schema 1. |
+| abstract [BigDecimal](../java/math/BigDecimal.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getFractionalSecond()()` Return fractional seconds. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getHour()()` Return hours or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getMillisecond()()` Return millisecond precision of `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getFractionalSecond()`. |
@@ -67,15 +67,15 @@ The following operations are defined for this class:
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getMonth()()` Return number of month or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getSecond()()` Return seconds or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`. |
-| abstract [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getTimeZone(kotlin.Int)(defaultZoneoffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `java.util.TimeZone` for this class. |
+| abstract [TimeZone](../java/util/TimeZone.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getTimeZone(kotlin.Int)(defaultZoneoffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `java.util.TimeZone` for this class. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getTimezone()()` Return timezone offset in minutes or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int` if this optional field is not defined. |
-| abstract [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getXMLSchemaType()()` Return the name of the XML Schema date/time type that this instance maps to. |
+| abstract [QName](../javax/xml/namespace/QName.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getXMLSchemaType()()` Return the name of the XML Schema date/time type that this instance maps to. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getYear()()` Return low order component for XML Schema 1. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#hashCode()()` Returns a hash code consistent with the definition of the equals method. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#isValid()()` Validate instance by `getXMLSchemaType()` constraints. |
-| abstract [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#normalize()()` Normalize this instance to UTC. |
+| abstract [XMLGregorianCalendar](../javax/xml/datatype/XMLGregorianCalendar.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#normalize()()` Normalize this instance to UTC. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#reset()()` Reset this `XMLGregorianCalendar` to its original values. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setDay(kotlin.Int)(day: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set days in month. |
@@ -95,9 +95,9 @@ The following operations are defined for this class:
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set year of XSD `dateTime` year field. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setYear(java.math.BigInteger)(year: https://developer.android.com/reference/kotlin/java/math/BigInteger.html#!)` Set low and high order component of XSD `dateTime` year field. |
-| abstract [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#toGregorianCalendar()()` Convert this `XMLGregorianCalendar` to a `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. |
+| abstract [GregorianCalendar](../java/util/GregorianCalendar.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#toGregorianCalendar()()` Convert this `XMLGregorianCalendar` to a `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. |
 | --- | --- |
-| abstract [GregorianCalendar](https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#toGregorianCalendar(java.util.TimeZone,%20java.util.Locale,%20javax.xml.datatype.XMLGregorianCalendar)(timezone: https://developer.android.com/reference/kotlin/java/util/TimeZone.html#!, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!, defaults: https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#!)` Convert this `XMLGregorianCalendar` along with provided parameters to a `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#` instance. |
+| abstract [GregorianCalendar](../java/util/GregorianCalendar.md)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#toGregorianCalendar(java.util.TimeZone,%20java.util.Locale,%20javax.xml.datatype.XMLGregorianCalendar)(timezone: https://developer.android.com/reference/kotlin/java/util/TimeZone.html#!, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!, defaults: https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#!)` Convert this `XMLGregorianCalendar` along with provided parameters to a `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#` instance. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#toString()()` Returns a `String` representation of this `XMLGregorianCalendar` `Object`. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#toXMLFormat()()` Return the lexical representation of `this` instance. |
 | --- | --- |
@@ -124,11 +124,11 @@ abstract fun add(duration: Duration!): Unit
 
 Add `duration` to this instance.
 
-The computation is specified in [XML Schema 1.0 Part 2, Appendix E, *Adding durations to dateTimes*\>](http://www.w3.org/TR/xmlschema-2/#adding-durations-to-dateTimes). [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldsmapping) defines the mapping from XML Schema 1.0 `dateTime` fields to this class' representation of those fields.
+The computation is specified in [XML Schema 1.0 Part 2, Appendix E, *Adding durations to dateTimes*\>](http://www.w3.org/TR/xmlschema-2/#adding-durations-to-dateTimes). [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md) defines the mapping from XML Schema 1.0 `dateTime` fields to this class' representation of those fields.
 
 | Parameters ||
 |---|---|
-| `duration` | [Duration](https://developer.android.com/reference/kotlin/javax/xml/datatype/Duration)!: Duration to add to this `XMLGregorianCalendar`. |
+| `duration` | [Duration](../javax/xml/datatype/Duration.md)!: Duration to add to this `XMLGregorianCalendar`. |
 
 | Exceptions ||
 |---|---|
@@ -174,11 +174,11 @@ abstract fun compare(xmlGregorianCalendar: XMLGregorianCalendar!): Int
 
 Compare two instances of W3C XML Schema 1.0 date/time datatypes according to partial order relation defined in [W3C XML Schema 1.0 Part 2, Section 3.2.7.3, *Order relation on dateTime*](http://www.w3.org/TR/xmlschema-2/#dateTime-order).
 
-`xsd:dateTime` datatype field mapping to accessors of this class are defined in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping).
+`xsd:dateTime` datatype field mapping to accessors of this class are defined in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 | Parameters ||
 |---|---|
-| `xmlGregorianCalendar` | [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#)!: Instance of `XMLGregorianCalendar` to compare |
+| `xmlGregorianCalendar` | [XMLGregorianCalendar](../javax/xml/datatype/XMLGregorianCalendar.md)!: Instance of `XMLGregorianCalendar` to compare |
 
 | Return ||
 |---|---|
@@ -218,7 +218,7 @@ Return day in month or `https://developer.android.com/reference/kotlin/javax/xml
 
 <br />
 
-Value constraints for this value are summarized in [day field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-day).
+Value constraints for this value are summarized in [day field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setDay(kotlin.Int)`
@@ -233,7 +233,7 @@ abstract fun getEon(): BigInteger!
 
 Return high order component for XML Schema 1.0 dateTime datatype field for `year`. `null` if this optional part of the year field is not defined.
 
-Value constraints for this value are summarized in [year field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-year).
+Value constraints for this value are summarized in [year field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 | Return ||
 |---|---|
@@ -254,7 +254,7 @@ abstract fun getEonAndYear(): BigInteger!
 
 Return XML Schema 1.0 dateTime datatype field for `year`.
 
-Value constraints for this value are summarized in [year field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-year).
+Value constraints for this value are summarized in [year field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 | Return ||
 |---|---|
@@ -277,7 +277,7 @@ Return fractional seconds.
 
 `null` is returned when this optional field is not defined.
 
-Value constraints are detailed in [second field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-second).
+Value constraints are detailed in [second field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 This optional field can only have a defined value when the xs:dateTime second field, represented by `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getSecond()`, does not return `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`.
 
@@ -300,7 +300,7 @@ abstract fun getHour(): Int
 
 Return hours or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`. Returns `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int` if this field is not defined.
 
-Value constraints for this value are summarized in [hour field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-hour).
+Value constraints for this value are summarized in [hour field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setTime(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
@@ -317,7 +317,7 @@ Return millisecond precision of `https://developer.android.com/reference/kotlin/
 
 This method represents a convenience accessor to infinite precision fractional second value returned by `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getFractionalSecond()`. The returned value is the rounded down to milliseconds value of `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getFractionalSecond()`. When `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getFractionalSecond()` returns `null`, this method must return `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`.
 
-Value constraints for this value are summarized in [second field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-second).
+Value constraints for this value are summarized in [second field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 | Return ||
 |---|---|
@@ -342,7 +342,7 @@ Return minutes or .
 
 Returns `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int` if this field is not defined.
 
-Value constraints for this value are summarized in [minute field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-minute).
+Value constraints for this value are summarized in [minute field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setTime(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
@@ -357,7 +357,7 @@ abstract fun getMonth(): Int
 
 Return number of month or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`.
 
-Value constraints for this value are summarized in [month field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-month).
+Value constraints for this value are summarized in [month field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 | Return ||
 |---|---|
@@ -375,7 +375,7 @@ Return seconds or `https://developer.android.com/reference/kotlin/javax/xml/data
 
 Returns `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int` if this field is not defined. When this field is not defined, the optional xs:dateTime fractional seconds field, represented by `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getFractionalSecond()` and `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#getMillisecond()`, must not be defined.
 
-Value constraints for this value are summarized in [second field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-second).
+Value constraints for this value are summarized in [second field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 | Return ||
 |---|---|
@@ -417,7 +417,7 @@ abstract fun getTimezone(): Int
 
 Return timezone offset in minutes or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int` if this optional field is not defined.
 
-Value constraints for this value are summarized in [timezone field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-timezone).
+Value constraints for this value are summarized in [timezone field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#setTimezone(kotlin.Int)`
@@ -465,7 +465,7 @@ abstract fun getYear(): Int
 
 Return low order component for XML Schema 1.0 dateTime datatype field for `year` or `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`.
 
-Value constraints for this value are summarized in [year field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-year).
+Value constraints for this value are summarized in [year field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md).
 
 | Return ||
 |---|---|
@@ -550,11 +550,11 @@ Unset this field by invoking the setter with a parameter value of `https://devel
 
 | Parameters ||
 |---|---|
-| `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [day field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-day). |
+| `day` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [day field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `day` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `day` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setFractionalSecond
 
@@ -570,11 +570,11 @@ Unset this field by invoking the setter with a parameter value of `null`.
 
 | Parameters ||
 |---|---|
-| `fractional` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!: value constraints summarized in [fractional field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-fractional). |
+| `fractional` | [BigDecimal](../java/math/BigDecimal.md)!: value constraints summarized in [fractional field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `fractional` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `fractional` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setHour
 
@@ -590,11 +590,11 @@ Unset this field by invoking the setter with a parameter value of `https://devel
 
 | Parameters ||
 |---|---|
-| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [hour field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-hour). |
+| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [hour field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `hour` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `hour` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setMillisecond
 
@@ -610,11 +610,11 @@ Unset this field by invoking the setter with a parameter value of `https://devel
 
 | Parameters ||
 |---|---|
-| `millisecond` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [millisecond field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-millisecond). |
+| `millisecond` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [millisecond field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `millisecond` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `millisecond` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setMinute
 
@@ -630,11 +630,11 @@ Unset this field by invoking the setter with a parameter value of `https://devel
 
 | Parameters ||
 |---|---|
-| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [minute field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-minute). |
+| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [minute field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `minute` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `minute` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setMonth
 
@@ -650,11 +650,11 @@ Unset this field by invoking the setter with a parameter value of `https://devel
 
 | Parameters ||
 |---|---|
-| `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [month field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-month). |
+| `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [month field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `month` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `month` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setSecond
 
@@ -670,11 +670,11 @@ Unset this field by invoking the setter with a parameter value of `https://devel
 
 | Parameters ||
 |---|---|
-| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [second field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-second). |
+| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [second field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `second` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `second` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setTime
 
@@ -692,14 +692,14 @@ Set time as one unit.
 
 | Parameters ||
 |---|---|
-| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [hour field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-hour). |
-| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [minute field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-minute). |
-| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [second field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-second). |
+| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [hour field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
+| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [minute field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
+| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [second field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 | --- | --- |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if any parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if any parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 **See Also**
 
@@ -722,15 +722,15 @@ Set time as one unit, including optional milliseconds.
 
 | Parameters ||
 |---|---|
-| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [hour field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-hour). |
-| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [minute field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-minute). |
-| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [second field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-second). |
+| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [hour field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
+| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [minute field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
+| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [second field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 | --- | --- |
 | `millisecond` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value of `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int` indicates this optional field is not set. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if any parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if any parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setTime
 
@@ -749,15 +749,15 @@ Set time as one unit, including the optional infinite precision fractional secon
 
 | Parameters ||
 |---|---|
-| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [hour field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-hour). |
-| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [minute field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-minute). |
-| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [second field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-second). |
+| `hour` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [hour field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
+| `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [minute field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
+| `second` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [second field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 | --- | --- |
-| `fractional` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!: value of `null` indicates this optional field is not set. |
+| `fractional` | [BigDecimal](../java/math/BigDecimal.md)!: value of `null` indicates this optional field is not set. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if any parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if any parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setTimezone
 
@@ -773,11 +773,11 @@ Unset this field by invoking the setter with a parameter value of `https://devel
 
 | Parameters ||
 |---|---|
-| `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [timezone field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-timezone). |
+| `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints summarized in [timezone field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `offset` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `offset` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### setYear
 
@@ -795,7 +795,7 @@ Note: if the absolute value of the `year` parameter is less than 10\^9, the eon 
 
 | Parameters ||
 |---|---|
-| `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [year field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-year). If year is `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`, then eon is set to `null`. |
+| `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): value constraints are summarized in [year field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). If year is `https://developer.android.com/reference/kotlin/javax/xml/datatype/DatatypeConstants#FIELD_UNDEFINED:kotlin.Int`, then eon is set to `null`. |
 
 ### setYear
 
@@ -811,11 +811,11 @@ Unset this field by invoking the setter with a parameter value of `null`.
 
 | Parameters ||
 |---|---|
-| `year` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!: value constraints summarized in [year field of date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefield-year). |
+| `year` | [BigInteger](../java/math/BigInteger.md)!: value constraints summarized in [year field of date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `year` parameter is outside value constraints for the field as specified in [date/time field mapping table](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#datetimefieldmapping). |
+| `java.lang.IllegalArgumentException` | if `year` parameter is outside value constraints for the field as specified in [date/time field mapping table](../javax/xml/datatype/XMLGregorianCalendar.md). |
 
 ### toGregorianCalendar
 
@@ -896,9 +896,9 @@ To ensure consistency in conversion implementations, the new `GregorianCalendar`
 
 | Parameters ||
 |---|---|
-| `timezone` | [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#)!: provide Timezone. `null` is a legal value. |
-| `aLocale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: provide explicit Locale. Use default GregorianCalendar locale if value is `null`. |
-| `defaults` | [XMLGregorianCalendar](https://developer.android.com/reference/kotlin/javax/xml/datatype/XMLGregorianCalendar#)!: provide default field values to use when corresponding field for this instance is FIELD_UNDEFINED or null. If `defaults`is `null` or a field within the specified `defaults` is undefined, just use `java.util.GregorianCalendar` defaults. |
+| `timezone` | [TimeZone](../java/util/TimeZone.md)!: provide Timezone. `null` is a legal value. |
+| `aLocale` | [Locale](../java/util/Locale.md)!: provide explicit Locale. Use default GregorianCalendar locale if value is `null`. |
+| `defaults` | [XMLGregorianCalendar](../javax/xml/datatype/XMLGregorianCalendar.md)!: provide default field values to use when corresponding field for this instance is FIELD_UNDEFINED or null. If `defaults`is `null` or a field within the specified `defaults` is undefined, just use `java.util.GregorianCalendar` defaults. |
 | --- | --- |
 
 | Return ||

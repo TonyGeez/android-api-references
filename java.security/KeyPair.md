@@ -10,7 +10,7 @@ class KeyPair : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair#) |
+| ↳ | [java.security.KeyPair](../java/security/KeyPair.md) |
 
 This class is a simple holder for a key pair (a public key and a private key). It does not enforce any security, and, when initialized, should be treated like a PrivateKey.
 
@@ -18,12 +18,12 @@ This class is a simple holder for a key pair (a public key and a private key). I
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyPair](https://developer.android.com/reference/kotlin/java/security/KeyPair#KeyPair(java.security.PublicKey,%20java.security.PrivateKey))`(`publicKey:` ` [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!`, `privateKey:` ` [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!`)` Constructs a key pair from the given public key and private key. |
+| [KeyPair](../java/security/KeyPair.md))`(`publicKey:` ` [PublicKey](../java/security/PublicKey.md)!`, `privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`)` Constructs a key pair from the given public key and private key. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)! | [getPrivate](https://developer.android.com/reference/kotlin/java/security/KeyPair#getPrivate())`()` Returns a reference to the private key component of this key pair. |
-| [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)! | [getPublic](https://developer.android.com/reference/kotlin/java/security/KeyPair#getPublic())`()` Returns a reference to the public key component of this key pair. |
+| [PrivateKey](../java/security/PrivateKey.md)! | [getPrivate](../java/security/KeyPair.md))`()` Returns a reference to the private key component of this key pair. |
+| [PublicKey](../java/security/PublicKey.md)! | [getPublic](../java/security/KeyPair.md))`()` Returns a reference to the public key component of this key pair. |
 
 ## Public constructors
 
@@ -43,8 +43,8 @@ Note that this constructor only stores references to the public and private key 
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------|
-| `publicKey` | [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)!:the public key. |
-| `privateKey` | [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)!:the private key. |
+| `publicKey` | [PublicKey](../java/security/PublicKey.md)!:the public key. |
+| `privateKey` | [PrivateKey](../java/security/PrivateKey.md)!:the private key. |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ Returns a reference to the private key component of this key pair.
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------|
-| [PrivateKey](https://developer.android.com/reference/kotlin/java/security/PrivateKey)! | a reference to the private key. |
+| [PrivateKey](../java/security/PrivateKey.md)! | a reference to the private key. |
 
 ### getPublic
 
@@ -74,4 +74,4 @@ Returns a reference to the public key component of this key pair.
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------|
-| [PublicKey](https://developer.android.com/reference/kotlin/java/security/PublicKey)! | a reference to the public key. |
+| [PublicKey](../java/security/PublicKey.md)! | a reference to the public key. |

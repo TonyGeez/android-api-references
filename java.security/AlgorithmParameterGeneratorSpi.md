@@ -10,7 +10,7 @@ abstract class AlgorithmParameterGeneratorSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.AlgorithmParameterGeneratorSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#) |
+| ↳ | [java.security.AlgorithmParameterGeneratorSpi](../java/security/AlgorithmParameterGeneratorSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`AlgorithmParameterGenerator`class, which is used to generate a set of parameters to be used with a certain algorithm.
 
@@ -22,13 +22,13 @@ In case the client does not explicitly initialize the AlgorithmParameterGenerato
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlgorithmParameterGeneratorSpi](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#AlgorithmParameterGeneratorSpi())`()` <br /> |
+| [AlgorithmParameterGeneratorSpi](../java/security/AlgorithmParameterGeneratorSpi.md))`()` <br /> |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | [engineGenerateParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#engineGenerateParameters())`()` Generates the parameters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#engineInit(kotlin.Int,%20java.security.SecureRandom))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes this parameter generator for a certain size and source of randomness. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameterGeneratorSpi#engineInit(java.security.spec.AlgorithmParameterSpec,%20java.security.SecureRandom))`(`genParamSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
+| abstract [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [engineGenerateParameters](../java/security/AlgorithmParameterGeneratorSpi.md))`()` Generates the parameters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParameterGeneratorSpi.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this parameter generator for a certain size and source of randomness. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParameterGeneratorSpi.md))`(`genParamSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
 | --- | --- |
 
 ## Public constructors
@@ -55,7 +55,7 @@ Generates the parameters.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------|
-| [AlgorithmParameters](https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters)! | the new AlgorithmParameters object. |
+| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the new AlgorithmParameters object. |
 
 ### engineInit
 
@@ -73,7 +73,7 @@ Initializes this parameter generator for a certain size and source of randomness
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------|
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size (number of bits). |
-| `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!:the source of randomness. |
+| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
 
 ### engineInit
 
@@ -90,8 +90,8 @@ Initializes this parameter generator with a set of algorithm-specific parameter 
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `genParamSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the set of algorithm-specific parameter generation values. |
-| `random` | [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom)!:the source of randomness. |
+| `genParamSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the set of algorithm-specific parameter generation values. |
+| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------|

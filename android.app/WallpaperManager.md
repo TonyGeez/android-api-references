@@ -2,7 +2,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # WallpaperManager
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/WallpaperManager "View this page in Java")
+Kotlin | [Java](../android/app/WallpaperManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class WallpaperManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.WallpaperManager](https://developer.android.com/reference/kotlin/android/app/WallpaperManager#) |
+| ↳ | [android.app.WallpaperManager](../android/app/WallpaperManager.md) |
 
 Provides access to the system wallpaper. With WallpaperManager, you can get the current wallpaper, get the desired dimensions for the wallpaper, set the wallpaper, and more.
 
@@ -49,37 +49,37 @@ An app can check whether wallpapers are supported for the current user, by calli
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#clearWallpaperOffsets(android.os.IBinder)(windowToken: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!)` Clear the offsets previously associated with this window through `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#setWallpaperOffsets(android.os.IBinder,%20kotlin.Float,%20kotlin.Float)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#forgetLoadedWallpaper()()` Remove all internal references to the last loaded wallpaper. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable()()` Obtain a drawable for the built-in static system wallpaper. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain a drawable for the specified built-in static system wallpaper. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float,%20kotlin.Float)(outWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scaleToFit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, horizontalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, verticalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a drawable for the system built-in static wallpaper. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable()()` Obtain a drawable for the built-in static system wallpaper. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain a drawable for the specified built-in static system wallpaper. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float,%20kotlin.Float)(outWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scaleToFit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, horizontalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, verticalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a drawable for the system built-in static wallpaper. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)(outWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scaleToFit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, horizontalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, verticalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a drawable for the built-in static wallpaper of the specified type. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getCropAndSetWallpaperIntent(android.net.Uri)(imageUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Gets an Intent that will launch an activity that crops the given image and sets the device's wallpaper. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getBuiltInDrawable(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)(outWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scaleToFit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, horizontalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, verticalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a drawable for the built-in static wallpaper of the specified type. |
+| open [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getCropAndSetWallpaperIntent(android.net.Uri)(imageUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Gets an Intent that will launch an activity that crops the given image and sets the device's wallpaper. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getDesiredMinimumHeight()()` Returns the desired minimum height for the wallpaper. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getDesiredMinimumWidth()()` Returns the desired minimum width for the wallpaper. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getDrawable()()` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default system wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with should use this method. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getDrawable()()` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default system wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with should use this method. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getFastDrawable()()` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getFastDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` should use this method. |
-| open static [WallpaperManager](https://developer.android.com/reference/kotlin/android/app/WallpaperManager#)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Retrieve a WallpaperManager associated with the given Context. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getFastDrawable()()` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getFastDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` should use this method. |
+| open static [WallpaperManager](../android/app/WallpaperManager.md)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Retrieve a WallpaperManager associated with the given Context. |
 | --- | --- |
-| open [WallpaperColors](https://developer.android.com/reference/kotlin/android/app/WallpaperColors)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperColors(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the primary colors of a wallpaper. |
-| open [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperFile(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default system wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> Get an open, readable file descriptor to the given wallpaper image file. <br /> |
+| open [WallpaperColors](../android/app/WallpaperColors.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperColors(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the primary colors of a wallpaper. |
+| open [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperFile(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default system wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> Get an open, readable file descriptor to the given wallpaper image file. <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperId(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the ID of the current wallpaper of the given kind. |
 | --- | --- |
-| open [WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperInfo()()` Returns the information about the home screen wallpaper if its current wallpaper is a live wallpaper component. |
-| open [WallpaperInfo](https://developer.android.com/reference/kotlin/android/app/WallpaperInfo)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperInfo(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the information about the designated wallpaper if its current wallpaper is a live wallpaper component. |
+| open [WallpaperInfo](../android/app/WallpaperInfo.md)! | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperInfo()()` Returns the information about the home screen wallpaper if its current wallpaper is a live wallpaper component. |
+| open [WallpaperInfo](../android/app/WallpaperInfo.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#getWallpaperInfo(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the information about the designated wallpaper if its current wallpaper is a live wallpaper component. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#hasResourceWallpaper(kotlin.Int)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return whether any users are currently set to use the wallpaper with the given resource ID. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#isSetWallpaperAllowed()()` Returns whether the calling package is allowed to set the wallpaper for the calling user. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#isWallpaperSupported()()` Returns whether wallpapers are supported for the calling user. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekDrawable()()` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default system wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekDrawable()()` **Important note:** - Up to Android 12, this method requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission. - Starting in Android 13, directly accessing the wallpaper is not possible anymore, instead the default system wallpaper is returned (some versions of Android 13 may throw a `SecurityException`). - From Android 14, this method should not be used and will always throw a `SecurityException`. - Apps with `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_EXTERNAL_STORAGE:kotlin.String` can still access the real wallpaper on all versions. <br /> |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with should use this method. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekFastDrawable()()` **Important note:** only apps with should use this method. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekFastDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with should use this method. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with should use this method. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekFastDrawable()()` **Important note:** only apps with should use this method. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#peekFastDrawable(kotlin.Int)(which: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **Important note:** only apps with should use this method. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#removeOnColorsChangedListener(android.app.WallpaperManager.OnColorsChangedListener)(callback: https://developer.android.com/reference/kotlin/android/app/WallpaperManager.OnColorsChangedListener)` Stop listening to color updates. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#sendWallpaperCommand(android.os.IBinder,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)(windowToken: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, z: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Send an arbitrary command to the current active wallpaper. |
@@ -243,8 +243,8 @@ Registers a listener to get notified when the wallpaper colors change.
 
 | Parameters ||
 |---|---|
-| `listener` | [WallpaperManager.OnColorsChangedListener](https://developer.android.com/reference/kotlin/android/app/WallpaperManager.OnColorsChangedListener): A listener to register. This value cannot be `null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#): Where to call it from. Will be called from the main thread if null. |
+| `listener` | [WallpaperManager.OnColorsChangedListener](../android/app/WallpaperManager.OnColorsChangedListener.md): A listener to register. This value cannot be `null`. |
+| `handler` | [Handler](../android/os/Handler.md): Where to call it from. Will be called from the main thread if null. |
 
 ### clear
 
@@ -317,7 +317,7 @@ Clear the offsets previously associated with this window through `https://develo
 
 | Parameters ||
 |---|---|
-| `windowToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)!: The window who these offsets should be associated with, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
+| `windowToken` | [IBinder](../android/os/IBinder.md)!: The window who these offsets should be associated with, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
 
 ### forgetLoadedWallpaper
 
@@ -427,7 +427,7 @@ Gets an Intent that will launch an activity that crops the given image and sets 
 
 | Parameters ||
 |---|---|
-| `imageUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The image URI that will be set in the intent. The must be a content URI and its provider must resolve its type to "image/\*" |
+| `imageUri` | [Uri](../android/net/Uri.md)!: The image URI that will be set in the intent. The must be a content URI and its provider must resolve its type to "image/\*" |
 
 | Exceptions ||
 |---|---|
@@ -884,7 +884,7 @@ Stop listening to color updates.
 
 | Parameters ||
 |---|---|
-| `callback` | [WallpaperManager.OnColorsChangedListener](https://developer.android.com/reference/kotlin/android/app/WallpaperManager.OnColorsChangedListener): A callback to unsubscribe. This value cannot be `null`. |
+| `callback` | [WallpaperManager.OnColorsChangedListener](../android/app/WallpaperManager.OnColorsChangedListener.md): A callback to unsubscribe. This value cannot be `null`. |
 
 ### sendWallpaperCommand
 
@@ -905,13 +905,13 @@ Send an arbitrary command to the current active wallpaper.
 
 | Parameters ||
 |---|---|
-| `windowToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)!: The window who these offsets should be associated with, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
+| `windowToken` | [IBinder](../android/os/IBinder.md)!: The window who these offsets should be associated with, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
 | `action` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Name of the command to perform. This must be a scoped name to avoid collisions, such as "com.mycompany.wallpaper.DOIT". |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Arbitrary integer argument based on command. |
 | --- | --- |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Arbitrary integer argument based on command. |
 | `z` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Arbitrary integer argument based on command. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Optional additional information for the command, or null. |
+| `extras` | [Bundle](../android/os/Bundle.md)!: Optional additional information for the command, or null. |
 | --- | --- |
 
 ### setBitmap
@@ -931,7 +931,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: The bitmap to be used as the new system wallpaper. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: The bitmap to be used as the new system wallpaper. |
 
 | Exceptions ||
 |---|---|
@@ -959,8 +959,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `fullImage` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: A bitmap that will supply the wallpaper imagery. |
-| `visibleCropHint` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The rectangular subregion of `fullImage` that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
+| `fullImage` | [Bitmap](../android/graphics/Bitmap.md)!: A bitmap that will supply the wallpaper imagery. |
+| `visibleCropHint` | [Rect](../android/graphics/Rect.md)!: The rectangular subregion of `fullImage` that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
 | `allowBackup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the OS is permitted to back up this wallpaper image for restore to a future device; `false` otherwise. |
 | --- | --- |
 
@@ -991,8 +991,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `fullImage` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)!: A bitmap that will supply the wallpaper imagery. |
-| `visibleCropHint` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The rectangular subregion of `fullImage` that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
+| `fullImage` | [Bitmap](../android/graphics/Bitmap.md)!: A bitmap that will supply the wallpaper imagery. |
+| `visibleCropHint` | [Rect](../android/graphics/Rect.md)!: The rectangular subregion of `fullImage` that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
 | `allowBackup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the OS is permitted to back up this wallpaper image for restore to a future device; `false` otherwise. |
 | --- | --- |
 | `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags indicating which wallpaper(s) to configure with the new imagery. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#FLAG_SYSTEM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#FLAG_LOCK:kotlin.Int` |
@@ -1026,7 +1026,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `padding` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The number of pixels the wallpaper should extend beyond the display, on its left, top, right, and bottom sides. |
+| `padding` | [Rect](../android/graphics/Rect.md)!: The number of pixels the wallpaper should extend beyond the display, on its left, top, right, and bottom sides. |
 
 ### setResource
 
@@ -1098,7 +1098,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `bitmapData` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: A stream containing the raw data to install as a wallpaper. This data can be in any format handled by `https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder.html#`. |
+| `bitmapData` | [InputStream](../java/io/InputStream.md)!: A stream containing the raw data to install as a wallpaper. This data can be in any format handled by `https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder.html#`. |
 
 | Exceptions ||
 |---|---|
@@ -1123,8 +1123,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `bitmapData` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: A stream containing the raw data to install as a wallpaper. This data can be in any format handled by `https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder.html#`. |
-| `visibleCropHint` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The rectangular subregion of the streamed image that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
+| `bitmapData` | [InputStream](../java/io/InputStream.md)!: A stream containing the raw data to install as a wallpaper. This data can be in any format handled by `https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder.html#`. |
+| `visibleCropHint` | [Rect](../android/graphics/Rect.md)!: The rectangular subregion of the streamed image that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
 | `allowBackup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the OS is permitted to back up this wallpaper image for restore to a future device; `false` otherwise. |
 | --- | --- |
 
@@ -1159,8 +1159,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `bitmapData` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: A stream containing the raw data to install as a wallpaper. This data can be in any format handled by `https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder.html#`. |
-| `visibleCropHint` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The rectangular subregion of the streamed image that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
+| `bitmapData` | [InputStream](../java/io/InputStream.md)!: A stream containing the raw data to install as a wallpaper. This data can be in any format handled by `https://developer.android.com/reference/kotlin/android/graphics/BitmapRegionDecoder.html#`. |
+| `visibleCropHint` | [Rect](../android/graphics/Rect.md)!: The rectangular subregion of the streamed image that should be displayed as wallpaper. Passing `null` for this parameter means that the full image should be displayed if possible given the image's and device's aspect ratios, etc. |
 | `allowBackup` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the OS is permitted to back up this wallpaper image for restore to a future device; `false` otherwise. |
 | --- | --- |
 | `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags indicating which wallpaper(s) to configure with the new imagery. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#FLAG_SYSTEM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/WallpaperManager#FLAG_LOCK:kotlin.Int` |
@@ -1213,7 +1213,7 @@ Set the display position of the current wallpaper within any larger space, when 
 
 | Parameters ||
 |---|---|
-| `windowToken` | [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)!: The window who these offsets should be associated with, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
+| `windowToken` | [IBinder](../android/os/IBinder.md)!: The window who these offsets should be associated with, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
 | `xOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The offset along the X dimension, from 0 to 1. |
 | `yOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The offset along the Y dimension, from 0 to 1. |
 | --- | --- |

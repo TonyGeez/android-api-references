@@ -8,7 +8,7 @@ open class NotificationManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.NotificationManager](https://developer.android.com/reference/kotlin/android/app/NotificationManager#) |
+| ↳ | [android.app.NotificationManager](../android/app/NotificationManager.md) |
 
 Class to notify the user of events that happen. This is how you tell the user that something has happened in the background.
 
@@ -114,26 +114,26 @@ Each of the notify methods takes an int id parameter and optionally a `https://d
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#deleteNotificationChannel(kotlin.String)(channelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Deletes the given notification channel. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#deleteNotificationChannelGroup(kotlin.String)(groupId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Deletes the given notification channel group, and all notification channels that belong to it. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getActiveNotifications()()` Recover a list of active notifications: ones that have been posted by the calling app that have not yet been dismissed by the user or `https://developer.android.com/reference/kotlin/android/app/NotificationManager#cancel(kotlin.String,%20kotlin.Int)`ed by the app. |
-| open [AutomaticZenRule](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getAutomaticZenRule(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the AutomaticZenRule with the given id, if it exists and the caller has access. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getActiveNotifications()()` Recover a list of active notifications: ones that have been posted by the calling app that have not yet been dismissed by the user or `https://developer.android.com/reference/kotlin/android/app/NotificationManager#cancel(kotlin.String,%20kotlin.Int)`ed by the app. |
+| open [AutomaticZenRule](../android/app/AutomaticZenRule.md)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getAutomaticZenRule(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the AutomaticZenRule with the given id, if it exists and the caller has access. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getAutomaticZenRuleState(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the current activation state of an `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule`. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [AutomaticZenRule](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getAutomaticZenRules()()` Returns AutomaticZenRules owned by the caller. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [AutomaticZenRule](../android/app/AutomaticZenRule.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getAutomaticZenRules()()` Returns AutomaticZenRules owned by the caller. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getBubblePreference()()` Gets the bubble preference for the app. |
 | --- | --- |
-| open [NotificationManager.Policy](https://developer.android.com/reference/kotlin/android/app/NotificationManager.Policy) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getConsolidatedNotificationPolicy()()` Returns the currently applied notification policy. |
+| open [NotificationManager.Policy](../android/app/NotificationManager.Policy.md) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getConsolidatedNotificationPolicy()()` Returns the currently applied notification policy. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getCurrentInterruptionFilter()()` Gets the current notification interruption filter. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getImportance()()` Returns the user specified importance for notifications from the calling package. |
 | --- | --- |
-| open [NotificationChannel](https://developer.android.com/reference/kotlin/android/app/NotificationChannel)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannel(kotlin.String)(channelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the notification channel settings for a given channel id. |
-| open [NotificationChannel](https://developer.android.com/reference/kotlin/android/app/NotificationChannel)? | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannel(kotlin.String,%20kotlin.String)(channelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, conversationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the notification channel settings for a given channel and `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId()`. |
-| open [NotificationChannelGroup](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannelGroup(kotlin.String)(channelGroupId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the notification channel group settings for a given channel group id. |
+| open [NotificationChannel](../android/app/NotificationChannel.md)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannel(kotlin.String)(channelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the notification channel settings for a given channel id. |
+| open [NotificationChannel](../android/app/NotificationChannel.md)? | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannel(kotlin.String,%20kotlin.String)(channelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, conversationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the notification channel settings for a given channel and `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId()`. |
+| open [NotificationChannelGroup](../android/app/NotificationChannelGroup.md)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannelGroup(kotlin.String)(channelGroupId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the notification channel group settings for a given channel group id. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannelGroup](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannelGroups()()` Returns all notification channel groups belonging to the calling app. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannel](https://developer.android.com/reference/kotlin/android/app/NotificationChannel)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannels()()` Returns all notification channels belonging to the calling package. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannelGroup](../android/app/NotificationChannelGroup.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannelGroups()()` Returns all notification channel groups belonging to the calling app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannel](../android/app/NotificationChannel.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationChannels()()` Returns all notification channels belonging to the calling package. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationDelegate()()` Returns the `https://developer.android.com/reference/kotlin/android/app/NotificationManager#setNotificationDelegate(kotlin.String)` that can post notifications on your behalf, if there currently is one. |
 | --- | --- |
-| open [NotificationManager.Policy](https://developer.android.com/reference/kotlin/android/app/NotificationManager.Policy)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationPolicy()()` Gets the current user-specified default notification policy. |
+| open [NotificationManager.Policy](../android/app/NotificationManager.Policy.md)! | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#getNotificationPolicy()()` Gets the current user-specified default notification policy. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#isNotificationListenerAccessGranted(android.content.ComponentName)(listener: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Checks whether the user has approved a given `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/NotificationManager#isNotificationPolicyAccessGranted()()` Checks the ability to modify Notification Policy for the calling package. |
 | --- | --- |
@@ -673,7 +673,7 @@ Throws a SecurityException if policy access is not granted to this package. See 
 
 | Parameters ||
 |---|---|
-| `automaticZenRule` | [AutomaticZenRule](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule)!: the rule to create. |
+| `automaticZenRule` | [AutomaticZenRule](../android/app/AutomaticZenRule.md)!: the rule to create. |
 
 | Return ||
 |---|---|
@@ -864,7 +864,7 @@ The group an existing channel will only be changed if the channel does not alrea
 
 | Parameters ||
 |---|---|
-| `channel` | [NotificationChannel](https://developer.android.com/reference/kotlin/android/app/NotificationChannel): the channel to create. Note that the created channel may differ from this value. If the provided channel is malformed, a RemoteException will be thrown. This value cannot be `null`. |
+| `channel` | [NotificationChannel](../android/app/NotificationChannel.md): the channel to create. Note that the created channel may differ from this value. If the provided channel is malformed, a RemoteException will be thrown. This value cannot be `null`. |
 
 ### createNotificationChannelGroup
 
@@ -882,7 +882,7 @@ For example, if your application supports multiple accounts, and those accounts 
 
 | Parameters ||
 |---|---|
-| `group` | [NotificationChannelGroup](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup): The group to create. This value cannot be `null`. |
+| `group` | [NotificationChannelGroup](../android/app/NotificationChannelGroup.md): The group to create. This value cannot be `null`. |
 
 ### createNotificationChannelGroups
 
@@ -896,7 +896,7 @@ Creates multiple notification channel groups.
 
 | Parameters ||
 |---|---|
-| `groups` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannelGroup](https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup)!\>: The list of groups to create. This value cannot be `null`. |
+| `groups` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannelGroup](../android/app/NotificationChannelGroup.md)!\>: The list of groups to create. This value cannot be `null`. |
 
 ### createNotificationChannels
 
@@ -910,7 +910,7 @@ Creates multiple notification channels that different notifications can be poste
 
 | Parameters ||
 |---|---|
-| `channels` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannel](https://developer.android.com/reference/kotlin/android/app/NotificationChannel)!\>: the list of channels to attempt to create. This value cannot be `null`. |
+| `channels` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannel](../android/app/NotificationChannel.md)!\>: the list of channels to attempt to create. This value cannot be `null`. |
 
 ### deleteNotificationChannel
 
@@ -944,7 +944,7 @@ open fun getActiveNotifications(): Array<StatusBarNotification!>!
 
 Recover a list of active notifications: ones that have been posted by the calling app that have not yet been dismissed by the user or `https://developer.android.com/reference/kotlin/android/app/NotificationManager#cancel(kotlin.String,%20kotlin.Int)`ed by the app.
 
-[StatusBarNotification](https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#) object, including the original `tag` and `id` supplied to `https://developer.android.com/reference/kotlin/android/app/NotificationManager#notify(kotlin.String,%20kotlin.Int,%20android.app.Notification)` (via `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#getTag()` and `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#getId()`) as well as a copy of the original `https://developer.android.com/reference/kotlin/android/app/Notification` object (via `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#getNotification()`).
+[StatusBarNotification](../android/service/notification/StatusBarNotification.md) object, including the original `tag` and `id` supplied to `https://developer.android.com/reference/kotlin/android/app/NotificationManager#notify(kotlin.String,%20kotlin.Int,%20android.app.Notification)` (via `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#getTag()` and `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#getId()`) as well as a copy of the original `https://developer.android.com/reference/kotlin/android/app/Notification` object (via `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification.html#getNotification()`).
 
 From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, will also return notifications you've posted as an app's notification delegate via `https://developer.android.com/reference/kotlin/android/app/NotificationManager#notifyAsPackage(kotlin.String,%20kotlin.String,%20kotlin.Int,%20android.app.Notification)`.
 
@@ -1218,7 +1218,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): A URI representing a caller. Must not be null. |
+| `uri` | [Uri](../android/net/Uri.md): A URI representing a caller. Must not be null. |
 
 | Return ||
 |---|---|
@@ -1240,7 +1240,7 @@ Post a notification to be shown in the status bar. If a notification with the sa
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An identifier for this notification unique within your application. |
-| `notification` | [Notification](https://developer.android.com/reference/kotlin/android/app/Notification)!: A `https://developer.android.com/reference/kotlin/android/app/Notification` object describing what to show the user. Must not be null. |
+| `notification` | [Notification](../android/app/Notification.md)!: A `https://developer.android.com/reference/kotlin/android/app/Notification` object describing what to show the user. Must not be null. |
 
 ### notify
 
@@ -1260,7 +1260,7 @@ Posts a notification to be shown in the status bar. If a notification with the s
 |---|---|
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A string identifier for this notification. May be `null`. |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An identifier for this notification. The pair (tag, id) must be unique within your application. |
-| `notification` | [Notification](https://developer.android.com/reference/kotlin/android/app/Notification)!: A `https://developer.android.com/reference/kotlin/android/app/Notification` object describing what to show the user. Must not be null. |
+| `notification` | [Notification](../android/app/Notification.md)!: A `https://developer.android.com/reference/kotlin/android/app/Notification` object describing what to show the user. Must not be null. |
 | --- | --- |
 
 ### notifyAsPackage
@@ -1284,7 +1284,7 @@ Posts a notification as a specified package to be shown in the status bar. If a 
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A string identifier for this notification. May be `null`. |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An identifier for this notification. The pair (tag, id) must be unique within your application. |
 | --- | --- |
-| `notification` | [Notification](https://developer.android.com/reference/kotlin/android/app/Notification): A `https://developer.android.com/reference/kotlin/android/app/Notification` object describing what to show the user. Must not be null. |
+| `notification` | [Notification](../android/app/Notification.md): A `https://developer.android.com/reference/kotlin/android/app/Notification` object describing what to show the user. Must not be null. |
 
 ### removeAutomaticZenRule
 
@@ -1336,7 +1336,7 @@ Note that the behavior at step #3 is different if the app also specifies `https:
 | Parameters ||
 |---|---|
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The id of the rule whose state should change. This value cannot be `null`. |
-| `condition` | [Condition](https://developer.android.com/reference/kotlin/android/service/notification/Condition.html#): The new state of this rule. This value cannot be `null`. |
+| `condition` | [Condition](../android/service/notification/Condition.md): The new state of this rule. This value cannot be `null`. |
 
 ### setInterruptionFilter
 
@@ -1388,7 +1388,7 @@ Only available if policy access is granted to this package. See `https://develop
 
 | Parameters ||
 |---|---|
-| `policy` | [NotificationManager.Policy](https://developer.android.com/reference/kotlin/android/app/NotificationManager.Policy): The new desired policy. This value cannot be `null`. |
+| `policy` | [NotificationManager.Policy](../android/app/NotificationManager.Policy.md): The new desired policy. This value cannot be `null`. |
 
 ### shouldHideSilentStatusBarIcons
 
@@ -1424,7 +1424,7 @@ Callers can only update rules that they own. See `https://developer.android.com/
 | Parameters ||
 |---|---|
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The id of the rule to update |
-| `automaticZenRule` | [AutomaticZenRule](https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule)!: the rule to update. |
+| `automaticZenRule` | [AutomaticZenRule](../android/app/AutomaticZenRule.md)!: the rule to update. |
 
 | Return ||
 |---|---|

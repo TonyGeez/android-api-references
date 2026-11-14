@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # AccessNetworkConstants
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/AccessNetworkConstants "View this page in Java") 
+Kotlin| [Java](../android/telephony/AccessNetworkConstants.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AccessNetworkConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.AccessNetworkConstants](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants#) |
+| ↳ | [android.telephony.AccessNetworkConstants](../android/telephony/AccessNetworkConstants.md) |
 
 Contains access network related constants.
 
@@ -21,17 +21,17 @@ Contains access network related constants.
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [AccessNetworkType](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.AccessNetworkType) <br /> |
-| | [EutranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.EutranBand) Frequency bands for EUTRAN. |
-| | [GeranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.GeranBand) Frequency bands for GERAN. |
+| | [AccessNetworkType](../android/telephony/AccessNetworkConstants.AccessNetworkType.md) <br /> |
+| | [EutranBand](../android/telephony/AccessNetworkConstants.EutranBand.md) Frequency bands for EUTRAN. |
+| | [GeranBand](../android/telephony/AccessNetworkConstants.GeranBand.md) Frequency bands for GERAN. |
 | --- | --- |
-| | [NgranBands](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.NgranBands) Frequency bands for NGRAN https://www. |
-| | [UtranBand](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants.UtranBand) Frequency bands for UTRAN. |
+| | [NgranBands](../android/telephony/AccessNetworkConstants.NgranBands.md) Frequency bands for NGRAN https://www. |
+| | [UtranBand](../android/telephony/AccessNetworkConstants.UtranBand.md) Frequency bands for UTRAN. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WLAN](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants#TRANSPORT_TYPE_WLAN:kotlin.Int) Transport type for Wireless Local Area Networks (i.e. Wifi) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WWAN](https://developer.android.com/reference/kotlin/android/telephony/AccessNetworkConstants#TRANSPORT_TYPE_WWAN:kotlin.Int) Transport type for Wireless Wide Area Networks (i.e. Cellular) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WLAN](../android/telephony/AccessNetworkConstants.md) Transport type for Wireless Local Area Networks (i.e. Wifi) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WWAN](../android/telephony/AccessNetworkConstants.md) Transport type for Wireless Wide Area Networks (i.e. Cellular) |
 
 ## Constants
 

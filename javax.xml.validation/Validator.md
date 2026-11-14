@@ -10,36 +10,36 @@ abstract class Validator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.validation.Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) |
+| ↳ | [javax.xml.validation.Validator](../javax/xml/validation/Validator.md) |
 
-A processor that checks an XML document against [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema).
+A processor that checks an XML document against [Schema](../javax/xml/validation/Schema.md).
 
-A validator is a thread-unsafe and non-reentrant object. In other words, it is the application's responsibility to make sure that one [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) object is not used from more than one thread at any given time, and while the validate method is invoked, applications may not recursively call the validate method.
+A validator is a thread-unsafe and non-reentrant object. In other words, it is the application's responsibility to make sure that one [Validator](../javax/xml/validation/Validator.md) object is not used from more than one thread at any given time, and while the validate method is invoked, applications may not recursively call the validate method.
 
-Note that while the [validate(javax.xml.transform.Source)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#validate(javax.xml.transform.Source))and [validate(javax.xml.transform.Source,javax.xml.transform.Result)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#validate(javax.xml.transform.Source,%20javax.xml.transform.Result))methods take a [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#) instance, the`Source`instance must be a`SAXSource`,`DOMSource`,`StAXSource`or`StreamSource`.
+Note that while the [validate(javax.xml.transform.Source)](../javax/xml/validation/Validator.md))and [validate(javax.xml.transform.Source,javax.xml.transform.Result)](../javax/xml/validation/Validator.md))methods take a [Source](../javax/xml/transform/Source.md) instance, the`Source`instance must be a`SAXSource`,`DOMSource`,`StAXSource`or`StreamSource`.
 
 ## Summary
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#Validator())`()` Constructor for derived classes. |
+| [Validator](../javax/xml/validation/Validator.md))`()` Constructor for derived classes. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)! | [getErrorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getErrorHandler())`()` Gets the current [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) set to this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getFeature(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature flag. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getProperty(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
+| abstract [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | [getErrorHandler](../javax/xml/validation/Validator.md))`()` Gets the current [ErrorHandler](../org/xml/sax/ErrorHandler.md) set to this [Validator](../javax/xml/validation/Validator.md). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../javax/xml/validation/Validator.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature flag. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](../javax/xml/validation/Validator.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
 | --- | --- |
-| abstract [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)! | [getResourceResolver](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getResourceResolver())`()` Gets the current [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) set to this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#reset())`()` Reset this`Validator`to its original configuration. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setErrorHandler(org.xml.sax.ErrorHandler))`(`errorHandler:` ` [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!`)` Sets the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) to receive errors encountered during the`validate`method invocation. |
+| abstract [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md)! | [getResourceResolver](../javax/xml/validation/Validator.md))`()` Gets the current [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) set to this [Validator](../javax/xml/validation/Validator.md). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../javax/xml/validation/Validator.md))`()` Reset this`Validator`to its original configuration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](../javax/xml/validation/Validator.md))`(`errorHandler:` ` [ErrorHandler](../org/xml/sax/ErrorHandler.md)!`)` Sets the [ErrorHandler](../org/xml/sax/ErrorHandler.md) to receive errors encountered during the`validate`method invocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setFeature(kotlin.String,%20kotlin.Boolean))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature flag. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setProperty(kotlin.String,%20kotlin.Any))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceResolver](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setResourceResolver(org.w3c.dom.ls.LSResourceResolver))`(`resourceResolver:` ` [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)!`)` Sets the [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) to customize resource resolution while in a validation episode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../javax/xml/validation/Validator.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature flag. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](../javax/xml/validation/Validator.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResourceResolver](../javax/xml/validation/Validator.md))`(`resourceResolver:` ` [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md)!`)` Sets the [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) to customize resource resolution while in a validation episode. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validate](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#validate(javax.xml.transform.Source))`(`source:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!`)` Validates the specified input. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validate](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#validate(javax.xml.transform.Source,%20javax.xml.transform.Result))`(`source:` ` [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!`, `result:` ` [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#)!`)` Validates the specified input and send the augmented validation result to the specified output. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validate](../javax/xml/validation/Validator.md))`(`source:` ` [Source](../javax/xml/transform/Source.md)!`)` Validates the specified input. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validate](../javax/xml/validation/Validator.md))`(`source:` ` [Source](../javax/xml/transform/Source.md)!`, `result:` ` [Result](../javax/xml/transform/Result.md)!`)` Validates the specified input and send the augmented validation result to the specified output. |
 
 ## Protected constructors
 
@@ -55,7 +55,7 @@ Constructor for derived classes.
 
 The constructor does nothing.
 
-Derived classes must create [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) objects that have null [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) and null [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#).
+Derived classes must create [Validator](../javax/xml/validation/Validator.md) objects that have null [ErrorHandler](../org/xml/sax/ErrorHandler.md) and null [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md).
 
 ## Public methods
 
@@ -67,15 +67,15 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getErrorHandler(): ErrorHandler!
 ```
 
-Gets the current [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) set to this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#).
+Gets the current [ErrorHandler](../org/xml/sax/ErrorHandler.md) set to this [Validator](../javax/xml/validation/Validator.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)! | This method returns the object that was last set through the [setErrorHandler(org.xml.sax.ErrorHandler)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setErrorHandler(org.xml.sax.ErrorHandler))method, or null if that method has never been called since this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) has created. |
+| [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | This method returns the object that was last set through the [setErrorHandler(org.xml.sax.ErrorHandler)](../javax/xml/validation/Validator.md))method, or null if that method has never been called since this [Validator](../javax/xml/validation/Validator.md) has created. |
 
 **See Also**
 
-- [#setErrorHandler(ErrorHandler)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setErrorHandler(org.xml.sax.ErrorHandler)) 
+- [#setErrorHandler(ErrorHandler)](../javax/xml/validation/Validator.md)) 
 
 ### getFeature
 
@@ -87,7 +87,7 @@ open fun getFeature(name: String!): Boolean
 
 Look up the value of a feature flag.
 
-The feature name is any fully-qualified URI. It is possible for a [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) to recognize a feature name but temporarily be unable to return its value. Some feature values may be available only in specific contexts, such as before, during, or after a validation.
+The feature name is any fully-qualified URI. It is possible for a [Validator](../javax/xml/validation/Validator.md) to recognize a feature name but temporarily be unable to return its value. Some feature values may be available only in specific contexts, such as before, during, or after a validation.
 
 Implementors are free (and encouraged) to invent their own features, using names built on their own URIs.
 
@@ -103,12 +103,12 @@ Implementors are free (and encouraged) to invent their own features, using names
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
-| `org.xml.sax.SAXNotSupportedException` | When the [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) recognizes the feature name but cannot determine its value at this time. |
+| `org.xml.sax.SAXNotSupportedException` | When the [Validator](../javax/xml/validation/Validator.md) recognizes the feature name but cannot determine its value at this time. |
 | --- | --- |
 
 **See Also**
 
-- [#setFeature(String, boolean)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setFeature(kotlin.String,%20kotlin.Boolean)) 
+- [#setFeature(String, boolean)](../javax/xml/validation/Validator.md)) 
 
 ### getProperty
 
@@ -120,9 +120,9 @@ open fun getProperty(name: String!): Any!
 
 Look up the value of a property.
 
-The property name is any fully-qualified URI. It is possible for a [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) to recognize a property name but temporarily be unable to return its value. Some property values may be available only in specific contexts, such as before, during, or after a validation.
+The property name is any fully-qualified URI. It is possible for a [Validator](../javax/xml/validation/Validator.md) to recognize a property name but temporarily be unable to return its value. Some property values may be available only in specific contexts, such as before, during, or after a validation.
 
-[Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) s are not required to recognize any specific property names.
+[Validator](../javax/xml/validation/Validator.md) s are not required to recognize any specific property names.
 
 Implementors are free (and encouraged) to invent their own properties, using names built on their own URIs.
 
@@ -143,7 +143,7 @@ Implementors are free (and encouraged) to invent their own properties, using nam
 
 **See Also**
 
-- [#setProperty(String, Object)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setProperty(kotlin.String,%20kotlin.Any)) 
+- [#setProperty(String, Object)](../javax/xml/validation/Validator.md)) 
 
 ### getResourceResolver
 
@@ -153,15 +153,15 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getResourceResolver(): LSResourceResolver!
 ```
 
-Gets the current [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) set to this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#).
+Gets the current [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) set to this [Validator](../javax/xml/validation/Validator.md).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)! | This method returns the object that was last set through the [setResourceResolver(org.w3c.dom.ls.LSResourceResolver)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setResourceResolver(org.w3c.dom.ls.LSResourceResolver))method, or null if that method has never been called since this [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) has created. |
+| [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md)! | This method returns the object that was last set through the [setResourceResolver(org.w3c.dom.ls.LSResourceResolver)](../javax/xml/validation/Validator.md))method, or null if that method has never been called since this [Validator](../javax/xml/validation/Validator.md) has created. |
 
 **See Also**
 
-- [#setErrorHandler(ErrorHandler)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setErrorHandler(org.xml.sax.ErrorHandler)) 
+- [#setErrorHandler(ErrorHandler)](../javax/xml/validation/Validator.md)) 
 
 ### reset
 
@@ -173,9 +173,9 @@ abstract fun reset(): Unit
 
 Reset this`Validator`to its original configuration.
 
-`Validator`is reset to the same state as when it was created with [Schema.newValidator()](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema#newValidator()).`reset()`is designed to allow the reuse of existing`Validator`s thus saving resources associated with the creation of new`Validator`s.
+`Validator`is reset to the same state as when it was created with [Schema.newValidator()](../javax/xml/validation/Schema.md)).`reset()`is designed to allow the reuse of existing`Validator`s thus saving resources associated with the creation of new`Validator`s.
 
-The reset`Validator`is not guaranteed to have the same [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) or [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)`Object`s, e.g. [Object.equals(Object obj)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)). It is guaranteed to have a functionally equal`LSResourceResolver`and`ErrorHandler`. 
+The reset`Validator`is not guaranteed to have the same [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) or [ErrorHandler](../org/xml/sax/ErrorHandler.md)`Object`s, e.g. [Object.equals(Object obj)](../java/lang/Object.md)). It is guaranteed to have a functionally equal`LSResourceResolver`and`ErrorHandler`. 
 
 ### setErrorHandler
 
@@ -185,17 +185,17 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setErrorHandler(errorHandler: ErrorHandler!): Unit
 ```
 
-Sets the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) to receive errors encountered during the`validate`method invocation.
+Sets the [ErrorHandler](../org/xml/sax/ErrorHandler.md) to receive errors encountered during the`validate`method invocation.
 
-Error handler can be used to customize the error handling process during a validation. When an [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) is set, errors found during the validation will be first sent to the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#).
+Error handler can be used to customize the error handling process during a validation. When an [ErrorHandler](../org/xml/sax/ErrorHandler.md) is set, errors found during the validation will be first sent to the [ErrorHandler](../org/xml/sax/ErrorHandler.md).
 
-The error handler can abort further validation immediately by throwing [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException.html#) from the handler. Or for example it can print an error to the screen and try to continue the validation by returning normally from the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)
+The error handler can abort further validation immediately by throwing [SAXException](../org/xml/sax/SAXException.md) from the handler. Or for example it can print an error to the screen and try to continue the validation by returning normally from the [ErrorHandler](../org/xml/sax/ErrorHandler.md)
 
-If any [Throwable](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#) is thrown from an [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#), the caller of the`validate`method will be thrown the same [Throwable](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#) object.
+If any [Throwable](../java/lang/Throwable.md) is thrown from an [ErrorHandler](../org/xml/sax/ErrorHandler.md), the caller of the`validate`method will be thrown the same [Throwable](../java/lang/Throwable.md) object.
 
-[Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) is not allowed to throw [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException.html#) without first reporting it to [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#).
+[Validator](../javax/xml/validation/Validator.md) is not allowed to throw [SAXException](../org/xml/sax/SAXException.md) without first reporting it to [ErrorHandler](../org/xml/sax/ErrorHandler.md).
 
-When the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) is null, the implementation will behave as if the following [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) is set: 
+When the [ErrorHandler](../org/xml/sax/ErrorHandler.md) is null, the implementation will behave as if the following [ErrorHandler](../org/xml/sax/ErrorHandler.md) is set: 
 
 ```kotlin
 class DraconianErrorHandler implements <code><a docref="org.xml.sax.ErrorHandler">ErrorHandler</a></code>{
@@ -212,11 +212,11 @@ class DraconianErrorHandler implements <code><a docref="org.xml.sax.ErrorHandler
   
 ```
 
-When a new [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) object is created, initially this field is set to null.
+When a new [Validator](../javax/xml/validation/Validator.md) object is created, initially this field is set to null.
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `errorHandler` | [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!:A new error handler to be set. This parameter can be null. |
+| `errorHandler` | [ErrorHandler](../org/xml/sax/ErrorHandler.md)!:A new error handler to be set. This parameter can be null. |
 
 ### setFeature
 
@@ -231,9 +231,9 @@ open fun setFeature(
 
 Set the value of a feature flag.
 
-Feature can be used to control the way a [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) parses schemas, although [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) s are not required to recognize any specific property names.
+Feature can be used to control the way a [Validator](../javax/xml/validation/Validator.md) parses schemas, although [Validator](../javax/xml/validation/Validator.md) s are not required to recognize any specific property names.
 
-The feature name is any fully-qualified URI. It is possible for a [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) to expose a feature value but to be unable to change the current value. Some feature values may be immutable or mutable only in specific contexts, such as before, during, or after a validation.
+The feature name is any fully-qualified URI. It is possible for a [Validator](../javax/xml/validation/Validator.md) to expose a feature value but to be unable to change the current value. Some feature values may be immutable or mutable only in specific contexts, such as before, during, or after a validation.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -244,12 +244,12 @@ The feature name is any fully-qualified URI. It is possible for a [Validator](ht
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the feature value can't be assigned or retrieved. |
-| `org.xml.sax.SAXNotSupportedException` | When the [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) recognizes the feature name but cannot set the requested value. |
+| `org.xml.sax.SAXNotSupportedException` | When the [Validator](../javax/xml/validation/Validator.md) recognizes the feature name but cannot set the requested value. |
 | --- | --- |
 
 **See Also**
 
-- [#getFeature(String)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#getFeature(kotlin.String)) 
+- [#getFeature(String)](../javax/xml/validation/Validator.md)) 
 
 ### setProperty
 
@@ -264,9 +264,9 @@ open fun setProperty(
 
 Set the value of a property.
 
-The property name is any fully-qualified URI. It is possible for a [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) to recognize a property name but to be unable to change the current value. Some property values may be immutable or mutable only in specific contexts, such as before, during, or after a validation.
+The property name is any fully-qualified URI. It is possible for a [Validator](../javax/xml/validation/Validator.md) to recognize a property name but to be unable to change the current value. Some property values may be immutable or mutable only in specific contexts, such as before, during, or after a validation.
 
-[Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) s are not required to recognize setting any specific property names.
+[Validator](../javax/xml/validation/Validator.md) s are not required to recognize setting any specific property names.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -277,7 +277,7 @@ The property name is any fully-qualified URI. It is possible for a [Validator](h
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | When the name parameter is null. |
 | `org.xml.sax.SAXNotRecognizedException` | If the property value can't be assigned or retrieved. |
-| `org.xml.sax.SAXNotSupportedException` | When the [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) recognizes the property name but cannot set the requested value. |
+| `org.xml.sax.SAXNotSupportedException` | When the [Validator](../javax/xml/validation/Validator.md) recognizes the property name but cannot set the requested value. |
 | --- | --- |
 
 ### setResourceResolver
@@ -288,11 +288,11 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setResourceResolver(resourceResolver: LSResourceResolver!): Unit
 ```
 
-Sets the [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) to customize resource resolution while in a validation episode.
+Sets the [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) to customize resource resolution while in a validation episode.
 
-[Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) uses a [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) when it needs to locate external resources while a validation, although exactly what constitutes "locating external resources" is up to each schema language.
+[Validator](../javax/xml/validation/Validator.md) uses a [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) when it needs to locate external resources while a validation, although exactly what constitutes "locating external resources" is up to each schema language.
 
-When the [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) is null, the implementation will behave as if the following [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) is set: 
+When the [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) is null, the implementation will behave as if the following [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) is set: 
 
 ```kotlin
 class DumbLSResourceResolver implements <code><a docref="org.w3c.dom.ls.LSResourceResolver">LSResourceResolver</a></code>{
@@ -305,13 +305,13 @@ class DumbLSResourceResolver implements <code><a docref="org.w3c.dom.ls.LSResour
   
 ```
 
-If a [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#) throws a [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#)(or instances of its derived classes), then the [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) will abort the parsing and the caller of the`validate`method will receive the same [RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#).
+If a [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) throws a [RuntimeException](../java/lang/RuntimeException.md)(or instances of its derived classes), then the [Validator](../javax/xml/validation/Validator.md) will abort the parsing and the caller of the`validate`method will receive the same [RuntimeException](../java/lang/RuntimeException.md).
 
-When a new [Validator](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#) object is created, initially this field is set to null.
+When a new [Validator](../javax/xml/validation/Validator.md) object is created, initially this field is set to null.
 
 | Parameters ||
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resourceResolver` | [LSResourceResolver](https://developer.android.com/reference/kotlin/org/w3c/dom/ls/LSResourceResolver.html#)!:A new resource resolver to be set. This parameter can be null. |
+| `resourceResolver` | [LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md)!:A new resource resolver to be set. This parameter can be null. |
 
 ### validate
 
@@ -331,7 +331,7 @@ validate(source,null);
 ```  
 **See Also**
 
-- [#setErrorHandler(ErrorHandler)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#setErrorHandler(org.xml.sax.ErrorHandler)) 
+- [#setErrorHandler(ErrorHandler)](../javax/xml/validation/Validator.md)) 
 
 ### validate
 
@@ -346,37 +346,37 @@ abstract fun validate(
 
 Validates the specified input and send the augmented validation result to the specified output.
 
-This method places the following restrictions on the types of the [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)/ [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#) accepted.
+This method places the following restrictions on the types of the [Source](../javax/xml/transform/Source.md)/ [Result](../javax/xml/transform/Result.md) accepted.
 
-#### [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)/ [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#) accepted:
+#### [Source](../javax/xml/transform/Source.md)/ [Result](../javax/xml/transform/Result.md) accepted:
 
-| | [javax.xml.transform.sax.SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource.html#) | [javax.xml.transform.dom.DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource.html#) | [javax.xml.transform.stream.StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource.html#) |
+| | [javax.xml.transform.sax.SAXSource](../javax/xml/transform/sax/SAXSource.md) | [javax.xml.transform.dom.DOMSource](../javax/xml/transform/dom/DOMSource.md) | [javax.xml.transform.stream.StreamSource](../javax/xml/transform/stream/StreamSource.md) |
 | --- | --- | --- | --- |
 | null | OK | OK | OK | OK |
-| [javax.xml.transform.sax.SAXResult](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXResult.html#) | OK | Err | Err | Err |
-| [javax.xml.transform.dom.DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult.html#) | Err | OK | Err | Err |
+| [javax.xml.transform.sax.SAXResult](../javax/xml/transform/sax/SAXResult.md) | OK | Err | Err | Err |
+| [javax.xml.transform.dom.DOMResult](../javax/xml/transform/dom/DOMResult.md) | Err | OK | Err | Err |
 | --- | --- | --- | --- | --- |
-| [javax.xml.transform.stream.StreamResult](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamResult.html#) | Err | Err | Err | OK |
+| [javax.xml.transform.stream.StreamResult](../javax/xml/transform/stream/StreamResult.md) | Err | Err | Err | OK |
 
-To validate one [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#) into another kind of [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#), use the identity transformer (see [javax.xml.transform.TransformerFactory#newTransformer()](https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#newTransformer())).
+To validate one [Source](../javax/xml/transform/Source.md) into another kind of [Result](../javax/xml/transform/Result.md), use the identity transformer (see [javax.xml.transform.TransformerFactory#newTransformer()](../javax/xml/transform/TransformerFactory.md))).
 
-Errors found during the validation is sent to the specified [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#).
+Errors found during the validation is sent to the specified [ErrorHandler](../org/xml/sax/ErrorHandler.md).
 
-If a document is valid, or if a document contains some errors but none of them were fatal and the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) didn't throw any exception, then the method returns normally.
+If a document is valid, or if a document contains some errors but none of them were fatal and the [ErrorHandler](../org/xml/sax/ErrorHandler.md) didn't throw any exception, then the method returns normally.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#)!:XML to be validated. Must not be null. |
-| `result` | [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#)!:The [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#) object that receives (possibly augmented) XML. This parameter can be null if the caller is not interested in it. Note that when a [javax.xml.transform.dom.DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult.html#) is used, a validator might just pass the same DOM node from [javax.xml.transform.dom.DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource.html#) to [javax.xml.transform.dom.DOMResult](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMResult.html#)(in which case source.getNode()==result.getNode()), it might copy the entire DOM tree, or it might alter the node given by the source. |
+| `source` | [Source](../javax/xml/transform/Source.md)!:XML to be validated. Must not be null. |
+| `result` | [Result](../javax/xml/transform/Result.md)!:The [Result](../javax/xml/transform/Result.md) object that receives (possibly augmented) XML. This parameter can be null if the caller is not interested in it. Note that when a [javax.xml.transform.dom.DOMResult](../javax/xml/transform/dom/DOMResult.md) is used, a validator might just pass the same DOM node from [javax.xml.transform.dom.DOMSource](../javax/xml/transform/dom/DOMSource.md) to [javax.xml.transform.dom.DOMResult](../javax/xml/transform/dom/DOMResult.md)(in which case source.getNode()==result.getNode()), it might copy the entire DOM tree, or it might alter the node given by the source. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | If the [Result](https://developer.android.com/reference/kotlin/javax/xml/transform/Result.html#) type doesn't match the [Source](https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#) type, or if the specified source is not a [javax.xml.transform.sax.SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource.html#), [javax.xml.transform.dom.DOMSource](https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource.html#) or [javax.xml.transform.stream.StreamSource](https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource.html#). |
-| `org.xml.sax.SAXException` | If the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) throws a [SAXException](https://developer.android.com/reference/kotlin/org/xml/sax/SAXException.html#) or if a fatal error is found and the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) returns normally. |
-| `java.io.IOException` | If the validator is processing a [javax.xml.transform.sax.SAXSource](https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource.html#) and the underlying [org.xml.sax.XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#) throws an [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#). |
+| `java.lang.IllegalArgumentException` | If the [Result](../javax/xml/transform/Result.md) type doesn't match the [Source](../javax/xml/transform/Source.md) type, or if the specified source is not a [javax.xml.transform.sax.SAXSource](../javax/xml/transform/sax/SAXSource.md), [javax.xml.transform.dom.DOMSource](../javax/xml/transform/dom/DOMSource.md) or [javax.xml.transform.stream.StreamSource](../javax/xml/transform/stream/StreamSource.md). |
+| `org.xml.sax.SAXException` | If the [ErrorHandler](../org/xml/sax/ErrorHandler.md) throws a [SAXException](../org/xml/sax/SAXException.md) or if a fatal error is found and the [ErrorHandler](../org/xml/sax/ErrorHandler.md) returns normally. |
+| `java.io.IOException` | If the validator is processing a [javax.xml.transform.sax.SAXSource](../javax/xml/transform/sax/SAXSource.md) and the underlying [org.xml.sax.XMLReader](../org/xml/sax/XMLReader.md) throws an [IOException](../java/io/IOException.md). |
 | --- | --- |
 | `java.lang.NullPointerException` | If the source parameter is null. |
 
 **See Also**
 
-- [#validate(Source)](https://developer.android.com/reference/kotlin/javax/xml/validation/Validator#validate(javax.xml.transform.Source))
+- [#validate(Source)](../javax/xml/validation/Validator.md))

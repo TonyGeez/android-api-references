@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioMetadata
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AudioMetadata "View this page in Java") 
+Kotlin| [Java](../android/media/AudioMetadata.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AudioMetadata
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioMetadata](https://developer.android.com/reference/kotlin/android/media/AudioMetadata#) |
+| ↳ | [android.media.AudioMetadata](../android/media/AudioMetadata.md) |
 
 AudioMetadata class is used to manage typed key-value pairs for configuration and capability requests within the Audio Framework.
 
@@ -21,12 +21,12 @@ AudioMetadata class is used to manage typed key-value pairs for configuration an
 
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Format](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Format) A container class for AudioMetadata Format keys. |
-| abstract | [Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key) Key interface for the`AudioMetadata`map. |
+| | [Format](../android/media/AudioMetadata.Format.md) A container class for AudioMetadata Format keys. |
+| abstract | [Key](../android/media/AudioMetadata.Key.md) Key interface for the`AudioMetadata`map. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) | [createMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadata#createMap())`()` Creates a [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) suitable for adding keys. |
+| static [AudioMetadataMap](../android/media/AudioMetadataMap.md) | [createMap](../android/media/AudioMetadata.md))`()` Creates a [AudioMetadataMap](../android/media/AudioMetadataMap.md) suitable for adding keys. |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static fun createMap(): AudioMetadataMap
 ```
 
-Creates a [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) suitable for adding keys.
+Creates a [AudioMetadataMap](../android/media/AudioMetadataMap.md) suitable for adding keys.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) | an empty [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap) instance. This value cannot be`null`. |
+| [AudioMetadataMap](../android/media/AudioMetadataMap.md) | an empty [AudioMetadataMap](../android/media/AudioMetadataMap.md) instance. This value cannot be`null`. |

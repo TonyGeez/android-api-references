@@ -9,7 +9,7 @@ class Device
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.Device](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#) |
+| ↳ | [android.health.connect.datatypes.Device](../android/health/connect/datatypes/Device.md) |
 
 A physical device (such as phone, watch, scale, or chest strap) which captured associated health data point.
 

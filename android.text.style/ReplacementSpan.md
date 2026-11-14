@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ReplacementSpan
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/style/ReplacementSpan "View this page in Java")
+Kotlin | [Java](../android/text/style/ReplacementSpan.md)
 | --- | --- |
 
 ```
@@ -11,15 +11,15 @@ abstract class ReplacementSpan : MetricAffectingSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
-| | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
-| | | ↳ | [android.text.style.ReplacementSpan](https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||
+| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||
+| | | ↳ | [android.text.style.ReplacementSpan](../android/text/style/ReplacementSpan.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [DynamicDrawableSpan](https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan) |---|---| | [DynamicDrawableSpan](https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan) | Span that replaces the text it's attached to with a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that can be aligned with the bottom or with the baseline of the surrounding text. | |
+| Known Direct Subclasses [DynamicDrawableSpan](../android/text/style/DynamicDrawableSpan.md) |---|---| | [DynamicDrawableSpan](../android/text/style/DynamicDrawableSpan.md) | Span that replaces the text it's attached to with a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that can be aligned with the bottom or with the baseline of the surrounding text. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ImageSpan](https://developer.android.com/reference/kotlin/android/text/style/ImageSpan) |---|---| | [ImageSpan](https://developer.android.com/reference/kotlin/android/text/style/ImageSpan) | Span that replaces the text it's attached to with a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that can be aligned with the bottom or with the baseline of the surrounding text. | |
+| Known Indirect Subclasses [ImageSpan](../android/text/style/ImageSpan.md) |---|---| | [ImageSpan](../android/text/style/ImageSpan.md) | Span that replaces the text it's attached to with a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that can be aligned with the bottom or with the baseline of the surrounding text. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
@@ -76,7 +76,7 @@ Draws the span into the canvas.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): Canvas into which the span should be rendered. This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): Canvas into which the span should be rendered. This value cannot be `null`. |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Current text. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Start character index for span. Value is 0 or greater |
 | --- | --- |
@@ -86,7 +86,7 @@ Draws the span into the canvas.
 | --- | --- |
 | `y` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Baseline. |
 | `bottom` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Bottom of the line. |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#): Paint instance. This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): Paint instance. This value cannot be `null`. |
 | --- | --- |
 
 ### getContentDescription
@@ -121,12 +121,12 @@ Returns the width of the span. Extending classes can set the height of the span 
 
 | Parameters ||
 |---|---|
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#): Paint instance. This value cannot be `null`. |
+| `paint` | [Paint](../android/graphics/Paint.md): Paint instance. This value cannot be `null`. |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Current text. |
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Start character index for span. Value is 0 or greater |
 | --- | --- |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): End character index for span. Value is 0 or greater |
-| `fm` | [Paint.FontMetricsInt](https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#)?: Font metrics, can be null. |
+| `fm` | [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)?: Font metrics, can be null. |
 
 | Return ||
 |---|---|

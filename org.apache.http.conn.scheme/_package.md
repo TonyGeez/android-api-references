@@ -4,7 +4,7 @@
 
 ## Interfaces
 
-| [HostNameResolver](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/HostNameResolver) | <br /> |
+| [HostNameResolver](../org/apache/http/conn/scheme/HostNameResolver.md) | <br /> |
 | --- | --- |
-| [LayeredSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/LayeredSocketFactory) | A [SocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory) for layered sockets (SSL/TLS). |
-| [SocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory) | A factory for creating and connecting sockets. |
+| [LayeredSocketFactory](../org/apache/http/conn/scheme/LayeredSocketFactory.md) | A [SocketFactory](../org/apache/http/conn/scheme/SocketFactory.md) for layered sockets (SSL/TLS). |
+| [SocketFactory](../org/apache/http/conn/scheme/SocketFactory.md) | A factory for creating and connecting sockets. |

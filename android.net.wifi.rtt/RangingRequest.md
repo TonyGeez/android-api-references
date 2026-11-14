@@ -8,7 +8,7 @@ class RangingRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.RangingRequest](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest#) |
+| ↳ | [android.net.wifi.rtt.RangingRequest](../android/net/wifi/rtt/RangingRequest.md) |
 
 Defines the ranging request to other devices. The ranging request is built using `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest.Builder`. A ranging request is executed using `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)`.
 
@@ -50,7 +50,7 @@ The ranging request is a batch request - specifying a set of devices (specified 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RangingRequest](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RangingRequest](../android/net/wifi/rtt/RangingRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -270,7 +270,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

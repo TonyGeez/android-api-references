@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # QuickViewConstants
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/QuickViewConstants "View this page in Java") 
+Kotlin| [Java](../android/content/QuickViewConstants.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ open class QuickViewConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.QuickViewConstants](https://developer.android.com/reference/kotlin/android/content/QuickViewConstants#) |
+| ↳ | [android.content.QuickViewConstants](../android/content/QuickViewConstants.md) |
 
-Constants for [Intent.ACTION_QUICK_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_QUICK_VIEW:kotlin.String).
+Constants for [Intent.ACTION_QUICK_VIEW](../android/content/Intent.md).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_DELETE](https://developer.android.com/reference/kotlin/android/content/QuickViewConstants#FEATURE_DELETE:kotlin.String) Feature to delete an individual document. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_DOWNLOAD](https://developer.android.com/reference/kotlin/android/content/QuickViewConstants#FEATURE_DOWNLOAD:kotlin.String) Feature to download a document to the local file system. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_EDIT](https://developer.android.com/reference/kotlin/android/content/QuickViewConstants#FEATURE_EDIT:kotlin.String) Feature to edit a document using system standard editing mechanism, like [Intent.ACTION_EDIT](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_EDIT:kotlin.String). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_DELETE](../android/content/QuickViewConstants.md) Feature to delete an individual document. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_DOWNLOAD](../android/content/QuickViewConstants.md) Feature to download a document to the local file system. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_EDIT](../android/content/QuickViewConstants.md) Feature to edit a document using system standard editing mechanism, like [Intent.ACTION_EDIT](../android/content/Intent.md). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_PRINT](https://developer.android.com/reference/kotlin/android/content/QuickViewConstants#FEATURE_PRINT:kotlin.String) Feature to print a document. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_SEND](https://developer.android.com/reference/kotlin/android/content/QuickViewConstants#FEATURE_SEND:kotlin.String) Feature to view a document using system standard sending mechanism, like [Intent.ACTION_SEND](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_SEND:kotlin.String). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_VIEW](https://developer.android.com/reference/kotlin/android/content/QuickViewConstants#FEATURE_VIEW:kotlin.String) Feature to view a document using system standard viewing mechanism, like [Intent.ACTION_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_VIEW:kotlin.String). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_PRINT](../android/content/QuickViewConstants.md) Feature to print a document. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_SEND](../android/content/QuickViewConstants.md) Feature to view a document using system standard sending mechanism, like [Intent.ACTION_SEND](../android/content/Intent.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_VIEW](../android/content/QuickViewConstants.md) Feature to view a document using system standard viewing mechanism, like [Intent.ACTION_VIEW](../android/content/Intent.md). |
 | --- | --- |
 
 ## Constants
@@ -46,8 +46,8 @@ Feature to delete an individual document. Quick viewer implementations must use 
 
 **See Also**
 
-- [android.provider.DocumentsContract.Document#FLAG_SUPPORTS_DELETE](https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document.html#FLAG_SUPPORTS_DELETE:kotlin.Int)
-- [android.provider.DocumentsContract#deleteDocument(ContentResolver, android.net.Uri)](https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.html#deleteDocument(android.content.ContentResolver,%20android.net.Uri)) 
+- [android.provider.DocumentsContract.Document#FLAG_SUPPORTS_DELETE](../android/provider/DocumentsContract.Document.md)
+- [android.provider.DocumentsContract#deleteDocument(ContentResolver, android.net.Uri)](../android/provider/DocumentsContract.md)) 
 
 ### FEATURE_DOWNLOAD
 
@@ -63,8 +63,8 @@ Feature to download a document to the local file system.
 
 **See Also**
 
-- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](https://developer.android.com/reference/kotlin/android/content/Intent#EXTRA_QUICK_VIEW_FEATURES:kotlin.String)
-- [android.content.Intent#ACTION_QUICK_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_QUICK_VIEW:kotlin.String) 
+- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](../android/content/Intent.md)
+- [android.content.Intent#ACTION_QUICK_VIEW](../android/content/Intent.md) 
 
 ### FEATURE_EDIT
 
@@ -74,14 +74,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val FEATURE_EDIT: String
 ```
 
-Feature to edit a document using system standard editing mechanism, like [Intent.ACTION_EDIT](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_EDIT:kotlin.String). 
+Feature to edit a document using system standard editing mechanism, like [Intent.ACTION_EDIT](../android/content/Intent.md). 
 
  Value: "android:edit"
 
 **See Also**
 
-- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](https://developer.android.com/reference/kotlin/android/content/Intent#EXTRA_QUICK_VIEW_FEATURES:kotlin.String)
-- [android.content.Intent#ACTION_QUICK_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_QUICK_VIEW:kotlin.String) 
+- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](../android/content/Intent.md)
+- [android.content.Intent#ACTION_QUICK_VIEW](../android/content/Intent.md) 
 
 ### FEATURE_PRINT
 
@@ -97,8 +97,8 @@ Feature to print a document.
 
 **See Also**
 
-- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](https://developer.android.com/reference/kotlin/android/content/Intent#EXTRA_QUICK_VIEW_FEATURES:kotlin.String)
-- [android.content.Intent#ACTION_QUICK_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_QUICK_VIEW:kotlin.String) 
+- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](../android/content/Intent.md)
+- [android.content.Intent#ACTION_QUICK_VIEW](../android/content/Intent.md) 
 
 ### FEATURE_SEND
 
@@ -108,14 +108,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val FEATURE_SEND: String
 ```
 
-Feature to view a document using system standard sending mechanism, like [Intent.ACTION_SEND](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_SEND:kotlin.String). 
+Feature to view a document using system standard sending mechanism, like [Intent.ACTION_SEND](../android/content/Intent.md). 
 
  Value: "android:send"
 
 **See Also**
 
-- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](https://developer.android.com/reference/kotlin/android/content/Intent#EXTRA_QUICK_VIEW_FEATURES:kotlin.String)
-- [android.content.Intent#ACTION_QUICK_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_QUICK_VIEW:kotlin.String) 
+- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](../android/content/Intent.md)
+- [android.content.Intent#ACTION_QUICK_VIEW](../android/content/Intent.md) 
 
 ### FEATURE_VIEW
 
@@ -125,11 +125,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val FEATURE_VIEW: String
 ```
 
-Feature to view a document using system standard viewing mechanism, like [Intent.ACTION_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_VIEW:kotlin.String). 
+Feature to view a document using system standard viewing mechanism, like [Intent.ACTION_VIEW](../android/content/Intent.md). 
 
  Value: "android:view"
 
 **See Also**
 
-- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](https://developer.android.com/reference/kotlin/android/content/Intent#EXTRA_QUICK_VIEW_FEATURES:kotlin.String)
-- [android.content.Intent#ACTION_QUICK_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent#ACTION_QUICK_VIEW:kotlin.String)
+- [android.content.Intent#EXTRA_QUICK_VIEW_FEATURES](../android/content/Intent.md)
+- [android.content.Intent#ACTION_QUICK_VIEW](../android/content/Intent.md)

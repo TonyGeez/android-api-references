@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # InstanceCountViolation
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/strictmode/InstanceCountViolation "View this page in Java") 
+Kotlin| [Java](../android/os/strictmode/InstanceCountViolation.md) 
 | --- | --- |
 
 ```
@@ -14,19 +14,19 @@ open class InstanceCountViolation : Violation
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [android.os.strictmode.Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) ||
-| | | ↳ | [android.os.strictmode.InstanceCountViolation](https://developer.android.com/reference/kotlin/android/os/strictmode/InstanceCountViolation#) |
+| | ↳ | [android.os.strictmode.Violation](../android/os/strictmode/Violation.md) ||
+| | | ↳ | [android.os.strictmode.InstanceCountViolation](../android/os/strictmode/InstanceCountViolation.md) |
 | --- | --- | --- | --- |
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNumberOfInstances](https://developer.android.com/reference/kotlin/android/os/strictmode/InstanceCountViolation#getNumberOfInstances())`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNumberOfInstances](../android/os/strictmode/InstanceCountViolation.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [Violation](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation) |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [fillInStackTrace](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation#fillInStackTrace())`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation#hashCode())`()` <br /> | | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [initCause](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation#initCause(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStackTrace](https://developer.android.com/reference/kotlin/android/os/strictmode/Violation#setStackTrace(kotlin.Array))`(`stackTrace:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement.html#)!>`)` <br /> | ||
+| From class [Violation](../android/os/strictmode/Violation.md) |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [fillInStackTrace](../android/os/strictmode/Violation.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/strictmode/Violation.md))`()` <br /> | | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [initCause](../android/os/strictmode/Violation.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStackTrace](../android/os/strictmode/Violation.md))`(`stackTrace:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](../java/lang/StackTraceElement.md)!>`)` <br /> | ||
 
 ## Public methods
 

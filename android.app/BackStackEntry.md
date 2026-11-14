@@ -5,34 +5,34 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # BackStackEntry
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry "View this page in Java") 
+Kotlin| [Java](../android/app/FragmentManager.BackStackEntry.md) 
 | --- | --- |
 
 ```
 interface BackStackEntry
 ```
 
-| [android.app.FragmentManager.BackStackEntry](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#) |
+| [android.app.FragmentManager.BackStackEntry](../android/app/FragmentManager.BackStackEntry.md) |
 
 | **This interface was deprecated in API level 28.**
 |
 | Use the [Support Library](https://developer.android.com/tools/extras/support-library.html) androidx.fragment.app.FragmentManager.BackStackEntry
 
-Representation of an entry on the fragment back stack, as created with [FragmentTransaction.addToBackStack()](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#addToBackStack(kotlin.String)). Entries can later be retrieved with [FragmentManager.getBackStackEntryAt()](https://developer.android.com/reference/kotlin/android/app/FragmentManager#getBackStackEntryAt(kotlin.Int)).
+Representation of an entry on the fragment back stack, as created with [FragmentTransaction.addToBackStack()](../android/app/FragmentTransaction.md)). Entries can later be retrieved with [FragmentManager.getBackStackEntryAt()](../android/app/FragmentManager.md)).
 
-Note that you should never hold on to a BackStackEntry object; the identifier as returned by [getId](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#getId())is the only thing that will be persisted across activity instances.
+Note that you should never hold on to a BackStackEntry object; the identifier as returned by [getId](../android/app/FragmentManager.BackStackEntry.md))is the only thing that will be persisted across activity instances.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getBreadCrumbShortTitle](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#getBreadCrumbShortTitle())`()` Return the short bread crumb title for the entry, or null if it does not have one. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBreadCrumbShortTitleRes](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#getBreadCrumbShortTitleRes())`()` Return the short bread crumb title resource identifier for the entry, or 0 if it does not have one. |
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getBreadCrumbTitle](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#getBreadCrumbTitle())`()` Return the full bread crumb title for the entry, or null if it does not have one. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getBreadCrumbShortTitle](../android/app/FragmentManager.BackStackEntry.md))`()` Return the short bread crumb title for the entry, or null if it does not have one. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBreadCrumbShortTitleRes](../android/app/FragmentManager.BackStackEntry.md))`()` Return the short bread crumb title resource identifier for the entry, or 0 if it does not have one. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getBreadCrumbTitle](../android/app/FragmentManager.BackStackEntry.md))`()` Return the full bread crumb title for the entry, or null if it does not have one. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBreadCrumbTitleRes](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#getBreadCrumbTitleRes())`()` Return the full bread crumb title resource identifier for the entry, or 0 if it does not have one. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#getId())`()` Return the unique identifier for the entry. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/app/FragmentManager.BackStackEntry#getName())`()` Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#addToBackStack(kotlin.String))when creating this entry. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBreadCrumbTitleRes](../android/app/FragmentManager.BackStackEntry.md))`()` Return the full bread crumb title resource identifier for the entry, or 0 if it does not have one. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](../android/app/FragmentManager.BackStackEntry.md))`()` Return the unique identifier for the entry. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/app/FragmentManager.BackStackEntry.md))`()` Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](../android/app/FragmentTransaction.md))when creating this entry. |
 | --- | --- |
 
 ## Public methods
@@ -108,4 +108,4 @@ abstract fun getName(): String!
 
 **Deprecated:** *Deprecated in Java.*
 
-Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction#addToBackStack(kotlin.String))when creating this entry.
+Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](../android/app/FragmentTransaction.md))when creating this entry.

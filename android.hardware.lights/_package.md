@@ -2,14 +2,14 @@
 
 # android.hardware.lights
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/lights/package-summary "View this page in Java")
+Kotlin| [Java](../android/hardware/lights/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [Light](https://developer.android.com/reference/kotlin/android/hardware/lights/Light) | Represents a logical light on the device. |
+| [Light](../android/hardware/lights/Light.md) | Represents a logical light on the device. |
 | --- | --- |
-| [LightsManager](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsManager) | The LightsManager class allows control over device lights. |
-| [LightsRequest](https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest) | Encapsulates a request to modify the state of multiple lights. |
-| [LightState](https://developer.android.com/reference/kotlin/android/hardware/lights/LightState) | Represents the state of a device light. |
+| [LightsManager](../android/hardware/lights/LightsManager.md) | The LightsManager class allows control over device lights. |
+| [LightsRequest](../android/hardware/lights/LightsRequest.md) | Encapsulates a request to modify the state of multiple lights. |
+| [LightState](../android/hardware/lights/LightState.md) | Represents the state of a device light. |
 | --- | --- |

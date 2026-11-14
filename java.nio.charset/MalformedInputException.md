@@ -11,11 +11,11 @@ open class MalformedInputException : CharacterCodingException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.charset.CharacterCodingException](https://developer.android.com/reference/kotlin/java/nio/charset/CharacterCodingException) ||
-| | | | | ↳ | [java.nio.charset.MalformedInputException](https://developer.android.com/reference/kotlin/java/nio/charset/MalformedInputException#) |
+| | | | ↳ | [java.nio.charset.CharacterCodingException](../java/nio/charset/CharacterCodingException.md) ||
+| | | | | ↳ | [java.nio.charset.MalformedInputException](../java/nio/charset/MalformedInputException.md) |
 
 Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence.
 
@@ -23,15 +23,15 @@ Checked exception thrown when an input byte sequence is not legal for given char
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MalformedInputException](https://developer.android.com/reference/kotlin/java/nio/charset/MalformedInputException#MalformedInputException(kotlin.Int))`(`inputLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an`MalformedInputException`with the given length. |
+| [MalformedInputException](../java/nio/charset/MalformedInputException.md))`(`inputLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an`MalformedInputException`with the given length. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputLength](https://developer.android.com/reference/kotlin/java/nio/charset/MalformedInputException#getInputLength())`()` Returns the length of the input. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputLength](../java/nio/charset/MalformedInputException.md))`()` Returns the length of the input. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/nio/charset/MalformedInputException#message:kotlin.String) Returns the message. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/nio/charset/MalformedInputException.md) Returns the message. |
 
 ## Public constructors
 

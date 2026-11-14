@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 
 # GetAdSelectionDataOutcome
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/adselection/GetAdSelectionDataOutcome "View this page in Java") 
+Kotlin| [Java](../android/adservices/adselection/GetAdSelectionDataOutcome.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class GetAdSelectionDataOutcome
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adselection.GetAdSelectionDataOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome#) |
+| ↳ | [android.adservices.adselection.GetAdSelectionDataOutcome](../android/adservices/adselection/GetAdSelectionDataOutcome.md) |
 
 Represents ad selection data collected from device for ad selection.
 
@@ -22,9 +22,9 @@ Represents ad selection data collected from device for ad selection.
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAdSelectionData](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome#getAdSelectionData())`()` Returns the adSelectionData that is collected from device. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionDataId](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome#getAdSelectionDataId())`()` Returns the id that uniquely identifies this GetAdSelectionData payload. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionId](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome#getAdSelectionId())`()` Returns the adSelectionId that identifies the AdSelection. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAdSelectionData](../android/adservices/adselection/GetAdSelectionDataOutcome.md))`()` Returns the adSelectionData that is collected from device. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionDataId](../android/adservices/adselection/GetAdSelectionDataOutcome.md))`()` Returns the id that uniquely identifies this GetAdSelectionData payload. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAdSelectionId](../android/adservices/adselection/GetAdSelectionDataOutcome.md))`()` Returns the adSelectionId that identifies the AdSelection. |
 | --- | --- |
 
 ## Public methods
@@ -65,6 +65,6 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 fun getAdSelectionId(): Long
 ```
 
-**Deprecated:** *Use the [getAdSelectionDataId()](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome#getAdSelectionDataId())instead.*
+**Deprecated:** *Use the [getAdSelectionDataId()](../android/adservices/adselection/GetAdSelectionDataOutcome.md))instead.*
 
 Returns the adSelectionId that identifies the AdSelection.

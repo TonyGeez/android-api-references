@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # JsonWriter
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/JsonWriter "View this page in Java") 
+Kotlin| [Java](../android/util/JsonWriter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class JsonWriter : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#) |
+| ↳ | [android.util.JsonWriter](../android/util/JsonWriter.md) |
 
 Writes a JSON ([RFC 4627](http://www.ietf.org/rfc/rfc4627.txt)) encoded value to a stream, one token at a time. The stream includes both literal values (strings, numbers, booleans and nulls) as well as the begin and end delimiters of objects and arrays.
 
@@ -21,8 +21,8 @@ Writes a JSON ([RFC 4627](http://www.ietf.org/rfc/rfc4627.txt)) encoded value to
 
 To encode your data as JSON, create a new`JsonWriter`. Each JSON document must contain one top-level array or object. Call methods on the writer as you walk the structure's contents, nesting arrays and objects as necessary:
 
-- To write**arrays** , first call [beginArray()](https://developer.android.com/reference/kotlin/android/util/JsonWriter#beginArray()). Write each of the array's elements with the appropriate #value methods or by nesting other arrays and objects. Finally close the array using [endArray()](https://developer.android.com/reference/kotlin/android/util/JsonWriter#endArray()).
-- To write**objects** , first call [beginObject()](https://developer.android.com/reference/kotlin/android/util/JsonWriter#beginObject()). Write each of the object's properties by alternating calls to [name](https://developer.android.com/reference/kotlin/android/util/JsonWriter#name(kotlin.String))with the property's value. Write property values with the appropriate #value method or by nesting other objects or arrays. Finally close the object using [endObject()](https://developer.android.com/reference/kotlin/android/util/JsonWriter#endObject()).
+- To write**arrays** , first call [beginArray()](../android/util/JsonWriter.md)). Write each of the array's elements with the appropriate #value methods or by nesting other arrays and objects. Finally close the array using [endArray()](../android/util/JsonWriter.md)).
+- To write**objects** , first call [beginObject()](../android/util/JsonWriter.md)). Write each of the object's properties by alternating calls to [name](../android/util/JsonWriter.md))with the property's value. Write property values with the appropriate #value method or by nesting other objects or arrays. Finally close the object using [endObject()](../android/util/JsonWriter.md)).
 
 ### Example
 
@@ -101,37 +101,37 @@ This code encodes the above structure:
 
 <br />
 
-Each`JsonWriter`may be used to write a single JSON stream. Instances of this class are not thread safe. Calls that would result in a malformed JSON string will fail with an [IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#).
+Each`JsonWriter`may be used to write a single JSON stream. Instances of this class are not thread safe. Calls that would result in a malformed JSON string will fail with an [IllegalStateException](../java/lang/IllegalStateException.md).
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#JsonWriter(java.io.Writer))`(`out:` ` [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#)!`)` Creates a new instance that writes a JSON-encoded stream to`out`. |
+| [JsonWriter](../android/util/JsonWriter.md))`(`out:` ` [Writer](../java/io/Writer.md)!`)` Creates a new instance that writes a JSON-encoded stream to`out`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [beginArray](https://developer.android.com/reference/kotlin/android/util/JsonWriter#beginArray())`()` Begins encoding a new array. |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [beginObject](https://developer.android.com/reference/kotlin/android/util/JsonWriter#beginObject())`()` Begins encoding a new object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/util/JsonWriter#close())`()` Flushes and closes this writer and the underlying [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#). |
+| [JsonWriter](../android/util/JsonWriter.md)! | [beginArray](../android/util/JsonWriter.md))`()` Begins encoding a new array. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [beginObject](../android/util/JsonWriter.md))`()` Begins encoding a new object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/util/JsonWriter.md))`()` Flushes and closes this writer and the underlying [Writer](../java/io/Writer.md). |
 | --- | --- |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [endArray](https://developer.android.com/reference/kotlin/android/util/JsonWriter#endArray())`()` Ends encoding the current array. |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [endObject](https://developer.android.com/reference/kotlin/android/util/JsonWriter#endObject())`()` Ends encoding the current object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](https://developer.android.com/reference/kotlin/android/util/JsonWriter#flush())`()` Ensures all buffered data is written to the underlying [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#) and flushes that writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [endArray](../android/util/JsonWriter.md))`()` Ends encoding the current array. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [endObject](../android/util/JsonWriter.md))`()` Ends encoding the current object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../android/util/JsonWriter.md))`()` Ensures all buffered data is written to the underlying [Writer](../java/io/Writer.md) and flushes that writer. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLenient](https://developer.android.com/reference/kotlin/android/util/JsonWriter#isLenient())`()` Returns true if this writer has relaxed syntax rules. |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [name](https://developer.android.com/reference/kotlin/android/util/JsonWriter#name(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes the property name. |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [nullValue](https://developer.android.com/reference/kotlin/android/util/JsonWriter#nullValue())`()` Encodes`null`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLenient](../android/util/JsonWriter.md))`()` Returns true if this writer has relaxed syntax rules. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [name](../android/util/JsonWriter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes the property name. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [nullValue](../android/util/JsonWriter.md))`()` Encodes`null`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIndent](https://developer.android.com/reference/kotlin/android/util/JsonWriter#setIndent(kotlin.String))`(`indent:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the indentation string to be repeated for each level of indentation in the encoded document. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLenient](https://developer.android.com/reference/kotlin/android/util/JsonWriter#setLenient(kotlin.Boolean))`(`lenient:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configure this writer to relax its syntax rules. |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [value](https://developer.android.com/reference/kotlin/android/util/JsonWriter#value(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Encodes`value`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIndent](../android/util/JsonWriter.md))`(`indent:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the indentation string to be repeated for each level of indentation in the encoded document. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLenient](../android/util/JsonWriter.md))`(`lenient:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configure this writer to relax its syntax rules. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [value](../android/util/JsonWriter.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Encodes`value`. |
 | --- | --- |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [value](https://developer.android.com/reference/kotlin/android/util/JsonWriter#value(kotlin.Double))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Encodes`value`. |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [value](https://developer.android.com/reference/kotlin/android/util/JsonWriter#value(kotlin.Number))`(`value:` ` [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!`)` Encodes`value`. |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [value](https://developer.android.com/reference/kotlin/android/util/JsonWriter#value(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes`value`. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [value](../android/util/JsonWriter.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Encodes`value`. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [value](../android/util/JsonWriter.md))`(`value:` ` [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!`)` Encodes`value`. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [value](../android/util/JsonWriter.md))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes`value`. |
 | --- | --- |
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | [value](https://developer.android.com/reference/kotlin/android/util/JsonWriter#value(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Encodes`value`. |
+| [JsonWriter](../android/util/JsonWriter.md)! | [value](../android/util/JsonWriter.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Encodes`value`. |
 
 ## Public constructors
 
@@ -143,7 +143,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 JsonWriter(out: Writer!)
 ```
 
-Creates a new instance that writes a JSON-encoded stream to`out`. For best performance, ensure [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#) is buffered; wrapping in [BufferedWriter](https://developer.android.com/reference/kotlin/java/io/BufferedWriter.html#) if necessary.
+Creates a new instance that writes a JSON-encoded stream to`out`. For best performance, ensure [Writer](../java/io/Writer.md) is buffered; wrapping in [BufferedWriter](../java/io/BufferedWriter.md) if necessary.
 
 ## Public methods
 
@@ -155,11 +155,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun beginArray(): JsonWriter!
 ```
 
-Begins encoding a new array. Each call to this method must be paired with a call to [endArray](https://developer.android.com/reference/kotlin/android/util/JsonWriter#endArray()).
+Begins encoding a new array. Each call to this method must be paired with a call to [endArray](../android/util/JsonWriter.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### beginObject
 
@@ -169,11 +169,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun beginObject(): JsonWriter!
 ```
 
-Begins encoding a new object. Each call to this method must be paired with a call to [endObject](https://developer.android.com/reference/kotlin/android/util/JsonWriter#endObject()).
+Begins encoding a new object. Each call to this method must be paired with a call to [endObject](../android/util/JsonWriter.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### close
 
@@ -183,7 +183,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun close(): Unit
 ```
 
-Flushes and closes this writer and the underlying [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#).
+Flushes and closes this writer and the underlying [Writer](../java/io/Writer.md).
 
 | Exceptions ||
 |-----------------------|-------------------------------------|
@@ -202,7 +202,7 @@ Ends encoding the current array.
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### endObject
 
@@ -216,7 +216,7 @@ Ends encoding the current object.
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### flush
 
@@ -226,7 +226,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun flush(): Unit
 ```
 
-Ensures all buffered data is written to the underlying [Writer](https://developer.android.com/reference/kotlin/java/io/Writer.html#) and flushes that writer. 
+Ensures all buffered data is written to the underlying [Writer](../java/io/Writer.md) and flushes that writer. 
 
 ### isLenient
 
@@ -254,7 +254,7 @@ Encodes the property name.
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### nullValue
 
@@ -268,7 +268,7 @@ Encodes`null`.
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### setIndent
 
@@ -295,7 +295,7 @@ fun setLenient(lenient: Boolean): Unit
 Configure this writer to relax its syntax rules. By default, this writer only emits well-formed JSON as specified by [RFC 4627](http://www.ietf.org/rfc/rfc4627.txt). Setting the writer to lenient permits the following:
 
 - Top-level values of any type. With strict writing, the top-level value must be an object or an array.
-- Numbers may be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN())or [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite()).
+- Numbers may be [NaNs](../java/lang/Double.md))or [infinities](../java/lang/Double.md)).
 
 <br />
 
@@ -311,7 +311,7 @@ Encodes`value`.
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### value
 
@@ -325,11 +325,11 @@ Encodes`value`.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):a finite value. May not be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN())or [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite())unless this writer is lenient. |
+| `value` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):a finite value. May not be [NaNs](../java/lang/Double.md))or [infinities](../java/lang/Double.md))unless this writer is lenient. |
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### value
 
@@ -343,11 +343,11 @@ Encodes`value`.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!:a finite value. May not be [NaNs](https://developer.android.com/reference/kotlin/java/lang/Double.html#isNaN())or [infinities](https://developer.android.com/reference/kotlin/java/lang/Double.html#isInfinite())unless this writer is lenient. |
+| `value` | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!:a finite value. May not be [NaNs](../java/lang/Double.md))or [infinities](../java/lang/Double.md))unless this writer is lenient. |
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### value
 
@@ -365,7 +365,7 @@ Encodes`value`.
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |
 
 ### value
 
@@ -379,4 +379,4 @@ Encodes`value`.
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------|
-| [JsonWriter](https://developer.android.com/reference/kotlin/android/util/JsonWriter#)! | this writer. |
+| [JsonWriter](../android/util/JsonWriter.md)! | this writer. |

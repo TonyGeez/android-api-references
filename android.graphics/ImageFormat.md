@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # ImageFormat
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/ImageFormat "View this page in Java") 
+Kotlin| [Java](../android/graphics/ImageFormat.md) 
 | --- | --- |
 
 ```
@@ -13,54 +13,54 @@ open class ImageFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.ImageFormat](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#) |
+| ↳ | [android.graphics.ImageFormat](../android/graphics/ImageFormat.md) |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH16](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH16:kotlin.Int) Android dense depth image format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH_JPEG](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH_JPEG:kotlin.Int) Depth augmented compressed JPEG format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH_POINT_CLOUD](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH_POINT_CLOUD:kotlin.Int) Android sparse depth point cloud format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH16](../android/graphics/ImageFormat.md) Android dense depth image format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH_JPEG](../android/graphics/ImageFormat.md) Depth augmented compressed JPEG format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPTH_POINT_CLOUD](../android/graphics/ImageFormat.md) Android sparse depth point cloud format. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLEX_RGBA_8888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#FLEX_RGBA_8888:kotlin.Int) Multi-plane Android RGBA format |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLEX_RGB_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#FLEX_RGB_888:kotlin.Int) Multi-plane Android RGB format |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEIC](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#HEIC:kotlin.Int) Compressed HEIC format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLEX_RGBA_8888](../android/graphics/ImageFormat.md) Multi-plane Android RGBA format |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLEX_RGB_888](../android/graphics/ImageFormat.md) Multi-plane Android RGB format |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEIC](../android/graphics/ImageFormat.md) Compressed HEIC format. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEIC_ULTRAHDR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#HEIC_ULTRAHDR:kotlin.Int) High Efficiency Image File Format (HEIF) with embedded HDR gain map |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JPEG](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#JPEG:kotlin.Int) Compressed JPEG format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JPEG_R](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#JPEG_R:kotlin.Int) Compressed JPEG format that includes an embedded recovery map. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEIC_ULTRAHDR](../android/graphics/ImageFormat.md) High Efficiency Image File Format (HEIF) with embedded HDR gain map |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JPEG](../android/graphics/ImageFormat.md) Compressed JPEG format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JPEG_R](../android/graphics/ImageFormat.md) Compressed JPEG format that includes an embedded recovery map. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NV16](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#NV16:kotlin.Int) YCbCr format, used for video. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NV21](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#NV21:kotlin.Int) YCrCb format used for images, which uses the NV21 encoding format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#PRIVATE:kotlin.Int) Android private opaque image format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NV16](../android/graphics/ImageFormat.md) YCbCr format, used for video. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NV21](../android/graphics/ImageFormat.md) YCrCb format used for images, which uses the NV21 encoding format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE](../android/graphics/ImageFormat.md) Android private opaque image format. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW10](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW10:kotlin.Int) Android 10-bit raw format |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW12:kotlin.Int) Android 12-bit raw format |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_PRIVATE](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW_PRIVATE:kotlin.Int) Private raw camera sensor image format, a single channel image with implementation dependent pixel layout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW10](../android/graphics/ImageFormat.md) Android 10-bit raw format |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW12](../android/graphics/ImageFormat.md) Android 12-bit raw format |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_PRIVATE](../android/graphics/ImageFormat.md) Private raw camera sensor image format, a single channel image with implementation dependent pixel layout. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_SENSOR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW_SENSOR:kotlin.Int) General raw camera sensor image format, usually representing a single-channel Bayer-mosaic image. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGB_565](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RGB_565:kotlin.Int) RGB format used for pictures encoded as RGB_565. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#UNKNOWN:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RAW_SENSOR](../android/graphics/ImageFormat.md) General raw camera sensor image format, usually representing a single-channel Bayer-mosaic image. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGB_565](../android/graphics/ImageFormat.md) RGB format used for pictures encoded as RGB_565. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](../android/graphics/ImageFormat.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [Y8](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#Y8:kotlin.Int) Android Y8 format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCBCR_P010](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YCBCR_P010:kotlin.Int) Android YUV P010 format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCBCR_P210](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YCBCR_P210:kotlin.Int) Android YUV P210 format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [Y8](../android/graphics/ImageFormat.md) Android Y8 format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCBCR_P010](../android/graphics/ImageFormat.md) Android YUV P010 format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YCBCR_P210](../android/graphics/ImageFormat.md) Android YUV P210 format. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) Multi-plane Android YUV 420 format |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_422_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_422_888:kotlin.Int) Multi-plane Android YUV 422 format |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_444_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_444_888:kotlin.Int) Multi-plane Android YUV 444 format |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_420_888](../android/graphics/ImageFormat.md) Multi-plane Android YUV 420 format |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_422_888](../android/graphics/ImageFormat.md) Multi-plane Android YUV 422 format |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUV_444_888](../android/graphics/ImageFormat.md) Multi-plane Android YUV 444 format |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUY2](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUY2:kotlin.Int) YCbCr format used for images, which uses YUYV (YUY2) encoding format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YV12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YV12:kotlin.Int) Android YUV format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YUY2](../android/graphics/ImageFormat.md) YCbCr format used for images, which uses YUYV (YUY2) encoding format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [YV12](../android/graphics/ImageFormat.md) Android YUV format. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------|---|
-| [ImageFormat](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#ImageFormat())`()` <br /> |
+| [ImageFormat](../android/graphics/ImageFormat.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBitsPerPixel](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#getBitsPerPixel(kotlin.Int))`(`format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this function to retrieve the number of bits per pixel of an ImageFormat. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBitsPerPixel](../android/graphics/ImageFormat.md))`(`format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Use this function to retrieve the number of bits per pixel of an ImageFormat. |
 
 ## Constants
 
@@ -78,7 +78,7 @@ Each pixel is 16 bits, representing a depth ranging measurement from a depth cam
 
 The confidence value is an estimate of correctness for this sample. It is encoded in the 3 most significant bits of the sample, with a value of 0 representing 100% confidence, a value of 1 representing 0% confidence, a value of 2 representing 1/7, a value of 3 representing 2/7, and so on.
 
-As an example, the following sample extracts the range and confidence from the first pixel of a DEPTH16-format [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#), and converts the confidence to a floating-point value between 0 and 1.f inclusive, with 1.f representing maximum confidence: 
+As an example, the following sample extracts the range and confidence from the first pixel of a DEPTH16-format [android.media.Image](../android/media/Image.md), and converts the confidence to a floating-point value between 0 and 1.f inclusive, with 1.f representing maximum confidence: 
 
 ```kotlin
 ShortBuffer shortDepthBuffer = img.getPlanes()[0].getBuffer().asShortBuffer();
@@ -136,7 +136,7 @@ The number of points is`(size of the buffer in bytes) / 16`.
 
 The coordinate system and units of the position values depend on the source of the point cloud data. The confidence value is between 0.f and 1.f, inclusive, with 0 representing 0% confidence and 1.f representing 100% confidence in the measured position values.
 
-As an example, the following code extracts the first depth point in a DEPTH_POINT_CLOUD format [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#): 
+As an example, the following code extracts the first depth point in a DEPTH_POINT_CLOUD format [android.media.Image](../android/media/Image.md): 
 
 ```kotlin
 FloatBuffer floatDepthBuffer = img.getPlanes()[0].getBuffer().asFloatBuffer();
@@ -146,7 +146,7 @@ FloatBuffer floatDepthBuffer = img.getPlanes()[0].getBuffer().asFloatBuffer();
      float confidence = floatDepthBuffer.get();
   
 ```
-For camera devices that support the [DEPTH_OUTPUT](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT:kotlin.Int) capability, DEPTH_POINT_CLOUD coordinates have units of meters, and the coordinate system is defined by the camera's pose transforms: [android.hardware.camera2.CameraCharacteristics#LENS_POSE_TRANSLATION](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#LENS_POSE_TRANSLATION:android.hardware.camera2.CameraCharacteristics.Key) and [android.hardware.camera2.CameraCharacteristics#LENS_POSE_ROTATION](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#LENS_POSE_ROTATION:android.hardware.camera2.CameraCharacteristics.Key). That means the origin is the optical center of the camera device, and the positive Z axis points along the camera's optical axis, toward the scene. 
+For camera devices that support the [DEPTH_OUTPUT](../android/hardware/camera2/CameraMetadata.md) capability, DEPTH_POINT_CLOUD coordinates have units of meters, and the coordinate system is defined by the camera's pose transforms: [android.hardware.camera2.CameraCharacteristics#LENS_POSE_TRANSLATION](../android/hardware/camera2/CameraCharacteristics.md) and [android.hardware.camera2.CameraCharacteristics#LENS_POSE_ROTATION](../android/hardware/camera2/CameraCharacteristics.md). That means the origin is the optical center of the camera device, and the positive Z axis points along the camera's optical axis, toward the scene. 
 
  Value: 257
 
@@ -164,18 +164,18 @@ This format is a generic RGBA format, capable of describing most RGBA formats, w
 
 Images in this format are always represented by four separate buffers of data, one for each color plane. Additional information always accompanies the buffers, describing the row stride and the pixel stride for each plane.
 
-The order of planes in the array returned by [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())is guaranteed such that plane #0 is always R (red), plane #1 is always G (green), plane #2 is always B (blue), and plane #3 is always A (alpha). This format may represent pre-multiplied or non-premultiplied alpha.
+The order of planes in the array returned by [Image#getPlanes()](../android/media/Image.md))is guaranteed such that plane #0 is always R (red), plane #1 is always G (green), plane #2 is always B (blue), and plane #3 is always A (alpha). This format may represent pre-multiplied or non-premultiplied alpha.
 
 All four planes are guaranteed to have the same row strides and pixel strides.
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) through [android.media.MediaCodec#getOutputImage](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#getOutputImage(kotlin.Int))object. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.media.MediaCodec](../android/media/MediaCodec.md) through [android.media.MediaCodec#getOutputImage](../android/media/MediaCodec.md))object. 
 
  Value: 42
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.MediaCodec](../android/media/MediaCodec.md) 
 
 ### FLEX_RGB_888
 
@@ -191,18 +191,18 @@ This format is a generic RGB format, capable of describing most RGB formats, wit
 
 Images in this format are always represented by three separate buffers of data, one for each color plane. Additional information always accompanies the buffers, describing the row stride and the pixel stride for each plane.
 
-The order of planes in the array returned by [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())is guaranteed such that plane #0 is always R (red), plane #1 is always G (green), and plane #2 is always B (blue).
+The order of planes in the array returned by [Image#getPlanes()](../android/media/Image.md))is guaranteed such that plane #0 is always R (red), plane #1 is always G (green), and plane #2 is always B (blue).
 
 All three planes are guaranteed to have the same row strides and pixel strides.
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) through [android.media.MediaCodec#getOutputImage](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#getOutputImage(kotlin.Int))object. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.media.MediaCodec](../android/media/MediaCodec.md) through [android.media.MediaCodec#getOutputImage](../android/media/MediaCodec.md))object. 
 
  Value: 41
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.MediaCodec](../android/media/MediaCodec.md) 
 
 ### HEIC
 
@@ -242,7 +242,7 @@ static val JPEG: Int
 
 Compressed JPEG format.
 
-This format is always supported as an output format for the [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary.html) API, and as a picture format for the older [android.hardware.Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera.html#) API 
+This format is always supported as an output format for the [android.hardware.camera2](../android/hardware/camera2/_package.md) API, and as a picture format for the older [android.hardware.Camera](../android/hardware/Camera.md) API 
 
  Value: 256
 
@@ -270,9 +270,9 @@ static val NV16: Int
 
 YCbCr format, used for video.
 
-For the [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary.html) API, the [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) format is recommended for YUV output instead.
+For the [android.hardware.camera2](../android/hardware/camera2/_package.md) API, the [YUV_420_888](../android/graphics/ImageFormat.md) format is recommended for YUV output instead.
 
-Whether this format is supported by the old camera API can be determined by [android.hardware.Camera.Parameters#getSupportedPreviewFormats()](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters.html#getSupportedPreviewFormats()). 
+Whether this format is supported by the old camera API can be determined by [android.hardware.Camera.Parameters#getSupportedPreviewFormats()](../android/hardware/Camera.Parameters.md)). 
 
  Value: 16
 
@@ -286,9 +286,9 @@ static val NV21: Int
 
 YCrCb format used for images, which uses the NV21 encoding format.
 
-This is the default format for [android.hardware.Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera.html#) preview images, when not otherwise set with [android.hardware.Camera.Parameters#setPreviewFormat(int)](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters.html#setPreviewFormat(kotlin.Int)).
+This is the default format for [android.hardware.Camera](../android/hardware/Camera.md) preview images, when not otherwise set with [android.hardware.Camera.Parameters#setPreviewFormat(int)](../android/hardware/Camera.Parameters.md)).
 
-For the [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary.html) API, the [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) format is recommended for YUV output instead. 
+For the [android.hardware.camera2](../android/hardware/camera2/_package.md) API, the [YUV_420_888](../android/graphics/ImageFormat.md) format is recommended for YUV output instead. 
 
  Value: 17
 
@@ -302,9 +302,9 @@ static val PRIVATE: Int
 
 Android private opaque image format.
 
-The choices of the actual format and pixel data layout are entirely up to the device-specific and framework internal implementations, and may vary depending on use cases even for the same device. The buffers of this format can be produced by components like [ImageWriter](https://developer.android.com/reference/kotlin/android/media/ImageWriter.html#), and interpreted correctly by consumers like [CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) based on the device/framework private information. However, these buffers are not directly accessible to the application.
+The choices of the actual format and pixel data layout are entirely up to the device-specific and framework internal implementations, and may vary depending on use cases even for the same device. The buffers of this format can be produced by components like [ImageWriter](../android/media/ImageWriter.md), and interpreted correctly by consumers like [CameraDevice](../android/hardware/camera2/CameraDevice.md) based on the device/framework private information. However, these buffers are not directly accessible to the application.
 
-When an [Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) of this format is obtained from an [ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#) or [ImageWriter](https://developer.android.com/reference/kotlin/android/media/ImageWriter.html#), the [getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())method will return an empty [Plane](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#) array.
+When an [Image](../android/media/Image.md) of this format is obtained from an [ImageReader](../android/media/ImageReader.md) or [ImageWriter](../android/media/ImageWriter.md), the [getPlanes()](../android/media/Image.md))method will return an empty [Plane](../android/media/Image.Plane.md) array.
 
 If a buffer of this format is to be used as an OpenGL ES texture, the framework will assume that sampling the texture will always return an alpha value of 1.0 (i.e. the buffer contains only opaque pixel values). 
 
@@ -347,15 +347,15 @@ where the row stride is in*bytes* , not pixels.
 
 Since this is a densely packed format, the pixel stride is always 0. The application must use the pixel data layout defined in above table to access each row data. When row stride is equal to`width * (10 / 8)`, there will be no padding bytes at the end of each row, the entire image data is densely packed. When stride is larger than`width * (10 / 8)`, padding bytes will be present at the end of each row.
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#)(if supported) through a [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#) object. The [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())will return a single plane containing the pixel data. The pixel stride is always 0 in [android.media.Image.Plane#getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()), and the [android.media.Image.Plane#getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())describes the vertical neighboring pixel distance (in bytes) between adjacent rows. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md)(if supported) through a [android.media.ImageReader](../android/media/ImageReader.md) object. The [Image#getPlanes()](../android/media/Image.md))will return a single plane containing the pixel data. The pixel stride is always 0 in [android.media.Image.Plane#getPixelStride()](../android/media/Image.Plane.md)), and the [android.media.Image.Plane#getRowStride()](../android/media/Image.Plane.md))describes the vertical neighboring pixel distance (in bytes) between adjacent rows. 
 
  Value: 37
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)
-- [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.ImageReader](../android/media/ImageReader.md)
+- [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) 
 
 ### RAW12
 
@@ -392,15 +392,15 @@ where the row stride is in*bytes* , not pixels.
 
 Since this is a densely packed format, the pixel stride is always 0. The application must use the pixel data layout defined in above table to access each row data. When row stride is equal to`width * (12 / 8)`, there will be no padding bytes at the end of each row, the entire image data is densely packed. When stride is larger than`width * (12 / 8)`, padding bytes will be present at the end of each row.
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#)(if supported) through a [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#) object. The [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())will return a single plane containing the pixel data. The pixel stride is always 0 in [android.media.Image.Plane#getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()), and the [android.media.Image.Plane#getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())describes the vertical neighboring pixel distance (in bytes) between adjacent rows. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md)(if supported) through a [android.media.ImageReader](../android/media/ImageReader.md) object. The [Image#getPlanes()](../android/media/Image.md))will return a single plane containing the pixel data. The pixel stride is always 0 in [android.media.Image.Plane#getPixelStride()](../android/media/Image.Plane.md)), and the [android.media.Image.Plane#getRowStride()](../android/media/Image.Plane.md))describes the vertical neighboring pixel distance (in bytes) between adjacent rows. 
 
  Value: 38
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)
-- [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.ImageReader](../android/media/ImageReader.md)
+- [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) 
 
 ### RAW_PRIVATE
 
@@ -426,7 +426,7 @@ static val RAW_SENSOR: Int
 
 General raw camera sensor image format, usually representing a single-channel Bayer-mosaic image. Each pixel color sample is stored with 16 bits of precision.
 
-The layout of the color mosaic, the maximum and minimum encoding values of the raw pixel data, the color space of the image, and all other needed information to interpret a raw sensor image must be queried from the [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) which produced the image. 
+The layout of the color mosaic, the maximum and minimum encoding values of the raw pixel data, the color space of the image, and all other needed information to interpret a raw sensor image must be queried from the [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) which produced the image. 
 
  Value: 32
 
@@ -438,7 +438,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val RGB_565: Int
 ```
 
-RGB format used for pictures encoded as RGB_565. See [android.hardware.Camera.Parameters#setPictureFormat(int)](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters.html#setPictureFormat(kotlin.Int)). 
+RGB format used for pictures encoded as RGB_565. See [android.hardware.Camera.Parameters#setPictureFormat(int)](../android/hardware/Camera.Parameters.md)). 
 
  Value: 4
 
@@ -462,7 +462,7 @@ static val Y8: Int
 
 Android Y8 format.
 
-Y8 is a YUV planar format comprised of a WxH Y plane only, with each pixel being represented by 8 bits. It is equivalent to just the Y plane from [YV12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YV12:kotlin.Int) format.
+Y8 is a YUV planar format comprised of a WxH Y plane only, with each pixel being represented by 8 bits. It is equivalent to just the Y plane from [YV12](../android/graphics/ImageFormat.md) format.
 
 This format assumes
 
@@ -476,15 +476,15 @@ This format assumes
 size = stride * height 
 ```
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#)(if supported) through a [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#) object. The [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())will return a single plane containing the pixel data. The pixel stride is always 1 in [android.media.Image.Plane#getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()), and the [android.media.Image.Plane#getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())describes the vertical neighboring pixel distance (in bytes) between adjacent rows. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md)(if supported) through a [android.media.ImageReader](../android/media/ImageReader.md) object. The [Image#getPlanes()](../android/media/Image.md))will return a single plane containing the pixel data. The pixel stride is always 1 in [android.media.Image.Plane#getPixelStride()](../android/media/Image.Plane.md)), and the [android.media.Image.Plane#getRowStride()](../android/media/Image.Plane.md))describes the vertical neighboring pixel distance (in bytes) between adjacent rows. 
 
  Value: 538982489
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)
-- [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.ImageReader](../android/media/ImageReader.md)
+- [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) 
 
 ### YCBCR_P010
 
@@ -497,15 +497,15 @@ static val YCBCR_P010: Int
 Android YUV P010 format.
 P010 is a 10-bit 4:2:0 YCbCr semiplanar format comprised of a WxH Y plane followed by a Wx(H/2) CbCr plane. Each sample is represented by a 16-bit little-endian value, with the lower 6 bits set to zero.
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) through a [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#) object if this format is supported by [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#). 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) through a [android.media.ImageReader](../android/media/ImageReader.md) object if this format is supported by [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md). 
 
  Value: 54
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)
-- [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.ImageReader](../android/media/ImageReader.md)
+- [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) 
 
 ### YCBCR_P210
 
@@ -518,15 +518,15 @@ static val YCBCR_P210: Int
 Android YUV P210 format.
 P210 is a 10-bit 4:2:2 YCbCr semiplanar format comprised of a WxH Y plane followed by a WxH CbCr plane. Each sample is represented by a 16-bit little-endian value, with the lower 6 bits set to zero.
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) through a [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#) object if this format is supported by [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#). 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) through a [android.media.ImageReader](../android/media/ImageReader.md) object if this format is supported by [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md). 
 
  Value: 60
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)
-- [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.ImageReader](../android/media/ImageReader.md)
+- [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) 
 
 ### YUV_420_888
 
@@ -542,21 +542,21 @@ This format is a generic YCbCr format, capable of describing any 4:2:0 chroma-su
 
 Images in this format are always represented by three separate buffers of data, one for each color plane. Additional information always accompanies the buffers, describing the row stride and the pixel stride for each plane.
 
-The order of planes in the array returned by [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())is guaranteed such that plane #0 is always Y, plane #1 is always U (Cb), and plane #2 is always V (Cr).
+The order of planes in the array returned by [Image#getPlanes()](../android/media/Image.md))is guaranteed such that plane #0 is always Y, plane #1 is always U (Cb), and plane #2 is always V (Cr).
 
-The Y-plane is guaranteed not to be interleaved with the U/V planes (in particular, pixel stride is always 1 in [yPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride())).
+The Y-plane is guaranteed not to be interleaved with the U/V planes (in particular, pixel stride is always 1 in [yPlane.getPixelStride()](../android/media/Image.Plane.md))).
 
-The U/V planes are guaranteed to have the same row stride and pixel stride (in particular, [uPlane.getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())== [vPlane.getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())and [uPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride())== [vPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()); ).
+The U/V planes are guaranteed to have the same row stride and pixel stride (in particular, [uPlane.getRowStride()](../android/media/Image.Plane.md))== [vPlane.getRowStride()](../android/media/Image.Plane.md))and [uPlane.getPixelStride()](../android/media/Image.Plane.md))== [vPlane.getPixelStride()](../android/media/Image.Plane.md)); ).
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) through a [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#) object. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) through a [android.media.ImageReader](../android/media/ImageReader.md) object. 
 
  Value: 35
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.ImageReader](https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)
-- [android.hardware.camera2.CameraDevice](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.ImageReader](../android/media/ImageReader.md)
+- [android.hardware.camera2.CameraDevice](../android/hardware/camera2/CameraDevice.md) 
 
 ### YUV_422_888
 
@@ -572,20 +572,20 @@ This format is a generic YCbCr format, capable of describing any 4:2:2 chroma-su
 
 Images in this format are always represented by three separate buffers of data, one for each color plane. Additional information always accompanies the buffers, describing the row stride and the pixel stride for each plane.
 
-The order of planes in the array returned by [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())is guaranteed such that plane #0 is always Y, plane #1 is always U (Cb), and plane #2 is always V (Cr).
+The order of planes in the array returned by [Image#getPlanes()](../android/media/Image.md))is guaranteed such that plane #0 is always Y, plane #1 is always U (Cb), and plane #2 is always V (Cr).
 
-In contrast to the [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) format, the Y-plane may have a pixel stride greater than 1 in [yPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()).
+In contrast to the [YUV_420_888](../android/graphics/ImageFormat.md) format, the Y-plane may have a pixel stride greater than 1 in [yPlane.getPixelStride()](../android/media/Image.Plane.md)).
 
-The U/V planes are guaranteed to have the same row stride and pixel stride (in particular, [uPlane.getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())== [vPlane.getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())and [uPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride())== [vPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()); ).
+The U/V planes are guaranteed to have the same row stride and pixel stride (in particular, [uPlane.getRowStride()](../android/media/Image.Plane.md))== [vPlane.getRowStride()](../android/media/Image.Plane.md))and [uPlane.getPixelStride()](../android/media/Image.Plane.md))== [vPlane.getPixelStride()](../android/media/Image.Plane.md)); ).
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) through [android.media.MediaCodec#getOutputImage](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#getOutputImage(kotlin.Int))object. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.media.MediaCodec](../android/media/MediaCodec.md) through [android.media.MediaCodec#getOutputImage](../android/media/MediaCodec.md))object. 
 
  Value: 39
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.MediaCodec](../android/media/MediaCodec.md) 
 
 ### YUV_444_888
 
@@ -601,20 +601,20 @@ This format is a generic YCbCr format, capable of describing any 4:4:4 (planar, 
 
 Images in this format are always represented by three separate buffers of data, one for each color plane. Additional information always accompanies the buffers, describing the row stride and the pixel stride for each plane.
 
-The order of planes in the array returned by [Image#getPlanes()](https://developer.android.com/reference/kotlin/android/media/Image.html#getPlanes())is guaranteed such that plane #0 is always Y, plane #1 is always U (Cb), and plane #2 is always V (Cr).
+The order of planes in the array returned by [Image#getPlanes()](../android/media/Image.md))is guaranteed such that plane #0 is always Y, plane #1 is always U (Cb), and plane #2 is always V (Cr).
 
-In contrast to the [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) format, the Y-plane may have a pixel stride greater than 1 in [yPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()).
+In contrast to the [YUV_420_888](../android/graphics/ImageFormat.md) format, the Y-plane may have a pixel stride greater than 1 in [yPlane.getPixelStride()](../android/media/Image.Plane.md)).
 
-The U/V planes are guaranteed to have the same row stride and pixel stride (in particular, [uPlane.getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())== [vPlane.getRowStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getRowStride())and [uPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride())== [vPlane.getPixelStride()](https://developer.android.com/reference/kotlin/android/media/Image.Plane.html#getPixelStride()); ).
+The U/V planes are guaranteed to have the same row stride and pixel stride (in particular, [uPlane.getRowStride()](../android/media/Image.Plane.md))== [vPlane.getRowStride()](../android/media/Image.Plane.md))and [uPlane.getPixelStride()](../android/media/Image.Plane.md))== [vPlane.getPixelStride()](../android/media/Image.Plane.md)); ).
 
-For example, the [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#) object can provide data in this format from a [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) through [android.media.MediaCodec#getOutputImage](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#getOutputImage(kotlin.Int))object. 
+For example, the [android.media.Image](../android/media/Image.md) object can provide data in this format from a [android.media.MediaCodec](../android/media/MediaCodec.md) through [android.media.MediaCodec#getOutputImage](../android/media/MediaCodec.md))object. 
 
  Value: 40
 
 **See Also**
 
-- [android.media.Image](https://developer.android.com/reference/kotlin/android/media/Image.html#)
-- [android.media.MediaCodec](https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#) 
+- [android.media.Image](../android/media/Image.md)
+- [android.media.MediaCodec](../android/media/MediaCodec.md) 
 
 ### YUY2
 
@@ -626,9 +626,9 @@ static val YUY2: Int
 
 YCbCr format used for images, which uses YUYV (YUY2) encoding format.
 
-For the [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary.html) API, the [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) format is recommended for YUV output instead.
+For the [android.hardware.camera2](../android/hardware/camera2/_package.md) API, the [YUV_420_888](../android/graphics/ImageFormat.md) format is recommended for YUV output instead.
 
-This is an alternative format for [android.hardware.Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera.html#) preview images. Whether this format is supported by the camera hardware can be determined by [android.hardware.Camera.Parameters#getSupportedPreviewFormats()](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters.html#getSupportedPreviewFormats()). 
+This is an alternative format for [android.hardware.Camera](../android/hardware/Camera.md) preview images. Whether this format is supported by the camera hardware can be determined by [android.hardware.Camera.Parameters#getSupportedPreviewFormats()](../android/hardware/Camera.Parameters.md)). 
 
  Value: 20
 
@@ -664,11 +664,11 @@ y_size = stride * height
   cb_offset = y_size + c_size
 ```
 
-For the [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary.html) API, the [YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int) format is recommended for YUV output instead.
+For the [android.hardware.camera2](../android/hardware/camera2/_package.md) API, the [YUV_420_888](../android/graphics/ImageFormat.md) format is recommended for YUV output instead.
 
-For the older camera API, this format is guaranteed to be supported for [android.hardware.Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera.html#) preview images since API level 12; for earlier API versions, check [android.hardware.Camera.Parameters#getSupportedPreviewFormats()](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters.html#getSupportedPreviewFormats()).
+For the older camera API, this format is guaranteed to be supported for [android.hardware.Camera](../android/hardware/Camera.md) preview images since API level 12; for earlier API versions, check [android.hardware.Camera.Parameters#getSupportedPreviewFormats()](../android/hardware/Camera.Parameters.md)).
 
-Note that for camera preview callback use (see [android.hardware.Camera#setPreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.html#setPreviewCallback(android.hardware.Camera.PreviewCallback))), the stride value is the smallest possible; that is, it is equal to: 
+Note that for camera preview callback use (see [android.hardware.Camera#setPreviewCallback](../android/hardware/Camera.md))), the stride value is the smallest possible; that is, it is equal to: 
 
 ```kotlin
 stride = ALIGN(width, 16)
@@ -678,9 +678,9 @@ stride = ALIGN(width, 16)
 
 **See Also**
 
-- [android.hardware.Camera.Parameters#setPreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.html#setPreviewCallback(android.hardware.Camera.PreviewCallback))
-- [android.hardware.Camera.Parameters#setPreviewFormat](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters.html#setPreviewFormat(kotlin.Int))
-- [android.hardware.Camera.Parameters#getSupportedPreviewFormats](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters.html#getSupportedPreviewFormats())
+- [android.hardware.Camera.Parameters#setPreviewCallback](../android/hardware/Camera.md))
+- [android.hardware.Camera.Parameters#setPreviewFormat](../android/hardware/Camera.Parameters.md))
+- [android.hardware.Camera.Parameters#getSupportedPreviewFormats](../android/hardware/Camera.Parameters.md))
 
 ## Public constructors
 
@@ -704,7 +704,7 @@ Use this function to retrieve the number of bits per pixel of an ImageFormat.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.graphics.ImageFormat#UNKNOWN](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#UNKNOWN:kotlin.Int), [android.graphics.PixelFormat#RGBA_8888](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBA_8888:kotlin.Int), [android.graphics.PixelFormat#RGBX_8888](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGBX_8888:kotlin.Int), [android.graphics.PixelFormat#RGB_888](https://developer.android.com/reference/kotlin/android/graphics/PixelFormat#RGB_888:kotlin.Int), [android.graphics.ImageFormat#RGB_565](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RGB_565:kotlin.Int), [android.graphics.ImageFormat#YV12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YV12:kotlin.Int), [android.graphics.ImageFormat#Y8](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#Y8:kotlin.Int), android.graphics.ImageFormat.Y16, [android.graphics.ImageFormat#YCBCR_P010](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YCBCR_P010:kotlin.Int), [android.graphics.ImageFormat#YCBCR_P210](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YCBCR_P210:kotlin.Int), [android.graphics.ImageFormat#NV16](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#NV16:kotlin.Int), [android.graphics.ImageFormat#NV21](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#NV21:kotlin.Int), [android.graphics.ImageFormat#YUY2](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUY2:kotlin.Int), [android.graphics.ImageFormat#JPEG](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#JPEG:kotlin.Int), [android.graphics.ImageFormat#DEPTH_JPEG](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH_JPEG:kotlin.Int), [android.graphics.ImageFormat#YUV_420_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_420_888:kotlin.Int), [android.graphics.ImageFormat#YUV_422_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_422_888:kotlin.Int), [android.graphics.ImageFormat#YUV_444_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#YUV_444_888:kotlin.Int), [android.graphics.ImageFormat#FLEX_RGB_888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#FLEX_RGB_888:kotlin.Int), [android.graphics.ImageFormat#FLEX_RGBA_8888](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#FLEX_RGBA_8888:kotlin.Int), [android.graphics.ImageFormat#RAW_SENSOR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW_SENSOR:kotlin.Int), [android.graphics.ImageFormat#RAW_PRIVATE](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW_PRIVATE:kotlin.Int), [android.graphics.ImageFormat#RAW10](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW10:kotlin.Int), [android.graphics.ImageFormat#RAW12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#RAW12:kotlin.Int), [android.graphics.ImageFormat#DEPTH16](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH16:kotlin.Int), [android.graphics.ImageFormat#DEPTH_POINT_CLOUD](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#DEPTH_POINT_CLOUD:kotlin.Int), android.graphics.ImageFormat.RAW_DEPTH, android.graphics.ImageFormat.RAW_DEPTH10, [android.graphics.ImageFormat#PRIVATE](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#PRIVATE:kotlin.Int), [android.graphics.ImageFormat#HEIC](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#HEIC:kotlin.Int), [android.graphics.ImageFormat#HEIC_ULTRAHDR](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#HEIC_ULTRAHDR:kotlin.Int), or [android.graphics.ImageFormat#JPEG_R](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat#JPEG_R:kotlin.Int) |
+| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.graphics.ImageFormat#UNKNOWN](../android/graphics/ImageFormat.md), [android.graphics.PixelFormat#RGBA_8888](../android/graphics/PixelFormat.md), [android.graphics.PixelFormat#RGBX_8888](../android/graphics/PixelFormat.md), [android.graphics.PixelFormat#RGB_888](../android/graphics/PixelFormat.md), [android.graphics.ImageFormat#RGB_565](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#YV12](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#Y8](../android/graphics/ImageFormat.md), android.graphics.ImageFormat.Y16, [android.graphics.ImageFormat#YCBCR_P010](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#YCBCR_P210](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#NV16](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#NV21](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#YUY2](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#JPEG](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#DEPTH_JPEG](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#YUV_420_888](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#YUV_422_888](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#YUV_444_888](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#FLEX_RGB_888](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#FLEX_RGBA_8888](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#RAW_SENSOR](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#RAW_PRIVATE](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#RAW10](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#RAW12](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#DEPTH16](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#DEPTH_POINT_CLOUD](../android/graphics/ImageFormat.md), android.graphics.ImageFormat.RAW_DEPTH, android.graphics.ImageFormat.RAW_DEPTH10, [android.graphics.ImageFormat#PRIVATE](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#HEIC](../android/graphics/ImageFormat.md), [android.graphics.ImageFormat#HEIC_ULTRAHDR](../android/graphics/ImageFormat.md), or [android.graphics.ImageFormat#JPEG_R](../android/graphics/ImageFormat.md) |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|

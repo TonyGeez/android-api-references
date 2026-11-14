@@ -8,7 +8,7 @@ open class SubscriptionManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.SubscriptionManager](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#) |
+| ↳ | [android.telephony.SubscriptionManager](../android/telephony/SubscriptionManager.md) |
 
 Subscription manager provides the mobile subscription information. 
 Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
@@ -71,30 +71,30 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#addSubscriptionsIntoGroup(kotlin.collections.MutableList,%20android.os.ParcelUuid)(subIdList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>, groupUuid: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)` Add a list of subscriptions into a group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#canManageSubscription(android.telephony.SubscriptionInfo)(info: https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo!)` Checks whether the app with the given context is authorized to manage the given subscription according to its metadata. |
-| open [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#createSubscriptionGroup(kotlin.collections.MutableList)(subIdList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Inform SubscriptionManager that subscriptions in the list are bundled as a group. |
+| open [ParcelUuid](../android/os/ParcelUuid.md) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#createSubscriptionGroup(kotlin.collections.MutableList)(subIdList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Inform SubscriptionManager that subscriptions in the list are bundled as a group. |
 | --- | --- |
-| open static [SubscriptionManager](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#)! | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#from(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)!\>? | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getAccessibleSubscriptionInfoList()()` Gets the SubscriptionInfo(s) of all embedded subscriptions accessible to the calling app, if any. |
+| open static [SubscriptionManager](../android/telephony/SubscriptionManager.md)! | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#from(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)!\>? | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getAccessibleSubscriptionInfoList()()` Gets the SubscriptionInfo(s) of all embedded subscriptions accessible to the calling app, if any. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveDataSubscriptionId()()` Get active data subscription id. |
 | --- | --- |
-| open [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)! | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfo(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the active SubscriptionInfo with the input subId. |
+| open [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)! | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfo(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the active SubscriptionInfo with the input subId. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoCount()()` Get the active subscription count. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoCountMax()()` <br /> |
 | --- | --- |
-| open [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)! | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoForSimSlotIndex(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the active SubscriptionInfo associated with the slotIndex |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)!\>? | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoList()()` Get the SubscriptionInfo(s) of the currently active SIM(s). |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getAllSubscriptionInfoList()()` Get all subscription info records from SIMs that are inserted now or previously inserted. |
+| open [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)! | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoForSimSlotIndex(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the active SubscriptionInfo associated with the slotIndex |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)!\>? | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoList()()` Get the SubscriptionInfo(s) of the currently active SIM(s). |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getAllSubscriptionInfoList()()` Get all subscription info records from SIMs that are inserted now or previously inserted. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getCompleteActiveSubscriptionInfoList()()` Get both hidden and visible SubscriptionInfo(s) of the currently active SIM(s). |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getCompleteActiveSubscriptionInfoList()()` Get both hidden and visible SubscriptionInfo(s) of the currently active SIM(s). |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()()` Returns the system's default data subscription id. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSmsSubscriptionId()()` Returns the system's default SMS subscription id. |
 | --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()()` Returns the system's default subscription id. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultVoiceSubscriptionId()()` Returns the system's default voice subscription id. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDeviceToDeviceStatusSharingContacts(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the list of contacts that allow device to device status sharing. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDeviceToDeviceStatusSharingContacts(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the list of contacts that allow device to device status sharing. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDeviceToDeviceStatusSharingPreference(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the user-chosen device to device status sharing preference |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getOpportunisticSubscriptions()()` Return opportunistic subscriptions that can be visible to the caller. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getOpportunisticSubscriptions()()` Return opportunistic subscriptions that can be visible to the caller. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getPhoneNumber(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the phone number for the given `subId`, or an empty string if not available. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getPhoneNumber(kotlin.Int,%20kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the phone number for the given `subscriptionId` and `source`, or an empty string if not available. |
@@ -102,8 +102,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getSubscriptionId(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the subscription id for specified logical SIM slot index. |
 | --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getSubscriptionIds(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get an array of subscription ids for the specified logical SIM slot Index. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionPlan](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getSubscriptionPlans(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the description of the billing relationship plan between a carrier and a specific subscriber. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getSubscriptionsInGroup(android.os.ParcelUuid)(groupUuid: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)` Get subscriptionInfo list of subscriptions that are in the same group of given subId. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionPlan](../android/telephony/SubscriptionPlan.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getSubscriptionPlans(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the description of the billing relationship plan between a carrier and a specific subscriber. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getSubscriptionsInGroup(android.os.ParcelUuid)(groupUuid: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)` Get subscriptionInfo list of subscriptions that are in the same group of given subId. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#isActiveSubscriptionId(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the supplied subscription ID corresponds to a subscription which is actively in use on the device. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#isNetworkRoaming(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the device is considered roaming on the current network for a subscription. |
@@ -578,8 +578,8 @@ Register for changes to the list of opportunistic subscription records or to the
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [SubscriptionManager.OnOpportunisticSubscriptionsChangedListener](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener): an instance of `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener` with onOpportunisticSubscriptionsChanged overridden. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [SubscriptionManager.OnOpportunisticSubscriptionsChangedListener](../android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener.md): an instance of `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener` with onOpportunisticSubscriptionsChanged overridden. This value cannot be `null`. |
 
 ### addOnSubscriptionsChangedListener
 
@@ -596,7 +596,7 @@ Register for changes to the list of active `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `listener` | [SubscriptionManager.OnSubscriptionsChangedListener](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener)!: an instance of `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener` with onSubscriptionsChanged overridden. |
+| `listener` | [SubscriptionManager.OnSubscriptionsChangedListener](../android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.md)!: an instance of `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener` with onSubscriptionsChanged overridden. |
 
 ### addOnSubscriptionsChangedListener
 
@@ -613,8 +613,8 @@ Register for changes to the list of `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): the executor that will execute callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [SubscriptionManager.OnSubscriptionsChangedListener](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener): an instance of `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener` with `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener#onSubscriptionsChanged()` overridden. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor that will execute callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [SubscriptionManager.OnSubscriptionsChangedListener](../android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.md): an instance of `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener` with `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener#onSubscriptionsChanged()` overridden. This value cannot be `null`. |
 
 ### addSubscriptionsIntoGroup
 
@@ -633,7 +633,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `subIdList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: list of subId that need adding into the group. This value cannot be `null`. |
-| `groupUuid` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): the groupUuid the subscriptions are being added to. This value cannot be `null`. |
+| `groupUuid` | [ParcelUuid](../android/os/ParcelUuid.md): the groupUuid the subscriptions are being added to. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -655,7 +655,7 @@ Checks whether the app with the given context is authorized to manage the given 
 
 | Parameters ||
 |---|---|
-| `info` | [SubscriptionInfo](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo)!: The subscription to check. |
+| `info` | [SubscriptionInfo](../android/telephony/SubscriptionInfo.md)!: The subscription to check. |
 
 | Return ||
 |---|---|
@@ -1213,7 +1213,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `groupUuid` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): of which list of subInfo will be returned. This value cannot be `null`. |
+| `groupUuid` | [ParcelUuid](../android/os/ParcelUuid.md): of which list of subInfo will be returned. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1321,7 +1321,7 @@ Unregister the `https://developer.android.com/reference/kotlin/android/telephony
 
 | Parameters ||
 |---|---|
-| `listener` | [SubscriptionManager.OnOpportunisticSubscriptionsChangedListener](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener): that is to be unregistered. This value cannot be `null`. |
+| `listener` | [SubscriptionManager.OnOpportunisticSubscriptionsChangedListener](../android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener.md): that is to be unregistered. This value cannot be `null`. |
 
 ### removeOnSubscriptionsChangedListener
 
@@ -1335,7 +1335,7 @@ Unregister the `https://developer.android.com/reference/kotlin/android/telephony
 
 | Parameters ||
 |---|---|
-| `listener` | [SubscriptionManager.OnSubscriptionsChangedListener](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener)!: that is to be unregistered. |
+| `listener` | [SubscriptionManager.OnSubscriptionsChangedListener](../android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.md)!: that is to be unregistered. |
 
 ### removeSubscriptionsFromGroup
 
@@ -1354,7 +1354,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `subIdList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: list of subId that need removing from their groups. This value cannot be `null`. |
-| `groupUuid` | [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#): The UUID of the subscription group. This value cannot be `null`. |
+| `groupUuid` | [ParcelUuid](../android/os/ParcelUuid.md): The UUID of the subscription group. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1416,7 +1416,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The subscription id. |
-| `contacts` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>: The list of contacts that allow device to device status sharing. This value cannot be `null`. |
+| `contacts` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: The list of contacts that allow device to device status sharing. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1622,7 +1622,7 @@ This method is only accessible to the following narrow set of apps:
 | Parameters ||
 |---|---|
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the subscriber this relationship applies to. An empty list may be sent to clear any existing plans. |
-| `plans` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionPlan](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan)!\>: the list of plans. The first plan is always the primary and most important plan. Any additional plans are secondary and may not be displayed or used by decision making logic. This value cannot be `null`. |
+| `plans` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionPlan](../android/telephony/SubscriptionPlan.md)!\>: the list of plans. The first plan is always the primary and most important plan. Any additional plans are secondary and may not be displayed or used by decision making logic. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1651,7 +1651,7 @@ This method is only accessible to the following narrow set of apps:
 | Parameters ||
 |---|---|
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the subscriber this relationship applies to. An empty list may be sent to clear any existing plans. |
-| `plans` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionPlan](https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan)!\>: the list of plans. The first plan is always the primary and most important plan. Any additional plans are secondary and may not be displayed or used by decision making logic. This value cannot be `null`. |
+| `plans` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SubscriptionPlan](../android/telephony/SubscriptionPlan.md)!\>: the list of plans. The first plan is always the primary and most important plan. Any additional plans are secondary and may not be displayed or used by decision making logic. This value cannot be `null`. |
 | `expirationDurationMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the duration after which the subscription plans will be automatically cleared, or `0` to leave the plans until explicitly cleared, or the next reboot, whichever happens first. Value is a non-negative duration in milliseconds. |
 | --- | --- |
 
@@ -1710,7 +1710,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | Parameters ||
 |---|---|
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): sub id |
-| `callbackIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#): pending intent that will be sent after operation is done. This value cannot be `null`. |
+| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md): pending intent that will be sent after operation is done. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

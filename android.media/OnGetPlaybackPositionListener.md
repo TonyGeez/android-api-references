@@ -5,14 +5,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnGetPlaybackPositionListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener "View this page in Java") 
+Kotlin| [Java](../android/media/RemoteControlClient.OnGetPlaybackPositionListener.md) 
 | --- | --- |
 
 ```
 interface OnGetPlaybackPositionListener
 ```
 
-| [android.media.RemoteControlClient.OnGetPlaybackPositionListener](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.OnGetPlaybackPositionListener#) |
+| [android.media.RemoteControlClient.OnGetPlaybackPositionListener](../android/media/RemoteControlClient.OnGetPlaybackPositionListener.md) |
 
 | **This interface was deprecated in API level 29.**
 |
@@ -24,7 +24,7 @@ Interface definition for a callback to be invoked when the media playback positi
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [onGetPlaybackPosition](https://developer.android.com/reference/kotlin/android/media/RemoteControlClient.OnGetPlaybackPositionListener#onGetPlaybackPosition())`()` Called on the implementer of the interface to query the current playback position. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [onGetPlaybackPosition](../android/media/RemoteControlClient.OnGetPlaybackPositionListener.md))`()` Called on the implementer of the interface to query the current playback position. |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ConditionVariable
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/ConditionVariable "View this page in Java") 
+Kotlin| [Java](../android/os/ConditionVariable.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ConditionVariable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.ConditionVariable](https://developer.android.com/reference/kotlin/android/os/ConditionVariable#) |
+| ↳ | [android.os.ConditionVariable](../android/os/ConditionVariable.md) |
 
 Class that implements the condition variable locking paradigm.
 
@@ -25,16 +25,16 @@ This class uses itself as the object to wait on, so if you wait() or notify() on
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConditionVariable](https://developer.android.com/reference/kotlin/android/os/ConditionVariable#ConditionVariable())`()` Create the ConditionVariable in the default closed state. |
-| [ConditionVariable](https://developer.android.com/reference/kotlin/android/os/ConditionVariable#ConditionVariable(kotlin.Boolean))`(`state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create the ConditionVariable with the given state. |
+| [ConditionVariable](../android/os/ConditionVariable.md))`()` Create the ConditionVariable in the default closed state. |
+| [ConditionVariable](../android/os/ConditionVariable.md))`(`state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create the ConditionVariable with the given state. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [block](https://developer.android.com/reference/kotlin/android/os/ConditionVariable#block())`()` Block the current thread until the condition is opened. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [block](https://developer.android.com/reference/kotlin/android/os/ConditionVariable#block(kotlin.Long))`(`timeoutMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Block the current thread until the condition is opened or until timeoutMs milliseconds have passed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/os/ConditionVariable#close())`()` Reset the condition to the closed state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [block](../android/os/ConditionVariable.md))`()` Block the current thread until the condition is opened. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [block](../android/os/ConditionVariable.md))`(`timeoutMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Block the current thread until the condition is opened or until timeoutMs milliseconds have passed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/os/ConditionVariable.md))`()` Reset the condition to the closed state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [open](https://developer.android.com/reference/kotlin/android/os/ConditionVariable#open())`()` Open the condition, and release all threads that are blocked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [open](../android/os/ConditionVariable.md))`()` Open the condition, and release all threads that are blocked. |
 
 ## Public constructors
 

@@ -8,7 +8,7 @@ class DisplayLuts
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.DisplayLuts](https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#) |
+| ↳ | [android.hardware.DisplayLuts](../android/hardware/DisplayLuts.md) |
 
 DisplayLuts provides the developers to apply Lookup Tables (Luts) to a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.html#`. Luts provides ways to control tonemapping for specific content. The general flow for how DisplayLuts fits into a display pipeline is as follows:
 
@@ -71,7 +71,7 @@ Use either this or `https://developer.android.com/reference/kotlin/android/hardw
 
 | Parameters ||
 |---|---|
-| `entry` | [DisplayLuts.Entry](https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry): Either an 1D Lut or a 3D Lut. This value cannot be `null`. |
+| `entry` | [DisplayLuts.Entry](../android/hardware/DisplayLuts.Entry.md): Either an 1D Lut or a 3D Lut. This value cannot be `null`. |
 
 ### set
 
@@ -90,8 +90,8 @@ An 1D Lut and 3D Lut will be applied in order. Use either this or `https://devel
 
 | Parameters ||
 |---|---|
-| `first` | [DisplayLuts.Entry](https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry): An 1D Lut. This value cannot be `null`. |
-| `second` | [DisplayLuts.Entry](https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry): A 3D Lut. This value cannot be `null`. |
+| `first` | [DisplayLuts.Entry](../android/hardware/DisplayLuts.Entry.md): An 1D Lut. This value cannot be `null`. |
+| `second` | [DisplayLuts.Entry](../android/hardware/DisplayLuts.Entry.md): A 3D Lut. This value cannot be `null`. |
 
 ### toString
 

@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # ResponderLocation
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/rtt/ResponderLocation.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ResponderLocation : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.ResponderLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#) |
+| ↳ | [android.net.wifi.rtt.ResponderLocation](../android/net/wifi/rtt/ResponderLocation.md) |
 
 ResponderLocation is both a Location Configuration Information (LCI) decoder and a Location Civic Report (LCR) decoder for information received from a Wi-Fi Access Point (AP) during Wi-Fi RTT ranging process.
 
@@ -25,67 +25,67 @@ Note: The information provided by this class is broadcast by a responder (usuall
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_FLOORS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_FLOORS:kotlin.Int) Responder Altitude is measured in floors. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_METERS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_METERS:kotlin.Int) Responder Altitude is measured in meters. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_UNDEFINED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_UNDEFINED:kotlin.Int) Altitude is not defined for the Responder. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_FLOORS](../android/net/wifi/rtt/ResponderLocation.md) Responder Altitude is measured in floors. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_METERS](../android/net/wifi/rtt/ResponderLocation.md) Responder Altitude is measured in meters. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTITUDE_UNDEFINED](../android/net/wifi/rtt/ResponderLocation.md) Altitude is not defined for the Responder. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_NAD83_MLLW](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_NAD83_MLLW:kotlin.Int) Datum used is NAD83 MLLW. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_NAD83_NAV88](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_NAD83_NAV88:kotlin.Int) Datum used is NAD83 NAV88. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_UNDEFINED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_UNDEFINED:kotlin.Int) Datum is not defined. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_NAD83_MLLW](../android/net/wifi/rtt/ResponderLocation.md) Datum used is NAD83 MLLW. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_NAD83_NAV88](../android/net/wifi/rtt/ResponderLocation.md) Datum used is NAD83 NAV88. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_UNDEFINED](../android/net/wifi/rtt/ResponderLocation.md) Datum is not defined. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_WGS84](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_WGS84:kotlin.Int) Datum used is WGS84. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LCI_VERSION_1](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LCI_VERSION_1:kotlin.Int) Version of the LCI protocol is 1. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_FIXED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_FIXED:kotlin.Int) Location of responder is fixed (does not move) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATUM_WGS84](../android/net/wifi/rtt/ResponderLocation.md) Datum used is WGS84. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LCI_VERSION_1](../android/net/wifi/rtt/ResponderLocation.md) Version of the LCI protocol is 1. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_FIXED](../android/net/wifi/rtt/ResponderLocation.md) Location of responder is fixed (does not move) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_MOVEMENT_UNKNOWN](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_MOVEMENT_UNKNOWN:kotlin.Int) Location of the responder is not known to be either fixed or variable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_RESERVED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_RESERVED:kotlin.Int) Location of the responder status is a reserved value |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_VARIABLE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_VARIABLE:kotlin.Int) Location of the responder is variable, and may move |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_MOVEMENT_UNKNOWN](../android/net/wifi/rtt/ResponderLocation.md) Location of the responder is not known to be either fixed or variable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_RESERVED](../android/net/wifi/rtt/ResponderLocation.md) Location of the responder status is a reserved value |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_VARIABLE](../android/net/wifi/rtt/ResponderLocation.md) Location of the responder is variable, and may move |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getAltitude())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/wifi/rtt/ResponderLocation.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAltitudeType](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getAltitudeType())`()` <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitudeUncertainty](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getAltitudeUncertainty())`()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)!\>! | [getColocatedBssids](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getColocatedBssids())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAltitudeType](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitudeUncertainty](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MacAddress](../android/net/MacAddress.md)!\>! | [getColocatedBssids](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDatum](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getDatum())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExpectedToMove](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getExpectedToMove())`()` <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getFloorNumber](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getFloorNumber())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDatum](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExpectedToMove](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getFloorNumber](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getHeightAboveFloorMeters](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getHeightAboveFloorMeters())`()` <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getHeightAboveFloorUncertaintyMeters](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getHeightAboveFloorUncertaintyMeters())`()` <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitude](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLatitude())`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getHeightAboveFloorMeters](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getHeightAboveFloorUncertaintyMeters](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitude](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitudeUncertainty](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLatitudeUncertainty())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLciVersion](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLciVersion())`()` <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitude](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLongitude())`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLatitudeUncertainty](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLciVersion](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitude](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitudeUncertainty](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getLongitudeUncertainty())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMapImageMimeType](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getMapImageMimeType())`()` <br /> |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getMapImageUri](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getMapImageUri())`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLongitudeUncertainty](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMapImageMimeType](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Uri](../android/net/Uri.md)? | [getMapImageUri](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getRegisteredLocationAgreementIndication](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#getRegisteredLocationAgreementIndication())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#hashCode())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLciSubelementValid](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getRegisteredLocationAgreementIndication](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLciSubelementValid](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZaxisSubelementValid](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isZaxisSubelementValid())`()` <br /> |
-| [Address](https://developer.android.com/reference/kotlin/android/location/Address.html#)? | [toCivicLocationAddress](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#toCivicLocationAddress())`()` <br /> |
-| [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [toCivicLocationSparseArray](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#toCivicLocationSparseArray())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZaxisSubelementValid](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Address](../android/location/Address.md)? | [toCivicLocationAddress](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [SparseArray](../android/util/SparseArray.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [toCivicLocationSparseArray](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
 | --- | --- |
-| [Location](https://developer.android.com/reference/kotlin/android/location/Location.html#) | [toLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#toLocation())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Location](../android/location/Location.md) | [toLocation](../android/net/wifi/rtt/ResponderLocation.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/wifi/rtt/ResponderLocation.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ResponderLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ResponderLocation](../android/net/wifi/rtt/ResponderLocation.md)!\> | [CREATOR](../android/net/wifi/rtt/ResponderLocation.md) <br /> |
 
 ## Constants
 
@@ -245,7 +245,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -273,7 +273,7 @@ fun getAltitude(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Altitude in units defined by the altitude type. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Altitude in units defined by the altitude type. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. |
 
 ### getAltitudeType
 
@@ -285,7 +285,7 @@ fun getAltitudeType(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Altitude type. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. Value is [android.net.wifi.rtt.ResponderLocation#ALTITUDE_UNDEFINED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_UNDEFINED:kotlin.Int), [android.net.wifi.rtt.ResponderLocation#ALTITUDE_METERS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_METERS:kotlin.Int), or [android.net.wifi.rtt.ResponderLocation#ALTITUDE_FLOORS](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#ALTITUDE_FLOORS:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Altitude type. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. Value is [android.net.wifi.rtt.ResponderLocation#ALTITUDE_UNDEFINED](../android/net/wifi/rtt/ResponderLocation.md), [android.net.wifi.rtt.ResponderLocation#ALTITUDE_METERS](../android/net/wifi/rtt/ResponderLocation.md), or [android.net.wifi.rtt.ResponderLocation#ALTITUDE_FLOORS](../android/net/wifi/rtt/ResponderLocation.md) |
 
 ### getAltitudeUncertainty
 
@@ -297,7 +297,7 @@ fun getAltitudeUncertainty(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Altitude uncertainty in meters. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Altitude uncertainty in meters. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
 
 ### getColocatedBssids
 
@@ -309,7 +309,7 @@ fun getColocatedBssids(): MutableList<MacAddress!>!
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)!>! | the Immutable list of colocated BSSIDs at the responder. Will return an empty list when there are no bssids listed. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MacAddress](../android/net/MacAddress.md)!>! | the Immutable list of colocated BSSIDs at the responder. Will return an empty list when there are no bssids listed. |
 
 ### getDatum
 
@@ -321,7 +321,7 @@ fun getDatum(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Datum used for the LCI positioning information. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. Value is [android.net.wifi.rtt.ResponderLocation#DATUM_UNDEFINED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_UNDEFINED:kotlin.Int), [android.net.wifi.rtt.ResponderLocation#DATUM_WGS84](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_WGS84:kotlin.Int), [android.net.wifi.rtt.ResponderLocation#DATUM_NAD83_NAV88](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_NAD83_NAV88:kotlin.Int), or [android.net.wifi.rtt.ResponderLocation#DATUM_NAD83_MLLW](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#DATUM_NAD83_MLLW:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Datum used for the LCI positioning information. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. Value is [android.net.wifi.rtt.ResponderLocation#DATUM_UNDEFINED](../android/net/wifi/rtt/ResponderLocation.md), [android.net.wifi.rtt.ResponderLocation#DATUM_WGS84](../android/net/wifi/rtt/ResponderLocation.md), [android.net.wifi.rtt.ResponderLocation#DATUM_NAD83_NAV88](../android/net/wifi/rtt/ResponderLocation.md), or [android.net.wifi.rtt.ResponderLocation#DATUM_NAD83_MLLW](../android/net/wifi/rtt/ResponderLocation.md) |
 
 ### getExpectedToMove
 
@@ -333,7 +333,7 @@ fun getExpectedToMove(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an integer representing the mobility of the responder. Only valid if [isZaxisSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isZaxisSubelementValid())returns true, or will throw an exception. Value is [android.net.wifi.rtt.ResponderLocation#LOCATION_FIXED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_FIXED:kotlin.Int), [android.net.wifi.rtt.ResponderLocation#LOCATION_VARIABLE](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_VARIABLE:kotlin.Int), [android.net.wifi.rtt.ResponderLocation#LOCATION_MOVEMENT_UNKNOWN](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_MOVEMENT_UNKNOWN:kotlin.Int), or [android.net.wifi.rtt.ResponderLocation#LOCATION_RESERVED](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#LOCATION_RESERVED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an integer representing the mobility of the responder. Only valid if [isZaxisSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. Value is [android.net.wifi.rtt.ResponderLocation#LOCATION_FIXED](../android/net/wifi/rtt/ResponderLocation.md), [android.net.wifi.rtt.ResponderLocation#LOCATION_VARIABLE](../android/net/wifi/rtt/ResponderLocation.md), [android.net.wifi.rtt.ResponderLocation#LOCATION_MOVEMENT_UNKNOWN](../android/net/wifi/rtt/ResponderLocation.md), or [android.net.wifi.rtt.ResponderLocation#LOCATION_RESERVED](../android/net/wifi/rtt/ResponderLocation.md) |
 
 ### getFloorNumber
 
@@ -345,7 +345,7 @@ fun getFloorNumber(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Z sub element Floor Number. Only valid if [isZaxisSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isZaxisSubelementValid())returns true, or will throw an exception. Note: this number can be positive or negative, with value increments of +/- 1/16 of a floor. . |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Z sub element Floor Number. Only valid if [isZaxisSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. Note: this number can be positive or negative, with value increments of +/- 1/16 of a floor. . |
 
 ### getHeightAboveFloorMeters
 
@@ -357,7 +357,7 @@ fun getHeightAboveFloorMeters(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Z subelement Height above the floor in meters. Only valid if [isZaxisSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isZaxisSubelementValid())returns true, or will throw an exception. This value can be positive or negative. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Z subelement Height above the floor in meters. Only valid if [isZaxisSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. This value can be positive or negative. |
 
 ### getHeightAboveFloorUncertaintyMeters
 
@@ -369,7 +369,7 @@ fun getHeightAboveFloorUncertaintyMeters(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Z subelement Height above the floor uncertainty in meters. Only valid if [isZaxisSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isZaxisSubelementValid())returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Z subelement Height above the floor uncertainty in meters. Only valid if [isZaxisSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
 
 ### getLatitude
 
@@ -381,7 +381,7 @@ fun getLatitude(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the latitude in degrees Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the latitude in degrees Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. |
 
 ### getLatitudeUncertainty
 
@@ -393,7 +393,7 @@ fun getLatitudeUncertainty(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the latitude uncertainty in degrees. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the latitude uncertainty in degrees. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
 
 ### getLciVersion
 
@@ -405,7 +405,7 @@ fun getLciVersion(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a value greater or equal to 1, indicating the current version number of the LCI protocol. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a value greater or equal to 1, indicating the current version number of the LCI protocol. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. |
 
 ### getLongitude
 
@@ -417,7 +417,7 @@ fun getLongitude(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Longitude in degrees.. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Longitude in degrees.. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. |
 
 ### getLongitudeUncertainty
 
@@ -429,7 +429,7 @@ fun getLongitudeUncertainty(): Double
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Longitude uncertainty in degrees. Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | the Longitude uncertainty in degrees. Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. An unknown uncertainty is indicated by 0. |
 
 ### getMapImageMimeType
 
@@ -453,7 +453,7 @@ fun getMapImageUri(): Uri?
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | a URI referencing a map-file showing the local floor plan. Will return a`null`when there is no URI defined. |
+| [Uri](../android/net/Uri.md)? | a URI referencing a map-file showing the local floor plan. Will return a`null`when there is no URI defined. |
 
 ### getRegisteredLocationAgreementIndication
 
@@ -465,7 +465,7 @@ fun getRegisteredLocationAgreementIndication(): Boolean
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | true if the station is operating within a national policy area or an international agreement area near a national border, otherwise false (see 802.11REVmc Section 11.12.3 - Registered STA Operation). Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | true if the station is operating within a national policy area or an international agreement area near a national border, otherwise false (see 802.11REVmc Section 11.12.3 - Registered STA Operation). Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. |
 
 ### hashCode
 
@@ -513,7 +513,7 @@ fun toCivicLocationAddress(): Address?
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Address](https://developer.android.com/reference/kotlin/android/location/Address.html#)? | the civic location represented as an [Address](https://developer.android.com/reference/kotlin/android/location/Address.html#) object (best effort). Will return a`null`when there is no Civic Location defined. |
+| [Address](../android/location/Address.md)? | the civic location represented as an [Address](../android/location/Address.md) object (best effort). Will return a`null`when there is no Civic Location defined. |
 
 ### toCivicLocationSparseArray
 
@@ -525,7 +525,7 @@ fun toCivicLocationSparseArray(): SparseArray<String!>?
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>? | the civic location represented as a [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#) Valid keys to access the SparseArray can be found in`CivicLocationKeys`. Will return a`null`when there is no Civic Location defined. |
+| [SparseArray](../android/util/SparseArray.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>? | the civic location represented as a [SparseArray](../android/util/SparseArray.md) Valid keys to access the SparseArray can be found in`CivicLocationKeys`. Will return a`null`when there is no Civic Location defined. |
 
 ### toLocation
 
@@ -537,7 +537,7 @@ fun toLocation(): Location
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Location](https://developer.android.com/reference/kotlin/android/location/Location.html#) | the LCI location represented as a [Location](https://developer.android.com/reference/kotlin/android/location/Location.html#) object (best effort). Only valid if [isLciSubelementValid()](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation#isLciSubelementValid())returns true, or will throw an exception. This value cannot be`null`. |
+| [Location](../android/location/Location.md) | the LCI location represented as a [Location](../android/location/Location.md) object (best effort). Only valid if [isLciSubelementValid()](../android/net/wifi/rtt/ResponderLocation.md))returns true, or will throw an exception. This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -553,7 +553,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

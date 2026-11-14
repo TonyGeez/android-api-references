@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # PackageInstaller
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/pm/PackageInstaller "View this page in Java") 
+Kotlin| [Java](../android/content/pm/PackageInstaller.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class PackageInstaller
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.PackageInstaller](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#) |
+| ↳ | [android.content.pm.PackageInstaller](../android/content/pm/PackageInstaller.md) |
 
 Offers the ability to install, upgrade, and remove applications on the device. This includes support for apps packaged either as a single "monolithic" APK, or apps packaged as multiple "split" APKs.
 
-An app is delivered for installation through a [PackageInstaller.Session](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session), which any app can create. Once the session is created, the installer can stream one or more APKs into place until it decides to either commit or destroy the session. Committing may require user intervention to complete the installation, unless the caller falls into one of the following categories, in which case the installation will complete automatically.
+An app is delivered for installation through a [PackageInstaller.Session](../android/content/pm/PackageInstaller.Session.md), which any app can create. Once the session is created, the installer can stream one or more APKs into place until it decides to either commit or destroy the session. Committing may require user intervention to complete the installation, unless the caller falls into one of the following categories, in which case the installation will complete automatically.
 
 - the device owner
 - the affiliated profile owner
@@ -36,119 +36,119 @@ The ApiDemos project contains examples of using this API:`ApiDemos/src/com/examp
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints) A class to encapsulate constraints for installation. |
-| | [InstallConstraintsResult](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraintsResult) The callback result of [checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#checkInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20java.util.concurrent.Executor,%20java.util.function.Consumer)). |
-| | [PreapprovalDetails](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.PreapprovalDetails) Details for requesting the pre-commit install approval. |
+| | [InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md) A class to encapsulate constraints for installation. |
+| | [InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md) The callback result of [checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)](../android/content/pm/PackageInstaller.md)). |
+| | [PreapprovalDetails](../android/content/pm/PackageInstaller.PreapprovalDetails.md) Details for requesting the pre-commit install approval. |
 | --- | --- |
-| open | [Session](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session) An installation that is being actively staged. |
-| abstract | [SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback) Events for observing session lifecycle. |
-| open | [SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo) Details for an active install session. |
+| open | [Session](../android/content/pm/PackageInstaller.Session.md) An installation that is being actively staged. |
+| abstract | [SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md) Events for observing session lifecycle. |
+| open | [SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md) Details for an active install session. |
 | --- | --- |
-| open | [SessionParams](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams) Parameters for creating a new [PackageInstaller.Session](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session). |
-| | [UnarchivalState](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.UnarchivalState) Used to communicate the unarchival state in [reportUnarchivalState](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#reportUnarchivalState(android.content.pm.PackageInstaller.UnarchivalState)). |
+| open | [SessionParams](../android/content/pm/PackageInstaller.SessionParams.md) Parameters for creating a new [PackageInstaller.Session](../android/content/pm/PackageInstaller.Session.md). |
+| | [UnarchivalState](../android/content/pm/PackageInstaller.UnarchivalState.md) Used to communicate the unarchival state in [reportUnarchivalState](../android/content/pm/PackageInstaller.md)). |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SESSION_COMMITTED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#ACTION_SESSION_COMMITTED:kotlin.String) Broadcast Action: Explicit broadcast sent to the last known default launcher when a session for a new install is committed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SESSION_DETAILS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#ACTION_SESSION_DETAILS:kotlin.String) Activity Action: Show details about a particular install session. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SESSION_UPDATED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#ACTION_SESSION_UPDATED:kotlin.String) Broadcast Action: Send information about a staged install session when its state is updated. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SESSION_COMMITTED](../android/content/pm/PackageInstaller.md) Broadcast Action: Explicit broadcast sent to the last known default launcher when a session for a new install is committed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SESSION_DETAILS](../android/content/pm/PackageInstaller.md) Activity Action: Show details about a particular install session. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SESSION_UPDATED](../android/content/pm/PackageInstaller.md) Broadcast Action: Send information about a staged install session when its state is updated. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVELOPER_VERIFICATION_FAILED_REASON_DEVELOPER_BLOCKED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#DEVELOPER_VERIFICATION_FAILED_REASON_DEVELOPER_BLOCKED:kotlin.Int) Developer verification failed because the developer cannot be verified, as reported by the verifier via [DeveloperVerificationSession.reportVerificationComplete(DeveloperVerificationStatus)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#) or [DeveloperVerificationSession.reportVerificationComplete(](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE:kotlin.Int) Developer verification failed because the network is unavailable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVELOPER_VERIFICATION_FAILED_REASON_UNKNOWN](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#DEVELOPER_VERIFICATION_FAILED_REASON_UNKNOWN:kotlin.Int) Developer verification failed because of unknown reasons, such as when the verifier times out or cannot be connected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVELOPER_VERIFICATION_FAILED_REASON_DEVELOPER_BLOCKED](../android/content/pm/PackageInstaller.md) Developer verification failed because the developer cannot be verified, as reported by the verifier via [DeveloperVerificationSession.reportVerificationComplete(DeveloperVerificationStatus)](../android/content/pm/PackageInstaller.md) or [DeveloperVerificationSession.reportVerificationComplete(](../android/content/pm/PackageInstaller.md) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE](../android/content/pm/PackageInstaller.md) Developer verification failed because the network is unavailable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVELOPER_VERIFICATION_FAILED_REASON_UNKNOWN](../android/content/pm/PackageInstaller.md) Developer verification failed because of unknown reasons, such as when the verifier times out or cannot be connected. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DEVELOPER_VERIFICATION_EXTENSION_RESPONSE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_DEVELOPER_VERIFICATION_EXTENSION_RESPONSE:kotlin.String) An extra containing the response provided by the developer verifier to any extension params provided by the installer. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DEVELOPER_VERIFICATION_FAILURE_REASON](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_DEVELOPER_VERIFICATION_FAILURE_REASON:kotlin.String) When an installation fails because the developer verification was incomplete or blocked, this extra provides a code that explains the reason, such as [DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE:kotlin.Int). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DEVELOPER_VERIFICATION_LITE_PERFORMED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_DEVELOPER_VERIFICATION_LITE_PERFORMED:kotlin.String) An extra containing a boolean indicating whether the lite version of the developer verification was performed on the app to be installed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DEVELOPER_VERIFICATION_EXTENSION_RESPONSE](../android/content/pm/PackageInstaller.md) An extra containing the response provided by the developer verifier to any extension params provided by the installer. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DEVELOPER_VERIFICATION_FAILURE_REASON](../android/content/pm/PackageInstaller.md) When an installation fails because the developer verification was incomplete or blocked, this extra provides a code that explains the reason, such as [DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE](../android/content/pm/PackageInstaller.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DEVELOPER_VERIFICATION_LITE_PERFORMED](../android/content/pm/PackageInstaller.md) An extra containing a boolean indicating whether the lite version of the developer verification was performed on the app to be installed. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_INSTALL_CONSTRAINTS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_INSTALL_CONSTRAINTS:kotlin.String) The [InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints) object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_INSTALL_CONSTRAINTS_RESULT](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_INSTALL_CONSTRAINTS_RESULT:kotlin.String) The [InstallConstraintsResult](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraintsResult) object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_OTHER_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_OTHER_PACKAGE_NAME:kotlin.String) Another package name relevant to a status. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_INSTALL_CONSTRAINTS](../android/content/pm/PackageInstaller.md) The [InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md) object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_INSTALL_CONSTRAINTS_RESULT](../android/content/pm/PackageInstaller.md) The [InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md) object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_OTHER_PACKAGE_NAME](../android/content/pm/PackageInstaller.md) Another package name relevant to a status. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_PACKAGE_NAME:kotlin.String) Package name that an operation is working with. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PRE_APPROVAL](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_PRE_APPROVAL:kotlin.String) Indicate if the status is for a pre-approval request. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SESSION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_SESSION:kotlin.String) [SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo) that an operation is working with. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PACKAGE_NAME](../android/content/pm/PackageInstaller.md) Package name that an operation is working with. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PRE_APPROVAL](../android/content/pm/PackageInstaller.md) Indicate if the status is for a pre-approval request. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SESSION](../android/content/pm/PackageInstaller.md) [SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md) that an operation is working with. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SESSION_ID](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_SESSION_ID:kotlin.String) An integer session ID that an operation is working with. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String) Current status of an operation. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String) Detailed string representation of the status, including raw details that are useful for debugging. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SESSION_ID](../android/content/pm/PackageInstaller.md) An integer session ID that an operation is working with. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATUS](../android/content/pm/PackageInstaller.md) Current status of an operation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md) Detailed string representation of the status, including raw details that are useful for debugging. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STORAGE_PATH](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STORAGE_PATH:kotlin.String) Storage path relevant to a status. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_ALL_USERS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_UNARCHIVE_ALL_USERS:kotlin.String) If true, the requestor of the unarchival has specified that the app should be unarchived for all users. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_ID](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_UNARCHIVE_ID:kotlin.String) Extra field for the unarchive ID. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STORAGE_PATH](../android/content/pm/PackageInstaller.md) Storage path relevant to a status. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_ALL_USERS](../android/content/pm/PackageInstaller.md) If true, the requestor of the unarchival has specified that the app should be unarchived for all users. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_ID](../android/content/pm/PackageInstaller.md) Extra field for the unarchive ID. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_UNARCHIVE_PACKAGE_NAME:kotlin.String) Extra field for the package name of a package that is requested to be unarchived. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_UNARCHIVE_STATUS:kotlin.String) Current status of an unarchive operation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_DOWNLOADED_FILE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#PACKAGE_SOURCE_DOWNLOADED_FILE:kotlin.Int) Code indicating that the package being installed comes from a file that was downloaded to the device by the user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_PACKAGE_NAME](../android/content/pm/PackageInstaller.md) Extra field for the package name of a package that is requested to be unarchived. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_UNARCHIVE_STATUS](../android/content/pm/PackageInstaller.md) Current status of an unarchive operation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_DOWNLOADED_FILE](../android/content/pm/PackageInstaller.md) Code indicating that the package being installed comes from a file that was downloaded to the device by the user. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_LOCAL_FILE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#PACKAGE_SOURCE_LOCAL_FILE:kotlin.Int) Code indicating that the package being installed comes from a local file on the device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_OTHER](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#PACKAGE_SOURCE_OTHER:kotlin.Int) Code indicating that the package being installed is from a source not reflected by any other package source constant. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_STORE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#PACKAGE_SOURCE_STORE:kotlin.Int) Code indicating that the package being installed is from a store. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_LOCAL_FILE](../android/content/pm/PackageInstaller.md) Code indicating that the package being installed comes from a local file on the device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_OTHER](../android/content/pm/PackageInstaller.md) Code indicating that the package being installed is from a source not reflected by any other package source constant. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_STORE](../android/content/pm/PackageInstaller.md) Code indicating that the package being installed is from a store. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#PACKAGE_SOURCE_UNSPECIFIED:kotlin.Int) The installer did not call [PackageInstaller.SessionParams.setPackageSource(int)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams#setPackageSource(kotlin.Int))to specify the package source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE:kotlin.Int) The operation failed in a generic way. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_ABORTED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_ABORTED:kotlin.Int) The operation failed because it was actively aborted. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PACKAGE_SOURCE_UNSPECIFIED](../android/content/pm/PackageInstaller.md) The installer did not call [PackageInstaller.SessionParams.setPackageSource(int)](../android/content/pm/PackageInstaller.SessionParams.md))to specify the package source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE](../android/content/pm/PackageInstaller.md) The operation failed in a generic way. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_ABORTED](../android/content/pm/PackageInstaller.md) The operation failed because it was actively aborted. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_BLOCKED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_BLOCKED:kotlin.Int) The operation failed because it was blocked. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_CONFLICT](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_CONFLICT:kotlin.Int) The operation failed because it conflicts (or is inconsistent with) with another package already installed on the device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_INCOMPATIBLE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_INCOMPATIBLE:kotlin.Int) The operation failed because it is fundamentally incompatible with this device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_BLOCKED](../android/content/pm/PackageInstaller.md) The operation failed because it was blocked. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_CONFLICT](../android/content/pm/PackageInstaller.md) The operation failed because it conflicts (or is inconsistent with) with another package already installed on the device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_INCOMPATIBLE](../android/content/pm/PackageInstaller.md) The operation failed because it is fundamentally incompatible with this device. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_INVALID](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_INVALID:kotlin.Int) The operation failed because one or more of the APKs was invalid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_STORAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_STORAGE:kotlin.Int) The operation failed because of storage issues. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_TIMEOUT](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_TIMEOUT:kotlin.Int) The operation failed because it didn't complete within the specified timeout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_INVALID](../android/content/pm/PackageInstaller.md) The operation failed because one or more of the APKs was invalid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_STORAGE](../android/content/pm/PackageInstaller.md) The operation failed because of storage issues. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILURE_TIMEOUT](../android/content/pm/PackageInstaller.md) The operation failed because it didn't complete within the specified timeout. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PENDING_USER_ACTION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_PENDING_USER_ACTION:kotlin.Int) User action is currently required to proceed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_SUCCESS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_SUCCESS:kotlin.Int) The operation succeeded. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_INSTALLER_DISABLED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_DISABLED:kotlin.Int) The installer responsible for the unarchival is disabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PENDING_USER_ACTION](../android/content/pm/PackageInstaller.md) User action is currently required to proceed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_SUCCESS](../android/content/pm/PackageInstaller.md) The operation succeeded. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_INSTALLER_DISABLED](../android/content/pm/PackageInstaller.md) The installer responsible for the unarchival is disabled. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED:kotlin.Int) The installer responsible for the unarchival has been uninstalled |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE:kotlin.Int) Not enough storage to unarchive the application. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_NO_CONNECTIVITY](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_NO_CONNECTIVITY:kotlin.Int) The device is not connected to the internet |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED](../android/content/pm/PackageInstaller.md) The installer responsible for the unarchival has been uninstalled |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE](../android/content/pm/PackageInstaller.md) Not enough storage to unarchive the application. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_NO_CONNECTIVITY](../android/content/pm/PackageInstaller.md) The device is not connected to the internet |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_USER_ACTION_NEEDED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_USER_ACTION_NEEDED:kotlin.Int) The user needs to interact with the installer to enable the installation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_GENERIC_ERROR](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_GENERIC_ERROR:kotlin.Int) Generic error: The app cannot be unarchived. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_OK](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_OK:kotlin.Int) The unarchival is possible and will commence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_ERROR_USER_ACTION_NEEDED](../android/content/pm/PackageInstaller.md) The user needs to interact with the installer to enable the installation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_GENERIC_ERROR](../android/content/pm/PackageInstaller.md) Generic error: The app cannot be unarchived. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNARCHIVAL_OK](../android/content/pm/PackageInstaller.md) The unarchival is possible and will commence. |
 | --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abandonSession](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#abandonSession(kotlin.Int))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completely abandon the given session, destroying all staged data and rendering it invalid. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkInstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#checkInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20java.util.concurrent.Executor,%20java.util.function.Consumer))`(`packageNames:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`, `constraints:` ` [PackageInstaller.InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints)`, `executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [PackageInstaller.InstallConstraintsResult](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraintsResult)!>`)` Check if install constraints are satisfied for the given packages. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commitSessionAfterInstallConstraintsAreMet](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#commitSessionAfterInstallConstraintsAreMet(kotlin.Int,%20android.content.IntentSender,%20android.content.pm.PackageInstaller.InstallConstraints,%20kotlin.Long))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`, `constraints:` ` [PackageInstaller.InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints)`, `timeoutMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Commit the session when all constraints are satisfied. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abandonSession](../android/content/pm/PackageInstaller.md))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completely abandon the given session, destroying all staged data and rendering it invalid. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkInstallConstraints](../android/content/pm/PackageInstaller.md))`(`packageNames:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`, `constraints:` ` [PackageInstaller.InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [Consumer](../java/util/function/Consumer.md)< [PackageInstaller.InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md)!>`)` Check if install constraints are satisfied for the given packages. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commitSessionAfterInstallConstraintsAreMet](../android/content/pm/PackageInstaller.md))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)`, `constraints:` ` [PackageInstaller.InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md)`, `timeoutMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Commit the session when all constraints are satisfied. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [createSession](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#createSession(android.content.pm.PackageInstaller.SessionParams))`(`params:` ` [PackageInstaller.SessionParams](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams)`)` Create a new session using the given parameters, returning a unique ID that represents the session. |
-| open [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)? | [getActiveStagedSession](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getActiveStagedSession())`()` Returns first active staged session, or`null`if there is none. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!\> | [getActiveStagedSessions](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getActiveStagedSessions())`()` Returns list of active staged sessions. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [createSession](../android/content/pm/PackageInstaller.md))`(`params:` ` [PackageInstaller.SessionParams](../android/content/pm/PackageInstaller.SessionParams.md)`)` Create a new session using the given parameters, returning a unique ID that represents the session. |
+| open [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)? | [getActiveStagedSession](../android/content/pm/PackageInstaller.md))`()` Returns first active staged session, or`null`if there is none. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!\> | [getActiveStagedSessions](../android/content/pm/PackageInstaller.md))`()` Returns list of active staged sessions. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!\> | [getAllSessions](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getAllSessions())`()` Return list of all known install sessions, regardless of the installer. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | [getDeveloperVerificationServiceProvider](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getDeveloperVerificationServiceProvider())`()` Return the component name of the developer verification service provider, for the purpose of interacting with the specific verifier in relation to extension parameters and response structure. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!\> | [getMySessions](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getMySessions())`()` Return list of all known install sessions owned by the calling app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!\> | [getAllSessions](../android/content/pm/PackageInstaller.md))`()` Return list of all known install sessions, regardless of the installer. |
+| [ComponentName](../android/content/ComponentName.md)? | [getDeveloperVerificationServiceProvider](../android/content/pm/PackageInstaller.md))`()` Return the component name of the developer verification service provider, for the purpose of interacting with the specific verifier in relation to extension parameters and response structure. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!\> | [getMySessions](../android/content/pm/PackageInstaller.md))`()` Return list of all known install sessions owned by the calling app. |
 | --- | --- |
-| open [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)? | [getSessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getSessionInfo(kotlin.Int))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return details for a specific session. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!\> | [getStagedSessions](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getStagedSessions())`()` Return list of all staged install sessions. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [installExistingPackage](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#installExistingPackage(kotlin.String,%20kotlin.Int,%20android.content.IntentSender))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `installReason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)?`)` Install the given package, which already exists on the device, for the user for which this installer was created. |
+| open [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)? | [getSessionInfo](../android/content/pm/PackageInstaller.md))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return details for a specific session. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!\> | [getStagedSessions](../android/content/pm/PackageInstaller.md))`()` Return list of all staged install sessions. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [installExistingPackage](../android/content/pm/PackageInstaller.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `installReason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)?`)` Install the given package, which already exists on the device, for the user for which this installer was created. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [installPackageArchived](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#installPackageArchived(android.content.pm.ArchivedPackageInfo,%20android.content.pm.PackageInstaller.SessionParams,%20android.content.IntentSender))`(`archivedPackageInfo:` ` [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo)`, `sessionParams:` ` [PackageInstaller.SessionParams](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`)` Install package in an archived state. |
-| open [PackageInstaller.Session](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session) | [openSession](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#openSession(kotlin.Int))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Open an existing session to actively perform work. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerSessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback))`(`callback:` ` [PackageInstaller.SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback)`)` Register to watch for session lifecycle events. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [installPackageArchived](../android/content/pm/PackageInstaller.md))`(`archivedPackageInfo:` ` [ArchivedPackageInfo](../android/content/pm/ArchivedPackageInfo.md)`, `sessionParams:` ` [PackageInstaller.SessionParams](../android/content/pm/PackageInstaller.SessionParams.md)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)`)` Install package in an archived state. |
+| open [PackageInstaller.Session](../android/content/pm/PackageInstaller.Session.md) | [openSession](../android/content/pm/PackageInstaller.md))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Open an existing session to actively perform work. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerSessionCallback](../android/content/pm/PackageInstaller.md))`(`callback:` ` [PackageInstaller.SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md)`)` Register to watch for session lifecycle events. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerSessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback,%20android.os.Handler))`(`callback:` ` [PackageInstaller.SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)`)` Register to watch for session lifecycle events. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportUnarchivalState](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#reportUnarchivalState(android.content.pm.PackageInstaller.UnarchivalState))`(`unarchivalState:` ` [PackageInstaller.UnarchivalState](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.UnarchivalState)`)` Reports the state of an unarchival to the system. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportUnarchivalStatus](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#reportUnarchivalStatus(kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20android.app.PendingIntent))`(`unarchiveId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `requiredStorageBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `userActionIntent:` ` [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)?`)` Reports the status of an unarchival to the system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerSessionCallback](../android/content/pm/PackageInstaller.md))`(`callback:` ` [PackageInstaller.SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md)`, `handler:` ` [Handler](../android/os/Handler.md)`)` Register to watch for session lifecycle events. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportUnarchivalState](../android/content/pm/PackageInstaller.md))`(`unarchivalState:` ` [PackageInstaller.UnarchivalState](../android/content/pm/PackageInstaller.UnarchivalState.md)`)` Reports the state of an unarchival to the system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportUnarchivalStatus](../android/content/pm/PackageInstaller.md))`(`unarchiveId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `requiredStorageBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `userActionIntent:` ` [PendingIntent](../android/app/PendingIntent.md)?`)` Reports the status of an unarchival to the system. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestArchive](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestArchive(kotlin.String,%20android.content.IntentSender))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`)` Requests to archive a package which is currently installed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestUnarchive](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestUnarchive(kotlin.String,%20android.content.IntentSender))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`)` Requests to unarchive a currently archived package. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstall](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#uninstall(android.content.pm.VersionedPackage,%20android.content.IntentSender))`(`versionedPackage:` ` [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`)` Uninstall the given package with a specific version code, removing it completely from the device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestArchive](../android/content/pm/PackageInstaller.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)`)` Requests to archive a package which is currently installed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestUnarchive](../android/content/pm/PackageInstaller.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)`)` Requests to unarchive a currently archived package. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstall](../android/content/pm/PackageInstaller.md))`(`versionedPackage:` ` [VersionedPackage](../android/content/pm/VersionedPackage.md)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)`)` Uninstall the given package with a specific version code, removing it completely from the device. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstall](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#uninstall(android.content.pm.VersionedPackage,%20kotlin.Int,%20android.content.IntentSender))`(`versionedPackage:` ` [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`)` Uninstall the given package with a specific version code, removing it completely from the device. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstall](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#uninstall(kotlin.String,%20android.content.IntentSender))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`)` Uninstall the given package, removing it completely from the device. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstallExistingPackage](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#uninstallExistingPackage(kotlin.String,%20android.content.IntentSender))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)?`)` Uninstall the given package for the user for which this installer was created if the package will still exist for other users on the device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstall](../android/content/pm/PackageInstaller.md))`(`versionedPackage:` ` [VersionedPackage](../android/content/pm/VersionedPackage.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)`)` Uninstall the given package with a specific version code, removing it completely from the device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstall](../android/content/pm/PackageInstaller.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)`)` Uninstall the given package, removing it completely from the device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [uninstallExistingPackage](../android/content/pm/PackageInstaller.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `statusReceiver:` ` [IntentSender](../android/content/IntentSender.md)?`)` Uninstall the given package for the user for which this installer was created if the package will still exist for other users on the device. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterSessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#unregisterSessionCallback(android.content.pm.PackageInstaller.SessionCallback))`(`callback:` ` [PackageInstaller.SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback)`)` Unregister a previously registered callback. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSessionAppIcon](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#updateSessionAppIcon(kotlin.Int,%20android.graphics.Bitmap))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appIcon:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)?`)` Update the icon representing the app being installed in a specific session. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSessionAppLabel](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#updateSessionAppLabel(kotlin.Int,%20kotlin.CharSequence))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appLabel:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Update the label representing the app being installed in a specific session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterSessionCallback](../android/content/pm/PackageInstaller.md))`(`callback:` ` [PackageInstaller.SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md)`)` Unregister a previously registered callback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSessionAppIcon](../android/content/pm/PackageInstaller.md))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appIcon:` ` [Bitmap](../android/graphics/Bitmap.md)?`)` Update the icon representing the app being installed in a specific session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateSessionAppLabel](../android/content/pm/PackageInstaller.md))`(`sessionId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appLabel:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Update the label representing the app being installed in a specific session. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [waitForInstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#waitForInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20android.content.IntentSender,%20kotlin.Long))`(`packageNames:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`, `constraints:` ` [PackageInstaller.InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints)`, `callback:` ` [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)`, `timeoutMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Similar to [checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#checkInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20java.util.concurrent.Executor,%20java.util.function.Consumer)), but the callback is invoked only when the constraints are satisfied or after timeout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [waitForInstallConstraints](../android/content/pm/PackageInstaller.md))`(`packageNames:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`, `constraints:` ` [PackageInstaller.InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md)`, `callback:` ` [IntentSender](../android/content/IntentSender.md)`, `timeoutMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Similar to [checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)](../android/content/pm/PackageInstaller.md)), but the callback is invoked only when the constraints are satisfied or after timeout. |
 
 ## Constants
 
@@ -162,7 +162,7 @@ static val ACTION_SESSION_COMMITTED: String
 
 Broadcast Action: Explicit broadcast sent to the last known default launcher when a session for a new install is committed. For managed profile, this is sent to the default launcher of the primary profile. For user-profiles that have items restricted on home screen, this broadcast is sent to the default launcher of the primary profile, only if it has either Manifest.permission.ACCESS_HIDDEN_PROFILES_FULL or Manifest.permission.ACCESS_HIDDEN_PROFILES permission.
 
-The associated session is defined in [EXTRA_SESSION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_SESSION:kotlin.String) and the user for which this session was created in [Intent.EXTRA_USER](https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_USER:kotlin.String). 
+The associated session is defined in [EXTRA_SESSION](../android/content/pm/PackageInstaller.md) and the user for which this session was created in [Intent.EXTRA_USER](../android/content/Intent.md). 
 
  Value: "android.content.pm.action.SESSION_COMMITTED"
 
@@ -176,11 +176,11 @@ static val ACTION_SESSION_DETAILS: String
 
 Activity Action: Show details about a particular install session. This may surface actions such as pause, resume, or cancel.
 
-This should always be scoped to the installer package that owns the session. Clients should use [SessionInfo.createDetailsIntent()](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo#createDetailsIntent())to build this intent correctly.
+This should always be scoped to the installer package that owns the session. Clients should use [SessionInfo.createDetailsIntent()](../android/content/pm/PackageInstaller.SessionInfo.md))to build this intent correctly.
 
 In some cases, a matching Activity may not exist, so ensure you safeguard against this.
 
-The session to show details for is defined in [EXTRA_SESSION_ID](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_SESSION_ID:kotlin.String). 
+The session to show details for is defined in [EXTRA_SESSION_ID](../android/content/pm/PackageInstaller.md). 
 
  Value: "android.content.pm.action.SESSION_DETAILS"
 
@@ -194,7 +194,7 @@ static val ACTION_SESSION_UPDATED: String
 
 Broadcast Action: Send information about a staged install session when its state is updated.
 
-The associated session information is defined in [EXTRA_SESSION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_SESSION:kotlin.String). 
+The associated session information is defined in [EXTRA_SESSION](../android/content/pm/PackageInstaller.md). 
 
  Value: "android.content.pm.action.SESSION_UPDATED"
 
@@ -206,7 +206,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val DEVELOPER_VERIFICATION_FAILED_REASON_DEVELOPER_BLOCKED: Int
 ```
 
-Developer verification failed because the developer cannot be verified, as reported by the verifier via [DeveloperVerificationSession.reportVerificationComplete(DeveloperVerificationStatus)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#) or [DeveloperVerificationSession.reportVerificationComplete(](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#) 
+Developer verification failed because the developer cannot be verified, as reported by the verifier via [DeveloperVerificationSession.reportVerificationComplete(DeveloperVerificationStatus)](../android/content/pm/PackageInstaller.md) or [DeveloperVerificationSession.reportVerificationComplete(](../android/content/pm/PackageInstaller.md) 
 
  Value: 2
 
@@ -218,7 +218,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE: Int
 ```
 
-Developer verification failed because the network is unavailable. This corresponds to the status of [DeveloperVerificationSession.DEVELOPER_VERIFICATION_INCOMPLETE_NETWORK_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#) reported by the verifier via [DeveloperVerificationSession.reportVerificationIncomplete(int)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#). 
+Developer verification failed because the network is unavailable. This corresponds to the status of [DeveloperVerificationSession.DEVELOPER_VERIFICATION_INCOMPLETE_NETWORK_UNAVAILABLE](../android/content/pm/PackageInstaller.md) reported by the verifier via [DeveloperVerificationSession.reportVerificationIncomplete(int)](../android/content/pm/PackageInstaller.md). 
 
  Value: 1
 
@@ -230,7 +230,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val DEVELOPER_VERIFICATION_FAILED_REASON_UNKNOWN: Int
 ```
 
-Developer verification failed because of unknown reasons, such as when the verifier times out or cannot be connected. It can also corresponds to the status of [DeveloperVerificationSession.DEVELOPER_VERIFICATION_INCOMPLETE_UNKNOWN](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#) reported by the verifier via [DeveloperVerificationSession.reportVerificationIncomplete(int)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#). 
+Developer verification failed because of unknown reasons, such as when the verifier times out or cannot be connected. It can also corresponds to the status of [DeveloperVerificationSession.DEVELOPER_VERIFICATION_INCOMPLETE_UNKNOWN](../android/content/pm/PackageInstaller.md) reported by the verifier via [DeveloperVerificationSession.reportVerificationIncomplete(int)](../android/content/pm/PackageInstaller.md). 
 
  Value: 0
 
@@ -242,7 +242,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val EXTRA_DEVELOPER_VERIFICATION_EXTENSION_RESPONSE: String
 ```
 
-An extra containing the response provided by the developer verifier to any extension params provided by the installer. It will be of type [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#). 
+An extra containing the response provided by the developer verifier to any extension params provided by the installer. It will be of type [PersistableBundle](../android/os/PersistableBundle.md). 
 
  Value: "android.content.pm.extra.DEVELOPER_VERIFICATION_EXTENSION_RESPONSE"
 
@@ -254,13 +254,13 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val EXTRA_DEVELOPER_VERIFICATION_FAILURE_REASON: String
 ```
 
-When an installation fails because the developer verification was incomplete or blocked, this extra provides a code that explains the reason, such as [DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE:kotlin.Int). It is included in the installation result returned via the [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#) in [Session.commit(IntentSender)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#commit(android.content.IntentSender)). However, along with this reason code, installers can receive different status codes from [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String) depending on their target SDK and permission status:
+When an installation fails because the developer verification was incomplete or blocked, this extra provides a code that explains the reason, such as [DEVELOPER_VERIFICATION_FAILED_REASON_NETWORK_UNAVAILABLE](../android/content/pm/PackageInstaller.md). It is included in the installation result returned via the [IntentSender](../android/content/IntentSender.md) in [Session.commit(IntentSender)](../android/content/pm/PackageInstaller.Session.md)). However, along with this reason code, installers can receive different status codes from [EXTRA_STATUS](../android/content/pm/PackageInstaller.md) depending on their target SDK and permission status:
 
-- Installers without the [INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String) permission but with the [REQUEST_INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_INSTALL_PACKAGES:kotlin.String) permission and targeting [API 36](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int) or less will first receive the [STATUS_PENDING_USER_ACTION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_PENDING_USER_ACTION:kotlin.Int) status code without this reason code. They will be forced through the user action flow to allow the OS to inform the user of such verification context before continuing to fail the install. If the user has the option to bypass the verification result and chooses to do so, the installation will proceed. Otherwise, the installer will receive the [STATUS_FAILURE_ABORTED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_ABORTED:kotlin.Int) status code along with this reason code that explains why the verification had failed.
-- Installers with the [INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String) permission and targeting [API 36](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int) or less will directly receive the [STATUS_FAILURE_ABORTED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_ABORTED:kotlin.Int) status code. This is because they are not expected to have the capability of handling the [STATUS_PENDING_USER_ACTION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_PENDING_USER_ACTION:kotlin.Int) flow, so the installation will directly fail. This reason code will be supplied to them for providing additional information.
-- For all installers targeting higher than [API 36](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int)
- - For situations that require user input, such as when the developer verification policy allows the user to bypass a verification failure caused by network issues, the installer will receive a [STATUS_PENDING_USER_ACTION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_PENDING_USER_ACTION:kotlin.Int) status code without this reason code. The installer will be forced through the user action flow to allow the OS to inform the user of such verification context before continuing to fail the installation. If the user has the option to bypass the verification result and chooses to do so, the installation will proceed. Otherwise, the install will receive the [STATUS_FAILURE_ABORTED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_ABORTED:kotlin.Int) status code along with this reason code that explains why the verification had failed.
- - For all other situations, the installer will receive a [STATUS_FAILURE_ABORTED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_ABORTED:kotlin.Int) status code along with this reason code, so the installers can explain the failure to the user accordingly. An [Intent.EXTRA_INTENT](https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String) will also be populated with an intent that can provide additional context where appropriate, should the installer prefer to defer to the OS to explain the failure to the user.
+- Installers without the [INSTALL_PACKAGES](../android/Manifest.permission.md) permission but with the [REQUEST_INSTALL_PACKAGES](../android/Manifest.permission.md) permission and targeting [API 36](../android/os/Build.VERSION_CODES.md) or less will first receive the [STATUS_PENDING_USER_ACTION](../android/content/pm/PackageInstaller.md) status code without this reason code. They will be forced through the user action flow to allow the OS to inform the user of such verification context before continuing to fail the install. If the user has the option to bypass the verification result and chooses to do so, the installation will proceed. Otherwise, the installer will receive the [STATUS_FAILURE_ABORTED](../android/content/pm/PackageInstaller.md) status code along with this reason code that explains why the verification had failed.
+- Installers with the [INSTALL_PACKAGES](../android/Manifest.permission.md) permission and targeting [API 36](../android/os/Build.VERSION_CODES.md) or less will directly receive the [STATUS_FAILURE_ABORTED](../android/content/pm/PackageInstaller.md) status code. This is because they are not expected to have the capability of handling the [STATUS_PENDING_USER_ACTION](../android/content/pm/PackageInstaller.md) flow, so the installation will directly fail. This reason code will be supplied to them for providing additional information.
+- For all installers targeting higher than [API 36](../android/os/Build.VERSION_CODES.md)
+ - For situations that require user input, such as when the developer verification policy allows the user to bypass a verification failure caused by network issues, the installer will receive a [STATUS_PENDING_USER_ACTION](../android/content/pm/PackageInstaller.md) status code without this reason code. The installer will be forced through the user action flow to allow the OS to inform the user of such verification context before continuing to fail the installation. If the user has the option to bypass the verification result and chooses to do so, the installation will proceed. Otherwise, the install will receive the [STATUS_FAILURE_ABORTED](../android/content/pm/PackageInstaller.md) status code along with this reason code that explains why the verification had failed.
+ - For all other situations, the installer will receive a [STATUS_FAILURE_ABORTED](../android/content/pm/PackageInstaller.md) status code along with this reason code, so the installers can explain the failure to the user accordingly. An [Intent.EXTRA_INTENT](../android/content/Intent.md) will also be populated with an intent that can provide additional context where appropriate, should the installer prefer to defer to the OS to explain the failure to the user.
 
 <br />
 
@@ -274,7 +274,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val EXTRA_DEVELOPER_VERIFICATION_LITE_PERFORMED: String
 ```
 
-An extra containing a boolean indicating whether the lite version of the developer verification was performed on the app to be installed. It is included in the installation result returned via the [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#) in [Session.commit(IntentSender)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#commit(android.content.IntentSender))when the installation failed. 
+An extra containing a boolean indicating whether the lite version of the developer verification was performed on the app to be installed. It is included in the installation result returned via the [IntentSender](../android/content/IntentSender.md) in [Session.commit(IntentSender)](../android/content/pm/PackageInstaller.Session.md))when the installation failed. 
 
  Value: "android.content.pm.extra.DEVELOPER_VERIFICATION_LITE_PERFORMED"
 
@@ -286,14 +286,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_INSTALL_CONSTRAINTS: String
 ```
 
-The [InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints) object. 
+The [InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md) object. 
 
  Value: "android.content.pm.extra.INSTALL_CONSTRAINTS"
 
 **See Also**
 
-- [android.content.Intent#getParcelableExtra(String, Class)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String,%20java.lang.Class))
-- [#waitForInstallConstraints(List, InstallConstraints, IntentSender, long)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#waitForInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20android.content.IntentSender,%20kotlin.Long)) 
+- [android.content.Intent#getParcelableExtra(String, Class)](../android/content/Intent.md))
+- [#waitForInstallConstraints(List, InstallConstraints, IntentSender, long)](../android/content/pm/PackageInstaller.md)) 
 
 ### EXTRA_INSTALL_CONSTRAINTS_RESULT
 
@@ -303,14 +303,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_INSTALL_CONSTRAINTS_RESULT: String
 ```
 
-The [InstallConstraintsResult](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraintsResult) object. 
+The [InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md) object. 
 
  Value: "android.content.pm.extra.INSTALL_CONSTRAINTS_RESULT"
 
 **See Also**
 
-- [android.content.Intent#getParcelableExtra(String, Class)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String,%20java.lang.Class))
-- [#waitForInstallConstraints(List, InstallConstraints, IntentSender, long)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#waitForInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20android.content.IntentSender,%20kotlin.Long)) 
+- [android.content.Intent#getParcelableExtra(String, Class)](../android/content/Intent.md))
+- [#waitForInstallConstraints(List, InstallConstraints, IntentSender, long)](../android/content/pm/PackageInstaller.md)) 
 
 ### EXTRA_OTHER_PACKAGE_NAME
 
@@ -326,7 +326,7 @@ Another package name relevant to a status. This is typically the package respons
 
 **See Also**
 
-- [android.content.Intent#getStringExtra(String)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)) 
+- [android.content.Intent#getStringExtra(String)](../android/content/Intent.md)) 
 
 ### EXTRA_PACKAGE_NAME
 
@@ -342,7 +342,7 @@ Package name that an operation is working with.
 
 **See Also**
 
-- [android.content.Intent#getStringExtra(String)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)) 
+- [android.content.Intent#getStringExtra(String)](../android/content/Intent.md)) 
 
 ### EXTRA_PRE_APPROVAL
 
@@ -352,13 +352,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PRE_APPROVAL: String
 ```
 
-Indicate if the status is for a pre-approval request. If callers use the same [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#) for both [Session.requestUserPreapproval(PreapprovalDetails, IntentSender)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#requestUserPreapproval(android.content.pm.PackageInstaller.PreapprovalDetails,%20android.content.IntentSender))and [Session.commit(IntentSender)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#commit(android.content.IntentSender)), they can use this to differentiate between them. 
+Indicate if the status is for a pre-approval request. If callers use the same [IntentSender](../android/content/IntentSender.md) for both [Session.requestUserPreapproval(PreapprovalDetails, IntentSender)](../android/content/pm/PackageInstaller.Session.md))and [Session.commit(IntentSender)](../android/content/pm/PackageInstaller.Session.md)), they can use this to differentiate between them. 
 
  Value: "android.content.pm.extra.PRE_APPROVAL"
 
 **See Also**
 
-- [android.content.Intent#getBooleanExtra(String, boolean)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getBooleanExtra(kotlin.String,%20kotlin.Boolean)) 
+- [android.content.Intent#getBooleanExtra(String, boolean)](../android/content/Intent.md)) 
 
 ### EXTRA_SESSION
 
@@ -368,13 +368,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SESSION: String
 ```
 
-[SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo) that an operation is working with. 
+[SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md) that an operation is working with. 
 
  Value: "android.content.pm.extra.SESSION"
 
 **See Also**
 
-- [android.content.Intent#getParcelableExtra(String)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)) 
+- [android.content.Intent#getParcelableExtra(String)](../android/content/Intent.md)) 
 
 ### EXTRA_SESSION_ID
 
@@ -390,7 +390,7 @@ An integer session ID that an operation is working with.
 
 **See Also**
 
-- [android.content.Intent#getIntExtra(String, int)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int)) 
+- [android.content.Intent#getIntExtra(String, int)](../android/content/Intent.md)) 
 
 ### EXTRA_STATUS
 
@@ -400,7 +400,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_STATUS: String
 ```
 
-Current status of an operation. Will be one of [STATUS_PENDING_USER_ACTION](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_PENDING_USER_ACTION:kotlin.Int), [STATUS_SUCCESS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_SUCCESS:kotlin.Int), [STATUS_FAILURE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE:kotlin.Int), [STATUS_FAILURE_ABORTED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_ABORTED:kotlin.Int), [STATUS_FAILURE_BLOCKED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_BLOCKED:kotlin.Int), [STATUS_FAILURE_CONFLICT](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_CONFLICT:kotlin.Int), [STATUS_FAILURE_INCOMPATIBLE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_INCOMPATIBLE:kotlin.Int), [STATUS_FAILURE_INVALID](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_INVALID:kotlin.Int), [STATUS_FAILURE_STORAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_STORAGE:kotlin.Int), or [STATUS_FAILURE_TIMEOUT](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#STATUS_FAILURE_TIMEOUT:kotlin.Int).
+Current status of an operation. Will be one of [STATUS_PENDING_USER_ACTION](../android/content/pm/PackageInstaller.md), [STATUS_SUCCESS](../android/content/pm/PackageInstaller.md), [STATUS_FAILURE](../android/content/pm/PackageInstaller.md), [STATUS_FAILURE_ABORTED](../android/content/pm/PackageInstaller.md), [STATUS_FAILURE_BLOCKED](../android/content/pm/PackageInstaller.md), [STATUS_FAILURE_CONFLICT](../android/content/pm/PackageInstaller.md), [STATUS_FAILURE_INCOMPATIBLE](../android/content/pm/PackageInstaller.md), [STATUS_FAILURE_INVALID](../android/content/pm/PackageInstaller.md), [STATUS_FAILURE_STORAGE](../android/content/pm/PackageInstaller.md), or [STATUS_FAILURE_TIMEOUT](../android/content/pm/PackageInstaller.md).
 
 More information about a status may be available through additional extras; see the individual status documentation for details. 
 
@@ -408,7 +408,7 @@ More information about a status may be available through additional extras; see 
 
 **See Also**
 
-- [android.content.Intent#getIntExtra(String, int)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int)) 
+- [android.content.Intent#getIntExtra(String, int)](../android/content/Intent.md)) 
 
 ### EXTRA_STATUS_MESSAGE
 
@@ -424,7 +424,7 @@ Detailed string representation of the status, including raw details that are use
 
 **See Also**
 
-- [android.content.Intent#getStringExtra(String)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)) 
+- [android.content.Intent#getStringExtra(String)](../android/content/Intent.md)) 
 
 ### EXTRA_STORAGE_PATH
 
@@ -440,7 +440,7 @@ Storage path relevant to a status.
 
 **See Also**
 
-- [android.content.Intent#getStringExtra(String)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)) 
+- [android.content.Intent#getStringExtra(String)](../android/content/Intent.md)) 
 
 ### EXTRA_UNARCHIVE_ALL_USERS
 
@@ -450,7 +450,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_UNARCHIVE_ALL_USERS: String
 ```
 
-If true, the requestor of the unarchival has specified that the app should be unarchived for all users. Sent as part of the [android.content.Intent#ACTION_UNARCHIVE_PACKAGE](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_UNARCHIVE_PACKAGE:kotlin.String) intent. 
+If true, the requestor of the unarchival has specified that the app should be unarchived for all users. Sent as part of the [android.content.Intent#ACTION_UNARCHIVE_PACKAGE](../android/content/Intent.md) intent. 
 
  Value: "android.content.pm.extra.UNARCHIVE_ALL_USERS"
 
@@ -462,13 +462,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_UNARCHIVE_ID: String
 ```
 
-Extra field for the unarchive ID. Sent as part of the [android.content.Intent#ACTION_UNARCHIVE_PACKAGE](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_UNARCHIVE_PACKAGE:kotlin.String) intent. 
+Extra field for the unarchive ID. Sent as part of the [android.content.Intent#ACTION_UNARCHIVE_PACKAGE](../android/content/Intent.md) intent. 
 
  Value: "android.content.pm.extra.UNARCHIVE_ID"
 
 **See Also**
 
-- [android.content.pm.PackageInstaller.SessionParams#setUnarchiveId](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams#setUnarchiveId(kotlin.Int)) 
+- [android.content.pm.PackageInstaller.SessionParams#setUnarchiveId](../android/content/pm/PackageInstaller.SessionParams.md)) 
 
 ### EXTRA_UNARCHIVE_PACKAGE_NAME
 
@@ -478,7 +478,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_UNARCHIVE_PACKAGE_NAME: String
 ```
 
-Extra field for the package name of a package that is requested to be unarchived. Sent as part of the [android.content.Intent#ACTION_UNARCHIVE_PACKAGE](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_UNARCHIVE_PACKAGE:kotlin.String) intent. 
+Extra field for the package name of a package that is requested to be unarchived. Sent as part of the [android.content.Intent#ACTION_UNARCHIVE_PACKAGE](../android/content/Intent.md) intent. 
 
  Value: "android.content.pm.extra.UNARCHIVE_PACKAGE_NAME"
 
@@ -490,17 +490,17 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_UNARCHIVE_STATUS: String
 ```
 
-Current status of an unarchive operation. Will be one of [UNARCHIVAL_OK](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_OK:kotlin.Int), [UNARCHIVAL_ERROR_USER_ACTION_NEEDED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_USER_ACTION_NEEDED:kotlin.Int), [UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE:kotlin.Int), [UNARCHIVAL_ERROR_NO_CONNECTIVITY](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_NO_CONNECTIVITY:kotlin.Int), [UNARCHIVAL_GENERIC_ERROR](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_GENERIC_ERROR:kotlin.Int), [UNARCHIVAL_ERROR_INSTALLER_DISABLED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_DISABLED:kotlin.Int) or [UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED:kotlin.Int).
+Current status of an unarchive operation. Will be one of [UNARCHIVAL_OK](../android/content/pm/PackageInstaller.md), [UNARCHIVAL_ERROR_USER_ACTION_NEEDED](../android/content/pm/PackageInstaller.md), [UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE](../android/content/pm/PackageInstaller.md), [UNARCHIVAL_ERROR_NO_CONNECTIVITY](../android/content/pm/PackageInstaller.md), [UNARCHIVAL_GENERIC_ERROR](../android/content/pm/PackageInstaller.md), [UNARCHIVAL_ERROR_INSTALLER_DISABLED](../android/content/pm/PackageInstaller.md) or [UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED](../android/content/pm/PackageInstaller.md).
 
-If the status is not [UNARCHIVAL_OK](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_OK:kotlin.Int), then [Intent.EXTRA_INTENT](https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String) will be set with an intent for a corresponding follow-up action (e.g. storage clearing dialog) or a failure dialog.
+If the status is not [UNARCHIVAL_OK](../android/content/pm/PackageInstaller.md), then [Intent.EXTRA_INTENT](../android/content/Intent.md) will be set with an intent for a corresponding follow-up action (e.g. storage clearing dialog) or a failure dialog.
 
-Used as part of [requestUnarchive](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestUnarchive(kotlin.String,%20android.content.IntentSender))to return the status of the unarchival through the [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#). 
+Used as part of [requestUnarchive](../android/content/pm/PackageInstaller.md))to return the status of the unarchival through the [IntentSender](../android/content/IntentSender.md). 
 
  Value: "android.content.pm.extra.UNARCHIVE_STATUS"
 
 **See Also**
 
-- [#requestUnarchive](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestUnarchive(kotlin.String,%20android.content.IntentSender)) 
+- [#requestUnarchive](../android/content/pm/PackageInstaller.md)) 
 
 ### PACKAGE_SOURCE_DOWNLOADED_FILE
 
@@ -510,7 +510,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val PACKAGE_SOURCE_DOWNLOADED_FILE: Int
 ```
 
-Code indicating that the package being installed comes from a file that was downloaded to the device by the user. For use in place of [PACKAGE_SOURCE_LOCAL_FILE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#PACKAGE_SOURCE_LOCAL_FILE:kotlin.Int) when the installer knows the package was downloaded. 
+Code indicating that the package being installed comes from a file that was downloaded to the device by the user. For use in place of [PACKAGE_SOURCE_LOCAL_FILE](../android/content/pm/PackageInstaller.md) when the installer knows the package was downloaded. 
 
  Value: 4
 
@@ -558,7 +558,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val PACKAGE_SOURCE_UNSPECIFIED: Int
 ```
 
-The installer did not call [PackageInstaller.SessionParams.setPackageSource(int)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams#setPackageSource(kotlin.Int))to specify the package source. 
+The installer did not call [PackageInstaller.SessionParams.setPackageSource(int)](../android/content/pm/PackageInstaller.SessionParams.md))to specify the package source. 
 
  Value: 0
 
@@ -576,7 +576,7 @@ The operation failed in a generic way. The system will always try to provide a m
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_FAILURE_ABORTED
 
@@ -592,7 +592,7 @@ The operation failed because it was actively aborted. For example, the user acti
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_FAILURE_BLOCKED
 
@@ -604,14 +604,14 @@ static val STATUS_FAILURE_BLOCKED: Int
 
 The operation failed because it was blocked. For example, a device policy may be blocking the operation, a package verifier may have blocked the operation, or the app may be required for core system operation.
 
-The result may also contain [EXTRA_OTHER_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_OTHER_PACKAGE_NAME:kotlin.String) with the specific package blocking the install. 
+The result may also contain [EXTRA_OTHER_PACKAGE_NAME](../android/content/pm/PackageInstaller.md) with the specific package blocking the install. 
 
  Value: 2
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String)
-- [#EXTRA_OTHER_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_OTHER_PACKAGE_NAME:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md)
+- [#EXTRA_OTHER_PACKAGE_NAME](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_FAILURE_CONFLICT
 
@@ -623,14 +623,14 @@ static val STATUS_FAILURE_CONFLICT: Int
 
 The operation failed because it conflicts (or is inconsistent with) with another package already installed on the device. For example, an existing permission, incompatible certificates, etc. The user may be able to uninstall another app to fix the issue.
 
-The result may also contain [EXTRA_OTHER_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_OTHER_PACKAGE_NAME:kotlin.String) with the specific package identified as the cause of the conflict. 
+The result may also contain [EXTRA_OTHER_PACKAGE_NAME](../android/content/pm/PackageInstaller.md) with the specific package identified as the cause of the conflict. 
 
  Value: 5
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String)
-- [#EXTRA_OTHER_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_OTHER_PACKAGE_NAME:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md)
+- [#EXTRA_OTHER_PACKAGE_NAME](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_FAILURE_INCOMPATIBLE
 
@@ -640,13 +640,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_FAILURE_INCOMPATIBLE: Int
 ```
 
-The operation failed because it is fundamentally incompatible with this device. For example, the app may require a hardware feature that doesn't exist, it may be missing native code for the ABIs supported by the device, or it requires a newer SDK version, etc. Starting in [Build.VERSION_CODES.UPSIDE_DOWN_CAKE](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int), an app with only 32-bit native code can still be installed on a device that supports both 64-bit and 32-bit ABIs. However, a warning dialog will be displayed when the app is launched. 
+The operation failed because it is fundamentally incompatible with this device. For example, the app may require a hardware feature that doesn't exist, it may be missing native code for the ABIs supported by the device, or it requires a newer SDK version, etc. Starting in [Build.VERSION_CODES.UPSIDE_DOWN_CAKE](../android/os/Build.VERSION_CODES.md), an app with only 32-bit native code can still be installed on a device that supports both 64-bit and 32-bit ABIs. However, a warning dialog will be displayed when the app is launched. 
 
  Value: 7
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_FAILURE_INVALID
 
@@ -662,7 +662,7 @@ The operation failed because one or more of the APKs was invalid. For example, t
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_FAILURE_STORAGE
 
@@ -674,14 +674,14 @@ static val STATUS_FAILURE_STORAGE: Int
 
 The operation failed because of storage issues. For example, the device may be running low on space, or external media may be unavailable. The user may be able to help free space or insert different external media.
 
-The result may also contain [EXTRA_STORAGE_PATH](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STORAGE_PATH:kotlin.String) with the path to the storage device that caused the failure. 
+The result may also contain [EXTRA_STORAGE_PATH](../android/content/pm/PackageInstaller.md) with the path to the storage device that caused the failure. 
 
  Value: 6
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String)
-- [#EXTRA_STORAGE_PATH](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STORAGE_PATH:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md)
+- [#EXTRA_STORAGE_PATH](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_FAILURE_TIMEOUT
 
@@ -697,7 +697,7 @@ The operation failed because it didn't complete within the specified timeout.
 
 **See Also**
 
-- [#EXTRA_STATUS_MESSAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS_MESSAGE:kotlin.String) 
+- [#EXTRA_STATUS_MESSAGE](../android/content/pm/PackageInstaller.md) 
 
 ### STATUS_PENDING_USER_ACTION
 
@@ -707,7 +707,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_PENDING_USER_ACTION: Int
 ```
 
-User action is currently required to proceed. You can launch the intent activity described by [Intent.EXTRA_INTENT](https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String) to involve the user and continue.
+User action is currently required to proceed. You can launch the intent activity described by [Intent.EXTRA_INTENT](../android/content/Intent.md) to involve the user and continue.
 
 You may choose to immediately launch the intent if the user is actively using your app. Otherwise, you should use a notification to guide the user back into your app before launching. 
 
@@ -715,7 +715,7 @@ You may choose to immediately launch the intent if the user is actively using yo
 
 **See Also**
 
-- [android.content.Intent#getParcelableExtra(String)](https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)) 
+- [android.content.Intent#getParcelableExtra(String)](../android/content/Intent.md)) 
 
 ### STATUS_SUCCESS
 
@@ -767,7 +767,7 @@ static val UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE: Int
 
 Not enough storage to unarchive the application.
 
-The installer can optionally provide a`userActionIntent`for a space-clearing dialog. If no action is provided, then a generic intent [android.os.storage.StorageManager#ACTION_MANAGE_STORAGE](https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#ACTION_MANAGE_STORAGE:kotlin.String) is started instead. 
+The installer can optionally provide a`userActionIntent`for a space-clearing dialog. If no action is provided, then a generic intent [android.os.storage.StorageManager#ACTION_MANAGE_STORAGE](../android/os/storage/StorageManager.md) is started instead. 
 
  Value: 2
 
@@ -833,7 +833,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun abandonSession(sessionId: Int): Unit
 ```
 
-Completely abandon the given session, destroying all staged data and rendering it invalid. Abandoned sessions will be reported to [SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback) listeners as failures. This is equivalent to opening the session and calling [Session.abandon()](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#abandon()).
+Completely abandon the given session, destroying all staged data and rendering it invalid. Abandoned sessions will be reported to [SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md) listeners as failures. This is equivalent to opening the session and calling [Session.abandon()](../android/content/pm/PackageInstaller.Session.md)).
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------|
@@ -857,10 +857,10 @@ Check if install constraints are satisfied for the given packages. Note this que
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `packageNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:a list of package names to check the constraints for installation This value cannot be`null`. |
-| `constraints` | [PackageInstaller.InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints):the constraints for installation. This value cannot be`null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):the [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) on which to invoke the callback This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
+| `constraints` | [PackageInstaller.InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md):the constraints for installation. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):the [Executor](../java/util/concurrent/Executor.md) on which to invoke the callback This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [PackageInstaller.InstallConstraintsResult](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraintsResult)!\>:called when the [InstallConstraintsResult](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraintsResult) is ready This value cannot be`null`. |
+| `callback` | [Consumer](../java/util/function/Consumer.md)\< [PackageInstaller.InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md)!\>:called when the [InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md) is ready This value cannot be`null`. |
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -879,21 +879,21 @@ open fun commitSessionAfterInstallConstraintsAreMet(
 ): Unit
 ```
 
-Commit the session when all constraints are satisfied. This is a convenient method to combine [waitForInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,android.content.IntentSender,long)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#waitForInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20android.content.IntentSender,%20kotlin.Long))and [Session.commit(IntentSender)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#commit(android.content.IntentSender)).
+Commit the session when all constraints are satisfied. This is a convenient method to combine [waitForInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,android.content.IntentSender,long)](../android/content/pm/PackageInstaller.md))and [Session.commit(IntentSender)](../android/content/pm/PackageInstaller.Session.md)).
 
-Once this method is called, the session is sealed and no additional mutations may be performed on the session. In the case of timeout, you may commit the session again using this method or [Session.commit(IntentSender)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#commit(android.content.IntentSender))for retries.
+Once this method is called, the session is sealed and no additional mutations may be performed on the session. In the case of timeout, you may commit the session again using this method or [Session.commit(IntentSender)](../android/content/pm/PackageInstaller.Session.md))for retries.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `sessionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the session ID to commit when all constraints are satisfied. |
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Called when the state of the session changes. Intents sent to this receiver contain [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
-| `constraints` | [PackageInstaller.InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints):The requirements to satisfy before committing the session. This value cannot be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md):Called when the state of the session changes. Intents sent to this receiver contain [EXTRA_STATUS](../android/content/pm/PackageInstaller.md). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
+| `constraints` | [PackageInstaller.InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md):The requirements to satisfy before committing the session. This value cannot be`null`. |
 | --- | --- |
 | `timeoutMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The maximum time to wait, in milliseconds until the constraints are satisfied. The caller will be notified via`statusReceiver`if timeout happens before commit. Value is a non-negative duration in milliseconds. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if the`statusReceiver`from an immutable [android.app.PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) when caller has a target SDK of API 35 or above. |
+| `java.lang.IllegalArgumentException` | if the`statusReceiver`from an immutable [android.app.PendingIntent](../android/app/PendingIntent.md) when caller has a target SDK of API 35 or above. |
 
 ### createSession
 
@@ -909,7 +909,7 @@ The system may automatically destroy sessions that have not been finalized (eith
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [PackageInstaller.SessionParams](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams):This value cannot be`null`. |
+| `params` | [PackageInstaller.SessionParams](../android/content/pm/PackageInstaller.SessionParams.md):This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -919,7 +919,7 @@ The system may automatically destroy sessions that have not been finalized (eith
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if parameters were unsatisfiable, such as lack of disk space or unavailable media. |
 | `java.lang.SecurityException` | when installation services are unavailable, such as when called from a restricted user. |
-| `java.lang.IllegalArgumentException` | when [SessionParams](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams) is invalid. |
+| `java.lang.IllegalArgumentException` | when [SessionParams](../android/content/pm/PackageInstaller.SessionParams.md) is invalid. |
 | --- | --- |
 
 ### getActiveStagedSession
@@ -931,11 +931,11 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 open fun getActiveStagedSession(): PackageInstaller.SessionInfo?
 ```
 
-**Deprecated:** *Use [getActiveStagedSessions](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getActiveStagedSessions())as there can be more than one active staged session*
+**Deprecated:** *Use [getActiveStagedSessions](../android/content/pm/PackageInstaller.md))as there can be more than one active staged session*
 
 Returns first active staged session, or`null`if there is none.
 
-For more information on what sessions are considered active see [SessionInfo.isStagedSessionActive()](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo#isStagedSessionActive()). 
+For more information on what sessions are considered active see [SessionInfo.isStagedSessionActive()](../android/content/pm/PackageInstaller.SessionInfo.md)). 
 
 ### getActiveStagedSessions
 
@@ -947,11 +947,11 @@ open fun getActiveStagedSessions(): MutableList<PackageInstaller.SessionInfo!>
 
 Returns list of active staged sessions. Returns empty list if there is none.
 
-For more information on what sessions are considered active see \* [SessionInfo.isStagedSessionActive()](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo#isStagedSessionActive()).
+For more information on what sessions are considered active see \* [SessionInfo.isStagedSessionActive()](../android/content/pm/PackageInstaller.SessionInfo.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!> | This value cannot be`null`. |
 
 ### getAllSessions
 
@@ -965,7 +965,7 @@ Return list of all known install sessions, regardless of the installer. Callers 
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!> | This value cannot be`null`. |
 
 ### getDeveloperVerificationServiceProvider
 
@@ -989,7 +989,7 @@ Return list of all known install sessions owned by the calling app.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!> | This value cannot be`null`. |
 
 ### getSessionInfo
 
@@ -1003,7 +1003,7 @@ Return details for a specific session. Callers need to either declare \<queries\
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)? | details for the requested session, or`null`if the session does not exist. |
+| [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)? | details for the requested session, or`null`if the session does not exist. |
 
 ### getStagedSessions
 
@@ -1017,7 +1017,7 @@ Return list of all staged install sessions. Callers need to either declare \<que
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!> | This value cannot be`null`. |
 
 ### installExistingPackage
 
@@ -1033,14 +1033,14 @@ open fun installExistingPackage(
 
 Install the given package, which already exists on the device, for the user for which this installer was created.
 
-This will [all restricted permissions](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams#setWhitelistedRestrictedPermissions(kotlin.collections.MutableSet)). 
-Requires [android.Manifest.permission#INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String) and android.Manifest.permission.INSTALL_EXISTING_PACKAGES
+This will [all restricted permissions](../android/content/pm/PackageInstaller.SessionParams.md)). 
+Requires [android.Manifest.permission#INSTALL_PACKAGES](../android/Manifest.permission.md) and android.Manifest.permission.INSTALL_EXISTING_PACKAGES
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package to install. This value cannot be`null`. |
-| `installReason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Reason for install. Value is [android.content.pm.PackageManager#INSTALL_REASON_UNKNOWN](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#INSTALL_REASON_UNKNOWN:kotlin.Int), [android.content.pm.PackageManager#INSTALL_REASON_POLICY](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#INSTALL_REASON_POLICY:kotlin.Int), [android.content.pm.PackageManager#INSTALL_REASON_DEVICE_RESTORE](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#INSTALL_REASON_DEVICE_RESTORE:kotlin.Int), [android.content.pm.PackageManager#INSTALL_REASON_DEVICE_SETUP](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#INSTALL_REASON_DEVICE_SETUP:kotlin.Int), [android.content.pm.PackageManager#INSTALL_REASON_USER](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#INSTALL_REASON_USER:kotlin.Int), or android.content.pm.PackageManager.INSTALL_REASON_ROLLBACK |
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)?:Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String). Refer to the individual status codes on how to handle them. This value may be`null`. |
+| `installReason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Reason for install. Value is [android.content.pm.PackageManager#INSTALL_REASON_UNKNOWN](../android/content/pm/PackageManager.md), [android.content.pm.PackageManager#INSTALL_REASON_POLICY](../android/content/pm/PackageManager.md), [android.content.pm.PackageManager#INSTALL_REASON_DEVICE_RESTORE](../android/content/pm/PackageManager.md), [android.content.pm.PackageManager#INSTALL_REASON_DEVICE_SETUP](../android/content/pm/PackageManager.md), [android.content.pm.PackageManager#INSTALL_REASON_USER](../android/content/pm/PackageManager.md), or android.content.pm.PackageManager.INSTALL_REASON_ROLLBACK |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md)?:Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](../android/content/pm/PackageInstaller.md). Refer to the individual status codes on how to handle them. This value may be`null`. |
 | --- | --- |
 
 ### installPackageArchived
@@ -1056,19 +1056,19 @@ open fun installPackageArchived(
 ```
 
 Install package in an archived state. 
-Requires [android.Manifest.permission#INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String)
+Requires [android.Manifest.permission#INSTALL_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `archivedPackageInfo` | [ArchivedPackageInfo](https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo):archived package data such as package name, signature etc. This value cannot be`null`. |
-| `sessionParams` | [PackageInstaller.SessionParams](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionParams):used to create an underlying installation session This value cannot be`null`. |
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Called when the state of the session changes. Intents sent to this receiver contain [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
+| `archivedPackageInfo` | [ArchivedPackageInfo](../android/content/pm/ArchivedPackageInfo.md):archived package data such as package name, signature etc. This value cannot be`null`. |
+| `sessionParams` | [PackageInstaller.SessionParams](../android/content/pm/PackageInstaller.SessionParams.md):used to create an underlying installation session This value cannot be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md):Called when the state of the session changes. Intents sent to this receiver contain [EXTRA_STATUS](../android/content/pm/PackageInstaller.md). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
 | --- | --- |
 
 **See Also**
 
-- [#createSession](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#createSession(android.content.pm.PackageInstaller.SessionParams))
-- [android.content.pm.PackageInstaller.Session#commit](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session#commit(android.content.IntentSender)) 
+- [#createSession](../android/content/pm/PackageInstaller.md))
+- [android.content.pm.PackageInstaller.Session#commit](../android/content/pm/PackageInstaller.Session.md)) 
 
 ### openSession
 
@@ -1082,7 +1082,7 @@ Open an existing session to actively perform work. To succeed, the caller must b
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [PackageInstaller.Session](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session) | This value cannot be`null`. |
+| [PackageInstaller.Session](../android/content/pm/PackageInstaller.Session.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------|
@@ -1101,7 +1101,7 @@ Register to watch for session lifecycle events. The callers need to be the sessi
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [PackageInstaller.SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback):This value cannot be`null`. |
+| `callback` | [PackageInstaller.SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md):This value cannot be`null`. |
 
 ### registerSessionCallback
 
@@ -1118,8 +1118,8 @@ Register to watch for session lifecycle events. No special permissions are requi
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#):to dispatch callback events through, otherwise uses calling thread. This value cannot be`null`. |
-| `callback` | [PackageInstaller.SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback):This value cannot be`null`. |
+| `handler` | [Handler](../android/os/Handler.md):to dispatch callback events through, otherwise uses calling thread. This value cannot be`null`. |
+| `callback` | [PackageInstaller.SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md):This value cannot be`null`. |
 
 ### reportUnarchivalState
 
@@ -1130,11 +1130,11 @@ open fun reportUnarchivalState(unarchivalState: PackageInstaller.UnarchivalStat
 ```
 
 Reports the state of an unarchival to the system. 
-Requires [android.Manifest.permission#INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_INSTALL_PACKAGES:kotlin.String)
+Requires [android.Manifest.permission#INSTALL_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `unarchivalState` | [PackageInstaller.UnarchivalState](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.UnarchivalState):This value cannot be`null`. |
+| `unarchivalState` | [PackageInstaller.UnarchivalState](../android/content/pm/PackageInstaller.UnarchivalState.md):This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------------------------------------------|------------------------------------------|
@@ -1142,7 +1142,7 @@ Requires [android.Manifest.permission#INSTALL_PACKAGES](https://developer.androi
 
 **See Also**
 
-- [android.content.pm.PackageInstaller.UnarchivalState](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.UnarchivalState) 
+- [android.content.pm.PackageInstaller.UnarchivalState](../android/content/pm/PackageInstaller.UnarchivalState.md) 
 
 ### reportUnarchivalStatus
 
@@ -1158,15 +1158,15 @@ open fun reportUnarchivalStatus(
 ```
 
 Reports the status of an unarchival to the system. 
-Requires [android.Manifest.permission#INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_INSTALL_PACKAGES:kotlin.String)
+Requires [android.Manifest.permission#INSTALL_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `unarchiveId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the ID provided by the system as part of the intent.action.UNARCHIVE broadcast with EXTRA_UNARCHIVE_ID. |
-| `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is used for the system to provide the user with necessary follow-up steps or errors. Value is android.content.pm.PackageInstaller.UNARCHIVAL_STATUS_UNSET, [android.content.pm.PackageInstaller#UNARCHIVAL_OK](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_OK:kotlin.Int), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_USER_ACTION_NEEDED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_USER_ACTION_NEEDED:kotlin.Int), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE:kotlin.Int), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_NO_CONNECTIVITY](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_NO_CONNECTIVITY:kotlin.Int), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_DISABLED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_DISABLED:kotlin.Int), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED:kotlin.Int), or [android.content.pm.PackageInstaller#UNARCHIVAL_GENERIC_ERROR](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#UNARCHIVAL_GENERIC_ERROR:kotlin.Int) |
+| `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is used for the system to provide the user with necessary follow-up steps or errors. Value is android.content.pm.PackageInstaller.UNARCHIVAL_STATUS_UNSET, [android.content.pm.PackageInstaller#UNARCHIVAL_OK](../android/content/pm/PackageInstaller.md), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_USER_ACTION_NEEDED](../android/content/pm/PackageInstaller.md), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE](../android/content/pm/PackageInstaller.md), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_NO_CONNECTIVITY](../android/content/pm/PackageInstaller.md), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_DISABLED](../android/content/pm/PackageInstaller.md), [android.content.pm.PackageInstaller#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED](../android/content/pm/PackageInstaller.md), or [android.content.pm.PackageInstaller#UNARCHIVAL_GENERIC_ERROR](../android/content/pm/PackageInstaller.md) |
 | `requiredStorageBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):If the error is UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE this field should be set to specify how many additional bytes of storage are required to unarchive the app. |
 | --- | --- |
-| `userActionIntent` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)?:Optional intent to start a follow up action required to facilitate the unarchival flow (e.g. user needs to log in). This value may be`null`. |
+| `userActionIntent` | [PendingIntent](../android/app/PendingIntent.md)?:Optional intent to start a follow up action required to facilitate the unarchival flow (e.g. user needs to log in). This value may be`null`. |
 
 | Exceptions ||
 |-----------------------------------------------------------|------------------------------------------|
@@ -1185,14 +1185,14 @@ open fun requestArchive(
 
 Requests to archive a package which is currently installed.
 
-During the archival process, the apps APKs and cache are removed from the device while the user data is kept. Through the [requestUnarchive](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestUnarchive(kotlin.String,%20android.content.IntentSender))call, apps can be restored again through their responsible installer.
+During the archival process, the apps APKs and cache are removed from the device while the user data is kept. Through the [requestUnarchive](../android/content/pm/PackageInstaller.md))call, apps can be restored again through their responsible installer.
 
-Archived apps are returned as displayable apps through the [LauncherApps](https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps) APIs and will be displayed to users with UI treatment to highlight that said apps are archived. If a user taps on an archived app, the app will be unarchived and the restoration process is communicated. 
-Requires [android.Manifest.permission#DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#DELETE_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_DELETE_PACKAGES:kotlin.String)
+Archived apps are returned as displayable apps through the [LauncherApps](../android/content/pm/LauncherApps.md) APIs and will be displayed to users with UI treatment to highlight that said apps are archived. If a user taps on an archived app, the app will be unarchived and the restoration process is communicated. 
+Requires [android.Manifest.permission#DELETE_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Callback used to notify when the operation is completed. This value cannot be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md):Callback used to notify when the operation is completed. This value cannot be`null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 
 | Exceptions ||
@@ -1212,14 +1212,14 @@ open fun requestUnarchive(
 
 Requests to unarchive a currently archived package.
 
-Sends a request to unarchive an app to the responsible installer. The installer is determined by [InstallSourceInfo.getUpdateOwnerPackageName()](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getUpdateOwnerPackageName()), or [InstallSourceInfo.getInstallingPackageName()](https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getInstallingPackageName())if the former value is null.
+Sends a request to unarchive an app to the responsible installer. The installer is determined by [InstallSourceInfo.getUpdateOwnerPackageName()](../android/content/pm/InstallSourceInfo.md)), or [InstallSourceInfo.getInstallingPackageName()](../android/content/pm/InstallSourceInfo.md))if the former value is null.
 
-The installation will happen asynchronously and can be observed through [android.content.Intent#ACTION_PACKAGE_ADDED](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_ADDED:kotlin.String). 
-Requires [android.Manifest.permission#INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INSTALL_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_INSTALL_PACKAGES:kotlin.String)
+The installation will happen asynchronously and can be observed through [android.content.Intent#ACTION_PACKAGE_ADDED](../android/content/Intent.md). 
+Requires [android.Manifest.permission#INSTALL_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_INSTALL_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Callback used to notify whether the installer has accepted the unarchival request or an error has occurred. The status update will be sent though [EXTRA_UNARCHIVE_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_UNARCHIVE_STATUS:kotlin.String). Only one status will be sent. This value cannot be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md):Callback used to notify whether the installer has accepted the unarchival request or an error has occurred. The status update will be sent though [EXTRA_UNARCHIVE_STATUS](../android/content/pm/PackageInstaller.md). Only one status will be sent. This value cannot be`null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 
 | Exceptions ||
@@ -1238,7 +1238,7 @@ open fun uninstall(
 ): Unit
 ```
 
-Uninstall the given package with a specific version code, removing it completely from the device. If the version code of the package does not match the one passed in the versioned package argument this method is a no-op. Use [PackageManager.VERSION_CODE_HIGHEST](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#VERSION_CODE_HIGHEST:kotlin.Int) to uninstall the latest version of the package.
+Uninstall the given package with a specific version code, removing it completely from the device. If the version code of the package does not match the one passed in the versioned package argument this method is a no-op. Use [PackageManager.VERSION_CODE_HIGHEST](../android/content/pm/PackageManager.md) to uninstall the latest version of the package.
 
 This method is available to:
 
@@ -1248,16 +1248,16 @@ This method is available to:
 
 <br />
 
-Requires [android.Manifest.permission#DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#DELETE_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_DELETE_PACKAGES:kotlin.String)
+Requires [android.Manifest.permission#DELETE_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `versionedPackage` | [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage):The versioned package to uninstall. This value cannot be`null`. |
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
+| `versionedPackage` | [VersionedPackage](../android/content/pm/VersionedPackage.md):The versioned package to uninstall. This value cannot be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md):Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](../android/content/pm/PackageInstaller.md). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
 
 **See Also**
 
-- [android.app.admin.DevicePolicyManager](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#) 
+- [android.app.admin.DevicePolicyManager](../android/app/admin/DevicePolicyManager.md) 
 
 ### uninstall
 
@@ -1271,14 +1271,14 @@ open fun uninstall(
 ): Unit
 ```
 
-Uninstall the given package with a specific version code, removing it completely from the device. This method is only available to the current "installer of record" for the package. If the version code of the package does not match the one passed in the versioned package argument this method is a no-op. Use [PackageManager.VERSION_CODE_HIGHEST](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#VERSION_CODE_HIGHEST:kotlin.Int) to uninstall the latest version of the package. 
-Requires [android.Manifest.permission#DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#DELETE_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_DELETE_PACKAGES:kotlin.String)
+Uninstall the given package with a specific version code, removing it completely from the device. This method is only available to the current "installer of record" for the package. If the version code of the package does not match the one passed in the versioned package argument this method is a no-op. Use [PackageManager.VERSION_CODE_HIGHEST](../android/content/pm/PackageManager.md) to uninstall the latest version of the package. 
+Requires [android.Manifest.permission#DELETE_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `versionedPackage` | [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage):The versioned package to uninstall. This value cannot be`null`. |
+| `versionedPackage` | [VersionedPackage](../android/content/pm/VersionedPackage.md):The versioned package to uninstall. This value cannot be`null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags for uninstall. Value is either`0`or a combination of android.content.pm.PackageManager.DELETE_KEEP_DATA, android.content.pm.PackageManager.DELETE_ALL_USERS, android.content.pm.PackageManager.DELETE_SYSTEM_APP, android.content.pm.PackageManager.DELETE_DONT_KILL_APP, and android.content.pm.PackageManager.DELETE_CHATTY |
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md):Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](../android/content/pm/PackageInstaller.md). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
 | --- | --- |
 
 ### uninstall
@@ -1300,18 +1300,18 @@ Uninstall the given package, removing it completely from the device. This method
 
 <br />
 
-Requires [android.Manifest.permission#DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#DELETE_PACKAGES:kotlin.String) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_DELETE_PACKAGES:kotlin.String)
+Requires [android.Manifest.permission#DELETE_PACKAGES](../android/Manifest.permission.md) or [android.Manifest.permission#REQUEST_DELETE_PACKAGES](../android/Manifest.permission.md)
 
 <br />
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package to uninstall. This value cannot be`null`. |
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md):Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](../android/content/pm/PackageInstaller.md). Refer to the individual status codes on how to handle them. This value cannot be`null`. |
 
 **See Also**
 
-- [android.app.admin.DevicePolicyManager](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#) 
+- [android.app.admin.DevicePolicyManager](../android/app/admin/DevicePolicyManager.md) 
 
 ### uninstallExistingPackage
 
@@ -1325,12 +1325,12 @@ open fun uninstallExistingPackage(
 ```
 
 Uninstall the given package for the user for which this installer was created if the package will still exist for other users on the device. 
-Requires [android.Manifest.permission#DELETE_PACKAGES](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#DELETE_PACKAGES:kotlin.String)
+Requires [android.Manifest.permission#DELETE_PACKAGES](../android/Manifest.permission.md)
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package to uninstall. This value cannot be`null`. |
-| `statusReceiver` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#)?:Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_STATUS:kotlin.String). Refer to the individual status codes on how to handle them. This value may be`null`. |
+| `statusReceiver` | [IntentSender](../android/content/IntentSender.md)?:Where to deliver the result of the operation indicated by the extra [EXTRA_STATUS](../android/content/pm/PackageInstaller.md). Refer to the individual status codes on how to handle them. This value may be`null`. |
 
 ### unregisterSessionCallback
 
@@ -1344,7 +1344,7 @@ Unregister a previously registered callback.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [PackageInstaller.SessionCallback](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback):This value cannot be`null`. |
+| `callback` | [PackageInstaller.SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md):This value cannot be`null`. |
 
 ### updateSessionAppIcon
 
@@ -1357,11 +1357,11 @@ open fun updateSessionAppIcon(
 ): Unit
 ```
 
-Update the icon representing the app being installed in a specific session. This should be roughly [ActivityManager.getLauncherLargeIconSize()](https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#getLauncherLargeIconSize())in both dimensions.
+Update the icon representing the app being installed in a specific session. This should be roughly [ActivityManager.getLauncherLargeIconSize()](../android/app/ActivityManager.md))in both dimensions.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
-| `appIcon` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)?:This value may be`null`. |
+| `appIcon` | [Bitmap](../android/graphics/Bitmap.md)?:This value may be`null`. |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------|
@@ -1401,15 +1401,15 @@ open fun waitForInstallConstraints(
 ): Unit
 ```
 
-Similar to [checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#checkInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20java.util.concurrent.Executor,%20java.util.function.Consumer)), but the callback is invoked only when the constraints are satisfied or after timeout.
+Similar to [checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)](../android/content/pm/PackageInstaller.md)), but the callback is invoked only when the constraints are satisfied or after timeout.
 
 Note: the device idle constraint might take a long time to evaluate. The system will ensure the constraint is evaluated completely before handling timeout.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `packageNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>:a list of package names to check the constraints for installation This value cannot be`null`. |
-| `constraints` | [PackageInstaller.InstallConstraints](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.InstallConstraints):the constraints for installation. This value cannot be`null`. |
-| `callback` | [IntentSender](https://developer.android.com/reference/kotlin/android/content/IntentSender.html#):Called when the constraints are satisfied or after timeout. Intents sent to this callback contain: [Intent.EXTRA_PACKAGES](https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_PACKAGES:kotlin.String) for the input package names, [EXTRA_INSTALL_CONSTRAINTS](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_INSTALL_CONSTRAINTS:kotlin.String) for the input constraints, [EXTRA_INSTALL_CONSTRAINTS_RESULT](https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#EXTRA_INSTALL_CONSTRAINTS_RESULT:kotlin.String) for the result. This value cannot be`null`. |
+| `constraints` | [PackageInstaller.InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md):the constraints for installation. This value cannot be`null`. |
+| `callback` | [IntentSender](../android/content/IntentSender.md):Called when the constraints are satisfied or after timeout. Intents sent to this callback contain: [Intent.EXTRA_PACKAGES](../android/content/Intent.md) for the input package names, [EXTRA_INSTALL_CONSTRAINTS](../android/content/pm/PackageInstaller.md) for the input constraints, [EXTRA_INSTALL_CONSTRAINTS_RESULT](../android/content/pm/PackageInstaller.md) for the result. This value cannot be`null`. |
 | --- | --- |
 | `timeoutMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The maximum time to wait, in milliseconds until the constraints are satisfied. Valid range is from 0 to one week.`0`means the callback will be invoked immediately no matter constraints are satisfied or not. Value is a non-negative duration in milliseconds. |
 

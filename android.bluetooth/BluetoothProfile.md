@@ -4,60 +4,60 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothProfile
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothProfile "View this page in Java") 
+Kotlin| [Java](../android/bluetooth/BluetoothProfile.md) 
 | --- | --- |
 
 ```
 interface BluetoothProfile
 ```
 
-| [android.bluetooth.BluetoothProfile](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#) |
+| [android.bluetooth.BluetoothProfile](../android/bluetooth/BluetoothProfile.md) |
 
-| Known Direct Subclasses [BluetoothA2dp](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothA2dp), [BluetoothCsipSetCoordinator](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCsipSetCoordinator), [BluetoothGatt](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt), [BluetoothGattServer](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer), [BluetoothHeadset](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset), [BluetoothHealth](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth), [BluetoothHearingAid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid), [BluetoothHidDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDevice), [BluetoothLeAudio](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio) |-----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [BluetoothA2dp](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothA2dp) | This class provides the public APIs to control the Bluetooth A2DP profile. | | [BluetoothCsipSetCoordinator](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCsipSetCoordinator) | This class provides the public APIs to control the Bluetooth CSIP set coordinator. | | [BluetoothGatt](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt) | Public API for the Bluetooth GATT Profile. | | [BluetoothGattServer](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer) | Public API for the Bluetooth GATT Profile server role. | | [BluetoothHeadset](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset) | Public API for controlling the Bluetooth Headset Service. | | [BluetoothHealth](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealth) | Public API for Bluetooth Health Profile. | | [BluetoothHearingAid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHearingAid) | This class provides the public APIs to control the Hearing Aid profile. | | [BluetoothHidDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDevice) | Provides the public APIs to control the Bluetooth HID Device profile. | | [BluetoothLeAudio](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothLeAudio) | This class provides the public APIs to control the LeAudio profile. | |
+| Known Direct Subclasses [BluetoothA2dp](../android/bluetooth/BluetoothA2dp.md), [BluetoothCsipSetCoordinator](../android/bluetooth/BluetoothCsipSetCoordinator.md), [BluetoothGatt](../android/bluetooth/BluetoothGatt.md), [BluetoothGattServer](../android/bluetooth/BluetoothGattServer.md), [BluetoothHeadset](../android/bluetooth/BluetoothHeadset.md), [BluetoothHealth](../android/bluetooth/BluetoothHealth.md), [BluetoothHearingAid](../android/bluetooth/BluetoothHearingAid.md), [BluetoothHidDevice](../android/bluetooth/BluetoothHidDevice.md), [BluetoothLeAudio](../android/bluetooth/BluetoothLeAudio.md) |-----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------| | [BluetoothA2dp](../android/bluetooth/BluetoothA2dp.md) | This class provides the public APIs to control the Bluetooth A2DP profile. | | [BluetoothCsipSetCoordinator](../android/bluetooth/BluetoothCsipSetCoordinator.md) | This class provides the public APIs to control the Bluetooth CSIP set coordinator. | | [BluetoothGatt](../android/bluetooth/BluetoothGatt.md) | Public API for the Bluetooth GATT Profile. | | [BluetoothGattServer](../android/bluetooth/BluetoothGattServer.md) | Public API for the Bluetooth GATT Profile server role. | | [BluetoothHeadset](../android/bluetooth/BluetoothHeadset.md) | Public API for controlling the Bluetooth Headset Service. | | [BluetoothHealth](../android/bluetooth/BluetoothHealth.md) | Public API for Bluetooth Health Profile. | | [BluetoothHearingAid](../android/bluetooth/BluetoothHearingAid.md) | This class provides the public APIs to control the Hearing Aid profile. | | [BluetoothHidDevice](../android/bluetooth/BluetoothHidDevice.md) | Provides the public APIs to control the Bluetooth HID Device profile. | | [BluetoothLeAudio](../android/bluetooth/BluetoothLeAudio.md) | This class provides the public APIs to control the LeAudio profile. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Public APIs for the Bluetooth Profiles.
 
-Clients should call [BluetoothAdapter.getProfileProxy](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getProfileProxy(android.content.Context,%20android.bluetooth.BluetoothProfile.ServiceListener,%20kotlin.Int)), to get the Profile Proxy. Each public profile implements this interface.
+Clients should call [BluetoothAdapter.getProfileProxy](../android/bluetooth/BluetoothAdapter.md)), to get the Profile Proxy. Each public profile implements this interface.
 
 ## Summary
 
 | Nested classes ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [ServiceListener](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.ServiceListener) An interface for notifying BluetoothProfile IPC clients when they have been connected or disconnected to the service. |
+| abstract | [ServiceListener](../android/bluetooth/BluetoothProfile.ServiceListener.md) An interface for notifying BluetoothProfile IPC clients when they have been connected or disconnected to the service. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [A2DP](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#A2DP:kotlin.Int) Advanced Audio Distribution Profile (A2DP) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CSIP_SET_COORDINATOR](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#CSIP_SET_COORDINATOR:kotlin.Int) Coordinated Set Identification Profile (CSIP) set coordinator |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PREVIOUS_STATE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#EXTRA_PREVIOUS_STATE:kotlin.String) Extra for the connection state intents of the individual profiles. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [A2DP](../android/bluetooth/BluetoothProfile.md) Advanced Audio Distribution Profile (A2DP) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CSIP_SET_COORDINATOR](../android/bluetooth/BluetoothProfile.md) Coordinated Set Identification Profile (CSIP) set coordinator |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PREVIOUS_STATE](../android/bluetooth/BluetoothProfile.md) Extra for the connection state intents of the individual profiles. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PROFILE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#EXTRA_PROFILE:kotlin.String) Extra for the [BluetoothProfile](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#) that the intent applies to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#EXTRA_STATE:kotlin.String) Extra for the connection state intents of the individual profiles. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GATT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT:kotlin.Int) Generic Attribute Profile (GATT) |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PROFILE](../android/bluetooth/BluetoothProfile.md) Extra for the [BluetoothProfile](../android/bluetooth/BluetoothProfile.md) that the intent applies to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_STATE](../android/bluetooth/BluetoothProfile.md) Extra for the connection state intents of the individual profiles. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GATT](../android/bluetooth/BluetoothProfile.md) Generic Attribute Profile (GATT) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GATT_SERVER](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT_SERVER:kotlin.Int) Generic Attribute Profile (GATT) Server |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HAP_CLIENT](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#HAP_CLIENT:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADSET](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#HEADSET:kotlin.Int) Headset and Handsfree profile |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GATT_SERVER](../android/bluetooth/BluetoothProfile.md) Generic Attribute Profile (GATT) Server |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HAP_CLIENT](../android/bluetooth/BluetoothProfile.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADSET](../android/bluetooth/BluetoothProfile.md) Headset and Handsfree profile |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEALTH](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#HEALTH:kotlin.Int) Health Profile |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEARING_AID](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#HEARING_AID:kotlin.Int) Hearing Aid Device |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HID_DEVICE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#HID_DEVICE:kotlin.Int) Human Interface Device (HID) Device |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEALTH](../android/bluetooth/BluetoothProfile.md) Health Profile |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEARING_AID](../android/bluetooth/BluetoothProfile.md) Hearing Aid Device |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HID_DEVICE](../android/bluetooth/BluetoothProfile.md) Human Interface Device (HID) Device |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LE_AUDIO](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#LE_AUDIO:kotlin.Int) LE Audio Device |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAP](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#SAP:kotlin.Int) SIM Access Profile (SAP) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTED:kotlin.Int) The profile is in connected state |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LE_AUDIO](../android/bluetooth/BluetoothProfile.md) LE Audio Device |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAP](../android/bluetooth/BluetoothProfile.md) SIM Access Profile (SAP) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CONNECTED](../android/bluetooth/BluetoothProfile.md) The profile is in connected state |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTING:kotlin.Int) The profile is in connecting state |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTED:kotlin.Int) The profile is in disconnected state |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DISCONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTING:kotlin.Int) The profile is in disconnecting state |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CONNECTING](../android/bluetooth/BluetoothProfile.md) The profile is in connecting state |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DISCONNECTED](../android/bluetooth/BluetoothProfile.md) The profile is in disconnected state |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DISCONNECTING](../android/bluetooth/BluetoothProfile.md) The profile is in disconnecting state |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | [getConnectedDevices](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#getConnectedDevices())`()` Get connected devices for this specific profile. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionState](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#getConnectionState(android.bluetooth.BluetoothDevice))`(`device:` ` [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!`)` Get the current connection state of the profile |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | [getDevicesMatchingConnectionStates](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#getDevicesMatchingConnectionStates(kotlin.IntArray))`(`states:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Get a list of devices that match any of the given connection states. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | [getConnectedDevices](../android/bluetooth/BluetoothProfile.md))`()` Get connected devices for this specific profile. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionState](../android/bluetooth/BluetoothProfile.md))`(`device:` ` [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!`)` Get the current connection state of the profile |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | [getDevicesMatchingConnectionStates](../android/bluetooth/BluetoothProfile.md))`(`states:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Get a list of devices that match any of the given connection states. |
 | --- | --- |
 
 ## Constants
@@ -108,7 +108,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val EXTRA_PROFILE: String
 ```
 
-Extra for the [BluetoothProfile](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#) that the intent applies to.
+Extra for the [BluetoothProfile](../android/bluetooth/BluetoothProfile.md) that the intent applies to.
 
 This extra represents the Bluetooth profile that the intent applies to. 
 
@@ -183,7 +183,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 static val HEALTH: Int
 ```
 
-**Deprecated:** *Health Device Profile (HDP) and MCAP protocol are no longer used. New apps should use Bluetooth Low Energy based solutions such as [BluetoothGatt](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt), [android.bluetooth.BluetoothAdapter#listenUsingL2capChannel()](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingL2capChannel()), or [android.bluetooth.BluetoothDevice#createL2capChannel(int)](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createL2capChannel(kotlin.Int))*
+**Deprecated:** *Health Device Profile (HDP) and MCAP protocol are no longer used. New apps should use Bluetooth Low Energy based solutions such as [BluetoothGatt](../android/bluetooth/BluetoothGatt.md), [android.bluetooth.BluetoothAdapter#listenUsingL2capChannel()](../android/bluetooth/BluetoothAdapter.md)), or [android.bluetooth.BluetoothDevice#createL2capChannel(int)](../android/bluetooth/BluetoothDevice.md))*
 
 Health Profile 
 
@@ -297,11 +297,11 @@ abstract fun getConnectedDevices(): MutableList<BluetoothDevice!>!
 
 Get connected devices for this specific profile.
 
-Return the set of devices which are in state [STATE_CONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTED:kotlin.Int)
+Return the set of devices which are in state [STATE_CONNECTED](../android/bluetooth/BluetoothProfile.md)
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!>! | List of devices. The list will be empty on error. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!>! | List of devices. The list will be empty on error. |
 
 ### getConnectionState
 
@@ -315,11 +315,11 @@ Get the current connection state of the profile
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!:Remote bluetooth device. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!:Remote bluetooth device. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | State of the profile connection. One of [STATE_CONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTED:kotlin.Int), [STATE_CONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTING:kotlin.Int), [STATE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTED:kotlin.Int), [STATE_DISCONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTING:kotlin.Int) Value is [android.bluetooth.BluetoothProfile#STATE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTED:kotlin.Int), [android.bluetooth.BluetoothProfile#STATE_CONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTING:kotlin.Int), [android.bluetooth.BluetoothProfile#STATE_CONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTED:kotlin.Int), or [android.bluetooth.BluetoothProfile#STATE_DISCONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTING:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | State of the profile connection. One of [STATE_CONNECTED](../android/bluetooth/BluetoothProfile.md), [STATE_CONNECTING](../android/bluetooth/BluetoothProfile.md), [STATE_DISCONNECTED](../android/bluetooth/BluetoothProfile.md), [STATE_DISCONNECTING](../android/bluetooth/BluetoothProfile.md) Value is [android.bluetooth.BluetoothProfile#STATE_DISCONNECTED](../android/bluetooth/BluetoothProfile.md), [android.bluetooth.BluetoothProfile#STATE_CONNECTING](../android/bluetooth/BluetoothProfile.md), [android.bluetooth.BluetoothProfile#STATE_CONNECTED](../android/bluetooth/BluetoothProfile.md), or [android.bluetooth.BluetoothProfile#STATE_DISCONNECTING](../android/bluetooth/BluetoothProfile.md) |
 
 ### getDevicesMatchingConnectionStates
 
@@ -335,8 +335,8 @@ If none of the devices match any of the given states, an empty list will be retu
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `states` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:Array of states. States can be one of [STATE_CONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTED:kotlin.Int), [STATE_CONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_CONNECTING:kotlin.Int), [STATE_DISCONNECTED](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTED:kotlin.Int), [STATE_DISCONNECTING](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#STATE_DISCONNECTING:kotlin.Int), |
+| `states` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:Array of states. States can be one of [STATE_CONNECTED](../android/bluetooth/BluetoothProfile.md), [STATE_CONNECTING](../android/bluetooth/BluetoothProfile.md), [STATE_DISCONNECTED](../android/bluetooth/BluetoothProfile.md), [STATE_DISCONNECTING](../android/bluetooth/BluetoothProfile.md), |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!>! | List of devices. The list will be empty on error. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!>! | List of devices. The list will be empty on error. |

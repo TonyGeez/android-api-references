@@ -2,12 +2,12 @@
 
 ## Interfaces
 
-| [ContentClassificationCallback](https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationCallback) | Callback for receiving content classification results. |
+| [ContentClassificationCallback](../android/app/contentsafety/ContentClassificationCallback.md) | Callback for receiving content classification results. |
 | --- | --- |
 
 ## Classes
 
-| [ClassifiableContent](https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent) | A class representing content to be classified. |
+| [ClassifiableContent](../android/app/contentsafety/ClassifiableContent.md) | A class representing content to be classified. |
 | --- | --- |
-| [ContentClassificationResult](https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult) | A result reported by a Content Safety app in response to a content classification request. |
-| [ContentSafetyManager](https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager) | The ContentSafetyManager provides access to content safety features. |
+| [ContentClassificationResult](../android/app/contentsafety/ContentClassificationResult.md) | A result reported by a Content Safety app in response to a content classification request. |
+| [ContentSafetyManager](../android/app/contentsafety/ContentSafetyManager.md) | The ContentSafetyManager provides access to content safety features. |

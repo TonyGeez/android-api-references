@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SpannedString
 
-Kotlin | [Java](https://developer.android.com/reference/android/text/SpannedString "View this page in Java")
+Kotlin | [Java](../android/text/SpannedString.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class SpannedString : CharSequence, GetChars, Spanned
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.SpannedString](https://developer.android.com/reference/kotlin/android/text/SpannedString#) |
+| ↳ | [android.text.SpannedString](../android/text/SpannedString.md) |
 
 This is the class for text whose content and markup are immutable. For mutable markup, see `https://developer.android.com/reference/kotlin/android/text/SpannableString`; for mutable text, see `https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder`.
 
@@ -41,7 +41,7 @@ This is the class for text whose content and markup are immutable. For mutable m
 | --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/text/SpannedString#subSequence(kotlin.Int,%20kotlin.Int)(startIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `CharSequence` that is a subsequence of this sequence. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/SpannedString#toString()()` Returns a string representation of the object. |
-| static [SpannedString](https://developer.android.com/reference/kotlin/android/text/SpannedString#)! | `https://developer.android.com/reference/kotlin/android/text/SpannedString#valueOf(kotlin.CharSequence)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
+| static [SpannedString](../android/text/SpannedString.md)! | `https://developer.android.com/reference/kotlin/android/text/SpannedString#valueOf(kotlin.CharSequence)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
 | --- | --- |
 
 | Properties ||

@@ -11,24 +11,24 @@ open class RejectedExecutionException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.concurrent.RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException#) |
+| | | | ↳ | [java.util.concurrent.RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md) |
 
-| Known Direct Subclasses [InlineExecutionProhibitedException](https://developer.android.com/reference/kotlin/android/net/http/InlineExecutionProhibitedException.html#) |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InlineExecutionProhibitedException](https://developer.android.com/reference/kotlin/android/net/http/InlineExecutionProhibitedException.html#) | Thrown when an executor runs a submitted runnable inline in [java.util.concurrent.Executor#execute(Runnable)](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor#execute(java.lang.Runnable)) and [android.net.http.UrlRequest.Builder#setDirectExecutorAllowed](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder.html#setDirectExecutorAllowed(kotlin.Boolean)) was not called. | |
+| Known Direct Subclasses [InlineExecutionProhibitedException](../android/net/http/InlineExecutionProhibitedException.md) |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InlineExecutionProhibitedException](../android/net/http/InlineExecutionProhibitedException.md) | Thrown when an executor runs a submitted runnable inline in [java.util.concurrent.Executor#execute(Runnable)](../java/util/concurrent/Executor.md)) and [android.net.http.UrlRequest.Builder#setDirectExecutorAllowed](../android/net/http/UrlRequest.Builder.md)) was not called. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Exception thrown by an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) when a task cannot be accepted for execution.
+Exception thrown by an [Executor](../java/util/concurrent/Executor.md) when a task cannot be accepted for execution.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException#RejectedExecutionException())`()` Constructs a `RejectedExecutionException` with no detail message. |
-| [RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException#RejectedExecutionException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a `RejectedExecutionException` with the specified detail message. |
-| [RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException#RejectedExecutionException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a `RejectedExecutionException` with the specified detail message and cause. |
-| [RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException#RejectedExecutionException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a `RejectedExecutionException` with the specified cause. |
+| [RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md))`()` Constructs a `RejectedExecutionException` with no detail message. |
+| [RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a `RejectedExecutionException` with the specified detail message. |
+| [RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a `RejectedExecutionException` with the specified detail message and cause. |
+| [RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a `RejectedExecutionException` with the specified cause. |
 
 ## Public constructors
 
@@ -40,7 +40,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 RejectedExecutionException()
 ```
 
-Constructs a `RejectedExecutionException` with no detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable)). 
+Constructs a `RejectedExecutionException` with no detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](../java/lang/Throwable.md)). 
 
 ### RejectedExecutionException
 
@@ -50,7 +50,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 RejectedExecutionException(message: String!)
 ```
 
-Constructs a `RejectedExecutionException` with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable)).
+Constructs a `RejectedExecutionException` with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to [initCause](../java/lang/Throwable.md)).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ Constructs a `RejectedExecutionException` with the specified detail message and 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()) method) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md)) method) |
 
 ### RejectedExecutionException
 
@@ -85,4 +85,4 @@ Constructs a `RejectedExecutionException` with the specified cause. The detail m
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()) method) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md)) method) |

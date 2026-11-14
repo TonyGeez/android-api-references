@@ -8,9 +8,9 @@ class PropertyPermission : BasicPermission
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.security.Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#) |||
-| | ↳ | [java.security.BasicPermission](https://developer.android.com/reference/kotlin/java/security/BasicPermission.html#) ||
-| | | ↳ | [java.util.PropertyPermission](https://developer.android.com/reference/kotlin/java/util/PropertyPermission#) |
+| ↳ | [java.security.Permission](../java/security/Permission.md) |||
+| | ↳ | [java.security.BasicPermission](../java/security/BasicPermission.md) ||
+| | | ↳ | [java.util.PropertyPermission](../java/util/PropertyPermission.md) |
 | --- | --- | --- | --- |
 
 Legacy security code; do not use.

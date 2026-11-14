@@ -9,9 +9,9 @@ class DistanceRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
-| | | ↳ | [android.health.connect.datatypes.DistanceRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.DistanceRecord](../android/health/connect/datatypes/DistanceRecord.md) |
 | --- | --- | --- | --- |
 
 Captures distance travelled by the user since the last reading. The total distance over an interval can be calculated by adding together all the values during the interval. The start time of each record should represent the start of the interval in which the distance was covered.
@@ -31,7 +31,7 @@ If break downs are preferred in scenario of a long workout, consider writing mul
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord#getDistance()()` <br /> |
+| [Length](../android/health/connect/datatypes/units/Length.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord#getDistance()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord#hashCode()()` <br /> |
 | --- | --- |
 
@@ -42,7 +42,7 @@ If break downs are preferred in scenario of a long workout, consider writing mul
 
 | Properties ||
 |---|---|
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Length](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Length)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord#DISTANCE_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total distance using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Length](../android/health/connect/datatypes/units/Length.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DistanceRecord#DISTANCE_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total distance using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 
 ## Public methods
 

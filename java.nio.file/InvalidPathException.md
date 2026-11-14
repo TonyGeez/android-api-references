@@ -11,31 +11,31 @@ open class InvalidPathException : IllegalArgumentException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) ||
-| | | | | ↳ | [java.nio.file.InvalidPathException](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) ||
+| | | | | ↳ | [java.nio.file.InvalidPathException](../java/nio/file/InvalidPathException.md) |
 
-Unchecked exception thrown when path string cannot be converted into a [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) because the path string contains invalid characters, or the path string is invalid for other file system specific reasons.
+Unchecked exception thrown when path string cannot be converted into a [Path](../java/nio/file/Path.md) because the path string contains invalid characters, or the path string is invalid for other file system specific reasons.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidPathException](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#InvalidPathException(kotlin.String,%20kotlin.String))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance from the given input string and reason. |
-| [InvalidPathException](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#InvalidPathException(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance from the given input string, reason, and error index. |
+| [InvalidPathException](../java/nio/file/InvalidPathException.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance from the given input string and reason. |
+| [InvalidPathException](../java/nio/file/InvalidPathException.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance from the given input string, reason, and error index. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#getIndex())`()` Returns an index into the input string of the position at which the error occurred, or`-1`if this position is not known. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInput](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#getInput())`()` Returns the input string. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#getReason())`()` Returns a string explaining why the input string was rejected. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../java/nio/file/InvalidPathException.md))`()` Returns an index into the input string of the position at which the error occurred, or`-1`if this position is not known. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInput](../java/nio/file/InvalidPathException.md))`()` Returns the input string. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](../java/nio/file/InvalidPathException.md))`()` Returns a string explaining why the input string was rejected. |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/java/nio/file/InvalidPathException#message:kotlin.String) Returns a string describing the error. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/nio/file/InvalidPathException.md) Returns a string describing the error. |
 
 ## Public constructors
 

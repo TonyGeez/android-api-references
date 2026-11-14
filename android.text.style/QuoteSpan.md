@@ -8,7 +8,7 @@ open class QuoteSpan : LeadingMarginSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.style.QuoteSpan](https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#) |
+| ↳ | [android.text.style.QuoteSpan](../android/text/style/QuoteSpan.md) |
 
 A span which styles paragraphs by adding a vertical stripe at the beginning of the text (respecting layout direction).
 
@@ -130,7 +130,7 @@ Create a `https://developer.android.com/reference/kotlin/android/text/style/Quot
 
 | Parameters ||
 |---|---|
-| `src` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `src` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 
 ### QuoteSpan
 
@@ -207,8 +207,8 @@ Renders the leading margin. This is called before the margin has been adjusted b
 
 | Parameters ||
 |---|---|
-| `c` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): This value cannot be `null`. |
-| `p` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#): This value cannot be `null`. |
+| `c` | [Canvas](../android/graphics/Canvas.md): This value cannot be `null`. |
+| `p` | [Paint](../android/graphics/Paint.md): This value cannot be `null`. |
 | `x` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the current position of the margin |
 | --- | --- |
 | `dir` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the base direction of the paragraph; if negative, the margin is to the right of the text, otherwise it is to the left. |
@@ -221,7 +221,7 @@ Renders the leading margin. This is called before the margin has been adjusted b
 | --- | --- |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the end of the line |
 | `first` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if this is the first line of its paragraph |
-| `layout` | [Layout](https://developer.android.com/reference/kotlin/android/text/Layout.html#): This value cannot be `null`. |
+| `layout` | [Layout](../android/text/Layout.md): This value cannot be `null`. |
 | --- | --- |
 
 ### getColor
@@ -323,5 +323,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |

@@ -9,9 +9,9 @@ class SpeedRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
-| | | ↳ | [android.health.connect.datatypes.SpeedRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.SpeedRecord](../android/health/connect/datatypes/SpeedRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's speed, e.g. during running or cycling.
@@ -30,7 +30,7 @@ Captures the user's speed, e.g. during running or cycling.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SpeedRecord.SpeedRecordSample](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord.SpeedRecordSample)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#getSamples()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SpeedRecord.SpeedRecordSample](../android/health/connect/datatypes/SpeedRecord.SpeedRecordSample.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#getSamples()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 
@@ -41,9 +41,9 @@ Captures the user's speed, e.g. during running or cycling.
 
 | Properties ||
 |---|---|
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Velocity](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Velocity)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#SPEED_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average speed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Velocity](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Velocity)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#SPEED_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum speed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Velocity](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Velocity)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#SPEED_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum speed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Velocity](../android/health/connect/datatypes/units/Velocity.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#SPEED_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average speed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Velocity](../android/health/connect/datatypes/units/Velocity.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#SPEED_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum speed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Velocity](../android/health/connect/datatypes/units/Velocity.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SpeedRecord#SPEED_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum speed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | --- | --- |
 
 ## Public methods

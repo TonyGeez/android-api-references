@@ -8,7 +8,7 @@ class Scanner : Closeable, MutableIterator<String!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#) |
+| ↳ | [java.util.Scanner](../java/util/Scanner.md) |
 
 A simple text scanner which can parse primitive types and strings using regular expressions.
 
@@ -205,10 +205,10 @@ Whitespace is not significant in the above regular expressions.
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#close()()` Closes this scanner. |
-| [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#delimiter()()` Returns the `Pattern` this `Scanner` is currently using to match delimiters. |
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!\>! | `https://developer.android.com/reference/kotlin/java/util/Scanner#findAll(kotlin.String)(patString: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a stream of match results that match the provided pattern string. |
+| [Pattern](../java/util/regex/Pattern.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#delimiter()()` Returns the `Pattern` this `Scanner` is currently using to match delimiters. |
+| [Stream](../java/util/stream/Stream.md)\< [MatchResult](../java/util/regex/MatchResult.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/Scanner#findAll(kotlin.String)(patString: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a stream of match results that match the provided pattern string. |
 | --- | --- |
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\< [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)!\>! | `https://developer.android.com/reference/kotlin/java/util/Scanner#findAll(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Returns a stream of match results from this scanner. |
+| [Stream](../java/util/stream/Stream.md)\< [MatchResult](../java/util/regex/MatchResult.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/Scanner#findAll(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Returns a stream of match results from this scanner. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#findInLine(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Attempts to find the next occurrence of a pattern constructed from the specified string, ignoring delimiters. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#findInLine(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Attempts to find the next occurrence of the specified pattern ignoring delimiters. |
 | --- | --- |
@@ -238,18 +238,18 @@ Whitespace is not significant in the above regular expressions.
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#hasNextShort()()` Returns true if the next token in this scanner's input can be interpreted as a short value in the default radix using the #nextShort method. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#hasNextShort(kotlin.Int)(radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the next token in this scanner's input can be interpreted as a short value in the specified radix using the #nextShort method. |
-| [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#ioException()()` Returns the `IOException` last thrown by this `Scanner`'s underlying `Readable`. |
+| [IOException](../java/io/IOException.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#ioException()()` Returns the `IOException` last thrown by this `Scanner`'s underlying `Readable`. |
 | --- | --- |
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#locale()()` Returns this scanner's locale. |
-| [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#match()()` Returns the match result of the last scanning operation performed by this scanner. |
+| [Locale](../java/util/Locale.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#locale()()` Returns this scanner's locale. |
+| [MatchResult](../java/util/regex/MatchResult.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#match()()` Returns the match result of the last scanning operation performed by this scanner. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#next()()` Finds and returns the next complete token from this scanner. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#next(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the next token if it matches the pattern constructed from the specified string. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#next(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Returns the next token if it matches the specified pattern. |
-| [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextBigDecimal()()` Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#`. |
+| [BigDecimal](../java/math/BigDecimal.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextBigDecimal()()` Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#`. |
 | --- | --- |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextBigInteger()()` Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigInteger.html#`. |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextBigInteger(kotlin.Int)(radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigInteger.html#`. |
+| [BigInteger](../java/math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextBigInteger()()` Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigInteger.html#`. |
+| [BigInteger](../java/math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextBigInteger(kotlin.Int)(radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigInteger.html#`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextBoolean()()` Scans the next token of the input into a boolean value and returns that value. |
 | --- | --- |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#nextByte()()` Scans the next token of the input as a `byte`. |
@@ -269,18 +269,18 @@ Whitespace is not significant in the above regular expressions.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#radix()()` Returns this scanner's default radix. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#remove()()` The remove operation is not supported by this implementation of `Iterator`. |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#reset()()` Resets this scanner. |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#skip(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Skips input that matches a pattern constructed from the specified string. |
+| [Scanner](../java/util/Scanner.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#reset()()` Resets this scanner. |
+| [Scanner](../java/util/Scanner.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#skip(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Skips input that matches a pattern constructed from the specified string. |
 | --- | --- |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#skip(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Skips input that matches the specified pattern, ignoring delimiters. |
+| [Scanner](../java/util/Scanner.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#skip(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Skips input that matches the specified pattern, ignoring delimiters. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Scanner#toString()()` Returns the string representation of this `Scanner`. |
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Scanner#tokens()()` Returns a stream of delimiter-separated tokens from this scanner. |
+| [Stream](../java/util/stream/Stream.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Scanner#tokens()()` Returns a stream of delimiter-separated tokens from this scanner. |
 | --- | --- |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useDelimiter(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets this scanner's delimiting pattern to a pattern constructed from the specified `String`. |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useDelimiter(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Sets this scanner's delimiting pattern to the specified pattern. |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useLocale(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale!)` Sets this scanner's locale to the specified locale. |
+| [Scanner](../java/util/Scanner.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useDelimiter(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets this scanner's delimiting pattern to a pattern constructed from the specified `String`. |
+| [Scanner](../java/util/Scanner.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useDelimiter(java.util.regex.Pattern)(pattern: https://developer.android.com/reference/kotlin/java/util/regex/Pattern!)` Sets this scanner's delimiting pattern to the specified pattern. |
+| [Scanner](../java/util/Scanner.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useLocale(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale!)` Sets this scanner's locale to the specified locale. |
 | --- | --- |
-| [Scanner](https://developer.android.com/reference/kotlin/java/util/Scanner#)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useRadix(kotlin.Int)(radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets this scanner's default radix to the specified radix. |
+| [Scanner](../java/util/Scanner.md)! | `https://developer.android.com/reference/kotlin/java/util/Scanner#useRadix(kotlin.Int)(radix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets this scanner's default radix to the specified radix. |
 
 ## Public constructors
 
@@ -292,11 +292,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Scanner(source: File!)
 ```
 
-Constructs a new `Scanner` that produces values scanned from the specified file. Bytes from the file are converted into characters using the underlying platform's [default charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()).
+Constructs a new `Scanner` that produces values scanned from the specified file. Bytes from the file are converted into characters using the underlying platform's [default charset](../java/nio/charset/Charset.md)).
 
 | Parameters ||
 |---|---|
-| `source` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: A file to be scanned |
+| `source` | [File](../java/io/File.md)!: A file to be scanned |
 
 | Exceptions ||
 |---|---|
@@ -316,7 +316,7 @@ Constructs a new `Scanner` that produces values scanned from the specified file.
 
 | Parameters ||
 |---|---|
-| `source` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: A file to be scanned |
+| `source` | [File](../java/io/File.md)!: A file to be scanned |
 | `charsetName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The encoding type used to convert bytes from the file into characters to be scanned |
 
 | Exceptions ||
@@ -338,8 +338,8 @@ Constructs a new `Scanner` that produces values scanned from the specified file.
 
 | Parameters ||
 |---|---|
-| `source` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: A file to be scanned |
-| `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!: The charset used to convert bytes from the file into characters to be scanned |
+| `source` | [File](../java/io/File.md)!: A file to be scanned |
+| `charset` | [Charset](../java/nio/charset/Charset.md)!: The charset used to convert bytes from the file into characters to be scanned |
 
 | Exceptions ||
 |---|---|
@@ -353,11 +353,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Scanner(source: InputStream!)
 ```
 
-Constructs a new `Scanner` that produces values scanned from the specified input stream. Bytes from the stream are converted into characters using the underlying platform's [default charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()).
+Constructs a new `Scanner` that produces values scanned from the specified input stream. Bytes from the stream are converted into characters using the underlying platform's [default charset](../java/nio/charset/Charset.md)).
 
 | Parameters ||
 |---|---|
-| `source` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: An input stream to be scanned |
+| `source` | [InputStream](../java/io/InputStream.md)!: An input stream to be scanned |
 
 ### Scanner
 
@@ -373,7 +373,7 @@ Constructs a new `Scanner` that produces values scanned from the specified input
 
 | Parameters ||
 |---|---|
-| `source` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: An input stream to be scanned |
+| `source` | [InputStream](../java/io/InputStream.md)!: An input stream to be scanned |
 | `charsetName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The encoding type used to convert bytes from the stream into characters to be scanned |
 
 | Exceptions ||
@@ -394,8 +394,8 @@ Constructs a new `Scanner` that produces values scanned from the specified input
 
 | Parameters ||
 |---|---|
-| `source` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: an input stream to be scanned |
-| `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!: the charset used to convert bytes from the file into characters to be scanned |
+| `source` | [InputStream](../java/io/InputStream.md)!: an input stream to be scanned |
+| `charset` | [Charset](../java/nio/charset/Charset.md)!: the charset used to convert bytes from the file into characters to be scanned |
 
 ### Scanner
 
@@ -409,7 +409,7 @@ Constructs a new `Scanner` that produces values scanned from the specified sourc
 
 | Parameters ||
 |---|---|
-| `source` | [Readable](https://developer.android.com/reference/kotlin/java/lang/Readable.html#)!: A character source implementing the `https://developer.android.com/reference/kotlin/java/lang/Readable.html#` interface |
+| `source` | [Readable](../java/lang/Readable.md)!: A character source implementing the `https://developer.android.com/reference/kotlin/java/lang/Readable.html#` interface |
 
 ### Scanner
 
@@ -433,11 +433,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Scanner(source: ReadableByteChannel!)
 ```
 
-Constructs a new `Scanner` that produces values scanned from the specified channel. Bytes from the source are converted into characters using the underlying platform's [default charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()).
+Constructs a new `Scanner` that produces values scanned from the specified channel. Bytes from the source are converted into characters using the underlying platform's [default charset](../java/nio/charset/Charset.md)).
 
 | Parameters ||
 |---|---|
-| `source` | [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel.html#)!: A channel to scan |
+| `source` | [ReadableByteChannel](../java/nio/channels/ReadableByteChannel.md)!: A channel to scan |
 
 ### Scanner
 
@@ -453,7 +453,7 @@ Constructs a new `Scanner` that produces values scanned from the specified chann
 
 | Parameters ||
 |---|---|
-| `source` | [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel.html#)!: A channel to scan |
+| `source` | [ReadableByteChannel](../java/nio/channels/ReadableByteChannel.md)!: A channel to scan |
 | `charsetName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The encoding type used to convert bytes from the channel into characters to be scanned |
 
 | Exceptions ||
@@ -474,8 +474,8 @@ Constructs a new `Scanner` that produces values scanned from the specified chann
 
 | Parameters ||
 |---|---|
-| `source` | [ReadableByteChannel](https://developer.android.com/reference/kotlin/java/nio/channels/ReadableByteChannel.html#)!: a channel to scan |
-| `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!: the encoding type used to convert bytes from the channel into characters to be scanned |
+| `source` | [ReadableByteChannel](../java/nio/channels/ReadableByteChannel.md)!: a channel to scan |
+| `charset` | [Charset](../java/nio/charset/Charset.md)!: the encoding type used to convert bytes from the channel into characters to be scanned |
 
 ### Scanner
 
@@ -485,11 +485,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 Scanner(source: Path!)
 ```
 
-Constructs a new `Scanner` that produces values scanned from the specified file. Bytes from the file are converted into characters using the underlying platform's [default charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()).
+Constructs a new `Scanner` that produces values scanned from the specified file. Bytes from the file are converted into characters using the underlying platform's [default charset](../java/nio/charset/Charset.md)).
 
 | Parameters ||
 |---|---|
-| `source` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!: the path to the file to be scanned |
+| `source` | [Path](../java/nio/file/Path.md)!: the path to the file to be scanned |
 
 | Exceptions ||
 |---|---|
@@ -509,7 +509,7 @@ Constructs a new `Scanner` that produces values scanned from the specified file.
 
 | Parameters ||
 |---|---|
-| `source` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!: the path to the file to be scanned |
+| `source` | [Path](../java/nio/file/Path.md)!: the path to the file to be scanned |
 | `charsetName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The encoding type used to convert bytes from the file into characters to be scanned |
 
 | Exceptions ||
@@ -531,8 +531,8 @@ Constructs a new `Scanner` that produces values scanned from the specified file.
 
 | Parameters ||
 |---|---|
-| `source` | [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path.html#)!: the path to the file to be scanned |
-| `charset` | [Charset](https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)!: the charset used to convert bytes from the file into characters to be scanned |
+| `source` | [Path](../java/nio/file/Path.md)!: the path to the file to be scanned |
+| `charset` | [Charset](../java/nio/charset/Charset.md)!: the charset used to convert bytes from the file into characters to be scanned |
 
 | Exceptions ||
 |---|---|
@@ -550,7 +550,7 @@ fun close(): Unit
 
 Closes this scanner.
 
-If this scanner has not yet been closed then if its underlying [readable](https://developer.android.com/reference/kotlin/java/lang/Readable.html#) also implements the `https://developer.android.com/reference/kotlin/java/io/Closeable.html#` interface then the readable's `close` method will be invoked. If this scanner is already closed then invoking this method will have no effect.
+If this scanner has not yet been closed then if its underlying [readable](../java/lang/Readable.md) also implements the `https://developer.android.com/reference/kotlin/java/io/Closeable.html#` interface then the readable's `close` method will be invoked. If this scanner is already closed then invoking this method will have no effect.
 
 Attempting to perform search operations after a scanner has been closed will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
 
@@ -631,7 +631,7 @@ As with the #findWithinHorizon methods, this method might block waiting for addi
 
 | Parameters ||
 |---|---|
-| `pattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)!: the pattern to be matched |
+| `pattern` | [Pattern](../java/util/regex/Pattern.md)!: the pattern to be matched |
 
 | Return ||
 |---|---|
@@ -680,7 +680,7 @@ Since this method continues to search through the input looking for the specifie
 
 | Parameters ||
 |---|---|
-| `pattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)!: the pattern to scan for |
+| `pattern` | [Pattern](../java/util/regex/Pattern.md)!: the pattern to scan for |
 
 | Return ||
 |---|---|
@@ -742,7 +742,7 @@ If horizon is negative, then an IllegalArgumentException is thrown.
 
 | Parameters ||
 |---|---|
-| `pattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)!: the pattern to scan for |
+| `pattern` | [Pattern](../java/util/regex/Pattern.md)!: the pattern to scan for |
 | `horizon` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the search horizon |
 
 | Return ||
@@ -812,7 +812,7 @@ Returns true if the next complete token matches the specified pattern. A complet
 
 | Parameters ||
 |---|---|
-| `pattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)!: the pattern to scan for |
+| `pattern` | [Pattern](../java/util/regex/Pattern.md)!: the pattern to scan for |
 
 | Return ||
 |---|---|
@@ -1152,7 +1152,7 @@ fun locale(): Locale!
 
 Returns this scanner's locale.
 
-A scanner's locale affects many elements of its default primitive matching regular expressions; see [localized numbers](https://developer.android.com/reference/kotlin/java/util/Scanner#localized-numbers) above.
+A scanner's locale affects many elements of its default primitive matching regular expressions; see [localized numbers](../java/util/Scanner.md) above.
 
 | Return ||
 |---|---|
@@ -1168,7 +1168,7 @@ fun match(): MatchResult!
 
 Returns the match result of the last scanning operation performed by this scanner. This method throws `IllegalStateException` if no match has been performed, or if the last match was not successful.
 
-The various `next` methods of `Scanner` make a match result available if they complete without throwing an exception. For instance, after an invocation of the #nextInt method that returned an int, this method returns a `MatchResult` for the search of the [*Integer*](https://developer.android.com/reference/kotlin/java/util/Scanner#Integer-regex) regular expression defined above. Similarly the #findInLine, #findWithinHorizon, and #skip methods will make a match available if they succeed.
+The various `next` methods of `Scanner` make a match result available if they complete without throwing an exception. For instance, after an invocation of the #nextInt method that returned an int, this method returns a `MatchResult` for the search of the [*Integer*](../java/util/Scanner.md) regular expression defined above. Similarly the #findInLine, #findWithinHorizon, and #skip methods will make a match available if they succeed.
 
 | Return ||
 |---|---|
@@ -1238,7 +1238,7 @@ Returns the next token if it matches the specified pattern. This method may bloc
 
 | Parameters ||
 |---|---|
-| `pattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)!: the pattern to scan for |
+| `pattern` | [Pattern](../java/util/regex/Pattern.md)!: the pattern to scan for |
 
 | Return ||
 |---|---|
@@ -1259,7 +1259,7 @@ fun nextBigDecimal(): BigDecimal!
 
 Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#`.
 
-If the next token matches the [*Decimal*](https://developer.android.com/reference/kotlin/java/util/Scanner#Decimal-regex) regular expression defined above then the token is converted into a `BigDecimal` value as if by removing all group separators, mapping non-ASCII digits into ASCII digits via the java.lang.Character#digit, and passing the resulting string to the `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#BigDecimal(kotlin.String)` constructor.
+If the next token matches the [*Decimal*](../java/util/Scanner.md) regular expression defined above then the token is converted into a `BigDecimal` value as if by removing all group separators, mapping non-ASCII digits into ASCII digits via the java.lang.Character#digit, and passing the resulting string to the `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#BigDecimal(kotlin.String)` constructor.
 
 | Return ||
 |---|---|
@@ -1305,7 +1305,7 @@ fun nextBigInteger(radix: Int): BigInteger!
 
 Scans the next token of the input as a `https://developer.android.com/reference/kotlin/java/math/BigInteger.html#`.
 
-If the next token matches the [*Integer*](https://developer.android.com/reference/kotlin/java/util/Scanner#Integer-regex) regular expression defined above then the token is converted into a `BigInteger` value as if by removing all group separators, mapping non-ASCII digits into ASCII digits via the java.lang.Character#digit, and passing the resulting string to the `https://developer.android.com/reference/kotlin/java/math/BigInteger.html#BigInteger(kotlin.String)` constructor with the specified radix.
+If the next token matches the [*Integer*](../java/util/Scanner.md) regular expression defined above then the token is converted into a `BigInteger` value as if by removing all group separators, mapping non-ASCII digits into ASCII digits via the java.lang.Character#digit, and passing the resulting string to the `https://developer.android.com/reference/kotlin/java/math/BigInteger.html#BigInteger(kotlin.String)` constructor with the specified radix.
 
 If the radix is less than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int` or greater than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int`, then an `IllegalArgumentException` is thrown.
 
@@ -1379,7 +1379,7 @@ fun nextByte(radix: Int): Byte
 
 Scans the next token of the input as a `byte`. This method will throw `InputMismatchException` if the next token cannot be translated into a valid byte value as described below. If the translation is successful, the scanner advances past the input that matched.
 
-If the next token matches the [*Integer*](https://developer.android.com/reference/kotlin/java/util/Scanner#Integer-regex) regular expression defined above then the token is converted into a `byte` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Byte.html#parseByte(kotlin.String,%20kotlin.Int)` with the specified radix.
+If the next token matches the [*Integer*](../java/util/Scanner.md) regular expression defined above then the token is converted into a `byte` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Byte.html#parseByte(kotlin.String,%20kotlin.Int)` with the specified radix.
 
 If the radix is less than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int` or greater than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int`, then an `IllegalArgumentException` is thrown.
 
@@ -1409,7 +1409,7 @@ fun nextDouble(): Double
 
 Scans the next token of the input as a `double`. This method will throw `InputMismatchException` if the next token cannot be translated into a valid double value. If the translation is successful, the scanner advances past the input that matched.
 
-If the next token matches the [*Float*](https://developer.android.com/reference/kotlin/java/util/Scanner#Float-regex) regular expression defined above then the token is converted into a `double` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Double.html#parseDouble(kotlin.String)`. If the token matches the localized NaN or infinity strings, then either "Nan" or "Infinity" is passed to `https://developer.android.com/reference/kotlin/java/lang/Double.html#parseDouble(kotlin.String)` as appropriate.
+If the next token matches the [*Float*](../java/util/Scanner.md) regular expression defined above then the token is converted into a `double` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Double.html#parseDouble(kotlin.String)`. If the token matches the localized NaN or infinity strings, then either "Nan" or "Infinity" is passed to `https://developer.android.com/reference/kotlin/java/lang/Double.html#parseDouble(kotlin.String)` as appropriate.
 
 | Return ||
 |---|---|
@@ -1432,7 +1432,7 @@ fun nextFloat(): Float
 
 Scans the next token of the input as a `float`. This method will throw `InputMismatchException` if the next token cannot be translated into a valid float value as described below. If the translation is successful, the scanner advances past the input that matched.
 
-If the next token matches the [*Float*](https://developer.android.com/reference/kotlin/java/util/Scanner#Float-regex) regular expression defined above then the token is converted into a `float` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Float.html#parseFloat(kotlin.String)`. If the token matches the localized NaN or infinity strings, then either "Nan" or "Infinity" is passed to `https://developer.android.com/reference/kotlin/java/lang/Float.html#parseFloat(kotlin.String)` as appropriate.
+If the next token matches the [*Float*](../java/util/Scanner.md) regular expression defined above then the token is converted into a `float` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Float.html#parseFloat(kotlin.String)`. If the token matches the localized NaN or infinity strings, then either "Nan" or "Infinity" is passed to `https://developer.android.com/reference/kotlin/java/lang/Float.html#parseFloat(kotlin.String)` as appropriate.
 
 | Return ||
 |---|---|
@@ -1478,7 +1478,7 @@ fun nextInt(radix: Int): Int
 
 Scans the next token of the input as an `int`. This method will throw `InputMismatchException` if the next token cannot be translated into a valid int value as described below. If the translation is successful, the scanner advances past the input that matched.
 
-If the next token matches the [*Integer*](https://developer.android.com/reference/kotlin/java/util/Scanner#Integer-regex) regular expression defined above then the token is converted into an `int` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Integer.html#parseInt(kotlin.String,%20kotlin.Int)` with the specified radix.
+If the next token matches the [*Integer*](../java/util/Scanner.md) regular expression defined above then the token is converted into an `int` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Integer.html#parseInt(kotlin.String,%20kotlin.Int)` with the specified radix.
 
 If the radix is less than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int` or greater than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int`, then an `IllegalArgumentException` is thrown.
 
@@ -1552,7 +1552,7 @@ fun nextLong(radix: Int): Long
 
 Scans the next token of the input as a `long`. This method will throw `InputMismatchException` if the next token cannot be translated into a valid long value as described below. If the translation is successful, the scanner advances past the input that matched.
 
-If the next token matches the [*Integer*](https://developer.android.com/reference/kotlin/java/util/Scanner#Integer-regex) regular expression defined above then the token is converted into a `long` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Long.html#parseLong(kotlin.String,%20kotlin.Int)` with the specified radix.
+If the next token matches the [*Integer*](../java/util/Scanner.md) regular expression defined above then the token is converted into a `long` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Long.html#parseLong(kotlin.String,%20kotlin.Int)` with the specified radix.
 
 If the radix is less than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int` or greater than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int`, then an `IllegalArgumentException` is thrown.
 
@@ -1605,7 +1605,7 @@ fun nextShort(radix: Int): Short
 
 Scans the next token of the input as a `short`. This method will throw `InputMismatchException` if the next token cannot be translated into a valid short value as described below. If the translation is successful, the scanner advances past the input that matched.
 
-If the next token matches the [*Integer*](https://developer.android.com/reference/kotlin/java/util/Scanner#Integer-regex) regular expression defined above then the token is converted into a `short` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Short.html#parseShort(kotlin.String,%20kotlin.Int)` with the specified radix.
+If the next token matches the [*Integer*](../java/util/Scanner.md) regular expression defined above then the token is converted into a `short` value as if by removing all locale specific prefixes, group separators, and locale specific suffixes, then mapping non-ASCII digits into ASCII digits via java.lang.Character#digit, prepending a negative sign (-) if the locale specific negative prefixes and suffixes were present, and passing the resulting string to `https://developer.android.com/reference/kotlin/java/lang/Short.html#parseShort(kotlin.String,%20kotlin.Int)` with the specified radix.
 
 If the radix is less than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int` or greater than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int`, then an `IllegalArgumentException` is thrown.
 
@@ -1635,7 +1635,7 @@ fun radix(): Int
 
 Returns this scanner's default radix.
 
-A scanner's radix affects elements of its default number matching regular expressions; see [localized numbers](https://developer.android.com/reference/kotlin/java/util/Scanner#localized-numbers) above.
+A scanner's radix affects elements of its default number matching regular expressions; see [localized numbers](../java/util/Scanner.md) above.
 
 | Return ||
 |---|---|
@@ -1727,7 +1727,7 @@ Note that it is possible to skip something without risking a `NoSuchElementExcep
 
 | Parameters ||
 |---|---|
-| `pattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)!: a string specifying the pattern to skip over |
+| `pattern` | [Pattern](../java/util/regex/Pattern.md)!: a string specifying the pattern to skip over |
 
 | Return ||
 |---|---|
@@ -1792,7 +1792,7 @@ Sets this scanner's delimiting pattern to a pattern constructed from the specifi
 
 An invocation of this method of the form `useDelimiter(pattern)` behaves in exactly the same way as the invocation `useDelimiter(Pattern.compile(pattern))`.
 
-Invoking the `https://developer.android.com/reference/kotlin/java/util/Scanner#reset()` method will set the scanner's delimiter to the [default](https://developer.android.com/reference/kotlin/java/util/Scanner#default-delimiter).
+Invoking the `https://developer.android.com/reference/kotlin/java/util/Scanner#reset()` method will set the scanner's delimiter to the [default](../java/util/Scanner.md).
 
 | Parameters ||
 |---|---|
@@ -1814,7 +1814,7 @@ Sets this scanner's delimiting pattern to the specified pattern.
 
 | Parameters ||
 |---|---|
-| `pattern` | [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern)!: A delimiting pattern |
+| `pattern` | [Pattern](../java/util/regex/Pattern.md)!: A delimiting pattern |
 
 | Return ||
 |---|---|
@@ -1830,13 +1830,13 @@ fun useLocale(locale: Locale!): Scanner!
 
 Sets this scanner's locale to the specified locale.
 
-A scanner's locale affects many elements of its default primitive matching regular expressions; see [localized numbers](https://developer.android.com/reference/kotlin/java/util/Scanner#localized-numbers) above.
+A scanner's locale affects many elements of its default primitive matching regular expressions; see [localized numbers](../java/util/Scanner.md) above.
 
-Invoking the `https://developer.android.com/reference/kotlin/java/util/Scanner#reset()` method will set the scanner's locale to the [initial locale](https://developer.android.com/reference/kotlin/java/util/Scanner#initial-locale).
+Invoking the `https://developer.android.com/reference/kotlin/java/util/Scanner#reset()` method will set the scanner's locale to the [initial locale](../java/util/Scanner.md).
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale)!: A string specifying the locale to use |
+| `locale` | [Locale](../java/util/Locale.md)!: A string specifying the locale to use |
 
 | Return ||
 |---|---|
@@ -1852,7 +1852,7 @@ fun useRadix(radix: Int): Scanner!
 
 Sets this scanner's default radix to the specified radix.
 
-A scanner's radix affects elements of its default number matching regular expressions; see [localized numbers](https://developer.android.com/reference/kotlin/java/util/Scanner#localized-numbers) above.
+A scanner's radix affects elements of its default number matching regular expressions; see [localized numbers](../java/util/Scanner.md) above.
 
 If the radix is less than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MIN_RADIX:kotlin.Int` or greater than `https://developer.android.com/reference/kotlin/java/lang/Character.html#MAX_RADIX:kotlin.Int`, then an `IllegalArgumentException` is thrown.
 

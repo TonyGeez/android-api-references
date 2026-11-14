@@ -6,9 +6,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface XMLFilter : XMLReader
 ```
 
-| [org.xml.sax.XMLFilter](https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter#) |
+| [org.xml.sax.XMLFilter](../org/xml/sax/XMLFilter.md) |
 
-| Known Direct Subclasses [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) |---|---| | [XMLFilterImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLFilterImpl) | Base class for deriving an XML filter. | |
+| Known Direct Subclasses [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md) |---|---| | [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md) | Base class for deriving an XML filter. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Interface for an XML filter. *This module, both source code and documentation, is in the Public Domain, and comes with **NO WARRANTY**.* See <http://www.saxproject.org> for further information.
@@ -21,7 +21,7 @@ The XMLFilterImpl helper class provides a convenient base for creating SAX2 filt
 
 | Public methods ||
 |---|---|
-| abstract [XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader)! | `https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter#getParent()()` Get the parent reader. |
+| abstract [XMLReader](../org/xml/sax/XMLReader.md)! | `https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter#getParent()()` Get the parent reader. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/XMLFilter#setParent(org.xml.sax.XMLReader)(parent: https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader!)` Set the parent reader. |
 
 | Inherited functions ||
@@ -60,4 +60,4 @@ This method allows the application to link the filter to a parent reader (which 
 
 | Parameters ||
 |---|---|
-| `parent` | [XMLReader](https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader)!: The parent reader. |
+| `parent` | [XMLReader](../org/xml/sax/XMLReader.md)!: The parent reader. |

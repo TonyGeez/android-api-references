@@ -11,10 +11,10 @@ open class NullPointerException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException#) |
+| | | | ↳ | [java.lang.NullPointerException](../java/lang/NullPointerException.md) |
 
 Thrown when an application attempts to use`null`in a case where an object is required. These include:
 
@@ -26,14 +26,14 @@ Thrown when an application attempts to use`null`in a case where an object is req
 
 <br />
 
-Applications should throw instances of this class to indicate other illegal uses of the`null`object.`NullPointerException`objects may be constructed by the virtual machine as if [stack trace was not writable](https://developer.android.com/reference/kotlin/java/lang/Throwable#Throwable(kotlin.String,%20kotlin.Throwable,%20kotlin.Boolean,%20kotlin.Boolean)).
+Applications should throw instances of this class to indicate other illegal uses of the`null`object.`NullPointerException`objects may be constructed by the virtual machine as if [stack trace was not writable](../java/lang/Throwable.md)).
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException#NullPointerException())`()` Constructs a`NullPointerException`with no detail message. |
-| [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException#NullPointerException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`NullPointerException`with the specified detail message. |
+| [NullPointerException](../java/lang/NullPointerException.md))`()` Constructs a`NullPointerException`with no detail message. |
+| [NullPointerException](../java/lang/NullPointerException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`NullPointerException`with the specified detail message. |
 
 ## Public constructors
 

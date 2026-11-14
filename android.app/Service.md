@@ -8,27 +8,27 @@ abstract class Service : ContextWrapper, ComponentCallbacks2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service#) |
+| ↳ | [android.content.Context](../android/content/Context.md) |||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
+| | | ↳ | [android.app.Service](../android/app/Service.md) |
 | --- | --- | --- | --- |
 
-Known Direct Subclasses [AbstractInputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.html#), [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#), [AlternativeMessageTransportService](https://developer.android.com/reference/kotlin/android/service/messaging/AlternativeMessageTransportService.html#), [AppContentProjectionService](https://developer.android.com/reference/kotlin/android/media/projection/AppContentProjectionService.html#), [AppFunctionService](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService), [AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#), [CallRedirectionService](https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService.html#), [CallScreeningService](https://developer.android.com/reference/kotlin/android/telecom/CallScreeningService.html#), [CameraPrewarmService](https://developer.android.com/reference/kotlin/android/service/media/CameraPrewarmService.html#), [CarrierMessagingClientService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingClientService.html#), [CarrierMessagingService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.html#), [CarrierService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#), and 43 others. [AbstractInputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.html#) AbstractInputMethodService provides a abstract base class for input methods.
-[AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#) Accessibility services should only be used to assist users with disabilities in using Android devices and apps.
-[AlternativeMessageTransportService](https://developer.android.com/reference/kotlin/android/service/messaging/AlternativeMessageTransportService.html#) AlternativeMessageTransportService (AMTS) allows the default SMS app to handle the sending of a message over a different transport (e.g. RCS etc.) other than the SMS or MMS.
-[AppContentProjectionService](https://developer.android.com/reference/kotlin/android/media/projection/AppContentProjectionService.html#) Service to be implemented by the application providing the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionAppContent.html#`.
-[AppFunctionService](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService) Extend this class to implement app functions, that can be executed by android.
-[AutofillService](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#) An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
-[CallRedirectionService](https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService.html#) This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
-[CallScreeningService](https://developer.android.com/reference/kotlin/android/telecom/CallScreeningService.html#) This service can be implemented by the default dialer (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) or a third party app to allow or disallow incoming calls before they are shown to a user.
-[CameraPrewarmService](https://developer.android.com/reference/kotlin/android/service/media/CameraPrewarmService.html#) Extend this class to implement a camera prewarm service.
-[CarrierMessagingClientService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingClientService.html#) If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
-[CarrierMessagingService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.html#) A service that receives calls from the system when new SMS and MMS are sent or received.
-[CarrierService](https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#) A service that exposes carrier-specific functionality to the system.
-[ChooserTargetService](https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService.html#) A service that receives calls from the system when the user is asked to choose a target for an intent explicitly by another app.
-[CompanionDeviceService](https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService.html#) A service that receives calls from the system with device events.
-[ConditionProviderService](https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService.html#) A service that provides conditions about boolean state.
-[ConnectionService](https://developer.android.com/reference/kotlin/android/telecom/ConnectionService.html#) An abstract service that should be implemented by any apps which either:
+Known Direct Subclasses [AbstractInputMethodService](../android/inputmethodservice/AbstractInputMethodService.md), [AccessibilityService](../android/accessibilityservice/AccessibilityService.md), [AlternativeMessageTransportService](../android/service/messaging/AlternativeMessageTransportService.md), [AppContentProjectionService](../android/media/projection/AppContentProjectionService.md), [AppFunctionService](../android/app/appfunctions/AppFunctionService.md), [AutofillService](../android/service/autofill/AutofillService.md), [CallRedirectionService](../android/telecom/CallRedirectionService.md), [CallScreeningService](../android/telecom/CallScreeningService.md), [CameraPrewarmService](../android/service/media/CameraPrewarmService.md), [CarrierMessagingClientService](../android/service/carrier/CarrierMessagingClientService.md), [CarrierMessagingService](../android/service/carrier/CarrierMessagingService.md), [CarrierService](../android/service/carrier/CarrierService.md), and 43 others. [AbstractInputMethodService](../android/inputmethodservice/AbstractInputMethodService.md) AbstractInputMethodService provides a abstract base class for input methods.
+[AccessibilityService](../android/accessibilityservice/AccessibilityService.md) Accessibility services should only be used to assist users with disabilities in using Android devices and apps.
+[AlternativeMessageTransportService](../android/service/messaging/AlternativeMessageTransportService.md) AlternativeMessageTransportService (AMTS) allows the default SMS app to handle the sending of a message over a different transport (e.g. RCS etc.) other than the SMS or MMS.
+[AppContentProjectionService](../android/media/projection/AppContentProjectionService.md) Service to be implemented by the application providing the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionAppContent.html#`.
+[AppFunctionService](../android/app/appfunctions/AppFunctionService.md) Extend this class to implement app functions, that can be executed by android.
+[AutofillService](../android/service/autofill/AutofillService.md) An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
+[CallRedirectionService](../android/telecom/CallRedirectionService.md) This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
+[CallScreeningService](../android/telecom/CallScreeningService.md) This service can be implemented by the default dialer (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) or a third party app to allow or disallow incoming calls before they are shown to a user.
+[CameraPrewarmService](../android/service/media/CameraPrewarmService.md) Extend this class to implement a camera prewarm service.
+[CarrierMessagingClientService](../android/service/carrier/CarrierMessagingClientService.md) If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
+[CarrierMessagingService](../android/service/carrier/CarrierMessagingService.md) A service that receives calls from the system when new SMS and MMS are sent or received.
+[CarrierService](../android/service/carrier/CarrierService.md) A service that exposes carrier-specific functionality to the system.
+[ChooserTargetService](../android/service/chooser/ChooserTargetService.md) A service that receives calls from the system when the user is asked to choose a target for an intent explicitly by another app.
+[CompanionDeviceService](../android/companion/CompanionDeviceService.md) A service that receives calls from the system with device events.
+[ConditionProviderService](../android/service/notification/ConditionProviderService.md) A service that provides conditions about boolean state.
+[ConnectionService](../android/telecom/ConnectionService.md) An abstract service that should be implemented by any apps which either:
 
 1. Can make phone calls (VoIP or otherwise) and want those calls to be integrated into the built-in phone app. Referred to as a **system managed** `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService.html#`.
 2. Are a standalone calling app and don't want their calls to be integrated into the built-in phone app. Referred to as a **self managed** `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService.html#`.
@@ -37,46 +37,46 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 
 <br />
 
-[ContentSafetyAppService](https://developer.android.com/reference/kotlin/android/service/contentsafety/ContentSafetyAppService.html#) Base class for a service that the `android.app.role.RoleManager.ROLE_CONTENT_SAFETY` role holder must implement.
-[ControlsProviderService](https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService.html#) Service implementation allowing applications to contribute controls to the System UI.
-[CredentialProviderService](https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService.html#) Service to be extended by credential providers, in order to return user credentials to the framework.
-[DataMigrationToPccService](https://developer.android.com/reference/kotlin/android/app/privatecompute/DataMigrationToPccService) Base class for a service that handles data migration to the Private Compute Core (PCC) storage of an application.
-[DeviceAdminService](https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminService) Base class for a service that device owner/profile owners can optionally have.
-[DreamService](https://developer.android.com/reference/kotlin/android/service/dreams/DreamService.html#) Extend this class to implement a custom dream (available to the user as a "Daydream").
-[EgressReceiverService](https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressReceiverService) Base Service to be implemented by the partner agent proxy process to receive egress queries from a client running inside the Private Compute Core (PCC) sandbox.
-[HostApduService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService.html#) HostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service#` class that can be extended to emulate an NFC card inside an Android service component.
-[HostNfcFService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService.html#) HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service#` class that can be extended to emulate an NFC-F card inside an Android service component.
-[InCallService](https://developer.android.com/reference/kotlin/android/telecom/InCallService.html#) This service is implemented by an app that wishes to provide functionality for managing phone calls.
-[IntentService](https://developer.android.com/reference/kotlin/android/app/IntentService) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service#` component class that handles asynchronous requests (expressed as `https://developer.android.com/reference/kotlin/android/content/Intent.html#`s) on demand.
-[IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService.html#) Base class for services that are started by ODP on a call to `OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)` and run in an [isolated process](https://developer.android.com/guide/topics/manifest/service-element#isolated).
-[JobService](https://developer.android.com/reference/kotlin/android/app/job/JobService) Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler`.
-[MediaBrowserService](https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.html#) Base class for media browser services.
-[MediaRoute2ProviderService](https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService.html#) Base class for media route provider services.
-[MediaSession2Service](https://developer.android.com/reference/kotlin/android/media/MediaSession2Service.html#) This API is not generally intended for third party application developers.
-[MidiDeviceService](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceService.html#) A service that implements a virtual MIDI device.
-[MidiUmpDeviceService](https://developer.android.com/reference/kotlin/android/media/midi/MidiUmpDeviceService.html#) A service that implements a virtual MIDI device for Universal MIDI Packets (UMP).
-[NotificationListenerService](https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#) A service that receives calls from the system when new notifications are posted or removed, or their ranking changed.
-[OffHostApduService](https://developer.android.com/reference/kotlin/android/nfc/cardemulation/OffHostApduService.html#) OffHostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service#` class that can be extended to describe one or more NFC applications that are residing off-host, for example on an embedded secure element or a UICC.
-[PccService](https://developer.android.com/reference/kotlin/android/app/privatecompute/PccService) Abstract base class for a PCC service that receives data from other components.
-[PrintService](https://developer.android.com/reference/kotlin/android/printservice/PrintService.html#) This is the base class for implementing print services.
-[QuickAccessWalletService](https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService.html#) A `QuickAccessWalletService` provides a list of `WalletCard`s shown in the Quick Access Wallet.
-[RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService.html#) This class provides a base class for recognition service implementations.
-[RemoteViewsService](https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService.html#) The service to be connected to for a remote adapter to request RemoteViews.
-[SettingInjectorService](https://developer.android.com/reference/kotlin/android/location/SettingInjectorService.html#) Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app
-[SettingsPreferenceService](https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceService.html#) Base class for a service that exposes its settings preferences to external access.
-[SpellCheckerService](https://developer.android.com/reference/kotlin/android/service/textservice/SpellCheckerService.html#) SpellCheckerService provides an abstract base class for a spell checker.
-[TextToSpeechService](https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService.html#) Abstract base class for TTS engine implementations.
-[TileService](https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#) A TileService provides the user a tile that can be added to Quick Settings.
-[TvAdService](https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService.html#) The TvAdService class represents a TV client-side advertisement service.
-[TvInputService](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.html#) The TvInputService class represents a TV input or source such as HDMI or built-in tuner which provides pass-through video or broadcast TV programs.
-[TvInteractiveAppService](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService.html#) A TV interactive application service is a service that provides runtime environment and runs TV interactive applications.
-[VisualVoicemailService](https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService.html#) This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails.
-[VoiceInteractionService](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService.html#) Top-level service of the current global voice interactor, which is providing support for hotwording, the back-end of a `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor`, etc.
-[VoiceInteractionSessionService](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService.html#) An active voice interaction session, initiated by a `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService.html#`.
-[VpnService](https://developer.android.com/reference/kotlin/android/net/VpnService.html#) VpnService is a base class for applications to extend and build their own VPN solutions.
-[VrListenerService](https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService.html#) A service that is bound from the system while running in virtual reality (VR) mode.
-[WallpaperService](https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.html#) A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it.
-Known Indirect Subclasses [InputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#) [InputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
+[ContentSafetyAppService](../android/service/contentsafety/ContentSafetyAppService.md) Base class for a service that the `android.app.role.RoleManager.ROLE_CONTENT_SAFETY` role holder must implement.
+[ControlsProviderService](../android/service/controls/ControlsProviderService.md) Service implementation allowing applications to contribute controls to the System UI.
+[CredentialProviderService](../android/service/credentials/CredentialProviderService.md) Service to be extended by credential providers, in order to return user credentials to the framework.
+[DataMigrationToPccService](../android/app/privatecompute/DataMigrationToPccService.md) Base class for a service that handles data migration to the Private Compute Core (PCC) storage of an application.
+[DeviceAdminService](../android/app/admin/DeviceAdminService.md) Base class for a service that device owner/profile owners can optionally have.
+[DreamService](../android/service/dreams/DreamService.md) Extend this class to implement a custom dream (available to the user as a "Daydream").
+[EgressReceiverService](../android/app/privatecompute/EgressReceiverService.md) Base Service to be implemented by the partner agent proxy process to receive egress queries from a client running inside the Private Compute Core (PCC) sandbox.
+[HostApduService](../android/nfc/cardemulation/HostApduService.md) HostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service#` class that can be extended to emulate an NFC card inside an Android service component.
+[HostNfcFService](../android/nfc/cardemulation/HostNfcFService.md) HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service#` class that can be extended to emulate an NFC-F card inside an Android service component.
+[InCallService](../android/telecom/InCallService.md) This service is implemented by an app that wishes to provide functionality for managing phone calls.
+[IntentService](../android/app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service#` component class that handles asynchronous requests (expressed as `https://developer.android.com/reference/kotlin/android/content/Intent.html#`s) on demand.
+[IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md) Base class for services that are started by ODP on a call to `OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)` and run in an [isolated process](https://developer.android.com/guide/topics/manifest/service-element#isolated).
+[JobService](../android/app/job/JobService.md) Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler`.
+[MediaBrowserService](../android/service/media/MediaBrowserService.md) Base class for media browser services.
+[MediaRoute2ProviderService](../android/media/MediaRoute2ProviderService.md) Base class for media route provider services.
+[MediaSession2Service](../android/media/MediaSession2Service.md) This API is not generally intended for third party application developers.
+[MidiDeviceService](../android/media/midi/MidiDeviceService.md) A service that implements a virtual MIDI device.
+[MidiUmpDeviceService](../android/media/midi/MidiUmpDeviceService.md) A service that implements a virtual MIDI device for Universal MIDI Packets (UMP).
+[NotificationListenerService](../android/service/notification/NotificationListenerService.md) A service that receives calls from the system when new notifications are posted or removed, or their ranking changed.
+[OffHostApduService](../android/nfc/cardemulation/OffHostApduService.md) OffHostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service#` class that can be extended to describe one or more NFC applications that are residing off-host, for example on an embedded secure element or a UICC.
+[PccService](../android/app/privatecompute/PccService.md) Abstract base class for a PCC service that receives data from other components.
+[PrintService](../android/printservice/PrintService.md) This is the base class for implementing print services.
+[QuickAccessWalletService](../android/service/quickaccesswallet/QuickAccessWalletService.md) A `QuickAccessWalletService` provides a list of `WalletCard`s shown in the Quick Access Wallet.
+[RecognitionService](../android/speech/RecognitionService.md) This class provides a base class for recognition service implementations.
+[RemoteViewsService](../android/widget/RemoteViewsService.md) The service to be connected to for a remote adapter to request RemoteViews.
+[SettingInjectorService](../android/location/SettingInjectorService.md) Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app
+[SettingsPreferenceService](../android/service/settings/preferences/SettingsPreferenceService.md) Base class for a service that exposes its settings preferences to external access.
+[SpellCheckerService](../android/service/textservice/SpellCheckerService.md) SpellCheckerService provides an abstract base class for a spell checker.
+[TextToSpeechService](../android/speech/tts/TextToSpeechService.md) Abstract base class for TTS engine implementations.
+[TileService](../android/service/quicksettings/TileService.md) A TileService provides the user a tile that can be added to Quick Settings.
+[TvAdService](../android/media/tv/ad/TvAdService.md) The TvAdService class represents a TV client-side advertisement service.
+[TvInputService](../android/media/tv/TvInputService.md) The TvInputService class represents a TV input or source such as HDMI or built-in tuner which provides pass-through video or broadcast TV programs.
+[TvInteractiveAppService](../android/media/tv/interactive/TvInteractiveAppService.md) A TV interactive application service is a service that provides runtime environment and runs TV interactive applications.
+[VisualVoicemailService](../android/telephony/VisualVoicemailService.md) This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails.
+[VoiceInteractionService](../android/service/voice/VoiceInteractionService.md) Top-level service of the current global voice interactor, which is providing support for hotwording, the back-end of a `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor`, etc.
+[VoiceInteractionSessionService](../android/service/voice/VoiceInteractionSessionService.md) An active voice interaction session, initiated by a `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService.html#`.
+[VpnService](../android/net/VpnService.md) VpnService is a base class for applications to extend and build their own VPN solutions.
+[VrListenerService](../android/service/vr/VrListenerService.md) A service that is bound from the system while running in virtual reality (VR) mode.
+[WallpaperService](../android/service/wallpaper/WallpaperService.md) A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it.
+Known Indirect Subclasses [InputMethodService](../android/inputmethodservice/InputMethodService.md) [InputMethodService](../android/inputmethodservice/InputMethodService.md) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
 
 A Service is an application component representing either an application's desire to perform a longer-running operation while not interacting with the user or to supply functionality for other applications to use. Each service class must have a corresponding `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService:kotlin.IntArray` declaration in its package's `AndroidManifest.xml`. Services can be started with `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)` and android.content.Context#bindService.
 
@@ -84,12 +84,12 @@ Note that services, like other application objects, run in the main thread of th
 
 Topics covered here:
 
-1. [What is a Service?](https://developer.android.com/reference/kotlin/android/app/Service#WhatIsAService)
-2. [Service Lifecycle](https://developer.android.com/reference/kotlin/android/app/Service#ServiceLifecycle)
-3. [Permissions](https://developer.android.com/reference/kotlin/android/app/Service#Permissions)
-4. [Process Lifecycle](https://developer.android.com/reference/kotlin/android/app/Service#ProcessLifecycle)
-5. [Local Service Sample](https://developer.android.com/reference/kotlin/android/app/Service#LocalServiceSample)
-6. [Remote Messenger Service Sample](https://developer.android.com/reference/kotlin/android/app/Service#RemoteMessengerServiceSample)
+1. [What is a Service?](../android/app/Service.md)
+2. [Service Lifecycle](../android/app/Service.md)
+3. [Permissions](../android/app/Service.md)
+4. [Process Lifecycle](../android/app/Service.md)
+5. [Local Service Sample](../android/app/Service.md)
+6. [Remote Messenger Service Sample](../android/app/Service.md)
 
 > [!NOTE]
 >
@@ -111,7 +111,7 @@ Thus a Service itself is actually very simple, providing two main features:
 
 When a Service component is actually created, for either of these reasons, all that the system actually does is instantiate the component and call its `https://developer.android.com/reference/kotlin/android/app/Service#onCreate()` and any other appropriate callbacks on the main thread. It is up to the Service to implement these with the appropriate behavior, such as creating a secondary thread in which it does its work.
 
-Note that because Service itself is so simple, you can make your interaction with it as simple or complicated as you want: from treating it as a local Java object that you make direct method calls on (as illustrated by [Local Service Sample](https://developer.android.com/reference/kotlin/android/app/Service#LocalServiceSample)), to providing a full remoteable interface using AIDL.
+Note that because Service itself is so simple, you can make your interaction with it as simple or complicated as you want: from treating it as a local Java object that you make direct method calls on (as illustrated by [Local Service Sample](../android/app/Service.md)), to providing a full remoteable interface using AIDL.
 
 ### Service Lifecycle
 
@@ -633,7 +633,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1143,9 +1143,9 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [Application](https://developer.android.com/reference/kotlin/android/app/Application)! | `https://developer.android.com/reference/kotlin/android/app/Service#getApplication()()` Return the application that owns this service. |
+| [Application](../android/app/Application.md)! | `https://developer.android.com/reference/kotlin/android/app/Service#getApplication()()` Return the application that owns this service. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Service#getForegroundServiceType()()` If the service has become a foreground service by calling `https://developer.android.com/reference/kotlin/android/app/Service#startForeground(kotlin.Int,%20android.app.Notification)` or `https://developer.android.com/reference/kotlin/android/app/Service#startForeground(kotlin.Int,%20android.app.Notification,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/app/Service#getForegroundServiceType()` returns the current foreground service type. |
-| abstract [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/app/Service#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| abstract [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/Service#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Service#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)` Called by the system when the device configuration changes while your component is running. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Service#onCreate()()` Called by the system when the service is first created. |
@@ -2444,7 +2444,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2485,9 +2485,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2856,7 +2856,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2878,7 +2878,7 @@ For more information, read [Handling Runtime Changes](https://developer.android.
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#): The new device configuration. This value cannot be `null`. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md): The new device configuration. This value cannot be `null`. |
 
 ### onCreate
 
@@ -2922,7 +2922,7 @@ Called when new clients have connected to the service, after it had previously b
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 ### onStart
 
@@ -2958,7 +2958,7 @@ Note that the system calls this on your service's main thread. A service's main 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent supplied to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, as given. This may be null if the service is being restarted after its process has gone away, and it had previously returned anything except `https://developer.android.com/reference/kotlin/android/app/Service#START_STICKY_COMPATIBILITY:kotlin.Int`. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent supplied to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, as given. This may be null if the service is being restarted after its process has gone away, and it had previously returned anything except `https://developer.android.com/reference/kotlin/android/app/Service#START_STICKY_COMPATIBILITY:kotlin.Int`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional data about this start request. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/Service#START_FLAG_REDELIVERY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/Service#START_FLAG_RETRY:kotlin.Int` |
 | `startId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A unique integer representing this specific request to start. Use with `https://developer.android.com/reference/kotlin/android/app/Service#stopSelfResult(kotlin.Int)`. |
 | --- | --- |
@@ -2983,7 +2983,7 @@ This is called if the service is currently running and the user has removed a ta
 
 | Parameters ||
 |---|---|
-| `rootIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The original root Intent that was used to launch the task that is being removed. |
+| `rootIntent` | [Intent](../android/content/Intent.md)!: The original root Intent that was used to launch the task that is being removed. |
 
 ### onTimeout
 
@@ -3059,7 +3059,7 @@ Called when all clients have disconnected from a particular interface published 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3095,7 +3095,7 @@ Apps built with SDK version `https://developer.android.com/reference/kotlin/andr
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The identifier for this notification as per `https://developer.android.com/reference/kotlin/android/app/NotificationManager#notify(kotlin.Int,%20android.app.Notification)`; must not be 0. |
-| `notification` | [Notification](https://developer.android.com/reference/kotlin/android/app/Notification)!: The Notification to be displayed. |
+| `notification` | [Notification](../android/app/Notification.md)!: The Notification to be displayed. |
 
 | Exceptions ||
 |---|---|
@@ -3138,7 +3138,7 @@ The foregroundServiceType parameter must be a subset flags of what is specified 
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The identifier for this notification as per `https://developer.android.com/reference/kotlin/android/app/NotificationManager#notify(kotlin.Int,%20android.app.Notification)`; must not be 0. |
-| `notification` | [Notification](https://developer.android.com/reference/kotlin/android/app/Notification): The Notification to be displayed. This value cannot be `null`. |
+| `notification` | [Notification](../android/app/Notification.md): The Notification to be displayed. This value cannot be `null`. |
 | `foregroundServiceType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): must be a subset flags of manifest attribute `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` flags; must not be `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_NONE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_MANIFEST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_DATA_SYNC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_PHONE_CALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_LOCATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_CONNECTED_DEVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_CAMERA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_MICROPHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_HEALTH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_REMOTE_MESSAGING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_SYSTEM_EXEMPTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_SHORT_SERVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_SPECIAL_USE:kotlin.Int` |
 | --- | --- |
 
@@ -3285,7 +3285,7 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
-| `writer` | [PrintWriter](https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
+| `writer` | [PrintWriter](../java/io/PrintWriter.md)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 | --- | --- |

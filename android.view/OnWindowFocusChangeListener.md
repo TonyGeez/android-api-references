@@ -4,14 +4,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # OnWindowFocusChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowFocusChangeListener "View this page in Java") 
+Kotlin| [Java](../android/view/ViewTreeObserver.OnWindowFocusChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnWindowFocusChangeListener
 ```
 
-| [android.view.ViewTreeObserver.OnWindowFocusChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowFocusChangeListener#) |
+| [android.view.ViewTreeObserver.OnWindowFocusChangeListener](../android/view/ViewTreeObserver.OnWindowFocusChangeListener.md) |
 
 Interface definition for a callback to be invoked when the view hierarchy's window focus state changes.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the view hierarchy's wind
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWindowFocusChanged](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowFocusChangeListener#onWindowFocusChanged(kotlin.Boolean))`(`hasFocus:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback method to be invoked when the window focus changes in the view tree. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWindowFocusChanged](../android/view/ViewTreeObserver.OnWindowFocusChangeListener.md))`(`hasFocus:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Callback method to be invoked when the window focus changes in the view tree. |
 
 ## Public methods
 

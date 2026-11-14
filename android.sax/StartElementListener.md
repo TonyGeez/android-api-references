@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # StartElementListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/sax/StartElementListener "View this page in Java") 
+Kotlin| [Java](../android/sax/StartElementListener.md) 
 | --- | --- |
 
 ```
 interface StartElementListener
 ```
 
-| [android.sax.StartElementListener](https://developer.android.com/reference/kotlin/android/sax/StartElementListener#) |
+| [android.sax.StartElementListener](../android/sax/StartElementListener.md) |
 
-| Known Direct Subclasses [ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener), [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener) | Listens for the beginning and ending of elements. | | [TextElementListener](https://developer.android.com/reference/kotlin/android/sax/TextElementListener) | Listens for the beginning and ending of text elements. | |
+| Known Direct Subclasses [ElementListener](../android/sax/ElementListener.md), [TextElementListener](../android/sax/TextElementListener.md) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [ElementListener](../android/sax/ElementListener.md) | Listens for the beginning and ending of elements. | | [TextElementListener](../android/sax/TextElementListener.md) | Listens for the beginning and ending of text elements. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Listens for the beginning of elements.
@@ -22,7 +22,7 @@ Listens for the beginning of elements.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/android/sax/StartElementListener#start(org.xml.sax.Attributes))`(`attributes:` ` [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes.html#)!`)` Invoked at the beginning of an element. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/sax/StartElementListener.md))`(`attributes:` ` [Attributes](../org/xml/sax/Attributes.md)!`)` Invoked at the beginning of an element. |
 
 ## Public methods
 
@@ -38,4 +38,4 @@ Invoked at the beginning of an element.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------|
-| `attributes` | [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes.html#)!:from the element |
+| `attributes` | [Attributes](../org/xml/sax/Attributes.md)!:from the element |

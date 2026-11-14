@@ -10,18 +10,18 @@ open class ForkJoinPool : AbstractExecutorService
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.concurrent.AbstractExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService) ||
-| | ↳ | [java.util.concurrent.ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#) |
+| ↳ | [java.util.concurrent.AbstractExecutorService](../java/util/concurrent/AbstractExecutorService.md) ||
+| | ↳ | [java.util.concurrent.ForkJoinPool](../java/util/concurrent/ForkJoinPool.md) |
 
-An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) for running [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) s. A`ForkJoinPool`provides the entry point for submissions from non-`ForkJoinTask`clients, as well as management and monitoring operations.
+An [ExecutorService](../java/util/concurrent/ExecutorService.md) for running [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) s. A`ForkJoinPool`provides the entry point for submissions from non-`ForkJoinTask`clients, as well as management and monitoring operations.
 
-A`ForkJoinPool`differs from other kinds of [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) mainly by virtue of employing*work-stealing* : all threads in the pool attempt to find and execute tasks submitted to the pool and/or created by other active tasks (eventually blocking waiting for work if none exist). This enables efficient processing when most tasks spawn other subtasks (as do most`ForkJoinTask`s), as well as when many small tasks are submitted to the pool from external clients. Especially when setting*asyncMode* to true in constructors,`ForkJoinPool`s may also be appropriate for use with event-style tasks that are never joined. All worker threads are initialized with [Thread.isDaemon](https://developer.android.com/reference/kotlin/java/lang/Thread.html#isDaemon())set`true`.
+A`ForkJoinPool`differs from other kinds of [ExecutorService](../java/util/concurrent/ExecutorService.md) mainly by virtue of employing*work-stealing* : all threads in the pool attempt to find and execute tasks submitted to the pool and/or created by other active tasks (eventually blocking waiting for work if none exist). This enables efficient processing when most tasks spawn other subtasks (as do most`ForkJoinTask`s), as well as when many small tasks are submitted to the pool from external clients. Especially when setting*asyncMode* to true in constructors,`ForkJoinPool`s may also be appropriate for use with event-style tasks that are never joined. All worker threads are initialized with [Thread.isDaemon](../java/lang/Thread.md))set`true`.
 
-A static [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool())is available and appropriate for most applications. The common pool is used by any ForkJoinTask that is not explicitly submitted to a specified pool. Using the common pool normally reduces resource usage (its threads are slowly reclaimed during periods of non-use, and reinstated upon subsequent use).
+A static [commonPool()](../java/util/concurrent/ForkJoinPool.md))is available and appropriate for most applications. The common pool is used by any ForkJoinTask that is not explicitly submitted to a specified pool. Using the common pool normally reduces resource usage (its threads are slowly reclaimed during periods of non-use, and reinstated upon subsequent use).
 
-For applications that require separate or custom pools, a`ForkJoinPool`may be constructed with a given target parallelism level; by default, equal to the number of available processors. The pool attempts to maintain enough active (or available) threads by dynamically adding, suspending, or resuming internal worker threads, even if some tasks are stalled waiting to join others. However, no such adjustments are guaranteed in the face of blocked I/O or other unmanaged synchronization. The nested [ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker) interface enables extension of the kinds of synchronization accommodated. The default policies may be overridden using a constructor with parameters corresponding to those documented in class [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor).
+For applications that require separate or custom pools, a`ForkJoinPool`may be constructed with a given target parallelism level; by default, equal to the number of available processors. The pool attempts to maintain enough active (or available) threads by dynamically adding, suspending, or resuming internal worker threads, even if some tasks are stalled waiting to join others. However, no such adjustments are guaranteed in the face of blocked I/O or other unmanaged synchronization. The nested [ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md) interface enables extension of the kinds of synchronization accommodated. The default policies may be overridden using a constructor with parameters corresponding to those documented in class [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md).
 
-In addition to execution and lifecycle control methods, this class provides status check methods (for example [getStealCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getStealCount())) that are intended to aid in developing, tuning, and monitoring fork/join applications. Also, method [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#toString())returns indications of pool state in a convenient form for informal monitoring.
+In addition to execution and lifecycle control methods, this class provides status check methods (for example [getStealCount](../java/util/concurrent/ForkJoinPool.md))) that are intended to aid in developing, tuning, and monitoring fork/join applications. Also, method [toString](../java/util/concurrent/ForkJoinPool.md))returns indications of pool state in a convenient form for informal monitoring.
 
 As is the case with other ExecutorServices, there are three main task execution methods summarized in the following table. These are designed to be used primarily by clients not already engaged in fork/join computations in the current pool. The main forms of these methods accept instances of`ForkJoinTask`, but overloaded forms also allow mixed execution of plain`Runnable`- or`Callable`- based activities as well. However, tasks that are already executing in a pool should normally instead use the within-computation forms listed in the table unless using async event-style tasks that are not usually joined, in which case there is little difference among choice of methods.
 
@@ -31,90 +31,90 @@ As is the case with other ExecutorServices, there are three main task execution 
 The parameters used to construct the common pool may be controlled by setting the following java.lang.System#getProperty:
 
 - `java.util.concurrent.ForkJoinPool.common.parallelism`- the parallelism level, a non-negative integer
-- `java.util.concurrent.ForkJoinPool.common.threadFactory`- the class name of a [ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory). The [system class loader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#getSystemClassLoader())is used to load this class.
-- `java.util.concurrent.ForkJoinPool.common.exceptionHandler`- the class name of a [UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler.html#). The [system class loader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#getSystemClassLoader())is used to load this class.
+- `java.util.concurrent.ForkJoinPool.common.threadFactory`- the class name of a [ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md). The [system class loader](../java/lang/ClassLoader.md))is used to load this class.
+- `java.util.concurrent.ForkJoinPool.common.exceptionHandler`- the class name of a [UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md). The [system class loader](../java/lang/ClassLoader.md))is used to load this class.
 - `java.util.concurrent.ForkJoinPool.common.maximumSpares`- the maximum number of allowed extra threads to maintain target parallelism (default 256).
 
-If no thread factory is supplied via a system property, then the common pool uses a factory that uses the system class loader as the [thread context class loader](https://developer.android.com/reference/kotlin/java/lang/Thread.html#getContextClassLoader()). In addition, if a [SecurityManager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#) is present, then the common pool uses a factory supplying threads that have no [Permissions](https://developer.android.com/reference/kotlin/java/security/Permissions.html#) enabled, and are not guaranteed to preserve the values of [java.lang.ThreadLocal](https://developer.android.com/reference/kotlin/java/lang/ThreadLocal.html#) variables across tasks. Upon any error in establishing these settings, default parameters are used. It is possible to disable or limit the use of threads in the common pool by setting the parallelism property to zero, and/or using a factory that may return`null`. However doing so may cause unjoined tasks to never be executed.
+If no thread factory is supplied via a system property, then the common pool uses a factory that uses the system class loader as the [thread context class loader](../java/lang/Thread.md)). In addition, if a [SecurityManager](../java/lang/SecurityManager.md) is present, then the common pool uses a factory supplying threads that have no [Permissions](../java/security/Permissions.md) enabled, and are not guaranteed to preserve the values of [java.lang.ThreadLocal](../java/lang/ThreadLocal.md) variables across tasks. Upon any error in establishing these settings, default parameters are used. It is possible to disable or limit the use of threads in the common pool by setting the parallelism property to zero, and/or using a factory that may return`null`. However doing so may cause unjoined tasks to never be executed.
 
 ## Summary
 
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory) Factory for creating new [ForkJoinWorkerThread](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread) s. |
-| abstract | [ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker) Interface for extending managed parallelism for tasks running in [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#) s. |
+| abstract | [ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md) Factory for creating new [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md) s. |
+| abstract | [ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md) Interface for extending managed parallelism for tasks running in [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md) s. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool())`()` Creates a`ForkJoinPool`with parallelism equal to [java.lang.Runtime#availableProcessors](https://developer.android.com/reference/kotlin/java/lang/Runtime.html#availableProcessors()), using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.util.function.Predicate,%20kotlin.Long,%20java.util.concurrent.TimeUnit))). |
-| [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int))`(`parallelism:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`ForkJoinPool`with the indicated parallelism level, using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.util.function.Predicate,%20kotlin.Long,%20java.util.concurrent.TimeUnit))). |
-| [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean))`(`parallelism:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `factory:` ` [ForkJoinPool.ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory)!`, `handler:` ` [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler.html#)!`, `asyncMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a`ForkJoinPool`with the given parameters (using defaults for others -- see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.util.function.Predicate,%20kotlin.Long,%20java.util.concurrent.TimeUnit))). |
-| [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.util.function.Predicate,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`parallelism:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `factory:` ` [ForkJoinPool.ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory)!`, `handler:` ` [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler.html#)!`, `asyncMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `corePoolSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maximumPoolSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minimumRunnable:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `saturate:` ` [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)<in` ` [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#)!>!`, `keepAliveTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Creates a`ForkJoinPool`with the given parameters. |
+| [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md))`()` Creates a`ForkJoinPool`with parallelism equal to [java.lang.Runtime#availableProcessors](../java/lang/Runtime.md)), using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](../java/util/concurrent/ForkJoinPool.md))). |
+| [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md))`(`parallelism:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`ForkJoinPool`with the indicated parallelism level, using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](../java/util/concurrent/ForkJoinPool.md))). |
+| [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md))`(`parallelism:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `factory:` ` [ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md)!`, `handler:` ` [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)!`, `asyncMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a`ForkJoinPool`with the given parameters (using defaults for others -- see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](../java/util/concurrent/ForkJoinPool.md))). |
+| [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md))`(`parallelism:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `factory:` ` [ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md)!`, `handler:` ` [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)!`, `asyncMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `corePoolSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maximumPoolSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minimumRunnable:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `saturate:` ` [Predicate](../java/util/function/Predicate.md)<in` ` [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md)!>!`, `keepAliveTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` Creates a`ForkJoinPool`with the given parameters. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitQuiescence](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#awaitQuiescence(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` If called by a ForkJoinTask operating in this pool, equivalent in effect to [ForkJoinTask.helpQuiesce](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#helpQuiesce()). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitTermination](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#awaitTermination(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` Blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#close())`()` Unless this is the [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()), initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted, and waits until all tasks have completed execution and the executor has terminated. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitQuiescence](../java/util/concurrent/ForkJoinPool.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` If called by a ForkJoinTask operating in this pool, equivalent in effect to [ForkJoinTask.helpQuiesce](../java/util/concurrent/ForkJoinTask.md)). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [awaitTermination](../java/util/concurrent/ForkJoinPool.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` Blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/concurrent/ForkJoinPool.md))`()` Unless this is the [commonPool()](../java/util/concurrent/ForkJoinPool.md)), initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted, and waits until all tasks have completed execution and the executor has terminated. |
 | --- | --- |
-| openstatic [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#)! | [commonPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool())`()` Returns the common pool instance. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#execute(java.lang.Runnable))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#execute(java.util.concurrent.ForkJoinTask))`(`task:` ` [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<*>!`)` Arranges for (asynchronous) execution of the given task. |
+| openstatic [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md)! | [commonPool](../java/util/concurrent/ForkJoinPool.md))`()` Returns the common pool instance. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [Runnable](../java/lang/Runnable.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<*>!`)` Arranges for (asynchronous) execution of the given task. |
 | --- | --- |
-| open [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>! | [externalSubmit](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#externalSubmit(java.util.concurrent.ForkJoinTask))`(`task:` ` [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>!`)` Submits the given task as if submitted from a non-`ForkJoinTask`client. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActiveThreadCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getActiveThreadCount())`()` Returns an estimate of the number of threads that are currently stealing or executing tasks. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAsyncMode](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getAsyncMode())`()` Returns`true`if this pool uses local first-in-first-out scheduling mode for forked tasks that are never joined. |
+| open [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | [externalSubmit](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>!`)` Submits the given task as if submitted from a non-`ForkJoinTask`client. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActiveThreadCount](../java/util/concurrent/ForkJoinPool.md))`()` Returns an estimate of the number of threads that are currently stealing or executing tasks. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAsyncMode](../java/util/concurrent/ForkJoinPool.md))`()` Returns`true`if this pool uses local first-in-first-out scheduling mode for forked tasks that are never joined. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCommonPoolParallelism](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getCommonPoolParallelism())`()` Returns the targeted parallelism level of the common pool. |
-| open [ForkJoinPool.ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory)! | [getFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getFactory())`()` Returns the factory used for constructing new workers. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParallelism](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getParallelism())`()` Returns the targeted parallelism level of this pool. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCommonPoolParallelism](../java/util/concurrent/ForkJoinPool.md))`()` Returns the targeted parallelism level of the common pool. |
+| open [ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md)! | [getFactory](../java/util/concurrent/ForkJoinPool.md))`()` Returns the factory used for constructing new workers. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParallelism](../java/util/concurrent/ForkJoinPool.md))`()` Returns the targeted parallelism level of this pool. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPoolSize](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getPoolSize())`()` Returns the number of worker threads that have started but not yet terminated. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueuedSubmissionCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getQueuedSubmissionCount())`()` Returns an estimate of the number of tasks submitted to this pool that have not yet begun executing. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getQueuedTaskCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getQueuedTaskCount())`()` Returns an estimate of the total number of tasks currently held in queues by worker threads (but not including tasks submitted to the pool that have not begun executing). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPoolSize](../java/util/concurrent/ForkJoinPool.md))`()` Returns the number of worker threads that have started but not yet terminated. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueuedSubmissionCount](../java/util/concurrent/ForkJoinPool.md))`()` Returns an estimate of the number of tasks submitted to this pool that have not yet begun executing. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getQueuedTaskCount](../java/util/concurrent/ForkJoinPool.md))`()` Returns an estimate of the total number of tasks currently held in queues by worker threads (but not including tasks submitted to the pool that have not begun executing). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunningThreadCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getRunningThreadCount())`()` Returns an estimate of the number of worker threads that are not blocked waiting to join tasks or for other managed synchronization. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStealCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getStealCount())`()` Returns an estimate of the total number of completed tasks that were executed by a thread other than their submitter. |
-| open [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler.html#)! | [getUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getUncaughtExceptionHandler())`()` Returns the handler for internal worker threads that terminate due to unrecoverable errors encountered while executing tasks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunningThreadCount](../java/util/concurrent/ForkJoinPool.md))`()` Returns an estimate of the number of worker threads that are not blocked waiting to join tasks or for other managed synchronization. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStealCount](../java/util/concurrent/ForkJoinPool.md))`()` Returns an estimate of the total number of completed tasks that were executed by a thread other than their submitter. |
+| open [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)! | [getUncaughtExceptionHandler](../java/util/concurrent/ForkJoinPool.md))`()` Returns the handler for internal worker threads that terminate due to unrecoverable errors encountered while executing tasks. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasQueuedSubmissions](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#hasQueuedSubmissions())`()` Returns`true`if there are any tasks submitted to this pool that have not yet begun executing. |
-| openT | [invoke](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#invoke(java.util.concurrent.ForkJoinTask))`(`task:` ` [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>!`)` Performs the given task, returning its result upon completion. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>!\>! | [invokeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#invokeAll(kotlin.collections.MutableCollection))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasQueuedSubmissions](../java/util/concurrent/ForkJoinPool.md))`()` Returns`true`if there are any tasks submitted to this pool that have not yet begun executing. |
+| openT | [invoke](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>!`)` Performs the given task, returning its result upon completion. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](../java/util/concurrent/Future.md)\<T\>!\>! | [invokeAll](../java/util/concurrent/ForkJoinPool.md))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](../java/util/concurrent/Callable.md)<T>!>!`)` <br /> |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)\<T\>!\>! | [invokeAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#invokeAll(kotlin.collections.MutableCollection,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
-| openT | [invokeAny](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#invokeAny(kotlin.collections.MutableCollection))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`)` <br /> |
-| openT | [invokeAny](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#invokeAny(kotlin.collections.MutableCollection,%20kotlin.Long,%20java.util.concurrent.TimeUnit))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!`)` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Future](../java/util/concurrent/Future.md)\<T\>!\>! | [invokeAll](../java/util/concurrent/ForkJoinPool.md))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](../java/util/concurrent/Callable.md)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
+| openT | [invokeAny](../java/util/concurrent/ForkJoinPool.md))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](../java/util/concurrent/Callable.md)<T>!>!`)` <br /> |
+| openT | [invokeAny](../java/util/concurrent/ForkJoinPool.md))`(`tasks:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Callable](../java/util/concurrent/Callable.md)<T>!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isQuiescent](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#isQuiescent())`()` Returns`true`if all worker threads are currently idle. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShutdown](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#isShutdown())`()` Returns`true`if this pool has been shut down. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTerminated](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#isTerminated())`()` Returns`true`if all tasks have completed following shut down. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isQuiescent](../java/util/concurrent/ForkJoinPool.md))`()` Returns`true`if all worker threads are currently idle. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShutdown](../java/util/concurrent/ForkJoinPool.md))`()` Returns`true`if this pool has been shut down. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTerminated](../java/util/concurrent/ForkJoinPool.md))`()` Returns`true`if all tasks have completed following shut down. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTerminating](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#isTerminating())`()` Returns`true`if the process of termination has commenced but not yet completed. |
-| open [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>! | [lazySubmit](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#lazySubmit(java.util.concurrent.ForkJoinTask))`(`task:` ` [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>!`)` Submits the given task without guaranteeing that it will eventually execute in the absence of available active threads. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [managedBlock](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker))`(`blocker:` ` [ForkJoinPool.ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker)!`)` Runs the given possibly blocking task. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTerminating](../java/util/concurrent/ForkJoinPool.md))`()` Returns`true`if the process of termination has commenced but not yet completed. |
+| open [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | [lazySubmit](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>!`)` Submits the given task without guaranteeing that it will eventually execute in the absence of available active threads. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [managedBlock](../java/util/concurrent/ForkJoinPool.md))`(`blocker:` ` [ForkJoinPool.ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md)!`)` Runs the given possibly blocking task. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setParallelism](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#setParallelism(kotlin.Int))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the target parallelism of this pool, controlling the future creation, use, and termination of worker threads. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdown](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#shutdown())`()` Possibly initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!\>! | [shutdownNow](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#shutdownNow())`()` Possibly attempts to cancel and/or stop all tasks, and reject all subsequently submitted tasks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setParallelism](../java/util/concurrent/ForkJoinPool.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the target parallelism of this pool, controlling the future creation, use, and termination of worker threads. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdown](../java/util/concurrent/ForkJoinPool.md))`()` Possibly initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Runnable](../java/lang/Runnable.md)!\>! | [shutdownNow](../java/util/concurrent/ForkJoinPool.md))`()` Possibly attempts to cancel and/or stop all tasks, and reject all subsequently submitted tasks. |
 | --- | --- |
-| open [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<\*\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#submit(java.lang.Runnable))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` <br /> |
-| open [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#submit(java.lang.Runnable,%20java.util.concurrent.ForkJoinPool.submit.T))`(`task:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `result:` `T`)` <br /> |
-| open [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#submit(java.util.concurrent.Callable))`(`task:` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!`)` <br /> |
+| open [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>! | [submit](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [Runnable](../java/lang/Runnable.md)!`)` <br /> |
+| open [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | [submit](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [Runnable](../java/lang/Runnable.md)!`, `result:` `T`)` <br /> |
+| open [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | [submit](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [Callable](../java/util/concurrent/Callable.md)<T>!`)` <br /> |
 | --- | --- |
-| open [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>! | [submit](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#submit(java.util.concurrent.ForkJoinTask))`(`task:` ` [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>!`)` Submits a ForkJoinTask for execution. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#toString())`()` Returns a string identifying this pool, as well as its state, including indications of run state, parallelism level, and worker and task counts. |
+| open [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | [submit](../java/util/concurrent/ForkJoinPool.md))`(`task:` ` [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>!`)` Submits a ForkJoinTask for execution. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/concurrent/ForkJoinPool.md))`()` Returns a string identifying this pool, as well as its state, including indications of run state, parallelism level, and worker and task counts. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTasksTo](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#drainTasksTo(kotlin.collections.MutableCollection))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` ` [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<*>!>!`)` Removes all available unexecuted submitted and forked tasks from scheduling queues and adds them to the given collection, without altering their execution status. |
-| open [RunnableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableFuture)\<T\>! | [newTaskFor](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#newTaskFor(java.lang.Runnable,%20java.util.concurrent.ForkJoinPool.newTaskFor.T))`(`runnable:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`, `value:` `T`)` <br /> |
-| open [RunnableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableFuture)\<T\>! | [newTaskFor](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#newTaskFor(java.util.concurrent.Callable))`(`callable:` ` [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)<T>!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [drainTasksTo](../java/util/concurrent/ForkJoinPool.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` ` [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<*>!>!`)` Removes all available unexecuted submitted and forked tasks from scheduling queues and adds them to the given collection, without altering their execution status. |
+| open [RunnableFuture](../java/util/concurrent/RunnableFuture.md)\<T\>! | [newTaskFor](../java/util/concurrent/ForkJoinPool.md))`(`runnable:` ` [Runnable](../java/lang/Runnable.md)!`, `value:` `T`)` <br /> |
+| open [RunnableFuture](../java/util/concurrent/RunnableFuture.md)\<T\>! | [newTaskFor](../java/util/concurrent/ForkJoinPool.md))`(`callable:` ` [Callable](../java/util/concurrent/Callable.md)<T>!`)` <br /> |
 | --- | --- |
-| open [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<\*\>! | [pollSubmission](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#pollSubmission())`()` Removes and returns the next unexecuted submission if one is available. |
+| open [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>! | [pollSubmission](../java/util/concurrent/ForkJoinPool.md))`()` Removes and returns the next unexecuted submission if one is available. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ForkJoinPool.ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory)! | [defaultForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#defaultForkJoinWorkerThreadFactory:java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory) Creates a new ForkJoinWorkerThread. |
+| static [ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md)! | [defaultForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.md) Creates a new ForkJoinWorkerThread. |
 
 ## Public constructors
 
@@ -126,7 +126,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 ForkJoinPool()
 ```
 
-Creates a`ForkJoinPool`with parallelism equal to [java.lang.Runtime#availableProcessors](https://developer.android.com/reference/kotlin/java/lang/Runtime.html#availableProcessors()), using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.util.function.Predicate,%20kotlin.Long,%20java.util.concurrent.TimeUnit))).
+Creates a`ForkJoinPool`with parallelism equal to [java.lang.Runtime#availableProcessors](../java/lang/Runtime.md)), using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](../java/util/concurrent/ForkJoinPool.md))).
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -140,7 +140,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 ForkJoinPool(parallelism: Int)
 ```
 
-Creates a`ForkJoinPool`with the indicated parallelism level, using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.util.function.Predicate,%20kotlin.Long,%20java.util.concurrent.TimeUnit))).
+Creates a`ForkJoinPool`with the indicated parallelism level, using defaults for all other parameters (see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](../java/util/concurrent/ForkJoinPool.md))).
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------|
@@ -163,13 +163,13 @@ ForkJoinPool(
     asyncMode: Boolean)
 ```
 
-Creates a`ForkJoinPool`with the given parameters (using defaults for others -- see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#ForkJoinPool(kotlin.Int,%20java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,%20java.lang.Thread.UncaughtExceptionHandler,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.util.function.Predicate,%20kotlin.Long,%20java.util.concurrent.TimeUnit))).
+Creates a`ForkJoinPool`with the given parameters (using defaults for others -- see [ForkJoinPool(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)](../java/util/concurrent/ForkJoinPool.md))).
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parallelism` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the parallelism level. For default value, use [java.lang.Runtime#availableProcessors](https://developer.android.com/reference/kotlin/java/lang/Runtime.html#availableProcessors()). |
-| `factory` | [ForkJoinPool.ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory)!:the factory for creating new threads. For default value, use [defaultForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#defaultForkJoinWorkerThreadFactory:java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory). |
-| `handler` | [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler.html#)!:the handler for internal worker threads that terminate due to unrecoverable errors encountered while executing tasks. For default value, use`null`. |
+| `parallelism` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the parallelism level. For default value, use [java.lang.Runtime#availableProcessors](../java/lang/Runtime.md)). |
+| `factory` | [ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md)!:the factory for creating new threads. For default value, use [defaultForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.md). |
+| `handler` | [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)!:the handler for internal worker threads that terminate due to unrecoverable errors encountered while executing tasks. For default value, use`null`. |
 | --- | --- |
 | `asyncMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, establishes local first-in-first-out scheduling mode for forked tasks that are never joined. This mode may be more appropriate than default locally stack-based mode in applications in which worker threads only process event-style asynchronous tasks. For default value, use`false`. |
 
@@ -202,19 +202,19 @@ Creates a`ForkJoinPool`with the given parameters.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parallelism` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the parallelism level. For default value, use [java.lang.Runtime#availableProcessors](https://developer.android.com/reference/kotlin/java/lang/Runtime.html#availableProcessors()). |
-| `factory` | [ForkJoinPool.ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory)!:the factory for creating new threads. For default value, use [defaultForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#defaultForkJoinWorkerThreadFactory:java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory). |
-| `handler` | [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler.html#)!:the handler for internal worker threads that terminate due to unrecoverable errors encountered while executing tasks. For default value, use`null`. |
+| `parallelism` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the parallelism level. For default value, use [java.lang.Runtime#availableProcessors](../java/lang/Runtime.md)). |
+| `factory` | [ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md)!:the factory for creating new threads. For default value, use [defaultForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.md). |
+| `handler` | [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)!:the handler for internal worker threads that terminate due to unrecoverable errors encountered while executing tasks. For default value, use`null`. |
 | --- | --- |
 | `asyncMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, establishes local first-in-first-out scheduling mode for forked tasks that are never joined. This mode may be more appropriate than default locally stack-based mode in applications in which worker threads only process event-style asynchronous tasks. For default value, use`false`. |
 | `corePoolSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of threads to keep in the pool (unless timed out after an elapsed keep-alive). Normally (and by default) this is the same value as the parallelism level, but may be set to a larger value to reduce dynamic overhead if tasks regularly block. Using a smaller value (for example`0`) has the same effect as the default. |
 | `maximumPoolSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of threads allowed. When the maximum is reached, attempts to replace blocked threads fail. (However, because creation and termination of different threads may overlap, and may be managed by the given thread factory, this value may be transiently exceeded.) To arrange the same value as is used by default for the common pool, use`256`plus the`parallelism`level. (By default, the common pool allows a maximum of 256 spare threads.) Using a value (for example`Integer.MAX_VALUE`) larger than the implementation's total thread limit has the same effect as using this limit (which is the default). |
 | --- | --- |
-| `minimumRunnable` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minimum allowed number of core threads not blocked by a join or [ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker). To ensure progress, when too few unblocked threads exist and unexecuted tasks may exist, new threads are constructed, up to the given maximumPoolSize. For the default value, use`1`, that ensures liveness. A larger value might improve throughput in the presence of blocked activities, but might not, due to increased overhead. A value of zero may be acceptable when submitted tasks cannot have dependencies requiring additional threads. |
-| `saturate` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#)\<in [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#)!\>!:if non-null, a predicate invoked upon attempts to create more than the maximum total allowed threads. By default, when a thread is about to block on a join or [ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker), but cannot be replaced because the maximumPoolSize would be exceeded, a [RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException) is thrown. But if this predicate returns`true`, then no exception is thrown, so the pool continues to operate with fewer than the target number of runnable threads, which might not ensure progress. |
+| `minimumRunnable` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minimum allowed number of core threads not blocked by a join or [ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md). To ensure progress, when too few unblocked threads exist and unexecuted tasks may exist, new threads are constructed, up to the given maximumPoolSize. For the default value, use`1`, that ensures liveness. A larger value might improve throughput in the presence of blocked activities, but might not, due to increased overhead. A value of zero may be acceptable when submitted tasks cannot have dependencies requiring additional threads. |
+| `saturate` | [Predicate](../java/util/function/Predicate.md)\<in [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md)!\>!:if non-null, a predicate invoked upon attempts to create more than the maximum total allowed threads. By default, when a thread is about to block on a join or [ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md), but cannot be replaced because the maximumPoolSize would be exceeded, a [RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md) is thrown. But if this predicate returns`true`, then no exception is thrown, so the pool continues to operate with fewer than the target number of runnable threads, which might not ensure progress. |
 | `keepAliveTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the elapsed time since last use before a thread is terminated (and then later replaced if needed). For the default value, use`60, TimeUnit.SECONDS`. |
 | --- | --- |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit for the`keepAliveTime`argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit for the`keepAliveTime`argument |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -236,12 +236,12 @@ open fun awaitQuiescence(
 ): Boolean
 ```
 
-If called by a ForkJoinTask operating in this pool, equivalent in effect to [ForkJoinTask.helpQuiesce](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#helpQuiesce()). Otherwise, waits and/or attempts to assist performing tasks until this pool [isQuiescent](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#isQuiescent())or the indicated timeout elapses.
+If called by a ForkJoinTask operating in this pool, equivalent in effect to [ForkJoinTask.helpQuiesce](../java/util/concurrent/ForkJoinTask.md)). Otherwise, waits and/or attempts to assist performing tasks until this pool [isQuiescent](../java/util/concurrent/ForkJoinPool.md))or the indicated timeout elapses.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit of the timeout argument |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -258,12 +258,12 @@ open fun awaitTermination(
 ): Boolean
 ```
 
-Blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first. Because the [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool())never terminates until program shutdown, when applied to the common pool, this method is equivalent to [awaitQuiescence(long,java.util.concurrent.TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#awaitQuiescence(kotlin.Long,%20java.util.concurrent.TimeUnit))but always returns`false`.
+Blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first. Because the [commonPool()](../java/util/concurrent/ForkJoinPool.md))never terminates until program shutdown, when applied to the common pool, this method is equivalent to [awaitQuiescence(long,java.util.concurrent.TimeUnit)](../java/util/concurrent/ForkJoinPool.md))but always returns`false`.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit of the timeout argument |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
@@ -281,9 +281,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun close(): Unit
 ```
 
-Unless this is the [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()), initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted, and waits until all tasks have completed execution and the executor has terminated.
+Unless this is the [commonPool()](../java/util/concurrent/ForkJoinPool.md)), initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted, and waits until all tasks have completed execution and the executor has terminated.
 
-If already terminated, or this is the [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()), this method has no effect on execution, and does not wait. Otherwise, if interrupted while waiting, this method stops all executing tasks as if by invoking [shutdownNow()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#shutdownNow()). It then continues to wait until all actively executing tasks have completed. Tasks that were awaiting execution are not executed. The interrupt status will be re-asserted before this method returns.
+If already terminated, or this is the [commonPool()](../java/util/concurrent/ForkJoinPool.md)), this method has no effect on execution, and does not wait. Otherwise, if interrupted while waiting, this method stops all executing tasks as if by invoking [shutdownNow()](../java/util/concurrent/ForkJoinPool.md)). It then continues to wait until all actively executing tasks have completed. Tasks that were awaiting execution are not executed. The interrupt status will be re-asserted before this method returns.
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -298,11 +298,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun commonPool(): ForkJoinPool!
 ```
 
-Returns the common pool instance. This pool is statically constructed; its run state is unaffected by attempts to [shutdown](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#shutdown())or [shutdownNow](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#shutdownNow()). However this pool and any ongoing processing are automatically terminated upon program [System.exit](https://developer.android.com/reference/kotlin/java/lang/System.html#exit(kotlin.Int)). Any program that relies on asynchronous task processing to complete before program termination should invoke`commonPool().` [awaitQuiescence](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#awaitQuiescence(kotlin.Long,%20java.util.concurrent.TimeUnit)), before exit.
+Returns the common pool instance. This pool is statically constructed; its run state is unaffected by attempts to [shutdown](../java/util/concurrent/ForkJoinPool.md))or [shutdownNow](../java/util/concurrent/ForkJoinPool.md)). However this pool and any ongoing processing are automatically terminated upon program [System.exit](../java/lang/System.md)). Any program that relies on asynchronous task processing to complete before program termination should invoke`commonPool().` [awaitQuiescence](../java/util/concurrent/ForkJoinPool.md)), before exit.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------------|
-| [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#)! | the common pool instance |
+| [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md)! | the common pool instance |
 
 ### execute
 
@@ -333,7 +333,7 @@ Arranges for (asynchronous) execution of the given task.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------|
-| `task` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<\*\>!:the task |
+| `task` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>!:the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -352,12 +352,12 @@ Submits the given task as if submitted from a non-`ForkJoinTask`client. The task
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------|
-| `task` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>!:the task to submit |
+| `task` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>!:the task to submit |
 | `<T>` | the type of the task's result |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|----------|
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>! | the task |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>! | the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -418,7 +418,7 @@ Returns the factory used for constructing new workers.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [ForkJoinPool.ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory)! | the factory used for constructing new workers |
+| [ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md)! | the factory used for constructing new workers |
 
 ### getParallelism
 
@@ -442,7 +442,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getPoolSize(): Int
 ```
 
-Returns the number of worker threads that have started but not yet terminated. The result returned by this method may differ from [getParallelism](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#getParallelism())when threads are created to maintain parallelism when others are cooperatively blocked.
+Returns the number of worker threads that have started but not yet terminated. The result returned by this method may differ from [getParallelism](../java/util/concurrent/ForkJoinPool.md))when threads are created to maintain parallelism when others are cooperatively blocked.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------|
@@ -478,7 +478,7 @@ Returns an estimate of the total number of tasks currently held in queues by wor
 
 **See Also**
 
-- [java.util.concurrent.ForkJoinWorkerThread#getQueuedTaskCount()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread#getQueuedTaskCount()) 
+- [java.util.concurrent.ForkJoinWorkerThread#getQueuedTaskCount()](../java/util/concurrent/ForkJoinWorkerThread.md)) 
 
 ### getRunningThreadCount
 
@@ -520,7 +520,7 @@ Returns the handler for internal worker threads that terminate due to unrecovera
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler.html#)! | the handler, or`null`if none |
+| [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)! | the handler, or`null`if none |
 
 ### hasQueuedSubmissions
 
@@ -548,7 +548,7 @@ Performs the given task, returning its result upon completion. If the computatio
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `task` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>!:the task |
+| `task` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>!:the task |
 | `<T>` | the type of the task's result |
 
 | Return ||
@@ -570,12 +570,12 @@ open fun <T : Any!> invokeAll(tasks: MutableCollection<out Callable<T>!>!): 
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
+| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](../java/util/concurrent/Callable.md)\<T\>!\>!:the collection of tasks |
 | `<T>` | the type of the values returned from the tasks |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)<T>!>! | a list of Futures representing the tasks, in the same sequential order as produced by the iterator for the given task list, each of which has completed |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Future](../java/util/concurrent/Future.md)<T>!>! | a list of Futures representing the tasks, in the same sequential order as produced by the iterator for the given task list, each of which has completed |
 
 | Exceptions ||
 |---------------------------------------------------|----------------------------------------------------------------------------|
@@ -598,15 +598,15 @@ open fun <T : Any!> invokeAll(
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
+| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](../java/util/concurrent/Callable.md)\<T\>!\>!:the collection of tasks |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit of the timeout argument |
 | --- | --- |
 | `<T>` | the type of the values returned from the tasks |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future)<T>!>! | a list of Futures representing the tasks, in the same sequential order as produced by the iterator for the given task list. If the operation did not time out, each task will have completed. If it did time out, some of these tasks will not have completed. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Future](../java/util/concurrent/Future.md)<T>!>! | a list of Futures representing the tasks, in the same sequential order as produced by the iterator for the given task list. If the operation did not time out, each task will have completed. If it did time out, some of these tasks will not have completed. |
 
 | Exceptions ||
 |---------------------------------------------------|----------------------------------------------------------------------------|
@@ -625,7 +625,7 @@ open fun <T : Any!> invokeAny(tasks: MutableCollection<out Callable<T>!>!): 
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
+| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](../java/util/concurrent/Callable.md)\<T\>!\>!:the collection of tasks |
 | `<T>` | the type of the values returned from the tasks |
 
 | Return ||
@@ -655,9 +655,9 @@ open fun <T : Any!> invokeAny(
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!\>!:the collection of tasks |
+| `tasks` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Callable](../java/util/concurrent/Callable.md)\<T\>!\>!:the collection of tasks |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!:the time unit of the timeout argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit of the timeout argument |
 | --- | --- |
 | `<T>` | the type of the values returned from the tasks |
 
@@ -724,7 +724,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun isTerminating(): Boolean
 ```
 
-Returns`true`if the process of termination has commenced but not yet completed. This method may be useful for debugging. A return of`true`reported a sufficient period after shutdown may indicate that submitted tasks have ignored or suppressed interruption, or are waiting for I/O, causing this executor not to properly terminate. (See the advisory notes for class [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) stating that tasks should not normally entail blocking operations. But if they do, they must abort them on interrupt.)
+Returns`true`if the process of termination has commenced but not yet completed. This method may be useful for debugging. A return of`true`reported a sufficient period after shutdown may indicate that submitted tasks have ignored or suppressed interruption, or are waiting for I/O, causing this executor not to properly terminate. (See the advisory notes for class [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) stating that tasks should not normally entail blocking operations. But if they do, they must abort them on interrupt.)
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|
@@ -742,12 +742,12 @@ Submits the given task without guaranteeing that it will eventually execute in t
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `task` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>!:the task |
+| `task` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>!:the task |
 | `<T>` | the type of the task's result |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|----------|
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>! | the task |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>! | the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -762,7 +762,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open static fun managedBlock(blocker: ForkJoinPool.ManagedBlocker!): Unit
 ```
 
-Runs the given possibly blocking task. When [running in a ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#inForkJoinPool()), this method possibly arranges for a spare thread to be activated if necessary to ensure sufficient parallelism while the current thread is blocked in [blocker.block()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker#block()).
+Runs the given possibly blocking task. When [running in a ForkJoinPool](../java/util/concurrent/ForkJoinTask.md)), this method possibly arranges for a spare thread to be activated if necessary to ensure sufficient parallelism while the current thread is blocked in [blocker.block()](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md)).
 
 This method repeatedly calls`blocker.isReleasable()`and`blocker.block()`until either method returns`true`. Every call to`blocker.block()`is preceded by a call to`blocker.isReleasable()`that returned`false`.
 
@@ -777,7 +777,7 @@ If running in a ForkJoinPool, the pool may first be expanded to ensure sufficien
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blocker` | [ForkJoinPool.ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker)!:the blocker task |
+| `blocker` | [ForkJoinPool.ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md)!:the blocker task |
 
 | Exceptions ||
 |----------------------------------|---------------------------|
@@ -804,7 +804,7 @@ Changes the target parallelism of this pool, controlling the future creation, us
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if size is less than 1 or greater than the maximum supported by this pool. |
-| `java.lang.UnsupportedOperationException` | this is the [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool())and parallelism level was set by System property {@systemProperty \* java.util.concurrent.ForkJoinPool.common.parallelism}. |
+| `java.lang.UnsupportedOperationException` | this is the [commonPool()](../java/util/concurrent/ForkJoinPool.md))and parallelism level was set by System property {@systemProperty \* java.util.concurrent.ForkJoinPool.common.parallelism}. |
 | `java.lang.SecurityException` | if a security manager exists and the caller is not permitted to modify threads because it does not hold`("modifyThread")` |
 | --- | --- |
 
@@ -816,7 +816,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun shutdown(): Unit
 ```
 
-Possibly initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted. Invocation has no effect on execution state if this is the [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()), and no additional effect if already shut down. Tasks that are in the process of being submitted concurrently during the course of this method may or may not be rejected.
+Possibly initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted. Invocation has no effect on execution state if this is the [commonPool()](../java/util/concurrent/ForkJoinPool.md)), and no additional effect if already shut down. Tasks that are in the process of being submitted concurrently during the course of this method may or may not be rejected.
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -830,11 +830,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun shutdownNow(): MutableList<Runnable!>!
 ```
 
-Possibly attempts to cancel and/or stop all tasks, and reject all subsequently submitted tasks. Invocation has no effect on execution state if this is the [commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()), and no additional effect if already shut down. Otherwise, tasks that are in the process of being submitted or executed concurrently during the course of this method may or may not be rejected. This method cancels both existing and unexecuted tasks, in order to permit termination in the presence of task dependencies. So the method always returns an empty list (unlike the case for some other Executors).
+Possibly attempts to cancel and/or stop all tasks, and reject all subsequently submitted tasks. Invocation has no effect on execution state if this is the [commonPool()](../java/util/concurrent/ForkJoinPool.md)), and no additional effect if already shut down. Otherwise, tasks that are in the process of being submitted or executed concurrently during the course of this method may or may not be rejected. This method cancels both existing and unexecuted tasks, in order to permit termination in the presence of task dependencies. So the method always returns an empty list (unlike the case for some other Executors).
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!>! | an empty list |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Runnable](../java/lang/Runnable.md)!>! | an empty list |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -850,11 +850,11 @@ open fun submit(task: Runnable!): ForkJoinTask<*>!
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------|
-| `task` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the task to submit |
+| `task` | [Runnable](../java/lang/Runnable.md)!:the task to submit |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<*>! | a Future representing pending completion of the task |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<*>! | a Future representing pending completion of the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -874,14 +874,14 @@ open fun <T : Any!> submit(
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------|
-| `task` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the task to submit |
+| `task` | [Runnable](../java/lang/Runnable.md)!:the task to submit |
 | `result` | T:the result to return |
 | `<T>` | the type of the result |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>! | a Future representing pending completion of the task |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>! | a Future representing pending completion of the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -898,12 +898,12 @@ open fun <T : Any!> submit(task: Callable<T>!): ForkJoinTask<T>!
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------|
-| `task` | [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!:the task to submit |
+| `task` | [Callable](../java/util/concurrent/Callable.md)\<T\>!:the task to submit |
 | `<T>` | the type of the task's result |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>! | a Future representing pending completion of the task |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>! | a Future representing pending completion of the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -922,12 +922,12 @@ Submits a ForkJoinTask for execution.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------|
-| `task` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<T\>!:the task to submit |
+| `task` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>!:the task to submit |
 | `<T>` | the type of the task's result |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|----------|
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<T>! | the task |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<T>! | the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -962,7 +962,7 @@ Removes all available unexecuted submitted and forked tasks from scheduling queu
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `c` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<in [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)\<\*\>!\>!:the collection to transfer elements into |
+| `c` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<in [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>!\>!:the collection to transfer elements into |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -981,14 +981,14 @@ protected open fun <T : Any!> newTaskFor(
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------|
-| `runnable` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!:the runnable task being wrapped |
+| `runnable` | [Runnable](../java/lang/Runnable.md)!:the runnable task being wrapped |
 | `value` | T:the default value for the returned future |
 | `<T>` | the type of the given value |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RunnableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableFuture)<T>! | a`RunnableFuture`which, when run, will run the underlying runnable and which, as a`Future`, will yield the given value as its result and provide for cancellation of the underlying task |
+| [RunnableFuture](../java/util/concurrent/RunnableFuture.md)<T>! | a`RunnableFuture`which, when run, will run the underlying runnable and which, as a`Future`, will yield the given value as its result and provide for cancellation of the underlying task |
 
 ### newTaskFor
 
@@ -1000,12 +1000,12 @@ protected open fun <T : Any!> newTaskFor(callable: Callable<T>!): RunnableFut
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `callable` | [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<T\>!:the callable task being wrapped |
+| `callable` | [Callable](../java/util/concurrent/Callable.md)\<T\>!:the callable task being wrapped |
 | `<T>` | the type of the callable's result |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RunnableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableFuture)<T>! | a`RunnableFuture`which, when run, will call the underlying callable and which, as a`Future`, will yield the callable's result as its result and provide for cancellation of the underlying task |
+| [RunnableFuture](../java/util/concurrent/RunnableFuture.md)<T>! | a`RunnableFuture`which, when run, will call the underlying callable and which, as a`Future`, will yield the callable's result as its result and provide for cancellation of the underlying task |
 
 ### pollSubmission
 
@@ -1019,7 +1019,7 @@ Removes and returns the next unexecuted submission if one is available. This met
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask)<*>! | the next submission, or`null`if none |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)<*>! | the next submission, or`null`if none |
 
 ## Properties
 

@@ -8,9 +8,9 @@ open class StyleSpan : MetricAffectingSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
-| | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
-| | | ↳ | [android.text.style.StyleSpan](https://developer.android.com/reference/kotlin/android/text/style/StyleSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||
+| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||
+| | | ↳ | [android.text.style.StyleSpan](../android/text/style/StyleSpan.md) |
 | --- | --- | --- | --- |
 
 Span that allows setting the style of the text it's attached to. Possible styles are: `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#NORMAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#BOLD:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#ITALIC:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#BOLD_ITALIC:kotlin.Int`.
@@ -67,7 +67,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/text/style/Sty
 
 | Parameters ||
 |---|---|
-| `src` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): the parcel. This value cannot be `null`. |
+| `src` | [Parcel](../android/os/Parcel.md): the parcel. This value cannot be `null`. |
 
 ### StyleSpan
 
@@ -203,5 +203,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |

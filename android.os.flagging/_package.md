@@ -2,15 +2,15 @@
 
 # android.os.flagging
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/flagging/package-summary "View this page in Java")
+Kotlin| [Java](../android/os/flagging/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [AconfigPackage](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage) | An`aconfig`package containing the enabled state of its flags. |
+| [AconfigPackage](../android/os/flagging/AconfigPackage.md) | An`aconfig`package containing the enabled state of its flags. |
 | --- | --- |
 
 ## Exceptions
 
-| [AconfigStorageReadException](https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException) | Exception thrown when an error occurs while reading from Aconfig Storage. |
+| [AconfigStorageReadException](../android/os/flagging/AconfigStorageReadException.md) | Exception thrown when an error occurs while reading from Aconfig Storage. |
 | --- | --- |

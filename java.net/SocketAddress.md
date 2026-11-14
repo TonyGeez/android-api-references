@@ -10,9 +10,9 @@ abstract class SocketAddress : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress#) |
+| ↳ | [java.net.SocketAddress](../java/net/SocketAddress.md) |
 
-| Known Direct Subclasses [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress), [VmSocketAddress](https://developer.android.com/reference/kotlin/android/system/VmSocketAddress.html#) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InetSocketAddress](https://developer.android.com/reference/kotlin/java/net/InetSocketAddress) | This class implements an IP Socket Address (IP address + port number) It can also be a pair (hostname + port number), in which case an attempt will be made to resolve the hostname. | | [VmSocketAddress](https://developer.android.com/reference/kotlin/android/system/VmSocketAddress.html#) | A virtio-vsock address [VmSocketAddress](https://developer.android.com/reference/kotlin/android/system/VmSocketAddress.html#). | |
+| Known Direct Subclasses [InetSocketAddress](../java/net/InetSocketAddress.md), [VmSocketAddress](../android/system/VmSocketAddress.md) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InetSocketAddress](../java/net/InetSocketAddress.md) | This class implements an IP Socket Address (IP address + port number) It can also be a pair (hostname + port number), in which case an attempt will be made to resolve the hostname. | | [VmSocketAddress](../android/system/VmSocketAddress.md) | A virtio-vsock address [VmSocketAddress](../android/system/VmSocketAddress.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class represents a Socket Address with no protocol attachment. As an abstract class, it is meant to be subclassed with a specific, protocol dependent, implementation.
@@ -23,7 +23,7 @@ It provides an immutable object used by sockets for binding, connecting, or as r
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SocketAddress](https://developer.android.com/reference/kotlin/java/net/SocketAddress#SocketAddress())`()` Constructor for subclasses to call. |
+| [SocketAddress](../java/net/SocketAddress.md))`()` Constructor for subclasses to call. |
 
 ## Public constructors
 

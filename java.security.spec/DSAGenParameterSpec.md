@@ -10,7 +10,7 @@ class DSAGenParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.DSAGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAGenParameterSpec#) |
+| ↳ | [java.security.spec.DSAGenParameterSpec](../java/security/spec/DSAGenParameterSpec.md) |
 
 This immutable class specifies the set of parameters used for generating DSA parameters as specified in [FIPS 186-3 Digital Signature Standard (DSS)](http://csrc.nist.gov/publications/fips/fips186-3/fips_186-3.pdf).
 
@@ -18,14 +18,14 @@ This immutable class specifies the set of parameters used for generating DSA par
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DSAGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAGenParameterSpec#DSAGenParameterSpec(kotlin.Int,%20kotlin.Int))`(`primePLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `subprimeQLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a domain parameter specification for DSA parameter generation using `primePLen` and `subprimeQLen`. |
-| [DSAGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAGenParameterSpec#DSAGenParameterSpec(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`primePLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `subprimeQLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `seedLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a domain parameter specification for DSA parameter generation using `primePLen`, `subprimeQLen`, and `seedLen`. |
+| [DSAGenParameterSpec](../java/security/spec/DSAGenParameterSpec.md))`(`primePLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `subprimeQLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a domain parameter specification for DSA parameter generation using `primePLen` and `subprimeQLen`. |
+| [DSAGenParameterSpec](../java/security/spec/DSAGenParameterSpec.md))`(`primePLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `subprimeQLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `seedLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a domain parameter specification for DSA parameter generation using `primePLen`, `subprimeQLen`, and `seedLen`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimePLength](https://developer.android.com/reference/kotlin/java/security/spec/DSAGenParameterSpec#getPrimePLength())`()` Returns the desired length of the prime P of the to-be-generated DSA domain parameters in bits. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeedLength](https://developer.android.com/reference/kotlin/java/security/spec/DSAGenParameterSpec#getSeedLength())`()` Returns the desired length of the domain parameter seed in bits. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubprimeQLength](https://developer.android.com/reference/kotlin/java/security/spec/DSAGenParameterSpec#getSubprimeQLength())`()` Returns the desired length of the sub-prime Q of the to-be-generated DSA domain parameters in bits. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrimePLength](../java/security/spec/DSAGenParameterSpec.md))`()` Returns the desired length of the prime P of the to-be-generated DSA domain parameters in bits. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeedLength](../java/security/spec/DSAGenParameterSpec.md))`()` Returns the desired length of the domain parameter seed in bits. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubprimeQLength](../java/security/spec/DSAGenParameterSpec.md))`()` Returns the desired length of the sub-prime Q of the to-be-generated DSA domain parameters in bits. |
 | --- | --- |
 
 ## Public constructors

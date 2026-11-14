@@ -4,14 +4,14 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # TouchExplorationStateChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener "View this page in Java") 
+Kotlin| [Java](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md) 
 | --- | --- |
 
 ```
 interface TouchExplorationStateChangeListener
 ```
 
-| [android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener#) |
+| [android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md) |
 
 Listener for the system touch exploration state. To listen for changes to the touch exploration state on the device, implement this interface and register it with the system by calling #addTouchExplorationStateChangeListener.
 
@@ -19,7 +19,7 @@ Listener for the system touch exploration state. To listen for changes to the to
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTouchExplorationStateChanged](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener#onTouchExplorationStateChanged(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the touch exploration enabled state changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTouchExplorationStateChanged](../android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the touch exploration enabled state changes. |
 
 ## Public methods
 

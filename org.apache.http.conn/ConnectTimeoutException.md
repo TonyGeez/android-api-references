@@ -12,11 +12,11 @@ open class ConnectTimeoutException : InterruptedIOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.InterruptedIOException](https://developer.android.com/reference/kotlin/java/io/InterruptedIOException.html#) ||
-| | | | | ↳ | [org.apache.http.conn.ConnectTimeoutException](https://developer.android.com/reference/kotlin/org/apache/http/conn/ConnectTimeoutException#) |
+| | | | ↳ | [java.io.InterruptedIOException](../java/io/InterruptedIOException.md) ||
+| | | | | ↳ | [org.apache.http.conn.ConnectTimeoutException](../org/apache/http/conn/ConnectTimeoutException.md) |
 
 | **This exception was deprecated in API level 22.**
 |
@@ -28,12 +28,12 @@ A timeout while connecting to an HTTP server or waiting for an available connect
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConnectTimeoutException](https://developer.android.com/reference/kotlin/org/apache/http/conn/ConnectTimeoutException#ConnectTimeoutException())`()` Creates a ConnectTimeoutException with a null detail message. |
-| [ConnectTimeoutException](https://developer.android.com/reference/kotlin/org/apache/http/conn/ConnectTimeoutException#ConnectTimeoutException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a ConnectTimeoutException with the specified detail message. |
+| [ConnectTimeoutException](../org/apache/http/conn/ConnectTimeoutException.md))`()` Creates a ConnectTimeoutException with a null detail message. |
+| [ConnectTimeoutException](../org/apache/http/conn/ConnectTimeoutException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a ConnectTimeoutException with the specified detail message. |
 
 | Inherited properties ||
 |---|---|
-| From class [InterruptedIOException](https://developer.android.com/reference/kotlin/java/io/InterruptedIOException.html#) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesTransferred](https://developer.android.com/reference/kotlin/java/io/InterruptedIOException.html#bytesTransferred:kotlin.Int) <br /> Reports how many bytes had been transferred as part of the I/O operation before it was interrupted. <br /> | ||
+| From class [InterruptedIOException](../java/io/InterruptedIOException.md) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesTransferred](../java/io/InterruptedIOException.md) <br /> Reports how many bytes had been transferred as part of the I/O operation before it was interrupted. <br /> | ||
 
 ## Public constructors
 

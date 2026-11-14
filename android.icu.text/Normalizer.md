@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # Normalizer
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/Normalizer "View this page in Java") 
+Kotlin| [Java](../android/icu/text/Normalizer.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ class Normalizer : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.Normalizer](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#) |
+| ↳ | [android.icu.text.Normalizer](../android/icu/text/Normalizer.md) |
 
 Old Unicode normalization API.
 
-This API has been replaced by the [Normalizer2](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer2) class and is only available for backward compatibility. This class simply delegates to the Normalizer2 class. There are two exceptions: The new API does not provide a replacement for`QuickCheckResult`and`compare()`.
+This API has been replaced by the [Normalizer2](../android/icu/text/Normalizer2.md) class and is only available for backward compatibility. This class simply delegates to the Normalizer2 class. There are two exceptions: The new API does not provide a replacement for`QuickCheckResult`and`compare()`.
 
 `normalize`transforms Unicode text into an equivalent composed or decomposed form, allowing for easier sorting and searching of text.`normalize`supports the standard normalization forms described in [Unicode Standard Annex #15 --- Unicode Normalization Forms](https://www.unicode.org/reports/tr15/).
 
@@ -78,31 +78,31 @@ Note: The Normalizer class also provides API for iterative normalization. While 
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [QuickCheckResult](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer.QuickCheckResult) Result values for quickCheck(). |
+| | [QuickCheckResult](../android/icu/text/Normalizer.QuickCheckResult.md) Result values for quickCheck(). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPARE_CODE_POINT_ORDER](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#COMPARE_CODE_POINT_ORDER:kotlin.Int) Option bit for compare: Compare strings in code point order instead of code unit order. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPARE_IGNORE_CASE](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#COMPARE_IGNORE_CASE:kotlin.Int) Option bit for compare: Perform case-insensitive comparison. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#FOLD_CASE_DEFAULT:kotlin.Int) Option bit for compare: Case sensitively compare the strings |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPARE_CODE_POINT_ORDER](../android/icu/text/Normalizer.md) Option bit for compare: Compare strings in code point order instead of code unit order. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPARE_IGNORE_CASE](../android/icu/text/Normalizer.md) Option bit for compare: Perform case-insensitive comparison. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_DEFAULT](../android/icu/text/Normalizer.md) Option bit for compare: Case sensitively compare the strings |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_EXCLUDE_SPECIAL_I](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#FOLD_CASE_EXCLUDE_SPECIAL_I:kotlin.Int) Option value for case folding: Use the modified set of mappings provided in CaseFolding. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_IS_FCD](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#INPUT_IS_FCD:kotlin.Int) Option bit for compare: Both input strings are assumed to fulfill FCD conditions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_EXCLUDE_SPECIAL_I](../android/icu/text/Normalizer.md) Option value for case folding: Use the modified set of mappings provided in CaseFolding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_IS_FCD](../android/icu/text/Normalizer.md) Option bit for compare: Both input strings are assumed to fulfill FCD conditions. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#compare(kotlin.CharArray,%20kotlin.CharArray,%20kotlin.Int))`(`s1:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `s2:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compare two strings for canonical equivalence. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#compare(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`s1:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `s1Start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s1Limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s2:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `s2Start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s2Limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compare two strings for canonical equivalence. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#compare(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`char32a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `char32b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convenience method that can have faster implementation by not allocating buffers. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../android/icu/text/Normalizer.md))`(`s1:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `s2:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compare two strings for canonical equivalence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../android/icu/text/Normalizer.md))`(`s1:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `s1Start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s1Limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s2:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `s2Start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s2Limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compare two strings for canonical equivalence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../android/icu/text/Normalizer.md))`(`char32a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `char32b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convenience method that can have faster implementation by not allocating buffers. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#compare(kotlin.Int,%20kotlin.String,%20kotlin.Int))`(`char32a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `str2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convenience method that can have faster implementation by not allocating buffers. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#compare(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`s1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `s2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compare two strings for canonical equivalence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../android/icu/text/Normalizer.md))`(`char32a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `str2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convenience method that can have faster implementation by not allocating buffers. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../android/icu/text/Normalizer.md))`(`s1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `s2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compare two strings for canonical equivalence. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Normalizer.QuickCheckResult](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer.QuickCheckResult)! | [MAYBE](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#MAYBE:android.icu.text.Normalizer.QuickCheckResult) Indicates it cannot be determined if string is in the normalized format without further thorough checks. |
-| static [Normalizer.QuickCheckResult](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer.QuickCheckResult)! | [NO](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#NO:android.icu.text.Normalizer.QuickCheckResult) Indicates that string is not in the normalized format |
-| static [Normalizer.QuickCheckResult](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer.QuickCheckResult)! | [YES](https://developer.android.com/reference/kotlin/android/icu/text/Normalizer#YES:android.icu.text.Normalizer.QuickCheckResult) Indicates that string is in the normalized format |
+| static [Normalizer.QuickCheckResult](../android/icu/text/Normalizer.QuickCheckResult.md)! | [MAYBE](../android/icu/text/Normalizer.md) Indicates it cannot be determined if string is in the normalized format without further thorough checks. |
+| static [Normalizer.QuickCheckResult](../android/icu/text/Normalizer.QuickCheckResult.md)! | [NO](../android/icu/text/Normalizer.md) Indicates that string is not in the normalized format |
+| static [Normalizer.QuickCheckResult](../android/icu/text/Normalizer.QuickCheckResult.md)! | [YES](../android/icu/text/Normalizer.md) Indicates that string is in the normalized format |
 | --- | --- |
 
 ## Constants
@@ -157,7 +157,7 @@ Option value for case folding: Use the modified set of mappings provided in Case
 
 **See Also**
 
-- [android.icu.lang.UCharacter#FOLD_CASE_EXCLUDE_SPECIAL_I](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.html#FOLD_CASE_EXCLUDE_SPECIAL_I:kotlin.Int) 
+- [android.icu.lang.UCharacter#FOLD_CASE_EXCLUDE_SPECIAL_I](../android/icu/lang/UCharacter.md) 
 
 ### INPUT_IS_FCD
 

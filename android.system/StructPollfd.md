@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # StructPollfd
 
-Kotlin| [Java](https://developer.android.com/reference/android/system/StructPollfd "View this page in Java") 
+Kotlin| [Java](../android/system/StructPollfd.md) 
 | --- | --- |
 
 ```
@@ -13,27 +13,27 @@ class StructPollfd
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructPollfd](https://developer.android.com/reference/kotlin/android/system/StructPollfd#) |
+| ↳ | [android.system.StructPollfd](../android/system/StructPollfd.md) |
 
-Used as an in/out parameter to [Os.poll](https://developer.android.com/reference/kotlin/android/system/Os#poll(kotlin.Array,%20kotlin.Int)). Corresponds to C's`struct pollfd`from`<poll.h>`.
+Used as an in/out parameter to [Os.poll](../android/system/Os.md)). Corresponds to C's`struct pollfd`from`<poll.h>`.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------|---|
-| [StructPollfd](https://developer.android.com/reference/kotlin/android/system/StructPollfd#StructPollfd())`()` <br /> |
+| [StructPollfd](../android/system/StructPollfd.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/system/StructPollfd#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/system/StructPollfd.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [events](https://developer.android.com/reference/kotlin/android/system/StructPollfd#events:kotlin.Short) The events we're interested in. |
-| [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | [fd](https://developer.android.com/reference/kotlin/android/system/StructPollfd#fd:java.io.FileDescriptor) The file descriptor to poll. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [revents](https://developer.android.com/reference/kotlin/android/system/StructPollfd#revents:kotlin.Short) The events that actually happened. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [events](../android/system/StructPollfd.md) The events we're interested in. |
+| [FileDescriptor](../java/io/FileDescriptor.md)! | [fd](../android/system/StructPollfd.md) The file descriptor to poll. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [revents](../android/system/StructPollfd.md) The events that actually happened. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [userData](https://developer.android.com/reference/kotlin/android/system/StructPollfd#userData:kotlin.Any) A non-standard extension that lets callers conveniently map back to the object their fd belongs to. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [userData](../android/system/StructPollfd.md) A non-standard extension that lets callers conveniently map back to the object their fd belongs to. |
 
 ## Public constructors
 

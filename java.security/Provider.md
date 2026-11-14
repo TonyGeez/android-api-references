@@ -8,13 +8,13 @@ abstract class Provider : Properties
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [java.util.Dictionary](https://developer.android.com/reference/kotlin/java/util/Dictionary.html#)\<K, V\> ||||
-| | ↳ | [java.util.Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html#)\< [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)\> |||
-| | | ↳ | [java.util.Properties](https://developer.android.com/reference/kotlin/java/util/Properties.html#) ||
+| ↳ | [java.util.Dictionary](../java/util/Dictionary.md)\<K, V\> ||||
+| | ↳ | [java.util.Hashtable](../java/util/Hashtable.md)\< [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)\> |||
+| | | ↳ | [java.util.Properties](../java/util/Properties.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider#) |
+| | | | ↳ | [java.security.Provider](../java/security/Provider.md) |
 
-Known Direct Subclasses [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider) [AuthProvider](https://developer.android.com/reference/kotlin/java/security/AuthProvider) Legacy security code; do not use.
+Known Direct Subclasses [AuthProvider](../java/security/AuthProvider.md) [AuthProvider](../java/security/AuthProvider.md) Legacy security code; do not use.
 
 This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security. Services that a provider may implement include:
 
@@ -57,7 +57,7 @@ The service type `Provider` is reserved for use by the security framework. Servi
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#computeIfAbsent(kotlin.Any,%20java.util.function.Function)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, mappingFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, *>)` If the specified key is not already associated with a value (or is mapped to `null`), attempts to compute its value using the given mapping function and enters it into this map unless `null`. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#computeIfPresent(kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, *>)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#elements()()` Returns an enumeration of the values in this hashtable. |
+| open [Enumeration](../java/util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#elements()()` Returns an enumeration of the values in this hashtable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>)` <br /> |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#get(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
@@ -66,11 +66,11 @@ The service type `Provider` is reserved for use by the security framework. Servi
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getOrDefault(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Searches for the property with the specified key in this property list. |
-| open [Provider.Service](https://developer.android.com/reference/kotlin/java/security/Provider.Service)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getService(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get the service describing this Provider's implementation of the specified type of this algorithm or alias. |
+| open [Provider.Service](../java/security/Provider.Service.md)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getService(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get the service describing this Provider's implementation of the specified type of this algorithm or alias. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Provider.Service](https://developer.android.com/reference/kotlin/java/security/Provider.Service)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#getServices()()` Get an unmodifiable Set of all services supported by this Provider. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Provider.Service](../java/security/Provider.Service.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#getServices()()` Get an unmodifiable Set of all services supported by this Provider. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#getVersion()()` Returns the version number for this provider. |
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#keys()()` Returns an enumeration of the keys in this hashtable. |
+| open [Enumeration](../java/util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#keys()()` Returns an enumeration of the keys in this hashtable. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#load(java.io.InputStream)(inStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Reads a property list (key and element pairs) from the input stream. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#merge(kotlin.Any,%20kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, *>)` If the specified key is not already associated with a value or is associated with null, associates it with the given value. |
@@ -314,7 +314,7 @@ An implementation is required to support writing of XML documents that use the "
 
 The specified stream remains open after this method returns.
 
-This method behaves the same as [storeToXML(OutputStream,String,Charset)](https://developer.android.com/reference/kotlin/java/util/Properties.html#storeToXML(java.io.OutputStream,%20kotlin.String,%20java.nio.charset.Charset)) except that it will java.nio.charset.Charset#forName using the given encoding name.
+This method behaves the same as [storeToXML(OutputStream,String,Charset)](../java/util/Properties.md)) except that it will java.nio.charset.Charset#forName using the given encoding name.
 
 <br />
 
@@ -425,7 +425,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | Parameters ||
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?, \*\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?, \*\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -460,7 +460,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | Parameters ||
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the specified value is to be associated |
-| `mappingFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the mapping function to compute a value |
+| `mappingFunction` | [Function](../java/util/function/Function.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the mapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -495,7 +495,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | Parameters ||
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -536,7 +536,7 @@ open fun forEach(action: BiConsumer<in Any!, in Any!>): Unit
 
 | Parameters ||
 |---|---|
-| `action` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: The action to be performed for each entry |
+| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: The action to be performed for each entry |
 
 | Exceptions ||
 |---|---|
@@ -719,7 +719,7 @@ Reads a property list (key and element pairs) from the input stream.
 
 | Parameters ||
 |---|---|
-| `inStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!: the input stream. |
+| `inStream` | [InputStream](../java/io/InputStream.md)!: the input stream. |
 
 | Exceptions ||
 |---|---|
@@ -750,7 +750,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the resulting value is to be associated |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html): the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -1000,7 +1000,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 
 | Parameters ||
 |---|---|
-| `function` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the function to apply to each entry |
+| `function` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the function to apply to each entry |
 
 | Exceptions ||
 |---|---|
@@ -1043,7 +1043,7 @@ Also, if there is a security manager, its `checkSecurityAccess` method is called
 
 | Parameters ||
 |---|---|
-| `s` | [Provider.Service](https://developer.android.com/reference/kotlin/java/security/Provider.Service)!: the Service to add |
+| `s` | [Provider.Service](../java/security/Provider.Service.md)!: the Service to add |
 
 | Exceptions ||
 |---|---|
@@ -1064,7 +1064,7 @@ Also, if there is a security manager, its `checkSecurityAccess` method is called
 
 | Parameters ||
 |---|---|
-| `s` | [Provider.Service](https://developer.android.com/reference/kotlin/java/security/Provider.Service)!: the Service to be removed |
+| `s` | [Provider.Service](../java/security/Provider.Service.md)!: the Service to be removed |
 
 | Exceptions ||
 |---|---|

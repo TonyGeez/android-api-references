@@ -6,22 +6,22 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface Predicate<T : Any!>
 ```
 
-| [java.util.function.Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#) |
+| [java.util.function.Predicate](../java/util/function/Predicate.md) |
 
 Represents a predicate (boolean-valued function) of one argument.
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/Predicate#test(java.util.function.Predicate.T)`.
+This is a [functional interface](../java/util/function/_package.md) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/Predicate#test(java.util.function.Predicate.T)`.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| open [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#and(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
-| open static [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#isEqual(kotlin.Any)(targetRef: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns a predicate that tests if two arguments are equal according to `https://developer.android.com/reference/kotlin/java/util/Objects.html#equals(kotlin.Any,%20kotlin.Any)`. |
-| open [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#negate()()` Returns a predicate that represents the logical negation of this predicate. |
+| open [Predicate](../java/util/function/Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#and(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
+| open static [Predicate](../java/util/function/Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#isEqual(kotlin.Any)(targetRef: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns a predicate that tests if two arguments are equal according to `https://developer.android.com/reference/kotlin/java/util/Objects.html#equals(kotlin.Any,%20kotlin.Any)`. |
+| open [Predicate](../java/util/function/Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#negate()()` Returns a predicate that represents the logical negation of this predicate. |
 | --- | --- |
-| open static [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#not(java.util.function.Predicate)(target: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a predicate that is the negation of the supplied predicate. |
-| open [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#or(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
+| open static [Predicate](../java/util/function/Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#not(java.util.function.Predicate)(target: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a predicate that is the negation of the supplied predicate. |
+| open [Predicate](../java/util/function/Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#or(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#test(java.util.function.Predicate.T)(t: T)` Evaluates this predicate on the given argument. |
 | --- | --- |
 
@@ -41,7 +41,7 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---|---|
-| `other` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<in T\>!: a predicate that will be logically-ANDed with this predicate |
+| `other` | [Predicate](../java/util/function/Predicate.md)\<in T\>!: a predicate that will be logically-ANDed with this predicate |
 
 | Return ||
 |---|---|
@@ -97,7 +97,7 @@ Returns a predicate that is the negation of the supplied predicate. This is acco
 | Parameters ||
 |---|---|
 | `<T>` | the type of arguments to the specified predicate |
-| `target` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<in T\>!: predicate to negate |
+| `target` | [Predicate](../java/util/function/Predicate.md)\<in T\>!: predicate to negate |
 
 | Return ||
 |---|---|
@@ -121,7 +121,7 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---|---|
-| `other` | [Predicate](https://developer.android.com/reference/kotlin/java/util/function/Predicate#)\<in T\>!: a predicate that will be logically-ORed with this predicate |
+| `other` | [Predicate](../java/util/function/Predicate.md)\<in T\>!: a predicate that will be logically-ORed with this predicate |
 
 | Return ||
 |---|---|

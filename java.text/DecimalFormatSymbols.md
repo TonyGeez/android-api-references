@@ -8,7 +8,7 @@ open class DecimalFormatSymbols : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.DecimalFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#) |
+| ↳ | [java.text.DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md) |
 
 This class represents the set of symbols (such as the decimal separator, the grouping separator, and so on) needed by `DecimalFormat` to format numbers. `DecimalFormat` creates for itself an instance of `DecimalFormatSymbols` from its locale data. If you need to change any of these symbols, you can get the `DecimalFormatSymbols` object from your `DecimalFormat` and modify it.
 
@@ -23,9 +23,9 @@ This class represents the set of symbols (such as the decimal separator, the gro
 |---|---|
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#clone()()` Standard override. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Override equals. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getAvailableLocales()()` Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getAvailableLocales()()` Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
 | --- | --- |
-| open [Currency](https://developer.android.com/reference/kotlin/java/util/Currency.html#)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getCurrency()()` Gets the currency of these DecimalFormatSymbols. |
+| open [Currency](../java/util/Currency.md)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getCurrency()()` Gets the currency of these DecimalFormatSymbols. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getCurrencySymbol()()` Returns the currency symbol for the currency of these DecimalFormatSymbols in their locale. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getDecimalSeparator()()` Gets the character used for decimal sign. |
 | --- | --- |
@@ -34,8 +34,8 @@ This class represents the set of symbols (such as the decimal separator, the gro
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getGroupingSeparator()()` Gets the character used for grouping separator. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInfinity()()` Gets the string used to represent infinity. |
-| static [DecimalFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance()()` Gets the `DecimalFormatSymbols` instance for the default locale. |
-| static [DecimalFormatSymbols](https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the `DecimalFormatSymbols` instance for the specified locale. |
+| static [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance()()` Gets the `DecimalFormatSymbols` instance for the default locale. |
+| static [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the `DecimalFormatSymbols` instance for the specified locale. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInternationalCurrencySymbol()()` Returns the ISO 4217 currency code of the currency of these DecimalFormatSymbols. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getMinusSign()()` Gets the character used to represent minus sign. |
@@ -110,7 +110,7 @@ This may return a `NumberFormat` instance with the Thai numbering system, instea
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the desired locale |
+| `locale` | [Locale](../java/util/Locale.md)!: the desired locale |
 
 | Exceptions ||
 |---|---|
@@ -311,7 +311,7 @@ This may return a `NumberFormat` instance with the Thai numbering system, instea
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the desired locale. |
+| `locale` | [Locale](../java/util/Locale.md)!: the desired locale. |
 
 | Return ||
 |---|---|
@@ -473,7 +473,7 @@ Sets the currency of these DecimalFormatSymbols. This also sets the currency sym
 
 | Parameters ||
 |---|---|
-| `currency` | [Currency](https://developer.android.com/reference/kotlin/java/util/Currency.html#)!: the new currency to be used |
+| `currency` | [Currency](../java/util/Currency.md)!: the new currency to be used |
 
 | Exceptions ||
 |---|---|

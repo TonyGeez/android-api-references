@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # TvContentRating
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvContentRating "View this page in Java") 
+Kotlin| [Java](../android/media/tv/TvContentRating.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ class TvContentRating
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.tv.TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#) |
+| ↳ | [android.media.tv.TvContentRating](../android/media/tv/TvContentRating.md) |
 
-A class representing a TV content rating. When a TV input service inserts the content rating information on a program into the database, this class can be used to generate the formatted string for [TvContract.Programs.COLUMN_CONTENT_RATING](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs#COLUMN_CONTENT_RATING:kotlin.String). To create a object, use the [TvContentRating.createRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#createRating(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))method with valid rating system string constants.
+A class representing a TV content rating. When a TV input service inserts the content rating information on a program into the database, this class can be used to generate the formatted string for [TvContract.Programs.COLUMN_CONTENT_RATING](../android/media/tv/TvContract.Programs.md). To create a object, use the [TvContentRating.createRating](../android/media/tv/TvContentRating.md))method with valid rating system string constants.
 
-It is possible for an application to define its own content rating system by supplying a content rating system definition XML resource (see example below) and declaring a broadcast receiver that filters [TvInputManager.ACTION_QUERY_CONTENT_RATING_SYSTEMS](https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager#ACTION_QUERY_CONTENT_RATING_SYSTEMS:kotlin.String) in its manifest.
+It is possible for an application to define its own content rating system by supplying a content rating system definition XML resource (see example below) and declaring a broadcast receiver that filters [TvInputManager.ACTION_QUERY_CONTENT_RATING_SYSTEMS](../android/media/tv/TvInputManager.md) in its manifest.
 
 ### Example: Rating system definition for the TV Parental Guidelines
 
@@ -368,23 +368,23 @@ TvContentRating rating = TvContentRating.createRating(
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#contains(android.media.tv.TvContentRating))`(`rating:` ` [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#)`)` Returns`true`if this rating has the same main rating as the specified rating and when this rating's sub-ratings contain the other's. |
-| static [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#)! | [createRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#createRating(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ratingSystem:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `rating:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `subRatings:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`TvContentRating`object with predefined content rating strings. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../android/media/tv/TvContentRating.md))`(`rating:` ` [TvContentRating](../android/media/tv/TvContentRating.md)`)` Returns`true`if this rating has the same main rating as the specified rating and when this rating's sub-ratings contain the other's. |
+| static [TvContentRating](../android/media/tv/TvContentRating.md)! | [createRating](../android/media/tv/TvContentRating.md))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ratingSystem:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `rating:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `subRatings:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`TvContentRating`object with predefined content rating strings. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/tv/TvContentRating.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [flattenToString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#flattenToString())`()` Returns a string that unambiguously describes the rating information contained in a`TvContentRating`object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDomain](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#getDomain())`()` Returns the domain of this`TvContentRating`object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMainRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#getMainRating())`()` Returns the main rating of this`TvContentRating`object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [flattenToString](../android/media/tv/TvContentRating.md))`()` Returns a string that unambiguously describes the rating information contained in a`TvContentRating`object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDomain](../android/media/tv/TvContentRating.md))`()` Returns the domain of this`TvContentRating`object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMainRating](../android/media/tv/TvContentRating.md))`()` Returns the main rating of this`TvContentRating`object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRatingSystem](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#getRatingSystem())`()` Returns the rating system of this`TvContentRating`object. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSubRatings](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#getSubRatings())`()` Returns the unmodifiable sub-rating string [List](https://developer.android.com/reference/kotlin/java/util/List.html#) of this`TvContentRating`object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#hashCode())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRatingSystem](../android/media/tv/TvContentRating.md))`()` Returns the rating system of this`TvContentRating`object. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSubRatings](../android/media/tv/TvContentRating.md))`()` Returns the unmodifiable sub-rating string [List](../java/util/List.md) of this`TvContentRating`object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/tv/TvContentRating.md))`()` <br /> |
 | --- | --- |
-| static [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#)! | [unflattenFromString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#unflattenFromString(kotlin.String))`(`ratingString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Recovers a`TvContentRating`object from the string that was previously created from [flattenToString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#flattenToString()). |
+| static [TvContentRating](../android/media/tv/TvContentRating.md)! | [unflattenFromString](../android/media/tv/TvContentRating.md))`(`ratingString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Recovers a`TvContentRating`object from the string that was previously created from [flattenToString](../android/media/tv/TvContentRating.md)). |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#)! | [UNRATED](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#UNRATED:android.media.tv.TvContentRating) Rating constant denoting unrated content. |
+| static [TvContentRating](../android/media/tv/TvContentRating.md)! | [UNRATED](../android/media/tv/TvContentRating.md) Rating constant denoting unrated content. |
 
 ## Public methods
 
@@ -402,7 +402,7 @@ For example, a`TvContentRating`object that represents TV-PG with S(Sexual conten
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rating` | [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#):The [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#) to check. This value cannot be`null`. |
+| `rating` | [TvContentRating](../android/media/tv/TvContentRating.md):The [TvContentRating](../android/media/tv/TvContentRating.md) to check. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -433,7 +433,7 @@ Creates a`TvContentRating`object with predefined content rating strings.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------------------|
-| [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#)! | A`TvContentRating`object. |
+| [TvContentRating](../android/media/tv/TvContentRating.md)! | A`TvContentRating`object. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -463,7 +463,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun flattenToString(): String!
 ```
 
-Returns a string that unambiguously describes the rating information contained in a`TvContentRating`object. One can later recover the object from this string through [unflattenFromString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#unflattenFromString(kotlin.String)).
+Returns a string that unambiguously describes the rating information contained in a`TvContentRating`object. One can later recover the object from this string through [unflattenFromString](../android/media/tv/TvContentRating.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
@@ -471,7 +471,7 @@ Returns a string that unambiguously describes the rating information contained i
 
 **See Also**
 
-- [#unflattenFromString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#unflattenFromString(kotlin.String)) 
+- [#unflattenFromString](../android/media/tv/TvContentRating.md)) 
 
 ### getDomain
 
@@ -511,7 +511,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getSubRatings(): MutableList<String!>!
 ```
 
-Returns the unmodifiable sub-rating string [List](https://developer.android.com/reference/kotlin/java/util/List.html#) of this`TvContentRating`object. 
+Returns the unmodifiable sub-rating string [List](../java/util/List.md) of this`TvContentRating`object. 
 
 ### hashCode
 
@@ -533,19 +533,19 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static fun unflattenFromString(ratingString: String!): TvContentRating!
 ```
 
-Recovers a`TvContentRating`object from the string that was previously created from [flattenToString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#flattenToString()).
+Recovers a`TvContentRating`object from the string that was previously created from [flattenToString](../android/media/tv/TvContentRating.md)).
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ratingString` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The string returned by [flattenToString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#flattenToString()). |
+| `ratingString` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The string returned by [flattenToString](../android/media/tv/TvContentRating.md)). |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [TvContentRating](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#)! | the`TvContentRating`object containing the domain, rating system, rating and sub-ratings information encoded in`ratingString`. |
+| [TvContentRating](../android/media/tv/TvContentRating.md)! | the`TvContentRating`object containing the domain, rating system, rating and sub-ratings information encoded in`ratingString`. |
 
 **See Also**
 
-- [#flattenToString](https://developer.android.com/reference/kotlin/android/media/tv/TvContentRating#flattenToString())
+- [#flattenToString](../android/media/tv/TvContentRating.md))
 
 ## Properties
 
@@ -559,4 +559,4 @@ static val UNRATED: TvContentRating!
 
 Rating constant denoting unrated content. Used to handle the case where the content rating information is missing.
 
-TV input services can call [TvInputManager.isRatingBlocked](https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager#isRatingBlocked(android.media.tv.TvContentRating))with this constant to determine whether they should block unrated content. The subsequent call to [TvInputService.Session.notifyContentBlocked](https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.Session#notifyContentBlocked(android.media.tv.TvContentRating))with the same constant notifies applications that the current program content is blocked by parental controls.
+TV input services can call [TvInputManager.isRatingBlocked](../android/media/tv/TvInputManager.md))with this constant to determine whether they should block unrated content. The subsequent call to [TvInputService.Session.notifyContentBlocked](../android/media/tv/TvInputService.Session.md))with the same constant notifies applications that the current program content is blocked by parental controls.

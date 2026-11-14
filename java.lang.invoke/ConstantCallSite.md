@@ -10,31 +10,31 @@ open class ConstantCallSite : CallSite
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.lang.invoke.CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) ||
-| | ↳ | [java.lang.invoke.ConstantCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#) |
+| ↳ | [java.lang.invoke.CallSite](../java/lang/invoke/CallSite.md) ||
+| | ↳ | [java.lang.invoke.ConstantCallSite](../java/lang/invoke/ConstantCallSite.md) |
 
-A`ConstantCallSite`is a [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) whose target is permanent, and can never be changed. An`invokedynamic`instruction linked to a`ConstantCallSite`is permanently bound to the call site's target.
+A`ConstantCallSite`is a [CallSite](../java/lang/invoke/CallSite.md) whose target is permanent, and can never be changed. An`invokedynamic`instruction linked to a`ConstantCallSite`is permanently bound to the call site's target.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConstantCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#ConstantCallSite(java.lang.invoke.MethodHandle))`(`target:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Creates a call site with a permanent target. |
+| [ConstantCallSite](../java/lang/invoke/ConstantCallSite.md))`(`target:` ` [MethodHandle](../java/lang/invoke/MethodHandle.md)!`)` Creates a call site with a permanent target. |
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConstantCallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#ConstantCallSite(java.lang.invoke.MethodType,%20java.lang.invoke.MethodHandle))`(`targetType:` ` [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!`, `createTargetHook:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Creates a call site with a permanent target, possibly bound to the call site itself. |
+| [ConstantCallSite](../java/lang/invoke/ConstantCallSite.md))`(`targetType:` ` [MethodType](../java/lang/invoke/MethodType.md)!`, `createTargetHook:` ` [MethodHandle](../java/lang/invoke/MethodHandle.md)!`)` Creates a call site with a permanent target, possibly bound to the call site itself. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [dynamicInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#dynamicInvoker())`()` Returns this call site's permanent target. |
-| [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | [getTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#getTarget())`()` Returns the target method of the call site, which behaves like a`final`field of the`ConstantCallSite`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](https://developer.android.com/reference/kotlin/java/lang/invoke/ConstantCallSite#setTarget(java.lang.invoke.MethodHandle))`(`ignore:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!`)` Always throws an [UnsupportedOperationException](https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#). |
+| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [dynamicInvoker](../java/lang/invoke/ConstantCallSite.md))`()` Returns this call site's permanent target. |
+| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [getTarget](../java/lang/invoke/ConstantCallSite.md))`()` Returns the target method of the call site, which behaves like a`final`field of the`ConstantCallSite`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](../java/lang/invoke/ConstantCallSite.md))`(`ignore:` ` [MethodHandle](../java/lang/invoke/MethodHandle.md)!`)` Always throws an [UnsupportedOperationException](../java/lang/UnsupportedOperationException.md). |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [CallSite](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite) |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)! | [type](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#type())`()` <br /> Returns the type of this call site's target. Although targets may change, any call site's type is permanent, and can never change to an unequal type. The`setTarget`method enforces this invariant by refusing any new target that does not have the previous target's type. <br /> | ||
+| From class [CallSite](../java/lang/invoke/CallSite.md) |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MethodType](../java/lang/invoke/MethodType.md)! | [type](../java/lang/invoke/CallSite.md))`()` <br /> Returns the type of this call site's target. Although targets may change, any call site's type is permanent, and can never change to an unequal type. The`setTarget`method enforces this invariant by refusing any new target that does not have the previous target's type. <br /> | ||
 
 ## Public constructors
 
@@ -50,7 +50,7 @@ Creates a call site with a permanent target.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!:the target to be permanently associated with this call site |
+| `target` | [MethodHandle](../java/lang/invoke/MethodHandle.md)!:the target to be permanently associated with this call site |
 
 | Exceptions ||
 |----------------------------------|--------------------------------|
@@ -82,8 +82,8 @@ While the hook is being called, the new`ConstantCallSite`object is in a partiall
 
 | Parameters ||
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `targetType` | [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType)!:the type of the method handle to be permanently associated with this call site |
-| `createTargetHook` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!:a method handle to invoke (on the call site) to produce the call site's target |
+| `targetType` | [MethodType](../java/lang/invoke/MethodType.md)!:the type of the method handle to be permanently associated with this call site |
+| `createTargetHook` | [MethodHandle](../java/lang/invoke/MethodHandle.md)!:a method handle to invoke (on the call site) to produce the call site's target |
 
 | Exceptions ||
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -103,11 +103,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun dynamicInvoker(): MethodHandle!
 ```
 
-Returns this call site's permanent target. Since that target will never change, this is a correct implementation of [CallSite.dynamicInvoker](https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#dynamicInvoker()).
+Returns this call site's permanent target. Since that target will never change, this is a correct implementation of [CallSite.dynamicInvoker](../java/lang/invoke/CallSite.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | the immutable linkage state of this call site, a constant method handle |
+| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | the immutable linkage state of this call site, a constant method handle |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------|
@@ -125,7 +125,7 @@ Returns the target method of the call site, which behaves like a`final`field of 
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)! | the immutable linkage state of this call site, a constant method handle |
+| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | the immutable linkage state of this call site, a constant method handle |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------|
@@ -139,12 +139,12 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun setTarget(ignore: MethodHandle!): Unit
 ```
 
-Always throws an [UnsupportedOperationException](https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#). This kind of call site cannot change its target.
+Always throws an [UnsupportedOperationException](../java/lang/UnsupportedOperationException.md). This kind of call site cannot change its target.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `newTarget` | the new target |
-| `ignore` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle)!:a new target proposed for the call site, which is ignored |
+| `ignore` | [MethodHandle](../java/lang/invoke/MethodHandle.md)!:a new target proposed for the call site, which is ignored |
 
 | Exceptions ||
 |---------------------------------------------|------------------------------------------------------------------------------------|

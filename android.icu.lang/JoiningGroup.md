@@ -6,7 +6,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 interface JoiningGroup
 ```
 
-| [android.icu.lang.UCharacter.JoiningGroup](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.JoiningGroup#) |
+| [android.icu.lang.UCharacter.JoiningGroup](../android/icu/lang/UCharacter.JoiningGroup.md) |
 
 Joining Group constants.
 

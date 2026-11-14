@@ -4,103 +4,103 @@
 
 ## Interfaces
 
-| [BlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingDeque) | A [Deque](https://developer.android.com/reference/kotlin/java/util/Deque.html#) that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element. |
+| [BlockingDeque](../java/util/concurrent/BlockingDeque.md) | A [Deque](../java/util/Deque.md) that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element. |
 | --- | --- |
-| [BlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) | A [Queue](https://developer.android.com/reference/kotlin/java/util/Queue.html#) that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element. |
-| [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable) | A task that returns a result and may throw an exception. |
-| [AsynchronousCompletionTask](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture.AsynchronousCompletionTask) | A marker interface identifying asynchronous tasks produced by`async`methods. |
+| [BlockingQueue](../java/util/concurrent/BlockingQueue.md) | A [Queue](../java/util/Queue.md) that additionally supports operations that wait for the queue to become non-empty when retrieving an element, and wait for space to become available in the queue when storing an element. |
+| [Callable](../java/util/concurrent/Callable.md) | A task that returns a result and may throw an exception. |
+| [AsynchronousCompletionTask](../java/util/concurrent/CompletableFuture.AsynchronousCompletionTask.md) | A marker interface identifying asynchronous tasks produced by`async`methods. |
 | --- | --- |
-| [CompletionService](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionService) | A service that decouples the production of new asynchronous tasks from the consumption of the results of completed tasks. |
-| [CompletionStage](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage) | A stage of a possibly asynchronous computation, that performs an action or computes a value when another CompletionStage completes. |
-| [ConcurrentMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap) | A [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) providing thread safety and atomicity guarantees. |
+| [CompletionService](../java/util/concurrent/CompletionService.md) | A service that decouples the production of new asynchronous tasks from the consumption of the results of completed tasks. |
+| [CompletionStage](../java/util/concurrent/CompletionStage.md) | A stage of a possibly asynchronous computation, that performs an action or computes a value when another CompletionStage completes. |
+| [ConcurrentMap](../java/util/concurrent/ConcurrentMap.md) | A [Map](../java/util/Map.md) providing thread safety and atomicity guarantees. |
 | --- | --- |
-| [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) | A [ConcurrentMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentMap) supporting [NavigableMap](https://developer.android.com/reference/kotlin/java/util/NavigableMap.html#) operations, and recursively so for its navigable sub-maps. |
-| [Delayed](https://developer.android.com/reference/kotlin/java/util/concurrent/Delayed) | A mix-in style interface for marking objects that should be acted upon after a given delay. |
-| [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) | An object that executes submitted [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#) tasks. |
+| [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md) | A [ConcurrentMap](../java/util/concurrent/ConcurrentMap.md) supporting [NavigableMap](../java/util/NavigableMap.md) operations, and recursively so for its navigable sub-maps. |
+| [Delayed](../java/util/concurrent/Delayed.md) | A mix-in style interface for marking objects that should be acted upon after a given delay. |
+| [Executor](../java/util/concurrent/Executor.md) | An object that executes submitted [Runnable](../java/lang/Runnable.md) tasks. |
 | --- | --- |
-| [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) | An [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) that provides methods to manage termination and methods that can produce a [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future) for tracking progress of one or more asynchronous tasks. |
-| [Processor](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Processor) | A component that acts as both a Subscriber and Publisher. |
-| [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) | A producer of items (and related control messages) received by Subscribers. |
+| [ExecutorService](../java/util/concurrent/ExecutorService.md) | An [Executor](../java/util/concurrent/Executor.md) that provides methods to manage termination and methods that can produce a [Future](../java/util/concurrent/Future.md) for tracking progress of one or more asynchronous tasks. |
+| [Processor](../java/util/concurrent/Flow.Processor.md) | A component that acts as both a Subscriber and Publisher. |
+| [Publisher](../java/util/concurrent/Flow.Publisher.md) | A producer of items (and related control messages) received by Subscribers. |
 | --- | --- |
-| [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber) | A receiver of messages. |
-| [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription) | Message control linking a [Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) and [Subscriber](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber). |
-| [ForkJoinWorkerThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory) | Factory for creating new [ForkJoinWorkerThread](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread) s. |
+| [Subscriber](../java/util/concurrent/Flow.Subscriber.md) | A receiver of messages. |
+| [Subscription](../java/util/concurrent/Flow.Subscription.md) | Message control linking a [Publisher](../java/util/concurrent/Flow.Publisher.md) and [Subscriber](../java/util/concurrent/Flow.Subscriber.md). |
+| [ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md) | Factory for creating new [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md) s. |
 | --- | --- |
-| [ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker) | Interface for extending managed parallelism for tasks running in [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool) s. |
-| [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future) | A represents the result of an asynchronous computation. |
-| [RejectedExecutionHandler](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionHandler) | A handler for tasks that cannot be executed by a [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor). |
+| [ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md) | Interface for extending managed parallelism for tasks running in [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md) s. |
+| [Future](../java/util/concurrent/Future.md) | A represents the result of an asynchronous computation. |
+| [RejectedExecutionHandler](../java/util/concurrent/RejectedExecutionHandler.md) | A handler for tasks that cannot be executed by a [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md). |
 | --- | --- |
-| [RunnableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableFuture) | A [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future) that is [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#). |
-| [RunnableScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/RunnableScheduledFuture) | A [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture) that is [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#). |
-| [ScheduledExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) that can schedule commands to run after a given delay, or to execute periodically. |
+| [RunnableFuture](../java/util/concurrent/RunnableFuture.md) | A [Future](../java/util/concurrent/Future.md) that is [Runnable](../java/lang/Runnable.md). |
+| [RunnableScheduledFuture](../java/util/concurrent/RunnableScheduledFuture.md) | A [ScheduledFuture](../java/util/concurrent/ScheduledFuture.md) that is [Runnable](../java/lang/Runnable.md). |
+| [ScheduledExecutorService](../java/util/concurrent/ScheduledExecutorService.md) | An [ExecutorService](../java/util/concurrent/ExecutorService.md) that can schedule commands to run after a given delay, or to execute periodically. |
 | --- | --- |
-| [ScheduledFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledFuture) | A delayed result-bearing action that can be cancelled. |
-| [ThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory) | An object that creates new threads on demand. |
-| [TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue) | A [BlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) in which producers may wait for consumers to receive elements. |
+| [ScheduledFuture](../java/util/concurrent/ScheduledFuture.md) | A delayed result-bearing action that can be cancelled. |
+| [ThreadFactory](../java/util/concurrent/ThreadFactory.md) | An object that creates new threads on demand. |
+| [TransferQueue](../java/util/concurrent/TransferQueue.md) | A [BlockingQueue](../java/util/concurrent/BlockingQueue.md) in which producers may wait for consumers to receive elements. |
 | --- | --- |
 
 ## Classes
 
-| [AbstractExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/AbstractExecutorService) | Provides default implementations of [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) execution methods. |
+| [AbstractExecutorService](../java/util/concurrent/AbstractExecutorService.md) | Provides default implementations of [ExecutorService](../java/util/concurrent/ExecutorService.md) execution methods. |
 | --- | --- |
-| [ArrayBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/ArrayBlockingQueue) | A bounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) backed by an array. |
-| [CompletableFuture](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture) | A [Future](https://developer.android.com/reference/kotlin/java/util/concurrent/Future) that may be explicitly completed (setting its value and status), and may be used as a [CompletionStage](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage), supporting dependent functions and actions that trigger upon its completion. |
-| [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. |
+| [ArrayBlockingQueue](../java/util/concurrent/ArrayBlockingQueue.md) | A bounded [blocking queue](../java/util/concurrent/BlockingQueue.md) backed by an array. |
+| [CompletableFuture](../java/util/concurrent/CompletableFuture.md) | A [Future](../java/util/concurrent/Future.md) that may be explicitly completed (setting its value and status), and may be used as a [CompletionStage](../java/util/concurrent/CompletionStage.md), supporting dependent functions and actions that trigger upon its completion. |
+| [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md) | A hash table supporting full concurrency of retrievals and high expected concurrency for updates. |
 | --- | --- |
-| [ConcurrentLinkedDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque) | An unbounded concurrent [deque](https://developer.android.com/reference/kotlin/java/util/Deque.html#) based on linked nodes. |
-| [ConcurrentLinkedQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedQueue) | An unbounded thread-safe [queue](https://developer.android.com/reference/kotlin/java/util/Queue.html#) based on linked nodes. |
-| [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap) | A scalable concurrent [ConcurrentNavigableMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap) implementation. |
+| [ConcurrentLinkedDeque](../java/util/concurrent/ConcurrentLinkedDeque.md) | An unbounded concurrent [deque](../java/util/Deque.md) based on linked nodes. |
+| [ConcurrentLinkedQueue](../java/util/concurrent/ConcurrentLinkedQueue.md) | An unbounded thread-safe [queue](../java/util/Queue.md) based on linked nodes. |
+| [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md) | A scalable concurrent [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md) implementation. |
 | --- | --- |
-| [ConcurrentSkipListSet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListSet) | A scalable concurrent [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#) implementation based on a [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap). |
-| [CopyOnWriteArrayList](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList) | A thread-safe variant of [java.util.ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html#) in which all mutative operations (`add`,`set`, and so on) are implemented by making a fresh copy of the underlying array. |
-| [CopyOnWriteArraySet](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArraySet) | A [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) that uses an internal [CopyOnWriteArrayList](https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList) for all of its operations. |
+| [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](../java/util/NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md). |
+| [CopyOnWriteArrayList](../java/util/concurrent/CopyOnWriteArrayList.md) | A thread-safe variant of [java.util.ArrayList](../java/util/ArrayList.md) in which all mutative operations (`add`,`set`, and so on) are implemented by making a fresh copy of the underlying array. |
+| [CopyOnWriteArraySet](../java/util/concurrent/CopyOnWriteArraySet.md) | A [Set](../java/util/Set.md) that uses an internal [CopyOnWriteArrayList](../java/util/concurrent/CopyOnWriteArrayList.md) for all of its operations. |
 | --- | --- |
-| [CountDownLatch](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch) | A synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes. |
-| [CountedCompleter](https://developer.android.com/reference/kotlin/java/util/concurrent/CountedCompleter) | A [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) with a completion action performed when triggered and there are no remaining pending actions. |
-| [CyclicBarrier](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier) | A synchronization aid that allows a set of threads to all wait for each other to reach a common barrier point. |
+| [CountDownLatch](../java/util/concurrent/CountDownLatch.md) | A synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes. |
+| [CountedCompleter](../java/util/concurrent/CountedCompleter.md) | A [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) with a completion action performed when triggered and there are no remaining pending actions. |
+| [CyclicBarrier](../java/util/concurrent/CyclicBarrier.md) | A synchronization aid that allows a set of threads to all wait for each other to reach a common barrier point. |
 | --- | --- |
-| [DelayQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/DelayQueue) | An unbounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) of [Delayed](https://developer.android.com/reference/kotlin/java/util/concurrent/Delayed) elements, in which an element generally becomes eligible for removal when its delay has expired. |
-| [Exchanger](https://developer.android.com/reference/kotlin/java/util/concurrent/Exchanger) | A synchronization point at which threads can pair and swap elements within pairs. |
-| [ExecutorCompletionService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorCompletionService) | A [CompletionService](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionService) that uses a supplied [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) to execute tasks. |
+| [DelayQueue](../java/util/concurrent/DelayQueue.md) | An unbounded [blocking queue](../java/util/concurrent/BlockingQueue.md) of [Delayed](../java/util/concurrent/Delayed.md) elements, in which an element generally becomes eligible for removal when its delay has expired. |
+| [Exchanger](../java/util/concurrent/Exchanger.md) | A synchronization point at which threads can pair and swap elements within pairs. |
+| [ExecutorCompletionService](../java/util/concurrent/ExecutorCompletionService.md) | A [CompletionService](../java/util/concurrent/CompletionService.md) that uses a supplied [Executor](../java/util/concurrent/Executor.md) to execute tasks. |
 | --- | --- |
-| [Executors](https://developer.android.com/reference/kotlin/java/util/concurrent/Executors) | Factory and utility methods for [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor), [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService), [ScheduledExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledExecutorService), [ThreadFactory](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory), and [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable) classes defined in this package. |
-| [Flow](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow) | Interrelated interfaces and static methods for establishing flow-controlled components in which [Publishers](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) produce items consumed by one or more [Subscribers](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscriber), each managed by a [Subscription](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Subscription). |
-| [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) for running [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) s. |
+| [Executors](../java/util/concurrent/Executors.md) | Factory and utility methods for [Executor](../java/util/concurrent/Executor.md), [ExecutorService](../java/util/concurrent/ExecutorService.md), [ScheduledExecutorService](../java/util/concurrent/ScheduledExecutorService.md), [ThreadFactory](../java/util/concurrent/ThreadFactory.md), and [Callable](../java/util/concurrent/Callable.md) classes defined in this package. |
+| [Flow](../java/util/concurrent/Flow.md) | Interrelated interfaces and static methods for establishing flow-controlled components in which [Publishers](../java/util/concurrent/Flow.Publisher.md) produce items consumed by one or more [Subscribers](../java/util/concurrent/Flow.Subscriber.md), each managed by a [Subscription](../java/util/concurrent/Flow.Subscription.md). |
+| [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md) | An [ExecutorService](../java/util/concurrent/ExecutorService.md) for running [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) s. |
 | --- | --- |
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) | Abstract base class for tasks that run within a [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool). |
-| [ForkJoinWorkerThread](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread) | A thread managed by a [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool), which executes [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask) s. |
-| [FutureTask](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask) | A cancellable asynchronous computation. |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) | Abstract base class for tasks that run within a [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md). |
+| [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md) | A thread managed by a [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md), which executes [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) s. |
+| [FutureTask](../java/util/concurrent/FutureTask.md) | A cancellable asynchronous computation. |
 | --- | --- |
-| [LinkedBlockingDeque](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingDeque) | An optionally-bounded [blocking deque](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingDeque) based on linked nodes. |
-| [LinkedBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedBlockingQueue) | An optionally-bounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) based on linked nodes. |
-| [LinkedTransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/LinkedTransferQueue) | An unbounded [TransferQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/TransferQueue) based on linked nodes. |
+| [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md) | An optionally-bounded [blocking deque](../java/util/concurrent/BlockingDeque.md) based on linked nodes. |
+| [LinkedBlockingQueue](../java/util/concurrent/LinkedBlockingQueue.md) | An optionally-bounded [blocking queue](../java/util/concurrent/BlockingQueue.md) based on linked nodes. |
+| [LinkedTransferQueue](../java/util/concurrent/LinkedTransferQueue.md) | An unbounded [TransferQueue](../java/util/concurrent/TransferQueue.md) based on linked nodes. |
 | --- | --- |
-| [Phaser](https://developer.android.com/reference/kotlin/java/util/concurrent/Phaser) | A reusable synchronization barrier, similar in functionality to [CyclicBarrier](https://developer.android.com/reference/kotlin/java/util/concurrent/CyclicBarrier) and [CountDownLatch](https://developer.android.com/reference/kotlin/java/util/concurrent/CountDownLatch) but supporting more flexible usage. |
-| [PriorityBlockingQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/PriorityBlockingQueue) | An unbounded [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) that uses the same ordering rules as class [PriorityQueue](https://developer.android.com/reference/kotlin/java/util/PriorityQueue.html#) and supplies blocking retrieval operations. |
-| [RecursiveAction](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveAction) | A recursive resultless [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask). |
+| [Phaser](../java/util/concurrent/Phaser.md) | A reusable synchronization barrier, similar in functionality to [CyclicBarrier](../java/util/concurrent/CyclicBarrier.md) and [CountDownLatch](../java/util/concurrent/CountDownLatch.md) but supporting more flexible usage. |
+| [PriorityBlockingQueue](../java/util/concurrent/PriorityBlockingQueue.md) | An unbounded [blocking queue](../java/util/concurrent/BlockingQueue.md) that uses the same ordering rules as class [PriorityQueue](../java/util/PriorityQueue.md) and supplies blocking retrieval operations. |
+| [RecursiveAction](../java/util/concurrent/RecursiveAction.md) | A recursive resultless [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md). |
 | --- | --- |
-| [RecursiveTask](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveTask) | A recursive result-bearing [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask). |
-| [ScheduledThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ScheduledThreadPoolExecutor) | A [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) that can additionally schedule commands to run after a given delay, or to execute periodically. |
-| [Semaphore](https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore) | A counting semaphore. |
+| [RecursiveTask](../java/util/concurrent/RecursiveTask.md) | A recursive result-bearing [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md). |
+| [ScheduledThreadPoolExecutor](../java/util/concurrent/ScheduledThreadPoolExecutor.md) | A [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) that can additionally schedule commands to run after a given delay, or to execute periodically. |
+| [Semaphore](../java/util/concurrent/Semaphore.md) | A counting semaphore. |
 | --- | --- |
-| [SubmissionPublisher](https://developer.android.com/reference/kotlin/java/util/concurrent/SubmissionPublisher) | A [Flow.Publisher](https://developer.android.com/reference/kotlin/java/util/concurrent/Flow.Publisher) that asynchronously issues submitted (non-null) items to current subscribers until it is closed. |
-| [SynchronousQueue](https://developer.android.com/reference/kotlin/java/util/concurrent/SynchronousQueue) | A [blocking queue](https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue) in which each insert operation must wait for a corresponding remove operation by another thread, and vice versa. |
-| [ThreadLocalRandom](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadLocalRandom) | A random number generator (with period 264) isolated to the current thread. |
+| [SubmissionPublisher](../java/util/concurrent/SubmissionPublisher.md) | A [Flow.Publisher](../java/util/concurrent/Flow.Publisher.md) that asynchronously issues submitted (non-null) items to current subscribers until it is closed. |
+| [SynchronousQueue](../java/util/concurrent/SynchronousQueue.md) | A [blocking queue](../java/util/concurrent/BlockingQueue.md) in which each insert operation must wait for a corresponding remove operation by another thread, and vice versa. |
+| [ThreadLocalRandom](../java/util/concurrent/ThreadLocalRandom.md) | A random number generator (with period 264) isolated to the current thread. |
 | --- | --- |
-| [ThreadPoolExecutor](https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor) | An [ExecutorService](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService) that executes each submitted task using one of possibly several pooled threads, normally configured using [Executors](https://developer.android.com/reference/kotlin/java/util/concurrent/Executors) factory methods. |
+| [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) | An [ExecutorService](../java/util/concurrent/ExecutorService.md) that executes each submitted task using one of possibly several pooled threads, normally configured using [Executors](../java/util/concurrent/Executors.md) factory methods. |
 
 ## Exceptions
 
-| [BrokenBarrierException](https://developer.android.com/reference/kotlin/java/util/concurrent/BrokenBarrierException) | Exception thrown when a thread tries to wait upon a barrier that is in a broken state, or which enters the broken state while the thread is waiting. |
+| [BrokenBarrierException](../java/util/concurrent/BrokenBarrierException.md) | Exception thrown when a thread tries to wait upon a barrier that is in a broken state, or which enters the broken state while the thread is waiting. |
 | --- | --- |
-| [CancellationException](https://developer.android.com/reference/kotlin/java/util/concurrent/CancellationException) | Exception indicating that the result of a value-producing task, such as a [FutureTask](https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask), cannot be retrieved because the task was cancelled. |
-| [CompletionException](https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException) | Exception thrown when an error or other exception is encountered in the course of completing a result or task. |
-| [ExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutionException) | Exception thrown when attempting to retrieve the result of a task that aborted by throwing an exception. |
+| [CancellationException](../java/util/concurrent/CancellationException.md) | Exception indicating that the result of a value-producing task, such as a [FutureTask](../java/util/concurrent/FutureTask.md), cannot be retrieved because the task was cancelled. |
+| [CompletionException](../java/util/concurrent/CompletionException.md) | Exception thrown when an error or other exception is encountered in the course of completing a result or task. |
+| [ExecutionException](../java/util/concurrent/ExecutionException.md) | Exception thrown when attempting to retrieve the result of a task that aborted by throwing an exception. |
 | --- | --- |
-| [RejectedExecutionException](https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionException) | Exception thrown by an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor) when a task cannot be accepted for execution. |
-| [TimeoutException](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeoutException) | Exception thrown when a blocking operation times out. |
+| [RejectedExecutionException](../java/util/concurrent/RejectedExecutionException.md) | Exception thrown by an [Executor](../java/util/concurrent/Executor.md) when a task cannot be accepted for execution. |
+| [TimeoutException](../java/util/concurrent/TimeoutException.md) | Exception thrown when a blocking operation times out. |
 
 ## Enums
 
-| [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit) | A represents time durations at a given unit of granularity and provides utility methods to convert across units, and to perform timing and delay operations in these units. |
+| [TimeUnit](../java/util/concurrent/TimeUnit.md) | A represents time durations at a given unit of granularity and provides utility methods to convert across units, and to perform timing and delay operations in these units. |
 | --- | --- |

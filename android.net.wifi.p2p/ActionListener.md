@@ -4,14 +4,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # ActionListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md) 
 | --- | --- |
 
 ```
 interface ActionListener
 ```
 
-| [android.net.wifi.p2p.WifiP2pManager.ActionListener](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ActionListener#) |
+| [android.net.wifi.p2p.WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md) |
 
 Interface for callback invocation on an application action
 
@@ -19,8 +19,8 @@ Interface for callback invocation on an application action
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFailure](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ActionListener#onFailure(kotlin.Int))`(`reason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The operation failed |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSuccess](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ActionListener#onSuccess())`()` The operation succeeded |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFailure](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md))`(`reason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The operation failed |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSuccess](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md))`()` The operation succeeded |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ The operation failed
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The reason for failure could be one of [P2P_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#P2P_UNSUPPORTED:kotlin.Int), [ERROR](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#ERROR:kotlin.Int) or [BUSY](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#BUSY:kotlin.Int) |
+| `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The reason for failure could be one of [P2P_UNSUPPORTED](../android/net/wifi/p2p/WifiP2pManager.md), [ERROR](../android/net/wifi/p2p/WifiP2pManager.md) or [BUSY](../android/net/wifi/p2p/WifiP2pManager.md) |
 
 ### onSuccess
 

@@ -4,14 +4,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # OnCancelListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/CancellationSignal.OnCancelListener "View this page in Java") 
+Kotlin| [Java](../android/os/CancellationSignal.OnCancelListener.md) 
 | --- | --- |
 
 ```
 interface OnCancelListener
 ```
 
-| [android.os.CancellationSignal.OnCancelListener](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.OnCancelListener#) |
+| [android.os.CancellationSignal.OnCancelListener](../android/os/CancellationSignal.OnCancelListener.md) |
 
 Listens for cancellation.
 
@@ -19,7 +19,7 @@ Listens for cancellation.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCancel](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.OnCancelListener#onCancel())`()` Called when [CancellationSignal.cancel](https://developer.android.com/reference/kotlin/android/os/CancellationSignal#cancel())is invoked. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCancel](../android/os/CancellationSignal.OnCancelListener.md))`()` Called when [CancellationSignal.cancel](../android/os/CancellationSignal.md))is invoked. |
 
 ## Public methods
 
@@ -31,4 +31,4 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onCancel(): Unit
 ```
 
-Called when [CancellationSignal.cancel](https://developer.android.com/reference/kotlin/android/os/CancellationSignal#cancel())is invoked.
+Called when [CancellationSignal.cancel](../android/os/CancellationSignal.md))is invoked.

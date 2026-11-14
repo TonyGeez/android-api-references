@@ -10,10 +10,10 @@ class LinkOption : CopyOption, OpenOption
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#)\> ||
-| | ↳ | [java.nio.file.LinkOption](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.LinkOption](../java/nio/file/LinkOption.md)\> ||
+| | ↳ | [java.nio.file.LinkOption](../java/nio/file/LinkOption.md) |
 
-| Known Direct Subclasses [LinkOption.NOFOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#ENUM_VALUE:NOFOLLOW_LINKS) |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------| | [LinkOption.NOFOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#ENUM_VALUE:NOFOLLOW_LINKS) | Do not follow symbolic links. | |
+| Known Direct Subclasses [LinkOption.NOFOLLOW_LINKS](../java/nio/file/LinkOption.md) |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------| | [LinkOption.NOFOLLOW_LINKS](../java/nio/file/LinkOption.md) | Do not follow symbolic links. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Defines the options as to how symbolic links are handled.
@@ -22,7 +22,7 @@ Defines the options as to how symbolic links are handled.
 
 | Enum values ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NOFOLLOW_LINKS](https://developer.android.com/reference/kotlin/java/nio/file/LinkOption#ENUM_VALUE:NOFOLLOW_LINKS) Do not follow symbolic links. |
+| [NOFOLLOW_LINKS](../java/nio/file/LinkOption.md) Do not follow symbolic links. |
 
 ## Enum values
 
@@ -38,4 +38,4 @@ Do not follow symbolic links.
 **See Also**
 
 - [java.nio.file.Files#getFileAttributeView(Path,Class,LinkOption[])](https://developer.android.com/reference/kotlin/java/nio/file/Files#getFileAttributeView(java.nio.file.Path,%20java.lang.Class,%20java.nio.file.LinkOption))
-- [java.nio.file.SecureDirectoryStream#newByteChannel](https://developer.android.com/reference/kotlin/java/nio/file/SecureDirectoryStream#newByteChannel(java.nio.file.SecureDirectoryStream.T,%20kotlin.collections.MutableSet,%20java.nio.file.attribute.FileAttribute))
+- [java.nio.file.SecureDirectoryStream#newByteChannel](../java/nio/file/SecureDirectoryStream.md))

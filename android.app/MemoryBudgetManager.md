@@ -8,7 +8,7 @@ class MemoryBudgetManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.MemoryBudgetManager](https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#) |
+| ↳ | [android.app.MemoryBudgetManager](../android/app/MemoryBudgetManager.md) |
 
 This class is the client interface to memory budgets for applications and processes. A memory budget is a promise by the application or one of its processes that its memory requirements will not exceed some limit. The budget is not a hard limit: it can be exceeded but that will likely cause processes to slow down as they try to release memory and drop below the budget limit.
 
@@ -207,8 +207,8 @@ An OnOverBudgetListener callback can only be registered once.
 
 | Parameters ||
 |---|---|
-| `looper` | [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.html#)?: `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener` callbacks will be dispatched on this Looper's thread. If `null`, the looper from Looper.getMainLooper() will be used. |
-| `listener` | [MemoryBudgetManager.OnOverBudgetListener](https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener): callback to be notified of an over-budget event. This value cannot be `null`. |
+| `looper` | [Looper](../android/os/Looper.md)?: `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener` callbacks will be dispatched on this Looper's thread. If `null`, the looper from Looper.getMainLooper() will be used. |
+| `listener` | [MemoryBudgetManager.OnOverBudgetListener](../android/app/MemoryBudgetManager.OnOverBudgetListener.md): callback to be notified of an over-budget event. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -234,8 +234,8 @@ An OnOverBudgetListener callback can only be registered once.
 
 | Parameters ||
 |---|---|
-| `looper` | [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.html#)?: `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener` callbacks will be dispatched on this Looper's thread. If `null`, the looper from Looper.getMainLooper() will be used. |
-| `listener` | [MemoryBudgetManager.OnOverBudgetListener](https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener): callback to be notified of an over-budget event. This value cannot be `null`. |
+| `looper` | [Looper](../android/os/Looper.md)?: `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener` callbacks will be dispatched on this Looper's thread. If `null`, the looper from Looper.getMainLooper() will be used. |
+| `listener` | [MemoryBudgetManager.OnOverBudgetListener](../android/app/MemoryBudgetManager.OnOverBudgetListener.md): callback to be notified of an over-budget event. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -292,7 +292,7 @@ Unregisters a package budget listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [MemoryBudgetManager.OnOverBudgetListener](https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener): The callback to be notified of an over-budget event. This value cannot be `null`. |
+| `listener` | [MemoryBudgetManager.OnOverBudgetListener](../android/app/MemoryBudgetManager.OnOverBudgetListener.md): The callback to be notified of an over-budget event. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -310,7 +310,7 @@ Unregisters a process budget listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [MemoryBudgetManager.OnOverBudgetListener](https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener): The callback to be notified of an over-budget event. This value cannot be `null`. |
+| `listener` | [MemoryBudgetManager.OnOverBudgetListener](../android/app/MemoryBudgetManager.OnOverBudgetListener.md): The callback to be notified of an over-budget event. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

@@ -4,14 +4,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # SurfaceControlInputReceiver
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/SurfaceControlInputReceiver "View this page in Java") 
+Kotlin| [Java](../android/view/SurfaceControlInputReceiver.md) 
 | --- | --- |
 
 ```
 interface SurfaceControlInputReceiver
 ```
 
-| [android.view.SurfaceControlInputReceiver](https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver#) |
+| [android.view.SurfaceControlInputReceiver](../android/view/SurfaceControlInputReceiver.md) |
 
 Provides a mechanism for a SurfaceControl to receive input events.
 
@@ -19,7 +19,7 @@ Provides a mechanism for a SurfaceControl to receive input events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onInputEvent](https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver#onInputEvent(android.view.InputEvent))`(`event:` ` [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent)`)` When input events are batched, this is called at most once per frame. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onInputEvent](../android/view/SurfaceControlInputReceiver.md))`(`event:` ` [InputEvent](../android/view/InputEvent.md)`)` When input events are batched, this is called at most once per frame. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ When input events are batched, this is called at most once per frame. When non b
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent):The input event that was received. This input event object will become invalid and recycled after this method is invoked. If there is need to persist this object beyond the scope of this method, the overriding code should make a copy of this object. For example, using [MotionEvent.obtain(MotionEvent other)](https://developer.android.com/reference/kotlin/android/view/MotionEvent#obtain(android.view.MotionEvent))or [KeyEvent.KeyEvent(KeyEvent)](https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(android.view.KeyEvent))} This value cannot be`null`. |
+| `event` | [InputEvent](../android/view/InputEvent.md):The input event that was received. This input event object will become invalid and recycled after this method is invoked. If there is need to persist this object beyond the scope of this method, the overriding code should make a copy of this object. For example, using [MotionEvent.obtain(MotionEvent other)](../android/view/MotionEvent.md))or [KeyEvent.KeyEvent(KeyEvent)](../android/view/KeyEvent.md))} This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|

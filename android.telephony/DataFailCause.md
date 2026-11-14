@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # DataFailCause
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/DataFailCause "View this page in Java") 
+Kotlin| [Java](../android/telephony/DataFailCause.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class DataFailCause
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.DataFailCause](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#) |
+| ↳ | [android.telephony.DataFailCause](../android/telephony/DataFailCause.md) |
 
 DataFailCause collects data connection failure causes code from different sources.
 
@@ -21,496 +21,496 @@ DataFailCause collects data connection failure causes code from different source
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_ATTEMPT_ALREADY_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACCESS_ATTEMPT_ALREADY_IN_PROGRESS:kotlin.Int) Access attempt is already in progress. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_BLOCK](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACCESS_BLOCK:kotlin.Int) Access blocked by the base station. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_BLOCK_ALL](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACCESS_BLOCK_ALL:kotlin.Int) Access blocked by the base station for all mobile devices. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_CLASS_DSAC_REJECTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACCESS_CLASS_DSAC_REJECTION:kotlin.Int) Access class blocking restrictions for the current camped cell. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_CONTROL_LIST_CHECK_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACCESS_CONTROL_LIST_CHECK_FAILURE:kotlin.Int) Access control list check failure at the lower layer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVATION_REJECTED_BCM_VIOLATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACTIVATION_REJECTED_BCM_VIOLATION:kotlin.Int) UE requested to modify QoS parameters or the bearer control mode, which is not compatible with the selected bearer control mode. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVATION_REJECT_GGSN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACTIVATION_REJECT_GGSN:kotlin.Int) Activation rejected by Gateway GPRS Support Node (GGSN), Serving Gateway or PDN Gateway. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVATION_REJECT_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACTIVATION_REJECT_UNSPECIFIED:kotlin.Int) Activation rejected, unspecified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVE_PDP_CONTEXT_MAX_NUMBER_REACHED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ACTIVE_PDP_CONTEXT_MAX_NUMBER_REACHED:kotlin.Int) Max number of Packet Data Protocol (PDP) context reached. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_MATCHING_RULES_FAILED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ALL_MATCHING_RULES_FAILED:kotlin.Int) If connection failed for all matching URSP rules. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_DISABLED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#APN_DISABLED:kotlin.Int) APN has been disabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_DISALLOWED_ON_ROAMING](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#APN_DISALLOWED_ON_ROAMING:kotlin.Int) PDN connection to the APN is disallowed on the roaming network. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#APN_MISMATCH:kotlin.Int) New PDN bring up is rejected during interface selection because the UE has already allotted the available interfaces for other PDNs. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_PARAMETERS_CHANGED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#APN_PARAMETERS_CHANGED:kotlin.Int) APN-related parameters are changed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_PENDING_HANDOVER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#APN_PENDING_HANDOVER:kotlin.Int) Interface bring up is attempted for an APN that is yet to be handed over to target RAT. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_TYPE_CONFLICT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#APN_TYPE_CONFLICT:kotlin.Int) APN type conflict. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUTH_FAILURE_ON_EMERGENCY_CALL](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#AUTH_FAILURE_ON_EMERGENCY_CALL:kotlin.Int) Authentication failure on emergency call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEARER_HANDLING_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#BEARER_HANDLING_NOT_SUPPORTED:kotlin.Int) Procedure requested by the UE was rejected because the bearer handling is not supported. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALL_DISALLOWED_IN_ROAMING](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CALL_DISALLOWED_IN_ROAMING:kotlin.Int) Roaming is disallowed during call bring up. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALL_PREEMPT_BY_EMERGENCY_APN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CALL_PREEMPT_BY_EMERGENCY_APN:kotlin.Int) Emergency call bring up on a different ePDG. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANNOT_ENCODE_OTA_MESSAGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CANNOT_ENCODE_OTA_MESSAGE:kotlin.Int) Unable to encode the OTA message for MT PDP or deactivate PDP. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_ALERT_STOP](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CDMA_ALERT_STOP:kotlin.Int) Received an alert stop from the base station due to incoming only. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_INCOMING_CALL](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CDMA_INCOMING_CALL:kotlin.Int) Receiving an incoming call from the base station. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_INTERCEPT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CDMA_INTERCEPT:kotlin.Int) Received an intercept order from the base station. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_LOCK](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CDMA_LOCK:kotlin.Int) Device in CDMA locked state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_RELEASE_DUE_TO_SO_REJECTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CDMA_RELEASE_DUE_TO_SO_REJECTION:kotlin.Int) Receiving a release from the base station with a SO (Service Option) Reject reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_REORDER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CDMA_REORDER:kotlin.Int) Receiving a reorder from the base station. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_RETRY_ORDER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CDMA_RETRY_ORDER:kotlin.Int) Receiving a retry order from the base station. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_ACQUISITION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CHANNEL_ACQUISITION_FAILURE:kotlin.Int) Channel acquisition failures. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CLOSE_IN_PROGRESS:kotlin.Int) Tearing down is in progress. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COLLISION_WITH_NETWORK_INITIATED_REQUEST](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#COLLISION_WITH_NETWORK_INITIATED_REQUEST:kotlin.Int) Network has already initiated the activation, modification, or deactivation of bearer resources that was requested by the UE. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPANION_IFACE_IN_USE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#COMPANION_IFACE_IN_USE:kotlin.Int) Companion interface in use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONCURRENT_SERVICES_INCOMPATIBLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CONCURRENT_SERVICES_INCOMPATIBLE:kotlin.Int) The concurrent services requested were not compatible. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONCURRENT_SERVICES_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CONCURRENT_SERVICES_NOT_ALLOWED:kotlin.Int) In favor of a voice call or SMS when concurrent voice and data are not supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONCURRENT_SERVICE_NOT_SUPPORTED_BY_BASE_STATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CONCURRENT_SERVICE_NOT_SUPPORTED_BY_BASE_STATION:kotlin.Int) Concurrent service is not supported by base station. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONDITIONAL_IE_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CONDITIONAL_IE_ERROR:kotlin.Int) Conditional Information Element (IE) error. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONGESTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CONGESTION:kotlin.Int) Network cannot serve a request from the MS due to congestion. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_RELEASED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CONNECTION_RELEASED:kotlin.Int) Indicate the connection was released. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CS_DOMAIN_NOT_AVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CS_DOMAIN_NOT_AVAILABLE:kotlin.Int) CS domain is not available. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CS_FALLBACK_CALL_ESTABLISHMENT_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#CS_FALLBACK_CALL_ESTABLISHMENT_NOT_ALLOWED:kotlin.Int) CS fallback call establishment is not allowed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_PLAN_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DATA_PLAN_EXPIRED:kotlin.Int) Network initiates a detach on LTE with error cause ""data plan has been replenished or has expired. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_ROAMING_SETTINGS_DISABLED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DATA_ROAMING_SETTINGS_DISABLED:kotlin.Int) PDN Connection to a given APN is disallowed because data roaming is disabled from the device user interface settings and the UE is roaming. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SETTINGS_DISABLED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DATA_SETTINGS_DISABLED:kotlin.Int) PDN Connection to a given APN is disallowed because data is disabled from the device user interface settings. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DBM_OR_SMS_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DBM_OR_SMS_IN_PROGRESS:kotlin.Int) DBM or SMS is in progress. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DDS_SWITCHED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DDS_SWITCHED:kotlin.Int) DDS (Default data subscription) switch occurs. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DDS_SWITCH_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DDS_SWITCH_IN_PROGRESS:kotlin.Int) Default data subscription switch is in progress. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRB_RELEASED_BY_RRC](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DRB_RELEASED_BY_RRC:kotlin.Int) Data radio bearer is released by the RRC. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DS_EXPLICIT_DEACTIVATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DS_EXPLICIT_DEACTIVATION:kotlin.Int) Dedicated bearer will be deactivated regardless of the network response. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DUAL_SWITCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DUAL_SWITCH:kotlin.Int) Dual switch from single standby to dual standby is in progress. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DUN_CALL_DISALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DUN_CALL_DISALLOWED:kotlin.Int) Dial up networking (DUN) call bring up is rejected since UE is in eHRPD RAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DUPLICATE_BEARER_ID](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#DUPLICATE_BEARER_ID:kotlin.Int) Active dedicated bearer was requested using the same default bearer ID. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EHRPD_TO_HRPD_FALLBACK](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EHRPD_TO_HRPD_FALLBACK:kotlin.Int) Device falls back from eHRPD to HRPD. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMBMS_NOT_ENABLED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMBMS_NOT_ENABLED:kotlin.Int) Data call has been brought down because EMBMS is not enabled at the RRC layer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMBMS_REGULAR_DEACTIVATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMBMS_REGULAR_DEACTIVATION:kotlin.Int) EMBMS data call has been successfully brought down. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMERGENCY_IFACE_ONLY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMERGENCY_IFACE_ONLY:kotlin.Int) Emergency interface only. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMERGENCY_MODE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMERGENCY_MODE:kotlin.Int) Device is operating in Emergency mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ACCESS_BARRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMM_ACCESS_BARRED:kotlin.Int) EPS (Evolved Packet System) Mobility Management (EMM) access barred. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ACCESS_BARRED_INFINITE_RETRY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMM_ACCESS_BARRED_INFINITE_RETRY:kotlin.Int) EPS (Evolved Packet System) Mobility Management (EMM) access barred infinity retry. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ATTACH_FAILED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMM_ATTACH_FAILED:kotlin.Int) Attach procedure is rejected by the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ATTACH_STARTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMM_ATTACH_STARTED:kotlin.Int) Attach procedure is started for EMC purposes. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_DETACHED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMM_DETACHED:kotlin.Int) UE is detached. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_T3417_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMM_T3417_EXPIRED:kotlin.Int) T3417 timer expiration of the service request procedure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_T3417_EXT_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EMM_T3417_EXT_EXPIRED:kotlin.Int) Extended service request fails due to expiration of the T3417 EXT timer. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPS_SERVICES_AND_NON_EPS_SERVICES_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EPS_SERVICES_AND_NON_EPS_SERVICES_NOT_ALLOWED:kotlin.Int) EPS and non-EPS services are not allowed by the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPS_SERVICES_NOT_ALLOWED_IN_PLMN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EPS_SERVICES_NOT_ALLOWED_IN_PLMN:kotlin.Int) EPS services are not allowed in the PLMN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ERROR_UNSPECIFIED:kotlin.Int) Data call fail due to unspecific errors. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_BAD_OTA_MESSAGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_BAD_OTA_MESSAGE:kotlin.Int) Bad OTA message is received from the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_BEARER_DEACTIVATED_TO_SYNC_WITH_NETWORK](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_BEARER_DEACTIVATED_TO_SYNC_WITH_NETWORK:kotlin.Int) Bearer must be deactivated to synchronize with the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_COLLISION_SCENARIOS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_COLLISION_SCENARIOS:kotlin.Int) Collision scenarios for the UE and network-initiated procedures. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_CONTEXT_TRANSFERRED_DUE_TO_IRAT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_CONTEXT_TRANSFERRED_DUE_TO_IRAT:kotlin.Int) PDN was disconnected by the downlaod server due to IRAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_DOWNLOAD_SERVER_REJECTED_THE_CALL](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_DOWNLOAD_SERVER_REJECTED_THE_CALL:kotlin.Int) Download server rejected the call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_FAILURE:kotlin.Int) ESM level failure. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_INFO_NOT_RECEIVED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_INFO_NOT_RECEIVED:kotlin.Int) EPS Session Management (ESM) information is not received. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_LOCAL_CAUSE_NONE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_LOCAL_CAUSE_NONE:kotlin.Int) No specific local cause is mentioned, usually a valid OTA cause. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_NW_ACTIVATED_DED_BEARER_WITH_ID_OF_DEF_BEARER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_NW_ACTIVATED_DED_BEARER_WITH_ID_OF_DEF_BEARER:kotlin.Int) Active dedicated bearer was requested for an existing default bearer. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_PROCEDURE_TIME_OUT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_PROCEDURE_TIME_OUT:kotlin.Int) ESM procedure maximum attempt timeout failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_UNKNOWN_EPS_BEARER_CONTEXT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ESM_UNKNOWN_EPS_BEARER_CONTEXT:kotlin.Int) Invalid EPS bearer identity in the request. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_CONNECTION_DENY_BY_BILLING_OR_AUTHENTICATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EVDO_CONNECTION_DENY_BY_BILLING_OR_AUTHENTICATION_FAILURE:kotlin.Int) Received a connection deny due to billing or authentication failure on EVDO network. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_CONNECTION_DENY_BY_GENERAL_OR_NETWORK_BUSY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EVDO_CONNECTION_DENY_BY_GENERAL_OR_NETWORK_BUSY:kotlin.Int) Received a connection deny due to general or network busy on EVDO network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_CHANGED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EVDO_HDR_CHANGED:kotlin.Int) HDR system has been changed due to redirection or the PRL was not preferred. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_CONNECTION_SETUP_TIMEOUT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EVDO_HDR_CONNECTION_SETUP_TIMEOUT:kotlin.Int) Connection setup on the HDR system was time out. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_EXITED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EVDO_HDR_EXITED:kotlin.Int) Device exited HDR due to redirection or the PRL was not preferred. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_NO_SESSION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EVDO_HDR_NO_SESSION:kotlin.Int) Device does not have an HDR session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_USING_GPS_FIX_INSTEAD_OF_HDR_CALL](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#EVDO_USING_GPS_FIX_INSTEAD_OF_HDR_CALL:kotlin.Int) It is ending an HDR call origination in favor of a GPS fix. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FADE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#FADE:kotlin.Int) Device lost the system due to fade. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FAILED_TO_ACQUIRE_COLOCATED_HDR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#FAILED_TO_ACQUIRE_COLOCATED_HDR:kotlin.Int) Device failed to acquire a co-located HDR for origination. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEATURE_NOT_SUPP](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#FEATURE_NOT_SUPP:kotlin.Int) Feature not supported. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILTER_SEMANTIC_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#FILTER_SEMANTIC_ERROR:kotlin.Int) Semantic errors in packet filter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILTER_SYTAX_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#FILTER_SYTAX_ERROR:kotlin.Int) Syntactical errors in packet filter(s). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORBIDDEN_APN_NAME](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#FORBIDDEN_APN_NAME:kotlin.Int) PDN being brought up with an APN that is part of forbidden APN Name list. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_REGISTRATION_FAIL](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#GPRS_REGISTRATION_FAIL:kotlin.Int) Data fail due to GPRS registration failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_SERVICES_AND_NON_GPRS_SERVICES_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#GPRS_SERVICES_AND_NON_GPRS_SERVICES_NOT_ALLOWED:kotlin.Int) Not allowed to operate either GPRS or non-GPRS services. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_SERVICES_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#GPRS_SERVICES_NOT_ALLOWED:kotlin.Int) MS is not allowed to operate GPRS services. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_SERVICES_NOT_ALLOWED_IN_THIS_PLMN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#GPRS_SERVICES_NOT_ALLOWED_IN_THIS_PLMN:kotlin.Int) UE requests GPRS service or the network initiates a detach request in a PLMN that does not offer roaming for GPRS services. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HANDOFF_PREFERENCE_CHANGED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#HANDOFF_PREFERENCE_CHANGED:kotlin.Int) System preference change back to SRAT during handoff |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_ACCESS_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#HDR_ACCESS_FAILURE:kotlin.Int) HDR system access failure. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_FADE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#HDR_FADE:kotlin.Int) HDR module released the call due to fade. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_NO_LOCK_GRANTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#HDR_NO_LOCK_GRANTED:kotlin.Int) HDR module could not be obtained because of the RF locked. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IFACE_AND_POL_FAMILY_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IFACE_AND_POL_FAMILY_MISMATCH:kotlin.Int) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IFACE_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IFACE_MISMATCH:kotlin.Int) Interface mismatch. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ILLEGAL_ME](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ILLEGAL_ME:kotlin.Int) ME could not be authenticated and the ME used is not acceptable to the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ILLEGAL_MS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ILLEGAL_MS:kotlin.Int) Network refuses service to the MS because either an identity of the MS is not acceptable to the network or the MS does not pass the authentication check. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMEI_NOT_ACCEPTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IMEI_NOT_ACCEPTED:kotlin.Int) IMEI of the UE is not accepted by the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMPLICITLY_DETACHED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IMPLICITLY_DETACHED:kotlin.Int) Mobile reachable timer has expired, or the GMM context data related to the subscription does not exist in the SGSN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMSI_UNKNOWN_IN_HOME_SUBSCRIBER_SERVER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IMSI_UNKNOWN_IN_HOME_SUBSCRIBER_SERVER:kotlin.Int) IMSI present in the UE is unknown in the home subscriber server. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INCOMING_CALL_REJECTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INCOMING_CALL_REJECTED:kotlin.Int) The other clients rejected incoming call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INSUFFICIENT_RESOURCES](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INSUFFICIENT_RESOURCES:kotlin.Int) Insufficient resources. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERFACE_IN_USE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INTERFACE_IN_USE:kotlin.Int) The current interface is being in use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERNAL_CALL_PREEMPT_BY_HIGH_PRIO_APN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INTERNAL_CALL_PREEMPT_BY_HIGH_PRIO_APN:kotlin.Int) Internal data call preempt by high priority APN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERNAL_EPC_NONEPC_TRANSITION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INTERNAL_EPC_NONEPC_TRANSITION:kotlin.Int) Rejected/Brought down since UE is transition between EPC and NONEPC RAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_CONNECTION_ID](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_CONNECTION_ID:kotlin.Int) No PDP exists with the given connection ID while modifying or deactivating or activation for an already active PDP. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_DNS_ADDR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_DNS_ADDR:kotlin.Int) Not receiving a DNS address that was mandatory. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_EMM_STATE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_EMM_STATE:kotlin.Int) Invalid EMM state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MANDATORY_INFO](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_MANDATORY_INFO:kotlin.Int) Invalid mandatory information. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MODE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_MODE:kotlin.Int) Device operational mode is different from the mode requested in the traffic channel bring up. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_PCSCF_ADDR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_PCSCF_ADDR:kotlin.Int) Invalid Proxy-Call Session Control Function (P-CSCF) address. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_PCSCF_OR_DNS_ADDRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_PCSCF_OR_DNS_ADDRESS:kotlin.Int) Not receiving either a PCSCF or a DNS address, one of them being mandatory. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_PRIMARY_NSAPI](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_PRIMARY_NSAPI:kotlin.Int) Primary context for NSAPI does not exist. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_SIM_STATE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_SIM_STATE:kotlin.Int) SIM was marked by the network as invalid for the circuit and/or packet service domain. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_TRANSACTION_ID](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#INVALID_TRANSACTION_ID:kotlin.Int) Invalid transaction id. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IPV6_ADDRESS_TRANSFER_FAILED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IPV6_ADDRESS_TRANSFER_FAILED:kotlin.Int) IPv6 address transfer failed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IPV6_PREFIX_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IPV6_PREFIX_UNAVAILABLE:kotlin.Int) Device failure to obtain the prefix from the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IP_ADDRESS_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IP_ADDRESS_MISMATCH:kotlin.Int) IP address mismatch. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IP_VERSION_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IP_VERSION_MISMATCH:kotlin.Int) New call bring up is rejected since the existing data call IP type doesn't match the requested IP. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IRAT_HANDOVER_FAILED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IRAT_HANDOVER_FAILED:kotlin.Int) Data call was unsuccessfully transferred during the IRAT handover. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IS707B_MAX_ACCESS_PROBES](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IS707B_MAX_ACCESS_PROBES:kotlin.Int) Maximum access probes for the IS-707B call. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_AUTHORIZATION_REJECTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_AUTHORIZATION_REJECTED:kotlin.Int) The user is barred from using the non-3GPP access or the subscribed APN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_CONGESTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_CONGESTION:kotlin.Int) The requested service was rejected because of congestion in the network while accessing the IWLAN ePDG. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_DNS_RESOLUTION_NAME_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_DNS_RESOLUTION_NAME_FAILURE:kotlin.Int) Unable to resolve FQDN for the ePDG to an IP address |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_DNS_RESOLUTION_TIMEOUT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_DNS_RESOLUTION_TIMEOUT:kotlin.Int) No response received from the DNS Server due to a timeout |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_AUTH_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_IKEV2_AUTH_FAILURE:kotlin.Int) Sent in the response to an IKE_AUTH message when, for some reason, the authentication failed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_CERT_INVALID](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_IKEV2_CERT_INVALID:kotlin.Int) IKE Certification validation failure |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_CONFIG_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_IKEV2_CONFIG_FAILURE:kotlin.Int) IKE configuration error resulting in failure |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_MSG_TIMEOUT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_IKEV2_MSG_TIMEOUT:kotlin.Int) IKE message timeout, tunnel setup failed due to no response from EPDG |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_ILLEGAL_ME](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_ILLEGAL_ME:kotlin.Int) The Mobile Equipment used is not acceptable to the network |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IMEI_NOT_ACCEPTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_IMEI_NOT_ACCEPTED:kotlin.Int) The network does not accept emergency PDN bringup request using an IMEI |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_MAX_CONNECTION_REACHED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_MAX_CONNECTION_REACHED:kotlin.Int) The PDN connection has been rejected. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_NETWORK_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_NETWORK_FAILURE:kotlin.Int) The network has determined that the requested procedure cannot be completed successfully due to network failure. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_NON_3GPP_ACCESS_TO_EPC_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_NON_3GPP_ACCESS_TO_EPC_NOT_ALLOWED:kotlin.Int) No non-3GPP subscription is associated with the IMSI. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_NO_APN_SUBSCRIPTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_NO_APN_SUBSCRIPTION:kotlin.Int) The requested APN is not included in the user's profile, and therefore is not authorized for that user. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_PDN_CONNECTION_REJECTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_PDN_CONNECTION_REJECTION:kotlin.Int) The PDN connection corresponding to the requested APN has been rejected. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_PLMN_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_PLMN_NOT_ALLOWED:kotlin.Int) The ePDG performs PLMN filtering (based on roaming agreements) and rejects the request from the UE. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_RAT_TYPE_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_RAT_TYPE_NOT_ALLOWED:kotlin.Int) The access type is restricted to the user. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SEMANTIC_ERRORS_IN_PACKET_FILTERS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_SEMANTIC_ERRORS_IN_PACKET_FILTERS:kotlin.Int) The PDN connection has been rejected due to sematic errors in the packet filter. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SEMANTIC_ERROR_IN_THE_TFT_OPERATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_SEMANTIC_ERROR_IN_THE_TFT_OPERATION:kotlin.Int) The PDN connection has been rejected due to a semantic error in TFT operation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SYNTACTICAL_ERRORS_IN_PACKET_FILTERS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_SYNTACTICAL_ERRORS_IN_PACKET_FILTERS:kotlin.Int) The PDN connection has been rejected due to syntactic errors in the packet filter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SYNTACTICAL_ERROR_IN_THE_TFT_OPERATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_SYNTACTICAL_ERROR_IN_THE_TFT_OPERATION:kotlin.Int) The PDN connection has been rejected due to a syntactic error in TFT operation. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_TUNNEL_NOT_FOUND](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_TUNNEL_NOT_FOUND:kotlin.Int) Expected to update or bring down an ePDG tunnel, but no tunnel found |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_UNAUTHENTICATED_EMERGENCY_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_UNAUTHENTICATED_EMERGENCY_NOT_SUPPORTED:kotlin.Int) The ePDG does not support un-authenticated IMSI based emergency PDN bringup \* |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_USER_UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#IWLAN_USER_UNKNOWN:kotlin.Int) The user identified by the IMSI is unknown. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMITED_TO_IPV4](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LIMITED_TO_IPV4:kotlin.Int) IPv6 interface bring up fails because the network provided only the IPv4 address for the upcoming PDN permanent client can reattempt a IPv6 call bring up after the IPv4 interface is also brought down. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMITED_TO_IPV6](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LIMITED_TO_IPV6:kotlin.Int) IPv4 interface bring up fails because the network provided only the IPv6 address for the upcoming PDN permanent client can reattempt a IPv4 call bring up after the IPv6 interface is also brought down. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LLC_SNDCP](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LLC_SNDCP:kotlin.Int) Logical Link Control (LLC) Sub Network Dependent Convergence Protocol (SNDCP). |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCAL_END](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LOCAL_END:kotlin.Int) Client ended the data call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_AREA_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LOCATION_AREA_NOT_ALLOWED:kotlin.Int) MS requests service, or the network initiates a detach request, in a location area where the HPLMN determines that the MS, by subscription, is not allowed to operate. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOST_CONNECTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LOST_CONNECTION:kotlin.Int) Data connection was lost. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOWER_LAYER_REGISTRATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LOWER_LAYER_REGISTRATION_FAILURE:kotlin.Int) Lower layer registration failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOW_POWER_MODE_OR_POWERING_DOWN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LOW_POWER_MODE_OR_POWERING_DOWN:kotlin.Int) Device is going into lower power mode or powering down. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LTE_NAS_SERVICE_REQUEST_FAILED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LTE_NAS_SERVICE_REQUEST_FAILED:kotlin.Int) Service request procedure failure. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LTE_THROTTLING_NOT_REQUIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#LTE_THROTTLING_NOT_REQUIRED:kotlin.Int) Throttling is not needed for this service request failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAC_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MAC_FAILURE:kotlin.Int) MAC level failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_ALL_RULE_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MATCH_ALL_RULE_NOT_ALLOWED:kotlin.Int) No matching rule available for the request, and match-all rule is not allowed for it. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXIMIUM_NSAPIS_EXCEEDED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MAXIMIUM_NSAPIS_EXCEEDED:kotlin.Int) Maximum NSAPIs have been exceeded during PDP activation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXINUM_SIZE_OF_L2_MESSAGE_EXCEEDED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MAXINUM_SIZE_OF_L2_MESSAGE_EXCEEDED:kotlin.Int) Maximum size of the L2 message was exceeded. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_ACCESS_PROBE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MAX_ACCESS_PROBE:kotlin.Int) Maximum access probes transmitted. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_IPV4_CONNECTIONS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MAX_IPV4_CONNECTIONS:kotlin.Int) IPv4 data call bring up is rejected because the UE already maintains the allotted maximum number of IPv4 data connections. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_IPV6_CONNECTIONS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MAX_IPV6_CONNECTIONS:kotlin.Int) IPv6 data call bring up is rejected because the UE already maintains the allotted maximum number of IPv6 data connections. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_PPP_INACTIVITY_TIMER_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MAX_PPP_INACTIVITY_TIMER_EXPIRED:kotlin.Int) Maximum PPP inactivity timer expired. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_INCORRECT_SEMANTIC](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MESSAGE_INCORRECT_SEMANTIC:kotlin.Int) Incorrect message semantic. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MESSAGE_TYPE_UNSUPPORTED:kotlin.Int) Unsupported message type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_CONFIG_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_CONFIG_FAILURE:kotlin.Int) UE is in MIP-only configuration but the MIP configuration fails on call bring up due to incorrect provisioning. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_ADMIN_PROHIBITED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_ADMIN_PROHIBITED:kotlin.Int) Foreign agent administratively prohibited MIP (Mobile IP) registration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_DELIVERY_STYLE_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_DELIVERY_STYLE_NOT_SUPPORTED:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of delivery style was not supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_ENCAPSULATION_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_ENCAPSULATION_UNAVAILABLE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of requested encapsulation was unavailable. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_HOME_AGENT_AUTHENTICATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_HOME_AGENT_AUTHENTICATION_FAILURE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of home agent authentication failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_INSUFFICIENT_RESOURCES](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_INSUFFICIENT_RESOURCES:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of insufficient resources. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MALFORMED_REPLY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_MALFORMED_REPLY:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of malformed reply. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MALFORMED_REQUEST](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_MALFORMED_REQUEST:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of malformed request. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_CHALLENGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_MISSING_CHALLENGE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of missing challenge. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_HOME_ADDRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_MISSING_HOME_ADDRESS:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of missing Home Address. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_HOME_AGENT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_MISSING_HOME_AGENT:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of missing Home Agent. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_NAI](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_MISSING_NAI:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of missing NAI (Network Access Identifier). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MOBILE_NODE_AUTHENTICATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_MOBILE_NODE_AUTHENTICATION_FAILURE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of MN-AAA authenticator was wrong. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REASON_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_REASON_UNSPECIFIED:kotlin.Int) Reason unspecified for foreign agent rejected MIP (Mobile IP) registration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REQUESTED_LIFETIME_TOO_LONG](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_REQUESTED_LIFETIME_TOO_LONG:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of requested lifetime was too long. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REVERSE_TUNNEL_IS_MANDATORY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_REVERSE_TUNNEL_IS_MANDATORY:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of reverse tunnel was mandatory but not requested by device. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REVERSE_TUNNEL_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_REVERSE_TUNNEL_UNAVAILABLE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of reverse tunnel was unavailable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_STALE_CHALLENGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_STALE_CHALLENGE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of stale challenge. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_UNKNOWN_CHALLENGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_UNKNOWN_CHALLENGE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration because of unknown challenge. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_VJ_HEADER_COMPRESSION_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_FA_VJ_HEADER_COMPRESSION_UNAVAILABLE:kotlin.Int) Foreign agent rejected MIP (Mobile IP) registration of VJ Header Compression was unavailable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_ADMIN_PROHIBITED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_ADMIN_PROHIBITED:kotlin.Int) Home agent administratively prohibited MIP (Mobile IP) registration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_ENCAPSULATION_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_ENCAPSULATION_UNAVAILABLE:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of encapsulation unavailable. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_FOREIGN_AGENT_AUTHENTICATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_FOREIGN_AGENT_AUTHENTICATION_FAILURE:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of foreign agent authentication failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_INSUFFICIENT_RESOURCES](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_INSUFFICIENT_RESOURCES:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of insufficient resources. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_MALFORMED_REQUEST](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_MALFORMED_REQUEST:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of malformed request. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_MOBILE_NODE_AUTHENTICATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_MOBILE_NODE_AUTHENTICATION_FAILURE:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of MN-HA authenticator was wrong. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REASON_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_REASON_UNSPECIFIED:kotlin.Int) Reason unspecified for home agent rejected MIP (Mobile IP) registration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REGISTRATION_ID_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_REGISTRATION_ID_MISMATCH:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of registration id mismatch. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REVERSE_TUNNEL_IS_MANDATORY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_REVERSE_TUNNEL_IS_MANDATORY:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of reverse tunnel is mandatory but not requested by device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REVERSE_TUNNEL_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_REVERSE_TUNNEL_UNAVAILABLE:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of reverse tunnel was unavailable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_UNKNOWN_HOME_AGENT_ADDRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MIP_HA_UNKNOWN_HOME_AGENT_ADDRESS:kotlin.Int) Home agent rejected MIP (Mobile IP) registration because of unknown home agent address. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MISSING_UNKNOWN_APN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MISSING_UNKNOWN_APN:kotlin.Int) Missing or unknown APN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODEM_APP_PREEMPTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MODEM_APP_PREEMPTED:kotlin.Int) Another application in modem preempts the data call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODEM_RESTART](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MODEM_RESTART:kotlin.Int) Modem restart. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSC_TEMPORARILY_NOT_REACHABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MSC_TEMPORARILY_NOT_REACHABLE:kotlin.Int) Mobile switching center is temporarily unreachable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSG_AND_PROTOCOL_STATE_UNCOMPATIBLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MSG_AND_PROTOCOL_STATE_UNCOMPATIBLE:kotlin.Int) Message and protocol state uncompatible. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSG_TYPE_NONCOMPATIBLE_STATE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MSG_TYPE_NONCOMPATIBLE_STATE:kotlin.Int) Message type uncompatible. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MS_IDENTITY_CANNOT_BE_DERIVED_BY_THE_NETWORK](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MS_IDENTITY_CANNOT_BE_DERIVED_BY_THE_NETWORK:kotlin.Int) No matching identity or context could be found in the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MULTIPLE_PDP_CALL_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MULTIPLE_PDP_CALL_NOT_ALLOWED:kotlin.Int) Multiple PDP call feature is disabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MULTI_CONN_TO_SAME_PDN_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#MULTI_CONN_TO_SAME_PDN_NOT_ALLOWED:kotlin.Int) Multiple connections to a same PDN is not allowed. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAS_LAYER_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NAS_LAYER_FAILURE:kotlin.Int) Non-Access Spectrum layer failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAS_REQUEST_REJECTED_BY_NETWORK](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NAS_REQUEST_REJECTED_BY_NETWORK:kotlin.Int) Non-access stratum (NAS) request was rejected by the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAS_SIGNALLING](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NAS_SIGNALLING:kotlin.Int) NAS signalling. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NETWORK_FAILURE:kotlin.Int) Network Failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_INITIATED_DETACH_NO_AUTO_REATTACH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NETWORK_INITIATED_DETACH_NO_AUTO_REATTACH:kotlin.Int) Network-initiated detach without reattach. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_INITIATED_DETACH_WITH_AUTO_REATTACH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NETWORK_INITIATED_DETACH_WITH_AUTO_REATTACH:kotlin.Int) Network-initiated detach with reattach. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_INITIATED_TERMINATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NETWORK_INITIATED_TERMINATION:kotlin.Int) Brought down by the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NONE:kotlin.Int) There is no failure |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NON_IP_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NON_IP_NOT_SUPPORTED:kotlin.Int) UE is unable to bring up a non-IP data call because the device is not camped on a NB1 cell. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORMAL_RELEASE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NORMAL_RELEASE:kotlin.Int) Receiving a release from the base station with no reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_CDMA_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_CDMA_SERVICE:kotlin.Int) Device does not have CDMA service. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_COLLOCATED_HDR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_COLLOCATED_HDR:kotlin.Int) There is no co-located HDR. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_EPS_BEARER_CONTEXT_ACTIVATED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_EPS_BEARER_CONTEXT_ACTIVATED:kotlin.Int) No EPS bearer context was activated. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_GPRS_CONTEXT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_GPRS_CONTEXT:kotlin.Int) GPRS context is not available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_HYBRID_HDR_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_HYBRID_HDR_SERVICE:kotlin.Int) Device has no hybrid HDR service. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_PDP_CONTEXT_ACTIVATED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_PDP_CONTEXT_ACTIVATED:kotlin.Int) MS requests an establishment of the radio access bearers for all active PDP contexts by sending a service request message indicating data to the network, but the SGSN does not have any active PDP context. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_RESPONSE_FROM_BASE_STATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_RESPONSE_FROM_BASE_STATION:kotlin.Int) There was no response received from the base station. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_SERVICE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_SERVICE:kotlin.Int) Device has no service. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_SERVICE_ON_GATEWAY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NO_SERVICE_ON_GATEWAY:kotlin.Int) No service on the gateway. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NSAPI_IN_USE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NSAPI_IN_USE:kotlin.Int) The Network Service Access Point Identifier (NSAPI) is in use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NULL_APN_DISALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#NULL_APN_DISALLOWED:kotlin.Int) PDN is attempted to be brought up with NULL APN but NULL APN is not supported. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_1](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_1:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_10](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_10:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_11](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_11:kotlin.Int) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_12](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_12:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_13](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_13:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_14](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_14:kotlin.Int) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_15](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_15:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_2](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_2:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_3](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_3:kotlin.Int) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_4](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_4:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_5](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_5:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_6](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_6:kotlin.Int) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_7](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_7:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_8](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_8:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_9](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OEM_DCFAILCAUSE_9:kotlin.Int) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_IPV4V6_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ONLY_IPV4V6_ALLOWED:kotlin.Int) Network supports IPv4v6 PDP type only. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_IPV4_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ONLY_IPV4_ALLOWED:kotlin.Int) Packet Data Protocol (PDP) type IPv4 only allowed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_IPV6_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ONLY_IPV6_ALLOWED:kotlin.Int) Packet Data Protocol (PDP) type IPv6 only allowed. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_NON_IP_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ONLY_NON_IP_ALLOWED:kotlin.Int) Network supports non-IP PDP type only. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_SINGLE_BEARER_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#ONLY_SINGLE_BEARER_ALLOWED:kotlin.Int) Single address bearers only allowed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATOR_BARRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OPERATOR_BARRED:kotlin.Int) Operator determined barring. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTASP_COMMIT_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#OTASP_COMMIT_IN_PROGRESS:kotlin.Int) OTASP commit is in progress. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_CONN_DOES_NOT_EXIST](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_CONN_DOES_NOT_EXIST:kotlin.Int) PDN connection does not exist. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_INACTIVITY_TIMER_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_INACTIVITY_TIMER_EXPIRED:kotlin.Int) PDN inactivity timer expired due to no data transmission in a configurable duration of time. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV4_CALL_DISALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_IPV4_CALL_DISALLOWED:kotlin.Int) IPV4 PDN is in throttled state due to network providing only IPV6 address during the previous VSNCP bringup (subs_limited_to_v6). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV4_CALL_THROTTLED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_IPV4_CALL_THROTTLED:kotlin.Int) IPV4 PDN is in throttled state due to previous VSNCP bringup failure(s). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV6_CALL_DISALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_IPV6_CALL_DISALLOWED:kotlin.Int) IPV6 PDN is in throttled state due to network providing only IPV4 address during the previous VSNCP bringup (subs_limited_to_v4). |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV6_CALL_THROTTLED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_IPV6_CALL_THROTTLED:kotlin.Int) IPV6 PDN is in throttled state due to previous VSNCP bringup failure(s). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_NON_IP_CALL_DISALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_NON_IP_CALL_DISALLOWED:kotlin.Int) Non-IP PDN is in disallowed state due to the network providing only an IP address. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_NON_IP_CALL_THROTTLED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDN_NON_IP_CALL_THROTTLED:kotlin.Int) Non-IP PDN is in throttled state due to previous VSNCP bringup failure(s). |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_ACTIVATE_MAX_RETRY_FAILED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_ACTIVATE_MAX_RETRY_FAILED:kotlin.Int) SM attempts PDP activation for a maximum of four attempts. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_DUPLICATE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_DUPLICATE:kotlin.Int) PDP context already exists. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_ESTABLISH_TIMEOUT_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_ESTABLISH_TIMEOUT_EXPIRED:kotlin.Int) Expiration of the PDP establish timer with a maximum of five retries. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_INACTIVE_TIMEOUT_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_INACTIVE_TIMEOUT_EXPIRED:kotlin.Int) Expiration of the PDP deactivate timer with a maximum of four retries. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_LOWERLAYER_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_LOWERLAYER_ERROR:kotlin.Int) PDP activation failed due to RRC_ABORT or a forbidden PLMN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_MODIFY_COLLISION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_MODIFY_COLLISION:kotlin.Int) MO PDP modify collision when the MT PDP is already in progress. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_MODIFY_TIMEOUT_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_MODIFY_TIMEOUT_EXPIRED:kotlin.Int) Expiration of the PDP modify timer with a maximum of four retries. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_PPP_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_PPP_NOT_SUPPORTED:kotlin.Int) PDP PPP calls are not supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_WITHOUT_ACTIVE_TFT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PDP_WITHOUT_ACTIVE_TFT:kotlin.Int) Packet Data Protocol (PDP) without active traffic flow template (TFT). |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHONE_IN_USE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PHONE_IN_USE:kotlin.Int) Device is in use (e.g., voice call). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHYSICAL_LINK_CLOSE_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PHYSICAL_LINK_CLOSE_IN_PROGRESS:kotlin.Int) Physical link is in the process of cleanup. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLMN_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PLMN_NOT_ALLOWED:kotlin.Int) UE requests GPRS service, or the network initiates a detach request in a PLMN which does not offer roaming for GPRS services to that MS. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_AUTH_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PPP_AUTH_FAILURE:kotlin.Int) Data call bring up fails in the PPP setup due to an authorization failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_CHAP_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PPP_CHAP_FAILURE:kotlin.Int) Data call bring up fails in the PPP setup due to a CHAP failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_CLOSE_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PPP_CLOSE_IN_PROGRESS:kotlin.Int) Data call bring up fails in the PPP setup because the PPP is in the process of cleaning the previous PPP session. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_OPTION_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PPP_OPTION_MISMATCH:kotlin.Int) Data call bring up fails in the PPP setup due to an option mismatch. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_PAP_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PPP_PAP_FAILURE:kotlin.Int) Data call bring up fails in the PPP setup due to a PAP failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_TIMEOUT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PPP_TIMEOUT:kotlin.Int) Data call bring up fails in the PPP setup due to a timeout. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREF_RADIO_TECH_CHANGED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PREF_RADIO_TECH_CHANGED:kotlin.Int) Preferred technology has changed, must retry with parameters appropriate for new technology. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_BEARER_INCOMPATIBLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PROFILE_BEARER_INCOMPATIBLE:kotlin.Int) APN bearer type in the profile does not match preferred network mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_ERRORS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#PROTOCOL_ERRORS:kotlin.Int) Protocol errors. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QOS_NOT_ACCEPTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#QOS_NOT_ACCEPTED:kotlin.Int) Quality of service (QoS) is not accepted. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_ACCESS_BEARER_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RADIO_ACCESS_BEARER_FAILURE:kotlin.Int) Radio access bearer failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_ACCESS_BEARER_SETUP_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RADIO_ACCESS_BEARER_SETUP_FAILURE:kotlin.Int) Radio access bearer is not established by the lower layers during activation, modification, or deactivation. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_NOT_AVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RADIO_NOT_AVAILABLE:kotlin.Int) Data fail due to radio not unavailable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_POWER_OFF](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RADIO_POWER_OFF:kotlin.Int) data call was disconnected because radio was resetting, powered off. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REDIRECTION_OR_HANDOFF_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#REDIRECTION_OR_HANDOFF_IN_PROGRESS:kotlin.Int) Device is in the process of redirecting or handing off to a different target system. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_FAIL](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#REGISTRATION_FAIL:kotlin.Int) Data fail due to registration failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGULAR_DEACTIVATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#REGULAR_DEACTIVATION:kotlin.Int) Regular deactivation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REJECTED_BY_BASE_STATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#REJECTED_BY_BASE_STATION:kotlin.Int) The base station rejecting the call. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_AFTER_HANDOVER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ABORTED_AFTER_HANDOVER:kotlin.Int) Radio resource control (RRC) connection was aborted by the non-access stratum (NAS) after an IRAT to LTE IRAT handover. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_AFTER_IRAT_CELL_CHANGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ABORTED_AFTER_IRAT_CELL_CHANGE:kotlin.Int) Radio resource control (RRC) connection was aborted before deactivating the LTE stack after a successful LTE to GSM/EDGE IRAT cell change order procedure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_DUE_TO_IRAT_CHANGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ABORTED_DUE_TO_IRAT_CHANGE:kotlin.Int) Radio resource control (RRC) connection was aborted before deactivating the LTE stack due to a successful LTE to WCDMA/GSM/TD-SCDMA IRAT change. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_DURING_IRAT_CELL_CHANGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ABORTED_DURING_IRAT_CELL_CHANGE:kotlin.Int) Radio resource control (RRC) connection was aborted in the middle of a LTE to GSM IRAT cell change order procedure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORT_REQUEST](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ABORT_REQUEST:kotlin.Int) Connection has been released by the radio resource control (RRC) due to an abort request. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ACCESS_BARRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ACCESS_BARRED:kotlin.Int) Radio resource control (RRC) connection establishment failed due to access barrred. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ACCESS_STRATUM_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ACCESS_STRATUM_FAILURE:kotlin.Int) Radio resource control (RRC) connection failure at access stratum. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ANOTHER_PROCEDURE_IN_PROGRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_ANOTHER_PROCEDURE_IN_PROGRESS:kotlin.Int) Radio resource control (RRC) connection establishment is aborted due to another procedure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_CELL_NOT_CAMPED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_CELL_NOT_CAMPED:kotlin.Int) Connection establishment failed as the radio resource control (RRC) is not camped on any cell. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_CELL_RESELECTION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_CELL_RESELECTION:kotlin.Int) Radio resource control (RRC) connection establishment failed due to cell reselection at access stratum. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_CONFIG_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_CONFIG_FAILURE:kotlin.Int) Connection establishment failed due to configuration failure at the radio resource control (RRC). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_INVALID_REQUEST](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_INVALID_REQUEST:kotlin.Int) Radio resource control (RRC) connection establishment failure due to an error in the request message. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_LINK_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_LINK_FAILURE:kotlin.Int) Connection establishment failed due to a link failure at the radio resource control (RRC). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_NORMAL_RELEASE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_NORMAL_RELEASE:kotlin.Int) Normal radio resource control (RRC) connection release. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_OUT_OF_SERVICE_DURING_CELL_REGISTER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_OUT_OF_SERVICE_DURING_CELL_REGISTER:kotlin.Int) UE is out of service during the call register. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_RADIO_LINK_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_RADIO_LINK_FAILURE:kotlin.Int) Radio resource control (RRC) connection release failed due to radio link failure conditions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_REESTABLISHMENT_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_REESTABLISHMENT_FAILURE:kotlin.Int) Radio resource control (RRC) connection re-establishment failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_REJECT_BY_NETWORK](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_REJECT_BY_NETWORK:kotlin.Int) Radio resource control (RRC) connection establishment failed due to the network rejecting the UE connection request. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_RELEASED_SECURITY_NOT_ACTIVE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_RELEASED_SECURITY_NOT_ACTIVE:kotlin.Int) If the UE has an LTE radio link failure before security is established, the radio resource control (RRC) connection must be released and the UE must return to idle. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_RF_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_RF_UNAVAILABLE:kotlin.Int) Radio resource control (RRC) connection establishment failure due to the RF was unavailable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_SYSTEM_INFORMATION_BLOCK_READ_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_SYSTEM_INFORMATION_BLOCK_READ_ERROR:kotlin.Int) Radio resource control (RRC) connection released due to a system information block read error. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_SYSTEM_INTERVAL_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_SYSTEM_INTERVAL_FAILURE:kotlin.Int) Connection establishment failed due to a service interval failure at the radio resource control (RRC). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_TIMER_EXPIRED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_TIMER_EXPIRED:kotlin.Int) Radio resource control (RRC) connection could not be established in the time limit. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_TRACKING_AREA_ID_CHANGED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_CONNECTION_TRACKING_AREA_ID_CHANGED:kotlin.Int) Radio resource control (RRC) connection establishment failure due to a change in the tracking area ID. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_CONNECTION_RELEASE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_UPLINK_CONNECTION_RELEASE:kotlin.Int) Radio resource control (RRC) uplink data delivery failed due to a connection release. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_DATA_TRANSMISSION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_UPLINK_DATA_TRANSMISSION_FAILURE:kotlin.Int) Transmission failure of radio resource control (RRC) uplink data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_DELIVERY_FAILED_DUE_TO_HANDOVER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_UPLINK_DELIVERY_FAILED_DUE_TO_HANDOVER:kotlin.Int) Radio resource control (RRC) uplink data delivery failed due to a handover. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_ERROR_REQUEST_FROM_NAS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_UPLINK_ERROR_REQUEST_FROM_NAS:kotlin.Int) Radio resource control (RRC) is not connected but the non-access stratum (NAS) sends an uplink data request. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_RADIO_LINK_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RRC_UPLINK_RADIO_LINK_FAILURE:kotlin.Int) Radio resource control (RRC) uplink data delivery failed due to a radio link failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RUIM_NOT_PRESENT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#RUIM_NOT_PRESENT:kotlin.Int) RUIM not being present. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_MODE_REJECTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SECURITY_MODE_REJECTED:kotlin.Int) Unspecified security mode reject. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_NOT_ALLOWED_ON_PLMN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SERVICE_NOT_ALLOWED_ON_PLMN:kotlin.Int) Service is not allowed on the requested PLMN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_OPTION_NOT_SUBSCRIBED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SERVICE_OPTION_NOT_SUBSCRIBED:kotlin.Int) Requested service option not subscribed. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_OPTION_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SERVICE_OPTION_NOT_SUPPORTED:kotlin.Int) Service option not supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_OPTION_OUT_OF_ORDER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SERVICE_OPTION_OUT_OF_ORDER:kotlin.Int) Service option temporarily out of order. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_LOST](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SIGNAL_LOST:kotlin.Int) Data call drop due to network/modem disconnect. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIM_CARD_CHANGED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SIM_CARD_CHANGED:kotlin.Int) Card was refreshed or removed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_REJECTED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SLICE_REJECTED:kotlin.Int) Data call fail due to the slice not being allowed for the data call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNCHRONIZATION_FAILURE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#SYNCHRONIZATION_FAILURE:kotlin.Int) Synchronization failure. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEST_LOOPBACK_REGULAR_DEACTIVATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#TEST_LOOPBACK_REGULAR_DEACTIVATION:kotlin.Int) Test loop-back data call has been successfully brought down. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TETHERED_CALL_ACTIVE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#TETHERED_CALL_ACTIVE:kotlin.Int) Data call was disconnected by modem because tethered. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TFT_SEMANTIC_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#TFT_SEMANTIC_ERROR:kotlin.Int) Semantic error in the Traffic flow templates (TFT) operation. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TFT_SYTAX_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#TFT_SYTAX_ERROR:kotlin.Int) Syntactical error in the Traffic flow templates (TFT) operation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THERMAL_EMERGENCY](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#THERMAL_EMERGENCY:kotlin.Int) Put device in thermal emergency. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THERMAL_MITIGATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#THERMAL_MITIGATION:kotlin.Int) Thermal level increases and causes calls to be torn down when normal mode of operation is not allowed. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRAT_SWAP_FAILED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#TRAT_SWAP_FAILED:kotlin.Int) Target RAT swap failed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_INITIATED_DETACH_OR_DISCONNECT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UE_INITIATED_DETACH_OR_DISCONNECT:kotlin.Int) UE performs a detach or disconnect PDN action based on TE requirements. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_IS_ENTERING_POWERSAVE_MODE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UE_IS_ENTERING_POWERSAVE_MODE:kotlin.Int) UE is entering power save mode. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_RAT_CHANGE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UE_RAT_CHANGE:kotlin.Int) RAT change on the UE. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_SECURITY_CAPABILITIES_MISMATCH](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UE_SECURITY_CAPABILITIES_MISMATCH:kotlin.Int) UE security capabilities mismatch. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UMTS_HANDOVER_TO_IWLAN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UMTS_HANDOVER_TO_IWLAN:kotlin.Int) UMTS interface is brought down due to handover from UMTS to iWLAN. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UMTS_REACTIVATION_REQ](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UMTS_REACTIVATION_REQ:kotlin.Int) Universal Mobile Telecommunications System (UMTS) reactivation request. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNACCEPTABLE_NETWORK_PARAMETER](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNACCEPTABLE_NETWORK_PARAMETER:kotlin.Int) Data fail due to unacceptable network parameter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNACCEPTABLE_NON_EPS_AUTHENTICATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNACCEPTABLE_NON_EPS_AUTHENTICATION:kotlin.Int) Unacceptable non-EPS authentication. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNKNOWN:kotlin.Int) Unknown data failure cause. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_INFO_ELEMENT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNKNOWN_INFO_ELEMENT:kotlin.Int) Unknown info element. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_PDP_ADDRESS_TYPE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNKNOWN_PDP_ADDRESS_TYPE:kotlin.Int) Unknown Packet Data Protocol (PDP) address type. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_PDP_CONTEXT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNKNOWN_PDP_CONTEXT:kotlin.Int) Unknown Packet Data Protocol (PDP) context. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNPREFERRED_RAT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNPREFERRED_RAT:kotlin.Int) RAT on which the data call is attempted/connected is no longer the preferred RAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSUPPORTED_1X_PREV](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNSUPPORTED_1X_PREV:kotlin.Int) P_rev supported by 1 base station is less than 6, which is not supported for a 1X data call. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSUPPORTED_APN_IN_CURRENT_PLMN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNSUPPORTED_APN_IN_CURRENT_PLMN:kotlin.Int) Unsupported APN in current public land mobile network (PLMN). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSUPPORTED_QCI_VALUE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#UNSUPPORTED_QCI_VALUE:kotlin.Int) QCI (QoS Class Identifier) indicated in the UE request cannot be supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USER_AUTHENTICATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#USER_AUTHENTICATION:kotlin.Int) User authentication. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_ADMINISTRATIVELY_PROHIBITED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_ADMINISTRATIVELY_PROHIBITED:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with the reason of administratively prohibited at the HSGW. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_APN_UNAUTHORIZED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_APN_UNAUTHORIZED:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the requested APN is unauthorized. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_GEN_ERROR](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_GEN_ERROR:kotlin.Int) Data call bring up fails in the VSNCP phase due to a general error. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_INSUFFICIENT_PARAMETERS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_INSUFFICIENT_PARAMETERS:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with the reason of insufficient parameter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_NO_PDN_GATEWAY_ADDRESS](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_NO_PDN_GATEWAY_ADDRESS:kotlin.Int) Data call bring up fails in the VSNCP phase due to the network rejected the VSNCP configuration request due to no PDN gateway address. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_EXISTS_FOR_THIS_APN](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_PDN_EXISTS_FOR_THIS_APN:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the PDN exists for this APN. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_GATEWAY_REJECT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_PDN_GATEWAY_REJECT:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request due to a PDN gateway reject. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_GATEWAY_UNREACHABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_PDN_GATEWAY_UNREACHABLE:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the PDN gateway is unreachable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_ID_IN_USE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_PDN_ID_IN_USE:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of PDN ID in use, or all existing PDNs are brought down with this end reason because one of the PDN bring up was rejected by the network with the reason of PDN ID in use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_LIMIT_EXCEEDED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_PDN_LIMIT_EXCEEDED:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the PDN limit has been exceeded. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_RECONNECT_NOT_ALLOWED](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_RECONNECT_NOT_ALLOWED:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with reconnect to this PDN not allowed, or an active data call is terminated by the network because reconnection to this PDN is not allowed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_RESOURCE_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_RESOURCE_UNAVAILABLE:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with the reason of resource unavailable. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_SUBSCRIBER_LIMITATION](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_SUBSCRIBER_LIMITATION:kotlin.Int) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request for the reason of subscriber limitation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_TIMEOUT](https://developer.android.com/reference/kotlin/android/telephony/DataFailCause#VSNCP_TIMEOUT:kotlin.Int) Data call bring up fails in the VSNCP phase due to a VSNCP timeout error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_ATTEMPT_ALREADY_IN_PROGRESS](../android/telephony/DataFailCause.md) Access attempt is already in progress. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_BLOCK](../android/telephony/DataFailCause.md) Access blocked by the base station. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_BLOCK_ALL](../android/telephony/DataFailCause.md) Access blocked by the base station for all mobile devices. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_CLASS_DSAC_REJECTION](../android/telephony/DataFailCause.md) Access class blocking restrictions for the current camped cell. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS_CONTROL_LIST_CHECK_FAILURE](../android/telephony/DataFailCause.md) Access control list check failure at the lower layer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVATION_REJECTED_BCM_VIOLATION](../android/telephony/DataFailCause.md) UE requested to modify QoS parameters or the bearer control mode, which is not compatible with the selected bearer control mode. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVATION_REJECT_GGSN](../android/telephony/DataFailCause.md) Activation rejected by Gateway GPRS Support Node (GGSN), Serving Gateway or PDN Gateway. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVATION_REJECT_UNSPECIFIED](../android/telephony/DataFailCause.md) Activation rejected, unspecified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTIVE_PDP_CONTEXT_MAX_NUMBER_REACHED](../android/telephony/DataFailCause.md) Max number of Packet Data Protocol (PDP) context reached. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_MATCHING_RULES_FAILED](../android/telephony/DataFailCause.md) If connection failed for all matching URSP rules. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_DISABLED](../android/telephony/DataFailCause.md) APN has been disabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_DISALLOWED_ON_ROAMING](../android/telephony/DataFailCause.md) PDN connection to the APN is disallowed on the roaming network. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_MISMATCH](../android/telephony/DataFailCause.md) New PDN bring up is rejected during interface selection because the UE has already allotted the available interfaces for other PDNs. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_PARAMETERS_CHANGED](../android/telephony/DataFailCause.md) APN-related parameters are changed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_PENDING_HANDOVER](../android/telephony/DataFailCause.md) Interface bring up is attempted for an APN that is yet to be handed over to target RAT. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APN_TYPE_CONFLICT](../android/telephony/DataFailCause.md) APN type conflict. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUTH_FAILURE_ON_EMERGENCY_CALL](../android/telephony/DataFailCause.md) Authentication failure on emergency call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEARER_HANDLING_NOT_SUPPORTED](../android/telephony/DataFailCause.md) Procedure requested by the UE was rejected because the bearer handling is not supported. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALL_DISALLOWED_IN_ROAMING](../android/telephony/DataFailCause.md) Roaming is disallowed during call bring up. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALL_PREEMPT_BY_EMERGENCY_APN](../android/telephony/DataFailCause.md) Emergency call bring up on a different ePDG. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANNOT_ENCODE_OTA_MESSAGE](../android/telephony/DataFailCause.md) Unable to encode the OTA message for MT PDP or deactivate PDP. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_ALERT_STOP](../android/telephony/DataFailCause.md) Received an alert stop from the base station due to incoming only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_INCOMING_CALL](../android/telephony/DataFailCause.md) Receiving an incoming call from the base station. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_INTERCEPT](../android/telephony/DataFailCause.md) Received an intercept order from the base station. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_LOCK](../android/telephony/DataFailCause.md) Device in CDMA locked state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_RELEASE_DUE_TO_SO_REJECTION](../android/telephony/DataFailCause.md) Receiving a release from the base station with a SO (Service Option) Reject reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_REORDER](../android/telephony/DataFailCause.md) Receiving a reorder from the base station. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDMA_RETRY_ORDER](../android/telephony/DataFailCause.md) Receiving a retry order from the base station. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANNEL_ACQUISITION_FAILURE](../android/telephony/DataFailCause.md) Channel acquisition failures. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_IN_PROGRESS](../android/telephony/DataFailCause.md) Tearing down is in progress. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COLLISION_WITH_NETWORK_INITIATED_REQUEST](../android/telephony/DataFailCause.md) Network has already initiated the activation, modification, or deactivation of bearer resources that was requested by the UE. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMPANION_IFACE_IN_USE](../android/telephony/DataFailCause.md) Companion interface in use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONCURRENT_SERVICES_INCOMPATIBLE](../android/telephony/DataFailCause.md) The concurrent services requested were not compatible. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONCURRENT_SERVICES_NOT_ALLOWED](../android/telephony/DataFailCause.md) In favor of a voice call or SMS when concurrent voice and data are not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONCURRENT_SERVICE_NOT_SUPPORTED_BY_BASE_STATION](../android/telephony/DataFailCause.md) Concurrent service is not supported by base station. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONDITIONAL_IE_ERROR](../android/telephony/DataFailCause.md) Conditional Information Element (IE) error. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONGESTION](../android/telephony/DataFailCause.md) Network cannot serve a request from the MS due to congestion. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTION_RELEASED](../android/telephony/DataFailCause.md) Indicate the connection was released. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CS_DOMAIN_NOT_AVAILABLE](../android/telephony/DataFailCause.md) CS domain is not available. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CS_FALLBACK_CALL_ESTABLISHMENT_NOT_ALLOWED](../android/telephony/DataFailCause.md) CS fallback call establishment is not allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_PLAN_EXPIRED](../android/telephony/DataFailCause.md) Network initiates a detach on LTE with error cause ""data plan has been replenished or has expired. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_ROAMING_SETTINGS_DISABLED](../android/telephony/DataFailCause.md) PDN Connection to a given APN is disallowed because data roaming is disabled from the device user interface settings and the UE is roaming. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SETTINGS_DISABLED](../android/telephony/DataFailCause.md) PDN Connection to a given APN is disallowed because data is disabled from the device user interface settings. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DBM_OR_SMS_IN_PROGRESS](../android/telephony/DataFailCause.md) DBM or SMS is in progress. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DDS_SWITCHED](../android/telephony/DataFailCause.md) DDS (Default data subscription) switch occurs. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DDS_SWITCH_IN_PROGRESS](../android/telephony/DataFailCause.md) Default data subscription switch is in progress. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRB_RELEASED_BY_RRC](../android/telephony/DataFailCause.md) Data radio bearer is released by the RRC. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DS_EXPLICIT_DEACTIVATION](../android/telephony/DataFailCause.md) Dedicated bearer will be deactivated regardless of the network response. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DUAL_SWITCH](../android/telephony/DataFailCause.md) Dual switch from single standby to dual standby is in progress. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DUN_CALL_DISALLOWED](../android/telephony/DataFailCause.md) Dial up networking (DUN) call bring up is rejected since UE is in eHRPD RAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DUPLICATE_BEARER_ID](../android/telephony/DataFailCause.md) Active dedicated bearer was requested using the same default bearer ID. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EHRPD_TO_HRPD_FALLBACK](../android/telephony/DataFailCause.md) Device falls back from eHRPD to HRPD. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMBMS_NOT_ENABLED](../android/telephony/DataFailCause.md) Data call has been brought down because EMBMS is not enabled at the RRC layer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMBMS_REGULAR_DEACTIVATION](../android/telephony/DataFailCause.md) EMBMS data call has been successfully brought down. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMERGENCY_IFACE_ONLY](../android/telephony/DataFailCause.md) Emergency interface only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMERGENCY_MODE](../android/telephony/DataFailCause.md) Device is operating in Emergency mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ACCESS_BARRED](../android/telephony/DataFailCause.md) EPS (Evolved Packet System) Mobility Management (EMM) access barred. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ACCESS_BARRED_INFINITE_RETRY](../android/telephony/DataFailCause.md) EPS (Evolved Packet System) Mobility Management (EMM) access barred infinity retry. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ATTACH_FAILED](../android/telephony/DataFailCause.md) Attach procedure is rejected by the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_ATTACH_STARTED](../android/telephony/DataFailCause.md) Attach procedure is started for EMC purposes. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_DETACHED](../android/telephony/DataFailCause.md) UE is detached. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_T3417_EXPIRED](../android/telephony/DataFailCause.md) T3417 timer expiration of the service request procedure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMM_T3417_EXT_EXPIRED](../android/telephony/DataFailCause.md) Extended service request fails due to expiration of the T3417 EXT timer. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPS_SERVICES_AND_NON_EPS_SERVICES_NOT_ALLOWED](../android/telephony/DataFailCause.md) EPS and non-EPS services are not allowed by the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPS_SERVICES_NOT_ALLOWED_IN_PLMN](../android/telephony/DataFailCause.md) EPS services are not allowed in the PLMN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSPECIFIED](../android/telephony/DataFailCause.md) Data call fail due to unspecific errors. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_BAD_OTA_MESSAGE](../android/telephony/DataFailCause.md) Bad OTA message is received from the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_BEARER_DEACTIVATED_TO_SYNC_WITH_NETWORK](../android/telephony/DataFailCause.md) Bearer must be deactivated to synchronize with the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_COLLISION_SCENARIOS](../android/telephony/DataFailCause.md) Collision scenarios for the UE and network-initiated procedures. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_CONTEXT_TRANSFERRED_DUE_TO_IRAT](../android/telephony/DataFailCause.md) PDN was disconnected by the downlaod server due to IRAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_DOWNLOAD_SERVER_REJECTED_THE_CALL](../android/telephony/DataFailCause.md) Download server rejected the call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_FAILURE](../android/telephony/DataFailCause.md) ESM level failure. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_INFO_NOT_RECEIVED](../android/telephony/DataFailCause.md) EPS Session Management (ESM) information is not received. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_LOCAL_CAUSE_NONE](../android/telephony/DataFailCause.md) No specific local cause is mentioned, usually a valid OTA cause. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_NW_ACTIVATED_DED_BEARER_WITH_ID_OF_DEF_BEARER](../android/telephony/DataFailCause.md) Active dedicated bearer was requested for an existing default bearer. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_PROCEDURE_TIME_OUT](../android/telephony/DataFailCause.md) ESM procedure maximum attempt timeout failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ESM_UNKNOWN_EPS_BEARER_CONTEXT](../android/telephony/DataFailCause.md) Invalid EPS bearer identity in the request. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_CONNECTION_DENY_BY_BILLING_OR_AUTHENTICATION_FAILURE](../android/telephony/DataFailCause.md) Received a connection deny due to billing or authentication failure on EVDO network. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_CONNECTION_DENY_BY_GENERAL_OR_NETWORK_BUSY](../android/telephony/DataFailCause.md) Received a connection deny due to general or network busy on EVDO network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_CHANGED](../android/telephony/DataFailCause.md) HDR system has been changed due to redirection or the PRL was not preferred. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_CONNECTION_SETUP_TIMEOUT](../android/telephony/DataFailCause.md) Connection setup on the HDR system was time out. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_EXITED](../android/telephony/DataFailCause.md) Device exited HDR due to redirection or the PRL was not preferred. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_HDR_NO_SESSION](../android/telephony/DataFailCause.md) Device does not have an HDR session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVDO_USING_GPS_FIX_INSTEAD_OF_HDR_CALL](../android/telephony/DataFailCause.md) It is ending an HDR call origination in favor of a GPS fix. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FADE](../android/telephony/DataFailCause.md) Device lost the system due to fade. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FAILED_TO_ACQUIRE_COLOCATED_HDR](../android/telephony/DataFailCause.md) Device failed to acquire a co-located HDR for origination. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEATURE_NOT_SUPP](../android/telephony/DataFailCause.md) Feature not supported. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILTER_SEMANTIC_ERROR](../android/telephony/DataFailCause.md) Semantic errors in packet filter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILTER_SYTAX_ERROR](../android/telephony/DataFailCause.md) Syntactical errors in packet filter(s). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORBIDDEN_APN_NAME](../android/telephony/DataFailCause.md) PDN being brought up with an APN that is part of forbidden APN Name list. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_REGISTRATION_FAIL](../android/telephony/DataFailCause.md) Data fail due to GPRS registration failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_SERVICES_AND_NON_GPRS_SERVICES_NOT_ALLOWED](../android/telephony/DataFailCause.md) Not allowed to operate either GPRS or non-GPRS services. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_SERVICES_NOT_ALLOWED](../android/telephony/DataFailCause.md) MS is not allowed to operate GPRS services. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPRS_SERVICES_NOT_ALLOWED_IN_THIS_PLMN](../android/telephony/DataFailCause.md) UE requests GPRS service or the network initiates a detach request in a PLMN that does not offer roaming for GPRS services. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HANDOFF_PREFERENCE_CHANGED](../android/telephony/DataFailCause.md) System preference change back to SRAT during handoff |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_ACCESS_FAILURE](../android/telephony/DataFailCause.md) HDR system access failure. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_FADE](../android/telephony/DataFailCause.md) HDR module released the call due to fade. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HDR_NO_LOCK_GRANTED](../android/telephony/DataFailCause.md) HDR module could not be obtained because of the RF locked. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IFACE_AND_POL_FAMILY_MISMATCH](../android/telephony/DataFailCause.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IFACE_MISMATCH](../android/telephony/DataFailCause.md) Interface mismatch. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ILLEGAL_ME](../android/telephony/DataFailCause.md) ME could not be authenticated and the ME used is not acceptable to the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ILLEGAL_MS](../android/telephony/DataFailCause.md) Network refuses service to the MS because either an identity of the MS is not acceptable to the network or the MS does not pass the authentication check. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMEI_NOT_ACCEPTED](../android/telephony/DataFailCause.md) IMEI of the UE is not accepted by the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMPLICITLY_DETACHED](../android/telephony/DataFailCause.md) Mobile reachable timer has expired, or the GMM context data related to the subscription does not exist in the SGSN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMSI_UNKNOWN_IN_HOME_SUBSCRIBER_SERVER](../android/telephony/DataFailCause.md) IMSI present in the UE is unknown in the home subscriber server. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INCOMING_CALL_REJECTED](../android/telephony/DataFailCause.md) The other clients rejected incoming call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INSUFFICIENT_RESOURCES](../android/telephony/DataFailCause.md) Insufficient resources. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERFACE_IN_USE](../android/telephony/DataFailCause.md) The current interface is being in use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERNAL_CALL_PREEMPT_BY_HIGH_PRIO_APN](../android/telephony/DataFailCause.md) Internal data call preempt by high priority APN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERNAL_EPC_NONEPC_TRANSITION](../android/telephony/DataFailCause.md) Rejected/Brought down since UE is transition between EPC and NONEPC RAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_CONNECTION_ID](../android/telephony/DataFailCause.md) No PDP exists with the given connection ID while modifying or deactivating or activation for an already active PDP. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_DNS_ADDR](../android/telephony/DataFailCause.md) Not receiving a DNS address that was mandatory. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_EMM_STATE](../android/telephony/DataFailCause.md) Invalid EMM state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MANDATORY_INFO](../android/telephony/DataFailCause.md) Invalid mandatory information. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MODE](../android/telephony/DataFailCause.md) Device operational mode is different from the mode requested in the traffic channel bring up. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_PCSCF_ADDR](../android/telephony/DataFailCause.md) Invalid Proxy-Call Session Control Function (P-CSCF) address. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_PCSCF_OR_DNS_ADDRESS](../android/telephony/DataFailCause.md) Not receiving either a PCSCF or a DNS address, one of them being mandatory. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_PRIMARY_NSAPI](../android/telephony/DataFailCause.md) Primary context for NSAPI does not exist. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_SIM_STATE](../android/telephony/DataFailCause.md) SIM was marked by the network as invalid for the circuit and/or packet service domain. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_TRANSACTION_ID](../android/telephony/DataFailCause.md) Invalid transaction id. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IPV6_ADDRESS_TRANSFER_FAILED](../android/telephony/DataFailCause.md) IPv6 address transfer failed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IPV6_PREFIX_UNAVAILABLE](../android/telephony/DataFailCause.md) Device failure to obtain the prefix from the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IP_ADDRESS_MISMATCH](../android/telephony/DataFailCause.md) IP address mismatch. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IP_VERSION_MISMATCH](../android/telephony/DataFailCause.md) New call bring up is rejected since the existing data call IP type doesn't match the requested IP. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IRAT_HANDOVER_FAILED](../android/telephony/DataFailCause.md) Data call was unsuccessfully transferred during the IRAT handover. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IS707B_MAX_ACCESS_PROBES](../android/telephony/DataFailCause.md) Maximum access probes for the IS-707B call. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_AUTHORIZATION_REJECTED](../android/telephony/DataFailCause.md) The user is barred from using the non-3GPP access or the subscribed APN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_CONGESTION](../android/telephony/DataFailCause.md) The requested service was rejected because of congestion in the network while accessing the IWLAN ePDG. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_DNS_RESOLUTION_NAME_FAILURE](../android/telephony/DataFailCause.md) Unable to resolve FQDN for the ePDG to an IP address |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_DNS_RESOLUTION_TIMEOUT](../android/telephony/DataFailCause.md) No response received from the DNS Server due to a timeout |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_AUTH_FAILURE](../android/telephony/DataFailCause.md) Sent in the response to an IKE_AUTH message when, for some reason, the authentication failed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_CERT_INVALID](../android/telephony/DataFailCause.md) IKE Certification validation failure |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_CONFIG_FAILURE](../android/telephony/DataFailCause.md) IKE configuration error resulting in failure |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IKEV2_MSG_TIMEOUT](../android/telephony/DataFailCause.md) IKE message timeout, tunnel setup failed due to no response from EPDG |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_ILLEGAL_ME](../android/telephony/DataFailCause.md) The Mobile Equipment used is not acceptable to the network |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_IMEI_NOT_ACCEPTED](../android/telephony/DataFailCause.md) The network does not accept emergency PDN bringup request using an IMEI |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_MAX_CONNECTION_REACHED](../android/telephony/DataFailCause.md) The PDN connection has been rejected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_NETWORK_FAILURE](../android/telephony/DataFailCause.md) The network has determined that the requested procedure cannot be completed successfully due to network failure. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_NON_3GPP_ACCESS_TO_EPC_NOT_ALLOWED](../android/telephony/DataFailCause.md) No non-3GPP subscription is associated with the IMSI. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_NO_APN_SUBSCRIPTION](../android/telephony/DataFailCause.md) The requested APN is not included in the user's profile, and therefore is not authorized for that user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_PDN_CONNECTION_REJECTION](../android/telephony/DataFailCause.md) The PDN connection corresponding to the requested APN has been rejected. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_PLMN_NOT_ALLOWED](../android/telephony/DataFailCause.md) The ePDG performs PLMN filtering (based on roaming agreements) and rejects the request from the UE. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_RAT_TYPE_NOT_ALLOWED](../android/telephony/DataFailCause.md) The access type is restricted to the user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SEMANTIC_ERRORS_IN_PACKET_FILTERS](../android/telephony/DataFailCause.md) The PDN connection has been rejected due to sematic errors in the packet filter. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SEMANTIC_ERROR_IN_THE_TFT_OPERATION](../android/telephony/DataFailCause.md) The PDN connection has been rejected due to a semantic error in TFT operation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SYNTACTICAL_ERRORS_IN_PACKET_FILTERS](../android/telephony/DataFailCause.md) The PDN connection has been rejected due to syntactic errors in the packet filter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_SYNTACTICAL_ERROR_IN_THE_TFT_OPERATION](../android/telephony/DataFailCause.md) The PDN connection has been rejected due to a syntactic error in TFT operation. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_TUNNEL_NOT_FOUND](../android/telephony/DataFailCause.md) Expected to update or bring down an ePDG tunnel, but no tunnel found |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_UNAUTHENTICATED_EMERGENCY_NOT_SUPPORTED](../android/telephony/DataFailCause.md) The ePDG does not support un-authenticated IMSI based emergency PDN bringup \* |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IWLAN_USER_UNKNOWN](../android/telephony/DataFailCause.md) The user identified by the IMSI is unknown. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMITED_TO_IPV4](../android/telephony/DataFailCause.md) IPv6 interface bring up fails because the network provided only the IPv4 address for the upcoming PDN permanent client can reattempt a IPv6 call bring up after the IPv4 interface is also brought down. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LIMITED_TO_IPV6](../android/telephony/DataFailCause.md) IPv4 interface bring up fails because the network provided only the IPv6 address for the upcoming PDN permanent client can reattempt a IPv4 call bring up after the IPv6 interface is also brought down. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LLC_SNDCP](../android/telephony/DataFailCause.md) Logical Link Control (LLC) Sub Network Dependent Convergence Protocol (SNDCP). |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCAL_END](../android/telephony/DataFailCause.md) Client ended the data call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCATION_AREA_NOT_ALLOWED](../android/telephony/DataFailCause.md) MS requests service, or the network initiates a detach request, in a location area where the HPLMN determines that the MS, by subscription, is not allowed to operate. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOST_CONNECTION](../android/telephony/DataFailCause.md) Data connection was lost. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOWER_LAYER_REGISTRATION_FAILURE](../android/telephony/DataFailCause.md) Lower layer registration failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOW_POWER_MODE_OR_POWERING_DOWN](../android/telephony/DataFailCause.md) Device is going into lower power mode or powering down. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LTE_NAS_SERVICE_REQUEST_FAILED](../android/telephony/DataFailCause.md) Service request procedure failure. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LTE_THROTTLING_NOT_REQUIRED](../android/telephony/DataFailCause.md) Throttling is not needed for this service request failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAC_FAILURE](../android/telephony/DataFailCause.md) MAC level failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_ALL_RULE_NOT_ALLOWED](../android/telephony/DataFailCause.md) No matching rule available for the request, and match-all rule is not allowed for it. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXIMIUM_NSAPIS_EXCEEDED](../android/telephony/DataFailCause.md) Maximum NSAPIs have been exceeded during PDP activation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXINUM_SIZE_OF_L2_MESSAGE_EXCEEDED](../android/telephony/DataFailCause.md) Maximum size of the L2 message was exceeded. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_ACCESS_PROBE](../android/telephony/DataFailCause.md) Maximum access probes transmitted. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_IPV4_CONNECTIONS](../android/telephony/DataFailCause.md) IPv4 data call bring up is rejected because the UE already maintains the allotted maximum number of IPv4 data connections. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_IPV6_CONNECTIONS](../android/telephony/DataFailCause.md) IPv6 data call bring up is rejected because the UE already maintains the allotted maximum number of IPv6 data connections. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_PPP_INACTIVITY_TIMER_EXPIRED](../android/telephony/DataFailCause.md) Maximum PPP inactivity timer expired. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_INCORRECT_SEMANTIC](../android/telephony/DataFailCause.md) Incorrect message semantic. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESSAGE_TYPE_UNSUPPORTED](../android/telephony/DataFailCause.md) Unsupported message type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_CONFIG_FAILURE](../android/telephony/DataFailCause.md) UE is in MIP-only configuration but the MIP configuration fails on call bring up due to incorrect provisioning. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_ADMIN_PROHIBITED](../android/telephony/DataFailCause.md) Foreign agent administratively prohibited MIP (Mobile IP) registration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_DELIVERY_STYLE_NOT_SUPPORTED](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of delivery style was not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_ENCAPSULATION_UNAVAILABLE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of requested encapsulation was unavailable. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_HOME_AGENT_AUTHENTICATION_FAILURE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of home agent authentication failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_INSUFFICIENT_RESOURCES](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of insufficient resources. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MALFORMED_REPLY](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of malformed reply. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MALFORMED_REQUEST](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of malformed request. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_CHALLENGE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of missing challenge. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_HOME_ADDRESS](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of missing Home Address. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_HOME_AGENT](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of missing Home Agent. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MISSING_NAI](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of missing NAI (Network Access Identifier). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_MOBILE_NODE_AUTHENTICATION_FAILURE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of MN-AAA authenticator was wrong. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REASON_UNSPECIFIED](../android/telephony/DataFailCause.md) Reason unspecified for foreign agent rejected MIP (Mobile IP) registration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REQUESTED_LIFETIME_TOO_LONG](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of requested lifetime was too long. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REVERSE_TUNNEL_IS_MANDATORY](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of reverse tunnel was mandatory but not requested by device. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_REVERSE_TUNNEL_UNAVAILABLE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of reverse tunnel was unavailable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_STALE_CHALLENGE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of stale challenge. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_UNKNOWN_CHALLENGE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration because of unknown challenge. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_FA_VJ_HEADER_COMPRESSION_UNAVAILABLE](../android/telephony/DataFailCause.md) Foreign agent rejected MIP (Mobile IP) registration of VJ Header Compression was unavailable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_ADMIN_PROHIBITED](../android/telephony/DataFailCause.md) Home agent administratively prohibited MIP (Mobile IP) registration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_ENCAPSULATION_UNAVAILABLE](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of encapsulation unavailable. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_FOREIGN_AGENT_AUTHENTICATION_FAILURE](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of foreign agent authentication failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_INSUFFICIENT_RESOURCES](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of insufficient resources. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_MALFORMED_REQUEST](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of malformed request. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_MOBILE_NODE_AUTHENTICATION_FAILURE](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of MN-HA authenticator was wrong. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REASON_UNSPECIFIED](../android/telephony/DataFailCause.md) Reason unspecified for home agent rejected MIP (Mobile IP) registration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REGISTRATION_ID_MISMATCH](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of registration id mismatch. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REVERSE_TUNNEL_IS_MANDATORY](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of reverse tunnel is mandatory but not requested by device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_REVERSE_TUNNEL_UNAVAILABLE](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of reverse tunnel was unavailable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIP_HA_UNKNOWN_HOME_AGENT_ADDRESS](../android/telephony/DataFailCause.md) Home agent rejected MIP (Mobile IP) registration because of unknown home agent address. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MISSING_UNKNOWN_APN](../android/telephony/DataFailCause.md) Missing or unknown APN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODEM_APP_PREEMPTED](../android/telephony/DataFailCause.md) Another application in modem preempts the data call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODEM_RESTART](../android/telephony/DataFailCause.md) Modem restart. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSC_TEMPORARILY_NOT_REACHABLE](../android/telephony/DataFailCause.md) Mobile switching center is temporarily unreachable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSG_AND_PROTOCOL_STATE_UNCOMPATIBLE](../android/telephony/DataFailCause.md) Message and protocol state uncompatible. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSG_TYPE_NONCOMPATIBLE_STATE](../android/telephony/DataFailCause.md) Message type uncompatible. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MS_IDENTITY_CANNOT_BE_DERIVED_BY_THE_NETWORK](../android/telephony/DataFailCause.md) No matching identity or context could be found in the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MULTIPLE_PDP_CALL_NOT_ALLOWED](../android/telephony/DataFailCause.md) Multiple PDP call feature is disabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MULTI_CONN_TO_SAME_PDN_NOT_ALLOWED](../android/telephony/DataFailCause.md) Multiple connections to a same PDN is not allowed. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAS_LAYER_FAILURE](../android/telephony/DataFailCause.md) Non-Access Spectrum layer failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAS_REQUEST_REJECTED_BY_NETWORK](../android/telephony/DataFailCause.md) Non-access stratum (NAS) request was rejected by the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAS_SIGNALLING](../android/telephony/DataFailCause.md) NAS signalling. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_FAILURE](../android/telephony/DataFailCause.md) Network Failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_INITIATED_DETACH_NO_AUTO_REATTACH](../android/telephony/DataFailCause.md) Network-initiated detach without reattach. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_INITIATED_DETACH_WITH_AUTO_REATTACH](../android/telephony/DataFailCause.md) Network-initiated detach with reattach. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_INITIATED_TERMINATION](../android/telephony/DataFailCause.md) Brought down by the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](../android/telephony/DataFailCause.md) There is no failure |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NON_IP_NOT_SUPPORTED](../android/telephony/DataFailCause.md) UE is unable to bring up a non-IP data call because the device is not camped on a NB1 cell. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORMAL_RELEASE](../android/telephony/DataFailCause.md) Receiving a release from the base station with no reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_CDMA_SERVICE](../android/telephony/DataFailCause.md) Device does not have CDMA service. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_COLLOCATED_HDR](../android/telephony/DataFailCause.md) There is no co-located HDR. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_EPS_BEARER_CONTEXT_ACTIVATED](../android/telephony/DataFailCause.md) No EPS bearer context was activated. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_GPRS_CONTEXT](../android/telephony/DataFailCause.md) GPRS context is not available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_HYBRID_HDR_SERVICE](../android/telephony/DataFailCause.md) Device has no hybrid HDR service. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_PDP_CONTEXT_ACTIVATED](../android/telephony/DataFailCause.md) MS requests an establishment of the radio access bearers for all active PDP contexts by sending a service request message indicating data to the network, but the SGSN does not have any active PDP context. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_RESPONSE_FROM_BASE_STATION](../android/telephony/DataFailCause.md) There was no response received from the base station. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_SERVICE](../android/telephony/DataFailCause.md) Device has no service. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_SERVICE_ON_GATEWAY](../android/telephony/DataFailCause.md) No service on the gateway. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NSAPI_IN_USE](../android/telephony/DataFailCause.md) The Network Service Access Point Identifier (NSAPI) is in use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NULL_APN_DISALLOWED](../android/telephony/DataFailCause.md) PDN is attempted to be brought up with NULL APN but NULL APN is not supported. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_1](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_10](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_11](../android/telephony/DataFailCause.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_12](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_13](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_14](../android/telephony/DataFailCause.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_15](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_2](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_3](../android/telephony/DataFailCause.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_4](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_5](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_6](../android/telephony/DataFailCause.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_7](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_8](../android/telephony/DataFailCause.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OEM_DCFAILCAUSE_9](../android/telephony/DataFailCause.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_IPV4V6_ALLOWED](../android/telephony/DataFailCause.md) Network supports IPv4v6 PDP type only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_IPV4_ALLOWED](../android/telephony/DataFailCause.md) Packet Data Protocol (PDP) type IPv4 only allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_IPV6_ALLOWED](../android/telephony/DataFailCause.md) Packet Data Protocol (PDP) type IPv6 only allowed. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_NON_IP_ALLOWED](../android/telephony/DataFailCause.md) Network supports non-IP PDP type only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONLY_SINGLE_BEARER_ALLOWED](../android/telephony/DataFailCause.md) Single address bearers only allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATOR_BARRED](../android/telephony/DataFailCause.md) Operator determined barring. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTASP_COMMIT_IN_PROGRESS](../android/telephony/DataFailCause.md) OTASP commit is in progress. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_CONN_DOES_NOT_EXIST](../android/telephony/DataFailCause.md) PDN connection does not exist. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_INACTIVITY_TIMER_EXPIRED](../android/telephony/DataFailCause.md) PDN inactivity timer expired due to no data transmission in a configurable duration of time. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV4_CALL_DISALLOWED](../android/telephony/DataFailCause.md) IPV4 PDN is in throttled state due to network providing only IPV6 address during the previous VSNCP bringup (subs_limited_to_v6). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV4_CALL_THROTTLED](../android/telephony/DataFailCause.md) IPV4 PDN is in throttled state due to previous VSNCP bringup failure(s). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV6_CALL_DISALLOWED](../android/telephony/DataFailCause.md) IPV6 PDN is in throttled state due to network providing only IPV4 address during the previous VSNCP bringup (subs_limited_to_v4). |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_IPV6_CALL_THROTTLED](../android/telephony/DataFailCause.md) IPV6 PDN is in throttled state due to previous VSNCP bringup failure(s). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_NON_IP_CALL_DISALLOWED](../android/telephony/DataFailCause.md) Non-IP PDN is in disallowed state due to the network providing only an IP address. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDN_NON_IP_CALL_THROTTLED](../android/telephony/DataFailCause.md) Non-IP PDN is in throttled state due to previous VSNCP bringup failure(s). |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_ACTIVATE_MAX_RETRY_FAILED](../android/telephony/DataFailCause.md) SM attempts PDP activation for a maximum of four attempts. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_DUPLICATE](../android/telephony/DataFailCause.md) PDP context already exists. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_ESTABLISH_TIMEOUT_EXPIRED](../android/telephony/DataFailCause.md) Expiration of the PDP establish timer with a maximum of five retries. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_INACTIVE_TIMEOUT_EXPIRED](../android/telephony/DataFailCause.md) Expiration of the PDP deactivate timer with a maximum of four retries. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_LOWERLAYER_ERROR](../android/telephony/DataFailCause.md) PDP activation failed due to RRC_ABORT or a forbidden PLMN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_MODIFY_COLLISION](../android/telephony/DataFailCause.md) MO PDP modify collision when the MT PDP is already in progress. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_MODIFY_TIMEOUT_EXPIRED](../android/telephony/DataFailCause.md) Expiration of the PDP modify timer with a maximum of four retries. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_PPP_NOT_SUPPORTED](../android/telephony/DataFailCause.md) PDP PPP calls are not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PDP_WITHOUT_ACTIVE_TFT](../android/telephony/DataFailCause.md) Packet Data Protocol (PDP) without active traffic flow template (TFT). |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHONE_IN_USE](../android/telephony/DataFailCause.md) Device is in use (e.g., voice call). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHYSICAL_LINK_CLOSE_IN_PROGRESS](../android/telephony/DataFailCause.md) Physical link is in the process of cleanup. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLMN_NOT_ALLOWED](../android/telephony/DataFailCause.md) UE requests GPRS service, or the network initiates a detach request in a PLMN which does not offer roaming for GPRS services to that MS. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_AUTH_FAILURE](../android/telephony/DataFailCause.md) Data call bring up fails in the PPP setup due to an authorization failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_CHAP_FAILURE](../android/telephony/DataFailCause.md) Data call bring up fails in the PPP setup due to a CHAP failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_CLOSE_IN_PROGRESS](../android/telephony/DataFailCause.md) Data call bring up fails in the PPP setup because the PPP is in the process of cleaning the previous PPP session. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_OPTION_MISMATCH](../android/telephony/DataFailCause.md) Data call bring up fails in the PPP setup due to an option mismatch. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_PAP_FAILURE](../android/telephony/DataFailCause.md) Data call bring up fails in the PPP setup due to a PAP failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PPP_TIMEOUT](../android/telephony/DataFailCause.md) Data call bring up fails in the PPP setup due to a timeout. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREF_RADIO_TECH_CHANGED](../android/telephony/DataFailCause.md) Preferred technology has changed, must retry with parameters appropriate for new technology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROFILE_BEARER_INCOMPATIBLE](../android/telephony/DataFailCause.md) APN bearer type in the profile does not match preferred network mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_ERRORS](../android/telephony/DataFailCause.md) Protocol errors. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QOS_NOT_ACCEPTED](../android/telephony/DataFailCause.md) Quality of service (QoS) is not accepted. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_ACCESS_BEARER_FAILURE](../android/telephony/DataFailCause.md) Radio access bearer failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_ACCESS_BEARER_SETUP_FAILURE](../android/telephony/DataFailCause.md) Radio access bearer is not established by the lower layers during activation, modification, or deactivation. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_NOT_AVAILABLE](../android/telephony/DataFailCause.md) Data fail due to radio not unavailable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIO_POWER_OFF](../android/telephony/DataFailCause.md) data call was disconnected because radio was resetting, powered off. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REDIRECTION_OR_HANDOFF_IN_PROGRESS](../android/telephony/DataFailCause.md) Device is in the process of redirecting or handing off to a different target system. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_FAIL](../android/telephony/DataFailCause.md) Data fail due to registration failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGULAR_DEACTIVATION](../android/telephony/DataFailCause.md) Regular deactivation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REJECTED_BY_BASE_STATION](../android/telephony/DataFailCause.md) The base station rejecting the call. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_AFTER_HANDOVER](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection was aborted by the non-access stratum (NAS) after an IRAT to LTE IRAT handover. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_AFTER_IRAT_CELL_CHANGE](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection was aborted before deactivating the LTE stack after a successful LTE to GSM/EDGE IRAT cell change order procedure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_DUE_TO_IRAT_CHANGE](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection was aborted before deactivating the LTE stack due to a successful LTE to WCDMA/GSM/TD-SCDMA IRAT change. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORTED_DURING_IRAT_CELL_CHANGE](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection was aborted in the middle of a LTE to GSM IRAT cell change order procedure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ABORT_REQUEST](../android/telephony/DataFailCause.md) Connection has been released by the radio resource control (RRC) due to an abort request. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ACCESS_BARRED](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection establishment failed due to access barrred. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ACCESS_STRATUM_FAILURE](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection failure at access stratum. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_ANOTHER_PROCEDURE_IN_PROGRESS](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection establishment is aborted due to another procedure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_CELL_NOT_CAMPED](../android/telephony/DataFailCause.md) Connection establishment failed as the radio resource control (RRC) is not camped on any cell. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_CELL_RESELECTION](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection establishment failed due to cell reselection at access stratum. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_CONFIG_FAILURE](../android/telephony/DataFailCause.md) Connection establishment failed due to configuration failure at the radio resource control (RRC). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_INVALID_REQUEST](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection establishment failure due to an error in the request message. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_LINK_FAILURE](../android/telephony/DataFailCause.md) Connection establishment failed due to a link failure at the radio resource control (RRC). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_NORMAL_RELEASE](../android/telephony/DataFailCause.md) Normal radio resource control (RRC) connection release. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_OUT_OF_SERVICE_DURING_CELL_REGISTER](../android/telephony/DataFailCause.md) UE is out of service during the call register. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_RADIO_LINK_FAILURE](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection release failed due to radio link failure conditions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_REESTABLISHMENT_FAILURE](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection re-establishment failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_REJECT_BY_NETWORK](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection establishment failed due to the network rejecting the UE connection request. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_RELEASED_SECURITY_NOT_ACTIVE](../android/telephony/DataFailCause.md) If the UE has an LTE radio link failure before security is established, the radio resource control (RRC) connection must be released and the UE must return to idle. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_RF_UNAVAILABLE](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection establishment failure due to the RF was unavailable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_SYSTEM_INFORMATION_BLOCK_READ_ERROR](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection released due to a system information block read error. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_SYSTEM_INTERVAL_FAILURE](../android/telephony/DataFailCause.md) Connection establishment failed due to a service interval failure at the radio resource control (RRC). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_TIMER_EXPIRED](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection could not be established in the time limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_CONNECTION_TRACKING_AREA_ID_CHANGED](../android/telephony/DataFailCause.md) Radio resource control (RRC) connection establishment failure due to a change in the tracking area ID. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_CONNECTION_RELEASE](../android/telephony/DataFailCause.md) Radio resource control (RRC) uplink data delivery failed due to a connection release. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_DATA_TRANSMISSION_FAILURE](../android/telephony/DataFailCause.md) Transmission failure of radio resource control (RRC) uplink data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_DELIVERY_FAILED_DUE_TO_HANDOVER](../android/telephony/DataFailCause.md) Radio resource control (RRC) uplink data delivery failed due to a handover. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_ERROR_REQUEST_FROM_NAS](../android/telephony/DataFailCause.md) Radio resource control (RRC) is not connected but the non-access stratum (NAS) sends an uplink data request. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RRC_UPLINK_RADIO_LINK_FAILURE](../android/telephony/DataFailCause.md) Radio resource control (RRC) uplink data delivery failed due to a radio link failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RUIM_NOT_PRESENT](../android/telephony/DataFailCause.md) RUIM not being present. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_MODE_REJECTED](../android/telephony/DataFailCause.md) Unspecified security mode reject. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_NOT_ALLOWED_ON_PLMN](../android/telephony/DataFailCause.md) Service is not allowed on the requested PLMN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_OPTION_NOT_SUBSCRIBED](../android/telephony/DataFailCause.md) Requested service option not subscribed. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_OPTION_NOT_SUPPORTED](../android/telephony/DataFailCause.md) Service option not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_OPTION_OUT_OF_ORDER](../android/telephony/DataFailCause.md) Service option temporarily out of order. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_LOST](../android/telephony/DataFailCause.md) Data call drop due to network/modem disconnect. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIM_CARD_CHANGED](../android/telephony/DataFailCause.md) Card was refreshed or removed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_REJECTED](../android/telephony/DataFailCause.md) Data call fail due to the slice not being allowed for the data call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNCHRONIZATION_FAILURE](../android/telephony/DataFailCause.md) Synchronization failure. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEST_LOOPBACK_REGULAR_DEACTIVATION](../android/telephony/DataFailCause.md) Test loop-back data call has been successfully brought down. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TETHERED_CALL_ACTIVE](../android/telephony/DataFailCause.md) Data call was disconnected by modem because tethered. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TFT_SEMANTIC_ERROR](../android/telephony/DataFailCause.md) Semantic error in the Traffic flow templates (TFT) operation. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TFT_SYTAX_ERROR](../android/telephony/DataFailCause.md) Syntactical error in the Traffic flow templates (TFT) operation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THERMAL_EMERGENCY](../android/telephony/DataFailCause.md) Put device in thermal emergency. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THERMAL_MITIGATION](../android/telephony/DataFailCause.md) Thermal level increases and causes calls to be torn down when normal mode of operation is not allowed. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRAT_SWAP_FAILED](../android/telephony/DataFailCause.md) Target RAT swap failed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_INITIATED_DETACH_OR_DISCONNECT](../android/telephony/DataFailCause.md) UE performs a detach or disconnect PDN action based on TE requirements. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_IS_ENTERING_POWERSAVE_MODE](../android/telephony/DataFailCause.md) UE is entering power save mode. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_RAT_CHANGE](../android/telephony/DataFailCause.md) RAT change on the UE. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UE_SECURITY_CAPABILITIES_MISMATCH](../android/telephony/DataFailCause.md) UE security capabilities mismatch. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UMTS_HANDOVER_TO_IWLAN](../android/telephony/DataFailCause.md) UMTS interface is brought down due to handover from UMTS to iWLAN. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UMTS_REACTIVATION_REQ](../android/telephony/DataFailCause.md) Universal Mobile Telecommunications System (UMTS) reactivation request. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNACCEPTABLE_NETWORK_PARAMETER](../android/telephony/DataFailCause.md) Data fail due to unacceptable network parameter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNACCEPTABLE_NON_EPS_AUTHENTICATION](../android/telephony/DataFailCause.md) Unacceptable non-EPS authentication. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](../android/telephony/DataFailCause.md) Unknown data failure cause. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_INFO_ELEMENT](../android/telephony/DataFailCause.md) Unknown info element. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_PDP_ADDRESS_TYPE](../android/telephony/DataFailCause.md) Unknown Packet Data Protocol (PDP) address type. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_PDP_CONTEXT](../android/telephony/DataFailCause.md) Unknown Packet Data Protocol (PDP) context. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNPREFERRED_RAT](../android/telephony/DataFailCause.md) RAT on which the data call is attempted/connected is no longer the preferred RAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSUPPORTED_1X_PREV](../android/telephony/DataFailCause.md) P_rev supported by 1 base station is less than 6, which is not supported for a 1X data call. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSUPPORTED_APN_IN_CURRENT_PLMN](../android/telephony/DataFailCause.md) Unsupported APN in current public land mobile network (PLMN). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNSUPPORTED_QCI_VALUE](../android/telephony/DataFailCause.md) QCI (QoS Class Identifier) indicated in the UE request cannot be supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USER_AUTHENTICATION](../android/telephony/DataFailCause.md) User authentication. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_ADMINISTRATIVELY_PROHIBITED](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with the reason of administratively prohibited at the HSGW. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_APN_UNAUTHORIZED](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the requested APN is unauthorized. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_GEN_ERROR](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a general error. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_INSUFFICIENT_PARAMETERS](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with the reason of insufficient parameter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_NO_PDN_GATEWAY_ADDRESS](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to the network rejected the VSNCP configuration request due to no PDN gateway address. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_EXISTS_FOR_THIS_APN](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the PDN exists for this APN. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_GATEWAY_REJECT](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request due to a PDN gateway reject. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_GATEWAY_UNREACHABLE](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the PDN gateway is unreachable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_ID_IN_USE](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of PDN ID in use, or all existing PDNs are brought down with this end reason because one of the PDN bring up was rejected by the network with the reason of PDN ID in use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_PDN_LIMIT_EXCEEDED](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request because the PDN limit has been exceeded. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_RECONNECT_NOT_ALLOWED](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with reconnect to this PDN not allowed, or an active data call is terminated by the network because reconnection to this PDN is not allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_RESOURCE_UNAVAILABLE](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request with the reason of resource unavailable. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_SUBSCRIBER_LIMITATION](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a network rejection of the VSNCP configuration request for the reason of subscriber limitation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSNCP_TIMEOUT](../android/telephony/DataFailCause.md) Data call bring up fails in the VSNCP phase due to a VSNCP timeout error. |
 
 ## Constants
 

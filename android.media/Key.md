@@ -4,14 +4,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # Key
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AudioMetadata.Key "View this page in Java") 
+Kotlin| [Java](../android/media/AudioMetadata.Key.md) 
 | --- | --- |
 
 ```
 interface Key<T : Any!>
 ```
 
-| [android.media.AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key#) |
+| [android.media.AudioMetadata.Key](../android/media/AudioMetadata.Key.md) |
 
 Key interface for the`AudioMetadata`map.
 
@@ -23,8 +23,8 @@ Vendors are allowed to implement this`Key`interface for their debugging or priva
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key#getName())`()` Returns the internal name of the key. |
-| abstract [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\> | [getValueClass](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key#getValueClass())`()` Returns the class type`T`of the associated value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../android/media/AudioMetadata.Key.md))`()` Returns the internal name of the key. |
+| abstract [Class](../java/lang/Class.md)\<T\> | [getValueClass](../android/media/AudioMetadata.Key.md))`()` Returns the class type`T`of the associated value. |
 
 ## Public methods
 
@@ -50,8 +50,8 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getValueClass(): Class<T>
 ```
 
-Returns the class type`T`of the associated value. Valid class types for [android.os.Build.VERSION_CODES#R](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int) are`Integer.class`,`Long.class`,`Float.class`,`Double.class`,`String.class`.
+Returns the class type`T`of the associated value. Valid class types for [android.os.Build.VERSION_CODES#R](../android/os/Build.VERSION_CODES.md) are`Integer.class`,`Long.class`,`Float.class`,`Double.class`,`String.class`.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T> | This value cannot be`null`. |
+| [Class](../java/lang/Class.md)<T> | This value cannot be`null`. |

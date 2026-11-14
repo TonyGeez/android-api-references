@@ -2,11 +2,11 @@
 
 # android.adservices.adid
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/adid/package-summary "View this page in Java")
+Kotlin| [Java](../android/adservices/adid/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [AdId](https://developer.android.com/reference/kotlin/android/adservices/adid/AdId) | A unique, user-resettable, device-wide, per-profile ID for advertising. |
+| [AdId](../android/adservices/adid/AdId.md) | A unique, user-resettable, device-wide, per-profile ID for advertising. |
 | --- | --- |
-| [AdIdManager](https://developer.android.com/reference/kotlin/android/adservices/adid/AdIdManager) | AdId Manager provides APIs for app and ad-SDKs to access advertising ID. |
+| [AdIdManager](../android/adservices/adid/AdIdManager.md) | AdId Manager provides APIs for app and ad-SDKs to access advertising ID. |

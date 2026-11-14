@@ -8,7 +8,7 @@ class RangingResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.RangingResult](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#) |
+| ↳ | [android.net.wifi.rtt.RangingResult](../android/net/wifi/rtt/RangingResult.md) |
 
 Ranging result for a request started by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)`. Results are returned in `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingResults(kotlin.collections.MutableList)`.
 
@@ -49,7 +49,7 @@ A ranging result is the distance measurement result for a single device specifie
 | --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getLci()()` <br /> |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getLcr()()` <br /> |
-| [MacAddress](https://developer.android.com/reference/kotlin/android/net/MacAddress.html#)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMacAddress()()` <br /> |
+| [MacAddress](../android/net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMacAddress()()` <br /> |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMaxTimeBetweenNtbMeasurementsMicros()()` Gets maximum time between measurements in microseconds for IEEE 802. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMeasurementBandwidth()()` The bandwidth used to transmit the RTT measurement frame. |
@@ -64,7 +64,7 @@ A ranging result is the distance measurement result for a single device specifie
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPasnComebackAfterMillis()()` Get Comeback after time in milliseconds. |
 | --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPasnComebackCookie()()` Get PASN comeback cookie. |
-| [PeerHandle](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle.html#)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPeerHandle()()` <br /> |
+| [PeerHandle](../android/net/wifi/aware/PeerHandle.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPeerHandle()()` <br /> |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRangingTimestampMillis()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRetryAfterDurationMillis()()` <br /> |
@@ -72,7 +72,7 @@ A ranging result is the distance measurement result for a single device specifie
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getSecureHeLtfProtocolVersion()()` Get Secure HE-LTF protocol version used. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()()` <br /> |
-| [ResponderLocation](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getUnverifiedResponderLocation()()` <br /> |
+| [ResponderLocation](../android/net/wifi/rtt/ResponderLocation.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getUnverifiedResponderLocation()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getUsdPeerId()()` Returns the USD peer identifier of the device whose range measurement was requested. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#hashCode()()` Returns a hash code value for the object. |
@@ -90,7 +90,7 @@ A ranging result is the distance measurement result for a single device specifie
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RangingResult](https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RangingResult](../android/net/wifi/rtt/RangingResult.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -685,7 +685,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

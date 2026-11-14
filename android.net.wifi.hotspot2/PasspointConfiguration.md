@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # PasspointConfiguration
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration "View this page in Java")
+Kotlin | [Java](../android/net/wifi/hotspot2/PasspointConfiguration.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PasspointConfiguration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.hotspot2.PasspointConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#) |
+| ↳ | [android.net.wifi.hotspot2.PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md) |
 
 Class representing Passpoint configuration. This contains configurations specified in PerProviderSubscription (PPS) Management Object (MO) tree. For more info, refer to Hotspot 2.0 PPS MO defined in section 9.1 of the Hotspot 2.0 Release 2 Technical Specification.
 
@@ -30,10 +30,10 @@ Class representing Passpoint configuration. This contains configurations specifi
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getCredential()()` Get the credential information. |
+| [Credential](../android/net/wifi/hotspot2/pps/Credential.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getCredential()()` Get the credential information. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getDecoratedIdentityPrefix()()` Get the decorated identity prefix. |
-| [HomeSp](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getHomeSp()()` Get the Home SP (Service Provider) information. |
+| [HomeSp](../android/net/wifi/hotspot2/pps/HomeSp.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getHomeSp()()` Get the Home SP (Service Provider) information. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getSubscriptionExpirationTimeMillis()()` Utility method to get the time this subscription will expire. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getUniqueId()()` Get a unique identifier for a PasspointConfiguration object. |
@@ -51,7 +51,7 @@ Class representing Passpoint configuration. This contains configurations specifi
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PasspointConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -77,7 +77,7 @@ Copy constructor.
 
 | Parameters ||
 |---|---|
-| `source` | [PasspointConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#)!: The source to copy from |
+| `source` | [PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md)!: The source to copy from |
 
 ## Public methods
 
@@ -240,7 +240,7 @@ Set the credential information.
 
 | Parameters ||
 |---|---|
-| `credential` | [Credential](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential)!: The credential information to set to |
+| `credential` | [Credential](../android/net/wifi/hotspot2/pps/Credential.md)!: The credential information to set to |
 
 ### setDecoratedIdentityPrefix
 
@@ -268,7 +268,7 @@ Set the Home SP (Service Provider) information.
 
 | Parameters ||
 |---|---|
-| `homeSp` | [HomeSp](https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp)!: The Home SP information to set to |
+| `homeSp` | [HomeSp](../android/net/wifi/hotspot2/pps/HomeSp.md)!: The Home SP information to set to |
 
 ### setSubscriptionExpirationTimeInMillis
 
@@ -313,7 +313,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

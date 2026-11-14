@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # SearchResults
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/appsearch/SearchResults "View this page in Java") 
+Kotlin| [Java](../android/app/appsearch/SearchResults.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ open class SearchResults : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.SearchResults](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults#) |
+| ↳ | [android.app.appsearch.SearchResults](../android/app/appsearch/SearchResults.md) |
 
 Encapsulates results of a search operation.
 
-Each [AppSearchSession.search](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#search(kotlin.String,%20android.app.appsearch.SearchSpec))operation returns a list of [SearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult) objects, referred to as a "page", limited by the size configured by [android.app.appsearch.SearchSpec.Builder#setResultCountPerPage](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec.Builder#setResultCountPerPage(kotlin.Int)).
+Each [AppSearchSession.search](../android/app/appsearch/AppSearchSession.md))operation returns a list of [SearchResult](../android/app/appsearch/SearchResult.md) objects, referred to as a "page", limited by the size configured by [android.app.appsearch.SearchSpec.Builder#setResultCountPerPage](../android/app/appsearch/SearchSpec.Builder.md)).
 
-To fetch a page of results, call [getNextPage](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults#getNextPage(java.util.concurrent.Executor,%20java.util.function.Consumer)).
+To fetch a page of results, call [getNextPage](../android/app/appsearch/SearchResults.md)).
 
-All instances of [SearchResults](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults#) must call android.app.appsearch.SearchResults#close() after the results are fetched.
+All instances of [SearchResults](../android/app/appsearch/SearchResults.md) must call android.app.appsearch.SearchResults#close() after the results are fetched.
 
 This class is not thread safe.
 
@@ -29,8 +29,8 @@ This class is not thread safe.
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults#close())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getNextPage](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults#getNextPage(java.util.concurrent.Executor,%20java.util.function.Consumer))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)< [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult)< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult)!>!>!>`)` Retrieves the next page of [SearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult) objects. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/app/appsearch/SearchResults.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getNextPage](../android/app/appsearch/SearchResults.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [Consumer](../java/util/function/Consumer.md)< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SearchResult](../android/app/appsearch/SearchResult.md)!>!>!>`)` Retrieves the next page of [SearchResult](../android/app/appsearch/SearchResult.md) objects. |
 
 ## Public methods
 
@@ -58,13 +58,13 @@ open fun getNextPage(
 ): Unit
 ```
 
-Retrieves the next page of [SearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult) objects.
+Retrieves the next page of [SearchResult](../android/app/appsearch/SearchResult.md) objects.
 
-The page size is configured by [SearchSpec.Builder.setResultCountPerPage](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchSpec.Builder#setResultCountPerPage(kotlin.Int)).
+The page size is configured by [SearchSpec.Builder.setResultCountPerPage](../android/app/appsearch/SearchSpec.Builder.md)).
 
 Continue calling this method to access results until it returns an empty list, signifying there are no more results.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. |
-| `callback` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [AppSearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchResult)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult)!\>!\>!\>:Callback to receive the pending result of performing this operation. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java/util/function/Consumer.md)\< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchResult](../android/app/appsearch/SearchResult.md)!\>!\>!\>:Callback to receive the pending result of performing this operation. This value cannot be`null`. |

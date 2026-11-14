@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # SQLiteCantOpenDatabaseException
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteCantOpenDatabaseException "View this page in Java") 
+Kotlin| [Java](../android/database/sqlite/SQLiteCantOpenDatabaseException.md) 
 | --- | --- |
 
 ```
@@ -14,20 +14,20 @@ open class SQLiteCantOpenDatabaseException : SQLiteException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.SQLException](https://developer.android.com/reference/kotlin/android/database/SQLException.html#) |||
-| | | | | ↳ | [android.database.sqlite.SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) ||
-| | | | | | ↳ | [android.database.sqlite.SQLiteCantOpenDatabaseException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCantOpenDatabaseException#) |
+| | | | ↳ | [android.database.SQLException](../android/database/SQLException.md) |||
+| | | | | ↳ | [android.database.sqlite.SQLiteException](../android/database/sqlite/SQLiteException.md) ||
+| | | | | | ↳ | [android.database.sqlite.SQLiteCantOpenDatabaseException](../android/database/sqlite/SQLiteCantOpenDatabaseException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteCantOpenDatabaseException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCantOpenDatabaseException#SQLiteCantOpenDatabaseException())`()` <br /> |
-| [SQLiteCantOpenDatabaseException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCantOpenDatabaseException#SQLiteCantOpenDatabaseException(kotlin.String))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SQLiteCantOpenDatabaseException](../android/database/sqlite/SQLiteCantOpenDatabaseException.md))`()` <br /> |
+| [SQLiteCantOpenDatabaseException](../android/database/sqlite/SQLiteCantOpenDatabaseException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

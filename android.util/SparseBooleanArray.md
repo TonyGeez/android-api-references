@@ -8,7 +8,7 @@ open class SparseBooleanArray : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.SparseBooleanArray](https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#) |
+| ↳ | [android.util.SparseBooleanArray](../android/util/SparseBooleanArray.md) |
 
 SparseBooleanArrays map integers to booleans. Unlike a normal array of booleans there can be gaps in the indices. It is intended to be more memory efficient than using a HashMap to map Integers to Booleans, both because it avoids auto-boxing keys and values and its data structure doesn't rely on an extra entry object for each mapping.
 
@@ -27,7 +27,7 @@ It is possible to iterate over the items in this container using `https://develo
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#append(kotlin.Int,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#clear()()` Removes all key-value mappings from this SparseBooleanArray. |
-| open [SparseBooleanArray](https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#clone()()` Creates and returns a copy of this object. |
+| open [SparseBooleanArray](../android/util/SparseBooleanArray.md) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#clone()()` Creates and returns a copy of this object. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#compute(kotlin.Int,%20java.util.function.IntBinaryOperator)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, function: https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)` Attempts to compute a new mapped value for the specified key based on its current mapped value (or false if there is no current mapping). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#delete(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the mapping from the specified key, if there was any. |
@@ -152,7 +152,7 @@ Attempts to compute a new mapped value for the specified key based on its curren
 | Parameters ||
 |---|---|
 | `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key to compute the value for. |
-| `function` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#): The function to compute the new value. For the second argument that represents the current mapped value, 0 is used for false and 1 for true. The returned value will be converted to a boolean similarly, 0 for false and true otherwise. This value cannot be `null`. |
+| `function` | [IntBinaryOperator](../java/util/function/IntBinaryOperator.md): The function to compute the new value. For the second argument that represents the current mapped value, 0 is used for false and 1 for true. The returned value will be converted to a boolean similarly, 0 for false and true otherwise. This value cannot be `null`. |
 
 | Return ||
 |---|---|

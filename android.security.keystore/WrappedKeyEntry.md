@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # WrappedKeyEntry
 
-Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry "View this page in Java") 
+Kotlin| [Java](../android/security/keystore/WrappedKeyEntry.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class WrappedKeyEntry : KeyStore.Entry
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.keystore.WrappedKeyEntry](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#) |
+| ↳ | [android.security.keystore.WrappedKeyEntry](../android/security/keystore/WrappedKeyEntry.md) |
 
-An [Entry](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry.html#) that holds a wrapped key. Wrapped keys contain encrypted key data and description information that can be used to securely import key material into a hardware-backed Keystore.
+An [Entry](../java/security/KeyStore.Entry.md) that holds a wrapped key. Wrapped keys contain encrypted key data and description information that can be used to securely import key material into a hardware-backed Keystore.
 
 The wrapped key is in DER-encoded ASN.1 format, specified by the following schema: 
 
@@ -49,19 +49,19 @@ Imported wrapped keys will have KeymasterDefs.KM_ORIGIN_SECURELY_IMPORTED
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WrappedKeyEntry](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#WrappedKeyEntry(kotlin.ByteArray,%20kotlin.String,%20kotlin.String,%20java.security.spec.AlgorithmParameterSpec))`(`wrappedKeyBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `wrappingKeyAlias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `algorithmParameterSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Constructs a [WrappedKeyEntry](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#) with a binary wrapped key. |
+| [WrappedKeyEntry](../android/security/keystore/WrappedKeyEntry.md))`(`wrappedKeyBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `wrappingKeyAlias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `algorithmParameterSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Constructs a [WrappedKeyEntry](../android/security/keystore/WrappedKeyEntry.md) with a binary wrapped key. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | [getAlgorithmParameterSpec](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#getAlgorithmParameterSpec())`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTransformation](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#getTransformation())`()` <br /> |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getWrappedKeyBytes](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#getWrappedKeyBytes())`()` <br /> |
+| open [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getAlgorithmParameterSpec](../android/security/keystore/WrappedKeyEntry.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTransformation](../android/security/keystore/WrappedKeyEntry.md))`()` <br /> |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getWrappedKeyBytes](../android/security/keystore/WrappedKeyEntry.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getWrappingKeyAlias](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#getWrappingKeyAlias())`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getWrappingKeyAlias](../android/security/keystore/WrappedKeyEntry.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [Entry](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry.html#) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [KeyStore.Entry.Attribute](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry.Attribute.html#)!>! | [getAttributes](https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry.html#getAttributes())`()` <br /> Retrieves the attributes associated with an entry. <br /> | ||
+| From class [Entry](../java/security/KeyStore.Entry.md) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [KeyStore.Entry.Attribute](../java/security/KeyStore.Entry.Attribute.md)!>! | [getAttributes](../java/security/KeyStore.Entry.md))`()` <br /> Retrieves the attributes associated with an entry. <br /> | ||
 
 ## Public constructors
 
@@ -77,7 +77,7 @@ WrappedKeyEntry(
     algorithmParameterSpec: AlgorithmParameterSpec!)
 ```
 
-Constructs a [WrappedKeyEntry](https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry#) with a binary wrapped key.
+Constructs a [WrappedKeyEntry](../android/security/keystore/WrappedKeyEntry.md) with a binary wrapped key.
 
 | Parameters ||
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ Constructs a [WrappedKeyEntry](https://developer.android.com/reference/kotlin/an
 | `wrappingKeyAlias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:identifies the private key that can unwrap the wrapped key |
 | `transformation` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:used to unwrap the key. ex: "RSA/ECB/OAEPPadding" |
 | --- | --- |
-| `algorithmParameterSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:spec for the private key used to unwrap the wrapped key |
+| `algorithmParameterSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:spec for the private key used to unwrap the wrapped key |
 
 ## Public methods
 

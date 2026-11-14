@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # AuthenticatorException
 
-Kotlin| [Java](https://developer.android.com/reference/android/accounts/AuthenticatorException "View this page in Java") 
+Kotlin| [Java](../android/accounts/AuthenticatorException.md) 
 | --- | --- |
 
 ```
@@ -14,19 +14,19 @@ open class AuthenticatorException : AccountsException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [android.accounts.AccountsException](https://developer.android.com/reference/kotlin/android/accounts/AccountsException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [android.accounts.AccountsException](../android/accounts/AccountsException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.accounts.AuthenticatorException](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorException#) |
+| | | | ↳ | [android.accounts.AuthenticatorException](../android/accounts/AuthenticatorException.md) |
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AuthenticatorException](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorException#AuthenticatorException())`()` <br /> |
-| [AuthenticatorException](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorException#AuthenticatorException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [AuthenticatorException](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorException#AuthenticatorException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
-| [AuthenticatorException](https://developer.android.com/reference/kotlin/android/accounts/AuthenticatorException#AuthenticatorException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [AuthenticatorException](../android/accounts/AuthenticatorException.md))`()` <br /> |
+| [AuthenticatorException](../android/accounts/AuthenticatorException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [AuthenticatorException](../android/accounts/AuthenticatorException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [AuthenticatorException](../android/accounts/AuthenticatorException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
 
 ## Public constructors
 

@@ -4,14 +4,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ConfigRequestIpv4Address
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address "View this page in Java") 
+Kotlin| [Java](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address.md) 
 | --- | --- |
 
 ```
 interface ConfigRequestIpv4Address : TunnelModeChildSessionParams.TunnelModeChildConfigRequest
 ```
 
-| [android.net.ipsec.ike.TunnelModeChildSessionParams.ConfigRequestIpv4Address](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address#) |
+| [android.net.ipsec.ike.TunnelModeChildSessionParams.ConfigRequestIpv4Address](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address.md) |
 
 Represents an IPv4 Internal Address request
 
@@ -19,7 +19,7 @@ Represents an IPv4 Internal Address request
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Inet4Address](https://developer.android.com/reference/kotlin/java/net/Inet4Address.html#)? | [getAddress](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address#getAddress())`()` Retrieves the requested internal IPv4 address |
+| abstract [Inet4Address](../java/net/Inet4Address.md)? | [getAddress](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address.md))`()` Retrieves the requested internal IPv4 address |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Retrieves the requested internal IPv4 address
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Inet4Address](https://developer.android.com/reference/kotlin/java/net/Inet4Address.html#)? | The requested IPv4 address, or null if no specific internal address was requested |
+| [Inet4Address](../java/net/Inet4Address.md)? | The requested IPv4 address, or null if no specific internal address was requested |

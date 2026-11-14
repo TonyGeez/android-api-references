@@ -2,10 +2,10 @@
 
 # android.location.provider
 
-Kotlin| [Java](https://developer.android.com/reference/android/location/provider/package-summary "View this page in Java")
+Kotlin| [Java](../android/location/provider/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [ProviderProperties](https://developer.android.com/reference/kotlin/android/location/provider/ProviderProperties) | Location provider properties. |
+| [ProviderProperties](../android/location/provider/ProviderProperties.md) | Location provider properties. |
 | --- | --- |

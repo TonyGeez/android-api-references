@@ -11,13 +11,13 @@ open class SQLInvalidAuthorizationSpecException : SQLNonTransientException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.sql.SQLException](../java/sql/SQLException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.sql.SQLNonTransientException](https://developer.android.com/reference/kotlin/java/sql/SQLNonTransientException) ||
-| | | | | ↳ | [java.sql.SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#) |
+| | | | ↳ | [java.sql.SQLNonTransientException](../java/sql/SQLNonTransientException.md) ||
+| | | | | ↳ | [java.sql.SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md) |
 
-The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*28*', or under vendor-specified conditions. This indicates that the authorization credentials presented during connection establishment are not valid.
+The subclass of [SQLException](../java/sql/SQLException.md) thrown when the SQLState class value is '*28*', or under vendor-specified conditions. This indicates that the authorization credentials presented during connection establishment are not valid.
 
 Please consult your driver vendor documentation for the vendor-specified conditions for which this`Exception`may be thrown.
 
@@ -25,14 +25,14 @@ Please consult your driver vendor documentation for the vendor-specified conditi
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException())`()` Constructs a`SQLInvalidAuthorizationSpecException`object. |
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`. |
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException(kotlin.String,%20kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`and`SQLState`. |
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`and`vendorCode`. |
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`and`cause`. |
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException(kotlin.String,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`and`cause`. |
-| [SQLInvalidAuthorizationSpecException](https://developer.android.com/reference/kotlin/java/sql/SQLInvalidAuthorizationSpecException#SQLInvalidAuthorizationSpecException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`cause`. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`()` Constructs a`SQLInvalidAuthorizationSpecException`object. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`and`SQLState`. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`and`vendorCode`. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`and`cause`. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`and`cause`. |
+| [SQLInvalidAuthorizationSpecException](../java/sql/SQLInvalidAuthorizationSpecException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLInvalidAuthorizationSpecException`object with a given`cause`. |
 
 ## Public constructors
 
@@ -44,7 +44,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLInvalidAuthorizationSpecException()
 ```
 
-Constructs a`SQLInvalidAuthorizationSpecException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLInvalidAuthorizationSpecException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 
@@ -56,7 +56,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLInvalidAuthorizationSpecException(reason: String!)
 ```
 
-Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 
@@ -74,7 +74,7 @@ SQLInvalidAuthorizationSpecException(
     SQLState: String!)
 ```
 
-Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method. The vendor code is initialized to 0.
+Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method. The vendor code is initialized to 0.
 
 <br />
 
@@ -94,7 +94,7 @@ SQLInvalidAuthorizationSpecException(
     vendorCode: Int)
 ```
 
-Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLInvalidAuthorizationSpecException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 

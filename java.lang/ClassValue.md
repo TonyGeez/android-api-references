@@ -10,7 +10,7 @@ abstract class ClassValue<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.ClassValue](https://developer.android.com/reference/kotlin/java/lang/ClassValue#) |
+| ↳ | [java.lang.ClassValue](../java/lang/ClassValue.md) |
 
 Lazily associate a computed value with (potentially) every type. For example, if a dynamic language needs to construct a message dispatch table for each class encountered at a message send call site, it can use a`ClassValue`to cache information needed to perform the message send quickly, for each class encountered.
 
@@ -18,16 +18,16 @@ Lazily associate a computed value with (potentially) every type. For example, if
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------|---|
-| [ClassValue](https://developer.android.com/reference/kotlin/java/lang/ClassValue#ClassValue())`()` Sole constructor. |
+| [ClassValue](../java/lang/ClassValue.md))`()` Sole constructor. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openT | [get](https://developer.android.com/reference/kotlin/java/lang/ClassValue#get(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>!`)` Returns the value for the given class. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/java/lang/ClassValue#remove(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>!`)` Removes the associated value for the given class. |
+| openT | [get](../java/lang/ClassValue.md))`(`type:` ` [Class](../java/lang/Class.md)<*>!`)` Returns the value for the given class. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](../java/lang/ClassValue.md))`(`type:` ` [Class](../java/lang/Class.md)<*>!`)` Removes the associated value for the given class. |
 
 | Protected methods ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractT | [computeValue](https://developer.android.com/reference/kotlin/java/lang/ClassValue#computeValue(java.lang.Class))`(`type:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class)<*>!`)` Computes the given class's derived value for this`ClassValue`. |
+| abstractT | [computeValue](../java/lang/ClassValue.md))`(`type:` ` [Class](../java/lang/Class.md)<*>!`)` Computes the given class's derived value for this`ClassValue`. |
 
 ## Protected constructors
 
@@ -51,17 +51,17 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun get(type: Class<*>!): T
 ```
 
-Returns the value for the given class. If no value has yet been computed, it is obtained by an invocation of the [computeValue](https://developer.android.com/reference/kotlin/java/lang/ClassValue#computeValue(java.lang.Class))method.
+Returns the value for the given class. If no value has yet been computed, it is obtained by an invocation of the [computeValue](../java/lang/ClassValue.md))method.
 
 The actual installation of the value on the class is performed atomically. At that point, if several racing threads have computed values, one is chosen, and returned to all the racing threads.
 
 The`type`parameter is typically a class, but it may be any type, such as an interface, a primitive type (like`int.class`), or`void.class`.
 
-In the absence of`remove`calls, a class value has a simple state diagram: uninitialized and initialized. When`remove`calls are made, the rules for value observation are more complex. See the documentation for [remove](https://developer.android.com/reference/kotlin/java/lang/ClassValue#remove(java.lang.Class))for more information.
+In the absence of`remove`calls, a class value has a simple state diagram: uninitialized and initialized. When`remove`calls are made, the rules for value observation are more complex. See the documentation for [remove](../java/lang/ClassValue.md))for more information.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>!:the type whose class value must be computed or retrieved |
+| `type` | [Class](../java/lang/Class.md)\<\*\>!:the type whose class value must be computed or retrieved |
 
 | Return ||
 |---|--------------------------------------------------------------------------------------|
@@ -73,8 +73,8 @@ In the absence of`remove`calls, a class value has a simple state diagram: uninit
 
 **See Also**
 
-- [#remove](https://developer.android.com/reference/kotlin/java/lang/ClassValue#remove(java.lang.Class))
-- [#computeValue](https://developer.android.com/reference/kotlin/java/lang/ClassValue#computeValue(java.lang.Class)) 
+- [#remove](../java/lang/ClassValue.md))
+- [#computeValue](../java/lang/ClassValue.md)) 
 
 ### remove
 
@@ -84,7 +84,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun remove(type: Class<*>!): Unit
 ```
 
-Removes the associated value for the given class. If this value is subsequently [read](https://developer.android.com/reference/kotlin/java/lang/ClassValue#get(java.lang.Class))for the same class, its value will be reinitialized by invoking its [computeValue](https://developer.android.com/reference/kotlin/java/lang/ClassValue#computeValue(java.lang.Class))method. This may result in an additional invocation of the method for the given class.
+Removes the associated value for the given class. If this value is subsequently [read](../java/lang/ClassValue.md))for the same class, its value will be reinitialized by invoking its [computeValue](../java/lang/ClassValue.md))method. This may result in an additional invocation of the method for the given class.
 
 In order to explain the interaction between`get`and`remove`calls, we must model the state transitions of a class value to take into account the alternation between uninitialized and initialized states. To do this, number these states sequentially from zero, and note that uninitialized (or removed) states are numbered with even numbers, while initialized (or re-initialized) states have odd numbers.
 
@@ -112,7 +112,7 @@ We can assume in the above scenario that`CV.computeValue`uses locks to properly 
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------|
-| `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>!:the type whose class value must be removed |
+| `type` | [Class](../java/lang/Class.md)\<\*\>!:the type whose class value must be removed |
 
 | Exceptions ||
 |----------------------------------|-------------------------|
@@ -130,15 +130,15 @@ protected abstract fun computeValue(type: Class<*>!): T
 
 Computes the given class's derived value for this`ClassValue`.
 
-This method will be invoked within the first thread that accesses the value with the [get](https://developer.android.com/reference/kotlin/java/lang/ClassValue#get(java.lang.Class))method.
+This method will be invoked within the first thread that accesses the value with the [get](../java/lang/ClassValue.md))method.
 
-Normally, this method is invoked at most once per class, but it may be invoked again if there has been a call to [remove](https://developer.android.com/reference/kotlin/java/lang/ClassValue#remove(java.lang.Class)).
+Normally, this method is invoked at most once per class, but it may be invoked again if there has been a call to [remove](../java/lang/ClassValue.md)).
 
 If this method throws an exception, the corresponding call to`get`will terminate abnormally with that exception, and no class value will be recorded.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------|
-| `type` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\<\*\>!:the type whose class value must be computed |
+| `type` | [Class](../java/lang/Class.md)\<\*\>!:the type whose class value must be computed |
 
 | Return ||
 |---|---------------------------------------------------------------------------------------------|
@@ -146,5 +146,5 @@ If this method throws an exception, the corresponding call to`get`will terminate
 
 **See Also**
 
-- [#get](https://developer.android.com/reference/kotlin/java/lang/ClassValue#get(java.lang.Class))
-- [#remove](https://developer.android.com/reference/kotlin/java/lang/ClassValue#remove(java.lang.Class))
+- [#get](../java/lang/ClassValue.md))
+- [#remove](../java/lang/ClassValue.md))

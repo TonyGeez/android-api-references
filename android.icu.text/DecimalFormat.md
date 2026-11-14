@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # DecimalFormat
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/text/DecimalFormat "View this page in Java")
+Kotlin | [Java](../android/icu/text/DecimalFormat.md)
 | --- | --- |
 
 ```
@@ -11,13 +11,13 @@ open class DecimalFormat : NumberFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [java.text.Format](https://developer.android.com/reference/kotlin/java/text/Format.html#) ||||
-| | ↳ | [android.icu.text.UFormat](https://developer.android.com/reference/kotlin/android/icu/text/UFormat) |||
-| | | ↳ | [android.icu.text.NumberFormat](https://developer.android.com/reference/kotlin/android/icu/text/NumberFormat) ||
+| ↳ | [java.text.Format](../java/text/Format.md) ||||
+| | ↳ | [android.icu.text.UFormat](../android/icu/text/UFormat.md) |||
+| | | ↳ | [android.icu.text.NumberFormat](../android/icu/text/NumberFormat.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.icu.text.DecimalFormat](https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#) |
+| | | | ↳ | [android.icu.text.DecimalFormat](../android/icu/text/DecimalFormat.md) |
 
-| Known Direct Subclasses [CompactDecimalFormat](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat) |---|---| | [CompactDecimalFormat](https://developer.android.com/reference/kotlin/android/icu/text/CompactDecimalFormat) | Formats numbers in compact (abbreviated) notation, like "1. | |
+| Known Direct Subclasses [CompactDecimalFormat](../android/icu/text/CompactDecimalFormat.md) |---|---| | [CompactDecimalFormat](../android/icu/text/CompactDecimalFormat.md) | Formats numbers in compact (abbreviated) notation, like "1. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/text/DecimalFormat.html#`. Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
@@ -183,26 +183,26 @@ Under the hood, DecimalFormat maintains an immutable formatter object that is re
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#clone()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Tests for equality between this formatter and another formatter. |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(android.icu.math.BigDecimal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats an ICU BigDecimal. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(android.icu.math.BigDecimal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats an ICU BigDecimal. |
 | --- | --- |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(android.icu.util.CurrencyAmount,%20java.lang.StringBuffer,%20java.text.FieldPosition)(currAmt: https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats a CurrencyAmount. |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(kotlin.Double,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Specialization of format. |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(java.math.BigDecimal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats a BigDecimal. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(android.icu.util.CurrencyAmount,%20java.lang.StringBuffer,%20java.text.FieldPosition)(currAmt: https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats a CurrencyAmount. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(kotlin.Double,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Specialization of format. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(java.math.BigDecimal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats a BigDecimal. |
 | --- | --- |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(java.math.BigInteger,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://developer.android.com/reference/kotlin/java/math/BigInteger.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats a BigInteger. |
-| open [StringBuffer](https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(kotlin.Long,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Specialization of format. |
-| open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#formatToCharacterIterator(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Formats an Object producing an `AttributedCharacterIterator`. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(java.math.BigInteger,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://developer.android.com/reference/kotlin/java/math/BigInteger.html#!, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` **\[icu\]** Formats a BigInteger. |
+| open [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#format(kotlin.Long,%20java.lang.StringBuffer,%20java.text.FieldPosition)(number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, result: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Specialization of format. |
+| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#formatToCharacterIterator(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Formats an Object producing an `AttributedCharacterIterator`. |
 | --- | --- |
-| open [Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getCurrency()()` Returns the currency used to display currency amounts. |
-| open [CurrencyPluralInfo](https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getCurrencyPluralInfo()()` **\[icu\]** Returns the current instance of CurrencyPluralInfo. |
-| open [Currency.CurrencyUsage](https://developer.android.com/reference/kotlin/android/icu/util/Currency.CurrencyUsage.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getCurrencyUsage()()` **\[icu\]** Returns the strategy for rounding currency amounts. |
+| open [Currency](../android/icu/util/Currency.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getCurrency()()` Returns the currency used to display currency amounts. |
+| open [CurrencyPluralInfo](../android/icu/text/CurrencyPluralInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getCurrencyPluralInfo()()` **\[icu\]** Returns the current instance of CurrencyPluralInfo. |
+| open [Currency.CurrencyUsage](../android/icu/util/Currency.CurrencyUsage.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getCurrencyUsage()()` **\[icu\]** Returns the strategy for rounding currency amounts. |
 | --- | --- |
-| open [DecimalFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormatSymbols)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getDecimalFormatSymbols()()` Returns a copy of the decimal format symbols used by this formatter. |
+| open [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getDecimalFormatSymbols()()` Returns a copy of the decimal format symbols used by this formatter. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getFormatWidth()()` Returns the minimum number of characters in formatted output. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getGroupingSize()()` Returns the primary grouping size in use. |
 | --- | --- |
-| open [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getMathContext()()` **\[icu\]** Returns the `https://developer.android.com/reference/kotlin/java/math/MathContext.html#` being used to round numbers. |
-| open [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getMathContextICU()()` **\[icu\]** Returns the `https://developer.android.com/reference/kotlin/android/icu/math/MathContext.html#` being used to round numbers. |
+| open [MathContext](../java/math/MathContext.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getMathContext()()` **\[icu\]** Returns the `https://developer.android.com/reference/kotlin/java/math/MathContext.html#` being used to round numbers. |
+| open [MathContext](../android/icu/math/MathContext.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getMathContextICU()()` **\[icu\]** Returns the `https://developer.android.com/reference/kotlin/android/icu/math/MathContext.html#` being used to round numbers. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getMaximumFractionDigits()()` Returns the effective maximum number of integer digits after the decimal separator. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getMaximumIntegerDigits()()` Returns the effective maximum number of digits before the decimal separator. |
@@ -225,7 +225,7 @@ Under the hood, DecimalFormat maintains an immutable formatter object that is re
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getPositivePrefix()()` **Affixes:** Gets the positive prefix string currently being used to format numbers. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getPositiveSuffix()()` **Affixes:** Gets the positive suffix string currently being used to format numbers. |
 | --- | --- |
-| open [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getRoundingIncrement()()` **\[icu\]** Returns the increment to which numbers are being rounded. |
+| open [BigDecimal](../java/math/BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getRoundingIncrement()()` **\[icu\]** Returns the increment to which numbers are being rounded. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getRoundingMode()()` Returns the rounding mode being used to round numbers. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#getSecondaryGroupingSize()()` **\[icu\]** Returns the secondary grouping size in use. |
 | --- | --- |
@@ -246,7 +246,7 @@ Under the hood, DecimalFormat maintains an immutable formatter object that is re
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#isSignAlwaysShown()()` **\[icu\]** Returns whether the sign is being shown on positive numbers. |
 | --- | --- |
 | open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#parse(kotlin.String,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parsePosition: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Returns a Long if possible (e.g., within the range \[Long.MIN_VALUE, Long.MAX_VALUE\] and with no decimals); otherwise, returns another type, such as a BigDecimal, BigInteger, or Double. |
-| open [CurrencyAmount](https://developer.android.com/reference/kotlin/android/icu/util/CurrencyAmount.html#)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#parseCurrency(kotlin.CharSequence,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, parsePosition: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses text from the given string as a CurrencyAmount. |
+| open [CurrencyAmount](../android/icu/util/CurrencyAmount.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#parseCurrency(kotlin.CharSequence,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, parsePosition: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses text from the given string as a CurrencyAmount. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#setCurrency(android.icu.util.Currency)(currency: https://developer.android.com/reference/kotlin/android/icu/util/Currency.html#!)` Sets the currency to be used when formatting numbers. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormat#setCurrencyPluralInfo(android.icu.text.CurrencyPluralInfo)(newInfo: https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo!)` **\[icu\]** Sets a custom instance of CurrencyPluralInfo. |
@@ -485,7 +485,7 @@ Most users should call the factory methods on NumberFormat, such as android.icu.
 | Parameters ||
 |---|---|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A pattern string such as "#,##0.00" conforming to [UTS #35](http://unicode.org/reports/tr35/tr35-numbers.html#Number_Format_Patterns). |
-| `symbols` | [DecimalFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormatSymbols)!: The set of symbols to be used. |
+| `symbols` | [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)!: The set of symbols to be used. |
 
 | Exceptions ||
 |---|---|
@@ -514,8 +514,8 @@ Most users should call the factory methods on NumberFormat, such as android.icu.
 | Parameters ||
 |---|---|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a non-localized pattern string |
-| `symbols` | [DecimalFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormatSymbols)!: the set of symbols to be used |
-| `infoInput` | [CurrencyPluralInfo](https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo)!: the information used for currency plural format, including currency plural patterns and plural rules. |
+| `symbols` | [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)!: the set of symbols to be used |
+| `infoInput` | [CurrencyPluralInfo](../android/icu/text/CurrencyPluralInfo.md)!: the information used for currency plural format, including currency plural patterns and plural rules. |
 | --- | --- |
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the decimal formatting style, it is one of the following values: NumberFormat.NUMBERSTYLE; NumberFormat.CURRENCYSTYLE; NumberFormat.PERCENTSTYLE; NumberFormat.SCIENTIFICSTYLE; NumberFormat.INTEGERSTYLE; NumberFormat.ISOCURRENCYSTYLE; NumberFormat.PLURALCURRENCYSTYLE; |
 
@@ -1362,7 +1362,7 @@ Sets the currency to be used when formatting numbers. The effect is twofold:
 | Parameters ||
 |---|---|
 | `theCurrency` | new currency object to use. May be null for some subclasses. |
-| `currency` | [Currency](https://developer.android.com/reference/kotlin/android/icu/util/Currency.html#)!: The currency to use. |
+| `currency` | [Currency](../android/icu/util/Currency.md)!: The currency to use. |
 
 ### setCurrencyPluralInfo
 
@@ -1378,7 +1378,7 @@ open fun setCurrencyPluralInfo(newInfo: CurrencyPluralInfo!): Unit
 
 | Parameters ||
 |---|---|
-| `newInfo` | [CurrencyPluralInfo](https://developer.android.com/reference/kotlin/android/icu/text/CurrencyPluralInfo)!: The CurrencyPluralInfo to use when printing currency long names. |
+| `newInfo` | [CurrencyPluralInfo](../android/icu/text/CurrencyPluralInfo.md)!: The CurrencyPluralInfo to use when printing currency long names. |
 
 ### setCurrencyUsage
 
@@ -1399,7 +1399,7 @@ CASH mode is relevant in currencies that do not have tender down to the penny. F
 
 | Parameters ||
 |---|---|
-| `usage` | [Currency.CurrencyUsage](https://developer.android.com/reference/kotlin/android/icu/util/Currency.CurrencyUsage.html#)!: The strategy to use when rounding in the current currency. |
+| `usage` | [Currency.CurrencyUsage](../android/icu/util/Currency.CurrencyUsage.md)!: The strategy to use when rounding in the current currency. |
 
 ### setDecimalFormatSymbols
 
@@ -1413,7 +1413,7 @@ Sets the decimal format symbols used by this formatter. The formatter uses a cop
 
 | Parameters ||
 |---|---|
-| `newSymbols` | [DecimalFormatSymbols](https://developer.android.com/reference/kotlin/android/icu/text/DecimalFormatSymbols)!: desired DecimalFormatSymbols |
+| `newSymbols` | [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)!: desired DecimalFormatSymbols |
 
 **See Also**
 
@@ -1573,7 +1573,7 @@ When formatting, since no division is ever performed, the default MathContext is
 
 | Parameters ||
 |---|---|
-| `mathContext` | [MathContext](https://developer.android.com/reference/kotlin/java/math/MathContext.html#)!: The MathContext to use when rounding numbers. |
+| `mathContext` | [MathContext](../java/math/MathContext.md)!: The MathContext to use when rounding numbers. |
 
 | Exceptions ||
 |---|---|
@@ -1595,7 +1595,7 @@ open fun setMathContextICU(mathContextICU: MathContext!): Unit
 
 | Parameters ||
 |---|---|
-| `mathContextICU` | [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext.html#)!: The MathContext to use when rounding numbers. |
+| `mathContextICU` | [MathContext](../android/icu/math/MathContext.md)!: The MathContext to use when rounding numbers. |
 
 | Exceptions ||
 |---|---|
@@ -2026,7 +2026,7 @@ open fun setRoundingIncrement(increment: BigDecimal!): Unit
 
 | Parameters ||
 |---|---|
-| `increment` | [BigDecimal](https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal.html#)!: The increment to which numbers are to be rounded. |
+| `increment` | [BigDecimal](../android/icu/math/BigDecimal.md)!: The increment to which numbers are to be rounded. |
 
 **See Also**
 
@@ -2064,7 +2064,7 @@ See `https://developer.android.com/reference/kotlin/android/icu/text/DecimalForm
 
 | Parameters ||
 |---|---|
-| `increment` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!: The increment to which numbers are to be rounded. |
+| `increment` | [BigDecimal](../java/math/BigDecimal.md)!: The increment to which numbers are to be rounded. |
 
 **See Also**
 

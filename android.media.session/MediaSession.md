@@ -8,7 +8,7 @@ class MediaSession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.session.MediaSession](https://developer.android.com/reference/kotlin/android/media/session/MediaSession#) |
+| ↳ | [android.media.session.MediaSession](../android/media/session/MediaSession.md) |
 
 Allows interaction with media controllers, volume keys, media buttons, and transport controls.
 
@@ -44,11 +44,11 @@ MediaSession objects are thread safe.
 
 | Public methods ||
 |---|---|
-| static [Size](https://developer.android.com/reference/kotlin/android/util/Size.html#) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getBitmapSizeLimit(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the media metadata bitmap size limit from a specified context |
-| [MediaController](https://developer.android.com/reference/kotlin/android/media/session/MediaController) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getController()()` Get a controller for this session. |
-| [MediaSessionManager.RemoteUserInfo](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.RemoteUserInfo) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getCurrentControllerInfo()()` Gets the controller information who sent the current request. |
+| static [Size](../android/util/Size.md) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getBitmapSizeLimit(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the media metadata bitmap size limit from a specified context |
+| [MediaController](../android/media/session/MediaController.md) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getController()()` Get a controller for this session. |
+| [MediaSessionManager.RemoteUserInfo](../android/media/session/MediaSessionManager.RemoteUserInfo.md) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getCurrentControllerInfo()()` Gets the controller information who sent the current request. |
 | --- | --- |
-| [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getSessionToken()()` Retrieve a token object that can be used by apps to create a `https://developer.android.com/reference/kotlin/android/media/session/MediaController` for interacting with this session. |
+| [MediaSession.Token](../android/media/session/MediaSession.Token.md) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getSessionToken()()` Retrieve a token object that can be used by apps to create a `https://developer.android.com/reference/kotlin/android/media/session/MediaController` for interacting with this session. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#isActive()()` Get the current active state of this session. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#release()()` This must be called when an app has finished performing playback. |
 | --- | --- |
@@ -128,7 +128,7 @@ Note that `https://developer.android.com/reference/kotlin/java/lang/RuntimeExcep
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to use to create the session. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to use to create the session. This value cannot be `null`. |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A short name for debugging purposes. This value cannot be `null`. |
 
 ### MediaSession
@@ -150,9 +150,9 @@ Note that `https://developer.android.com/reference/kotlin/java/lang/RuntimeExcep
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to use to create the session. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to use to create the session. This value cannot be `null`. |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A short name for debugging purposes. This value cannot be `null`. |
-| `sessionInfo` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: A bundle for additional information about this session. Controllers can get this information by calling `https://developer.android.com/reference/kotlin/android/media/session/MediaController#getSessionInfo()`. An `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this contains any non-framework Parcelable objects. This value may be `null`. |
+| `sessionInfo` | [Bundle](../android/os/Bundle.md)?: A bundle for additional information about this session. Controllers can get this information by calling `https://developer.android.com/reference/kotlin/android/media/session/MediaController#getSessionInfo()`. An `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this contains any non-framework Parcelable objects. This value may be `null`. |
 | --- | --- |
 
 ### MediaSession
@@ -178,9 +178,9 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to use to create the session. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to use to create the session. This value cannot be `null`. |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A short name for debugging purposes. This value cannot be `null`. |
-| `sessionInfo` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: A bundle for additional information about this session. Controllers can get this information by calling `https://developer.android.com/reference/kotlin/android/media/session/MediaController#getSessionInfo()`. An `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this contains any non-framework Parcelable objects. This value may be `null`. |
+| `sessionInfo` | [Bundle](../android/os/Bundle.md)?: A bundle for additional information about this session. Controllers can get this information by calling `https://developer.android.com/reference/kotlin/android/media/session/MediaController#getSessionInfo()`. An `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this contains any non-framework Parcelable objects. This value may be `null`. |
 | --- | --- |
 | `overridePackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Package name override for the session. This value cannot be `null`. |
 
@@ -198,7 +198,7 @@ Gets the media metadata bitmap size limit from a specified context
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The context to get the bitmap size limit from. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The context to get the bitmap size limit from. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -298,7 +298,7 @@ Send a proprietary event to all MediaControllers listening to this Session. It's
 | Parameters ||
 |---|---|
 | `event` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the event to send. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: Any extras included with the event. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: Any extras included with the event. This value may be `null`. |
 
 ### setActive
 
@@ -330,7 +330,7 @@ Set the callback to null to stop receiving updates.
 
 | Parameters ||
 |---|---|
-| `callback` | [MediaSession.Callback](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Callback)?: The callback object. This value may be `null`. |
+| `callback` | [MediaSession.Callback](../android/media/session/MediaSession.Callback.md)?: The callback object. This value may be `null`. |
 
 ### setCallback
 
@@ -349,8 +349,8 @@ Set the callback to null to stop receiving updates.
 
 | Parameters ||
 |---|---|
-| `callback` | [MediaSession.Callback](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Callback)?: The callback to receive updates on. This value may be `null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler that events should be posted on. This value may be `null`. |
+| `callback` | [MediaSession.Callback](../android/media/session/MediaSession.Callback.md)?: The callback to receive updates on. This value may be `null`. |
+| `handler` | [Handler](../android/os/Handler.md)?: The handler that events should be posted on. This value may be `null`. |
 
 ### setExtras
 
@@ -364,7 +364,7 @@ Set some extras that can be associated with the `https://developer.android.com/r
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: The extras associated with the `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#`. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: The extras associated with the `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#`. This value may be `null`. |
 
 ### setFlags
 
@@ -394,7 +394,7 @@ Note: The given `https://developer.android.com/reference/kotlin/android/content/
 
 | Parameters ||
 |---|---|
-| `broadcastReceiver` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: the component name of the BroadcastReceiver class. This value may be `null`. |
+| `broadcastReceiver` | [ComponentName](../android/content/ComponentName.md)?: the component name of the BroadcastReceiver class. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -421,7 +421,7 @@ The pending intent is recommended to be explicit to follow the security recommen
 
 | Parameters ||
 |---|---|
-| `mbr` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)?: The `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to send the media button event to. This value may be `null`. |
+| `mbr` | [PendingIntent](../android/app/PendingIntent.md)?: The `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to send the media button event to. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -439,7 +439,7 @@ Update the current metadata. New metadata can be created using `https://develope
 
 | Parameters ||
 |---|---|
-| `metadata` | [MediaMetadata](https://developer.android.com/reference/kotlin/android/media/MediaMetadata.html#)?: The new metadata. This value may be `null`. |
+| `metadata` | [MediaMetadata](../android/media/MediaMetadata.md)?: The new metadata. This value may be `null`. |
 
 **See Also**
 
@@ -457,7 +457,7 @@ Update the current playback state.
 
 | Parameters ||
 |---|---|
-| `state` | [PlaybackState](https://developer.android.com/reference/kotlin/android/media/session/PlaybackState)?: The current state of playback. This value may be `null`. |
+| `state` | [PlaybackState](../android/media/session/PlaybackState.md)?: The current state of playback. This value may be `null`. |
 
 ### setPlaybackToLocal
 
@@ -473,7 +473,7 @@ By default sessions use attributes for media.
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#)!: The `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` for this session's audio. |
+| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` for this session's audio. |
 
 ### setPlaybackToRemote
 
@@ -487,7 +487,7 @@ Configure this session to use remote volume handling. This must be called to rec
 
 | Parameters ||
 |---|---|
-| `volumeProvider` | [VolumeProvider](https://developer.android.com/reference/kotlin/android/media/VolumeProvider.html#): The provider that will handle volume changes. May not be null. |
+| `volumeProvider` | [VolumeProvider](../android/media/VolumeProvider.md): The provider that will handle volume changes. May not be null. |
 
 ### setQueue
 
@@ -503,7 +503,7 @@ The queue should be of reasonable size. If the play queue is unbounded within yo
 
 | Parameters ||
 |---|---|
-| `queue` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession.QueueItem](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.QueueItem)!\>?: A list of items in the play queue. This value may be `null`. |
+| `queue` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession.QueueItem](../android/media/session/MediaSession.QueueItem.md)!\>?: A list of items in the play queue. This value may be `null`. |
 
 ### setQueueTitle
 
@@ -555,7 +555,7 @@ Set an intent for launching UI for this Session. This can be used as a quick lin
 
 | Parameters ||
 |---|---|
-| `pi` | [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)?: The intent to launch to show UI for this Session. This value may be `null`. |
+| `pi` | [PendingIntent](../android/app/PendingIntent.md)?: The intent to launch to show UI for this Session. This value may be `null`. |
 
 ## Protected methods
 

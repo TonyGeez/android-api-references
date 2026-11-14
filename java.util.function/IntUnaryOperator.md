@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface IntUnaryOperator
 ```
 
-| [java.util.function.IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#) |
+| [java.util.function.IntUnaryOperator](../java/util/function/IntUnaryOperator.md) |
 
-Represents an operation on a single`int`-valued operand that produces an`int`-valued result. This is the primitive type specialization of [UnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator) for`int`.
+Represents an operation on a single`int`-valued operand that produces an`int`-valued result. This is the primitive type specialization of [UnaryOperator](../java/util/function/UnaryOperator.md) for`int`.
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [applyAsInt(int)](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#applyAsInt(kotlin.Int)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsInt(int)](../java/util/function/IntUnaryOperator.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)! | [andThen](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#andThen(java.util.function.IntUnaryOperator))`(`after:` ` [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)!`)` Returns a composed operator that first applies this operator to its input, and then applies the`after`operator to the result. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#applyAsInt(kotlin.Int))`(`operand:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operator to the given operand. |
-| open [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)! | [compose](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#compose(java.util.function.IntUnaryOperator))`(`before:` ` [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)!`)` Returns a composed operator that first applies the`before`operator to its input, and then applies this operator to the result. |
+| open [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | [andThen](../java/util/function/IntUnaryOperator.md))`(`after:` ` [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!`)` Returns a composed operator that first applies this operator to its input, and then applies the`after`operator to the result. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](../java/util/function/IntUnaryOperator.md))`(`operand:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operator to the given operand. |
+| open [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | [compose](../java/util/function/IntUnaryOperator.md))`(`before:` ` [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!`)` Returns a composed operator that first applies the`before`operator to its input, and then applies this operator to the result. |
 | --- | --- |
-| openstatic [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)! | [identity](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#identity())`()` Returns a unary operator that always returns its input argument. |
+| openstatic [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | [identity](../java/util/function/IntUnaryOperator.md))`()` Returns a unary operator that always returns its input argument. |
 
 ## Public methods
 
@@ -38,11 +38,11 @@ Returns a composed operator that first applies this operator to its input, and t
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `after` | [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)!:the operator to apply after this operator is applied |
+| `after` | [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!:the operator to apply after this operator is applied |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)! | a composed operator that first applies this operator and then applies the`after`operator |
+| [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | a composed operator that first applies this operator and then applies the`after`operator |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -50,7 +50,7 @@ Returns a composed operator that first applies this operator to its input, and t
 
 **See Also**
 
-- [#compose(IntUnaryOperator)](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#compose(java.util.function.IntUnaryOperator)) 
+- [#compose(IntUnaryOperator)](../java/util/function/IntUnaryOperator.md)) 
 
 ### applyAsInt
 
@@ -82,11 +82,11 @@ Returns a composed operator that first applies the`before`operator to its input,
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `before` | [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)!:the operator to apply before this operator is applied |
+| `before` | [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!:the operator to apply before this operator is applied |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)! | a composed operator that first applies the`before`operator and then applies this operator |
+| [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | a composed operator that first applies the`before`operator and then applies this operator |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -94,7 +94,7 @@ Returns a composed operator that first applies the`before`operator to its input,
 
 **See Also**
 
-- [#andThen(IntUnaryOperator)](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#andThen(java.util.function.IntUnaryOperator)) 
+- [#andThen(IntUnaryOperator)](../java/util/function/IntUnaryOperator.md)) 
 
 ### identity
 
@@ -108,4 +108,4 @@ Returns a unary operator that always returns its input argument.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [IntUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntUnaryOperator#)! | a unary operator that always returns its input argument |
+| [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | a unary operator that always returns its input argument |

@@ -10,7 +10,7 @@ open class SSLEngineResult
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#) |
+| ↳ | [javax.net.ssl.SSLEngineResult](../javax/net/ssl/SSLEngineResult.md) |
 
 An encapsulation of the result state produced by`SSLEngine`I/O calls.
 
@@ -20,21 +20,21 @@ A`SSLEngine`provides a means for establishing secure communication sessions betw
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus) An`SSLEngineResult`enum describing the current handshaking state of this`SSLEngine`. |
-| | [Status](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.Status) An`SSLEngineResult`enum describing the overall result of the`SSLEngine`operation. |
+| | [HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md) An`SSLEngineResult`enum describing the current handshaking state of this`SSLEngine`. |
+| | [Status](../javax/net/ssl/SSLEngineResult.Status.md) An`SSLEngineResult`enum describing the overall result of the`SSLEngine`operation. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLEngineResult](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#SSLEngineResult(javax.net.ssl.SSLEngineResult.Status,%20javax.net.ssl.SSLEngineResult.HandshakeStatus,%20kotlin.Int,%20kotlin.Int))`(`status:` ` [SSLEngineResult.Status](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.Status)!`, `handshakeStatus:` ` [SSLEngineResult.HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus)!`, `bytesConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bytesProduced:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes a new instance of this class. |
+| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md))`(`status:` ` [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)!`, `handshakeStatus:` ` [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)!`, `bytesConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bytesProduced:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes a new instance of this class. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesConsumed](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#bytesConsumed())`()` Returns the number of bytes consumed from the input buffer. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesProduced](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#bytesProduced())`()` Returns the number of bytes written to the output buffer. |
-| [SSLEngineResult.HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus)! | [getHandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#getHandshakeStatus())`()` Gets the handshake status of this`SSLEngine`operation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesConsumed](../javax/net/ssl/SSLEngineResult.md))`()` Returns the number of bytes consumed from the input buffer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesProduced](../javax/net/ssl/SSLEngineResult.md))`()` Returns the number of bytes written to the output buffer. |
+| [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)! | [getHandshakeStatus](../javax/net/ssl/SSLEngineResult.md))`()` Gets the handshake status of this`SSLEngine`operation. |
 | --- | --- |
-| [SSLEngineResult.Status](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.Status)! | [getStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#getStatus())`()` Gets the return value of this`SSLEngine`operation. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult#toString())`()` Returns a String representation of this object. |
+| [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)! | [getStatus](../javax/net/ssl/SSLEngineResult.md))`()` Gets the return value of this`SSLEngine`operation. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../javax/net/ssl/SSLEngineResult.md))`()` Returns a String representation of this object. |
 
 ## Public constructors
 
@@ -54,8 +54,8 @@ Initializes a new instance of this class.
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `status` | [SSLEngineResult.Status](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.Status)!:the return value of the operation. |
-| `handshakeStatus` | [SSLEngineResult.HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus)!:the current handshaking status. |
+| `status` | [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)!:the return value of the operation. |
+| `handshakeStatus` | [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)!:the current handshaking status. |
 | `bytesConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes consumed from the source ByteBuffer |
 | --- | --- |
 | `bytesProduced` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of bytes placed into the destination ByteBuffer |
@@ -106,7 +106,7 @@ Gets the handshake status of this`SSLEngine`operation.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [SSLEngineResult.HandshakeStatus](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.HandshakeStatus)! | the handshake status |
+| [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)! | the handshake status |
 
 ### getStatus
 
@@ -120,7 +120,7 @@ Gets the return value of this`SSLEngine`operation.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|------------------|
-| [SSLEngineResult.Status](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngineResult.Status)! | the return value |
+| [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)! | the return value |
 
 ### toString
 

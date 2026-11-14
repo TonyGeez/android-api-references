@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # AutofillValue
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/autofill/AutofillValue "View this page in Java")
+Kotlin | [Java](../android/view/autofill/AutofillValue.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AutofillValue : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.autofill.AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#) |
+| ↳ | [android.view.autofill.AutofillValue](../android/view/autofill/AutofillValue.md) |
 
 Abstracts how a `https://developer.android.com/reference/kotlin/android/view/View.html#` can be autofilled by an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#`.
 
@@ -27,11 +27,11 @@ Each `https://developer.android.com/reference/kotlin/android/view/autofill/Autof
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forDate(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a date. |
+| static [AutofillValue](../android/view/autofill/AutofillValue.md)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forDate(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a date. |
 | --- | --- |
-| static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forList(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a selection list. |
-| static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forText(kotlin.CharSequence)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a text field. |
-| static [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forToggle(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a toggable field. |
+| static [AutofillValue](../android/view/autofill/AutofillValue.md)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forList(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a selection list. |
+| static [AutofillValue](../android/view/autofill/AutofillValue.md)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forText(kotlin.CharSequence)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a text field. |
+| static [AutofillValue](../android/view/autofill/AutofillValue.md)! | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#forToggle(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#` to autofill a `https://developer.android.com/reference/kotlin/android/view/View.html#` representing a toggable field. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#getDateValue()()` Gets the value to autofill a date field. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#getListValue()()` Gets the value to autofill a selection list field. |
@@ -50,7 +50,7 @@ Each `https://developer.android.com/reference/kotlin/android/view/autofill/Autof
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AutofillValue](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#)!\> | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AutofillValue](../android/view/autofill/AutofillValue.md)!\> | `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

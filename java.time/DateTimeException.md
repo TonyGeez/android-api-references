@@ -11,12 +11,12 @@ open class DateTimeException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.time.DateTimeException](https://developer.android.com/reference/kotlin/java/time/DateTimeException#) |
+| | | | ↳ | [java.time.DateTimeException](../java/time/DateTimeException.md) |
 
-| Known Direct Subclasses [DateTimeParseException](https://developer.android.com/reference/kotlin/java/time/format/DateTimeParseException), [UnsupportedTemporalTypeException](https://developer.android.com/reference/kotlin/java/time/temporal/UnsupportedTemporalTypeException), [ZoneRulesException](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRulesException) |----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| | [DateTimeParseException](https://developer.android.com/reference/kotlin/java/time/format/DateTimeParseException) | An exception thrown when an error occurs during parsing. | | [UnsupportedTemporalTypeException](https://developer.android.com/reference/kotlin/java/time/temporal/UnsupportedTemporalTypeException) | UnsupportedTemporalTypeException indicates that a ChronoField or ChronoUnit is not supported for a Temporal class. | | [ZoneRulesException](https://developer.android.com/reference/kotlin/java/time/zone/ZoneRulesException) | Thrown to indicate a problem with time-zone configuration. | |
+| Known Direct Subclasses [DateTimeParseException](../java/time/format/DateTimeParseException.md), [UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md), [ZoneRulesException](../java/time/zone/ZoneRulesException.md) |----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| | [DateTimeParseException](../java/time/format/DateTimeParseException.md) | An exception thrown when an error occurs during parsing. | | [UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md) | UnsupportedTemporalTypeException indicates that a ChronoField or ChronoUnit is not supported for a Temporal class. | | [ZoneRulesException](../java/time/zone/ZoneRulesException.md) | Thrown to indicate a problem with time-zone configuration. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Exception used to indicate a problem while calculating a date-time.
@@ -27,8 +27,8 @@ This exception is used to indicate problems with creating, querying and manipula
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DateTimeException](https://developer.android.com/reference/kotlin/java/time/DateTimeException#DateTimeException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new date-time exception with the specified message. |
-| [DateTimeException](https://developer.android.com/reference/kotlin/java/time/DateTimeException#DateTimeException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new date-time exception with the specified message and cause. |
+| [DateTimeException](../java/time/DateTimeException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new date-time exception with the specified message. |
+| [DateTimeException](../java/time/DateTimeException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new date-time exception with the specified message and cause. |
 
 ## Public constructors
 

@@ -5,18 +5,18 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # PreviewCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.PreviewCallback "View this page in Java") 
+Kotlin| [Java](../android/hardware/Camera.PreviewCallback.md) 
 | --- | --- |
 
 ```
 interface PreviewCallback
 ```
 
-| [android.hardware.Camera.PreviewCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.PreviewCallback#) |
+| [android.hardware.Camera.PreviewCallback](../android/hardware/Camera.PreviewCallback.md) |
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
 
 Callback interface used to deliver copies of preview frames as they are displayed.
 
@@ -24,7 +24,7 @@ Callback interface used to deliver copies of preview frames as they are displaye
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPreviewFrame](https://developer.android.com/reference/kotlin/android/hardware/Camera.PreviewCallback#onPreviewFrame(kotlin.ByteArray,%20android.hardware.Camera))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `camera:` ` [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!`)` Called as preview frames are displayed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPreviewFrame](../android/hardware/Camera.PreviewCallback.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Called as preview frames are displayed. |
 
 ## Public methods
 
@@ -41,11 +41,11 @@ abstract fun onPreviewFrame(
 
 **Deprecated:** *Deprecated in Java.*
 
-Called as preview frames are displayed. This callback is invoked on the event thread [open(int)](https://developer.android.com/reference/kotlin/android/hardware/Camera#open(kotlin.Int))was called from.
+Called as preview frames are displayed. This callback is invoked on the event thread [open(int)](../android/hardware/Camera.md))was called from.
 
-If using the [android.graphics.ImageFormat#YV12](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YV12:kotlin.Int) format, refer to the equations in [Camera.Parameters.setPreviewFormat](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters#setPreviewFormat(kotlin.Int))for the arrangement of the pixel data in the preview callback buffers.
+If using the [android.graphics.ImageFormat#YV12](../android/graphics/ImageFormat.md) format, refer to the equations in [Camera.Parameters.setPreviewFormat](../android/hardware/Camera.Parameters.md))for the arrangement of the pixel data in the preview callback buffers.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the contents of the preview frame in the format defined by [android.graphics.ImageFormat](https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#), which can be queried with [android.hardware.Camera.Parameters#getPreviewFormat()](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters#getPreviewFormat()). If [android.hardware.Camera.Parameters#setPreviewFormat(int)](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters#setPreviewFormat(kotlin.Int))is never called, the default will be the YCbCr_420_SP (NV21) format. |
-| `camera` | [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!:the Camera service object. |
+| `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the contents of the preview frame in the format defined by [android.graphics.ImageFormat](../android/graphics/ImageFormat.md), which can be queried with [android.hardware.Camera.Parameters#getPreviewFormat()](../android/hardware/Camera.Parameters.md)). If [android.hardware.Camera.Parameters#setPreviewFormat(int)](../android/hardware/Camera.Parameters.md))is never called, the default will be the YCbCr_420_SP (NV21) format. |
+| `camera` | [Camera](../android/hardware/Camera.md)!:the Camera service object. |

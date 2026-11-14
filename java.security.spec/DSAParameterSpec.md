@@ -10,7 +10,7 @@ open class DSAParameterSpec : AlgorithmParameterSpec, DSAParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.DSAParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#) |
+| ↳ | [java.security.spec.DSAParameterSpec](../java/security/spec/DSAParameterSpec.md) |
 
 This class specifies the set of parameters used with the DSA algorithm.
 
@@ -18,13 +18,13 @@ This class specifies the set of parameters used with the DSA algorithm.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DSAParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#DSAParameterSpec(java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger))`(`p:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `q:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `g:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Creates a new DSAParameterSpec with the specified parameter values. |
+| [DSAParameterSpec](../java/security/spec/DSAParameterSpec.md))`(`p:` ` [BigInteger](../java/math/BigInteger.md)!`, `q:` ` [BigInteger](../java/math/BigInteger.md)!`, `g:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates a new DSAParameterSpec with the specified parameter values. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#getG())`()` Returns the base`g`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#getP())`()` Returns the prime`p`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getQ](https://developer.android.com/reference/kotlin/java/security/spec/DSAParameterSpec#getQ())`()` Returns the sub-prime`q`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getG](../java/security/spec/DSAParameterSpec.md))`()` Returns the base`g`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getP](../java/security/spec/DSAParameterSpec.md))`()` Returns the prime`p`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getQ](../java/security/spec/DSAParameterSpec.md))`()` Returns the sub-prime`q`. |
 | --- | --- |
 
 ## Public constructors
@@ -44,9 +44,9 @@ Creates a new DSAParameterSpec with the specified parameter values.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------|
-| `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime. |
-| `q` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the sub-prime. |
-| `g` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the base. |
+| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime. |
+| `q` | [BigInteger](../java/math/BigInteger.md)!:the sub-prime. |
+| `g` | [BigInteger](../java/math/BigInteger.md)!:the base. |
 | --- | --- |
 
 ## Public methods
@@ -63,7 +63,7 @@ Returns the base`g`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the base`g`. |
+| [BigInteger](../java/math/BigInteger.md)! | the base`g`. |
 
 ### getP
 
@@ -77,7 +77,7 @@ Returns the prime`p`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the prime`p`. |
+| [BigInteger](../java/math/BigInteger.md)! | the prime`p`. |
 
 ### getQ
 
@@ -91,4 +91,4 @@ Returns the sub-prime`q`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the sub-prime`q`. |
+| [BigInteger](../java/math/BigInteger.md)! | the sub-prime`q`. |

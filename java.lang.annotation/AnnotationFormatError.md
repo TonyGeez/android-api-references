@@ -9,11 +9,11 @@ open class AnnotationFormatError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||
-| | | ↳ | [java.lang.annotation.AnnotationFormatError](https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationFormatError#) |
+| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
+| | | ↳ | [java.lang.annotation.AnnotationFormatError](../java/lang/annotation/AnnotationFormatError.md) |
 | --- | --- | --- | --- |
 
-Thrown when the annotation parser attempts to read an annotation from a class file and determines that the annotation is malformed. This error can be thrown by the [API used to read annotations](https://developer.android.com/reference/kotlin/java/lang/reflect/AnnotatedElement.html#).
+Thrown when the annotation parser attempts to read an annotation from a class file and determines that the annotation is malformed. This error can be thrown by the [API used to read annotations](../java/lang/reflect/AnnotatedElement.md).
 
 ## Summary
 

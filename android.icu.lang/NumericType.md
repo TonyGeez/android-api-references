@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # NumericType
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.NumericType "View this page in Java") 
+Kotlin | [Java](../android/icu/lang/UCharacter.NumericType.md) 
 | --- | --- |
 
 ```
 interface NumericType
 ```
 
-| [android.icu.lang.UCharacter.NumericType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.NumericType#) |
+| [android.icu.lang.UCharacter.NumericType](../android/icu/lang/UCharacter.NumericType.md) |
 
 Numeric Type constants.
 
@@ -19,11 +19,11 @@ Numeric Type constants.
 
 | Constants ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECIMAL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.NumericType#DECIMAL:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIGIT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.NumericType#DIGIT:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.NumericType#NONE:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECIMAL](../android/icu/lang/UCharacter.NumericType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIGIT](../android/icu/lang/UCharacter.NumericType.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](../android/icu/lang/UCharacter.NumericType.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.NumericType#NUMERIC:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](../android/icu/lang/UCharacter.NumericType.md) <br /> |
 
 ## Constants
 

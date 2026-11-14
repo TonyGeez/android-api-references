@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ChangeLogsResponse
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse "View this page in Java") 
+Kotlin| [Java](../android/health/connect/changelog/ChangeLogsResponse.md) 
 | --- | --- |
 
 ```
@@ -13,40 +13,40 @@ class ChangeLogsResponse : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.changelog.ChangeLogsResponse](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#) |
+| ↳ | [android.health.connect.changelog.ChangeLogsResponse](../android/health/connect/changelog/ChangeLogsResponse.md) |
 
-Response class for [HealthConnectManager.getChangeLogs](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogs(android.health.connect.changelog.ChangeLogsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))This is the response to clients fetching changes.
+Response class for [HealthConnectManager.getChangeLogs](../android/health/connect/HealthConnectManager.md))This is the response to clients fetching changes.
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [DeletedLog](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse.DeletedLog) A change log holds the [Metadata.getId()](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata.html#getId())of a deleted Record. |
-| | [DeletedMedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse.DeletedMedicalResource) A change log holds the [MedicalResourceId](https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId.html#) of a deleted medical resource. |
+| | [DeletedLog](../android/health/connect/changelog/ChangeLogsResponse.DeletedLog.md) A change log holds the [Metadata.getId()](../android/health/connect/datatypes/Metadata.md))of a deleted Record. |
+| | [DeletedMedicalResource](../android/health/connect/changelog/ChangeLogsResponse.DeletedMedicalResource.md) A change log holds the [MedicalResourceId](../android/health/connect/MedicalResourceId.md) of a deleted medical resource. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChangeLogsResponse.DeletedLog](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse.DeletedLog)!\> | [getDeletedLogs](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#getDeletedLogs())`()` Returns delete logs for records that have been deleted post the time when the token was retrieved. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/health/connect/changelog/ChangeLogsResponse.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/changelog/ChangeLogsResponse.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChangeLogsResponse.DeletedLog](../android/health/connect/changelog/ChangeLogsResponse.DeletedLog.md)!\> | [getDeletedLogs](../android/health/connect/changelog/ChangeLogsResponse.md))`()` Returns delete logs for records that have been deleted post the time when the token was retrieved. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChangeLogsResponse.DeletedMedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse.DeletedMedicalResource)!\> | [getDeletedMedicalResources](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#getDeletedMedicalResources())`()` Returns delete logs for medical resources that have been deleted post the time when the token was retrieved. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getNextChangesToken](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#getNextChangesToken())`()` Returns token for future reads using [HealthConnectManager.getChangeLogs](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogs(android.health.connect.changelog.ChangeLogsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)). |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource.html#)!\> | [getUpsertedMedicalResources](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#getUpsertedMedicalResources())`()` Returns medical resources that have been updated or inserted post the time when the given token was generated. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChangeLogsResponse.DeletedMedicalResource](../android/health/connect/changelog/ChangeLogsResponse.DeletedMedicalResource.md)!\> | [getDeletedMedicalResources](../android/health/connect/changelog/ChangeLogsResponse.md))`()` Returns delete logs for medical resources that have been deleted post the time when the token was retrieved. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getNextChangesToken](../android/health/connect/changelog/ChangeLogsResponse.md))`()` Returns token for future reads using [HealthConnectManager.getChangeLogs](../android/health/connect/HealthConnectManager.md)). |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MedicalResource](../android/health/connect/datatypes/MedicalResource.md)!\> | [getUpsertedMedicalResources](../android/health/connect/changelog/ChangeLogsResponse.md))`()` Returns medical resources that have been updated or inserted post the time when the given token was generated. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record.html#)!\> | [getUpsertedRecords](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#getUpsertedRecords())`()` Returns records that have been updated or inserted post the time when the given token was generated. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMorePages](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#hasMorePages())`()` Returns whether there are more pages available for read. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#hashCode())`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](../android/health/connect/datatypes/Record.md)!\> | [getUpsertedRecords](../android/health/connect/changelog/ChangeLogsResponse.md))`()` Returns records that have been updated or inserted post the time when the given token was generated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMorePages](../android/health/connect/changelog/ChangeLogsResponse.md))`()` Returns whether there are more pages available for read. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/changelog/ChangeLogsResponse.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/health/connect/changelog/ChangeLogsResponse.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ChangeLogsResponse](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ChangeLogsResponse](../android/health/connect/changelog/ChangeLogsResponse.md)!\> | [CREATOR](../android/health/connect/changelog/ChangeLogsResponse.md) <br /> |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -92,7 +92,7 @@ This contains record ids of deleted records and the timestamps when the records 
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ChangeLogsResponse.DeletedLog](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse.DeletedLog)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ChangeLogsResponse.DeletedLog](../android/health/connect/changelog/ChangeLogsResponse.DeletedLog.md)!> | This value cannot be`null`. |
 
 ### getDeletedMedicalResources
 
@@ -108,7 +108,7 @@ This contains ids of deleted medical resources and the timestamps when the resou
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ChangeLogsResponse.DeletedMedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse.DeletedMedicalResource)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ChangeLogsResponse.DeletedMedicalResource](../android/health/connect/changelog/ChangeLogsResponse.DeletedMedicalResource.md)!> | This value cannot be`null`. |
 
 ### getNextChangesToken
 
@@ -118,7 +118,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getNextChangesToken(): String
 ```
 
-Returns token for future reads using [HealthConnectManager.getChangeLogs](https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogs(android.health.connect.changelog.ChangeLogsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)).
+Returns token for future reads using [HealthConnectManager.getChangeLogs](../android/health/connect/HealthConnectManager.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -136,7 +136,7 @@ Returns medical resources that have been updated or inserted post the time when 
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MedicalResource](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource.html#)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MedicalResource](../android/health/connect/datatypes/MedicalResource.md)!> | This value cannot be`null`. |
 
 ### getUpsertedRecords
 
@@ -152,7 +152,7 @@ Clients can use the last modified time of the record to check when the record wa
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record.html#)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Record](../android/health/connect/datatypes/Record.md)!> | This value cannot be`null`. |
 
 ### hasMorePages
 
@@ -191,8 +191,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -11,103 +11,103 @@ class Integer : Number, Comparable<Int!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.lang.Integer](https://developer.android.com/reference/kotlin/java/lang/Integer#) |
+| | ↳ | [java.lang.Integer](../java/lang/Integer.md) |
 
 The`Integer`class wraps a value of the primitive type`int`in an object. An object of type`Integer`contains a single field whose type is`int`.
 
 In addition, this class provides several methods for converting an`int`to a`String`and a`String`to an`int`, as well as other constants and methods useful when dealing with an`int`.
 
-Implementation note: The implementations of the "bit twiddling" methods (such as [highestOneBit](https://developer.android.com/reference/kotlin/java/lang/Integer#highestOneBit(kotlin.Int))and [numberOfTrailingZeros](https://developer.android.com/reference/kotlin/java/lang/Integer#numberOfTrailingZeros(kotlin.Int))) are based on material from Henry S. Warren, Jr.'s*Hacker's Delight*, (Addison Wesley, 2002).
+Implementation note: The implementations of the "bit twiddling" methods (such as [highestOneBit](../java/lang/Integer.md))and [numberOfTrailingZeros](../java/lang/Integer.md))) are based on material from Henry S. Warren, Jr.'s*Hacker's Delight*, (Addison Wesley, 2002).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](https://developer.android.com/reference/kotlin/java/lang/Integer#BYTES:kotlin.Int) The number of bytes used to represent an`int`value in two's complement binary form. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer#MAX_VALUE:kotlin.Int) A constant holding the maximum value an`int`can have, 231-1. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VALUE](https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int) A constant holding the minimum value an`int`can have, -231. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](../java/lang/Integer.md) The number of bytes used to represent an`int`value in two's complement binary form. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VALUE](../java/lang/Integer.md) A constant holding the maximum value an`int`can have, 231-1. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VALUE](../java/lang/Integer.md) A constant holding the minimum value an`int`can have, -231. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](https://developer.android.com/reference/kotlin/java/lang/Integer#SIZE:kotlin.Int) The number of bits used to represent an`int`value in two's complement binary form. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](../java/lang/Integer.md) The number of bits used to represent an`int`value in two's complement binary form. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Integer](https://developer.android.com/reference/kotlin/java/lang/Integer#Integer(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a newly allocated`Integer`object that represents the specified`int`value. |
-| [Integer](https://developer.android.com/reference/kotlin/java/lang/Integer#Integer(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Integer`object that represents the`int`value indicated by the`String`parameter. |
+| [Integer](../java/lang/Integer.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a newly allocated`Integer`object that represents the specified`int`value. |
+| [Integer](../java/lang/Integer.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Integer`object that represents the`int`value indicated by the`String`parameter. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitCount](https://developer.android.com/reference/kotlin/java/lang/Integer#bitCount(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of one-bits in the two's complement binary representation of the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](https://developer.android.com/reference/kotlin/java/lang/Integer#compare(kotlin.Int,%20kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compares two`int`values numerically. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/lang/Integer#compareTo(kotlin.Int))`(`other:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compares two`Integer`objects numerically. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bitCount](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of one-bits in the two's complement binary representation of the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../java/lang/Integer.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compares two`int`values numerically. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/lang/Integer.md))`(`other:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compares two`Integer`objects numerically. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](https://developer.android.com/reference/kotlin/java/lang/Integer#compareUnsigned(kotlin.Int,%20kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compares two`int`values numerically treating the values as unsigned. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compress](https://developer.android.com/reference/kotlin/java/lang/Integer#compress(kotlin.Int,%20kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by compressing the bits of the specified`int`value,`i`, in accordance with the specified bit mask. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [decode](https://developer.android.com/reference/kotlin/java/lang/Integer#decode(kotlin.String))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Decodes a`String`into an`Integer`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](../java/lang/Integer.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compares two`int`values numerically treating the values as unsigned. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compress](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by compressing the bits of the specified`int`value,`i`, in accordance with the specified bit mask. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [decode](../java/lang/Integer.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Decodes a`String`into an`Integer`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [divideUnsigned](https://developer.android.com/reference/kotlin/java/lang/Integer#divideUnsigned(kotlin.Int,%20kotlin.Int))`(`dividend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `divisor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the unsigned quotient of dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/lang/Integer#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [expand](https://developer.android.com/reference/kotlin/java/lang/Integer#expand(kotlin.Int,%20kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by expanding the bits of the specified`int`value,`i`, in accordance with the specified bit mask. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [divideUnsigned](../java/lang/Integer.md))`(`dividend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `divisor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the unsigned quotient of dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/Integer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [expand](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by expanding the bits of the specified`int`value,`i`, in accordance with the specified bit mask. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? | [getInteger](https://developer.android.com/reference/kotlin/java/lang/Integer#getInteger(kotlin.String))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Determines the integer value of the system property with the specified name. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? | [getInteger](https://developer.android.com/reference/kotlin/java/lang/Integer#getInteger(kotlin.String,%20kotlin.Int))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines the integer value of the system property with the specified name. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? | [getInteger](https://developer.android.com/reference/kotlin/java/lang/Integer#getInteger(kotlin.String,%20kotlin.Int))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?`)` Returns the integer value of the system property with the specified name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? | [getInteger](../java/lang/Integer.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Determines the integer value of the system property with the specified name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? | [getInteger](../java/lang/Integer.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines the integer value of the system property with the specified name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? | [getInteger](../java/lang/Integer.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?`)` Returns the integer value of the system property with the specified name. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Integer#hashCode())`()` Returns a hash code for this`Integer`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/lang/Integer#hashCode(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a hash code for an`int`value; compatible with`Integer.hashCode()`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [highestOneBit](https://developer.android.com/reference/kotlin/java/lang/Integer#highestOneBit(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`int`value with at most a single one-bit, in the position of the highest-order ("leftmost") one-bit in the specified`int`value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Integer.md))`()` Returns a hash code for this`Integer`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Integer.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a hash code for an`int`value; compatible with`Integer.hashCode()`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [highestOneBit](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`int`value with at most a single one-bit, in the position of the highest-order ("leftmost") one-bit in the specified`int`value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lowestOneBit](https://developer.android.com/reference/kotlin/java/lang/Integer#lowestOneBit(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`int`value with at most a single one-bit, in the position of the lowest-order ("rightmost") one-bit in the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [max](https://developer.android.com/reference/kotlin/java/lang/Integer#max(kotlin.Int,%20kotlin.Int))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the greater of two`int`values as if by calling [Math.max](https://developer.android.com/reference/kotlin/java/lang/Math#max(kotlin.Int,%20kotlin.Int)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [min](https://developer.android.com/reference/kotlin/java/lang/Integer#min(kotlin.Int,%20kotlin.Int))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the smaller of two`int`values as if by calling [Math.min](https://developer.android.com/reference/kotlin/java/lang/Math#min(kotlin.Int,%20kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lowestOneBit](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`int`value with at most a single one-bit, in the position of the lowest-order ("rightmost") one-bit in the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [max](../java/lang/Integer.md))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the greater of two`int`values as if by calling [Math.max](../java/lang/Math.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [min](../java/lang/Integer.md))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the smaller of two`int`values as if by calling [Math.min](../java/lang/Math.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfLeadingZeros](https://developer.android.com/reference/kotlin/java/lang/Integer#numberOfLeadingZeros(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of zero bits preceding the highest-order ("leftmost") one-bit in the two's complement binary representation of the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfTrailingZeros](https://developer.android.com/reference/kotlin/java/lang/Integer#numberOfTrailingZeros(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of zero bits following the lowest-order ("rightmost") one-bit in the two's complement binary representation of the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseInt](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as a signed`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfLeadingZeros](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of zero bits preceding the highest-order ("leftmost") one-bit in the two's complement binary representation of the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfTrailingZeros](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of zero bits following the lowest-order ("rightmost") one-bit in the two's complement binary representation of the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseInt](../java/lang/Integer.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](../java/lang/CharSequence.md) argument as a signed`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseInt](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as a signed decimal integer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseInt](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed integer in the radix specified by the second argument. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseUnsignedInt](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as an unsigned`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseInt](../java/lang/Integer.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as a signed decimal integer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseInt](../java/lang/Integer.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed integer in the radix specified by the second argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseUnsignedInt](../java/lang/Integer.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the [CharSequence](../java/lang/CharSequence.md) argument as an unsigned`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseUnsignedInt](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as an unsigned decimal integer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseUnsignedInt](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as an unsigned integer in the radix specified by the second argument. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remainderUnsigned](https://developer.android.com/reference/kotlin/java/lang/Integer#remainderUnsigned(kotlin.Int,%20kotlin.Int))`(`dividend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `divisor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the unsigned remainder from dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseUnsignedInt](../java/lang/Integer.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as an unsigned decimal integer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parseUnsignedInt](../java/lang/Integer.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as an unsigned integer in the radix specified by the second argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remainderUnsigned](../java/lang/Integer.md))`(`dividend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `divisor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the unsigned remainder from dividing the first argument by the second where each argument and the result is interpreted as an unsigned value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reverse](https://developer.android.com/reference/kotlin/java/lang/Integer#reverse(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by reversing the order of the bits in the two's complement binary representation of the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reverseBytes](https://developer.android.com/reference/kotlin/java/lang/Integer#reverseBytes(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by reversing the order of the bytes in the two's complement representation of the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rotateLeft](https://developer.android.com/reference/kotlin/java/lang/Integer#rotateLeft(kotlin.Int,%20kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`int`value left by the specified number of bits. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reverse](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by reversing the order of the bits in the two's complement binary representation of the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reverseBytes](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by reversing the order of the bytes in the two's complement representation of the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rotateLeft](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`int`value left by the specified number of bits. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rotateRight](https://developer.android.com/reference/kotlin/java/lang/Integer#rotateRight(kotlin.Int,%20kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`int`value right by the specified number of bits. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [signum](https://developer.android.com/reference/kotlin/java/lang/Integer#signum(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the signum function of the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sum](https://developer.android.com/reference/kotlin/java/lang/Integer#sum(kotlin.Int,%20kotlin.Int))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds two integers together as per the + operator. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rotateRight](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value obtained by rotating the two's complement binary representation of the specified`int`value right by the specified number of bits. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [signum](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the signum function of the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sum](../java/lang/Integer.md))`(`a:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds two integers together as per the + operator. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toBinaryString](https://developer.android.com/reference/kotlin/java/lang/Integer#toBinaryString(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the integer argument as an unsigned integer in base 2. |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](https://developer.android.com/reference/kotlin/java/lang/Integer#toByte())`()` Returns the value of this`Integer`as a`byte`after a narrowing primitive conversion. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](https://developer.android.com/reference/kotlin/java/lang/Integer#toDouble())`()` Returns the value of this`Integer`as a`double`after a widening primitive conversion. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toBinaryString](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the integer argument as an unsigned integer in base 2. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](../java/lang/Integer.md))`()` Returns the value of this`Integer`as a`byte`after a narrowing primitive conversion. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/lang/Integer.md))`()` Returns the value of this`Integer`as a`double`after a widening primitive conversion. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](https://developer.android.com/reference/kotlin/java/lang/Integer#toFloat())`()` Returns the value of this`Integer`as a`float`after a widening primitive conversion. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toHexString](https://developer.android.com/reference/kotlin/java/lang/Integer#toHexString(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the integer argument as an unsigned integer in base 16. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](https://developer.android.com/reference/kotlin/java/lang/Integer#toInt())`()` Returns the value of this`Integer`as an`int`. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/lang/Integer.md))`()` Returns the value of this`Integer`as a`float`after a widening primitive conversion. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toHexString](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the integer argument as an unsigned integer in base 16. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/lang/Integer.md))`()` Returns the value of this`Integer`as an`int`. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](https://developer.android.com/reference/kotlin/java/lang/Integer#toLong())`()` Returns the value of this`Integer`as a`long`after a widening primitive conversion. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toOctalString](https://developer.android.com/reference/kotlin/java/lang/Integer#toOctalString(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the integer argument as an unsigned integer in base 8. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](https://developer.android.com/reference/kotlin/java/lang/Integer#toShort())`()` Returns the value of this`Integer`as a`short`after a narrowing primitive conversion. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/lang/Integer.md))`()` Returns the value of this`Integer`as a`long`after a widening primitive conversion. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toOctalString](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the integer argument as an unsigned integer in base 8. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](../java/lang/Integer.md))`()` Returns the value of this`Integer`as a`short`after a narrowing primitive conversion. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Integer#toString())`()` Returns a`String`object representing this`Integer`'s value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`String`object representing the specified integer. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int,%20kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument in the radix specified by the second argument. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Integer.md))`()` Returns a`String`object representing this`Integer`'s value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`String`object representing the specified integer. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument in the radix specified by the second argument. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedLong(kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedString(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the argument as an unsigned decimal value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedString(kotlin.Int,%20kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument as an unsigned integer value in the radix specified by the second argument. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](../java/lang/Integer.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the argument as an unsigned decimal value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toUnsignedString](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string representation of the first argument as an unsigned integer value in the radix specified by the second argument. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`Integer`instance representing the specified`int`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns an`Integer`object holding the value of the specified`String`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [valueOf](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.String,%20kotlin.Int))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`Integer`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [valueOf](../java/lang/Integer.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`Integer`instance representing the specified`int`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [valueOf](../java/lang/Integer.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns an`Integer`object holding the value of the specified`String`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [valueOf](../java/lang/Integer.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`Integer`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [TYPE](https://developer.android.com/reference/kotlin/java/lang/Integer#TYPE:java.lang.Class) The`Class`instance representing the primitive type`int`. |
+| static [Class](../java/lang/Class.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [TYPE](../java/lang/Integer.md) The`Class`instance representing the primitive type`int`. |
 
 ## Constants
 
@@ -169,7 +169,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Integer(value: Int)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(int)](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.Int))is generally a better choice, as it is likely to yield significantly better space and time performance.*
+**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(int)](../java/lang/Integer.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
 
 Constructs a newly allocated`Integer`object that represents the specified`int`value.
 
@@ -185,7 +185,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Integer(s: String)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseInt(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.String))to convert a string to a`int`primitive, or use [valueOf(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.String))to convert a string to an`Integer`object.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseInt(java.lang.String)](../java/lang/Integer.md))to convert a string to a`int`primitive, or use [valueOf(java.lang.String)](../java/lang/Integer.md))to convert a string to an`Integer`object.*
 
 Constructs a newly allocated`Integer`object that represents the`int`value indicated by the`String`parameter. The string is converted to an`int`value in exactly the manner used by the`parseInt`method for radix 10.
 
@@ -318,7 +318,7 @@ For each one-bit value`mb`of the mask, from least significant to most significan
 
 **See Also**
 
-- [#expand](https://developer.android.com/reference/kotlin/java/lang/Integer#expand(kotlin.Int,%20kotlin.Int)) 
+- [#expand](../java/lang/Integer.md)) 
 
 ### decode
 
@@ -344,7 +344,7 @@ Decodes a`String`into an`Integer`. Accepts decimal, hexadecimal, and octal numbe
 
 <br />
 
-The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Integer.parseInt`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](https://developer.android.com/reference/kotlin/java/lang/NumberFormatException) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
+The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Integer.parseInt`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](../java/lang/NumberFormatException.md) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------|
@@ -360,7 +360,7 @@ The sequence of characters following an optional sign and/or radix specifier ("`
 
 **See Also**
 
-- [java.lang.Integer#parseInt(java.lang.String, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.String,%20kotlin.Int)) 
+- [java.lang.Integer#parseInt(java.lang.String, int)](../java/lang/Integer.md)) 
 
 ### divideUnsigned
 
@@ -388,7 +388,7 @@ Note that in two's complement arithmetic, the three other basic arithmetic opera
 
 **See Also**
 
-- [#remainderUnsigned](https://developer.android.com/reference/kotlin/java/lang/Integer#remainderUnsigned(kotlin.Int,%20kotlin.Int)) 
+- [#remainderUnsigned](../java/lang/Integer.md)) 
 
 ### equals
 
@@ -434,7 +434,7 @@ For each one-bit value`mb`of the mask, from least significant to most significan
 
 **See Also**
 
-- [#compress](https://developer.android.com/reference/kotlin/java/lang/Integer#compress(kotlin.Int,%20kotlin.Int)) 
+- [#compress](../java/lang/Integer.md)) 
 
 ### getInteger
 
@@ -446,7 +446,7 @@ static fun getInteger(nm: String): Int?
 
 Determines the integer value of the system property with the specified name.
 
-The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))method. The string value of this property is then interpreted as an integer value using the grammar supported by [decode](https://developer.android.com/reference/kotlin/java/lang/Integer#decode(kotlin.String))and an`Integer`object representing this value is returned.
+The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))method. The string value of this property is then interpreted as an integer value using the grammar supported by [decode](../java/lang/Integer.md))and an`Integer`object representing this value is returned.
 
 If there is no property with the specified name, if the specified name is empty or`null`, or if the property does not have the correct numeric format, then`null`is returned.
 
@@ -463,12 +463,12 @@ In other words, this method returns an`Integer`object equal to the value of:
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | for the same reasons as [System.getProperty](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)) |
+| `java.lang.SecurityException` | for the same reasons as [System.getProperty](../java/lang/System.md)) |
 
 **See Also**
 
-- [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))
-- [java.lang.System#getProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)) 
+- [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))
+- [java.lang.System#getProperty(java.lang.String, java.lang.String)](../java/lang/System.md)) 
 
 ### getInteger
 
@@ -483,7 +483,7 @@ static fun getInteger(
 
 Determines the integer value of the system property with the specified name.
 
-The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))method. The string value of this property is then interpreted as an integer value using the grammar supported by [decode](https://developer.android.com/reference/kotlin/java/lang/Integer#decode(kotlin.String))and an`Integer`object representing this value is returned.
+The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))method. The string value of this property is then interpreted as an integer value using the grammar supported by [decode](../java/lang/Integer.md))and an`Integer`object representing this value is returned.
 
 The second argument is the default value. An`Integer`object that represents the value of the second argument is returned if there is no property of the specified name, if the property does not have the correct numeric format, or if the specified name is empty or`null`.
 
@@ -508,12 +508,12 @@ to avoid the unnecessary allocation of an`Integer`object when the default value 
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | for the same reasons as [System.getProperty](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)) |
+| `java.lang.SecurityException` | for the same reasons as [System.getProperty](../java/lang/System.md)) |
 
 **See Also**
 
-- [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))
-- [java.lang.System#getProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)) 
+- [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))
+- [java.lang.System#getProperty(java.lang.String, java.lang.String)](../java/lang/System.md)) 
 
 ### getInteger
 
@@ -526,11 +526,11 @@ static fun getInteger(
 ): Int?
 ```
 
-Returns the integer value of the system property with the specified name. The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))method. The string value of this property is then interpreted as an integer value, as per the [decode](https://developer.android.com/reference/kotlin/java/lang/Integer#decode(kotlin.String))method, and an`Integer`object representing this value is returned; in summary:
+Returns the integer value of the system property with the specified name. The first argument is treated as the name of a system property. System properties are accessible through the [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))method. The string value of this property is then interpreted as an integer value, as per the [decode](../java/lang/Integer.md))method, and an`Integer`object representing this value is returned; in summary:
 
-- If the property value begins with the two ASCII characters`0x`or the ASCII character, not followed by a minus sign, then the rest of it is parsed as a hexadecimal integer exactly as by the method [valueOf(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.String,%20kotlin.Int))with radix 16.
-- If the property value begins with the ASCII character`0`followed by another character, it is parsed as an octal integer exactly as by the method [valueOf(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.String,%20kotlin.Int))with radix 8.
-- Otherwise, the property value is parsed as a decimal integer exactly as by the method [valueOf(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#valueOf(kotlin.String,%20kotlin.Int))with radix 10.
+- If the property value begins with the two ASCII characters`0x`or the ASCII character, not followed by a minus sign, then the rest of it is parsed as a hexadecimal integer exactly as by the method [valueOf(java.lang.String,int)](../java/lang/Integer.md))with radix 16.
+- If the property value begins with the ASCII character`0`followed by another character, it is parsed as an octal integer exactly as by the method [valueOf(java.lang.String,int)](../java/lang/Integer.md))with radix 8.
+- Otherwise, the property value is parsed as a decimal integer exactly as by the method [valueOf(java.lang.String,int)](../java/lang/Integer.md))with radix 10.
 
 <br />
 
@@ -547,12 +547,12 @@ The second argument is the default value. The default value is returned if there
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | for the same reasons as [System.getProperty](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)) |
+| `java.lang.SecurityException` | for the same reasons as [System.getProperty](../java/lang/System.md)) |
 
 **See Also**
 
-- [java.lang.System#getProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String))
-- [java.lang.System#getProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)) 
+- [java.lang.System#getProperty(java.lang.String)](../java/lang/System.md))
+- [java.lang.System#getProperty(java.lang.String, java.lang.String)](../java/lang/System.md)) 
 
 ### hashCode
 
@@ -633,7 +633,7 @@ static fun max(
 ): Int
 ```
 
-Returns the greater of two`int`values as if by calling [Math.max](https://developer.android.com/reference/kotlin/java/lang/Math#max(kotlin.Int,%20kotlin.Int)).
+Returns the greater of two`int`values as if by calling [Math.max](../java/lang/Math.md)).
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------|
@@ -646,7 +646,7 @@ Returns the greater of two`int`values as if by calling [Math.max](https://develo
 
 **See Also**
 
-- [java.util.function.BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#) 
+- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
 
 ### min
 
@@ -659,7 +659,7 @@ static fun min(
 ): Int
 ```
 
-Returns the smaller of two`int`values as if by calling [Math.min](https://developer.android.com/reference/kotlin/java/lang/Math#min(kotlin.Int,%20kotlin.Int)).
+Returns the smaller of two`int`values as if by calling [Math.min](../java/lang/Math.md)).
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------|
@@ -672,7 +672,7 @@ Returns the smaller of two`int`values as if by calling [Math.min](https://develo
 
 **See Also**
 
-- [java.util.function.BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#) 
+- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
 
 ### numberOfLeadingZeros
 
@@ -728,7 +728,7 @@ static fun parseInt(
 ): Int
 ```
 
-Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as a signed`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
+Parses the [CharSequence](../java/lang/CharSequence.md) argument as a signed`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
 
 The method does not take steps to guard against the`CharSequence`being mutated while parsing.
 
@@ -748,7 +748,7 @@ The method does not take steps to guard against the`CharSequence`being mutated w
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`s`is null. |
 | `java.lang.IndexOutOfBoundsException` | if`beginIndex`is negative, or if`beginIndex`is greater than`endIndex`or if`endIndex`is greater than`s.length()`. |
-| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable`int`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int). |
+| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable`int`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md). |
 | --- | --- |
 
 ### parseInt
@@ -759,7 +759,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun parseInt(s: String): Int
 ```
 
-Parses the string argument as a signed decimal integer. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseInt(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.String,%20kotlin.Int))method.
+Parses the string argument as a signed decimal integer. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseInt(java.lang.String,int)](../java/lang/Integer.md))method.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -784,12 +784,12 @@ static fun parseInt(
 ): Int
 ```
 
-Parses the string argument as a signed integer in the radix specified by the second argument. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Char,%20kotlin.Int))returns a nonnegative value), except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting integer value is returned.
+Parses the string argument as a signed integer in the radix specified by the second argument. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](../java/lang/Character.md))returns a nonnegative value), except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting integer value is returned.
 
 An exception of type`NumberFormatException`is thrown if any of the following situations occurs:
 
 - The first argument is`null`or is a string of length zero.
-- The radix is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int).
+- The radix is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md).
 - Any character of the string is not a digit of the specified radix, except that the first character may be a minus sign`'-'`(`'\u005Cu002D'`) or plus sign`'+'`(`'\u005Cu002B'`) provided that the string is longer than length 1.
 - The value represented by the string is not a value of type`int`.
 
@@ -837,7 +837,7 @@ static fun parseUnsignedInt(
 ): Int
 ```
 
-Parses the [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence) argument as an unsigned`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
+Parses the [CharSequence](../java/lang/CharSequence.md) argument as an unsigned`int`in the specified`radix`, beginning at the specified`beginIndex`and extending to`endIndex - 1`.
 
 The method does not take steps to guard against the`CharSequence`being mutated while parsing.
 
@@ -857,7 +857,7 @@ The method does not take steps to guard against the`CharSequence`being mutated w
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`s`is null. |
 | `java.lang.IndexOutOfBoundsException` | if`beginIndex`is negative, or if`beginIndex`is greater than`endIndex`or if`endIndex`is greater than`s.length()`. |
-| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable unsigned`int`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int). |
+| `java.lang.NumberFormatException` | if the`CharSequence`does not contain a parsable unsigned`int`in the specified`radix`, or if`radix`is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md). |
 | --- | --- |
 
 ### parseUnsignedInt
@@ -868,7 +868,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun parseUnsignedInt(s: String): Int
 ```
 
-Parses the string argument as an unsigned decimal integer. The characters in the string must all be decimal digits, except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseUnsignedInt(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int))method.
+Parses the string argument as an unsigned decimal integer. The characters in the string must all be decimal digits, except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseUnsignedInt(java.lang.String,int)](../java/lang/Integer.md))method.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -893,12 +893,12 @@ static fun parseUnsignedInt(
 ): Int
 ```
 
-Parses the string argument as an unsigned integer in the radix specified by the second argument. An unsigned integer maps the values usually associated with negative numbers to positive numbers larger than`MAX_VALUE`. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Char,%20kotlin.Int))returns a nonnegative value), except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned.
+Parses the string argument as an unsigned integer in the radix specified by the second argument. An unsigned integer maps the values usually associated with negative numbers to positive numbers larger than`MAX_VALUE`. The characters in the string must all be digits of the specified radix (as determined by whether [java.lang.Character#digit(char, int)](../java/lang/Character.md))returns a nonnegative value), except that the first character may be an ASCII plus sign`'+'`(`'\u005Cu002B'`). The resulting integer value is returned.
 
 An exception of type`NumberFormatException`is thrown if any of the following situations occurs:
 
 - The first argument is`null`or is a string of length zero.
-- The radix is either smaller than [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) or larger than [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int).
+- The radix is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md).
 - Any character of the string is not a digit of the specified radix, except that the first character may be a plus sign`'+'`(`'\u005Cu002B'`) provided that the string is longer than length 1.
 - The value represented by the string is larger than the largest unsigned`int`, 232-1.
 
@@ -939,7 +939,7 @@ Returns the unsigned remainder from dividing the first argument by the second wh
 
 **See Also**
 
-- [#divideUnsigned](https://developer.android.com/reference/kotlin/java/lang/Integer#divideUnsigned(kotlin.Int,%20kotlin.Int)) 
+- [#divideUnsigned](../java/lang/Integer.md)) 
 
 ### reverse
 
@@ -1067,7 +1067,7 @@ Adds two integers together as per the + operator.
 
 **See Also**
 
-- [java.util.function.BinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#) 
+- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
 
 ### toBinaryString
 
@@ -1081,7 +1081,7 @@ Returns a string representation of the integer argument as an unsigned integer i
 
 The unsigned integer value is the argument plus 232 if the argument is negative; otherwise it is equal to the argument. This value is converted to a string of ASCII digits in binary (base 2) with no extra leading`0`s.
 
-The value of the argument can be recovered from the returned string`s`by calling [Integer.parseUnsignedInt(s, 2)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int)).
+The value of the argument can be recovered from the returned string`s`by calling [Integer.parseUnsignedInt(s, 2)](../java/lang/Integer.md)).
 
 If the unsigned magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the unsigned magnitude will not be the zero character. The characters`'0'`(`'\u005Cu0030'`) and`'1'`(`'\u005Cu0031'`) are used as binary digits.
 
@@ -1095,8 +1095,8 @@ If the unsigned magnitude is zero, it is represented by a single zero character`
 
 **See Also**
 
-- [#parseUnsignedInt(String, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int))
-- [#toUnsignedString(int, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedString(kotlin.Int,%20kotlin.Int)) 
+- [#parseUnsignedInt(String, int)](../java/lang/Integer.md))
+- [#toUnsignedString(int, int)](../java/lang/Integer.md)) 
 
 ### toByte
 
@@ -1152,10 +1152,10 @@ Returns a string representation of the integer argument as an unsigned integer i
 
 The unsigned integer value is the argument plus 232 if the argument is negative; otherwise, it is equal to the argument. This value is converted to a string of ASCII digits in hexadecimal (base 16) with no extra leading`0`s.
 
-The value of the argument can be recovered from the returned string`s`by calling [Integer.parseUnsignedInt(s, 16)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int)).
+The value of the argument can be recovered from the returned string`s`by calling [Integer.parseUnsignedInt(s, 16)](../java/lang/Integer.md)).
 
 If the unsigned magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the unsigned magnitude will not be the zero character. The following characters are used as hexadecimal digits:
-`0123456789abcdef`These are the characters`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu0066'`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase())method may be called on the result:`Integer.toHexString(n).toUpperCase()`
+`0123456789abcdef`These are the characters`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu0066'`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](../java/lang/String.md))method may be called on the result:`Integer.toHexString(n).toUpperCase()`
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------|
@@ -1167,8 +1167,8 @@ If the unsigned magnitude is zero, it is represented by a single zero character`
 
 **See Also**
 
-- [#parseUnsignedInt(String, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int))
-- [#toUnsignedString(int, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedString(kotlin.Int,%20kotlin.Int)) 
+- [#parseUnsignedInt(String, int)](../java/lang/Integer.md))
+- [#toUnsignedString(int, int)](../java/lang/Integer.md)) 
 
 ### toInt
 
@@ -1200,7 +1200,7 @@ Returns the value of this`Integer`as a`long`after a widening primitive conversio
 
 **See Also**
 
-- [java.lang.Integer#toUnsignedLong(int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedLong(kotlin.Int)) 
+- [java.lang.Integer#toUnsignedLong(int)](../java/lang/Integer.md)) 
 
 ### toOctalString
 
@@ -1214,7 +1214,7 @@ Returns a string representation of the integer argument as an unsigned integer i
 
 The unsigned integer value is the argument plus 232 if the argument is negative; otherwise, it is equal to the argument. This value is converted to a string of ASCII digits in octal (base 8) with no extra leading`0`s.
 
-The value of the argument can be recovered from the returned string`s`by calling [Integer.parseUnsignedInt(s, 8)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int)).
+The value of the argument can be recovered from the returned string`s`by calling [Integer.parseUnsignedInt(s, 8)](../java/lang/Integer.md)).
 
 If the unsigned magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the unsigned magnitude will not be the zero character. The following characters are used as octal digits:
 `01234567`These are the characters`'\u005Cu0030'`through`'\u005Cu0037'`.
@@ -1229,8 +1229,8 @@ If the unsigned magnitude is zero, it is represented by a single zero character`
 
 **See Also**
 
-- [#parseUnsignedInt(String, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseUnsignedInt(kotlin.String,%20kotlin.Int))
-- [#toUnsignedString(int, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedString(kotlin.Int,%20kotlin.Int)) 
+- [#parseUnsignedInt(String, int)](../java/lang/Integer.md))
+- [#toUnsignedString(int, int)](../java/lang/Integer.md)) 
 
 ### toShort
 
@@ -1254,7 +1254,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toString(): String
 ```
 
-Returns a`String`object representing this`Integer`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the integer value were given as an argument to the [java.lang.Integer#toString(int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int))method.
+Returns a`String`object representing this`Integer`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the integer value were given as an argument to the [java.lang.Integer#toString(int)](../java/lang/Integer.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -1268,7 +1268,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun toString(i: Int): String
 ```
 
-Returns a`String`object representing the specified integer. The argument is converted to signed decimal representation and returned as a string, exactly as if the argument and radix 10 were given as arguments to the [toString(int,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int,%20kotlin.Int))method.
+Returns a`String`object representing the specified integer. The argument is converted to signed decimal representation and returned as a string, exactly as if the argument and radix 10 were given as arguments to the [toString(int,int)](../java/lang/Integer.md))method.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------|
@@ -1296,7 +1296,7 @@ If the radix is smaller than`Character.MIN_RADIX`or larger than`Character.MAX_RA
 If the first argument is negative, the first element of the result is the ASCII minus character`'-'`(`'\u005Cu002D'`). If the first argument is not negative, no sign character appears in the result.
 
 The remaining characters of the result represent the magnitude of the first argument. If the magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the magnitude will not be the zero character. The following ASCII characters are used as digits:
-`0123456789abcdefghijklmnopqrstuvwxyz`These are`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu007A'`. If`radix`is N, then the first N of these characters are used as radix-N digits in the order shown. Thus, the digits for hexadecimal (radix 16) are`0123456789abcdef`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase())method may be called on the result:`Integer.toString(n, 16).toUpperCase()`
+`0123456789abcdefghijklmnopqrstuvwxyz`These are`'\u005Cu0030'`through`'\u005Cu0039'`and`'\u005Cu0061'`through`'\u005Cu007A'`. If`radix`is N, then the first N of these characters are used as radix-N digits in the order shown. Thus, the digits for hexadecimal (radix 16) are`0123456789abcdef`. If uppercase letters are desired, the [java.lang.String#toUpperCase()](../java/lang/String.md))method may be called on the result:`Integer.toString(n, 16).toUpperCase()`
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------|
@@ -1309,8 +1309,8 @@ The remaining characters of the result represent the magnitude of the first argu
 
 **See Also**
 
-- [java.lang.Character#MAX_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MAX_RADIX:kotlin.Int)
-- [java.lang.Character#MIN_RADIX](https://developer.android.com/reference/kotlin/java/lang/Character#MIN_RADIX:kotlin.Int) 
+- [java.lang.Character#MAX_RADIX](../java/lang/Character.md)
+- [java.lang.Character#MIN_RADIX](../java/lang/Character.md) 
 
 ### toUnsignedLong
 
@@ -1338,7 +1338,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun toUnsignedString(i: Int): String
 ```
 
-Returns a string representation of the argument as an unsigned decimal value. The argument is converted to unsigned decimal representation and returned as a string exactly as if the argument and radix 10 were given as arguments to the [toUnsignedString(int,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedString(kotlin.Int,%20kotlin.Int))method.
+Returns a string representation of the argument as an unsigned decimal value. The argument is converted to unsigned decimal representation and returned as a string exactly as if the argument and radix 10 were given as arguments to the [toUnsignedString(int,int)](../java/lang/Integer.md))method.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------|
@@ -1350,7 +1350,7 @@ Returns a string representation of the argument as an unsigned decimal value. Th
 
 **See Also**
 
-- [#toUnsignedString(int, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toUnsignedString(kotlin.Int,%20kotlin.Int)) 
+- [#toUnsignedString(int, int)](../java/lang/Integer.md)) 
 
 ### toUnsignedString
 
@@ -1371,7 +1371,7 @@ Note that since the first argument is treated as an unsigned value, no leading s
 
 If the magnitude is zero, it is represented by a single zero character`'0'`(`'\u005Cu0030'`); otherwise, the first character of the representation of the magnitude will not be the zero character.
 
-The behavior of radixes and the characters used as digits are the same as [toString](https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int,%20kotlin.Int)).
+The behavior of radixes and the characters used as digits are the same as [toString](../java/lang/Integer.md)).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------|
@@ -1384,7 +1384,7 @@ The behavior of radixes and the characters used as digits are the same as [toStr
 
 **See Also**
 
-- [#toString(int, int)](https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int,%20kotlin.Int)) 
+- [#toString(int, int)](../java/lang/Integer.md)) 
 
 ### valueOf
 
@@ -1394,7 +1394,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(i: Int): Int
 ```
 
-Returns an`Integer`instance representing the specified`int`value. If a new`Integer`instance is not required, this method should generally be used in preference to the constructor [Integer(int)](https://developer.android.com/reference/kotlin/java/lang/Integer#Integer(kotlin.Int)), as this method is likely to yield significantly better space and time performance by caching frequently requested values. This method will always cache values in the range -128 to 127, inclusive, and may cache other values outside of this range.
+Returns an`Integer`instance representing the specified`int`value. If a new`Integer`instance is not required, this method should generally be used in preference to the constructor [Integer(int)](../java/lang/Integer.md)), as this method is likely to yield significantly better space and time performance by caching frequently requested values. This method will always cache values in the range -128 to 127, inclusive, and may cache other values outside of this range.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------|
@@ -1412,7 +1412,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(s: String): Int
 ```
 
-Returns an`Integer`object holding the value of the specified`String`. The argument is interpreted as representing a signed decimal integer, exactly as if the argument were given to the [parseInt(java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.String))method. The result is an`Integer`object that represents the integer value specified by the string.
+Returns an`Integer`object holding the value of the specified`String`. The argument is interpreted as representing a signed decimal integer, exactly as if the argument were given to the [parseInt(java.lang.String)](../java/lang/Integer.md))method. The result is an`Integer`object that represents the integer value specified by the string.
 
 In other words, this method returns an`Integer`object equal to the value of:
 `Integer.valueOf(Integer.parseInt(s))`
@@ -1440,7 +1440,7 @@ static fun valueOf(
 ): Int
 ```
 
-Returns an`Integer`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed integer in the radix specified by the second argument, exactly as if the arguments were given to the [parseInt(java.lang.String,int)](https://developer.android.com/reference/kotlin/java/lang/Integer#parseInt(kotlin.String,%20kotlin.Int))method. The result is an`Integer`object that represents the integer value specified by the string.
+Returns an`Integer`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed integer in the radix specified by the second argument, exactly as if the arguments were given to the [parseInt(java.lang.String,int)](../java/lang/Integer.md))method. The result is an`Integer`object that represents the integer value specified by the string.
 
 In other words, this method returns an`Integer`object equal to the value of:
 `Integer.valueOf(Integer.parseInt(s, radix))`

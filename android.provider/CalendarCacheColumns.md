@@ -4,24 +4,24 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # CalendarCacheColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.CalendarCacheColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/CalendarContract.CalendarCacheColumns.md) 
 | --- | --- |
 
 ```
 protected interface CalendarCacheColumns
 ```
 
-| [android.provider.CalendarContract.CalendarCacheColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCacheColumns#) |
+| [android.provider.CalendarContract.CalendarCacheColumns](../android/provider/CalendarContract.CalendarCacheColumns.md) |
 
-| Known Direct Subclasses [CalendarContract.CalendarCache](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCache) |----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [CalendarContract.CalendarCache](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCache) | CalendarCache stores some settings for calendar including the current time zone for the instances. | |
+| Known Direct Subclasses [CalendarContract.CalendarCache](../android/provider/CalendarContract.CalendarCache.md) |----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [CalendarContract.CalendarCache](../android/provider/CalendarContract.CalendarCache.md) | CalendarCache stores some settings for calendar including the current time zone for the instances. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCacheColumns#KEY:kotlin.String) The key for the setting. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VALUE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCacheColumns#VALUE:kotlin.String) The value of the given setting. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY](../android/provider/CalendarContract.CalendarCacheColumns.md) The key for the setting. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VALUE](../android/provider/CalendarContract.CalendarCacheColumns.md) The value of the given setting. |
 
 ## Constants
 
@@ -33,7 +33,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val KEY: String
 ```
 
-The key for the setting. Keys are defined in [CalendarCache](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarCache). 
+The key for the setting. Keys are defined in [CalendarCache](../android/provider/CalendarContract.CalendarCache.md). 
 
  Value: "key"
 

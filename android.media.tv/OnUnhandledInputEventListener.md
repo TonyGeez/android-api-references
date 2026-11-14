@@ -4,14 +4,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # OnUnhandledInputEventListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener "View this page in Java") 
+Kotlin| [Java](../android/media/tv/TvView.OnUnhandledInputEventListener.md) 
 | --- | --- |
 
 ```
 interface OnUnhandledInputEventListener
 ```
 
-| [android.media.tv.TvView.OnUnhandledInputEventListener](https://developer.android.com/reference/kotlin/android/media/tv/TvView.OnUnhandledInputEventListener#) |
+| [android.media.tv.TvView.OnUnhandledInputEventListener](../android/media/tv/TvView.OnUnhandledInputEventListener.md) |
 
 Interface definition for a callback to be invoked when the unhandled input event is received.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the unhandled input event
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledInputEvent](https://developer.android.com/reference/kotlin/android/media/tv/TvView.OnUnhandledInputEventListener#onUnhandledInputEvent(android.view.InputEvent))`(`event:` ` [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)!`)` Called when an input event was not handled by the bound TV input. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledInputEvent](../android/media/tv/TvView.OnUnhandledInputEventListener.md))`(`event:` ` [InputEvent](../android/view/InputEvent.md)!`)` Called when an input event was not handled by the bound TV input. |
 
 ## Public methods
 
@@ -37,7 +37,7 @@ This is called asynchronously from where the event is dispatched. It gives the h
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------|
-| `event` | [InputEvent](https://developer.android.com/reference/kotlin/android/view/InputEvent.html#)!:The input event. |
+| `event` | [InputEvent](../android/view/InputEvent.md)!:The input event. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|

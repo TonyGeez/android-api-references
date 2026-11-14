@@ -10,7 +10,7 @@ class Bidi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.Bidi](https://developer.android.com/reference/kotlin/java/text/Bidi#) |
+| ↳ | [java.text.Bidi](../java/text/Bidi.md) |
 
 This class implements the Unicode Bidirectional Algorithm.
 
@@ -24,39 +24,39 @@ If there are multiple runs of text, information about the runs can be accessed b
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/java/text/Bidi#DIRECTION_DEFAULT_LEFT_TO_RIGHT:kotlin.Int) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/java/text/Bidi#DIRECTION_DEFAULT_RIGHT_TO_LEFT:kotlin.Int) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/java/text/Bidi#DIRECTION_LEFT_TO_RIGHT:kotlin.Int) Constant indicating base direction is left-to-right. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_LEFT_TO_RIGHT](../java/text/Bidi.md) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_RIGHT_TO_LEFT](../java/text/Bidi.md) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_LEFT_TO_RIGHT](../java/text/Bidi.md) Constant indicating base direction is left-to-right. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/java/text/Bidi#DIRECTION_RIGHT_TO_LEFT:kotlin.Int) Constant indicating base direction is right-to-left. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_RIGHT_TO_LEFT](../java/text/Bidi.md) Constant indicating base direction is right-to-left. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Bidi](https://developer.android.com/reference/kotlin/java/text/Bidi#Bidi(kotlin.CharArray,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `textStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `embeddings:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `embStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paragraphLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given text, embedding, and direction information. |
-| [Bidi](https://developer.android.com/reference/kotlin/java/text/Bidi#Bidi(kotlin.String,%20kotlin.Int))`(`paragraph:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given paragraph of text and base direction. |
-| [Bidi](https://developer.android.com/reference/kotlin/java/text/Bidi#Bidi(java.text.AttributedCharacterIterator))`(`paragraph:` ` [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!`)` Create Bidi from the given paragraph of text. |
+| [Bidi](../java/text/Bidi.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `textStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `embeddings:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `embStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paragraphLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given text, embedding, and direction information. |
+| [Bidi](../java/text/Bidi.md))`(`paragraph:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given paragraph of text and base direction. |
+| [Bidi](../java/text/Bidi.md))`(`paragraph:` ` [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!`)` Create Bidi from the given paragraph of text. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [baseIsLeftToRight](https://developer.android.com/reference/kotlin/java/text/Bidi#baseIsLeftToRight())`()` Return true if the base direction is left-to-right. |
-| [Bidi](https://developer.android.com/reference/kotlin/java/text/Bidi#)! | [createLineBidi](https://developer.android.com/reference/kotlin/java/text/Bidi#createLineBidi(kotlin.Int,%20kotlin.Int))`(`lineStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lineLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Bidi object representing the bidi information on a line of text within the paragraph represented by the current Bidi. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseLevel](https://developer.android.com/reference/kotlin/java/text/Bidi#getBaseLevel())`()` Return the base level (0 if left-to-right, 1 if right-to-left). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [baseIsLeftToRight](../java/text/Bidi.md))`()` Return true if the base direction is left-to-right. |
+| [Bidi](../java/text/Bidi.md)! | [createLineBidi](../java/text/Bidi.md))`(`lineStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lineLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Bidi object representing the bidi information on a line of text within the paragraph represented by the current Bidi. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseLevel](../java/text/Bidi.md))`()` Return the base level (0 if left-to-right, 1 if right-to-left). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/java/text/Bidi#getLength())`()` Return the length of text in the line. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevelAt](https://developer.android.com/reference/kotlin/java/text/Bidi#getLevelAt(kotlin.Int))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the resolved level of the character at offset. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunCount](https://developer.android.com/reference/kotlin/java/text/Bidi#getRunCount())`()` Return the number of level runs. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../java/text/Bidi.md))`()` Return the length of text in the line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevelAt](../java/text/Bidi.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the resolved level of the character at offset. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunCount](../java/text/Bidi.md))`()` Return the number of level runs. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLevel](https://developer.android.com/reference/kotlin/java/text/Bidi#getRunLevel(kotlin.Int))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the level of the nth logical run in this line. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLimit](https://developer.android.com/reference/kotlin/java/text/Bidi#getRunLimit(kotlin.Int))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character past the end of the nth logical run in this line, as an offset from the start of the line. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunStart](https://developer.android.com/reference/kotlin/java/text/Bidi#getRunStart(kotlin.Int))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character at the start of the nth logical run in this line, as an offset from the start of the line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLevel](../java/text/Bidi.md))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the level of the nth logical run in this line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLimit](../java/text/Bidi.md))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character past the end of the nth logical run in this line, as an offset from the start of the line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunStart](../java/text/Bidi.md))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character at the start of the nth logical run in this line, as an offset from the start of the line. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeftToRight](https://developer.android.com/reference/kotlin/java/text/Bidi#isLeftToRight())`()` Return true if the line is all left-to-right text and the base direction is left-to-right. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMixed](https://developer.android.com/reference/kotlin/java/text/Bidi#isMixed())`()` Return true if the line is not left-to-right or right-to-left. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRightToLeft](https://developer.android.com/reference/kotlin/java/text/Bidi#isRightToLeft())`()` Return true if the line is all right-to-left text, and the base direction is right-to-left. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeftToRight](../java/text/Bidi.md))`()` Return true if the line is all left-to-right text and the base direction is left-to-right. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMixed](../java/text/Bidi.md))`()` Return true if the line is not left-to-right or right-to-left. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRightToLeft](../java/text/Bidi.md))`()` Return true if the line is all right-to-left text, and the base direction is right-to-left. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reorderVisually](https://developer.android.com/reference/kotlin/java/text/Bidi#reorderVisually(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `levelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objects:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `objectStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reorder the objects in the array into visual order based on their levels. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresBidi](https://developer.android.com/reference/kotlin/java/text/Bidi#requiresBidi(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified text requires bidi analysis. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/text/Bidi#toString())`()` Display the bidi internal state, used in debugging. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reorderVisually](../java/text/Bidi.md))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `levelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objects:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `objectStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reorder the objects in the array into visual order based on their levels. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresBidi](../java/text/Bidi.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified text requires bidi analysis. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/text/Bidi.md))`()` Display the bidi internal state, used in debugging. |
 | --- | --- |
 
 ## Constants
@@ -173,13 +173,13 @@ The NUMERIC_SHAPING attribute in the text, if present, converts European digits 
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `paragraph` | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!:a paragraph of text with optional character and paragraph attribute information |
+| `paragraph` | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!:a paragraph of text with optional character and paragraph attribute information |
 
 **See Also**
 
-- [java.awt.font.TextAttribute#BIDI_EMBEDDING](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute.html#BIDI_EMBEDDING:java.awt.font.TextAttribute)
-- [java.awt.font.TextAttribute#NUMERIC_SHAPING](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute.html#NUMERIC_SHAPING:java.awt.font.TextAttribute)
-- [java.awt.font.TextAttribute#RUN_DIRECTION](https://developer.android.com/reference/kotlin/java/awt/font/TextAttribute.html#RUN_DIRECTION:java.awt.font.TextAttribute)
+- [java.awt.font.TextAttribute#BIDI_EMBEDDING](../java/awt/font/TextAttribute.md)
+- [java.awt.font.TextAttribute#NUMERIC_SHAPING](../java/awt/font/TextAttribute.md)
+- [java.awt.font.TextAttribute#RUN_DIRECTION](../java/awt/font/TextAttribute.md)
 
 ## Public methods
 
@@ -217,7 +217,7 @@ Create a Bidi object representing the bidi information on a line of text within 
 
 | Return ||
 |-------------------------------------------------------------------------|---------------|
-| [Bidi](https://developer.android.com/reference/kotlin/java/text/Bidi#)! | a`Bidi`object |
+| [Bidi](../java/text/Bidi.md)! | a`Bidi`object |
 
 ### getBaseLevel
 

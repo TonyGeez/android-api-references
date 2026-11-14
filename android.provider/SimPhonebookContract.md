@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # SimPhonebookContract
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/SimPhonebookContract "View this page in Java") 
+Kotlin| [Java](../android/provider/SimPhonebookContract.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SimPhonebookContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.SimPhonebookContract](https://developer.android.com/reference/kotlin/android/provider/SimPhonebookContract#) |
+| ↳ | [android.provider.SimPhonebookContract](../android/provider/SimPhonebookContract.md) |
 
 The contract between the provider of contact records on the device's SIM cards and applications. Contains definitions of the supported URIs and columns.
 
@@ -21,22 +21,22 @@ The contract between the provider of contact records on the device's SIM cards a
 
 <br />
 
-Querying this provider requires [android.Manifest.permission#READ_CONTACTS](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_CONTACTS:kotlin.String) and writing to this provider requires [android.Manifest.permission#WRITE_CONTACTS](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_CONTACTS:kotlin.String)
+Querying this provider requires [android.Manifest.permission#READ_CONTACTS](../android/Manifest.permission.md) and writing to this provider requires [android.Manifest.permission#WRITE_CONTACTS](../android/Manifest.permission.md)
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [ElementaryFiles](https://developer.android.com/reference/kotlin/android/provider/SimPhonebookContract.ElementaryFiles) Constants for metadata about the elementary files of the SIM cards in the phone. |
-| | [SimRecords](https://developer.android.com/reference/kotlin/android/provider/SimPhonebookContract.SimRecords) Constants for the contact records on a SIM card. |
+| | [ElementaryFiles](../android/provider/SimPhonebookContract.ElementaryFiles.md) Constants for metadata about the elementary files of the SIM cards in the phone. |
+| | [SimRecords](../android/provider/SimPhonebookContract.SimRecords.md) Constants for the contact records on a SIM card. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/provider/SimPhonebookContract#AUTHORITY:kotlin.String) The authority for the SIM phonebook provider. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/SimPhonebookContract.md) The authority for the SIM phonebook provider. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [AUTHORITY_URI](https://developer.android.com/reference/kotlin/android/provider/SimPhonebookContract#AUTHORITY_URI:android.net.Uri) The content:// style uri to the authority for the SIM phonebook provider. |
+| static [Uri](../android/net/Uri.md) | [AUTHORITY_URI](../android/provider/SimPhonebookContract.md) The content:// style uri to the authority for the SIM phonebook provider. |
 
 ## Constants
 

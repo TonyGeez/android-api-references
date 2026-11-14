@@ -9,7 +9,7 @@ class SchemaVisibilityConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.SchemaVisibilityConfig](https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#) |
+| ↳ | [android.app.appsearch.SchemaVisibilityConfig](../android/app/appsearch/SchemaVisibilityConfig.md) |
 
 A class to hold a all necessary Visibility information corresponding to the same schema. This pattern allows for easier association of these documents.
 
@@ -29,9 +29,9 @@ This does not correspond to any schema, the properties held in this class are ke
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageIdentifier](https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getAllowedPackages()()` Returns a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier`s of packages that can access this schema. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getAllowedPackages()()` Returns a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier`s of packages that can access this schema. |
 | --- | --- |
-| [PackageIdentifier](https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getPubliclyVisibleTargetPackage()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier` of the package that will be used as the target package in a call to android. |
+| [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getPubliclyVisibleTargetPackage()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier` of the package that will be used as the target package in a call to android. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#getRequiredPermissions()()` Returns an array of Integers representing Android Permissions that the caller must hold to access the schema this `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#` represents. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
@@ -39,7 +39,7 @@ This does not correspond to any schema, the properties held in this class are ke
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SchemaVisibilityConfig](https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SchemaVisibilityConfig](../android/app/appsearch/SchemaVisibilityConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -166,7 +166,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

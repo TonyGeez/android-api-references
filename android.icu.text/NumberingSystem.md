@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # NumberingSystem
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/NumberingSystem "View this page in Java") 
+Kotlin| [Java](../android/icu/text/NumberingSystem.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class NumberingSystem
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#) |
+| ↳ | [android.icu.text.NumberingSystem](../android/icu/text/NumberingSystem.md) |
 
 `NumberingSystem`is the base class for all number systems. This class provides the interface for setting different numbering system types, whether it be a simple alternate digit system such as Thai digits or Devanagari digits, or an algorithmic numbering system such as Hebrew numbering or Chinese numbering.
 
@@ -21,28 +21,28 @@ open class NumberingSystem
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#NumberingSystem())`()` Default constructor. |
+| [NumberingSystem](../android/icu/text/NumberingSystem.md))`()` Default constructor. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableNames](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getAvailableNames())`()` Returns a string array containing a list of the names of numbering systems currently known to ICU. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getDescription())`()` Returns the description string of the current numbering system. |
-| openstatic [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getInstance())`()` Returns the default numbering system for the default`FORMAT`locale. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableNames](../android/icu/text/NumberingSystem.md))`()` Returns a string array containing a list of the names of numbering systems currently known to ICU. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](../android/icu/text/NumberingSystem.md))`()` Returns the description string of the current numbering system. |
+| openstatic [NumberingSystem](../android/icu/text/NumberingSystem.md)! | [getInstance](../android/icu/text/NumberingSystem.md))`()` Returns the default numbering system for the default`FORMAT`locale. |
 | --- | --- |
-| openstatic [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Returns the default numbering system for the specified ULocale. |
-| openstatic [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getInstance(kotlin.Int,%20kotlin.Boolean,%20kotlin.String))`(`radix_in:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isAlgorithmic_in:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `desc_in:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Factory method for creating a numbering system. |
-| openstatic [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getInstance(java.util.Locale))`(`inLocale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Returns the default numbering system for the specified locale. |
+| openstatic [NumberingSystem](../android/icu/text/NumberingSystem.md)! | [getInstance](../android/icu/text/NumberingSystem.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns the default numbering system for the specified ULocale. |
+| openstatic [NumberingSystem](../android/icu/text/NumberingSystem.md)! | [getInstance](../android/icu/text/NumberingSystem.md))`(`radix_in:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isAlgorithmic_in:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `desc_in:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Factory method for creating a numbering system. |
+| openstatic [NumberingSystem](../android/icu/text/NumberingSystem.md)! | [getInstance](../android/icu/text/NumberingSystem.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`)` Returns the default numbering system for the specified locale. |
 | --- | --- |
-| openstatic [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#)! | [getInstanceByName](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getInstanceByName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a numbering system from one of the predefined numbering systems known to ICU. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getName())`()` Returns the string representing the name of the numbering system. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadix](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#getRadix())`()` Returns the radix of the current numbering system. |
+| openstatic [NumberingSystem](../android/icu/text/NumberingSystem.md)! | [getInstanceByName](../android/icu/text/NumberingSystem.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a numbering system from one of the predefined numbering systems known to ICU. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/icu/text/NumberingSystem.md))`()` Returns the string representing the name of the numbering system. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadix](../android/icu/text/NumberingSystem.md))`()` Returns the radix of the current numbering system. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlgorithmic](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#isAlgorithmic())`()` Returns the numbering system's algorithmic status. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidDigitString](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#isValidDigitString(kotlin.String))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method to determine if a given digit string is valid for use as a descriptor of a numeric ( non-algorithmic ) numbering system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlgorithmic](../android/icu/text/NumberingSystem.md))`()` Returns the numbering system's algorithmic status. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidDigitString](../android/icu/text/NumberingSystem.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method to determine if a given digit string is valid for use as a descriptor of a numeric ( non-algorithmic ) numbering system. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#)! | [LATIN](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#LATIN:android.icu.text.NumberingSystem) For convenience, an instance representing the*latn*numbering system, which corresponds to digits in the ASCII range '0' through '9'. |
+| static [NumberingSystem](../android/icu/text/NumberingSystem.md)! | [LATIN](../android/icu/text/NumberingSystem.md) For convenience, an instance representing the*latn*numbering system, which corresponds to digits in the ASCII range '0' through '9'. |
 
 ## Public constructors
 
@@ -93,7 +93,7 @@ open static fun getInstance(): NumberingSystem!
 Returns the default numbering system for the default`FORMAT`locale. 
 **See Also**
 
-- [android.icu.util.ULocale.Category#FORMAT](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category.html#) 
+- [android.icu.util.ULocale.Category#FORMAT](../android/icu/util/ULocale.Category.md) 
 
 ### getInstance
 
@@ -152,7 +152,7 @@ Returns a numbering system from one of the predefined numbering systems known to
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [NumberingSystem](https://developer.android.com/reference/kotlin/android/icu/text/NumberingSystem#)! | The NumberingSystem instance, or null if not available. |
+| [NumberingSystem](../android/icu/text/NumberingSystem.md)! | The NumberingSystem instance, or null if not available. |
 
 ### getName
 

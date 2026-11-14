@@ -4,14 +4,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # AccessibilityEventFilter
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/UiAutomation.AccessibilityEventFilter "View this page in Java") 
+Kotlin| [Java](../android/app/UiAutomation.AccessibilityEventFilter.md) 
 | --- | --- |
 
 ```
 interface AccessibilityEventFilter
 ```
 
-| [android.app.UiAutomation.AccessibilityEventFilter](https://developer.android.com/reference/kotlin/android/app/UiAutomation.AccessibilityEventFilter#) |
+| [android.app.UiAutomation.AccessibilityEventFilter](../android/app/UiAutomation.AccessibilityEventFilter.md) |
 
 Listener for filtering accessibility events.
 
@@ -19,7 +19,7 @@ Listener for filtering accessibility events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](https://developer.android.com/reference/kotlin/android/app/UiAutomation.AccessibilityEventFilter#accept(android.view.accessibility.AccessibilityEvent))`(`event:` ` [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#)!`)` Callback for determining whether an event is accepted or it is filtered out. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](../android/app/UiAutomation.AccessibilityEventFilter.md))`(`event:` ` [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!`)` Callback for determining whether an event is accepted or it is filtered out. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ Callback for determining whether an event is accepted or it is filtered out.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [AccessibilityEvent](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#)!:The event to process. |
+| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!:The event to process. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------|

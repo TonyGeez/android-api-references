@@ -10,21 +10,21 @@ abstract class DoubleBuffer : Buffer, Comparable<DoubleBuffer!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.nio.Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) ||
-| | ↳ | [java.nio.DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#) |
+| ↳ | [java.nio.Buffer](../java/nio/Buffer.md) ||
+| | ↳ | [java.nio.DoubleBuffer](../java/nio/DoubleBuffer.md) |
 
 A double buffer.
 
 This class defines four categories of operations upon double buffers:
 
-- Absolute and relative [*get*](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get())and [*put*](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.Double))methods that read and write single doubles;
-- Absolute and relative [*bulk get*](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get(kotlin.DoubleArray))methods that transfer contiguous sequences of doubles from this buffer into an array; and
-- Absolute and relative [*bulk put*](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.DoubleArray))methods that transfer contiguous sequences of doubles from a double array or some other double buffer into this buffer; and
-- A method for [compacting](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#compact())a double buffer.
+- Absolute and relative [*get*](../java/nio/DoubleBuffer.md))and [*put*](../java/nio/DoubleBuffer.md))methods that read and write single doubles;
+- Absolute and relative [*bulk get*](../java/nio/DoubleBuffer.md))methods that transfer contiguous sequences of doubles from this buffer into an array; and
+- Absolute and relative [*bulk put*](../java/nio/DoubleBuffer.md))methods that transfer contiguous sequences of doubles from a double array or some other double buffer into this buffer; and
+- A method for [compacting](../java/nio/DoubleBuffer.md))a double buffer.
 
-Double buffers can be created either by [*allocation*](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#allocate(kotlin.Int)), which allocates space for the buffer's content, by [*wrapping*](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#wrap(kotlin.DoubleArray))an existing double array into a buffer, or by creating a [*view*](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#views) of an existing byte buffer.
+Double buffers can be created either by [*allocation*](../java/nio/DoubleBuffer.md)), which allocates space for the buffer's content, by [*wrapping*](../java/nio/DoubleBuffer.md))an existing double array into a buffer, or by creating a [*view*](../java/nio/ByteBuffer.md) of an existing byte buffer.
 
-Like a byte buffer, a double buffer is either [*direct* or*non-direct*](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#direct). A double buffer created via the`wrap`methods of this class will be non-direct. A double buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a double buffer is direct may be determined by invoking the [isDirect](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#isDirect())method.
+Like a byte buffer, a double buffer is either [*direct* or*non-direct*](../java/nio/ByteBuffer.md). A double buffer created via the`wrap`methods of this class will be non-direct. A double buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a double buffer is direct may be determined by invoking the [isDirect](../java/nio/DoubleBuffer.md))method.
 
 Methods in this class that do not otherwise have a value to return are specified to return the buffer upon which they are invoked. This allows method invocations to be chained.
 
@@ -32,62 +32,62 @@ Methods in this class that do not otherwise have a value to return are specified
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [allocate](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#allocate(kotlin.Int))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new double buffer. |
-| [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)! | [array](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#array())`()` Returns the double array that backs this buffer*(optional operation)*. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#arrayOffset())`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| openstatic [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [allocate](../java/nio/DoubleBuffer.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new double buffer. |
+| [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)! | [array](../java/nio/DoubleBuffer.md))`()` Returns the double array that backs this buffer*(optional operation)*. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](../java/nio/DoubleBuffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
 | --- | --- |
-| abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [asReadOnlyBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#asReadOnlyBuffer())`()` Creates a new, read-only double buffer that shares this buffer's content. |
-| open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [clear](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#clear())`()` Clears this buffer. |
-| abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [compact](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#compact())`()` Compacts this buffer*(optional operation)*. |
+| abstract [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [asReadOnlyBuffer](../java/nio/DoubleBuffer.md))`()` Creates a new, read-only double buffer that shares this buffer's content. |
+| open [Buffer](../java/nio/Buffer.md)! | [clear](../java/nio/DoubleBuffer.md))`()` Clears this buffer. |
+| abstract [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [compact](../java/nio/DoubleBuffer.md))`()` Compacts this buffer*(optional operation)*. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#compareTo(java.nio.DoubleBuffer))`(`other:` ` [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)!`)` Compares this buffer to another. |
-| abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [duplicate](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#duplicate())`()` Creates a new double buffer that shares this buffer's content. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/nio/DoubleBuffer.md))`(`other:` ` [DoubleBuffer](../java/nio/DoubleBuffer.md)!`)` Compares this buffer to another. |
+| abstract [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [duplicate](../java/nio/DoubleBuffer.md))`()` Creates a new double buffer that shares this buffer's content. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/nio/DoubleBuffer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
 | --- | --- |
-| open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [flip](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#flip())`()` Flips this buffer. |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get())`()` Relative*get*method. |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get(kotlin.DoubleArray))`(`dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Relative bulk*get*method. |
+| open [Buffer](../java/nio/Buffer.md)! | [flip](../java/nio/DoubleBuffer.md))`()` Flips this buffer. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [get](../java/nio/DoubleBuffer.md))`()` Relative*get*method. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [get](../java/nio/DoubleBuffer.md))`(`dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Relative bulk*get*method. |
 | --- | --- |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int))`(`dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [get](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get(kotlin.Int,%20kotlin.DoubleArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Absolute bulk*get*method. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [get](../java/nio/DoubleBuffer.md))`(`dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [get](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [get](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Absolute bulk*get*method. |
 | --- | --- |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [get](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#get(kotlin.Int,%20kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#hasArray())`()` Tells whether or not this buffer is backed by an accessible double array. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#hashCode())`()` Returns the current hash code of this buffer. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [get](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](../java/nio/DoubleBuffer.md))`()` Tells whether or not this buffer is backed by an accessible double array. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/nio/DoubleBuffer.md))`()` Returns the current hash code of this buffer. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#isDirect())`()` Tells whether or not this double buffer is direct. |
-| open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [limit](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#limit(kotlin.Int))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
-| open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [mark](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#mark())`()` Sets this buffer's mark at its position. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](../java/nio/DoubleBuffer.md))`()` Tells whether or not this double buffer is direct. |
+| open [Buffer](../java/nio/Buffer.md)! | [limit](../java/nio/DoubleBuffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
+| open [Buffer](../java/nio/Buffer.md)! | [mark](../java/nio/DoubleBuffer.md))`()` Sets this buffer's mark at its position. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#mismatch(java.nio.DoubleBuffer))`(`that:` ` [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
-| abstract [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder)! | [order](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#order())`()` Retrieves this buffer's byte order. |
-| open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [position](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#position(kotlin.Int))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](../java/nio/DoubleBuffer.md))`(`that:` ` [DoubleBuffer](../java/nio/DoubleBuffer.md)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
+| abstract [ByteOrder](../java/nio/ByteOrder.md)! | [order](../java/nio/DoubleBuffer.md))`()` Retrieves this buffer's byte order. |
+| open [Buffer](../java/nio/Buffer.md)! | [position](../java/nio/DoubleBuffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
 | --- | --- |
-| abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.Double))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Relative*put* method*(optional operation)*. |
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.DoubleArray))`(`src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int))`(`src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| abstract [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Relative*put* method*(optional operation)*. |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
 | --- | --- |
-| abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.Int,%20kotlin.Double))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Absolute*put* method*(optional operation)*. |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.Int,%20kotlin.DoubleArray))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.Int,%20kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| abstract [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Absolute*put* method*(optional operation)*. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | --- | --- |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(kotlin.Int,%20java.nio.DoubleBuffer,%20kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
-| open [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [put](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#put(java.nio.DoubleBuffer))`(`src:` ` [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)!`)` Relative bulk*put* method*(optional operation)*. |
-| open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [reset](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#reset())`()` Resets this buffer's position to the previously-marked position. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [DoubleBuffer](../java/nio/DoubleBuffer.md)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| open [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [put](../java/nio/DoubleBuffer.md))`(`src:` ` [DoubleBuffer](../java/nio/DoubleBuffer.md)!`)` Relative bulk*put* method*(optional operation)*. |
+| open [Buffer](../java/nio/Buffer.md)! | [reset](../java/nio/DoubleBuffer.md))`()` Resets this buffer's position to the previously-marked position. |
 | --- | --- |
-| open [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | [rewind](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#rewind())`()` Rewinds this buffer. |
-| abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#slice())`()` Creates a new double buffer whose content is a shared subsequence of this buffer's content. |
-| abstract [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [slice](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#slice(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new double buffer whose content is a shared subsequence of this buffer's content. |
+| open [Buffer](../java/nio/Buffer.md)! | [rewind](../java/nio/DoubleBuffer.md))`()` Rewinds this buffer. |
+| abstract [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [slice](../java/nio/DoubleBuffer.md))`()` Creates a new double buffer whose content is a shared subsequence of this buffer's content. |
+| abstract [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [slice](../java/nio/DoubleBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new double buffer whose content is a shared subsequence of this buffer's content. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#toString())`()` Returns a string summarizing the state of this buffer. |
-| openstatic [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#wrap(kotlin.DoubleArray))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Wraps a double array into a buffer. |
-| openstatic [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | [wrap](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#wrap(kotlin.DoubleArray,%20kotlin.Int,%20kotlin.Int))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a double array into a buffer. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/nio/DoubleBuffer.md))`()` Returns a string summarizing the state of this buffer. |
+| openstatic [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [wrap](../java/nio/DoubleBuffer.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Wraps a double array into a buffer. |
+| openstatic [DoubleBuffer](../java/nio/DoubleBuffer.md)! | [wrap](../java/nio/DoubleBuffer.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a double array into a buffer. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](https://developer.android.com/reference/kotlin/java/nio/Buffer#capacity())`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](https://developer.android.com/reference/kotlin/java/nio/Buffer#hasRemaining())`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](https://developer.android.com/reference/kotlin/java/nio/Buffer#isReadOnly())`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](https://developer.android.com/reference/kotlin/java/nio/Buffer#limit())`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](https://developer.android.com/reference/kotlin/java/nio/Buffer#position())`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](https://developer.android.com/reference/kotlin/java/nio/Buffer#remaining())`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
+| From class [Buffer](../java/nio/Buffer.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](../java/nio/Buffer.md))`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](../java/nio/Buffer.md))`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/nio/Buffer.md))`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](../java/nio/Buffer.md))`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](../java/nio/Buffer.md))`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](../java/nio/Buffer.md))`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
 
 ## Public methods
 
@@ -101,7 +101,7 @@ open static fun allocate(capacity: Int): DoubleBuffer!
 
 Allocates a new double buffer.
 
-The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](https://developer.android.com/reference/kotlin/java/nio/ByteOrder#nativeOrder())of the underlying hardware. It will have a [backing array](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#array()), and its [array offset](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#arrayOffset())will be zero.
+The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. It will have a [backing array](../java/nio/DoubleBuffer.md)), and its [array offset](../java/nio/DoubleBuffer.md))will be zero.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------|
@@ -109,7 +109,7 @@ The new buffer's position will be zero, its limit will be its capacity, its mark
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | The new double buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | The new double buffer |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|
@@ -127,7 +127,7 @@ Returns the double array that backs this buffer*(optional operation)*.
 
 Modifications to this buffer's content will cause the returned array's content to be modified, and vice versa.
 
-Invoke the [hasArray](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#hasArray())method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](../java/nio/DoubleBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------------------|
@@ -150,7 +150,7 @@ Returns the offset within this buffer's backing array of the first element of th
 
 If this buffer is backed by an array then buffer position*p* corresponds to array index*p* +`arrayOffset()`.
 
-Invoke the [hasArray](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#hasArray())method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](../java/nio/DoubleBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -175,11 +175,11 @@ The content of the new buffer will be that of this buffer. Changes to this buffe
 
 The new buffer's capacity, limit, position, mark values, and byte order will be identical to those of this buffer.
 
-If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#duplicate())method.
+If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](../java/nio/DoubleBuffer.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | The new, read-only double buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | The new, read-only double buffer |
 
 ### clear
 
@@ -202,7 +202,7 @@ This method does not actually erase the data in the buffer, but it is named as i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | This buffer |
+| [Buffer](../java/nio/Buffer.md)! | This buffer |
 
 ### compact
 
@@ -220,7 +220,7 @@ The buffer's position is set to the number of doubles copied, rather than to zer
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------|
@@ -236,7 +236,7 @@ open fun compareTo(other: DoubleBuffer!): Int
 
 Compares this buffer to another.
 
-Two double buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`double`elements are compared as if by invoking [Double.compare(double,double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#compare(kotlin.Double,%20kotlin.Double)), except that`-0.0`and`0.0`are considered to be equal.`Double.NaN`is considered by this method to be equal to itself and greater than all other`double`values (including`Double.POSITIVE_INFINITY`).
+Two double buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`double`elements are compared as if by invoking [Double.compare(double,double)](../java/lang/Double.md)), except that`-0.0`and`0.0`are considered to be equal.`Double.NaN`is considered by this method to be equal to itself and greater than all other`double`values (including`Double.POSITIVE_INFINITY`).
 
 A double buffer is not comparable to any other type of object.
 
@@ -269,7 +269,7 @@ The new buffer's capacity, limit, position, mark values, and byte order will be 
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | The new double buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | The new double buffer |
 
 ### equals
 
@@ -285,7 +285,7 @@ Two double buffers are equal if, and only if,
 
 1. They have the same element type,
 2. They have the same number of remaining elements, and
-3. The two sequences of remaining elements, considered independently of their starting positions, are pointwise equal. This method considers two double elements`a`and`b`to be equal if`(a == b) || (Double.isNaN(a) && Double.isNaN(b))`. The values`-0.0`and`+0.0`are considered to be equal, unlike [Double.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Double.html#equals(kotlin.Any)).
+3. The two sequences of remaining elements, considered independently of their starting positions, are pointwise equal. This method considers two double elements`a`and`b`to be equal if`(a == b) || (Double.isNaN(a) && Double.isNaN(b))`. The values`-0.0`and`+0.0`are considered to be equal, unlike [Double.equals(Object)](../java/lang/Double.md)).
 | --- | --- | --- |
 
 A double buffer is not equal to any other type of object.
@@ -318,11 +318,11 @@ buf.put(magic);    // Prepend header
   out.write(buf);    // Write header + data to channel
 ```
 
-This method is often used in conjunction with the [compact](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#compact())method when transferring data from one place to another.
+This method is often used in conjunction with the [compact](../java/nio/ByteBuffer.md))method when transferring data from one place to another.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | This buffer |
+| [Buffer](../java/nio/Buffer.md)! | This buffer |
 
 ### get
 
@@ -364,7 +364,7 @@ src.get(a, 0, a.length)
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |-------------------------------------|-----------------------------------------------------------------|
@@ -384,7 +384,7 @@ open fun get(
 
 Relative bulk*get*method.
 
-This method transfers doubles from this buffer into the given destination array. If there are fewer doubles remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no doubles are transferred and a [BufferUnderflowException](https://developer.android.com/reference/kotlin/java/nio/BufferUnderflowException) is thrown.
+This method transfers doubles from this buffer into the given destination array. If there are fewer doubles remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no doubles are transferred and a [BufferUnderflowException](../java/nio/BufferUnderflowException.md) is thrown.
 
 Otherwise, this method copies`length`doubles from this buffer into the given array, starting at the current position of this buffer and at the given offset in the array. The position of this buffer is then incremented by`length`.
 
@@ -406,7 +406,7 @@ except that it first checks that there are sufficient doubles in this buffer and
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -461,7 +461,7 @@ src.get(index, dst, 0, dst.length)
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -502,7 +502,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -518,7 +518,7 @@ fun hasArray(): Boolean
 
 Tells whether or not this buffer is backed by an accessible double array.
 
-If this method returns`true`then the [array](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#array())and [arrayOffset](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#arrayOffset())methods may safely be invoked.
+If this method returns`true`then the [array](../java/nio/DoubleBuffer.md))and [arrayOffset](../java/nio/DoubleBuffer.md))methods may safely be invoked.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -572,7 +572,7 @@ Sets this buffer's limit. If the position is larger than the new limit then it i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | This buffer |
+| [Buffer](../java/nio/Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -590,7 +590,7 @@ Sets this buffer's mark at its position.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | This buffer |
+| [Buffer](../java/nio/Buffer.md)! | This buffer |
 
 ### mismatch
 
@@ -600,13 +600,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun mismatch(that: DoubleBuffer!): Int
 ```
 
-Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](https://developer.android.com/reference/kotlin/java/nio/Buffer#position())of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](https://developer.android.com/reference/kotlin/java/nio/Buffer#remaining())elements in each buffer (exclusive).
+Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](../java/nio/Buffer.md))of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](../java/nio/Buffer.md))elements in each buffer (exclusive).
 
 If the two buffers share a common prefix then the returned index is the length of the common prefix and it follows that there is a mismatch between the two buffers at that index within the respective buffers. If one buffer is a proper prefix of the other then the returned index is the smaller of the remaining elements in each buffer, and it follows that the index is only valid for the buffer with the larger number of remaining elements. Otherwise, there is no mismatch.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `that` | [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)!:The byte buffer to be tested for a mismatch with this buffer |
+| `that` | [DoubleBuffer](../java/nio/DoubleBuffer.md)!:The byte buffer to be tested for a mismatch with this buffer |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -622,11 +622,11 @@ abstract fun order(): ByteOrder!
 
 Retrieves this buffer's byte order.
 
-The byte order of a double buffer created by allocation or by wrapping an existing`double`array is the [native order](https://developer.android.com/reference/kotlin/java/nio/ByteOrder#nativeOrder())of the underlying hardware. The byte order of a double buffer created as a [view](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer#views) of a byte buffer is that of the byte buffer at the moment that the view is created.
+The byte order of a double buffer created by allocation or by wrapping an existing`double`array is the [native order](../java/nio/ByteOrder.md))of the underlying hardware. The byte order of a double buffer created as a [view](../java/nio/ByteBuffer.md) of a byte buffer is that of the byte buffer at the moment that the view is created.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------|
-| [ByteOrder](https://developer.android.com/reference/kotlin/java/nio/ByteOrder)! | This buffer's byte order |
+| [ByteOrder](../java/nio/ByteOrder.md)! | This buffer's byte order |
 
 ### position
 
@@ -644,7 +644,7 @@ Sets this buffer's position. If the mark is defined and larger than the new posi
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | This buffer |
+| [Buffer](../java/nio/Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|
@@ -668,7 +668,7 @@ Writes the given double into this buffer at the current position, and then incre
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------------------------|
@@ -697,7 +697,7 @@ dst.put(a, 0, a.length)
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------|
@@ -718,7 +718,7 @@ open fun put(
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers doubles into this buffer from the given source array. If there are more doubles to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no doubles are transferred and a [BufferOverflowException](https://developer.android.com/reference/kotlin/java/nio/BufferOverflowException) is thrown.
+This method transfers doubles into this buffer from the given source array. If there are more doubles to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no doubles are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies`length`doubles from the given array into this buffer, starting at the given offset in the array and at the current position of this buffer. The position of this buffer is then incremented by`length`.
 
@@ -740,7 +740,7 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -771,7 +771,7 @@ Writes the given double into this buffer at the given index.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------|
@@ -804,7 +804,7 @@ dst.put(index, src, 0, src.length);
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -846,7 +846,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -882,14 +882,14 @@ except that it first checks the consistency of the supplied parameters and it is
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first double will be written; must be non-negative and less than`limit()` |
-| `src` | [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)!:The buffer from which doubles are to be read |
+| `src` | [DoubleBuffer](../java/nio/DoubleBuffer.md)!:The buffer from which doubles are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first double to be read; must be non-negative and less than`src.limit()` |
 | --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of doubles to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -906,7 +906,7 @@ open fun put(src: DoubleBuffer!): DoubleBuffer!
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers the doubles remaining in the given source buffer into this buffer. If there are more doubles remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no doubles are transferred and a [BufferOverflowException](https://developer.android.com/reference/kotlin/java/nio/BufferOverflowException) is thrown.
+This method transfers the doubles remaining in the given source buffer into this buffer. If there are more doubles remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no doubles are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies*n* =`src.remaining()`doubles from the given buffer into this buffer, starting at each buffer's current position. The positions of both buffers are then incremented by*n*.
 
@@ -920,11 +920,11 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)!:The source buffer from which doubles are to be read; must not be this buffer |
+| `src` | [DoubleBuffer](../java/nio/DoubleBuffer.md)!:The source buffer from which doubles are to be read; must not be this buffer |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | This buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------|
@@ -947,7 +947,7 @@ Invoking this method neither changes nor discards the mark's value.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | This buffer |
+| [Buffer](../java/nio/Buffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------|------------------------------|
@@ -973,7 +973,7 @@ out.write(buf);    // Write remaining data
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](https://developer.android.com/reference/kotlin/java/nio/Buffer)! | This buffer |
+| [Buffer](../java/nio/Buffer.md)! | This buffer |
 
 ### slice
 
@@ -991,7 +991,7 @@ The new buffer's position will be zero, its capacity and its limit will be the n
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | The new double buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | The new double buffer |
 
 ### slice
 
@@ -1012,12 +1012,12 @@ The new buffer's position will be zero, its capacity and its limit will be`lengt
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](https://developer.android.com/reference/kotlin/java/nio/Buffer#limit()) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](../java/nio/Buffer.md)) |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of elements the new buffer will contain; must be non-negative and no larger than`limit() - index` |
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | The new buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | The new buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -1047,7 +1047,7 @@ open static fun wrap(array: DoubleArray!): DoubleBuffer!
 
 Wraps a double array into a buffer.
 
-The new buffer will be backed by the given double array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](https://developer.android.com/reference/kotlin/java/nio/ByteOrder#nativeOrder())of the underlying hardware. Its [backing array](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#array())will be the given array, and its [array offset](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#arrayOffset())will be zero.
+The new buffer will be backed by the given double array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/DoubleBuffer.md))will be the given array, and its [array offset](../java/nio/DoubleBuffer.md))will be zero.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -1055,7 +1055,7 @@ The new buffer will be backed by the given double array; that is, modifications 
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | The new double buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | The new double buffer |
 
 ### wrap
 
@@ -1071,7 +1071,7 @@ open static fun wrap(
 
 Wraps a double array into a buffer.
 
-The new buffer will be backed by the given double array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](https://developer.android.com/reference/kotlin/java/nio/ByteOrder#nativeOrder())of the underlying hardware. Its [backing array](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#array())will be the given array, and its [array offset](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#arrayOffset())will be zero.
+The new buffer will be backed by the given double array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/DoubleBuffer.md))will be the given array, and its [array offset](../java/nio/DoubleBuffer.md))will be zero.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1082,7 +1082,7 @@ The new buffer will be backed by the given double array; that is, modifications 
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------|
-| [DoubleBuffer](https://developer.android.com/reference/kotlin/java/nio/DoubleBuffer#)! | The new double buffer |
+| [DoubleBuffer](../java/nio/DoubleBuffer.md)! | The new double buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|

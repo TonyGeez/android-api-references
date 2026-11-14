@@ -2,14 +2,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # LineBreak
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak "View this page in Java")
+Kotlin | [Java](../android/icu/lang/UCharacter.LineBreak.md)
 | --- | --- |
 
 ```
 interface LineBreak
 ```
 
-| [android.icu.lang.UCharacter.LineBreak](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.LineBreak#) |
+| [android.icu.lang.UCharacter.LineBreak](../android/icu/lang/UCharacter.LineBreak.md) |
 
 Line Break constants.
 

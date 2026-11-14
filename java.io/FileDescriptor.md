@@ -10,7 +10,7 @@ class FileDescriptor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#) |
+| ↳ | [java.io.FileDescriptor](../java/io/FileDescriptor.md) |
 
 Instances of the file descriptor class serve as an opaque handle to the underlying machine-specific structure representing an open file, an open socket, or another source or sink of bytes. The main practical use for a file descriptor is to create a`FileInputStream`or`FileOutputStream`to contain it.
 
@@ -20,18 +20,18 @@ Applications should not create their own file descriptors.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#FileDescriptor())`()` Constructs an (invalid) FileDescriptor object. |
+| [FileDescriptor](../java/io/FileDescriptor.md))`()` Constructs an (invalid) FileDescriptor object. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sync](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#sync())`()` Force all system buffers to synchronize with the underlying device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [valid](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#valid())`()` Tests if this file descriptor object is valid. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sync](../java/io/FileDescriptor.md))`()` Force all system buffers to synchronize with the underlying device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [valid](../java/io/FileDescriptor.md))`()` Tests if this file descriptor object is valid. |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#)! | [err](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#err:java.io.FileDescriptor) A handle to the standard error stream. |
-| static [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#)! | [in](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#in:java.io.FileDescriptor) A handle to the standard input stream. |
-| static [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#)! | [out](https://developer.android.com/reference/kotlin/java/io/FileDescriptor#out:java.io.FileDescriptor) A handle to the standard output stream. |
+| static [FileDescriptor](../java/io/FileDescriptor.md)! | [err](../java/io/FileDescriptor.md) A handle to the standard error stream. |
+| static [FileDescriptor](../java/io/FileDescriptor.md)! | [in](../java/io/FileDescriptor.md) A handle to the standard input stream. |
+| static [FileDescriptor](../java/io/FileDescriptor.md)! | [out](../java/io/FileDescriptor.md) A handle to the standard output stream. |
 | --- | --- |
 
 ## Public constructors
@@ -89,7 +89,7 @@ static val err: FileDescriptor!
 A handle to the standard error stream. Usually, this file descriptor is not used directly, but rather via the output stream known as`System.err`. 
 **See Also**
 
-- [java.lang.System#err](https://developer.android.com/reference/kotlin/java/lang/System.html#err:java.io.PrintStream) 
+- [java.lang.System#err](../java/lang/System.md) 
 
 ### in
 
@@ -102,7 +102,7 @@ static val in: FileDescriptor!
 A handle to the standard input stream. Usually, this file descriptor is not used directly, but rather via the input stream known as`System.in`. 
 **See Also**
 
-- [java.lang.System#in](https://developer.android.com/reference/kotlin/java/lang/System.html#in:java.io.InputStream) 
+- [java.lang.System#in](../java/lang/System.md) 
 
 ### out
 
@@ -115,4 +115,4 @@ static val out: FileDescriptor!
 A handle to the standard output stream. Usually, this file descriptor is not used directly, but rather via the output stream known as`System.out`. 
 **See Also**
 
-- [java.lang.System#out](https://developer.android.com/reference/kotlin/java/lang/System.html#out:java.io.PrintStream)
+- [java.lang.System#out](../java/lang/System.md)

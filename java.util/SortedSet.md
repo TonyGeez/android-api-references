@@ -8,15 +8,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SortedSet<E : Any!> : SequencedSet<E>, MutableSet<E>
 ```
 
-| [java.util.SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#) |
+| [java.util.SortedSet](../java/util/SortedSet.md) |
 
-| Known Direct Subclasses [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet) |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet) | A [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#) extended with navigation methods reporting closest matches for given search targets. | |
+| Known Direct Subclasses [NavigableSet](../java/util/NavigableSet.md) |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [NavigableSet](../java/util/NavigableSet.md) | A [SortedSet](../java/util/SortedSet.md) extended with navigation methods reporting closest matches for given search targets. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ConcurrentSkipListSet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListSet), [TreeSet](https://developer.android.com/reference/kotlin/java/util/TreeSet) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListSet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListSet) | A scalable concurrent [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet) implementation based on a [ConcurrentSkipListMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap). | | [TreeSet](https://developer.android.com/reference/kotlin/java/util/TreeSet) | A [NavigableSet](https://developer.android.com/reference/kotlin/java/util/NavigableSet) implementation based on a [TreeMap](https://developer.android.com/reference/kotlin/java/util/TreeMap). | |
+| Known Indirect Subclasses [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md), [TreeSet](../java/util/TreeSet.md) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](../java/util/NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md). | | [TreeSet](../java/util/TreeSet.md) | A [NavigableSet](../java/util/NavigableSet.md) implementation based on a [TreeMap](../java/util/TreeMap.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A [Set](https://developer.android.com/reference/kotlin/java/util/Set) that further provides a*total ordering* on its elements. The elements are ordered using their [ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#), or by a [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator) typically provided at sorted set creation time. The set's iterator will traverse the set in ascending element order. Several additional operations are provided to take advantage of the ordering. (This interface is the set analogue of [SortedMap](https://developer.android.com/reference/kotlin/java/util/SortedMap).)
+A [Set](../java/util/Set.md) that further provides a*total ordering* on its elements. The elements are ordered using their [ordering](../java/lang/Comparable.md), or by a [Comparator](../java/util/Comparator.md) typically provided at sorted set creation time. The set's iterator will traverse the set in ascending element order. Several additional operations are provided to take advantage of the ordering. (This interface is the set analogue of [SortedMap](../java/util/SortedMap.md).)
 
 All elements inserted into a sorted set must implement the`Comparable`interface (or be accepted by the specified comparator). Furthermore, all such elements must be*mutually comparable* :`e1.compareTo(e2)`(or`comparator.compare(e1, e2)`) must not throw a`ClassCastException`for any elements`e1`and`e2`in the sorted set. Attempts to violate this restriction will cause the offending method or constructor invocation to throw a`ClassCastException`.
 
@@ -41,24 +41,24 @@ This interface is a member of the [Java Collections Framework](https://developer
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](https://developer.android.com/reference/kotlin/java/util/SortedSet#addFirst(java.util.SortedSet.E))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](https://developer.android.com/reference/kotlin/java/util/SortedSet#addLast(java.util.SortedSet.E))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
-| abstract [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)\<inE\>! | [comparator](https://developer.android.com/reference/kotlin/java/util/SortedSet#comparator())`()` Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its elements. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](../java/util/SortedSet.md))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](../java/util/SortedSet.md))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
+| abstract [Comparator](../java/util/Comparator.md)\<inE\>! | [comparator](../java/util/SortedSet.md))`()` Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java/lang/Comparable.md) of its elements. |
 | --- | --- |
-| abstractE | [first](https://developer.android.com/reference/kotlin/java/util/SortedSet#first())`()` Returns the first (lowest) element currently in this set. |
-| openE | [getFirst](https://developer.android.com/reference/kotlin/java/util/SortedSet#getFirst())`()` Gets the first element of this collection. |
-| openE | [getLast](https://developer.android.com/reference/kotlin/java/util/SortedSet#getLast())`()` Gets the last element of this collection. |
+| abstractE | [first](../java/util/SortedSet.md))`()` Returns the first (lowest) element currently in this set. |
+| openE | [getFirst](../java/util/SortedSet.md))`()` Gets the first element of this collection. |
+| openE | [getLast](../java/util/SortedSet.md))`()` Gets the last element of this collection. |
 | --- | --- |
-| abstract [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)\<E\>! | [headSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#headSet(java.util.SortedSet.E))`(`toElement:` `E`)` Returns a view of the portion of this set whose elements are strictly less than`toElement`. |
-| abstractE | [last](https://developer.android.com/reference/kotlin/java/util/SortedSet#last())`()` Returns the last (highest) element currently in this set. |
-| openE | [removeFirst](https://developer.android.com/reference/kotlin/java/util/SortedSet#removeFirst())`()` Removes and returns the first element of this collection (optional operation). |
+| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [headSet](../java/util/SortedSet.md))`(`toElement:` `E`)` Returns a view of the portion of this set whose elements are strictly less than`toElement`. |
+| abstractE | [last](../java/util/SortedSet.md))`()` Returns the last (highest) element currently in this set. |
+| openE | [removeFirst](../java/util/SortedSet.md))`()` Removes and returns the first element of this collection (optional operation). |
 | --- | --- |
-| openE | [removeLast](https://developer.android.com/reference/kotlin/java/util/SortedSet#removeLast())`()` Removes and returns the last element of this collection (optional operation). |
-| open [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)\<E\>! | [reversed](https://developer.android.com/reference/kotlin/java/util/SortedSet#reversed())`()` Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this collection. |
-| open [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)\<E\> | [spliterator](https://developer.android.com/reference/kotlin/java/util/SortedSet#spliterator())`()` Creates a`Spliterator`over the elements in this sorted set. |
+| openE | [removeLast](../java/util/SortedSet.md))`()` Removes and returns the last element of this collection (optional operation). |
+| open [SortedSet](../java/util/SortedSet.md)\<E\>! | [reversed](../java/util/SortedSet.md))`()` Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. |
+| open [Spliterator](../java/util/Spliterator.md)\<E\> | [spliterator](../java/util/SortedSet.md))`()` Creates a`Spliterator`over the elements in this sorted set. |
 | --- | --- |
-| abstract [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)\<E\>! | [subSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#subSet(java.util.SortedSet.E,%20java.util.SortedSet.E))`(`fromElement:` `E`, `toElement:` `E`)` Returns a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive. |
-| abstract [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)\<E\>! | [tailSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#tailSet(java.util.SortedSet.E))`(`fromElement:` `E`)` Returns a view of the portion of this set whose elements are greater than or equal to`fromElement`. |
+| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [subSet](../java/util/SortedSet.md))`(`fromElement:` `E`, `toElement:` `E`)` Returns a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive. |
+| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [tailSet](../java/util/SortedSet.md))`(`fromElement:` `E`)` Returns a view of the portion of this set whose elements are greater than or equal to`fromElement`. |
 
 ## Public methods
 
@@ -108,11 +108,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun comparator(): Comparator<in E>!
 ```
 
-Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#) of its elements.
+Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java/lang/Comparable.md) of its elements.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Comparator](https://developer.android.com/reference/kotlin/java/util/Comparator)<in` `E>! | the comparator used to order the elements in this set, or`null`if this set uses the natural ordering of its elements |
+| [Comparator](../java/util/Comparator.md)<in` `E>! | the comparator used to order the elements in this set, or`null`if this set uses the natural ordering of its elements |
 
 ### first
 
@@ -186,11 +186,11 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)<E>! | a view of the portion of this set whose elements are strictly less than`toElement` |
+| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements are strictly less than`toElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`toElement`lies outside the bounds of the range |
 | --- | --- |
@@ -259,11 +259,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun reversed(): SortedSet<E>!
 ```
 
-Returns a reverse-ordered [view](https://developer.android.com/reference/kotlin/java/util/Collection#view) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
+Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)<E>! | a reverse-ordered view of this collection, as a`SortedSet` |
+| [SortedSet](../java/util/SortedSet.md)<E>! | a reverse-ordered view of this collection, as a`SortedSet` |
 
 ### spliterator
 
@@ -275,13 +275,13 @@ open fun spliterator(): Spliterator<E>
 
 Creates a`Spliterator`over the elements in this sorted set.
 
-The`Spliterator`reports [Spliterator.DISTINCT](https://developer.android.com/reference/kotlin/java/util/Spliterator#DISTINCT:kotlin.Int), [Spliterator.SORTED](https://developer.android.com/reference/kotlin/java/util/Spliterator#SORTED:kotlin.Int) and [Spliterator.ORDERED](https://developer.android.com/reference/kotlin/java/util/Spliterator#ORDERED:kotlin.Int). Implementations should document the reporting of additional characteristic values.
+The`Spliterator`reports [Spliterator.DISTINCT](../java/util/Spliterator.md), [Spliterator.SORTED](../java/util/Spliterator.md) and [Spliterator.ORDERED](../java/util/Spliterator.md). Implementations should document the reporting of additional characteristic values.
 
-The spliterator's comparator (see [java.util.Spliterator#getComparator()](https://developer.android.com/reference/kotlin/java/util/Spliterator#getComparator())) must be`null`if the sorted set's comparator (see [comparator()](https://developer.android.com/reference/kotlin/java/util/SortedSet#comparator())) is`null`. Otherwise, the spliterator's comparator must be the same as or impose the same total ordering as the sorted set's comparator.
+The spliterator's comparator (see [java.util.Spliterator#getComparator()](../java/util/Spliterator.md))) must be`null`if the sorted set's comparator (see [comparator()](../java/util/SortedSet.md))) is`null`. Otherwise, the spliterator's comparator must be the same as or impose the same total ordering as the sorted set's comparator.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [Spliterator](https://developer.android.com/reference/kotlin/java/util/Spliterator)<E> | a`Spliterator`over the elements in this sorted set |
+| [Spliterator](../java/util/Spliterator.md)<E> | a`Spliterator`over the elements in this sorted set |
 
 ### subSet
 
@@ -305,7 +305,7 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
+| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -332,11 +332,11 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [SortedSet](https://developer.android.com/reference/kotlin/java/util/SortedSet#)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
+| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`fromElement`lies outside the bounds of the range |
 | --- | --- |

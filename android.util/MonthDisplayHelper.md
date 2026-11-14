@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MonthDisplayHelper
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/MonthDisplayHelper "View this page in Java") 
+Kotlin| [Java](../android/util/MonthDisplayHelper.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MonthDisplayHelper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MonthDisplayHelper](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#) |
+| ↳ | [android.util.MonthDisplayHelper](../android/util/MonthDisplayHelper.md) |
 
 Helps answer common questions that come up when displaying a month in a 6 row calendar grid format. Not thread safe.
 
@@ -21,28 +21,28 @@ Helps answer common questions that come up when displaying a month in a 6 row ca
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MonthDisplayHelper](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#MonthDisplayHelper(kotlin.Int,%20kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [MonthDisplayHelper](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#MonthDisplayHelper(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `weekStartDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [MonthDisplayHelper](../android/util/MonthDisplayHelper.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [MonthDisplayHelper](../android/util/MonthDisplayHelper.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `weekStartDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnOf](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getColumnOf(kotlin.Int))`(`day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDayAt](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getDayAt(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getDigitsForRow](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getDigitsForRow(kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnOf](../android/util/MonthDisplayHelper.md))`(`day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDayAt](../android/util/MonthDisplayHelper.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getDigitsForRow](../android/util/MonthDisplayHelper.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFirstDayOfMonth](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getFirstDayOfMonth())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonth](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getMonth())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumberOfDaysInMonth](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getNumberOfDaysInMonth())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFirstDayOfMonth](../android/util/MonthDisplayHelper.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonth](../android/util/MonthDisplayHelper.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumberOfDaysInMonth](../android/util/MonthDisplayHelper.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getOffset())`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRowOf](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getRowOf(kotlin.Int))`(`day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWeekStartDay](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getWeekStartDay())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](../android/util/MonthDisplayHelper.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRowOf](../android/util/MonthDisplayHelper.md))`(`day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWeekStartDay](../android/util/MonthDisplayHelper.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYear](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#getYear())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWithinCurrentMonth](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#isWithinCurrentMonth(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [nextMonth](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#nextMonth())`()` Increment the month. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYear](../android/util/MonthDisplayHelper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWithinCurrentMonth](../android/util/MonthDisplayHelper.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [nextMonth](../android/util/MonthDisplayHelper.md))`()` Increment the month. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [previousMonth](https://developer.android.com/reference/kotlin/android/util/MonthDisplayHelper#previousMonth())`()` Decrement the month. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [previousMonth](../android/util/MonthDisplayHelper.md))`()` Decrement the month. |
 
 ## Public constructors
 
@@ -134,7 +134,7 @@ open fun getFirstDayOfMonth(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The first day of the month using a constants such as [java.util.Calendar#SUNDAY](https://developer.android.com/reference/kotlin/java/util/Calendar.html#SUNDAY:kotlin.Int). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The first day of the month using a constants such as [java.util.Calendar#SUNDAY](../java/util/Calendar.md). |
 
 ### getMonth
 

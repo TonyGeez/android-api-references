@@ -8,7 +8,7 @@ open class ImageWriter : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.ImageWriter](https://developer.android.com/reference/kotlin/android/media/ImageWriter#) |
+| ↳ | [android.media.ImageWriter](../android/media/ImageWriter.md) |
 
 The ImageWriter class allows an application to produce Image data into a `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, and have it be consumed by another component like `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#`.
 
@@ -32,7 +32,7 @@ If the consumer component that provided the input `https://developer.android.com
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#close()()` Free up all the resources associated with this ImageWriter. |
-| open [Image](https://developer.android.com/reference/kotlin/android/media/Image)! | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()()` Dequeue the next available input Image for the application to produce data into. |
+| open [Image](../android/media/Image.md)! | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()()` Dequeue the next available input Image for the application to produce data into. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getDataSpace()()` Get the ImageWriter dataspace. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getFormat()()` Get the ImageWriter format. |
@@ -43,8 +43,8 @@ If the consumer component that provided the input `https://developer.android.com
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getUsage()()` Get the ImageWriter usage flag. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getWidth()()` The width of `https://developer.android.com/reference/kotlin/android/media/Image`, in pixels. |
 | --- | --- |
-| open static [ImageWriter](https://developer.android.com/reference/kotlin/android/media/ImageWriter#) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#newInstance(android.view.Surface,%20kotlin.Int)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new ImageWriter. |
-| open static [ImageWriter](https://developer.android.com/reference/kotlin/android/media/ImageWriter#) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#newInstance(android.view.Surface,%20kotlin.Int,%20kotlin.Int)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new ImageWriter with given number of max Images and format. |
+| open static [ImageWriter](../android/media/ImageWriter.md) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#newInstance(android.view.Surface,%20kotlin.Int)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new ImageWriter. |
+| open static [ImageWriter](../android/media/ImageWriter.md) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#newInstance(android.view.Surface,%20kotlin.Int,%20kotlin.Int)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new ImageWriter with given number of max Images and format. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)(image: https://developer.android.com/reference/kotlin/android/media/Image!)` Queue an input `https://developer.android.com/reference/kotlin/android/media/Image` back to ImageWriter for the downstream consumer to access. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#setOnImageReleasedListener(android.media.ImageWriter.OnImageReleasedListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/ImageWriter.OnImageReleasedListener!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Register a listener to be invoked when an input Image is returned to the ImageWriter. |
@@ -239,7 +239,7 @@ The input Image size and format depend on the Surface that is provided by the do
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#): The destination Surface this writer produces Image data into. This value cannot be `null`. |
+| `surface` | [Surface](../android/view/Surface.md): The destination Surface this writer produces Image data into. This value cannot be `null`. |
 | `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of Images the user will want to access simultaneously for producing Image data. This should be as small as possible to limit memory use. Once maxImages Images are dequeued by the user, one of them has to be queued back before a new Image can be dequeued for access via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`. Value is 1 or greater |
 
 | Return ||
@@ -270,7 +270,7 @@ The input Image size depends on the Surface that is provided by the downstream c
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html#): The destination Surface this writer produces Image data into. This value cannot be `null`. |
+| `surface` | [Surface](../android/view/Surface.md): The destination Surface this writer produces Image data into. This value cannot be `null`. |
 | `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of Images the user will want to access simultaneously for producing Image data. This should be as small as possible to limit memory use. Once maxImages Images are dequeued by the user, one of them has to be queued back before a new Image can be dequeued for access via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`. Value is 1 or greater |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of this ImageWriter. It can be any valid format specified by `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#`. |
 | --- | --- |
@@ -299,7 +299,7 @@ After this call, the input Image is no longer valid for further access, as if th
 
 | Parameters ||
 |---|---|
-| `image` | [Image](https://developer.android.com/reference/kotlin/android/media/Image)!: The Image to be queued back to ImageWriter for future consumption. |
+| `image` | [Image](../android/media/Image.md)!: The Image to be queued back to ImageWriter for future consumption. |
 
 | Exceptions ||
 |---|---|
@@ -324,8 +324,8 @@ Register a listener to be invoked when an input Image is returned to the ImageWr
 
 | Parameters ||
 |---|---|
-| `listener` | [ImageWriter.OnImageReleasedListener](https://developer.android.com/reference/kotlin/android/media/ImageWriter.OnImageReleasedListener)!: The listener that will be run. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
+| `listener` | [ImageWriter.OnImageReleasedListener](../android/media/ImageWriter.OnImageReleasedListener.md)!: The listener that will be run. |
+| `handler` | [Handler](../android/os/Handler.md)!: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
 
 | Exceptions ||
 |---|---|

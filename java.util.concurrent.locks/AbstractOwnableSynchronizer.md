@@ -8,10 +8,10 @@ abstract class AbstractOwnableSynchronizer : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#) |
+| ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](../java/util/concurrent/locks/AbstractOwnableSynchronizer.md) |
 
-Known Direct Subclasses [AbstractQueuedLongSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer), [AbstractQueuedSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer) [AbstractQueuedLongSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer) A version of `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer` in which synchronization state is maintained as a `long`.
-[AbstractQueuedSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer) Provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues.
+Known Direct Subclasses [AbstractQueuedLongSynchronizer](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.md), [AbstractQueuedSynchronizer](../java/util/concurrent/locks/AbstractQueuedSynchronizer.md) [AbstractQueuedLongSynchronizer](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.md) A version of `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer` in which synchronization state is maintained as a `long`.
+[AbstractQueuedSynchronizer](../java/util/concurrent/locks/AbstractQueuedSynchronizer.md) Provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues.
 
 A synchronizer that may be exclusively owned by a thread. This class provides a basis for creating locks and related synchronizers that may entail a notion of ownership. The `AbstractOwnableSynchronizer` class itself does not manage or use this information. However, subclasses and tools may use appropriately maintained values to help control and monitor access and provide diagnostics.
 
@@ -23,7 +23,7 @@ A synchronizer that may be exclusively owned by a thread. This class provides a 
 
 | Protected methods ||
 |---|---|
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#getExclusiveOwnerThread()()` Returns the thread last set by `setExclusiveOwnerThread`, or `null` if never set. |
+| [Thread](../java/lang/Thread.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#getExclusiveOwnerThread()()` Returns the thread last set by `setExclusiveOwnerThread`, or `null` if never set. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#setExclusiveOwnerThread(java.lang.Thread)(thread: https://developer.android.com/reference/kotlin/java/lang/Thread.html#!)` Sets the thread that currently owns exclusive access. |
 
 ## Protected constructors
@@ -66,4 +66,4 @@ Sets the thread that currently owns exclusive access. A `null` argument indicate
 
 | Parameters ||
 |---|---|
-| `thread` | [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!: the owner thread |
+| `thread` | [Thread](../java/lang/Thread.md)!: the owner thread |

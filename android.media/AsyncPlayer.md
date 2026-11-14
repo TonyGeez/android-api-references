@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AsyncPlayer
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AsyncPlayer "View this page in Java") 
+Kotlin| [Java](../android/media/AsyncPlayer.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class AsyncPlayer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AsyncPlayer](https://developer.android.com/reference/kotlin/android/media/AsyncPlayer#) |
+| ↳ | [android.media.AsyncPlayer](../android/media/AsyncPlayer.md) |
 
 Plays a series of audio URIs, but does all the hard work on another thread so that any slowness with preparing or loading doesn't block the calling thread.
 
@@ -21,13 +21,13 @@ Plays a series of audio URIs, but does all the hard work on another thread so th
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AsyncPlayer](https://developer.android.com/reference/kotlin/android/media/AsyncPlayer#AsyncPlayer(kotlin.String))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct an AsyncPlayer object. |
+| [AsyncPlayer](../android/media/AsyncPlayer.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct an AsyncPlayer object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](https://developer.android.com/reference/kotlin/android/media/AsyncPlayer#play(android.content.Context,%20android.net.Uri,%20kotlin.Boolean,%20android.media.AudioAttributes))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `looping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `attributes:` ` [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes)`)` Start playing the sound. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](https://developer.android.com/reference/kotlin/android/media/AsyncPlayer#play(android.content.Context,%20android.net.Uri,%20kotlin.Boolean,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`, `looping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `stream:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start playing the sound. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/android/media/AsyncPlayer#stop())`()` Stop a previously played sound. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](../android/media/AsyncPlayer.md))`(`context:` ` [Context](../android/content/Context.md)`, `uri:` ` [Uri](../android/net/Uri.md)`, `looping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `attributes:` ` [AudioAttributes](../android/media/AudioAttributes.md)`)` Start playing the sound. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](../android/media/AsyncPlayer.md))`(`context:` ` [Context](../android/content/Context.md)!`, `uri:` ` [Uri](../android/net/Uri.md)!`, `looping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `stream:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start playing the sound. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../android/media/AsyncPlayer.md))`()` Stop a previously played sound. |
 | --- | --- |
 
 ## Public constructors
@@ -65,11 +65,11 @@ Start playing the sound. It will actually start playing at some point in the fut
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):the non-null application's context. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):the non-null URI to play. (see [MediaPlayer.setDataSource(Context, Uri)](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#setDataSource(android.content.Context,%20android.net.Uri))) |
-| `looping` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether the audio should loop forever. (see [MediaPlayer.setLooping(boolean)](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#setLooping(kotlin.Boolean))) |
+| `context` | [Context](../android/content/Context.md):the non-null application's context. |
+| `uri` | [Uri](../android/net/Uri.md):the non-null URI to play. (see [MediaPlayer.setDataSource(Context, Uri)](../android/media/MediaPlayer.md))) |
+| `looping` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether the audio should loop forever. (see [MediaPlayer.setLooping(boolean)](../android/media/MediaPlayer.md))) |
 | --- | --- |
-| `attributes` | [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes):the non-null [AudioAttributes](https://developer.android.com/reference/kotlin/android/media/AudioAttributes) to use. (see [MediaPlayer.setAudioAttributes(AudioAttributes)](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#setAudioAttributes(android.media.AudioAttributes))) |
+| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md):the non-null [AudioAttributes](../android/media/AudioAttributes.md) to use. (see [MediaPlayer.setAudioAttributes(AudioAttributes)](../android/media/MediaPlayer.md))) |
 
 | Exceptions ||
 |--------------------------------------|---|
@@ -89,17 +89,17 @@ open fun play(
 ): Unit
 ```
 
-**Deprecated:** *use [play(android.content.Context,android.net.Uri,boolean,android.media.AudioAttributes)](https://developer.android.com/reference/kotlin/android/media/AsyncPlayer#play(android.content.Context,%20android.net.Uri,%20kotlin.Boolean,%20android.media.AudioAttributes))instead*
+**Deprecated:** *use [play(android.content.Context,android.net.Uri,boolean,android.media.AudioAttributes)](../android/media/AsyncPlayer.md))instead*
 
 Start playing the sound. It will actually start playing at some point in the future. There are no guarantees about latency here. Calling this before another audio file is done playing will stop that one and start the new one.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Your application's context. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!:The URI to play. (see [MediaPlayer.setDataSource(Context, Uri)](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#setDataSource(android.content.Context,%20android.net.Uri))) |
-| `looping` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the audio should loop forever. (see [MediaPlayer.setLooping(boolean)](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#setLooping(kotlin.Boolean))) |
+| `context` | [Context](../android/content/Context.md)!:Your application's context. |
+| `uri` | [Uri](../android/net/Uri.md)!:The URI to play. (see [MediaPlayer.setDataSource(Context, Uri)](../android/media/MediaPlayer.md))) |
+| `looping` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether the audio should loop forever. (see [MediaPlayer.setLooping(boolean)](../android/media/MediaPlayer.md))) |
 | --- | --- |
-| `stream` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the AudioStream to use. (see [MediaPlayer.setAudioStreamType(int)](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#setAudioStreamType(kotlin.Int))) |
+| `stream` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the AudioStream to use. (see [MediaPlayer.setAudioStreamType(int)](../android/media/MediaPlayer.md))) |
 
 ### stop
 

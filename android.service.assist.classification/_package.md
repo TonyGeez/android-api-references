@@ -2,10 +2,10 @@
 
 # android.service.assist.classification
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/assist/classification/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/assist/classification/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [FieldClassification](https://developer.android.com/reference/kotlin/android/service/assist/classification/FieldClassification) | Represents a classified field from the detection service. |
+| [FieldClassification](../android/service/assist/classification/FieldClassification.md) | Represents a classified field from the detection service. |
 | --- | --- |

@@ -11,23 +11,23 @@ class DirectoryIteratorException : ConcurrentModificationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.ConcurrentModificationException](https://developer.android.com/reference/kotlin/java/util/ConcurrentModificationException.html#) ||
-| | | | | ↳ | [java.nio.file.DirectoryIteratorException](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryIteratorException#) |
+| | | | ↳ | [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) ||
+| | | | | ↳ | [java.nio.file.DirectoryIteratorException](../java/nio/file/DirectoryIteratorException.md) |
 
-Runtime exception thrown if an I/O error is encountered when iterating over the entries in a directory. The I/O error is retrieved as an [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) using the [getCause()](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryIteratorException#cause:java.io.IOException) method.
+Runtime exception thrown if an I/O error is encountered when iterating over the entries in a directory. The I/O error is retrieved as an [IOException](../java/io/IOException.md) using the [getCause()](../java/nio/file/DirectoryIteratorException.md) method.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DirectoryIteratorException](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryIteratorException#DirectoryIteratorException(java.io.IOException))`(`cause:` ` [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!`)` Constructs an instance of this class. |
+| [DirectoryIteratorException](../java/nio/file/DirectoryIteratorException.md))`(`cause:` ` [IOException](../java/io/IOException.md)!`)` Constructs an instance of this class. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)? | [cause](https://developer.android.com/reference/kotlin/java/nio/file/DirectoryIteratorException#cause:java.io.IOException) Returns the cause of this exception. |
+| [IOException](../java/io/IOException.md)? | [cause](../java/nio/file/DirectoryIteratorException.md) Returns the cause of this exception. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Constructs an instance of this class.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)!:the`IOException`that caused the directory iteration to fail |
+| `cause` | [IOException](../java/io/IOException.md)!:the`IOException`that caused the directory iteration to fail |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -63,4 +63,4 @@ Returns the cause of this exception.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------|
-| [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#)? | the cause |
+| [IOException](../java/io/IOException.md)? | the cause |

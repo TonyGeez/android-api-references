@@ -9,8 +9,8 @@ abstract class CloudMediaProvider : ContentProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.ContentProvider](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#) ||
-| | ↳ | [android.provider.CloudMediaProvider](https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#) |
+| ↳ | [android.content.ContentProvider](../android/content/ContentProvider.md) ||
+| | ↳ | [android.provider.CloudMediaProvider](../android/provider/CloudMediaProvider.md) |
 
 Base class for a cloud media provider. A cloud media provider offers read-only access to durable media files, specifically photos and videos stored on a local disk, or files in a cloud storage service. To create a cloud media provider, extend this class, implement the abstract methods, and add it to your manifest like this:
 
@@ -63,40 +63,40 @@ Each item under a provider is uniquely referenced by its media or album id, whic
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#attachInfo(android.content.Context,%20android.content.pm.ProviderInfo)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, info: https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#)` Implementation is provided by the parent class. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#call(kotlin.String,%20kotlin.String,%20android.os.Bundle)(method: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#canonicalize(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implementation is provided by the parent class. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#call(kotlin.String,%20kotlin.String,%20android.os.Bundle)(method: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
+| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#canonicalize(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implementation is provided by the parent class. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#delete(android.net.Uri,%20kotlin.String,%20kotlin.Array)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Implementation is provided by the parent class. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#getType(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implementation is provided by the parent class. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#insert(android.net.Uri,%20android.content.ContentValues)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#!)` Implementation is provided by the parent class. |
+| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#insert(android.net.Uri,%20android.content.ContentValues)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#!)` Implementation is provided by the parent class. |
 | --- | --- |
-| open [CloudMediaProvider.CloudMediaSurfaceController](https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceController)? | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onCreateCloudMediaSurfaceController(android.os.Bundle,%20android.provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)(config: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, callback: https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)` Returns a `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceController` used for rendering the preview of media items, or null if preview rendering is not supported. |
-| open [CloudMediaProviderContract.Capabilities](https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.Capabilities) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetCapabilities()()` Returns the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.Capabilities` of this CloudMediaProvider. |
-| abstract [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetMediaCollectionInfo(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns metadata about the media collection itself. |
+| open [CloudMediaProvider.CloudMediaSurfaceController](../android/provider/CloudMediaProvider.CloudMediaSurfaceController.md)? | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onCreateCloudMediaSurfaceController(android.os.Bundle,%20android.provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)(config: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, callback: https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)` Returns a `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceController` used for rendering the preview of media items, or null if preview rendering is not supported. |
+| open [CloudMediaProviderContract.Capabilities](../android/provider/CloudMediaProviderContract.Capabilities.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetCapabilities()()` Returns the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.Capabilities` of this CloudMediaProvider. |
+| abstract [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetMediaCollectionInfo(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns metadata about the media collection itself. |
 | --- | --- |
-| abstract [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenMedia(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Returns the full size media item identified by `mediaId`. |
-| abstract [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenPreview(kotlin.String,%20android.graphics.Point,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, size: https://developer.android.com/reference/kotlin/android/graphics/Point.html#, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Returns a thumbnail of `size` for a media item identified by `mediaId` |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryAlbums(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns a cursor representing all album items in the media collection optionally filtered by `extras` and sorted in reverse chronological order of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.AlbumColumns#DATE_TAKEN_MILLIS:kotlin.String`, i. |
+| abstract [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenMedia(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Returns the full size media item identified by `mediaId`. |
+| abstract [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenPreview(kotlin.String,%20android.graphics.Point,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, size: https://developer.android.com/reference/kotlin/android/graphics/Point.html#, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Returns a thumbnail of `size` for a media item identified by `mediaId` |
+| open [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryAlbums(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns a cursor representing all album items in the media collection optionally filtered by `extras` and sorted in reverse chronological order of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.AlbumColumns#DATE_TAKEN_MILLIS:kotlin.String`, i. |
 | --- | --- |
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryDeletedMedia(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` representing all deleted media items in the entire media collection within the current provider version as returned by `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetMediaCollectionInfo(android.os.Bundle)`. |
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMedia(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns a cursor representing all media items in the media collection optionally filtered by `extras` and sorted in reverse chronological order of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns#DATE_TAKEN_MILLIS:kotlin.String`, i. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMediaCategories(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(parentCategoryId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available MediaCategories under the given `parentCategoryId`, filtered by `extras`. |
+| abstract [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryDeletedMedia(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` representing all deleted media items in the entire media collection within the current provider version as returned by `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetMediaCollectionInfo(android.os.Bundle)`. |
+| abstract [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMedia(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Returns a cursor representing all media items in the media collection optionally filtered by `extras` and sorted in reverse chronological order of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns#DATE_TAKEN_MILLIS:kotlin.String`, i. |
+| open [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMediaCategories(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(parentCategoryId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available MediaCategories under the given `parentCategoryId`, filtered by `extras`. |
 | --- | --- |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMediaInMediaSet(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaSetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available media items under a given `mediaSetId`, filtered by `extras`. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMediaSets(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaCategoryId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available MediaSets under a given `mediaCategoryId`, filtered by `extras`. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQuerySearchSuggestions(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(prefixText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available SearchSuggestions based on a `prefixText`, filtered by `extras`. |
+| open [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMediaInMediaSet(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaSetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available media items under a given `mediaSetId`, filtered by `extras`. |
+| open [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMediaSets(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(mediaCategoryId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available MediaSets under a given `mediaCategoryId`, filtered by `extras`. |
+| open [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQuerySearchSuggestions(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(prefixText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Queries for the available SearchSuggestions based on a `prefixText`, filtered by `extras`. |
 | --- | --- |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onSearchMedia(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(searchText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Searches media items based on entered search text, managed by `extras` and returns a cursor of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns` based on the match. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onSearchMedia(kotlin.String,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(suggestedMediaSetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fallbackSearchText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Searches media items based on a selected suggestion, managed by `extras` and returns a cursor of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns` based on the match. |
-| [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openFile(android.net.Uri,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Implementation is provided by the parent class. |
+| open [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onSearchMedia(kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(searchText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Searches media items based on entered search text, managed by `extras` and returns a cursor of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns` based on the match. |
+| open [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onSearchMedia(kotlin.String,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(suggestedMediaSetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fallbackSearchText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Searches media items based on a selected suggestion, managed by `extras` and returns a cursor of `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns` based on the match. |
+| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openFile(android.net.Uri,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Implementation is provided by the parent class. |
 | --- | --- |
-| [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openFile(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
-| [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
-| [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openFile(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Implementation is provided by the parent class. |
+| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
 | --- | --- |
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Implementation is provided by the parent class. |
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
+| [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Implementation is provided by the parent class. |
+| [Cursor](../android/database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20android.os.CancellationSignal)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Implementation is provided by the parent class. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#update(android.net.Uri,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#!, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Implementation is provided by the parent class. |
 
@@ -133,8 +133,8 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): This value cannot be `null`. |
-| `info` | [ProviderInfo](https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#): This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `info` | [ProviderInfo](../android/content/pm/ProviderInfo.md): This value cannot be `null`. |
 
 ### call
 
@@ -154,7 +154,7 @@ Implementation is provided by the parent class. Cannot be overridden.
 |---|---|
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -174,7 +174,7 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 | Parameters ||
 |---|---|
 | `url` | The Uri to canonicalize. This value cannot be `null`. |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -196,7 +196,7 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
 | --- | --- |
@@ -221,7 +221,7 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -242,8 +242,8 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
-| `values` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)!: This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
+| `values` | [ContentValues](../android/content/ContentValues.md)!: This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -265,8 +265,8 @@ Returns a `https://developer.android.com/reference/kotlin/android/provider/Cloud
 
 | Parameters ||
 |---|---|
-| `config` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing configuration parameters for `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceController` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_LOOPING_PLAYBACK_ENABLED:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLED:kotlin.String` . This value cannot be `null`. |
-| `callback` | [CloudMediaProvider.CloudMediaSurfaceStateChangedCallback](https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceStateChangedCallback): `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceStateChangedCallback` to send state updates for `https://developer.android.com/reference/kotlin/android/view/Surface.html#` to picker launched via `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String` This value cannot be `null`. |
+| `config` | [Bundle](../android/os/Bundle.md): containing configuration parameters for `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceController` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_LOOPING_PLAYBACK_ENABLED:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLED:kotlin.String` . This value cannot be `null`. |
+| `callback` | [CloudMediaProvider.CloudMediaSurfaceStateChangedCallback](../android/provider/CloudMediaProvider.CloudMediaSurfaceStateChangedCallback.md): `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceStateChangedCallback` to send state updates for `https://developer.android.com/reference/kotlin/android/view/Surface.html#` to picker launched via `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String` This value cannot be `null`. |
 
 ### onGetCapabilities
 
@@ -306,7 +306,7 @@ If the provider handled any filters in `extras`, it must add the key to the `htt
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter result: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_ALBUM_ID:kotlin.String` . This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter result: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_ALBUM_ID:kotlin.String` . This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -332,8 +332,8 @@ If you block while downloading content, you should periodically check `https://d
 | Parameters ||
 |---|---|
 | `mediaId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the media item to return. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: to modify the way the fd is opened, there's none at the moment, but some might be implemented in the future. This value may be `null`. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: used by the OS to signal if the request should be cancelled. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: to modify the way the fd is opened, there's none at the moment, but some might be implemented in the future. This value may be `null`. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: used by the OS to signal if the request should be cancelled. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -369,10 +369,10 @@ If you block while downloading content, you should periodically check `https://d
 | Parameters ||
 |---|---|
 | `mediaId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the media item to return. This value cannot be `null`. |
-| `size` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#): the dimensions of the thumbnail to return. The returned file descriptor doesn't have to match the `size` precisely because the OS will adjust the dimensions before usage. Implementations can return close approximations especially if the approximation is already locally on the device and doesn't require downloading from the cloud. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: to modify the way the fd is opened, e.g. for video files we may request a thumbnail image instead of a video with `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PREVIEW_THUMBNAIL:kotlin.String`. In the absence of this extra, this method must return a descriptor representing the actual media file, otherwise it should return the thumbnail. Failure in returning the same may cause unexpected media preview behaviour in the photopicker. This value may be `null`. |
+| `size` | [Point](../android/graphics/Point.md): the dimensions of the thumbnail to return. The returned file descriptor doesn't have to match the `size` precisely because the OS will adjust the dimensions before usage. Implementations can return close approximations especially if the approximation is already locally on the device and doesn't require downloading from the cloud. This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md)?: to modify the way the fd is opened, e.g. for video files we may request a thumbnail image instead of a video with `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PREVIEW_THUMBNAIL:kotlin.String`. In the absence of this extra, this method must return a descriptor representing the actual media file, otherwise it should return the thumbnail. Failure in returning the same may cause unexpected media preview behaviour in the photopicker. This value may be `null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: used by the OS to signal if the request should be cancelled. This value may be `null`. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: used by the OS to signal if the request should be cancelled. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -400,7 +400,7 @@ If the provider handled any filters in `extras`, it must add the key to the `htt
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter album items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter album items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -423,7 +423,7 @@ If the provider handled any filters in `extras`, it must add the key to the `htt
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter deleted media items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` . This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter deleted media items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` . This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -446,7 +446,7 @@ If the cloud media provider handled any filters in `extras`, it must add the key
 
 | Parameters ||
 |---|---|
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter media items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_ALBUM_ID:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` . This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter media items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_ALBUM_ID:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` . This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -478,8 +478,8 @@ The cloud media provider must set the `https://developer.android.com/reference/k
 | Parameters ||
 |---|---|
 | `parentCategoryId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the ID of the parent category to filter media categories. This value may be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter media categories: - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter media categories: - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -512,8 +512,8 @@ If the cloud media provider supports pagination, they can set `https://developer
 | Parameters ||
 |---|---|
 | `mediaSetId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the ID of the media set to filter media items. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter media items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter media items: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -548,8 +548,8 @@ If the cloud media provider supports pagination, they can set `https://developer
 | Parameters ||
 |---|---|
 | `mediaCategoryId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the ID of the media category to filter media sets. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter media sets: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter media sets: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -584,8 +584,8 @@ Results may not be displayed if it takes longer than 300 milliseconds to get a r
 | Parameters ||
 |---|---|
 | `prefixText` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the prefix text to filter search suggestions. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to filter search suggestions. - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` . This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to filter search suggestions. - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` . This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -624,8 +624,8 @@ Results may not be displayed if it takes longer than 3 seconds to get a paged re
 | Parameters ||
 |---|---|
 | `searchText` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): search text to be used. This value cannot be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to manage the search results: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to manage the search results: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -666,9 +666,9 @@ Results may not be displayed if it takes longer than 3 seconds to get a paged re
 |---|---|
 | `suggestedMediaSetId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the media set ID of the suggestion that the user wants to search. This value cannot be `null`. |
 | `fallbackSearchText` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: optional search text to be used when `suggestedMediaSetId` is not useful. This value may be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): containing keys to manage the search results: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): containing keys to manage the search results: - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` . This value cannot be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: `https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#` to check if request has been cancelled. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -693,7 +693,7 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 
 | Return ||
@@ -725,9 +725,9 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: This value may be `null`. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -759,9 +759,9 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: This value may be `null`. |
+| `opts` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -797,11 +797,11 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `opts` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: This value may be `null`. |
+| `opts` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: This value may be `null`. |
+| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -836,11 +836,11 @@ Implementation is provided by the parent class. Cannot be overridden.
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
-| `queryArgs` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: This value may be `null`. |
+| `queryArgs` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: This value may be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -870,7 +870,7 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
@@ -900,13 +900,13 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#)?: This value may be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -930,8 +930,8 @@ Implementation is provided by the parent class. Throws by default, and cannot be
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#): This value cannot be `null`. |
-| `values` | [ContentValues](https://developer.android.com/reference/kotlin/android/content/ContentValues.html#)!: This value cannot be `null`. |
+| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
+| `values` | [ContentValues](../android/content/ContentValues.md)!: This value cannot be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |

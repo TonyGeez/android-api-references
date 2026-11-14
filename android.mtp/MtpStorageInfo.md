@@ -4,7 +4,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # MtpStorageInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/mtp/MtpStorageInfo "View this page in Java") 
+Kotlin| [Java](../android/mtp/MtpStorageInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MtpStorageInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.mtp.MtpStorageInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo#) |
+| ↳ | [android.mtp.MtpStorageInfo](../android/mtp/MtpStorageInfo.md) |
 
 This class encapsulates information about a storage unit on an MTP device. This corresponds to the StorageInfo Dataset described in section 5.2.2 of the MTP specification.
 
@@ -21,12 +21,12 @@ This class encapsulates information about a storage unit on an MTP device. This 
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDescription](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo#getDescription())`()` Returns the description string for the storage unit. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFreeSpace](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo#getFreeSpace())`()` Returns the amount of free space in the storage unit in bytes |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMaxCapacity](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo#getMaxCapacity())`()` Returns the maximum storage capacity for the storage unit in bytes |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDescription](../android/mtp/MtpStorageInfo.md))`()` Returns the description string for the storage unit. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFreeSpace](../android/mtp/MtpStorageInfo.md))`()` Returns the amount of free space in the storage unit in bytes |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMaxCapacity](../android/mtp/MtpStorageInfo.md))`()` Returns the maximum storage capacity for the storage unit in bytes |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStorageId](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo#getStorageId())`()` Returns the storage ID for the storage unit. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVolumeIdentifier](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo#getVolumeIdentifier())`()` Returns the volume identifier for the storage unit |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStorageId](../android/mtp/MtpStorageInfo.md))`()` Returns the storage ID for the storage unit. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVolumeIdentifier](../android/mtp/MtpStorageInfo.md))`()` Returns the volume identifier for the storage unit |
 
 ## Public methods
 

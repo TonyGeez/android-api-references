@@ -8,11 +8,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 interface ManagedBlocker
 ```
 
-| [java.util.concurrent.ForkJoinPool.ManagedBlocker](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker#) |
+| [java.util.concurrent.ForkJoinPool.ManagedBlocker](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md) |
 
-Interface for extending managed parallelism for tasks running in [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool) s.
+Interface for extending managed parallelism for tasks running in [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md) s.
 
-A`ManagedBlocker`provides two methods. Method [isReleasable](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker#isReleasable())must return`true`if blocking is not necessary. Method [block](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker#block())blocks the current thread if necessary (perhaps internally invoking`isReleasable`before actually blocking). These actions are performed by any thread invoking [java.util.concurrent.ForkJoinPool#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)). The unusual methods in this API accommodate synchronizers that may, but don't usually, block for long periods. Similarly, they allow more efficient internal handling of cases in which additional workers may be, but usually are not, needed to ensure sufficient parallelism. Toward this end, implementations of method`isReleasable`must be amenable to repeated invocation. Neither method is invoked after a prior invocation of`isReleasable`or`block`returns`true`.
+A`ManagedBlocker`provides two methods. Method [isReleasable](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md))must return`true`if blocking is not necessary. Method [block](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md))blocks the current thread if necessary (perhaps internally invoking`isReleasable`before actually blocking). These actions are performed by any thread invoking [java.util.concurrent.ForkJoinPool#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)](../java/util/concurrent/ForkJoinPool.md)). The unusual methods in this API accommodate synchronizers that may, but don't usually, block for long periods. Similarly, they allow more efficient internal handling of cases in which additional workers may be, but usually are not, needed to ensure sufficient parallelism. Toward this end, implementations of method`isReleasable`must be amenable to repeated invocation. Neither method is invoked after a prior invocation of`isReleasable`or`block`returns`true`.
 
 For example, here is a ManagedBlocker based on a ReentrantLock: 
 
@@ -57,8 +57,8 @@ Here is a class that possibly blocks waiting for an item on a given queue:
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [block](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker#block())`()` Possibly blocks the current thread, for example waiting for a lock or condition. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReleasable](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.ManagedBlocker#isReleasable())`()` Returns`true`if blocking is unnecessary. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [block](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md))`()` Possibly blocks the current thread, for example waiting for a lock or condition. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReleasable](../java/util/concurrent/ForkJoinPool.ManagedBlocker.md))`()` Returns`true`if blocking is unnecessary. |
 
 ## Public methods
 

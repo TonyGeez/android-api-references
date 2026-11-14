@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothSocketSettings
 
-Kotlin| [Java](https://developer.android.com/reference/android/bluetooth/BluetoothSocketSettings "View this page in Java") 
+Kotlin| [Java](../android/bluetooth/BluetoothSocketSettings.md) 
 | --- | --- |
 
 ```
@@ -13,29 +13,29 @@ class BluetoothSocketSettings
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothSocketSettings](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#) |
+| ↳ | [android.bluetooth.BluetoothSocketSettings](../android/bluetooth/BluetoothSocketSettings.md) |
 
 Defines parameters for creating Bluetooth server and client socket channels.
 
-Used with [BluetoothAdapter.listenUsingSocketSettings](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings))to create a server socket and [BluetoothDevice.createUsingSocketSettings](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createUsingSocketSettings(android.bluetooth.BluetoothSocketSettings))to create a client socket.
+Used with [BluetoothAdapter.listenUsingSocketSettings](../android/bluetooth/BluetoothAdapter.md))to create a server socket and [BluetoothDevice.createUsingSocketSettings](../android/bluetooth/BluetoothDevice.md))to create a client socket.
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings.Builder) Builder for [BluetoothSocketSettings](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#). |
+| | [Builder](../android/bluetooth/BluetoothSocketSettings.Builder.md) Builder for [BluetoothSocketSettings](../android/bluetooth/BluetoothSocketSettings.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getL2capPsm](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getL2capPsm())`()` Returns the L2CAP PSM value used for a BluetoothSocket#TYPE_LE socket. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getRfcommServiceName](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getRfcommServiceName())`()` Returns the RFCOMM service name used for a BluetoothSocket#TYPE_RFCOMM socket. |
-| [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)? | [getRfcommUuid](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getRfcommUuid())`()` Returns the RFCOMM service UUID used for a BluetoothSocket#TYPE_RFCOMM socket. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getL2capPsm](../android/bluetooth/BluetoothSocketSettings.md))`()` Returns the L2CAP PSM value used for a BluetoothSocket#TYPE_LE socket. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getRfcommServiceName](../android/bluetooth/BluetoothSocketSettings.md))`()` Returns the RFCOMM service name used for a BluetoothSocket#TYPE_RFCOMM socket. |
+| [UUID](../java/util/UUID.md)? | [getRfcommUuid](../android/bluetooth/BluetoothSocketSettings.md))`()` Returns the RFCOMM service UUID used for a BluetoothSocket#TYPE_RFCOMM socket. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSocketType](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#getSocketType())`()` Returns the type of the Bluetooth socket. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuthenticationRequired](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#isAuthenticationRequired())`()` Checks if authentication is enabled for the Bluetooth socket. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEncryptionRequired](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#isEncryptionRequired())`()` Checks if encryption is enabled for the Bluetooth socket. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSocketType](../android/bluetooth/BluetoothSocketSettings.md))`()` Returns the type of the Bluetooth socket. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuthenticationRequired](../android/bluetooth/BluetoothSocketSettings.md))`()` Checks if authentication is enabled for the Bluetooth socket. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEncryptionRequired](../android/bluetooth/BluetoothSocketSettings.md))`()` Checks if encryption is enabled for the Bluetooth socket. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings#toString())`()` Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothSocketSettings parameter current value. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/bluetooth/BluetoothSocketSettings.md))`()` Returns a [String](../java/lang/String.md) that describes each BluetoothSocketSettings parameter current value. |
 
 ## Public methods
 
@@ -91,7 +91,7 @@ Defaults to`BluetoothSocket#TYPE_RFCOMM`.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.bluetooth.BluetoothSocket#TYPE_RFCOMM](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_RFCOMM:kotlin.Int), [android.bluetooth.BluetoothSocket#TYPE_SCO](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_SCO:kotlin.Int), [android.bluetooth.BluetoothSocket#TYPE_L2CAP](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_L2CAP:kotlin.Int), or [android.bluetooth.BluetoothSocket#TYPE_LE](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#TYPE_LE:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.bluetooth.BluetoothSocket#TYPE_RFCOMM](../android/bluetooth/BluetoothSocket.md), [android.bluetooth.BluetoothSocket#TYPE_SCO](../android/bluetooth/BluetoothSocket.md), [android.bluetooth.BluetoothSocket#TYPE_L2CAP](../android/bluetooth/BluetoothSocket.md), or [android.bluetooth.BluetoothSocket#TYPE_LE](../android/bluetooth/BluetoothSocket.md) |
 
 ### isAuthenticationRequired
 
@@ -125,7 +125,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun toString(): String
 ```
 
-Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothSocketSettings parameter current value.
+Returns a [String](../java/lang/String.md) that describes each BluetoothSocketSettings parameter current value.
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------|

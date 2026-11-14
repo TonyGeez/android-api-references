@@ -5,7 +5,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # UrlResponseInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/http/UrlResponseInfo "View this page in Java") 
+Kotlin| [Java](../android/net/http/UrlResponseInfo.md) 
 | --- | --- |
 
 ```
@@ -14,28 +14,28 @@ abstract class UrlResponseInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.UrlResponseInfo](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#) |
+| ↳ | [android.net.http.UrlResponseInfo](../android/net/http/UrlResponseInfo.md) |
 
-Basic information about a response. Included in [UrlRequest.Callback](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback) callbacks. Each [onRedirectReceived()](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onRedirectReceived(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20kotlin.String))callback gets a different copy of`UrlResponseInfo`describing a particular redirect response.
+Basic information about a response. Included in [UrlRequest.Callback](../android/net/http/UrlRequest.Callback.md) callbacks. Each [onRedirectReceived()](../android/net/http/UrlRequest.Callback.md))callback gets a different copy of`UrlResponseInfo`describing a particular redirect response.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------|---|
-| [UrlResponseInfo](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#UrlResponseInfo())`()` <br /> |
+| [UrlResponseInfo](../android/net/http/UrlResponseInfo.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [HeaderBlock](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock) | [getHeaders](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#getHeaders())`()` Returns the response headers. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHttpStatusCode](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#getHttpStatusCode())`()` Returns the HTTP status code. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHttpStatusText](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#getHttpStatusText())`()` Returns the HTTP status text of the status line. |
+| abstract [HeaderBlock](../android/net/http/HeaderBlock.md) | [getHeaders](../android/net/http/UrlResponseInfo.md))`()` Returns the response headers. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHttpStatusCode](../android/net/http/UrlResponseInfo.md))`()` Returns the HTTP status code. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHttpStatusText](../android/net/http/UrlResponseInfo.md))`()` Returns the HTTP status text of the status line. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getNegotiatedProtocol](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#getNegotiatedProtocol())`()` Returns the protocol (for example 'quic/1+spdy/3') negotiated with the server. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getReceivedByteCount](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#getReceivedByteCount())`()` Returns a minimum count of bytes received from the network to process this request. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getUrl](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#getUrl())`()` Returns the URL the response is for. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getNegotiatedProtocol](../android/net/http/UrlResponseInfo.md))`()` Returns the protocol (for example 'quic/1+spdy/3') negotiated with the server. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getReceivedByteCount](../android/net/http/UrlResponseInfo.md))`()` Returns a minimum count of bytes received from the network to process this request. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getUrl](../android/net/http/UrlResponseInfo.md))`()` Returns the URL the response is for. |
 | --- | --- |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUrlChain](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#getUrlChain())`()` Returns the URL chain. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wasCached](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#wasCached())`()` Returns`true`if the response came from the cache, including requests that were revalidated over the network before being retrieved from the cache. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUrlChain](../android/net/http/UrlResponseInfo.md))`()` Returns the URL chain. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wasCached](../android/net/http/UrlResponseInfo.md))`()` Returns`true`if the response came from the cache, including requests that were revalidated over the network before being retrieved from the cache. |
 
 ## Public constructors
 
@@ -63,7 +63,7 @@ Returns the response headers.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------|
-| [HeaderBlock](https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock) | This value cannot be`null`. |
+| [HeaderBlock](../android/net/http/HeaderBlock.md) | This value cannot be`null`. |
 
 ### getHttpStatusCode
 
@@ -119,7 +119,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getReceivedByteCount(): Long
 ```
 
-Returns a minimum count of bytes received from the network to process this request. This count may ignore certain overheads (for example IP and TCP/UDP framing, SSL handshake and framing, proxy handling). This count is taken prior to decompression (for example GZIP) and includes headers and data from all redirects. This value may change (even for one [UrlResponseInfo](https://developer.android.com/reference/kotlin/android/net/http/UrlResponseInfo#) instance) as the request progresses until completion, when [onSucceeded()](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onSucceeded(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo)), [onFailed()](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)), or [onCanceled()](https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onCanceled(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo))is called.
+Returns a minimum count of bytes received from the network to process this request. This count may ignore certain overheads (for example IP and TCP/UDP framing, SSL handshake and framing, proxy handling). This count is taken prior to decompression (for example GZIP) and includes headers and data from all redirects. This value may change (even for one [UrlResponseInfo](../android/net/http/UrlResponseInfo.md) instance) as the request progresses until completion, when [onSucceeded()](../android/net/http/UrlRequest.Callback.md)), [onFailed()](../android/net/http/UrlRequest.Callback.md)), or [onCanceled()](../android/net/http/UrlRequest.Callback.md))is called.
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------|

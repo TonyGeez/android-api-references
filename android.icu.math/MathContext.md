@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # MathContext
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/math/MathContext "View this page in Java") 
+Kotlin| [Java](../android/icu/math/MathContext.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class MathContext : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.math.MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#) |
+| ↳ | [android.icu.math.MathContext](../android/icu/math/MathContext.md) |
 
-The`MathContext`immutable class encapsulates the settings understood by the operator methods of the [BigDecimal](https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal) class (and potentially other classes). Operator methods are those that effect an operation on a number or a pair of numbers.
+The`MathContext`immutable class encapsulates the settings understood by the operator methods of the [BigDecimal](../android/icu/math/BigDecimal.md) class (and potentially other classes). Operator methods are those that effect an operation on a number or a pair of numbers.
 
 The settings, which are not base-dependent, comprise:
 
@@ -38,40 +38,40 @@ The rounding mode constants have the same names and values as the constants of t
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENGINEERING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ENGINEERING:kotlin.Int) Standard floating point notation (with engineering exponential format, where the power of ten is a multiple of 3). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAIN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#PLAIN:kotlin.Int) Plain (fixed point) notation, without any exponent. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_CEILING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_CEILING:kotlin.Int) Rounding mode to round to a more positive number. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENGINEERING](../android/icu/math/MathContext.md) Standard floating point notation (with engineering exponential format, where the power of ten is a multiple of 3). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAIN](../android/icu/math/MathContext.md) Plain (fixed point) notation, without any exponent. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_CEILING](../android/icu/math/MathContext.md) Rounding mode to round to a more positive number. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_DOWN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_DOWN:kotlin.Int) Rounding mode to round towards zero. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_FLOOR](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_FLOOR:kotlin.Int) Rounding mode to round to a more negative number. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_DOWN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_DOWN:kotlin.Int) Rounding mode to round to nearest neighbor, where an equidistant value is rounded down. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_DOWN](../android/icu/math/MathContext.md) Rounding mode to round towards zero. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_FLOOR](../android/icu/math/MathContext.md) Rounding mode to round to a more negative number. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_DOWN](../android/icu/math/MathContext.md) Rounding mode to round to nearest neighbor, where an equidistant value is rounded down. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_EVEN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_EVEN:kotlin.Int) Rounding mode to round to nearest neighbor, where an equidistant value is rounded to the nearest even neighbor. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_UP](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_UP:kotlin.Int) Rounding mode to round to nearest neighbor, where an equidistant value is rounded up. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UNNECESSARY](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_UNNECESSARY:kotlin.Int) Rounding mode to assert that no rounding is necessary. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_EVEN](../android/icu/math/MathContext.md) Rounding mode to round to nearest neighbor, where an equidistant value is rounded to the nearest even neighbor. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_HALF_UP](../android/icu/math/MathContext.md) Rounding mode to round to nearest neighbor, where an equidistant value is rounded up. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UNNECESSARY](../android/icu/math/MathContext.md) Rounding mode to assert that no rounding is necessary. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UP](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_UP:kotlin.Int) Rounding mode to round away from zero. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCIENTIFIC](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#SCIENTIFIC:kotlin.Int) Standard floating point notation (with scientific exponential format, where there is one digit before any decimal point). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUND_UP](../android/icu/math/MathContext.md) Rounding mode to round away from zero. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCIENTIFIC](../android/icu/math/MathContext.md) Standard floating point notation (with scientific exponential format, where there is one digit before any decimal point). |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#MathContext(kotlin.Int))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with a specified precision. |
-| [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#MathContext(kotlin.Int,%20kotlin.Int))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setform:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with a specified precision and form. |
-| [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#MathContext(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setform:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setlostdigits:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructs a new`MathContext`with a specified precision, form, and lostDigits setting. |
-| [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#MathContext(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setform:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setlostdigits:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `setroundingmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with a specified precision, form, lostDigits, and roundingMode setting. |
+| [MathContext](../android/icu/math/MathContext.md))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with a specified precision. |
+| [MathContext](../android/icu/math/MathContext.md))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setform:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with a specified precision and form. |
+| [MathContext](../android/icu/math/MathContext.md))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setform:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setlostdigits:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructs a new`MathContext`with a specified precision, form, and lostDigits setting. |
+| [MathContext](../android/icu/math/MathContext.md))`(`setdigits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setform:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setlostdigits:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `setroundingmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with a specified precision, form, lostDigits, and roundingMode setting. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDigits](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getDigits())`()` Returns the digits setting. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getForm](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getForm())`()` Returns the form setting. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLostDigits](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getLostDigits())`()` Returns the lostDigits setting. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDigits](../android/icu/math/MathContext.md))`()` Returns the digits setting. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getForm](../android/icu/math/MathContext.md))`()` Returns the form setting. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLostDigits](../android/icu/math/MathContext.md))`()` Returns the lostDigits setting. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoundingMode](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#getRoundingMode())`()` Returns the roundingMode setting. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#toString())`()` Returns the`MathContext`as a readable string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoundingMode](../android/icu/math/MathContext.md))`()` Returns the roundingMode setting. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/math/MathContext.md))`()` Returns the`MathContext`as a readable string. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MathContext](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#)! | [DEFAULT](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#DEFAULT:android.icu.math.MathContext) A`MathContext`object initialized to the default settings for general-purpose arithmetic. |
+| static [MathContext](../android/icu/math/MathContext.md)! | [DEFAULT](../android/icu/math/MathContext.md) A`MathContext`object initialized to the default settings for general-purpose arithmetic. |
 
 ## Constants
 
@@ -89,8 +89,8 @@ Standard floating point notation (with engineering exponential format, where the
 
 **See Also**
 
-- [#PLAIN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#PLAIN:kotlin.Int)
-- [#SCIENTIFIC](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#SCIENTIFIC:kotlin.Int) 
+- [#PLAIN](../android/icu/math/MathContext.md)
+- [#SCIENTIFIC](../android/icu/math/MathContext.md) 
 
 ### PLAIN
 
@@ -106,8 +106,8 @@ Plain (fixed point) notation, without any exponent. Used as a setting to control
 
 **See Also**
 
-- [#ENGINEERING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ENGINEERING:kotlin.Int)
-- [#SCIENTIFIC](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#SCIENTIFIC:kotlin.Int) 
+- [#ENGINEERING](../android/icu/math/MathContext.md)
+- [#SCIENTIFIC](../android/icu/math/MathContext.md) 
 
 ### ROUND_CEILING
 
@@ -237,8 +237,8 @@ Standard floating point notation (with scientific exponential format, where ther
 
 **See Also**
 
-- [#ENGINEERING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ENGINEERING:kotlin.Int)
-- [#PLAIN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#PLAIN:kotlin.Int)
+- [#ENGINEERING](../android/icu/math/MathContext.md)
+- [#PLAIN](../android/icu/math/MathContext.md)
 
 ## Public constructors
 
@@ -250,7 +250,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 MathContext(setdigits: Int)
 ```
 
-Constructs a new`MathContext`with a specified precision. The other settings are set to the default values (see [DEFAULT](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#DEFAULT:android.icu.math.MathContext)). An`IllegalArgumentException`is thrown if the`setdigits`parameter is out of range (\<0 or \>999999999).
+Constructs a new`MathContext`with a specified precision. The other settings are set to the default values (see [DEFAULT](../android/icu/math/MathContext.md)). An`IllegalArgumentException`is thrown if the`setdigits`parameter is out of range (\<0 or \>999999999).
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -270,7 +270,7 @@ MathContext(
     setform: Int)
 ```
 
-Constructs a new`MathContext`with a specified precision and form. The other settings are set to the default values (see [DEFAULT](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#DEFAULT:android.icu.math.MathContext)). An`IllegalArgumentException`is thrown if the`setdigits`parameter is out of range (\<0 or \>999999999), or if the value given for the`setform`parameter is not one of the appropriate constants.
+Constructs a new`MathContext`with a specified precision and form. The other settings are set to the default values (see [DEFAULT](../android/icu/math/MathContext.md)). An`IllegalArgumentException`is thrown if the`setdigits`parameter is out of range (\<0 or \>999999999), or if the value given for the`setform`parameter is not one of the appropriate constants.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -292,7 +292,7 @@ MathContext(
     setlostdigits: Boolean)
 ```
 
-Constructs a new`MathContext`with a specified precision, form, and lostDigits setting. The roundingMode setting is set to its default value (see [DEFAULT](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#DEFAULT:android.icu.math.MathContext)). An`IllegalArgumentException`is thrown if the`setdigits`parameter is out of range (\<0 or \>999999999), or if the value given for the`setform`parameter is not one of the appropriate constants.
+Constructs a new`MathContext`with a specified precision, form, and lostDigits setting. The roundingMode setting is set to its default value (see [DEFAULT](../android/icu/math/MathContext.md)). An`IllegalArgumentException`is thrown if the`setdigits`parameter is out of range (\<0 or \>999999999), or if the value given for the`setform`parameter is not one of the appropriate constants.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -355,7 +355,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getForm(): Int
 ```
 
-Returns the form setting. This will be one of [ENGINEERING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ENGINEERING:kotlin.Int), [PLAIN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#PLAIN:kotlin.Int), or [SCIENTIFIC](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#SCIENTIFIC:kotlin.Int).
+Returns the form setting. This will be one of [ENGINEERING](../android/icu/math/MathContext.md), [PLAIN](../android/icu/math/MathContext.md), or [SCIENTIFIC](../android/icu/math/MathContext.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------|
@@ -383,7 +383,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getRoundingMode(): Int
 ```
 
-Returns the roundingMode setting. This will be one of [ROUND_CEILING](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_CEILING:kotlin.Int), [ROUND_DOWN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_DOWN:kotlin.Int), [ROUND_FLOOR](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_FLOOR:kotlin.Int), [ROUND_HALF_DOWN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_DOWN:kotlin.Int), [ROUND_HALF_EVEN](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_EVEN:kotlin.Int), [ROUND_HALF_UP](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_UP:kotlin.Int), [ROUND_UNNECESSARY](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_UNNECESSARY:kotlin.Int), or [ROUND_UP](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_UP:kotlin.Int).
+Returns the roundingMode setting. This will be one of [ROUND_CEILING](../android/icu/math/MathContext.md), [ROUND_DOWN](../android/icu/math/MathContext.md), [ROUND_FLOOR](../android/icu/math/MathContext.md), [ROUND_HALF_DOWN](../android/icu/math/MathContext.md), [ROUND_HALF_EVEN](../android/icu/math/MathContext.md), [ROUND_HALF_UP](../android/icu/math/MathContext.md), [ROUND_UNNECESSARY](../android/icu/math/MathContext.md), or [ROUND_UP](../android/icu/math/MathContext.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------|
@@ -428,5 +428,5 @@ static val DEFAULT: MathContext!
 A`MathContext`object initialized to the default settings for general-purpose arithmetic. That is,`digits=9 form=SCIENTIFIC lostDigits=false roundingMode=ROUND_HALF_UP`. 
 **See Also**
 
-- [#SCIENTIFIC](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#SCIENTIFIC:kotlin.Int)
-- [#ROUND_HALF_UP](https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_UP:kotlin.Int)
+- [#SCIENTIFIC](../android/icu/math/MathContext.md)
+- [#ROUND_HALF_UP](../android/icu/math/MathContext.md)

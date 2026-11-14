@@ -9,7 +9,7 @@ class RemoveBlobResponse : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.RemoveBlobResponse](https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#) |
+| ↳ | [android.app.appsearch.RemoveBlobResponse](../android/app/appsearch/RemoveBlobResponse.md) |
 
 Results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#removeBlob(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`, containing the outcome of the removal of each handles.
 
@@ -28,13 +28,13 @@ This class is used to retrieve the result of a batch removal operation on a coll
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [AppSearchBatchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult)\< [AppSearchBlobHandle](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle)!, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#getResult()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult` object containing the results of the removal operation for each `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle`. |
+| [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md)\< [AppSearchBlobHandle](../android/app/appsearch/AppSearchBlobHandle.md)!, [Void](../java/lang/Void.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#getResult()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult` object containing the results of the removal operation for each `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [RemoveBlobResponse](https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RemoveBlobResponse](../android/app/appsearch/RemoveBlobResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveBlobResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -51,7 +51,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/app/appsearch/
 
 | Parameters ||
 |---|---|
-| `result` | [AppSearchBatchResult](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult)\< [AppSearchBlobHandle](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle)!, [Void](https://developer.android.com/reference/kotlin/java/lang/Void.html#)!\>: This value cannot be `null`. |
+| `result` | [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md)\< [AppSearchBlobHandle](../android/app/appsearch/AppSearchBlobHandle.md)!, [Void](../java/lang/Void.md)!\>: This value cannot be `null`. |
 
 ## Public methods
 
@@ -99,7 +99,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

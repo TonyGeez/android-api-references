@@ -3,7 +3,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # PageMatchBounds
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/pdf/models/PageMatchBounds "View this page in Java")
+Kotlin | [Java](../android/graphics/pdf/models/PageMatchBounds.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class PageMatchBounds : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.models.PageMatchBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#) |
+| ↳ | [android.graphics.pdf.models.PageMatchBounds](../android/graphics/pdf/models/PageMatchBounds.md) |
 
 Represents the bounds of a single search match on a page of the PDF document.
 
@@ -29,14 +29,14 @@ Represents the bounds of a single search match on a page of the PDF document.
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#getBounds()()` Represents the `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` bounds of a match. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#getBounds()()` Represents the `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` bounds of a match. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#getTextStartIndex()()` Gets the starting index of the match found on the page. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PageMatchBounds](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PageMatchBounds](../android/graphics/pdf/models/PageMatchBounds.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/PageMatchBounds#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -55,7 +55,7 @@ Creates a new instance of `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `bounds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)!\>: Bounds of the text match. This value cannot be `null`. |
+| `bounds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\>: Bounds of the text match. This value cannot be `null`. |
 | `textStartIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): starting index of the text match. |
 
 | Exceptions ||
@@ -126,7 +126,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

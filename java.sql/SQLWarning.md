@@ -11,12 +11,12 @@ open class SQLWarning : SQLException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.sql.SQLException](../java/sql/SQLException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.sql.SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#) |
+| | | | ↳ | [java.sql.SQLWarning](../java/sql/SQLWarning.md) |
 
-| Known Direct Subclasses [DataTruncation](https://developer.android.com/reference/kotlin/java/sql/DataTruncation) |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DataTruncation](https://developer.android.com/reference/kotlin/java/sql/DataTruncation) | An exception thrown as a`DataTruncation`exception (on writes) or reported as a`DataTruncation`warning (on reads) when a data values is unexpectedly truncated for reasons other than its having execeeded`MaxFieldSize`. | |
+| Known Direct Subclasses [DataTruncation](../java/sql/DataTruncation.md) |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DataTruncation](../java/sql/DataTruncation.md) | An exception thrown as a`DataTruncation`exception (on writes) or reported as a`DataTruncation`warning (on reads) when a data values is unexpectedly truncated for reasons other than its having execeeded`MaxFieldSize`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An exception that provides information on database access warnings. Warnings are silently chained to the object whose method caused it to be reported.
@@ -27,23 +27,23 @@ Warnings may be retrieved from`Connection`,`Statement`, and`ResultSet`objects. T
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning())`()` Constructs a`SQLWarning`object. |
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`. |
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning(kotlin.String,%20kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`and`SQLState`. |
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`vendorCode`. |
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`cause`. |
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning(kotlin.String,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`and`cause`. |
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#SQLWarning(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`cause`. |
+| [SQLWarning](../java/sql/SQLWarning.md))`()` Constructs a`SQLWarning`object. |
+| [SQLWarning](../java/sql/SQLWarning.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`. |
+| [SQLWarning](../java/sql/SQLWarning.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`and`SQLState`. |
+| [SQLWarning](../java/sql/SQLWarning.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`vendorCode`. |
+| [SQLWarning](../java/sql/SQLWarning.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
+| [SQLWarning](../java/sql/SQLWarning.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`cause`. |
+| [SQLWarning](../java/sql/SQLWarning.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`reason`and`cause`. |
+| [SQLWarning](../java/sql/SQLWarning.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLWarning`object with a given`cause`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#)! | [getNextWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#getNextWarning())`()` Retrieves the warning chained to this`SQLWarning`object by`setNextWarning`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#setNextWarning(java.sql.SQLWarning))`(`w:` ` [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#)!`)` Adds a`SQLWarning`object to the end of the chain. |
+| open [SQLWarning](../java/sql/SQLWarning.md)! | [getNextWarning](../java/sql/SQLWarning.md))`()` Retrieves the warning chained to this`SQLWarning`object by`setNextWarning`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextWarning](../java/sql/SQLWarning.md))`(`w:` ` [SQLWarning](../java/sql/SQLWarning.md)!`)` Adds a`SQLWarning`object to the end of the chain. |
 
 | Inherited functions ||
 |---|---|
-| From class [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](https://developer.android.com/reference/kotlin/java/sql/SQLException#getErrorCode())`()` <br /> Retrieves the vendor-specific exception code for this`SQLException`object. <br /> | | [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException)! | [getNextException](https://developer.android.com/reference/kotlin/java/sql/SQLException#getNextException())`()` <br /> Retrieves the exception chained to this`SQLException`object by setNextException(SQLException ex). <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLState](https://developer.android.com/reference/kotlin/java/sql/SQLException#getSQLState())`()` <br /> Retrieves the SQLState for this`SQLException`object. <br /> | | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!> | [iterator](https://developer.android.com/reference/kotlin/java/sql/SQLException#iterator())`()` <br /> Returns an iterator over the chained SQLExceptions. The iterator will be used to iterate over each SQLException and its underlying cause (if any). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextException](https://developer.android.com/reference/kotlin/java/sql/SQLException#setNextException(java.sql.SQLException))`(`ex:` ` [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException)!`)` <br /> Adds an`SQLException`object to the end of the chain. <br /> | ||
+| From class [SQLException](../java/sql/SQLException.md) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorCode](../java/sql/SQLException.md))`()` <br /> Retrieves the vendor-specific exception code for this`SQLException`object. <br /> | | [SQLException](../java/sql/SQLException.md)! | [getNextException](../java/sql/SQLException.md))`()` <br /> Retrieves the exception chained to this`SQLException`object by setNextException(SQLException ex). <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLState](../java/sql/SQLException.md))`()` <br /> Retrieves the SQLState for this`SQLException`object. <br /> | | [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!> | [iterator](../java/sql/SQLException.md))`()` <br /> Returns an iterator over the chained SQLExceptions. The iterator will be used to iterate over each SQLException and its underlying cause (if any). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextException](../java/sql/SQLException.md))`(`ex:` ` [SQLException](../java/sql/SQLException.md)!`)` <br /> Adds an`SQLException`object to the end of the chain. <br /> | ||
 
 ## Public constructors
 
@@ -55,7 +55,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 SQLWarning()
 ```
 
-Constructs a`SQLWarning`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLWarning`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 
@@ -67,7 +67,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 SQLWarning(reason: String!)
 ```
 
-Constructs a`SQLWarning`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLWarning`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 
@@ -85,7 +85,7 @@ SQLWarning(
     SQLState: String!)
 ```
 
-Constructs a`SQLWarning`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method. The vendor code is initialized to 0.
+Constructs a`SQLWarning`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method. The vendor code is initialized to 0.
 
 <br />
 
@@ -105,7 +105,7 @@ SQLWarning(
     vendorCode: Int)
 ```
 
-Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLWarning`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 
@@ -211,11 +211,11 @@ Retrieves the warning chained to this`SQLWarning`object by`setNextWarning`.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|
-| [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#)! | the next`SQLException`in the chain;`null`if none |
+| [SQLWarning](../java/sql/SQLWarning.md)! | the next`SQLException`in the chain;`null`if none |
 
 **See Also**
 
-- [#setNextWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#setNextWarning(java.sql.SQLWarning)) 
+- [#setNextWarning](../java/sql/SQLWarning.md)) 
 
 ### setNextWarning
 
@@ -229,8 +229,8 @@ Adds a`SQLWarning`object to the end of the chain.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------|
-| `w` | [SQLWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#)!:the new end of the`SQLException`chain |
+| `w` | [SQLWarning](../java/sql/SQLWarning.md)!:the new end of the`SQLException`chain |
 
 **See Also**
 
-- [#getNextWarning](https://developer.android.com/reference/kotlin/java/sql/SQLWarning#getNextWarning())
+- [#getNextWarning](../java/sql/SQLWarning.md))

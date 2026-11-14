@@ -4,14 +4,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # OnShareTargetSelectedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/ShareActionProvider.OnShareTargetSelectedListener "View this page in Java") 
+Kotlin| [Java](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md) 
 | --- | --- |
 
 ```
 interface OnShareTargetSelectedListener
 ```
 
-| [android.widget.ShareActionProvider.OnShareTargetSelectedListener](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider.OnShareTargetSelectedListener#) |
+| [android.widget.ShareActionProvider.OnShareTargetSelectedListener](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md) |
 
 Listener for the event of selecting a share target.
 
@@ -19,7 +19,7 @@ Listener for the event of selecting a share target.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onShareTargetSelected](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider.OnShareTargetSelectedListener#onShareTargetSelected(android.widget.ShareActionProvider,%20android.content.Intent))`(`source:` ` [ShareActionProvider](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider)!`, `intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Called when a share target has been selected. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onShareTargetSelected](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md))`(`source:` ` [ShareActionProvider](../android/widget/ShareActionProvider.md)!`, `intent:` ` [Intent](../android/content/Intent.md)!`)` Called when a share target has been selected. |
 
 ## Public methods
 
@@ -42,8 +42,8 @@ Called when a share target has been selected. The client can decide whether to p
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [ShareActionProvider](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider)!:The source of the notification. |
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent for launching the chosen share target. |
+| `source` | [ShareActionProvider](../android/widget/ShareActionProvider.md)!:The source of the notification. |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent for launching the chosen share target. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # TvInteractiveAppManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager "View this page in Java") 
+Kotlin| [Java](../android/media/tv/interactive/TvInteractiveAppManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class TvInteractiveAppManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.tv.interactive.TvInteractiveAppManager](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#) |
+| ↳ | [android.media.tv.interactive.TvInteractiveAppManager](../android/media/tv/interactive/TvInteractiveAppManager.md) |
 
 Central system API to the overall TV interactive application framework (TIAF) architecture, which arbitrates interaction between Android applications and TV interactive apps.
 
@@ -21,62 +21,62 @@ Central system API to the overall TV interactive application framework (TIAF) ar
 
 | Nested classes ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback) Callback used to monitor status of the TV Interactive App. |
+| abstract | [TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md) Callback used to monitor status of the TV Interactive App. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_APP_LINK_COMMAND](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ACTION_APP_LINK_COMMAND:kotlin.String) Broadcast intent action to send app command to TV app. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_BACK_URI](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#APP_LINK_KEY_BACK_URI:kotlin.String) Key for back URI in app link command. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_CLASS_NAME](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#APP_LINK_KEY_CLASS_NAME:kotlin.String) Key for class name in app link. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_APP_LINK_COMMAND](../android/media/tv/interactive/TvInteractiveAppManager.md) Broadcast intent action to send app command to TV app. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_BACK_URI](../android/media/tv/interactive/TvInteractiveAppManager.md) Key for back URI in app link command. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_CLASS_NAME](../android/media/tv/interactive/TvInteractiveAppManager.md) Key for class name in app link. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_COMMAND_TYPE](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#APP_LINK_KEY_COMMAND_TYPE:kotlin.String) Key for command type in app link command. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#APP_LINK_KEY_PACKAGE_NAME:kotlin.String) Key for package name in app link. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_SERVICE_ID](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#APP_LINK_KEY_SERVICE_ID:kotlin.String) Key for service ID in app link command. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_COMMAND_TYPE](../android/media/tv/interactive/TvInteractiveAppManager.md) Key for command type in app link command. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_PACKAGE_NAME](../android/media/tv/interactive/TvInteractiveAppManager.md) Key for package name in app link. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [APP_LINK_KEY_SERVICE_ID](../android/media/tv/interactive/TvInteractiveAppManager.md) Key for service ID in app link command. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BLOCKED](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_BLOCKED:kotlin.Int) Error code for blocked contents. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_ENCRYPTED](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_ENCRYPTED:kotlin.Int) Error code when the key or module is missing for the encrypted channel. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NONE](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_NONE:kotlin.Int) No error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BLOCKED](../android/media/tv/interactive/TvInteractiveAppManager.md) Error code for blocked contents. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_ENCRYPTED](../android/media/tv/interactive/TvInteractiveAppManager.md) Error code when the key or module is missing for the encrypted channel. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NONE](../android/media/tv/interactive/TvInteractiveAppManager.md) No error. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_NOT_SUPPORTED:kotlin.Int) Error code for an unsupported channel. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_RESOURCE_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_RESOURCE_UNAVAILABLE:kotlin.Int) Error code when resource (e.g. tuner) is unavailable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_UNKNOWN:kotlin.Int) Unknown error code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_SUPPORTED](../android/media/tv/interactive/TvInteractiveAppManager.md) Error code for an unsupported channel. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_RESOURCE_UNAVAILABLE](../android/media/tv/interactive/TvInteractiveAppManager.md) Error code when resource (e.g. tuner) is unavailable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](../android/media/tv/interactive/TvInteractiveAppManager.md) Unknown error code. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN_CHANNEL](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_UNKNOWN_CHANNEL:kotlin.Int) Error code when the current channel is an unknown channel. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_WEAK_SIGNAL](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ERROR_WEAK_SIGNAL:kotlin.Int) Error code for weak signal. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_BI_INTERACTIVE_APP_TYPE](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTENT_KEY_BI_INTERACTIVE_APP_TYPE:kotlin.String) Intent key for broadcast-independent(BI) interactive app type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN_CHANNEL](../android/media/tv/interactive/TvInteractiveAppManager.md) Error code when the current channel is an unknown channel. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_WEAK_SIGNAL](../android/media/tv/interactive/TvInteractiveAppManager.md) Error code for weak signal. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_BI_INTERACTIVE_APP_TYPE](../android/media/tv/interactive/TvInteractiveAppManager.md) Intent key for broadcast-independent(BI) interactive app type. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_BI_INTERACTIVE_APP_URI](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTENT_KEY_BI_INTERACTIVE_APP_URI:kotlin.String) Intent key for broadcast-independent(BI) interactive app URI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_CHANNEL_URI](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTENT_KEY_CHANNEL_URI:kotlin.String) Intent key for TV channel URI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_COMMAND_TYPE](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTENT_KEY_COMMAND_TYPE:kotlin.String) Intent key for command type. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_BI_INTERACTIVE_APP_URI](../android/media/tv/interactive/TvInteractiveAppManager.md) Intent key for broadcast-independent(BI) interactive app URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_CHANNEL_URI](../android/media/tv/interactive/TvInteractiveAppManager.md) Intent key for TV channel URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_COMMAND_TYPE](../android/media/tv/interactive/TvInteractiveAppManager.md) Intent key for command type. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_INTERACTIVE_APP_SERVICE_ID](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTENT_KEY_INTERACTIVE_APP_SERVICE_ID:kotlin.String) Intent key for TV interactive app ID. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_TV_INPUT_ID](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTENT_KEY_TV_INPUT_ID:kotlin.String) Intent key for TV input ID. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_STATE_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTERACTIVE_APP_STATE_ERROR:kotlin.Int) Error state of interactive application. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_INTERACTIVE_APP_SERVICE_ID](../android/media/tv/interactive/TvInteractiveAppManager.md) Intent key for TV interactive app ID. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_KEY_TV_INPUT_ID](../android/media/tv/interactive/TvInteractiveAppManager.md) Intent key for TV input ID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_STATE_ERROR](../android/media/tv/interactive/TvInteractiveAppManager.md) Error state of interactive application. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_STATE_RUNNING](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTERACTIVE_APP_STATE_RUNNING:kotlin.Int) Running state of interactive application. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_STATE_STOPPED](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#INTERACTIVE_APP_STATE_STOPPED:kotlin.Int) Stopped (or not started) state of interactive application. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#SERVICE_STATE_ERROR:kotlin.Int) Error state of interactive app service. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_STATE_RUNNING](../android/media/tv/interactive/TvInteractiveAppManager.md) Running state of interactive application. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERACTIVE_APP_STATE_STOPPED](../android/media/tv/interactive/TvInteractiveAppManager.md) Stopped (or not started) state of interactive application. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_ERROR](../android/media/tv/interactive/TvInteractiveAppManager.md) Error state of interactive app service. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_PREPARING](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#SERVICE_STATE_PREPARING:kotlin.Int) Preparing state of interactive app service. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_READY](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#SERVICE_STATE_READY:kotlin.Int) Ready state of interactive app service. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_UNREALIZED](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#SERVICE_STATE_UNREALIZED:kotlin.Int) Unrealized state of interactive app service. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_PREPARING](../android/media/tv/interactive/TvInteractiveAppManager.md) Preparing state of interactive app service. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_READY](../android/media/tv/interactive/TvInteractiveAppManager.md) Ready state of interactive app service. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SERVICE_STATE_UNREALIZED](../android/media/tv/interactive/TvInteractiveAppManager.md) Unrealized state of interactive app service. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELETEXT_APP_STATE_ERROR](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#TELETEXT_APP_STATE_ERROR:kotlin.Int) State of Teletext app: error |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELETEXT_APP_STATE_HIDE](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#TELETEXT_APP_STATE_HIDE:kotlin.Int) State of Teletext app: hide |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELETEXT_APP_STATE_SHOW](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#TELETEXT_APP_STATE_SHOW:kotlin.Int) State of Teletext app: show |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELETEXT_APP_STATE_ERROR](../android/media/tv/interactive/TvInteractiveAppManager.md) State of Teletext app: error |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELETEXT_APP_STATE_HIDE](../android/media/tv/interactive/TvInteractiveAppManager.md) State of Teletext app: hide |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELETEXT_APP_STATE_SHOW](../android/media/tv/interactive/TvInteractiveAppManager.md) State of Teletext app: show |
 | --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo)!\> | [getAppLinkInfoList](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#getAppLinkInfoList())`()` Returns a list of available app link information. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvInteractiveAppServiceInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo)!\> | [getTvInteractiveAppServiceList](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#getTvInteractiveAppServiceList())`()` Returns the complete list of TV Interactive App service on the system. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#registerAppLinkInfo(kotlin.String,%20android.media.tv.interactive.AppLinkInfo))`(`tvIAppServiceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `appLinkInfo:` ` [AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo)`)` Registers an Android application link info record which can be used to launch the specific Android application by TV interactive App RTE. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md)!\> | [getAppLinkInfoList](../android/media/tv/interactive/TvInteractiveAppManager.md))`()` Returns a list of available app link information. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvInteractiveAppServiceInfo](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md)!\> | [getTvInteractiveAppServiceList](../android/media/tv/interactive/TvInteractiveAppManager.md))`()` Returns the complete list of TV Interactive App service on the system. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAppLinkInfo](../android/media/tv/interactive/TvInteractiveAppManager.md))`(`tvIAppServiceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `appLinkInfo:` ` [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md)`)` Registers an Android application link info record which can be used to launch the specific Android application by TV interactive App RTE. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#registerCallback(java.util.concurrent.Executor,%20android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback))`(`executor:` ` [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)`, `callback:` ` [TvInteractiveAppManager.TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback)`)` Registers a [TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendAppLinkCommand](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle))`(`tvIAppServiceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `command:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`)` Sends app link command. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#unregisterAppLinkInfo(kotlin.String,%20android.media.tv.interactive.AppLinkInfo))`(`tvIAppServiceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `appLinkInfo:` ` [AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo)`)` Unregisters an Android application link info record which can be used to launch the specific Android application by TV interactive App RTE. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](../android/media/tv/interactive/TvInteractiveAppManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [TvInteractiveAppManager.TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md)`)` Registers a [TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendAppLinkCommand](../android/media/tv/interactive/TvInteractiveAppManager.md))`(`tvIAppServiceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `command:` ` [Bundle](../android/os/Bundle.md)`)` Sends app link command. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAppLinkInfo](../android/media/tv/interactive/TvInteractiveAppManager.md))`(`tvIAppServiceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `appLinkInfo:` ` [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md)`)` Unregisters an Android application link info record which can be used to launch the specific Android application by TV interactive App RTE. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#unregisterCallback(android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback))`(`callback:` ` [TvInteractiveAppManager.TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback)`)` Unregisters the existing [TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCallback](../android/media/tv/interactive/TvInteractiveAppManager.md))`(`callback:` ` [TvInteractiveAppManager.TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md)`)` Unregisters the existing [TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md). |
 
 ## Constants
 
@@ -94,7 +94,7 @@ Broadcast intent action to send app command to TV app.
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md)) 
 
 ### APP_LINK_KEY_BACK_URI
 
@@ -112,7 +112,7 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md)) 
 
 ### APP_LINK_KEY_CLASS_NAME
 
@@ -130,7 +130,7 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md)) 
 
 ### APP_LINK_KEY_COMMAND_TYPE
 
@@ -148,7 +148,7 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md)) 
 
 ### APP_LINK_KEY_PACKAGE_NAME
 
@@ -166,7 +166,7 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md)) 
 
 ### APP_LINK_KEY_SERVICE_ID
 
@@ -184,7 +184,7 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md)) 
 
 ### ERROR_BLOCKED
 
@@ -298,10 +298,10 @@ Type: int
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle))
-- [#ACTION_APP_LINK_COMMAND](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ACTION_APP_LINK_COMMAND:kotlin.String)
-- [android.media.tv.interactive.TvInteractiveAppServiceInfo#getSupportedTypes()](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getSupportedTypes())
-- [android.media.tv.interactive.TvInteractiveAppView#createBiInteractiveApp(Uri, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView#createBiInteractiveApp(android.net.Uri,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md))
+- [#ACTION_APP_LINK_COMMAND](../android/media/tv/interactive/TvInteractiveAppManager.md)
+- [android.media.tv.interactive.TvInteractiveAppServiceInfo#getSupportedTypes()](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md))
+- [android.media.tv.interactive.TvInteractiveAppView#createBiInteractiveApp(Uri, Bundle)](../android/media/tv/interactive/TvInteractiveAppView.md)) 
 
 ### INTENT_KEY_BI_INTERACTIVE_APP_URI
 
@@ -319,9 +319,9 @@ Type: android.net.Uri
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle))
-- [#ACTION_APP_LINK_COMMAND](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ACTION_APP_LINK_COMMAND:kotlin.String)
-- [android.media.tv.interactive.TvInteractiveAppView#createBiInteractiveApp(Uri, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView#createBiInteractiveApp(android.net.Uri,%20android.os.Bundle)) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md))
+- [#ACTION_APP_LINK_COMMAND](../android/media/tv/interactive/TvInteractiveAppManager.md)
+- [android.media.tv.interactive.TvInteractiveAppView#createBiInteractiveApp(Uri, Bundle)](../android/media/tv/interactive/TvInteractiveAppView.md)) 
 
 ### INTENT_KEY_CHANNEL_URI
 
@@ -339,8 +339,8 @@ Type: android.net.Uri
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle))
-- [#ACTION_APP_LINK_COMMAND](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ACTION_APP_LINK_COMMAND:kotlin.String) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md))
+- [#ACTION_APP_LINK_COMMAND](../android/media/tv/interactive/TvInteractiveAppManager.md) 
 
 ### INTENT_KEY_COMMAND_TYPE
 
@@ -358,8 +358,8 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle))
-- [#ACTION_APP_LINK_COMMAND](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ACTION_APP_LINK_COMMAND:kotlin.String) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md))
+- [#ACTION_APP_LINK_COMMAND](../android/media/tv/interactive/TvInteractiveAppManager.md) 
 
 ### INTENT_KEY_INTERACTIVE_APP_SERVICE_ID
 
@@ -377,9 +377,9 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle))
-- [#ACTION_APP_LINK_COMMAND](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ACTION_APP_LINK_COMMAND:kotlin.String)
-- [android.media.tv.interactive.TvInteractiveAppServiceInfo#getId()](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getId()) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md))
+- [#ACTION_APP_LINK_COMMAND](../android/media/tv/interactive/TvInteractiveAppManager.md)
+- [android.media.tv.interactive.TvInteractiveAppServiceInfo#getId()](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md)) 
 
 ### INTENT_KEY_TV_INPUT_ID
 
@@ -397,8 +397,8 @@ Type: String
 
 **See Also**
 
-- [#sendAppLinkCommand(String, Bundle)](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#sendAppLinkCommand(kotlin.String,%20android.os.Bundle))
-- [#ACTION_APP_LINK_COMMAND](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager#ACTION_APP_LINK_COMMAND:kotlin.String) 
+- [#sendAppLinkCommand(String, Bundle)](../android/media/tv/interactive/TvInteractiveAppManager.md))
+- [#ACTION_APP_LINK_COMMAND](../android/media/tv/interactive/TvInteractiveAppManager.md) 
 
 ### INTERACTIVE_APP_STATE_ERROR
 
@@ -476,7 +476,7 @@ In this state, the interactive app service is ready, and interactive apps can be
 
 **See Also**
 
-- [android.media.tv.interactive.TvInteractiveAppView#startInteractiveApp()](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView#startInteractiveApp()) 
+- [android.media.tv.interactive.TvInteractiveAppView#startInteractiveApp()](../android/media/tv/interactive/TvInteractiveAppView.md)) 
 
 ### SERVICE_STATE_UNREALIZED
 
@@ -542,7 +542,7 @@ A package must declare its app link info in its manifest using meta-data tag, so
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo)!> | List of [AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo) for each package that deslares its app link information. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md)!> | List of [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md) for each package that deslares its app link information. This value cannot be`null`. |
 
 ### getTvInteractiveAppServiceList
 
@@ -556,7 +556,7 @@ Returns the complete list of TV Interactive App service on the system.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvInteractiveAppServiceInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo)!> | List of [TvInteractiveAppServiceInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo) for each TV Interactive App service that describes its meta information. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvInteractiveAppServiceInfo](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md)!> | List of [TvInteractiveAppServiceInfo](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md) for each TV Interactive App service that describes its meta information. This value cannot be`null`. |
 
 ### registerAppLinkInfo
 
@@ -573,8 +573,8 @@ Registers an Android application link info record which can be used to launch th
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tvIAppServiceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The ID of TV interactive service which the command to be sent to. The ID can be found in [TvInteractiveAppServiceInfo.getId()](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getId()). This value cannot be`null`. |
-| `appLinkInfo` | [AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo):The Android application link info record to be registered. This value cannot be`null`. |
+| `tvIAppServiceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The ID of TV interactive service which the command to be sent to. The ID can be found in [TvInteractiveAppServiceInfo.getId()](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md)). This value cannot be`null`. |
+| `appLinkInfo` | [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md):The Android application link info record to be registered. This value cannot be`null`. |
 
 ### registerCallback
 
@@ -587,12 +587,12 @@ fun registerCallback(
 ): Unit
 ```
 
-Registers a [TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback).
+Registers a [TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [TvInteractiveAppManager.TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback):A callback used to monitor status of the TV Interactive App services. This value cannot be`null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#):A [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that the status change will be delivered to. Callback and listener events are dispatched through this [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()). Otherwise, provide an [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#) that dispatches to an appropriate thread. This value cannot be`null`. |
+| `callback` | [TvInteractiveAppManager.TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md):A callback used to monitor status of the TV Interactive App services. This value cannot be`null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md):A [Executor](../java/util/concurrent/Executor.md) that the status change will be delivered to. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. This value cannot be`null`. |
 
 ### sendAppLinkCommand
 
@@ -609,8 +609,8 @@ Sends app link command.
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tvIAppServiceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The ID of TV interactive service which the command to be sent to. The ID can be found in [TvInteractiveAppServiceInfo.getId()](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getId()). This value cannot be`null`. |
-| `command` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#):The command to be sent. This value cannot be`null`. |
+| `tvIAppServiceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The ID of TV interactive service which the command to be sent to. The ID can be found in [TvInteractiveAppServiceInfo.getId()](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md)). This value cannot be`null`. |
+| `command` | [Bundle](../android/os/Bundle.md):The command to be sent. This value cannot be`null`. |
 
 ### unregisterAppLinkInfo
 
@@ -627,8 +627,8 @@ Unregisters an Android application link info record which can be used to launch 
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tvIAppServiceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The ID of TV interactive service which the command to be sent to. The ID can be found in [TvInteractiveAppServiceInfo.getId()](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppServiceInfo#getId()). This value cannot be`null`. |
-| `appLinkInfo` | [AppLinkInfo](https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo):The Android application link info record to be unregistered. This value cannot be`null`. |
+| `tvIAppServiceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The ID of TV interactive service which the command to be sent to. The ID can be found in [TvInteractiveAppServiceInfo.getId()](../android/media/tv/interactive/TvInteractiveAppServiceInfo.md)). This value cannot be`null`. |
+| `appLinkInfo` | [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md):The Android application link info record to be unregistered. This value cannot be`null`. |
 
 ### unregisterCallback
 
@@ -638,8 +638,8 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun unregisterCallback(callback: TvInteractiveAppManager.TvInteractiveAppCallback): Unit
 ```
 
-Unregisters the existing [TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback).
+Unregisters the existing [TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [TvInteractiveAppManager.TvInteractiveAppCallback](https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback):The existing callback to remove. This value cannot be`null`. |
+| `callback` | [TvInteractiveAppManager.TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.md):The existing callback to remove. This value cannot be`null`. |

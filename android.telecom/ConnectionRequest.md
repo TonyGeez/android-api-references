@@ -2,7 +2,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # ConnectionRequest
 
-Kotlin | [Java](https://developer.android.com/reference/android/telecom/ConnectionRequest "View this page in Java")
+Kotlin | [Java](../android/telecom/ConnectionRequest.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ConnectionRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.ConnectionRequest](https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#) |
+| ↳ | [android.telecom.ConnectionRequest](../android/telecom/ConnectionRequest.md) |
 
 Simple data container encapsulating a request to some entity to create a new `https://developer.android.com/reference/kotlin/android/telecom/Connection`.
 
@@ -29,12 +29,12 @@ Simple data container encapsulating a request to some entity to create a new `ht
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAccountHandle()()` The account which should be used to place the call. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAddress()()` The handle (e.g., phone number) to which the |
+| [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAccountHandle()()` The account which should be used to place the call. |
+| [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAddress()()` The handle (e.g., phone number) to which the |
 | --- | --- |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getExtras()()` Application-specific extra data. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!\>? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getParticipants()()` The participants to which the `https://developer.android.com/reference/kotlin/android/telecom/Connection` is to connect. |
-| [Connection.RttTextStream](https://developer.android.com/reference/kotlin/android/telecom/Connection.RttTextStream)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getRttTextStream()()` Gets the `https://developer.android.com/reference/kotlin/android/telecom/Connection.RttTextStream` object that should be used to send and receive RTT text to/from the in-call app. |
+| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getExtras()()` Application-specific extra data. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getParticipants()()` The participants to which the `https://developer.android.com/reference/kotlin/android/telecom/Connection` is to connect. |
+| [Connection.RttTextStream](../android/telecom/Connection.RttTextStream.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getRttTextStream()()` Gets the `https://developer.android.com/reference/kotlin/android/telecom/Connection.RttTextStream` object that should be used to send and receive RTT text to/from the in-call app. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getVideoState()()` Describes the video states supported by the client requesting the connection. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#isAdhocConferenceCall()()` <br /> |
@@ -45,7 +45,7 @@ Simple data container encapsulating a request to some entity to create a new `ht
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ConnectionRequest](https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#)!\> | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ConnectionRequest](../android/telecom/ConnectionRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -62,9 +62,9 @@ ConnectionRequest(
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle)!: The accountHandle which should be used to place the call. |
-| `handle` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The handle (e.g., phone number) to which the `https://developer.android.com/reference/kotlin/android/telecom/Connection` is to connect. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Application-specific extra data. |
+| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The accountHandle which should be used to place the call. |
+| `handle` | [Uri](../android/net/Uri.md)!: The handle (e.g., phone number) to which the `https://developer.android.com/reference/kotlin/android/telecom/Connection` is to connect. |
+| `extras` | [Bundle](../android/os/Bundle.md)!: Application-specific extra data. |
 | --- | --- |
 
 ### ConnectionRequest
@@ -81,9 +81,9 @@ ConnectionRequest(
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle)!: The accountHandle which should be used to place the call. |
-| `handle` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!: The handle (e.g., phone number) to which the `https://developer.android.com/reference/kotlin/android/telecom/Connection` is to connect. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: Application-specific extra data. |
+| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The accountHandle which should be used to place the call. |
+| `handle` | [Uri](../android/net/Uri.md)!: The handle (e.g., phone number) to which the `https://developer.android.com/reference/kotlin/android/telecom/Connection` is to connect. |
+| `extras` | [Bundle](../android/os/Bundle.md)!: Application-specific extra data. |
 | --- | --- |
 | `videoState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Determines the video state for the connection. |
 

@@ -4,14 +4,14 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnParameterChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/Equalizer.OnParameterChangeListener "View this page in Java") 
+Kotlin| [Java](../android/media/audiofx/Equalizer.OnParameterChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnParameterChangeListener
 ```
 
-| [android.media.audiofx.Equalizer.OnParameterChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.OnParameterChangeListener#) |
+| [android.media.audiofx.Equalizer.OnParameterChangeListener](../android/media/audiofx/Equalizer.OnParameterChangeListener.md) |
 
 The OnParameterChangeListener interface defines a method called by the Equalizer when a parameter value has changed.
 
@@ -19,7 +19,7 @@ The OnParameterChangeListener interface defines a method called by the Equalizer
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onParameterChange](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer.OnParameterChangeListener#onParameterChange(android.media.audiofx.Equalizer,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`effect:` ` [Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method called when a parameter value has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onParameterChange](../android/media/audiofx/Equalizer.OnParameterChangeListener.md))`(`effect:` ` [Equalizer](../android/media/audiofx/Equalizer.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method called when a parameter value has changed. |
 
 ## Public methods
 
@@ -41,9 +41,9 @@ Method called when a parameter value has changed. The method is called only if t
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `effect` | [Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer)!:the Equalizer on which the interface is registered. |
+| `effect` | [Equalizer](../android/media/audiofx/Equalizer.md)!:the Equalizer on which the interface is registered. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):status of the set parameter operation. |
-| `param1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):ID of the modified parameter. See [PARAM_BAND_LEVEL](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer#PARAM_BAND_LEVEL:kotlin.Int)... |
+| `param1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):ID of the modified parameter. See [PARAM_BAND_LEVEL](../android/media/audiofx/Equalizer.md)... |
 | --- | --- |
 | `param2` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):additional parameter qualifier (e.g the band for band level parameter). |
 | `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the new parameter value. |

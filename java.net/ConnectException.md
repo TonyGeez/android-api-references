@@ -11,11 +11,11 @@ open class ConnectException : SocketException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.SocketException](https://developer.android.com/reference/kotlin/java/net/SocketException) ||
-| | | | | ↳ | [java.net.ConnectException](https://developer.android.com/reference/kotlin/java/net/ConnectException#) |
+| | | | ↳ | [java.net.SocketException](../java/net/SocketException.md) ||
+| | | | | ↳ | [java.net.ConnectException](../java/net/ConnectException.md) |
 
 Signals that an error occurred while attempting to connect a socket to a remote address and port. Typically, the connection was refused remotely (e.g., no process is listening on the remote address/port).
 
@@ -23,8 +23,8 @@ Signals that an error occurred while attempting to connect a socket to a remote 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConnectException](https://developer.android.com/reference/kotlin/java/net/ConnectException#ConnectException())`()` Construct a new ConnectException with no detailed message. |
-| [ConnectException](https://developer.android.com/reference/kotlin/java/net/ConnectException#ConnectException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new ConnectException with the specified detail message as to why the connect error occurred. |
+| [ConnectException](../java/net/ConnectException.md))`()` Construct a new ConnectException with no detailed message. |
+| [ConnectException](../java/net/ConnectException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new ConnectException with the specified detail message as to why the connect error occurred. |
 
 ## Public constructors
 

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteFullException
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteFullException "View this page in Java") 
+Kotlin| [Java](../android/database/sqlite/SQLiteFullException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class SQLiteFullException : SQLiteException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.SQLException](https://developer.android.com/reference/kotlin/android/database/SQLException.html#) |||
-| | | | | ↳ | [android.database.sqlite.SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) ||
-| | | | | | ↳ | [android.database.sqlite.SQLiteFullException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteFullException#) |
+| | | | ↳ | [android.database.SQLException](../android/database/SQLException.md) |||
+| | | | | ↳ | [android.database.sqlite.SQLiteException](../android/database/sqlite/SQLiteException.md) ||
+| | | | | | ↳ | [android.database.sqlite.SQLiteFullException](../android/database/sqlite/SQLiteFullException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An exception that indicates that the SQLite database is full.
@@ -28,8 +28,8 @@ An exception that indicates that the SQLite database is full.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteFullException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteFullException#SQLiteFullException())`()` <br /> |
-| [SQLiteFullException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteFullException#SQLiteFullException(kotlin.String))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SQLiteFullException](../android/database/sqlite/SQLiteFullException.md))`()` <br /> |
+| [SQLiteFullException](../android/database/sqlite/SQLiteFullException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

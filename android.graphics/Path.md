@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Path
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/Path "View this page in Java")
+Kotlin | [Java](../android/graphics/Path.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Path
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Path](https://developer.android.com/reference/kotlin/android/graphics/Path#) |
+| ↳ | [android.graphics.Path](../android/graphics/Path.md) |
 
 The Path class encapsulates compound (multiple contour) geometric paths consisting of straight line segments, quadratic curves, and cubic curves. It can be drawn with canvas.drawPath(path, paint), either filled or stroked (based on the paint's Style), or it can be used for clipping or to draw text on a path.
 
@@ -61,10 +61,10 @@ The Path class encapsulates compound (multiple contour) geometric paths consisti
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#conicTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, weight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add a quadratic bezier from the last point, approaching control point (x1,y1), and ending at (x2,y2), weighted by `weight`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#cubicTo(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, x3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Add a cubic bezier from the last point, approaching control points (x1,y1) and (x2,y2), and ending at (x3,y3). |
-| open [Path.FillType](https://developer.android.com/reference/kotlin/android/graphics/Path.FillType) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getFillType()()` Return the path's fill type. |
+| open [Path.FillType](../android/graphics/Path.FillType.md) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getFillType()()` Return the path's fill type. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getGenerationId()()` Returns the generation ID of this path. |
-| open [PathIterator](https://developer.android.com/reference/kotlin/android/graphics/PathIterator) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getPathIterator()()` Returns an iterator over the segments of this path. |
+| open [PathIterator](../android/graphics/PathIterator.md) | `https://developer.android.com/reference/kotlin/android/graphics/Path#getPathIterator()()` Returns an iterator over the segments of this path. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#incReserve(kotlin.Int)(extraPtCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Hint to the path to prepare for adding more points. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Path#interpolate(android.graphics.Path,%20kotlin.Float,%20android.graphics.Path)(otherPath: https://developer.android.com/reference/kotlin/android/graphics/Path#, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, interpolatedPath: https://developer.android.com/reference/kotlin/android/graphics/Path#)` This method will linearly interpolate from this path to `otherPath` given the interpolation parameter `t`, returning the result in `interpolatedPath`. |
@@ -126,7 +126,7 @@ Create a new path, copying the contents from the src path.
 
 | Parameters ||
 |---|---|
-| `src` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#)?: The path to copy from when initializing the new path. This value may be `null`. |
+| `src` | [Path](../android/graphics/Path.md)?: The path to copy from when initializing the new path. This value may be `null`. |
 
 ## Public methods
 
@@ -146,7 +146,7 @@ Add the specified arc to the path as a new contour.
 
 | Parameters ||
 |---|---|
-| `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of oval defining the shape and size of the arc. This value cannot be `null`. |
+| `oval` | [RectF](../android/graphics/RectF.md): The bounds of oval defining the shape and size of the arc. This value cannot be `null`. |
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise |
 | --- | --- |
@@ -194,7 +194,7 @@ Add a closed circle contour to the path
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-coordinate of the center of a circle to add to the path |
 | `radius` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The radius of a circle to add to the path |
 | --- | --- |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the circle's contour. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the circle's contour. This value cannot be `null`. |
 
 ### addOval
 
@@ -211,8 +211,8 @@ Add a closed oval contour to the path
 
 | Parameters ||
 |---|---|
-| `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of the oval to add as a closed contour to the path. This value cannot be `null`. |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the oval's contour. This value cannot be `null`. |
+| `oval` | [RectF](../android/graphics/RectF.md): The bounds of the oval to add as a closed contour to the path. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the oval's contour. This value cannot be `null`. |
 
 ### addOval
 
@@ -232,7 +232,7 @@ Add a closed oval contour to the path
 
 | Parameters ||
 |---|---|
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the oval's contour. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the oval's contour. This value cannot be `null`. |
 
 ### addPath
 
@@ -246,7 +246,7 @@ Add a copy of src to the path
 
 | Parameters ||
 |---|---|
-| `src` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The path that is appended to the current path. This value cannot be `null`. |
+| `src` | [Path](../android/graphics/Path.md): The path that is appended to the current path. This value cannot be `null`. |
 
 ### addPath
 
@@ -263,8 +263,8 @@ Add a copy of src to the path, transformed by matrix
 
 | Parameters ||
 |---|---|
-| `src` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The path to add as a new contour. This value cannot be `null`. |
-| `matrix` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix): This value cannot be `null`. |
+| `src` | [Path](../android/graphics/Path.md): The path to add as a new contour. This value cannot be `null`. |
+| `matrix` | [Matrix](../android/graphics/Matrix.md): This value cannot be `null`. |
 
 ### addPath
 
@@ -282,7 +282,7 @@ Add a copy of src to the path, offset by (dx,dy)
 
 | Parameters ||
 |---|---|
-| `src` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The path to add as a new contour. This value cannot be `null`. |
+| `src` | [Path](../android/graphics/Path.md): The path to add as a new contour. This value cannot be `null`. |
 | `dx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount to translate the path in X as it is added |
 
 ### addRect
@@ -300,8 +300,8 @@ Add a closed rectangle contour to the path
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The rectangle to add as a closed contour to the path. This value cannot be `null`. |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the rectangle's contour. This value cannot be `null`. |
+| `rect` | [RectF](../android/graphics/RectF.md): The rectangle to add as a closed contour to the path. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the rectangle's contour. This value cannot be `null`. |
 
 ### addRect
 
@@ -326,7 +326,7 @@ Add a closed rectangle contour to the path
 | `right` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The right side of a rectangle to add to the path |
 | --- | --- |
 | `bottom` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The bottom of a rectangle to add to the path |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the rectangle's contour. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the rectangle's contour. This value cannot be `null`. |
 
 ### addRoundRect
 
@@ -345,11 +345,11 @@ Add a closed round-rectangle contour to the path
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of a round-rectangle to add to the path. This value cannot be `null`. |
+| `rect` | [RectF](../android/graphics/RectF.md): The bounds of a round-rectangle to add to the path. This value cannot be `null`. |
 | `rx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the rounded corners on the round-rectangle |
 | `ry` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the rounded corners on the round-rectangle |
 | --- | --- |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
 
 ### addRoundRect
 
@@ -367,9 +367,9 @@ Add a closed round-rectangle contour to the path. Each corner receives two radiu
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of a round-rectangle to add to the path. This value cannot be `null`. |
+| `rect` | [RectF](../android/graphics/RectF.md): The bounds of a round-rectangle to add to the path. This value cannot be `null`. |
 | `radii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): Array of 8 values, 4 pairs of \[X,Y\] radii. This value cannot be `null`. |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
 | --- | --- |
 
 ### addRoundRect
@@ -394,7 +394,7 @@ Add a closed round-rectangle contour to the path
 |---|---|
 | `rx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The x-radius of the rounded corners on the round-rectangle |
 | `ry` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The y-radius of the rounded corners on the round-rectangle |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
 | --- | --- |
 
 ### addRoundRect
@@ -417,7 +417,7 @@ Add a closed round-rectangle contour to the path. Each corner receives two radiu
 | Parameters ||
 |---|---|
 | `radii` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html): Array of 8 values, 4 pairs of \[X,Y\] radii. This value cannot be `null`. |
-| `dir` | [Path.Direction](https://developer.android.com/reference/kotlin/android/graphics/Path.Direction): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
+| `dir` | [Path.Direction](../android/graphics/Path.Direction.md): The direction to wind the round-rectangle's contour. This value cannot be `null`. |
 
 ### approximate
 
@@ -461,7 +461,7 @@ Append the specified arc to the path as a new contour. If the start of the path 
 
 | Parameters ||
 |---|---|
-| `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of oval defining shape and size of the arc. This value cannot be `null`. |
+| `oval` | [RectF](../android/graphics/RectF.md): The bounds of oval defining shape and size of the arc. This value cannot be `null`. |
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise |
 | --- | --- |
@@ -483,7 +483,7 @@ Append the specified arc to the path as a new contour. If the start of the path 
 
 | Parameters ||
 |---|---|
-| `oval` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): The bounds of oval defining shape and size of the arc. This value cannot be `null`. |
+| `oval` | [RectF](../android/graphics/RectF.md): The bounds of oval defining shape and size of the arc. This value cannot be `null`. |
 | `startAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Starting angle (in degrees) where the arc begins |
 | `sweepAngle` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Sweep angle (in degrees) measured clockwise, treated mod 360. |
 | --- | --- |
@@ -536,7 +536,7 @@ Compute the bounds of the control points of the path, and write the answer into 
 
 | Parameters ||
 |---|---|
-| `bounds` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): Returns the computed bounds of the path's control points. This value cannot be `null`. |
+| `bounds` | [RectF](../android/graphics/RectF.md): Returns the computed bounds of the path's control points. This value cannot be `null`. |
 
 ### computeBounds
 
@@ -553,7 +553,7 @@ Compute the bounds of the control points of the path, and write the answer into 
 
 | Parameters ||
 |---|---|
-| `bounds` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF): Returns the computed bounds of the path's control points. This value cannot be `null`. |
+| `bounds` | [RectF](../android/graphics/RectF.md): Returns the computed bounds of the path's control points. This value cannot be `null`. |
 | `exact` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): This parameter is no longer used. |
 
 ### conicTo
@@ -681,9 +681,9 @@ This method will linearly interpolate from this path to `otherPath` given the in
 
 | Parameters ||
 |---|---|
-| `otherPath` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The other `Path` being interpolated to. This value cannot be `null`. |
+| `otherPath` | [Path](../android/graphics/Path.md): The other `Path` being interpolated to. This value cannot be `null`. |
 | `t` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The interpolation parameter. A value of 1 results in a `Path` equivalent to this path, a value of 0 results in one equivalent to `otherPath`. |
-| `interpolatedPath` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The interpolated results. This value cannot be `null`. |
+| `interpolatedPath` | [Path](../android/graphics/Path.md): The interpolated results. This value cannot be `null`. |
 | --- | --- |
 
 ### isConvex
@@ -733,7 +733,7 @@ Two paths can be interpolated, by calling `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `otherPath` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The other `Path` being interpolated to from this one. This value cannot be `null`. |
+| `otherPath` | [Path](../android/graphics/Path.md): The other `Path` being interpolated to from this one. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -765,7 +765,7 @@ Returns true if the path specifies a rectangle. If so, and if rect is not null, 
 
 | Parameters ||
 |---|---|
-| `rect` | [RectF](https://developer.android.com/reference/kotlin/android/graphics/RectF)?: If not null, returns the bounds of the path if it specifies a rectangle |
+| `rect` | [RectF](../android/graphics/RectF.md)?: If not null, returns the bounds of the path if it specifies a rectangle |
 
 | Return ||
 |---|---|
@@ -843,7 +843,7 @@ Offset the path by (dx,dy)
 |---|---|
 | `dx` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount in the X direction to offset the entire path |
 | `dy` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The amount in the Y direction to offset the entire path |
-| `dst` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#)?: The translated path is written here. If this is null, then the original path is modified. |
+| `dst` | [Path](../android/graphics/Path.md)?: The translated path is written here. If this is null, then the original path is modified. |
 | --- | --- |
 
 ### op
@@ -862,9 +862,9 @@ Set this path to the result of applying the Op to the two specified paths. The r
 
 | Parameters ||
 |---|---|
-| `path1` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The first operand (for difference, the minuend). This value cannot be `null`. |
-| `path2` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The second operand (for difference, the subtrahend). This value cannot be `null`. |
-| `op` | [Path.Op](https://developer.android.com/reference/kotlin/android/graphics/Path.Op): This value cannot be `null`. |
+| `path1` | [Path](../android/graphics/Path.md): The first operand (for difference, the minuend). This value cannot be `null`. |
+| `path2` | [Path](../android/graphics/Path.md): The second operand (for difference, the subtrahend). This value cannot be `null`. |
+| `op` | [Path.Op](../android/graphics/Path.Op.md): This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -891,8 +891,8 @@ Set this path to the result of applying the Op to this path and the specified pa
 
 | Parameters ||
 |---|---|
-| `path` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): The second operand (for difference, the subtrahend). This value cannot be `null`. |
-| `op` | [Path.Op](https://developer.android.com/reference/kotlin/android/graphics/Path.Op): This value cannot be `null`. |
+| `path` | [Path](../android/graphics/Path.md): The second operand (for difference, the subtrahend). This value cannot be `null`. |
+| `op` | [Path.Op](../android/graphics/Path.Op.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1059,7 +1059,7 @@ Replace the contents of this with the contents of src.
 
 | Parameters ||
 |---|---|
-| `src` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#): This value cannot be `null`. |
+| `src` | [Path](../android/graphics/Path.md): This value cannot be `null`. |
 
 ### setFillType
 
@@ -1073,7 +1073,7 @@ Set the path's fill type. This defines how "inside" is computed.
 
 | Parameters ||
 |---|---|
-| `ft` | [Path.FillType](https://developer.android.com/reference/kotlin/android/graphics/Path.FillType): The new fill type for this path. This value cannot be `null`. |
+| `ft` | [Path.FillType](../android/graphics/Path.FillType.md): The new fill type for this path. This value cannot be `null`. |
 
 ### setLastPoint
 
@@ -1115,7 +1115,7 @@ Transform the points in this path by matrix.
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix): The matrix to apply to the path. This value cannot be `null`. |
+| `matrix` | [Matrix](../android/graphics/Matrix.md): The matrix to apply to the path. This value cannot be `null`. |
 
 ### transform
 
@@ -1132,5 +1132,5 @@ Transform the points in this path by matrix, and write the answer into dst. If d
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix): The matrix to apply to the path. This value cannot be `null`. |
-| `dst` | [Path](https://developer.android.com/reference/kotlin/android/graphics/Path#)?: The transformed path is written here. If dst is null, then the the original path is modified |
+| `matrix` | [Matrix](../android/graphics/Matrix.md): The matrix to apply to the path. This value cannot be `null`. |
+| `dst` | [Path](../android/graphics/Path.md)?: The transformed path is written here. If dst is null, then the the original path is modified |

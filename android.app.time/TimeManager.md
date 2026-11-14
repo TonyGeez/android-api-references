@@ -8,7 +8,7 @@ class TimeManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.time.TimeManager](https://developer.android.com/reference/kotlin/android/app/time/TimeManager#) |
+| ↳ | [android.app.time.TimeManager](../android/app/time/TimeManager.md) |
 
 The system service through which system components can interact with time and time zone services.
 
@@ -16,7 +16,7 @@ The system service through which system components can interact with time and ti
 
 | Public methods ||
 |---|---|
-| [TimeZone](https://developer.android.com/reference/kotlin/java/util/TimeZone.html#)? | `https://developer.android.com/reference/kotlin/android/app/time/TimeManager#getHomeTimeZone()()` Returns the current home time zone. |
+| [TimeZone](../java/util/TimeZone.md)? | `https://developer.android.com/reference/kotlin/android/app/time/TimeManager#getHomeTimeZone()()` Returns the current home time zone. |
 
 ## Public methods
 

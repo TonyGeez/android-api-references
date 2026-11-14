@@ -8,18 +8,18 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 interface SocketOption<T : Any!>
 ```
 
-| [java.net.SocketOption](https://developer.android.com/reference/kotlin/java/net/SocketOption#) |
+| [java.net.SocketOption](../java/net/SocketOption.md) |
 
 A socket option associated with a socket.
 
-In the [channels](https://developer.android.com/reference/kotlin/java/nio/channels/package-summary.html) package, the interface defines the [setOption](https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption,%20java.nio.channels.NetworkChannel.setOption.T))and [getOption](https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel.html#getOption(java.net.SocketOption))methods to set and query the channel's socket options.
+In the [channels](../java/nio/channels/_package.md) package, the interface defines the [setOption](../java/nio/channels/NetworkChannel.md))and [getOption](../java/nio/channels/NetworkChannel.md))methods to set and query the channel's socket options.
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/net/SocketOption#name())`()` Returns the name of the socket option. |
-| abstract [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>! | [type](https://developer.android.com/reference/kotlin/java/net/SocketOption#type())`()` Returns the type of the socket option value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../java/net/SocketOption.md))`()` Returns the name of the socket option. |
+| abstract [Class](../java/lang/Class.md)\<T\>! | [type](../java/net/SocketOption.md))`()` Returns the type of the socket option value. |
 
 ## Public methods
 
@@ -49,4 +49,4 @@ Returns the type of the socket option value.
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------|
-| [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>! | the type of the socket option value |
+| [Class](../java/lang/Class.md)<T>! | the type of the socket option value |

@@ -2,7 +2,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # CallAudioState
 
-Kotlin | [Java](https://developer.android.com/reference/android/telecom/CallAudioState "View this page in Java")
+Kotlin | [Java](../android/telecom/CallAudioState.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class CallAudioState : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.CallAudioState](https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#) |
+| ↳ | [android.telecom.CallAudioState](../android/telecom/CallAudioState.md) |
 
 Encapsulates the telecom audio state, including the current audio routing, supported audio routing and mute.
 
@@ -42,9 +42,9 @@ Encapsulates the telecom audio state, including the current audio routing, suppo
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getActiveBluetoothDevice()()` <br /> |
+| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getActiveBluetoothDevice()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getRoute()()` <br /> |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getSupportedBluetoothDevices()()` <br /> |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getSupportedBluetoothDevices()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getSupportedRouteMask()()` <br /> |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#isMuted()()` <br /> |
@@ -54,7 +54,7 @@ Encapsulates the telecom audio state, including the current audio routing, suppo
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CallAudioState](https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#)!\> | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#CREATOR:android.os.Parcelable.Creator` Responsible for creating AudioState objects for deserialized Parcels. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CallAudioState](../android/telecom/CallAudioState.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#CREATOR:android.os.Parcelable.Creator` Responsible for creating AudioState objects for deserialized Parcels. |
 
 ## Constants
 

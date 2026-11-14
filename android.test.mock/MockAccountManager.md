@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MockAccountManager
 
-Kotlin| [Java](https://developer.android.com/reference/android/test/mock/MockAccountManager "View this page in Java") 
+Kotlin| [Java](../android/test/mock/MockAccountManager.md) 
 | --- | --- |
 
 ```
@@ -14,13 +14,13 @@ open class MockAccountManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.mock.MockAccountManager](https://developer.android.com/reference/kotlin/android/test/mock/MockAccountManager#) |
+| ↳ | [android.test.mock.MockAccountManager](../android/test/mock/MockAccountManager.md) |
 
 | **This class was deprecated in API level 28.**
 |
 | Use a mocking framework like [Mockito](https://github.com/mockito/mockito). New tests should be written using the [Android Testing Support Library](https://developer.android.com/ tools/testing-support-library/index.html).
 
-A mock [android.accounts.AccountManager](https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#) class.
+A mock [android.accounts.AccountManager](../android/accounts/AccountManager.md) class.
 
 Provided for use by`android.test.IsolatedContext`.
 
@@ -28,7 +28,7 @@ Provided for use by`android.test.IsolatedContext`.
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [AccountManager](https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#)! | [newMockAccountManager](https://developer.android.com/reference/kotlin/android/test/mock/MockAccountManager#newMockAccountManager(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Create a new mock [AccountManager](https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#) instance. |
+| openstatic [AccountManager](../android/accounts/AccountManager.md)! | [newMockAccountManager](../android/test/mock/MockAccountManager.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Create a new mock [AccountManager](../android/accounts/AccountManager.md) instance. |
 
 ## Public methods
 
@@ -42,12 +42,12 @@ open static fun newMockAccountManager(context: Context!): AccountManager!
 
 **Deprecated:** *Deprecated in Java.*
 
-Create a new mock [AccountManager](https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#) instance.
+Create a new mock [AccountManager](../android/accounts/AccountManager.md) instance.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:the [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) to which the returned object belongs. |
+| `context` | [Context](../android/content/Context.md)!:the [Context](../android/content/Context.md) to which the returned object belongs. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-------------------|
-| [AccountManager](https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#)! | the new instance. |
+| [AccountManager](../android/accounts/AccountManager.md)! | the new instance. |

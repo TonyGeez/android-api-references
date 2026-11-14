@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Debug
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/Debug "View this page in Java") 
+Kotlin| [Java](../android/os/Debug.md) 
 | --- | --- |
 
 ```
@@ -13,128 +13,128 @@ class Debug
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.Debug](https://developer.android.com/reference/kotlin/android/os/Debug#) |
+| ↳ | [android.os.Debug](../android/os/Debug.md) |
 
 Provides various debugging methods for Android applications, including tracing and allocation counts.
 
 **Logging Trace Files**
 
-Debug can create log files that give details about an application, such as a call stack and start/stop times for any running methods. See [Inspect Trace Logs with Traceview](https://developer.android.com/studio/profile/traceview.html) for information about reading trace files. To start logging trace files, call one of the startMethodTracing() methods. To stop tracing, call [stopMethodTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#stopMethodTracing()).
+Debug can create log files that give details about an application, such as a call stack and start/stop times for any running methods. See [Inspect Trace Logs with Traceview](https://developer.android.com/studio/profile/traceview.html) for information about reading trace files. To start logging trace files, call one of the startMethodTracing() methods. To stop tracing, call [stopMethodTracing()](../android/os/Debug.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [InstructionCount](https://developer.android.com/reference/kotlin/android/os/Debug.InstructionCount) API for gathering and querying instruction counts. |
-| | [MemoryInfo](https://developer.android.com/reference/kotlin/android/os/Debug.MemoryInfo) This class is used to retrieved various statistics about the memory mappings for this process. |
+| | [InstructionCount](../android/os/Debug.InstructionCount.md) API for gathering and querying instruction counts. |
+| | [MemoryInfo](../android/os/Debug.MemoryInfo.md) This class is used to retrieved various statistics about the memory mappings for this process. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHOW_CLASSLOADER](https://developer.android.com/reference/kotlin/android/os/Debug#SHOW_CLASSLOADER:kotlin.Int) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHOW_FULL_DETAIL](https://developer.android.com/reference/kotlin/android/os/Debug#SHOW_FULL_DETAIL:kotlin.Int) Flags for printLoadedClasses(). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHOW_INITIALIZED](https://developer.android.com/reference/kotlin/android/os/Debug#SHOW_INITIALIZED:kotlin.Int) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHOW_CLASSLOADER](../android/os/Debug.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHOW_FULL_DETAIL](../android/os/Debug.md) Flags for printLoadedClasses(). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHOW_INITIALIZED](../android/os/Debug.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACE_COUNT_ALLOCS](https://developer.android.com/reference/kotlin/android/os/Debug#TRACE_COUNT_ALLOCS:kotlin.Int) Flags for startMethodTracing(). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACE_COUNT_ALLOCS](../android/os/Debug.md) Flags for startMethodTracing(). |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachJvmtiAgent](https://developer.android.com/reference/kotlin/android/os/Debug#attachJvmtiAgent(kotlin.String,%20kotlin.String,%20java.lang.ClassLoader))`(`library:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `options:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `classLoader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?`)` Attach a library as a jvmti agent to the current runtime, with the given classloader determining the library search path. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [changeDebugPort](https://developer.android.com/reference/kotlin/android/os/Debug#changeDebugPort(kotlin.Int))`(`port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the JDWP port. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpHprofData](https://developer.android.com/reference/kotlin/android/os/Debug#dumpHprofData(kotlin.String))`(`fileName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Dump "hprof" data to the specified file. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachJvmtiAgent](../android/os/Debug.md))`(`library:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `options:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `classLoader:` ` [ClassLoader](../java/lang/ClassLoader.md)?`)` Attach a library as a jvmti agent to the current runtime, with the given classloader determining the library search path. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [changeDebugPort](../android/os/Debug.md))`(`port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the JDWP port. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpHprofData](../android/os/Debug.md))`(`fileName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Dump "hprof" data to the specified file. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dumpService](https://developer.android.com/reference/kotlin/android/os/Debug#dumpService(kotlin.String,%20java.io.FileDescriptor,%20kotlin.Array))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Get a debugging dump of a system service by name. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableEmulatorTraceOutput](https://developer.android.com/reference/kotlin/android/os/Debug#enableEmulatorTraceOutput())`()` Enable "emulator traces", in which information about the current method is made available to the "emulator -trace" feature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderDeathObjectCount](https://developer.android.com/reference/kotlin/android/os/Debug#getBinderDeathObjectCount())`()` Returns the number of death notification links to Binder objects that exist in the current process. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dumpService](../android/os/Debug.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Get a debugging dump of a system service by name. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableEmulatorTraceOutput](../android/os/Debug.md))`()` Enable "emulator traces", in which information about the current method is made available to the "emulator -trace" feature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderDeathObjectCount](../android/os/Debug.md))`()` Returns the number of death notification links to Binder objects that exist in the current process. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderLocalObjectCount](https://developer.android.com/reference/kotlin/android/os/Debug#getBinderLocalObjectCount())`()` Returns the number of active local Binder objects that exist in the current process. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderProxyObjectCount](https://developer.android.com/reference/kotlin/android/os/Debug#getBinderProxyObjectCount())`()` Returns the number of references to remote proxy Binder objects that exist in the current process. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderReceivedTransactions](https://developer.android.com/reference/kotlin/android/os/Debug#getBinderReceivedTransactions())`()` Returns the number of received transactions from the binder driver. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderLocalObjectCount](../android/os/Debug.md))`()` Returns the number of active local Binder objects that exist in the current process. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderProxyObjectCount](../android/os/Debug.md))`()` Returns the number of references to remote proxy Binder objects that exist in the current process. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderReceivedTransactions](../android/os/Debug.md))`()` Returns the number of received transactions from the binder driver. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderSentTransactions](https://developer.android.com/reference/kotlin/android/os/Debug#getBinderSentTransactions())`()` Returns the number of sent transactions from this process. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalAllocCount())`()` Returns the global count of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalAllocSize())`()` Returns the global size, in bytes, of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBinderSentTransactions](../android/os/Debug.md))`()` Returns the number of sent transactions from this process. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalAllocCount](../android/os/Debug.md))`()` Returns the global count of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalAllocSize](../android/os/Debug.md))`()` Returns the global size, in bytes, of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalClassInitCount](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalClassInitCount())`()` Returns the number of classes successfully initialized (ie those that executed without throwing an exception) between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalClassInitTime](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalClassInitTime())`()` Returns the time spent successfully initializing classes between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalExternalAllocCount())`()` This method exists for compatibility and always returns 0. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalClassInitCount](../android/os/Debug.md))`()` Returns the number of classes successfully initialized (ie those that executed without throwing an exception) between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalClassInitTime](../android/os/Debug.md))`()` Returns the time spent successfully initializing classes between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalAllocCount](../android/os/Debug.md))`()` This method exists for compatibility and always returns 0. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalExternalAllocSize())`()` This method exists for compatibility and always returns 0. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalFreedCount](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalExternalFreedCount())`()` This method exists for compatibility and always returns 0. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalFreedSize](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalExternalFreedSize())`()` This method exists for compatibility and has no effect. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalAllocSize](../android/os/Debug.md))`()` This method exists for compatibility and always returns 0. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalFreedCount](../android/os/Debug.md))`()` This method exists for compatibility and always returns 0. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalExternalFreedSize](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalFreedCount](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalFreedCount())`()` Returns the global count of objects freed by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalFreedSize](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalFreedSize())`()` Returns the global size, in bytes, of objects freed by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalGcInvocationCount](https://developer.android.com/reference/kotlin/android/os/Debug#getGlobalGcInvocationCount())`()` Returns the number of non-concurrent GC invocations between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalFreedCount](../android/os/Debug.md))`()` Returns the global count of objects freed by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalFreedSize](../android/os/Debug.md))`()` Returns the global size, in bytes, of objects freed by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlobalGcInvocationCount](../android/os/Debug.md))`()` Returns the number of non-concurrent GC invocations between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getInstanceCount](https://developer.android.com/reference/kotlin/android/os/Debug#getInstanceCount(java.lang.Class))`(`cls:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>`)` Counts the number of instances of the specified class. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getInstanceCount](https://developer.android.com/reference/kotlin/android/os/Debug#getInstanceCount(java.lang.Class,%20kotlin.Boolean))`(`cls:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>`, `includeAssignable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Counts the number of instances of the specified class. |
-| static [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getInstanceCounts](https://developer.android.com/reference/kotlin/android/os/Debug#getInstanceCounts(kotlin.collections.MutableList))`(`classes:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>`)` Counts the number of instances of the specified classes. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getInstanceCount](../android/os/Debug.md))`(`cls:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>`)` Counts the number of instances of the specified class. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getInstanceCount](../android/os/Debug.md))`(`cls:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>`, `includeAssignable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Counts the number of instances of the specified class. |
+| static [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getInstanceCounts](../android/os/Debug.md))`(`classes:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>`)` Counts the number of instances of the specified classes. |
 | --- | --- |
-| static [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getInstanceCounts](https://developer.android.com/reference/kotlin/android/os/Debug#getInstanceCounts(kotlin.collections.MutableList,%20kotlin.Boolean))`(`classes:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>`, `includeAssignable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Counts the number of instances of the specified classes. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLoadedClassCount](https://developer.android.com/reference/kotlin/android/os/Debug#getLoadedClassCount())`()` Get the number of loaded classes. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMemoryInfo](https://developer.android.com/reference/kotlin/android/os/Debug#getMemoryInfo(android.os.Debug.MemoryInfo))`(`memoryInfo:` ` [Debug.MemoryInfo](https://developer.android.com/reference/kotlin/android/os/Debug.MemoryInfo)!`)` Retrieves information about this processes memory usages. |
+| static [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getInstanceCounts](../android/os/Debug.md))`(`classes:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>`, `includeAssignable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Counts the number of instances of the specified classes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLoadedClassCount](../android/os/Debug.md))`()` Get the number of loaded classes. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMemoryInfo](../android/os/Debug.md))`(`memoryInfo:` ` [Debug.MemoryInfo](../android/os/Debug.MemoryInfo.md)!`)` Retrieves information about this processes memory usages. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHeapAllocatedSize](https://developer.android.com/reference/kotlin/android/os/Debug#getNativeHeapAllocatedSize())`()` Returns the amount of allocated memory in the native heap. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHeapFreeSize](https://developer.android.com/reference/kotlin/android/os/Debug#getNativeHeapFreeSize())`()` Returns the amount of free memory in the native heap. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHeapSize](https://developer.android.com/reference/kotlin/android/os/Debug#getNativeHeapSize())`()` Returns the size of the native heap. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHeapAllocatedSize](../android/os/Debug.md))`()` Returns the amount of allocated memory in the native heap. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHeapFreeSize](../android/os/Debug.md))`()` Returns the amount of free memory in the native heap. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHeapSize](../android/os/Debug.md))`()` Returns the size of the native heap. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPss](https://developer.android.com/reference/kotlin/android/os/Debug#getPss())`()` Retrieves the PSS memory used by the process as given by the smaps. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRss](https://developer.android.com/reference/kotlin/android/os/Debug#getRss())`()` Retrieves the RSS memory used by the process as given by the status file. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRuntimeStat](https://developer.android.com/reference/kotlin/android/os/Debug#getRuntimeStat(kotlin.String))`(`statName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of a particular runtime statistic or`null`if no such runtime statistic exists. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPss](../android/os/Debug.md))`()` Retrieves the PSS memory used by the process as given by the smaps. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRss](../android/os/Debug.md))`()` Retrieves the RSS memory used by the process as given by the status file. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRuntimeStat](../android/os/Debug.md))`(`statName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of a particular runtime statistic or`null`if no such runtime statistic exists. |
 | --- | --- |
-| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getRuntimeStats](https://developer.android.com/reference/kotlin/android/os/Debug#getRuntimeStats())`()` Returns a map of the names/values of the runtime statistics that [getRuntimeStat(java.lang.String)](https://developer.android.com/reference/kotlin/android/os/Debug#getRuntimeStat(kotlin.String))supports. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#getThreadAllocCount())`()` Returns the thread-local count of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#getThreadAllocSize())`()` Returns the thread-local size of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
+| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getRuntimeStats](../android/os/Debug.md))`()` Returns a map of the names/values of the runtime statistics that [getRuntimeStat(java.lang.String)](../android/os/Debug.md))supports. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadAllocCount](../android/os/Debug.md))`()` Returns the thread-local count of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadAllocSize](../android/os/Debug.md))`()` Returns the thread-local size of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadExternalAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#getThreadExternalAllocCount())`()` This method exists for compatibility and has no effect. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadExternalAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#getThreadExternalAllocSize())`()` This method exists for compatibility and has no effect. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadGcInvocationCount](https://developer.android.com/reference/kotlin/android/os/Debug#getThreadGcInvocationCount())`()` Returns the number of thread-local non-concurrent GC invocations between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadExternalAllocCount](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadExternalAllocSize](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThreadGcInvocationCount](../android/os/Debug.md))`()` Returns the number of thread-local non-concurrent GC invocations between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDebuggerConnected](https://developer.android.com/reference/kotlin/android/os/Debug#isDebuggerConnected())`()` Determine if a debugger is currently attached. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printLoadedClasses](https://developer.android.com/reference/kotlin/android/os/Debug#printLoadedClasses(kotlin.Int))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Dump a list of all currently loaded class to the log file. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetAllCounts](https://developer.android.com/reference/kotlin/android/os/Debug#resetAllCounts())`()` Clears all the global and thread-local memory allocation counters. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDebuggerConnected](../android/os/Debug.md))`()` Determine if a debugger is currently attached. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [printLoadedClasses](../android/os/Debug.md))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Dump a list of all currently loaded class to the log file. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetAllCounts](../android/os/Debug.md))`()` Clears all the global and thread-local memory allocation counters. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalAllocCount())`()` Clears the global count of objects allocated. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalAllocSize())`()` Clears the global size of objects allocated. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalClassInitCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalClassInitCount())`()` Clears the count of classes initialized. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalAllocCount](../android/os/Debug.md))`()` Clears the global count of objects allocated. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalAllocSize](../android/os/Debug.md))`()` Clears the global size of objects allocated. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalClassInitCount](../android/os/Debug.md))`()` Clears the count of classes initialized. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalClassInitTime](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalClassInitTime())`()` Clears the count of time spent initializing classes. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalExternalAllocCount())`()` This method exists for compatibility and has no effect. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalExternalAllocSize())`()` This method exists for compatibility and has no effect. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalClassInitTime](../android/os/Debug.md))`()` Clears the count of time spent initializing classes. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalAllocCount](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalAllocSize](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalFreedCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalExternalFreedCount())`()` This method exists for compatibility and has no effect. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalFreedSize](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalExternalFreedSize())`()` This method exists for compatibility and has no effect. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalFreedCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalFreedCount())`()` Clears the global count of objects freed. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalFreedCount](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalExternalFreedSize](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalFreedCount](../android/os/Debug.md))`()` Clears the global count of objects freed. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalFreedSize](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalFreedSize())`()` Clears the global size of objects freed. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalGcInvocationCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetGlobalGcInvocationCount())`()` Clears the count of non-concurrent GC invocations. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetThreadAllocCount())`()` Clears the thread-local count of objects allocated. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalFreedSize](../android/os/Debug.md))`()` Clears the global size of objects freed. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetGlobalGcInvocationCount](../android/os/Debug.md))`()` Clears the count of non-concurrent GC invocations. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadAllocCount](../android/os/Debug.md))`()` Clears the thread-local count of objects allocated. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#resetThreadAllocSize())`()` Clears the thread-local count of objects allocated. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadExternalAllocCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetThreadExternalAllocCount())`()` This method exists for compatibility and has no effect. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadExternalAllocSize](https://developer.android.com/reference/kotlin/android/os/Debug#resetThreadExternalAllocSize())`()` This method exists for compatibility and has no effect. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadAllocSize](../android/os/Debug.md))`()` Clears the thread-local count of objects allocated. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadExternalAllocCount](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadExternalAllocSize](../android/os/Debug.md))`()` This method exists for compatibility and has no effect. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadGcInvocationCount](https://developer.android.com/reference/kotlin/android/os/Debug#resetThreadGcInvocationCount())`()` Clears the thread-local count of non-concurrent GC invocations. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setAllocationLimit](https://developer.android.com/reference/kotlin/android/os/Debug#setAllocationLimit(kotlin.Int))`(`limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Establish an object allocation limit in the current thread. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setGlobalAllocationLimit](https://developer.android.com/reference/kotlin/android/os/Debug#setGlobalAllocationLimit(kotlin.Int))`(`limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Establish a global object allocation limit. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetThreadGcInvocationCount](../android/os/Debug.md))`()` Clears the thread-local count of non-concurrent GC invocations. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setAllocationLimit](../android/os/Debug.md))`(`limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Establish an object allocation limit in the current thread. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setGlobalAllocationLimit](../android/os/Debug.md))`(`limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Establish a global object allocation limit. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startAllocCounting](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())`()` Start counting the number and aggregate size of memory allocations. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracing())`()` Start method tracing with default log name and buffer size. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracing(kotlin.String))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Start method tracing, specifying the trace log file path. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startAllocCounting](../android/os/Debug.md))`()` Start counting the number and aggregate size of memory allocations. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](../android/os/Debug.md))`()` Start method tracing with default log name and buffer size. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](../android/os/Debug.md))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Start method tracing, specifying the trace log file path. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracing(kotlin.String,%20kotlin.Int))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bufferSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start method tracing, specifying the trace log file name and the buffer size. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracing(kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bufferSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start method tracing, specifying the trace log file name, the buffer size, and flags. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracingSampling](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracingSampling(kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bufferSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intervalUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start sampling-based method tracing, specifying the trace log file name, the buffer size, and the sampling interval. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](../android/os/Debug.md))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bufferSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start method tracing, specifying the trace log file name and the buffer size. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracing](../android/os/Debug.md))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bufferSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start method tracing, specifying the trace log file name, the buffer size, and flags. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startMethodTracingSampling](../android/os/Debug.md))`(`tracePath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `bufferSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intervalUs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start sampling-based method tracing, specifying the trace log file name, the buffer size, and the sampling interval. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startNativeTracing](https://developer.android.com/reference/kotlin/android/os/Debug#startNativeTracing())`()` Enable qemu tracing. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopAllocCounting](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting())`()` Stop counting the number and aggregate size of memory allocations. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopMethodTracing](https://developer.android.com/reference/kotlin/android/os/Debug#stopMethodTracing())`()` Stop method tracing. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startNativeTracing](../android/os/Debug.md))`()` Enable qemu tracing. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopAllocCounting](../android/os/Debug.md))`()` Stop counting the number and aggregate size of memory allocations. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopMethodTracing](../android/os/Debug.md))`()` Stop method tracing. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopNativeTracing](https://developer.android.com/reference/kotlin/android/os/Debug#stopNativeTracing())`()` Stop qemu tracing. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [threadCpuTimeNanos](https://developer.android.com/reference/kotlin/android/os/Debug#threadCpuTimeNanos())`()` Get an indication of thread CPU usage. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [waitForDebugger](https://developer.android.com/reference/kotlin/android/os/Debug#waitForDebugger())`()` Wait until a debugger attaches. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopNativeTracing](../android/os/Debug.md))`()` Stop qemu tracing. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [threadCpuTimeNanos](../android/os/Debug.md))`()` Get an indication of thread CPU usage. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [waitForDebugger](../android/os/Debug.md))`()` Wait until a debugger attaches. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [waitingForDebugger](https://developer.android.com/reference/kotlin/android/os/Debug#waitingForDebugger())`()` Returns "true" if one or more threads is waiting for a debugger to attach. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [waitingForDebugger](../android/os/Debug.md))`()` Returns "true" if one or more threads is waiting for a debugger to attach. |
 
 ## Constants
 
@@ -207,7 +207,7 @@ Note: agents may only be attached to debuggable apps. Otherwise, this function w
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `library` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the library containing the agent. This value cannot be`null`. |
 | `options` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the options passed to the agent. This value may be`null`. |
-| `classLoader` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)?:the classloader determining the library search path. This value may be`null`. |
+| `classLoader` | [ClassLoader](../java/lang/ClassLoader.md)?:the classloader determining the library search path. This value may be`null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -266,7 +266,7 @@ Most services require the caller to hold android.permission.DUMP.
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:of the service to dump |
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!:to write dump output to (usually an output log file) |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!:to write dump output to (usually an output log file) |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:to pass to the service's dump method, may be null |
 | --- | --- |
 
@@ -285,7 +285,7 @@ static fun enableEmulatorTraceOutput(): Unit
 
 **Deprecated:** *Please use other tracing method in this class.*
 
-Enable "emulator traces", in which information about the current method is made available to the "emulator -trace" feature. There is no corresponding "disable" call -- this is intended for use by the framework when tracing should be turned on and left that way, so that traces captured with F9/F10 will include the necessary data. This puts the VM into "profile" mode, which has performance consequences. To temporarily enable tracing, use [startNativeTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startNativeTracing()). 
+Enable "emulator traces", in which information about the current method is made available to the "emulator -trace" feature. There is no corresponding "disable" call -- this is intended for use by the framework when tracing should be turned on and left that way, so that traces captured with F9/F10 will include the necessary data. This puts the VM into "profile" mode, which has performance consequences. To temporarily enable tracing, use [startNativeTracing()](../android/os/Debug.md)). 
 
 ### getBinderDeathObjectCount
 
@@ -356,7 +356,7 @@ static fun getGlobalAllocCount(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the global count of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the global count of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getGlobalAllocSize
 
@@ -369,7 +369,7 @@ static fun getGlobalAllocSize(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the global size, in bytes, of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the global size, in bytes, of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getGlobalClassInitCount
 
@@ -382,7 +382,7 @@ static fun getGlobalClassInitCount(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the number of classes successfully initialized (ie those that executed without throwing an exception) between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the number of classes successfully initialized (ie those that executed without throwing an exception) between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getGlobalClassInitTime
 
@@ -395,7 +395,7 @@ static fun getGlobalClassInitTime(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the time spent successfully initializing classes between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the time spent successfully initializing classes between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getGlobalExternalAllocCount
 
@@ -460,7 +460,7 @@ static fun getGlobalFreedCount(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the global count of objects freed by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the global count of objects freed by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getGlobalFreedSize
 
@@ -473,7 +473,7 @@ static fun getGlobalFreedSize(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the global size, in bytes, of objects freed by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the global size, in bytes, of objects freed by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getGlobalGcInvocationCount
 
@@ -486,7 +486,7 @@ static fun getGlobalGcInvocationCount(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the number of non-concurrent GC invocations between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the number of non-concurrent GC invocations between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getInstanceCount
 
@@ -506,7 +506,7 @@ It is the caller's responsibility to do GC if they don't want unreachable object
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cls` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#) the class to count instances of. This value cannot be`null`. |
+| `cls` | [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: [Class](../java/lang/Class.md) the class to count instances of. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------|
@@ -533,8 +533,8 @@ It is the caller's responsibility to do GC if they don't want unreachable object
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cls` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#) the class to count instances of. This value cannot be`null`. |
-| `includeAssignable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, any instance whose class is assignable to`cls`, as defined by [Class.isAssignableFrom](https://developer.android.com/reference/kotlin/java/lang/Class.html#isAssignableFrom(java.lang.Class)), is counted. If false, only instances whose class is equal to`cls`are counted. |
+| `cls` | [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: [Class](../java/lang/Class.md) the class to count instances of. This value cannot be`null`. |
+| `includeAssignable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, any instance whose class is assignable to`cls`, as defined by [Class.isAssignableFrom](../java/lang/Class.md)), is counted. If false, only instances whose class is equal to`cls`are counted. |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------|
@@ -558,7 +558,7 @@ It is the caller's responsibility to do GC if they don't want unreachable object
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `classes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>:An array of [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#) objects representing the classes to count instances of. Must not be null. |
+| `classes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>:An array of [Class](../java/lang/Class.md) objects representing the classes to count instances of. Must not be null. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -585,8 +585,8 @@ It is the caller's responsibility to do GC if they don't want unreachable object
 
 | Parameters ||
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `classes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>:An array of [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#) objects representing the classes to count instances of. Must not be null. |
-| `includeAssignable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, any instance whose class is assignable to`cls`, as defined by [Class.isAssignableFrom](https://developer.android.com/reference/kotlin/java/lang/Class.html#isAssignableFrom(java.lang.Class)), is counted. If false, only instances whose class is equal to`cls`are counted. |
+| `classes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>:An array of [Class](../java/lang/Class.md) objects representing the classes to count instances of. Must not be null. |
+| `includeAssignable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if true, any instance whose class is assignable to`cls`, as defined by [Class.isAssignableFrom](../java/lang/Class.md)), is counted. If false, only instances whose class is equal to`cls`are counted. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -721,7 +721,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static fun getRuntimeStats(): MutableMap<String!, String!>!
 ```
 
-Returns a map of the names/values of the runtime statistics that [getRuntimeStat(java.lang.String)](https://developer.android.com/reference/kotlin/android/os/Debug#getRuntimeStat(kotlin.String))supports.
+Returns a map of the names/values of the runtime statistics that [getRuntimeStat(java.lang.String)](../android/os/Debug.md))supports.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -738,7 +738,7 @@ static fun getThreadAllocCount(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the thread-local count of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the thread-local count of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### getThreadAllocSize
 
@@ -751,7 +751,7 @@ static fun getThreadAllocSize(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the thread-local size of objects allocated by the runtime between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()).
+Returns the thread-local size of objects allocated by the runtime between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------|
@@ -794,7 +794,7 @@ static fun getThreadGcInvocationCount(): Int
 
 **Deprecated:** *Accurate counting is a burden on the runtime and may be removed.*
 
-Returns the number of thread-local non-concurrent GC invocations between a [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())and [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting()). 
+Returns the number of thread-local non-concurrent GC invocations between a [start](../android/os/Debug.md))and [stop](../android/os/Debug.md)). 
 
 ### isDebuggerConnected
 
@@ -1113,7 +1113,7 @@ static fun startAllocCounting(): Unit
 
 Start counting the number and aggregate size of memory allocations.
 
-The [start](https://developer.android.com/reference/kotlin/android/os/Debug#startAllocCounting())method resets the counts and enables counting. The [stop](https://developer.android.com/reference/kotlin/android/os/Debug#stopAllocCounting())method disables the counting so that the analysis code doesn't cause additional allocations. The various`get`methods return the specified value. And the various`reset`methods reset the specified count.
+The [start](../android/os/Debug.md))method resets the counts and enables counting. The [stop](../android/os/Debug.md))method disables the counting so that the analysis code doesn't cause additional allocations. The various`get`methods return the specified value. And the various`reset`methods reset the specified count.
 
 Counts are kept for the system as a whole (global) and for each thread. The per-thread counts for threads other than the current thread are not cleared by the "reset" or "start" calls. 
 
@@ -1127,11 +1127,11 @@ static fun startMethodTracing(): Unit
 
 Start method tracing with default log name and buffer size.
 
-By default, the trace file is called "dmtrace.trace" and it's placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](https://developer.android.com/reference/kotlin/android/content/Context.html#getExternalFilesDir(kotlin.String)).
+By default, the trace file is called "dmtrace.trace" and it's placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](../android/content/Context.md)).
 
 See [Inspect Trace Logs with Traceview](https://developer.android.com/studio/profile/traceview.html) for information about reading trace files.
 
-When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracingSampling(kotlin.String,%20kotlin.Int,%20kotlin.Int))or "native" tracing in the emulator via [startNativeTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startNativeTracing()). 
+When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](../android/os/Debug.md))or "native" tracing in the emulator via [startNativeTracing()](../android/os/Debug.md)). 
 
 ### startMethodTracing
 
@@ -1143,11 +1143,11 @@ static fun startMethodTracing(tracePath: String!): Unit
 
 Start method tracing, specifying the trace log file path.
 
-When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](https://developer.android.com/reference/kotlin/android/content/Context.html#getExternalFilesDir(kotlin.String)).
+When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](../android/content/Context.md)).
 
 See [Inspect Trace Logs with Traceview](https://developer.android.com/studio/profile/traceview.html) for information about reading trace files.
 
-When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracingSampling(kotlin.String,%20kotlin.Int,%20kotlin.Int))or "native" tracing in the emulator via [startNativeTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startNativeTracing()).
+When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](../android/os/Debug.md))or "native" tracing in the emulator via [startNativeTracing()](../android/os/Debug.md)).
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1166,11 +1166,11 @@ static fun startMethodTracing(
 
 Start method tracing, specifying the trace log file name and the buffer size.
 
-When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](https://developer.android.com/reference/kotlin/android/content/Context.html#getExternalFilesDir(kotlin.String)).
+When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](../android/content/Context.md)).
 
 See [Inspect Trace Logs with Traceview](https://developer.android.com/studio/profile/traceview.html) for information about reading trace files.
 
-When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracingSampling(kotlin.String,%20kotlin.Int,%20kotlin.Int))or "native" tracing in the emulator via [startNativeTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startNativeTracing()).
+When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](../android/os/Debug.md))or "native" tracing in the emulator via [startNativeTracing()](../android/os/Debug.md)).
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1191,17 +1191,17 @@ static fun startMethodTracing(
 
 Start method tracing, specifying the trace log file name, the buffer size, and flags.
 
-When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](https://developer.android.com/reference/kotlin/android/content/Context.html#getExternalFilesDir(kotlin.String)).
+When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](../android/content/Context.md)).
 
 See [Inspect Trace Logs with Traceview](https://developer.android.com/studio/profile/traceview.html) for information about reading trace files.
 
-When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracingSampling(kotlin.String,%20kotlin.Int,%20kotlin.Int))or "native" tracing in the emulator via [startNativeTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startNativeTracing()).
+When method tracing is enabled, the VM will run more slowly than usual, so the timings from the trace files should only be considered in relative terms (e.g. was run #1 faster than run #2). The times for native methods will not change, so don't try to use this to compare the performance of interpreted and native implementations of the same method. As an alternative, consider using sampling-based method tracing via [startMethodTracingSampling(java.lang.String,int,int)](../android/os/Debug.md))or "native" tracing in the emulator via [startNativeTracing()](../android/os/Debug.md)).
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `tracePath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Path to the trace log file to create. If`null`, this will default to "dmtrace.trace". If the file already exists, it will be truncated. If the path given does not end in ".trace", it will be appended for you. |
 | `bufferSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum amount of trace data we gather. If not given, it defaults to 8MB. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags to control method tracing. The following flags are supported: 0x0001 [TRACE_COUNT_ALLOCS](https://developer.android.com/reference/kotlin/android/os/Debug#TRACE_COUNT_ALLOCS:kotlin.Int) Flags to control time source: These are available with API #34 and higher. 0x0010 Report the elapsed time since the start of the trace. 0x0100 Report the time the thread has spent on the CPU since the start of the trace. Please note that the thread cpu incurs a significant (typically 2-3x) performance penalty. Use this flag only when necessary. If neither of these flags are set, both the elapsed time and the thread cpu time are reported. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags to control method tracing. The following flags are supported: 0x0001 [TRACE_COUNT_ALLOCS](../android/os/Debug.md) Flags to control time source: These are available with API #34 and higher. 0x0010 Report the elapsed time since the start of the trace. 0x0100 Report the time the thread has spent on the CPU since the start of the trace. Please note that the thread cpu incurs a significant (typically 2-3x) performance penalty. Use this flag only when necessary. If neither of these flags are set, both the elapsed time and the thread cpu time are reported. |
 | --- | --- |
 
 ### startMethodTracingSampling
@@ -1218,7 +1218,7 @@ static fun startMethodTracingSampling(
 
 Start sampling-based method tracing, specifying the trace log file name, the buffer size, and the sampling interval.
 
-When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](https://developer.android.com/reference/kotlin/android/content/Context.html#getExternalFilesDir(kotlin.String)).
+When a relative file path is given, the trace file will be placed under your package-specific directory on primary shared/external storage, as returned by [Context.getExternalFilesDir(String)](../android/content/Context.md)).
 
 See [Inspect Trace Logs with Traceview](https://developer.android.com/studio/profile/traceview.html) for information about reading trace files.
 
@@ -1241,9 +1241,9 @@ Enable qemu tracing. For this to work requires running everything inside the qem
 `emulator -trace foo` 
 will start running the emulator and create a trace file named "foo". This method simply enables writing the trace records to the trace file.
 
-The main differences between this and [startMethodTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracing())are that tracing in the qemu emulator traces every cpu instruction of every process, including kernel code, so we have more complete information, including all context switches. We can also get more detailed information such as cache misses. The sequence of calls is determined by post-processing the instruction trace. The qemu tracing is also done without modifying the application or perturbing the timing of calls because no instrumentation is added to the application being traced.
+The main differences between this and [startMethodTracing()](../android/os/Debug.md))are that tracing in the qemu emulator traces every cpu instruction of every process, including kernel code, so we have more complete information, including all context switches. We can also get more detailed information such as cache misses. The sequence of calls is determined by post-processing the instruction trace. The qemu tracing is also done without modifying the application or perturbing the timing of calls because no instrumentation is added to the application being traced.
 
-One limitation of using this method compared to using [startMethodTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startMethodTracing())on the real device is that the emulator does not model all of the real hardware effects such as memory and bus contention. The emulator also has a simple cache model and cannot capture all the complexities of a real cache. 
+One limitation of using this method compared to using [startMethodTracing()](../android/os/Debug.md))on the real device is that the emulator does not model all of the real hardware effects such as memory and bus contention. The emulator also has a simple cache model and cannot capture all the complexities of a real cache. 
 
 ### stopAllocCounting
 
@@ -1276,7 +1276,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun stopNativeTracing(): Unit
 ```
 
-Stop qemu tracing. See [startNativeTracing()](https://developer.android.com/reference/kotlin/android/os/Debug#startNativeTracing())to start tracing.
+Stop qemu tracing. See [startNativeTracing()](../android/os/Debug.md))to start tracing.
 
 Tracing can be started and stopped as many times as desired. When the qemu emulator itself is stopped then the buffered trace records are flushed and written to the trace file. In fact, it is not necessary to call this method at all; simply killing qemu is sufficient. But starting and stopping a trace is useful for examining a specific region of code. 
 

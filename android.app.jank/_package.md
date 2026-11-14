@@ -2,11 +2,11 @@
 
 # android.app.jank
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/jank/package-summary "View this page in Java")
+Kotlin| [Java](../android/app/jank/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [AppJankStats](https://developer.android.com/reference/kotlin/android/app/jank/AppJankStats) | This class stores detailed jank statistics for an individual UI widget. |
+| [AppJankStats](../android/app/jank/AppJankStats.md) | This class stores detailed jank statistics for an individual UI widget. |
 | --- | --- |
-| [RelativeFrameTimeHistogram](https://developer.android.com/reference/kotlin/android/app/jank/RelativeFrameTimeHistogram) | A histogram of frame times relative to their deadline. |
+| [RelativeFrameTimeHistogram](../android/app/jank/RelativeFrameTimeHistogram.md) | A histogram of frame times relative to their deadline. |

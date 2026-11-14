@@ -10,10 +10,10 @@ class AccessMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.AccessMode](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#)\> ||
-| | ↳ | [java.nio.file.AccessMode](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.AccessMode](../java/nio/file/AccessMode.md)\> ||
+| | ↳ | [java.nio.file.AccessMode](../java/nio/file/AccessMode.md) |
 
-| Known Direct Subclasses [AccessMode.EXECUTE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:EXECUTE), [AccessMode.READ](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:READ), [AccessMode.WRITE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:WRITE) |------------------------------------------------------------------------------------------------------------------|----------------------| | [AccessMode.EXECUTE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:EXECUTE) | Test execute access. | | [AccessMode.READ](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:READ) | Test read access. | | [AccessMode.WRITE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:WRITE) | Test write access. | |
+| Known Direct Subclasses [AccessMode.EXECUTE](../java/nio/file/AccessMode.md), [AccessMode.READ](../java/nio/file/AccessMode.md), [AccessMode.WRITE](../java/nio/file/AccessMode.md) |------------------------------------------------------------------------------------------------------------------|----------------------| | [AccessMode.EXECUTE](../java/nio/file/AccessMode.md) | Test execute access. | | [AccessMode.READ](../java/nio/file/AccessMode.md) | Test read access. | | [AccessMode.WRITE](../java/nio/file/AccessMode.md) | Test write access. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines access modes used to test the accessibility of a file.
@@ -22,9 +22,9 @@ Defines access modes used to test the accessibility of a file.
 
 | Enum values ||
 |----------------------------------------------------------------------------------------------------------------------------|---|
-| [EXECUTE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:EXECUTE) Test execute access. |
-| [READ](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:READ) Test read access. |
-| [WRITE](https://developer.android.com/reference/kotlin/java/nio/file/AccessMode#ENUM_VALUE:WRITE) Test write access. |
+| [EXECUTE](../java/nio/file/AccessMode.md) Test execute access. |
+| [READ](../java/nio/file/AccessMode.md) Test read access. |
+| [WRITE](../java/nio/file/AccessMode.md) Test write access. |
 
 ## Enum values
 

@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # ListFormatter
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/ListFormatter "View this page in Java") 
+Kotlin| [Java](../android/icu/text/ListFormatter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ListFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#) |
+| ↳ | [android.icu.text.ListFormatter](../android/icu/text/ListFormatter.md) |
 
 Immutable class for formatting a list, using data from CLDR (or supplied separately). The class is not subclassable.
 
@@ -21,26 +21,26 @@ Immutable class for formatting a list, using data from CLDR (or supplied separat
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [FormattedList](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.FormattedList) An immutable class containing the result of a list formatting operation. |
-| | [Type](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.Type) Type of meaning expressed by the list. |
-| | [Width](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.Width) Verbosity level of the list patterns. |
+| | [FormattedList](../android/icu/text/ListFormatter.FormattedList.md) An immutable class containing the result of a list formatting operation. |
+| | [Type](../android/icu/text/ListFormatter.Type.md) Type of meaning expressed by the list. |
+| | [Width](../android/icu/text/ListFormatter.Width.md) Verbosity level of the list patterns. |
 | --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#format(kotlin.Any))`(`vararg` `items:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Format a list of objects. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#format(kotlin.collections.MutableCollection))`(`items:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` Format a collection of objects. |
-| [ListFormatter.FormattedList](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.FormattedList)! | [formatToValue](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#formatToValue(kotlin.Any))`(`vararg` `items:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Format a list of objects to a FormattedList. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/ListFormatter.md))`(`vararg` `items:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Format a list of objects. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/ListFormatter.md))`(`items:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` Format a collection of objects. |
+| [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md)! | [formatToValue](../android/icu/text/ListFormatter.md))`(`vararg` `items:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Format a list of objects to a FormattedList. |
 | --- | --- |
-| [ListFormatter.FormattedList](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.FormattedList)! | [formatToValue](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#formatToValue(kotlin.collections.MutableCollection))`(`items:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` Format a collection of objects to a FormattedList. |
-| static [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#getInstance())`()` Create a list formatter that is appropriate for the default FORMAT locale. |
-| static [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#getInstance(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`)` Create a list formatter that is appropriate for a locale. |
+| [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md)! | [formatToValue](../android/icu/text/ListFormatter.md))`(`items:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` Format a collection of objects to a FormattedList. |
+| static [ListFormatter](../android/icu/text/ListFormatter.md)! | [getInstance](../android/icu/text/ListFormatter.md))`()` Create a list formatter that is appropriate for the default FORMAT locale. |
+| static [ListFormatter](../android/icu/text/ListFormatter.md)! | [getInstance](../android/icu/text/ListFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Create a list formatter that is appropriate for a locale. |
 | --- | --- |
-| static [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#getInstance(android.icu.util.ULocale,%20android.icu.text.ListFormatter.Type,%20android.icu.text.ListFormatter.Width))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!`, `type:` ` [ListFormatter.Type](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.Type)!`, `width:` ` [ListFormatter.Width](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.Width)!`)` Create a list formatter that is appropriate for a locale. |
-| static [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` Create a list formatter that is appropriate for a locale. |
-| static [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | [getInstance](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#getInstance(java.util.Locale,%20android.icu.text.ListFormatter.Type,%20android.icu.text.ListFormatter.Width))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`, `type:` ` [ListFormatter.Type](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.Type)!`, `width:` ` [ListFormatter.Width](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.Width)!`)` Create a list formatter that is appropriate for a locale. |
+| static [ListFormatter](../android/icu/text/ListFormatter.md)! | [getInstance](../android/icu/text/ListFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `type:` ` [ListFormatter.Type](../android/icu/text/ListFormatter.Type.md)!`, `width:` ` [ListFormatter.Width](../android/icu/text/ListFormatter.Width.md)!`)` Create a list formatter that is appropriate for a locale. |
+| static [ListFormatter](../android/icu/text/ListFormatter.md)! | [getInstance](../android/icu/text/ListFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Create a list formatter that is appropriate for a locale. |
+| static [ListFormatter](../android/icu/text/ListFormatter.md)! | [getInstance](../android/icu/text/ListFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `type:` ` [ListFormatter.Type](../android/icu/text/ListFormatter.Type.md)!`, `width:` ` [ListFormatter.Width](../android/icu/text/ListFormatter.Width.md)!`)` Create a list formatter that is appropriate for a locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPatternForNumItems](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#getPatternForNumItems(kotlin.Int))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the pattern to use for a particular item count. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPatternForNumItems](../android/icu/text/ListFormatter.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the pattern to use for a particular item count. |
 
 ## Public methods
 
@@ -96,7 +96,7 @@ Format a list of objects to a FormattedList. You can access the offsets of each 
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [ListFormatter.FormattedList](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.FormattedList)! | items formatted into a FormattedList |
+| [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md)! | items formatted into a FormattedList |
 
 ### formatToValue
 
@@ -114,7 +114,7 @@ Format a collection of objects to a FormattedList. You can access the offsets of
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [ListFormatter.FormattedList](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter.FormattedList)! | items formatted into a FormattedList |
+| [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md)! | items formatted into a FormattedList |
 
 ### getInstance
 
@@ -128,7 +128,7 @@ Create a list formatter that is appropriate for the default FORMAT locale.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------|
-| [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | ListFormatter |
+| [ListFormatter](../android/icu/text/ListFormatter.md)! | ListFormatter |
 
 ### getInstance
 
@@ -142,11 +142,11 @@ Create a list formatter that is appropriate for a locale.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the locale in question. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in question. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------|
-| [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | ListFormatter |
+| [ListFormatter](../android/icu/text/ListFormatter.md)! | ListFormatter |
 
 ### getInstance
 
@@ -164,11 +164,11 @@ Create a list formatter that is appropriate for a locale.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#)!:the locale in question. |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in question. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------|
-| [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | ListFormatter |
+| [ListFormatter](../android/icu/text/ListFormatter.md)! | ListFormatter |
 
 ### getInstance
 
@@ -182,11 +182,11 @@ Create a list formatter that is appropriate for a locale.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the locale in question. |
+| `locale` | [Locale](../java/util/Locale.md)!:the locale in question. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------|
-| [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | ListFormatter |
+| [ListFormatter](../android/icu/text/ListFormatter.md)! | ListFormatter |
 
 ### getInstance
 
@@ -204,11 +204,11 @@ Create a list formatter that is appropriate for a locale.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:the locale in question. |
+| `locale` | [Locale](../java/util/Locale.md)!:the locale in question. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------|
-| [ListFormatter](https://developer.android.com/reference/kotlin/android/icu/text/ListFormatter#)! | ListFormatter |
+| [ListFormatter](../android/icu/text/ListFormatter.md)! | ListFormatter |
 
 ### getPatternForNumItems
 

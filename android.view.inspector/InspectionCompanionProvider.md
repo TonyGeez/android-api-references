@@ -4,16 +4,16 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # InspectionCompanionProvider
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/inspector/InspectionCompanionProvider "View this page in Java") 
+Kotlin| [Java](../android/view/inspector/InspectionCompanionProvider.md) 
 | --- | --- |
 
 ```
 interface InspectionCompanionProvider
 ```
 
-| [android.view.inspector.InspectionCompanionProvider](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanionProvider#) |
+| [android.view.inspector.InspectionCompanionProvider](../android/view/inspector/InspectionCompanionProvider.md) |
 
-| Known Direct Subclasses [StaticInspectionCompanionProvider](https://developer.android.com/reference/kotlin/android/view/inspector/StaticInspectionCompanionProvider) |----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| | [StaticInspectionCompanionProvider](https://developer.android.com/reference/kotlin/android/view/inspector/StaticInspectionCompanionProvider) | An inspection companion provider that finds companions as inner classes or generated code. | |
+| Known Direct Subclasses [StaticInspectionCompanionProvider](../android/view/inspector/StaticInspectionCompanionProvider.md) |----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| | [StaticInspectionCompanionProvider](../android/view/inspector/StaticInspectionCompanionProvider.md) | An inspection companion provider that finds companions as inner classes or generated code. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An interface for services that can provide inspection companions for a class.
@@ -22,7 +22,7 @@ An interface for services that can provide inspection companions for a class.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [InspectionCompanion](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion)\<T\>? | [provide](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanionProvider#provide(java.lang.Class))`(`cls:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<T>`)` Provide an [InspectionCompanion](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion) for the supplied class. |
+| abstract [InspectionCompanion](../android/view/inspector/InspectionCompanion.md)\<T\>? | [provide](../android/view/inspector/InspectionCompanionProvider.md))`(`cls:` ` [Class](../java/lang/Class.md)<T>`)` Provide an [InspectionCompanion](../android/view/inspector/InspectionCompanion.md) for the supplied class. |
 
 ## Public methods
 
@@ -34,13 +34,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 abstract fun <T : Any!> provide(cls: Class<T>): InspectionCompanion<T>?
 ```
 
-Provide an [InspectionCompanion](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion) for the supplied class. Implementing classes must not cache companion instances, and should instantiate a new one for each request.
+Provide an [InspectionCompanion](../android/view/inspector/InspectionCompanion.md) for the supplied class. Implementing classes must not cache companion instances, and should instantiate a new one for each request.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cls` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<T\>:A [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#) representing the inspectable type This value cannot be`null`. |
+| `cls` | [Class](../java/lang/Class.md)\<T\>:A [Class](../java/lang/Class.md) representing the inspectable type This value cannot be`null`. |
 | `<T>` | The type to find the companion for |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [InspectionCompanion](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion)<T>? | The inspection companion for the supplied type This value may be`null`. |
+| [InspectionCompanion](../android/view/inspector/InspectionCompanion.md)<T>? | The inspection companion for the supplied type This value may be`null`. |

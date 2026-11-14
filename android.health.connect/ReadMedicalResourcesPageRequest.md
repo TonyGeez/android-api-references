@@ -5,7 +5,7 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 
 # ReadMedicalResourcesPageRequest
 
-Kotlin| [Java](https://developer.android.com/reference/android/health/connect/ReadMedicalResourcesPageRequest "View this page in Java") 
+Kotlin| [Java](../android/health/connect/ReadMedicalResourcesPageRequest.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ class ReadMedicalResourcesPageRequest : ReadMedicalResourcesRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.health.connect.ReadMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest) ||
-| | ↳ | [android.health.connect.ReadMedicalResourcesPageRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#) |
+| ↳ | [android.health.connect.ReadMedicalResourcesRequest](../android/health/connect/ReadMedicalResourcesRequest.md) ||
+| | ↳ | [android.health.connect.ReadMedicalResourcesPageRequest](../android/health/connect/ReadMedicalResourcesPageRequest.md) |
 
 A page read request with specified`pageToken`for android.health.connect.HealthConnectManager#readMedicalResources.
 
-When making a new initial request with new filters, use [ReadMedicalResourcesInitialRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest).
+When making a new initial request with new filters, use [ReadMedicalResourcesInitialRequest](../android/health/connect/ReadMedicalResourcesInitialRequest.md).
 
 Example usage: 
 
@@ -41,19 +41,19 @@ Example usage:
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest.Builder) Builder class for [ReadMedicalResourcesPageRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#). |
+| | [Builder](../android/health/connect/ReadMedicalResourcesPageRequest.Builder.md) Builder class for [ReadMedicalResourcesPageRequest](../android/health/connect/ReadMedicalResourcesPageRequest.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPageToken](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#getPageToken())`()` Returns the page token to read the requested page. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#hashCode())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/ReadMedicalResourcesPageRequest.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPageToken](../android/health/connect/ReadMedicalResourcesPageRequest.md))`()` Returns the page token to read the requested page. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/ReadMedicalResourcesPageRequest.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest#toString())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/ReadMedicalResourcesPageRequest.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [ReadMedicalResourcesRequest](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest) |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageSize](https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest#getPageSize())`()` <br /> Returns maximum number of`MedicalResource`s to be returned by the read operation if set, 1000 otherwise. <br /> | ||
+| From class [ReadMedicalResourcesRequest](../android/health/connect/ReadMedicalResourcesRequest.md) |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageSize](../android/health/connect/ReadMedicalResourcesRequest.md))`()` <br /> Returns maximum number of`MedicalResource`s to be returned by the read operation if set, 1000 otherwise. <br /> | ||
 
 ## Public methods
 

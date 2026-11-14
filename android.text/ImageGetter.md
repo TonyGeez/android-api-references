@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ImageGetter
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/Html.ImageGetter "View this page in Java") 
+Kotlin| [Java](../android/text/Html.ImageGetter.md) 
 | --- | --- |
 
 ```
 interface ImageGetter
 ```
 
-| [android.text.Html.ImageGetter](https://developer.android.com/reference/kotlin/android/text/Html.ImageGetter#) |
+| [android.text.Html.ImageGetter](../android/text/Html.ImageGetter.md) |
 
 Retrieves images for HTML \<img\> tags.
 
@@ -19,7 +19,7 @@ Retrieves images for HTML \<img\> tags.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [getDrawable](https://developer.android.com/reference/kotlin/android/text/Html.ImageGetter#getDrawable(kotlin.String))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This method is called when the HTML parser encounters an \<img\> tag. |
+| abstract [Drawable](../android/graphics/drawable/Drawable.md)! | [getDrawable](../android/text/Html.ImageGetter.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This method is called when the HTML parser encounters an \<img\> tag. |
 
 ## Public methods
 

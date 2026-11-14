@@ -8,7 +8,7 @@ abstract class ActionMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ActionMode](https://developer.android.com/reference/kotlin/android/view/ActionMode#) |
+| ↳ | [android.view.ActionMode](../android/view/ActionMode.md) |
 
 Represents a contextual mode of the user interface. Action modes can be used to provide alternative interaction modes and replace parts of the normal UI until finished. Examples of good action modes include text selection and contextual actions.
 
@@ -42,10 +42,10 @@ Represents a contextual mode of the user interface. Action modes can be used to 
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#clearTextSelection()()` Clear the text selection. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#finish()()` Finish and close this action mode. |
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getCustomView()()` Returns the current custom view for this action mode. |
+| abstract [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getCustomView()()` Returns the current custom view for this action mode. |
 | --- | --- |
-| abstract [Menu](https://developer.android.com/reference/kotlin/android/view/Menu)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getMenu()()` Returns the menu of actions that this action mode presents. |
-| abstract [MenuInflater](https://developer.android.com/reference/kotlin/android/view/MenuInflater)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getMenuInflater()()` Returns a `https://developer.android.com/reference/kotlin/android/view/MenuInflater` with the ActionMode's context. |
+| abstract [Menu](../android/view/Menu.md)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getMenu()()` Returns the menu of actions that this action mode presents. |
+| abstract [MenuInflater](../android/view/MenuInflater.md)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getMenuInflater()()` Returns a `https://developer.android.com/reference/kotlin/android/view/MenuInflater` with the ActionMode's context. |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getSubtitle()()` Returns the current subtitle of this action mode. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getTag()()` Retrieve the tag object associated with this ActionMode. |
@@ -337,7 +337,7 @@ Set a custom view for this action mode. The custom view will take the place of t
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View)!: Custom view to use in place of the title/subtitle. |
+| `view` | [View](../android/view/View.md)!: Custom view to use in place of the title/subtitle. |
 
 **See Also**
 
@@ -423,7 +423,7 @@ Forward text selection data for ActionMode to process. The method is called when
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The start of the selection. If this parameter is \< 0 or \> end, it throws an IllegalArgumentException. |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The end of the selection. If this parameter is \< 0 or \< start, it throws an IllegalArgumentException. |
 | --- | --- |
-| `locales` | [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#): The locales of the texts/view/selection. If it is empty, a default/unknown locale will be used. This value cannot be `null`. |
+| `locales` | [LocaleList](../android/os/LocaleList.md): The locales of the texts/view/selection. If it is empty, a default/unknown locale will be used. This value cannot be `null`. |
 
 ### setTitle
 

@@ -11,8 +11,8 @@ open class FactoryConfigurationError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error.html#) ||
-| | | ↳ | [javax.xml.parsers.FactoryConfigurationError](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError#) |
+| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
+| | | ↳ | [javax.xml.parsers.FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md) |
 | --- | --- | --- | --- |
 
 Thrown when a problem with configuration with the Parser Factories exists. This error will typically be thrown when the class of a parser factory specified in the system properties cannot be found or instantiated.
@@ -21,18 +21,18 @@ Thrown when a problem with configuration with the Parser Factories exists. This 
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FactoryConfigurationError](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError#FactoryConfigurationError())`()` Create a new`FactoryConfigurationError`with no detail message. |
-| [FactoryConfigurationError](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError#FactoryConfigurationError(java.lang.Exception))`(`e:` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!`)` Create a new`FactoryConfigurationError`with a given`Exception`base cause of the error. |
-| [FactoryConfigurationError](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError#FactoryConfigurationError(java.lang.Exception,%20kotlin.String))`(`e:` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the given`Exception`base cause and detail message. |
-| [FactoryConfigurationError](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError#FactoryConfigurationError(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the`String `specified as an error message. |
+| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`()` Create a new`FactoryConfigurationError`with no detail message. |
+| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`(`e:` ` [Exception](../java/lang/Exception.md)!`)` Create a new`FactoryConfigurationError`with a given`Exception`base cause of the error. |
+| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`(`e:` ` [Exception](../java/lang/Exception.md)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the given`Exception`base cause and detail message. |
+| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the`String `specified as an error message. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)! | [getException](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError#getException())`()` Return the actual exception (if any) that caused this exception to be raised. |
+| open [Exception](../java/lang/Exception.md)! | [getException](../javax/xml/parsers/FactoryConfigurationError.md))`()` Return the actual exception (if any) that caused this exception to be raised. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](https://developer.android.com/reference/kotlin/javax/xml/parsers/FactoryConfigurationError#message:kotlin.String) Return the message (if any) for this error . |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../javax/xml/parsers/FactoryConfigurationError.md) Return the message (if any) for this error . |
 
 ## Public constructors
 
@@ -58,7 +58,7 @@ Create a new`FactoryConfigurationError`with a given`Exception`base cause of the 
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:The exception to be encapsulated in a FactoryConfigurationError. |
+| `e` | [Exception](../java/lang/Exception.md)!:The exception to be encapsulated in a FactoryConfigurationError. |
 
 ### FactoryConfigurationError
 
@@ -74,7 +74,7 @@ Create a new`FactoryConfigurationError`with the given`Exception`base cause and d
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!:The exception to be encapsulated in a FactoryConfigurationError |
+| `e` | [Exception](../java/lang/Exception.md)!:The exception to be encapsulated in a FactoryConfigurationError |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The detail message. |
 
 ### FactoryConfigurationError
@@ -105,7 +105,7 @@ Return the actual exception (if any) that caused this exception to be raised.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)! | The encapsulated exception, or null if there is none. |
+| [Exception](../java/lang/Exception.md)! | The encapsulated exception, or null if there is none. |
 
 ## Properties
 

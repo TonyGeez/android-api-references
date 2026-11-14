@@ -11,11 +11,11 @@ open class ReadOnlyBufferException : UnsupportedOperationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.UnsupportedOperationException](https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#) ||
-| | | | | ↳ | [java.nio.ReadOnlyBufferException](https://developer.android.com/reference/kotlin/java/nio/ReadOnlyBufferException#) |
+| | | | ↳ | [java.lang.UnsupportedOperationException](../java/lang/UnsupportedOperationException.md) ||
+| | | | | ↳ | [java.nio.ReadOnlyBufferException](../java/nio/ReadOnlyBufferException.md) |
 
 Unchecked exception thrown when a content-mutation method such as put or compact is invoked upon a read-only buffer.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when a content-mutation method such as put or compact
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ReadOnlyBufferException](https://developer.android.com/reference/kotlin/java/nio/ReadOnlyBufferException#ReadOnlyBufferException())`()` Constructs an instance of this class. |
+| [ReadOnlyBufferException](../java/nio/ReadOnlyBufferException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

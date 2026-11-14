@@ -4,14 +4,14 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 
 # OnSpatializerStateChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/Spatializer.OnSpatializerStateChangedListener "View this page in Java") 
+Kotlin| [Java](../android/media/Spatializer.OnSpatializerStateChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnSpatializerStateChangedListener
 ```
 
-| [android.media.Spatializer.OnSpatializerStateChangedListener](https://developer.android.com/reference/kotlin/android/media/Spatializer.OnSpatializerStateChangedListener#) |
+| [android.media.Spatializer.OnSpatializerStateChangedListener](../android/media/Spatializer.OnSpatializerStateChangedListener.md) |
 
 An interface to be notified of changes to the state of the spatializer effect.
 
@@ -19,8 +19,8 @@ An interface to be notified of changes to the state of the spatializer effect.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSpatializerAvailableChanged](https://developer.android.com/reference/kotlin/android/media/Spatializer.OnSpatializerStateChangedListener#onSpatializerAvailableChanged(android.media.Spatializer,%20kotlin.Boolean))`(`spat:` ` [Spatializer](https://developer.android.com/reference/kotlin/android/media/Spatializer)`, `available:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the availability of the spatializer effect changes |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSpatializerEnabledChanged](https://developer.android.com/reference/kotlin/android/media/Spatializer.OnSpatializerStateChangedListener#onSpatializerEnabledChanged(android.media.Spatializer,%20kotlin.Boolean))`(`spat:` ` [Spatializer](https://developer.android.com/reference/kotlin/android/media/Spatializer)`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the enabled state of the spatializer effect changes |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSpatializerAvailableChanged](../android/media/Spatializer.OnSpatializerStateChangedListener.md))`(`spat:` ` [Spatializer](../android/media/Spatializer.md)`, `available:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the availability of the spatializer effect changes |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSpatializerEnabledChanged](../android/media/Spatializer.OnSpatializerStateChangedListener.md))`(`spat:` ` [Spatializer](../android/media/Spatializer.md)`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the enabled state of the spatializer effect changes |
 
 ## Public methods
 
@@ -39,12 +39,12 @@ Called when the availability of the spatializer effect changes
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spat` | [Spatializer](https://developer.android.com/reference/kotlin/android/media/Spatializer):the`Spatializer`instance whose state changed This value cannot be`null`. |
+| `spat` | [Spatializer](../android/media/Spatializer.md):the`Spatializer`instance whose state changed This value cannot be`null`. |
 | `available` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if the spatializer effect is available and capable of processing the audio for the current configuration of the device,`false`otherwise. |
 
 **See Also**
 
-- [#isAvailable()](https://developer.android.com/reference/kotlin/android/media/Spatializer#isAvailable()) 
+- [#isAvailable()](../android/media/Spatializer.md)) 
 
 ### onSpatializerEnabledChanged
 
@@ -61,9 +61,9 @@ Called when the enabled state of the spatializer effect changes
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spat` | [Spatializer](https://developer.android.com/reference/kotlin/android/media/Spatializer):the`Spatializer`instance whose state changed This value cannot be`null`. |
+| `spat` | [Spatializer](../android/media/Spatializer.md):the`Spatializer`instance whose state changed This value cannot be`null`. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if the spatializer effect is enabled on the device,`false`otherwise |
 
 **See Also**
 
-- [#isEnabled()](https://developer.android.com/reference/kotlin/android/media/Spatializer#isEnabled())
+- [#isEnabled()](../android/media/Spatializer.md))

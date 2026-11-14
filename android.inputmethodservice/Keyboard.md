@@ -9,7 +9,7 @@ open class Keyboard
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.inputmethodservice.Keyboard](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#) |
+| ↳ | [android.inputmethodservice.Keyboard](../android/inputmethodservice/Keyboard.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 29.**
@@ -44,11 +44,11 @@ The layout file for a keyboard contains XML that looks like the following snippe
 
 | XML attributes ||
 |---|---|
-| [`android:horizontalGap`](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#attr_Keyboard) | Default horizontal gap between keys. |
-| [`android:keyHeight`](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#attr_Keyboard) | Default height of a key, in pixels or percentage of display width. |
-| [`android:keyWidth`](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#attr_Keyboard) | Default width of a key, in pixels or percentage of display width. |
+| [`android:horizontalGap`](../android/inputmethodservice/Keyboard.md) | Default horizontal gap between keys. |
+| [`android:keyHeight`](../android/inputmethodservice/Keyboard.md) | Default height of a key, in pixels or percentage of display width. |
+| [`android:keyWidth`](../android/inputmethodservice/Keyboard.md) | Default width of a key, in pixels or percentage of display width. |
 | --- | --- |
-| [`android:verticalGap`](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#attr_Keyboard) | Default vertical gap between rows of keys. |
+| [`android:verticalGap`](../android/inputmethodservice/Keyboard.md) | Default vertical gap between rows of keys. |
 
 | Constants ||
 |---|---|
@@ -76,10 +76,10 @@ The layout file for a keyboard contains XML that looks like the following snippe
 | Public methods ||
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getHeight()()` Returns the total height of the keyboard |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Key)!\>! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getKeys()()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)!\>! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getKeys()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getMinWidth()()` <br /> |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Key)!\>! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getModifierKeys()()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)!\>! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getModifierKeys()()` <br /> |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getNearestKeys(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the indices of the keys that are closest to the given point. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getShiftKeyIndex()()` <br /> |
 | --- | --- |
@@ -88,8 +88,8 @@ The layout file for a keyboard contains XML that looks like the following snippe
 
 | Protected methods ||
 |---|---|
-| open [Keyboard.Key](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Key)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#createKeyFromXml(android.content.res.Resources,%20android.inputmethodservice.Keyboard.Row,%20kotlin.Int,%20kotlin.Int,%20android.content.res.XmlResourceParser)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, parent: https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Row!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parser: https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!)` <br /> |
-| open [Keyboard.Row](https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Row)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#createRowFromXml(android.content.res.Resources,%20android.content.res.XmlResourceParser)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, parser: https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!)` <br /> |
+| open [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#createKeyFromXml(android.content.res.Resources,%20android.inputmethodservice.Keyboard.Row,%20kotlin.Int,%20kotlin.Int,%20android.content.res.XmlResourceParser)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, parent: https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Row!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parser: https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!)` <br /> |
+| open [Keyboard.Row](../android/inputmethodservice/Keyboard.Row.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#createRowFromXml(android.content.res.Resources,%20android.content.res.XmlResourceParser)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, parser: https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getHorizontalGap()()` <br /> |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getKeyHeight()()` <br /> |
@@ -270,7 +270,7 @@ Creates a keyboard from the given xml key layout file.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the application or service context |
+| `context` | [Context](../android/content/Context.md)!: the application or service context |
 | `xmlLayoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource file that contains the keyboard layout and keys. |
 
 ### Keyboard
@@ -288,7 +288,7 @@ Creates a keyboard from the given xml key layout file. Weeds out rows that have 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the application or service context |
+| `context` | [Context](../android/content/Context.md)!: the application or service context |
 | `xmlLayoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource file that contains the keyboard layout and keys. |
 | `modeId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): keyboard mode identifier |
 | --- | --- |
@@ -310,7 +310,7 @@ Creates a keyboard from the given xml key layout file. Weeds out rows that have 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the application or service context |
+| `context` | [Context](../android/content/Context.md)!: the application or service context |
 | `xmlLayoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource file that contains the keyboard layout and keys. |
 | `modeId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): keyboard mode identifier |
 | --- | --- |
@@ -336,7 +336,7 @@ If the specified number of columns is -1, then the keyboard will fit as many key
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: the application or service context |
+| `context` | [Context](../android/content/Context.md)!: the application or service context |
 | `layoutTemplateResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the layout template file, containing no keys. |
 | `characters` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the list of characters to display on the keyboard. One key will be created for each character. |
 | --- | --- |

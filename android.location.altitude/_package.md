@@ -2,10 +2,10 @@
 
 # android.location.altitude
 
-Kotlin| [Java](https://developer.android.com/reference/android/location/altitude/package-summary "View this page in Java")
+Kotlin| [Java](../android/location/altitude/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [AltitudeConverter](https://developer.android.com/reference/kotlin/android/location/altitude/AltitudeConverter) | Converts altitudes reported above the World Geodetic System 1984 (WGS84) reference ellipsoid into ones above Mean Sea Level. |
+| [AltitudeConverter](../android/location/altitude/AltitudeConverter.md) | Converts altitudes reported above the World Geodetic System 1984 (WGS84) reference ellipsoid into ones above Mean Sea Level. |
 | --- | --- |

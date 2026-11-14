@@ -8,7 +8,7 @@ class MediaSessionManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.session.MediaSessionManager](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#) |
+| ↳ | [android.media.session.MediaSessionManager](../android/media/session/MediaSessionManager.md) |
 
 Provides support for interacting with `https://developer.android.com/reference/kotlin/android/media/session/MediaSession` that applications have published to express their ongoing media playback state.
 
@@ -33,14 +33,14 @@ Provides support for interacting with `https://developer.android.com/reference/k
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#addOnSession2TokensChangedListener(android.media.session.MediaSessionManager.OnSession2TokensChangedListener)(listener: https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnSession2TokensChangedListener)` Adds a listener to be notified when the `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getSession2Tokens()` changes. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#addOnSession2TokensChangedListener(android.media.session.MediaSessionManager.OnSession2TokensChangedListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnSession2TokensChangedListener, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#)` Adds a listener to be notified when the `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getSession2Tokens()` changes. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaController](https://developer.android.com/reference/kotlin/android/media/session/MediaController)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getActiveSessions(android.content.ComponentName)(notificationListener: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Get a list of controllers for all active sessions. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getActiveSessionsForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get a list of `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token` for all active sessions for the `packageName`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaController](../android/media/session/MediaController.md)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getActiveSessions(android.content.ComponentName)(notificationListener: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Get a list of controllers for all active sessions. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession.Token](../android/media/session/MediaSession.Token.md)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getActiveSessionsForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get a list of `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token` for all active sessions for the `packageName`. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getActiveSessionsForPackage(kotlin.String,%20android.content.ComponentName)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, notificationListener: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Get a list of `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token` for all active sessions for the `packageName`. |
-| [MediaSession.Token](https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token)? | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getMediaKeyEventSession()()` Gets the media key event session, which would receive a media key event unless specified. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession.Token](../android/media/session/MediaSession.Token.md)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getActiveSessionsForPackage(kotlin.String,%20android.content.ComponentName)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, notificationListener: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Get a list of `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token` for all active sessions for the `packageName`. |
+| [MediaSession.Token](../android/media/session/MediaSession.Token.md)? | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getMediaKeyEventSession()()` Gets the media key event session, which would receive a media key event unless specified. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getMediaKeyEventSessionPackageName()()` Gets the package name of the media key event session. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Session2Token](https://developer.android.com/reference/kotlin/android/media/Session2Token.html#)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getSession2Tokens()()` Gets a list of `https://developer.android.com/reference/kotlin/android/media/Session2Token.html#` with type `https://developer.android.com/reference/kotlin/android/media/Session2Token.html#TYPE_SESSION:kotlin.Int` for the current user. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Session2Token](../android/media/Session2Token.md)!\> | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getSession2Tokens()()` Gets a list of `https://developer.android.com/reference/kotlin/android/media/Session2Token.html#` with type `https://developer.android.com/reference/kotlin/android/media/Session2Token.html#TYPE_SESSION:kotlin.Int` for the current user. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#isTrustedForMediaControl(android.media.session.MediaSessionManager.RemoteUserInfo)(userInfo: https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.RemoteUserInfo)` Checks whether the remote user is a trusted app. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#notifySession2Created(android.media.Session2Token)(token: https://developer.android.com/reference/kotlin/android/media/Session2Token.html#)` Notifies that a new `https://developer.android.com/reference/kotlin/android/media/MediaSession2.html#` with type `https://developer.android.com/reference/kotlin/android/media/Session2Token.html#TYPE_SESSION:kotlin.Int` is created. |
 | --- | --- |
@@ -69,8 +69,8 @@ This requires the `https://developer.android.com/reference/kotlin/android/Manife
 
 | Parameters ||
 |---|---|
-| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener): The listener to add. This value cannot be `null`. |
-| `notificationListener` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: The enabled notification listener component. May be null. |
+| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md): The listener to add. This value cannot be `null`. |
+| `notificationListener` | [ComponentName](../android/content/ComponentName.md)?: The enabled notification listener component. May be null. |
 
 ### addOnActiveSessionsChangedListener
 
@@ -90,9 +90,9 @@ This requires the `https://developer.android.com/reference/kotlin/android/Manife
 
 | Parameters ||
 |---|---|
-| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener): The listener to add. This value cannot be `null`. |
-| `notificationListener` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: The enabled notification listener component. May be null. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?: The handler to post events to. This value may be `null`. |
+| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md): The listener to add. This value cannot be `null`. |
+| `notificationListener` | [ComponentName](../android/content/ComponentName.md)?: The enabled notification listener component. May be null. |
+| `handler` | [Handler](../android/os/Handler.md)?: The handler to post events to. This value may be `null`. |
 | --- | --- |
 
 ### addOnActiveSessionsForPackageChangedListener
@@ -115,10 +115,10 @@ If the `packageName` is different from the `https://developer.android.com/refere
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name filter to be applied for the listener. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor to be used for sending events to listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `notificationListener` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: The enabled notification listener component. May be null. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to be used for sending events to listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `notificationListener` | [ComponentName](../android/content/ComponentName.md)?: The enabled notification listener component. May be null. |
 | --- | --- |
-| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener): The listener to add. This value cannot be `null`. |
+| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md): The listener to add. This value cannot be `null`. |
 
 ### addOnActiveSessionsForPackageChangedListener
 
@@ -139,8 +139,8 @@ If the `packageName` is different from the `https://developer.android.com/refere
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name filter to be applied for the listener. This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor to be used for sending events to listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener): The listener to add. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to be used for sending events to listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md): The listener to add. This value cannot be `null`. |
 | --- | --- |
 
 ### addOnMediaKeyEventSessionChangedListener
@@ -160,8 +160,8 @@ This requires the `https://developer.android.com/reference/kotlin/android/Manife
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor on which the listener should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [MediaSessionManager.OnMediaKeyEventSessionChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener): A `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener`. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the listener should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [MediaSessionManager.OnMediaKeyEventSessionChangedListener](../android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.md): A `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener`. This value cannot be `null`. |
 
 ### addOnSession2TokensChangedListener
 
@@ -176,11 +176,11 @@ fun addOnSession2TokensChangedListener(listener: MediaSessionManager.OnSession2
 
 Adds a listener to be notified when the `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getSession2Tokens()` changes.
 
-This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](https://developer.android.com/reference/androidx/media3/session/package-summary.html).
+This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](../androidx/media3/session/_package.md).
 
 | Parameters ||
 |---|---|
-| `listener` | [MediaSessionManager.OnSession2TokensChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnSession2TokensChangedListener): The listener to add. This value cannot be `null`. |
+| `listener` | [MediaSessionManager.OnSession2TokensChangedListener](../android/media/session/MediaSessionManager.OnSession2TokensChangedListener.md): The listener to add. This value cannot be `null`. |
 
 ### addOnSession2TokensChangedListener
 
@@ -198,12 +198,12 @@ fun addOnSession2TokensChangedListener(
 
 Adds a listener to be notified when the `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#getSession2Tokens()` changes.
 
-This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](https://developer.android.com/reference/androidx/media3/session/package-summary.html).
+This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](../androidx/media3/session/_package.md).
 
 | Parameters ||
 |---|---|
-| `listener` | [MediaSessionManager.OnSession2TokensChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnSession2TokensChangedListener): The listener to add. This value cannot be `null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#): The handler to call listener on. This value cannot be `null`. |
+| `listener` | [MediaSessionManager.OnSession2TokensChangedListener](../android/media/session/MediaSessionManager.OnSession2TokensChangedListener.md): The listener to add. This value cannot be `null`. |
+| `handler` | [Handler](../android/os/Handler.md): The handler to call listener on. This value cannot be `null`. |
 
 ### getActiveSessions
 
@@ -219,7 +219,7 @@ This requires the `https://developer.android.com/reference/kotlin/android/Manife
 
 | Parameters ||
 |---|---|
-| `notificationListener` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: The enabled notification listener component. May be null. |
+| `notificationListener` | [ComponentName](../android/content/ComponentName.md)?: The enabled notification listener component. May be null. |
 
 | Return ||
 |---|---|
@@ -263,7 +263,7 @@ If the `packageName` is provided and is different from `https://developer.androi
 | Parameters ||
 |---|---|
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Package name of the application for which tokens should be fetched. This value cannot be `null`. |
-| `notificationListener` | [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)?: The enabled notification listener component. May be null. |
+| `notificationListener` | [ComponentName](../android/content/ComponentName.md)?: The enabled notification listener component. May be null. |
 
 | Return ||
 |---|---|
@@ -320,7 +320,7 @@ Gets a list of `https://developer.android.com/reference/kotlin/android/media/Ses
 
 Although this API can be used without any restriction, each session owners can accept or reject your uses of `https://developer.android.com/reference/kotlin/android/media/MediaSession2.html#`.
 
-This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](https://developer.android.com/reference/androidx/media3/session/package-summary.html).
+This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](../androidx/media3/session/_package.md).
 
 | Return ||
 |---|---|
@@ -340,7 +340,7 @@ An app is trusted if the app holds the `https://developer.android.com/reference/
 
 | Parameters ||
 |---|---|
-| `userInfo` | [MediaSessionManager.RemoteUserInfo](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.RemoteUserInfo): The remote user info from either `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getCurrentControllerInfo()` or `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.html#getCurrentBrowserInfo()`. This value cannot be `null`. |
+| `userInfo` | [MediaSessionManager.RemoteUserInfo](../android/media/session/MediaSessionManager.RemoteUserInfo.md): The remote user info from either `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#getCurrentControllerInfo()` or `https://developer.android.com/reference/kotlin/android/service/media/MediaBrowserService.html#getCurrentBrowserInfo()`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -363,7 +363,7 @@ Do not use this API directly, but create a new instance through the `https://dev
 
 | Parameters ||
 |---|---|
-| `token` | [Session2Token](https://developer.android.com/reference/kotlin/android/media/Session2Token.html#): newly created session2 token. This value cannot be `null`. |
+| `token` | [Session2Token](../android/media/Session2Token.md): newly created session2 token. This value cannot be `null`. |
 
 ### removeOnActiveSessionsChangedListener
 
@@ -377,7 +377,7 @@ Stop receiving active sessions updates on the specified listener.
 
 | Parameters ||
 |---|---|
-| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener): The listener to remove. This value cannot be `null`. |
+| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md): The listener to remove. This value cannot be `null`. |
 
 ### removeOnActiveSessionsForPackageChangedListener
 
@@ -391,7 +391,7 @@ Stop receiving active sessions updates on the specified listener for package.
 
 | Parameters ||
 |---|---|
-| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener): The listener to remove. This value cannot be `null`. |
+| `sessionListener` | [MediaSessionManager.OnActiveSessionsChangedListener](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md): The listener to remove. This value cannot be `null`. |
 
 ### removeOnMediaKeyEventSessionChangedListener
 
@@ -405,7 +405,7 @@ Stop receiving updates on media key event session change on the specified listen
 
 | Parameters ||
 |---|---|
-| `listener` | [MediaSessionManager.OnMediaKeyEventSessionChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener): A `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener`. This value cannot be `null`. |
+| `listener` | [MediaSessionManager.OnMediaKeyEventSessionChangedListener](../android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.md): A `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener`. This value cannot be `null`. |
 
 ### removeOnSession2TokensChangedListener
 
@@ -420,8 +420,8 @@ fun removeOnSession2TokensChangedListener(listener: MediaSessionManager.OnSessi
 
 Removes the `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnSession2TokensChangedListener` to stop receiving session token updates.
 
-This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](https://developer.android.com/reference/androidx/media3/session/package-summary.html).
+This API is not generally intended for third party application developers. Apps wanting media session functionality should use the [AndroidX Media3 Session Library](../androidx/media3/session/_package.md).
 
 | Parameters ||
 |---|---|
-| `listener` | [MediaSessionManager.OnSession2TokensChangedListener](https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.OnSession2TokensChangedListener): The listener to remove. This value cannot be `null`. |
+| `listener` | [MediaSessionManager.OnSession2TokensChangedListener](../android/media/session/MediaSessionManager.OnSession2TokensChangedListener.md): The listener to remove. This value cannot be `null`. |

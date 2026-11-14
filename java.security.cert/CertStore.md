@@ -10,15 +10,15 @@ open class CertStore
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#) |
+| ↳ | [java.security.cert.CertStore](../java/security/cert/CertStore.md) |
 
 A class for retrieving`Certificate`s and`CRL`s from a repository.
 
 This class uses a provider-based architecture. To create a`CertStore`, call one of the static`getInstance`methods, passing in the type of`CertStore`desired, any applicable initialization parameters and optionally the name of the provider desired.
 
-Once the`CertStore`has been created, it can be used to retrieve`Certificate`s and`CRL`s by calling its [getCertificates](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getCertificates(java.security.cert.CertSelector))and [getCRLs](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getCRLs(java.security.cert.CRLSelector))methods.
+Once the`CertStore`has been created, it can be used to retrieve`Certificate`s and`CRL`s by calling its [getCertificates](../java/security/cert/CertStore.md))and [getCRLs](../java/security/cert/CertStore.md))methods.
 
-Unlike a [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#), which provides access to a cache of private keys and trusted certificates, a`CertStore`is designed to provide access to a potentially vast repository of untrusted certificates and CRLs. For example, an LDAP implementation of`CertStore`provides access to certificates and CRLs stored in one or more directories using the LDAP protocol and the schema as defined in the RFC service attribute.
+Unlike a [KeyStore](../java/security/KeyStore.md), which provides access to a cache of private keys and trusted certificates, a`CertStore`is designed to provide access to a potentially vast repository of untrusted certificates and CRLs. For example, an LDAP implementation of`CertStore`provides access to certificates and CRLs stored in one or more directories using the LDAP protocol and the schema as defined in the RFC service attribute.
 
 Every implementation of the Java platform is required to support the following standard`CertStore`type:
 
@@ -36,21 +36,21 @@ The static methods of this class are also guaranteed to be thread-safe. Multiple
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#CertStore(java.security.cert.CertStoreSpi,%20java.security.Provider,%20kotlin.String,%20java.security.cert.CertStoreParameters))`(`storeSpi:` ` [CertStoreSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreSpi)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!`)` Creates a`CertStore`object of the given type, and encapsulates the given provider implementation (SPI object) in it. |
+| [CertStore](../java/security/cert/CertStore.md))`(`storeSpi:` ` [CertStoreSpi](../java/security/cert/CertStoreSpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!`)` Creates a`CertStore`object of the given type, and encapsulates the given provider implementation (SPI object) in it. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!\>! | [getCRLs](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getCRLs(java.security.cert.CRLSelector))`(`selector:` ` [CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/CRLSelector)!`)` Returns a`Collection`of`CRL`s that match the specified selector. |
-| [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)! | [getCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getCertStoreParameters())`()` Returns the parameters used to initialize this`CertStore`. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [getCertificates](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getCertificates(java.security.cert.CertSelector))`(`selector:` ` [CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector)!`)` Returns a`Collection`of`Certificate`s that match the specified selector. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [CRL](../java/security/cert/CRL.md)!\>! | [getCRLs](../java/security/cert/CertStore.md))`(`selector:` ` [CRLSelector](../java/security/cert/CRLSelector.md)!`)` Returns a`Collection`of`CRL`s that match the specified selector. |
+| [CertStoreParameters](../java/security/cert/CertStoreParameters.md)! | [getCertStoreParameters](../java/security/cert/CertStore.md))`()` Returns the parameters used to initialize this`CertStore`. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Certificate](../java/security/cert/Certificate.md)!\>! | [getCertificates](../java/security/cert/CertStore.md))`(`selector:` ` [CertSelector](../java/security/cert/CertSelector.md)!`)` Returns a`Collection`of`Certificate`s that match the specified selector. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultType](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getDefaultType())`()` Returns the default`CertStore`type as specified by the`certstore.type`security property, or the string "LDAP" if no such property exists. |
-| openstatic [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getInstance(kotlin.String,%20java.security.cert.CertStoreParameters))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!`)` Returns a`CertStore`object that implements the specified`CertStore`type and is initialized with the specified parameters. |
-| openstatic [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getInstance(kotlin.String,%20java.security.cert.CertStoreParameters,%20kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertStore`object that implements the specified`CertStore`type. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultType](../java/security/cert/CertStore.md))`()` Returns the default`CertStore`type as specified by the`certstore.type`security property, or the string "LDAP" if no such property exists. |
+| openstatic [CertStore](../java/security/cert/CertStore.md)! | [getInstance](../java/security/cert/CertStore.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!`)` Returns a`CertStore`object that implements the specified`CertStore`type and is initialized with the specified parameters. |
+| openstatic [CertStore](../java/security/cert/CertStore.md)! | [getInstance](../java/security/cert/CertStore.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertStore`object that implements the specified`CertStore`type. |
 | --- | --- |
-| openstatic [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#)! | [getInstance](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getInstance(kotlin.String,%20java.security.cert.CertStoreParameters,%20java.security.Provider))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`CertStore`object that implements the specified`CertStore`type. |
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getProvider())`()` Returns the provider of this`CertStore`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#getType())`()` Returns the type of this`CertStore`. |
+| openstatic [CertStore](../java/security/cert/CertStore.md)! | [getInstance](../java/security/cert/CertStore.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a`CertStore`object that implements the specified`CertStore`type. |
+| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/cert/CertStore.md))`()` Returns the provider of this`CertStore`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../java/security/cert/CertStore.md))`()` Returns the type of this`CertStore`. |
 | --- | --- |
 
 ## Protected constructors
@@ -71,11 +71,11 @@ Creates a`CertStore`object of the given type, and encapsulates the given provide
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `storeSpi` | [CertStoreSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreSpi)!:the provider implementation |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
+| `storeSpi` | [CertStoreSpi](../java/security/cert/CertStoreSpi.md)!:the provider implementation |
+| `provider` | [Provider](../java/security/Provider.md)!:the provider |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the type |
 | --- | --- |
-| `params` | [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!:the initialization parameters (may be`null`) |
+| `params` | [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!:the initialization parameters (may be`null`) |
 
 ## Public methods
 
@@ -95,11 +95,11 @@ Some`CertStore`implementations (especially LDAP`CertStore`s) may throw a`CertSto
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `selector` | [CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/CRLSelector)!:A`CRLSelector`used to select which`CRL`s should be returned. Specify`null`to return all`CRL`s (if supported). |
+| `selector` | [CRLSelector](../java/security/cert/CRLSelector.md)!:A`CRLSelector`used to select which`CRL`s should be returned. Specify`null`to return all`CRL`s (if supported). |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!>! | A`Collection`of`CRL`s that match the specified selector (never`null`) |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [CRL](../java/security/cert/CRL.md)!>! | A`Collection`of`CRL`s that match the specified selector (never`null`) |
 
 | Exceptions ||
 |-----------------------------------------|------------------------|
@@ -117,7 +117,7 @@ Returns the parameters used to initialize this`CertStore`. Note that the`CertSto
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)! | the parameters used to initialize this`CertStore`(may be`null`) |
+| [CertStoreParameters](../java/security/cert/CertStoreParameters.md)! | the parameters used to initialize this`CertStore`(may be`null`) |
 
 ### getCertificates
 
@@ -135,11 +135,11 @@ Some`CertStore`implementations (especially LDAP`CertStore`s) may throw a`CertSto
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `selector` | [CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector)!:A`CertSelector`used to select which`Certificate`s should be returned. Specify`null`to return all`Certificate`s (if supported). |
+| `selector` | [CertSelector](../java/security/cert/CertSelector.md)!:A`CertSelector`used to select which`Certificate`s should be returned. Specify`null`to return all`Certificate`s (if supported). |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!>! | A`Collection`of`Certificate`s that match the specified selector (never`null`) |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Certificate](../java/security/cert/Certificate.md)!>! | A`Collection`of`Certificate`s that match the specified selector (never`null`) |
 
 | Exceptions ||
 |-----------------------------------------|------------------------|
@@ -165,7 +165,7 @@ The default`CertStore`type can be changed by setting the value of the`certstore.
 
 **See Also**
 
-- [java.security.Security](https://developer.android.com/reference/kotlin/java/security/Security.html#) 
+- [java.security.Security](../java/security/Security.md) 
 
 ### getInstance
 
@@ -182,18 +182,18 @@ Returns a`CertStore`object that implements the specified`CertStore`type and is i
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new CertStore object encapsulating the CertStoreSpi implementation from the first Provider that supports the specified type is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security.html#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 The`CertStore`that is returned is initialized with the specified`CertStoreParameters`. The type of parameters needed may vary between different types of`CertStore`s. Note that the specified`CertStoreParameters`object is cloned.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the requested`CertStore`type. See the CertStore section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#certstore-types) for information about standard types. |
-| `params` | [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!:the initialization parameters (may be`null`). |
+| `params` | [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!:the initialization parameters (may be`null`). |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#)! | a`CertStore`object that implements the specified`CertStore`type |
+| [CertStore](../java/security/cert/CertStore.md)! | a`CertStore`object that implements the specified`CertStore`type |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------------------------------------------------------------|
@@ -204,7 +204,7 @@ The`CertStore`that is returned is initialized with the specified`CertStoreParame
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -222,20 +222,20 @@ Returns a`CertStore`object that implements the specified`CertStore`type.
 
 A new CertStore object encapsulating the CertStoreSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security.html#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 The`CertStore`that is returned is initialized with the specified`CertStoreParameters`. The type of parameters needed may vary between different types of`CertStore`s. Note that the specified`CertStoreParameters`object is cloned.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the requested`CertStore`type. See the CertStore section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#certstore-types) for information about standard types. |
-| `params` | [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!:the initialization parameters (may be`null`). |
+| `params` | [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!:the initialization parameters (may be`null`). |
 | `provider` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the provider. |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#)! | a`CertStore`object that implements the specified type |
+| [CertStore](../java/security/cert/CertStore.md)! | a`CertStore`object that implements the specified type |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -248,7 +248,7 @@ The`CertStore`that is returned is initialized with the specified`CertStoreParame
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -271,13 +271,13 @@ The`CertStore`that is returned is initialized with the specified`CertStoreParame
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the requested`CertStore`type. See the CertStore section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#certstore-types) for information about standard types. |
-| `params` | [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!:the initialization parameters (may be`null`). |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider. |
+| `params` | [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!:the initialization parameters (may be`null`). |
+| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore#)! | a`CertStore`object that implements the specified type |
+| [CertStore](../java/security/cert/CertStore.md)! | a`CertStore`object that implements the specified type |
 
 | Exceptions ||
 |----------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -289,7 +289,7 @@ The`CertStore`that is returned is initialized with the specified`CertStoreParame
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getProvider
 
@@ -303,7 +303,7 @@ Returns the provider of this`CertStore`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------|
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | the provider of this`CertStore` |
+| [Provider](../java/security/Provider.md)! | the provider of this`CertStore` |
 
 ### getType
 

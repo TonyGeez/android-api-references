@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # UserDictionary
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/UserDictionary "View this page in Java") 
+Kotlin| [Java](../android/provider/UserDictionary.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UserDictionary
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.UserDictionary](https://developer.android.com/reference/kotlin/android/provider/UserDictionary#) |
+| ↳ | [android.provider.UserDictionary](../android/provider/UserDictionary.md) |
 
 A provider of user defined words for input methods to use for predictive text input. Applications and input methods may add words into the dictionary. Words can have associated frequency information and locale information.
 
@@ -23,19 +23,19 @@ A provider of user defined words for input methods to use for predictive text in
 
 | Nested classes ||
 |------|--------------------------------------------------------------------------------------------------------------------------------|
-| open | [Words](https://developer.android.com/reference/kotlin/android/provider/UserDictionary.Words) Contains the user defined words. |
+| open | [Words](../android/provider/UserDictionary.Words.md) Contains the user defined words. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](https://developer.android.com/reference/kotlin/android/provider/UserDictionary#AUTHORITY:kotlin.String) Authority string for this provider. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/UserDictionary.md) Authority string for this provider. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------|---|
-| [UserDictionary](https://developer.android.com/reference/kotlin/android/provider/UserDictionary#UserDictionary())`()` <br /> |
+| [UserDictionary](../android/provider/UserDictionary.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [CONTENT_URI](https://developer.android.com/reference/kotlin/android/provider/UserDictionary#CONTENT_URI:android.net.Uri) The content:// style URL for this provider |
+| static [Uri](../android/net/Uri.md)! | [CONTENT_URI](../android/provider/UserDictionary.md) The content:// style URL for this provider |
 
 ## Constants
 

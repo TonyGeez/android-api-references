@@ -10,7 +10,7 @@ class EdECPoint
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.EdECPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint#) |
+| ↳ | [java.security.spec.EdECPoint](../java/security/spec/EdECPoint.md) |
 
 An elliptic curve point used to specify keys as defined by [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://tools.ietf.org/html/rfc8032). These points are distinct from the points represented by`ECPoint`, and they are intended for use with algorithms based on RFC 8032 such as the EdDSA`Signature`algorithm.
 
@@ -20,12 +20,12 @@ An EdEC point is specified by its y-coordinate value and a boolean that indicate
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EdECPoint](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint#EdECPoint(kotlin.Boolean,%20java.math.BigInteger))`(`xOdd:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `y:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)`)` Construct an EdECPoint. |
+| [EdECPoint](../java/security/spec/EdECPoint.md))`(`xOdd:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `y:` ` [BigInteger](../java/math/BigInteger.md)`)` Construct an EdECPoint. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#) | [getY](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint#getY())`()` Get the y-coordinate of the point. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isXOdd](https://developer.android.com/reference/kotlin/java/security/spec/EdECPoint#isXOdd())`()` Get whether the x-coordinate of the point is odd. |
+| [BigInteger](../java/math/BigInteger.md) | [getY](../java/security/spec/EdECPoint.md))`()` Get the y-coordinate of the point. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isXOdd](../java/security/spec/EdECPoint.md))`()` Get whether the x-coordinate of the point is odd. |
 
 ## Public constructors
 
@@ -44,7 +44,7 @@ Construct an EdECPoint.
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `xOdd` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether the x-coordinate is odd. |
-| `y` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#):the y-coordinate, represented using a`BigInteger`. |
+| `y` | [BigInteger](../java/math/BigInteger.md):the y-coordinate, represented using a`BigInteger`. |
 
 | Exceptions ||
 |----------------------------------|---------------|
@@ -64,7 +64,7 @@ Get the y-coordinate of the point.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#) | the y-coordinate, represented using a`BigInteger`. |
+| [BigInteger](../java/math/BigInteger.md) | the y-coordinate, represented using a`BigInteger`. |
 
 ### isXOdd
 

@@ -9,11 +9,11 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 interface Observer
 ```
 
-| [java.util.Observer](https://developer.android.com/reference/kotlin/java/util/Observer#) |
+| [java.util.Observer](../java/util/Observer.md) |
 
 | **This interface was deprecated in API level 33.**
 |
-| This interface has been deprecated. See the [Observable](https://developer.android.com/reference/kotlin/java/util/Observable) class for further information.
+| This interface has been deprecated. See the [Observable](../java/util/Observable.md) class for further information.
 
 A class can implement the`Observer`interface when it wants to be informed of changes in observable objects.
 
@@ -21,7 +21,7 @@ A class can implement the`Observer`interface when it wants to be informed of cha
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](https://developer.android.com/reference/kotlin/java/util/Observer#update(java.util.Observable,%20kotlin.Any))`(`o:` ` [Observable](https://developer.android.com/reference/kotlin/java/util/Observable)!`, `arg:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` This method is called whenever the observed object is changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/Observer.md))`(`o:` ` [Observable](../java/util/Observable.md)!`, `arg:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` This method is called whenever the observed object is changed. |
 
 ## Public methods
 
@@ -42,5 +42,5 @@ This method is called whenever the observed object is changed. An application ca
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------|
-| `o` | [Observable](https://developer.android.com/reference/kotlin/java/util/Observable)!:the observable object. |
+| `o` | [Observable](../java/util/Observable.md)!:the observable object. |
 | `arg` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:an argument passed to the`notifyObservers`method. |

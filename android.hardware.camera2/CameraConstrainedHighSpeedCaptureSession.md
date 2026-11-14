@@ -8,8 +8,8 @@ abstract class CameraConstrainedHighSpeedCaptureSession : CameraCaptureSession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.hardware.camera2.CameraCaptureSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession) ||
-| | ↳ | [android.hardware.camera2.CameraConstrainedHighSpeedCaptureSession](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#) |
+| ↳ | [android.hardware.camera2.CameraCaptureSession](../android/hardware/camera2/CameraCaptureSession.md) ||
+| | ↳ | [android.hardware.camera2.CameraConstrainedHighSpeedCaptureSession](../android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession.md) |
 
 A constrained high speed capture session for a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice`, used for capturing high speed images from the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice` for high speed video recording use case.
 
@@ -31,7 +31,7 @@ A closed session clears any repeating requests (as if `https://developer.android
 
 | Public methods ||
 |---|---|
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#createHighSpeedRequestList(android.hardware.camera2.CaptureRequest)(request: https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest)` Create a unmodifiable list of requests that is suitable for constrained high speed capture session streaming. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](../android/hardware/camera2/CaptureRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#createHighSpeedRequestList(android.hardware.camera2.CaptureRequest)(request: https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest)` Create a unmodifiable list of requests that is suitable for constrained high speed capture session streaming. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#abortCaptures()()`
 
@@ -359,7 +359,7 @@ Submitting a request list created by this method to a normal capture session wil
 
 | Parameters ||
 |---|---|
-| `request` | [CaptureRequest](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest): The high speed capture request that will be used to generate the high speed request list. This value cannot be `null`. |
+| `request` | [CaptureRequest](../android/hardware/camera2/CaptureRequest.md): The high speed capture request that will be used to generate the high speed request list. This value cannot be `null`. |
 
 | Return ||
 |---|---|

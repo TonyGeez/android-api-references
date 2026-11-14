@@ -2,7 +2,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # CellInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/CellInfo "View this page in Java")
+Kotlin | [Java](../android/telephony/CellInfo.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ abstract class CellInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo#) |
+| ↳ | [android.telephony.CellInfo](../android/telephony/CellInfo.md) |
 
-| Known Direct Subclasses [CellInfoCdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoCdma), [CellInfoGsm](https://developer.android.com/reference/kotlin/android/telephony/CellInfoGsm), [CellInfoLte](https://developer.android.com/reference/kotlin/android/telephony/CellInfoLte), [CellInfoNr](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr), [CellInfoTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma), [CellInfoWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoWcdma) |---|---| | [CellInfoCdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoCdma) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a CDMA cell that provides identity and measurement info. | | [CellInfoGsm](https://developer.android.com/reference/kotlin/android/telephony/CellInfoGsm) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a GSM cell that provides identity and measurement info. | | [CellInfoLte](https://developer.android.com/reference/kotlin/android/telephony/CellInfoLte) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an LTE cell that provides identity and measurement info. | | [CellInfoNr](https://developer.android.com/reference/kotlin/android/telephony/CellInfoNr) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an 5G NR cell that provides identity and measurement info. | | [CellInfoTdscdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a TD-SCDMA cell that provides identity and measurement info. | | [CellInfoWcdma](https://developer.android.com/reference/kotlin/android/telephony/CellInfoWcdma) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a WCDMA cell that provides identity and measurement info. | |
+| Known Direct Subclasses [CellInfoCdma](../android/telephony/CellInfoCdma.md), [CellInfoGsm](../android/telephony/CellInfoGsm.md), [CellInfoLte](../android/telephony/CellInfoLte.md), [CellInfoNr](../android/telephony/CellInfoNr.md), [CellInfoTdscdma](../android/telephony/CellInfoTdscdma.md), [CellInfoWcdma](../android/telephony/CellInfoWcdma.md) |---|---| | [CellInfoCdma](../android/telephony/CellInfoCdma.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a CDMA cell that provides identity and measurement info. | | [CellInfoGsm](../android/telephony/CellInfoGsm.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a GSM cell that provides identity and measurement info. | | [CellInfoLte](../android/telephony/CellInfoLte.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an LTE cell that provides identity and measurement info. | | [CellInfoNr](../android/telephony/CellInfoNr.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an 5G NR cell that provides identity and measurement info. | | [CellInfoTdscdma](../android/telephony/CellInfoTdscdma.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a TD-SCDMA cell that provides identity and measurement info. | | [CellInfoWcdma](../android/telephony/CellInfoWcdma.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a WCDMA cell that provides identity and measurement info. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Immutable cell information from a point in time.
@@ -41,8 +41,8 @@ Immutable cell information from a point in time.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellConnectionStatus()()` Gets the connection status of this cell. |
 | --- | --- |
-| abstract [CellIdentity](https://developer.android.com/reference/kotlin/android/telephony/CellIdentity) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellIdentity()()` <br /> |
-| abstract [CellSignalStrength](https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellSignalStrength()()` <br /> |
+| abstract [CellIdentity](../android/telephony/CellIdentity.md) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellIdentity()()` <br /> |
+| abstract [CellSignalStrength](../android/telephony/CellSignalStrength.md) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellSignalStrength()()` <br /> |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimeStamp()()` Approximate time this cell information was received from the modem. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimestampMillis()()` Approximate time this cell information was received from the modem. |
@@ -54,7 +54,7 @@ Immutable cell information from a point in time.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo#)!\> | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CellInfo](../android/telephony/CellInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
 
 ## Constants
 
@@ -312,7 +312,7 @@ Implement the Parcelable interface
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

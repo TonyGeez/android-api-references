@@ -8,7 +8,7 @@ abstract class Record
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Record](https://developer.android.com/reference/kotlin/java/lang/Record#) |
+| ↳ | [java.lang.Record](../java/lang/Record.md) |
 
 This is the common base class of all Java language record classes.
 
@@ -115,7 +115,7 @@ abstract fun toString(): String
 
 Returns a string representation of the record. In accordance with the general contract of `https://developer.android.com/reference/kotlin/java/lang/Object#toString()`, the `toString` method returns a string that "textually represents" this record. The result should be a concise but informative representation that is easy for a person to read.
 
-In addition to this general contract, record classes must further participate in the invariant that any two records which are [equal](https://developer.android.com/reference/kotlin/java/lang/Record#equals(kotlin.Any)) must produce equal strings. This invariant is necessarily relaxed in the rare case where corresponding equal component values might fail to produce equal strings for themselves.
+In addition to this general contract, record classes must further participate in the invariant that any two records which are [equal](../java/lang/Record.md)) must produce equal strings. This invariant is necessarily relaxed in the rare case where corresponding equal component values might fail to produce equal strings for themselves.
 
 | Return ||
 |---|---|

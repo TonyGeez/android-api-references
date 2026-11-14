@@ -8,7 +8,7 @@ class PublishConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.aware.PublishConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#) |
+| ↳ | [android.net.wifi.aware.PublishConfig](../android/net/wifi/aware/PublishConfig.md) |
 
 Defines the configuration of an Aware publish session. Built using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig.Builder`. A publish session is created using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#publish(android.net.wifi.aware.PublishConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)` or updated using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishDiscoverySession#updatePublish(android.net.wifi.aware.PublishConfig)`.
 
@@ -41,8 +41,8 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getInstantCommunicationBand()()` Get the Wi-Fi band for instant communication mode for this publish session |
 | --- | --- |
-| [AwarePairingConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getPairingConfig()()` Get the Aware Pairing config for this publish session |
-| [WifiAwareDataPathSecurityConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareDataPathSecurityConfig)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getSecurityConfig()()` Get the data-path security config for this publish session |
+| [AwarePairingConfig](../android/net/wifi/aware/AwarePairingConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getPairingConfig()()` Get the Aware Pairing config for this publish session |
+| [WifiAwareDataPathSecurityConfig](../android/net/wifi/aware/WifiAwareDataPathSecurityConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#getSecurityConfig()()` Get the data-path security config for this publish session |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#isFrameworkOffloadedPairingEnabled()()` Get whether framework offloaded pairing is enabled for this publish config. |
@@ -53,7 +53,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PublishConfig](https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PublishConfig](../android/net/wifi/aware/PublishConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -264,7 +264,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

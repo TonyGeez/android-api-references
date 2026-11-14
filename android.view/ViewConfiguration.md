@@ -8,7 +8,7 @@ open class ViewConfiguration
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewConfiguration](https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#) |
+| ↳ | [android.view.ViewConfiguration](../android/view/ViewConfiguration.md) |
 
 Contains methods to standard constants used in the UI for timeouts, sizes, and distances.
 
@@ -20,7 +20,7 @@ Contains methods to standard constants used in the UI for timeouts, sizes, and d
 
 | Public methods ||
 |---|---|
-| open static [ViewConfiguration](https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#)! | `https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns a configuration for the specified `https://developer.android.com/reference/kotlin/android/content/Context.html#`. |
+| open static [ViewConfiguration](../android/view/ViewConfiguration.md)! | `https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns a configuration for the specified `https://developer.android.com/reference/kotlin/android/content/Context.html#`. |
 | open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#getAmbiguousGestureMultiplier()()` The multiplication factor for inhibiting default gestures. |
 | open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#getDefaultActionModeHideDuration()()` <br /> |
 | --- | --- |
@@ -120,7 +120,7 @@ Returns a configuration for the specified `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): A visual `https://developer.android.com/reference/kotlin/android/content/Context.html#` is preferred to initialize the view configuration. It should ideally be an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` or other `https://developer.android.com/reference/kotlin/android/content/Context.html#` created with `https://developer.android.com/reference/kotlin/android/content/Context.html#createWindowContext(kotlin.Int,%20android.os.Bundle)`, but is not required to be. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): A visual `https://developer.android.com/reference/kotlin/android/content/Context.html#` is preferred to initialize the view configuration. It should ideally be an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` or other `https://developer.android.com/reference/kotlin/android/content/Context.html#` created with `https://developer.android.com/reference/kotlin/android/content/Context.html#createWindowContext(kotlin.Int,%20android.os.Bundle)`, but is not required to be. This value cannot be `null`. |
 
 ### getAmbiguousGestureMultiplier
 

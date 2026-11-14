@@ -4,22 +4,22 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # VisibilityListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ActionProvider.VisibilityListener "View this page in Java") 
+Kotlin| [Java](../android/view/ActionProvider.VisibilityListener.md) 
 | --- | --- |
 
 ```
 interface VisibilityListener
 ```
 
-| [android.view.ActionProvider.VisibilityListener](https://developer.android.com/reference/kotlin/android/view/ActionProvider.VisibilityListener#) |
+| [android.view.ActionProvider.VisibilityListener](../android/view/ActionProvider.VisibilityListener.md) |
 
-Listens to changes in visibility as reported by [ActionProvider.refreshVisibility()](https://developer.android.com/reference/kotlin/android/view/ActionProvider#refreshVisibility()).
+Listens to changes in visibility as reported by [ActionProvider.refreshVisibility()](../android/view/ActionProvider.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActionProviderVisibilityChanged](https://developer.android.com/reference/kotlin/android/view/ActionProvider.VisibilityListener#onActionProviderVisibilityChanged(kotlin.Boolean))`(`isVisible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActionProviderVisibilityChanged](../android/view/ActionProvider.VisibilityListener.md))`(`isVisible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 
 ## Public methods
 

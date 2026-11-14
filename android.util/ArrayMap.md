@@ -8,7 +8,7 @@ class ArrayMap<K : Any!, V : Any!> : MutableMap<K, V>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.ArrayMap](https://developer.android.com/reference/kotlin/android/util/ArrayMap#) |
+| ↳ | [android.util.ArrayMap](../android/util/ArrayMap.md) |
 
 ArrayMap is a generic key-\>value mapping data structure that is designed to be more memory efficient than a traditional `https://developer.android.com/reference/kotlin/java/util/HashMap.html#`. It keeps its mappings in an array data structure -- an integer array of hash codes for each item, and an Object array of the key/value pairs. This allows it to avoid having to create an extra object for every entry put in to the map, and it also tries to control the growth of the size of these arrays more aggressively (since growing them only requires copying the entries in the array, not rebuilding a hash map).
 
@@ -236,7 +236,7 @@ Performs the given action for all elements in the stored order. This implementat
 
 | Parameters ||
 |---|---|
-| `action` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<in K, in V\>: The action to be performed for each element |
+| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<in K, in V\>: The action to be performed for each element |
 
 | Exceptions ||
 |---|---|
@@ -390,7 +390,7 @@ Perform a `https://developer.android.com/reference/kotlin/android/util/ArrayMap#
 
 | Parameters ||
 |---|---|
-| `array` | [ArrayMap](https://developer.android.com/reference/kotlin/android/util/ArrayMap#)\<out K, out V\>!: The array whose contents are to be retrieved. |
+| `array` | [ArrayMap](../android/util/ArrayMap.md)\<out K, out V\>!: The array whose contents are to be retrieved. |
 
 ### putAll
 
@@ -490,7 +490,7 @@ Replaces each entry's value with the result of invoking the given function on th
 
 | Parameters ||
 |---|---|
-| `function` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<in K, in V, out V\>: The function to apply to each entry |
+| `function` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V\>: The function to apply to each entry |
 
 | Exceptions ||
 |---|---|

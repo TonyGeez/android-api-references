@@ -10,9 +10,9 @@ class RandomGeneratorFactory<T : RandomGenerator!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.random.RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) |
+| ↳ | [java.util.random.RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) |
 
-This is a factory class for generating multiple random number generators of a specific [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms). [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) also provides methods for selecting random number generator algorithms. A specific [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) can be located by using the [RandomGeneratorFactory.of(String)](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#of(kotlin.String))method, where the argument string is the name of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) required. The method [RandomGeneratorFactory.all()](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#all())produces a non-empty [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#) of all available [RandomGeneratorFactorys](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) that can be searched to locate a [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) suitable to the task. There are three methods for constructing a RandomGenerator instance, depending on the type of initial seed required. [RandomGeneratorFactory.create(long)](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#create(kotlin.Long))is used for long seed construction,[RandomGeneratorFactory.create(byte[])](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#create(kotlin.ByteArray))is used for byte\[\] seed construction, and [RandomGeneratorFactory.create()](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#create())is used for random seed construction. Example; 
+This is a factory class for generating multiple random number generators of a specific [algorithm](../java/util/random/_package.md). [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) also provides methods for selecting random number generator algorithms. A specific [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) can be located by using the [RandomGeneratorFactory.of(String)](../java/util/random/RandomGeneratorFactory.md))method, where the argument string is the name of the [algorithm](../java/util/random/_package.md) required. The method [RandomGeneratorFactory.all()](../java/util/random/RandomGeneratorFactory.md))produces a non-empty [Stream](../java/util/stream/Stream.md) of all available [RandomGeneratorFactorys](../java/util/random/RandomGeneratorFactory.md) that can be searched to locate a [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) suitable to the task. There are three methods for constructing a RandomGenerator instance, depending on the type of initial seed required. [RandomGeneratorFactory.create(long)](../java/util/random/RandomGeneratorFactory.md))is used for long seed construction,[RandomGeneratorFactory.create(byte[])](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#create(kotlin.ByteArray))is used for byte\[\] seed construction, and [RandomGeneratorFactory.create()](../java/util/random/RandomGeneratorFactory.md))is used for random seed construction. Example; 
 
 ```kotlin
 <code>RandomGeneratorFactory&lt;RandomGenerator&gt; factory = RandomGeneratorFactory.of("Random");
@@ -25,7 +25,7 @@ This is a factory class for generating multiple random number generators of a sp
       }
   </code>
 ```
-RandomGeneratorFactory also provides methods describing the attributes (or properties) of a generator and can be used to select random number generator [algorithms](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms). These methods are typically used in conjunction with [RandomGeneratorFactory.all()](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#all()). In this example, the code locates the [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) that produces [RandomGenerators](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) with the highest number of state bits. 
+RandomGeneratorFactory also provides methods describing the attributes (or properties) of a generator and can be used to select random number generator [algorithms](../java/util/random/_package.md). These methods are typically used in conjunction with [RandomGeneratorFactory.all()](../java/util/random/RandomGeneratorFactory.md)). In this example, the code locates the [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) that produces [RandomGenerators](../java/util/random/RandomGenerator.md) with the highest number of state bits. 
 
 ```kotlin
 <code>RandomGeneratorFactory&lt;RandomGenerator&gt; best = RandomGeneratorFactory.all()
@@ -45,32 +45,32 @@ RandomGeneratorFactory also provides methods describing the attributes (or prope
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#)\< [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator)!\>!\>! | [all](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#all())`()` Returns a non-empty stream of available [RandomGeneratorFactory(s)](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#). |
-| T | [create](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#create())`()` Create an instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) based on [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) chosen. |
-| T | [create](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#create(kotlin.ByteArray))`(`seed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create an instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) based on [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) chosen providing a starting byte\[\] seed. |
+| static [Stream](../java/util/stream/Stream.md)\< [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md)\< [RandomGenerator](../java/util/random/RandomGenerator.md)!\>!\>! | [all](../java/util/random/RandomGeneratorFactory.md))`()` Returns a non-empty stream of available [RandomGeneratorFactory(s)](../java/util/random/RandomGeneratorFactory.md). |
+| T | [create](../java/util/random/RandomGeneratorFactory.md))`()` Create an instance of [RandomGenerator](../java/util/random/RandomGenerator.md) based on [algorithm](../java/util/random/_package.md) chosen. |
+| T | [create](../java/util/random/RandomGeneratorFactory.md))`(`seed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create an instance of [RandomGenerator](../java/util/random/RandomGenerator.md) based on [algorithm](../java/util/random/_package.md) chosen providing a starting byte\[\] seed. |
 | --- | --- |
-| T | [create](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#create(kotlin.Long))`(`seed:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Create an instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) based on [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) chosen providing a starting long seed. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [equidistribution](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#equidistribution())`()` Returns the equidistribution of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms). |
-| static [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#)\< [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator)!\>! | [getDefault](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#getDefault())`()` Returns a [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) meeting the minimal requirement of having an algorithm whose state bits are greater than or equal 64. |
+| T | [create](../java/util/random/RandomGeneratorFactory.md))`(`seed:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Create an instance of [RandomGenerator](../java/util/random/RandomGenerator.md) based on [algorithm](../java/util/random/_package.md) chosen providing a starting long seed. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [equidistribution](../java/util/random/RandomGeneratorFactory.md))`()` Returns the equidistribution of the [algorithm](../java/util/random/_package.md). |
+| static [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md)\< [RandomGenerator](../java/util/random/RandomGenerator.md)!\>! | [getDefault](../java/util/random/RandomGeneratorFactory.md))`()` Returns a [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) meeting the minimal requirement of having an algorithm whose state bits are greater than or equal 64. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#group())`()` Return the group name of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) used by the random number generator. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isArbitrarilyJumpable](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isArbitrarilyJumpable())`()` Return true if random generator can jump an arbitrarily specified distant point in the state cycle. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeprecated](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isDeprecated())`()` Return true if the implementation of RandomGenerator (algorithm) has been marked for deprecation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](../java/util/random/RandomGeneratorFactory.md))`()` Return the group name of the [algorithm](../java/util/random/_package.md) used by the random number generator. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isArbitrarilyJumpable](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator can jump an arbitrarily specified distant point in the state cycle. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeprecated](../java/util/random/RandomGeneratorFactory.md))`()` Return true if the implementation of RandomGenerator (algorithm) has been marked for deprecation. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHardware](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isHardware())`()` Return true if random generator uses a hardware device (HRNG) to produce entropic input. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isJumpable](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isJumpable())`()` Return true if random generator can jump a specified distant point in the state cycle. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapable](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isLeapable())`()` Return true if random generator is jumpable and can leap to a very distant point in the state cycle. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHardware](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator uses a hardware device (HRNG) to produce entropic input. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isJumpable](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator can jump a specified distant point in the state cycle. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapable](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator is jumpable and can leap to a very distant point in the state cycle. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSplittable](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isSplittable())`()` Return true if random generator can be cloned into a separate object with the same properties but positioned further in the state cycle. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStatistical](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isStatistical())`()` Return true if random generator is computed using an arithmetic [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) and is statistically deterministic. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStochastic](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isStochastic())`()` Return true if random generator is computed using external or entropic sources as inputs. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSplittable](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator can be cloned into a separate object with the same properties but positioned further in the state cycle. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStatistical](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator is computed using an arithmetic [algorithm](../java/util/random/_package.md) and is statistically deterministic. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStochastic](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator is computed using external or entropic sources as inputs. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStreamable](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#isStreamable())`()` Return true if random generator can be used to create [Streams](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#) of random numbers. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#name())`()` Return the name of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) used by the random number generator. |
-| static [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#)\<T\>! | [of](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#of(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) that can produce instances of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) that utilize the`name` [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStreamable](../java/util/random/RandomGeneratorFactory.md))`()` Return true if random generator can be used to create [Streams](../java/util/stream/Stream.md) of random numbers. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../java/util/random/RandomGeneratorFactory.md))`()` Return the name of the [algorithm](../java/util/random/_package.md) used by the random number generator. |
+| static [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md)\<T\>! | [of](../java/util/random/RandomGeneratorFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) that can produce instances of [RandomGenerator](../java/util/random/RandomGenerator.md) that utilize the`name` [algorithm](../java/util/random/_package.md). |
 | --- | --- |
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [period](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#period())`()` Return the period of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) used by the random number generator. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [stateBits](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#stateBits())`()` Returns number of bits used by the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) to maintain state of seed. |
+| [BigInteger](../java/math/BigInteger.md)! | [period](../java/util/random/RandomGeneratorFactory.md))`()` Return the period of the [algorithm](../java/util/random/_package.md) used by the random number generator. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [stateBits](../java/util/random/RandomGeneratorFactory.md))`()` Returns number of bits used by the [algorithm](../java/util/random/_package.md) to maintain state of seed. |
 
 ## Public methods
 
@@ -82,11 +82,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static fun all(): Stream<RandomGeneratorFactory<RandomGenerator!>!>!
 ```
 
-Returns a non-empty stream of available [RandomGeneratorFactory(s)](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#). RandomGenerators that are marked as deprecated are not included in the result.
+Returns a non-empty stream of available [RandomGeneratorFactory(s)](../java/util/random/RandomGeneratorFactory.md). RandomGenerators that are marked as deprecated are not included in the result.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)< [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#)< [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator)!>!>! | a non-empty stream of all available [RandomGeneratorFactory(s)](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#). |
+| [Stream](../java/util/stream/Stream.md)< [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md)< [RandomGenerator](../java/util/random/RandomGenerator.md)!>!>! | a non-empty stream of all available [RandomGeneratorFactory(s)](../java/util/random/RandomGeneratorFactory.md). |
 
 ### create
 
@@ -96,11 +96,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun create(): T
 ```
 
-Create an instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) based on [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) chosen.
+Create an instance of [RandomGenerator](../java/util/random/RandomGenerator.md) based on [algorithm](../java/util/random/_package.md) chosen.
 
 | Return ||
 |---|-----------------------------------------------------------------------------------------------------------------------|
-| T | new in instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator). |
+| T | new in instance of [RandomGenerator](../java/util/random/RandomGenerator.md). |
 
 ### create
 
@@ -110,7 +110,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun create(seed: ByteArray!): T
 ```
 
-Create an instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) based on [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) chosen providing a starting byte\[\] seed. If byte\[\] seed is not supported by an [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) then the no argument form of create is used.
+Create an instance of [RandomGenerator](../java/util/random/RandomGenerator.md) based on [algorithm](../java/util/random/_package.md) chosen providing a starting byte\[\] seed. If byte\[\] seed is not supported by an [algorithm](../java/util/random/_package.md) then the no argument form of create is used.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------|
@@ -118,7 +118,7 @@ Create an instance of [RandomGenerator](https://developer.android.com/reference/
 
 | Return ||
 |---|-----------------------------------------------------------------------------------------------------------------------|
-| T | new in instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator). |
+| T | new in instance of [RandomGenerator](../java/util/random/RandomGenerator.md). |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -132,7 +132,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun create(seed: Long): T
 ```
 
-Create an instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) based on [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) chosen providing a starting long seed. If long seed is not supported by an algorithm then the no argument form of create is used.
+Create an instance of [RandomGenerator](../java/util/random/RandomGenerator.md) based on [algorithm](../java/util/random/_package.md) chosen providing a starting long seed. If long seed is not supported by an algorithm then the no argument form of create is used.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------|
@@ -140,7 +140,7 @@ Create an instance of [RandomGenerator](https://developer.android.com/reference/
 
 | Return ||
 |---|-----------------------------------------------------------------------------------------------------------------------|
-| T | new in instance of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator). |
+| T | new in instance of [RandomGenerator](../java/util/random/RandomGenerator.md). |
 
 ### equidistribution
 
@@ -150,11 +150,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun equidistribution(): Int
 ```
 
-Returns the equidistribution of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms).
+Returns the equidistribution of the [algorithm](../java/util/random/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the equidistribution of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the equidistribution of the [algorithm](../java/util/random/_package.md). |
 
 ### getDefault
 
@@ -164,11 +164,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static fun getDefault(): RandomGeneratorFactory<RandomGenerator!>!
 ```
 
-Returns a [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) meeting the minimal requirement of having an algorithm whose state bits are greater than or equal 64.
+Returns a [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) meeting the minimal requirement of having an algorithm whose state bits are greater than or equal 64.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#)< [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator)!>! | a [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) |
+| [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md)< [RandomGenerator](../java/util/random/RandomGenerator.md)!>! | a [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) |
 
 ### group
 
@@ -178,11 +178,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun group(): String!
 ```
 
-Return the group name of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) used by the random number generator.
+Return the group name of the [algorithm](../java/util/random/_package.md) used by the random number generator.
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | Group name of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | Group name of the [algorithm](../java/util/random/_package.md). |
 
 ### isArbitrarilyJumpable
 
@@ -276,7 +276,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun isStatistical(): Boolean
 ```
 
-Return true if random generator is computed using an arithmetic [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) and is statistically deterministic.
+Return true if random generator is computed using an arithmetic [algorithm](../java/util/random/_package.md) and is statistically deterministic.
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
@@ -304,7 +304,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun isStreamable(): Boolean
 ```
 
-Return true if random generator can be used to create [Streams](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#) of random numbers.
+Return true if random generator can be used to create [Streams](../java/util/stream/Stream.md) of random numbers.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------|
@@ -318,11 +318,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun name(): String!
 ```
 
-Return the name of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) used by the random number generator.
+Return the name of the [algorithm](../java/util/random/_package.md) used by the random number generator.
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | Name of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | Name of the [algorithm](../java/util/random/_package.md). |
 
 ### of
 
@@ -332,16 +332,16 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static fun <T : RandomGenerator!> of(name: String!): RandomGeneratorFactory<T>!
 ```
 
-Returns a [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) that can produce instances of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) that utilize the`name` [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms).
+Returns a [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) that can produce instances of [RandomGenerator](../java/util/random/RandomGenerator.md) that utilize the`name` [algorithm](../java/util/random/_package.md).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Name of random number generator [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) |
-| `<T>` | Sub-interface of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) to produce |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Name of random number generator [algorithm](../java/util/random/_package.md) |
+| `<T>` | Sub-interface of [RandomGenerator](../java/util/random/RandomGenerator.md) to produce |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#)<T>! | [RandomGeneratorFactory](https://developer.android.com/reference/kotlin/java/util/random/RandomGeneratorFactory#) of [RandomGenerator](https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator) |
+| [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md)<T>! | [RandomGeneratorFactory](../java/util/random/RandomGeneratorFactory.md) of [RandomGenerator](../java/util/random/RandomGenerator.md) |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -356,11 +356,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun period(): BigInteger!
 ```
 
-Return the period of the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) used by the random number generator. Returns BigInteger.ZERO if period is not determinable.
+Return the period of the [algorithm](../java/util/random/_package.md) used by the random number generator. Returns BigInteger.ZERO if period is not determinable.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | BigInteger period. |
+| [BigInteger](../java/math/BigInteger.md)! | BigInteger period. |
 
 ### stateBits
 
@@ -370,8 +370,8 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun stateBits(): Int
 ```
 
-Returns number of bits used by the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) to maintain state of seed.
+Returns number of bits used by the [algorithm](../java/util/random/_package.md) to maintain state of seed.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | number of bits used by the [algorithm](https://developer.android.com/reference/kotlin/java/util/random/package-summary#algorithms) to maintain state of seed. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | number of bits used by the [algorithm](../java/util/random/_package.md) to maintain state of seed. |

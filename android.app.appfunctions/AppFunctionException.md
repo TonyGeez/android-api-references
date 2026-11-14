@@ -9,8 +9,8 @@ class AppFunctionException : Exception, Parcelable
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [android.app.appfunctions.AppFunctionException](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [android.app.appfunctions.AppFunctionException](../android/app/appfunctions/AppFunctionException.md) |
 | --- | --- | --- | --- |
 
 App function related error.
@@ -62,13 +62,13 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getErrorCode()()` Returns one of the `ERROR` constants. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getErrorMessage()()` Returns the error message. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getExtras()()` Returns any extras associated with this error. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#getExtras()()` Returns any extras associated with this error. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AppFunctionException](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppFunctionException](../android/app/appfunctions/AppFunctionException.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#message:kotlin.String` Returns the detail message string of this throwable. |
 
 ## Constants
@@ -293,7 +293,7 @@ AppFunctionException(
 |---|---|
 | `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The error code. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_DENIED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_APP_UNKNOWN_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_FUNCTION_NOT_FOUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_SYSTEM_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_INVALID_ARGUMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_CANCELLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException#ERROR_ENTERPRISE_POLICY_DISALLOWED:kotlin.Int` |
 | `errorMessage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The error message. This value may be `null`. |
-| `extras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): The extras associated with this error. This value cannot be `null`. |
+| `extras` | [Bundle](../android/os/Bundle.md): The extras associated with this error. This value cannot be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -387,7 +387,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

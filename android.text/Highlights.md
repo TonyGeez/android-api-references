@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Highlights
 
-Kotlin| [Java](https://developer.android.com/reference/android/text/Highlights "View this page in Java") 
+Kotlin| [Java](../android/text/Highlights.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Highlights
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.Highlights](https://developer.android.com/reference/kotlin/android/text/Highlights#) |
+| ↳ | [android.text.Highlights](../android/text/Highlights.md) |
 
 A class that represents of the highlight of the text.
 
@@ -21,13 +21,13 @@ A class that represents of the highlight of the text.
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/text/Highlights.Builder) A builder for the Highlights. |
+| | [Builder](../android/text/Highlights.Builder.md) A builder for the Highlights. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#) | [getPaint](https://developer.android.com/reference/kotlin/android/text/Highlights#getPaint(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a paint used for the i-th highlight. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getRanges](https://developer.android.com/reference/kotlin/android/text/Highlights#getRanges(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns ranges of the i-th highlight. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/text/Highlights#getSize())`()` Returns the number of highlight. |
+| open [Paint](../android/graphics/Paint.md) | [getPaint](../android/text/Highlights.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a paint used for the i-th highlight. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getRanges](../android/text/Highlights.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns ranges of the i-th highlight. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](../android/text/Highlights.md))`()` Returns the number of highlight. |
 | --- | --- |
 
 ## Public methods
@@ -44,16 +44,16 @@ Returns a paint used for the i-th highlight.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](https://developer.android.com/reference/kotlin/android/text/Highlights#getSize()) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](../android/text/Highlights.md)) |
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------|
-| [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#) | the paint object |
+| [Paint](../android/graphics/Paint.md) | the paint object |
 
 **See Also**
 
-- [android.text.Highlights.Builder#addRange(Paint, int, int)](https://developer.android.com/reference/kotlin/android/text/Highlights.Builder#addRange(android.graphics.Paint,%20kotlin.Int,%20kotlin.Int))
-- [android.text.Highlights.Builder#addRanges(Paint, int...)](https://developer.android.com/reference/kotlin/android/text/Highlights.Builder#addRanges(android.graphics.Paint,%20kotlin.Int)) 
+- [android.text.Highlights.Builder#addRange(Paint, int, int)](../android/text/Highlights.Builder.md))
+- [android.text.Highlights.Builder#addRanges(Paint, int...)](../android/text/Highlights.Builder.md)) 
 
 ### getRanges
 
@@ -67,7 +67,7 @@ Returns ranges of the i-th highlight. Ranges are represented of flattened inclus
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](https://developer.android.com/reference/kotlin/android/text/Highlights#getSize()) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](../android/text/Highlights.md)) |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------|
@@ -75,8 +75,8 @@ Returns ranges of the i-th highlight. Ranges are represented of flattened inclus
 
 **See Also**
 
-- [android.text.Highlights.Builder#addRange(Paint, int, int)](https://developer.android.com/reference/kotlin/android/text/Highlights.Builder#addRange(android.graphics.Paint,%20kotlin.Int,%20kotlin.Int))
-- [android.text.Highlights.Builder#addRanges(Paint, int...)](https://developer.android.com/reference/kotlin/android/text/Highlights.Builder#addRanges(android.graphics.Paint,%20kotlin.Int)) 
+- [android.text.Highlights.Builder#addRange(Paint, int, int)](../android/text/Highlights.Builder.md))
+- [android.text.Highlights.Builder#addRanges(Paint, int...)](../android/text/Highlights.Builder.md)) 
 
 ### getSize
 
@@ -94,5 +94,5 @@ Returns the number of highlight.
 
 **See Also**
 
-- [android.text.Highlights.Builder#addRange(Paint, int, int)](https://developer.android.com/reference/kotlin/android/text/Highlights.Builder#addRange(android.graphics.Paint,%20kotlin.Int,%20kotlin.Int))
-- [android.text.Highlights.Builder#addRanges(Paint, int...)](https://developer.android.com/reference/kotlin/android/text/Highlights.Builder#addRanges(android.graphics.Paint,%20kotlin.Int))
+- [android.text.Highlights.Builder#addRange(Paint, int, int)](../android/text/Highlights.Builder.md))
+- [android.text.Highlights.Builder#addRanges(Paint, int...)](../android/text/Highlights.Builder.md))

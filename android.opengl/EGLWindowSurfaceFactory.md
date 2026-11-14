@@ -4,25 +4,25 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # EGLWindowSurfaceFactory
 
-Kotlin| [Java](https://developer.android.com/reference/android/opengl/GLSurfaceView.EGLWindowSurfaceFactory "View this page in Java") 
+Kotlin| [Java](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md) 
 | --- | --- |
 
 ```
 interface EGLWindowSurfaceFactory
 ```
 
-| [android.opengl.GLSurfaceView.EGLWindowSurfaceFactory](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLWindowSurfaceFactory#) |
+| [android.opengl.GLSurfaceView.EGLWindowSurfaceFactory](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md) |
 
 An interface for customizing the eglCreateWindowSurface and eglDestroySurface calls.
 
-This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLWindowSurfaceFactory(EGLWindowSurfaceFactory)](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView#setEGLWindowSurfaceFactory(android.opengl.GLSurfaceView.EGLWindowSurfaceFactory))
+This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLWindowSurfaceFactory(EGLWindowSurfaceFactory)](../android/opengl/GLSurfaceView.md))
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [EGLSurface](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLSurface.html#)! | [createWindowSurface](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLWindowSurfaceFactory#createWindowSurface(javax.microedition.khronos.egl.EGL10,%20javax.microedition.khronos.egl.EGLDisplay,%20javax.microedition.khronos.egl.EGLConfig,%20kotlin.Any))`(`egl:` ` [EGL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL10.html#)!`, `display:` ` [EGLDisplay](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLDisplay.html#)!`, `config:` ` [EGLConfig](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLConfig.html#)!`, `nativeWindow:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroySurface](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.EGLWindowSurfaceFactory#destroySurface(javax.microedition.khronos.egl.EGL10,%20javax.microedition.khronos.egl.EGLDisplay,%20javax.microedition.khronos.egl.EGLSurface))`(`egl:` ` [EGL10](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGL10.html#)!`, `display:` ` [EGLDisplay](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLDisplay.html#)!`, `surface:` ` [EGLSurface](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLSurface.html#)!`)` <br /> |
+| abstract [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | [createWindowSurface](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md))`(`egl:` ` [EGL10](../javax/microedition/khronos/egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`, `nativeWindow:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroySurface](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md))`(`egl:` ` [EGL10](../javax/microedition/khronos/egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`)` <br /> |
 
 ## Public methods
 
@@ -41,7 +41,7 @@ abstract fun createWindowSurface(
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [EGLSurface](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLSurface.html#)! | null if the surface cannot be constructed. |
+| [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | null if the surface cannot be constructed. |
 
 ### destroySurface
 

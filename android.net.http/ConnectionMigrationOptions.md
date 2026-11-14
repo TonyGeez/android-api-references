@@ -5,7 +5,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # ConnectionMigrationOptions
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions "View this page in Java") 
+Kotlin| [Java](../android/net/http/ConnectionMigrationOptions.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class ConnectionMigrationOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.ConnectionMigrationOptions](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#) |
+| ↳ | [android.net.http.ConnectionMigrationOptions](../android/net/http/ConnectionMigrationOptions.md) |
 
 A class configuring the HTTP connection migration functionality.
 
@@ -26,20 +26,20 @@ The features are only available for QUIC connections and the server needs to sup
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder) Builder for [ConnectionMigrationOptions](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#). |
+| | [Builder](../android/net/http/ConnectionMigrationOptions.Builder.md) Builder for [ConnectionMigrationOptions](../android/net/http/ConnectionMigrationOptions.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_DISABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED:kotlin.Int) Option is disabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_ENABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED:kotlin.Int) Option is enabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED:kotlin.Int) Option is unspecified, platform default value will be used. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_DISABLED](../android/net/http/ConnectionMigrationOptions.md) Option is disabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_ENABLED](../android/net/http/ConnectionMigrationOptions.md) Option is enabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIGRATION_OPTION_UNSPECIFIED](../android/net/http/ConnectionMigrationOptions.md) Option is unspecified, platform default value will be used. |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAllowNonDefaultNetworkUsage](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#getAllowNonDefaultNetworkUsage())`()` See [Builder.setAllowNonDefaultNetworkUsage(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setAllowNonDefaultNetworkUsage(kotlin.Int)) |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultNetworkMigration](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#getDefaultNetworkMigration())`()` See [Builder.setDefaultNetworkMigration(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setDefaultNetworkMigration(kotlin.Int)) |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPathDegradationMigration](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#getPathDegradationMigration())`()` See [Builder.setPathDegradationMigration(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setPathDegradationMigration(kotlin.Int)) |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAllowNonDefaultNetworkUsage](../android/net/http/ConnectionMigrationOptions.md))`()` See [Builder.setAllowNonDefaultNetworkUsage(int)](../android/net/http/ConnectionMigrationOptions.Builder.md)) |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultNetworkMigration](../android/net/http/ConnectionMigrationOptions.md))`()` See [Builder.setDefaultNetworkMigration(int)](../android/net/http/ConnectionMigrationOptions.Builder.md)) |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPathDegradationMigration](../android/net/http/ConnectionMigrationOptions.md))`()` See [Builder.setPathDegradationMigration(int)](../android/net/http/ConnectionMigrationOptions.Builder.md)) |
 | --- | --- |
 
 ## Constants
@@ -94,11 +94,11 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 open fun getAllowNonDefaultNetworkUsage(): Int
 ```
 
-See [Builder.setAllowNonDefaultNetworkUsage(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setAllowNonDefaultNetworkUsage(kotlin.Int))
+See [Builder.setAllowNonDefaultNetworkUsage(int)](../android/net/http/ConnectionMigrationOptions.Builder.md))
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED:kotlin.Int), [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED:kotlin.Int), or [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED](../android/net/http/ConnectionMigrationOptions.md), [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED](../android/net/http/ConnectionMigrationOptions.md), or [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED](../android/net/http/ConnectionMigrationOptions.md) |
 
 ### getDefaultNetworkMigration
 
@@ -109,11 +109,11 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 open fun getDefaultNetworkMigration(): Int
 ```
 
-See [Builder.setDefaultNetworkMigration(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setDefaultNetworkMigration(kotlin.Int))
+See [Builder.setDefaultNetworkMigration(int)](../android/net/http/ConnectionMigrationOptions.Builder.md))
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED:kotlin.Int), [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED:kotlin.Int), or [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED](../android/net/http/ConnectionMigrationOptions.md), [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED](../android/net/http/ConnectionMigrationOptions.md), or [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED](../android/net/http/ConnectionMigrationOptions.md) |
 
 ### getPathDegradationMigration
 
@@ -124,8 +124,8 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 open fun getPathDegradationMigration(): Int
 ```
 
-See [Builder.setPathDegradationMigration(int)](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions.Builder#setPathDegradationMigration(kotlin.Int))
+See [Builder.setPathDegradationMigration(int)](../android/net/http/ConnectionMigrationOptions.Builder.md))
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED:kotlin.Int), [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED:kotlin.Int), or [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED](https://developer.android.com/reference/kotlin/android/net/http/ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_UNSPECIFIED](../android/net/http/ConnectionMigrationOptions.md), [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_ENABLED](../android/net/http/ConnectionMigrationOptions.md), or [android.net.http.ConnectionMigrationOptions#MIGRATION_OPTION_DISABLED](../android/net/http/ConnectionMigrationOptions.md) |

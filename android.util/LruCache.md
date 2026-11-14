@@ -2,7 +2,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # LruCache
 
-Kotlin | [Java](https://developer.android.com/reference/android/util/LruCache "View this page in Java")
+Kotlin | [Java](../android/util/LruCache.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class LruCache<K : Any!, V : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.LruCache](https://developer.android.com/reference/kotlin/android/util/LruCache#) |
+| ↳ | [android.util.LruCache](../android/util/LruCache.md) |
 
 A cache that holds strong references to a limited number of values. Each time a value is accessed, it is moved to the head of a queue. When a value is added to a full cache, the value at the end of that queue is evicted and may become eligible for garbage collection.
 

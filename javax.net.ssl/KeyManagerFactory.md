@@ -10,7 +10,7 @@ open class KeyManagerFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#) |
+| ↳ | [javax.net.ssl.KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md) |
 
 This class acts as a factory for key managers based on a source of key material. Each key manager manages a specific type of key material for use by secure sockets. The key material is based on a KeyStore and/or provider specific sources.
 
@@ -24,21 +24,21 @@ Android provides the following`KeyManagerFactory`algorithms:
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#KeyManagerFactory(javax.net.ssl.KeyManagerFactorySpi,%20java.security.Provider,%20kotlin.String))`(`factorySpi:` ` [KeyManagerFactorySpi](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactorySpi)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a KeyManagerFactory object. |
+| [KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md))`(`factorySpi:` ` [KeyManagerFactorySpi](../javax/net/ssl/KeyManagerFactorySpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a KeyManagerFactory object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#getAlgorithm())`()` Returns the algorithm name of this`KeyManagerFactory`object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultAlgorithm](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#getDefaultAlgorithm())`()` Obtains the default KeyManagerFactory algorithm name. |
-| static [KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#getInstance(kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyManagerFactory`object that acts as a factory for key managers. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../javax/net/ssl/KeyManagerFactory.md))`()` Returns the algorithm name of this`KeyManagerFactory`object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultAlgorithm](../javax/net/ssl/KeyManagerFactory.md))`()` Obtains the default KeyManagerFactory algorithm name. |
+| static [KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md)! | [getInstance](../javax/net/ssl/KeyManagerFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyManagerFactory`object that acts as a factory for key managers. |
 | --- | --- |
-| static [KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#getInstance(kotlin.String,%20kotlin.String))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyManagerFactory`object that acts as a factory for key managers. |
-| static [KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#)! | [getInstance](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#getInstance(kotlin.String,%20java.security.Provider))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!`)` Returns a`KeyManagerFactory`object that acts as a factory for key managers. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager)!\>! | [getKeyManagers](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#getKeyManagers())`()` Returns one key manager for each type of key material. |
+| static [KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md)! | [getInstance](../javax/net/ssl/KeyManagerFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`KeyManagerFactory`object that acts as a factory for key managers. |
+| static [KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md)! | [getInstance](../javax/net/ssl/KeyManagerFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a`KeyManagerFactory`object that acts as a factory for key managers. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](../javax/net/ssl/KeyManager.md)!\>! | [getKeyManagers](../javax/net/ssl/KeyManagerFactory.md))`()` Returns one key manager for each type of key material. |
 | --- | --- |
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | [getProvider](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#getProvider())`()` Returns the provider of this`KeyManagerFactory`object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#init(java.security.KeyStore,%20kotlin.CharArray))`(`ks:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Initializes this factory with a source of key material. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#init(javax.net.ssl.ManagerFactoryParameters))`(`spec:` ` [ManagerFactoryParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/ManagerFactoryParameters)!`)` Initializes this factory with a source of provider-specific key material. |
+| [Provider](../java/security/Provider.md)! | [getProvider](../javax/net/ssl/KeyManagerFactory.md))`()` Returns the provider of this`KeyManagerFactory`object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/net/ssl/KeyManagerFactory.md))`(`ks:` ` [KeyStore](../java/security/KeyStore.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Initializes this factory with a source of key material. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/net/ssl/KeyManagerFactory.md))`(`spec:` ` [ManagerFactoryParameters](../javax/net/ssl/ManagerFactoryParameters.md)!`)` Initializes this factory with a source of provider-specific key material. |
 | --- | --- |
 
 ## Protected constructors
@@ -58,8 +58,8 @@ Creates a KeyManagerFactory object.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------|
-| `factorySpi` | [KeyManagerFactorySpi](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactorySpi)!:the delegate |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:the provider |
+| `factorySpi` | [KeyManagerFactorySpi](../javax/net/ssl/KeyManagerFactorySpi.md)!:the delegate |
+| `provider` | [Provider](../java/security/Provider.md)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
 | --- | --- |
 
@@ -99,7 +99,7 @@ The default algorithm can be changed at runtime by setting the value of the`ssl.
 
 **See Also**
 
-- [java.security.Security](https://developer.android.com/reference/kotlin/java/security/Security.html#) 
+- [java.security.Security](../java/security/Security.md) 
 
 ### getInstance
 
@@ -113,7 +113,7 @@ Returns a`KeyManagerFactory`object that acts as a factory for key managers.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new KeyManagerFactory object encapsulating the KeyManagerFactorySpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security.html#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,7 +121,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#)! | the new`KeyManagerFactory`object. |
+| [KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md)! | the new`KeyManagerFactory`object. |
 
 | Exceptions ||
 |------------------------------------------|--------------------------------------------------------------------------------------------|
@@ -130,7 +130,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -147,7 +147,7 @@ Returns a`KeyManagerFactory`object that acts as a factory for key managers.
 
 A new KeyManagerFactory object encapsulating the KeyManagerFactorySpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](https://developer.android.com/reference/kotlin/java/security/Security.html#getProviders())method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,7 +156,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#)! | the new`KeyManagerFactory`object. |
+| [KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md)! | the new`KeyManagerFactory`object. |
 
 | Exceptions ||
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -168,7 +168,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getInstance
 
@@ -188,11 +188,11 @@ A new KeyManagerFactory object encapsulating the KeyManagerFactorySpi implementa
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the standard name of the requested algorithm. See the [Java Secure Socket Extension Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jsse/JSSERefGuide.html) for information about standard algorithm names. |
-| `provider` | [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)!:an instance of the provider. |
+| `provider` | [Provider](../java/security/Provider.md)!:an instance of the provider. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [KeyManagerFactory](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#)! | the new`KeyManagerFactory`object. |
+| [KeyManagerFactory](../javax/net/ssl/KeyManagerFactory.md)! | the new`KeyManagerFactory`object. |
 
 | Exceptions ||
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -203,7 +203,7 @@ A new KeyManagerFactory object encapsulating the KeyManagerFactorySpi implementa
 
 **See Also**
 
-- [java.security.Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#) 
+- [java.security.Provider](../java/security/Provider.md) 
 
 ### getKeyManagers
 
@@ -217,7 +217,7 @@ Returns one key manager for each type of key material.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager)!>! | the key managers |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](../javax/net/ssl/KeyManager.md)!>! | the key managers |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------------|
@@ -235,7 +235,7 @@ Returns the provider of this`KeyManagerFactory`object.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Provider](https://developer.android.com/reference/kotlin/java/security/Provider.html#)! | the provider of this`KeyManagerFactory`object |
+| [Provider](../java/security/Provider.md)! | the provider of this`KeyManagerFactory`object |
 
 ### init
 
@@ -252,13 +252,13 @@ Initializes this factory with a source of key material.
 
 The provider typically uses a KeyStore for obtaining key material for use during secure socket negotiations. The KeyStore is generally password-protected.
 
-For more flexible initialization, please see [init(javax.net.ssl.ManagerFactoryParameters)](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManagerFactory#init(javax.net.ssl.ManagerFactoryParameters)).
+For more flexible initialization, please see [init(javax.net.ssl.ManagerFactoryParameters)](../javax/net/ssl/KeyManagerFactory.md)).
 
 <br />
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `ks` | [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!:the key store or null |
+| `ks` | [KeyStore](../java/security/KeyStore.md)!:the key store or null |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password for recovering keys in the KeyStore |
 
 | Exceptions ||
@@ -282,7 +282,7 @@ In some cases, initialization parameters other than a keystore and password may 
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spec` | [ManagerFactoryParameters](https://developer.android.com/reference/kotlin/javax/net/ssl/ManagerFactoryParameters)!:an implementation of a provider-specific parameter specification |
+| `spec` | [ManagerFactoryParameters](../javax/net/ssl/ManagerFactoryParameters.md)!:an implementation of a provider-specific parameter specification |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------|

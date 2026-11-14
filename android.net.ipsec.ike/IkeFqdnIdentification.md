@@ -8,8 +8,8 @@ open class IkeFqdnIdentification : IkeIdentification
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification) ||
-| | ↳ | [android.net.ipsec.ike.IkeFqdnIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeFqdnIdentification#) |
+| ↳ | [android.net.ipsec.ike.IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) ||
+| | ↳ | [android.net.ipsec.ike.IkeFqdnIdentification](../android/net/ipsec/ike/IkeFqdnIdentification.md) |
 
 IkeFqdnIdentification represents an IKE entity identification based on a fully-qualified domain name (FQDN). An example might be ike.android.com
 

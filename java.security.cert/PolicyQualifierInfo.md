@@ -10,7 +10,7 @@ open class PolicyQualifierInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.PolicyQualifierInfo](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#) |
+| ↳ | [java.security.cert.PolicyQualifierInfo](../java/security/cert/PolicyQualifierInfo.md) |
 
 An immutable policy qualifier represented by the ASN.1 PolicyQualifierInfo structure.
 
@@ -25,7 +25,7 @@ PolicyQualifierInfo ::= SEQUENCE {
 
 A certificate policies extension, if present in an X.509 version 3 certificate, contains a sequence of one or more policy information terms, each of which consists of an object identifier (OID) and optional qualifiers. In an end-entity certificate, these policy information terms indicate the policy under which the certificate has been issued and the purposes for which the certificate may be used. In a CA certificate, these policy information terms limit the set of policies for certification paths which include this certificate.
 
-A`Set`of`PolicyQualifierInfo`objects are returned by the [PolicyNode.getPolicyQualifiers](https://developer.android.com/reference/kotlin/java/security/cert/PolicyNode#getPolicyQualifiers())method. This allows applications with specific policy requirements to process and validate each policy qualifier. Applications that need to process policy qualifiers should explicitly set the`policyQualifiersRejected`flag to false (by calling the [PKIXParameters.setPolicyQualifiersRejected](https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#setPolicyQualifiersRejected(kotlin.Boolean))method) before validating a certification path.
+A`Set`of`PolicyQualifierInfo`objects are returned by the [PolicyNode.getPolicyQualifiers](../java/security/cert/PolicyNode.md))method. This allows applications with specific policy requirements to process and validate each policy qualifier. Applications that need to process policy qualifiers should explicitly set the`policyQualifiersRejected`flag to false (by calling the [PKIXParameters.setPolicyQualifiersRejected](../java/security/cert/PKIXParameters.md))method) before validating a certification path.
 
 Note that the PKIX certification path validation algorithm specifies that any policy qualifier in a certificate policies extension that is marked critical must be processed and validated. Otherwise the certification path must be rejected. If the`policyQualifiersRejected`flag is set to false, it is up to the application to validate all policy qualifiers in this manner in order to be PKIX compliant.
 
@@ -37,15 +37,15 @@ All`PolicyQualifierInfo`objects must be immutable and thread-safe. That is, mult
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PolicyQualifierInfo](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#PolicyQualifierInfo(kotlin.ByteArray))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`PolicyQualifierInfo`from the encoded bytes. |
+| [PolicyQualifierInfo](../java/security/cert/PolicyQualifierInfo.md))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`PolicyQualifierInfo`from the encoded bytes. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#getEncoded())`()` Returns the ASN. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPolicyQualifier](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#getPolicyQualifier())`()` Returns the ASN. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPolicyQualifierId](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#getPolicyQualifierId())`()` Returns the`policyQualifierId`field of this`PolicyQualifierInfo`. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/cert/PolicyQualifierInfo.md))`()` Returns the ASN. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPolicyQualifier](../java/security/cert/PolicyQualifierInfo.md))`()` Returns the ASN. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPolicyQualifierId](../java/security/cert/PolicyQualifierInfo.md))`()` Returns the`policyQualifierId`field of this`PolicyQualifierInfo`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/PolicyQualifierInfo#toString())`()` Return a printable representation of this`PolicyQualifierInfo`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/PolicyQualifierInfo.md))`()` Return a printable representation of this`PolicyQualifierInfo`. |
 
 ## Public constructors
 

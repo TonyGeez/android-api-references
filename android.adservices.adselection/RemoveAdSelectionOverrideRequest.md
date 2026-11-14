@@ -10,7 +10,7 @@ open class RemoveAdSelectionOverrideRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adselection.RemoveAdSelectionOverrideRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#) |
+| ↳ | [android.adservices.adselection.RemoveAdSelectionOverrideRequest](../android/adservices/adselection/RemoveAdSelectionOverrideRequest.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -29,7 +29,7 @@ It contains one field, a `https://developer.android.com/reference/kotlin/android
 
 | Public methods ||
 |---|---|
-| open [AdSelectionConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#getAdSelectionConfig()()` <br /> |
+| open [AdSelectionConfig](../android/adservices/adselection/AdSelectionConfig.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#getAdSelectionConfig()()` <br /> |
 
 ## Public constructors
 
@@ -46,7 +46,7 @@ Builds a `https://developer.android.com/reference/kotlin/android/adservices/adse
 
 | Parameters ||
 |---|---|
-| `adSelectionConfig` | [AdSelectionConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig): This value cannot be `null`. |
+| `adSelectionConfig` | [AdSelectionConfig](../android/adservices/adselection/AdSelectionConfig.md): This value cannot be `null`. |
 
 ## Public methods
 

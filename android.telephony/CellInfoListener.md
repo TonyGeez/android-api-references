@@ -2,14 +2,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # CellInfoListener
 
-Kotlin | [Java](https://developer.android.com/reference/android/telephony/TelephonyCallback.CellInfoListener "View this page in Java")
+Kotlin | [Java](../android/telephony/TelephonyCallback.CellInfoListener.md)
 | --- | --- |
 
 ```
 interface CellInfoListener
 ```
 
-| [android.telephony.TelephonyCallback.CellInfoListener](https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellInfoListener#) |
+| [android.telephony.TelephonyCallback.CellInfoListener](../android/telephony/TelephonyCallback.CellInfoListener.md) |
 
 Interface for cell info listener.
 
@@ -34,4 +34,4 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `cellInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](https://developer.android.com/reference/kotlin/android/telephony/CellInfo)!\>: is the list of currently visible cells. This value cannot be `null`. |
+| `cellInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](../android/telephony/CellInfo.md)!\>: is the list of currently visible cells. This value cannot be `null`. |

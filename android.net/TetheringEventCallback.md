@@ -4,14 +4,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # TetheringEventCallback
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/TetheringManager.TetheringEventCallback "View this page in Java") 
+Kotlin | [Java](../android/net/TetheringManager.TetheringEventCallback.md) 
 | --- | --- |
 
 ```
 interface TetheringEventCallback
 ```
 
-| [android.net.TetheringManager.TetheringEventCallback](https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback#) |
+| [android.net.TetheringManager.TetheringEventCallback](../android/net/TetheringManager.TetheringEventCallback.md) |
 
 Callback for use with registerTetheringEventCallback to find out tethering upstream status.
 
@@ -19,7 +19,7 @@ Callback for use with registerTetheringEventCallback to find out tethering upstr
 
 | Public methods ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTetheredInterfacesChanged](https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback#onTetheredInterfacesChanged(kotlin.collections.MutableSet))`(`interfaces:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [TetheringInterface](https://developer.android.com/reference/kotlin/android/net/TetheringInterface)!>`)` Called when there was a change in the list of tethered interfaces. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTetheredInterfacesChanged](../android/net/TetheringManager.TetheringEventCallback.md))`(`interfaces:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [TetheringInterface](../android/net/TetheringInterface.md)!>`)` Called when there was a change in the list of tethered interfaces. |
 
 ## Public methods
 
@@ -37,4 +37,4 @@ This will be called immediately after the callback is registered, and may be cal
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `interfaces` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TetheringInterface](https://developer.android.com/reference/kotlin/android/net/TetheringInterface)!\>: The set of 0 or more TetheringInterface of currently tethered interface. This value cannot be `null`. |
+| `interfaces` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TetheringInterface](../android/net/TetheringInterface.md)!\>: The set of 0 or more TetheringInterface of currently tethered interface. This value cannot be `null`. |

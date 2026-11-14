@@ -11,11 +11,11 @@ open class IllegalSelectorException : IllegalArgumentException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#) ||
-| | | | | ↳ | [java.nio.channels.IllegalSelectorException](https://developer.android.com/reference/kotlin/java/nio/channels/IllegalSelectorException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) ||
+| | | | | ↳ | [java.nio.channels.IllegalSelectorException](../java/nio/channels/IllegalSelectorException.md) |
 
 Unchecked exception thrown when an attempt is made to register a channel with a selector that was not created by the provider that created the channel.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to register a channel with a 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalSelectorException](https://developer.android.com/reference/kotlin/java/nio/channels/IllegalSelectorException#IllegalSelectorException())`()` Constructs an instance of this class. |
+| [IllegalSelectorException](../java/nio/channels/IllegalSelectorException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

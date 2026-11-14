@@ -10,7 +10,7 @@ open class CollectionCertStoreParameters : CertStoreParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CollectionCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters#) |
+| ↳ | [java.security.cert.CollectionCertStoreParameters](../java/security/cert/CollectionCertStoreParameters.md) |
 
 Parameters used as input for the Collection `CertStore` algorithm.
 
@@ -24,14 +24,14 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CollectionCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters#CollectionCertStoreParameters())`()` Creates an instance of `CollectionCertStoreParameters` with the default parameter values (an empty and immutable `Collection`). |
-| [CollectionCertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters#CollectionCertStoreParameters(kotlin.collections.MutableCollection))`(`collection:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` Creates an instance of `CollectionCertStoreParameters` which will allow certificates and CRLs to be retrieved from the specified `Collection`. |
+| [CollectionCertStoreParameters](../java/security/cert/CollectionCertStoreParameters.md))`()` Creates an instance of `CollectionCertStoreParameters` with the default parameter values (an empty and immutable `Collection`). |
+| [CollectionCertStoreParameters](../java/security/cert/CollectionCertStoreParameters.md))`(`collection:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>!`)` Creates an instance of `CollectionCertStoreParameters` which will allow certificates and CRLs to be retrieved from the specified `Collection`. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters#clone())`()` Returns a copy of this object. |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<\*\>! | [getCollection](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters#getCollection())`()` Returns the `Collection` from which `Certificate`s and `CRL`s are retrieved. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/security/cert/CollectionCertStoreParameters#toString())`()` Returns a formatted string describing the parameters. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/CollectionCertStoreParameters.md))`()` Returns a copy of this object. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<\*\>! | [getCollection](../java/security/cert/CollectionCertStoreParameters.md))`()` Returns the `Collection` from which `Certificate`s and `CRL`s are retrieved. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/CollectionCertStoreParameters.md))`()` Returns a formatted string describing the parameters. |
 | --- | --- |
 
 ## Public constructors

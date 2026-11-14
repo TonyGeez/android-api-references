@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothCodecStatus
 
-Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus "View this page in Java") 
+Kotlin | [Java](../android/bluetooth/BluetoothCodecStatus.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class BluetoothCodecStatus : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothCodecStatus](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#) |
+| ↳ | [android.bluetooth.BluetoothCodecStatus](../android/bluetooth/BluetoothCodecStatus.md) |
 
 Represents the codec status (configuration and capability) for a Bluetooth A2DP source device.
 
@@ -21,32 +21,32 @@ Represents the codec status (configuration and capability) for a Bluetooth A2DP 
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus.Builder) Builder for [BluetoothCodecStatus](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#). |
+| | [Builder](../android/bluetooth/BluetoothCodecStatus.Builder.md) Builder for [BluetoothCodecStatus](../android/bluetooth/BluetoothCodecStatus.md). |
 
 | Constants ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CODEC_STATUS](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#EXTRA_CODEC_STATUS:kotlin.String) Extra for the codec configuration intents of the individual profiles. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CODEC_STATUS](../android/bluetooth/BluetoothCodecStatus.md) Extra for the codec configuration intents of the individual profiles. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)? | [getCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#getCodecConfig())`()` Returns the current codec configuration. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)!\> | [getCodecsLocalCapabilities](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#getCodecsLocalCapabilities())`()` Returns the codecs local capabilities. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/bluetooth/BluetoothCodecStatus.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)? | [getCodecConfig](../android/bluetooth/BluetoothCodecStatus.md))`()` Returns the current codec configuration. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)!\> | [getCodecsLocalCapabilities](../android/bluetooth/BluetoothCodecStatus.md))`()` Returns the codecs local capabilities. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)!\> | [getCodecsSelectableCapabilities](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#getCodecsSelectableCapabilities())`()` Returns the codecs selectable capabilities. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#hashCode())`()` Returns a hash based on the codec config and local capabilities. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCodecConfigSelectable](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#isCodecConfigSelectable(android.bluetooth.BluetoothCodecConfig))`(`codecConfig:` ` [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)?`)` Checks whether the codec config matches the selectable capabilities. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)!\> | [getCodecsSelectableCapabilities](../android/bluetooth/BluetoothCodecStatus.md))`()` Returns the codecs selectable capabilities. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/bluetooth/BluetoothCodecStatus.md))`()` Returns a hash based on the codec config and local capabilities. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCodecConfigSelectable](../android/bluetooth/BluetoothCodecStatus.md))`(`codecConfig:` ` [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)?`)` Checks whether the codec config matches the selectable capabilities. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#toString())`()` Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothCodecStatus parameter current value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flattens the object to a parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/bluetooth/BluetoothCodecStatus.md))`()` Returns a [String](../java/lang/String.md) that describes each BluetoothCodecStatus parameter current value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/bluetooth/BluetoothCodecStatus.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flattens the object to a parcel. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BluetoothCodecStatus](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecStatus#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothCodecStatus](../android/bluetooth/BluetoothCodecStatus.md)!\> | [CREATOR](../android/bluetooth/BluetoothCodecStatus.md) <br /> |
 
 ## Constants
 
@@ -107,7 +107,7 @@ Returns the current codec configuration.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|---------------------------|
-| [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)? | This value may be `null`. |
+| [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)? | This value may be `null`. |
 
 ### getCodecsLocalCapabilities
 
@@ -121,7 +121,7 @@ Returns the codecs local capabilities.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)!> | This value cannot be `null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)!> | This value cannot be `null`. |
 
 ### getCodecsSelectableCapabilities
 
@@ -135,7 +135,7 @@ Returns the codecs selectable capabilities.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)!> | This value cannot be `null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)!> | This value cannot be `null`. |
 
 ### hashCode
 
@@ -163,7 +163,7 @@ Checks whether the codec config matches the selectable capabilities. Any paramet
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `codecConfig` | [BluetoothCodecConfig](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecConfig)?: the codec config to compare against This value may be `null`. |
+| `codecConfig` | [BluetoothCodecConfig](../android/bluetooth/BluetoothCodecConfig.md)?: the codec config to compare against This value may be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -177,7 +177,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun toString(): String
 ```
 
-Returns a [String](https://developer.android.com/reference/kotlin/java/lang/String.html#) that describes each BluetoothCodecStatus parameter current value.
+Returns a [String](../java/lang/String.md) that describes each BluetoothCodecStatus parameter current value.
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------|
@@ -200,7 +200,7 @@ Flattens the object to a parcel.
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written |
-| `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written This value cannot be `null`. |
+| `out` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # WebBackForwardList
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/WebBackForwardList "View this page in Java") 
+Kotlin| [Java](../android/webkit/WebBackForwardList.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class WebBackForwardList : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.WebBackForwardList](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#) |
+| ↳ | [android.webkit.WebBackForwardList](../android/webkit/WebBackForwardList.md) |
 
 This class contains the back/forward list for a WebView. WebView.copyBackForwardList() will return a copy of this class used to inspect the entries in the list.
 
@@ -21,19 +21,19 @@ This class contains the back/forward list for a WebView. WebView.copyBackForward
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WebBackForwardList](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#WebBackForwardList())`()` <br /> |
+| [WebBackForwardList](../android/webkit/WebBackForwardList.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentIndex](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#getCurrentIndex())`()` Get the index of the current history item. |
-| abstract [WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem)? | [getCurrentItem](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#getCurrentItem())`()` Return the current history item. |
-| abstract [WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem)! | [getItemAtIndex](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#getItemAtIndex(kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the history item at the given index. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentIndex](../android/webkit/WebBackForwardList.md))`()` Get the index of the current history item. |
+| abstract [WebHistoryItem](../android/webkit/WebHistoryItem.md)? | [getCurrentItem](../android/webkit/WebBackForwardList.md))`()` Return the current history item. |
+| abstract [WebHistoryItem](../android/webkit/WebHistoryItem.md)! | [getItemAtIndex](../android/webkit/WebBackForwardList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the history item at the given index. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#getSize())`()` Get the total size of the back/forward list. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](../android/webkit/WebBackForwardList.md))`()` Get the total size of the back/forward list. |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [WebBackForwardList](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#) | [clone](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#clone())`()` Clone the entire object to be used in the UI thread by clients of WebView. |
+| abstract [WebBackForwardList](../android/webkit/WebBackForwardList.md) | [clone](../android/webkit/WebBackForwardList.md))`()` Clone the entire object to be used in the UI thread by clients of WebView. |
 
 ## Public constructors
 
@@ -71,7 +71,7 @@ Return the current history item. This method returns`null`if the list is empty.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|---------------------------|
-| [WebHistoryItem](https://developer.android.com/reference/kotlin/android/webkit/WebHistoryItem)? | The current history item. |
+| [WebHistoryItem](../android/webkit/WebHistoryItem.md)? | The current history item. |
 
 ### getItemAtIndex
 
@@ -115,7 +115,7 @@ Clone the entire object to be used in the UI thread by clients of WebView. This 
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------|
-| [WebBackForwardList](https://developer.android.com/reference/kotlin/android/webkit/WebBackForwardList#) | a clone of this instance. |
+| [WebBackForwardList](../android/webkit/WebBackForwardList.md) | a clone of this instance. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

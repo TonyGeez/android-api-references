@@ -8,8 +8,8 @@ abstract class AbstractQueuedLongSynchronizer : AbstractOwnableSynchronizer, S
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer) ||
-| | ↳ | [java.util.concurrent.locks.AbstractQueuedLongSynchronizer](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#) |
+| ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](../java/util/concurrent/locks/AbstractOwnableSynchronizer.md) ||
+| | ↳ | [java.util.concurrent.locks.AbstractQueuedLongSynchronizer](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.md) |
 
 A version of `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer` in which synchronization state is maintained as a `long`. This class has exactly the same structure, properties, and methods as `AbstractQueuedSynchronizer` with the exception that all state-related parameters and results are defined as `long` rather than `int`. This class may be useful when creating synchronizers such as multilevel locks and barriers that require 64 bits of state.
 
@@ -32,15 +32,15 @@ See `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/A
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#acquireShared(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Acquires in shared mode, ignoring interrupts. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#acquireSharedInterruptibly(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Acquires in shared mode, aborting if interrupted. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getExclusiveQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in exclusive mode. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getFirstQueuedThread()()` Returns the first (longest-waiting) thread in the queue, or `null` if no threads are currently queued. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getExclusiveQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in exclusive mode. |
+| [Thread](../java/lang/Thread.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getFirstQueuedThread()()` Returns the first (longest-waiting) thread in the queue, or `null` if no threads are currently queued. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getQueueLength()()` Returns an estimate of the number of threads waiting to acquire. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getSharedQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in shared mode. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getSharedQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in shared mode. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject!)` Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject!)` Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject!)` Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#hasContended()()` Queries whether any threads have ever contended to acquire this synchronizer; that is, if an acquire method has ever blocked. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#hasQueuedPredecessors()()` Queries whether any threads have been waiting to acquire longer than the current thread. |
@@ -244,7 +244,7 @@ Returns an estimate of the number of threads waiting on the given condition asso
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|
@@ -269,7 +269,7 @@ Returns a collection containing those threads that may be waiting on the given c
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|
@@ -317,7 +317,7 @@ An invocation of this method is equivalent to (but may be more efficient than):
 
 Note that because cancellations due to interrupts and timeouts may occur at any time, a `true` return does not guarantee that some other thread will acquire before the current thread. Likewise, it is possible for another thread to win a race to enqueue after this method has returned `false`, due to the queue being empty.
 
-This method is designed to be used by a fair synchronizer to avoid [barging](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer#barging). Such a synchronizer's `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` method should return `false`, and its `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` method should return a negative value, if this method returns `true` (unless this is a reentrant acquire). For example, the `tryAcquire` method for a fair, reentrant, exclusive mode synchronizer might look like this:
+This method is designed to be used by a fair synchronizer to avoid [barging](../java/util/concurrent/locks/AbstractQueuedSynchronizer.md). Such a synchronizer's `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` method should return `false`, and its `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` method should return a negative value, if this method returns `true` (unless this is a reentrant acquire). For example, the `tryAcquire` method for a fair, reentrant, exclusive mode synchronizer might look like this:
 
 ```kotlin
 <code>protected boolean tryAcquire(long arg) {
@@ -362,7 +362,7 @@ Queries whether any threads are waiting on the given condition associated with t
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|
@@ -389,7 +389,7 @@ This implementation traverses the queue to determine presence of the given threa
 
 | Parameters ||
 |---|---|
-| `thread` | [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread.html#)!: the thread |
+| `thread` | [Thread](../java/lang/Thread.md)!: the thread |
 
 | Return ||
 |---|---|
@@ -411,7 +411,7 @@ Queries whether the given ConditionObject uses this synchronizer as its lock.
 
 | Parameters ||
 |---|---|
-| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject)!: the condition |
+| `condition` | [AbstractQueuedLongSynchronizer.ConditionObject](../java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.md)!: the condition |
 
 | Return ||
 |---|---|

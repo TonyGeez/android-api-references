@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # VolumeProvider
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/VolumeProvider "View this page in Java") 
+Kotlin| [Java](../android/media/VolumeProvider.md) 
 | --- | --- |
 
 ```
@@ -13,37 +13,37 @@ abstract class VolumeProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.VolumeProvider](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#) |
+| ↳ | [android.media.VolumeProvider](../android/media/VolumeProvider.md) |
 
-Handles requests to adjust or set the volume on a session. This is also used to push volume updates back to the session. The provider must call [setCurrentVolume(int)](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#setCurrentVolume(kotlin.Int))each time the volume being provided changes.
+Handles requests to adjust or set the volume on a session. This is also used to push volume updates back to the session. The provider must call [setCurrentVolume(int)](../android/media/VolumeProvider.md))each time the volume being provided changes.
 
-You can set a volume provider on a session by calling [MediaSession.setPlaybackToRemote](https://developer.android.com/reference/kotlin/android/media/session/MediaSession#setPlaybackToRemote(android.media.VolumeProvider)).
+You can set a volume provider on a session by calling [MediaSession.setPlaybackToRemote](../android/media/session/MediaSession.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLUME_CONTROL_ABSOLUTE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_ABSOLUTE:kotlin.Int) The volume control uses an absolute value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLUME_CONTROL_FIXED](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_FIXED:kotlin.Int) The volume is fixed and can not be modified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLUME_CONTROL_RELATIVE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_RELATIVE:kotlin.Int) The volume control uses relative adjustment via [onAdjustVolume(int)](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#onAdjustVolume(kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLUME_CONTROL_ABSOLUTE](../android/media/VolumeProvider.md) The volume control uses an absolute value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLUME_CONTROL_FIXED](../android/media/VolumeProvider.md) The volume is fixed and can not be modified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLUME_CONTROL_RELATIVE](../android/media/VolumeProvider.md) The volume control uses relative adjustment via [onAdjustVolume(int)](../android/media/VolumeProvider.md)). |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [VolumeProvider](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VolumeProvider(kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`volumeControl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new volume provider for handling volume events. |
-| [VolumeProvider](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VolumeProvider(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String))`(`volumeControl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `volumeControlId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Creates a new volume provider for handling volume events. |
+| [VolumeProvider](../android/media/VolumeProvider.md))`(`volumeControl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new volume provider for handling volume events. |
+| [VolumeProvider](../android/media/VolumeProvider.md))`(`volumeControl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `volumeControlId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Creates a new volume provider for handling volume events. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentVolume](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getCurrentVolume())`()` Gets the current volume. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxVolume](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getMaxVolume())`()` Gets the maximum volume this provider allows. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeControl](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getVolumeControl())`()` Gets the volume control type that this volume provider uses. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCurrentVolume](../android/media/VolumeProvider.md))`()` Gets the current volume. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxVolume](../android/media/VolumeProvider.md))`()` Gets the maximum volume this provider allows. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeControl](../android/media/VolumeProvider.md))`()` Gets the volume control type that this volume provider uses. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getVolumeControlId](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getVolumeControlId())`()` Gets the [routing controller id](https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController#getId())of the [RoutingController](https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController) associated with this volume provider, or null if unset. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdjustVolume](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#onAdjustVolume(kotlin.Int))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override to handle requests to adjust the volume of the current output. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetVolumeTo](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#onSetVolumeTo(kotlin.Int))`(`volume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override to handle requests to set the volume of the current output. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getVolumeControlId](../android/media/VolumeProvider.md))`()` Gets the [routing controller id](../android/media/MediaRouter2.RoutingController.md))of the [RoutingController](../android/media/MediaRouter2.RoutingController.md) associated with this volume provider, or null if unset. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdjustVolume](../android/media/VolumeProvider.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override to handle requests to adjust the volume of the current output. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetVolumeTo](../android/media/VolumeProvider.md))`(`volume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Override to handle requests to set the volume of the current output. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentVolume](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#setCurrentVolume(kotlin.Int))`(`currentVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notifies the system that the current volume has been changed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentVolume](../android/media/VolumeProvider.md))`(`currentVolume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notifies the system that the current volume has been changed. |
 
 ## Constants
 
@@ -55,7 +55,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val VOLUME_CONTROL_ABSOLUTE: Int
 ```
 
-The volume control uses an absolute value. It may be adjusted using [onAdjustVolume(int)](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#onAdjustVolume(kotlin.Int))or set directly using [onSetVolumeTo(int)](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#onSetVolumeTo(kotlin.Int)). 
+The volume control uses an absolute value. It may be adjusted using [onAdjustVolume(int)](../android/media/VolumeProvider.md))or set directly using [onSetVolumeTo(int)](../android/media/VolumeProvider.md)). 
 
  Value: 2
 
@@ -79,7 +79,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val VOLUME_CONTROL_RELATIVE: Int
 ```
 
-The volume control uses relative adjustment via [onAdjustVolume(int)](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#onAdjustVolume(kotlin.Int)). Attempts to set the volume to a specific value should be ignored. 
+The volume control uses relative adjustment via [onAdjustVolume(int)](../android/media/VolumeProvider.md)). Attempts to set the volume to a specific value should be ignored. 
 
  Value: 1
 
@@ -100,7 +100,7 @@ Creates a new volume provider for handling volume events.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `volumeControl` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):See [getVolumeControl()](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getVolumeControl()). Value is [android.media.VolumeProvider#VOLUME_CONTROL_FIXED](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_FIXED:kotlin.Int), [android.media.VolumeProvider#VOLUME_CONTROL_RELATIVE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_RELATIVE:kotlin.Int), or [android.media.VolumeProvider#VOLUME_CONTROL_ABSOLUTE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_ABSOLUTE:kotlin.Int) |
+| `volumeControl` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):See [getVolumeControl()](../android/media/VolumeProvider.md)). Value is [android.media.VolumeProvider#VOLUME_CONTROL_FIXED](../android/media/VolumeProvider.md), [android.media.VolumeProvider#VOLUME_CONTROL_RELATIVE](../android/media/VolumeProvider.md), or [android.media.VolumeProvider#VOLUME_CONTROL_ABSOLUTE](../android/media/VolumeProvider.md) |
 | `maxVolume` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum allowed volume. |
 | `currentVolume` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current volume on the output. |
 | --- | --- |
@@ -121,11 +121,11 @@ Creates a new volume provider for handling volume events.
 
 | Parameters ||
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `volumeControl` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):See [getVolumeControl()](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getVolumeControl()). Value is [android.media.VolumeProvider#VOLUME_CONTROL_FIXED](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_FIXED:kotlin.Int), [android.media.VolumeProvider#VOLUME_CONTROL_RELATIVE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_RELATIVE:kotlin.Int), or [android.media.VolumeProvider#VOLUME_CONTROL_ABSOLUTE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_ABSOLUTE:kotlin.Int) |
+| `volumeControl` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):See [getVolumeControl()](../android/media/VolumeProvider.md)). Value is [android.media.VolumeProvider#VOLUME_CONTROL_FIXED](../android/media/VolumeProvider.md), [android.media.VolumeProvider#VOLUME_CONTROL_RELATIVE](../android/media/VolumeProvider.md), or [android.media.VolumeProvider#VOLUME_CONTROL_ABSOLUTE](../android/media/VolumeProvider.md) |
 | `maxVolume` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum allowed volume. |
 | `currentVolume` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current volume on the output. |
 | --- | --- |
-| `volumeControlId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:See [getVolumeControlId()](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getVolumeControlId()). This value may be`null`. |
+| `volumeControlId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:See [getVolumeControlId()](../android/media/VolumeProvider.md)). This value may be`null`. |
 
 ## Public methods
 
@@ -137,7 +137,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getCurrentVolume(): Int
 ```
 
-Gets the current volume. This will be the last value set by [setCurrentVolume(int)](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#setCurrentVolume(kotlin.Int)).
+Gets the current volume. This will be the last value set by [setCurrentVolume(int)](../android/media/VolumeProvider.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------|
@@ -167,11 +167,11 @@ fun getVolumeControl(): Int
 
 Gets the volume control type that this volume provider uses.
 
-One of [VOLUME_CONTROL_FIXED](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_FIXED:kotlin.Int), [VOLUME_CONTROL_ABSOLUTE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_ABSOLUTE:kotlin.Int), or [VOLUME_CONTROL_RELATIVE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_RELATIVE:kotlin.Int).
+One of [VOLUME_CONTROL_FIXED](../android/media/VolumeProvider.md), [VOLUME_CONTROL_ABSOLUTE](../android/media/VolumeProvider.md), or [VOLUME_CONTROL_RELATIVE](../android/media/VolumeProvider.md).
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The volume control type for this volume provider Value is [android.media.VolumeProvider#VOLUME_CONTROL_FIXED](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_FIXED:kotlin.Int), [android.media.VolumeProvider#VOLUME_CONTROL_RELATIVE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_RELATIVE:kotlin.Int), or [android.media.VolumeProvider#VOLUME_CONTROL_ABSOLUTE](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#VOLUME_CONTROL_ABSOLUTE:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The volume control type for this volume provider Value is [android.media.VolumeProvider#VOLUME_CONTROL_FIXED](../android/media/VolumeProvider.md), [android.media.VolumeProvider#VOLUME_CONTROL_RELATIVE](../android/media/VolumeProvider.md), or [android.media.VolumeProvider#VOLUME_CONTROL_ABSOLUTE](../android/media/VolumeProvider.md) |
 
 ### getVolumeControlId
 
@@ -181,7 +181,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getVolumeControlId(): String?
 ```
 
-Gets the [routing controller id](https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController#getId())of the [RoutingController](https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController) associated with this volume provider, or null if unset.
+Gets the [routing controller id](../android/media/MediaRouter2.RoutingController.md))of the [RoutingController](../android/media/MediaRouter2.RoutingController.md) associated with this volume provider, or null if unset.
 
 This id allows mapping this volume provider to a routing controller, which provides information about the media route and allows controlling its volume. 
 
@@ -193,7 +193,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun onAdjustVolume(direction: Int): Unit
 ```
 
-Override to handle requests to adjust the volume of the current output. Direction will be one of [AudioManager.ADJUST_LOWER](https://developer.android.com/reference/kotlin/android/media/AudioManager#ADJUST_LOWER:kotlin.Int), [AudioManager.ADJUST_RAISE](https://developer.android.com/reference/kotlin/android/media/AudioManager#ADJUST_RAISE:kotlin.Int), [AudioManager.ADJUST_SAME](https://developer.android.com/reference/kotlin/android/media/AudioManager#ADJUST_SAME:kotlin.Int). After the volume has been modified [setCurrentVolume](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#setCurrentVolume(kotlin.Int))must be called to notify the system.
+Override to handle requests to adjust the volume of the current output. Direction will be one of [AudioManager.ADJUST_LOWER](../android/media/AudioManager.md), [AudioManager.ADJUST_RAISE](../android/media/AudioManager.md), [AudioManager.ADJUST_SAME](../android/media/AudioManager.md). After the volume has been modified [setCurrentVolume](../android/media/VolumeProvider.md))must be called to notify the system.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------|
@@ -207,7 +207,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun onSetVolumeTo(volume: Int): Unit
 ```
 
-Override to handle requests to set the volume of the current output. After the volume has been modified [setCurrentVolume](https://developer.android.com/reference/kotlin/android/media/VolumeProvider#setCurrentVolume(kotlin.Int))must be called to notify the system.
+Override to handle requests to set the volume of the current output. After the volume has been modified [setCurrentVolume](../android/media/VolumeProvider.md))must be called to notify the system.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # AssistContent
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/assist/AssistContent "View this page in Java") 
+Kotlin| [Java](../android/app/assist/AssistContent.md) 
 | --- | --- |
 
 ```
@@ -13,50 +13,50 @@ open class AssistContent : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.assist.AssistContent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#) |
+| ↳ | [android.app.assist.AssistContent](../android/app/assist/AssistContent.md) |
 
-Holds information about the content an application is viewing, to hand to an assistant at the user's request. This is filled in by [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)).
+Holds information about the content an application is viewing, to hand to an assistant at the user's request. This is filled in by [Activity.onProvideAssistContent](../android/app/Activity.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_APP_FUNCTION_DATA](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#EXTRA_APP_FUNCTION_DATA:kotlin.String) Extra for a [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) that provides contextual AppFunction's information about the content currently being viewed in the application. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_APP_FUNCTION_DATA](../android/app/assist/AssistContent.md) Extra for a [Bundle](../android/os/Bundle.md) that provides contextual AppFunction's information about the content currently being viewed in the application. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------|---|
-| [AssistContent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#AssistContent())`()` <br /> |
+| [AssistContent](../android/app/assist/AssistContent.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#describeContents())`()` <br /> |
-| open [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)! | [getClipData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getClipData())`()` Return the current [setClipData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setClipData(android.content.ClipData)), which you can modify in-place. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getExtras](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getExtras())`()` Return Bundle for extra vendor-specific data that can be modified and examined. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/assist/AssistContent.md))`()` <br /> |
+| open [ClipData](../android/content/ClipData.md)! | [getClipData](../android/app/assist/AssistContent.md))`()` Return the current [setClipData](../android/app/assist/AssistContent.md)), which you can modify in-place. |
+| open [Bundle](../android/os/Bundle.md)! | [getExtras](../android/app/assist/AssistContent.md))`()` Return Bundle for extra vendor-specific data that can be modified and examined. |
 | --- | --- |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | [getIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getIntent())`()` Returns the current [setIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setIntent(android.content.Intent))if one is set, else the default Intent obtained from [Activity.getIntent](https://developer.android.com/reference/kotlin/android/app/Activity.html#getIntent()). |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | [getSessionTransferUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getSessionTransferUri())`()` Return the content's session transfer web URI as per [setSessionTransferUri(android.net.Uri)](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setSessionTransferUri(android.net.Uri)), or null if there is none. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStructuredData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getStructuredData())`()` Returns the current [setStructuredData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setStructuredData(kotlin.String)). |
+| open [Intent](../android/content/Intent.md)! | [getIntent](../android/app/assist/AssistContent.md))`()` Returns the current [setIntent](../android/app/assist/AssistContent.md))if one is set, else the default Intent obtained from [Activity.getIntent](../android/app/Activity.md)). |
+| open [Uri](../android/net/Uri.md)? | [getSessionTransferUri](../android/app/assist/AssistContent.md))`()` Return the content's session transfer web URI as per [setSessionTransferUri(android.net.Uri)](../android/app/assist/AssistContent.md)), or null if there is none. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStructuredData](../android/app/assist/AssistContent.md))`()` Returns the current [setStructuredData](../android/app/assist/AssistContent.md)). |
 | --- | --- |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)! | [getWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getWebUri())`()` Return the content's web URI as per [setWebUri(android.net.Uri)](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setWebUri(android.net.Uri)), or null if there is none. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppProvidedIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#isAppProvidedIntent())`()` Returns whether or not the current Intent was explicitly provided in [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppProvidedWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#isAppProvidedWebUri())`()` Returns whether or not the current [getWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getWebUri())was explicitly provided in [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)). |
+| open [Uri](../android/net/Uri.md)! | [getWebUri](../android/app/assist/AssistContent.md))`()` Return the content's web URI as per [setWebUri(android.net.Uri)](../android/app/assist/AssistContent.md)), or null if there is none. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppProvidedIntent](../android/app/assist/AssistContent.md))`()` Returns whether or not the current Intent was explicitly provided in [Activity.onProvideAssistContent](../android/app/Activity.md)). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppProvidedWebUri](../android/app/assist/AssistContent.md))`()` Returns whether or not the current [getWebUri](../android/app/assist/AssistContent.md))was explicitly provided in [Activity.onProvideAssistContent](../android/app/Activity.md)). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClipData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setClipData(android.content.ClipData))`(`clip:` ` [ClipData](https://developer.android.com/reference/kotlin/android/content/ClipData.html#)!`)` Optional additional content items that are involved with the current UI. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setIntent(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Sets the Intent associated with the content, describing the current top-level context of the activity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionTransferUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setSessionTransferUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?`)` This method can be used to provide a [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) which will be utilized when transitioning a user's session to another surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClipData](../android/app/assist/AssistContent.md))`(`clip:` ` [ClipData](../android/content/ClipData.md)!`)` Optional additional content items that are involved with the current UI. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntent](../android/app/assist/AssistContent.md))`(`intent:` ` [Intent](../android/content/Intent.md)!`)` Sets the Intent associated with the content, describing the current top-level context of the activity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionTransferUri](../android/app/assist/AssistContent.md))`(`uri:` ` [Uri](../android/net/Uri.md)?`)` This method can be used to provide a [Uri](../android/net/Uri.md) which will be utilized when transitioning a user's session to another surface. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStructuredData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setStructuredData(kotlin.String))`(`structuredData:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets optional structured data regarding the content being viewed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setWebUri(android.net.Uri))`(`uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)!`)` Set a web URI associated with the current data being shown to the user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStructuredData](../android/app/assist/AssistContent.md))`(`structuredData:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets optional structured data regarding the content being viewed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWebUri](../android/app/assist/AssistContent.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Set a web URI associated with the current data being shown to the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/assist/AssistContent.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AssistContent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssistContent](../android/app/assist/AssistContent.md)!\> | [CREATOR](../android/app/assist/AssistContent.md) <br /> |
 
 ## Constants
 
@@ -68,17 +68,17 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_APP_FUNCTION_DATA: String
 ```
 
-Extra for a [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) that provides contextual AppFunction's information about the content currently being viewed in the application.
+Extra for a [Bundle](../android/os/Bundle.md) that provides contextual AppFunction's information about the content currently being viewed in the application.
 
-This extra can be optionally supplied in the [AssistContent.getExtras()](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getExtras())bundle.
+This extra can be optionally supplied in the [AssistContent.getExtras()](../android/app/assist/AssistContent.md))bundle.
 
-The schema of the [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) in this extra is defined in the AppFunction SDK. 
+The schema of the [Bundle](../android/os/Bundle.md) in this extra is defined in the AppFunction SDK. 
 
  Value: "android.app.assist.extra.APP_FUNCTION_DATA"
 
 **See Also**
 
-- [android.app.appfunctions.AppFunctionManager](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#)
+- [android.app.appfunctions.AppFunctionManager](../android/app/appfunctions/AppFunctionManager.md)
 
 ## Public constructors
 
@@ -102,7 +102,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getClipData
 
@@ -112,7 +112,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getClipData(): ClipData!
 ```
 
-Return the current [setClipData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setClipData(android.content.ClipData)), which you can modify in-place. 
+Return the current [setClipData](../android/app/assist/AssistContent.md)), which you can modify in-place. 
 
 ### getExtras
 
@@ -132,7 +132,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getIntent(): Intent!
 ```
 
-Returns the current [setIntent](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setIntent(android.content.Intent))if one is set, else the default Intent obtained from [Activity.getIntent](https://developer.android.com/reference/kotlin/android/app/Activity.html#getIntent()). Can be modified in-place. 
+Returns the current [setIntent](../android/app/assist/AssistContent.md))if one is set, else the default Intent obtained from [Activity.getIntent](../android/app/Activity.md)). Can be modified in-place. 
 
 ### getSessionTransferUri
 
@@ -142,7 +142,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getSessionTransferUri(): Uri?
 ```
 
-Return the content's session transfer web URI as per [setSessionTransferUri(android.net.Uri)](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setSessionTransferUri(android.net.Uri)), or null if there is none. 
+Return the content's session transfer web URI as per [setSessionTransferUri(android.net.Uri)](../android/app/assist/AssistContent.md)), or null if there is none. 
 
 ### getStructuredData
 
@@ -152,7 +152,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getStructuredData(): String!
 ```
 
-Returns the current [setStructuredData](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setStructuredData(kotlin.String)). 
+Returns the current [setStructuredData](../android/app/assist/AssistContent.md)). 
 
 ### getWebUri
 
@@ -162,7 +162,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getWebUri(): Uri!
 ```
 
-Return the content's web URI as per [setWebUri(android.net.Uri)](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setWebUri(android.net.Uri)), or null if there is none. 
+Return the content's web URI as per [setWebUri(android.net.Uri)](../android/app/assist/AssistContent.md)), or null if there is none. 
 
 ### isAppProvidedIntent
 
@@ -172,7 +172,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun isAppProvidedIntent(): Boolean
 ```
 
-Returns whether or not the current Intent was explicitly provided in [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)). If not, the Intent was automatically set based on [Activity.getIntent](https://developer.android.com/reference/kotlin/android/app/Activity.html#getIntent()). 
+Returns whether or not the current Intent was explicitly provided in [Activity.onProvideAssistContent](../android/app/Activity.md)). If not, the Intent was automatically set based on [Activity.getIntent](../android/app/Activity.md)). 
 
 ### isAppProvidedWebUri
 
@@ -182,7 +182,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun isAppProvidedWebUri(): Boolean
 ```
 
-Returns whether or not the current [getWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#getWebUri())was explicitly provided in [Activity.onProvideAssistContent](https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)). If not, the Intent was automatically set based on [Activity.getIntent](https://developer.android.com/reference/kotlin/android/app/Activity.html#getIntent()). 
+Returns whether or not the current [getWebUri](../android/app/assist/AssistContent.md))was explicitly provided in [Activity.onProvideAssistContent](../android/app/Activity.md)). If not, the Intent was automatically set based on [Activity.getIntent](../android/app/Activity.md)). 
 
 ### setClipData
 
@@ -192,7 +192,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun setClipData(clip: ClipData!): Unit
 ```
 
-Optional additional content items that are involved with the current UI. Access to this content will be granted to the assistant as if you are sending it through an Intent with [Intent.FLAG_GRANT_READ_URI_PERMISSION](https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int). 
+Optional additional content items that are involved with the current UI. Access to this content will be granted to the assistant as if you are sending it through an Intent with [Intent.FLAG_GRANT_READ_URI_PERMISSION](../android/content/Intent.md). 
 
 ### setIntent
 
@@ -202,7 +202,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun setIntent(intent: Intent!): Unit
 ```
 
-Sets the Intent associated with the content, describing the current top-level context of the activity. If this contains a reference to a piece of data related to the activity, be sure to set [Intent.FLAG_GRANT_READ_URI_PERMISSION](https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int) so the accessibility service can access it. 
+Sets the Intent associated with the content, describing the current top-level context of the activity. If this contains a reference to a piece of data related to the activity, be sure to set [Intent.FLAG_GRANT_READ_URI_PERMISSION](../android/content/Intent.md) so the accessibility service can access it. 
 
 ### setSessionTransferUri
 
@@ -212,19 +212,19 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun setSessionTransferUri(uri: Uri?): Unit
 ```
 
-This method can be used to provide a [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) which will be utilized when transitioning a user's session to another surface.
+This method can be used to provide a [Uri](../android/net/Uri.md) which will be utilized when transitioning a user's session to another surface.
 
-If provided, instead of using the URI provided in [setWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setWebUri(android.net.Uri)), the "Open in browser" feature will use this URI to transition the current session from one surface to the other. Apps may choose to encode session or user information into this URI in order to provide a better session transfer experience. However, while this URI will only be available to the system and not other applications, developers should not encode authentication credentials into this URI, because it will be surfaced in the browser URL bar and may be copied and shared from there.
+If provided, instead of using the URI provided in [setWebUri](../android/app/assist/AssistContent.md)), the "Open in browser" feature will use this URI to transition the current session from one surface to the other. Apps may choose to encode session or user information into this URI in order to provide a better session transfer experience. However, while this URI will only be available to the system and not other applications, developers should not encode authentication credentials into this URI, because it will be surfaced in the browser URL bar and may be copied and shared from there.
 
-When providing this URI, developers should still continue to provide [setWebUri](https://developer.android.com/reference/kotlin/android/app/assist/AssistContent#setWebUri(android.net.Uri))for backwards compatibility with features such as [recents URL sharing](https://developer.android.com/guide/components/activities/recents#url-sharing) which facilitate link sharing with other users and would not benefit from a session-transfer URI.
+When providing this URI, developers should still continue to provide [setWebUri](../android/app/assist/AssistContent.md))for backwards compatibility with features such as [recents URL sharing](https://developer.android.com/guide/components/activities/recents#url-sharing) which facilitate link sharing with other users and would not benefit from a session-transfer URI.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)?:This value may be`null`. |
+| `uri` | [Uri](../android/net/Uri.md)?:This value may be`null`. |
 
 **See Also**
 
-- [android.app.Activity#requestOpenInBrowserEducation()](https://developer.android.com/reference/kotlin/android/app/Activity.html#requestOpenInBrowserEducation()) 
+- [android.app.Activity#requestOpenInBrowserEducation()](../android/app/Activity.md)) 
 
 ### setStructuredData
 
@@ -244,7 +244,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun setWebUri(uri: Uri!): Unit
 ```
 
-Set a web URI associated with the current data being shown to the user. This URI could be opened in a web browser, or in the app as an [Intent.ACTION_VIEW](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_VIEW:kotlin.String) Intent, to show the same data that is currently being displayed by it. The URI here should be something that is transportable off the device into other environments to acesss the same data as is currently being shown in the app; if the app does not have such a representation, it should leave the null and only report the local intent and clip data. 
+Set a web URI associated with the current data being shown to the user. This URI could be opened in a web browser, or in the app as an [Intent.ACTION_VIEW](../android/content/Intent.md) Intent, to show the same data that is currently being displayed by it. The URI here should be something that is transportable off the device into other environments to acesss the same data as is currently being shown in the app; if the app does not have such a representation, it should leave the null and only report the local intent and clip data. 
 
 ### writeToParcel
 
@@ -259,8 +259,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

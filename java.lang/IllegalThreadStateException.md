@@ -11,11 +11,11 @@ open class IllegalThreadStateException : IllegalArgumentException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException) ||
-| | | | | ↳ | [java.lang.IllegalThreadStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalThreadStateException#) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) ||
+| | | | | ↳ | [java.lang.IllegalThreadStateException](../java/lang/IllegalThreadStateException.md) |
 
 Thrown to indicate that a thread is not in an appropriate state for the requested operation. See, for example, the`suspend`and`resume`methods in class`Thread`.
 
@@ -23,8 +23,8 @@ Thrown to indicate that a thread is not in an appropriate state for the requeste
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalThreadStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalThreadStateException#IllegalThreadStateException())`()` Constructs an`IllegalThreadStateException`with no detail message. |
-| [IllegalThreadStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalThreadStateException#IllegalThreadStateException(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalThreadStateException`with the specified detail message. |
+| [IllegalThreadStateException](../java/lang/IllegalThreadStateException.md))`()` Constructs an`IllegalThreadStateException`with no detail message. |
+| [IllegalThreadStateException](../java/lang/IllegalThreadStateException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalThreadStateException`with the specified detail message. |
 
 ## Public constructors
 

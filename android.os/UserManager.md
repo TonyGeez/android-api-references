@@ -8,7 +8,7 @@ open class UserManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.UserManager](https://developer.android.com/reference/kotlin/android/os/UserManager#) |
+| ↳ | [android.os.UserManager](../android/os/UserManager.md) |
 
 Manages users and user details on a multi-user system. There are two major categories of users: fully customizable users with their own login, and profiles that share a workspace with a related user.
 
@@ -144,19 +144,19 @@ See `https://developer.android.com/reference/kotlin/android/app/admin/DevicePoli
 
 | Public methods ||
 |---|---|
-| open static [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#createUserCreationIntent(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.os.PersistableBundle)(userName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountOptions: https://developer.android.com/reference/kotlin/android/os/PersistableBundle?)` Returns an intent to create a user for the provided name and account name. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getApplicationRestrictions(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/os/Bundle` containing any saved application restrictions for the context user, for the given package name. |
+| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#createUserCreationIntent(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.os.PersistableBundle)(userName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountOptions: https://developer.android.com/reference/kotlin/android/os/PersistableBundle?)` Returns an intent to create a user for the provided name and account name. |
+| open [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getApplicationRestrictions(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/os/Bundle` containing any saved application restrictions for the context user, for the given package name. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getSerialNumberForUser(android.os.UserHandle)(user: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Return the serial number for a user. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserCount()()` Return the number of users currently created on the device. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserCreationTime(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Returns creation time of the given user. |
-| open [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserForSerialNumber(kotlin.Long)(serialNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Return the user associated with a serial number previously returned by `https://developer.android.com/reference/kotlin/android/os/UserManager#getSerialNumberForUser(android.os.UserHandle)`. |
+| open [UserHandle](../android/os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserForSerialNumber(kotlin.Long)(serialNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Return the user associated with a serial number previously returned by `https://developer.android.com/reference/kotlin/android/os/UserManager#getSerialNumberForUser(android.os.UserHandle)`. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserName()()` Returns the user name of the context user. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!\>! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserProfiles()()` Returns a list of the users that are associated with the context user, including the user itself. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()()` Returns the user-wide restrictions imposed on the context user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android/os/UserHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserProfiles()()` Returns a list of the users that are associated with the context user, including the user itself. |
+| open [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()()` Returns the user-wide restrictions imposed on the context user. |
 | --- | --- |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Returns the user-wide restrictions imposed on the user specified by `userHandle`. |
+| open [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Returns the user-wide restrictions imposed on the user specified by `userHandle`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#hasUserRestriction(kotlin.String)(restrictionKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns whether the context user has been disallowed from performing certain actions or setting certain settings. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isAdminUser()()` Used to check if the context user is an admin user. |
 | --- | --- |
@@ -995,11 +995,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val DISALLOW_CONFIG_VPN: String
 ```
 
-Specifies if a user is disallowed from configuring a VPN. The default value is `false `. This restriction has an effect when set by device owners and, in Android 6.0 ([API level 23](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#M:kotlin.Int)) or higher, profile owners.
+Specifies if a user is disallowed from configuring a VPN. The default value is `false `. This restriction has an effect when set by device owners and, in Android 6.0 ([API level 23](../android/os/Build.VERSION_CODES.md)) or higher, profile owners.
 
-This restriction also prevents VPNs from starting. However, in Android 7.0 ([API level 24](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N:kotlin.Int)) or higher, the system does start always-on VPNs created by the device or profile owner.
+This restriction also prevents VPNs from starting. However, in Android 7.0 ([API level 24](../android/os/Build.VERSION_CODES.md)) or higher, the system does start always-on VPNs created by the device or profile owner.
 
-From Android 12 ([API level 31](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#S:kotlin.Int)) enforcing this restriction clears currently active VPN if it was configured by the user.
+From Android 12 ([API level 31](../android/os/Build.VERSION_CODES.md)) enforcing this restriction clears currently active VPN if it was configured by the user.
 
 Holders of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_VPN:kotlin.String` can set this restriction using the DevicePolicyManager APIs mentioned below.
 
@@ -2155,7 +2155,7 @@ static val ENSURE_VERIFY_APPS: String
 
 Specifies if a user is disallowed from disabling application verification. The default value is `false`.
 
-In Android 8.0 ([API level 26](https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#O:kotlin.Int)) and higher, this is a global user restriction. If a device owner or profile owner sets this restriction, the system enforces app verification across all users on the device. Running in earlier Android versions, this restriction affects only the profile that sets it.
+In Android 8.0 ([API level 26](../android/os/Build.VERSION_CODES.md)) and higher, this is a global user restriction. If a device owner or profile owner sets this restriction, the system enforces app verification across all users on the device. Running in earlier Android versions, this restriction affects only the profile that sets it.
 
 Holders of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_INSTALL_UNKNOWN_SOURCES:kotlin.String` can set this restriction using the DevicePolicyManager APIs mentioned below.
 
@@ -2381,7 +2381,7 @@ The new user is created but not initialized. After switching into the user for t
 | `accountName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Optional account name that will be used by the setup wizard to initialize the user. Character limit is 500. This value may be `null`. |
 | `accountType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Optional account type for the account to be created. This is required if the account name is specified. Character limit is 500. This value may be `null`. |
 | --- | --- |
-| `accountOptions` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle)?: Optional bundle of data to be passed in during account creation in the new user via `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. Character limit is 1000. This value may be `null`. |
+| `accountOptions` | [PersistableBundle](../android/os/PersistableBundle.md)?: Optional bundle of data to be passed in during account creation in the new user via `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. Character limit is 1000. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2440,7 +2440,7 @@ Return the serial number for a user. This is a device-unique number assigned to 
 
 | Parameters ||
 |---|---|
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!: The user whose serial number is to be retrieved. |
+| `user` | [UserHandle](../android/os/UserHandle.md)!: The user whose serial number is to be retrieved. |
 
 | Return ||
 |---|---|
@@ -2473,7 +2473,7 @@ Returns creation time of the given user. The given user must be the calling user
 
 | Parameters ||
 |---|---|
-| `userHandle` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!: user handle of the calling user or a profile associated with the calling user. |
+| `userHandle` | [UserHandle](../android/os/UserHandle.md)!: user handle of the calling user or a profile associated with the calling user. |
 
 | Return ||
 |---|---|
@@ -2558,7 +2558,7 @@ Returns the user-wide restrictions imposed on the user specified by `userHandle`
 
 | Parameters ||
 |---|---|
-| `userHandle` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!: the UserHandle of the user for whom to retrieve the restrictions. |
+| `userHandle` | [UserHandle](../android/os/UserHandle.md)!: the UserHandle of the user for whom to retrieve the restrictions. |
 
 | Return ||
 |---|---|
@@ -2666,7 +2666,7 @@ Returns whether the given profile is in quiet mode or not.
 
 | Parameters ||
 |---|---|
-| `userHandle` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!: The user handle of the profile to be queried. |
+| `userHandle` | [UserHandle](../android/os/UserHandle.md)!: The user handle of the profile to be queried. |
 
 | Return ||
 |---|---|
@@ -2732,7 +2732,7 @@ Note prior to Android Nougat MR1 (SDK version \<= 24; `https://developer.android
 
 | Parameters ||
 |---|---|
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!: The user to retrieve the running state for. |
+| `user` | [UserHandle](../android/os/UserHandle.md)!: The user to retrieve the running state for. |
 
 ### isUserRunningOrStopping
 
@@ -2748,7 +2748,7 @@ Note prior to Android Nougat MR1 (SDK version \<= 24; `https://developer.android
 
 | Parameters ||
 |---|---|
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!: The user to retrieve the running state for. |
+| `user` | [UserHandle](../android/os/UserHandle.md)!: The user to retrieve the running state for. |
 
 ### isUserUnlocked
 
@@ -2786,7 +2786,7 @@ Requires `android.permission.MANAGE_USERS` or `android.permission.INTERACT_ACROS
 
 | Parameters ||
 |---|---|
-| `user` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle)!: to retrieve the unlocked state for. |
+| `user` | [UserHandle](../android/os/UserHandle.md)!: to retrieve the unlocked state for. |
 
 **See Also**
 
@@ -2815,7 +2815,7 @@ The caller must either be the foreground default launcher or have one of these p
 | Parameters ||
 |---|---|
 | `enableQuietMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether quiet mode should be enabled or disabled |
-| `userHandle` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle): user handle of the profile. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android/os/UserHandle.md): user handle of the profile. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2847,7 +2847,7 @@ Perform the same operation as `https://developer.android.com/reference/kotlin/an
 | Parameters ||
 |---|---|
 | `enableQuietMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether quiet mode should be enabled or disabled |
-| `userHandle` | [UserHandle](https://developer.android.com/reference/kotlin/android/os/UserHandle): user handle of the profile. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android/os/UserHandle.md): user handle of the profile. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Can be 0 or `https://developer.android.com/reference/kotlin/android/os/UserManager#QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/UserManager#QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED:kotlin.Int` |
 | --- | --- |
 

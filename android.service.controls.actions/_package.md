@@ -2,15 +2,15 @@
 
 # android.service.controls.actions
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/controls/actions/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/controls/actions/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [BooleanAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/BooleanAction) | Action sent by user toggling a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) between checked/unchecked. |
+| [BooleanAction](../android/service/controls/actions/BooleanAction.md) | Action sent by user toggling a [Control](../android/service/controls/Control.md) between checked/unchecked. |
 | --- | --- |
-| [CommandAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/CommandAction) | A simple [ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction) indicating that the user has interacted with a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) created using a [StatelessTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/StatelessTemplate.html#). |
-| [ControlAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction) | An abstract action indicating a user interaction with a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#). |
-| [FloatAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/FloatAction) | Action sent by a [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate.html#), [ToggleRangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleRangeTemplate.html#). |
+| [CommandAction](../android/service/controls/actions/CommandAction.md) | A simple [ControlAction](../android/service/controls/actions/ControlAction.md) indicating that the user has interacted with a [Control](../android/service/controls/Control.md) created using a [StatelessTemplate](../android/service/controls/templates/StatelessTemplate.md). |
+| [ControlAction](../android/service/controls/actions/ControlAction.md) | An abstract action indicating a user interaction with a [Control](../android/service/controls/Control.md). |
+| [FloatAction](../android/service/controls/actions/FloatAction.md) | Action sent by a [RangeTemplate](../android/service/controls/templates/RangeTemplate.md), [ToggleRangeTemplate](../android/service/controls/templates/ToggleRangeTemplate.md). |
 | --- | --- |
-| [ModeAction](https://developer.android.com/reference/kotlin/android/service/controls/actions/ModeAction) | Action sent by the user to indicate a change of mode. |
+| [ModeAction](../android/service/controls/actions/ModeAction.md) | Action sent by the user to indicate a change of mode. |

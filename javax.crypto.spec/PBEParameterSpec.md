@@ -10,7 +10,7 @@ open class PBEParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.PBEParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#) |
+| ↳ | [javax.crypto.spec.PBEParameterSpec](../javax/crypto/spec/PBEParameterSpec.md) |
 
 This class specifies the set of parameters used with password-based encryption (PBE), as defined in the [PKCS #5](http://www.ietf.org/rfc/rfc2898.txt) standard.
 
@@ -18,14 +18,14 @@ This class specifies the set of parameters used with password-based encryption (
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PBEParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#PBEParameterSpec(kotlin.ByteArray,%20kotlin.Int))`(`salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for password-based encryption as defined in the PKCS #5 standard. |
-| [PBEParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#PBEParameterSpec(kotlin.ByteArray,%20kotlin.Int,%20java.security.spec.AlgorithmParameterSpec))`(`salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paramSpec:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!`)` Constructs a parameter set for password-based encryption as defined in the PKCS #5 standard. |
+| [PBEParameterSpec](../javax/crypto/spec/PBEParameterSpec.md))`(`salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for password-based encryption as defined in the PKCS #5 standard. |
+| [PBEParameterSpec](../javax/crypto/spec/PBEParameterSpec.md))`(`salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paramSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Constructs a parameter set for password-based encryption as defined in the PKCS #5 standard. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#getIterationCount())`()` Returns the iteration count. |
-| open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | [getParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#getParameterSpec())`()` Returns the cipher algorithm parameter specification. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](https://developer.android.com/reference/kotlin/javax/crypto/spec/PBEParameterSpec#getSalt())`()` Returns the salt. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](../javax/crypto/spec/PBEParameterSpec.md))`()` Returns the iteration count. |
+| open [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getParameterSpec](../javax/crypto/spec/PBEParameterSpec.md))`()` Returns the cipher algorithm parameter specification. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](../javax/crypto/spec/PBEParameterSpec.md))`()` Returns the salt. |
 | --- | --- |
 
 ## Public constructors
@@ -68,7 +68,7 @@ Constructs a parameter set for password-based encryption as defined in the PKCS 
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `salt` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the salt. The contents of`salt`are copied to protect against subsequent modification. |
 | `iterationCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the iteration count. |
-| `paramSpec` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)!:the cipher algorithm parameter specification, which may be null. |
+| `paramSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the cipher algorithm parameter specification, which may be null. |
 | --- | --- |
 
 | Exceptions ||
@@ -103,7 +103,7 @@ Returns the cipher algorithm parameter specification.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#)! | the parameter specification, or null if none was set. |
+| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | the parameter specification, or null if none was set. |
 
 ### getSalt
 

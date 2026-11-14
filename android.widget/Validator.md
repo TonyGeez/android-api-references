@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Validator
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/AutoCompleteTextView.Validator "View this page in Java") 
+Kotlin| [Java](../android/widget/AutoCompleteTextView.Validator.md) 
 | --- | --- |
 
 ```
 interface Validator
 ```
 
-| [android.widget.AutoCompleteTextView.Validator](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.Validator#) |
+| [android.widget.AutoCompleteTextView.Validator](../android/widget/AutoCompleteTextView.Validator.md) |
 
 This interface is used to make sure that the text entered in this TextView complies to a certain format. Since there is no foolproof way to prevent the user from leaving this View with an incorrect value in it, all we can do is try to fix it ourselves when this happens.
 
@@ -19,8 +19,8 @@ This interface is used to make sure that the text entered in this TextView compl
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [fixText](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.Validator#fixText(kotlin.CharSequence))`(`invalidText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Corrects the specified text to make it valid. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.Validator#isValid(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Validates the specified text. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [fixText](../android/widget/AutoCompleteTextView.Validator.md))`(`invalidText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Corrects the specified text to make it valid. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../android/widget/AutoCompleteTextView.Validator.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Validates the specified text. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ Corrects the specified text to make it valid.
 
 **See Also**
 
-- [#isValid(CharSequence)](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.Validator#isValid(kotlin.CharSequence)) 
+- [#isValid(CharSequence)](../android/widget/AutoCompleteTextView.Validator.md)) 
 
 ### isValid
 
@@ -62,4 +62,4 @@ Validates the specified text.
 
 **See Also**
 
-- [#fixText(CharSequence)](https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.Validator#fixText(kotlin.CharSequence))
+- [#fixText(CharSequence)](../android/widget/AutoCompleteTextView.Validator.md))

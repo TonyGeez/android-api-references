@@ -8,7 +8,7 @@ open class PolicyIdentifier<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.PolicyIdentifier](https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier#) |
+| ↳ | [android.app.admin.PolicyIdentifier](../android/app/admin/PolicyIdentifier.md) |
 
 Represents a type safe identifier for a policy. Use it as a key for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setPolicy(android.app.admin.PolicyIdentifier,%20kotlin.Int,%20android.app.admin.DevicePolicyManager.setPolicy.T)` and related APIs.
 
@@ -27,7 +27,7 @@ Currently policy definitions are restricted to the `android.app.admin.policy` na
 
 | Public methods ||
 |---|---|
-| open static [PolicyIdentifier](https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier#)\<U\> | `https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier#createForTesting(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create an instance of PolicyIdentifier for testing purposes. |
+| open static [PolicyIdentifier](../android/app/admin/PolicyIdentifier.md)\<U\> | `https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier#createForTesting(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create an instance of PolicyIdentifier for testing purposes. |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # ShareActionProvider
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/ShareActionProvider "View this page in Java") 
+Kotlin| [Java](../android/widget/ShareActionProvider.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ open class ShareActionProvider : ActionProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.ActionProvider](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#) ||
-| | ↳ | [android.widget.ShareActionProvider](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#) |
+| ↳ | [android.view.ActionProvider](../android/view/ActionProvider.md) ||
+| | ↳ | [android.widget.ShareActionProvider](../android/widget/ShareActionProvider.md) |
 
 This is a provider for a share action. It is responsible for creating views that enable data sharing and also to show a sub menu with sharing activities if the hosting item is placed on the overflow menu.
 
-Here is how to use the action provider with custom backing file in a [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#): 
+Here is how to use the action provider with custom backing file in a [MenuItem](../android/view/MenuItem.md): 
 
 ```kotlin
 // In Activity#onCreateOptionsMenu
@@ -48,30 +48,30 @@ Here is how to use the action provider with custom backing file in a [MenuItem](
 
 | Nested classes ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [OnShareTargetSelectedListener](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider.OnShareTargetSelectedListener) Listener for the event of selecting a share target. |
+| abstract | [OnShareTargetSelectedListener](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md) Listener for the event of selecting a share target. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_SHARE_HISTORY_FILE_NAME](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#DEFAULT_SHARE_HISTORY_FILE_NAME:kotlin.String) The default name for storing share history. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_SHARE_HISTORY_FILE_NAME](../android/widget/ShareActionProvider.md) The default name for storing share history. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ShareActionProvider](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#ShareActionProvider(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Creates a new instance. |
+| [ShareActionProvider](../android/widget/ShareActionProvider.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Creates a new instance. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSubMenu](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#hasSubMenu())`()` Determines if this ActionProvider has a submenu associated with it. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#) | [onCreateActionView](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#onCreateActionView())`()` Factory method called by the Android framework to create new action views. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareSubMenu](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#onPrepareSubMenu(android.view.SubMenu))`(`subMenu:` ` [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu.html#)`)` Called to prepare an associated submenu for the menu item backed by this ActionProvider. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSubMenu](../android/widget/ShareActionProvider.md))`()` Determines if this ActionProvider has a submenu associated with it. |
+| open [View](../android/view/View.md) | [onCreateActionView](../android/widget/ShareActionProvider.md))`()` Factory method called by the Android framework to create new action views. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareSubMenu](../android/widget/ShareActionProvider.md))`(`subMenu:` ` [SubMenu](../android/view/SubMenu.md)`)` Called to prepare an associated submenu for the menu item backed by this ActionProvider. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnShareTargetSelectedListener](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#setOnShareTargetSelectedListener(android.widget.ShareActionProvider.OnShareTargetSelectedListener))`(`listener:` ` [ShareActionProvider.OnShareTargetSelectedListener](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider.OnShareTargetSelectedListener)!`)` Sets a listener to be notified when a share target has been selected. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShareHistoryFileName](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#setShareHistoryFileName(kotlin.String))`(`shareHistoryFile:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the file name of a file for persisting the share history which history will be used for ordering share targets. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShareIntent](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#setShareIntent(android.content.Intent))`(`shareIntent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Sets an intent with information about the share action. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnShareTargetSelectedListener](../android/widget/ShareActionProvider.md))`(`listener:` ` [ShareActionProvider.OnShareTargetSelectedListener](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md)!`)` Sets a listener to be notified when a share target has been selected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShareHistoryFileName](../android/widget/ShareActionProvider.md))`(`shareHistoryFile:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the file name of a file for persisting the share history which history will be used for ordering share targets. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShareIntent](../android/widget/ShareActionProvider.md))`(`shareIntent:` ` [Intent](../android/content/Intent.md)!`)` Sets an intent with information about the share action. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [ActionProvider](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVisible](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#isVisible())`()` <br /> If [overridesItemVisibility()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#overridesItemVisibility())returns true, the return value of this method will help determine the visibility of the [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#) this ActionProvider is bound to. If the MenuItem's visibility is explicitly set to false by the application, the MenuItem will not be shown, even if this method returns true. <br /> | | [View](https://developer.android.com/reference/kotlin/android/view/View.html#) | [onCreateActionView](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#onCreateActionView(android.view.MenuItem))`(`forItem:` ` [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#)`)` <br /> Factory method called by the Android framework to create new action views. This method returns a new action view for the given MenuItem. If your ActionProvider implementation overrides the deprecated no-argument overload [onCreateActionView()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#onCreateActionView()), overriding this method for devices running API 16 or later is recommended but optional. The default implementation calls [onCreateActionView()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#onCreateActionView())for compatibility with applications written for older platform versions. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPerformDefaultAction](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#onPerformDefaultAction())`()` <br /> Performs an optional default action. For the case of an action provider placed in a menu item not shown as an action this method is invoked if previous callbacks for processing menu selection has handled the event. A menu item selection is processed in the following order: - Receiving a call to [MenuItem.OnMenuItemClickListener.onMenuItemClick](https://developer.android.com/reference/kotlin/android/view/MenuItem.OnMenuItemClickListener.html#onMenuItemClick(android.view.MenuItem)). - Receiving a call to [Activity.onOptionsItemSelected(MenuItem)](https://developer.android.com/reference/kotlin/android/app/Activity.html#onOptionsItemSelected(android.view.MenuItem)) - Receiving a call to [Fragment.onOptionsItemSelected(MenuItem)](https://developer.android.com/reference/kotlin/android/app/Fragment.html#onOptionsItemSelected(android.view.MenuItem)) - Launching the [android.content.Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) set via [MenuItem.setIntent(android.content.Intent)](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#setIntent(android.content.Intent)) - Invoking this method. <br /> The default implementation does not perform any action and returns false. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overridesItemVisibility](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#overridesItemVisibility())`()` <br /> The result of this method determines whether or not [isVisible()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#isVisible())will be used by the [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#) this ActionProvider is bound to help determine its visibility. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [refreshVisibility](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#refreshVisibility())`()` <br /> If this ActionProvider is associated with an item in a menu, refresh the visibility of the item based on [overridesItemVisibility()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#overridesItemVisibility())and [isVisible()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#isVisible()). If [overridesItemVisibility()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#overridesItemVisibility())returns false, this call will have no effect. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVisibilityListener](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#setVisibilityListener(android.view.ActionProvider.VisibilityListener))`(`listener:` ` [ActionProvider.VisibilityListener](https://developer.android.com/reference/kotlin/android/view/ActionProvider.VisibilityListener.html#)?`)` <br /> Set a listener to be notified when this ActionProvider's overridden visibility changes. This should only be used by MenuItem implementations. <br /> | ||
+| From class [ActionProvider](../android/view/ActionProvider.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVisible](../android/view/ActionProvider.md))`()` <br /> If [overridesItemVisibility()](../android/view/ActionProvider.md))returns true, the return value of this method will help determine the visibility of the [MenuItem](../android/view/MenuItem.md) this ActionProvider is bound to. If the MenuItem's visibility is explicitly set to false by the application, the MenuItem will not be shown, even if this method returns true. <br /> | | [View](../android/view/View.md) | [onCreateActionView](../android/view/ActionProvider.md))`(`forItem:` ` [MenuItem](../android/view/MenuItem.md)`)` <br /> Factory method called by the Android framework to create new action views. This method returns a new action view for the given MenuItem. If your ActionProvider implementation overrides the deprecated no-argument overload [onCreateActionView()](../android/view/ActionProvider.md)), overriding this method for devices running API 16 or later is recommended but optional. The default implementation calls [onCreateActionView()](../android/view/ActionProvider.md))for compatibility with applications written for older platform versions. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPerformDefaultAction](../android/view/ActionProvider.md))`()` <br /> Performs an optional default action. For the case of an action provider placed in a menu item not shown as an action this method is invoked if previous callbacks for processing menu selection has handled the event. A menu item selection is processed in the following order: - Receiving a call to [MenuItem.OnMenuItemClickListener.onMenuItemClick](../android/view/MenuItem.OnMenuItemClickListener.md)). - Receiving a call to [Activity.onOptionsItemSelected(MenuItem)](../android/app/Activity.md)) - Receiving a call to [Fragment.onOptionsItemSelected(MenuItem)](../android/app/Fragment.md)) - Launching the [android.content.Intent](../android/content/Intent.md) set via [MenuItem.setIntent(android.content.Intent)](../android/view/MenuItem.md)) - Invoking this method. <br /> The default implementation does not perform any action and returns false. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overridesItemVisibility](../android/view/ActionProvider.md))`()` <br /> The result of this method determines whether or not [isVisible()](../android/view/ActionProvider.md))will be used by the [MenuItem](../android/view/MenuItem.md) this ActionProvider is bound to help determine its visibility. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [refreshVisibility](../android/view/ActionProvider.md))`()` <br /> If this ActionProvider is associated with an item in a menu, refresh the visibility of the item based on [overridesItemVisibility()](../android/view/ActionProvider.md))and [isVisible()](../android/view/ActionProvider.md)). If [overridesItemVisibility()](../android/view/ActionProvider.md))returns false, this call will have no effect. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVisibilityListener](../android/view/ActionProvider.md))`(`listener:` ` [ActionProvider.VisibilityListener](../android/view/ActionProvider.VisibilityListener.md)?`)` <br /> Set a listener to be notified when this ActionProvider's overridden visibility changes. This should only be used by MenuItem implementations. <br /> | ||
 
 ## Constants
 
@@ -101,7 +101,7 @@ Creates a new instance.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:Context for accessing resources. |
+| `context` | [Context](../android/content/Context.md)!:Context for accessing resources. |
 
 ## Public methods
 
@@ -115,7 +115,7 @@ open fun hasSubMenu(): Boolean
 
 Determines if this ActionProvider has a submenu associated with it.
 
-Associated submenus will be shown when an action view is not. This provider instance will receive a call to [onPrepareSubMenu(android.view.SubMenu)](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#onPrepareSubMenu(android.view.SubMenu))after the call to [onPerformDefaultAction()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#onPerformDefaultAction())and before a submenu is displayed to the user.
+Associated submenus will be shown when an action view is not. This provider instance will receive a call to [onPrepareSubMenu(android.view.SubMenu)](../android/view/ActionProvider.md))after the call to [onPerformDefaultAction()](../android/view/ActionProvider.md))and before a submenu is displayed to the user.
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -131,11 +131,11 @@ open fun onCreateActionView(): View
 
 Factory method called by the Android framework to create new action views.
 
-This method has been deprecated in favor of [onCreateActionView(android.view.MenuItem)](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#onCreateActionView(android.view.MenuItem)). Newer apps that wish to support platform versions prior to API 16 should also implement this method to return a valid action view.
+This method has been deprecated in favor of [onCreateActionView(android.view.MenuItem)](../android/view/ActionProvider.md)). Newer apps that wish to support platform versions prior to API 16 should also implement this method to return a valid action view.
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------------------------------------|
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#) | A new action view. This value cannot be`null`. |
+| [View](../android/view/View.md) | A new action view. This value cannot be`null`. |
 
 ### onPrepareSubMenu
 
@@ -147,11 +147,11 @@ open fun onPrepareSubMenu(subMenu: SubMenu): Unit
 
 Called to prepare an associated submenu for the menu item backed by this ActionProvider.
 
-if [hasSubMenu()](https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#hasSubMenu())returns true, this method will be called when the menu item is selected to prepare the submenu for presentation to the user. Apps may use this to create or alter submenu content right before display.
+if [hasSubMenu()](../android/view/ActionProvider.md))returns true, this method will be called when the menu item is selected to prepare the submenu for presentation to the user. Apps may use this to create or alter submenu content right before display.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `subMenu` | [SubMenu](https://developer.android.com/reference/kotlin/android/view/SubMenu.html#):Submenu that will be displayed This value cannot be`null`. |
+| `subMenu` | [SubMenu](../android/view/SubMenu.md):Submenu that will be displayed This value cannot be`null`. |
 
 ### setOnShareTargetSelectedListener
 
@@ -167,7 +167,7 @@ Sets a listener to be notified when a share target has been selected. The listen
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [ShareActionProvider.OnShareTargetSelectedListener](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider.OnShareTargetSelectedListener)!:The listener. |
+| `listener` | [ShareActionProvider.OnShareTargetSelectedListener](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md)!:The listener. |
 
 ### setShareHistoryFileName
 
@@ -177,9 +177,9 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun setShareHistoryFileName(shareHistoryFile: String!): Unit
 ```
 
-Sets the file name of a file for persisting the share history which history will be used for ordering share targets. This file will be used for all view created by [onCreateActionView()](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#onCreateActionView()). Defaults to [DEFAULT_SHARE_HISTORY_FILE_NAME](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#DEFAULT_SHARE_HISTORY_FILE_NAME:kotlin.String). Set to`null`if share history should not be persisted between sessions.
+Sets the file name of a file for persisting the share history which history will be used for ordering share targets. This file will be used for all view created by [onCreateActionView()](../android/widget/ShareActionProvider.md)). Defaults to [DEFAULT_SHARE_HISTORY_FILE_NAME](../android/widget/ShareActionProvider.md). Set to`null`if share history should not be persisted between sessions.
 
-**Note:** The history file name can be set any time, however only the action views created by [onCreateActionView()](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#onCreateActionView())after setting the file name will be backed by the provided file. Therefore, if you want to use different history files for sharing specific types of content, every time you change the history file [setShareHistoryFileName(java.lang.String)](https://developer.android.com/reference/kotlin/android/widget/ShareActionProvider#setShareHistoryFileName(kotlin.String))you must call [android.app.Activity#invalidateOptionsMenu()](https://developer.android.com/reference/kotlin/android/app/Activity.html#invalidateOptionsMenu())to recreate the action view. You should**not** call [android.app.Activity#invalidateOptionsMenu()](https://developer.android.com/reference/kotlin/android/app/Activity.html#invalidateOptionsMenu())from [android.app.Activity#onCreateOptionsMenu(Menu)](https://developer.android.com/reference/kotlin/android/app/Activity.html#onCreateOptionsMenu(android.view.Menu)). 
+**Note:** The history file name can be set any time, however only the action views created by [onCreateActionView()](../android/widget/ShareActionProvider.md))after setting the file name will be backed by the provided file. Therefore, if you want to use different history files for sharing specific types of content, every time you change the history file [setShareHistoryFileName(java.lang.String)](../android/widget/ShareActionProvider.md))you must call [android.app.Activity#invalidateOptionsMenu()](../android/app/Activity.md))to recreate the action view. You should**not** call [android.app.Activity#invalidateOptionsMenu()](../android/app/Activity.md))from [android.app.Activity#onCreateOptionsMenu(Menu)](../android/app/Activity.md)). 
 
 ```kotlin
 private void doShare(Intent intent) {
@@ -218,9 +218,9 @@ Intent shareIntent = new Intent(Intent.ACTION_SEND);
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------|
-| `shareIntent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The share intent. |
+| `shareIntent` | [Intent](../android/content/Intent.md)!:The share intent. |
 
 **See Also**
 
-- [android.content.Intent#ACTION_SEND](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String)
-- [android.content.Intent#ACTION_SEND_MULTIPLE](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND_MULTIPLE:kotlin.String)
+- [android.content.Intent#ACTION_SEND](../android/content/Intent.md)
+- [android.content.Intent#ACTION_SEND_MULTIPLE](../android/content/Intent.md)

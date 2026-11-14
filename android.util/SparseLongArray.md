@@ -8,7 +8,7 @@ open class SparseLongArray : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.SparseLongArray](https://developer.android.com/reference/kotlin/android/util/SparseLongArray#) |
+| ↳ | [android.util.SparseLongArray](../android/util/SparseLongArray.md) |
 
 SparseLongArrays map integers to longs. Unlike a normal array of longs, there can be gaps in the indices. It is intended to be more memory efficient than using a HashMap to map Integers to Longs, both because it avoids auto-boxing keys and values and its data structure doesn't rely on an extra entry object for each mapping.
 
@@ -27,7 +27,7 @@ It is possible to iterate over the items in this container using `https://develo
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseLongArray#append(kotlin.Int,%20kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseLongArray#clear()()` Removes all key-value mappings from this SparseLongArray. |
-| open [SparseLongArray](https://developer.android.com/reference/kotlin/android/util/SparseLongArray#) | `https://developer.android.com/reference/kotlin/android/util/SparseLongArray#clone()()` Creates and returns a copy of this object. |
+| open [SparseLongArray](../android/util/SparseLongArray.md) | `https://developer.android.com/reference/kotlin/android/util/SparseLongArray#clone()()` Creates and returns a copy of this object. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseLongArray#compute(kotlin.Int,%20java.util.function.LongBinaryOperator)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, function: https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)` Attempts to compute a new mapped value for the specified key based on its current mapped value (or 0 if there is no current mapping). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseLongArray#delete(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the mapping from the specified key, if there was any. |
@@ -148,7 +148,7 @@ Attempts to compute a new mapped value for the specified key based on its curren
 | Parameters ||
 |---|---|
 | `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key to compute the value for. |
-| `function` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#): The function to compute the new value. This value cannot be `null`. |
+| `function` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md): The function to compute the new value. This value cannot be `null`. |
 
 | Return ||
 |---|---|

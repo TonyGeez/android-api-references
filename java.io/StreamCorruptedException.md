@@ -11,11 +11,11 @@ open class StreamCorruptedException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](https://developer.android.com/reference/kotlin/java/io/ObjectStreamException) ||
-| | | | | ↳ | [java.io.StreamCorruptedException](https://developer.android.com/reference/kotlin/java/io/StreamCorruptedException#) |
+| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.StreamCorruptedException](../java/io/StreamCorruptedException.md) |
 
 Thrown when control information that was read from an object stream violates internal consistency checks.
 
@@ -23,8 +23,8 @@ Thrown when control information that was read from an object stream violates int
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StreamCorruptedException](https://developer.android.com/reference/kotlin/java/io/StreamCorruptedException#StreamCorruptedException())`()` Create a StreamCorruptedException and list no reason why thrown. |
-| [StreamCorruptedException](https://developer.android.com/reference/kotlin/java/io/StreamCorruptedException#StreamCorruptedException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a StreamCorruptedException and list a reason why thrown. |
+| [StreamCorruptedException](../java/io/StreamCorruptedException.md))`()` Create a StreamCorruptedException and list no reason why thrown. |
+| [StreamCorruptedException](../java/io/StreamCorruptedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a StreamCorruptedException and list a reason why thrown. |
 
 ## Public constructors
 

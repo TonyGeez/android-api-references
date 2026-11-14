@@ -5,26 +5,26 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # OnPreferenceChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/preference/Preference.OnPreferenceChangeListener "View this page in Java") 
+Kotlin| [Java](../android/preference/Preference.OnPreferenceChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnPreferenceChangeListener
 ```
 
-| [android.preference.Preference.OnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceChangeListener#) |
+| [android.preference.Preference.OnPreferenceChangeListener](../android/preference/Preference.OnPreferenceChangeListener.md) |
 
 | **This interface was deprecated in API level 29.**
 |
-| Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](https://developer.android.com/reference/androidx/preference/package-summary.html) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
+| Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](../androidx/preference/_package.md) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
 
-Interface definition for a callback to be invoked when the value of this [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference) has been changed by the user and is about to be set and/or persisted. This gives the client a chance to prevent setting and/or persisting the value.
+Interface definition for a callback to be invoked when the value of this [Preference](../android/preference/Preference.md) has been changed by the user and is about to be set and/or persisted. This gives the client a chance to prevent setting and/or persisting the value.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceChange](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceChangeListener#onPreferenceChange(android.preference.Preference,%20kotlin.Any))`(`preference:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Called when a Preference has been changed by the user. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceChange](../android/preference/Preference.OnPreferenceChangeListener.md))`(`preference:` ` [Preference](../android/preference/Preference.md)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Called when a Preference has been changed by the user. |
 
 ## Public methods
 
@@ -45,7 +45,7 @@ Called when a Preference has been changed by the user. This is called before the
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------|
-| `preference` | [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference)!:The changed Preference. |
+| `preference` | [Preference](../android/preference/Preference.md)!:The changed Preference. |
 | `newValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The new value of the Preference. |
 
 | Return ||

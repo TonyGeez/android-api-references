@@ -4,14 +4,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # AccessibilityStateChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener "View this page in Java") 
+Kotlin| [Java](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md) 
 | --- | --- |
 
 ```
 interface AccessibilityStateChangeListener
 ```
 
-| [android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener#) |
+| [android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md) |
 
 Listener for the system accessibility state. To listen for changes to the accessibility state on the device, implement this interface and register it with the system by calling #addAccessibilityStateChangeListener.
 
@@ -19,7 +19,7 @@ Listener for the system accessibility state. To listen for changes to the access
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityStateChanged](https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener#onAccessibilityStateChanged(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the accessibility enabled state changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityStateChanged](../android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the accessibility enabled state changes. |
 
 ## Public methods
 

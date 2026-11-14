@@ -10,7 +10,7 @@ class ApplicationRuntime
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [dalvik.system.ApplicationRuntime](https://developer.android.com/reference/kotlin/dalvik/system/ApplicationRuntime#) |
+| ↳ | [dalvik.system.ApplicationRuntime](../dalvik/system/ApplicationRuntime.md) |
 
 Provides APIs to retrieve the information about the application loaded in the current runtime.
 
@@ -18,7 +18,7 @@ Provides APIs to retrieve the information about the application loaded in the cu
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [DexFile.OptimizationInfo](https://developer.android.com/reference/kotlin/dalvik/system/DexFile.OptimizationInfo) | [getBaseApkOptimizationInfo](https://developer.android.com/reference/kotlin/dalvik/system/ApplicationRuntime#getBaseApkOptimizationInfo())`()` Returns the optimization status of the base APK loaded in this process. |
+| static [DexFile.OptimizationInfo](../dalvik/system/DexFile.OptimizationInfo.md) | [getBaseApkOptimizationInfo](../dalvik/system/ApplicationRuntime.md))`()` Returns the optimization status of the base APK loaded in this process. |
 
 ## Public methods
 
@@ -34,4 +34,4 @@ Returns the optimization status of the base APK loaded in this process. If no ba
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [DexFile.OptimizationInfo](https://developer.android.com/reference/kotlin/dalvik/system/DexFile.OptimizationInfo) | This value cannot be`null`. |
+| [DexFile.OptimizationInfo](../dalvik/system/DexFile.OptimizationInfo.md) | This value cannot be`null`. |

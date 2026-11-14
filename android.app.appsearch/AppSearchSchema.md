@@ -8,7 +8,7 @@ class AppSearchSchema : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.AppSearchSchema](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#) |
+| ↳ | [android.app.appsearch.AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) |
 
 The AppSearch Schema for a particular type of document.
 
@@ -45,7 +45,7 @@ The schema consists of type information, properties, and config (like tokenizati
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getDescription()()` Returns a natural language description of this schema type. |
 | --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getParentTypes()()` Returns the list of parent types of this schema for polymorphism. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppSearchSchema.PropertyConfig](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.PropertyConfig)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getProperties()()` Returns the list of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.PropertyConfig`s that are part of this schema. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppSearchSchema.PropertyConfig](../android/app/appsearch/AppSearchSchema.PropertyConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getProperties()()` Returns the list of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.PropertyConfig`s that are part of this schema. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#getSchemaType()()` Returns the name of this schema type, such as Email. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#hashCode()()` Returns a hash code value for the object. |
@@ -55,7 +55,7 @@ The schema consists of type information, properties, and config (like tokenizati
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AppSearchSchema](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -215,7 +215,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -4,27 +4,27 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # OutputConsumer
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaParser.OutputConsumer "View this page in Java") 
+Kotlin| [Java](../android/media/MediaParser.OutputConsumer.md) 
 | --- | --- |
 
 ```
 interface OutputConsumer
 ```
 
-| [android.media.MediaParser.OutputConsumer](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#) |
+| [android.media.MediaParser.OutputConsumer](../android/media/MediaParser.OutputConsumer.md) |
 
-Receives extracted media sample data and metadata from [MediaParser](https://developer.android.com/reference/kotlin/android/media/MediaParser).
+Receives extracted media sample data and metadata from [MediaParser](../android/media/MediaParser.md).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSampleCompleted](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onSampleCompleted(kotlin.Int,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.media.MediaCodec.CryptoInfo))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeMicros:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cryptoInfo:` ` [MediaCodec.CryptoInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo)?`)` Called once all the data of a sample has been passed to [onSampleDataFound](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onSampleDataFound(kotlin.Int,%20android.media.MediaParser.InputReader)). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSampleDataFound](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onSampleDataFound(kotlin.Int,%20android.media.MediaParser.InputReader))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputReader:` ` [MediaParser.InputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader)`)` Called when sample data is found in the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSeekMapFound](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onSeekMapFound(android.media.MediaParser.SeekMap))`(`seekMap:` ` [MediaParser.SeekMap](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap)`)` Called when a [SeekMap](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap) has been extracted from the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSampleCompleted](../android/media/MediaParser.OutputConsumer.md))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeMicros:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cryptoInfo:` ` [MediaCodec.CryptoInfo](../android/media/MediaCodec.CryptoInfo.md)?`)` Called once all the data of a sample has been passed to [onSampleDataFound](../android/media/MediaParser.OutputConsumer.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSampleDataFound](../android/media/MediaParser.OutputConsumer.md))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputReader:` ` [MediaParser.InputReader](../android/media/MediaParser.InputReader.md)`)` Called when sample data is found in the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSeekMapFound](../android/media/MediaParser.OutputConsumer.md))`(`seekMap:` ` [MediaParser.SeekMap](../android/media/MediaParser.SeekMap.md)`)` Called when a [SeekMap](../android/media/MediaParser.SeekMap.md) has been extracted from the stream. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTrackCountFound](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onTrackCountFound(kotlin.Int))`(`numberOfTracks:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the number of tracks is found. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTrackDataFound](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onTrackDataFound(kotlin.Int,%20android.media.MediaParser.TrackData))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `trackData:` ` [MediaParser.TrackData](https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData)`)` Called when new [TrackData](https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData) is found in the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTrackCountFound](../android/media/MediaParser.OutputConsumer.md))`(`numberOfTracks:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the number of tracks is found. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTrackDataFound](../android/media/MediaParser.OutputConsumer.md))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `trackData:` ` [MediaParser.TrackData](../android/media/MediaParser.TrackData.md)`)` Called when new [TrackData](../android/media/MediaParser.TrackData.md) is found in the stream. |
 
 ## Public methods
 
@@ -43,7 +43,7 @@ abstract fun onSampleCompleted(
 ): Unit
 ```
 
-Called once all the data of a sample has been passed to [onSampleDataFound](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onSampleDataFound(kotlin.Int,%20android.media.MediaParser.InputReader)).
+Called once all the data of a sample has been passed to [onSampleDataFound](../android/media/MediaParser.OutputConsumer.md)).
 
 Includes sample metadata, like presentation timestamp and flags.
 
@@ -51,11 +51,11 @@ Includes sample metadata, like presentation timestamp and flags.
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the track to which the sample corresponds. |
 | `timeMicros` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The media timestamp associated with the sample, in microseconds. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags associated with the sample. See the`SAMPLE_FLAG_*`constants. Value is either`0`or a combination of [android.media.MediaParser#SAMPLE_FLAG_KEY_FRAME](https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_KEY_FRAME:kotlin.Int), [android.media.MediaParser#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA](https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA:kotlin.Int), [android.media.MediaParser#SAMPLE_FLAG_LAST_SAMPLE](https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_LAST_SAMPLE:kotlin.Int), [android.media.MediaParser#SAMPLE_FLAG_ENCRYPTED](https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_ENCRYPTED:kotlin.Int), and [android.media.MediaParser#SAMPLE_FLAG_DECODE_ONLY](https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_DECODE_ONLY:kotlin.Int) |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags associated with the sample. See the`SAMPLE_FLAG_*`constants. Value is either`0`or a combination of [android.media.MediaParser#SAMPLE_FLAG_KEY_FRAME](../android/media/MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA](../android/media/MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_LAST_SAMPLE](../android/media/MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_ENCRYPTED](../android/media/MediaParser.md), and [android.media.MediaParser#SAMPLE_FLAG_DECODE_ONLY](../android/media/MediaParser.md) |
 | --- | --- |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The size of the sample data, in bytes. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of bytes that have been consumed by`onSampleDataFound(int, MediaParser.InputReader)`for the specified track, since the last byte belonging to the sample whose metadata is being passed. |
-| `cryptoInfo` | [MediaCodec.CryptoInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo)?:Encryption data required to decrypt the sample. May be null for unencrypted samples. Implementors should treat any output [CryptoInfo](https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo) instances as immutable. MediaParser will not modify any output`cryptoInfos`and implementors should not modify them either. |
+| `cryptoInfo` | [MediaCodec.CryptoInfo](../android/media/MediaCodec.CryptoInfo.md)?:Encryption data required to decrypt the sample. May be null for unencrypted samples. Implementors should treat any output [CryptoInfo](../android/media/MediaCodec.CryptoInfo.md) instances as immutable. MediaParser will not modify any output`cryptoInfos`and implementors should not modify them either. |
 | --- | --- |
 
 ### onSampleDataFound
@@ -71,12 +71,12 @@ abstract fun onSampleDataFound(
 
 Called when sample data is found in the stream.
 
-If the invocation of this method returns before the entire`inputReader` [length](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader#getLength())is consumed, the method will be called again for the implementer to read the remaining data. Implementers should surface any thrown [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) caused by reading from`input`.
+If the invocation of this method returns before the entire`inputReader` [length](../android/media/MediaParser.InputReader.md))is consumed, the method will be called again for the implementer to read the remaining data. Implementers should surface any thrown [IOException](../java/io/IOException.md) caused by reading from`input`.
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the track to which the sample data corresponds. |
-| `inputReader` | [MediaParser.InputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader):The [InputReader](https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader) from which to read the data. This value cannot be`null`. |
+| `inputReader` | [MediaParser.InputReader](../android/media/MediaParser.InputReader.md):The [InputReader](../android/media/MediaParser.InputReader.md) from which to read the data. This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|---------------------------------------------------------|
@@ -90,13 +90,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onSeekMapFound(seekMap: MediaParser.SeekMap): Unit
 ```
 
-Called when a [SeekMap](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap) has been extracted from the stream.
+Called when a [SeekMap](../android/media/MediaParser.SeekMap.md) has been extracted from the stream.
 
-This method is called at least once before any samples are [complete](https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onSampleCompleted(kotlin.Int,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.media.MediaCodec.CryptoInfo)). May be called multiple times after that in order to add [SeekPoints](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint).
+This method is called at least once before any samples are [complete](../android/media/MediaParser.OutputConsumer.md)). May be called multiple times after that in order to add [SeekPoints](../android/media/MediaParser.SeekPoint.md).
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `seekMap` | [MediaParser.SeekMap](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap):The extracted [SeekMap](https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap). This value cannot be`null`. |
+| `seekMap` | [MediaParser.SeekMap](../android/media/MediaParser.SeekMap.md):The extracted [SeekMap](../android/media/MediaParser.SeekMap.md). This value cannot be`null`. |
 
 ### onTrackCountFound
 
@@ -123,9 +123,9 @@ abstract fun onTrackDataFound(
 ): Unit
 ```
 
-Called when new [TrackData](https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData) is found in the stream.
+Called when new [TrackData](../android/media/MediaParser.TrackData.md) is found in the stream.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the track for which the [TrackData](https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData) was extracted. |
-| `trackData` | [MediaParser.TrackData](https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData):The extracted [TrackData](https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData). This value cannot be`null`. |
+| `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the track for which the [TrackData](../android/media/MediaParser.TrackData.md) was extracted. |
+| `trackData` | [MediaParser.TrackData](../android/media/MediaParser.TrackData.md):The extracted [TrackData](../android/media/MediaParser.TrackData.md). This value cannot be`null`. |

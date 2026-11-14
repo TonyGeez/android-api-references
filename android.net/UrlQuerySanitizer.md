@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # UrlQuerySanitizer
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/UrlQuerySanitizer "View this page in Java") 
+Kotlin| [Java](../android/net/UrlQuerySanitizer.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UrlQuerySanitizer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.UrlQuerySanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#) |
+| ↳ | [android.net.UrlQuerySanitizer](../android/net/UrlQuerySanitizer.md) |
 
 Sanitizes the Query portion of a URL. Simple example: 
 
@@ -52,61 +52,61 @@ There are several ways to create ValueSanitizers. In order of increasing sophist
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [IllegalCharacterValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer) Sanitize values based on which characters they contain. |
-| open | [ParameterValuePair](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ParameterValuePair) A simple tuple that holds parameter-value pairs. |
-| abstract | [ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer) A functor used to sanitize a single query value. |
+| open | [IllegalCharacterValueSanitizer](../android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer.md) Sanitize values based on which characters they contain. |
+| open | [ParameterValuePair](../android/net/UrlQuerySanitizer.ParameterValuePair.md) A simple tuple that holds parameter-value pairs. |
+| abstract | [ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md) A functor used to sanitize a single query value. |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UrlQuerySanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#UrlQuerySanitizer())`()` Constructs a UrlQuerySanitizer. |
-| [UrlQuerySanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#UrlQuerySanitizer(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a UrlQuerySanitizer and parses a URL. |
+| [UrlQuerySanitizer](../android/net/UrlQuerySanitizer.md))`()` Constructs a UrlQuerySanitizer. |
+| [UrlQuerySanitizer](../android/net/UrlQuerySanitizer.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a UrlQuerySanitizer and parses a URL. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getAllButNulAndAngleBracketsLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getAllButNulAndAngleBracketsLegal())`()` Return a value sanitizer that allows any special characters except angle brackets ('\<' and '\>') and Nul ('\\0'). |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getAllButNulLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getAllButNulLegal())`()` Return a value sanitizer that allows everything except Nul ('\\0') characters. |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getAllButWhitespaceLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getAllButWhitespaceLegal())`()` Return a value sanitizer that allows everything except Nul ('\\0') characters, space (' '), and other whitespace characters. |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getAllButNulAndAngleBracketsLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that allows any special characters except angle brackets ('\<' and '\>') and Nul ('\\0'). |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getAllButNulLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that allows everything except Nul ('\\0') characters. |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getAllButWhitespaceLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that allows everything except Nul ('\\0') characters, space (' '), and other whitespace characters. |
 | --- | --- |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getAllIllegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getAllIllegal())`()` Return a value sanitizer that does not allow any special characters, and also does not allow script URLs. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowUnregisteredParamaters](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getAllowUnregisteredParamaters())`()` Get whether or not unregistered parameters are allowed. |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getAmpAndSpaceLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getAmpAndSpaceLegal())`()` Return a value sanitizer that does not allow any special characters except ampersand ('\&') and space (' '). |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getAllIllegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that does not allow any special characters, and also does not allow script URLs. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowUnregisteredParamaters](../android/net/UrlQuerySanitizer.md))`()` Get whether or not unregistered parameters are allowed. |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getAmpAndSpaceLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that does not allow any special characters except ampersand ('\&') and space (' '). |
 | --- | --- |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getAmpLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getAmpLegal())`()` Return a value sanitizer that does not allow any special characters except ampersand ('\&'). |
-| open [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getEffectiveValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getEffectiveValueSanitizer(kotlin.String))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the effective value sanitizer for a parameter. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UrlQuerySanitizer.ParameterValuePair](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ParameterValuePair)!\>! | [getParameterList](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getParameterList())`()` An array list of all of the parameter-value pairs in the sanitized query, in the order they appeared in the query. |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getAmpLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that does not allow any special characters except ampersand ('\&'). |
+| open [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getEffectiveValueSanitizer](../android/net/UrlQuerySanitizer.md))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the effective value sanitizer for a parameter. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UrlQuerySanitizer.ParameterValuePair](../android/net/UrlQuerySanitizer.ParameterValuePair.md)!\>! | [getParameterList](../android/net/UrlQuerySanitizer.md))`()` An array list of all of the parameter-value pairs in the sanitized query, in the order they appeared in the query. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getParameterSet](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getParameterSet())`()` Get a set of all of the parameters found in the sanitized query. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPreferFirstRepeatedParameter](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getPreferFirstRepeatedParameter())`()` Get whether or not the first occurrence of a repeated parameter is preferred. |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getSpaceLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getSpaceLegal())`()` Return a value sanitizer that does not allow any special characters except space (' '). |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getParameterSet](../android/net/UrlQuerySanitizer.md))`()` Get a set of all of the parameters found in the sanitized query. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPreferFirstRepeatedParameter](../android/net/UrlQuerySanitizer.md))`()` Get whether or not the first occurrence of a repeated parameter is preferred. |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getSpaceLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that does not allow any special characters except space (' '). |
 | --- | --- |
-| open [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getUnregisteredParameterValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getUnregisteredParameterValueSanitizer())`()` Get the current value sanitizer used when processing unregistered parameter values. |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getUrlAndSpaceLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getUrlAndSpaceLegal())`()` Return a value sanitizer that allows all the characters used by encoded URLs and allows spaces, which are not technically legal in encoded URLs, but commonly appear anyway. |
-| static [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getUrlLegal](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getUrlLegal())`()` Return a value sanitizer that allows all the characters used by encoded URLs. |
+| open [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getUnregisteredParameterValueSanitizer](../android/net/UrlQuerySanitizer.md))`()` Get the current value sanitizer used when processing unregistered parameter values. |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getUrlAndSpaceLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that allows all the characters used by encoded URLs and allows spaces, which are not technically legal in encoded URLs, but commonly appear anyway. |
+| static [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getUrlLegal](../android/net/UrlQuerySanitizer.md))`()` Return a value sanitizer that allows all the characters used by encoded URLs. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getValue(kotlin.String))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the value for a parameter in the current sanitized query. |
-| open [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | [getValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#getValueSanitizer(kotlin.String))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the value sanitizer for a parameter. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasParameter](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#hasParameter(kotlin.String))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if a parameter exists in the current sanitized query. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../android/net/UrlQuerySanitizer.md))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the value for a parameter in the current sanitized query. |
+| open [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | [getValueSanitizer](../android/net/UrlQuerySanitizer.md))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the value sanitizer for a parameter. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasParameter](../android/net/UrlQuerySanitizer.md))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if a parameter exists in the current sanitized query. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseQuery](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#parseQuery(kotlin.String))`(`query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse a query. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseUrl](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#parseUrl(kotlin.String))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the query parameters out of an encoded URL. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerParameter](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#registerParameter(kotlin.String,%20android.net.UrlQuerySanitizer.ValueSanitizer))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `valueSanitizer:` ` [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)!`)` Register a value sanitizer for a particular parameter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseQuery](../android/net/UrlQuerySanitizer.md))`(`query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse a query. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseUrl](../android/net/UrlQuerySanitizer.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the query parameters out of an encoded URL. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerParameter](../android/net/UrlQuerySanitizer.md))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `valueSanitizer:` ` [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)!`)` Register a value sanitizer for a particular parameter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerParameters](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#registerParameters(kotlin.Array,%20android.net.UrlQuerySanitizer.ValueSanitizer))`(`parameters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `valueSanitizer:` ` [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)!`)` Register a value sanitizer for an array of parameters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowUnregisteredParamaters](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#setAllowUnregisteredParamaters(kotlin.Boolean))`(`allowUnregisteredParamaters:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not unregistered parameters are allowed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreferFirstRepeatedParameter](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#setPreferFirstRepeatedParameter(kotlin.Boolean))`(`preferFirstRepeatedParameter:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not the first occurrence of a repeated parameter is preferred. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerParameters](../android/net/UrlQuerySanitizer.md))`(`parameters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `valueSanitizer:` ` [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)!`)` Register a value sanitizer for an array of parameters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowUnregisteredParamaters](../android/net/UrlQuerySanitizer.md))`(`allowUnregisteredParamaters:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not unregistered parameters are allowed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreferFirstRepeatedParameter](../android/net/UrlQuerySanitizer.md))`(`preferFirstRepeatedParameter:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not the first occurrence of a repeated parameter is preferred. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUnregisteredParameterValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#setUnregisteredParameterValueSanitizer(android.net.UrlQuerySanitizer.ValueSanitizer))`(`sanitizer:` ` [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)!`)` Set the value sanitizer used when processing unregistered parameter values. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unescape](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#unescape(kotlin.String))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUnregisteredParameterValueSanitizer](../android/net/UrlQuerySanitizer.md))`(`sanitizer:` ` [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)!`)` Set the value sanitizer used when processing unregistered parameter values. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unescape](../android/net/UrlQuerySanitizer.md))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSanitizedEntry](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#addSanitizedEntry(kotlin.String,%20kotlin.String))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Record a sanitized parameter-value pair. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#clear())`()` Clear the existing entries. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [decodeHexDigit](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#decodeHexDigit(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Convert a character that represents a hexidecimal digit into an integer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSanitizedEntry](../android/net/UrlQuerySanitizer.md))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Record a sanitized parameter-value pair. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/net/UrlQuerySanitizer.md))`()` Clear the existing entries. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [decodeHexDigit](../android/net/UrlQuerySanitizer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Convert a character that represents a hexidecimal digit into an integer. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHexDigit](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#isHexDigit(kotlin.Char))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Test if a character is a hexidecimal digit. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseEntry](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#parseEntry(kotlin.String,%20kotlin.String))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an escaped parameter-value pair. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHexDigit](../android/net/UrlQuerySanitizer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Test if a character is a hexidecimal digit. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parseEntry](../android/net/UrlQuerySanitizer.md))`(`parameter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an escaped parameter-value pair. |
 
 ## Public constructors
 
@@ -160,7 +160,7 @@ Return a value sanitizer that allows any special characters except angle bracket
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getAllButNulLegal
 
@@ -174,7 +174,7 @@ Return a value sanitizer that allows everything except Nul ('\\0') characters. S
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getAllButWhitespaceLegal
 
@@ -188,7 +188,7 @@ Return a value sanitizer that allows everything except Nul ('\\0') characters, s
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getAllIllegal
 
@@ -202,7 +202,7 @@ Return a value sanitizer that does not allow any special characters, and also do
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getAllowUnregisteredParamaters
 
@@ -220,7 +220,7 @@ Get whether or not unregistered parameters are allowed. If not allowed, they wil
 
 **See Also**
 
-- [#setAllowUnregisteredParamaters(boolean)](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#setAllowUnregisteredParamaters(kotlin.Boolean)) 
+- [#setAllowUnregisteredParamaters(boolean)](../android/net/UrlQuerySanitizer.md)) 
 
 ### getAmpAndSpaceLegal
 
@@ -234,7 +234,7 @@ Return a value sanitizer that does not allow any special characters except amper
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getAmpLegal
 
@@ -248,7 +248,7 @@ Return a value sanitizer that does not allow any special characters except amper
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getEffectiveValueSanitizer
 
@@ -266,7 +266,7 @@ Get the effective value sanitizer for a parameter. Like getValueSanitizer, excep
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | the effective value sanitizer for a parameter. |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | the effective value sanitizer for a parameter. |
 
 ### getParameterList
 
@@ -312,7 +312,7 @@ Get whether or not the first occurrence of a repeated parameter is preferred.
 
 **See Also**
 
-- [#setPreferFirstRepeatedParameter(boolean)](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#setPreferFirstRepeatedParameter(kotlin.Boolean)) 
+- [#setPreferFirstRepeatedParameter(boolean)](../android/net/UrlQuerySanitizer.md)) 
 
 ### getSpaceLegal
 
@@ -326,7 +326,7 @@ Return a value sanitizer that does not allow any special characters except space
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getUnregisteredParameterValueSanitizer
 
@@ -342,7 +342,7 @@ Get the current value sanitizer used when processing unregistered parameter valu
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | the current ValueSanitizer used to sanitize unregistered parameter values. |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | the current ValueSanitizer used to sanitize unregistered parameter values. |
 
 ### getUrlAndSpaceLegal
 
@@ -356,7 +356,7 @@ Return a value sanitizer that allows all the characters used by encoded URLs and
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getUrlLegal
 
@@ -370,7 +370,7 @@ Return a value sanitizer that allows all the characters used by encoded URLs. Do
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | a value sanitizer |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | a value sanitizer |
 
 ### getValue
 
@@ -406,11 +406,11 @@ Get the value sanitizer for a parameter. Returns null if there is no value sanit
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)! | the currently registered value sanitizer for this parameter. |
+| [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)! | the currently registered value sanitizer for this parameter. |
 
 **See Also**
 
-- [#registerParameter(String, android.net.UrlQuerySanitizer.ValueSanitizer)](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#registerParameter(kotlin.String,%20android.net.UrlQuerySanitizer.ValueSanitizer)) 
+- [#registerParameter(String, android.net.UrlQuerySanitizer.ValueSanitizer)](../android/net/UrlQuerySanitizer.md)) 
 
 ### hasParameter
 
@@ -476,7 +476,7 @@ Registering a non-null value sanitizer for a particular parameter makes that par
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parameter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:an unencoded parameter name |
-| `valueSanitizer` | [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)!:the value sanitizer to use for a particular parameter. May be null in order to unregister that parameter. |
+| `valueSanitizer` | [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)!:the value sanitizer to use for a particular parameter. May be null in order to unregister that parameter. |
 
 **See Also**
 
@@ -498,11 +498,11 @@ Register a value sanitizer for an array of parameters.
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parameters` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:An array of unencoded parameter names. |
-| `valueSanitizer` | [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)!: |
+| `valueSanitizer` | [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)!: |
 
 **See Also**
 
-- [#registerParameter](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer#registerParameter(kotlin.String,%20android.net.UrlQuerySanitizer.ValueSanitizer)) 
+- [#registerParameter](../android/net/UrlQuerySanitizer.md)) 
 
 ### setAllowUnregisteredParamaters
 
@@ -558,7 +558,7 @@ Set the value sanitizer used when processing unregistered parameter values.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sanitizer` | [UrlQuerySanitizer.ValueSanitizer](https://developer.android.com/reference/kotlin/android/net/UrlQuerySanitizer.ValueSanitizer)!:set the ValueSanitizer used to sanitize unregistered parameter values. |
+| `sanitizer` | [UrlQuerySanitizer.ValueSanitizer](../android/net/UrlQuerySanitizer.ValueSanitizer.md)!:set the ValueSanitizer used to sanitize unregistered parameter values. |
 
 ### unescape
 

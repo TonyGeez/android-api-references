@@ -10,9 +10,9 @@ open class Thread : Runnable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#) |
+| ↳ | [java.lang.Thread](../java/lang/Thread.md) |
 
-| Known Direct Subclasses [ForkJoinWorkerThread](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread.html#), [HandlerThread](https://developer.android.com/reference/kotlin/android/os/HandlerThread.html#) |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ForkJoinWorkerThread](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread.html#) | A thread managed by a [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool.html#), which executes [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask.html#) s. | | [HandlerThread](https://developer.android.com/reference/kotlin/android/os/HandlerThread.html#) | A [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#) that has a [Looper](https://developer.android.com/reference/kotlin/android/os/Looper.html#). | |
+| Known Direct Subclasses [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md), [HandlerThread](../android/os/HandlerThread.md) |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md) | A thread managed by a [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md), which executes [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) s. | | [HandlerThread](../android/os/HandlerThread.md) | A [Thread](../java/lang/Thread.md) that has a [Looper](../android/os/Looper.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A*thread*is a thread of execution in a program. The Java Virtual Machine allows an application to have multiple threads of execution running concurrently.
@@ -76,93 +76,93 @@ PrimeRun p = new PrimeRun(143);
 
 Every thread has a name for identification purposes. More than one thread may have the same name. If a name is not specified when a thread is created, a new name is generated for it.
 
-Unless otherwise noted, passing a`null`argument to a constructor or method in this class will cause a [NullPointerException](https://developer.android.com/reference/kotlin/java/lang/NullPointerException) to be thrown.
+Unless otherwise noted, passing a`null`argument to a constructor or method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Nested classes ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [State](https://developer.android.com/reference/kotlin/java/lang/Thread.State) A thread state. |
-| abstract | [UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler) Interface for handlers invoked when a`Thread`abruptly terminates due to an uncaught exception. |
+| | [State](../java/lang/Thread.State.md) A thread state. |
+| abstract | [UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md) Interface for handlers invoked when a`Thread`abruptly terminates due to an uncaught exception. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_PRIORITY](https://developer.android.com/reference/kotlin/java/lang/Thread#MAX_PRIORITY:kotlin.Int) The maximum priority that a thread can have. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_PRIORITY](https://developer.android.com/reference/kotlin/java/lang/Thread#MIN_PRIORITY:kotlin.Int) The minimum priority that a thread can have. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORM_PRIORITY](https://developer.android.com/reference/kotlin/java/lang/Thread#NORM_PRIORITY:kotlin.Int) The default priority that is assigned to a thread. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_PRIORITY](../java/lang/Thread.md) The maximum priority that a thread can have. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_PRIORITY](../java/lang/Thread.md) The minimum priority that a thread can have. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORM_PRIORITY](../java/lang/Thread.md) The default priority that is assigned to a thread. |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread())`()` Allocates a new`Thread`object. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.Runnable))`(`target:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?`)` Allocates a new`Thread`object. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.Runnable,%20kotlin.String))`(`target:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable))`(`group:` ` [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?`, `target:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?`)` Allocates a new`Thread`object. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))`(`group:` ` [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?`, `target:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, and belongs to the thread group referred to by`group`. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String,%20kotlin.Long))`(`group:` ` [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?`, `target:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `stackSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, and belongs to the thread group referred to by`group`, and has the specified*stack size*. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String,%20kotlin.Long,%20kotlin.Boolean))`(`group:` ` [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?`, `target:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `stackSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `inheritThreadLocals:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, belongs to the thread group referred to by`group`, has the specified`stackSize`, and inherits initial values for [inheritable thread-local](https://developer.android.com/reference/kotlin/java/lang/InheritableThreadLocal) variables if`inheritThreadLocals`is`true`. |
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20kotlin.String))`(`group:` ` [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object. |
+| [Thread](../java/lang/Thread.md))`()` Allocates a new`Thread`object. |
+| [Thread](../java/lang/Thread.md))`(`target:` ` [Runnable](../java/lang/Runnable.md)?`)` Allocates a new`Thread`object. |
+| [Thread](../java/lang/Thread.md))`(`target:` ` [Runnable](../java/lang/Runnable.md)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object. |
+| [Thread](../java/lang/Thread.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object. |
+| [Thread](../java/lang/Thread.md))`(`group:` ` [ThreadGroup](../java/lang/ThreadGroup.md)?`, `target:` ` [Runnable](../java/lang/Runnable.md)?`)` Allocates a new`Thread`object. |
+| [Thread](../java/lang/Thread.md))`(`group:` ` [ThreadGroup](../java/lang/ThreadGroup.md)?`, `target:` ` [Runnable](../java/lang/Runnable.md)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, and belongs to the thread group referred to by`group`. |
+| [Thread](../java/lang/Thread.md))`(`group:` ` [ThreadGroup](../java/lang/ThreadGroup.md)?`, `target:` ` [Runnable](../java/lang/Runnable.md)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `stackSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, and belongs to the thread group referred to by`group`, and has the specified*stack size*. |
+| [Thread](../java/lang/Thread.md))`(`group:` ` [ThreadGroup](../java/lang/ThreadGroup.md)?`, `target:` ` [Runnable](../java/lang/Runnable.md)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `stackSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `inheritThreadLocals:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, belongs to the thread group referred to by`group`, has the specified`stackSize`, and inherits initial values for [inheritable thread-local](../java/lang/InheritableThreadLocal.md) variables if`inheritThreadLocals`is`true`. |
+| [Thread](../java/lang/Thread.md))`(`group:` ` [ThreadGroup](../java/lang/ThreadGroup.md)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Allocates a new`Thread`object. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [activeCount](https://developer.android.com/reference/kotlin/java/lang/Thread#activeCount())`()` Returns an estimate of the number of active threads in the current thread's [thread group](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup) and its subgroups. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](https://developer.android.com/reference/kotlin/java/lang/Thread#checkAccess())`()` Determines if the currently running thread has permission to modify this thread. |
-| openstatic [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#) | [currentThread](https://developer.android.com/reference/kotlin/java/lang/Thread#currentThread())`()` Returns a reference to the currently executing thread object. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [activeCount](../java/lang/Thread.md))`()` Returns an estimate of the number of active threads in the current thread's [thread group](../java/lang/ThreadGroup.md) and its subgroups. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkAccess](../java/lang/Thread.md))`()` Determines if the currently running thread has permission to modify this thread. |
+| openstatic [Thread](../java/lang/Thread.md) | [currentThread](../java/lang/Thread.md))`()` Returns a reference to the currently executing thread object. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpStack](https://developer.android.com/reference/kotlin/java/lang/Thread#dumpStack())`()` Prints a stack trace of the current thread to the standard error stream. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [enumerate](https://developer.android.com/reference/kotlin/java/lang/Thread#enumerate(kotlin.Array))`(`tarray:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#)!>!`)` Copies into the specified array every active thread in the current thread's thread group and its subgroups. |
-| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#)!, [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement)!\>!\> | [getAllStackTraces](https://developer.android.com/reference/kotlin/java/lang/Thread#getAllStackTraces())`()` Returns a map of stack traces for all live threads. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpStack](../java/lang/Thread.md))`()` Prints a stack trace of the current thread to the standard error stream. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [enumerate](../java/lang/Thread.md))`(`tarray:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Thread](../java/lang/Thread.md)!>!`)` Copies into the specified array every active thread in the current thread's thread group and its subgroups. |
+| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Thread](../java/lang/Thread.md)!, [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StackTraceElement](../java/lang/StackTraceElement.md)!\>!\> | [getAllStackTraces](../java/lang/Thread.md))`()` Returns a map of stack traces for all live threads. |
 | --- | --- |
-| open [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader)? | [getContextClassLoader](https://developer.android.com/reference/kotlin/java/lang/Thread#getContextClassLoader())`()` Returns the context`ClassLoader`for this thread. |
-| openstatic [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)? | [getDefaultUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#getDefaultUncaughtExceptionHandler())`()` Returns the default handler invoked when a thread abruptly terminates due to an uncaught exception. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getId](https://developer.android.com/reference/kotlin/java/lang/Thread#getId())`()` Returns the identifier of this Thread. |
+| open [ClassLoader](../java/lang/ClassLoader.md)? | [getContextClassLoader](../java/lang/Thread.md))`()` Returns the context`ClassLoader`for this thread. |
+| openstatic [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)? | [getDefaultUncaughtExceptionHandler](../java/lang/Thread.md))`()` Returns the default handler invoked when a thread abruptly terminates due to an uncaught exception. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getId](../java/lang/Thread.md))`()` Returns the identifier of this Thread. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](https://developer.android.com/reference/kotlin/java/lang/Thread#getName())`()` Returns this thread's name. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriority](https://developer.android.com/reference/kotlin/java/lang/Thread#getPriority())`()` Returns this thread's priority. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement)!\> | [getStackTrace](https://developer.android.com/reference/kotlin/java/lang/Thread#getStackTrace())`()` Returns an array of stack trace elements representing the stack dump of this thread. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../java/lang/Thread.md))`()` Returns this thread's name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriority](../java/lang/Thread.md))`()` Returns this thread's priority. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StackTraceElement](../java/lang/StackTraceElement.md)!\> | [getStackTrace](../java/lang/Thread.md))`()` Returns an array of stack trace elements representing the stack dump of this thread. |
 | --- | --- |
-| open [Thread.State](https://developer.android.com/reference/kotlin/java/lang/Thread.State) | [getState](https://developer.android.com/reference/kotlin/java/lang/Thread#getState())`()` Returns the state of this thread. |
-| [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)? | [getThreadGroup](https://developer.android.com/reference/kotlin/java/lang/Thread#getThreadGroup())`()` Returns the thread group to which this thread belongs. |
-| open [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)? | [getUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#getUncaughtExceptionHandler())`()` Returns the handler invoked when this thread abruptly terminates due to an uncaught exception. |
+| open [Thread.State](../java/lang/Thread.State.md) | [getState](../java/lang/Thread.md))`()` Returns the state of this thread. |
+| [ThreadGroup](../java/lang/ThreadGroup.md)? | [getThreadGroup](../java/lang/Thread.md))`()` Returns the thread group to which this thread belongs. |
+| open [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)? | [getUncaughtExceptionHandler](../java/lang/Thread.md))`()` Returns the handler invoked when this thread abruptly terminates due to an uncaught exception. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [holdsLock](https://developer.android.com/reference/kotlin/java/lang/Thread#holdsLock(kotlin.Any))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Returns`true`if and only if the current thread holds the monitor lock on the specified object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [interrupt](https://developer.android.com/reference/kotlin/java/lang/Thread#interrupt())`()` Interrupts this thread. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [interrupted](https://developer.android.com/reference/kotlin/java/lang/Thread#interrupted())`()` Tests whether the current thread has been interrupted. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [holdsLock](../java/lang/Thread.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Returns`true`if and only if the current thread holds the monitor lock on the specified object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [interrupt](../java/lang/Thread.md))`()` Interrupts this thread. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [interrupted](../java/lang/Thread.md))`()` Tests whether the current thread has been interrupted. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlive](https://developer.android.com/reference/kotlin/java/lang/Thread#isAlive())`()` Tests if this thread is alive. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDaemon](https://developer.android.com/reference/kotlin/java/lang/Thread#isDaemon())`()` Tests if this thread is a daemon thread. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInterrupted](https://developer.android.com/reference/kotlin/java/lang/Thread#isInterrupted())`()` Tests whether this thread has been interrupted. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlive](../java/lang/Thread.md))`()` Tests if this thread is alive. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDaemon](../java/lang/Thread.md))`()` Tests if this thread is a daemon thread. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInterrupted](../java/lang/Thread.md))`()` Tests whether this thread has been interrupted. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](https://developer.android.com/reference/kotlin/java/lang/Thread#isVirtual())`()` Returns`true`if this thread is a virtual thread. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [join](https://developer.android.com/reference/kotlin/java/lang/Thread#join())`()` Waits for this thread to die. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [join](https://developer.android.com/reference/kotlin/java/lang/Thread#join(kotlin.Long))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Waits at most`millis`milliseconds for this thread to die. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](../java/lang/Thread.md))`()` Returns`true`if this thread is a virtual thread. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [join](../java/lang/Thread.md))`()` Waits for this thread to die. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [join](../java/lang/Thread.md))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Waits at most`millis`milliseconds for this thread to die. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [join](https://developer.android.com/reference/kotlin/java/lang/Thread#join(kotlin.Long,%20kotlin.Int))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Waits at most`millis`milliseconds plus`nanos`nanoseconds for this thread to die. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSpinWait](https://developer.android.com/reference/kotlin/java/lang/Thread#onSpinWait())`()` Indicates that the caller is momentarily unable to progress, until the occurrence of one or more actions on the part of other activities. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](https://developer.android.com/reference/kotlin/java/lang/Thread#run())`()` If this thread was constructed using a separate`Runnable`run object, then that`Runnable`object's`run`method is called; otherwise, this method does nothing and returns. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [join](../java/lang/Thread.md))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Waits at most`millis`milliseconds plus`nanos`nanoseconds for this thread to die. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSpinWait](../java/lang/Thread.md))`()` Indicates that the caller is momentarily unable to progress, until the occurrence of one or more actions on the part of other activities. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](../java/lang/Thread.md))`()` If this thread was constructed using a separate`Runnable`run object, then that`Runnable`object's`run`method is called; otherwise, this method does nothing and returns. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContextClassLoader](https://developer.android.com/reference/kotlin/java/lang/Thread#setContextClassLoader(java.lang.ClassLoader))`(`cl:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader)?`)` Sets the context ClassLoader for this Thread. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDaemon](https://developer.android.com/reference/kotlin/java/lang/Thread#setDaemon(kotlin.Boolean))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Marks this thread as either a [daemon](https://developer.android.com/reference/kotlin/java/lang/Thread#isDaemon())thread or a user thread. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler))`(`eh:` ` [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)?`)` Set the default handler invoked when a thread abruptly terminates due to an uncaught exception, and no other handler has been defined for that thread. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContextClassLoader](../java/lang/Thread.md))`(`cl:` ` [ClassLoader](../java/lang/ClassLoader.md)?`)` Sets the context ClassLoader for this Thread. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDaemon](../java/lang/Thread.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Marks this thread as either a [daemon](../java/lang/Thread.md))thread or a user thread. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultUncaughtExceptionHandler](../java/lang/Thread.md))`(`eh:` ` [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)?`)` Set the default handler invoked when a thread abruptly terminates due to an uncaught exception, and no other handler has been defined for that thread. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](https://developer.android.com/reference/kotlin/java/lang/Thread#setName(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Changes the name of this thread to be equal to the argument`name`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPriority](https://developer.android.com/reference/kotlin/java/lang/Thread#setPriority(kotlin.Int))`(`newPriority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the priority of this thread. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#setUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler))`(`eh:` ` [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)?`)` Set the handler invoked when this thread abruptly terminates due to an uncaught exception. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../java/lang/Thread.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Changes the name of this thread to be equal to the argument`name`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPriority](../java/lang/Thread.md))`(`newPriority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the priority of this thread. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUncaughtExceptionHandler](../java/lang/Thread.md))`(`eh:` ` [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)?`)` Set the handler invoked when this thread abruptly terminates due to an uncaught exception. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sleep](https://developer.android.com/reference/kotlin/java/lang/Thread#sleep(kotlin.Long))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds, subject to the precision and accuracy of system timers and schedulers. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sleep](https://developer.android.com/reference/kotlin/java/lang/Thread#sleep(kotlin.Long,%20kotlin.Int))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds plus the specified number of nanoseconds, subject to the precision and accuracy of system timers and schedulers. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](https://developer.android.com/reference/kotlin/java/lang/Thread#start())`()` Causes this thread to begin execution; the Java Virtual Machine calls the`run`method of this thread. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sleep](../java/lang/Thread.md))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds, subject to the precision and accuracy of system timers and schedulers. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sleep](../java/lang/Thread.md))`(`millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds plus the specified number of nanoseconds, subject to the precision and accuracy of system timers and schedulers. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../java/lang/Thread.md))`()` Causes this thread to begin execution; the Java Virtual Machine calls the`run`method of this thread. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](https://developer.android.com/reference/kotlin/java/lang/Thread#stop())`()` Throws`UnsupportedOperationException`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [threadId](https://developer.android.com/reference/kotlin/java/lang/Thread#threadId())`()` Returns the identifier of this Thread. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/lang/Thread#toString())`()` Returns a string representation of this thread, including the thread's name, priority, and thread group. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../java/lang/Thread.md))`()` Throws`UnsupportedOperationException`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [threadId](../java/lang/Thread.md))`()` Returns the identifier of this Thread. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Thread.md))`()` Returns a string representation of this thread, including the thread's name, priority, and thread group. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [yield](https://developer.android.com/reference/kotlin/java/lang/Thread#yield())`()` A hint to the scheduler that the current thread is willing to yield its current use of a processor. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [yield](../java/lang/Thread.md))`()` A hint to the scheduler that the current thread is willing to yield its current use of a processor. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/lang/Thread#clone())`()` Throws CloneNotSupportedException as a Thread can not be meaningfully cloned. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/lang/Thread.md))`()` Throws CloneNotSupportedException as a Thread can not be meaningfully cloned. |
 
 ## Constants
 
@@ -212,7 +212,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Thread()
 ```
 
-Allocates a new`Thread`object. This constructor has the same effect as [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))`(null, null, gname)`, where`gname`is a newly generated name. Automatically generated names are of the form`"Thread-"+`*n* , where*n*is an integer. 
+Allocates a new`Thread`object. This constructor has the same effect as [Thread](../java/lang/Thread.md))`(null, null, gname)`, where`gname`is a newly generated name. Automatically generated names are of the form`"Thread-"+`*n* , where*n*is an integer. 
 
 ### Thread
 
@@ -222,11 +222,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Thread(target: Runnable?)
 ```
 
-Allocates a new`Thread`object. This constructor has the same effect as [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))`(null, target, gname)`, where`gname`is a newly generated name. Automatically generated names are of the form`"Thread-"+`*n* , where*n*is an integer.
+Allocates a new`Thread`object. This constructor has the same effect as [Thread](../java/lang/Thread.md))`(null, target, gname)`, where`gname`is a newly generated name. Automatically generated names are of the form`"Thread-"+`*n* , where*n*is an integer.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?:the object whose`run`method is invoked when this thread is started. If`null`, this classes`run`method does nothing. |
+| `target` | [Runnable](../java/lang/Runnable.md)?:the object whose`run`method is invoked when this thread is started. If`null`, this classes`run`method does nothing. |
 
 ### Thread
 
@@ -238,11 +238,11 @@ Thread(
     name: String)
 ```
 
-Allocates a new`Thread`object. This constructor has the same effect as [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))`(null, target, name)`.
+Allocates a new`Thread`object. This constructor has the same effect as [Thread](../java/lang/Thread.md))`(null, target, name)`.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
+| `target` | [Runnable](../java/lang/Runnable.md)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the new thread |
 
 ### Thread
@@ -253,7 +253,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Thread(name: String)
 ```
 
-Allocates a new`Thread`object. This constructor has the same effect as [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))`(null, null, name)`.
+Allocates a new`Thread`object. This constructor has the same effect as [Thread](../java/lang/Thread.md))`(null, null, name)`.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------|
@@ -269,12 +269,12 @@ Thread(
     target: Runnable?)
 ```
 
-Allocates a new`Thread`object. This constructor has the same effect as [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))`(group, target, gname)`,where`gname`is a newly generated name. Automatically generated names are of the form`"Thread-"+`*n* , where*n*is an integer.
+Allocates a new`Thread`object. This constructor has the same effect as [Thread](../java/lang/Thread.md))`(group, target, gname)`,where`gname`is a newly generated name. Automatically generated names are of the form`"Thread-"+`*n* , where*n*is an integer.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `group` | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getThreadGroup()). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
-| `target` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
+| `group` | [ThreadGroup](../java/lang/ThreadGroup.md)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](../java/lang/SecurityManager.md)). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
+| `target` | [Runnable](../java/lang/Runnable.md)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------|
@@ -293,18 +293,18 @@ Thread(
 
 Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, and belongs to the thread group referred to by`group`.
 
-If there is a security manager, its [checkAccess](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkAccess(java.lang.ThreadGroup))method is invoked with the ThreadGroup as its argument.
+If there is a security manager, its [checkAccess](../java/lang/SecurityManager.md))method is invoked with the ThreadGroup as its argument.
 
 In addition, its`checkPermission`method is invoked with the`RuntimePermission("enableContextClassLoaderOverride")`permission when invoked directly or indirectly by the constructor of a subclass which overrides the`getContextClassLoader`or`setContextClassLoader`methods.
 
-The priority of the newly created thread is set equal to the priority of the thread creating it, that is, the currently running thread. The method [setPriority](https://developer.android.com/reference/kotlin/java/lang/Thread#setPriority(kotlin.Int))may be used to change the priority to a new value.
+The priority of the newly created thread is set equal to the priority of the thread creating it, that is, the currently running thread. The method [setPriority](../java/lang/Thread.md))may be used to change the priority to a new value.
 
-The newly created thread is initially marked as being a daemon thread if and only if the thread creating it is currently marked as a daemon thread. The method [setDaemon](https://developer.android.com/reference/kotlin/java/lang/Thread#setDaemon(kotlin.Boolean))may be used to change whether or not a thread is a daemon.
+The newly created thread is initially marked as being a daemon thread if and only if the thread creating it is currently marked as a daemon thread. The method [setDaemon](../java/lang/Thread.md))may be used to change whether or not a thread is a daemon.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `group` | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getThreadGroup()). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
-| `target` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
+| `group` | [ThreadGroup](../java/lang/ThreadGroup.md)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](../java/lang/SecurityManager.md)). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
+| `target` | [Runnable](../java/lang/Runnable.md)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the new thread |
 | --- | --- |
 
@@ -326,9 +326,9 @@ Thread(
 
 Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, and belongs to the thread group referred to by`group`, and has the specified*stack size*.
 
-This constructor is identical to [Thread(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))with the exception of the fact that it allows the thread stack size to be specified. The stack size is the approximate number of bytes of address space that the virtual machine is to allocate for this thread's stack.**The effect of the`stackSize`parameter, if any, is highly platform dependent.**
+This constructor is identical to [Thread(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)](../java/lang/Thread.md))with the exception of the fact that it allows the thread stack size to be specified. The stack size is the approximate number of bytes of address space that the virtual machine is to allocate for this thread's stack.**The effect of the`stackSize`parameter, if any, is highly platform dependent.**
 
-On some platforms, specifying a higher value for the`stackSize`parameter may allow a thread to achieve greater recursion depth before throwing a [StackOverflowError](https://developer.android.com/reference/kotlin/java/lang/StackOverflowError). Similarly, specifying a lower value may allow a greater number of threads to exist concurrently without throwing an [OutOfMemoryError](https://developer.android.com/reference/kotlin/java/lang/OutOfMemoryError)(or other internal error). The details of the relationship between the value of the`stackSize`parameter and the maximum recursion depth and concurrency level are platform-dependent.**On some platforms, the value of the`stackSize`parameter may have no effect whatsoever.**
+On some platforms, specifying a higher value for the`stackSize`parameter may allow a thread to achieve greater recursion depth before throwing a [StackOverflowError](../java/lang/StackOverflowError.md). Similarly, specifying a lower value may allow a greater number of threads to exist concurrently without throwing an [OutOfMemoryError](../java/lang/OutOfMemoryError.md)(or other internal error). The details of the relationship between the value of the`stackSize`parameter and the maximum recursion depth and concurrency level are platform-dependent.**On some platforms, the value of the`stackSize`parameter may have no effect whatsoever.**
 
 The virtual machine is free to treat the`stackSize`parameter as a suggestion. If the specified value is unreasonably low for the platform, the virtual machine may instead use some platform-specific minimum value; if the specified value is unreasonably high, the virtual machine may instead use some platform-specific maximum. Likewise, the virtual machine is free to round the specified value up or down as it sees fit (or to ignore it completely).
 
@@ -340,8 +340,8 @@ Implementation note: Java platform implementers are encouraged to document their
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `group` | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getThreadGroup()). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
-| `target` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
+| `group` | [ThreadGroup](../java/lang/ThreadGroup.md)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](../java/lang/SecurityManager.md)). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
+| `target` | [Runnable](../java/lang/Runnable.md)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the new thread |
 | --- | --- |
 | `stackSize` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the desired stack size for the new thread, or zero to indicate that this parameter is to be ignored. |
@@ -363,16 +363,16 @@ Thread(
     inheritThreadLocals: Boolean)
 ```
 
-Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, belongs to the thread group referred to by`group`, has the specified`stackSize`, and inherits initial values for [inheritable thread-local](https://developer.android.com/reference/kotlin/java/lang/InheritableThreadLocal) variables if`inheritThreadLocals`is`true`.
+Allocates a new`Thread`object so that it has`target`as its run object, has the specified`name`as its name, belongs to the thread group referred to by`group`, has the specified`stackSize`, and inherits initial values for [inheritable thread-local](../java/lang/InheritableThreadLocal.md) variables if`inheritThreadLocals`is`true`.
 
-This constructor is identical to [Thread(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String,%20kotlin.Long))with the added ability to suppress, or not, the inheriting of initial values for inheritable thread-local variables from the constructing thread. This allows for finer grain control over inheritable thread-locals. Care must be taken when passing a value of`false`for`inheritThreadLocals`, as it may lead to unexpected behavior if the new thread executes code that expects a specific thread-local value to be inherited.
+This constructor is identical to [Thread(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)](../java/lang/Thread.md))with the added ability to suppress, or not, the inheriting of initial values for inheritable thread-local variables from the constructing thread. This allows for finer grain control over inheritable thread-locals. Care must be taken when passing a value of`false`for`inheritThreadLocals`, as it may lead to unexpected behavior if the new thread executes code that expects a specific thread-local value to be inherited.
 
 Specifying a value of`true`for the`inheritThreadLocals`parameter will cause this constructor to behave exactly like the`Thread(ThreadGroup, Runnable, String, long)`constructor.
 
 | Parameters ||
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `group` | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getThreadGroup()). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
-| `target` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
+| `group` | [ThreadGroup](../java/lang/ThreadGroup.md)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](../java/lang/SecurityManager.md)). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
+| `target` | [Runnable](../java/lang/Runnable.md)?:the object whose`run`method is invoked when this thread is started. If`null`, this thread's run method is invoked. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the new thread |
 | --- | --- |
 | `stackSize` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the desired stack size for the new thread, or zero to indicate that this parameter is to be ignored |
@@ -392,11 +392,11 @@ Thread(
     name: String)
 ```
 
-Allocates a new`Thread`object. This constructor has the same effect as [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String))`(group, null, name)`.
+Allocates a new`Thread`object. This constructor has the same effect as [Thread](../java/lang/Thread.md))`(group, null, name)`.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `group` | [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#getThreadGroup()). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
+| `group` | [ThreadGroup](../java/lang/ThreadGroup.md)?:the thread group. If`null`and there is a security manager, the group is determined by [SecurityManager.getThreadGroup()](../java/lang/SecurityManager.md)). If there is not a security manager or`SecurityManager.getThreadGroup()`returns`null`, the group is set to the current thread's thread group. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the new thread |
 
 | Exceptions ||
@@ -413,7 +413,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun activeCount(): Int
 ```
 
-Returns an estimate of the number of active threads in the current thread's [thread group](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup) and its subgroups. Recursively iterates over all subgroups in the current thread's thread group.
+Returns an estimate of the number of active threads in the current thread's [thread group](../java/lang/ThreadGroup.md) and its subgroups. Recursively iterates over all subgroups in the current thread's thread group.
 
 The value returned is only an estimate because the number of threads may change dynamically while this method traverses internal data structures, and might be affected by the presence of certain system threads. This method is intended primarily for debugging and monitoring purposes.
 
@@ -430,7 +430,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 fun checkAccess(): Unit
 ```
 
-**Deprecated:** *This method is only useful in conjunction with [the Security Manager](https://developer.android.com/reference/kotlin/java/lang/SecurityManager), which is deprecated and subject to removal in a future release. Consequently, this method is also deprecated and subject to removal. There is no replacement for the Security Manager or this method.*
+**Deprecated:** *This method is only useful in conjunction with [the Security Manager](../java/lang/SecurityManager.md), which is deprecated and subject to removal in a future release. Consequently, this method is also deprecated and subject to removal. There is no replacement for the Security Manager or this method.*
 
 Determines if the currently running thread has permission to modify this thread.
 
@@ -442,7 +442,7 @@ If there is a security manager, its`checkAccess`method is called with this threa
 
 **See Also**
 
-- [java.lang.SecurityManager#checkAccess(Thread)](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkAccess(java.lang.Thread)) 
+- [java.lang.SecurityManager#checkAccess(Thread)](../java/lang/SecurityManager.md)) 
 
 ### currentThread
 
@@ -456,7 +456,7 @@ Returns a reference to the currently executing thread object.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------|
-| [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#) | the currently executing thread. |
+| [Thread](../java/lang/Thread.md) | the currently executing thread. |
 
 ### dumpStack
 
@@ -469,7 +469,7 @@ open static fun dumpStack(): Unit
 Prints a stack trace of the current thread to the standard error stream. This method is used only for debugging. 
 **See Also**
 
-- [java.lang.Throwable#printStackTrace()](https://developer.android.com/reference/kotlin/java/lang/Throwable#printStackTrace()) 
+- [java.lang.Throwable#printStackTrace()](../java/lang/Throwable.md)) 
 
 ### enumerate
 
@@ -481,13 +481,13 @@ open static fun enumerate(tarray: Array<Thread!>!): Int
 
 Copies into the specified array every active thread in the current thread's thread group and its subgroups. This method simply invokes the[java.lang.ThreadGroup#enumerate(Thread[])](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#enumerate(kotlin.Array))method of the current thread's thread group.
 
-An application might use the [activeCount](https://developer.android.com/reference/kotlin/java/lang/Thread#activeCount())method to get an estimate of how big the array should be, however*if the array is too short to hold all the threads, the extra threads are silently ignored.* If it is critical to obtain every active thread in the current thread's thread group and its subgroups, the invoker should verify that the returned int value is strictly less than the length of`tarray`.
+An application might use the [activeCount](../java/lang/Thread.md))method to get an estimate of how big the array should be, however*if the array is too short to hold all the threads, the extra threads are silently ignored.* If it is critical to obtain every active thread in the current thread's thread group and its subgroups, the invoker should verify that the returned int value is strictly less than the length of`tarray`.
 
 Due to the inherent race condition in this method, it is recommended that the method only be used for debugging and monitoring purposes.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tarray` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#)!\>!:an array into which to put the list of threads |
+| `tarray` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Thread](../java/lang/Thread.md)!\>!:an array into which to put the list of threads |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------|
@@ -495,7 +495,7 @@ Due to the inherent race condition in this method, it is recommended that the me
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | if [java.lang.ThreadGroup#checkAccess](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#checkAccess())determines that the current thread cannot access its thread group |
+| `java.lang.SecurityException` | if [java.lang.ThreadGroup#checkAccess](../java/lang/ThreadGroup.md))determines that the current thread cannot access its thread group |
 
 ### getAllStackTraces
 
@@ -505,19 +505,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getAllStackTraces(): MutableMap<Thread!, Array<StackTraceElement!>!>
 ```
 
-Returns a map of stack traces for all live threads. The map keys are threads and each map value is an array of`StackTraceElement`that represents the stack dump of the corresponding`Thread`. The returned stack traces are in the format specified for the [getStackTrace](https://developer.android.com/reference/kotlin/java/lang/Thread#getStackTrace())method.
+Returns a map of stack traces for all live threads. The map keys are threads and each map value is an array of`StackTraceElement`that represents the stack dump of the corresponding`Thread`. The returned stack traces are in the format specified for the [getStackTrace](../java/lang/Thread.md))method.
 
 The threads may be executing while this method is called. The stack trace of each thread only represents a snapshot and each stack trace may be obtained at different time. A zero-length array will be returned in the map value if the virtual machine has no stack trace information about a thread.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [Thread](https://developer.android.com/reference/kotlin/java/lang/Thread#)!,` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement)!>!> | a`Map`from`Thread`to an array of`StackTraceElement`that represents the stack trace of the corresponding thread. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [Thread](../java/lang/Thread.md)!,` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](../java/lang/StackTraceElement.md)!>!> | a`Map`from`Thread`to an array of`StackTraceElement`that represents the stack trace of the corresponding thread. |
 
 **See Also**
 
-- [#getStackTrace](https://developer.android.com/reference/kotlin/java/lang/Thread#getStackTrace())
-- [java.lang.RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission)
-- [java.lang.Throwable#getStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#getStackTrace()) 
+- [#getStackTrace](../java/lang/Thread.md))
+- [java.lang.RuntimePermission](../java/lang/RuntimePermission.md)
+- [java.lang.Throwable#getStackTrace](../java/lang/Throwable.md)) 
 
 ### getContextClassLoader
 
@@ -527,11 +527,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getContextClassLoader(): ClassLoader?
 ```
 
-Returns the context`ClassLoader`for this thread. The context`ClassLoader`is provided by the creator of the thread for use by code running in this thread when loading classes and resources. If not [set](https://developer.android.com/reference/kotlin/java/lang/Thread#setContextClassLoader(java.lang.ClassLoader)), the default is the`ClassLoader`context of the parent thread. The context`ClassLoader`of the primordial thread is typically set to the class loader used to load the application.
+Returns the context`ClassLoader`for this thread. The context`ClassLoader`is provided by the creator of the thread for use by code running in this thread when loading classes and resources. If not [set](../java/lang/Thread.md)), the default is the`ClassLoader`context of the parent thread. The context`ClassLoader`of the primordial thread is typically set to the class loader used to load the application.
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader)? | the context`ClassLoader`for this thread, or`null`indicating the system class loader (or, failing that, the bootstrap class loader) |
+| [ClassLoader](../java/lang/ClassLoader.md)? | the context`ClassLoader`for this thread, or`null`indicating the system class loader (or, failing that, the bootstrap class loader) |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------|
@@ -549,11 +549,11 @@ Returns the default handler invoked when a thread abruptly terminates due to an 
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)? | the default uncaught exception handler for all threads |
+| [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)? | the default uncaught exception handler for all threads |
 
 **See Also**
 
-- [#setDefaultUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler)) 
+- [#setDefaultUncaughtExceptionHandler](../java/lang/Thread.md)) 
 
 ### getId
 
@@ -564,7 +564,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun getId(): Long
 ```
 
-**Deprecated:** *This method is not final and may be overridden to return a value that is not the thread ID. Use [threadId()](https://developer.android.com/reference/kotlin/java/lang/Thread#threadId())instead.*
+**Deprecated:** *This method is not final and may be overridden to return a value that is not the thread ID. Use [threadId()](../java/lang/Thread.md))instead.*
 
 Returns the identifier of this Thread. The thread ID is a positive`long`number generated when this thread was created. The thread ID is unique and remains unchanged during its lifetime. When a thread is terminated, this thread ID may be reused.
 
@@ -588,7 +588,7 @@ Returns this thread's name.
 
 **See Also**
 
-- [#setName(String)](https://developer.android.com/reference/kotlin/java/lang/Thread#setName(kotlin.String)) 
+- [#setName(String)](../java/lang/Thread.md)) 
 
 ### getPriority
 
@@ -606,7 +606,7 @@ Returns this thread's priority.
 
 **See Also**
 
-- [#setPriority](https://developer.android.com/reference/kotlin/java/lang/Thread#setPriority(kotlin.Int)) 
+- [#setPriority](../java/lang/Thread.md)) 
 
 ### getStackTrace
 
@@ -624,7 +624,7 @@ Some virtual machines may, under some circumstances, omit one or more stack fram
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](https://developer.android.com/reference/kotlin/java/lang/StackTraceElement)!> | an array of`StackTraceElement`, each represents one stack frame. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](../java/lang/StackTraceElement.md)!> | an array of`StackTraceElement`, each represents one stack frame. |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -632,8 +632,8 @@ Some virtual machines may, under some circumstances, omit one or more stack fram
 
 **See Also**
 
-- [java.lang.RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission)
-- [java.lang.Throwable#getStackTrace](https://developer.android.com/reference/kotlin/java/lang/Throwable#getStackTrace()) 
+- [java.lang.RuntimePermission](../java/lang/RuntimePermission.md)
+- [java.lang.Throwable#getStackTrace](../java/lang/Throwable.md)) 
 
 ### getState
 
@@ -647,7 +647,7 @@ Returns the state of this thread. This method is designed for use in monitoring 
 
 | Return ||
 |---------------------------------------------------------------------------------------|----------------------|
-| [Thread.State](https://developer.android.com/reference/kotlin/java/lang/Thread.State) | this thread's state. |
+| [Thread.State](../java/lang/Thread.State.md) | this thread's state. |
 
 ### getThreadGroup
 
@@ -661,7 +661,7 @@ Returns the thread group to which this thread belongs. This method returns null 
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------|
-| [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup)? | this thread's thread group. |
+| [ThreadGroup](../java/lang/ThreadGroup.md)? | this thread's thread group. |
 
 ### getUncaughtExceptionHandler
 
@@ -675,7 +675,7 @@ Returns the handler invoked when this thread abruptly terminates due to an uncau
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)? | the uncaught exception handler for this thread |
+| [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)? | the uncaught exception handler for this thread |
 
 ### holdsLock
 
@@ -716,13 +716,13 @@ open fun interrupt(): Unit
 
 Interrupts this thread.
 
-Unless the current thread is interrupting itself, which is always permitted, the [checkAccess](https://developer.android.com/reference/kotlin/java/lang/Thread#checkAccess())method of this thread is invoked, which may cause a [SecurityException](https://developer.android.com/reference/kotlin/java/lang/SecurityException) to be thrown.
+Unless the current thread is interrupting itself, which is always permitted, the [checkAccess](../java/lang/Thread.md))method of this thread is invoked, which may cause a [SecurityException](../java/lang/SecurityException.md) to be thrown.
 
-If this thread is blocked in an invocation of the [wait()](https://developer.android.com/reference/kotlin/java/lang/Object#wait()), [wait(long)](https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long)), or [wait(long, int)](https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long,%20kotlin.Int))methods of the [Object](https://developer.android.com/reference/kotlin/java/lang/Object) class, or of the [join()](https://developer.android.com/reference/kotlin/java/lang/Thread#join()), [join(long)](https://developer.android.com/reference/kotlin/java/lang/Thread#join(kotlin.Long)), [join(long,int)](https://developer.android.com/reference/kotlin/java/lang/Thread#join(kotlin.Long,%20kotlin.Int)), [sleep(long)](https://developer.android.com/reference/kotlin/java/lang/Thread#sleep(kotlin.Long)), or [sleep(long,int)](https://developer.android.com/reference/kotlin/java/lang/Thread#sleep(kotlin.Long,%20kotlin.Int))methods of this class, then its interrupt status will be cleared and it will receive an [InterruptedException](https://developer.android.com/reference/kotlin/java/lang/InterruptedException).
+If this thread is blocked in an invocation of the [wait()](../java/lang/Object.md)), [wait(long)](../java/lang/Object.md)), or [wait(long, int)](../java/lang/Object.md))methods of the [Object](../java/lang/Object.md) class, or of the [join()](../java/lang/Thread.md)), [join(long)](../java/lang/Thread.md)), [join(long,int)](../java/lang/Thread.md)), [sleep(long)](../java/lang/Thread.md)), or [sleep(long,int)](../java/lang/Thread.md))methods of this class, then its interrupt status will be cleared and it will receive an [InterruptedException](../java/lang/InterruptedException.md).
 
 If this thread is blocked in an I/O operation upon an then the channel will be closed, the thread's interrupt status will be set, and the thread will receive a .
 
-If this thread is blocked in a [java.nio.channels.Selector](https://developer.android.com/reference/kotlin/java/nio/channels/Selector.html#) then the thread's interrupt status will be set and it will return immediately from the selection operation, possibly with a non-zero value, just as if the selector's [wakeup](https://developer.android.com/reference/kotlin/java/nio/channels/Selector.html#wakeup())method were invoked.
+If this thread is blocked in a [java.nio.channels.Selector](../java/nio/channels/Selector.md) then the thread's interrupt status will be set and it will return immediately from the selection operation, possibly with a non-zero value, just as if the selector's [wakeup](../java/nio/channels/Selector.md))method were invoked.
 
 If none of the previous conditions hold then this thread's interrupt status will be set.
 
@@ -780,7 +780,7 @@ Tests if this thread is a daemon thread.
 
 **See Also**
 
-- [#setDaemon(boolean)](https://developer.android.com/reference/kotlin/java/lang/Thread#setDaemon(kotlin.Boolean)) 
+- [#setDaemon(boolean)](../java/lang/Thread.md)) 
 
 ### isInterrupted
 
@@ -825,7 +825,7 @@ fun join(): Unit
 Waits for this thread to die.
 
 An invocation of this method behaves in exactly the same way as the invocation
-[join](https://developer.android.com/reference/kotlin/java/lang/Thread#join(kotlin.Long))`(0)`
+[join](../java/lang/Thread.md))`(0)`
 
 | Exceptions ||
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -902,7 +902,7 @@ Subclasses of`Thread`should override this method.
 
 - <https://developer.android.com/reference/kotlin/java/lang/Thread#start()>
 - <https://developer.android.com/reference/kotlin/java/lang/Thread#stop()>
-- [#Thread(ThreadGroup, Runnable, String)](https://developer.android.com/reference/kotlin/java/lang/Thread#Thread(java.lang.ThreadGroup,%20java.lang.Runnable,%20kotlin.String)) 
+- [#Thread(ThreadGroup, Runnable, String)](../java/lang/Thread.md)) 
 
 ### setContextClassLoader
 
@@ -914,11 +914,11 @@ open fun setContextClassLoader(cl: ClassLoader?): Unit
 
 Sets the context ClassLoader for this Thread. The context ClassLoader can be set when a thread is created, and allows the creator of the thread to provide the appropriate class loader, through`getContextClassLoader`, to code running in the thread when loading classes and resources.
 
-If a security manager is present, its [checkPermission](https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPermission(java.security.Permission))method is invoked with a [RuntimePermission](https://developer.android.com/reference/kotlin/java/lang/RuntimePermission)`("setContextClassLoader")`permission to see if setting the context ClassLoader is permitted.
+If a security manager is present, its [checkPermission](../java/lang/SecurityManager.md))method is invoked with a [RuntimePermission](../java/lang/RuntimePermission.md)`("setContextClassLoader")`permission to see if setting the context ClassLoader is permitted.
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cl` | [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader)?:the context ClassLoader for this Thread, or null indicating the system class loader (or, failing that, the bootstrap class loader) |
+| `cl` | [ClassLoader](../java/lang/ClassLoader.md)?:the context ClassLoader for this Thread, or null indicating the system class loader (or, failing that, the bootstrap class loader) |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------|
@@ -932,7 +932,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun setDaemon(on: Boolean): Unit
 ```
 
-Marks this thread as either a [daemon](https://developer.android.com/reference/kotlin/java/lang/Thread#isDaemon())thread or a user thread. The Java Virtual Machine exits when the only threads running are all daemon threads.
+Marks this thread as either a [daemon](../java/lang/Thread.md))thread or a user thread. The Java Virtual Machine exits when the only threads running are all daemon threads.
 
 This method must be invoked before the thread is started.
 
@@ -942,8 +942,8 @@ This method must be invoked before the thread is started.
 
 | Exceptions ||
 |-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalThreadStateException` | if this thread is [alive](https://developer.android.com/reference/kotlin/java/lang/Thread#isAlive()) |
-| `java.lang.SecurityException` | if [checkAccess](https://developer.android.com/reference/kotlin/java/lang/Thread#checkAccess())determines that the current thread cannot modify this thread |
+| `java.lang.IllegalThreadStateException` | if this thread is [alive](../java/lang/Thread.md)) |
+| `java.lang.SecurityException` | if [checkAccess](../java/lang/Thread.md))determines that the current thread cannot modify this thread |
 
 ### setDefaultUncaughtExceptionHandler
 
@@ -955,7 +955,7 @@ open static fun setDefaultUncaughtExceptionHandler(eh: Thread.UncaughtException
 
 Set the default handler invoked when a thread abruptly terminates due to an uncaught exception, and no other handler has been defined for that thread.
 
-Uncaught exception handling is controlled first by the thread, then by the thread's [ThreadGroup](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup) object and finally by the default uncaught exception handler. If the thread does not have an explicit uncaught exception handler set, and the thread's thread group (including parent thread groups) does not specialize its`uncaughtException`method, then the default handler's`uncaughtException`method will be invoked.
+Uncaught exception handling is controlled first by the thread, then by the thread's [ThreadGroup](../java/lang/ThreadGroup.md) object and finally by the default uncaught exception handler. If the thread does not have an explicit uncaught exception handler set, and the thread's thread group (including parent thread groups) does not specialize its`uncaughtException`method, then the default handler's`uncaughtException`method will be invoked.
 
 By setting the default uncaught exception handler, an application can change the way in which uncaught exceptions are handled (such as logging to a specific device, or file) for those threads that would already accept whatever "default" behavior the system provided.
 
@@ -963,13 +963,13 @@ Note that the default uncaught exception handler should not usually defer to the
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `eh` | [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)?:the object to use as the default uncaught exception handler. If`null`then there is no default handler. |
+| `eh` | [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)?:the object to use as the default uncaught exception handler. If`null`then there is no default handler. |
 
 **See Also**
 
-- [#setUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#setUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler))
-- [#getUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#getUncaughtExceptionHandler())
-- [java.lang.ThreadGroup#uncaughtException](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#uncaughtException(java.lang.Thread,%20kotlin.Throwable)) 
+- [#setUncaughtExceptionHandler](../java/lang/Thread.md))
+- [#getUncaughtExceptionHandler](../java/lang/Thread.md))
+- [java.lang.ThreadGroup#uncaughtException](../java/lang/ThreadGroup.md)) 
 
 ### setName
 
@@ -993,7 +993,7 @@ First the`checkAccess`method of this thread is called with no arguments. This ma
 
 **See Also**
 
-- [#getName](https://developer.android.com/reference/kotlin/java/lang/Thread#getName())
+- [#getName](../java/lang/Thread.md))
 - <https://developer.android.com/reference/kotlin/java/lang/Thread#checkAccess()> 
 
 ### setPriority
@@ -1021,12 +1021,12 @@ Otherwise, the priority of this thread is set to the smaller of the specified`ne
 
 **See Also**
 
-- [#getPriority](https://developer.android.com/reference/kotlin/java/lang/Thread#getPriority())
+- [#getPriority](../java/lang/Thread.md))
 - <https://developer.android.com/reference/kotlin/java/lang/Thread#checkAccess()>
 - <https://developer.android.com/reference/kotlin/java/lang/Thread#getThreadGroup()>
-- [#MAX_PRIORITY](https://developer.android.com/reference/kotlin/java/lang/Thread#MAX_PRIORITY:kotlin.Int)
-- [#MIN_PRIORITY](https://developer.android.com/reference/kotlin/java/lang/Thread#MIN_PRIORITY:kotlin.Int)
-- [java.lang.ThreadGroup#getMaxPriority()](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#getMaxPriority()) 
+- [#MAX_PRIORITY](../java/lang/Thread.md)
+- [#MIN_PRIORITY](../java/lang/Thread.md)
+- [java.lang.ThreadGroup#getMaxPriority()](../java/lang/ThreadGroup.md)) 
 
 ### setUncaughtExceptionHandler
 
@@ -1042,7 +1042,7 @@ A thread can take full control of how it responds to uncaught exceptions by havi
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `eh` | [Thread.UncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread.UncaughtExceptionHandler)?:the object to use as this thread's uncaught exception handler. If`null`then this thread has no explicit handler. |
+| `eh` | [Thread.UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md)?:the object to use as this thread's uncaught exception handler. If`null`then this thread has no explicit handler. |
 
 | Exceptions ||
 |-------------------------------|-------------------------------------------------------------|
@@ -1050,8 +1050,8 @@ A thread can take full control of how it responds to uncaught exceptions by havi
 
 **See Also**
 
-- [#setDefaultUncaughtExceptionHandler](https://developer.android.com/reference/kotlin/java/lang/Thread#setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler))
-- [java.lang.ThreadGroup#uncaughtException](https://developer.android.com/reference/kotlin/java/lang/ThreadGroup#uncaughtException(java.lang.Thread,%20kotlin.Throwable)) 
+- [#setDefaultUncaughtExceptionHandler](../java/lang/Thread.md))
+- [java.lang.ThreadGroup#uncaughtException](../java/lang/ThreadGroup.md)) 
 
 ### sleep
 
@@ -1173,7 +1173,7 @@ A hint to the scheduler that the current thread is willing to yield its current 
 
 Yield is a heuristic attempt to improve relative progression between threads that would otherwise over-utilise a CPU. Its use should be combined with detailed profiling and benchmarking to ensure that it actually has the desired effect.
 
-It is rarely appropriate to use this method. It may be useful for debugging or testing purposes, where it may help to reproduce bugs due to race conditions. It may also be useful when designing concurrency control constructs such as the ones in the [java.util.concurrent.locks](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/package-summary.html) package.
+It is rarely appropriate to use this method. It may be useful for debugging or testing purposes, where it may help to reproduce bugs due to race conditions. It may also be useful when designing concurrency control constructs such as the ones in the [java.util.concurrent.locks](../java/util/concurrent/locks/_package.md) package.
 
 ## Protected methods
 

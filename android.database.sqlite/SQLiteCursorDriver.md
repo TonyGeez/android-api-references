@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteCursorDriver
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver "View this page in Java") 
+Kotlin| [Java](../android/database/sqlite/SQLiteCursorDriver.md) 
 | --- | --- |
 
 ```
 interface SQLiteCursorDriver
 ```
 
-| [android.database.sqlite.SQLiteCursorDriver](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#) |
+| [android.database.sqlite.SQLiteCursorDriver](../android/database/sqlite/SQLiteCursorDriver.md) |
 
 A driver for SQLiteCursors that is used to create them and gets notified by the cursors it creates on significant events in their lifetimes.
 
@@ -19,12 +19,12 @@ A driver for SQLiteCursors that is used to create them and gets notified by the 
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorClosed](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#cursorClosed())`()` Called by a SQLiteCursor when it it closed to destroy this object as well. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorDeactivated](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#cursorDeactivated())`()` Called by a SQLiteCursor when it is released. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorRequeried](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#cursorRequeried(android.database.Cursor))`(`cursor:` ` [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!`)` Called by a SQLiteCursor when it is requeried. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorClosed](../android/database/sqlite/SQLiteCursorDriver.md))`()` Called by a SQLiteCursor when it it closed to destroy this object as well. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorDeactivated](../android/database/sqlite/SQLiteCursorDriver.md))`()` Called by a SQLiteCursor when it is released. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cursorRequeried](../android/database/sqlite/SQLiteCursorDriver.md))`(`cursor:` ` [Cursor](../android/database/Cursor.md)!`)` Called by a SQLiteCursor when it is requeried. |
 | --- | --- |
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | [query](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#query(android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Array))`(`factory:` ` [SQLiteDatabase.CursorFactory](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory)!`, `bindArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the query returning a Cursor over the result set. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBindArguments](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteCursorDriver#setBindArguments(kotlin.Array))`(`bindArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Set new bind arguments. |
+| abstract [Cursor](../android/database/Cursor.md)! | [query](../android/database/sqlite/SQLiteCursorDriver.md))`(`factory:` ` [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)!`, `bindArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the query returning a Cursor over the result set. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBindArguments](../android/database/sqlite/SQLiteCursorDriver.md))`(`bindArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Set new bind arguments. |
 
 ## Public methods
 
@@ -73,11 +73,11 @@ Executes the query returning a Cursor over the result set.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `factory` | [SQLiteDatabase.CursorFactory](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory)!:The CursorFactory to use when creating the Cursors, or null if standard SQLiteCursors should be returned. |
+| `factory` | [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)!:The CursorFactory to use when creating the Cursors, or null if standard SQLiteCursors should be returned. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------|
-| [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | a Cursor over the result set |
+| [Cursor](../android/database/Cursor.md)! | a Cursor over the result set |
 
 ### setBindArguments
 

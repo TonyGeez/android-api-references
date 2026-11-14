@@ -8,7 +8,7 @@ class MediaFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) |
+| ↳ | [android.media.MediaFormat](../android/media/MediaFormat.md) |
 
 Encapsulates the information describing the format of media data, be it audio or video, as well as optional feature metadata.
 
@@ -384,13 +384,13 @@ Image formats have the following keys:
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#containsFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true iff a feature of the given name exists in the format. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#containsKey(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true iff a key of the given name exists in the format. |
-| static [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createAudioFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sampleRate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, channelCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal audio format. |
+| static [MediaFormat](../android/media/MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createAudioFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sampleRate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, channelCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal audio format. |
 | --- | --- |
-| static [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createSubtitleFormat(kotlin.String,%20kotlin.String)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a minimal subtitle format. |
-| static [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createVideoFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal video format. |
-| [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a ByteBuffer key. |
+| static [MediaFormat](../android/media/MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createSubtitleFormat(kotlin.String,%20kotlin.String)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a minimal subtitle format. |
+| static [MediaFormat](../android/media/MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createVideoFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal video format. |
+| [ByteBuffer](../java/nio/ByteBuffer.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a ByteBuffer key. |
 | --- | --- |
-| [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Returns the value of a ByteBuffer key, or the default value if the key is missing. |
+| [ByteBuffer](../java/nio/ByteBuffer.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Returns the value of a ByteBuffer key, or the default value if the key is missing. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFeatureEnabled(kotlin.String)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns whether a feature is to be enabled (`true`) or disabled (`false`). |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFeatures()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the features contained in this MediaFormat. |
 | --- | --- |
@@ -1428,7 +1428,7 @@ A key describing the frequency of key frames expressed in seconds between key fr
 
 This key is used by encoders. A negative value means no key frames are requested after the first frame. A zero value means a stream containing all key frames is requested.
 
-Most encoders will convert this value of the number of non-key-frames between key-frames, using the [frame rate](https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_FRAME_RATE:kotlin.String) information; therefore, if the actual frame rate differs (e.g. input frames are dropped or the frame rate changes), the **time interval** between key frames will not be the configured value.
+Most encoders will convert this value of the number of non-key-frames between key-frames, using the [frame rate](../android/media/MediaFormat.md) information; therefore, if the actual frame rate differs (e.g. input frames are dropped or the frame rate changes), the **time interval** between key frames will not be the configured value.
 
 The associated value is an integer (or float since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N_MR1:kotlin.Int`).
 
@@ -2990,7 +2990,7 @@ Create a copy of a media format object.
 
 | Parameters ||
 |---|---|
-| `other` | [MediaFormat](https://developer.android.com/reference/kotlin/android/media/MediaFormat#): This value cannot be `null`. |
+| `other` | [MediaFormat](../android/media/MediaFormat.md): This value cannot be `null`. |
 
 ## Public methods
 
@@ -3132,7 +3132,7 @@ Returns the value of a ByteBuffer key, or the default value if the key is missin
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `defaultValue` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#): This value cannot be `null`. |
+| `defaultValue` | [ByteBuffer](../java/nio/ByteBuffer.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3480,7 +3480,7 @@ If value is `null`, it sets a null value that behaves similarly to a missing key
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `bytes` | [ByteBuffer](https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)?: This value may be `null`. |
+| `bytes` | [ByteBuffer](../java/nio/ByteBuffer.md)?: This value may be `null`. |
 
 ### setFeatureEnabled
 

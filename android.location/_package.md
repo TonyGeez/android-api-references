@@ -2,46 +2,46 @@
 
 # android.location
 
-Kotlin| [Java](https://developer.android.com/reference/android/location/package-summary "View this page in Java")
+Kotlin| [Java](../android/location/_package.md)
 | --- | --- |
 
 ## Interfaces
 
-| [GeocodeListener](https://developer.android.com/reference/kotlin/android/location/Geocoder.GeocodeListener) | A listener for asynchronous geocoding results. |
+| [GeocodeListener](../android/location/Geocoder.GeocodeListener.md) | A listener for asynchronous geocoding results. |
 | --- | --- |
-| [Listener](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo.Listener) | Used for receiving GNSS antenna info from the GNSS engine. |
-| [Listener](https://developer.android.com/reference/kotlin/android/location/GpsStatus.Listener) | Used for receiving notifications when GPS status has changed. |
-| [NmeaListener](https://developer.android.com/reference/kotlin/android/location/GpsStatus.NmeaListener) | Used for receiving NMEA sentences from the GPS. |
+| [Listener](../android/location/GnssAntennaInfo.Listener.md) | Used for receiving GNSS antenna info from the GNSS engine. |
+| [Listener](../android/location/GpsStatus.Listener.md) | Used for receiving notifications when GPS status has changed. |
+| [NmeaListener](../android/location/GpsStatus.NmeaListener.md) | Used for receiving NMEA sentences from the GPS. |
 | --- | --- |
-| [LocationListener](https://developer.android.com/reference/kotlin/android/location/LocationListener) | Used for receiving notifications when the device location has changed. |
-| [OnNmeaMessageListener](https://developer.android.com/reference/kotlin/android/location/OnNmeaMessageListener) | Used for receiving NMEA sentences from the GNSS. |
+| [LocationListener](../android/location/LocationListener.md) | Used for receiving notifications when the device location has changed. |
+| [OnNmeaMessageListener](../android/location/OnNmeaMessageListener.md) | Used for receiving NMEA sentences from the GNSS. |
 
 ## Classes
 
-| [Address](https://developer.android.com/reference/kotlin/android/location/Address) | A class representing an Address, that is, a set of Strings describing a location. |
+| [Address](../android/location/Address.md) | A class representing an Address, that is, a set of Strings describing a location. |
 | --- | --- |
-| [Criteria](https://developer.android.com/reference/kotlin/android/location/Criteria) | A class indicating the application criteria for selecting a location provider. |
-| [Geocoder](https://developer.android.com/reference/kotlin/android/location/Geocoder) | A class for handling geocoding and reverse geocoding. |
-| [GnssAntennaInfo](https://developer.android.com/reference/kotlin/android/location/GnssAntennaInfo) | A class that contains information about a GNSS antenna. |
+| [Criteria](../android/location/Criteria.md) | A class indicating the application criteria for selecting a location provider. |
+| [Geocoder](../android/location/Geocoder.md) | A class for handling geocoding and reverse geocoding. |
+| [GnssAntennaInfo](../android/location/GnssAntennaInfo.md) | A class that contains information about a GNSS antenna. |
 | --- | --- |
-| [GnssAutomaticGainControl](https://developer.android.com/reference/kotlin/android/location/GnssAutomaticGainControl) | A class that contains GNSS Automatic Gain Control (AGC) information. |
-| [GnssCapabilities](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities) | GNSS chipset capabilities. |
-| [GnssClock](https://developer.android.com/reference/kotlin/android/location/GnssClock) | A class containing a GNSS clock timestamp. |
+| [GnssAutomaticGainControl](../android/location/GnssAutomaticGainControl.md) | A class that contains GNSS Automatic Gain Control (AGC) information. |
+| [GnssCapabilities](../android/location/GnssCapabilities.md) | GNSS chipset capabilities. |
+| [GnssClock](../android/location/GnssClock.md) | A class containing a GNSS clock timestamp. |
 | --- | --- |
-| [GnssMeasurement](https://developer.android.com/reference/kotlin/android/location/GnssMeasurement) | A class representing a GNSS satellite measurement, containing raw and computed information. |
-| [GnssMeasurementRequest](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementRequest) | This class contains extra parameters to pass in a GNSS measurement request. |
-| [GnssMeasurementsEvent](https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent) | A class implementing a container for data associated with a measurement event. |
+| [GnssMeasurement](../android/location/GnssMeasurement.md) | A class representing a GNSS satellite measurement, containing raw and computed information. |
+| [GnssMeasurementRequest](../android/location/GnssMeasurementRequest.md) | This class contains extra parameters to pass in a GNSS measurement request. |
+| [GnssMeasurementsEvent](../android/location/GnssMeasurementsEvent.md) | A class implementing a container for data associated with a measurement event. |
 | --- | --- |
-| [GnssNavigationMessage](https://developer.android.com/reference/kotlin/android/location/GnssNavigationMessage) | A class containing a GNSS satellite Navigation Message. |
-| [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType) | This class represents a GNSS signal type. |
-| [GnssStatus](https://developer.android.com/reference/kotlin/android/location/GnssStatus) | This class represents the current state of the GNSS engine and is used in conjunction with [GnssStatus.Callback](https://developer.android.com/reference/kotlin/android/location/GnssStatus.Callback). |
+| [GnssNavigationMessage](../android/location/GnssNavigationMessage.md) | A class containing a GNSS satellite Navigation Message. |
+| [GnssSignalType](../android/location/GnssSignalType.md) | This class represents a GNSS signal type. |
+| [GnssStatus](../android/location/GnssStatus.md) | This class represents the current state of the GNSS engine and is used in conjunction with [GnssStatus.Callback](../android/location/GnssStatus.Callback.md). |
 | --- | --- |
-| [GpsSatellite](https://developer.android.com/reference/kotlin/android/location/GpsSatellite) | This class represents the current state of a GPS satellite. |
-| [GpsStatus](https://developer.android.com/reference/kotlin/android/location/GpsStatus) | This class represents the current state of the GPS engine and is used in conjunction with [GpsStatus.Listener](https://developer.android.com/reference/kotlin/android/location/GpsStatus.Listener). |
-| [Location](https://developer.android.com/reference/kotlin/android/location/Location) | A data class representing a geographic location. |
+| [GpsSatellite](../android/location/GpsSatellite.md) | This class represents the current state of a GPS satellite. |
+| [GpsStatus](../android/location/GpsStatus.md) | This class represents the current state of the GPS engine and is used in conjunction with [GpsStatus.Listener](../android/location/GpsStatus.Listener.md). |
+| [Location](../android/location/Location.md) | A data class representing a geographic location. |
 | --- | --- |
-| [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager) | This class provides access to the system location services. |
-| [LocationProvider](https://developer.android.com/reference/kotlin/android/location/LocationProvider) | Information about the properties of a location provider. |
-| [LocationRequest](https://developer.android.com/reference/kotlin/android/location/LocationRequest) | An encapsulation of various parameters for requesting location via [LocationManager](https://developer.android.com/reference/kotlin/android/location/LocationManager). |
+| [LocationManager](../android/location/LocationManager.md) | This class provides access to the system location services. |
+| [LocationProvider](../android/location/LocationProvider.md) | Information about the properties of a location provider. |
+| [LocationRequest](../android/location/LocationRequest.md) | An encapsulation of various parameters for requesting location via [LocationManager](../android/location/LocationManager.md). |
 | --- | --- |
-| [SettingInjectorService](https://developer.android.com/reference/kotlin/android/location/SettingInjectorService) | Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app |
+| [SettingInjectorService](../android/location/SettingInjectorService.md) | Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app |

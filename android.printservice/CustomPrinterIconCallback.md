@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # CustomPrinterIconCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/printservice/CustomPrinterIconCallback "View this page in Java") 
+Kotlin| [Java](../android/printservice/CustomPrinterIconCallback.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ class CustomPrinterIconCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.printservice.CustomPrinterIconCallback](https://developer.android.com/reference/kotlin/android/printservice/CustomPrinterIconCallback#) |
+| ↳ | [android.printservice.CustomPrinterIconCallback](../android/printservice/CustomPrinterIconCallback.md) |
 
-Callback for [PrinterDiscoverySession.onRequestCustomPrinterIcon](https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#onRequestCustomPrinterIcon(android.print.PrinterId,%20android.os.CancellationSignal,%20android.printservice.CustomPrinterIconCallback)).
+Callback for [PrinterDiscoverySession.onRequestCustomPrinterIcon](../android/printservice/PrinterDiscoverySession.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCustomPrinterIconLoaded](https://developer.android.com/reference/kotlin/android/printservice/CustomPrinterIconCallback#onCustomPrinterIconLoaded(android.graphics.drawable.Icon))`(`icon:` ` [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)?`)` Provide a new icon for a printer. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCustomPrinterIconLoaded](../android/printservice/CustomPrinterIconCallback.md))`(`icon:` ` [Icon](../android/graphics/drawable/Icon.md)?`)` Provide a new icon for a printer. |
 
 ## Public methods
 
@@ -37,7 +37,7 @@ Provide a new icon for a printer. Can be called more than once to update the ico
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `icon` | [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)?:The new icon for the printer or null to unset the current icon |
+| `icon` | [Icon](../android/graphics/drawable/Icon.md)?:The new icon for the printer or null to unset the current icon |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|

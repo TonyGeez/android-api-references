@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # CallAttributes
 
-Kotlin| [Java](https://developer.android.com/reference/android/telecom/CallAttributes "View this page in Java") 
+Kotlin| [Java](../android/telecom/CallAttributes.md) 
 | --- | --- |
 
 ```
@@ -13,57 +13,57 @@ class CallAttributes : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.CallAttributes](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#) |
+| ↳ | [android.telecom.CallAttributes](../android/telecom/CallAttributes.md) |
 
-CallAttributes represents a set of properties that define a new Call. Apps should build an instance of this class and use [TelecomManager.addCall](https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addCall(android.telecom.CallAttributes,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver,%20android.telecom.CallControlCallback,%20android.telecom.CallEventCallback))to start a new call with Telecom.
+CallAttributes represents a set of properties that define a new Call. Apps should build an instance of this class and use [TelecomManager.addCall](../android/telecom/TelecomManager.md))to start a new call with Telecom.
 
-Apps should first register a [PhoneAccount](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount) via [TelecomManager.registerPhoneAccount](https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount))and use the same [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) registered with Telecom when creating an instance of CallAttributes.
+Apps should first register a [PhoneAccount](../android/telecom/PhoneAccount.md) via [TelecomManager.registerPhoneAccount](../android/telecom/TelecomManager.md))and use the same [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) registered with Telecom when creating an instance of CallAttributes.
 
 ## Summary
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes.Builder) Build an instance of [CallAttributes](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#). |
+| | [Builder](../android/telecom/CallAttributes.Builder.md) Build an instance of [CallAttributes](../android/telecom/CallAttributes.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_CALL](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#AUDIO_CALL:kotlin.Int) Used when answering or dialing a call to indicate that the call does not have a video component |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_INCOMING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#DIRECTION_INCOMING:kotlin.Int) Indicates that the call is an incoming call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_OUTGOING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#DIRECTION_OUTGOING:kotlin.Int) Indicates that the call is an outgoing call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUDIO_CALL](../android/telecom/CallAttributes.md) Used when answering or dialing a call to indicate that the call does not have a video component |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_INCOMING](../android/telecom/CallAttributes.md) Indicates that the call is an incoming call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_OUTGOING](../android/telecom/CallAttributes.md) Indicates that the call is an outgoing call. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_SET_INACTIVE](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_SET_INACTIVE:kotlin.Int) The call being created can be set to inactive (traditionally referred to as hold). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_STREAM](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_STREAM:kotlin.Int) The call can be streamed from a root device to another device to continue the call without completely transferring it. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_TRANSFER](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_TRANSFER:kotlin.Int) The call can be completely transferred from one endpoint to another. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_SET_INACTIVE](../android/telecom/CallAttributes.md) The call being created can be set to inactive (traditionally referred to as hold). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_STREAM](../android/telecom/CallAttributes.md) The call can be streamed from a root device to another device to continue the call without completely transferring it. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_TRANSFER](../android/telecom/CallAttributes.md) The call can be completely transferred from one endpoint to another. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_VIDEO_CALLING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_VIDEO_CALLING:kotlin.Int) The call supports video calling. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_CALL](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#VIDEO_CALL:kotlin.Int) Indicates video transmission is supported |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPORTS_VIDEO_CALLING](../android/telecom/CallAttributes.md) The call supports video calling. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_CALL](../android/telecom/CallAttributes.md) Indicates video transmission is supported |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [getAddress](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getAddress())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telecom/CallAttributes.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telecom/CallAttributes.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Uri](../android/net/Uri.md) | [getAddress](../android/telecom/CallAttributes.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallCapabilities](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getCallCapabilities())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallType](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getCallType())`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirection](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getDirection())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallCapabilities](../android/telecom/CallAttributes.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCallType](../android/telecom/CallAttributes.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirection](../android/telecom/CallAttributes.md))`()` <br /> |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getDisplayName](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getDisplayName())`()` <br /> |
-| [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) | [getPhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#getPhoneAccountHandle())`()` The [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) that should be registered to Telecom to allow calls. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#hashCode())`()` Returns a hash code value for the object. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getDisplayName](../android/telecom/CallAttributes.md))`()` <br /> |
+| [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) | [getPhoneAccountHandle](../android/telecom/CallAttributes.md))`()` The [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) that should be registered to Telecom to allow calls. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telecom/CallAttributes.md))`()` Returns a hash code value for the object. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLogExcluded](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#isLogExcluded())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#toString())`()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLogExcluded](../android/telecom/CallAttributes.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telecom/CallAttributes.md))`()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telecom/CallAttributes.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CallAttributes](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#CREATOR:android.os.Parcelable.Creator) Responsible for creating CallAttribute objects for deserialized Parcels. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CallAttributes](../android/telecom/CallAttributes.md)!\> | [CREATOR](../android/telecom/CallAttributes.md) Responsible for creating CallAttribute objects for deserialized Parcels. |
 
 ## Constants
 
@@ -175,7 +175,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -215,7 +215,7 @@ fun getAddress(): Uri
 
 | Return ||
 |-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | address of the incoming caller or the address of the person being called for an outgoing call This value cannot be`null`. |
+| [Uri](../android/net/Uri.md) | address of the incoming caller or the address of the person being called for an outgoing call This value cannot be`null`. |
 
 ### getCallCapabilities
 
@@ -227,7 +227,7 @@ fun getCallCapabilities(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The allowed capabilities of the new call Value is either`0`or a combination of [android.telecom.CallAttributes#SUPPORTS_SET_INACTIVE](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_SET_INACTIVE:kotlin.Int), [android.telecom.CallAttributes#SUPPORTS_STREAM](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_STREAM:kotlin.Int), [android.telecom.CallAttributes#SUPPORTS_TRANSFER](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_TRANSFER:kotlin.Int), and [android.telecom.CallAttributes#SUPPORTS_VIDEO_CALLING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#SUPPORTS_VIDEO_CALLING:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The allowed capabilities of the new call Value is either`0`or a combination of [android.telecom.CallAttributes#SUPPORTS_SET_INACTIVE](../android/telecom/CallAttributes.md), [android.telecom.CallAttributes#SUPPORTS_STREAM](../android/telecom/CallAttributes.md), [android.telecom.CallAttributes#SUPPORTS_TRANSFER](../android/telecom/CallAttributes.md), and [android.telecom.CallAttributes#SUPPORTS_VIDEO_CALLING](../android/telecom/CallAttributes.md) |
 
 ### getCallType
 
@@ -239,7 +239,7 @@ fun getCallType(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Information related to data being transmitted (voice, video, etc. ) Value is [android.telecom.CallAttributes#AUDIO_CALL](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#AUDIO_CALL:kotlin.Int), or [android.telecom.CallAttributes#VIDEO_CALL](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#VIDEO_CALL:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Information related to data being transmitted (voice, video, etc. ) Value is [android.telecom.CallAttributes#AUDIO_CALL](../android/telecom/CallAttributes.md), or [android.telecom.CallAttributes#VIDEO_CALL](../android/telecom/CallAttributes.md) |
 
 ### getDirection
 
@@ -251,7 +251,7 @@ fun getDirection(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the direction of the new call. Value is [android.telecom.CallAttributes#DIRECTION_INCOMING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#DIRECTION_INCOMING:kotlin.Int), or [android.telecom.CallAttributes#DIRECTION_OUTGOING](https://developer.android.com/reference/kotlin/android/telecom/CallAttributes#DIRECTION_OUTGOING:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the direction of the new call. Value is [android.telecom.CallAttributes#DIRECTION_INCOMING](../android/telecom/CallAttributes.md), or [android.telecom.CallAttributes#DIRECTION_OUTGOING](../android/telecom/CallAttributes.md) |
 
 ### getDisplayName
 
@@ -273,11 +273,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getPhoneAccountHandle(): PhoneAccountHandle
 ```
 
-The [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) that should be registered to Telecom to allow calls. The [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) should be registered before creating a CallAttributes instance.
+The [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) that should be registered to Telecom to allow calls. The [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) should be registered before creating a CallAttributes instance.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) | the [PhoneAccountHandle](https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle) for this package that allows this call to be created This value cannot be`null`. |
+| [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) | the [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) for this package that allows this call to be created This value cannot be`null`. |
 
 ### hashCode
 
@@ -287,13 +287,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -340,8 +340,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!:This value may be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md)!:This value may be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

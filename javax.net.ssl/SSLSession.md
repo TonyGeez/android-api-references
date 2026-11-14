@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SSLSession
 ```
 
-| [javax.net.ssl.SSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#) |
+| [javax.net.ssl.SSLSession](../javax/net/ssl/SSLSession.md) |
 
-| Known Direct Subclasses [ExtendedSSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/ExtendedSSLSession) |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------| | [ExtendedSSLSession](https://developer.android.com/reference/kotlin/javax/net/ssl/ExtendedSSLSession) | Extends the`SSLSession`interface to support additional session attributes. | |
+| Known Direct Subclasses [ExtendedSSLSession](../javax/net/ssl/ExtendedSSLSession.md) |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------| | [ExtendedSSLSession](../javax/net/ssl/ExtendedSSLSession.md) | Extends the`SSLSession`interface to support additional session attributes. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 In SSL, sessions are used to describe an ongoing relationship between two entities. Each SSL connection involves one session at a time, but that session may be used on many connections between those entities, simultaneously or sequentially. The session used on a connection may also be replaced by a different session. Sessions are created, or rejoined, as part of the SSL handshaking protocol. Sessions may be invalidated due to policies affecting security or resource usage, or by an application explicitly calling`invalidate`. Session management policies are typically used to tune performance.
@@ -27,33 +27,33 @@ Sessions may be explicitly invalidated. Invalidation may also be done implicitly
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getApplicationBufferSize](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getApplicationBufferSize())`()` Gets the current size of the largest application data that is expected when using this session. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getCipherSuite())`()` Returns the name of the SSL cipher suite which is used for all connections in the session. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCreationTime](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getCreationTime())`()` Returns the time at which this Session representation was created, in milliseconds since midnight, January 1, 1970 UTC. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getApplicationBufferSize](../javax/net/ssl/SSLSession.md))`()` Gets the current size of the largest application data that is expected when using this session. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](../javax/net/ssl/SSLSession.md))`()` Returns the name of the SSL cipher suite which is used for all connections in the session. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCreationTime](../javax/net/ssl/SSLSession.md))`()` Returns the time at which this Session representation was created, in milliseconds since midnight, January 1, 1970 UTC. |
 | --- | --- |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getId](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getId())`()` Returns the identifier assigned to this Session. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastAccessedTime](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getLastAccessedTime())`()` Returns the last time this Session representation was accessed by the session level infrastructure, in milliseconds since midnight, January 1, 1970 UTC. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | [getLocalCertificates](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getLocalCertificates())`()` Returns the certificate(s) that were sent to the peer during handshaking. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getId](../javax/net/ssl/SSLSession.md))`()` Returns the identifier assigned to this Session. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastAccessedTime](../javax/net/ssl/SSLSession.md))`()` Returns the last time this Session representation was accessed by the session level infrastructure, in milliseconds since midnight, January 1, 1970 UTC. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getLocalCertificates](../javax/net/ssl/SSLSession.md))`()` Returns the certificate(s) that were sent to the peer during handshaking. |
 | --- | --- |
-| abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getLocalPrincipal](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getLocalPrincipal())`()` Returns the principal that was sent to the peer during handshaking. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPacketBufferSize](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getPacketBufferSize())`()` Gets the current size of the largest SSL/TLS packet that is expected when using this session. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate.html#)!\>! | [getPeerCertificateChain](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getPeerCertificateChain())`()` Returns the identity of the peer which was identified as part of defining the session. |
+| abstract [Principal](../java/security/Principal.md)! | [getLocalPrincipal](../javax/net/ssl/SSLSession.md))`()` Returns the principal that was sent to the peer during handshaking. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPacketBufferSize](../javax/net/ssl/SSLSession.md))`()` Gets the current size of the largest SSL/TLS packet that is expected when using this session. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../javax/security/cert/X509Certificate.md)!\>! | [getPeerCertificateChain](../javax/net/ssl/SSLSession.md))`()` Returns the identity of the peer which was identified as part of defining the session. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!\>! | [getPeerCertificates](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getPeerCertificates())`()` Returns the identity of the peer which was established as part of defining the session. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPeerHost](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getPeerHost())`()` Returns the host name of the peer in this session. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeerPort](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getPeerPort())`()` Returns the port number of the peer in this session. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getPeerCertificates](../javax/net/ssl/SSLSession.md))`()` Returns the identity of the peer which was established as part of defining the session. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPeerHost](../javax/net/ssl/SSLSession.md))`()` Returns the host name of the peer in this session. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeerPort](../javax/net/ssl/SSLSession.md))`()` Returns the port number of the peer in this session. |
 | --- | --- |
-| abstract [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | [getPeerPrincipal](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getPeerPrincipal())`()` Returns the identity of the peer which was established as part of defining the session. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProtocol](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getProtocol())`()` Returns the standard name of the protocol used for all connections in the session. |
-| abstract [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | [getSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getSessionContext())`()` Returns the context in which this session is bound. |
+| abstract [Principal](../java/security/Principal.md)! | [getPeerPrincipal](../javax/net/ssl/SSLSession.md))`()` Returns the identity of the peer which was established as part of defining the session. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProtocol](../javax/net/ssl/SSLSession.md))`()` Returns the standard name of the protocol used for all connections in the session. |
+| abstract [SSLSessionContext](../javax/net/ssl/SSLSessionContext.md)! | [getSessionContext](../javax/net/ssl/SSLSession.md))`()` Returns the context in which this session is bound. |
 | --- | --- |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getValue](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getValue(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the object bound to the given name in the session's application layer data. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getValueNames](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getValueNames())`()` Returns an array of the names of all the application layer data objects bound into the Session. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invalidate](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#invalidate())`()` Invalidates the session. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getValue](../javax/net/ssl/SSLSession.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the object bound to the given name in the session's application layer data. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getValueNames](../javax/net/ssl/SSLSession.md))`()` Returns an array of the names of all the application layer data objects bound into the Session. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invalidate](../javax/net/ssl/SSLSession.md))`()` Invalidates the session. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#isValid())`()` Returns whether this session is valid and available for resuming or joining. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putValue](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#putValue(kotlin.String,%20kotlin.Any))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Binds the specified`value`object into the session's application layer data with the given`name`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeValue](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#removeValue(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Removes the object bound to the given name in the session's application layer data. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../javax/net/ssl/SSLSession.md))`()` Returns whether this session is valid and available for resuming or joining. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putValue](../javax/net/ssl/SSLSession.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Binds the specified`value`object into the session's application layer data with the given`name`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeValue](../javax/net/ssl/SSLSession.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Removes the object bound to the given name in the session's application layer data. |
 | --- | --- |
 
 ## Public methods
@@ -154,7 +154,7 @@ When multiple certificates are available for use in a handshake, the implementat
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!>! | an ordered array of certificates, with the local certificate first followed by any certificate authorities. If no certificates were sent, then null is returned. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>! | an ordered array of certificates, with the local certificate first followed by any certificate authorities. If no certificates were sent, then null is returned. |
 
 **See Also**
 
@@ -172,7 +172,7 @@ Returns the principal that was sent to the peer during handshaking.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | the principal sent to the peer. Returns an X500Principal of the end-entity certificate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. If no principal was sent, then null is returned. |
+| [Principal](../java/security/Principal.md)! | the principal sent to the peer. Returns an X500Principal of the end-entity certificate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. If no principal was sent, then null is returned. |
 
 **See Also**
 
@@ -209,11 +209,11 @@ Returns the identity of the peer which was identified as part of defining the se
 
 Note: This method can be used only when using certificate-based cipher suites; using it with non-certificate-based cipher suites, such as Kerberos, will throw an SSLPeerUnverifiedException.
 
-*Note: this method exists for compatibility with previous releases. New applications should use [getPeerCertificates](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession#getPeerCertificates())instead.*
+*Note: this method exists for compatibility with previous releases. New applications should use [getPeerCertificates](../javax/net/ssl/SSLSession.md))instead.*
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate.html#)!>! | an ordered array of peer X.509 certificates, with the peer's own certificate first followed by any certificate authorities. (The certificates are in the original JSSE certificate [javax.security.cert.X509Certificate](https://developer.android.com/reference/kotlin/javax/security/cert/X509Certificate.html#) format.) |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../javax/security/cert/X509Certificate.md)!>! | an ordered array of peer X.509 certificates, with the peer's own certificate first followed by any certificate authorities. (The certificates are in the original JSSE certificate [javax.security.cert.X509Certificate](../javax/security/cert/X509Certificate.md) format.) |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------|
@@ -237,7 +237,7 @@ Note: This method can be used only when using certificate-based cipher suites; u
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#)!>! | an ordered array of peer certificates, with the peer's own certificate first followed by any certificate authorities. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>! | an ordered array of peer certificates, with the peer's own certificate first followed by any certificate authorities. |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------|
@@ -295,7 +295,7 @@ Returns the identity of the peer which was established as part of defining the s
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)! | the peer's principal. Returns an X500Principal of the end-entity certiticate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. |
+| [Principal](../java/security/Principal.md)! | the peer's principal. Returns an X500Principal of the end-entity certiticate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------|
@@ -338,7 +338,7 @@ If the context is available and there is a security manager installed, the calle
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [SSLSessionContext](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSessionContext)! | the session context used for this session, or null if the context is unavailable. |
+| [SSLSessionContext](../javax/net/ssl/SSLSessionContext.md)! | the session context used for this session, or null if the context is unavailable. |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------|

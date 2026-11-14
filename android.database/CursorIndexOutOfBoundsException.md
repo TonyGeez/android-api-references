@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CursorIndexOutOfBoundsException
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/CursorIndexOutOfBoundsException "View this page in Java") 
+Kotlin| [Java](../android/database/CursorIndexOutOfBoundsException.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class CursorIndexOutOfBoundsException : IndexOutOfBoundsException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IndexOutOfBoundsException](https://developer.android.com/reference/kotlin/java/lang/IndexOutOfBoundsException.html#) ||
-| | | | | ↳ | [android.database.CursorIndexOutOfBoundsException](https://developer.android.com/reference/kotlin/android/database/CursorIndexOutOfBoundsException#) |
+| | | | ↳ | [java.lang.IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md) ||
+| | | | | ↳ | [android.database.CursorIndexOutOfBoundsException](../android/database/CursorIndexOutOfBoundsException.md) |
 
 An exception indicating that a cursor is out of bounds.
 
@@ -26,8 +26,8 @@ An exception indicating that a cursor is out of bounds.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CursorIndexOutOfBoundsException](https://developer.android.com/reference/kotlin/android/database/CursorIndexOutOfBoundsException#CursorIndexOutOfBoundsException(kotlin.Int,%20kotlin.Int))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [CursorIndexOutOfBoundsException](https://developer.android.com/reference/kotlin/android/database/CursorIndexOutOfBoundsException#CursorIndexOutOfBoundsException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [CursorIndexOutOfBoundsException](../android/database/CursorIndexOutOfBoundsException.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [CursorIndexOutOfBoundsException](../android/database/CursorIndexOutOfBoundsException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

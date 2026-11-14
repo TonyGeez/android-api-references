@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # InflateException
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/InflateException "View this page in Java") 
+Kotlin| [Java](../android/view/InflateException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class InflateException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.view.InflateException](https://developer.android.com/reference/kotlin/android/view/InflateException#) |
+| | | | ↳ | [android.view.InflateException](../android/view/InflateException.md) |
 
 This exception is thrown by an inflater on error conditions.
 
@@ -25,10 +25,10 @@ This exception is thrown by an inflater on error conditions.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InflateException](https://developer.android.com/reference/kotlin/android/view/InflateException#InflateException())`()` <br /> |
-| [InflateException](https://developer.android.com/reference/kotlin/android/view/InflateException#InflateException(kotlin.String))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [InflateException](https://developer.android.com/reference/kotlin/android/view/InflateException#InflateException(kotlin.String,%20kotlin.Throwable))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `throwable:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
-| [InflateException](https://developer.android.com/reference/kotlin/android/view/InflateException#InflateException(kotlin.Throwable))`(`throwable:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [InflateException](../android/view/InflateException.md))`()` <br /> |
+| [InflateException](../android/view/InflateException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [InflateException](../android/view/InflateException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `throwable:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [InflateException](../android/view/InflateException.md))`(`throwable:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
 
 ## Public constructors
 

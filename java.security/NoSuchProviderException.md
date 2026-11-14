@@ -11,10 +11,10 @@ open class NoSuchProviderException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.security.GeneralSecurityException](https://developer.android.com/reference/kotlin/java/security/GeneralSecurityException) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.NoSuchProviderException](https://developer.android.com/reference/kotlin/java/security/NoSuchProviderException#) |
+| | | | ↳ | [java.security.NoSuchProviderException](../java/security/NoSuchProviderException.md) |
 
 This exception is thrown when a particular security provider is requested but is not available in the environment.
 
@@ -22,8 +22,8 @@ This exception is thrown when a particular security provider is requested but is
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoSuchProviderException](https://developer.android.com/reference/kotlin/java/security/NoSuchProviderException#NoSuchProviderException())`()` Constructs a NoSuchProviderException with no detail message. |
-| [NoSuchProviderException](https://developer.android.com/reference/kotlin/java/security/NoSuchProviderException#NoSuchProviderException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchProviderException with the specified detail message. |
+| [NoSuchProviderException](../java/security/NoSuchProviderException.md))`()` Constructs a NoSuchProviderException with no detail message. |
+| [NoSuchProviderException](../java/security/NoSuchProviderException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchProviderException with the specified detail message. |
 
 ## Public constructors
 

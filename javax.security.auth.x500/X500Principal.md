@@ -10,7 +10,7 @@ class X500Principal : Principal, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.security.auth.x500.X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#) |
+| ↳ | [javax.security.auth.x500.X500Principal](../javax/security/auth/x500/X500Principal.md) |
 
 This class represents an X.500`Principal`.`X500Principal`s are represented by distinguished names such as "CN=Duke, OU=JavaSoft, O=Sun Microsystems, C=US".
 
@@ -24,33 +24,33 @@ Note that the`getSubjectX500Principal`and`getIssuerX500Principal`methods of`X509
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CANONICAL](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#CANONICAL:kotlin.String) Canonical String format of Distinguished Names. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RFC1779](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#RFC1779:kotlin.String) RFC 1779 String format of Distinguished Names. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RFC2253](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#RFC2253:kotlin.String) RFC 2253 String format of Distinguished Names. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CANONICAL](../javax/security/auth/x500/X500Principal.md) Canonical String format of Distinguished Names. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RFC1779](../javax/security/auth/x500/X500Principal.md) RFC 1779 String format of Distinguished Names. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RFC2253](../javax/security/auth/x500/X500Principal.md) RFC 2253 String format of Distinguished Names. |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#X500Principal(kotlin.ByteArray))`(`name:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an`X500Principal`from a distinguished name in ASN. |
-| [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#X500Principal(java.io.InputStream))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Creates an`X500Principal`from an`InputStream`containing the distinguished name in ASN. |
-| [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#X500Principal(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an`X500Principal`from a string representation of an X. |
-| [X500Principal](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#X500Principal(kotlin.String,%20kotlin.collections.MutableMap))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keywordMap:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Creates an`X500Principal`from a string representation of an X. |
+| [X500Principal](../javax/security/auth/x500/X500Principal.md))`(`name:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an`X500Principal`from a distinguished name in ASN. |
+| [X500Principal](../javax/security/auth/x500/X500Principal.md))`(`is:` ` [InputStream](../java/io/InputStream.md)!`)` Creates an`X500Principal`from an`InputStream`containing the distinguished name in ASN. |
+| [X500Principal](../javax/security/auth/x500/X500Principal.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an`X500Principal`from a string representation of an X. |
+| [X500Principal](../javax/security/auth/x500/X500Principal.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keywordMap:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Creates an`X500Principal`from a string representation of an X. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified`Object`with this`X500Principal`for equality. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getEncoded())`()` Returns the distinguished name in ASN. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName())`()` Returns a string representation of the X. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../javax/security/auth/x500/X500Principal.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified`Object`with this`X500Principal`for equality. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../javax/security/auth/x500/X500Principal.md))`()` Returns the distinguished name in ASN. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../javax/security/auth/x500/X500Principal.md))`()` Returns a string representation of the X. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName(kotlin.String))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a string representation of the X. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName(kotlin.String,%20kotlin.collections.MutableMap))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oidMap:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns a string representation of the X. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#hashCode())`()` Return a hash code for this`X500Principal`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../javax/security/auth/x500/X500Principal.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a string representation of the X. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../javax/security/auth/x500/X500Principal.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oidMap:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns a string representation of the X. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../javax/security/auth/x500/X500Principal.md))`()` Return a hash code for this`X500Principal`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#toString())`()` Return a user-friendly string representation of this`X500Principal`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../javax/security/auth/x500/X500Principal.md))`()` Return a user-friendly string representation of this`X500Principal`. |
 
 | Inherited functions ||
 |---|---|
-| From class [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/Principal.html#implies(javax.security.auth.Subject))`(`subject:` ` [Subject](https://developer.android.com/reference/kotlin/javax/security/auth/Subject.html#)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
+| From class [Principal](../java/security/Principal.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/Principal.md))`(`subject:` ` [Subject](../javax/security/auth/Subject.md)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
 
 ## Constants
 
@@ -152,7 +152,7 @@ The read position of the input stream is positioned to the next available byte a
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `is` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:an`InputStream`containing the distinguished name in ASN.1 DER encoded form |
+| `is` | [InputStream](../java/io/InputStream.md)!:an`InputStream`containing the distinguished name in ASN.1 DER encoded form |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------|
@@ -169,7 +169,7 @@ X500Principal(name: String!)
 
 Creates an`X500Principal`from a string representation of an X.500 distinguished name (ex: "CN=Duke, OU=JavaSoft, O=Sun Microsystems, C=US"). The distinguished name must be specified using the grammar defined in RFC 1779 or RFC 2253 (either format is acceptable).
 
-This constructor recognizes the attribute type keywords defined in RFC 1779 and RFC 2253 (and listed in [getName(String format)](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName(kotlin.String))), as well as the T, DNQ or DNQUALIFIER, SURNAME, GIVENNAME, INITIALS, GENERATION, EMAILADDRESS, and SERIALNUMBER keywords whose Object Identifiers (OIDs) are defined in RFC 3280 and its successor. Any other attribute type must be specified as an OID.
+This constructor recognizes the attribute type keywords defined in RFC 1779 and RFC 2253 (and listed in [getName(String format)](../javax/security/auth/x500/X500Principal.md))), as well as the T, DNQ or DNQUALIFIER, SURNAME, GIVENNAME, INITIALS, GENERATION, EMAILADDRESS, and SERIALNUMBER keywords whose Object Identifiers (OIDs) are defined in RFC 3280 and its successor. Any other attribute type must be specified as an OID.
 
 This implementation enforces a more restrictive OID syntax than defined in RFC 1779 and 2253. It uses the more correct syntax defined in [RFC 4512](http://www.ietf.org/rfc/rfc4512.txt), which specifies that OIDs contain at least 2 digits:
 
@@ -196,7 +196,7 @@ X500Principal(
 
 Creates an`X500Principal`from a string representation of an X.500 distinguished name (ex: "CN=Duke, OU=JavaSoft, O=Sun Microsystems, C=US"). The distinguished name must be specified using the grammar defined in RFC 1779 or RFC 2253 (either format is acceptable).
 
-This constructor recognizes the attribute type keywords specified in [X500Principal(java.lang.String)](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#X500Principal(kotlin.String))and also recognizes additional keywords that have entries in the`keywordMap`parameter. Keyword entries in the keywordMap take precedence over the default keywords recognized by`X500Principal(String)`. Keywords MUST be specified in all upper-case, otherwise they will be ignored. Improperly specified keywords are ignored; however if a keyword in the name maps to an improperly specified Object Identifier (OID), an`IllegalArgumentException`is thrown. It is permissible to have 2 different keywords that map to the same OID.
+This constructor recognizes the attribute type keywords specified in [X500Principal(java.lang.String)](../javax/security/auth/x500/X500Principal.md))and also recognizes additional keywords that have entries in the`keywordMap`parameter. Keyword entries in the keywordMap take precedence over the default keywords recognized by`X500Principal(String)`. Keywords MUST be specified in all upper-case, otherwise they will be ignored. Improperly specified keywords are ignored; however if a keyword in the name maps to an improperly specified Object Identifier (OID), an`IllegalArgumentException`is thrown. It is permissible to have 2 different keywords that map to the same OID.
 
 This implementation enforces a more restrictive OID syntax than defined in RFC 1779 and 2253. It uses the more correct syntax defined in [RFC 4512](http://www.ietf.org/rfc/rfc4512.txt), which specifies that OIDs contain at least 2 digits:
 
@@ -325,7 +325,7 @@ fun getName(
 
 Returns a string representation of the X.500 distinguished name using the specified format. Valid values for the format are "RFC1779" and "RFC2253" (case insensitive). "CANONICAL" is not permitted and an`IllegalArgumentException`will be thrown.
 
-This method returns Strings in the format as specified in [getName(java.lang.String)](https://developer.android.com/reference/kotlin/javax/security/auth/x500/X500Principal#getName(kotlin.String))and also emits additional attribute type keywords for OIDs that have entries in the`oidMap`parameter. OID entries in the oidMap take precedence over the default OIDs recognized by`getName(String)`. Improperly specified OIDs are ignored; however if an OID in the name maps to an improperly specified keyword, an`IllegalArgumentException`is thrown.
+This method returns Strings in the format as specified in [getName(java.lang.String)](../javax/security/auth/x500/X500Principal.md))and also emits additional attribute type keywords for OIDs that have entries in the`oidMap`parameter. OID entries in the oidMap take precedence over the default OIDs recognized by`getName(String)`. Improperly specified OIDs are ignored; however if an OID in the name maps to an improperly specified keyword, an`IllegalArgumentException`is thrown.
 
 Additional standard formats may be introduced in the future.
 

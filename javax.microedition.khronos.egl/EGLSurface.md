@@ -10,13 +10,13 @@ abstract class EGLSurface
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.microedition.khronos.egl.EGLSurface](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLSurface#) |
+| ↳ | [javax.microedition.khronos.egl.EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md) |
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------|---|
-| [EGLSurface](https://developer.android.com/reference/kotlin/javax/microedition/khronos/egl/EGLSurface#EGLSurface())`()` <br /> |
+| [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md))`()` <br /> |
 
 ## Public constructors
 

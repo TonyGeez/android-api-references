@@ -10,25 +10,25 @@ class SignStyle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.SignStyle](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#)\> ||
-| | ↳ | [java.time.format.SignStyle](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.SignStyle](../java/time/format/SignStyle.md)\> ||
+| | ↳ | [java.time.format.SignStyle](../java/time/format/SignStyle.md) |
 
-| Known Direct Subclasses [SignStyle.ALWAYS](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:ALWAYS), [SignStyle.EXCEEDS_PAD](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:EXCEEDS_PAD), [SignStyle.NEVER](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NEVER), [SignStyle.NORMAL](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NORMAL), [SignStyle.NOT_NEGATIVE](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NOT_NEGATIVE) |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [SignStyle.ALWAYS](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:ALWAYS) | Style to always output the sign, where zero will output '+'. | | [SignStyle.EXCEEDS_PAD](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:EXCEEDS_PAD) | Style to always output the sign if the value exceeds the pad width. | | [SignStyle.NEVER](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NEVER) | Style to never output sign, only outputting the absolute value. | | [SignStyle.NORMAL](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NORMAL) | Style to output the sign only if the value is negative. | | [SignStyle.NOT_NEGATIVE](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NOT_NEGATIVE) | Style to block negative values, throwing an exception on printing. | |
+| Known Direct Subclasses [SignStyle.ALWAYS](../java/time/format/SignStyle.md), [SignStyle.EXCEEDS_PAD](../java/time/format/SignStyle.md), [SignStyle.NEVER](../java/time/format/SignStyle.md), [SignStyle.NORMAL](../java/time/format/SignStyle.md), [SignStyle.NOT_NEGATIVE](../java/time/format/SignStyle.md) |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [SignStyle.ALWAYS](../java/time/format/SignStyle.md) | Style to always output the sign, where zero will output '+'. | | [SignStyle.EXCEEDS_PAD](../java/time/format/SignStyle.md) | Style to always output the sign if the value exceeds the pad width. | | [SignStyle.NEVER](../java/time/format/SignStyle.md) | Style to never output sign, only outputting the absolute value. | | [SignStyle.NORMAL](../java/time/format/SignStyle.md) | Style to output the sign only if the value is negative. | | [SignStyle.NOT_NEGATIVE](../java/time/format/SignStyle.md) | Style to block negative values, throwing an exception on printing. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of ways to handle the positive/negative sign.
 
-The formatting engine allows the positive and negative signs of numbers to be controlled using this enum. See [DateTimeFormatterBuilder](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder) for usage.
+The formatting engine allows the positive and negative signs of numbers to be controlled using this enum. See [DateTimeFormatterBuilder](../java/time/format/DateTimeFormatterBuilder.md) for usage.
 
 ## Summary
 
 | Enum values ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ALWAYS](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:ALWAYS) Style to always output the sign, where zero will output '+'. |
-| [EXCEEDS_PAD](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:EXCEEDS_PAD) Style to always output the sign if the value exceeds the pad width. |
-| [NEVER](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NEVER) Style to never output sign, only outputting the absolute value. |
-| [NORMAL](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NORMAL) Style to output the sign only if the value is negative. |
-| [NOT_NEGATIVE](https://developer.android.com/reference/kotlin/java/time/format/SignStyle#ENUM_VALUE:NOT_NEGATIVE) Style to block negative values, throwing an exception on printing. |
+| [ALWAYS](../java/time/format/SignStyle.md) Style to always output the sign, where zero will output '+'. |
+| [EXCEEDS_PAD](../java/time/format/SignStyle.md) Style to always output the sign if the value exceeds the pad width. |
+| [NEVER](../java/time/format/SignStyle.md) Style to never output sign, only outputting the absolute value. |
+| [NORMAL](../java/time/format/SignStyle.md) Style to output the sign only if the value is negative. |
+| [NOT_NEGATIVE](../java/time/format/SignStyle.md) Style to block negative values, throwing an exception on printing. |
 
 ## Enum values
 

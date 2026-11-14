@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # GnssCapabilities
 
-Kotlin| [Java](https://developer.android.com/reference/android/location/GnssCapabilities "View this page in Java") 
+Kotlin| [Java](../android/location/GnssCapabilities.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class GnssCapabilities : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.GnssCapabilities](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#) |
+| ↳ | [android.location.GnssCapabilities](../android/location/GnssCapabilities.md) |
 
 GNSS chipset capabilities.
 
@@ -21,67 +21,67 @@ GNSS chipset capabilities.
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities.Builder) Builder for GnssCapabilities. |
+| | [Builder](../android/location/GnssCapabilities.Builder.md) Builder for GnssCapabilities. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAPABILITY_SUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_SUPPORTED:kotlin.Int) The capability is supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAPABILITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNKNOWN:kotlin.Int) The capability is unknown to be supported or not. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAPABILITY_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNSUPPORTED:kotlin.Int) The capability is not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAPABILITY_SUPPORTED](../android/location/GnssCapabilities.md) The capability is supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAPABILITY_UNKNOWN](../android/location/GnssCapabilities.md) The capability is unknown to be supported or not. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAPABILITY_UNSUPPORTED](../android/location/GnssCapabilities.md) The capability is not supported. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType)!\> | [getGnssSignalTypes](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#getGnssSignalTypes())`()` Returns the list of [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType) s that the GNSS chipset supports. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/location/GnssCapabilities.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/location/GnssCapabilities.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GnssSignalType](../android/location/GnssSignalType.md)!\> | [getGnssSignalTypes](../android/location/GnssCapabilities.md))`()` Returns the list of [GnssSignalType](../android/location/GnssSignalType.md) s that the GNSS chipset supports. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hasAccumulatedDeltaRange](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasAccumulatedDeltaRange())`()` Returns [CAPABILITY_SUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_SUPPORTED:kotlin.Int) if GNSS chipset supports accumulated delta range, [CAPABILITY_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNSUPPORTED:kotlin.Int) if GNSS chipset does not support accumulated delta range, and [CAPABILITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNKNOWN:kotlin.Int) if it is unknown, which means GNSS chipset may or may not support accumulated delta range. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAntennaInfo](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasAntennaInfo())`()` Returns`true`if GNSS chipset supports antenna info,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGeofencing](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasGeofencing())`()` Returns`true`if GNSS chipset supports geofencing,`false`otherwise. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hasAccumulatedDeltaRange](../android/location/GnssCapabilities.md))`()` Returns [CAPABILITY_SUPPORTED](../android/location/GnssCapabilities.md) if GNSS chipset supports accumulated delta range, [CAPABILITY_UNSUPPORTED](../android/location/GnssCapabilities.md) if GNSS chipset does not support accumulated delta range, and [CAPABILITY_UNKNOWN](../android/location/GnssCapabilities.md) if it is unknown, which means GNSS chipset may or may not support accumulated delta range. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAntennaInfo](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports antenna info,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGeofencing](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports geofencing,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGnssAntennaInfo](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasGnssAntennaInfo())`()` Returns`true`if GNSS chipset supports antenna info,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasLowPowerMode](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasLowPowerMode())`()` Returns`true`if GNSS chipset supports low power mode,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrections](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMeasurementCorrections())`()` Returns`true`if GNSS chipset supports measurement corrections,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGnssAntennaInfo](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports antenna info,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasLowPowerMode](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports low power mode,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrections](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measurement corrections,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsExcessPathLength](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMeasurementCorrectionsExcessPathLength())`()` Returns`true`if GNSS chipset supports per satellite excess-path-length measurement corrections,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsForDriving](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMeasurementCorrectionsForDriving())`()` Returns`true`if GNSS chipset will benefit from measurement corrections for driving use case if provided,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsLosSats](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMeasurementCorrectionsLosSats())`()` Returns`true`if GNSS chipset supports line-of-sight satellite identification measurement corrections,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsExcessPathLength](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports per satellite excess-path-length measurement corrections,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsForDriving](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset will benefit from measurement corrections for driving use case if provided,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsLosSats](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports line-of-sight satellite identification measurement corrections,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsReflectingPlane](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMeasurementCorrectionsReflectingPlane())`()` Returns`true`if GNSS chipset supports reflecting plane measurement corrections,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrelationVectors](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMeasurementCorrelationVectors())`()` Returns`true`if GNSS chipset supports correlation vectors as part of measurements outputs,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurements](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMeasurements())`()` Returns`true`if GNSS chipset supports measurements,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrectionsReflectingPlane](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports reflecting plane measurement corrections,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurementCorrelationVectors](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports correlation vectors as part of measurements outputs,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMeasurements](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measurements,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMsa](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMsa())`()` Returns`true`if GNSS chipset supports Mobile Station Assisted assitance,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMsb](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasMsb())`()` Returns`true`if GNSS chipset supports Mobile Station Based assistance,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNavigationMessages](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasNavigationMessages())`()` Returns`true`if GNSS chipset supports navigation messages,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMsa](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports Mobile Station Assisted assitance,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMsb](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports Mobile Station Based assistance,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNavigationMessages](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports navigation messages,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasOnDemandTime](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasOnDemandTime())`()` Returns`true`if GNSS chipset requests periodic time signal injection from the platform in addition to on-demand and occasional time updates,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerMultibandAcquisition](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasPowerMultibandAcquisition())`()` Returns`true`if GNSS chipset supports measuring multi-band acquisition power,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerMultibandTracking](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasPowerMultibandTracking())`()` Returns`true`if GNSS chipset supports measuring multi-band tracking power,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasOnDemandTime](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset requests periodic time signal injection from the platform in addition to on-demand and occasional time updates,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerMultibandAcquisition](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measuring multi-band acquisition power,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerMultibandTracking](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measuring multi-band tracking power,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerOtherModes](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasPowerOtherModes())`()` Returns`true`if GNSS chipset supports measuring OEM defined mode power,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerSinglebandAcquisition](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasPowerSinglebandAcquisition())`()` Returns`true`if GNSS chipset supports measuring single-band acquisition power,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerSinglebandTracking](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasPowerSinglebandTracking())`()` Returns`true`if GNSS chipset supports measuring single-band tracking power,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerOtherModes](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measuring OEM defined mode power,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerSinglebandAcquisition](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measuring single-band acquisition power,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerSinglebandTracking](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measuring single-band tracking power,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerTotal](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasPowerTotal())`()` Returns`true`if GNSS chipset supports measuring power totals,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSatelliteBlocklist](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasSatelliteBlocklist())`()` Returns`true`if GNSS chipset supports satellite blocklists,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSatellitePvt](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasSatellitePvt())`()` Returns`true`if GNSS chipset supports satellite PVT,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPowerTotal](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports measuring power totals,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSatelliteBlocklist](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports satellite blocklists,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSatellitePvt](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports satellite PVT,`false`otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasScheduling](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasScheduling())`()` Returns`true`if GNSS chipset supports scheduling,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSingleShotFix](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasSingleShotFix())`()` Returns`true`if GNSS chipset supports single shot locating,`false`otherwise. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hashCode())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasScheduling](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports scheduling,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSingleShotFix](../android/location/GnssCapabilities.md))`()` Returns`true`if GNSS chipset supports single shot locating,`false`otherwise. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/location/GnssCapabilities.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`parcel:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/location/GnssCapabilities.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/location/GnssCapabilities.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [GnssCapabilities](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssCapabilities](../android/location/GnssCapabilities.md)!\> | [CREATOR](../android/location/GnssCapabilities.md) <br /> |
 
 ## Constants
 
@@ -133,7 +133,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -159,11 +159,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getGnssSignalTypes(): MutableList<GnssSignalType!>
 ```
 
-Returns the list of [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType) s that the GNSS chipset supports.
+Returns the list of [GnssSignalType](../android/location/GnssSignalType.md) s that the GNSS chipset supports.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GnssSignalType](https://developer.android.com/reference/kotlin/android/location/GnssSignalType)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GnssSignalType](../android/location/GnssSignalType.md)!> | This value cannot be`null`. |
 
 ### hasAccumulatedDeltaRange
 
@@ -173,13 +173,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun hasAccumulatedDeltaRange(): Int
 ```
 
-Returns [CAPABILITY_SUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_SUPPORTED:kotlin.Int) if GNSS chipset supports accumulated delta range, [CAPABILITY_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNSUPPORTED:kotlin.Int) if GNSS chipset does not support accumulated delta range, and [CAPABILITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNKNOWN:kotlin.Int) if it is unknown, which means GNSS chipset may or may not support accumulated delta range.
+Returns [CAPABILITY_SUPPORTED](../android/location/GnssCapabilities.md) if GNSS chipset supports accumulated delta range, [CAPABILITY_UNSUPPORTED](../android/location/GnssCapabilities.md) if GNSS chipset does not support accumulated delta range, and [CAPABILITY_UNKNOWN](../android/location/GnssCapabilities.md) if it is unknown, which means GNSS chipset may or may not support accumulated delta range.
 
-The accumulated delta range information can be queried in [android.location.GnssMeasurement#getAccumulatedDeltaRangeState()](https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()), [android.location.GnssMeasurement#getAccumulatedDeltaRangeMeters()](https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()), and [android.location.GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()](https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()).
+The accumulated delta range information can be queried in [android.location.GnssMeasurement#getAccumulatedDeltaRangeState()](../android/location/GnssMeasurement.md)), [android.location.GnssMeasurement#getAccumulatedDeltaRangeMeters()](../android/location/GnssMeasurement.md)), and [android.location.GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()](../android/location/GnssMeasurement.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.location.GnssCapabilities#CAPABILITY_UNKNOWN](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNKNOWN:kotlin.Int), [android.location.GnssCapabilities#CAPABILITY_SUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_SUPPORTED:kotlin.Int), and [android.location.GnssCapabilities#CAPABILITY_UNSUPPORTED](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#CAPABILITY_UNSUPPORTED:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.location.GnssCapabilities#CAPABILITY_UNKNOWN](../android/location/GnssCapabilities.md), [android.location.GnssCapabilities#CAPABILITY_SUPPORTED](../android/location/GnssCapabilities.md), and [android.location.GnssCapabilities#CAPABILITY_UNSUPPORTED](../android/location/GnssCapabilities.md) |
 
 ### hasAntennaInfo
 
@@ -192,7 +192,7 @@ fun hasAntennaInfo(): Boolean
 Returns`true`if GNSS chipset supports antenna info,`false`otherwise. 
 **See Also**
 
-- [android.location.LocationManager#registerAntennaInfoListener(Executor, GnssAntennaInfo.Listener)](https://developer.android.com/reference/kotlin/android/location/LocationManager#registerAntennaInfoListener(java.util.concurrent.Executor,%20android.location.GnssAntennaInfo.Listener)) 
+- [android.location.LocationManager#registerAntennaInfoListener(Executor, GnssAntennaInfo.Listener)](../android/location/LocationManager.md)) 
 
 ### hasGeofencing
 
@@ -213,7 +213,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 fun hasGnssAntennaInfo(): Boolean
 ```
 
-**Deprecated:** *Use [hasAntennaInfo()](https://developer.android.com/reference/kotlin/android/location/GnssCapabilities#hasAntennaInfo())instead.*
+**Deprecated:** *Use [hasAntennaInfo()](../android/location/GnssCapabilities.md))instead.*
 
 Returns`true`if GNSS chipset supports antenna info,`false`otherwise. 
 
@@ -300,7 +300,7 @@ fun hasMeasurements(): Boolean
 Returns`true`if GNSS chipset supports measurements,`false`otherwise. 
 **See Also**
 
-- [android.location.LocationManager#registerGnssMeasurementsCallback(Executor, GnssMeasurementsEvent.Callback)](https://developer.android.com/reference/kotlin/android/location/LocationManager#registerGnssMeasurementsCallback(java.util.concurrent.Executor,%20android.location.GnssMeasurementsEvent.Callback)) 
+- [android.location.LocationManager#registerGnssMeasurementsCallback(Executor, GnssMeasurementsEvent.Callback)](../android/location/LocationManager.md)) 
 
 ### hasMsa
 
@@ -333,7 +333,7 @@ fun hasNavigationMessages(): Boolean
 Returns`true`if GNSS chipset supports navigation messages,`false`otherwise. 
 **See Also**
 
-- [android.location.LocationManager#registerGnssNavigationMessageCallback(Executor, GnssNavigationMessage.Callback)](https://developer.android.com/reference/kotlin/android/location/LocationManager#registerGnssNavigationMessageCallback(java.util.concurrent.Executor,%20android.location.GnssNavigationMessage.Callback)) 
+- [android.location.LocationManager#registerGnssNavigationMessageCallback(Executor, GnssNavigationMessage.Callback)](../android/location/LocationManager.md)) 
 
 ### hasOnDemandTime
 
@@ -487,8 +487,8 @@ Flatten this object in to a Parcel.
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
-| `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `parcel` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
 | --- | --- |
 
 ## Properties

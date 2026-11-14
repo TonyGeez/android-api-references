@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ContentUris
 
-Kotlin| [Java](https://developer.android.com/reference/android/content/ContentUris "View this page in Java") 
+Kotlin| [Java](../android/content/ContentUris.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ open class ContentUris
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.ContentUris](https://developer.android.com/reference/kotlin/android/content/ContentUris#) |
+| ↳ | [android.content.ContentUris](../android/content/ContentUris.md) |
 
-Utility methods useful for working with [android.net.Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) objects that use the "content" (content://) scheme.
+Utility methods useful for working with [android.net.Uri](../android/net/Uri.md) objects that use the "content" (content://) scheme.
 
 Content URIs have the syntax
 
 `content://`*authority* `/`*path* `/`*id*
 
 `content:`
-: The scheme portion of the URI. This is always set to [ContentResolver.SCHEME_CONTENT](https://developer.android.com/reference/kotlin/android/content/ContentResolver#SCHEME_CONTENT:kotlin.String)(value`content://`).
+: The scheme portion of the URI. This is always set to [ContentResolver.SCHEME_CONTENT](../android/content/ContentResolver.md)(value`content://`).
 
 *authority*
 : A string that identifies the entire content provider. All the content URIs for the provider start with this string. To guarantee a unique authority, providers should consider using an authority that is the same as the provider class' package identifier.
@@ -37,15 +37,15 @@ Content URIs have the syntax
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------|---|
-| [ContentUris](https://developer.android.com/reference/kotlin/android/content/ContentUris#ContentUris())`()` <br /> |
+| [ContentUris](../android/content/ContentUris.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder.html#) | [appendId](https://developer.android.com/reference/kotlin/android/content/ContentUris#appendId(android.net.Uri.Builder,%20kotlin.Long))`(`builder:` ` [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder.html#)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends the given ID to the end of the path. |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseId](https://developer.android.com/reference/kotlin/android/content/ContentUris#parseId(android.net.Uri))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Converts the last path segment to a long. |
-| openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [removeId](https://developer.android.com/reference/kotlin/android/content/ContentUris#removeId(android.net.Uri))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`)` Removes any ID from the end of the path. |
+| openstatic [Uri.Builder](../android/net/Uri.Builder.md) | [appendId](../android/content/ContentUris.md))`(`builder:` ` [Uri.Builder](../android/net/Uri.Builder.md)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends the given ID to the end of the path. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parseId](../android/content/ContentUris.md))`(`contentUri:` ` [Uri](../android/net/Uri.md)`)` Converts the last path segment to a long. |
+| openstatic [Uri](../android/net/Uri.md) | [removeId](../android/content/ContentUris.md))`(`contentUri:` ` [Uri](../android/net/Uri.md)`)` Removes any ID from the end of the path. |
 | --- | --- |
-| openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | [withAppendedId](https://developer.android.com/reference/kotlin/android/content/ContentUris#withAppendedId(android.net.Uri,%20kotlin.Long))`(`contentUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends the given ID to the end of the path. |
+| openstatic [Uri](../android/net/Uri.md) | [withAppendedId](../android/content/ContentUris.md))`(`contentUri:` ` [Uri](../android/net/Uri.md)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Appends the given ID to the end of the path. |
 
 ## Public constructors
 
@@ -72,12 +72,12 @@ Appends the given ID to the end of the path.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `builder` | [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder.html#):to append the ID to This value cannot be`null`. |
+| `builder` | [Uri.Builder](../android/net/Uri.Builder.md):to append the ID to This value cannot be`null`. |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):to append |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder.html#) | the given builder This value cannot be`null`. |
+| [Uri.Builder](../android/net/Uri.Builder.md) | the given builder This value cannot be`null`. |
 
 ### parseId
 
@@ -93,7 +93,7 @@ This supports a common convention for content URIs where an ID is stored in the 
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------|
-| `contentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):This value cannot be`null`. |
+| `contentUri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -116,11 +116,11 @@ Removes any ID from the end of the path.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------|
-| `contentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):that ends with an ID This value cannot be`null`. |
+| `contentUri` | [Uri](../android/net/Uri.md):that ends with an ID This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | a new URI with the ID removed from the end of the path This value cannot be`null`. |
+| [Uri](../android/net/Uri.md) | a new URI with the ID removed from the end of the path This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------|
@@ -141,9 +141,9 @@ Appends the given ID to the end of the path.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------|
-| `contentUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#):to start with This value cannot be`null`. |
+| `contentUri` | [Uri](../android/net/Uri.md):to start with This value cannot be`null`. |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):to append |
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#) | a new URI with the given ID appended to the end of the path This value cannot be`null`. |
+| [Uri](../android/net/Uri.md) | a new URI with the given ID appended to the end of the path This value cannot be`null`. |

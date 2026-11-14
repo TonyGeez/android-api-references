@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CursorTreeAdapter
 
-Kotlin | [Java](https://developer.android.com/reference/android/widget/CursorTreeAdapter "View this page in Java")
+Kotlin | [Java](../android/widget/CursorTreeAdapter.md)
 | --- | --- |
 
 ```
@@ -11,13 +11,13 @@ abstract class CursorTreeAdapter : BaseExpandableListAdapter, Filterable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.widget.BaseExpandableListAdapter](https://developer.android.com/reference/kotlin/android/widget/BaseExpandableListAdapter) ||
-| | ↳ | [android.widget.CursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#) |
+| ↳ | [android.widget.BaseExpandableListAdapter](../android/widget/BaseExpandableListAdapter.md) ||
+| | ↳ | [android.widget.CursorTreeAdapter](../android/widget/CursorTreeAdapter.md) |
 
-| Known Direct Subclasses [ResourceCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorTreeAdapter) |---|---| | [ResourceCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/ResourceCursorTreeAdapter) | A fairly simple ExpandableListAdapter that creates views defined in an XML file. | |
+| Known Direct Subclasses [ResourceCursorTreeAdapter](../android/widget/ResourceCursorTreeAdapter.md) |---|---| | [ResourceCursorTreeAdapter](../android/widget/ResourceCursorTreeAdapter.md) | A fairly simple ExpandableListAdapter that creates views defined in an XML file. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [SimpleCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorTreeAdapter) |---|---| | [SimpleCursorTreeAdapter](https://developer.android.com/reference/kotlin/android/widget/SimpleCursorTreeAdapter) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | |
+| Known Indirect Subclasses [SimpleCursorTreeAdapter](../android/widget/SimpleCursorTreeAdapter.md) |---|---| | [SimpleCursorTreeAdapter](../android/widget/SimpleCursorTreeAdapter.md) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An adapter that exposes data from a series of `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`s to an `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView` widget. The top-level `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` (that is given in the constructor) exposes the groups, while subsequent `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`s returned from `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChildrenCursor(android.database.Cursor)` expose children within a particular group. The Cursors must include a column named "_id" or this class will not work.
@@ -33,21 +33,21 @@ An adapter that exposes data from a series of `https://developer.android.com/ref
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#changeCursor(android.database.Cursor)(cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!)` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#convertToString(android.database.Cursor)(cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!)` <br /> |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChild(kotlin.Int,%20kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the data associated with the given child within the given group. |
+| open [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChild(kotlin.Int,%20kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the data associated with the given child within the given group. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChildId(kotlin.Int,%20kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the ID for the given child within the given group. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChildView(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isLastChild: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, convertView: https://developer.android.com/reference/kotlin/android/view/View.html#!, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Gets a View that displays the data for the given child within the given group. |
+| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChildView(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isLastChild: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, convertView: https://developer.android.com/reference/kotlin/android/view/View.html#!, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Gets a View that displays the data for the given child within the given group. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChildrenCount(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the number of children in a specified group. |
 | --- | --- |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getCursor()()` <br /> |
-| open [Filter](https://developer.android.com/reference/kotlin/android/widget/Filter)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getFilter()()` Returns a filter that can be used to constrain data with a filtering pattern. |
-| open [FilterQueryProvider](https://developer.android.com/reference/kotlin/android/widget/FilterQueryProvider)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getFilterQueryProvider()()` <br /> |
+| open [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getCursor()()` <br /> |
+| open [Filter](../android/widget/Filter.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getFilter()()` Returns a filter that can be used to constrain data with a filtering pattern. |
+| open [FilterQueryProvider](../android/widget/FilterQueryProvider.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getFilterQueryProvider()()` <br /> |
 | --- | --- |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getGroup(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the data associated with the given group. |
+| open [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getGroup(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the data associated with the given group. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getGroupCount()()` Gets the number of groups. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getGroupId(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the ID for the group at the given position. |
 | --- | --- |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getGroupView(kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isExpanded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, convertView: https://developer.android.com/reference/kotlin/android/view/View.html#!, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Gets a View that displays the given group. |
+| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getGroupView(kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isExpanded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, convertView: https://developer.android.com/reference/kotlin/android/view/View.html#!, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Gets a View that displays the given group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#hasStableIds()()` Indicates whether the child and group IDs are stable across changes to the underlying data. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#isChildSelectable(kotlin.Int,%20kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Whether the child at the specified position is selectable. |
 | --- | --- |
@@ -56,7 +56,7 @@ An adapter that exposes data from a series of `https://developer.android.com/ref
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#notifyDataSetInvalidated()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#onGroupCollapsed(kotlin.Int)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when a group is collapsed. |
-| open [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#runQueryOnBackgroundThread(kotlin.CharSequence)(constraint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
+| open [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#runQueryOnBackgroundThread(kotlin.CharSequence)(constraint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#setChildrenCursor(kotlin.Int,%20android.database.Cursor)(groupPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, childrenCursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!)` Sets the children Cursor for a particular group. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#setFilterQueryProvider(android.widget.FilterQueryProvider)(filterQueryProvider: https://developer.android.com/reference/kotlin/android/widget/FilterQueryProvider!)` <br /> |
@@ -66,10 +66,10 @@ An adapter that exposes data from a series of `https://developer.android.com/ref
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#bindChildView(android.view.View,%20android.content.Context,%20android.database.Cursor,%20kotlin.Boolean)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!, isLastChild: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Bind an existing view to the child data pointed to by cursor |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#bindGroupView(android.view.View,%20android.content.Context,%20android.database.Cursor,%20kotlin.Boolean)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!, isExpanded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Bind an existing view to the group data pointed to by cursor. |
-| abstract [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChildrenCursor(android.database.Cursor)(groupCursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!)` Gets the Cursor for the children at the given group. |
+| abstract [Cursor](../android/database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#getChildrenCursor(android.database.Cursor)(groupCursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!)` Gets the Cursor for the children at the given group. |
 | --- | --- |
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#newChildView(android.content.Context,%20android.database.Cursor,%20kotlin.Boolean,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!, isLastChild: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Makes a new child view to hold the data pointed to by cursor. |
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#newGroupView(android.content.Context,%20android.database.Cursor,%20kotlin.Boolean,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!, isExpanded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Makes a new group view to hold the group data pointed to by cursor. |
+| abstract [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#newChildView(android.content.Context,%20android.database.Cursor,%20kotlin.Boolean,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!, isLastChild: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Makes a new child view to hold the data pointed to by cursor. |
+| abstract [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/CursorTreeAdapter#newGroupView(android.content.Context,%20android.database.Cursor,%20kotlin.Boolean,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, cursor: https://developer.android.com/reference/kotlin/android/database/Cursor.html#!, isExpanded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, parent: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Makes a new group view to hold the group data pointed to by cursor. |
 
 | Inherited functions ||
 |---|---|
@@ -92,7 +92,7 @@ Constructor. The adapter will call `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data for the groups. |
+| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor from which to get the data for the groups. |
 
 ### CursorTreeAdapter
 
@@ -109,8 +109,8 @@ Constructor.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data for the groups. |
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: The context |
+| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor from which to get the data for the groups. |
+| `context` | [Context](../android/content/Context.md)!: The context |
 | `autoRequery` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true the adapter will call `https://developer.android.com/reference/kotlin/android/database/Cursor.html#requery()` on the cursor whenever it changes so the most recent data is always displayed. |
 | --- | --- |
 
@@ -204,8 +204,8 @@ Gets a View that displays the data for the given child within the given group.
 | `childPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position of the child (for which the View is returned) within the group |
 | `isLastChild` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the child is the last child within the group |
 | --- | --- |
-| `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by `https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChildView(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)`. |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: the parent that this view will eventually be attached to |
+| `convertView` | [View](../android/view/View.md)!: the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by `https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getChildView(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)`. |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!: the parent that this view will eventually be attached to |
 
 | Return ||
 |---|---|
@@ -336,9 +336,9 @@ Gets a View that displays the given group. This View is only for the group--the 
 |---|---|
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position of the group for which the View is returned |
 | `isExpanded` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the group is expanded or collapsed |
-| `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by `https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getGroupView(kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)`. |
+| `convertView` | [View](../android/view/View.md)!: the old view to reuse, if possible. You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. It is not guaranteed that the convertView will have been previously created by `https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter#getGroupView(kotlin.Int,%20kotlin.Boolean,%20android.view.View,%20android.view.ViewGroup)`. |
 | --- | --- |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: the parent that this view will eventually be attached to |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!: the parent that this view will eventually be attached to |
 
 | Return ||
 |---|---|
@@ -453,7 +453,7 @@ This is useful when asynchronously querying to prevent blocking the UI.
 | Parameters ||
 |---|---|
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The group whose children are being set via this Cursor. |
-| `childrenCursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The Cursor that contains the children of the group. |
+| `childrenCursor` | [Cursor](../android/database/Cursor.md)!: The Cursor that contains the children of the group. |
 
 ### setFilterQueryProvider
 
@@ -478,7 +478,7 @@ Sets the group Cursor.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The Cursor to set for the group. If there is an existing cursor it will be closed. |
+| `cursor` | [Cursor](../android/database/Cursor.md)!: The Cursor to set for the group. If there is an existing cursor it will be closed. |
 
 ## Protected methods
 
@@ -499,9 +499,9 @@ Bind an existing view to the child data pointed to by cursor
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: Existing view, returned earlier by newChildView |
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Interface to application's global information |
-| `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
+| `view` | [View](../android/view/View.md)!: Existing view, returned earlier by newChildView |
+| `context` | [Context](../android/content/Context.md)!: Interface to application's global information |
+| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
 | --- | --- |
 | `isLastChild` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the child is the last child within its group. |
 
@@ -522,9 +522,9 @@ Bind an existing view to the group data pointed to by cursor.
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: Existing view, returned earlier by newGroupView. |
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Interface to application's global information |
-| `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
+| `view` | [View](../android/view/View.md)!: Existing view, returned earlier by newGroupView. |
+| `context` | [Context](../android/content/Context.md)!: Interface to application's global information |
+| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
 | --- | --- |
 | `isExpanded` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the group is expanded. |
 
@@ -544,7 +544,7 @@ It is your responsibility to manage this Cursor through the Activity lifecycle. 
 
 | Parameters ||
 |---|---|
-| `groupCursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor pointing to the group whose children cursor should be returned |
+| `groupCursor` | [Cursor](../android/database/Cursor.md)!: The cursor pointing to the group whose children cursor should be returned |
 
 | Return ||
 |---|---|
@@ -567,11 +567,11 @@ Makes a new child view to hold the data pointed to by cursor.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Interface to application's global information |
-| `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
+| `context` | [Context](../android/content/Context.md)!: Interface to application's global information |
+| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor from which to get the data. The cursor is already moved to the correct position. |
 | `isLastChild` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the child is the last child within its group. |
 | --- | --- |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The parent to which the new view is attached to |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!: The parent to which the new view is attached to |
 
 | Return ||
 |---|---|
@@ -594,11 +594,11 @@ Makes a new group view to hold the group data pointed to by cursor.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: Interface to application's global information |
-| `cursor` | [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#)!: The group cursor from which to get the data. The cursor is already moved to the correct position. |
+| `context` | [Context](../android/content/Context.md)!: Interface to application's global information |
+| `cursor` | [Cursor](../android/database/Cursor.md)!: The group cursor from which to get the data. The cursor is already moved to the correct position. |
 | `isExpanded` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the group is expanded. |
 | --- | --- |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!: The parent to which the new view is attached to |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!: The parent to which the new view is attached to |
 
 | Return ||
 |---|---|

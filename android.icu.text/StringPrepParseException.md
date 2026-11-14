@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # StringPrepParseException
 
-Kotlin | [Java](https://developer.android.com/reference/android/icu/text/StringPrepParseException "View this page in Java")
+Kotlin | [Java](../android/icu/text/StringPrepParseException.md)
 | --- | --- |
 
 ```
@@ -12,10 +12,10 @@ open class StringPrepParseException : ParseException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.text.ParseException](https://developer.android.com/reference/kotlin/java/text/ParseException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.text.ParseException](../java/text/ParseException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.icu.text.StringPrepParseException](https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#) |
+| | | | ↳ | [android.icu.text.StringPrepParseException](../android/icu/text/StringPrepParseException.md) |
 
 Exception that signals an error has occurred while parsing the input to StringPrep or IDNA.
 

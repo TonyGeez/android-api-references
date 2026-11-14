@@ -4,16 +4,16 @@
 
 ## Interfaces
 
-| [MatchResult](https://developer.android.com/reference/kotlin/java/util/regex/MatchResult) | The result of a match operation. |
+| [MatchResult](../java/util/regex/MatchResult.md) | The result of a match operation. |
 | --- | --- |
 
 ## Classes
 
-| [Matcher](https://developer.android.com/reference/kotlin/java/util/regex/Matcher) | An engine that performs match operations on a by interpreting a [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern). |
+| [Matcher](../java/util/regex/Matcher.md) | An engine that performs match operations on a by interpreting a [Pattern](../java/util/regex/Pattern.md). |
 | --- | --- |
-| [Pattern](https://developer.android.com/reference/kotlin/java/util/regex/Pattern) | A compiled representation of a regular expression. |
+| [Pattern](../java/util/regex/Pattern.md) | A compiled representation of a regular expression. |
 
 ## Exceptions
 
-| [PatternSyntaxException](https://developer.android.com/reference/kotlin/java/util/regex/PatternSyntaxException) | Unchecked exception thrown to indicate a syntax error in a regular-expression pattern. |
+| [PatternSyntaxException](../java/util/regex/PatternSyntaxException.md) | Unchecked exception thrown to indicate a syntax error in a regular-expression pattern. |
 | --- | --- |

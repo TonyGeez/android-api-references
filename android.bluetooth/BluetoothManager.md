@@ -2,7 +2,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothManager
 
-Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/BluetoothManager "View this page in Java")
+Kotlin | [Java](../android/bluetooth/BluetoothManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class BluetoothManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothManager](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#) |
+| ↳ | [android.bluetooth.BluetoothManager](../android/bluetooth/BluetoothManager.md) |
 
 High level manager used to obtain an instance of an `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter` and to conduct overall Bluetooth Management.
 
@@ -27,12 +27,12 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| [BluetoothAdapter](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getAdapter()()` Get the BluetoothAdapter for this device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getConnectedDevices(kotlin.Int)(profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get connected devices for the specified profile. |
+| [BluetoothAdapter](../android/bluetooth/BluetoothAdapter.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getAdapter()()` Get the BluetoothAdapter for this device. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getConnectedDevices(kotlin.Int)(profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get connected devices for the specified profile. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getConnectionState(android.bluetooth.BluetoothDevice,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the current connection state of the profile to the remote device. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getDevicesMatchingConnectionStates(kotlin.Int,%20kotlin.IntArray)(profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Get a list of devices that match any of the given connection states. |
-| [BluetoothGattServer](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#openGattServer(android.content.Context,%20android.bluetooth.BluetoothGattServerCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback!)` Open a GATT Server The callback is used to deliver results to Caller, such as connection status as well as the results of any other GATT server operations. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getDevicesMatchingConnectionStates(kotlin.Int,%20kotlin.IntArray)(profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Get a list of devices that match any of the given connection states. |
+| [BluetoothGattServer](../android/bluetooth/BluetoothGattServer.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#openGattServer(android.content.Context,%20android.bluetooth.BluetoothGattServerCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback!)` Open a GATT Server The callback is used to deliver results to Caller, such as connection status as well as the results of any other GATT server operations. |
 
 ## Public methods
 
@@ -95,7 +95,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)!: Remote bluetooth device. |
+| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Remote bluetooth device. |
 | `profile` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): GATT or GATT_SERVER |
 
 | Return ||
@@ -148,8 +148,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: App context |
-| `callback` | [BluetoothGattServerCallback](https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback)!: GATT server callback handler that will receive asynchronous callbacks. |
+| `context` | [Context](../android/content/Context.md)!: App context |
+| `callback` | [BluetoothGattServerCallback](../android/bluetooth/BluetoothGattServerCallback.md)!: GATT server callback handler that will receive asynchronous callbacks. |
 
 | Return ||
 |---|---|

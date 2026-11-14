@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # NfcB
 
-Kotlin| [Java](https://developer.android.com/reference/android/nfc/tech/NfcB "View this page in Java") 
+Kotlin| [Java](../android/nfc/tech/NfcB.md) 
 | --- | --- |
 
 ```
@@ -13,31 +13,31 @@ class NfcB : TagTechnology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.tech.NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#) |
+| ↳ | [android.nfc.tech.NfcB](../android/nfc/tech/NfcB.md) |
 
-Provides access to NFC-B (ISO 14443-3B) properties and I/O operations on a [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#).
+Provides access to NFC-B (ISO 14443-3B) properties and I/O operations on a [Tag](../android/nfc/Tag.md).
 
-Acquire a [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#) object using [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#get(android.nfc.Tag)).
+Acquire a [NfcB](../android/nfc/tech/NfcB.md) object using [get](../android/nfc/tech/NfcB.md)).
 
-The primary NFC-B I/O operation is [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#transceive(kotlin.ByteArray)). Applications must implement their own protocol stack on top of [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#transceive(kotlin.ByteArray)).
+The primary NFC-B I/O operation is [transceive](../android/nfc/tech/NfcB.md)). Applications must implement their own protocol stack on top of [transceive](../android/nfc/tech/NfcB.md)).
 
-**Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+**Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#close())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#connect())`()` <br /> |
-| static [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#)! | [get](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#get(android.nfc.Tag))`(`tag:` ` [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!`)` Get an instance of [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#) for the given tag. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/nfc/tech/NfcB.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/nfc/tech/NfcB.md))`()` <br /> |
+| static [NfcB](../android/nfc/tech/NfcB.md)! | [get](../android/nfc/tech/NfcB.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` Get an instance of [NfcB](../android/nfc/tech/NfcB.md) for the given tag. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getApplicationData](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#getApplicationData())`()` Return the Application Data bytes from ATQB/SENSB_RES at tag discovery. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#getMaxTransceiveLength())`()` Return the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#transceive(kotlin.ByteArray)). |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getProtocolInfo](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#getProtocolInfo())`()` Return the Protocol Info bytes from ATQB/SENSB_RES at tag discovery. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getApplicationData](../android/nfc/tech/NfcB.md))`()` Return the Application Data bytes from ATQB/SENSB_RES at tag discovery. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](../android/nfc/tech/NfcB.md))`()` Return the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcB.md)). |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getProtocolInfo](../android/nfc/tech/NfcB.md))`()` Return the Protocol Info bytes from ATQB/SENSB_RES at tag discovery. |
 | --- | --- |
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | [getTag](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#getTag())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#isConnected())`()` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#transceive(kotlin.ByteArray))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NFC-B commands to the tag and receive the response. |
+| [Tag](../android/nfc/Tag.md)! | [getTag](../android/nfc/tech/NfcB.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/nfc/tech/NfcB.md))`()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](../android/nfc/tech/NfcB.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NFC-B commands to the tag and receive the response. |
 | --- | --- |
 
 ## Public methods
@@ -80,19 +80,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static fun get(tag: Tag!): NfcB!
 ```
 
-Get an instance of [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#) for the given tag.
+Get an instance of [NfcB](../android/nfc/tech/NfcB.md) for the given tag.
 
-Returns null if [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#) was not enumerated in [Tag.getTechList](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#getTechList()). This indicates the tag does not support NFC-B.
+Returns null if [NfcB](../android/nfc/tech/NfcB.md) was not enumerated in [Tag.getTechList](../android/nfc/Tag.md)). This indicates the tag does not support NFC-B.
 
 Does not cause any RF activity and does not block.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------|
-| `tag` | [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)!:an NFC-B compatible tag |
+| `tag` | [Tag](../android/nfc/Tag.md)!:an NFC-B compatible tag |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------|
-| [NfcB](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#)! | NFC-B object |
+| [NfcB](../android/nfc/tech/NfcB.md)! | NFC-B object |
 
 ### getApplicationData
 
@@ -118,11 +118,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun getMaxTransceiveLength(): Int
 ```
 
-Return the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#transceive(kotlin.ByteArray)).
+Return the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcB.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#transceive(kotlin.ByteArray)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcB.md)). |
 
 ### getProtocolInfo
 
@@ -150,7 +150,7 @@ fun getTag(): Tag!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#)! | the [Tag](https://developer.android.com/reference/kotlin/android/nfc/Tag.html#) backing this [TagTechnology](https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology) object. |
+| [Tag](../android/nfc/Tag.md)! | the [Tag](../android/nfc/Tag.md) backing this [TagTechnology](../android/nfc/tech/TagTechnology.md) object. |
 
 ### isConnected
 
@@ -178,11 +178,11 @@ Applications must not append the EoD (CRC) to the payload, it will be automatica
 
 Applications must not send commands that manage the polling loop and initialization (SENSB_REQ, SLOT_MARKER etc).
 
-Use [getMaxTransceiveLength](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#getMaxTransceiveLength())to retrieve the maximum number of bytes that can be sent with [transceive](https://developer.android.com/reference/kotlin/android/nfc/tech/NfcB#transceive(kotlin.ByteArray)).
+Use [getMaxTransceiveLength](../android/nfc/tech/NfcB.md))to retrieve the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcB.md)).
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
 
-Requires the [android.Manifest.permission#NFC](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String) permission.
+Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------|

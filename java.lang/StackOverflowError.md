@@ -11,10 +11,10 @@ open class StackOverflowError : VirtualMachineError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
-| | | ↳ | [java.lang.VirtualMachineError](https://developer.android.com/reference/kotlin/java/lang/VirtualMachineError) ||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
+| | | ↳ | [java.lang.VirtualMachineError](../java/lang/VirtualMachineError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.StackOverflowError](https://developer.android.com/reference/kotlin/java/lang/StackOverflowError#) |
+| | | | ↳ | [java.lang.StackOverflowError](../java/lang/StackOverflowError.md) |
 
 Thrown when a stack overflow occurs because an application recurses too deeply.
 
@@ -22,8 +22,8 @@ Thrown when a stack overflow occurs because an application recurses too deeply.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StackOverflowError](https://developer.android.com/reference/kotlin/java/lang/StackOverflowError#StackOverflowError())`()` Constructs a`StackOverflowError`with no detail message. |
-| [StackOverflowError](https://developer.android.com/reference/kotlin/java/lang/StackOverflowError#StackOverflowError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`StackOverflowError`with the specified detail message. |
+| [StackOverflowError](../java/lang/StackOverflowError.md))`()` Constructs a`StackOverflowError`with no detail message. |
+| [StackOverflowError](../java/lang/StackOverflowError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`StackOverflowError`with the specified detail message. |
 
 ## Public constructors
 

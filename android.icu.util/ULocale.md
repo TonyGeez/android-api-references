@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # ULocale
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/util/ULocale "View this page in Java") 
+Kotlin| [Java](../android/icu/util/ULocale.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class ULocale : Comparable<ULocale!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#) |
+| ↳ | [android.icu.util.ULocale](../android/icu/util/ULocale.md) |
 
-**\[icu enhancement\]** ICU's replacement for [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]** '. A class analogous to [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) that provides additional support for ICU protocol. In ICU 3.0 this class is enhanced to support RFC 3066 language identifiers.
+**\[icu enhancement\]** ICU's replacement for [java.util.Locale](../java/util/Locale.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]** '. A class analogous to [java.util.Locale](../java/util/Locale.md) that provides additional support for ICU protocol. In ICU 3.0 this class is enhanced to support RFC 3066 language identifiers.
 
 Many classes and services in ICU follow a factory idiom, in which a factory method or object responds to a client request with an object. The request includes a locale (the*requested* locale), and the returned object is constructed using data for that locale. The system may lack data for the requested locale, in which case the locale fallback mechanism will be invoked until a populated locale is found (the*valid* locale). Furthermore, even when a populated locale is found (the*valid* locale), further fallback may be required to reach a locale containing the specific data required by the service (the*actual*locale).
 
@@ -43,182 +43,182 @@ Note: The*actual* locale is returned correctly, but the*valid*locale is not, in 
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [AvailableType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.AvailableType) Types for [ULocale.getAvailableLocalesByType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getAvailableLocalesByType(android.icu.util.ULocale.AvailableType)) |
-| | [Builder](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Builder) `Builder`is used to build instances of`ULocale`from values configured by the setters. |
-| | [Category](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) Enum for locale categories. |
+| | [AvailableType](../android/icu/util/ULocale.AvailableType.md) Types for [ULocale.getAvailableLocalesByType](../android/icu/util/ULocale.md)) |
+| | [Builder](../android/icu/util/ULocale.Builder.md) `Builder`is used to build instances of`ULocale`from values configured by the setters. |
+| | [Category](../android/icu/util/ULocale.Category.md) Enum for locale categories. |
 | --- | --- |
 
 | Constants ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [PRIVATE_USE_EXTENSION](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#PRIVATE_USE_EXTENSION:kotlin.Char) The key for the private use locale extension ('x'). |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [UNICODE_LOCALE_EXTENSION](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#UNICODE_LOCALE_EXTENSION:kotlin.Char) The key for Unicode locale extension ('u'). |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [PRIVATE_USE_EXTENSION](../android/icu/util/ULocale.md) The key for the private use locale extension ('x'). |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [UNICODE_LOCALE_EXTENSION](../android/icu/util/ULocale.md) The key for Unicode locale extension ('u'). |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ULocale(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Constructs a ULocale from a RFC 3066 locale ID. |
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ULocale(kotlin.String,%20kotlin.String))`(`a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience overload of ULocale(String, String, String) for compatibility with java. |
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ULocale(kotlin.String,%20kotlin.String,%20kotlin.String))`(`a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `c:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ULocale from a localeID constructed from the three 'fields' a, b, and c. |
+| [ULocale](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Constructs a ULocale from a RFC 3066 locale ID. |
+| [ULocale](../android/icu/util/ULocale.md))`(`a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience overload of ULocale(String, String, String) for compatibility with java. |
+| [ULocale](../android/icu/util/ULocale.md))`(`a:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `b:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `c:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ULocale from a localeID constructed from the three 'fields' a, b, and c. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [acceptLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#acceptLanguage(kotlin.Array,%20kotlin.Array,%20kotlin.BooleanArray))`(`acceptLanguageList:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!>!`, `availableLocales:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!>!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on a list of acceptable locales, determine an available locale for the user. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [acceptLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#acceptLanguage(kotlin.Array,%20kotlin.BooleanArray))`(`acceptLanguageList:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!>!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on an ordered array of acceptable locales, determine an available locale for the user. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [acceptLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#acceptLanguage(kotlin.String,%20kotlin.Array,%20kotlin.BooleanArray))`(`acceptLanguageList:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `availableLocales:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!>!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on a HTTP formatted list of acceptable locales, determine an available locale for the user. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [acceptLanguage](../android/icu/util/ULocale.md))`(`acceptLanguageList:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](../android/icu/util/ULocale.md)!>!`, `availableLocales:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](../android/icu/util/ULocale.md)!>!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on a list of acceptable locales, determine an available locale for the user. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [acceptLanguage](../android/icu/util/ULocale.md))`(`acceptLanguageList:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](../android/icu/util/ULocale.md)!>!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on an ordered array of acceptable locales, determine an available locale for the user. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [acceptLanguage](../android/icu/util/ULocale.md))`(`acceptLanguageList:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `availableLocales:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](../android/icu/util/ULocale.md)!>!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on a HTTP formatted list of acceptable locales, determine an available locale for the user. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [acceptLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#acceptLanguage(kotlin.String,%20kotlin.BooleanArray))`(`acceptLanguageList:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on a HTTP formatted list of acceptable locales, determine an available locale for the user. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [addLikelySubtags](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#addLikelySubtags(android.icu.util.ULocale))`(`loc:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Adds the likely subtags for a provided locale ID, per the algorithm described in the following CLDR technical report: http://www. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [canonicalize](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#canonicalize(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the canonical name according to CLDR for the specified locale ID. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [acceptLanguage](../android/icu/util/ULocale.md))`(`acceptLanguageList:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fallback:` ` [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!`)` **\[icu\]**Based on a HTTP formatted list of acceptable locales, determine an available locale for the user. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [addLikelySubtags](../android/icu/util/ULocale.md))`(`loc:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Adds the likely subtags for a provided locale ID, per the algorithm described in the following CLDR technical report: http://www. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [canonicalize](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the canonical name according to CLDR for the specified locale ID. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#clone())`()` This is for compatibility with Locale-- in actuality, since ULocale is immutable, there is no reason to clone it, so this API returns 'this'. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#compareTo(android.icu.util.ULocale))`(`other:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` Compares two ULocale for ordering. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [createCanonical](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#createCanonical(android.icu.util.ULocale))`(`locale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` Creates a ULocale from the locale by first canonicalizing the locale according to CLDR. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../android/icu/util/ULocale.md))`()` This is for compatibility with Locale-- in actuality, since ULocale is immutable, there is no reason to clone it, so this API returns 'this'. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/icu/util/ULocale.md))`(`other:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Compares two ULocale for ordering. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [createCanonical](../android/icu/util/ULocale.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Creates a ULocale from the locale by first canonicalizing the locale according to CLDR. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [createCanonical](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#createCanonical(kotlin.String))`(`nonCanonicalID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Creates a ULocale from the id by first canonicalizing the id according to CLDR. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the other object is another ULocale with the same full name. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [forLanguageTag](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#forLanguageTag(kotlin.String))`(`languageTag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a locale for the specified IETF BCP 47 language tag string. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [createCanonical](../android/icu/util/ULocale.md))`(`nonCanonicalID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Creates a ULocale from the id by first canonicalizing the id according to CLDR. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/util/ULocale.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the other object is another ULocale with the same full name. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [forLanguageTag](../android/icu/util/ULocale.md))`(`languageTag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a locale for the specified IETF BCP 47 language tag string. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [forLocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#forLocale(java.util.Locale))`(`loc:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!`)` **\[icu\]** Returns a ULocale object for a [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!\>! | [getAvailableLocales](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getAvailableLocales())`()` **\[icu\] Note:** Unlike the Locale API, this returns an array of`ULocale`, not`Locale`. |
-| static [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!\>! | [getAvailableLocalesByType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getAvailableLocalesByType(android.icu.util.ULocale.AvailableType))`(`type:` ` [ULocale.AvailableType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.AvailableType)!`)` Returns a list of all installed locales according to the specified type. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [forLocale](../android/icu/util/ULocale.md))`(`loc:` ` [Locale](../java/util/Locale.md)!`)` **\[icu\]** Returns a ULocale object for a [java.util.Locale](../java/util/Locale.md). |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>! | [getAvailableLocales](../android/icu/util/ULocale.md))`()` **\[icu\] Note:** Unlike the Locale API, this returns an array of`ULocale`, not`Locale`. |
+| static [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>! | [getAvailableLocalesByType](../android/icu/util/ULocale.md))`(`type:` ` [ULocale.AvailableType](../android/icu/util/ULocale.AvailableType.md)!`)` Returns a list of all installed locales according to the specified type. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getBaseName())`()` **\[icu\]** Returns the (normalized) base name for this locale, like [getName()](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getName()), but without keywords. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getBaseName(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** Returns the (normalized) base name for the specified locale, like [getName(java.lang.String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getName(kotlin.String)), but without keywords. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCharacterOrientation](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getCharacterOrientation())`()` **\[icu\]**Returns this locale's layout orientation for characters. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseName](../android/icu/util/ULocale.md))`()` **\[icu\]** Returns the (normalized) base name for this locale, like [getName()](../android/icu/util/ULocale.md)), but without keywords. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseName](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** Returns the (normalized) base name for the specified locale, like [getName(java.lang.String)](../android/icu/util/ULocale.md)), but without keywords. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCharacterOrientation](../android/icu/util/ULocale.md))`()` **\[icu\]**Returns this locale's layout orientation for characters. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCountry](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getCountry())`()` Returns the country/region code for this locale, which will either be the empty string or an uppercase ISO 3166 2-letter code. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCountry](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getCountry(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the country/region code for this locale, which will either be the empty string or an uppercase ISO 3166 2-letter code. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [getDefault](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDefault())`()` Returns the current default ULocale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCountry](../android/icu/util/ULocale.md))`()` Returns the country/region code for this locale, which will either be the empty string or an uppercase ISO 3166 2-letter code. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCountry](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the country/region code for this locale, which will either be the empty string or an uppercase ISO 3166 2-letter code. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [getDefault](../android/icu/util/ULocale.md))`()` Returns the current default ULocale. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [getDefault](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDefault(android.icu.util.ULocale.Category))`(`category:` ` [ULocale.Category](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category)!`)` Returns the current default ULocale for the specified category. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry())`()` Returns this locale's country localized for display in the default`DISPLAY`locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry(android.icu.util.ULocale))`(`displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` Returns this locale's country localized for display in the provided locale. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [getDefault](../android/icu/util/ULocale.md))`(`category:` ` [ULocale.Category](../android/icu/util/ULocale.Category.md)!`)` Returns the current default ULocale for the specified category. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](../android/icu/util/ULocale.md))`()` Returns this locale's country localized for display in the default`DISPLAY`locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](../android/icu/util/ULocale.md))`(`displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns this locale's country localized for display in the provided locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry(kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a locale's country localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's country localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeyword](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayKeyword(kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** Returns a keyword localized for display in the default`DISPLAY`locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a locale's country localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayCountry](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's country localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeyword](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** Returns a keyword localized for display in the default`DISPLAY`locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeyword](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayKeyword(kotlin.String,%20android.icu.util.ULocale))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a keyword localized for display in the specified locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeyword](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayKeyword(kotlin.String,%20kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a keyword localized for display in the specified locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayKeywordValue(kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** Returns a keyword value localized for display in the default`DISPLAY`locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeyword](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a keyword localized for display in the specified locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeyword](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a keyword localized for display in the specified locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** Returns a keyword value localized for display in the default`DISPLAY`locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayKeywordValue(kotlin.String,%20android.icu.util.ULocale))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a keyword value localized for display in the specified locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayKeywordValue(kotlin.String,%20kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a keyword value localized for display in the specified locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayKeywordValue(kotlin.String,%20kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a keyword value localized for display in the specified locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a keyword value localized for display in the specified locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a keyword value localized for display in the specified locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayKeywordValue](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a keyword value localized for display in the specified locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage())`()` Returns this locale's language localized for display in the default`DISPLAY`locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage(android.icu.util.ULocale))`(`displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` Returns this locale's language localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage(kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](../android/icu/util/ULocale.md))`()` Returns this locale's language localized for display in the default`DISPLAY`locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](../android/icu/util/ULocale.md))`(`displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns this locale's language localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguageWithDialect())`()` **\[icu\]** Returns this locale's language localized for display in the default`DISPLAY`locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguageWithDialect(android.icu.util.ULocale))`(`displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns this locale's language localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguage](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](../android/icu/util/ULocale.md))`()` **\[icu\]** Returns this locale's language localized for display in the default`DISPLAY`locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](../android/icu/util/ULocale.md))`(`displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns this locale's language localized for display in the provided locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguageWithDialect(kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguageWithDialect(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayName())`()` Returns this locale name localized for display in the default`DISPLAY`locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayLanguageWithDialect](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's language localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../android/icu/util/ULocale.md))`()` Returns this locale name localized for display in the default`DISPLAY`locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayName(android.icu.util.ULocale))`(`displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` Returns this locale name localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayName(kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayName(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../android/icu/util/ULocale.md))`(`displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns this locale name localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayNameWithDialect())`()` **\[icu\]** Returns this locale name localized for display in the default`DISPLAY`locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayNameWithDialect(android.icu.util.ULocale))`(`displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns this locale name localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayNameWithDialect(kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](../android/icu/util/ULocale.md))`()` **\[icu\]** Returns this locale name localized for display in the default`DISPLAY`locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](../android/icu/util/ULocale.md))`(`displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns this locale name localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayNameWithDialect(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript())`()` Returns this locale's script localized for display in the default`DISPLAY`locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript(android.icu.util.ULocale))`(`displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` Returns this locale's script localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayNameWithDialect](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the locale ID localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](../android/icu/util/ULocale.md))`()` Returns this locale's script localized for display in the default`DISPLAY`locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](../android/icu/util/ULocale.md))`(`displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns this locale's script localized for display in the provided locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript(kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a locale's script localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's script localized for display in the provided locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant())`()` Returns this locale's variant localized for display in the default`DISPLAY`locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a locale's script localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayScript](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's script localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](../android/icu/util/ULocale.md))`()` Returns this locale's variant localized for display in the default`DISPLAY`locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant(android.icu.util.ULocale))`(`displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` Returns this locale's variant localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant(kotlin.String,%20android.icu.util.ULocale))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]**Returns a locale's variant localized for display in the provided locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's variant localized for display in the provided locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](../android/icu/util/ULocale.md))`(`displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns this locale's variant localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a locale's variant localized for display in the provided locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayVariant](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `displayLocaleID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a locale's variant localized for display in the provided locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtension](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getExtension(kotlin.Char))`(`key:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns the extension (or private use) value associated with the specified key, or null if there is no extension associated with the key. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)!\>! | [getExtensionKeys](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getExtensionKeys())`()` Returns the set of extension keys associated with this locale, or the empty set if it has no extensions. |
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [getFallback](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getFallback())`()` **\[icu\]**Returns the fallback locale for this locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtension](../android/icu/util/ULocale.md))`(`key:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns the extension (or private use) value associated with the specified key, or null if there is no extension associated with the key. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)!\>! | [getExtensionKeys](../android/icu/util/ULocale.md))`()` Returns the set of extension keys associated with this locale, or the empty set if it has no extensions. |
+| [ULocale](../android/icu/util/ULocale.md)! | [getFallback](../android/icu/util/ULocale.md))`()` **\[icu\]**Returns the fallback locale for this locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFallback](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getFallback(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the fallback locale for the specified locale, which might be the empty string. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Country](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getISO3Country())`()` Returns a three-letter abbreviation for this locale's country/region. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Country](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getISO3Country(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a three-letter abbreviation for this locale's country/region. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFallback](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the fallback locale for the specified locale, which might be the empty string. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Country](../android/icu/util/ULocale.md))`()` Returns a three-letter abbreviation for this locale's country/region. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Country](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a three-letter abbreviation for this locale's country/region. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Language](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getISO3Language())`()` Returns a three-letter abbreviation for this locale's language. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Language](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getISO3Language(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a three-letter abbreviation for this locale's language. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getISOCountries](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getISOCountries())`()` Returns a list of all 2-letter country codes defined in ISO 3166. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Language](../android/icu/util/ULocale.md))`()` Returns a three-letter abbreviation for this locale's language. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getISO3Language](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns a three-letter abbreviation for this locale's language. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getISOCountries](../android/icu/util/ULocale.md))`()` Returns a list of all 2-letter country codes defined in ISO 3166. |
 | --- | --- |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getISOLanguages](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getISOLanguages())`()` Returns a list of all unique language codes defined in ISO 639. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getKeywordValue(kotlin.String))`(`keywordName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the value for a keyword in this locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getKeywordValue(kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keywordName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the value for a keyword in the specified locale. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getISOLanguages](../android/icu/util/ULocale.md))`()` Returns a list of all unique language codes defined in ISO 639. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKeywordValue](../android/icu/util/ULocale.md))`(`keywordName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the value for a keyword in this locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKeywordValue](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keywordName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the value for a keyword in the specified locale. |
 | --- | --- |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywords](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getKeywords())`()` **\[icu\]**Returns an iterator over keywords for this locale. |
-| static [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywords](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getKeywords(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns an iterator over keywords for the specified locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getLanguage())`()` Returns the language code for this locale, which will either be the empty string or a lowercase ISO 639 code. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywords](../android/icu/util/ULocale.md))`()` **\[icu\]**Returns an iterator over keywords for this locale. |
+| static [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywords](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns an iterator over keywords for the specified locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLanguage](../android/icu/util/ULocale.md))`()` Returns the language code for this locale, which will either be the empty string or a lowercase ISO 639 code. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLanguage](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getLanguage(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the language code for the locale ID, which will either be the empty string or a lowercase ISO 639 code. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLineOrientation](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getLineOrientation())`()` **\[icu\]**Returns this locale's layout orientation for lines. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getName())`()` **\[icu\]**Returns the (normalized) full name for this locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLanguage](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the language code for the locale ID, which will either be the empty string or a lowercase ISO 639 code. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLineOrientation](../android/icu/util/ULocale.md))`()` **\[icu\]**Returns this locale's layout orientation for lines. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/icu/util/ULocale.md))`()` **\[icu\]**Returns the (normalized) full name for this locale. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getName(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the (normalized) full name for the specified locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScript](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getScript())`()` Returns the script code for this locale, which might be the empty string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScript](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getScript(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the script code for the specified locale, which might be the empty string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the (normalized) full name for the specified locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScript](../android/icu/util/ULocale.md))`()` Returns the script code for this locale, which might be the empty string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScript](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the script code for the specified locale, which might be the empty string. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getUnicodeLocaleAttributes](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getUnicodeLocaleAttributes())`()` Returns the set of unicode locale attributes associated with this locale, or the empty set if it has no attributes. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getUnicodeLocaleKeys](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getUnicodeLocaleKeys())`()` Returns the set of Unicode locale keys defined by this locale, or the empty set if this locale has none. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUnicodeLocaleType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getUnicodeLocaleType(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the Unicode locale type associated with the specified Unicode locale key for this locale. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getUnicodeLocaleAttributes](../android/icu/util/ULocale.md))`()` Returns the set of unicode locale attributes associated with this locale, or the empty set if it has no attributes. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getUnicodeLocaleKeys](../android/icu/util/ULocale.md))`()` Returns the set of Unicode locale keys defined by this locale, or the empty set if this locale has none. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUnicodeLocaleType](../android/icu/util/ULocale.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the Unicode locale type associated with the specified Unicode locale key for this locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getVariant](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getVariant())`()` Returns the variant code for this locale, which might be the empty string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getVariant](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getVariant(kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the variant code for the specified locale, which might be the empty string. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#hashCode())`()` Returns the hashCode. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getVariant](../android/icu/util/ULocale.md))`()` Returns the variant code for this locale, which might be the empty string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getVariant](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the variant code for the specified locale, which might be the empty string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/util/ULocale.md))`()` Returns the hashCode. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRightToLeft](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#isRightToLeft())`()` **\[icu\]**Returns whether this locale's script is written right-to-left. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [minimizeSubtags](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#minimizeSubtags(android.icu.util.ULocale))`(`loc:` ` [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!`)` **\[icu\]** Minimizes the subtags for a provided locale ID, per the algorithm described in the following CLDR technical report:<http://www.unicode.org/reports/tr35/#Likely_Subtags>If the provided ULocale instance is already in the minimal form, or there is no data available for minimization, it will be returned. |
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [setKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#setKeywordValue(kotlin.String,%20kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Given a keyword and a value, return a new locale with an updated keyword and value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRightToLeft](../android/icu/util/ULocale.md))`()` **\[icu\]**Returns whether this locale's script is written right-to-left. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [minimizeSubtags](../android/icu/util/ULocale.md))`(`loc:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]** Minimizes the subtags for a provided locale ID, per the algorithm described in the following CLDR technical report:<http://www.unicode.org/reports/tr35/#Likely_Subtags>If the provided ULocale instance is already in the minimal form, or there is no data available for minimization, it will be returned. |
+| [ULocale](../android/icu/util/ULocale.md)! | [setKeywordValue](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Given a keyword and a value, return a new locale with an updated keyword and value. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [setKeywordValue](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#setKeywordValue(kotlin.String,%20kotlin.String,%20kotlin.String))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given a locale id, a keyword, and a value, return a new locale id with an updated keyword and value. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLanguageTag](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toLanguageTag())`()` Returns a well-formed IETF BCP 47 language tag representing this locale. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLegacyKey](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toLegacyKey(kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword (BCP 47 Unicode locale extension key, or legacy key) to the legacy key. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [setKeywordValue](../android/icu/util/ULocale.md))`(`localeID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given a locale id, a keyword, and a value, return a new locale id with an updated keyword and value. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLanguageTag](../android/icu/util/ULocale.md))`()` Returns a well-formed IETF BCP 47 language tag representing this locale. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLegacyKey](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword (BCP 47 Unicode locale extension key, or legacy key) to the legacy key. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLegacyType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toLegacyType(kotlin.String,%20kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword value (BCP 47 Unicode locale extension type, or legacy type or type alias) to the canonical legacy type. |
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | [toLocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toLocale())`()` **\[icu\]** Converts this ULocale object to a [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toString())`()` Returns a string representation of this object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLegacyType](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword value (BCP 47 Unicode locale extension type, or legacy type or type alias) to the canonical legacy type. |
+| [Locale](../java/util/Locale.md)! | [toLocale](../android/icu/util/ULocale.md))`()` **\[icu\]** Converts this ULocale object to a [java.util.Locale](../java/util/Locale.md). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/util/ULocale.md))`()` Returns a string representation of this object. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicodeLocaleKey](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toUnicodeLocaleKey(kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword (legacy key, or BCP 47 Unicode locale extension key) to the equivalent BCP 47 Unicode locale extension key. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicodeLocaleType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toUnicodeLocaleType(kotlin.String,%20kotlin.String))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword value (legacy type, or BCP 47 Unicode locale extension type) to the well-formed BCP 47 Unicode locale extension type for the specified keyword (category). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicodeLocaleKey](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword (legacy key, or BCP 47 Unicode locale extension key) to the equivalent BCP 47 Unicode locale extension key. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicodeLocaleType](../android/icu/util/ULocale.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts the specified keyword value (legacy type, or BCP 47 Unicode locale extension type) to the well-formed BCP 47 Unicode locale extension type for the specified keyword (category). |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [CANADA](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#CANADA:android.icu.util.ULocale) Useful constant for country/region. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [CANADA_FRENCH](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#CANADA_FRENCH:android.icu.util.ULocale) Useful constant for country/region. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [CHINA](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#CHINA:android.icu.util.ULocale) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [CANADA](../android/icu/util/ULocale.md) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [CANADA_FRENCH](../android/icu/util/ULocale.md) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [CHINA](../android/icu/util/ULocale.md) Useful constant for country/region. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [CHINESE](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#CHINESE:android.icu.util.ULocale) Useful constant for language. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [ENGLISH](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ENGLISH:android.icu.util.ULocale) Useful constant for language. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [FRANCE](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#FRANCE:android.icu.util.ULocale) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [CHINESE](../android/icu/util/ULocale.md) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [ENGLISH](../android/icu/util/ULocale.md) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [FRANCE](../android/icu/util/ULocale.md) Useful constant for country/region. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [FRENCH](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#FRENCH:android.icu.util.ULocale) Useful constant for language. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [GERMAN](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#GERMAN:android.icu.util.ULocale) Useful constant for language. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [GERMANY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#GERMANY:android.icu.util.ULocale) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [FRENCH](../android/icu/util/ULocale.md) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [GERMAN](../android/icu/util/ULocale.md) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [GERMANY](../android/icu/util/ULocale.md) Useful constant for country/region. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [ITALIAN](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ITALIAN:android.icu.util.ULocale) Useful constant for language. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [ITALY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ITALY:android.icu.util.ULocale) Useful constant for country/region. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [JAPAN](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#JAPAN:android.icu.util.ULocale) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [ITALIAN](../android/icu/util/ULocale.md) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [ITALY](../android/icu/util/ULocale.md) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [JAPAN](../android/icu/util/ULocale.md) Useful constant for country/region. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [JAPANESE](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#JAPANESE:android.icu.util.ULocale) Useful constant for language. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [KOREA](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#KOREA:android.icu.util.ULocale) Useful constant for country/region. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [KOREAN](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#KOREAN:android.icu.util.ULocale) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [JAPANESE](../android/icu/util/ULocale.md) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [KOREA](../android/icu/util/ULocale.md) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [KOREAN](../android/icu/util/ULocale.md) Useful constant for language. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [PRC](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#PRC:android.icu.util.ULocale) Useful constant for country/region. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [ROOT](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ROOT:android.icu.util.ULocale) The root ULocale. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [SIMPLIFIED_CHINESE](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#SIMPLIFIED_CHINESE:android.icu.util.ULocale) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [PRC](../android/icu/util/ULocale.md) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [ROOT](../android/icu/util/ULocale.md) The root ULocale. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [SIMPLIFIED_CHINESE](../android/icu/util/ULocale.md) Useful constant for language. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [TAIWAN](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#TAIWAN:android.icu.util.ULocale) Useful constant for country/region. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [TRADITIONAL_CHINESE](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#TRADITIONAL_CHINESE:android.icu.util.ULocale) Useful constant for language. |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [UK](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#UK:android.icu.util.ULocale) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [TAIWAN](../android/icu/util/ULocale.md) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [TRADITIONAL_CHINESE](../android/icu/util/ULocale.md) Useful constant for language. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [UK](../android/icu/util/ULocale.md) Useful constant for country/region. |
 | --- | --- |
-| static [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | [US](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#US:android.icu.util.ULocale) Useful constant for country/region. |
+| static [ULocale](../android/icu/util/ULocale.md)! | [US](../android/icu/util/ULocale.md) Useful constant for country/region. |
 
 ## Constants
 
@@ -236,8 +236,8 @@ The key for the private use locale extension ('x').
 
 **See Also**
 
-- [#getExtension(char)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getExtension(kotlin.Char))
-- [android.icu.util.ULocale.Builder#setExtension(char, String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Builder#setExtension(kotlin.Char,%20kotlin.String)) 
+- [#getExtension(char)](../android/icu/util/ULocale.md))
+- [android.icu.util.ULocale.Builder#setExtension(char, String)](../android/icu/util/ULocale.Builder.md)) 
 
 ### UNICODE_LOCALE_EXTENSION
 
@@ -253,8 +253,8 @@ The key for Unicode locale extension ('u').
 
 **See Also**
 
-- [#getExtension(char)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getExtension(kotlin.Char))
-- [android.icu.util.ULocale.Builder#setExtension(char, String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Builder#setExtension(kotlin.Char,%20kotlin.String))
+- [#getExtension(char)](../android/icu/util/ULocale.md))
+- [android.icu.util.ULocale.Builder#setExtension(char, String)](../android/icu/util/ULocale.Builder.md))
 
 ## Public constructors
 
@@ -268,7 +268,7 @@ ULocale(localeID: String!)
 
 **\[icu\]**Constructs a ULocale from a RFC 3066 locale ID. The locale ID consists of optional language, script, country, and variant fields in that order, separated by underscores, followed by an optional keyword list. The script, if present, is four characters long-- this distinguishes it from a country code, which is two characters long. Other fields are distinguished by position as indicated by the underscores. The start of the keyword list is indicated by '@', and consists of two or more keyword/value pairs separated by semicolons(';').
 
-This constructor does not canonicalize the localeID. So, for example, "zh__pinyin" remains unchanged instead of converting to "zh@collation=pinyin". By default ICU only recognizes the latter as specifying pinyin collation. Use #createCanonical or [canonicalize](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#canonicalize(kotlin.String))if you need to canonicalize the localeID.
+This constructor does not canonicalize the localeID. So, for example, "zh__pinyin" remains unchanged instead of converting to "zh@collation=pinyin". By default ICU only recognizes the latter as specifying pinyin collation. Use #createCanonical or [canonicalize](../android/icu/util/ULocale.md))if you need to canonicalize the localeID.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -287,7 +287,7 @@ ULocale(
 Convenience overload of ULocale(String, String, String) for compatibility with java.util.Locale. 
 **See Also**
 
-- [#ULocale(String, String, String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ULocale(kotlin.String,%20kotlin.String,%20kotlin.String)) 
+- [#ULocale(String, String, String)](../android/icu/util/ULocale.md)) 
 
 ### ULocale
 
@@ -313,7 +313,7 @@ Java locale strings consisting of language, country, and variant will be handled
 
 **See Also**
 
-- [#ULocale(String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#ULocale(kotlin.String))
+- [#ULocale(String)](../android/icu/util/ULocale.md))
 
 ## Public methods
 
@@ -333,14 +333,14 @@ static fun acceptLanguage(
 
 | Parameters ||
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `acceptLanguageList` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!\>!:list of acceptable locales |
-| `availableLocales` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!\>!:list of available locales. One of these will be returned. |
+| `acceptLanguageList` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>!:list of acceptable locales |
+| `availableLocales` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>!:list of available locales. One of these will be returned. |
 | `fallback` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:if non-null, a 1-element array containing a boolean to be set with the fallback status |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | one of the locales from the availableLocales list, or null if none match |
+| [ULocale](../android/icu/util/ULocale.md)! | one of the locales from the availableLocales list, or null if none match |
 
 ### acceptLanguage
 
@@ -357,12 +357,12 @@ static fun acceptLanguage(
 
 | Parameters ||
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `acceptLanguageList` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!\>!:ordered array of acceptable locales (preferred are listed first) |
+| `acceptLanguageList` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>!:ordered array of acceptable locales (preferred are listed first) |
 | `fallback` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:if non-null, a 1-element array containing a boolean to be set with the fallback status |
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | one of the locales from the ULocale.getAvailableLocales() list, or null if none match |
+| [ULocale](../android/icu/util/ULocale.md)! | one of the locales from the ULocale.getAvailableLocales() list, or null if none match |
 
 ### acceptLanguage
 
@@ -381,13 +381,13 @@ static fun acceptLanguage(
 | Parameters ||
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `acceptLanguageList` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:list in HTTP "Accept-Language:" format of acceptable locales |
-| `availableLocales` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!\>!:list of available locales. One of these will be returned. |
+| `availableLocales` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>!:list of available locales. One of these will be returned. |
 | `fallback` | [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)!:if non-null, a 1-element array containing a boolean to be set with the fallback status |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | one of the locales from the availableLocales list, or null if none match |
+| [ULocale](../android/icu/util/ULocale.md)! | one of the locales from the availableLocales list, or null if none match |
 
 ### acceptLanguage
 
@@ -409,7 +409,7 @@ static fun acceptLanguage(
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | one of the locales from the ULocale.getAvailableLocales() list, or null if none match |
+| [ULocale](../android/icu/util/ULocale.md)! | one of the locales from the ULocale.getAvailableLocales() list, or null if none match |
 
 ### addLikelySubtags
 
@@ -423,11 +423,11 @@ static fun addLikelySubtags(loc: ULocale!): ULocale!
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------|
-| `loc` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:The ULocale to maximize |
+| `loc` | [ULocale](../android/icu/util/ULocale.md)!:The ULocale to maximize |
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | The maximized ULocale instance. |
+| [ULocale](../android/icu/util/ULocale.md)! | The maximized ULocale instance. |
 
 ### canonicalize
 
@@ -480,7 +480,7 @@ Compares two ULocale for ordering.
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the ULocale to be compared. |
+| `other` | [ULocale](../android/icu/util/ULocale.md)!:the ULocale to be compared. |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -503,11 +503,11 @@ Creates a ULocale from the locale by first canonicalizing the locale according t
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the ULocale to canonicalize |
+| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the ULocale to canonicalize |
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | the ULocale created from the canonical version of the ULocale. |
+| [ULocale](../android/icu/util/ULocale.md)! | the ULocale created from the canonical version of the ULocale. |
 
 ### createCanonical
 
@@ -525,7 +525,7 @@ static fun createCanonical(nonCanonicalID: String!): ULocale!
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | the locale created from the canonical version of the ID. |
+| [ULocale](../android/icu/util/ULocale.md)! | the locale created from the canonical version of the ID. |
 
 ### equals
 
@@ -555,7 +555,7 @@ static fun forLanguageTag(languageTag: String!): ULocale!
 
 Returns a locale for the specified IETF BCP 47 language tag string.
 
-If the specified language tag contains any ill-formed subtags, the first such subtag and all following subtags are ignored. Compare to [ULocale.Builder.setLanguageTag](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Builder#setLanguageTag(kotlin.String))which throws an exception in this case.
+If the specified language tag contains any ill-formed subtags, the first such subtag and all following subtags are ignored. Compare to [ULocale.Builder.setLanguageTag](../android/icu/util/ULocale.Builder.md))which throws an exception in this case.
 
 The following**conversions**are performed:
 
@@ -596,7 +596,7 @@ Note that a few legacy tags have no modern replacement; these will be converted 
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | The locale that best represents the language tag. |
+| [ULocale](../android/icu/util/ULocale.md)! | The locale that best represents the language tag. |
 
 | Exceptions ||
 |----------------------------------|-------------------------|
@@ -605,7 +605,7 @@ Note that a few legacy tags have no modern replacement; these will be converted 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toLanguageTag()>
-- [android.icu.util.ULocale.Builder#setLanguageTag(String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Builder#setLanguageTag(kotlin.String)) 
+- [android.icu.util.ULocale.Builder#setLanguageTag(String)](../android/icu/util/ULocale.Builder.md)) 
 
 ### forLocale
 
@@ -615,11 +615,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun forLocale(loc: Locale!): ULocale!
 ```
 
-**\[icu\]** Returns a ULocale object for a [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). The ULocale is canonicalized.
+**\[icu\]** Returns a ULocale object for a [java.util.Locale](../java/util/Locale.md). The ULocale is canonicalized.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `loc` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!:a [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) |
+| `loc` | [Locale](../java/util/Locale.md)!:a [java.util.Locale](../java/util/Locale.md) |
 
 ### getAvailableLocales
 
@@ -631,7 +631,7 @@ static fun getAvailableLocales(): Array<ULocale!>!
 
 **\[icu\] Note:** Unlike the Locale API, this returns an array of`ULocale`, not`Locale`.
 
-Returns a list of all installed locales. This is equivalent to calling [getAvailableLocalesByType](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getAvailableLocalesByType(android.icu.util.ULocale.AvailableType))with AvailableType.DEFAULT. 
+Returns a list of all installed locales. This is equivalent to calling [getAvailableLocalesByType](../android/icu/util/ULocale.md))with AvailableType.DEFAULT. 
 
 ### getAvailableLocalesByType
 
@@ -651,7 +651,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getBaseName(): String!
 ```
 
-**\[icu\]** Returns the (normalized) base name for this locale, like [getName()](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getName()), but without keywords.
+**\[icu\]** Returns the (normalized) base name for this locale, like [getName()](../android/icu/util/ULocale.md)), but without keywords.
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -665,7 +665,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getBaseName(localeID: String!): String!
 ```
 
-**\[icu\]** Returns the (normalized) base name for the specified locale, like [getName(java.lang.String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getName(kotlin.String)), but without keywords.
+**\[icu\]** Returns the (normalized) base name for the specified locale, like [getName(java.lang.String)](../android/icu/util/ULocale.md)), but without keywords.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
@@ -701,7 +701,7 @@ Returns the country/region code for this locale, which will either be the empty 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry()>
-- [#getDisplayCountry(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry(android.icu.util.ULocale)) 
+- [#getDisplayCountry(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### getCountry
 
@@ -720,7 +720,7 @@ static fun getCountry(localeID: String!): String!
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry()>
-- [#getDisplayCountry(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayCountry(android.icu.util.ULocale)) 
+- [#getDisplayCountry(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### getDefault
 
@@ -736,7 +736,7 @@ The default ULocale is synchronized to the default Java Locale. This method chec
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | the default ULocale. |
+| [ULocale](../android/icu/util/ULocale.md)! | the default ULocale. |
 
 ### getDefault
 
@@ -750,11 +750,11 @@ Returns the current default ULocale for the specified category.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------|
-| `category` | [ULocale.Category](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category)!:the category |
+| `category` | [ULocale.Category](../android/icu/util/ULocale.Category.md)!:the category |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | the default ULocale for the specified category. |
+| [ULocale](../android/icu/util/ULocale.md)! | the default ULocale for the specified category. |
 
 ### getDisplayCountry
 
@@ -764,7 +764,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getDisplayCountry(): String!
 ```
 
-Returns this locale's country localized for display in the default`DISPLAY`locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.html#) instead.
+Returns this locale's country localized for display in the default`DISPLAY`locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md) instead.
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
@@ -772,7 +772,7 @@ Returns this locale's country localized for display in the default`DISPLAY`local
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayCountry
 
@@ -782,11 +782,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getDisplayCountry(displayLocale: ULocale!): String!
 ```
 
-Returns this locale's country localized for display in the provided locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.html#) instead.
+Returns this locale's country localized for display in the provided locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md) instead.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
@@ -803,12 +803,12 @@ static fun getDisplayCountry(
 ): String!
 ```
 
-**\[icu\]** Returns a locale's country localized for display in the provided locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.html#) instead. This is a cover for the ICU4C API.
+**\[icu\]** Returns a locale's country localized for display in the provided locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md) instead. This is a cover for the ICU4C API.
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the id of the locale whose country will be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
@@ -825,7 +825,7 @@ static fun getDisplayCountry(
 ): String!
 ```
 
-**\[icu\]** Returns a locale's country localized for display in the provided locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](https://developer.android.com/reference/kotlin/android/icu/text/LocaleDisplayNames.html#) instead. This is a cover for the ICU4C API.
+**\[icu\]** Returns a locale's country localized for display in the provided locale.**Warning:** this is for the region part of a valid locale ID; it cannot just be the region code (like "FR"). To get the display name for a region alone, or for other options, use [LocaleDisplayNames](../android/icu/text/LocaleDisplayNames.md) instead. This is a cover for the ICU4C API.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -857,7 +857,7 @@ static fun getDisplayKeyword(keyword: String!): String!
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getKeywords()>
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayKeyword
 
@@ -875,7 +875,7 @@ static fun getDisplayKeyword(
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `keyword` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the keyword to be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the keyword. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the keyword. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
@@ -883,7 +883,7 @@ static fun getDisplayKeyword(
 
 **See Also**
 
-- [#getKeywords(String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getKeywords(kotlin.String)) 
+- [#getKeywords(String)](../android/icu/util/ULocale.md)) 
 
 ### getDisplayKeyword
 
@@ -909,7 +909,7 @@ static fun getDisplayKeyword(
 
 **See Also**
 
-- [#getKeywords(String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getKeywords(kotlin.String)) 
+- [#getKeywords(String)](../android/icu/util/ULocale.md)) 
 
 ### getDisplayKeywordValue
 
@@ -931,7 +931,7 @@ fun getDisplayKeywordValue(keyword: String!): String!
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayKeywordValue
 
@@ -949,7 +949,7 @@ fun getDisplayKeywordValue(
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------|
 | `keyword` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the keyword whose value is to be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the value. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the value. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------|
@@ -973,7 +973,7 @@ static fun getDisplayKeywordValue(
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the id of the locale whose keyword value is to be displayed. |
 | `keyword` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the keyword whose value is to be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the id of the locale in which to display the value. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the id of the locale in which to display the value. |
 | --- | --- |
 
 | Return ||
@@ -1021,7 +1021,7 @@ Returns this locale's language localized for display in the default`DISPLAY`loca
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayLanguage
 
@@ -1035,7 +1035,7 @@ Returns this locale's language localized for display in the provided locale.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------|
@@ -1057,7 +1057,7 @@ static fun getDisplayLanguage(
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the id of the locale whose language will be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------|
@@ -1101,7 +1101,7 @@ fun getDisplayLanguageWithDialect(): String!
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayLanguageWithDialect
 
@@ -1115,7 +1115,7 @@ fun getDisplayLanguageWithDialect(displayLocale: ULocale!): String!
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------|
@@ -1137,7 +1137,7 @@ static fun getDisplayLanguageWithDialect(
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the id of the locale whose language will be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------|
@@ -1181,7 +1181,7 @@ Returns this locale name localized for display in the default`DISPLAY`locale.
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayName
 
@@ -1195,7 +1195,7 @@ Returns this locale name localized for display in the provided locale.
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the locale name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the locale name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -1217,7 +1217,7 @@ static fun getDisplayName(
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the locale whose name is to be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the locale name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the locale name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -1261,7 +1261,7 @@ fun getDisplayNameWithDialect(): String!
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayNameWithDialect
 
@@ -1275,7 +1275,7 @@ fun getDisplayNameWithDialect(displayLocale: ULocale!): String!
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the locale name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the locale name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -1297,7 +1297,7 @@ static fun getDisplayNameWithDialect(
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the locale whose name is to be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the locale name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the locale name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -1341,7 +1341,7 @@ Returns this locale's script localized for display in the default`DISPLAY`locale
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayScript
 
@@ -1355,7 +1355,7 @@ Returns this locale's script localized for display in the provided locale.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -1377,7 +1377,7 @@ static fun getDisplayScript(
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the id of the locale whose script will be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -1421,7 +1421,7 @@ Returns this locale's variant localized for display in the default`DISPLAY`local
 
 **See Also**
 
-- [android.icu.util.ULocale.Category#DISPLAY](https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category) 
+- [android.icu.util.ULocale.Category#DISPLAY](../android/icu/util/ULocale.Category.md) 
 
 ### getDisplayVariant
 
@@ -1435,7 +1435,7 @@ Returns this locale's variant localized for display in the provided locale.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
@@ -1457,7 +1457,7 @@ static fun getDisplayVariant(
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `localeID` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the id of the locale whose variant will be displayed. |
-| `displayLocale` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:the locale in which to display the name. |
+| `displayLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale in which to display the name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
@@ -1509,8 +1509,8 @@ Returns the extension (or private use) value associated with the specified key, 
 
 **See Also**
 
-- [#PRIVATE_USE_EXTENSION](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#PRIVATE_USE_EXTENSION:kotlin.Char)
-- [#UNICODE_LOCALE_EXTENSION](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#UNICODE_LOCALE_EXTENSION:kotlin.Char) 
+- [#PRIVATE_USE_EXTENSION](../android/icu/util/ULocale.md)
+- [#UNICODE_LOCALE_EXTENSION](../android/icu/util/ULocale.md) 
 
 ### getExtensionKeys
 
@@ -1701,7 +1701,7 @@ Returns the language code for this locale, which will either be the empty string
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage()>
-- [#getDisplayLanguage(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage(android.icu.util.ULocale)) 
+- [#getDisplayLanguage(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### getLanguage
 
@@ -1715,7 +1715,7 @@ Returns the language code for the locale ID, which will either be the empty stri
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage()>
-- [#getDisplayLanguage(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayLanguage(android.icu.util.ULocale)) 
+- [#getDisplayLanguage(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### getLineOrientation
 
@@ -1775,7 +1775,7 @@ Returns the script code for this locale, which might be the empty string.
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript()>
-- [#getDisplayScript(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript(android.icu.util.ULocale)) 
+- [#getDisplayScript(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### getScript
 
@@ -1789,7 +1789,7 @@ static fun getScript(localeID: String!): String!
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript()>
-- [#getDisplayScript(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayScript(android.icu.util.ULocale)) 
+- [#getDisplayScript(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### getUnicodeLocaleAttributes
 
@@ -1854,7 +1854,7 @@ Returns the variant code for this locale, which might be the empty string.
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant()>
-- [#getDisplayVariant(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant(android.icu.util.ULocale)) 
+- [#getDisplayVariant(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### getVariant
 
@@ -1868,7 +1868,7 @@ static fun getVariant(localeID: String!): String!
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant()>
-- [#getDisplayVariant(ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getDisplayVariant(android.icu.util.ULocale)) 
+- [#getDisplayVariant(ULocale)](../android/icu/util/ULocale.md)) 
 
 ### hashCode
 
@@ -1892,7 +1892,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun isRightToLeft(): Boolean
 ```
 
-**\[icu\]** Returns whether this locale's script is written right-to-left. If there is no script subtag, then the likely script is used, see [addLikelySubtags(android.icu.util.ULocale)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#addLikelySubtags(android.icu.util.ULocale)). If no likely script is known, then false is returned.
+**\[icu\]** Returns whether this locale's script is written right-to-left. If there is no script subtag, then the likely script is used, see [addLikelySubtags(android.icu.util.ULocale)](../android/icu/util/ULocale.md)). If no likely script is known, then false is returned.
 
 A script is right-to-left according to the CLDR script metadata which corresponds to whether the script's letters have Bidi_Class=R or AL.
 
@@ -1927,11 +1927,11 @@ static fun minimizeSubtags(loc: ULocale!): ULocale!
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------|
-| `loc` | [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)!:The ULocale to minimize |
+| `loc` | [ULocale](../android/icu/util/ULocale.md)!:The ULocale to minimize |
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | The minimized ULocale instance. |
+| [ULocale](../android/icu/util/ULocale.md)! | The minimized ULocale instance. |
 
 ### setKeywordValue
 
@@ -1946,7 +1946,7 @@ fun setKeywordValue(
 
 **\[icu\]**Given a keyword and a value, return a new locale with an updated keyword and value. If the keyword is null, this removes all keywords from the locale id. Otherwise, if the value is null, this removes the value for this keyword from the locale id. Otherwise, this adds/replaces the value for this keyword in the locale id. The keyword and value must not be empty.
 
-Related: [getBaseName()](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getBaseName())returns the locale ID string with all keywords removed.
+Related: [getBaseName()](../android/icu/util/ULocale.md))returns the locale ID string with all keywords removed.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1955,7 +1955,7 @@ Related: [getBaseName()](https://developer.android.com/reference/kotlin/android/
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------|
-| [ULocale](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#)! | the updated locale |
+| [ULocale](../android/icu/util/ULocale.md)! | the updated locale |
 
 ### setKeywordValue
 
@@ -1971,7 +1971,7 @@ static fun setKeywordValue(
 
 Given a locale id, a keyword, and a value, return a new locale id with an updated keyword and value. If the keyword is null, this removes all keywords from the locale id. Otherwise, if the value is null, this removes the value for this keyword from the locale id. Otherwise, this adds/replaces the value for this keyword in the locale id. The keyword and value must not be empty.
 
-Related: [getBaseName(java.lang.String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#getBaseName(kotlin.String))returns the locale ID string with all keywords removed.
+Related: [getBaseName(java.lang.String)](../android/icu/util/ULocale.md))returns the locale ID string with all keywords removed.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2020,7 +2020,7 @@ will return "xx-YY", but the language subtag "xx" and the region subtag "YY" are
 
 **See Also**
 
-- [#forLanguageTag(String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#forLanguageTag(kotlin.String)) 
+- [#forLanguageTag(String)](../android/icu/util/ULocale.md)) 
 
 ### toLegacyKey
 
@@ -2042,7 +2042,7 @@ static fun toLegacyKey(keyword: String!): String!
 
 **See Also**
 
-- [#toUnicodeLocaleKey(String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toUnicodeLocaleKey(kotlin.String)) 
+- [#toUnicodeLocaleKey(String)](../android/icu/util/ULocale.md)) 
 
 ### toLegacyType
 
@@ -2070,7 +2070,7 @@ When the specified keyword is not recognized, but the specified value satisfies 
 
 **See Also**
 
-- [#toUnicodeLocaleType(String, String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toUnicodeLocaleType(kotlin.String,%20kotlin.String)) 
+- [#toUnicodeLocaleType(String, String)](../android/icu/util/ULocale.md)) 
 
 ### toLocale
 
@@ -2080,11 +2080,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun toLocale(): Locale!
 ```
 
-**\[icu\]** Converts this ULocale object to a [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#).
+**\[icu\]** Converts this ULocale object to a [java.util.Locale](../java/util/Locale.md).
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | a [java.util.Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) that either exactly represents this object or is the closest approximation. |
+| [Locale](../java/util/Locale.md)! | a [java.util.Locale](../java/util/Locale.md) that either exactly represents this object or is the closest approximation. |
 
 ### toString
 
@@ -2122,7 +2122,7 @@ When the specified keyword is unknown, but satisfies the BCP syntax, then the lo
 
 **See Also**
 
-- [#toLegacyKey(String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toLegacyKey(kotlin.String)) 
+- [#toLegacyKey(String)](../android/icu/util/ULocale.md)) 
 
 ### toUnicodeLocaleType
 
@@ -2150,7 +2150,7 @@ When the specified keyword is not recognized, but the specified value satisfies 
 
 **See Also**
 
-- [#toLegacyType(String, String)](https://developer.android.com/reference/kotlin/android/icu/util/ULocale#toLegacyType(kotlin.String,%20kotlin.String))
+- [#toLegacyType(String, String)](../android/icu/util/ULocale.md))
 
 ## Properties
 

@@ -4,24 +4,24 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # EventDaysColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.EventDaysColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/CalendarContract.EventDaysColumns.md) 
 | --- | --- |
 
 ```
 protected interface EventDaysColumns
 ```
 
-| [android.provider.CalendarContract.EventDaysColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDaysColumns#) |
+| [android.provider.CalendarContract.EventDaysColumns](../android/provider/CalendarContract.EventDaysColumns.md) |
 
-| Known Direct Subclasses [CalendarContract.EventDays](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDays) |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [CalendarContract.EventDays](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDays) | Fields and helpers for querying for a list of days that contain events. | |
+| Known Direct Subclasses [CalendarContract.EventDays](../android/provider/CalendarContract.EventDays.md) |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [CalendarContract.EventDays](../android/provider/CalendarContract.EventDays.md) | Fields and helpers for querying for a list of days that contain events. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENDDAY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDaysColumns#ENDDAY:kotlin.String) The Julian ending day number. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STARTDAY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventDaysColumns#STARTDAY:kotlin.String) The Julian starting day number. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ENDDAY](../android/provider/CalendarContract.EventDaysColumns.md) The Julian ending day number. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STARTDAY](../android/provider/CalendarContract.EventDaysColumns.md) The Julian starting day number. |
 
 ## Constants
 

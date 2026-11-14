@@ -10,7 +10,7 @@ open class AttributedString
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.AttributedString](https://developer.android.com/reference/kotlin/java/text/AttributedString#) |
+| ↳ | [java.text.AttributedString](../java/text/AttributedString.md) |
 
 An AttributedString holds text and related attribute information. It may be used as the actual data storage in some cases where a text reader wants to access attributed text through the AttributedCharacterIterator interface.
 
@@ -22,21 +22,21 @@ The values for an attribute are immutable, or must not be mutated by clients or 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AttributedString](https://developer.android.com/reference/kotlin/java/text/AttributedString#AttributedString(kotlin.String))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an AttributedString instance with the given text. |
-| [AttributedString](https://developer.android.com/reference/kotlin/java/text/AttributedString#AttributedString(kotlin.String,%20kotlin.collections.MutableMap))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` ` [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!,` `*>!`)` Constructs an AttributedString instance with the given text and attributes. |
-| [AttributedString](https://developer.android.com/reference/kotlin/java/text/AttributedString#AttributedString(java.text.AttributedCharacterIterator))`(`text:` ` [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!`)` Constructs an AttributedString instance with the given attributed text represented by AttributedCharacterIterator. |
-| [AttributedString](https://developer.android.com/reference/kotlin/java/text/AttributedString#AttributedString(java.text.AttributedCharacterIterator,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an AttributedString instance with the subrange of the given attributed text represented by AttributedCharacterIterator. |
-| [AttributedString](https://developer.android.com/reference/kotlin/java/text/AttributedString#AttributedString(java.text.AttributedCharacterIterator,%20kotlin.Int,%20kotlin.Int,%20kotlin.Array))`(`text:` ` [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!>!`)` Constructs an AttributedString instance with the subrange of the given attributed text represented by AttributedCharacterIterator. |
+| [AttributedString](../java/text/AttributedString.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an AttributedString instance with the given text. |
+| [AttributedString](../java/text/AttributedString.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` ` [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!,` `*>!`)` Constructs an AttributedString instance with the given text and attributes. |
+| [AttributedString](../java/text/AttributedString.md))`(`text:` ` [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!`)` Constructs an AttributedString instance with the given attributed text represented by AttributedCharacterIterator. |
+| [AttributedString](../java/text/AttributedString.md))`(`text:` ` [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an AttributedString instance with the subrange of the given attributed text represented by AttributedCharacterIterator. |
+| [AttributedString](../java/text/AttributedString.md))`(`text:` ` [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!>!`)` Constructs an AttributedString instance with the subrange of the given attributed text represented by AttributedCharacterIterator. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttribute](https://developer.android.com/reference/kotlin/java/text/AttributedString#addAttribute(java.text.AttributedCharacterIterator.Attribute,%20kotlin.Any))`(`attribute:` ` [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds an attribute to the entire string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttribute](https://developer.android.com/reference/kotlin/java/text/AttributedString#addAttribute(java.text.AttributedCharacterIterator.Attribute,%20kotlin.Any,%20kotlin.Int,%20kotlin.Int))`(`attribute:` ` [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds an attribute to a subrange of the string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttributes](https://developer.android.com/reference/kotlin/java/text/AttributedString#addAttributes(kotlin.collections.MutableMap,%20kotlin.Int,%20kotlin.Int))`(`attributes:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` ` [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!,` `*>!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a set of attributes to a subrange of the string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttribute](../java/text/AttributedString.md))`(`attribute:` ` [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds an attribute to the entire string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttribute](../java/text/AttributedString.md))`(`attribute:` ` [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds an attribute to a subrange of the string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttributes](../java/text/AttributedString.md))`(`attributes:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` ` [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!,` `*>!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a set of attributes to a subrange of the string. |
 | --- | --- |
-| open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | [getIterator](https://developer.android.com/reference/kotlin/java/text/AttributedString#getIterator())`()` Creates an AttributedCharacterIterator instance that provides access to the entire contents of this string. |
-| open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | [getIterator](https://developer.android.com/reference/kotlin/java/text/AttributedString#getIterator(kotlin.Array))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!>!`)` Creates an AttributedCharacterIterator instance that provides access to selected contents of this string. |
-| open [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | [getIterator](https://developer.android.com/reference/kotlin/java/text/AttributedString#getIterator(kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!>!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an AttributedCharacterIterator instance that provides access to selected contents of this string. |
+| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [getIterator](../java/text/AttributedString.md))`()` Creates an AttributedCharacterIterator instance that provides access to the entire contents of this string. |
+| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [getIterator](../java/text/AttributedString.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!>!`)` Creates an AttributedCharacterIterator instance that provides access to selected contents of this string. |
+| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [getIterator](../java/text/AttributedString.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!>!`, `beginIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an AttributedCharacterIterator instance that provides access to selected contents of this string. |
 | --- | --- |
 
 ## Public constructors
@@ -74,7 +74,7 @@ Constructs an AttributedString instance with the given text and attributes.
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The text for this attributed string. |
-| `attributes` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<out [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!,\*\>!:The attributes that apply to the entire string. |
+| `attributes` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<out [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!,\*\>!:The attributes that apply to the entire string. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -93,7 +93,7 @@ Constructs an AttributedString instance with the given attributed text represent
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!:The text for this attributed string. |
+| `text` | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!:The text for this attributed string. |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -114,7 +114,7 @@ Constructs an AttributedString instance with the subrange of the given attribute
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!:The text for this attributed string. |
+| `text` | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!:The text for this attributed string. |
 | `beginIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the first character of the range. |
 | `endIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the character following the last character of the range. |
 | --- | --- |
@@ -126,7 +126,7 @@ Constructs an AttributedString instance with the subrange of the given attribute
 
 **See Also**
 
-- [java.text.Annotation](https://developer.android.com/reference/kotlin/java/text/Annotation) 
+- [java.text.Annotation](../java/text/Annotation.md) 
 
 ### AttributedString
 
@@ -144,11 +144,11 @@ Constructs an AttributedString instance with the subrange of the given attribute
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)!:The text for this attributed string. |
+| `text` | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!:The text for this attributed string. |
 | `beginIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the first character of the range. |
 | `endIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the character following the last character of the range. |
 | --- | --- |
-| `attributes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!\>!:Specifies attributes to be extracted from the text. If null is specified, all available attributes will be used. |
+| `attributes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!\>!:Specifies attributes to be extracted from the text. If null is specified, all available attributes will be used. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------|
@@ -157,7 +157,7 @@ Constructs an AttributedString instance with the subrange of the given attribute
 
 **See Also**
 
-- [java.text.Annotation](https://developer.android.com/reference/kotlin/java/text/Annotation)
+- [java.text.Annotation](../java/text/Annotation.md)
 
 ## Public methods
 
@@ -176,7 +176,7 @@ Adds an attribute to the entire string.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attribute` | [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!:the attribute key |
+| `attribute` | [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!:the attribute key |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the value of the attribute; may be null |
 
 | Exceptions ||
@@ -201,7 +201,7 @@ Adds an attribute to a subrange of the string.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attribute` | [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!:the attribute key |
+| `attribute` | [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!:the attribute key |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The value of the attribute. May be null. |
 | `beginIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the first character of the range. |
 | --- | --- |
@@ -228,7 +228,7 @@ Adds a set of attributes to a subrange of the string.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attributes` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<out [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!,\*\>!:The attributes to be added to the string. |
+| `attributes` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<out [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!,\*\>!:The attributes to be added to the string. |
 | `beginIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the first character of the range. |
 | `endIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the character following the last character of the range. |
 | --- | --- |
@@ -250,7 +250,7 @@ Creates an AttributedCharacterIterator instance that provides access to the enti
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | An iterator providing access to the text and its attributes. |
+| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | An iterator providing access to the text and its attributes. |
 
 ### getIterator
 
@@ -264,11 +264,11 @@ Creates an AttributedCharacterIterator instance that provides access to selected
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attributes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!\>!:a list of attributes that the client is interested in |
+| `attributes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!\>!:a list of attributes that the client is interested in |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | an iterator providing access to the entire text and its selected attributes |
+| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | an iterator providing access to the entire text and its selected attributes |
 
 ### getIterator
 
@@ -286,14 +286,14 @@ Creates an AttributedCharacterIterator instance that provides access to selected
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attributes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AttributedCharacterIterator.Attribute](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.Attribute)!\>!:a list of attributes that the client is interested in |
+| `attributes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AttributedCharacterIterator.Attribute](../java/text/AttributedCharacterIterator.Attribute.md)!\>!:a list of attributes that the client is interested in |
 | `beginIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the first character |
 | `endIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of the character following the last character |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator)! | an iterator providing access to the text and its attributes |
+| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | an iterator providing access to the text and its attributes |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # EventOutput
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/EventOutput "View this page in Java") 
+Kotlin| [Java](../android/adservices/ondevicepersonalization/EventOutput.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class EventOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.EventOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#) |
+| ↳ | [android.adservices.ondevicepersonalization.EventOutput](../android/adservices/ondevicepersonalization/EventOutput.md) |
 
-The result returned by [IsolatedWorker.onEvent(EventInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onEvent(android.adservices.ondevicepersonalization.EventInput,%20android.os.OutcomeReceiver)).
+The result returned by [IsolatedWorker.onEvent(EventInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput.Builder) A builder for [EventOutput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#) |
+| | [Builder](../android/adservices/ondevicepersonalization/EventOutput.Builder.md) A builder for [EventOutput](../android/adservices/ondevicepersonalization/EventOutput.md) |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord)? | [getEventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#getEventLogRecord())`()` An [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord) to be written to the EVENTS table, if not null. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventOutput#hashCode())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/EventOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md)? | [getEventLogRecord](../android/adservices/ondevicepersonalization/EventOutput.md))`()` An [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) to be written to the EVENTS table, if not null. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/EventOutput.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -69,7 +69,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getEventLogRecord(): EventLogRecord?
 ```
 
-An [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord) to be written to the EVENTS table, if not null. Each [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord) is associated with a row in an existing [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord) that has been written to the REQUESTS table. 
+An [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) to be written to the EVENTS table, if not null. Each [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) is associated with a row in an existing [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) that has been written to the REQUESTS table. 
 
 ### hashCode
 

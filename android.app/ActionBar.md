@@ -2,7 +2,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # ActionBar
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/ActionBar "View this page in Java")
+Kotlin | [Java](../android/app/ActionBar.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ abstract class ActionBar
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.ActionBar](https://developer.android.com/reference/kotlin/android/app/ActionBar#) |
+| ↳ | [android.app.ActionBar](../android/app/ActionBar.md) |
 
 A primary toolbar within the activity that may display the activity title, application-level navigation affordances, and other interactive items.
 
@@ -71,7 +71,7 @@ In some cases, the action bar may be overlayed by another bar that enables conte
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#addTab(android.app.ActionBar.Tab,%20kotlin.Int)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add a tab for use in tabbed navigation mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#addTab(android.app.ActionBar.Tab,%20kotlin.Int,%20kotlin.Boolean)(tab: https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, setSelected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Add a tab for use in tabbed navigation mode. |
-| abstract [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getCustomView()()` <br /> |
+| abstract [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getCustomView()()` <br /> |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getDisplayOptions()()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getElevation()()` Get the Z-axis elevation of the action bar in pixels. |
@@ -82,19 +82,19 @@ In some cases, the action bar may be overlayed by another bar that enables conte
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getNavigationMode()()` Returns the current navigation mode. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getSelectedNavigationIndex()()` Get the position of the selected navigation item in list or tabbed navigation modes. |
-| abstract [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getSelectedTab()()` Returns the currently selected tab if in tabbed navigation mode and there is at least one tab present. |
+| abstract [ActionBar.Tab](../android/app/ActionBar.Tab.md)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getSelectedTab()()` Returns the currently selected tab if in tabbed navigation mode and there is at least one tab present. |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getSubtitle()()` Returns the current ActionBar subtitle in standard mode. |
 | --- | --- |
-| abstract [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getTabAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the tab at the specified index. |
+| abstract [ActionBar.Tab](../android/app/ActionBar.Tab.md)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getTabAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the tab at the specified index. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getTabCount()()` Returns the number of tabs currently registered with the action bar. |
-| open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getThemedContext()()` Returns a `https://developer.android.com/reference/kotlin/android/content/Context.html#` with an appropriate theme for creating views that will appear in the action bar. |
+| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getThemedContext()()` Returns a `https://developer.android.com/reference/kotlin/android/content/Context.html#` with an appropriate theme for creating views that will appear in the action bar. |
 | --- | --- |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#getTitle()()` Returns the current ActionBar title in standard mode. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#hide()()` Hide the ActionBar if it is currently showing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#isHideOnContentScrollEnabled()()` Return whether the action bar is configured to scroll out of sight along with a `https://developer.android.com/reference/kotlin/android/view/View.html#setNestedScrollingEnabled(kotlin.Boolean)`. |
 | --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#isShowing()()` <br /> |
-| abstract [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#newTab()()` Create and return a new `https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab`. |
+| abstract [ActionBar.Tab](../android/app/ActionBar.Tab.md)! | `https://developer.android.com/reference/kotlin/android/app/ActionBar#newTab()()` Create and return a new `https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab`. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#removeAllTabs()()` Remove all tabs from the action bar and deselect the current tab. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActionBar#removeOnMenuVisibilityListener(android.app.ActionBar.OnMenuVisibilityListener)(listener: https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener!)` Remove a menu visibility listener. |
@@ -308,7 +308,7 @@ Add a listener that will respond to menu visibility change events.
 
 | Parameters ||
 |---|---|
-| `listener` | [ActionBar.OnMenuVisibilityListener](https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener)!: The new listener to add |
+| `listener` | [ActionBar.OnMenuVisibilityListener](../android/app/ActionBar.OnMenuVisibilityListener.md)!: The new listener to add |
 
 ### addTab
 
@@ -325,7 +325,7 @@ Add a tab for use in tabbed navigation mode. The tab will be added at the end of
 
 | Parameters ||
 |---|---|
-| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!: Tab to add |
+| `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!: Tab to add |
 
 ### addTab
 
@@ -345,7 +345,7 @@ Add a tab for use in tabbed navigation mode. The tab will be added at the end of
 
 | Parameters ||
 |---|---|
-| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!: Tab to add |
+| `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!: Tab to add |
 | `setSelected` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the added tab should become the selected tab. |
 
 ### addTab
@@ -366,7 +366,7 @@ Add a tab for use in tabbed navigation mode. The tab will be inserted at `positi
 
 | Parameters ||
 |---|---|
-| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!: The tab to add |
+| `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!: The tab to add |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new position of the tab |
 
 ### addTab
@@ -388,7 +388,7 @@ Add a tab for use in tabbed navigation mode. The tab will be insterted at `posit
 
 | Parameters ||
 |---|---|
-| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!: The tab to add |
+| `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!: The tab to add |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new position of the tab |
 | `setSelected` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the added tab should become the selected tab. |
 | --- | --- |
@@ -707,7 +707,7 @@ Remove a menu visibility listener. This listener will no longer receive menu vis
 
 | Parameters ||
 |---|---|
-| `listener` | [ActionBar.OnMenuVisibilityListener](https://developer.android.com/reference/kotlin/android/app/ActionBar.OnMenuVisibilityListener)!: A listener to remove that was previously added |
+| `listener` | [ActionBar.OnMenuVisibilityListener](../android/app/ActionBar.OnMenuVisibilityListener.md)!: A listener to remove that was previously added |
 
 ### removeTab
 
@@ -724,7 +724,7 @@ Remove a tab from the action bar. If the removed tab was selected it will be des
 
 | Parameters ||
 |---|---|
-| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!: The tab to remove |
+| `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!: The tab to remove |
 
 ### removeTabAt
 
@@ -760,7 +760,7 @@ Note: If you want to select by index, use `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!: Tab to select |
+| `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!: Tab to select |
 
 ### setBackgroundDrawable
 
@@ -774,7 +774,7 @@ Set the ActionBar's background. This will be used for the primary action bar.
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)?: Background drawable. This value may be `null`. |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)?: Background drawable. This value may be `null`. |
 
 **See Also**
 
@@ -793,7 +793,7 @@ Set the action bar into custom navigation mode, supplying a view for custom navi
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: Custom navigation view to place in the ActionBar. |
+| `view` | [View](../android/view/View.md)!: Custom navigation view to place in the ActionBar. |
 
 ### setCustomView
 
@@ -814,8 +814,8 @@ The display option `https://developer.android.com/reference/kotlin/android/app/A
 
 | Parameters ||
 |---|---|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!: Custom navigation view to place in the ActionBar. |
-| `layoutParams` | [ActionBar.LayoutParams](https://developer.android.com/reference/kotlin/android/app/ActionBar.LayoutParams)!: How this custom view should layout in the bar. |
+| `view` | [View](../android/view/View.md)!: Custom navigation view to place in the ActionBar. |
+| `layoutParams` | [ActionBar.LayoutParams](../android/app/ActionBar.LayoutParams.md)!: How this custom view should layout in the bar. |
 
 **See Also**
 
@@ -1095,7 +1095,7 @@ If you implement alternate or intermediate behavior around Up, you should also c
 
 | Parameters ||
 |---|---|
-| `indicator` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: A drawable to use for the up indicator, or null to use the theme's default |
+| `indicator` | [Drawable](../android/graphics/drawable/Drawable.md)!: A drawable to use for the up indicator, or null to use the theme's default |
 
 **See Also**
 
@@ -1157,7 +1157,7 @@ Set the icon to display in the 'home' section of the action bar. The action bar 
 
 | Parameters ||
 |---|---|
-| `icon` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: Drawable to show as an icon. |
+| `icon` | [Drawable](../android/graphics/drawable/Drawable.md)!: Drawable to show as an icon. |
 
 **See Also**
 
@@ -1201,8 +1201,8 @@ Set the adapter and navigation callback for list navigation mode. The supplied a
 
 | Parameters ||
 |---|---|
-| `adapter` | [SpinnerAdapter](https://developer.android.com/reference/kotlin/android/widget/SpinnerAdapter.html#)!: An adapter that will provide views both to display the current navigation selection and populate views within the dropdown navigation menu. |
-| `callback` | [ActionBar.OnNavigationListener](https://developer.android.com/reference/kotlin/android/app/ActionBar.OnNavigationListener)!: An OnNavigationListener that will receive events when the user selects a navigation item. |
+| `adapter` | [SpinnerAdapter](../android/widget/SpinnerAdapter.md)!: An adapter that will provide views both to display the current navigation selection and populate views within the dropdown navigation menu. |
+| `callback` | [ActionBar.OnNavigationListener](../android/app/ActionBar.OnNavigationListener.md)!: An OnNavigationListener that will receive events when the user selects a navigation item. |
 
 ### setLogo
 
@@ -1216,7 +1216,7 @@ Set the logo to display in the 'home' section of the action bar. The action bar 
 
 | Parameters ||
 |---|---|
-| `logo` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: Drawable to show as a logo. |
+| `logo` | [Drawable](../android/graphics/drawable/Drawable.md)!: Drawable to show as a logo. |
 
 **See Also**
 
@@ -1296,7 +1296,7 @@ You can enable split action bar with `https://developer.android.com/reference/ko
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: Background drawable for the split bar |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)!: Background drawable for the split bar |
 
 ### setStackedBackgroundDrawable
 
@@ -1310,7 +1310,7 @@ Set the ActionBar's stacked background. This will appear in the second row/stack
 
 | Parameters ||
 |---|---|
-| `d` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!: Background drawable for the stacked row |
+| `d` | [Drawable](../android/graphics/drawable/Drawable.md)!: Background drawable for the stacked row |
 
 ### setSubtitle
 

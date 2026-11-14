@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ECKey
 ```
 
-| [java.security.interfaces.ECKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECKey#) |
+| [java.security.interfaces.ECKey](../java/security/interfaces/ECKey.md) |
 
-| Known Direct Subclasses [ECPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPrivateKey), [ECPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey) |------------------------------------------------------------------------------------------------------|------------------------------------------------------| | [ECPrivateKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPrivateKey) | The interface to an elliptic curve (EC) private key. | | [ECPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey) | The interface to an elliptic curve (EC) public key. | |
+| Known Direct Subclasses [ECPrivateKey](../java/security/interfaces/ECPrivateKey.md), [ECPublicKey](../java/security/interfaces/ECPublicKey.md) |------------------------------------------------------------------------------------------------------|------------------------------------------------------| | [ECPrivateKey](../java/security/interfaces/ECPrivateKey.md) | The interface to an elliptic curve (EC) private key. | | [ECPublicKey](../java/security/interfaces/ECPublicKey.md) | The interface to an elliptic curve (EC) public key. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The interface to an elliptic curve (EC) key.
@@ -19,7 +19,7 @@ The interface to an elliptic curve (EC) key.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec.html#)! | [getParams](https://developer.android.com/reference/kotlin/java/security/interfaces/ECKey#getParams())`()` Returns the domain parameters associated with this key. |
+| abstract [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | [getParams](../java/security/interfaces/ECKey.md))`()` Returns the domain parameters associated with this key. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Returns the domain parameters associated with this key. The domain parameters ar
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec.html#)! | the associated domain parameters. |
+| [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | the associated domain parameters. |

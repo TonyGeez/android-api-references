@@ -11,10 +11,10 @@ open class ProviderNotFoundException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.file.ProviderNotFoundException](https://developer.android.com/reference/kotlin/java/nio/file/ProviderNotFoundException#) |
+| | | | ↳ | [java.nio.file.ProviderNotFoundException](../java/nio/file/ProviderNotFoundException.md) |
 
 Runtime exception thrown when a provider of the required type cannot be found.
 
@@ -22,8 +22,8 @@ Runtime exception thrown when a provider of the required type cannot be found.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ProviderNotFoundException](https://developer.android.com/reference/kotlin/java/nio/file/ProviderNotFoundException#ProviderNotFoundException())`()` Constructs an instance of this class. |
-| [ProviderNotFoundException](https://developer.android.com/reference/kotlin/java/nio/file/ProviderNotFoundException#ProviderNotFoundException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class. |
+| [ProviderNotFoundException](../java/nio/file/ProviderNotFoundException.md))`()` Constructs an instance of this class. |
+| [ProviderNotFoundException](../java/nio/file/ProviderNotFoundException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an instance of this class. |
 
 ## Public constructors
 

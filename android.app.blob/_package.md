@@ -2,11 +2,11 @@
 
 # android.app.blob
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/blob/package-summary "View this page in Java")
+Kotlin| [Java](../android/app/blob/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [BlobHandle](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle) | An identifier to represent a blob. |
+| [BlobHandle](../android/app/blob/BlobHandle.md) | An identifier to represent a blob. |
 | --- | --- |
-| [BlobStoreManager](https://developer.android.com/reference/kotlin/android/app/blob/BlobStoreManager) | This class provides access to the blob store managed by the system. |
+| [BlobStoreManager](../android/app/blob/BlobStoreManager.md) | This class provides access to the blob store managed by the system. |

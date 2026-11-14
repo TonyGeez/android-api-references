@@ -2,7 +2,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # UsbEndpoint
 
-Kotlin | [Java](https://developer.android.com/reference/android/hardware/usb/UsbEndpoint "View this page in Java")
+Kotlin | [Java](../android/hardware/usb/UsbEndpoint.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class UsbEndpoint : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.usb.UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#) |
+| ↳ | [android.hardware.usb.UsbEndpoint](../android/hardware/usb/UsbEndpoint.md) |
 
 A class representing an endpoint on a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface`. Endpoints are the channels for sending and receiving data over USB. Typically bulk endpoints are used for sending non-trivial amounts of data. Interrupt endpoints are used for sending small amounts of data, typically events, separately from the main data streams. The endpoint zero is a special endpoint for control messages sent from the host to device. Isochronous endpoints are currently unsupported.
 
@@ -39,7 +39,7 @@ A class representing an endpoint on a `https://developer.android.com/reference/k
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [UsbEndpoint](https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#)!\> | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UsbEndpoint](../android/hardware/usb/UsbEndpoint.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

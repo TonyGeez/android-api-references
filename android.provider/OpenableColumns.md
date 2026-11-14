@@ -4,28 +4,28 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OpenableColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/OpenableColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/OpenableColumns.md) 
 | --- | --- |
 
 ```
 interface OpenableColumns
 ```
 
-| [android.provider.OpenableColumns](https://developer.android.com/reference/kotlin/android/provider/OpenableColumns#) |
+| [android.provider.OpenableColumns](../android/provider/OpenableColumns.md) |
 
-| Known Direct Subclasses [VoicemailContract.Voicemails](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract.Voicemails) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------| | [VoicemailContract.Voicemails](https://developer.android.com/reference/kotlin/android/provider/VoicemailContract.Voicemails) | Defines fields exposed through the /voicemail path of this content provider. | |
+| Known Direct Subclasses [VoicemailContract.Voicemails](../android/provider/VoicemailContract.Voicemails.md) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------| | [VoicemailContract.Voicemails](../android/provider/VoicemailContract.Voicemails.md) | Defines fields exposed through the /voicemail path of this content provider. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 These are standard columns for openable URIs. Providers that serve openable URIs*must*support at least these columns when queried.
 
-To find the content type of a URI, use [ContentResolver.getType(android.net.Uri)](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#getType(android.net.Uri)).
+To find the content type of a URI, use [ContentResolver.getType(android.net.Uri)](../android/content/ContentResolver.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DISPLAY_NAME](https://developer.android.com/reference/kotlin/android/provider/OpenableColumns#DISPLAY_NAME:kotlin.String) The human-friendly name of file. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SIZE](https://developer.android.com/reference/kotlin/android/provider/OpenableColumns#SIZE:kotlin.String) The number of bytes in the file identified by the openable URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DISPLAY_NAME](../android/provider/OpenableColumns.md) The human-friendly name of file. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SIZE](../android/provider/OpenableColumns.md) The number of bytes in the file identified by the openable URI. |
 
 ## Constants
 

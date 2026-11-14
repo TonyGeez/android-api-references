@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ScrollCaptureSession
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ScrollCaptureSession "View this page in Java") 
+Kotlin| [Java](../android/view/ScrollCaptureSession.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ open class ScrollCaptureSession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ScrollCaptureSession](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#) |
+| ↳ | [android.view.ScrollCaptureSession](../android/view/ScrollCaptureSession.md) |
 
-A session represents the scope of interaction between a [ScrollCaptureCallback](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback) and the system during an active scroll capture operation.
+A session represents the scope of interaction between a [ScrollCaptureCallback](../android/view/ScrollCaptureCallback.md) and the system during an active scroll capture operation.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ScrollCaptureSession](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#ScrollCaptureSession(android.view.Surface,%20android.graphics.Rect,%20android.graphics.Point))`(`surface:` ` [Surface](https://developer.android.com/reference/kotlin/android/view/Surface)`, `scrollBounds:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `positionInWindow:` ` [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#)`)` Constructs a new session instance. |
+| [ScrollCaptureSession](../android/view/ScrollCaptureSession.md))`(`surface:` ` [Surface](../android/view/Surface.md)`, `scrollBounds:` ` [Rect](../android/graphics/Rect.md)`, `positionInWindow:` ` [Point](../android/graphics/Point.md)`)` Constructs a new session instance. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#) | [getPositionInWindow](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#getPositionInWindow())`()` Returns the offset of`scroll bounds`within the window. |
-| open [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | [getScrollBounds](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#getScrollBounds())`()` Returns the`scroll bounds`, as provided by [ScrollCaptureCallback.onScrollCaptureSearch](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureSearch(android.os.CancellationSignal,%20java.util.function.Consumer)). |
-| open [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) | [getSurface](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureSession#getSurface())`()` Returns a [BufferQueue](https://source.android.com/devices/graphics/arch-bq-gralloc) in the form of a [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) for transfer of image buffers. |
+| open [Point](../android/graphics/Point.md) | [getPositionInWindow](../android/view/ScrollCaptureSession.md))`()` Returns the offset of`scroll bounds`within the window. |
+| open [Rect](../android/graphics/Rect.md) | [getScrollBounds](../android/view/ScrollCaptureSession.md))`()` Returns the`scroll bounds`, as provided by [ScrollCaptureCallback.onScrollCaptureSearch](../android/view/ScrollCaptureCallback.md)). |
+| open [Surface](../android/view/Surface.md) | [getSurface](../android/view/ScrollCaptureSession.md))`()` Returns a [BufferQueue](https://source.android.com/devices/graphics/arch-bq-gralloc) in the form of a [Surface](../android/view/Surface.md) for transfer of image buffers. |
 | --- | --- |
 
 ## Public constructors
@@ -47,9 +47,9 @@ Constructs a new session instance.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surface` | [Surface](https://developer.android.com/reference/kotlin/android/view/Surface):the surface to consume generated images This value cannot be`null`. |
-| `scrollBounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):the bounds of the capture area within the containing view This value cannot be`null`. |
-| `positionInWindow` | [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#):the offset of scrollBounds within the window This value cannot be`null`. |
+| `surface` | [Surface](../android/view/Surface.md):the surface to consume generated images This value cannot be`null`. |
+| `scrollBounds` | [Rect](../android/graphics/Rect.md):the bounds of the capture area within the containing view This value cannot be`null`. |
+| `positionInWindow` | [Point](../android/graphics/Point.md):the offset of scrollBounds within the window This value cannot be`null`. |
 | --- | --- |
 
 ## Public methods
@@ -66,7 +66,7 @@ Returns the offset of`scroll bounds`within the window.
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Point](https://developer.android.com/reference/kotlin/android/graphics/Point.html#) | the area of scrolling content within the containing view This value cannot be`null`. |
+| [Point](../android/graphics/Point.md) | the area of scrolling content within the containing view This value cannot be`null`. |
 
 ### getScrollBounds
 
@@ -76,11 +76,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getScrollBounds(): Rect
 ```
 
-Returns the`scroll bounds`, as provided by [ScrollCaptureCallback.onScrollCaptureSearch](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureSearch(android.os.CancellationSignal,%20java.util.function.Consumer)).
+Returns the`scroll bounds`, as provided by [ScrollCaptureCallback.onScrollCaptureSearch](../android/view/ScrollCaptureCallback.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#) | the area of scrolling content within the containing view This value cannot be`null`. |
+| [Rect](../android/graphics/Rect.md) | the area of scrolling content within the containing view This value cannot be`null`. |
 
 ### getSurface
 
@@ -90,13 +90,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getSurface(): Surface
 ```
 
-Returns a [BufferQueue](https://source.android.com/devices/graphics/arch-bq-gralloc) in the form of a [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) for transfer of image buffers.
+Returns a [BufferQueue](https://source.android.com/devices/graphics/arch-bq-gralloc) in the form of a [Surface](../android/view/Surface.md) for transfer of image buffers.
 
-The surface is guaranteed to remain [valid](https://developer.android.com/reference/kotlin/android/view/Surface#isValid())until the session [ends](https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback#onScrollCaptureEnd(java.lang.Runnable)).
+The surface is guaranteed to remain [valid](../android/view/Surface.md))until the session [ends](../android/view/ScrollCaptureCallback.md)).
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Surface](https://developer.android.com/reference/kotlin/android/view/Surface) | the surface for transferring image buffers This value cannot be`null`. |
+| [Surface](../android/view/Surface.md) | the surface for transferring image buffers This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------------------|--------------------------------|

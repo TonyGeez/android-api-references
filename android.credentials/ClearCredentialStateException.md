@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ClearCredentialStateException
 
-Kotlin| [Java](https://developer.android.com/reference/android/credentials/ClearCredentialStateException "View this page in Java") 
+Kotlin| [Java](../android/credentials/ClearCredentialStateException.md) 
 | --- | --- |
 
 ```
@@ -14,28 +14,28 @@ open class ClearCredentialStateException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [android.credentials.ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [android.credentials.ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md) |
 | --- | --- | --- | --- |
 
-Represents an error encountered during the [CredentialManager.clearCredentialState(ClearCredentialStateRequest,](https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#clearCredentialState(android.credentials.ClearCredentialStateRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver))operation.
+Represents an error encountered during the [CredentialManager.clearCredentialState(ClearCredentialStateRequest,](../android/credentials/CredentialManager.md))operation.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_UNKNOWN](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#TYPE_UNKNOWN:kotlin.String) The error type value for when the given operation failed due to an unknown reason. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_UNKNOWN](../android/credentials/ClearCredentialStateException.md) The error type value for when the given operation failed due to an unknown reason. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#ClearCredentialStateException(kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#). |
-| [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#ClearCredentialStateException(kotlin.String,%20kotlin.String))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#). |
-| [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#ClearCredentialStateException(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#). |
-| [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#ClearCredentialStateException(kotlin.String,%20kotlin.Throwable))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#). |
+| [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md). |
+| [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md). |
+| [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md). |
+| [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#getType())`()` Returns the specific exception type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](../android/credentials/ClearCredentialStateException.md))`()` Returns the specific exception type. |
 
 ## Constants
 
@@ -61,7 +61,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 ClearCredentialStateException(type: String)
 ```
 
-Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#).
+Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ ClearCredentialStateException(
     message: String?)
 ```
 
-Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#).
+Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md).
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------|
@@ -103,7 +103,7 @@ ClearCredentialStateException(
     cause: Throwable?)
 ```
 
-Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#).
+Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md).
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
@@ -126,7 +126,7 @@ ClearCredentialStateException(
     cause: Throwable?)
 ```
 
-Constructs a [ClearCredentialStateException](https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException#).
+Constructs a [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------|

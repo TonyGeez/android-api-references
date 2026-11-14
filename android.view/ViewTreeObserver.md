@@ -8,7 +8,7 @@ class ViewTreeObserver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewTreeObserver](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#) |
+| ↳ | [android.view.ViewTreeObserver](../android/view/ViewTreeObserver.md) |
 
 A view tree observer is used to register listeners that can be notified of global changes in the view tree. Such global events include, but are not limited to, layout of the whole tree, beginning of the drawing pass, touch mode change.... A ViewTreeObserver should never be instantiated by applications as it is provided by the views hierarchy. Refer to `https://developer.android.com/reference/kotlin/android/view/View#getViewTreeObserver()` for more information.
 
@@ -89,7 +89,7 @@ Register a callback to be invoked when the view tree is about to be drawn.
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnDrawListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnDrawListener)!: The callback to add |
+| `listener` | [ViewTreeObserver.OnDrawListener](../android/view/ViewTreeObserver.OnDrawListener.md)!: The callback to add |
 
 | Exceptions ||
 |---|---|
@@ -115,7 +115,7 @@ Register a callback to be invoked when the global layout state or the visibility
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnGlobalLayoutListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalLayoutListener)!: The callback to add |
+| `listener` | [ViewTreeObserver.OnGlobalLayoutListener](../android/view/ViewTreeObserver.OnGlobalLayoutListener.md)!: The callback to add |
 
 | Exceptions ||
 |---|---|
@@ -133,7 +133,7 @@ Register a callback to be invoked when the view tree is about to be drawn
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnPreDrawListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnPreDrawListener)!: The callback to add |
+| `listener` | [ViewTreeObserver.OnPreDrawListener](../android/view/ViewTreeObserver.OnPreDrawListener.md)!: The callback to add |
 
 | Exceptions ||
 |---|---|
@@ -151,7 +151,7 @@ Register a callback to be invoked when a view has been scrolled.
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnScrollChangedListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnScrollChangedListener)!: The callback to add |
+| `listener` | [ViewTreeObserver.OnScrollChangedListener](../android/view/ViewTreeObserver.OnScrollChangedListener.md)!: The callback to add |
 
 | Exceptions ||
 |---|---|
@@ -169,7 +169,7 @@ Add a listener to be notified when the tree's *transformed* gesture exclusion re
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!\>!\>: listener to add. This value cannot be `null`. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>!\>: listener to add. This value cannot be `null`. |
 
 **See Also**
 
@@ -187,7 +187,7 @@ Register a callback to be invoked when the invoked when the touch mode changes.
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnTouchModeChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnTouchModeChangeListener)!: The callback to add |
+| `listener` | [ViewTreeObserver.OnTouchModeChangeListener](../android/view/ViewTreeObserver.OnTouchModeChangeListener.md)!: The callback to add |
 
 | Exceptions ||
 |---|---|
@@ -205,7 +205,7 @@ Register a callback to be invoked when the view hierarchy is attached to a windo
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnWindowAttachListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowAttachListener)!: The callback to add |
+| `listener` | [ViewTreeObserver.OnWindowAttachListener](../android/view/ViewTreeObserver.OnWindowAttachListener.md)!: The callback to add |
 
 | Exceptions ||
 |---|---|
@@ -223,7 +223,7 @@ Register a callback to be invoked when the window focus state within the view tr
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnWindowFocusChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowFocusChangeListener)!: The callback to add |
+| `listener` | [ViewTreeObserver.OnWindowFocusChangeListener](../android/view/ViewTreeObserver.OnWindowFocusChangeListener.md)!: The callback to add |
 
 | Exceptions ||
 |---|---|
@@ -241,7 +241,7 @@ Register a callback to be invoked when the window visibility changes.
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.OnWindowVisibilityChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener): The callback to add. This value cannot be `null`. |
+| `listener` | [ViewTreeObserver.OnWindowVisibilityChangeListener](../android/view/ViewTreeObserver.OnWindowVisibilityChangeListener.md): The callback to add. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -259,7 +259,7 @@ Register a callback to be invoked when window insets animations start or end.
 
 | Parameters ||
 |---|---|
-| `listener` | [ViewTreeObserver.WindowInsetsAnimationListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.WindowInsetsAnimationListener): The callback to add. This value cannot be `null`. |
+| `listener` | [ViewTreeObserver.WindowInsetsAnimationListener](../android/view/ViewTreeObserver.WindowInsetsAnimationListener.md): The callback to add. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -335,7 +335,7 @@ Adds a frame commit callback. This callback will be invoked when the current ren
 
 | Parameters ||
 |---|---|
-| `callback` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#): The callback to invoke when the frame is committed. This value cannot be `null`. |
+| `callback` | [Runnable](../java/lang/Runnable.md): The callback to invoke when the frame is committed. This value cannot be `null`. |
 
 ### removeGlobalOnLayoutListener
 
@@ -352,7 +352,7 @@ Remove a previously installed global layout callback
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnGlobalLayoutListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalLayoutListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnGlobalLayoutListener](../android/view/ViewTreeObserver.OnGlobalLayoutListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -376,7 +376,7 @@ Remove a previously installed pre-draw callback.
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnDrawListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnDrawListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnDrawListener](../android/view/ViewTreeObserver.OnDrawListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -398,7 +398,7 @@ Remove a previously installed focus change callback.
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnGlobalFocusChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalFocusChangeListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnGlobalFocusChangeListener](../android/view/ViewTreeObserver.OnGlobalFocusChangeListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -420,7 +420,7 @@ Remove a previously installed global layout callback
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnGlobalLayoutListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalLayoutListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnGlobalLayoutListener](../android/view/ViewTreeObserver.OnGlobalLayoutListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -442,7 +442,7 @@ Remove a previously installed pre-draw callback
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnPreDrawListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnPreDrawListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnPreDrawListener](../android/view/ViewTreeObserver.OnPreDrawListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -464,7 +464,7 @@ Remove a previously installed scroll-changed callback
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnScrollChangedListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnScrollChangedListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnScrollChangedListener](../android/view/ViewTreeObserver.OnScrollChangedListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -486,7 +486,7 @@ Unsubscribe the given listener from gesture exclusion rect changes.
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!\>!\>: This value cannot be `null`. |
+| `listener` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>!\>: This value cannot be `null`. |
 
 **See Also**
 
@@ -505,7 +505,7 @@ Remove a previously installed touch mode change callback
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnTouchModeChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnTouchModeChangeListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnTouchModeChangeListener](../android/view/ViewTreeObserver.OnTouchModeChangeListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -527,7 +527,7 @@ Remove a previously installed window attach callback.
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnWindowAttachListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowAttachListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnWindowAttachListener](../android/view/ViewTreeObserver.OnWindowAttachListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -549,7 +549,7 @@ Remove a previously installed window focus change callback.
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnWindowFocusChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowFocusChangeListener)!: The callback to remove |
+| `victim` | [ViewTreeObserver.OnWindowFocusChangeListener](../android/view/ViewTreeObserver.OnWindowFocusChangeListener.md)!: The callback to remove |
 
 | Exceptions ||
 |---|---|
@@ -571,7 +571,7 @@ Remove a previously installed window visibility callback.
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.OnWindowVisibilityChangeListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener): The callback to remove. This value cannot be `null`. |
+| `victim` | [ViewTreeObserver.OnWindowVisibilityChangeListener](../android/view/ViewTreeObserver.OnWindowVisibilityChangeListener.md): The callback to remove. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -593,7 +593,7 @@ Remove a previously installed window insets animation callback.
 
 | Parameters ||
 |---|---|
-| `victim` | [ViewTreeObserver.WindowInsetsAnimationListener](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.WindowInsetsAnimationListener): The callback to remove. This value cannot be `null`. |
+| `victim` | [ViewTreeObserver.WindowInsetsAnimationListener](../android/view/ViewTreeObserver.WindowInsetsAnimationListener.md): The callback to remove. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -611,7 +611,7 @@ Attempts to remove the given callback from the list of pending frame complete ca
 
 | Parameters ||
 |---|---|
-| `callback` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#): The callback to remove. This value cannot be `null`. |
+| `callback` | [Runnable](../java/lang/Runnable.md): The callback to remove. This value cannot be `null`. |
 
 | Return ||
 |---|---|

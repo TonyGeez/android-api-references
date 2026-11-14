@@ -10,7 +10,7 @@ open class RSAKeyGenParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.RSAKeyGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#) |
+| ↳ | [java.security.spec.RSAKeyGenParameterSpec](../java/security/spec/RSAKeyGenParameterSpec.md) |
 
 This class specifies the set of parameters used to generate an RSA key pair.
 
@@ -18,20 +18,20 @@ This class specifies the set of parameters used to generate an RSA key pair.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RSAKeyGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#RSAKeyGenParameterSpec(kotlin.Int,%20java.math.BigInteger))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `publicExponent:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Constructs a new`RSAKeyGenParameterSpec`object from the given keysize, public-exponent value, and null key parameters. |
-| [RSAKeyGenParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#RSAKeyGenParameterSpec(kotlin.Int,%20java.math.BigInteger,%20java.security.spec.AlgorithmParameterSpec))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `publicExponent:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `keyParams:` ` [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!`)` Constructs a new`RSAKeyGenParameterSpec`object from the given keysize, public-exponent value, and key parameters. |
+| [RSAKeyGenParameterSpec](../java/security/spec/RSAKeyGenParameterSpec.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `publicExponent:` ` [BigInteger](../java/math/BigInteger.md)!`)` Constructs a new`RSAKeyGenParameterSpec`object from the given keysize, public-exponent value, and null key parameters. |
+| [RSAKeyGenParameterSpec](../java/security/spec/RSAKeyGenParameterSpec.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `publicExponent:` ` [BigInteger](../java/math/BigInteger.md)!`, `keyParams:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Constructs a new`RSAKeyGenParameterSpec`object from the given keysize, public-exponent value, and key parameters. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)! | [getKeyParams](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#getKeyParams())`()` Returns the parameters to be associated with key. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeysize](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#getKeysize())`()` Returns the keysize. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getPublicExponent](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#getPublicExponent())`()` Returns the public-exponent value. |
+| open [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getKeyParams](../java/security/spec/RSAKeyGenParameterSpec.md))`()` Returns the parameters to be associated with key. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeysize](../java/security/spec/RSAKeyGenParameterSpec.md))`()` Returns the keysize. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getPublicExponent](../java/security/spec/RSAKeyGenParameterSpec.md))`()` Returns the public-exponent value. |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [F0](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#F0:java.math.BigInteger) The public-exponent value F0 = 3. |
-| static [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [F4](https://developer.android.com/reference/kotlin/java/security/spec/RSAKeyGenParameterSpec#F4:java.math.BigInteger) The public exponent-value F4 = 65537. |
+| static [BigInteger](../java/math/BigInteger.md)! | [F0](../java/security/spec/RSAKeyGenParameterSpec.md) The public-exponent value F0 = 3. |
+| static [BigInteger](../java/math/BigInteger.md)! | [F4](../java/security/spec/RSAKeyGenParameterSpec.md) The public exponent-value F4 = 65537. |
 
 ## Public constructors
 
@@ -50,7 +50,7 @@ Constructs a new`RSAKeyGenParameterSpec`object from the given keysize, public-ex
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------|
 | `keysize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the modulus size (specified in number of bits) |
-| `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent |
+| `publicExponent` | [BigInteger](../java/math/BigInteger.md)!:the public exponent |
 
 ### RSAKeyGenParameterSpec
 
@@ -68,8 +68,8 @@ Constructs a new`RSAKeyGenParameterSpec`object from the given keysize, public-ex
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `keysize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the modulus size (specified in number of bits) |
-| `publicExponent` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public exponent |
-| `keyParams` | [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)!:the key parameters, may be null |
+| `publicExponent` | [BigInteger](../java/math/BigInteger.md)!:the public exponent |
+| `keyParams` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the key parameters, may be null |
 | --- | --- |
 
 ## Public methods
@@ -86,7 +86,7 @@ Returns the parameters to be associated with key.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [AlgorithmParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec)! | the associated parameters, may be null if not present |
+| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | the associated parameters, may be null if not present |
 
 ### getKeysize
 
@@ -114,7 +114,7 @@ Returns the public-exponent value.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the public-exponent value. |
+| [BigInteger](../java/math/BigInteger.md)! | the public-exponent value. |
 
 ## Properties
 

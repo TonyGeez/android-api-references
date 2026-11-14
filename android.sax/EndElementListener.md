@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # EndElementListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/sax/EndElementListener "View this page in Java") 
+Kotlin| [Java](../android/sax/EndElementListener.md) 
 | --- | --- |
 
 ```
 interface EndElementListener
 ```
 
-| [android.sax.EndElementListener](https://developer.android.com/reference/kotlin/android/sax/EndElementListener#) |
+| [android.sax.EndElementListener](../android/sax/EndElementListener.md) |
 
-| Known Direct Subclasses [ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener) |-----------------------------------------------------------------------------------------------|---------------------------------------------------| | [ElementListener](https://developer.android.com/reference/kotlin/android/sax/ElementListener) | Listens for the beginning and ending of elements. | |
+| Known Direct Subclasses [ElementListener](../android/sax/ElementListener.md) |-----------------------------------------------------------------------------------------------|---------------------------------------------------| | [ElementListener](../android/sax/ElementListener.md) | Listens for the beginning and ending of elements. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Listens for the end of elements.
@@ -22,7 +22,7 @@ Listens for the end of elements.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](https://developer.android.com/reference/kotlin/android/sax/EndElementListener#end())`()` Invoked at the end of an element. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../android/sax/EndElementListener.md))`()` Invoked at the end of an element. |
 
 ## Public methods
 

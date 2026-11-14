@@ -5,7 +5,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # UploadDataSink
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/http/UploadDataSink "View this page in Java") 
+Kotlin| [Java](../android/net/http/UploadDataSink.md) 
 | --- | --- |
 
 ```
@@ -14,23 +14,23 @@ abstract class UploadDataSink
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.UploadDataSink](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink#) |
+| ↳ | [android.net.http.UploadDataSink](../android/net/http/UploadDataSink.md) |
 
-Defines callbacks methods for [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider). All methods may be called synchronously or asynchronously, on any thread.
+Defines callbacks methods for [UploadDataProvider](../android/net/http/UploadDataProvider.md). All methods may be called synchronously or asynchronously, on any thread.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------|---|
-| [UploadDataSink](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink#UploadDataSink())`()` <br /> |
+| [UploadDataSink](../android/net/http/UploadDataSink.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReadError](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink#onReadError(java.lang.Exception))`(`exception:` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)`)` Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a read fails. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReadSucceeded](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink#onReadSucceeded(kotlin.Boolean))`(`finalChunk:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a read succeeds. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRewindError](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink#onRewindError(java.lang.Exception))`(`exception:` ` [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)`)` Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a rewind fails, or if rewinding uploads is not supported. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReadError](../android/net/http/UploadDataSink.md))`(`exception:` ` [Exception](../java/lang/Exception.md)`)` Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a read fails. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReadSucceeded](../android/net/http/UploadDataSink.md))`(`finalChunk:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a read succeeds. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRewindError](../android/net/http/UploadDataSink.md))`(`exception:` ` [Exception](../java/lang/Exception.md)`)` Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a rewind fails, or if rewinding uploads is not supported. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRewindSucceeded](https://developer.android.com/reference/kotlin/android/net/http/UploadDataSink#onRewindSucceeded())`()` Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a rewind succeeds. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRewindSucceeded](../android/net/http/UploadDataSink.md))`()` Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a rewind succeeds. |
 
 ## Public constructors
 
@@ -54,11 +54,11 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun onReadError(exception: Exception): Unit
 ```
 
-Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a read fails.
+Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a read fails.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `exception` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#):Exception passed on to the embedder. This value cannot be`null`. |
+| `exception` | [Exception](../java/lang/Exception.md):Exception passed on to the embedder. This value cannot be`null`. |
 
 ### onReadSucceeded
 
@@ -69,7 +69,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun onReadSucceeded(finalChunk: Boolean): Unit
 ```
 
-Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a read succeeds.
+Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a read succeeds.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,11 +84,11 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun onRewindError(exception: Exception): Unit
 ```
 
-Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a rewind fails, or if rewinding uploads is not supported.
+Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a rewind fails, or if rewinding uploads is not supported.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `exception` | [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#):Exception passed on to the embedder. This value cannot be`null`. |
+| `exception` | [Exception](../java/lang/Exception.md):Exception passed on to the embedder. This value cannot be`null`. |
 
 ### onRewindSucceeded
 
@@ -99,4 +99,4 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun onRewindSucceeded(): Unit
 ```
 
-Called by [UploadDataProvider](https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider) when a rewind succeeds.
+Called by [UploadDataProvider](../android/net/http/UploadDataProvider.md) when a rewind succeeds.

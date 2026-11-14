@@ -11,12 +11,12 @@ open class SSLException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.net.ssl.SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException#) |
+| | | | ↳ | [javax.net.ssl.SSLException](../javax/net/ssl/SSLException.md) |
 
-| Known Direct Subclasses [SSLHandshakeException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLHandshakeException), [SSLKeyException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLKeyException), [SSLPeerUnverifiedException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLPeerUnverifiedException), [SSLProtocolException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLProtocolException) |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [SSLHandshakeException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLHandshakeException) | Indicates that the client and server could not negotiate the desired level of security. | | [SSLKeyException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLKeyException) | Reports a bad SSL key. | | [SSLPeerUnverifiedException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLPeerUnverifiedException) | Indicates that the peer's identity has not been verified. | | [SSLProtocolException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLProtocolException) | Reports an error in the operation of the SSL protocol. | |
+| Known Direct Subclasses [SSLHandshakeException](../javax/net/ssl/SSLHandshakeException.md), [SSLKeyException](../javax/net/ssl/SSLKeyException.md), [SSLPeerUnverifiedException](../javax/net/ssl/SSLPeerUnverifiedException.md), [SSLProtocolException](../javax/net/ssl/SSLProtocolException.md) |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [SSLHandshakeException](../javax/net/ssl/SSLHandshakeException.md) | Indicates that the client and server could not negotiate the desired level of security. | | [SSLKeyException](../javax/net/ssl/SSLKeyException.md) | Reports a bad SSL key. | | [SSLPeerUnverifiedException](../javax/net/ssl/SSLPeerUnverifiedException.md) | Indicates that the peer's identity has not been verified. | | [SSLProtocolException](../javax/net/ssl/SSLProtocolException.md) | Reports an error in the operation of the SSL protocol. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Indicates some kind of error detected by an SSL subsystem. This class is the general class of exceptions produced by failed SSL-related operations.
@@ -25,9 +25,9 @@ Indicates some kind of error detected by an SSL subsystem. This class is the gen
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException#SSLException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an error found by an SSL subsystem. |
-| [SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException#SSLException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`SSLException`with the specified detail message and cause. |
-| [SSLException](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLException#SSLException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`SSLException`with the specified cause and a detail message of (cause==null ? null : cause.toString()) (which typically contains the class and detail message of cause). |
+| [SSLException](../javax/net/ssl/SSLException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an error found by an SSL subsystem. |
+| [SSLException](../javax/net/ssl/SSLException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`SSLException`with the specified detail message and cause. |
+| [SSLException](../javax/net/ssl/SSLException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`SSLException`with the specified cause and a detail message of (cause==null ? null : cause.toString()) (which typically contains the class and detail message of cause). |
 
 ## Public constructors
 
@@ -59,8 +59,8 @@ Creates a`SSLException`with the specified detail message and cause.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage())method). |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](../java/lang/Throwable.md))method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### SSLException
 
@@ -74,4 +74,4 @@ Creates a`SSLException`with the specified cause and a detail message of (cause==
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause())method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |

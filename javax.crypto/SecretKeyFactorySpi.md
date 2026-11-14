@@ -10,7 +10,7 @@ abstract class SecretKeyFactorySpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.SecretKeyFactorySpi](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#) |
+| ↳ | [javax.crypto.SecretKeyFactorySpi](../javax/crypto/SecretKeyFactorySpi.md) |
 
 This class defines the *Service Provider Interface* (**SPI** ) for the `SecretKeyFactory` class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a secret-key factory for a particular algorithm.
 
@@ -20,13 +20,13 @@ A provider should document all the key specifications supported by its secret ke
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SecretKeyFactorySpi](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#SecretKeyFactorySpi())`()` <br /> |
+| [SecretKeyFactorySpi](../javax/crypto/SecretKeyFactorySpi.md))`()` <br /> |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [engineGenerateSecret](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#engineGenerateSecret(java.security.spec.KeySpec))`(`keySpec:` ` [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)!`)` Generates a `SecretKey` object from the provided key specification (key material). |
-| abstract [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)! | [engineGetKeySpec](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#engineGetKeySpec(javax.crypto.SecretKey,%20java.lang.Class))`(`key:` ` [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!`, `keySpec:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
-| abstract [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | [engineTranslateKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKeyFactorySpi#engineTranslateKey(javax.crypto.SecretKey))`(`key:` ` [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
+| abstract [SecretKey](../javax/crypto/SecretKey.md)! | [engineGenerateSecret](../javax/crypto/SecretKeyFactorySpi.md))`(`keySpec:` ` [KeySpec](../java/security/spec/KeySpec.md)!`)` Generates a `SecretKey` object from the provided key specification (key material). |
+| abstract [KeySpec](../java/security/spec/KeySpec.md)! | [engineGetKeySpec](../javax/crypto/SecretKeyFactorySpi.md))`(`key:` ` [SecretKey](../javax/crypto/SecretKey.md)!`, `keySpec:` ` [Class](../java/lang/Class.md)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
+| abstract [SecretKey](../javax/crypto/SecretKey.md)! | [engineTranslateKey](../javax/crypto/SecretKeyFactorySpi.md))`(`key:` ` [SecretKey](../javax/crypto/SecretKey.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
 | --- | --- |
 
 ## Public constructors
@@ -53,11 +53,11 @@ Generates a `SecretKey` object from the provided key specification (key material
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `keySpec` | [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)!: the specification (key material) of the secret key |
+| `keySpec` | [KeySpec](../java/security/spec/KeySpec.md)!: the specification (key material) of the secret key |
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------|
-| [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | the secret key |
+| [SecretKey](../javax/crypto/SecretKey.md)! | the secret key |
 
 | Exceptions ||
 |----------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -78,12 +78,12 @@ Returns a specification (key material) of the given key object in the requested 
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!: the key |
-| `keySpec` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!: the requested format in which the key material shall be returned |
+| `key` | [SecretKey](../javax/crypto/SecretKey.md)!: the key |
+| `keySpec` | [Class](../java/lang/Class.md)\<\*\>!: the requested format in which the key material shall be returned |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [KeySpec](https://developer.android.com/reference/kotlin/java/security/spec/KeySpec.html#)! | the underlying key specification (key material) in the requested format |
+| [KeySpec](../java/security/spec/KeySpec.md)! | the underlying key specification (key material) in the requested format |
 
 | Exceptions ||
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -101,11 +101,11 @@ Translates a key object, whose provider may be unknown or potentially untrusted,
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)!: the key whose provider is unknown or untrusted |
+| `key` | [SecretKey](../javax/crypto/SecretKey.md)!: the key whose provider is unknown or untrusted |
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------|
-| [SecretKey](https://developer.android.com/reference/kotlin/javax/crypto/SecretKey)! | the translated key |
+| [SecretKey](../javax/crypto/SecretKey.md)! | the translated key |
 
 | Exceptions ||
 |-------------------------------------|------------------------------------------------------------------|

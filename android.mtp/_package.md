@@ -2,16 +2,16 @@
 
 # android.mtp
 
-Kotlin| [Java](https://developer.android.com/reference/android/mtp/package-summary "View this page in Java")
+Kotlin| [Java](../android/mtp/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [MtpConstants](https://developer.android.com/reference/kotlin/android/mtp/MtpConstants) | A class containing constants in the MTP and PTP specifications. |
+| [MtpConstants](../android/mtp/MtpConstants.md) | A class containing constants in the MTP and PTP specifications. |
 | --- | --- |
-| [MtpDevice](https://developer.android.com/reference/kotlin/android/mtp/MtpDevice) | This class represents an MTP or PTP device connected on the USB host bus. |
-| [MtpDeviceInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpDeviceInfo) | This class encapsulates information about an MTP device. |
-| [MtpEvent](https://developer.android.com/reference/kotlin/android/mtp/MtpEvent) | This class encapsulates information about a MTP event. |
+| [MtpDevice](../android/mtp/MtpDevice.md) | This class represents an MTP or PTP device connected on the USB host bus. |
+| [MtpDeviceInfo](../android/mtp/MtpDeviceInfo.md) | This class encapsulates information about an MTP device. |
+| [MtpEvent](../android/mtp/MtpEvent.md) | This class encapsulates information about a MTP event. |
 | --- | --- |
-| [MtpObjectInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpObjectInfo) | This class encapsulates information about an object on an MTP device. |
-| [MtpStorageInfo](https://developer.android.com/reference/kotlin/android/mtp/MtpStorageInfo) | This class encapsulates information about a storage unit on an MTP device. |
+| [MtpObjectInfo](../android/mtp/MtpObjectInfo.md) | This class encapsulates information about an object on an MTP device. |
+| [MtpStorageInfo](../android/mtp/MtpStorageInfo.md) | This class encapsulates information about a storage unit on an MTP device. |

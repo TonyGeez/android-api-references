@@ -11,10 +11,10 @@ open class BufferUnderflowException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.BufferUnderflowException](https://developer.android.com/reference/kotlin/java/nio/BufferUnderflowException#) |
+| | | | ↳ | [java.nio.BufferUnderflowException](../java/nio/BufferUnderflowException.md) |
 
 Unchecked exception thrown when a relative*get*operation reaches the source buffer's limit.
 
@@ -22,7 +22,7 @@ Unchecked exception thrown when a relative*get*operation reaches the source buff
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BufferUnderflowException](https://developer.android.com/reference/kotlin/java/nio/BufferUnderflowException#BufferUnderflowException())`()` Constructs an instance of this class. |
+| [BufferUnderflowException](../java/nio/BufferUnderflowException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

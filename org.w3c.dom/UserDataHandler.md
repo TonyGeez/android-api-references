@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface UserDataHandler
 ```
 
-| [org.w3c.dom.UserDataHandler](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#) |
+| [org.w3c.dom.UserDataHandler](../org/w3c/dom/UserDataHandler.md) |
 
 When associating an object to a key on a node using`Node.setUserData()`the application can provide a handler that gets called when the node the object is associated to is being cloned, imported, or renamed. This can be used by the application to implement various behaviors regarding the data it associates to the DOM nodes. This interface defines that handler.
 
@@ -18,16 +18,16 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Constants ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_ADOPTED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_ADOPTED:kotlin.Short) The node is adopted, using`Document.adoptNode()`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_CLONED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_CLONED:kotlin.Short) The node is cloned, using`Node.cloneNode()`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_DELETED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_DELETED:kotlin.Short) The node is deleted. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_ADOPTED](../org/w3c/dom/UserDataHandler.md) The node is adopted, using`Document.adoptNode()`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_CLONED](../org/w3c/dom/UserDataHandler.md) The node is cloned, using`Node.cloneNode()`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_DELETED](../org/w3c/dom/UserDataHandler.md) The node is deleted. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_IMPORTED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_IMPORTED:kotlin.Short) The node is imported, using`Document.importNode()`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_RENAMED](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#NODE_RENAMED:kotlin.Short) The node is renamed, using`Document.renameNode()`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_IMPORTED](../org/w3c/dom/UserDataHandler.md) The node is imported, using`Document.importNode()`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NODE_RENAMED](../org/w3c/dom/UserDataHandler.md) The node is renamed, using`Document.renameNode()`. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handle](https://developer.android.com/reference/kotlin/org/w3c/dom/UserDataHandler#handle(kotlin.Short,%20kotlin.String,%20kotlin.Any,%20org.w3c.dom.Node,%20org.w3c.dom.Node))`(`operation:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `src:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `dst:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` This method is called whenever the node for which this handler is registered is imported or cloned. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handle](../org/w3c/dom/UserDataHandler.md))`(`operation:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `src:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `dst:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` This method is called whenever the node for which this handler is registered is imported or cloned. |
 
 ## Constants
 

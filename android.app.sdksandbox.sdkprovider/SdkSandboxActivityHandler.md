@@ -3,14 +3,14 @@ Also in [Ad Services Extensions 7](https://developer.android.com/sdkExtensions)
 
 # SdkSandboxActivityHandler
 
-Kotlin | [Java](https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler "View this page in Java")
+Kotlin | [Java](../android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler.md)
 | --- | --- |
 
 ```
 interface SdkSandboxActivityHandler
 ```
 
-| [android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler](https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler#) |
+| [android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler](../android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler.md) |
 
 This is used to notify the SDK when an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` is created for it.
 
@@ -47,4 +47,4 @@ If SDK registers lifecycle callbacks over the passed `https://developer.android.
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#): the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` gets created. This value cannot be `null`. |
+| `activity` | [Activity](../android/app/Activity.md): the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` gets created. This value cannot be `null`. |

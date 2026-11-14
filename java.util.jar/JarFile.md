@@ -8,8 +8,8 @@ open class JarFile : ZipFile
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.zip.ZipFile](https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#) ||
-| | ↳ | [java.util.jar.JarFile](https://developer.android.com/reference/kotlin/java/util/jar/JarFile#) |
+| ↳ | [java.util.zip.ZipFile](../java/util/zip/ZipFile.md) ||
+| | ↳ | [java.util.jar.JarFile](../java/util/jar/JarFile.md) |
 
 The `JarFile` class is used to read the contents of a jar file from any file that can be opened with `java.io.RandomAccessFile`. It extends the class `java.util.zip.ZipFile` with support for reading an optional `Manifest` entry. The `Manifest` can be used to specify meta-information about the jar file and its entries.
 
@@ -35,13 +35,13 @@ Unless otherwise noted, passing a null argument to a constructor or method in th
 
 | Public methods ||
 |---|---|
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#entries()()` Returns an enumeration of the zip file entries. |
-| open [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `ZipEntry` for the given entry name or `null` if not found. |
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getInputStream(java.util.zip.ZipEntry)(ze: https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#!)` Returns an input stream for reading the contents of the specified zip file entry. |
+| open [Enumeration](../java/util/Enumeration.md)\< [JarEntry](../java/util/jar/JarEntry.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#entries()()` Returns an enumeration of the zip file entries. |
+| open [ZipEntry](../java/util/zip/ZipEntry.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `ZipEntry` for the given entry name or `null` if not found. |
+| open [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getInputStream(java.util.zip.ZipEntry)(ze: https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#!)` Returns an input stream for reading the contents of the specified zip file entry. |
 | --- | --- |
-| open [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getJarEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `JarEntry` for the given entry name or `null` if not found. |
-| open [Manifest](https://developer.android.com/reference/kotlin/java/util/jar/Manifest)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getManifest()()` Returns the jar file manifest, or `null` if none. |
-| open [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#)\< [JarEntry](https://developer.android.com/reference/kotlin/java/util/jar/JarEntry)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#stream()()` Returns an ordered `Stream` over the ZIP file entries. |
+| open [JarEntry](../java/util/jar/JarEntry.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getJarEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `JarEntry` for the given entry name or `null` if not found. |
+| open [Manifest](../java/util/jar/Manifest.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getManifest()()` Returns the jar file manifest, or `null` if none. |
+| open [Stream](../java/util/stream/Stream.md)\< [JarEntry](../java/util/jar/JarEntry.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#stream()()` Returns an ordered `Stream` over the ZIP file entries. |
 | --- | --- |
 
 | Inherited functions ||
@@ -76,7 +76,7 @@ Creates a new `JarFile` to read from the specified `File` object. The `JarFile` 
 
 | Parameters ||
 |---|---|
-| `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: the jar file to be opened for reading |
+| `file` | [File](../java/io/File.md)!: the jar file to be opened for reading |
 
 | Exceptions ||
 |---|---|
@@ -97,7 +97,7 @@ Creates a new `JarFile` to read from the specified `File` object.
 
 | Parameters ||
 |---|---|
-| `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: the jar file to be opened for reading |
+| `file` | [File](../java/io/File.md)!: the jar file to be opened for reading |
 | `verify` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether or not to verify the jar file if it is signed. |
 
 | Exceptions ||
@@ -121,7 +121,7 @@ Creates a new `JarFile` to read from the specified `File` object in the specifie
 
 | Parameters ||
 |---|---|
-| `file` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!: the jar file to be opened for reading |
+| `file` | [File](../java/io/File.md)!: the jar file to be opened for reading |
 | `verify` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether or not to verify the jar file if it is signed. |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the mode in which the file is to be opened |
 | --- | --- |
@@ -233,7 +233,7 @@ Returns an input stream for reading the contents of the specified zip file entry
 | Parameters ||
 |---|---|
 | `entry` | the zip file entry |
-| `ze` | [ZipEntry](https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#)!: the zip file entry |
+| `ze` | [ZipEntry](../java/util/zip/ZipEntry.md)!: the zip file entry |
 
 | Return ||
 |---|---|

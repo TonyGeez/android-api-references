@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PathEffect
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/PathEffect "View this page in Java") 
+Kotlin| [Java](../android/graphics/PathEffect.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class PathEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect#) |
+| ↳ | [android.graphics.PathEffect](../android/graphics/PathEffect.md) |
 
-| Known Direct Subclasses [ComposePathEffect](https://developer.android.com/reference/kotlin/android/graphics/ComposePathEffect), [CornerPathEffect](https://developer.android.com/reference/kotlin/android/graphics/CornerPathEffect), [DashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/DashPathEffect), [DiscretePathEffect](https://developer.android.com/reference/kotlin/android/graphics/DiscretePathEffect), [PathDashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathDashPathEffect), [SumPathEffect](https://developer.android.com/reference/kotlin/android/graphics/SumPathEffect) |----------------------------------------------------------------------------------------------------------|--------| | [ComposePathEffect](https://developer.android.com/reference/kotlin/android/graphics/ComposePathEffect) | <br /> | | [CornerPathEffect](https://developer.android.com/reference/kotlin/android/graphics/CornerPathEffect) | <br /> | | [DashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/DashPathEffect) | <br /> | | [DiscretePathEffect](https://developer.android.com/reference/kotlin/android/graphics/DiscretePathEffect) | <br /> | | [PathDashPathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathDashPathEffect) | <br /> | | [SumPathEffect](https://developer.android.com/reference/kotlin/android/graphics/SumPathEffect) | <br /> | |
+| Known Direct Subclasses [ComposePathEffect](../android/graphics/ComposePathEffect.md), [CornerPathEffect](../android/graphics/CornerPathEffect.md), [DashPathEffect](../android/graphics/DashPathEffect.md), [DiscretePathEffect](../android/graphics/DiscretePathEffect.md), [PathDashPathEffect](../android/graphics/PathDashPathEffect.md), [SumPathEffect](../android/graphics/SumPathEffect.md) |----------------------------------------------------------------------------------------------------------|--------| | [ComposePathEffect](../android/graphics/ComposePathEffect.md) | <br /> | | [CornerPathEffect](../android/graphics/CornerPathEffect.md) | <br /> | | [DashPathEffect](../android/graphics/DashPathEffect.md) | <br /> | | [DiscretePathEffect](../android/graphics/DiscretePathEffect.md) | <br /> | | [PathDashPathEffect](../android/graphics/PathDashPathEffect.md) | <br /> | | [SumPathEffect](../android/graphics/SumPathEffect.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 PathEffect is the base class for objects in the Paint that affect the geometry of a drawing primitive before it is transformed by the canvas' matrix and drawn.
@@ -24,11 +24,11 @@ PathEffect is the base class for objects in the Paint that affect the geometry o
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [PathEffect](https://developer.android.com/reference/kotlin/android/graphics/PathEffect#PathEffect())`()` <br /> |
+| [PathEffect](../android/graphics/PathEffect.md))`()` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/graphics/PathEffect#finalize())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/PathEffect.md))`()` <br /> |
 
 ## Public constructors
 

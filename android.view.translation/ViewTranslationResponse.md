@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ViewTranslationResponse
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/translation/ViewTranslationResponse "View this page in Java") 
+Kotlin| [Java](../android/view/translation/ViewTranslationResponse.md) 
 | --- | --- |
 
 ```
@@ -13,36 +13,36 @@ class ViewTranslationResponse : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.translation.ViewTranslationResponse](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#) |
+| ↳ | [android.view.translation.ViewTranslationResponse](../android/view/translation/ViewTranslationResponse.md) |
 
-Wrapper class representing a translation response associated with a [android.view.View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be used by translation service.
+Wrapper class representing a translation response associated with a [android.view.View](../android/view/View.md) to be used by translation service.
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse.Builder) A builder for [ViewTranslationResponse](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#) |
+| | [Builder](../android/view/translation/ViewTranslationResponse.Builder.md) A builder for [ViewTranslationResponse](../android/view/translation/ViewTranslationResponse.md) |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) | [getAutofillId](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#getAutofillId())`()` Returns the associated [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) of this response. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/translation/ViewTranslationResponse.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/translation/ViewTranslationResponse.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [AutofillId](../android/view/autofill/AutofillId.md) | [getAutofillId](../android/view/translation/ViewTranslationResponse.md))`()` Returns the associated [AutofillId](../android/view/autofill/AutofillId.md) of this response. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getKeys](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#getKeys())`()` Returns all keys in this response as a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) of Strings. |
-| [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) | [getValue](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#getValue(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Gets the [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) of the corresponding key. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#hashCode())`()` <br /> |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getKeys](../android/view/translation/ViewTranslationResponse.md))`()` Returns all keys in this response as a [Set](../java/util/Set.md) of Strings. |
+| [TranslationResponseValue](../android/view/translation/TranslationResponseValue.md) | [getValue](../android/view/translation/ViewTranslationResponse.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Gets the [TranslationResponseValue](../android/view/translation/TranslationResponseValue.md) of the corresponding key. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/translation/ViewTranslationResponse.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#toString())`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/translation/ViewTranslationResponse.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/translation/ViewTranslationResponse.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [ViewTranslationResponse](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ViewTranslationResponse](../android/view/translation/ViewTranslationResponse.md)!\> | [CREATOR](../android/view/translation/ViewTranslationResponse.md) <br /> |
 
 ## Public methods
 
@@ -56,7 +56,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -95,11 +95,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getAutofillId(): AutofillId
 ```
 
-Returns the associated [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) of this response.
+Returns the associated [AutofillId](../android/view/autofill/AutofillId.md) of this response.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------|
-| [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) | This value cannot be`null`. |
+| [AutofillId](../android/view/autofill/AutofillId.md) | This value cannot be`null`. |
 
 ### getKeys
 
@@ -109,7 +109,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getKeys(): MutableSet<String!>
 ```
 
-Returns all keys in this response as a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) of Strings. The keys are used by [getValue(java.lang.String)](https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse#getValue(kotlin.String))to get the [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) s.
+Returns all keys in this response as a [Set](../java/util/Set.md) of Strings. The keys are used by [getValue(java.lang.String)](../android/view/translation/ViewTranslationResponse.md))to get the [TranslationResponseValue](../android/view/translation/TranslationResponseValue.md) s.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
@@ -123,7 +123,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getValue(key: String): TranslationResponseValue
 ```
 
-Gets the [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) of the corresponding key.
+Gets the [TranslationResponseValue](../android/view/translation/TranslationResponseValue.md) of the corresponding key.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -131,7 +131,7 @@ Gets the [TranslationResponseValue](https://developer.android.com/reference/kotl
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue) | the [TranslationResponseValue](https://developer.android.com/reference/kotlin/android/view/translation/TranslationResponseValue). This value cannot be`null`. |
+| [TranslationResponseValue](../android/view/translation/TranslationResponseValue.md) | the [TranslationResponseValue](../android/view/translation/TranslationResponseValue.md). This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------|
@@ -176,8 +176,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

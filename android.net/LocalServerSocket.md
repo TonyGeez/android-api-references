@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LocalServerSocket
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/LocalServerSocket "View this page in Java") 
+Kotlin| [Java](../android/net/LocalServerSocket.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class LocalServerSocket : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.LocalServerSocket](https://developer.android.com/reference/kotlin/android/net/LocalServerSocket#) |
+| ↳ | [android.net.LocalServerSocket](../android/net/LocalServerSocket.md) |
 
 Non-standard class for creating an inbound UNIX-domain socket in the Linux abstract namespace.
 
@@ -21,16 +21,16 @@ Non-standard class for creating an inbound UNIX-domain socket in the Linux abstr
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocalServerSocket](https://developer.android.com/reference/kotlin/android/net/LocalServerSocket#LocalServerSocket(java.io.FileDescriptor))`(`fd:` ` [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!`)` Create a LocalServerSocket from a file descriptor that's already been created and bound. |
-| [LocalServerSocket](https://developer.android.com/reference/kotlin/android/net/LocalServerSocket#LocalServerSocket(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new server socket listening at specified name. |
+| [LocalServerSocket](../android/net/LocalServerSocket.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`)` Create a LocalServerSocket from a file descriptor that's already been created and bound. |
+| [LocalServerSocket](../android/net/LocalServerSocket.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new server socket listening at specified name. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [LocalSocket](https://developer.android.com/reference/kotlin/android/net/LocalSocket)! | [accept](https://developer.android.com/reference/kotlin/android/net/LocalServerSocket#accept())`()` Accepts a new connection to the socket. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/net/LocalServerSocket#close())`()` Closes server socket. |
-| open [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | [getFileDescriptor](https://developer.android.com/reference/kotlin/android/net/LocalServerSocket#getFileDescriptor())`()` Returns file descriptor or null if not yet open/already closed |
+| open [LocalSocket](../android/net/LocalSocket.md)! | [accept](../android/net/LocalServerSocket.md))`()` Accepts a new connection to the socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/net/LocalServerSocket.md))`()` Closes server socket. |
+| open [FileDescriptor](../java/io/FileDescriptor.md)! | [getFileDescriptor](../android/net/LocalServerSocket.md))`()` Returns file descriptor or null if not yet open/already closed |
 | --- | --- |
-| open [LocalSocketAddress](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress)! | [getLocalSocketAddress](https://developer.android.com/reference/kotlin/android/net/LocalServerSocket#getLocalSocketAddress())`()` Obtains the socket's local address |
+| open [LocalSocketAddress](../android/net/LocalSocketAddress.md)! | [getLocalSocketAddress](../android/net/LocalServerSocket.md))`()` Obtains the socket's local address |
 
 ## Public constructors
 
@@ -46,7 +46,7 @@ Create a LocalServerSocket from a file descriptor that's already been created an
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------|
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!:bound file descriptor |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!:bound file descriptor |
 
 | Exceptions ||
 |-----------------------|---|
@@ -84,7 +84,7 @@ Accepts a new connection to the socket. Blocks until a new connection arrives.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| [LocalSocket](https://developer.android.com/reference/kotlin/android/net/LocalSocket)! | a socket representing the new connection. |
+| [LocalSocket](../android/net/LocalSocket.md)! | a socket representing the new connection. |
 
 | Exceptions ||
 |-----------------------|---|
@@ -117,7 +117,7 @@ Returns file descriptor or null if not yet open/already closed
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------|
-| [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)! | fd or null |
+| [FileDescriptor](../java/io/FileDescriptor.md)! | fd or null |
 
 ### getLocalSocketAddress
 
@@ -131,4 +131,4 @@ Obtains the socket's local address
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------|
-| [LocalSocketAddress](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress)! | local address |
+| [LocalSocketAddress](../android/net/LocalSocketAddress.md)! | local address |

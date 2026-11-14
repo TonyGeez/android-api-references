@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # SharedLibraryInfo
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/pm/SharedLibraryInfo "View this page in Java")
+Kotlin | [Java](../android/content/pm/SharedLibraryInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class SharedLibraryInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#) |
+| ↳ | [android.content.pm.SharedLibraryInfo](../android/content/pm/SharedLibraryInfo.md) |
 
 This class provides information for a shared library. There are four types of shared libraries: builtin - non-updatable part of the OS; dynamic - updatable backwards-compatible dynamically linked; static - non backwards-compatible emulating static linking; SDK - updatable backwards-incompatible dynamically loaded.
 
@@ -34,9 +34,9 @@ This class provides information for a shared library. There are four types of sh
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getCertDigests()()` Gets the list of certificate digests for the shared library. |
-| [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getDeclaringPackage()()` Gets the package that declares the library. |
+| [VersionedPackage](../android/content/pm/VersionedPackage.md) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getDeclaringPackage()()` Gets the package that declares the library. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VersionedPackage](https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getDependentPackages()()` Gets the packages that depend on the library. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VersionedPackage](../android/content/pm/VersionedPackage.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getDependentPackages()()` Gets the packages that depend on the library. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getLongVersion()()` Gets the version of the library. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#getName()()` Gets the library name an app defines in its manifest to depend on the library. |
 | --- | --- |
@@ -48,7 +48,7 @@ This class provides information for a shared library. There are four types of sh
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SharedLibraryInfo](https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SharedLibraryInfo](../android/content/pm/SharedLibraryInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

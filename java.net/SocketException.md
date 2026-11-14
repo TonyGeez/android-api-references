@@ -11,12 +11,12 @@ open class SocketException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.SocketException](https://developer.android.com/reference/kotlin/java/net/SocketException#) |
+| | | | ↳ | [java.net.SocketException](../java/net/SocketException.md) |
 
-| Known Direct Subclasses [BindException](https://developer.android.com/reference/kotlin/java/net/BindException), [ConnectException](https://developer.android.com/reference/kotlin/java/net/ConnectException), [NoRouteToHostException](https://developer.android.com/reference/kotlin/java/net/NoRouteToHostException), [PortUnreachableException](https://developer.android.com/reference/kotlin/java/net/PortUnreachableException) |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [BindException](https://developer.android.com/reference/kotlin/java/net/BindException) | Signals that an error occurred while attempting to bind a socket to a local address and port. | | [ConnectException](https://developer.android.com/reference/kotlin/java/net/ConnectException) | Signals that an error occurred while attempting to connect a socket to a remote address and port. | | [NoRouteToHostException](https://developer.android.com/reference/kotlin/java/net/NoRouteToHostException) | Signals that an error occurred while attempting to connect a socket to a remote address and port. | | [PortUnreachableException](https://developer.android.com/reference/kotlin/java/net/PortUnreachableException) | Signals that an ICMP Port Unreachable message has been received on a connected datagram. | |
+| Known Direct Subclasses [BindException](../java/net/BindException.md), [ConnectException](../java/net/ConnectException.md), [NoRouteToHostException](../java/net/NoRouteToHostException.md), [PortUnreachableException](../java/net/PortUnreachableException.md) |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [BindException](../java/net/BindException.md) | Signals that an error occurred while attempting to bind a socket to a local address and port. | | [ConnectException](../java/net/ConnectException.md) | Signals that an error occurred while attempting to connect a socket to a remote address and port. | | [NoRouteToHostException](../java/net/NoRouteToHostException.md) | Signals that an error occurred while attempting to connect a socket to a remote address and port. | | [PortUnreachableException](../java/net/PortUnreachableException.md) | Signals that an ICMP Port Unreachable message has been received on a connected datagram. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that there is an error creating or accessing a Socket.
@@ -25,8 +25,8 @@ Thrown to indicate that there is an error creating or accessing a Socket.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SocketException](https://developer.android.com/reference/kotlin/java/net/SocketException#SocketException())`()` Constructs a new`SocketException`with no detail message. |
-| [SocketException](https://developer.android.com/reference/kotlin/java/net/SocketException#SocketException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`SocketException`with the specified detail message. |
+| [SocketException](../java/net/SocketException.md))`()` Constructs a new`SocketException`with no detail message. |
+| [SocketException](../java/net/SocketException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`SocketException`with the specified detail message. |
 
 ## Public constructors
 

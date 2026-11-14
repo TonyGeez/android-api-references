@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Resources
 
-Kotlin | [Java](https://developer.android.com/reference/android/content/res/Resources "View this page in Java")
+Kotlin | [Java](../android/content/res/Resources.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class Resources
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.res.Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources#) |
+| ↳ | [android.content.res.Resources](../android/content/res/Resources.md) |
 
-| Known Direct Subclasses [MockResources](https://developer.android.com/reference/kotlin/android/test/mock/MockResources.html#) |---|---| | [MockResources](https://developer.android.com/reference/kotlin/android/test/mock/MockResources.html#) | A mock `https://developer.android.com/reference/kotlin/android/content/res/Resources#` class. | |
+| Known Direct Subclasses [MockResources](../android/test/mock/MockResources.md) |---|---| | [MockResources](../android/test/mock/MockResources.md) | A mock `https://developer.android.com/reference/kotlin/android/content/res/Resources#` class. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Class for accessing an application's resources. This sits on top of the asset manager of the application (accessible through `https://developer.android.com/reference/kotlin/android/content/res/Resources#getAssets()`) and provides a high-level API for getting typed data from the assets.
@@ -49,39 +49,39 @@ For more information about using resources, see the documentation about [Applica
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#finishPreloading()()` Called by zygote when it is done preloading resources, to change back to normal Resources operation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#flushLayoutCache()()` Call this to remove all cached loaded layout resources from the Resources object. |
 | --- | --- |
-| open [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getAnimation(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an XmlResourceParser through which you can read an animation description for the given resource ID. |
-| [AssetManager](https://developer.android.com/reference/kotlin/android/content/res/AssetManager)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getAssets()()` Retrieve underlying AssetManager storage for these resources. |
+| open [XmlResourceParser](../android/content/res/XmlResourceParser.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getAnimation(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an XmlResourceParser through which you can read an animation description for the given resource ID. |
+| [AssetManager](../android/content/res/AssetManager.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getAssets()()` Retrieve underlying AssetManager storage for these resources. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getAttributeSetSourceResId(android.util.AttributeSet)(set: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#?)` Returns the resource ID of the resource that was used to create this AttributeSet. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getBoolean(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a boolean associated with a particular resource ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getColor(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a color integer associated with a particular resource ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getColor(kotlin.Int,%20android.content.res.Resources.Theme)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme?)` Returns a themed color integer associated with a particular resource ID. |
 | --- | --- |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getColorStateList(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a color state list associated with a particular resource ID. |
-| open [ColorStateList](https://developer.android.com/reference/kotlin/android/content/res/ColorStateList) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getColorStateList(kotlin.Int,%20android.content.res.Resources.Theme)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme?)` Returns a themed color state list associated with a particular resource ID. |
-| open [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getConfiguration()()` Return the current configuration that is in effect for this resource object. |
+| open [ColorStateList](../android/content/res/ColorStateList.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getColorStateList(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a color state list associated with a particular resource ID. |
+| open [ColorStateList](../android/content/res/ColorStateList.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getColorStateList(kotlin.Int,%20android.content.res.Resources.Theme)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme?)` Returns a themed color state list associated with a particular resource ID. |
+| open [Configuration](../android/content/res/Configuration.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getConfiguration()()` Return the current configuration that is in effect for this resource object. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDimension(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a dimensional for a particular resource ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDimensionPixelOffset(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a dimensional for a particular resource ID for use as an offset in raw pixels. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDimensionPixelSize(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a dimensional for a particular resource ID for use as a size in raw pixels. |
 | --- | --- |
-| open [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDisplayMetrics()()` Returns the current display metrics that are in effect for this resource object. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawable(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a drawable object associated with a particular resource ID. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawable(kotlin.Int,%20android.content.res.Resources.Theme)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme?)` Return a drawable object associated with a particular resource ID and styled for the specified theme. |
+| open [DisplayMetrics](../android/util/DisplayMetrics.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDisplayMetrics()()` Returns the current display metrics that are in effect for this resource object. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawable(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a drawable object associated with a particular resource ID. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawable(kotlin.Int,%20android.content.res.Resources.Theme)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme?)` Return a drawable object associated with a particular resource ID and styled for the specified theme. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawableForDensity(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a drawable object associated with a particular resource ID for the given screen density in DPI. |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawableForDensity(kotlin.Int,%20kotlin.Int,%20android.content.res.Resources.Theme)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme?)` Return a drawable object associated with a particular resource ID for the given screen density in DPI and styled for the specified theme. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawableForDensity(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a drawable object associated with a particular resource ID for the given screen density in DPI. |
+| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawableForDensity(kotlin.Int,%20kotlin.Int,%20android.content.res.Resources.Theme)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme?)` Return a drawable object associated with a particular resource ID for the given screen density in DPI and styled for the specified theme. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getFloat(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a floating-point value for a particular resource ID. |
 | --- | --- |
-| open [Typeface](https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getFont(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the Typeface value associated with a particular resource ID. |
+| open [Typeface](../android/graphics/Typeface.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getFont(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the Typeface value associated with a particular resource ID. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getFraction(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, base: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, pbase: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a fractional unit for a particular resource ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getIdentifier(kotlin.String,%20kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a resource identifier for the given resource name. |
 | --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getIntArray(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the int array associated with a particular resource ID. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getInteger(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an integer associated with a particular resource ID. |
-| open [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getLayout(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an XmlResourceParser through which you can read a view layout description for the given resource ID. |
+| open [XmlResourceParser](../android/content/res/XmlResourceParser.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getLayout(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an XmlResourceParser through which you can read a view layout description for the given resource ID. |
 | --- | --- |
-| open [Movie](https://developer.android.com/reference/kotlin/android/graphics/Movie.html#)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getMovie(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a movie object associated with the particular resource ID. |
+| open [Movie](../android/graphics/Movie.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getMovie(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a movie object associated with the particular resource ID. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getQuantityString(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, quantity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string necessary for grammatically correct pluralization of the given resource ID for the given quantity. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getQuantityString(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, quantity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vararg formatArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Formats the string necessary for grammatically correct pluralization of the given resource ID for the given quantity, using the given arguments. |
 | --- | --- |
@@ -95,7 +95,7 @@ For more information about using resources, see the documentation about [Applica
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getString(kotlin.Int,%20kotlin.Any)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vararg formatArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Return the string value associated with a particular resource ID, substituting the format arguments as defined in `https://developer.android.com/reference/kotlin/java/util/Formatter.html#` and java. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getStringArray(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the string array associated with a particular resource ID. |
-| open static [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources#)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getSystem()()` Return a global shared Resources object that provides access to only system resources (no application resources), is not configured for the current screen (can not use dimension units, does not change based on orientation, etc), and is not affected by Runtime Resource Overlay. |
+| open static [Resources](../android/content/res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getSystem()()` Return a global shared Resources object that provides access to only system resources (no application resources), is not configured for the current screen (can not use dimension units, does not change based on orientation, etc), and is not affected by Runtime Resource Overlay. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getText(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the string value associated with a particular resource ID. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getText(kotlin.Int,%20kotlin.CharSequence)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Return the string value associated with a particular resource ID. |
@@ -105,15 +105,15 @@ For more information about using resources, see the documentation about [Applica
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getValue(kotlin.String,%20android.util.TypedValue,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, outValue: https://developer.android.com/reference/kotlin/android/util/TypedValue.html#!, resolveRefs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Return the raw data associated with a particular resource ID. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getValueForDensity(kotlin.Int,%20kotlin.Int,%20android.util.TypedValue,%20kotlin.Boolean)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outValue: https://developer.android.com/reference/kotlin/android/util/TypedValue.html#!, resolveRefs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Get the raw value associated with a resource with associated density. |
 | --- | --- |
-| open [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getXml(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an XmlResourceParser through which you can read a generic XML resource for the given resource ID. |
-| [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#newTheme()()` Generate a new Theme object for this set of Resources. |
-| open [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#obtainAttributes(android.util.AttributeSet,%20kotlin.IntArray)(set: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!, attrs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Retrieve a set of basic attribute values from an AttributeSet, not performing styling of them using a theme and/or style resources. |
+| open [XmlResourceParser](../android/content/res/XmlResourceParser.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#getXml(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an XmlResourceParser through which you can read a generic XML resource for the given resource ID. |
+| [Resources.Theme](../android/content/res/Resources.Theme.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#newTheme()()` Generate a new Theme object for this set of Resources. |
+| open [TypedArray](../android/content/res/TypedArray.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#obtainAttributes(android.util.AttributeSet,%20kotlin.IntArray)(set: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!, attrs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Retrieve a set of basic attribute values from an AttributeSet, not performing styling of them using a theme and/or style resources. |
 | --- | --- |
-| open [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#obtainTypedArray(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an array of heterogeneous values. |
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#openRawResource(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a data stream for reading a raw resource. |
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#openRawResource(kotlin.Int,%20android.util.TypedValue)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://developer.android.com/reference/kotlin/android/util/TypedValue.html#!)` Open a data stream for reading a raw resource. |
+| open [TypedArray](../android/content/res/TypedArray.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#obtainTypedArray(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an array of heterogeneous values. |
+| open [InputStream](../java/io/InputStream.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#openRawResource(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a data stream for reading a raw resource. |
+| open [InputStream](../java/io/InputStream.md) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#openRawResource(kotlin.Int,%20android.util.TypedValue)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://developer.android.com/reference/kotlin/android/util/TypedValue.html#!)` Open a data stream for reading a raw resource. |
 | --- | --- |
-| open [AssetFileDescriptor](https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#openRawResourceFd(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a file descriptor for reading a raw resource. |
+| open [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/content/res/Resources#openRawResourceFd(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a file descriptor for reading a raw resource. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#parseBundleExtra(kotlin.String,%20android.util.AttributeSet,%20android.os.Bundle)(tagName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!, outBundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Parse a name/value pair out of an XML tag holding that data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/Resources#parseBundleExtras(android.content.res.XmlResourceParser,%20android.os.Bundle)(parser: https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser!, outBundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Parse a series of `https://developer.android.com/reference/kotlin/android/R.styleable.html#Extra:kotlin.IntArray` tags from an XML file. |
 | --- | --- |
@@ -155,9 +155,9 @@ Create a new Resources object on top of an existing set of assets in an AssetMan
 
 | Parameters ||
 |---|---|
-| `assets` | [AssetManager](https://developer.android.com/reference/kotlin/android/content/res/AssetManager)!: Previously created AssetManager. |
-| `metrics` | [DisplayMetrics](https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#)!: Current display metrics to consider when selecting/computing resource values. |
-| `config` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration)!: Desired device configuration to consider when selecting/computing resource values (optional). |
+| `assets` | [AssetManager](../android/content/res/AssetManager.md)!: Previously created AssetManager. |
+| `metrics` | [DisplayMetrics](../android/util/DisplayMetrics.md)!: Current display metrics to consider when selecting/computing resource values. |
+| `config` | [Configuration](../android/content/res/Configuration.md)!: Desired device configuration to consider when selecting/computing resource values (optional). |
 | --- | --- |
 
 ## Public methods
@@ -176,7 +176,7 @@ This should only be called from the UI thread to avoid lock contention when prop
 
 | Parameters ||
 |---|---|
-| `loaders` | [ResourcesLoader](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader)!: the loaders to add. This value cannot be `null`. |
+| `loaders` | [ResourcesLoader](../android/content/res/loader/ResourcesLoader.md)!: the loaders to add. This value cannot be `null`. |
 
 ### finishPreloading
 
@@ -248,7 +248,7 @@ Returns the resource ID of the resource that was used to create this AttributeSe
 
 | Parameters ||
 |---|---|
-| `set` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)?: AttributeSet for which we want to find the source. This value may be `null`. |
+| `set` | [AttributeSet](../android/util/AttributeSet.md)?: AttributeSet for which we want to find the source. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -317,7 +317,7 @@ Returns a themed color integer associated with a particular resource ID. If the 
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired resource identifier, as generated by the aapt tool. This integer encodes the package, type, and resource entry. The value 0 is an invalid identifier. |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?: The theme used to style the color attributes, may be `null`. |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: The theme used to style the color attributes, may be `null`. |
 
 | Return ||
 |---|---|
@@ -368,7 +368,7 @@ Returns a themed color state list associated with a particular resource ID. The 
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired resource identifier of a `https://developer.android.com/reference/kotlin/android/content/res/ColorStateList`, as generated by the aapt tool. This integer encodes the package, type, and resource entry. The value 0 is an invalid identifier. |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?: The theme used to style the color attributes, may be `null`. |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: The theme used to style the color attributes, may be `null`. |
 
 | Return ||
 |---|---|
@@ -542,7 +542,7 @@ Return a drawable object associated with a particular resource ID and styled for
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired resource identifier, as generated by the aapt tool. This integer encodes the package, type, and resource entry. The value 0 is an invalid identifier. |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?: The theme used to style the drawable attributes, may be `null`. |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: The theme used to style the drawable attributes, may be `null`. |
 
 | Return ||
 |---|---|
@@ -605,7 +605,7 @@ Return a drawable object associated with a particular resource ID for the given 
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired resource identifier, as generated by the aapt tool. This integer encodes the package, type, and resource entry. The value 0 is an invalid identifier. |
 | `density` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired screen density indicated by the resource as found in `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`. A value of 0 means to use the density returned from `https://developer.android.com/reference/kotlin/android/content/res/Resources#getConfiguration()`. This is equivalent to calling `https://developer.android.com/reference/kotlin/android/content/res/Resources#getDrawable(kotlin.Int,%20android.content.res.Resources.Theme)`. |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme)?: The theme used to style the drawable attributes, may be `null` if the drawable cannot be decoded. |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: The theme used to style the drawable attributes, may be `null` if the drawable cannot be decoded. |
 | --- | --- |
 
 | Return ||
@@ -1161,7 +1161,7 @@ Return the raw data associated with a particular resource ID.
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired resource identifier, as generated by the aapt tool. This integer encodes the package, type, and resource entry. The value 0 is an invalid identifier. |
-| `outValue` | [TypedValue](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#)!: Object in which to place the resource data. |
+| `outValue` | [TypedValue](../android/util/TypedValue.md)!: Object in which to place the resource data. |
 | `resolveRefs` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, a resource that is a reference to another resource will be followed so that you receive the actual final resource data. If false, the TypedValue will be filled in with the reference itself. |
 | --- | --- |
 
@@ -1188,7 +1188,7 @@ Note: use of this function is discouraged. It is much more efficient to retrieve
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the desired resource. This is passed to getIdentifier() with a default type of "string". |
-| `outValue` | [TypedValue](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#)!: Object in which to place the resource data. |
+| `outValue` | [TypedValue](../android/util/TypedValue.md)!: Object in which to place the resource data. |
 | `resolveRefs` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, a resource that is a reference to another resource will be followed so that you receive the actual final resource data. If false, the TypedValue will be filled in with the reference itself. |
 | --- | --- |
 
@@ -1283,7 +1283,7 @@ Retrieve a set of basic attribute values from an AttributeSet, not performing st
 
 | Parameters ||
 |---|---|
-| `set` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The current attribute values to retrieve. |
+| `set` | [AttributeSet](../android/util/AttributeSet.md)!: The current attribute values to retrieve. |
 | `attrs` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: The specific attributes to be retrieved. These attribute IDs must be sorted in ascending order. |
 
 | Return ||
@@ -1354,7 +1354,7 @@ Open a data stream for reading a raw resource. This can only be used with resour
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier to open, as generated by the aapt tool. |
-| `value` | [TypedValue](https://developer.android.com/reference/kotlin/android/util/TypedValue.html#)!: The TypedValue object to hold the resource information. |
+| `value` | [TypedValue](../android/util/TypedValue.md)!: The TypedValue object to hold the resource information. |
 
 | Return ||
 |---|---|
@@ -1412,8 +1412,8 @@ Parse a name/value pair out of an XML tag holding that data. The AttributeSet mu
 | Parameters ||
 |---|---|
 | `tagName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the tag these attributes come from; this is only used for reporting error messages. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!: The attributes from which to retrieve the name/value pair. |
-| `outBundle` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: The Bundle in which to place the parsed value. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The attributes from which to retrieve the name/value pair. |
+| `outBundle` | [Bundle](../android/os/Bundle.md)!: The Bundle in which to place the parsed value. |
 | --- | --- |
 
 | Exceptions ||
@@ -1435,8 +1435,8 @@ Parse a series of `https://developer.android.com/reference/kotlin/android/R.styl
 
 | Parameters ||
 |---|---|
-| `parser` | [XmlResourceParser](https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser)!: The parser from which to retrieve the extras. |
-| `outBundle` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!: A Bundle in which to place all parsed extras. |
+| `parser` | [XmlResourceParser](../android/content/res/XmlResourceParser.md)!: The parser from which to retrieve the extras. |
+| `outBundle` | [Bundle](../android/os/Bundle.md)!: A Bundle in which to place all parsed extras. |
 
 | Exceptions ||
 |---|---|
@@ -1459,7 +1459,7 @@ Register the resources paths of a package (e.g. a shared library). This will col
 | Parameters ||
 |---|---|
 | `uniqueId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique id for the ApplicationInfo object, to detect and ignore repeated API calls. This value cannot be `null`. |
-| `appInfo` | [ApplicationInfo](https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#): The ApplicationInfo that contains resources paths of the package. This value cannot be `null`. |
+| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): The ApplicationInfo that contains resources paths of the package. This value cannot be `null`. |
 
 ### removeLoaders
 
@@ -1475,7 +1475,7 @@ This should only be called from the UI thread to avoid lock contention when prop
 
 | Parameters ||
 |---|---|
-| `loaders` | [ResourcesLoader](https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesLoader)!: the loaders to remove. This value cannot be `null`. |
+| `loaders` | [ResourcesLoader](../android/content/res/loader/ResourcesLoader.md)!: the loaders to remove. This value cannot be `null`. |
 
 ### updateConfiguration
 

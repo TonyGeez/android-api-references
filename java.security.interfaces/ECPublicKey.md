@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ECPublicKey : ECKey, PublicKey
 ```
 
-| [java.security.interfaces.ECPublicKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey#) |
+| [java.security.interfaces.ECPublicKey](../java/security/interfaces/ECPublicKey.md) |
 
 The interface to an elliptic curve (EC) public key.
 
@@ -16,15 +16,15 @@ The interface to an elliptic curve (EC) public key.
 
 | Constants ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey#serialVersionUID:kotlin.Long) The class fingerprint that is set to indicate serialization compatibility. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/ECPublicKey.md) The class fingerprint that is set to indicate serialization compatibility. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint.html#)! | [getW](https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey#getW())`()` Returns the public point W. |
+| abstract [ECPoint](../java/security/spec/ECPoint.md)! | [getW](../java/security/interfaces/ECPublicKey.md))`()` Returns the public point W. |
 
 | Inherited functions ||
 |---|---|
-| From class [ECKey](https://developer.android.com/reference/kotlin/java/security/interfaces/ECKey) |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ECParameterSpec](https://developer.android.com/reference/kotlin/java/security/spec/ECParameterSpec.html#)! | [getParams](https://developer.android.com/reference/kotlin/java/security/interfaces/ECKey#getParams())`()` <br /> Returns the domain parameters associated with this key. The domain parameters are either explicitly specified or implicitly created during key generation. <br /> | ||
+| From class [ECKey](../java/security/interfaces/ECKey.md) |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | [getParams](../java/security/interfaces/ECKey.md))`()` <br /> Returns the domain parameters associated with this key. The domain parameters are either explicitly specified or implicitly created during key generation. <br /> | ||
 
 ## Constants
 
@@ -57,4 +57,4 @@ Returns the public point W.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------|
-| [ECPoint](https://developer.android.com/reference/kotlin/java/security/spec/ECPoint.html#)! | the public point W. |
+| [ECPoint](../java/security/spec/ECPoint.md)! | the public point W. |

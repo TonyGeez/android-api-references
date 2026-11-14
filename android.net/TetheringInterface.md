@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # TetheringInterface
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/TetheringInterface "View this page in Java")
+Kotlin | [Java](../android/net/TetheringInterface.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TetheringInterface : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.TetheringInterface](https://developer.android.com/reference/kotlin/android/net/TetheringInterface#) |
+| ↳ | [android.net.TetheringInterface](../android/net/TetheringInterface.md) |
 
 The mapping of tethering interface and type.
 
@@ -32,7 +32,7 @@ The mapping of tethering interface and type.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#getInterface()()` Get tethering interface. |
 | --- | --- |
-| [SoftApConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration)? | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#getSoftApConfiguration()()` Get the SoftApConfiguration provided for this interface, if any. |
+| [SoftApConfiguration](../android/net/wifi/SoftApConfiguration.md)? | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#getSoftApConfiguration()()` Get the SoftApConfiguration provided for this interface, if any. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#getType()()` Get tethering type. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
@@ -41,7 +41,7 @@ The mapping of tethering interface and type.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [TetheringInterface](https://developer.android.com/reference/kotlin/android/net/TetheringInterface#)!\> | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TetheringInterface](../android/net/TetheringInterface.md)!\> | `https://developer.android.com/reference/kotlin/android/net/TetheringInterface#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -75,7 +75,7 @@ TetheringInterface(
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/TetheringManager#TETHERING_WIFI:kotlin.Int` |
 | `iface` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `softApConfig` | [SoftApConfiguration](https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration)?: This value may be `null`. |
+| `softApConfig` | [SoftApConfiguration](../android/net/wifi/SoftApConfiguration.md)?: This value may be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -209,7 +209,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

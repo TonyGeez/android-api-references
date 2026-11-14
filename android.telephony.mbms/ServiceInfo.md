@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # ServiceInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/telephony/mbms/ServiceInfo "View this page in Java") 
+Kotlin| [Java](../android/telephony/mbms/ServiceInfo.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ open class ServiceInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.mbms.ServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#) |
+| ↳ | [android.telephony.mbms.ServiceInfo](../android/telephony/mbms/ServiceInfo.md) |
 
-| Known Direct Subclasses [FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo), [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo) |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------| | [FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo) | Describes a file service available from the carrier from which files can be downloaded via cell-broadcast. | | [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo) | Describes a single MBMS streaming service. | |
+| Known Direct Subclasses [FileServiceInfo](../android/telephony/mbms/FileServiceInfo.md), [StreamingServiceInfo](../android/telephony/mbms/StreamingServiceInfo.md) |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------| | [FileServiceInfo](../android/telephony/mbms/FileServiceInfo.md) | Describes a file service available from the carrier from which files can be downloaded via cell-broadcast. | | [StreamingServiceInfo](../android/telephony/mbms/StreamingServiceInfo.md) | Describes a single MBMS streaming service. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Describes a cell-broadcast service. This class should not be instantiated directly -- use [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo) or [FileServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/FileServiceInfo)
+Describes a cell-broadcast service. This class should not be instantiated directly -- use [StreamingServiceInfo](../android/telephony/mbms/StreamingServiceInfo.md) or [FileServiceInfo](../android/telephony/mbms/FileServiceInfo.md)
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\>! | [getLocales](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getLocales())`()` The languages available for this service content |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getNameForLocale](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getNameForLocale(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)`)` Get the user-displayable name for this cell-broadcast service corresponding to the provided [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/mbms/ServiceInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getLocales](../android/telephony/mbms/ServiceInfo.md))`()` The languages available for this service content |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getNameForLocale](../android/telephony/mbms/ServiceInfo.md))`(`locale:` ` [Locale](../java/util/Locale.md)`)` Get the user-displayable name for this cell-broadcast service corresponding to the provided [Locale](../java/util/Locale.md). |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!\> | [getNamedContentLocales](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getNamedContentLocales())`()` Return an unmodifiable set of the current [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) s that have a user-displayable name associated with them. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceClassName](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getServiceClassName())`()` The class name for this service - used to categorize and filter |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceId](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getServiceId())`()` The carrier's identifier for the service. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Locale](../java/util/Locale.md)!\> | [getNamedContentLocales](../android/telephony/mbms/ServiceInfo.md))`()` Return an unmodifiable set of the current [Locale](../java/util/Locale.md) s that have a user-displayable name associated with them. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceClassName](../android/telephony/mbms/ServiceInfo.md))`()` The class name for this service - used to categorize and filter |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServiceId](../android/telephony/mbms/ServiceInfo.md))`()` The carrier's identifier for the service. |
 | --- | --- |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getSessionEndTime](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getSessionEndTime())`()` The end time indicating when this session stops being available. |
-| open [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#)! | [getSessionStartTime](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getSessionStartTime())`()` The start time indicating when this service will be available. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#hashCode())`()` <br /> |
+| open [Date](../java/util/Date.md)! | [getSessionEndTime](../android/telephony/mbms/ServiceInfo.md))`()` The end time indicating when this session stops being available. |
+| open [Date](../java/util/Date.md)! | [getSessionStartTime](../android/telephony/mbms/ServiceInfo.md))`()` The start time indicating when this service will be available. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/mbms/ServiceInfo.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -73,15 +73,15 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getNameForLocale(locale: Locale): CharSequence
 ```
 
-Get the user-displayable name for this cell-broadcast service corresponding to the provided [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#).
+Get the user-displayable name for this cell-broadcast service corresponding to the provided [Locale](../java/util/Locale.md).
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#):The [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) in which you want the name of the service. This must be a value from the set returned by [getNamedContentLocales()](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getNamedContentLocales())-- an [java.util.NoSuchElementException](https://developer.android.com/reference/kotlin/java/util/NoSuchElementException.html#) may be thrown otherwise. This value cannot be`null`. |
+| `locale` | [Locale](../java/util/Locale.md):The [Locale](../java/util/Locale.md) in which you want the name of the service. This must be a value from the set returned by [getNamedContentLocales()](../android/telephony/mbms/ServiceInfo.md))-- an [java.util.NoSuchElementException](../java/util/NoSuchElementException.md) may be thrown otherwise. This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | The [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#) providing the name of the service in the given [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) This value cannot be`null`. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | The [CharSequence](../java/lang/CharSequence.md) providing the name of the service in the given [Locale](../java/util/Locale.md) This value cannot be`null`. |
 
 ### getNamedContentLocales
 
@@ -91,11 +91,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getNamedContentLocales(): MutableSet<Locale!>
 ```
 
-Return an unmodifiable set of the current [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) s that have a user-displayable name associated with them. The user-displayable name associated with any [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) in this set can be retrieved with [getNameForLocale(java.util.Locale)](https://developer.android.com/reference/kotlin/android/telephony/mbms/ServiceInfo#getNameForLocale(java.util.Locale)).
+Return an unmodifiable set of the current [Locale](../java/util/Locale.md) s that have a user-displayable name associated with them. The user-displayable name associated with any [Locale](../java/util/Locale.md) in this set can be retrieved with [getNameForLocale(java.util.Locale)](../android/telephony/mbms/ServiceInfo.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!> | An unmodifiable set of [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#) objects corresponding to a user-displayable content name in that locale. This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Locale](../java/util/Locale.md)!> | An unmodifiable set of [Locale](../java/util/Locale.md) objects corresponding to a user-displayable content name in that locale. This value cannot be`null`. |
 
 ### getServiceClassName
 

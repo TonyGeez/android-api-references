@@ -8,12 +8,12 @@ open class NativeActivity : Activity, InputQueue.Callback, SurfaceHolder.Callb
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper.html#) |||
+| ↳ | [android.content.Context](../android/content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](https://developer.android.com/reference/kotlin/android/app/Activity) ||
-| | | | | ↳ | [android.app.NativeActivity](https://developer.android.com/reference/kotlin/android/app/NativeActivity#) |
+| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
+| | | | | ↳ | [android.app.NativeActivity](../android/app/NativeActivity.md) |
 
 Convenience for implementing an activity that will be implemented purely in native code. That is, a game (or game-like thing). There is no need to derive from this class; you can simply declare it in your manifest, and use the NDK APIs from there.
 
@@ -473,7 +473,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -4542,7 +4542,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -4583,9 +4583,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -4853,7 +4853,7 @@ At the time that this function has been called, your Resources object will have 
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#): The new device configuration. This value cannot be `null`. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md): The new device configuration. This value cannot be `null`. |
 
 ### onGlobalLayout
 
@@ -4934,7 +4934,7 @@ This is called immediately after any structural changes (format or size) have be
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` of the surface. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBX_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_F16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_1010102:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_565:kotlin.Int` |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new width of the surface. Value is 0 or greater |
 | --- | --- |
@@ -4952,7 +4952,7 @@ This is called immediately after the surface is first created. Implementations o
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#): The SurfaceHolder whose surface is being created. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface is being created. This value cannot be `null`. |
 
 ### surfaceDestroyed
 
@@ -4966,7 +4966,7 @@ This is called immediately before a surface is being destroyed. After returning 
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#): The SurfaceHolder whose surface is being destroyed. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface is being destroyed. This value cannot be `null`. |
 
 ### surfaceRedrawNeeded
 
@@ -4980,7 +4980,7 @@ Called when the application needs to redraw the content of its surface, after it
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
 
 ## Protected methods
 
@@ -5003,7 +5003,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
 
 ### onDestroy
 
@@ -5079,7 +5079,7 @@ If called, this method will occur after `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): Bundle in which to place your saved state. This value cannot be `null`. |
+| `outState` | [Bundle](../android/os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
 
 ### onStart
 

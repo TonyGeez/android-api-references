@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # IntFlagMapping
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/inspector/IntFlagMapping "View this page in Java") 
+Kotlin| [Java](../android/view/inspector/IntFlagMapping.md) 
 | --- | --- |
 
 ```
@@ -13,20 +13,20 @@ class IntFlagMapping
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inspector.IntFlagMapping](https://developer.android.com/reference/kotlin/android/view/inspector/IntFlagMapping#) |
+| ↳ | [android.view.inspector.IntFlagMapping](../android/view/inspector/IntFlagMapping.md) |
 
-Maps the values of an`int`property to sets of string for properties that encode flags. An [InspectionCompanion](https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion) may provide an instance of this class to a [PropertyMapper](https://developer.android.com/reference/kotlin/android/view/inspector/PropertyMapper) for flag values packed into primitive`int`properties. Each flag has a mask and a target value, for non-exclusive flags, the target can also be used as the mask. A given integer value is compared against each flag to find what flags are active for it by bitwise anding it with the mask and comparing the result against the target, that is,`(value & mask) == target`.
+Maps the values of an`int`property to sets of string for properties that encode flags. An [InspectionCompanion](../android/view/inspector/InspectionCompanion.md) may provide an instance of this class to a [PropertyMapper](../android/view/inspector/PropertyMapper.md) for flag values packed into primitive`int`properties. Each flag has a mask and a target value, for non-exclusive flags, the target can also be used as the mask. A given integer value is compared against each flag to find what flags are active for it by bitwise anding it with the mask and comparing the result against the target, that is,`(value & mask) == target`.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IntFlagMapping](https://developer.android.com/reference/kotlin/android/view/inspector/IntFlagMapping#IntFlagMapping())`()` <br /> |
+| [IntFlagMapping](../android/view/inspector/IntFlagMapping.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](https://developer.android.com/reference/kotlin/android/view/inspector/IntFlagMapping#add(kotlin.Int,%20kotlin.Int,%20kotlin.String))`(`mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Add a mutually exclusive flag to the map. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [get](https://developer.android.com/reference/kotlin/android/view/inspector/IntFlagMapping#get(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a set of the names of enabled flags for a given property value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](../android/view/inspector/IntFlagMapping.md))`(`mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Add a mutually exclusive flag to the map. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [get](../android/view/inspector/IntFlagMapping.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a set of the names of enabled flags for a given property value. |
 
 ## Public constructors
 

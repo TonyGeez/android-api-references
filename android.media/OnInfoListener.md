@@ -4,14 +4,14 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnInfoListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnInfoListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaPlayer.OnInfoListener.md) 
 | --- | --- |
 
 ```
 interface OnInfoListener
 ```
 
-| [android.media.MediaPlayer.OnInfoListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnInfoListener#) |
+| [android.media.MediaPlayer.OnInfoListener](../android/media/MediaPlayer.OnInfoListener.md) |
 
 Interface definition of a callback to be invoked to communicate some info and/or warning about the media or its playback.
 
@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked to communicate some info and/or
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onInfo](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnInfoListener#onInfo(android.media.MediaPlayer,%20kotlin.Int,%20kotlin.Int))`(`mp:` ` [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `extra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to indicate an info or a warning. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onInfo](../android/media/MediaPlayer.OnInfoListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `extra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to indicate an info or a warning. |
 
 ## Public methods
 
@@ -39,8 +39,8 @@ Called to indicate an info or a warning.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the MediaPlayer the info pertains to. |
-| `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of info or warning. - [MEDIA_INFO_UNKNOWN](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_UNKNOWN:kotlin.Int) - [MEDIA_INFO_VIDEO_TRACK_LAGGING](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_VIDEO_TRACK_LAGGING:kotlin.Int) - [MEDIA_INFO_VIDEO_RENDERING_START](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_VIDEO_RENDERING_START:kotlin.Int) - [MEDIA_INFO_BUFFERING_START](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_BUFFERING_START:kotlin.Int) - [MEDIA_INFO_BUFFERING_END](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_BUFFERING_END:kotlin.Int) - `MEDIA_INFO_NETWORK_BANDWIDTH (703)`- bandwidth information is available (as`extra`kbps) - [MEDIA_INFO_BAD_INTERLEAVING](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_BAD_INTERLEAVING:kotlin.Int) - [MEDIA_INFO_NOT_SEEKABLE](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_NOT_SEEKABLE:kotlin.Int) - [MEDIA_INFO_METADATA_UPDATE](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_METADATA_UPDATE:kotlin.Int) - [MEDIA_INFO_UNSUPPORTED_SUBTITLE](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_UNSUPPORTED_SUBTITLE:kotlin.Int) - [MEDIA_INFO_SUBTITLE_TIMED_OUT](https://developer.android.com/reference/kotlin/android/media/MediaPlayer#MEDIA_INFO_SUBTITLE_TIMED_OUT:kotlin.Int) |
+| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer the info pertains to. |
+| `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of info or warning. - [MEDIA_INFO_UNKNOWN](../android/media/MediaPlayer.md) - [MEDIA_INFO_VIDEO_TRACK_LAGGING](../android/media/MediaPlayer.md) - [MEDIA_INFO_VIDEO_RENDERING_START](../android/media/MediaPlayer.md) - [MEDIA_INFO_BUFFERING_START](../android/media/MediaPlayer.md) - [MEDIA_INFO_BUFFERING_END](../android/media/MediaPlayer.md) - `MEDIA_INFO_NETWORK_BANDWIDTH (703)`- bandwidth information is available (as`extra`kbps) - [MEDIA_INFO_BAD_INTERLEAVING](../android/media/MediaPlayer.md) - [MEDIA_INFO_NOT_SEEKABLE](../android/media/MediaPlayer.md) - [MEDIA_INFO_METADATA_UPDATE](../android/media/MediaPlayer.md) - [MEDIA_INFO_UNSUPPORTED_SUBTITLE](../android/media/MediaPlayer.md) - [MEDIA_INFO_SUBTITLE_TIMED_OUT](../android/media/MediaPlayer.md) |
 | `extra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an extra code, specific to the info. Typically implementation dependent. |
 | --- | --- |
 

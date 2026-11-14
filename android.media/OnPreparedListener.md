@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnPreparedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaPlayer.OnPreparedListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaPlayer.OnPreparedListener.md) 
 | --- | --- |
 
 ```
 interface OnPreparedListener
 ```
 
-| [android.media.MediaPlayer.OnPreparedListener](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnPreparedListener#) |
+| [android.media.MediaPlayer.OnPreparedListener](../android/media/MediaPlayer.OnPreparedListener.md) |
 
 Interface definition for a callback to be invoked when the media source is ready for playback.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the media source is ready
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepared](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.OnPreparedListener#onPrepared(android.media.MediaPlayer))`(`mp:` ` [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!`)` Called when the media file is ready for playback. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepared](../android/media/MediaPlayer.OnPreparedListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`)` Called when the media file is ready for playback. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called when the media file is ready for playback.
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](https://developer.android.com/reference/kotlin/android/media/MediaPlayer)!:the MediaPlayer that is ready for playback |
+| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer that is ready for playback |

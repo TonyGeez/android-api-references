@@ -11,18 +11,18 @@ open class StringConcatException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [java.lang.invoke.StringConcatException](https://developer.android.com/reference/kotlin/java/lang/invoke/StringConcatException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [java.lang.invoke.StringConcatException](../java/lang/invoke/StringConcatException.md) |
 | --- | --- | --- | --- |
 
-StringConcatException is thrown by [StringConcatFactory](https://developer.android.com/reference/kotlin/java/lang/invoke/StringConcatException#) when linkage invariants are violated.
+StringConcatException is thrown by [StringConcatFactory](../java/lang/invoke/StringConcatException.md) when linkage invariants are violated.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StringConcatException](https://developer.android.com/reference/kotlin/java/lang/invoke/StringConcatException#StringConcatException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception with a message |
-| [StringConcatException](https://developer.android.com/reference/kotlin/java/lang/invoke/StringConcatException#StringConcatException(kotlin.String,%20kotlin.Throwable))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an exception with a message and a linked throwable |
+| [StringConcatException](../java/lang/invoke/StringConcatException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception with a message |
+| [StringConcatException](../java/lang/invoke/StringConcatException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an exception with a message and a linked throwable |
 
 ## Public constructors
 

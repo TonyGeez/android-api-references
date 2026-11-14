@@ -11,10 +11,10 @@ open class EmptyStackException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.EmptyStackException](https://developer.android.com/reference/kotlin/java/util/EmptyStackException#) |
+| | | | ↳ | [java.util.EmptyStackException](../java/util/EmptyStackException.md) |
 
 Thrown by methods in the`Stack`class to indicate that the stack is empty.
 
@@ -22,7 +22,7 @@ Thrown by methods in the`Stack`class to indicate that the stack is empty.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EmptyStackException](https://developer.android.com/reference/kotlin/java/util/EmptyStackException#EmptyStackException())`()` Constructs a new`EmptyStackException`with`null`as its error message string. |
+| [EmptyStackException](../java/util/EmptyStackException.md))`()` Constructs a new`EmptyStackException`with`null`as its error message string. |
 
 ## Public constructors
 

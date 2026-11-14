@@ -2,19 +2,19 @@
 
 # android.service.controls.templates
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/controls/templates/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/controls/templates/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [ControlButton](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlButton) | Button element for [ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate). |
+| [ControlButton](../android/service/controls/templates/ControlButton.md) | Button element for [ControlTemplate](../android/service/controls/templates/ControlTemplate.md). |
 | --- | --- |
-| [ControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ControlTemplate) | An abstract input template for a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#). |
-| [RangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/RangeTemplate) | A template for a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) with inputs in a "continuous" range of values. |
-| [StatelessTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/StatelessTemplate) | A template for a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) which has no state. |
+| [ControlTemplate](../android/service/controls/templates/ControlTemplate.md) | An abstract input template for a [Control](../android/service/controls/Control.md). |
+| [RangeTemplate](../android/service/controls/templates/RangeTemplate.md) | A template for a [Control](../android/service/controls/Control.md) with inputs in a "continuous" range of values. |
+| [StatelessTemplate](../android/service/controls/templates/StatelessTemplate.md) | A template for a [Control](../android/service/controls/Control.md) which has no state. |
 | --- | --- |
-| [TemperatureControlTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/TemperatureControlTemplate) | A template for a temperature related [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) that supports multiple modes. |
-| [ThumbnailTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ThumbnailTemplate) | A template for a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) that displays an image. |
-| [ToggleRangeTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleRangeTemplate) | A template for a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) supporting toggling and a range. |
+| [TemperatureControlTemplate](../android/service/controls/templates/TemperatureControlTemplate.md) | A template for a temperature related [Control](../android/service/controls/Control.md) that supports multiple modes. |
+| [ThumbnailTemplate](../android/service/controls/templates/ThumbnailTemplate.md) | A template for a [Control](../android/service/controls/Control.md) that displays an image. |
+| [ToggleRangeTemplate](../android/service/controls/templates/ToggleRangeTemplate.md) | A template for a [Control](../android/service/controls/Control.md) supporting toggling and a range. |
 | --- | --- |
-| [ToggleTemplate](https://developer.android.com/reference/kotlin/android/service/controls/templates/ToggleTemplate) | A template for a [Control](https://developer.android.com/reference/kotlin/android/service/controls/Control.html#) with a single button that can be toggled between two states. |
+| [ToggleTemplate](../android/service/controls/templates/ToggleTemplate.md) | A template for a [Control](../android/service/controls/Control.md) with a single button that can be toggled between two states. |

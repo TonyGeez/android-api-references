@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ScaleDrawable
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/ScaleDrawable "View this page in Java")
+Kotlin | [Java](../android/graphics/drawable/ScaleDrawable.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class ScaleDrawable : DrawableWrapper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable) |||
-| | ↳ | [android.graphics.drawable.DrawableWrapper](https://developer.android.com/reference/kotlin/android/graphics/drawable/DrawableWrapper) ||
-| | | ↳ | [android.graphics.drawable.ScaleDrawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/ScaleDrawable#) |
+| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) |||
+| | ↳ | [android.graphics.drawable.DrawableWrapper](../android/graphics/drawable/DrawableWrapper.md) ||
+| | | ↳ | [android.graphics.drawable.ScaleDrawable](../android/graphics/drawable/ScaleDrawable.md) |
 | --- | --- | --- | --- |
 
 A Drawable that changes the size of another Drawable based on its current level value. You can control how much the child Drawable changes in width and height based on the level, as well as a gravity to control where it is placed in its overall container. Most often used to implement things like progress bars.
@@ -26,12 +26,12 @@ A scale drawable may be defined in an XML file with the `<scale>` element. For m
 
 | XML attributes ||
 |---|---|
-| [`android:drawable`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ScaleDrawable#attr_ScaleDrawable) | Reference to a drawable resource to draw with the specified scale. |
-| [`android:level`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ScaleDrawable#attr_ScaleDrawable) | Specifies the initial drawable level in the range 0 to 10000. |
-| [`android:scaleGravity`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ScaleDrawable#attr_ScaleDrawable) | Specifies where the drawable is positioned after scaling. |
+| [`android:drawable`](../android/graphics/drawable/ScaleDrawable.md) | Reference to a drawable resource to draw with the specified scale. |
+| [`android:level`](../android/graphics/drawable/ScaleDrawable.md) | Specifies the initial drawable level in the range 0 to 10000. |
+| [`android:scaleGravity`](../android/graphics/drawable/ScaleDrawable.md) | Specifies where the drawable is positioned after scaling. |
 | --- | --- |
-| [`android:scaleHeight`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ScaleDrawable#attr_ScaleDrawable) | Scale height, expressed as a percentage of the drawable's bound. |
-| [`android:scaleWidth`](https://developer.android.com/reference/kotlin/android/graphics/drawable/ScaleDrawable#attr_ScaleDrawable) | Scale width, expressed as a percentage of the drawable's bound. |
+| [`android:scaleHeight`](../android/graphics/drawable/ScaleDrawable.md) | Scale height, expressed as a percentage of the drawable's bound. |
+| [`android:scaleWidth`](../android/graphics/drawable/ScaleDrawable.md) | Scale width, expressed as a percentage of the drawable's bound. |
 
 | Public constructors ||
 |---|---|
@@ -142,7 +142,7 @@ Creates a new scale drawable with the specified gravity and scale properties.
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable)!: the drawable to scale |
+| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: the drawable to scale |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): gravity constant (see `https://developer.android.com/reference/kotlin/android/view/Gravity.html#` used to position the scaled drawable within the parent container |
 | `scaleWidth` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): width scaling factor \[0...1\] to use then the level is at the maximum value, or -1 to not scale width |
 | --- | --- |
@@ -162,7 +162,7 @@ Applies the specified theme to this Drawable and its children.
 
 | Parameters ||
 |---|---|
-| `t` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#): This value cannot be `null`. |
+| `t` | [Resources.Theme](../android/content/res/Resources.Theme.md): This value cannot be `null`. |
 
 ### draw
 
@@ -176,7 +176,7 @@ Draw in its bounds (set via setBounds) respecting optional effects such as alpha
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): This value cannot be `null`. |
 
 ### getOpacity
 
@@ -215,11 +215,11 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |---|---|
-| `r` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#): This value cannot be `null`. |
-| `parser` | [XmlPullParser](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#): This value cannot be `null`. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#): This value cannot be `null`. |
+| `r` | [Resources](../android/content/res/Resources.md): This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
-| `theme` | [Resources.Theme](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)?: This value may be `null`. |
+| `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -240,7 +240,7 @@ Override this in your subclass to change appearance if you vary based on the bou
 
 | Parameters ||
 |---|---|
-| `bounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#): This value cannot be `null`. |
+| `bounds` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
 
 ### onLevelChange
 

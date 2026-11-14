@@ -10,24 +10,24 @@ open class ConcurrentHashMap<K : Any!, V : Any!> : AbstractMap<K, V>, Con
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#)\<K, V\> ||
-| | ↳ | [java.util.concurrent.ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#) |
+| ↳ | [java.util.AbstractMap](../java/util/AbstractMap.md)\<K, V\> ||
+| | ↳ | [java.util.concurrent.ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md) |
 
-A hash table supporting full concurrency of retrievals and high expected concurrency for updates. This class obeys the same functional specification as [java.util.Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html#), and includes versions of methods corresponding to each method of`Hashtable`. However, even though all operations are thread-safe, retrieval operations do*not* entail locking, and there is*not* any support for locking the entire table in a way that prevents all access. This class is fully interoperable with`Hashtable`in programs that rely on its thread safety but not on its synchronization details.
+A hash table supporting full concurrency of retrievals and high expected concurrency for updates. This class obeys the same functional specification as [java.util.Hashtable](../java/util/Hashtable.md), and includes versions of methods corresponding to each method of`Hashtable`. However, even though all operations are thread-safe, retrieval operations do*not* entail locking, and there is*not* any support for locking the entire table in a way that prevents all access. This class is fully interoperable with`Hashtable`in programs that rely on its thread safety but not on its synchronization details.
 
 Retrieval operations (including`get`) generally do not block, so may overlap with update operations (including`put`and`remove`). Retrievals reflect the results of the most recently*completed* update operations holding upon their onset. (More formally, an update operation for a given key bears a*happens-before* relation with any (non-null) retrieval for that key reporting the updated value.) For aggregate operations such as`putAll`and`clear`, concurrent retrievals may reflect insertion or removal of only some entries. Similarly, Iterators, Spliterators and Enumerations return elements reflecting the state of the hash table at some point at or since the creation of the iterator/enumeration. They do*not* throw . However, iterators are designed to be used by only one thread at a time. Bear in mind that the results of aggregate status methods including`size`,`isEmpty`, and`containsValue`are typically useful only when a map is not undergoing concurrent updates in other threads. Otherwise the results of these methods reflect transient states that may be adequate for monitoring or estimation purposes, but not for program control.
 
-The table is dynamically expanded when there are too many collisions (i.e., keys that have distinct hash codes but fall into the same slot modulo the table size), with the expected average effect of maintaining roughly two bins per mapping (corresponding to a 0.75 load factor threshold for resizing). There may be much variance around this average as mappings are added and removed, but overall, this maintains a commonly accepted time/space tradeoff for hash tables. However, resizing this or any other kind of hash table may be a relatively slow operation. When possible, it is a good idea to provide a size estimate as an optional`initialCapacity`constructor argument. An additional optional`loadFactor`constructor argument provides a further means of customizing initial table capacity by specifying the table density to be used in calculating the amount of space to allocate for the given number of elements. Also, for compatibility with previous versions of this class, constructors may optionally specify an expected`concurrencyLevel`as an additional hint for internal sizing. Note that using many keys with exactly the same`hashCode()`is a sure way to slow down performance of any hash table. To ameliorate impact, when keys are [Comparable](https://developer.android.com/reference/kotlin/java/lang/Comparable.html#), this class may use comparison order among keys to help break ties.
+The table is dynamically expanded when there are too many collisions (i.e., keys that have distinct hash codes but fall into the same slot modulo the table size), with the expected average effect of maintaining roughly two bins per mapping (corresponding to a 0.75 load factor threshold for resizing). There may be much variance around this average as mappings are added and removed, but overall, this maintains a commonly accepted time/space tradeoff for hash tables. However, resizing this or any other kind of hash table may be a relatively slow operation. When possible, it is a good idea to provide a size estimate as an optional`initialCapacity`constructor argument. An additional optional`loadFactor`constructor argument provides a further means of customizing initial table capacity by specifying the table density to be used in calculating the amount of space to allocate for the given number of elements. Also, for compatibility with previous versions of this class, constructors may optionally specify an expected`concurrencyLevel`as an additional hint for internal sizing. Note that using many keys with exactly the same`hashCode()`is a sure way to slow down performance of any hash table. To ameliorate impact, when keys are [Comparable](../java/lang/Comparable.md), this class may use comparison order among keys to help break ties.
 
-A [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) projection of a ConcurrentHashMap may be created (using [newKeySet()](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#newKeySet())or [newKeySet(int)](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#newKeySet(kotlin.Int))), or viewed (using [keySet(java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#keySet(java.util.concurrent.ConcurrentHashMap.V))when only keys are of interest, and the mapped values are (perhaps transiently) not used or all take the same mapping value.
+A [Set](../java/util/Set.md) projection of a ConcurrentHashMap may be created (using [newKeySet()](../java/util/concurrent/ConcurrentHashMap.md))or [newKeySet(int)](../java/util/concurrent/ConcurrentHashMap.md))), or viewed (using [keySet(java.lang.Object)](../java/util/concurrent/ConcurrentHashMap.md))when only keys are of interest, and the mapped values are (perhaps transiently) not used or all take the same mapping value.
 
-A ConcurrentHashMap can be used as a scalable frequency map (a form of histogram or multiset) by using values and initializing via [computeIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#computeIfAbsent(java.util.concurrent.ConcurrentHashMap.K,%20java.util.function.Function)). For example, to add a count to a`ConcurrentHashMap<String,LongAdder> freqs`, you can use`freqs.computeIfAbsent(key, k -> new LongAdder()).increment();`
+A ConcurrentHashMap can be used as a scalable frequency map (a form of histogram or multiset) by using values and initializing via [computeIfAbsent](../java/util/concurrent/ConcurrentHashMap.md)). For example, to add a count to a`ConcurrentHashMap<String,LongAdder> freqs`, you can use`freqs.computeIfAbsent(key, k -> new LongAdder()).increment();`
 
-This class and its views and iterators implement all of the*optional* methods of the [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#) and [Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator.html#) interfaces.
+This class and its views and iterators implement all of the*optional* methods of the [Map](../java/util/Map.md) and [Iterator](../java/util/Iterator.md) interfaces.
 
-Like [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html#) but unlike [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html#), this class does*not* allow`null`to be used as a key or value.
+Like [Hashtable](../java/util/Hashtable.md) but unlike [HashMap](../java/util/HashMap.md), this class does*not* allow`null`to be used as a key or value.
 
-ConcurrentHashMaps support a set of sequential and parallel bulk operations that, unlike most [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#) methods, are designed to be safely, and often sensibly, applied even with maps that are being concurrently updated by other threads; for example, when computing a snapshot summary of the values in a shared registry. There are three kinds of operation, each with four forms, accepting functions with keys, values, entries, and (key, value) pairs as arguments and/or return values. Because the elements of a ConcurrentHashMap are not ordered in any particular way, and may be processed in different orders in different parallel executions, the correctness of supplied functions should not depend on any ordering, or on any other objects or values that may transiently change while computation is in progress; and except for forEach actions, should ideally be side-effect-free. Bulk operations on [Map.Entry](https://developer.android.com/reference/kotlin/java/util/Map.Entry.html#) objects do not support method`setValue`.
+ConcurrentHashMaps support a set of sequential and parallel bulk operations that, unlike most [Stream](../java/util/stream/Stream.md) methods, are designed to be safely, and often sensibly, applied even with maps that are being concurrently updated by other threads; for example, when computing a snapshot summary of the values in a shared registry. There are three kinds of operation, each with four forms, accepting functions with keys, values, entries, and (key, value) pairs as arguments and/or return values. Because the elements of a ConcurrentHashMap are not ordered in any particular way, and may be processed in different orders in different parallel executions, the correctness of supplied functions should not depend on any ordering, or on any other objects or values that may transiently change while computation is in progress; and except for forEach actions, should ideally be side-effect-free. Bulk operations on [Map.Entry](../java/util/Map.Entry.md) objects do not support method`setValue`.
 
 - forEach: Performs a given action on each element. A variant form applies a given transformation on each element before performing the action.
 - search: Returns the first available non-null result of applying a given function on each element; skipping further search when a result is found.
@@ -36,7 +36,7 @@ ConcurrentHashMaps support a set of sequential and parallel bulk operations that
  - Mapped reductions that accumulate the results of a given function applied to each element.
  - Reductions to scalar doubles, longs, and ints, using a given basis value.
 
-These bulk operations accept a`parallelismThreshold`argument. Methods proceed sequentially if the current map size is estimated to be less than the given threshold. Using a value of`Long.MAX_VALUE`suppresses all parallelism. Using a value of`1`results in maximal parallelism by partitioning into enough subtasks to fully utilize the [java.util.concurrent.ForkJoinPool#commonPool()](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool())that is used for all parallel computations. Normally, you would initially choose one of these extreme values, and then measure performance of using in-between values that trade off overhead versus throughput.
+These bulk operations accept a`parallelismThreshold`argument. Methods proceed sequentially if the current map size is estimated to be less than the given threshold. Using a value of`Long.MAX_VALUE`suppresses all parallelism. Using a value of`1`results in maximal parallelism by partitioning into enough subtasks to fully utilize the [java.util.concurrent.ForkJoinPool#commonPool()](../java/util/concurrent/ForkJoinPool.md))that is used for all parallel computations. Normally, you would initially choose one of these extreme values, and then measure performance of using in-between values that trade off overhead versus throughput.
 
 The concurrency properties of bulk operations follow from those of ConcurrentHashMap: Any non-null result returned from`get(key)`and related access methods bears a happens-before relation with the associated insertion or update. The result of any bulk operation reflects the composition of these per-element relations (but is not necessarily atomic with respect to the map as a whole unless it is somehow known to be quiescent). Conversely, because keys and values in the map are never null, null serves as a reliable atomic indicator of the current lack of any result. To maintain this property, null serves as an implicit basis for all non-scalar reduction operations. For the double, long, and int versions, the basis should be one that, when combined with any other value, returns that other value (more formally, it should be the identity element for the reduction). Most common reductions have these properties; for example, computing a sum with basis 0 or a minimum with basis MAX_VALUE.
 
@@ -56,115 +56,115 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView) A view of a ConcurrentHashMap as a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) of keys, in which additions may optionally be enabled by mapping to a common value. |
+| | [KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md) A view of a ConcurrentHashMap as a [Set](../java/util/Set.md) of keys, in which additions may optionally be enabled by mapping to a common value. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#ConcurrentHashMap())`()` Creates a new, empty map with the default initial table size (16). |
-| [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#ConcurrentHashMap(kotlin.Int))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new, empty map with an initial table size accommodating the specified number of elements without the need to dynamically resize. |
-| [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#ConcurrentHashMap(kotlin.Int,%20kotlin.Float))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loadFactor:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a new, empty map with an initial table size based on the given number of elements (`initialCapacity`) and initial table density (`loadFactor`). |
-| [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#ConcurrentHashMap(kotlin.Int,%20kotlin.Float,%20kotlin.Int))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loadFactor:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `concurrencyLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new, empty map with an initial table size based on the given number of elements (`initialCapacity`), initial table density (`loadFactor`), and number of concurrently updating threads (`concurrencyLevel`). |
-| [ConcurrentHashMap](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#ConcurrentHashMap(kotlin.collections.MutableMap))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>`)` Creates a new map with the same mappings as the given map. |
+| [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md))`()` Creates a new, empty map with the default initial table size (16). |
+| [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new, empty map with an initial table size accommodating the specified number of elements without the need to dynamically resize. |
+| [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loadFactor:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a new, empty map with an initial table size based on the given number of elements (`initialCapacity`) and initial table density (`loadFactor`). |
+| [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loadFactor:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `concurrencyLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new, empty map with an initial table size based on the given number of elements (`initialCapacity`), initial table density (`loadFactor`), and number of concurrently updating threads (`concurrencyLevel`). |
+| [ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>`)` Creates a new map with the same mappings as the given map. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#clear())`()` Removes all of the mappings from this map. |
-| openV? | [compute](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#compute(java.util.concurrent.ConcurrentHashMap.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
-| openV | [computeIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#computeIfAbsent(java.util.concurrent.ConcurrentHashMap.K,%20java.util.function.Function))`(`key:` `K`, `mappingFunction:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value, attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/concurrent/ConcurrentHashMap.md))`()` Removes all of the mappings from this map. |
+| openV? | [compute](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
+| openV | [computeIfAbsent](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `mappingFunction:` ` [Function](../java/util/function/Function.md)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value, attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
 | --- | --- |
-| openV? | [computeIfPresent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#computeIfPresent(java.util.concurrent.ConcurrentHashMap.K,%20java.util.function.BiFunction))`(`key:` `K`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present, attempts to compute a new mapping given the key and its current mapped value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#contains(kotlin.Any))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Tests if some key maps into the specified value in this table. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#containsKey(java.util.concurrent.ConcurrentHashMap.K))`(`key:` `K`)` Tests if the specified object is a key in this table. |
+| openV? | [computeIfPresent](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present, attempts to compute a new mapping given the key and its current mapped value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/concurrent/ConcurrentHashMap.md))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`)` Tests if some key maps into the specified value in this table. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`)` Tests if the specified object is a key in this table. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#containsKey(java.util.concurrent.ConcurrentHashMap.K))`(`key:` `K`)` Tests if the specified object is a key in this table. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#containsValue(java.util.concurrent.ConcurrentHashMap.V))`(`value:` `V`)` Returns`true`if this map maps one or more keys to the specified value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#containsValue(java.util.concurrent.ConcurrentHashMap.V))`(`value:` `V`)` Returns`true`if this map maps one or more keys to the specified value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`)` Tests if the specified object is a key in this table. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](../java/util/concurrent/ConcurrentHashMap.md))`(`value:` `V`)` Returns`true`if this map maps one or more keys to the specified value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](../java/util/concurrent/ConcurrentHashMap.md))`(`value:` `V`)` Returns`true`if this map maps one or more keys to the specified value. |
 | --- | --- |
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\<V\> | [elements](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#elements())`()` Returns an enumeration of the values in this table. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEach(java.util.function.BiConsumer))`(`action:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<in` `K,` `in` `V>`)` <br /> |
+| open [Enumeration](../java/util/Enumeration.md)\<V\> | [elements](../java/util/concurrent/ConcurrentHashMap.md))`()` Returns an enumeration of the values in this table. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/concurrent/ConcurrentHashMap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/concurrent/ConcurrentHashMap.md))`(`action:` ` [BiConsumer](../java/util/function/BiConsumer.md)<in` `K,` `in` `V>`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEach(kotlin.Long,%20java.util.function.BiConsumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<in` `K,` `in` `V>`)` Performs the given action for each (key, value). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEach(kotlin.Long,%20java.util.function.BiFunction,%20java.util.function.Consumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `U>`, `action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `U>`)` Performs the given action for each non-null transformation of each (key, value). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachEntry](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEachEntry(kotlin.Long,%20java.util.function.Consumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` ` [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`)` Performs the given action for each entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [BiConsumer](../java/util/function/BiConsumer.md)<in` `K,` `in` `V>`)` Performs the given action for each (key, value). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `U>`, `action:` ` [Consumer](../java/util/function/Consumer.md)<in` `U>`)` Performs the given action for each non-null transformation of each (key, value). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachEntry](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Consumer](../java/util/function/Consumer.md)<in` ` [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`)` Performs the given action for each entry. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachEntry](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEachEntry(kotlin.Long,%20java.util.function.Function,%20java.util.function.Consumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` `U>`, `action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `U>`)` Performs the given action for each non-null transformation of each entry. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachKey](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEachKey(kotlin.Long,%20java.util.function.Consumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `K>`)` Performs the given action for each key. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachKey](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEachKey(kotlin.Long,%20java.util.function.Function,%20java.util.function.Consumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `K,` `out` `U>`, `action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `U>`)` Performs the given action for each non-null transformation of each key. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachEntry](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](../java/util/function/Function.md)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` `U>`, `action:` ` [Consumer](../java/util/function/Consumer.md)<in` `U>`)` Performs the given action for each non-null transformation of each entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachKey](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Consumer](../java/util/function/Consumer.md)<in` `K>`)` Performs the given action for each key. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachKey](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](../java/util/function/Function.md)<in` `K,` `out` `U>`, `action:` ` [Consumer](../java/util/function/Consumer.md)<in` `U>`)` Performs the given action for each non-null transformation of each key. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachValue](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEachValue(kotlin.Long,%20java.util.function.Consumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `V>`)` Performs the given action for each value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachValue](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#forEachValue(kotlin.Long,%20java.util.function.Function,%20java.util.function.Consumer))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `V,` `out` `U>`, `action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)<in` `U>`)` Performs the given action for each non-null transformation of each value. |
-| openV? | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#get(java.util.concurrent.ConcurrentHashMap.K))`(`key:` `K`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachValue](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Consumer](../java/util/function/Consumer.md)<in` `V>`)` Performs the given action for each value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachValue](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](../java/util/function/Function.md)<in` `V,` `out` `U>`, `action:` ` [Consumer](../java/util/function/Consumer.md)<in` `U>`)` Performs the given action for each non-null transformation of each value. |
+| openV? | [get](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
 | --- | --- |
-| openV? | [get](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#get(java.util.concurrent.ConcurrentHashMap.K))`(`key:` `K`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
-| openV | [getOrDefault](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#getOrDefault(java.util.concurrent.ConcurrentHashMap.K,%20java.util.concurrent.ConcurrentHashMap.V))`(`key:` `K`, `defaultValue:` `V`)` Returns the value to which the specified key is mapped, or the given default value if this map contains no mapping for the key. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#hashCode())`()` Returns the hash code value for this [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#), i. |
+| openV? | [get](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| openV | [getOrDefault](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `defaultValue:` `V`)` Returns the value to which the specified key is mapped, or the given default value if this map contains no mapping for the key. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/concurrent/ConcurrentHashMap.md))`()` Returns the hash code value for this [Map](../java/util/Map.md), i. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#isEmpty())`()` Returns`true`if this map contains no key-value mappings. |
-| open [ConcurrentHashMap.KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView)\<K,V\> | [keySet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#keySet(java.util.concurrent.ConcurrentHashMap.V))`(`mappedValue:` `V`)` Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) view of the keys in this map, using the given common mapped value for any additions (i.e., |
-| open [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#keys())`()` Returns an enumeration of the keys in this table. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/concurrent/ConcurrentHashMap.md))`()` Returns`true`if this map contains no key-value mappings. |
+| open [ConcurrentHashMap.KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md)\<K,V\> | [keySet](../java/util/concurrent/ConcurrentHashMap.md))`(`mappedValue:` `V`)` Returns a [Set](../java/util/Set.md) view of the keys in this map, using the given common mapped value for any additions (i.e., |
+| open [Enumeration](../java/util/Enumeration.md)\<K\> | [keys](../java/util/concurrent/ConcurrentHashMap.md))`()` Returns an enumeration of the keys in this table. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [mappingCount](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#mappingCount())`()` Returns the number of mappings. |
-| openV? | [merge](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#merge(java.util.concurrent.ConcurrentHashMap.K,%20java.util.concurrent.ConcurrentHashMap.V,%20java.util.function.BiFunction))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a (non-null) value, associates it with the given value. |
-| openstatic [ConcurrentHashMap.KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView)\<K, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\> | [newKeySet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#newKeySet())`()` Creates a new [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [mappingCount](../java/util/concurrent/ConcurrentHashMap.md))`()` Returns the number of mappings. |
+| openV? | [merge](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a (non-null) value, associates it with the given value. |
+| openstatic [ConcurrentHashMap.KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md)\<K, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\> | [newKeySet](../java/util/concurrent/ConcurrentHashMap.md))`()` Creates a new [Set](../java/util/Set.md) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`. |
 | --- | --- |
-| openstatic [ConcurrentHashMap.KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView)\<K, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\> | [newKeySet](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#newKeySet(kotlin.Int))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`. |
-| openV? | [put](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#put(java.util.concurrent.ConcurrentHashMap.K,%20java.util.concurrent.ConcurrentHashMap.V))`(`key:` `K`, `value:` `V`)` Maps the specified key to the specified value in this table. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#putAll(kotlin.collections.Map))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this one. |
+| openstatic [ConcurrentHashMap.KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md)\<K, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\> | [newKeySet](../java/util/concurrent/ConcurrentHashMap.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new [Set](../java/util/Set.md) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`. |
+| openV? | [put](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `value:` `V`)` Maps the specified key to the specified value in this table. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](../java/util/concurrent/ConcurrentHashMap.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this one. |
 | --- | --- |
-| openV? | [putIfAbsent](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#putIfAbsent(java.util.concurrent.ConcurrentHashMap.K,%20java.util.concurrent.ConcurrentHashMap.V))`(`key:` `K`, `value:` `V`)` If the specified key is not already associated with a value (or is mapped to`null`) associates it with the given value and returns`null`, else returns the current value. |
-| openU? | [reduce](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduce(kotlin.Long,%20java.util.function.BiFunction,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `U>`, `reducer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, or null if none. |
-| open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>? | [reduceEntries](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceEntries(kotlin.Long,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` ` [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` ` [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`)` Returns the result of accumulating all entries using the given reducer to combine values, or null if none. |
+| openV? | [putIfAbsent](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `value:` `V`)` If the specified key is not already associated with a value (or is mapped to`null`) associates it with the given value and returns`null`, else returns the current value. |
+| openU? | [reduce](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `U>`, `reducer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, or null if none. |
+| open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>? | [reduceEntries](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [BiFunction](../java/util/function/BiFunction.md)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` ` [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` ` [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`)` Returns the result of accumulating all entries using the given reducer to combine values, or null if none. |
 | --- | --- |
-| openU? | [reduceEntries](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceEntries(kotlin.Long,%20java.util.function.Function,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` `U>`, `reducer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, or null if none. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceEntriesToDouble](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceEntriesToDouble(kotlin.Long,%20java.util.function.ToDoubleFunction,%20kotlin.Double,%20java.util.function.DoubleBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, and the given basis as an identity value. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceEntriesToInt](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceEntriesToInt(kotlin.Long,%20java.util.function.ToIntFunction,%20kotlin.Int,%20java.util.function.IntBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, and the given basis as an identity value. |
+| openU? | [reduceEntries](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](../java/util/function/Function.md)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` `U>`, `reducer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, or null if none. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceEntriesToDouble](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, and the given basis as an identity value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceEntriesToInt](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntFunction](../java/util/function/ToIntFunction.md)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](../java/util/function/IntBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, and the given basis as an identity value. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceEntriesToLong](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceEntriesToLong(kotlin.Long,%20java.util.function.ToLongFunction,%20kotlin.Long,%20java.util.function.LongBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, and the given basis as an identity value. |
-| openK? | [reduceKeys](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceKeys(kotlin.Long,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `K,` `out` `K>`)` Returns the result of accumulating all keys using the given reducer to combine values, or null if none. |
-| openU? | [reduceKeys](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceKeys(kotlin.Long,%20java.util.function.Function,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `K,` `out` `U>`, `reducer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, or null if none. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceEntriesToLong](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongFunction](../java/util/function/ToLongFunction.md)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all entries using the given reducer to combine values, and the given basis as an identity value. |
+| openK? | [reduceKeys](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `K,` `out` `K>`)` Returns the result of accumulating all keys using the given reducer to combine values, or null if none. |
+| openU? | [reduceKeys](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](../java/util/function/Function.md)<in` `K,` `out` `U>`, `reducer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, or null if none. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceKeysToDouble](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceKeysToDouble(kotlin.Long,%20java.util.function.ToDoubleFunction,%20kotlin.Double,%20java.util.function.DoubleBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#)<in` `K>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, and the given basis as an identity value. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceKeysToInt](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceKeysToInt(kotlin.Long,%20java.util.function.ToIntFunction,%20kotlin.Int,%20java.util.function.IntBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#)<in` `K>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, and the given basis as an identity value. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceKeysToLong](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceKeysToLong(kotlin.Long,%20java.util.function.ToLongFunction,%20kotlin.Long,%20java.util.function.LongBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#)<in` `K>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, and the given basis as an identity value. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceKeysToDouble](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)<in` `K>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, and the given basis as an identity value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceKeysToInt](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntFunction](../java/util/function/ToIntFunction.md)<in` `K>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](../java/util/function/IntBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, and the given basis as an identity value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceKeysToLong](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongFunction](../java/util/function/ToLongFunction.md)<in` `K>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all keys using the given reducer to combine values, and the given basis as an identity value. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceToDouble](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceToDouble(kotlin.Long,%20java.util.function.ToDoubleBiFunction,%20kotlin.Double,%20java.util.function.DoubleBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleBiFunction.html#)<in` `K,` `in` `V>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, and the given basis as an identity value. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceToInt](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceToInt(kotlin.Long,%20java.util.function.ToIntBiFunction,%20kotlin.Int,%20java.util.function.IntBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntBiFunction.html#)<in` `K,` `in` `V>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, and the given basis as an identity value. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceToLong](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceToLong(kotlin.Long,%20java.util.function.ToLongBiFunction,%20kotlin.Long,%20java.util.function.LongBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongBiFunction.html#)<in` `K,` `in` `V>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, and the given basis as an identity value. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceToDouble](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleBiFunction](../java/util/function/ToDoubleBiFunction.md)<in` `K,` `in` `V>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, and the given basis as an identity value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceToInt](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntBiFunction](../java/util/function/ToIntBiFunction.md)<in` `K,` `in` `V>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](../java/util/function/IntBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, and the given basis as an identity value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceToLong](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongBiFunction](../java/util/function/ToLongBiFunction.md)<in` `K,` `in` `V>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all (key, value) pairs using the given reducer to combine values, and the given basis as an identity value. |
 | --- | --- |
-| openV? | [reduceValues](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceValues(kotlin.Long,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `V,` `in` `V,` `out` `V>`)` Returns the result of accumulating all values using the given reducer to combine values, or null if none. |
-| openU? | [reduceValues](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceValues(kotlin.Long,%20java.util.function.Function,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `V,` `out` `U>`, `reducer:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, or null if none. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceValuesToDouble](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceValuesToDouble(kotlin.Long,%20java.util.function.ToDoubleFunction,%20kotlin.Double,%20java.util.function.DoubleBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#)<in` `V>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, and the given basis as an identity value. |
+| openV? | [reduceValues](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `V,` `in` `V,` `out` `V>`)` Returns the result of accumulating all values using the given reducer to combine values, or null if none. |
+| openU? | [reduceValues](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [Function](../java/util/function/Function.md)<in` `V,` `out` `U>`, `reducer:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `U,` `in` `U,` `out` `U>`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, or null if none. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduceValuesToDouble](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)<in` `V>`, `basis:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `reducer:` ` [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, and the given basis as an identity value. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceValuesToInt](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceValuesToInt(kotlin.Long,%20java.util.function.ToIntFunction,%20kotlin.Int,%20java.util.function.IntBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#)<in` `V>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, and the given basis as an identity value. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceValuesToLong](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#reduceValuesToLong(kotlin.Long,%20java.util.function.ToLongFunction,%20kotlin.Long,%20java.util.function.LongBinaryOperator))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#)<in` `V>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#)`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, and the given basis as an identity value. |
-| openV? | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#remove(java.util.concurrent.ConcurrentHashMap.K))`(`key:` `K`)` Removes the key (and its corresponding value) from this map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [reduceValuesToInt](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToIntFunction](../java/util/function/ToIntFunction.md)<in` `V>`, `basis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `reducer:` ` [IntBinaryOperator](../java/util/function/IntBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, and the given basis as an identity value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [reduceValuesToLong](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transformer:` ` [ToLongFunction](../java/util/function/ToLongFunction.md)<in` `V>`, `basis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `reducer:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)`)` Returns the result of accumulating the given transformation of all values using the given reducer to combine values, and the given basis as an identity value. |
+| openV? | [remove](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`)` Removes the key (and its corresponding value) from this map. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#remove(java.util.concurrent.ConcurrentHashMap.K,%20java.util.concurrent.ConcurrentHashMap.V))`(`key:` `K`, `value:` `V`)` Removes the entry for the specified key only if it is currently mapped to the specified value. |
-| openV? | [remove](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#remove(java.util.concurrent.ConcurrentHashMap.K))`(`key:` `K`)` Removes the key (and its corresponding value) from this map. |
-| openV? | [replace](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#replace(java.util.concurrent.ConcurrentHashMap.K,%20java.util.concurrent.ConcurrentHashMap.V))`(`key:` `K`, `value:` `V`)` Replaces the entry for the specified key only if it is currently mapped to some value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `value:` `V`)` Removes the entry for the specified key only if it is currently mapped to the specified value. |
+| openV? | [remove](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`)` Removes the key (and its corresponding value) from this map. |
+| openV? | [replace](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `value:` `V`)` Replaces the entry for the specified key only if it is currently mapped to some value. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#replace(java.util.concurrent.ConcurrentHashMap.K,%20java.util.concurrent.ConcurrentHashMap.V,%20java.util.concurrent.ConcurrentHashMap.V))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for the specified key only if currently mapped to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#replaceAll(java.util.function.BiFunction))`(`function:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
-| openU? | [search](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#search(kotlin.Long,%20java.util.function.BiFunction))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)<in` `K,` `in` `V,` `out` `U>`)` Returns a non-null result from applying the given search function on each (key, value), or null if none. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](../java/util/concurrent/ConcurrentHashMap.md))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for the specified key only if currently mapped to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](../java/util/concurrent/ConcurrentHashMap.md))`(`function:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
+| openU? | [search](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `U>`)` Returns a non-null result from applying the given search function on each (key, value), or null if none. |
 | --- | --- |
-| openU? | [searchEntries](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#searchEntries(kotlin.Long,%20java.util.function.Function))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` `U>`)` Returns a non-null result from applying the given search function on each entry, or null if none. |
-| openU? | [searchKeys](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#searchKeys(kotlin.Long,%20java.util.function.Function))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `K,` `out` `U>`)` Returns a non-null result from applying the given search function on each key, or null if none. |
-| openU? | [searchValues](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#searchValues(kotlin.Long,%20java.util.function.Function))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)<in` `V,` `out` `U>`)` Returns a non-null result from applying the given search function on each value, or null if none. |
+| openU? | [searchEntries](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [Function](../java/util/function/Function.md)< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)<K,` `V>!,` `out` `U>`)` Returns a non-null result from applying the given search function on each entry, or null if none. |
+| openU? | [searchKeys](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [Function](../java/util/function/Function.md)<in` `K,` `out` `U>`)` Returns a non-null result from applying the given search function on each key, or null if none. |
+| openU? | [searchValues](../java/util/concurrent/ConcurrentHashMap.md))`(`parallelismThreshold:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `searchFunction:` ` [Function](../java/util/function/Function.md)<in` `V,` `out` `U>`)` Returns a non-null result from applying the given search function on each value, or null if none. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#toString())`()` Returns a string representation of this map. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/concurrent/ConcurrentHashMap.md))`()` Returns a string representation of this map. |
 
 | Inherited functions ||
 |---|---|
-| From class [AbstractMap](https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#clone())`()` <br /> Returns a shallow copy of this`AbstractMap`instance: the keys and values themselves are not cloned. <br /> | ||
+| From class [AbstractMap](../java/util/AbstractMap.md) |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/AbstractMap.md))`()` <br /> Returns a shallow copy of this`AbstractMap`instance: the keys and values themselves are not cloned. <br /> | ||
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#entries:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) view of the mappings contained in this map. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#keys:kotlin.collections.MutableSet) Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) view of the keys contained in this map. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#size:kotlin.Int) Returns the number of key-value mappings in this map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](../java/util/concurrent/ConcurrentHashMap.md) Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](../java/util/concurrent/ConcurrentHashMap.md) Returns a [Set](../java/util/Set.md) view of the keys contained in this map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/concurrent/ConcurrentHashMap.md) Returns the number of key-value mappings in this map. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#values:kotlin.collections.MutableCollection) Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection.html#) view of the values contained in this map. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](../java/util/concurrent/ConcurrentHashMap.md) Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. |
 
 ## Public constructors
 
@@ -289,7 +289,7 @@ The remapping function must not modify this map during computation.
 | Parameters ||
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV?,outV?\>:the function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV?,outV?\>:the function to compute a value |
 
 | Return ||
 |----|------------------------------------------------------------------|
@@ -324,7 +324,7 @@ The mapping function must not modify this map during computation.
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `mappingFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inK,outV\>:the function to compute a value |
+| `mappingFunction` | [Function](../java/util/function/Function.md)\<inK,outV\>:the function to compute a value |
 
 | Return ||
 |---|-------------------------------------------------------------------------------------------------------------------|
@@ -359,7 +359,7 @@ The remapping function must not modify this map during computation.
 | Parameters ||
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which a value may be associated |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV,outV?\>:the function to compute a value |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outV?\>:the function to compute a value |
 
 | Return ||
 |----|------------------------------------------------------------------|
@@ -386,7 +386,7 @@ open fun contains(value: Any): Boolean
 
 Tests if some key maps into the specified value in this table.
 
-Note that this method is identical in functionality to [containsValue(java.lang.Object)](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#containsValue(java.util.concurrent.ConcurrentHashMap.V)), and exists solely to ensure full compatibility with class [java.util.Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html#), which supported this method prior to introduction of the Java Collections Framework.
+Note that this method is identical in functionality to [containsValue(java.lang.Object)](../java/util/concurrent/ConcurrentHashMap.md)), and exists solely to ensure full compatibility with class [java.util.Hashtable](../java/util/Hashtable.md), which supported this method prior to introduction of the Java Collections Framework.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------|
@@ -504,11 +504,11 @@ Returns an enumeration of the values in this table.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)<V> | an enumeration of the values in this table |
+| [Enumeration](../java/util/Enumeration.md)<V> | an enumeration of the values in this table |
 
 **See Also**
 
-- [#values()](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#values:kotlin.collections.MutableCollection) 
+- [#values()](../java/util/concurrent/ConcurrentHashMap.md) 
 
 ### equals
 
@@ -539,7 +539,7 @@ open fun forEach(action: BiConsumer<in K, in V>): Unit
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<inK,inV\>:The action to be performed for each entry |
+| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<inK,inV\>:The action to be performed for each entry |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------|
@@ -562,7 +562,7 @@ Performs the given action for each (key, value).
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `action` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<inK,inV\>:the action |
+| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<inK,inV\>:the action |
 
 ### forEach
 
@@ -581,8 +581,8 @@ Performs the given action for each non-null transformation of each (key, value).
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<inU\>:the action |
+| `transformer` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inU\>:the action |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -602,7 +602,7 @@ Performs the given action for each entry.
 | Parameters ||
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<in [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:the action |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<in [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:the action |
 
 ### forEachEntry
 
@@ -621,8 +621,8 @@ Performs the given action for each non-null transformation of each entry.
 | Parameters ||
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<inU\>:the action |
+| `transformer` | [Function](../java/util/function/Function.md)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inU\>:the action |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -642,7 +642,7 @@ Performs the given action for each key.
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<inK\>:the action |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inK\>:the action |
 
 ### forEachKey
 
@@ -661,8 +661,8 @@ Performs the given action for each non-null transformation of each key.
 | Parameters ||
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inK,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<inU\>:the action |
+| `transformer` | [Function](../java/util/function/Function.md)\<inK,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inU\>:the action |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -682,7 +682,7 @@ Performs the given action for each value.
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<inV\>:the action |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inV\>:the action |
 
 ### forEachValue
 
@@ -701,8 +701,8 @@ Performs the given action for each non-null transformation of each value.
 | Parameters ||
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#)\<inU\>:the action |
+| `transformer` | [Function](../java/util/function/Function.md)\<inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case the action is not applied) |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inU\>:the action |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -791,7 +791,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun hashCode(): Int
 ```
 
-Returns the hash code value for this [Map](https://developer.android.com/reference/kotlin/java/util/Map.html#), i.e., the sum of, for each key-value pair in the map,`key.hashCode() ^ value.hashCode()`.
+Returns the hash code value for this [Map](../java/util/Map.md), i.e., the sum of, for each key-value pair in the map,`key.hashCode() ^ value.hashCode()`.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------|
@@ -819,7 +819,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun keySet(mappedValue: V): ConcurrentHashMap.KeySetView<K, V>
 ```
 
-Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) view of the keys in this map, using the given common mapped value for any additions (i.e., [java.util.Collection#add](https://developer.android.com/reference/kotlin/java/util/Collection.html#add(java.util.Collection.E))and [Collection.addAll(Collection)](https://developer.android.com/reference/kotlin/java/util/Collection.html#addAll(kotlin.collections.MutableCollection))). This is of course only appropriate if it is acceptable to use the same value for all additions from this view.
+Returns a [Set](../java/util/Set.md) view of the keys in this map, using the given common mapped value for any additions (i.e., [java.util.Collection#add](../java/util/Collection.md))and [Collection.addAll(Collection)](../java/util/Collection.md))). This is of course only appropriate if it is acceptable to use the same value for all additions from this view.
 
 | Parameters ||
 |---------------|---------------------------------------------|
@@ -827,7 +827,7 @@ Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set.htm
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| [ConcurrentHashMap.KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView)<K,` `V> | the set view |
+| [ConcurrentHashMap.KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md)<K,` `V> | the set view |
 
 | Exceptions ||
 |----------------------------------|----------------------------|
@@ -845,11 +845,11 @@ Returns an enumeration of the keys in this table.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)<K> | an enumeration of the keys in this table |
+| [Enumeration](../java/util/Enumeration.md)<K> | an enumeration of the keys in this table |
 
 **See Also**
 
-- [#keySet()](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#keys:kotlin.collections.MutableSet) 
+- [#keySet()](../java/util/concurrent/ConcurrentHashMap.md) 
 
 ### mappingCount
 
@@ -859,7 +859,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun mappingCount(): Long
 ```
 
-Returns the number of mappings. This method should be used instead of [size](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap#size:kotlin.Int) because a ConcurrentHashMap may contain more mappings than can be represented as an int. The value returned is an estimate; the actual count may differ if there are concurrent insertions or removals.
+Returns the number of mappings. This method should be used instead of [size](../java/util/concurrent/ConcurrentHashMap.md) because a ConcurrentHashMap may contain more mappings than can be represented as an int. The value returned is an estimate; the actual count may differ if there are concurrent insertions or removals.
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------|
@@ -883,7 +883,7 @@ If the specified key is not already associated with a (non-null) value, associat
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
 | `value` | V:the value to use if absent |
-| `remappingFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inV,inV,outV?\>:the function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inV,inV,outV?\>:the function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -907,7 +907,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun <K : Any!> newKeySet(): ConcurrentHashMap.KeySetView<K, Boolean!>
 ```
 
-Creates a new [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`.
+Creates a new [Set](../java/util/Set.md) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`.
 
 | Parameters ||
 |-------|--------------------------------------|
@@ -915,7 +915,7 @@ Creates a new [Set](https://developer.android.com/reference/kotlin/java/util/Set
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| [ConcurrentHashMap.KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView)<K,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!> | the new set |
+| [ConcurrentHashMap.KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md)<K,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!> | the new set |
 
 ### newKeySet
 
@@ -925,7 +925,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun <K : Any!> newKeySet(initialCapacity: Int): ConcurrentHashMap.KeySetView<K, Boolean!>
 ```
 
-Creates a new [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`.
+Creates a new [Set](../java/util/Set.md) backed by a ConcurrentHashMap from the given type to`Boolean.TRUE`.
 
 | Parameters ||
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -934,7 +934,7 @@ Creates a new [Set](https://developer.android.com/reference/kotlin/java/util/Set
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| [ConcurrentHashMap.KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView)<K,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!> | the new set |
+| [ConcurrentHashMap.KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md)<K,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!> | the new set |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|
@@ -1041,8 +1041,8 @@ Returns the result of accumulating the given transformation of all (key, value) 
 | Parameters ||
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
-| `reducer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inU,inU,outU\>:a commutative associative combining function |
+| `transformer` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
+| `reducer` | [BiFunction](../java/util/function/BiFunction.md)\<inU,inU,outU\>:a commutative associative combining function |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -1066,7 +1066,7 @@ Returns the result of accumulating all entries using the given reducer to combin
 | Parameters ||
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `reducer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!, [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,out [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a commutative associative combining function |
+| `reducer` | [BiFunction](../java/util/function/BiFunction.md)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!, [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,out [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a commutative associative combining function |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
@@ -1089,8 +1089,8 @@ Returns the result of accumulating the given transformation of all entries using
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
-| `reducer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inU,inU,outU\>:a commutative associative combining function |
+| `transformer` | [Function](../java/util/function/Function.md)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
+| `reducer` | [BiFunction](../java/util/function/BiFunction.md)\<inU,inU,outU\>:a commutative associative combining function |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -1116,10 +1116,10 @@ Returns the result of accumulating the given transformation of all entries using
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a function returning the transformation for an element |
+| `transformer` | [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a function returning the transformation for an element |
 | `basis` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -1143,10 +1143,10 @@ Returns the result of accumulating the given transformation of all entries using
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a function returning the transformation for an element |
+| `transformer` | [ToIntFunction](../java/util/function/ToIntFunction.md)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a function returning the transformation for an element |
 | `basis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [IntBinaryOperator](../java/util/function/IntBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -1170,10 +1170,10 @@ Returns the result of accumulating the given transformation of all entries using
 | Parameters ||
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a function returning the transformation for an element |
+| `transformer` | [ToLongFunction](../java/util/function/ToLongFunction.md)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!\>:a function returning the transformation for an element |
 | `basis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -1195,7 +1195,7 @@ Returns the result of accumulating all keys using the given reducer to combine v
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `reducer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inK,outK\>:a commutative associative combining function |
+| `reducer` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inK,outK\>:a commutative associative combining function |
 
 | Return ||
 |----|------------------------------------------------------------------------------------------------|
@@ -1218,8 +1218,8 @@ Returns the result of accumulating the given transformation of all keys using th
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inK,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
-| `reducer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inU,inU,outU\>:a commutative associative combining function |
+| `transformer` | [Function](../java/util/function/Function.md)\<inK,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
+| `reducer` | [BiFunction](../java/util/function/BiFunction.md)\<inU,inU,outU\>:a commutative associative combining function |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -1245,10 +1245,10 @@ Returns the result of accumulating the given transformation of all keys using th
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#)\<inK\>:a function returning the transformation for an element |
+| `transformer` | [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)\<inK\>:a function returning the transformation for an element |
 | `basis` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -1272,10 +1272,10 @@ Returns the result of accumulating the given transformation of all keys using th
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#)\<inK\>:a function returning the transformation for an element |
+| `transformer` | [ToIntFunction](../java/util/function/ToIntFunction.md)\<inK\>:a function returning the transformation for an element |
 | `basis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [IntBinaryOperator](../java/util/function/IntBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -1299,10 +1299,10 @@ Returns the result of accumulating the given transformation of all keys using th
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#)\<inK\>:a function returning the transformation for an element |
+| `transformer` | [ToLongFunction](../java/util/function/ToLongFunction.md)\<inK\>:a function returning the transformation for an element |
 | `basis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -1326,10 +1326,10 @@ Returns the result of accumulating the given transformation of all (key, value) 
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToDoubleBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleBiFunction.html#)\<inK,inV\>:a function returning the transformation for an element |
+| `transformer` | [ToDoubleBiFunction](../java/util/function/ToDoubleBiFunction.md)\<inK,inV\>:a function returning the transformation for an element |
 | `basis` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -1353,10 +1353,10 @@ Returns the result of accumulating the given transformation of all (key, value) 
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToIntBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntBiFunction.html#)\<inK,inV\>:a function returning the transformation for an element |
+| `transformer` | [ToIntBiFunction](../java/util/function/ToIntBiFunction.md)\<inK,inV\>:a function returning the transformation for an element |
 | `basis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [IntBinaryOperator](../java/util/function/IntBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -1380,10 +1380,10 @@ Returns the result of accumulating the given transformation of all (key, value) 
 | Parameters ||
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToLongBiFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongBiFunction.html#)\<inK,inV\>:a function returning the transformation for an element |
+| `transformer` | [ToLongBiFunction](../java/util/function/ToLongBiFunction.md)\<inK,inV\>:a function returning the transformation for an element |
 | `basis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -1405,7 +1405,7 @@ Returns the result of accumulating all values using the given reducer to combine
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `reducer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inV,inV,outV\>:a commutative associative combining function |
+| `reducer` | [BiFunction](../java/util/function/BiFunction.md)\<inV,inV,outV\>:a commutative associative combining function |
 
 | Return ||
 |----|---------------------------------------|
@@ -1428,8 +1428,8 @@ Returns the result of accumulating the given transformation of all values using 
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
-| `reducer` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inU,inU,outU\>:a commutative associative combining function |
+| `transformer` | [Function](../java/util/function/Function.md)\<inV,outU\>:a function returning the transformation for an element, or null if there is no transformation (in which case it is not combined) |
+| `reducer` | [BiFunction](../java/util/function/BiFunction.md)\<inU,inU,outU\>:a commutative associative combining function |
 | --- | --- |
 | `<U>` | the return type of the transformer |
 
@@ -1455,10 +1455,10 @@ Returns the result of accumulating the given transformation of all values using 
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToDoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#)\<inV\>:a function returning the transformation for an element |
+| `transformer` | [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)\<inV\>:a function returning the transformation for an element |
 | `basis` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -1482,10 +1482,10 @@ Returns the result of accumulating the given transformation of all values using 
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#)\<inV\>:a function returning the transformation for an element |
+| `transformer` | [ToIntFunction](../java/util/function/ToIntFunction.md)\<inV\>:a function returning the transformation for an element |
 | `basis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [IntBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [IntBinaryOperator](../java/util/function/IntBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -1509,10 +1509,10 @@ Returns the result of accumulating the given transformation of all values using 
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `transformer` | [ToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#)\<inV\>:a function returning the transformation for an element |
+| `transformer` | [ToLongFunction](../java/util/function/ToLongFunction.md)\<inV\>:a function returning the transformation for an element |
 | `basis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the identity (initial default value) for the reduction |
 | --- | --- |
-| `reducer` | [LongBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#):a commutative associative combining function |
+| `reducer` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md):a commutative associative combining function |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -1670,7 +1670,7 @@ open fun replaceAll(function: BiFunction<in K, in V, out V>): Unit
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `function` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV,outV\>:the function to apply to each entry |
+| `function` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outV\>:the function to apply to each entry |
 
 | Exceptions ||
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -1697,7 +1697,7 @@ Returns a non-null result from applying the given search function on each (key, 
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `searchFunction` | [BiFunction](https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#)\<inK,inV,outU\>:a function returning a non-null result on success, else null |
+| `searchFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outU\>:a function returning a non-null result on success, else null |
 | `<U>` | the return type of the search function |
 | --- | --- |
 
@@ -1721,7 +1721,7 @@ Returns a non-null result from applying the given search function on each entry,
 | Parameters ||
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `searchFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,outU\>:a function returning a non-null result on success, else null |
+| `searchFunction` | [Function](../java/util/function/Function.md)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>!,outU\>:a function returning a non-null result on success, else null |
 | `<U>` | the return type of the search function |
 | --- | --- |
 
@@ -1745,7 +1745,7 @@ Returns a non-null result from applying the given search function on each key, o
 | Parameters ||
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `searchFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inK,outU\>:a function returning a non-null result on success, else null |
+| `searchFunction` | [Function](../java/util/function/Function.md)\<inK,outU\>:a function returning a non-null result on success, else null |
 | `<U>` | the return type of the search function |
 | --- | --- |
 
@@ -1769,7 +1769,7 @@ Returns a non-null result from applying the given search function on each value,
 | Parameters ||
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `parallelismThreshold` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the (estimated) number of elements needed for this operation to be executed in parallel |
-| `searchFunction` | [Function](https://developer.android.com/reference/kotlin/java/util/function/Function.html#)\<inV,outU\>:a function returning a non-null result on success, else null |
+| `searchFunction` | [Function](../java/util/function/Function.md)\<inV,outU\>:a function returning a non-null result on success, else null |
 | `<U>` | the return type of the search function |
 | --- | --- |
 
@@ -1801,11 +1801,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val entries: MutableSet<MutableEntry<K, V>>
 ```
 
-Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) view of the mappings contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations.
+Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations.
 
-The view's iterators and spliterators are [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
 
-The view's`spliterator`reports [Spliterator.CONCURRENT](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#CONCURRENT:kotlin.Int), [Spliterator.DISTINCT](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#DISTINCT:kotlin.Int), and [Spliterator.NONNULL](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#NONNULL:kotlin.Int).
+The view's`spliterator`reports [Spliterator.CONCURRENT](../java/util/Spliterator.md), [Spliterator.DISTINCT](../java/util/Spliterator.md), and [Spliterator.NONNULL](../java/util/Spliterator.md).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -1819,13 +1819,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val keys: MutableSet<K>
 ```
 
-Returns a [Set](https://developer.android.com/reference/kotlin/java/util/Set.html#) view of the keys contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from this map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
+Returns a [Set](../java/util/Set.md) view of the keys contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from this map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
 
-The set returned by this method is guaranteed to an instance of [KeySetView](https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentHashMap.KeySetView).
+The set returned by this method is guaranteed to an instance of [KeySetView](../java/util/concurrent/ConcurrentHashMap.KeySetView.md).
 
-The view's iterators and spliterators are [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
 
-The view's`spliterator`reports [Spliterator.CONCURRENT](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#CONCURRENT:kotlin.Int), [Spliterator.DISTINCT](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#DISTINCT:kotlin.Int), and [Spliterator.NONNULL](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#NONNULL:kotlin.Int).
+The view's`spliterator`reports [Spliterator.CONCURRENT](../java/util/Spliterator.md), [Spliterator.DISTINCT](../java/util/Spliterator.md), and [Spliterator.NONNULL](../java/util/Spliterator.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|--------------|
@@ -1853,11 +1853,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val values: MutableCollection<V>
 ```
 
-Returns a [Collection](https://developer.android.com/reference/kotlin/java/util/Collection.html#) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. The collection supports element removal, which removes the corresponding mapping from this map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
+Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. The collection supports element removal, which removes the corresponding mapping from this map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
 
-The view's iterators and spliterators are [*weakly consistent*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary#Weakly).
+The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
 
-The view's`spliterator`reports [Spliterator.CONCURRENT](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#CONCURRENT:kotlin.Int) and [Spliterator.NONNULL](https://developer.android.com/reference/kotlin/java/util/Spliterator.html#NONNULL:kotlin.Int).
+The view's`spliterator`reports [Spliterator.CONCURRENT](../java/util/Spliterator.md) and [Spliterator.NONNULL](../java/util/Spliterator.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|---------------------|

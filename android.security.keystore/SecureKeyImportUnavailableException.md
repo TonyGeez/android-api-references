@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # SecureKeyImportUnavailableException
 
-Kotlin| [Java](https://developer.android.com/reference/android/security/keystore/SecureKeyImportUnavailableException "View this page in Java") 
+Kotlin| [Java](../android/security/keystore/SecureKeyImportUnavailableException.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class SecureKeyImportUnavailableException : ProviderException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.ProviderException](https://developer.android.com/reference/kotlin/java/security/ProviderException.html#) ||
-| | | | | ↳ | [android.security.keystore.SecureKeyImportUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/SecureKeyImportUnavailableException#) |
+| | | | ↳ | [java.security.ProviderException](../java/security/ProviderException.md) ||
+| | | | | ↳ | [android.security.keystore.SecureKeyImportUnavailableException](../android/security/keystore/SecureKeyImportUnavailableException.md) |
 
 Indicates that the Keystore does not support securely importing wrapped keys.
 
@@ -26,10 +26,10 @@ Indicates that the Keystore does not support securely importing wrapped keys.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SecureKeyImportUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/SecureKeyImportUnavailableException#SecureKeyImportUnavailableException())`()` <br /> |
-| [SecureKeyImportUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/SecureKeyImportUnavailableException#SecureKeyImportUnavailableException(kotlin.String))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [SecureKeyImportUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/SecureKeyImportUnavailableException#SecureKeyImportUnavailableException(kotlin.String,%20kotlin.Throwable))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
-| [SecureKeyImportUnavailableException](https://developer.android.com/reference/kotlin/android/security/keystore/SecureKeyImportUnavailableException#SecureKeyImportUnavailableException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [SecureKeyImportUnavailableException](../android/security/keystore/SecureKeyImportUnavailableException.md))`()` <br /> |
+| [SecureKeyImportUnavailableException](../android/security/keystore/SecureKeyImportUnavailableException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SecureKeyImportUnavailableException](../android/security/keystore/SecureKeyImportUnavailableException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [SecureKeyImportUnavailableException](../android/security/keystore/SecureKeyImportUnavailableException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
 
 ## Public constructors
 

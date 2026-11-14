@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # BlendModeColorFilter
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/BlendModeColorFilter "View this page in Java")
+Kotlin | [Java](../android/graphics/BlendModeColorFilter.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class BlendModeColorFilter : ColorFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.ColorFilter](https://developer.android.com/reference/kotlin/android/graphics/ColorFilter) ||
-| | ↳ | [android.graphics.BlendModeColorFilter](https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#) |
+| ↳ | [android.graphics.ColorFilter](../android/graphics/ColorFilter.md) ||
+| | ↳ | [android.graphics.BlendModeColorFilter](../android/graphics/BlendModeColorFilter.md) |
 
 A color filter that can be used to tint the source pixels using a single color and a specific `https://developer.android.com/reference/kotlin/android/graphics/BlendMode`.
 
@@ -26,7 +26,7 @@ A color filter that can be used to tint the source pixels using a single color a
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#getColor()()` Returns the ARGB color used to tint the source pixels when this filter is applied. |
-| [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode)! | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#getMode()()` Returns the Porter-Duff mode used to composite this color filter's color with the source pixel when this filter is applied. |
+| [BlendMode](../android/graphics/BlendMode.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#getMode()()` Returns the Porter-Duff mode used to composite this color filter's color with the source pixel when this filter is applied. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#hashCode()()` Returns a hash code value for the object. |
 
@@ -44,7 +44,7 @@ BlendModeColorFilter(
 
 | Parameters ||
 |---|---|
-| `mode` | [BlendMode](https://developer.android.com/reference/kotlin/android/graphics/BlendMode): This value cannot be `null`. |
+| `mode` | [BlendMode](../android/graphics/BlendMode.md): This value cannot be `null`. |
 
 ## Public methods
 

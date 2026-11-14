@@ -10,7 +10,7 @@ open class ProtectionDomain
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#) |
+| ↳ | [java.security.ProtectionDomain](../java/security/ProtectionDomain.md) |
 
 Legacy security code; do not use.
 
@@ -18,17 +18,17 @@ Legacy security code; do not use.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#ProtectionDomain(java.security.CodeSource,%20java.security.PermissionCollection))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!`, `permissions:` ` [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)!`)` <br /> |
-| [ProtectionDomain](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#ProtectionDomain(java.security.CodeSource,%20java.security.PermissionCollection,%20java.lang.ClassLoader,%20kotlin.Array))`(`codesource:` ` [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)!`, `permissions:` ` [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)!`, `classloader:` ` [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)!`, `principals:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Principal](https://developer.android.com/reference/kotlin/java/security/Principal)!>!`)` <br /> |
+| [ProtectionDomain](../java/security/ProtectionDomain.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`, `permissions:` ` [PermissionCollection](../java/security/PermissionCollection.md)!`)` <br /> |
+| [ProtectionDomain](../java/security/ProtectionDomain.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`, `permissions:` ` [PermissionCollection](../java/security/PermissionCollection.md)!`, `classloader:` ` [ClassLoader](../java/lang/ClassLoader.md)!`, `principals:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Principal](../java/security/Principal.md)!>!`)` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ClassLoader](https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#)! | [getClassLoader](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#getClassLoader())`()` <br /> |
-| [CodeSource](https://developer.android.com/reference/kotlin/java/security/CodeSource)! | [getCodeSource](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#getCodeSource())`()` <br /> |
-| [PermissionCollection](https://developer.android.com/reference/kotlin/java/security/PermissionCollection)! | [getPermissions](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#getPermissions())`()` <br /> |
+| [ClassLoader](../java/lang/ClassLoader.md)! | [getClassLoader](../java/security/ProtectionDomain.md))`()` <br /> |
+| [CodeSource](../java/security/CodeSource.md)! | [getCodeSource](../java/security/ProtectionDomain.md))`()` <br /> |
+| [PermissionCollection](../java/security/PermissionCollection.md)! | [getPermissions](../java/security/ProtectionDomain.md))`()` <br /> |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](https://developer.android.com/reference/kotlin/java/security/Principal)!\>! | [getPrincipals](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#getPrincipals())`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](https://developer.android.com/reference/kotlin/java/security/ProtectionDomain#implies(java.security.Permission))`(`permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/Permission)!`)` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](../java/security/Principal.md)!\>! | [getPrincipals](../java/security/ProtectionDomain.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/ProtectionDomain.md))`(`permission:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
 
 ## Public constructors
 

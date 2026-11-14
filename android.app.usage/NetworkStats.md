@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # NetworkStats
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/usage/NetworkStats "View this page in Java") 
+Kotlin| [Java](../android/app/usage/NetworkStats.md) 
 | --- | --- |
 
 ```
@@ -13,26 +13,26 @@ class NetworkStats : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.usage.NetworkStats](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#) |
+| ↳ | [android.app.usage.NetworkStats](../android/app/usage/NetworkStats.md) |
 
-Class providing enumeration over buckets of network usage statistics. [NetworkStats](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#) objects are returned as results to various queries in [NetworkStatsManager](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager).
+Class providing enumeration over buckets of network usage statistics. [NetworkStats](../android/app/usage/NetworkStats.md) objects are returned as results to various queries in [NetworkStatsManager](../android/app/usage/NetworkStatsManager.md).
 
 ## Summary
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Bucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats.Bucket) Buckets are the smallest elements of a query result. |
+| | [Bucket](../android/app/usage/NetworkStats.Bucket.md) Buckets are the smallest elements of a query result. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#close())`()` Closes the enumeration. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNextBucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#getNextBucket(android.app.usage.NetworkStats.Bucket))`(`bucketOut:` ` [NetworkStats.Bucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats.Bucket)?`)` Fills the recycled bucket with data of the next bin in the enumeration. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNextBucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#hasNextBucket())`()` Check if it is possible to ask for a next bucket in the enumeration. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/app/usage/NetworkStats.md))`()` Closes the enumeration. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNextBucket](../android/app/usage/NetworkStats.md))`(`bucketOut:` ` [NetworkStats.Bucket](../android/app/usage/NetworkStats.Bucket.md)?`)` Fills the recycled bucket with data of the next bin in the enumeration. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNextBucket](../android/app/usage/NetworkStats.md))`()` Check if it is possible to ask for a next bucket in the enumeration. |
 | --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats#finalize())`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/app/usage/NetworkStats.md))`()` <br /> |
 
 ## Public methods
 
@@ -62,7 +62,7 @@ Fills the recycled bucket with data of the next bin in the enumeration.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bucketOut` | [NetworkStats.Bucket](https://developer.android.com/reference/kotlin/android/app/usage/NetworkStats.Bucket)?:Bucket to be filled with data. If null, the method does nothing and returning false. |
+| `bucketOut` | [NetworkStats.Bucket](../android/app/usage/NetworkStats.Bucket.md)?:Bucket to be filled with data. If null, the method does nothing and returning false. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|

@@ -9,7 +9,7 @@ open class LogReader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.LogReader](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#) |
+| ↳ | [android.adservices.ondevicepersonalization.LogReader](../android/adservices/ondevicepersonalization/LogReader.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -22,8 +22,8 @@ An interface to a read logs from REQUESTS and EVENTS Used as a Data Access Objec
 
 | Public methods ||
 |---|---|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#getJoinedEvents(java.time.Instant,%20java.time.Instant)(startTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#, endTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#)` Retrieves a List of EventLogRecord with its corresponding RequestLogRecord written by this IsolatedService within the specified time range. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RequestLogRecord](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#getRequests(java.time.Instant,%20java.time.Instant)(startTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#, endTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#)` Retrieves a List of RequestLogRecords written by this IsolatedService within the specified time range. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#getJoinedEvents(java.time.Instant,%20java.time.Instant)(startTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#, endTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#)` Retrieves a List of EventLogRecord with its corresponding RequestLogRecord written by this IsolatedService within the specified time range. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#getRequests(java.time.Instant,%20java.time.Instant)(startTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#, endTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#)` Retrieves a List of RequestLogRecords written by this IsolatedService within the specified time range. |
 
 ## Public methods
 
@@ -45,8 +45,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `startTime` | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#): This value cannot be `null`. |
-| `endTime` | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#): This value cannot be `null`. |
+| `startTime` | [Instant](../java/time/Instant.md): This value cannot be `null`. |
+| `endTime` | [Instant](../java/time/Instant.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -70,8 +70,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `startTime` | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#): This value cannot be `null`. |
-| `endTime` | [Instant](https://developer.android.com/reference/kotlin/java/time/Instant.html#): This value cannot be `null`. |
+| `startTime` | [Instant](../java/time/Instant.md): This value cannot be `null`. |
+| `endTime` | [Instant](../java/time/Instant.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

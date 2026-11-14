@@ -4,16 +4,16 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # BaseTvColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/tv/TvContract.BaseTvColumns "View this page in Java") 
+Kotlin| [Java](../android/media/tv/TvContract.BaseTvColumns.md) 
 | --- | --- |
 
 ```
 interface BaseTvColumns : BaseColumns
 ```
 
-| [android.media.tv.TvContract.BaseTvColumns](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.BaseTvColumns#) |
+| [android.media.tv.TvContract.BaseTvColumns](../android/media/tv/TvContract.BaseTvColumns.md) |
 
-| Known Direct Subclasses [TvContract.Channels](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Channels), [TvContract.PreviewPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.PreviewPrograms), [TvContract.Programs](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs), [TvContract.RecordedPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.RecordedPrograms), [TvContract.WatchNextPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.WatchNextPrograms) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------| | [TvContract.Channels](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Channels) | Column definitions for the TV channels table. | | [TvContract.PreviewPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.PreviewPrograms) | Column definitions for the preview TV programs table. | | [TvContract.Programs](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.Programs) | Column definitions for the TV programs table. | | [TvContract.RecordedPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.RecordedPrograms) | Column definitions for the recorded TV programs table. | | [TvContract.WatchNextPrograms](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.WatchNextPrograms) | Column definitions for the "watch next" TV programs table. | |
+| Known Direct Subclasses [TvContract.Channels](../android/media/tv/TvContract.Channels.md), [TvContract.PreviewPrograms](../android/media/tv/TvContract.PreviewPrograms.md), [TvContract.Programs](../android/media/tv/TvContract.Programs.md), [TvContract.RecordedPrograms](../android/media/tv/TvContract.RecordedPrograms.md), [TvContract.WatchNextPrograms](../android/media/tv/TvContract.WatchNextPrograms.md) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------| | [TvContract.Channels](../android/media/tv/TvContract.Channels.md) | Column definitions for the TV channels table. | | [TvContract.PreviewPrograms](../android/media/tv/TvContract.PreviewPrograms.md) | Column definitions for the preview TV programs table. | | [TvContract.Programs](../android/media/tv/TvContract.Programs.md) | Column definitions for the TV programs table. | | [TvContract.RecordedPrograms](../android/media/tv/TvContract.RecordedPrograms.md) | Column definitions for the recorded TV programs table. | | [TvContract.WatchNextPrograms](../android/media/tv/TvContract.WatchNextPrograms.md) | Column definitions for the "watch next" TV programs table. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Common base for the tables of TV channels/programs.
@@ -22,11 +22,11 @@ Common base for the tables of TV channels/programs.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/media/tv/TvContract.BaseTvColumns#COLUMN_PACKAGE_NAME:kotlin.String) The name of the package that owns the current row. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_PACKAGE_NAME](../android/media/tv/TvContract.BaseTvColumns.md) The name of the package that owns the current row. |
 
 | Inherited constants ||
 |---|---|
-| From class [BaseColumns](https://developer.android.com/reference/kotlin/android/provider/BaseColumns.html#) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_COUNT](https://developer.android.com/reference/kotlin/android/provider/BaseColumns.html#_COUNT:kotlin.String) <br /> The count of rows in a directory. Type: INTEGER <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_ID](https://developer.android.com/reference/kotlin/android/provider/BaseColumns.html#_ID:kotlin.String) <br /> The unique ID for a row. Type: INTEGER (long) <br /> | ||
+| From class [BaseColumns](../android/provider/BaseColumns.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_COUNT](../android/provider/BaseColumns.md) <br /> The count of rows in a directory. Type: INTEGER <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [_ID](../android/provider/BaseColumns.md) <br /> The unique ID for a row. Type: INTEGER (long) <br /> | ||
 
 ## Constants
 

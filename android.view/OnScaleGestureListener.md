@@ -4,23 +4,23 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # OnScaleGestureListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener "View this page in Java") 
+Kotlin| [Java](../android/view/ScaleGestureDetector.OnScaleGestureListener.md) 
 | --- | --- |
 
 ```
 interface OnScaleGestureListener
 ```
 
-| [android.view.ScaleGestureDetector.OnScaleGestureListener](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener#) |
+| [android.view.ScaleGestureDetector.OnScaleGestureListener](../android/view/ScaleGestureDetector.OnScaleGestureListener.md) |
 
-| Known Direct Subclasses [ScaleGestureDetector.SimpleOnScaleGestureListener](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener) |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [ScaleGestureDetector.SimpleOnScaleGestureListener](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener) | A convenience class to extend when you only want to listen for a subset of scaling-related events. | |
+| Known Direct Subclasses [ScaleGestureDetector.SimpleOnScaleGestureListener](../android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.md) |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------| | [ScaleGestureDetector.SimpleOnScaleGestureListener](../android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.md) | A convenience class to extend when you only want to listen for a subset of scaling-related events. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-The listener for receiving notifications when gestures occur. If you want to listen for all the different gestures then implement this interface. If you only want to listen for a subset it might be easier to extend [SimpleOnScaleGestureListener](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener). An application will receive events in the following order:
+The listener for receiving notifications when gestures occur. If you want to listen for all the different gestures then implement this interface. If you only want to listen for a subset it might be easier to extend [SimpleOnScaleGestureListener](../android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.md). An application will receive events in the following order:
 
-- One [OnScaleGestureListener.onScaleBegin(ScaleGestureDetector)](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener#onScaleBegin(android.view.ScaleGestureDetector))
-- Zero or more [OnScaleGestureListener.onScale(ScaleGestureDetector)](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener#onScale(android.view.ScaleGestureDetector))
-- One [OnScaleGestureListener.onScaleEnd(ScaleGestureDetector)](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener#onScaleEnd(android.view.ScaleGestureDetector))
+- One [OnScaleGestureListener.onScaleBegin(ScaleGestureDetector)](../android/view/ScaleGestureDetector.OnScaleGestureListener.md))
+- Zero or more [OnScaleGestureListener.onScale(ScaleGestureDetector)](../android/view/ScaleGestureDetector.OnScaleGestureListener.md))
+- One [OnScaleGestureListener.onScaleEnd(ScaleGestureDetector)](../android/view/ScaleGestureDetector.OnScaleGestureListener.md))
 
 <br />
 
@@ -28,9 +28,9 @@ The listener for receiving notifications when gestures occur. If you want to lis
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onScale](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener#onScale(android.view.ScaleGestureDetector))`(`detector:` ` [ScaleGestureDetector](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector)`)` Responds to scaling events for a gesture in progress. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onScaleBegin](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener#onScaleBegin(android.view.ScaleGestureDetector))`(`detector:` ` [ScaleGestureDetector](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector)`)` Responds to the beginning of a scaling gesture. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScaleEnd](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener#onScaleEnd(android.view.ScaleGestureDetector))`(`detector:` ` [ScaleGestureDetector](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector)`)` Responds to the end of a scale gesture. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onScale](../android/view/ScaleGestureDetector.OnScaleGestureListener.md))`(`detector:` ` [ScaleGestureDetector](../android/view/ScaleGestureDetector.md)`)` Responds to scaling events for a gesture in progress. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onScaleBegin](../android/view/ScaleGestureDetector.OnScaleGestureListener.md))`(`detector:` ` [ScaleGestureDetector](../android/view/ScaleGestureDetector.md)`)` Responds to the beginning of a scaling gesture. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScaleEnd](../android/view/ScaleGestureDetector.OnScaleGestureListener.md))`(`detector:` ` [ScaleGestureDetector](../android/view/ScaleGestureDetector.md)`)` Responds to the end of a scale gesture. |
 | --- | --- |
 
 ## Public methods
@@ -47,7 +47,7 @@ Responds to scaling events for a gesture in progress. Reported by pointer motion
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `detector` | [ScaleGestureDetector](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector):The detector reporting the event - use this to retrieve extended info about event state. This value cannot be`null`. |
+| `detector` | [ScaleGestureDetector](../android/view/ScaleGestureDetector.md):The detector reporting the event - use this to retrieve extended info about event state. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -65,7 +65,7 @@ Responds to the beginning of a scaling gesture. Reported by new pointers going d
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `detector` | [ScaleGestureDetector](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector):The detector reporting the event - use this to retrieve extended info about event state. This value cannot be`null`. |
+| `detector` | [ScaleGestureDetector](../android/view/ScaleGestureDetector.md):The detector reporting the event - use this to retrieve extended info about event state. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,8 +79,8 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun onScaleEnd(detector: ScaleGestureDetector): Unit
 ```
 
-Responds to the end of a scale gesture. Reported by existing pointers going up. Once a scale has ended, [ScaleGestureDetector.getFocusX()](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getFocusX())and [ScaleGestureDetector.getFocusY()](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector#getFocusY())will return focal point of the pointers remaining on the screen.
+Responds to the end of a scale gesture. Reported by existing pointers going up. Once a scale has ended, [ScaleGestureDetector.getFocusX()](../android/view/ScaleGestureDetector.md))and [ScaleGestureDetector.getFocusY()](../android/view/ScaleGestureDetector.md))will return focal point of the pointers remaining on the screen.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `detector` | [ScaleGestureDetector](https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector):The detector reporting the event - use this to retrieve extended info about event state. This value cannot be`null`. |
+| `detector` | [ScaleGestureDetector](../android/view/ScaleGestureDetector.md):The detector reporting the event - use this to retrieve extended info about event state. This value cannot be`null`. |

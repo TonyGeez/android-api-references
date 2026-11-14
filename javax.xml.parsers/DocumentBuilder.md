@@ -10,11 +10,11 @@ abstract class DocumentBuilder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.parsers.DocumentBuilder](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#) |
+| ↳ | [javax.xml.parsers.DocumentBuilder](../javax/xml/parsers/DocumentBuilder.md) |
 
 Defines the API to obtain DOM Document instances from an XML document. Using this class, an application programmer can obtain a [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) from XML.
 
-An instance of this class can be obtained from the [DocumentBuilderFactory.newDocumentBuilder()](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#newDocumentBuilder())method. Once an instance of this class is obtained, XML can be parsed from a variety of input sources. These input sources are InputStreams, Files, URLs, and SAX InputSources.
+An instance of this class can be obtained from the [DocumentBuilderFactory.newDocumentBuilder()](../javax/xml/parsers/DocumentBuilderFactory.md))method. Once an instance of this class is obtained, XML can be parsed from a variety of input sources. These input sources are InputStreams, Files, URLs, and SAX InputSources.
 
 Note that this class reuses several classes from the SAX API. This does not require that the implementor of the underlying DOM implementation use a SAX parser to parse XML document into a`Document`. It merely requires that the implementation communicate with the application using these existing APIs.
 
@@ -22,28 +22,28 @@ Note that this class reuses several classes from the SAX API. This does not requ
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DocumentBuilder](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#DocumentBuilder())`()` Protected constructor |
+| [DocumentBuilder](../javax/xml/parsers/DocumentBuilder.md))`()` Protected constructor |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html)! | [getDOMImplementation](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#getDOMImplementation())`()` Obtain an instance of a [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html) object. |
-| open [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#)! | [getSchema](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#getSchema())`()` Get a reference to the the [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#) being used by the XML processor. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamespaceAware](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#isNamespaceAware())`()` Indicates whether or not this parser is configured to understand namespaces. |
+| abstract [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html)! | [getDOMImplementation](../javax/xml/parsers/DocumentBuilder.md))`()` Obtain an instance of a [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html) object. |
+| open [Schema](../javax/xml/validation/Schema.md)! | [getSchema](../javax/xml/parsers/DocumentBuilder.md))`()` Get a reference to the the [Schema](../javax/xml/validation/Schema.md) being used by the XML processor. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamespaceAware](../javax/xml/parsers/DocumentBuilder.md))`()` Indicates whether or not this parser is configured to understand namespaces. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidating](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#isValidating())`()` Indicates whether or not this parser is configured to validate XML documents. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isXIncludeAware](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#isXIncludeAware())`()` Get the XInclude processing mode for this parser. |
-| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [newDocument](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#newDocument())`()` Obtain a new instance of a DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object to build a DOM tree with. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidating](../javax/xml/parsers/DocumentBuilder.md))`()` Indicates whether or not this parser is configured to validate XML documents. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isXIncludeAware](../javax/xml/parsers/DocumentBuilder.md))`()` Get the XInclude processing mode for this parser. |
+| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [newDocument](../javax/xml/parsers/DocumentBuilder.md))`()` Obtain a new instance of a DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object to build a DOM tree with. |
 | --- | --- |
-| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#parse(java.io.File))`(`f:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Parse the content of the given file as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
-| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#parse(java.io.InputStream))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Parse the content of the given`InputStream`as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
-| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#parse(java.io.InputStream,%20kotlin.String))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the content of the given`InputStream`as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
+| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](../javax/xml/parsers/DocumentBuilder.md))`(`f:` ` [File](../java/io/File.md)!`)` Parse the content of the given file as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
+| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](../javax/xml/parsers/DocumentBuilder.md))`(`is:` ` [InputStream](../java/io/InputStream.md)!`)` Parse the content of the given`InputStream`as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
+| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](../javax/xml/parsers/DocumentBuilder.md))`(`is:` ` [InputStream](../java/io/InputStream.md)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the content of the given`InputStream`as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
 | --- | --- |
-| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#parse(kotlin.String))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the content of the given URI as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
-| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#parse(org.xml.sax.InputSource))`(`is:` ` [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!`)` Parse the content of the given input source as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#reset())`()` Reset this`DocumentBuilder`. |
+| open [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](../javax/xml/parsers/DocumentBuilder.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse the content of the given URI as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
+| abstract [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html)! | [parse](../javax/xml/parsers/DocumentBuilder.md))`(`is:` ` [InputSource](../org/xml/sax/InputSource.md)!`)` Parse the content of the given input source as an XML document and return a new DOM [Document](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html) object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../javax/xml/parsers/DocumentBuilder.md))`()` Reset this`DocumentBuilder`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#setEntityResolver(org.xml.sax.EntityResolver))`(`er:` ` [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver.html#)!`)` Specify the [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver.html#) to be used to resolve entities present in the XML document to be parsed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#setErrorHandler(org.xml.sax.ErrorHandler))`(`eh:` ` [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!`)` Specify the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) to be used by the parser. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](../javax/xml/parsers/DocumentBuilder.md))`(`er:` ` [EntityResolver](../org/xml/sax/EntityResolver.md)!`)` Specify the [EntityResolver](../org/xml/sax/EntityResolver.md) to be used to resolve entities present in the XML document to be parsed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](../javax/xml/parsers/DocumentBuilder.md))`(`eh:` ` [ErrorHandler](../org/xml/sax/ErrorHandler.md)!`)` Specify the [ErrorHandler](../org/xml/sax/ErrorHandler.md) to be used by the parser. |
 
 ## Protected constructors
 
@@ -81,13 +81,13 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSchema(): Schema!
 ```
 
-Get a reference to the the [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#) being used by the XML processor.
+Get a reference to the the [Schema](../javax/xml/validation/Schema.md) being used by the XML processor.
 
 If no schema is being used,`null`is returned.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#)! | [Schema](https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#) being used or`null`if none in use |
+| [Schema](../javax/xml/validation/Schema.md)! | [Schema](../javax/xml/validation/Schema.md) being used or`null`if none in use |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -133,7 +133,7 @@ Get the XInclude processing mode for this parser.
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | the return value of the [DocumentBuilderFactory.isXIncludeAware()](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#isXIncludeAware())when this parser was created from factory. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | the return value of the [DocumentBuilderFactory.isXIncludeAware()](../javax/xml/parsers/DocumentBuilderFactory.md))when this parser was created from factory. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -141,7 +141,7 @@ Get the XInclude processing mode for this parser.
 
 **See Also**
 
-- [javax.xml.parsers.DocumentBuilderFactory#setXIncludeAware(boolean)](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory#setXIncludeAware(kotlin.Boolean)) 
+- [javax.xml.parsers.DocumentBuilderFactory#setXIncludeAware(boolean)](../javax/xml/parsers/DocumentBuilderFactory.md)) 
 
 ### newDocument
 
@@ -169,7 +169,7 @@ Parse the content of the given file as an XML document and return a new DOM [Doc
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------|
-| `f` | [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!:The file containing the XML to parse. |
+| `f` | [File](../java/io/File.md)!:The file containing the XML to parse. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------|
@@ -182,7 +182,7 @@ Parse the content of the given file as an XML document and return a new DOM [Doc
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler.html#) 
+- [org.xml.sax.DocumentHandler](../org/xml/sax/DocumentHandler.md) 
 
 ### parse
 
@@ -196,7 +196,7 @@ Parse the content of the given`InputStream`as an XML document and return a new D
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `is` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:InputStream containing the content to be parsed. |
+| `is` | [InputStream](../java/io/InputStream.md)!:InputStream containing the content to be parsed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------|
@@ -209,7 +209,7 @@ Parse the content of the given`InputStream`as an XML document and return a new D
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler.html#) 
+- [org.xml.sax.DocumentHandler](../org/xml/sax/DocumentHandler.md) 
 
 ### parse
 
@@ -226,7 +226,7 @@ Parse the content of the given`InputStream`as an XML document and return a new D
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `is` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:InputStream containing the content to be parsed. |
+| `is` | [InputStream](../java/io/InputStream.md)!:InputStream containing the content to be parsed. |
 | `systemId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Provide a base for resolving relative URIs. |
 
 | Return ||
@@ -240,7 +240,7 @@ Parse the content of the given`InputStream`as an XML document and return a new D
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler.html#) 
+- [org.xml.sax.DocumentHandler](../org/xml/sax/DocumentHandler.md) 
 
 ### parse
 
@@ -267,7 +267,7 @@ Parse the content of the given URI as an XML document and return a new DOM [Docu
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler.html#) 
+- [org.xml.sax.DocumentHandler](../org/xml/sax/DocumentHandler.md) 
 
 ### parse
 
@@ -281,7 +281,7 @@ Parse the content of the given input source as an XML document and return a new 
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `is` | [InputSource](https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#)!:InputSource containing the content to be parsed. |
+| `is` | [InputSource](../org/xml/sax/InputSource.md)!:InputSource containing the content to be parsed. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------|
@@ -294,7 +294,7 @@ Parse the content of the given input source as an XML document and return a new 
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler.html#) 
+- [org.xml.sax.DocumentHandler](../org/xml/sax/DocumentHandler.md) 
 
 ### reset
 
@@ -308,9 +308,9 @@ Reset this`DocumentBuilder`.
 This method removes both the`EntityResolver`and`ErrorHandler`instances associated with this`DocumentBuilder`and sets all internal properties to false including those set by the`DocumentBuilderFactory`when this`DocumentBuilder`was created. 
 **See Also**
 
-- [#setEntityResolver(EntityResolver)](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#setEntityResolver(org.xml.sax.EntityResolver))
-- [#setErrorHandler(ErrorHandler)](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder#setErrorHandler(org.xml.sax.ErrorHandler))
-- [javax.xml.parsers.DocumentBuilderFactory](https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory) 
+- [#setEntityResolver(EntityResolver)](../javax/xml/parsers/DocumentBuilder.md))
+- [#setErrorHandler(ErrorHandler)](../javax/xml/parsers/DocumentBuilder.md))
+- [javax.xml.parsers.DocumentBuilderFactory](../javax/xml/parsers/DocumentBuilderFactory.md) 
 
 ### setEntityResolver
 
@@ -320,11 +320,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setEntityResolver(er: EntityResolver!): Unit
 ```
 
-Specify the [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver.html#) to be used to resolve entities present in the XML document to be parsed. Setting this to`null`will result in the underlying implementation using it's own default implementation and behavior.
+Specify the [EntityResolver](../org/xml/sax/EntityResolver.md) to be used to resolve entities present in the XML document to be parsed. Setting this to`null`will result in the underlying implementation using it's own default implementation and behavior.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `er` | [EntityResolver](https://developer.android.com/reference/kotlin/org/xml/sax/EntityResolver.html#)!:The`EntityResolver`to be used to resolve entities present in the XML document to be parsed. |
+| `er` | [EntityResolver](../org/xml/sax/EntityResolver.md)!:The`EntityResolver`to be used to resolve entities present in the XML document to be parsed. |
 
 ### setErrorHandler
 
@@ -334,8 +334,8 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setErrorHandler(eh: ErrorHandler!): Unit
 ```
 
-Specify the [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#) to be used by the parser. Setting this to`null`will result in the underlying implementation using it's own default implementation and behavior.
+Specify the [ErrorHandler](../org/xml/sax/ErrorHandler.md) to be used by the parser. Setting this to`null`will result in the underlying implementation using it's own default implementation and behavior.
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `eh` | [ErrorHandler](https://developer.android.com/reference/kotlin/org/xml/sax/ErrorHandler.html#)!:The`ErrorHandler`to be used by the parser. |
+| `eh` | [ErrorHandler](../org/xml/sax/ErrorHandler.md)!:The`ErrorHandler`to be used by the parser. |

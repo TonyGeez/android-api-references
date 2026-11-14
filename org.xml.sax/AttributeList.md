@@ -9,20 +9,20 @@ Deprecated in [API level 9](https://developer.android.com/guide/topics/manifest/
 interface AttributeList
 ```
 
-| [org.xml.sax.AttributeList](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#) |
+| [org.xml.sax.AttributeList](../org/xml/sax/AttributeList.md) |
 
-| Known Direct Subclasses [AttributeListImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributeListImpl) |-----------------------------------------------------------------------------------------------------------|-------------------------------------------| | [AttributeListImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributeListImpl) | Default implementation for AttributeList. | |
+| Known Direct Subclasses [AttributeListImpl](../org/xml/sax/helpers/AttributeListImpl.md) |-----------------------------------------------------------------------------------------------------------|-------------------------------------------| | [AttributeListImpl](../org/xml/sax/helpers/AttributeListImpl.md) | Default implementation for AttributeList. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 9.**
 |
-| This interface has been replaced by the SAX2 [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes) interface, which includes Namespace support.
+| This interface has been replaced by the SAX2 [Attributes](../org/xml/sax/Attributes.md) interface, which includes Namespace support.
 
 Interface for an element's attribute specifications.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-This is the original SAX1 interface for reporting an element's attributes. Unlike the new [Attributes](https://developer.android.com/reference/kotlin/org/xml/sax/Attributes) interface, it does not support Namespace-related information.
+This is the original SAX1 interface for reporting an element's attributes. Unlike the new [Attributes](../org/xml/sax/Attributes.md) interface, it does not support Namespace-related information.
 
-When an attribute list is supplied as part of a [startElement](https://developer.android.com/reference/kotlin/org/xml/sax/DocumentHandler#startElement(kotlin.String,%20org.xml.sax.AttributeList))event, the list will return valid results only during the scope of the event; once the event handler returns control to the parser, the attribute list is invalid. To save a persistent copy of the attribute list, use the SAX1 [AttributeListImpl](https://developer.android.com/reference/kotlin/org/xml/sax/helpers/AttributeListImpl) helper class.
+When an attribute list is supplied as part of a [startElement](../org/xml/sax/DocumentHandler.md))event, the list will return valid results only during the scope of the event; once the event handler returns control to the parser, the attribute list is invalid. To save a persistent copy of the attribute list, use the SAX1 [AttributeListImpl](../org/xml/sax/helpers/AttributeListImpl.md) helper class.
 
 An attribute list includes only attributes that have been specified or defaulted: #IMPLIED attributes will not be included.
 
@@ -57,13 +57,13 @@ public void startElement (String name, AttributeList atts) {
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getLength())`()` Return the number of attributes in this list. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getName(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the name of an attribute in this list (by position). |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getType(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the type of an attribute in the list (by position). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../org/xml/sax/AttributeList.md))`()` Return the number of attributes in this list. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../org/xml/sax/AttributeList.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the name of an attribute in this list (by position). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/AttributeList.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the type of an attribute in the list (by position). |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getType(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the type of an attribute in the list (by name). |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getValue(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of an attribute in the list (by position). |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getValue(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the value of an attribute in the list (by name). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/AttributeList.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the type of an attribute in the list (by name). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/AttributeList.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value of an attribute in the list (by position). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/AttributeList.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the value of an attribute in the list (by name). |
 | --- | --- |
 
 ## Public methods
@@ -112,7 +112,7 @@ If the attribute name has a namespace prefix, the prefix will still be attached.
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getLength()) 
+- [#getLength](../org/xml/sax/AttributeList.md)) 
 
 ### getType
 
@@ -142,8 +142,8 @@ For an enumerated attribute that is not a notation, the parser will report the t
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getLength())
-- [#getType(java.lang.String)](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getType(kotlin.String)) 
+- [#getLength](../org/xml/sax/AttributeList.md))
+- [#getType(java.lang.String)](../org/xml/sax/AttributeList.md)) 
 
 ### getType
 
@@ -171,7 +171,7 @@ If the attribute name has a namespace prefix in the document, the application mu
 
 **See Also**
 
-- [#getType(int)](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getType(kotlin.Int)) 
+- [#getType(int)](../org/xml/sax/AttributeList.md)) 
 
 ### getValue
 
@@ -197,8 +197,8 @@ If the attribute value is a list of tokens (IDREFS, ENTITIES, or NMTOKENS), the 
 
 **See Also**
 
-- [#getLength](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getLength())
-- [#getValue(java.lang.String)](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getValue(kotlin.String)) 
+- [#getLength](../org/xml/sax/AttributeList.md))
+- [#getValue(java.lang.String)](../org/xml/sax/AttributeList.md)) 
 
 ### getValue
 
@@ -226,4 +226,4 @@ If the attribute name has a namespace prefix in the document, the application mu
 
 **See Also**
 
-- [#getValue(int)](https://developer.android.com/reference/kotlin/org/xml/sax/AttributeList#getValue(kotlin.Int))
+- [#getValue(int)](../org/xml/sax/AttributeList.md))

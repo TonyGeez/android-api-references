@@ -5,28 +5,28 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # AutoFocusMoveCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.AutoFocusMoveCallback "View this page in Java") 
+Kotlin| [Java](../android/hardware/Camera.AutoFocusMoveCallback.md) 
 | --- | --- |
 
 ```
 interface AutoFocusMoveCallback
 ```
 
-| [android.hardware.Camera.AutoFocusMoveCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.AutoFocusMoveCallback#) |
+| [android.hardware.Camera.AutoFocusMoveCallback](../android/hardware/Camera.AutoFocusMoveCallback.md) |
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
 
 Callback interface used to notify on auto focus start and stop.
 
-This is only supported in continuous autofocus modes -- [android.hardware.Camera.Parameters#FOCUS_MODE_CONTINUOUS_VIDEO](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters#FOCUS_MODE_CONTINUOUS_VIDEO:kotlin.String) and [android.hardware.Camera.Parameters#FOCUS_MODE_CONTINUOUS_PICTURE](https://developer.android.com/reference/kotlin/android/hardware/Camera.Parameters#FOCUS_MODE_CONTINUOUS_PICTURE:kotlin.String). Applications can show autofocus animation based on this.
+This is only supported in continuous autofocus modes -- [android.hardware.Camera.Parameters#FOCUS_MODE_CONTINUOUS_VIDEO](../android/hardware/Camera.Parameters.md) and [android.hardware.Camera.Parameters#FOCUS_MODE_CONTINUOUS_PICTURE](../android/hardware/Camera.Parameters.md). Applications can show autofocus animation based on this.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAutoFocusMoving](https://developer.android.com/reference/kotlin/android/hardware/Camera.AutoFocusMoveCallback#onAutoFocusMoving(kotlin.Boolean,%20android.hardware.Camera))`(`start:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `camera:` ` [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!`)` Called when the camera auto focus starts or stops. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAutoFocusMoving](../android/hardware/Camera.AutoFocusMoveCallback.md))`(`start:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Called when the camera auto focus starts or stops. |
 
 ## Public methods
 
@@ -48,4 +48,4 @@ Called when the camera auto focus starts or stops.
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `start` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if focus starts to move, false if focus stops to move |
-| `camera` | [Camera](https://developer.android.com/reference/kotlin/android/hardware/Camera)!:the Camera service object |
+| `camera` | [Camera](../android/hardware/Camera.md)!:the Camera service object |

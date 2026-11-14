@@ -10,7 +10,7 @@ open class DSAPublicKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.DSAPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAPublicKeySpec#) |
+| ↳ | [java.security.spec.DSAPublicKeySpec](../java/security/spec/DSAPublicKeySpec.md) |
 
 This class specifies a DSA public key with its associated parameters.
 
@@ -18,15 +18,15 @@ This class specifies a DSA public key with its associated parameters.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DSAPublicKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/DSAPublicKeySpec#DSAPublicKeySpec(java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger,%20java.math.BigInteger))`(`y:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `p:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `q:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`, `g:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Creates a new DSAPublicKeySpec with the specified parameter values. |
+| [DSAPublicKeySpec](../java/security/spec/DSAPublicKeySpec.md))`(`y:` ` [BigInteger](../java/math/BigInteger.md)!`, `p:` ` [BigInteger](../java/math/BigInteger.md)!`, `q:` ` [BigInteger](../java/math/BigInteger.md)!`, `g:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates a new DSAPublicKeySpec with the specified parameter values. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getG](https://developer.android.com/reference/kotlin/java/security/spec/DSAPublicKeySpec#getG())`()` Returns the base`g`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/spec/DSAPublicKeySpec#getP())`()` Returns the prime`p`. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getQ](https://developer.android.com/reference/kotlin/java/security/spec/DSAPublicKeySpec#getQ())`()` Returns the sub-prime`q`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getG](../java/security/spec/DSAPublicKeySpec.md))`()` Returns the base`g`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getP](../java/security/spec/DSAPublicKeySpec.md))`()` Returns the prime`p`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getQ](../java/security/spec/DSAPublicKeySpec.md))`()` Returns the sub-prime`q`. |
 | --- | --- |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getY](https://developer.android.com/reference/kotlin/java/security/spec/DSAPublicKeySpec#getY())`()` Returns the public key`y`. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getY](../java/security/spec/DSAPublicKeySpec.md))`()` Returns the public key`y`. |
 
 ## Public constructors
 
@@ -46,11 +46,11 @@ Creates a new DSAPublicKeySpec with the specified parameter values.
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------|
-| `y` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the public key. |
-| `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime. |
-| `q` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the sub-prime. |
+| `y` | [BigInteger](../java/math/BigInteger.md)!:the public key. |
+| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime. |
+| `q` | [BigInteger](../java/math/BigInteger.md)!:the sub-prime. |
 | --- | --- |
-| `g` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the base. |
+| `g` | [BigInteger](../java/math/BigInteger.md)!:the base. |
 
 ## Public methods
 
@@ -66,7 +66,7 @@ Returns the base`g`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the base`g`. |
+| [BigInteger](../java/math/BigInteger.md)! | the base`g`. |
 
 ### getP
 
@@ -80,7 +80,7 @@ Returns the prime`p`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the prime`p`. |
+| [BigInteger](../java/math/BigInteger.md)! | the prime`p`. |
 
 ### getQ
 
@@ -94,7 +94,7 @@ Returns the sub-prime`q`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the sub-prime`q`. |
+| [BigInteger](../java/math/BigInteger.md)! | the sub-prime`q`. |
 
 ### getY
 
@@ -108,4 +108,4 @@ Returns the public key`y`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the public key`y`. |
+| [BigInteger](../java/math/BigInteger.md)! | the public key`y`. |

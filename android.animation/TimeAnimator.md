@@ -2,7 +2,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # TimeAnimator
 
-Kotlin | [Java](https://developer.android.com/reference/android/animation/TimeAnimator "View this page in Java")
+Kotlin | [Java](../android/animation/TimeAnimator.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class TimeAnimator : ValueAnimator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.animation.Animator](https://developer.android.com/reference/kotlin/android/animation/Animator) |||
-| | ↳ | [android.animation.ValueAnimator](https://developer.android.com/reference/kotlin/android/animation/ValueAnimator) ||
-| | | ↳ | [android.animation.TimeAnimator](https://developer.android.com/reference/kotlin/android/animation/TimeAnimator#) |
+| ↳ | [android.animation.Animator](../android/animation/Animator.md) |||
+| | ↳ | [android.animation.ValueAnimator](../android/animation/ValueAnimator.md) ||
+| | | ↳ | [android.animation.TimeAnimator](../android/animation/TimeAnimator.md) |
 | --- | --- | --- | --- |
 
 This class provides a simple callback mechanism to listeners that is synchronized with all other animators in the system. There is no duration, interpolation, or object value-setting with this Animator. Instead, it is simply started, after which it proceeds to send out events on every animation frame to its TimeListener (if set), with information about this animator, the total elapsed time, and the elapsed time since the previous animation frame.
@@ -81,7 +81,7 @@ Sets a listener that is sent update events throughout the life of an animation.
 
 | Parameters ||
 |---|---|
-| `listener` | [TimeAnimator.TimeListener](https://developer.android.com/reference/kotlin/android/animation/TimeAnimator.TimeListener)!: the listener to be set. |
+| `listener` | [TimeAnimator.TimeListener](../android/animation/TimeAnimator.TimeListener.md)!: the listener to be set. |
 
 ### start
 

@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # BeginCreateCredentialRequest
 
-Kotlin | [Java](https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialRequest "View this page in Java")
+Kotlin | [Java](../android/service/credentials/BeginCreateCredentialRequest.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class BeginCreateCredentialRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.credentials.BeginCreateCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#) |
+| ↳ | [android.service.credentials.BeginCreateCredentialRequest](../android/service/credentials/BeginCreateCredentialRequest.md) |
 
 Request for beginning a create credential request. See `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialResponse` for the counterpart response
 
@@ -29,15 +29,15 @@ Request for beginning a create credential request. See `https://developer.androi
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo)? | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#getCallingAppInfo()()` Returns the info pertaining to the calling app. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#getData()()` Returns the data to be used while resolving the credential to create. |
+| [CallingAppInfo](../android/service/credentials/CallingAppInfo.md)? | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#getCallingAppInfo()()` Returns the info pertaining to the calling app. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#getData()()` Returns the data to be used while resolving the credential to create. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#getType()()` Returns the type of the credential to be created. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [BeginCreateCredentialRequest](https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#)!\> | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BeginCreateCredentialRequest](../android/service/credentials/BeginCreateCredentialRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -56,7 +56,7 @@ Constructs a new instance without `https://developer.android.com/reference/kotli
 | Parameters ||
 |---|---|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `data` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): This value cannot be `null`. |
+| `data` | [Bundle](../android/os/Bundle.md): This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -79,8 +79,8 @@ Constructs a new instance.
 | Parameters ||
 |---|---|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `data` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): This value cannot be `null`. |
-| `callingAppInfo` | [CallingAppInfo](https://developer.android.com/reference/kotlin/android/service/credentials/CallingAppInfo)?: This value may be `null`. |
+| `data` | [Bundle](../android/os/Bundle.md): This value cannot be `null`. |
+| `callingAppInfo` | [CallingAppInfo](../android/service/credentials/CallingAppInfo.md)?: This value may be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -157,7 +157,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

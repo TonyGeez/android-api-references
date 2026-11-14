@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # Bidi
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/text/Bidi "View this page in Java") 
+Kotlin| [Java](../android/icu/text/Bidi.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Bidi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#) |
+| ↳ | [android.icu.text.Bidi](../android/icu/text/Bidi.md) |
 
 <br />
 
@@ -35,19 +35,19 @@ Some of the API methods provide access to "runs". Such a "run" is defined as a s
 
 A piece of text can be divided into several paragraphs by characters with the Bidi class`Block Separator`. For handling of paragraphs, see:
 
-- [countParagraphs](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#countParagraphs())
-- [getParaLevel](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParaLevel())
-- [getParagraph](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraph(kotlin.Int))
-- [getParagraphByIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraphByIndex(kotlin.Int))
+- [countParagraphs](../android/icu/text/Bidi.md))
+- [getParaLevel](../android/icu/text/Bidi.md))
+- [getParagraph](../android/icu/text/Bidi.md))
+- [getParagraphByIndex](../android/icu/text/Bidi.md))
 
 ### Basic concept: text direction
 
 The direction of a piece of text may be:
 
-- [LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LTR:kotlin.Byte)
-- [RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#RTL:kotlin.Byte)
-- [MIXED](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MIXED:kotlin.Byte)
-- [NEUTRAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#NEUTRAL:kotlin.Byte)
+- [LTR](../android/icu/text/Bidi.md)
+- [RTL](../android/icu/text/Bidi.md)
+- [MIXED](../android/icu/text/Bidi.md)
+- [NEUTRAL](../android/icu/text/Bidi.md)
 
 ### Basic concept: levels
 
@@ -66,34 +66,34 @@ Note: The numeric values of the related constants will not change: They are tied
 
 **See Also:**
 
-- [LEVEL_DEFAULT_LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_LTR:kotlin.Byte)
-- [LEVEL_DEFAULT_RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_RTL:kotlin.Byte)
-- [LEVEL_OVERRIDE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_OVERRIDE:kotlin.Byte)
-- [MAX_EXPLICIT_LEVEL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAX_EXPLICIT_LEVEL:kotlin.Byte)
+- [LEVEL_DEFAULT_LTR](../android/icu/text/Bidi.md)
+- [LEVEL_DEFAULT_RTL](../android/icu/text/Bidi.md)
+- [LEVEL_OVERRIDE](../android/icu/text/Bidi.md)
+- [MAX_EXPLICIT_LEVEL](../android/icu/text/Bidi.md)
 - setPara
 
 ### Basic concept: Reordering Mode
 
 Reordering mode values indicate which variant of the Bidi algorithm to use.**See Also:**
 
-- [setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int))
-- [REORDER_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_DEFAULT:kotlin.Short)
-- [REORDER_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_NUMBERS_SPECIAL:kotlin.Short)
-- [REORDER_GROUP_NUMBERS_WITH_R](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_GROUP_NUMBERS_WITH_R:kotlin.Short)
-- [REORDER_RUNS_ONLY](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_RUNS_ONLY:kotlin.Short)
-- [REORDER_INVERSE_NUMBERS_AS_L](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_NUMBERS_AS_L:kotlin.Short)
-- [REORDER_INVERSE_LIKE_DIRECT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_LIKE_DIRECT:kotlin.Short)
-- [REORDER_INVERSE_FOR_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_FOR_NUMBERS_SPECIAL:kotlin.Short)
+- [setReorderingMode](../android/icu/text/Bidi.md))
+- [REORDER_DEFAULT](../android/icu/text/Bidi.md)
+- [REORDER_NUMBERS_SPECIAL](../android/icu/text/Bidi.md)
+- [REORDER_GROUP_NUMBERS_WITH_R](../android/icu/text/Bidi.md)
+- [REORDER_RUNS_ONLY](../android/icu/text/Bidi.md)
+- [REORDER_INVERSE_NUMBERS_AS_L](../android/icu/text/Bidi.md)
+- [REORDER_INVERSE_LIKE_DIRECT](../android/icu/text/Bidi.md)
+- [REORDER_INVERSE_FOR_NUMBERS_SPECIAL](../android/icu/text/Bidi.md)
 
 ### Basic concept: Reordering Options
 
 Reordering options can be applied during Bidi text transformations.**See Also:**
 
-- [setReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingOptions(kotlin.Int))
-- [OPTION_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_DEFAULT:kotlin.Int)
-- [OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int)
-- [OPTION_STREAMING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_STREAMING:kotlin.Int)
+- [setReorderingOptions](../android/icu/text/Bidi.md))
+- [OPTION_DEFAULT](../android/icu/text/Bidi.md)
+- [OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md)
+- [OPTION_STREAMING](../android/icu/text/Bidi.md)
 
 #### Sample code for the ICU Bidi API
 
@@ -363,126 +363,126 @@ package android.icu.dev.test.bidi;
 
 | Constants ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_DEFAULT_LEFT_TO_RIGHT:kotlin.Int) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_DEFAULT_RIGHT_TO_LEFT:kotlin.Int) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_LEFT_TO_RIGHT:kotlin.Int) Constant indicating base direction is left-to-right. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_LEFT_TO_RIGHT](../android/icu/text/Bidi.md) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_DEFAULT_RIGHT_TO_LEFT](../android/icu/text/Bidi.md) Constant indicating that the base direction depends on the first strong directional character in the text according to the Unicode Bidirectional Algorithm. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_LEFT_TO_RIGHT](../android/icu/text/Bidi.md) Constant indicating base direction is left-to-right. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_RIGHT_TO_LEFT:kotlin.Int) Constant indicating base direction is right-to-left. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [DO_MIRRORING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DO_MIRRORING:kotlin.Short) option bit for writeReordered(): replace characters with the "mirrored" property in RTL runs by their mirror-image mappings |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INSERT_LRM_FOR_NUMERIC](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#INSERT_LRM_FOR_NUMERIC:kotlin.Short) option bit for writeReordered(): surround the run with LRMs if necessary; this is part of the approximate "inverse Bidi" algorithm |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIRECTION_RIGHT_TO_LEFT](../android/icu/text/Bidi.md) Constant indicating base direction is right-to-left. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [DO_MIRRORING](../android/icu/text/Bidi.md) option bit for writeReordered(): replace characters with the "mirrored" property in RTL runs by their mirror-image mappings |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INSERT_LRM_FOR_NUMERIC](../android/icu/text/Bidi.md) option bit for writeReordered(): surround the run with LRMs if necessary; this is part of the approximate "inverse Bidi" algorithm |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [KEEP_BASE_COMBINING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#KEEP_BASE_COMBINING:kotlin.Short) option bit for writeReordered(): keep combining characters after their base characters in RTL runs |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEVEL_DEFAULT_LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_LTR:kotlin.Byte) Paragraph level setting |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEVEL_DEFAULT_RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_RTL:kotlin.Byte) Paragraph level setting |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [KEEP_BASE_COMBINING](../android/icu/text/Bidi.md) option bit for writeReordered(): keep combining characters after their base characters in RTL runs |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEVEL_DEFAULT_LTR](../android/icu/text/Bidi.md) Paragraph level setting |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEVEL_DEFAULT_RTL](../android/icu/text/Bidi.md) Paragraph level setting |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEVEL_OVERRIDE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_OVERRIDE:kotlin.Byte) Bit flag for level input. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LTR:kotlin.Byte) Left-to-right text. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAP_NOWHERE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAP_NOWHERE:kotlin.Int) Special value which can be returned by the mapping methods when a logical index has no corresponding visual index or vice-versa. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEVEL_OVERRIDE](../android/icu/text/Bidi.md) Bit flag for level input. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LTR](../android/icu/text/Bidi.md) Left-to-right text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAP_NOWHERE](../android/icu/text/Bidi.md) Special value which can be returned by the mapping methods when a logical index has no corresponding visual index or vice-versa. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MAX_EXPLICIT_LEVEL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAX_EXPLICIT_LEVEL:kotlin.Byte) Maximum explicit embedding level. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MIXED](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MIXED:kotlin.Byte) Mixed-directional text. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [NEUTRAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#NEUTRAL:kotlin.Byte) No strongly directional text. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MAX_EXPLICIT_LEVEL](../android/icu/text/Bidi.md) Maximum explicit embedding level. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MIXED](../android/icu/text/Bidi.md) Mixed-directional text. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [NEUTRAL](../android/icu/text/Bidi.md) No strongly directional text. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_DEFAULT:kotlin.Int) Option value for`setReorderingOptions`: disable all the options which can be set with this method |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int) Option bit for`setReorderingOptions`: insert Bidi marks (LRM or RLM) when needed to ensure correct result of a reordering to a Logical order |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int) Option bit for`setReorderingOptions`: remove Bidi control characters |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_DEFAULT](../android/icu/text/Bidi.md) Option value for`setReorderingOptions`: disable all the options which can be set with this method |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_INSERT_MARKS](../android/icu/text/Bidi.md) Option bit for`setReorderingOptions`: insert Bidi marks (LRM or RLM) when needed to ensure correct result of a reordering to a Logical order |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md) Option bit for`setReorderingOptions`: remove Bidi control characters |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_STREAMING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_STREAMING:kotlin.Int) Option bit for`setReorderingOptions`: process the output as part of a stream to be continued |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [OUTPUT_REVERSE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OUTPUT_REVERSE:kotlin.Short) option bit for writeReordered(): write the output in reverse order |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REMOVE_BIDI_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REMOVE_BIDI_CONTROLS:kotlin.Short) option bit for writeReordered(): remove Bidi control characters (this does not affect INSERT_LRM_FOR_NUMERIC) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_STREAMING](../android/icu/text/Bidi.md) Option bit for`setReorderingOptions`: process the output as part of a stream to be continued |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [OUTPUT_REVERSE](../android/icu/text/Bidi.md) option bit for writeReordered(): write the output in reverse order |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REMOVE_BIDI_CONTROLS](../android/icu/text/Bidi.md) option bit for writeReordered(): remove Bidi control characters (this does not affect INSERT_LRM_FOR_NUMERIC) |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_DEFAULT:kotlin.Short) Reordering mode: Regular Logical to Visual Bidi algorithm according to Unicode. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_GROUP_NUMBERS_WITH_R](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_GROUP_NUMBERS_WITH_R:kotlin.Short) Reordering mode: Logical to Visual algorithm grouping numbers with adjacent R characters (reversible algorithm). |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_INVERSE_FOR_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_FOR_NUMBERS_SPECIAL:kotlin.Short) Reordering mode: Inverse Bidi (Visual to Logical) algorithm for the`REORDER_NUMBERS_SPECIAL`Bidi algorithm. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_DEFAULT](../android/icu/text/Bidi.md) Reordering mode: Regular Logical to Visual Bidi algorithm according to Unicode. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_GROUP_NUMBERS_WITH_R](../android/icu/text/Bidi.md) Reordering mode: Logical to Visual algorithm grouping numbers with adjacent R characters (reversible algorithm). |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_INVERSE_FOR_NUMBERS_SPECIAL](../android/icu/text/Bidi.md) Reordering mode: Inverse Bidi (Visual to Logical) algorithm for the`REORDER_NUMBERS_SPECIAL`Bidi algorithm. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_INVERSE_LIKE_DIRECT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_LIKE_DIRECT:kotlin.Short) Reordering mode: Visual to Logical algorithm equivalent to the regular Logical to Visual algorithm. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_INVERSE_NUMBERS_AS_L](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_NUMBERS_AS_L:kotlin.Short) Reordering mode: Visual to Logical algorithm which handles numbers like L (same algorithm as selected by`setInverse(true)`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_NUMBERS_SPECIAL:kotlin.Short) Reordering mode: Logical to Visual algorithm which handles numbers in a way which mimicks the behavior of Windows XP. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_INVERSE_LIKE_DIRECT](../android/icu/text/Bidi.md) Reordering mode: Visual to Logical algorithm equivalent to the regular Logical to Visual algorithm. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_INVERSE_NUMBERS_AS_L](../android/icu/text/Bidi.md) Reordering mode: Visual to Logical algorithm which handles numbers like L (same algorithm as selected by`setInverse(true)`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_NUMBERS_SPECIAL](../android/icu/text/Bidi.md) Reordering mode: Logical to Visual algorithm which handles numbers in a way which mimicks the behavior of Windows XP. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_RUNS_ONLY](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_RUNS_ONLY:kotlin.Short) Reordering mode: Reorder runs only to transform a Logical LTR string to the logical RTL string with the same display, or vice-versa. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#RTL:kotlin.Byte) Right-to-left text. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [REORDER_RUNS_ONLY](../android/icu/text/Bidi.md) Reordering mode: Reorder runs only to transform a Logical LTR string to the logical RTL string with the same display, or vice-versa. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [RTL](../android/icu/text/Bidi.md) Right-to-left text. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#Bidi())`()` Allocate a`Bidi`object. |
-| [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#Bidi(kotlin.CharArray,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `textStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `embeddings:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `embStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paragraphLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given text, embedding, and direction information. |
-| [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#Bidi(kotlin.Int,%20kotlin.Int))`(`maxLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxRunCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocate a`Bidi`object with preallocated memory for internal structures. |
-| [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#Bidi(kotlin.String,%20kotlin.Int))`(`paragraph:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given paragraph of text and base direction. |
-| [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#Bidi(java.text.AttributedCharacterIterator))`(`paragraph:` ` [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)!`)` Create Bidi from the given paragraph of text. |
+| [Bidi](../android/icu/text/Bidi.md))`()` Allocate a`Bidi`object. |
+| [Bidi](../android/icu/text/Bidi.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `textStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `embeddings:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `embStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paragraphLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given text, embedding, and direction information. |
+| [Bidi](../android/icu/text/Bidi.md))`(`maxLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxRunCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocate a`Bidi`object with preallocated memory for internal structures. |
+| [Bidi](../android/icu/text/Bidi.md))`(`paragraph:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create Bidi from the given paragraph of text and base direction. |
+| [Bidi](../android/icu/text/Bidi.md))`(`paragraph:` ` [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!`)` Create Bidi from the given paragraph of text. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [baseIsLeftToRight](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#baseIsLeftToRight())`()` Return true if the base direction is left-to-right |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countParagraphs](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#countParagraphs())`()` Get the number of paragraphs. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countRuns](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#countRuns())`()` Get the number of runs. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [baseIsLeftToRight](../android/icu/text/Bidi.md))`()` Return true if the base direction is left-to-right |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countParagraphs](../android/icu/text/Bidi.md))`()` Get the number of paragraphs. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countRuns](../android/icu/text/Bidi.md))`()` Get the number of runs. |
 | --- | --- |
-| open [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#)! | [createLineBidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#createLineBidi(kotlin.Int,%20kotlin.Int))`(`lineStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lineLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Bidi object representing the bidi information on a line of text within the paragraph represented by the current Bidi. |
-| openstatic [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getBaseDirection](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getBaseDirection(kotlin.CharSequence))`(`paragraph:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Get the base direction of the text provided according to the Unicode Bidirectional Algorithm. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseLevel](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getBaseLevel())`()` Return the base level (0 if left-to-right, 1 if right-to-left). |
+| open [Bidi](../android/icu/text/Bidi.md)! | [createLineBidi](../android/icu/text/Bidi.md))`(`lineStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lineLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a Bidi object representing the bidi information on a line of text within the paragraph represented by the current Bidi. |
+| openstatic [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getBaseDirection](../android/icu/text/Bidi.md))`(`paragraph:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Get the base direction of the text provided according to the Unicode Bidirectional Algorithm. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseLevel](../android/icu/text/Bidi.md))`()` Return the base level (0 if left-to-right, 1 if right-to-left). |
 | --- | --- |
-| open [BidiClassifier](https://developer.android.com/reference/kotlin/android/icu/text/BidiClassifier)! | [getCustomClassifier](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getCustomClassifier())`()` Gets the current custom class classifier used for Bidi class determination. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCustomizedClass](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getCustomizedClass(kotlin.Int))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the Bidi class for a given code point. |
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDirection](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getDirection())`()` Get the directionality of the text. |
+| open [BidiClassifier](../android/icu/text/BidiClassifier.md)! | [getCustomClassifier](../android/icu/text/Bidi.md))`()` Gets the current custom class classifier used for Bidi class determination. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCustomizedClass](../android/icu/text/Bidi.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the Bidi class for a given code point. |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDirection](../android/icu/text/Bidi.md))`()` Get the directionality of the text. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLength())`()` Get the length of the text. |
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getLevelAt](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLevelAt(kotlin.Int))`(`charIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the level for one character. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getLevels](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLevels())`()` Get an array of levels for each character. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../android/icu/text/Bidi.md))`()` Get the length of the text. |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getLevelAt](../android/icu/text/Bidi.md))`(`charIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the level for one character. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getLevels](../android/icu/text/Bidi.md))`()` Get an array of levels for each character. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLogicalIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalIndex(kotlin.Int))`(`visualIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the logical text position from a visual position. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getLogicalMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalMap())`()` Get a logical-to-visual index map (array) for the characters in the`Bidi`(paragraph or line) object. |
-| open [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | [getLogicalRun](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalRun(kotlin.Int))`(`logicalPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a logical run. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLogicalIndex](../android/icu/text/Bidi.md))`(`visualIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the logical text position from a visual position. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getLogicalMap](../android/icu/text/Bidi.md))`()` Get a logical-to-visual index map (array) for the characters in the`Bidi`(paragraph or line) object. |
+| open [BidiRun](../android/icu/text/BidiRun.md)! | [getLogicalRun](../android/icu/text/Bidi.md))`(`logicalPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a logical run. |
 | --- | --- |
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getParaLevel](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParaLevel())`()` Get the paragraph level of the text. |
-| open [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | [getParagraph](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraph(kotlin.Int))`(`charIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a paragraph, given a position within the text. |
-| open [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | [getParagraphByIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraphByIndex(kotlin.Int))`(`paraIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a paragraph, given the index of this paragraph. |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getParaLevel](../android/icu/text/Bidi.md))`()` Get the paragraph level of the text. |
+| open [BidiRun](../android/icu/text/BidiRun.md)! | [getParagraph](../android/icu/text/Bidi.md))`(`charIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a paragraph, given a position within the text. |
+| open [BidiRun](../android/icu/text/BidiRun.md)! | [getParagraphByIndex](../android/icu/text/Bidi.md))`(`paraIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a paragraph, given the index of this paragraph. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraphIndex(kotlin.Int))`(`charIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the index of a paragraph, given a position within the text. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength())`()` Get the length of the source text processed by the last call to`setPara()`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getReorderingMode())`()` What is the requested reordering mode for a given Bidi object? |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphIndex](../android/icu/text/Bidi.md))`(`charIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the index of a paragraph, given a position within the text. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProcessedLength](../android/icu/text/Bidi.md))`()` Get the length of the source text processed by the last call to`setPara()`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReorderingMode](../android/icu/text/Bidi.md))`()` What is the requested reordering mode for a given Bidi object? |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getReorderingOptions())`()` What are the reordering options applied to a given Bidi object? |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getResultLength())`()` Get the length of the reordered text resulting from the last call to`setPara()`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunCount](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getRunCount())`()` Return the number of level runs. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReorderingOptions](../android/icu/text/Bidi.md))`()` What are the reordering options applied to a given Bidi object? |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultLength](../android/icu/text/Bidi.md))`()` Get the length of the reordered text resulting from the last call to`setPara()`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunCount](../android/icu/text/Bidi.md))`()` Return the number of level runs. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLevel](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getRunLevel(kotlin.Int))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the level of the nth logical run in this line. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLimit](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getRunLimit(kotlin.Int))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character past the end of the nth logical run in this line, as an offset from the start of the line. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunStart](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getRunStart(kotlin.Int))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character at the start of the nth logical run in this line, as an offset from the start of the line. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLevel](../android/icu/text/Bidi.md))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the level of the nth logical run in this line. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunLimit](../android/icu/text/Bidi.md))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character past the end of the nth logical run in this line, as an offset from the start of the line. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRunStart](../android/icu/text/Bidi.md))`(`run:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the index of the character at the start of the nth logical run in this line, as an offset from the start of the line. |
 | --- | --- |
-| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getText())`()` Get the text. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTextAsString](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getTextAsString())`()` Get the text. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVisualIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualIndex(kotlin.Int))`(`logicalIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the visual position from a logical text position. |
+| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getText](../android/icu/text/Bidi.md))`()` Get the text. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTextAsString](../android/icu/text/Bidi.md))`()` Get the text. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVisualIndex](../android/icu/text/Bidi.md))`(`logicalIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the visual position from a logical text position. |
 | --- | --- |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getVisualMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualMap())`()` Get a visual-to-logical index map (array) for the characters in the`Bidi`(paragraph or line) object. |
-| open [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | [getVisualRun](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualRun(kotlin.Int))`(`runIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a`BidiRun`object according to its index. |
-| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [invertMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#invertMap(kotlin.IntArray))`(`srcMap:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Invert an index map. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getVisualMap](../android/icu/text/Bidi.md))`()` Get a visual-to-logical index map (array) for the characters in the`Bidi`(paragraph or line) object. |
+| open [BidiRun](../android/icu/text/BidiRun.md)! | [getVisualRun](../android/icu/text/Bidi.md))`(`runIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a`BidiRun`object according to its index. |
+| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [invertMap](../android/icu/text/Bidi.md))`(`srcMap:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Invert an index map. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInverse](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#isInverse())`()` Is this`Bidi`object set to perform the inverse Bidi algorithm? |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeftToRight](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#isLeftToRight())`()` Return true if the line is all left-to-right text and the base direction is left-to-right. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMixed](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#isMixed())`()` Return true if the line is not left-to-right or right-to-left. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInverse](../android/icu/text/Bidi.md))`()` Is this`Bidi`object set to perform the inverse Bidi algorithm? |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeftToRight](../android/icu/text/Bidi.md))`()` Return true if the line is all left-to-right text and the base direction is left-to-right. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMixed](../android/icu/text/Bidi.md))`()` Return true if the line is not left-to-right or right-to-left. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOrderParagraphsLTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#isOrderParagraphsLTR())`()` Is this`Bidi`object set to allocate level 0 to block separators so that successive paragraphs progress from left to right? |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRightToLeft](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#isRightToLeft())`()` Return true if the line is all right-to-left text, and the base direction is right-to-left |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [orderParagraphsLTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#orderParagraphsLTR(kotlin.Boolean))`(`ordarParaLTR:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specify whether block separators must be allocated level zero, so that successive paragraphs will progress from left to right. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOrderParagraphsLTR](../android/icu/text/Bidi.md))`()` Is this`Bidi`object set to allocate level 0 to block separators so that successive paragraphs progress from left to right? |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRightToLeft](../android/icu/text/Bidi.md))`()` Return true if the line is all right-to-left text, and the base direction is right-to-left |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [orderParagraphsLTR](../android/icu/text/Bidi.md))`(`ordarParaLTR:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Specify whether block separators must be allocated level zero, so that successive paragraphs will progress from left to right. |
 | --- | --- |
-| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [reorderLogical](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#reorderLogical(kotlin.ByteArray))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` This is a convenience method that does not use a`Bidi`object. |
-| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [reorderVisual](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#reorderVisual(kotlin.ByteArray))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` This is a convenience method that does not use a`Bidi`object. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reorderVisually](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#reorderVisually(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Array,%20kotlin.Int,%20kotlin.Int))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `levelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objects:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `objectStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reorder the objects in the array into visual order based on their levels. |
+| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [reorderLogical](../android/icu/text/Bidi.md))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` This is a convenience method that does not use a`Bidi`object. |
+| openstatic [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [reorderVisual](../android/icu/text/Bidi.md))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` This is a convenience method that does not use a`Bidi`object. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reorderVisually](../android/icu/text/Bidi.md))`(`levels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `levelStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objects:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `objectStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reorder the objects in the array into visual order based on their levels. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresBidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#requiresBidi(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified text requires bidi analysis. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setContext(kotlin.String,%20kotlin.String))`(`prologue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `epilogue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the context before a call to setPara(). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCustomClassifier](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setCustomClassifier(android.icu.text.BidiClassifier))`(`classifier:` ` [BidiClassifier](https://developer.android.com/reference/kotlin/android/icu/text/BidiClassifier)!`)` Set a custom Bidi classifier used by the UBA implementation for Bidi class determination. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresBidi](../android/icu/text/Bidi.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the specified text requires bidi analysis. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](../android/icu/text/Bidi.md))`(`prologue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `epilogue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the context before a call to setPara(). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCustomClassifier](../android/icu/text/Bidi.md))`(`classifier:` ` [BidiClassifier](../android/icu/text/BidiClassifier.md)!`)` Set a custom Bidi classifier used by the UBA implementation for Bidi class determination. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInverse](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setInverse(kotlin.Boolean))`(`isInverse:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Modify the operation of the Bidi algorithm such that it approximates an "inverse Bidi" algorithm. |
-| open [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#)! | [setLine](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setLine(kotlin.Int,%20kotlin.Int))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` `setLine()`returns a`Bidi`object to contain the reordering information, especially the resolved levels, for all the characters in a line of text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPara](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setPara(kotlin.CharArray,%20kotlin.Byte,%20kotlin.ByteArray))`(`chars:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `paraLevel:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `embeddingLevels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Perform the Unicode Bidi algorithm. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInverse](../android/icu/text/Bidi.md))`(`isInverse:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Modify the operation of the Bidi algorithm such that it approximates an "inverse Bidi" algorithm. |
+| open [Bidi](../android/icu/text/Bidi.md)! | [setLine](../android/icu/text/Bidi.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` `setLine()`returns a`Bidi`object to contain the reordering information, especially the resolved levels, for all the characters in a line of text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPara](../android/icu/text/Bidi.md))`(`chars:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `paraLevel:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `embeddingLevels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Perform the Unicode Bidi algorithm. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPara](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setPara(kotlin.String,%20kotlin.Byte,%20kotlin.ByteArray))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `paraLevel:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `embeddingLevels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Perform the Unicode Bidi algorithm. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPara](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setPara(java.text.AttributedCharacterIterator))`(`paragraph:` ` [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)!`)` Perform the Unicode Bidi algorithm on a given paragraph, as defined in the [Unicode Standard Annex #9](https://www.unicode.org/reports/tr9/), version 13, also described in The Unicode Standard, Version 4. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int))`(`reorderingMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Modify the operation of the Bidi algorithm such that it implements some variant to the basic Bidi algorithm or approximates an "inverse Bidi" algorithm, depending on different values of the "reordering mode". |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPara](../android/icu/text/Bidi.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `paraLevel:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `embeddingLevels:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Perform the Unicode Bidi algorithm. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPara](../android/icu/text/Bidi.md))`(`paragraph:` ` [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!`)` Perform the Unicode Bidi algorithm on a given paragraph, as defined in the [Unicode Standard Annex #9](https://www.unicode.org/reports/tr9/), version 13, also described in The Unicode Standard, Version 4. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReorderingMode](../android/icu/text/Bidi.md))`(`reorderingMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Modify the operation of the Bidi algorithm such that it implements some variant to the basic Bidi algorithm or approximates an "inverse Bidi" algorithm, depending on different values of the "reordering mode". |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingOptions(kotlin.Int))`(`options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify which of the reordering options should be applied during Bidi transformations. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int))`(`options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Take a`Bidi`object containing the reordering information for a piece of text (one or more paragraphs) set by`setPara()`or for a line of text set by`setLine()`and return a string containing the reordered text. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [writeReverse](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReverse(kotlin.String,%20kotlin.Int))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reverse a Right-To-Left run of Unicode text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReorderingOptions](../android/icu/text/Bidi.md))`(`options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify which of the reordering options should be applied during Bidi transformations. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [writeReordered](../android/icu/text/Bidi.md))`(`options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Take a`Bidi`object containing the reordering information for a piece of text (one or more paragraphs) set by`setPara()`or for a line of text set by`setLine()`and return a string containing the reordered text. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [writeReverse](../android/icu/text/Bidi.md))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reverse a Right-To-Left run of Unicode text. |
 | --- | --- |
 
 ## Constants
@@ -549,7 +549,7 @@ option bit for writeReordered(): replace characters with the "mirrored" property
 
 **See Also**
 
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### INSERT_LRM_FOR_NUMERIC
 
@@ -567,8 +567,8 @@ This option does not imply corresponding adjustment of the index mappings.
 
 **See Also**
 
-- [#setInverse](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setInverse(kotlin.Boolean))
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#setInverse](../android/icu/text/Bidi.md))
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### KEEP_BASE_COMBINING
 
@@ -584,7 +584,7 @@ option bit for writeReordered(): keep combining characters after their base char
 
 **See Also**
 
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### LEVEL_DEFAULT_LTR
 
@@ -606,8 +606,8 @@ If reordering option`OPTION_INSERT_MARKS`is set, an RLM may be added at the begi
 
 **See Also**
 
-- [#REORDER_INVERSE_LIKE_DIRECT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_LIKE_DIRECT:kotlin.Short)
-- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_FOR_NUMBERS_SPECIAL:kotlin.Short) 
+- [#REORDER_INVERSE_LIKE_DIRECT](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](../android/icu/text/Bidi.md) 
 
 ### LEVEL_DEFAULT_RTL
 
@@ -629,8 +629,8 @@ If reordering option`OPTION_INSERT_MARKS`is set, an RLM may be added at the begi
 
 **See Also**
 
-- [#REORDER_INVERSE_LIKE_DIRECT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_LIKE_DIRECT:kotlin.Short)
-- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_FOR_NUMBERS_SPECIAL:kotlin.Short) 
+- [#REORDER_INVERSE_LIKE_DIRECT](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](../android/icu/text/Bidi.md) 
 
 ### LEVEL_OVERRIDE
 
@@ -675,12 +675,12 @@ Special value which can be returned by the mapping methods when a logical index 
 
 **See Also**
 
-- [#getVisualIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualIndex(kotlin.Int))
-- [#getVisualMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualMap())
-- [#getLogicalIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalIndex(kotlin.Int))
-- [#getLogicalMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalMap())
-- [#OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [#OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int) 
+- [#getVisualIndex](../android/icu/text/Bidi.md))
+- [#getVisualMap](../android/icu/text/Bidi.md))
+- [#getLogicalIndex](../android/icu/text/Bidi.md))
+- [#getLogicalMap](../android/icu/text/Bidi.md))
+- [#OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [#OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md) 
 
 ### MAX_EXPLICIT_LEVEL
 
@@ -736,7 +736,7 @@ Option value for`setReorderingOptions`: disable all the options which can be set
 
 **See Also**
 
-- [#setReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingOptions(kotlin.Int)) 
+- [#setReorderingOptions](../android/icu/text/Bidi.md)) 
 
 ### OPTION_INSERT_MARKS
 
@@ -767,15 +767,15 @@ This option will be ignored if specified together with option`OPTION_REMOVE_CONT
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int))
-- [#setReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingOptions(kotlin.Int))
-- [#INSERT_LRM_FOR_NUMERIC](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#INSERT_LRM_FOR_NUMERIC:kotlin.Short)
-- [#REMOVE_BIDI_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REMOVE_BIDI_CONTROLS:kotlin.Short)
-- [#OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int)
-- [#REORDER_RUNS_ONLY](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_RUNS_ONLY:kotlin.Short)
-- [#REORDER_INVERSE_NUMBERS_AS_L](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_NUMBERS_AS_L:kotlin.Short)
-- [#REORDER_INVERSE_LIKE_DIRECT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_LIKE_DIRECT:kotlin.Short)
-- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_FOR_NUMBERS_SPECIAL:kotlin.Short) 
+- [#setReorderingMode](../android/icu/text/Bidi.md))
+- [#setReorderingOptions](../android/icu/text/Bidi.md))
+- [#INSERT_LRM_FOR_NUMERIC](../android/icu/text/Bidi.md)
+- [#REMOVE_BIDI_CONTROLS](../android/icu/text/Bidi.md)
+- [#OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md)
+- [#REORDER_RUNS_ONLY](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_NUMBERS_AS_L](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_LIKE_DIRECT](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](../android/icu/text/Bidi.md) 
 
 ### OPTION_REMOVE_CONTROLS
 
@@ -795,11 +795,11 @@ This option nullifies option`OPTION_INSERT_MARKS`. It inhibits option`INSERT_LRM
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int))
-- [#setReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingOptions(kotlin.Int))
-- [#OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [#INSERT_LRM_FOR_NUMERIC](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#INSERT_LRM_FOR_NUMERIC:kotlin.Short)
-- [#REMOVE_BIDI_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REMOVE_BIDI_CONTROLS:kotlin.Short) 
+- [#setReorderingMode](../android/icu/text/Bidi.md))
+- [#setReorderingOptions](../android/icu/text/Bidi.md))
+- [#OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [#INSERT_LRM_FOR_NUMERIC](../android/icu/text/Bidi.md)
+- [#REMOVE_BIDI_CONTROLS](../android/icu/text/Bidi.md) 
 
 ### OPTION_STREAMING
 
@@ -831,9 +831,9 @@ When the`OPTION_STREAMING`option is used, it is recommended to call`orderParagra
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int))
-- [#setReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingOptions(kotlin.Int))
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength()) 
+- [#setReorderingMode](../android/icu/text/Bidi.md))
+- [#setReorderingOptions](../android/icu/text/Bidi.md))
+- [#getProcessedLength](../android/icu/text/Bidi.md)) 
 
 ### OUTPUT_REVERSE
 
@@ -851,7 +851,7 @@ This has the same effect as calling`writeReordered()`first without this option, 
 
 **See Also**
 
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### REMOVE_BIDI_CONTROLS
 
@@ -869,8 +869,8 @@ This option does not imply corresponding adjustment of the index mappings.
 
 **See Also**
 
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int))
-- [#INSERT_LRM_FOR_NUMERIC](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#INSERT_LRM_FOR_NUMERIC:kotlin.Short) 
+- [#writeReordered](../android/icu/text/Bidi.md))
+- [#INSERT_LRM_FOR_NUMERIC](../android/icu/text/Bidi.md) 
 
 ### REORDER_DEFAULT
 
@@ -886,7 +886,7 @@ Reordering mode: Regular Logical to Visual Bidi algorithm according to Unicode.
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### REORDER_GROUP_NUMBERS_WITH_R
 
@@ -902,7 +902,7 @@ Reordering mode: Logical to Visual algorithm grouping numbers with adjacent R ch
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### REORDER_INVERSE_FOR_NUMBERS_SPECIAL
 
@@ -918,7 +918,7 @@ Reordering mode: Inverse Bidi (Visual to Logical) algorithm for the`REORDER_NUMB
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### REORDER_INVERSE_LIKE_DIRECT
 
@@ -934,7 +934,7 @@ Reordering mode: Visual to Logical algorithm equivalent to the regular Logical t
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### REORDER_INVERSE_NUMBERS_AS_L
 
@@ -950,8 +950,8 @@ Reordering mode: Visual to Logical algorithm which handles numbers like L (same 
 
 **See Also**
 
-- [#setInverse](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setInverse(kotlin.Boolean))
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#setInverse](../android/icu/text/Bidi.md))
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### REORDER_NUMBERS_SPECIAL
 
@@ -967,7 +967,7 @@ Reordering mode: Logical to Visual algorithm which handles numbers in a way whic
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### REORDER_RUNS_ONLY
 
@@ -984,8 +984,8 @@ If this mode is set together with option`OPTION_INSERT_MARKS`, some Bidi control
 
 **See Also**
 
-- [#OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### RTL
 
@@ -1036,9 +1036,9 @@ Bidi(
 
 Create Bidi from the given text, embedding, and direction information.
 
-The embeddings array may be null. If present, the values represent embedding level information. Negative values indicate overrides at the absolute value of the level. Positive values indicate embeddings. (See [MAX_EXPLICIT_LEVEL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAX_EXPLICIT_LEVEL:kotlin.Byte).) Where values are zero, the base embedding level as determined by the base direction is assumed, except for paragraph separators which remain at 0 to prevent reordering of paragraphs.
+The embeddings array may be null. If present, the values represent embedding level information. Negative values indicate overrides at the absolute value of the level. Positive values indicate embeddings. (See [MAX_EXPLICIT_LEVEL](../android/icu/text/Bidi.md).) Where values are zero, the base embedding level as determined by the base direction is assumed, except for paragraph separators which remain at 0 to prevent reordering of paragraphs.
 
-Note: This constructor calls setPara() internally, after converting the java.text.Bidi-style embeddings with negative overrides into ICU-style embeddings with bit fields for [LEVEL_OVERRIDE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_OVERRIDE:kotlin.Byte) and the level.
+Note: This constructor calls setPara() internally, after converting the java.text.Bidi-style embeddings with negative overrides into ICU-style embeddings with bit fields for [LEVEL_OVERRIDE](../android/icu/text/Bidi.md) and the level.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1057,10 +1057,10 @@ Note: This constructor calls setPara() internally, after converting the java.tex
 
 **See Also**
 
-- [#DIRECTION_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_LEFT_TO_RIGHT:kotlin.Int)
-- [#DIRECTION_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_RIGHT_TO_LEFT:kotlin.Int)
-- [#DIRECTION_DEFAULT_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_DEFAULT_LEFT_TO_RIGHT:kotlin.Int)
-- [#DIRECTION_DEFAULT_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_DEFAULT_RIGHT_TO_LEFT:kotlin.Int) 
+- [#DIRECTION_LEFT_TO_RIGHT](../android/icu/text/Bidi.md)
+- [#DIRECTION_RIGHT_TO_LEFT](../android/icu/text/Bidi.md)
+- [#DIRECTION_DEFAULT_LEFT_TO_RIGHT](../android/icu/text/Bidi.md)
+- [#DIRECTION_DEFAULT_RIGHT_TO_LEFT](../android/icu/text/Bidi.md) 
 
 ### Bidi
 
@@ -1104,10 +1104,10 @@ Create Bidi from the given paragraph of text and base direction.
 
 **See Also**
 
-- [#DIRECTION_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_LEFT_TO_RIGHT:kotlin.Int)
-- [#DIRECTION_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_RIGHT_TO_LEFT:kotlin.Int)
-- [#DIRECTION_DEFAULT_LEFT_TO_RIGHT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_DEFAULT_LEFT_TO_RIGHT:kotlin.Int)
-- [#DIRECTION_DEFAULT_RIGHT_TO_LEFT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DIRECTION_DEFAULT_RIGHT_TO_LEFT:kotlin.Int) 
+- [#DIRECTION_LEFT_TO_RIGHT](../android/icu/text/Bidi.md)
+- [#DIRECTION_RIGHT_TO_LEFT](../android/icu/text/Bidi.md)
+- [#DIRECTION_DEFAULT_LEFT_TO_RIGHT](../android/icu/text/Bidi.md)
+- [#DIRECTION_DEFAULT_RIGHT_TO_LEFT](../android/icu/text/Bidi.md) 
 
 ### Bidi
 
@@ -1121,7 +1121,7 @@ Create Bidi from the given paragraph of text.
 
 The RUN_DIRECTION attribute in the text, if present, determines the base direction (left-to-right or right-to-left). If not present, the base direction is computed using the Unicode Bidirectional Algorithm, defaulting to left-to-right if there are no strong directional characters in the text. This attribute, if present, must be applied to all the text in the paragraph.
 
-The BIDI_EMBEDDING attribute in the text, if present, represents embedding level information. Negative values indicate overrides at the absolute value of the level. Positive values indicate embeddings. (See [MAX_EXPLICIT_LEVEL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAX_EXPLICIT_LEVEL:kotlin.Byte).) Where values are zero or not defined, the base embedding level as determined by the base direction is assumed.
+The BIDI_EMBEDDING attribute in the text, if present, represents embedding level information. Negative values indicate overrides at the absolute value of the level. Positive values indicate embeddings. (See [MAX_EXPLICIT_LEVEL](../android/icu/text/Bidi.md).) Where values are zero or not defined, the base embedding level as determined by the base direction is assumed.
 
 The NUMERIC_SHAPING attribute in the text, if present, converts European digits to other decimal digits before running the bidi algorithm. This attribute, if present, must be applied to all the text in the paragraph.
 
@@ -1129,7 +1129,7 @@ Note: this constructor calls setPara() internally.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `paragraph` | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)!:a paragraph of text with optional character and paragraph attribute information |
+| `paragraph` | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!:a paragraph of text with optional character and paragraph attribute information |
 
 ## Public methods
 
@@ -1230,9 +1230,9 @@ Get the base direction of the text provided according to the Unicode Bidirection
 
 **See Also**
 
-- [#LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LTR:kotlin.Byte)
-- [#RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#RTL:kotlin.Byte)
-- [#NEUTRAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#NEUTRAL:kotlin.Byte) 
+- [#LTR](../android/icu/text/Bidi.md)
+- [#RTL](../android/icu/text/Bidi.md)
+- [#NEUTRAL](../android/icu/text/Bidi.md) 
 
 ### getBaseLevel
 
@@ -1264,11 +1264,11 @@ Gets the current custom class classifier used for Bidi class determination.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|--------------------------------------|
-| [BidiClassifier](https://developer.android.com/reference/kotlin/android/icu/text/BidiClassifier)! | An instance of class`BidiClassifier` |
+| [BidiClassifier](../android/icu/text/BidiClassifier.md)! | An instance of class`BidiClassifier` |
 
 **See Also**
 
-- [#setCustomClassifier](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setCustomClassifier(android.icu.text.BidiClassifier)) 
+- [#setCustomClassifier](../android/icu/text/Bidi.md)) 
 
 ### getCustomizedClass
 
@@ -1292,7 +1292,7 @@ If a`BidiClassifier`is defined and returns a value other than`UCharacter.getIntP
 
 **See Also**
 
-- [android.icu.text.BidiClassifier](https://developer.android.com/reference/kotlin/android/icu/text/BidiClassifier) 
+- [android.icu.text.BidiClassifier](../android/icu/text/BidiClassifier.md) 
 
 ### getDirection
 
@@ -1314,9 +1314,9 @@ Get the directionality of the text.
 
 **See Also**
 
-- [#LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LTR:kotlin.Byte)
-- [#RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#RTL:kotlin.Byte)
-- [#MIXED](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MIXED:kotlin.Byte) 
+- [#LTR](../android/icu/text/Bidi.md)
+- [#RTL](../android/icu/text/Bidi.md)
+- [#MIXED](../android/icu/text/Bidi.md) 
 
 ### getLength
 
@@ -1361,7 +1361,7 @@ Get the level for one character.
 
 **See Also**
 
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength()) 
+- [#getProcessedLength](../android/icu/text/Bidi.md)) 
 
 ### getLevels
 
@@ -1397,7 +1397,7 @@ The value returned may be`MAP_NOWHERE`if there is no logical position because th
 
 This is the inverse method to`getVisualIndex()`.
 
-When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the logical position returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int) and [OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int).
+When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the logical position returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](../android/icu/text/Bidi.md) and [OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md).
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------|
@@ -1414,12 +1414,12 @@ When the visual output is altered by using options of`writeReordered()`such as`I
 
 **See Also**
 
-- [#getVisualMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualMap())
-- [#getVisualIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualIndex(kotlin.Int))
-- [#getResultLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getResultLength())
-- [#MAP_NOWHERE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAP_NOWHERE:kotlin.Int)
-- [#OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#getVisualMap](../android/icu/text/Bidi.md))
+- [#getVisualIndex](../android/icu/text/Bidi.md))
+- [#getResultLength](../android/icu/text/Bidi.md))
+- [#MAP_NOWHERE](../android/icu/text/Bidi.md)
+- [#OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### getLogicalMap
 
@@ -1433,9 +1433,9 @@ Get a logical-to-visual index map (array) for the characters in the`Bidi`(paragr
 
 Some values in the map may be`MAP_NOWHERE`if the corresponding text characters are Bidi controls removed from the visual output by the option`OPTION_REMOVE_CONTROLS`.
 
-When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the visual positions returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int) and [OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int).
+When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the visual positions returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](../android/icu/text/Bidi.md) and [OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md).
 
-Note that in right-to-left runs, this mapping places second surrogates before first ones (which is generally a bad idea) and combining characters before base characters. Use of [writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)), optionally with the [KEEP_BASE_COMBINING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#KEEP_BASE_COMBINING:kotlin.Short) option can be considered instead of using the mapping, in order to avoid these issues.
+Note that in right-to-left runs, this mapping places second surrogates before first ones (which is generally a bad idea) and combining characters before base characters. Use of [writeReordered](../android/icu/text/Bidi.md)), optionally with the [KEEP_BASE_COMBINING](../android/icu/text/Bidi.md) option can be considered instead of using the mapping, in order to avoid these issues.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1447,12 +1447,12 @@ Note that in right-to-left runs, this mapping places second surrogates before fi
 
 **See Also**
 
-- [#getVisualMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualMap())
-- [#getVisualIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getVisualIndex(kotlin.Int))
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength())
-- [#MAP_NOWHERE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAP_NOWHERE:kotlin.Int)
-- [#OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int)
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#getVisualMap](../android/icu/text/Bidi.md))
+- [#getVisualIndex](../android/icu/text/Bidi.md))
+- [#getProcessedLength](../android/icu/text/Bidi.md))
+- [#MAP_NOWHERE](../android/icu/text/Bidi.md)
+- [#OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md)
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### getLogicalRun
 
@@ -1472,7 +1472,7 @@ This is especially useful for line-breaking on a paragraph.
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | a BidiRun object filled with`start`containing the first character of the run,`limit`containing the limit of the run, and`embeddingLevel`containing the level of the run. |
+| [BidiRun](../android/icu/text/BidiRun.md)! | a BidiRun object filled with`start`containing the first character of the run,`limit`containing the limit of the run, and`embeddingLevel`containing the level of the run. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------|
@@ -1481,10 +1481,10 @@ This is especially useful for line-breaking on a paragraph.
 
 **See Also**
 
-- [android.icu.text.BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)
-- [android.icu.text.BidiRun#getStart()](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getStart())
-- [android.icu.text.BidiRun#getLimit()](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getLimit())
-- [android.icu.text.BidiRun#getEmbeddingLevel()](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getEmbeddingLevel()) 
+- [android.icu.text.BidiRun](../android/icu/text/BidiRun.md)
+- [android.icu.text.BidiRun#getStart()](../android/icu/text/BidiRun.md))
+- [android.icu.text.BidiRun#getLimit()](../android/icu/text/BidiRun.md))
+- [android.icu.text.BidiRun#getEmbeddingLevel()](../android/icu/text/BidiRun.md)) 
 
 ### getParaLevel
 
@@ -1506,10 +1506,10 @@ Get the paragraph level of the text.
 
 **See Also**
 
-- [#LEVEL_DEFAULT_LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_LTR:kotlin.Byte)
-- [#LEVEL_DEFAULT_RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_RTL:kotlin.Byte)
-- [#getParagraph](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraph(kotlin.Int))
-- [#getParagraphByIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraphByIndex(kotlin.Int)) 
+- [#LEVEL_DEFAULT_LTR](../android/icu/text/Bidi.md)
+- [#LEVEL_DEFAULT_RTL](../android/icu/text/Bidi.md)
+- [#getParagraph](../android/icu/text/Bidi.md))
+- [#getParagraphByIndex](../android/icu/text/Bidi.md)) 
 
 ### getParagraph
 
@@ -1530,7 +1530,7 @@ Note: if the paragraph index is known, it is more efficient to retrieve the para
 
 | Return ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | a BidiRun object with the details of the paragraph: `start`will receive the index of the first character of the paragraph in the text. `limit`will receive the limit of the paragraph. `embeddingLevel`will receive the level of the paragraph. |
+| [BidiRun](../android/icu/text/BidiRun.md)! | a BidiRun object with the details of the paragraph: `start`will receive the index of the first character of the paragraph in the text. `limit`will receive the limit of the paragraph. `embeddingLevel`will receive the level of the paragraph. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------|
@@ -1539,9 +1539,9 @@ Note: if the paragraph index is known, it is more efficient to retrieve the para
 
 **See Also**
 
-- [android.icu.text.BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)
-- [#getParagraphByIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getParagraphByIndex(kotlin.Int))
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength()) 
+- [android.icu.text.BidiRun](../android/icu/text/BidiRun.md)
+- [#getParagraphByIndex](../android/icu/text/Bidi.md))
+- [#getProcessedLength](../android/icu/text/Bidi.md)) 
 
 ### getParagraphByIndex
 
@@ -1561,7 +1561,7 @@ Get a paragraph, given the index of this paragraph. This method returns informat
 
 | Return ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | a BidiRun object with the details of the paragraph: `start`will receive the index of the first character of the paragraph in the text. `limit`will receive the limit of the paragraph. `embeddingLevel`will receive the level of the paragraph. |
+| [BidiRun](../android/icu/text/BidiRun.md)! | a BidiRun object with the details of the paragraph: `start`will receive the index of the first character of the paragraph in the text. `limit`will receive the limit of the paragraph. `embeddingLevel`will receive the level of the paragraph. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------|
@@ -1570,7 +1570,7 @@ Get a paragraph, given the index of this paragraph. This method returns informat
 
 **See Also**
 
-- [android.icu.text.BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun) 
+- [android.icu.text.BidiRun](../android/icu/text/BidiRun.md) 
 
 ### getParagraphIndex
 
@@ -1599,8 +1599,8 @@ Get the index of a paragraph, given a position within the text.
 
 **See Also**
 
-- [android.icu.text.BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength()) 
+- [android.icu.text.BidiRun](../android/icu/text/BidiRun.md)
+- [#getProcessedLength](../android/icu/text/Bidi.md)) 
 
 ### getProcessedLength
 
@@ -1635,7 +1635,7 @@ In particular, the processed length is the one to consider in the following case
 
 **See Also**
 
-- [#OPTION_STREAMING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_STREAMING:kotlin.Int) 
+- [#OPTION_STREAMING](../android/icu/text/Bidi.md) 
 
 ### getReorderingMode
 
@@ -1653,7 +1653,7 @@ What is the requested reordering mode for a given Bidi object?
 
 **See Also**
 
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int)) 
+- [#setReorderingMode](../android/icu/text/Bidi.md)) 
 
 ### getReorderingOptions
 
@@ -1671,7 +1671,7 @@ What are the reordering options applied to a given Bidi object?
 
 **See Also**
 
-- [#setReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingOptions(kotlin.Int)) 
+- [#setReorderingOptions](../android/icu/text/Bidi.md)) 
 
 ### getResultLength
 
@@ -1701,9 +1701,9 @@ Note that this length stays identical to the source text length if Bidi marks ar
 
 **See Also**
 
-- [#OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [#OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int)
-- [#REORDER_INVERSE_NUMBERS_AS_L](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_NUMBERS_AS_L:kotlin.Short) 
+- [#OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [#OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_NUMBERS_AS_L](../android/icu/text/Bidi.md) 
 
 ### getRunCount
 
@@ -1812,7 +1812,7 @@ Get the text.
 
 **See Also**
 
-- [#setLine](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setLine(kotlin.Int,%20kotlin.Int)) 
+- [#setLine](../android/icu/text/Bidi.md)) 
 
 ### getTextAsString
 
@@ -1834,7 +1834,7 @@ Get the text.
 
 **See Also**
 
-- [#setLine](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setLine(kotlin.Int,%20kotlin.Int)) 
+- [#setLine](../android/icu/text/Bidi.md)) 
 
 ### getVisualIndex
 
@@ -1848,9 +1848,9 @@ Get the visual position from a logical text position. If such a mapping is used 
 
 The value returned may be`MAP_NOWHERE`if there is no visual position because the corresponding text character is a Bidi control removed from output by the option`OPTION_REMOVE_CONTROLS`.
 
-When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the visual position returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int) and [OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int).
+When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the visual position returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](../android/icu/text/Bidi.md) and [OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md).
 
-Note that in right-to-left runs, this mapping places second surrogates before first ones (which is generally a bad idea) and combining characters before base characters. Use of [writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)), optionally with the [KEEP_BASE_COMBINING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#KEEP_BASE_COMBINING:kotlin.Short) option can be considered instead of using the mapping, in order to avoid these issues.
+Note that in right-to-left runs, this mapping places second surrogates before first ones (which is generally a bad idea) and combining characters before base characters. Use of [writeReordered](../android/icu/text/Bidi.md)), optionally with the [KEEP_BASE_COMBINING](../android/icu/text/Bidi.md) option can be considered instead of using the mapping, in order to avoid these issues.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------|
@@ -1867,12 +1867,12 @@ Note that in right-to-left runs, this mapping places second surrogates before fi
 
 **See Also**
 
-- [#getLogicalMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalMap())
-- [#getLogicalIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalIndex(kotlin.Int))
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength())
-- [#MAP_NOWHERE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAP_NOWHERE:kotlin.Int)
-- [#OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int)
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#getLogicalMap](../android/icu/text/Bidi.md))
+- [#getLogicalIndex](../android/icu/text/Bidi.md))
+- [#getProcessedLength](../android/icu/text/Bidi.md))
+- [#MAP_NOWHERE](../android/icu/text/Bidi.md)
+- [#OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md)
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### getVisualMap
 
@@ -1886,7 +1886,7 @@ Get a visual-to-logical index map (array) for the characters in the`Bidi`(paragr
 
 Some values in the map may be`MAP_NOWHERE`if the corresponding text characters are Bidi marks inserted in the visual output by the option`OPTION_INSERT_MARKS`.
 
-When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the logical positions returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int) and [OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int).
+When the visual output is altered by using options of`writeReordered()`such as`INSERT_LRM_FOR_NUMERIC`,`KEEP_BASE_COMBINING`,`OUTPUT_REVERSE`,`REMOVE_BIDI_CONTROLS`, the logical positions returned may not be correct. It is advised to use, when possible, reordering options such as [OPTION_INSERT_MARKS](../android/icu/text/Bidi.md) and [OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1898,12 +1898,12 @@ When the visual output is altered by using options of`writeReordered()`such as`I
 
 **See Also**
 
-- [#getLogicalMap](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalMap())
-- [#getLogicalIndex](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getLogicalIndex(kotlin.Int))
-- [#getResultLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getResultLength())
-- [#MAP_NOWHERE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAP_NOWHERE:kotlin.Int)
-- [#OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)) 
+- [#getLogicalMap](../android/icu/text/Bidi.md))
+- [#getLogicalIndex](../android/icu/text/Bidi.md))
+- [#getResultLength](../android/icu/text/Bidi.md))
+- [#MAP_NOWHERE](../android/icu/text/Bidi.md)
+- [#OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [#writeReordered](../android/icu/text/Bidi.md)) 
 
 ### getVisualRun
 
@@ -1945,7 +1945,7 @@ Bidi bidi = new Bidi();
 
 Note that in right-to-left runs, code like this places second surrogates before first ones (which is generally a bad idea) and combining characters before base characters.
 
-Use of [writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int)), optionally with the [KEEP_BASE_COMBINING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#KEEP_BASE_COMBINING:kotlin.Short) option, can be considered in order to avoid these issues.
+Use of [writeReordered](../android/icu/text/Bidi.md)), optionally with the [KEEP_BASE_COMBINING](../android/icu/text/Bidi.md) option, can be considered in order to avoid these issues.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1953,7 +1953,7 @@ Use of [writeReordered](https://developer.android.com/reference/kotlin/android/i
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)! | a BidiRun object containing the details of the run. The directionality of the run is`LTR==0`or`RTL==1`, never`MIXED`. |
+| [BidiRun](../android/icu/text/BidiRun.md)! | a BidiRun object containing the details of the run. The directionality of the run is`LTR==0`or`RTL==1`, never`MIXED`. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------|
@@ -1963,10 +1963,10 @@ Use of [writeReordered](https://developer.android.com/reference/kotlin/android/i
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/icu/text/Bidi#countRuns()>
-- [android.icu.text.BidiRun](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun)
-- [android.icu.text.BidiRun#getStart()](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getStart())
-- [android.icu.text.BidiRun#getLength()](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getLength())
-- [android.icu.text.BidiRun#getEmbeddingLevel()](https://developer.android.com/reference/kotlin/android/icu/text/BidiRun#getEmbeddingLevel()) 
+- [android.icu.text.BidiRun](../android/icu/text/BidiRun.md)
+- [android.icu.text.BidiRun#getStart()](../android/icu/text/BidiRun.md))
+- [android.icu.text.BidiRun#getLength()](../android/icu/text/BidiRun.md))
+- [android.icu.text.BidiRun#getEmbeddingLevel()](../android/icu/text/BidiRun.md)) 
 
 ### invertMap
 
@@ -1988,7 +1988,7 @@ Invert an index map. The index mapping of the argument map is inverted and retur
 
 **See Also**
 
-- [#MAP_NOWHERE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAP_NOWHERE:kotlin.Int) 
+- [#MAP_NOWHERE](../android/icu/text/Bidi.md) 
 
 ### isInverse
 
@@ -2008,9 +2008,9 @@ Note: calling this method after setting the reordering mode with`setReorderingMo
 
 **See Also**
 
-- [#setInverse](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setInverse(kotlin.Boolean))
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int))
-- [#REORDER_INVERSE_NUMBERS_AS_L](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_NUMBERS_AS_L:kotlin.Short) 
+- [#setInverse](../android/icu/text/Bidi.md))
+- [#setReorderingMode](../android/icu/text/Bidi.md))
+- [#REORDER_INVERSE_NUMBERS_AS_L](../android/icu/text/Bidi.md) 
 
 ### isLeftToRight
 
@@ -2235,11 +2235,11 @@ Set a custom Bidi classifier used by the UBA implementation for Bidi class deter
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `classifier` | [BidiClassifier](https://developer.android.com/reference/kotlin/android/icu/text/BidiClassifier)!:A new custom classifier. This can be null. |
+| `classifier` | [BidiClassifier](../android/icu/text/BidiClassifier.md)!:A new custom classifier. This can be null. |
 
 **See Also**
 
-- [#getCustomClassifier](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getCustomClassifier()) 
+- [#getCustomClassifier](../android/icu/text/Bidi.md)) 
 
 ### setInverse
 
@@ -2266,10 +2266,10 @@ Calling this method with argument`isInverse`set to`false`is equivalent to callin
 
 **See Also**
 
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int))
-- [#setReorderingMode](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setReorderingMode(kotlin.Int))
-- [#REORDER_INVERSE_NUMBERS_AS_L](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_NUMBERS_AS_L:kotlin.Short)
-- [#REORDER_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_DEFAULT:kotlin.Short) 
+- [#writeReordered](../android/icu/text/Bidi.md))
+- [#setReorderingMode](../android/icu/text/Bidi.md))
+- [#REORDER_INVERSE_NUMBERS_AS_L](../android/icu/text/Bidi.md)
+- [#REORDER_DEFAULT](../android/icu/text/Bidi.md) 
 
 ### setLine
 
@@ -2299,7 +2299,7 @@ After line-breaking, rules (L1) and (L2) for the treatment of trailing WS and fo
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Bidi](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#)! | a`Bidi`object that will now represent a line of the text. |
+| [Bidi](../android/icu/text/Bidi.md)! | a`Bidi`object that will now represent a line of the text. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -2308,7 +2308,7 @@ After line-breaking, rules (L1) and (L2) for the treatment of trailing WS and fo
 
 **See Also**
 
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength()) 
+- [#getProcessedLength](../android/icu/text/Bidi.md)) 
 
 ### setPara
 
@@ -2346,10 +2346,10 @@ The text is stored internally as an array of characters. Therefore the documenta
 
 **See Also**
 
-- [#LEVEL_DEFAULT_LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_LTR:kotlin.Byte)
-- [#LEVEL_DEFAULT_RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_RTL:kotlin.Byte)
-- [#LEVEL_OVERRIDE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_OVERRIDE:kotlin.Byte)
-- [#MAX_EXPLICIT_LEVEL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAX_EXPLICIT_LEVEL:kotlin.Byte) 
+- [#LEVEL_DEFAULT_LTR](../android/icu/text/Bidi.md)
+- [#LEVEL_DEFAULT_RTL](../android/icu/text/Bidi.md)
+- [#LEVEL_OVERRIDE](../android/icu/text/Bidi.md)
+- [#MAX_EXPLICIT_LEVEL](../android/icu/text/Bidi.md) 
 
 ### setPara
 
@@ -2387,10 +2387,10 @@ Although the text is passed here as a`String`, it is stored internally as an arr
 
 **See Also**
 
-- [#LEVEL_DEFAULT_LTR](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_LTR:kotlin.Byte)
-- [#LEVEL_DEFAULT_RTL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_DEFAULT_RTL:kotlin.Byte)
-- [#LEVEL_OVERRIDE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#LEVEL_OVERRIDE:kotlin.Byte)
-- [#MAX_EXPLICIT_LEVEL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAX_EXPLICIT_LEVEL:kotlin.Byte) 
+- [#LEVEL_DEFAULT_LTR](../android/icu/text/Bidi.md)
+- [#LEVEL_DEFAULT_RTL](../android/icu/text/Bidi.md)
+- [#LEVEL_OVERRIDE](../android/icu/text/Bidi.md)
+- [#MAX_EXPLICIT_LEVEL](../android/icu/text/Bidi.md) 
 
 ### setPara
 
@@ -2406,7 +2406,7 @@ This method takes a paragraph of text and computes the left-right-directionality
 
 The RUN_DIRECTION attribute in the text, if present, determines the base direction (left-to-right or right-to-left). If not present, the base direction is computed using the Unicode Bidirectional Algorithm, defaulting to left-to-right if there are no strong directional characters in the text. This attribute, if present, must be applied to all the text in the paragraph.
 
-The BIDI_EMBEDDING attribute in the text, if present, represents embedding level information. Negative values indicate overrides at the absolute value of the level. Positive values indicate embeddings. (See [MAX_EXPLICIT_LEVEL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#MAX_EXPLICIT_LEVEL:kotlin.Byte).) Where values are zero or not defined, the base embedding level as determined by the base direction is assumed.
+The BIDI_EMBEDDING attribute in the text, if present, represents embedding level information. Negative values indicate overrides at the absolute value of the level. Positive values indicate embeddings. (See [MAX_EXPLICIT_LEVEL](../android/icu/text/Bidi.md).) Where values are zero or not defined, the base embedding level as determined by the base direction is assumed.
 
 The NUMERIC_SHAPING attribute in the text, if present, converts European digits to other decimal digits before running the bidi algorithm. This attribute, if present, must be applied to all the text in the paragraph. If the entire text is all of the same directionality, then the method may not perform all the steps described by the algorithm, i.e., some levels may not be the same as if all steps were performed. This is not relevant for unidirectional text. 
 For example, in pure LTR text with numbers the numbers would get a resolved level of 2 higher than the surrounding text according to the algorithm. This implementation may set all resolved levels to the same value in such a case.
@@ -2415,7 +2415,7 @@ For example, in pure LTR text with numbers the numbers would get a resolved leve
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `paragraph` | [AttributedCharacterIterator](https://developer.android.com/reference/kotlin/java/text/AttributedCharacterIterator.html#)!:a paragraph of text with optional character and paragraph attribute information |
+| `paragraph` | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)!:a paragraph of text with optional character and paragraph attribute information |
 
 ### setReorderingMode
 
@@ -2469,17 +2469,17 @@ Note that option`OUTPUT_REVERSE`of`writeReordered`has no useful meaning and shou
 
 **See Also**
 
-- [#setInverse](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#setInverse(kotlin.Boolean))
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int))
-- [#INSERT_LRM_FOR_NUMERIC](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#INSERT_LRM_FOR_NUMERIC:kotlin.Short)
-- [#OUTPUT_REVERSE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OUTPUT_REVERSE:kotlin.Short)
-- [#REORDER_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_DEFAULT:kotlin.Short)
-- [#REORDER_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_NUMBERS_SPECIAL:kotlin.Short)
-- [#REORDER_GROUP_NUMBERS_WITH_R](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_GROUP_NUMBERS_WITH_R:kotlin.Short)
-- [#REORDER_RUNS_ONLY](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_RUNS_ONLY:kotlin.Short)
-- [#REORDER_INVERSE_NUMBERS_AS_L](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_NUMBERS_AS_L:kotlin.Short)
-- [#REORDER_INVERSE_LIKE_DIRECT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_LIKE_DIRECT:kotlin.Short)
-- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REORDER_INVERSE_FOR_NUMBERS_SPECIAL:kotlin.Short) 
+- [#setInverse](../android/icu/text/Bidi.md))
+- [#writeReordered](../android/icu/text/Bidi.md))
+- [#INSERT_LRM_FOR_NUMERIC](../android/icu/text/Bidi.md)
+- [#OUTPUT_REVERSE](../android/icu/text/Bidi.md)
+- [#REORDER_DEFAULT](../android/icu/text/Bidi.md)
+- [#REORDER_NUMBERS_SPECIAL](../android/icu/text/Bidi.md)
+- [#REORDER_GROUP_NUMBERS_WITH_R](../android/icu/text/Bidi.md)
+- [#REORDER_RUNS_ONLY](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_NUMBERS_AS_L](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_LIKE_DIRECT](../android/icu/text/Bidi.md)
+- [#REORDER_INVERSE_FOR_NUMBERS_SPECIAL](../android/icu/text/Bidi.md) 
 
 ### setReorderingOptions
 
@@ -2497,11 +2497,11 @@ Specify which of the reordering options should be applied during Bidi transforma
 
 **See Also**
 
-- [#getReorderingOptions](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getReorderingOptions())
-- [#OPTION_DEFAULT](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_DEFAULT:kotlin.Int)
-- [#OPTION_INSERT_MARKS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_INSERT_MARKS:kotlin.Int)
-- [#OPTION_REMOVE_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_REMOVE_CONTROLS:kotlin.Int)
-- [#OPTION_STREAMING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_STREAMING:kotlin.Int) 
+- [#getReorderingOptions](../android/icu/text/Bidi.md))
+- [#OPTION_DEFAULT](../android/icu/text/Bidi.md)
+- [#OPTION_INSERT_MARKS](../android/icu/text/Bidi.md)
+- [#OPTION_REMOVE_CONTROLS](../android/icu/text/Bidi.md)
+- [#OPTION_STREAMING](../android/icu/text/Bidi.md) 
 
 ### writeReordered
 
@@ -2529,13 +2529,13 @@ The text may have been aliased (only a reference was stored without copying the 
 
 **See Also**
 
-- [#DO_MIRRORING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#DO_MIRRORING:kotlin.Short)
-- [#INSERT_LRM_FOR_NUMERIC](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#INSERT_LRM_FOR_NUMERIC:kotlin.Short)
-- [#KEEP_BASE_COMBINING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#KEEP_BASE_COMBINING:kotlin.Short)
-- [#OUTPUT_REVERSE](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OUTPUT_REVERSE:kotlin.Short)
-- [#REMOVE_BIDI_CONTROLS](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#REMOVE_BIDI_CONTROLS:kotlin.Short)
-- [#OPTION_STREAMING](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#OPTION_STREAMING:kotlin.Int)
-- [#getProcessedLength](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#getProcessedLength()) 
+- [#DO_MIRRORING](../android/icu/text/Bidi.md)
+- [#INSERT_LRM_FOR_NUMERIC](../android/icu/text/Bidi.md)
+- [#KEEP_BASE_COMBINING](../android/icu/text/Bidi.md)
+- [#OUTPUT_REVERSE](../android/icu/text/Bidi.md)
+- [#REMOVE_BIDI_CONTROLS](../android/icu/text/Bidi.md)
+- [#OPTION_STREAMING](../android/icu/text/Bidi.md)
+- [#getProcessedLength](../android/icu/text/Bidi.md)) 
 
 ### writeReverse
 
@@ -2565,4 +2565,4 @@ Reverse a Right-To-Left run of Unicode text. This method preserves the integrity
 
 **See Also**
 
-- [#writeReordered](https://developer.android.com/reference/kotlin/android/icu/text/Bidi#writeReordered(kotlin.Int))
+- [#writeReordered](../android/icu/text/Bidi.md))

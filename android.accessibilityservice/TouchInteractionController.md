@@ -2,7 +2,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # TouchInteractionController
 
-Kotlin | [Java](https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController "View this page in Java")
+Kotlin | [Java](../android/accessibilityservice/TouchInteractionController.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TouchInteractionController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.accessibilityservice.TouchInteractionController](https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController#) |
+| ↳ | [android.accessibilityservice.TouchInteractionController](../android/accessibilityservice/TouchInteractionController.md) |
 
 This class allows a service to handle touch exploration and the detection of specialized accessibility gestures. The service receives motion events and can match those motion events against the gestures it supports. The service can also request the framework enter three other states of operation for the duration of this interaction. Upon entering any of these states the framework will take over and the service will not receive motion events until the start of a new interaction. The states are as follows:
 
@@ -199,8 +199,8 @@ Adds the specified callback to the list of callbacks. The callback will run usin
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)?: the executor for this callback, or `null` to execute on the service's main thread |
-| `callback` | [TouchInteractionController.Callback](https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController.Callback): the callback to add, must be non-null |
+| `executor` | [Executor](../java/util/concurrent/Executor.md)?: the executor for this callback, or `null` to execute on the service's main thread |
+| `callback` | [TouchInteractionController.Callback](../android/accessibilityservice/TouchInteractionController.Callback.md): the callback to add, must be non-null |
 
 ### requestDelegating
 
@@ -276,7 +276,7 @@ Unregisters the specified callback.
 
 | Parameters ||
 |---|---|
-| `callback` | [TouchInteractionController.Callback](https://developer.android.com/reference/kotlin/android/accessibilityservice/TouchInteractionController.Callback): the callback to remove, must be non-null |
+| `callback` | [TouchInteractionController.Callback](../android/accessibilityservice/TouchInteractionController.Callback.md): the callback to remove, must be non-null |
 
 | Return ||
 |---|---|

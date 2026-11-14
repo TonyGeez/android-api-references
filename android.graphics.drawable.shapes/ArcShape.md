@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ArcShape
 
-Kotlin | [Java](https://developer.android.com/reference/android/graphics/drawable/shapes/ArcShape "View this page in Java")
+Kotlin | [Java](../android/graphics/drawable/shapes/ArcShape.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class ArcShape : RectShape
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.graphics.drawable.shapes.Shape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape) |||
-| | ↳ | [android.graphics.drawable.shapes.RectShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape) ||
-| | | ↳ | [android.graphics.drawable.shapes.ArcShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape#) |
+| ↳ | [android.graphics.drawable.shapes.Shape](../android/graphics/drawable/shapes/Shape.md) |||
+| | ↳ | [android.graphics.drawable.shapes.RectShape](../android/graphics/drawable/shapes/RectShape.md) ||
+| | | ↳ | [android.graphics.drawable.shapes.ArcShape](../android/graphics/drawable/shapes/ArcShape.md) |
 | --- | --- | --- | --- |
 
 Creates an arc shape. The arc shape starts at a specified angle and sweeps clockwise, drawing slices of pie.
@@ -28,7 +28,7 @@ The arc can be drawn to a `https://developer.android.com/reference/kotlin/androi
 
 | Public methods ||
 |---|---|
-| open [ArcShape](https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape#) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape#clone()()` Creates and returns a copy of this object. |
+| open [ArcShape](../android/graphics/drawable/shapes/ArcShape.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape#clone()()` Creates and returns a copy of this object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape#draw(android.graphics.Canvas,%20android.graphics.Paint)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#!, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#!)` Draws this shape into the provided Canvas, with the provided Paint. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/ArcShape#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
@@ -120,8 +120,8 @@ Before calling this, you must call `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)!: the Canvas within which this shape should be drawn |
-| `paint` | [Paint](https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)!: the Paint object that defines this shape's characteristics |
+| `canvas` | [Canvas](../android/graphics/Canvas.md)!: the Canvas within which this shape should be drawn |
+| `paint` | [Paint](../android/graphics/Paint.md)!: the Paint object that defines this shape's characteristics |
 
 ### equals
 
@@ -163,7 +163,7 @@ Computes the Outline of the shape and return it in the supplied Outline paramete
 
 | Parameters ||
 |---|---|
-| `outline` | [Outline](https://developer.android.com/reference/kotlin/android/graphics/Outline.html#): the Outline to be populated with the result. Must be non-`null`. |
+| `outline` | [Outline](../android/graphics/Outline.md): the Outline to be populated with the result. Must be non-`null`. |
 
 ### getStartAngle
 

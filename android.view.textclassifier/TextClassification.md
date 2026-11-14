@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # TextClassification
 
-Kotlin | [Java](https://developer.android.com/reference/android/view/textclassifier/TextClassification "View this page in Java")
+Kotlin | [Java](../android/view/textclassifier/TextClassification.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TextClassification : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.textclassifier.TextClassification](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#) |
+| ↳ | [android.view.textclassifier.TextClassification](../android/view/textclassifier/TextClassification.md) |
 
 Information for generating a widget to handle classified text.
 
@@ -73,19 +73,19 @@ e.g. starting an action mode with menu items that can handle the classified text
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](https://developer.android.com/reference/kotlin/android/app/RemoteAction.html#)!\>! | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getActions()()` Returns a list of actions that may be performed on the text. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](../android/app/RemoteAction.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getActions()()` Returns a list of actions that may be performed on the text. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getConfidenceScore(kotlin.String)(entity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the confidence score for the specified entity. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getEntity(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the entity at the specified index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getEntityCount()()` Returns the number of entities found in the classified text. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getExtras()()` Returns the extended data. |
+| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getExtras()()` Returns the extended data. |
 | --- | --- |
-| [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getIcon()()` Returns an icon that may be rendered on a widget used to act on the classified text. |
+| [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getIcon()()` Returns an icon that may be rendered on a widget used to act on the classified text. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getId()()` Returns the id, if one exists, for this object. |
-| [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getIntent()()` Returns an intent that may be fired to act on the classified text. |
+| [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getIntent()()` Returns an intent that may be fired to act on the classified text. |
 | --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getLabel()()` Returns a label that may be rendered on a widget used to act on the classified text. |
-| [View.OnClickListener](https://developer.android.com/reference/kotlin/android/view/View.OnClickListener.html#)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getOnClickListener()()` Returns the OnClickListener that may be triggered to act on the classified text. |
+| [View.OnClickListener](../android/view/View.OnClickListener.md)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getOnClickListener()()` Returns the OnClickListener that may be triggered to act on the classified text. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#getText()()` Gets the classified text. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#toString()()` Returns a string representation of the object. |
@@ -93,7 +93,7 @@ e.g. starting an action mode with menu items that can handle the classified text
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [TextClassification](https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#)!\> | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TextClassification](../android/view/textclassifier/TextClassification.md)!\> | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -320,7 +320,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

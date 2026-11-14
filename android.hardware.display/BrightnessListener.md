@@ -4,14 +4,14 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # BrightnessListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.BrightnessListener "View this page in Java") 
+Kotlin| [Java](../android/hardware/display/VirtualDisplayConfig.BrightnessListener.md) 
 | --- | --- |
 
 ```
 interface BrightnessListener
 ```
 
-| [android.hardware.display.VirtualDisplayConfig.BrightnessListener](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig.BrightnessListener#) |
+| [android.hardware.display.VirtualDisplayConfig.BrightnessListener](../android/hardware/display/VirtualDisplayConfig.BrightnessListener.md) |
 
 Listener for display brightness changes.
 
@@ -19,7 +19,7 @@ Listener for display brightness changes.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBrightnessChanged](https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig.BrightnessListener#onBrightnessChanged(kotlin.Float))`(`brightness:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Called when the display's brightness has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBrightnessChanged](../android/hardware/display/VirtualDisplayConfig.BrightnessListener.md))`(`brightness:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Called when the display's brightness has changed. |
 
 ## Public methods
 

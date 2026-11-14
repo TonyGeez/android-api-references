@@ -4,16 +4,16 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # CalendarColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/CalendarContract.CalendarColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/CalendarContract.CalendarColumns.md) 
 | --- | --- |
 
 ```
 protected interface CalendarColumns
 ```
 
-| [android.provider.CalendarContract.CalendarColumns](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#) |
+| [android.provider.CalendarContract.CalendarColumns](../android/provider/CalendarContract.CalendarColumns.md) |
 
-| Known Direct Subclasses [CalendarContract.CalendarAlerts](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlerts), [CalendarContract.CalendarEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarEntity), [CalendarContract.Calendars](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Calendars), [CalendarContract.Events](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Events), [CalendarContract.Instances](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Instances) |------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [CalendarContract.CalendarAlerts](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarAlerts) | Fields and helpers for accessing calendar alerts information. | | [CalendarContract.CalendarEntity](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarEntity) | Class that represents a Calendar Entity. | | [CalendarContract.Calendars](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Calendars) | Constants and helpers for the Calendars table, which contains details for individual calendars. | | [CalendarContract.Events](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Events) | Constants and helpers for the Events table, which contains details for individual events. | | [CalendarContract.Instances](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Instances) | Fields and helpers for interacting with Instances. | |
+| Known Direct Subclasses [CalendarContract.CalendarAlerts](../android/provider/CalendarContract.CalendarAlerts.md), [CalendarContract.CalendarEntity](../android/provider/CalendarContract.CalendarEntity.md), [CalendarContract.Calendars](../android/provider/CalendarContract.Calendars.md), [CalendarContract.Events](../android/provider/CalendarContract.Events.md), [CalendarContract.Instances](../android/provider/CalendarContract.Instances.md) |------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [CalendarContract.CalendarAlerts](../android/provider/CalendarContract.CalendarAlerts.md) | Fields and helpers for accessing calendar alerts information. | | [CalendarContract.CalendarEntity](../android/provider/CalendarContract.CalendarEntity.md) | Class that represents a Calendar Entity. | | [CalendarContract.Calendars](../android/provider/CalendarContract.Calendars.md) | Constants and helpers for the Calendars table, which contains details for individual calendars. | | [CalendarContract.Events](../android/provider/CalendarContract.Events.md) | Constants and helpers for the Events table, which contains details for individual events. | | [CalendarContract.Instances](../android/provider/CalendarContract.Instances.md) | Fields and helpers for interacting with Instances. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Columns specific to the Calendars Uri that other Uris can query.
@@ -22,37 +22,37 @@ Columns specific to the Calendars Uri that other Uris can query.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALLOWED_ATTENDEE_TYPES](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#ALLOWED_ATTENDEE_TYPES:kotlin.String) A comma separated list of attendee types supported for this calendar in the format "#,#,#". |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALLOWED_AVAILABILITY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#ALLOWED_AVAILABILITY:kotlin.String) A comma separated list of availability types supported for this calendar in the format "#,#,#". |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALLOWED_REMINDERS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#ALLOWED_REMINDERS:kotlin.String) A comma separated list of reminder methods supported for this calendar in the format "#,#,#". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALLOWED_ATTENDEE_TYPES](../android/provider/CalendarContract.CalendarColumns.md) A comma separated list of attendee types supported for this calendar in the format "#,#,#". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALLOWED_AVAILABILITY](../android/provider/CalendarContract.CalendarColumns.md) A comma separated list of availability types supported for this calendar in the format "#,#,#". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ALLOWED_REMINDERS](../android/provider/CalendarContract.CalendarColumns.md) A comma separated list of reminder methods supported for this calendar in the format "#,#,#". |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_ACCESS_LEVEL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_ACCESS_LEVEL:kotlin.String) The level of access that the user has for the calendar |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_COLOR:kotlin.String) The color of the calendar. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_COLOR_KEY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_COLOR_KEY:kotlin.String) A key for looking up a color from the [Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) table. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_ACCESS_LEVEL](../android/provider/CalendarContract.CalendarColumns.md) The level of access that the user has for the calendar |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_COLOR](../android/provider/CalendarContract.CalendarColumns.md) The color of the calendar. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_COLOR_KEY](../android/provider/CalendarContract.CalendarColumns.md) A key for looking up a color from the [Colors](../android/provider/CalendarContract.Colors.md) table. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_DISPLAY_NAME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_DISPLAY_NAME:kotlin.String) The display name of the calendar. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_TIME_ZONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_TIME_ZONE:kotlin.String) The time zone the calendar is associated with. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_CONTRIBUTOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_CONTRIBUTOR:kotlin.Int) Full access to modify the calendar, but not the access control settings |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_DISPLAY_NAME](../android/provider/CalendarContract.CalendarColumns.md) The display name of the calendar. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_TIME_ZONE](../android/provider/CalendarContract.CalendarColumns.md) The time zone the calendar is associated with. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_CONTRIBUTOR](../android/provider/CalendarContract.CalendarColumns.md) Full access to modify the calendar, but not the access control settings |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_EDITOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_EDITOR:kotlin.Int) Full access to modify the calendar, but not the access control settings |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_FREEBUSY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_FREEBUSY:kotlin.Int) Can only see free/busy information about the calendar |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_NONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_NONE:kotlin.Int) Cannot access the calendar |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_EDITOR](../android/provider/CalendarContract.CalendarColumns.md) Full access to modify the calendar, but not the access control settings |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_FREEBUSY](../android/provider/CalendarContract.CalendarColumns.md) Can only see free/busy information about the calendar |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_NONE](../android/provider/CalendarContract.CalendarColumns.md) Cannot access the calendar |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_OVERRIDE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_OVERRIDE:kotlin.Int) not used |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_OWNER](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_OWNER:kotlin.Int) Full access to the calendar |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_READ](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_READ:kotlin.Int) Can read all event details |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_OVERRIDE](../android/provider/CalendarContract.CalendarColumns.md) not used |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_OWNER](../android/provider/CalendarContract.CalendarColumns.md) Full access to the calendar |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_READ](../android/provider/CalendarContract.CalendarColumns.md) Can read all event details |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_RESPOND](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_RESPOND:kotlin.Int) Can reply yes/no/maybe to an event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_ROOT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAL_ACCESS_ROOT:kotlin.Int) Domain admin |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_MODIFY_TIME_ZONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAN_MODIFY_TIME_ZONE:kotlin.String) Can the organizer modify the time zone of the event? Column name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_RESPOND](../android/provider/CalendarContract.CalendarColumns.md) Can reply yes/no/maybe to an event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAL_ACCESS_ROOT](../android/provider/CalendarContract.CalendarColumns.md) Domain admin |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_MODIFY_TIME_ZONE](../android/provider/CalendarContract.CalendarColumns.md) Can the organizer modify the time zone of the event? Column name. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_ORGANIZER_RESPOND](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CAN_ORGANIZER_RESPOND:kotlin.String) Can the organizer respond to the event? If no, the status of the organizer should not be shown by the UI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IS_PRIMARY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#IS_PRIMARY:kotlin.String) Is this the primary calendar for this account. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MAX_REMINDERS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#MAX_REMINDERS:kotlin.String) The maximum number of reminders allowed for an event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_ORGANIZER_RESPOND](../android/provider/CalendarContract.CalendarColumns.md) Can the organizer respond to the event? If no, the status of the organizer should not be shown by the UI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IS_PRIMARY](../android/provider/CalendarContract.CalendarColumns.md) Is this the primary calendar for this account. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MAX_REMINDERS](../android/provider/CalendarContract.CalendarColumns.md) The maximum number of reminders allowed for an event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [OWNER_ACCOUNT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#OWNER_ACCOUNT:kotlin.String) The owner account for this calendar, based on the calendar feed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EVENTS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#SYNC_EVENTS:kotlin.String) Is this calendar synced and are its events stored on the device? 0 - Do not sync this calendar or store events for this calendar. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VISIBLE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#VISIBLE:kotlin.String) Is the calendar selected to be displayed? 0 - do not show events associated with this calendar. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [OWNER_ACCOUNT](../android/provider/CalendarContract.CalendarColumns.md) The owner account for this calendar, based on the calendar feed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EVENTS](../android/provider/CalendarContract.CalendarColumns.md) Is this calendar synced and are its events stored on the device? 0 - Do not sync this calendar or store events for this calendar. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [VISIBLE](../android/provider/CalendarContract.CalendarColumns.md) Is the calendar selected to be displayed? 0 - do not show events associated with this calendar. |
 | --- | --- |
 
 ## Constants
@@ -65,7 +65,7 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 static val ALLOWED_ATTENDEE_TYPES: String
 ```
 
-A comma separated list of attendee types supported for this calendar in the format "#,#,#". Valid types are [Attendees.TYPE_NONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_NONE:kotlin.Int), [Attendees.TYPE_OPTIONAL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_OPTIONAL:kotlin.Int), [Attendees.TYPE_REQUIRED](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_REQUIRED:kotlin.Int), [Attendees.TYPE_RESOURCE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_RESOURCE:kotlin.Int). Setting this field to only [Attendees.TYPE_NONE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.AttendeesColumns#TYPE_NONE:kotlin.Int) should be used to indicate that changing the attendee type is not supported. 
+A comma separated list of attendee types supported for this calendar in the format "#,#,#". Valid types are [Attendees.TYPE_NONE](../android/provider/CalendarContract.AttendeesColumns.md), [Attendees.TYPE_OPTIONAL](../android/provider/CalendarContract.AttendeesColumns.md), [Attendees.TYPE_REQUIRED](../android/provider/CalendarContract.AttendeesColumns.md), [Attendees.TYPE_RESOURCE](../android/provider/CalendarContract.AttendeesColumns.md). Setting this field to only [Attendees.TYPE_NONE](../android/provider/CalendarContract.AttendeesColumns.md) should be used to indicate that changing the attendee type is not supported. 
 
  Value: "allowedAttendeeTypes"
 
@@ -77,7 +77,7 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 static val ALLOWED_AVAILABILITY: String
 ```
 
-A comma separated list of availability types supported for this calendar in the format "#,#,#". Valid types are [Events.AVAILABILITY_BUSY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_BUSY:kotlin.Int), [Events.AVAILABILITY_FREE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_FREE:kotlin.Int), [Events.AVAILABILITY_TENTATIVE](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_TENTATIVE:kotlin.Int). Setting this field to only [Events.AVAILABILITY_BUSY](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.EventsColumns#AVAILABILITY_BUSY:kotlin.Int) should be used to indicate that changing the availability is not supported. 
+A comma separated list of availability types supported for this calendar in the format "#,#,#". Valid types are [Events.AVAILABILITY_BUSY](../android/provider/CalendarContract.EventsColumns.md), [Events.AVAILABILITY_FREE](../android/provider/CalendarContract.EventsColumns.md), [Events.AVAILABILITY_TENTATIVE](../android/provider/CalendarContract.EventsColumns.md). Setting this field to only [Events.AVAILABILITY_BUSY](../android/provider/CalendarContract.EventsColumns.md) should be used to indicate that changing the availability is not supported. 
 
  Value: "allowedAvailability"
 
@@ -89,7 +89,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val ALLOWED_REMINDERS: String
 ```
 
-A comma separated list of reminder methods supported for this calendar in the format "#,#,#". Valid types are [Reminders.METHOD_DEFAULT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_DEFAULT:kotlin.Int), [Reminders.METHOD_ALERT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_ALERT:kotlin.Int), [Reminders.METHOD_EMAIL](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_EMAIL:kotlin.Int), [Reminders.METHOD_SMS](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_SMS:kotlin.Int), [Reminders.METHOD_ALARM](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.RemindersColumns#METHOD_ALARM:kotlin.Int). Column name.
+A comma separated list of reminder methods supported for this calendar in the format "#,#,#". Valid types are [Reminders.METHOD_DEFAULT](../android/provider/CalendarContract.RemindersColumns.md), [Reminders.METHOD_ALERT](../android/provider/CalendarContract.RemindersColumns.md), [Reminders.METHOD_EMAIL](../android/provider/CalendarContract.RemindersColumns.md), [Reminders.METHOD_SMS](../android/provider/CalendarContract.RemindersColumns.md), [Reminders.METHOD_ALARM](../android/provider/CalendarContract.RemindersColumns.md). Column name.
 
 Type: TEXT 
 
@@ -131,7 +131,7 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 static val CALENDAR_COLOR_KEY: String
 ```
 
-A key for looking up a color from the [Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) table. NULL or an empty string are reserved for indicating that the calendar does not use a key for looking up the color. The provider will update [CALENDAR_COLOR](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#CALENDAR_COLOR:kotlin.String) automatically when a valid key is written to this column. The key must reference an existing row of the [Colors](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.Colors) table. @see Colors
+A key for looking up a color from the [Colors](../android/provider/CalendarContract.Colors.md) table. NULL or an empty string are reserved for indicating that the calendar does not use a key for looking up the color. The provider will update [CALENDAR_COLOR](../android/provider/CalendarContract.CalendarColumns.md) automatically when a valid key is written to this column. The key must reference an existing row of the [Colors](../android/provider/CalendarContract.Colors.md) table. @see Colors
 
 Type: TEXT 
 
@@ -309,7 +309,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val IS_PRIMARY: String
 ```
 
-Is this the primary calendar for this account. If this column is not explicitly set, the provider will return 1 if [Calendars.ACCOUNT_NAME](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.SyncColumns#ACCOUNT_NAME:kotlin.String) is equal to [Calendars.OWNER_ACCOUNT](https://developer.android.com/reference/kotlin/android/provider/CalendarContract.CalendarColumns#OWNER_ACCOUNT:kotlin.String). 
+Is this the primary calendar for this account. If this column is not explicitly set, the provider will return 1 if [Calendars.ACCOUNT_NAME](../android/provider/CalendarContract.SyncColumns.md) is equal to [Calendars.OWNER_ACCOUNT](../android/provider/CalendarContract.CalendarColumns.md). 
 
  Value: "isPrimary"
 

@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # PointerIcon
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/PointerIcon "View this page in Java") 
+Kotlin| [Java](../android/view/PointerIcon.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PointerIcon : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) |
+| ↳ | [android.view.PointerIcon](../android/view/PointerIcon.md) |
 
 Represents an icon that can be used as a mouse pointer.
 
@@ -23,58 +23,58 @@ Pointer icons can be provided either by the system using system types, or by app
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALIAS](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ALIAS:kotlin.Int) Type constant: alias (indicating an alias of/shortcut to something is to be created. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALL_SCROLL](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ALL_SCROLL:kotlin.Int) Type constant: all-scroll. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ARROW:kotlin.Int) Type constant: Arrow icon. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALIAS](../android/view/PointerIcon.md) Type constant: alias (indicating an alias of/shortcut to something is to be created. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALL_SCROLL](../android/view/PointerIcon.md) Type constant: all-scroll. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ARROW](../android/view/PointerIcon.md) Type constant: Arrow icon. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CELL](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_CELL:kotlin.Int) Type constant: cell. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CONTEXT_MENU](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_CONTEXT_MENU:kotlin.Int) Type constant: context-menu. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_COPY](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_COPY:kotlin.Int) Type constant: copy. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CELL](../android/view/PointerIcon.md) Type constant: cell. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CONTEXT_MENU](../android/view/PointerIcon.md) Type constant: context-menu. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_COPY](../android/view/PointerIcon.md) Type constant: copy. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CROSSHAIR](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_CROSSHAIR:kotlin.Int) Type constant: crosshair. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DEFAULT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_DEFAULT:kotlin.Int) The default pointer icon. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GRAB](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_GRAB:kotlin.Int) Type constant: grab. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CROSSHAIR](../android/view/PointerIcon.md) Type constant: crosshair. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DEFAULT](../android/view/PointerIcon.md) The default pointer icon. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GRAB](../android/view/PointerIcon.md) Type constant: grab. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GRABBING](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_GRABBING:kotlin.Int) Type constant: grabbing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HAND](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HAND:kotlin.Int) Type constant: hand. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HANDWRITING](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HANDWRITING:kotlin.Int) Type constant: handwriting. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GRABBING](../android/view/PointerIcon.md) Type constant: grabbing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HAND](../android/view/PointerIcon.md) Type constant: hand. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HANDWRITING](../android/view/PointerIcon.md) Type constant: handwriting. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HELP](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HELP:kotlin.Int) Type constant: help. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HORIZONTAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_HORIZONTAL_DOUBLE_ARROW:kotlin.Int) Type constant: horizontal double arrow mainly for resizing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NO_DROP](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_NO_DROP:kotlin.Int) Type constant: no-drop. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HELP](../android/view/PointerIcon.md) Type constant: help. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_HORIZONTAL_DOUBLE_ARROW](../android/view/PointerIcon.md) Type constant: horizontal double arrow mainly for resizing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NO_DROP](../android/view/PointerIcon.md) Type constant: no-drop. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NULL](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_NULL:kotlin.Int) Type constant: Null icon. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_TEXT:kotlin.Int) Type constant: text. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TOP_LEFT_DIAGONAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_TOP_LEFT_DIAGONAL_DOUBLE_ARROW:kotlin.Int) Type constant: diagonal double arrow -- top-left to bottom-right. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NULL](../android/view/PointerIcon.md) Type constant: Null icon. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TEXT](../android/view/PointerIcon.md) Type constant: text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TOP_LEFT_DIAGONAL_DOUBLE_ARROW](../android/view/PointerIcon.md) Type constant: diagonal double arrow -- top-left to bottom-right. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TOP_RIGHT_DIAGONAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_TOP_RIGHT_DIAGONAL_DOUBLE_ARROW:kotlin.Int) Type constant: diagonal double arrow -- top-right to bottom-left. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VERTICAL_DOUBLE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_VERTICAL_DOUBLE_ARROW:kotlin.Int) Type constant: vertical double arrow mainly for resizing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VERTICAL_TEXT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_VERTICAL_TEXT:kotlin.Int) Type constant: vertical-text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_TOP_RIGHT_DIAGONAL_DOUBLE_ARROW](../android/view/PointerIcon.md) Type constant: diagonal double arrow -- top-right to bottom-left. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VERTICAL_DOUBLE_ARROW](../android/view/PointerIcon.md) Type constant: vertical double arrow mainly for resizing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_VERTICAL_TEXT](../android/view/PointerIcon.md) Type constant: vertical-text. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WAIT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_WAIT:kotlin.Int) Type constant: wait. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ZOOM_IN](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ZOOM_IN:kotlin.Int) Type constant: zoom-in. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ZOOM_OUT](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ZOOM_OUT:kotlin.Int) Type constant: zoom-out. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_WAIT](../android/view/PointerIcon.md) Type constant: wait. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ZOOM_IN](../android/view/PointerIcon.md) Type constant: zoom-in. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ZOOM_OUT](../android/view/PointerIcon.md) Type constant: zoom-out. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | [create](https://developer.android.com/reference/kotlin/android/view/PointerIcon#create(android.graphics.Bitmap,%20kotlin.Float,%20kotlin.Float))`(`bitmap:` ` [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)`, `hotSpotX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `hotSpotY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a custom pointer icon from the given bitmap and hotspot information. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/view/PointerIcon#describeContents())`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/view/PointerIcon#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [PointerIcon](../android/view/PointerIcon.md) | [create](../android/view/PointerIcon.md))`(`bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)`, `hotSpotX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `hotSpotY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Creates a custom pointer icon from the given bitmap and hotspot information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/PointerIcon.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/PointerIcon.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| static [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | [getSystemIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#getSystemIcon(android.content.Context,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets a system pointer icon for the given type. |
-| static [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | [load](https://developer.android.com/reference/kotlin/android/view/PointerIcon#load(android.content.res.Resources,%20kotlin.Int))`(`resources:` ` [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#)`, `resourceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads a custom pointer icon from an XML resource. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/view/PointerIcon#toString())`()` <br /> |
+| static [PointerIcon](../android/view/PointerIcon.md) | [getSystemIcon](../android/view/PointerIcon.md))`(`context:` ` [Context](../android/content/Context.md)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets a system pointer icon for the given type. |
+| static [PointerIcon](../android/view/PointerIcon.md) | [load](../android/view/PointerIcon.md))`(`resources:` ` [Resources](../android/content/res/Resources.md)`, `resourceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads a custom pointer icon from an XML resource. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/PointerIcon.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/view/PointerIcon#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/PointerIcon.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/view/PointerIcon#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PointerIcon](../android/view/PointerIcon.md)!\> | [CREATOR](../android/view/PointerIcon.md) <br /> |
 
 ## Constants
 
@@ -171,7 +171,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 static val TYPE_DEFAULT: Int
 ```
 
-**Deprecated:** *This is the same as using [TYPE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ARROW:kotlin.Int). Use [TYPE_ARROW](https://developer.android.com/reference/kotlin/android/view/PointerIcon#TYPE_ARROW:kotlin.Int) to explicitly show an arrow, or use a`null` [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) with [View.setPointerIcon(PointerIcon)](https://developer.android.com/reference/kotlin/android/view/View#setPointerIcon(android.view.PointerIcon))or [View.onResolvePointerIcon(MotionEvent, int)](https://developer.android.com/reference/kotlin/android/view/View#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int))instead to show the default pointer icon.*
+**Deprecated:** *This is the same as using [TYPE_ARROW](../android/view/PointerIcon.md). Use [TYPE_ARROW](../android/view/PointerIcon.md) to explicitly show an arrow, or use a`null` [PointerIcon](../android/view/PointerIcon.md) with [View.setPointerIcon(PointerIcon)](../android/view/View.md))or [View.onResolvePointerIcon(MotionEvent, int)](../android/view/View.md))instead to show the default pointer icon.*
 
 The default pointer icon. 
 
@@ -387,14 +387,14 @@ Creates a custom pointer icon from the given bitmap and hotspot information.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bitmap` | [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#):The bitmap for the icon. This value cannot be`null`. |
+| `bitmap` | [Bitmap](../android/graphics/Bitmap.md):The bitmap for the icon. This value cannot be`null`. |
 | `hotSpotX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X offset of the pointer icon hotspot in the bitmap. Must be within the \[0, bitmap.getWidth()) range. |
 | `hotSpotY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y offset of the pointer icon hotspot in the bitmap. Must be within the \[0, bitmap.getHeight()) range. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | A pointer icon for this bitmap. This value cannot be`null`. |
+| [PointerIcon](../android/view/PointerIcon.md) | A pointer icon for this bitmap. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------|
@@ -410,7 +410,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### equals
 
@@ -456,12 +456,12 @@ Gets a system pointer icon for the given type.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#):The context. This value cannot be`null`. |
+| `context` | [Context](../android/content/Context.md):The context. This value cannot be`null`. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The pointer icon type. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------|
-| [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | The pointer icon. This value cannot be`null`. |
+| [PointerIcon](../android/view/PointerIcon.md) | The pointer icon. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|---------------------|
@@ -484,12 +484,12 @@ The XML resource should have the following form:` <?xml version="1.0" encoding="
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resources` | [Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#):The resources object. This value cannot be`null`. |
+| `resources` | [Resources](../android/content/res/Resources.md):The resources object. This value cannot be`null`. |
 | `resourceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource id. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------|
-| [PointerIcon](https://developer.android.com/reference/kotlin/android/view/PointerIcon#) | The pointer icon. This value cannot be`null`. |
+| [PointerIcon](../android/view/PointerIcon.md) | The pointer icon. This value cannot be`null`. |
 
 | Exceptions ||
 |---------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -522,7 +522,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

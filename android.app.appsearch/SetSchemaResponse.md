@@ -8,7 +8,7 @@ class SetSchemaResponse : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.SetSchemaResponse](https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#) |
+| ↳ | [android.app.appsearch.SetSchemaResponse](../android/app/appsearch/SetSchemaResponse.md) |
 
 The response class of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
 
@@ -30,13 +30,13 @@ The response class of `https://developer.android.com/reference/kotlin/android/ap
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getIncompatibleTypes()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type whose new definitions set in the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` call were incompatible with the pre-existing schema. |
 | --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getMigratedTypes()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type that were migrated by the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` call. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SetSchemaResponse.MigrationFailure](https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getMigrationFailures()()` Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` of all failed `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SetSchemaResponse.MigrationFailure](../android/app/appsearch/SetSchemaResponse.MigrationFailure.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getMigrationFailures()()` Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` of all failed `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SetSchemaResponse](https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SetSchemaResponse](../android/app/appsearch/SetSchemaResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -149,7 +149,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

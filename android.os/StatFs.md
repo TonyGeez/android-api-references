@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # StatFs
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/StatFs "View this page in Java") 
+Kotlin| [Java](../android/os/StatFs.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class StatFs
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.StatFs](https://developer.android.com/reference/kotlin/android/os/StatFs#) |
+| ↳ | [android.os.StatFs](../android/os/StatFs.md) |
 
 Retrieve overall information about the space on a filesystem. This is a wrapper for Unix statvfs().
 
@@ -21,25 +21,25 @@ Retrieve overall information about the space on a filesystem. This is a wrapper 
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StatFs](https://developer.android.com/reference/kotlin/android/os/StatFs#StatFs(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a new StatFs for looking at the stats of the filesystem at`path`. |
+| [StatFs](../android/os/StatFs.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a new StatFs for looking at the stats of the filesystem at`path`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailableBlocks](https://developer.android.com/reference/kotlin/android/os/StatFs#getAvailableBlocks())`()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAvailableBlocksLong](https://developer.android.com/reference/kotlin/android/os/StatFs#getAvailableBlocksLong())`()` The number of blocks that are free on the file system and available to applications. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAvailableBytes](https://developer.android.com/reference/kotlin/android/os/StatFs#getAvailableBytes())`()` The number of bytes that are free on the file system and available to applications. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAvailableBlocks](../android/os/StatFs.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAvailableBlocksLong](../android/os/StatFs.md))`()` The number of blocks that are free on the file system and available to applications. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAvailableBytes](../android/os/StatFs.md))`()` The number of bytes that are free on the file system and available to applications. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBlockCount](https://developer.android.com/reference/kotlin/android/os/StatFs#getBlockCount())`()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBlockCountLong](https://developer.android.com/reference/kotlin/android/os/StatFs#getBlockCountLong())`()` The total number of blocks on the file system. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBlockSize](https://developer.android.com/reference/kotlin/android/os/StatFs#getBlockSize())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBlockCount](../android/os/StatFs.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBlockCountLong](../android/os/StatFs.md))`()` The total number of blocks on the file system. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBlockSize](../android/os/StatFs.md))`()` <br /> |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBlockSizeLong](https://developer.android.com/reference/kotlin/android/os/StatFs#getBlockSizeLong())`()` The size, in bytes, of a block on the file system. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFreeBlocks](https://developer.android.com/reference/kotlin/android/os/StatFs#getFreeBlocks())`()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFreeBlocksLong](https://developer.android.com/reference/kotlin/android/os/StatFs#getFreeBlocksLong())`()` The total number of blocks that are free on the file system, including reserved blocks (that are not available to normal applications). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBlockSizeLong](../android/os/StatFs.md))`()` The size, in bytes, of a block on the file system. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFreeBlocks](../android/os/StatFs.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFreeBlocksLong](../android/os/StatFs.md))`()` The total number of blocks that are free on the file system, including reserved blocks (that are not available to normal applications). |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFreeBytes](https://developer.android.com/reference/kotlin/android/os/StatFs#getFreeBytes())`()` The number of bytes that are free on the file system, including reserved blocks (that are not available to normal applications). |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalBytes](https://developer.android.com/reference/kotlin/android/os/StatFs#getTotalBytes())`()` The total number of bytes supported by the file system. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restat](https://developer.android.com/reference/kotlin/android/os/StatFs#restat(kotlin.String))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform a restat of the file system referenced by this object. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFreeBytes](../android/os/StatFs.md))`()` The number of bytes that are free on the file system, including reserved blocks (that are not available to normal applications). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalBytes](../android/os/StatFs.md))`()` The total number of bytes supported by the file system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restat](../android/os/StatFs.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform a restat of the file system referenced by this object. |
 | --- | --- |
 
 ## Public constructors
@@ -73,7 +73,7 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 open fun getAvailableBlocks(): Int
 ```
 
-**Deprecated:** *Use [getAvailableBlocksLong()](https://developer.android.com/reference/kotlin/android/os/StatFs#getAvailableBlocksLong())instead.* 
+**Deprecated:** *Use [getAvailableBlocksLong()](../android/os/StatFs.md))instead.* 
 
 ### getAvailableBlocksLong
 
@@ -104,7 +104,7 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 open fun getBlockCount(): Int
 ```
 
-**Deprecated:** *Use [getBlockCountLong()](https://developer.android.com/reference/kotlin/android/os/StatFs#getBlockCountLong())instead.* 
+**Deprecated:** *Use [getBlockCountLong()](../android/os/StatFs.md))instead.* 
 
 ### getBlockCountLong
 
@@ -125,7 +125,7 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 open fun getBlockSize(): Int
 ```
 
-**Deprecated:** *Use [getBlockSizeLong()](https://developer.android.com/reference/kotlin/android/os/StatFs#getBlockSizeLong())instead.* 
+**Deprecated:** *Use [getBlockSizeLong()](../android/os/StatFs.md))instead.* 
 
 ### getBlockSizeLong
 
@@ -146,7 +146,7 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 open fun getFreeBlocks(): Int
 ```
 
-**Deprecated:** *Use [getFreeBlocksLong()](https://developer.android.com/reference/kotlin/android/os/StatFs#getFreeBlocksLong())instead.* 
+**Deprecated:** *Use [getFreeBlocksLong()](../android/os/StatFs.md))instead.* 
 
 ### getFreeBlocksLong
 
@@ -156,7 +156,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun getFreeBlocksLong(): Long
 ```
 
-The total number of blocks that are free on the file system, including reserved blocks (that are not available to normal applications). This corresponds to the Unix`statvfs.f_bfree`field. Most applications will want to use [getAvailableBlocksLong()](https://developer.android.com/reference/kotlin/android/os/StatFs#getAvailableBlocksLong())instead. 
+The total number of blocks that are free on the file system, including reserved blocks (that are not available to normal applications). This corresponds to the Unix`statvfs.f_bfree`field. Most applications will want to use [getAvailableBlocksLong()](../android/os/StatFs.md))instead. 
 
 ### getFreeBytes
 
@@ -166,7 +166,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun getFreeBytes(): Long
 ```
 
-The number of bytes that are free on the file system, including reserved blocks (that are not available to normal applications). Most applications will want to use [getAvailableBytes()](https://developer.android.com/reference/kotlin/android/os/StatFs#getAvailableBytes())instead. 
+The number of bytes that are free on the file system, including reserved blocks (that are not available to normal applications). Most applications will want to use [getAvailableBytes()](../android/os/StatFs.md))instead. 
 
 ### getTotalBytes
 

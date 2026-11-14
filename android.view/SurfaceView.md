@@ -8,11 +8,11 @@ open class SurfaceView : View
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.View](https://developer.android.com/reference/kotlin/android/view/View) ||
-| | ↳ | [android.view.SurfaceView](https://developer.android.com/reference/kotlin/android/view/SurfaceView#) |
+| ↳ | [android.view.View](../android/view/View.md) ||
+| | ↳ | [android.view.SurfaceView](../android/view/SurfaceView.md) |
 
-Known Direct Subclasses [GLSurfaceView](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.html#), [VideoView](https://developer.android.com/reference/kotlin/android/widget/VideoView.html#) [GLSurfaceView](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.html#) An implementation of SurfaceView that uses the dedicated surface for displaying OpenGL rendering.
-[VideoView](https://developer.android.com/reference/kotlin/android/widget/VideoView.html#) Displays a video file.
+Known Direct Subclasses [GLSurfaceView](../android/opengl/GLSurfaceView.md), [VideoView](../android/widget/VideoView.md) [GLSurfaceView](../android/opengl/GLSurfaceView.md) An implementation of SurfaceView that uses the dedicated surface for displaying OpenGL rendering.
+[VideoView](../android/widget/VideoView.md) Displays a video file.
 
 Provides a dedicated drawing surface embedded inside of a view hierarchy. You can control the format of this surface and, if you like, its size; the SurfaceView takes care of placing the surface at the correct location on the screen
 
@@ -583,7 +583,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -608,7 +608,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -618,7 +618,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -638,7 +638,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -648,7 +648,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -658,7 +658,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -668,7 +668,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -678,7 +678,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -688,7 +688,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -698,7 +698,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -708,7 +708,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -718,7 +718,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -728,7 +728,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setAutofil
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](https://developer.android.com/reference/kotlin/android/view/View#attr_android:autofillHint) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -898,7 +898,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -918,7 +918,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -960,7 +960,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View#focus
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:visibility)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1056,7 +1056,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:visibility)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1150,7 +1150,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View#getMeas
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
 
 <br />
 
@@ -1607,7 +1607,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:visibility)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
 
 <br />
 
@@ -1626,18 +1626,18 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#gatherTransparentRegion(android.graphics.Region)(region: https://developer.android.com/reference/kotlin/android/graphics/Region.html#?)` This is used by the ViewRoot to perform an optimization when the view hierarchy contains one or several SurfaceView. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BlurRegion](https://developer.android.com/reference/kotlin/android/view/BlurRegion)!\> | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getBlurRegions()()` Returns the list of blur regions currently set on the SurfaceView. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BlurRegion](../android/view/BlurRegion.md)!\> | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getBlurRegions()()` Returns the list of blur regions currently set on the SurfaceView. |
 | --- | --- |
-| open [SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getChildSurfacePackage()()` Returns the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage` that was set on this SurfaceView. |
+| open [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getChildSurfacePackage()()` Returns the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage` that was set on this SurfaceView. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getCompositionOrder()()` Returns the composition order of the SurfaceView. |
-| open [SurfaceHolder](https://developer.android.com/reference/kotlin/android/view/SurfaceHolder)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getHolder()()` Return the SurfaceHolder providing access and control over this SurfaceView's underlying surface. |
+| open [SurfaceHolder](../android/view/SurfaceHolder.md)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getHolder()()` Return the SurfaceHolder providing access and control over this SurfaceView's underlying surface. |
 | --- | --- |
-| open [IBinder](https://developer.android.com/reference/kotlin/android/os/IBinder.html#)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getHostToken()()` A token used for constructing `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost`. |
+| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getHostToken()()` A token used for constructing `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getImportantForAccessibility()()` Gets the mode for determining whether this View is important for accessibility. |
-| open [SurfaceControl](https://developer.android.com/reference/kotlin/android/view/SurfaceControl)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getSurfaceControl()()` Return a SurfaceControl which can be used for parenting Surfaces to this SurfaceView. |
+| open [SurfaceControl](../android/view/SurfaceControl.md)! | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#getSurfaceControl()()` Return a SurfaceControl which can be used for parenting Surfaces to this SurfaceView. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#hasOverlappingRendering()()` Returns whether this View has content which overlaps. |
-| open [SurfaceControl.OnJankDataListenerRegistration](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListenerRegistration) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#registerOnJankDataListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.OnJankDataListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames. |
+| open [SurfaceControl.OnJankDataListenerRegistration](../android/view/SurfaceControl.OnJankDataListenerRegistration.md) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#registerOnJankDataListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.OnJankDataListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setAlpha(kotlin.Float)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` If the SurfaceView has a composition order greater than or equal to 0, (see `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setCompositionOrder(kotlin.Int)`), the alpha value set is applied directly to the Surface's content. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceView#setBlurRegions(kotlin.collections.MutableCollection)(blurRegions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/view/BlurRegion!>?)` Specifies a list of regions to be blurred on the SurfaceView's content. |
@@ -6416,7 +6416,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](https://developer.android.com/reference/kotlin/android/view/View#attr_android:focusable)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
 
 <br />
 
@@ -7219,7 +7219,7 @@ Adds a transaction that would be applied synchronously with displaying the Surfa
 
 | Parameters ||
 |---|---|
-| `transaction` | [SurfaceControl.Transaction](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction): The transaction to apply. The system takes ownership of the transaction and promises to eventually apply the transaction. This value cannot be `null`. |
+| `transaction` | [SurfaceControl.Transaction](../android/view/SurfaceControl.Transaction.md): The transaction to apply. The system takes ownership of the transaction and promises to eventually apply the transaction. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -7251,7 +7251,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): The Canvas to which the View is rendered. This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): The Canvas to which the View is rendered. This value cannot be `null`. |
 
 ### gatherTransparentRegion
 
@@ -7265,7 +7265,7 @@ This is used by the ViewRoot to perform an optimization when the view hierarchy 
 
 | Parameters ||
 |---|---|
-| `region` | [Region](https://developer.android.com/reference/kotlin/android/graphics/Region.html#)?: The transparent region for this ViewAncestor (window). This value may be `null`. |
+| `region` | [Region](../android/graphics/Region.md)?: The transparent region for this ViewAncestor (window). This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -7429,8 +7429,8 @@ Note that this is *not* equivalent to calling android.view.SurfaceControl#regist
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [SurfaceControl.OnJankDataListener](https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener): The listener to add. This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [SurfaceControl.OnJankDataListener](../android/view/SurfaceControl.OnJankDataListener.md): The listener to add. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7470,7 +7470,7 @@ The coordinates of `https://developer.android.com/reference/kotlin/android/view/
 
 | Parameters ||
 |---|---|
-| `blurRegions` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [BlurRegion](https://developer.android.com/reference/kotlin/android/view/BlurRegion)!\>?: collection of `https://developer.android.com/reference/kotlin/android/view/BlurRegion` objects to blur, or `null` to clear |
+| `blurRegions` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [BlurRegion](../android/view/BlurRegion.md)!\>?: collection of `https://developer.android.com/reference/kotlin/android/view/BlurRegion` objects to blur, or `null` to clear |
 
 | Exceptions ||
 |---|---|
@@ -7493,7 +7493,7 @@ Displays the view-hierarchy embedded within a `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `p` | [SurfaceControlViewHost.SurfacePackage](https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage): The SurfacePackage to embed. This value cannot be `null`. |
+| `p` | [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md): The SurfacePackage to embed. This value cannot be `null`. |
 
 ### setClipBounds
 
@@ -7507,7 +7507,7 @@ Sets a rectangular area on this view to which the view will be clipped when it i
 
 | Parameters ||
 |---|---|
-| `clipBounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!: The rectangular area, in the local coordinates of this view, to which future drawing operations will be clipped. |
+| `clipBounds` | [Rect](../android/graphics/Rect.md)!: The rectangular area, in the local coordinates of this view, to which future drawing operations will be clipped. |
 
 ### setCompositionOrder
 
@@ -7641,7 +7641,7 @@ Called by draw to draw the child views. This may be overridden by derived classe
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#): the canvas on which to draw the view. This value cannot be `null`. |
+| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which to draw the view. This value cannot be `null`. |
 
 ### onAttachedToWindow
 
@@ -7684,7 +7684,7 @@ If you override this method you *must* call through to the superclass implementa
 |---|---|
 | `gainFocus` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
-| `previouslyFocusedRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)?: This value may be `null`. |
+| `previouslyFocusedRect` | [Rect](../android/graphics/Rect.md)?: This value may be `null`. |
 | --- | --- |
 
 ### onMeasure

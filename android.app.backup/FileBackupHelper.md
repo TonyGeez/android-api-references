@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # FileBackupHelper
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/backup/FileBackupHelper "View this page in Java") 
+Kotlin| [Java](../android/app/backup/FileBackupHelper.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class FileBackupHelper : BackupHelper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.backup.FileBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper#) |
+| ↳ | [android.app.backup.FileBackupHelper](../android/app/backup/FileBackupHelper.md) |
 
-A helper class that can be used in conjunction with [android.app.backup.BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) to manage the backup of a set of files. Whenever backup is performed, all files changed since the last backup will be saved in their entirety. When backup first occurs, every file in the list provided to [FileBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper#FileBackupHelper(android.content.Context,%20kotlin.String))will be backed up.
+A helper class that can be used in conjunction with [android.app.backup.BackupAgentHelper](../android/app/backup/BackupAgentHelper.md) to manage the backup of a set of files. Whenever backup is performed, all files changed since the last backup will be saved in their entirety. When backup first occurs, every file in the list provided to [FileBackupHelper](../android/app/backup/FileBackupHelper.md))will be backed up.
 
 During restore, if the helper encounters data for a file that was not specified when the FileBackupHelper object was constructed, that data will be ignored.
 
@@ -25,13 +25,13 @@ During restore, if the helper encounters data for a file that was not specified 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FileBackupHelper](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper#FileBackupHelper(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `vararg` `files:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a helper to manage backup/restore of entire files within the application's data directory hierarchy. |
+| [FileBackupHelper](../android/app/backup/FileBackupHelper.md))`(`context:` ` [Context](../android/content/Context.md)!`, `vararg` `files:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a helper to manage backup/restore of entire files within the application's data directory hierarchy. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [performBackup](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper#performBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor))`(`oldState:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`, `data:` ` [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!`, `newState:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`)` Based on`oldState`, determine which of the files from the application's data directory need to be backed up, write them to the data stream, and fill in`newState`with the state as it exists now. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreEntity](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper#restoreEntity(android.app.backup.BackupDataInputStream))`(`data:` ` [BackupDataInputStream](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream)!`)` Restore one record \[representing a single file\] from the restore dataset. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNewStateDescription](https://developer.android.com/reference/kotlin/android/app/backup/FileBackupHelper#writeNewStateDescription(android.os.ParcelFileDescriptor))`(`fd:` ` [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [performBackup](../android/app/backup/FileBackupHelper.md))`(`oldState:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!`, `data:` ` [BackupDataOutput](../android/app/backup/BackupDataOutput.md)!`, `newState:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!`)` Based on`oldState`, determine which of the files from the application's data directory need to be backed up, write them to the data stream, and fill in`newState`with the state as it exists now. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreEntity](../android/app/backup/FileBackupHelper.md))`(`data:` ` [BackupDataInputStream](../android/app/backup/BackupDataInputStream.md)!`)` Restore one record \[representing a single file\] from the restore dataset. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNewStateDescription](../android/app/backup/FileBackupHelper.md))`(`fd:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!`)` <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -50,7 +50,7 @@ Construct a helper to manage backup/restore of entire files within the applicati
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The backup agent's Context object |
+| `context` | [Context](../android/content/Context.md)!:The backup agent's Context object |
 | `files` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A list of the files to be backed up or restored. |
 
 ## Public methods
@@ -69,13 +69,13 @@ open fun performBackup(
 
 Based on`oldState`, determine which of the files from the application's data directory need to be backed up, write them to the data stream, and fill in`newState`with the state as it exists now. When`oldState`is`null`, all the files will be backed up.
 
-This should only be called directly from within the [BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) implementation. See [android.app.backup.BackupAgent#onBackup(ParcelFileDescriptor, BackupDataOutput, ParcelFileDescriptor)](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor))for a description of parameter meanings.
+This should only be called directly from within the [BackupAgentHelper](../android/app/backup/BackupAgentHelper.md) implementation. See [android.app.backup.BackupAgent#onBackup(ParcelFileDescriptor, BackupDataOutput, ParcelFileDescriptor)](../android/app/backup/BackupAgent.md))for a description of parameter meanings.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `oldState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!:An open, read-only [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) pointing to the last backup state provided by the application. May be`null`, in which case no prior state is being provided and the application should perform a full backup. |
-| `data` | [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput)!:An open, read/write [BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput) pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
-| `newState` | [ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)!:An open, read/write [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) pointing to an empty file. The application should record the final backup state here after writing the requested data to the`data`output stream. |
+| `oldState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!:An open, read-only [android.os.ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) pointing to the last backup state provided by the application. May be`null`, in which case no prior state is being provided and the application should perform a full backup. |
+| `data` | [BackupDataOutput](../android/app/backup/BackupDataOutput.md)!:An open, read/write [BackupDataOutput](../android/app/backup/BackupDataOutput.md) pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
+| `newState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!:An open, read/write [android.os.ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) pointing to an empty file. The application should record the final backup state here after writing the requested data to the`data`output stream. |
 | --- | --- |
 
 ### restoreEntity
@@ -88,11 +88,11 @@ open fun restoreEntity(data: BackupDataInputStream!): Unit
 
 Restore one record \[representing a single file\] from the restore dataset.
 
-This should only be called directly from within the [BackupAgentHelper](https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper) implementation.
+This should only be called directly from within the [BackupAgentHelper](../android/app/backup/BackupAgentHelper.md) implementation.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `data` | [BackupDataInputStream](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream)!:An open [BackupDataInputStream](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInputStream) from which the backup data can be read. |
+| `data` | [BackupDataInputStream](../android/app/backup/BackupDataInputStream.md)!:An open [BackupDataInputStream](../android/app/backup/BackupDataInputStream.md) from which the backup data can be read. |
 
 ### writeNewStateDescription
 
@@ -104,4 +104,4 @@ open fun writeNewStateDescription(fd: ParcelFileDescriptor!): Unit
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newState` | A [android.os.ParcelFileDescriptor](https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#) to which the new state will be written. |
+| `newState` | A [android.os.ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) to which the new state will be written. |

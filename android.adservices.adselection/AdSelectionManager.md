@@ -10,7 +10,7 @@ open class AdSelectionManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adselection.AdSelectionManager](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#) |
+| ↳ | [android.adservices.adselection.AdSelectionManager](../android/adservices/adselection/AdSelectionManager.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -23,9 +23,9 @@ AdSelection Manager provides APIs for app and ad-SDKs to run ad selection proces
 
 | Public methods ||
 |---|---|
-| open static [AdSelectionManager](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method for creating an instance of AdSelectionManager. |
+| open static [AdSelectionManager](../android/adservices/adselection/AdSelectionManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method for creating an instance of AdSelectionManager. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Collects custom audience data from device. |
-| open [TestAdSelectionManager](https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getTestAdSelectionManager()()` <br /> |
+| open [TestAdSelectionManager](../android/adservices/adselection/TestAdSelectionManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getTestAdSelectionManager()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#persistAdSelectionResult(android.adservices.adselection.PersistAdSelectionResultRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Persists the ad selection results from the server-side. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#reportEvent(android.adservices.adselection.ReportEventRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Notifies the service that there is a new ad event to report for the ad selected by the ad-selection run identified by `adSelectionId`. |
@@ -55,7 +55,7 @@ Factory method for creating an instance of AdSelectionManager.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#): The `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use. This value cannot be `null`. |
+| `context` | [Context](../android/content/Context.md): The `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -98,9 +98,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [GetAdSelectionDataRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [GetAdSelectionDataOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `request` | [GetAdSelectionDataRequest](../android/adservices/adselection/GetAdSelectionDataRequest.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [GetAdSelectionDataOutcome](../android/adservices/adselection/GetAdSelectionDataOutcome.md)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### getTestAdSelectionManager
@@ -154,9 +154,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [PersistAdSelectionResultRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [AdSelectionOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `request` | [PersistAdSelectionResultRequest](../android/adservices/adselection/PersistAdSelectionResultRequest.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [AdSelectionOutcome](../android/adservices/adselection/AdSelectionOutcome.md)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### reportEvent
@@ -194,9 +194,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [ReportEventRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `request` | [ReportEventRequest](../android/adservices/adselection/ReportEventRequest.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### reportImpression
@@ -260,9 +260,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [ReportImpressionRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `request` | [ReportImpressionRequest](../android/adservices/adselection/ReportImpressionRequest.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### selectAds
@@ -312,9 +312,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `adSelectionConfig` | [AdSelectionConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [AdSelectionOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `adSelectionConfig` | [AdSelectionConfig](../android/adservices/adselection/AdSelectionConfig.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [AdSelectionOutcome](../android/adservices/adselection/AdSelectionOutcome.md)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### selectAds
@@ -367,9 +367,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `adSelectionFromOutcomesConfig` | [AdSelectionFromOutcomesConfig](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [AdSelectionOutcome](https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `adSelectionFromOutcomesConfig` | [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [AdSelectionOutcome](../android/adservices/adselection/AdSelectionOutcome.md)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### setAppInstallAdvertisers
@@ -405,9 +405,9 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `request` | [SetAppInstallAdvertisersRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/SetAppInstallAdvertisersRequest): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. |
-| `receiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `request` | [SetAppInstallAdvertisersRequest](../android/adservices/adselection/SetAppInstallAdvertisersRequest.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### updateAdCounterHistogram
@@ -446,7 +446,7 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 
 | Parameters ||
 |---|---|
-| `updateAdCounterHistogramRequest` | [UpdateAdCounterHistogramRequest](https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest): This value cannot be `null`. |
-| `executor` | [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `outcomeReceiver` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#)!\>: This value cannot be `null`. |
+| `updateAdCounterHistogramRequest` | [UpdateAdCounterHistogramRequest](../android/adservices/adselection/UpdateAdCounterHistogramRequest.md): This value cannot be `null`. |
+| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `outcomeReceiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java/lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |

@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # TargetUser
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/admin/TargetUser "View this page in Java") 
+Kotlin| [Java](../android/app/admin/TargetUser.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ class TargetUser
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.TargetUser](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#) |
+| ↳ | [android.app.admin.TargetUser](../android/app/admin/TargetUser.md) |
 
-Class representing the target user of a policy set by an admin (set from [DevicePolicyManager](https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager)), this is passed in to [PolicyUpdateReceiver.onPolicySetResult](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateReceiver#onPolicySetResult(android.content.Context,%20kotlin.String,%20android.os.Bundle,%20android.app.admin.TargetUser,%20android.app.admin.PolicyUpdateResult))and [PolicyUpdateReceiver.onPolicyChanged](https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateReceiver#onPolicyChanged(android.content.Context,%20kotlin.String,%20android.os.Bundle,%20android.app.admin.TargetUser,%20android.app.admin.PolicyUpdateResult)).
+Class representing the target user of a policy set by an admin (set from [DevicePolicyManager](../android/app/admin/DevicePolicyManager.md)), this is passed in to [PolicyUpdateReceiver.onPolicySetResult](../android/app/admin/PolicyUpdateReceiver.md))and [PolicyUpdateReceiver.onPolicyChanged](../android/app/admin/PolicyUpdateReceiver.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#hashCode())`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/admin/TargetUser.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/admin/TargetUser.md))`()` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TargetUser](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#) | [GLOBAL](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#GLOBAL:android.app.admin.TargetUser) This indicates the policy is a global policy. |
-| static [TargetUser](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#) | [LOCAL_USER](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#LOCAL_USER:android.app.admin.TargetUser) Indicates that the policy relates to the user the admin is installed on. |
-| static [TargetUser](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#) | [PARENT_USER](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#PARENT_USER:android.app.admin.TargetUser) For admins of profiles, this indicates that the policy relates to the parent profile. |
+| static [TargetUser](../android/app/admin/TargetUser.md) | [GLOBAL](../android/app/admin/TargetUser.md) This indicates the policy is a global policy. |
+| static [TargetUser](../android/app/admin/TargetUser.md) | [LOCAL_USER](../android/app/admin/TargetUser.md) Indicates that the policy relates to the user the admin is installed on. |
+| static [TargetUser](../android/app/admin/TargetUser.md) | [PARENT_USER](../android/app/admin/TargetUser.md) For admins of profiles, this indicates that the policy relates to the parent profile. |
 | --- | --- |
-| static [TargetUser](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#) | [UNKNOWN_USER](https://developer.android.com/reference/kotlin/android/app/admin/TargetUser#UNKNOWN_USER:android.app.admin.TargetUser) Indicates that the policy relates to some unknown user on the device. |
+| static [TargetUser](../android/app/admin/TargetUser.md) | [UNKNOWN_USER](../android/app/admin/TargetUser.md) Indicates that the policy relates to some unknown user on the device. |
 
 ## Public methods
 

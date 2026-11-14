@@ -9,7 +9,7 @@ open class DoubleAccumulator : Number, Serializable
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.util.concurrent.atomic.DoubleAccumulator](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#) |
+| | ↳ | [java.util.concurrent.atomic.DoubleAccumulator](../java/util/concurrent/atomic/DoubleAccumulator.md) |
 
 One or more variables that together maintain a running `double` value updated using a supplied function. When updates (method `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#accumulate(kotlin.Double)`) are contended across threads, the set of variables may grow dynamically to reduce contention. Method `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()` (or, equivalently, `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toDouble()`) returns the current value across the variables maintaining updates.
 
@@ -35,10 +35,10 @@ This class extends `https://developer.android.com/reference/kotlin/java/lang/Num
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#reset()()` Resets variables maintaining updates to the identity value. |
 | open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toDouble()()` Equivalent to `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()`. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toFloat()()` Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()) as a `float` after a narrowing primitive conversion. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toFloat()()` Returns the [current value](../java/util/concurrent/atomic/DoubleAccumulator.md)) as a `float` after a narrowing primitive conversion. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toInt()()` Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()) as an `int` after a narrowing primitive conversion. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toLong()()` Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()) as a `long` after a narrowing primitive conversion. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toInt()()` Returns the [current value](../java/util/concurrent/atomic/DoubleAccumulator.md)) as an `int` after a narrowing primitive conversion. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toLong()()` Returns the [current value](../java/util/concurrent/atomic/DoubleAccumulator.md)) as a `long` after a narrowing primitive conversion. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toString()()` {@return the String representation of the current value} |
 | --- | --- |
 
@@ -58,7 +58,7 @@ Creates a new instance using the given accumulator function and identity element
 
 | Parameters ||
 |---|---|
-| `accumulatorFunction` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)!: a side-effect-free function of two arguments |
+| `accumulatorFunction` | [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)!: a side-effect-free function of two arguments |
 | `identity` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html): identity (initial value) for the accumulator function |
 
 ## Public methods
@@ -137,7 +137,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toFloat(): Float
 ```
 
-Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()) as a `float` after a narrowing primitive conversion.
+Returns the [current value](../java/util/concurrent/atomic/DoubleAccumulator.md)) as a `float` after a narrowing primitive conversion.
 
 | Return ||
 |---|---|
@@ -151,7 +151,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toInt(): Int
 ```
 
-Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()) as an `int` after a narrowing primitive conversion.
+Returns the [current value](../java/util/concurrent/atomic/DoubleAccumulator.md)) as an `int` after a narrowing primitive conversion.
 
 | Return ||
 |---|---|
@@ -165,7 +165,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toLong(): Long
 ```
 
-Returns the [current value](https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()) as a `long` after a narrowing primitive conversion.
+Returns the [current value](../java/util/concurrent/atomic/DoubleAccumulator.md)) as a `long` after a narrowing primitive conversion.
 
 | Return ||
 |---|---|

@@ -4,14 +4,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # OnMenuItemClickListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/ActionMenuView.OnMenuItemClickListener "View this page in Java") 
+Kotlin| [Java](../android/widget/ActionMenuView.OnMenuItemClickListener.md) 
 | --- | --- |
 
 ```
 interface OnMenuItemClickListener
 ```
 
-| [android.widget.ActionMenuView.OnMenuItemClickListener](https://developer.android.com/reference/kotlin/android/widget/ActionMenuView.OnMenuItemClickListener#) |
+| [android.widget.ActionMenuView.OnMenuItemClickListener](../android/widget/ActionMenuView.OnMenuItemClickListener.md) |
 
 Interface responsible for receiving menu item click events if the items themselves do not have individual item click listeners.
 
@@ -19,7 +19,7 @@ Interface responsible for receiving menu item click events if the items themselv
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onMenuItemClick](https://developer.android.com/reference/kotlin/android/widget/ActionMenuView.OnMenuItemClickListener#onMenuItemClick(android.view.MenuItem))`(`item:` ` [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#)!`)` This method will be invoked when a menu item is clicked if the item itself did not already handle the event. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onMenuItemClick](../android/widget/ActionMenuView.OnMenuItemClickListener.md))`(`item:` ` [MenuItem](../android/view/MenuItem.md)!`)` This method will be invoked when a menu item is clicked if the item itself did not already handle the event. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ This method will be invoked when a menu item is clicked if the item itself did n
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `item` | [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#)!: [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html#) that was clicked |
+| `item` | [MenuItem](../android/view/MenuItem.md)!: [MenuItem](../android/view/MenuItem.md) that was clicked |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|

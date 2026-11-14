@@ -11,11 +11,11 @@ open class WritePendingException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#) ||
-| | | | | ↳ | [java.nio.channels.WritePendingException](https://developer.android.com/reference/kotlin/java/nio/channels/WritePendingException#) |
+| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.WritePendingException](../java/nio/channels/WritePendingException.md) |
 
 Unchecked exception thrown when an attempt is made to write to an asynchronous socket channel and a previous write has not completed.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to write to an asynchronous s
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WritePendingException](https://developer.android.com/reference/kotlin/java/nio/channels/WritePendingException#WritePendingException())`()` Constructs an instance of this class. |
+| [WritePendingException](../java/nio/channels/WritePendingException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

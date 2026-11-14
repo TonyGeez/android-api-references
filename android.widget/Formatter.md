@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # Formatter
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/NumberPicker.Formatter "View this page in Java") 
+Kotlin| [Java](../android/widget/NumberPicker.Formatter.md) 
 | --- | --- |
 
 ```
 interface Formatter
 ```
 
-| [android.widget.NumberPicker.Formatter](https://developer.android.com/reference/kotlin/android/widget/NumberPicker.Formatter#) |
+| [android.widget.NumberPicker.Formatter](../android/widget/NumberPicker.Formatter.md) |
 
 Interface used to format current value into a string for presentation.
 
@@ -19,7 +19,7 @@ Interface used to format current value into a string for presentation.
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/android/widget/NumberPicker.Formatter#format(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a string representation of the current value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/widget/NumberPicker.Formatter.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a string representation of the current value. |
 
 ## Public methods
 

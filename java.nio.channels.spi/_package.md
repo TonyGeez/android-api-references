@@ -4,11 +4,11 @@
 
 ## Classes
 
-| [AbstractInterruptibleChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractInterruptibleChannel) | Base implementation class for interruptible channels. |
+| [AbstractInterruptibleChannel](../java/nio/channels/spi/AbstractInterruptibleChannel.md) | Base implementation class for interruptible channels. |
 | --- | --- |
-| [AbstractSelectableChannel](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectableChannel) | Base implementation class for selectable channels. |
-| [AbstractSelectionKey](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelectionKey) | Base implementation class for selection keys. |
-| [AbstractSelector](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AbstractSelector) | Base implementation class for selectors. |
+| [AbstractSelectableChannel](../java/nio/channels/spi/AbstractSelectableChannel.md) | Base implementation class for selectable channels. |
+| [AbstractSelectionKey](../java/nio/channels/spi/AbstractSelectionKey.md) | Base implementation class for selection keys. |
+| [AbstractSelector](../java/nio/channels/spi/AbstractSelector.md) | Base implementation class for selectors. |
 | --- | --- |
-| [AsynchronousChannelProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider) | Service-provider class for asynchronous channels. |
-| [SelectorProvider](https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider) | Service-provider class for selectors and selectable channels. |
+| [AsynchronousChannelProvider](../java/nio/channels/spi/AsynchronousChannelProvider.md) | Service-provider class for asynchronous channels. |
+| [SelectorProvider](../java/nio/channels/spi/SelectorProvider.md) | Service-provider class for selectors and selectable channels. |

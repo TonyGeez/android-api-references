@@ -4,14 +4,14 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # OnSessionLostStateListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/MediaDrm.OnSessionLostStateListener "View this page in Java") 
+Kotlin| [Java](../android/media/MediaDrm.OnSessionLostStateListener.md) 
 | --- | --- |
 
 ```
 interface OnSessionLostStateListener
 ```
 
-| [android.media.MediaDrm.OnSessionLostStateListener](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnSessionLostStateListener#) |
+| [android.media.MediaDrm.OnSessionLostStateListener](../android/media/MediaDrm.OnSessionLostStateListener.md) |
 
 Interface definition for a callback to be invoked when the session state has been lost and is now invalid
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the session state has bee
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSessionLostState](https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnSessionLostStateListener#onSessionLostState(android.media.MediaDrm,%20kotlin.ByteArray))`(`md:` ` [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Called when session state has lost state, to inform the app about the condition so it can close the session and open a new one to resume operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSessionLostState](../android/media/MediaDrm.OnSessionLostStateListener.md))`(`md:` ` [MediaDrm](../android/media/MediaDrm.md)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Called when session state has lost state, to inform the app about the condition so it can close the session and open a new one to resume operation. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called when session state has lost state, to inform the app about the condition 
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `md` | [MediaDrm](https://developer.android.com/reference/kotlin/android/media/MediaDrm):the MediaDrm object on which the event occurred This value cannot be`null`. |
+| `md` | [MediaDrm](../android/media/MediaDrm.md):the MediaDrm object on which the event occurred This value cannot be`null`. |
 | `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the DRM session ID on which the event occurred This value cannot be`null`. |

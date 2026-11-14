@@ -10,8 +10,8 @@ open class NodeChangeEvent : EventObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) ||
-| | ↳ | [java.util.prefs.NodeChangeEvent](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeEvent#) |
+| ↳ | [java.util.EventObject](../java/util/EventObject.md) ||
+| | ↳ | [java.util.prefs.NodeChangeEvent](../java/util/prefs/NodeChangeEvent.md) |
 
 An event emitted by a Preferences node to indicate that a child of that node has been added or removed.
 
@@ -21,20 +21,20 @@ Note, that although NodeChangeEvent inherits Serializable interface from java.ut
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NodeChangeEvent](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeEvent#NodeChangeEvent(java.util.prefs.Preferences,%20java.util.prefs.Preferences))`(`parent:` ` [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)!`, `child:` ` [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)!`)` Constructs a new`NodeChangeEvent`instance. |
+| [NodeChangeEvent](../java/util/prefs/NodeChangeEvent.md))`(`parent:` ` [Preferences](../java/util/prefs/Preferences.md)!`, `child:` ` [Preferences](../java/util/prefs/Preferences.md)!`)` Constructs a new`NodeChangeEvent`instance. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)! | [getChild](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeEvent#getChild())`()` Returns the node that was added or removed. |
-| open [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)! | [getParent](https://developer.android.com/reference/kotlin/java/util/prefs/NodeChangeEvent#getParent())`()` Returns the parent of the node that was added or removed. |
+| open [Preferences](../java/util/prefs/Preferences.md)! | [getChild](../java/util/prefs/NodeChangeEvent.md))`()` Returns the node that was added or removed. |
+| open [Preferences](../java/util/prefs/Preferences.md)! | [getParent](../java/util/prefs/NodeChangeEvent.md))`()` Returns the parent of the node that was added or removed. |
 
 | Inherited functions ||
 |---|---|
-| From class [EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](https://developer.android.com/reference/kotlin/java/util/EventObject.html#getSource())`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/EventObject.html#toString())`()` <br /> Returns a String representation of this EventObject. <br /> | ||
+| From class [EventObject](../java/util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java/util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [EventObject](https://developer.android.com/reference/kotlin/java/util/EventObject.html#) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](https://developer.android.com/reference/kotlin/java/util/EventObject.html#source:kotlin.Any) <br /> The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java/util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
 
 ## Public constructors
 
@@ -52,8 +52,8 @@ Constructs a new`NodeChangeEvent`instance.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)!:The parent of the node that was added or removed. |
-| `child` | [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)!:The node that was added or removed. |
+| `parent` | [Preferences](../java/util/prefs/Preferences.md)!:The parent of the node that was added or removed. |
+| `child` | [Preferences](../java/util/prefs/Preferences.md)!:The node that was added or removed. |
 
 ## Public methods
 
@@ -69,7 +69,7 @@ Returns the node that was added or removed.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------|
-| [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)! | The node that was added or removed. |
+| [Preferences](../java/util/prefs/Preferences.md)! | The node that was added or removed. |
 
 ### getParent
 
@@ -83,4 +83,4 @@ Returns the parent of the node that was added or removed.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [Preferences](https://developer.android.com/reference/kotlin/java/util/prefs/Preferences)! | The parent Preferences node whose child was added or removed |
+| [Preferences](../java/util/prefs/Preferences.md)! | The parent Preferences node whose child was added or removed |

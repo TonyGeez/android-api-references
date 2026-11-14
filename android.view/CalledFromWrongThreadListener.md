@@ -6,7 +6,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 interface CalledFromWrongThreadListener
 ```
 
-| [android.view.View.CalledFromWrongThreadListener](https://developer.android.com/reference/kotlin/android/view/View.CalledFromWrongThreadListener#) |
+| [android.view.View.CalledFromWrongThreadListener](../android/view/View.CalledFromWrongThreadListener.md) |
 
 A listener that is notified when certain View APIs are called from the wrong thread.
 

@@ -8,7 +8,7 @@ open class BackupDataOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.backup.BackupDataOutput](https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#) |
+| ↳ | [android.app.backup.BackupDataOutput](../android/app/backup/BackupDataOutput.md) |
 
 Provides the structured interface through which a `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` commits information to the backup data set, via its `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor)` method. Data written for backup is presented as a set of "entities," key/value pairs in which each binary data record "value" is named with a string "key."
 

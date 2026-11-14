@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # VisibilitySetterAction
 
-Kotlin | [Java](https://developer.android.com/reference/android/service/autofill/VisibilitySetterAction "View this page in Java")
+Kotlin | [Java](../android/service/autofill/VisibilitySetterAction.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class VisibilitySetterAction : OnClickAction, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.VisibilitySetterAction](https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#) |
+| ↳ | [android.service.autofill.VisibilitySetterAction](../android/service/autofill/VisibilitySetterAction.md) |
 
 Action used to change the visibility of other child view in a `https://developer.android.com/reference/kotlin/android/service/autofill/CustomDescription` `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#`.
 
@@ -36,7 +36,7 @@ See `https://developer.android.com/reference/kotlin/android/service/autofill/Cus
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [VisibilitySetterAction](https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#)!\> | `https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VisibilitySetterAction](../android/service/autofill/VisibilitySetterAction.md)!\> | `https://developer.android.com/reference/kotlin/android/service/autofill/VisibilitySetterAction#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

@@ -4,23 +4,23 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # OnSuggestionListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/widget/SearchView.OnSuggestionListener "View this page in Java") 
+Kotlin| [Java](../android/widget/SearchView.OnSuggestionListener.md) 
 | --- | --- |
 
 ```
 interface OnSuggestionListener
 ```
 
-| [android.widget.SearchView.OnSuggestionListener](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnSuggestionListener#) |
+| [android.widget.SearchView.OnSuggestionListener](../android/widget/SearchView.OnSuggestionListener.md) |
 
-Callback interface for selection events on suggestions. These callbacks are only relevant when a SearchableInfo has been specified by [setSearchableInfo](https://developer.android.com/reference/kotlin/android/widget/SearchView#setSearchableInfo(android.app.SearchableInfo)).
+Callback interface for selection events on suggestions. These callbacks are only relevant when a SearchableInfo has been specified by [setSearchableInfo](../android/widget/SearchView.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onSuggestionClick](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnSuggestionListener#onSuggestionClick(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a suggestion was clicked. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onSuggestionSelect](https://developer.android.com/reference/kotlin/android/widget/SearchView.OnSuggestionListener#onSuggestionSelect(kotlin.Int))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a suggestion was selected by navigating to it. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onSuggestionClick](../android/widget/SearchView.OnSuggestionListener.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a suggestion was clicked. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onSuggestionSelect](../android/widget/SearchView.OnSuggestionListener.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a suggestion was selected by navigating to it. |
 
 ## Public methods
 

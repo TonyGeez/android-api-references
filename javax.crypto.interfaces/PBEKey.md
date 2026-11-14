@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface PBEKey : SecretKey
 ```
 
-| [javax.crypto.interfaces.PBEKey](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#) |
+| [javax.crypto.interfaces.PBEKey](../javax/crypto/interfaces/PBEKey.md) |
 
 The interface to a PBE key.
 
@@ -16,13 +16,13 @@ The interface to a PBE key.
 
 | Constants ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#serialVersionUID:kotlin.Long) The class fingerprint that is set to indicate serialization compatibility since J2SE 1. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../javax/crypto/interfaces/PBEKey.md) The class fingerprint that is set to indicate serialization compatibility since J2SE 1. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#getIterationCount())`()` Returns the iteration count or 0 if not specified. |
-| abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#getPassword())`()` Returns the password. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](https://developer.android.com/reference/kotlin/javax/crypto/interfaces/PBEKey#getSalt())`()` Returns the salt or null if not specified. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](../javax/crypto/interfaces/PBEKey.md))`()` Returns the iteration count or 0 if not specified. |
+| abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](../javax/crypto/interfaces/PBEKey.md))`()` Returns the password. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](../javax/crypto/interfaces/PBEKey.md))`()` Returns the salt or null if not specified. |
 | --- | --- |
 
 ## Constants

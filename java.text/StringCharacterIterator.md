@@ -10,7 +10,7 @@ class StringCharacterIterator : CharacterIterator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#) |
+| ↳ | [java.text.StringCharacterIterator](../java/text/StringCharacterIterator.md) |
 
 `StringCharacterIterator`implements the`CharacterIterator`protocol for a`String`. The`StringCharacterIterator`class iterates over the entire`String`.
 
@@ -18,33 +18,33 @@ class StringCharacterIterator : CharacterIterator
 
 | Inherited constants ||
 |---|---|
-| From class [CharacterIterator](https://developer.android.com/reference/kotlin/java/text/CharacterIterator) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [DONE](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#DONE:kotlin.Char) <br /> Constant that is returned when the iterator has reached either the end or the beginning of the text. The value is '\\\\uFFFF', the "not a character" value which should not occur in any valid Unicode string. <br /> | ||
+| From class [CharacterIterator](../java/text/CharacterIterator.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [DONE](../java/text/CharacterIterator.md) <br /> Constant that is returned when the iterator has reached either the end or the beginning of the text. The value is '\\\\uFFFF', the "not a character" value which should not occur in any valid Unicode string. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#StringCharacterIterator(kotlin.String))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an iterator with an initial index of 0. |
-| [StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#StringCharacterIterator(kotlin.String,%20kotlin.Int))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an iterator with the specified initial index. |
-| [StringCharacterIterator](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#StringCharacterIterator(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `begin:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an iterator over the given range of the given string, with the index set at the specified position. |
+| [StringCharacterIterator](../java/text/StringCharacterIterator.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an iterator with an initial index of 0. |
+| [StringCharacterIterator](../java/text/StringCharacterIterator.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an iterator with the specified initial index. |
+| [StringCharacterIterator](../java/text/StringCharacterIterator.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `begin:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an iterator over the given range of the given string, with the index set at the specified position. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#clone())`()` Creates a copy of this iterator. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [current](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#current())`()` Implements CharacterIterator. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the equality of two StringCharacterIterator objects. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/StringCharacterIterator.md))`()` Creates a copy of this iterator. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [current](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/StringCharacterIterator.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the equality of two StringCharacterIterator objects. |
 | --- | --- |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [first](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#first())`()` Implements CharacterIterator. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#getBeginIndex())`()` Implements CharacterIterator. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#getEndIndex())`()` Implements CharacterIterator. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [first](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#getIndex())`()` Implements CharacterIterator. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#hashCode())`()` Computes a hashcode for this iterator. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [last](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#last())`()` Implements CharacterIterator. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/text/StringCharacterIterator.md))`()` Computes a hashcode for this iterator. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [last](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
 | --- | --- |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [next](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#next())`()` Implements CharacterIterator. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [previous](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#previous())`()` Implements CharacterIterator. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [setIndex](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#setIndex(kotlin.Int))`(`p:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implements CharacterIterator. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [next](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [previous](../java/text/StringCharacterIterator.md))`()` Implements CharacterIterator. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [setIndex](../java/text/StringCharacterIterator.md))`(`p:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implements CharacterIterator. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](https://developer.android.com/reference/kotlin/java/text/StringCharacterIterator#setText(kotlin.String))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Reset this iterator to point to a new string. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../java/text/StringCharacterIterator.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Reset this iterator to point to a new string. |
 
 ## Public constructors
 
@@ -137,7 +137,7 @@ Implements CharacterIterator.current() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#current](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#current()) 
+- [java.text.CharacterIterator#current](../java/text/CharacterIterator.md)) 
 
 ### equals
 
@@ -173,7 +173,7 @@ Implements CharacterIterator.first() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#first](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#first()) 
+- [java.text.CharacterIterator#first](../java/text/CharacterIterator.md)) 
 
 ### getBeginIndex
 
@@ -191,7 +191,7 @@ Implements CharacterIterator.getBeginIndex() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#getBeginIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getBeginIndex()) 
+- [java.text.CharacterIterator#getBeginIndex](../java/text/CharacterIterator.md)) 
 
 ### getEndIndex
 
@@ -209,7 +209,7 @@ Implements CharacterIterator.getEndIndex() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#getEndIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getEndIndex()) 
+- [java.text.CharacterIterator#getEndIndex](../java/text/CharacterIterator.md)) 
 
 ### getIndex
 
@@ -227,7 +227,7 @@ Implements CharacterIterator.getIndex() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#getIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#getIndex()) 
+- [java.text.CharacterIterator#getIndex](../java/text/CharacterIterator.md)) 
 
 ### hashCode
 
@@ -259,7 +259,7 @@ Implements CharacterIterator.last() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#last](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#last()) 
+- [java.text.CharacterIterator#last](../java/text/CharacterIterator.md)) 
 
 ### next
 
@@ -277,7 +277,7 @@ Implements CharacterIterator.next() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#next](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#next()) 
+- [java.text.CharacterIterator#next](../java/text/CharacterIterator.md)) 
 
 ### previous
 
@@ -295,7 +295,7 @@ Implements CharacterIterator.previous() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#previous](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#previous()) 
+- [java.text.CharacterIterator#previous](../java/text/CharacterIterator.md)) 
 
 ### setIndex
 
@@ -317,7 +317,7 @@ Implements CharacterIterator.setIndex() for String.
 
 **See Also**
 
-- [java.text.CharacterIterator#setIndex](https://developer.android.com/reference/kotlin/java/text/CharacterIterator#setIndex(kotlin.Int)) 
+- [java.text.CharacterIterator#setIndex](../java/text/CharacterIterator.md)) 
 
 ### setText
 

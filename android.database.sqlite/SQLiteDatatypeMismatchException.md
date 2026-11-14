@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # SQLiteDatatypeMismatchException
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/sqlite/SQLiteDatatypeMismatchException "View this page in Java") 
+Kotlin| [Java](../android/database/sqlite/SQLiteDatatypeMismatchException.md) 
 | --- | --- |
 
 ```
@@ -14,20 +14,20 @@ open class SQLiteDatatypeMismatchException : SQLiteException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.SQLException](https://developer.android.com/reference/kotlin/android/database/SQLException.html#) |||
-| | | | | ↳ | [android.database.sqlite.SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) ||
-| | | | | | ↳ | [android.database.sqlite.SQLiteDatatypeMismatchException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatatypeMismatchException#) |
+| | | | ↳ | [android.database.SQLException](../android/database/SQLException.md) |||
+| | | | | ↳ | [android.database.sqlite.SQLiteException](../android/database/sqlite/SQLiteException.md) ||
+| | | | | | ↳ | [android.database.sqlite.SQLiteDatatypeMismatchException](../android/database/sqlite/SQLiteDatatypeMismatchException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteDatatypeMismatchException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatatypeMismatchException#SQLiteDatatypeMismatchException())`()` <br /> |
-| [SQLiteDatatypeMismatchException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatatypeMismatchException#SQLiteDatatypeMismatchException(kotlin.String))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SQLiteDatatypeMismatchException](../android/database/sqlite/SQLiteDatatypeMismatchException.md))`()` <br /> |
+| [SQLiteDatatypeMismatchException](../android/database/sqlite/SQLiteDatatypeMismatchException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

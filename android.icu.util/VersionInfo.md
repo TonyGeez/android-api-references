@@ -8,7 +8,7 @@ class VersionInfo : Comparable<VersionInfo!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#) |
+| ↳ | [android.icu.util.VersionInfo](../android/icu/util/VersionInfo.md) |
 
 Class to store version numbers of the form major.minor.milli.micro.
 
@@ -18,13 +18,13 @@ Class to store version numbers of the form major.minor.milli.micro.
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#compareTo(android.icu.util.VersionInfo)(other: https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#!)` Compares other with this VersionInfo. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this version information is equals to the argument version |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, milli: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, milli: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, micro: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, milli: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, milli: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, micro: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.String)(version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.String)(version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns an instance of VersionInfo with the argument version. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getMajor()()` Returns the major version number |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getMicro()()` Returns the micro version number |
 | --- | --- |
@@ -36,59 +36,59 @@ Class to store version numbers of the form major.minor.milli.micro.
 
 | Properties ||
 |---|---|
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#ICU_VERSION:android.icu.util.VersionInfo` ICU4J current release version |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UCOL_BUILDER_VERSION:android.icu.util.VersionInfo` Collation builder code version. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UCOL_RUNTIME_VERSION:android.icu.util.VersionInfo` Collation runtime version (sort key generator, string comparisons). |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#ICU_VERSION:android.icu.util.VersionInfo` ICU4J current release version |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UCOL_BUILDER_VERSION:android.icu.util.VersionInfo` Collation builder code version. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UCOL_RUNTIME_VERSION:android.icu.util.VersionInfo` Collation runtime version (sort key generator, string comparisons). |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_10_0:android.icu.util.VersionInfo` Unicode 10. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_11_0:android.icu.util.VersionInfo` Unicode 11. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_12_0:android.icu.util.VersionInfo` Unicode 12. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_10_0:android.icu.util.VersionInfo` Unicode 10. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_11_0:android.icu.util.VersionInfo` Unicode 11. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_12_0:android.icu.util.VersionInfo` Unicode 12. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_12_1:android.icu.util.VersionInfo` Unicode 12. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_13_0:android.icu.util.VersionInfo` Unicode 13. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_14_0:android.icu.util.VersionInfo` Unicode 14. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_12_1:android.icu.util.VersionInfo` Unicode 12. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_13_0:android.icu.util.VersionInfo` Unicode 13. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_14_0:android.icu.util.VersionInfo` Unicode 14. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_15_0:android.icu.util.VersionInfo` Unicode 15. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_15_1:android.icu.util.VersionInfo` Unicode 15. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_16_0:android.icu.util.VersionInfo` Unicode 16. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_15_0:android.icu.util.VersionInfo` Unicode 15. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_15_1:android.icu.util.VersionInfo` Unicode 15. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_16_0:android.icu.util.VersionInfo` Unicode 16. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_17_0:android.icu.util.VersionInfo` Unicode 17. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_0:android.icu.util.VersionInfo` Unicode 1. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_0_1:android.icu.util.VersionInfo` Unicode 1. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_17_0:android.icu.util.VersionInfo` Unicode 17. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_0:android.icu.util.VersionInfo` Unicode 1. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_0_1:android.icu.util.VersionInfo` Unicode 1. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_1_0:android.icu.util.VersionInfo` Unicode 1. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_1_5:android.icu.util.VersionInfo` Unicode 1. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_0:android.icu.util.VersionInfo` Unicode 2. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_1_0:android.icu.util.VersionInfo` Unicode 1. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_1_1_5:android.icu.util.VersionInfo` Unicode 1. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_0:android.icu.util.VersionInfo` Unicode 2. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_2:android.icu.util.VersionInfo` Unicode 2. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_5:android.icu.util.VersionInfo` Unicode 2. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_8:android.icu.util.VersionInfo` Unicode 2. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_2:android.icu.util.VersionInfo` Unicode 2. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_5:android.icu.util.VersionInfo` Unicode 2. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_8:android.icu.util.VersionInfo` Unicode 2. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_9:android.icu.util.VersionInfo` Unicode 2. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_0:android.icu.util.VersionInfo` Unicode 3. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_0_1:android.icu.util.VersionInfo` Unicode 3. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_2_1_9:android.icu.util.VersionInfo` Unicode 2. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_0:android.icu.util.VersionInfo` Unicode 3. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_0_1:android.icu.util.VersionInfo` Unicode 3. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_1_0:android.icu.util.VersionInfo` Unicode 3. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_1_1:android.icu.util.VersionInfo` Unicode 3. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_2:android.icu.util.VersionInfo` Unicode 3. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_1_0:android.icu.util.VersionInfo` Unicode 3. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_1_1:android.icu.util.VersionInfo` Unicode 3. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_3_2:android.icu.util.VersionInfo` Unicode 3. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_4_0:android.icu.util.VersionInfo` Unicode 4. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_4_0_1:android.icu.util.VersionInfo` Unicode 4. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_4_1:android.icu.util.VersionInfo` Unicode 4. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_4_0:android.icu.util.VersionInfo` Unicode 4. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_4_0_1:android.icu.util.VersionInfo` Unicode 4. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_4_1:android.icu.util.VersionInfo` Unicode 4. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_5_0:android.icu.util.VersionInfo` Unicode 5. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_5_1:android.icu.util.VersionInfo` Unicode 5. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_5_2:android.icu.util.VersionInfo` Unicode 5. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_5_0:android.icu.util.VersionInfo` Unicode 5. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_5_1:android.icu.util.VersionInfo` Unicode 5. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_5_2:android.icu.util.VersionInfo` Unicode 5. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_0:android.icu.util.VersionInfo` Unicode 6. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_1:android.icu.util.VersionInfo` Unicode 6. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_2:android.icu.util.VersionInfo` Unicode 6. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_0:android.icu.util.VersionInfo` Unicode 6. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_1:android.icu.util.VersionInfo` Unicode 6. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_2:android.icu.util.VersionInfo` Unicode 6. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_3:android.icu.util.VersionInfo` Unicode 6. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_7_0:android.icu.util.VersionInfo` Unicode 7. |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_8_0:android.icu.util.VersionInfo` Unicode 8. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_6_3:android.icu.util.VersionInfo` Unicode 6. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_7_0:android.icu.util.VersionInfo` Unicode 7. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_8_0:android.icu.util.VersionInfo` Unicode 8. |
 | --- | --- |
-| static [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_9_0:android.icu.util.VersionInfo` Unicode 9. |
+| static [VersionInfo](../android/icu/util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#UNICODE_9_0:android.icu.util.VersionInfo` Unicode 9. |
 
 ## Public methods
 
@@ -105,7 +105,7 @@ Compares other with this VersionInfo.
 | Parameters ||
 |---|---|
 | `o` | the object to be compared. |
-| `other` | [VersionInfo](https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#)!: VersionInfo to be compared |
+| `other` | [VersionInfo](../android/icu/util/VersionInfo.md)!: VersionInfo to be compared |
 
 | Return ||
 |---|---|

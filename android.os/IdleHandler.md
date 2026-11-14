@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # IdleHandler
 
-Kotlin| [Java](https://developer.android.com/reference/android/os/MessageQueue.IdleHandler "View this page in Java") 
+Kotlin| [Java](../android/os/MessageQueue.IdleHandler.md) 
 | --- | --- |
 
 ```
 interface IdleHandler
 ```
 
-| [android.os.MessageQueue.IdleHandler](https://developer.android.com/reference/kotlin/android/os/MessageQueue.IdleHandler#) |
+| [android.os.MessageQueue.IdleHandler](../android/os/MessageQueue.IdleHandler.md) |
 
 Callback interface for discovering when a thread is going to block waiting for more messages.
 
@@ -19,7 +19,7 @@ Callback interface for discovering when a thread is going to block waiting for m
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queueIdle](https://developer.android.com/reference/kotlin/android/os/MessageQueue.IdleHandler#queueIdle())`()` Called when the message queue has run out of messages and will now wait for more. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [queueIdle](../android/os/MessageQueue.IdleHandler.md))`()` Called when the message queue has run out of messages and will now wait for more. |
 
 ## Public methods
 

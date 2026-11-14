@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # AudioEffect
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/audiofx/AudioEffect "View this page in Java") 
+Kotlin| [Java](../android/media/audiofx/AudioEffect.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ open class AudioEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.audiofx.AudioEffect](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#) |
+| ↳ | [android.media.audiofx.AudioEffect](../android/media/audiofx/AudioEffect.md) |
 
-| Known Direct Subclasses [AcousticEchoCanceler](https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler), [AutomaticGainControl](https://developer.android.com/reference/kotlin/android/media/audiofx/AutomaticGainControl), [BassBoost](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost), [DynamicsProcessing](https://developer.android.com/reference/kotlin/android/media/audiofx/DynamicsProcessing), [EnvironmentalReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb), [Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer), [HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator), [LoudnessEnhancer](https://developer.android.com/reference/kotlin/android/media/audiofx/LoudnessEnhancer), [NoiseSuppressor](https://developer.android.com/reference/kotlin/android/media/audiofx/NoiseSuppressor), [PresetReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb), [Virtualizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer) |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [AcousticEchoCanceler](https://developer.android.com/reference/kotlin/android/media/audiofx/AcousticEchoCanceler) | Acoustic Echo Canceler (AEC). | | [AutomaticGainControl](https://developer.android.com/reference/kotlin/android/media/audiofx/AutomaticGainControl) | Automatic Gain Control (AGC). | | [BassBoost](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost) | Bass boost is an audio effect to boost or amplify low frequencies of the sound. | | [DynamicsProcessing](https://developer.android.com/reference/kotlin/android/media/audiofx/DynamicsProcessing) | DynamicsProcessing is an audio effect for equalizing and changing dynamic range properties of the sound. | | [EnvironmentalReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb) | A sound generated within a room travels in many directions. | | [Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer) | An Equalizer is used to alter the frequency response of a particular music source or of the main output mix. | | [HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator) | Haptic Generator(HG). | | [LoudnessEnhancer](https://developer.android.com/reference/kotlin/android/media/audiofx/LoudnessEnhancer) | LoudnessEnhancer is an audio effect for increasing audio loudness. | | [NoiseSuppressor](https://developer.android.com/reference/kotlin/android/media/audiofx/NoiseSuppressor) | Noise Suppressor (NS). | | [PresetReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb) | A sound generated within a room travels in many directions. | | [Virtualizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer) | An audio virtualizer is a general name for an effect to spatialize audio channels. | |
+| Known Direct Subclasses [AcousticEchoCanceler](../android/media/audiofx/AcousticEchoCanceler.md), [AutomaticGainControl](../android/media/audiofx/AutomaticGainControl.md), [BassBoost](../android/media/audiofx/BassBoost.md), [DynamicsProcessing](../android/media/audiofx/DynamicsProcessing.md), [EnvironmentalReverb](../android/media/audiofx/EnvironmentalReverb.md), [Equalizer](../android/media/audiofx/Equalizer.md), [HapticGenerator](../android/media/audiofx/HapticGenerator.md), [LoudnessEnhancer](../android/media/audiofx/LoudnessEnhancer.md), [NoiseSuppressor](../android/media/audiofx/NoiseSuppressor.md), [PresetReverb](../android/media/audiofx/PresetReverb.md), [Virtualizer](../android/media/audiofx/Virtualizer.md) |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [AcousticEchoCanceler](../android/media/audiofx/AcousticEchoCanceler.md) | Acoustic Echo Canceler (AEC). | | [AutomaticGainControl](../android/media/audiofx/AutomaticGainControl.md) | Automatic Gain Control (AGC). | | [BassBoost](../android/media/audiofx/BassBoost.md) | Bass boost is an audio effect to boost or amplify low frequencies of the sound. | | [DynamicsProcessing](../android/media/audiofx/DynamicsProcessing.md) | DynamicsProcessing is an audio effect for equalizing and changing dynamic range properties of the sound. | | [EnvironmentalReverb](../android/media/audiofx/EnvironmentalReverb.md) | A sound generated within a room travels in many directions. | | [Equalizer](../android/media/audiofx/Equalizer.md) | An Equalizer is used to alter the frequency response of a particular music source or of the main output mix. | | [HapticGenerator](../android/media/audiofx/HapticGenerator.md) | Haptic Generator(HG). | | [LoudnessEnhancer](../android/media/audiofx/LoudnessEnhancer.md) | LoudnessEnhancer is an audio effect for increasing audio loudness. | | [NoiseSuppressor](../android/media/audiofx/NoiseSuppressor.md) | Noise Suppressor (NS). | | [PresetReverb](../android/media/audiofx/PresetReverb.md) | A sound generated within a room travels in many directions. | | [Virtualizer](../android/media/audiofx/Virtualizer.md) | An audio virtualizer is a general name for an effect to spatialize audio channels. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 AudioEffect is the base class for controlling audio effects provided by the android audio framework.
 
 Applications should not use the AudioEffect class directly but one of its derived classes to control specific effects:
 
-- [android.media.audiofx.Equalizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Equalizer)
-- [android.media.audiofx.Virtualizer](https://developer.android.com/reference/kotlin/android/media/audiofx/Virtualizer)
-- [android.media.audiofx.BassBoost](https://developer.android.com/reference/kotlin/android/media/audiofx/BassBoost)
-- [android.media.audiofx.PresetReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/PresetReverb)
-- [android.media.audiofx.EnvironmentalReverb](https://developer.android.com/reference/kotlin/android/media/audiofx/EnvironmentalReverb)
-- [android.media.audiofx.DynamicsProcessing](https://developer.android.com/reference/kotlin/android/media/audiofx/DynamicsProcessing)
-- [android.media.audiofx.HapticGenerator](https://developer.android.com/reference/kotlin/android/media/audiofx/HapticGenerator)
+- [android.media.audiofx.Equalizer](../android/media/audiofx/Equalizer.md)
+- [android.media.audiofx.Virtualizer](../android/media/audiofx/Virtualizer.md)
+- [android.media.audiofx.BassBoost](../android/media/audiofx/BassBoost.md)
+- [android.media.audiofx.PresetReverb](../android/media/audiofx/PresetReverb.md)
+- [android.media.audiofx.EnvironmentalReverb](../android/media/audiofx/EnvironmentalReverb.md)
+- [android.media.audiofx.DynamicsProcessing](../android/media/audiofx/DynamicsProcessing.md)
+- [android.media.audiofx.HapticGenerator](../android/media/audiofx/HapticGenerator.md)
 
-To apply the audio effect to a specific AudioTrack or MediaPlayer instance, the application must specify the audio session ID of that instance when creating the AudioEffect. (see [android.media.MediaPlayer#getAudioSessionId()](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.html#getAudioSessionId())for details on audio sessions).
+To apply the audio effect to a specific AudioTrack or MediaPlayer instance, the application must specify the audio session ID of that instance when creating the AudioEffect. (see [android.media.MediaPlayer#getAudioSessionId()](../android/media/MediaPlayer.md))for details on audio sessions).
 
 NOTE: attaching insert effects (equalizer, bass boost, virtualizer) to the global audio output mix by use of session 0 is deprecated.
 
@@ -42,78 +42,78 @@ The application creating the AudioEffect object (or a derived class) will either
 
 | Nested classes ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) The effect descriptor contains information on a particular effect implemented in the audio framework: - type: UUID identifying the effect type. May be one of: [AudioEffect.EFFECT_TYPE_AEC](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_AEC:java.util.UUID), [AudioEffect.EFFECT_TYPE_AGC](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_AGC:java.util.UUID), [AudioEffect.EFFECT_TYPE_BASS_BOOST](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_BASS_BOOST:java.util.UUID), [AudioEffect.EFFECT_TYPE_ENV_REVERB](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_ENV_REVERB:java.util.UUID), [AudioEffect.EFFECT_TYPE_EQUALIZER](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_EQUALIZER:java.util.UUID), [AudioEffect.EFFECT_TYPE_NS](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_NS:java.util.UUID), [AudioEffect.EFFECT_TYPE_PRESET_REVERB](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_PRESET_REVERB:java.util.UUID), [AudioEffect.EFFECT_TYPE_VIRTUALIZER](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_VIRTUALIZER:java.util.UUID), [AudioEffect.EFFECT_TYPE_DYNAMICS_PROCESSING](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_DYNAMICS_PROCESSING:java.util.UUID), [AudioEffect.EFFECT_TYPE_HAPTIC_GENERATOR](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_HAPTIC_GENERATOR:java.util.UUID). - uuid: UUID for this particular implementation - connectMode: [EFFECT_INSERT](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_INSERT:kotlin.String) or [EFFECT_AUXILIARY](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_AUXILIARY:kotlin.String) - name: human readable effect name - implementor: human readable effect implementor name The method [queryEffects()](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#queryEffects())returns an array of Descriptors to facilitate effects enumeration. <br /> |
-| abstract | [OnControlStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.OnControlStatusChangeListener) The OnControlStatusChangeListener interface defines a method called by the AudioEffect when control of the effect engine is gained or lost by the application |
-| abstract | [OnEnableStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.OnEnableStatusChangeListener) The OnEnableStatusChangeListener interface defines a method called by the AudioEffect when the enabled state of the effect engine was changed by the controlling application. |
+| open | [Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) The effect descriptor contains information on a particular effect implemented in the audio framework: - type: UUID identifying the effect type. May be one of: [AudioEffect.EFFECT_TYPE_AEC](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_AGC](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_BASS_BOOST](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_ENV_REVERB](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_EQUALIZER](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_NS](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_PRESET_REVERB](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_VIRTUALIZER](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_DYNAMICS_PROCESSING](../android/media/audiofx/AudioEffect.md), [AudioEffect.EFFECT_TYPE_HAPTIC_GENERATOR](../android/media/audiofx/AudioEffect.md). - uuid: UUID for this particular implementation - connectMode: [EFFECT_INSERT](../android/media/audiofx/AudioEffect.md) or [EFFECT_AUXILIARY](../android/media/audiofx/AudioEffect.md) - name: human readable effect name - implementor: human readable effect implementor name The method [queryEffects()](../android/media/audiofx/AudioEffect.md))returns an array of Descriptors to facilitate effects enumeration. <br /> |
+| abstract | [OnControlStatusChangeListener](../android/media/audiofx/AudioEffect.OnControlStatusChangeListener.md) The OnControlStatusChangeListener interface defines a method called by the AudioEffect when control of the effect engine is gained or lost by the application |
+| abstract | [OnEnableStatusChangeListener](../android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.md) The OnEnableStatusChangeListener interface defines a method called by the AudioEffect when the enabled state of the effect engine was changed by the controlling application. |
 | --- | --- |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) Intent to signal to the effect control application or service that an audio session is closed and that effects should not be applied anymore. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL:kotlin.String) Intent to launch an audio effect control panel UI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) Intent to signal to the effect control application or service that a new audio session is opened and requires audio effects to be applied. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) Intent to signal to the effect control application or service that an audio session is closed and that effects should not be applied anymore. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](../android/media/audiofx/AudioEffect.md) Intent to launch an audio effect control panel UI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) Intent to signal to the effect control application or service that a new audio session is opened and requires audio effects to be applied. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALREADY_EXISTS](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ALREADY_EXISTS:kotlin.Int) Internal operation status. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_GAME](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_GAME:kotlin.Int) Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is game audio |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MOVIE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_MOVIE:kotlin.Int) Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is video or movie |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALREADY_EXISTS](../android/media/audiofx/AudioEffect.md) Internal operation status. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_GAME](../android/media/audiofx/AudioEffect.md) Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is game audio |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MOVIE](../android/media/audiofx/AudioEffect.md) Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is video or movie |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MUSIC](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_MUSIC:kotlin.Int) Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is music |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_VOICE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_VOICE:kotlin.Int) Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is voice audio |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_AUXILIARY](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_AUXILIARY:kotlin.String) Effect connection mode is auxiliary. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MUSIC](../android/media/audiofx/AudioEffect.md) Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is music |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_VOICE](../android/media/audiofx/AudioEffect.md) Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is voice audio |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_AUXILIARY](../android/media/audiofx/AudioEffect.md) Effect connection mode is auxiliary. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_INSERT](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_INSERT:kotlin.String) Effect connection mode is insert. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_POST_PROCESSING](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_POST_PROCESSING:kotlin.String) Effect connection mode is post processing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_PRE_PROCESSING](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_PRE_PROCESSING:kotlin.String) Effect connection mode is pre processing. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_INSERT](../android/media/audiofx/AudioEffect.md) Effect connection mode is insert. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_POST_PROCESSING](../android/media/audiofx/AudioEffect.md) Effect connection mode is post processing. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EFFECT_PRE_PROCESSING](../android/media/audiofx/AudioEffect.md) Effect connection mode is pre processing. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR:kotlin.Int) Unspecified error. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BAD_VALUE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR_BAD_VALUE:kotlin.Int) Operation failed due to bad parameter value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DEAD_OBJECT](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR_DEAD_OBJECT:kotlin.Int) Operation failed due to dead remote object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR](../android/media/audiofx/AudioEffect.md) Unspecified error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_BAD_VALUE](../android/media/audiofx/AudioEffect.md) Operation failed due to bad parameter value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DEAD_OBJECT](../android/media/audiofx/AudioEffect.md) Operation failed due to dead remote object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_OPERATION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR_INVALID_OPERATION:kotlin.Int) Operation failed because it was requested in wrong state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_INIT](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR_NO_INIT:kotlin.Int) Operation failed due to bad object initialization. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_MEMORY](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR_NO_MEMORY:kotlin.Int) Operation failed due to lack of memory. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INVALID_OPERATION](../android/media/audiofx/AudioEffect.md) Operation failed because it was requested in wrong state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_INIT](../android/media/audiofx/AudioEffect.md) Operation failed due to bad object initialization. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_MEMORY](../android/media/audiofx/AudioEffect.md) Operation failed due to lack of memory. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_AUDIO_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_AUDIO_SESSION:kotlin.String) Contains the ID of the audio session the effects should be applied to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) Indicates which type of content is played by the application. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_PACKAGE_NAME:kotlin.String) Contains the package name of the calling application. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_AUDIO_SESSION](../android/media/audiofx/AudioEffect.md) Contains the ID of the audio session the effects should be applied to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) Indicates which type of content is played by the application. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_PACKAGE_NAME](../android/media/audiofx/AudioEffect.md) Contains the package name of the calling application. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#SUCCESS:kotlin.Int) Successful operation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](../android/media/audiofx/AudioEffect.md) Successful operation. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)! | [getDescriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#getDescriptor())`()` Get the effect descriptor. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getEnabled](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#getEnabled())`()` Returns effect enabled state |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#getId())`()` Returns effect unique identifier. |
+| open [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md)! | [getDescriptor](../android/media/audiofx/AudioEffect.md))`()` Get the effect descriptor. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getEnabled](../android/media/audiofx/AudioEffect.md))`()` Returns effect enabled state |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](../android/media/audiofx/AudioEffect.md))`()` Returns effect unique identifier. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasControl](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#hasControl())`()` Checks if this AudioEffect object is controlling the effect engine. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor)!\>! | [queryEffects](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#queryEffects())`()` Query all effects available on the platform. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#release())`()` Releases the native AudioEffect resources. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasControl](../android/media/audiofx/AudioEffect.md))`()` Checks if this AudioEffect object is controlling the effect engine. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md)!\>! | [queryEffects](../android/media/audiofx/AudioEffect.md))`()` Query all effects available on the platform. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/media/audiofx/AudioEffect.md))`()` Releases the native AudioEffect resources. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setControlStatusListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#setControlStatusListener(android.media.audiofx.AudioEffect.OnControlStatusChangeListener))`(`listener:` ` [AudioEffect.OnControlStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.OnControlStatusChangeListener)!`)` Sets the listener AudioEffect notifies when the effect engine control is taken or returned. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnableStatusListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#setEnableStatusListener(android.media.audiofx.AudioEffect.OnEnableStatusChangeListener))`(`listener:` ` [AudioEffect.OnEnableStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.OnEnableStatusChangeListener)!`)` Sets the listener AudioEffect notifies when the effect engine is enabled or disabled. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setEnabled](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#setEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable the effect. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setControlStatusListener](../android/media/audiofx/AudioEffect.md))`(`listener:` ` [AudioEffect.OnControlStatusChangeListener](../android/media/audiofx/AudioEffect.OnControlStatusChangeListener.md)!`)` Sets the listener AudioEffect notifies when the effect engine control is taken or returned. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnableStatusListener](../android/media/audiofx/AudioEffect.md))`(`listener:` ` [AudioEffect.OnEnableStatusChangeListener](../android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.md)!`)` Sets the listener AudioEffect notifies when the effect engine is enabled or disabled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [setEnabled](../android/media/audiofx/AudioEffect.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable the effect. |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#finalize())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/audiofx/AudioEffect.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_AEC](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_AEC:java.util.UUID) UUID for Acoustic Echo Canceler (AEC) |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_AGC](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_AGC:java.util.UUID) UUID for Automatic Gain Control (AGC) |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_BASS_BOOST](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_BASS_BOOST:java.util.UUID) UUID for bass boost effect |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_AEC](../android/media/audiofx/AudioEffect.md) UUID for Acoustic Echo Canceler (AEC) |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_AGC](../android/media/audiofx/AudioEffect.md) UUID for Automatic Gain Control (AGC) |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_BASS_BOOST](../android/media/audiofx/AudioEffect.md) UUID for bass boost effect |
 | --- | --- |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_DYNAMICS_PROCESSING](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_DYNAMICS_PROCESSING:java.util.UUID) UUID for Dynamics Processing |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_ENV_REVERB](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_ENV_REVERB:java.util.UUID) UUID for environmental reverberation effect |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_EQUALIZER](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_EQUALIZER:java.util.UUID) UUID for equalizer effect |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_DYNAMICS_PROCESSING](../android/media/audiofx/AudioEffect.md) UUID for Dynamics Processing |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_ENV_REVERB](../android/media/audiofx/AudioEffect.md) UUID for environmental reverberation effect |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_EQUALIZER](../android/media/audiofx/AudioEffect.md) UUID for equalizer effect |
 | --- | --- |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#) | [EFFECT_TYPE_HAPTIC_GENERATOR](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_HAPTIC_GENERATOR:java.util.UUID) UUID for Haptic Generator. |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_LOUDNESS_ENHANCER](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_LOUDNESS_ENHANCER:java.util.UUID) UUID for Loudness Enhancer |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_NS](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_NS:java.util.UUID) UUID for Noise Suppressor (NS) |
+| static [UUID](../java/util/UUID.md) | [EFFECT_TYPE_HAPTIC_GENERATOR](../android/media/audiofx/AudioEffect.md) UUID for Haptic Generator. |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_LOUDNESS_ENHANCER](../android/media/audiofx/AudioEffect.md) UUID for Loudness Enhancer |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_NS](../android/media/audiofx/AudioEffect.md) UUID for Noise Suppressor (NS) |
 | --- | --- |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_PRESET_REVERB](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_PRESET_REVERB:java.util.UUID) UUID for preset reverberation effect |
-| static [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html#)! | [EFFECT_TYPE_VIRTUALIZER](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EFFECT_TYPE_VIRTUALIZER:java.util.UUID) UUID for virtualizer effect |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_PRESET_REVERB](../android/media/audiofx/AudioEffect.md) UUID for preset reverberation effect |
+| static [UUID](../java/util/UUID.md)! | [EFFECT_TYPE_VIRTUALIZER](../android/media/audiofx/AudioEffect.md) UUID for virtualizer effect |
 
 ## Constants
 
@@ -129,7 +129,7 @@ Intent to signal to the effect control application or service that an audio sess
 
 The effect control application receiving this intent will delete all effects on this session and store current settings in package specific storage.
 
-The calling package name is indicated by the [EXTRA_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_PACKAGE_NAME:kotlin.String) extra and the audio session ID by the [EXTRA_AUDIO_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_AUDIO_SESSION:kotlin.String) extra. Both extras are mandatory.
+The calling package name is indicated by the [EXTRA_PACKAGE_NAME](../android/media/audiofx/AudioEffect.md) extra and the audio session ID by the [EXTRA_AUDIO_SESSION](../android/media/audiofx/AudioEffect.md) extra. Both extras are mandatory.
 
 It is good practice for applications to broadcast this intent when music playback stops and/or when exiting to free system resources consumed by audio effect engines. 
 
@@ -151,13 +151,13 @@ The intent carries a number of extras used by the player application to communic
 
 The calling application must use the android.app.Activity#startActivityForResult(Intent, int) method to launch the control panel so that its package name is indicated and used by the control panel application to keep track of changes for this particular application.
 
-The [EXTRA_AUDIO_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_AUDIO_SESSION:kotlin.String) extra will indicate an audio session to which the audio effects should be applied. If no audio session is specified, either one of the follownig will happen:
+The [EXTRA_AUDIO_SESSION](../android/media/audiofx/AudioEffect.md) extra will indicate an audio session to which the audio effects should be applied. If no audio session is specified, either one of the follownig will happen:
 
-- If an audio session was previously opened by the calling application with [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) intent, the effect changes will be applied to that session.
+- If an audio session was previously opened by the calling application with [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) intent, the effect changes will be applied to that session.
 
 - If no audio session is opened, the changes will be stored in the package specific storage area and applied whenever a new audio session is opened by this application.
 
-The [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) extra will help the control panel application customize both the UI layout and the default audio effect settings if none are already stored for the calling application. 
+The [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) extra will help the control panel application customize both the UI layout and the default audio effect settings if none are already stored for the calling application. 
 
  Value: "android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL"
 
@@ -171,13 +171,13 @@ static val ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION: String
 
 Intent to signal to the effect control application or service that a new audio session is opened and requires audio effects to be applied.
 
-This is different from [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL:kotlin.String) in that no UI should be displayed in this case. Music player applications can broadcast this intent before starting playback to make sure that any audio effect settings previously selected by the user are applied.
+This is different from [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](../android/media/audiofx/AudioEffect.md) in that no UI should be displayed in this case. Music player applications can broadcast this intent before starting playback to make sure that any audio effect settings previously selected by the user are applied.
 
 The effect control application receiving this intent will look for previously stored settings for the calling application, create all required audio effects and apply the effect settings to the specified audio session.
 
-The calling package name is indicated by the [EXTRA_PACKAGE_NAME](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_PACKAGE_NAME:kotlin.String) extra and the audio session ID by the [EXTRA_AUDIO_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_AUDIO_SESSION:kotlin.String) extra. Both extras are mandatory.
+The calling package name is indicated by the [EXTRA_PACKAGE_NAME](../android/media/audiofx/AudioEffect.md) extra and the audio session ID by the [EXTRA_AUDIO_SESSION](../android/media/audiofx/AudioEffect.md) extra. Both extras are mandatory.
 
-If no stored settings are found for the calling application, default settings for the content type indicated by [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) will be applied. The default settings for a given content type are platform specific. 
+If no stored settings are found for the calling application, default settings for the content type indicated by [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) will be applied. The default settings for a given content type are platform specific. 
 
  Value: "android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION"
 
@@ -201,7 +201,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTENT_TYPE_GAME: Int
 ```
 
-Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is game audio 
+Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is game audio 
 
  Value: 2
 
@@ -213,7 +213,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTENT_TYPE_MOVIE: Int
 ```
 
-Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is video or movie 
+Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is video or movie 
 
  Value: 1
 
@@ -225,7 +225,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTENT_TYPE_MUSIC: Int
 ```
 
-Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is music 
+Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is music 
 
  Value: 0
 
@@ -237,7 +237,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTENT_TYPE_VOICE: Int
 ```
 
-Value for [EXTRA_CONTENT_TYPE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#EXTRA_CONTENT_TYPE:kotlin.String) when the type of content played is voice audio 
+Value for [EXTRA_CONTENT_TYPE](../android/media/audiofx/AudioEffect.md) when the type of content played is voice audio 
 
  Value: 3
 
@@ -253,7 +253,7 @@ Effect connection mode is auxiliary.
 
 Auxiliary effects must be created on session 0 (global output mix). In order for a MediaPlayer or AudioTrack to be fed into this effect, they must be explicitely attached to this effect and a send level must be specified.
 
-Use the effect ID returned by [getId()](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#getId())to designate this particular effect when attaching it to the MediaPlayer or AudioTrack. 
+Use the effect ID returned by [getId()](../android/media/audiofx/AudioEffect.md))to designate this particular effect when attaching it to the MediaPlayer or AudioTrack. 
 
  Value: "Auxiliary"
 
@@ -375,7 +375,7 @@ static val EXTRA_AUDIO_SESSION: String
 
 Contains the ID of the audio session the effects should be applied to.
 
-This extra is for use with [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL:kotlin.String), [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) and [ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) intents.
+This extra is for use with [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](../android/media/audiofx/AudioEffect.md), [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) and [ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) intents.
 
 The extra value is of type int and is the audio session ID. 
 
@@ -383,7 +383,7 @@ The extra value is of type int and is the audio session ID.
 
 **See Also**
 
-- [android.media.MediaPlayer#getAudioSessionId()](https://developer.android.com/reference/kotlin/android/media/MediaPlayer.html#getAudioSessionId()) 
+- [android.media.MediaPlayer#getAudioSessionId()](../android/media/MediaPlayer.md)) 
 
 ### EXTRA_CONTENT_TYPE
 
@@ -395,16 +395,16 @@ static val EXTRA_CONTENT_TYPE: String
 
 Indicates which type of content is played by the application.
 
-This extra is for use with [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL:kotlin.String) and [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) intents.
+This extra is for use with [ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL](../android/media/audiofx/AudioEffect.md) and [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) intents.
 
 This information is used by the effect control application to customize UI and select appropriate default effect settings. The content type is one of the following:
 
-- [CONTENT_TYPE_MUSIC](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_MUSIC:kotlin.Int)
-- [CONTENT_TYPE_MOVIE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_MOVIE:kotlin.Int)
-- [CONTENT_TYPE_GAME](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_GAME:kotlin.Int)
-- [CONTENT_TYPE_VOICE](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_VOICE:kotlin.Int)
+- [CONTENT_TYPE_MUSIC](../android/media/audiofx/AudioEffect.md)
+- [CONTENT_TYPE_MOVIE](../android/media/audiofx/AudioEffect.md)
+- [CONTENT_TYPE_GAME](../android/media/audiofx/AudioEffect.md)
+- [CONTENT_TYPE_VOICE](../android/media/audiofx/AudioEffect.md)
 
-If omitted, the content type defaults to [CONTENT_TYPE_MUSIC](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#CONTENT_TYPE_MUSIC:kotlin.Int). 
+If omitted, the content type defaults to [CONTENT_TYPE_MUSIC](../android/media/audiofx/AudioEffect.md). 
 
  Value: "android.media.extra.CONTENT_TYPE"
 
@@ -418,7 +418,7 @@ static val EXTRA_PACKAGE_NAME: String
 
 Contains the package name of the calling application.
 
-This extra is for use with [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) and [ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION:kotlin.String) intents.
+This extra is for use with [ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) and [ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION](../android/media/audiofx/AudioEffect.md) intents.
 
 The extra value is a string containing the full package name. 
 
@@ -454,7 +454,7 @@ Get the effect descriptor.
 
 **See Also**
 
-- [android.media.audiofx.AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) 
+- [android.media.audiofx.AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) 
 
 ### getEnabled
 
@@ -518,7 +518,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open static fun queryEffects(): Array<AudioEffect.Descriptor!>!
 ```
 
-Query all effects available on the platform. Returns an array of [android.media.audiofx.AudioEffect.Descriptor](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.Descriptor) objects
+Query all effects available on the platform. Returns an array of [android.media.audiofx.AudioEffect.Descriptor](../android/media/audiofx/AudioEffect.Descriptor.md) objects
 
 | Exceptions ||
 |-----------------------------------|---|
@@ -546,7 +546,7 @@ Sets the listener AudioEffect notifies when the effect engine control is taken o
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AudioEffect.OnControlStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.OnControlStatusChangeListener)!: |
+| `listener` | [AudioEffect.OnControlStatusChangeListener](../android/media/audiofx/AudioEffect.OnControlStatusChangeListener.md)!: |
 
 ### setEnableStatusListener
 
@@ -560,7 +560,7 @@ Sets the listener AudioEffect notifies when the effect engine is enabled or disa
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [AudioEffect.OnEnableStatusChangeListener](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect.OnEnableStatusChangeListener)!: |
+| `listener` | [AudioEffect.OnEnableStatusChangeListener](../android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.md)!: |
 
 ### setEnabled
 
@@ -578,7 +578,7 @@ Enable or disable the effect. Creating an audio effect does not automatically ap
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#SUCCESS:kotlin.Int) in case of success, [ERROR_INVALID_OPERATION](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR_INVALID_OPERATION:kotlin.Int) or [ERROR_DEAD_OBJECT](https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect#ERROR_DEAD_OBJECT:kotlin.Int) in case of failure. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](../android/media/audiofx/AudioEffect.md) in case of success, [ERROR_INVALID_OPERATION](../android/media/audiofx/AudioEffect.md) or [ERROR_DEAD_OBJECT](../android/media/audiofx/AudioEffect.md) in case of failure. |
 
 | Exceptions ||
 |-----------------------------------|---|

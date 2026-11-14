@@ -8,7 +8,7 @@ class AppFunctionSearchSpec : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appfunctions.AppFunctionSearchSpec](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#) |
+| ↳ | [android.app.appfunctions.AppFunctionSearchSpec](../android/app/appfunctions/AppFunctionSearchSpec.md) |
 
 Filter criteria for `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#searchAppFunctions(android.app.appfunctions.AppFunctionSearchSpec,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
 
@@ -28,7 +28,7 @@ A search will be performed using a logical AND operation across all provided cri
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppFunctionName](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName)!\>? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getFunctionNames()()` Returns the set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName` to filter by, or null if this filter is skipped. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppFunctionName](../android/app/appfunctions/AppFunctionName.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getFunctionNames()()` Returns the set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName` to filter by, or null if this filter is skipped. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getMinSchemaVersion()()` Returns the minimum schema category to filter by, or 0 if this filter is skipped. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getPackageNames()()` Returns the set of package names to filter by, or null if this filter is skipped. |
@@ -43,7 +43,7 @@ A search will be performed using a logical AND operation across all provided cri
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AppFunctionSearchSpec](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppFunctionSearchSpec](../android/app/appfunctions/AppFunctionSearchSpec.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -210,7 +210,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

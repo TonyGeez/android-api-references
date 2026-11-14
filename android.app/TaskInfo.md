@@ -8,10 +8,10 @@ open class TaskInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.TaskInfo](https://developer.android.com/reference/kotlin/android/app/TaskInfo#) |
+| ↳ | [android.app.TaskInfo](../android/app/TaskInfo.md) |
 
-Known Direct Subclasses [ActivityManager.RecentTaskInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RecentTaskInfo), [ActivityManager.RunningTaskInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningTaskInfo) [ActivityManager.RecentTaskInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RecentTaskInfo) Information you can retrieve about tasks that the user has most recently started or visited.
-[ActivityManager.RunningTaskInfo](https://developer.android.com/reference/kotlin/android/app/ActivityManager.RunningTaskInfo) Information you can retrieve about a particular task that is currently "running" in the system.
+Known Direct Subclasses [ActivityManager.RecentTaskInfo](../android/app/ActivityManager.RecentTaskInfo.md), [ActivityManager.RunningTaskInfo](../android/app/ActivityManager.RunningTaskInfo.md) [ActivityManager.RecentTaskInfo](../android/app/ActivityManager.RecentTaskInfo.md) Information you can retrieve about tasks that the user has most recently started or visited.
+[ActivityManager.RunningTaskInfo](../android/app/ActivityManager.RunningTaskInfo.md) Information you can retrieve about a particular task that is currently "running" in the system.
 
 Stores information about a particular Task.
 
@@ -26,16 +26,16 @@ Stores information about a particular Task.
 
 | Properties ||
 |---|---|
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#baseActivity:android.content.ComponentName` The component of the first activity in the task, can be considered the "application" of this task. |
-| [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#baseIntent:android.content.Intent` The base intent of the task (generally the intent that launched the task). |
+| [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#baseActivity:android.content.ComponentName` The component of the first activity in the task, can be considered the "application" of this task. |
+| [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#baseIntent:android.content.Intent` The base intent of the task (generally the intent that launched the task). |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#isRunning:kotlin.Boolean` Whether or not this task has any running activities. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#numActivities:kotlin.Int` The number of activities in this task (including running). |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#origActivity:android.content.ComponentName` The component of the target activity if this task was started from an activity alias. |
-| [ActivityManager.TaskDescription](https://developer.android.com/reference/kotlin/android/app/ActivityManager.TaskDescription)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#taskDescription:android.app.ActivityManager.TaskDescription` The recent activity values for the highest activity in the stack to have set the values. |
+| [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#origActivity:android.content.ComponentName` The component of the target activity if this task was started from an activity alias. |
+| [ActivityManager.TaskDescription](../android/app/ActivityManager.TaskDescription.md)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#taskDescription:android.app.ActivityManager.TaskDescription` The recent activity values for the highest activity in the stack to have set the values. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#taskId:kotlin.Int` The identifier for this task. |
-| [ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#topActivity:android.content.ComponentName` The component of the top activity in the task, currently showing to the user. |
+| [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#topActivity:android.content.ComponentName` The component of the top activity in the task, currently showing to the user. |
 
 ## Public methods
 

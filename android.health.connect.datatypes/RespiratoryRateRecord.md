@@ -9,9 +9,9 @@ class RespiratoryRateRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/InstantRecord) ||
-| | | ↳ | [android.health.connect.datatypes.RespiratoryRateRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/RespiratoryRateRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.RespiratoryRateRecord](../android/health/connect/datatypes/RespiratoryRateRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's respiratory rate. Each record represents a single instantaneous measurement.

@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface LongFunction<R : Any!>
 ```
 
-| [java.util.function.LongFunction](https://developer.android.com/reference/kotlin/java/util/function/LongFunction#) |
+| [java.util.function.LongFunction](../java/util/function/LongFunction.md) |
 
-Represents a function that accepts a long-valued argument and produces a result. This is the`long`-consuming primitive specialization for [Function](https://developer.android.com/reference/kotlin/java/util/function/Function).
+Represents a function that accepts a long-valued argument and produces a result. This is the`long`-consuming primitive specialization for [Function](../java/util/function/Function.md).
 
-This is a [functional interface](https://developer.android.com/reference/kotlin/java/util/function/package-summary) whose functional method is [apply(long)](https://developer.android.com/reference/kotlin/java/util/function/LongFunction#apply(kotlin.Long)).
+This is a [functional interface](../java/util/function/_package.md) whose functional method is [apply(long)](../java/util/function/LongFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractR | [apply](https://developer.android.com/reference/kotlin/java/util/function/LongFunction#apply(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this function to the given argument. |
+| abstractR | [apply](../java/util/function/LongFunction.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this function to the given argument. |
 
 ## Public methods
 

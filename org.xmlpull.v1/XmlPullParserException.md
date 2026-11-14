@@ -9,8 +9,8 @@ open class XmlPullParserException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||
-| | | ↳ | [org.xmlpull.v1.XmlPullParserException](https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#) |
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
+| | | ↳ | [org.xmlpull.v1.XmlPullParserException](../org/xmlpull/v1/XmlPullParserException.md) |
 | --- | --- | --- | --- |
 
 This exception is thrown to signal XML Pull Parser related faults.

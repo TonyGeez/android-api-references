@@ -4,14 +4,14 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 
 # VisibleActivityCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.VisibleActivityCallback "View this page in Java") 
+Kotlin| [Java](../android/service/voice/VoiceInteractionSession.VisibleActivityCallback.md) 
 | --- | --- |
 
 ```
 interface VisibleActivityCallback
 ```
 
-| [android.service.voice.VoiceInteractionSession.VisibleActivityCallback](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.VisibleActivityCallback#) |
+| [android.service.voice.VoiceInteractionSession.VisibleActivityCallback](../android/service/voice/VoiceInteractionSession.VisibleActivityCallback.md) |
 
 Callback interface for receiving visible activity changes used for assistant usage.
 
@@ -19,8 +19,8 @@ Callback interface for receiving visible activity changes used for assistant usa
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInvisible](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.VisibleActivityCallback#onInvisible(android.service.voice.VoiceInteractionSession.ActivityId))`(`activityId:` ` [VoiceInteractionSession.ActivityId](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.ActivityId)`)` Callback to inform that a visible activity has gone. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVisible](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.VisibleActivityCallback#onVisible(android.service.voice.VisibleActivityInfo))`(`activityInfo:` ` [VisibleActivityInfo](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo)`)` Callback to inform that an activity has become visible. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInvisible](../android/service/voice/VoiceInteractionSession.VisibleActivityCallback.md))`(`activityId:` ` [VoiceInteractionSession.ActivityId](../android/service/voice/VoiceInteractionSession.ActivityId.md)`)` Callback to inform that a visible activity has gone. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVisible](../android/service/voice/VoiceInteractionSession.VisibleActivityCallback.md))`(`activityInfo:` ` [VisibleActivityInfo](../android/service/voice/VisibleActivityInfo.md)`)` Callback to inform that an activity has become visible. |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ Callback to inform that a visible activity has gone.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `activityId` | [VoiceInteractionSession.ActivityId](https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.ActivityId):This value cannot be`null`. |
+| `activityId` | [VoiceInteractionSession.ActivityId](../android/service/voice/VoiceInteractionSession.ActivityId.md):This value cannot be`null`. |
 
 ### onVisible
 
@@ -50,4 +50,4 @@ Callback to inform that an activity has become visible.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `activityInfo` | [VisibleActivityInfo](https://developer.android.com/reference/kotlin/android/service/voice/VisibleActivityInfo):This value cannot be`null`. |
+| `activityInfo` | [VisibleActivityInfo](../android/service/voice/VisibleActivityInfo.md):This value cannot be`null`. |

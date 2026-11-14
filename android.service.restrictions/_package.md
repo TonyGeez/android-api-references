@@ -2,10 +2,10 @@
 
 # android.service.restrictions
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/restrictions/package-summary "View this page in Java")
+Kotlin| [Java](../android/service/restrictions/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [RestrictionsReceiver](https://developer.android.com/reference/kotlin/android/service/restrictions/RestrictionsReceiver) | Abstract implementation of a Restrictions Provider BroadcastReceiver. |
+| [RestrictionsReceiver](../android/service/restrictions/RestrictionsReceiver.md) | Abstract implementation of a Restrictions Provider BroadcastReceiver. |
 | --- | --- |

@@ -8,9 +8,9 @@ class Sensor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.Sensor](https://developer.android.com/reference/kotlin/android/hardware/Sensor#) |
+| ↳ | [android.hardware.Sensor](../android/hardware/Sensor.md) |
 
-Class representing a sensor. Use `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int)` to get the list of available sensors. For more information about Android sensors, read the [Motion Sensors guide](https://developer.android.com/reference/kotlin/guide/topics/sensors/sensors_motion.html).
+Class representing a sensor. Use `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int)` to get the list of available sensors. For more information about Android sensors, read the [Motion Sensors guide](../guide/topics/sensors/sensors_motion.md).
 
 <br />
 

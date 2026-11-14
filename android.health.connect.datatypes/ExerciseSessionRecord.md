@@ -9,9 +9,9 @@ class ExerciseSessionRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord) ||
-| | | ↳ | [android.health.connect.datatypes.ExerciseSessionRecord](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#) |
+| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.ExerciseSessionRecord](../android/health/connect/datatypes/ExerciseSessionRecord.md) |
 | --- | --- | --- | --- |
 
 Captures exercise or a sequence of exercises. This can be a playing game like football or a sequence of fitness exercises.
@@ -32,14 +32,14 @@ Each record needs a start time, end time and session type. In addition, each rec
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getExerciseType()()` Returns exerciseType of this session. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseLap](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getLaps()()` Returns laps of this session. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseLap](../android/health/connect/datatypes/ExerciseLap.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getLaps()()` Returns laps of this session. |
 | --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getNotes()()` Returns notes for this activity. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getPlannedExerciseSessionId()()` Returns the ID of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord` that this session was based upon. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getRateOfPerceivedExertion()()` Gets the rate of perceived exertion (RPE) for this exercise session. |
 | --- | --- |
-| [ExerciseRoute](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getRoute()()` Returns route of this session. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseSegment](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getSegments()()` Returns segments of this session. |
+| [ExerciseRoute](../android/health/connect/datatypes/ExerciseRoute.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getRoute()()` Returns route of this session. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseSegment](../android/health/connect/datatypes/ExerciseSegment.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getSegments()()` Returns segments of this session. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getTitle()()` Returns title of this session. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#hasRateOfPerceivedExertion()()` Returns true if this session has an associated rate of perceived exertion. |
@@ -54,7 +54,7 @@ Each record needs a start time, end time and session type. In addition, each rec
 
 | Properties ||
 |---|---|
-| static [AggregationType](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#EXERCISE_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve total exercise session duration using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#EXERCISE_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve total exercise session duration using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 
 ## Public methods
 

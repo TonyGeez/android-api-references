@@ -5,18 +5,18 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # ShutterCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/hardware/Camera.ShutterCallback "View this page in Java") 
+Kotlin| [Java](../android/hardware/Camera.ShutterCallback.md) 
 | --- | --- |
 
 ```
 interface ShutterCallback
 ```
 
-| [android.hardware.Camera.ShutterCallback](https://developer.android.com/reference/kotlin/android/hardware/Camera.ShutterCallback#) |
+| [android.hardware.Camera.ShutterCallback](../android/hardware/Camera.ShutterCallback.md) |
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
 
 Callback interface used to signal the moment of actual image capture.
 
@@ -24,7 +24,7 @@ Callback interface used to signal the moment of actual image capture.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onShutter](https://developer.android.com/reference/kotlin/android/hardware/Camera.ShutterCallback#onShutter())`()` Called as near as possible to the moment when a photo is captured from the sensor. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onShutter](../android/hardware/Camera.ShutterCallback.md))`()` Called as near as possible to the moment when a photo is captured from the sensor. |
 
 ## Public methods
 

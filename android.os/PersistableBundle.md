@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # PersistableBundle
 
-Kotlin | [Java](https://developer.android.com/reference/android/os/PersistableBundle "View this page in Java")
+Kotlin | [Java](../android/os/PersistableBundle.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class PersistableBundle : BaseBundle, Cloneable, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.os.BaseBundle](https://developer.android.com/reference/kotlin/android/os/BaseBundle) ||
-| | ↳ | [android.os.PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#) |
+| ↳ | [android.os.BaseBundle](../android/os/BaseBundle.md) ||
+| | ↳ | [android.os.PersistableBundle](../android/os/PersistableBundle.md) |
 
 A mapping from String keys to values of various types. The set of types supported by this class is purposefully restricted to simple objects that can safely be persisted to and restored from disk.
 
@@ -33,12 +33,12 @@ A mapping from String keys to values of various types. The set of types supporte
 | Public methods ||
 |---|---|
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#clone()()` Clones the current PersistableBundle. |
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#)! | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#deepCopy()()` Make a deep copy of the given bundle. |
+| [PersistableBundle](../android/os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#deepCopy()()` Make a deep copy of the given bundle. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#describeContents()()` Report the nature of this Parcelable's contents |
 | --- | --- |
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#)? | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#getPersistableBundle(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [PersistableBundle](../android/os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#getPersistableBundle(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#putPersistableBundle(kotlin.String,%20android.os.PersistableBundle)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, value: https://developer.android.com/reference/kotlin/android/os/PersistableBundle#?)` Inserts a PersistableBundle value into the mapping of this Bundle, replacing any existing value for the given key. |
-| static [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#) | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#readFromStream(java.io.InputStream)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#)` Reads a `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#` from an `https://developer.android.com/reference/kotlin/java/io/InputStream.html#`. |
+| static [PersistableBundle](../android/os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#readFromStream(java.io.InputStream)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#)` Reads a `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#` from an `https://developer.android.com/reference/kotlin/java/io/InputStream.html#`. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#toString()()` Returns a string representation of the `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#` that may be suitable for debugging. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes the PersistableBundle contents to a Parcel, typically in order for it to be passed through an IBinder connection. |
@@ -51,8 +51,8 @@ A mapping from String keys to values of various types. The set of types supporte
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator)\< [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#)!\> | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#CREATOR:android.os.Parcelable.Creator` <br /> |
-| static [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#)! | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#EMPTY:android.os.PersistableBundle` An unmodifiable `PersistableBundle` that is always `https://developer.android.com/reference/kotlin/android/os/BaseBundle#isEmpty()`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PersistableBundle](../android/os/PersistableBundle.md)!\> | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [PersistableBundle](../android/os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/os/PersistableBundle#EMPTY:android.os.PersistableBundle` An unmodifiable `PersistableBundle` that is always `https://developer.android.com/reference/kotlin/android/os/BaseBundle#isEmpty()`. |
 
 ## Public constructors
 
@@ -78,7 +78,7 @@ Constructs a PersistableBundle containing a copy of the mappings from the given 
 
 | Parameters ||
 |---|---|
-| `b` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#)!: a PersistableBundle to be copied. |
+| `b` | [PersistableBundle](../android/os/PersistableBundle.md)!: a PersistableBundle to be copied. |
 
 **See Also**
 
@@ -176,7 +176,7 @@ Inserts a PersistableBundle value into the mapping of this Bundle, replacing any
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle#)?: a Bundle object, or null |
+| `value` | [PersistableBundle](../android/os/PersistableBundle.md)?: a Bundle object, or null |
 
 ### readFromStream
 
@@ -192,7 +192,7 @@ The stream must be generated by `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `inputStream` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#): This value cannot be `null`. |
+| `inputStream` | [InputStream](../java/io/InputStream.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -233,7 +233,7 @@ Writes the PersistableBundle contents to a Parcel, typically in order for it to 
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `parcel` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel): The parcel to copy this bundle to. |
+| `parcel` | [Parcel](../android/os/Parcel.md): The parcel to copy this bundle to. |
 | --- | --- |
 
 ### writeToStream
@@ -250,7 +250,7 @@ The content can be read by a `https://developer.android.com/reference/kotlin/and
 
 | Parameters ||
 |---|---|
-| `outputStream` | [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#): This value cannot be `null`. |
+| `outputStream` | [OutputStream](../java/io/OutputStream.md): This value cannot be `null`. |
 
 **See Also**
 

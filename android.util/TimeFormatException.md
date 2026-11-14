@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # TimeFormatException
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/TimeFormatException "View this page in Java") 
+Kotlin| [Java](../android/util/TimeFormatException.md) 
 | --- | --- |
 
 ```
@@ -14,9 +14,9 @@ open class TimeFormatException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.lang.RuntimeException](https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.util.TimeFormatException](https://developer.android.com/reference/kotlin/android/util/TimeFormatException#) |
+| | | | ↳ | [android.util.TimeFormatException](../android/util/TimeFormatException.md) |
 
 ## Summary

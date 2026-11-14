@@ -4,14 +4,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # GroupInfoListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.GroupInfoListener "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.md) 
 | --- | --- |
 
 ```
 interface GroupInfoListener
 ```
 
-| [android.net.wifi.p2p.WifiP2pManager.GroupInfoListener](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.GroupInfoListener#) |
+| [android.net.wifi.p2p.WifiP2pManager.GroupInfoListener](../android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.md) |
 
 Interface for callback invocation when group info is available
 
@@ -19,7 +19,7 @@ Interface for callback invocation when group info is available
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGroupInfoAvailable](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.GroupInfoListener#onGroupInfoAvailable(android.net.wifi.p2p.WifiP2pGroup))`(`group:` ` [WifiP2pGroup](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup)!`)` The requested p2p group info is available |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGroupInfoAvailable](../android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.md))`(`group:` ` [WifiP2pGroup](../android/net/wifi/p2p/WifiP2pGroup.md)!`)` The requested p2p group info is available |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ The requested p2p group info is available
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------|
-| `group` | [WifiP2pGroup](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup)!:Wi-Fi p2p group info |
+| `group` | [WifiP2pGroup](../android/net/wifi/p2p/WifiP2pGroup.md)!:Wi-Fi p2p group info |

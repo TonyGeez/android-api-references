@@ -5,7 +5,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 
 # SliceItem
 
-Kotlin| [Java](https://developer.android.com/reference/android/app/slice/SliceItem "View this page in Java") 
+Kotlin| [Java](../android/app/slice/SliceItem.md) 
 | --- | --- |
 
 ```
@@ -14,66 +14,66 @@ class SliceItem : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.slice.SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) |
+| ↳ | [android.app.slice.SliceItem](../android/app/slice/SliceItem.md) |
 
 | **This class was deprecated in API level 35.**
 |
-| Slice framework has been deprecated, it will not receive any updates from android.os.Build.VANILLA_ICE_CREAM and forward. If you are looking for a framework that sends displayable data from one app to another, consider using [android.app.appsearch.AppSearchManager](https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchManager.html#).
+| Slice framework has been deprecated, it will not receive any updates from android.os.Build.VANILLA_ICE_CREAM and forward. If you are looking for a framework that sends displayable data from one app to another, consider using [android.app.appsearch.AppSearchManager](../android/app/appsearch/AppSearchManager.md).
 
-A SliceItem is a single unit in the tree structure of a [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice). A SliceItem a piece of content and some hints about what that content means or how it should be displayed. The types of content can be:
-- [FORMAT_SLICE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_SLICE:kotlin.String)
-- [FORMAT_TEXT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_TEXT:kotlin.String)
-- [FORMAT_IMAGE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_IMAGE:kotlin.String)
-- [FORMAT_ACTION](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_ACTION:kotlin.String)
-- [FORMAT_INT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_INT:kotlin.String)
-- [FORMAT_LONG](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_LONG:kotlin.String)
-- [FORMAT_REMOTE_INPUT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_REMOTE_INPUT:kotlin.String)
-- [FORMAT_BUNDLE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_BUNDLE:kotlin.String)
-The hints that a [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) are a set of strings which annotate the content. The hints that are guaranteed to be understood by the system are defined on [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice).
+A SliceItem is a single unit in the tree structure of a [Slice](../android/app/slice/Slice.md). A SliceItem a piece of content and some hints about what that content means or how it should be displayed. The types of content can be:
+- [FORMAT_SLICE](../android/app/slice/SliceItem.md)
+- [FORMAT_TEXT](../android/app/slice/SliceItem.md)
+- [FORMAT_IMAGE](../android/app/slice/SliceItem.md)
+- [FORMAT_ACTION](../android/app/slice/SliceItem.md)
+- [FORMAT_INT](../android/app/slice/SliceItem.md)
+- [FORMAT_LONG](../android/app/slice/SliceItem.md)
+- [FORMAT_REMOTE_INPUT](../android/app/slice/SliceItem.md)
+- [FORMAT_BUNDLE](../android/app/slice/SliceItem.md)
+The hints that a [SliceItem](../android/app/slice/SliceItem.md) are a set of strings which annotate the content. The hints that are guaranteed to be understood by the system are defined on [Slice](../android/app/slice/Slice.md).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_ACTION](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_ACTION:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) Note: Actions contain 2 pieces of data, In addition to the pending intent, the item contains a [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice) that the action applies to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_BUNDLE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_BUNDLE:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_IMAGE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_IMAGE:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains an [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#) |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_ACTION](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains a [PendingIntent](../android/app/PendingIntent.md) Note: Actions contain 2 pieces of data, In addition to the pending intent, the item contains a [Slice](../android/app/slice/Slice.md) that the action applies to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_BUNDLE](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains a [Bundle](../android/os/Bundle.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_IMAGE](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains an [Icon](../android/graphics/drawable/Icon.md) |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_INT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_INT:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains an int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_LONG](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_LONG:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a long. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_REMOTE_INPUT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_REMOTE_INPUT:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput.html#). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_INT](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains an int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_LONG](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains a long. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_REMOTE_INPUT](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains a [RemoteInput](../android/app/RemoteInput.md). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_SLICE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_SLICE:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice) |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_TEXT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_TEXT:kotlin.String) A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#) |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_SLICE](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains a [Slice](../android/app/slice/Slice.md) |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FORMAT_TEXT](../android/app/slice/SliceItem.md) A [SliceItem](../android/app/slice/SliceItem.md) that contains a [CharSequence](../java/lang/CharSequence.md) |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#describeContents())`()` <br /> |
-| [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)! | [getAction](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getAction())`()` <br /> |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getBundle](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getBundle())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/slice/SliceItem.md))`()` <br /> |
+| [PendingIntent](../android/app/PendingIntent.md)! | [getAction](../android/app/slice/SliceItem.md))`()` <br /> |
+| [Bundle](../android/os/Bundle.md)! | [getBundle](../android/app/slice/SliceItem.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormat](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getFormat())`()` Get the format of this SliceItem. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getHints](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getHints())`()` Gets all hints associated with this SliceItem. |
-| [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)! | [getIcon](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getIcon())`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormat](../android/app/slice/SliceItem.md))`()` Get the format of this SliceItem. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getHints](../android/app/slice/SliceItem.md))`()` Gets all hints associated with this SliceItem. |
+| [Icon](../android/graphics/drawable/Icon.md)! | [getIcon](../android/app/slice/SliceItem.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getInt())`()` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getLong())`()` <br /> |
-| [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput.html#)! | [getRemoteInput](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getRemoteInput())`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../android/app/slice/SliceItem.md))`()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../android/app/slice/SliceItem.md))`()` <br /> |
+| [RemoteInput](../android/app/RemoteInput.md)! | [getRemoteInput](../android/app/slice/SliceItem.md))`()` <br /> |
 | --- | --- |
-| [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice)! | [getSlice](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getSlice())`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubType](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getSubType())`()` Get the sub-type of this SliceItem. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getText())`()` <br /> |
+| [Slice](../android/app/slice/Slice.md)! | [getSlice](../android/app/slice/SliceItem.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubType](../android/app/slice/SliceItem.md))`()` Get the sub-type of this SliceItem. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](../android/app/slice/SliceItem.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasHint](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#hasHint(kotlin.String))`(`hint:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasHint](../android/app/slice/SliceItem.md))`(`hint:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/slice/SliceItem.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SliceItem](../android/app/slice/SliceItem.md)!\> | [CREATOR](../android/app/slice/SliceItem.md) <br /> |
 
 ## Constants
 
@@ -87,7 +87,7 @@ static val FORMAT_ACTION: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#) Note: Actions contain 2 pieces of data, In addition to the pending intent, the item contains a [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice) that the action applies to. 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains a [PendingIntent](../android/app/PendingIntent.md) Note: Actions contain 2 pieces of data, In addition to the pending intent, the item contains a [Slice](../android/app/slice/Slice.md) that the action applies to. 
 
  Value: "action"
 
@@ -101,7 +101,7 @@ static val FORMAT_BUNDLE: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#). 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains a [Bundle](../android/os/Bundle.md). 
 
  Value: "bundle"
 
@@ -115,7 +115,7 @@ static val FORMAT_IMAGE: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains an [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#) 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains an [Icon](../android/graphics/drawable/Icon.md) 
 
  Value: "image"
 
@@ -129,7 +129,7 @@ static val FORMAT_INT: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains an int. 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains an int. 
 
  Value: "int"
 
@@ -143,7 +143,7 @@ static val FORMAT_LONG: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a long. 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains a long. 
 
  Value: "long"
 
@@ -157,7 +157,7 @@ static val FORMAT_REMOTE_INPUT: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput.html#). 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains a [RemoteInput](../android/app/RemoteInput.md). 
 
  Value: "input"
 
@@ -171,7 +171,7 @@ static val FORMAT_SLICE: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice) 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains a [Slice](../android/app/slice/Slice.md) 
 
  Value: "slice"
 
@@ -185,7 +185,7 @@ static val FORMAT_TEXT: String
 
 **Deprecated:** *Deprecated in Java.*
 
-A [SliceItem](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#) that contains a [CharSequence](https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#) 
+A [SliceItem](../android/app/slice/SliceItem.md) that contains a [CharSequence](../java/lang/CharSequence.md) 
 
  Value: "text"
 
@@ -203,7 +203,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### getAction
 
@@ -217,7 +217,7 @@ fun getAction(): PendingIntent!
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PendingIntent](https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)! | The pending intent held by this [FORMAT_ACTION](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_ACTION:kotlin.String) SliceItem |
+| [PendingIntent](../android/app/PendingIntent.md)! | The pending intent held by this [FORMAT_ACTION](../android/app/slice/SliceItem.md) SliceItem |
 
 ### getBundle
 
@@ -231,7 +231,7 @@ fun getBundle(): Bundle!
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | The parcelable held by this [FORMAT_BUNDLE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_BUNDLE:kotlin.String) SliceItem |
+| [Bundle](../android/os/Bundle.md)! | The parcelable held by this [FORMAT_BUNDLE](../android/app/slice/SliceItem.md) SliceItem |
 
 ### getFormat
 
@@ -246,14 +246,14 @@ fun getFormat(): String!
 Get the format of this SliceItem.
 
 The format will be one of the following types supported by the platform:
-- [FORMAT_SLICE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_SLICE:kotlin.String)
-- [FORMAT_TEXT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_TEXT:kotlin.String)
-- [FORMAT_IMAGE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_IMAGE:kotlin.String)
-- [FORMAT_ACTION](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_ACTION:kotlin.String)
-- [FORMAT_INT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_INT:kotlin.String)
-- [FORMAT_LONG](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_LONG:kotlin.String)
-- [FORMAT_REMOTE_INPUT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_REMOTE_INPUT:kotlin.String)
-- [FORMAT_BUNDLE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_BUNDLE:kotlin.String) 
+- [FORMAT_SLICE](../android/app/slice/SliceItem.md)
+- [FORMAT_TEXT](../android/app/slice/SliceItem.md)
+- [FORMAT_IMAGE](../android/app/slice/SliceItem.md)
+- [FORMAT_ACTION](../android/app/slice/SliceItem.md)
+- [FORMAT_INT](../android/app/slice/SliceItem.md)
+- [FORMAT_LONG](../android/app/slice/SliceItem.md)
+- [FORMAT_REMOTE_INPUT](../android/app/slice/SliceItem.md)
+- [FORMAT_BUNDLE](../android/app/slice/SliceItem.md) 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getSubType()>
@@ -272,7 +272,7 @@ Gets all hints associated with this SliceItem.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | Array of hints. This value cannot be`null`. Value is [android.app.slice.Slice#HINT_TITLE](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_TITLE:kotlin.String), [android.app.slice.Slice#HINT_LIST](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LIST:kotlin.String), [android.app.slice.Slice#HINT_LIST_ITEM](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LIST_ITEM:kotlin.String), [android.app.slice.Slice#HINT_LARGE](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LARGE:kotlin.String), [android.app.slice.Slice#HINT_ACTIONS](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_ACTIONS:kotlin.String), [android.app.slice.Slice#HINT_SELECTED](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SELECTED:kotlin.String), [android.app.slice.Slice#HINT_NO_TINT](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_NO_TINT:kotlin.String), [android.app.slice.Slice#HINT_SHORTCUT](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SHORTCUT:kotlin.String), android.app.slice.Slice.HINT_TOGGLE, [android.app.slice.Slice#HINT_HORIZONTAL](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_HORIZONTAL:kotlin.String), [android.app.slice.Slice#HINT_PARTIAL](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_PARTIAL:kotlin.String), [android.app.slice.Slice#HINT_SEE_MORE](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SEE_MORE:kotlin.String), [android.app.slice.Slice#HINT_KEYWORDS](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_KEYWORDS:kotlin.String), [android.app.slice.Slice#HINT_ERROR](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_ERROR:kotlin.String), [android.app.slice.Slice#HINT_TTL](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_TTL:kotlin.String), [android.app.slice.Slice#HINT_LAST_UPDATED](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LAST_UPDATED:kotlin.String), or [android.app.slice.Slice#HINT_PERMISSION_REQUEST](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_PERMISSION_REQUEST:kotlin.String) |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | Array of hints. This value cannot be`null`. Value is [android.app.slice.Slice#HINT_TITLE](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LIST](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LIST_ITEM](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LARGE](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_ACTIONS](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_SELECTED](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_NO_TINT](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_SHORTCUT](../android/app/slice/Slice.md), android.app.slice.Slice.HINT_TOGGLE, [android.app.slice.Slice#HINT_HORIZONTAL](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_PARTIAL](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_SEE_MORE](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_KEYWORDS](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_ERROR](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_TTL](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LAST_UPDATED](../android/app/slice/Slice.md), or [android.app.slice.Slice#HINT_PERMISSION_REQUEST](../android/app/slice/Slice.md) |
 
 ### getIcon
 
@@ -286,7 +286,7 @@ fun getIcon(): Icon!
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Icon](https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#)! | The icon held by this [FORMAT_IMAGE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_IMAGE:kotlin.String) SliceItem |
+| [Icon](../android/graphics/drawable/Icon.md)! | The icon held by this [FORMAT_IMAGE](../android/app/slice/SliceItem.md) SliceItem |
 
 ### getInt
 
@@ -300,7 +300,7 @@ fun getInt(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The color held by this [FORMAT_INT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_INT:kotlin.String) SliceItem |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The color held by this [FORMAT_INT](../android/app/slice/SliceItem.md) SliceItem |
 
 ### getLong
 
@@ -314,7 +314,7 @@ fun getLong(): Long
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The long held by this [FORMAT_LONG](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_LONG:kotlin.String) SliceItem |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The long held by this [FORMAT_LONG](../android/app/slice/SliceItem.md) SliceItem |
 
 ### getRemoteInput
 
@@ -328,7 +328,7 @@ fun getRemoteInput(): RemoteInput!
 
 | Return ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RemoteInput](https://developer.android.com/reference/kotlin/android/app/RemoteInput.html#)! | The remote input held by this [FORMAT_REMOTE_INPUT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_REMOTE_INPUT:kotlin.String) SliceItem |
+| [RemoteInput](../android/app/RemoteInput.md)! | The remote input held by this [FORMAT_REMOTE_INPUT](../android/app/slice/SliceItem.md) SliceItem |
 
 ### getSlice
 
@@ -342,7 +342,7 @@ fun getSlice(): Slice!
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Slice](https://developer.android.com/reference/kotlin/android/app/slice/Slice)! | The slice held by this [FORMAT_ACTION](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_ACTION:kotlin.String) or [FORMAT_SLICE](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_SLICE:kotlin.String) SliceItem |
+| [Slice](../android/app/slice/Slice.md)! | The slice held by this [FORMAT_ACTION](../android/app/slice/SliceItem.md) or [FORMAT_SLICE](../android/app/slice/SliceItem.md) SliceItem |
 
 ### getSubType
 
@@ -356,7 +356,7 @@ fun getSubType(): String!
 
 Get the sub-type of this SliceItem.
 
-Subtypes provide additional information about the type of this information beyond basic interpretations inferred by [getFormat()](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getFormat()). For example a slice may contain many [FORMAT_TEXT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_TEXT:kotlin.String) items, but only some of them may be [Slice.SUBTYPE_MESSAGE](https://developer.android.com/reference/kotlin/android/app/slice/Slice#SUBTYPE_MESSAGE:kotlin.String). 
+Subtypes provide additional information about the type of this information beyond basic interpretations inferred by [getFormat()](../android/app/slice/SliceItem.md)). For example a slice may contain many [FORMAT_TEXT](../android/app/slice/SliceItem.md) items, but only some of them may be [Slice.SUBTYPE_MESSAGE](../android/app/slice/Slice.md). 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#getFormat()> 
@@ -373,7 +373,7 @@ fun getText(): CharSequence!
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | The text held by this [FORMAT_TEXT](https://developer.android.com/reference/kotlin/android/app/slice/SliceItem#FORMAT_TEXT:kotlin.String) SliceItem |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | The text held by this [FORMAT_TEXT](../android/app/slice/SliceItem.md) SliceItem |
 
 ### hasHint
 
@@ -387,7 +387,7 @@ fun hasHint(hint: String!): Boolean
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `hint` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The hint to check for Value is [android.app.slice.Slice#HINT_TITLE](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_TITLE:kotlin.String), [android.app.slice.Slice#HINT_LIST](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LIST:kotlin.String), [android.app.slice.Slice#HINT_LIST_ITEM](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LIST_ITEM:kotlin.String), [android.app.slice.Slice#HINT_LARGE](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LARGE:kotlin.String), [android.app.slice.Slice#HINT_ACTIONS](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_ACTIONS:kotlin.String), [android.app.slice.Slice#HINT_SELECTED](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SELECTED:kotlin.String), [android.app.slice.Slice#HINT_NO_TINT](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_NO_TINT:kotlin.String), [android.app.slice.Slice#HINT_SHORTCUT](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SHORTCUT:kotlin.String), android.app.slice.Slice.HINT_TOGGLE, [android.app.slice.Slice#HINT_HORIZONTAL](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_HORIZONTAL:kotlin.String), [android.app.slice.Slice#HINT_PARTIAL](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_PARTIAL:kotlin.String), [android.app.slice.Slice#HINT_SEE_MORE](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_SEE_MORE:kotlin.String), [android.app.slice.Slice#HINT_KEYWORDS](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_KEYWORDS:kotlin.String), [android.app.slice.Slice#HINT_ERROR](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_ERROR:kotlin.String), [android.app.slice.Slice#HINT_TTL](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_TTL:kotlin.String), [android.app.slice.Slice#HINT_LAST_UPDATED](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_LAST_UPDATED:kotlin.String), or [android.app.slice.Slice#HINT_PERMISSION_REQUEST](https://developer.android.com/reference/kotlin/android/app/slice/Slice#HINT_PERMISSION_REQUEST:kotlin.String) |
+| `hint` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The hint to check for Value is [android.app.slice.Slice#HINT_TITLE](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LIST](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LIST_ITEM](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LARGE](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_ACTIONS](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_SELECTED](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_NO_TINT](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_SHORTCUT](../android/app/slice/Slice.md), android.app.slice.Slice.HINT_TOGGLE, [android.app.slice.Slice#HINT_HORIZONTAL](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_PARTIAL](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_SEE_MORE](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_KEYWORDS](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_ERROR](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_TTL](../android/app/slice/Slice.md), [android.app.slice.Slice#HINT_LAST_UPDATED](../android/app/slice/Slice.md), or [android.app.slice.Slice#HINT_PERMISSION_REQUEST](../android/app/slice/Slice.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------|
@@ -408,8 +408,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

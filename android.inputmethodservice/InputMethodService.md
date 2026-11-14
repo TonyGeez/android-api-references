@@ -8,12 +8,12 @@ open class InputMethodService : AbstractInputMethodService
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) |||||
-| | ↳ | [android.content.ContextWrapper](https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html#) ||||
-| | | ↳ | [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) |||
+| ↳ | [android.content.Context](../android/content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
+| | | ↳ | [android.app.Service](../android/app/Service.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.inputmethodservice.AbstractInputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService) ||
-| | | | | ↳ | [android.inputmethodservice.InputMethodService](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#) |
+| | | | ↳ | [android.inputmethodservice.AbstractInputMethodService](../android/inputmethodservice/AbstractInputMethodService.md) ||
+| | | | | ↳ | [android.inputmethodservice.InputMethodService](../android/inputmethodservice/InputMethodService.md) |
 
 InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize. See the base class `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService` and the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod.html#` interface for more information on the basics of writing input methods.
 
@@ -72,9 +72,9 @@ When the user switches between input targets, you will receive calls to `https:/
 
 | XML attributes ||
 |---|---|
-| [`android:imeExtractEnterAnimation`](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#attr_InputMethodService) | Animation to use when showing the fullscreen extract UI after it had previously been hidden. |
-| [`android:imeExtractExitAnimation`](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#attr_InputMethodService) | Animation to use when hiding the fullscreen extract UI after it had previously been shown. |
-| [`android:imeFullscreenBackground`](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#attr_InputMethodService) | Background to use for entire input method when it is being shown in fullscreen mode with the extract view, to ensure that it completely covers the application. |
+| [`android:imeExtractEnterAnimation`](../android/inputmethodservice/InputMethodService.md) | Animation to use when showing the fullscreen extract UI after it had previously been hidden. |
+| [`android:imeExtractExitAnimation`](../android/inputmethodservice/InputMethodService.md) | Animation to use when hiding the fullscreen extract UI after it had previously been shown. |
+| [`android:imeFullscreenBackground`](../android/inputmethodservice/InputMethodService.md) | Background to use for entire input method when it is being shown in fullscreen mode with the extract view, to ensure that it completely covers the application. |
 | --- | --- |
 
 | Constants ||
@@ -532,7 +532,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Context.html#KEYSTORE_SERVICE:kotlin.String`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](https://developer.android.com/reference/kotlin/privacy-and-security/keystore) functions.
+Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
 <br />
 
@@ -1114,23 +1114,23 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getBackDisposition()()` Retrieves the current disposition mode that indicates the expected back button affordance. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCandidatesHiddenVisibility()()` Returns the visibility mode (either `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`) of the candidates view when it is not shown. |
-| open [InputBinding](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCurrentInputBinding()()` Return the currently active InputBinding for the input method, or null if there is none. |
+| open [InputBinding](../android/view/inputmethod/InputBinding.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCurrentInputBinding()()` Return the currently active InputBinding for the input method, or null if there is none. |
 | --- | --- |
-| open [InputConnection](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCurrentInputConnection()()` Retrieve the currently active InputConnection that is bound to the input method, or null if there is none. |
-| open [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCurrentInputEditorInfo()()` <br /> |
+| open [InputConnection](../android/view/inputmethod/InputConnection.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCurrentInputConnection()()` Retrieve the currently active InputConnection that is bound to the input method, or null if there is none. |
+| open [EditorInfo](../android/view/inputmethod/EditorInfo.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCurrentInputEditorInfo()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getCurrentInputStarted()()` <br /> |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getInputMethodWindowRecommendedHeight()()` Aimed to return the previous input method's `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.Insets#contentTopInsets:kotlin.Int`, but its actual semantics has never been well defined. |
-| open [LayoutInflater](https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getLayoutInflater()()` <br /> |
+| open [LayoutInflater](../android/view/LayoutInflater.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getLayoutInflater()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getMaxWidth()()` Return the maximum width, in pixels, available the input method. |
 | --- | --- |
-| static [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getStylusHandwritingIdleTimeoutMax()()` Returns the maximum stylus handwriting session idle-timeout for use with `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#setStylusHandwritingSessionTimeout(java.time.Duration)`. |
-| [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getStylusHandwritingSessionTimeout()()` Returns the duration after which an ongoing stylus handwriting session that hasn't received new `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s will time out and `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#finishStylusHandwriting()` will be called. |
-| [Window](https://developer.android.com/reference/kotlin/android/view/Window.html#)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getStylusHandwritingWindow()()` Returns the stylus handwriting inking window. |
+| static [Duration](../java/time/Duration.md) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getStylusHandwritingIdleTimeoutMax()()` Returns the maximum stylus handwriting session idle-timeout for use with `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#setStylusHandwritingSessionTimeout(java.time.Duration)`. |
+| [Duration](../java/time/Duration.md) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getStylusHandwritingSessionTimeout()()` Returns the duration after which an ongoing stylus handwriting session that hasn't received new `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s will time out and `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#finishStylusHandwriting()` will be called. |
+| [Window](../android/view/Window.md)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getStylusHandwritingWindow()()` Returns the stylus handwriting inking window. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getTextForImeAction(kotlin.Int)(imeOptions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return text that can be used as a button label for the given `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#imeOptions:kotlin.Int`. |
-| open [Dialog](https://developer.android.com/reference/kotlin/android/app/Dialog.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getWindow()()` <br /> |
+| open [Dialog](../android/app/Dialog.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#getWindow()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#hideStatusIcon()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#hideWindow()()` <br /> |
@@ -1148,13 +1148,13 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onConfigureWindow(android.view.Window,%20kotlin.Boolean,%20kotlin.Boolean)(win: https://developer.android.com/reference/kotlin/android/view/Window.html#!, isFullscreen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, isCandidatesOnly: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Update the given window's parameters for the given mode. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreate()()` Called by the system when the service is first created. |
 | --- | --- |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateCandidatesView()()` Create and return the view hierarchy used to show candidates. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateExtractTextView()()` Called by the framework to create the layout for showing extracted text. |
-| open [InlineSuggestionsRequest](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest.html#)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInlineSuggestionsRequest(android.os.Bundle)(uiExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called when Autofill is requesting an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest.html#` from the IME. |
+| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateCandidatesView()()` Create and return the view hierarchy used to show candidates. |
+| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateExtractTextView()()` Called by the framework to create the layout for showing extracted text. |
+| open [InlineSuggestionsRequest](../android/view/inputmethod/InlineSuggestionsRequest.md)? | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInlineSuggestionsRequest(android.os.Bundle)(uiExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called when Autofill is requesting an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsRequest.html#` from the IME. |
 | --- | --- |
-| open [AbstractInputMethodService.AbstractInputMethodImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInputMethodInterface()()` Implement to return our standard `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodImpl`. |
-| open [AbstractInputMethodService.AbstractInputMethodSessionImpl](https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInputMethodSessionInterface()()` Implement to return our standard `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodSessionImpl`. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInputView()()` Create and return the view hierarchy used for the input area (such as a soft keyboard). |
+| open [AbstractInputMethodService.AbstractInputMethodImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInputMethodInterface()()` Implement to return our standard `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodImpl`. |
+| open [AbstractInputMethodService.AbstractInputMethodSessionImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInputMethodSessionInterface()()` Implement to return our standard `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.InputMethodSessionImpl`. |
+| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCreateInputView()()` Create and return the view hierarchy used for the input area (such as a soft keyboard). |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onCustomImeSwitcherButtonRequestedVisible(kotlin.Boolean)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the requested visibility of a custom IME Switcher button changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
@@ -2676,7 +2676,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -2717,9 +2717,9 @@ The system attempts to keep running services around as much as possible. The onl
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to start the given service.
 
 **Note:** Each call to startService() results in significant work done by the system to manage service lifecycle surrounding the processing of the intent, which can take multiple milliseconds of CPU time. Due to this cost, startService() should not be used for frequent intent delivery to a service, and only for scheduling significant work. Use #bindService for high frequency calls.
-Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](https://developer.android.com/reference/kotlin/about/versions/oreo/background) for more details.
+Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` or higher are not allowed to start background services from the background. See [Background Execution Limits](../about/versions/oreo/background.md) for more details.
 
-**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](https://developer.android.com/reference/kotlin/about/versions/12/behavior-changes-12) for more details.
+**Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
 <br />
 
@@ -3540,7 +3540,7 @@ Note that this method is not called when `https://developer.android.com/referenc
 
 | Parameters ||
 |---|---|
-| `outInsets` | [InputMethodService.Insets](https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.Insets)!: Fill in with the current UI insets. |
+| `outInsets` | [InputMethodService.Insets](../android/inputmethodservice/InputMethodService.Insets.md)!: Fill in with the current UI insets. |
 
 ### onConfigurationChanged
 
@@ -3560,7 +3560,7 @@ Between `https://developer.android.com/reference/kotlin/android/os/Build.VERSION
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#): The new device configuration. This value cannot be `null`. |
+| `newConfig` | [Configuration](../android/content/res/Configuration.md): The new device configuration. This value cannot be `null`. |
 | `configuration` | This value cannot be `null`. |
 
 ### onConfigureWindow
@@ -3581,7 +3581,7 @@ The default implementation makes the layout for the window MATCH_PARENT x MATCH_
 
 | Parameters ||
 |---|---|
-| `win` | [Window](https://developer.android.com/reference/kotlin/android/view/Window.html#)!: The input method's window. |
+| `win` | [Window](../android/view/Window.md)!: The input method's window. |
 | `isFullscreen` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, the window is running in fullscreen mode and intended to cover the entire application display. |
 | `isCandidatesOnly` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, the window is only showing the candidates view and none of the rest of its UI. This is mutually exclusive with fullscreen mode. |
 | --- | --- |
@@ -3636,7 +3636,7 @@ If the IME wants to support displaying inline suggestions, they must set support
 
 | Parameters ||
 |---|---|
-| `uiExtras` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#): the extras that contain the UI renderer related information. This value cannot be `null`. |
+| `uiExtras` | [Bundle](../android/os/Bundle.md): the extras that contain the UI renderer related information. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3877,7 +3877,7 @@ Override this to intercept generic motion events before they are processed by th
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The motion event being received. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event being received. |
 
 | Return ||
 |---|---|
@@ -3907,7 +3907,7 @@ Should be implemented by subclasses.
 
 | Parameters ||
 |---|---|
-| `response` | [InlineSuggestionsResponse](https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse.html#): `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse.html#` passed back by Autofill. This value cannot be `null`. |
+| `response` | [InlineSuggestionsResponse](../android/view/inputmethod/InlineSuggestionsResponse.md): `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestionsResponse.html#` passed back by Autofill. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3933,7 +3933,7 @@ The default implementation does not take flags specified to `https://developer.a
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in `event.getKeyCode()` |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event |
 
 | Return ||
 |---|---|
@@ -3955,7 +3955,7 @@ Default implementation of `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -3981,7 +3981,7 @@ The default implementation always returns false, except when in fullscreen mode,
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Number of pairs as returned by event.getRepeatCount(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 | --- | --- |
 
 | Return ||
@@ -4006,7 +4006,7 @@ The default implementation intercepts `https://developer.android.com/reference/k
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!: Description of the key event. |
+| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -4041,7 +4041,7 @@ To protect against replay attacks or unauthorized input injection, the system wi
 | Parameters ||
 |---|---|
 | `event` | This value cannot be `null`. |
-| `keyEvent` | [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#): the event that may need verification. This value cannot be `null`. |
+| `keyEvent` | [KeyEvent](../android/view/KeyEvent.md): the event that may need verification. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4085,7 +4085,7 @@ Note that this will *not* be called when the input method is running in full edi
 
 | Parameters ||
 |---|---|
-| `editorInfo` | [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#)!: Description of the type of text being edited. |
+| `editorInfo` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: Description of the type of text being edited. |
 | `restarting` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Set to true if we are restarting input on the same text field as before. |
 
 ### onStartConnectionlessStylusHandwriting
@@ -4107,7 +4107,7 @@ If the IME can start the connectionless handwriting session, it should return `t
 
 | Parameters ||
 |---|---|
-| `cursorAnchorInfo` | [CursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo.html#)?: This value may be `null`. |
+| `cursorAnchorInfo` | [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)?: This value may be `null`. |
 
 ### onStartInput
 
@@ -4124,7 +4124,7 @@ Called to inform the input method that text input has started in an editor. You 
 
 | Parameters ||
 |---|---|
-| `attribute` | [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#)!: The attributes of the editor that input is starting in. |
+| `attribute` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: The attributes of the editor that input is starting in. |
 | `restarting` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Set to true if input is restarting in the same editor such as because the application has changed the text in the editor. Otherwise will be false, indicating this is a new session with the editor. |
 
 ### onStartInputView
@@ -4142,7 +4142,7 @@ Called when the input view is being shown and input has started on a new editor.
 
 | Parameters ||
 |---|---|
-| `editorInfo` | [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#)!: Description of the type of text being edited. |
+| `editorInfo` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: Description of the type of text being edited. |
 | `restarting` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Set to true if we are restarting input on the same text field as before. |
 
 ### onStartStylusHandwriting
@@ -4171,7 +4171,7 @@ Called after `https://developer.android.com/reference/kotlin/android/inputmethod
 
 | Parameters ||
 |---|---|
-| `motionEvent` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#): `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` from stylus. This value cannot be `null`. |
+| `motionEvent` | [MotionEvent](../android/view/MotionEvent.md): `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` from stylus. This value cannot be `null`. |
 
 ### onTrackballEvent
 
@@ -4185,7 +4185,7 @@ Override this to intercept trackball motion events before they are processed by 
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#)!: The motion event being received. |
+| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event being received. |
 
 | Return ||
 |---|---|
@@ -4226,7 +4226,7 @@ Called when the application has reported a new location of its text insertion po
 
 | Parameters ||
 |---|---|
-| `cursorAnchorInfo` | [CursorAnchorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo.html#)!: The positional information of the text insertion point and the composition string. |
+| `cursorAnchorInfo` | [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)!: The positional information of the text insertion point and the composition string. |
 
 ### onUpdateEditorToolType
 
@@ -4508,7 +4508,7 @@ Note: If the IME decides to use this API, it should be updating the desired regi
 
 | Parameters ||
 |---|---|
-| `handwritingRegion` | [Region](https://developer.android.com/reference/kotlin/android/graphics/Region.html#): new stylus handwritable `https://developer.android.com/reference/kotlin/android/graphics/Region.html#` that can accept stylus touch. This value cannot be `null`. |
+| `handwritingRegion` | [Region](../android/graphics/Region.md): new stylus handwritable `https://developer.android.com/reference/kotlin/android/graphics/Region.html#` that can accept stylus touch. This value cannot be `null`. |
 
 ### setStylusHandwritingSessionTimeout
 
@@ -4522,7 +4522,7 @@ Sets the duration after which an ongoing stylus handwriting session that hasn't 
 
 | Parameters ||
 |---|---|
-| `duration` | [Duration](https://developer.android.com/reference/kotlin/java/time/Duration.html#): timeout to set. This value cannot be `null`. |
+| `duration` | [Duration](../java/time/Duration.md): timeout to set. This value cannot be `null`. |
 
 **See Also**
 
@@ -4588,7 +4588,7 @@ Force switch to a new input method, as identified by id. This input method will 
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the input method is unknown or filtered by the rules of [package visibility](https://developer.android.com/reference/kotlin/training/basics/intents/package-visibility). |
+| `java.lang.IllegalArgumentException` | if the input method is unknown or filtered by the rules of [package visibility](../training/basics/intents/package-visibility.md). |
 
 ### switchInputMethod
 
@@ -4606,11 +4606,11 @@ Force switch to a new input method, as identified by `id`. This input method wil
 | Parameters ||
 |---|---|
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Unique identifier of the new input method to start. |
-| `subtype` | [InputMethodSubtype](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype.html#)!: The new subtype of the new input method to be switched to. |
+| `subtype` | [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!: The new subtype of the new input method to be switched to. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the input method is unknown or filtered by the rules of [package visibility](https://developer.android.com/reference/kotlin/training/basics/intents/package-visibility). |
+| `java.lang.IllegalArgumentException` | if the input method is unknown or filtered by the rules of [package visibility](../training/basics/intents/package-visibility.md). |
 
 ### switchToNextInputMethod
 
@@ -4682,7 +4682,7 @@ Performs a dump of the InputMethodService's internal state. Override to add your
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)!: The raw file descriptor that the dump is being sent to. |
+| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 | --- | --- |
@@ -4699,4 +4699,4 @@ Called when the subtype was changed.
 
 | Parameters ||
 |---|---|
-| `newSubtype` | [InputMethodSubtype](https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype.html#)!: the subtype which is being changed to. |
+| `newSubtype` | [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!: the subtype which is being changed to. |

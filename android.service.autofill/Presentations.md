@@ -8,7 +8,7 @@ class Presentations
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.Presentations](https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#) |
+| ↳ | [android.service.autofill.Presentations](../android/service/autofill/Presentations.md) |
 
 Holds presentations used to visualize autofill suggestions for each available UI type.
 
@@ -20,11 +20,11 @@ Holds presentations used to visualize autofill suggestions for each available UI
 
 | Public methods ||
 |---|---|
-| [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getDialogPresentation()()` The presentation used to visualize this field in the [fill dialog UI](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset#FillDialogUI) |
-| [InlinePresentation](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getInlinePresentation()()` The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to visualize this dataset as inline suggestions. |
-| [InlinePresentation](https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getInlineTooltipPresentation()()` The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to show the tooltip for the `mInlinePresentation`. |
+| [RemoteViews](../android/widget/RemoteViews.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getDialogPresentation()()` The presentation used to visualize this field in the [fill dialog UI](../android/service/autofill/Dataset.md) |
+| [InlinePresentation](../android/service/autofill/InlinePresentation.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getInlinePresentation()()` The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to visualize this dataset as inline suggestions. |
+| [InlinePresentation](../android/service/autofill/InlinePresentation.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getInlineTooltipPresentation()()` The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to show the tooltip for the `mInlinePresentation`. |
 | --- | --- |
-| [RemoteViews](https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getMenuPresentation()()` The presentation used to visualize this field in fill UI. |
+| [RemoteViews](../android/widget/RemoteViews.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getMenuPresentation()()` The presentation used to visualize this field in fill UI. |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getDialogPresentation(): RemoteViews?
 ```
 
-The presentation used to visualize this field in the [fill dialog UI](https://developer.android.com/reference/kotlin/android/service/autofill/Dataset#FillDialogUI)
+The presentation used to visualize this field in the [fill dialog UI](../android/service/autofill/Dataset.md)
 
 Theme does not work with RemoteViews layout. Avoid hardcoded text color or background color: Autofill on different platforms may have different themes.
 

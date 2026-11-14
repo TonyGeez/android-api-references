@@ -8,11 +8,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 interface DoubleStream : BaseStream<Double!, DoubleStream!>
 ```
 
-| [java.util.stream.DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#) |
+| [java.util.stream.DoubleStream](../java/util/stream/DoubleStream.md) |
 
 A sequence of primitive double-valued elements supporting sequential and parallel aggregate operations. This is the`double`primitive specialization of .
 
-The following example illustrates an aggregate operation using [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream) and [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#), computing the sum of the weights of the red widgets: 
+The following example illustrates an aggregate operation using [Stream](../java/util/stream/Stream.md) and [DoubleStream](../java/util/stream/DoubleStream.md), computing the sum of the weights of the red widgets: 
 
 ```kotlin
 <code>double sum = widgets.stream()
@@ -21,79 +21,79 @@ The following example illustrates an aggregate operation using [Stream](https://
                           .sum();
   </code>
 ```
-See the class documentation for [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream) and the package documentation for [java.util.stream](https://developer.android.com/reference/kotlin/java/util/stream/package-summary) for additional specification of streams, stream operations, stream pipelines, and parallelism.
+See the class documentation for [Stream](../java/util/stream/Stream.md) and the package documentation for [java.util.stream](../java/util/stream/_package.md) for additional specification of streams, stream operations, stream pipelines, and parallelism.
 
 ## Summary
 
 | Nested classes ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Builder](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.Builder) A mutable builder for a`DoubleStream`. |
-| abstract | [DoubleMapMultiConsumer](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.DoubleMapMultiConsumer) Represents an operation that accepts a`double`-valued argument and a DoubleConsumer, and returns no result. |
+| abstract | [Builder](../java/util/stream/DoubleStream.Builder.md) A mutable builder for a`DoubleStream`. |
+| abstract | [DoubleMapMultiConsumer](../java/util/stream/DoubleStream.DoubleMapMultiConsumer.md) Represents an operation that accepts a`double`-valued argument and a DoubleConsumer, and returns no result. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allMatch](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#allMatch(java.util.function.DoublePredicate))`(`predicate:` ` [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!`)` Returns whether all elements of this stream match the provided predicate. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [anyMatch](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#anyMatch(java.util.function.DoublePredicate))`(`predicate:` ` [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!`)` Returns whether any elements of this stream match the provided predicate. |
-| abstract [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | [average](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#average())`()` Returns an`OptionalDouble`describing the arithmetic mean of elements of this stream, or an empty optional if this stream is empty. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allMatch](../java/util/stream/DoubleStream.md))`(`predicate:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns whether all elements of this stream match the provided predicate. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [anyMatch](../java/util/stream/DoubleStream.md))`(`predicate:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns whether any elements of this stream match the provided predicate. |
+| abstract [OptionalDouble](../java/util/OptionalDouble.md)! | [average](../java/util/stream/DoubleStream.md))`()` Returns an`OptionalDouble`describing the arithmetic mean of elements of this stream, or an empty optional if this stream is empty. |
 | --- | --- |
-| abstract [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [boxed](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#boxed())`()` Returns a`Stream`consisting of the elements of this stream, boxed to`Double`. |
-| openstatic [DoubleStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.Builder)! | [builder](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#builder())`()` Returns a builder for a`DoubleStream`. |
-| abstractR | [collect](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#collect(java.util.function.Supplier,%20java.util.function.ObjDoubleConsumer,%20java.util.function.BiConsumer))`(`supplier:` ` [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)<R>!`, `accumulator:` ` [ObjDoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/ObjDoubleConsumer.html#)<R>!`, `combiner:` ` [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)<R,` `R>!`)` Performs a [mutable reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#MutableReduction) operation on the elements of this stream. |
+| abstract [Stream](../java/util/stream/Stream.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [boxed](../java/util/stream/DoubleStream.md))`()` Returns a`Stream`consisting of the elements of this stream, boxed to`Double`. |
+| openstatic [DoubleStream.Builder](../java/util/stream/DoubleStream.Builder.md)! | [builder](../java/util/stream/DoubleStream.md))`()` Returns a builder for a`DoubleStream`. |
+| abstractR | [collect](../java/util/stream/DoubleStream.md))`(`supplier:` ` [Supplier](../java/util/function/Supplier.md)<R>!`, `accumulator:` ` [ObjDoubleConsumer](../java/util/function/ObjDoubleConsumer.md)<R>!`, `combiner:` ` [BiConsumer](../java/util/function/BiConsumer.md)<R,` `R>!`)` Performs a [mutable reduction](../java/util/stream/_package.md) operation on the elements of this stream. |
 | --- | --- |
-| openstatic [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [concat](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#concat(java.util.stream.DoubleStream,%20java.util.stream.DoubleStream))`(`a:` ` [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)!`, `b:` ` [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)!`)` Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [count](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#count())`()` Returns the count of elements in this stream. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [distinct](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#distinct())`()` Returns a stream consisting of the distinct elements of this stream. |
+| openstatic [DoubleStream](../java/util/stream/DoubleStream.md)! | [concat](../java/util/stream/DoubleStream.md))`(`a:` ` [DoubleStream](../java/util/stream/DoubleStream.md)!`, `b:` ` [DoubleStream](../java/util/stream/DoubleStream.md)!`)` Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of the second stream. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [count](../java/util/stream/DoubleStream.md))`()` Returns the count of elements in this stream. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [distinct](../java/util/stream/DoubleStream.md))`()` Returns a stream consisting of the distinct elements of this stream. |
 | --- | --- |
-| open [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [dropWhile](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#dropWhile(java.util.function.DoublePredicate))`(`predicate:` ` [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!`)` Returns, if this stream is ordered, a stream consisting of the remaining elements of this stream after dropping the longest prefix of elements that match the given predicate. |
-| openstatic [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [empty](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#empty())`()` Returns an empty sequential`DoubleStream`. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [filter](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#filter(java.util.function.DoublePredicate))`(`predicate:` ` [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!`)` Returns a stream consisting of the elements of this stream that match the given predicate. |
+| open [DoubleStream](../java/util/stream/DoubleStream.md)! | [dropWhile](../java/util/stream/DoubleStream.md))`(`predicate:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns, if this stream is ordered, a stream consisting of the remaining elements of this stream after dropping the longest prefix of elements that match the given predicate. |
+| openstatic [DoubleStream](../java/util/stream/DoubleStream.md)! | [empty](../java/util/stream/DoubleStream.md))`()` Returns an empty sequential`DoubleStream`. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [filter](../java/util/stream/DoubleStream.md))`(`predicate:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns a stream consisting of the elements of this stream that match the given predicate. |
 | --- | --- |
-| abstract [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | [findAny](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#findAny())`()` Returns an [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#) describing some element of the stream, or an empty`OptionalDouble`if the stream is empty. |
-| abstract [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | [findFirst](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#findFirst())`()` Returns an [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#) describing the first element of this stream, or an empty`OptionalDouble`if the stream is empty. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [flatMap](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#flatMap(java.util.function.DoubleFunction))`(`mapper:` ` [DoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleFunction.html#)<out` ` [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)!>!`)` Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. |
+| abstract [OptionalDouble](../java/util/OptionalDouble.md)! | [findAny](../java/util/stream/DoubleStream.md))`()` Returns an [OptionalDouble](../java/util/OptionalDouble.md) describing some element of the stream, or an empty`OptionalDouble`if the stream is empty. |
+| abstract [OptionalDouble](../java/util/OptionalDouble.md)! | [findFirst](../java/util/stream/DoubleStream.md))`()` Returns an [OptionalDouble](../java/util/OptionalDouble.md) describing the first element of this stream, or an empty`OptionalDouble`if the stream is empty. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [flatMap](../java/util/stream/DoubleStream.md))`(`mapper:` ` [DoubleFunction](../java/util/function/DoubleFunction.md)<out` ` [DoubleStream](../java/util/stream/DoubleStream.md)!>!`)` Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#forEach(java.util.function.DoubleConsumer))`(`action:` ` [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#)!`)` Performs an action for each element of this stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachOrdered](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#forEachOrdered(java.util.function.DoubleConsumer))`(`action:` ` [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#)!`)` Performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order. |
-| openstatic [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [generate](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#generate(java.util.function.DoubleSupplier))`(`s:` ` [DoubleSupplier](https://developer.android.com/reference/kotlin/java/util/function/DoubleSupplier.html#)!`)` Returns an infinite sequential unordered stream where each element is generated by the provided`DoubleSupplier`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/stream/DoubleStream.md))`(`action:` ` [DoubleConsumer](../java/util/function/DoubleConsumer.md)!`)` Performs an action for each element of this stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachOrdered](../java/util/stream/DoubleStream.md))`(`action:` ` [DoubleConsumer](../java/util/function/DoubleConsumer.md)!`)` Performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order. |
+| openstatic [DoubleStream](../java/util/stream/DoubleStream.md)! | [generate](../java/util/stream/DoubleStream.md))`(`s:` ` [DoubleSupplier](../java/util/function/DoubleSupplier.md)!`)` Returns an infinite sequential unordered stream where each element is generated by the provided`DoubleSupplier`. |
 | --- | --- |
-| openstatic [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [iterate](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#iterate(kotlin.Double,%20java.util.function.DoublePredicate,%20java.util.function.DoubleUnaryOperator))`(`seed:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `hasNext:` ` [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!`, `next:` ` [DoubleUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleUnaryOperator.html#)!`)` Returns a sequential ordered`DoubleStream`produced by iterative application of the given`next`function to an initial element, conditioned on satisfying the given`hasNext`predicate. |
-| openstatic [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [iterate](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#iterate(kotlin.Double,%20java.util.function.DoubleUnaryOperator))`(`seed:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `f:` ` [DoubleUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleUnaryOperator.html#)!`)` Returns an infinite sequential ordered`DoubleStream`produced by iterative application of a function`f`to an initial element`seed`, producing a`Stream`consisting of`seed`,`f(seed)`,`f(f(seed))`, etc. |
-| abstract [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble.html#)! | [iterator](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#iterator())`()` <br /> |
+| openstatic [DoubleStream](../java/util/stream/DoubleStream.md)! | [iterate](../java/util/stream/DoubleStream.md))`(`seed:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `hasNext:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`, `next:` ` [DoubleUnaryOperator](../java/util/function/DoubleUnaryOperator.md)!`)` Returns a sequential ordered`DoubleStream`produced by iterative application of the given`next`function to an initial element, conditioned on satisfying the given`hasNext`predicate. |
+| openstatic [DoubleStream](../java/util/stream/DoubleStream.md)! | [iterate](../java/util/stream/DoubleStream.md))`(`seed:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `f:` ` [DoubleUnaryOperator](../java/util/function/DoubleUnaryOperator.md)!`)` Returns an infinite sequential ordered`DoubleStream`produced by iterative application of a function`f`to an initial element`seed`, producing a`Stream`consisting of`seed`,`f(seed)`,`f(f(seed))`, etc. |
+| abstract [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)! | [iterator](../java/util/stream/DoubleStream.md))`()` <br /> |
 | --- | --- |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [limit](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#limit(kotlin.Long))`(`maxSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the elements of this stream, truncated to be no longer than`maxSize`in length. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [map](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#map(java.util.function.DoubleUnaryOperator))`(`mapper:` ` [DoubleUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleUnaryOperator.html#)!`)` Returns a stream consisting of the results of applying the given function to the elements of this stream. |
-| open [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [mapMulti](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer))`(`mapper:` ` [DoubleStream.DoubleMapMultiConsumer](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.DoubleMapMultiConsumer)!`)` Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [limit](../java/util/stream/DoubleStream.md))`(`maxSize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the elements of this stream, truncated to be no longer than`maxSize`in length. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [map](../java/util/stream/DoubleStream.md))`(`mapper:` ` [DoubleUnaryOperator](../java/util/function/DoubleUnaryOperator.md)!`)` Returns a stream consisting of the results of applying the given function to the elements of this stream. |
+| open [DoubleStream](../java/util/stream/DoubleStream.md)! | [mapMulti](../java/util/stream/DoubleStream.md))`(`mapper:` ` [DoubleStream.DoubleMapMultiConsumer](../java/util/stream/DoubleStream.DoubleMapMultiConsumer.md)!`)` Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. |
 | --- | --- |
-| abstract [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | [mapToInt](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#mapToInt(java.util.function.DoubleToIntFunction))`(`mapper:` ` [DoubleToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleToIntFunction.html#)!`)` Returns an`IntStream`consisting of the results of applying the given function to the elements of this stream. |
-| abstract [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | [mapToLong](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#mapToLong(java.util.function.DoubleToLongFunction))`(`mapper:` ` [DoubleToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleToLongFunction.html#)!`)` Returns a`LongStream`consisting of the results of applying the given function to the elements of this stream. |
-| abstract [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)\<U\>! | [mapToObj](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#mapToObj(java.util.function.DoubleFunction))`(`mapper:` ` [DoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleFunction.html#)<out` `U>!`)` Returns an object-valued`Stream`consisting of the results of applying the given function to the elements of this stream. |
+| abstract [IntStream](../java/util/stream/IntStream.md)! | [mapToInt](../java/util/stream/DoubleStream.md))`(`mapper:` ` [DoubleToIntFunction](../java/util/function/DoubleToIntFunction.md)!`)` Returns an`IntStream`consisting of the results of applying the given function to the elements of this stream. |
+| abstract [LongStream](../java/util/stream/LongStream.md)! | [mapToLong](../java/util/stream/DoubleStream.md))`(`mapper:` ` [DoubleToLongFunction](../java/util/function/DoubleToLongFunction.md)!`)` Returns a`LongStream`consisting of the results of applying the given function to the elements of this stream. |
+| abstract [Stream](../java/util/stream/Stream.md)\<U\>! | [mapToObj](../java/util/stream/DoubleStream.md))`(`mapper:` ` [DoubleFunction](../java/util/function/DoubleFunction.md)<out` `U>!`)` Returns an object-valued`Stream`consisting of the results of applying the given function to the elements of this stream. |
 | --- | --- |
-| abstract [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | [max](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#max())`()` Returns an`OptionalDouble`describing the maximum element of this stream, or an empty OptionalDouble if this stream is empty. |
-| abstract [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | [min](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#min())`()` Returns an`OptionalDouble`describing the minimum element of this stream, or an empty OptionalDouble if this stream is empty. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [noneMatch](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#noneMatch(java.util.function.DoublePredicate))`(`predicate:` ` [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!`)` Returns whether no elements of this stream match the provided predicate. |
+| abstract [OptionalDouble](../java/util/OptionalDouble.md)! | [max](../java/util/stream/DoubleStream.md))`()` Returns an`OptionalDouble`describing the maximum element of this stream, or an empty OptionalDouble if this stream is empty. |
+| abstract [OptionalDouble](../java/util/OptionalDouble.md)! | [min](../java/util/stream/DoubleStream.md))`()` Returns an`OptionalDouble`describing the minimum element of this stream, or an empty OptionalDouble if this stream is empty. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [noneMatch](../java/util/stream/DoubleStream.md))`(`predicate:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns whether no elements of this stream match the provided predicate. |
 | --- | --- |
-| openstatic [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [of](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#of(kotlin.Double))`(`t:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a sequential`DoubleStream`containing a single element. |
-| openstatic [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [of](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#of(kotlin.Double))`(`vararg` `values:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a sequential ordered stream whose elements are the specified values. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [parallel](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#parallel())`()` <br /> |
+| openstatic [DoubleStream](../java/util/stream/DoubleStream.md)! | [of](../java/util/stream/DoubleStream.md))`(`t:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a sequential`DoubleStream`containing a single element. |
+| openstatic [DoubleStream](../java/util/stream/DoubleStream.md)! | [of](../java/util/stream/DoubleStream.md))`(`vararg` `values:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a sequential ordered stream whose elements are the specified values. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [parallel](../java/util/stream/DoubleStream.md))`()` <br /> |
 | --- | --- |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [peek](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#peek(java.util.function.DoubleConsumer))`(`action:` ` [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#)!`)` Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream. |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduce](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#reduce(kotlin.Double,%20java.util.function.DoubleBinaryOperator))`(`identity:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `op:` ` [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)!`)` Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using the provided identity value and an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns the reduced value. |
-| abstract [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | [reduce](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#reduce(java.util.function.DoubleBinaryOperator))`(`op:` ` [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)!`)` Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns an`OptionalDouble`describing the reduced value, if any. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [peek](../java/util/stream/DoubleStream.md))`(`action:` ` [DoubleConsumer](../java/util/function/DoubleConsumer.md)!`)` Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [reduce](../java/util/stream/DoubleStream.md))`(`identity:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `op:` ` [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)!`)` Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using the provided identity value and an [associative](../java/util/stream/_package.md) accumulation function, and returns the reduced value. |
+| abstract [OptionalDouble](../java/util/OptionalDouble.md)! | [reduce](../java/util/stream/DoubleStream.md))`(`op:` ` [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)!`)` Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using an [associative](../java/util/stream/_package.md) accumulation function, and returns an`OptionalDouble`describing the reduced value, if any. |
 | --- | --- |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [sequential](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#sequential())`()` <br /> |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [skip](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#skip(kotlin.Long))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the remaining elements of this stream after discarding the first`n`elements of the stream. |
-| abstract [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [sorted](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#sorted())`()` Returns a stream consisting of the elements of this stream in sorted order. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [sequential](../java/util/stream/DoubleStream.md))`()` <br /> |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [skip](../java/util/stream/DoubleStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a stream consisting of the remaining elements of this stream after discarding the first`n`elements of the stream. |
+| abstract [DoubleStream](../java/util/stream/DoubleStream.md)! | [sorted](../java/util/stream/DoubleStream.md))`()` Returns a stream consisting of the elements of this stream in sorted order. |
 | --- | --- |
-| abstract [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble.html#)! | [spliterator](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#spliterator())`()` <br /> |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sum](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#sum())`()` Returns the sum of elements in this stream. |
-| abstract [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics.html#)! | [summaryStatistics](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#summaryStatistics())`()` Returns a`DoubleSummaryStatistics`describing various summary data about the elements of this stream. |
+| abstract [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](../java/util/stream/DoubleStream.md))`()` <br /> |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sum](../java/util/stream/DoubleStream.md))`()` Returns the sum of elements in this stream. |
+| abstract [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md)! | [summaryStatistics](../java/util/stream/DoubleStream.md))`()` Returns a`DoubleSummaryStatistics`describing various summary data about the elements of this stream. |
 | --- | --- |
-| open [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | [takeWhile](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#takeWhile(java.util.function.DoublePredicate))`(`predicate:` ` [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!`)` Returns, if this stream is ordered, a stream consisting of the longest prefix of elements taken from this stream that match the given predicate. |
-| abstract [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)! | [toArray](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#toArray())`()` Returns an array containing the elements of this stream. |
+| open [DoubleStream](../java/util/stream/DoubleStream.md)! | [takeWhile](../java/util/stream/DoubleStream.md))`(`predicate:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns, if this stream is ordered, a stream consisting of the longest prefix of elements taken from this stream that match the given predicate. |
+| abstract [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)! | [toArray](../java/util/stream/DoubleStream.md))`()` Returns an array containing the elements of this stream. |
 
 | Inherited functions ||
 |---|---|
-| From class [BaseStream](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#close())`()` <br /> Closes this stream, causing all close handlers for this stream pipeline to be called. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParallel](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#isParallel())`()` <br /> Returns whether this stream, if a terminal operation were to be executed, would execute in parallel. Calling this method after invoking an terminal stream operation method may yield unpredictable results. <br /> | | S | [onClose](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#onClose(java.lang.Runnable))`(`closeHandler:` ` [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!`)` <br /> Returns an equivalent stream with an additional close handler. Close handlers are run when the [close()](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#close())method is called on the stream, and are executed in the order they were added. All close handlers are run, even if earlier close handlers throw exceptions. If any close handler throws an exception, the first exception thrown will be relayed to the caller of`close()`, with any remaining exceptions added to that exception as suppressed exceptions (unless one of the remaining exceptions is the same exception as the first exception, since an exception cannot suppress itself.) May return itself. This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps). <br /> | | S | [unordered](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#unordered())`()` <br /> Returns an equivalent stream that is [unordered](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Ordering). May return itself, either because the stream was already unordered, or because the underlying stream state was modified to be unordered. This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps). <br /> | ||
+| From class [BaseStream](../java/util/stream/BaseStream.md) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/stream/BaseStream.md))`()` <br /> Closes this stream, causing all close handlers for this stream pipeline to be called. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParallel](../java/util/stream/BaseStream.md))`()` <br /> Returns whether this stream, if a terminal operation were to be executed, would execute in parallel. Calling this method after invoking an terminal stream operation method may yield unpredictable results. <br /> | | S | [onClose](../java/util/stream/BaseStream.md))`(`closeHandler:` ` [Runnable](../java/lang/Runnable.md)!`)` <br /> Returns an equivalent stream with an additional close handler. Close handlers are run when the [close()](../java/util/stream/BaseStream.md))method is called on the stream, and are executed in the order they were added. All close handlers are run, even if earlier close handlers throw exceptions. If any close handler throws an exception, the first exception thrown will be relayed to the caller of`close()`, with any remaining exceptions added to that exception as suppressed exceptions (unless one of the remaining exceptions is the same exception as the first exception, since an exception cannot suppress itself.) May return itself. This is an [intermediate operation](../java/util/stream/_package.md). <br /> | | S | [unordered](../java/util/stream/BaseStream.md))`()` <br /> Returns an equivalent stream that is [unordered](../java/util/stream/_package.md). May return itself, either because the stream was already unordered, or because the underlying stream state was modified to be unordered. This is an [intermediate operation](../java/util/stream/_package.md). <br /> | ||
 
 ## Public methods
 
@@ -107,11 +107,11 @@ abstract fun allMatch(predicate: DoublePredicate!): Boolean
 
 Returns whether all elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then`true`is returned and the predicate is not evaluated.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements of this stream |
+| `predicate` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements of this stream |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -127,11 +127,11 @@ abstract fun anyMatch(predicate: DoublePredicate!): Boolean
 
 Returns whether any elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then`false`is returned and the predicate is not evaluated.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements of this stream |
+| `predicate` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements of this stream |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
@@ -147,15 +147,15 @@ abstract fun average(): OptionalDouble!
 
 Returns an`OptionalDouble`describing the arithmetic mean of elements of this stream, or an empty optional if this stream is empty.
 
-The computed average can vary numerically and have the special case behavior as computing the sum; see [sum](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#sum())for details.
+The computed average can vary numerically and have the special case behavior as computing the sum; see [sum](../java/util/stream/DoubleStream.md))for details.
 
-The average is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction).
+The average is a special case of a [reduction](../java/util/stream/_package.md).
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | an`OptionalDouble`containing the average element of this stream, or an empty optional if the stream is empty |
+| [OptionalDouble](../java/util/OptionalDouble.md)! | an`OptionalDouble`containing the average element of this stream, or an empty optional if the stream is empty |
 
 ### boxed
 
@@ -167,11 +167,11 @@ abstract fun boxed(): Stream<Double!>!
 
 Returns a`Stream`consisting of the elements of this stream, boxed to`Double`.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!>! | a`Stream`consistent of the elements of this stream, each boxed to a`Double` |
+| [Stream](../java/util/stream/Stream.md)< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!>! | a`Stream`consistent of the elements of this stream, each boxed to a`Double` |
 
 ### builder
 
@@ -185,7 +185,7 @@ Returns a builder for a`DoubleStream`.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|------------------|
-| [DoubleStream.Builder](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.Builder)! | a stream builder |
+| [DoubleStream.Builder](../java/util/stream/DoubleStream.Builder.md)! | a stream builder |
 
 ### collect
 
@@ -199,7 +199,7 @@ abstract fun <R : Any!> collect(
 ): R
 ```
 
-Performs a [mutable reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#MutableReduction) operation on the elements of this stream. A mutable reduction is one in which the reduced value is a mutable result container, such as an`ArrayList`, and elements are incorporated by updating the state of the result rather than by replacing the result. This produces a result equivalent to: 
+Performs a [mutable reduction](../java/util/stream/_package.md) operation on the elements of this stream. A mutable reduction is one in which the reduced value is a mutable result container, such as an`ArrayList`, and elements are incorporated by updating the state of the result rather than by replacing the result. This produces a result equivalent to: 
 
 ```kotlin
 <code>R result = supplier.get();
@@ -211,17 +211,17 @@ Performs a [mutable reduction](https://developer.android.com/reference/kotlin/ja
 
 <br />
 
-Like [reduce(double,java.util.function.DoubleBinaryOperator)](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#reduce(kotlin.Double,%20java.util.function.DoubleBinaryOperator)),`collect`operations can be parallelized without requiring additional synchronization.
+Like [reduce(double,java.util.function.DoubleBinaryOperator)](../java/util/stream/DoubleStream.md)),`collect`operations can be parallelized without requiring additional synchronization.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<R>` | the type of the mutable result container |
-| `supplier` | [Supplier](https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#)\<R\>!:a function that creates a new mutable result container. For a parallel execution, this function may be called multiple times and must return a fresh value each time. |
-| `accumulator` | [ObjDoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/ObjDoubleConsumer.html#)\<R\>!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function that must fold an element into a result container. |
+| `supplier` | [Supplier](../java/util/function/Supplier.md)\<R\>!:a function that creates a new mutable result container. For a parallel execution, this function may be called multiple times and must return a fresh value each time. |
+| `accumulator` | [ObjDoubleConsumer](../java/util/function/ObjDoubleConsumer.md)\<R\>!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function that must fold an element into a result container. |
 | --- | --- |
-| `combiner` | [BiConsumer](https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#)\<R,R\>!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function that accepts two partial result containers and merges them, which must be compatible with the accumulator function. The combiner function must fold the elements from the second result container into the first result container. |
+| `combiner` | [BiConsumer](../java/util/function/BiConsumer.md)\<R,R\>!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function that accepts two partial result containers and merges them, which must be compatible with the accumulator function. The combiner function must fold the elements from the second result container into the first result container. |
 
 | Return ||
 |---|-----------------------------|
@@ -229,7 +229,7 @@ This is a [terminal operation](https://developer.android.com/reference/kotlin/ja
 
 **See Also**
 
-- [java.util.stream.Stream#collect(Supplier, BiConsumer, BiConsumer)](https://developer.android.com/reference/kotlin/java/util/stream/Stream#collect(java.util.function.Supplier,%20java.util.function.BiConsumer,%20java.util.function.BiConsumer)) 
+- [java.util.stream.Stream#collect(Supplier, BiConsumer, BiConsumer)](../java/util/stream/Stream.md)) 
 
 ### concat
 
@@ -248,12 +248,12 @@ This method operates on the two input streams and binds each stream to its sourc
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------|
-| `a` | [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)!:the first stream |
-| `b` | [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)!:the second stream |
+| `a` | [DoubleStream](../java/util/stream/DoubleStream.md)!:the first stream |
+| `b` | [DoubleStream](../java/util/stream/DoubleStream.md)!:the second stream |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the concatenation of the two input streams |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the concatenation of the two input streams |
 
 ### count
 
@@ -263,7 +263,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun count(): Long
 ```
 
-Returns the count of elements in this stream. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) and is equivalent to: 
+Returns the count of elements in this stream. This is a special case of a [reduction](../java/util/stream/_package.md) and is equivalent to: 
 
 ```kotlin
 <code>return mapToLong(e -&gt; 1L).sum();
@@ -272,7 +272,7 @@ Returns the count of elements in this stream. This is a special case of a [reduc
 
 <br />
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------|
@@ -286,13 +286,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun distinct(): DoubleStream!
 ```
 
-Returns a stream consisting of the distinct elements of this stream. The elements are compared for equality according to [java.lang.Double#compare(double, double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#compare(kotlin.Double,%20kotlin.Double)).
+Returns a stream consisting of the distinct elements of this stream. The elements are compared for equality according to [java.lang.Double#compare(double, double)](../java/lang/Double.md)).
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the result stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the result stream |
 
 ### dropWhile
 
@@ -310,15 +310,15 @@ If this stream is unordered, and some (but not all) elements of this stream matc
 
 Independent of whether this stream is ordered or unordered if all elements of this stream match the given predicate then this operation drops all elements (the result is an empty stream), or if no elements of the stream match the given predicate then no elements are dropped (the result is the same as the input).
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements to determine the longest prefix of elements. |
+| `predicate` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements to determine the longest prefix of elements. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 ### empty
 
@@ -332,7 +332,7 @@ Returns an empty sequential`DoubleStream`.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | an empty sequential stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | an empty sequential stream |
 
 ### filter
 
@@ -344,15 +344,15 @@ abstract fun filter(predicate: DoublePredicate!): DoubleStream!
 
 Returns a stream consisting of the elements of this stream that match the given predicate.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to each element to determine if it should be included |
+| `predicate` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to each element to determine if it should be included |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 ### findAny
 
@@ -362,15 +362,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun findAny(): OptionalDouble!
 ```
 
-Returns an [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#) describing some element of the stream, or an empty`OptionalDouble`if the stream is empty.
+Returns an [OptionalDouble](../java/util/OptionalDouble.md) describing some element of the stream, or an empty`OptionalDouble`if the stream is empty.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
-The behavior of this operation is explicitly nondeterministic; it is free to select any element in the stream. This is to allow for maximal performance in parallel operations; the cost is that multiple invocations on the same source may not return the same result. (If a stable result is desired, use [findFirst()](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#findFirst())instead.)
+The behavior of this operation is explicitly nondeterministic; it is free to select any element in the stream. This is to allow for maximal performance in parallel operations; the cost is that multiple invocations on the same source may not return the same result. (If a stable result is desired, use [findFirst()](../java/util/stream/DoubleStream.md))instead.)
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | an`OptionalDouble`describing some element of this stream, or an empty`OptionalDouble`if the stream is empty |
+| [OptionalDouble](../java/util/OptionalDouble.md)! | an`OptionalDouble`describing some element of this stream, or an empty`OptionalDouble`if the stream is empty |
 
 **See Also**
 
@@ -384,13 +384,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun findFirst(): OptionalDouble!
 ```
 
-Returns an [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#) describing the first element of this stream, or an empty`OptionalDouble`if the stream is empty. If the stream has no encounter order, then any element may be returned.
+Returns an [OptionalDouble](../java/util/OptionalDouble.md) describing the first element of this stream, or an empty`OptionalDouble`if the stream is empty. If the stream has no encounter order, then any element may be returned.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | an`OptionalDouble`describing the first element of this stream, or an empty`OptionalDouble`if the stream is empty |
+| [OptionalDouble](../java/util/OptionalDouble.md)! | an`OptionalDouble`describing the first element of this stream, or an empty`OptionalDouble`if the stream is empty |
 
 ### flatMap
 
@@ -400,21 +400,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun flatMap(mapper: DoubleFunction<out DoubleStream!>!): DoubleStream!
 ```
 
-Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. Each mapped stream is [closed](https://developer.android.com/reference/kotlin/java/util/stream/BaseStream#close())after its contents have been placed into this stream. (If a mapped stream is`null`an empty stream is used, instead.)
+Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element. Each mapped stream is [closed](../java/util/stream/BaseStream.md))after its contents have been placed into this stream. (If a mapped stream is`null`an empty stream is used, instead.)
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [DoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleFunction.html#)\<out [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)!\>!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element which produces a`DoubleStream`of new values |
+| `mapper` | [DoubleFunction](../java/util/function/DoubleFunction.md)\<out [DoubleStream](../java/util/stream/DoubleStream.md)!\>!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element which produces a`DoubleStream`of new values |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 **See Also**
 
-- [java.util.stream.Stream#flatMap(Function)](https://developer.android.com/reference/kotlin/java/util/stream/Stream#flatMap(java.util.function.Function)) 
+- [java.util.stream.Stream#flatMap(Function)](../java/util/stream/Stream.md)) 
 
 ### forEach
 
@@ -426,13 +426,13 @@ abstract fun forEach(action: DoubleConsumer!): Unit
 
 Performs an action for each element of this stream.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 For parallel stream pipelines, this operation does*not*guarantee to respect the encounter order of the stream, as doing so would sacrifice the benefit of parallelism. For any given element, the action may be performed at whatever time and in whatever thread the library chooses. If the action accesses shared state, it is responsible for providing the required synchronization.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference) action to perform on the elements |
+| `action` | [DoubleConsumer](../java/util/function/DoubleConsumer.md)!:a [non-interfering](../java/util/stream/_package.md) action to perform on the elements |
 
 ### forEachOrdered
 
@@ -444,15 +444,15 @@ abstract fun forEachOrdered(action: DoubleConsumer!): Unit
 
 Performs an action for each element of this stream, guaranteeing that each element is processed in encounter order for streams that have a defined encounter order.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference) action to perform on the elements |
+| `action` | [DoubleConsumer](../java/util/function/DoubleConsumer.md)!:a [non-interfering](../java/util/stream/_package.md) action to perform on the elements |
 
 **See Also**
 
-- [#forEach(DoubleConsumer)](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#forEach(java.util.function.DoubleConsumer)) 
+- [#forEach(DoubleConsumer)](../java/util/stream/DoubleStream.md)) 
 
 ### generate
 
@@ -466,11 +466,11 @@ Returns an infinite sequential unordered stream where each element is generated 
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `s` | [DoubleSupplier](https://developer.android.com/reference/kotlin/java/util/function/DoubleSupplier.html#)!:the`DoubleSupplier`for generated elements |
+| `s` | [DoubleSupplier](../java/util/function/DoubleSupplier.md)!:the`DoubleSupplier`for generated elements |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | a new infinite sequential unordered`DoubleStream` |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | a new infinite sequential unordered`DoubleStream` |
 
 ### iterate
 
@@ -497,18 +497,18 @@ Returns a sequential ordered`DoubleStream`produced by iterative application of t
 
 The resulting sequence may be empty if the`hasNext`predicate does not hold on the seed value. Otherwise the first element will be the supplied`seed`value, the next element (if present) will be the result of applying the`next`function to the`seed`value, and so on iteratively until the`hasNext`predicate indicates that the stream should terminate.
 
-The action of applying the`hasNext`predicate to an element [*happens-before*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary.html#MemoryVisibility) the action of applying the`next`function to that element. The action of applying the`next`function for one element*happens-before* the action of applying the`hasNext`predicate for subsequent elements. For any given element an action may be performed in whatever thread the library chooses.
+The action of applying the`hasNext`predicate to an element [*happens-before*](../java/util/concurrent/_package.md) the action of applying the`next`function to that element. The action of applying the`next`function for one element*happens-before* the action of applying the`hasNext`predicate for subsequent elements. For any given element an action may be performed in whatever thread the library chooses.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `seed` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the initial element |
-| `hasNext` | [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!:a predicate to apply to elements to determine when the stream must terminate. |
-| `next` | [DoubleUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleUnaryOperator.html#)!:a function to be applied to the previous element to produce a new element |
+| `hasNext` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a predicate to apply to elements to determine when the stream must terminate. |
+| `next` | [DoubleUnaryOperator](../java/util/function/DoubleUnaryOperator.md)!:a function to be applied to the previous element to produce a new element |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | a new sequential`DoubleStream` |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | a new sequential`DoubleStream` |
 
 ### iterate
 
@@ -525,16 +525,16 @@ Returns an infinite sequential ordered`DoubleStream`produced by iterative applic
 
 The first element (position`0`) in the`DoubleStream`will be the provided`seed`. For`n > 0`, the element at position`n`, will be the result of applying the function`f`to the element at position`n - 1`.
 
-The action of applying`f`for one element [*happens-before*](https://developer.android.com/reference/kotlin/java/util/concurrent/package-summary.html#MemoryVisibility) the action of applying`f`for subsequent elements. For any given element the action may be performed in whatever thread the library chooses.
+The action of applying`f`for one element [*happens-before*](../java/util/concurrent/_package.md) the action of applying`f`for subsequent elements. For any given element the action may be performed in whatever thread the library chooses.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `seed` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the initial element |
-| `f` | [DoubleUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleUnaryOperator.html#)!:a function to be applied to the previous element to produce a new element |
+| `f` | [DoubleUnaryOperator](../java/util/function/DoubleUnaryOperator.md)!:a function to be applied to the previous element to produce a new element |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | a new sequential`DoubleStream` |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | a new sequential`DoubleStream` |
 
 ### iterator
 
@@ -546,7 +546,7 @@ abstract fun iterator(): PrimitiveIterator.OfDouble!
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [PrimitiveIterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/PrimitiveIterator.OfDouble.html#)! | the element iterator for this stream |
+| [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)! | the element iterator for this stream |
 
 ### limit
 
@@ -558,7 +558,7 @@ abstract fun limit(maxSize: Long): DoubleStream!
 
 Returns a stream consisting of the elements of this stream, truncated to be no longer than`maxSize`in length.
 
-This is a [short-circuiting stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -566,7 +566,7 @@ This is a [short-circuiting stateful intermediate operation](https://developer.a
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 | Exceptions ||
 |--------------------------------------|------------------------|
@@ -582,15 +582,15 @@ abstract fun map(mapper: DoubleUnaryOperator!): DoubleStream!
 
 Returns a stream consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [DoubleUnaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleUnaryOperator.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [DoubleUnaryOperator](../java/util/function/DoubleUnaryOperator.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 ### mapMulti
 
@@ -600,23 +600,23 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun mapMulti(mapper: DoubleStream.DoubleMapMultiConsumer!): DoubleStream!
 ```
 
-Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. Replacement is performed by applying the provided mapping function to each element in conjunction with a [consumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#) argument that accepts replacement elements. The mapping function calls the consumer zero or more times to provide the replacement elements.
+Returns a stream consisting of the results of replacing each element of this stream with multiple elements, specifically zero or more elements. Replacement is performed by applying the provided mapping function to each element in conjunction with a [consumer](../java/util/function/DoubleConsumer.md) argument that accepts replacement elements. The mapping function calls the consumer zero or more times to provide the replacement elements.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
-If the [consumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#) argument is used outside the scope of its application to the mapping function, the results are undefined.
+If the [consumer](../java/util/function/DoubleConsumer.md) argument is used outside the scope of its application to the mapping function, the results are undefined.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [DoubleStream.DoubleMapMultiConsumer](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.DoubleMapMultiConsumer)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function that generates replacement elements |
+| `mapper` | [DoubleStream.DoubleMapMultiConsumer](../java/util/stream/DoubleStream.DoubleMapMultiConsumer.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function that generates replacement elements |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 **See Also**
 
-- [java.util.stream.Stream#mapMulti](https://developer.android.com/reference/kotlin/java/util/stream/Stream#mapMulti(java.util.function.BiConsumer)) 
+- [java.util.stream.Stream#mapMulti](../java/util/stream/Stream.md)) 
 
 ### mapToInt
 
@@ -628,15 +628,15 @@ abstract fun mapToInt(mapper: DoubleToIntFunction!): IntStream!
 
 Returns an`IntStream`consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [DoubleToIntFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleToIntFunction.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [DoubleToIntFunction](../java/util/function/DoubleToIntFunction.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------|
-| [IntStream](https://developer.android.com/reference/kotlin/java/util/stream/IntStream)! | the new stream |
+| [IntStream](../java/util/stream/IntStream.md)! | the new stream |
 
 ### mapToLong
 
@@ -648,15 +648,15 @@ abstract fun mapToLong(mapper: DoubleToLongFunction!): LongStream!
 
 Returns a`LongStream`consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mapper` | [DoubleToLongFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleToLongFunction.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [DoubleToLongFunction](../java/util/function/DoubleToLongFunction.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------|
-| [LongStream](https://developer.android.com/reference/kotlin/java/util/stream/LongStream)! | the new stream |
+| [LongStream](../java/util/stream/LongStream.md)! | the new stream |
 
 ### mapToObj
 
@@ -668,16 +668,16 @@ abstract fun <U : Any!> mapToObj(mapper: DoubleFunction<out U>!): Stream<U>!
 
 Returns an object-valued`Stream`consisting of the results of applying the given function to the elements of this stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<U>` | the element type of the new stream |
-| `mapper` | [DoubleFunction](https://developer.android.com/reference/kotlin/java/util/function/DoubleFunction.html#)\<outU\>!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function to apply to each element |
+| `mapper` | [DoubleFunction](../java/util/function/DoubleFunction.md)\<outU\>!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function to apply to each element |
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------|
-| [Stream](https://developer.android.com/reference/kotlin/java/util/stream/Stream)<U>! | the new stream |
+| [Stream](../java/util/stream/Stream.md)<U>! | the new stream |
 
 ### max
 
@@ -687,7 +687,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun max(): OptionalDouble!
 ```
 
-Returns an`OptionalDouble`describing the maximum element of this stream, or an empty OptionalDouble if this stream is empty. The maximum element will be`Double.NaN`if any stream element was NaN. Unlike the numerical comparison operators, this method considers negative zero to be strictly smaller than positive zero. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) and is equivalent to: 
+Returns an`OptionalDouble`describing the maximum element of this stream, or an empty OptionalDouble if this stream is empty. The maximum element will be`Double.NaN`if any stream element was NaN. Unlike the numerical comparison operators, this method considers negative zero to be strictly smaller than positive zero. This is a special case of a [reduction](../java/util/stream/_package.md) and is equivalent to: 
 
 ```kotlin
 <code>return reduce(Double::max);
@@ -696,11 +696,11 @@ Returns an`OptionalDouble`describing the maximum element of this stream, or an e
 
 <br />
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | an`OptionalDouble`containing the maximum element of this stream, or an empty optional if the stream is empty |
+| [OptionalDouble](../java/util/OptionalDouble.md)! | an`OptionalDouble`containing the maximum element of this stream, or an empty optional if the stream is empty |
 
 ### min
 
@@ -710,7 +710,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun min(): OptionalDouble!
 ```
 
-Returns an`OptionalDouble`describing the minimum element of this stream, or an empty OptionalDouble if this stream is empty. The minimum element will be`Double.NaN`if any stream element was NaN. Unlike the numerical comparison operators, this method considers negative zero to be strictly smaller than positive zero. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) and is equivalent to: 
+Returns an`OptionalDouble`describing the minimum element of this stream, or an empty OptionalDouble if this stream is empty. The minimum element will be`Double.NaN`if any stream element was NaN. Unlike the numerical comparison operators, this method considers negative zero to be strictly smaller than positive zero. This is a special case of a [reduction](../java/util/stream/_package.md) and is equivalent to: 
 
 ```kotlin
 <code>return reduce(Double::min);
@@ -719,11 +719,11 @@ Returns an`OptionalDouble`describing the minimum element of this stream, or an e
 
 <br />
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | an`OptionalDouble`containing the minimum element of this stream, or an empty optional if the stream is empty |
+| [OptionalDouble](../java/util/OptionalDouble.md)! | an`OptionalDouble`containing the minimum element of this stream, or an empty optional if the stream is empty |
 
 ### noneMatch
 
@@ -735,11 +735,11 @@ abstract fun noneMatch(predicate: DoublePredicate!): Boolean
 
 Returns whether no elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then`true`is returned and the predicate is not evaluated.
 
-This is a [short-circuiting terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements of this stream |
+| `predicate` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements of this stream |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -761,7 +761,7 @@ Returns a sequential`DoubleStream`containing a single element.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | a singleton sequential stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | a singleton sequential stream |
 
 ### of
 
@@ -779,7 +779,7 @@ Returns a sequential ordered stream whose elements are the specified values.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 ### parallel
 
@@ -791,7 +791,7 @@ abstract fun parallel(): DoubleStream!
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | a parallel stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | a parallel stream |
 
 ### peek
 
@@ -803,17 +803,17 @@ abstract fun peek(action: DoubleConsumer!): DoubleStream!
 
 Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.
 
-This is an [intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is an [intermediate operation](../java/util/stream/_package.md).
 
 For parallel stream pipelines, the action may be called at whatever time and in whatever thread the element is made available by the upstream operation. If the action modifies shared state, it is responsible for providing the required synchronization.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [DoubleConsumer](https://developer.android.com/reference/kotlin/java/util/function/DoubleConsumer.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference) action to perform on the elements as they are consumed from the stream |
+| `action` | [DoubleConsumer](../java/util/function/DoubleConsumer.md)!:a [non-interfering](../java/util/stream/_package.md) action to perform on the elements as they are consumed from the stream |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 ### reduce
 
@@ -826,7 +826,7 @@ abstract fun reduce(
 ): Double
 ```
 
-Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using the provided identity value and an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns the reduced value. This is equivalent to: 
+Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using the provided identity value and an [associative](../java/util/stream/_package.md) accumulation function, and returns the reduced value. This is equivalent to: 
 
 ```kotlin
 <code>double result = identity;
@@ -839,14 +839,14 @@ but is not constrained to execute sequentially.
 
 <br />
 
-The`identity`value must be an identity for the accumulator function. This means that for all`x`,`accumulator.apply(identity, x)`is equal to`x`. The`accumulator`function must be an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) function.
+The`identity`value must be an identity for the accumulator function. This means that for all`x`,`accumulator.apply(identity, x)`is equal to`x`. The`accumulator`function must be an [associative](../java/util/stream/_package.md) function.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `identity` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):the identity value for the accumulating function |
-| `op` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function for combining two values |
+| `op` | [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function for combining two values |
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -867,7 +867,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun reduce(op: DoubleBinaryOperator!): OptionalDouble!
 ```
 
-Performs a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction) on the elements of this stream, using an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) accumulation function, and returns an`OptionalDouble`describing the reduced value, if any. This is equivalent to: 
+Performs a [reduction](../java/util/stream/_package.md) on the elements of this stream, using an [associative](../java/util/stream/_package.md) accumulation function, and returns an`OptionalDouble`describing the reduced value, if any. This is equivalent to: 
 
 ```kotlin
 <code>boolean foundAny = false;
@@ -887,21 +887,21 @@ but is not constrained to execute sequentially.
 
 <br />
 
-The`accumulator`function must be an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity) function.
+The`accumulator`function must be an [associative](../java/util/stream/_package.md) function.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `op` | [DoubleBinaryOperator](https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#)!:an [associative](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Associativity), [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) function for combining two values |
+| `op` | [DoubleBinaryOperator](../java/util/function/DoubleBinaryOperator.md)!:an [associative](../java/util/stream/_package.md), [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) function for combining two values |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------|
-| [OptionalDouble](https://developer.android.com/reference/kotlin/java/util/OptionalDouble.html#)! | the result of the reduction |
+| [OptionalDouble](../java/util/OptionalDouble.md)! | the result of the reduction |
 
 **See Also**
 
-- [#reduce(double, DoubleBinaryOperator)](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#reduce(kotlin.Double,%20java.util.function.DoubleBinaryOperator)) 
+- [#reduce(double, DoubleBinaryOperator)](../java/util/stream/DoubleStream.md)) 
 
 ### sequential
 
@@ -913,7 +913,7 @@ abstract fun sequential(): DoubleStream!
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | a sequential stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | a sequential stream |
 
 ### skip
 
@@ -925,7 +925,7 @@ abstract fun skip(n: Long): DoubleStream!
 
 Returns a stream consisting of the remaining elements of this stream after discarding the first`n`elements of the stream. If this stream contains fewer than`n`elements then an empty stream will be returned.
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------|
@@ -933,7 +933,7 @@ This is a [stateful intermediate operation](https://developer.android.com/refere
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 | Exceptions ||
 |--------------------------------------|------------------|
@@ -947,13 +947,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun sorted(): DoubleStream!
 ```
 
-Returns a stream consisting of the elements of this stream in sorted order. The elements are compared for equality according to [java.lang.Double#compare(double, double)](https://developer.android.com/reference/kotlin/java/lang/Double.html#compare(kotlin.Double,%20kotlin.Double)).
+Returns a stream consisting of the elements of this stream in sorted order. The elements are compared for equality according to [java.lang.Double#compare(double, double)](../java/lang/Double.md)).
 
-This is a [stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [stateful intermediate operation](../java/util/stream/_package.md).
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the result stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the result stream |
 
 ### spliterator
 
@@ -965,7 +965,7 @@ abstract fun spliterator(): Spliterator.OfDouble!
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [Spliterator.OfDouble](https://developer.android.com/reference/kotlin/java/util/Spliterator.OfDouble.html#)! | the element spliterator for this stream |
+| [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | the element spliterator for this stream |
 
 ### sum
 
@@ -975,7 +975,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun sum(): Double
 ```
 
-Returns the sum of elements in this stream. Summation is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction). If floating-point summation were exact, this method would be equivalent to: 
+Returns the sum of elements in this stream. Summation is a special case of a [reduction](../java/util/stream/_package.md). If floating-point summation were exact, this method would be equivalent to: 
 
 ```kotlin
 <code>return reduce(0, Double::sum);
@@ -996,7 +996,7 @@ Various conditions can result in a non-finite sum being computed. This can occur
 
 It is possible for intermediate sums of finite values to overflow into opposite-signed infinities; if that occurs, the final sum will be NaN even if the elements are all finite. If all the elements are zero, the sign of zero is*not* guaranteed to be preserved in the final sum.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------|
@@ -1010,13 +1010,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun summaryStatistics(): DoubleSummaryStatistics!
 ```
 
-Returns a`DoubleSummaryStatistics`describing various summary data about the elements of this stream. This is a special case of a [reduction](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Reduction).
+Returns a`DoubleSummaryStatistics`describing various summary data about the elements of this stream. This is a special case of a [reduction](../java/util/stream/_package.md).
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [DoubleSummaryStatistics](https://developer.android.com/reference/kotlin/java/util/DoubleSummaryStatistics.html#)! | a`DoubleSummaryStatistics`describing various summary data about the elements of this stream |
+| [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md)! | a`DoubleSummaryStatistics`describing various summary data about the elements of this stream |
 
 ### takeWhile
 
@@ -1034,15 +1034,15 @@ If this stream is unordered, and some (but not all) elements of this stream matc
 
 Independent of whether this stream is ordered or unordered if all elements of this stream match the given predicate then this operation takes all elements (the result is the same as the input), or if no elements of the stream match the given predicate then no elements are taken (the result is an empty stream).
 
-This is a [short-circuiting stateful intermediate operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [short-circuiting stateful intermediate operation](../java/util/stream/_package.md).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `predicate` | [DoublePredicate](https://developer.android.com/reference/kotlin/java/util/function/DoublePredicate.html#)!:a [non-interfering](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#NonInterference), [stateless](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#Statelessness) predicate to apply to elements to determine the longest prefix of elements. |
+| `predicate` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a [non-interfering](../java/util/stream/_package.md), [stateless](../java/util/stream/_package.md) predicate to apply to elements to determine the longest prefix of elements. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------|
-| [DoubleStream](https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream#)! | the new stream |
+| [DoubleStream](../java/util/stream/DoubleStream.md)! | the new stream |
 
 ### toArray
 
@@ -1054,7 +1054,7 @@ abstract fun toArray(): DoubleArray!
 
 Returns an array containing the elements of this stream.
 
-This is a [terminal operation](https://developer.android.com/reference/kotlin/java/util/stream/package-summary#StreamOps).
+This is a [terminal operation](../java/util/stream/_package.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|

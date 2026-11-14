@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Proxy
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/Proxy "View this page in Java") 
+Kotlin| [Java](../android/net/Proxy.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Proxy
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.Proxy](https://developer.android.com/reference/kotlin/android/net/Proxy#) |
+| ↳ | [android.net.Proxy](../android/net/Proxy.md) |
 
 A convenience class for accessing the user and default proxy settings.
 
@@ -21,19 +21,19 @@ A convenience class for accessing the user and default proxy settings.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROXY_CHANGE_ACTION](https://developer.android.com/reference/kotlin/android/net/Proxy#PROXY_CHANGE_ACTION:kotlin.String) Used to notify an app that's caching the proxy that either the default connection has changed or any connection's proxy has changed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PROXY_CHANGE_ACTION](../android/net/Proxy.md) Used to notify an app that's caching the proxy that either the default connection has changed or any connection's proxy has changed. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------|---|
-| [Proxy](https://developer.android.com/reference/kotlin/android/net/Proxy#Proxy())`()` <br /> |
+| [Proxy](../android/net/Proxy.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultHost](https://developer.android.com/reference/kotlin/android/net/Proxy#getDefaultHost())`()` Return the default proxy host specified by the carrier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultPort](https://developer.android.com/reference/kotlin/android/net/Proxy#getDefaultPort())`()` Return the default proxy port specified by the carrier. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](https://developer.android.com/reference/kotlin/android/net/Proxy#getHost(android.content.Context))`(`ctx:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Return the proxy host set by the user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultHost](../android/net/Proxy.md))`()` Return the default proxy host specified by the carrier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultPort](../android/net/Proxy.md))`()` Return the default proxy port specified by the carrier. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](../android/net/Proxy.md))`(`ctx:` ` [Context](../android/content/Context.md)!`)` Return the proxy host set by the user. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/net/Proxy#getPort(android.content.Context))`(`ctx:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Return the proxy port set by the user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../android/net/Proxy.md))`(`ctx:` ` [Context](../android/content/Context.md)!`)` Return the proxy port set by the user. |
 
 ## Constants
 
@@ -45,7 +45,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PROXY_CHANGE_ACTION: String
 ```
 
-Used to notify an app that's caching the proxy that either the default connection has changed or any connection's proxy has changed. The new proxy should be queried using [ConnectivityManager.getDefaultProxy()](https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getDefaultProxy()).
+Used to notify an app that's caching the proxy that either the default connection has changed or any connection's proxy has changed. The new proxy should be queried using [ConnectivityManager.getDefaultProxy()](../android/net/ConnectivityManager.md)).
 
 This is a protected intent that can only be sent by the system 
 
@@ -110,7 +110,7 @@ Return the proxy host set by the user.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ctx` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:A Context used to get the settings for the proxy host. |
+| `ctx` | [Context](../android/content/Context.md)!:A Context used to get the settings for the proxy host. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -131,7 +131,7 @@ Return the proxy port set by the user.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ctx` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:A Context used to get the settings for the proxy port. |
+| `ctx` | [Context](../android/content/Context.md)!:A Context used to get the settings for the proxy port. |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------|

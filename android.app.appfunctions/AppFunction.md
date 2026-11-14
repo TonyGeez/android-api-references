@@ -6,7 +6,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 interface AppFunction
 ```
 
-| [android.app.appfunctions.AppFunction](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunction#) |
+| [android.app.appfunctions.AppFunction](../android/app/appfunctions/AppFunction.md) |
 
 An interface for implementing the logic of an app function registered at runtime using `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#registerAppFunction(kotlin.String,%20java.util.concurrent.Executor,%20android.app.appfunctions.AppFunction)`.
 
@@ -36,7 +36,7 @@ The implementation should try to respect the provided `https://developer.android
 
 | Parameters ||
 |---|---|
-| `request` | [ExecuteAppFunctionRequest](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest): The `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest` containing the parameters for this execution. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#): A signal to cancel the execution. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#)\< [ExecuteAppFunctionResponse](https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse)!, [AppFunctionException](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException)!\>: The `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` that the implementation must use to return the result of the execution. It must be called exactly once with either a successful `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse` or an `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException` in case of an error. This value cannot be `null`. |
+| `request` | [ExecuteAppFunctionRequest](../android/app/appfunctions/ExecuteAppFunctionRequest.md): The `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest` containing the parameters for this execution. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): A signal to cancel the execution. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](../android/app/appfunctions/ExecuteAppFunctionResponse.md)!, [AppFunctionException](../android/app/appfunctions/AppFunctionException.md)!\>: The `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` that the implementation must use to return the result of the execution. It must be called exactly once with either a successful `https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse` or an `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException` in case of an error. This value cannot be `null`. |
 | --- | --- |

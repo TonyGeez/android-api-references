@@ -8,7 +8,7 @@ open class EditorInfo : InputType, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#) |
+| ↳ | [android.view.inputmethod.EditorInfo](../android/view/inputmethod/EditorInfo.md) |
 
 An EditorInfo describes several attributes of a text editing object that an input method is communicating with (typically an EditText), most importantly the type of text content it contains and the current cursor position.
 
@@ -307,17 +307,17 @@ Variation of `https://developer.android.com/reference/kotlin/android/text/InputT
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Write debug output of this object. |
-| open [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getAutofillId()()` Returns the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#` is associated with. |
+| open [AutofillId](../android/view/autofill/AutofillId.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getAutofillId()()` Returns the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#` is associated with. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSelectedText(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the selected text, if any. |
-| open [SurroundingText](https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
+| open [SurroundingText](../android/view/inputmethod/SurroundingText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextAfterCursor(kotlin.Int,%20kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get length characters of text after the current cursor position. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextBeforeCursor(kotlin.Int,%20kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get length characters of text before the current cursor position. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialToolType()()` Returns the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)` responsible for focus on the current editor. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [PreviewableHandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture)!\>!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()()` Returns the combination of Stylus handwriting gesture preview types supported by the current `Editor`. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java/lang/Class.md)\<out [PreviewableHandwritingGesture](../android/view/inputmethod/PreviewableHandwritingGesture.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()()` Returns the combination of Stylus handwriting gesture preview types supported by the current `Editor`. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture)!\>!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()()` Returns the combination of Stylus handwriting gesture types supported by the current `Editor`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java/lang/Class.md)\<out [HandwritingGesture](../android/view/inputmethod/HandwritingGesture.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()()` Returns the combination of Stylus handwriting gesture types supported by the current `Editor`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#isStylusHandwritingEnabled()()` Returns `true` when an `Editor` has stylus handwriting enabled. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#isWritingToolsEnabled()()` Returns `true` when an `Editor` has writing tools enabled. |
 | --- | --- |
@@ -337,16 +337,16 @@ Variation of `https://developer.android.com/reference/kotlin/android/text/InputT
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [EditorInfo](https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EditorInfo](../android/view/inputmethod/EditorInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionId:kotlin.Int` If `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionLabel:kotlin.CharSequence` has been given, this is the id for that command when the user presses its button that is delivered back with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performEditorAction(kotlin.Int)`. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionLabel:kotlin.CharSequence` In some cases an IME may be able to display an arbitrary label for a command the user can perform, which you can specify here. |
 | --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#contentMimeTypes:kotlin.Array` List of acceptable MIME types for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitContent(android.view.inputmethod.InputContentInfo,%20kotlin.Int,%20android.os.Bundle)`. |
-| [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#extras:android.os.Bundle` Any extra data to supply to the input method. |
+| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#extras:android.os.Bundle` Any extra data to supply to the input method. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#fieldId:kotlin.Int` Identifier for the editor's field. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#fieldName:kotlin.String` Additional name for the editor's field. |
-| [LocaleList](https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#hintLocales:android.os.LocaleList` List of the languages that the user is supposed to switch to no matter what input method subtype is currently used. |
+| [LocaleList](../android/os/LocaleList.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#hintLocales:android.os.LocaleList` List of the languages that the user is supposed to switch to no matter what input method subtype is currently used. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#hintText:kotlin.CharSequence` The "hint" text of the text view, typically shown in-line when the text is empty to tell the user what to enter. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#imeOptions:kotlin.Int` Extended type information for the editor, to help the IME better integrate with it. |
@@ -851,7 +851,7 @@ Sets the `https://developer.android.com/reference/kotlin/android/view/autofill/A
 
 | Parameters ||
 |---|---|
-| `autofillId` | [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)?: This value may be `null`. |
+| `autofillId` | [AutofillId](../android/view/autofill/AutofillId.md)?: This value may be `null`. |
 
 ### setInitialSurroundingSubText
 
@@ -941,7 +941,7 @@ If editor doesn't support one of the declared types, gesture preview will be ign
 
 | Parameters ||
 |---|---|
-| `gestures` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [PreviewableHandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture)!\>!\>: Set of supported gesture classes. One of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture`. This value cannot be `null`. |
+| `gestures` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java/lang/Class.md)\<out [PreviewableHandwritingGesture](../android/view/inputmethod/PreviewableHandwritingGesture.md)!\>!\>: Set of supported gesture classes. One of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture`. This value cannot be `null`. |
 
 **See Also**
 
@@ -963,7 +963,7 @@ Note: A supported gesture may not have preview supported `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `gestures` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<out [HandwritingGesture](https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture)!\>!\>: List of supported gesture classes including any of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`. This value cannot be `null`. |
+| `gestures` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java/lang/Class.md)\<out [HandwritingGesture](../android/view/inputmethod/HandwritingGesture.md)!\>!\>: List of supported gesture classes including any of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`. This value cannot be `null`. |
 
 **See Also**
 
@@ -1002,7 +1002,7 @@ Used to package this object into a `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
+| `dest` | [Parcel](../android/os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags used for parceling. |
 
 ## Properties

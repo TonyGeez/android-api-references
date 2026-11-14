@@ -6,9 +6,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SocketOptions
 ```
 
-| [java.net.SocketOptions](https://developer.android.com/reference/kotlin/java/net/SocketOptions#) |
+| [java.net.SocketOptions](../java/net/SocketOptions.md) |
 
-| Known Direct Subclasses [DatagramSocketImpl](https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl), [SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl) |---|---| | [DatagramSocketImpl](https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl) | Abstract datagram and multicast socket implementation base class. | | [SocketImpl](https://developer.android.com/reference/kotlin/java/net/SocketImpl) | The abstract class `SocketImpl` is a common superclass of all classes that actually implement sockets. | |
+| Known Direct Subclasses [DatagramSocketImpl](../java/net/DatagramSocketImpl.md), [SocketImpl](../java/net/SocketImpl.md) |---|---| | [DatagramSocketImpl](../java/net/DatagramSocketImpl.md) | Abstract datagram and multicast socket implementation base class. | | [SocketImpl](../java/net/SocketImpl.md) | The abstract class `SocketImpl` is a common superclass of all classes that actually implement sockets. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface of methods to get/set socket options. This interface is implemented by: **SocketImpl** and **DatagramSocketImpl**. Subclasses of these should override the methods of this interface in order to support their own options.

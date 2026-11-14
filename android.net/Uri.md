@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Uri
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/Uri "View this page in Java") 
+Kotlin| [Java](../android/net/Uri.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class Uri : Comparable<Uri!>, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.Uri](https://developer.android.com/reference/kotlin/android/net/Uri#) |
+| ↳ | [android.net.Uri](../android/net/Uri.md) |
 
 Immutable URI reference. A URI reference includes a URI and a fragment, the component of the URI following a '#'. Builds and parses URI references which conform to [RFC 2396](http://www.faqs.org/rfcs/rfc2396.html).
 
@@ -23,75 +23,75 @@ In the interest of performance, this class performs little to no validation. Beh
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder) Helper class for building or manipulating URI references. |
+| | [Builder](../android/net/Uri.Builder.md) Helper class for building or manipulating URI references. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder)! | [buildUpon](https://developer.android.com/reference/kotlin/android/net/Uri#buildUpon())`()` Constructs a new builder, copying the attributes from this Uri. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/net/Uri#compareTo(android.net.Uri))`(`other:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)!`)` Compares the string representation of this Uri with that of another. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](https://developer.android.com/reference/kotlin/android/net/Uri#decode(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes '%'-escaped octets in the given string using the UTF-8 scheme. |
+| abstract [Uri.Builder](../android/net/Uri.Builder.md)! | [buildUpon](../android/net/Uri.md))`()` Constructs a new builder, copying the attributes from this Uri. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/net/Uri.md))`(`other:` ` [Uri](../android/net/Uri.md)!`)` Compares the string representation of this Uri with that of another. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [decode](../android/net/Uri.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes '%'-escaped octets in the given string using the UTF-8 scheme. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [encode](https://developer.android.com/reference/kotlin/android/net/Uri#encode(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes characters in the given string as '%'-escaped octets using the UTF-8 scheme. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [encode](https://developer.android.com/reference/kotlin/android/net/Uri#encode(kotlin.String,%20kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `allow:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes characters in the given string as '%'-escaped octets using the UTF-8 scheme. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/android/net/Uri#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this Uri to another object for equality. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [encode](../android/net/Uri.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes characters in the given string as '%'-escaped octets using the UTF-8 scheme. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [encode](../android/net/Uri.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `allow:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Encodes characters in the given string as '%'-escaped octets using the UTF-8 scheme. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/Uri.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this Uri to another object for equality. |
 | --- | --- |
-| openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | [fromFile](https://developer.android.com/reference/kotlin/android/net/Uri#fromFile(java.io.File))`(`file:` ` [File](https://developer.android.com/reference/kotlin/java/io/File.html#)!`)` Creates a Uri from a file. |
-| openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | [fromParts](https://developer.android.com/reference/kotlin/android/net/Uri#fromParts(kotlin.String,%20kotlin.String,%20kotlin.String))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ssp:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an opaque Uri from the given components. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAuthority](https://developer.android.com/reference/kotlin/android/net/Uri#getAuthority())`()` Gets the decoded authority part of this URI. |
+| openstatic [Uri](../android/net/Uri.md)! | [fromFile](../android/net/Uri.md))`(`file:` ` [File](../java/io/File.md)!`)` Creates a Uri from a file. |
+| openstatic [Uri](../android/net/Uri.md)! | [fromParts](../android/net/Uri.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ssp:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an opaque Uri from the given components. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAuthority](../android/net/Uri.md))`()` Gets the decoded authority part of this URI. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBooleanQueryParameter](https://developer.android.com/reference/kotlin/android/net/Uri#getBooleanQueryParameter(kotlin.String,%20kotlin.Boolean))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Searches the query string for the first value with the given key and interprets it as a boolean value. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedAuthority](https://developer.android.com/reference/kotlin/android/net/Uri#getEncodedAuthority())`()` Gets the encoded authority part of this URI. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedFragment](https://developer.android.com/reference/kotlin/android/net/Uri#getEncodedFragment())`()` Gets the encoded fragment part of this URI, everything after the '#'. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBooleanQueryParameter](../android/net/Uri.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Searches the query string for the first value with the given key and interprets it as a boolean value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedAuthority](../android/net/Uri.md))`()` Gets the encoded authority part of this URI. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedFragment](../android/net/Uri.md))`()` Gets the encoded fragment part of this URI, everything after the '#'. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedPath](https://developer.android.com/reference/kotlin/android/net/Uri#getEncodedPath())`()` Gets the encoded path. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedQuery](https://developer.android.com/reference/kotlin/android/net/Uri#getEncodedQuery())`()` Gets the encoded query component from this URI. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncodedSchemeSpecificPart](https://developer.android.com/reference/kotlin/android/net/Uri#getEncodedSchemeSpecificPart())`()` Gets the scheme-specific part of this URI, i. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedPath](../android/net/Uri.md))`()` Gets the encoded path. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedQuery](../android/net/Uri.md))`()` Gets the encoded query component from this URI. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncodedSchemeSpecificPart](../android/net/Uri.md))`()` Gets the scheme-specific part of this URI, i. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedUserInfo](https://developer.android.com/reference/kotlin/android/net/Uri#getEncodedUserInfo())`()` Gets the encoded user information from the authority. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFragment](https://developer.android.com/reference/kotlin/android/net/Uri#getFragment())`()` Gets the decoded fragment part of this URI, everything after the '#'. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHost](https://developer.android.com/reference/kotlin/android/net/Uri#getHost())`()` Gets the encoded host from the authority for this URI. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getEncodedUserInfo](../android/net/Uri.md))`()` Gets the encoded user information from the authority. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getFragment](../android/net/Uri.md))`()` Gets the decoded fragment part of this URI, everything after the '#'. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHost](../android/net/Uri.md))`()` Gets the encoded host from the authority for this URI. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLastPathSegment](https://developer.android.com/reference/kotlin/android/net/Uri#getLastPathSegment())`()` Gets the decoded last segment in the path. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPath](https://developer.android.com/reference/kotlin/android/net/Uri#getPath())`()` Gets the decoded path. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPathSegments](https://developer.android.com/reference/kotlin/android/net/Uri#getPathSegments())`()` Gets the decoded path segments. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLastPathSegment](../android/net/Uri.md))`()` Gets the decoded last segment in the path. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPath](../android/net/Uri.md))`()` Gets the decoded path. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPathSegments](../android/net/Uri.md))`()` Gets the decoded path segments. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](https://developer.android.com/reference/kotlin/android/net/Uri#getPort())`()` Gets the port from the authority for this URI. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getQuery](https://developer.android.com/reference/kotlin/android/net/Uri#getQuery())`()` Gets the decoded query component from this URI. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getQueryParameter](https://developer.android.com/reference/kotlin/android/net/Uri#getQueryParameter(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Searches the query string for the first value with the given key. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../android/net/Uri.md))`()` Gets the port from the authority for this URI. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getQuery](../android/net/Uri.md))`()` Gets the decoded query component from this URI. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getQueryParameter](../android/net/Uri.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Searches the query string for the first value with the given key. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getQueryParameterNames](https://developer.android.com/reference/kotlin/android/net/Uri#getQueryParameterNames())`()` Returns a set of the unique names of all query parameters. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getQueryParameters](https://developer.android.com/reference/kotlin/android/net/Uri#getQueryParameters(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Searches the query string for parameter values with the given key. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getScheme](https://developer.android.com/reference/kotlin/android/net/Uri#getScheme())`()` Gets the scheme of this URI. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getQueryParameterNames](../android/net/Uri.md))`()` Returns a set of the unique names of all query parameters. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getQueryParameters](../android/net/Uri.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Searches the query string for parameter values with the given key. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getScheme](../android/net/Uri.md))`()` Gets the scheme of this URI. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSchemeSpecificPart](https://developer.android.com/reference/kotlin/android/net/Uri#getSchemeSpecificPart())`()` Gets the scheme-specific part of this URI, i. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getUserInfo](https://developer.android.com/reference/kotlin/android/net/Uri#getUserInfo())`()` Gets the decoded user information from the authority. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/android/net/Uri#hashCode())`()` Hashes the encoded string represention of this Uri consistently with [equals(java.lang.Object)](https://developer.android.com/reference/kotlin/android/net/Uri#equals(kotlin.Any)). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSchemeSpecificPart](../android/net/Uri.md))`()` Gets the scheme-specific part of this URI, i. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getUserInfo](../android/net/Uri.md))`()` Gets the decoded user information from the authority. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/Uri.md))`()` Hashes the encoded string represention of this Uri consistently with [equals(java.lang.Object)](../android/net/Uri.md)). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbsolute](https://developer.android.com/reference/kotlin/android/net/Uri#isAbsolute())`()` Returns true if this URI is absolute, i. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHierarchical](https://developer.android.com/reference/kotlin/android/net/Uri#isHierarchical())`()` Returns true if this URI is hierarchical like "http://google. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](https://developer.android.com/reference/kotlin/android/net/Uri#isOpaque())`()` Returns true if this URI is opaque like "mailto:nobody@google. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbsolute](../android/net/Uri.md))`()` Returns true if this URI is absolute, i. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHierarchical](../android/net/Uri.md))`()` Returns true if this URI is hierarchical like "http://google. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](../android/net/Uri.md))`()` Returns true if this URI is opaque like "mailto:nobody@google. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRelative](https://developer.android.com/reference/kotlin/android/net/Uri#isRelative())`()` Returns true if this URI is relative, i. |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | [normalizeScheme](https://developer.android.com/reference/kotlin/android/net/Uri#normalizeScheme())`()` Return an equivalent URI with a lowercase scheme component. |
-| openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | [parse](https://developer.android.com/reference/kotlin/android/net/Uri#parse(kotlin.String))`(`uriString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a Uri which parses the given encoded URI string. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRelative](../android/net/Uri.md))`()` Returns true if this URI is relative, i. |
+| open [Uri](../android/net/Uri.md)! | [normalizeScheme](../android/net/Uri.md))`()` Return an equivalent URI with a lowercase scheme component. |
+| openstatic [Uri](../android/net/Uri.md)! | [parse](../android/net/Uri.md))`(`uriString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a Uri which parses the given encoded URI string. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/net/Uri#toString())`()` Returns the encoded string representation of this URI. |
-| openstatic [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | [withAppendedPath](https://developer.android.com/reference/kotlin/android/net/Uri#withAppendedPath(android.net.Uri,%20kotlin.String))`(`baseUri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)!`, `pathSegment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new Uri by appending an already-encoded path segment to a base Uri. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/net/Uri#writeToParcel(android.os.Parcel,%20android.net.Uri))`(`out:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`, `uri:` ` [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)!`)` Writes a Uri to a Parcel. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/Uri.md))`()` Returns the encoded string representation of this URI. |
+| openstatic [Uri](../android/net/Uri.md)! | [withAppendedPath](../android/net/Uri.md))`(`baseUri:` ` [Uri](../android/net/Uri.md)!`, `pathSegment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new Uri by appending an already-encoded path segment to a base Uri. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/Uri.md))`(`out:` ` [Parcel](../android/os/Parcel.md)!`, `uri:` ` [Uri](../android/net/Uri.md)!`)` Writes a Uri to a Parcel. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents())`()` <br /> Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of [writeToParcel(android.os.Parcel,int)](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)), the return value of this method must include the [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) bit. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/os/Parcelable.md))`()` <br /> Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of [writeToParcel(android.os.Parcel,int)](../android/os/Parcelable.md)), the return value of this method must include the [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) bit. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/Parcelable.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/net/Uri#CREATOR:android.os.Parcelable.Creator) Reads Uris from Parcels. |
-| static [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | [EMPTY](https://developer.android.com/reference/kotlin/android/net/Uri#EMPTY:android.net.Uri) The empty URI, equivalent to "". |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Uri](../android/net/Uri.md)!\> | [CREATOR](../android/net/Uri.md) Reads Uris from Parcels. |
+| static [Uri](../android/net/Uri.md)! | [EMPTY](../android/net/Uri.md) The empty URI, equivalent to "". |
 
 ## Public methods
 
@@ -221,7 +221,7 @@ Example: "file:///tmp/android.txt"
 
 | Return ||
 |-------------------------------------------------------------------------|--------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | a Uri for the given file |
+| [Uri](../android/net/Uri.md)! | a Uri for the given file |
 
 | Exceptions ||
 |----------------------------------|-----------------|
@@ -250,7 +250,7 @@ Creates an opaque Uri from the given components. Encodes the ssp which means thi
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | Uri composed of the given scheme, ssp, and fragment |
+| [Uri](../android/net/Uri.md)! | Uri composed of the given scheme, ssp, and fragment |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -258,7 +258,7 @@ Creates an opaque Uri from the given components. Encodes the ssp which means thi
 
 **See Also**
 
-- [android.net.Uri.Builder](https://developer.android.com/reference/kotlin/android/net/Uri.Builder) 
+- [android.net.Uri.Builder](../android/net/Uri.Builder.md) 
 
 ### getAuthority
 
@@ -602,7 +602,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun hashCode(): Int
 ```
 
-Hashes the encoded string represention of this Uri consistently with [equals(java.lang.Object)](https://developer.android.com/reference/kotlin/android/net/Uri#equals(kotlin.Any)).
+Hashes the encoded string represention of this Uri consistently with [equals(java.lang.Object)](../android/net/Uri.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -674,12 +674,12 @@ This method does*not*validate bad URIs, or 'fix' poorly formatted URIs - so do n
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | normalized Uri (never null) |
+| [Uri](../android/net/Uri.md)! | normalized Uri (never null) |
 
 **See Also**
 
-- [android.content.Intent#setData](https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri))
-- [android.content.Intent#setDataAndNormalize](https://developer.android.com/reference/kotlin/android/content/Intent.html#setDataAndNormalize(android.net.Uri)) 
+- [android.content.Intent#setData](../android/content/Intent.md))
+- [android.content.Intent#setDataAndNormalize](../android/content/Intent.md)) 
 
 ### parse
 
@@ -697,7 +697,7 @@ Creates a Uri which parses the given encoded URI string.
 
 | Return ||
 |-------------------------------------------------------------------------|-------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | Uri for this given uri string |
+| [Uri](../android/net/Uri.md)! | Uri for this given uri string |
 
 | Exceptions ||
 |----------------------------------|----------------------|
@@ -732,12 +732,12 @@ Creates a new Uri by appending an already-encoded path segment to a base Uri.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------|
-| `baseUri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)!:Uri to append path segment to |
+| `baseUri` | [Uri](../android/net/Uri.md)!:Uri to append path segment to |
 | `pathSegment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:encoded path segment to append |
 
 | Return ||
 |-------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)! | a new Uri based on baseUri with the given segment appended to the path |
+| [Uri](../android/net/Uri.md)! | a new Uri based on baseUri with the given segment appended to the path |
 
 | Exceptions ||
 |----------------------------------|--------------------|
@@ -758,8 +758,8 @@ Writes a Uri to a Parcel.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------|
-| `out` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!:parcel to write to |
-| `uri` | [Uri](https://developer.android.com/reference/kotlin/android/net/Uri#)!:to write, can be null |
+| `out` | [Parcel](../android/os/Parcel.md)!:parcel to write to |
+| `uri` | [Uri](../android/net/Uri.md)!:to write, can be null |
 
 ## Properties
 

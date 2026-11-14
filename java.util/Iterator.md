@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Iterator<E : Any!>
 ```
 
-| [java.util.Iterator](https://developer.android.com/reference/kotlin/java/util/Iterator#) |
+| [java.util.Iterator](../java/util/Iterator.md) |
 
-An iterator over a collection.`Iterator`takes the place of [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration) in the Java Collections Framework. Iterators differ from enumerations in two ways:
+An iterator over a collection.`Iterator`takes the place of [Enumeration](../java/util/Enumeration.md) in the Java Collections Framework. Iterators differ from enumerations in two ways:
 
 - Iterators allow the caller to remove elements from the underlying collection during the iteration with well-defined semantics.
 - Method names have been improved.
@@ -23,11 +23,11 @@ This interface is a member of the [Java Collections Framework](https://developer
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachRemaining](https://developer.android.com/reference/kotlin/java/util/Iterator#forEachRemaining(java.util.function.Consumer))`(`action:` ` [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)<in` `E>`)` Performs the given action for each remaining element until all elements have been processed or the action throws an exception. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](https://developer.android.com/reference/kotlin/java/util/Iterator#hasNext())`()` Returns`true`if the iteration has more elements. |
-| abstractE | [next](https://developer.android.com/reference/kotlin/java/util/Iterator#next())`()` Returns the next element in the iteration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachRemaining](../java/util/Iterator.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `E>`)` Performs the given action for each remaining element until all elements have been processed or the action throws an exception. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](../java/util/Iterator.md))`()` Returns`true`if the iteration has more elements. |
+| abstractE | [next](../java/util/Iterator.md))`()` Returns the next element in the iteration. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](https://developer.android.com/reference/kotlin/java/util/Iterator#remove())`()` Removes from the underlying collection the last element returned by this iterator (optional operation). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](../java/util/Iterator.md))`()` Removes from the underlying collection the last element returned by this iterator (optional operation). |
 
 ## Public methods
 
@@ -41,13 +41,13 @@ open fun forEachRemaining(action: Consumer<in E>): Unit
 
 Performs the given action for each remaining element until all elements have been processed or the action throws an exception. Actions are performed in the order of iteration, if that order is specified. Exceptions thrown by the action are relayed to the caller.
 
-The behavior of an iterator is unspecified if the action modifies the collection in any way (even by calling the [remove](https://developer.android.com/reference/kotlin/java/util/Iterator#remove())method or other mutator methods of`Iterator`subtypes), unless an overriding class has specified a concurrent modification policy.
+The behavior of an iterator is unspecified if the action modifies the collection in any way (even by calling the [remove](../java/util/Iterator.md))method or other mutator methods of`Iterator`subtypes), unless an overriding class has specified a concurrent modification policy.
 
 Subsequent behavior of an iterator is unspecified if the action throws an exception.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](https://developer.android.com/reference/kotlin/java/util/function/Consumer)\<inE\>:The action to be performed for each element |
+| `action` | [Consumer](../java/util/function/Consumer.md)\<inE\>:The action to be performed for each element |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -61,7 +61,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun hasNext(): Boolean
 ```
 
-Returns`true`if the iteration has more elements. (In other words, returns`true`if [next](https://developer.android.com/reference/kotlin/java/util/Iterator#next())would return an element rather than throwing an exception.)
+Returns`true`if the iteration has more elements. (In other words, returns`true`if [next](../java/util/Iterator.md))would return an element rather than throwing an exception.)
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
@@ -93,11 +93,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun remove(): Unit
 ```
 
-Removes from the underlying collection the last element returned by this iterator (optional operation). This method can be called only once per call to [next](https://developer.android.com/reference/kotlin/java/util/Iterator#next()).
+Removes from the underlying collection the last element returned by this iterator (optional operation). This method can be called only once per call to [next](../java/util/Iterator.md)).
 
 The behavior of an iterator is unspecified if the underlying collection is modified while the iteration is in progress in any way other than by calling this method, unless an overriding class has specified a concurrent modification policy.
 
-The behavior of an iterator is unspecified if this method is called after a call to the [forEachRemaining](https://developer.android.com/reference/kotlin/java/util/Iterator#forEachRemaining(java.util.function.Consumer))method.
+The behavior of an iterator is unspecified if this method is called after a call to the [forEachRemaining](../java/util/Iterator.md))method.
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|

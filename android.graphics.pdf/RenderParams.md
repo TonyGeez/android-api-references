@@ -9,7 +9,7 @@ class RenderParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.RenderParams](https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#) |
+| ↳ | [android.graphics.pdf.RenderParams](../android/graphics/pdf/RenderParams.md) |
 
 Represents a set of parameters that will be used to render a page of the PDF document.
 

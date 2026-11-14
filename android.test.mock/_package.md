@@ -2,22 +2,22 @@
 
 # android.test.mock
 
-Kotlin| [Java](https://developer.android.com/reference/android/test/mock/package-summary "View this page in Java")
+Kotlin| [Java](../android/test/mock/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [MockAccountManager](https://developer.android.com/reference/kotlin/android/test/mock/MockAccountManager) | A mock [android.accounts.AccountManager](https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#) class. |
+| [MockAccountManager](../android/test/mock/MockAccountManager.md) | A mock [android.accounts.AccountManager](../android/accounts/AccountManager.md) class. |
 | --- | --- |
-| [MockApplication](https://developer.android.com/reference/kotlin/android/test/mock/MockApplication) | A mock [android.app.Application](https://developer.android.com/reference/kotlin/android/app/Application.html#) class. |
-| [MockContentProvider](https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider) | Mock implementation of ContentProvider. |
-| [MockContentResolver](https://developer.android.com/reference/kotlin/android/test/mock/MockContentResolver) | An extension of [android.content.ContentResolver](https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#) that is designed for testing. |
+| [MockApplication](../android/test/mock/MockApplication.md) | A mock [android.app.Application](../android/app/Application.md) class. |
+| [MockContentProvider](../android/test/mock/MockContentProvider.md) | Mock implementation of ContentProvider. |
+| [MockContentResolver](../android/test/mock/MockContentResolver.md) | An extension of [android.content.ContentResolver](../android/content/ContentResolver.md) that is designed for testing. |
 | --- | --- |
-| [MockContext](https://developer.android.com/reference/kotlin/android/test/mock/MockContext) | A mock [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) class. |
-| [MockCursor](https://developer.android.com/reference/kotlin/android/test/mock/MockCursor) | A mock [android.database.Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor.html#) class that isolates the test code from real Cursor implementation. |
-| [MockDialogInterface](https://developer.android.com/reference/kotlin/android/test/mock/MockDialogInterface) | A mock [android.content.DialogInterface](https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#) class. |
+| [MockContext](../android/test/mock/MockContext.md) | A mock [android.content.Context](../android/content/Context.md) class. |
+| [MockCursor](../android/test/mock/MockCursor.md) | A mock [android.database.Cursor](../android/database/Cursor.md) class that isolates the test code from real Cursor implementation. |
+| [MockDialogInterface](../android/test/mock/MockDialogInterface.md) | A mock [android.content.DialogInterface](../android/content/DialogInterface.md) class. |
 | --- | --- |
-| [MockPackageManager](https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager) | A mock [android.content.pm.PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#) class. |
-| [MockResources](https://developer.android.com/reference/kotlin/android/test/mock/MockResources) | A mock [android.content.res.Resources](https://developer.android.com/reference/kotlin/android/content/res/Resources.html#) class. |
-| [MockService](https://developer.android.com/reference/kotlin/android/test/mock/MockService) | A mock [android.app.Service](https://developer.android.com/reference/kotlin/android/app/Service.html#) class. |
+| [MockPackageManager](../android/test/mock/MockPackageManager.md) | A mock [android.content.pm.PackageManager](../android/content/pm/PackageManager.md) class. |
+| [MockResources](../android/test/mock/MockResources.md) | A mock [android.content.res.Resources](../android/content/res/Resources.md) class. |
+| [MockService](../android/test/mock/MockService.md) | A mock [android.app.Service](../android/app/Service.md) class. |
 | --- | --- |

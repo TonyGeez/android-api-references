@@ -11,11 +11,11 @@ open class IllegalAccessError : IncompatibleClassChangeError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) ||||
-| | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) |||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) ||||
+| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IncompatibleClassChangeError](https://developer.android.com/reference/kotlin/java/lang/IncompatibleClassChangeError) ||
-| | | | | ↳ | [java.lang.IllegalAccessError](https://developer.android.com/reference/kotlin/java/lang/IllegalAccessError#) |
+| | | | ↳ | [java.lang.IncompatibleClassChangeError](../java/lang/IncompatibleClassChangeError.md) ||
+| | | | | ↳ | [java.lang.IllegalAccessError](../java/lang/IllegalAccessError.md) |
 
 Thrown if an application attempts to access or modify a field, or to call a method that it does not have access to.
 
@@ -25,8 +25,8 @@ Normally, this error is caught by the compiler; this error can only occur at run
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalAccessError](https://developer.android.com/reference/kotlin/java/lang/IllegalAccessError#IllegalAccessError())`()` Constructs an`IllegalAccessError`with no detail message. |
-| [IllegalAccessError](https://developer.android.com/reference/kotlin/java/lang/IllegalAccessError#IllegalAccessError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalAccessError`with the specified detail message. |
+| [IllegalAccessError](../java/lang/IllegalAccessError.md))`()` Constructs an`IllegalAccessError`with no detail message. |
+| [IllegalAccessError](../java/lang/IllegalAccessError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalAccessError`with the specified detail message. |
 
 ## Public constructors
 

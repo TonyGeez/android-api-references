@@ -4,27 +4,27 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioMetadataMap
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AudioMetadataMap "View this page in Java") 
+Kotlin| [Java](../android/media/AudioMetadataMap.md) 
 | --- | --- |
 
 ```
 interface AudioMetadataMap : AudioMetadataReadMap
 ```
 
-| [android.media.AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap#) |
+| [android.media.AudioMetadataMap](../android/media/AudioMetadataMap.md) |
 
-AudioMetadataMap is a writeable`Map`-style interface of [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key) value pairs. This interface is not guaranteed to be thread-safe unless the underlying implementation for the`AudioMetadataMap`states it as thread safe. {@see AudioMetadataReadMap}
+AudioMetadataMap is a writeable`Map`-style interface of [AudioMetadata.Key](../android/media/AudioMetadata.Key.md) value pairs. This interface is not guaranteed to be thread-safe unless the underlying implementation for the`AudioMetadataMap`states it as thread safe. {@see AudioMetadataReadMap}
 
 ## Summary
 
 | Public methods ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractT? | [remove](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap#remove(android.media.AudioMetadata.Key))`(`key:` ` [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)<T>`)` Removes the value associated with the key. |
-| abstractT? | [set](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap#set(android.media.AudioMetadata.Key,%20android.media.AudioMetadataMap.set.T))`(`key:` ` [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)<T>`, `value:` `T`)` Sets a value for the key. |
+| abstractT? | [remove](../android/media/AudioMetadataMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`)` Removes the value associated with the key. |
+| abstractT? | [set](../android/media/AudioMetadataMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`, `value:` `T`)` Sets a value for the key. |
 
 | Inherited functions ||
 |---|---|
-| From class [AudioMetadataReadMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap) |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#containsKey(android.media.AudioMetadata.Key))`(`key:` ` [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)<T>`)` <br /> Returns true if the key exists in the map. <br /> | | [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap#) | [dup](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#dup())`()` <br /> Returns a copy of the map. This is intended for safe conversion between a [AudioMetadataReadMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap) interface and a [AudioMetadataMap](https://developer.android.com/reference/kotlin/android/media/AudioMetadataMap#) interface. Currently only simple objects are used for key values which means a shallow copy is sufficient. <br /> | | T? | [get](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#get(android.media.AudioMetadata.Key))`(`key:` ` [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)<T>`)` <br /> Returns the value associated with the key. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](https://developer.android.com/reference/kotlin/android/media/AudioMetadataReadMap#size())`()` <br /> Returns the number of elements in the map. <br /> | ||
+| From class [AudioMetadataReadMap](../android/media/AudioMetadataReadMap.md) |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../android/media/AudioMetadataReadMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`)` <br /> Returns true if the key exists in the map. <br /> | | [AudioMetadataMap](../android/media/AudioMetadataMap.md) | [dup](../android/media/AudioMetadataReadMap.md))`()` <br /> Returns a copy of the map. This is intended for safe conversion between a [AudioMetadataReadMap](../android/media/AudioMetadataReadMap.md) interface and a [AudioMetadataMap](../android/media/AudioMetadataMap.md) interface. Currently only simple objects are used for key values which means a shallow copy is sufficient. <br /> | | T? | [get](../android/media/AudioMetadataReadMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`)` <br /> Returns the value associated with the key. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../android/media/AudioMetadataReadMap.md))`()` <br /> Returns the number of elements in the map. <br /> | ||
 
 ## Public methods
 
@@ -40,7 +40,7 @@ Removes the value associated with the key.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)\<T\>:interface for storing the value. This value cannot be`null`. |
+| `key` | [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)\<T\>:interface for storing the value. This value cannot be`null`. |
 | `<T>` | type of value. |
 
 | Return ||
@@ -62,7 +62,7 @@ Sets a value for the key.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [AudioMetadata.Key](https://developer.android.com/reference/kotlin/android/media/AudioMetadata.Key)\<T\>:interface for storing the value. This value cannot be`null`. |
+| `key` | [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)\<T\>:interface for storing the value. This value cannot be`null`. |
 | `<T>` | type of value. |
 | `value` | T:a non-null value of type T. |
 | --- | --- |

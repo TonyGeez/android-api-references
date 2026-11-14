@@ -4,67 +4,67 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # ECharacterCategory
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacterEnums.ECharacterCategory "View this page in Java") 
+Kotlin| [Java](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) 
 | --- | --- |
 
 ```
 interface ECharacterCategory
 ```
 
-| [android.icu.lang.UCharacterEnums.ECharacterCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#) |
+| [android.icu.lang.UCharacterEnums.ECharacterCategory](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) |
 
-| Known Direct Subclasses [UCharacter](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter), [UCharacterCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterCategory) |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------| | [UCharacter](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](https://developer.android.com/reference/kotlin/java/lang/Character.html#). | | [UCharacterCategory](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterCategory) | Enumerated Unicode category types from the UnicodeData. | |
+| Known Direct Subclasses [UCharacter](../android/icu/lang/UCharacter.md), [UCharacterCategory](../android/icu/lang/UCharacterCategory.md) |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------| | [UCharacter](../android/icu/lang/UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java/lang/Character.md). | | [UCharacterCategory](../android/icu/lang/UCharacterCategory.md) | Enumerated Unicode category types from the UnicodeData. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-'Enum' for the CharacterCategory constants. These constants are compatible in name**but not in value** with those defined in [java.lang.Character](https://developer.android.com/reference/kotlin/java/lang/Character.html#).
+'Enum' for the CharacterCategory constants. These constants are compatible in name**but not in value** with those defined in [java.lang.Character](../java/lang/Character.md).
 
 ## Summary
 
 | Constants ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [COMBINING_SPACING_MARK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#COMBINING_SPACING_MARK:kotlin.Byte) Character type Mc |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CONNECTOR_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#CONNECTOR_PUNCTUATION:kotlin.Byte) Character type Pc |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CONTROL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#CONTROL:kotlin.Byte) Character type Cc |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [COMBINING_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Mc |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CONNECTOR_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Pc |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CONTROL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Cc |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CURRENCY_SYMBOL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#CURRENCY_SYMBOL:kotlin.Byte) Character type Sc |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DASH_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#DASH_PUNCTUATION:kotlin.Byte) Character type Pd |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DECIMAL_DIGIT_NUMBER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#DECIMAL_DIGIT_NUMBER:kotlin.Byte) Character type Nd |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CURRENCY_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Sc |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DASH_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Pd |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DECIMAL_DIGIT_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Nd |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [ENCLOSING_MARK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#ENCLOSING_MARK:kotlin.Byte) Character type Me |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [END_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#END_PUNCTUATION:kotlin.Byte) Character type Pe |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FINAL_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#FINAL_PUNCTUATION:kotlin.Byte) Character type Pf |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [ENCLOSING_MARK](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Me |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [END_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Pe |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FINAL_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Pf |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FINAL_QUOTE_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#FINAL_QUOTE_PUNCTUATION:kotlin.Byte) Character type Pf This name is compatible with java. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FORMAT](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#FORMAT:kotlin.Byte) Character type Cf |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [GENERAL_OTHER_TYPES](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#GENERAL_OTHER_TYPES:kotlin.Byte) Character type Cn Not Assigned (no characters in \[UnicodeData.txt\] have this property) |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FINAL_QUOTE_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Pf This name is compatible with java. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FORMAT](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Cf |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [GENERAL_OTHER_TYPES](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Cn Not Assigned (no characters in \[UnicodeData.txt\] have this property) |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [INITIAL_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#INITIAL_PUNCTUATION:kotlin.Byte) Character type Pi |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [INITIAL_QUOTE_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#INITIAL_QUOTE_PUNCTUATION:kotlin.Byte) Character type Pi This name is compatible with java. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LETTER_NUMBER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#LETTER_NUMBER:kotlin.Byte) Character type Nl |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [INITIAL_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Pi |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [INITIAL_QUOTE_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Pi This name is compatible with java. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LETTER_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Nl |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LINE_SEPARATOR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#LINE_SEPARATOR:kotlin.Byte) Character type Zl |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LOWERCASE_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#LOWERCASE_LETTER:kotlin.Byte) Character type Ll |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MATH_SYMBOL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#MATH_SYMBOL:kotlin.Byte) Character type Sm |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LINE_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Zl |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LOWERCASE_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Ll |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MATH_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Sm |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MODIFIER_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#MODIFIER_LETTER:kotlin.Byte) Character type Lm |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MODIFIER_SYMBOL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#MODIFIER_SYMBOL:kotlin.Byte) Character type Sk |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [NON_SPACING_MARK](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#NON_SPACING_MARK:kotlin.Byte) Character type Mn |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MODIFIER_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Lm |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MODIFIER_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Sk |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Mn |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#OTHER_LETTER:kotlin.Byte) Character type Lo |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_NUMBER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#OTHER_NUMBER:kotlin.Byte) Character type No |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#OTHER_PUNCTUATION:kotlin.Byte) Character type Po |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Lo |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type No |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Po |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_SYMBOL](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#OTHER_SYMBOL:kotlin.Byte) Character type So |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [PARAGRAPH_SEPARATOR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#PARAGRAPH_SEPARATOR:kotlin.Byte) Character type Zp |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [PRIVATE_USE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#PRIVATE_USE:kotlin.Byte) Character type Co |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type So |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [PARAGRAPH_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Zp |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [PRIVATE_USE](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Co |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SPACE_SEPARATOR](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#SPACE_SEPARATOR:kotlin.Byte) Character type Zs |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [START_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#START_PUNCTUATION:kotlin.Byte) Character type Ps |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SURROGATE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#SURROGATE:kotlin.Byte) Character type Cs |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SPACE_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Zs |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [START_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Ps |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SURROGATE](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Cs |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TITLECASE_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#TITLECASE_LETTER:kotlin.Byte) Character type Lt |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [UNASSIGNED](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#UNASSIGNED:kotlin.Byte) Unassigned character type |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [UPPERCASE_LETTER](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#UPPERCASE_LETTER:kotlin.Byte) Character type Lu |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TITLECASE_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Lt |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [UNASSIGNED](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Unassigned character type |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [UPPERCASE_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) Character type Lu |
 | --- | --- |
 
 ## Constants
@@ -179,7 +179,7 @@ Character type Pf
 
 **See Also**
 
-- [#FINAL_QUOTE_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#FINAL_QUOTE_PUNCTUATION:kotlin.Byte) 
+- [#FINAL_QUOTE_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) 
 
 ### FINAL_QUOTE_PUNCTUATION
 
@@ -195,7 +195,7 @@ Character type Pf This name is compatible with java.lang.Character's name for th
 
 **See Also**
 
-- [#FINAL_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#FINAL_PUNCTUATION:kotlin.Byte) 
+- [#FINAL_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) 
 
 ### FORMAT
 
@@ -235,7 +235,7 @@ Character type Pi
 
 **See Also**
 
-- [#INITIAL_QUOTE_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#INITIAL_QUOTE_PUNCTUATION:kotlin.Byte) 
+- [#INITIAL_QUOTE_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) 
 
 ### INITIAL_QUOTE_PUNCTUATION
 
@@ -251,7 +251,7 @@ Character type Pi This name is compatible with java.lang.Character's name for th
 
 **See Also**
 
-- [#INITIAL_PUNCTUATION](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacterEnums.ECharacterCategory#INITIAL_PUNCTUATION:kotlin.Byte) 
+- [#INITIAL_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) 
 
 ### LETTER_NUMBER
 

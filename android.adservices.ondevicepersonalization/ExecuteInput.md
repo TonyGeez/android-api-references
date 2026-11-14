@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # ExecuteInput
 
-Kotlin| [Java](https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteInput "View this page in Java") 
+Kotlin| [Java](../android/adservices/ondevicepersonalization/ExecuteInput.md) 
 | --- | --- |
 
 ```
@@ -13,20 +13,20 @@ class ExecuteInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.ExecuteInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInput#) |
+| ↳ | [android.adservices.ondevicepersonalization.ExecuteInput](../android/adservices/ondevicepersonalization/ExecuteInput.md) |
 
-The input data for [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)).
+The input data for [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ExecuteInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInput#ExecuteInput(kotlin.String,%20android.os.PersistableBundle))`(`appPackageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `appParams:` ` [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)`)` Creates an [ExecuteInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInput#). |
+| [ExecuteInput](../android/adservices/ondevicepersonalization/ExecuteInput.md))`(`appPackageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `appParams:` ` [PersistableBundle](../android/os/PersistableBundle.md)`)` Creates an [ExecuteInput](../android/adservices/ondevicepersonalization/ExecuteInput.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAppPackageName](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInput#getAppPackageName())`()` The package name of the calling app. |
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | [getAppParams](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInput#getAppParams())`()` The parameters provided by the app to the [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAppPackageName](../android/adservices/ondevicepersonalization/ExecuteInput.md))`()` The package name of the calling app. |
+| [PersistableBundle](../android/os/PersistableBundle.md) | [getAppParams](../android/adservices/ondevicepersonalization/ExecuteInput.md))`()` The parameters provided by the app to the [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md). |
 
 ## Public constructors
 
@@ -40,12 +40,12 @@ ExecuteInput(
     appParams: PersistableBundle)
 ```
 
-Creates an [ExecuteInput](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInput#).
+Creates an [ExecuteInput](../android/adservices/ondevicepersonalization/ExecuteInput.md).
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `appPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the package name of the calling app. This value cannot be`null`. |
-| `appParams` | [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#):the parameters provided by the app to the [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService). The service defines the expected keys in this [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#). This value cannot be`null`. |
+| `appParams` | [PersistableBundle](../android/os/PersistableBundle.md):the parameters provided by the app to the [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md). The service defines the expected keys in this [PersistableBundle](../android/os/PersistableBundle.md). This value cannot be`null`. |
 
 ## Public methods
 
@@ -71,8 +71,8 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getAppParams(): PersistableBundle
 ```
 
-The parameters provided by the app to the [IsolatedService](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService). The service defines the expected keys in this [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#).
+The parameters provided by the app to the [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md). The service defines the expected keys in this [PersistableBundle](../android/os/PersistableBundle.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------|
-| [PersistableBundle](https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#) | This value cannot be`null`. |
+| [PersistableBundle](../android/os/PersistableBundle.md) | This value cannot be`null`. |

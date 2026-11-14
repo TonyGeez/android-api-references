@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # BidiPairedBracketType
 
-Kotlin| [Java](https://developer.android.com/reference/android/icu/lang/UCharacter.BidiPairedBracketType "View this page in Java") 
+Kotlin| [Java](../android/icu/lang/UCharacter.BidiPairedBracketType.md) 
 | --- | --- |
 
 ```
 interface BidiPairedBracketType
 ```
 
-| [android.icu.lang.UCharacter.BidiPairedBracketType](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType#) |
+| [android.icu.lang.UCharacter.BidiPairedBracketType](../android/icu/lang/UCharacter.BidiPairedBracketType.md) |
 
 Bidi Paired Bracket Type constants.
 
@@ -19,9 +19,9 @@ Bidi Paired Bracket Type constants.
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType#CLOSE:kotlin.Int) Close paired bracket. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType#NONE:kotlin.Int) Not a paired bracket. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN](https://developer.android.com/reference/kotlin/android/icu/lang/UCharacter.BidiPairedBracketType#OPEN:kotlin.Int) Open paired bracket. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE](../android/icu/lang/UCharacter.BidiPairedBracketType.md) Close paired bracket. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONE](../android/icu/lang/UCharacter.BidiPairedBracketType.md) Not a paired bracket. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN](../android/icu/lang/UCharacter.BidiPairedBracketType.md) Open paired bracket. |
 | --- | --- |
 
 ## Constants

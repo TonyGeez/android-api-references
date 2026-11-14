@@ -8,7 +8,7 @@ class ProfilingTrigger
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.ProfilingTrigger](https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#) |
+| ↳ | [android.os.ProfilingTrigger](../android/os/ProfilingTrigger.md) |
 
 Encapsulates a single profiling trigger.
 

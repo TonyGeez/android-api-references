@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Gravity
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/Gravity "View this page in Java") 
+Kotlin| [Java](../android/view/Gravity.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Gravity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.Gravity](https://developer.android.com/reference/kotlin/android/view/Gravity#) |
+| ↳ | [android.view.Gravity](../android/view/Gravity.md) |
 
 Standard constants and tools for placing an object within a potentially larger container.
 
@@ -21,60 +21,60 @@ Standard constants and tools for placing an object within a potentially larger c
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_CLIP](https://developer.android.com/reference/kotlin/android/view/Gravity#AXIS_CLIP:kotlin.Int) Raw bit controlling whether the right/bottom edge is clipped to its container, based on the gravity direction being applied. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_PULL_AFTER](https://developer.android.com/reference/kotlin/android/view/Gravity#AXIS_PULL_AFTER:kotlin.Int) Raw bit controlling how the right/bottom edge is placed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_PULL_BEFORE](https://developer.android.com/reference/kotlin/android/view/Gravity#AXIS_PULL_BEFORE:kotlin.Int) Raw bit controlling how the left/top edge is placed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_CLIP](../android/view/Gravity.md) Raw bit controlling whether the right/bottom edge is clipped to its container, based on the gravity direction being applied. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_PULL_AFTER](../android/view/Gravity.md) Raw bit controlling how the right/bottom edge is placed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_PULL_BEFORE](../android/view/Gravity.md) Raw bit controlling how the left/top edge is placed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_SPECIFIED](https://developer.android.com/reference/kotlin/android/view/Gravity#AXIS_SPECIFIED:kotlin.Int) Raw bit indicating the gravity for an axis has been specified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_X_SHIFT](https://developer.android.com/reference/kotlin/android/view/Gravity#AXIS_X_SHIFT:kotlin.Int) Bits defining the horizontal axis. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Y_SHIFT](https://developer.android.com/reference/kotlin/android/view/Gravity#AXIS_Y_SHIFT:kotlin.Int) Bits defining the vertical axis. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_SPECIFIED](../android/view/Gravity.md) Raw bit indicating the gravity for an axis has been specified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_X_SHIFT](../android/view/Gravity.md) Bits defining the horizontal axis. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Y_SHIFT](../android/view/Gravity.md) Bits defining the vertical axis. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOTTOM](https://developer.android.com/reference/kotlin/android/view/Gravity#BOTTOM:kotlin.Int) Push object to the bottom of its container, not changing its size. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTER](https://developer.android.com/reference/kotlin/android/view/Gravity#CENTER:kotlin.Int) Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTER_HORIZONTAL](https://developer.android.com/reference/kotlin/android/view/Gravity#CENTER_HORIZONTAL:kotlin.Int) Place object in the horizontal center of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOTTOM](../android/view/Gravity.md) Push object to the bottom of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTER](../android/view/Gravity.md) Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTER_HORIZONTAL](../android/view/Gravity.md) Place object in the horizontal center of its container, not changing its size. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTER_VERTICAL](https://developer.android.com/reference/kotlin/android/view/Gravity#CENTER_VERTICAL:kotlin.Int) Place object in the vertical center of its container, not changing its size. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLIP_HORIZONTAL](https://developer.android.com/reference/kotlin/android/view/Gravity#CLIP_HORIZONTAL:kotlin.Int) Flag to clip the edges of the object to its container along the horizontal axis. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLIP_VERTICAL](https://developer.android.com/reference/kotlin/android/view/Gravity#CLIP_VERTICAL:kotlin.Int) Flag to clip the edges of the object to its container along the vertical axis. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTER_VERTICAL](../android/view/Gravity.md) Place object in the vertical center of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLIP_HORIZONTAL](../android/view/Gravity.md) Flag to clip the edges of the object to its container along the horizontal axis. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLIP_VERTICAL](../android/view/Gravity.md) Flag to clip the edges of the object to its container along the vertical axis. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_CLIP_HORIZONTAL](https://developer.android.com/reference/kotlin/android/view/Gravity#DISPLAY_CLIP_HORIZONTAL:kotlin.Int) Special constant to enable clipping to an overall display along the horizontal dimension. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_CLIP_VERTICAL](https://developer.android.com/reference/kotlin/android/view/Gravity#DISPLAY_CLIP_VERTICAL:kotlin.Int) Special constant to enable clipping to an overall display along the vertical dimension. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [END](https://developer.android.com/reference/kotlin/android/view/Gravity#END:kotlin.Int) Push object to x-axis position at the end of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_CLIP_HORIZONTAL](../android/view/Gravity.md) Special constant to enable clipping to an overall display along the horizontal dimension. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_CLIP_VERTICAL](../android/view/Gravity.md) Special constant to enable clipping to an overall display along the vertical dimension. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [END](../android/view/Gravity.md) Push object to x-axis position at the end of its container, not changing its size. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILL](https://developer.android.com/reference/kotlin/android/view/Gravity#FILL:kotlin.Int) Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILL_HORIZONTAL](https://developer.android.com/reference/kotlin/android/view/Gravity#FILL_HORIZONTAL:kotlin.Int) Grow the horizontal size of the object if needed so it completely fills its container. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILL_VERTICAL](https://developer.android.com/reference/kotlin/android/view/Gravity#FILL_VERTICAL:kotlin.Int) Grow the vertical size of the object if needed so it completely fills its container. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILL](../android/view/Gravity.md) Grow the horizontal and vertical size of the object if needed so it completely fills its container. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILL_HORIZONTAL](../android/view/Gravity.md) Grow the horizontal size of the object if needed so it completely fills its container. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILL_VERTICAL](../android/view/Gravity.md) Grow the vertical size of the object if needed so it completely fills its container. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HORIZONTAL_GRAVITY_MASK](https://developer.android.com/reference/kotlin/android/view/Gravity#HORIZONTAL_GRAVITY_MASK:kotlin.Int) Binary mask to get the absolute horizontal gravity of a gravity. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT](https://developer.android.com/reference/kotlin/android/view/Gravity#LEFT:kotlin.Int) Push object to the left of its container, not changing its size. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_GRAVITY](https://developer.android.com/reference/kotlin/android/view/Gravity#NO_GRAVITY:kotlin.Int) Constant indicating that no gravity has been set \* |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HORIZONTAL_GRAVITY_MASK](../android/view/Gravity.md) Binary mask to get the absolute horizontal gravity of a gravity. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT](../android/view/Gravity.md) Push object to the left of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_GRAVITY](../android/view/Gravity.md) Constant indicating that no gravity has been set \* |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIVE_HORIZONTAL_GRAVITY_MASK](https://developer.android.com/reference/kotlin/android/view/Gravity#RELATIVE_HORIZONTAL_GRAVITY_MASK:kotlin.Int) Binary mask for the horizontal gravity and script specific direction bit. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIVE_LAYOUT_DIRECTION](https://developer.android.com/reference/kotlin/android/view/Gravity#RELATIVE_LAYOUT_DIRECTION:kotlin.Int) Raw bit controlling whether the layout direction is relative or not (START/END instead of absolute LEFT/RIGHT). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT](https://developer.android.com/reference/kotlin/android/view/Gravity#RIGHT:kotlin.Int) Push object to the right of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIVE_HORIZONTAL_GRAVITY_MASK](../android/view/Gravity.md) Binary mask for the horizontal gravity and script specific direction bit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RELATIVE_LAYOUT_DIRECTION](../android/view/Gravity.md) Raw bit controlling whether the layout direction is relative or not (START/END instead of absolute LEFT/RIGHT). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT](../android/view/Gravity.md) Push object to the right of its container, not changing its size. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [START](https://developer.android.com/reference/kotlin/android/view/Gravity#START:kotlin.Int) Push object to x-axis position at the start of its container, not changing its size. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOP](https://developer.android.com/reference/kotlin/android/view/Gravity#TOP:kotlin.Int) Push object to the top of its container, not changing its size. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTICAL_GRAVITY_MASK](https://developer.android.com/reference/kotlin/android/view/Gravity#VERTICAL_GRAVITY_MASK:kotlin.Int) Binary mask to get the vertical gravity of a gravity. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [START](../android/view/Gravity.md) Push object to x-axis position at the start of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOP](../android/view/Gravity.md) Push object to the top of its container, not changing its size. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTICAL_GRAVITY_MASK](../android/view/Gravity.md) Binary mask to get the vertical gravity of a gravity. |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------|---|
-| [Gravity](https://developer.android.com/reference/kotlin/android/view/Gravity#Gravity())`()` <br /> |
+| [Gravity](../android/view/Gravity.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20android.graphics.Rect))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`, `outRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!`)` Apply a gravity constant to an object. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20android.graphics.Rect,%20kotlin.Int))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `outRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Apply a gravity constant to an object and take care if layout direction is RTL or not. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `xAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`)` Apply a gravity constant to an object. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](../android/graphics/Rect.md)!`, `outRect:` ` [Rect](../android/graphics/Rect.md)!`)` Apply a gravity constant to an object. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](../android/graphics/Rect.md)`, `outRect:` ` [Rect](../android/graphics/Rect.md)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Apply a gravity constant to an object and take care if layout direction is RTL or not. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](../android/graphics/Rect.md)`, `xAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outRect:` ` [Rect](../android/graphics/Rect.md)`)` Apply a gravity constant to an object. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20kotlin.Int))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `xAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outRect:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Apply a gravity constant to an object. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyDisplay](https://developer.android.com/reference/kotlin/android/view/Gravity#applyDisplay(kotlin.Int,%20android.graphics.Rect,%20android.graphics.Rect))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `display:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `inoutObj:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`)` Apply additional gravity behavior based on the overall "display" that an object exists in. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyDisplay](https://developer.android.com/reference/kotlin/android/view/Gravity#applyDisplay(kotlin.Int,%20android.graphics.Rect,%20android.graphics.Rect,%20kotlin.Int))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `display:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `inoutObj:` ` [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Apply additional gravity behavior based on the overall "display" that an object exists in. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `container:` ` [Rect](../android/graphics/Rect.md)`, `xAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yAdj:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outRect:` ` [Rect](../android/graphics/Rect.md)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Apply a gravity constant to an object. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyDisplay](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `display:` ` [Rect](../android/graphics/Rect.md)`, `inoutObj:` ` [Rect](../android/graphics/Rect.md)`)` Apply additional gravity behavior based on the overall "display" that an object exists in. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyDisplay](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `display:` ` [Rect](../android/graphics/Rect.md)`, `inoutObj:` ` [Rect](../android/graphics/Rect.md)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Apply additional gravity behavior based on the overall "display" that an object exists in. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAbsoluteGravity](https://developer.android.com/reference/kotlin/android/view/Gravity#getAbsoluteGravity(kotlin.Int,%20kotlin.Int))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert script specific gravity to absolute horizontal value. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHorizontal](https://developer.android.com/reference/kotlin/android/view/Gravity#isHorizontal(kotlin.Int))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicate whether the supplied gravity has an horizontal pull. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVertical](https://developer.android.com/reference/kotlin/android/view/Gravity#isVertical(kotlin.Int))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicate whether the supplied gravity has a vertical pull. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAbsoluteGravity](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert script specific gravity to absolute horizontal value. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHorizontal](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicate whether the supplied gravity has an horizontal pull. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVertical](../android/view/Gravity.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Indicate whether the supplied gravity has a vertical pull. |
 | --- | --- |
 
 ## Constants
@@ -231,7 +231,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val DISPLAY_CLIP_HORIZONTAL: Int
 ```
 
-Special constant to enable clipping to an overall display along the horizontal dimension. This is not applied by default by [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)); you must do so yourself by calling #applyDisplay. 
+Special constant to enable clipping to an overall display along the horizontal dimension. This is not applied by default by [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](../android/view/Gravity.md)); you must do so yourself by calling #applyDisplay. 
 
  Value: 16777216
 
@@ -243,7 +243,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val DISPLAY_CLIP_VERTICAL: Int
 ```
 
-Special constant to enable clipping to an overall display along the vertical dimension. This is not applied by default by [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)); you must do so yourself by calling #applyDisplay. 
+Special constant to enable clipping to an overall display along the vertical dimension. This is not applied by default by [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](../android/view/Gravity.md)); you must do so yourself by calling #applyDisplay. 
 
  Value: 268435456
 
@@ -435,8 +435,8 @@ Apply a gravity constant to an object. This supposes that the layout direction i
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The horizontal size of the object. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The vertical size of the object. |
 | --- | --- |
-| `container` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!:The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. |
-| `outRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)!:Receives the computed frame of the object in its container. |
+| `container` | [Rect](../android/graphics/Rect.md)!:The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. |
+| `outRect` | [Rect](../android/graphics/Rect.md)!:Receives the computed frame of the object in its container. |
 
 ### apply
 
@@ -461,15 +461,15 @@ Apply a gravity constant to an object and take care if layout direction is RTL o
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The horizontal size of the object. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The vertical size of the object. |
 | --- | --- |
-| `container` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. This value cannot be`null`. |
-| `outRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):Receives the computed frame of the object in its container. This value cannot be`null`. |
+| `container` | [Rect](../android/graphics/Rect.md):The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. This value cannot be`null`. |
+| `outRect` | [Rect](../android/graphics/Rect.md):Receives the computed frame of the object in its container. This value cannot be`null`. |
 | `layoutDirection` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The layout direction. |
 | --- | --- |
 
 **See Also**
 
-- [android.view.View#LAYOUT_DIRECTION_LTR](https://developer.android.com/reference/kotlin/android/view/View#LAYOUT_DIRECTION_LTR:kotlin.Int)
-- [android.view.View#LAYOUT_DIRECTION_RTL](https://developer.android.com/reference/kotlin/android/view/View#LAYOUT_DIRECTION_RTL:kotlin.Int) 
+- [android.view.View#LAYOUT_DIRECTION_LTR](../android/view/View.md)
+- [android.view.View#LAYOUT_DIRECTION_RTL](../android/view/View.md) 
 
 ### apply
 
@@ -495,11 +495,11 @@ Apply a gravity constant to an object.
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The horizontal size of the object. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The vertical size of the object. |
 | --- | --- |
-| `container` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. This value cannot be`null`. |
+| `container` | [Rect](../android/graphics/Rect.md):The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. This value cannot be`null`. |
 | `xAdj` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset to apply to the X axis. If gravity is LEFT this pushes it to the right; if gravity is RIGHT it pushes it to the left; if gravity is CENTER_HORIZONTAL it pushes it to the right or left; otherwise it is ignored. |
 | `yAdj` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset to apply to the Y axis. If gravity is TOP this pushes it down; if gravity is BOTTOM it pushes it up; if gravity is CENTER_VERTICAL it pushes it down or up; otherwise it is ignored. |
 | --- | --- |
-| `outRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):Receives the computed frame of the object in its container. This value cannot be`null`. |
+| `outRect` | [Rect](../android/graphics/Rect.md):Receives the computed frame of the object in its container. This value cannot be`null`. |
 
 ### apply
 
@@ -526,17 +526,17 @@ Apply a gravity constant to an object.
 | `w` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The horizontal size of the object. |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The vertical size of the object. |
 | --- | --- |
-| `container` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. This value cannot be`null`. |
+| `container` | [Rect](../android/graphics/Rect.md):The frame of the containing space, in which the object will be placed. Should be large enough to contain the width and height of the object. This value cannot be`null`. |
 | `xAdj` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset to apply to the X axis. If gravity is LEFT this pushes it to the right; if gravity is RIGHT it pushes it to the left; if gravity is CENTER_HORIZONTAL it pushes it to the right or left; otherwise it is ignored. |
 | `yAdj` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Offset to apply to the Y axis. If gravity is TOP this pushes it down; if gravity is BOTTOM it pushes it up; if gravity is CENTER_VERTICAL it pushes it down or up; otherwise it is ignored. |
 | --- | --- |
-| `outRect` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):Receives the computed frame of the object in its container. This value cannot be`null`. |
+| `outRect` | [Rect](../android/graphics/Rect.md):Receives the computed frame of the object in its container. This value cannot be`null`. |
 | `layoutDirection` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The layout direction. |
 
 **See Also**
 
-- [android.view.View#LAYOUT_DIRECTION_LTR](https://developer.android.com/reference/kotlin/android/view/View#LAYOUT_DIRECTION_LTR:kotlin.Int)
-- [android.view.View#LAYOUT_DIRECTION_RTL](https://developer.android.com/reference/kotlin/android/view/View#LAYOUT_DIRECTION_RTL:kotlin.Int) 
+- [android.view.View#LAYOUT_DIRECTION_LTR](../android/view/View.md)
+- [android.view.View#LAYOUT_DIRECTION_RTL](../android/view/View.md) 
 
 ### applyDisplay
 
@@ -550,13 +550,13 @@ open static fun applyDisplay(
 ): Unit
 ```
 
-Apply additional gravity behavior based on the overall "display" that an object exists in. This can be used after [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect))to place the object within a visible display. By default this moves or clips the object to be visible in the display; the gravity flags [DISPLAY_CLIP_HORIZONTAL](https://developer.android.com/reference/kotlin/android/view/Gravity#DISPLAY_CLIP_HORIZONTAL:kotlin.Int) and [DISPLAY_CLIP_VERTICAL](https://developer.android.com/reference/kotlin/android/view/Gravity#DISPLAY_CLIP_VERTICAL:kotlin.Int) can be used to change this behavior.
+Apply additional gravity behavior based on the overall "display" that an object exists in. This can be used after [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](../android/view/Gravity.md))to place the object within a visible display. By default this moves or clips the object to be visible in the display; the gravity flags [DISPLAY_CLIP_HORIZONTAL](../android/view/Gravity.md) and [DISPLAY_CLIP_VERTICAL](../android/view/Gravity.md) can be used to change this behavior.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Gravity constants to modify the placement within the display. |
-| `display` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The rectangle of the display in which the object is being placed. This value cannot be`null`. |
-| `inoutObj` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):Supplies the current object position; returns with it modified if needed to fit in the display. This value cannot be`null`. |
+| `display` | [Rect](../android/graphics/Rect.md):The rectangle of the display in which the object is being placed. This value cannot be`null`. |
+| `inoutObj` | [Rect](../android/graphics/Rect.md):Supplies the current object position; returns with it modified if needed to fit in the display. This value cannot be`null`. |
 | --- | --- |
 
 ### applyDisplay
@@ -572,20 +572,20 @@ open static fun applyDisplay(
 ): Unit
 ```
 
-Apply additional gravity behavior based on the overall "display" that an object exists in. This can be used after [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](https://developer.android.com/reference/kotlin/android/view/Gravity#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect))to place the object within a visible display. By default this moves or clips the object to be visible in the display; the gravity flags [DISPLAY_CLIP_HORIZONTAL](https://developer.android.com/reference/kotlin/android/view/Gravity#DISPLAY_CLIP_HORIZONTAL:kotlin.Int) and [DISPLAY_CLIP_VERTICAL](https://developer.android.com/reference/kotlin/android/view/Gravity#DISPLAY_CLIP_VERTICAL:kotlin.Int) can be used to change this behavior.
+Apply additional gravity behavior based on the overall "display" that an object exists in. This can be used after [apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect)](../android/view/Gravity.md))to place the object within a visible display. By default this moves or clips the object to be visible in the display; the gravity flags [DISPLAY_CLIP_HORIZONTAL](../android/view/Gravity.md) and [DISPLAY_CLIP_VERTICAL](../android/view/Gravity.md) can be used to change this behavior.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Gravity constants to modify the placement within the display. |
-| `display` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):The rectangle of the display in which the object is being placed. This value cannot be`null`. |
-| `inoutObj` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#):Supplies the current object position; returns with it modified if needed to fit in the display. This value cannot be`null`. |
+| `display` | [Rect](../android/graphics/Rect.md):The rectangle of the display in which the object is being placed. This value cannot be`null`. |
+| `inoutObj` | [Rect](../android/graphics/Rect.md):Supplies the current object position; returns with it modified if needed to fit in the display. This value cannot be`null`. |
 | --- | --- |
 | `layoutDirection` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The layout direction. |
 
 **See Also**
 
-- [android.view.View#LAYOUT_DIRECTION_LTR](https://developer.android.com/reference/kotlin/android/view/View#LAYOUT_DIRECTION_LTR:kotlin.Int)
-- [android.view.View#LAYOUT_DIRECTION_RTL](https://developer.android.com/reference/kotlin/android/view/View#LAYOUT_DIRECTION_RTL:kotlin.Int) 
+- [android.view.View#LAYOUT_DIRECTION_LTR](../android/view/View.md)
+- [android.view.View#LAYOUT_DIRECTION_RTL](../android/view/View.md) 
 
 ### getAbsoluteGravity
 

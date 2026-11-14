@@ -8,9 +8,9 @@ open class AbsoluteSizeSpan : MetricAffectingSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle) |||
-| | ↳ | [android.text.style.MetricAffectingSpan](https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan) ||
-| | | ↳ | [android.text.style.AbsoluteSizeSpan](https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#) |
+| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||
+| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||
+| | | ↳ | [android.text.style.AbsoluteSizeSpan](../android/text/style/AbsoluteSizeSpan.md) |
 | --- | --- | --- | --- |
 
 A span that changes the size of the text it's attached to.
@@ -74,7 +74,7 @@ Creates an `https://developer.android.com/reference/kotlin/android/text/style/Ab
 
 | Parameters ||
 |---|---|
-| `src` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `src` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 
 ### AbsoluteSizeSpan
 
@@ -184,7 +184,7 @@ open fun updateDrawState(ds: TextPaint): Unit
 
 | Parameters ||
 |---|---|
-| `ds` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#): This value cannot be `null`. |
+| `ds` | [TextPaint](../android/text/TextPaint.md): This value cannot be `null`. |
 
 ### updateMeasureState
 
@@ -199,7 +199,7 @@ Classes that extend MetricAffectingSpan implement this method to update the text
 | Parameters ||
 |---|---|
 | `textPaint` | the paint used for drawing the text. This value cannot be `null`. |
-| `ds` | [TextPaint](https://developer.android.com/reference/kotlin/android/text/TextPaint.html#): This value cannot be `null`. |
+| `ds` | [TextPaint](../android/text/TextPaint.md): This value cannot be `null`. |
 
 ### writeToParcel
 
@@ -216,5 +216,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |

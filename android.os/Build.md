@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Build
 
-Kotlin | [Java](https://developer.android.com/reference/android/os/Build "View this page in Java")
+Kotlin | [Java](../android/os/Build.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Build
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.Build](https://developer.android.com/reference/kotlin/android/os/Build#) |
+| ↳ | [android.os.Build](../android/os/Build.md) |
 
 Information about the current build, extracted from system properties.
 
@@ -41,7 +41,7 @@ Information about the current build, extracted from system properties.
 | Public methods ||
 |---|---|
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getBackportedFixStatus(kotlin.Long)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` The status of the backported fix for a known issue on this device. |
-| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Build.Partition](https://developer.android.com/reference/kotlin/android/os/Build.Partition)!\> | `https://developer.android.com/reference/kotlin/android/os/Build#getFingerprintedPartitions()()` Get build information about partitions that have a separate fingerprint defined. |
+| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Build.Partition](../android/os/Build.Partition.md)!\> | `https://developer.android.com/reference/kotlin/android/os/Build#getFingerprintedPartitions()()` Get build information about partitions that have a separate fingerprint defined. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getMajorSdkVersion(kotlin.Int)(sdkIntFull: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain the major version encoded in a VERSION_CODES_FULL value. |
 | --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getMinorSdkVersion(kotlin.Int)(sdkIntFull: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain the minor version encoded in a VERSION_CODES_FULL value. |
@@ -244,9 +244,9 @@ open static fun getSerial(): String!
 
 Gets the hardware serial number, if available.
 
-**Note:** Root access may allow you to modify device identifiers, such as the hardware serial number. If you change these identifiers, you can not use [key attestation](https://developer.android.com/reference/kotlin/training/articles/security-key-attestation.html) to obtain proof of the device's original identifiers. KeyMint will reject an ID attestation request if the identifiers provided by the frameworks do not match the identifiers it was provisioned with.
+**Note:** Root access may allow you to modify device identifiers, such as the hardware serial number. If you change these identifiers, you can not use [key attestation](../training/articles/security-key-attestation.md) to obtain proof of the device's original identifiers. KeyMint will reject an ID attestation request if the identifiers provided by the frameworks do not match the identifiers it was provisioned with.
 
-Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](https://developer.android.com/reference/kotlin/training/articles/user-data-ids)). This method can be invoked if one of the following requirements is met:
+Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
 - If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`) on any active subscription.

@@ -11,10 +11,10 @@ open class InterruptedByTimeoutException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
-| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.channels.InterruptedByTimeoutException](https://developer.android.com/reference/kotlin/java/nio/channels/InterruptedByTimeoutException#) |
+| | | | ↳ | [java.nio.channels.InterruptedByTimeoutException](../java/nio/channels/InterruptedByTimeoutException.md) |
 
 Checked exception received by a thread when a timeout elapses before an asynchronous operation completes.
 
@@ -22,7 +22,7 @@ Checked exception received by a thread when a timeout elapses before an asynchro
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InterruptedByTimeoutException](https://developer.android.com/reference/kotlin/java/nio/channels/InterruptedByTimeoutException#InterruptedByTimeoutException())`()` Constructs an instance of this class. |
+| [InterruptedByTimeoutException](../java/nio/channels/InterruptedByTimeoutException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

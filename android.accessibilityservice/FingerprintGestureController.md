@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # FingerprintGestureController
 
-Kotlin| [Java](https://developer.android.com/reference/android/accessibilityservice/FingerprintGestureController "View this page in Java") 
+Kotlin| [Java](../android/accessibilityservice/FingerprintGestureController.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ class FingerprintGestureController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.accessibilityservice.FingerprintGestureController](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#) |
+| ↳ | [android.accessibilityservice.FingerprintGestureController](../android/accessibilityservice/FingerprintGestureController.md) |
 
-An [AccessibilityService](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService) can capture gestures performed on a device's fingerprint sensor, as long as the device has a sensor capable of detecting gestures.
+An [AccessibilityService](../android/accessibilityservice/AccessibilityService.md) can capture gestures performed on a device's fingerprint sensor, as long as the device has a sensor capable of detecting gestures.
 
-This capability must be declared by the service as [AccessibilityServiceInfo.CAPABILITY_CAN_REQUEST_FINGERPRINT_GESTURES](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_REQUEST_FINGERPRINT_GESTURES:kotlin.Int). It also requires the permission [android.Manifest.permission#USE_FINGERPRINT](https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_FINGERPRINT:kotlin.String).
+This capability must be declared by the service as [AccessibilityServiceInfo.CAPABILITY_CAN_REQUEST_FINGERPRINT_GESTURES](../android/accessibilityservice/AccessibilityServiceInfo.md). It also requires the permission [android.Manifest.permission#USE_FINGERPRINT](../android/Manifest.permission.md).
 
-Because capturing fingerprint gestures may have side effects, services with the capability only capture gestures when [AccessibilityServiceInfo.FLAG_REQUEST_FINGERPRINT_GESTURES](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_FINGERPRINT_GESTURES:kotlin.Int) is set.
+Because capturing fingerprint gestures may have side effects, services with the capability only capture gestures when [AccessibilityServiceInfo.FLAG_REQUEST_FINGERPRINT_GESTURES](../android/accessibilityservice/AccessibilityServiceInfo.md) is set.
 
-**Note:** The fingerprint sensor is used for authentication in critical use cases, so services must carefully design their user's experience when performing gestures on the sensor. When the sensor is in use by an app, for example, when authenticating or enrolling a user, the sensor will not detect gestures. Services need to ensure that users understand when the sensor is in-use for authentication to prevent users from authenticating unintentionally when trying to interact with the service. They can use [FingerprintGestureCallback.onGestureDetectionAvailabilityChanged(boolean)](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback#onGestureDetectionAvailabilityChanged(kotlin.Boolean))to learn when gesture detection becomes unavailable.
+**Note:** The fingerprint sensor is used for authentication in critical use cases, so services must carefully design their user's experience when performing gestures on the sensor. When the sensor is in use by an app, for example, when authenticating or enrolling a user, the sensor will not detect gestures. Services need to ensure that users understand when the sensor is in-use for authentication to prevent users from authenticating unintentionally when trying to interact with the service. They can use [FingerprintGestureCallback.onGestureDetectionAvailabilityChanged(boolean)](../android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback.md))to learn when gesture detection becomes unavailable.
 
 Multiple accessibility services may listen for fingerprint gestures simultaneously, so services should provide a way for the user to disable the use of this feature so multiple services don't conflict with each other.
 
@@ -31,21 +31,21 @@ Multiple accessibility services may listen for fingerprint gestures simultaneous
 
 | Nested classes ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [FingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback) Class that is called back when fingerprint gestures are being used for accessibility. |
+| abstract | [FingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback.md) Class that is called back when fingerprint gestures are being used for accessibility. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_DOWN](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_DOWN:kotlin.Int) Identifier for a swipe down on the fingerprint sensor |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_LEFT](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_LEFT:kotlin.Int) Identifier for a swipe left on the fingerprint sensor |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_RIGHT](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_RIGHT:kotlin.Int) Identifier for a swipe right on the fingerprint sensor |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_DOWN](../android/accessibilityservice/FingerprintGestureController.md) Identifier for a swipe down on the fingerprint sensor |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_LEFT](../android/accessibilityservice/FingerprintGestureController.md) Identifier for a swipe left on the fingerprint sensor |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_RIGHT](../android/accessibilityservice/FingerprintGestureController.md) Identifier for a swipe right on the fingerprint sensor |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_UP](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#FINGERPRINT_GESTURE_SWIPE_UP:kotlin.Int) Identifier for a swipe up on the fingerprint sensor |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINGERPRINT_GESTURE_SWIPE_UP](../android/accessibilityservice/FingerprintGestureController.md) Identifier for a swipe up on the fingerprint sensor |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGestureDetectionAvailable](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#isGestureDetectionAvailable())`()` Gets if the fingerprint sensor's gesture detection is available. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerFingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#registerFingerprintGestureCallback(android.accessibilityservice.FingerprintGestureController.FingerprintGestureCallback,%20android.os.Handler))`(`callback:` ` [FingerprintGestureController.FingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback)`, `handler:` ` [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?`)` Register a callback to be informed of fingerprint sensor gesture events. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterFingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#unregisterFingerprintGestureCallback(android.accessibilityservice.FingerprintGestureController.FingerprintGestureCallback))`(`callback:` ` [FingerprintGestureController.FingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback)!`)` Unregister a listener added with [registerFingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#registerFingerprintGestureCallback(android.accessibilityservice.FingerprintGestureController.FingerprintGestureCallback,%20android.os.Handler)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGestureDetectionAvailable](../android/accessibilityservice/FingerprintGestureController.md))`()` Gets if the fingerprint sensor's gesture detection is available. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerFingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.md))`(`callback:` ` [FingerprintGestureController.FingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Register a callback to be informed of fingerprint sensor gesture events. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterFingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.md))`(`callback:` ` [FingerprintGestureController.FingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback.md)!`)` Unregister a listener added with [registerFingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.md)). |
 | --- | --- |
 
 ## Constants
@@ -129,8 +129,8 @@ Register a callback to be informed of fingerprint sensor gesture events.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [FingerprintGestureController.FingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback):The listener to be added. This value cannot be`null`. |
-| `handler` | [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html#)?:The handler to use for the callback. If`null`, callbacks will happen on the service's main thread. |
+| `callback` | [FingerprintGestureController.FingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback.md):The listener to be added. This value cannot be`null`. |
+| `handler` | [Handler](../android/os/Handler.md)?:The handler to use for the callback. If`null`, callbacks will happen on the service's main thread. |
 
 ### unregisterFingerprintGestureCallback
 
@@ -140,8 +140,8 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun unregisterFingerprintGestureCallback(callback: FingerprintGestureController.FingerprintGestureCallback!): Unit
 ```
 
-Unregister a listener added with [registerFingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController#registerFingerprintGestureCallback(android.accessibilityservice.FingerprintGestureController.FingerprintGestureCallback,%20android.os.Handler)).
+Unregister a listener added with [registerFingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.md)).
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [FingerprintGestureController.FingerprintGestureCallback](https://developer.android.com/reference/kotlin/android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback)!:The callback to remove. Removing a callback that was never added has no effect. |
+| `callback` | [FingerprintGestureController.FingerprintGestureCallback](../android/accessibilityservice/FingerprintGestureController.FingerprintGestureCallback.md)!:The callback to remove. Removing a callback that was never added has no effect. |

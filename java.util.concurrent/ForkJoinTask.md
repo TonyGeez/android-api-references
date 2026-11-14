@@ -8,9 +8,9 @@ abstract class ForkJoinTask<V : Any!> : Future<V>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#) |
+| ↳ | [java.util.concurrent.ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) |
 
-| Known Direct Subclasses [CountedCompleter](https://developer.android.com/reference/kotlin/java/util/concurrent/CountedCompleter), [RecursiveAction](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveAction), [RecursiveTask](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveTask) |---|---| | [CountedCompleter](https://developer.android.com/reference/kotlin/java/util/concurrent/CountedCompleter) | A `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#` with a completion action performed when triggered and there are no remaining pending actions. | | [RecursiveAction](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveAction) | A recursive resultless `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#`. | | [RecursiveTask](https://developer.android.com/reference/kotlin/java/util/concurrent/RecursiveTask) | A recursive result-bearing `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#`. | |
+| Known Direct Subclasses [CountedCompleter](../java/util/concurrent/CountedCompleter.md), [RecursiveAction](../java/util/concurrent/RecursiveAction.md), [RecursiveTask](../java/util/concurrent/RecursiveTask.md) |---|---| | [CountedCompleter](../java/util/concurrent/CountedCompleter.md) | A `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#` with a completion action performed when triggered and there are no remaining pending actions. | | [RecursiveAction](../java/util/concurrent/RecursiveAction.md) | A recursive resultless `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#`. | | [RecursiveTask](../java/util/concurrent/RecursiveTask.md) | A recursive result-bearing `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract base class for tasks that run within a `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool`. A `ForkJoinTask` is a thread-like entity that is much lighter weight than a normal thread. Huge numbers of tasks and subtasks may be hosted by a small number of actual threads in a ForkJoinPool, at the price of some usage limitations.
@@ -47,11 +47,11 @@ ForkJoinTasks are `Serializable`, which enables them to be used in extensions su
 
 | Public methods ||
 |---|---|
-| open static [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adapt(java.lang.Runnable)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new `ForkJoinTask` that performs the `run` method of the given `Runnable` as its action, and returns a null result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`. |
-| open static [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adapt(java.lang.Runnable,%20java.util.concurrent.ForkJoinTask.adapt.T)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!, result: T)` Returns a new `ForkJoinTask` that performs the `run` method of the given `Runnable` as its action, and returns the given result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`. |
-| open static [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adapt(java.util.concurrent.Callable)(callable: https://developer.android.com/reference/kotlin/java/util/concurrent/Callable<out T>!)` Returns a new `ForkJoinTask` that performs the `call` method of the given `Callable` as its action, and returns its result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`, translating any checked exceptions encountered into `RuntimeException`. |
+| open static [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adapt(java.lang.Runnable)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new `ForkJoinTask` that performs the `run` method of the given `Runnable` as its action, and returns a null result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`. |
+| open static [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adapt(java.lang.Runnable,%20java.util.concurrent.ForkJoinTask.adapt.T)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!, result: T)` Returns a new `ForkJoinTask` that performs the `run` method of the given `Runnable` as its action, and returns the given result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`. |
+| open static [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adapt(java.util.concurrent.Callable)(callable: https://developer.android.com/reference/kotlin/java/util/concurrent/Callable<out T>!)` Returns a new `ForkJoinTask` that performs the `call` method of the given `Callable` as its action, and returns its result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`, translating any checked exceptions encountered into `RuntimeException`. |
 | --- | --- |
-| open static [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adaptInterruptible(java.util.concurrent.Callable)(callable: https://developer.android.com/reference/kotlin/java/util/concurrent/Callable<out T>!)` Returns a new `ForkJoinTask` that performs the `call` method of the given `Callable` as its action, and returns its result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`, translating any checked exceptions encountered into `RuntimeException`. |
+| open static [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#adaptInterruptible(java.util.concurrent.Callable)(callable: https://developer.android.com/reference/kotlin/java/util/concurrent/Callable<out T>!)` Returns a new `ForkJoinTask` that performs the `call` method of the given `Callable` as its action, and returns its result upon `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`, translating any checked exceptions encountered into `RuntimeException`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#cancel(kotlin.Boolean)(mayInterruptIfRunning: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Attempts to cancel execution of this task. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#compareAndSetForkJoinTaskTag(kotlin.Short,%20kotlin.Short)(expect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, update: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Atomically conditionally sets the tag value for this task. |
 | --- | --- |
@@ -59,19 +59,19 @@ ForkJoinTasks are `Serializable`, which enables them to be used in extensions su
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#completeExceptionally(kotlin.Throwable)(ex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Completes this task abnormally, and if not already aborted or cancelled, causes it to throw the given exception upon `join` and related operations. |
 | open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#exceptionNow()()` Returns the exception thrown by the task, without waiting. |
 | --- | --- |
-| [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<V\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#fork()()` Arranges to asynchronously execute this task in the pool the current task is running in, if applicable, or using the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` if not `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#inForkJoinPool()`. |
+| [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<V\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#fork()()` Arranges to asynchronously execute this task in the pool the current task is running in, if applicable, or using the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` if not `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#inForkJoinPool()`. |
 | V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#get()()` Waits if necessary for the computation to complete, and then retrieves its result. |
 | V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#get(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Waits if necessary for at most the given time for the computation to complete, and then retrieves its result, if available. |
 | --- | --- |
 | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#getException()()` Returns the exception thrown by the base computation, or a `CancellationException` if cancelled, or `null` if none or if the method has not yet completed. |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#getForkJoinTaskTag()()` Returns the tag for this task. |
-| open static [ForkJoinPool](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#getPool()()` Returns the pool hosting the current thread, or `null` if the current thread is executing outside of any ForkJoinPool. |
+| open static [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#getPool()()` Returns the pool hosting the current thread, or `null` if the current thread is executing outside of any ForkJoinPool. |
 | --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#getQueuedTaskCount()()` Returns an estimate of the number of tasks that have been forked by the current worker thread but not yet executed. |
 | abstract V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#getRawResult()()` Returns the result that would be returned by `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()`, even if this task completed abnormally, or `null` if this task is not known to have been completed. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#getSurplusQueuedTaskCount()()` Returns an estimate of how many more locally queued tasks are held by the current worker thread than there are other worker threads that might steal them, or zero if this thread is not operating in a ForkJoinPool. |
 | --- | --- |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#helpQuiesce()()` Possibly executes tasks until the pool hosting the current task [is quiescent](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#isQuiescent()). |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#helpQuiesce()()` Possibly executes tasks until the pool hosting the current task [is quiescent](../java/util/concurrent/ForkJoinPool.md)). |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#inForkJoinPool()()` Returns `true` if the current thread is a `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinWorkerThread` executing as a ForkJoinPool computation. |
 | V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#invoke()()` Commences performing this task, awaits its completion if necessary, and returns its result, or throws an (unchecked) `RuntimeException` or `Error` if the underlying computation did so. |
 | --- | --- |
@@ -84,7 +84,7 @@ ForkJoinTasks are `Serializable`, which enables them to be used in extensions su
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#isCompletedNormally()()` Returns `true` if this task completed without throwing an exception and was not cancelled. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#isDone()()` Returns `true` if this task completed. |
-| V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()()` Returns the result of the computation when it [is done](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#isDone()). |
+| V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#join()()` Returns the result of the computation when it [is done](../java/util/concurrent/ForkJoinTask.md)). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#quietlyComplete()()` Completes this task normally without setting a value. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#quietlyInvoke()()` Commences performing this task and awaits its completion if necessary, without returning its result or throwing its exception. |
@@ -96,17 +96,17 @@ ForkJoinTasks are `Serializable`, which enables them to be used in extensions su
 | open V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#resultNow()()` Returns the computed result, without waiting. |
 | --- | --- |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#setForkJoinTaskTag(kotlin.Short)(newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Atomically sets the tag value for this task and returns the old value. |
-| open [Future.State](https://developer.android.com/reference/kotlin/java/util/concurrent/Future.State)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#state()()` {@return the computation state} |
+| open [Future.State](../java/util/concurrent/Future.State.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#state()()` {@return the computation state} |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#tryUnfork()()` Tries to unschedule this task for execution. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#exec()()` Immediately performs the base action of this task and returns true if, upon return from this method, this task is guaranteed to have completed. |
-| open static [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#peekNextLocalTask()()` Returns, but does not unschedule or execute, a task queued by the current thread but not yet executed, if one is immediately available. |
-| open static [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#pollNextLocalTask()()` Unschedules and returns, without executing, the next task queued by the current thread but not yet executed, if the current thread is operating in a ForkJoinPool. |
+| open static [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#peekNextLocalTask()()` Returns, but does not unschedule or execute, a task queued by the current thread but not yet executed, if one is immediately available. |
+| open static [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#pollNextLocalTask()()` Unschedules and returns, without executing, the next task queued by the current thread but not yet executed, if the current thread is operating in a ForkJoinPool. |
 | --- | --- |
-| open static [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#pollTask()()` If the current thread is operating in a ForkJoinPool, unschedules and returns, without executing, the next task queued by the current thread but not yet executed, if one is available, or if not available, a task that was forked by some other thread, if available. |
+| open static [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#pollTask()()` If the current thread is operating in a ForkJoinPool, unschedules and returns, without executing, the next task queued by the current thread but not yet executed, if one is available, or if not available, a task that was forked by some other thread, if available. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#setRawResult(java.util.concurrent.ForkJoinTask.V)(value: V)` Forces the given value to be returned as a result. |
 
 ## Public constructors
@@ -135,7 +135,7 @@ Returns a new `ForkJoinTask` that performs the `run` method of the given `Runnab
 
 | Parameters ||
 |---|---|
-| `runnable` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!: the runnable action |
+| `runnable` | [Runnable](../java/lang/Runnable.md)!: the runnable action |
 
 | Return ||
 |---|---|
@@ -157,7 +157,7 @@ Returns a new `ForkJoinTask` that performs the `run` method of the given `Runnab
 | Parameters ||
 |---|---|
 | `<T>` | the type of the result |
-| `runnable` | [Runnable](https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)!: the runnable action |
+| `runnable` | [Runnable](../java/lang/Runnable.md)!: the runnable action |
 | `result` | T: the result upon completion |
 | --- | --- |
 
@@ -178,7 +178,7 @@ Returns a new `ForkJoinTask` that performs the `call` method of the given `Calla
 | Parameters ||
 |---|---|
 | `<T>` | the type of the callable's result |
-| `callable` | [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<out T\>!: the callable action |
+| `callable` | [Callable](../java/util/concurrent/Callable.md)\<out T\>!: the callable action |
 
 | Return ||
 |---|---|
@@ -197,7 +197,7 @@ Returns a new `ForkJoinTask` that performs the `call` method of the given `Calla
 | Parameters ||
 |---|---|
 | `<T>` | the type of the callable's result |
-| `callable` | [Callable](https://developer.android.com/reference/kotlin/java/util/concurrent/Callable)\<out T\>!: the callable action |
+| `callable` | [Callable](../java/util/concurrent/Callable.md)\<out T\>!: the callable action |
 
 | Return ||
 |---|---|
@@ -346,7 +346,7 @@ Waits if necessary for at most the given time for the computation to complete, a
 | Parameters ||
 |---|---|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!: the time unit of the timeout argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the timeout argument |
 
 | Return ||
 |---|---|
@@ -454,7 +454,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open static fun helpQuiesce(): Unit
 ```
 
-Possibly executes tasks until the pool hosting the current task [is quiescent](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#isQuiescent()). This method may be of use in designs in which many tasks are forked, but none are explicitly joined, instead executing them until all are processed.
+Possibly executes tasks until the pool hosting the current task [is quiescent](../java/util/concurrent/ForkJoinPool.md)). This method may be of use in designs in which many tasks are forked, but none are explicitly joined, instead executing them until all are processed.
 
 ### inForkJoinPool
 
@@ -522,8 +522,8 @@ Forks the given tasks, returning when `isDone` holds for each task or an (unchec
 
 | Parameters ||
 |---|---|
-| `t1` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<\*\>!: the first task |
-| `t2` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<\*\>!: the second task |
+| `t1` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>!: the first task |
+| `t2` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>!: the second task |
 
 | Exceptions ||
 |---|---|
@@ -541,7 +541,7 @@ Forks the given tasks, returning when `isDone` holds for each task or an (unchec
 
 | Parameters ||
 |---|---|
-| `tasks` | [ForkJoinTask](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#)\<\*\>!: the tasks |
+| `tasks` | [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md)\<\*\>!: the tasks |
 
 | Exceptions ||
 |---|---|
@@ -611,7 +611,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun join(): V
 ```
 
-Returns the result of the computation when it [is done](https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#isDone()). This method differs from `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#get()` in that abnormal completion results in `RuntimeException` or `Error`, not `ExecutionException`, and that interrupts of the calling thread do *not* cause the method to abruptly return by throwing `InterruptedException`.
+Returns the result of the computation when it [is done](../java/util/concurrent/ForkJoinTask.md)). This method differs from `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinTask#get()` in that abnormal completion results in `RuntimeException` or `Error`, not `ExecutionException`, and that interrupts of the calling thread do *not* cause the method to abruptly return by throwing `InterruptedException`.
 
 | Return ||
 |---|---|
@@ -663,7 +663,7 @@ Tries to join this task, returning true if it completed (possibly exceptionally)
 | Parameters ||
 |---|---|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!: the time unit of the timeout argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the timeout argument |
 
 | Return ||
 |---|---|
@@ -689,7 +689,7 @@ Tries to join this task, returning true if it completed (possibly exceptionally)
 | Parameters ||
 |---|---|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum time to wait |
-| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit)!: the time unit of the timeout argument |
+| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the timeout argument |
 
 | Return ||
 |---|---|

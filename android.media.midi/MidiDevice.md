@@ -2,7 +2,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # MidiDevice
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/midi/MidiDevice "View this page in Java")
+Kotlin | [Java](../android/media/midi/MidiDevice.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class MidiDevice : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.midi.MidiDevice](https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#) |
+| ↳ | [android.media.midi.MidiDevice](../android/media/midi/MidiDevice.md) |
 
 This class is used for sending and receiving data to and from a MIDI device Instances of this class are created by `https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#openDevice(android.media.midi.MidiDeviceInfo,%20android.media.midi.MidiManager.OnDeviceOpenedListener,%20android.os.Handler)`.
 
@@ -24,11 +24,11 @@ This class is used for sending and receiving data to and from a MIDI device Inst
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#close()()` Closes this stream and releases any system resources associated with it. |
-| [MidiDevice.MidiConnection](https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice.MidiConnection)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#connectPorts(android.media.midi.MidiInputPort,%20kotlin.Int)(inputPort: https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort!, outputPortNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connects the supplied `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` to the output port of this device with the specified port number. |
-| [MidiDeviceInfo](https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#getInfo()()` Returns a `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` object, which describes this device. |
+| [MidiDevice.MidiConnection](../android/media/midi/MidiDevice.MidiConnection.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#connectPorts(android.media.midi.MidiInputPort,%20kotlin.Int)(inputPort: https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort!, outputPortNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connects the supplied `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` to the output port of this device with the specified port number. |
+| [MidiDeviceInfo](../android/media/midi/MidiDeviceInfo.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#getInfo()()` Returns a `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` object, which describes this device. |
 | --- | --- |
-| [MidiInputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#openInputPort(kotlin.Int)(portNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` for the specified port number. |
-| [MidiOutputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#openOutputPort(kotlin.Int)(portNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort` for the specified port number. |
+| [MidiInputPort](../android/media/midi/MidiInputPort.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#openInputPort(kotlin.Int)(portNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` for the specified port number. |
+| [MidiOutputPort](../android/media/midi/MidiOutputPort.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#openOutputPort(kotlin.Int)(portNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort` for the specified port number. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#toString()()` Returns a string representation of the object. |
 | --- | --- |
 
@@ -70,7 +70,7 @@ Connects the supplied `https://developer.android.com/reference/kotlin/android/me
 
 | Parameters ||
 |---|---|
-| `inputPort` | [MidiInputPort](https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort)!: the inputPort to connect |
+| `inputPort` | [MidiInputPort](../android/media/midi/MidiInputPort.md)!: the inputPort to connect |
 | `outputPortNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port number of the output port to connect inputPort to. |
 
 | Return ||

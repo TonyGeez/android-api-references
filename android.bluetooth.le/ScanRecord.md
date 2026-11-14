@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ScanRecord
 
-Kotlin | [Java](https://developer.android.com/reference/android/bluetooth/le/ScanRecord "View this page in Java")
+Kotlin | [Java](../android/bluetooth/le/ScanRecord.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ScanRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.ScanRecord](https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#) |
+| ↳ | [android.bluetooth.le.ScanRecord](../android/bluetooth/le/ScanRecord.md) |
 
 Represents a scan record from Bluetooth LE scan.
 
@@ -89,14 +89,14 @@ Represents a scan record from Bluetooth LE scan.
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getBytes()()` Returns raw bytes of scan record. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getDeviceName()()` Returns the local name of the BLE device. |
-| [SparseArray](https://developer.android.com/reference/kotlin/android/util/SparseArray.html#)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getManufacturerSpecificData()()` Returns a sparse array of manufacturer identifier and its corresponding manufacturer specific data. |
+| [SparseArray](../android/util/SparseArray.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getManufacturerSpecificData()()` Returns a sparse array of manufacturer identifier and its corresponding manufacturer specific data. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getManufacturerSpecificData(kotlin.Int)(manufacturerId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the manufacturer specific data associated with the manufacturer id. |
 | --- | --- |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!, [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceData()()` Returns a map of service UUID and its corresponding service data. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [ParcelUuid](../android/os/ParcelUuid.md)!, [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceData()()` Returns a map of service UUID and its corresponding service data. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceData(android.os.ParcelUuid)(serviceDataUuid: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#!)` Returns the service data byte array associated with the `serviceUuid`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceSolicitationUuids()()` Returns a list of service solicitation UUIDs within the advertisement that are used to identify the Bluetooth GATT services. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](../android/os/ParcelUuid.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceSolicitationUuids()()` Returns a list of service solicitation UUIDs within the advertisement that are used to identify the Bluetooth GATT services. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceUuids()()` Returns a list of service UUIDs within the advertisement that are used to identify the bluetooth GATT services. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](../android/os/ParcelUuid.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getServiceUuids()()` Returns a list of service UUIDs within the advertisement that are used to identify the bluetooth GATT services. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#getTxPowerLevel()()` Returns the transmission power level of the packet in dBm. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanRecord#toString()()` Returns a string representation of the object. |
 | --- | --- |

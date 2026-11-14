@@ -10,7 +10,7 @@ open class ECFieldFp : ECField
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECFieldFp](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#) |
+| ↳ | [java.security.spec.ECFieldFp](../java/security/spec/ECFieldFp.md) |
 
 This immutable class defines an elliptic curve (EC) prime finite field.
 
@@ -18,15 +18,15 @@ This immutable class defines an elliptic curve (EC) prime finite field.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECFieldFp](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#ECFieldFp(java.math.BigInteger))`(`p:` ` [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!`)` Creates an elliptic curve prime finite field with the specified prime`p`. |
+| [ECFieldFp](../java/security/spec/ECFieldFp.md))`(`p:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates an elliptic curve prime finite field with the specified prime`p`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#equals(kotlin.Any))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this prime finite field for equality with the specified object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#getFieldSize())`()` Returns the field size in bits which is size of prime p for this prime finite field. |
-| open [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | [getP](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#getP())`()` Returns the prime`p`of this prime finite field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/spec/ECFieldFp.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this prime finite field for equality with the specified object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](../java/security/spec/ECFieldFp.md))`()` Returns the field size in bits which is size of prime p for this prime finite field. |
+| open [BigInteger](../java/math/BigInteger.md)! | [getP](../java/security/spec/ECFieldFp.md))`()` Returns the prime`p`of this prime finite field. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](https://developer.android.com/reference/kotlin/java/security/spec/ECFieldFp#hashCode())`()` Returns a hash code value for this prime finite field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/spec/ECFieldFp.md))`()` Returns a hash code value for this prime finite field. |
 
 ## Public constructors
 
@@ -42,7 +42,7 @@ Creates an elliptic curve prime finite field with the specified prime`p`.
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------|
-| `p` | [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)!:the prime. |
+| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------|
@@ -95,7 +95,7 @@ Returns the prime`p`of this prime finite field.
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------|
-| [BigInteger](https://developer.android.com/reference/kotlin/java/math/BigInteger.html#)! | the prime. |
+| [BigInteger](../java/math/BigInteger.md)! | the prime. |
 
 ### hashCode
 

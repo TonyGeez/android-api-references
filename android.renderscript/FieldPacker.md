@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # FieldPacker
 
-Kotlin| [Java](https://developer.android.com/reference/android/renderscript/FieldPacker "View this page in Java") 
+Kotlin| [Java](../android/renderscript/FieldPacker.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class FieldPacker
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#) |
+| ↳ | [android.renderscript.FieldPacker](../android/renderscript/FieldPacker.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,116 +26,116 @@ Utility class for packing arguments and structures from Android system objects t
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#FieldPacker(kotlin.ByteArray))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> |
-| [FieldPacker](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#FieldPacker(kotlin.Int))`(`len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [FieldPacker](../android/renderscript/FieldPacker.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> |
+| [FieldPacker](../android/renderscript/FieldPacker.md))`(`len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBoolean](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addBoolean(kotlin.Boolean))`(`v:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF32(android.renderscript.Float2))`(`v:` ` [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF32(android.renderscript.Float3))`(`v:` ` [Float3](https://developer.android.com/reference/kotlin/android/renderscript/Float3)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBoolean](../android/renderscript/FieldPacker.md))`(`v:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](../android/renderscript/FieldPacker.md))`(`v:` ` [Float2](../android/renderscript/Float2.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](../android/renderscript/FieldPacker.md))`(`v:` ` [Float3](../android/renderscript/Float3.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF32(android.renderscript.Float4))`(`v:` ` [Float4](https://developer.android.com/reference/kotlin/android/renderscript/Float4)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF32(kotlin.Float))`(`v:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF64(android.renderscript.Double2))`(`v:` ` [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](../android/renderscript/FieldPacker.md))`(`v:` ` [Float4](../android/renderscript/Float4.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF32](../android/renderscript/FieldPacker.md))`(`v:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](../android/renderscript/FieldPacker.md))`(`v:` ` [Double2](../android/renderscript/Double2.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF64(android.renderscript.Double3))`(`v:` ` [Double3](https://developer.android.com/reference/kotlin/android/renderscript/Double3)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF64(android.renderscript.Double4))`(`v:` ` [Double4](https://developer.android.com/reference/kotlin/android/renderscript/Double4)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addF64(kotlin.Double))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](../android/renderscript/FieldPacker.md))`(`v:` ` [Double3](../android/renderscript/Double3.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](../android/renderscript/FieldPacker.md))`(`v:` ` [Double4](../android/renderscript/Double4.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addF64](../android/renderscript/FieldPacker.md))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI16(android.renderscript.Short2))`(`v:` ` [Short2](https://developer.android.com/reference/kotlin/android/renderscript/Short2)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI16(android.renderscript.Short3))`(`v:` ` [Short3](https://developer.android.com/reference/kotlin/android/renderscript/Short3)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI16(android.renderscript.Short4))`(`v:` ` [Short4](https://developer.android.com/reference/kotlin/android/renderscript/Short4)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](../android/renderscript/FieldPacker.md))`(`v:` ` [Short2](../android/renderscript/Short2.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](../android/renderscript/FieldPacker.md))`(`v:` ` [Short3](../android/renderscript/Short3.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](../android/renderscript/FieldPacker.md))`(`v:` ` [Short4](../android/renderscript/Short4.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI16(kotlin.Short))`(`v:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI32(android.renderscript.Int2))`(`v:` ` [Int2](https://developer.android.com/reference/kotlin/android/renderscript/Int2)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI32(android.renderscript.Int3))`(`v:` ` [Int3](https://developer.android.com/reference/kotlin/android/renderscript/Int3)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI16](../android/renderscript/FieldPacker.md))`(`v:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](../android/renderscript/FieldPacker.md))`(`v:` ` [Int2](../android/renderscript/Int2.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](../android/renderscript/FieldPacker.md))`(`v:` ` [Int3](../android/renderscript/Int3.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI32(android.renderscript.Int4))`(`v:` ` [Int4](https://developer.android.com/reference/kotlin/android/renderscript/Int4)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI32(kotlin.Int))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI64(android.renderscript.Long2))`(`v:` ` [Long2](https://developer.android.com/reference/kotlin/android/renderscript/Long2)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](../android/renderscript/FieldPacker.md))`(`v:` ` [Int4](../android/renderscript/Int4.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI32](../android/renderscript/FieldPacker.md))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long2](../android/renderscript/Long2.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI64(android.renderscript.Long3))`(`v:` ` [Long3](https://developer.android.com/reference/kotlin/android/renderscript/Long3)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI64(android.renderscript.Long4))`(`v:` ` [Long4](https://developer.android.com/reference/kotlin/android/renderscript/Long4)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI64(kotlin.Long))`(`v:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long3](../android/renderscript/Long3.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long4](../android/renderscript/Long4.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI8(android.renderscript.Byte2))`(`v:` ` [Byte2](https://developer.android.com/reference/kotlin/android/renderscript/Byte2)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI8(android.renderscript.Byte3))`(`v:` ` [Byte3](https://developer.android.com/reference/kotlin/android/renderscript/Byte3)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI8(android.renderscript.Byte4))`(`v:` ` [Byte4](https://developer.android.com/reference/kotlin/android/renderscript/Byte4)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](../android/renderscript/FieldPacker.md))`(`v:` ` [Byte2](../android/renderscript/Byte2.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](../android/renderscript/FieldPacker.md))`(`v:` ` [Byte3](../android/renderscript/Byte3.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](../android/renderscript/FieldPacker.md))`(`v:` ` [Byte4](../android/renderscript/Byte4.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addI8(kotlin.Byte))`(`v:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatrix](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addMatrix(android.renderscript.Matrix2f))`(`v:` ` [Matrix2f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatrix](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addMatrix(android.renderscript.Matrix3f))`(`v:` ` [Matrix3f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix3f)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addI8](../android/renderscript/FieldPacker.md))`(`v:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatrix](../android/renderscript/FieldPacker.md))`(`v:` ` [Matrix2f](../android/renderscript/Matrix2f.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatrix](../android/renderscript/FieldPacker.md))`(`v:` ` [Matrix3f](../android/renderscript/Matrix3f.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatrix](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addMatrix(android.renderscript.Matrix4f))`(`v:` ` [Matrix4f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix4f)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addObj](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addObj(android.renderscript.BaseObj))`(`obj:` ` [BaseObj](https://developer.android.com/reference/kotlin/android/renderscript/BaseObj)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU16(android.renderscript.Int2))`(`v:` ` [Int2](https://developer.android.com/reference/kotlin/android/renderscript/Int2)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMatrix](../android/renderscript/FieldPacker.md))`(`v:` ` [Matrix4f](../android/renderscript/Matrix4f.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addObj](../android/renderscript/FieldPacker.md))`(`obj:` ` [BaseObj](../android/renderscript/BaseObj.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](../android/renderscript/FieldPacker.md))`(`v:` ` [Int2](../android/renderscript/Int2.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU16(android.renderscript.Int3))`(`v:` ` [Int3](https://developer.android.com/reference/kotlin/android/renderscript/Int3)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU16(android.renderscript.Int4))`(`v:` ` [Int4](https://developer.android.com/reference/kotlin/android/renderscript/Int4)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU16(kotlin.Int))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](../android/renderscript/FieldPacker.md))`(`v:` ` [Int3](../android/renderscript/Int3.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](../android/renderscript/FieldPacker.md))`(`v:` ` [Int4](../android/renderscript/Int4.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU16](../android/renderscript/FieldPacker.md))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU32(android.renderscript.Long2))`(`v:` ` [Long2](https://developer.android.com/reference/kotlin/android/renderscript/Long2)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU32(android.renderscript.Long3))`(`v:` ` [Long3](https://developer.android.com/reference/kotlin/android/renderscript/Long3)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU32(android.renderscript.Long4))`(`v:` ` [Long4](https://developer.android.com/reference/kotlin/android/renderscript/Long4)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](../android/renderscript/FieldPacker.md))`(`v:` ` [Long2](../android/renderscript/Long2.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](../android/renderscript/FieldPacker.md))`(`v:` ` [Long3](../android/renderscript/Long3.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](../android/renderscript/FieldPacker.md))`(`v:` ` [Long4](../android/renderscript/Long4.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU32(kotlin.Long))`(`v:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU64(android.renderscript.Long2))`(`v:` ` [Long2](https://developer.android.com/reference/kotlin/android/renderscript/Long2)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU64(android.renderscript.Long3))`(`v:` ` [Long3](https://developer.android.com/reference/kotlin/android/renderscript/Long3)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU32](../android/renderscript/FieldPacker.md))`(`v:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long2](../android/renderscript/Long2.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long3](../android/renderscript/Long3.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU64(android.renderscript.Long4))`(`v:` ` [Long4](https://developer.android.com/reference/kotlin/android/renderscript/Long4)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU64(kotlin.Long))`(`v:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU8(android.renderscript.Short2))`(`v:` ` [Short2](https://developer.android.com/reference/kotlin/android/renderscript/Short2)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long4](../android/renderscript/Long4.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU64](../android/renderscript/FieldPacker.md))`(`v:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](../android/renderscript/FieldPacker.md))`(`v:` ` [Short2](../android/renderscript/Short2.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU8(android.renderscript.Short3))`(`v:` ` [Short3](https://developer.android.com/reference/kotlin/android/renderscript/Short3)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU8(android.renderscript.Short4))`(`v:` ` [Short4](https://developer.android.com/reference/kotlin/android/renderscript/Short4)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#addU8(kotlin.Short))`(`v:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](../android/renderscript/FieldPacker.md))`(`v:` ` [Short3](../android/renderscript/Short3.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](../android/renderscript/FieldPacker.md))`(`v:` ` [Short4](../android/renderscript/Short4.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addU8](../android/renderscript/FieldPacker.md))`(`v:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [align](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#align(kotlin.Int))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#getData())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#reset())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [align](../android/renderscript/FieldPacker.md))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#reset(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skip](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#skip(kotlin.Int))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [subBoolean](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subBoolean())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/renderscript/FieldPacker.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skip](../android/renderscript/FieldPacker.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [subBoolean](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Byte2](https://developer.android.com/reference/kotlin/android/renderscript/Byte2)! | [subByte2](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subByte2())`()` <br /> |
-| open [Byte3](https://developer.android.com/reference/kotlin/android/renderscript/Byte3)! | [subByte3](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subByte3())`()` <br /> |
-| open [Byte4](https://developer.android.com/reference/kotlin/android/renderscript/Byte4)! | [subByte4](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subByte4())`()` <br /> |
+| open [Byte2](../android/renderscript/Byte2.md)! | [subByte2](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Byte3](../android/renderscript/Byte3.md)! | [subByte3](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Byte4](../android/renderscript/Byte4.md)! | [subByte4](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Double2](https://developer.android.com/reference/kotlin/android/renderscript/Double2)! | [subDouble2](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subDouble2())`()` <br /> |
-| open [Double3](https://developer.android.com/reference/kotlin/android/renderscript/Double3)! | [subDouble3](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subDouble3())`()` <br /> |
-| open [Double4](https://developer.android.com/reference/kotlin/android/renderscript/Double4)! | [subDouble4](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subDouble4())`()` <br /> |
+| open [Double2](../android/renderscript/Double2.md)! | [subDouble2](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Double3](../android/renderscript/Double3.md)! | [subDouble3](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Double4](../android/renderscript/Double4.md)! | [subDouble4](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [subF32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subF32())`()` <br /> |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [subF64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subF64())`()` <br /> |
-| open [Float2](https://developer.android.com/reference/kotlin/android/renderscript/Float2)! | [subFloat2](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subFloat2())`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [subF32](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [subF64](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Float2](../android/renderscript/Float2.md)! | [subFloat2](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Float3](https://developer.android.com/reference/kotlin/android/renderscript/Float3)! | [subFloat3](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subFloat3())`()` <br /> |
-| open [Float4](https://developer.android.com/reference/kotlin/android/renderscript/Float4)! | [subFloat4](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subFloat4())`()` <br /> |
-| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [subI16](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subI16())`()` <br /> |
+| open [Float3](../android/renderscript/Float3.md)! | [subFloat3](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Float4](../android/renderscript/Float4.md)! | [subFloat4](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [subI16](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [subI32](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subI32())`()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [subI64](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subI64())`()` <br /> |
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [subI8](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subI8())`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [subI32](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [subI64](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [subI8](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Int2](https://developer.android.com/reference/kotlin/android/renderscript/Int2)! | [subInt2](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subInt2())`()` <br /> |
-| open [Int3](https://developer.android.com/reference/kotlin/android/renderscript/Int3)! | [subInt3](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subInt3())`()` <br /> |
-| open [Int4](https://developer.android.com/reference/kotlin/android/renderscript/Int4)! | [subInt4](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subInt4())`()` <br /> |
+| open [Int2](../android/renderscript/Int2.md)! | [subInt2](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Int3](../android/renderscript/Int3.md)! | [subInt3](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Int4](../android/renderscript/Int4.md)! | [subInt4](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Long2](https://developer.android.com/reference/kotlin/android/renderscript/Long2)! | [subLong2](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subLong2())`()` <br /> |
-| open [Long3](https://developer.android.com/reference/kotlin/android/renderscript/Long3)! | [subLong3](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subLong3())`()` <br /> |
-| open [Long4](https://developer.android.com/reference/kotlin/android/renderscript/Long4)! | [subLong4](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subLong4())`()` <br /> |
+| open [Long2](../android/renderscript/Long2.md)! | [subLong2](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Long3](../android/renderscript/Long3.md)! | [subLong3](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Long4](../android/renderscript/Long4.md)! | [subLong4](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Matrix2f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix2f)! | [subMatrix2f](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subMatrix2f())`()` <br /> |
-| open [Matrix3f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix3f)! | [subMatrix3f](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subMatrix3f())`()` <br /> |
-| open [Matrix4f](https://developer.android.com/reference/kotlin/android/renderscript/Matrix4f)! | [subMatrix4f](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subMatrix4f())`()` <br /> |
+| open [Matrix2f](../android/renderscript/Matrix2f.md)! | [subMatrix2f](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Matrix3f](../android/renderscript/Matrix3f.md)! | [subMatrix3f](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Matrix4f](../android/renderscript/Matrix4f.md)! | [subMatrix4f](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Short2](https://developer.android.com/reference/kotlin/android/renderscript/Short2)! | [subShort2](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subShort2())`()` <br /> |
-| open [Short3](https://developer.android.com/reference/kotlin/android/renderscript/Short3)! | [subShort3](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subShort3())`()` <br /> |
-| open [Short4](https://developer.android.com/reference/kotlin/android/renderscript/Short4)! | [subShort4](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subShort4())`()` <br /> |
+| open [Short2](../android/renderscript/Short2.md)! | [subShort2](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Short3](../android/renderscript/Short3.md)! | [subShort3](../android/renderscript/FieldPacker.md))`()` <br /> |
+| open [Short4](../android/renderscript/Short4.md)! | [subShort4](../android/renderscript/FieldPacker.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [subalign](https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker#subalign(kotlin.Int))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [subalign](../android/renderscript/FieldPacker.md))`(`v:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public constructors
 

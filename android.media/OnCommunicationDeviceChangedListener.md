@@ -4,22 +4,22 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # OnCommunicationDeviceChangedListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/media/AudioManager.OnCommunicationDeviceChangedListener "View this page in Java") 
+Kotlin| [Java](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md) 
 | --- | --- |
 
 ```
 interface OnCommunicationDeviceChangedListener
 ```
 
-| [android.media.AudioManager.OnCommunicationDeviceChangedListener](https://developer.android.com/reference/kotlin/android/media/AudioManager.OnCommunicationDeviceChangedListener#) |
+| [android.media.AudioManager.OnCommunicationDeviceChangedListener](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md) |
 
-Listener registered by client to be notified upon communication audio device change. See [setCommunicationDevice(android.media.AudioDeviceInfo)](https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)).
+Listener registered by client to be notified upon communication audio device change. See [setCommunicationDevice(android.media.AudioDeviceInfo)](../android/media/AudioManager.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommunicationDeviceChanged](https://developer.android.com/reference/kotlin/android/media/AudioManager.OnCommunicationDeviceChangedListener#onCommunicationDeviceChanged(android.media.AudioDeviceInfo))`(`device:` ` [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)?`)` Callback method called upon communication audio device change. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommunicationDeviceChanged](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md))`(`device:` ` [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)?`)` Callback method called upon communication audio device change. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Callback method called upon communication audio device change.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [AudioDeviceInfo](https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)?:the audio device requested for communication use cases. Can be null on platforms not supporting [android.content.pm.PackageManager#FEATURE_TELEPHONY](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String). |
+| `device` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)?:the audio device requested for communication use cases. Can be null on platforms not supporting [android.content.pm.PackageManager#FEATURE_TELEPHONY](../android/content/pm/PackageManager.md). |

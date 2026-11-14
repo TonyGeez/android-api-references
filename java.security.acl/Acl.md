@@ -9,7 +9,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 interface Acl : Owner
 ```
 
-| [java.security.acl.Acl](https://developer.android.com/reference/kotlin/java/security/acl/Acl#) |
+| [java.security.acl.Acl](../java/security/acl/Acl.md) |
 
 | **This interface was deprecated in API level 33.**
 |
@@ -34,19 +34,19 @@ The`java.security.acl.Acl `interface extends the`java.security.acl.Owner `interf
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addEntry](https://developer.android.com/reference/kotlin/java/security/acl/Acl#addEntry(java.security.Principal,%20java.security.acl.AclEntry))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `entry:` ` [AclEntry](https://developer.android.com/reference/kotlin/java/security/acl/AclEntry)!`)` Adds an ACL entry to this ACL. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [checkPermission](https://developer.android.com/reference/kotlin/java/security/acl/Acl#checkPermission(java.security.Principal,%20java.security.acl.Permission))`(`principal:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `permission:` ` [Permission](https://developer.android.com/reference/kotlin/java/security/acl/Permission)!`)` Checks whether or not the specified principal has the specified permission. |
-| abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [AclEntry](https://developer.android.com/reference/kotlin/java/security/acl/AclEntry)!\>! | [entries](https://developer.android.com/reference/kotlin/java/security/acl/Acl#entries())`()` Returns an enumeration of the entries in this ACL. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addEntry](../java/security/acl/Acl.md))`(`caller:` ` [Principal](../java/security/Principal.md)!`, `entry:` ` [AclEntry](../java/security/acl/AclEntry.md)!`)` Adds an ACL entry to this ACL. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [checkPermission](../java/security/acl/Acl.md))`(`principal:` ` [Principal](../java/security/Principal.md)!`, `permission:` ` [Permission](../java/security/acl/Permission.md)!`)` Checks whether or not the specified principal has the specified permission. |
+| abstract [Enumeration](../java/util/Enumeration.md)\< [AclEntry](../java/security/acl/AclEntry.md)!\>! | [entries](../java/security/acl/Acl.md))`()` Returns an enumeration of the entries in this ACL. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/java/security/acl/Acl#getName())`()` Returns the name of this ACL. |
-| abstract [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)\< [Permission](https://developer.android.com/reference/kotlin/java/security/acl/Permission)!\>! | [getPermissions](https://developer.android.com/reference/kotlin/java/security/acl/Acl#getPermissions(java.security.Principal))`(`user:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` Returns an enumeration for the set of allowed permissions for the specified principal (representing an entity such as an individual or a group). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeEntry](https://developer.android.com/reference/kotlin/java/security/acl/Acl#removeEntry(java.security.Principal,%20java.security.acl.AclEntry))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `entry:` ` [AclEntry](https://developer.android.com/reference/kotlin/java/security/acl/AclEntry)!`)` Removes an ACL entry from this ACL. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/security/acl/Acl.md))`()` Returns the name of this ACL. |
+| abstract [Enumeration](../java/util/Enumeration.md)\< [Permission](../java/security/acl/Permission.md)!\>! | [getPermissions](../java/security/acl/Acl.md))`(`user:` ` [Principal](../java/security/Principal.md)!`)` Returns an enumeration for the set of allowed permissions for the specified principal (representing an entity such as an individual or a group). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeEntry](../java/security/acl/Acl.md))`(`caller:` ` [Principal](../java/security/Principal.md)!`, `entry:` ` [AclEntry](../java/security/acl/AclEntry.md)!`)` Removes an ACL entry from this ACL. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](https://developer.android.com/reference/kotlin/java/security/acl/Acl#setName(java.security.Principal,%20kotlin.String))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the name of this ACL. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../java/security/acl/Acl.md))`(`caller:` ` [Principal](../java/security/Principal.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the name of this ACL. |
 
 | Inherited functions ||
 |---|---|
-| From class [Owner](https://developer.android.com/reference/kotlin/java/security/acl/Owner) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#addOwner(java.security.Principal,%20java.security.Principal))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` <br /> Adds an owner. Only owners can modify ACL contents. The caller principal must be an owner of the ACL in order to invoke this method. That is, only an owner can add another owner. The initial owner is configured at ACL construction time. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#deleteOwner(java.security.Principal,%20java.security.Principal))`(`caller:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`, `owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` <br /> Deletes an owner. If this is the last owner in the ACL, an exception is raised. The caller principal must be an owner of the ACL in order to invoke this method. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOwner](https://developer.android.com/reference/kotlin/java/security/acl/Owner#isOwner(java.security.Principal))`(`owner:` ` [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!`)` <br /> Returns true if the given principal is an owner of the ACL. <br /> | ||
+| From class [Owner](../java/security/acl/Owner.md) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addOwner](../java/security/acl/Owner.md))`(`caller:` ` [Principal](../java/security/Principal.md)!`, `owner:` ` [Principal](../java/security/Principal.md)!`)` <br /> Adds an owner. Only owners can modify ACL contents. The caller principal must be an owner of the ACL in order to invoke this method. That is, only an owner can add another owner. The initial owner is configured at ACL construction time. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteOwner](../java/security/acl/Owner.md))`(`caller:` ` [Principal](../java/security/Principal.md)!`, `owner:` ` [Principal](../java/security/Principal.md)!`)` <br /> Deletes an owner. If this is the last owner in the ACL, an exception is raised. The caller principal must be an owner of the ACL in order to invoke this method. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOwner](../java/security/acl/Owner.md))`(`owner:` ` [Principal](../java/security/Principal.md)!`)` <br /> Returns true if the given principal is an owner of the ACL. <br /> | ||
 
 ## Public methods
 
@@ -67,8 +67,8 @@ Adds an ACL entry to this ACL. An entry associates a principal (e.g., an individ
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caller` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal invoking this method. It must be an owner of this ACL. |
-| `entry` | [AclEntry](https://developer.android.com/reference/kotlin/java/security/acl/AclEntry)!:the ACL entry to be added to this ACL. |
+| `caller` | [Principal](../java/security/Principal.md)!:the principal invoking this method. It must be an owner of this ACL. |
+| `entry` | [AclEntry](../java/security/acl/AclEntry.md)!:the ACL entry to be added to this ACL. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -95,8 +95,8 @@ Checks whether or not the specified principal has the specified permission. If i
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `principal` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal, assumed to be a valid authenticated Principal. |
-| `permission` | [Permission](https://developer.android.com/reference/kotlin/java/security/acl/Permission)!:the permission to be checked for. |
+| `principal` | [Principal](../java/security/Principal.md)!:the principal, assumed to be a valid authenticated Principal. |
+| `permission` | [Permission](../java/security/acl/Permission.md)!:the permission to be checked for. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -104,7 +104,7 @@ Checks whether or not the specified principal has the specified permission. If i
 
 **See Also**
 
-- [#getPermissions](https://developer.android.com/reference/kotlin/java/security/acl/Acl#getPermissions(java.security.Principal)) 
+- [#getPermissions](../java/security/acl/Acl.md)) 
 
 ### entries
 
@@ -120,7 +120,7 @@ Returns an enumeration of the entries in this ACL. Each element in the enumerati
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [AclEntry](https://developer.android.com/reference/kotlin/java/security/acl/AclEntry)!>! | an enumeration of the entries in this ACL. |
+| [Enumeration](../java/util/Enumeration.md)< [AclEntry](../java/security/acl/AclEntry.md)!>! | an enumeration of the entries in this ACL. |
 
 ### getName
 
@@ -140,7 +140,7 @@ Returns the name of this ACL.
 
 **See Also**
 
-- [#setName](https://developer.android.com/reference/kotlin/java/security/acl/Acl#setName(java.security.Principal,%20kotlin.String)) 
+- [#setName](../java/security/acl/Acl.md)) 
 
 ### getPermissions
 
@@ -163,11 +163,11 @@ Returns an enumeration for the set of allowed permissions for the specified prin
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `user` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal whose permission set is to be returned. |
+| `user` | [Principal](../java/security/Principal.md)!:the principal whose permission set is to be returned. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Enumeration](https://developer.android.com/reference/kotlin/java/util/Enumeration.html#)< [Permission](https://developer.android.com/reference/kotlin/java/security/acl/Permission)!>! | the permission set specifying the permissions the principal is allowed. |
+| [Enumeration](../java/util/Enumeration.md)< [Permission](../java/security/acl/Permission.md)!>! | the permission set specifying the permissions the principal is allowed. |
 
 ### removeEntry
 
@@ -186,8 +186,8 @@ Removes an ACL entry from this ACL.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caller` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal invoking this method. It must be an owner of this ACL. |
-| `entry` | [AclEntry](https://developer.android.com/reference/kotlin/java/security/acl/AclEntry)!:the ACL entry to be removed from this ACL. |
+| `caller` | [Principal](../java/security/Principal.md)!:the principal invoking this method. It must be an owner of this ACL. |
+| `entry` | [AclEntry](../java/security/acl/AclEntry.md)!:the ACL entry to be removed from this ACL. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------|
@@ -214,7 +214,7 @@ Sets the name of this ACL.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caller` | [Principal](https://developer.android.com/reference/kotlin/java/security/Principal.html#)!:the principal invoking this method. It must be an owner of this ACL. |
+| `caller` | [Principal](../java/security/Principal.md)!:the principal invoking this method. It must be an owner of this ACL. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name to be given to this ACL. |
 
 | Exceptions ||
@@ -223,4 +223,4 @@ Sets the name of this ACL.
 
 **See Also**
 
-- [#getName](https://developer.android.com/reference/kotlin/java/security/acl/Acl#getName())
+- [#getName](../java/security/acl/Acl.md))

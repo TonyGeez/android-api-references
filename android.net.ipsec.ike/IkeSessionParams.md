@@ -8,7 +8,7 @@ class IkeSessionParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeSessionParams](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#) |
+| ↳ | [android.net.ipsec.ike.IkeSessionParams](../android/net/ipsec/ike/IkeSessionParams.md) |
 
 IkeSessionParams contains all user provided configurations for negotiating an `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession`.
 
@@ -45,15 +45,15 @@ Note that all negotiated configurations will be reused during rekey including SA
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getHardLifetimeSeconds()()` Retrieves hard lifetime in seconds |
 | --- | --- |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getIkeOptions()()` Return all the enabled IKE Options |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeSaProposal](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSaProposal)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getIkeSaProposals()()` Retrieves all IkeSaProposals configured |
-| [IkeSessionParams.IkeAuthConfig](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalAuthConfig()()` Retrieves the local (client) authentication configuration |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeSaProposal](../android/net/ipsec/ike/IkeSaProposal.md)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getIkeSaProposals()()` Retrieves all IkeSaProposals configured |
+| [IkeSessionParams.IkeAuthConfig](../android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalAuthConfig()()` Retrieves the local (client) authentication configuration |
 | --- | --- |
-| [IkeIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalIdentification()()` Retrieves the local (client) identity |
+| [IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalIdentification()()` Retrieves the local (client) identity |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getNattKeepAliveDelaySeconds()()` Retrieves the Network Address Translation Traversal (NATT) keepalive delay in seconds |
-| [Network](https://developer.android.com/reference/kotlin/android/net/Network.html#)? | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getNetwork()()` Retrieves the configured `https://developer.android.com/reference/kotlin/android/net/Network.html#`, or null if was not set. |
+| [Network](../android/net/Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getNetwork()()` Retrieves the configured `https://developer.android.com/reference/kotlin/android/net/Network.html#`, or null if was not set. |
 | --- | --- |
-| [IkeSessionParams.IkeAuthConfig](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteAuthConfig()()` Retrieves the remote (server) authentication configuration |
-| [IkeIdentification](https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteIdentification()()` Retrieves the required remote (server) identity |
+| [IkeSessionParams.IkeAuthConfig](../android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteAuthConfig()()` Retrieves the remote (server) authentication configuration |
+| [IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteIdentification()()` Retrieves the required remote (server) identity |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRetransmissionTimeoutsMillis()()` Retrieves the relative retransmission timeout list in milliseconds |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getServerHostname()()` Retrieves the configured server hostname |

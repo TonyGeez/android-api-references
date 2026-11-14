@@ -8,13 +8,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Array
 ```
 
-| [java.sql.Array](https://developer.android.com/reference/kotlin/java/sql/Array#) |
+| [java.sql.Array](../java/sql/Array.md) |
 
 The mapping in the Java programming language for the SQL type `ARRAY`. By default, an `Array` value is a transaction-duration reference to an SQL `ARRAY` value. By default, an `Array` object is implemented using an SQL LOCATOR(array) internally, which means that an `Array` object contains a logical pointer to the data in the SQL `ARRAY` value rather than containing the `ARRAY` value's data.
 
 The `Array` interface provides methods for bringing an SQL `ARRAY` value's data to the client as either an array or a `ResultSet` object. If the elements of the SQL `ARRAY` are a UDT, they may be custom mapped. To create a custom mapping, a programmer must do two things:
 
-- create a class that implements the [SQLData](https://developer.android.com/reference/kotlin/java/sql/SQLData) interface for the UDT to be custom mapped.
+- create a class that implements the [SQLData](../java/sql/SQLData.md) interface for the UDT to be custom mapped.
 - make an entry in a type map that contains
  - the fully-qualified SQL type name of the UDT
  - the `Class` object for the class implementing `SQLData`
@@ -27,20 +27,20 @@ All methods on the `Array` interface must be fully implemented if the JDBC drive
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](https://developer.android.com/reference/kotlin/java/sql/Array#free())`()` This method frees the `Array` object and releases the resources that it holds. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](https://developer.android.com/reference/kotlin/java/sql/Array#getArray())`()` Retrieves the contents of the SQL `ARRAY` value designated by this `Array` object in the form of an array in the Java programming language. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](https://developer.android.com/reference/kotlin/java/sql/Array#getArray(kotlin.collections.MutableMap))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Retrieves the contents of the SQL `ARRAY` value designated by this `Array` object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](../java/sql/Array.md))`()` This method frees the `Array` object and releases the resources that it holds. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](../java/sql/Array.md))`()` Retrieves the contents of the SQL `ARRAY` value designated by this `Array` object in the form of an array in the Java programming language. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](../java/sql/Array.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>!`)` Retrieves the contents of the SQL `ARRAY` value designated by this `Array` object. |
 | --- | --- |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](https://developer.android.com/reference/kotlin/java/sql/Array#getArray(kotlin.Long,%20kotlin.Int))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a slice of the SQL `ARRAY` value designated by this `Array` object, beginning with the specified `index` and containing up to `count` successive elements of the SQL array. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](https://developer.android.com/reference/kotlin/java/sql/Array#getArray(kotlin.Long,%20kotlin.Int,%20kotlin.collections.MutableMap))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Retreives a slice of the SQL `ARRAY` value designated by this `Array` object, beginning with the specified `index` and containing up to `count` successive elements of the SQL array. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseType](https://developer.android.com/reference/kotlin/java/sql/Array#getBaseType())`()` Retrieves the JDBC type of the elements in the array designated by this `Array` object. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](../java/sql/Array.md))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a slice of the SQL `ARRAY` value designated by this `Array` object, beginning with the specified `index` and containing up to `count` successive elements of the SQL array. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getArray](../java/sql/Array.md))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>!`)` Retreives a slice of the SQL `ARRAY` value designated by this `Array` object, beginning with the specified `index` and containing up to `count` successive elements of the SQL array. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseType](../java/sql/Array.md))`()` Retrieves the JDBC type of the elements in the array designated by this `Array` object. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseTypeName](https://developer.android.com/reference/kotlin/java/sql/Array#getBaseTypeName())`()` Retrieves the SQL type name of the elements in the array designated by this `Array` object. |
-| abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | [getResultSet](https://developer.android.com/reference/kotlin/java/sql/Array#getResultSet())`()` Retrieves a result set that contains the elements of the SQL `ARRAY` value designated by this `Array` object. |
-| abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | [getResultSet](https://developer.android.com/reference/kotlin/java/sql/Array#getResultSet(kotlin.collections.MutableMap))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Retrieves a result set that contains the elements of the SQL `ARRAY` value designated by this `Array` object. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseTypeName](../java/sql/Array.md))`()` Retrieves the SQL type name of the elements in the array designated by this `Array` object. |
+| abstract [ResultSet](../java/sql/ResultSet.md)! | [getResultSet](../java/sql/Array.md))`()` Retrieves a result set that contains the elements of the SQL `ARRAY` value designated by this `Array` object. |
+| abstract [ResultSet](../java/sql/ResultSet.md)! | [getResultSet](../java/sql/Array.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>!`)` Retrieves a result set that contains the elements of the SQL `ARRAY` value designated by this `Array` object. |
 | --- | --- |
-| abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | [getResultSet](https://developer.android.com/reference/kotlin/java/sql/Array#getResultSet(kotlin.Long,%20kotlin.Int))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a result set holding the elements of the subarray that starts at index `index` and contains up to `count` successive elements. |
-| abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | [getResultSet](https://developer.android.com/reference/kotlin/java/sql/Array#getResultSet(kotlin.Long,%20kotlin.Int,%20kotlin.collections.MutableMap))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>!>!`)` Retrieves a result set holding the elements of the subarray that starts at index `index` and contains up to `count` successive elements. |
+| abstract [ResultSet](../java/sql/ResultSet.md)! | [getResultSet](../java/sql/Array.md))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves a result set holding the elements of the subarray that starts at index `index` and contains up to `count` successive elements. |
+| abstract [ResultSet](../java/sql/ResultSet.md)! | [getResultSet](../java/sql/Array.md))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>!`)` Retrieves a result set holding the elements of the subarray that starts at index `index` and contains up to `count` successive elements. |
 
 ## Public methods
 
@@ -98,7 +98,7 @@ Retrieves the contents of the SQL `ARRAY` value designated by this `Array` objec
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!: a `java.util.Map` object that contains mappings of SQL type names to classes in the Java programming language |
+| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>!: a `java.util.Map` object that contains mappings of SQL type names to classes in the Java programming language |
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ This method uses the specified `map` for type map customizations unless the base
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the array index of the first element to retrieve; the first element is at index 1 |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of successive SQL array elements to retrieve |
-| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!: a `java.util.Map` object that contains SQL type names and the classes in the Java programming language to which they are mapped |
+| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>!: a `java.util.Map` object that contains SQL type names and the classes in the Java programming language to which they are mapped |
 | --- | --- |
 
 | Return ||
@@ -184,7 +184,7 @@ Retrieves the JDBC type of the elements in the array designated by this `Array` 
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a constant from the class [java.sql.Types](https://developer.android.com/reference/kotlin/java/sql/Types) that is the type code for the elements in the array designated by this `Array` object |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a constant from the class [java.sql.Types](../java/sql/Types.md) that is the type code for the elements in the array designated by this `Array` object |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------|
@@ -224,7 +224,7 @@ The result set contains one row for each array element, with two columns in each
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | a [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet) object containing one row for each of the elements in the array designated by this `Array` object, with the rows in ascending order based on the indices. |
+| [ResultSet](../java/sql/ResultSet.md)! | a [ResultSet](../java/sql/ResultSet.md) object containing one row for each of the elements in the array designated by this `Array` object, with the rows in ascending order based on the indices. |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------|
@@ -245,11 +245,11 @@ The result set contains one row for each array element, with two columns in each
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!: contains the mapping of SQL user-defined types to classes in the Java programming language |
+| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>!: contains the mapping of SQL user-defined types to classes in the Java programming language |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | a `ResultSet` object containing one row for each of the elements in the array designated by this `Array` object, with the rows in ascending order based on the indices. |
+| [ResultSet](../java/sql/ResultSet.md)! | a `ResultSet` object containing one row for each of the elements in the array designated by this `Array` object, with the rows in ascending order based on the indices. |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------|
@@ -278,7 +278,7 @@ The result set has one row for each element of the SQL array designated by this 
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | a `ResultSet` object containing up to `count` consecutive elements of the SQL array designated by this `Array` object, starting at index `index`. |
+| [ResultSet](../java/sql/ResultSet.md)! | a `ResultSet` object containing up to `count` consecutive elements of the SQL array designated by this `Array` object, starting at index `index`. |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------|
@@ -305,12 +305,12 @@ The result set has one row for each element of the SQL array designated by this 
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the array index of the first element to retrieve; the first element is at index 1 |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of successive SQL array elements to retrieve |
-| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>!\>!: the `Map` object that contains the mapping of SQL type names to classes in the Java(tm) programming language |
+| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>!: the `Map` object that contains the mapping of SQL type names to classes in the Java(tm) programming language |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet)! | a `ResultSet` object containing up to `count` consecutive elements of the SQL array designated by this `Array` object, starting at index `index`. |
+| [ResultSet](../java/sql/ResultSet.md)! | a `ResultSet` object containing up to `count` consecutive elements of the SQL array designated by this `Array` object, starting at index `index`. |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------|

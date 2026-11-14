@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CursorWindow
 
-Kotlin| [Java](https://developer.android.com/reference/android/database/CursorWindow "View this page in Java") 
+Kotlin| [Java](../android/database/CursorWindow.md) 
 | --- | --- |
 
 ```
@@ -13,80 +13,80 @@ open class CursorWindow : SQLiteClosable, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.database.sqlite.SQLiteClosable](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable) ||
-| | ↳ | [android.database.CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#) |
+| ↳ | [android.database.sqlite.SQLiteClosable](../android/database/sqlite/SQLiteClosable.md) ||
+| | ↳ | [android.database.CursorWindow](../android/database/CursorWindow.md) |
 
 A buffer containing multiple cursor rows.
 
-A [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#) is read-write when initially created and used locally. When sent to a remote process (by writing it to a [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)), the remote process receives a read-only view of the cursor window. Typically the cursor window will be allocated by the producer, filled with data, and then sent to the consumer for reading.
+A [CursorWindow](../android/database/CursorWindow.md) is read-write when initially created and used locally. When sent to a remote process (by writing it to a [Parcel](../android/os/Parcel.md)), the remote process receives a read-only view of the cursor window. Typically the cursor window will be allocated by the producer, filled with data, and then sent to the consumer for reading.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#CursorWindow(kotlin.Boolean))`(`localWindow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new empty cursor window. |
-| [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#CursorWindow(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new empty cursor window and gives it a name. |
-| [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#CursorWindow(kotlin.String,%20kotlin.Long))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `windowSizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new empty cursor window and gives it a name. |
+| [CursorWindow](../android/database/CursorWindow.md))`(`localWindow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new empty cursor window. |
+| [CursorWindow](../android/database/CursorWindow.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new empty cursor window and gives it a name. |
+| [CursorWindow](../android/database/CursorWindow.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `windowSizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a new empty cursor window and gives it a name. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allocRow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#allocRow())`()` Allocates a new row at the end of this cursor window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](https://developer.android.com/reference/kotlin/android/database/CursorWindow#clear())`()` Clears out the existing contents of the window, making it safe to reuse for new data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyStringToBuffer](https://developer.android.com/reference/kotlin/android/database/CursorWindow#copyStringToBuffer(kotlin.Int,%20kotlin.Int,%20android.database.CharArrayBuffer))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [CharArrayBuffer](https://developer.android.com/reference/kotlin/android/database/CharArrayBuffer)!`)` Copies the text of the field at the specified row and column index into a [CharArrayBuffer](https://developer.android.com/reference/kotlin/android/database/CharArrayBuffer). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allocRow](../android/database/CursorWindow.md))`()` Allocates a new row at the end of this cursor window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/database/CursorWindow.md))`()` Clears out the existing contents of the window, making it safe to reuse for new data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyStringToBuffer](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [CharArrayBuffer](../android/database/CharArrayBuffer.md)!`)` Copies the text of the field at the specified row and column index into a [CharArrayBuffer](../android/database/CharArrayBuffer.md). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/database/CursorWindow#describeContents())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [freeLastRow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#freeLastRow())`()` Frees the last row in this cursor window. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBlob](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getBlob(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a byte array. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/database/CursorWindow.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [freeLastRow](../android/database/CursorWindow.md))`()` Frees the last row in this cursor window. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBlob](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a byte array. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getDouble(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`double`. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getFloat(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`float`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getInt(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as an`int`. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`double`. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`float`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as an`int`. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getLong(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`long`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumRows](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getNumRows())`()` Gets the number of rows in this window. |
-| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getShort(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`short`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`long`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumRows](../android/database/CursorWindow.md))`()` Gets the number of rows in this window. |
+| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a`short`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartPosition](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getStartPosition())`()` Gets the start position of this cursor window. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getString(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a string. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getType(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the type of the field at the specified row and column index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStartPosition](../android/database/CursorWindow.md))`()` Gets the start position of this cursor window. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value of the field at the specified row and column index as a string. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the type of the field at the specified row and column index. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlob](https://developer.android.com/reference/kotlin/android/database/CursorWindow#isBlob(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int) or [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFloat](https://developer.android.com/reference/kotlin/android/database/CursorWindow#isFloat(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLong](https://developer.android.com/reference/kotlin/android/database/CursorWindow#isLong(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlob](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md) or [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFloat](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLong](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](https://developer.android.com/reference/kotlin/android/database/CursorWindow#isNull(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isString](https://developer.android.com/reference/kotlin/android/database/CursorWindow#isString(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int) or [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int). |
-| openstatic [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#)! | [newFromParcel](https://developer.android.com/reference/kotlin/android/database/CursorWindow#newFromParcel(android.os.Parcel))`(`p:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isString](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md) or [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md). |
+| openstatic [CursorWindow](../android/database/CursorWindow.md)! | [newFromParcel](../android/database/CursorWindow.md))`(`p:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putBlob](https://developer.android.com/reference/kotlin/android/database/CursorWindow#putBlob(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int))`(`value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copies a byte array into the field at the specified row and column index. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putDouble](https://developer.android.com/reference/kotlin/android/database/CursorWindow#putDouble(kotlin.Double,%20kotlin.Int,%20kotlin.Int))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Puts a double-precision floating point value into the field at the specified row and column index. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putLong](https://developer.android.com/reference/kotlin/android/database/CursorWindow#putLong(kotlin.Long,%20kotlin.Int,%20kotlin.Int))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Puts a long integer into the field at the specified row and column index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putBlob](../android/database/CursorWindow.md))`(`value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copies a byte array into the field at the specified row and column index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putDouble](../android/database/CursorWindow.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Puts a double-precision floating point value into the field at the specified row and column index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putLong](../android/database/CursorWindow.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Puts a long integer into the field at the specified row and column index. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putNull](https://developer.android.com/reference/kotlin/android/database/CursorWindow#putNull(kotlin.Int,%20kotlin.Int))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Puts a null value into the field at the specified row and column index. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putString](https://developer.android.com/reference/kotlin/android/database/CursorWindow#putString(kotlin.String,%20kotlin.Int,%20kotlin.Int))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copies a string into the field at the specified row and column index. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setNumColumns](https://developer.android.com/reference/kotlin/android/database/CursorWindow#setNumColumns(kotlin.Int))`(`columnNum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of columns in this window. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putNull](../android/database/CursorWindow.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Puts a null value into the field at the specified row and column index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [putString](../android/database/CursorWindow.md))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copies a string into the field at the specified row and column index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setNumColumns](../android/database/CursorWindow.md))`(`columnNum:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of columns in this window. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartPosition](https://developer.android.com/reference/kotlin/android/database/CursorWindow#setStartPosition(kotlin.Int))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the start position of this cursor window. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/database/CursorWindow#toString())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/database/CursorWindow#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartPosition](../android/database/CursorWindow.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the start position of this cursor window. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/database/CursorWindow.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/database/CursorWindow.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](https://developer.android.com/reference/kotlin/android/database/CursorWindow#finalize())`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleased](https://developer.android.com/reference/kotlin/android/database/CursorWindow#onAllReferencesReleased())`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/database/CursorWindow.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleased](../android/database/CursorWindow.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [SQLiteClosable](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable) |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireReference](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#acquireReference())`()` <br /> Acquires a reference to the object. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#close())`()` <br /> Releases a reference to the object, closing the object if the last reference was released. Calling this method is equivalent to calling [releaseReference](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference()). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleasedFromContainer](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#onAllReferencesReleasedFromContainer())`()` <br /> Called when the last reference to the object was released by a call to [releaseReferenceFromContainer()](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReferenceFromContainer()). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReference](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference())`()` <br /> Releases a reference to the object, closing the object if the last reference was released. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReferenceFromContainer](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReferenceFromContainer())`()` <br /> Releases a reference to the object that was owned by the container of the object, closing the object if the last reference was released. <br /> | ||
+| From class [SQLiteClosable](../android/database/sqlite/SQLiteClosable.md) |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireReference](../android/database/sqlite/SQLiteClosable.md))`()` <br /> Acquires a reference to the object. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/database/sqlite/SQLiteClosable.md))`()` <br /> Releases a reference to the object, closing the object if the last reference was released. Calling this method is equivalent to calling [releaseReference](../android/database/sqlite/SQLiteClosable.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAllReferencesReleasedFromContainer](../android/database/sqlite/SQLiteClosable.md))`()` <br /> Called when the last reference to the object was released by a call to [releaseReferenceFromContainer()](../android/database/sqlite/SQLiteClosable.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReference](../android/database/sqlite/SQLiteClosable.md))`()` <br /> Releases a reference to the object, closing the object if the last reference was released. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseReferenceFromContainer](../android/database/sqlite/SQLiteClosable.md))`()` <br /> Releases a reference to the object that was owned by the container of the object, closing the object if the last reference was released. <br /> | ||
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [CursorWindow](https://developer.android.com/reference/kotlin/android/database/CursorWindow#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/database/CursorWindow#CREATOR:android.os.Parcelable.Creator) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CursorWindow](../android/database/CursorWindow.md)!\> | [CREATOR](../android/database/CursorWindow.md) <br /> |
 
 ## Public constructors
 
@@ -98,11 +98,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 CursorWindow(localWindow: Boolean)
 ```
 
-**Deprecated:** *There is no longer a distinction between local and remote cursor windows. Use the [CursorWindow(java.lang.String)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#CursorWindow(kotlin.String))constructor instead.*
+**Deprecated:** *There is no longer a distinction between local and remote cursor windows. Use the [CursorWindow(java.lang.String)](../android/database/CursorWindow.md))constructor instead.*
 
 Creates a new empty cursor window.
 
-The cursor initially has no rows or columns. Call [setNumColumns(int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#setNumColumns(kotlin.Int))to set the number of columns before adding any rows to the cursor.
+The cursor initially has no rows or columns. Call [setNumColumns(int)](../android/database/CursorWindow.md))to set the number of columns before adding any rows to the cursor.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -118,7 +118,7 @@ CursorWindow(name: String!)
 
 Creates a new empty cursor window and gives it a name.
 
-The cursor initially has no rows or columns. Call [setNumColumns(int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#setNumColumns(kotlin.Int))to set the number of columns before adding any rows to the cursor.
+The cursor initially has no rows or columns. Call [setNumColumns(int)](../android/database/CursorWindow.md))to set the number of columns before adding any rows to the cursor.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -136,7 +136,7 @@ CursorWindow(
 
 Creates a new empty cursor window and gives it a name.
 
-The cursor initially has no rows or columns. Call [setNumColumns(int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#setNumColumns(kotlin.Int))to set the number of columns before adding any rows to the cursor.
+The cursor initially has no rows or columns. Call [setNumColumns(int)](../android/database/CursorWindow.md))to set the number of columns before adding any rows to the cursor.
 
 | Parameters ||
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -174,7 +174,7 @@ open fun clear(): Unit
 
 Clears out the existing contents of the window, making it safe to reuse for new data.
 
-The start position ([getStartPosition()](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getStartPosition())), number of rows ([getNumRows()](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getNumRows())), and number of columns in the cursor are all reset to zero. 
+The start position ([getStartPosition()](../android/database/CursorWindow.md))), number of rows ([getNumRows()](../android/database/CursorWindow.md))), and number of columns in the cursor are all reset to zero. 
 
 ### copyStringToBuffer
 
@@ -188,16 +188,16 @@ open fun copyStringToBuffer(
 ): Unit
 ```
 
-Copies the text of the field at the specified row and column index into a [CharArrayBuffer](https://developer.android.com/reference/kotlin/android/database/CharArrayBuffer).
+Copies the text of the field at the specified row and column index into a [CharArrayBuffer](../android/database/CharArrayBuffer.md).
 
 The buffer is populated as follows:
 
 - If the buffer is too small for the value to be copied, then it is automatically resized.
-- If the field is of type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int), then the buffer is set to an empty string.
-- If the field is of type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int), then the buffer is set to the contents of the string.
-- If the field is of type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int), then the buffer is set to a string representation of the integer in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%lld`.
-- If the field is of type [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int), then the buffer is set to a string representation of the floating-point value in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%g`.
-- If the field is of type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int), then a [SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) is thrown.
+- If the field is of type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md), then the buffer is set to an empty string.
+- If the field is of type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md), then the buffer is set to the contents of the string.
+- If the field is of type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md), then the buffer is set to a string representation of the integer in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%lld`.
+- If the field is of type [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md), then the buffer is set to a string representation of the floating-point value in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%g`.
+- If the field is of type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md), then a [SQLiteException](../android/database/sqlite/SQLiteException.md) is thrown.
 
 <br />
 
@@ -205,7 +205,7 @@ The buffer is populated as follows:
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `row` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The zero-based row index. Value is 0 or greater |
 | `column` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The zero-based column index. Value is 0 or greater |
-| `buffer` | [CharArrayBuffer](https://developer.android.com/reference/kotlin/android/database/CharArrayBuffer)!:The [CharArrayBuffer](https://developer.android.com/reference/kotlin/android/database/CharArrayBuffer) to hold the string. It is automatically resized if the requested string is larger than the buffer's current capacity. |
+| `buffer` | [CharArrayBuffer](../android/database/CharArrayBuffer.md)!:The [CharArrayBuffer](../android/database/CharArrayBuffer.md) to hold the string. It is automatically resized if the requested string is larger than the buffer's current capacity. |
 | --- | --- |
 
 ### describeContents
@@ -218,7 +218,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
 
 ### freeLastRow
 
@@ -245,10 +245,10 @@ Gets the value of the field at the specified row and column index as a byte arra
 
 The result is determined as follows:
 
-- If the field is of type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int), then the result is`null`.
-- If the field is of type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int), then the result is the blob value.
-- If the field is of type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int), then the result is the array of bytes that make up the internal representation of the string value.
-- If the field is of type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int) or [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int), then a [SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) is thrown.
+- If the field is of type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md), then the result is`null`.
+- If the field is of type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md), then the result is the blob value.
+- If the field is of type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md), then the result is the array of bytes that make up the internal representation of the string value.
+- If the field is of type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md) or [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md), then a [SQLiteException](../android/database/sqlite/SQLiteException.md) is thrown.
 
 <br />
 
@@ -276,11 +276,11 @@ Gets the value of the field at the specified row and column index as a`double`.
 
 The result is determined as follows:
 
-- If the field is of type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int), then the result is`0.0`.
-- If the field is of type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int), then the result is the value obtained by parsing the string value with`strtod`.
-- If the field is of type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int), then the result is the integer value converted to a`double`.
-- If the field is of type [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int), then the result is the`double`value.
-- If the field is of type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int), then a [SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) is thrown.
+- If the field is of type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md), then the result is`0.0`.
+- If the field is of type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md), then the result is the value obtained by parsing the string value with`strtod`.
+- If the field is of type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md), then the result is the integer value converted to a`double`.
+- If the field is of type [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md), then the result is the`double`value.
+- If the field is of type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md), then a [SQLiteException](../android/database/sqlite/SQLiteException.md) is thrown.
 
 <br />
 
@@ -306,7 +306,7 @@ open fun getFloat(
 
 Gets the value of the field at the specified row and column index as a`float`.
 
-The result is determined by invoking [getDouble](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getDouble(kotlin.Int,%20kotlin.Int))and converting the result to`float`.
+The result is determined by invoking [getDouble](../android/database/CursorWindow.md))and converting the result to`float`.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -330,7 +330,7 @@ open fun getInt(
 
 Gets the value of the field at the specified row and column index as an`int`.
 
-The result is determined by invoking [getLong](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getLong(kotlin.Int,%20kotlin.Int))and converting the result to`int`.
+The result is determined by invoking [getLong](../android/database/CursorWindow.md))and converting the result to`int`.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -356,11 +356,11 @@ Gets the value of the field at the specified row and column index as a`long`.
 
 The result is determined as follows:
 
-- If the field is of type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int), then the result is`0L`.
-- If the field is of type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int), then the result is the value obtained by parsing the string value with`strtoll`.
-- If the field is of type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int), then the result is the`long`value.
-- If the field is of type [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int), then the result is the floating-point value converted to a`long`.
-- If the field is of type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int), then a [SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) is thrown.
+- If the field is of type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md), then the result is`0L`.
+- If the field is of type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md), then the result is the value obtained by parsing the string value with`strtoll`.
+- If the field is of type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md), then the result is the`long`value.
+- If the field is of type [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md), then the result is the floating-point value converted to a`long`.
+- If the field is of type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md), then a [SQLiteException](../android/database/sqlite/SQLiteException.md) is thrown.
 
 <br />
 
@@ -400,7 +400,7 @@ open fun getShort(
 
 Gets the value of the field at the specified row and column index as a`short`.
 
-The result is determined by invoking [getLong](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getLong(kotlin.Int,%20kotlin.Int))and converting the result to`short`.
+The result is determined by invoking [getLong](../android/database/CursorWindow.md))and converting the result to`short`.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -421,7 +421,7 @@ open fun getStartPosition(): Int
 
 Gets the start position of this cursor window.
 
-The start position is the zero-based index of the first row that this window contains relative to the entire result set of the [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor).
+The start position is the zero-based index of the first row that this window contains relative to the entire result set of the [Cursor](../android/database/Cursor.md).
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------|
@@ -442,11 +442,11 @@ Gets the value of the field at the specified row and column index as a string.
 
 The result is determined as follows:
 
-- If the field is of type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int), then the result is`null`.
-- If the field is of type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int), then the result is the string value.
-- If the field is of type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int), then the result is a string representation of the integer in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%lld`.
-- If the field is of type [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int), then the result is a string representation of the floating-point value in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%g`.
-- If the field is of type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int), then a [SQLiteException](https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException) is thrown.
+- If the field is of type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md), then the result is`null`.
+- If the field is of type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md), then the result is the string value.
+- If the field is of type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md), then the result is a string representation of the integer in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%lld`.
+- If the field is of type [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md), then the result is a string representation of the floating-point value in decimal, obtained by formatting the value with the`printf`family of functions using format specifier`%g`.
+- If the field is of type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md), then a [SQLiteException](../android/database/sqlite/SQLiteException.md) is thrown.
 
 <br />
 
@@ -479,7 +479,7 @@ Returns the type of the field at the specified row and column index.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The field type. Value is [android.database.Cursor#FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int), [android.database.Cursor#FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int), [android.database.Cursor#FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int), [android.database.Cursor#FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int), or [android.database.Cursor#FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The field type. Value is [android.database.Cursor#FIELD_TYPE_NULL](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_INTEGER](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_FLOAT](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_STRING](../android/database/Cursor.md), or [android.database.Cursor#FIELD_TYPE_BLOB](../android/database/Cursor.md) |
 
 ### isBlob
 
@@ -493,9 +493,9 @@ open fun isBlob(
 ): Boolean
 ```
 
-**Deprecated:** *Use [getType(int,int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getType(kotlin.Int,%20kotlin.Int))instead.*
+**Deprecated:** *Use [getType(int,int)](../android/database/CursorWindow.md))instead.*
 
-Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int) or [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int).
+Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md) or [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -504,7 +504,7 @@ Returns true if the field at the specified row and column index has type [Cursor
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_BLOB](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_BLOB:kotlin.Int) or [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_BLOB](../android/database/Cursor.md) or [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md). |
 
 ### isFloat
 
@@ -518,9 +518,9 @@ open fun isFloat(
 ): Boolean
 ```
 
-**Deprecated:** *Use [getType(int,int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getType(kotlin.Int,%20kotlin.Int))instead.*
+**Deprecated:** *Use [getType(int,int)](../android/database/CursorWindow.md))instead.*
 
-Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int).
+Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -529,7 +529,7 @@ Returns true if the field at the specified row and column index has type [Cursor
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_FLOAT](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_FLOAT:kotlin.Int). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_FLOAT](../android/database/Cursor.md). |
 
 ### isLong
 
@@ -543,9 +543,9 @@ open fun isLong(
 ): Boolean
 ```
 
-**Deprecated:** *Use [getType(int,int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getType(kotlin.Int,%20kotlin.Int))instead.*
+**Deprecated:** *Use [getType(int,int)](../android/database/CursorWindow.md))instead.*
 
-Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int).
+Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -554,7 +554,7 @@ Returns true if the field at the specified row and column index has type [Cursor
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_INTEGER](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_INTEGER:kotlin.Int). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_INTEGER](../android/database/Cursor.md). |
 
 ### isNull
 
@@ -568,9 +568,9 @@ open fun isNull(
 ): Boolean
 ```
 
-**Deprecated:** *Use [getType(int,int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getType(kotlin.Int,%20kotlin.Int))instead.*
+**Deprecated:** *Use [getType(int,int)](../android/database/CursorWindow.md))instead.*
 
-Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int).
+Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -579,7 +579,7 @@ Returns true if the field at the specified row and column index has type [Cursor
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md). |
 
 ### isString
 
@@ -593,9 +593,9 @@ open fun isString(
 ): Boolean
 ```
 
-**Deprecated:** *Use [getType(int,int)](https://developer.android.com/reference/kotlin/android/database/CursorWindow#getType(kotlin.Int,%20kotlin.Int))instead.*
+**Deprecated:** *Use [getType(int,int)](../android/database/CursorWindow.md))instead.*
 
-Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int) or [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int).
+Returns true if the field at the specified row and column index has type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md) or [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -604,7 +604,7 @@ Returns true if the field at the specified row and column index has type [Cursor
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_STRING](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_STRING:kotlin.Int) or [Cursor.FIELD_TYPE_NULL](https://developer.android.com/reference/kotlin/android/database/Cursor#FIELD_TYPE_NULL:kotlin.Int). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if the field has type [Cursor.FIELD_TYPE_STRING](../android/database/Cursor.md) or [Cursor.FIELD_TYPE_NULL](../android/database/Cursor.md). |
 
 ### newFromParcel
 
@@ -766,7 +766,7 @@ open fun setStartPosition(pos: Int): Unit
 
 Sets the start position of this cursor window.
 
-The start position is the zero-based index of the first row that this window contains relative to the entire result set of the [Cursor](https://developer.android.com/reference/kotlin/android/database/Cursor).
+The start position is the zero-based index of the first row that this window contains relative to the entire result set of the [Cursor](../android/database/Cursor.md).
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -797,8 +797,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Protected methods
 

@@ -4,14 +4,14 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # SuppressLint
 
-Kotlin| [Java](https://developer.android.com/reference/android/annotation/SuppressLint "View this page in Java") 
+Kotlin| [Java](../android/annotation/SuppressLint.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.CLASS, AnnotationTarget.FILE, AnnotationTarget.FIELD, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.LOCAL_VARIABLE]) class SuppressLint
 ```
 
-| [android.annotation.SuppressLint](https://developer.android.com/reference/kotlin/android/annotation/SuppressLint#) |
+| [android.annotation.SuppressLint](../android/annotation/SuppressLint.md) |
 
 Indicates that Lint should ignore the specified warnings for the annotated element.
 
@@ -19,11 +19,11 @@ Indicates that Lint should ignore the specified warnings for the annotated eleme
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SuppressLint](https://developer.android.com/reference/kotlin/android/annotation/SuppressLint#SuppressLint(kotlin.String))`(`vararg` `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Indicates that Lint should ignore the specified warnings for the annotated element. |
+| [SuppressLint](../android/annotation/SuppressLint.md))`(`vararg` `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Indicates that Lint should ignore the specified warnings for the annotated element. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)\> | [value](https://developer.android.com/reference/kotlin/android/annotation/SuppressLint#value:kotlin.Array) The set of warnings (identified by the lint issue id) that should be ignored by lint. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)\> | [value](../android/annotation/SuppressLint.md) The set of warnings (identified by the lint issue id) that should be ignored by lint. |
 
 ## Public constructors
 

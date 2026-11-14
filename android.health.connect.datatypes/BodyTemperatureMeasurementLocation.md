@@ -3,7 +3,7 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 
 # BodyTemperatureMeasurementLocation
 
-Kotlin | [Java](https://developer.android.com/reference/android/health/connect/datatypes/BodyTemperatureMeasurementLocation "View this page in Java")
+Kotlin | [Java](../android/health/connect/datatypes/BodyTemperatureMeasurementLocation.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class BodyTemperatureMeasurementLocation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.BodyTemperatureMeasurementLocation](https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BodyTemperatureMeasurementLocation#) |
+| ↳ | [android.health.connect.datatypes.BodyTemperatureMeasurementLocation](../android/health/connect/datatypes/BodyTemperatureMeasurementLocation.md) |
 
 Where on the user's body a temperature measurement was taken from.
 

@@ -8,9 +8,9 @@ open class PushbackInputStream : FilterInputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.io.InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream) |||
-| | ↳ | [java.io.FilterInputStream](https://developer.android.com/reference/kotlin/java/io/FilterInputStream) ||
-| | | ↳ | [java.io.PushbackInputStream](https://developer.android.com/reference/kotlin/java/io/PushbackInputStream#) |
+| ↳ | [java.io.InputStream](../java/io/InputStream.md) |||
+| | ↳ | [java.io.FilterInputStream](../java/io/FilterInputStream.md) ||
+| | | ↳ | [java.io.PushbackInputStream](../java/io/PushbackInputStream.md) |
 | --- | --- | --- | --- |
 
 A `PushbackInputStream` adds functionality to another input stream, namely the ability to "push back" or "unread" bytes, by storing pushed-back bytes in an internal buffer. This is useful in situations where it is convenient for a fragment of code to read an indefinite number of data bytes that are delimited by a particular byte value; after reading the terminating byte, the code fragment can "unread" it, so that the next read operation on the input stream will reread the byte that was pushed back. For example, bytes representing the characters constituting an identifier might be terminated by a byte representing an operator character; a method whose job is to read just an identifier can read until it sees the operator and then push the operator back to be re-read.
@@ -67,7 +67,7 @@ Creates a `PushbackInputStream` with a 1-byte pushback buffer, and saves its arg
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream)!: the input stream from which bytes will be read. |
+| `in` | [InputStream](../java/io/InputStream.md)!: the input stream from which bytes will be read. |
 
 ### PushbackInputStream
 
@@ -83,7 +83,7 @@ Creates a `PushbackInputStream` with a pushback buffer of the specified `size`, 
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream)!: the input stream from which bytes will be read. |
+| `in` | [InputStream](../java/io/InputStream.md)!: the input stream from which bytes will be read. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size of the pushback buffer. |
 
 | Exceptions ||

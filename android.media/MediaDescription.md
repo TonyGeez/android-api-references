@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaDescription
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/MediaDescription "View this page in Java")
+Kotlin | [Java](../android/media/MediaDescription.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class MediaDescription : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaDescription](https://developer.android.com/reference/kotlin/android/media/MediaDescription#) |
+| ↳ | [android.media.MediaDescription](../android/media/MediaDescription.md) |
 
 A simple set of metadata for a media item suitable for display. This can be created using the Builder or retrieved from existing metadata using `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getDescription()`.
 
@@ -44,12 +44,12 @@ A simple set of metadata for a media item suitable for display. This can be crea
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getDescription()()` Returns a description suitable for display or null. |
 | --- | --- |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getExtras()()` Returns any extras that were added to the description. |
-| open [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconBitmap()()` Returns a bitmap icon suitable for display or null. |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconUri()()` Returns a Uri for an icon suitable for display or null. |
+| open [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getExtras()()` Returns any extras that were added to the description. |
+| open [Bitmap](../android/graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconBitmap()()` Returns a bitmap icon suitable for display or null. |
+| open [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconUri()()` Returns a Uri for an icon suitable for display or null. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getMediaId()()` Returns the media id or null. |
-| open [Uri](https://developer.android.com/reference/kotlin/android/net/Uri.html#)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getMediaUri()()` Returns a Uri representing this content or null. |
+| open [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getMediaUri()()` Returns a Uri representing this content or null. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getSubtitle()()` Returns a subtitle suitable for display or null. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getTitle()()` Returns a title suitable for display or null. |
@@ -59,7 +59,7 @@ A simple set of metadata for a media item suitable for display. This can be crea
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [MediaDescription](https://developer.android.com/reference/kotlin/android/media/MediaDescription#)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MediaDescription](../android/media/MediaDescription.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -354,7 +354,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

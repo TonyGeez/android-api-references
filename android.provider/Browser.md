@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Browser
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Browser "View this page in Java") 
+Kotlin| [Java](../android/provider/Browser.md) 
 | --- | --- |
 
 ```
@@ -13,25 +13,25 @@ open class Browser
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.Browser](https://developer.android.com/reference/kotlin/android/provider/Browser#) |
+| ↳ | [android.provider.Browser](../android/provider/Browser.md) |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_APPLICATION_ID](https://developer.android.com/reference/kotlin/android/provider/Browser#EXTRA_APPLICATION_ID:kotlin.String) The name of the extra data when starting the Browser from another application. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CREATE_NEW_TAB](https://developer.android.com/reference/kotlin/android/provider/Browser#EXTRA_CREATE_NEW_TAB:kotlin.String) Boolean extra passed along with an Intent to a browser, specifying that a new tab be created. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_HEADERS](https://developer.android.com/reference/kotlin/android/provider/Browser#EXTRA_HEADERS:kotlin.String) The name of the extra data in the VIEW intent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_APPLICATION_ID](../android/provider/Browser.md) The name of the extra data when starting the Browser from another application. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CREATE_NEW_TAB](../android/provider/Browser.md) Boolean extra passed along with an Intent to a browser, specifying that a new tab be created. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_HEADERS](../android/provider/Browser.md) The name of the extra data in the VIEW intent. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INITIAL_ZOOM_LEVEL](https://developer.android.com/reference/kotlin/android/provider/Browser#INITIAL_ZOOM_LEVEL:kotlin.String) The name of extra data when starting Browser with ACTION_VIEW or ACTION_SEARCH intent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INITIAL_ZOOM_LEVEL](../android/provider/Browser.md) The name of extra data when starting Browser with ACTION_VIEW or ACTION_SEARCH intent. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------|---|
-| [Browser](https://developer.android.com/reference/kotlin/android/provider/Browser#Browser())`()` <br /> |
+| [Browser](../android/provider/Browser.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendString](https://developer.android.com/reference/kotlin/android/provider/Browser#sendString(android.content.Context,%20kotlin.String))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sends the given string using an Intent with [Intent.ACTION_SEND](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String) and a mime type of text/plain. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendString](../android/provider/Browser.md))`(`context:` ` [Context](../android/content/Context.md)!`, `string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sends the given string using an Intent with [Intent.ACTION_SEND](../android/content/Intent.md) and a mime type of text/plain. |
 
 ## Constants
 
@@ -110,9 +110,9 @@ static fun sendString(
 ): Unit
 ```
 
-Sends the given string using an Intent with [Intent.ACTION_SEND](https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String) and a mime type of text/plain. The string is put into [Intent.EXTRA_TEXT](https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String).
+Sends the given string using an Intent with [Intent.ACTION_SEND](../android/content/Intent.md) and a mime type of text/plain. The string is put into [Intent.EXTRA_TEXT](../android/content/Intent.md).
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:the context used to start the activity |
+| `context` | [Context](../android/content/Context.md)!:the context used to start the activity |
 | `string` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the string to send |

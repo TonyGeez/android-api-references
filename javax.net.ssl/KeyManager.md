@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface KeyManager
 ```
 
-| [javax.net.ssl.KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/KeyManager#) |
+| [javax.net.ssl.KeyManager](../javax/net/ssl/KeyManager.md) |
 
-| Known Direct Subclasses [X509KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/X509KeyManager) |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------| | [X509KeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/X509KeyManager) | Instances of this interface manage which X509 certificate-based key pairs are used to authenticate the local side of a secure socket. | |
+| Known Direct Subclasses [X509KeyManager](../javax/net/ssl/X509KeyManager.md) |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------| | [X509KeyManager](../javax/net/ssl/X509KeyManager.md) | Instances of this interface manage which X509 certificate-based key pairs are used to authenticate the local side of a secure socket. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [X509ExtendedKeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedKeyManager) |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [X509ExtendedKeyManager](https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedKeyManager) | Abstract class that provides for extension of the X509KeyManager interface. | |
+| Known Indirect Subclasses [X509ExtendedKeyManager](../javax/net/ssl/X509ExtendedKeyManager.md) |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [X509ExtendedKeyManager](../javax/net/ssl/X509ExtendedKeyManager.md) | Abstract class that provides for extension of the X509KeyManager interface. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This is the base interface for JSSE key managers.

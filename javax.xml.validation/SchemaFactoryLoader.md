@@ -10,7 +10,7 @@ abstract class SchemaFactoryLoader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.validation.SchemaFactoryLoader](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactoryLoader#) |
+| ↳ | [javax.xml.validation.SchemaFactoryLoader](../javax/xml/validation/SchemaFactoryLoader.md) |
 
 This class was removed from JAXP 1.3 before it was finalized but was mistakenly included in Java 5. It only exists now for compatibility reasons. Applications should avoid using it.
 
@@ -18,11 +18,11 @@ This class was removed from JAXP 1.3 before it was finalized but was mistakenly 
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SchemaFactoryLoader](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactoryLoader#SchemaFactoryLoader())`()` <br /> |
+| [SchemaFactoryLoader](../javax/xml/validation/SchemaFactoryLoader.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [SchemaFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactory)! | [newFactory](https://developer.android.com/reference/kotlin/javax/xml/validation/SchemaFactoryLoader#newFactory(kotlin.String))`(`schemaLanguage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| abstract [SchemaFactory](../javax/xml/validation/SchemaFactory.md)! | [newFactory](../javax/xml/validation/SchemaFactoryLoader.md))`(`schemaLanguage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Protected constructors
 

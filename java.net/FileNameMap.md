@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface FileNameMap
 ```
 
-| [java.net.FileNameMap](https://developer.android.com/reference/kotlin/java/net/FileNameMap#) |
+| [java.net.FileNameMap](../java/net/FileNameMap.md) |
 
 A simple interface which provides a mechanism to map between a file name and a MIME type string.
 
@@ -16,7 +16,7 @@ A simple interface which provides a mechanism to map between a file name and a M
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getContentTypeFor](https://developer.android.com/reference/kotlin/java/net/FileNameMap#getContentTypeFor(kotlin.String))`(`fileName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the MIME type for the specified file name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getContentTypeFor](../java/net/FileNameMap.md))`(`fileName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the MIME type for the specified file name. |
 
 ## Public methods
 

@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # SystemOnBackInvokedCallbacks
 
-Kotlin | [Java](https://developer.android.com/reference/android/window/SystemOnBackInvokedCallbacks "View this page in Java")
+Kotlin | [Java](../android/window/SystemOnBackInvokedCallbacks.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class SystemOnBackInvokedCallbacks
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.window.SystemOnBackInvokedCallbacks](https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#) |
+| ↳ | [android.window.SystemOnBackInvokedCallbacks](../android/window/SystemOnBackInvokedCallbacks.md) |
 
 Utility class providing `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedCallback`s to override the default behavior when system back is invoked. e.g. `https://developer.android.com/reference/kotlin/android/app/Activity.html#finish()`
 
@@ -31,8 +31,8 @@ OnBackInvokedDispatcher dispatcher = activity.getOnBackInvokedDispatcher();
 
 | Public methods ||
 |---|---|
-| static [OnBackInvokedCallback](https://developer.android.com/reference/kotlin/android/window/OnBackInvokedCallback) | `https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#finishAndRemoveTaskCallback(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#)` Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAndRemoveTask()` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. |
-| static [OnBackInvokedCallback](https://developer.android.com/reference/kotlin/android/window/OnBackInvokedCallback) | `https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#moveTaskToBackCallback(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#)` Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#moveTaskToBack(kotlin.Boolean)` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, moving the task containing the activity to the background. |
+| static [OnBackInvokedCallback](../android/window/OnBackInvokedCallback.md) | `https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#finishAndRemoveTaskCallback(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#)` Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAndRemoveTask()` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. |
+| static [OnBackInvokedCallback](../android/window/OnBackInvokedCallback.md) | `https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#moveTaskToBackCallback(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#)` Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#moveTaskToBack(kotlin.Boolean)` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, moving the task containing the activity to the background. |
 
 ## Public methods
 
@@ -48,7 +48,7 @@ Get a callback to triggers `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#): The associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#` This value cannot be `null`. |
+| `activity` | [Activity](../android/app/Activity.md): The associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#` This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -70,7 +70,7 @@ Get a callback to triggers `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html#): The associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#` This value cannot be `null`. |
+| `activity` | [Activity](../android/app/Activity.md): The associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#` This value cannot be `null`. |
 
 | Return ||
 |---|---|

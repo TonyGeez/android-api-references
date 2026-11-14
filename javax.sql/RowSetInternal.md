@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface RowSetInternal
 ```
 
-| [javax.sql.RowSetInternal](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal#) |
+| [javax.sql.RowSetInternal](../javax/sql/RowSetInternal.md) |
 
 The interface that a`RowSet`object implements in order to present itself to a`RowSetReader`or`RowSetWriter`object. The`RowSetInternal`interface contains methods that let the reader or writer access and modify the internal state of the rowset.
 
@@ -16,12 +16,12 @@ The interface that a`RowSet`object implements in order to present itself to a`Ro
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection.html#)! | [getConnection](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal#getConnection())`()` Retrieves the`Connection`object that was passed to this`RowSet`object. |
-| abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet.html#)! | [getOriginal](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal#getOriginal())`()` Retrieves a`ResultSet`object containing the original value of this`RowSet`object. |
-| abstract [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet.html#)! | [getOriginalRow](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal#getOriginalRow())`()` Retrieves a`ResultSet`object containing the original value of the current row only. |
+| abstract [Connection](../java/sql/Connection.md)! | [getConnection](../javax/sql/RowSetInternal.md))`()` Retrieves the`Connection`object that was passed to this`RowSet`object. |
+| abstract [ResultSet](../java/sql/ResultSet.md)! | [getOriginal](../javax/sql/RowSetInternal.md))`()` Retrieves a`ResultSet`object containing the original value of this`RowSet`object. |
+| abstract [ResultSet](../java/sql/ResultSet.md)! | [getOriginalRow](../javax/sql/RowSetInternal.md))`()` Retrieves a`ResultSet`object containing the original value of the current row only. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getParams](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal#getParams())`()` Retrieves the parameters that have been set for this`RowSet`object's command. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMetaData](https://developer.android.com/reference/kotlin/javax/sql/RowSetInternal#setMetaData(javax.sql.RowSetMetaData))`(`md:` ` [RowSetMetaData](https://developer.android.com/reference/kotlin/javax/sql/RowSetMetaData)!`)` Sets the given`RowSetMetaData`object as the`RowSetMetaData`object for this`RowSet`object. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [getParams](../javax/sql/RowSetInternal.md))`()` Retrieves the parameters that have been set for this`RowSet`object's command. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMetaData](../javax/sql/RowSetInternal.md))`(`md:` ` [RowSetMetaData](../javax/sql/RowSetMetaData.md)!`)` Sets the given`RowSetMetaData`object as the`RowSetMetaData`object for this`RowSet`object. |
 
 ## Public methods
 
@@ -37,7 +37,7 @@ Retrieves the`Connection`object that was passed to this`RowSet`object.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Connection](https://developer.android.com/reference/kotlin/java/sql/Connection.html#)! | the`Connection`object passed to the rowset or`null`if none was passed |
+| [Connection](../java/sql/Connection.md)! | the`Connection`object passed to the rowset or`null`if none was passed |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -57,7 +57,7 @@ The cursor is positioned before the first row in the result set. Only rows conta
 
 | Return ||
 |---------------------------------------------------------------------------------------|----------------------------------|
-| [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet.html#)! | the original value of the rowset |
+| [ResultSet](../java/sql/ResultSet.md)! | the original value of the rowset |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -75,7 +75,7 @@ Retrieves a`ResultSet`object containing the original value of the current row on
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [ResultSet](https://developer.android.com/reference/kotlin/java/sql/ResultSet.html#)! | the original value of the current row as a`ResultSet`object |
+| [ResultSet](../java/sql/ResultSet.md)! | the original value of the current row as a`ResultSet`object |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -111,7 +111,7 @@ Sets the given`RowSetMetaData`object as the`RowSetMetaData`object for this`RowSe
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `md` | [RowSetMetaData](https://developer.android.com/reference/kotlin/javax/sql/RowSetMetaData)!:the`RowSetMetaData`object that will be set with information about the rowset's columns |
+| `md` | [RowSetMetaData](../javax/sql/RowSetMetaData.md)!:the`RowSetMetaData`object that will be set with information about the rowset's columns |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|

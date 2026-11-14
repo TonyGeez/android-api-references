@@ -9,7 +9,7 @@ class CookieSyncManager : Runnable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.CookieSyncManager](https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#) |
+| ↳ | [android.webkit.CookieSyncManager](../android/webkit/CookieSyncManager.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 21.**
@@ -51,8 +51,8 @@ The sync interval is 5 minutes, so you will want to force syncs manually anyway,
 
 | Public methods ||
 |---|---|
-| static [CookieSyncManager](https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#createInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Create a singleton CookieSyncManager within a context |
-| static [CookieSyncManager](https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#getInstance()()` Singleton access to a `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#`. |
+| static [CookieSyncManager](../android/webkit/CookieSyncManager.md)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#createInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Create a singleton CookieSyncManager within a context |
+| static [CookieSyncManager](../android/webkit/CookieSyncManager.md)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#getInstance()()` Singleton access to a `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#resetSync()()` resetSync() resets sync manager's timer. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#run()()` When an object implementing interface `Runnable` is used to create a thread, starting the thread causes the object's `run` method to be called in that separately executing thread. |
@@ -81,7 +81,7 @@ Create a singleton CookieSyncManager within a context
 
 | Parameters ||
 |---|---|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!: |
+| `context` | [Context](../android/content/Context.md)!: |
 
 | Return ||
 |---|---|

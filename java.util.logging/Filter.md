@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @FunctionalInterface interface Filter
 ```
 
-| [java.util.logging.Filter](https://developer.android.com/reference/kotlin/java/util/logging/Filter#) |
+| [java.util.logging.Filter](../java/util/logging/Filter.md) |
 
 A Filter can be used to provide fine grain control over what is logged, beyond the control provided by log levels.
 
@@ -18,7 +18,7 @@ Each Logger and each Handler can have a filter associated with it. The Logger or
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](https://developer.android.com/reference/kotlin/java/util/logging/Filter#isLoggable(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Check if a given log record should be published. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](../java/util/logging/Filter.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Check if a given log record should be published. |
 
 ## Public methods
 
@@ -34,7 +34,7 @@ Check if a given log record should be published.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!:a LogRecord |
+| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:a LogRecord |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|

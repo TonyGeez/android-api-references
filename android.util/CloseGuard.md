@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # CloseGuard
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/CloseGuard "View this page in Java") 
+Kotlin| [Java](../android/util/CloseGuard.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class CloseGuard
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.CloseGuard](https://developer.android.com/reference/kotlin/android/util/CloseGuard#) |
+| ↳ | [android.util.CloseGuard](../android/util/CloseGuard.md) |
 
 CloseGuard is a mechanism for flagging implicit finalizer cleanup of resources that should have been cleaned up by explicit close methods (aka "explicit termination methods" in Effective Java).
 
@@ -103,13 +103,13 @@ When used in a constructor, calls to`open`should occur at the end of the constru
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CloseGuard](https://developer.android.com/reference/kotlin/android/util/CloseGuard#CloseGuard())`()` Constructs a new CloseGuard instance. |
+| [CloseGuard](../android/util/CloseGuard.md))`()` Constructs a new CloseGuard instance. |
 
 | Public methods ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](https://developer.android.com/reference/kotlin/android/util/CloseGuard#close())`()` Marks this CloseGuard instance as closed to avoid warnings on finalization. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [open](https://developer.android.com/reference/kotlin/android/util/CloseGuard#open(kotlin.String))`(`closeMethodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Initializes the instance with a warning that the caller should have explicitly called the`closeMethodName`method instead of relying on finalization. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warnIfOpen](https://developer.android.com/reference/kotlin/android/util/CloseGuard#warnIfOpen())`()` Logs a warning if the caller did not properly cleanup by calling an explicit close method before finalization. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/util/CloseGuard.md))`()` Marks this CloseGuard instance as closed to avoid warnings on finalization. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [open](../android/util/CloseGuard.md))`(`closeMethodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Initializes the instance with a warning that the caller should have explicitly called the`closeMethodName`method instead of relying on finalization. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warnIfOpen](../android/util/CloseGuard.md))`()` Logs a warning if the caller did not properly cleanup by calling an explicit close method before finalization. |
 | --- | --- |
 
 ## Public constructors
@@ -122,7 +122,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 CloseGuard()
 ```
 
-Constructs a new CloseGuard instance. [open(java.lang.String)](https://developer.android.com/reference/kotlin/android/util/CloseGuard#open(kotlin.String))can be used to set up the instance to warn on failure to close.
+Constructs a new CloseGuard instance. [open(java.lang.String)](../android/util/CloseGuard.md))can be used to set up the instance to warn on failure to close.
 
 ## Public methods
 

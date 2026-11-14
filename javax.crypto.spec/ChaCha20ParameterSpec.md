@@ -10,7 +10,7 @@ class ChaCha20ParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.ChaCha20ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/ChaCha20ParameterSpec#) |
+| ↳ | [javax.crypto.spec.ChaCha20ParameterSpec](../javax/crypto/spec/ChaCha20ParameterSpec.md) |
 
 This class specifies the parameters used with the [*ChaCha20*](https://tools.ietf.org/html/rfc7539) algorithm.
 
@@ -22,12 +22,12 @@ This class can be used to initialize a`Cipher`object that implements the*ChaCha2
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ChaCha20ParameterSpec](https://developer.android.com/reference/kotlin/javax/crypto/spec/ChaCha20ParameterSpec#ChaCha20ParameterSpec(kotlin.ByteArray,%20kotlin.Int))`(`nonce:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `counter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for ChaCha20 from the given nonce and counter. |
+| [ChaCha20ParameterSpec](../javax/crypto/spec/ChaCha20ParameterSpec.md))`(`nonce:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `counter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for ChaCha20 from the given nonce and counter. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCounter](https://developer.android.com/reference/kotlin/javax/crypto/spec/ChaCha20ParameterSpec#getCounter())`()` Returns the configured counter value. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getNonce](https://developer.android.com/reference/kotlin/javax/crypto/spec/ChaCha20ParameterSpec#getNonce())`()` Returns the nonce value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCounter](../javax/crypto/spec/ChaCha20ParameterSpec.md))`()` Returns the configured counter value. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getNonce](../javax/crypto/spec/ChaCha20ParameterSpec.md))`()` Returns the nonce value. |
 
 ## Public constructors
 

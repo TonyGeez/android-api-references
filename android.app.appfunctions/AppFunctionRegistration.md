@@ -6,7 +6,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 interface AppFunctionRegistration
 ```
 
-| [android.app.appfunctions.AppFunctionRegistration](https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionRegistration#) |
+| [android.app.appfunctions.AppFunctionRegistration](../android/app/appfunctions/AppFunctionRegistration.md) |
 
 Result of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#registerAppFunction(kotlin.String,%20java.util.concurrent.Executor,%20android.app.appfunctions.AppFunction)`.
 

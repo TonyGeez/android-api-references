@@ -4,26 +4,26 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ModelDownloadListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/speech/ModelDownloadListener "View this page in Java") 
+Kotlin| [Java](../android/speech/ModelDownloadListener.md) 
 | --- | --- |
 
 ```
 interface ModelDownloadListener
 ```
 
-| [android.speech.ModelDownloadListener](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#) |
+| [android.speech.ModelDownloadListener](../android/speech/ModelDownloadListener.md) |
 
-Listener for model download events. It makes [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) let callers know about the progress of model download for a single recognition request.
+Listener for model download events. It makes [RecognitionService](../android/speech/RecognitionService.md) let callers know about the progress of model download for a single recognition request.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onError(kotlin.Int))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A network or scheduling error occurred. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProgress](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onProgress(kotlin.Int))`(`completedPercent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called by [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) only if the download has started after the request. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScheduled](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onScheduled())`()` Called when [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) scheduled the download, but won't satisfy it immediately. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/speech/ModelDownloadListener.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A network or scheduling error occurred. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProgress](../android/speech/ModelDownloadListener.md))`(`completedPercent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called by [RecognitionService](../android/speech/RecognitionService.md) only if the download has started after the request. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScheduled](../android/speech/ModelDownloadListener.md))`()` Called when [RecognitionService](../android/speech/RecognitionService.md) scheduled the download, but won't satisfy it immediately. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSuccess](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onSuccess())`()` This method is called: - if the model is already available; - if the [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) has started and completed the download. Once this method is called, the model can be safely used to satisfy recognition requests. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSuccess](../android/speech/ModelDownloadListener.md))`()` This method is called: - if the model is already available; - if the [RecognitionService](../android/speech/RecognitionService.md) has started and completed the download. Once this method is called, the model can be safely used to satisfy recognition requests. |
 
 ## Public methods
 
@@ -39,7 +39,7 @@ A network or scheduling error occurred.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):code is defined in [SpeechRecognizer](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer) Value is [android.speech.SpeechRecognizer#ERROR_NETWORK_TIMEOUT](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_NETWORK_TIMEOUT:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_NETWORK](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_NETWORK:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_AUDIO](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_AUDIO:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_SERVER](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_SERVER:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_CLIENT](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_CLIENT:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_SPEECH_TIMEOUT](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_SPEECH_TIMEOUT:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_NO_MATCH](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_NO_MATCH:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_RECOGNIZER_BUSY](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_RECOGNIZER_BUSY:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_INSUFFICIENT_PERMISSIONS](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_INSUFFICIENT_PERMISSIONS:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_TOO_MANY_REQUESTS](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_TOO_MANY_REQUESTS:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_SERVER_DISCONNECTED](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_SERVER_DISCONNECTED:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_LANGUAGE_NOT_SUPPORTED](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_LANGUAGE_NOT_SUPPORTED:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_LANGUAGE_UNAVAILABLE](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_LANGUAGE_UNAVAILABLE:kotlin.Int), [android.speech.SpeechRecognizer#ERROR_CANNOT_CHECK_SUPPORT](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_CANNOT_CHECK_SUPPORT:kotlin.Int), or [android.speech.SpeechRecognizer#ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS](https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS:kotlin.Int) |
+| `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):code is defined in [SpeechRecognizer](../android/speech/SpeechRecognizer.md) Value is [android.speech.SpeechRecognizer#ERROR_NETWORK_TIMEOUT](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_NETWORK](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_AUDIO](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_SERVER](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_CLIENT](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_SPEECH_TIMEOUT](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_NO_MATCH](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_RECOGNIZER_BUSY](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_INSUFFICIENT_PERMISSIONS](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_TOO_MANY_REQUESTS](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_SERVER_DISCONNECTED](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_LANGUAGE_NOT_SUPPORTED](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_LANGUAGE_UNAVAILABLE](../android/speech/SpeechRecognizer.md), [android.speech.SpeechRecognizer#ERROR_CANNOT_CHECK_SUPPORT](../android/speech/SpeechRecognizer.md), or [android.speech.SpeechRecognizer#ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS](../android/speech/SpeechRecognizer.md) |
 
 ### onProgress
 
@@ -49,9 +49,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onProgress(completedPercent: Int): Unit
 ```
 
-Called by [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) only if the download has started after the request.
+Called by [RecognitionService](../android/speech/RecognitionService.md) only if the download has started after the request.
 
-The number of calls to this method varies depending of the [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) implementation. If the download finished quickly enough, [onSuccess()](https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onSuccess())may be called directly. In other cases, this method may be called any number of times during the download.
+The number of calls to this method varies depending of the [RecognitionService](../android/speech/RecognitionService.md) implementation. If the download finished quickly enough, [onSuccess()](../android/speech/ModelDownloadListener.md))may be called directly. In other cases, this method may be called any number of times during the download.
 
 | Parameters ||
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -65,7 +65,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onScheduled(): Unit
 ```
 
-Called when [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) scheduled the download, but won't satisfy it immediately. There will be no further updates on this listener. 
+Called when [RecognitionService](../android/speech/RecognitionService.md) scheduled the download, but won't satisfy it immediately. There will be no further updates on this listener. 
 
 ### onSuccess
 
@@ -77,6 +77,6 @@ abstract fun onSuccess(): Unit
 
 This method is called:
 - if the model is already available;
-- if the [RecognitionService](https://developer.android.com/reference/kotlin/android/speech/RecognitionService) has started and completed the download.
+- if the [RecognitionService](../android/speech/RecognitionService.md) has started and completed the download.
 
  Once this method is called, the model can be safely used to satisfy recognition requests.

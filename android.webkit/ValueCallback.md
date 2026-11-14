@@ -4,14 +4,14 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 
 # ValueCallback
 
-Kotlin| [Java](https://developer.android.com/reference/android/webkit/ValueCallback "View this page in Java") 
+Kotlin| [Java](../android/webkit/ValueCallback.md) 
 | --- | --- |
 
 ```
 interface ValueCallback<T : Any!>
 ```
 
-| [android.webkit.ValueCallback](https://developer.android.com/reference/kotlin/android/webkit/ValueCallback#) |
+| [android.webkit.ValueCallback](../android/webkit/ValueCallback.md) |
 
 A callback interface used to provide values asynchronously.
 
@@ -19,7 +19,7 @@ A callback interface used to provide values asynchronously.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceiveValue](https://developer.android.com/reference/kotlin/android/webkit/ValueCallback#onReceiveValue(android.webkit.ValueCallback.T))`(`value:` `T`)` Invoked when the value is available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceiveValue](../android/webkit/ValueCallback.md))`(`value:` `T`)` Invoked when the value is available. |
 
 ## Public methods
 

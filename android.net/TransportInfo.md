@@ -4,18 +4,18 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # TransportInfo
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/TransportInfo "View this page in Java") 
+Kotlin| [Java](../android/net/TransportInfo.md) 
 | --- | --- |
 
 ```
 interface TransportInfo
 ```
 
-| [android.net.TransportInfo](https://developer.android.com/reference/kotlin/android/net/TransportInfo#) |
+| [android.net.TransportInfo](../android/net/TransportInfo.md) |
 
-| Known Direct Subclasses [WifiAwareNetworkInfo](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo), [WifiInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------| | [WifiAwareNetworkInfo](https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo) | Wi-Fi Aware-specific network information. | | [WifiInfo](https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo) | Describes the state of any Wi-Fi connection that is active or is in the process of being set up. | |
+| Known Direct Subclasses [WifiAwareNetworkInfo](../android/net/wifi/aware/WifiAwareNetworkInfo.md), [WifiInfo](../android/net/wifi/WifiInfo.md) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------| | [WifiAwareNetworkInfo](../android/net/wifi/aware/WifiAwareNetworkInfo.md) | Wi-Fi Aware-specific network information. | | [WifiInfo](../android/net/wifi/WifiInfo.md) | Describes the state of any Wi-Fi connection that is active or is in the process of being set up. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A container for transport-specific capabilities which is returned by [NetworkCapabilities.getTransportInfo()](https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getTransportInfo()). Specific networks may provide concrete implementations of this interface.
+A container for transport-specific capabilities which is returned by [NetworkCapabilities.getTransportInfo()](../android/net/NetworkCapabilities.md)). Specific networks may provide concrete implementations of this interface.
 
 ## Summary

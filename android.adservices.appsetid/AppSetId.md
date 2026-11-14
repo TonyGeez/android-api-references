@@ -3,7 +3,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AppSetId
 
-Kotlin | [Java](https://developer.android.com/reference/android/adservices/appsetid/AppSetId "View this page in Java")
+Kotlin | [Java](../android/adservices/appsetid/AppSetId.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ open class AppSetId
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.appsetid.AppSetId](https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetId#) |
+| ↳ | [android.adservices.appsetid.AppSetId](../android/adservices/appsetid/AppSetId.md) |
 
 A unique, per-device, per developer-account user-resettable ID for non-monetizing advertising usecases.
 

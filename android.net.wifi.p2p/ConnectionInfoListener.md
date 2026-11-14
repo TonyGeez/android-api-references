@@ -4,14 +4,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # ConnectionInfoListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener "View this page in Java") 
+Kotlin| [Java](../android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.md) 
 | --- | --- |
 
 ```
 interface ConnectionInfoListener
 ```
 
-| [android.net.wifi.p2p.WifiP2pManager.ConnectionInfoListener](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener#) |
+| [android.net.wifi.p2p.WifiP2pManager.ConnectionInfoListener](../android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.md) |
 
 Interface for callback invocation when connection info is available
 
@@ -19,7 +19,7 @@ Interface for callback invocation when connection info is available
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnectionInfoAvailable](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener#onConnectionInfoAvailable(android.net.wifi.p2p.WifiP2pInfo))`(`info:` ` [WifiP2pInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo)!`)` The requested connection info is available |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnectionInfoAvailable](../android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.md))`(`info:` ` [WifiP2pInfo](../android/net/wifi/p2p/WifiP2pInfo.md)!`)` The requested connection info is available |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ The requested connection info is available
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------|
-| `info` | [WifiP2pInfo](https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pInfo)!:Wi-Fi p2p connection info |
+| `info` | [WifiP2pInfo](../android/net/wifi/p2p/WifiP2pInfo.md)!:Wi-Fi p2p connection info |

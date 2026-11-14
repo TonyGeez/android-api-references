@@ -4,14 +4,14 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # OnLayoutChangeListener
 
-Kotlin| [Java](https://developer.android.com/reference/android/view/View.OnLayoutChangeListener "View this page in Java") 
+Kotlin| [Java](../android/view/View.OnLayoutChangeListener.md) 
 | --- | --- |
 
 ```
 interface OnLayoutChangeListener
 ```
 
-| [android.view.View.OnLayoutChangeListener](https://developer.android.com/reference/kotlin/android/view/View.OnLayoutChangeListener#) |
+| [android.view.View.OnLayoutChangeListener](../android/view/View.OnLayoutChangeListener.md) |
 
 Interface definition for a callback to be invoked when the layout bounds of a view changes due to layout processing.
 
@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the layout bounds of a vi
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLayoutChange](https://developer.android.com/reference/kotlin/android/view/View.OnLayoutChangeListener#onLayoutChange(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))`(`v:` ` [View](https://developer.android.com/reference/kotlin/android/view/View)!`, `left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldLeft:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldTop:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldRight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldBottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the layout bounds of a view changes due to layout processing. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLayoutChange](../android/view/View.OnLayoutChangeListener.md))`(`v:` ` [View](../android/view/View.md)!`, `left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldLeft:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldTop:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldRight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `oldBottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the layout bounds of a view changes due to layout processing. |
 
 ## Public methods
 
@@ -45,7 +45,7 @@ Called when the layout bounds of a view changes due to layout processing.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](https://developer.android.com/reference/kotlin/android/view/View)!:The view whose bounds have changed. |
+| `v` | [View](../android/view/View.md)!:The view whose bounds have changed. |
 | `left` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value of the view's left property. |
 | `top` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value of the view's top property. |
 | --- | --- |

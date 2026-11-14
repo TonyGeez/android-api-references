@@ -4,6 +4,6 @@
 
 ## Classes
 
-| [ObjectMethods](https://developer.android.com/reference/kotlin/java/lang/runtime/ObjectMethods) | Bootstrap methods for state-driven implementations of core methods, including [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)), [Object.hashCode()](https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()), and [Object.toString()](https://developer.android.com/reference/kotlin/java/lang/Object.html#toString()). |
+| [ObjectMethods](../java/lang/runtime/ObjectMethods.md) | Bootstrap methods for state-driven implementations of core methods, including [Object.equals(Object)](../java/lang/Object.md)), [Object.hashCode()](../java/lang/Object.md)), and [Object.toString()](../java/lang/Object.md)). |
 | --- | --- |
-| [SwitchBootstraps](https://developer.android.com/reference/kotlin/java/lang/runtime/SwitchBootstraps) | Bootstrap methods for linking`invokedynamic`call sites that implement the selection functionality of the`switch`statement. |
+| [SwitchBootstraps](../java/lang/runtime/SwitchBootstraps.md) | Bootstrap methods for linking`invokedynamic`call sites that implement the selection functionality of the`switch`statement. |

@@ -2,11 +2,11 @@
 
 # android.graphics.pdf.models.selection
 
-Kotlin| [Java](https://developer.android.com/reference/android/graphics/pdf/models/selection/package-summary "View this page in Java")
+Kotlin| [Java](../android/graphics/pdf/models/selection/_package.md)
 | --- | --- |
 
 ## Classes
 
-| [PageSelection](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection) | Represents the list of selected content on a particular page of the PDF document. |
+| [PageSelection](../android/graphics/pdf/models/selection/PageSelection.md) | Represents the list of selected content on a particular page of the PDF document. |
 | --- | --- |
-| [SelectionBoundary](https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary) | Represents one edge of the selected content. |
+| [SelectionBoundary](../android/graphics/pdf/models/selection/SelectionBoundary.md) | Represents one edge of the selected content. |

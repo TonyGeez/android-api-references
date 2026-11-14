@@ -10,8 +10,8 @@ open class PKCS8EncodedKeySpec : EncodedKeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.spec.EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec) ||
-| | ↳ | [java.security.spec.PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec#) |
+| ↳ | [java.security.spec.EncodedKeySpec](../java/security/spec/EncodedKeySpec.md) ||
+| | ↳ | [java.security.spec.PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md) |
 
 This class represents the ASN.1 encoding of a private key, encoded according to the ASN.1 type`PrivateKeyInfo`. The`PrivateKeyInfo`syntax is defined in the PKCS#8 standard as follows: 
 
@@ -38,17 +38,17 @@ PrivateKeyInfo ::= SEQUENCE {
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec#PKCS8EncodedKeySpec(kotlin.ByteArray))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a new`PKCS8EncodedKeySpec`with the given encoded key. |
-| [PKCS8EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec#PKCS8EncodedKeySpec(kotlin.ByteArray,%20kotlin.String))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`PKCS8EncodedKeySpec`with the given encoded key and algorithm. |
+| [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates a new`PKCS8EncodedKeySpec`with the given encoded key. |
+| [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md))`(`encodedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`PKCS8EncodedKeySpec`with the given encoded key and algorithm. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec#getEncoded())`()` Returns the key bytes, encoded according to the PKCS #8 standard. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormat](https://developer.android.com/reference/kotlin/java/security/spec/PKCS8EncodedKeySpec#getFormat())`()` Returns the name of the encoding format associated with this key specification. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/spec/PKCS8EncodedKeySpec.md))`()` Returns the key bytes, encoded according to the PKCS #8 standard. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFormat](../java/security/spec/PKCS8EncodedKeySpec.md))`()` Returns the name of the encoding format associated with this key specification. |
 
 | Inherited functions ||
 |---|---|
-| From class [EncodedKeySpec](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec) |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec#getAlgorithm())`()` <br /> Returns the name of the algorithm of the encoded key. <br /> | ||
+| From class [EncodedKeySpec](../java/security/spec/EncodedKeySpec.md) |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/spec/EncodedKeySpec.md))`()` <br /> Returns the name of the algorithm of the encoded key. <br /> | ||
 
 ## Public constructors
 

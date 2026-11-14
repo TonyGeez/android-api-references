@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LocalSocketAddress
 
-Kotlin | [Java](https://developer.android.com/reference/android/net/LocalSocketAddress "View this page in Java") 
+Kotlin | [Java](../android/net/LocalSocketAddress.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class LocalSocketAddress
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.LocalSocketAddress](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress#) |
+| ↳ | [android.net.LocalSocketAddress](../android/net/LocalSocketAddress.md) |
 
 A UNIX-domain (AF_LOCAL) socket address. For use with android.net.LocalSocket and android.net.LocalServerSocket. On the Android system, these names refer to names in the Linux abstract (non-filesystem) UNIX domain namespace.
 
@@ -21,17 +21,17 @@ A UNIX-domain (AF_LOCAL) socket address. For use with android.net.LocalSocket an
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Namespace](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress.Namespace) The namespace that this address exists in. |
+| | [Namespace](../android/net/LocalSocketAddress.Namespace.md) The namespace that this address exists in. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocalSocketAddress](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress#LocalSocketAddress(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an instance with a given name in the [Namespace.ABSTRACT](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress.Namespace) namespace |
-| [LocalSocketAddress](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress#LocalSocketAddress(kotlin.String,%20android.net.LocalSocketAddress.Namespace))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `namespace:` ` [LocalSocketAddress.Namespace](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress.Namespace)!`)` Creates an instance with a given name. |
+| [LocalSocketAddress](../android/net/LocalSocketAddress.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an instance with a given name in the [Namespace.ABSTRACT](../android/net/LocalSocketAddress.Namespace.md) namespace |
+| [LocalSocketAddress](../android/net/LocalSocketAddress.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `namespace:` ` [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)!`)` Creates an instance with a given name. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress#getName())`()` Retrieves the string name of this address |
-| open [LocalSocketAddress.Namespace](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress.Namespace)! | [getNamespace](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress#getNamespace())`()` Returns the namespace used by this address. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/net/LocalSocketAddress.md))`()` Retrieves the string name of this address |
+| open [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)! | [getNamespace](../android/net/LocalSocketAddress.md))`()` Returns the namespace used by this address. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 LocalSocketAddress(name: String!)
 ```
 
-Creates an instance with a given name in the [Namespace.ABSTRACT](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress.Namespace) namespace
+Creates an instance with a given name in the [Namespace.ABSTRACT](../android/net/LocalSocketAddress.Namespace.md) namespace
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------|
@@ -64,7 +64,7 @@ Creates an instance with a given name.
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: non-null name |
-| `namespace` | [LocalSocketAddress.Namespace](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress.Namespace)!: namespace the name should be created in. |
+| `namespace` | [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)!: namespace the name should be created in. |
 
 ## Public methods
 
@@ -94,4 +94,4 @@ Returns the namespace used by this address.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [LocalSocketAddress.Namespace](https://developer.android.com/reference/kotlin/android/net/LocalSocketAddress.Namespace)! | non-null a namespace |
+| [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)! | non-null a namespace |

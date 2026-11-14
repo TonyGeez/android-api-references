@@ -11,10 +11,10 @@ open class UnsatisfiedLinkError : LinkageError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](https://developer.android.com/reference/kotlin/java/lang/Error) |||
-| | | ↳ | [java.lang.LinkageError](https://developer.android.com/reference/kotlin/java/lang/LinkageError) ||
+| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
+| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.UnsatisfiedLinkError](https://developer.android.com/reference/kotlin/java/lang/UnsatisfiedLinkError#) |
+| | | | ↳ | [java.lang.UnsatisfiedLinkError](../java/lang/UnsatisfiedLinkError.md) |
 
 Thrown if the Java Virtual Machine cannot find an appropriate native-language definition of a method declared`native`.
 
@@ -22,8 +22,8 @@ Thrown if the Java Virtual Machine cannot find an appropriate native-language de
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsatisfiedLinkError](https://developer.android.com/reference/kotlin/java/lang/UnsatisfiedLinkError#UnsatisfiedLinkError())`()` Constructs an`UnsatisfiedLinkError`with no detail message. |
-| [UnsatisfiedLinkError](https://developer.android.com/reference/kotlin/java/lang/UnsatisfiedLinkError#UnsatisfiedLinkError(kotlin.String))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`UnsatisfiedLinkError`with the specified detail message. |
+| [UnsatisfiedLinkError](../java/lang/UnsatisfiedLinkError.md))`()` Constructs an`UnsatisfiedLinkError`with no detail message. |
+| [UnsatisfiedLinkError](../java/lang/UnsatisfiedLinkError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`UnsatisfiedLinkError`with the specified detail message. |
 
 ## Public constructors
 

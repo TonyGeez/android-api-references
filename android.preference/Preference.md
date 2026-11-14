@@ -5,7 +5,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # Preference
 
-Kotlin| [Java](https://developer.android.com/reference/android/preference/Preference "View this page in Java") 
+Kotlin| [Java](../android/preference/Preference.md) 
 | --- | --- |
 
 ```
@@ -14,23 +14,23 @@ open class Preference : Comparable<Preference!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.preference.Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) |
+| ↳ | [android.preference.Preference](../android/preference/Preference.md) |
 
-| Known Direct Subclasses [DialogPreference](https://developer.android.com/reference/kotlin/android/preference/DialogPreference), [PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup), [RingtonePreference](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference), [TwoStatePreference](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DialogPreference](https://developer.android.com/reference/kotlin/android/preference/DialogPreference) | A base class for [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) objects that are dialog-based. | | [PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup) | A container for multiple [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) objects. | | [RingtonePreference](https://developer.android.com/reference/kotlin/android/preference/RingtonePreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) that allows the user to choose a ringtone from those on the device. | | [TwoStatePreference](https://developer.android.com/reference/kotlin/android/preference/TwoStatePreference) | Common base class for preferences that have two selectable states, persist a boolean value in SharedPreferences, and may have dependent preferences that are enabled/disabled based on the current state. | |
+| Known Direct Subclasses [DialogPreference](../android/preference/DialogPreference.md), [PreferenceGroup](../android/preference/PreferenceGroup.md), [RingtonePreference](../android/preference/RingtonePreference.md), [TwoStatePreference](../android/preference/TwoStatePreference.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DialogPreference](../android/preference/DialogPreference.md) | A base class for [Preference](../android/preference/Preference.md) objects that are dialog-based. | | [PreferenceGroup](../android/preference/PreferenceGroup.md) | A container for multiple [Preference](../android/preference/Preference.md) objects. | | [RingtonePreference](../android/preference/RingtonePreference.md) | A [Preference](../android/preference/Preference.md) that allows the user to choose a ringtone from those on the device. | | [TwoStatePreference](../android/preference/TwoStatePreference.md) | Common base class for preferences that have two selectable states, persist a boolean value in SharedPreferences, and may have dependent preferences that are enabled/disabled based on the current state. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference), [EditTextPreference](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference), [ListPreference](https://developer.android.com/reference/kotlin/android/preference/ListPreference), [MultiSelectListPreference](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference), [PreferenceCategory](https://developer.android.com/reference/kotlin/android/preference/PreferenceCategory), [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen), [SwitchPreference](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference) |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) that provides checkbox widget functionality. | | [EditTextPreference](https://developer.android.com/reference/kotlin/android/preference/EditTextPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) that allows for string input. | | [ListPreference](https://developer.android.com/reference/kotlin/android/preference/ListPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) that displays a list of entries as a dialog. | | [MultiSelectListPreference](https://developer.android.com/reference/kotlin/android/preference/MultiSelectListPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) that displays a list of entries as a dialog. | | [PreferenceCategory](https://developer.android.com/reference/kotlin/android/preference/PreferenceCategory) | Used to group [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) objects and provide a disabled title above the group. | | [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen) | Represents a top-level [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) that is the root of a Preference hierarchy. | | [SwitchPreference](https://developer.android.com/reference/kotlin/android/preference/SwitchPreference) | A [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) that provides a two-state toggleable option. | |
+| Known Indirect Subclasses [CheckBoxPreference](../android/preference/CheckBoxPreference.md), [EditTextPreference](../android/preference/EditTextPreference.md), [ListPreference](../android/preference/ListPreference.md), [MultiSelectListPreference](../android/preference/MultiSelectListPreference.md), [PreferenceCategory](../android/preference/PreferenceCategory.md), [PreferenceScreen](../android/preference/PreferenceScreen.md), [SwitchPreference](../android/preference/SwitchPreference.md) |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CheckBoxPreference](../android/preference/CheckBoxPreference.md) | A [Preference](../android/preference/Preference.md) that provides checkbox widget functionality. | | [EditTextPreference](../android/preference/EditTextPreference.md) | A [Preference](../android/preference/Preference.md) that allows for string input. | | [ListPreference](../android/preference/ListPreference.md) | A [Preference](../android/preference/Preference.md) that displays a list of entries as a dialog. | | [MultiSelectListPreference](../android/preference/MultiSelectListPreference.md) | A [Preference](../android/preference/Preference.md) that displays a list of entries as a dialog. | | [PreferenceCategory](../android/preference/PreferenceCategory.md) | Used to group [Preference](../android/preference/Preference.md) objects and provide a disabled title above the group. | | [PreferenceScreen](../android/preference/PreferenceScreen.md) | Represents a top-level [Preference](../android/preference/Preference.md) that is the root of a Preference hierarchy. | | [SwitchPreference](../android/preference/SwitchPreference.md) | A [Preference](../android/preference/Preference.md) that provides a two-state toggleable option. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 29.**
 |
-| Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](https://developer.android.com/reference/androidx/preference/package-summary.html) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
+| Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](../androidx/preference/_package.md) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
 
-Represents the basic Preference UI building block displayed by a [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity) in the form of a [ListView](https://developer.android.com/reference/kotlin/android/widget/ListView.html#). This class provides the [View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be displayed in the activity and associates with a [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) to store/retrieve the preference data.
+Represents the basic Preference UI building block displayed by a [PreferenceActivity](../android/preference/PreferenceActivity.md) in the form of a [ListView](../android/widget/ListView.md). This class provides the [View](../android/view/View.md) to be displayed in the activity and associates with a [SharedPreferences](../android/content/SharedPreferences.md) to store/retrieve the preference data.
 
-When specifying a preference hierarchy in XML, each element can point to a subclass of [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#), similar to the view hierarchy and layouts.
+When specifying a preference hierarchy in XML, each element can point to a subclass of [Preference](../android/preference/Preference.md), similar to the view hierarchy and layouts.
 
-This class contains a`key`that will be used as the key into the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). It is up to the subclass to decide how to store the value.
+This class contains a`key`that will be used as the key into the [SharedPreferences](../android/content/SharedPreferences.md). It is up to the subclass to decide how to store the value.
 |
 | ### Developer Guides
 |
@@ -40,171 +40,171 @@ This class contains a`key`that will be used as the key into the [SharedPreferenc
 
 | Nested classes ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [BaseSavedState](https://developer.android.com/reference/kotlin/android/preference/Preference.BaseSavedState) A base class for managing the instance state of a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#). |
-| abstract | [OnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceChangeListener) Interface definition for a callback to be invoked when the value of this [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) has been changed by the user and is about to be set and/or persisted. |
-| abstract | [OnPreferenceClickListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceClickListener) Interface definition for a callback to be invoked when a [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) is clicked. |
+| open | [BaseSavedState](../android/preference/Preference.BaseSavedState.md) A base class for managing the instance state of a [Preference](../android/preference/Preference.md). |
+| abstract | [OnPreferenceChangeListener](../android/preference/Preference.OnPreferenceChangeListener.md) Interface definition for a callback to be invoked when the value of this [Preference](../android/preference/Preference.md) has been changed by the user and is about to be set and/or persisted. |
+| abstract | [OnPreferenceClickListener](../android/preference/Preference.OnPreferenceClickListener.md) Interface definition for a callback to be invoked when a [Preference](../android/preference/Preference.md) is clicked. |
 | --- | --- |
 
 | XML attributes ||
 |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [`android:defaultValue`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The default value for the preference, which will be set either if persistence is off or persistence is on and the preference is not found in the persistent storage. |
-| [`android:dependency`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The key of another Preference that this Preference will depend on. |
-| [`android:enabled`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | Whether the Preference is enabled. |
+| [`android:defaultValue`](../android/preference/Preference.md) | The default value for the preference, which will be set either if persistence is off or persistence is on and the preference is not found in the persistent storage. |
+| [`android:dependency`](../android/preference/Preference.md) | The key of another Preference that this Preference will depend on. |
+| [`android:enabled`](../android/preference/Preference.md) | Whether the Preference is enabled. |
 | --- | --- |
-| [`android:fragment`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | When used inside of a modern PreferenceActivity, this declares a new PreferenceFragment to be shown when the user selects this item. |
-| [`android:icon`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The optional icon for the preference. |
-| [`android:iconSpaceReserved`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | Whether the space for the preference icon view will be reserved. |
+| [`android:fragment`](../android/preference/Preference.md) | When used inside of a modern PreferenceActivity, this declares a new PreferenceFragment to be shown when the user selects this item. |
+| [`android:icon`](../android/preference/Preference.md) | The optional icon for the preference. |
+| [`android:iconSpaceReserved`](../android/preference/Preference.md) | Whether the space for the preference icon view will be reserved. |
 | --- | --- |
-| [`android:key`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The key to store the Preference value. |
-| [`android:layout`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The layout for the Preference in a PreferenceActivity screen. |
-| [`android:order`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The order for the Preference (lower values are to be ordered first). |
+| [`android:key`](../android/preference/Preference.md) | The key to store the Preference value. |
+| [`android:layout`](../android/preference/Preference.md) | The layout for the Preference in a PreferenceActivity screen. |
+| [`android:order`](../android/preference/Preference.md) | The order for the Preference (lower values are to be ordered first). |
 | --- | --- |
-| [`android:persistent`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | Whether the Preference stores its value to the storage. |
-| [`android:recycleEnabled`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | Whether the preference has enabled to have its view recycled when used in the list view. |
-| [`android:selectable`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | Whether the Preference is selectable. |
+| [`android:persistent`](../android/preference/Preference.md) | Whether the Preference stores its value to the storage. |
+| [`android:recycleEnabled`](../android/preference/Preference.md) | Whether the preference has enabled to have its view recycled when used in the list view. |
+| [`android:selectable`](../android/preference/Preference.md) | Whether the Preference is selectable. |
 | --- | --- |
-| [`android:shouldDisableView`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | Whether the view of this Preference should be disabled when this Preference is disabled. |
-| [`android:singleLineTitle`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | Whether to use single line for the preference title text. |
-| [`android:summary`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The summary for the Preference. |
+| [`android:shouldDisableView`](../android/preference/Preference.md) | Whether the view of this Preference should be disabled when this Preference is disabled. |
+| [`android:singleLineTitle`](../android/preference/Preference.md) | Whether to use single line for the preference title text. |
+| [`android:summary`](../android/preference/Preference.md) | The summary for the Preference. |
 | --- | --- |
-| [`android:title`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The title for the Preference. |
-| [`android:widgetLayout`](https://developer.android.com/reference/kotlin/android/preference/Preference#attr_Preference) | The layout for the controllable widget portion of a Preference. |
+| [`android:title`](../android/preference/Preference.md) | The title for the Preference. |
+| [`android:widgetLayout`](../android/preference/Preference.md) | The layout for the controllable widget portion of a Preference. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_ORDER](https://developer.android.com/reference/kotlin/android/preference/Preference#DEFAULT_ORDER:kotlin.Int) Specify for [setOrder(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#setOrder(kotlin.Int))if a specific order is not required. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_ORDER](../android/preference/Preference.md) Specify for [setOrder(int)](../android/preference/Preference.md))if a specific order is not required. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#Preference(android.content.Context))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`)` Constructor to create a Preference. |
-| [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#Preference(android.content.Context,%20android.util.AttributeSet))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!`)` Constructor that is called when inflating a Preference from XML. |
-| [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#Preference(android.content.Context,%20android.util.AttributeSet,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Perform inflation from XML and apply a class-specific base style. |
-| [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#Preference(android.content.Context,%20android.util.AttributeSet,%20kotlin.Int,%20kotlin.Int))`(`context:` ` [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!`, `attrs:` ` [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defStyleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Perform inflation from XML and apply a class-specific base style. |
+| [Preference](../android/preference/Preference.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Constructor to create a Preference. |
+| [Preference](../android/preference/Preference.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` Constructor that is called when inflating a Preference from XML. |
+| [Preference](../android/preference/Preference.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Perform inflation from XML and apply a class-specific base style. |
+| [Preference](../android/preference/Preference.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defStyleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Perform inflation from XML and apply a class-specific base style. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](https://developer.android.com/reference/kotlin/android/preference/Preference#compareTo(android.preference.Preference))`(`other:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#)!`)` Compares Preference objects based on order (if set), otherwise alphabetically on the titles. |
-| open [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | [getContext](https://developer.android.com/reference/kotlin/android/preference/Preference#getContext())`()` Returns the [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) of this Preference. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDependency](https://developer.android.com/reference/kotlin/android/preference/Preference#getDependency())`()` Returns the key of the dependency on this Preference. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/preference/Preference.md))`(`other:` ` [Preference](../android/preference/Preference.md)!`)` Compares Preference objects based on order (if set), otherwise alphabetically on the titles. |
+| open [Context](../android/content/Context.md)! | [getContext](../android/preference/Preference.md))`()` Returns the [android.content.Context](../android/content/Context.md) of this Preference. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDependency](../android/preference/Preference.md))`()` Returns the key of the dependency on this Preference. |
 | --- | --- |
-| open [SharedPreferences.Editor](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor.html#)! | [getEditor](https://developer.android.com/reference/kotlin/android/preference/Preference#getEditor())`()` Returns an [SharedPreferences.Editor](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor.html#) where this Preference can save its value(s). |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [getExtras](https://developer.android.com/reference/kotlin/android/preference/Preference#getExtras())`()` Return the extras Bundle object associated with this preference, creating a new Bundle if there currently isn't one. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFragment](https://developer.android.com/reference/kotlin/android/preference/Preference#getFragment())`()` Return the fragment class name associated with this Preference. |
+| open [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md)! | [getEditor](../android/preference/Preference.md))`()` Returns an [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md) where this Preference can save its value(s). |
+| open [Bundle](../android/os/Bundle.md)! | [getExtras](../android/preference/Preference.md))`()` Return the extras Bundle object associated with this preference, creating a new Bundle if there currently isn't one. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFragment](../android/preference/Preference.md))`()` Return the fragment class name associated with this Preference. |
 | --- | --- |
-| open [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | [getIcon](https://developer.android.com/reference/kotlin/android/preference/Preference#getIcon())`()` Returns the icon of this Preference. |
-| open [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | [getIntent](https://developer.android.com/reference/kotlin/android/preference/Preference#getIntent())`()` Return the [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) associated with this Preference. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKey](https://developer.android.com/reference/kotlin/android/preference/Preference#getKey())`()` Gets the key for this Preference, which is also the key used for storing values into [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) or [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore). |
+| open [Drawable](../android/graphics/drawable/Drawable.md)! | [getIcon](../android/preference/Preference.md))`()` Returns the icon of this Preference. |
+| open [Intent](../android/content/Intent.md)! | [getIntent](../android/preference/Preference.md))`()` Return the [Intent](../android/content/Intent.md) associated with this Preference. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKey](../android/preference/Preference.md))`()` Gets the key for this Preference, which is also the key used for storing values into [SharedPreferences](../android/content/SharedPreferences.md) or [PreferenceDataStore](../android/preference/PreferenceDataStore.md). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutResource](https://developer.android.com/reference/kotlin/android/preference/Preference#getLayoutResource())`()` Gets the layout resource that will be shown as the [View](https://developer.android.com/reference/kotlin/android/view/View.html#) for this Preference. |
-| open [Preference.OnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceChangeListener)! | [getOnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference#getOnPreferenceChangeListener())`()` Returns the callback to be invoked when this Preference is changed by the user (but before the internal state has been updated). |
-| open [Preference.OnPreferenceClickListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceClickListener)! | [getOnPreferenceClickListener](https://developer.android.com/reference/kotlin/android/preference/Preference#getOnPreferenceClickListener())`()` Returns the callback to be invoked when this Preference is clicked. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutResource](../android/preference/Preference.md))`()` Gets the layout resource that will be shown as the [View](../android/view/View.md) for this Preference. |
+| open [Preference.OnPreferenceChangeListener](../android/preference/Preference.OnPreferenceChangeListener.md)! | [getOnPreferenceChangeListener](../android/preference/Preference.md))`()` Returns the callback to be invoked when this Preference is changed by the user (but before the internal state has been updated). |
+| open [Preference.OnPreferenceClickListener](../android/preference/Preference.OnPreferenceClickListener.md)! | [getOnPreferenceClickListener](../android/preference/Preference.md))`()` Returns the callback to be invoked when this Preference is clicked. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrder](https://developer.android.com/reference/kotlin/android/preference/Preference#getOrder())`()` Gets the order of this Preference with respect to other Preference objects on the same level. |
-| open [PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup)? | [getParent](https://developer.android.com/reference/kotlin/android/preference/Preference#getParent())`()` Returns the [PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup) which is this Preference assigned to or`null`if this preference is not assigned to any group or is a root Preference. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPersistedStringSet](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedStringSet(kotlin.collections.MutableSet))`(`defaultReturnValue:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Attempts to get a persisted set of Strings if this Preference is persistent. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrder](../android/preference/Preference.md))`()` Gets the order of this Preference with respect to other Preference objects on the same level. |
+| open [PreferenceGroup](../android/preference/PreferenceGroup.md)? | [getParent](../android/preference/Preference.md))`()` Returns the [PreferenceGroup](../android/preference/PreferenceGroup.md) which is this Preference assigned to or`null`if this preference is not assigned to any group or is a root Preference. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getPersistedStringSet](../android/preference/Preference.md))`(`defaultReturnValue:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Attempts to get a persisted set of Strings if this Preference is persistent. |
 | --- | --- |
-| open [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore)? | [getPreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/Preference#getPreferenceDataStore())`()` Returns [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) used by this Preference. |
-| open [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager)! | [getPreferenceManager](https://developer.android.com/reference/kotlin/android/preference/Preference#getPreferenceManager())`()` Gets the [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager) that manages this Preference object's tree. |
-| open [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#)! | [getSharedPreferences](https://developer.android.com/reference/kotlin/android/preference/Preference#getSharedPreferences())`()` Returns the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) where this Preference can read its value(s). |
+| open [PreferenceDataStore](../android/preference/PreferenceDataStore.md)? | [getPreferenceDataStore](../android/preference/Preference.md))`()` Returns [PreferenceDataStore](../android/preference/PreferenceDataStore.md) used by this Preference. |
+| open [PreferenceManager](../android/preference/PreferenceManager.md)! | [getPreferenceManager](../android/preference/Preference.md))`()` Gets the [PreferenceManager](../android/preference/PreferenceManager.md) that manages this Preference object's tree. |
+| open [SharedPreferences](../android/content/SharedPreferences.md)! | [getSharedPreferences](../android/preference/Preference.md))`()` Returns the [SharedPreferences](../android/content/SharedPreferences.md) where this Preference can read its value(s). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getShouldDisableView](https://developer.android.com/reference/kotlin/android/preference/Preference#getShouldDisableView())`()` Checks whether this Preference should disable its view when it's action is disabled. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getSummary](https://developer.android.com/reference/kotlin/android/preference/Preference#getSummary())`()` Returns the summary of this Preference. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getTitle](https://developer.android.com/reference/kotlin/android/preference/Preference#getTitle())`()` Returns the title of this Preference. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getShouldDisableView](../android/preference/Preference.md))`()` Checks whether this Preference should disable its view when it's action is disabled. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getSummary](../android/preference/Preference.md))`()` Returns the summary of this Preference. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getTitle](../android/preference/Preference.md))`()` Returns the title of this Preference. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTitleRes](https://developer.android.com/reference/kotlin/android/preference/Preference#getTitleRes())`()` Returns the title resource ID of this Preference. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [getView](https://developer.android.com/reference/kotlin/android/preference/Preference#getView(android.view.View,%20android.view.ViewGroup))`(`convertView:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` Gets the View that will be shown in the [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetLayoutResource](https://developer.android.com/reference/kotlin/android/preference/Preference#getWidgetLayoutResource())`()` Gets the layout resource for the controllable widget portion of this Preference. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTitleRes](../android/preference/Preference.md))`()` Returns the title resource ID of this Preference. |
+| open [View](../android/view/View.md)! | [getView](../android/preference/Preference.md))`(`convertView:` ` [View](../android/view/View.md)!`, `parent:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Gets the View that will be shown in the [PreferenceActivity](../android/preference/PreferenceActivity.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetLayoutResource](../android/preference/Preference.md))`()` Gets the layout resource for the controllable widget portion of this Preference. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasKey](https://developer.android.com/reference/kotlin/android/preference/Preference#hasKey())`()` Checks whether this Preference has a valid key. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](https://developer.android.com/reference/kotlin/android/preference/Preference#isEnabled())`()` Checks whether this Preference should be enabled in the list. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIconSpaceReserved](https://developer.android.com/reference/kotlin/android/preference/Preference#isIconSpaceReserved())`()` Gets whether the space this preference icon view is reserved. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasKey](../android/preference/Preference.md))`()` Checks whether this Preference has a valid key. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/preference/Preference.md))`()` Checks whether this Preference should be enabled in the list. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIconSpaceReserved](../android/preference/Preference.md))`()` Gets whether the space this preference icon view is reserved. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPersistent](https://developer.android.com/reference/kotlin/android/preference/Preference#isPersistent())`()` Checks whether this Preference is persistent. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRecycleEnabled](https://developer.android.com/reference/kotlin/android/preference/Preference#isRecycleEnabled())`()` Checks whether this Preference has enabled to have its view recycled when used in the list view. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSelectable](https://developer.android.com/reference/kotlin/android/preference/Preference#isSelectable())`()` Checks whether this Preference should be selectable in the list. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPersistent](../android/preference/Preference.md))`()` Checks whether this Preference is persistent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRecycleEnabled](../android/preference/Preference.md))`()` Checks whether this Preference has enabled to have its view recycled when used in the list view. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSelectable](../android/preference/Preference.md))`()` Checks whether this Preference should be selectable in the list. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSingleLineTitle](https://developer.android.com/reference/kotlin/android/preference/Preference#isSingleLineTitle())`()` Gets whether the title of this preference is constrained to a single line. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDependencyChange](https://developer.android.com/reference/kotlin/android/preference/Preference#notifyDependencyChange(kotlin.Boolean))`(`disableDependents:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notifies any listening dependents of a change that affects the dependency. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDependencyChanged](https://developer.android.com/reference/kotlin/android/preference/Preference#onDependencyChanged(android.preference.Preference,%20kotlin.Boolean))`(`dependency:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#)!`, `disableDependent:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the dependency changes. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSingleLineTitle](../android/preference/Preference.md))`()` Gets whether the title of this preference is constrained to a single line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDependencyChange](../android/preference/Preference.md))`(`disableDependents:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notifies any listening dependents of a change that affects the dependency. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDependencyChanged](../android/preference/Preference.md))`(`dependency:` ` [Preference](../android/preference/Preference.md)!`, `disableDependent:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the dependency changes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onParentChanged](https://developer.android.com/reference/kotlin/android/preference/Preference#onParentChanged(android.preference.Preference,%20kotlin.Boolean))`(`parent:` ` [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#)!`, `disableChild:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the implicit parent dependency changes. |
-| open [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)! | [peekExtras](https://developer.android.com/reference/kotlin/android/preference/Preference#peekExtras())`()` Return the extras Bundle object associated with this preference, returning`null`if there is not currently one. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistStringSet](https://developer.android.com/reference/kotlin/android/preference/Preference#persistStringSet(kotlin.collections.MutableSet))`(`values:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Attempts to persist a set of Strings if this Preference is persistent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onParentChanged](../android/preference/Preference.md))`(`parent:` ` [Preference](../android/preference/Preference.md)!`, `disableChild:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the implicit parent dependency changes. |
+| open [Bundle](../android/os/Bundle.md)! | [peekExtras](../android/preference/Preference.md))`()` Return the extras Bundle object associated with this preference, returning`null`if there is not currently one. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistStringSet](../android/preference/Preference.md))`(`values:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Attempts to persist a set of Strings if this Preference is persistent. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreHierarchyState](https://developer.android.com/reference/kotlin/android/preference/Preference#restoreHierarchyState(android.os.Bundle))`(`container:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Restore this Preference hierarchy's previously saved state from the given container. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [saveHierarchyState](https://developer.android.com/reference/kotlin/android/preference/Preference#saveHierarchyState(android.os.Bundle))`(`container:` ` [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!`)` Store this Preference hierarchy's frozen state into the given container. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultValue](https://developer.android.com/reference/kotlin/android/preference/Preference#setDefaultValue(kotlin.Any))`(`defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the default value for this Preference, which will be set either if persistence is off or persistence is on and the preference is not found in the persistent storage. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreHierarchyState](../android/preference/Preference.md))`(`container:` ` [Bundle](../android/os/Bundle.md)!`)` Restore this Preference hierarchy's previously saved state from the given container. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [saveHierarchyState](../android/preference/Preference.md))`(`container:` ` [Bundle](../android/os/Bundle.md)!`)` Store this Preference hierarchy's frozen state into the given container. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultValue](../android/preference/Preference.md))`(`defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the default value for this Preference, which will be set either if persistence is off or persistence is on and the preference is not found in the persistent storage. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDependency](https://developer.android.com/reference/kotlin/android/preference/Preference#setDependency(kotlin.String))`(`dependencyKey:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the key of a Preference that this Preference will depend on. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabled](https://developer.android.com/reference/kotlin/android/preference/Preference#setEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference is enabled. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFragment](https://developer.android.com/reference/kotlin/android/preference/Preference#setFragment(kotlin.String))`(`fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the class name of a fragment to be shown when this Preference is clicked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDependency](../android/preference/Preference.md))`(`dependencyKey:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the key of a Preference that this Preference will depend on. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabled](../android/preference/Preference.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference is enabled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFragment](../android/preference/Preference.md))`(`fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the class name of a fragment to be shown when this Preference is clicked. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIcon](https://developer.android.com/reference/kotlin/android/preference/Preference#setIcon(android.graphics.drawable.Drawable))`(`icon:` ` [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!`)` Sets the icon for this Preference with a Drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIcon](https://developer.android.com/reference/kotlin/android/preference/Preference#setIcon(kotlin.Int))`(`iconResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the icon for this Preference with a resource ID. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIconSpaceReserved](https://developer.android.com/reference/kotlin/android/preference/Preference#setIconSpaceReserved(kotlin.Boolean))`(`iconSpaceReserved:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether to reserve the space of this Preference icon view when no icon is provided. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIcon](../android/preference/Preference.md))`(`icon:` ` [Drawable](../android/graphics/drawable/Drawable.md)!`)` Sets the icon for this Preference with a Drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIcon](../android/preference/Preference.md))`(`iconResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the icon for this Preference with a resource ID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIconSpaceReserved](../android/preference/Preference.md))`(`iconSpaceReserved:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether to reserve the space of this Preference icon view when no icon is provided. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntent](https://developer.android.com/reference/kotlin/android/preference/Preference#setIntent(android.content.Intent))`(`intent:` ` [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!`)` Sets an [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) to be used for [Context.startActivity(Intent)](https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent))when this Preference is clicked. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKey](https://developer.android.com/reference/kotlin/android/preference/Preference#setKey(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the key for this Preference, which is used as a key to the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) or [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLayoutResource](https://developer.android.com/reference/kotlin/android/preference/Preference#setLayoutResource(kotlin.Int))`(`layoutResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout resource that is inflated as the [View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be shown for this Preference. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntent](../android/preference/Preference.md))`(`intent:` ` [Intent](../android/content/Intent.md)!`)` Sets an [Intent](../android/content/Intent.md) to be used for [Context.startActivity(Intent)](../android/content/Context.md))when this Preference is clicked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKey](../android/preference/Preference.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the key for this Preference, which is used as a key to the [SharedPreferences](../android/content/SharedPreferences.md) or [PreferenceDataStore](../android/preference/PreferenceDataStore.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLayoutResource](../android/preference/Preference.md))`(`layoutResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout resource that is inflated as the [View](../android/view/View.md) to be shown for this Preference. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference#setOnPreferenceChangeListener(android.preference.Preference.OnPreferenceChangeListener))`(`onPreferenceChangeListener:` ` [Preference.OnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceChangeListener)!`)` Sets the callback to be invoked when this Preference is changed by the user (but before the internal state has been updated). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnPreferenceClickListener](https://developer.android.com/reference/kotlin/android/preference/Preference#setOnPreferenceClickListener(android.preference.Preference.OnPreferenceClickListener))`(`onPreferenceClickListener:` ` [Preference.OnPreferenceClickListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceClickListener)!`)` Sets the callback to be invoked when this Preference is clicked. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrder](https://developer.android.com/reference/kotlin/android/preference/Preference#setOrder(kotlin.Int))`(`order:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the order of this Preference with respect to other Preference objects on the same level. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnPreferenceChangeListener](../android/preference/Preference.md))`(`onPreferenceChangeListener:` ` [Preference.OnPreferenceChangeListener](../android/preference/Preference.OnPreferenceChangeListener.md)!`)` Sets the callback to be invoked when this Preference is changed by the user (but before the internal state has been updated). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnPreferenceClickListener](../android/preference/Preference.md))`(`onPreferenceClickListener:` ` [Preference.OnPreferenceClickListener](../android/preference/Preference.OnPreferenceClickListener.md)!`)` Sets the callback to be invoked when this Preference is clicked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrder](../android/preference/Preference.md))`(`order:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the order of this Preference with respect to other Preference objects on the same level. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPersistent](https://developer.android.com/reference/kotlin/android/preference/Preference#setPersistent(kotlin.Boolean))`(`persistent:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference is persistent. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/Preference#setPreferenceDataStore(android.preference.PreferenceDataStore))`(`dataStore:` ` [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore)!`)` Sets a [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) to be used by this Preference instead of using [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRecycleEnabled](https://developer.android.com/reference/kotlin/android/preference/Preference#setRecycleEnabled(kotlin.Boolean))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference has enabled to have its view recycled when used in the list view. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPersistent](../android/preference/Preference.md))`(`persistent:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference is persistent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreferenceDataStore](../android/preference/Preference.md))`(`dataStore:` ` [PreferenceDataStore](../android/preference/PreferenceDataStore.md)!`)` Sets a [PreferenceDataStore](../android/preference/PreferenceDataStore.md) to be used by this Preference instead of using [android.content.SharedPreferences](../android/content/SharedPreferences.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRecycleEnabled](../android/preference/Preference.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference has enabled to have its view recycled when used in the list view. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelectable](https://developer.android.com/reference/kotlin/android/preference/Preference#setSelectable(kotlin.Boolean))`(`selectable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference is selectable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShouldDisableView](https://developer.android.com/reference/kotlin/android/preference/Preference#setShouldDisableView(kotlin.Boolean))`(`shouldDisableView:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference should disable its view when it gets disabled. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSingleLineTitle](https://developer.android.com/reference/kotlin/android/preference/Preference#setSingleLineTitle(kotlin.Boolean))`(`singleLineTitle:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether to constrain the title of this Preference to a single line instead of letting it wrap onto multiple lines. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelectable](../android/preference/Preference.md))`(`selectable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference is selectable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShouldDisableView](../android/preference/Preference.md))`(`shouldDisableView:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this Preference should disable its view when it gets disabled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSingleLineTitle](../android/preference/Preference.md))`(`singleLineTitle:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether to constrain the title of this Preference to a single line instead of letting it wrap onto multiple lines. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummary](https://developer.android.com/reference/kotlin/android/preference/Preference#setSummary(kotlin.Int))`(`summaryResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the summary for this Preference with a resource ID. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummary](https://developer.android.com/reference/kotlin/android/preference/Preference#setSummary(kotlin.CharSequence))`(`summary:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the summary for this Preference with a CharSequence. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTitle](https://developer.android.com/reference/kotlin/android/preference/Preference#setTitle(kotlin.Int))`(`titleResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the title for this Preference with a resource ID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummary](../android/preference/Preference.md))`(`summaryResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the summary for this Preference with a resource ID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSummary](../android/preference/Preference.md))`(`summary:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the summary for this Preference with a CharSequence. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTitle](../android/preference/Preference.md))`(`titleResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the title for this Preference with a resource ID. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTitle](https://developer.android.com/reference/kotlin/android/preference/Preference#setTitle(kotlin.CharSequence))`(`title:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the title for this Preference with a CharSequence. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWidgetLayoutResource](https://developer.android.com/reference/kotlin/android/preference/Preference#setWidgetLayoutResource(kotlin.Int))`(`widgetLayoutResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout for the controllable widget portion of this Preference. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldCommit](https://developer.android.com/reference/kotlin/android/preference/Preference#shouldCommit())`()` Returns whether the [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) should commit its saved value(s) in [getEditor()](https://developer.android.com/reference/kotlin/android/preference/Preference#getEditor()). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTitle](../android/preference/Preference.md))`(`title:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the title for this Preference with a CharSequence. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWidgetLayoutResource](../android/preference/Preference.md))`(`widgetLayoutResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the layout for the controllable widget portion of this Preference. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldCommit](../android/preference/Preference.md))`()` Returns whether the [Preference](../android/preference/Preference.md) should commit its saved value(s) in [getEditor()](../android/preference/Preference.md)). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldDisableDependents](https://developer.android.com/reference/kotlin/android/preference/Preference#shouldDisableDependents())`()` Checks whether this preference's dependents should currently be disabled. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/preference/Preference#toString())`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldDisableDependents](../android/preference/Preference.md))`()` Checks whether this preference's dependents should currently be disabled. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/preference/Preference.md))`()` <br /> |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [callChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference#callChangeListener(kotlin.Any))`(`newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Call this method after the user changes the preference, but before the internal state is set. |
-| open [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#)! | [findPreferenceInHierarchy](https://developer.android.com/reference/kotlin/android/preference/Preference#findPreferenceInHierarchy(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds a Preference in this hierarchy (the whole thing, even above/below your [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen) screen break) with the given key. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPersistedBoolean](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedBoolean(kotlin.Boolean))`(`defaultReturnValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to get a persisted boolean if this Preference is persistent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [callChangeListener](../android/preference/Preference.md))`(`newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Call this method after the user changes the preference, but before the internal state is set. |
+| open [Preference](../android/preference/Preference.md)! | [findPreferenceInHierarchy](../android/preference/Preference.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds a Preference in this hierarchy (the whole thing, even above/below your [PreferenceScreen](../android/preference/PreferenceScreen.md) screen break) with the given key. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPersistedBoolean](../android/preference/Preference.md))`(`defaultReturnValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to get a persisted boolean if this Preference is persistent. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPersistedFloat](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedFloat(kotlin.Float))`(`defaultReturnValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Attempts to get a persisted float if this Preference is persistent. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPersistedInt](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedInt(kotlin.Int))`(`defaultReturnValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to get a persisted int if this Preference is persistent. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPersistedLong](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedLong(kotlin.Long))`(`defaultReturnValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Attempts to get a persisted long if this Preference is persistent. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPersistedFloat](../android/preference/Preference.md))`(`defaultReturnValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Attempts to get a persisted float if this Preference is persistent. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPersistedInt](../android/preference/Preference.md))`(`defaultReturnValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to get a persisted int if this Preference is persistent. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPersistedLong](../android/preference/Preference.md))`(`defaultReturnValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Attempts to get a persisted long if this Preference is persistent. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPersistedString](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedString(kotlin.String))`(`defaultReturnValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to get a persisted String if this Preference is persistent. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChanged](https://developer.android.com/reference/kotlin/android/preference/Preference#notifyChanged())`()` Should be called when the data of this [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) has changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyHierarchyChanged](https://developer.android.com/reference/kotlin/android/preference/Preference#notifyHierarchyChanged())`()` Should be called when a Preference has been added/removed from this group, or the ordering should be re-evaluated. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPersistedString](../android/preference/Preference.md))`(`defaultReturnValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to get a persisted String if this Preference is persistent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChanged](../android/preference/Preference.md))`()` Should be called when the data of this [Preference](../android/preference/Preference.md) has changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyHierarchyChanged](../android/preference/Preference.md))`()` Should be called when a Preference has been added/removed from this group, or the ordering should be re-evaluated. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAttachedToActivity](https://developer.android.com/reference/kotlin/android/preference/Preference#onAttachedToActivity())`()` Called when the Preference hierarchy has been attached to the [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAttachedToHierarchy](https://developer.android.com/reference/kotlin/android/preference/Preference#onAttachedToHierarchy(android.preference.PreferenceManager))`(`preferenceManager:` ` [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager)!`)` Called when this Preference has been attached to a Preference hierarchy. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBindView](https://developer.android.com/reference/kotlin/android/preference/Preference#onBindView(android.view.View))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`)` Binds the created View to the data for this Preference. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAttachedToActivity](../android/preference/Preference.md))`()` Called when the Preference hierarchy has been attached to the [PreferenceActivity](../android/preference/PreferenceActivity.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAttachedToHierarchy](../android/preference/Preference.md))`(`preferenceManager:` ` [PreferenceManager](../android/preference/PreferenceManager.md)!`)` Called when this Preference has been attached to a Preference hierarchy. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBindView](../android/preference/Preference.md))`(`view:` ` [View](../android/view/View.md)!`)` Binds the created View to the data for this Preference. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](https://developer.android.com/reference/kotlin/android/preference/Preference#onClick())`()` Processes a click on the preference. |
-| open [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | [onCreateView](https://developer.android.com/reference/kotlin/android/preference/Preference#onCreateView(android.view.ViewGroup))`(`parent:` ` [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!`)` Creates the View to be shown for this Preference in the [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity). |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [onGetDefaultValue](https://developer.android.com/reference/kotlin/android/preference/Preference#onGetDefaultValue(android.content.res.TypedArray,%20kotlin.Int))`(`a:` ` [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a Preference is being inflated and the default value attribute needs to be read. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](../android/preference/Preference.md))`()` Processes a click on the preference. |
+| open [View](../android/view/View.md)! | [onCreateView](../android/preference/Preference.md))`(`parent:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Creates the View to be shown for this Preference in the [PreferenceActivity](../android/preference/PreferenceActivity.md). |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [onGetDefaultValue](../android/preference/Preference.md))`(`a:` ` [TypedArray](../android/content/res/TypedArray.md)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a Preference is being inflated and the default value attribute needs to be read. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareForRemoval](https://developer.android.com/reference/kotlin/android/preference/Preference#onPrepareForRemoval())`()` Called when this Preference is being removed from the hierarchy. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onRestoreInstanceState(android.os.Parcelable))`(`state:` ` [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!`)` Hook allowing a Preference to re-apply a representation of its internal state that had previously been generated by [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onSaveInstanceState()). |
-| open [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onSaveInstanceState())`()` Hook allowing a Preference to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepareForRemoval](../android/preference/Preference.md))`()` Called when this Preference is being removed from the hierarchy. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRestoreInstanceState](../android/preference/Preference.md))`(`state:` ` [Parcelable](../android/os/Parcelable.md)!`)` Hook allowing a Preference to re-apply a representation of its internal state that had previously been generated by [onSaveInstanceState](../android/preference/Preference.md)). |
+| open [Parcelable](../android/os/Parcelable.md)! | [onSaveInstanceState](../android/preference/Preference.md))`()` Hook allowing a Preference to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetInitialValue](https://developer.android.com/reference/kotlin/android/preference/Preference#onSetInitialValue(kotlin.Boolean,%20kotlin.Any))`(`restorePersistedValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Implement this to set the initial value of the Preference. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistBoolean](https://developer.android.com/reference/kotlin/android/preference/Preference#persistBoolean(kotlin.Boolean))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to persist a boolean if this Preference is persistent. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistFloat](https://developer.android.com/reference/kotlin/android/preference/Preference#persistFloat(kotlin.Float))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Attempts to persist a long if this Preference is persistent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSetInitialValue](../android/preference/Preference.md))`(`restorePersistedValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `defaultValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Implement this to set the initial value of the Preference. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistBoolean](../android/preference/Preference.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to persist a boolean if this Preference is persistent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistFloat](../android/preference/Preference.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Attempts to persist a long if this Preference is persistent. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistInt](https://developer.android.com/reference/kotlin/android/preference/Preference#persistInt(kotlin.Int))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to persist an int if this Preference is persistent. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistLong](https://developer.android.com/reference/kotlin/android/preference/Preference#persistLong(kotlin.Long))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Attempts to persist a long if this Preference is persistent. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistString](https://developer.android.com/reference/kotlin/android/preference/Preference#persistString(kotlin.String))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to persist a String if this Preference is persistent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistInt](../android/preference/Preference.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to persist an int if this Preference is persistent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistLong](../android/preference/Preference.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Attempts to persist a long if this Preference is persistent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [persistString](../android/preference/Preference.md))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to persist a String if this Preference is persistent. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldPersist](https://developer.android.com/reference/kotlin/android/preference/Preference#shouldPersist())`()` Checks whether, at the given time this method is called, this Preference should store/restore its value(s) into the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) or into [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) if assigned. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldPersist](../android/preference/Preference.md))`()` Checks whether, at the given time this method is called, this Preference should store/restore its value(s) into the [SharedPreferences](../android/content/SharedPreferences.md) or into [PreferenceDataStore](../android/preference/PreferenceDataStore.md) if assigned. |
 
 ## XML attributes
 
@@ -381,7 +381,7 @@ static val DEFAULT_ORDER: Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Specify for [setOrder(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#setOrder(kotlin.Int))if a specific order is not required. 
+Specify for [setOrder(int)](../android/preference/Preference.md))if a specific order is not required. 
 
  Value: 2147483647
 
@@ -399,7 +399,7 @@ Constructor to create a Preference.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The Context in which to store Preference values. |
+| `context` | [Context](../android/content/Context.md)!:The Context in which to store Preference values. |
 
 ### Preference
 
@@ -415,12 +415,12 @@ Constructor that is called when inflating a Preference from XML. This is called 
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The Context this is associated with, through which it can access the current theme, resources, [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#), etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!:The attributes of the XML tag that is inflating the preference. |
+| `context` | [Context](../android/content/Context.md)!:The Context this is associated with, through which it can access the current theme, resources, [SharedPreferences](../android/content/SharedPreferences.md), etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!:The attributes of the XML tag that is inflating the preference. |
 
 **See Also**
 
-- [#Preference(Context, AttributeSet, int)](https://developer.android.com/reference/kotlin/android/preference/Preference#Preference(android.content.Context,%20android.util.AttributeSet,%20kotlin.Int)) 
+- [#Preference(Context, AttributeSet, int)](../android/preference/Preference.md)) 
 
 ### Preference
 
@@ -433,18 +433,18 @@ Preference(
     defStyleAttr: Int)
 ```
 
-Perform inflation from XML and apply a class-specific base style. This constructor of Preference allows subclasses to use their own base style when they are inflating. For example, a [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference) constructor calls this version of the super class constructor and supplies`android.R.attr.checkBoxPreferenceStyle`for defStyleAttr. This allows the theme's checkbox preference style to modify all of the base preference attributes as well as the [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference) class's attributes.
+Perform inflation from XML and apply a class-specific base style. This constructor of Preference allows subclasses to use their own base style when they are inflating. For example, a [CheckBoxPreference](../android/preference/CheckBoxPreference.md) constructor calls this version of the super class constructor and supplies`android.R.attr.checkBoxPreferenceStyle`for defStyleAttr. This allows the theme's checkbox preference style to modify all of the base preference attributes as well as the [CheckBoxPreference](../android/preference/CheckBoxPreference.md) class's attributes.
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The Context this is associated with, through which it can access the current theme, resources, [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#), etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!:The attributes of the XML tag that is inflating the preference. |
+| `context` | [Context](../android/content/Context.md)!:The Context this is associated with, through which it can access the current theme, resources, [SharedPreferences](../android/content/SharedPreferences.md), etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!:The attributes of the XML tag that is inflating the preference. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 
 **See Also**
 
-- [#Preference(Context, AttributeSet)](https://developer.android.com/reference/kotlin/android/preference/Preference#Preference(android.content.Context,%20android.util.AttributeSet)) 
+- [#Preference(Context, AttributeSet)](../android/preference/Preference.md)) 
 
 ### Preference
 
@@ -458,19 +458,19 @@ Preference(
     defStyleRes: Int)
 ```
 
-Perform inflation from XML and apply a class-specific base style. This constructor of Preference allows subclasses to use their own base style when they are inflating. For example, a [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference) constructor calls this version of the super class constructor and supplies`android.R.attr.checkBoxPreferenceStyle`for defStyleAttr. This allows the theme's checkbox preference style to modify all of the base preference attributes as well as the [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference) class's attributes.
+Perform inflation from XML and apply a class-specific base style. This constructor of Preference allows subclasses to use their own base style when they are inflating. For example, a [CheckBoxPreference](../android/preference/CheckBoxPreference.md) constructor calls this version of the super class constructor and supplies`android.R.attr.checkBoxPreferenceStyle`for defStyleAttr. This allows the theme's checkbox preference style to modify all of the base preference attributes as well as the [CheckBoxPreference](../android/preference/CheckBoxPreference.md) class's attributes.
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)!:The Context this is associated with, through which it can access the current theme, resources, [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#), etc. |
-| `attrs` | [AttributeSet](https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)!:The attributes of the XML tag that is inflating the preference. |
+| `context` | [Context](../android/content/Context.md)!:The Context this is associated with, through which it can access the current theme, resources, [SharedPreferences](../android/content/SharedPreferences.md), etc. |
+| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!:The attributes of the XML tag that is inflating the preference. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
 
 **See Also**
 
-- [#Preference(Context, AttributeSet)](https://developer.android.com/reference/kotlin/android/preference/Preference#Preference(android.content.Context,%20android.util.AttributeSet))
+- [#Preference(Context, AttributeSet)](../android/preference/Preference.md))
 
 ## Public methods
 
@@ -510,11 +510,11 @@ open fun getContext(): Context!
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the [android.content.Context](https://developer.android.com/reference/kotlin/android/content/Context.html#) of this Preference. Each Preference in a Preference hierarchy can be from different Context (for example, if multiple activities provide preferences into a single [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity)). This Context will be used to save the Preference values.
+Returns the [android.content.Context](../android/content/Context.md) of this Preference. Each Preference in a Preference hierarchy can be from different Context (for example, if multiple activities provide preferences into a single [PreferenceActivity](../android/preference/PreferenceActivity.md)). This Context will be used to save the Preference values.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------|
-| [Context](https://developer.android.com/reference/kotlin/android/content/Context.html#)! | The Context of this Preference. |
+| [Context](../android/content/Context.md)! | The Context of this Preference. |
 
 ### getDependency
 
@@ -534,7 +534,7 @@ Returns the key of the dependency on this Preference.
 
 **See Also**
 
-- [#setDependency(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#setDependency(kotlin.String)) 
+- [#setDependency(String)](../android/preference/Preference.md)) 
 
 ### getEditor
 
@@ -546,19 +546,19 @@ open fun getEditor(): SharedPreferences.Editor!
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns an [SharedPreferences.Editor](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor.html#) where this Preference can save its value(s). Usually it's easier to use one of the helper save methods: [persistBoolean(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistBoolean(kotlin.Boolean)), [persistFloat(float)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistFloat(kotlin.Float)), [persistInt(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistInt(kotlin.Int)), [persistLong(long)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistLong(kotlin.Long)), [persistString(java.lang.String)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistString(kotlin.String)). To read values, see [getSharedPreferences()](https://developer.android.com/reference/kotlin/android/preference/Preference#getSharedPreferences()). If [shouldCommit()](https://developer.android.com/reference/kotlin/android/preference/Preference#shouldCommit())returns true, it is this Preference's responsibility to commit.
+Returns an [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md) where this Preference can save its value(s). Usually it's easier to use one of the helper save methods: [persistBoolean(boolean)](../android/preference/Preference.md)), [persistFloat(float)](../android/preference/Preference.md)), [persistInt(int)](../android/preference/Preference.md)), [persistLong(long)](../android/preference/Preference.md)), [persistString(java.lang.String)](../android/preference/Preference.md)). To read values, see [getSharedPreferences()](../android/preference/Preference.md)). If [shouldCommit()](../android/preference/Preference.md))returns true, it is this Preference's responsibility to commit.
 
 In some cases, writes to this will not be committed right away and hence not show up in the SharedPreferences, this is intended behavior to improve performance.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SharedPreferences.Editor](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor.html#)! | a [SharedPreferences.Editor](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor.html#) where this preference saves its value(s). If this preference isn't attached to a Preference hierarchy or if a [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) has been set, this method returns`null`. |
+| [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md)! | a [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md) where this preference saves its value(s). If this preference isn't attached to a Preference hierarchy or if a [PreferenceDataStore](../android/preference/PreferenceDataStore.md) has been set, this method returns`null`. |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/preference/Preference#shouldCommit()>
 - <https://developer.android.com/reference/kotlin/android/preference/Preference#getSharedPreferences()>
-- [#setPreferenceDataStore(PreferenceDataStore)](https://developer.android.com/reference/kotlin/android/preference/Preference#setPreferenceDataStore(android.preference.PreferenceDataStore)) 
+- [#setPreferenceDataStore(PreferenceDataStore)](../android/preference/Preference.md)) 
 
 ### getExtras
 
@@ -588,7 +588,7 @@ Return the fragment class name associated with this Preference.
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | The fragment class name last set via [setFragment](https://developer.android.com/reference/kotlin/android/preference/Preference#setFragment(kotlin.String))or XML. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | The fragment class name last set via [setFragment](../android/preference/Preference.md))or XML. |
 
 ### getIcon
 
@@ -605,11 +605,11 @@ Returns the icon of this Preference.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|----------|
-| [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)! | the icon |
+| [Drawable](../android/graphics/drawable/Drawable.md)! | the icon |
 
 **See Also**
 
-- [#setIcon(Drawable)](https://developer.android.com/reference/kotlin/android/preference/Preference#setIcon(android.graphics.drawable.Drawable)) 
+- [#setIcon(Drawable)](../android/preference/Preference.md)) 
 
 ### getIntent
 
@@ -621,11 +621,11 @@ open fun getIntent(): Intent!
 
 **Deprecated:** *Deprecated in Java.*
 
-Return the [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) associated with this Preference.
+Return the [Intent](../android/content/Intent.md) associated with this Preference.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)! | The [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) last set via [setIntent(android.content.Intent)](https://developer.android.com/reference/kotlin/android/preference/Preference#setIntent(android.content.Intent))or XML. |
+| [Intent](../android/content/Intent.md)! | The [Intent](../android/content/Intent.md) last set via [setIntent(android.content.Intent)](../android/preference/Preference.md))or XML. |
 
 ### getKey
 
@@ -637,7 +637,7 @@ open fun getKey(): String!
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets the key for this Preference, which is also the key used for storing values into [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) or [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore).
+Gets the key for this Preference, which is also the key used for storing values into [SharedPreferences](../android/content/SharedPreferences.md) or [PreferenceDataStore](../android/preference/PreferenceDataStore.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------|
@@ -653,7 +653,7 @@ open fun getLayoutResource(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets the layout resource that will be shown as the [View](https://developer.android.com/reference/kotlin/android/view/View.html#) for this Preference.
+Gets the layout resource that will be shown as the [View](../android/view/View.md) for this Preference.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------|
@@ -673,7 +673,7 @@ Returns the callback to be invoked when this Preference is changed by the user (
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Preference.OnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceChangeListener)! | The callback to be invoked. |
+| [Preference.OnPreferenceChangeListener](../android/preference/Preference.OnPreferenceChangeListener.md)! | The callback to be invoked. |
 
 ### getOnPreferenceClickListener
 
@@ -689,7 +689,7 @@ Returns the callback to be invoked when this Preference is clicked.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Preference.OnPreferenceClickListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceClickListener)! | The callback to be invoked. |
+| [Preference.OnPreferenceClickListener](../android/preference/Preference.OnPreferenceClickListener.md)! | The callback to be invoked. |
 
 ### getOrder
 
@@ -709,7 +709,7 @@ Gets the order of this Preference with respect to other Preference objects on th
 
 **See Also**
 
-- [#setOrder(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#setOrder(kotlin.Int)) 
+- [#setOrder(int)](../android/preference/Preference.md)) 
 
 ### getParent
 
@@ -722,11 +722,11 @@ open fun getParent(): PreferenceGroup?
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the [PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup) which is this Preference assigned to or`null`if this preference is not assigned to any group or is a root Preference.
+Returns the [PreferenceGroup](../android/preference/PreferenceGroup.md) which is this Preference assigned to or`null`if this preference is not assigned to any group or is a root Preference.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [PreferenceGroup](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup)? | the parent PreferenceGroup or`null`if not attached to any |
+| [PreferenceGroup](../android/preference/PreferenceGroup.md)? | the parent PreferenceGroup or`null`if not attached to any |
 
 ### getPersistedStringSet
 
@@ -751,7 +751,7 @@ Attempts to get a persisted set of Strings if this Preference is persistent.
 
 **See Also**
 
-- [#persistStringSet(Set)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistStringSet(kotlin.collections.MutableSet)) 
+- [#persistStringSet(Set)](../android/preference/Preference.md)) 
 
 ### getPreferenceDataStore
 
@@ -764,13 +764,13 @@ open fun getPreferenceDataStore(): PreferenceDataStore?
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) used by this Preference. Returns`null`if [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) is used instead.
+Returns [PreferenceDataStore](../android/preference/PreferenceDataStore.md) used by this Preference. Returns`null`if [android.content.SharedPreferences](../android/content/SharedPreferences.md) is used instead.
 
-By default preferences always use [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). To make this preference to use the [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) you need to assign your implementation to the Preference itself via [setPreferenceDataStore(android.preference.PreferenceDataStore)](https://developer.android.com/reference/kotlin/android/preference/Preference#setPreferenceDataStore(android.preference.PreferenceDataStore))or to its [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager) via [PreferenceManager.setPreferenceDataStore(PreferenceDataStore)](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager#setPreferenceDataStore(android.preference.PreferenceDataStore)).
+By default preferences always use [android.content.SharedPreferences](../android/content/SharedPreferences.md). To make this preference to use the [PreferenceDataStore](../android/preference/PreferenceDataStore.md) you need to assign your implementation to the Preference itself via [setPreferenceDataStore(android.preference.PreferenceDataStore)](../android/preference/Preference.md))or to its [PreferenceManager](../android/preference/PreferenceManager.md) via [PreferenceManager.setPreferenceDataStore(PreferenceDataStore)](../android/preference/PreferenceManager.md)).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore)? | The [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) used by this Preference or`null`if none. |
+| [PreferenceDataStore](../android/preference/PreferenceDataStore.md)? | The [PreferenceDataStore](../android/preference/PreferenceDataStore.md) used by this Preference or`null`if none. |
 
 ### getPreferenceManager
 
@@ -782,11 +782,11 @@ open fun getPreferenceManager(): PreferenceManager!
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets the [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager) that manages this Preference object's tree.
+Gets the [PreferenceManager](../android/preference/PreferenceManager.md) that manages this Preference object's tree.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager)! | The [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager). |
+| [PreferenceManager](../android/preference/PreferenceManager.md)! | The [PreferenceManager](../android/preference/PreferenceManager.md). |
 
 ### getSharedPreferences
 
@@ -798,18 +798,18 @@ open fun getSharedPreferences(): SharedPreferences!
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) where this Preference can read its value(s). Usually, it's easier to use one of the helper read methods: [getPersistedBoolean(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedBoolean(kotlin.Boolean)), [getPersistedFloat(float)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedFloat(kotlin.Float)), [getPersistedInt(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedInt(kotlin.Int)), [getPersistedLong(long)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedLong(kotlin.Long)), [getPersistedString(java.lang.String)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedString(kotlin.String)). To save values, see [getEditor()](https://developer.android.com/reference/kotlin/android/preference/Preference#getEditor()).
+Returns the [SharedPreferences](../android/content/SharedPreferences.md) where this Preference can read its value(s). Usually, it's easier to use one of the helper read methods: [getPersistedBoolean(boolean)](../android/preference/Preference.md)), [getPersistedFloat(float)](../android/preference/Preference.md)), [getPersistedInt(int)](../android/preference/Preference.md)), [getPersistedLong(long)](../android/preference/Preference.md)), [getPersistedString(java.lang.String)](../android/preference/Preference.md)). To save values, see [getEditor()](../android/preference/Preference.md)).
 
-In some cases, writes to the [getEditor()](https://developer.android.com/reference/kotlin/android/preference/Preference#getEditor())will not be committed right away and hence not show up in the returned [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#), this is intended behavior to improve performance.
+In some cases, writes to the [getEditor()](../android/preference/Preference.md))will not be committed right away and hence not show up in the returned [SharedPreferences](../android/content/SharedPreferences.md), this is intended behavior to improve performance.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#)! | the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) where this Preference reads its value(s). If this preference isn't attached to a Preference hierarchy or if a [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) has been set, this method returns`null`. |
+| [SharedPreferences](../android/content/SharedPreferences.md)! | the [SharedPreferences](../android/content/SharedPreferences.md) where this Preference reads its value(s). If this preference isn't attached to a Preference hierarchy or if a [PreferenceDataStore](../android/preference/PreferenceDataStore.md) has been set, this method returns`null`. |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/preference/Preference#getEditor()>
-- [#setPreferenceDataStore(PreferenceDataStore)](https://developer.android.com/reference/kotlin/android/preference/Preference#setPreferenceDataStore(android.preference.PreferenceDataStore)) 
+- [#setPreferenceDataStore(PreferenceDataStore)](../android/preference/Preference.md)) 
 
 ### getShouldDisableView
 
@@ -829,7 +829,7 @@ Checks whether this Preference should disable its view when it's action is disab
 
 **See Also**
 
-- [#setShouldDisableView(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#setShouldDisableView(kotlin.Boolean)) 
+- [#setShouldDisableView(boolean)](../android/preference/Preference.md)) 
 
 ### getSummary
 
@@ -849,7 +849,7 @@ Returns the summary of this Preference.
 
 **See Also**
 
-- [#setSummary(CharSequence)](https://developer.android.com/reference/kotlin/android/preference/Preference#setSummary(kotlin.CharSequence)) 
+- [#setSummary(CharSequence)](../android/preference/Preference.md)) 
 
 ### getTitle
 
@@ -869,7 +869,7 @@ Returns the title of this Preference.
 
 **See Also**
 
-- [#setTitle(CharSequence)](https://developer.android.com/reference/kotlin/android/preference/Preference#setTitle(kotlin.CharSequence)) 
+- [#setTitle(CharSequence)](../android/preference/Preference.md)) 
 
 ### getTitleRes
 
@@ -890,7 +890,7 @@ Returns the title resource ID of this Preference. If the title did not come from
 
 **See Also**
 
-- [#setTitle(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#setTitle(kotlin.Int)) 
+- [#setTitle(int)](../android/preference/Preference.md)) 
 
 ### getView
 
@@ -905,21 +905,21 @@ open fun getView(
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets the View that will be shown in the [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity).
+Gets the View that will be shown in the [PreferenceActivity](../android/preference/PreferenceActivity.md).
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `convertView` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The old View to reuse, if possible. Note: You should check that this View is non-null and of an appropriate type before using. If it is not possible to convert this View to display the correct data, this method can create a new View. |
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The parent that this View will eventually be attached to. |
+| `convertView` | [View](../android/view/View.md)!:The old View to reuse, if possible. Note: You should check that this View is non-null and of an appropriate type before using. If it is not possible to convert this View to display the correct data, this method can create a new View. |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!:The parent that this View will eventually be attached to. |
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | Returns the same Preference object, for chaining multiple calls into a single statement. |
+| [View](../android/view/View.md)! | Returns the same Preference object, for chaining multiple calls into a single statement. |
 
 **See Also**
 
-- [#onCreateView(ViewGroup)](https://developer.android.com/reference/kotlin/android/preference/Preference#onCreateView(android.view.ViewGroup))
-- [#onBindView(View)](https://developer.android.com/reference/kotlin/android/preference/Preference#onBindView(android.view.View)) 
+- [#onCreateView(ViewGroup)](../android/preference/Preference.md))
+- [#onBindView(View)](../android/preference/Preference.md)) 
 
 ### getWidgetLayoutResource
 
@@ -988,7 +988,7 @@ Gets whether the space this preference icon view is reserved.
 
 **See Also**
 
-- [#setIconSpaceReserved(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#setIconSpaceReserved(kotlin.Boolean)) 
+- [#setIconSpaceReserved(boolean)](../android/preference/Preference.md)) 
 
 ### isPersistent
 
@@ -1000,7 +1000,7 @@ open fun isPersistent(): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether this Preference is persistent. If it is, it stores its value(s) into the persistent [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) storage by default or into [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) if assigned.
+Checks whether this Preference is persistent. If it is, it stores its value(s) into the persistent [SharedPreferences](../android/content/SharedPreferences.md) storage by default or into [PreferenceDataStore](../android/preference/PreferenceDataStore.md) if assigned.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------|
@@ -1025,7 +1025,7 @@ Checks whether this Preference has enabled to have its view recycled when used i
 
 **See Also**
 
-- [#setRecycleEnabled(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#setRecycleEnabled(kotlin.Boolean)) 
+- [#setRecycleEnabled(boolean)](../android/preference/Preference.md)) 
 
 ### isSelectable
 
@@ -1062,7 +1062,7 @@ Gets whether the title of this preference is constrained to a single line.
 
 **See Also**
 
-- [#setSingleLineTitle(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#setSingleLineTitle(kotlin.Boolean)) 
+- [#setSingleLineTitle(boolean)](../android/preference/Preference.md)) 
 
 ### notifyDependencyChange
 
@@ -1097,7 +1097,7 @@ Called when the dependency changes.
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `dependency` | [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#)!:The Preference that this Preference depends on. |
+| `dependency` | [Preference](../android/preference/Preference.md)!:The Preference that this Preference depends on. |
 | `disableDependent` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set true to disable this Preference. |
 
 ### onParentChanged
@@ -1118,7 +1118,7 @@ Called when the implicit parent dependency changes.
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#)!:The Preference that this Preference depends on. |
+| `parent` | [Preference](../android/preference/Preference.md)!:The Preference that this Preference depends on. |
 | `disableChild` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Set true to disable this Preference. |
 
 ### peekExtras
@@ -1157,7 +1157,7 @@ Attempts to persist a set of Strings if this Preference is persistent.
 
 **See Also**
 
-- [#getPersistedStringSet(Set)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedStringSet(kotlin.collections.MutableSet)) 
+- [#getPersistedStringSet(Set)](../android/preference/Preference.md)) 
 
 ### restoreHierarchyState
 
@@ -1173,12 +1173,12 @@ Restore this Preference hierarchy's previously saved state from the given contai
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `container` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:The Bundle that holds the previously saved state. |
+| `container` | [Bundle](../android/os/Bundle.md)!:The Bundle that holds the previously saved state. |
 
 **See Also**
 
-- [#saveHierarchyState](https://developer.android.com/reference/kotlin/android/preference/Preference#saveHierarchyState(android.os.Bundle))
-- [#onRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onRestoreInstanceState(android.os.Parcelable)) 
+- [#saveHierarchyState](../android/preference/Preference.md))
+- [#onRestoreInstanceState](../android/preference/Preference.md)) 
 
 ### saveHierarchyState
 
@@ -1194,12 +1194,12 @@ Store this Preference hierarchy's frozen state into the given container.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `container` | [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html#)!:The Bundle in which to save the instance of this Preference. |
+| `container` | [Bundle](../android/os/Bundle.md)!:The Bundle in which to save the instance of this Preference. |
 
 **See Also**
 
-- [#restoreHierarchyState](https://developer.android.com/reference/kotlin/android/preference/Preference#restoreHierarchyState(android.os.Bundle))
-- [#onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onSaveInstanceState()) 
+- [#restoreHierarchyState](../android/preference/Preference.md))
+- [#onSaveInstanceState](../android/preference/Preference.md)) 
 
 ### setDefaultValue
 
@@ -1277,11 +1277,11 @@ open fun setIcon(icon: Drawable!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the icon for this Preference with a Drawable. This icon will be placed into the ID [android.R.id#icon](https://developer.android.com/reference/kotlin/android/R.id.html#icon:kotlin.Int) within the View created by [onCreateView(android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/preference/Preference#onCreateView(android.view.ViewGroup)).
+Sets the icon for this Preference with a Drawable. This icon will be placed into the ID [android.R.id#icon](../android/R.id.md) within the View created by [onCreateView(android.view.ViewGroup)](../android/preference/Preference.md)).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `icon` | [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)!:the optional icon for this Preference |
+| `icon` | [Drawable](../android/graphics/drawable/Drawable.md)!:the optional icon for this Preference |
 
 ### setIcon
 
@@ -1302,7 +1302,7 @@ Sets the icon for this Preference with a resource ID.
 
 **See Also**
 
-- [#setIcon(Drawable)](https://developer.android.com/reference/kotlin/android/preference/Preference#setIcon(android.graphics.drawable.Drawable)) 
+- [#setIcon(Drawable)](../android/preference/Preference.md)) 
 
 ### setIconSpaceReserved
 
@@ -1331,11 +1331,11 @@ open fun setIntent(intent: Intent!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets an [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#) to be used for [Context.startActivity(Intent)](https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent))when this Preference is clicked.
+Sets an [Intent](../android/content/Intent.md) to be used for [Context.startActivity(Intent)](../android/content/Context.md))when this Preference is clicked.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `intent` | [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html#)!:The intent associated with this Preference. |
+| `intent` | [Intent](../android/content/Intent.md)!:The intent associated with this Preference. |
 
 ### setKey
 
@@ -1347,7 +1347,7 @@ open fun setKey(key: String!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the key for this Preference, which is used as a key to the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) or [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore). This should be unique for the package.
+Sets the key for this Preference, which is used as a key to the [SharedPreferences](../android/content/SharedPreferences.md) or [PreferenceDataStore](../android/preference/PreferenceDataStore.md). This should be unique for the package.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------|
@@ -1363,17 +1363,17 @@ open fun setLayoutResource(layoutResId: Int): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the layout resource that is inflated as the [View](https://developer.android.com/reference/kotlin/android/view/View.html#) to be shown for this Preference. In most cases, the default layout is sufficient for custom Preference objects and only the widget layout needs to be changed.
+Sets the layout resource that is inflated as the [View](../android/view/View.md) to be shown for this Preference. In most cases, the default layout is sufficient for custom Preference objects and only the widget layout needs to be changed.
 
-This layout should contain a [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) with ID [android.R.id#widget_frame](https://developer.android.com/reference/kotlin/android/R.id.html#widget_frame:kotlin.Int) to be the parent of the specific widget for this Preference. It should similarly contain [android.R.id#title](https://developer.android.com/reference/kotlin/android/R.id.html#title:kotlin.Int) and [android.R.id#summary](https://developer.android.com/reference/kotlin/android/R.id.html#summary:kotlin.Int).
+This layout should contain a [ViewGroup](../android/view/ViewGroup.md) with ID [android.R.id#widget_frame](../android/R.id.md) to be the parent of the specific widget for this Preference. It should similarly contain [android.R.id#title](../android/R.id.md) and [android.R.id#summary](../android/R.id.md).
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `layoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The layout resource ID to be inflated and returned as a [View](https://developer.android.com/reference/kotlin/android/view/View.html#). |
+| `layoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The layout resource ID to be inflated and returned as a [View](../android/view/View.md). |
 
 **See Also**
 
-- [#setWidgetLayoutResource(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#setWidgetLayoutResource(kotlin.Int)) 
+- [#setWidgetLayoutResource(int)](../android/preference/Preference.md)) 
 
 ### setOnPreferenceChangeListener
 
@@ -1389,7 +1389,7 @@ Sets the callback to be invoked when this Preference is changed by the user (but
 
 | Parameters ||
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `onPreferenceChangeListener` | [Preference.OnPreferenceChangeListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceChangeListener)!:The callback to be invoked. |
+| `onPreferenceChangeListener` | [Preference.OnPreferenceChangeListener](../android/preference/Preference.OnPreferenceChangeListener.md)!:The callback to be invoked. |
 
 ### setOnPreferenceClickListener
 
@@ -1405,7 +1405,7 @@ Sets the callback to be invoked when this Preference is clicked.
 
 | Parameters ||
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `onPreferenceClickListener` | [Preference.OnPreferenceClickListener](https://developer.android.com/reference/kotlin/android/preference/Preference.OnPreferenceClickListener)!:The callback to be invoked. |
+| `onPreferenceClickListener` | [Preference.OnPreferenceClickListener](../android/preference/Preference.OnPreferenceClickListener.md)!:The callback to be invoked. |
 
 ### setOrder
 
@@ -1417,16 +1417,16 @@ open fun setOrder(order: Int): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the order of this Preference with respect to other Preference objects on the same level. If this is not specified, the default behavior is to sort alphabetically. The [PreferenceGroup.setOrderingAsAdded(boolean)](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#setOrderingAsAdded(kotlin.Boolean))can be used to order Preference objects based on the order they appear in the XML.
+Sets the order of this Preference with respect to other Preference objects on the same level. If this is not specified, the default behavior is to sort alphabetically. The [PreferenceGroup.setOrderingAsAdded(boolean)](../android/preference/PreferenceGroup.md))can be used to order Preference objects based on the order they appear in the XML.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `order` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the order for this Preference. A lower value will be shown first. Use [DEFAULT_ORDER](https://developer.android.com/reference/kotlin/android/preference/Preference#DEFAULT_ORDER:kotlin.Int) to sort alphabetically or allow ordering from XML |
+| `order` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the order for this Preference. A lower value will be shown first. Use [DEFAULT_ORDER](../android/preference/Preference.md) to sort alphabetically or allow ordering from XML |
 
 **See Also**
 
-- [android.preference.PreferenceGroup#setOrderingAsAdded(boolean)](https://developer.android.com/reference/kotlin/android/preference/PreferenceGroup#setOrderingAsAdded(kotlin.Boolean))
-- [#DEFAULT_ORDER](https://developer.android.com/reference/kotlin/android/preference/Preference#DEFAULT_ORDER:kotlin.Int) 
+- [android.preference.PreferenceGroup#setOrderingAsAdded(boolean)](../android/preference/PreferenceGroup.md))
+- [#DEFAULT_ORDER](../android/preference/Preference.md) 
 
 ### setPersistent
 
@@ -1438,7 +1438,7 @@ open fun setPersistent(persistent: Boolean): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets whether this Preference is persistent. When persistent, it stores its value(s) into the persistent [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) storage by default or into [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) if assigned.
+Sets whether this Preference is persistent. When persistent, it stores its value(s) into the persistent [SharedPreferences](../android/content/SharedPreferences.md) storage by default or into [PreferenceDataStore](../android/preference/PreferenceDataStore.md) if assigned.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1455,17 +1455,17 @@ open fun setPreferenceDataStore(dataStore: PreferenceDataStore!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets a [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) to be used by this Preference instead of using [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#).
+Sets a [PreferenceDataStore](../android/preference/PreferenceDataStore.md) to be used by this Preference instead of using [android.content.SharedPreferences](../android/content/SharedPreferences.md).
 
-The data store will remain assigned even if the Preference is moved around the preference hierarchy. It will also override a data store propagated from the [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager) that owns this Preference.
+The data store will remain assigned even if the Preference is moved around the preference hierarchy. It will also override a data store propagated from the [PreferenceManager](../android/preference/PreferenceManager.md) that owns this Preference.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dataStore` | [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore)!:The [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) to be used by this Preference. |
+| `dataStore` | [PreferenceDataStore](../android/preference/PreferenceDataStore.md)!:The [PreferenceDataStore](../android/preference/PreferenceDataStore.md) to be used by this Preference. |
 
 **See Also**
 
-- [android.preference.PreferenceManager#setPreferenceDataStore(PreferenceDataStore)](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager#setPreferenceDataStore(android.preference.PreferenceDataStore)) 
+- [android.preference.PreferenceManager#setPreferenceDataStore(PreferenceDataStore)](../android/preference/PreferenceManager.md)) 
 
 ### setRecycleEnabled
 
@@ -1482,7 +1482,7 @@ Sets whether this Preference has enabled to have its view recycled when used in 
 
 The value can be changed only before this preference is added to the preference hierarchy.
 
-If view recycling is not allowed then each time the list view populates this preference the [getView(android.view.View,android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/preference/Preference#getView(android.view.View,%20android.view.ViewGroup))method receives a`null`convert view and needs to recreate the view. Otherwise view gets recycled and only [onBindView(android.view.View)](https://developer.android.com/reference/kotlin/android/preference/Preference#onBindView(android.view.View))gets called. 
+If view recycling is not allowed then each time the list view populates this preference the [getView(android.view.View,android.view.ViewGroup)](../android/preference/Preference.md))method receives a`null`convert view and needs to recreate the view. Otherwise view gets recycled and only [onBindView(android.view.View)](../android/preference/Preference.md))gets called. 
 If you override this method you*must*call through to the superclass implementation.
 
 | Parameters ||
@@ -1517,7 +1517,7 @@ open fun setShouldDisableView(shouldDisableView: Boolean): Unit
 
 Sets whether this Preference should disable its view when it gets disabled.
 
-For example, set this and [setEnabled(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#setEnabled(kotlin.Boolean))to false for preferences that are only displaying information and 1) should not be clickable 2) should not have the view set to the disabled state.
+For example, set this and [setEnabled(boolean)](../android/preference/Preference.md))to false for preferences that are only displaying information and 1) should not be clickable 2) should not have the view set to the disabled state.
 
 | Parameters ||
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1558,7 +1558,7 @@ Sets the summary for this Preference with a resource ID.
 
 **See Also**
 
-- [#setSummary(CharSequence)](https://developer.android.com/reference/kotlin/android/preference/Preference#setSummary(kotlin.CharSequence)) 
+- [#setSummary(CharSequence)](../android/preference/Preference.md)) 
 
 ### setSummary
 
@@ -1594,7 +1594,7 @@ Sets the title for this Preference with a resource ID.
 
 **See Also**
 
-- [#setTitle(CharSequence)](https://developer.android.com/reference/kotlin/android/preference/Preference#setTitle(kotlin.CharSequence)) 
+- [#setTitle(CharSequence)](../android/preference/Preference.md)) 
 
 ### setTitle
 
@@ -1606,7 +1606,7 @@ open fun setTitle(title: CharSequence!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the title for this Preference with a CharSequence. This title will be placed into the ID [android.R.id#title](https://developer.android.com/reference/kotlin/android/R.id.html#title:kotlin.Int) within the View created by [onCreateView(android.view.ViewGroup)](https://developer.android.com/reference/kotlin/android/preference/Preference#onCreateView(android.view.ViewGroup)).
+Sets the title for this Preference with a CharSequence. This title will be placed into the ID [android.R.id#title](../android/R.id.md) within the View created by [onCreateView(android.view.ViewGroup)](../android/preference/Preference.md)).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------|
@@ -1622,7 +1622,7 @@ open fun setWidgetLayoutResource(widgetLayoutResId: Int): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the layout for the controllable widget portion of this Preference. This is inflated into the main layout. For example, a [CheckBoxPreference](https://developer.android.com/reference/kotlin/android/preference/CheckBoxPreference) would specify a custom layout (consisting of just the CheckBox) here, instead of creating its own main layout.
+Sets the layout for the controllable widget portion of this Preference. This is inflated into the main layout. For example, a [CheckBoxPreference](../android/preference/CheckBoxPreference.md) would specify a custom layout (consisting of just the CheckBox) here, instead of creating its own main layout.
 
 | Parameters ||
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -1630,7 +1630,7 @@ Sets the layout for the controllable widget portion of this Preference. This is 
 
 **See Also**
 
-- [#setLayoutResource(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#setLayoutResource(kotlin.Int)) 
+- [#setLayoutResource(int)](../android/preference/Preference.md)) 
 
 ### shouldCommit
 
@@ -1642,9 +1642,9 @@ open fun shouldCommit(): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns whether the [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) should commit its saved value(s) in [getEditor()](https://developer.android.com/reference/kotlin/android/preference/Preference#getEditor()). This may return false in situations where batch committing is being done (by the manager) to improve performance.
+Returns whether the [Preference](../android/preference/Preference.md) should commit its saved value(s) in [getEditor()](../android/preference/Preference.md)). This may return false in situations where batch committing is being done (by the manager) to improve performance.
 
-If this preference is using [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) this value is irrelevant.
+If this preference is using [PreferenceDataStore](../android/preference/PreferenceDataStore.md) this value is irrelevant.
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -1716,7 +1716,7 @@ protected open fun findPreferenceInHierarchy(key: String!): Preference!
 
 **Deprecated:** *Deprecated in Java.*
 
-Finds a Preference in this hierarchy (the whole thing, even above/below your [PreferenceScreen](https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen) screen break) with the given key.
+Finds a Preference in this hierarchy (the whole thing, even above/below your [PreferenceScreen](../android/preference/PreferenceScreen.md) screen break) with the given key.
 
 This only functions after we have been attached to a hierarchy.
 
@@ -1726,7 +1726,7 @@ This only functions after we have been attached to a hierarchy.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------|
-| [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#)! | The Preference that uses the given key. |
+| [Preference](../android/preference/Preference.md)! | The Preference that uses the given key. |
 
 ### getPersistedBoolean
 
@@ -1750,8 +1750,8 @@ Attempts to get a persisted boolean if this Preference is persistent.
 
 **See Also**
 
-- [#getPersistedString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedString(kotlin.String))
-- [#persistBoolean(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistBoolean(kotlin.Boolean)) 
+- [#getPersistedString(String)](../android/preference/Preference.md))
+- [#persistBoolean(boolean)](../android/preference/Preference.md)) 
 
 ### getPersistedFloat
 
@@ -1775,8 +1775,8 @@ Attempts to get a persisted float if this Preference is persistent.
 
 **See Also**
 
-- [#getPersistedString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedString(kotlin.String))
-- [#persistFloat(float)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistFloat(kotlin.Float)) 
+- [#getPersistedString(String)](../android/preference/Preference.md))
+- [#persistFloat(float)](../android/preference/Preference.md)) 
 
 ### getPersistedInt
 
@@ -1800,8 +1800,8 @@ Attempts to get a persisted int if this Preference is persistent.
 
 **See Also**
 
-- [#getPersistedString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedString(kotlin.String))
-- [#persistInt(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistInt(kotlin.Int)) 
+- [#getPersistedString(String)](../android/preference/Preference.md))
+- [#persistInt(int)](../android/preference/Preference.md)) 
 
 ### getPersistedLong
 
@@ -1825,8 +1825,8 @@ Attempts to get a persisted long if this Preference is persistent.
 
 **See Also**
 
-- [#getPersistedString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedString(kotlin.String))
-- [#persistLong(long)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistLong(kotlin.Long)) 
+- [#getPersistedString(String)](../android/preference/Preference.md))
+- [#persistLong(long)](../android/preference/Preference.md)) 
 
 ### getPersistedString
 
@@ -1850,7 +1850,7 @@ Attempts to get a persisted String if this Preference is persistent.
 
 **See Also**
 
-- [#persistString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistString(kotlin.String)) 
+- [#persistString(String)](../android/preference/Preference.md)) 
 
 ### notifyChanged
 
@@ -1862,7 +1862,7 @@ protected open fun notifyChanged(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Should be called when the data of this [Preference](https://developer.android.com/reference/kotlin/android/preference/Preference#) has changed. 
+Should be called when the data of this [Preference](../android/preference/Preference.md) has changed. 
 
 ### notifyHierarchyChanged
 
@@ -1886,7 +1886,7 @@ protected open fun onAttachedToActivity(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called when the Preference hierarchy has been attached to the [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity). This can also be called when this Preference has been attached to a group that was already attached to the [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity). 
+Called when the Preference hierarchy has been attached to the [PreferenceActivity](../android/preference/PreferenceActivity.md). This can also be called when this Preference has been attached to a group that was already attached to the [PreferenceActivity](../android/preference/PreferenceActivity.md). 
 
 ### onAttachedToHierarchy
 
@@ -1902,7 +1902,7 @@ Called when this Preference has been attached to a Preference hierarchy. Make su
 
 | Parameters ||
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `preferenceManager` | [PreferenceManager](https://developer.android.com/reference/kotlin/android/preference/PreferenceManager)!:The PreferenceManager of the hierarchy. |
+| `preferenceManager` | [PreferenceManager](../android/preference/PreferenceManager.md)!:The PreferenceManager of the hierarchy. |
 
 ### onBindView
 
@@ -1923,11 +1923,11 @@ If you override this method you*must*call through to the superclass implementati
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `view` | [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!:The View that shows this Preference. |
+| `view` | [View](../android/view/View.md)!:The View that shows this Preference. |
 
 **See Also**
 
-- [#onCreateView(ViewGroup)](https://developer.android.com/reference/kotlin/android/preference/Preference#onCreateView(android.view.ViewGroup)) 
+- [#onCreateView(ViewGroup)](../android/preference/Preference.md)) 
 
 ### onClick
 
@@ -1939,7 +1939,7 @@ protected open fun onClick(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Processes a click on the preference. This includes saving the value to the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). However, the overridden method should call [callChangeListener(java.lang.Object)](https://developer.android.com/reference/kotlin/android/preference/Preference#callChangeListener(kotlin.Any))to make sure the client wants to update the preference's state with the new value. 
+Processes a click on the preference. This includes saving the value to the [SharedPreferences](../android/content/SharedPreferences.md). However, the overridden method should call [callChangeListener(java.lang.Object)](../android/preference/Preference.md))to make sure the client wants to update the preference's state with the new value. 
 
 ### onCreateView
 
@@ -1951,22 +1951,22 @@ protected open fun onCreateView(parent: ViewGroup!): View!
 
 **Deprecated:** *Deprecated in Java.*
 
-Creates the View to be shown for this Preference in the [PreferenceActivity](https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity). The default behavior is to inflate the main layout of this Preference (see [setLayoutResource(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#setLayoutResource(kotlin.Int)). If changing this behavior, please specify a [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#) with ID [android.R.id#widget_frame](https://developer.android.com/reference/kotlin/android/R.id.html#widget_frame:kotlin.Int).
+Creates the View to be shown for this Preference in the [PreferenceActivity](../android/preference/PreferenceActivity.md). The default behavior is to inflate the main layout of this Preference (see [setLayoutResource(int)](../android/preference/Preference.md)). If changing this behavior, please specify a [ViewGroup](../android/view/ViewGroup.md) with ID [android.R.id#widget_frame](../android/R.id.md).
 
 Make sure to call through to the superclass's implementation. 
 If you override this method you*must*call through to the superclass implementation.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [ViewGroup](https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#)!:The parent that this View will eventually be attached to. |
+| `parent` | [ViewGroup](../android/view/ViewGroup.md)!:The parent that this View will eventually be attached to. |
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------|
-| [View](https://developer.android.com/reference/kotlin/android/view/View.html#)! | The View that displays this Preference. |
+| [View](../android/view/View.md)! | The View that displays this Preference. |
 
 **See Also**
 
-- [#onBindView(View)](https://developer.android.com/reference/kotlin/android/preference/Preference#onBindView(android.view.View)) 
+- [#onBindView(View)](../android/preference/Preference.md)) 
 
 ### onGetDefaultValue
 
@@ -1983,11 +1983,11 @@ protected open fun onGetDefaultValue(
 
 Called when a Preference is being inflated and the default value attribute needs to be read. Since different Preference types have different value types, the subclass should get and return the default value which will be its value type.
 
-For example, if the value type is String, the body of the method would proxy to [TypedArray.getString(int)](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#getString(kotlin.Int)).
+For example, if the value type is String, the body of the method would proxy to [TypedArray.getString(int)](../android/content/res/TypedArray.md)).
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------|
-| `a` | [TypedArray](https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#)!:The set of attributes. |
+| `a` | [TypedArray](../android/content/res/TypedArray.md)!:The set of attributes. |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the default value attribute. |
 
 | Return ||
@@ -2017,16 +2017,16 @@ protected open fun onRestoreInstanceState(state: Parcelable!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Hook allowing a Preference to re-apply a representation of its internal state that had previously been generated by [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onSaveInstanceState()). This function will never be called with a`null`state.
+Hook allowing a Preference to re-apply a representation of its internal state that had previously been generated by [onSaveInstanceState](../android/preference/Preference.md)). This function will never be called with a`null`state.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)!:The saved state that had previously been returned by [onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onSaveInstanceState()). |
+| `state` | [Parcelable](../android/os/Parcelable.md)!:The saved state that had previously been returned by [onSaveInstanceState](../android/preference/Preference.md)). |
 
 **See Also**
 
-- [#onSaveInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onSaveInstanceState())
-- [#restoreHierarchyState](https://developer.android.com/reference/kotlin/android/preference/Preference#restoreHierarchyState(android.os.Bundle)) 
+- [#onSaveInstanceState](../android/preference/Preference.md))
+- [#restoreHierarchyState](../android/preference/Preference.md)) 
 
 ### onSaveInstanceState
 
@@ -2042,12 +2042,12 @@ Hook allowing a Preference to generate a representation of its internal state th
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#)! | A Parcelable object containing the current dynamic state of this Preference, or`null`if there is nothing interesting to save. The default implementation returns`null`. |
+| [Parcelable](../android/os/Parcelable.md)! | A Parcelable object containing the current dynamic state of this Preference, or`null`if there is nothing interesting to save. The default implementation returns`null`. |
 
 **See Also**
 
-- [#onRestoreInstanceState](https://developer.android.com/reference/kotlin/android/preference/Preference#onRestoreInstanceState(android.os.Parcelable))
-- [#saveHierarchyState](https://developer.android.com/reference/kotlin/android/preference/Preference#saveHierarchyState(android.os.Bundle)) 
+- [#onRestoreInstanceState](../android/preference/Preference.md))
+- [#saveHierarchyState](../android/preference/Preference.md)) 
 
 ### onSetInitialValue
 
@@ -2064,9 +2064,9 @@ protected open fun onSetInitialValue(
 
 Implement this to set the initial value of the Preference.
 
-If restorePersistedValue is true, you should restore the Preference value from the [android.content.SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#). If restorePersistedValue is false, you should set the Preference value to defaultValue that is given (and possibly store to SharedPreferences if [shouldPersist()](https://developer.android.com/reference/kotlin/android/preference/Preference#shouldPersist())is true).
+If restorePersistedValue is true, you should restore the Preference value from the [android.content.SharedPreferences](../android/content/SharedPreferences.md). If restorePersistedValue is false, you should set the Preference value to defaultValue that is given (and possibly store to SharedPreferences if [shouldPersist()](../android/preference/Preference.md))is true).
 
-In case of using [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore), the restorePersistedValue is always`true`. But the default value (if provided) is set.
+In case of using [PreferenceDataStore](../android/preference/PreferenceDataStore.md), the restorePersistedValue is always`true`. But the default value (if provided) is set.
 
 This may not always be called. One example is if it should not persist but there is no default value given.
 
@@ -2097,8 +2097,8 @@ Attempts to persist a boolean if this Preference is persistent.
 
 **See Also**
 
-- [#persistString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistString(kotlin.String))
-- [#getPersistedBoolean(boolean)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedBoolean(kotlin.Boolean)) 
+- [#persistString(String)](../android/preference/Preference.md))
+- [#getPersistedBoolean(boolean)](../android/preference/Preference.md)) 
 
 ### persistFloat
 
@@ -2122,8 +2122,8 @@ Attempts to persist a long if this Preference is persistent.
 
 **See Also**
 
-- [#persistString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistString(kotlin.String))
-- [#getPersistedFloat(float)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedFloat(kotlin.Float)) 
+- [#persistString(String)](../android/preference/Preference.md))
+- [#getPersistedFloat(float)](../android/preference/Preference.md)) 
 
 ### persistInt
 
@@ -2147,8 +2147,8 @@ Attempts to persist an int if this Preference is persistent.
 
 **See Also**
 
-- [#persistString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistString(kotlin.String))
-- [#getPersistedInt(int)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedInt(kotlin.Int)) 
+- [#persistString(String)](../android/preference/Preference.md))
+- [#getPersistedInt(int)](../android/preference/Preference.md)) 
 
 ### persistLong
 
@@ -2172,8 +2172,8 @@ Attempts to persist a long if this Preference is persistent.
 
 **See Also**
 
-- [#persistString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#persistString(kotlin.String))
-- [#getPersistedLong(long)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedLong(kotlin.Long)) 
+- [#persistString(String)](../android/preference/Preference.md))
+- [#getPersistedLong(long)](../android/preference/Preference.md)) 
 
 ### persistString
 
@@ -2197,7 +2197,7 @@ Attempts to persist a String if this Preference is persistent.
 
 **See Also**
 
-- [#getPersistedString(String)](https://developer.android.com/reference/kotlin/android/preference/Preference#getPersistedString(kotlin.String)) 
+- [#getPersistedString(String)](../android/preference/Preference.md)) 
 
 ### shouldPersist
 
@@ -2209,7 +2209,7 @@ protected open fun shouldPersist(): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether, at the given time this method is called, this Preference should store/restore its value(s) into the [SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#) or into [PreferenceDataStore](https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore) if assigned. This, at minimum, checks whether this Preference is persistent and it currently has a key. Before you save/restore from the storage, check this first.
+Checks whether, at the given time this method is called, this Preference should store/restore its value(s) into the [SharedPreferences](../android/content/SharedPreferences.md) or into [PreferenceDataStore](../android/preference/PreferenceDataStore.md) if assigned. This, at minimum, checks whether this Preference is persistent and it currently has a key. Before you save/restore from the storage, check this first.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------|

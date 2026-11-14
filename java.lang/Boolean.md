@@ -8,7 +8,7 @@ class Boolean : Comparable<Boolean!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean#) |
+| ↳ | [java.lang.Boolean](../java/lang/Boolean.md) |
 
 The Boolean class wraps a value of the primitive type `boolean` in an object. An object of type `Boolean` contains a single field whose type is `boolean`.
 
@@ -48,7 +48,7 @@ In addition, this class provides many methods for converting a `boolean` to a `S
 |---|---|
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/Boolean#FALSE:kotlin.Boolean` The `Boolean` object corresponding to the primitive value `false`. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/Boolean#TRUE:kotlin.Boolean` The `Boolean` object corresponding to the primitive value `true`. |
-| static [Class](https://developer.android.com/reference/kotlin/java/lang/Class)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/lang/Boolean#TYPE:java.lang.Class` The Class object representing the primitive type boolean. |
+| static [Class](../java/lang/Class.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/lang/Boolean#TYPE:java.lang.Class` The Class object representing the primitive type boolean. |
 | --- | --- |
 
 ## Public constructors

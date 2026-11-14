@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableShort
 
-Kotlin| [Java](https://developer.android.com/reference/android/util/MutableShort "View this page in Java") 
+Kotlin| [Java](../android/util/MutableShort.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableShort
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableShort](https://developer.android.com/reference/kotlin/android/util/MutableShort#) |
+| ↳ | [android.util.MutableShort](../android/util/MutableShort.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableShort
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableShort](https://developer.android.com/reference/kotlin/android/util/MutableShort#MutableShort(kotlin.Short))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
+| [MutableShort](../android/util/MutableShort.md))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [value](https://developer.android.com/reference/kotlin/android/util/MutableShort#value:kotlin.Short) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [value](../android/util/MutableShort.md) <br /> |
 
 ## Public constructors
 

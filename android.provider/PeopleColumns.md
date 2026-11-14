@@ -5,21 +5,21 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 
 # PeopleColumns
 
-Kotlin| [Java](https://developer.android.com/reference/android/provider/Contacts.PeopleColumns "View this page in Java") 
+Kotlin| [Java](../android/provider/Contacts.PeopleColumns.md) 
 | --- | --- |
 
 ```
 interface PeopleColumns
 ```
 
-| [android.provider.Contacts.PeopleColumns](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#) |
+| [android.provider.Contacts.PeopleColumns](../android/provider/Contacts.PeopleColumns.md) |
 
-| Known Direct Subclasses [Contacts.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethods), [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People), [Contacts.People.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.ContactMethods), [Contacts.People.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.Phones), [Contacts.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.Phones) |----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [Contacts.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.ContactMethods) | This table stores all non-phone contact methods and a reference to the person that the contact method belongs to. | | [Contacts.People](https://developer.android.com/reference/kotlin/android/provider/Contacts.People) | This table contains people. | | [Contacts.People.ContactMethods](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.ContactMethods) | A subdirectory of a single person that contains all of their ContactMethods. | | [Contacts.People.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.People.Phones) | A sub directory of a single person that contains all of their Phones. | | [Contacts.Phones](https://developer.android.com/reference/kotlin/android/provider/Contacts.Phones) | This table stores phone numbers and a reference to the person that the contact method belongs to. | |
+| Known Direct Subclasses [Contacts.ContactMethods](../android/provider/Contacts.ContactMethods.md), [Contacts.People](../android/provider/Contacts.People.md), [Contacts.People.ContactMethods](../android/provider/Contacts.People.ContactMethods.md), [Contacts.People.Phones](../android/provider/Contacts.People.Phones.md), [Contacts.Phones](../android/provider/Contacts.Phones.md) |----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [Contacts.ContactMethods](../android/provider/Contacts.ContactMethods.md) | This table stores all non-phone contact methods and a reference to the person that the contact method belongs to. | | [Contacts.People](../android/provider/Contacts.People.md) | This table contains people. | | [Contacts.People.ContactMethods](../android/provider/Contacts.People.ContactMethods.md) | A subdirectory of a single person that contains all of their ContactMethods. | | [Contacts.People.Phones](../android/provider/Contacts.People.Phones.md) | A sub directory of a single person that contains all of their Phones. | | [Contacts.Phones](../android/provider/Contacts.Phones.md) | This table stores phone numbers and a reference to the person that the contact method belongs to. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)
+| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
 
 Columns from the People table that other tables join into themselves.
 
@@ -27,19 +27,19 @@ Columns from the People table that other tables join into themselves.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CUSTOM_RINGTONE](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#CUSTOM_RINGTONE:kotlin.String) A custom ringtone associated with a person. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DISPLAY_NAME](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#DISPLAY_NAME:kotlin.String) The display name. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LAST_TIME_CONTACTED](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#LAST_TIME_CONTACTED:kotlin.String) The last time a person was contacted. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CUSTOM_RINGTONE](../android/provider/Contacts.PeopleColumns.md) A custom ringtone associated with a person. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DISPLAY_NAME](../android/provider/Contacts.PeopleColumns.md) The display name. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LAST_TIME_CONTACTED](../android/provider/Contacts.PeopleColumns.md) The last time a person was contacted. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#NAME:kotlin.String) The person's name. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NOTES](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#NOTES:kotlin.String) Notes about the person. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PHONETIC_NAME](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#PHONETIC_NAME:kotlin.String) Phonetic equivalent of the person's name, in a locale-dependent character set (e.g. hiragana for Japanese). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NAME](../android/provider/Contacts.PeopleColumns.md) The person's name. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NOTES](../android/provider/Contacts.PeopleColumns.md) Notes about the person. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PHONETIC_NAME](../android/provider/Contacts.PeopleColumns.md) Phonetic equivalent of the person's name, in a locale-dependent character set (e.g. hiragana for Japanese). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PHOTO_VERSION](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#PHOTO_VERSION:kotlin.String) The server version of the photo |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SEND_TO_VOICEMAIL](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#SEND_TO_VOICEMAIL:kotlin.String) Whether the person should always be sent to voicemail. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STARRED](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#STARRED:kotlin.String) Is the contact starred? |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PHOTO_VERSION](../android/provider/Contacts.PeopleColumns.md) The server version of the photo |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SEND_TO_VOICEMAIL](../android/provider/Contacts.PeopleColumns.md) Whether the person should always be sent to voicemail. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [STARRED](../android/provider/Contacts.PeopleColumns.md) Is the contact starred? |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TIMES_CONTACTED](https://developer.android.com/reference/kotlin/android/provider/Contacts.PeopleColumns#TIMES_CONTACTED:kotlin.String) The number of times a person has been contacted |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TIMES_CONTACTED](../android/provider/Contacts.PeopleColumns.md) The number of times a person has been contacted |
 
 ## Constants
 
@@ -51,7 +51,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CUSTOM_RINGTONE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 A custom ringtone associated with a person. Not always present.
 
@@ -67,7 +67,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DISPLAY_NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The display name. If name is not null name, else if number is not null number, else if email is not null email.
 
@@ -83,7 +83,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LAST_TIME_CONTACTED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The last time a person was contacted.
 
@@ -99,7 +99,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The person's name.
 
@@ -115,7 +115,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NOTES: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Notes about the person.
 
@@ -132,7 +132,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 static val PHONETIC_NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Phonetic equivalent of the person's name, in a locale-dependent character set (e.g. hiragana for Japanese). Used for pronunciation and/or collation in some languages.
 
@@ -148,7 +148,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PHOTO_VERSION: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The server version of the photo
 
@@ -164,7 +164,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SEND_TO_VOICEMAIL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Whether the person should always be sent to voicemail. Not always present.
 
@@ -180,7 +180,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val STARRED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 Is the contact starred?
 
@@ -196,7 +196,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TIMES_CONTACTED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](https://developer.android.com/reference/kotlin/android/provider/ContactsContract)*
+**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
 
 The number of times a person has been contacted
 

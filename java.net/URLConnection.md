@@ -10,12 +10,12 @@ abstract class URLConnection
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection#) |
+| ↳ | [java.net.URLConnection](../java/net/URLConnection.md) |
 
-| Known Direct Subclasses [HttpURLConnection](https://developer.android.com/reference/kotlin/java/net/HttpURLConnection), [JarURLConnection](https://developer.android.com/reference/kotlin/java/net/JarURLConnection) |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [HttpURLConnection](https://developer.android.com/reference/kotlin/java/net/HttpURLConnection) | A URLConnection with support for HTTP-specific features. | | [JarURLConnection](https://developer.android.com/reference/kotlin/java/net/JarURLConnection) | A URL Connection to a Java ARchive (JAR) file or an entry in a JAR file. | |
+| Known Direct Subclasses [HttpURLConnection](../java/net/HttpURLConnection.md), [JarURLConnection](../java/net/JarURLConnection.md) |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------| | [HttpURLConnection](../java/net/HttpURLConnection.md) | A URLConnection with support for HTTP-specific features. | | [JarURLConnection](../java/net/JarURLConnection.md) | A URL Connection to a Java ARchive (JAR) file or an entry in a JAR file. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#) |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [HttpsURLConnection](https://developer.android.com/reference/kotlin/javax/net/ssl/HttpsURLConnection.html#) | `HttpsURLConnection`extends`HttpURLConnection`with support for https-specific features. | |
+| Known Indirect Subclasses [HttpsURLConnection](../javax/net/ssl/HttpsURLConnection.md) |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [HttpsURLConnection](../javax/net/ssl/HttpsURLConnection.md) | `HttpsURLConnection`extends`HttpURLConnection`with support for https-specific features. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The abstract class is the superclass of all classes that represent a communications link between the application and a URL. Instances of this class can be used both to read from and to write to the resource referenced by the URL. In general, creating a connection to a URL is a multistep process:
@@ -81,90 +81,90 @@ Invoking the`close()`methods on the`InputStream`or`OutputStream`of an`URLConnect
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [URLConnection](https://developer.android.com/reference/kotlin/java/net/URLConnection#URLConnection(java.net.URL))`(`url:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL)!`)` Constructs a URL connection to the specified URL. |
+| [URLConnection](../java/net/URLConnection.md))`(`url:` ` [URL](../java/net/URL.md)!`)` Constructs a URL connection to the specified URL. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addRequestProperty](https://developer.android.com/reference/kotlin/java/net/URLConnection#addRequestProperty(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds a general request property specified by a key-value pair. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](https://developer.android.com/reference/kotlin/java/net/URLConnection#connect())`()` Opens a communications link to the resource referenced by this URL, if such a connection has not already been established. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowUserInteraction](https://developer.android.com/reference/kotlin/java/net/URLConnection#getAllowUserInteraction())`()` Returns the value of the`allowUserInteraction`field for this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addRequestProperty](../java/net/URLConnection.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds a general request property specified by a key-value pair. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../java/net/URLConnection.md))`()` Opens a communications link to the resource referenced by this URL, if such a connection has not already been established. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowUserInteraction](../java/net/URLConnection.md))`()` Returns the value of the`allowUserInteraction`field for this object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectTimeout](https://developer.android.com/reference/kotlin/java/net/URLConnection#getConnectTimeout())`()` Returns setting for connect timeout. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContent())`()` Retrieves the contents of this URL connection. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContent(kotlin.Array))`(`classes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>!`)` Retrieves the contents of this URL connection. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectTimeout](../java/net/URLConnection.md))`()` Returns setting for connect timeout. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](../java/net/URLConnection.md))`()` Retrieves the contents of this URL connection. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContent](../java/net/URLConnection.md))`(`classes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!>!`)` Retrieves the contents of this URL connection. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getContentEncoding](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentEncoding())`()` Returns the value of the`content-encoding`header field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentLength](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentLength())`()` Returns the value of the`content-length`header field. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getContentLengthLong](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentLengthLong())`()` Returns the value of the`content-length`header field as a long. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getContentEncoding](../java/net/URLConnection.md))`()` Returns the value of the`content-encoding`header field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentLength](../java/net/URLConnection.md))`()` Returns the value of the`content-length`header field. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getContentLengthLong](../java/net/URLConnection.md))`()` Returns the value of the`content-length`header field as a long. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getContentType](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentType())`()` Returns the value of the`content-type`header field. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDate](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDate())`()` Returns the value of the`date`header field. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDefaultAllowUserInteraction](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDefaultAllowUserInteraction())`()` Returns the default value of the`allowUserInteraction`field. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getContentType](../java/net/URLConnection.md))`()` Returns the value of the`content-type`header field. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDate](../java/net/URLConnection.md))`()` Returns the value of the`date`header field. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDefaultAllowUserInteraction](../java/net/URLConnection.md))`()` Returns the default value of the`allowUserInteraction`field. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultRequestProperty](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDefaultRequestProperty(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the default request property. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDefaultUseCaches](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDefaultUseCaches())`()` Returns the default value of a`URLConnection`'s`useCaches`flag. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDoInput](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDoInput())`()` Returns the value of this`URLConnection`'s`doInput`flag. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultRequestProperty](../java/net/URLConnection.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the default request property. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDefaultUseCaches](../java/net/URLConnection.md))`()` Returns the default value of a`URLConnection`'s`useCaches`flag. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDoInput](../java/net/URLConnection.md))`()` Returns the value of this`URLConnection`'s`doInput`flag. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDoOutput](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDoOutput())`()` Returns the value of this`URLConnection`'s`doOutput`flag. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getExpiration](https://developer.android.com/reference/kotlin/java/net/URLConnection#getExpiration())`()` Returns the value of the`expires`header field. |
-| openstatic [FileNameMap](https://developer.android.com/reference/kotlin/java/net/FileNameMap)! | [getFileNameMap](https://developer.android.com/reference/kotlin/java/net/URLConnection#getFileNameMap())`()` Returns a [FileNameMap](https://developer.android.com/reference/kotlin/java/net/FileNameMap) implementation suitable for guessing a content type based on a URL's "file" component. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDoOutput](../java/net/URLConnection.md))`()` Returns the value of this`URLConnection`'s`doOutput`flag. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getExpiration](../java/net/URLConnection.md))`()` Returns the value of the`expires`header field. |
+| openstatic [FileNameMap](../java/net/FileNameMap.md)! | [getFileNameMap](../java/net/URLConnection.md))`()` Returns a [FileNameMap](../java/net/FileNameMap.md) implementation suitable for guessing a content type based on a URL's "file" component. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHeaderField](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderField(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value for the`n`th header field. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHeaderField](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderField(kotlin.String))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the named header field. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHeaderFieldDate](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderFieldDate(kotlin.String,%20kotlin.Long))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `Default:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value of the named field parsed as date. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHeaderField](../java/net/URLConnection.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value for the`n`th header field. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHeaderField](../java/net/URLConnection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the named header field. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHeaderFieldDate](../java/net/URLConnection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `Default:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value of the named field parsed as date. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeaderFieldInt](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderFieldInt(kotlin.String,%20kotlin.Int))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `Default:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the named field parsed as a number. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHeaderFieldKey](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderFieldKey(kotlin.Int))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the key for the`n`th header field. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHeaderFieldLong](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderFieldLong(kotlin.String,%20kotlin.Long))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `Default:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value of the named field parsed as a number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeaderFieldInt](../java/net/URLConnection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `Default:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the named field parsed as a number. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHeaderFieldKey](../java/net/URLConnection.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the key for the`n`th header field. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHeaderFieldLong](../java/net/URLConnection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `Default:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the value of the named field parsed as a number. |
 | --- | --- |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getHeaderFields](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderFields())`()` Returns an unmodifiable Map of the header fields. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getIfModifiedSince](https://developer.android.com/reference/kotlin/java/net/URLConnection#getIfModifiedSince())`()` Returns the value of this object's`ifModifiedSince`field. |
-| open [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | [getInputStream](https://developer.android.com/reference/kotlin/java/net/URLConnection#getInputStream())`()` Returns an input stream that reads from this open connection. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getHeaderFields](../java/net/URLConnection.md))`()` Returns an unmodifiable Map of the header fields. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getIfModifiedSince](../java/net/URLConnection.md))`()` Returns the value of this object's`ifModifiedSince`field. |
+| open [InputStream](../java/io/InputStream.md)! | [getInputStream](../java/net/URLConnection.md))`()` Returns an input stream that reads from this open connection. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastModified](https://developer.android.com/reference/kotlin/java/net/URLConnection#getLastModified())`()` Returns the value of the`last-modified`header field. |
-| open [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | [getOutputStream](https://developer.android.com/reference/kotlin/java/net/URLConnection#getOutputStream())`()` Returns an output stream that writes to this connection. |
-| open [Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#)! | [getPermission](https://developer.android.com/reference/kotlin/java/net/URLConnection#getPermission())`()` Returns a permission object representing the permission necessary to make the connection represented by this object. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastModified](../java/net/URLConnection.md))`()` Returns the value of the`last-modified`header field. |
+| open [OutputStream](../java/io/OutputStream.md)! | [getOutputStream](../java/net/URLConnection.md))`()` Returns an output stream that writes to this connection. |
+| open [Permission](../java/security/Permission.md)! | [getPermission](../java/net/URLConnection.md))`()` Returns a permission object representing the permission necessary to make the connection represented by this object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReadTimeout](https://developer.android.com/reference/kotlin/java/net/URLConnection#getReadTimeout())`()` Returns setting for read timeout. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getRequestProperties](https://developer.android.com/reference/kotlin/java/net/URLConnection#getRequestProperties())`()` Returns an unmodifiable Map of general request properties for this connection. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestProperty](https://developer.android.com/reference/kotlin/java/net/URLConnection#getRequestProperty(kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the named general request property for this connection. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReadTimeout](../java/net/URLConnection.md))`()` Returns setting for read timeout. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getRequestProperties](../java/net/URLConnection.md))`()` Returns an unmodifiable Map of general request properties for this connection. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestProperty](../java/net/URLConnection.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the named general request property for this connection. |
 | --- | --- |
-| open [URL](https://developer.android.com/reference/kotlin/java/net/URL)! | [getURL](https://developer.android.com/reference/kotlin/java/net/URLConnection#getURL())`()` Returns the value of this`URLConnection`'s`URL`field. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseCaches](https://developer.android.com/reference/kotlin/java/net/URLConnection#getUseCaches())`()` Returns the value of this`URLConnection`'s`useCaches`field. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [guessContentTypeFromName](https://developer.android.com/reference/kotlin/java/net/URLConnection#guessContentTypeFromName(kotlin.String))`(`fname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Tries to determine the content type of an object, based on the specified "file" component of a URL. |
+| open [URL](../java/net/URL.md)! | [getURL](../java/net/URLConnection.md))`()` Returns the value of this`URLConnection`'s`URL`field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseCaches](../java/net/URLConnection.md))`()` Returns the value of this`URLConnection`'s`useCaches`field. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [guessContentTypeFromName](../java/net/URLConnection.md))`(`fname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Tries to determine the content type of an object, based on the specified "file" component of a URL. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [guessContentTypeFromStream](https://developer.android.com/reference/kotlin/java/net/URLConnection#guessContentTypeFromStream(java.io.InputStream))`(`is:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Tries to determine the type of an input stream based on the characters at the beginning of the input stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowUserInteraction](https://developer.android.com/reference/kotlin/java/net/URLConnection#setAllowUserInteraction(kotlin.Boolean))`(`allowuserinteraction:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of the`allowUserInteraction`field of this`URLConnection`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setConnectTimeout](https://developer.android.com/reference/kotlin/java/net/URLConnection#setConnectTimeout(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets a specified timeout value, in milliseconds, to be used when opening a communications link to the resource referenced by this URLConnection. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [guessContentTypeFromStream](../java/net/URLConnection.md))`(`is:` ` [InputStream](../java/io/InputStream.md)!`)` Tries to determine the type of an input stream based on the characters at the beginning of the input stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowUserInteraction](../java/net/URLConnection.md))`(`allowuserinteraction:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of the`allowUserInteraction`field of this`URLConnection`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setConnectTimeout](../java/net/URLConnection.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets a specified timeout value, in milliseconds, to be used when opening a communications link to the resource referenced by this URLConnection. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandlerFactory](https://developer.android.com/reference/kotlin/java/net/URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory))`(`fac:` ` [ContentHandlerFactory](https://developer.android.com/reference/kotlin/java/net/ContentHandlerFactory)!`)` Sets the`ContentHandlerFactory`of an application. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultAllowUserInteraction](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultAllowUserInteraction(kotlin.Boolean))`(`defaultallowuserinteraction:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default value of the`allowUserInteraction`field for all future`URLConnection`objects to the specified value. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultRequestProperty](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultRequestProperty(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the default value of a general request property. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandlerFactory](../java/net/URLConnection.md))`(`fac:` ` [ContentHandlerFactory](../java/net/ContentHandlerFactory.md)!`)` Sets the`ContentHandlerFactory`of an application. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultAllowUserInteraction](../java/net/URLConnection.md))`(`defaultallowuserinteraction:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default value of the`allowUserInteraction`field for all future`URLConnection`objects to the specified value. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultRequestProperty](../java/net/URLConnection.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the default value of a general request property. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultUseCaches](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultUseCaches(kotlin.Boolean))`(`defaultusecaches:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default value of the`useCaches`field to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDoInput](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDoInput(kotlin.Boolean))`(`doinput:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the`doInput`field for this`URLConnection`to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDoOutput](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDoOutput(kotlin.Boolean))`(`dooutput:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the`doOutput`field for this`URLConnection`to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultUseCaches](../java/net/URLConnection.md))`(`defaultusecaches:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default value of the`useCaches`field to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDoInput](../java/net/URLConnection.md))`(`doinput:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the`doInput`field for this`URLConnection`to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDoOutput](../java/net/URLConnection.md))`(`dooutput:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the`doOutput`field for this`URLConnection`to the specified value. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFileNameMap](https://developer.android.com/reference/kotlin/java/net/URLConnection#setFileNameMap(java.net.FileNameMap))`(`map:` ` [FileNameMap](https://developer.android.com/reference/kotlin/java/net/FileNameMap)!`)` Sets the FileNameMap. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIfModifiedSince](https://developer.android.com/reference/kotlin/java/net/URLConnection#setIfModifiedSince(kotlin.Long))`(`ifmodifiedsince:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value of the`ifModifiedSince`field of this`URLConnection`to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadTimeout](https://developer.android.com/reference/kotlin/java/net/URLConnection#setReadTimeout(kotlin.Int))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the read timeout to a specified timeout, in milliseconds. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFileNameMap](../java/net/URLConnection.md))`(`map:` ` [FileNameMap](../java/net/FileNameMap.md)!`)` Sets the FileNameMap. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIfModifiedSince](../java/net/URLConnection.md))`(`ifmodifiedsince:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the value of the`ifModifiedSince`field of this`URLConnection`to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadTimeout](../java/net/URLConnection.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the read timeout to a specified timeout, in milliseconds. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRequestProperty](https://developer.android.com/reference/kotlin/java/net/URLConnection#setRequestProperty(kotlin.String,%20kotlin.String))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the general request property. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseCaches](https://developer.android.com/reference/kotlin/java/net/URLConnection#setUseCaches(kotlin.Boolean))`(`usecaches:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the`useCaches`field of this`URLConnection`to the specified value. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/net/URLConnection#toString())`()` Returns a`String`representation of this URL connection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRequestProperty](../java/net/URLConnection.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the general request property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseCaches](../java/net/URLConnection.md))`(`usecaches:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the value of the`useCaches`field of this`URLConnection`to the specified value. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/URLConnection.md))`()` Returns a`String`representation of this URL connection. |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allowUserInteraction](https://developer.android.com/reference/kotlin/java/net/URLConnection#allowUserInteraction:kotlin.Boolean) If`true`, this`URL`is being examined in a context in which it makes sense to allow user interactions such as popping up an authentication dialog. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [connected](https://developer.android.com/reference/kotlin/java/net/URLConnection#connected:kotlin.Boolean) If`false`, this connection object has not created a communications link to the specified URL. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doInput](https://developer.android.com/reference/kotlin/java/net/URLConnection#doInput:kotlin.Boolean) This variable is set by the`setDoInput`method. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allowUserInteraction](../java/net/URLConnection.md) If`true`, this`URL`is being examined in a context in which it makes sense to allow user interactions such as popping up an authentication dialog. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [connected](../java/net/URLConnection.md) If`false`, this connection object has not created a communications link to the specified URL. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doInput](../java/net/URLConnection.md) This variable is set by the`setDoInput`method. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doOutput](https://developer.android.com/reference/kotlin/java/net/URLConnection#doOutput:kotlin.Boolean) This variable is set by the`setDoOutput`method. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ifModifiedSince](https://developer.android.com/reference/kotlin/java/net/URLConnection#ifModifiedSince:kotlin.Long) Some protocols support skipping the fetching of the object unless the object has been modified more recently than a certain time. |
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL)! | [url](https://developer.android.com/reference/kotlin/java/net/URLConnection#url:java.net.URL) The URL represents the remote object on the World Wide Web to which this connection is opened. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doOutput](../java/net/URLConnection.md) This variable is set by the`setDoOutput`method. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ifModifiedSince](../java/net/URLConnection.md) Some protocols support skipping the fetching of the object unless the object has been modified more recently than a certain time. |
+| [URL](../java/net/URL.md)! | [url](../java/net/URLConnection.md) The URL represents the remote object on the World Wide Web to which this connection is opened. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [useCaches](https://developer.android.com/reference/kotlin/java/net/URLConnection#useCaches:kotlin.Boolean) If`true`, the protocol is allowed to use caching whenever it can. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [useCaches](../java/net/URLConnection.md) If`true`, the protocol is allowed to use caching whenever it can. |
 
 ## Protected constructors
 
@@ -180,7 +180,7 @@ Constructs a URL connection to the specified URL. A connection to the object ref
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------|
-| `url` | [URL](https://developer.android.com/reference/kotlin/java/net/URL)!:the specified URL. |
+| `url` | [URL](../java/net/URL.md)!:the specified URL. |
 
 ## Public methods
 
@@ -232,9 +232,9 @@ URLConnection objects go through two phases: first they are created, then they a
 
 **See Also**
 
-- [java.net.URLConnection#connected](https://developer.android.com/reference/kotlin/java/net/URLConnection#connected:kotlin.Boolean)
+- [java.net.URLConnection#connected](../java/net/URLConnection.md)
 - <https://developer.android.com/reference/kotlin/java/net/URLConnection#getConnectTimeout()>
-- [#setConnectTimeout(int)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setConnectTimeout(kotlin.Int)) 
+- [#setConnectTimeout(int)](../java/net/URLConnection.md)) 
 
 ### getAllowUserInteraction
 
@@ -252,7 +252,7 @@ Returns the value of the`allowUserInteraction`field for this object.
 
 **See Also**
 
-- [#setAllowUserInteraction(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setAllowUserInteraction(kotlin.Boolean)) 
+- [#setAllowUserInteraction(boolean)](../java/net/URLConnection.md)) 
 
 ### getConnectTimeout
 
@@ -272,7 +272,7 @@ Returns setting for connect timeout.
 
 **See Also**
 
-- [#setConnectTimeout(int)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setConnectTimeout(kotlin.Int))
+- [#setConnectTimeout(int)](../java/net/URLConnection.md))
 - <https://developer.android.com/reference/kotlin/java/net/URLConnection#connect()> 
 
 ### getContent
@@ -307,9 +307,9 @@ This method first determines the content type of the object by calling the`getCo
 
 **See Also**
 
-- [java.net.ContentHandlerFactory#createContentHandler(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/ContentHandlerFactory#createContentHandler(kotlin.String))
-- [java.net.URLConnection#getContentType()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentType())
-- [java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)) 
+- [java.net.ContentHandlerFactory#createContentHandler(java.lang.String)](../java/net/ContentHandlerFactory.md))
+- [java.net.URLConnection#getContentType()](../java/net/URLConnection.md))
+- [java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)](../java/net/URLConnection.md)) 
 
 ### getContent
 
@@ -323,7 +323,7 @@ Retrieves the contents of this URL connection.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `classes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>!:the`Class`array indicating the requested types |
+| `classes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>!:the`Class`array indicating the requested types |
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -336,10 +336,10 @@ Retrieves the contents of this URL connection.
 
 **See Also**
 
-- [java.net.URLConnection#getContent()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContent())
-- [java.net.ContentHandlerFactory#createContentHandler(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/ContentHandlerFactory#createContentHandler(kotlin.String))
+- [java.net.URLConnection#getContent()](../java/net/URLConnection.md))
+- [java.net.ContentHandlerFactory#createContentHandler(java.lang.String)](../java/net/ContentHandlerFactory.md))
 - [java.net.URLConnection#getContent(java.lang.Class[])](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContent(kotlin.Array))
-- [java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)) 
+- [java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)](../java/net/URLConnection.md)) 
 
 ### getContentEncoding
 
@@ -357,7 +357,7 @@ Returns the value of the`content-encoding`header field.
 
 **See Also**
 
-- [java.net.URLConnection#getHeaderField(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderField(kotlin.String)) 
+- [java.net.URLConnection#getHeaderField(java.lang.String)](../java/net/URLConnection.md)) 
 
 ### getContentLength
 
@@ -369,7 +369,7 @@ open fun getContentLength(): Int
 
 Returns the value of the`content-length`header field.
 
-**Note** : [getContentLengthLong()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentLengthLong())should be preferred over this method, since it returns a`long`instead and is therefore more portable.
+**Note** : [getContentLengthLong()](../java/net/URLConnection.md))should be preferred over this method, since it returns a`long`instead and is therefore more portable.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -405,7 +405,7 @@ Returns the value of the`content-type`header field.
 
 **See Also**
 
-- [java.net.URLConnection#getHeaderField(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderField(kotlin.String)) 
+- [java.net.URLConnection#getHeaderField(java.lang.String)](../java/net/URLConnection.md)) 
 
 ### getDate
 
@@ -423,7 +423,7 @@ Returns the value of the`date`header field.
 
 **See Also**
 
-- [java.net.URLConnection#getHeaderField(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderField(kotlin.String)) 
+- [java.net.URLConnection#getHeaderField(java.lang.String)](../java/net/URLConnection.md)) 
 
 ### getDefaultAllowUserInteraction
 
@@ -443,7 +443,7 @@ Ths default is "sticky", being a part of the static state of all URLConnections.
 
 **See Also**
 
-- [#setDefaultAllowUserInteraction(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultAllowUserInteraction(kotlin.Boolean)) 
+- [#setDefaultAllowUserInteraction(boolean)](../java/net/URLConnection.md)) 
 
 ### getDefaultRequestProperty
 
@@ -468,8 +468,8 @@ Returns the value of the default request property. Default request properties ar
 
 **See Also**
 
-- [java.net.URLConnection#getRequestProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getRequestProperty(kotlin.String))
-- [#setDefaultRequestProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultRequestProperty(kotlin.String,%20kotlin.String)) 
+- [java.net.URLConnection#getRequestProperty(java.lang.String)](../java/net/URLConnection.md))
+- [#setDefaultRequestProperty(java.lang.String, java.lang.String)](../java/net/URLConnection.md)) 
 
 ### getDefaultUseCaches
 
@@ -489,7 +489,7 @@ Ths default is "sticky", being a part of the static state of all URLConnections.
 
 **See Also**
 
-- [#setDefaultUseCaches(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultUseCaches(kotlin.Boolean)) 
+- [#setDefaultUseCaches(boolean)](../java/net/URLConnection.md)) 
 
 ### getDoInput
 
@@ -507,7 +507,7 @@ Returns the value of this`URLConnection`'s`doInput`flag.
 
 **See Also**
 
-- [#setDoInput(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDoInput(kotlin.Boolean)) 
+- [#setDoInput(boolean)](../java/net/URLConnection.md)) 
 
 ### getDoOutput
 
@@ -525,7 +525,7 @@ Returns the value of this`URLConnection`'s`doOutput`flag.
 
 **See Also**
 
-- [#setDoOutput(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDoOutput(kotlin.Boolean)) 
+- [#setDoOutput(boolean)](../java/net/URLConnection.md)) 
 
 ### getExpiration
 
@@ -543,7 +543,7 @@ Returns the value of the`expires`header field.
 
 **See Also**
 
-- [java.net.URLConnection#getHeaderField(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderField(kotlin.String)) 
+- [java.net.URLConnection#getHeaderField(java.lang.String)](../java/net/URLConnection.md)) 
 
 ### getFileNameMap
 
@@ -553,10 +553,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getFileNameMap(): FileNameMap!
 ```
 
-Returns a [FileNameMap](https://developer.android.com/reference/kotlin/java/net/FileNameMap) implementation suitable for guessing a content type based on a URL's "file" component. 
+Returns a [FileNameMap](../java/net/FileNameMap.md) implementation suitable for guessing a content type based on a URL's "file" component. 
 **See Also**
 
-- [#guessContentTypeFromName(String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#guessContentTypeFromName(kotlin.String))
+- [#guessContentTypeFromName(String)](../java/net/URLConnection.md))
 - <https://developer.android.com/reference/kotlin/java/net/URLConnection#setFileNameMap(java.net.FileNameMap)> 
 
 ### getHeaderField
@@ -569,7 +569,7 @@ open fun getHeaderField(n: Int): String!
 
 Returns the value for the`n`th header field. It returns`null`if there are fewer than`n+1`fields.
 
-This method can be used in conjunction with the [getHeaderFieldKey](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderFieldKey(kotlin.Int))method to iterate through all the headers in the message.
+This method can be used in conjunction with the [getHeaderFieldKey](../java/net/URLConnection.md))method to iterate through all the headers in the message.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------|
@@ -581,7 +581,7 @@ This method can be used in conjunction with the [getHeaderFieldKey](https://deve
 
 **See Also**
 
-- [java.net.URLConnection#getHeaderFieldKey(int)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderFieldKey(kotlin.Int)) 
+- [java.net.URLConnection#getHeaderFieldKey(int)](../java/net/URLConnection.md)) 
 
 ### getHeaderField
 
@@ -723,7 +723,7 @@ Returns the value of this object's`ifModifiedSince`field.
 
 **See Also**
 
-- [#setIfModifiedSince(long)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setIfModifiedSince(kotlin.Long)) 
+- [#setIfModifiedSince(long)](../java/net/URLConnection.md)) 
 
 ### getInputStream
 
@@ -737,7 +737,7 @@ Returns an input stream that reads from this open connection. A SocketTimeoutExc
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)! | an input stream that reads from this open connection. |
+| [InputStream](../java/io/InputStream.md)! | an input stream that reads from this open connection. |
 
 | Exceptions ||
 |------------------------------------|---------------------------------------------------------|
@@ -746,7 +746,7 @@ Returns an input stream that reads from this open connection. A SocketTimeoutExc
 
 **See Also**
 
-- [#setReadTimeout(int)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setReadTimeout(kotlin.Int))
+- [#setReadTimeout(int)](../java/net/URLConnection.md))
 - <https://developer.android.com/reference/kotlin/java/net/URLConnection#getReadTimeout()> 
 
 ### getLastModified
@@ -765,7 +765,7 @@ Returns the value of the`last-modified`header field. The result is the number of
 
 **See Also**
 
-- [java.net.URLConnection#getHeaderField(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getHeaderField(kotlin.String)) 
+- [java.net.URLConnection#getHeaderField(java.lang.String)](../java/net/URLConnection.md)) 
 
 ### getOutputStream
 
@@ -779,7 +779,7 @@ Returns an output stream that writes to this connection.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [OutputStream](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)! | an output stream that writes to this connection. |
+| [OutputStream](../java/io/OutputStream.md)! | an output stream that writes to this connection. |
 
 | Exceptions ||
 |------------------------------------|----------------------------------------------------------|
@@ -802,7 +802,7 @@ Permissions are generally used for two purposes: to protect caches of objects ob
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Permission](https://developer.android.com/reference/kotlin/java/security/Permission.html#)! | the permission object representing the permission necessary to make the connection represented by this URLConnection. |
+| [Permission](../java/security/Permission.md)! | the permission object representing the permission necessary to make the connection represented by this URLConnection. |
 
 | Exceptions ||
 |-----------------------|---------------------------------------------------------------------------------------------------------------|
@@ -824,8 +824,8 @@ Returns setting for read timeout. 0 return implies that the option is disabled (
 
 **See Also**
 
-- [#setReadTimeout(int)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setReadTimeout(kotlin.Int))
-- [java.io.InputStream#read()](https://developer.android.com/reference/kotlin/java/io/InputStream.html#read()) 
+- [#setReadTimeout(int)](../java/net/URLConnection.md))
+- [java.io.InputStream#read()](../java/io/InputStream.md)) 
 
 ### getRequestProperties
 
@@ -869,7 +869,7 @@ Returns the value of the named general request property for this connection.
 
 **See Also**
 
-- [#setRequestProperty(java.lang.String, java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setRequestProperty(kotlin.String,%20kotlin.String)) 
+- [#setRequestProperty(java.lang.String, java.lang.String)](../java/net/URLConnection.md)) 
 
 ### getURL
 
@@ -883,11 +883,11 @@ Returns the value of this`URLConnection`'s`URL`field.
 
 | Return ||
 |---------------------------------------------------------------------|-----------------------------------------------|
-| [URL](https://developer.android.com/reference/kotlin/java/net/URL)! | the value of this`URLConnection`'s`URL`field. |
+| [URL](../java/net/URL.md)! | the value of this`URLConnection`'s`URL`field. |
 
 **See Also**
 
-- [java.net.URLConnection#url](https://developer.android.com/reference/kotlin/java/net/URLConnection#url:java.net.URL) 
+- [java.net.URLConnection#url](../java/net/URLConnection.md) 
 
 ### getUseCaches
 
@@ -905,7 +905,7 @@ Returns the value of this`URLConnection`'s`useCaches`field.
 
 **See Also**
 
-- [#setUseCaches(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setUseCaches(kotlin.Boolean)) 
+- [#setUseCaches(boolean)](../java/net/URLConnection.md)) 
 
 ### guessContentTypeFromName
 
@@ -927,7 +927,7 @@ Tries to determine the content type of an object, based on the specified "file" 
 
 **See Also**
 
-- [java.net.URLConnection#getContentType()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentType()) 
+- [java.net.URLConnection#getContentType()](../java/net/URLConnection.md)) 
 
 ### guessContentTypeFromStream
 
@@ -943,7 +943,7 @@ Ideally, this routine would not be needed. But many`http`servers return the inco
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------|
-| `is` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:an input stream that supports marks. |
+| `is` | [InputStream](../java/io/InputStream.md)!:an input stream that supports marks. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -955,9 +955,9 @@ Ideally, this routine would not be needed. But many`http`servers return the inco
 
 **See Also**
 
-- [java.io.InputStream#mark(int)](https://developer.android.com/reference/kotlin/java/io/InputStream.html#mark(kotlin.Int))
-- [java.io.InputStream#markSupported()](https://developer.android.com/reference/kotlin/java/io/InputStream.html#markSupported())
-- [java.net.URLConnection#getContentType()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContentType()) 
+- [java.io.InputStream#mark(int)](../java/io/InputStream.md))
+- [java.io.InputStream#markSupported()](../java/io/InputStream.md))
+- [java.net.URLConnection#getContentType()](../java/net/URLConnection.md)) 
 
 ### setAllowUserInteraction
 
@@ -993,7 +993,7 @@ Sets a specified timeout value, in milliseconds, to be used when opening a commu
 
 Some non-standard implementation of this method may ignore the specified timeout. To see the connect timeout set, please call getConnectTimeout().
 
-**Warning** : If the hostname resolves to multiple IP addresses, Android's default implementation of [HttpURLConnection](https://developer.android.com/reference/kotlin/java/net/HttpURLConnection) will try each in [RFC 3484](http://www.ietf.org/rfc/rfc3484.txt) order. If connecting to each of these addresses fails, multiple timeouts will elapse before the connect attempt throws an exception. Host names that support both IPv6 and IPv4 always have at least 2 IP addresses.
+**Warning** : If the hostname resolves to multiple IP addresses, Android's default implementation of [HttpURLConnection](../java/net/HttpURLConnection.md) will try each in [RFC 3484](http://www.ietf.org/rfc/rfc3484.txt) order. If connecting to each of these addresses fails, multiple timeouts will elapse before the connect attempt throws an exception. Host names that support both IPv6 and IPv4 always have at least 2 IP addresses.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1024,7 +1024,7 @@ If there is a security manager, this method first calls the security manager's`c
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------|
-| `fac` | [ContentHandlerFactory](https://developer.android.com/reference/kotlin/java/net/ContentHandlerFactory)!:the desired factory. |
+| `fac` | [ContentHandlerFactory](../java/net/ContentHandlerFactory.md)!:the desired factory. |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------|
@@ -1033,9 +1033,9 @@ If there is a security manager, this method first calls the security manager's`c
 
 **See Also**
 
-- [java.net.ContentHandlerFactory](https://developer.android.com/reference/kotlin/java/net/ContentHandlerFactory)
-- [java.net.URLConnection#getContent()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getContent())
-- [java.lang.SecurityManager#checkSetFactory](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSetFactory()) 
+- [java.net.ContentHandlerFactory](../java/net/ContentHandlerFactory.md)
+- [java.net.URLConnection#getContent()](../java/net/URLConnection.md))
+- [java.lang.SecurityManager#checkSetFactory](../java/lang/SecurityManager.md)) 
 
 ### setDefaultAllowUserInteraction
 
@@ -1078,8 +1078,8 @@ Sets the default value of a general request property. When a`URLConnection`is cr
 
 **See Also**
 
-- [java.net.URLConnection#setRequestProperty(java.lang.String,java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setRequestProperty(kotlin.String,%20kotlin.String))
-- [#getDefaultRequestProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDefaultRequestProperty(kotlin.String)) 
+- [java.net.URLConnection#setRequestProperty(java.lang.String,java.lang.String)](../java/net/URLConnection.md))
+- [#getDefaultRequestProperty(java.lang.String)](../java/net/URLConnection.md)) 
 
 ### setDefaultUseCaches
 
@@ -1121,7 +1121,7 @@ A URL connection can be used for input and/or output. Set the DoInput flag to tr
 
 **See Also**
 
-- [java.net.URLConnection#doInput](https://developer.android.com/reference/kotlin/java/net/URLConnection#doInput:kotlin.Boolean)
+- [java.net.URLConnection#doInput](../java/net/URLConnection.md)
 - <https://developer.android.com/reference/kotlin/java/net/URLConnection#getDoInput()> 
 
 ### setDoOutput
@@ -1162,7 +1162,7 @@ If there is a security manager, this method first calls the security manager's`c
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------|
-| `map` | [FileNameMap](https://developer.android.com/reference/kotlin/java/net/FileNameMap)!:the FileNameMap to be set |
+| `map` | [FileNameMap](../java/net/FileNameMap.md)!:the FileNameMap to be set |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------|
@@ -1170,7 +1170,7 @@ If there is a security manager, this method first calls the security manager's`c
 
 **See Also**
 
-- [java.lang.SecurityManager#checkSetFactory](https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSetFactory())
+- [java.lang.SecurityManager#checkSetFactory](../java/lang/SecurityManager.md))
 - <https://developer.android.com/reference/kotlin/java/net/URLConnection#getFileNameMap()> 
 
 ### setIfModifiedSince
@@ -1218,7 +1218,7 @@ Some non-standard implementation of this method ignores the specified timeout. T
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/net/URLConnection#getReadTimeout()>
-- [java.io.InputStream#read()](https://developer.android.com/reference/kotlin/java/io/InputStream.html#read()) 
+- [java.io.InputStream#read()](../java/io/InputStream.md)) 
 
 ### setRequestProperty
 
@@ -1247,7 +1247,7 @@ NOTE: HTTP requires all request properties which can legally have multiple insta
 
 **See Also**
 
-- [#getRequestProperty(java.lang.String)](https://developer.android.com/reference/kotlin/java/net/URLConnection#getRequestProperty(kotlin.String)) 
+- [#getRequestProperty(java.lang.String)](../java/net/URLConnection.md)) 
 
 ### setUseCaches
 
@@ -1302,9 +1302,9 @@ If`true`, this`URL`is being examined in a context in which it makes sense to all
 The value of this field can be set by the`setAllowUserInteraction`method. Its value is returned by the`getAllowUserInteraction`method. Its default value is the value of the argument in the last invocation of the`setDefaultAllowUserInteraction`method. 
 **See Also**
 
-- [java.net.URLConnection#getAllowUserInteraction()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getAllowUserInteraction())
-- [java.net.URLConnection#setAllowUserInteraction(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setAllowUserInteraction(kotlin.Boolean))
-- [java.net.URLConnection#setDefaultAllowUserInteraction(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultAllowUserInteraction(kotlin.Boolean)) 
+- [java.net.URLConnection#getAllowUserInteraction()](../java/net/URLConnection.md))
+- [java.net.URLConnection#setAllowUserInteraction(boolean)](../java/net/URLConnection.md))
+- [java.net.URLConnection#setDefaultAllowUserInteraction(boolean)](../java/net/URLConnection.md)) 
 
 ### connected
 
@@ -1331,8 +1331,8 @@ A URL connection can be used for input and/or output. Setting the`doInput`flag t
 The default value of this field is`true`. 
 **See Also**
 
-- [java.net.URLConnection#getDoInput()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDoInput())
-- [java.net.URLConnection#setDoInput(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDoInput(kotlin.Boolean)) 
+- [java.net.URLConnection#getDoInput()](../java/net/URLConnection.md))
+- [java.net.URLConnection#setDoInput(boolean)](../java/net/URLConnection.md)) 
 
 ### doOutput
 
@@ -1349,8 +1349,8 @@ A URL connection can be used for input and/or output. Setting the`doOutput`flag 
 The default value of this field is`false`. 
 **See Also**
 
-- [java.net.URLConnection#getDoOutput()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getDoOutput())
-- [java.net.URLConnection#setDoOutput(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDoOutput(kotlin.Boolean)) 
+- [java.net.URLConnection#getDoOutput()](../java/net/URLConnection.md))
+- [java.net.URLConnection#setDoOutput(boolean)](../java/net/URLConnection.md)) 
 
 ### ifModifiedSince
 
@@ -1369,8 +1369,8 @@ This variable is set by the`setIfModifiedSince`method. Its value is returned by 
 The default value of this field is`0`, indicating that the fetching must always occur. 
 **See Also**
 
-- [java.net.URLConnection#getIfModifiedSince()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getIfModifiedSince())
-- [java.net.URLConnection#setIfModifiedSince(long)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setIfModifiedSince(kotlin.Long)) 
+- [java.net.URLConnection#getIfModifiedSince()](../java/net/URLConnection.md))
+- [java.net.URLConnection#setIfModifiedSince(long)](../java/net/URLConnection.md)) 
 
 ### url
 
@@ -1387,8 +1387,8 @@ The value of this field can be accessed by the`getURL`method.
 The default value of this variable is the value of the URL argument in the`URLConnection`constructor. 
 **See Also**
 
-- [java.net.URLConnection#getURL()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getURL())
-- [java.net.URLConnection#url](https://developer.android.com/reference/kotlin/java/net/URLConnection#url:java.net.URL) 
+- [java.net.URLConnection#getURL()](../java/net/URLConnection.md))
+- [java.net.URLConnection#url](../java/net/URLConnection.md) 
 
 ### useCaches
 
@@ -1405,6 +1405,6 @@ This field is set by the`setUseCaches`method. Its value is returned by the`getUs
 Its default value is the value given in the last invocation of the`setDefaultUseCaches`method. 
 **See Also**
 
-- [java.net.URLConnection#setUseCaches(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setUseCaches(kotlin.Boolean))
-- [java.net.URLConnection#getUseCaches()](https://developer.android.com/reference/kotlin/java/net/URLConnection#getUseCaches())
-- [java.net.URLConnection#setDefaultUseCaches(boolean)](https://developer.android.com/reference/kotlin/java/net/URLConnection#setDefaultUseCaches(kotlin.Boolean))
+- [java.net.URLConnection#setUseCaches(boolean)](../java/net/URLConnection.md))
+- [java.net.URLConnection#getUseCaches()](../java/net/URLConnection.md))
+- [java.net.URLConnection#setDefaultUseCaches(boolean)](../java/net/URLConnection.md))

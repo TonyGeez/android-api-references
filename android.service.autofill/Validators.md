@@ -4,7 +4,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 
 # Validators
 
-Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/Validators "View this page in Java") 
+Kotlin| [Java](../android/service/autofill/Validators.md) 
 | --- | --- |
 
 ```
@@ -13,19 +13,19 @@ class Validators
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.Validators](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#) |
+| ↳ | [android.service.autofill.Validators](../android/service/autofill/Validators.md) |
 
-Factory for [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) operations.
+Factory for [Validator](../android/service/autofill/Validator.md) operations.
 
-See [SaveInfo.Builder.setValidator(Validator)](https://developer.android.com/reference/kotlin/android/service/autofill/SaveInfo.Builder#setValidator(android.service.autofill.Validator))for examples.
+See [SaveInfo.Builder.setValidator(Validator)](../android/service/autofill/SaveInfo.Builder.md))for examples.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | [and](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#and(android.service.autofill.Validator))`(`vararg` `validators:` ` [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)!`)` Creates a validator that is only valid if all`validators`are valid. |
-| static [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | [not](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#not(android.service.autofill.Validator))`(`validator:` ` [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)`)` Creates a validator that is valid when`validator`is not, and vice versa. |
-| static [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | [or](https://developer.android.com/reference/kotlin/android/service/autofill/Validators#or(android.service.autofill.Validator))`(`vararg` `validators:` ` [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)!`)` Creates a validator that is valid if any of the`validators`is valid. |
+| static [Validator](../android/service/autofill/Validator.md) | [and](../android/service/autofill/Validators.md))`(`vararg` `validators:` ` [Validator](../android/service/autofill/Validator.md)!`)` Creates a validator that is only valid if all`validators`are valid. |
+| static [Validator](../android/service/autofill/Validator.md) | [not](../android/service/autofill/Validators.md))`(`validator:` ` [Validator](../android/service/autofill/Validator.md)`)` Creates a validator that is valid when`validator`is not, and vice versa. |
+| static [Validator](../android/service/autofill/Validator.md) | [or](../android/service/autofill/Validators.md))`(`vararg` `validators:` ` [Validator](../android/service/autofill/Validator.md)!`)` Creates a validator that is valid if any of the`validators`is valid. |
 | --- | --- |
 
 ## Public methods
@@ -44,11 +44,11 @@ Used to represent an`AND`boolean operation in a chain of validators.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `validators` | [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)!:This value cannot be`null`. |
+| `validators` | [Validator](../android/service/autofill/Validator.md)!:This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------|
-| [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | This value cannot be`null`. |
+| [Validator](../android/service/autofill/Validator.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -68,11 +68,11 @@ Used to represent a`NOT`boolean operation in a chain of validators.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------|
-| `validator` | [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator):This value cannot be`null`. |
+| `validator` | [Validator](../android/service/autofill/Validator.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------|
-| [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | This value cannot be`null`. |
+| [Validator](../android/service/autofill/Validator.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------|
@@ -92,11 +92,11 @@ Used to represent an`OR`boolean operation in a chain of validators.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `validators` | [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator)!:This value cannot be`null`. |
+| `validators` | [Validator](../android/service/autofill/Validator.md)!:This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------|
-| [Validator](https://developer.android.com/reference/kotlin/android/service/autofill/Validator) | This value cannot be`null`. |
+| [Validator](../android/service/autofill/Validator.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------|

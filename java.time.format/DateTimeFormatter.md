@@ -8,7 +8,7 @@ class DateTimeFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.format.DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#) |
+| ↳ | [java.time.format.DateTimeFormatter](../java/time/format/DateTimeFormatter.md) |
 
 Formatter for printing and parsing date-time objects.
 
@@ -167,9 +167,9 @@ If the pattern letter is 'v' the output provides the zone name ignoring daylight
 
 **Offset X and x** : This formats the offset based on the number of pattern letters. One letter outputs just the hour, such as '+01', unless the minute is non-zero in which case the minute is also output, such as '+0130'. Two letters outputs the hour and minute, without a colon, such as '+0130'. Three letters outputs the hour and minute, with a colon, such as '+01:30'. Four letters outputs the hour and minute and optional second, without a colon, such as '+013015'. Five letters outputs the hour and minute and optional second, with a colon, such as '+01:30:15'. Six or more letters throws `IllegalArgumentException`. Pattern letter 'X' (upper case) will output 'Z' when the offset to be output would be zero, whereas pattern letter 'x' (lower case) will output '+00', '+0000', or '+00:00'.
 
-**Offset O** : With a non-zero offset, this formats the localized offset based on the number of pattern letters. One letter outputs the [short](https://developer.android.com/reference/kotlin/java/time/format/TextStyle) form of the localized offset, which is localized offset text, such as 'GMT', with hour without leading zero, optional 2-digit minute and second if non-zero, and colon, for example 'GMT+8'. Four letters outputs the [full](https://developer.android.com/reference/kotlin/java/time/format/TextStyle) form, which is localized offset text, such as 'GMT, with 2-digit hour and minute field, optional second field if non-zero, and colon, for example 'GMT+08:00'. If the offset is zero, only localized text is output. Any other count of letters throws `IllegalArgumentException`.
+**Offset O** : With a non-zero offset, this formats the localized offset based on the number of pattern letters. One letter outputs the [short](../java/time/format/TextStyle.md) form of the localized offset, which is localized offset text, such as 'GMT', with hour without leading zero, optional 2-digit minute and second if non-zero, and colon, for example 'GMT+8'. Four letters outputs the [full](../java/time/format/TextStyle.md) form, which is localized offset text, such as 'GMT, with 2-digit hour and minute field, optional second field if non-zero, and colon, for example 'GMT+08:00'. If the offset is zero, only localized text is output. Any other count of letters throws `IllegalArgumentException`.
 
-**Offset Z** : This formats the offset based on the number of pattern letters. One, two or three letters outputs the hour and minute, without a colon, such as '+0130'. The output will be '+0000' when the offset is zero. Four letters outputs the [full](https://developer.android.com/reference/kotlin/java/time/format/TextStyle) form of localized offset, equivalent to four letters of Offset-O. The output will be the corresponding localized offset text if the offset is zero. Five letters outputs the hour, minute, with optional second if non-zero, with colon. It outputs 'Z' if the offset is zero. Six or more letters throws `IllegalArgumentException`.
+**Offset Z** : This formats the offset based on the number of pattern letters. One, two or three letters outputs the hour and minute, without a colon, such as '+0130'. The output will be '+0000' when the offset is zero. Four letters outputs the [full](../java/time/format/TextStyle.md) form of localized offset, equivalent to four letters of Offset-O. The output will be the corresponding localized offset text if the offset is zero. Five letters outputs the hour, minute, with optional second if non-zero, with colon. It outputs 'Z' if the offset is zero. Six or more letters throws `IllegalArgumentException`.
 
 **Optional section** : The optional section markers work exactly like calling `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalStart()` and `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalEnd()`.
 
@@ -200,7 +200,7 @@ Resolving separate fields to form a complete date and time is a complex process 
 5. The `ChronoField` date and time fields are re-resolved. This allows fields in step four to produce `ChronoField` values and have them be processed into dates and times.
 6. A `LocalTime` is formed if there is at least an hour-of-day available. This involves providing default values for minute, second and fraction of second.
 7. Any remaining unresolved fields are cross-checked against any date and/or time that was resolved. Thus, an earlier stage would resolve (year + month + day-of-month) to a date, and this stage would check that day-of-week was valid for the date.
-8. If an [excess number of days](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parsedExcessDays()) was parsed then it is added to the date if a date is available.
+8. If an [excess number of days](../java/time/format/DateTimeFormatter.md)) was parsed then it is added to the date if a date is available.
 9. If a second-based field is present, but `LocalTime` was not parsed, then the resolver ensures that milli, micro and nano second values are available to meet the contract of `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#`. These will be set to zero if missing.
 10. If both date and time were parsed and either an offset or zone is present, the field `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#` is created. If an offset was parsed then the offset will be combined with the `LocalDateTime` to form the instant, with any zone ignored. If a `ZoneId` was parsed without an offset then the zone will be combined with the `LocalDateTime` to form the instant using the rules of `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDateTime.html#atZone(java.time.ZoneId)`. If the `ZoneId` was parsed from a zone name that indicates whether daylight saving time is in operation or not, then that fact will be used to select the correct offset at the local time-line overlap.
 
@@ -210,70 +210,70 @@ Resolving separate fields to form a complete date and time is a complex process 
 |---|---|
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#format(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Formats a date-time object using this formatter. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#formatTo(java.time.temporal.TemporalAccessor,%20java.lang.Appendable)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!, appendable: https://developer.android.com/reference/kotlin/java/lang/Appendable.html#!)` Formats a date-time object to an `Appendable` using this formatter. |
-| [Chronology](https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getChronology()()` Gets the overriding chronology to be used during formatting. |
+| [Chronology](../java/time/chrono/Chronology.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getChronology()()` Gets the overriding chronology to be used during formatting. |
 | --- | --- |
-| [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getDecimalStyle()()` Gets the DecimalStyle to be used during formatting. |
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getLocale()()` Gets the locale to be used during formatting. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!\>! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getResolverFields()()` Gets the resolver fields to use during parsing. |
+| [DecimalStyle](../java/time/format/DecimalStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getDecimalStyle()()` Gets the DecimalStyle to be used during formatting. |
+| [Locale](../java/util/Locale.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getLocale()()` Gets the locale to be used during formatting. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TemporalField](../java/time/temporal/TemporalField.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getResolverFields()()` Gets the resolver fields to use during parsing. |
 | --- | --- |
-| [ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getResolverStyle()()` Gets the resolver style to use during parsing. |
-| [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getZone()()` Gets the overriding zone to be used during formatting. |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#localizedBy(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a copy of this formatter with localized values of the locale, calendar, decimal style and/or timezone, that superseded values in this formatter. |
+| [ResolverStyle](../java/time/format/ResolverStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getResolverStyle()()` Gets the resolver style to use during parsing. |
+| [ZoneId](../java/time/ZoneId.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getZone()()` Gets the overriding zone to be used during formatting. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#localizedBy(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a copy of this formatter with localized values of the locale, calendar, decimal style and/or timezone, that superseded values in this formatter. |
 | --- | --- |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedDate(java.time.format.FormatStyle)(dateStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific date format for the ISO chronology. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedDateTime(java.time.format.FormatStyle)(dateTimeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific date-time formatter for the ISO chronology. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedDateTime(java.time.format.FormatStyle,%20java.time.format.FormatStyle)(dateStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!, timeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific date and time format for the ISO chronology. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedDate(java.time.format.FormatStyle)(dateStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific date format for the ISO chronology. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedDateTime(java.time.format.FormatStyle)(dateTimeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific date-time formatter for the ISO chronology. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedDateTime(java.time.format.FormatStyle,%20java.time.format.FormatStyle)(dateStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!, timeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific date and time format for the ISO chronology. |
 | --- | --- |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#) | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedPattern(kotlin.String)(requestedTemplate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a locale specific formatter derived from the requested template for the ISO chronology. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedTime(java.time.format.FormatStyle)(timeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific time format for the ISO chronology. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofPattern(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a formatter using the specified pattern. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md) | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedPattern(kotlin.String)(requestedTemplate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a locale specific formatter derived from the requested template for the ISO chronology. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofLocalizedTime(java.time.format.FormatStyle)(timeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Returns a locale specific time format for the ISO chronology. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofPattern(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a formatter using the specified pattern. |
 | --- | --- |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofPattern(kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a formatter using the specified pattern and locale. |
-| [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Fully parses the text producing a temporal object. |
-| [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parse(kotlin.CharSequence,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, position: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses the text using this formatter, providing control over the text position. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofPattern(kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a formatter using the specified pattern and locale. |
+| [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Fully parses the text producing a temporal object. |
+| [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parse(kotlin.CharSequence,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, position: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses the text using this formatter, providing control over the text position. |
 | --- | --- |
 | T | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parse(kotlin.CharSequence,%20java.time.temporal.TemporalQuery)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#<T>!)` Fully parses the text producing an object of the specified type. |
-| [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parseBest(kotlin.CharSequence,%20java.time.temporal.TemporalQuery)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, vararg queries: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#<*>!)` Fully parses the text producing an object of one of the specified types. |
-| [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parseUnresolved(kotlin.CharSequence,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, position: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses the text using this formatter, without resolving the result, intended for advanced use cases. |
+| [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parseBest(kotlin.CharSequence,%20java.time.temporal.TemporalQuery)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, vararg queries: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#<*>!)` Fully parses the text producing an object of one of the specified types. |
+| [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parseUnresolved(kotlin.CharSequence,%20java.text.ParsePosition)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, position: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Parses the text using this formatter, without resolving the result, intended for advanced use cases. |
 | --- | --- |
-| static [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)\< [Period](https://developer.android.com/reference/kotlin/java/time/Period.html#)!\>! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parsedExcessDays()()` A query that provides access to the excess days that were parsed. |
-| static [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parsedLeapSecond()()` A query that provides access to whether a leap-second was parsed. |
-| [Format](https://developer.android.com/reference/kotlin/java/text/Format.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#toFormat()()` Returns this formatter as a `java.text.Format` instance. |
+| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [Period](../java/time/Period.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parsedExcessDays()()` A query that provides access to the excess days that were parsed. |
+| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parsedLeapSecond()()` A query that provides access to whether a leap-second was parsed. |
+| [Format](../java/text/Format.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#toFormat()()` Returns this formatter as a `java.text.Format` instance. |
 | --- | --- |
-| [Format](https://developer.android.com/reference/kotlin/java/text/Format.html#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#toFormat(java.time.temporal.TemporalQuery)(parseQuery: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#<*>!)` Returns this formatter as a `java.text.Format` instance that will parse using the specified query. |
+| [Format](../java/text/Format.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#toFormat(java.time.temporal.TemporalQuery)(parseQuery: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#<*>!)` Returns this formatter as a `java.text.Format` instance that will parse using the specified query. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#toString()()` Returns a description of the underlying formatters. |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withChronology(java.time.chrono.Chronology)(chrono: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#!)` Returns a copy of this formatter with a new override chronology. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withChronology(java.time.chrono.Chronology)(chrono: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#!)` Returns a copy of this formatter with a new override chronology. |
 | --- | --- |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withDecimalStyle(java.time.format.DecimalStyle)(decimalStyle: https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle!)` Returns a copy of this formatter with a new DecimalStyle. |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withLocale(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a copy of this formatter with a new locale. |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withResolverFields(java.time.temporal.TemporalField)(vararg resolverFields: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Returns a copy of this formatter with a new set of resolver fields. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withDecimalStyle(java.time.format.DecimalStyle)(decimalStyle: https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle!)` Returns a copy of this formatter with a new DecimalStyle. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withLocale(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a copy of this formatter with a new locale. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withResolverFields(java.time.temporal.TemporalField)(vararg resolverFields: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Returns a copy of this formatter with a new set of resolver fields. |
 | --- | --- |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withResolverFields(kotlin.collections.MutableSet)(resolverFields: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!>!)` Returns a copy of this formatter with a new set of resolver fields. |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withResolverStyle(java.time.format.ResolverStyle)(resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle!)` Returns a copy of this formatter with a new resolver style. |
-| [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withZone(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Returns a copy of this formatter with a new override zone. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withResolverFields(kotlin.collections.MutableSet)(resolverFields: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!>!)` Returns a copy of this formatter with a new set of resolver fields. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withResolverStyle(java.time.format.ResolverStyle)(resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle!)` Returns a copy of this formatter with a new resolver style. |
+| [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withZone(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Returns a copy of this formatter with a new override zone. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#BASIC_ISO_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date without an offset, such as '20111203'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date with the offset if available, such as '2011-12-03' or '2011-12-03+01:00'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_DATE_TIME:java.time.format.DateTimeFormatter` The ISO-like date-time formatter that formats or parses a date-time with the offset and zone if available, such as '2011-12-03T10:15:30', '2011-12-03T10:15:30+01:00' or '2011-12-03T10:15:30+01:00\[Europe/Paris\]'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#BASIC_ISO_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date without an offset, such as '20111203'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date with the offset if available, such as '2011-12-03' or '2011-12-03+01:00'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_DATE_TIME:java.time.format.DateTimeFormatter` The ISO-like date-time formatter that formats or parses a date-time with the offset and zone if available, such as '2011-12-03T10:15:30', '2011-12-03T10:15:30+01:00' or '2011-12-03T10:15:30+01:00\[Europe/Paris\]'. |
 | --- | --- |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_INSTANT:java.time.format.DateTimeFormatter` The ISO instant formatter that formats or parses an instant in UTC, such as '2011-12-03T10:15:30Z'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_LOCAL_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date without an offset, such as '2011-12-03'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_LOCAL_DATE_TIME:java.time.format.DateTimeFormatter` The ISO date-time formatter that formats or parses a date-time without an offset, such as '2011-12-03T10:15:30'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_INSTANT:java.time.format.DateTimeFormatter` The ISO instant formatter that formats or parses an instant in UTC, such as '2011-12-03T10:15:30Z'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_LOCAL_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date without an offset, such as '2011-12-03'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_LOCAL_DATE_TIME:java.time.format.DateTimeFormatter` The ISO date-time formatter that formats or parses a date-time without an offset, such as '2011-12-03T10:15:30'. |
 | --- | --- |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_LOCAL_TIME:java.time.format.DateTimeFormatter` The ISO time formatter that formats or parses a time without an offset, such as '10:15' or '10:15:30'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_OFFSET_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date with an offset, such as '2011-12-03+01:00'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_OFFSET_DATE_TIME:java.time.format.DateTimeFormatter` The ISO date-time formatter that formats or parses a date-time with an offset, such as '2011-12-03T10:15:30+01:00'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_LOCAL_TIME:java.time.format.DateTimeFormatter` The ISO time formatter that formats or parses a time without an offset, such as '10:15' or '10:15:30'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_OFFSET_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses a date with an offset, such as '2011-12-03+01:00'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_OFFSET_DATE_TIME:java.time.format.DateTimeFormatter` The ISO date-time formatter that formats or parses a date-time with an offset, such as '2011-12-03T10:15:30+01:00'. |
 | --- | --- |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_OFFSET_TIME:java.time.format.DateTimeFormatter` The ISO time formatter that formats or parses a time with an offset, such as '10:15+01:00' or '10:15:30+01:00'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_ORDINAL_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses the ordinal date without an offset, such as '2012-337'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_TIME:java.time.format.DateTimeFormatter` The ISO time formatter that formats or parses a time, with the offset if available, such as '10:15', '10:15:30' or '10:15:30+01:00'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_OFFSET_TIME:java.time.format.DateTimeFormatter` The ISO time formatter that formats or parses a time with an offset, such as '10:15+01:00' or '10:15:30+01:00'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_ORDINAL_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses the ordinal date without an offset, such as '2012-337'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_TIME:java.time.format.DateTimeFormatter` The ISO time formatter that formats or parses a time, with the offset if available, such as '10:15', '10:15:30' or '10:15:30+01:00'. |
 | --- | --- |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_WEEK_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses the week-based date without an offset, such as '2012-W48-6'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_ZONED_DATE_TIME:java.time.format.DateTimeFormatter` The ISO-like date-time formatter that formats or parses a date-time with offset and zone, such as '2011-12-03T10:15:30+01:00\[Europe/Paris\]'. |
-| static [DateTimeFormatter](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#RFC_1123_DATE_TIME:java.time.format.DateTimeFormatter` The RFC-1123 date-time formatter, such as 'Tue, 3 Jun 2008 11:05:30 GMT'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_WEEK_DATE:java.time.format.DateTimeFormatter` The ISO date formatter that formats or parses the week-based date without an offset, such as '2012-W48-6'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ISO_ZONED_DATE_TIME:java.time.format.DateTimeFormatter` The ISO-like date-time formatter that formats or parses a date-time with offset and zone, such as '2011-12-03T10:15:30+01:00\[Europe/Paris\]'. |
+| static [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#RFC_1123_DATE_TIME:java.time.format.DateTimeFormatter` The RFC-1123 date-time formatter, such as 'Tue, 3 Jun 2008 11:05:30 GMT'. |
 | --- | --- |
 
 ## Public methods
@@ -292,7 +292,7 @@ This formats the date-time to a String using the rules of the formatter.
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!: the temporal object to format, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to format, not null |
 
 | Return ||
 |---|---|
@@ -321,8 +321,8 @@ Although `Appendable` methods throw an `IOException`, this method does not. Inst
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#)!: the temporal object to format, not null |
-| `appendable` | [Appendable](https://developer.android.com/reference/kotlin/java/lang/Appendable.html#)!: the appendable to format to, not null |
+| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to format, not null |
+| `appendable` | [Appendable](../java/lang/Appendable.md)!: the appendable to format to, not null |
 
 | Exceptions ||
 |---|---|
@@ -432,7 +432,7 @@ fun localizedBy(locale: Locale!): DateTimeFormatter!
 
 Returns a copy of this formatter with localized values of the locale, calendar, decimal style and/or timezone, that superseded values in this formatter.
 
-This is used to lookup any part of the formatter needing specific localization, such as the text or localized pattern. If the locale contains the "ca" (calendar), "nu" (numbering system) and/or "tz" (timezone) [Unicode extensions](https://developer.android.com/reference/kotlin/java/util/Locale.html#def_locale_extension), the chronology, numbering system and/or the zone are overridden.
+This is used to lookup any part of the formatter needing specific localization, such as the text or localized pattern. If the locale contains the "ca" (calendar), "nu" (numbering system) and/or "tz" (timezone) [Unicode extensions](../java/util/Locale.md), the chronology, numbering system and/or the zone are overridden.
 
 Unlike the `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withLocale(java.util.Locale)` method, the call to this method may produce a different formatter depending on the order of method chaining with other withXXXX() methods.
 
@@ -440,7 +440,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the locale, not null |
+| `locale` | [Locale](../java/util/Locale.md)!: the locale, not null |
 
 | Return ||
 |---|---|
@@ -470,7 +470,7 @@ The returned formatter has a chronology of ISO set to ensure dates in other cale
 
 | Parameters ||
 |---|---|
-| `dateStyle` | [FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle)!: the formatter style to obtain, not null |
+| `dateStyle` | [FormatStyle](../java/time/format/FormatStyle.md)!: the formatter style to obtain, not null |
 
 | Return ||
 |---|---|
@@ -496,7 +496,7 @@ The returned formatter has a chronology of ISO set to ensure dates in other cale
 
 | Parameters ||
 |---|---|
-| `dateTimeStyle` | [FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle)!: the formatter style to obtain, not null |
+| `dateTimeStyle` | [FormatStyle](../java/time/format/FormatStyle.md)!: the formatter style to obtain, not null |
 
 | Return ||
 |---|---|
@@ -525,8 +525,8 @@ The returned formatter has a chronology of ISO set to ensure dates in other cale
 
 | Parameters ||
 |---|---|
-| `dateStyle` | [FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle)!: the date formatter style to obtain, not null |
-| `timeStyle` | [FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle)!: the time formatter style to obtain, not null |
+| `dateStyle` | [FormatStyle](../java/time/format/FormatStyle.md)!: the date formatter style to obtain, not null |
+| `timeStyle` | [FormatStyle](../java/time/format/FormatStyle.md)!: the time formatter style to obtain, not null |
 
 | Return ||
 |---|---|
@@ -540,7 +540,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static fun ofLocalizedPattern(requestedTemplate: String): DateTimeFormatter
 ```
 
-Creates a locale specific formatter derived from the requested template for the ISO chronology. The requested template is a series of typical pattern symbols in canonical order from the largest date or time unit to the smallest, which can be expressed with the following regular expression: {@snippet : \* "G{0,5}" + // Era \* "y\*" + // Year \* "Q{0,5}" + // Quarter \* "M{0,5}" + // Month \* "w\*" + // Week of Week Based Year \* "E{0,5}" + // Day of Week \* "d{0,2}" + // Day of Month \* "B{0,5}" + // Period/AmPm of Day \* "\[hHjC\]{0,2}" + // Hour of Day/AmPm (refer to LDML for 'j' and 'C') \* "m{0,2}" + // Minute of Hour \* "s{0,2}" + // Second of Minute \* "\[vz\]{0,4}" // Zone \* } All pattern symbols are optional, and each pattern symbol represents a field, for example, 'M' represents the Month field. The number of the pattern symbol letters follows the same presentation, such as "number" or "text" as in the [Patterns for Formatting and Parsing](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#patterns) section. Other pattern symbols in the requested template are invalid.
+Creates a locale specific formatter derived from the requested template for the ISO chronology. The requested template is a series of typical pattern symbols in canonical order from the largest date or time unit to the smallest, which can be expressed with the following regular expression: {@snippet : \* "G{0,5}" + // Era \* "y\*" + // Year \* "Q{0,5}" + // Quarter \* "M{0,5}" + // Month \* "w\*" + // Week of Week Based Year \* "E{0,5}" + // Day of Week \* "d{0,2}" + // Day of Month \* "B{0,5}" + // Period/AmPm of Day \* "\[hHjC\]{0,2}" + // Hour of Day/AmPm (refer to LDML for 'j' and 'C') \* "m{0,2}" + // Minute of Hour \* "s{0,2}" + // Second of Minute \* "\[vz\]{0,4}" // Zone \* } All pattern symbols are optional, and each pattern symbol represents a field, for example, 'M' represents the Month field. The number of the pattern symbol letters follows the same presentation, such as "number" or "text" as in the [Patterns for Formatting and Parsing](../java/time/format/DateTimeFormatter.md) section. Other pattern symbols in the requested template are invalid.
 
 The mapping of the requested template to the closest of the available localized formats is defined by the [Unicode LDML specification](https://www.unicode.org/reports/tr35/tr35-dates.html#availableFormats_appendItems). For example, the formatter created from the requested template `yMMM` will format the date '2020-06-16' to 'Jun 2020' in the `https://developer.android.com/reference/kotlin/java/util/Locale.html#US:java.util.Locale`.
 
@@ -584,7 +584,7 @@ The returned formatter has a chronology of ISO set to ensure dates in other cale
 
 | Parameters ||
 |---|---|
-| `timeStyle` | [FormatStyle](https://developer.android.com/reference/kotlin/java/time/format/FormatStyle)!: the formatter style to obtain, not null |
+| `timeStyle` | [FormatStyle](../java/time/format/FormatStyle.md)!: the formatter style to obtain, not null |
 
 | Return ||
 |---|---|
@@ -600,7 +600,7 @@ static fun ofPattern(pattern: String!): DateTimeFormatter!
 
 Creates a formatter using the specified pattern.
 
-This method will create a formatter based on a simple [pattern of letters and symbols](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#patterns) as described in the class documentation. For example, `d MMM uuuu` will format 2011-12-03 as '3 Dec 2011'.
+This method will create a formatter based on a simple [pattern of letters and symbols](../java/time/format/DateTimeFormatter.md) as described in the class documentation. For example, `d MMM uuuu` will format 2011-12-03 as '3 Dec 2011'.
 
 The formatter will use the `https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category)`. This can be changed using `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withLocale(java.util.Locale)` on the returned formatter. Alternatively use the `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#ofPattern(kotlin.String,%20java.util.Locale)` variant of this method.
 
@@ -635,7 +635,7 @@ static fun ofPattern(
 
 Creates a formatter using the specified pattern and locale.
 
-This method will create a formatter based on a simple [pattern of letters and symbols](https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#patterns) as described in the class documentation. For example, `d MMM uuuu` will format 2011-12-03 as '3 Dec 2011'.
+This method will create a formatter based on a simple [pattern of letters and symbols](../java/time/format/DateTimeFormatter.md) as described in the class documentation. For example, `d MMM uuuu` will format 2011-12-03 as '3 Dec 2011'.
 
 The formatter will use the specified locale. This can be changed using `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withLocale(java.util.Locale)` on the returned formatter.
 
@@ -644,7 +644,7 @@ The returned formatter has no override chronology or zone. It uses `https://deve
 | Parameters ||
 |---|---|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the pattern to use, not null |
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the locale to use, not null |
+| `locale` | [Locale](../java/util/Locale.md)!: the locale to use, not null |
 
 | Return ||
 |---|---|
@@ -708,7 +708,7 @@ If the formatter parses the same field more than once with different values, the
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to parse, not null |
-| `position` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: the position to parse from, updated with length parsed and the index of any error, not null |
+| `position` | [ParsePosition](../java/text/ParsePosition.md)!: the position to parse from, updated with length parsed and the index of any error, not null |
 
 | Return ||
 |---|---|
@@ -744,7 +744,7 @@ If the parse completes without reading the entire length of the text, or a probl
 |---|---|
 | `<T>` | the type of the parsed date-time |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to parse, not null |
-| `query` | [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)\<T\>!: the query defining the type to parse to, not null |
+| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<T\>!: the query defining the type to parse to, not null |
 | --- | --- |
 
 | Return ||
@@ -786,7 +786,7 @@ If the parse completes without reading the entire length of the text, or a probl
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to parse, not null |
-| `queries` | [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)\<\*\>!: the queries defining the types to attempt to parse to, must implement `TemporalAccessor`, not null |
+| `queries` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<\*\>!: the queries defining the types to attempt to parse to, must implement `TemporalAccessor`, not null |
 
 | Return ||
 |---|---|
@@ -825,7 +825,7 @@ This method is intended for advanced use cases that need access to the internal 
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to parse, not null |
-| `position` | [ParsePosition](https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#)!: the position to parse from, updated with length parsed and the index of any error, not null |
+| `position` | [ParsePosition](../java/text/ParsePosition.md)!: the position to parse from, updated with length parsed and the index of any error, not null |
 
 | Return ||
 |---|---|
@@ -846,7 +846,7 @@ static fun parsedExcessDays(): TemporalQuery<Period!>!
 
 A query that provides access to the excess days that were parsed.
 
-This returns a singleton [query](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#) that provides access to additional information from the parse. The query always returns a non-null period, with a zero period returned instead of null.
+This returns a singleton [query](../java/time/temporal/TemporalQuery.md) that provides access to additional information from the parse. The query always returns a non-null period, with a zero period returned instead of null.
 
 There are two situations where this query may return a non-zero period.
 
@@ -888,7 +888,7 @@ static fun parsedLeapSecond(): TemporalQuery<Boolean!>!
 
 A query that provides access to whether a leap-second was parsed.
 
-This returns a singleton [query](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#) that provides access to additional information from the parse. The query always returns a non-null boolean, true if parsing saw a leap-second, false if not.
+This returns a singleton [query](../java/time/temporal/TemporalQuery.md) that provides access to additional information from the parse. The query always returns a non-null boolean, true if parsing saw a leap-second, false if not.
 
 Instant parsing handles the special "leap second" time of '23:59:60'. Leap seconds occur at '23:59:60' in the UTC time-zone, but at other local times in different time-zones. To avoid this potential ambiguity, the handling of leap-seconds is limited to `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendInstant()`, as that method always parses the instant with the UTC zone offset.
 
@@ -941,7 +941,7 @@ Exceptions will follow the definitions of `Format`, see those methods for detail
 
 | Parameters ||
 |---|---|
-| `parseQuery` | [TemporalQuery](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery.html#)\<\*\>!: the query defining the type to parse to, not null |
+| `parseQuery` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<\*\>!: the query defining the type to parse to, not null |
 
 | Return ||
 |---|---|
@@ -985,7 +985,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `chrono` | [Chronology](https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#)!: the new chronology, null if no override |
+| `chrono` | [Chronology](../java/time/chrono/Chronology.md)!: the new chronology, null if no override |
 
 | Return ||
 |---|---|
@@ -1005,7 +1005,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `decimalStyle` | [DecimalStyle](https://developer.android.com/reference/kotlin/java/time/format/DecimalStyle)!: the new DecimalStyle, not null |
+| `decimalStyle` | [DecimalStyle](../java/time/format/DecimalStyle.md)!: the new DecimalStyle, not null |
 
 | Return ||
 |---|---|
@@ -1029,7 +1029,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!: the new locale, not null |
+| `locale` | [Locale](../java/util/Locale.md)!: the new locale, not null |
 
 | Return ||
 |---|---|
@@ -1059,7 +1059,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `resolverFields` | [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!: the new set of resolver fields, null if no fields |
+| `resolverFields` | [TemporalField](../java/time/temporal/TemporalField.md)!: the new set of resolver fields, null if no fields |
 
 | Return ||
 |---|---|
@@ -1089,7 +1089,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `resolverFields` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TemporalField](https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#)!\>!: the new set of resolver fields, null if no fields |
+| `resolverFields` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TemporalField](../java/time/temporal/TemporalField.md)!\>!: the new set of resolver fields, null if no fields |
 
 | Return ||
 |---|---|
@@ -1113,7 +1113,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `resolverStyle` | [ResolverStyle](https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle)!: the new resolver style, not null |
+| `resolverStyle` | [ResolverStyle](../java/time/format/ResolverStyle.md)!: the new resolver style, not null |
 
 | Return ||
 |---|---|
@@ -1143,7 +1143,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](https://developer.android.com/reference/kotlin/java/time/ZoneId.html#)!: the new override zone, null if no override |
+| `zone` | [ZoneId](../java/time/ZoneId.md)!: the new override zone, null if no override |
 
 | Return ||
 |---|---|

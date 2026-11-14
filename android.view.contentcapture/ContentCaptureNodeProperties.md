@@ -8,7 +8,7 @@ open class ContentCaptureNodeProperties
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.contentcapture.ContentCaptureNodeProperties](https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#) |
+| ↳ | [android.view.contentcapture.ContentCaptureNodeProperties](../android/view/contentcapture/ContentCaptureNodeProperties.md) |
 
 Properties of a Node for Content Capture.
 
@@ -39,7 +39,7 @@ Calling a getter method when the corresponding property has not been set (i.e. w
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getBounds(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Copies the relative boundaries of this node into the provided `https://developer.android.com/reference/kotlin/android/graphics/Rect.html#`. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getContentDescription()()` Gets the content description of the node. |
 | --- | --- |
-| open [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getParentId()()` Gets the parent ID of the node. |
+| open [AutofillId](../android/view/autofill/AutofillId.md)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getParentId()()` Gets the parent ID of the node. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getText()()` Gets the text of the node. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasBounds()()` Checks if the bounds have been explicitly set. |
 | --- | --- |
@@ -87,7 +87,7 @@ Copies the relative boundaries of this node into the provided `https://developer
 
 | Parameters ||
 |---|---|
-| `outBounds` | [Rect](https://developer.android.com/reference/kotlin/android/graphics/Rect.html#): The mutable `https://developer.android.com/reference/kotlin/android/graphics/Rect.html#` to receive the bounds. Must not be null. |
+| `outBounds` | [Rect](../android/graphics/Rect.md): The mutable `https://developer.android.com/reference/kotlin/android/graphics/Rect.html#` to receive the bounds. Must not be null. |
 
 | Exceptions ||
 |---|---|
@@ -252,7 +252,7 @@ Sets the parent ID for this node.
 
 | Parameters ||
 |---|---|
-| `parentId` | [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)?: The parent ID to set, or null if the node has no parent. |
+| `parentId` | [AutofillId](../android/view/autofill/AutofillId.md)?: The parent ID to set, or null if the node has no parent. |
 
 ### setText
 

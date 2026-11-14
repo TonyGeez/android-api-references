@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface XPathFunctionResolver
 ```
 
-| [javax.xml.xpath.XPathFunctionResolver](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionResolver#) |
+| [javax.xml.xpath.XPathFunctionResolver](../javax/xml/xpath/XPathFunctionResolver.md) |
 
 `XPathFunctionResolver`provides access to the set of user defined`XPathFunction`s.
 
@@ -22,7 +22,7 @@ If you wish to implement additional built-in functions, you will have to extend 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [XPathFunction](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunction)! | [resolveFunction](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunctionResolver#resolveFunction(javax.xml.namespace.QName,%20kotlin.Int))`(`functionName:` ` [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)!`, `arity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Find a function in the set of available functions. |
+| abstract [XPathFunction](../javax/xml/xpath/XPathFunction.md)! | [resolveFunction](../javax/xml/xpath/XPathFunctionResolver.md))`(`functionName:` ` [QName](../javax/xml/namespace/QName.md)!`, `arity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Find a function in the set of available functions. |
 
 ## Public methods
 
@@ -43,12 +43,12 @@ If`functionName`or`arity`is`null`, then a`NullPointerException`is thrown.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `functionName` | [QName](https://developer.android.com/reference/kotlin/javax/xml/namespace/QName.html#)!:The function name. |
+| `functionName` | [QName](../javax/xml/namespace/QName.md)!:The function name. |
 | `arity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of arguments that the returned function must accept. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [XPathFunction](https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathFunction)! | The function or`null`if no function named`functionName`with`arity`arguments exists. |
+| [XPathFunction](../javax/xml/xpath/XPathFunction.md)! | The function or`null`if no function named`functionName`with`arity`arguments exists. |
 
 | Exceptions ||
 |----------------------------------|------------------------------------|

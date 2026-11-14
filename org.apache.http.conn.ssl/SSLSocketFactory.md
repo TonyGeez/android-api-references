@@ -11,7 +11,7 @@ open class SSLSocketFactory : LayeredSocketFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.apache.http.conn.ssl.SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#) |
+| ↳ | [org.apache.http.conn.ssl.SSLSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md) |
 
 | **This class was deprecated in API level 22.**
 |
@@ -21,7 +21,7 @@ Layered socket factory for TLS/SSL connections, based on JSSE. .
 
 SSLSocketFactory can be used to validate the identity of the HTTPS server against a list of trusted certificates and to authenticate to the HTTPS server using a private key.
 
-SSLSocketFactory will enable server authentication when supplied with a [truststore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#) file containg one or several trusted certificates. The client secure socket will reject the connection during the SSL session handshake if the target HTTPS server attempts to authenticate itself with a non-trusted certificate.
+SSLSocketFactory will enable server authentication when supplied with a [truststore](../java/security/KeyStore.md) file containg one or several trusted certificates. The client secure socket will reject the connection during the SSL session handshake if the target HTTPS server attempts to authenticate itself with a non-trusted certificate.
 
 Use JDK keytool utility to import a trusted certificate and generate a truststore file: 
 
@@ -32,7 +32,7 @@ keytool -import -alias "my server cert" -file server.crt -keystore my.truststore
 
 <br />
 
-SSLSocketFactory will enable client authentication when supplied with a [keystore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#) file containg a private key/public certificate pair. The client secure socket will use the private key to authenticate itself to the target HTTPS server during the SSL session handshake if requested to do so by the server. The target HTTPS server will in its turn verify the certificate presented by the client in order to establish client's authenticity
+SSLSocketFactory will enable client authentication when supplied with a [keystore](../java/security/KeyStore.md) file containg a private key/public certificate pair. The client secure socket will use the private key to authenticate itself to the target HTTPS server during the SSL session handshake if requested to do so by the server. The target HTTPS server will in its turn verify the certificate presented by the client in order to establish client's authenticity
 
 Use the following sequence of actions to generate a keystore file
 
@@ -83,35 +83,35 @@ Use the following sequence of actions to generate a keystore file
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SSL](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#SSL:kotlin.String) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SSLV2](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#SSLV2:kotlin.String) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TLS](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#TLS:kotlin.String) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SSL](../org/apache/http/conn/ssl/SSLSocketFactory.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SSLV2](../org/apache/http/conn/ssl/SSLSocketFactory.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TLS](../org/apache/http/conn/ssl/SSLSocketFactory.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#SSLSocketFactory(kotlin.String,%20java.security.KeyStore,%20kotlin.String,%20java.security.KeyStore,%20java.security.SecureRandom,%20org.apache.http.conn.scheme.HostNameResolver))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keystore:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`, `keystorePassword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `truststore:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`, `random:` ` [SecureRandom](https://developer.android.com/reference/kotlin/java/security/SecureRandom.html#)!`, `nameResolver:` ` [HostNameResolver](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/HostNameResolver.html#)!`)` <br /> |
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#SSLSocketFactory(java.security.KeyStore))`(`truststore:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`)` <br /> |
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#SSLSocketFactory(java.security.KeyStore,%20kotlin.String))`(`keystore:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`, `keystorePassword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#SSLSocketFactory(java.security.KeyStore,%20kotlin.String,%20java.security.KeyStore))`(`keystore:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`, `keystorePassword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `truststore:` ` [KeyStore](https://developer.android.com/reference/kotlin/java/security/KeyStore.html#)!`)` <br /> |
+| [SSLSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `keystore:` ` [KeyStore](../java/security/KeyStore.md)!`, `keystorePassword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `truststore:` ` [KeyStore](../java/security/KeyStore.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`, `nameResolver:` ` [HostNameResolver](../org/apache/http/conn/scheme/HostNameResolver.md)!`)` <br /> |
+| [SSLSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`truststore:` ` [KeyStore](../java/security/KeyStore.md)!`)` <br /> |
+| [SSLSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`keystore:` ` [KeyStore](../java/security/KeyStore.md)!`, `keystorePassword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SSLSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`keystore:` ` [KeyStore](../java/security/KeyStore.md)!`, `keystorePassword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `truststore:` ` [KeyStore](../java/security/KeyStore.md)!`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [connectSocket](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#connectSocket(java.net.Socket,%20kotlin.String,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int,%20org.apache.http.params.HttpParams))`(`sock:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddress:` ` [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [HttpParams](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams.html#)!`)` <br /> |
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#createSocket())`()` <br /> |
-| open [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | [createSocket](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#createSocket(java.net.Socket,%20kotlin.String,%20kotlin.Int,%20kotlin.Boolean))`(`socket:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `autoClose:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| open [Socket](../java/net/Socket.md)! | [connectSocket](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`sock:` ` [Socket](../java/net/Socket.md)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddress:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [HttpParams](../org/apache/http/params/HttpParams.md)!`)` <br /> |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../org/apache/http/conn/ssl/SSLSocketFactory.md))`()` <br /> |
+| open [Socket](../java/net/Socket.md)! | [createSocket](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`socket:` ` [Socket](../java/net/Socket.md)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `autoClose:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | --- | --- |
-| open [X509HostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier)! | [getHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#getHostnameVerifier())`()` <br /> |
-| openstatic [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#)! | [getSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#getSocketFactory())`()` Gets an singleton instance of the SSLProtocolSocketFactory. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSecure](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#isSecure(java.net.Socket))`(`sock:` ` [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!`)` Checks whether a socket connection is secure. |
+| open [X509HostnameVerifier](../org/apache/http/conn/ssl/X509HostnameVerifier.md)! | [getHostnameVerifier](../org/apache/http/conn/ssl/SSLSocketFactory.md))`()` <br /> |
+| openstatic [SSLSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md)! | [getSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md))`()` Gets an singleton instance of the SSLProtocolSocketFactory. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSecure](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`sock:` ` [Socket](../java/net/Socket.md)!`)` Checks whether a socket connection is secure. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier))`(`hostnameVerifier:` ` [X509HostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHostnameVerifier](../org/apache/http/conn/ssl/SSLSocketFactory.md))`(`hostnameVerifier:` ` [X509HostnameVerifier](../org/apache/http/conn/ssl/X509HostnameVerifier.md)!`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [X509HostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier)! | [ALLOW_ALL_HOSTNAME_VERIFIER](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#ALLOW_ALL_HOSTNAME_VERIFIER:org.apache.http.conn.ssl.X509HostnameVerifier) <br /> |
-| static [X509HostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier)! | [BROWSER_COMPATIBLE_HOSTNAME_VERIFIER](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#BROWSER_COMPATIBLE_HOSTNAME_VERIFIER:org.apache.http.conn.ssl.X509HostnameVerifier) <br /> |
-| static [X509HostnameVerifier](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier)! | [STRICT_HOSTNAME_VERIFIER](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#STRICT_HOSTNAME_VERIFIER:org.apache.http.conn.ssl.X509HostnameVerifier) <br /> |
+| static [X509HostnameVerifier](../org/apache/http/conn/ssl/X509HostnameVerifier.md)! | [ALLOW_ALL_HOSTNAME_VERIFIER](../org/apache/http/conn/ssl/SSLSocketFactory.md) <br /> |
+| static [X509HostnameVerifier](../org/apache/http/conn/ssl/X509HostnameVerifier.md)! | [BROWSER_COMPATIBLE_HOSTNAME_VERIFIER](../org/apache/http/conn/ssl/SSLSocketFactory.md) <br /> |
+| static [X509HostnameVerifier](../org/apache/http/conn/ssl/X509HostnameVerifier.md)! | [STRICT_HOSTNAME_VERIFIER](../org/apache/http/conn/ssl/SSLSocketFactory.md) <br /> |
 | --- | --- |
 
 ## Constants
@@ -218,18 +218,18 @@ open fun connectSocket(
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sock` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the socket to connect, as obtained from [createSocket](https://developer.android.com/reference/kotlin/org/apache/http/conn/scheme/SocketFactory.html#createSocket()).`null`indicates that a new socket should be created and connected. |
+| `sock` | [Socket](../java/net/Socket.md)!:the socket to connect, as obtained from [createSocket](../org/apache/http/conn/scheme/SocketFactory.md)).`null`indicates that a new socket should be created and connected. |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the host to connect to |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port to connect to on the host |
 | --- | --- |
-| `localAddress` | [InetAddress](https://developer.android.com/reference/kotlin/java/net/InetAddress.html#)!:the local address to bind the socket to, or`null`for any |
+| `localAddress` | [InetAddress](../java/net/InetAddress.md)!:the local address to bind the socket to, or`null`for any |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port on the local machine, 0 or a negative number for any |
-| `params` | [HttpParams](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams.html#)!:additional [parameters](https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams.html#) for connecting |
+| `params` | [HttpParams](../org/apache/http/params/HttpParams.md)!:additional [parameters](../org/apache/http/params/HttpParams.md) for connecting |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | the connected socket. The returned object may be different from the`sock`argument if this factory supports a layered protocol. |
+| [Socket](../java/net/Socket.md)! | the connected socket. The returned object may be different from the`sock`argument if this factory supports a layered protocol. |
 
 | Exceptions ||
 |------------------------------------------------|--------------------------------------------------------------------------------|
@@ -250,7 +250,7 @@ open fun createSocket(): Socket!
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | a new socket |
+| [Socket](../java/net/Socket.md)! | a new socket |
 
 | Exceptions ||
 |-----------------------|--------------------------------------------------|
@@ -273,7 +273,7 @@ open fun createSocket(
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `socket` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the existing socket |
+| `socket` | [Socket](../java/net/Socket.md)!:the existing socket |
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the host name/IP |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port on the host |
 | --- | --- |
@@ -281,7 +281,7 @@ open fun createSocket(
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------|
-| [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)! | Socket a new socket |
+| [Socket](../java/net/Socket.md)! | Socket a new socket |
 
 | Exceptions ||
 |---------------------------------|----------------------------------------------------|
@@ -312,7 +312,7 @@ Gets an singleton instance of the SSLProtocolSocketFactory.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------|
-| [SSLSocketFactory](https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/SSLSocketFactory#)! | a SSLProtocolSocketFactory |
+| [SSLSocketFactory](../org/apache/http/conn/ssl/SSLSocketFactory.md)! | a SSLProtocolSocketFactory |
 
 ### isSecure
 
@@ -329,7 +329,7 @@ Derived classes may override this method to perform runtime checks, for example 
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------|
-| `sock` | [Socket](https://developer.android.com/reference/kotlin/java/net/Socket.html#)!:the connected socket |
+| `sock` | [Socket](../java/net/Socket.md)!:the connected socket |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------|

@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioPresentation
 
-Kotlin | [Java](https://developer.android.com/reference/android/media/AudioPresentation "View this page in Java")
+Kotlin | [Java](../android/media/AudioPresentation.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AudioPresentation : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioPresentation](https://developer.android.com/reference/kotlin/android/media/AudioPresentation#) |
+| ↳ | [android.media.AudioPresentation](../android/media/AudioPresentation.md) |
 
 The AudioPresentation class encapsulates the information that describes an audio presentation which is available in next generation audio content. Used by `https://developer.android.com/reference/kotlin/android/media/MediaExtractor` `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getAudioPresentations(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/media/AudioTrack` `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPresentation(android.media.AudioPresentation)` to query available presentations and to select one, respectively. A list of available audio presentations in a media source can be queried using `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getAudioPresentations(kotlin.Int)`. This list can be presented to a user for selection. An AudioPresentation can be passed to an offloaded audio decoder via `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPresentation(android.media.AudioPresentation)` to request decoding of the selected presentation. An audio stream may contain multiple presentations that differ by language, accessibility, end point mastering and dialogue enhancement. An audio presentation may also have a set of description labels in different languages to help the user to make an informed selection. Applications that parse media streams and extract presentation information on their own can create instances of AudioPresentation by using `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder` class.
 
@@ -53,9 +53,9 @@ The AudioPresentation class encapsulates the information that describes an audio
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLabels()()` <br /> |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Locale](../java/util/Locale.md)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLabels()()` <br /> |
 | --- | --- |
-| [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLocale()()` <br /> |
+| [Locale](../java/util/Locale.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLocale()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getMasteringIndication()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getPresentationId()()` Returns presentation ID used by the framework to select an audio presentation rendered by a decoder. |
 | --- | --- |
@@ -71,7 +71,7 @@ The AudioPresentation class encapsulates the information that describes an audio
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AudioPresentation](https://developer.android.com/reference/kotlin/android/media/AudioPresentation#)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AudioPresentation](../android/media/AudioPresentation.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -478,7 +478,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#): This value cannot be `null`. |
+| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

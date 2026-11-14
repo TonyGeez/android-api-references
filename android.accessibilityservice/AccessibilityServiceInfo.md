@@ -8,7 +8,7 @@ open class AccessibilityServiceInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.accessibilityservice.AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#) |
+| ↳ | [android.accessibilityservice.AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md) |
 
 This class describes an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService`. The system notifies an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`s according to the information encapsulated in this class.
 
@@ -24,35 +24,35 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 
 | XML attributes ||
 |---|---|
-| [`android:accessibilityEventTypes`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | The event types this service would like to receive as specified in android. |
-| [`android:accessibilityFeedbackType`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | The feedback types this service provides as specified in android. |
-| [`android:accessibilityFlags`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Additional flags as specified in android. |
+| [`android:accessibilityEventTypes`](../android/accessibilityservice/AccessibilityServiceInfo.md) | The event types this service would like to receive as specified in android. |
+| [`android:accessibilityFeedbackType`](../android/accessibilityservice/AccessibilityServiceInfo.md) | The feedback types this service provides as specified in android. |
+| [`android:accessibilityFlags`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Additional flags as specified in android. |
 | --- | --- |
-| [`android:animatedImageDrawable`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Animated image of the accessibility service purpose or behavior, to help users understand how the service can help them. |
-| [`android:canControlMagnification`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to control display magnification. |
-| [`android:canPerformGestures`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to perform gestures. |
+| [`android:animatedImageDrawable`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Animated image of the accessibility service purpose or behavior, to help users understand how the service can help them. |
+| [`android:canControlMagnification`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute whether the accessibility service wants to be able to control display magnification. |
+| [`android:canPerformGestures`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute whether the accessibility service wants to be able to perform gestures. |
 | --- | --- |
-| [`android:canRequestFilterKeyEvents`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to request to filter key events. |
-| [`android:canRequestFingerprintGestures`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to capture gestures from the fingerprint sensor. |
-| [`android:canRequestTouchExplorationMode`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to request touch exploration mode in which touched items are spoken aloud and the UI can be explored via gestures. |
+| [`android:canRequestFilterKeyEvents`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute whether the accessibility service wants to be able to request to filter key events. |
+| [`android:canRequestFingerprintGestures`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute whether the accessibility service wants to be able to capture gestures from the fingerprint sensor. |
+| [`android:canRequestTouchExplorationMode`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute whether the accessibility service wants to be able to request touch exploration mode in which touched items are spoken aloud and the UI can be explored via gestures. |
 | --- | --- |
-| [`android:canRetrieveWindowContent`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to retrieve the active window content. |
-| [`android:canTakeScreenshot`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute whether the accessibility service wants to be able to take screenshot. |
-| [`android:description`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Description of the accessibility service usage, availability, or limitations (e.g. isn't supported by all apps). |
+| [`android:canRetrieveWindowContent`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute whether the accessibility service wants to be able to retrieve the active window content. |
+| [`android:canTakeScreenshot`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute whether the accessibility service wants to be able to take screenshot. |
+| [`android:description`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Description of the accessibility service usage, availability, or limitations (e.g. isn't supported by all apps). |
 | --- | --- |
-| [`android:htmlDescription`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Html description of the accessibility service usage, availability, or limitations (e.g. isn't supported by all apps). |
-| [`android:interactiveUiTimeout`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | A recommended timeout in milliseconds used in android. |
-| [`android:intro`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Detailed intro of the accessibility service purpose or behavior. |
+| [`android:htmlDescription`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Html description of the accessibility service usage, availability, or limitations (e.g. isn't supported by all apps). |
+| [`android:interactiveUiTimeout`](../android/accessibilityservice/AccessibilityServiceInfo.md) | A recommended timeout in milliseconds used in android. |
+| [`android:intro`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Detailed intro of the accessibility service purpose or behavior. |
 | --- | --- |
-| [`android:isAccessibilityTool`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Attribute indicating whether the accessibility service is used to assist users with disabilities. |
-| [`android:nonInteractiveUiTimeout`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | A recommended timeout in milliseconds used in android. |
-| [`android:notificationTimeout`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | The minimal period in milliseconds between two accessibility events of the same type are sent to this service. |
+| [`android:isAccessibilityTool`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Attribute indicating whether the accessibility service is used to assist users with disabilities. |
+| [`android:nonInteractiveUiTimeout`](../android/accessibilityservice/AccessibilityServiceInfo.md) | A recommended timeout in milliseconds used in android. |
+| [`android:notificationTimeout`](../android/accessibilityservice/AccessibilityServiceInfo.md) | The minimal period in milliseconds between two accessibility events of the same type are sent to this service. |
 | --- | --- |
-| [`android:packageNames`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Comma separated package names from which this service would like to receive events (leave out for all packages). |
-| [`android:settingsActivity`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Fully qualified class name of an activity that allows the user to modify the settings for this service. |
-| [`android:summary`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Brief summary of the accessibility service purpose or behavior. |
+| [`android:packageNames`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Comma separated package names from which this service would like to receive events (leave out for all packages). |
+| [`android:settingsActivity`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Fully qualified class name of an activity that allows the user to modify the settings for this service. |
+| [`android:summary`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Brief summary of the accessibility service purpose or behavior. |
 | --- | --- |
-| [`android:tileService`](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#attr_AccessibilityServiceInfo) | Fully qualified class name of android. |
+| [`android:tileService`](../android/accessibilityservice/AccessibilityServiceInfo.md) | Fully qualified class name of android. |
 
 | Constants ||
 |---|---|
@@ -124,7 +124,7 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getMotionEventSources()()` Returns the bit mask of `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources that the accessibility service wants to listen to for generic `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getNonInteractiveUiTimeoutMillis()()` Get the recommended timeout for non-interactive controls. |
 | --- | --- |
-| open [ResolveInfo](https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getResolveInfo()()` The service `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#`. |
+| open [ResolveInfo](../android/content/pm/ResolveInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getResolveInfo()()` The service `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getSettingsActivityName()()` The settings activity name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getTileServiceName()()` Gets the name of `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` is associated with this accessibility service. |
 | --- | --- |
@@ -144,7 +144,7 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [AccessibilityServiceInfo](https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#)!\> | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#eventTypes:kotlin.Int` The event types an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is interested in. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#feedbackType:kotlin.Int` The feedback type an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` provides. |
 | --- | --- |
@@ -1253,7 +1253,7 @@ The localized intro of the accessibility service.
 
 | Parameters ||
 |---|---|
-| `packageManager` | [PackageManager](https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#): This value cannot be `null`. |
+| `packageManager` | [PackageManager](../android/content/pm/PackageManager.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

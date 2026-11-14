@@ -10,9 +10,9 @@ abstract class CertStoreSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CertStoreSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreSpi#) |
+| ↳ | [java.security.cert.CertStoreSpi](../java/security/cert/CertStoreSpi.md) |
 
-The*Service Provider Interface* (**SPI** ) for the [CertStore](https://developer.android.com/reference/kotlin/java/security/cert/CertStore) class. All`CertStore`implementations must include a class (the SPI class) that extends this class (`CertStoreSpi`), provides a constructor with a single argument of type`CertStoreParameters`, and implements all of its methods. In general, instances of this class should only be accessed through the`CertStore`class. For details, see the Java Cryptography Architecture.
+The*Service Provider Interface* (**SPI** ) for the [CertStore](../java/security/cert/CertStore.md) class. All`CertStore`implementations must include a class (the SPI class) that extends this class (`CertStoreSpi`), provides a constructor with a single argument of type`CertStoreParameters`, and implements all of its methods. In general, instances of this class should only be accessed through the`CertStore`class. For details, see the Java Cryptography Architecture.
 
 **Concurrent Access**
 
@@ -24,12 +24,12 @@ Simple`CertStoreSpi`implementations will probably ensure thread safety by adding
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertStoreSpi](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreSpi#CertStoreSpi(java.security.cert.CertStoreParameters))`(`params:` ` [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!`)` The sole constructor. |
+| [CertStoreSpi](../java/security/cert/CertStoreSpi.md))`(`params:` ` [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!`)` The sole constructor. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!\>! | [engineGetCRLs](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreSpi#engineGetCRLs(java.security.cert.CRLSelector))`(`selector:` ` [CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/CRLSelector)!`)` Returns a`Collection`of`CRL`s that match the specified selector. |
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!\>! | [engineGetCertificates](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreSpi#engineGetCertificates(java.security.cert.CertSelector))`(`selector:` ` [CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector)!`)` Returns a`Collection`of`Certificate`s that match the specified selector. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [CRL](../java/security/cert/CRL.md)!\>! | [engineGetCRLs](../java/security/cert/CertStoreSpi.md))`(`selector:` ` [CRLSelector](../java/security/cert/CRLSelector.md)!`)` Returns a`Collection`of`CRL`s that match the specified selector. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<out [Certificate](../java/security/cert/Certificate.md)!\>! | [engineGetCertificates](../java/security/cert/CertStoreSpi.md))`(`selector:` ` [CertSelector](../java/security/cert/CertSelector.md)!`)` Returns a`Collection`of`Certificate`s that match the specified selector. |
 
 ## Public constructors
 
@@ -45,7 +45,7 @@ The sole constructor.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [CertStoreParameters](https://developer.android.com/reference/kotlin/java/security/cert/CertStoreParameters)!:the initialization parameters (may be`null`) |
+| `params` | [CertStoreParameters](../java/security/cert/CertStoreParameters.md)!:the initialization parameters (may be`null`) |
 
 | Exceptions ||
 |----------------------------------------------------|---------------------------------------------------------------------------|
@@ -69,11 +69,11 @@ Some`CertStore`implementations (especially LDAP`CertStore`s) may throw a`CertSto
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `selector` | [CRLSelector](https://developer.android.com/reference/kotlin/java/security/cert/CRLSelector)!:A`CRLSelector`used to select which`CRL`s should be returned. Specify`null`to return all`CRL`s (if supported). |
+| `selector` | [CRLSelector](../java/security/cert/CRLSelector.md)!:A`CRLSelector`used to select which`CRL`s should be returned. Specify`null`to return all`CRL`s (if supported). |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [CRL](https://developer.android.com/reference/kotlin/java/security/cert/CRL)!>! | A`Collection`of`CRL`s that match the specified selector (never`null`) |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [CRL](../java/security/cert/CRL.md)!>! | A`Collection`of`CRL`s that match the specified selector (never`null`) |
 
 | Exceptions ||
 |-----------------------------------------|------------------------|
@@ -95,11 +95,11 @@ Some`CertStore`implementations (especially LDAP`CertStore`s) may throw a`CertSto
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `selector` | [CertSelector](https://developer.android.com/reference/kotlin/java/security/cert/CertSelector)!:A`CertSelector`used to select which`Certificate`s should be returned. Specify`null`to return all`Certificate`s (if supported). |
+| `selector` | [CertSelector](../java/security/cert/CertSelector.md)!:A`CertSelector`used to select which`Certificate`s should be returned. Specify`null`to return all`Certificate`s (if supported). |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Certificate](https://developer.android.com/reference/kotlin/java/security/cert/Certificate)!>! | A`Collection`of`Certificate`s that match the specified selector (never`null`) |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` ` [Certificate](../java/security/cert/Certificate.md)!>! | A`Collection`of`Certificate`s that match the specified selector (never`null`) |
 
 | Exceptions ||
 |-----------------------------------------|------------------------|

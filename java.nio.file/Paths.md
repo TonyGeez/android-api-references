@@ -10,16 +10,16 @@ class Paths
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.file.Paths](https://developer.android.com/reference/kotlin/java/nio/file/Paths#) |
+| ↳ | [java.nio.file.Paths](../java/nio/file/Paths.md) |
 
-This class consists exclusively of static methods that return a [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) by converting a path string or [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#).
+This class consists exclusively of static methods that return a [Path](../java/nio/file/Path.md) by converting a path string or [URI](../java/net/URI.md).
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)! | [get](https://developer.android.com/reference/kotlin/java/nio/file/Paths#get(kotlin.String,%20kotlin.String))`(`first:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `more:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a path string, or a sequence of strings that when joined form a path string, to a`Path`. |
-| static [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)! | [get](https://developer.android.com/reference/kotlin/java/nio/file/Paths#get(java.net.URI))`(`uri:` ` [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!`)` Converts the given URI to a [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) object. |
+| static [Path](../java/nio/file/Path.md)! | [get](../java/nio/file/Paths.md))`(`first:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `more:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a path string, or a sequence of strings that when joined form a path string, to a`Path`. |
+| static [Path](../java/nio/file/Path.md)! | [get](../java/nio/file/Paths.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Converts the given URI to a [Path](../java/nio/file/Path.md) object. |
 
 ## Public methods
 
@@ -43,7 +43,7 @@ Converts a path string, or a sequence of strings that when joined form a path st
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------|
-| [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)! | the resulting`Path` |
+| [Path](../java/nio/file/Path.md)! | the resulting`Path` |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -51,8 +51,8 @@ Converts a path string, or a sequence of strings that when joined form a path st
 
 **See Also**
 
-- [java.nio.file.FileSystem#getPath](https://developer.android.com/reference/kotlin/java/nio/file/FileSystem#getPath(kotlin.String,%20kotlin.String))
-- [java.nio.file.Path#of(String,String...)](https://developer.android.com/reference/kotlin/java/nio/file/Path#of(kotlin.String,%20kotlin.String)) 
+- [java.nio.file.FileSystem#getPath](../java/nio/file/FileSystem.md))
+- [java.nio.file.Path#of(String,String...)](../java/nio/file/Path.md)) 
 
 ### get
 
@@ -62,15 +62,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun get(uri: URI!): Path!
 ```
 
-Converts the given URI to a [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path) object.
+Converts the given URI to a [Path](../java/nio/file/Path.md) object.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------|
-| `uri` | [URI](https://developer.android.com/reference/kotlin/java/net/URI.html#)!:the URI to convert |
+| `uri` | [URI](../java/net/URI.md)!:the URI to convert |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------|
-| [Path](https://developer.android.com/reference/kotlin/java/nio/file/Path)! | the resulting`Path` |
+| [Path](../java/nio/file/Path.md)! | the resulting`Path` |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -81,4 +81,4 @@ Converts the given URI to a [Path](https://developer.android.com/reference/kotli
 
 **See Also**
 
-- [java.nio.file.Path#of(URI)](https://developer.android.com/reference/kotlin/java/nio/file/Path#of(java.net.URI))
+- [java.nio.file.Path#of(URI)](../java/nio/file/Path.md))

@@ -11,13 +11,13 @@ open class SQLIntegrityConstraintViolationException : SQLNonTransientException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) ||||
-| | | ↳ | [java.sql.SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) |||
+| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
+| | | ↳ | [java.sql.SQLException](../java/sql/SQLException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.sql.SQLNonTransientException](https://developer.android.com/reference/kotlin/java/sql/SQLNonTransientException) ||
-| | | | | ↳ | [java.sql.SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#) |
+| | | | ↳ | [java.sql.SQLNonTransientException](../java/sql/SQLNonTransientException.md) ||
+| | | | | ↳ | [java.sql.SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md) |
 
-The subclass of [SQLException](https://developer.android.com/reference/kotlin/java/sql/SQLException) thrown when the SQLState class value is '*23*', or under vendor-specified conditions. This indicates that an integrity constraint (foreign key, primary key or unique key) has been violated.
+The subclass of [SQLException](../java/sql/SQLException.md) thrown when the SQLState class value is '*23*', or under vendor-specified conditions. This indicates that an integrity constraint (foreign key, primary key or unique key) has been violated.
 
 Please consult your driver vendor documentation for the vendor-specified conditions for which this`Exception`may be thrown.
 
@@ -25,14 +25,14 @@ Please consult your driver vendor documentation for the vendor-specified conditi
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException())`()` Constructs a`SQLIntegrityConstraintViolationException`object. |
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException(kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`with a given`reason`. |
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException(kotlin.String,%20kotlin.String))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`and`SQLState`. |
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException(kotlin.String,%20kotlin.String,%20kotlin.Int))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`and`vendorCode`. |
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException(kotlin.String,%20kotlin.String,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`and`cause`. |
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException(kotlin.String,%20kotlin.Throwable))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`and`cause`. |
-| [SQLIntegrityConstraintViolationException](https://developer.android.com/reference/kotlin/java/sql/SQLIntegrityConstraintViolationException#SQLIntegrityConstraintViolationException(kotlin.Throwable))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`SQLIntegrityConstraintViolationException`object with a given`cause`. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`()` Constructs a`SQLIntegrityConstraintViolationException`object. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`with a given`reason`. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`and`SQLState`. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`and`vendorCode`. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`and`cause`. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`and`cause`. |
+| [SQLIntegrityConstraintViolationException](../java/sql/SQLIntegrityConstraintViolationException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`SQLIntegrityConstraintViolationException`object with a given`cause`. |
 
 ## Public constructors
 
@@ -44,7 +44,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLIntegrityConstraintViolationException()
 ```
 
-Constructs a`SQLIntegrityConstraintViolationException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLIntegrityConstraintViolationException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 
@@ -56,7 +56,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLIntegrityConstraintViolationException(reason: String!)
 ```
 
-Constructs a`SQLIntegrityConstraintViolationException`with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLIntegrityConstraintViolationException`with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 
@@ -74,7 +74,7 @@ SQLIntegrityConstraintViolationException(
     SQLState: String!)
 ```
 
-Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method. The vendor code is initialized to 0.
+Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method. The vendor code is initialized to 0.
 
 <br />
 
@@ -94,7 +94,7 @@ SQLIntegrityConstraintViolationException(
     vendorCode: Int)
 ```
 
-Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable))method.
+Constructs a`SQLIntegrityConstraintViolationException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
 
 <br />
 

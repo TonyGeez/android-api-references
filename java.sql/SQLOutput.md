@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SQLOutput
 ```
 
-| [java.sql.SQLOutput](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#) |
+| [java.sql.SQLOutput](../java/sql/SQLOutput.md) |
 
 The output stream for writing the attributes of a user-defined type back to the database. This interface, used only for custom mapping, is used by the driver, and its methods are never directly invoked by a programmer.
 
@@ -18,41 +18,41 @@ When an object of a class implementing the interface`SQLData`is passed as an arg
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeArray](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeArray(java.sql.Array))`(`x:` ` [Array](https://developer.android.com/reference/kotlin/java/sql/Array)!`)` Writes an SQL`ARRAY`value to the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeAsciiStream](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeAsciiStream(java.io.InputStream))`(`x:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Writes the next attribute to the stream as a stream of ASCII characters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBigDecimal](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeBigDecimal(java.math.BigDecimal))`(`x:` ` [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!`)` Writes the next attribute to the stream as a java. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeArray](../java/sql/SQLOutput.md))`(`x:` ` [Array](../java/sql/Array.md)!`)` Writes an SQL`ARRAY`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeAsciiStream](../java/sql/SQLOutput.md))`(`x:` ` [InputStream](../java/io/InputStream.md)!`)` Writes the next attribute to the stream as a stream of ASCII characters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBigDecimal](../java/sql/SQLOutput.md))`(`x:` ` [BigDecimal](../java/math/BigDecimal.md)!`)` Writes the next attribute to the stream as a java. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBinaryStream](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeBinaryStream(java.io.InputStream))`(`x:` ` [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!`)` Writes the next attribute to the stream as a stream of uninterpreted bytes. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBlob](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeBlob(java.sql.Blob))`(`x:` ` [Blob](https://developer.android.com/reference/kotlin/java/sql/Blob)!`)` Writes an SQL`BLOB`value to the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBoolean](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeBoolean(kotlin.Boolean))`(`x:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Writes the next attribute to the stream as a Java boolean. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBinaryStream](../java/sql/SQLOutput.md))`(`x:` ` [InputStream](../java/io/InputStream.md)!`)` Writes the next attribute to the stream as a stream of uninterpreted bytes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBlob](../java/sql/SQLOutput.md))`(`x:` ` [Blob](../java/sql/Blob.md)!`)` Writes an SQL`BLOB`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBoolean](../java/sql/SQLOutput.md))`(`x:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Writes the next attribute to the stream as a Java boolean. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeByte](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeByte(kotlin.Byte))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Writes the next attribute to the stream as a Java byte. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeBytes(kotlin.ByteArray))`(`x:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes the next attribute to the stream as an array of bytes. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeCharacterStream](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeCharacterStream(java.io.Reader))`(`x:` ` [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!`)` Writes the next attribute to the stream as a stream of Unicode characters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeByte](../java/sql/SQLOutput.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Writes the next attribute to the stream as a Java byte. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](../java/sql/SQLOutput.md))`(`x:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes the next attribute to the stream as an array of bytes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeCharacterStream](../java/sql/SQLOutput.md))`(`x:` ` [Reader](../java/io/Reader.md)!`)` Writes the next attribute to the stream as a stream of Unicode characters. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeClob](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeClob(java.sql.Clob))`(`x:` ` [Clob](https://developer.android.com/reference/kotlin/java/sql/Clob)!`)` Writes an SQL`CLOB`value to the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeDate](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeDate(java.sql.Date))`(`x:` ` [Date](https://developer.android.com/reference/kotlin/java/sql/Date)!`)` Writes the next attribute to the stream as a java. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeDouble](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeDouble(kotlin.Double))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Writes the next attribute to the stream as a Java double. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeClob](../java/sql/SQLOutput.md))`(`x:` ` [Clob](../java/sql/Clob.md)!`)` Writes an SQL`CLOB`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeDate](../java/sql/SQLOutput.md))`(`x:` ` [Date](../java/sql/Date.md)!`)` Writes the next attribute to the stream as a java. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeDouble](../java/sql/SQLOutput.md))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Writes the next attribute to the stream as a Java double. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFloat](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeFloat(kotlin.Float))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Writes the next attribute to the stream as a Java float. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeInt](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeInt(kotlin.Int))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the next attribute to the stream as a Java int. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeLong](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeLong(kotlin.Long))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes the next attribute to the stream as a Java long. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFloat](../java/sql/SQLOutput.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Writes the next attribute to the stream as a Java float. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeInt](../java/sql/SQLOutput.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes the next attribute to the stream as a Java int. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeLong](../java/sql/SQLOutput.md))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes the next attribute to the stream as a Java long. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNClob](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeNClob(java.sql.NClob))`(`x:` ` [NClob](https://developer.android.com/reference/kotlin/java/sql/NClob)!`)` Writes an SQL`NCLOB`value to the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNString](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeNString(kotlin.String))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes the next attribute to the stream as a`String`in the Java programming language. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObject](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeObject(java.sql.SQLData))`(`x:` ` [SQLData](https://developer.android.com/reference/kotlin/java/sql/SQLData)!`)` Writes to the stream the data contained in the given`SQLData`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNClob](../java/sql/SQLOutput.md))`(`x:` ` [NClob](../java/sql/NClob.md)!`)` Writes an SQL`NCLOB`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeNString](../java/sql/SQLOutput.md))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes the next attribute to the stream as a`String`in the Java programming language. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObject](../java/sql/SQLOutput.md))`(`x:` ` [SQLData](../java/sql/SQLData.md)!`)` Writes to the stream the data contained in the given`SQLData`object. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeRef](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeRef(java.sql.Ref))`(`x:` ` [Ref](https://developer.android.com/reference/kotlin/java/sql/Ref)!`)` Writes an SQL`REF`value to the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeRowId](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeRowId(java.sql.RowId))`(`x:` ` [RowId](https://developer.android.com/reference/kotlin/java/sql/RowId)!`)` Writes an SQL`ROWID`value to the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeSQLXML](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeSQLXML(java.sql.SQLXML))`(`x:` ` [SQLXML](https://developer.android.com/reference/kotlin/java/sql/SQLXML)!`)` Writes an SQL`XML`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeRef](../java/sql/SQLOutput.md))`(`x:` ` [Ref](../java/sql/Ref.md)!`)` Writes an SQL`REF`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeRowId](../java/sql/SQLOutput.md))`(`x:` ` [RowId](../java/sql/RowId.md)!`)` Writes an SQL`ROWID`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeSQLXML](../java/sql/SQLOutput.md))`(`x:` ` [SQLXML](../java/sql/SQLXML.md)!`)` Writes an SQL`XML`value to the stream. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeShort](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeShort(kotlin.Short))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Writes the next attribute to the stream as a Java short. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeString](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeString(kotlin.String))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes the next attribute to the stream as a`String`in the Java programming language. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeStruct](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeStruct(java.sql.Struct))`(`x:` ` [Struct](https://developer.android.com/reference/kotlin/java/sql/Struct)!`)` Writes an SQL structured type value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeShort](../java/sql/SQLOutput.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Writes the next attribute to the stream as a Java short. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeString](../java/sql/SQLOutput.md))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes the next attribute to the stream as a`String`in the Java programming language. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeStruct](../java/sql/SQLOutput.md))`(`x:` ` [Struct](../java/sql/Struct.md)!`)` Writes an SQL structured type value to the stream. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTime](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeTime(java.sql.Time))`(`x:` ` [Time](https://developer.android.com/reference/kotlin/java/sql/Time)!`)` Writes the next attribute to the stream as a java. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTimestamp](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeTimestamp(java.sql.Timestamp))`(`x:` ` [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp)!`)` Writes the next attribute to the stream as a java. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeURL](https://developer.android.com/reference/kotlin/java/sql/SQLOutput#writeURL(java.net.URL))`(`x:` ` [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!`)` Writes a SQL`DATALINK`value to the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTime](../java/sql/SQLOutput.md))`(`x:` ` [Time](../java/sql/Time.md)!`)` Writes the next attribute to the stream as a java. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTimestamp](../java/sql/SQLOutput.md))`(`x:` ` [Timestamp](../java/sql/Timestamp.md)!`)` Writes the next attribute to the stream as a java. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeURL](../java/sql/SQLOutput.md))`(`x:` ` [URL](../java/net/URL.md)!`)` Writes a SQL`DATALINK`value to the stream. |
 | --- | --- |
 
 ## Public methods
@@ -69,7 +69,7 @@ Writes an SQL`ARRAY`value to the stream.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------|
-| `x` | [Array](https://developer.android.com/reference/kotlin/java/sql/Array)!:an`Array`object representing data of an SQL`ARRAY`type |
+| `x` | [Array](../java/sql/Array.md)!:an`Array`object representing data of an SQL`ARRAY`type |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -88,7 +88,7 @@ Writes the next attribute to the stream as a stream of ASCII characters.
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------|
-| `x` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the value to pass to the database |
+| `x` | [InputStream](../java/io/InputStream.md)!:the value to pass to the database |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -107,7 +107,7 @@ Writes the next attribute to the stream as a java.math.BigDecimal object. Writes
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------|
-| `x` | [BigDecimal](https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#)!:the value to pass to the database |
+| `x` | [BigDecimal](../java/math/BigDecimal.md)!:the value to pass to the database |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -126,7 +126,7 @@ Writes the next attribute to the stream as a stream of uninterpreted bytes.
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------|
-| `x` | [InputStream](https://developer.android.com/reference/kotlin/java/io/InputStream.html#)!:the value to pass to the database |
+| `x` | [InputStream](../java/io/InputStream.md)!:the value to pass to the database |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -145,7 +145,7 @@ Writes an SQL`BLOB`value to the stream.
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------|
-| `x` | [Blob](https://developer.android.com/reference/kotlin/java/sql/Blob)!:a`Blob`object representing data of an SQL`BLOB`value |
+| `x` | [Blob](../java/sql/Blob.md)!:a`Blob`object representing data of an SQL`BLOB`value |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -221,7 +221,7 @@ Writes the next attribute to the stream as a stream of Unicode characters.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------|
-| `x` | [Reader](https://developer.android.com/reference/kotlin/java/io/Reader.html#)!:the value to pass to the database |
+| `x` | [Reader](../java/io/Reader.md)!:the value to pass to the database |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -240,7 +240,7 @@ Writes an SQL`CLOB`value to the stream.
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------|
-| `x` | [Clob](https://developer.android.com/reference/kotlin/java/sql/Clob)!:a`Clob`object representing data of an SQL`CLOB`value |
+| `x` | [Clob](../java/sql/Clob.md)!:a`Clob`object representing data of an SQL`CLOB`value |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -259,7 +259,7 @@ Writes the next attribute to the stream as a java.sql.Date object. Writes the ne
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------|
-| `x` | [Date](https://developer.android.com/reference/kotlin/java/sql/Date)!:the value to pass to the database |
+| `x` | [Date](../java/sql/Date.md)!:the value to pass to the database |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -354,7 +354,7 @@ Writes an SQL`NCLOB`value to the stream.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------|
-| `x` | [NClob](https://developer.android.com/reference/kotlin/java/sql/NClob)!:a`NClob`object representing data of an SQL`NCLOB`value |
+| `x` | [NClob](../java/sql/NClob.md)!:a`NClob`object representing data of an SQL`NCLOB`value |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -392,7 +392,7 @@ Writes to the stream the data contained in the given`SQLData`object. When the`SQ
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `x` | [SQLData](https://developer.android.com/reference/kotlin/java/sql/SQLData)!:the object representing data of an SQL structured or distinct type |
+| `x` | [SQLData](../java/sql/SQLData.md)!:the object representing data of an SQL structured or distinct type |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -411,7 +411,7 @@ Writes an SQL`REF`value to the stream.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------|
-| `x` | [Ref](https://developer.android.com/reference/kotlin/java/sql/Ref)!:a`Ref`object representing data of an SQL`REF`value |
+| `x` | [Ref](../java/sql/Ref.md)!:a`Ref`object representing data of an SQL`REF`value |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -430,7 +430,7 @@ Writes an SQL`ROWID`value to the stream.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------|
-| `x` | [RowId](https://developer.android.com/reference/kotlin/java/sql/RowId)!:a`RowId`object representing data of an SQL`ROWID`value |
+| `x` | [RowId](../java/sql/RowId.md)!:a`RowId`object representing data of an SQL`ROWID`value |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -449,7 +449,7 @@ Writes an SQL`XML`value to the stream.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------|
-| `x` | [SQLXML](https://developer.android.com/reference/kotlin/java/sql/SQLXML)!:a`SQLXML`object representing data of an SQL`XML`value |
+| `x` | [SQLXML](../java/sql/SQLXML.md)!:a`SQLXML`object representing data of an SQL`XML`value |
 
 | Exceptions ||
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -506,7 +506,7 @@ Writes an SQL structured type value to the stream.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------|
-| `x` | [Struct](https://developer.android.com/reference/kotlin/java/sql/Struct)!:a`Struct`object representing data of an SQL structured type |
+| `x` | [Struct](../java/sql/Struct.md)!:a`Struct`object representing data of an SQL structured type |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -525,7 +525,7 @@ Writes the next attribute to the stream as a java.sql.Time object. Writes the ne
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------|
-| `x` | [Time](https://developer.android.com/reference/kotlin/java/sql/Time)!:the value to pass to the database |
+| `x` | [Time](../java/sql/Time.md)!:the value to pass to the database |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -544,7 +544,7 @@ Writes the next attribute to the stream as a java.sql.Timestamp object. Writes t
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------------|
-| `x` | [Timestamp](https://developer.android.com/reference/kotlin/java/sql/Timestamp)!:the value to pass to the database |
+| `x` | [Timestamp](../java/sql/Timestamp.md)!:the value to pass to the database |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -563,7 +563,7 @@ Writes a SQL`DATALINK`value to the stream.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `x` | [URL](https://developer.android.com/reference/kotlin/java/net/URL.html#)!:a`java.net.URL`object representing the data of SQL DATALINK type |
+| `x` | [URL](../java/net/URL.md)!:a`java.net.URL`object representing the data of SQL DATALINK type |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
